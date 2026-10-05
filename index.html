@@ -929,6 +929,8 @@ button.hoje-prox{cursor:pointer}
 .qb-alts-letras .qb-l{width:34px;height:34px;font-size:1rem}
 .qb-alts-ce{flex-direction:row;gap:10px}
 .composer.gravando>:not(.rec-barra){display:none}
+.opts.opts-col{display:flex;flex-direction:column;gap:8px}.opts.opts-col .opt{text-align:left;align-items:flex-start}
+.opts.opts-col .opt b{display:flex;align-items:center;gap:8px}
 .fc-grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
 .fc-bar{display:flex;flex-direction:column;gap:10px}
 .fc-ic{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:color-mix(in srgb,var(--neon,var(--accent)) 18%,transparent);flex:none}
@@ -1936,12 +1938,48 @@ async function gerar(o){
     if(o.pedido){toast(aviso||"O ajuste precisa da IA, que não está disponível aqui.");go("semana");return}
     plano=planoLocal(S.perfil,S.plano&&S.plano.prova?provaCtx():null);plano.geradoPor="local";
   }
-  manterFeitos(plano);
   if(S.plano&&S.plano.prova&&S.edital)plano.prova=S.plano.prova;
+  if(!o.pedido&&!o.novo&&S.plano&&DIAS.some(x=>(S.plano.semana[x.k]||[]).length)){if(aviso)toast(aviso);go("semana");escolherAplicacao(plano,"Atualizar minha semana com a triagem");return}
+  manterFeitos(plano);
   plano.criadoEm=new Date().toISOString();S.plano=plano;await gravar("plano",plano,true);
   go("semana");toast(aviso||(o.pedido?"Plano ajustado.":"Plano criado e salvo."));
 }
 function provaCtx(){return S.edital&&S.edital.tri?{ed:S.edital,tri:S.edital.tri}:null}
+// incluir na semana: encaixa os blocos novos nos horários livres de cada dia, sem apagar os que já existem
+function incluirNaSemana(atual,novo){
+  const out=clone(atual);let add=0,fora=0;
+  DIAS.forEach(x=>{const dia=out.semana[x.k]=(out.semana[x.k]||[]).slice();
+    const ocup=()=>dia.map(b=>[toMin(b.inicio),toMin(b.inicio)+(+b.min||toMin(b.fim)-toMin(b.inicio))]).sort((a,b)=>a[0]-b[0]);
+    (novo.semana[x.k]||[]).forEach(b=>{
+      if(dia.some(o=>norm(o.materia)===norm(b.materia)&&norm(o.tarefa||"")===norm(b.tarefa||"")))return;   // já existe igual
+      const dur=+b.min||(toMin(b.fim)-toMin(b.inicio));let ini=toMin(b.inicio);
+      for(let tent=0;tent<40;tent++){const bate=ocup().find(([a,f])=>ini<f&&ini+dur>a);if(!bate)break;ini=bate[1]+5}
+      if(ini+dur>23*60+59||ocup().some(([a,f])=>ini<f&&ini+dur>a)){fora++;return}
+      dia.push({...b,id:uid(),inicio:toHHMM(ini),fim:toHHMM(ini+dur),min:dur,feito:false});add++});
+    dia.sort((a,b)=>toMin(a.inicio)-toMin(b.inicio))});
+  if(novo.prova)out.prova=novo.prova;
+  out.resumo=[atual.resumo,novo.resumo].filter(Boolean).join(" ").slice(0,600);
+  return {plano:out,add,fora};
+}
+// pergunta se a semana nova entra junto com a atual ou substitui tudo
+function escolherAplicacao(novo,titulo,depois){
+  const tem=S.plano&&DIAS.some(x=>(S.plano.semana[x.k]||[]).length);
+  const aplicar=async modo=>{let pl,msg;
+    if(modo==="incluir"){const r=incluirNaSemana(S.plano,novo);pl=r.plano;msg=r.add?`${r.add} ${r.add===1?"bloco incluído":"blocos incluídos"} na sua semana${r.fora?` · ${r.fora} não couberam no dia`:""}.`:"Nada novo para incluir: esses blocos já estão na sua semana."}
+    else{pl=novo;manterFeitos(pl);msg="Semana substituída pela nova."}
+    pl.criadoEm=new Date().toISOString();S.plano=pl;await gravar("plano",pl,true);toast(msg);if(depois)depois();go("semana")};
+  if(!tem){aplicar("substituir");return}
+  document.querySelectorAll(".modal-bg").forEach(m=>m.remove());const bg=document.createElement("div");bg.className="modal-bg";
+  bg.innerHTML=`<div class="card stack modal" role="dialog" aria-modal="true" aria-labelledby="ap-t"><h3 id="ap-t">${esc(titulo||"Atualizar minha semana")}</h3>
+    <p class="small muted">Você já tem uma semana montada. Como quer usar a nova?</p>
+    <div class="opts opts-col"><button type="button" class="opt" data-ap="incluir"><b>${ico("plus")} Incluir na minha semana</b><span>Mantém tudo o que já está lá e encaixa os blocos novos nos horários livres.</span></button>
+      <button type="button" class="opt" data-ap="substituir"><b>${ico("repeat")} Substituir totalmente</b><span>Troca a semana inteira pela nova. Blocos já feitos continuam marcados quando se repetem.</span></button></div>
+    <div class="row" style="justify-content:flex-end"><button class="btn ghost" type="button" data-ap="cancelar">Manter como está</button></div></div>`;
+  document.body.appendChild(bg);setTimeout(()=>bg.querySelector('[data-ap="incluir"]').focus(),50);
+  bg.addEventListener("click",e=>{const b=e.target.closest("[data-ap]");if(e.target===bg||(b&&b.dataset.ap==="cancelar")){bg.remove();toast("Sua semana continua como estava.");if(S.view!=="semana")go("semana");else renderView();return}
+    if(b){bg.remove();aplicar(b.dataset.ap)}});
+  bg.addEventListener("keydown",e=>{if(e.key==="Escape")bg.querySelector('[data-ap="cancelar"]').click()});
+}
 function manterFeitos(plano){if(!S.plano)return;DIAS.forEach(x=>(plano.semana[x.k]||[]).forEach(b=>{const v=(S.plano.semana[x.k]||[]).find(o=>o.inicio===b.inicio&&o.materia===b.materia);if(v&&v.feito)b.feito=true}))}
 
 /* ================= Pomodoro ================= */
@@ -2079,7 +2117,7 @@ function sequencia(){let n=0;for(let i=0;i<120;i++){if(minutosDia(diasAtras(i))>
 /* ================= Cronômetro livre ================= */
 const C={rodando:false,inicio:0,acum:0,materia:"",tick:null};
 function cronoMs(){return C.acum+(C.rodando?Date.now()-C.inicio:0)}
-function salvarCronoLocal(){if(S.mode!=="nuvem")return;try{localStorage.setItem("mapa_crono_"+(S.uid||"local"),JSON.stringify({rodando:C.rodando,inicio:C.inicio,acum:C.acum,materia:C.materia,confirmado:C.confirmado||0}))}catch(e){}}
+function salvarCronoLocal(){if(S.mode!=="nuvem")return;try{localStorage.setItem("mapa_crono_"+(S.uid||"local"),JSON.stringify({rodando:C.rodando,inicio:C.inicio,acum:C.acum,materia:C.materia,confirmado:C.confirmado||0,bloco:C.bloco||null,blocoMin:C.blocoMin||0}))}catch(e){}}
 function carregarCrono(){if(S.mode!=="nuvem")return;try{const d=JSON.parse(localStorage.getItem("mapa_crono_"+(S.uid||"local"))||"null");if(d){Object.assign(C,d);if(C.rodando){clearInterval(C.tick);C.tick=setInterval(tickCrono,500)}}}catch(e){}}
 function fmtRelogio(ms){const t=Math.floor(ms/1000),h=Math.floor(t/3600),m=Math.floor(t/60)%60,sg=t%60;return String(h).padStart(2,"0")+":"+String(m).padStart(2,"0")+":"+String(sg).padStart(2,"0")}
 function iniciarCrono(){if(C.rodando)return;C.rodando=true;C.inicio=Date.now();C.confirmado=Date.now();clearInterval(C.tick);C.tick=setInterval(tickCrono,500);salvarCronoLocal();tickCrono();publicarRanking()}
@@ -2087,7 +2125,9 @@ function pausarCrono(){if(!C.rodando)return;C.acum+=Date.now()-C.inicio;C.rodand
 function zerarCrono(){C.rodando=false;C.acum=0;C.inicio=0;clearInterval(C.tick);salvarCronoLocal();tickCrono()}
 function finalizarCrono(){const ms=cronoMs();const min=ms/60000;
   if(min<1){toast("Menos de 1 minuto: nada foi salvo.");zerarCrono();if(S.view==="cronometro")renderCronometro();return}
-  const mat=C.materia;registrar(min,mat,"cronometro");zerarCrono();modalSessao(min,mat);if(S.view==="cronometro")renderCronometro()}
+  const mat=C.materia,ref=C.bloco,alvo=C.blocoMin||0;registrar(min,mat,"cronometro");
+  if(ref&&acharBloco(ref)&&!acharBloco(ref).feito){if(min>=alvo*.8){marcarBloco(ref,true);toast("Bloco da semana marcado como feito.")}else toast(`Tempo salvo. O bloco fica pendente (faltaram ${Math.ceil(alvo*.8-min)} min para contar como feito).`)}
+  C.bloco=null;C.blocoMin=0;zerarCrono();modalSessao(min,mat);if(S.view==="cronometro")renderCronometro()}
 function tickCrono(){
   checarPresenca();const ms=cronoMs(),txt=fmtRelogio(ms);
   const t=$("#crono-t");if(t)t.textContent=txt;
@@ -2131,7 +2171,7 @@ function renderCronometro(){
   $("#crono-play").onclick=()=>{C.rodando?pausarCrono():iniciarCrono()};
   $("#crono-fim").onclick=()=>{if(C.rodando)pausarCrono();finalizarCrono()};
   let conf=false;$("#crono-zerar").onclick=e=>{if(!conf){conf=true;e.target.textContent="Toque de novo para descartar";return}zerarCrono();renderCronometro()};
-  $("#crono-mat").onchange=e=>{C.materia=e.target.value;salvarCronoLocal();tickCrono()};
+  $("#crono-mat").onchange=e=>{C.materia=e.target.value;C.bloco=null;C.blocoMin=0;salvarCronoLocal();tickCrono()};
   tickCrono();
 }
 
@@ -3693,8 +3733,8 @@ function cartaoHoje(blocos,hojeK){
       <div class="hoje-anel" role="img" aria-label="${total?`${feitos} de ${total} blocos feitos`:`${fmtH(minF)} de ${fmtH(meta)}`}"><svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="var(--line)" stroke-width="6"/><circle class="arco" cx="32" cy="32" r="26" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" stroke-dasharray="${L}" stroke-dashoffset="${L*(1-pct)}" transform="rotate(-90 32 32)"/></svg><b>${total?`${feitos}/${total}`:Math.round(pct*100)+"%"}</b></div></div>
     ${rodando?`<button type="button" class="hoje-prox ativo" data-link="pomodoro"><span class="hoje-play">${ico("timer")}</span><span style="min-width:0"><span class="eyebrow">Pomodoro em andamento</span><b class="hoje-relogio mono" id="hoje-relogio">${fmtMin(pomoRestante())}</b><span class="small muted">${esc(P.materia||"Foco")}. Toque para ver.</span></span></button>`
       :prox?`<div class="hoje-prox"><span class="hoje-play">${ico("play")}</span><div style="min-width:0;flex:1"><span class="eyebrow">Próximo bloco · ${prox.inicio}–${prox.fim} · ${prox.min||25} min</span><b>${esc(prox.materia)} <span class="tipo">· ${esc(prox.tipo)}</span></b><span class="small muted">${esc(prox.tarefa)}</span></div>
-        <div class="hoje-acoes"><button class="btn primary hoje-ir" type="button" data-play="${hojeK}|${prox.id}">${ico("play")}Começar agora</button><button class="btn sm ghost" type="button" data-jafiz="${hojeK}|${prox.id}">${ico("check")}Já fiz</button></div></div>`
-      :`<div class="hoje-prox"><span class="hoje-play">${ico(total?"trophy":"zap")}</span><div style="min-width:0;flex:1"><b>${total?"Bônus do dia":"Foco rápido"}</b><span class="small muted">${total?"Uma sessão extra conta para o ranking e os desafios.":"25 minutos de estudo livre, sem planejamento."}</span></div><div class="hoje-acoes"><button class="btn primary hoje-ir" type="button" id="hoje-rapido">${ico("play")}Estudar 25 min</button></div></div>`}
+        <div class="hoje-acoes"><button class="btn primary hoje-ir" type="button" data-play="${hojeK}|${prox.id}">${ico("play")}Iniciar</button><button class="btn sm ghost" type="button" data-jafiz="${hojeK}|${prox.id}">${ico("check")}Já fiz</button></div></div>`
+      :`<div class="hoje-prox"><span class="hoje-play">${ico(total?"trophy":"zap")}</span><div style="min-width:0;flex:1"><b>${total?"Bônus do dia":"Estudo livre"}</b><span class="small muted">${total?"Uma sessão extra conta para o ranking e os desafios.":"Escolha pomodoro ou cronômetro e comece, sem planejamento."}</span></div><div class="hoje-acoes"><button class="btn primary hoje-ir" type="button" id="hoje-rapido">${ico("play")}Iniciar</button></div></div>`}
     <div class="hoje-atalhos">
       <button type="button" class="hoje-chip" id="hoje-rapido2">${ico("zap")}Foco de 25 min</button>
       <button type="button" class="hoje-chip" data-link="cronometro">${ico("watch")}Cronômetro</button>
@@ -3708,7 +3748,7 @@ function cartaoHoje(blocos,hojeK){
         <input class="chk" type="checkbox" ${b.feito?"checked":""} data-chk="${hojeK}|${b.id}" aria-label="Concluir ${esc(b.materia)}">
         <span class="mono small muted tmc">${b.inicio}–${b.fim}</span>
         <div style="min-width:0"><div class="bt" style="font-weight:600">${esc(b.materia)} <span class="tipo">· ${esc(b.tipo)}</span></div><div class="small muted bt">${esc(b.tarefa)}</div></div>
-        <button class="btn sm" type="button" data-play="${hojeK}|${b.id}" aria-label="Iniciar pomodoro de ${esc(b.materia)}" ${b.feito?"disabled":""}>${ico("play")}</button>
+        <button class="btn sm" type="button" data-play="${hojeK}|${b.id}" aria-label="Iniciar estudo de ${esc(b.materia)}" ${b.feito?"disabled":""}>${ico("play")}</button>
       </div>`).join("")}</div></details>`:""}
   </div>`}
 const fmtMin=ms=>{const t=Math.ceil(ms/1000);return String(Math.floor(t/60)).padStart(2,"0")+":"+String(t%60).padStart(2,"0")};
@@ -3716,7 +3756,7 @@ function faisca(el){if(!el||matchMedia("(prefers-reduced-motion:reduce)").matche
   w.innerHTML=Array.from({length:12},(_,i)=>`<i style="--a:${i*30}deg;--d:${30+(i%3)*14}px"></i>`).join("");document.body.appendChild(w);setTimeout(()=>w.remove(),700)}
 function ligarHoje(blocos,hojeK){
   const rapido=()=>{if(P.rodando){go("pomodoro");return}P.bloco=null;P.materia="";P.modo="foco";P.dur.foco=25;P.restante=pomoTotal();P.acumulado=0;salvarPomoLocal();go("pomodoro");iniciarPomo()};
-  ["#hoje-rapido","#hoje-rapido2"].forEach(id=>{const b=$(id);if(b)b.onclick=rapido});
+  const hr=$("#hoje-rapido");if(hr)hr.onclick=()=>iniciarEstudo(null);const hr2=$("#hoje-rapido2");if(hr2)hr2.onclick=rapido;
   $$("[data-jafiz]").forEach(b=>b.onclick=()=>{faisca(b);b.disabled=true;const restam=blocos.filter(x=>!x.feito).length-1;setTimeout(()=>{marcarBloco(b.dataset.jafiz,true);toast(restam>0?`Boa! ${restam===1?"Falta 1 bloco":`Faltam ${restam} blocos`} hoje.`:"Todos os blocos de hoje feitos!")},380)});
   const rel=$("#hoje-relogio");if(rel){clearInterval(S.hojeTick);S.hojeTick=setInterval(()=>{if(!rel.isConnected||!P.rodando){clearInterval(S.hojeTick);return}rel.textContent=fmtMin(pomoRestante())},500)}
 }
@@ -3754,16 +3794,32 @@ function renderInicio(){
         </div>
       </div>
     </div></div>`;
-  $("#ini-pomo").onclick=()=>{const prox=blocos.find(b=>!b.feito);if(prox)prepararPomo(hojeK,prox);go("pomodoro")};
+  $("#ini-pomo").onclick=()=>{if(P.rodando){go("pomodoro");return}if(C.rodando){go("cronometro");return}const prox=blocos.find(b=>!b.feito);iniciarEstudo(prox?hojeK+"|"+prox.id:null)};
   ligarHoje(blocos,hojeK);ligarBlocos();ligarMentoriaInicio();ligarRevisoes(renderInicio);$$("[data-link]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.dataset.link)}));
   const vc=$("#visit-conta");if(vc)vc.onclick=()=>sair("criar");
 }
 function acharBloco(ref){const [k,id]=ref.split("|");return (S.plano&&S.plano.semana[k]||[]).find(b=>b.id===id)}
 function marcarBloco(ref,v){const b=acharBloco(ref);if(!b)return;b.feito=v;b.feitoEm=v?Date.now():0;setTimeout(atualizarBadgeDesafios,50);gravar("plano",S.plano);if(["inicio","semana"].includes(S.view))renderView()}
+// "Iniciar": a pessoa escolhe como contar o tempo (pomodoro com pausas ou cronômetro livre)
+function iniciarEstudo(ref){
+  if(P.rodando){toast("Já existe um pomodoro rodando.");go("pomodoro");return}
+  if(C.rodando){toast("O cronômetro já está contando.");go("cronometro");return}
+  const bl=ref?acharBloco(ref):null,min=bl?Math.max(5,Math.min(120,bl.min||P.dur.foco)):25;
+  document.querySelectorAll(".modal-bg").forEach(m=>m.remove());const bg=document.createElement("div");bg.className="modal-bg";
+  bg.innerHTML=`<div class="card stack modal" role="dialog" aria-modal="true" aria-labelledby="ie-t"><span class="eyebrow">${bl?esc(bl.materia)+" · "+esc(bl.tipo||"estudo"):"Estudo livre"}</span><h3 id="ie-t">Como você quer contar o tempo?</h3>
+    <div class="opts opts-col"><button type="button" class="opt" data-ie="pomo"><b>${ico("timer")} Pomodoro · ${min} min</b><span>Foco com tempo marcado e pausa no fim. ${bl?"O bloco é marcado como feito quando o tempo acaba.":""}</span></button>
+      <button type="button" class="opt" data-ie="crono"><b>${ico("watch")} Cronômetro</b><span>Conta o tempo livre, sem limite: você para quando terminar. ${bl?`Com ${Math.round(min*.8)} min ou mais, o bloco é marcado como feito.`:""}</span></button></div>
+    <div class="row" style="justify-content:flex-end"><button class="btn ghost" type="button" data-ie="x">Cancelar</button></div></div>`;
+  document.body.appendChild(bg);setTimeout(()=>bg.querySelector('[data-ie="pomo"]').focus(),50);
+  bg.addEventListener("click",e=>{const b=e.target.closest("[data-ie]");if(e.target===bg||(b&&b.dataset.ie==="x")){bg.remove();return}if(!b)return;bg.remove();
+    if(b.dataset.ie==="pomo"){if(bl)prepararPomo(ref.split("|")[0],bl);else{P.bloco=null;P.materia="";P.modo="foco";P.dur.foco=25;P.restante=pomoTotal();P.acumulado=0;salvarPomoLocal()}go("pomodoro");iniciarPomo()}
+    else{if(C.acum>0&&!C.rodando)zerarCrono();C.materia=bl?bl.materia:"";C.bloco=bl?ref:null;C.blocoMin=bl?min:0;salvarCronoLocal();go("cronometro");iniciarCrono()}});
+  bg.addEventListener("keydown",e=>{if(e.key==="Escape")bg.remove()});
+}
 function prepararPomo(k,b){if(P.rodando)return;P.materia=b.materia;P.bloco=k+"|"+b.id;P.modo="foco";P.dur.foco=Math.max(5,Math.min(120,b.min||P.dur.foco));P.restante=pomoTotal();P.acumulado=0;salvarPomoLocal()}
 function ligarBlocos(){
   $$("[data-chk]").forEach(c=>c.addEventListener("change",()=>{if(c.checked){faisca(c);const it=c.closest(".bitem");if(it)it.classList.add("feito-agora");setTimeout(()=>marcarBloco(c.dataset.chk,true),380)}else marcarBloco(c.dataset.chk,false)}));
-  $$("[data-play]").forEach(b=>b.addEventListener("click",()=>{const bl=acharBloco(b.dataset.play);if(P.rodando){toast("Já existe um pomodoro rodando.");go("pomodoro");return}if(bl)prepararPomo(b.dataset.play.split("|")[0],bl);go("pomodoro");iniciarPomo()}));
+  $$("[data-play]").forEach(b=>b.addEventListener("click",()=>iniciarEstudo(b.dataset.play)));
 }
 
 /* ================= Minha semana ================= */
@@ -3776,7 +3832,7 @@ function blocoDiaHtml(x,b,editavel){return `
             <span class="tm">${b.inicio}–${b.fim} · ${esc(b.tipo)}</span>
             <span class="mt">${esc(b.materia)}</span>
             ${b.tarefa?`<span class="tk">${esc(b.tarefa)}</span>`:""}
-            ${b.feito||!editavel?"":`<button class="btn sm ghost play" type="button" data-play="${x.k}|${b.id}">${ico("play")}Pomodoro</button>`}
+            ${b.feito||!editavel?"":`<button class="btn sm ghost play" type="button" data-play="${x.k}|${b.id}">${ico("play")}Iniciar</button>`}
           </div>`}
 function cartaoDia(off){
   const pl=S.plano,hi=hojeIdx(),idx=((hi+off)%7+7)%7,x=DIAS[idx],bl=pl.semana[x.k]||[];
@@ -3856,7 +3912,7 @@ function renderSemana(){
             <span class="tm">${b.inicio}–${b.fim} · ${esc(b.tipo)}</span>
             <span class="mt">${esc(b.materia)}</span>
             ${b.tarefa?`<span class="tk">${esc(b.tarefa)}</span>`:""}
-            ${b.feito?"":`<button class="btn sm ghost play" type="button" data-play="${x.k}|${b.id}">${ico("play")}Pomodoro</button>`}
+            ${b.feito?"":`<button class="btn sm ghost play" type="button" data-play="${x.k}|${b.id}">${ico("play")}Iniciar</button>`}
           </div>`).join(""):`<p class="empty">Sem estudo planejado.</p>`}</div>
       </section>`}).join("")}</div></div>
 `}
@@ -4227,13 +4283,18 @@ function renderProposta(){
   const {plano,aviso}=S.proposta;const tot=DIAS.flatMap(x=>plano.semana[x.k]).reduce((a,b)=>a+b.min,0);
   $("#main").innerHTML=`<div class="page">
     ${pageHead("Proposta de semana para "+esc(plano.prova),`${fmtH(tot)} por semana · ${plano.geradoPor==="ia"?"gerada pela IA":"gerada pelo algoritmo local"}${aviso?" · "+esc(aviso):""}`,
-      `<button class="btn" type="button" id="pr-desc">Manter minha semana atual</button><button class="btn primary" type="button" id="pr-ok">Aplicar à minha semana</button>`)}
+      `<button class="btn" type="button" id="pr-desc">Manter minha semana atual</button>${S.plano&&DIAS.some(x=>(S.plano.semana[x.k]||[]).length)?`<button class="btn" type="button" id="pr-inc">${ico("plus")}Incluir na minha semana</button><button class="btn primary" type="button" id="pr-ok">${ico("repeat")}Substituir minha semana</button>`:`<button class="btn primary" type="button" id="pr-ok">Aplicar à minha semana</button>`}`)}
+    ${S.plano&&DIAS.some(x=>(S.plano.semana[x.k]||[]).length)?`<p class="hint" style="margin:-6px 0 14px"><b>Incluir</b> mantém sua semana e encaixa estes blocos nos horários livres. <b>Substituir</b> troca a semana inteira por esta.</p>`:""}
     <div class="card" style="margin-bottom:16px"><span class="eyebrow">Resumo</span><p style="margin-top:6px">${esc(plano.resumo)}</p></div>
     <div class="week-wrap"><div class="week">${DIAS.map(x=>{const bl=plano.semana[x.k]||[];return `<section class="day"><header><b>${x.n}</b><span class="small muted mono">${bl.length?fmtH(bl.reduce((a,b)=>a+b.min,0)):"livre"}</span></header>
       <div class="lst">${bl.length?bl.map(b=>`<div class="blk t-${b.tipo}"><span class="tm">${b.inicio}–${b.fim} · ${esc(b.tipo)}</span><span class="mt">${esc(b.materia)}</span><span class="tk">${esc(b.tarefa)}</span></div>`).join(""):`<p class="empty">Sem estudo.</p>`}</div></section>`}).join("")}</div></div>
   </div>`;
   $("#pr-desc").onclick=()=>{S.proposta=null;toast("Sua semana continua como estava.");go("topicos")};
-  $("#pr-ok").onclick=async()=>{const pl=S.proposta.plano;manterFeitos(pl);pl.criadoEm=new Date().toISOString();S.plano=pl;S.proposta=null;await gravar("plano",pl,true);toast("Semana atualizada com a prova.");go("semana")};
+  const aplicar=async modo=>{const pl=S.proposta.plano;S.proposta=null;let msg;
+    if(modo==="incluir"&&S.plano){const r=incluirNaSemana(S.plano,pl);S.plano=r.plano;msg=r.add?`${r.add} ${r.add===1?"bloco da prova incluído":"blocos da prova incluídos"} na sua semana${r.fora?` · ${r.fora} não couberam no dia`:""}.`:"Esses blocos já estavam na sua semana."}
+    else{manterFeitos(pl);S.plano=pl;msg="Semana substituída pela proposta da prova."}
+    S.plano.criadoEm=new Date().toISOString();await gravar("plano",S.plano,true);toast(msg);go("semana")};
+  $("#pr-ok").onclick=()=>aplicar("substituir");const inc=$("#pr-inc");if(inc)inc.onclick=()=>aplicar("incluir");
 }
 
 /* ================= Grupos ================= */
