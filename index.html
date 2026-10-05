@@ -931,6 +931,31 @@ button.hoje-prox{cursor:pointer}
 .composer.gravando>:not(.rec-barra){display:none}
 .opts.opts-col{display:flex;flex-direction:column;gap:8px}.opts.opts-col .opt{text-align:left;align-items:flex-start}
 .opts.opts-col .opt b{display:flex;align-items:center;gap:8px}
+.tut-card{position:fixed;right:20px;bottom:20px;z-index:60;width:min(380px,calc(100vw - 32px));background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 18px 50px #0005,0 0 0 2px color-mix(in srgb,var(--neon,var(--accent)) 55%,transparent);display:flex;flex-direction:column;gap:10px}
+.tut-card.entra{animation:tutEntra .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes tutEntra{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+.tut-top{display:flex;align-items:center;gap:8px}.tut-top .small{margin-left:auto}
+.tut-corpo{display:flex;gap:12px;align-items:flex-start}.tut-corpo h3{margin-bottom:4px}.tut-corpo p{font-size:.92rem;line-height:1.45}
+.tut-emoji{font-size:1.9rem;line-height:1;flex:none;width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:color-mix(in srgb,var(--neon,var(--accent)) 16%,transparent)}
+.tut-emoji.grande{font-size:2.6rem;width:72px;height:72px;border-radius:20px;margin:0 auto}
+.tut-dica{font-size:.86rem;padding:10px 12px;border-radius:12px;background:var(--sunken);border-left:3px solid var(--neon,var(--accent))}
+.tut-prog{height:6px}.tut-acoes{display:flex;justify-content:space-between;gap:8px}
+.tut-alvo{outline:3px solid var(--neon,var(--accent))!important;outline-offset:4px;border-radius:14px;animation:tutPulso 1.6s ease-in-out infinite}
+@keyframes tutPulso{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--neon,var(--accent)) 45%,transparent)}50%{box-shadow:0 0 0 10px transparent}}
+.tut-boas{text-align:center;align-items:center;max-width:440px}.tut-boas .stack{width:100%}
+.tut-chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.tut-hero{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-bottom:16px}.tut-hero .tut-emoji.grande{margin:0}
+.tut-caps{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-bottom:16px}
+.tut-cap{display:flex;flex-direction:column;gap:12px}.tut-lista{display:flex;flex-direction:column;gap:4px;flex:1}
+.tut-item{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;border:0;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.tut-item:hover{background:var(--sunken)}.tut-item.visto{color:var(--muted)}.tut-ok{margin-left:auto;color:var(--ok,#16a34a);font-weight:700}
+.tut-atalhos{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem}
+kbd{font:600 .78rem ui-monospace,monospace;padding:2px 6px;border-radius:6px;border:1px solid var(--line);background:var(--sunken)}
+.tut-confete{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.tut-confete i{position:absolute;top:-12px;left:var(--x);width:9px;height:14px;background:var(--c);border-radius:2px;animation:tutCai 2.4s var(--d) ease-in forwards}
+@keyframes tutCai{to{transform:translateY(105vh) rotate(540deg);opacity:.2}}
+@media (max-width:860px){.tut-card{left:50%;right:auto;transform:translateX(-50%);bottom:76px}.tut-card.entra{animation:none}}
+@media (prefers-reduced-motion:reduce){.tut-alvo{animation:none}.tut-confete{display:none}.tut-card.entra{animation:none}}
 .fc-grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
 .fc-bar{display:flex;flex-direction:column;gap:10px}
 .fc-ic{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:color-mix(in srgb,var(--neon,var(--accent)) 18%,transparent);flex:none}
@@ -1578,7 +1603,7 @@ async function entrar(modo){
   if(S.perfil&&S.plano){S.view="inicio";renderShell()}
   else{S.step=0;S.draft=S.perfil?migrar(clone(S.perfil)):perfilPadrao(nomeConta);renderWizard()}
 }
-function sair(aba){if(V.canal)vozSair(true);Object.keys(VISITANTE_MEM).forEach(k=>delete VISITANTE_MEM[k]);S.unsub.forEach(f=>{try{f()}catch(e){}});S.unsub=[];pararComunidadeFB();pausarPomo();clearInterval(C.tick);Object.assign(C,{rodando:false,inicio:0,acum:0,materia:""});S.conq=null;Object.assign(S,{pubOk:false,srv:undefined,resg:{},resgOk:false,rankOk:false,gCache:null,dt:0});SRV.tentados={};SRV.fila=Promise.resolve();S.authTab=typeof aba==="string"?aba:"entrar";if(FB&&S.mode==="nuvem")FB.auth.signOut().catch(()=>{});
+function sair(aba){if(typeof TUT!=="undefined"&&TUT.ativo){TUT.ativo=false;const c=document.getElementById("tut-card");if(c)c.remove();document.querySelectorAll(".tut-alvo").forEach(e=>e.classList.remove("tut-alvo"))}if(V.canal)vozSair(true);Object.keys(VISITANTE_MEM).forEach(k=>delete VISITANTE_MEM[k]);S.unsub.forEach(f=>{try{f()}catch(e){}});S.unsub=[];pararComunidadeFB();pausarPomo();clearInterval(C.tick);Object.assign(C,{rodando:false,inicio:0,acum:0,materia:""});S.conq=null;Object.assign(S,{pubOk:false,srv:undefined,resg:{},resgOk:false,rankOk:false,gCache:null,dt:0});SRV.tentados={};SRV.fila=Promise.resolve();S.authTab=typeof aba==="string"?aba:"entrar";if(FB&&S.mode==="nuvem")FB.auth.signOut().catch(()=>{});
   Object.assign(S,{mode:null,uid:null,perfil:null,plano:null,edital:null,pomoLog:null,pub:null,soc:{perfis:{},ranking:{},msgs:{},grupos:{},membros:{},conquistas:{}}});renderLogin()}
 
 function perfilPadrao(nome){
@@ -2838,7 +2863,7 @@ function renderAmigosFB(){
 
 /* ================= Banco de questões (provas oficiais) ================= */
 Object.assign(I,{
-  edit:'<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>',anexo:'<path d="m21 11-8.5 8.5a5 5 0 0 1-7-7L14 4a3.5 3.5 0 0 1 5 5l-8.5 8.5a2 2 0 0 1-3-3L15 7"/>',parar:'<rect x="6" y="6" width="12" height="12" rx="2"/>',lixo:'<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>',
+  bussola:'<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>',edit:'<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>',anexo:'<path d="m21 11-8.5 8.5a5 5 0 0 1-7-7L14 4a3.5 3.5 0 0 1 5 5l-8.5 8.5a2 2 0 0 1-3-3L15 7"/>',parar:'<rect x="6" y="6" width="12" height="12" rx="2"/>',lixo:'<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>',
   cartas:'<rect x="3" y="6" width="13" height="15" rx="2"/><path d="M8 6V4a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4"/>',brilho:'<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/>',
   pip:'<rect x="3" y="5" width="18" height="14" rx="2"/><rect x="12" y="12" width="7" height="5" rx="1"/>',
   video:'<rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3z"/>',videooff:'<path d="M16 13v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2m4 0h3a2 2 0 0 1 2 2v1l5-3v10"/><path d="m3 3 18 18"/>',tela:'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="m9 10 3-3 3 3M12 7v6"/>',
@@ -3593,12 +3618,115 @@ function fcNota(n){const e=FC.estudo;if(!e||!e.virado)return;const [bid,cid]=e.f
 document.addEventListener("keydown",ev=>{if(S.view!=="flashcards"||!FC.estudo||ev.ctrlKey||ev.metaKey||ev.altKey)return;if(/^(INPUT|SELECT|TEXTAREA)$/.test(document.activeElement&&document.activeElement.tagName))return;
   if(ev.key===" "){const c=$("#fc-carta");if(c){ev.preventDefault();c.click()}}else if("123".includes(ev.key)&&ev.key.length===1&&FC.estudo.virado){ev.preventDefault();fcNota(+ev.key)}});
 
+/* ================= Tutorial: tour guiado por todas as áreas do site ================= */
+const TUT_CAPS=[["estudos","Estudos","📚"],["prova","Prova","🎯"],["comunidade","Comunidade","🤝"],["conta","Conta","⚙️"]];
+const TUT_PASSOS=[
+  {v:"inicio",c:"estudos",e:"🏠",t:"Seu painel do dia",x:"Tudo começa aqui: a meta de hoje, o próximo bloco de estudo e um resumo da sua semana. É a sua “central de comando”.",d:"Toque em <b>Iniciar</b> no cartão Hoje e escolha pomodoro ou cronômetro.",a:".hoje-card"},
+  {v:"semana",c:"estudos",e:"🗓️",t:"Minha semana",x:"Seu plano de estudos, dia a dia, montado a partir das suas matérias e horários. Arraste o cartão para os lados para ver os outros dias.",d:"Marque um bloco como feito e veja o progresso subir.",a:".dia-card, .week"},
+  {v:"questoes",c:"estudos",e:"❓",t:"Banco de questões",x:"Milhares de questões reais com gabarito oficial: ENEM, EsPCEx, PISM e PAS. Filtre por matéria, tópico, ano e dificuldade.",d:"Errou? A questão vai para o <b>caderno de erros</b> e você pode refazer até acertar.",a:".qb-filtros"},
+  {v:"pomodoro",c:"estudos",e:"🍅",t:"Pomodoro",x:"Foco com tempo marcado e pausa no fim. Cada sessão conta para a sua meta, para o ranking e para os desafios.",d:"Escolha a matéria antes de começar: assim suas estatísticas ficam certinhas.",a:".pomo"},
+  {v:"cronometro",c:"estudos",e:"⏱️",t:"Cronômetro",x:"Prefere estudar sem relógio apertando? O cronômetro conta o tempo livremente e você para quando terminar.",d:"Ao finalizar, anote o assunto para agendar revisões em 1, 7 e 30 dias.",a:"#main .card"},
+  {v:"desafios",c:"estudos",e:"🏆",t:"Desafios",x:"Missões diárias, semanais e mensais que viram XP, níveis, molduras e títulos para o seu perfil. Estudar vira jogo!",d:"Quando um desafio fica pronto, aparece o botão de resgatar.",a:"#main .card"},
+  {v:"estatisticas",c:"estudos",e:"📊",t:"Estatísticas",x:"Gráficos do seu tempo de estudo, das matérias e dos acertos. Ótimo para descobrir onde focar.",d:"Compare as últimas semanas para ver sua evolução.",a:"#main .card"},
+  {v:"mentoria",c:"estudos",e:"🤖",t:"Mentoria com IA",x:"Uma mentora que conhece seus dados de estudo. Peça um plano, tire dúvidas ou peça para explicar uma questão que você errou.",d:"Pergunte: <i>“o que eu devo revisar esta semana?”</i>",a:"#main .card"},
+  {v:"edital",c:"prova",e:"🔎",t:"Escanear edital",x:"Envie o edital ou a ficha de orientação da prova da escola (FOA). A IA separa todos os tópicos por matéria para você.",d:"Pode mandar uma ficha por matéria e escolher <b>Juntar com a prova atual</b>.",a:"#ed-body"},
+  {v:"topicos",c:"prova",e:"✅",t:"Tópicos da prova",x:"A lista do que cai na prova, matéria por matéria. Marque o que já estudou e acompanhe a contagem regressiva até o dia.",d:"Use <b>Fazer triagem da prova</b> para encaixar a prova na sua semana.",a:"#main .card",se:()=>!!S.edital},
+  {v:"flashcards",c:"prova",e:"🃏",t:"Flashcards",x:"Crie cartões de pergunta e resposta ou peça para a IA montar. A revisão volta no dia certo para você não esquecer.",d:"Revise com o teclado: espaço vira o cartão; 1, 2 e 3 dão a nota.",a:"#main .card, #fc-novo"},
+  {v:"grupos",c:"comunidade",e:"👥",t:"Meus grupos",x:"Grupos de estudo com chat, arquivos, canal de voz e ranking só da turma. Estudar junto rende mais!",d:"Crie um grupo e chame os colegas de sala.",a:"#main .card, #g-novo"},
+  {v:"buscarGrupos",c:"comunidade",e:"🧭",t:"Buscar grupos",x:"Encontre grupos abertos de quem estuda para a mesma prova que você.",d:"Busque pelo nome da prova, como ENEM ou EsPCEx.",a:"#main .card",se:()=>NAV.some(([,i])=>i.some(x=>x[0]==="buscarGrupos"))},
+  {v:"voz",c:"comunidade",e:"🎙️",t:"Voz global",x:"Uma sala de voz aberta para estudar “junto” com gente do Brasil inteiro, enquanto usa o pomodoro ou o banco de questões.",d:"Use fone de ouvido para não dar eco.",a:"#main .card"},
+  {v:"chat",c:"comunidade",e:"💬",t:"Chat global",x:"Converse com todos os estudantes do site. Dá para mandar fotos, documentos e áudios.",d:"Toque no 🎤 para gravar um áudio de até 5 minutos.",a:".chat"},
+  {v:"mensagens",c:"comunidade",e:"✉️",t:"Mensagens",x:"Conversas privadas, só entre você e a outra pessoa, com fotos, arquivos, áudios e chamada de vídeo.",d:"Na chamada dá para compartilhar a tela (no computador).",a:"#main .card",se:()=>NAV.some(([,i])=>i.some(x=>x[0]==="mensagens"))},
+  {v:"amigos",c:"comunidade",e:"🫂",t:"Amigos",x:"Veja quem está online, adicione amigos e chame para uma chamada de vídeo de estudo.",d:"A bolinha verde mostra quem está online agora.",a:"#main .card",se:()=>NAV.some(([,i])=>i.some(x=>x[0]==="amigos"))},
+  {v:"ranking",c:"comunidade",e:"🥇",t:"Ranking",x:"Quem mais estudou hoje, na semana e no mês. Uma competição saudável para manter o ritmo.",d:"Um pomodoro já coloca você no ranking de hoje.",a:"#main .card"},
+  {v:"perfil",c:"conta",e:"🙋",t:"Meu perfil",x:"Sua foto, bio e as conquistas que você ganhou nos desafios: molduras, títulos e emblemas.",d:"Equipe um título raro e mostre para os amigos.",a:"#main .card"},
+  {v:"aparencia",c:"conta",e:"🎨",t:"Aparência",x:"Deixe o site com a sua cara: tema claro ou escuro, estilo da interface e cor neon.",d:"Teste a cor neon com borda animada.",a:"#main .card"},
+  {v:"config",c:"conta",e:"⚙️",t:"Configurações",x:"Ajuste suas matérias, horas de estudo, privacidade e notificações.",d:"Mudou a rotina? Edite as horas e escolha incluir ou substituir na semana.",a:"#main .card"},
+  {v:"tutorial",c:"conta",e:"🧭",t:"Tutorial",x:"Aqui no fim do menu fica este tutorial. Volte quando quiser rever alguma parte.",d:"Dá para repetir só um capítulo, sem fazer o tour inteiro.",a:"#main .card"}];
+const TUT={ativo:false,i:0,lista:[]};
+const tutChave=()=>"la_tut_"+(S.uid||"visitante");
+function tutDados(){try{return JSON.parse(localStorage.getItem(tutChave())||"{}")||{}}catch(e){return {}}}
+function tutSalvar(d){try{localStorage.setItem(tutChave(),JSON.stringify(d))}catch(e){}}
+const tutPassosValidos=()=>TUT_PASSOS.filter(p=>!p.se||p.se());
+// primeira vez: pergunta se a pessoa quer o tour
+function tutTalvezPerguntar(){const d=tutDados();if(d.perguntado||S.tutPerguntou||TUT.ativo)return;S.tutPerguntou=true;
+  setTimeout(()=>{if(document.querySelector(".modal-bg")||TUT.ativo||S.view!=="inicio")return;tutPergunta()},900)}
+function tutPergunta(){const nome=((S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"").split(" ")[0];
+  document.querySelectorAll(".modal-bg").forEach(m=>m.remove());const bg=document.createElement("div");bg.className="modal-bg";
+  bg.innerHTML=`<div class="card stack modal tut-boas" role="dialog" aria-modal="true" aria-labelledby="tb-t"><div class="tut-emoji grande" aria-hidden="true">👋</div>
+    <h2 id="tb-t">Oi${nome?", "+esc(nome):""}! Quer um tour rápido?</h2>
+    <p class="muted">Em uns 3 minutos você conhece tudo o que o Logic Academy faz: plano de estudos, questões, IA, flashcards, grupos e muito mais.</p>
+    <div class="tut-chips">${TUT_CAPS.map(([,n,e])=>`<span class="pill">${e} ${n}</span>`).join("")}</div>
+    <div class="stack sm"><button class="btn primary" type="button" data-tb="sim">${ico("play")}Bora, começar o tour!</button><button class="btn ghost" type="button" data-tb="nao">Agora não</button></div>
+    <p class="hint">Você pode fazer o tour depois em <b>Tutorial</b>, no fim do menu.</p></div>`;
+  document.body.appendChild(bg);setTimeout(()=>bg.querySelector('[data-tb="sim"]').focus(),50);
+  const fim=sim=>{bg.remove();const d=tutDados();d.perguntado=1;tutSalvar(d);if(sim)tutIniciar();else toast("Tudo bem! O tour fica em Tutorial, no fim do menu.")};
+  bg.addEventListener("click",e=>{const b=e.target.closest("[data-tb]");if(b)fim(b.dataset.tb==="sim");else if(e.target===bg)fim(false)});
+  bg.addEventListener("keydown",e=>{if(e.key==="Escape")fim(false)})}
+function tutIniciar(cap){TUT.lista=tutPassosValidos().filter(p=>!cap||p.c===cap);TUT.i=0;TUT.ativo=true;TUT.cap=cap||null;tutMostrar()}
+function tutLimparAlvo(){document.querySelectorAll(".tut-alvo").forEach(e=>e.classList.remove("tut-alvo"))}
+function tutSair(concluiu){TUT.ativo=false;tutLimparAlvo();const c=$("#tut-card");if(c)c.remove();document.removeEventListener("keydown",tutTeclas,true);
+  if(concluiu)tutFim();else toast("Tour pausado. Continue quando quiser em Tutorial.")}
+function tutTeclas(e){if(!TUT.ativo||document.querySelector(".modal-bg"))return;if(/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement&&document.activeElement.tagName))return;
+  if(e.key==="ArrowRight"){e.preventDefault();e.stopPropagation();tutIr(1)}else if(e.key==="ArrowLeft"){e.preventDefault();e.stopPropagation();tutIr(-1)}else if(e.key==="Escape"){e.preventDefault();tutSair(false)}}
+function tutIr(d){const n=TUT.i+d;if(n<0)return;if(n>=TUT.lista.length){tutSair(true);return}TUT.i=n;tutMostrar()}
+function tutMostrar(){
+  const p=TUT.lista[TUT.i];if(!p){tutSair(true);return}
+  const d=tutDados();d.vistos=d.vistos||{};d.vistos[p.v]=1;tutSalvar(d);
+  if(S.view!==p.v){S.grupoAberto=null;FC.estudo=null;go(p.v)}
+  document.removeEventListener("keydown",tutTeclas,true);document.addEventListener("keydown",tutTeclas,true);
+  let c=$("#tut-card");if(!c){c=document.createElement("div");c.id="tut-card";c.className="tut-card";c.setAttribute("role","dialog");c.setAttribute("aria-live","polite");document.body.appendChild(c)}
+  const cap=TUT_CAPS.find(x=>x[0]===p.c),n=TUT.lista.length,pct=Math.round((TUT.i+1)/n*100),ult=TUT.i===n-1;
+  c.innerHTML=`<div class="tut-top"><span class="pill">${cap[2]} ${cap[1]}</span><span class="small muted">${TUT.i+1} de ${n}</span><button type="button" class="btn icon ghost sm" data-tut="x" aria-label="Sair do tour" title="Sair do tour (Esc)">✕</button></div>
+    <div class="tut-corpo"><div class="tut-emoji" aria-hidden="true">${p.e}</div><div style="min-width:0"><h3>${esc(p.t)}</h3><p>${esc(p.x)}</p></div></div>
+    <div class="tut-dica"><b>Experimente:</b> ${p.d}</div>
+    <div class="prog tut-prog"><i style="width:${pct}%"></i></div>
+    <div class="tut-acoes"><button type="button" class="btn ghost sm" data-tut="-1" ${TUT.i?"":"disabled"}>${ico("back")}Voltar</button><button type="button" class="btn primary sm" data-tut="1">${ult?"Concluir 🎉":"Próximo"}${ult?"":ico("next")}</button></div>`;
+  c.onclick=e=>{const b=e.target.closest("[data-tut]");if(!b)return;if(b.dataset.tut==="x")tutSair(false);else tutIr(+b.dataset.tut)};
+  c.classList.remove("entra");void c.offsetWidth;c.classList.add("entra");
+  // destaca o item do menu e a parte principal da tela
+  tutLimparAlvo();let tent=0;const destacar=()=>{if(!TUT.ativo||TUT.lista[TUT.i]!==p)return;tutLimparAlvo();
+    const nav=document.querySelector(`#nav [data-go="${p.v}"]`);if(nav&&matchMedia("(min-width:861px)").matches)nav.classList.add("tut-alvo");
+    const alvo=(p.a&&p.a.split(",").map(x=>document.querySelector("#main "+x.trim().replace(/^#main\s*/,""))).find(Boolean))||(tent>=3?document.querySelector("#main .page > .card, #main .card"):null);
+    if(alvo){alvo.classList.add("tut-alvo");const r=alvo.getBoundingClientRect();if(r.top<70||r.top>innerHeight*.45)alvo.scrollIntoView({block:"start",behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth"});scrollBy(0,-80)}
+    else if(++tent<8)setTimeout(destacar,500)};   // telas que carregam dados (banco de questões, chat) aparecem um pouco depois
+  setTimeout(destacar,420);
+  c.querySelector('[data-tut="1"]').focus({preventScroll:true});
+}
+function tutFim(){const d=tutDados();d.concluido=Date.now();tutSalvar(d);go(TUT.cap?"tutorial":"inicio");
+  const bg=document.createElement("div");bg.className="modal-bg";
+  bg.innerHTML=`<div class="tut-confete" aria-hidden="true">${Array.from({length:40},(_,i)=>`<i style="--x:${(i*37)%100}%;--d:${(i%7)*.12}s;--c:${["#22e6ff","#ff2ec4","#fbbf24","#34d399","#a78bfa"][i%5]}"></i>`).join("")}</div>
+    <div class="card stack modal tut-boas" role="dialog" aria-modal="true" aria-labelledby="tf-t"><div class="tut-emoji grande" aria-hidden="true">🎉</div><h2 id="tf-t">${TUT.cap?"Capítulo concluído!":"Tour concluído!"}</h2>
+    <p class="muted">${TUT.cap?"Agora você domina esta parte do site.":"Agora você conhece o Logic Academy de ponta a ponta. O próximo passo é o mais importante: estudar!"}</p>
+    <div class="stack sm"><button class="btn primary" type="button" data-tf="estudar">${ico("play")}Começar a estudar agora</button><button class="btn ghost" type="button" data-tf="fechar">Fechar</button></div></div>`;
+  document.body.appendChild(bg);setTimeout(()=>bg.querySelector('[data-tf="estudar"]').focus(),50);
+  bg.addEventListener("click",e=>{const b=e.target.closest("[data-tf]");if(!b&&e.target!==bg)return;bg.remove();if(b&&b.dataset.tf==="estudar"){go("inicio");setTimeout(()=>iniciarEstudo(null),200)}})}
+function renderTutorial(){
+  const d=tutDados(),vis=d.vistos||{},ps=tutPassosValidos(),feitos=ps.filter(p=>vis[p.v]).length;
+  $("#main").innerHTML=`<div class="page">${pageHead("Tutorial","Um tour rápido por tudo o que o Logic Academy faz. Faça completo ou só o capítulo que quiser.")}
+    <div class="card tut-hero"><div class="tut-emoji grande" aria-hidden="true">🧭</div><div style="flex:1;min-width:0"><h2>${d.concluido?"Quer rever o tour?":"Conheça o site em 3 minutos"}</h2>
+      <p class="muted">${ps.length} paradas, uma por área do site. Em cada uma você vê para que ela serve e uma dica para experimentar na hora.</p>
+      <div class="prog" style="margin:10px 0 4px"><i style="width:${Math.round(feitos/ps.length*100)}%"></i></div><span class="small muted">${feitos} de ${ps.length} áreas já visitadas no tour</span></div>
+      <button class="btn primary" type="button" id="tut-tudo">${ico("play")}${d.concluido?"Fazer de novo":feitos?"Continuar o tour":"Começar o tour"}</button></div>
+    <div class="tut-caps">${TUT_CAPS.map(([k,n,e])=>{const l=ps.filter(p=>p.c===k);if(!l.length)return "";const f=l.filter(p=>vis[p.v]).length;return `<div class="card tut-cap">
+      <div class="row" style="gap:10px;flex-wrap:nowrap"><span class="tut-emoji" aria-hidden="true">${e}</span><div style="flex:1;min-width:0"><h3>${n}</h3><span class="small muted">${l.length} ${l.length===1?"parada":"paradas"} · ${f===l.length?"✓ visto":f+" vistas"}</span></div></div>
+      <div class="tut-lista">${l.map(p=>`<button type="button" class="tut-item ${vis[p.v]?"visto":""}" data-tut-ir="${p.v}"><span aria-hidden="true">${p.e}</span><span>${esc(p.t)}</span>${vis[p.v]?`<span class="tut-ok" aria-label="visto">✓</span>`:""}</button>`).join("")}</div>
+      <button class="btn sm" type="button" data-tut-cap="${k}">${ico("play")}Ver só este capítulo</button></div>`}).join("")}</div>
+    <div class="card stack sm"><h3>Atalhos que ajudam</h3><div class="tut-atalhos">
+      <span><kbd>Ctrl</kbd> + <kbd>B</kbd> recolhe o menu lateral</span><span><kbd>A</kbd>–<kbd>E</kbd> marcam a alternativa no banco de questões</span><span><kbd>Espaço</kbd> vira o flashcard</span><span><kbd>←</kbd> <kbd>→</kbd> passam as paradas do tour</span></div></div>
+  </div>`;
+  $("#tut-tudo").onclick=()=>{if(feitos&&!d.concluido){const i=ps.findIndex(p=>!vis[p.v]);tutIniciar();TUT.i=Math.max(0,i);tutMostrar()}else tutIniciar()};
+  $$("[data-tut-cap]").forEach(b=>b.onclick=()=>tutIniciar(b.dataset.tutCap));
+  $$("[data-tut-ir]").forEach(b=>b.onclick=()=>{tutIniciar();TUT.i=Math.max(0,TUT.lista.findIndex(p=>p.v===b.dataset.tutIr));tutMostrar()});
+}
+
 /* ================= Shell com barra lateral ================= */
 const NAV=[
   ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"]]],
   ["Prova",[["edital","Escanear edital","scan"],["topicos","Tópicos da prova","list"],["flashcards","Flashcards","cartas"]]],
   ["Comunidade",[["grupos","Meus grupos","users"],...(STANDALONE?[["buscarGrupos","Buscar grupos","search"]]:[]),["voz","Voz global","mic"],["chat","Chat global","chat"],...(STANDALONE?[["mensagens","Mensagens","send"],["amigos","Amigos","user"]]:[]),["ranking","Ranking","trophy"]]],
-  ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"]]]];
+  ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"]]],
+  ["Ajuda",[["tutorial","Tutorial","bussola"]]]];
 function renderShell(){
   $("#root").innerHTML=`
   <div class="shell ${lateral().rec?"rec":""}" id="shell">
@@ -3668,7 +3796,7 @@ function progEdital(){if(!S.edital)return 0;const all=S.edital.materias.flatMap(
 function go(v){pararTela();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
 function renderView(){
   $$("[data-go]").forEach(a=>{a.classList.toggle("on",a.dataset.go===S.view);if(a.dataset.go===S.view){const g=a.closest(".nav-grp.fech");if(g){g.classList.remove("fech");g.querySelectorAll("a").forEach(x=>x.removeAttribute("tabindex"));const b=g.previousElementSibling;if(b)b.setAttribute("aria-expanded","true")}}if(a.dataset.go==="topicos"){a.hidden=!S.edital;const b=a.querySelector(".badge");if(S.edital){if(b)b.textContent=progEdital()+"%";else a.insertAdjacentHTML("beforeend",`<span class="badge">${progEdital()}%</span>`)}}});
-  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,flashcards:renderFlashcards,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
+  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
   f();
 }
 const pageHead=(t,sub,acoes)=>`<div class="page-h"><div><h1>${t}</h1>${sub?`<p>${sub}</p>`:""}</div>${acoes?`<div class="row">${acoes}</div>`:""}</div>`;
@@ -3797,6 +3925,7 @@ function renderInicio(){
   $("#ini-pomo").onclick=()=>{if(P.rodando){go("pomodoro");return}if(C.rodando){go("cronometro");return}const prox=blocos.find(b=>!b.feito);iniciarEstudo(prox?hojeK+"|"+prox.id:null)};
   ligarHoje(blocos,hojeK);ligarBlocos();ligarMentoriaInicio();ligarRevisoes(renderInicio);$$("[data-link]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.dataset.link)}));
   const vc=$("#visit-conta");if(vc)vc.onclick=()=>sair("criar");
+  tutTalvezPerguntar();
 }
 function acharBloco(ref){const [k,id]=ref.split("|");return (S.plano&&S.plano.semana[k]||[]).find(b=>b.id===id)}
 function marcarBloco(ref,v){const b=acharBloco(ref);if(!b)return;b.feito=v;b.feitoEm=v?Date.now():0;setTimeout(atualizarBadgeDesafios,50);gravar("plano",S.plano);if(["inicio","semana"].includes(S.view))renderView()}
