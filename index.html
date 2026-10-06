@@ -404,6 +404,17 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 
 .qb-st{font-size:.75rem;font-weight:600;display:inline-flex;align-items:center;gap:3px;color:var(--muted)}
 .qb-st .i{width:13px;height:13px}
 .qb-st.ok{color:var(--ok,#16a34a)}.qb-st.no{color:var(--danger,#dc2626)}
+.convite{display:flex;flex-direction:column;gap:12px}.convite-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center}
+.convite-link{display:flex;gap:8px;flex-wrap:wrap}.convite-link input{flex:1 1 220px;min-width:0;font-size:.85rem}
+.convite-molds{display:flex;gap:14px}.convite-premio{display:flex;flex-direction:column;gap:8px;padding:12px;border-radius:12px;background:color-mix(in srgb,var(--accent,#7c3aed) 12%,transparent);border:1px solid color-mix(in srgb,var(--accent,#7c3aed) 35%,transparent)}
+@media (max-width:640px){.convite-grid{grid-template-columns:1fr}.convite-molds{justify-content:center}}
+.qb-msg{margin-top:6px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--surface,var(--card,#fff));display:flex;flex-direction:column;gap:6px;align-items:flex-start;max-width:420px;color:var(--text)}
+.qb-msg .i{width:16px;height:16px}.qb-msg-res{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.msg.mine .qb-msg{margin-left:auto}
+.qb-dests{gap:2px}.qb-dest{width:100%;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;background:transparent;border:0;border-radius:var(--r-sm);padding:8px;cursor:pointer;color:inherit}
+.qb-dest:hover{background:var(--sunken)}.qb-dest:disabled{cursor:default}.qb-dests .eyebrow{margin-top:8px}
+.qb-modal-c{width:min(720px,100%)}.qb-det-modal{border:0;padding:0;box-shadow:none;background:none}
+.qb-resolvida{border:1px solid currentColor;border-radius:999px;padding:1px 8px;background:color-mix(in srgb,currentColor 10%,transparent);white-space:nowrap}
 .qb-vazio{align-items:center;text-align:center;padding:48px 24px;color:var(--muted)}
 .qb-vazio .i{width:36px;height:36px}
 .qb-det{display:flex;flex-direction:column;gap:14px}
@@ -1720,7 +1731,7 @@ function ligarWizard(){
     if(S.step<PASSOS.length-1){S.step++;renderWizard();scrollTo(0,0);return}
     const novo=!S.plano;S.perfil=clone(d);S.perfil.tema=temaAtual();Object.assign(P.dur,{foco:+d.bloco,curta:+d.pausa});if(!P.rodando)P.restante=pomoTotal();
     gravar("perfil",S.perfil,true);
-    if(S.mode==="nuvem"&&S.pubOk&&!S.soc.perfis[S.uid])gravarPub("perfis",{nome:d.nome||"Estudante",bio:"",foto:"",objetivo:descObjetivo(d),desde:Date.now()});
+    if(S.mode==="nuvem"&&S.pubOk&&!S.soc.perfis[S.uid])criarPerfilPub({nome:d.nome||"Estudante",bio:"",foto:"",objetivo:descObjetivo(d),desde:Date.now()});
     S.view="semana";renderShell();gerar({novo});
   });
   $("#q-back").onclick=()=>{lerWizard();if(S.editar&&S.step===1){S.editar=false;renderShell();return}if(S.step===0){renderShell()}else{S.step--;renderWizard()}};
@@ -2337,9 +2348,21 @@ function assinarSocial(){
       S.soc[col]=m;if(col==="perfis"){S.pubOk=true}atualizarSocial(col)},()=>{}))}catch(e){}
   });
 }
+// convite: o link ?ref=<id> guarda quem convidou até a conta nova criar o perfil público
+(function(){try{const u=new URLSearchParams(location.search).get("ref");if(u&&/^[A-Za-z0-9]{6,64}$/.test(u)){localStorage.setItem("la_ref",JSON.stringify({u,em:Date.now()}));
+  const url=new URL(location.href);url.searchParams.delete("ref");history.replaceState(history.state,"",url.pathname+url.search+url.hash)}}catch(e){}})();
+function refPendente(){try{const d=JSON.parse(localStorage.getItem("la_ref")||"null");if(d&&d.u&&Date.now()-d.em<30*864e5)return d.u}catch(e){}return null}
+// perfil público da conta nova: antes dele, registra o convite (as regras só aceitam enquanto a conta ainda não tem perfil)
+let criandoPerfil=null;
+function criarPerfilPub(doc){if(criandoPerfil)return criandoPerfil;
+  const ref=FBM()?refPendente():null,limpar=()=>{try{localStorage.removeItem("la_ref")}catch(e){}};
+  const conv=ref&&ref!==S.uid?S.db.collection("indicacoes").doc(S.uid).set({por:ref,em:firebase.firestore.FieldValue.serverTimestamp()})
+      .then(()=>toast(`Você entrou pelo convite de ${nomeDe(ref)}. Bons estudos juntos!`)).catch(e=>console.warn("convite",e&&e.code)).finally(limpar)
+    :Promise.resolve(ref?limpar():null);
+  criandoPerfil=conv.then(()=>gravarPub("perfis",doc)).finally(()=>{criandoPerfil=null});return criandoPerfil}
 // quando o perfil público chega: cria o perfil de quem ainda não tem e atualiza o nível
 function perfilCarregado(){if(S.mode!=="nuvem"||!S.perfil)return;
-  if(!S.soc.perfisBrutos[S.uid])gravarPub("perfis",{nome:S.perfil.nome||"Estudante",bio:"",foto:"",objetivo:descObjetivo(S.perfil),desde:Date.now()});
+  if(!S.soc.perfisBrutos[S.uid])criarPerfilPub({nome:S.perfil.nome||"Estudante",bio:"",foto:"",objetivo:descObjetivo(S.perfil),desde:Date.now()});
   else publicarNivel()}
 const nomeDe=id=>(S.soc.perfis[id]&&S.soc.perfis[id].nome)||"Estudante";
 function avatar(id,cls){const p=S.soc.perfis[id]||{};const nm=id===S.uid&&S.mode!=="nuvem"?(S.perfil&&S.perfil.nome)||"Você":nomeDe(id);
@@ -2410,9 +2433,10 @@ async function sairGrupoFB(gid){
     await meuDoc("social").set({grupos:{[gid]:firebase.firestore.FieldValue.delete()}},{merge:true});toast("Você saiu do grupo.")}
   catch(e){toast("Não foi possível sair do grupo.")}
 }
-function msgsHtml(lista){return lista.length?lista.map(m=>`<div class="msg ${m.autor===S.uid?"mine":""}" data-perfil="${m.autor}">${avatar(m.autor)}<div style="min-width:0"><div class="h"><b>${esc(nomeDe(m.autor))}</b><time>${hora(m.em)}</time></div>${m.texto?`<div class="b">${esc(m.texto)}</div>`:""}${m.arq&&m.arq.id?arqMsgHtml(m,m._base||m._gid):""}</div></div>`).join("")
+function msgsHtml(lista){return lista.length?lista.map(m=>`<div class="msg ${m.autor===S.uid?"mine":""}" data-perfil="${m.autor}">${avatar(m.autor)}<div style="min-width:0"><div class="h"><b>${esc(nomeDe(m.autor))}</b><time>${hora(m.em)}</time></div>${m.texto?`<div class="b">${esc(m.texto)}</div>`:""}${m.q&&m.q.id?qbMsgHtml(m.q):""}${m.arq&&m.arq.id?arqMsgHtml(m,m._base||m._gid):""}</div></div>`).join("")
   :`<div class="empty-state" style="margin:auto">${ico("chat")}<span>Nenhuma mensagem ainda. Diga oi!</span></div>`}
-function pintarMsgs(boxId,lista){const box=$("#"+boxId);if(!box)return;const perto=box.scrollHeight-box.scrollTop-box.clientHeight<80||box.dataset.init!=="1";box.innerHTML=msgsHtml(lista);if(perto){box.scrollTop=box.scrollHeight;box.dataset.init="1"}}
+function pintarMsgs(boxId,lista){const box=$("#"+boxId);if(!box)return;const perto=box.scrollHeight-box.scrollTop-box.clientHeight<80||box.dataset.init!=="1";box.innerHTML=msgsHtml(lista);if(perto){box.scrollTop=box.scrollHeight;box.dataset.init="1"}
+  if(lista.some(m=>m.q&&m.q.id)&&!(S.qb&&S.qb.doc)){qbEstado();qbDoc().then(qbAtualizarSelosMsgs).catch(()=>{})}}
 function chatBox(id,ph){return `<div class="card chat"><div class="msgs" id="${id}" aria-live="polite"><div class="row muted small" style="margin:auto"><span class="spinner"></span>Carregando mensagens…</div></div>
   <form class="composer" data-composer="${id}"><input type="text" placeholder="${ph}" maxlength="1000" autocomplete="off" aria-label="Mensagem"><button class="btn primary" type="submit" aria-label="Enviar">${ico("send")}</button></form></div>`}
 function ligarComposer(id,enviar){const f=$(`[data-composer="${id}"]`);if(!f)return;f.addEventListener("submit",async e=>{e.preventDefault();const i=f.querySelector("input[type=text]");const t=i.value.trim().slice(0,1000);if(!t)return;i.value="";i.focus();
@@ -2902,6 +2926,8 @@ const QB_POR_PAGINA=30;
 // nível pela dificuldade oficial da TRI (parâmetro b dos microdados do INEP), em terços de cada área
 const QB_NIVEIS=[[1,"Fácil","facil"],[2,"Médio","medio"],[3,"Difícil","dificil"]];
 const qbNivel=x=>QB_NIVEIS.find(n=>n[0]===x.d);
+// selo de questão já resolvida (cada pessoa vê o próprio resultado)
+const qbSeloResolvida=r=>r?`<span class="qb-st qb-resolvida ${r[1]?"ok":"no"}" title="Você já resolveu esta questão">✓ Resolvida · ${r[1]?"acertou":"errou"}</span>`:"";
 const qbSeloNivel=x=>{const n=qbNivel(x);return n?`<span class="qb-nv ${n[2]}">${n[1]}</span>`:""};
 function qbEstado(){
   if(!S.qb)S.qb={dados:{},carregando:{},f:{prova:"",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0},sel:null,lim:QB_POR_PAGINA,esc:{},corte:{},doc:null};
@@ -2990,7 +3016,7 @@ function qbTela(){
         <div class="small muted qb-cont">${lista.length?`${lista.length.toLocaleString("pt-BR")} ${lista.length===1?"questão":"questões"}`:""}</div>
         ${lista.length?lista.slice(0,q.lim).map(x=>{const r=doc.r[x.id];return `<button type="button" class="qb-item ${q.sel===x.id?"on":""}" data-qsel="${x.id}">
           <div class="row" style="gap:6px;flex-wrap:wrap"><span class="pill solid">${qbRotulo(x)}</span><span class="pill">${x.p==="pas"?"Item":"Questão"} ${x.n}</span>${x.ce?`<span class="pill">Certo ou errado</span>`:""}${qbSeloNivel(x)}<span class="pill">${QB_MAT[x.m]}</span>${x.x?`<span class="qb-st no" title="O INEP retirou esta questão do cálculo da nota">fora da nota</span>`:""}
-          ${r?`<span class="qb-st ${r[1]?"ok":"no"}">${r[1]?"✓ acertou":"✗ errou"}</span>`:""}${doc.s[x.id]?`<span class="qb-st">${ico("bookmark")}</span>`:""}</div>
+          ${qbSeloResolvida(r)}${doc.s[x.id]?`<span class="qb-st">${ico("bookmark")}</span>`:""}</div>
           <div class="small qb-top">${esc(x.t)}</div><div class="small muted qb-res">${esc(qbResumoTexto(x))}</div></button>`}).join("")
           +(lista.length>q.lim?`<button class="btn" type="button" id="qb-mais" style="width:100%">Mostrar mais ${Math.min(QB_POR_PAGINA,lista.length-q.lim)}</button>`:"")
           :`<div class="card stack" style="text-align:center;align-items:center;padding:32px 16px">${ico("search")}<b>Nenhuma questão com esses filtros</b><span class="small muted">Tente outro tópico, ano ou limpe os filtros.</span></div>`}
@@ -3006,7 +3032,8 @@ function qbDetalhe(x,lista){
   const i=lista.findIndex(y=>y.id===x.id);
   return `<article class="card qb-det">
     <div class="row qb-det-top"><button class="btn sm ghost qb-voltar" type="button" id="qb-voltar">${ico("back")}Lista</button>
-      <div class="row" style="gap:6px;flex-wrap:wrap;flex:1"><span class="pill solid">${qbRotulo(x)}</span>${qbDia(x)?`<span class="pill">${qbDia(x)}</span>`:""}${x.p==="espcex"&&x.mod?`<span class="pill">Modelo ${esc(x.mod)}</span>`:""}<span class="pill">${x.p==="pas"?"Item":"Questão"} ${x.n}</span>${x.ce?`<span class="pill">Certo ou errado</span>`:""}${qbSeloNivel(x)}${x.lg?`<span class="pill">${x.lg==="ingles"?"Inglês":"Espanhol"}</span>`:""}</div>
+      <div class="row" style="gap:6px;flex-wrap:wrap;flex:1"><span class="pill solid">${qbRotulo(x)}</span>${qbDia(x)?`<span class="pill">${qbDia(x)}</span>`:""}${x.p==="espcex"&&x.mod?`<span class="pill">Modelo ${esc(x.mod)}</span>`:""}<span class="pill">${x.p==="pas"?"Item":"Questão"} ${x.n}</span>${x.ce?`<span class="pill">Certo ou errado</span>`:""}${qbSeloNivel(x)}${x.lg?`<span class="pill">${x.lg==="ingles"?"Inglês":"Espanhol"}</span>`:""}${qbSeloResolvida(r)}</div>
+      ${FBM()?`<button class="btn sm ghost" type="button" id="qb-enviar" title="Enviar esta questão para um chat">${ico("send")}Enviar</button>`:""}
       <button class="btn sm ${doc.s[x.id]?"primary":"ghost"}" type="button" id="qb-salvar" aria-pressed="${!!doc.s[x.id]}" title="Salvar questão">${ico("bookmark")}${doc.s[x.id]?"Salva":"Salvar"}</button></div>
     <div class="small muted">${QB_MAT[x.m]} · ${esc(x.t)}</div>
     ${x.x?`<div class="qb-resultado no small"><b>Esta questão não contou na nota.</b> O INEP a retirou do cálculo da nota (TRI). Você pode resolvê-la como treino; por isso ela não tem nível.</div>`:""}
@@ -3033,8 +3060,10 @@ function qbAbrir(id){const q=qbEstado();q.sel=id;q.mostrar=null;q.corrigiu=null;
   if(q.f.sit==="erradas"&&qbPendente(q.doc,id)&&q.doc.r[id]&&!q.doc.r[id][1]){delete q.doc.r[id];delete q.esc[id]}
   qbTela();
   if(matchMedia("(max-width:860px)").matches)scrollTo(0,0);else{const d=$("#qb-det");if(d&&d.getBoundingClientRect().top<0)d.scrollIntoView({block:"start"})}}
-function qbResponder(x){const q=qbEstado(),k=q.esc[x.id];if(k==null)return;const ok=k===x.r;
-  q.doc.r[x.id]=[k,ok?1:0,Date.now()];delete q.esc[x.id];q.mostrar=x.id;q.doc.e=q.doc.e||{};
+function qbResponder(x){const q=qbEstado(),k=q.esc[x.id];if(k==null)return;delete q.esc[x.id];q.mostrar=x.id;qbRegistrar(x,k);qbTela()}
+// guarda a resposta (banco de questões ou questão enviada num chat): caderno de erros, estatísticas e desafios
+function qbRegistrar(x,k){const q=qbEstado(),ok=k===x.r;
+  q.doc.r[x.id]=[k,ok?1:0,Date.now()];q.doc.e=q.doc.e||{};
   const er=q.doc.e[x.id];
   if(!ok)q.doc.e[x.id]={n:((er&&er.n)||0)+1,em:(er&&!er.c&&er.em)||Date.now(),c:0,m:k};
   else if(er&&!er.c){er.c=Date.now();q.corrigiu=x.id;setTimeout(()=>{toast("Questão corrigida! Ela saiu do caderno de erros.");const pend=Object.keys(q.doc.e).filter(id=>qbPendente(q.doc,id)).length;if(!pend)toast("Caderno de erros zerado. Mandou bem!")},60)}
@@ -3043,7 +3072,7 @@ function qbResponder(x){const q=qbEstado(),k=q.esc[x.id];if(k==null)return;const
   if(S.pomoLog){const L=garantirTotais(S.pomoLog),nm=QB_MAT[x.m],h=L.dias[dataISO()]=L.dias[dataISO()]||{min:0,mat:{}};
     L.q=L.q||{};L.q[nm]=L.q[nm]||{feitas:0,acertos:0};L.q[nm].feitas++;if(ok)L.q[nm].acertos++;h.q=(h.q||0)+1;if(ok)h.acertos=(h.acertos||0)+1;
     gravar("pomo",L);setTimeout(()=>{verificarConquistas(true);atualizarBadgeDesafios()},50)}
-  qbTela()}
+  qbAtualizarSelosMsgs();return ok}
 function qbLigar(lista){
   const q=qbEstado(),f=q.f;
   let tb;const bi=$("#qb-busca");bi.oninput=()=>{clearTimeout(tb);tb=setTimeout(()=>{f.busca=bi.value;q.lim=QB_POR_PAGINA;const pos=bi.selectionStart;qbTela();const n=$("#qb-busca");n.focus();try{n.setSelectionRange(pos,pos)}catch(e){}},250)};
@@ -3068,6 +3097,7 @@ function qbLigar(lista){
   const ia=$("#qb-ia");if(ia)ia.onclick=()=>qbExplicarIA(x,(q.doc.r[x.id]||[])[0]);
   const co=$("#qb-corrigir");if(co)co.onclick=()=>{delete q.doc.r[x.id];delete q.esc[x.id];q.mostrar=null;q.corrigiu=null;qbSalvar();const y=scrollY;qbTela();scrollTo(0,y)};
   const rf=$("#qb-refazer");if(rf)rf.onclick=()=>{delete q.doc.r[x.id];q.esc[x.id]=null;delete q.esc[x.id];q.mostrar=null;qbSalvar();qbTela()};
+  const en=$("#qb-enviar");if(en)en.onclick=()=>qbEnviarModal(x);
   $("#qb-salvar").onclick=()=>{if(q.doc.s[x.id])delete q.doc.s[x.id];else q.doc.s[x.id]=Date.now();qbSalvar();const y=scrollY;qbTela();scrollTo(0,y)};
   $("#qb-voltar").onclick=()=>{q.sel=null;qbTela();const it=$(`[data-qsel="${x.id}"]`);if(it)it.scrollIntoView({block:"center"})};
   $("#qb-ant").onclick=()=>{if(i>0)qbAbrir(lista[i-1].id)};
@@ -3089,6 +3119,82 @@ document.addEventListener("keydown",e=>{
   else if(e.key==="ArrowLeft"){const b=$("#qb-ant");if(b&&!b.disabled){e.preventDefault();b.click()}}
 });
 
+
+/* ---- Questões do banco enviadas nos chats (global, grupos e conversas privadas) ----
+   a mensagem leva só um resumo e o id; quem recebe abre e responde ali mesmo, e o resultado entra no próprio banco */
+function qbMsgInfo(x){const cut=(t,n)=>String(t||"").slice(0,n);return {id:cut(x.id,80),a:cut(x.area,30),r:cut(qbRotulo(x),60),m:cut(QB_MAT[x.m]||"",40),t:cut(x.t,120),x:cut(qbResumoTexto(x),200)}}
+function qbMsgHtml(q){const r=S.qb&&S.qb.doc&&S.qb.doc.r[q.id];
+  return `<div class="qb-msg" data-qmsg="${esc(q.id)}" data-qma="${esc(q.a)}">
+    <div class="row" style="gap:6px;flex-wrap:wrap">${ico("qbank")}<span class="pill solid">${esc(q.r||"Questão")}</span>${q.m?`<span class="pill">${esc(q.m)}</span>`:""}<span data-qselo>${qbSeloResolvida(r)}</span></div>
+    ${q.t?`<div class="small"><b>${esc(q.t)}</b></div>`:""}${q.x?`<div class="small muted qb-msg-res">${esc(q.x)}</div>`:""}
+    <button class="btn sm ${r?"":"primary"}" type="button" data-qresp>${r?"Ver questão":"Responder aqui"}</button></div>`}
+function qbAtualizarSelosMsgs(){const doc=S.qb&&S.qb.doc;if(!doc)return;
+  document.querySelectorAll(".qb-msg[data-qmsg]").forEach(el=>{const r=doc.r[el.dataset.qmsg],s=el.querySelector("[data-qselo]"),b=el.querySelector("[data-qresp]");
+    if(s)s.innerHTML=qbSeloResolvida(r);if(b){b.textContent=r?"Ver questão":"Responder aqui";b.classList.toggle("primary",!r)}})}
+document.addEventListener("click",e=>{const b=e.target.closest(".qb-msg [data-qresp]");if(!b)return;const c=b.closest(".qb-msg");qbResponderModal(c.dataset.qmsg,c.dataset.qma)});
+// escolher para onde mandar: chat global, comunidades e conversas (inclui amigos sem conversa ainda)
+function qbEnviarModal(x){
+  if(!FBM()){toast("Entre com sua conta para enviar questões.");return}
+  const grupos=Object.keys(FBC.meus||{}).filter(g=>FBC.meus[g]&&FBC.grupos[g]).map(g=>FBC.grupos[g]).sort((a,b)=>String(a.nome).localeCompare(String(b.nome)));
+  const pessoas=new Map();Object.values(FBC.convs||{}).sort((a,b)=>(b.atualizado||0)-(a.atualizado||0)).forEach(c=>{const o=(c.participantes||[]).find(p=>p!==S.uid);if(o)pessoas.set(o,1)});
+  ((S.pub&&S.pub.amigos)||[]).forEach(o=>{if(o!==S.uid)pessoas.set(o,1)});
+  const linha=(dest,icone,nome,sub)=>`<button type="button" class="li qb-dest" data-qdest="${esc(dest)}">${icone}<div style="min-width:0;text-align:left"><div class="nm">${esc(nome)}</div>${sub?`<div class="small muted">${esc(sub)}</div>`:""}</div><span class="small muted qb-dest-st">${ico("send")}</span></button>`;
+  const bg=document.createElement("div");bg.className="modal-bg";
+  bg.innerHTML=`<div class="card stack modal qb-enviar" role="dialog" aria-modal="true" aria-labelledby="qe-t">
+    <div class="row" style="justify-content:space-between"><h3 id="qe-t">Enviar questão</h3><button class="btn icon ghost sm" type="button" data-qe="x" aria-label="Fechar">✕</button></div>
+    <div class="small muted">${esc(qbRotulo(x))} · ${esc(QB_MAT[x.m]||"")} · ${esc(x.t)}</div>
+    <input type="text" id="qe-txt" maxlength="300" placeholder="Mensagem junto (opcional): “Alguém sabe essa?”" aria-label="Mensagem junto com a questão">
+    <div class="list qb-dests">
+      <div class="eyebrow">Chat</div>${linha("global",`<span class="logo" style="width:36px;height:36px">${ico("chat")}</span>`,"Chat global","Todos os estudantes do site")}
+      ${grupos.length?`<div class="eyebrow">Comunidades</div>${grupos.map(g=>linha("g:"+g.id,gAvatar(g),g.nome,"")).join("")}`:""}
+      ${pessoas.size?`<div class="eyebrow">Conversas e amigos</div>${[...pessoas.keys()].map(o=>linha("dm:"+o,avatar(o),nomeDe(o),"Conversa privada")).join("")}`:""}
+    </div>
+    ${!grupos.length&&!pessoas.size?`<p class="small muted">Entre em comunidades ou adicione amigos para enviar questões só para eles.</p>`:""}</div>`;
+  document.body.appendChild(bg);
+  bg.addEventListener("click",async e=>{if(e.target===bg||e.target.closest('[data-qe="x"]')){bg.remove();return}
+    const b=e.target.closest("[data-qdest]");if(!b||b.disabled)return;b.disabled=true;const st=b.querySelector(".qb-dest-st");st.innerHTML=`<span class="spinner"></span>`;
+    try{await qbEnviarPara(b.dataset.qdest,x,$("#qe-txt").value.trim());st.innerHTML=`<span class="qb-st ok">✓ Enviada</span>`}
+    catch(err){b.disabled=false;st.innerHTML=ico("send");toast("Não foi possível enviar ("+(err&&err.code||"erro")+").")}});
+  bg.addEventListener("keydown",e=>{if(e.key==="Escape")bg.remove()});
+  setTimeout(()=>{const t=$("#qe-txt");if(t)t.focus()},50)}
+async function qbEnviarPara(dest,x,texto){
+  const msg={autor:S.uid,texto:(texto||"").slice(0,300),em:Date.now(),q:qbMsgInfo(x)};
+  if(dest==="global")return S.db.collection("chat").add(msg);
+  if(dest.startsWith("g:"))return S.db.collection("grupos").doc(dest.slice(2)).collection("mensagens").add(msg);
+  if(dest.startsWith("dm:")){const o=dest.slice(3),ref=S.db.collection("conversas").doc(cidDe(o));
+    await ref.set({participantes:[S.uid,o].sort(),atualizado:Date.now(),ultima:("📝 Questão: "+(texto||qbRotulo(x))).slice(0,90),ultimaDe:S.uid},{merge:true});
+    return ref.collection("mensagens").add(msg)}
+  throw {code:"destino"}}
+// responder a questão recebida sem sair do chat
+async function qbResponderModal(id,area){
+  document.querySelectorAll(".qb-modal").forEach(m=>m.remove());
+  const bg=document.createElement("div");bg.className="modal-bg qb-modal";
+  bg.innerHTML=`<div class="card stack modal qb-modal-c" role="dialog" aria-modal="true" aria-label="Questão"><div class="row muted small"><span class="spinner"></span>Carregando questão…</div></div>`;
+  document.body.appendChild(bg);const caixa=bg.firstElementChild;
+  bg.addEventListener("click",e=>{if(e.target===bg||e.target.closest('[data-qm="x"]'))bg.remove()});
+  bg.addEventListener("keydown",e=>{if(e.key==="Escape")bg.remove()});
+  let x=null;try{qbEstado();await qbDoc();const l=await qbCarregar(area);x=l.find(y=>y.id===id)}catch(e){}
+  if(!bg.isConnected)return;
+  if(!x){caixa.innerHTML=`<b>Não foi possível abrir esta questão.</b><p class="small muted">Verifique sua conexão e tente de novo.</p><div class="row" style="justify-content:flex-end"><button class="btn" type="button" data-qm="x">Fechar</button></div>`;return}
+  let sel=null;
+  const pinta=()=>{const doc=S.qb.doc,r=doc.r[x.id],resp=!!r&&sel===null,marc=resp?r[0]:sel;
+    caixa.innerHTML=`<div class="row" style="gap:6px;flex-wrap:wrap"><span class="pill solid">${esc(qbRotulo(x))}</span><span class="pill">${x.p==="pas"?"Item":"Questão"} ${x.n}</span>${qbSeloNivel(x)}${qbSeloResolvida(r)}<button class="btn icon ghost sm" type="button" data-qm="x" aria-label="Fechar" style="margin-left:auto">✕</button></div>
+      <div class="small muted">${esc(QB_MAT[x.m]||"")} · ${esc(x.t)}</div>
+      <div class="qb-det qb-det-modal"><div class="qb-texto">${qbMd(x.c)}</div>${x.i?`<div class="qb-enun">${qbMd(x.i)}</div>`:""}
+      ${qbSoLetras(x)?`<p class="small muted">Leia as alternativas na imagem da prova e marque a letra:</p>`:""}${x.ce?`<p class="small muted">Julgue o item: ele está certo ou errado?</p>`:""}
+      <div class="qb-alts ${qbSoLetras(x)?"qb-alts-letras":""} ${x.ce?"qb-alts-ce":""}" role="radiogroup" aria-label="Alternativas">${x.a.map(([t,img],k)=>{const L=qbL(x,k);
+        const cls=[marc===k?"on":"",resp&&k===x.r?"certa":"",resp&&marc===k&&k!==x.r?"errada":""].join(" ");
+        return `<div class="qb-alt ${cls}"><button type="button" class="qb-alt-b" role="radio" aria-checked="${marc===k}" data-qmalt="${k}" ${resp?"disabled":""}><span class="qb-l">${L}</span><span class="qb-at">${img?`<img src="${esc(img)}" alt="Alternativa ${L}" loading="lazy">`:""}${t?qbMd(t):""}</span></button></div>`}).join("")}</div>
+      ${resp?`<div class="qb-resultado ${r[1]?"ok":"no"}">${r[1]?"<b>Você acertou!</b>":`<b>Resposta correta: ${qbLNome(x,x.r)}</b> · você marcou ${qbLNome(x,r[0])}.`}</div>`:""}</div>
+      <div class="row" style="justify-content:flex-end;gap:8px;flex-wrap:wrap">
+        <button class="btn sm ghost" type="button" data-qm="banco">${ico("qbank")}Abrir no banco</button>
+        ${resp?`<button class="btn sm" type="button" data-qm="refazer">Refazer</button>`:`<button class="btn primary" type="button" data-qm="resp" ${sel==null?"disabled":""}>Responder</button>`}</div>`};
+  caixa.addEventListener("click",e=>{const a=e.target.closest("[data-qmalt]");if(a&&!a.disabled){sel=+a.dataset.qmalt;pinta();return}
+    const b=e.target.closest("[data-qm]");if(!b)return;const q=S.qb;
+    if(b.dataset.qm==="resp"&&sel!=null){const k=sel;sel=null;const ok=qbRegistrar(x,k);pinta();toast(ok?"Você acertou! A questão entrou no seu banco como resolvida.":"Não foi dessa vez. A questão foi para o seu caderno de erros.")}
+    else if(b.dataset.qm==="refazer"){delete q.doc.r[x.id];qbSalvar();qbAtualizarSelosMsgs();sel=null;pinta()}
+    else if(b.dataset.qm==="banco"){bg.remove();Object.assign(q.f,{prova:"",area:x.area,m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0});q.sel=x.id;q.lim=QB_POR_PAGINA;go("questoes")}});
+  pinta()}
 // ---- caderno de erros ----
 function qbCadernoHtml(){
   const q=qbEstado(),doc=q.doc;if(!doc)return "";const e=doc.e||{};
@@ -3131,7 +3237,15 @@ function contextoMentoria(){
     `Banco de questões (feitas/acertos por tópico): ${Object.entries(porTop).map(([k,[f,c]])=>`${k}: ${c}/${f}`).join("; ")||"nenhuma resolvida"}`,
     `Plano da semana: ${pl}`].join("\n")}
 // No site oficial (GitHub Pages), a IA vem do Firebase AI Logic com a Gemini Developer API (plano gratuito, sem chave no código)
-const IA_FB_VERSAO="12.19.0",IA_FB_MODELOS=["gemini-3.8-flash","gemini-3.5-flash-lite"];
+const IA_FB_VERSAO="12.19.0",IA_FB_MODELOS=["gemini-3.8-flash","gemini-3.5-flash","gemini-3.5-flash-lite"];
+// no plano gratuito do Google cada modelo tem um limite curto (por minuto e por dia) para o site inteiro:
+// quando um modelo esgota, a IA passa para o próximo da fila e só volta a ele depois do tempo que o Google pedir
+const IA_PULA_KEY="la_ia_pula";
+function iaPulados(){try{return JSON.parse(localStorage.getItem(IA_PULA_KEY)||"{}")||{}}catch(e){return {}}}
+function iaPular(mod,ms){const d=iaPulados();d[mod]=Date.now()+ms;try{localStorage.setItem(IA_PULA_KEY,JSON.stringify(d))}catch(e){}}
+function iaFilaModelos(){const d=iaPulados(),agora=Date.now(),livres=IA_FB_MODELOS.filter(m=>!(d[m]>agora));
+  return livres.length?livres:IA_FB_MODELOS.slice().sort((a,b)=>(d[a]||0)-(d[b]||0))}
+function iaEsperaDoErro(m){const x=String(m).match(/retry in ([0-9.]+)\s*s/i);return x?Math.max(60000,Math.ceil(+x[1])*1000+5000):10*60000}
 let iaFBPromessa=null;
 function iaMentoriaDisponivel(){return !!S.sample||(FBM()&&!!window.MAPA_FIREBASE_CONFIG)}
 // IA que devolve JSON: na prévia usa S.sample; no site usa o Firebase AI Logic (mesmo da mentoria)
@@ -3150,14 +3264,22 @@ function iaFirebase(){
     // appCheckEnterprise: true usa o reCAPTCHA Enterprise (Google Cloud Fraud Defense) em vez do reCAPTCHA v3 clássico
     if(chaveAC){try{const ac=await import(b+"firebase-app-check.js"),Prov=window.MAPA_FIREBASE_CONFIG.appCheckEnterprise?ac.ReCaptchaEnterpriseProvider:ac.ReCaptchaV3Provider;
       ac.initializeAppCheck(app,{provider:new Prov(chaveAC),isTokenAutoRefreshEnabled:true})}catch(e){console.warn("app check",e)}}
-    const ai=getAI(app,{backend:new GoogleAIBackend(),useLimitedUseAppCheckTokens:false});let mi=0;
+    const ai=getAI(app,{backend:new GoogleAIBackend(),useLimitedUseAppCheckTokens:false});
+    const codigo=m=>/429|quota|RESOURCE_EXHAUSTED/i.test(m)?"rate_limited":/App ?Check|appcheck|401/i.test(m)?"ia_appcheck":/403|PERMISSION|not been used|disabled|api-not-enabled|firebasevertexai|firebaseml/i.test(m)?"ia_desativada":"erro";
     return async(turns,opts)=>{const contents=turns.map(t=>({role:t.role==="assistant"?"model":"user",parts:[{text:t.content}]}));
       if(opts&&opts.imagens&&opts.imagens.length){const u=contents.find(c=>c.role==="user");if(u)opts.imagens.forEach(im=>u.parts.push({inlineData:{mimeType:im.mime,data:im.b64}}))}
-      for(;;){try{const espera=new Promise((_,no)=>setTimeout(()=>no({code:"ia_tempo",message:"tempo esgotado"}),35000));
-          const r=await Promise.race([getGenerativeModel(ai,{model:IA_FB_MODELOS[mi]}).generateContentStream({contents}),espera]);let text="";
+      let ultimo="";
+      for(const mod of iaFilaModelos()){let text="";
+        try{const espera=new Promise((_,no)=>setTimeout(()=>no({code:"ia_tempo",message:"tempo esgotado"}),35000));
+          const r=await Promise.race([getGenerativeModel(ai,{model:mod}).generateContentStream({contents}),espera]);
           for await(const ch of r.stream){let d="";try{d=ch.text()}catch(e){}text+=d;if(opts&&opts.onText)opts.onText({text,delta:d})}return {text,truncated:false}}
-        catch(e){if(e&&e.code==="ia_tempo")throw e;const m=String(e&&e.message||e);if(mi<IA_FB_MODELOS.length-1&&/not found|404|not supported|unknown model/i.test(m)){mi++;continue}
-          throw {code:/429|quota|RESOURCE_EXHAUSTED/i.test(m)?"rate_limited":/App ?Check|appcheck|401/i.test(m)?"ia_appcheck":/403|PERMISSION|not been used|disabled|api-not-enabled|firebasevertexai|firebaseml/i.test(m)?"ia_desativada":"erro",message:m}}}}})();
+        catch(e){if(text)return {text,truncated:true};if(e&&e.code==="ia_tempo")throw e;const m=String(e&&e.message||e);ultimo=m;
+          // modelo indisponível, limite do plano gratuito ou instabilidade do Google: tenta o próximo modelo da fila
+          if(/not found|404|not supported|unknown model/i.test(m)){iaPular(mod,7*864e5);continue}
+          if(/429|quota|RESOURCE_EXHAUSTED/i.test(m)){iaPular(mod,iaEsperaDoErro(m));continue}
+          if(/\b50[0-4]\b|overloaded|UNAVAILABLE|INTERNAL|fetch/i.test(m))continue;
+          throw {code:codigo(m),message:m}}}
+      throw {code:codigo(ultimo),message:ultimo}}})();
   iaFBPromessa.catch(()=>{iaFBPromessa=null});return iaFBPromessa}
 async function iaMentoria(){return S.sample||await iaFirebase()}
 async function renderMentoria(){
@@ -3224,7 +3346,26 @@ const VOZ_MAX=8,VOZ_ICE=[{urls:["stun:stun.l.google.com:19302","stun:stun1.l.goo
 const V={canal:null,titulo:"",sessao:"",stream:null,pcs:{},parts:{},mudo:false,subs:[],hb:null,ctx:null,an:{},falando:{},laco:null,entrando:false,video:null,vtipo:null,max:8};
 const vozDoc=c=>S.db.collection("voz").doc(c);
 const VOZ_VIVO=180000;
-document.addEventListener("visibilitychange",()=>{if(V.canal&&S.db)vozDoc(V.canal).collection("participantes").doc(S.uid).update({visto:Date.now(),mudo:V.mudo}).catch(()=>{})});
+document.addEventListener("visibilitychange",()=>{if(!V.canal||!S.db)return;
+  vozDoc(V.canal).collection("participantes").doc(S.uid).update({visto:Date.now(),mudo:V.mudo}).catch(()=>{});
+  if(document.visibilityState==="visible")vozRetomar();
+  else if(V.vtipo||Object.values(V.pcs).some(p=>p.vstream))vozAbrirPip(true)});
+// a chamada continua com o site em segundo plano ou a tela bloqueada (Android e PC); ao voltar, religa o que o sistema pausou
+function vozRetomar(){if(!V.canal)return;
+  try{if(V.ctx&&V.ctx.state!=="running")V.ctx.resume().catch(()=>{})}catch(e){}
+  Object.values(V.pcs).forEach(p=>{if(p.audio&&p.audio.paused)p.audio.play().catch(()=>{})});
+  if(V.stream)V.stream.getAudioTracks().forEach(t=>{if(t.readyState==="ended")vozTrocarMic()});
+  // celulares desligam a câmera quando o app sai da tela: liga de novo sozinho
+  if(V.vtipo==="cam"&&V.video&&V.video.readyState==="ended"){V.vtipo=null;vozCamera()}
+  else if(V.voltarCam&&!V.video){V.voltarCam=false;vozCamera()}
+  vozManterTela();vozParticipantes(null);Object.keys(V.pcs).forEach(uid=>{const p=V.pcs[uid];if(p.pc.connectionState!=="connected"&&p.pc.connectionState!=="connecting")vozReconectar(uid)})}
+async function vozTrocarMic(){try{const st=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true},video:false});const t=st.getAudioTracks()[0];t.enabled=!V.mudo;
+  Object.values(V.pcs).forEach(p=>{const sd=p.pc.getSenders().find(x=>x.track&&x.track.kind==="audio");if(sd)sd.replaceTrack(t).catch(()=>{})});
+  V.stream.getAudioTracks().forEach(o=>{V.stream.removeTrack(o)});V.stream.addTrack(t)}catch(e){console.warn("voz mic",e)}}
+addEventListener("online",()=>{if(!V.canal)return;vozParticipantes(null);Object.keys(V.pcs).forEach(vozReconectar)});
+// mantém a tela acesa durante a chamada (quando o navegador permite)
+async function vozManterTela(){try{if(!V.canal||!("wakeLock" in navigator)||document.visibilityState!=="visible"||(V.wake&&!V.wake.released))return;V.wake=await navigator.wakeLock.request("screen")}catch(e){}}
+function vozSoltarTela(){try{if(V.wake)V.wake.release()}catch(e){}V.wake=null}
 const vozCanalGrupo=gid=>"g_"+gid;
 function vozNome(){return ((S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"Estudante").slice(0,60)}
 async function vozEntrar(canal,titulo,opts){opts=opts||{};
@@ -3247,7 +3388,7 @@ async function vozEntrar(canal,titulo,opts){opts=opts||{};
   V.subs.push(vozDoc(canal).collection("participantes").onSnapshot(vozParticipantes,err=>console.warn("voz part",err&&err.code)));
   V.subs.push(vozDoc(canal).collection("sinais").where("para","==",S.uid).onSnapshot(vozSinais,err=>console.warn("voz sinais",err&&err.code)));
   V.hb=setInterval(()=>{if(!V.canal)return;vozDoc(V.canal).collection("participantes").doc(S.uid).update({visto:Date.now(),mudo:V.mudo}).catch(()=>{});vozParticipantes(null);vozConferirAtividade()},20000);
-  V.desde=Date.now();V.confirmado=Date.now();vozMidiaSessao();
+  V.desde=Date.now();V.confirmado=Date.now();vozMidiaSessao();vozManterTela();
   if(!opts.quieto)toast(`Você entrou no canal de voz ${titulo}.`);vozUI();vozPedirNotificacao();
   if(opts.video)vozCamera();
 }
@@ -3258,7 +3399,8 @@ async function vozSair(silencioso){
   if(V.stream)V.stream.getTracks().forEach(t=>t.stop());
   if(V.video)V.video.stop();V.video=null;V.vtipo=null;
   Object.keys(V.an).forEach(k=>delete V.an[k]);clearInterval(V.laco);V.laco=null;
-  Object.assign(V,{canal:null,titulo:"",stream:null,parts:{},falando:{},sessao:"",pergunta:0});vozFecharAviso();vozFecharPip();
+  Object.assign(V,{canal:null,titulo:"",stream:null,parts:{},falando:{},sessao:"",pergunta:0});vozFecharAviso();vozFecharPip();vozSoltarTela();V.voltarCam=false;
+  try{if("mediaSession" in navigator)navigator.mediaSession.playbackState="none"}catch(e){}
   try{if("mediaSession" in navigator)["enterpictureinpicture","togglemicrophone","hangup"].forEach(a=>{try{navigator.mediaSession.setActionHandler(a,null)}catch(e){}})}catch(e){}
   try{await vozDoc(canal).collection("participantes").doc(S.uid).delete()}catch(e){}
   if(!silencioso)toast(canal.startsWith("dm_")?"Chamada encerrada.":"Você saiu do canal de voz.");vozUI();vozPalco();
@@ -3278,8 +3420,16 @@ function vozPar(uid,sess){
     const st=e.streams[0]||new MediaStream([e.track]);if(!p.audio){p.audio=document.createElement("audio");p.audio.autoplay=true;p.audio.setAttribute("playsinline","");p.audio.hidden=true;document.body.appendChild(p.audio)}
     p.audio.srcObject=st;p.audio.play().catch(()=>{});vozAnalisar(uid,st)};
   pc.onconnectionstatechange=()=>{p.estado=pc.connectionState;vozUI();
-    if(pc.connectionState==="failed"&&V.pcs[uid]===p&&S.uid<uid){setTimeout(()=>{if(V.pcs[uid]===p&&V.parts[uid]){vozFecharPar(uid);vozOferecer(uid,V.parts[uid].sessao)}},1500)}};
+    // queda de rede (troca de Wi-Fi para dados, tela bloqueada, app em segundo plano): reconecta sozinho
+    if(pc.connectionState==="connected"){p.reconectando=0;return}
+    if(pc.connectionState==="disconnected")setTimeout(()=>{if(V.pcs[uid]===p&&pc.connectionState==="disconnected")vozReconectar(uid)},4000);
+    if(pc.connectionState==="failed")vozReconectar(uid)};
   return p}
+// quem começou a conexão refaz a negociação de rede (ICE restart) sem derrubar a chamada; se não voltar, recria a conexão
+async function vozReconectar(uid){const p=V.pcs[uid];if(!p||!V.canal||S.uid>uid)return;
+  if(p.reconectando&&Date.now()-p.reconectando<10000)return;p.reconectando=Date.now();
+  try{if(p.pc.restartIce)p.pc.restartIce();const o=await p.pc.createOffer({iceRestart:true});await p.pc.setLocalDescription(o);vozEnviar(uid,p.sessao,"offer",JSON.stringify(p.pc.localDescription))}catch(e){console.warn("voz reconectar",e)}
+  setTimeout(()=>{const q=V.pcs[uid];if(q===p&&p.pc.connectionState!=="connected"&&V.parts[uid]){vozFecharPar(uid);vozOferecer(uid,V.parts[uid].sessao)}},12000)}
 async function vozOferecer(uid,sess){const p=vozPar(uid,sess);try{const o=await p.pc.createOffer();await p.pc.setLocalDescription(o);vozEnviar(uid,sess,"offer",JSON.stringify(p.pc.localDescription))}catch(e){console.warn("voz oferta",e)}}
 function vozParticipantes(snap){
   if(!V.canal)return;if(snap)V.ultimo=snap.docs.map(d=>({id:d.id,...d.data()}));
@@ -3313,7 +3463,7 @@ async function vozDefinirVideo(track,tipo){
   if(V.canal)vozDoc(V.canal).collection("participantes").doc(S.uid).update({cam:V.vtipo==="cam",tela:V.vtipo==="tela",visto:Date.now()}).catch(()=>{});
   vozUI();vozPalco()}
 async function vozCamera(){if(!V.canal)return;if(V.vtipo==="cam"){vozDefinirVideo(null);return}
-  try{const st=await navigator.mediaDevices.getUserMedia({video:{width:{ideal:640},height:{ideal:360},frameRate:{ideal:15},facingMode:"user"}});const t=st.getVideoTracks()[0];t.onended=()=>{if(V.video===t)vozDefinirVideo(null)};vozDefinirVideo(t,"cam")}
+  try{const st=await navigator.mediaDevices.getUserMedia({video:{width:{ideal:640},height:{ideal:360},frameRate:{ideal:15},facingMode:"user"}});const t=st.getVideoTracks()[0];t.onended=()=>{if(V.video===t){if(document.hidden)V.voltarCam=true;vozDefinirVideo(null)}};V.voltarCam=false;vozDefinirVideo(t,"cam")}
   catch(e){toast(e&&e.name==="NotAllowedError"?"Libere a câmera para o site (no cadeado ao lado do endereço).":"Não foi possível ligar a câmera.")}}
 async function vozTela(){if(!V.canal)return;if(V.vtipo==="tela"){vozDefinirVideo(null);return}
   if(!podeTela()){toast("Celulares e tablets não deixam o navegador compartilhar a tela. Use o computador (Chrome, Edge ou Firefox) para mostrar a sua tela; no celular você consegue ver a tela dos outros.");return}
@@ -3363,7 +3513,7 @@ async function vozAbrirPip(auto){
 }
 function vozFecharPip(){if(V.pip&&!V.pip.closed)V.pip.close();V.pip=null;if(document.pictureInPictureElement)document.exitPictureInPicture().catch(()=>{})}
 // Chrome abre a janela flutuante sozinho ao trocar de aba quando o site está usando câmera ou microfone
-function vozMidiaSessao(){try{if(!("mediaSession" in navigator))return;navigator.mediaSession.metadata=new MediaMetadata({title:V.titulo||"Chamada",artist:"Logic Academy"});
+function vozMidiaSessao(){try{if(!("mediaSession" in navigator))return;navigator.mediaSession.metadata=new MediaMetadata({title:V.titulo||"Chamada",artist:"Logic Academy"});navigator.mediaSession.playbackState="playing";
   navigator.mediaSession.setActionHandler("enterpictureinpicture",()=>vozAbrirPip(true))}catch(e){}
   try{navigator.mediaSession.setActionHandler("togglemicrophone",()=>vozMudo());navigator.mediaSession.setActionHandler("hangup",()=>vozSair())}catch(e){}}
 // ---- "Você ainda está estudando?": a cada 1 hora na chamada; sem resposta em 5 minutos, a pessoa sai ----
@@ -3910,6 +4060,7 @@ function renderInicio(){
         :`<div class="stat"><div class="eyebrow">Semana</div><div class="v">${feitos}/${todos.length}</div><div class="s">blocos do plano feitos</div><div class="prog" style="margin-top:8px"><i style="width:${pct}%"></i></div></div>`}
     </div>
     ${cartaoMentoriaInicio()}
+    ${cartaoConvite()}
     <div class="cols">
       ${cartaoHoje(blocos,hojeK)}
       <div class="stack">
@@ -3923,7 +4074,7 @@ function renderInicio(){
       </div>
     </div></div>`;
   $("#ini-pomo").onclick=()=>{if(P.rodando){go("pomodoro");return}if(C.rodando){go("cronometro");return}const prox=blocos.find(b=>!b.feito);iniciarEstudo(prox?hojeK+"|"+prox.id:null)};
-  ligarHoje(blocos,hojeK);ligarBlocos();ligarMentoriaInicio();ligarRevisoes(renderInicio);$$("[data-link]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.dataset.link)}));
+  ligarHoje(blocos,hojeK);ligarBlocos();ligarMentoriaInicio();ligarConvite();ligarRevisoes(renderInicio);$$("[data-link]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.dataset.link)}));
   const vc=$("#visit-conta");if(vc)vc.onclick=()=>sair("criar");
   tutTalvezPerguntar();
 }
@@ -4623,7 +4774,7 @@ function abrirPerfil(id){
     if(a.dataset.pf==="amigo"){const set=new Set((S.pub&&S.pub.amigos)||[]);set.has(id)?set.delete(id):set.add(id);const d={...(S.pub||{nome:S.perfil.nome||"Estudante"}),amigos:[...set]};if(await gravarPub("perfis",d)){S.pub=d;S.soc.perfis[S.uid]=d;toast(set.has(id)?"Amigo adicionado.":"Amigo removido.");bg.remove();abrirPerfil(id)}}});
   bg.addEventListener("keydown",e=>{if(e.key==="Escape")bg.remove()});
 }
-document.addEventListener("click",e=>{const el=e.target.closest("[data-perfil]");if(!el||e.target.closest("button,a,input,select,label"))return;abrirPerfil(el.dataset.perfil)});
+document.addEventListener("click",e=>{const el=e.target.closest("[data-perfil]");if(!el||e.target.closest("button,a,input,select,label,.qb-msg"))return;abrirPerfil(el.dataset.perfil)});
 function completude(p){const itens=[["foto","Foto"],["usuario","@usuário"],["bio","Bio"],["objetivo","Objetivo"],["instituicao","Escola ou cursinho"],["cidade","Cidade"]];const falta=itens.filter(([k])=>!p[k]);return {pct:Math.round((itens.length-falta.length)/itens.length*100),falta:falta.map(x=>x[1])}}
 function renderPerfil(){
   const nuvem=S.mode==="nuvem";
@@ -4707,7 +4858,9 @@ const MOLDURAS={bronze:["Bronze","linear-gradient(135deg,#e7a46b,#8c5a2b)"],prat
   diamante:["Diamante","linear-gradient(135deg,#a5f3fc,#e0f2fe,#93c5fd,#c4b5fd)"],chamas:["Chamas","linear-gradient(0deg,#ef4444,#f97316,#facc15)"],neon:["Neon","conic-gradient(#22d3ee,#e879f9,#22d3ee)"],
   arcoiris:["Arco-íris","conic-gradient(#ef4444,#f59e0b,#eab308,#22c55e,#3b82f6,#8b5cf6,#ef4444)"],floresta:["Floresta","linear-gradient(135deg,#86efac,#166534)"],
   esmeralda:["Esmeralda","linear-gradient(135deg,#6ee7b7,#047857)"],rubi:["Rubi","linear-gradient(135deg,#fda4af,#be123c)"],safira:["Safira","linear-gradient(135deg,#93c5fd,#1d4ed8)"],
-  ametista:["Ametista","linear-gradient(135deg,#d8b4fe,#6b21a8)"],holografica:["Holográfica","conic-gradient(#f0abfc,#a5f3fc,#fde68a,#bbf7d0,#f0abfc)"],sakura:["Sakura","linear-gradient(135deg,#fbcfe8,#ec4899)"]};
+  ametista:["Ametista","linear-gradient(135deg,#d8b4fe,#6b21a8)"],holografica:["Holográfica","conic-gradient(#f0abfc,#a5f3fc,#fde68a,#bbf7d0,#f0abfc)"],sakura:["Sakura","linear-gradient(135deg,#fbcfe8,#ec4899)"],
+  // molduras especiais de convite (só se ganham convidando amigos)
+  convite:["Convite","conic-gradient(from 45deg,#f43f5e,#f59e0b,#10b981,#3b82f6,#a855f7,#f43f5e)"],amizade:["Amizade","linear-gradient(135deg,#fb7185,#f9a8d4 45%,#fde68a)"],cometa:["Cometa","radial-gradient(circle at 30% 25%,#fff 0 12%,transparent 13%),linear-gradient(135deg,#0ea5e9,#6366f1 55%,#1e1b4b)"]};
 const CAPAS_ESP={galaxia:["Galáxia","radial-gradient(circle at 20% 30%,#f0abfc 0,transparent 25%),radial-gradient(circle at 75% 60%,#93c5fd 0,transparent 30%),linear-gradient(135deg,#0f0c29,#302b63,#24243e)"],
   boreal:["Aurora boreal","linear-gradient(160deg,#0b132b 10%,#1c7c54 45%,#73e2a7 60%,#5b21b6 90%)"],fogo:["Fogo","linear-gradient(135deg,#450a0a,#dc2626 45%,#f59e0b 80%,#fde047)"],abismo:["Oceano profundo","linear-gradient(180deg,#0c4a6e,#082f49 60%,#020617)"],
   sakura:["Sakura","radial-gradient(circle at 30% 40%,#fff 0 3px,transparent 4px) 0 0/22px 22px,linear-gradient(135deg,#fbcfe8,#f9a8d4)"],cristal:["Cristal","linear-gradient(135deg,#e0f2fe,#f5d0fe,#cffafe,#fef9c3)"],
@@ -4731,7 +4884,7 @@ const NIVEL_ITENS={2:["titulo:iniciante"],3:["moldura:bronze","titulo:dedicado"]
 const COMO={"moldura:bronze":"Alcance o nível 3","moldura:prata":"Alcance o nível 5","moldura:ouro":"Alcance o nível 8","moldura:diamante":"Alcance o nível 12","moldura:chamas":"Estude 7 dias seguidos","moldura:neon":"Complete o desafio semanal de horas","moldura:arcoiris":"Finalize uma semana inteira do plano","moldura:floresta":"Some 50 horas de estudo",
   "capa:galaxia":"Alcance o nível 6","capa:boreal":"Estude em 5 dias de uma mesma semana","capa:fogo":"Estude 30 dias seguidos","capa:abismo":"Faça 100 questões",
   "titulo:iniciante":"Alcance o nível 2","titulo:dedicado":"Alcance o nível 3","titulo:focado":"Alcance o nível 5","titulo:imparavel":"Alcance o nível 8","titulo:lenda":"Alcance o nível 12","titulo:maratonista":"Estude 4 horas em um dia","titulo:madrugador":"Termine uma sessão antes das 7h","titulo:coruja":"Termine uma sessão depois das 23h","titulo:mestre_rev":"Faça 20 revisões","titulo:elite":"Acerte 80% em 100 questões ou mais","titulo:semana_perfeita":"Finalize uma semana inteira do plano",
-  "moldura:esmeralda":"Estude todos os 7 dias de uma semana","moldura:rubi":"Acerte 75% em 30+ questões numa semana","moldura:safira":"Some 250 horas de estudo","moldura:ametista":"Resgate 60 desafios num mês","moldura:holografica":"Estude em 20 dias de um mês","moldura:sakura":"Alcance o nível 15",
+  "moldura:esmeralda":"Estude todos os 7 dias de uma semana","moldura:rubi":"Acerte 75% em 30+ questões numa semana","moldura:safira":"Some 250 horas de estudo","moldura:ametista":"Resgate 60 desafios num mês","moldura:holografica":"Estude em 20 dias de um mês","moldura:sakura":"Alcance o nível 15","moldura:convite":"Convide um amigo para o Logic Academy","moldura:amizade":"Convide um amigo para o Logic Academy","moldura:cometa":"Convide um amigo para o Logic Academy",
   "capa:sakura":"Faça 3 sessões de 1h+ numa semana","capa:cristal":"Estude 30h num mês","capa:pixel":"Finalize 2 semanas do plano num mês","capa:cidade":"Estude 60 dias seguidos","capa:deserto":"Alcance o nível 10",
   "titulo:explorador":"Estude 3 matérias numa semana","titulo:constante":"Estude em 20 dias de um mês","titulo:mestre_q":"Registre 1000 questões","titulo:mestre_foco":"Faça uma sessão única de 3 horas","titulo:campeao_mes":"Faça 300 questões num mês","titulo:lenda_viva":"Alcance o nível 20","titulo:jogo_limpo":"Mantenha a conta verificada por 14 dias de estudo"};
 // Conquistas permanentes: condição, emblema e itens extras
@@ -4990,7 +5143,7 @@ function reqServidor(c){if(!FBM())return null;const t=c.id[0],def=DEF_SRV[t+"-"+
 function pronto(c){if(c.p<c.a)return false;const r=reqServidor(c);return !r||r.tem>=r.need}
 // visão das conquistas a partir do servidor (XP, itens e resgates)
 function gServidor(){if(S.gCache)return S.gCache;const s=S.srv||{},res={},dist={},semF={};
-  Object.entries(S.resg||{}).forEach(([rid,v])=>{const em=tsMs(v.em),t=rid[0];if(t==="c")dist[v.k]=em;else if(t!=="n"){const id=idCliente(rid);res[id]=em;if(t==="w"&&v.k==="semana")semF[dataISO(new Date(em)).slice(0,7)+":"+id.slice(2,12)]=true}});
+  Object.entries(S.resg||{}).forEach(([rid,v])=>{const em=tsMs(v.em),t=rid[0];if(t==="c")dist[v.k]=em;else if(t!=="n"&&t!=="i"){const id=idCliente(rid);res[id]=em;if(t==="w"&&v.k==="semana")semF[dataISO(new Date(em)).slice(0,7)+":"+id.slice(2,12)]=true}});
   const itens={};Object.keys(s.itens||{}).forEach(k=>{if(s.itens[k]===true)itens[k]=1});
   return S.gCache={xp:s.xp||0,itens,resgatados:res,distintivos:dist,semanasFinalizadas:semF}}
 // perfil público só mostra itens e nível confirmados no servidor
@@ -4998,13 +5151,14 @@ function perfilVerificado(id,p){if(!FBM()||!p)return p;const c=id===S.uid&&S.srv
   const it=(c&&c.itens)||{},tem=x=>it[x]===true,q={...p,nivel:(c&&c.nivel)||1};
   if(q.moldura&&!tem("moldura:"+q.moldura))q.moldura="";if(q.titulo&&!tem("titulo:"+q.titulo))q.titulo="";
   if(q.capa&&!CAPAS[q.capa]&&!tem("capa:"+q.capa))q.capa="";q.emblemas=(q.emblemas||[]).filter(e=>tem("emblema:"+e)).slice(0,3);return q}
-function aposMudarSrv(){S.gCache=null;const b=S.soc.perfisBrutos||{};if(b[S.uid]){S.soc.perfis[S.uid]=perfilVerificado(S.uid,b[S.uid]);S.pub=S.soc.perfis[S.uid]}
+function aposMudarSrv(){S.gCache=null;pintarConvite();const b=S.soc.perfisBrutos||{};if(b[S.uid]){S.soc.perfis[S.uid]=perfilVerificado(S.uid,b[S.uid]);S.pub=S.soc.perfis[S.uid]}
   if(!S.perfil||!$("#main"))return;renderSideUser();if(S.view==="desafios"&&!document.querySelector(".modal-bg"))renderDesafios();else atualizarBadgeDesafios()}
 function iniciarConquistasSrv(){
   Object.assign(S,{srv:undefined,resg:{},resgOk:false,gCache:null});
   const ref=S.db.collection("conquistas").doc(S.uid);
   S.unsub.push(ref.onSnapshot(d=>{if(d.metadata.hasPendingWrites)return;if(!d.exists){if(!d.metadata.fromCache&&S.srv===undefined){S.srv=null;criarConquistasSrv(ref)}return}
     S.srv=d.data();aposMudarSrv();verificarConquistas(true);publicarNivel()},e=>console.warn("conquistas",e&&e.code)));
+  S.ind={};S.unsub.push(S.db.collection("indicacoes").where("por","==",S.uid).onSnapshot(s=>{const m={};s.docs.forEach(x=>m[x.id]=x.data());S.ind=m;pintarConvite()},e=>console.warn("indicacoes",e&&e.code)));
   S.unsub.push(S.db.collection("resgates").doc(S.uid).collection("itens").onSnapshot(s=>{if(s.metadata.hasPendingWrites)return;const m={};s.docs.forEach(x=>m[x.id]=x.data());S.resg=m;S.resgOk=true;aposMudarSrv();verificarConquistas(true)},e=>console.warn("resgates",e&&e.code)));
 }
 async function criarConquistasSrv(ref){
@@ -5046,6 +5200,45 @@ function verificarConquistasSrv(silencioso){
       if(res.subiu)toast(`Você subiu para o nível ${res.nivel}!`)}).catch(err=>console.warn("conquista",k,err&&err.code))});
 }
 
+
+/* ================= Convide amigos =================
+   link pessoal ?ref=<id>; cada amigo que cria a conta por ele (indicacoes/{amigo}, conferido pelas regras)
+   vale XP e uma moldura de convite à escolha, resgatada como os desafios (resgates/{uid}/itens/i-<amigo>) */
+const MOLD_CONVITE=["convite","amizade","cometa"],XP_CONVITE=150;
+const linkConvite=()=>location.origin+location.pathname+"?ref="+S.uid;
+const convitesPendentes=()=>Object.keys(S.ind||{}).filter(a=>!(S.resg||{})["i-"+a]).sort();
+function cartaoConvite(){return FBM()?`<div class="card convite" id="convite">${conviteHtml()}</div>`:""}
+function conviteHtml(){const n=Object.keys(S.ind||{}).length,pend=convitesPendentes(),tem=k=>!!((S.srv&&S.srv.itens)||{})["moldura:"+k];
+  return `<div class="convite-grid"><div class="stack sm" style="min-width:0">
+      <div class="row" style="gap:8px;flex-wrap:wrap">${ico("users")}<h3 style="margin:0">Convide amigos</h3>${n?`<span class="pill solid">${n} ${n===1?"amigo entrou":"amigos entraram"}</span>`:""}</div>
+      <p class="small muted" style="margin:0">Compartilhe seu link. Cada amigo que criar conta por ele vale <b>+${XP_CONVITE} XP</b> e uma <b>moldura especial</b> de convite, que você escolhe.</p>
+      <div class="convite-link"><input type="text" readonly value="${esc(linkConvite())}" aria-label="Seu link de convite" id="cv-link"><button class="btn primary sm" type="button" id="cv-share">${ico("send")}Compartilhar</button><button class="btn sm" type="button" id="cv-copiar">Copiar</button></div></div>
+    <div class="convite-molds" aria-label="Molduras de convite">${MOLD_CONVITE.map(k=>`<div class="stack sm" style="align-items:center;gap:4px">${previaItem("moldura:"+k)}<span class="small">${esc(MOLDURAS[k][0])}${tem(k)?" ✓":""}</span></div>`).join("")}</div></div>
+    ${pend.length?`<div class="convite-premio" role="status"><div><b>${pend.length===1?"Um amigo entrou pelo seu link!":`${pend.length} amigos entraram pelo seu link!`}</b> <span class="small">Escolha sua moldura especial${pend.length>1?` (${pend.length} recompensas para resgatar)`:""}:</span></div>
+      <div class="row" style="gap:8px;flex-wrap:wrap">${MOLD_CONVITE.map(k=>`<button class="btn sm ${tem(k)?"":"primary"}" type="button" data-cv-mold="${k}">${esc(MOLDURAS[k][0])}${tem(k)?" · já é sua":""}</button>`).join("")}</div></div>`:""}`}
+function pintarConvite(){const el=$("#convite");if(!el||!FBM())return;el.innerHTML=conviteHtml();ligarConvite()}
+async function copiarTexto(t){try{await navigator.clipboard.writeText(t);return true}catch(e){const i=$("#cv-link");if(i){i.select();try{return document.execCommand("copy")}catch(e2){}}return false}}
+function ligarConvite(){const el=$("#convite");if(!el)return;const url=linkConvite();
+  const cp=$("#cv-copiar");if(cp)cp.onclick=async()=>toast(await copiarTexto(url)?"Link copiado. Mande para seus amigos!":"Não consegui copiar. Segure o link para copiar.");
+  const sh=$("#cv-share");if(sh)sh.onclick=async()=>{const dados={title:"Logic Academy",text:"Bora estudar comigo no Logic Academy? Crie sua conta pelo meu link:",url};
+    if(navigator.share){try{await navigator.share(dados);return}catch(e){if(e&&e.name==="AbortError")return}}
+    toast(await copiarTexto(url)?"Link copiado. Mande para seus amigos!":"Não consegui copiar. Segure o link para copiar.")};
+  $$("[data-cv-mold]",el).forEach(b=>b.onclick=async()=>{const amigo=convitesPendentes()[0];if(!amigo)return;$$("[data-cv-mold]",el).forEach(x=>x.disabled=true);b.textContent="Resgatando…";
+    try{const k=b.dataset.cvMold,r=await resgatarConvite(amigo,k);if(r.ja){pintarConvite();return}
+      publicarNivel();if(((S.pub||{}).moldura||"")!==k)await equipar("moldura:"+k);
+      celebrar(`+${XP_CONVITE} XP`,`${nomeDe(amigo)} entrou pelo seu convite. A moldura ${MOLDURAS[k][0]} já está no seu perfil.`,r.novos,r.subiu?r.nivel:0)}
+    catch(e){toast("Não foi possível resgatar agora ("+(e&&e.code||"erro")+"). Tente de novo.");pintarConvite()}})}
+// um resgate por vez (mesma fila dos desafios): o XP enviado precisa bater com o do servidor
+function resgatarConvite(amigo,k){
+  const job=SRV.fila.then(async()=>{if(!S.srv)throw {code:"sem-conquistas"};const rid="i-"+amigo;if((S.resg||{})[rid])return {ja:true};
+    const antes=S.srv.xp||0,xp=antes+XP_CONVITE,nivel=nivelDe(xp),item="moldura:"+k,FV=firebase.firestore.FieldValue;
+    const doc={tipo:"i",k,periodo:0,xp:XP_CONVITE,itens:[item],amigo,em:FV.serverTimestamp()};
+    const b=S.db.batch();b.set(S.db.collection("resgates").doc(S.uid).collection("itens").doc(rid),doc);
+    b.update(S.db.collection("conquistas").doc(S.uid),{ultimo:rid,xp,nivel,["itens."+item]:true});await b.commit();
+    const novos=(S.srv.itens||{})[item]?[]:[item];
+    S.srv={...S.srv,xp,nivel,ultimo:rid,itens:{...(S.srv.itens||{}),[item]:true}};S.resg={...S.resg,[rid]:{...doc,em:Date.now()}};S.gCache=null;
+    return {novos,nivel,subiu:nivel>nivelDe(antes)}});
+  SRV.fila=job.catch(()=>{});return job}
 /* ================= Jogo limpo: anti-trapaça ================= */
 const LIMITE_DIA=960; // 16 horas
 const tsMs=v=>typeof v==="number"?v:v&&typeof v.toMillis==="function"?v.toMillis():v&&v.seconds?v.seconds*1000:Date.now();

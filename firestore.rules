@@ -144,6 +144,18 @@ service cloud.firestore {
           || (r.tipo == 'n' && conqDe(uid).xp >= 50 * def.nivel * (def.nivel - 1));
     }
 
+    // Convites: quem cria a conta pelo link de um amigo registra uma única vez quem convidou.
+    // Só vale para conta nova (ainda sem perfil), ninguém indica a si mesmo e o mesmo amigo nunca conta duas vezes.
+    match /indicacoes/{amigo} {
+      allow read: if logado() && (request.auth.uid == amigo || resource.data.por == request.auth.uid);
+      allow create: if eu(amigo) && request.resource.data.keys().hasOnly(['por', 'em'])
+        && request.resource.data.por is string && request.resource.data.por != amigo
+        && request.resource.data.em == request.time
+        && exists(/databases/$(database)/documents/perfis/$(request.resource.data.por))
+        && !exists(/databases/$(database)/documents/perfis/$(amigo));
+      allow update, delete: if false;
+    }
+
     // Resgates de desafios: um registro por desafio e período, conferido pelo servidor
     match /resgates/{uid}/itens/{rid} {
       function resgateOk() {
@@ -152,8 +164,16 @@ service cloud.firestore {
         return rid == r.tipo + '-' + string(r.periodo) + '-' + r.k
           && r.xp == def.xp && r.itens == def.itens && periodoOk(r) && condOk(uid, r, def);
       }
+      // recompensa de convite: uma por amigo que entrou pelo link, com XP fixo e uma das molduras de convite
+      function indicacaoOk() {
+        let r = request.resource.data;
+        return r.periodo == 0 && r.amigo is string && rid == 'i-' + r.amigo
+          && get(/databases/$(database)/documents/indicacoes/$(r.amigo)).data.por == uid
+          && r.xp == 150 && r.k in ['convite', 'amizade', 'cometa'] && r.itens == ['moldura:' + r.k];
+      }
       allow read: if eu(uid);
-      allow create: if eu(uid) && resgateOk();
+      allow create: if eu(uid) && ((request.resource.data.tipo == 'i' && indicacaoOk())
+                                 || (request.resource.data.tipo != 'i' && resgateOk()));
     }
 
     // XP, nível e itens: só mudam junto com um resgate válido no mesmo envio
@@ -169,7 +189,8 @@ service cloud.firestore {
         let g = getAfter(caminho).data;
         return !exists(caminho) && existsAfter(caminho)
           && request.resource.data.xp == resource.data.xp + g.xp
-          && request.resource.data.n == resource.data.n + 1
+          && ((g.tipo == 'i' && request.resource.data.n == resource.data.n)
+              || (g.tipo != 'i' && request.resource.data.n == resource.data.n + 1))
           && request.resource.data.itens.diff(resource.data.itens).affectedKeys().hasOnly(g.itens)
           && request.resource.data.itens.keys().hasAll(g.itens)
           && nivelOk();
