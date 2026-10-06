@@ -46,8 +46,11 @@ jobs:
             N=$(echo "$D" | jq -c '. - ["logic-academy.web.app","logic-academy.firebaseapp.com"] + ["logicacademy.web.app","logicacademy.firebaseapp.com","matoseb-stack.github.io"] | unique')
             curl -sS -f -X PATCH "${H[@]}" "$U?updateMask=authorizedDomains" -d "{\"authorizedDomains\":$N}" | jq -c '.authorizedDomains' || echo "::warning::Não consegui autorizar o domínio; adicione à mão em Authentication > Configurações."
           fi
-      - name: Publicar site e regras
-        run: npx --yes firebase-tools@13 deploy --only hosting,firestore:rules --project mapa-de-estudos-d6eca --non-interactive --force
+      - name: Publicar site
+        run: npx --yes firebase-tools@13 deploy --only hosting --project mapa-de-estudos-d6eca --non-interactive --force
+      - name: Publicar regras
+        # se a conta de serviço não tiver o papel "Administrador do Firebase", o site sai mesmo assim e fica só o aviso
+        run: npx --yes firebase-tools@13 deploy --only firestore:rules --project mapa-de-estudos-d6eca --non-interactive --force || echo "::warning::Não consegui publicar as regras (sem permissão). Dê o papel Administrador do Firebase à conta de serviço no Google Cloud > IAM."
       - name: Apagar credencial
         if: always()
         run: rm -f "$RUNNER_TEMP/chave.json"
