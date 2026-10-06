@@ -3,19 +3,76 @@
     {
       "site": "logicacademy",
       "public": ".",
-      "ignore": ["firebase.json", ".firebaserc", "firestore.rules", "README.md", "**/.*", ".github/**", "**/node_modules/**", "redirecionar/**", "icones-oficial/**"],
+      "ignore": [
+        "firebase.json",
+        ".firebaserc",
+        "firestore.rules",
+        "README.md",
+        "CLAUDE.md",
+        "**/.*",
+        ".github/**",
+        "**/node_modules/**",
+        "redirecionar/**",
+        "icones-oficial/**"
+      ],
       "headers": [
-        {"source": "/questoes/**", "headers": [{"key": "Cache-Control", "value": "public, max-age=86400"}]},
-        {"source": "/icones/**", "headers": [{"key": "Cache-Control", "value": "public, max-age=604800"}]},
-        {"source": "/firebase-config.js", "headers": [{"key": "Cache-Control", "value": "no-cache"}]},
-        {"source": "/index.html", "headers": [{"key": "Cache-Control", "value": "no-cache"}]},
-        {"source": "/", "headers": [{"key": "Cache-Control", "value": "no-cache"}]}
+        {
+          "source": "/questoes/**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=86400"
+            }
+          ]
+        },
+        {
+          "source": "/icones/**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=604800"
+            }
+          ]
+        },
+        {
+          "source": "/firebase-config.js",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        },
+        {
+          "source": "/index.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        },
+        {
+          "source": "/",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        }
       ]
     },
     {
       "site": "mapa-de-estudos-d6eca",
       "public": "redirecionar",
-      "redirects": [{"source": "**", "destination": "https://logicacademy.web.app/", "type": 301}]
+      "redirects": [
+        {
+          "source": "**",
+          "destination": "https://logicacademy.web.app/",
+          "type": 301
+        }
+      ]
     }
   ],
   "firestore": {
