@@ -357,6 +357,26 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 
 
 /* ===== Desafios e recompensas ===== */
 .fr{display:inline-grid;place-items:center;border-radius:50%;padding:2px;flex:none;line-height:0}
+.fr[data-p="3"]{padding:3px}
+/* moldura Joias Reais: anel de pedras que gira, brilho pulsando e estrelinhas piscando */
+@property --jang{syntax:"<angle>";inherits:false;initial-value:0deg}
+@property --jluz{syntax:"<percentage>";inherits:false;initial-value:-60%}
+.fr-joias{position:relative;isolation:isolate;padding:4px;
+  background:linear-gradient(115deg,transparent calc(var(--jluz) - 14%),#ffffffee var(--jluz),transparent calc(var(--jluz) + 14%)),
+    repeating-conic-gradient(from var(--jang),#00000026 0 2deg,transparent 2deg 30deg),
+    conic-gradient(from var(--jang),#e11d48,#fb7185 8%,#f59e0b 16%,#fde68a 22%,#10b981 32%,#6ee7b7 38%,#2563eb 48%,#93c5fd 54%,#9333ea 64%,#d8b4fe 70%,#f0f9ff 78%,#fff 82%,#e11d48);
+  animation:joiasGira 6s linear infinite,joiasLuz 3s ease-in-out infinite,joiasBrilho 2.4s ease-in-out infinite}
+.fr-joias::before,.fr-joias::after{content:"";position:absolute;z-index:2;pointer-events:none;aspect-ratio:1;
+  background:radial-gradient(circle,#fff 0 20%,#fde68a 34%,#f59e0b 52%,#f59e0b00 72%);filter:drop-shadow(0 0 2px #fbbf24) drop-shadow(0 0 5px #f472b6);
+  clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%);
+  animation:joiasPisca 1.8s ease-in-out infinite}
+.fr-joias::before{width:44%;top:-14%;right:-12%}
+.fr-joias::after{width:30%;bottom:-8%;left:-9%;animation-delay:.9s}
+@keyframes joiasGira{to{--jang:360deg}}
+@keyframes joiasLuz{0%{--jluz:-60%}60%,100%{--jluz:160%}}
+@keyframes joiasBrilho{0%,100%{box-shadow:0 0 5px 1px #f0abfc99,0 0 12px 3px #fde68a55}50%{box-shadow:0 0 10px 3px #f9a8d4dd,0 0 22px 6px #93c5fd88}}
+@keyframes joiasPisca{0%,100%{transform:scale(.2) rotate(0deg);opacity:0}45%{transform:scale(1) rotate(45deg);opacity:1}70%{transform:scale(.55) rotate(90deg);opacity:.75}}
+@media (prefers-reduced-motion:reduce){.fr-joias,.fr-joias::before,.fr-joias::after{animation:none}.fr-joias::before{transform:scale(.8);opacity:1}}
 .fr>.avatar{border:2px solid var(--surface)}
 .desafios{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
 .desafio{display:flex;flex-direction:column;gap:10px}
@@ -2369,7 +2389,7 @@ function avatar(id,cls){const p=S.soc.perfis[id]||{};const nm=id===S.uid&&S.mode
   let h;if(p.foto&&/^data:image\/(jpeg|png|webp);base64,/.test(p.foto))h=`<img class="avatar ${cls||""}" src="${p.foto}" alt="">`;
   else{const ini=nm.split(/\s+/).map(w=>w[0]||"").join("").slice(0,2).toUpperCase();h=`<span class="avatar ${cls||""}" aria-hidden="true">${esc(ini||"?")}</span>`}
   return comMoldura(p.moldura,h)}
-function comMoldura(k,h){return k&&typeof MOLDURAS!=="undefined"&&MOLDURAS[k]?`<span class="fr" style="background:${MOLDURAS[k][1]}">${h}</span>`:h}
+function comMoldura(k,h){return k&&typeof MOLDURAS!=="undefined"&&MOLDURAS[k]?`<span ${frAttr(k)}>${h}</span>`:h}
 function atualizarSocial(col){
   renderSideUser();if(!$("#main")||!S.perfil)return;
   if(FBM()){if(col==="perfis"&&S.view==="amigos")renderAmigosFB();if(col==="perfis"&&S.view==="mensagens")listaConversas();if(["perfis","ranking"].includes(col)&&["ranking","inicio"].includes(S.view))renderView();return}
@@ -4860,13 +4880,19 @@ const MOLDURAS={bronze:["Bronze","linear-gradient(135deg,#e7a46b,#8c5a2b)"],prat
   esmeralda:["Esmeralda","linear-gradient(135deg,#6ee7b7,#047857)"],rubi:["Rubi","linear-gradient(135deg,#fda4af,#be123c)"],safira:["Safira","linear-gradient(135deg,#93c5fd,#1d4ed8)"],
   ametista:["Ametista","linear-gradient(135deg,#d8b4fe,#6b21a8)"],holografica:["Holográfica","conic-gradient(#f0abfc,#a5f3fc,#fde68a,#bbf7d0,#f0abfc)"],sakura:["Sakura","linear-gradient(135deg,#fbcfe8,#ec4899)"],
   // molduras especiais de convite (só se ganham convidando amigos)
-  convite:["Convite","conic-gradient(from 45deg,#f43f5e,#f59e0b,#10b981,#3b82f6,#a855f7,#f43f5e)"],amizade:["Amizade","linear-gradient(135deg,#fb7185,#f9a8d4 45%,#fde68a)"],cometa:["Cometa","radial-gradient(circle at 30% 25%,#fff 0 12%,transparent 13%),linear-gradient(135deg,#0ea5e9,#6366f1 55%,#1e1b4b)"]};
+  convite:["Convite","conic-gradient(from 45deg,#f43f5e,#f59e0b,#10b981,#3b82f6,#a855f7,#f43f5e)"],amizade:["Amizade","linear-gradient(135deg,#fb7185,#f9a8d4 45%,#fde68a)"],cometa:["Cometa","radial-gradient(circle at 30% 25%,#fff 0 12%,transparent 13%),linear-gradient(135deg,#0ea5e9,#6366f1 55%,#1e1b4b)"],
+  // exclusiva (ver EXCLUSIVOS): anel de joias que gira e brilha
+  joias:["Joias Reais","conic-gradient(#e11d48,#f59e0b,#10b981,#2563eb,#9333ea,#f0f9ff,#e11d48)","fr-joias"]};
+// itens únicos dados pelo dono do site a uma conta (as regras do Firestore conferem o mesmo uid)
+const EXCLUSIVOS={"S36YiPfilEMKpGzjO4FtIH3oh813":["moldura:joias","titulo:rumo_medicina"]};
+const ehExclusivo=id=>Object.values(EXCLUSIVOS).some(l=>l.includes(id));
+const frAttr=k=>MOLDURAS[k][2]?`class="fr ${MOLDURAS[k][2]}"`:`class="fr" style="background:${MOLDURAS[k][1]}"`;
 const CAPAS_ESP={galaxia:["Galáxia","radial-gradient(circle at 20% 30%,#f0abfc 0,transparent 25%),radial-gradient(circle at 75% 60%,#93c5fd 0,transparent 30%),linear-gradient(135deg,#0f0c29,#302b63,#24243e)"],
   boreal:["Aurora boreal","linear-gradient(160deg,#0b132b 10%,#1c7c54 45%,#73e2a7 60%,#5b21b6 90%)"],fogo:["Fogo","linear-gradient(135deg,#450a0a,#dc2626 45%,#f59e0b 80%,#fde047)"],abismo:["Oceano profundo","linear-gradient(180deg,#0c4a6e,#082f49 60%,#020617)"],
   sakura:["Sakura","radial-gradient(circle at 30% 40%,#fff 0 3px,transparent 4px) 0 0/22px 22px,linear-gradient(135deg,#fbcfe8,#f9a8d4)"],cristal:["Cristal","linear-gradient(135deg,#e0f2fe,#f5d0fe,#cffafe,#fef9c3)"],
   pixel:["Pixel","conic-gradient(#22c55e 25%,#15803d 0 50%,#22c55e 0 75%,#15803d 0) 0 0/16px 16px"],cidade:["Cidade à noite","linear-gradient(180deg,#1e1b4b,#7c3aed 60%,#f472b6)"],deserto:["Deserto","linear-gradient(180deg,#fde68a,#f59e0b 55%,#92400e)"]};
 const TITULOS={iniciante:"Iniciante",dedicado:"Dedicado",focado:"Focado",imparavel:"Imparável",lenda:"Lenda dos Estudos",maratonista:"Maratonista",madrugador:"Madrugador",coruja:"Coruja",mestre_rev:"Mestre das Revisões",elite:"Atirador de Elite",semana_perfeita:"Semana Perfeita",
-  explorador:"Explorador",constante:"Constante",mestre_q:"Mestre das Questões",mestre_foco:"Mestre do Foco",campeao_mes:"Campeão do Mês",lenda_viva:"Lenda Viva",jogo_limpo:"Jogo Limpo"};
+  explorador:"Explorador",constante:"Constante",mestre_q:"Mestre das Questões",mestre_foco:"Mestre do Foco",campeao_mes:"Campeão do Mês",lenda_viva:"Lenda Viva",jogo_limpo:"Jogo Limpo",rumo_medicina:"Rumo à Medicina"};
 const IB={medal:'<circle cx="12" cy="15" r="6"/><path d="M8.5 10 6 3h4l2 4 2-4h4l-2.5 7"/>',flame:'<path d="M12 22c4 0 7-3 7-7 0-4-3-6-4-10-2 2-3 4-3 6-1-1-2-2-2-4-3 2-5 5-5 8 0 4 3 7 7 7z"/>',
   clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',check:'<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',star:'<path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>',
   bolt:'<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',target:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',book:'<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5"/>',repeat:'<path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3"/>',crown:'<path d="M3 8l4 4 5-7 5 7 4-4-2 11H5z"/>'};
@@ -4884,7 +4910,7 @@ const NIVEL_ITENS={2:["titulo:iniciante"],3:["moldura:bronze","titulo:dedicado"]
 const COMO={"moldura:bronze":"Alcance o nível 3","moldura:prata":"Alcance o nível 5","moldura:ouro":"Alcance o nível 8","moldura:diamante":"Alcance o nível 12","moldura:chamas":"Estude 7 dias seguidos","moldura:neon":"Complete o desafio semanal de horas","moldura:arcoiris":"Finalize uma semana inteira do plano","moldura:floresta":"Some 50 horas de estudo",
   "capa:galaxia":"Alcance o nível 6","capa:boreal":"Estude em 5 dias de uma mesma semana","capa:fogo":"Estude 30 dias seguidos","capa:abismo":"Faça 100 questões",
   "titulo:iniciante":"Alcance o nível 2","titulo:dedicado":"Alcance o nível 3","titulo:focado":"Alcance o nível 5","titulo:imparavel":"Alcance o nível 8","titulo:lenda":"Alcance o nível 12","titulo:maratonista":"Estude 4 horas em um dia","titulo:madrugador":"Termine uma sessão antes das 7h","titulo:coruja":"Termine uma sessão depois das 23h","titulo:mestre_rev":"Faça 20 revisões","titulo:elite":"Acerte 80% em 100 questões ou mais","titulo:semana_perfeita":"Finalize uma semana inteira do plano",
-  "moldura:esmeralda":"Estude todos os 7 dias de uma semana","moldura:rubi":"Acerte 75% em 30+ questões numa semana","moldura:safira":"Some 250 horas de estudo","moldura:ametista":"Resgate 60 desafios num mês","moldura:holografica":"Estude em 20 dias de um mês","moldura:sakura":"Alcance o nível 15","moldura:convite":"Convide um amigo para o Logic Academy","moldura:amizade":"Convide um amigo para o Logic Academy","moldura:cometa":"Convide um amigo para o Logic Academy",
+  "moldura:esmeralda":"Estude todos os 7 dias de uma semana","moldura:rubi":"Acerte 75% em 30+ questões numa semana","moldura:safira":"Some 250 horas de estudo","moldura:ametista":"Resgate 60 desafios num mês","moldura:holografica":"Estude em 20 dias de um mês","moldura:sakura":"Alcance o nível 15","moldura:joias":"Item exclusivo","titulo:rumo_medicina":"Item exclusivo","moldura:convite":"Convide um amigo para o Logic Academy","moldura:amizade":"Convide um amigo para o Logic Academy","moldura:cometa":"Convide um amigo para o Logic Academy",
   "capa:sakura":"Faça 3 sessões de 1h+ numa semana","capa:cristal":"Estude 30h num mês","capa:pixel":"Finalize 2 semanas do plano num mês","capa:cidade":"Estude 60 dias seguidos","capa:deserto":"Alcance o nível 10",
   "titulo:explorador":"Estude 3 matérias numa semana","titulo:constante":"Estude em 20 dias de um mês","titulo:mestre_q":"Registre 1000 questões","titulo:mestre_foco":"Faça uma sessão única de 3 horas","titulo:campeao_mes":"Faça 300 questões num mês","titulo:lenda_viva":"Alcance o nível 20","titulo:jogo_limpo":"Mantenha a conta verificada por 14 dias de estudo"};
 // Conquistas permanentes: condição, emblema e itens extras
@@ -5005,7 +5031,7 @@ async function resgatar(c,btn){
   celebrar(`+${c.xp} XP`,c.t,novos.concat(r.novos),r.subiu?r.nivel:0);
 }
 function previaItem(id,grande){const [tipo,k]=id.split(":");const sz=grande?56:36;
-  if(tipo==="moldura")return `<span class="fr" style="background:${MOLDURAS[k][1]};padding:3px"><span class="avatar" style="width:${sz}px;height:${sz}px">${ib("star",sz/2.4)}</span></span>`;
+  if(tipo==="moldura")return `<span ${frAttr(k)} data-p="3"><span class="avatar" style="width:${sz}px;height:${sz}px">${ib("star",sz/2.4)}</span></span>`;
   if(tipo==="capa")return `<span style="display:block;width:${sz*1.6}px;height:${sz}px;border-radius:8px;background:${CAPAS_ESP[k][1]}"></span>`;
   if(tipo==="titulo")return `<span class="pill solid">${esc(TITULOS[k])}</span>`;
   return `<span class="pill" style="gap:6px">${ib(EMBLEMAS[k][1],14)}${esc(EMBLEMAS[k][0])}</span>`}
@@ -5058,8 +5084,8 @@ function renderDesafios(){
       return `<div class="card desafio ${tem?"":"bloq"}"><div class="row" style="flex-wrap:nowrap;gap:12px"><span class="des-ic" style="${tem?"background:var(--accent);color:var(--accent-fg)":""}">${ib(EMBLEMAS[c.k]?EMBLEMAS[c.k][1]:"medal",20)}</span><div style="min-width:0"><b>${esc(nome)}</b><div class="small muted">${desc}</div></div></div>
         <div class="row" style="justify-content:space-between"><span class="pill">+${c.xp} XP</span>${tem?`<span class="small" style="color:var(--ok);font-weight:600">${ib("check",14)} ${new Date(g.distintivos[c.k]).toLocaleDateString("pt-BR")}</span>`:`<span class="small muted">${ib("target",13)} bloqueado</span>`}</div></div>`}).join("")}</div>`}
   else{const eq=equipado();const grupos=[["moldura","Molduras da foto"],["capa","Capas exclusivas"],["titulo","Títulos"],["emblema","Emblemas (até 3 no perfil)"]];
-    corpo=grupos.map(([t,nm])=>`<div class="card" style="margin-bottom:14px"><div class="card-h"><h3>${nm}</h3><span class="small muted">${ITENS.filter(i=>i.tipo===t&&temItem(i.id)).length} de ${ITENS.filter(i=>i.tipo===t).length}</span></div>
-      <div class="colecao">${ITENS.filter(i=>i.tipo===t).map(i=>{const tem=temItem(i.id);const uso=t==="emblema"?eq.emblemas.includes(i.k):eq[t]===i.k;
+    corpo=grupos.map(([t,nm])=>`<div class="card" style="margin-bottom:14px"><div class="card-h"><h3>${nm}</h3><span class="small muted">${ITENS.filter(i=>i.tipo===t&&temItem(i.id)).length} de ${ITENS.filter(i=>i.tipo===t&&(!ehExclusivo(i.id)||temItem(i.id))).length}</span></div>
+      <div class="colecao">${ITENS.filter(i=>i.tipo===t&&(!ehExclusivo(i.id)||temItem(i.id))).map(i=>{const tem=temItem(i.id);const uso=t==="emblema"?eq.emblemas.includes(i.k):eq[t]===i.k;
         return `<div class="item ${tem?"":"bloq"} ${uso?"uso":""}"><div class="item-prev">${previaItem(i.id)}</div><b class="small">${esc(i.n)}</b>
           ${tem?`<button class="btn sm ${uso?"":"primary"}" type="button" data-equipar="${i.id}">${uso?"Em uso ✓":"Usar"}</button>`:`<span class="small muted" style="text-align:center">${esc(COMO[i.id]||(EMBLEMAS[i.k]?"Desbloqueie a conquista":"Bloqueado"))}</span>`}</div>`}).join("")}</div></div>`).join("")}
   $("#main").innerHTML=`<div class="page">
@@ -5144,11 +5170,11 @@ function pronto(c){if(c.p<c.a)return false;const r=reqServidor(c);return !r||r.t
 // visão das conquistas a partir do servidor (XP, itens e resgates)
 function gServidor(){if(S.gCache)return S.gCache;const s=S.srv||{},res={},dist={},semF={};
   Object.entries(S.resg||{}).forEach(([rid,v])=>{const em=tsMs(v.em),t=rid[0];if(t==="c")dist[v.k]=em;else if(t!=="n"&&t!=="i"){const id=idCliente(rid);res[id]=em;if(t==="w"&&v.k==="semana")semF[dataISO(new Date(em)).slice(0,7)+":"+id.slice(2,12)]=true}});
-  const itens={};Object.keys(s.itens||{}).forEach(k=>{if(s.itens[k]===true)itens[k]=1});
+  const itens={};Object.keys(s.itens||{}).forEach(k=>{if(s.itens[k]===true)itens[k]=1});(EXCLUSIVOS[S.uid]||[]).forEach(k=>itens[k]=1);
   return S.gCache={xp:s.xp||0,itens,resgatados:res,distintivos:dist,semanasFinalizadas:semF}}
 // perfil público só mostra itens e nível confirmados no servidor
 function perfilVerificado(id,p){if(!FBM()||!p)return p;const c=id===S.uid&&S.srv!==undefined?S.srv:S.soc.conquistasOk?S.soc.conquistas[id]:undefined;if(c===undefined)return p;
-  const it=(c&&c.itens)||{},tem=x=>it[x]===true,q={...p,nivel:(c&&c.nivel)||1};
+  const it=(c&&c.itens)||{},tem=x=>it[x]===true||(EXCLUSIVOS[id]||[]).includes(x),q={...p,nivel:(c&&c.nivel)||1};
   if(q.moldura&&!tem("moldura:"+q.moldura))q.moldura="";if(q.titulo&&!tem("titulo:"+q.titulo))q.titulo="";
   if(q.capa&&!CAPAS[q.capa]&&!tem("capa:"+q.capa))q.capa="";q.emblemas=(q.emblemas||[]).filter(e=>tem("emblema:"+e)).slice(0,3);return q}
 function aposMudarSrv(){S.gCache=null;pintarConvite();const b=S.soc.perfisBrutos||{};if(b[S.uid]){S.soc.perfis[S.uid]=perfilVerificado(S.uid,b[S.uid]);S.pub=S.soc.perfis[S.uid]}

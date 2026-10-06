@@ -15,7 +15,11 @@ service cloud.firestore {
         return d.get('moldura', '') == '' && d.get('titulo', '') == '' && capaLivre(d.get('capa', ''))
           && d.get('emblemas', []).size() == 0 && d.get('nivel', 1) == 1;
       }
-      function possui(id) { return conqDe(uid).itens.get(id, false) == true; }
+      // itens exclusivos dados pelo dono do site a uma conta específica (os mesmos de EXCLUSIVOS no index.html)
+      function exclusivo(id) {
+        return uid == 'S36YiPfilEMKpGzjO4FtIH3oh813' && id in ['moldura:joias', 'titulo:rumo_medicina'];
+      }
+      function possui(id) { return exclusivo(id) || conqDe(uid).itens.get(id, false) == true; }
       function itensOk() {
         let d = request.resource.data;
         let e = d.get('emblemas', []);
