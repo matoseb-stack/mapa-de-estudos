@@ -1,4 +1,5 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="manifest" href="manifest.webmanifest?v=3"><link rel="icon" type="image/png" sizes="32x32" href="icones/favicon-32.png?v=3"><link rel="icon" type="image/png" sizes="16x16" href="icones/favicon-16.png?v=3"><link rel="apple-touch-icon" href="icones/apple-touch-icon.png?v=3"><meta name="theme-color" content="#0a0a0a"><meta name="apple-mobile-web-app-title" content="Logic Academy"><meta name="application-name" content="Logic Academy"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Logic Academy: organizador de estudos com banco de questões oficiais do ENEM, plano semanal, pomodoro, cronômetro, desafios, revisões, estatísticas, grupos de estudo e leitura de editais."><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.5 system-ui,sans-serif;background:#fafafa}img{max-width:100%}[hidden]{display:none!important}</style><title>Logic Academy</title>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="manifest" href="manifest.webmanifest?v=3"><link rel="icon" type="image/png" sizes="32x32" href="icones/favicon-32.png?v=3"><link rel="icon" type="image/png" sizes="16x16" href="icones/favicon-16.png?v=3"><link rel="apple-touch-icon" href="icones/apple-touch-icon.png?v=3"><meta name="theme-color" content="#0a0a0a"><meta name="apple-mobile-web-app-title" content="Logic Academy"><meta name="application-name" content="Logic Academy"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Logic Academy: organizador de estudos com banco de questões oficiais do ENEM, plano semanal, pomodoro, cronômetro, desafios, revisões, estatísticas, grupos de estudo e leitura de editais."><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.5 system-ui,sans-serif;background:#fafafa}img{max-width:100%}[hidden]{display:none!important}</style><title>Logic Academy — organizador de estudos e banco de questões do ENEM</title>
+<link rel="canonical" href="https://logicacademy.web.app/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
@@ -88,6 +89,7 @@ textarea{min-height:88px;resize:vertical}
 .auth{min-height:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
 .auth-l{padding:48px clamp(16px,5vw,64px);display:flex;flex-direction:column;justify-content:center;gap:28px;max-width:620px;margin-left:auto;width:100%}
 .auth-r{background:var(--inv-bg);color:var(--inv-fg);padding:48px clamp(16px,5vw,56px);display:flex;flex-direction:column;justify-content:center;gap:18px}
+.auth-links{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:.85rem}.auth-links a{color:inherit;opacity:.75}.auth-links a:hover{opacity:1}
 .auth-r .feat{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start}
 .auth-r .feat span{width:36px;height:36px;border-radius:9px;border:1px solid color-mix(in srgb,var(--inv-fg) 25%,transparent);display:grid;place-items:center}
 .auth-r p{opacity:.72;font-size:.9rem}
@@ -1072,7 +1074,8 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-</head><body><div id="root"></div>
+</head><body>
+<noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
@@ -1609,6 +1612,7 @@ function renderLogin(erro){document.body.classList.remove("menu-aberto");
          ["scan","Leitura de edital","Envie o PDF do edital ou escreva o nome da prova (ENEM, Pism 1, EsPCEx, PM MG…) e receba os tópicos por matéria."],
          ["users","Grupos e ranking","Crie grupos de estudo, converse no chat do grupo ou no chat geral e compare horas estudadas."]]
         .map(([i,t,d])=>`<div class="feat"><span>${ico(i)}</span><div><b>${t}</b><p>${d}</p></div></div>`).join("")}
+      <nav class="auth-links" aria-label="Páginas do site"><a href="guias/">Guias de estudo</a><a href="banco-de-questoes.html">Banco de questões</a><a href="sobre.html">Sobre</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a><a href="contato.html">Contato</a></nav>
     </aside>
   </div>`;
   $("#btnLocal").onclick=()=>entrar("local");

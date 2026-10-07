@@ -1,0 +1,14 @@
+:root{--bg:#fafafa;--fg:#0a0a0a;--muted:#5f5f69;--line:#e4e4e7;--acc:#0891b2;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b0e;--fg:#f4f4f5;--muted:#a1a1aa;--line:#27272a;--acc:#22d3ee;--card:#141418}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--acc)}.w{max-width:860px;margin:0 auto;padding:0 18px}
+.topo{border-bottom:1px solid var(--line);background:var(--card)}.topo .w{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 18px}
+.marca{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--fg);text-decoration:none}.marca img{border-radius:7px}
+.topo nav{display:flex;gap:14px;flex-wrap:wrap;flex:1}.topo nav a{color:var(--muted);text-decoration:none;font-size:.93rem}.topo nav a[aria-current],.topo nav a:hover{color:var(--fg)}
+.cta,.botao{display:inline-block;background:var(--acc);color:#04131a;font-weight:600;text-decoration:none;padding:8px 16px;border-radius:999px}
+.conteudo{padding-top:28px;padding-bottom:40px}h1{font-size:2rem;line-height:1.2;margin:.2em 0 .5em}h2{font-size:1.3rem;margin:1.6em 0 .4em}
+.lead{font-size:1.12rem;color:var(--muted)}.peq{font-size:.85rem;color:var(--muted)}.migalha{font-size:.9rem;margin:0}
+.tab{border-collapse:collapse;width:100%;margin:12px 0}.tab th,.tab td{border:1px solid var(--line);padding:8px 10px;text-align:left}.tab th{background:var(--card)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}.card{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:var(--fg)}.card span{color:var(--muted);font-size:.9rem}
+.caixa{margin-top:32px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.rodape{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:.92rem}
