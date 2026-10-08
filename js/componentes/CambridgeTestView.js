@@ -6,7 +6,7 @@
   const XP_POR_ACERTO = 5;
 
   function abrir(container, op) {
-    const { app } = op, IN = window.LA_INGLES, Srv = window.FirebaseServiceMock, esc = app.esc;
+    const { app } = op, IN = window.LA_INGLES, Srv = window.LAService || window.FirebaseServiceMock, esc = app.esc;
     const itens = IN.NIVELAMENTO, resp = new Array(itens.length).fill(null);
     let i = 0;
 

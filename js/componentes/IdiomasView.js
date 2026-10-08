@@ -12,12 +12,13 @@
   const MATERIA = "Inglês";
   const E = { nivelVer: null, aula: null, perguntou: false, perfil: null, nivel: null, gravacao: null };
 
-  const Srv = () => window.FirebaseServiceMock;
+  const Srv = () => window.LAService || window.FirebaseServiceMock;   // nuvem com conta; simulado só no modo visitante
   const IN = () => window.LA_INGLES;
   const chaveMod = (nivel, comp) => `ingles:${nivel}:${comp}`;
 
   async function render(container, app) {
     container.onclick = null;
+    if (E.uid !== app.uid()) Object.assign(E, { uid: app.uid(), nivelVer: null, aula: null, perguntou: false, perfil: null, nivel: null });   // trocou de conta
     container.innerHTML = `<div class="page">${app.pageHead("Idiomas", "Prepare-se para os exames Cambridge com aulas no formato da prova.")}<div class="card row muted"><span class="spinner"></span>Carregando seu perfil de idiomas…</div></div>`;
     let nivel, perfil;
     try { [nivel, perfil] = await Promise.all([Srv().getUserLevel(app.uid(), "ingles"), Srv().getLanguageProfile(app.uid())]); }
@@ -58,7 +59,7 @@
     const { esc, ico } = app, I = IN(), nv = E.nivelVer, perfil = E.perfil || { xp: 0, concluidos: {} };
     const meu = E.nivel && E.nivel.nivel;
     container.innerHTML = `<div class="page idiomas">
-      ${app.pageHead("Idiomas", "Prepare-se para os exames Cambridge com aulas no formato da prova.", `<button class="btn" type="button" data-id="nivelamento">${ico("clock")}${meu ? "Refazer nivelamento" : "Fazer nivelamento"}</button>`)}
+      ${app.pageHead("Idiomas", "Prepare-se para os exames Cambridge com aulas no formato da prova.", `<button class="btn" type="button" data-id="nivelamento">${ico("chart")}${meu ? "Refazer nivelamento" : "Fazer nivelamento"}</button>`)}
       <div class="idm-linguas" role="tablist" aria-label="Idioma">
         <button type="button" class="pill solid" role="tab" aria-selected="true">🇬🇧 Inglês</button>
         <button type="button" class="pill" disabled title="Em breve">🇪🇸 Espanhol · em breve</button>
@@ -78,9 +79,12 @@
           <div class="row" style="gap:8px"><button class="btn primary sm" type="button" data-id-aula="${c.k}">${ico("play")}${feito ? "Refazer" : "Começar"}</button>
           <button class="btn sm" type="button" data-id-semana="${c.k}">${ico("cal")}Adicionar à semana</button></div></div>`; }).join("")}</div>
       ${perfil.historico && perfil.historico.length ? `<div class="card" style="margin-top:14px"><div class="card-h"><h3>Últimos XP de idiomas</h3></div><div class="list">${perfil.historico.slice(0, 6).map(h => `<div class="li" style="grid-template-columns:minmax(0,1fr) auto"><span class="small">${esc(h.motivo)}</span><b class="small">+${h.xp} XP</b></div>`).join("")}</div></div>` : ""}
+      <div data-envios></div>
       <p class="hint" style="margin-top:12px">Formato inspirado nos exames Cambridge English (Key, Preliminary, First, Advanced e Proficiency). Conteúdo próprio do Logic Academy, sem vínculo com a Cambridge University Press & Assessment.</p>
     </div>`;
+    pintarEnvios(container, app);
     container.onclick = e => {
+      if (e.target.closest("[data-envios]")) return;
       const nb = e.target.closest("[data-id-nivel]"); if (nb) { E.nivelVer = nb.dataset.idNivel; pintarInicio(container, app); return; }
       const a = e.target.closest("[data-id-aula]"); if (a) { E.aula = { comp: a.dataset.idAula }; abrirAula(container, app, a.dataset.idAula); return; }
       const s = e.target.closest("[data-id-semana]"); if (s) { modalSemana(container, app, s.dataset.idSemana); return; }
@@ -220,13 +224,15 @@
       ed.oninput = () => { const n = conta(); cont.textContent = `${n} palavras · meta ${w.min}–${w.max}`; cont.classList.toggle("txt-on", n >= w.min && n <= w.max); };
       $("[data-enviar-w]").onclick = async ev => {
         const n = conta(); if (n < Math.min(15, w.min)) { app.toast("Escreva um pouco mais antes de enviar."); return; }
-        const b = ev.currentTarget; b.disabled = true; b.textContent = "Enviando…";
+        const b = ev.currentTarget; b.disabled = true; b.textContent = "O mentor está corrigindo…"; ed.readOnly = true;
+        $("[data-previa]").innerHTML = `<div class="idm-previa row" style="gap:10px"><span class="spinner"></span><span class="small muted">A IA está lendo sua redação com os critérios Cambridge. Leva uns 10 a 30 segundos.</span></div>`;
         try {
-          const r = await Srv().submitWriting(app.uid(), { modulo: chave, nivel: nv, texto: ed.value, minPalavras: w.min, maxPalavras: w.max });
-          const ganho = await darXP(app, XP.writing, `Writing ${nv} enviado ao mentor`, chave, { palavras: r.palavras });
+          const r = await Srv().submitWriting(app.uid(), { modulo: chave, nivel: nv, texto: ed.value, minPalavras: w.min, maxPalavras: w.max, prompt: w.prompt, genero: w.genero });
+          const ganho = await darXP(app, XP.writing + (r.correcao ? Math.round(r.correcao.nota / 2) : 0), `Writing ${nv} enviado ao mentor`, chave, { palavras: r.palavras, nota: r.correcao ? r.correcao.nota : null });
           b.textContent = "Enviado ✓";
-          $("[data-previa]").innerHTML = `<div class="idm-previa"><b>Enviado ao mentor!</b> ${ganho ? `<span class="pill solid">+${ganho} XP</span>` : ""}<p class="small muted">Prévia automática enquanto o mentor corrige:</p><ul class="small">${r.previa.map(d => `<li>${app.esc(d)}</li>`).join("")}</ul></div>`;
-        } catch (e) { b.disabled = false; b.textContent = "Enviar para o Mentor"; app.toast("Não foi possível enviar agora."); }
+          $("[data-previa]").innerHTML = `<div class="idm-previa"><div class="row" style="gap:8px"><b>${r.correcao ? "Correção do mentor" : "Enviado ao mentor!"}</b>${ganho ? `<span class="pill solid">+${ganho} XP</span>` : ""}</div>
+            ${r.correcao ? correcaoHtml(app, r) : `<p class="small muted">${r.nuvem === false || !window.LAService ? "Modo visitante: entre com sua conta para receber a correção da IA." : "A IA não conseguiu corrigir agora. Sua redação ficou salva: tente de novo em “Correções do mentor”, na aba Idiomas."}</p><ul class="small">${(r.previa || []).map(d => `<li>${app.esc(d)}</li>`).join("")}</ul>`}</div>`;
+        } catch (e) { b.disabled = false; ed.readOnly = false; b.textContent = "Enviar para o Mentor"; $("[data-previa]").innerHTML = ""; app.toast("Não foi possível enviar agora. Confira sua internet."); }
       };
     }
     // speaking (MediaRecorder)
@@ -249,13 +255,48 @@
       env.onclick = async () => {
         if (!blob) return; env.disabled = true; env.textContent = "Enviando…";
         try {
-          await Srv().submitSpeaking(app.uid(), { modulo: chave, nivel: nv, segundos: dur, bytes: blob.size });
-          const ganho = await darXP(app, XP.speaking, `Speaking ${nv} enviado ao mentor`, chave, { segundos: Math.round(dur) });
+          $("[data-previa]").innerHTML = `<div class="idm-previa row" style="gap:10px"><span class="spinner"></span><span class="small muted">A IA está ouvindo sua resposta. Leva uns 10 a 30 segundos.</span></div>`;
+          const audio = window.LAService && blob.size < 6e6 ? { mime: (blob.type || "audio/webm").split(";")[0], b64: await paraBase64(blob) } : null;
+          const r = await Srv().submitSpeaking(app.uid(), { modulo: chave, nivel: nv, segundos: dur, bytes: blob.size, prompt: s.prompt, audio });
+          const ganho = await darXP(app, XP.speaking + (r.correcao ? Math.round(r.correcao.nota / 2) : 0), `Speaking ${nv} enviado ao mentor`, chave, { segundos: Math.round(dur), nota: r.correcao ? r.correcao.nota : null });
           env.textContent = "Enviado ✓";
-          $("[data-previa]").innerHTML = `<div class="idm-previa"><b>Áudio enviado ao mentor!</b> ${ganho ? `<span class="pill solid">+${ganho} XP</span>` : ""}<p class="small muted">Você falou por ${Math.round(dur)} segundos. A correção do mentor aparece aqui quando estiver pronta.</p></div>`;
-        } catch (e) { env.disabled = false; env.textContent = "Enviar para o Mentor"; app.toast("Não foi possível enviar agora."); }
+          $("[data-previa]").innerHTML = `<div class="idm-previa"><div class="row" style="gap:8px"><b>${r.correcao ? "Avaliação do mentor" : "Áudio enviado!"}</b>${ganho ? `<span class="pill solid">+${ganho} XP</span>` : ""}</div>
+            ${r.correcao ? correcaoHtml(app, r) : `<p class="small muted">Você falou por ${Math.round(dur)} segundos. ${window.LAService ? "A IA não conseguiu avaliar o áudio agora; grave e envie de novo daqui a pouco." : "Modo visitante: entre com sua conta para receber a avaliação da IA."}</p>`}</div>`;
+        } catch (e) { env.disabled = false; env.textContent = "Enviar para o Mentor"; $("[data-previa]").innerHTML = ""; app.toast("Não foi possível enviar agora. Confira sua internet."); }
       };
     }
+  }
+  const paraBase64 = blob => new Promise((ok, no) => { const fr = new FileReader(); fr.onload = () => ok(String(fr.result).split(",")[1] || ""); fr.onerror = no; fr.readAsDataURL(blob); });
+  // correção devolvida pela IA (writing ou speaking)
+  function correcaoHtml(app, env) {
+    const c = env.correcao, esc = app.esc; if (!c) return "";
+    return `<div class="idm-corr">
+      <div class="idm-nota"><b>${c.nota}</b><span>/20</span></div>
+      ${c.resumo ? `<p>${esc(c.resumo)}</p>` : ""}
+      ${c.transcricao ? `<details><summary class="small">O que a IA entendeu da sua fala</summary><p class="small idm-texto">${esc(c.transcricao)}</p></details>` : ""}
+      <div class="idm-crit">${(c.criterios || []).map(k => `<div><div class="row" style="justify-content:space-between"><b class="small">${esc(k.nome)}</b><span class="small mono">${k.nota}/5</span></div><div class="prog"><i style="width:${k.nota * 20}%"></i></div><p class="small muted">${esc(k.comentario)}</p></div>`).join("")}</div>
+      ${(c.erros || []).length ? `<div><b class="small">Correções</b><ul class="small idm-erros">${c.erros.map(e => `<li><s>${esc(e.trecho)}</s> → <b>${esc(e.correcao)}</b>${e.explicacao ? ` <span class="muted">· ${esc(e.explicacao)}</span>` : ""}</li>`).join("")}</ul></div>` : ""}
+      ${(c.dicas || []).length ? `<div><b class="small">Dicas</b><ul class="small">${c.dicas.map(d => `<li>${esc(d)}</li>`).join("")}</ul></div>` : ""}
+      ${c.versaoMelhorada ? `<details><summary class="small">Ver um trecho reescrito no nível ${esc(env.nivel || "")}</summary><p class="small idm-texto">${esc(c.versaoMelhorada)}</p></details>` : ""}
+    </div>`;
+  }
+  // lista "Correções do mentor" na tela inicial da aba (só com conta)
+  async function pintarEnvios(container, app) {
+    const box = container.querySelector("[data-envios]"); if (!box || !window.LAService || !window.LAService.getSubmissions) return;
+    let lista = []; try { lista = await window.LAService.getSubmissions(app.uid(), 8); } catch (e) { box.innerHTML = ""; return; }
+    if (!lista.length) { box.innerHTML = ""; return; }
+    const esc = app.esc, data = t => new Date(t).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" });
+    box.innerHTML = `<div class="card" style="margin-top:14px"><div class="card-h"><h3>Correções do mentor</h3></div><div class="list">${lista.map(e => `<details class="idm-env">
+      <summary><span class="pill">${e.tipo === "writing" ? "Writing" : "Speaking"} · ${esc(e.nivel)}</span><span class="small muted">${data(e.em)}</span>
+      ${e.correcao ? `<b class="small">${e.correcao.nota}/20</b>` : e.status === "corrigindo" || e.status === "pendente" ? `<span class="small muted">sem correção</span>` : ""}</summary>
+      ${e.correcao ? correcaoHtml(app, e) : `<p class="small muted">A IA não conseguiu corrigir na hora.</p>${e.tipo === "writing" ? `<button class="btn sm" type="button" data-refazer="${esc(e.id)}">Pedir correção de novo</button>` : ""}`}
+      ${e.texto ? `<details><summary class="small">Seu texto</summary><p class="small idm-texto">${esc(e.texto).replace(/\n/g, "<br>")}</p></details>` : ""}</details>`).join("")}</div></div>`;
+    box.onclick = async ev => {
+      const b = ev.target.closest("[data-refazer]"); if (!b) return;
+      b.disabled = true; b.textContent = "Corrigindo…";
+      try { await window.LAService.retryWriting(app.uid(), b.dataset.refazer); app.toast("Correção pronta!"); pintarEnvios(container, app); }
+      catch (e) { b.disabled = false; b.textContent = "Pedir correção de novo"; app.toast("A IA ainda não conseguiu corrigir. Tente mais tarde."); }
+    };
   }
   function pararFala() { try { if (window.speechSynthesis) speechSynthesis.cancel(); } catch (e) {} }
   function pararGravacao() { if (E.gravacao) E.gravacao.parar(); }
