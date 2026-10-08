@@ -35,6 +35,7 @@
       try {
         const reg = await Srv.saveUserLevel(app.uid(), "ingles", { nivel, pontos, total: itens.length, porNivel });
         const xp = await Srv.addLanguageXP(app.uid(), pontos * XP_POR_ACERTO, "Teste de nivelamento");
+        if (app.xpPerfil) app.xpPerfil("nivelamento");                // XP no perfil: só na primeira vez
         container.innerHTML = `<div class="page" style="max-width:720px"><div class="card stack cbt-res" style="align-items:center;text-align:center">
           <span class="eyebrow">Resultado do nivelamento</span>
           <div class="cbt-nivel">${esc(reg.nivel)}</div>

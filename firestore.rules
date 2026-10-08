@@ -175,9 +175,21 @@ service cloud.firestore {
           && get(/databases/$(database)/documents/indicacoes/$(r.amigo)).data.por == uid
           && r.xp == 150 && r.k in ['convite', 'amizade', 'cometa'] && r.itens == ['moldura:' + r.k];
       }
+      // aba Idiomas: XP fixo por tipo de aula, no máximo uma vez por dia cada (nivelamento: uma vez só).
+      // O servidor não vê as respostas, então o limite diário é o que impede ganhar XP sem parar;
+      // "tempo" ainda exige 20 min de estudo hoje no ranking.
+      function idiomaOk() {
+        let r = request.resource.data;
+        let t = {'nivelamento': 30, 'reading': 25, 'listening': 25, 'writing': 30, 'speaking': 30, 'tempo': 20};
+        return r.k is string && r.k in t && r.xp == t[r.k] && r.itens == []
+          && ((r.k == 'nivelamento' && r.periodo == 0) || (r.k != 'nivelamento' && r.periodo == diaBR()))
+          && rid == 'l-' + string(r.periodo) + '-' + r.k
+          && (r.k != 'tempo' || hojeAtinge(rankDe(uid), 20));
+      }
       allow read: if eu(uid);
       allow create: if eu(uid) && ((request.resource.data.tipo == 'i' && indicacaoOk())
-                                 || (request.resource.data.tipo != 'i' && resgateOk()));
+                                 || (request.resource.data.tipo == 'l' && idiomaOk())
+                                 || (!(request.resource.data.tipo in ['i', 'l']) && resgateOk()));
     }
 
     // XP, nível e itens: só mudam junto com um resgate válido no mesmo envio
@@ -193,8 +205,8 @@ service cloud.firestore {
         let g = getAfter(caminho).data;
         return !exists(caminho) && existsAfter(caminho)
           && request.resource.data.xp == resource.data.xp + g.xp
-          && ((g.tipo == 'i' && request.resource.data.n == resource.data.n)
-              || (g.tipo != 'i' && request.resource.data.n == resource.data.n + 1))
+          && ((g.tipo in ['i', 'l'] && request.resource.data.n == resource.data.n)
+              || (!(g.tipo in ['i', 'l']) && request.resource.data.n == resource.data.n + 1))
           && request.resource.data.itens.diff(resource.data.itens).affectedKeys().hasOnly(g.itens)
           && request.resource.data.itens.keys().hasAll(g.itens)
           && nivelOk();

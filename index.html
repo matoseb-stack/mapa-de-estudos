@@ -1074,14 +1074,14 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=2.1">
-<script src="js/firebaseServiceMock.js?v=2.1"></script>
-<script src="js/firebaseService.js?v=2.1"></script>
-<script src="js/idiomas/conteudoIngles.js?v=2.1"></script>
-<script src="js/componentes/PatchNotesModal.js?v=2.1"></script>
-<script src="js/componentes/FloatingTimer.js?v=2.1"></script>
-<script src="js/componentes/CambridgeTestView.js?v=2.1"></script>
-<script src="js/componentes/IdiomasView.js?v=2.1"></script>
+<link rel="stylesheet" href="css/componentes.css?v=2.2">
+<script src="js/firebaseServiceMock.js?v=2.2"></script>
+<script src="js/firebaseService.js?v=2.2"></script>
+<script src="js/idiomas/conteudoIngles.js?v=2.2"></script>
+<script src="js/componentes/PatchNotesModal.js?v=2.2"></script>
+<script src="js/componentes/FloatingTimer.js?v=2.2"></script>
+<script src="js/componentes/CambridgeTestView.js?v=2.2"></script>
+<script src="js/componentes/IdiomasView.js?v=2.2"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
 
@@ -2119,7 +2119,7 @@ function registrar(min,materia,fonte){
   const ks=Object.keys(L.dias).sort();while(ks.length>120){delete L.dias[ks.shift()]}
   gravar("pomo",L,true);
   publicarRanking();verificarConquistas();atualizarBadgeDesafios();
-  if(norm(k)===norm("Inglês")&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.xpPorTempo(appIdiomas.uid(),min).then(xp=>{if(xp)setTimeout(()=>toast(`+${xp} XP de idiomas pelo tempo de Inglês.`),900)}).catch(()=>{});
+  if(norm(k)===norm("Inglês")&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.xpPorTempo(appIdiomas.uid(),min).then(xp=>{if(min>=10)appIdiomas.xpPerfil("tempo");return xp}).then(xp=>{if(xp)setTimeout(()=>toast(`+${xp} XP de idiomas pelo tempo de Inglês.`),900)}).catch(()=>{});
 }
 let actx=null;
 /* ---- Alarme do pomodoro ----
@@ -2300,6 +2300,10 @@ const appIdiomas={
     const dia=DIAS.find(d=>d.k===o.dia).n,b=(S.plano.semana[o.dia]||[]).find(x=>x.tarefa===o.tarefa);
     return r.add?{ok:true,msg:`“${o.tarefa}” adicionado na ${dia}${b?" às "+b.inicio:""}.`}:r.fora?{ok:false,msg:`Não coube na ${dia}: o dia já está cheio.`}:{ok:true,msg:"Esse módulo já estava na sua semana nesse dia."};
   },
+  // XP no perfil (o mesmo dos desafios e do ranking); devolve o ganho ou 0 se já ganhou hoje
+  async xpPerfil(k){try{const r=await resgatarIdioma(k);if(!r||r.ja)return 0;
+      setTimeout(()=>toast(r.subiu?`+${r.xp} XP no perfil · você subiu para o nível ${r.nivel}!`:`+${r.xp} XP no seu perfil (Idiomas).`),700);return r.xp}
+    catch(e){console.warn("xp idiomas",e&&e.code);return 0}},
   estudarComCronometro(materia){
     if(P.rodando){toast("Existe um pomodoro rodando. Pause-o antes de usar o cronômetro.");return}
     if(C.rodando&&C.materia===materia){toast("O cronômetro já está contando Inglês.");return}
@@ -2325,12 +2329,12 @@ function renderIdiomas(){
   V.render($("#main"),appIdiomas);
 }
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="2.0";
+const APP_VERSAO="2.1";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
   {t:"Nova aba Idiomas: Inglês no estilo Cambridge",d:"Aulas de Reading & Use of English, Writing, Listening e Speaking, do A1 ao C2."},
   {t:"Teste de nivelamento",d:"18 questões rápidas para descobrir seu nível e ajustar as aulas."},
   {t:"Aulas de idioma na sua semana",d:"Toque em “Adicionar à semana” para colocar, por exemplo, “Listening - B2” no seu cronograma."},
-  {t:"XP de idiomas",d:"Ganhe XP pelos acertos nas aulas e por cada minuto de Inglês no cronômetro ou pomodoro."},
+  {t:"XP de idiomas também no perfil",d:"Cada tipo de aula (Reading, Listening, Writing, Speaking e tempo de Inglês) vale XP no seu nível e no ranking uma vez por dia."},
   {t:"Cronômetro com meta e alarme",d:"Escolha uma meta (15 a 120 min) e o alarme toca quando o tempo chegar."},
   {t:"Mini-janela do relógio",d:"Ao sair da tela do pomodoro ou cronômetro, ou rolar a página, o tempo continua visível num cantinho. Feche no X."},
   {t:"Aviso de bloqueio",d:"Se o tempo não puder mais ser contado (limite de 16 h por dia, por exemplo), o cronômetro pausa e avisa com som."}]};
@@ -5286,7 +5290,7 @@ function reqServidor(c){if(!FBM())return null;const t=c.id[0],def=DEF_SRV[t+"-"+
 function pronto(c){if(c.p<c.a)return false;const r=reqServidor(c);return !r||r.tem>=r.need}
 // visão das conquistas a partir do servidor (XP, itens e resgates)
 function gServidor(){if(S.gCache)return S.gCache;const s=S.srv||{},res={},dist={},semF={};
-  Object.entries(S.resg||{}).forEach(([rid,v])=>{const em=tsMs(v.em),t=rid[0];if(t==="c")dist[v.k]=em;else if(t!=="n"&&t!=="i"){const id=idCliente(rid);res[id]=em;if(t==="w"&&v.k==="semana")semF[dataISO(new Date(em)).slice(0,7)+":"+id.slice(2,12)]=true}});
+  Object.entries(S.resg||{}).forEach(([rid,v])=>{const em=tsMs(v.em),t=rid[0];if(t==="c")dist[v.k]=em;else if(t!=="n"&&t!=="i"&&t!=="l"){const id=idCliente(rid);res[id]=em;if(t==="w"&&v.k==="semana")semF[dataISO(new Date(em)).slice(0,7)+":"+id.slice(2,12)]=true}});
   const itens={};Object.keys(s.itens||{}).forEach(k=>{if(s.itens[k]===true)itens[k]=1});(EXCLUSIVOS[S.uid]||[]).forEach(k=>itens[k]=1);
   return S.gCache={xp:s.xp||0,itens,resgatados:res,distintivos:dist,semanasFinalizadas:semF}}
 // perfil público só mostra itens e nível confirmados no servidor
@@ -5381,6 +5385,20 @@ function resgatarConvite(amigo,k){
     const novos=(S.srv.itens||{})[item]?[]:[item];
     S.srv={...S.srv,xp,nivel,ultimo:rid,itens:{...(S.srv.itens||{}),[item]:true}};S.resg={...S.resg,[rid]:{...doc,em:Date.now()}};S.gCache=null;
     return {novos,nivel,subiu:nivel>nivelDe(antes)}});
+  SRV.fila=job.catch(()=>{});return job}
+// XP de idiomas no perfil: valor fixo por tipo de aula, uma vez por dia cada (nivelamento: uma vez só). Conferido pelas regras.
+const XP_IDIOMA={nivelamento:30,reading:25,listening:25,writing:30,speaking:30,tempo:20};
+function resgatarIdioma(k){
+  const job=SRV.fila.then(async()=>{
+    if(!FBM()||!S.srv||!XP_IDIOMA[k])return {ja:true};
+    const periodo=k==="nivelamento"?0:periodosBR().dia,rid=`l-${periodo}-${k}`;if((S.resg||{})[rid])return {ja:true};
+    const antes=S.srv.xp||0,ganho=XP_IDIOMA[k],xp=antes+ganho,nivel=nivelDe(xp),FV=firebase.firestore.FieldValue;
+    const doc={tipo:"l",k,periodo,xp:ganho,itens:[],em:FV.serverTimestamp()};
+    const b=S.db.batch();b.set(S.db.collection("resgates").doc(S.uid).collection("itens").doc(rid),doc);
+    b.update(S.db.collection("conquistas").doc(S.uid),{ultimo:rid,xp,nivel});await b.commit();
+    S.srv={...S.srv,xp,nivel,ultimo:rid};S.resg={...S.resg,[rid]:{...doc,em:Date.now()}};S.gCache=null;
+    publicarNivel();aposMudarSrv();
+    return {xp:ganho,nivel,subiu:nivel>nivelDe(antes)}});
   SRV.fila=job.catch(()=>{});return job}
 /* ================= Jogo limpo: anti-trapaça ================= */
 const LIMITE_DIA=960; // 16 horas

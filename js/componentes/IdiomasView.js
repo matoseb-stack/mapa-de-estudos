@@ -67,7 +67,7 @@
       </div>
       <div class="idm-resumo">
         <div class="stat"><div class="eyebrow">Seu nível</div><div class="v">${meu ? esc(meu) : "—"}</div><div class="s">${meu ? esc(I.EXAME[meu]) : "Faça o nivelamento"}</div></div>
-        <div class="stat"><div class="eyebrow">XP de idiomas</div><div class="v">${perfil.xp}</div><div class="s">acertos + tempo estudado</div></div>
+        <div class="stat"><div class="eyebrow">XP de idiomas</div><div class="v">${perfil.xp}</div><div class="s">${window.LAService ? "cada tipo de aula também vale XP no perfil, 1 vez por dia" : "acertos + tempo estudado"}</div></div>
         <div class="stat"><div class="eyebrow">Módulos concluídos</div><div class="v">${Object.keys(perfil.concluidos || {}).length}</div><div class="s">de ${I.NIVEIS.length * I.COMPETENCIAS.length}</div></div>
       </div>
       ${meu ? "" : `<div class="card flat idm-aviso"><span>${ico("bolt")}Descubra seu nível em 5 minutos para receber aulas na medida certa.</span><button class="btn sm primary" type="button" data-id="nivelamento">Fazer o teste</button></div>`}
@@ -182,6 +182,9 @@
     const r = await Srv().addLanguageXP(app.uid(), xp, motivo);
     if (chave) await Srv().markModuleDone(app.uid(), chave, resultado || {});
     E.perfil = await Srv().getLanguageProfile(app.uid());
+    // também vale XP no perfil (uma vez por dia por tipo de aula, conferido pelo servidor)
+    const k = chave && chave.split(":")[2];
+    if (k && app.xpPerfil) app.xpPerfil(k);
     return r.ganho;
   }
   function ligarAula(container, app, comp, mod) {
