@@ -1074,6 +1074,13 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
+<link rel="stylesheet" href="css/componentes.css?v=2.0">
+<script src="js/firebaseServiceMock.js?v=2.0"></script>
+<script src="js/idiomas/conteudoIngles.js?v=2.0"></script>
+<script src="js/componentes/PatchNotesModal.js?v=2.0"></script>
+<script src="js/componentes/FloatingTimer.js?v=2.0"></script>
+<script src="js/componentes/CambridgeTestView.js?v=2.0"></script>
+<script src="js/componentes/IdiomasView.js?v=2.0"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
 
@@ -2075,6 +2082,7 @@ function tickPomo(){
   const pb=$("#pomo-play");if(pb)pb.innerHTML=P.rodando?ico("pause")+"Pausar":ico("play")+(P.restante<pomoTotal()?"Continuar":"Iniciar");
   const mini=$("#mini-pomo");if(mini){mini.hidden=!(P.rodando||P.restante<pomoTotal());mini.innerHTML=`${ico(P.rodando?"timer":"pause")}<div style="min-width:0"><b>${mm}:${ss}</b><div style="font-size:.74rem;opacity:.75;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${MODOS[P.modo]}${P.materia?" · "+esc(P.materia):""}</div></div>`}
   document.title=P.rodando?`${mm}:${ss} · ${MODOS[P.modo]} — Logic Academy`:"Logic Academy";
+  atualizarFlutuante();
 }
 function concluirFase(){
   clearInterval(P.tick);P.rodando=false;const eraFoco=P.modo==="foco";
@@ -2110,6 +2118,7 @@ function registrar(min,materia,fonte){
   const ks=Object.keys(L.dias).sort();while(ks.length>120){delete L.dias[ks.shift()]}
   gravar("pomo",L,true);
   publicarRanking();verificarConquistas();atualizarBadgeDesafios();
+  if(norm(k)===norm("Inglês")&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.xpPorTempo(appIdiomas.uid(),min).then(xp=>{if(xp)setTimeout(()=>toast(`+${xp} XP de idiomas pelo tempo de Inglês.`),900)}).catch(()=>{});
 }
 let actx=null;
 /* ---- Alarme do pomodoro ----
@@ -2136,14 +2145,15 @@ function agendarAlarme(){ // mantém o app acordado enquanto o pomodoro corre
   try{criarSons();const m=ALARME.mudo;if(m.paused){const pr=m.play();if(pr&&pr.catch)pr.catch(()=>{})}
     if("mediaSession" in navigator){navigator.mediaSession.metadata=new MediaMetadata({title:`${MODOS[P.modo]} em andamento`,artist:"Logic Academy · pomodoro"})}}catch(e){}}
 function cancelarAlarmeAgendado(){try{if(ALARME.mudo&&!ALARME.mudo.paused)ALARME.mudo.pause()}catch(e){}}
-function tocarSomAlarme(){
+function tocarSomAlarme(arquivo){
+  if(arquivo){try{const a=ALARME.extra=ALARME.extra||new Audio();a.src=arquivo;a.loop=true;a.volume=1;a.currentTime=0;const pr=a.play();if(pr&&pr.catch)pr.catch(()=>tocarSomAlarme());return}catch(e){}}
   try{criarSons();const a=ALARME.el;a.muted=false;a.volume=1;a.currentTime=0;const pr=a.play();if(pr&&pr.catch)pr.catch(()=>bipWebAudio())}catch(e){bipWebAudio()}}
 function bipWebAudio(){ // reserva, caso o navegador recuse o arquivo de áudio
   try{actx=actx||new (window.AudioContext||window.webkitAudioContext)();if(actx.state==="suspended")actx.resume();const t0=actx.currentTime+.05;
     for(let c=0;c<12;c++)[0,.2,.4].forEach((d,i)=>{const t=t0+c*1.6+d,o=actx.createOscillator(),g=actx.createGain();o.type="square";o.frequency.value=i===1?1175:988;o.connect(g);g.connect(actx.destination);
       g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.22,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+.17);o.start(t);o.stop(t+.18);(ALARME.wa=ALARME.wa||[]).push(o)})}catch(e){}}
-function tocarAlarme(titulo,texto){
-  tocarSomAlarme();ALARME.tocando=true;
+function tocarAlarme(titulo,texto,arquivo){
+  tocarSomAlarme(arquivo);ALARME.tocando=true;
   try{navigator.vibrate&&navigator.vibrate([500,250,500,250,500])}catch(e){}
   clearInterval(ALARME.vib);ALARME.vib=setInterval(()=>{try{navigator.vibrate&&navigator.vibrate([500,250,500])}catch(e){}},2500);
   clearTimeout(ALARME.fimAuto);ALARME.fimAuto=setTimeout(pararAlarme,ALARME_SEG*1000);
@@ -2158,9 +2168,10 @@ function tocarAlarme(titulo,texto){
 }
 function pararAlarme(){
   try{if(ALARME.el){ALARME.el.pause();ALARME.el.currentTime=0}}catch(e){}
+  try{if(ALARME.extra){ALARME.extra.pause();ALARME.extra.currentTime=0}}catch(e){}
   (ALARME.wa||[]).forEach(o=>{try{o.stop()}catch(e){}});ALARME.wa=[];
   ALARME.tocando=false;clearInterval(ALARME.vib);clearTimeout(ALARME.fimAuto);try{navigator.vibrate&&navigator.vibrate(0)}catch(e){}
-  document.querySelectorAll(".alarme").forEach(x=>x.remove());if(!P.rodando)document.title="Logic Academy";
+  document.querySelectorAll(".alarme").forEach(x=>x.remove());if(!P.rodando&&!C.rodando)document.title="Logic Academy";
 }
 function testarSom(){somPreparar();if(ALARME.tocando){pararAlarme();return}tocarSomAlarme();ALARME.tocando=true;clearTimeout(ALARME.fimAuto);ALARME.fimAuto=setTimeout(pararAlarme,3200);toast("Tocando o alarme por 3 segundos. Se não ouvir, aumente o volume de mídia.")}
 addEventListener("beforeunload",e=>{if(S.mode==="local"&&S.plano){e.preventDefault();e.returnValue=""}});
@@ -2177,14 +2188,14 @@ function minutosDia(d){return S.pomoLog&&S.pomoLog.dias[d]?S.pomoLog.dias[d].min
 function sequencia(){let n=0;for(let i=0;i<120;i++){if(minutosDia(diasAtras(i))>0)n++;else if(i>0)break}return n}
 
 /* ================= Cronômetro livre ================= */
-const C={rodando:false,inicio:0,acum:0,materia:"",tick:null};
+const C={rodando:false,inicio:0,acum:0,materia:"",tick:null,meta:0,metaAvisada:false,sessao:0,regrasEm:0};
 function cronoMs(){return C.acum+(C.rodando?Date.now()-C.inicio:0)}
-function salvarCronoLocal(){if(S.mode!=="nuvem")return;try{localStorage.setItem("mapa_crono_"+(S.uid||"local"),JSON.stringify({rodando:C.rodando,inicio:C.inicio,acum:C.acum,materia:C.materia,confirmado:C.confirmado||0,bloco:C.bloco||null,blocoMin:C.blocoMin||0}))}catch(e){}}
+function salvarCronoLocal(){if(S.mode!=="nuvem")return;try{localStorage.setItem("mapa_crono_"+(S.uid||"local"),JSON.stringify({rodando:C.rodando,inicio:C.inicio,acum:C.acum,materia:C.materia,meta:C.meta||0,metaAvisada:!!C.metaAvisada,sessao:C.sessao||0,confirmado:C.confirmado||0,bloco:C.bloco||null,blocoMin:C.blocoMin||0}))}catch(e){}}
 function carregarCrono(){if(S.mode!=="nuvem")return;try{const d=JSON.parse(localStorage.getItem("mapa_crono_"+(S.uid||"local"))||"null");if(d){Object.assign(C,d);if(C.rodando){clearInterval(C.tick);C.tick=setInterval(tickCrono,500)}}}catch(e){}}
 function fmtRelogio(ms){const t=Math.floor(ms/1000),h=Math.floor(t/3600),m=Math.floor(t/60)%60,sg=t%60;return String(h).padStart(2,"0")+":"+String(m).padStart(2,"0")+":"+String(sg).padStart(2,"0")}
-function iniciarCrono(){if(C.rodando)return;C.rodando=true;C.inicio=Date.now();C.confirmado=Date.now();clearInterval(C.tick);C.tick=setInterval(tickCrono,500);salvarCronoLocal();tickCrono();publicarRanking()}
+function iniciarCrono(){if(C.rodando)return;pararAlarme();if(cronoMs()===0){C.sessao=Date.now();C.metaAvisada=false}C.rodando=true;C.regrasEm=0;C.inicio=Date.now();C.confirmado=Date.now();clearInterval(C.tick);C.tick=setInterval(tickCrono,500);salvarCronoLocal();tickCrono();publicarRanking()}
 function pausarCrono(){if(!C.rodando)return;C.acum+=Date.now()-C.inicio;C.rodando=false;clearInterval(C.tick);salvarCronoLocal();tickCrono();publicarRanking()}
-function zerarCrono(){C.rodando=false;C.acum=0;C.inicio=0;clearInterval(C.tick);salvarCronoLocal();tickCrono()}
+function zerarCrono(){C.rodando=false;C.acum=0;C.inicio=0;C.metaAvisada=false;clearInterval(C.tick);salvarCronoLocal();tickCrono()}
 function finalizarCrono(){const ms=cronoMs();const min=ms/60000;
   if(min<1){toast("Menos de 1 minuto: nada foi salvo.");zerarCrono();if(S.view==="cronometro")renderCronometro();return}
   const mat=C.materia,ref=C.bloco,alvo=C.blocoMin||0;registrar(min,mat,"cronometro");
@@ -2197,10 +2208,43 @@ function tickCrono(){
   const f=$("#crono-fim");if(f)f.disabled=ms<1000;const z=$("#crono-zerar");if(z)z.disabled=ms<1000||C.rodando;
   const st=$("#crono-st");if(st)st.textContent=C.rodando?"Contando…":ms>0?"Pausado":"Pronto para começar";
   const mini=$("#mini-crono");if(mini){mini.hidden=!(C.rodando||ms>0);mini.innerHTML=`${ico(C.rodando?"watch":"pause")}<div style="min-width:0"><b>${txt}</b><div style="font-size:.74rem;opacity:.75;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Cronômetro${C.materia?" · "+esc(C.materia):""}</div></div>`}
+  const rs=$("#crono-resta");if(rs)rs.innerHTML=C.meta?(ms>=C.meta*60e3?`Meta de <b>${C.meta} min</b> concluída!`:`Faltam <b>${fmtRelogio(C.meta*60e3-ms+999)}</b> para a meta de ${C.meta} min`):"";
+  if(C.rodando&&C.meta&&!C.metaAvisada&&ms>=C.meta*60e3){C.metaAvisada=true;pausarCrono();
+    tocarAlarme("Meta de tempo concluída!",`Você estudou ${C.meta} minutos${C.materia?" de "+C.materia:""}. Toque em “Finalizar e salvar” para registrar ou continue contando.`,"sons/alarme.wav");return}
+  if(C.rodando&&Date.now()-(C.regrasEm||0)>=30e3)verificarRegrasCrono();
+  atualizarFlutuante();
 }
+/* ---- Regras do servidor para o cronômetro (simuladas em js/firebaseServiceMock.js) ----
+   A cada 30 s com o cronômetro contando, pergunta se a contagem ainda é permitida
+   (limite de 16 h por dia, sessão longa sem confirmação, bloqueio de teste). Se não for, pausa e avisa com som. */
+async function verificarRegrasCrono(){
+  const Srv=window.FirebaseServiceMock;if(!Srv||!C.rodando)return;C.regrasEm=Date.now();
+  let r;try{r=await Srv.checkFirebaseTimerRules({minHoje:minutosDia(dataISO())+cronoMs()/60000,minSessao:cronoMs()/60000,confirmadoHaMin:(Date.now()-(C.confirmado||C.inicio))/60000})}catch(e){return}
+  if(!r||r.permitido||!C.rodando)return;
+  pausarCrono();
+  tocarAlarme("Cronômetro bloqueado",r.motivo||"O servidor não permitiu continuar a contagem.","sons/bloqueio.wav");
+  const box=document.querySelector(".alarme .alarme-box");if(box){const ic=box.querySelector(".alarme-ic");if(ic)ic.outerHTML='<span class="bloqueio-ic" aria-hidden="true">⛔</span>';
+    const pb=box.querySelector("#alarme-parar");if(pb)pb.innerHTML="Entendi";}
+  if(S.view==="cronometro")renderCronometro();
+}
+const modoTeste=()=>/github\.io$/.test(location.hostname)||/[?&]teste=1\b/.test(location.search)||location.hostname==="localhost"||location.hostname==="127.0.0.1";
+/* ---- Mini-janela flutuante (js/componentes/FloatingTimer.js) ---- */
+function atualizarFlutuante(){
+  const FT=window.LAComp&&LAComp.FloatingTimer;if(!FT)return;
+  if(!$("#shell")){FT.atualizar({ativo:false});return}
+  const pomoAtivo=P.rodando||P.restante<pomoTotal(),cronoAtivo=C.rodando||cronoMs()>0;
+  if(pomoAtivo&&(P.rodando||!C.rodando)){const r=pomoRestante();
+    FT.atualizar({ativo:true,tipo:"pomodoro",texto:String(Math.floor(r/60000)).padStart(2,"0")+":"+String(Math.floor(r/1000)%60).padStart(2,"0"),rotulo:MODOS[P.modo]+(P.materia?" · "+P.materia:""),rodando:P.rodando,naTela:S.view==="pomodoro",alvoSel:"#pomo-t",sessao:P.ciclos+P.modo});return}
+  if(cronoAtivo){FT.atualizar({ativo:true,tipo:"cronometro",texto:fmtRelogio(cronoMs()),rotulo:"Cronômetro"+(C.materia?" · "+C.materia:"")+(C.meta?` · meta ${C.meta} min`:""),rodando:C.rodando,naTela:S.view==="cronometro",alvoSel:"#crono-t",sessao:C.sessao||""});return}
+  FT.atualizar({ativo:false});
+}
+if(window.LAComp&&LAComp.FloatingTimer)LAComp.FloatingTimer.configurar({
+  abrir:tipo=>go(tipo),
+  alternar:tipo=>{if(tipo==="pomodoro"){P.rodando?pausarPomo():iniciarPomo()}else{C.rodando?pausarCrono():iniciarCrono()}if(S.view===tipo)renderView()}});
+addEventListener("scroll",()=>{if(P.rodando||C.rodando||P.restante<pomoTotal()||cronoMs()>0)atualizarFlutuante()},{passive:true});
 function renderCronometro(){
   const L=garantirTotais(S.pomoLog),T=L.tot;
-  const mats=[...new Set((S.perfil.materias||[]).map(m=>m.nome).concat(S.edital?S.edital.materias.map(m=>m.nome):[]))];
+  const mats=[...new Set((S.perfil.materias||[]).map(m=>m.nome).concat(S.edital?S.edital.materias.map(m=>m.nome):[]).concat(C.materia?[C.materia]:[]))];
   const hoje=minutosDia(dataISO());let sem=0;for(let i=0;i<7;i++)sem+=minutosDia(diasAtras(i));
   const crono=L.hist.filter(h=>h.fonte==="cronometro").slice(0,8);
   $("#main").innerHTML=`<div class="page">
@@ -2210,11 +2254,14 @@ function renderCronometro(){
         <span class="eyebrow" id="crono-st"></span>
         <div class="mono" id="crono-t" style="font-size:clamp(3rem,13vw,5.4rem);font-weight:500;letter-spacing:-.03em;line-height:1">00:00:00</div>
         <div class="field" style="width:min(320px,100%)"><label for="crono-mat">Estudando agora</label><select id="crono-mat"><option value="">Sem matéria</option>${mats.map(m=>`<option ${m===C.materia?"selected":""}>${esc(m)}</option>`).join("")}</select></div>
+        <div class="crono-meta"><div class="field"><label for="crono-meta">Meta de tempo (opcional)</label><select id="crono-meta"><option value="0">Livre, sem meta</option>${[15,25,30,45,60,90,120].map(m=>`<option value="${m}" ${m===C.meta?"selected":""}>${m} min · toca alarme</option>`).join("")}</select></div></div>
+        <div class="crono-resta" id="crono-resta" aria-live="polite"></div>
         <div class="row" style="justify-content:center">
           <button class="btn primary" type="button" id="crono-play" style="min-width:160px;padding:11px 18px"></button>
           <button class="btn" type="button" id="crono-fim">Finalizar e salvar</button>
         </div>
         <button class="btn ghost sm danger" type="button" id="crono-zerar">Descartar este tempo</button>
+        ${modoTeste()?`<button class="btn ghost sm" type="button" id="crono-teste-bloq" title="Só aparece no site de testes">Testar bloqueio do servidor</button>`:""}
         <p class="hint" style="text-align:center;max-width:44ch">O cronômetro continua contando se você mudar de tela ou fechar o site neste aparelho. O tempo só entra na sua conta quando você toca em “Finalizar e salvar”.</p>
       </div>
       <div class="stack">
@@ -2234,7 +2281,53 @@ function renderCronometro(){
   $("#crono-fim").onclick=()=>{if(C.rodando)pausarCrono();finalizarCrono()};
   let conf=false;$("#crono-zerar").onclick=e=>{if(!conf){conf=true;e.target.textContent="Toque de novo para descartar";return}zerarCrono();renderCronometro()};
   $("#crono-mat").onchange=e=>{C.materia=e.target.value;C.bloco=null;C.blocoMin=0;salvarCronoLocal();tickCrono()};
+  $("#crono-meta").onchange=e=>{C.meta=+e.target.value||0;C.metaAvisada=C.meta?cronoMs()>=C.meta*60e3:false;salvarCronoLocal();tickCrono();if(C.meta)toast(`Meta de ${C.meta} min: o alarme toca quando o tempo chegar.`);somPreparar()};
+  const tb=$("#crono-teste-bloq");if(tb)tb.onclick=()=>{const Srv=window.FirebaseServiceMock;if(!Srv)return;somPreparar();if(!C.rodando)iniciarCrono();Srv.simularBloqueio();verificarRegrasCrono()};
   tickCrono();
+}
+
+/* ================= Idiomas (Inglês · Cambridge) ================= */
+// a aba fica em js/componentes/IdiomasView.js; este objeto dá a ela o que precisa do app
+const appIdiomas={
+  uid:()=>S.uid||"visitante",esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),go:v=>go(v),naTela:()=>S.view==="idiomas",
+  diasSemana:()=>DIAS.map((d,i)=>({k:d.k,n:d.n,hoje:i===hojeIdx()})),
+  adicionarBlocoNaSemana(o){ // {dia,inicio,min,materia,tarefa,tipo}
+    if(!S.plano)return {ok:false,msg:"Monte sua semana primeiro (aba Minha semana) para adicionar aulas a ela."};
+    const novo={semana:{}};DIAS.forEach(d=>novo.semana[d.k]=[]);
+    novo.semana[o.dia]=[{materia:o.materia,tipo:o.tipo||"exercícios",tarefa:o.tarefa,inicio:o.inicio,fim:toHHMM(toMin(o.inicio)+o.min),min:o.min}];
+    const r=incluirNaSemana(S.plano,novo);r.plano.resumo=S.plano.resumo;S.plano=r.plano;gravar("plano",S.plano);
+    const dia=DIAS.find(d=>d.k===o.dia).n,b=(S.plano.semana[o.dia]||[]).find(x=>x.tarefa===o.tarefa);
+    return r.add?{ok:true,msg:`“${o.tarefa}” adicionado na ${dia}${b?" às "+b.inicio:""}.`}:r.fora?{ok:false,msg:`Não coube na ${dia}: o dia já está cheio.`}:{ok:true,msg:"Esse módulo já estava na sua semana nesse dia."};
+  },
+  estudarComCronometro(materia){
+    if(P.rodando){toast("Existe um pomodoro rodando. Pause-o antes de usar o cronômetro.");return}
+    if(C.rodando&&C.materia===materia){toast("O cronômetro já está contando Inglês.");return}
+    if(C.rodando)pausarCrono();if(cronoMs()>0&&C.materia!==materia){toast("Finalize ou descarte o tempo atual do cronômetro antes de trocar de matéria.");go("cronometro");return}
+    C.materia=materia;C.bloco=null;C.blocoMin=0;salvarCronoLocal();somPreparar();iniciarCrono();
+    toast("Cronômetro contando Inglês. Cada minuto vale 1 XP de idiomas ao finalizar.");
+  }};
+window.LA_APP=appIdiomas;
+function renderIdiomas(){
+  const V=window.LAComp&&LAComp.IdiomasView;
+  if(!V||!window.FirebaseServiceMock||!window.LA_INGLES){$("#main").innerHTML=`<div class="page">${pageHead("Idiomas")}<div class="card"><p>Não foi possível carregar a aba de idiomas. Atualize a página.</p></div></div>`;return}
+  V.render($("#main"),appIdiomas);
+}
+/* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
+const APP_VERSAO="2.0";
+window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Nova aba Idiomas: Inglês no estilo Cambridge",d:"Aulas de Reading & Use of English, Writing, Listening e Speaking, do A1 ao C2."},
+  {t:"Teste de nivelamento",d:"18 questões rápidas para descobrir seu nível e ajustar as aulas."},
+  {t:"Aulas de idioma na sua semana",d:"Toque em “Adicionar à semana” para colocar, por exemplo, “Listening - B2” no seu cronograma."},
+  {t:"XP de idiomas",d:"Ganhe XP pelos acertos nas aulas e por cada minuto de Inglês no cronômetro ou pomodoro."},
+  {t:"Cronômetro com meta e alarme",d:"Escolha uma meta (15 a 120 min) e o alarme toca quando o tempo chegar."},
+  {t:"Mini-janela do relógio",d:"Ao sair da tela do pomodoro ou cronômetro, ou rolar a página, o tempo continua visível num cantinho. Feche no X."},
+  {t:"Aviso de bloqueio",d:"Se o tempo não puder mais ser contado (limite de 16 h por dia, por exemplo), o cronômetro pausa e avisa com som."}]};
+function mostrarNovidades(){
+  const PN=window.LAComp&&LAComp.PatchNotesModal;if(!PN||!$("#shell"))return;
+  // conta nova (ainda não viu o convite do tutorial): não precisa de "o que mudou"
+  if(!tutDados().perguntado){PN.mostrarSeNecessario({...window.LA_PATCH_NOTES,silencioso:true});return}
+  if(document.querySelector(".modal-bg")||TUT.ativo){setTimeout(mostrarNovidades,4000);return}
+  PN.mostrarSeNecessario(window.LA_PATCH_NOTES);
 }
 
 /* ================= Ranking: publicação e "estudando agora" ================= */
@@ -3898,7 +3991,7 @@ function renderTutorial(){
 
 /* ================= Shell com barra lateral ================= */
 const NAV=[
-  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"]]],
+  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"]]],
   ["Prova",[["edital","Escanear edital","scan"],["topicos","Tópicos da prova","list"],["flashcards","Flashcards","cartas"]]],
   ["Comunidade",[["grupos","Meus grupos","users"],...(STANDALONE?[["buscarGrupos","Buscar grupos","search"]]:[]),["voz","Voz global","mic"],["chat","Chat global","chat"],...(STANDALONE?[["mensagens","Mensagens","send"],["amigos","Amigos","user"]]:[]),["ranking","Ranking","trophy"]]],
   ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"]]],
@@ -3934,6 +4027,7 @@ function renderShell(){
   $("#menu-btn").onclick=abrirMenu;$("#tab-mais").onclick=abrirMenu;
   $("#ovl").onclick=fecharMenu;ligarLateral();
   renderSideUser();renderView();tickPomo();atualizarBadgeDesafios();vozUI();
+  clearTimeout(S.novidadesT);S.novidadesT=setTimeout(mostrarNovidades,1500);
 }
 // ---- barra lateral: recolher no computador, gaveta no celular, seções que abrem e fecham ----
 function lateral(){let l=null;try{l=JSON.parse(localStorage.getItem("la_lateral")||"null")}catch(e){}l=l||{};return {rec:!!l.rec,fech:Array.isArray(l.fech)?l.fech:[]}}
@@ -3969,10 +4063,10 @@ function renderSideUser(){
   el.innerHTML=`${S.mode==="nuvem"?avatar(S.uid):`<span class="avatar" aria-hidden="true">${esc(nm[0]||"V").toUpperCase()}</span>`}<div style="min-width:0"><div class="nm">${esc(nm)}</div><div class="sub" title="${esc(contaEmail())}">${S.mode==="nuvem"?(esc(contaEmail())||"Salvo na nuvem"):"Visitante · nada é salvo"}</div></div>`;
 }
 function progEdital(){if(!S.edital)return 0;const all=S.edital.materias.flatMap(m=>m.topicos);return all.length?Math.round(all.filter(t=>t.feito).length/all.length*100):0}
-function go(v){pararTela();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
+function go(v){pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
 function renderView(){
   $$("[data-go]").forEach(a=>{a.classList.toggle("on",a.dataset.go===S.view);if(a.dataset.go===S.view){const g=a.closest(".nav-grp.fech");if(g){g.classList.remove("fech");g.querySelectorAll("a").forEach(x=>x.removeAttribute("tabindex"));const b=g.previousElementSibling;if(b)b.setAttribute("aria-expanded","true")}}if(a.dataset.go==="topicos"){a.hidden=!S.edital;const b=a.querySelector(".badge");if(S.edital){if(b)b.textContent=progEdital()+"%";else a.insertAdjacentHTML("beforeend",`<span class="badge">${progEdital()}%</span>`)}}});
-  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
+  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,idiomas:renderIdiomas,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
   f();
 }
 const pageHead=(t,sub,acoes)=>`<div class="page-h"><div><h1>${t}</h1>${sub?`<p>${sub}</p>`:""}</div>${acoes?`<div class="row">${acoes}</div>`:""}</div>`;

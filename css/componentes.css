@@ -1,0 +1,98 @@
+/* Componentes da v2.0: novidades (patch notes), mini-janela do timer, nivelamento Cambridge e aba Idiomas.
+   Usa as mesmas variáveis de cor do app, então segue o tema claro/escuro e as cores escolhidas em Aparência. */
+
+/* ---------- Patch notes ---------- */
+.patch{width:min(520px,100%);max-height:min(88vh,720px);overflow:hidden;display:flex;flex-direction:column}
+.patch>*{flex:none}
+.patch .patch-lista{flex:1 1 auto;min-height:0;overflow:auto;padding-right:2px}
+.patch h2{margin:0;font-size:1.3rem}
+.patch-topo{display:flex;align-items:center;gap:10px}
+.patch-ver{font-family:var(--f-mono);font-size:.78rem;font-weight:600;background:var(--accent);color:var(--accent-fg);border-radius:999px;padding:3px 10px}
+.patch-lista{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.patch-lista li{flex:none;display:flex;flex-direction:column;gap:2px;padding:8px 12px 8px 34px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--sunken);position:relative}
+.patch-lista li::before{content:"✦";position:absolute;left:12px;top:10px;color:var(--accent)}
+.patch-lista b{font-size:.92rem}
+.patch-lista span{font-size:.82rem;color:var(--muted);line-height:1.4}
+
+/* ---------- Mini-janela flutuante do timer ---------- */
+.ftimer{position:fixed;right:18px;bottom:18px;z-index:80;display:flex;align-items:center;gap:4px;padding:6px 6px 6px 4px;border-radius:999px;
+  background:var(--accent);color:var(--accent-fg);box-shadow:0 10px 30px rgba(0,0,0,.25);animation:ft-in .22s ease-out;max-width:calc(100vw - 24px)}
+.ftimer[hidden]{display:none}
+@keyframes ft-in{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:none}}
+.ftimer button{border:0;background:transparent;color:inherit;font:inherit;cursor:pointer}
+.ftimer-corpo{display:flex;align-items:center;gap:8px;padding:4px 8px;border-radius:999px;min-width:0;text-align:left}
+.ftimer-ponto{width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:ft-pulso 1.6s infinite;flex:none}
+.ftimer.pausado .ftimer-ponto{background:#f59e0b;animation:none}
+@keyframes ft-pulso{70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+.ftimer-txt{display:flex;flex-direction:column;line-height:1.1;min-width:0}
+.ftimer-t{font-family:var(--f-mono);font-size:1.02rem;font-variant-numeric:tabular-nums}
+.ftimer-r{font-size:.7rem;opacity:.8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:150px}
+.ftimer-b,.ftimer-x{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;flex:none}
+.ftimer-b:hover,.ftimer-x:hover,.ftimer-corpo:hover{background:color-mix(in srgb,currentColor 14%,transparent)}
+.ftimer-x{font-size:.85rem;opacity:.85}
+.ftimer button:focus-visible{outline:2px solid currentColor;outline-offset:1px}
+@media (max-width:860px){.ftimer{right:10px;bottom:calc(76px + env(safe-area-inset-bottom,0px))}}
+@media (prefers-reduced-motion:reduce){.ftimer,.ftimer-ponto{animation:none}}
+
+/* ---------- Cronômetro: meta de tempo e bloqueio ---------- */
+.crono-meta{display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap;justify-content:center}
+.crono-meta .field{width:min(200px,100%)}
+.crono-resta{font-size:.86rem;color:var(--muted);text-align:center;min-height:1.2em}
+.crono-resta b{color:var(--fg);font-family:var(--f-mono)}
+.bloqueio-ic{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--danger,#dc2626) 14%,transparent);color:var(--danger,#dc2626);font-size:1.5rem}
+
+/* ---------- Teste de nivelamento ---------- */
+.cbt-q{font-size:1.12rem;line-height:1.5;margin:6px 0}
+.cbt-gap{display:inline-block;min-width:60px;border-bottom:2px solid var(--accent);color:transparent}
+.cbt-ops{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.cbt-op{flex-direction:row;align-items:center;gap:10px;font-size:.96rem}
+.cbt-op b{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--sunken);flex:none;font-size:.8rem}
+.cbt-op.on b{background:var(--accent);color:var(--accent-fg)}
+.cbt-nivel{font-size:3.6rem;font-weight:700;line-height:1;width:120px;height:120px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:var(--accent-fg);margin:8px 0}
+.cbt-barras{display:flex;gap:10px;align-items:flex-end;height:110px;padding:8px 0}
+.cbt-barras div{width:34px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px}
+.cbt-barras span{display:block;width:100%;min-height:3px;background:var(--accent);border-radius:6px 6px 2px 2px;opacity:.85}
+.cbt-barras small{font-size:.72rem;color:var(--muted)}
+@media (max-width:560px){.cbt-ops{grid-template-columns:1fr}}
+
+/* ---------- Aba Idiomas ---------- */
+.idm-linguas{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.idm-linguas .pill{font-size:.84rem;padding:6px 12px;cursor:pointer;background:var(--surface)}
+.idm-linguas .pill.solid{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.idm-linguas .pill[disabled]{cursor:not-allowed;opacity:.6}
+.idm-resumo{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:14px}
+.idm-aviso{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.idm-aviso span{display:flex;align-items:center;gap:8px}
+.idm-niveis{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.idm-niveis .small{margin-right:4px}
+.idm-grade{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.idm-card{display:flex;flex-direction:column;gap:6px}
+.idm-card p{margin:0}
+.idm-card .row{margin-top:auto;padding-top:6px}
+.idm-aula-topo{gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.idm-texto{background:var(--sunken);border:1px solid var(--line);border-radius:var(--r-sm);padding:14px 16px;line-height:1.65;font-size:.98rem}
+.idm-q{border:1px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;margin:0;display:flex;flex-direction:column;gap:6px;transition:border-color .15s,background .15s}
+.idm-q legend{padding:0 4px;font-weight:500;line-height:1.5}
+.idm-q.ok{border-color:var(--ok,#16a34a);background:color-mix(in srgb,var(--ok,#16a34a) 7%,transparent)}
+.idm-q.no{border-color:var(--danger,#dc2626);background:color-mix(in srgb,var(--danger,#dc2626) 6%,transparent)}
+.idm-op{display:flex;gap:10px;align-items:flex-start;padding:6px 8px;border-radius:var(--r-sm);cursor:pointer}
+.idm-op:hover{background:var(--hover,var(--sunken))}
+.idm-op input{margin-top:3px;accent-color:var(--accent)}
+.idm-fb{font-weight:500}
+.idm-q.ok .idm-fb{color:var(--ok,#16a34a)}.idm-q.no .idm-fb{color:var(--danger,#dc2626)}
+.idm-q input.idm-gap{display:inline-block;width:130px;max-width:100%;min-height:0;height:auto;border:0;border-bottom:2px solid var(--line-2);border-radius:0;box-shadow:none;background:transparent;color:var(--fg);font:inherit;padding:2px 4px;margin:0 4px}
+.idm-q input.idm-gap:focus{outline:none;border-color:var(--accent)}
+.idm-q input.idm-gap.ok{border-color:var(--ok,#16a34a)}.idm-q input.idm-gap.no{border-color:var(--danger,#dc2626)}
+.idm-player{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px;border-radius:var(--r-sm);background:var(--sunken)}
+.idm-player audio{width:100%}
+.idm-trans summary{cursor:pointer;font-weight:500;color:var(--muted)}
+.idm-trans p{line-height:1.6;font-size:.92rem}
+.idm-acoes{margin-top:14px;gap:12px}
+.idm-editor{width:100%;min-height:220px;resize:vertical;font:inherit;font-size:1rem;line-height:1.6;padding:14px;border:1px solid var(--line-2);border-radius:var(--r-sm);background:var(--surface);color:var(--fg)}
+.idm-editor:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--ring)}
+[data-contador].txt-on{color:var(--ok,#16a34a);font-weight:500}
+.idm-rec{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.idm-rec .mono{font-size:1.1rem}
+.idm-previa{border:1px dashed var(--line-2);border-radius:var(--r-sm);padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.idm-previa ul{margin:0;padding-left:18px}
+@media (max-width:700px){.idm-grade{grid-template-columns:1fr}.idm-resumo{grid-template-columns:1fr 1fr}.idm-resumo .stat:last-child{grid-column:1/-1}}
