@@ -1,8 +1,14 @@
 # Publica só as regras do Firestore (sem mexer no site oficial). Rodar à mão em Actions > "Publicar só as regras".
+# Última publicação pedida: XP de idiomas no perfil (resgate tipo "l").
 name: Publicar só as regras
 
 on:
   workflow_dispatch:
+  # também roda quando ESTE arquivo muda na main (o GitHub não lista o botão manual porque o ramo padrão é producao).
+  # Só publica as regras; o site oficial continua saindo apenas pelo ramo producao.
+  push:
+    branches: [main]
+    paths: ['.github/workflows/regras.yml']
 
 concurrency:
   group: firebase-producao
