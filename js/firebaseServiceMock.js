@@ -116,11 +116,17 @@
     async getLanguageProfile(uid) {
       await rede();
       const d = lerBase(uid);
-      return { xp: d.xpIdiomas || 0, historico: (d.historicoXP || []).slice(0, 20), concluidos: d.concluidos || {}, agendados: d.agendados || [] };
+      return { xp: d.xpIdiomas || 0, historico: (d.historicoXP || []).slice(0, 20), concluidos: d.concluidos || {}, agendados: d.agendados || [], prefs: d.prefs || null };
+    },
+    // FIREBASE REAL: setDoc(doc(...idiomas), { prefs }, { merge: true })
+    async savePrefs(uid, prefs) {
+      await rede();
+      return atualizar(uid, d => { d.prefs = { ...(d.prefs || {}), ...prefs, em: Date.now() }; }).prefs;
     },
     async markModuleDone(uid, chaveModulo, resultado) {
       await rede();
-      atualizar(uid, d => { d.concluidos = d.concluidos || {}; d.concluidos[chaveModulo] = { ...resultado, em: Date.now() }; });
+      atualizar(uid, d => { d.concluidos = d.concluidos || {}; const ant = d.concluidos[chaveModulo];
+        if (!ant || ant.pct == null || resultado.pct == null || resultado.pct >= ant.pct) d.concluidos[chaveModulo] = { ...resultado, em: Date.now() }; });
       return true;
     },
 

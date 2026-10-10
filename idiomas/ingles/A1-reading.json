@@ -1,0 +1,2349 @@
+{
+ "nivel": "A1",
+ "skill": "reading",
+ "exame": "Pre A1–A1 Movers/Flyers",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Hello, I'm Lucas",
+   "objetivo": "Entender uma apresentação pessoal simples: nome, idade, origem e amigos.",
+   "foco": "Verb to be (am/is/are); subject pronouns; numbers 1–20; greetings",
+   "explicacao": [
+    "O verbo to be tem três formas: I am, he/she/it is, we/you/they are.",
+    "No inglês falado e escrito informal usamos contrações: I'm, he's, she's, we're, they're.",
+    "Negativa: isn't (is not) e aren't (are not). Ex.: He isn't Brazilian.",
+    "Para dizer a idade usamos to be: I'm eleven (years old). Nunca 'I have eleven'."
+   ],
+   "vocab": [
+    {
+     "en": "hello",
+     "pt": "olá"
+    },
+    {
+     "en": "name",
+     "pt": "nome"
+    },
+    {
+     "en": "years old",
+     "pt": "anos de idade"
+    },
+    {
+     "en": "best friend",
+     "pt": "melhor amigo(a)"
+    },
+    {
+     "en": "class",
+     "pt": "turma"
+    },
+    {
+     "en": "teacher",
+     "pt": "professor(a)"
+    },
+    {
+     "en": "favourite",
+     "pt": "favorito(a)"
+    },
+    {
+     "en": "nice",
+     "pt": "legal, simpático(a)"
+    }
+   ],
+   "material": {
+    "titulo": "All about me",
+    "texto": "Hello! My name is Lucas and I'm eleven years old. I'm from Brazil. I live in Recife with my mum, my dad and my sister, Bia. She is eight. My best friend is Tom. He isn't Brazilian. He's from London, but now he lives in Recife too. We are in the same class at school. Our teacher is Mrs Lima. She is very nice. My favourite colour is green and my favourite number is seven. Tom's favourite colour is blue. What about you?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How old is Lucas?",
+     "op": [
+      "eight",
+      "eleven",
+      "seven",
+      "twelve"
+     ],
+     "r": 1,
+     "exp": "O texto diz: I'm eleven years old. Oito (eight) é a idade da Bia e sete (seven) é o número favorito do Lucas."
+    },
+    {
+     "t": "gap",
+     "q": "Tom ___ from London.",
+     "resp": [
+      "is"
+     ],
+     "exp": "Com he/she/it (Tom = he) usamos is. No texto: He's from London."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "Hello! My name is Lucas and I'm eleven years old.",
+     "exp": "Em I'm junte as duas palavras: /aim/. Eleven tem a força no meio: i-LÉ-ven."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is TRUE?",
+     "op": [
+      "Tom is Brazilian.",
+      "Bia is Lucas's sister.",
+      "Mrs Lima is Tom's mum.",
+      "Lucas lives in London."
+     ],
+     "r": 1,
+     "exp": "Bia é a irmã do Lucas (my sister, Bia). Tom NÃO é brasileiro, Mrs Lima é a professora e Lucas mora em Recife."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "are",
+      "in",
+      "the",
+      "same",
+      "class"
+     ],
+     "resp": "We are in the same class",
+     "exp": "Ordem básica: sujeito (We) + verbo (are) + complemento (in the same class)."
+    },
+    {
+     "t": "gap",
+     "q": "Tom isn't Brazilian. ___ from London.",
+     "resp": [
+      "He's",
+      "He is"
+     ],
+     "exp": "Tom é menino, então usamos he. He is = He's."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: diga seu nome e sua idade.",
+     "frase": "What's your name and how old are you?",
+     "modelo": "My name is Ana and I'm twelve years old.",
+     "min": 6,
+     "chave": [
+      "name",
+      "I'm",
+      "old",
+      "years"
+     ],
+     "exp": "Use My name is... e I'm ... years old. Lembre: idade usa to be (I'm), não have."
+    },
+    {
+     "t": "mc",
+     "q": "Complete: Tom and I ___ friends.",
+     "op": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "r": 2,
+     "exp": "Tom and I = we (duas pessoas), então usamos are."
+    },
+    {
+     "t": "gap",
+     "q": "Tom's favourite colour isn't green. ___ favourite colour is blue.",
+     "resp": [
+      "His"
+     ],
+     "exp": "Para algo que pertence a um menino usamos his (dele). He é sujeito; his indica posse."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "This is my family",
+   "objetivo": "Ler a descrição de uma família e entender quem é quem e o que cada um tem.",
+   "foco": "have got / has got; possessive 's; possessive adjectives (my, his, her, their, its)",
+   "explicacao": [
+    "Have got indica posse: I've got a brother. Com he/she/it: She has got (she's got) glasses.",
+    "Negativa: haven't got / hasn't got. Pergunta: Have you got a dog?",
+    "O 's mostra posse: my brother's name = o nome do meu irmão; Mum's sister = a irmã da mamãe.",
+    "Possessivos: my, your, his (dele), her (dela), its (de animal/coisa), our, their (deles)."
+   ],
+   "vocab": [
+    {
+     "en": "brother",
+     "pt": "irmão"
+    },
+    {
+     "en": "sister",
+     "pt": "irmã"
+    },
+    {
+     "en": "twins",
+     "pt": "gêmeos/gêmeas"
+    },
+    {
+     "en": "grandparents",
+     "pt": "avós"
+    },
+    {
+     "en": "beard",
+     "pt": "barba"
+    },
+    {
+     "en": "glasses",
+     "pt": "óculos"
+    },
+    {
+     "en": "aunt",
+     "pt": "tia"
+    },
+    {
+     "en": "cousin",
+     "pt": "primo(a)"
+    }
+   ],
+   "material": {
+    "titulo": "A family photo",
+    "texto": "This is a photo of my family. I'm Sofia and I've got one brother and two sisters. My brother's name is Pedro. He's fourteen and he's got short black hair. My sisters are twins. Their names are Clara and Julia. They're six. My grandparents live with us. My grandfather has got a big grey beard and my grandmother has got glasses. We've also got a dog. Its name is Max. He's brown and white. My mum's sister, Aunt Rita, has got three children. They're my cousins!"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How many sisters has Sofia got?",
+     "op": [
+      "one",
+      "two",
+      "three",
+      "four"
+     ],
+     "r": 1,
+     "exp": "Sofia tem duas irmãs, as gêmeas Clara e Julia. Três (three) é o número de filhos da tia Rita."
+    },
+    {
+     "t": "gap",
+     "q": "Pedro ___ got short black hair.",
+     "resp": [
+      "has"
+     ],
+     "exp": "Pedro = he, então usamos has got (he's got)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "My grandfather has got a big grey beard and my grandmother has got glasses.",
+     "exp": "Grandfather: GRAND-fa-ther. O 'th' é com a língua entre os dentes."
+    },
+    {
+     "t": "mc",
+     "q": "Who has got glasses?",
+     "op": [
+      "Sofia's grandfather",
+      "Sofia's grandmother",
+      "Aunt Rita",
+      "Pedro"
+     ],
+     "r": 1,
+     "exp": "My grandmother has got glasses. O avô tem barba (beard)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Their",
+      "names",
+      "are",
+      "Clara",
+      "and",
+      "Julia"
+     ],
+     "resp": "Their names are Clara and Julia",
+     "exp": "Their = delas. Their names are... = Os nomes delas são...",
+     "alt": [
+      "Their names are Julia and Clara"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Aunt Rita is Sofia's ___ sister.",
+     "resp": [
+      "mum's",
+      "mother's",
+      "mom's",
+      "mums"
+     ],
+     "exp": "O texto diz My mum's sister, Aunt Rita. Usamos 's para posse: a irmã da mãe."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você tem irmãos ou irmãs? Diga os nomes.",
+     "frase": "Have you got any brothers or sisters?",
+     "modelo": "Yes, I have. I've got one brother. His name is João.",
+     "min": 4,
+     "chave": [
+      "brother",
+      "brothers",
+      "sister",
+      "sisters",
+      "got"
+     ],
+     "exp": "Use I've got... ou I haven't got any brothers or sisters. Para menino use his name; para menina, her name."
+    },
+    {
+     "t": "mc",
+     "q": "Max is ___.",
+     "op": [
+      "Sofia's cousin",
+      "the family's dog",
+      "Pedro's brother",
+      "Aunt Rita's son"
+     ],
+     "r": 1,
+     "exp": "We've also got a dog. Its name is Max. Its é o possessivo para animais e coisas."
+    },
+    {
+     "t": "gap",
+     "q": "Aunt Rita's children are Sofia's ___.",
+     "resp": [
+      "cousins"
+     ],
+     "exp": "Os filhos da tia são os primos: They're my cousins!"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "In my classroom",
+   "objetivo": "Entender a descrição de uma sala de aula: objetos, cores e quantidades.",
+   "foco": "a/an; regular plurals; this/that/these/those; colours; school objects",
+   "explicacao": [
+    "Usamos a antes de som de consoante (a desk) e an antes de som de vogal (an eraser, an orange bag).",
+    "Plural regular: + s (pen → pens, ruler → rulers). Alguns mudam: box → boxes, child → children.",
+    "This (este) e these (estes) para coisas perto; that (aquele) e those (aqueles) para coisas longe.",
+    "Cores vêm antes do substantivo: a blue pencil case (um estojo azul)."
+   ],
+   "vocab": [
+    {
+     "en": "desk",
+     "pt": "carteira, mesa"
+    },
+    {
+     "en": "whiteboard",
+     "pt": "quadro branco"
+    },
+    {
+     "en": "pencil case",
+     "pt": "estojo"
+    },
+    {
+     "en": "eraser",
+     "pt": "borracha"
+    },
+    {
+     "en": "ruler",
+     "pt": "régua"
+    },
+    {
+     "en": "crayons",
+     "pt": "gizes de cera"
+    },
+    {
+     "en": "paints",
+     "pt": "tintas"
+    },
+    {
+     "en": "behind",
+     "pt": "atrás de"
+    }
+   ],
+   "material": {
+    "titulo": "Mia's classroom",
+    "texto": "Hi, I'm Mia. Look at my classroom! There are twenty-five desks and a big whiteboard. This is my desk. It's next to the window. On my desk there's a blue pencil case, an eraser and two rulers. These are my books. They're red and yellow. That's my teacher's desk. It's brown and very old. Those boxes under it have got crayons and paints in them. I love art! My friend Ben sits behind me. He's got an orange bag and three pens."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What colour is Mia's pencil case?",
+     "op": [
+      "red",
+      "blue",
+      "brown",
+      "orange"
+     ],
+     "r": 1,
+     "exp": "There's a blue pencil case. Vermelho e amarelo são os livros, marrom é a mesa da professora e laranja é a mochila do Ben."
+    },
+    {
+     "t": "gap",
+     "q": "There's a blue pencil case and ___ eraser on Mia's desk.",
+     "resp": [
+      "an"
+     ],
+     "exp": "Eraser começa com som de vogal, então usamos an."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "These are my books. They're red and yellow.",
+     "exp": "These tem 'th' com a língua entre os dentes e o 'ee' longo: /ðiːz/."
+    },
+    {
+     "t": "mc",
+     "q": "Where is Mia's desk?",
+     "op": [
+      "next to the window",
+      "behind Ben",
+      "under the whiteboard",
+      "next to the teacher's desk"
+     ],
+     "r": 0,
+     "exp": "This is my desk. It's next to the window. Quem senta atrás é o Ben (behind me)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Those",
+      "boxes",
+      "have",
+      "got",
+      "crayons",
+      "in",
+      "them"
+     ],
+     "resp": "Those boxes have got crayons in them",
+     "exp": "Those boxes (plural) combina com have got, não has got."
+    },
+    {
+     "t": "gap",
+     "q": "Mia has got two ___ on her desk.",
+     "resp": [
+      "rulers"
+     ],
+     "exp": "Two pede plural: ruler → rulers."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que tem na sua mochila?",
+     "frase": "What's in your school bag?",
+     "modelo": "In my school bag there's a pencil case, two books and an apple.",
+     "min": 5,
+     "chave": [
+      "book",
+      "books",
+      "pen",
+      "pens",
+      "pencil",
+      "ruler",
+      "eraser",
+      "case"
+     ],
+     "exp": "Use there's a/an... e there are two... Ex.: There's an eraser and there are three pens."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "This are my pens.",
+      "These is my pen.",
+      "These are my pens.",
+      "That are my pens."
+     ],
+     "r": 2,
+     "exp": "These (plural) + are + pens (plural). This/that combinam com is e singular."
+    },
+    {
+     "t": "gap",
+     "q": "Ben's bag isn't blue. ___ orange.",
+     "resp": [
+      "It's",
+      "It is"
+     ],
+     "exp": "Para coisas usamos it: It's orange (A mochila é laranja)."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Where's Snowy?",
+   "objetivo": "Entender a descrição de uma casa e encontrar coisas usando preposições de lugar.",
+   "foco": "there is / there are; prepositions of place (in, on, under, next to, between); rooms and furniture",
+   "explicacao": [
+    "There is (there's) = há/tem, para uma coisa. There are = há/tem, para várias.",
+    "Negativa: there isn't / there aren't. Pergunta: Is there a garden? Are there any posters?",
+    "Preposições: in (dentro), on (em cima), under (embaixo), next to (ao lado), between (entre duas coisas).",
+    "Downstairs = no andar de baixo; upstairs = no andar de cima."
+   ],
+   "vocab": [
+    {
+     "en": "downstairs",
+     "pt": "no andar de baixo"
+    },
+    {
+     "en": "upstairs",
+     "pt": "no andar de cima"
+    },
+    {
+     "en": "kitchen",
+     "pt": "cozinha"
+    },
+    {
+     "en": "living room",
+     "pt": "sala de estar"
+    },
+    {
+     "en": "bedroom",
+     "pt": "quarto"
+    },
+    {
+     "en": "cupboard",
+     "pt": "armário"
+    },
+    {
+     "en": "between",
+     "pt": "entre"
+    },
+    {
+     "en": "asleep",
+     "pt": "dormindo"
+    },
+    {
+     "en": "jumper",
+     "pt": "blusa de lã"
+    }
+   ],
+   "material": {
+    "titulo": "Where's my cat?",
+    "texto": "Our house has got two floors. Downstairs there's a kitchen, a living room and a small bathroom. Upstairs there are three bedrooms. My bedroom is next to my parents' bedroom. In my room there's a bed, a desk and a big cupboard. There are posters on the wall. Today I can't find my cat, Snowy! She isn't on my bed and she isn't under the table in the kitchen. Wait... there's something white in the cupboard, between my jumpers. It's Snowy! She's asleep."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How many bedrooms are there?",
+     "op": [
+      "two",
+      "three",
+      "four",
+      "one"
+     ],
+     "r": 1,
+     "exp": "Upstairs there are three bedrooms. Dois (two) é o número de andares (floors)."
+    },
+    {
+     "t": "gap",
+     "q": "There ___ posters on the wall.",
+     "resp": [
+      "are"
+     ],
+     "exp": "Posters está no plural, então usamos there are."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "Downstairs there's a kitchen, a living room and a small bathroom.",
+     "exp": "Kitchen: KIT-chen. Bathroom: o 'th' é com a língua entre os dentes."
+    },
+    {
+     "t": "mc",
+     "q": "Where is Snowy at the end?",
+     "op": [
+      "on the bed",
+      "under the table",
+      "in the cupboard",
+      "in the kitchen"
+     ],
+     "r": 2,
+     "exp": "Ela está no armário, entre as blusas. Na cama e embaixo da mesa ela NÃO está."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "My",
+      "bedroom",
+      "is",
+      "next",
+      "to",
+      "my",
+      "parents'",
+      "bedroom"
+     ],
+     "resp": "My bedroom is next to my parents' bedroom",
+     "exp": "Next to = ao lado de. Parents' (com apóstrofo depois do s) = dos pais."
+    },
+    {
+     "t": "gap",
+     "q": "Snowy is in the cupboard, ___ the jumpers.",
+     "resp": [
+      "between"
+     ],
+     "exp": "Between = entre (no meio de duas ou mais coisas)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que tem no seu quarto?",
+     "frase": "What's in your bedroom?",
+     "modelo": "In my bedroom there's a bed, a desk and a wardrobe. There are books on the shelf.",
+     "min": 6,
+     "chave": [
+      "there's",
+      "there",
+      "bed",
+      "desk"
+     ],
+     "exp": "Use there's para uma coisa e there are para várias. Tente usar uma preposição: on the wall, next to the bed."
+    },
+    {
+     "t": "mc",
+     "q": "Which is NOT downstairs?",
+     "op": [
+      "the kitchen",
+      "the bathroom",
+      "the bedrooms",
+      "the living room"
+     ],
+     "r": 2,
+     "exp": "Os quartos ficam upstairs (em cima). Cozinha, sala e banheiro ficam downstairs."
+    },
+    {
+     "t": "gap",
+     "q": "'Is Snowy under the table?' 'No, she ___.'",
+     "resp": [
+      "isn't",
+      "is not"
+     ],
+     "exp": "Resposta curta negativa: No, she isn't. O texto diz: she isn't under the table."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Leo's school day",
+   "objetivo": "Entender a rotina de uma pessoa: horários, dias e atividades.",
+   "foco": "Present simple (he/she + -s, doesn't, does...?); daily routines; telling the time",
+   "explicacao": [
+    "Present simple é para rotina: I get up at seven. Com he/she/it acrescentamos -s: he gets up.",
+    "Verbos terminados em -ch, -sh, -o ganham -es: watches, goes, does. Have vira has.",
+    "Negativa com he/she: doesn't + verbo sem -s: He doesn't have lunch at school.",
+    "Horas: at eight o'clock (8:00), at half past six (6:30). Dias: on Tuesdays, on Saturdays."
+   ],
+   "vocab": [
+    {
+     "en": "get up",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "have breakfast",
+     "pt": "tomar café da manhã"
+    },
+    {
+     "en": "walk to school",
+     "pt": "ir a pé para a escola"
+    },
+    {
+     "en": "homework",
+     "pt": "lição de casa"
+    },
+    {
+     "en": "lesson",
+     "pt": "aula"
+    },
+    {
+     "en": "half past",
+     "pt": "e meia"
+    },
+    {
+     "en": "go to bed",
+     "pt": "ir dormir"
+    },
+    {
+     "en": "early",
+     "pt": "cedo"
+    }
+   ],
+   "material": {
+    "titulo": "A day in Leo's life",
+    "texto": "Leo is twelve. On school days he gets up at half past six. He has breakfast with his dad, and then he walks to school. School starts at eight o'clock. Leo doesn't have lunch at school; he goes home at one o'clock. In the afternoon he does his homework and plays football with his friends. On Tuesdays and Thursdays he has guitar lessons. He watches TV after dinner and goes to bed at half past nine. On Saturdays he doesn't get up early!"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What time does Leo get up on school days?",
+     "op": [
+      "6:00",
+      "6:30",
+      "8:00",
+      "9:30"
+     ],
+     "r": 1,
+     "exp": "Half past six = 6:30. Às 8:00 começa a escola e às 9:30 ele vai dormir."
+    },
+    {
+     "t": "gap",
+     "q": "Leo ___ to school. He doesn't go by bus.",
+     "resp": [
+      "walks"
+     ],
+     "exp": "He walks to school. Com he, o verbo ganha -s."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "On school days he gets up at half past six.",
+     "exp": "Pronuncie o -s de gets bem claro. Half: o 'l' não é pronunciado (/hɑːf/)."
+    },
+    {
+     "t": "mc",
+     "q": "Where does Leo have lunch?",
+     "op": [
+      "at school",
+      "at home",
+      "at a café",
+      "at his friend's house"
+     ],
+     "r": 1,
+     "exp": "Ele NÃO almoça na escola: he goes home at one o'clock, então almoça em casa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "He",
+      "has",
+      "guitar",
+      "lessons",
+      "on",
+      "Tuesdays",
+      "and",
+      "Thursdays"
+     ],
+     "resp": "He has guitar lessons on Tuesdays and Thursdays",
+     "exp": "Sujeito + verbo + complemento + quando.",
+     "alt": [
+      "On Tuesdays and Thursdays he has guitar lessons",
+      "He has guitar lessons on Thursdays and Tuesdays"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Leo ___ get up early on Saturdays.",
+     "resp": [
+      "doesn't",
+      "does not"
+     ],
+     "exp": "Negativa com he: doesn't + verbo sem -s (get)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você faz depois da escola?",
+     "frase": "What do you do after school?",
+     "modelo": "After school I have lunch, do my homework and play video games.",
+     "min": 5,
+     "chave": [
+      "play",
+      "do",
+      "watch",
+      "have",
+      "go",
+      "read",
+      "study"
+     ],
+     "exp": "Use o present simple: I have lunch, I play..., I watch... Com I o verbo não leva -s."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "Leo watch TV after dinner.",
+      "Leo watches TV after dinner.",
+      "Leo watchs TV after dinner.",
+      "Leo is watch TV after dinner."
+     ],
+     "r": 1,
+     "exp": "Watch termina em -ch, então com he vira watches."
+    },
+    {
+     "t": "gap",
+     "q": "When ___ Leo have guitar lessons? On Tuesdays and Thursdays.",
+     "resp": [
+      "does"
+     ],
+     "exp": "Pergunta com he/she no present simple: When does + sujeito + verbo sem -s?"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Food we love",
+   "objetivo": "Entender o que uma pessoa come e do que gosta ou não gosta.",
+   "foco": "like/love/don't like; some/any; countable and uncountable nouns; food",
+   "explicacao": [
+    "Para gostos: I love fruit. I like rice. I don't like coffee. Com he/she: She likes / doesn't like.",
+    "Some em frases afirmativas: I have some bread. Any em negativas e perguntas: There aren't any sweets. Are there any eggs?",
+    "Contáveis têm plural (an egg, two bananas). Incontáveis não têm plural (milk, rice, bread, cheese).",
+    "Para incontáveis usamos medidas: a glass of milk, a piece of cake."
+   ],
+   "vocab": [
+    {
+     "en": "bread",
+     "pt": "pão"
+    },
+    {
+     "en": "cheese",
+     "pt": "queijo"
+    },
+    {
+     "en": "rice",
+     "pt": "arroz"
+    },
+    {
+     "en": "beans",
+     "pt": "feijão"
+    },
+    {
+     "en": "meat",
+     "pt": "carne"
+    },
+    {
+     "en": "grapes",
+     "pt": "uvas"
+    },
+    {
+     "en": "sweets",
+     "pt": "doces, balas"
+    },
+    {
+     "en": "ice cream",
+     "pt": "sorvete"
+    },
+    {
+     "en": "teeth",
+     "pt": "dentes"
+    }
+   ],
+   "material": {
+    "titulo": "Emma's food",
+    "texto": "Hi! I'm Emma. I love food! For breakfast I usually have some bread with cheese and a glass of milk. I don't like coffee. At lunchtime I eat rice, beans and some chicken. My brother Sam doesn't eat meat, so he has eggs or fish. We both love fruit: bananas, mangoes and grapes. Are there any sweets in our house? No, there aren't any, because Mum says they're bad for our teeth. But on Sundays we have some ice cream after lunch. Yum!"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does Emma drink for breakfast?",
+     "op": [
+      "coffee",
+      "milk",
+      "orange juice",
+      "water"
+     ],
+     "r": 1,
+     "exp": "A glass of milk. Ela diz que NÃO gosta de café (I don't like coffee)."
+    },
+    {
+     "t": "gap",
+     "q": "Emma doesn't ___ coffee.",
+     "resp": [
+      "like"
+     ],
+     "exp": "Depois de doesn't o verbo fica sem -s: doesn't like."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "For breakfast I usually have some bread with cheese and a glass of milk.",
+     "exp": "Breakfast: BREK-fast. Cheese tem 'ee' longo: /tʃiːz/."
+    },
+    {
+     "t": "mc",
+     "q": "Why aren't there any sweets in the house?",
+     "op": [
+      "Emma doesn't like them.",
+      "They're bad for their teeth.",
+      "Sam eats them all.",
+      "They're expensive."
+     ],
+     "r": 1,
+     "exp": "Mum says they're bad for our teeth. As outras razões não aparecem no texto."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Are",
+      "there",
+      "any",
+      "bananas",
+      "in",
+      "the",
+      "kitchen"
+     ],
+     "resp": "Are there any bananas in the kitchen",
+     "exp": "Pergunta com there: Are there any + plural?"
+    },
+    {
+     "t": "gap",
+     "q": "On Sundays they have ___ ice cream after lunch.",
+     "resp": [
+      "some"
+     ],
+     "exp": "Frase afirmativa com incontável (ice cream): some."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: que comida você gosta e qual não gosta?",
+     "frase": "What food do you like and what food don't you like?",
+     "modelo": "I like rice, beans and chicken, but I don't like fish.",
+     "min": 6,
+     "chave": [
+      "like",
+      "love",
+      "don't"
+     ],
+     "exp": "Use I like / I love... but I don't like... Ligue as ideias com but (mas)."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "There aren't some sweets.",
+      "There isn't any milk.",
+      "There are any eggs.",
+      "Is there some bananas?"
+     ],
+     "r": 1,
+     "exp": "Negativa usa any: There isn't any milk. Afirmativa usa some; pergunta com plural é Are there any...?"
+    },
+    {
+     "t": "gap",
+     "q": "Sam doesn't eat chicken because it's ___.",
+     "resp": [
+      "meat"
+     ],
+     "exp": "Frango é carne, e o texto diz que Sam doesn't eat meat."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Amazing animals",
+   "objetivo": "Entender um texto informativo sobre animais e o que eles conseguem ou não fazer.",
+   "foco": "can / can't for ability; animals; adjectives; definitions (Movers style)",
+   "explicacao": [
+    "Can = conseguir/saber fazer. É igual para todas as pessoas: I can, it can, they can.",
+    "Negativa: can't (cannot). Pergunta: Can penguins fly? No, they can't.",
+    "Depois de can o verbo vem sem to e sem -s: It can swim (não 'It can swims').",
+    "Adjetivos vêm antes do substantivo e não têm plural: clever animals, beautiful colours."
+   ],
+   "vocab": [
+    {
+     "en": "kangaroo",
+     "pt": "canguru"
+    },
+    {
+     "en": "dolphin",
+     "pt": "golfinho"
+    },
+    {
+     "en": "parrot",
+     "pt": "papagaio"
+    },
+    {
+     "en": "penguin",
+     "pt": "pinguim"
+    },
+    {
+     "en": "clever",
+     "pt": "inteligente"
+    },
+    {
+     "en": "fly",
+     "pt": "voar"
+    },
+    {
+     "en": "heavy",
+     "pt": "pesado"
+    },
+    {
+     "en": "trunk",
+     "pt": "tromba"
+    }
+   ],
+   "material": {
+    "titulo": "What can animals do?",
+    "texto": "Animals can do amazing things. A kangaroo can't walk, but it can jump very far. Dolphins live in the sea. They can swim fast and they are very clever. A parrot is a bird with beautiful colours. Some parrots can say words, like 'hello'! Penguins are birds too, but they can't fly. They can swim very well. Elephants are very big and strong. They can't jump, but they can carry heavy things with their long nose, called a trunk. Which animal do you like best?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What can't a kangaroo do?",
+     "op": [
+      "jump far",
+      "walk",
+      "live on land",
+      "move fast"
+     ],
+     "r": 1,
+     "exp": "A kangaroo can't walk, but it can jump very far."
+    },
+    {
+     "t": "gap",
+     "q": "Penguins are birds, but they ___ fly.",
+     "resp": [
+      "can't",
+      "cannot",
+      "can not"
+     ],
+     "exp": "O texto diz que pinguins não voam: they can't fly."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "Dolphins live in the sea. They can swim fast and they are very clever.",
+     "exp": "Em frases afirmativas, can é fraco: /kən/. Clever: CLE-ver."
+    },
+    {
+     "t": "mc",
+     "q": "Which animal can say words?",
+     "op": [
+      "the dolphin",
+      "the parrot",
+      "the kangaroo",
+      "the penguin"
+     ],
+     "r": 1,
+     "exp": "Some parrots can say words, like 'hello'!"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elephants",
+      "can",
+      "carry",
+      "heavy",
+      "things",
+      "with",
+      "their",
+      "trunk"
+     ],
+     "resp": "Elephants can carry heavy things with their trunk",
+     "exp": "Can + verbo sem to: can carry."
+    },
+    {
+     "t": "gap",
+     "q": "This bird lives where it's cold. It can't fly, but it swims very well. It's a ___.",
+     "resp": [
+      "penguin"
+     ],
+     "exp": "Ave que não voa e nada muito bem: penguin (pinguim). Esse tipo de definição é comum na prova Movers."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que seu animal favorito consegue fazer?",
+     "frase": "What can your favourite animal do?",
+     "modelo": "My favourite animal is the dog. It can run fast and it can swim.",
+     "min": 6,
+     "chave": [
+      "can",
+      "can't"
+     ],
+     "exp": "Use It can... e It can't... Lembre: depois de can o verbo não leva -s."
+    },
+    {
+     "t": "mc",
+     "q": "Which word describes dolphins in the text?",
+     "op": [
+      "heavy",
+      "clever",
+      "slow",
+      "small"
+     ],
+     "r": 1,
+     "exp": "They are very clever. Heavy aparece no texto, mas fala das coisas que os elefantes carregam."
+    },
+    {
+     "t": "gap",
+     "q": "___ elephants jump? No, they can't.",
+     "resp": [
+      "Can"
+     ],
+     "exp": "Pergunta com can: Can + sujeito + verbo? O texto diz They can't jump."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "A busy day in the park",
+   "objetivo": "Entender a descrição de uma cena e o que as pessoas estão fazendo agora.",
+   "foco": "Present continuous (am/is/are + -ing) to describe a picture",
+   "explicacao": [
+    "Present continuous = ação acontecendo agora: A man is reading.",
+    "Forma: am/is/are + verbo com -ing. Negativa: isn't / aren't + -ing.",
+    "Ortografia: run → running, sit → sitting (dobra a consoante); make → making (tira o e).",
+    "Pergunta: What is the woman doing? Is the kite going high? Yes, it is."
+   ],
+   "vocab": [
+    {
+     "en": "bench",
+     "pt": "banco (de praça)"
+    },
+    {
+     "en": "kite",
+     "pt": "pipa"
+    },
+    {
+     "en": "lake",
+     "pt": "lago"
+    },
+    {
+     "en": "newspaper",
+     "pt": "jornal"
+    },
+    {
+     "en": "cry",
+     "pt": "chorar"
+    },
+    {
+     "en": "ground",
+     "pt": "chão"
+    },
+    {
+     "en": "busy",
+     "pt": "movimentado"
+    },
+    {
+     "en": "walk the dog",
+     "pt": "passear com o cachorro"
+    }
+   ],
+   "material": {
+    "titulo": "Saturday in the park",
+    "texto": "It's Saturday afternoon and the park is very busy. Look! A man is reading a newspaper on a bench. Two girls are flying a kite near the lake. The kite is yellow and it's going very high. Some boys are playing football, but they aren't playing well! A woman is walking her dog. The dog is running after a ball. Next to the café, a little boy is crying because his ice cream is on the ground. His dad is buying him a new one. Everyone is having fun."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What are the two girls doing?",
+     "op": [
+      "playing football",
+      "flying a kite",
+      "walking a dog",
+      "reading"
+     ],
+     "r": 1,
+     "exp": "Two girls are flying a kite near the lake."
+    },
+    {
+     "t": "gap",
+     "q": "A man ___ reading a newspaper on a bench.",
+     "resp": [
+      "is"
+     ],
+     "exp": "A man = he, então is + reading."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "Two girls are flying a kite near the lake.",
+     "exp": "Pronuncie o -ing sem colocar 'i' no final: FLY-ing. Girls: /gɜːlz/."
+    },
+    {
+     "t": "mc",
+     "q": "Why is the little boy crying?",
+     "op": [
+      "He can't find his dad.",
+      "His ice cream is on the ground.",
+      "His kite is in the lake.",
+      "The dog is running after him."
+     ],
+     "r": 1,
+     "exp": "He is crying because his ice cream is on the ground."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "dog",
+      "is",
+      "running",
+      "after",
+      "a",
+      "ball"
+     ],
+     "resp": "The dog is running after a ball",
+     "exp": "Run vira running (dobra o n)."
+    },
+    {
+     "t": "gap",
+     "q": "The boys are playing football, but they ___ playing well.",
+     "resp": [
+      "aren't",
+      "are not"
+     ],
+     "exp": "Negativa com they: aren't + -ing."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você está fazendo agora?",
+     "frase": "What are you doing right now?",
+     "modelo": "I'm sitting in my bedroom and I'm studying English.",
+     "min": 5,
+     "chave": [
+      "I'm",
+      "am",
+      "studying",
+      "sitting",
+      "reading",
+      "listening",
+      "learning"
+     ],
+     "exp": "Use I'm + verbo com -ing: I'm sitting, I'm studying, I'm listening to music."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "The dad is buy a new ice cream.",
+      "The dad buying a new ice cream.",
+      "The dad is buying a new ice cream.",
+      "The dad are buying a new ice cream."
+     ],
+     "r": 2,
+     "exp": "Precisa de is (the dad = he) + buying."
+    },
+    {
+     "t": "gap",
+     "q": "'Is the kite going high?' 'Yes, ___.'",
+     "resp": [
+      "it is"
+     ],
+     "exp": "Resposta curta: Yes, it is. Nunca 'Yes, it's' no final."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "A postcard from the mountains",
+   "objetivo": "Entender um cartão-postal sobre o tempo, roupas e o que as pessoas fazem.",
+   "foco": "Weather words; clothes; present simple (usually) vs present continuous (today, now)",
+   "explicacao": [
+    "Para o tempo: It's sunny, cold, hot, windy, cloudy. Verbos: It rains. It's raining now. It's snowing!",
+    "Present simple para hábitos: I usually wear a jumper.",
+    "Present continuous para agora/hoje: Today I'm wearing boots.",
+    "Palavras-chave: usually, often, every morning → simple; now, today, at the moment → continuous."
+   ],
+   "vocab": [
+    {
+     "en": "postcard",
+     "pt": "cartão-postal"
+    },
+    {
+     "en": "weather",
+     "pt": "tempo (clima)"
+    },
+    {
+     "en": "sunny",
+     "pt": "ensolarado"
+    },
+    {
+     "en": "snow",
+     "pt": "neve; nevar"
+    },
+    {
+     "en": "jumper",
+     "pt": "blusa de lã"
+    },
+    {
+     "en": "jacket",
+     "pt": "jaqueta"
+    },
+    {
+     "en": "boots",
+     "pt": "botas"
+    },
+    {
+     "en": "scarf",
+     "pt": "cachecol"
+    },
+    {
+     "en": "fire",
+     "pt": "lareira, fogo"
+    }
+   ],
+   "material": {
+    "titulo": "Hi Grandma!",
+    "texto": "Hi Grandma! I'm writing this postcard from the mountains. The weather here is very different from Rio. Every morning it's sunny but cold, so I usually wear a jumper and a jacket. In the afternoon it often rains. Today it's snowing! I'm wearing my new boots, a scarf and a hat, and I'm drinking hot chocolate. Dad is taking photos of the snow. Mum doesn't like the cold, so she's sitting next to the fire. See you next week! Love, Julia"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Where is Julia?",
+     "op": [
+      "in Rio",
+      "in the mountains",
+      "at the beach",
+      "at Grandma's house"
+     ],
+     "r": 1,
+     "exp": "I'm writing this postcard from the mountains. Rio aparece só para comparar o tempo."
+    },
+    {
+     "t": "gap",
+     "q": "In the afternoon it often ___.",
+     "resp": [
+      "rains"
+     ],
+     "exp": "Hábito (often) pede present simple: it rains."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "I'm wearing my new boots, a scarf and a hat.",
+     "exp": "Wearing soa /WEə-ring/. Boots tem 'oo' longo."
+    },
+    {
+     "t": "mc",
+     "q": "What is Mum doing?",
+     "op": [
+      "taking photos",
+      "sitting next to the fire",
+      "drinking hot chocolate",
+      "writing a postcard"
+     ],
+     "r": 1,
+     "exp": "Mum doesn't like the cold, so she's sitting next to the fire. Quem tira fotos é o pai."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "usually",
+      "wear",
+      "a",
+      "jumper",
+      "in",
+      "the",
+      "morning"
+     ],
+     "resp": "I usually wear a jumper in the morning",
+     "exp": "Usually vem antes do verbo principal.",
+     "alt": [
+      "In the morning I usually wear a jumper"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Dad ___ photos of the snow at the moment.",
+     "resp": [
+      "is taking",
+      "'s taking"
+     ],
+     "exp": "At the moment = agora: present continuous (is taking)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: como está o tempo hoje onde você está? O que você está vestindo?",
+     "frase": "What's the weather like today?",
+     "modelo": "Today it's hot and sunny, so I'm wearing a T-shirt and shorts.",
+     "min": 5,
+     "chave": [
+      "sunny",
+      "hot",
+      "cold",
+      "raining",
+      "rainy",
+      "cloudy",
+      "windy",
+      "warm",
+      "snowing"
+     ],
+     "exp": "Use It's + tempo (It's sunny) e I'm wearing... para as roupas."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence about Julia's mornings is TRUE?",
+     "op": [
+      "It's snowing every morning.",
+      "It's usually sunny but cold.",
+      "It rains every morning.",
+      "It's hot and sunny."
+     ],
+     "r": 1,
+     "exp": "Every morning it's sunny but cold. A chuva é à tarde e a neve é só hoje."
+    },
+    {
+     "t": "gap",
+     "q": "Look outside! It ___ now.",
+     "resp": [
+      "is snowing",
+      "'s snowing"
+     ],
+     "exp": "Agora (now) pede present continuous: It is snowing.",
+     "dica": "Use o verbo SNOW."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Finding the way in town",
+   "objetivo": "Entender um texto sobre uma cidade e localizar lugares seguindo direções.",
+   "foco": "Places in town; directions; imperatives (go, turn, don't); opposite, behind, between",
+   "explicacao": [
+    "O imperativo dá instruções: Go straight on. Turn left. Para proibir: Don't go there on Mondays.",
+    "Opposite = em frente, do outro lado da rua. In front of = na frente de (bem perto).",
+    "Behind = atrás de. Between = entre duas coisas: between the bank and the bookshop.",
+    "Ruas usam in: The library is in Park Street."
+   ],
+   "vocab": [
+    {
+     "en": "library",
+     "pt": "biblioteca"
+    },
+    {
+     "en": "opposite",
+     "pt": "em frente a, do outro lado"
+    },
+    {
+     "en": "go straight on",
+     "pt": "siga em frente"
+    },
+    {
+     "en": "turn left",
+     "pt": "vire à esquerda"
+    },
+    {
+     "en": "station",
+     "pt": "estação"
+    },
+    {
+     "en": "swimming pool",
+     "pt": "piscina"
+    },
+    {
+     "en": "closed",
+     "pt": "fechado"
+    },
+    {
+     "en": "bookshop",
+     "pt": "livraria"
+    }
+   ],
+   "material": {
+    "titulo": "Welcome to Greenville",
+    "texto": "Welcome to Greenville! Our town is small but it's got lots of things to do. The library is in Park Street, opposite the cinema. Next to the library there's a big supermarket. If you want to go to the swimming pool, go straight on from the station and turn left at the hospital. The pool is behind the hospital. Don't go there on Mondays, because it's closed! The best café is between the bank and the bookshop. Try the chocolate cake there!"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is opposite the library?",
+     "op": [
+      "the supermarket",
+      "the cinema",
+      "the bank",
+      "the hospital"
+     ],
+     "r": 1,
+     "exp": "The library is in Park Street, opposite the cinema. O supermercado fica ao lado (next to)."
+    },
+    {
+     "t": "gap",
+     "q": "Go straight on from the station and ___ left at the hospital.",
+     "resp": [
+      "turn"
+     ],
+     "exp": "Turn left = vire à esquerda."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "Go straight on from the station and turn left at the hospital.",
+     "exp": "Straight: /streɪt/, o 'gh' não soa. Hospital: HOS-pi-tal."
+    },
+    {
+     "t": "mc",
+     "q": "When can't you swim at the pool?",
+     "op": [
+      "on Sundays",
+      "on Mondays",
+      "in the morning",
+      "at night"
+     ],
+     "r": 1,
+     "exp": "Don't go there on Mondays, because it's closed!"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "café",
+      "is",
+      "between",
+      "the",
+      "bank",
+      "and",
+      "the",
+      "bookshop"
+     ],
+     "resp": "The café is between the bank and the bookshop",
+     "exp": "Between ... and ... = entre ... e ...",
+     "alt": [
+      "The café is between the bookshop and the bank"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "The swimming pool isn't in front of the hospital. It's ___ it.",
+     "resp": [
+      "behind"
+     ],
+     "exp": "The pool is behind the hospital (atrás)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: como você vai da sua casa até a escola?",
+     "frase": "How do you get from your house to your school?",
+     "modelo": "I go out of my house, turn right and go straight on. My school is next to the park.",
+     "min": 6,
+     "chave": [
+      "turn",
+      "go",
+      "straight",
+      "left",
+      "right",
+      "next",
+      "walk"
+     ],
+     "exp": "Use go straight on, turn left/right e uma preposição: next to, opposite."
+    },
+    {
+     "t": "mc",
+     "q": "Which place is NOT in the text?",
+     "op": [
+      "a bookshop",
+      "a museum",
+      "a bank",
+      "a station"
+     ],
+     "r": 1,
+     "exp": "O texto fala de bookshop, bank e station, mas não de museum."
+    },
+    {
+     "t": "gap",
+     "q": "___ go to the pool on Mondays. It's closed!",
+     "resp": [
+      "Don't",
+      "Do not"
+     ],
+     "exp": "Imperativo negativo: Don't + verbo."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Ana's birthday party",
+   "objetivo": "Entender um relato sobre o passado: o que aconteceu, em que ordem e por quê.",
+   "foco": "Past simple: was/were; regular (-ed) and irregular verbs; didn't; sequencing (first, then, after that)",
+   "explicacao": [
+    "Was (I/he/she/it) e were (you/we/they) são o passado de to be: There were fifteen children.",
+    "Verbos regulares ganham -ed: play → played, stay → stayed, dance → danced.",
+    "Irregulares mudam: go → went, eat → ate, drink → drank, give → gave, sleep → slept, get → got.",
+    "Negativa: didn't + verbo na forma base: He didn't dance (não 'didn't danced')."
+   ],
+   "vocab": [
+    {
+     "en": "birthday",
+     "pt": "aniversário"
+    },
+    {
+     "en": "party",
+     "pt": "festa"
+    },
+    {
+     "en": "presents",
+     "pt": "presentes"
+    },
+    {
+     "en": "first",
+     "pt": "primeiro"
+    },
+    {
+     "en": "then",
+     "pt": "depois, então"
+    },
+    {
+     "en": "after that",
+     "pt": "depois disso"
+    },
+    {
+     "en": "tired",
+     "pt": "cansado"
+    },
+    {
+     "en": "stay at home",
+     "pt": "ficar em casa"
+    }
+   ],
+   "material": {
+    "titulo": "Last weekend",
+    "texto": "Last Saturday was my cousin Ana's birthday. We went to her party at a pizza restaurant. There were fifteen children there. First, we ate pizza and drank juice. Then Ana opened her presents. I gave her a book about horses because she loves them. After that, we played games and danced. My little brother didn't dance; he was tired and slept on a chair! We got home at nine o'clock. On Sunday I stayed at home and watched films."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Where was Ana's party?",
+     "op": [
+      "at Ana's house",
+      "at a pizza restaurant",
+      "at the park",
+      "at school"
+     ],
+     "r": 1,
+     "exp": "We went to her party at a pizza restaurant."
+    },
+    {
+     "t": "gap",
+     "q": "There ___ fifteen children at the party.",
+     "resp": [
+      "were"
+     ],
+     "exp": "Children é plural: there were."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "Last Saturday was my cousin Ana's birthday.",
+     "exp": "Saturday: SA-tur-day. Birthday: o 'th' é com a língua entre os dentes."
+    },
+    {
+     "t": "mc",
+     "q": "Why did the writer give Ana a book about horses?",
+     "op": [
+      "Ana loves horses.",
+      "Ana wanted a book.",
+      "The writer loves horses.",
+      "It was cheap."
+     ],
+     "r": 0,
+     "exp": "I gave her a book about horses because she loves them (she = Ana)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "got",
+      "home",
+      "at",
+      "nine",
+      "o'clock"
+     ],
+     "resp": "We got home at nine o'clock",
+     "exp": "Got é o passado de get. Get home = chegar em casa."
+    },
+    {
+     "t": "gap",
+     "q": "First they ate pizza. ___ Ana opened her presents.",
+     "resp": [
+      "Then",
+      "After that",
+      "Next"
+     ],
+     "exp": "Then / After that mostram a sequência dos fatos."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você fez no último fim de semana?",
+     "frase": "What did you do last weekend?",
+     "modelo": "Last weekend I went to the beach with my family and I played volleyball.",
+     "min": 6,
+     "chave": [
+      "went",
+      "played",
+      "watched",
+      "visited",
+      "ate",
+      "was",
+      "stayed",
+      "saw"
+     ],
+     "exp": "Use verbos no passado: went, played, watched, visited. Comece com Last weekend I..."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "My brother didn't danced.",
+      "My brother didn't dance.",
+      "My brother not danced.",
+      "My brother doesn't danced."
+     ],
+     "r": 1,
+     "exp": "Depois de didn't o verbo volta para a forma base: didn't dance."
+    },
+    {
+     "t": "gap",
+     "q": "On Sunday the writer didn't go out. He or she ___ at home.",
+     "resp": [
+      "stayed"
+     ],
+     "exp": "Não saiu = ficou em casa: stayed at home."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "What do you do in your free time?",
+   "objetivo": "Entender um texto sobre hobbies e com que frequência as pessoas fazem as coisas.",
+   "foco": "like/love + -ing; adverbs of frequency (always, usually, often, sometimes, never); good at; How often...?",
+   "explicacao": [
+    "Depois de like, love e hate usamos verbo com -ing: Lily loves reading comics.",
+    "Advérbios de frequência: always (sempre), usually (geralmente), often (frequentemente), sometimes (às vezes), never (nunca).",
+    "Eles vêm antes do verbo principal (He always plays) e depois de to be (She is never late).",
+    "How often...? pede frequência: every day, once a week, twice a week."
+   ],
+   "vocab": [
+    {
+     "en": "free time",
+     "pt": "tempo livre"
+    },
+    {
+     "en": "comics",
+     "pt": "gibis, quadrinhos"
+    },
+    {
+     "en": "boring",
+     "pt": "chato"
+    },
+    {
+     "en": "good at",
+     "pt": "bom em"
+    },
+    {
+     "en": "twice a week",
+     "pt": "duas vezes por semana"
+    },
+    {
+     "en": "club",
+     "pt": "clube"
+    },
+    {
+     "en": "skateboarding",
+     "pt": "andar de skate"
+    },
+    {
+     "en": "always",
+     "pt": "sempre"
+    },
+    {
+     "en": "never",
+     "pt": "nunca"
+    }
+   ],
+   "material": {
+    "titulo": "Free time at Hill School",
+    "texto": "Kids at Hill School answered some questions about their free time. Most children like playing video games, but they don't play every day. Marco always plays basketball after school, and he sometimes goes skateboarding at the weekend. Lily loves reading comics. She never watches TV because she thinks it's boring. Sam is good at drawing. He usually draws animals and people from films. Twice a week he goes to an art club. And the teachers? They often go running in the park!"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Who never watches TV?",
+     "op": [
+      "Marco",
+      "Lily",
+      "Sam",
+      "the teachers"
+     ],
+     "r": 1,
+     "exp": "Lily never watches TV because she thinks it's boring."
+    },
+    {
+     "t": "gap",
+     "q": "Lily loves ___ comics.",
+     "resp": [
+      "reading"
+     ],
+     "exp": "Depois de love usamos verbo + -ing."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "Marco always plays basketball after school.",
+     "exp": "Always: /ˈɔːlweɪz/, sem pronunciar o 'l' forte. Basketball: BAS-ket-ball."
+    },
+    {
+     "t": "mc",
+     "q": "How often does Sam go to the art club?",
+     "op": [
+      "once a week",
+      "twice a week",
+      "every day",
+      "at the weekend"
+     ],
+     "r": 1,
+     "exp": "Twice a week he goes to an art club. Twice = duas vezes."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "never",
+      "watches",
+      "TV",
+      "because",
+      "it's",
+      "boring"
+     ],
+     "resp": "She never watches TV because it's boring",
+     "exp": "Never vem antes do verbo principal (watches)."
+    },
+    {
+     "t": "gap",
+     "q": "Sam is good ___ drawing.",
+     "resp": [
+      "at"
+     ],
+     "exp": "A expressão é good at + -ing: good at drawing."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: com que frequência você pratica esporte?",
+     "frase": "How often do you play sport?",
+     "modelo": "I usually play football twice a week, on Tuesdays and Saturdays.",
+     "min": 5,
+     "chave": [
+      "always",
+      "usually",
+      "often",
+      "sometimes",
+      "never",
+      "week",
+      "day"
+     ],
+     "exp": "Use um advérbio (usually, sometimes, never) ou uma expressão (twice a week, every day)."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "He goes always skateboarding.",
+      "He always goes skateboarding.",
+      "Always he go skateboarding.",
+      "He always go skateboarding."
+     ],
+     "r": 1,
+     "exp": "O advérbio vem antes do verbo, e com he o verbo leva -es: He always goes."
+    },
+    {
+     "t": "gap",
+     "q": "Marco plays basketball every day after school. He ___ plays basketball after school.",
+     "resp": [
+      "always"
+     ],
+     "exp": "Todo dia = sempre: always."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "The school race",
+   "objetivo": "Entender comparações entre pessoas e o resultado de uma corrida.",
+   "foco": "Comparatives (-er than, more, better) and superlatives (the -est, the most, the best)",
+   "explicacao": [
+    "Comparativo de adjetivo curto: + er than. Kim is shorter than Tom. Fast → faster.",
+    "Superlativo: the + est. Tom is the tallest. Young → the youngest. Slow → the slowest.",
+    "Adjetivos longos usam more / the most: more expensive, the most beautiful.",
+    "Irregulares: good → better → the best; bad → worse → the worst."
+   ],
+   "vocab": [
+    {
+     "en": "race",
+     "pt": "corrida"
+    },
+    {
+     "en": "tall",
+     "pt": "alto"
+    },
+    {
+     "en": "short",
+     "pt": "baixo"
+    },
+    {
+     "en": "fast",
+     "pt": "rápido"
+    },
+    {
+     "en": "young",
+     "pt": "jovem"
+    },
+    {
+     "en": "strong",
+     "pt": "forte"
+    },
+    {
+     "en": "first",
+     "pt": "primeiro"
+    },
+    {
+     "en": "the best",
+     "pt": "o melhor"
+    }
+   ],
+   "material": {
+    "titulo": "Who is the fastest?",
+    "texto": "Tom, Kim and Raj are in a race at school. Tom is the tallest, but he isn't the fastest. Kim is shorter than Tom, but she runs faster than him. Raj is the youngest of the three. He's only nine, but he's very strong. In the race, Kim finished first, Raj was second and Tom was third. 'That was the best day of the year!' said Kim. Tom was sad, but he said, 'Next year I'll be faster than Kim!'"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Who won the race?",
+     "op": [
+      "Tom",
+      "Kim",
+      "Raj"
+     ],
+     "r": 1,
+     "exp": "Kim finished first. Ganhar = chegar em primeiro."
+    },
+    {
+     "t": "gap",
+     "q": "Kim runs ___ than Tom.",
+     "resp": [
+      "faster"
+     ],
+     "exp": "Comparativo de fast: faster than."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "Kim is shorter than Tom, but she runs faster than him.",
+     "exp": "Than é fraco: /ðən/. Shorter: SHOR-ter."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is TRUE?",
+     "op": [
+      "Raj is older than Kim.",
+      "Tom is the fastest.",
+      "Raj is the youngest.",
+      "Kim is taller than Tom."
+     ],
+     "r": 2,
+     "exp": "Raj is the youngest of the three. Tom é o mais alto, mas não o mais rápido."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Tom",
+      "is",
+      "the",
+      "tallest",
+      "of",
+      "the",
+      "three"
+     ],
+     "resp": "Tom is the tallest of the three",
+     "exp": "Superlativo: the + tallest. Of the three = dos três."
+    },
+    {
+     "t": "gap",
+     "q": "Raj was second, so he was faster ___ Tom.",
+     "resp": [
+      "than"
+     ],
+     "exp": "Comparação usa than: faster than Tom."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: compare duas pessoas da sua família.",
+     "frase": "Compare two people in your family.",
+     "modelo": "My dad is taller than my mum, but my mum is older than him.",
+     "min": 6,
+     "chave": [
+      "than",
+      "taller",
+      "older",
+      "younger",
+      "shorter",
+      "bigger",
+      "stronger"
+     ],
+     "exp": "Use adjetivo + er + than: taller than, older than."
+    },
+    {
+     "t": "mc",
+     "q": "Complete: For Kim, it was ___ day of the year.",
+     "op": [
+      "the good",
+      "the better",
+      "the best",
+      "the most good"
+     ],
+     "r": 2,
+     "exp": "Good é irregular: good → better → the best."
+    },
+    {
+     "t": "gap",
+     "q": "Tom finished third. He was the ___ of the three runners.",
+     "resp": [
+      "slowest"
+     ],
+     "exp": "Quem chegou em último foi o mais lento: slow → the slowest."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Holiday plans",
+   "objetivo": "Entender planos de férias, previsões e obrigações num e-mail entre amigos.",
+   "foco": "be going to for plans; will for predictions; must for obligation",
+   "explicacao": [
+    "Be going to + verbo = planos já decididos: We're going to fly there on the 3rd.",
+    "Will + verbo = previsões: It will be cold at night.",
+    "Must + verbo = obrigação, algo necessário: I must take a jacket.",
+    "Negativa: I'm not going to take my laptop. Pergunta: Are you going to come?"
+   ],
+   "vocab": [
+    {
+     "en": "uncle",
+     "pt": "tio"
+    },
+    {
+     "en": "fly",
+     "pt": "voar, ir de avião"
+    },
+    {
+     "en": "go fishing",
+     "pt": "ir pescar"
+    },
+    {
+     "en": "laptop",
+     "pt": "notebook"
+    },
+    {
+     "en": "outside",
+     "pt": "ao ar livre, lá fora"
+    },
+    {
+     "en": "warm",
+     "pt": "quente, agradável"
+    },
+    {
+     "en": "at night",
+     "pt": "à noite"
+    },
+    {
+     "en": "guess what",
+     "pt": "adivinha só"
+    }
+   ],
+   "material": {
+    "titulo": "An email to Max",
+    "texto": "Dear Max, Guess what! In July my family is going to visit my uncle in Canada. We're going to fly there on the 3rd. My uncle lives near a lake, so we're going to go fishing and swimming. I'm not going to take my laptop, because I want to be outside all day. Mum says it will be warm in the day but cold at night, so I must take a jacket. Are you going to come to my house in August? Write soon! Ben"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Who is Ben going to visit?",
+     "op": [
+      "his aunt",
+      "his uncle",
+      "Max",
+      "his grandparents"
+     ],
+     "r": 1,
+     "exp": "My family is going to visit my uncle in Canada."
+    },
+    {
+     "t": "gap",
+     "q": "We're going ___ fly there on the 3rd.",
+     "resp": [
+      "to"
+     ],
+     "exp": "A estrutura é going to + verbo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "In July my family is going to visit my uncle in Canada.",
+     "exp": "Na fala, going to pode soar /gəʊɪŋ tə/. July: ju-LAI."
+    },
+    {
+     "t": "mc",
+     "q": "Why isn't Ben going to take his laptop?",
+     "op": [
+      "It's broken.",
+      "He wants to be outside all day.",
+      "His mum says no.",
+      "There's no internet."
+     ],
+     "r": 1,
+     "exp": "I'm not going to take my laptop, because I want to be outside all day."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Are",
+      "you",
+      "going",
+      "to",
+      "come",
+      "to",
+      "my",
+      "house",
+      "in",
+      "August"
+     ],
+     "resp": "Are you going to come to my house in August",
+     "exp": "Pergunta: Are + sujeito + going to + verbo?"
+    },
+    {
+     "t": "gap",
+     "q": "It will be cold at night, so Ben ___ take a jacket.",
+     "resp": [
+      "must",
+      "has to",
+      "needs to",
+      "should"
+     ],
+     "exp": "Obrigação ou necessidade: must (ou has to)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você vai fazer no próximo fim de semana?",
+     "frase": "What are you going to do next weekend?",
+     "modelo": "Next weekend I'm going to visit my grandparents and play in the park.",
+     "min": 6,
+     "chave": [
+      "going"
+     ],
+     "exp": "Use I'm going to + verbo para planos."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is a prediction?",
+     "op": [
+      "We're going to go fishing.",
+      "It will be warm in the day.",
+      "I must take a jacket.",
+      "Write soon!"
+     ],
+     "r": 1,
+     "exp": "Will para previsões (o tempo). Going to aqui é plano, must é obrigação."
+    },
+    {
+     "t": "gap",
+     "q": "Ben ___ going to take his laptop.",
+     "resp": [
+      "isn't",
+      "is not"
+     ],
+     "exp": "Negativa de going to: isn't going to."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Practice test: Reading and Writing",
+   "objetivo": "Fazer um simulado no estilo Movers/Flyers: ler uma história e responder questões de compreensão e de gramática.",
+   "foco": "Exam practice: story comprehension, completing sentences with 1–4 words, grammar in context",
+   "explicacao": [
+    "Na prova Movers/Flyers você lê uma história e completa frases com 1 a 4 palavras do texto.",
+    "Leia a frase incompleta, ache o trecho do texto que fala disso e copie as palavras com cuidado (ortografia conta!).",
+    "Nas questões de marcar, cuidado: as opções erradas costumam usar palavras que aparecem no texto.",
+    "Revise os tempos verbais: a história está no passado (went, gave, saw, found)."
+   ],
+   "vocab": [
+    {
+     "en": "camping",
+     "pt": "acampamento"
+    },
+    {
+     "en": "forest",
+     "pt": "floresta"
+    },
+    {
+     "en": "map",
+     "pt": "mapa"
+    },
+    {
+     "en": "waterfall",
+     "pt": "cachoeira"
+    },
+    {
+     "en": "river",
+     "pt": "rio"
+    },
+    {
+     "en": "tent",
+     "pt": "barraca"
+    },
+    {
+     "en": "followed",
+     "pt": "seguiram"
+    },
+    {
+     "en": "pocket",
+     "pt": "bolso"
+    },
+    {
+     "en": "anywhere",
+     "pt": "em lugar nenhum (em negativas)"
+    }
+   ],
+   "material": {
+    "titulo": "Katy and the lost map",
+    "texto": "Last summer, Katy and her brother Fred went camping with their parents near a big forest. On the first morning, Dad gave Katy an old map. 'Let's find the waterfall,' he said. The children walked along a river for two hours. They saw lots of birds and a family of rabbits. Then Fred said, 'I'm hungry!' They sat under a tree and ate their sandwiches. When they stood up, Katy couldn't find the map anywhere! 'Oh no! How are we going to get back?' said Fred. Katy looked at the river. 'The river goes past our tent,' she said. 'We must walk next to it.' They followed the river and, after an hour, they saw their tent. Mum was cooking dinner. 'Did you find the waterfall?' she asked. 'No,' laughed Katy, 'but we found our way home!' The next day, Dad found the map in Fred's pocket."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Where did the family go camping?",
+     "op": [
+      "near the sea",
+      "near a big forest",
+      "in the mountains",
+      "in a park in town"
+     ],
+     "r": 1,
+     "exp": "...went camping with their parents near a big forest."
+    },
+    {
+     "t": "gap",
+     "q": "On the first morning, Dad gave Katy ___.",
+     "resp": [
+      "an old map",
+      "a map",
+      "the map",
+      "old map"
+     ],
+     "exp": "Dad gave Katy an old map. Copie de 1 a 4 palavras do texto."
+    },
+    {
+     "t": "mc",
+     "q": "What did the children see next to the river?",
+     "op": [
+      "a waterfall",
+      "birds and rabbits",
+      "their parents",
+      "a bear"
+     ],
+     "r": 1,
+     "exp": "They saw lots of birds and a family of rabbits. A cachoeira eles NÃO encontraram."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "They followed the river and, after an hour, they saw their tent.",
+     "exp": "Followed: FOL-lowd, o -ed soa só como /d/. Hour: o 'h' é mudo."
+    },
+    {
+     "t": "gap",
+     "q": "The children ate their sandwiches under ___.",
+     "resp": [
+      "a tree",
+      "the tree"
+     ],
+     "exp": "They sat under a tree and ate their sandwiches."
+    },
+    {
+     "t": "mc",
+     "q": "Why did Katy want to walk next to the river?",
+     "op": [
+      "It was faster.",
+      "The river goes past their tent.",
+      "Fred wanted to swim.",
+      "She saw the waterfall."
+     ],
+     "r": 1,
+     "exp": "'The river goes past our tent,' she said. Seguindo o rio, eles chegariam à barraca."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Mum",
+      "was",
+      "cooking",
+      "dinner",
+      "when",
+      "they",
+      "arrived"
+     ],
+     "resp": "Mum was cooking dinner when they arrived",
+     "exp": "Was + -ing = ação em andamento no passado."
+    },
+    {
+     "t": "gap",
+     "q": "Before lunch, the children walked for ___ hours.",
+     "resp": [
+      "two",
+      "2"
+     ],
+     "exp": "The children walked along a river for two hours. Depois disso, Fred ficou com fome."
+    },
+    {
+     "t": "mc",
+     "q": "Complete: Katy couldn't find the map ___.",
+     "op": [
+      "somewhere",
+      "anywhere",
+      "nowhere",
+      "everywhere"
+     ],
+     "r": 1,
+     "exp": "Em frase negativa (couldn't) usamos anywhere."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte em inglês o final da história com suas palavras.",
+     "frase": "How does the story end?",
+     "modelo": "They didn't find the waterfall, but they found the way home. The map was in Fred's pocket.",
+     "min": 8,
+     "chave": [
+      "map",
+      "river",
+      "tent",
+      "pocket",
+      "home"
+     ],
+     "exp": "Use o passado: found, was, walked. Diga onde estava o mapa."
+    },
+    {
+     "t": "gap",
+     "q": "In the end, the map wasn't lost. It was in ___ pocket.",
+     "resp": [
+      "Fred's",
+      "Freds",
+      "her brother's",
+      "his"
+     ],
+     "exp": "Dad found the map in Fred's pocket. Fred estava com o mapa o tempo todo!"
+    },
+    {
+     "t": "mc",
+     "q": "What's the best title for the story?",
+     "op": [
+      "The beautiful waterfall",
+      "Finding the way home",
+      "Fred's birthday picnic",
+      "Dad's new tent"
+     ],
+     "r": 1,
+     "exp": "A história é sobre como eles voltaram sem o mapa. Eles nem viram a cachoeira."
+    }
+   ]
+  }
+ ]
+}

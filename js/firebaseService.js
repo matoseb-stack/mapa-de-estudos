@@ -144,10 +144,16 @@ Se não houver fala em inglês no áudio, diga isso no resumo e dê notas baixas
       },
       async getLanguageProfile(uid) {
         const d = await lerIdiomas(true);
-        return { xp: d.xp || 0, historico: (d.historico || []).slice(0, 20), concluidos: d.concluidos || {}, agendados: d.agendados || [] };
+        return { xp: d.xp || 0, historico: (d.historico || []).slice(0, 20), concluidos: d.concluidos || {}, agendados: d.agendados || [], prefs: d.prefs || null };
+      },
+      // escolhas da pessoa: idioma e prova-meta (ex.: { idioma: "ingles", meta: "B2" })
+      async savePrefs(uid, prefs) {
+        const d = await alterar(d => { d.prefs = { ...(d.prefs || {}), ...prefs, em: Date.now() }; });
+        return d.prefs;
       },
       async markModuleDone(uid, chave, resultado) {
-        await alterar(d => { d.concluidos = d.concluidos || {}; d.concluidos[chave] = { ...(resultado || {}), em: Date.now() }; });
+        await alterar(d => { d.concluidos = d.concluidos || {}; const ant = d.concluidos[chave];
+          if (!ant || ant.pct == null || resultado.pct == null || resultado.pct >= ant.pct) d.concluidos[chave] = { ...(resultado || {}), em: Date.now() }; });
         return true;
       },
 

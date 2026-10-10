@@ -1,0 +1,2397 @@
+{
+ "nivel": "A2",
+ "skill": "writing",
+ "exame": "A2 Key (KET)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Short messages to friends",
+   "objetivo": "Começar e terminar uma mensagem curta para um amigo do jeito certo.",
+   "foco": "Greetings and closings; informal email layout",
+   "explicacao": [
+    "No Part 6 do KET você escreve um e-mail ou mensagem curta para um amigo: comece com Hi + nome (ou Dear + nome).",
+    "Logo depois, uma frase de abertura: Thanks for your email! / How are you?",
+    "Termine com See you soon!, Love, ou Bye for now, e escreva seu nome na linha de baixo.",
+    "Use frases curtas e completas: I'm at home today. I'm watching a film."
+   ],
+   "vocab": [
+    {
+     "en": "Hi ...,",
+     "pt": "Oi ..., (início de e-mail informal)"
+    },
+    {
+     "en": "Dear ...,",
+     "pt": "Querido(a) ..., (início de carta/e-mail)"
+    },
+    {
+     "en": "See you soon",
+     "pt": "Até logo"
+    },
+    {
+     "en": "Love,",
+     "pt": "Beijos, (despedida carinhosa)"
+    },
+    {
+     "en": "Thanks for ...",
+     "pt": "Obrigado por ..."
+    },
+    {
+     "en": "Bye for now",
+     "pt": "Tchau por enquanto"
+    },
+    {
+     "en": "to hear from someone",
+     "pt": "ter notícias de alguém"
+    }
+   ],
+   "material": {
+    "tarefa": "You are at home today. Write an email to your English friend, Alex. In your email: say why you are at home; say what you are doing; ask Alex to visit you this afternoon. Write 25 words or more.",
+    "genero": "email",
+    "min": 25,
+    "max": 45,
+    "modelo": "Hi Alex,\nI'm at home today because I've got a cold. I'm watching films on the sofa and drinking hot tea. Can you come and visit me this afternoon?\nSee you soon,\nBeatriz",
+    "checklist": [
+     "Respondi aos três pontos da tarefa, um por um?",
+     "Comecei com Hi/Dear + nome e terminei com uma despedida e meu nome?",
+     "Escrevi 25 palavras ou mais?",
+     "Cada frase começa com letra maiúscula e termina com ponto ou ponto de interrogação?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which is the best way to start an email to your friend Tom?",
+     "op": [
+      "Dear Sir,",
+      "Hi Tom,",
+      "Tom hello.",
+      "To: Tom friend"
+     ],
+     "r": 1,
+     "exp": "Para um amigo, use Hi + nome e vírgula. Dear Sir é para cartas formais."
+    },
+    {
+     "t": "gap",
+     "q": "Thanks ___ your email! It was great to read your news.",
+     "resp": [
+      "for"
+     ],
+     "exp": "Depois de thanks vem for: Thanks for your email."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta a abertura e o fechamento do e-mail.",
+     "frase": "Hi Alex, thanks for your email. See you soon!",
+     "exp": "Em 'thanks', ponha a língua entre os dentes no 'th'."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the best ending for a message to a friend?",
+     "op": [
+      "Yours faithfully,",
+      "See you on Saturday!",
+      "Regards to the company.",
+      "End of the message."
+     ],
+     "r": 1,
+     "exp": "See you on Saturday! é natural entre amigos. Yours faithfully é bem formal."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Can",
+      "you",
+      "come",
+      "to",
+      "my",
+      "house",
+      "this",
+      "afternoon"
+     ],
+     "resp": "Can you come to my house this afternoon?",
+     "exp": "Pergunta com can: Can + you + verbo + resto."
+    },
+    {
+     "t": "gap",
+     "q": "I hope to hear ___ you soon!",
+     "resp": [
+      "from"
+     ],
+     "exp": "A expressão é hear from someone = ter notícias de alguém."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em uma ou duas frases o que você está fazendo hoje.",
+     "frase": "Your friend asks: 'What are you doing today?'",
+     "modelo": "I'm at home today. I'm reading a book and listening to music.",
+     "min": 6,
+     "chave": [
+      "today",
+      "home",
+      "reading",
+      "watching",
+      "playing",
+      "doing",
+      "going"
+     ],
+     "exp": "Use I'm + verbo com -ing: I'm reading, I'm playing."
+    },
+    {
+     "t": "mc",
+     "q": "Read the message: 'Hi Leo, I'm at the park with Gabi. Come and meet us!' What is missing?",
+     "op": [
+      "A greeting",
+      "The writer's name at the end",
+      "A place",
+      "An invitation"
+     ],
+     "r": 1,
+     "exp": "Tem saudação (Hi Leo), lugar (the park) e convite (Come and meet us!), mas falta o nome de quem escreveu."
+    },
+    {
+     "t": "gap",
+     "q": "Dear Grandma, thank you so much for the birthday present. With ___, Lucas",
+     "resp": [
+      "love"
+     ],
+     "exp": "With love, (ou só Love,) é uma despedida carinhosa para família e amigos."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Capital letters and punctuation",
+   "objetivo": "Usar maiúsculas, pontos, vírgulas e apóstrofos corretamente em mensagens curtas.",
+   "foco": "Capital letters, full stops, question marks, commas and apostrophes",
+   "explicacao": [
+    "Maiúscula no começo da frase, em nomes, no pronome I e em dias, meses, países e idiomas: I live in Brazil. My birthday is in May.",
+    "Frase afirmativa termina com ponto (.); pergunta termina com ponto de interrogação (?).",
+    "Vírgula depois da saudação (Hi Sam,) e em listas: bread, eggs and milk.",
+    "Apóstrofo nas formas curtas: I'm, don't, can't, haven't."
+   ],
+   "vocab": [
+    {
+     "en": "capital letter",
+     "pt": "letra maiúscula"
+    },
+    {
+     "en": "full stop",
+     "pt": "ponto final"
+    },
+    {
+     "en": "question mark",
+     "pt": "ponto de interrogação"
+    },
+    {
+     "en": "comma",
+     "pt": "vírgula"
+    },
+    {
+     "en": "apostrophe",
+     "pt": "apóstrofo"
+    },
+    {
+     "en": "exclamation mark",
+     "pt": "ponto de exclamação"
+    }
+   ],
+   "material": {
+    "tarefa": "Your English friend, Kim, wants to know about your weekend plans. Write an email to Kim. In your email: say what you are doing on Saturday; say who you are going with; ask Kim about his plans. Write 25 words or more.",
+    "genero": "email",
+    "min": 25,
+    "max": 45,
+    "modelo": "Hi Kim,\nOn Saturday I'm going to the beach in Santos. I'm going with my sister and two friends from school. What are you doing this weekend?\nBye for now,\nCarla",
+    "checklist": [
+     "Respondi aos três pontos da tarefa, um por um?",
+     "Comecei com Hi/Dear + nome e terminei com uma despedida e meu nome?",
+     "Escrevi 25 palavras ou mais?",
+     "Cada frase começa com letra maiúscula e termina com ponto ou ponto de interrogação?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which of these words ALWAYS starts with a capital letter in English?",
+     "op": [
+      "summer",
+      "monday",
+      "morning",
+      "weekend"
+     ],
+     "r": 1,
+     "exp": "Dias da semana têm maiúscula: Monday. Estações (summer) e partes do dia (morning) não."
+    },
+    {
+     "t": "gap",
+     "q": "I ___ come to your party, sorry. (can not – short form)",
+     "resp": [
+      "can't",
+      "cannot"
+     ],
+     "exp": "A forma curta de can not é can't (também se escreve cannot, junto)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "On Saturday I'm going to the beach with my sister.",
+     "exp": "Junte I'm going: 'aim going'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence needs a question mark (?)",
+     "op": [
+      "I'm going to the cinema",
+      "Where are you going on Sunday",
+      "My brother likes football",
+      "It's a nice day today"
+     ],
+     "r": 1,
+     "exp": "Where are you going...? é uma pergunta, então termina com ?"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "What",
+      "are",
+      "you",
+      "doing",
+      "this",
+      "weekend"
+     ],
+     "resp": "What are you doing this weekend?",
+     "exp": "Pergunta no present continuous: What + are + you + doing."
+    },
+    {
+     "t": "gap",
+     "q": "We ___ got any homework today. (have not – short form)",
+     "resp": [
+      "haven't",
+      "have not"
+     ],
+     "exp": "Have not vira haven't: We haven't got any homework."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda dizendo seus planos para o fim de semana.",
+     "frase": "What are you doing this weekend?",
+     "modelo": "This weekend I'm going to visit my grandparents. On Sunday I'm playing football.",
+     "min": 6,
+     "chave": [
+      "weekend",
+      "saturday",
+      "sunday",
+      "going",
+      "playing",
+      "visiting"
+     ],
+     "exp": "Use I'm + -ing para planos: I'm visiting my aunt."
+    },
+    {
+     "t": "mc",
+     "q": "Where do you need a comma (,)?",
+     "op": [
+      "Hi Sam how are you",
+      "I'm at home now",
+      "See you on Friday",
+      "It's my birthday today"
+     ],
+     "r": 0,
+     "exp": "Depois da saudação vem vírgula: Hi Sam, how are you?"
+    },
+    {
+     "t": "gap",
+     "q": "One word needs a capital letter. Write it: 'My cousin speaks spanish and we chat every week.' → ___",
+     "resp": [
+      "Spanish"
+     ],
+     "exp": "Idiomas e nacionalidades têm maiúscula em inglês: Spanish, English, Portuguese."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Joining ideas: and, but, because, so",
+   "objetivo": "Ligar frases com and, but, because e so para escrever mensagens mais completas.",
+   "foco": "Linking words: and, but, because, so, also",
+   "explicacao": [
+    "and soma ideias: I went to the park and I played tennis.",
+    "but mostra contraste: I like pizza, but my brother doesn't.",
+    "because dá o motivo: I'm happy because it's Friday.",
+    "so dá o resultado: It was raining, so we stayed at home."
+   ],
+   "vocab": [
+    {
+     "en": "and",
+     "pt": "e"
+    },
+    {
+     "en": "but",
+     "pt": "mas"
+    },
+    {
+     "en": "because",
+     "pt": "porque"
+    },
+    {
+     "en": "so",
+     "pt": "então, por isso"
+    },
+    {
+     "en": "also",
+     "pt": "também (antes do verbo)"
+    },
+    {
+     "en": "too",
+     "pt": "também (no fim da frase)"
+    },
+    {
+     "en": "trainers",
+     "pt": "tênis (calçado)"
+    }
+   ],
+   "material": {
+    "tarefa": "You went shopping yesterday. Write an email to your English friend, Jo. In your email: say who you went with; say what you bought; say why you bought it. Write 25 words or more.",
+    "genero": "email",
+    "min": 25,
+    "max": 45,
+    "modelo": "Hi Jo,\nYesterday I went to the shopping centre with my mum. I bought a new pair of trainers because my old ones were too small. They're blue and white, and they were cheap!\nLove,\nJulia",
+    "checklist": [
+     "Respondi aos três pontos da tarefa, um por um?",
+     "Comecei com Hi/Dear + nome e terminei com uma despedida e meu nome?",
+     "Escrevi 25 palavras ou mais?",
+     "Cada frase começa com letra maiúscula e termina com ponto ou ponto de interrogação?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "I like maths, ___ I don't like science.",
+     "op": [
+      "and",
+      "but",
+      "because",
+      "so"
+     ],
+     "r": 1,
+     "exp": "As ideias são opostas (gosto / não gosto), então use but."
+    },
+    {
+     "t": "gap",
+     "q": "I'm hungry, ___ I'm going to make a sandwich.",
+     "resp": [
+      "so"
+     ],
+     "exp": "Estar com fome é a causa; fazer um sanduíche é o resultado: so."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta, com calma.",
+     "frase": "I stayed at home because it was raining, but I wasn't bored.",
+     "exp": "Faça uma pequena pausa antes de but."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the best sentence.",
+     "op": [
+      "I went to bed early because I was tired.",
+      "I went to bed early so I was tired.",
+      "I went to bed early but I was tired.",
+      "I was tired because I went to bed early and."
+     ],
+     "r": 0,
+     "exp": "O cansaço é o motivo de ir dormir cedo: because I was tired."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "missed",
+      "the",
+      "bus",
+      "so",
+      "we",
+      "walked",
+      "to",
+      "school"
+     ],
+     "resp": "We missed the bus, so we walked to school.",
+     "exp": "Primeiro a causa (missed the bus), depois so + o resultado."
+    },
+    {
+     "t": "gap",
+     "q": "My sister plays the guitar, and she ___ sings in a band.",
+     "resp": [
+      "also"
+     ],
+     "exp": "also fica antes do verbo principal: she also sings."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda e dê um motivo com because.",
+     "frase": "Do you like weekends? Why?",
+     "modelo": "Yes, I love weekends because I can sleep late and see my friends.",
+     "min": 7,
+     "chave": [
+      "because",
+      "like",
+      "love",
+      "so"
+     ],
+     "exp": "Sempre que puder, explique: ... because I can..."
+    },
+    {
+     "t": "mc",
+     "q": "Join the ideas: 'The film was long.' + 'We enjoyed it.'",
+     "op": [
+      "The film was long, so we enjoyed it.",
+      "The film was long, but we enjoyed it.",
+      "The film was long because we enjoyed it.",
+      "The film was long, and because we enjoyed it."
+     ],
+     "r": 1,
+     "exp": "Filme longo normalmente é ruim, mas gostamos: há contraste, então but."
+    },
+    {
+     "t": "gap",
+     "q": "I couldn't sleep last night ___ my neighbours were having a noisy party.",
+     "resp": [
+      "because",
+      "as",
+      "since"
+     ],
+     "exp": "A festa barulhenta é o motivo de não dormir: because (ou as)."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Inviting a friend",
+   "objetivo": "Convidar um amigo por escrito dizendo o quê, quando e onde.",
+   "foco": "Invitations: Would you like to...?, Do you want to...?, Let's..., Shall we...?",
+   "explicacao": [
+    "Para convidar: Would you like to come to my party? (mais educado) ou Do you want to go swimming?",
+    "Depois de would like vem to + verbo: Would you like to come?",
+    "Para sugerir: Let's meet at the station. / Shall we go by bus? (Let's e Shall we + verbo sem to).",
+    "Num convite diga o quê, quando e onde: It's on Saturday at 7 pm at my house."
+   ],
+   "vocab": [
+    {
+     "en": "Would you like to ...?",
+     "pt": "Você gostaria de ...?"
+    },
+    {
+     "en": "Let's ...",
+     "pt": "Vamos ..."
+    },
+    {
+     "en": "Shall we ...?",
+     "pt": "Que tal a gente ...?"
+    },
+    {
+     "en": "to have a party",
+     "pt": "dar uma festa"
+    },
+    {
+     "en": "to bring",
+     "pt": "trazer"
+    },
+    {
+     "en": "swimming costume",
+     "pt": "roupa de banho"
+    }
+   ],
+   "material": {
+    "tarefa": "You are having a party next Saturday. Write an email to your English friend, Chris. In your email: invite Chris to the party; say where the party is; tell Chris what to bring. Write 25 words or more.",
+    "genero": "email",
+    "min": 25,
+    "max": 45,
+    "modelo": "Hi Chris,\nIt's my birthday next Saturday and I'm having a party. Would you like to come? It's at my house, 25 Green Street, at 7 pm. Can you bring some music?\nSee you,\nRafa",
+    "checklist": [
+     "Respondi aos três pontos da tarefa, um por um?",
+     "Comecei com Hi/Dear + nome e terminei com uma despedida e meu nome?",
+     "Escrevi 25 palavras ou mais?",
+     "Cada frase começa com letra maiúscula e termina com ponto ou ponto de interrogação?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which is the most polite invitation?",
+     "op": [
+      "Come to my party.",
+      "You come to my party?",
+      "Would you like to come to my party?",
+      "You must come to my party."
+     ],
+     "r": 2,
+     "exp": "Would you like to...? é a forma mais educada de convidar."
+    },
+    {
+     "t": "gap",
+     "q": "Would you like ___ come swimming with us on Sunday?",
+     "resp": [
+      "to"
+     ],
+     "exp": "Would you like + to + verbo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia o convite em voz alta.",
+     "frase": "Would you like to come to my party on Saturday?",
+     "exp": "Would you soa como 'wúdju'. A voz sobe no final da pergunta."
+    },
+    {
+     "t": "mc",
+     "q": "Let's ___ at the bus station at ten.",
+     "op": [
+      "meet",
+      "to meet",
+      "meeting",
+      "we meet"
+     ],
+     "r": 0,
+     "exp": "Depois de Let's vem o verbo sem to: Let's meet."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Shall",
+      "we",
+      "go",
+      "to",
+      "the",
+      "park",
+      "after",
+      "school"
+     ],
+     "resp": "Shall we go to the park after school?",
+     "exp": "Shall we + verbo: sugestão em forma de pergunta."
+    },
+    {
+     "t": "gap",
+     "q": "The party starts ___ 8 o'clock, so please don't be late!",
+     "resp": [
+      "at"
+     ],
+     "exp": "Com horas usamos at: at 8 o'clock."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça um convite falando o que, quando e onde.",
+     "frase": "Invite your friend to do something with you this weekend.",
+     "modelo": "Would you like to go to the cinema with me on Saturday afternoon? There's a great new film.",
+     "min": 6,
+     "chave": [
+      "would",
+      "like",
+      "let's",
+      "shall",
+      "want"
+     ],
+     "exp": "Comece com Would you like to... ou Let's... e diga o dia."
+    },
+    {
+     "t": "mc",
+     "q": "Your invitation says: 'Hi Ana, would you like to come to my house? Love, Bia.' What important information is missing?",
+     "op": [
+      "The day and time",
+      "The name of your friend",
+      "A question",
+      "A greeting"
+     ],
+     "r": 0,
+     "exp": "Sem dia e hora, Ana não sabe quando ir."
+    },
+    {
+     "t": "gap",
+     "q": "Don't forget to ___ your swimming costume — we're going to the pool after lunch!",
+     "resp": [
+      "bring",
+      "take",
+      "pack"
+     ],
+     "exp": "bring = trazer. Também serve take ou pack (colocar na mala)."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Accepting and saying no",
+   "objetivo": "Aceitar ou recusar um convite com educação, dando um motivo e sugerindo outra data.",
+   "foco": "Replying to invitations: accepting, refusing politely, giving reasons",
+   "explicacao": [
+    "Para aceitar: Thanks for inviting me! I'd love to come. (I'd = I would)",
+    "Para recusar com educação: I'm sorry, but I can't come. / I'm afraid I can't.",
+    "Sempre dê o motivo: I have to visit my grandmother on Sunday.",
+    "Sugira outra opção: Can we meet on Saturday instead?"
+   ],
+   "vocab": [
+    {
+     "en": "I'd love to",
+     "pt": "Eu adoraria"
+    },
+    {
+     "en": "I'm afraid I can't",
+     "pt": "Infelizmente não posso"
+    },
+    {
+     "en": "instead",
+     "pt": "em vez disso"
+    },
+    {
+     "en": "another time",
+     "pt": "outra hora, outra vez"
+    },
+    {
+     "en": "to invite",
+     "pt": "convidar"
+    },
+    {
+     "en": "I have to",
+     "pt": "Eu tenho que"
+    },
+    {
+     "en": "wedding",
+     "pt": "casamento"
+    }
+   ],
+   "material": {
+    "tarefa": "Your English friend, Sam, has invited you to play tennis on Sunday morning, but you can't go. Write an email to Sam. In your email: thank Sam for the invitation; explain why you can't go; suggest another day. Write 25 words or more.",
+    "genero": "email",
+    "min": 25,
+    "max": 45,
+    "modelo": "Hi Sam,\nThanks for inviting me to play tennis. I'd love to come, but I'm afraid I can't on Sunday morning because I have to go to my cousin's wedding. Can we play next Saturday instead?\nLuca",
+    "checklist": [
+     "Respondi aos três pontos da tarefa, um por um?",
+     "Comecei com Hi/Dear + nome e terminei com uma despedida e meu nome?",
+     "Escrevi 25 palavras ou mais?",
+     "Cada frase começa com letra maiúscula e termina com ponto ou ponto de interrogação?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Your friend invites you to the beach. You want to go. What do you say?",
+     "op": [
+      "I'm afraid I can't.",
+      "I'd love to! What time?",
+      "Yes, I went.",
+      "No, thanks, I'd love to."
+     ],
+     "r": 1,
+     "exp": "I'd love to! mostra que você aceita com vontade."
+    },
+    {
+     "t": "gap",
+     "q": "I'm sorry, ___ I can't come to your party. I'm going away that weekend.",
+     "resp": [
+      "but"
+     ],
+     "exp": "I'm sorry, but I can't... é a fórmula educada para recusar."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase com entusiasmo.",
+     "frase": "Thanks for inviting me. I'd love to come!",
+     "exp": "Em I'd love, o d é bem leve: 'aid-lóv'."
+    },
+    {
+     "t": "mc",
+     "q": "Which reply says no politely?",
+     "op": [
+      "No. I don't want to.",
+      "I'm afraid I can't come because I have a piano lesson.",
+      "Your party is boring.",
+      "I can't. Bye."
+     ],
+     "r": 1,
+     "exp": "Educado = I'm afraid I can't + motivo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Can",
+      "we",
+      "meet",
+      "on",
+      "Sunday",
+      "instead"
+     ],
+     "resp": "Can we meet on Sunday instead?",
+     "exp": "instead fica no fim da frase."
+    },
+    {
+     "t": "gap",
+     "q": "I can't go to the cinema tonight because I ___ to study for a test.",
+     "resp": [
+      "have",
+      "need",
+      "have got"
+     ],
+     "exp": "have to / need to = ter que, precisar."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Recuse com educação e diga o motivo.",
+     "frase": "Your friend says: 'Do you want to go skateboarding tomorrow?' You can't go. Answer and give a reason.",
+     "modelo": "I'm sorry, but I can't go tomorrow because I have to help my dad. Maybe next week?",
+     "min": 8,
+     "chave": [
+      "sorry",
+      "can't",
+      "afraid",
+      "because"
+     ],
+     "exp": "Use I'm sorry, but... + because..."
+    },
+    {
+     "t": "mc",
+     "q": "Read the reply: 'Thanks for the invitation! I'd love to come, but I can't.' What's the problem?",
+     "op": [
+      "It doesn't say thank you.",
+      "It doesn't give a reason.",
+      "It is too polite.",
+      "It has no verbs."
+     ],
+     "r": 1,
+     "exp": "Quando recusamos, é importante explicar o motivo."
+    },
+    {
+     "t": "gap",
+     "q": "I'm afraid I can't come on Friday. Could we go another ___?",
+     "resp": [
+      "day",
+      "time"
+     ],
+     "exp": "another day / another time = outro dia, outra hora."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Answering all three points",
+   "objetivo": "Ler a tarefa com atenção e responder aos três pontos pedidos no Part 6.",
+   "foco": "Task analysis: say, tell, explain, suggest, ask",
+   "explicacao": [
+    "No Part 6 a tarefa sempre tem três pontos. Se você esquecer um, perde nota.",
+    "Sublinhe o verbo de cada ponto: explain = dê um motivo; suggest = proponha algo; ask = faça uma pergunta; describe = dê detalhes.",
+    "Escreva pelo menos uma frase para cada ponto, na mesma ordem da tarefa.",
+    "Para sugerir: Why don't you...? / How about...? / Let's..."
+   ],
+   "vocab": [
+    {
+     "en": "to say",
+     "pt": "dizer"
+    },
+    {
+     "en": "to tell",
+     "pt": "contar"
+    },
+    {
+     "en": "to explain",
+     "pt": "explicar"
+    },
+    {
+     "en": "to suggest",
+     "pt": "sugerir"
+    },
+    {
+     "en": "to ask",
+     "pt": "perguntar"
+    },
+    {
+     "en": "to describe",
+     "pt": "descrever"
+    },
+    {
+     "en": "to join a club",
+     "pt": "entrar num clube"
+    },
+    {
+     "en": "How about ...?",
+     "pt": "Que tal ...?"
+    }
+   ],
+   "material": {
+    "tarefa": "You have just joined a new sports club. Write an email to your English friend, Pat. In your email: tell Pat which club you joined; describe what you do there; suggest that Pat comes with you next time. Write 25 words or more.",
+    "genero": "email",
+    "min": 25,
+    "max": 45,
+    "modelo": "Hi Pat,\nGuess what? I joined a swimming club last week! We swim for an hour and then we play water polo, which is really fun. Why don't you come with me next Tuesday?\nCheers,\nBia",
+    "checklist": [
+     "Respondi aos três pontos da tarefa, um por um?",
+     "Comecei com Hi/Dear + nome e terminei com uma despedida e meu nome?",
+     "Escrevi 25 palavras ou mais?",
+     "Cada frase começa com letra maiúscula e termina com ponto ou ponto de interrogação?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "The task says: 'explain why you are late'. What must you write?",
+     "op": [
+      "The time you arrived",
+      "A reason",
+      "A question",
+      "A thank you"
+     ],
+     "r": 1,
+     "exp": "explain why = explicar por quê, ou seja, dar um motivo."
+    },
+    {
+     "t": "gap",
+     "q": "Task: 'ask Pat about his holiday'. Complete: '___ was your holiday in Italy?'",
+     "resp": [
+      "How"
+     ],
+     "exp": "How was...? pergunta como foi algo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a sugestão em voz alta.",
+     "frase": "Why don't you come with me next Tuesday?",
+     "exp": "Don't you soa como 'dôntchu'."
+    },
+    {
+     "t": "mc",
+     "q": "Task: 'say where you went, say who you went with, say what you ate'. Which answer covers all three points?",
+     "op": [
+      "I went to a café with my cousin. It was nice.",
+      "I went to a café with my cousin and we had pancakes.",
+      "I went to a café and had pancakes.",
+      "My cousin and I had pancakes. They were great."
+     ],
+     "r": 1,
+     "exp": "Só essa resposta tem onde (café), com quem (cousin) e o que comeu (pancakes)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Why",
+      "don't",
+      "you",
+      "join",
+      "the",
+      "club",
+      "with",
+      "me"
+     ],
+     "resp": "Why don't you join the club with me?",
+     "exp": "Why don't you + verbo = sugestão."
+    },
+    {
+     "t": "gap",
+     "q": "Task: 'suggest a place to meet'. Complete: 'How ___ meeting outside the library?'",
+     "resp": [
+      "about"
+     ],
+     "exp": "How about + -ing = Que tal...?"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte que atividade você faz e descreva o que acontece lá.",
+     "frase": "Tell your friend about a club or activity you do after school.",
+     "modelo": "I go to a dance class on Wednesdays. We learn new dances and it's really fun.",
+     "min": 8,
+     "chave": [
+      "club",
+      "class",
+      "play",
+      "go",
+      "after",
+      "learn"
+     ],
+     "exp": "Diga o quê, quando e o que vocês fazem."
+    },
+    {
+     "t": "mc",
+     "q": "Task: 'Tell Jan what present you bought for Mum, say why you chose it, ask Jan for an idea for Dad.' Which point is missing? 'Hi Jan! I bought Mum a scarf because she's always cold. See you soon!'",
+     "op": [
+      "What present you bought",
+      "Why you chose it",
+      "Asking for an idea for Dad",
+      "Nothing is missing"
+     ],
+     "r": 2,
+     "exp": "Falta perguntar a Jan uma ideia de presente para o pai."
+    },
+    {
+     "t": "gap",
+     "q": "Task: 'ask Jan to help you'. Complete: '___ you help me with my project on Saturday?'",
+     "resp": [
+      "Can",
+      "Could",
+      "Will",
+      "Would"
+     ],
+     "exp": "Pedidos começam com Can you / Could you...?"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Times and places: at, on, in",
+   "objetivo": "Combinar hora e lugar de um encontro usando at, on e in corretamente.",
+   "foco": "Prepositions of time and place for arrangements",
+   "explicacao": [
+    "at para horas e pontos exatos: at 6 o'clock, at the station, at the bus stop.",
+    "on para dias e datas: on Monday, on 5th May, on my birthday.",
+    "in para meses, anos, partes do dia e cidades: in July, in the morning, in London.",
+    "Exceções úteis: at night, at the weekend (inglês britânico)."
+   ],
+   "vocab": [
+    {
+     "en": "outside",
+     "pt": "do lado de fora, na frente de"
+    },
+    {
+     "en": "opposite",
+     "pt": "em frente a (do outro lado)"
+    },
+    {
+     "en": "next to",
+     "pt": "ao lado de"
+    },
+    {
+     "en": "until",
+     "pt": "até (tempo)"
+    },
+    {
+     "en": "half past two",
+     "pt": "duas e meia"
+    },
+    {
+     "en": "city centre",
+     "pt": "centro da cidade"
+    }
+   ],
+   "material": {
+    "tarefa": "You are meeting your English friend, Jamie, tomorrow. Write a message to Jamie. In your message: say where to meet; say what time to meet; say what you will do together. Write 25 words or more.",
+    "genero": "email",
+    "min": 25,
+    "max": 45,
+    "modelo": "Hi Jamie,\nLet's meet tomorrow outside the cinema in the city centre. Can you be there at half past two? First we can watch the new superhero film, and then we can have a pizza.\nSee you,\nTheo",
+    "checklist": [
+     "Respondi aos três pontos da tarefa, um por um?",
+     "Comecei com Hi/Dear + nome e terminei com uma despedida e meu nome?",
+     "Escrevi 25 palavras ou mais?",
+     "Cada frase começa com letra maiúscula e termina com ponto ou ponto de interrogação?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "My birthday is ___ March.",
+     "op": [
+      "at",
+      "on",
+      "in"
+     ],
+     "r": 2,
+     "exp": "Meses usam in: in March."
+    },
+    {
+     "t": "gap",
+     "q": "The concert starts ___ 8 pm.",
+     "resp": [
+      "at"
+     ],
+     "exp": "Horas usam at: at 8 pm."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Let's meet outside the cinema at half past two.",
+     "exp": "Half: o l é mudo, fala 'háf'."
+    },
+    {
+     "t": "mc",
+     "q": "I always feel tired ___ the afternoon.",
+     "op": [
+      "at",
+      "on",
+      "in",
+      "to"
+     ],
+     "r": 2,
+     "exp": "Partes do dia: in the morning, in the afternoon, in the evening."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Meet",
+      "me",
+      "opposite",
+      "the",
+      "bank",
+      "at",
+      "ten",
+      "o'clock"
+     ],
+     "resp": "Meet me opposite the bank at ten o'clock.",
+     "exp": "Primeiro o lugar (opposite the bank), depois a hora (at ten o'clock)."
+    },
+    {
+     "t": "gap",
+     "q": "I'll wait for you ___ the bus stop next to the school.",
+     "resp": [
+      "at",
+      "by"
+     ],
+     "exp": "Ponto exato: at the bus stop (by = perto de, também serve)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga onde e quando você encontra seus amigos.",
+     "frase": "Where and when do you usually meet your friends?",
+     "modelo": "I usually meet my friends at the park on Saturday afternoons.",
+     "min": 7,
+     "chave": [
+      "meet",
+      "at",
+      "on",
+      "in"
+     ],
+     "exp": "Use at + lugar e on + dia."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "See you on Friday at 7 pm.",
+      "See you in Friday at 7 pm.",
+      "See you on Friday in 7 pm.",
+      "See you at Friday on 7 pm."
+     ],
+     "r": 0,
+     "exp": "on + dia, at + hora."
+    },
+    {
+     "t": "gap",
+     "q": "The shop is open from 9 am ___ 6 pm, so we can go after lunch.",
+     "resp": [
+      "to",
+      "until",
+      "till"
+     ],
+     "exp": "from ... to / until ... = de ... até ..."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Saying thank you and sorry",
+   "objetivo": "Agradecer e pedir desculpas por escrito, explicando o que aconteceu.",
+   "foco": "Thanking and apologising; borrow/lend; promises with I'll",
+   "explicacao": [
+    "Para agradecer: Thank you so much for the present! Depois de for use substantivo ou verbo com -ing: Thanks for helping me.",
+    "Para pedir desculpas: I'm really sorry I forgot your book. / I'm sorry about yesterday.",
+    "Explique e ofereça uma solução com I'll: I'll bring it tomorrow.",
+    "borrow = pegar emprestado (Can I borrow your pen?); lend = emprestar (Can you lend me your pen?)."
+   ],
+   "vocab": [
+    {
+     "en": "I'm really sorry",
+     "pt": "Sinto muito mesmo"
+    },
+    {
+     "en": "to forget",
+     "pt": "esquecer"
+    },
+    {
+     "en": "to borrow",
+     "pt": "pegar emprestado"
+    },
+    {
+     "en": "to lend",
+     "pt": "emprestar"
+    },
+    {
+     "en": "to lose",
+     "pt": "perder"
+    },
+    {
+     "en": "I'll ...",
+     "pt": "Eu vou ... (promessa)"
+    },
+    {
+     "en": "present",
+     "pt": "presente"
+    }
+   ],
+   "material": {
+    "tarefa": "You borrowed a book from your English friend, Max, but you lost it. Write an email to Max. In your email: say sorry; explain what happened; say what you will do. Write 25 words or more.",
+    "genero": "email",
+    "min": 25,
+    "max": 45,
+    "modelo": "Dear Max,\nI'm really sorry, but I lost your book about space. I took it on the bus on Monday and I left it on the seat. I'll buy you a new one this weekend.\nSorry again,\nNina",
+    "checklist": [
+     "Respondi aos três pontos da tarefa, um por um?",
+     "Comecei com Hi/Dear + nome e terminei com uma despedida e meu nome?",
+     "Escrevi 25 palavras ou mais?",
+     "Cada frase começa com letra maiúscula e termina com ponto ou ponto de interrogação?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Thanks for ___ me with my homework!",
+     "op": [
+      "help",
+      "helping",
+      "to help",
+      "helped"
+     ],
+     "r": 1,
+     "exp": "Depois de thanks for, verbo com -ing: thanks for helping."
+    },
+    {
+     "t": "gap",
+     "q": "Thank you ___ much for the lovely birthday present!",
+     "resp": [
+      "so",
+      "very"
+     ],
+     "exp": "Thank you so much / very much."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia o pedido de desculpas em voz alta.",
+     "frase": "I'm really sorry I forgot to call you yesterday.",
+     "exp": "Sorry: o r é suave, como em inglês britânico 'sóri'."
+    },
+    {
+     "t": "mc",
+     "q": "You broke your friend's pen. Which is the best message?",
+     "op": [
+      "Your pen is broken.",
+      "I'm sorry I broke your pen. I'll buy you a new one.",
+      "Sorry for you.",
+      "Thanks for breaking your pen."
+     ],
+     "r": 1,
+     "exp": "Peça desculpas e ofereça uma solução."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I'll",
+      "give",
+      "you",
+      "your",
+      "book",
+      "back",
+      "tomorrow"
+     ],
+     "resp": "I'll give you your book back tomorrow.",
+     "exp": "give + pessoa + coisa + back = devolver algo a alguém."
+    },
+    {
+     "t": "gap",
+     "q": "Can I ___ your bike this afternoon? Mine has got a flat tyre.",
+     "resp": [
+      "borrow",
+      "use"
+     ],
+     "exp": "Quem pega emprestado usa borrow: Can I borrow...?"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Peça desculpas pelo atraso e explique o motivo.",
+     "frase": "You are late to meet your friend. Say sorry and explain why.",
+     "modelo": "I'm so sorry I'm late. The bus didn't come, so I walked here.",
+     "min": 7,
+     "chave": [
+      "sorry",
+      "late"
+     ],
+     "exp": "Comece com I'm so sorry e use because ou so."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "Can you borrow me your phone?",
+      "Can you lend me your phone?",
+      "Can you lend your phone me?",
+      "Can I lend your phone?"
+     ],
+     "r": 1,
+     "exp": "lend me = me emprestar. Borrow é para quem recebe."
+    },
+    {
+     "t": "gap",
+     "q": "I'm sorry I didn't come to your party. I ___ feeling very well.",
+     "resp": [
+      "wasn't",
+      "was not"
+     ],
+     "exp": "Passado do verbo be na negativa: I wasn't feeling well."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Asking for help and information",
+   "objetivo": "Fazer pedidos e perguntas educadas num e-mail.",
+   "foco": "Polite requests and question forms: Can/Could you...?, Do you know...?",
+   "explicacao": [
+    "Pedidos: Can you help me? / Could you send me the photos? (could é mais educado).",
+    "Perguntas com do/does/did: o verbo principal fica na forma base: What time does it start? (não starts).",
+    "Pergunta indireta, mais educada: Do you know where the station is? (sem inverter: the station is).",
+    "Termine o pedido agradecendo: Thanks a lot!"
+   ],
+   "vocab": [
+    {
+     "en": "Could you ...?",
+     "pt": "Você poderia ...?"
+    },
+    {
+     "en": "Do you know ...?",
+     "pt": "Você sabe ...?"
+    },
+    {
+     "en": "to send",
+     "pt": "enviar"
+    },
+    {
+     "en": "ticket",
+     "pt": "ingresso, passagem"
+    },
+    {
+     "en": "to cost",
+     "pt": "custar"
+    },
+    {
+     "en": "address",
+     "pt": "endereço"
+    },
+    {
+     "en": "to get there",
+     "pt": "chegar lá"
+    }
+   ],
+   "material": {
+    "tarefa": "Your English friend, Ellie, is going to a music festival next month. You want to go too. Write an email to Ellie. In your email: say that you want to go; ask how much the tickets cost; ask how Ellie is getting there. Write 25 words or more.",
+    "genero": "email",
+    "min": 25,
+    "max": 45,
+    "modelo": "Hi Ellie,\nI saw your post about the music festival. I'd love to come with you! How much do the tickets cost? And how are you getting there? By train or by bus? Could you send me the information?\nThanks a lot,\nDiego",
+    "checklist": [
+     "Respondi aos três pontos da tarefa, um por um?",
+     "Comecei com Hi/Dear + nome e terminei com uma despedida e meu nome?",
+     "Escrevi 25 palavras ou mais?",
+     "Cada frase começa com letra maiúscula e termina com ponto ou ponto de interrogação?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What time ___ the film start?",
+     "op": [
+      "do",
+      "does",
+      "is",
+      "are"
+     ],
+     "r": 1,
+     "exp": "The film = it, então does: What time does the film start?"
+    },
+    {
+     "t": "gap",
+     "q": "___ you send me your new address, please?",
+     "resp": [
+      "Could",
+      "Can",
+      "Would",
+      "Will"
+     ],
+     "exp": "Pedido educado: Could you / Can you...?"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia o pedido em voz alta.",
+     "frase": "Could you send me the information about the trip, please?",
+     "exp": "Could you soa como 'cúdju'."
+    },
+    {
+     "t": "mc",
+     "q": "Which question is correct?",
+     "op": [
+      "Where you bought those shoes?",
+      "Where did you buy those shoes?",
+      "Where did you bought those shoes?",
+      "Where bought you those shoes?"
+     ],
+     "r": 1,
+     "exp": "Com did, o verbo volta para a forma base: did you buy."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "How",
+      "much",
+      "do",
+      "the",
+      "tickets",
+      "cost"
+     ],
+     "resp": "How much do the tickets cost?",
+     "exp": "How much + do + sujeito + cost?"
+    },
+    {
+     "t": "gap",
+     "q": "___ do you get to school? — By bike.",
+     "resp": [
+      "How"
+     ],
+     "exp": "How pergunta o meio de transporte: How do you get to school?"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça duas perguntas ao seu amigo sobre a escola nova.",
+     "frase": "Ask your friend two questions about their new school.",
+     "modelo": "What's your new school like? How many students are there in your class?",
+     "min": 6,
+     "chave": [
+      "what",
+      "how",
+      "where",
+      "who",
+      "do",
+      "is"
+     ],
+     "exp": "Use palavras de pergunta: What, How many, Where, Who."
+    },
+    {
+     "t": "mc",
+     "q": "You want to know the time of the bus. What is the most polite question?",
+     "op": [
+      "Tell me the time of the bus.",
+      "Do you know what time the bus leaves?",
+      "Do you know what time does the bus leave?",
+      "What time the bus leaves?"
+     ],
+     "r": 1,
+     "exp": "Na pergunta indireta (Do you know...), a segunda parte fica na ordem normal: the bus leaves."
+    },
+    {
+     "t": "gap",
+     "q": "Do you know where ___? I want to buy some bread. (the bakery / be)",
+     "resp": [
+      "the bakery is"
+     ],
+     "exp": "Pergunta indireta: Do you know where the bakery is?"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Telling a story in the past",
+   "objetivo": "Contar uma história curta no passado a partir de figuras (Part 7).",
+   "foco": "Past simple: regular and irregular verbs; negatives and questions",
+   "explicacao": [
+    "No Part 7 você conta a história de 3 figuras, com 35 palavras ou mais, normalmente no passado.",
+    "Regulares ganham -ed: walk → walked, stop → stopped, carry → carried.",
+    "Irregulares mudam: go → went, see → saw, find → found, take → took, run → ran.",
+    "Negativa e pergunta usam did + forma base: He didn't see the dog. Did you find it?"
+   ],
+   "vocab": [
+    {
+     "en": "went",
+     "pt": "foi (go)"
+    },
+    {
+     "en": "saw",
+     "pt": "viu (see)"
+    },
+    {
+     "en": "found",
+     "pt": "encontrou (find)"
+    },
+    {
+     "en": "took",
+     "pt": "levou, pegou (take)"
+    },
+    {
+     "en": "ran after",
+     "pt": "correu atrás de"
+    },
+    {
+     "en": "suddenly",
+     "pt": "de repente"
+    },
+    {
+     "en": "to disappear",
+     "pt": "desaparecer"
+    },
+    {
+     "en": "brought back",
+     "pt": "trouxe de volta"
+    }
+   ],
+   "material": {
+    "tarefa": "Look at the three pictures. Write the story shown in the pictures. Picture 1: A boy is walking his dog in the park. Picture 2: The dog runs after a ball and disappears behind some trees. Picture 3: A girl is bringing the dog back to the boy, and he looks happy. Write 35 words or more.",
+    "genero": "story",
+    "min": 35,
+    "max": 60,
+    "modelo": "Last Saturday, Tom took his dog, Max, for a walk in the park. Suddenly, Max saw a ball and ran after it. Then he disappeared behind some trees! Tom looked everywhere. Finally, a girl found Max and brought him back. Tom was very happy.",
+    "checklist": [
+     "Contei o que acontece nas três figuras?",
+     "Usei verbos no passado (went, saw, was playing...)?",
+     "Usei conectivos como First, Then, After that, In the end?",
+     "Escrevi 35 palavras ou mais?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Yesterday we ___ to the beach.",
+     "op": [
+      "go",
+      "went",
+      "goed",
+      "going"
+     ],
+     "r": 1,
+     "exp": "go é irregular: o passado é went."
+    },
+    {
+     "t": "gap",
+     "q": "She ___ a wallet on the street yesterday. (find)",
+     "resp": [
+      "found"
+     ],
+     "exp": "find → found (irregular)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia o começo da história em voz alta.",
+     "frase": "Last Saturday, Tom took his dog for a walk in the park.",
+     "exp": "Took tem som de 'u' curto: 'tuk'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "Did you saw the match?",
+      "Did you see the match?",
+      "You did see the match?",
+      "Saw you the match?"
+     ],
+     "r": 1,
+     "exp": "Com did, o verbo fica na forma base: Did you see...?"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Suddenly",
+      "the",
+      "dog",
+      "ran",
+      "after",
+      "a",
+      "ball"
+     ],
+     "resp": "Suddenly the dog ran after a ball.",
+     "exp": "Suddenly costuma vir no começo da frase."
+    },
+    {
+     "t": "gap",
+     "q": "We ___ any money, so we walked home. (not / have)",
+     "resp": [
+      "didn't have",
+      "did not have"
+     ],
+     "exp": "Negativa no passado: didn't + forma base."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte o que você fez no último fim de semana.",
+     "frase": "What did you do last weekend?",
+     "modelo": "Last weekend I visited my cousins and we played video games. On Sunday I went to the beach.",
+     "min": 8,
+     "chave": [
+      "went",
+      "played",
+      "visited",
+      "watched",
+      "saw",
+      "had",
+      "stayed"
+     ],
+     "exp": "Use verbos no passado: went, played, watched."
+    },
+    {
+     "t": "mc",
+     "q": "Which past form is spelt correctly?",
+     "op": [
+      "stop → stoped",
+      "carry → carryed",
+      "plan → planned",
+      "try → tryed"
+     ],
+     "r": 2,
+     "exp": "Consoante-vogal-consoante dobra: planned, stopped. Consoante + y vira -ied: carried, tried."
+    },
+    {
+     "t": "gap",
+     "q": "When the boy got home, he ___ that his keys were still in the park. (realise)",
+     "resp": [
+      "realised",
+      "realized"
+     ],
+     "exp": "realise → realised (britânico) ou realized (americano)."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "First, then, finally: ordering a story",
+   "objetivo": "Organizar a história em ordem usando conectivos de sequência.",
+   "foco": "Sequencers: first, then, after that, later, finally, in the end",
+   "explicacao": [
+    "Mostre a ordem dos fatos: First, Then, After that, Later, Finally / In the end.",
+    "Vírgula depois de First, After that, Finally: After that, we went home.",
+    "Comece dizendo quando e onde: One Sunday, Ana was at the beach.",
+    "Termine dizendo como os personagens se sentiram: They were tired but happy."
+   ],
+   "vocab": [
+    {
+     "en": "first",
+     "pt": "primeiro"
+    },
+    {
+     "en": "then",
+     "pt": "então, depois"
+    },
+    {
+     "en": "after that",
+     "pt": "depois disso"
+    },
+    {
+     "en": "later",
+     "pt": "mais tarde"
+    },
+    {
+     "en": "in the end",
+     "pt": "no final"
+    },
+    {
+     "en": "one day",
+     "pt": "um dia"
+    },
+    {
+     "en": "to burn",
+     "pt": "queimar"
+    },
+    {
+     "en": "flour",
+     "pt": "farinha"
+    }
+   ],
+   "material": {
+    "tarefa": "Look at the three pictures. Write the story shown in the pictures. Picture 1: A girl is making a cake in the kitchen. Picture 2: The cake is in the oven, and the girl is talking on the phone. Picture 3: Smoke is coming out of the oven, and the girl looks surprised. Write 35 words or more.",
+    "genero": "story",
+    "min": 35,
+    "max": 60,
+    "modelo": "One afternoon, Sara decided to make a chocolate cake for her mum. First, she mixed eggs, sugar and flour. Then she put the cake in the oven. After that, her friend phoned and they talked for a long time. In the end, the cake burned!",
+    "checklist": [
+     "Contei o que acontece nas três figuras?",
+     "Usei verbos no passado (went, saw, was playing...)?",
+     "Usei conectivos como First, Then, After that, In the end?",
+     "Escrevi 35 palavras ou mais?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which word usually starts the LAST part of a story?",
+     "op": [
+      "First",
+      "Then",
+      "Finally",
+      "One day"
+     ],
+     "r": 2,
+     "exp": "Finally (ou In the end) abre a última parte."
+    },
+    {
+     "t": "gap",
+     "q": "___ that, we had lunch in a small café.",
+     "resp": [
+      "After"
+     ],
+     "exp": "After that = depois disso."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia as duas frases em voz alta.",
+     "frase": "First, she mixed the eggs and the sugar. Then she put the cake in the oven.",
+     "exp": "Pausa curta depois de First."
+    },
+    {
+     "t": "mc",
+     "q": "Put the story in order: (a) Then they found a nice place by the river. (b) One Sunday, Leo and Mia went for a bike ride. (c) In the end, they cycled home, tired but happy.",
+     "op": [
+      "a, b, c",
+      "b, a, c",
+      "c, b, a",
+      "b, c, a"
+     ],
+     "r": 1,
+     "exp": "One Sunday começa, Then continua, In the end termina."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "After",
+      "that",
+      "they",
+      "had",
+      "a",
+      "picnic",
+      "by",
+      "the",
+      "river"
+     ],
+     "resp": "After that, they had a picnic by the river.",
+     "exp": "After that vem no começo, seguido de vírgula."
+    },
+    {
+     "t": "gap",
+     "q": "In the ___, everybody laughed and went home.",
+     "resp": [
+      "end"
+     ],
+     "exp": "In the end = no final."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte uma história curta usando first, then e finally.",
+     "frase": "Tell a short story about a day you remember. Use first, then and finally.",
+     "modelo": "Last summer I went to the beach. First, I swam in the sea. Then I had an ice cream. Finally, I went home very tired.",
+     "min": 15,
+     "chave": [
+      "first",
+      "then",
+      "finally",
+      "after"
+     ],
+     "exp": "Use verbos no passado e os conectivos na ordem."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the best first sentence for a story?",
+     "op": [
+      "Then he went home.",
+      "One rainy Monday, Paulo was waiting for the bus.",
+      "Finally, it stopped raining.",
+      "After that, he was happy."
+     ],
+     "r": 1,
+     "exp": "Um bom começo diz quando e quem: One rainy Monday, Paulo..."
+    },
+    {
+     "t": "gap",
+     "q": "The film started at eight. Two hours ___, we were still in the cinema because it was very long.",
+     "resp": [
+      "later"
+     ],
+     "exp": "Two hours later = duas horas depois."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "What was happening? Describing a scene",
+   "objetivo": "Descrever a cena e a ação interrompida com past continuous e past simple.",
+   "foco": "Past continuous and past simple: was/were + -ing, when, while",
+   "explicacao": [
+    "Past continuous (was/were + -ing) mostra ação em andamento no passado: She was reading.",
+    "Com o past simple, mostra uma ação interrompida: I was walking home when it started to rain.",
+    "while + past continuous: While we were eating, the phone rang.",
+    "Ótimo para a primeira figura do Part 7: It was a sunny day and the children were playing in the garden."
+   ],
+   "vocab": [
+    {
+     "en": "while",
+     "pt": "enquanto"
+    },
+    {
+     "en": "when",
+     "pt": "quando"
+    },
+    {
+     "en": "to ring (rang)",
+     "pt": "tocar (telefone, campainha)"
+    },
+    {
+     "en": "to happen",
+     "pt": "acontecer"
+    },
+    {
+     "en": "doorbell",
+     "pt": "campainha"
+    },
+    {
+     "en": "heavily",
+     "pt": "forte (chuva)"
+    },
+    {
+     "en": "wet",
+     "pt": "molhado"
+    }
+   ],
+   "material": {
+    "tarefa": "Look at the three pictures. Write the story shown in the pictures. Picture 1: Two friends are having a picnic in a park on a sunny day. Picture 2: Dark clouds appear and it starts raining heavily. Picture 3: The two friends are sitting in a café, wet but laughing. Write 35 words or more.",
+    "genero": "story",
+    "min": 35,
+    "max": 60,
+    "modelo": "It was a sunny Saturday, and Lia and Ben were having a picnic in the park. They were eating sandwiches when suddenly it started to rain. They picked up their things and ran to a café. They were very wet, but they laughed a lot.",
+    "checklist": [
+     "Contei o que acontece nas três figuras?",
+     "Usei verbos no passado (went, saw, was playing...)?",
+     "Usei conectivos como First, Then, After that, In the end?",
+     "Escrevi 35 palavras ou mais?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "At 8 pm yesterday I ___ TV.",
+     "op": [
+      "watched",
+      "was watching",
+      "am watching",
+      "were watching"
+     ],
+     "r": 1,
+     "exp": "Ação em andamento num momento do passado: was watching."
+    },
+    {
+     "t": "gap",
+     "q": "The children ___ football when it started to rain. (play)",
+     "resp": [
+      "were playing"
+     ],
+     "exp": "children = they → were playing."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "They were eating sandwiches when suddenly it started to rain.",
+     "exp": "Started: o -ed soa 'id': 'stártid'."
+    },
+    {
+     "t": "mc",
+     "q": "While I ___ a shower, someone knocked on the door.",
+     "op": [
+      "had",
+      "was having",
+      "were having",
+      "have"
+     ],
+     "r": 1,
+     "exp": "while + past continuous: was having."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "was",
+      "walking",
+      "home",
+      "when",
+      "I",
+      "saw",
+      "an",
+      "accident"
+     ],
+     "resp": "I was walking home when I saw an accident.",
+     "exp": "Ação longa (was walking) + when + ação curta (saw)."
+    },
+    {
+     "t": "gap",
+     "q": "When the teacher came in, the students ___ loudly. (talk)",
+     "resp": [
+      "were talking"
+     ],
+     "exp": "Ação em andamento quando o professor entrou."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você estava fazendo ontem às 8 da noite.",
+     "frase": "What were you doing at eight o'clock last night?",
+     "modelo": "At eight o'clock last night I was having dinner with my family.",
+     "min": 6,
+     "chave": [
+      "was",
+      "doing",
+      "having",
+      "watching",
+      "studying",
+      "playing"
+     ],
+     "exp": "Use I was + verbo com -ing."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "When the phone rang, I was sleeping.",
+      "When the phone ringing, I was sleeping.",
+      "While the phone rang, I was sleep.",
+      "When the phone rang, I were sleeping."
+     ],
+     "r": 0,
+     "exp": "Ação curta (rang) interrompe ação longa (was sleeping)."
+    },
+    {
+     "t": "gap",
+     "q": "We didn't hear the doorbell because we ___ to loud music. (listen)",
+     "resp": [
+      "were listening"
+     ],
+     "exp": "Ação em andamento: were listening."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Finding and fixing mistakes",
+   "objetivo": "Encontrar e corrigir os erros mais comuns antes de entregar o texto.",
+   "foco": "Error correction: verb forms, articles, word order, false friends",
+   "explicacao": [
+    "Erros comuns de brasileiros: He go → He goes; I have 15 years → I'm 15; I'm boring → I'm bored (entediado).",
+    "Ordem: adjetivo antes do substantivo (a red car) e advérbio de frequência antes do verbo (I always walk).",
+    "a antes de som de consoante, an antes de som de vogal: a book, an apple, an hour.",
+    "Cuidado com falsos amigos: library = biblioteca; bookshop = livraria; actually = na verdade."
+   ],
+   "vocab": [
+    {
+     "en": "mistake",
+     "pt": "erro"
+    },
+    {
+     "en": "to check",
+     "pt": "conferir"
+    },
+    {
+     "en": "bored",
+     "pt": "entediado"
+    },
+    {
+     "en": "boring",
+     "pt": "chato"
+    },
+    {
+     "en": "library",
+     "pt": "biblioteca"
+    },
+    {
+     "en": "actually",
+     "pt": "na verdade"
+    },
+    {
+     "en": "hiking",
+     "pt": "fazer trilha"
+    }
+   ],
+   "material": {
+    "tarefa": "Your English friend, Lou, wants to visit your town. Write an email to Lou. In your email: say when the best time to visit is; say what Lou can do there; say what food Lou should try. Write 25 words or more.",
+    "genero": "email",
+    "min": 25,
+    "max": 50,
+    "modelo": "Hi Lou,\nThe best time to visit my town is in June, because there's a big food festival. You can go hiking in the mountains or visit the old church. You must try pão de queijo. It's a delicious cheese bread!\nLove,\nIsa",
+    "checklist": [
+     "Respondi aos três pontos da tarefa, um por um?",
+     "Comecei com Hi/Dear + nome e terminei com uma despedida e meu nome?",
+     "Escrevi 25 palavras ou mais?",
+     "Cada frase começa com letra maiúscula e termina com ponto ou ponto de interrogação?",
+     "Conferi verbos (he goes), artigos (a/an) e a ordem das palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Find the correct sentence.",
+     "op": [
+      "I have 14 years.",
+      "I am 14 years.",
+      "I'm 14 years old.",
+      "I have 14 years old."
+     ],
+     "r": 2,
+     "exp": "Idade usa o verbo be: I'm 14 (years old)."
+    },
+    {
+     "t": "gap",
+     "q": "Correct the mistake: 'My brother work in a bank.' → My brother ___ in a bank.",
+     "resp": [
+      "works"
+     ],
+     "exp": "he/she/it no present simple ganha -s: works."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "My brother works in a bank, and he always walks to work.",
+     "exp": "Pronuncie o -s final: works, walks."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence has the right word order?",
+     "op": [
+      "I go always to school by bus.",
+      "I always go to school by bus.",
+      "Always I go by bus to school.",
+      "I go to school always by bus."
+     ],
+     "r": 1,
+     "exp": "always vem antes do verbo principal: I always go."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "has",
+      "got",
+      "a",
+      "beautiful",
+      "red",
+      "bike"
+     ],
+     "resp": "She has got a beautiful red bike.",
+     "exp": "Opinião (beautiful) antes de cor (red), e os dois antes do substantivo."
+    },
+    {
+     "t": "gap",
+     "q": "Correct the mistake: 'We waited for a hour.' → We waited for ___ hour.",
+     "resp": [
+      "an"
+     ],
+     "exp": "hour começa com som de vogal (o h é mudo): an hour."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale de alguém da sua família e do que essa pessoa faz.",
+     "frase": "Tell me about a member of your family. What does he or she do?",
+     "modelo": "My mum is a nurse. She works in a hospital and she usually starts work very early.",
+     "min": 8,
+     "chave": [
+      "works",
+      "is",
+      "likes",
+      "goes",
+      "does",
+      "studies"
+     ],
+     "exp": "Cuidado com o -s: she works, he studies."
+    },
+    {
+     "t": "mc",
+     "q": "Read: 'Yesterday I go to the library and borrowed two book.' How many mistakes are there?",
+     "op": [
+      "One",
+      "Two",
+      "Three",
+      "None"
+     ],
+     "r": 1,
+     "exp": "Dois erros: go → went e two book → two books."
+    },
+    {
+     "t": "gap",
+     "q": "Correct the mistake: 'I'm boring in this class, I want to go home.' → I'm ___ in this class.",
+     "resp": [
+      "bored"
+     ],
+     "exp": "bored = entediado (como você se sente); boring = chato (como a coisa é)."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Plan, write, check",
+   "objetivo": "Planejar, escrever e revisar uma história completa com vocabulário variado.",
+   "foco": "Planning a Part 7 story; varied adjectives and adverbs; checking",
+   "explicacao": [
+    "Use 2 minutos para planejar: anote uma ideia para cada figura.",
+    "Escreva uma ou duas frases por figura e ligue com conectivos (First, Then, Unfortunately, Luckily, In the end).",
+    "Varie o vocabulário: em vez de nice, use great, delicious, exciting, beautiful.",
+    "Reserve 2 minutos para conferir: verbos no passado, maiúsculas, pontuação e número de palavras."
+   ],
+   "vocab": [
+    {
+     "en": "unfortunately",
+     "pt": "infelizmente"
+    },
+    {
+     "en": "luckily",
+     "pt": "por sorte"
+    },
+    {
+     "en": "exciting",
+     "pt": "emocionante"
+    },
+    {
+     "en": "frightened",
+     "pt": "assustado"
+    },
+    {
+     "en": "journey",
+     "pt": "viagem, trajeto"
+    },
+    {
+     "en": "to fall asleep (fell)",
+     "pt": "cair no sono"
+    },
+    {
+     "en": "to get off (got off)",
+     "pt": "descer (do trem/ônibus)"
+    },
+    {
+     "en": "grateful",
+     "pt": "agradecido"
+    }
+   ],
+   "material": {
+    "tarefa": "Look at the three pictures. Write the story shown in the pictures. Picture 1: A woman is getting on a train with a big bag. Picture 2: She is sleeping on the train, and her bag is on the seat next to her. Picture 3: She is standing on the platform, and a young man is giving her the bag. Write 35 words or more.",
+    "genero": "story",
+    "min": 35,
+    "max": 70,
+    "modelo": "Last month, Helen took the train to visit her sister in Bristol. The journey was long, so she fell asleep. When the train arrived, she woke up and got off quickly. Unfortunately, she left her bag on the seat. Luckily, a kind young man ran after her and gave it back. Helen thanked him with a big smile.",
+    "checklist": [
+     "Contei o que acontece nas três figuras?",
+     "Usei verbos no passado (went, saw, was playing...)?",
+     "Usei conectivos como First, Then, After that, In the end?",
+     "Escrevi 35 palavras ou mais?",
+     "Usei palavras variadas (não repeti nice, good, very)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which word is better than 'nice' to describe a pizza?",
+     "op": [
+      "exciting",
+      "delicious",
+      "frightened",
+      "boring"
+     ],
+     "r": 1,
+     "exp": "Para comida, delicious."
+    },
+    {
+     "t": "gap",
+     "q": "___, it was raining, so we couldn't play outside.",
+     "resp": [
+      "Unfortunately",
+      "Sadly"
+     ],
+     "exp": "Unfortunately = infelizmente, para algo ruim."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Luckily, a kind young man ran after her and gave her the bag.",
+     "exp": "Luckily: 'lâkili', acento na primeira sílaba."
+    },
+    {
+     "t": "mc",
+     "q": "You are checking your story. Which sentence must you correct?",
+     "op": [
+      "She was very tired but happy.",
+      "Then she take the bus home.",
+      "After that, they had lunch.",
+      "In the end, everyone laughed."
+     ],
+     "r": 1,
+     "exp": "A história está no passado: Then she took the bus home."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "When",
+      "the",
+      "train",
+      "arrived",
+      "she",
+      "got",
+      "off",
+      "quickly"
+     ],
+     "resp": "When the train arrived, she got off quickly.",
+     "exp": "When + ação, vírgula, e a ação principal."
+    },
+    {
+     "t": "gap",
+     "q": "The film was so ___ that I didn't want it to end! (EXCITE)",
+     "resp": [
+      "exciting"
+     ],
+     "exp": "-ing descreve a coisa (exciting); -ed descreve a pessoa (excited).",
+     "dica": "EXCITE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte o que aconteceu na cena da figura.",
+     "frase": "Picture: a family is having a picnic on the beach, and a big wave is coming. Say what happened.",
+     "modelo": "The family was having a picnic on the beach when a big wave came. Everyone got wet, but in the end they laughed.",
+     "min": 12,
+     "chave": [
+      "was",
+      "were",
+      "wave",
+      "when",
+      "suddenly",
+      "wet"
+     ],
+     "exp": "Use was/were + -ing para a cena e o past simple para o que aconteceu."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the best ending for Helen's story?",
+     "op": [
+      "The train was long.",
+      "Helen was very grateful, and she thanked the man.",
+      "There are many trains in England.",
+      "Trains are fast."
+     ],
+     "r": 1,
+     "exp": "Um bom final fecha a história e mostra como a personagem se sentiu."
+    },
+    {
+     "t": "gap",
+     "q": "The little boy was ___ because a big dog was barking at him. (FRIGHTEN)",
+     "resp": [
+      "frightened"
+     ],
+     "exp": "Sentimento da pessoa: -ed → frightened.",
+     "dica": "FRIGHTEN"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Practice test: Writing Parts 6 and 7",
+   "objetivo": "Fazer as duas partes de escrita do A2 Key no formato real da prova.",
+   "foco": "A2 Key Writing Part 6 (email) and Part 7 (picture story)",
+   "explicacao": [
+    "Este é um simulado: faça o Part 6 (e-mail, 25+ palavras) e o Part 7 (história, 35+ palavras).",
+    "Part 6: responda aos três pontos. Part 7: conte as três figuras, no passado.",
+    "Tempo sugerido: 10 minutos para cada parte, com 2 minutos para conferir no final."
+   ],
+   "vocab": [
+    {
+     "en": "to kick",
+     "pt": "chutar"
+    },
+    {
+     "en": "to break (broke)",
+     "pt": "quebrar"
+    },
+    {
+     "en": "next door",
+     "pt": "na casa ao lado"
+    },
+    {
+     "en": "neighbour",
+     "pt": "vizinho(a)"
+    },
+    {
+     "en": "to feel terrible",
+     "pt": "sentir-se péssimo"
+    },
+    {
+     "en": "to pay for (paid)",
+     "pt": "pagar por"
+    },
+    {
+     "en": "animated film",
+     "pt": "filme de animação"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 6: You want to go to the cinema with your English friend, Alex, on Saturday. Write an email to Alex. In your email: invite Alex to the cinema; say which film you want to see; say where you can meet. Write 25 words or more.\n\nPart 7: Look at the three pictures. Write the story shown in the pictures. Picture 1: A boy is playing football in his garden. Picture 2: The ball goes over the wall and breaks the neighbour's window. Picture 3: The boy and his dad are talking to the neighbour at her door, and the boy looks sorry. Write 35 words or more.",
+    "genero": "email + story",
+    "min": 60,
+    "max": 110,
+    "modelo": "Part 6:\nHi Alex,\nWould you like to come to the cinema with me on Saturday? I want to see the new animated film about dragons. Let's meet outside the shopping centre at three o'clock.\nSee you,\nGabi\n\nPart 7:\nOne afternoon, Ricky was playing football in his garden. He kicked the ball very hard and it broke Mrs Lee's window! Ricky felt terrible. Later, he and his dad went next door to say sorry. In the end, they paid for a new window and Mrs Lee smiled.",
+    "checklist": [
+     "Part 6: respondi aos três pontos (convite, filme, lugar) e escrevi 25+ palavras?",
+     "Part 7: contei as três figuras, no passado, com 35+ palavras?",
+     "Usei conectivos (and, but, because, then, in the end)?",
+     "Conferi maiúsculas, pontuação e ortografia?",
+     "Controlei o tempo: cerca de 10 minutos para cada parte?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Part 6 task: 'invite Alex, say which film, say where to meet'. Which point is missing? 'Hi Alex, do you want to see Space Heroes on Saturday? See you, Gabi'",
+     "op": [
+      "The invitation",
+      "The film",
+      "The meeting place",
+      "Nothing is missing"
+     ],
+     "r": 2,
+     "exp": "Falta dizer onde vocês vão se encontrar."
+    },
+    {
+     "t": "gap",
+     "q": "Would you like to come ___ the cinema with me?",
+     "resp": [
+      "to"
+     ],
+     "exp": "come to + lugar."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia o convite em voz alta.",
+     "frase": "Would you like to come to the cinema with me on Saturday?",
+     "exp": "A voz sobe no final da pergunta."
+    },
+    {
+     "t": "mc",
+     "q": "Ricky ___ football when the ball broke the window.",
+     "op": [
+      "played",
+      "was playing",
+      "is playing",
+      "plays"
+     ],
+     "r": 1,
+     "exp": "Ação em andamento interrompida: was playing."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Let's",
+      "meet",
+      "outside",
+      "the",
+      "shopping",
+      "centre",
+      "at",
+      "three"
+     ],
+     "resp": "Let's meet outside the shopping centre at three.",
+     "exp": "Let's + verbo, depois lugar e hora."
+    },
+    {
+     "t": "gap",
+     "q": "He kicked the ball very hard and it ___ the window. (break)",
+     "resp": [
+      "broke"
+     ],
+     "exp": "break → broke (irregular)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte a história das figuras do Part 7 em voz alta.",
+     "frase": "Tell the story of the boy and the broken window in three or four sentences.",
+     "modelo": "Ricky was playing football in the garden. He kicked the ball and broke the neighbour's window. He felt terrible, so he said sorry. In the end, his dad paid for a new window.",
+     "min": 20,
+     "chave": [
+      "ball",
+      "window",
+      "broke",
+      "sorry"
+     ],
+     "exp": "Use o passado e conectivos: then, so, in the end."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence shows how a character felt?",
+     "op": [
+      "He kicked the ball.",
+      "Ricky felt terrible.",
+      "The window was big.",
+      "They went next door."
+     ],
+     "r": 1,
+     "exp": "felt terrible mostra o sentimento do personagem, o que deixa a história mais rica."
+    },
+    {
+     "t": "gap",
+     "q": "Ricky and his dad went next door to ___ sorry to Mrs Lee.",
+     "resp": [
+      "say"
+     ],
+     "exp": "say sorry = pedir desculpas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "In",
+      "the",
+      "end",
+      "they",
+      "paid",
+      "for",
+      "a",
+      "new",
+      "window"
+     ],
+     "resp": "In the end, they paid for a new window.",
+     "exp": "In the end abre a frase final."
+    },
+    {
+     "t": "mc",
+     "q": "Read: 'Last week me and my friend go to a concert. It were amazing.' Which correction is right?",
+     "op": [
+      "Last week my friend and I went to a concert. It was amazing.",
+      "Last week me and my friend went to a concert. It were amazing.",
+      "Last week my friend and I go to a concert. It was amazing.",
+      "Last week I and my friend went to a concert. It were amazing."
+     ],
+     "r": 0,
+     "exp": "Três correções: my friend and I, went (passado) e it was."
+    },
+    {
+     "t": "gap",
+     "q": "I'm sorry I can't come on Saturday. ___ we go on Sunday instead?",
+     "resp": [
+      "Can",
+      "Could",
+      "Shall"
+     ],
+     "exp": "Sugestão em pergunta: Can/Could/Shall we...?"
+    }
+   ]
+  }
+ ]
+}
