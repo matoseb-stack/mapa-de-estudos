@@ -1,0 +1,2408 @@
+{
+ "nivel": "B2",
+ "skill": "reading",
+ "exame": "B2 First (FCE)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "The return of the paper map",
+   "objetivo": "Entender um artigo de revista e escolher entre present perfect e past simple.",
+   "foco": "Present perfect vs past simple; for, since, ago, ever, yet, first time",
+   "explicacao": [
+    "Present perfect (have/has + particípio) liga o passado ao presente: Sales have risen for three years.",
+    "Past simple fala de um momento terminado e datado: Dr Hendry carried out a study in 2021. Com ago, last year, in 2019 use past simple.",
+    "For = por quanto tempo (for ten years). Since = desde quando (since 2011).",
+    "Depois de 'This is the first time...' use present perfect: This is the first time I have used a paper map."
+   ],
+   "vocab": [
+    {
+     "en": "relic",
+     "pt": "relíquia"
+    },
+    {
+     "en": "to stock",
+     "pt": "ter à venda (loja)"
+    },
+    {
+     "en": "to rely on",
+     "pt": "depender de"
+    },
+    {
+     "en": "signal",
+     "pt": "sinal (de celular)"
+    },
+    {
+     "en": "lasting",
+     "pt": "duradouro"
+    },
+    {
+     "en": "to get lost",
+     "pt": "perder-se"
+    },
+    {
+     "en": "reliable",
+     "pt": "confiável"
+    },
+    {
+     "en": "fog",
+     "pt": "neblina"
+    }
+   ],
+   "material": {
+    "titulo": "The map is back",
+    "texto": "For most of the last decade, paper maps have been treated as relics. Since smartphones became widespread, sales have fallen steadily, and several high-street shops have closed. Yet something unexpected has happened recently: map publishers report that sales have risen for three years in a row.\n\nClara Jennings runs a small bookshop in Leeds and has stocked walking maps since she opened it in 2011. 'Last spring, I sold more maps than in the whole of 2019,' she says. 'Most customers are under thirty. They've grown up with satellite navigation, and they've just discovered that a map shows you the whole landscape at once.' She adds that many of them have never folded one properly.\n\nNot everyone is convinced it is a lasting trend. Dr Paul Hendry, who has researched navigation habits for over fifteen years, points out that people who rely on apps often fail to remember routes. 'In a study we carried out in 2021, drivers who used a paper map recalled the road far better a week later,' he explains. However, he admits that no one has yet proved that maps make people better navigators in the long term.\n\nMeanwhile, hikers have their own reasons. A phone battery can die, and mountain signals are unreliable. Tom Reeve, a mountain guide, has led groups across the Lake District since 2005 and has never gone out without a map and compass. 'Two years ago a client's phone stopped working in thick fog,' he recalls. 'We simply followed the map down. Nobody has ever got lost on my walks, and I'd like to keep it that way.'\n\nSo are maps back for good? Probably not entirely. Most people will carry on using their phones for everyday journeys. But for those who want to understand where they are, rather than just where to turn next, the humble paper map has clearly found a new audience."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "According to the article, what has happened to map sales recently?",
+     "op": [
+      "They have fallen since smartphones became common.",
+      "They have risen for three years in a row.",
+      "They have stayed the same since 2019.",
+      "They have risen only in mountain areas."
+     ],
+     "r": 1,
+     "exp": "O texto diz: sales have risen for three years in a row. A queda (fallen) foi no passado, desde os smartphones."
+    },
+    {
+     "t": "gap",
+     "q": "Clara has stocked walking maps ___ 2011.",
+     "resp": [
+      "since"
+     ],
+     "exp": "2011 é um ponto no tempo (desde quando), então usamos since. For seria usado com um período: for twelve years."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Map publishers report that sales have risen for three years in a row.",
+     "exp": "Have risen: /hav RI-zen/. Publishers: PÂ-bli-xers. Fale 'three' com a língua entre os dentes."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "Dr Hendry has carried out the study in 2021.",
+      "Dr Hendry carried out the study in 2021.",
+      "Dr Hendry has been carrying out the study in 2021.",
+      "Dr Hendry is carrying out the study in 2021."
+     ],
+     "r": 1,
+     "exp": "Com uma data fechada (in 2021) usamos past simple, nunca present perfect."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Tom",
+      "has",
+      "led",
+      "groups",
+      "across",
+      "the",
+      "Lake",
+      "District",
+      "since",
+      "2005"
+     ],
+     "resp": "Tom has led groups across the Lake District since 2005",
+     "exp": "Present perfect + since + ponto no tempo: has led ... since 2005."
+    },
+    {
+     "t": "gap",
+     "q": "This is the first time I ___ a paper map properly.",
+     "resp": [
+      "have used",
+      "'ve used",
+      "have read",
+      "'ve read",
+      "have folded"
+     ],
+     "exp": "Depois de 'the first time' usamos present perfect: I have used. Aceitamos verbos que fazem sentido com map, como read."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Have you ever used a paper map? Tell me about it.",
+     "frase": "Have you ever used a paper map?",
+     "modelo": "Yes, I have. Last year I used one on a walk in the mountains because my phone had no signal.",
+     "min": 5,
+     "chave": [
+      "map",
+      "used",
+      "never",
+      "yes",
+      "have",
+      "I",
+      "phone"
+     ],
+     "exp": "Responda com present perfect (I have used / I've never used) e depois dê um detalhe no past simple (Last year I used...)."
+    },
+    {
+     "t": "mc",
+     "q": "What does Dr Hendry admit in the article?",
+     "op": [
+      "Paper maps are better than apps for drivers.",
+      "Nobody has proved that maps improve navigation in the long term.",
+      "His study from 2021 was unreliable.",
+      "Most young people dislike satellite navigation."
+     ],
+     "r": 1,
+     "exp": "Ele diz que ninguém provou ainda (no one has yet proved) o benefício a longo prazo. O estudo de 2021 mostrou memória melhor, mas não é isso que ele admite."
+    },
+    {
+     "t": "gap",
+     "q": "Original: I last visited the Lake District in 2018. KEY WORD: BEEN — I ___ the Lake District since 2018.",
+     "resp": [
+      "haven't been to",
+      "have not been to",
+      "haven't been in",
+      "have not been in"
+     ],
+     "exp": "Última vez em 2018 = não vou desde 2018: I haven't been to the Lake District since 2018."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "The night the lights went out",
+   "objetivo": "Acompanhar uma história com vários tempos do passado e saber qual ação veio primeiro.",
+   "foco": "Past simple, past continuous, past perfect and past perfect continuous",
+   "explicacao": [
+    "Past simple conta os fatos da história: The lights went out.",
+    "Past continuous descreve o cenário ou uma ação em andamento: Marta was standing in the lift.",
+    "Past perfect (had + particípio) é a ação que aconteceu ANTES de outra no passado: She had pressed the button when everything went dark.",
+    "Past perfect continuous (had been + -ing) mostra uma ação longa que vinha acontecendo antes: She had been working late."
+   ],
+   "vocab": [
+    {
+     "en": "power cut",
+     "pt": "queda de energia"
+    },
+    {
+     "en": "lift",
+     "pt": "elevador (UK)"
+    },
+    {
+     "en": "torch",
+     "pt": "lanterna"
+    },
+    {
+     "en": "shift",
+     "pt": "turno de trabalho"
+    },
+    {
+     "en": "to dread",
+     "pt": "temer, ter pavor de"
+    },
+    {
+     "en": "fire brigade",
+     "pt": "corpo de bombeiros"
+    },
+    {
+     "en": "stranger",
+     "pt": "desconhecido(a)"
+    },
+    {
+     "en": "to creep",
+     "pt": "avançar devagar"
+    }
+   ],
+   "material": {
+    "titulo": "Stuck in the lift",
+    "texto": "When the power failed across the east of the city at 7.40 p.m., Marta Silva was standing in the lift of her office block. She had been working late on a presentation for a client, and she had just pressed the button for the ground floor when everything went dark. For a few seconds, nobody spoke. Then a man's voice said, calmly, 'I think we're stuck.'\n\nThere were five people in the lift. They had never met before, but within minutes they were sharing phone torches and telling stories. A nurse called Imran had been travelling home from a double shift and was so tired that he soon fell asleep against the wall. A teenager named Josh had been delivering parcels all day and kept apologising for the smell of his pizza boxes. Marta, who had been dreading the presentation, found herself laughing for the first time that week.\n\nMeanwhile, outside, the streets were chaotic. Traffic lights had stopped working, and drivers were hooting at one another as they crept through the junctions. By the time the fire brigade arrived at the building, the temperature inside the lift had risen alarmingly. Nobody had thought to bring water.\n\nFirefighters opened the doors after almost two hours. As Marta stepped out, she realised she had left her bag inside, and she went back for it. That was when she noticed the others exchanging phone numbers. 'We had spent two hours together,' she wrote later in a local newspaper, 'and yet I had learnt more about those strangers than about colleagues I'd sat beside for years.'\n\nThe five still meet every March on the anniversary. Josh says the pizza boxes are optional, but nobody believes him."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What had Marta done just before the lights went out?",
+     "op": [
+      "She had finished her presentation.",
+      "She had pressed the button for the ground floor.",
+      "She had called her client.",
+      "She had fallen asleep."
+     ],
+     "r": 1,
+     "exp": "O texto diz: she had just pressed the button for the ground floor when everything went dark."
+    },
+    {
+     "t": "gap",
+     "q": "By the time the fire brigade arrived, the temperature in the lift ___ risen alarmingly.",
+     "resp": [
+      "had"
+     ],
+     "exp": "A subida da temperatura aconteceu antes da chegada dos bombeiros: past perfect (had risen)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "She had been working late on a presentation when everything went dark.",
+     "exp": "Had been working: 'rédbin UÓR-quin'. Presentation: pre-zen-TEI-xon. Dark: dárk, com o R fraco."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "When I arrived, the film already started.",
+      "When I arrived, the film had already started.",
+      "When I had arrived, the film already started.",
+      "When I arrived, the film has already started."
+     ],
+     "r": 1,
+     "exp": "O filme começou ANTES da chegada: past perfect na ação mais antiga (had already started) e past simple na mais recente (arrived)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Imran",
+      "had",
+      "been",
+      "travelling",
+      "home",
+      "from",
+      "a",
+      "double",
+      "shift"
+     ],
+     "resp": "Imran had been travelling home from a double shift",
+     "exp": "Past perfect continuous: had been + verbo-ing. Mostra o que ele vinha fazendo antes de dormir."
+    },
+    {
+     "t": "gap",
+     "q": "Josh looked exhausted because he ___ parcels since six that morning.",
+     "resp": [
+      "had been delivering"
+     ],
+     "exp": "Ação longa que vinha acontecendo até aquele momento do passado: had been delivering."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Tell me about a time when something unexpected happened to you.",
+     "frase": "Tell me about a time when something unexpected happened to you.",
+     "modelo": "I was waiting for a bus when it suddenly started to rain heavily. I hadn't brought an umbrella, so I ran into a café.",
+     "min": 8,
+     "chave": [
+      "was",
+      "were",
+      "had",
+      "when",
+      "while",
+      "suddenly"
+     ],
+     "exp": "Use past continuous para o cenário (I was waiting...), past simple para o fato (it started to rain) e past perfect para o que veio antes (I hadn't brought...)."
+    },
+    {
+     "t": "mc",
+     "q": "What does Marta mean when she says she had 'learnt more about those strangers than about colleagues'?",
+     "op": [
+      "The strangers were more interesting than her colleagues.",
+      "Two hours in the lift taught her more about them than years beside her colleagues.",
+      "She prefers to work with strangers.",
+      "Her colleagues refused to talk to her."
+     ],
+     "r": 1,
+     "exp": "Ela compara o conhecimento: em duas horas conheceu melhor os estranhos do que colegas de anos. Não diz que prefere os estranhos."
+    },
+    {
+     "t": "gap",
+     "q": "When we reached the station, the train ___.",
+     "resp": [
+      "had already left",
+      "had left already",
+      "had gone already",
+      "had already gone"
+     ],
+     "exp": "O trem saiu antes de chegarmos: past perfect. Já = already, entre had e o particípio. (Original: The train left. Then we reached the station. Palavra-chave: ALREADY)"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Living in 2050",
+   "objetivo": "Escolher a forma certa de futuro (will, going to, present continuous, future continuous, future perfect).",
+   "foco": "Future forms: will, going to, present continuous, future continuous, future perfect, be about to, be due to",
+   "explicacao": [
+    "Will: previsão e decisão na hora. Going to: plano ou previsão com evidência (Look at those clouds!).",
+    "Present continuous: arranjo já combinado. The bridge is opening on Saturday.",
+    "Future continuous (will be + -ing): ação em andamento num momento futuro. This time next year I'll be working in London.",
+    "Future perfect (will have + particípio): ação terminada ANTES de um momento futuro. By 2040 we will have planted 50,000 trees.",
+    "Be about to = prestes a. Be due to = está previsto para (horário oficial)."
+   ],
+   "vocab": [
+    {
+     "en": "planner",
+     "pt": "planejador(a) urbano(a)"
+    },
+    {
+     "en": "to cope with",
+     "pt": "lidar com"
+    },
+    {
+     "en": "to unveil",
+     "pt": "revelar, apresentar"
+    },
+    {
+     "en": "timetable",
+     "pt": "calendário, cronograma"
+    },
+    {
+     "en": "carbon-neutral",
+     "pt": "neutro em carbono"
+    },
+    {
+     "en": "tram",
+     "pt": "bonde"
+    },
+    {
+     "en": "neighbourhood",
+     "pt": "bairro, vizinhança"
+    },
+    {
+     "en": "to block",
+     "pt": "bloquear"
+    }
+   ],
+   "material": {
+    "titulo": "The city of the future",
+    "texto": "By 2050, roughly two-thirds of the world's population will be living in cities. Planners in Dunmore, a coastal city of 400,000 people, are not waiting to find out what that means. Next month the council is due to unveil a thirty-year plan, and its head, Helen Brandt, says it will change daily life more than most residents expect.\n\n'This time next decade, we'll have closed the city centre to private cars,' she explains. 'Buses and trams will be running every three minutes, and by 2040 we will have planted 50,000 trees.' Critics doubt the timetable. Local taxi driver Ray Ellis thinks the plan is about to hit a wall of public anger. 'People are going to protest the moment the first road is blocked,' he predicts. 'They always do.'\n\nYet some projects are already under way. A new cycle bridge is opening on Saturday, and engineers are fitting solar panels to every school this summer. Brandt hopes that by the time today's primary pupils graduate, the city will have become almost carbon-neutral. 'I won't be mayor then,' she laughs. 'I'll probably be sitting in a park, complaining that the trees block my view.'\n\nNot all of the changes are about transport. Within ten years, apartment blocks will share rooftop gardens and neighbours will be swapping tools through a council-run app. Sociologist Dr Naomi Stein believes this could matter more than any new tram line. 'In 2035 many people won't be working in offices at all, so the neighbourhood will become the centre of their lives,' she says.\n\nWhether Dunmore succeeds remains to be seen. As Brandt admits, 'We're just about to find out if people want the city we're designing for them.'"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is Dunmore's council due to do next month?",
+     "op": [
+      "Open a new cycle bridge.",
+      "Present a thirty-year plan.",
+      "Close the city centre to cars.",
+      "Choose a new mayor."
+     ],
+     "r": 1,
+     "exp": "O texto diz: the council is due to unveil a thirty-year plan. A ponte abre no sábado, e o centro só fechará daqui a uma década."
+    },
+    {
+     "t": "gap",
+     "q": "Look at those black clouds! It ___ rain.",
+     "resp": [
+      "is going to",
+      "'s going to",
+      "is about to",
+      "'s about to"
+     ],
+     "exp": "Há evidência agora (nuvens pretas): going to ou be about to."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "By 2040 the council will have planted fifty thousand trees.",
+     "exp": "Will have planted: 'uíl rév PLAN-tid'. Thousand: THAU-zend. Trees: tríis."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence describes an action that will be finished before a point in the future?",
+     "op": [
+      "By 2040 we will plant 50,000 trees.",
+      "By 2040 we will have planted 50,000 trees.",
+      "By 2040 we will be planting 50,000 trees.",
+      "By 2040 we are planting 50,000 trees."
+     ],
+     "r": 1,
+     "exp": "Future perfect (will have + particípio) = completo antes de um momento futuro. Will be planting mostraria a ação ainda em andamento."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "This",
+      "time",
+      "next",
+      "year",
+      "I",
+      "will",
+      "be",
+      "working",
+      "in",
+      "London"
+     ],
+     "resp": "This time next year I will be working in London",
+     "exp": "Future continuous: will be + verbo-ing, para ação em andamento em um momento futuro."
+    },
+    {
+     "t": "gap",
+     "q": "Don't phone me at eight tomorrow. I ___ dinner with my parents.",
+     "resp": [
+      "will be having",
+      "'ll be having",
+      "am having",
+      "'m having"
+     ],
+     "exp": "Em um momento futuro específico, a ação estará em andamento: will be having. O present continuous também serve para um plano combinado."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "What do you think your city will be like in thirty years?",
+     "frase": "What do you think your city will be like in thirty years?",
+     "modelo": "I think it will be much greener. By then, most people will be driving electric cars and the buses will be running all night.",
+     "min": 8,
+     "chave": [
+      "will",
+      "going to",
+      "by",
+      "probably",
+      "think",
+      "cities",
+      "city"
+     ],
+     "exp": "Use will para previsões e, se quiser impressionar, future continuous (will be running) ou future perfect (will have changed)."
+    },
+    {
+     "t": "mc",
+     "q": "According to Dr Stein, why might neighbourhoods matter more in 2035?",
+     "op": [
+      "Tram lines will have disappeared.",
+      "Many people will no longer work in offices.",
+      "Apartment blocks will be much cheaper.",
+      "The council will have closed the city centre."
+     ],
+     "r": 1,
+     "exp": "Ela diz: many people won't be working in offices at all, so the neighbourhood will become the centre of their lives."
+    },
+    {
+     "t": "gap",
+     "q": "Original: The council plans to open the bridge on Saturday. KEY WORD: DUE — The bridge ___ open on Saturday.",
+     "resp": [
+      "is due to",
+      "'s due to"
+     ],
+     "exp": "Be due to = está previsto para (planejado oficialmente)."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "The vanishing painting",
+   "objetivo": "Entender notícias que usam a voz passiva e estruturas como 'is said to have'.",
+   "foco": "Passive voice: perfect, modal, reporting passives, have something done",
+   "explicacao": [
+    "Passiva: be + particípio. The painting was stolen. Com tempos perfeitos: had been hanging, has been found. Depois de preposição: before being rediscovered.",
+    "Passiva de relato (notícias): It is believed that the thief... = The thief is believed to have known the building.",
+    "Use to + have + particípio para algo que aconteceu antes: is said to have escaped. Use to + verbo para o presente: is thought to live abroad.",
+    "Have something done = outra pessoa faz o serviço para você: I'm having my flat painted. We had our cameras checked."
+   ],
+   "vocab": [
+    {
+     "en": "theft",
+     "pt": "roubo"
+    },
+    {
+     "en": "alarm",
+     "pt": "alarme"
+    },
+    {
+     "en": "contractor",
+     "pt": "empreiteiro(a)"
+    },
+    {
+     "en": "to overhaul",
+     "pt": "reformar por completo"
+    },
+    {
+     "en": "to come forward",
+     "pt": "apresentar-se (com informação)"
+    },
+    {
+     "en": "fortnight",
+     "pt": "quinzena, duas semanas"
+    },
+    {
+     "en": "to rediscover",
+     "pt": "redescobrir"
+    },
+    {
+     "en": "valued at",
+     "pt": "avaliado em"
+    }
+   ],
+   "material": {
+    "titulo": "A theft at the Harbour Gallery",
+    "texto": "The disappearance of 'Evening at the Quay', a small oil painting by the Scottish artist Isla Rennie, was discovered on a rainy Monday in March. It is believed to have been taken during the weekend, when the Harbour Gallery in Aberdeen was being repaired and the alarm system had been switched off. The painting, which was valued at £400,000, had been hanging in the same room for forty years.\n\nThe gallery's director, Calum Reid, says that the theft was carefully planned. 'Our locks had been replaced only a fortnight earlier, and yet the thief got in without any damage,' he says. 'Whoever it was must have known the building well.' Police are said to be looking at the contractors who were working there. One of them is reported to have left the country on Sunday evening, although his employer says he had booked the trip long before.\n\nMeanwhile, art historians are worried. Rennie's work is rarely seen, and the paintings that survive are thought to number fewer than sixty. If the picture is sold abroad, it may never be seen again. Dr Fiona Marsh, an expert on Scottish art, notes that stolen works are often kept in private collections for decades before being rediscovered. 'Several paintings that were lost in the 1970s have only recently been found,' she says.\n\nThe gallery, for its part, is getting its security system completely overhauled. Reid admits that it should have been done years ago. 'We had our cameras checked every year, but nobody had ever tested the alarm at night,' he says. Visitors will be allowed back next month, though the empty space on the wall will remain as a reminder. 'We'd like people to see what has been lost,' says Reid. 'And if anyone has information, we're asking them to come forward.'"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "When is the painting believed to have been taken?",
+     "op": [
+      "During the weekend.",
+      "On Monday morning.",
+      "Forty years ago.",
+      "Two weeks before the discovery."
+     ],
+     "r": 0,
+     "exp": "O texto diz: It is believed to have been taken during the weekend. Segunda-feira foi quando perceberam, e as fechaduras é que foram trocadas duas semanas antes."
+    },
+    {
+     "t": "gap",
+     "q": "Stolen works are often kept in private collections for decades before ___ rediscovered.",
+     "resp": [
+      "being"
+     ],
+     "exp": "Depois de preposição (before) usamos -ing; na passiva: before being rediscovered."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "It is believed to have been taken during the weekend.",
+     "exp": "Believed: bi-LÍIVD. Taken: TEI-ken. Weekend: uíi-KÉND, com força na última sílaba."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct and means 'People believe the thief knew the building well'?",
+     "op": [
+      "The thief is believed to have known the building well.",
+      "The thief is believed knowing the building well.",
+      "It is believed the thief to have known the building well.",
+      "The thief believes to have known the building well."
+     ],
+     "r": 0,
+     "exp": "Passiva de relato: sujeito + is believed + to have + particípio (conhecimento no passado)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Several",
+      "paintings",
+      "that",
+      "were",
+      "lost",
+      "in",
+      "the",
+      "1970s",
+      "have",
+      "only",
+      "recently",
+      "been",
+      "found"
+     ],
+     "resp": "Several paintings that were lost in the 1970s have only recently been found",
+     "exp": "Present perfect passivo: have been found. Only recently fica antes de been."
+    },
+    {
+     "t": "gap",
+     "q": "I'm having my flat ___ next week.",
+     "resp": [
+      "painted",
+      "decorated",
+      "cleaned"
+     ],
+     "exp": "Have something done: have + objeto + particípio. A pessoa não pinta, outra pessoa faz o serviço.",
+     "dica": "PAINT"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Is there a famous building or object in your country that has been damaged or lost? Tell me about it.",
+     "frase": "Is there a famous building or object in your country that has been damaged or lost?",
+     "modelo": "Yes, the National Museum in Rio was destroyed by a fire in 2018. Many objects were lost, and the building is being rebuilt now.",
+     "min": 8,
+     "chave": [
+      "was",
+      "were",
+      "has been",
+      "is being",
+      "destroyed",
+      "damaged",
+      "lost",
+      "stolen",
+      "fire"
+     ],
+     "exp": "Use passiva: was destroyed, were lost, has been rebuilt. Não precisa dizer quem fez."
+    },
+    {
+     "t": "mc",
+     "q": "What does Reid admit about the security system?",
+     "op": [
+      "Nobody had ever tested the alarm at night.",
+      "The cameras had never been checked.",
+      "The new locks were poor quality.",
+      "The contractors had ignored his warnings."
+     ],
+     "r": 0,
+     "exp": "Ele diz que as câmeras eram verificadas todo ano, mas ninguém tinha testado o alarme à noite."
+    },
+    {
+     "t": "gap",
+     "q": "Original: People say that the thief entered through a window. KEY WORD: SAID — The thief ___ entered through a window.",
+     "resp": [
+      "is said to have"
+     ],
+     "exp": "Passiva de relato com ação passada: is said to have + particípio."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "A different path",
+   "objetivo": "Entender condicionais (inclusive mistas) numa história de vida.",
+   "foco": "Conditionals: zero, first, second, third and mixed; unless, provided, if it weren't for",
+   "explicacao": [
+    "Second conditional: If + past simple, would + verbo (situação imaginária no presente). Third: If + past perfect, would have + particípio (passado irreal).",
+    "Mixed: passado irreal com resultado no presente: If I hadn't missed that flight, I'd still be an accountant now. Ou presente irreal com resultado no passado: If I were braver, I'd have asked.",
+    "Unless = if not. Provided/providing (that) e as long as = apenas se.",
+    "If it weren't for... (agora) e If it hadn't been for... (passado) = se não fosse por. Also: Had it not been for... (formal)."
+   ],
+   "vocab": [
+    {
+     "en": "accountant",
+     "pt": "contador(a)"
+    },
+    {
+     "en": "flour",
+     "pt": "farinha"
+    },
+    {
+     "en": "to knead",
+     "pt": "sovar, amassar"
+    },
+    {
+     "en": "safety net",
+     "pt": "rede de segurança"
+    },
+    {
+     "en": "complacent",
+     "pt": "acomodado(a)"
+    },
+    {
+     "en": "to expand",
+     "pt": "expandir"
+    },
+    {
+     "en": "to go under",
+     "pt": "falir"
+    },
+    {
+     "en": "by chance",
+     "pt": "por acaso"
+    }
+   ],
+   "material": {
+    "titulo": "The baker who was an accountant",
+    "texto": "Daniel Okafor never planned to become a baker. Ten years ago he was a junior accountant in Manchester, working long hours in a job he found dull. 'If someone had told me then that I'd be up at four every morning covered in flour, I'd have laughed,' he says.\n\nThe change began by accident. One winter, Daniel's firm sent him to a conference in Lyon. His flight was cancelled and, unless he found a hotel, he would have to sleep at the airport. By chance, the only room available was above a bakery. 'I woke at five to the smell of bread,' he recalls. 'If I hadn't missed that flight, I wouldn't have walked downstairs, and I'd probably still be doing spreadsheets.' The owner, an elderly woman called Mireille, let him watch her work. By the end of the week he was kneading dough.\n\nBack home, Daniel kept baking in the evenings. His flatmates ate so much of it that, as he puts it, 'they'd have been bankrupt if they'd had to pay'. Eventually a friend suggested he sell at a weekend market. Within a year, he had left accountancy. Supposing the business had failed, he says, he would have gone back to his old job without complaint. 'Provided I had a safety net, I was willing to take the risk.'\n\nToday his shop employs eleven people. Customers queue even on rainy mornings. Daniel insists, though, that success hasn't made him complacent. 'If I were less careful with money, I'd have expanded too quickly and gone under by now,' he says. He still sends Mireille a loaf every month. 'If it weren't for her kindness, none of this would exist.'\n\nAs for the airline that cancelled his flight? 'I should send them a thank-you card,' he laughs. 'If they hadn't let me down, I'd never have found my real job.'"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why did Daniel stay in a room above a bakery?",
+     "op": [
+      "He wanted to learn to bake.",
+      "His flight was cancelled and it was the only room available.",
+      "His firm booked it for the conference.",
+      "Mireille invited him."
+     ],
+     "r": 1,
+     "exp": "O voo foi cancelado e o único quarto livre ficava em cima da padaria (the only room available)."
+    },
+    {
+     "t": "gap",
+     "q": "If he hadn't missed the flight, he ___ walked downstairs that morning.",
+     "resp": [
+      "wouldn't have",
+      "would not have"
+     ],
+     "exp": "Third conditional: If + past perfect, would have + particípio. Negativa: wouldn't have."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "If I hadn't missed that flight, I would probably still be doing spreadsheets.",
+     "exp": "Hadn't: HÉ-dnt. Spreadsheets: SPRÉD-xiits. Probably: PRÓ-ba-bli, com três sílabas."
+    },
+    {
+     "t": "mc",
+     "q": "If Daniel ___ the flight, he ___ an accountant now.",
+     "op": [
+      "hadn't missed / would still be",
+      "didn't miss / would have been",
+      "hadn't missed / would have been",
+      "wouldn't miss / will be"
+     ],
+     "r": 0,
+     "exp": "Mixed conditional: passado irreal (if + past perfect) com resultado no presente (would + verbo base)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "If",
+      "it",
+      "weren't",
+      "for",
+      "her",
+      "kindness",
+      "none",
+      "of",
+      "this",
+      "would",
+      "exist"
+     ],
+     "resp": "If it weren't for her kindness none of this would exist",
+     "exp": "If it weren't for = se não fosse por (situação atual). Resultado com would + verbo."
+    },
+    {
+     "t": "gap",
+     "q": "Daniel took the risk, ___ he had a safety net.",
+     "resp": [
+      "provided",
+      "providing",
+      "as long as",
+      "so long as",
+      "provided that"
+     ],
+     "exp": "Provided (that) = somente se / desde que. Daniel só arriscou com uma proteção."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "What would you do if you could change your job or your studies tomorrow?",
+     "frase": "What would you do if you could change your job or your studies tomorrow?",
+     "modelo": "If I could change my studies, I would study music. I've always loved it, but I would never have started if my parents hadn't encouraged me.",
+     "min": 8,
+     "chave": [
+      "would",
+      "if",
+      "could",
+      "wish",
+      "change",
+      "study",
+      "job"
+     ],
+     "exp": "Use second conditional: If I could..., I would... Se quiser, junte um terceiro: If I had started earlier, I would..."
+    },
+    {
+     "t": "mc",
+     "q": "What does Daniel say about expanding the business?",
+     "op": [
+      "He expanded too quickly and nearly failed.",
+      "He has been careful, so the business has survived.",
+      "He plans to open a second shop soon.",
+      "He regrets not expanding earlier."
+     ],
+     "r": 1,
+     "exp": "If I were less careful... I'd have expanded too quickly and gone under = ele foi cuidadoso e por isso não faliu."
+    },
+    {
+     "t": "gap",
+     "q": "Original: Daniel only opened the shop because Mireille helped him. KEY WORD: FOR — ___ Mireille, Daniel wouldn't have opened the shop.",
+     "resp": [
+      "If it hadn't been for",
+      "Had it not been for",
+      "But for"
+     ],
+     "exp": "Passado irreal: If it hadn't been for + substantivo, ou a forma formal Had it not been for. But for também é possível."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Things I wish I'd known",
+   "objetivo": "Expressar arrependimentos e desejos com wish, if only, would rather e it's time.",
+   "foco": "Wish / if only / would rather / it's (high) time",
+   "explicacao": [
+    "Wish + past simple = desejo sobre o presente: I wish I had more free time. Wish + past perfect = arrependimento do passado: I wish I hadn't spent the money.",
+    "If only funciona igual, com mais emoção: If only someone had warned me!",
+    "Wish + would = queixa sobre hábito de outra pessoa: I wish you wouldn't shout. (Não use com o próprio sujeito: nunca 'I wish I would'.)",
+    "Would rather + pessoa diferente usa passado: I'd rather you didn't smoke. It's (high) time + past simple: It's time you left."
+   ],
+   "vocab": [
+    {
+     "en": "instalment",
+     "pt": "parcela"
+    },
+    {
+     "en": "budgeting",
+     "pt": "controle do orçamento"
+    },
+    {
+     "en": "to resit",
+     "pt": "refazer (prova)"
+    },
+    {
+     "en": "tutor",
+     "pt": "orientador(a)"
+    },
+    {
+     "en": "to pretend",
+     "pt": "fingir"
+    },
+    {
+     "en": "shy",
+     "pt": "tímido(a)"
+    },
+    {
+     "en": "gloomy",
+     "pt": "pessimista, sombrio"
+    },
+    {
+     "en": "regret",
+     "pt": "arrependimento"
+    }
+   ],
+   "material": {
+    "titulo": "A letter to my eighteen-year-old self",
+    "texto": "When I started university, I made a list of rules for myself. I broke most of them within a month. Now, six years later, I sometimes wish I could go back and give my eighteen-year-old self a few pieces of advice.\n\nFirst, I wish I hadn't spent my entire first loan instalment on a second-hand guitar. I never learned to play it, and it still sits in the corner of my flat, reminding me of the weeks I ate nothing but pasta. If only someone had warned me about budgeting! My friend Lena, who was more sensible, would rather have saved the money for a trip abroad, and she has never regretted it.\n\nSecond, I wish I'd taken my lectures more seriously. I used to believe that notes were a waste of time because everything was online. It turned out the exam questions came from the lectures, and I had to resit two modules. My tutor, Dr Alvarez, once told me, 'It's high time you stopped treating university like a long holiday.' I was offended then. Now I'd say she was right.\n\nThird, I wish I weren't so shy about asking for help. During my second year I was struggling with my essays, but I pretended everything was fine. If only I'd spoken to someone earlier, I'd have avoided weeks of stress. I would rather students asked for help too soon than too late.\n\nStill, I don't want to sound too gloomy. I wish I could say it was all a mistake, but I made friends for life and found out what I really wanted to do. I'd rather have lived through those errors than have followed a perfect plan I didn't believe in. And, to be fair, the guitar did come in useful once: I sold it to pay for my graduation photos."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What did the writer do with his first loan instalment?",
+     "op": [
+      "He saved it for a trip abroad.",
+      "He spent it on a guitar.",
+      "He paid for his exam resits.",
+      "He lent it to a friend."
+     ],
+     "r": 1,
+     "exp": "O texto diz: spent my entire first loan instalment on a second-hand guitar. Quem queria economizar para viajar era a amiga Lena."
+    },
+    {
+     "t": "gap",
+     "q": "I wish I ___ spent all my money on a guitar.",
+     "resp": [
+      "hadn't"
+     ],
+     "exp": "Arrependimento do passado: wish + past perfect. Ele gastou o dinheiro, e agora gostaria de não ter gastado."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "If only someone had warned me about budgeting.",
+     "exp": "Warned: UÓRND. Budgeting: BÂ-dji-tin. If only: iff ÔN-li."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I wish I would have more free time now.",
+      "I wish I had more free time now.",
+      "I wish I have more free time now.",
+      "I wish I will have more free time."
+     ],
+     "r": 1,
+     "exp": "Desejo sobre o presente = wish + past simple (had). Nunca use would com o mesmo sujeito."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It's",
+      "high",
+      "time",
+      "you",
+      "stopped",
+      "treating",
+      "university",
+      "like",
+      "a",
+      "holiday"
+     ],
+     "resp": "It's high time you stopped treating university like a holiday",
+     "exp": "It's high time + sujeito + past simple (stopped) = já deveria ter parado."
+    },
+    {
+     "t": "gap",
+     "q": "I'd rather you ___ the music so loud; I'm trying to sleep.",
+     "resp": [
+      "didn't play",
+      "did not play",
+      "didn't have"
+     ],
+     "exp": "Would rather + outra pessoa + past simple: I'd rather you didn't play..."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Is there something you wish you had done differently? Tell me about it.",
+     "frase": "Is there something you wish you had done differently?",
+     "modelo": "Yes, I wish I had studied English earlier. If only I had started at school, I would speak much better now.",
+     "min": 8,
+     "chave": [
+      "wish",
+      "if only",
+      "should have",
+      "hadn't",
+      "would",
+      "regret"
+     ],
+     "exp": "Use wish + past perfect (I wish I had...) e if only. Pode contar também o resultado: I would be better now."
+    },
+    {
+     "t": "mc",
+     "q": "What is the writer's view about asking for help?",
+     "op": [
+      "He thinks students ask for help too often.",
+      "He thinks it is better to ask too soon than too late.",
+      "He believes asking for help is a sign of weakness.",
+      "He prefers to solve problems alone."
+     ],
+     "r": 1,
+     "exp": "I would rather students asked for help too soon than too late = prefere que peçam cedo."
+    },
+    {
+     "t": "gap",
+     "q": "Original: I regret not learning to play the guitar. KEY WORD: WISH — I ___ learned to play the guitar.",
+     "resp": [
+      "wish I had",
+      "wish I'd"
+     ],
+     "exp": "Arrependimento do passado: I wish I had learned / I wish I'd learned."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Running for the record",
+   "objetivo": "Entender entrevistas contadas em discurso indireto e verbos de relato.",
+   "foco": "Reported speech: tense changes, reporting verbs (admit, deny, accuse, advise, promise, insist)",
+   "explicacao": [
+    "No discurso indireto, o verbo costuma recuar um tempo: 'I am tired' - She said (that) she was tired. Present perfect e past simple viram past perfect: had thought.",
+    "Will vira would, can vira could, and today/here/tomorrow mudam: that day, there, the next day.",
+    "Verbos de relato têm padrões próprios: admit/deny + -ing (denied taking), accuse someone of -ing, advise/persuade/warn someone to + infinitivo, promise/refuse to + infinitivo, insist that...",
+    "Say não leva pessoa direta (said that...); tell leva: told me that..."
+   ],
+   "vocab": [
+    {
+     "en": "to admit",
+     "pt": "admitir"
+    },
+    {
+     "en": "to deny",
+     "pt": "negar"
+    },
+    {
+     "en": "to accuse",
+     "pt": "acusar"
+    },
+    {
+     "en": "to persuade",
+     "pt": "convencer"
+    },
+    {
+     "en": "injury",
+     "pt": "lesão"
+    },
+    {
+     "en": "to give up",
+     "pt": "desistir"
+    },
+    {
+     "en": "to warn",
+     "pt": "avisar, alertar"
+    },
+    {
+     "en": "obsession",
+     "pt": "obsessão"
+    }
+   ],
+   "material": {
+    "titulo": "Interview with a champion",
+    "texto": "When I met Katya Novak at a café near the river, she apologised for being late. She explained that she had been out for a run since six o'clock and had lost track of time. At thirty-eight, Katya is Britain's oldest female marathon champion, and she told me she had no plans to stop.\n\nI asked her how she had started. She admitted that she had hated running at school. 'My teacher accused me of walking on purpose,' she said, laughing, 'and I denied it, though it was true.' It was only after a back injury in her late twenties that a physiotherapist advised her to try gentle jogging. Within a year she had persuaded a friend to enter a half-marathon with her.\n\nShe insisted that talent had little to do with her success. 'People always suggest that I was born fast,' she told me. 'I wasn't. I simply refused to give up.' Her coach, Stefan, agreed. He warned me not to confuse dedication with obsession, adding that Katya rests two days a week and never trains when she is ill. 'She promised me she would take recovery seriously, and she has kept her word,' he said.\n\nI wondered whether the pressure ever got too much. Katya said she had thought about quitting twice, once after a bad fall in Berlin and once when her father fell ill. 'He encouraged me to carry on,' she recalled. 'He told me that he would be waiting at the finish line, and he was.'\n\nAs we parted, I asked her what she would say to someone nervous about starting. She replied that they should begin with ten minutes and forget about speed. 'And buy proper shoes,' she added. 'Everyone ignores that.' Then she looked at her watch, apologised again, and ran off down the river path."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What did Katya explain at the start of the meeting?",
+     "op": [
+      "She had been running since six and had lost track of time.",
+      "She had forgotten about the interview.",
+      "She had been stuck in traffic.",
+      "She had stopped running for the day."
+     ],
+     "r": 0,
+     "exp": "O texto diz: She explained that she had been out for a run since six o'clock and had lost track of time."
+    },
+    {
+     "t": "gap",
+     "q": "Katya told me that she ___ thought about giving up twice.",
+     "resp": [
+      "had"
+     ],
+     "exp": "Present perfect / past simple em fala direta viram past perfect no discurso indireto: had thought."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "She replied that they should begin with ten minutes and forget about speed.",
+     "exp": "Replied: ri-PLÁI-d. Should: xud (o L é mudo). Begin: bi-GUIN."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the correct report of: 'I'll be waiting at the finish line,' her father said?",
+     "op": [
+      "Her father said that he would be waiting at the finish line.",
+      "Her father said me that he will be waiting at the finish line.",
+      "Her father told that he would wait at the finish line.",
+      "Her father said that I would be waiting at the finish line."
+     ],
+     "r": 0,
+     "exp": "Will vira would e o pronome I muda para he. Say não leva pessoa (said me é errado)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "My",
+      "teacher",
+      "accused",
+      "me",
+      "of",
+      "walking",
+      "on",
+      "purpose"
+     ],
+     "resp": "My teacher accused me of walking on purpose",
+     "exp": "Accuse someone of + -ing: accused me of walking."
+    },
+    {
+     "t": "gap",
+     "q": "The physiotherapist advised her ___ gentle jogging.",
+     "resp": [
+      "to try"
+     ],
+     "exp": "Advise someone + to + infinitivo: advised her to try."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Tell me something a friend or relative told you recently. Report what they said.",
+     "frase": "Tell me something a friend or relative told you recently.",
+     "modelo": "My brother told me that he was going to move to Canada next year. He said that he had already found a job there.",
+     "min": 8,
+     "chave": [
+      "told",
+      "said",
+      "that",
+      "asked",
+      "advised",
+      "promised"
+     ],
+     "exp": "Use told me that... / said that... e recue o tempo: is going - was going; has found - had found."
+    },
+    {
+     "t": "mc",
+     "q": "What does Stefan warn the interviewer about?",
+     "op": [
+      "Katya trains too little.",
+      "Dedication should not be confused with obsession.",
+      "Katya may stop running soon.",
+      "Young runners need better coaches."
+     ],
+     "r": 1,
+     "exp": "He warned me not to confuse dedication with obsession. Ele diz que Katya descansa dois dias por semana."
+    },
+    {
+     "t": "gap",
+     "q": "Original: 'I didn't take the money,' said Tom. KEY WORD: DENIED — Tom ___ the money.",
+     "resp": [
+      "denied taking",
+      "denied having taken"
+     ],
+     "exp": "Deny + -ing. Também se aceita denied having taken (ação anterior)."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "The village that came back to life",
+   "objetivo": "Entender frases longas com orações relativas (defining e non-defining).",
+   "foco": "Relative clauses: who, which, that, whose, where, when, prepositions + whom/which",
+   "explicacao": [
+    "Defining (sem vírgulas): informação essencial. The shop that sells maps is closed. Aqui that pode substituir who/which.",
+    "Non-defining (com vírgulas): informação extra, nunca com that. My brother, who lives in Perth, is a nurse.",
+    "Whose indica posse: a resident whose husband worked in the mill. Where (lugar), when (tempo), why (depois de reason).",
+    "Preposição + whom/which, em estilo formal: the engineer to whom the council gave the keys. Which pode se referir a toda a oração anterior: He won, which surprised everyone."
+   ],
+   "vocab": [
+    {
+     "en": "mill",
+     "pt": "fábrica de tecidos, moinho"
+    },
+    {
+     "en": "to thrive",
+     "pt": "prosperar"
+    },
+    {
+     "en": "average age",
+     "pt": "idade média"
+    },
+    {
+     "en": "workshop",
+     "pt": "oficina"
+    },
+    {
+     "en": "nursery",
+     "pt": "creche"
+    },
+    {
+     "en": "longstanding",
+     "pt": "antigo(a), de longa data"
+    },
+    {
+     "en": "fairness",
+     "pt": "justiça, igualdade"
+    },
+    {
+     "en": "miracle",
+     "pt": "milagre"
+    }
+   ],
+   "material": {
+    "titulo": "Calderbrook, one village's second chance",
+    "texto": "Nobody who visited Calderbrook in the 1990s expected to see it thrive again. The village, which had grown around a cotton mill, lost its main employer in 1987, and over the next decade the population, whose average age kept rising, fell by almost half. Shops closed, the school, where generations of local children had learned to read, shut its doors, and the pub became a place that few people entered.\n\nThe turning point came when a retired engineer, Walter Prior, whose grandfather had worked at the mill, bought the empty building for one pound. Walter, who had no experience of property, asked residents what they would like to see inside it. The idea that won was a shared workshop where anyone could borrow tools and learn skills. 'It was the first time anyone had asked us what we wanted,' says Maureen Hale, a resident whose husband had worked in the mill for thirty years.\n\nWithin five years, the workshop, which now includes a café and a nursery, had given rise to a dozen small businesses. A young potter, Zara Khan, whose studio is on the ground floor, describes it as 'the only place where I can afford to work'. A bakery run by two brothers supplies the café, and a repair service, which fixes everything from bicycles to laptops, has become so popular that people travel from neighbouring towns.\n\nNot everything has gone smoothly. Some longstanding residents, who feel that the village is changing too fast, complain about parking and noise. Walter accepts that this is a problem, but he points out that the issue he worries about most is not growth but fairness. 'What matters is that the people who have always lived here are not pushed out,' he says.\n\nCalderbrook is still small, and no one pretends it is a miracle. But the reason why visitors now come, the thing that surprises them most, is how ordinary it feels."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Who is Walter Prior?",
+     "op": [
+      "A mill worker who stayed after it closed.",
+      "A retired engineer whose grandfather worked at the mill.",
+      "A council official who sold the mill.",
+      "A potter with a studio in the workshop."
+     ],
+     "r": 1,
+     "exp": "O texto diz: a retired engineer, Walter Prior, whose grandfather had worked at the mill."
+    },
+    {
+     "t": "gap",
+     "q": "Maureen is a resident ___ husband worked in the mill for thirty years.",
+     "resp": [
+      "whose"
+     ],
+     "exp": "Whose indica posse (o marido dela). Não existe 'who's husband' nesse sentido."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "The village, which had grown around a cotton mill, lost its main employer in 1987.",
+     "exp": "Which: uítch. Employer: em-PLÓI-er. Cotton: CÓ-ten."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "My brother, that lives in Perth, is a nurse.",
+      "My brother, who he lives in Perth, is a nurse.",
+      "My brother, who lives in Perth, is a nurse.",
+      "My brother, which lives in Perth, is a nurse."
+     ],
+     "r": 2,
+     "exp": "Non-defining (com vírgulas) usa who, nunca that, e não repete o sujeito (he)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "repair",
+      "service",
+      "which",
+      "fixes",
+      "everything",
+      "from",
+      "bicycles",
+      "to",
+      "laptops",
+      "has",
+      "become",
+      "popular"
+     ],
+     "resp": "The repair service which fixes everything from bicycles to laptops has become popular",
+     "exp": "Which se refere a coisas e introduz a informação sobre repair service."
+    },
+    {
+     "t": "gap",
+     "q": "The engineer, to ___ the council gave the keys, knew nothing about property.",
+     "resp": [
+      "whom"
+     ],
+     "exp": "Preposição + pessoa em estilo formal exige whom: to whom."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Describe a person or a place you like, using who, which, where or whose.",
+     "frase": "Describe a person or a place you like.",
+     "modelo": "My grandmother is a woman who always makes me feel welcome. She lives in a small town where everybody knows her.",
+     "min": 8,
+     "chave": [
+      "who",
+      "which",
+      "where",
+      "whose",
+      "that"
+     ],
+     "exp": "Use pelo menos uma oração relativa: a woman who..., a place where..., a friend whose..."
+    },
+    {
+     "t": "mc",
+     "q": "What does Walter worry about most?",
+     "op": [
+      "The speed of the village's growth.",
+      "Noise and parking.",
+      "Whether longstanding residents are pushed out.",
+      "Whether visitors will stop coming."
+     ],
+     "r": 2,
+     "exp": "The issue he worries about most is not growth but fairness: que moradores antigos não sejam expulsos."
+    },
+    {
+     "t": "gap",
+     "q": "Original: Walter's grandfather worked at the mill. Walter bought the building. KEY WORD: WHOSE — Walter, ___ at the mill, bought the building.",
+     "resp": [
+      "whose grandfather worked",
+      "whose grandfather had worked"
+     ],
+     "exp": "Junte as frases com whose: Walter, whose grandfather worked at the mill, bought..."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "The mystery of the Isabelle",
+   "objetivo": "Entender hipóteses sobre o passado com modais de dedução e crítica.",
+   "foco": "Past modals: must/might/could/can't have + past participle; should have, needn't have, ought to have",
+   "explicacao": [
+    "Dedução certa: must have + particípio (It must have been a storm). Dedução negativa: can't/couldn't have.",
+    "Possibilidade: may/might/could have. The crew might have panicked.",
+    "Crítica de algo que não foi feito: should have / ought to have + particípio. He should have reported the leak.",
+    "Needn't have = fez algo que não era necessário. They needn't have jumped. Didn't need to = não era necessário (e talvez nem tenha feito)."
+   ],
+   "vocab": [
+    {
+     "en": "to drift",
+     "pt": "ficar à deriva"
+    },
+    {
+     "en": "crew",
+     "pt": "tripulação"
+    },
+    {
+     "en": "overboard",
+     "pt": "ao mar, para fora do navio"
+    },
+    {
+     "en": "smuggler",
+     "pt": "contrabandista"
+    },
+    {
+     "en": "fumes",
+     "pt": "fumaça, gases"
+    },
+    {
+     "en": "barrel",
+     "pt": "barril"
+    },
+    {
+     "en": "hatch",
+     "pt": "escotilha"
+    },
+    {
+     "en": "cargo",
+     "pt": "carga"
+    }
+   ],
+   "material": {
+    "titulo": "Who sank the Isabelle?",
+    "texto": "In November 1923, a fishing boat called the Isabelle was found drifting off the coast of Brittany. Its sails were up, a meal was half-eaten on the table, and the lifeboat was still tied to the deck. Of the six crew members there was no sign. A century later, the mystery still fascinates historians.\n\nThe most popular theory is that a sudden storm must have swept the men overboard. Yet the weather records show calm seas that night, so it can't have been a storm, argues maritime historian Dr Alan Quirke. Another theory suggests the crew might have been attacked by smugglers, but nothing on board was missing, and valuables such as the captain's watch were left in his cabin. 'Pirates would surely have taken it,' says Quirke.\n\nA more unusual explanation comes from a retired chemist, Gwen Tallis, who thinks the boat's cargo could have given off poisonous fumes. The Isabelle was carrying barrels of industrial alcohol, and one of them had leaked. 'The men may have panicked and jumped into the water,' she says. 'They needn't have done it, of course. If they had stayed calm, they might have opened the hatches and survived.' Quirke is not convinced. 'If it had been fumes, the cook couldn't have been sitting at the table with his meal half-eaten.'\n\nWhat nobody disputes is that the captain should have reported the leak before leaving port. Records show that the owners had been warned about the barrels but ignored the advice. 'They ought to have inspected the cargo,' Quirke says. 'It might have saved six lives.'\n\nSo what really happened? The truth may never be known. The only certain fact is that someone must have been aboard shortly before the discovery, because the stove was still warm. Or perhaps a warm stove is just a detail that somebody remembered wrongly. After a hundred years, nobody can be sure."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why does Dr Quirke reject the storm theory?",
+     "op": [
+      "The boat's sails were damaged.",
+      "The weather records show calm seas that night.",
+      "The lifeboat was missing.",
+      "The crew were experienced sailors."
+     ],
+     "r": 1,
+     "exp": "Ele diz que os registros mostram mar calmo, então it can't have been a storm."
+    },
+    {
+     "t": "gap",
+     "q": "The weather was calm, so it ___ have been a storm.",
+     "resp": [
+      "can't",
+      "cannot",
+      "couldn't"
+     ],
+     "exp": "Dedução negativa (tenho certeza que não): can't have + particípio."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "The captain should have reported the leak before leaving port.",
+     "exp": "Should have: 'xud rév' (forma fraca). Captain: CÁP-tin. Leak: líik."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence criticises something that was not done in the past?",
+     "op": [
+      "They should inspect the cargo.",
+      "They should have inspected the cargo.",
+      "They must inspect the cargo.",
+      "They might inspect the cargo."
+     ],
+     "r": 1,
+     "exp": "Should have + particípio = crítica ou arrependimento sobre o passado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "men",
+      "may",
+      "have",
+      "panicked",
+      "and",
+      "jumped",
+      "into",
+      "the",
+      "water"
+     ],
+     "resp": "The men may have panicked and jumped into the water",
+     "exp": "May have + particípio = possibilidade sobre o passado. Dois verbos ligados por and."
+    },
+    {
+     "t": "gap",
+     "q": "The crew ___ have jumped into the water; they could have opened the hatches instead.",
+     "resp": [
+      "needn't",
+      "need not",
+      "shouldn't",
+      "should not"
+     ],
+     "exp": "Needn't have = não era necessário (mas fizeram). Shouldn't have também funciona como crítica."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Imagine your friend did not answer your messages all day. What might have happened?",
+     "frase": "What might have happened?",
+     "modelo": "He might have lost his phone, or he could have been busy at work. Perhaps the battery must have died.",
+     "min": 8,
+     "chave": [
+      "might",
+      "could",
+      "may",
+      "must",
+      "perhaps",
+      "lost",
+      "busy"
+     ],
+     "exp": "Use might/could/may have + particípio para possibilidades, e must have para quase certeza."
+    },
+    {
+     "t": "mc",
+     "q": "Why does Quirke doubt Gwen Tallis's theory about fumes?",
+     "op": [
+      "Because the barrels were empty.",
+      "Because the cook had been sitting at the table with his meal half-eaten.",
+      "Because the owners never saw the leak.",
+      "Because the hatches were open."
+     ],
+     "r": 1,
+     "exp": "Se fossem gases, o cozinheiro não poderia ter ficado à mesa com a refeição pela metade (couldn't have been sitting)."
+    },
+    {
+     "t": "gap",
+     "q": "Original: I'm sure that someone was on board recently. KEY WORD: MUST — Someone ___ on board recently.",
+     "resp": [
+      "must have been"
+     ],
+     "exp": "Certeza sobre o passado: must have + particípio (been)."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Why I switched off",
+   "objetivo": "Escolher entre gerúndio (-ing) e infinitivo depois de verbos, inclusive com mudança de sentido.",
+   "foco": "Gerund vs infinitive: stop, remember, regret, try, go on; suggest, avoid, can't help, refuse, manage",
+   "explicacao": [
+    "Verbos seguidos de -ing: enjoy, avoid, suggest, can't help, regret (lamentar fato), admit, miss. Depois de preposição também: instead of ordering.",
+    "Verbos seguidos de to + infinitivo: decide, refuse, manage, hope, afford, advise someone to.",
+    "Mudam de sentido: stop to do (parar para fazer outra coisa) / stop doing (deixar de fazer); remember to do (não esquecer) / remember doing (lembrar do fato); regret to say (lamentar informar) / regret doing.",
+    "Try to = esforçar-se. Try doing = experimentar. Go on doing = continuar; go on to do = passar para a etapa seguinte."
+   ],
+   "vocab": [
+    {
+     "en": "to scroll",
+     "pt": "rolar a tela"
+    },
+    {
+     "en": "to reach for",
+     "pt": "esticar a mão para pegar"
+    },
+    {
+     "en": "jigsaw puzzle",
+     "pt": "quebra-cabeça"
+    },
+    {
+     "en": "takeaway",
+     "pt": "comida para viagem"
+    },
+    {
+     "en": "group chat",
+     "pt": "grupo de mensagens"
+    },
+    {
+     "en": "preacher",
+     "pt": "pregador(a)"
+    },
+    {
+     "en": "tempted",
+     "pt": "tentado(a)"
+    },
+    {
+     "en": "to give up",
+     "pt": "largar, desistir"
+    }
+   ],
+   "material": {
+    "titulo": "A month without social media",
+    "texto": "Last January I decided to stop using social media for a month. My friends predicted I wouldn't manage to last a week, and I admit that I had my doubts. I had spent so long scrolling through photos that I could no longer remember how to do nothing.\n\nThe first days were strange. I kept reaching for my phone without meaning to, and each time I had to remind myself to put it down. On the second evening I tried to read a book, but I couldn't help checking whether anyone had replied to my last post. By the fourth day, however, I had stopped missing the constant noise. I began to notice things I'd forgotten to look at: the colour of the sky on my walk to work, or the sound of the neighbour practising the cello.\n\nI also found I had far more time. I started cooking proper meals instead of ordering takeaways, and I went on to finish a jigsaw puzzle that had been sitting in a box for two years. I even remembered to phone my grandmother, which, I'm sorry to say, I'd stopped doing months earlier. She told me she had never expected me to call, and she suggested meeting for lunch.\n\nNot everything was easy. I regret not having warned my colleagues, who wanted to share news in our group chat and didn't understand why I was ignoring it. Some friends complained about having to send me invitations by text. One of them even refused to speak to me for a week, though I think she was joking.\n\nWhen the month ended, I was tempted to go back straight away, but I decided to wait. I still use social media, though only for twenty minutes a day. I'm not saying everyone should give it up, and I don't want to sound like a preacher. But I do advise trying it for a short time, if only to discover how much you've been missing."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What was the writer's main difficulty in the first days?",
+     "op": [
+      "Finding something to read.",
+      "Reaching for his phone without meaning to.",
+      "Persuading his friends to join him.",
+      "Sleeping at night."
+     ],
+     "r": 1,
+     "exp": "O texto diz: I kept reaching for my phone without meaning to."
+    },
+    {
+     "t": "gap",
+     "q": "My grandmother suggested ___ for lunch.",
+     "resp": [
+      "meeting",
+      "meeting up",
+      "us meeting"
+     ],
+     "exp": "Suggest é seguido de -ing (suggested meeting) ou de that + oração.",
+     "dica": "MEET"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "I couldn't help checking whether anyone had replied to my last post.",
+     "exp": "Couldn't help: KÚ-dnt hélp. Checking: TCHÉ-kin. Replied: ri-PLÁID."
+    },
+    {
+     "t": "mc",
+     "q": "In which sentence did the person pause one activity in order to do something else?",
+     "op": [
+      "I stopped talking to him.",
+      "I stopped to talk to him.",
+      "I regret talking to him.",
+      "I remember talking to him."
+     ],
+     "r": 1,
+     "exp": "Stop + to + infinitivo = parar para fazer outra coisa. Stop + -ing = deixar de fazer."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "regret",
+      "not",
+      "having",
+      "warned",
+      "my",
+      "colleagues"
+     ],
+     "resp": "I regret not having warned my colleagues",
+     "exp": "Regret + -ing (também not having + particípio) = lamentar algo que aconteceu."
+    },
+    {
+     "t": "gap",
+     "q": "I remember ___ the door, so I don't know why it was open.",
+     "resp": [
+      "locking"
+     ],
+     "exp": "Remember + -ing = lembrar de ter feito. Remember to lock = lembrar de trancar (antes de fazer).",
+     "dica": "LOCK"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "What do you enjoy doing in your free time, and what do you hope to do next year?",
+     "frase": "What do you enjoy doing in your free time?",
+     "modelo": "I enjoy playing football with my friends. Next year I hope to start learning the guitar and I'm planning to travel.",
+     "min": 8,
+     "chave": [
+      "enjoy",
+      "hope",
+      "want",
+      "would like",
+      "planning",
+      "playing",
+      "decided"
+     ],
+     "exp": "Combine enjoy + -ing e hope/want/plan + to + infinitivo."
+    },
+    {
+     "t": "mc",
+     "q": "How did the writer feel when the month ended?",
+     "op": [
+      "He wanted to go back at once and did.",
+      "He was tempted to go back but chose to wait.",
+      "He decided never to use social media again.",
+      "He was angry at his friends."
+     ],
+     "r": 1,
+     "exp": "I was tempted to go back straight away, but I decided to wait."
+    },
+    {
+     "t": "gap",
+     "q": "Original: 'Why don't we meet for lunch?' said my grandmother. KEY WORD: SUGGESTED — My grandmother ___ for lunch.",
+     "resp": [
+      "suggested meeting",
+      "suggested that we meet",
+      "suggested we meet",
+      "suggested that we should meet"
+     ],
+     "exp": "Suggest + -ing ou suggest (that) we + verbo base."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "A film that holds its breath",
+   "objetivo": "Ler uma resenha de cinema e reconhecer inversão e ênfase.",
+   "foco": "Inversion after negative adverbials: rarely, never, not only, hardly...when, no sooner...than, little, only when",
+   "explicacao": [
+    "Com advérbios negativos no começo da frase, o auxiliar vem antes do sujeito: Never have I seen... / Rarely does a film...",
+    "Not only + auxiliar + sujeito: Not only is the film long, but it is also slow. Hardly had... when / No sooner had... than: uma ação logo depois da outra.",
+    "Under no circumstances, at no point, little did I know, only when/after também pedem inversão: Only when the credits roll do we understand.",
+    "Se não há auxiliar, use do/does/did: Rarely does a debut arrive... Seldom did she complain."
+   ],
+   "vocab": [
+    {
+     "en": "debut",
+     "pt": "estreia"
+    },
+    {
+     "en": "gripped",
+     "pt": "preso(a) (pela história)"
+    },
+    {
+     "en": "stretch",
+     "pt": "trecho"
+    },
+    {
+     "en": "restraint",
+     "pt": "contenção"
+    },
+    {
+     "en": "flashback",
+     "pt": "cena de volta ao passado"
+    },
+    {
+     "en": "rushed",
+     "pt": "apressado(a)"
+    },
+    {
+     "en": "to deserve",
+     "pt": "merecer"
+    },
+    {
+     "en": "persuasion",
+     "pt": "persuasão"
+    }
+   ],
+   "material": {
+    "titulo": "Review: The Salt Road",
+    "texto": "Rarely does a debut film arrive with so much quiet confidence as The Salt Road, which opened in cinemas last Friday. Directed by twenty-nine-year-old Mina Farouk, it follows a lorry driver, Idris, who spends a long night crossing a desert with a passenger he cannot trust. Little did I expect to be so gripped by a story in which, for long stretches, nothing seems to happen.\n\nNot only is the cinematography stunning, but the sound design also deserves praise. Seldom have I heard a desert wind used so effectively; it becomes almost a third character. Under no circumstances should you watch this film on a small screen, for it would lose much of its power. Hardly had the opening scene ended when I realised I was holding my breath.\n\nThe two leads are excellent. Samir Haddad plays Idris with a weariness that never tips into self-pity, and newcomer Lila Rossi, as the passenger, delivers lines so quietly that the audience leans forward to catch them. At no point does either actor ask for sympathy. It is their restraint that makes the film so moving.\n\nThat said, the film is not perfect. No sooner has the tension built up than it is released by an unconvincing flashback, and the final twenty minutes feel rushed. Only when the credits roll do we understand what the director was attempting, and by then some viewers may have lost patience. What the story lacks in plot, it makes up for in atmosphere, but a more generous editor would have helped.\n\nStill, these are small complaints. Never before has a first-time director shown such control. If you see only one film this month, make it this one. Should you need further persuasion, I suggest you look at the audience's faces as they leave: nobody speaks for at least a minute."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the reviewer's main criticism of the film?",
+     "op": [
+      "The acting is too restrained.",
+      "A flashback and a rushed ending weaken it.",
+      "The desert scenes are too long.",
+      "The sound is too quiet."
+     ],
+     "r": 1,
+     "exp": "A crítica vem em 'That said...': um flashback pouco convincente e os últimos vinte minutos apressados. A contenção dos atores é elogiada."
+    },
+    {
+     "t": "gap",
+     "q": "Hardly ___ the opening scene ended when I realised I was holding my breath.",
+     "resp": [
+      "had"
+     ],
+     "exp": "Hardly had + sujeito + particípio ... when. O auxiliar vem antes do sujeito."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Rarely does a debut film arrive with so much quiet confidence.",
+     "exp": "Rarely: RÉR-li. Debut: DÊI-biu. Confidence: CÓN-fi-dens."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "Never I have seen such a beautiful desert.",
+      "Never have I seen such a beautiful desert.",
+      "Never did I have seen such a beautiful desert.",
+      "Never I saw such a beautiful desert."
+     ],
+     "r": 1,
+     "exp": "Após Never no início, inverta auxiliar e sujeito: Never have I seen."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Not",
+      "only",
+      "is",
+      "the",
+      "cinematography",
+      "stunning",
+      "but",
+      "the",
+      "sound",
+      "design",
+      "also",
+      "deserves",
+      "praise"
+     ],
+     "resp": "Not only is the cinematography stunning but the sound design also deserves praise",
+     "exp": "Not only + verbo to be antes do sujeito. Depois vem but ... also."
+    },
+    {
+     "t": "gap",
+     "q": "No sooner had we sat down ___ the film started.",
+     "resp": [
+      "than"
+     ],
+     "exp": "No sooner ... than. (Hardly ... when.) Nunca 'no sooner ... when'."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Tell me about a film you saw recently. Did you like it?",
+     "frase": "Tell me about a film you saw recently.",
+     "modelo": "I saw a film about space last week. Not only was the story exciting, but the music was also beautiful.",
+     "min": 8,
+     "chave": [
+      "film",
+      "movie",
+      "saw",
+      "watched",
+      "story",
+      "actor",
+      "music",
+      "never",
+      "rarely"
+     ],
+     "exp": "Fale do filme no past simple e use uma inversão se puder: Never have I seen... / Not only was..."
+    },
+    {
+     "t": "mc",
+     "q": "What does the reviewer say about the film's plot and atmosphere?",
+     "op": [
+      "The plot is strong but the atmosphere is weak.",
+      "The atmosphere makes up for the thin plot.",
+      "Both are equally disappointing.",
+      "The plot is more important than the atmosphere."
+     ],
+     "r": 1,
+     "exp": "What the story lacks in plot, it makes up for in atmosphere = a atmosfera compensa o enredo fraco."
+    },
+    {
+     "t": "gap",
+     "q": "Original: He didn't only forget the tickets, he also lost his passport. KEY WORD: ONLY — Not ___ the tickets, but he also lost his passport.",
+     "resp": [
+      "only did he forget",
+      "only did he leave"
+     ],
+     "exp": "Not only + did + sujeito + verbo base (forget). Inversão com auxiliar do."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Starting from scratch",
+   "objetivo": "Reconhecer collocations e phrasal verbs num texto sobre negócios.",
+   "foco": "Collocations (make a profit, take a risk, going rate) and phrasal verbs (fall through, pull out, turn down, come across)",
+   "explicacao": [
+    "Collocation é a combinação natural de palavras: make a profit, take a risk, reach a decision, meet a deadline, do research, pay attention.",
+    "Phrasal verbs têm sentido próprio: fall through (não se concretizar), pull out (desistir), turn down (recusar), take over (assumir), come across (encontrar por acaso), run out of (ficar sem).",
+    "Alguns têm objeto separável: turn the offer down / turn it down (nunca 'turn down it').",
+    "No Use of English, aprenda cada expressão inteira, com a preposição: put in an effort, keep an eye on, hand in your notice."
+   ],
+   "vocab": [
+    {
+     "en": "to set up",
+     "pt": "abrir, montar (empresa)"
+    },
+    {
+     "en": "to fall through",
+     "pt": "não se concretizar"
+    },
+    {
+     "en": "investor",
+     "pt": "investidor(a)"
+    },
+    {
+     "en": "to turn down",
+     "pt": "recusar"
+    },
+    {
+     "en": "to take over",
+     "pt": "assumir o controle de"
+    },
+    {
+     "en": "going rate",
+     "pt": "valor corrente de mercado"
+    },
+    {
+     "en": "to pay off",
+     "pt": "dar resultado"
+    },
+    {
+     "en": "to break even",
+     "pt": "empatar (sem lucro nem prejuízo)"
+    }
+   ],
+   "material": {
+    "titulo": "How Priya Shah built a business",
+    "texto": "When Priya Shah set up her first company, a small online business selling second-hand books, she thought the hardest part would be coming up with a name. In fact, that turned out to be the easy bit. The real challenge, she says, was learning to cope with uncertainty.\n\n'Nobody tells you how often things fall through,' she says. In her first year, two investors pulled out at the last minute, a supplier let her down, and a software error wiped out a week of orders. At one point she seriously considered giving up and going back to her old job in marketing. What kept her going was a promise she had made to herself: to put in an honest effort for at least two years before making a decision.\n\nPriya had to take a number of key decisions early on. She turned down an offer from a larger firm that wanted to take over her business, because she feared losing control. She also made the unusual choice of paying staff slightly above the going rate. 'It's expensive, but it pays off,' she says. 'People who feel valued tend to work harder, and they hardly ever hand in their notice.'\n\nToday the company turns over about two million pounds a year and has just taken on its twentieth employee. Priya admits she was lucky as well as determined. 'I came across the right people at the right moment,' she says. 'Without them I would have run out of money long before we broke even.'\n\nShe now gives advice to new entrepreneurs, and she is quick to point out that there is no magic formula. 'You have to be prepared to take risks, but you should also keep an eye on the numbers,' she says. 'Take your time, ask for help, and don't be afraid to make mistakes. Most of them can be put right, and the ones that cannot are usually the best teachers.'"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does 'fall through' mean in the text?",
+     "op": [
+      "Fail to happen as planned.",
+      "Be dropped by accident.",
+      "Become cheaper.",
+      "Happen suddenly."
+     ],
+     "r": 0,
+     "exp": "Fall through = não se concretizar. O exemplo do texto: dois investidores desistiram na última hora."
+    },
+    {
+     "t": "gap",
+     "q": "At one point she thought about giving ___ and going back to marketing.",
+     "resp": [
+      "up"
+     ],
+     "exp": "Give up = desistir."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Nobody tells you how often things fall through.",
+     "exp": "Nobody: NÔ-bó-di. Often: Ó-fen (o T geralmente é mudo). Through: THRÚ."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the best word: The company has finally ___ a profit.",
+     "op": [
+      "made",
+      "done",
+      "won",
+      "had"
+     ],
+     "r": 0,
+     "exp": "A collocation correta é make a profit. Do não combina com profit."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "came",
+      "across",
+      "the",
+      "right",
+      "people",
+      "at",
+      "the",
+      "right",
+      "moment"
+     ],
+     "resp": "I came across the right people at the right moment",
+     "exp": "Come across = encontrar por acaso."
+    },
+    {
+     "t": "gap",
+     "q": "Without help she would have run ___ of money.",
+     "resp": [
+      "out"
+     ],
+     "exp": "Run out of = ficar sem."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Would you like to start your own business? Why, or why not?",
+     "frase": "Would you like to start your own business?",
+     "modelo": "Yes, I would. I'd like to set up a small café, but I know I would have to take risks and work very hard.",
+     "min": 8,
+     "chave": [
+      "business",
+      "would",
+      "risk",
+      "because",
+      "own",
+      "set up",
+      "company"
+     ],
+     "exp": "Use collocations: take a risk, make a profit, set up a business, work long hours."
+    },
+    {
+     "t": "mc",
+     "q": "Why did Priya pay her staff slightly more than the going rate?",
+     "op": [
+      "She was forced to by law.",
+      "She believes valued staff work harder and stay longer.",
+      "Her investors asked her to.",
+      "She wanted to impress larger firms."
+     ],
+     "r": 1,
+     "exp": "It pays off: pessoas valorizadas trabalham mais e raramente pedem demissão (hand in their notice)."
+    },
+    {
+     "t": "gap",
+     "q": "The company won't ___ until next year.",
+     "resp": [
+      "break even"
+     ],
+     "exp": "Break even = chegar ao ponto de equilíbrio, sem lucro nem prejuízo. (Original: The company will not be profitable until next year. Palavra-chave: BREAK)"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Working from anywhere",
+   "objetivo": "Formar palavras com prefixos e sufixos, como no Part 3 do exame.",
+   "foco": "Word formation: prefixes (un-, in-, im-, ir-, dis-, mis-) and suffixes (-ity, -ness, -ment, -tion, -ive, -able, -ful)",
+   "explicacao": [
+    "Prefixos de negação: un- (unreasonable), in- (inactive), im- (impossible, antes de b/m/p), ir- (irregular, antes de r), il- (illegal), dis- (disconnected). Mis- = errado (misunderstand).",
+    "Substantivos: -ity (flexibility), -ness (loneliness), -ment (achievement), -tion (collaboration), -ence/-ance (confidence, importance).",
+    "Adjetivos: -ive (productive), -able/-ible (reliable), -ful (helpful), -al (professional), -ous (ambitious), -less (careless).",
+    "Antes de escrever, veja a classe da palavra que falta (substantivo, adjetivo...) e se o sentido é positivo ou negativo."
+   ],
+   "vocab": [
+    {
+     "en": "flexibility",
+     "pt": "flexibilidade"
+    },
+    {
+     "en": "commute",
+     "pt": "trajeto casa-trabalho"
+    },
+    {
+     "en": "isolation",
+     "pt": "isolamento"
+    },
+    {
+     "en": "drawback",
+     "pt": "desvantagem"
+    },
+    {
+     "en": "to switch off",
+     "pt": "desligar-se"
+    },
+    {
+     "en": "disconnected",
+     "pt": "desconectado(a)"
+    },
+    {
+     "en": "guidance",
+     "pt": "orientação"
+    },
+    {
+     "en": "unreasonable",
+     "pt": "irracional, injusto(a)"
+    }
+   ],
+   "material": {
+    "titulo": "Home, office or both?",
+    "texto": "Before 2020, working from home was considered a privilege reserved for a lucky few. Now it is a normal part of working life for millions, and employers are still working out what this means. The effects have proved to be both positive and troubling.\n\nOn the positive side, many workers report greater flexibility and fewer wasted hours commuting. A survey of 3,000 employees found that two-thirds were happier with their work-life balance, and most said they were more productive at home than in the office. Companies have also discovered that they can recruit talented people from anywhere, rather than only those living within an hour of headquarters. For parents and carers, the change has been especially valuable.\n\nHowever, there are drawbacks. Psychologists warn that isolation can lead to loneliness, and some people struggle to switch off at the end of the day. 'When your living room is also your office, it is almost impossible to separate the two,' says occupational therapist Dr Rosa Kemp. Younger staff, who have less experience, often feel disconnected from their colleagues and are uncertain about how to ask for guidance. Several managers admit that they find it harder to assess an employee's performance when they rarely meet.\n\nEmployers are responding in different ways. Some firms have insisted on a return to the office for at least three days a week, a decision that has been criticised as unreasonable by staff. Others have redesigned their buildings, replacing rows of desks with comfortable meeting spaces designed for collaboration. A few have even introduced a four-day week, arguing that it improves both wellbeing and efficiency.\n\nWhat seems clear is that there will be no single solution. The most successful organisations are those that listen to their workers, test new ideas and are willing to change them if they fail. As one manager put it: 'Flexibility is no longer a bonus. It is an expectation, and ignoring it would be a serious mistake.'"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What do several managers find harder when employees work remotely?",
+     "op": [
+      "Recruiting talented people.",
+      "Assessing how well employees are performing.",
+      "Paying for office space.",
+      "Organising meetings."
+     ],
+     "r": 1,
+     "exp": "O texto diz que é mais difícil to assess an employee's performance quando quase não se encontram."
+    },
+    {
+     "t": "gap",
+     "q": "Many workers value the ___ of working from home.",
+     "resp": [
+      "flexibility"
+     ],
+     "exp": "Substantivo a partir de FLEXIBLE: troque -le por -ility = flexibility.",
+     "dica": "FLEXIBLE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Younger staff often feel disconnected from their colleagues.",
+     "exp": "Disconnected: dis-ko-NÉK-tid. Colleagues: CÓ-liigs. Younger: IÂN-gar."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the correct opposite of 'responsible'.",
+     "op": [
+      "unresponsible",
+      "irresponsible",
+      "disresponsible",
+      "inresponsible"
+     ],
+     "r": 1,
+     "exp": "O oposto de responsible é irresponsible (prefixo ir-)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "change",
+      "has",
+      "been",
+      "especially",
+      "valuable",
+      "for",
+      "parents",
+      "and",
+      "carers"
+     ],
+     "resp": "The change has been especially valuable for parents and carers",
+     "exp": "Especially é advérbio e vem antes do adjetivo valuable."
+    },
+    {
+     "t": "gap",
+     "q": "Employees say they are more ___ at home than in the office.",
+     "resp": [
+      "productive"
+     ],
+     "exp": "Adjetivo a partir de PRODUCE: produce + -ive = productive.",
+     "dica": "PRODUCE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Would you prefer to work or study at home or in an office? Why?",
+     "frase": "Would you prefer to work or study at home or in an office?",
+     "modelo": "I would prefer to study at home because I can concentrate better, but I think it is lonely sometimes, so I also like meeting friends at the library.",
+     "min": 8,
+     "chave": [
+      "prefer",
+      "home",
+      "office",
+      "because",
+      "flexible",
+      "lonely",
+      "productive"
+     ],
+     "exp": "Use palavras da aula: flexible, productive, isolation, distraction, colleagues."
+    },
+    {
+     "t": "mc",
+     "q": "According to Dr Kemp, why do some people find it hard to switch off?",
+     "op": [
+      "They work longer hours for less money.",
+      "Their home is also their workplace.",
+      "Their managers phone them at night.",
+      "They have no space for a desk."
+     ],
+     "r": 1,
+     "exp": "Quando a sala também é o escritório, é quase impossível separar os dois (living room is also your office)."
+    },
+    {
+     "t": "gap",
+     "q": "The manager was worried by the team's ___ to meet deadlines.",
+     "resp": [
+      "inability"
+     ],
+     "exp": "Precisamos do contrário de ABLE: inability (in- + able muda para -ility). Ability teria sentido positivo e não combina com 'worried'.",
+     "dica": "ABLE"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "The joy of getting lost",
+   "objetivo": "Perceber atitude e opinião do autor, e usar conectores e estruturas de ênfase.",
+   "foco": "Writer's attitude; linking words (although, however, even so, whereas); key word transformations",
+   "explicacao": [
+    "Em perguntas de atitude, procure expressões como 'or so I believed', 'admittedly', 'the trouble with', que mostram a opinião do autor.",
+    "Conectores de contraste: although/though/even though + oração; despite/in spite of + substantivo ou -ing; however/nevertheless/even so + vírgula; whereas/while para comparar.",
+    "Estrutura de ênfase: It was only when ... that ... (foi só quando...). Not until ... did...",
+    "Em key word transformation, mantenha o sentido e use a palavra-chave sem mudá-la. Conte as palavras: de 2 a 5."
+   ],
+   "vocab": [
+    {
+     "en": "seasoned",
+     "pt": "experiente"
+    },
+    {
+     "en": "stranded",
+     "pt": "encalhado(a)"
+    },
+    {
+     "en": "to wander",
+     "pt": "vagar"
+    },
+    {
+     "en": "haze",
+     "pt": "névoa"
+    },
+    {
+     "en": "sceptical",
+     "pt": "cético(a)"
+    },
+    {
+     "en": "whirlwind",
+     "pt": "muito rápido"
+    },
+    {
+     "en": "admittedly",
+     "pt": "é verdade que"
+    },
+    {
+     "en": "entitled to",
+     "pt": "com direito a"
+    }
+   ],
+   "material": {
+    "titulo": "In praise of slow travel",
+    "texto": "For years I considered myself a seasoned traveller. I could pack in fifteen minutes, I knew which seat to book, and I had a talent, or so I believed, for seeing a city in a single afternoon. It was only when a delayed train left me stranded in a small Italian town that I began to doubt this reputation.\n\nWith six hours to fill and nothing in my guidebook about the place, I wandered. I found a market, where an elderly man insisted on explaining the difference between four kinds of olive, and a church whose bells, I later learned, had been rung by the same family for two centuries. None of it appeared on any list of must-see sights. Nevertheless, it remains the part of that trip I remember best, whereas the famous galleries I rushed through three days later have blurred into a haze of gold frames.\n\nThis is the idea behind what some call slow travel: staying longer in fewer places, and letting a journey unfold instead of ticking off sights. Advocates claim that it is kinder to the environment, cheaper in the long run, and far more rewarding. I was sceptical, as I suspect many readers will be. Surely, I thought, the whole point of travelling is to see as much as possible?\n\nThe trouble with this attitude, I now think, is that it confuses quantity with experience. Having spent a fortnight in a single village in Portugal last summer, I can say that I learnt more about the country than I did on any whirlwind tour. Admittedly, not everyone has the time, and it would be unfair to suggest that fast travel is worthless. Some people have only a week of holiday, and they are entitled to spend it as they choose.\n\nEven so, I would urge anyone planning a trip to leave one afternoon empty. Don't consult the guidebook. Just walk. The worst that can happen is that you get a little lost, and as my delayed train taught me, that is rarely a disaster."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does 'or so I believed' suggest about the writer's talent for seeing a city quickly?",
+     "op": [
+      "He is still very proud of it.",
+      "He no longer thinks he really had it.",
+      "Other people believed in it more than he did.",
+      "He never claimed to have it."
+     ],
+     "r": 1,
+     "exp": "A expressão mostra distância irônica: ele acreditava ter esse talento, mas agora duvida (began to doubt this reputation)."
+    },
+    {
+     "t": "gap",
+     "q": "It was only ___ a delayed train left me stranded that I began to doubt this.",
+     "resp": [
+      "when"
+     ],
+     "exp": "Estrutura de ênfase: It was only when ... that ..."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "The trouble with this attitude is that it confuses quantity with experience.",
+     "exp": "Trouble: TRÂ-bol. Quantity: QUÓN-ti-ti. Confuses: kon-FIÚ-zis."
+    },
+    {
+     "t": "mc",
+     "q": "What is the writer's attitude to fast travel in the fourth paragraph?",
+     "op": [
+      "It has no value at all.",
+      "It is less rewarding, but it is fair for people with little time.",
+      "It is better for the environment.",
+      "It should be avoided by everyone."
+     ],
+     "r": 1,
+     "exp": "Ele critica a ideia de quantidade, mas admite (Admittedly) que nem todos têm tempo e que é injusto dizer que viajar rápido não vale nada."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "worst",
+      "that",
+      "can",
+      "happen",
+      "is",
+      "that",
+      "you",
+      "get",
+      "a",
+      "little",
+      "lost"
+     ],
+     "resp": "The worst that can happen is that you get a little lost",
+     "exp": "Estrutura: The worst that can happen is that + oração."
+    },
+    {
+     "t": "gap",
+     "q": "The galleries were impressive; ___, I remember the market far better.",
+     "resp": [
+      "however",
+      "nevertheless",
+      "even so"
+     ],
+     "exp": "Conectores de contraste com ponto e vírgula e vírgula depois: however, nevertheless, even so."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Do you prefer to see many places quickly or a few places slowly? Explain.",
+     "frase": "Do you prefer to see many places quickly or a few places slowly?",
+     "modelo": "I would rather spend more time in fewer places. Although seeing everything is exciting, I think you remember more when you stay longer.",
+     "min": 10,
+     "chave": [
+      "prefer",
+      "rather",
+      "although",
+      "however",
+      "because",
+      "slowly",
+      "quickly"
+     ],
+     "exp": "Dê sua opinião com I would rather... e justifique com because ou although/however."
+    },
+    {
+     "t": "mc",
+     "q": "What is the writer's main purpose in the last paragraph?",
+     "op": [
+      "To advise readers to keep some free time for exploring.",
+      "To warn readers about the dangers of getting lost.",
+      "To criticise guidebooks.",
+      "To describe his next trip."
+     ],
+     "r": 0,
+     "exp": "Ele urge qualquer pessoa a deixar uma tarde livre, sem guia, e só caminhar."
+    },
+    {
+     "t": "gap",
+     "q": "Original: Despite being tired, she walked for hours. KEY WORD: ALTHOUGH — ___ tired, she walked for hours.",
+     "resp": [
+      "Although she was",
+      "Although she felt",
+      "Although she had been"
+     ],
+     "exp": "Although + sujeito + verbo (oração completa). Despite + -ing/substantivo."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Mock exam: the night train returns",
+   "objetivo": "Praticar as partes do B2 First Reading & Use of English num simulado.",
+   "foco": "B2 First mock: Parts 1-7 (cloze, open cloze, word formation, key word, long text, gapped text, matching)",
+   "explicacao": [
+    "Parte 1: escolha a palavra que combina (collocation, phrasal verb, sentido exato). Parte 2: complete com UMA palavra de gramática (artigo, preposição, auxiliar, conector).",
+    "Parte 3: forme a palavra a partir da base (veja a classe: substantivo, adjetivo, advérbio; prefixo negativo?). Parte 4: reescreva a frase com a palavra-chave, de 2 a 5 palavras.",
+    "Parte 5: leia o texto longo com atenção à opinião e à atitude. Parte 6: veja o que vem antes e depois da lacuna. Parte 7: procure no texto a ideia, não a palavra igual.",
+    "Gerencie o tempo: Use of English primeiro (cerca de 45 minutos), textos longos depois."
+   ],
+   "vocab": [
+    {
+     "en": "sleeper train",
+     "pt": "trem-leito"
+    },
+    {
+     "en": "revival",
+     "pt": "retomada, renascimento"
+    },
+    {
+     "en": "to board",
+     "pt": "embarcar"
+    },
+    {
+     "en": "compartment",
+     "pt": "cabine, compartimento"
+    },
+    {
+     "en": "subsidy",
+     "pt": "subsídio"
+    },
+    {
+     "en": "blunt",
+     "pt": "direto, sem rodeios"
+    },
+    {
+     "en": "to be fed up with",
+     "pt": "estar farto(a) de"
+    },
+    {
+     "en": "to blend together",
+     "pt": "misturar-se, confundir-se"
+    }
+   ],
+   "material": {
+    "titulo": "The night train returns",
+    "texto": "A. When Elsa Lindqvist boarded the sleeper train from Stockholm to Narvik last winter, she had not intended to write about it. She was simply fed up with airports. 'I'd flown so often that the journeys had blended together,' she says. Twelve hours later, watching a pink dawn spread across a frozen lake, she changed her mind.\n\nB. Elsa is part of a quiet revival. After decades of decline, night trains are returning to Europe, with new routes opening between cities that haven't been linked by rail since the 1990s. Operators say that bookings have more than doubled in three years. The main reason, according to a recent survey, is concern about flying's effect on the climate, although many passengers admit that comfort and convenience matter just as much. (6) ___ One businessman told researchers that he now preferred to sleep on a train and arrive in the city centre at breakfast time, rather than leave a hotel at dawn to catch a plane.\n\nC. Not that the experience is perfect. Tickets can be expensive, especially for a private compartment, and delays are not unusual when several countries share the same tracks. Rail enthusiast Marcus Bell is blunt about it: 'People imagine a romantic journey from an old film. In reality it's a narrow bed and a shared bathroom.' Yet even he admits that he would never go back to flying short distances. 'I tried it once after a year of trains,' he says. 'I couldn't believe how stressful the whole thing was.'\n\nD. Governments are beginning to take notice. Several countries have promised subsidies for new routes, and one transport minister recently described night trains as 'the missing piece' in Europe's rail network. Critics point out, however, that it takes years to build new carriages, and the money might be better spent on improving ordinary services. Elsa isn't convinced by that argument. 'Ordinary services get you somewhere,' she says. 'A night train gives you the journey as well.'\n\nE. On her last trip, Elsa shared a compartment with a retired teacher called Gunnar, who was travelling to see his grandchildren for the first time in two years. They talked until midnight, and in the morning he gave her a bag of cinnamon buns his wife had baked. 'I'd never have met him on a plane,' she says. 'On a plane you don't even look at the person next to you.'"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Part 1. Bookings for sleeper services have ___ sharply since the new routes opened.",
+     "op": [
+      "risen",
+      "raised",
+      "arisen",
+      "lifted"
+     ],
+     "r": 0,
+     "exp": "Rise é intransitivo (bookings rose/have risen). Raise precisa de objeto. Arise é usado para problemas que surgem."
+    },
+    {
+     "t": "gap",
+     "q": "Part 2. Elsa had no intention ___ writing about the journey.",
+     "resp": [
+      "of"
+     ],
+     "exp": "Intention of + -ing. (Também: intention to write, mas aqui há writing.)"
+    },
+    {
+     "t": "mc",
+     "q": "Part 1. The company has been ___ with complaints about delays.",
+     "op": [
+      "flooded",
+      "soaked",
+      "drowned",
+      "poured"
+     ],
+     "r": 0,
+     "exp": "Flooded with complaints é a combinação natural (cheio de reclamações). Soaked e drowned não se usam com with nesse sentido."
+    },
+    {
+     "t": "gap",
+     "q": "Part 2. Hardly ___ the train left the station when the snow began to fall.",
+     "resp": [
+      "had"
+     ],
+     "exp": "Hardly had + sujeito + particípio ... when. Inversão com advérbio negativo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Night trains are returning to Europe after decades of decline.",
+     "exp": "Decades: DÉ-keidz. Returning: ri-TÂR-nin. Europe: IÚ-rop."
+    },
+    {
+     "t": "gap",
+     "q": "Part 3. The ___ of night trains has surprised many experts.",
+     "resp": [
+      "popularity"
+     ],
+     "exp": "Substantivo a partir de POPULAR: popular + -ity = popularity.",
+     "dica": "POPULAR"
+    },
+    {
+     "t": "gap",
+     "q": "Part 3. Frequent delays make the service ___ for business travellers.",
+     "resp": [
+      "unsuitable"
+     ],
+     "exp": "Sentido negativo com prefixo un-: suit + -able = suitable, un + suitable = unsuitable.",
+     "dica": "SUIT"
+    },
+    {
+     "t": "gap",
+     "q": "Part 4. Original: 'Book early, if I were you,' the manager said to us. KEY WORD: ADVISED. The manager ___ early.",
+     "resp": [
+      "advised us to book"
+     ],
+     "exp": "Advise someone + to + infinitivo: advised us to book."
+    },
+    {
+     "t": "gap",
+     "q": "Part 4. Original: It's possible that the train was delayed by snow. KEY WORD: MIGHT. The train ___ delayed by snow.",
+     "resp": [
+      "might have been"
+     ],
+     "exp": "Possibilidade sobre o passado: might have + particípio. Might have been delayed."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Which would you choose for a long journey, a plane or a train? Explain why.",
+     "frase": "Which would you choose for a long journey, a plane or a train?",
+     "modelo": "I would choose the train because it is more relaxing. Although it takes longer, you can look out of the window, and you don't have to queue at the airport.",
+     "min": 10,
+     "chave": [
+      "train",
+      "plane",
+      "because",
+      "although",
+      "relaxing",
+      "prefer",
+      "would"
+     ],
+     "exp": "Dê uma escolha, uma razão com because e um contraste com although ou however."
+    },
+    {
+     "t": "mc",
+     "q": "Part 5. What is Elsa's attitude to ordinary train services (paragraph D)?",
+     "op": [
+      "She thinks they are too slow.",
+      "She believes a night train offers more than just transport.",
+      "She agrees the money should be spent on them.",
+      "She says they are better than night trains."
+     ],
+     "r": 1,
+     "exp": "Ela não aceita o argumento dos críticos: serviços comuns levam a algum lugar, o trem noturno dá a viagem também (the journey as well)."
+    },
+    {
+     "t": "mc",
+     "q": "Part 6. Which sentence best fills gap (6) in paragraph B?",
+     "op": [
+      "Flights, on the other hand, remain much cheaper than any train ticket.",
+      "Elsa herself, however, still prefers to fly to Stockholm.",
+      "Many have also been won over by the chance to arrive rested, with no queues at the airport.",
+      "The survey was paid for by an airline."
+     ],
+     "r": 2,
+     "exp": "A frase deve explicar a razão de conforto e conveniência, e preparar o exemplo do empresário que prefere dormir no trem. As outras contradizem o parágrafo."
+    },
+    {
+     "t": "mc",
+     "q": "Part 7. In which paragraph does someone say he would never again take short flights?",
+     "op": [
+      "Paragraph B",
+      "Paragraph C",
+      "Paragraph D",
+      "Paragraph E"
+     ],
+     "r": 1,
+     "exp": "No parágrafo C, Marcus Bell diz que não voltaria a voar distâncias curtas. O empresário do parágrafo B prefere dormir no trem, mas não fala de voos curtos nem de nunca voltar."
+    }
+   ]
+  }
+ ]
+}
