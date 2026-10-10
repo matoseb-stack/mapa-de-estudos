@@ -1,0 +1,2606 @@
+{
+ "nivel": "C2",
+ "skill": "writing",
+ "exame": "C2 Proficiency (CPE)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "The CPE essay: two texts, one answer",
+   "objetivo": "Entender o Part 1 do C2 Proficiency: ler dois textos curtos, resumir as ideias principais de cada um e avaliá-las.",
+   "foco": "Part 1 essay layout: summary of both texts, evaluation, conclusion",
+   "explicacao": [
+    "No Part 1 do C2 Proficiency você recebe DOIS textos curtos sobre o mesmo tema. Você escreve um essay de 240–280 palavras que resume e avalia as ideias principais dos dois textos.",
+    "Resumir não é copiar. Diga a ideia central de cada texto com suas próprias palavras: Text 1 argues that..., whereas Text 2 suggests that...",
+    "Avaliar é dar a sua opinião sobre essas ideias: elas convencem? Têm limites? Exemplo: This view is persuasive, but it overlooks the cost.",
+    "Estrutura segura: introdução, resumo e avaliação do texto 1, resumo e avaliação do texto 2, conclusão curta. Neste primeiro treino o limite é menor (180–240 palavras)."
+   ],
+   "vocab": [
+    {
+     "en": "to summarise",
+     "pt": "resumir"
+    },
+    {
+     "en": "main idea",
+     "pt": "ideia principal"
+    },
+    {
+     "en": "to put forward",
+     "pt": "apresentar (uma ideia)"
+    },
+    {
+     "en": "to evaluate",
+     "pt": "avaliar"
+    },
+    {
+     "en": "in my own words",
+     "pt": "com minhas próprias palavras"
+    },
+    {
+     "en": "whereas",
+     "pt": "enquanto, ao passo que"
+    },
+    {
+     "en": "to hold that",
+     "pt": "defender que"
+    },
+    {
+     "en": "a valid point",
+     "pt": "um argumento válido"
+    }
+   ],
+   "material": {
+    "tarefa": "You have read the two texts below on working from home.\n\nText 1: Remote work has given employees control over their time. Commuting has disappeared, and people report better concentration and a healthier balance between work and family life. Companies that insist on a return to the office risk losing talented staff.\n\nText 2: Offices are more than rows of desks. Spontaneous conversations spark ideas, and younger employees learn by watching colleagues. Without shared spaces, teams drift apart and loyalty to the company weakens.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 180-240 words.",
+    "genero": "essay",
+    "min": 180,
+    "max": 240,
+    "modelo": "The two texts offer contrasting views on where people should work. The first claims that remote work benefits employees, while the second defends the office as a place of shared learning.\n\nText 1 argues that working from home gives people control over their time. Without a daily commute, staff concentrate better and balance family and professional demands more easily. This is a persuasive case, particularly for experienced workers who already know their roles. However, it assumes that every home offers a quiet, comfortable place to work, which is far from true for many people.\n\nText 2, by contrast, holds that offices encourage chance conversations and allow newcomers to learn from colleagues. It also warns that distance can weaken a team's sense of belonging. I find this point valid, since a great deal of practical knowledge is passed on informally. Nevertheless, the text overlooks the fact that online tools can now replace some of these exchanges.\n\nOn balance, neither text tells the whole story. A flexible arrangement, combining days at home with days together, would preserve the strengths of both approaches.",
+    "checklist": [
+     "Resumi a ideia principal de CADA texto com minhas próprias palavras?",
+     "Avaliei as ideias (concordo em parte, apontei um limite) e não só repeti os textos?",
+     "Tenho introdução, um parágrafo por texto e uma conclusão curta?",
+     "Fiquei dentro do limite de palavras e usei tom formal?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the main task in C2 Proficiency Part 1?",
+     "op": [
+      "To summarise and evaluate the main ideas of two texts",
+      "To write a story that begins with a given sentence",
+      "To describe a graph in as much detail as possible",
+      "To reply to a letter using a fixed list of phrases"
+     ],
+     "r": 0,
+     "exp": "O Part 1 pede resumo E avaliação das ideias dos dois textos. Só resumir ou só opinar perde pontos."
+    },
+    {
+     "t": "gap",
+     "q": "Text 1 argues that cities need more parks, ___ Text 2 claims that housing is the priority.",
+     "resp": [
+      "whereas",
+      "while"
+     ],
+     "exp": "Whereas/while contrastam duas ideias na mesma frase."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta, com ritmo natural.",
+     "frase": "Text one argues that remote work improves wellbeing, whereas text two disagrees.",
+     "exp": "Em 'whereas' /weərˈæz/ e 'wellbeing' /ˌwelˈbiːɪŋ/ o foco está na segunda sílaba e na primeira, respectivamente."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence EVALUATES an idea rather than just reporting it?",
+     "op": [
+      "Text 1 says that people save time without a commute.",
+      "Text 1 mentions commuting and concentration.",
+      "Text 1 makes a fair point, but it ignores those without a quiet home.",
+      "Text 1 is about people who work from home."
+     ],
+     "r": 2,
+     "exp": "Avaliar é julgar: 'a fair point, but...' mostra opinião e limite. As outras só informam."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "second",
+      "text",
+      "puts",
+      "forward",
+      "a",
+      "more",
+      "cautious",
+      "view",
+      "of",
+      "change."
+     ],
+     "resp": "The second text puts forward a more cautious view of change.",
+     "exp": "'puts forward' = apresentar uma ideia. 'The second text' é o sujeito."
+    },
+    {
+     "t": "gap",
+     "q": "Text 2 ___ that offices help younger staff learn from colleagues.",
+     "resp": [
+      "holds",
+      "argues",
+      "claims",
+      "maintains",
+      "suggests",
+      "contends"
+     ],
+     "exp": "Verbos de relato (holds, argues, claims) evitam repetir 'says' e soam mais formais."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Do you think people work better at home or in an office? Give one reason.",
+     "modelo": "I think many people work better at home because there are fewer interruptions. However, that depends on the person and the job.",
+     "min": 14,
+     "chave": [
+      "home",
+      "office",
+      "because",
+      "depends"
+     ],
+     "exp": "Dê a escolha e uma razão com because."
+    },
+    {
+     "t": "mc",
+     "q": "Which opening is best for an essay on two texts about social media?",
+     "op": [
+      "Social media is something that everyone knows about.",
+      "I will now copy the texts in my essay.",
+      "The two texts take opposing positions on whether social media strengthens or weakens friendship.",
+      "Text 1 says: 'Social media has given people a voice.'"
+     ],
+     "r": 2,
+     "exp": "A boa abertura apresenta o tema e a relação entre os textos com palavras próprias, sem citar nem copiar."
+    },
+    {
+     "t": "gap",
+     "q": "Both writers raise a ___ point, yet neither considers the cost.",
+     "resp": [
+      "valid",
+      "fair",
+      "good",
+      "strong"
+     ],
+     "exp": "'A valid/fair point' é uma colocação comum ao avaliar argumentos."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Paraphrasing without copying",
+   "objetivo": "Reformular as ideias dos textos com sinônimos e mudanças de estrutura, sem copiar frases inteiras.",
+   "foco": "Paraphrase: synonyms, word class changes, active and passive voice",
+   "explicacao": [
+    "Copiar trechos dos textos não ganha pontos. A prova quer ver que você entende a ideia e consegue dizê-la de outro jeito.",
+    "Três técnicas: trocar palavras por sinônimos (important - crucial), mudar a classe da palavra (to develop - development) e mudar a estrutura (active - passive).",
+    "Exemplo: 'Many people no longer trust the news.' = 'Public confidence in the media has declined.' Note que a ideia é a mesma, mas quase nenhuma palavra se repete.",
+    "Cuidado: não troque palavras sem pensar. Sinônimos têm nuances. 'Cheap' e 'inexpensive' são parecidos, mas 'cheap' pode soar negativo."
+   ],
+   "vocab": [
+    {
+     "en": "to paraphrase",
+     "pt": "parafrasear"
+    },
+    {
+     "en": "to rephrase",
+     "pt": "reformular"
+    },
+    {
+     "en": "a synonym",
+     "pt": "sinônimo"
+    },
+    {
+     "en": "confidence in",
+     "pt": "confiança em"
+    },
+    {
+     "en": "to decline",
+     "pt": "diminuir"
+    },
+    {
+     "en": "widespread",
+     "pt": "generalizado"
+    },
+    {
+     "en": "to put it differently",
+     "pt": "dito de outra forma"
+    },
+    {
+     "en": "to convey",
+     "pt": "transmitir"
+    }
+   ],
+   "material": {
+    "tarefa": "You have read the two texts below on the use of smartphones in schools.\n\nText 1: Mobile phones are a constant distraction in the classroom. Pupils who keep them in their pockets check them every few minutes, and teachers lose valuable lesson time asking them to put them away. Several countries have already banned phones in schools, with encouraging results.\n\nText 2: Banning phones ignores how young people actually live. Phones are used for research, translation and communication with parents. Teaching pupils to use them responsibly prepares them better for adult life than simply removing them.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 180-240 words.",
+    "genero": "essay",
+    "min": 180,
+    "max": 240,
+    "modelo": "The texts disagree about how schools should deal with mobile phones. One favours a ban, while the other recommends teaching pupils to use them sensibly.\n\nAccording to the first writer, handsets constantly pull pupils' attention away from their work, and staff waste time dealing with the problem. The fact that some countries have already prohibited them in schools is presented as proof that the measure works. This is a reasonable argument, since concentration is essential for learning. Yet the text offers no evidence that results improved because of the ban alone.\n\nThe second text takes a more practical stance. It points out that phones serve genuine educational purposes, from looking up information to contacting family, and that young people will need to manage technology throughout their adult lives. I find this view more convincing, although it underestimates how difficult self-discipline is for teenagers.\n\nIn my opinion, a middle path would work best: phones could be kept away during explanations but allowed for specific tasks. That way schools would protect concentration while still preparing pupils for a connected world.",
+    "checklist": [
+     "Evitei copiar frases dos textos (mudei vocabulário e estrutura)?",
+     "Usei sinônimos precisos, não palavras trocadas ao acaso?",
+     "Avaliei cada texto com um ponto a favor e um limite?",
+     "Mantive o tom formal e dentro do limite de palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is the best paraphrase of: 'Many people no longer trust the news'?",
+     "op": [
+      "Many people do not trust the news any more.",
+      "Public confidence in the media has fallen.",
+      "Many people trust no news.",
+      "The news is no longer trusted by many people."
+     ],
+     "r": 1,
+     "exp": "A opção B muda palavras E estrutura (confidence in the media, has fallen). As outras quase não mudam nada ou mudam o sentido."
+    },
+    {
+     "t": "gap",
+     "q": "Public ___ in the press has declined sharply.",
+     "resp": [
+      "confidence",
+      "trust",
+      "faith"
+     ],
+     "exp": "Mudar a classe da palavra: 'trust' (verbo) vira 'trust/confidence' (substantivo)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza.",
+     "frase": "Rephrasing an idea shows that you have genuinely understood it.",
+     "exp": "Atenção a 'rephrasing' /ˌriːˈfreɪzɪŋ/ e 'genuinely' /ˈdʒenjuɪnli/."
+    },
+    {
+     "t": "mc",
+     "q": "Which pair is NOT a safe synonym swap in a formal essay?",
+     "op": [
+      "widespread - common",
+      "to decline - to fall",
+      "a drawback - a disadvantage",
+      "cheap - inexpensive, always, in every context"
+     ],
+     "r": 3,
+     "exp": "'Cheap' pode ser negativo (de má qualidade); 'inexpensive' é neutro. Sinônimos nem sempre trocam em qualquer contexto."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Teachers",
+      "are",
+      "said",
+      "to",
+      "lose",
+      "valuable",
+      "time",
+      "dealing",
+      "with",
+      "distractions."
+     ],
+     "resp": "Teachers are said to lose valuable time dealing with distractions.",
+     "exp": "Estrutura passiva ('are said to') para relatar a ideia do texto sem copiar a ordem original."
+    },
+    {
+     "t": "gap",
+     "q": "The ban has been ___ as a success by its supporters.",
+     "resp": [
+      "described",
+      "presented",
+      "portrayed",
+      "seen",
+      "regarded"
+     ],
+     "exp": "Verbos de relato na passiva: described/presented/portrayed as."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Say in your own words: why do some people think phones should be banned in classrooms?",
+     "modelo": "Some people believe that phones distract pupils from their lessons, so removing them helps everyone concentrate.",
+     "min": 14,
+     "chave": [
+      "distract",
+      "concentrate",
+      "attention",
+      "lesson",
+      "lessons"
+     ],
+     "exp": "Use verbos como distract/concentrate, não repita 'banned' nem 'classroom'."
+    },
+    {
+     "t": "mc",
+     "q": "Which paraphrase keeps the meaning of: 'Not all students benefit from group work'?",
+     "op": [
+      "No student benefits from group work.",
+      "Group work is of no use to students.",
+      "Group work does not suit every student.",
+      "Students like group work only a little."
+     ],
+     "r": 2,
+     "exp": "'Not all' = 'não todos'. 'Does not suit every student' mantém o sentido. As outras exageram para 'nenhum'."
+    },
+    {
+     "t": "gap",
+     "q": "Technology has become so ___ that it is hard to imagine life without it.",
+     "resp": [
+      "widespread",
+      "pervasive",
+      "common",
+      "ubiquitous"
+     ],
+     "exp": "Sinônimos de nível alto para 'common': widespread, pervasive, ubiquitous."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Summarising the main idea concisely",
+   "objetivo": "Resumir cada texto em uma ou duas frases densas, separando a ideia principal dos exemplos.",
+   "foco": "Concise summary: main idea vs. supporting detail; noun phrases and participles",
+   "explicacao": [
+    "Um bom resumo traz a IDEIA PRINCIPAL, não os exemplos. Pergunte-se: se eu pudesse dizer só uma frase sobre este texto, qual seria?",
+    "Para ficar curto, use frases nominais e particípios: 'Text 1 favours stricter rules, arguing that they protect consumers.' em vez de duas frases separadas.",
+    "Ignore números, nomes e exemplos detalhados, a não ser que sejam essenciais. A avaliação é o que vai ocupar mais espaço depois.",
+    "Dê ao leitor um resumo que ele entenderia mesmo sem ter lido o texto original."
+   ],
+   "vocab": [
+    {
+     "en": "to sum up",
+     "pt": "resumir"
+    },
+    {
+     "en": "the gist",
+     "pt": "a essência"
+    },
+    {
+     "en": "supporting detail",
+     "pt": "detalhe de apoio"
+    },
+    {
+     "en": "to boil down to",
+     "pt": "resumir-se a"
+    },
+    {
+     "en": "in essence",
+     "pt": "em essência"
+    },
+    {
+     "en": "to dwell on",
+     "pt": "insistir em, deter-se em"
+    },
+    {
+     "en": "concise",
+     "pt": "conciso"
+    },
+    {
+     "en": "to stress",
+     "pt": "enfatizar"
+    }
+   ],
+   "material": {
+    "tarefa": "You have read the two texts below on tourism.\n\nText 1: Tourism brings jobs and income to regions with few other industries. Restaurants, guides and hotels all depend on visitors, and the money spent often reaches small family businesses that larger industries ignore.\n\nText 2: Popular destinations are being overwhelmed. Rents rise, residents are pushed out of historic centres, and fragile landscapes suffer from the sheer number of visitors. Some towns now feel like theme parks rather than places to live.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 200-250 words.",
+    "genero": "essay",
+    "min": 200,
+    "max": 250,
+    "modelo": "The two texts approach tourism from opposite directions: the first stresses its economic value, whereas the second focuses on the damage it can do to communities and the environment.\n\nIn essence, Text 1 argues that tourism sustains regions with few alternatives, spreading income to small, family-run businesses. This is a strong point, because many rural areas would otherwise struggle to offer any employment at all. However, the text treats all visitors as equally beneficial and says nothing about who actually keeps the profits.\n\nText 2 boils down to a warning: popular places are being overwhelmed. Rising rents force local people out of their own neighbourhoods, and natural sites deteriorate under the weight of visitors. I find this convincing, particularly in cities where residents now struggle to find affordable housing. On the other hand, it describes the worst cases and may give the impression that all tourism is harmful.\n\nIn my view, the two positions are less opposed than they seem. The real question is not whether to welcome visitors but how many, and under what rules. Limits on numbers, together with fair taxes, could keep the benefits while protecting the places that attract people in the first place.",
+    "checklist": [
+     "Cada resumo tem a ideia principal, sem exemplos desnecessários?",
+     "Usei frases curtas e densas (participios, frases nominais)?",
+     "Guardei espaço suficiente para avaliar, não só resumir?",
+     "Dei minha própria opinião na conclusão?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which summary of Text 2 (about overcrowded tourist towns) is the most concise and accurate?",
+     "op": [
+      "Text 2 says rents rise and landscapes suffer and towns feel like theme parks.",
+      "Text 2 warns that excessive tourism harms local residents and the environment.",
+      "Text 2 is about towns, and many people go there.",
+      "Text 2 mentions rents, landscapes, towns and theme parks in a negative way."
+     ],
+     "r": 1,
+     "exp": "B reduz tudo à ideia principal numa só frase. A e D listam detalhes; C é vaga."
+    },
+    {
+     "t": "gap",
+     "q": "Text 1 argues that tourism sustains small businesses, ___ the money reaches local families.",
+     "resp": [
+      "since",
+      "because",
+      "as"
+     ],
+     "exp": "Since/because/as ligam ideia e razão numa só frase, deixando o resumo curto."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta com pausas naturais.",
+     "frase": "In essence, the second text boils down to a warning about overcrowding.",
+     "exp": "Pause depois de 'In essence'. 'Overcrowding' /ˌəʊvəˈkraʊdɪŋ/."
+    },
+    {
+     "t": "mc",
+     "q": "What should a summary in Part 1 usually leave out?",
+     "op": [
+      "The writer's main argument",
+      "Minor examples and figures",
+      "The relationship between the two texts",
+      "The writer's overall attitude"
+     ],
+     "r": 1,
+     "exp": "Exemplos e números secundários ocupam espaço. Guarde o espaço para a avaliação."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "first",
+      "text,",
+      "stressing",
+      "economic",
+      "benefits,",
+      "favours",
+      "more",
+      "tourism."
+     ],
+     "resp": "The first text, stressing economic benefits, favours more tourism.",
+     "exp": "Particípio ('stressing') junta duas informações numa frase só e encurta o resumo.",
+     "alt": [
+      "The first text, stressing economic benefits, favours more tourism."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "The article ___ down to a plea for tighter controls.",
+     "resp": [
+      "boils",
+      "comes",
+      "amounts"
+     ],
+     "exp": "'Boil down to' = resumir-se a. 'Come down to' tem o mesmo sentido."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Summarise in one sentence: why might too many tourists be a problem for a small town?",
+     "modelo": "Too many tourists can push up prices, crowd out residents and damage the local environment.",
+     "min": 13,
+     "chave": [
+      "prices",
+      "residents",
+      "damage",
+      "crowd",
+      "environment",
+      "rents"
+     ],
+     "exp": "Uma frase só, com a ideia central."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the best way to shorten: 'The writer says that cities are growing. The writer says this causes pollution.'?",
+     "op": [
+      "The writer says cities are growing and the writer says pollution.",
+      "The writer notes that expanding cities cause pollution.",
+      "Cities growing pollution, says writer.",
+      "The writer says cities, and also pollution is something."
+     ],
+     "r": 1,
+     "exp": "B junta as ideias com uma frase nominal ('expanding cities') e um só verbo de relato."
+    },
+    {
+     "t": "gap",
+     "q": "The author ___ on the economic benefits and barely mentions the risks.",
+     "resp": [
+      "dwells",
+      "focuses",
+      "concentrates",
+      "insists"
+     ],
+     "exp": "'Dwell on' = deter-se em; 'focus/concentrate on' também serve."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Evaluating: agree, qualify, challenge",
+   "objetivo": "Avaliar as ideias dos textos concordando em parte, apontando limites e propondo contrapontos.",
+   "foco": "Evaluative language: qualifying, conceding, challenging",
+   "explicacao": [
+    "Avaliar tem três movimentos: CONCORDAR (This is a compelling point), QUALIFICAR (although it only holds true when...) e QUESTIONAR (what the text fails to consider is...).",
+    "No C2, evite 'I agree/I disagree' secos. Prefira: 'I am only partly persuaded by...', 'This claim is difficult to sustain, given that...'.",
+    "Sempre justifique. Uma avaliação sem razão ('This is wrong') é fraca; com razão ('This is wrong because it ignores...') é forte.",
+    "Reconhecer um limite não é fraqueza: mostra pensamento crítico e é exatamente o que o examinador procura."
+   ],
+   "vocab": [
+    {
+     "en": "compelling",
+     "pt": "convincente"
+    },
+    {
+     "en": "to concede",
+     "pt": "admitir, conceder"
+    },
+    {
+     "en": "to overlook",
+     "pt": "deixar de considerar"
+    },
+    {
+     "en": "hard to sustain",
+     "pt": "difícil de sustentar"
+    },
+    {
+     "en": "to hold true",
+     "pt": "ser verdadeiro"
+    },
+    {
+     "en": "to fall short",
+     "pt": "ficar aquém"
+    },
+    {
+     "en": "to be only partly persuaded",
+     "pt": "ficar só em parte convencido"
+    },
+    {
+     "en": "a sweeping claim",
+     "pt": "uma afirmação generalista"
+    }
+   ],
+   "material": {
+    "tarefa": "You have read the two texts below on the role of competition in education.\n\nText 1: Competition motivates pupils to work harder. Exams, rankings and prizes give young people clear goals, and those who learn to cope with pressure are better prepared for the working world.\n\nText 2: Constant comparison damages confidence. Pupils who rarely win begin to believe they cannot succeed, while the highest achievers become anxious. Cooperation, not rivalry, produces the deepest learning.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 220-260 words.",
+    "genero": "essay",
+    "min": 220,
+    "max": 260,
+    "modelo": "The two texts reach opposite conclusions about competition in schools: the first sees it as a useful motivator, the second as a threat to wellbeing and genuine learning.\n\nText 1 maintains that exams, rankings and prizes give pupils goals and teach them to handle pressure. There is some truth in this, since many young people do respond well to a clear target. Nevertheless, the claim is sweeping. It assumes that everyone is motivated in the same way and overlooks pupils for whom pressure produces anxiety rather than effort.\n\nText 2 argues that comparison undermines confidence, particularly among those who seldom win, and that cooperation leads to deeper understanding. I am inclined to agree with the first half of this argument, as constant ranking can be discouraging. However, the second half is harder to sustain. Group work is not automatically more effective, and some tasks still require individual effort that can be fairly measured.\n\nIn my view, both texts fall short because they present competition as all good or all bad. Its effect depends on how it is organised. Friendly challenges against one's own previous results, for example, can inspire pupils without humiliating anyone. A balanced system would therefore reward improvement as well as achievement.",
+    "checklist": [
+     "Concordei, qualifiquei e questionei pelo menos uma ideia?",
+     "Dei uma razão para cada julgamento?",
+     "Evitei 'I agree' / 'I disagree' sozinhos?",
+     "Mostrei uma posição própria na conclusão?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence QUALIFIES an argument rather than simply accepting or rejecting it?",
+     "op": [
+      "Text 1 is completely right.",
+      "Text 1 is wrong.",
+      "Text 1 holds true for adults, but is less convincing for young children.",
+      "Text 1 is about adults."
+     ],
+     "r": 2,
+     "exp": "Qualificar é dizer em que condições a ideia vale. 'holds true for..., but less for...' faz isso."
+    },
+    {
+     "t": "gap",
+     "q": "This claim is difficult to ___, given the evidence.",
+     "resp": [
+      "sustain",
+      "support",
+      "defend",
+      "maintain"
+     ],
+     "exp": "'Difficult to sustain/support/defend' = difícil de sustentar."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "I am only partly persuaded by the argument, which overlooks an important factor.",
+     "exp": "Atenção a 'persuaded' /pəˈsweɪdɪd/ e 'overlooks' /ˌəʊvəˈlʊks/."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the strongest evaluation of a text claiming that 'all homework is useless'.",
+     "op": [
+      "I disagree with it.",
+      "This claim is too sweeping, since well-designed tasks can reinforce what pupils have learnt.",
+      "The text is bad.",
+      "Homework is a topic many people dislike."
+     ],
+     "r": 1,
+     "exp": "Boa avaliação = julgamento (too sweeping) + razão (since...). As outras não justificam."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "What",
+      "the",
+      "text",
+      "fails",
+      "to",
+      "consider",
+      "is",
+      "the",
+      "cost",
+      "of",
+      "such",
+      "a",
+      "policy."
+     ],
+     "resp": "What the text fails to consider is the cost of such a policy.",
+     "exp": "'What the text fails to consider' é uma estrutura cleft para destacar a falha.",
+     "alt": [
+      "What the text fails to consider is the cost of such a policy."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "While I ___ that the argument has merit, it remains incomplete.",
+     "resp": [
+      "concede",
+      "accept",
+      "admit",
+      "grant"
+     ],
+     "exp": "'Concede/accept/admit/grant that' admite um ponto antes de questionar."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Give your opinion: is competition good for children? Mention one benefit and one risk.",
+     "modelo": "Competition can motivate children to improve, but it can also make weaker pupils lose confidence.",
+     "min": 15,
+     "chave": [
+      "motivate",
+      "confidence",
+      "risk",
+      "benefit",
+      "improve",
+      "pressure",
+      "anxiety"
+     ],
+     "exp": "Um benefício e um risco, ligados por but/however."
+    },
+    {
+     "t": "mc",
+     "q": "Which linking phrase best introduces a limit to a point you have just accepted?",
+     "op": [
+      "Furthermore",
+      "That said",
+      "As a result",
+      "For instance"
+     ],
+     "r": 1,
+     "exp": "'That said' introduz um contraponto depois de uma concessão. As outras adicionam ou exemplificam."
+    },
+    {
+     "t": "gap",
+     "q": "The writer's case is ___ weakened by a lack of evidence.",
+     "resp": [
+      "somewhat",
+      "rather",
+      "considerably",
+      "seriously",
+      "slightly",
+      "badly"
+     ],
+     "exp": "Advérbios de grau (somewhat, rather, considerably) deixam o julgamento mais preciso."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Synthesising two viewpoints",
+   "objetivo": "Combinar as duas ideias em uma posição própria, mostrando como os textos se relacionam.",
+   "foco": "Synthesis: finding common ground, contrast, and a reasoned stance",
+   "explicacao": [
+    "Sintetizar é mais do que somar. É mostrar a RELAÇÃO entre os textos: concordam, discordam ou tratam de aspectos diferentes?",
+    "Frases úteis: 'Although they differ in emphasis, both writers accept that...', 'Text 1 and Text 2 are less opposed than they appear.'",
+    "Depois de relacionar, dê a SUA posição: qual ponto de vista pesa mais, ou como conciliá-los. Isso valoriza a conclusão.",
+    "Neste nível o essay tem 240–280 palavras. Distribua assim: cerca de 50 de introdução, 80 para cada texto e 50 de conclusão."
+   ],
+   "vocab": [
+    {
+     "en": "common ground",
+     "pt": "pontos em comum"
+    },
+    {
+     "en": "to reconcile",
+     "pt": "conciliar"
+    },
+    {
+     "en": "to differ in emphasis",
+     "pt": "diferir na ênfase"
+    },
+    {
+     "en": "to overlap",
+     "pt": "coincidir em parte"
+    },
+    {
+     "en": "a middle path",
+     "pt": "um meio-termo"
+    },
+    {
+     "en": "to take a stance",
+     "pt": "tomar uma posição"
+    },
+    {
+     "en": "complementary",
+     "pt": "complementar"
+    },
+    {
+     "en": "at odds with",
+     "pt": "em desacordo com"
+    }
+   ],
+   "material": {
+    "tarefa": "You have read the two texts below on artificial intelligence at work.\n\nText 1: Artificial intelligence will remove tedious tasks from many jobs. Workers will have more time for creative and interpersonal work, and productivity gains will make society wealthier as a whole.\n\nText 2: The gains will not be shared equally. Companies adopting automation first will profit most, while workers in routine jobs face unemployment. Without careful regulation, inequality will grow.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 240-280 words.",
+    "genero": "essay",
+    "min": 240,
+    "max": 280,
+    "modelo": "The two texts are not so much opposed as concerned with different questions: the first considers what artificial intelligence can achieve, while the second asks who will actually benefit.\n\nText 1 takes an optimistic view. By removing tedious tasks, automation would leave employees free to concentrate on creative and human aspects of their work, and the resulting productivity would enrich society. This is a persuasive picture, and history offers some support, as earlier technologies did create new kinds of employment. Yet the text treats prosperity as if it were automatically shared, which is a large assumption.\n\nText 2 addresses precisely this weakness. It predicts that firms adopting the technology early will capture most of the profit, leaving routine workers exposed to unemployment unless governments intervene. I find this warning well founded, although it paints a rather static picture: workers who are given the chance to retrain may move into roles that do not yet exist.\n\nTaken together, the texts are complementary. Both accept that the technology will transform work; they differ over whether the transformation will be fair. My own position is that the outcome depends on policy rather than on technology itself. If retraining is funded and gains are taxed sensibly, the optimism of the first text could be justified. If not, the fears of the second would prove accurate.",
+    "checklist": [
+     "Mostrei a relação entre os textos (pontos em comum e diferenças)?",
+     "Evitei somar dois resumos sem ligá-los?",
+     "Terminei com uma posição própria e justificada?",
+     "Estou entre 240 e 280 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence best synthesises two texts?",
+     "op": [
+      "Text 1 is about technology and Text 2 is about workers.",
+      "Both writers accept that automation will transform work; they differ over who will benefit.",
+      "Text 1 is longer than Text 2.",
+      "Neither text is interesting."
+     ],
+     "r": 1,
+     "exp": "A síntese mostra o que une (transformação do trabalho) e o que separa (quem se beneficia)."
+    },
+    {
+     "t": "gap",
+     "q": "The two views are ___ opposed than they first appear.",
+     "resp": [
+      "less",
+      "not so",
+      "far less",
+      "much less"
+     ],
+     "exp": "'Less opposed than they appear' = menos opostas do que parecem."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia com ritmo natural.",
+     "frase": "Although they differ in emphasis, both writers accept that change is inevitable.",
+     "exp": "'Emphasis' /ˈemfəsɪs/ e 'inevitable' /ɪnˈevɪtəbl/. Pausa depois da vírgula."
+    },
+    {
+     "t": "mc",
+     "q": "Which conclusion is the strongest?",
+     "op": [
+      "So both texts are interesting and I enjoyed reading them.",
+      "In short, the texts are complementary, and the outcome will depend on how gains are shared, not on the technology itself.",
+      "In conclusion, I have written about two texts.",
+      "To sum up, there are many opinions."
+     ],
+     "r": 1,
+     "exp": "A melhor conclusão sintetiza e toma posição com razão. As outras são vazias."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Taken",
+      "together,",
+      "the",
+      "texts",
+      "suggest",
+      "that",
+      "policy",
+      "matters",
+      "more",
+      "than",
+      "technology."
+     ],
+     "resp": "Taken together, the texts suggest that policy matters more than technology.",
+     "exp": "'Taken together' resume dois textos numa só ideia final.",
+     "alt": [
+      "Taken together, the texts suggest that policy matters more than technology."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "The two writers ___ over how the profits should be distributed.",
+     "resp": [
+      "differ",
+      "disagree",
+      "diverge",
+      "clash"
+     ],
+     "exp": "'Differ/disagree/diverge/clash over' = divergir sobre."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Do you think new technology usually helps everyone equally? Why, or why not?",
+     "modelo": "No, I don't think so. New technology often benefits those who can afford it first, so inequality can increase unless there is support for everyone.",
+     "min": 18,
+     "chave": [
+      "inequality",
+      "afford",
+      "benefit",
+      "benefits",
+      "not",
+      "equally",
+      "support"
+     ],
+     "exp": "Opine e dê razão; use unless para uma condição."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence reconciles a pessimistic and an optimistic view?",
+     "op": [
+      "One of them must be wrong.",
+      "Both are right all the time.",
+      "The outcome is likely to depend on how the change is managed.",
+      "I will ignore the first text."
+     ],
+     "r": 2,
+     "exp": "Conciliar é achar a condição que faz as duas ideias possíveis: 'depends on how it is managed'."
+    },
+    {
+     "t": "gap",
+     "q": "The texts are ___ rather than contradictory, since each covers a different aspect.",
+     "resp": [
+      "complementary",
+      "compatible"
+     ],
+     "exp": "Complementary/compatible = que se completam, não se contradizem."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Register and tone: a formal letter to an editor",
+   "objetivo": "Escolher o registro certo (formal, firme, educado) em uma carta e evitar tom coloquial ou rude.",
+   "foco": "Formal register: nominalisation, passive, hedging, polite firmness",
+   "explicacao": [
+    "Registro é o nível de formalidade. Em carta formal ao editor use: sem contrações, vocabulário preciso e frases completas. 'I am writing to express my concern' em vez de 'I want to complain'.",
+    "Nominalização deixa o texto mais formal: 'People are moving to cities' vira 'The migration to urban areas is accelerating'.",
+    "Suavize críticas com hedging: 'It could be argued that...', 'This would seem to suggest...'. Isso soa educado, mas ainda firme.",
+    "Estrutura: Dear Sir or Madam, motivo da carta, argumento 1, argumento 2, proposta ou pedido, Yours faithfully (sem nome) ou Yours sincerely (com nome)."
+   ],
+   "vocab": [
+    {
+     "en": "to express concern",
+     "pt": "manifestar preocupação"
+    },
+    {
+     "en": "with regard to",
+     "pt": "com relação a"
+    },
+    {
+     "en": "it could be argued",
+     "pt": "poderia se argumentar"
+    },
+    {
+     "en": "regrettably",
+     "pt": "lamentavelmente"
+    },
+    {
+     "en": "to take issue with",
+     "pt": "discordar de"
+    },
+    {
+     "en": "Yours faithfully",
+     "pt": "Atenciosamente (sem nome)"
+    },
+    {
+     "en": "to urge",
+     "pt": "exortar"
+    },
+    {
+     "en": "a matter of public interest",
+     "pt": "uma questão de interesse público"
+    }
+   ],
+   "material": {
+    "tarefa": "A local newspaper has published an article proposing that the town library be closed and its building sold to a property developer. Write a letter to the editor responding to the article, expressing your view and proposing an alternative. Write 250-300 words.",
+    "genero": "letter",
+    "min": 250,
+    "max": 300,
+    "modelo": "Dear Sir or Madam,\n\nI am writing with regard to your recent article proposing the closure of the town library. While I appreciate that the council faces difficult financial decisions, I must take issue with the suggestion that a library is a luxury the community can no longer afford.\n\nIt could be argued that, in the age of the internet, books have lost their importance. This view, however, overlooks the many functions the library performs. It offers free computer access to residents without a connection at home, a quiet place for students to revise, and activities for children and elderly people who might otherwise be isolated. Regrettably, the article mentions none of these services.\n\nMoreover, the sale of the building would bring only a temporary financial benefit. Once the money had been spent, the town would be left without a public space of this kind, and rebuilding one would be far more costly than maintaining the present one.\n\nI would therefore urge the council to consider alternatives. Part of the building could be rented to a café or a community group, generating income while keeping the library open. Volunteers, too, might help to reduce running costs.\n\nA library is not simply a collection of books but a shared asset which benefits people of every age. I sincerely hope the council will think again before taking a step that cannot easily be reversed.\n\nYours faithfully,\n\nA. Taylor",
+    "checklist": [
+     "Usei 'Dear Sir or Madam' e 'Yours faithfully' (ou Sincerely com nome)?",
+     "Evitei contrações e linguagem coloquial?",
+     "Suavizei críticas com hedging e apresentei uma proposta?",
+     "Expliquei o motivo da carta logo no primeiro parágrafo?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which opening is most appropriate for a formal letter to an editor?",
+     "op": [
+      "Hi there! I saw your article and it made me really cross.",
+      "I am writing with regard to your recent article on the library.",
+      "Listen, your article is wrong.",
+      "Hello, hope you are well! I want to say something."
+     ],
+     "r": 1,
+     "exp": "A abertura formal declara o motivo, sem cumprimentos informais."
+    },
+    {
+     "t": "gap",
+     "q": "I am writing to ___ my concern about the proposal.",
+     "resp": [
+      "express",
+      "voice",
+      "convey",
+      "raise"
+     ],
+     "exp": "'Express/voice/convey/raise (my) concern' são colocações formais."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta com tom firme e educado.",
+     "frase": "I must take issue with the suggestion that libraries are no longer needed.",
+     "exp": "Pronuncie 'suggestion' /səˈdʒestʃən/ e 'libraries' /ˈlaɪbrəriz/."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is the most formal way to criticise a proposal?",
+     "op": [
+      "This idea is stupid.",
+      "It could be argued that the proposal underestimates the long-term costs.",
+      "You clearly haven't thought about it.",
+      "Nobody wants this."
+     ],
+     "r": 1,
+     "exp": "'It could be argued that' é hedging formal: critica sem ofender."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Regrettably,",
+      "the",
+      "article",
+      "makes",
+      "no",
+      "mention",
+      "of",
+      "these",
+      "services."
+     ],
+     "resp": "Regrettably, the article makes no mention of these services.",
+     "exp": "'Regrettably' no início dá tom formal à crítica; 'makes no mention of' é uma colocação comum."
+    },
+    {
+     "t": "gap",
+     "q": "The ___ of the building would bring only a short-term benefit.",
+     "resp": [
+      "sale",
+      "disposal"
+     ],
+     "exp": "Nominalização: 'sell' (verbo) vira 'sale' (substantivo) para soar mais formal."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "A friend wants to complain about slow service. Give one polite, formal sentence they could write.",
+     "modelo": "I am writing to express my disappointment at the level of service I received, which fell short of my expectations.",
+     "min": 16,
+     "chave": [
+      "writing",
+      "disappointment",
+      "express",
+      "concern",
+      "service",
+      "regret"
+     ],
+     "exp": "Use 'I am writing to...' e um verbo formal como express."
+    },
+    {
+     "t": "mc",
+     "q": "Which closing is correct for a letter beginning 'Dear Sir or Madam'?",
+     "op": [
+      "Yours sincerely",
+      "Best wishes",
+      "Yours faithfully",
+      "Cheers"
+     ],
+     "r": 2,
+     "exp": "Sem nome do destinatário: Yours faithfully. Com nome: Yours sincerely."
+    },
+    {
+     "t": "gap",
+     "q": "I would ___ the council to reconsider before it is too late.",
+     "resp": [
+      "urge",
+      "encourage",
+      "implore",
+      "press"
+     ],
+     "exp": "'Urge/encourage/implore' pedem com firmeza, ainda de modo formal."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Cohesion and flow in a long essay",
+   "objetivo": "Ligar frases e parágrafos de forma natural, sem repetir conectivos nem soar mecânico.",
+   "foco": "Cohesion: reference words, substitution, discourse markers, paragraph links",
+   "explicacao": [
+    "Fluidez vem de ligar cada frase à anterior. Use palavras de referência (this, such, the latter, the former) em vez de repetir substantivos: 'This tendency...', 'Such an approach...'.",
+    "Variar conectivos evita monotonia. Em vez de sempre 'However', alterne: 'That said', 'Even so', 'On the other hand', 'Conversely'.",
+    "O último ponto de um parágrafo deve preparar o seguinte (He still fails to address the cost. The cost, in fact, is...). Isso dá a sensação de um fio contínuo.",
+    "Cuidado com excesso: conectivos demais soam artificiais. Se a ligação já é clara pelo sentido, dispense."
+   ],
+   "vocab": [
+    {
+     "en": "the former / the latter",
+     "pt": "o primeiro / o último (dos dois)"
+    },
+    {
+     "en": "that said",
+     "pt": "dito isso"
+    },
+    {
+     "en": "even so",
+     "pt": "mesmo assim"
+    },
+    {
+     "en": "conversely",
+     "pt": "por outro lado, inversamente"
+    },
+    {
+     "en": "by extension",
+     "pt": "por extensão"
+    },
+    {
+     "en": "in turn",
+     "pt": "por sua vez"
+    },
+    {
+     "en": "to follow on from",
+     "pt": "dar sequência a"
+    },
+    {
+     "en": "as a consequence",
+     "pt": "como consequência"
+    }
+   ],
+   "material": {
+    "tarefa": "You have read the two texts below on public funding for the arts.\n\nText 1: Public money should support theatres, museums and orchestras. These institutions preserve culture that the market would let disappear, and they give access to people who could never afford private ticket prices.\n\nText 2: Governments have more urgent duties. When hospitals and schools lack resources, spending on the arts is hard to defend. Those who value culture should be willing to pay for it themselves.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 240-280 words.",
+    "genero": "essay",
+    "min": 240,
+    "max": 280,
+    "modelo": "The question of whether the state should pay for the arts divides the two writers sharply: the former believes public money is essential to culture, while the latter regards it as a luxury.\n\nText 1 contends that theatres, museums and orchestras would struggle to survive in a purely commercial market. In turn, their disappearance would deprive those who cannot afford expensive tickets of any contact with culture at all. This is a compelling argument, and it is strengthened by the fact that cultural education tends to begin in public institutions. That said, the text does not explain why taxpayers who never visit them should contribute.\n\nThe latter, by contrast, puts hospitals and schools first. Such an order of priorities is understandable when budgets are tight, and few would deny that medical care is a basic need. Even so, the argument rests on a false choice. The sums spent on the arts are small compared with health or education, so cutting them would barely improve public services, while the cultural loss would be considerable.\n\nOn balance, I find the first position more persuasive, although I accept that funding should come with conditions. Subsidised institutions could be required to offer low-priced tickets and to reach schools, which would answer the objection that only a privileged minority benefits. In this way, public money would serve the public in the fullest sense.",
+    "checklist": [
+     "Usei palavras de referência (this, such, the former/latter) para ligar ideias?",
+     "Variei os conectivos e evitei repetir 'however'?",
+     "Cada parágrafo prepara o seguinte?",
+     "Evitei conectivos em excesso?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "In 'Text 1 favours funding; the latter opposes it', what does 'the latter' refer to?",
+     "op": [
+      "Text 1",
+      "Text 2",
+      "The funding",
+      "Both texts"
+     ],
+     "r": 1,
+     "exp": "'The latter' é o segundo de dois itens mencionados. 'The former' seria o primeiro."
+    },
+    {
+     "t": "gap",
+     "q": "The arts receive little money; ___ , cutting them would save very little.",
+     "resp": [
+      "thus",
+      "therefore",
+      "consequently",
+      "hence"
+     ],
+     "exp": "Esses conectivos de consequência ligam a ideia anterior à conclusão."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia com a pausa depois de 'Even so'.",
+     "frase": "Even so, the argument rests on a false choice between hospitals and theatres.",
+     "exp": "Destaque 'argument' /ˈɑːɡjumənt/ e 'choice' /tʃɔɪs/."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence flows best after: 'Many cities have introduced congestion charges.'?",
+     "op": [
+      "Congestion charges are charges that cities introduce.",
+      "Such measures have reduced traffic, though they remain unpopular with drivers.",
+      "Cities introduce things and traffic goes down.",
+      "Congestion charges. Traffic. Drivers."
+     ],
+     "r": 1,
+     "exp": "'Such measures' retoma a frase anterior sem repetir 'congestion charges'."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "That",
+      "said,",
+      "the",
+      "proposal",
+      "ignores",
+      "the",
+      "needs",
+      "of",
+      "rural",
+      "communities."
+     ],
+     "resp": "That said, the proposal ignores the needs of rural communities.",
+     "exp": "'That said' abre um contraponto sem repetir 'however'."
+    },
+    {
+     "t": "gap",
+     "q": "Costs are rising; ___ , public support for the scheme is falling.",
+     "resp": [
+      "in turn",
+      "consequently",
+      "as a result"
+     ],
+     "exp": "'In turn' mostra que uma consequência gera outra."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Link these ideas in one or two sentences: buses are cheap; many people still prefer cars.",
+     "modelo": "Buses are cheap. Even so, many people still prefer cars because they feel more convenient.",
+     "min": 12,
+     "chave": [
+      "even so",
+      "however",
+      "but",
+      "although",
+      "yet",
+      "still"
+     ],
+     "exp": "Use um conectivo de contraste como even so ou however."
+    },
+    {
+     "t": "mc",
+     "q": "Which version avoids unnecessary repetition?",
+     "op": [
+      "The council has a plan. The council's plan is expensive. The council's plan will take years.",
+      "The council has a plan, which, though expensive, will take years to complete.",
+      "The plan is plan of the council.",
+      "The council. The plan. Expensive."
+     ],
+     "r": 1,
+     "exp": "Uma frase com oração relativa e concessão elimina a repetição."
+    },
+    {
+     "t": "gap",
+     "q": "Conservation matters; ___ , restoring old buildings can be extremely costly.",
+     "resp": [
+      "conversely",
+      "however",
+      "that said",
+      "nonetheless"
+     ],
+     "exp": "Conectivos de contraste variados ajudam a manter o fluxo natural."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Rhetoric and emphasis: inversion and cleft sentences",
+   "objetivo": "Dar ênfase com inversão, frases clivadas e retórica sem soar exagerado.",
+   "foco": "Emphasis: inversion after negative adverbials, cleft sentences, rhetorical devices",
+   "explicacao": [
+    "Inversão após advérbios negativos dá ênfase: 'Rarely has a policy provoked such debate.' 'Not only did it fail, but it also cost millions.' 'Under no circumstances should...'.",
+    "Frases clivadas colocam em destaque a parte importante: 'What matters is...', 'It is the lack of funding that causes the problem.'",
+    "Recursos retóricos úteis: regra de três ('quicker, cheaper and safer'), contraste ('not X, but Y') e pergunta retórica ('Can we really afford to wait?').",
+    "Use com moderação: duas ou três estruturas enfáticas bem escolhidas valem mais do que uma em cada frase."
+   ],
+   "vocab": [
+    {
+     "en": "rarely has",
+     "pt": "raramente..."
+    },
+    {
+     "en": "not only... but also",
+     "pt": "não só... mas também"
+    },
+    {
+     "en": "under no circumstances",
+     "pt": "em hipótese alguma"
+    },
+    {
+     "en": "scarcely... when",
+     "pt": "mal... quando"
+    },
+    {
+     "en": "a rhetorical question",
+     "pt": "pergunta retórica"
+    },
+    {
+     "en": "to drive the point home",
+     "pt": "enfatizar o argumento"
+    },
+    {
+     "en": "what matters is",
+     "pt": "o que importa é"
+    },
+    {
+     "en": "so... that",
+     "pt": "tão... que"
+    }
+   ],
+   "material": {
+    "tarefa": "A magazine for young readers has invited articles on the topic 'Is silence disappearing from our lives?' Write an article for the magazine, considering the causes and consequences, and make your piece engaging. Write 280-320 words.",
+    "genero": "article",
+    "min": 280,
+    "max": 320,
+    "modelo": "Can you remember the last time you sat in complete silence? Rarely has it been harder to answer that question. From the moment our alarms ring until we fall asleep with a screen glowing beside us, our days are filled with noise.\n\nIt is not only the traffic and the building sites that are to blame. What has changed most is our own behaviour. Scarcely have we boarded a train than headphones go on; hardly has a meal begun than phones appear on the table. Silence has come to feel uncomfortable, even threatening, as if it were an empty space that must be filled.\n\nThe consequences are subtle but significant. Not only does constant sound make concentration difficult, but it also leaves us with little opportunity to reflect on our own thoughts. Scientists have linked continual noise to stress, poor sleep and even heart problems. Under no circumstances should we dismiss these findings as mere inconveniences.\n\nYet the solution is neither complicated nor expensive. It is a few minutes of quiet each day that can transform our mood. Walk to school without music. Switch your phone off during dinner. Sit in a park and simply listen to what is around you. You may be surprised by how much richer the world sounds when it is not competing with a playlist.\n\nSilence is not an absence; it is a place to think, to rest and to hear ourselves. Not only can we afford to protect it, but we cannot afford to lose it. After all, if we never stop talking and listening to everyone else, when will we find out what we ourselves have to say?",
+    "checklist": [
+     "Usei 2 ou 3 estruturas enfáticas (inversão, cleft) sem exagerar?",
+     "Tenho abertura que prende e fechamento marcante?",
+     "Incluí uma pergunta retórica ou regra de três?",
+     "Escrevi entre 280 e 320 palavras, com tom adequado a jovens leitores?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence uses inversion correctly for emphasis?",
+     "op": [
+      "Rarely a policy has caused such controversy.",
+      "Rarely has a policy caused such controversy.",
+      "Rarely a policy caused has such controversy.",
+      "Rarely did a policy has caused such controversy."
+     ],
+     "r": 1,
+     "exp": "Depois de 'Rarely' o auxiliar vem antes do sujeito: 'Rarely has a policy caused...'."
+    },
+    {
+     "t": "gap",
+     "q": "Not only ___ the plan fail, but it also cost millions.",
+     "resp": [
+      "did"
+     ],
+     "exp": "Com 'Not only' no início, usa-se o auxiliar antes do sujeito: 'did the plan fail'."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta, enfatizando 'no'.",
+     "frase": "Under no circumstances should we underestimate the power of a single well-chosen word.",
+     "exp": "'Circumstances' /ˈsɜːkəmstənsɪz/. Enfatize 'no' e 'single'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is a cleft sentence that emphasises the cause?",
+     "op": [
+      "Poverty causes crime.",
+      "It is poverty, rather than laziness, that drives the problem.",
+      "Crime and poverty exist.",
+      "The problem is caused."
+     ],
+     "r": 1,
+     "exp": "A clivada 'It is X that...' destaca o elemento X, aqui 'poverty'."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Hardly",
+      "had",
+      "the",
+      "debate",
+      "begun",
+      "when",
+      "the",
+      "microphone",
+      "failed."
+     ],
+     "resp": "Hardly had the debate begun when the microphone failed.",
+     "exp": "Inversão com 'Hardly had... when': ação imediata seguida de outra.",
+     "alt": [
+      "Hardly had the debate begun when the microphone failed."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "___ matters most is not speed but accuracy.",
+     "resp": [
+      "what"
+     ],
+     "exp": "Frase clivada com 'What' no início: What matters most is..."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Use one emphatic structure: say why sleep is important.",
+     "modelo": "Not only does sleep restore our energy, but it also helps us learn and remember.",
+     "min": 14,
+     "chave": [
+      "sleep",
+      "not only",
+      "important",
+      "energy",
+      "memory",
+      "health"
+     ],
+     "exp": "Tente inversão com Not only does... but also."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the best example of a rhetorical question for an article opener?",
+     "op": [
+      "What time is it?",
+      "Where can I buy a ticket?",
+      "How much of your day is spent actually listening?",
+      "Is this paragraph finished?"
+     ],
+     "r": 2,
+     "exp": "A pergunta retórica provoca reflexão no leitor e não espera resposta literal."
+    },
+    {
+     "t": "gap",
+     "q": "So ___ was the noise that nobody could hear the speaker.",
+     "resp": [
+      "loud",
+      "great",
+      "intense",
+      "deafening"
+     ],
+     "exp": "'So + adjetivo + that' é outra forma enfática; também com inversão: 'So loud was the noise...'."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Precise and idiomatic vocabulary",
+   "objetivo": "Usar colocações e expressões idiomáticas precisas no lugar de palavras genéricas.",
+   "foco": "Collocations, idioms, and replacing vague words",
+   "explicacao": [
+    "Palavras vagas (good, bad, thing, big, a lot of) enfraquecem o texto. Troque por termos precisos: a significant improvement, a damaging effect, a substantial amount.",
+    "Colocações são combinações naturais: raise awareness, heated debate, mounting pressure, bitterly disappointed. Escolher a colocação errada soa estranho mesmo que a ideia seja clara.",
+    "Idioms ajudam, mas só quando o tom permite e você tem certeza do sentido: 'a double-edged sword', 'the tip of the iceberg', 'to strike a balance'. Evite clichês de moda.",
+    "Na dúvida entre uma expressão rebuscada e uma simples e correta, escolha a correta."
+   ],
+   "vocab": [
+    {
+     "en": "a double-edged sword",
+     "pt": "faca de dois gumes"
+    },
+    {
+     "en": "the tip of the iceberg",
+     "pt": "a ponta do iceberg"
+    },
+    {
+     "en": "to strike a balance",
+     "pt": "encontrar um equilíbrio"
+    },
+    {
+     "en": "mounting pressure",
+     "pt": "pressão crescente"
+    },
+    {
+     "en": "a heated debate",
+     "pt": "um debate acalorado"
+    },
+    {
+     "en": "to raise awareness",
+     "pt": "aumentar a conscientização"
+    },
+    {
+     "en": "a far-reaching impact",
+     "pt": "um impacto de longo alcance"
+    },
+    {
+     "en": "to bear in mind",
+     "pt": "ter em mente"
+    }
+   ],
+   "material": {
+    "tarefa": "You have read the two texts below on social media.\n\nText 1: Social media has made it easier than ever to keep in touch. Families separated by thousands of miles share daily news, and small campaigns can reach a worldwide audience in hours.\n\nText 2: The same platforms encourage shallow friendships and constant comparison. Young people measure their lives against polished images, and anxiety is widespread among heavy users.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 240-280 words.",
+    "genero": "essay",
+    "min": 240,
+    "max": 280,
+    "modelo": "Social media has provoked a heated debate, and the two texts illustrate its double-edged nature: the first celebrates the closeness it makes possible, while the second laments its psychological cost.\n\nText 1 emphasises how easily platforms connect people. Relatives living on different continents can exchange daily news, and modest campaigns can attract an international audience within hours. This is a substantial advantage, and it has helped to raise awareness of causes that might otherwise have gone unnoticed. The text, however, treats connection and friendship as if they were the same thing, which is questionable.\n\nText 2 sees the picture differently. It argues that platforms foster superficial relationships and encourage users to compare their lives with carefully edited images, a habit linked to widespread anxiety. I find this observation largely convincing, particularly with regard to adolescents, who are under mounting pressure to appear successful. Nevertheless, the text paints heavy users as passive victims, ignoring those who deliberately control how they use the platforms.\n\nIn my view, the texts describe two sides of the same coin. The impact of social media depends on how people use it, rather than on the technology alone. Teaching young people to strike a balance between online and offline life, and to bear in mind that what they see is selective, would reduce the harm while preserving the genuine benefits.",
+    "checklist": [
+     "Troquei palavras vagas (good, bad, thing) por termos precisos?",
+     "Usei colocações naturais (raise awareness, heated debate)?",
+     "Usei no máximo 2 idioms, só os que domino?",
+     "Revisei se cada expressão cabe no tom formal?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which phrase is a natural collocation?",
+     "op": [
+      "do a decision",
+      "take a decision",
+      "make a mistake of decision",
+      "put a decision"
+     ],
+     "r": 1,
+     "exp": "'Take a decision' (britânico) e 'make a decision' são colocações naturais; 'do a decision' não é."
+    },
+    {
+     "t": "gap",
+     "q": "The scandal was only the tip of the ___.",
+     "resp": [
+      "iceberg"
+     ],
+     "exp": "'The tip of the iceberg' = a parte visível de um problema muito maior."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Social media is a double-edged sword, bringing both connection and comparison.",
+     "exp": "'Double-edged' /ˌdʌbl ˈedʒd/. Atenção a 'comparison' /kəmˈpærɪsn/."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence replaces the vague words most effectively? Original: 'There was a big change in the way people do things.'",
+     "op": [
+      "There was a change in the way people do things.",
+      "There was a profound shift in the way people work.",
+      "The things changed a lot.",
+      "People did big things differently."
+     ],
+     "r": 1,
+     "exp": "'Profound shift' e 'work' são específicos; o original usava palavras genéricas (big, things)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "company",
+      "has",
+      "been",
+      "under",
+      "mounting",
+      "pressure",
+      "to",
+      "reduce",
+      "emissions."
+     ],
+     "resp": "The company has been under mounting pressure to reduce emissions.",
+     "exp": "'Under mounting pressure' é uma colocação forte e natural."
+    },
+    {
+     "t": "gap",
+     "q": "It is a ___ debate, with strong arguments on both sides.",
+     "resp": [
+      "heated",
+      "fierce",
+      "lively",
+      "ongoing"
+     ],
+     "exp": "Debate acalorado/intenso/animado: heated, fierce, lively."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Use 'strike a balance' to explain what a student should do between study and rest.",
+     "modelo": "A student should strike a balance between study and rest to avoid becoming exhausted.",
+     "min": 13,
+     "chave": [
+      "balance",
+      "study",
+      "rest",
+      "relax",
+      "exhausted",
+      "free time"
+     ],
+     "exp": "Use 'strike a balance between X and Y'."
+    },
+    {
+     "t": "mc",
+     "q": "Which idiom would be the most appropriate in a formal essay about policy?",
+     "op": [
+      "It's raining cats and dogs.",
+      "A step in the right direction.",
+      "Spill the beans.",
+      "Pull someone's leg."
+     ],
+     "r": 1,
+     "exp": "'A step in the right direction' é aceitável em registro formal. As outras são informais ou não cabem."
+    },
+    {
+     "t": "gap",
+     "q": "The new law is likely to have a far-___ impact on small businesses.",
+     "resp": [
+      "reaching"
+     ],
+     "exp": "'Far-reaching impact' = impacto de longo alcance."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "The engaging article",
+   "objetivo": "Escrever um article que prende o leitor do título à última linha, com voz própria.",
+   "foco": "Article: hook, direct address, rhetorical devices, memorable ending",
+   "explicacao": [
+    "Um article prende o leitor logo no início: uma pergunta, uma cena, um fato surpreendente ou uma afirmação ousada. O título (opcional) também ajuda: curto e intrigante.",
+    "Fale com o leitor: 'you', 'we', perguntas retóricas. O tom é mais livre que o de um essay, mas continua cuidado: sem gírias exageradas.",
+    "Varie o ritmo: frases longas alternadas com curtas. Isso evita monotonia e dá personalidade.",
+    "Feche com uma frase memorável ou um chamado à ação, que retome a ideia do início. A estrutura circular dá sensação de unidade."
+   ],
+   "vocab": [
+    {
+     "en": "to grab attention",
+     "pt": "chamar a atenção"
+    },
+    {
+     "en": "a hook",
+     "pt": "um gancho"
+    },
+    {
+     "en": "to strike a chord",
+     "pt": "tocar o leitor"
+    },
+    {
+     "en": "food for thought",
+     "pt": "algo para refletir"
+    },
+    {
+     "en": "a vivid picture",
+     "pt": "uma imagem vívida"
+    },
+    {
+     "en": "to leave a lasting impression",
+     "pt": "deixar uma impressão duradoura"
+    },
+    {
+     "en": "tongue-in-cheek",
+     "pt": "em tom de brincadeira"
+    },
+    {
+     "en": "to reflect on",
+     "pt": "refletir sobre"
+    }
+   ],
+   "material": {
+    "tarefa": "You see this notice in an international magazine: 'Articles wanted: The best advice I never took'. Write an article describing a piece of advice you ignored, what happened, and what you learnt from it. Make your piece engaging for readers. Write 280-320 words.",
+    "genero": "article",
+    "min": 280,
+    "max": 320,
+    "modelo": "\"Never lend money to a friend.\" My grandmother said it so often that it became a family joke. I laughed, nodded, and ignored her completely.\n\nThe friend in question was Daniel, who had been in my class since we were six. When he asked to borrow a few hundred pounds to start a small bicycle repair business, I did not hesitate. He was honest, hard-working, and, I told myself, the kind of person for whom rules simply did not apply.\n\nFor the first months, everything went splendidly. The workshop opened, customers arrived, and Daniel sent me cheerful messages with photographs of mended wheels. Then the messages grew shorter. Then they stopped. When we finally met, he looked exhausted and embarrassed, and the business was almost bankrupt. It was not dishonesty, but inexperience: he had never budgeted for repairs, taxes or a single quiet month.\n\nWhat surprised me was my own reaction. I had expected to feel angry, yet what I felt was guilty. I had treated the loan as a gesture of friendship, when I should have treated it as a serious arrangement, with clear terms and a realistic plan. Our friendship survived, but only after several uncomfortable conversations.\n\nSo was my grandmother right? Not entirely. The advice should perhaps have been: never lend money you cannot afford to lose, and never do so without talking honestly about what might go wrong. Daniel now works for a large cycling company, and he has paid back every penny.\n\nThese days, when someone offers me advice, I still listen with a smile. But I listen more carefully, because the best advice often arrives disguised as a family joke.",
+    "checklist": [
+     "Comecei com um gancho (cena, pergunta ou frase marcante)?",
+     "Falei diretamente com o leitor e variei o ritmo das frases?",
+     "O final retoma o início e deixa uma impressão?",
+     "Estou entre 280 e 320 palavras, com tom próprio mas cuidado?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which opening is the most engaging for an article about sleep?",
+     "op": [
+      "This article is about sleep.",
+      "Sleep is important for health and I will explain why.",
+      "At 3 a.m., the whole city is asleep, except for you, staring at the ceiling.",
+      "Many people sleep eight hours every night."
+     ],
+     "r": 2,
+     "exp": "A cena concreta e a segunda pessoa criam gancho. As outras são genéricas."
+    },
+    {
+     "t": "gap",
+     "q": "The story really ___ a chord with me, as I had faced the same dilemma.",
+     "resp": [
+      "struck",
+      "hit",
+      "touched"
+     ],
+     "exp": "'Strike a chord' = tocar, ressoar com alguém."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia como uma frase de impacto, devagar.",
+     "frase": "The best advice often arrives disguised as a family joke.",
+     "exp": "Atenção a 'disguised' /dɪsˈɡaɪzd/ e ao ritmo: pausa depois de 'advice'."
+    },
+    {
+     "t": "mc",
+     "q": "Which technique makes an ending MOST memorable?",
+     "op": [
+      "Summarising every point again in the same words",
+      "Apologising for the length of the article",
+      "Echoing the opening image or line in a new light",
+      "Adding a new, unrelated topic"
+     ],
+     "r": 2,
+     "exp": "A estrutura circular retoma o início com novo sentido e deixa uma impressão duradoura."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "What",
+      "I",
+      "learnt,",
+      "however,",
+      "was",
+      "something",
+      "my",
+      "grandmother",
+      "never",
+      "mentioned."
+     ],
+     "resp": "What I learnt, however, was something my grandmother never mentioned.",
+     "exp": "Frase clivada com 'What I learnt' cria suspense antes da revelação."
+    },
+    {
+     "t": "gap",
+     "q": "The experience left a ___ impression on everyone present.",
+     "resp": [
+      "lasting",
+      "deep",
+      "strong",
+      "profound",
+      "powerful"
+     ],
+     "exp": "'Lasting/deep/strong/profound impression' = impressão duradoura/forte."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Describe one short, vivid sentence to start an article about your first day at a new school.",
+     "modelo": "My heart was pounding as I pushed open the heavy door of a school where I knew no one.",
+     "min": 16,
+     "chave": [
+      "school",
+      "door",
+      "heart",
+      "first",
+      "nervous",
+      "new"
+     ],
+     "exp": "Use um detalhe sensorial (heart pounding, heavy door)."
+    },
+    {
+     "t": "mc",
+     "q": "An article writer wants a lively but not slangy tone. Which sentence fits best?",
+     "op": [
+      "It was, like, totally insane, you know?",
+      "The queue was so long that it seemed to have its own postcode.",
+      "It was long.",
+      "The queue was of considerable length, as it were."
+     ],
+     "r": 1,
+     "exp": "A comparação bem-humorada (own postcode) é viva sem usar gíria. A última é rebuscada demais."
+    },
+    {
+     "t": "gap",
+     "q": "Short sentences can add punch. Long ones add detail. ___ both is the secret of rhythm.",
+     "resp": [
+      "mixing",
+      "combining",
+      "using",
+      "blending",
+      "varying"
+     ],
+     "exp": "'Mixing/combining/blending both' = alternar frases curtas e longas."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "The persuasive formal letter",
+   "objetivo": "Escrever uma carta formal que convence: problema, argumentos, solução e pedido claro.",
+   "foco": "Persuasion: building a case, concession, call to action",
+   "explicacao": [
+    "Uma carta persuasiva segue uma lógica: (1) motivo, (2) problema com provas, (3) consequências de não agir, (4) proposta concreta, (5) pedido de ação.",
+    "Reconheça o outro lado antes de rebater: 'I appreciate the difficulties involved; nevertheless...'. Isso mostra equilíbrio e fortalece seu argumento.",
+    "Use exemplos concretos e números simples, em vez de afirmações vagas. 'Three children were injured last year' convence mais do que 'it is dangerous'.",
+    "Termine pedindo uma ação específica e dando um prazo, se couber: 'I would be grateful if you could confirm by the end of the month.'"
+   ],
+   "vocab": [
+    {
+     "en": "to make a case for",
+     "pt": "defender uma ideia"
+    },
+    {
+     "en": "to appreciate the difficulties",
+     "pt": "reconhecer as dificuldades"
+    },
+    {
+     "en": "a pressing concern",
+     "pt": "uma preocupação urgente"
+    },
+    {
+     "en": "to look into",
+     "pt": "investigar, analisar"
+    },
+    {
+     "en": "I would be grateful if",
+     "pt": "eu agradeceria se"
+    },
+    {
+     "en": "immediate action",
+     "pt": "ação imediata"
+    },
+    {
+     "en": "to address the issue",
+     "pt": "tratar da questão"
+    },
+    {
+     "en": "at your earliest convenience",
+     "pt": "assim que possível"
+    }
+   ],
+   "material": {
+    "tarefa": "You live near a busy junction where several accidents have occurred involving pedestrians. The local council has said that it has no money for improvements. Write a letter to the council persuading it to take action. Write 280-320 words.",
+    "genero": "letter",
+    "min": 280,
+    "max": 320,
+    "modelo": "Dear Councillor Reed,\n\nI am writing to urge the council to reconsider its decision not to improve the junction of Mill Road and Station Avenue, where I have lived for twelve years. I appreciate that budgets are under strain; nevertheless, I believe that the cost of inaction will ultimately exceed the cost of a solution.\n\nThe problem is serious and well documented. Over the past year, there have been four accidents at this junction, two involving children walking to the nearby primary school. Fortunately, no one has been killed, but it would be unrealistic to assume that this good fortune will continue. Traffic has increased since the new housing estate opened, and drivers regularly cross on red in order to avoid the long queues.\n\nI understand that a full redesign would be expensive. However, there are inexpensive measures which could make a real difference. A pedestrian crossing with a button-operated signal, a lower speed limit, and a camera to discourage drivers from running the red light would cost far less than the compensation and medical expenses that follow a serious accident. Parents have also offered to help raise money for improvements, and a local business has said it would consider sponsorship.\n\nI would therefore be grateful if the council could look into these options and arrange a public meeting where residents can give their views. A reply by the end of next month would be much appreciated.\n\nThis is not a request that concerns one neighbourhood alone. It is a matter of public safety, and the council has the power to address it before another family suffers.\n\nI look forward to hearing from you.\n\nYours sincerely,\n\nMaria Costa",
+    "checklist": [
+     "Apresentei o problema com fatos concretos, não só opinião?",
+     "Reconheci o argumento do outro lado antes de rebater?",
+     "Propus soluções realistas e fiz um pedido claro?",
+     "Usei registro formal e o fechamento correto?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence best concedes a point before arguing against it?",
+     "op": [
+      "You are wrong.",
+      "I appreciate the council's financial constraints; nevertheless, the risk to residents cannot be ignored.",
+      "Money is not a problem.",
+      "Everyone knows the council is wasteful."
+     ],
+     "r": 1,
+     "exp": "Reconhecer a dificuldade e então contra-argumentar torna a carta mais persuasiva e educada."
+    },
+    {
+     "t": "gap",
+     "q": "I would be ___ if you could reply by the end of the month.",
+     "resp": [
+      "grateful",
+      "thankful",
+      "obliged"
+     ],
+     "exp": "'I would be grateful/obliged if' é fórmula formal para pedir algo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia com tom educado e firme.",
+     "frase": "I would be grateful if the council could look into these proposals.",
+     "exp": "'Grateful' /ˈɡreɪtfl/. Pausa depois de 'council'."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the most persuasive way to describe a problem?",
+     "op": [
+      "The road is very dangerous.",
+      "Four accidents have occurred at the junction in twelve months.",
+      "I think the road is quite bad.",
+      "Cars go fast, which is not good."
+     ],
+     "r": 1,
+     "exp": "Dados concretos (quatro acidentes, doze meses) convencem mais que adjetivos vagos."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "cost",
+      "of",
+      "inaction",
+      "will",
+      "ultimately",
+      "exceed",
+      "the",
+      "cost",
+      "of",
+      "a",
+      "solution."
+     ],
+     "resp": "The cost of inaction will ultimately exceed the cost of a solution.",
+     "exp": "Contraste 'cost of inaction' x 'cost of a solution' é um argumento clássico em cartas persuasivas."
+    },
+    {
+     "t": "gap",
+     "q": "It would be ___ to assume that this good fortune will continue.",
+     "resp": [
+      "unrealistic",
+      "naive",
+      "foolish",
+      "unwise",
+      "rash"
+     ],
+     "exp": "Adjetivos que apontam a fragilidade de uma suposição."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Say one persuasive sentence asking a mayor to build a safe cycle path.",
+     "modelo": "I urge you to build a safe cycle path, since it would reduce traffic and protect cyclists.",
+     "min": 16,
+     "chave": [
+      "urge",
+      "cycle",
+      "path",
+      "safe",
+      "protect",
+      "traffic",
+      "since"
+     ],
+     "exp": "Use um verbo de pedido (urge) e uma razão (since/because)."
+    },
+    {
+     "t": "mc",
+     "q": "Which closing paragraph is the most effective in a persuasive letter?",
+     "op": [
+      "Well, that's all, bye.",
+      "Thanks for reading, and sorry for the long letter.",
+      "I would be grateful if the council could confirm what action it will take by the end of May.",
+      "I hope you do something."
+     ],
+     "r": 2,
+     "exp": "O fecho persuasivo pede ação específica e dá prazo."
+    },
+    {
+     "t": "gap",
+     "q": "The matter requires ___ attention before another accident occurs.",
+     "resp": [
+      "immediate",
+      "urgent",
+      "prompt",
+      "serious"
+     ],
+     "exp": "Adjetivos que reforçam urgência: immediate, urgent, prompt."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "The critical report",
+   "objetivo": "Escrever um report analítico: avaliar uma situação, comparar opções e recomendar com justificativa.",
+   "foco": "Report: headings, objective tone, evaluation of options, recommendation",
+   "explicacao": [
+    "Um report usa subtítulos claros (Introduction, Findings, Recommendations). É objetivo, organizado e voltado para decisão.",
+    "No C2, não basta descrever: AVALIE. Compare as opções (strengths vs. limitations) e use linguagem como 'This option appears viable but is likely to prove costly'.",
+    "Use passiva e estruturas impessoais: 'It was found that...', 'It is recommended that the committee consider...'.",
+    "Termine com recomendações específicas e justificadas. O leitor deve saber o que fazer depois de ler."
+   ],
+   "vocab": [
+    {
+     "en": "findings",
+     "pt": "resultados, constatações"
+    },
+    {
+     "en": "viable",
+     "pt": "viável"
+    },
+    {
+     "en": "it is recommended that",
+     "pt": "recomenda-se que"
+    },
+    {
+     "en": "to prove costly",
+     "pt": "revelar-se caro"
+    },
+    {
+     "en": "the main drawback",
+     "pt": "a principal desvantagem"
+    },
+    {
+     "en": "on the whole",
+     "pt": "de modo geral"
+    },
+    {
+     "en": "to outweigh",
+     "pt": "superar"
+    },
+    {
+     "en": "a feasible alternative",
+     "pt": "uma alternativa viável"
+    }
+   ],
+   "material": {
+    "tarefa": "You are a member of the student committee at a language college. The principal wants to improve the way students practise English outside lessons. You have been asked to write a report evaluating THREE possible options (a conversation club, an online platform, a buddy system with local residents) and recommending one. Write 280-320 words.",
+    "genero": "report",
+    "min": 280,
+    "max": 320,
+    "modelo": "Introduction\n\nThe purpose of this report is to evaluate three ways of helping students practise English outside lessons and to recommend the most suitable.\n\nConversation Club\n\nA weekly club led by a teacher would provide structured speaking practice and immediate feedback. It would be inexpensive, as existing rooms could be used. However, attendance is likely to fall once exams approach, and quieter students may feel reluctant to speak in front of a group.\n\nOnline Platform\n\nAn online platform would be available at any hour, which suits students with irregular schedules. Findings from other colleges suggest that such systems encourage reading and listening but rarely produce real conversation. Moreover, the licence would prove costly, and many learners lose motivation without a human partner.\n\nBuddy System with Local Residents\n\nPairing students with volunteers from the neighbourhood would offer authentic communication in a relaxed setting. Participants could practise vocabulary related to daily life and learn about the culture, which adds a valuable dimension to language learning. The main drawback is organisation: volunteers would need to be recruited and matched carefully, and safety must be guaranteed.\n\nRecommendation\n\nOn the whole, all three options have merit, but the buddy system offers the greatest benefit in relation to cost. It is therefore recommended that the college launch a pilot scheme with twenty students next term, supported by a volunteer coordinator. In the meantime, the conversation club could continue as a low-cost supplement. The online platform should be reconsidered only if funding increases.\n\nThe results of the pilot could then be reviewed before any wider commitment is made.",
+    "checklist": [
+     "Usei subtítulos claros e linguagem impessoal (it is recommended)?",
+     "Avaliei vantagens E limites de cada opção?",
+     "Fiz uma recomendação justificada e específica?",
+     "Evitei tom pessoal ou coloquial?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is appropriate for a report?",
+     "op": [
+      "I reckon the club is brilliant!",
+      "It was found that attendance declined during examination periods.",
+      "You should totally try the club.",
+      "The club is just awesome."
+     ],
+     "r": 1,
+     "exp": "Reports usam passiva impessoal e vocabulário neutro."
+    },
+    {
+     "t": "gap",
+     "q": "It is ___ that the college introduce a pilot scheme.",
+     "resp": [
+      "recommended",
+      "suggested",
+      "proposed",
+      "advised"
+     ],
+     "exp": "'It is recommended/suggested that + sujeito + verbo base' (subjuntivo britânico: introduce)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta com tom objetivo.",
+     "frase": "On the whole, the second option appears viable but is likely to prove costly.",
+     "exp": "'Viable' /ˈvaɪəbl/ e 'costly' /ˈkɒstli/."
+    },
+    {
+     "t": "mc",
+     "q": "Which statement EVALUATES rather than merely describes?",
+     "op": [
+      "The platform has video lessons.",
+      "The platform offers flexibility, yet its cost is unlikely to be justified by the results.",
+      "The platform is an app.",
+      "Students can log in."
+     ],
+     "r": 1,
+     "exp": "Avaliar é pesar vantagem e desvantagem e chegar a um julgamento."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "main",
+      "drawback",
+      "is",
+      "the",
+      "time",
+      "required",
+      "to",
+      "organise",
+      "such",
+      "a",
+      "scheme."
+     ],
+     "resp": "The main drawback is the time required to organise such a scheme.",
+     "exp": "Estrutura típica para apontar a principal desvantagem."
+    },
+    {
+     "t": "gap",
+     "q": "The benefits of the scheme clearly ___ the costs.",
+     "resp": [
+      "outweigh",
+      "exceed"
+     ],
+     "exp": "'Outweigh' = pesar mais do que. 'Exceed' também aceito."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Make a short recommendation to a school: which is better, a school trip or a guest speaker? Give one reason.",
+     "modelo": "I would recommend a guest speaker, as it is cheaper and easier to organise than a trip.",
+     "min": 16,
+     "chave": [
+      "recommend",
+      "speaker",
+      "trip",
+      "cheaper",
+      "because",
+      "as",
+      "since"
+     ],
+     "exp": "Use 'I would recommend' ou 'It is recommended'."
+    },
+    {
+     "t": "mc",
+     "q": "Which closing section is the best for a report?",
+     "op": [
+      "That's all I have to say.",
+      "In conclusion, I like all three.",
+      "It is recommended that the college adopt the buddy system, starting with a one-term pilot.",
+      "Hope this helps!"
+     ],
+     "r": 2,
+     "exp": "Recomendação clara, específica e com passo seguinte."
+    },
+    {
+     "t": "gap",
+     "q": "The scheme appears ___, although funding remains uncertain.",
+     "resp": [
+      "viable",
+      "feasible",
+      "workable",
+      "practicable"
+     ],
+     "exp": "Adjetivos para 'viável/exequível'."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "The critical review",
+   "objetivo": "Escrever uma review que descreve, avalia com precisão e recomenda, com opinião fundamentada.",
+   "foco": "Review: balanced judgement, descriptive vocabulary, recommendation",
+   "explicacao": [
+    "Uma review não conta só a história: descreve, AVALIA e RECOMENDA. Dê a sua opinião com razões e exemplos específicos.",
+    "Seja equilibrado: aponte pontos fortes e fracos. Um review só elogioso ou só crítico parece pouco confiável.",
+    "Use vocabulário crítico preciso: gripping, thought-provoking, uneven, predictable, visually stunning, a slow start but a rewarding finale.",
+    "Pense no leitor: para quem o filme/livro/restaurante é indicado? Termine com uma recomendação clara (ou uma ressalva)."
+   ],
+   "vocab": [
+    {
+     "en": "thought-provoking",
+     "pt": "que faz pensar"
+    },
+    {
+     "en": "gripping",
+     "pt": "envolvente"
+    },
+    {
+     "en": "uneven",
+     "pt": "irregular"
+    },
+    {
+     "en": "a slow burner",
+     "pt": "algo que demora a engrenar"
+    },
+    {
+     "en": "to live up to",
+     "pt": "estar à altura de"
+    },
+    {
+     "en": "a standout",
+     "pt": "um destaque"
+    },
+    {
+     "en": "to fall flat",
+     "pt": "não funcionar"
+    },
+    {
+     "en": "well worth",
+     "pt": "vale muito a pena"
+    }
+   ],
+   "material": {
+    "tarefa": "A culture magazine has asked readers to send in reviews of a book, film or series that deals with an important social issue. Write a review of one you know well, evaluating how effectively it treats the issue and saying whether you would recommend it. Write 280-320 words.",
+    "genero": "review",
+    "min": 280,
+    "max": 320,
+    "modelo": "The documentary Dust to Dust, which follows three families farming on the edge of a drying lake, is a quietly powerful film that deserves a far wider audience than it has so far found.\n\nThe subject, climate-driven water shortage, could easily have produced a lecture. Instead, the director chooses to let the farmers speak for themselves. We watch them negotiate for water, argue with neighbours, and worry about whether their children will inherit anything worth keeping. This human focus is the film's greatest strength: statistics are mentioned only sparingly, yet the audience understands the stakes completely.\n\nVisually, the film is stunning. Long shots of cracked earth, filmed at dawn, convey both beauty and desolation without a word of commentary. The soundtrack, however, is less successful. The piano music is occasionally intrusive, and it tells us how to feel at moments when silence would have been more effective.\n\nThe pacing is uneven. The first half hour is a slow burner, and viewers expecting a conventional story may lose patience. Yet those who persevere are rewarded by a moving final sequence in which the three families meet to share their dwindling supplies.\n\nWhere the film falls short is in its treatment of solutions. It identifies the problem with precision, but its only suggestion, a rather vague reference to technology, feels thin. A little more analysis of what governments could do would have made it more complete.\n\nNevertheless, this is thought-provoking and humane filmmaking. I would recommend it to anyone interested in environmental issues, although those looking for fast entertainment should look elsewhere. It lingers in the mind for days after the credits have rolled.",
+    "checklist": [
+     "Descrevi o essencial sem contar o final?",
+     "Avaliei pontos fortes e fracos com exemplos?",
+     "Usei vocabulário crítico preciso (gripping, uneven)?",
+     "Terminei com uma recomendação clara e para quem?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence offers balanced criticism?",
+     "op": [
+      "The film is perfect.",
+      "The film is awful.",
+      "The acting is superb, but the plot becomes predictable in the second half.",
+      "The film has actors and a plot."
+     ],
+     "r": 2,
+     "exp": "Review equilibrada elogia e critica com razões."
+    },
+    {
+     "t": "gap",
+     "q": "The opening is slow, but the final scene is ___ rewarding.",
+     "resp": [
+      "richly",
+      "deeply",
+      "highly",
+      "immensely"
+     ],
+     "exp": "Advérbios que intensificam: richly/deeply/highly rewarding."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "It is a thought-provoking film that lingers in the mind long after the credits.",
+     "exp": "'Thought-provoking' /ˈθɔːt prəˌvəʊkɪŋ/ e 'lingers' /ˈlɪŋɡəz/."
+    },
+    {
+     "t": "mc",
+     "q": "Which adjective best fits a review of a thriller that keeps you hooked?",
+     "op": [
+      "tedious",
+      "gripping",
+      "vague",
+      "faded"
+     ],
+     "r": 1,
+     "exp": "'Gripping' = que prende a atenção. As outras são negativas ou não se aplicam."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "film",
+      "fails",
+      "to",
+      "live",
+      "up",
+      "to",
+      "the",
+      "promise",
+      "of",
+      "its",
+      "opening",
+      "scenes."
+     ],
+     "resp": "The film fails to live up to the promise of its opening scenes.",
+     "exp": "'Fail to live up to' = não estar à altura de. Boa expressão crítica."
+    },
+    {
+     "t": "gap",
+     "q": "The second half ___ flat, as the story loses its direction.",
+     "resp": [
+      "falls"
+     ],
+     "exp": "'Fall flat' = não funcionar. A frase está no presente."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Give a short balanced opinion about a film or book you know: one strength, one weakness.",
+     "modelo": "The story is gripping and the characters are convincing, but the ending feels rushed.",
+     "min": 14,
+     "chave": [
+      "story",
+      "characters",
+      "ending",
+      "gripping",
+      "but",
+      "however",
+      "weakness"
+     ],
+     "exp": "Estrutura: elogio + but + crítica."
+    },
+    {
+     "t": "mc",
+     "q": "Which closing recommendation is the most useful to readers?",
+     "op": [
+      "I liked it.",
+      "Read it.",
+      "Worth reading for anyone interested in politics, though readers wanting a fast plot may be disappointed.",
+      "It exists."
+     ],
+     "r": 2,
+     "exp": "A recomendação precisa indica para quem e com qual ressalva."
+    },
+    {
+     "t": "gap",
+     "q": "The performances are ___ the best I have seen this year.",
+     "resp": [
+      "among",
+      "easily",
+      "arguably",
+      "undoubtedly"
+     ],
+     "exp": "Palavras que modulam o julgamento: among, arguably, undoubtedly."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Editing: subtle errors and style",
+   "objetivo": "Revisar o próprio texto: achar erros sutis de gramática, preposição, pontuação e estilo antes de entregar.",
+   "foco": "Proofreading: dependent prepositions, agreement, repetition, wordiness",
+   "explicacao": [
+    "Erros sutis são os que sobram em níveis altos: preposição dependente (different from/to, not 'than'), concordância (The number of students is..., A number of students are...) e vírgula entre sujeito e verbo.",
+    "Também revise o estilo: corte palavras vazias (due to the fact that = because), evite repetir a mesma palavra em duas frases seguidas e troque palavras genéricas.",
+    "Faça uma leitura final com uma lista: título/saudação, tempo verbal, conectivos, ortografia britânica (organise, colour, programme), contagem de palavras.",
+    "Se estiver em dúvida entre duas formas, use a estrutura que você domina. Clareza vale mais do que complexidade errada."
+   ],
+   "vocab": [
+    {
+     "en": "a slip",
+     "pt": "um deslize"
+    },
+    {
+     "en": "wordy",
+     "pt": "prolixo"
+    },
+    {
+     "en": "to cut down",
+     "pt": "reduzir"
+    },
+    {
+     "en": "redundant",
+     "pt": "redundante"
+    },
+    {
+     "en": "dependent preposition",
+     "pt": "preposição dependente"
+    },
+    {
+     "en": "to proofread",
+     "pt": "revisar"
+    },
+    {
+     "en": "agreement",
+     "pt": "concordância"
+    },
+    {
+     "en": "to tighten up",
+     "pt": "tornar mais conciso"
+    }
+   ],
+   "material": {
+    "tarefa": "You have read the two texts below on whether university education should be free.\n\nText 1: Free university education would open doors to talented students whatever their family income. Society as a whole benefits from a better-qualified workforce, so it is fair that the state should pay.\n\nText 2: Taxpayers who never attended university should not be asked to fund those who will earn higher salaries. A system in which graduates repay part of the cost once they are earning is fairer and more sustainable.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 240-280 words.",
+    "genero": "essay",
+    "min": 240,
+    "max": 280,
+    "modelo": "The two texts disagree on who should bear the cost of higher education: the first holds that the state ought to pay, whereas the second argues that graduates should contribute once they are earning.\n\nText 1 emphasises opportunity. If tuition were free, talented students from poorer families would no longer be excluded, and the whole economy would profit from a better-qualified workforce. This argument is persuasive, since ability is distributed far more evenly than wealth. Nevertheless, the text does not say how a state with limited resources could afford such a policy, nor whether places would remain available to all who qualify.\n\nText 2 appeals to fairness from a different angle: those who do not attend university should not subsidise the future earnings of those who do. There is some force in this view, particularly as graduates tend to receive higher salaries. However, it overlooks the fact that society also gains from doctors, engineers and teachers. Furthermore, the threat of long-term debt may discourage students from less affluent backgrounds, which would undermine the very fairness the writer defends.\n\nIn my opinion, the second model is the more realistic, provided repayment is linked to income and ceases to be a burden when earnings are low. Such a system would keep universities open to everyone with the ability to benefit from them, while sharing the cost between the individual and the community in proportion to the benefit each receives.",
+    "checklist": [
+     "Reli procurando preposições, concordância e pontuação?",
+     "Cortei palavras vazias e repetições?",
+     "Conferi ortografia britânica (organise, programme)?",
+     "Contei as palavras e o texto está dentro do limite?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "This system is different than the old one.",
+      "This system is different from the old one.",
+      "This system is different of the old one.",
+      "This system is differently to the old one."
+     ],
+     "r": 1,
+     "exp": "Em inglês britânico formal: different from (ou to). 'Different than' é evitado."
+    },
+    {
+     "t": "gap",
+     "q": "The number of applicants ___ risen sharply this year.",
+     "resp": [
+      "has"
+     ],
+     "exp": "'The number of' é singular: has risen. 'A number of' é plural."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia atentamente a concordância.",
+     "frase": "A number of students have complained that the number of places is too small.",
+     "exp": "'A number of' + plural (have); 'the number of' + singular (is)."
+    },
+    {
+     "t": "mc",
+     "q": "Which version is the most concise without losing meaning? Original: 'Due to the fact that the cost is high, many students are unable to attend.'",
+     "op": [
+      "Because of the high cost, many students cannot attend.",
+      "Due to the fact the cost is high, many students are not able to attend.",
+      "In view of the fact of the high cost, many students cannot attend.",
+      "As a result of the fact that costs are high, many students can not attend."
+     ],
+     "r": 0,
+     "exp": "'Due to the fact that' é prolixo. A opção A diz o mesmo com menos palavras."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Not",
+      "only",
+      "does",
+      "the",
+      "policy",
+      "lack",
+      "evidence,",
+      "but",
+      "it",
+      "also",
+      "lacks",
+      "public",
+      "support."
+     ],
+     "resp": "Not only does the policy lack evidence, but it also lacks public support.",
+     "exp": "Parte de uma frase com inversão; revise a ordem auxiliar + sujeito.",
+     "alt": [
+      "Not only does the policy lack evidence, but it also lacks public support."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Neither of the proposals ___ likely to succeed.",
+     "resp": [
+      "is",
+      "seems"
+     ],
+     "exp": "'Neither of' + plural tende a usar verbo singular no formal: is/seems."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "Correct this sentence aloud: 'The informations in the text is very interesting.' Say the correct version.",
+     "modelo": "The information in the text is very interesting.",
+     "min": 8,
+     "chave": [
+      "the information in"
+     ],
+     "exp": "'Information' é incontável e não tem plural; o verbo fica no singular."
+    },
+    {
+     "t": "mc",
+     "q": "Which spelling is the British one?",
+     "op": [
+      "organize the programme",
+      "organise the program",
+      "organise the programme",
+      "organize the program"
+     ],
+     "r": 2,
+     "exp": "Britânico formal: organise e programme (nota: 'program' é só computador)."
+    },
+    {
+     "t": "gap",
+     "q": "The report, ___ was published last week, has attracted criticism.",
+     "resp": [
+      "which"
+     ],
+     "exp": "Oração relativa não restritiva usa 'which' entre vírgulas."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Mock exam: Part 1 essay on two texts",
+   "objetivo": "Fazer um simulado do Part 1 do C2 Proficiency: resumir e avaliar dois textos em 240–280 palavras, em tempo de prova.",
+   "foco": "Exam practice: summary, evaluation and synthesis of two texts",
+   "explicacao": [
+    "Este é o formato real do Part 1: dois textos curtos, um essay de 240–280 palavras. Na prova você tem cerca de 45 minutos para esta parte.",
+    "Plano de 5 minutos: sublinhe a ideia principal de cada texto, decida seu julgamento sobre cada um e escolha a posição final. Depois escreva.",
+    "Roteiro: introdução que relaciona os textos; parágrafo 1 (resumo + avaliação do texto 1); parágrafo 2 (resumo + avaliação do texto 2); conclusão com posição própria.",
+    "Reserve 5 minutos finais para revisar: preposições, concordância, ortografia britânica e contagem de palavras."
+   ],
+   "vocab": [
+    {
+     "en": "to bear the cost",
+     "pt": "arcar com o custo"
+    },
+    {
+     "en": "to be at stake",
+     "pt": "estar em jogo"
+    },
+    {
+     "en": "to draw a distinction",
+     "pt": "fazer uma distinção"
+    },
+    {
+     "en": "a trade-off",
+     "pt": "uma troca, um compromisso"
+    },
+    {
+     "en": "in the long term",
+     "pt": "a longo prazo"
+    },
+    {
+     "en": "to hinge on",
+     "pt": "depender de"
+    },
+    {
+     "en": "to be outweighed by",
+     "pt": "ser superado por"
+    },
+    {
+     "en": "ultimately",
+     "pt": "em última análise"
+    }
+   ],
+   "material": {
+    "tarefa": "You have read the two texts below on city living and the countryside.\n\nText 1: Cities are the engines of progress. They concentrate talent, ideas and investment in a small area, and a dense population can be served more efficiently by transport, healthcare and education. For young people in particular, urban life offers opportunities that rural areas cannot match. Those who criticise the city for being crowded forget that a crowded city can also be a green one, if it is planned wisely.\n\nText 2: The pressure to live in cities is mistaken. Rents are high, air quality is poor, and many residents feel isolated despite being surrounded by people. Thanks to remote work and better connections, villages can offer a calmer, healthier life without sacrificing a career. Governments that invest in rural services could encourage a more balanced distribution of the population.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 240-280 words.",
+    "genero": "essay",
+    "min": 240,
+    "max": 280,
+    "modelo": "The two texts reach opposite conclusions about where people live best: the first presents the city as a source of opportunity and efficiency, while the second argues that rural life has become a realistic and healthier alternative.\n\nText 1 maintains that cities gather talent and investment in one place, which allows services such as transport and healthcare to be provided more efficiently. It adds that young people, in particular, find opportunities in cities that are simply unavailable elsewhere. This is a strong argument, and it reflects the experience of many graduates. However, the writer dismisses overcrowding too quickly: planning may help, but it does not explain how a city can remain affordable when demand for housing is so high.\n\nText 2, by contrast, warns that the attraction of cities is overstated, citing high rents, poor air and loneliness. It suggests that remote work now allows people to enjoy village life without damaging their careers. I find this point partly convincing, since technology has genuinely changed what is possible. Yet it assumes that every profession can be done from home and that rural areas already possess reliable internet, schools and hospitals, which is far from the case in many regions.\n\nUltimately, the two views hinge on the same question: how well public services are distributed. In my opinion, the future lies not in choosing between city and country but in reducing the gap between them. With investment in rural infrastructure, more people would be able to choose where they live according to their preferences rather than their need to find work.",
+    "checklist": [
+     "Resumi cada texto com minhas palavras e avaliei cada um?",
+     "Relacionei os textos na introdução e na conclusão?",
+     "Dei minha própria posição, justificada?",
+     "Revisei preposições, concordância, ortografia britânica e o número de palavras (240–280)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the correct order of tasks in Part 1?",
+     "op": [
+      "Copy both texts, then add a conclusion",
+      "Read both texts, note main ideas, form a view, then write and check",
+      "Write immediately and read the texts afterwards",
+      "Summarise only the longer text"
+     ],
+     "r": 1,
+     "exp": "Planejar antes de escrever economiza tempo e melhora a organização."
+    },
+    {
+     "t": "gap",
+     "q": "Text 1 holds ___ cities concentrate talent and investment.",
+     "resp": [
+      "that"
+     ],
+     "exp": "'Hold that' = defender que. Falta a conjunção 'that'."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia como se fosse a frase final do seu essay.",
+     "frase": "Ultimately, the two views hinge on how public services are distributed.",
+     "exp": "'Ultimately' /ˈʌltɪmətli/ e 'distributed' /dɪˈstrɪbjutɪd/."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is the best paraphrase of: 'Cities are crowded and expensive'?",
+     "op": [
+      "Cities are crowded and expensive.",
+      "Urban areas are overpopulated and costly to live in.",
+      "Cities are very crowded and very expensive.",
+      "Crowded and expensive are cities."
+     ],
+     "r": 1,
+     "exp": "B troca vocabulário e estrutura mantendo o sentido; A e C quase copiam."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Neither",
+      "text",
+      "explains",
+      "how",
+      "rural",
+      "areas",
+      "would",
+      "afford",
+      "such",
+      "investment."
+     ],
+     "resp": "Neither text explains how rural areas would afford such investment.",
+     "exp": "'Neither text' + verbo no singular é comum para avaliar duas fontes."
+    },
+    {
+     "t": "gap",
+     "q": "The writer's argument is ___ weakened by a reliance on a single example.",
+     "resp": [
+      "considerably",
+      "seriously",
+      "badly",
+      "severely",
+      "greatly"
+     ],
+     "exp": "Advérbios de grau precisos para uma avaliação crítica."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em 2 ou 3 frases.",
+     "frase": "In two sentences, say whether you would rather live in a city or in the countryside, and why.",
+     "modelo": "I would rather live in a city, because there are more jobs and cultural activities. However, I would like to spend weekends in the countryside.",
+     "min": 20,
+     "chave": [
+      "city",
+      "countryside",
+      "because",
+      "rather",
+      "jobs",
+      "quiet"
+     ],
+     "exp": "Escolha com 'would rather', dê uma razão e um contraponto."
+    },
+    {
+     "t": "mc",
+     "q": "Which conclusion best synthesises the two texts?",
+     "op": [
+      "Both texts are about places.",
+      "City is better than countryside, full stop.",
+      "Both views depend on how well services are distributed, so the better choice is to narrow the gap.",
+      "In conclusion, I will stop writing."
+     ],
+     "r": 2,
+     "exp": "A boa conclusão relaciona as duas ideias e toma posição."
+    },
+    {
+     "t": "gap",
+     "q": "A crowded city can also be a green one, ___ it is planned wisely.",
+     "resp": [
+      "if",
+      "provided",
+      "as long as",
+      "so long as",
+      "providing"
+     ],
+     "exp": "Condições: if / provided (that) / as long as."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "What",
+      "both",
+      "writers",
+      "overlook",
+      "is",
+      "the",
+      "importance",
+      "of",
+      "reliable",
+      "public",
+      "transport."
+     ],
+     "resp": "What both writers overlook is the importance of reliable public transport.",
+     "exp": "Frase clivada para destacar a omissão dos dois textos."
+    },
+    {
+     "t": "mc",
+     "q": "In a final check, which of these is MOST likely to cost you marks?",
+     "op": [
+      "British spelling such as organise",
+      "A sentence that begins with 'Furthermore'",
+      "Quoting long sentences directly from the texts",
+      "A paragraph of four sentences"
+     ],
+     "r": 2,
+     "exp": "Copiar frases dos textos é o erro mais penalizado no Part 1."
+    },
+    {
+     "t": "gap",
+     "q": "The two writers ___ over whether technology will reduce inequality.",
+     "resp": [
+      "differ",
+      "disagree",
+      "diverge"
+     ],
+     "exp": "Verbos para divergência entre autores."
+    }
+   ]
+  }
+ ]
+}
