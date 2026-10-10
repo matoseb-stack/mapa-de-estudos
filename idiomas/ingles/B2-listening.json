@@ -1,0 +1,3135 @@
+{
+ "nivel": "B2",
+ "skill": "listening",
+ "exame": "B2 First (FCE)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Spotting opinions",
+   "objetivo": "Reconhecer quando alguém dá a sua opinião e separar o que a pessoa acha do que ela só conta.",
+   "foco": "Opinion phrases: in my view, I'd say, to be fair, I'd rather; agreeing and disagreeing",
+   "explicacao": [
+    "Para dar opinião, as pessoas usam frases como: In my view..., I'd say..., Personally, I think...",
+    "To be fair e honestly costumam vir antes de uma opinião sincera, às vezes contrária à do outro.",
+    "Na prova, a opinião quase nunca vem com a palavra 'opinion'. Preste atenção em adjetivos: predictable (previsível), brilliant, too long.",
+    "Cuidado: o outro falante pode ter uma opinião diferente. Marque sempre quem disse o quê."
+   ],
+   "vocab": [
+    {
+     "en": "in my view",
+     "pt": "na minha opinião"
+    },
+    {
+     "en": "to be fair",
+     "pt": "para ser justo"
+    },
+    {
+     "en": "predictable",
+     "pt": "previsível"
+    },
+    {
+     "en": "special effects",
+     "pt": "efeitos especiais"
+    },
+    {
+     "en": "I'd rather",
+     "pt": "eu preferiria"
+    },
+    {
+     "en": "to convince",
+     "pt": "convencer"
+    },
+    {
+     "en": "freezing",
+     "pt": "gelado"
+    }
+   ],
+   "material": {
+    "titulo": "Talking about a film",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Did you see the new science fiction film last night, Dan?"
+     },
+     {
+      "p": "B",
+      "t": "I did. Honestly, I thought it was a bit too long. In my view, they could have cut the first half hour."
+     },
+     {
+      "p": "A",
+      "t": "Really? I loved the beginning. I'd say the special effects were the best part, and the music was brilliant too."
+     },
+     {
+      "p": "B",
+      "t": "The effects were good, I'll give you that. But the story didn't convince me. The ending was so predictable."
+     },
+     {
+      "p": "A",
+      "t": "Hmm, I wasn't expecting it. Perhaps you've seen too many films like it!"
+     },
+     {
+      "p": "B",
+      "t": "Maybe. Anyway, my sister enjoyed it even more than you. She says she's going to watch it again on Saturday."
+     },
+     {
+      "p": "A",
+      "t": "I might join her. Are you sure you don't want to come along?"
+     },
+     {
+      "p": "B",
+      "t": "To be fair, I'd rather wait until it comes out on television. The cinema was freezing and the ticket cost twelve pounds."
+     },
+     {
+      "p": "A",
+      "t": "Twelve pounds! That's a lot. I paid eight because I went on Tuesday, when it's cheaper."
+     },
+     {
+      "p": "B",
+      "t": "Next time I'll do the same. Right, I'd better go. I'm meeting Jo for lunch."
+     },
+     {
+      "p": "A",
+      "t": "Before you go, shall we see a comedy together next week? I'll check the programme tonight and text you the times."
+     },
+     {
+      "p": "B",
+      "t": "Sounds good. I've had enough serious films for a while, so I'd like to laugh for a change."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does Dan think about the film?",
+     "op": [
+      "It was too long",
+      "The special effects were weak",
+      "The music was bad",
+      "It was too short"
+     ],
+     "r": 0,
+     "exp": "Dan diz: it was a bit too long. Ele até aprova os efeitos, então não é isso que ele critica."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: In my ___, they could have cut the first half hour.",
+     "resp": [
+      "view",
+      "opinion"
+     ],
+     "exp": "In my view = na minha opinião. 'In my opinion' também é correto.",
+     "ouvir": "In my view, they could have cut the first half hour."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "To be fair, I'd rather wait until it comes out on television.",
+     "exp": "I'd rather = I would rather. Em 'rather' o 'a' é fraco: /ráder/ com r britânico suave.",
+     "ouvir": "To be fair, I'd rather wait until it comes out on television."
+    },
+    {
+     "t": "mc",
+     "q": "Which part of the film did Lisa like most?",
+     "op": [
+      "The story",
+      "The music",
+      "The special effects",
+      "The ending"
+     ],
+     "r": 2,
+     "exp": "Lisa: I'd say the special effects were the best part. A música também é elogiada, mas como 'brilliant', não como a melhor parte."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "says",
+      "she",
+      "is",
+      "going",
+      "to",
+      "watch",
+      "it",
+      "again",
+      "on",
+      "Saturday."
+     ],
+     "resp": "She says she is going to watch it again on Saturday.",
+     "exp": "Estrutura: She says + (that) + she is going to + verbo. Saturday fecha a frase."
+    },
+    {
+     "t": "gap",
+     "q": "Dan found the ending so ___.",
+     "resp": [
+      "predictable",
+      "obvious"
+     ],
+     "exp": "Dan: The ending was so predictable. Ou seja, fácil de adivinhar."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "What do you think of films that are very long?",
+     "modelo": "In my opinion, long films can be boring, but I like them if the story is good.",
+     "min": 6,
+     "chave": [
+      "opinion",
+      "view",
+      "think",
+      "boring",
+      "like",
+      "prefer",
+      "long",
+      "story"
+     ],
+     "exp": "Use uma frase de opinião (In my opinion / I think) e um motivo com but ou because."
+    },
+    {
+     "t": "mc",
+     "q": "How does Lisa react when Dan says what he paid for his ticket?",
+     "op": [
+      "She thinks it was expensive",
+      "She thinks it was a good price",
+      "She feels sorry for her sister",
+      "She is angry with Dan"
+     ],
+     "r": 0,
+     "exp": "Lisa: Twelve pounds! That's a lot. Ela acha caro e conta que pagou só oito."
+    },
+    {
+     "t": "gap",
+     "q": "Next time Dan will go to the cinema on a ___ to pay less.",
+     "resp": [
+      "Tuesday"
+     ],
+     "exp": "Lisa foi na terça (Tuesday), quando é mais barato, e Dan responde: I'll do the same."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "How does the speaker feel?",
+   "objetivo": "Descobrir o sentimento e a atitude de quem fala (irritado, aliviado, indeciso) pelas palavras e pelo tom.",
+   "foco": "Feelings and attitude: annoyed, relieved, undecided; I'm not holding my breath",
+   "explicacao": [
+    "Na Part 1 da prova você ouve extratos curtos e precisa dizer o sentimento ou a atitude. As palavras do áudio raramente são as mesmas das opções.",
+    "Sinais de irritação: never on time, I'm going to write to the company. Alívio: I passed! I thought I'd failed. Indecisão: I'm not sure, I keep changing my mind.",
+    "Cuidado com distratores: uma opção pode citar algo que aparece no áudio, mas sem ser o sentimento da pessoa."
+   ],
+   "vocab": [
+    {
+     "en": "annoyed",
+     "pt": "irritado"
+    },
+    {
+     "en": "relieved",
+     "pt": "aliviado"
+    },
+    {
+     "en": "undecided",
+     "pt": "indeciso"
+    },
+    {
+     "en": "to calm down",
+     "pt": "acalmar-se"
+    },
+    {
+     "en": "to pass an exam",
+     "pt": "passar numa prova"
+    },
+    {
+     "en": "salary",
+     "pt": "salário"
+    },
+    {
+     "en": "to miss someone",
+     "pt": "sentir saudade"
+    }
+   ],
+   "material": {
+    "titulo": "Three short scenes",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Forty minutes! This bus is never on time. I'm going to write to the company tonight."
+     },
+     {
+      "p": "B",
+      "t": "Calm down, Paul. It's only the second time this month."
+     },
+     {
+      "p": "A",
+      "t": "Only? I've been late for work twice because of it, and my boss isn't happy."
+     },
+     {
+      "p": "B",
+      "t": "Why don't you cycle?"
+     },
+     {
+      "p": "A",
+      "t": "In this rain? No chance."
+     },
+     {
+      "p": "C",
+      "t": "Hi Sam, it's Megan. I got my results this morning and I passed! I honestly thought I'd failed, so I'm still shaking. I couldn't have done it without your notes. Call me when you can, and dinner's on me on Friday."
+     },
+     {
+      "p": "A",
+      "t": "So, are you taking the job in Leeds?"
+     },
+     {
+      "p": "B",
+      "t": "I'm not sure. The salary is better, but I'd miss everyone here. I keep changing my mind."
+     },
+     {
+      "p": "A",
+      "t": "Have you told your parents?"
+     },
+     {
+      "p": "B",
+      "t": "Not yet. They'll say I should go, but I'd rather decide for myself."
+     },
+     {
+      "p": "A",
+      "t": "Fair enough. Just don't leave it too long. They want an answer by the end of the month."
+     },
+     {
+      "p": "B",
+      "t": "I know. I'm lying awake every night thinking about it."
+     },
+     {
+      "p": "A",
+      "t": "Well, whatever you decide, I'll support you. Ask them whether you can start in September rather than next month."
+     },
+     {
+      "p": "B",
+      "t": "That's a good point. I hadn't thought of asking. Maybe I'll sleep better once I know. Thanks, Ruth. You always know what to say."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How does Paul feel about the bus service?",
+     "op": [
+      "Amused",
+      "Annoyed",
+      "Worried",
+      "Embarrassed"
+     ],
+     "r": 1,
+     "exp": "Paul: This bus is never on time. I'm going to write to the company. Ele está irritado (annoyed). Seu chefe é que não está feliz."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I honestly ___ I'd failed, so I'm still shaking.",
+     "resp": [
+      "thought"
+     ],
+     "exp": "I thought I'd failed = eu achava que tinha reprovado. Por isso ela está aliviada.",
+     "ouvir": "I honestly thought I'd failed, so I'm still shaking."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "The salary is better, but I'd miss everyone here.",
+     "exp": "Salary: /sáleri/, três sílabas. Everyone here: ligue as palavras.",
+     "ouvir": "The salary is better, but I'd miss everyone here."
+    },
+    {
+     "t": "mc",
+     "q": "What is Megan's main reason for calling Sam?",
+     "op": [
+      "To invite him to a restaurant",
+      "To thank him for his help",
+      "To ask for his notes",
+      "To explain why she failed"
+     ],
+     "r": 1,
+     "exp": "Ela passou e diz que não teria conseguido sem as anotações dele (I couldn't have done it without your notes). O jantar é só um agradecimento."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "would",
+      "rather",
+      "decide",
+      "for",
+      "myself."
+     ],
+     "resp": "I would rather decide for myself.",
+     "exp": "I would rather + verbo = eu preferiria. For myself = por conta própria."
+    },
+    {
+     "t": "gap",
+     "q": "Paul has been late for work ___ because of the bus.",
+     "resp": [
+      "twice",
+      "two times"
+     ],
+     "exp": "No áudio: twice. O ônibus não aparece só uma vez nos problemas dele."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "How do you feel when a bus or a train is late?",
+     "modelo": "I feel annoyed because I hate wasting time, but I try to stay calm.",
+     "min": 6,
+     "chave": [
+      "annoyed",
+      "angry",
+      "stressed",
+      "calm",
+      "frustrated",
+      "patient",
+      "feel",
+      "fine",
+      "worried"
+     ],
+     "exp": "Diga o sentimento (I feel annoyed / stressed) e uma razão."
+    },
+    {
+     "t": "mc",
+     "q": "How does the man feel about the job in Leeds?",
+     "op": [
+      "He has already decided to accept it",
+      "He is waiting for his parents' advice",
+      "He can't decide and wants to choose alone",
+      "He is excited about moving"
+     ],
+     "r": 2,
+     "exp": "Ele diz I'm not sure e I'd rather decide for myself. Os pais são citados, mas ele não espera conselho."
+    },
+    {
+     "t": "gap",
+     "q": "Megan says she could not have passed ___ Sam's notes.",
+     "resp": [
+      "without"
+     ],
+     "exp": "I couldn't have done it without your notes: sem as anotações dele ela não teria passado."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Why are they speaking?",
+   "objetivo": "Identificar o propósito de uma mensagem: pedir, convencer, avisar, anunciar ou reclamar.",
+   "foco": "Purpose: to persuade, to ask for, to warn, to advertise, to apologise",
+   "explicacao": [
+    "Em perguntas de propósito (Why is she calling? What is the purpose of the message?) procure o motivo geral, não detalhes.",
+    "Verbos de propósito: to persuade (convencer), to remind (lembrar), to ask for (pedir), to advertise (anunciar), to warn (avisar).",
+    "Frases típicas: I'm calling because... / I wanted to ask whether... / It's about... / I know it's due tomorrow, but...",
+    "Detalhes como preços e datas aparecem no áudio, mas quase nunca são o propósito."
+   ],
+   "vocab": [
+    {
+     "en": "membership",
+     "pt": "assinatura, sócio"
+    },
+    {
+     "en": "to renew",
+     "pt": "renovar"
+    },
+    {
+     "en": "due",
+     "pt": "com prazo para"
+    },
+    {
+     "en": "extension",
+     "pt": "prorrogação"
+    },
+    {
+     "en": "workshop",
+     "pt": "oficina"
+    },
+    {
+     "en": "to book",
+     "pt": "reservar"
+    },
+    {
+     "en": "to run out",
+     "pt": "acabar, vencer"
+    }
+   ],
+   "material": {
+    "titulo": "Messages and announcements",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good morning, Mr Davies. This is Anna from Greenfield Leisure Centre. I'm calling because your membership runs out on the thirty-first, and I noticed you haven't used the pool since March. We have a special offer this month: renew now and you get two free classes. If you'd rather change to a cheaper plan, just call me back on the number you have. Thank you, and have a lovely day."
+     },
+     {
+      "p": "A",
+      "t": "Mrs Hall, can I speak to you for a moment?"
+     },
+     {
+      "p": "B",
+      "t": "Of course, Jack. What's the matter?"
+     },
+     {
+      "p": "A",
+      "t": "It's about the history essay. I know it's due tomorrow, but my laptop broke down on Sunday and I lost half of it."
+     },
+     {
+      "p": "B",
+      "t": "I see. How much have you done?"
+     },
+     {
+      "p": "A",
+      "t": "About a page. I'd need until Friday."
+     },
+     {
+      "p": "B",
+      "t": "All right, but I can't give everyone more time, so please keep it between us."
+     },
+     {
+      "p": "C",
+      "t": "Are you tired of cooking the same meals every week? Join our Saturday cookery workshops at Riverside College. Learn to make bread, pasta and simple desserts with a professional chef. The first session is free, and there are only twelve places in each group, so book early on our website."
+     },
+     {
+      "p": "C",
+      "t": "Prices start at twenty-five pounds, including all the ingredients. Places are limited, and last term's courses were full by the end of August."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why is Anna calling Mr Davies?",
+     "op": [
+      "To complain that he has not paid",
+      "To encourage him to renew his membership",
+      "To cancel his membership",
+      "To invite him to swimming lessons"
+     ],
+     "r": 1,
+     "exp": "Ela avisa que o contrato vence e faz uma oferta se ele renovar. A piscina é citada só como motivo para perguntar."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Renew now and you get two ___ classes.",
+     "resp": [
+      "free"
+     ],
+     "exp": "Free classes = aulas grátis. É a vantagem da oferta.",
+     "ouvir": "Renew now and you get two free classes."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "I'm calling because your membership runs out on the thirty-first.",
+     "exp": "Thirty-first: o 'th' é /θ/, com a língua entre os dentes. Runs out: ligue o 's' com o 'out'.",
+     "ouvir": "I'm calling because your membership runs out on the thirty-first."
+    },
+    {
+     "t": "mc",
+     "q": "Why does Jack talk to Mrs Hall?",
+     "op": [
+      "To explain why he missed a lesson",
+      "To ask her to read his essay",
+      "To ask for more time to finish his essay",
+      "To complain that his laptop is broken"
+     ],
+     "r": 2,
+     "exp": "Ele diz que o prazo é amanhã, mas o computador quebrou, e pede até sexta (I'd need until Friday)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "know",
+      "it",
+      "is",
+      "due",
+      "tomorrow,",
+      "but",
+      "my",
+      "laptop",
+      "broke",
+      "down"
+     ],
+     "resp": "I know it is due tomorrow, but my laptop broke down.",
+     "exp": "It is due tomorrow = o prazo é amanhã. Broke down = quebrou (phrasal verb)."
+    },
+    {
+     "t": "gap",
+     "q": "If Mrs Hall agrees, Jack will hand in his essay on ___.",
+     "resp": [
+      "Friday"
+     ],
+     "exp": "Jack pede mais tempo: I'd need until Friday. Sunday é quando o laptop quebrou."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Tell me about a time you asked for help or for more time.",
+     "modelo": "Last year I asked my teacher for more time because I was ill.",
+     "min": 7,
+     "chave": [
+      "asked",
+      "time",
+      "help",
+      "because",
+      "teacher",
+      "boss",
+      "ill",
+      "needed"
+     ],
+     "exp": "Conte quando, para quem pediu e por quê (because...)."
+    },
+    {
+     "t": "mc",
+     "q": "What is the purpose of the last announcement?",
+     "op": [
+      "To advertise a course",
+      "To announce a change in the college timetable",
+      "To recruit a cook for a restaurant",
+      "To warn about a price rise"
+     ],
+     "r": 0,
+     "exp": "O anúncio convida as pessoas para oficinas de culinária (workshops) e diz para reservar cedo: é propaganda."
+    },
+    {
+     "t": "gap",
+     "q": "There are only ___ places in each cookery group.",
+     "resp": [
+      "twelve",
+      "12"
+     ],
+     "exp": "Only twelve places: por isso o anúncio pede para reservar cedo (book early)."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Fact or opinion?",
+   "objetivo": "Separar fatos (dados, resultados) de opiniões (o que o falante acredita) numa entrevista sobre ciência.",
+   "foco": "Facts vs opinions: research shows, results, I'm convinced, in my view, it might",
+   "explicacao": [
+    "Fato: algo que se pode medir ou conferir. Ex.: Students who slept longer scored fifteen percent higher.",
+    "Opinião: o que alguém acha. Marcadores: personally, I'm convinced, I believe, in my view, the best thing is...",
+    "Modais como might, may, could e verbos como suggests mostram que a pessoa não tem certeza. Não confunda com fato.",
+    "Na prova, a pergunta pode ser 'Which is the speaker's opinion?'. Descarte os números e os resultados: eles são fatos."
+   ],
+   "vocab": [
+    {
+     "en": "research",
+     "pt": "pesquisa"
+    },
+    {
+     "en": "volunteer",
+     "pt": "voluntário"
+    },
+    {
+     "en": "memory test",
+     "pt": "teste de memória"
+    },
+    {
+     "en": "to catch up on sleep",
+     "pt": "compensar o sono"
+    },
+    {
+     "en": "belief",
+     "pt": "crença"
+    },
+    {
+     "en": "concentration",
+     "pt": "concentração"
+    },
+    {
+     "en": "routine",
+     "pt": "rotina"
+    }
+   ],
+   "material": {
+    "titulo": "Sleep and learning",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Today we're talking about sleep and learning. Dr Patel, your team studied two hundred teenagers. What did you find?"
+     },
+     {
+      "p": "B",
+      "t": "We asked half of them to sleep for eight hours and the others for only six hours for a week. After that, those who slept longer scored about fifteen percent higher in a memory test. That's a measurable result."
+     },
+     {
+      "p": "A",
+      "t": "So should schools start later?"
+     },
+     {
+      "p": "B",
+      "t": "Well, that's a question of opinion. Personally, I'm convinced they should, because teenagers' body clocks change at that age. But some head teachers disagree. They argue that later starts would cause problems for parents who work early."
+     },
+     {
+      "p": "A",
+      "t": "And is it true that you can catch up on sleep at the weekend?"
+     },
+     {
+      "p": "B",
+      "t": "That's a popular belief, but our research suggests otherwise. Sleeping late on Sunday doesn't fully make up for a short week. It might make you feel better, but your concentration still suffers on Monday."
+     },
+     {
+      "p": "A",
+      "t": "So there's no easy solution."
+     },
+     {
+      "p": "B",
+      "t": "Not really. In my view, the best thing is a regular routine: going to bed at the same time every night, even when you don't feel tired."
+     },
+     {
+      "p": "A",
+      "t": "Thank you, Dr Patel. And if you're listening at home, why not try going to bed half an hour earlier tonight? You might be surprised tomorrow."
+     },
+     {
+      "p": "B",
+      "t": "Exactly, and put your phone away first."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What did the researchers do?",
+     "op": [
+      "They asked teenagers about their dreams",
+      "They compared two groups who slept for different lengths of time",
+      "They tested teenagers at different schools",
+      "They recorded teenagers' sleep at weekends"
+     ],
+     "r": 1,
+     "exp": "Metade dormiu oito horas e a outra metade seis horas, por uma semana. Depois fizeram um teste de memória."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Those who slept ___ scored about fifteen percent higher.",
+     "resp": [
+      "longer"
+     ],
+     "exp": "Slept longer = dormiram mais. É um resultado medido, ou seja, um fato.",
+     "ouvir": "Those who slept longer scored about fifteen percent higher."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Sleeping late on Sunday doesn't fully make up for a short week.",
+     "exp": "Make up for = compensar. Doesn't tem o som /dázent/.",
+     "ouvir": "Sleeping late on Sunday doesn't fully make up for a short week."
+    },
+    {
+     "t": "mc",
+     "q": "Which of these is Dr Patel's personal opinion?",
+     "op": [
+      "Teenagers' memory scores were fifteen percent higher",
+      "Some parents have to leave home early",
+      "Schools should start later",
+      "The study lasted a week"
+     ],
+     "r": 2,
+     "exp": "Ele diz Personally, I'm convinced they should. As outras opções são fatos do estudo ou dos pais."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "That",
+      "is",
+      "a",
+      "popular",
+      "belief,",
+      "but",
+      "our",
+      "research",
+      "suggests",
+      "otherwise."
+     ],
+     "resp": "That is a popular belief, but our research suggests otherwise.",
+     "exp": "Suggests otherwise = indica o contrário. Mostra que a pesquisa não confirma a crença."
+    },
+    {
+     "t": "gap",
+     "q": "Dr Patel says that a regular ___ is the best solution.",
+     "resp": [
+      "routine"
+     ],
+     "exp": "In my view, the best thing is a regular routine. É uma opinião dele."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Do you think schools should start later in the morning? Why?",
+     "modelo": "In my opinion, schools should start later because teenagers need more sleep.",
+     "min": 7,
+     "chave": [
+      "should",
+      "opinion",
+      "think",
+      "believe",
+      "because",
+      "later",
+      "early",
+      "sleep",
+      "agree"
+     ],
+     "exp": "Dê a sua opinião e um motivo com because."
+    },
+    {
+     "t": "mc",
+     "q": "According to Dr Patel, what happens if you sleep late on Sunday?",
+     "op": [
+      "You catch up completely",
+      "You still find it hard to concentrate on Monday",
+      "You feel worse all week",
+      "You need less sleep the next night"
+     ],
+     "r": 1,
+     "exp": "Ele diz que você pode se sentir melhor (might make you feel better), mas a concentração ainda sofre na segunda."
+    },
+    {
+     "t": "gap",
+     "q": "Some head teachers say later starts would be difficult for parents who ___ early.",
+     "resp": [
+      "work",
+      "start work",
+      "go to work"
+     ],
+     "exp": "Parents who work early = pais que começam a trabalhar cedo. É o argumento dos diretores."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Same meaning, different words",
+   "objetivo": "Reconhecer paráfrases: a opção correta diz o mesmo que o áudio, mas com outras palavras.",
+   "foco": "Paraphrasing: promotion = move up; under pressure; take on too much; in charge of",
+   "explicacao": [
+    "Na prova, a resposta certa quase nunca repete as palavras do áudio. Ouviu 'no chance of promotion'? A opção dirá 'no opportunity to move up'.",
+    "Exemplos: in charge of = responsável por; take on too much = aceitar tarefas demais; stay calm under pressure = manter a calma em situações difíceis.",
+    "Se uma opção usa exatamente as mesmas palavras do áudio, desconfie: pode ser um distrator.",
+    "Treine: ouça a ideia, traduza mentalmente e só depois leia as opções."
+   ],
+   "vocab": [
+    {
+     "en": "position",
+     "pt": "vaga, cargo"
+    },
+    {
+     "en": "promotion",
+     "pt": "promoção"
+    },
+    {
+     "en": "strength",
+     "pt": "ponto forte"
+    },
+    {
+     "en": "weakness",
+     "pt": "ponto fraco"
+    },
+    {
+     "en": "in charge of",
+     "pt": "responsável por"
+    },
+    {
+     "en": "shift",
+     "pt": "turno"
+    },
+    {
+     "en": "short of staff",
+     "pt": "com falta de pessoal"
+    }
+   ],
+   "material": {
+    "titulo": "A job interview",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Thanks for coming in, Maria. You've applied for the position of customer service assistant. Tell me about your current job."
+     },
+     {
+      "p": "B",
+      "t": "I work part-time at a bookshop. I deal with customers' queries and I'm in charge of the online orders."
+     },
+     {
+      "p": "A",
+      "t": "And why do you want to leave?"
+     },
+     {
+      "p": "B",
+      "t": "I've learnt a lot there, but there's no chance of promotion, and I'd like a full-time contract."
+     },
+     {
+      "p": "A",
+      "t": "What would you say is your biggest strength?"
+     },
+     {
+      "p": "B",
+      "t": "I'd say I stay calm under pressure. Last Christmas, we were short of staff and the shop was packed, but I managed to keep everyone happy."
+     },
+     {
+      "p": "A",
+      "t": "And a weakness?"
+     },
+     {
+      "p": "B",
+      "t": "I sometimes take on too much work, because I find it hard to say no. I'm trying to be more realistic about what I can do."
+     },
+     {
+      "p": "A",
+      "t": "Good. The job involves shifts, including some weekends. Is that a problem?"
+     },
+     {
+      "p": "B",
+      "t": "Not at all. I'd actually prefer working at weekends, as I'm studying during the week."
+     },
+     {
+      "p": "A",
+      "t": "Excellent. We'll let you know by Friday."
+     },
+     {
+      "p": "B",
+      "t": "Thank you. Could I ask when the successful candidate would start?"
+     },
+     {
+      "p": "A",
+      "t": "Ideally at the beginning of next month, but we can be flexible if you need to give notice at the bookshop."
+     },
+     {
+      "p": "B",
+      "t": "I'd have to give four weeks' notice, I'm afraid."
+     },
+     {
+      "p": "A",
+      "t": "That shouldn't be a problem."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why does Maria want to leave her present job?",
+     "op": [
+      "She dislikes dealing with customers",
+      "She cannot move to a higher position there",
+      "She wants to study full-time",
+      "The bookshop is closing"
+     ],
+     "r": 1,
+     "exp": "No chance of promotion = não há chance de subir de cargo. Ela também quer tempo integral, mas o motivo principal é a falta de promoção."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I'd say I stay ___ under pressure.",
+     "resp": [
+      "calm"
+     ],
+     "exp": "Stay calm under pressure = manter a calma sob pressão.",
+     "ouvir": "I'd say I stay calm under pressure."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "I sometimes take on too much work because I find it hard to say no.",
+     "exp": "Take on = assumir. Hard to say no: pronuncie 'hard' com o 'r' britânico quase mudo.",
+     "ouvir": "I sometimes take on too much work because I find it hard to say no."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence describes Maria's weakness?",
+     "op": [
+      "She loses her temper with customers",
+      "She agrees to more tasks than she can manage",
+      "She is often late for work",
+      "She finds weekend work difficult"
+     ],
+     "r": 1,
+     "exp": "Take on too much work = aceitar trabalho demais. Ela tem dificuldade de dizer não. Sobre fins de semana ela diz o contrário."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "is",
+      "in",
+      "charge",
+      "of",
+      "the",
+      "online",
+      "orders."
+     ],
+     "resp": "She is in charge of the online orders.",
+     "exp": "In charge of = responsável por. Maria cuida dos pedidos feitos pela internet."
+    },
+    {
+     "t": "gap",
+     "q": "Maria works part-time at a ___.",
+     "resp": [
+      "bookshop",
+      "book shop",
+      "bookstore"
+     ],
+     "exp": "I work part-time at a bookshop. Na Inglaterra, usa-se bookshop."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "What would you say is your biggest strength?",
+     "modelo": "I would say my biggest strength is that I am organised and I work well in a team.",
+     "min": 7,
+     "chave": [
+      "strength",
+      "organised",
+      "organized",
+      "calm",
+      "hard-working",
+      "patient",
+      "team",
+      "good at",
+      "work well"
+     ],
+     "exp": "Comece com I would say... e dê um ponto forte com um exemplo."
+    },
+    {
+     "t": "mc",
+     "q": "How does Maria feel about working at weekends?",
+     "op": [
+      "She would be glad to do it",
+      "She would do it only if necessary",
+      "She has refused it before",
+      "She would need to ask her family"
+     ],
+     "r": 0,
+     "exp": "I'd actually prefer working at weekends. Ela estuda durante a semana, então seria bom para ela."
+    },
+    {
+     "t": "gap",
+     "q": "The company will tell Maria its decision by ___.",
+     "resp": [
+      "Friday"
+     ],
+     "exp": "We'll let you know by Friday = avisamos até sexta."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Life at the office",
+   "objetivo": "Entender uma reunião de trabalho: prazos, equipe, horas extras e trabalho remoto.",
+   "foco": "Work vocabulary: deadline, overtime, to hire, to resign, remote, pay rise",
+   "explicacao": [
+    "Vocabulário de trabalho: deadline (prazo), staff (equipe), to resign (pedir demissão), to hire (contratar), pay rise (aumento de salário).",
+    "Brought forward = adiantado (para uma data mais cedo). Put back/postponed = adiado.",
+    "Overtime é hora extra. Time off in return = folga em troca. Não é a mesma coisa que dinheiro extra.",
+    "Em reuniões, cada pessoa tem uma posição diferente. Anote quem quer o quê."
+   ],
+   "vocab": [
+    {
+     "en": "deadline",
+     "pt": "prazo final"
+    },
+    {
+     "en": "to resign",
+     "pt": "pedir demissão"
+    },
+    {
+     "en": "to hire",
+     "pt": "contratar"
+    },
+    {
+     "en": "overtime",
+     "pt": "horas extras"
+    },
+    {
+     "en": "pay rise",
+     "pt": "aumento de salário"
+    },
+    {
+     "en": "remotely",
+     "pt": "à distância"
+    },
+    {
+     "en": "short-staffed",
+     "pt": "com falta de pessoal"
+    }
+   ],
+   "material": {
+    "titulo": "A team meeting",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Right, let's start. First, the deadline for the Henderson report has been brought forward from the thirtieth to the twentieth."
+     },
+     {
+      "p": "B",
+      "t": "That's only ten days! We're already short-staffed since Tom resigned."
+     },
+     {
+      "p": "A",
+      "t": "I know, Priya. That's why we're hiring a temporary worker, who starts on Monday."
+     },
+     {
+      "p": "C",
+      "t": "Will she be working from home?"
+     },
+     {
+      "p": "A",
+      "t": "Mostly in the office for the first week so we can train her. After that she can work remotely two days a week."
+     },
+     {
+      "p": "C",
+      "t": "And what about overtime? Last month some of us worked every evening and weren't paid for it."
+     },
+     {
+      "p": "A",
+      "t": "That's a fair point, Ben. This time, anyone who stays after six will get time off in return, not extra money."
+     },
+     {
+      "p": "B",
+      "t": "I'd prefer a pay rise, to be honest."
+     },
+     {
+      "p": "A",
+      "t": "I'll raise it with the director, but I can't promise anything. Now, the last item: the team lunch on Friday is cancelled because the restaurant is closed for repairs."
+     },
+     {
+      "p": "C",
+      "t": "What a shame. I was looking forward to it."
+     },
+     {
+      "p": "A",
+      "t": "We'll find another date. Thanks, everyone."
+     },
+     {
+      "p": "A",
+      "t": "Before we finish, a quick reminder that the new software will be installed over the weekend, so please save your work on the shared drive before you leave on Friday."
+     },
+     {
+      "p": "B",
+      "t": "Will it take long to learn?"
+     },
+     {
+      "p": "A",
+      "t": "Not really. There's a short online course, and I'd like you to try it first and show the others on Monday."
+     },
+     {
+      "p": "B",
+      "t": "Fine by me."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What has changed about the Henderson report?",
+     "op": [
+      "It must be finished earlier than planned",
+      "It has been cancelled",
+      "It will be written by a temporary worker",
+      "It is due at the end of the month"
+     ],
+     "r": 0,
+     "exp": "Brought forward = adiantado. O prazo passou do dia 30 para o dia 20. O fim do mês era a data antiga."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The deadline has been brought ___ to the twentieth.",
+     "resp": [
+      "forward"
+     ],
+     "exp": "Brought forward = antecipado para uma data mais cedo.",
+     "ouvir": "The deadline has been brought forward to the twentieth."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "We're already short-staffed since Tom resigned.",
+     "exp": "Short-staffed: /short-stáft/. Resigned: /rizáind/, o 'g' é mudo.",
+     "ouvir": "We're already short-staffed since Tom resigned."
+    },
+    {
+     "t": "mc",
+     "q": "Why is a temporary worker being hired?",
+     "op": [
+      "To train the new staff",
+      "To cover for a colleague who has left",
+      "To reduce the cost of overtime",
+      "To write a longer report"
+     ],
+     "r": 1,
+     "exp": "Tom pediu demissão e a equipe ficou pequena. Overtime aparece depois, em outro assunto."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Anyone",
+      "who",
+      "stays",
+      "after",
+      "six",
+      "will",
+      "get",
+      "time",
+      "off."
+     ],
+     "resp": "Anyone who stays after six will get time off.",
+     "exp": "Anyone who + verbo no singular (stays). Time off = folga."
+    },
+    {
+     "t": "gap",
+     "q": "After the first week, the new worker can work ___ two days a week.",
+     "resp": [
+      "remotely",
+      "from home",
+      "at home"
+     ],
+     "exp": "Remotely = à distância, ou seja, de casa."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Would you prefer to work from home or in an office? Why?",
+     "modelo": "I would prefer to work in an office because I like talking to my colleagues.",
+     "min": 7,
+     "chave": [
+      "office",
+      "home",
+      "prefer",
+      "colleagues",
+      "because",
+      "remote",
+      "quiet",
+      "team"
+     ],
+     "exp": "Escolha uma opção com I would prefer... e justifique com because."
+    },
+    {
+     "t": "mc",
+     "q": "How would Priya prefer to be rewarded for staying late?",
+     "op": [
+      "With extra holiday",
+      "With a higher salary",
+      "With a team lunch",
+      "With a temporary assistant"
+     ],
+     "r": 1,
+     "exp": "Pay rise = aumento de salário. O chefe oferece folga, mas ela prefere dinheiro."
+    },
+    {
+     "t": "gap",
+     "q": "The team lunch is cancelled because the restaurant is closed for ___.",
+     "resp": [
+      "repairs",
+      "repair"
+     ],
+     "exp": "Closed for repairs = fechado para reformas."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Science and new technology",
+   "objetivo": "Acompanhar uma entrevista de rádio sobre uma invenção: como funciona, resultados e planos.",
+   "foco": "Technology vocabulary: device, trial, battery, launch; contrast (but, rather than, ironically)",
+   "explicacao": [
+    "Entrevistas de ciência seguem uma ordem: o que é a invenção, como funciona, os testes (trials), os resultados e os planos.",
+    "Rather than = em vez de. A hint rather than the answer = uma pista em vez da resposta.",
+    "Fique atento a quando o entrevistado nega um medo: That's a common worry, but... A resposta certa é o que acontece de fato.",
+    "Datas e números: hoped for next spring significa que o plano mudou. Veja o que vem depois do but."
+   ],
+   "vocab": [
+    {
+     "en": "device",
+     "pt": "aparelho"
+    },
+    {
+     "en": "trial",
+     "pt": "teste, estudo piloto"
+    },
+    {
+     "en": "hint",
+     "pt": "pista"
+    },
+    {
+     "en": "to replace",
+     "pt": "substituir"
+    },
+    {
+     "en": "launch",
+     "pt": "lançamento"
+    },
+    {
+     "en": "battery",
+     "pt": "bateria"
+    },
+    {
+     "en": "shy",
+     "pt": "tímido"
+    }
+   ],
+   "material": {
+    "titulo": "A robot that helps children read",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Dr Lewis, you've developed a small robot that helps children learn to read. How does it work?"
+     },
+     {
+      "p": "B",
+      "t": "It's about the size of a teddy bear. A child reads a story aloud and the robot listens. If the child gets stuck on a word, it gives a hint rather than the answer, which encourages them to think for themselves."
+     },
+     {
+      "p": "A",
+      "t": "Isn't there a risk that children will prefer the robot to a real teacher?"
+     },
+     {
+      "p": "B",
+      "t": "That's a common worry, but in our trials the opposite happened. Children who used the robot for ten weeks actually asked more questions in class."
+     },
+     {
+      "p": "A",
+      "t": "How many children took part?"
+     },
+     {
+      "p": "B",
+      "t": "Ninety, in three schools. The robot isn't meant to replace teachers. It gives them extra time for children who need more attention."
+     },
+     {
+      "p": "A",
+      "t": "When will it be in the shops?"
+     },
+     {
+      "p": "B",
+      "t": "We hoped for next spring, but the batteries need more testing, so I'd expect the autumn at the earliest. The price will be under a hundred pounds, which is far cheaper than similar devices."
+     },
+     {
+      "p": "A",
+      "t": "And what's next?"
+     },
+     {
+      "p": "B",
+      "t": "A version for adults learning English. Many of them are too shy to speak to a person, but they feel relaxed with a machine."
+     },
+     {
+      "p": "A",
+      "t": "Fascinating. And finally, where can listeners find out more?"
+     },
+     {
+      "p": "B",
+      "t": "There's a page on the university website, and we're always looking for schools to take part in the next round."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does the robot do when a child cannot read a word?",
+     "op": [
+      "It says the word slowly",
+      "It offers a clue",
+      "It calls the teacher",
+      "It chooses an easier story"
+     ],
+     "r": 1,
+     "exp": "A hint rather than the answer = uma pista, não a resposta. Isso faz a criança pensar."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: It gives a ___ rather than the answer.",
+     "resp": [
+      "hint",
+      "clue"
+     ],
+     "exp": "Hint = pista, dica. Ouça a diferença para 'answer'.",
+     "ouvir": "It gives a hint rather than the answer."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "The robot isn't meant to replace teachers.",
+     "exp": "Isn't meant to = não foi feito para. Replace: /ripléis/, acento na segunda sílaba.",
+     "ouvir": "The robot isn't meant to replace teachers."
+    },
+    {
+     "t": "mc",
+     "q": "What was the result of the trials?",
+     "op": [
+      "Children preferred the robot to their teachers",
+      "Children took a more active part in lessons",
+      "Teachers had less time for pupils",
+      "Schools found the robot too expensive"
+     ],
+     "r": 1,
+     "exp": "O medo era que preferissem o robô, mas aconteceu o contrário: as crianças fizeram mais perguntas na aula."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Children",
+      "who",
+      "used",
+      "the",
+      "robot",
+      "asked",
+      "more",
+      "questions",
+      "in",
+      "class."
+     ],
+     "resp": "Children who used the robot asked more questions in class.",
+     "exp": "Who used the robot descreve children. Asked é o verbo principal, no passado."
+    },
+    {
+     "t": "gap",
+     "q": "The robot will probably be on sale in the ___ at the earliest.",
+     "resp": [
+      "autumn",
+      "fall"
+     ],
+     "exp": "At the earliest = no mínimo. Autumn = outono no inglês britânico."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Would you like to learn with a robot? Why or why not?",
+     "modelo": "Yes, I would, because a robot is patient and never gets tired.",
+     "min": 7,
+     "chave": [
+      "yes",
+      "no",
+      "because",
+      "robot",
+      "patient",
+      "prefer",
+      "teacher",
+      "boring",
+      "fun"
+     ],
+     "exp": "Responda yes/no e dê um motivo."
+    },
+    {
+     "t": "mc",
+     "q": "Why has the launch been delayed?",
+     "op": [
+      "The price is too high",
+      "More tests are needed on the batteries",
+      "Not enough schools took part",
+      "Teachers asked for changes"
+     ],
+     "r": 1,
+     "exp": "We hoped for next spring, but the batteries need more testing. O preço é citado como bom."
+    },
+    {
+     "t": "gap",
+     "q": "Some adults feel more ___ with a machine than with a person.",
+     "resp": [
+      "relaxed",
+      "comfortable",
+      "at ease",
+      "calm"
+     ],
+     "exp": "Relaxed = à vontade. Muitos adultos têm vergonha de falar com outra pessoa (shy)."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "News, media and social networks",
+   "objetivo": "Entender uma conversa de podcast em que três pessoas discordam sobre notícias e redes sociais.",
+   "foco": "Media vocabulary: headline, source, fake, to share, misleading, suspicious",
+   "explicacao": [
+    "Vocabulário de mídia: headline (manchete), source (fonte), fake (falso), misleading (enganoso), to share (compartilhar).",
+    "Em debates, as pessoas concordam e discordam. I'm the opposite = eu sou o contrário. I'd disagree = discordo.",
+    "Há três falantes: confira SEMPRE quem diz o quê. O áudio mistura as opiniões e os distratores usam o nome errado.",
+    "Pergunta típica: 'What do X and Y disagree about?'. A resposta é o ponto em que um defende e o outro contesta."
+   ],
+   "vocab": [
+    {
+     "en": "headline",
+     "pt": "manchete"
+    },
+    {
+     "en": "source",
+     "pt": "fonte"
+    },
+    {
+     "en": "misleading",
+     "pt": "enganoso"
+    },
+    {
+     "en": "fake",
+     "pt": "falso"
+    },
+    {
+     "en": "suspicious",
+     "pt": "desconfiado"
+    },
+    {
+     "en": "to share",
+     "pt": "compartilhar"
+    },
+    {
+     "en": "curious",
+     "pt": "curioso"
+    }
+   ],
+   "material": {
+    "titulo": "Do we trust the news?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Welcome to Screen Time. Today: do we trust the news we read online? Zoe?"
+     },
+     {
+      "p": "B",
+      "t": "Honestly, I check headlines on my phone about ten times a day, but I rarely click on the articles. That's probably a bad habit, because headlines can be misleading."
+     },
+     {
+      "p": "C",
+      "t": "I'm the opposite, Zoe. I only trust a story if I know the journalist. Last year I shared a story that turned out to be fake, and I was so embarrassed that I deleted the post and apologised to my friends."
+     },
+     {
+      "p": "A",
+      "t": "So how do you check now?"
+     },
+     {
+      "p": "C",
+      "t": "I look for the original source, and I see whether other websites report the same thing. If only one site has it, I get suspicious."
+     },
+     {
+      "p": "B",
+      "t": "I do that too, but not always. When something is funny, I'm too lazy to check."
+     },
+     {
+      "p": "A",
+      "t": "Many young people get their news from video apps. Is that a problem?"
+     },
+     {
+      "p": "B",
+      "t": "It can be, because videos are short and don't give the full picture. But they do make people curious, and that's a start."
+     },
+     {
+      "p": "C",
+      "t": "I'd disagree. Curiosity is no use if the information is wrong."
+     },
+     {
+      "p": "A",
+      "t": "We'll leave it there. Next week: influencers and advertising."
+     },
+     {
+      "p": "B",
+      "t": "Actually, I might check my sources more carefully after this conversation."
+     },
+     {
+      "p": "C",
+      "t": "That would make me very happy, Zoe. A bit of effort goes a long way."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is Zoe's habit with the news?",
+     "op": [
+      "She reads every article carefully",
+      "She looks at headlines without opening the stories",
+      "She only reads stories by journalists she knows",
+      "She checks the news once a day"
+     ],
+     "r": 1,
+     "exp": "Zoe lê as manchetes cerca de dez vezes por dia, mas raramente abre os artigos. Quem confia em jornalistas conhecidos é Ed."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I look for the original ___.",
+     "resp": [
+      "source"
+     ],
+     "exp": "Original source = fonte original. É o primeiro passo de Ed para checar uma notícia.",
+     "ouvir": "I look for the original source."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "If only one site has the story, I get suspicious.",
+     "exp": "Suspicious: /saspíchas/. If only: ligue as duas palavras.",
+     "ouvir": "If only one site has the story, I get suspicious."
+    },
+    {
+     "t": "mc",
+     "q": "How did Ed feel after sharing the fake story?",
+     "op": [
+      "Proud",
+      "Amused",
+      "Embarrassed",
+      "Angry with the journalist"
+     ],
+     "r": 2,
+     "exp": "Ed disse que ficou tão envergonhado (so embarrassed) que apagou o post e pediu desculpas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Videos",
+      "are",
+      "short",
+      "and",
+      "don't",
+      "give",
+      "the",
+      "full",
+      "picture."
+     ],
+     "resp": "Videos are short and don't give the full picture.",
+     "exp": "The full picture = a visão completa. Don't = do not."
+    },
+    {
+     "t": "gap",
+     "q": "Ed checks whether other ___ report the same thing.",
+     "resp": [
+      "websites",
+      "sites",
+      "news sites"
+     ],
+     "exp": "Ele procura outros sites que publiquem a mesma notícia."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "How do you usually get your news?",
+     "modelo": "I usually get my news from my phone, mostly from social media and videos.",
+     "min": 7,
+     "chave": [
+      "phone",
+      "news",
+      "social",
+      "tv",
+      "television",
+      "newspaper",
+      "online",
+      "videos",
+      "internet",
+      "radio"
+     ],
+     "exp": "Diga onde você se informa (from my phone / on TV) e um detalhe."
+    },
+    {
+     "t": "mc",
+     "q": "What do Zoe and Ed disagree about?",
+     "op": [
+      "Whether journalists can be trusted",
+      "Whether fake posts should be deleted",
+      "Whether short videos help people become interested in the news",
+      "Whether headlines should be longer"
+     ],
+     "r": 2,
+     "exp": "Zoe diz que os vídeos despertam curiosidade, e isso já é um começo. Ed discorda: curiosidade não adianta se a informação está errada."
+    },
+    {
+     "t": "gap",
+     "q": "Zoe is too ___ to check funny stories.",
+     "resp": [
+      "lazy"
+     ],
+     "exp": "I'm too lazy to check. Ela admite que não confere quando a notícia é engraçada."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Travel problems",
+   "objetivo": "Entender situações de viagem: voo cancelado, opções, reembolso e reserva de hotel.",
+   "foco": "Travel vocabulary: cancelled, refund, connection, check in, delay, receipt",
+   "explicacao": [
+    "Vocabulário de viagem: refund (reembolso), delay (atraso), connection (conexão), to check in (fazer check-in), receipt (recibo).",
+    "Quando há várias opções, o áudio descreve vantagens e problemas de cada uma. A pergunta pede a razão da escolha final.",
+    "Atenção a preços e tempos: eighty pounds, four and a half hours, within two weeks. Os números aparecem perto de distratores.",
+    "Pay you back = devolver o dinheiro a você."
+   ],
+   "vocab": [
+    {
+     "en": "to cancel",
+     "pt": "cancelar"
+    },
+    {
+     "en": "refund",
+     "pt": "reembolso"
+    },
+    {
+     "en": "reliable",
+     "pt": "confiável"
+    },
+    {
+     "en": "receipt",
+     "pt": "recibo"
+    },
+    {
+     "en": "to check in",
+     "pt": "fazer check-in"
+    },
+    {
+     "en": "journey",
+     "pt": "viagem"
+    },
+    {
+     "en": "to pay back",
+     "pt": "devolver o dinheiro"
+    }
+   ],
+   "material": {
+    "titulo": "A cancelled flight",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good afternoon. I'm afraid my flight to Edinburgh has been cancelled."
+     },
+     {
+      "p": "B",
+      "t": "I'm sorry to hear that. Let me look at your booking. The next flight with us leaves tomorrow at ten past seven in the morning."
+     },
+     {
+      "p": "A",
+      "t": "Tomorrow? I have an important meeting at nine. Isn't there anything tonight?"
+     },
+     {
+      "p": "B",
+      "t": "There's a flight from Gatwick at nine this evening, but that's a different airport, and you'd need to take the train, which is about forty minutes. We'd cover the ticket."
+     },
+     {
+      "p": "A",
+      "t": "And if I go by train from London instead?"
+     },
+     {
+      "p": "B",
+      "t": "Then we can refund the flight, though you'd have to buy the train ticket yourself. It's usually around eighty pounds, and the journey takes about four and a half hours."
+     },
+     {
+      "p": "A",
+      "t": "Hmm. The train sounds more reliable, to be honest. I've had bad experiences with late evening flights."
+     },
+     {
+      "p": "B",
+      "t": "Understandable. If you keep the receipt, the company will pay you back within two weeks."
+     },
+     {
+      "p": "A",
+      "t": "Right, I'll take the refund. Could you also change my hotel booking? I'm supposed to check in tonight, but I'll arrive late."
+     },
+     {
+      "p": "B",
+      "t": "I'll call them. Just make sure you tell the reception it will be after midnight."
+     },
+     {
+      "p": "A",
+      "t": "Thank you for your help."
+     },
+     {
+      "p": "B",
+      "t": "You're welcome. I hope the rest of your journey goes smoothly, and good luck with the meeting."
+     },
+     {
+      "p": "A",
+      "t": "Thanks. I'll need it!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why can't the man take tomorrow's flight?",
+     "op": [
+      "He has to attend a meeting early in the morning",
+      "It is already full",
+      "It leaves from a different airport",
+      "It costs too much"
+     ],
+     "r": 0,
+     "exp": "O voo sai às 7h10, mas ele tem uma reunião importante às nove em Edimburgo, longe do aeroporto de partida."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: My flight to Edinburgh has been ___.",
+     "resp": [
+      "cancelled",
+      "canceled"
+     ],
+     "exp": "Cancelled (britânico, com dois l) = cancelado.",
+     "ouvir": "I'm afraid my flight to Edinburgh has been cancelled."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Could you also change my hotel booking?",
+     "exp": "Could you: /kudʒu/ na fala rápida. Booking: /búkin/.",
+     "ouvir": "Could you also change my hotel booking?"
+    },
+    {
+     "t": "mc",
+     "q": "What problem is there with the evening flight?",
+     "op": [
+      "It leaves from another airport",
+      "It is much more expensive",
+      "It is cancelled too",
+      "It arrives after midnight"
+     ],
+     "r": 0,
+     "exp": "Gatwick é outro aeroporto e ele precisaria pegar o trem até lá. A empresa pagaria a passagem, então preço não é problema."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "am",
+      "supposed",
+      "to",
+      "check",
+      "in",
+      "tonight,",
+      "but",
+      "I",
+      "will",
+      "arrive",
+      "late."
+     ],
+     "resp": "I am supposed to check in tonight, but I will arrive late.",
+     "exp": "Be supposed to = deveria. Check in tonight = fazer o check-in hoje à noite."
+    },
+    {
+     "t": "gap",
+     "q": "The train journey takes about ___ hours.",
+     "resp": [
+      "four and a half",
+      "4 and a half",
+      "4.5",
+      "four and half"
+     ],
+     "exp": "Four and a half hours = quatro horas e meia."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Tell me about a journey that went wrong.",
+     "modelo": "Once my train was delayed for three hours, so I missed my connection.",
+     "min": 7,
+     "chave": [
+      "train",
+      "bus",
+      "flight",
+      "delayed",
+      "late",
+      "missed",
+      "cancelled",
+      "lost",
+      "plane"
+     ],
+     "exp": "Use o passado: my flight was cancelled / I missed the bus."
+    },
+    {
+     "t": "mc",
+     "q": "Why does the passenger choose the train?",
+     "op": [
+      "He thinks it is more dependable",
+      "It is cheaper than the flight",
+      "It arrives earlier in the morning",
+      "The airline insists on it"
+     ],
+     "r": 0,
+     "exp": "Reliable = confiável (dependable). O trem custa cerca de 80 libras, mas ele será reembolsado."
+    },
+    {
+     "t": "gap",
+     "q": "The company will pay him back within ___ weeks.",
+     "resp": [
+      "two",
+      "2"
+     ],
+     "exp": "Within two weeks = em até duas semanas, se ele guardar o recibo."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Sport and competition",
+   "objetivo": "Entender uma entrevista com uma atleta: motivação, dificuldades, treino e planos.",
+   "foco": "Sport vocabulary: stamina, injury, to give up, to keep going, to take up",
+   "explicacao": [
+    "Vocabulário esportivo: injury (lesão), stamina (resistência), to take up (começar uma atividade), to give up (desistir), to keep going (continuar).",
+    "Em entrevistas, o motivo de começar algo costuma vir de um acontecimento: an injury stopped me playing hockey.",
+    "Cuidado: o áudio fala de muitos números (ten kilometres, thirty-two, five days). A pergunta pede só um deles.",
+    "A pessoa pode corrigir uma ideia comum: People assume I run all the time, but... A resposta é o que vem depois do but."
+   ],
+   "vocab": [
+    {
+     "en": "injury",
+     "pt": "lesão"
+    },
+    {
+     "en": "stamina",
+     "pt": "resistência"
+    },
+    {
+     "en": "to take up",
+     "pt": "começar (hobby)"
+    },
+    {
+     "en": "to give up",
+     "pt": "desistir"
+    },
+    {
+     "en": "coach",
+     "pt": "treinador"
+    },
+    {
+     "en": "blister",
+     "pt": "bolha (no pé)"
+    },
+    {
+     "en": "trainers",
+     "pt": "tênis"
+    }
+   ],
+   "material": {
+    "titulo": "A marathon winner",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Congratulations on winning the regional marathon, Chloe. Did you expect it?"
+     },
+     {
+      "p": "B",
+      "t": "Not at all. A year ago I could hardly run ten kilometres. I took up running after an injury stopped me playing hockey."
+     },
+     {
+      "p": "A",
+      "t": "What was the hardest moment?"
+     },
+     {
+      "p": "B",
+      "t": "Around kilometre thirty-two. My legs felt like lead and I wanted to give up. But I thought about my coach, who never stopped believing in me, and that kept me going."
+     },
+     {
+      "p": "A",
+      "t": "How do you train?"
+     },
+     {
+      "p": "B",
+      "t": "Five days a week, usually before work. People assume I run all the time, but two of those sessions are in the gym. Strength matters just as much as stamina, in my experience."
+     },
+     {
+      "p": "A",
+      "t": "Any advice for beginners?"
+     },
+     {
+      "p": "B",
+      "t": "Don't compare yourself with other runners. And buy proper shoes. I made the mistake of using old trainers in my first race, and I had blisters for a week."
+     },
+     {
+      "p": "A",
+      "t": "And what's next?"
+     },
+     {
+      "p": "B",
+      "t": "A rest! Then I'm entering a race in Berlin in September, though honestly my main goal is just to finish."
+     },
+     {
+      "p": "A",
+      "t": "Before we say goodbye, is it true that you eat pasta every night before a race?"
+     },
+     {
+      "p": "B",
+      "t": "Ha, that's a myth. I usually have rice and chicken, and I try to drink plenty of water the day before. The most important thing is a good night's sleep."
+     },
+     {
+      "p": "A",
+      "t": "Good luck in Berlin, and thanks for talking to us."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why did Chloe start running?",
+     "op": [
+      "She could no longer play her previous sport",
+      "Her coach asked her to",
+      "She wanted to lose weight",
+      "She had won a prize at school"
+     ],
+     "r": 0,
+     "exp": "An injury stopped me playing hockey = a lesão a impediu de jogar hóquei. Ela começou a correr depois disso."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: My legs felt like ___ and I wanted to give up.",
+     "resp": [
+      "lead"
+     ],
+     "exp": "Felt like lead = pesadas como chumbo. É uma expressão para cansaço extremo.",
+     "ouvir": "My legs felt like lead and I wanted to give up."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Strength matters just as much as stamina.",
+     "exp": "Strength: /strenkθ/, sílaba única, termina em 'th'. Stamina: acento na primeira sílaba.",
+     "ouvir": "Strength matters just as much as stamina."
+    },
+    {
+     "t": "mc",
+     "q": "What kept Chloe going at the difficult moment?",
+     "op": [
+      "The crowd around her",
+      "A promise to her family",
+      "Thinking about her coach",
+      "The prize money"
+     ],
+     "r": 2,
+     "exp": "Ela pensou no treinador que nunca deixou de acreditar nela, e isso a fez continuar (kept me going)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "You",
+      "should",
+      "not",
+      "compare",
+      "yourself",
+      "with",
+      "other",
+      "runners."
+     ],
+     "resp": "You should not compare yourself with other runners.",
+     "exp": "Compare yourself with = comparar-se com. Should not dá um conselho negativo."
+    },
+    {
+     "t": "gap",
+     "q": "Chloe trains ___ days a week.",
+     "resp": [
+      "five",
+      "5"
+     ],
+     "exp": "Five days a week, mas só três são de corrida: duas são na academia."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Do you do any sport? Tell me about it.",
+     "modelo": "I play football twice a week with my friends, and I also go swimming.",
+     "min": 7,
+     "chave": [
+      "play",
+      "football",
+      "swim",
+      "run",
+      "gym",
+      "sport",
+      "volleyball",
+      "walk",
+      "train",
+      "cycle"
+     ],
+     "exp": "Diga o esporte, quantas vezes por semana e com quem."
+    },
+    {
+     "t": "mc",
+     "q": "What mistake did Chloe make in her first race?",
+     "op": [
+      "She started too fast",
+      "She wore unsuitable shoes",
+      "She forgot to drink water",
+      "She did not warm up"
+     ],
+     "r": 1,
+     "exp": "Old trainers = tênis velhos, e ela ficou com bolhas por uma semana."
+    },
+    {
+     "t": "gap",
+     "q": "Chloe's main aim in Berlin is simply to ___.",
+     "resp": [
+      "finish",
+      "finish the race",
+      "complete the race"
+     ],
+     "exp": "Her main goal is just to finish = só terminar a prova, sem pensar em ganhar."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "At the doctor's",
+   "objetivo": "Entender uma consulta médica: sintomas, causas, conselhos e o que o paciente sente.",
+   "foco": "Health vocabulary: symptoms, headache, blood pressure, painkillers, to cut down on",
+   "explicacao": [
+    "Vocabulário de saúde: headache (dor de cabeça), blood pressure (pressão), painkillers (analgésicos), to cut down on (reduzir).",
+    "O médico faz perguntas e o paciente responde. Depois vem o diagnóstico e o conselho. As perguntas costumam pedir uma dessas partes.",
+    "Atenção às negações: I don't think you need tablets = você não precisa de remédio. Slightly high não quer dizer perigoso.",
+    "A razão de um conselho vem depois de if ou because: if you stop suddenly, the headaches may get worse."
+   ],
+   "vocab": [
+    {
+     "en": "headache",
+     "pt": "dor de cabeça"
+    },
+    {
+     "en": "blood pressure",
+     "pt": "pressão arterial"
+    },
+    {
+     "en": "painkillers",
+     "pt": "analgésicos"
+    },
+    {
+     "en": "to cut down on",
+     "pt": "reduzir"
+    },
+    {
+     "en": "a relief",
+     "pt": "um alívio"
+    },
+    {
+     "en": "caffeine",
+     "pt": "cafeína"
+    },
+    {
+     "en": "gradually",
+     "pt": "aos poucos"
+    }
+   ],
+   "material": {
+    "titulo": "A visit to the doctor",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Come in, Mr Clarke. What seems to be the problem?"
+     },
+     {
+      "p": "B",
+      "t": "I've had a terrible headache for about a week, and I'm tired all the time."
+     },
+     {
+      "p": "A",
+      "t": "Are you sleeping well?"
+     },
+     {
+      "p": "B",
+      "t": "Not really. I wake up at about four every morning and can't get back to sleep."
+     },
+     {
+      "p": "A",
+      "t": "Any changes recently?"
+     },
+     {
+      "p": "B",
+      "t": "Well, I started a new job in March. It's busy, and I sit at a computer all day."
+     },
+     {
+      "p": "A",
+      "t": "And do you drink much coffee?"
+     },
+     {
+      "p": "B",
+      "t": "Five or six cups, to keep going."
+     },
+     {
+      "p": "A",
+      "t": "I see. Your blood pressure is slightly high, but nothing alarming. I don't think you need tablets."
+     },
+     {
+      "p": "B",
+      "t": "That's a relief. I was afraid it was something serious."
+     },
+     {
+      "p": "A",
+      "t": "Most likely it's stress and too much caffeine. I'd like you to cut down on coffee gradually. If you stop suddenly, the headaches may get worse. Try to take a short walk at lunchtime, and put your phone away an hour before bed."
+     },
+     {
+      "p": "B",
+      "t": "Can't I just take painkillers?"
+     },
+     {
+      "p": "A",
+      "t": "They'll help for a few hours, but they won't solve the cause. Come back in a month, and if you're still not feeling better, we'll do some blood tests."
+     },
+     {
+      "p": "A",
+      "t": "Good. Make an appointment at reception on your way out. And try to drink more water, too."
+     },
+     {
+      "p": "B",
+      "t": "Will do. Thank you, doctor."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is Mr Clarke's main complaint?",
+     "op": [
+      "Pain in his back after work",
+      "A headache and constant tiredness",
+      "Difficulty breathing",
+      "Very high blood pressure"
+     ],
+     "r": 1,
+     "exp": "Ele tem dor de cabeça há uma semana e está sempre cansado. A pressão é só levemente alta (slightly high)."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I wake up at about ___ every morning.",
+     "resp": [
+      "four",
+      "4"
+     ],
+     "exp": "Four = quatro da manhã. É por isso que ele não consegue dormir de novo.",
+     "ouvir": "I wake up at about four every morning."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "I'd like you to cut down on coffee gradually.",
+     "exp": "Cut down on = reduzir. Gradually: /grádjuali/, quatro sílabas.",
+     "ouvir": "I'd like you to cut down on coffee gradually."
+    },
+    {
+     "t": "mc",
+     "q": "How does Mr Clarke feel when the doctor says he doesn't need tablets?",
+     "op": [
+      "Disappointed",
+      "Relieved",
+      "Embarrassed",
+      "Doubtful"
+     ],
+     "r": 1,
+     "exp": "That's a relief: ele estava com medo de algo sério. Relief = alívio."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Try",
+      "to",
+      "take",
+      "a",
+      "short",
+      "walk",
+      "at",
+      "lunchtime."
+     ],
+     "resp": "Try to take a short walk at lunchtime.",
+     "exp": "Try to + verbo = tente fazer. At lunchtime = na hora do almoço."
+    },
+    {
+     "t": "gap",
+     "q": "The doctor thinks the cause is stress and too much ___.",
+     "resp": [
+      "caffeine",
+      "coffee"
+     ],
+     "exp": "Most likely it's stress and too much caffeine. O café é a fonte da cafeína."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "What do you do to stay healthy?",
+     "modelo": "I try to eat fruit every day and I walk to work.",
+     "min": 7,
+     "chave": [
+      "eat",
+      "fruit",
+      "walk",
+      "sleep",
+      "exercise",
+      "sport",
+      "water",
+      "gym",
+      "healthy",
+      "vegetables"
+     ],
+     "exp": "Fale de comida, exercício ou sono. Use try to / I always / I never."
+    },
+    {
+     "t": "mc",
+     "q": "Why does the doctor advise him to reduce coffee slowly?",
+     "op": [
+      "Stopping at once could make the headaches worse",
+      "Coffee is good for his blood pressure",
+      "He would not be able to afford tablets",
+      "His job needs him to stay awake"
+     ],
+     "r": 0,
+     "exp": "If you stop suddenly, the headaches may get worse. Por isso reduzir aos poucos (gradually)."
+    },
+    {
+     "t": "gap",
+     "q": "The doctor wants to see Mr Clarke again in a ___.",
+     "resp": [
+      "month",
+      "one month"
+     ],
+     "exp": "Come back in a month: volte em um mês. Se continuar mal, farão exames de sangue."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "School, university and big choices",
+   "objetivo": "Entender uma conversa sobre estudos: adiar a faculdade, dúvidas, custos e conselhos.",
+   "foco": "Education vocabulary: to defer, applicant, fees, admissions, gap year, to cope",
+   "explicacao": [
+    "Vocabulário de educação: to defer (adiar), fees (mensalidade), applicant (candidato), admissions office (secretaria de matrículas), gap year (ano sabático).",
+    "Nesta conversa há duas pessoas e uma terceira ausente (o pai). Cuidado: a preocupação do pai não é a do aluno.",
+    "Verbos de conselho: I'd suggest..., you could..., don't treat it like... Quem aconselha é a tutora.",
+    "Confira a diferença entre o que alguém teme (worries) e o que alguém diz (claims)."
+   ],
+   "vocab": [
+    {
+     "en": "to defer",
+     "pt": "adiar"
+    },
+    {
+     "en": "fees",
+     "pt": "mensalidade"
+    },
+    {
+     "en": "applicant",
+     "pt": "candidato"
+    },
+    {
+     "en": "gap year",
+     "pt": "ano sabático"
+    },
+    {
+     "en": "to volunteer",
+     "pt": "ser voluntário"
+    },
+    {
+     "en": "admissions office",
+     "pt": "secretaria de matrículas"
+    },
+    {
+     "en": "to cope",
+     "pt": "dar conta"
+    }
+   ],
+   "material": {
+    "titulo": "A talk with a tutor",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Leo, you wanted to talk about your plans after school."
+     },
+     {
+      "p": "B",
+      "t": "Yes. I've been offered a place at Manchester to study engineering, but I'm thinking of deferring it for a year."
+     },
+     {
+      "p": "A",
+      "t": "What would you do instead?"
+     },
+     {
+      "p": "B",
+      "t": "Work for six months in a garage to save money, then volunteer in Ghana for another three."
+     },
+     {
+      "p": "A",
+      "t": "That sounds interesting. What worries you?"
+     },
+     {
+      "p": "B",
+      "t": "Mostly that I'll lose the habit of studying. My cousin took a year out and found the first term very hard."
+     },
+     {
+      "p": "A",
+      "t": "Possibly, but universities generally like applicants with experience. And you'd be more mature."
+     },
+     {
+      "p": "B",
+      "t": "My dad isn't convinced. He says I should go straight away, because the course fees may go up next year."
+     },
+     {
+      "p": "A",
+      "t": "Actually, fees are fixed for students who defer, so that shouldn't concern you. I'd suggest you email the admissions office to confirm."
+     },
+     {
+      "p": "B",
+      "t": "Good idea. And if I do go to Ghana, do you think I could still revise?"
+     },
+     {
+      "p": "A",
+      "t": "Bring a few textbooks, but don't treat it like homework. The point is to have a break. Honestly, you strike me as someone who will cope perfectly well."
+     },
+     {
+      "p": "B",
+      "t": "Thanks, that's a big help. I'll email them tonight."
+     },
+     {
+      "p": "A",
+      "t": "Do that, and let me know what they say. I'll be glad to write you a reference if you need one."
+     },
+     {
+      "p": "B",
+      "t": "That's really kind of you."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is Leo thinking of doing?",
+     "op": [
+      "Changing his course to engineering",
+      "Postponing his university place",
+      "Studying abroad for three years",
+      "Looking for a full-time job instead of studying"
+     ],
+     "r": 1,
+     "exp": "Deferring it for a year = adiar a vaga por um ano. Ele já tem a vaga em Manchester."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I'm thinking of ___ it for a year.",
+     "resp": [
+      "deferring",
+      "postponing"
+     ],
+     "exp": "To defer = adiar. A forma com -ing vem depois de thinking of.",
+     "ouvir": "I'm thinking of deferring it for a year."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Universities generally like applicants with experience.",
+     "exp": "Universities: /iunivérsitiz/, acento em ver. Experience: /ikspíriens/.",
+     "ouvir": "Universities generally like applicants with experience."
+    },
+    {
+     "t": "mc",
+     "q": "What worries Leo most about taking a year out?",
+     "op": [
+      "Losing the habit of studying",
+      "Spending too much money",
+      "Not finding work",
+      "Disappointing his tutor"
+     ],
+     "r": 0,
+     "exp": "Ele teme perder o hábito de estudar, como o primo. O custo das mensalidades preocupa o pai, não Leo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Fees",
+      "are",
+      "fixed",
+      "for",
+      "students",
+      "who",
+      "defer."
+     ],
+     "resp": "Fees are fixed for students who defer.",
+     "exp": "Fixed = fixo, sem mudança. Students who defer = alunos que adiam a vaga."
+    },
+    {
+     "t": "gap",
+     "q": "Leo plans to spend six months working in a ___.",
+     "resp": [
+      "garage"
+     ],
+     "exp": "Work for six months in a garage = trabalhar seis meses numa oficina mecânica. Depois, ele pensa em ser voluntário em Gana."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Would you take a year off before university? Why?",
+     "modelo": "Yes, I would, because I would like to travel and earn some money first.",
+     "min": 7,
+     "chave": [
+      "yes",
+      "no",
+      "travel",
+      "work",
+      "because",
+      "money",
+      "gap",
+      "study",
+      "rest"
+     ],
+     "exp": "Responda e dê um motivo com because."
+    },
+    {
+     "t": "mc",
+     "q": "What does the tutor say about the fees?",
+     "op": [
+      "Leo should pay them before he leaves",
+      "Leo does not need to worry because they will not change if he defers",
+      "They will rise next year",
+      "They depend on his marks"
+     ],
+     "r": 1,
+     "exp": "Fees are fixed for students who defer. A preocupação do pai não tem fundamento."
+    },
+    {
+     "t": "gap",
+     "q": "The tutor suggests Leo should email the ___ office.",
+     "resp": [
+      "admissions"
+     ],
+     "exp": "Admissions office = secretaria que cuida de matrículas. Ela quer que ele confirme a informação."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Phrasal verbs and idioms",
+   "objetivo": "Entender phrasal verbs e expressões idiomáticas comuns numa conversa informal.",
+   "foco": "Phrasal verbs: run out of, put off, turn up, break down, get along; idioms: a piece of cake, under the weather",
+   "explicacao": [
+    "Phrasal verb = verbo + partícula, com sentido novo: run out of (acabar), put off (adiar), turn up (aparecer), break down (quebrar), get along (se dar bem).",
+    "Expressões: a piece of cake = muito fácil; under the weather = meio doente; once in a blue moon = muito raramente; cost an arm and a leg = custar uma fortuna.",
+    "Não traduza palavra por palavra: Mark's car broke down não é 'quebrou para baixo', é 'o carro pifou'.",
+    "No áudio, o sentido é revelado pelo contexto. Se a pessoa diz it was a piece of cake e depois que foi bem, a prova foi fácil."
+   ],
+   "vocab": [
+    {
+     "en": "to run out of",
+     "pt": "ficar sem"
+    },
+    {
+     "en": "to put off",
+     "pt": "adiar"
+    },
+    {
+     "en": "to turn up",
+     "pt": "aparecer"
+    },
+    {
+     "en": "to break down",
+     "pt": "quebrar (carro)"
+    },
+    {
+     "en": "to get along",
+     "pt": "dar-se bem"
+    },
+    {
+     "en": "a piece of cake",
+     "pt": "moleza"
+    },
+    {
+     "en": "under the weather",
+     "pt": "meio doente"
+    }
+   ],
+   "material": {
+    "titulo": "Two flatmates chat",
+    "falas": [
+     {
+      "p": "A",
+      "t": "You look exhausted, Sam."
+     },
+     {
+      "p": "B",
+      "t": "I'm a bit under the weather, actually. I stayed up late to finish my project, and then the printer ran out of ink, so I had to go to the library."
+     },
+     {
+      "p": "A",
+      "t": "You should have put it off until Monday."
+     },
+     {
+      "p": "B",
+      "t": "I couldn't. The deadline was today."
+     },
+     {
+      "p": "A",
+      "t": "Well, how did the presentation go?"
+     },
+     {
+      "p": "B",
+      "t": "Better than expected. I was nervous, but it turned out to be a piece of cake. Mr Reed even said I'd come up with a brilliant idea."
+     },
+     {
+      "p": "A",
+      "t": "Brilliant. By the way, are you coming to Jess's party?"
+     },
+     {
+      "p": "B",
+      "t": "I'd love to, but I'm saving money. The ticket costs an arm and a leg."
+     },
+     {
+      "p": "A",
+      "t": "It's only twenty pounds!"
+     },
+     {
+      "p": "B",
+      "t": "Which I don't have. Anyway, I only go to parties once in a blue moon."
+     },
+     {
+      "p": "A",
+      "t": "Fair enough. Oh, did you hear that Mark's car broke down on the motorway?"
+     },
+     {
+      "p": "B",
+      "t": "Again? That's the third time."
+     },
+     {
+      "p": "A",
+      "t": "Luckily his brother turned up in ten minutes and gave him a lift."
+     },
+     {
+      "p": "B",
+      "t": "They get along really well, don't they?"
+     },
+     {
+      "p": "A",
+      "t": "Yes, they do. Right, I'm looking forward to a quiet evening. Pizza?"
+     },
+     {
+      "p": "B",
+      "t": "Pizza sounds perfect. Mind you, it's my turn to pay, and I've got a voucher that runs out tomorrow."
+     },
+     {
+      "p": "A",
+      "t": "Then let's use it before it's too late! Pepperoni or vegetarian?"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why is Sam so tired?",
+     "op": [
+      "He had a long journey home",
+      "He stayed up late finishing a project",
+      "He went to a party last night",
+      "He has been ill for a week"
+     ],
+     "r": 1,
+     "exp": "Ele ficou acordado até tarde para terminar o trabalho. Under the weather é como ele se sente por isso."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The printer ___ out of ink.",
+     "resp": [
+      "ran"
+     ],
+     "exp": "Run out of = ficar sem. No passado: ran out of.",
+     "ouvir": "The printer ran out of ink."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "The ticket costs an arm and a leg.",
+     "exp": "Costs an arm and a leg = custa muito caro. Ligue 'an arm and a leg' sem pausas: /anárm-an-a-lég/.",
+     "ouvir": "The ticket costs an arm and a leg."
+    },
+    {
+     "t": "mc",
+     "q": "What does Sam mean when he says the presentation was 'a piece of cake'?",
+     "op": [
+      "It was very easy",
+      "It was very short",
+      "It was a pleasant surprise for the teacher",
+      "It was badly prepared"
+     ],
+     "r": 0,
+     "exp": "A piece of cake = moleza. Ele estava nervoso, mas foi fácil. O professor ainda elogiou a ideia."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "only",
+      "go",
+      "to",
+      "parties",
+      "once",
+      "in",
+      "a",
+      "blue",
+      "moon."
+     ],
+     "resp": "I only go to parties once in a blue moon.",
+     "exp": "Once in a blue moon = muito raramente. Only vem antes do verbo go."
+    },
+    {
+     "t": "gap",
+     "q": "Sam says he is feeling a bit under the ___.",
+     "resp": [
+      "weather"
+     ],
+     "exp": "Under the weather = meio doente, indisposto. Nada a ver com o tempo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "What are you looking forward to this month?",
+     "modelo": "I'm looking forward to my birthday because my family is coming.",
+     "min": 6,
+     "chave": [
+      "looking",
+      "forward",
+      "birthday",
+      "holiday",
+      "trip",
+      "weekend",
+      "party",
+      "exam",
+      "concert",
+      "meeting"
+     ],
+     "exp": "Use I'm looking forward to + substantivo ou verbo com -ing."
+    },
+    {
+     "t": "mc",
+     "q": "Why isn't Sam going to the party?",
+     "op": [
+      "He is trying not to spend money",
+      "He does not like Jess",
+      "He has too much work",
+      "He is afraid of crowds"
+     ],
+     "r": 0,
+     "exp": "Ele diz I'm saving money e que não tem as vinte libras. Once in a blue moon é um comentário geral, não o motivo."
+    },
+    {
+     "t": "gap",
+     "q": "Mark's brother ___ up within ten minutes and gave him a lift.",
+     "resp": [
+      "turned",
+      "showed",
+      "showed up"
+     ],
+     "exp": "Turn up = aparecer. A resposta ouvida é turned up; showed up tem o mesmo sentido."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Part 2: a talk with gaps",
+   "objetivo": "Completar frases com uma palavra ou número ouvido num monólogo, como na Part 2 da prova.",
+   "foco": "Sentence completion: numbers, dates, names, spelling; ignoring distractors",
+   "explicacao": [
+    "Na Part 2 você lê frases com lacunas e ouve um monólogo. A resposta é uma ou duas palavras, ou um número, que você ouve exatamente.",
+    "Leia as frases ANTES do áudio e imagine que tipo de palavra falta: número, lugar, dia, substantivo.",
+    "Distratores: o falante diz um número ou nome e depois o corrige, ou cita dois valores (like sixteen and eighteen). Só um responde à frase.",
+    "A ordem das lacunas segue a ordem do áudio. Escreva a palavra sem mudar a forma."
+   ],
+   "vocab": [
+    {
+     "en": "volunteer",
+     "pt": "voluntário"
+    },
+    {
+     "en": "sanctuary",
+     "pt": "santuário, abrigo"
+    },
+    {
+     "en": "enclosure",
+     "pt": "recinto"
+    },
+    {
+     "en": "to commit to",
+     "pt": "comprometer-se com"
+    },
+    {
+     "en": "reference",
+     "pt": "carta de recomendação"
+    },
+    {
+     "en": "closing date",
+     "pt": "data limite"
+    },
+    {
+     "en": "unlimited",
+     "pt": "ilimitado"
+    }
+   ],
+   "material": {
+    "titulo": "Volunteering at Hollybrook",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good morning, everyone, and welcome to Hollybrook Wildlife Park. My name's Gareth, and I'll be explaining how our volunteer scheme works. The park opened in nineteen ninety-six, originally as a small sanctuary for injured owls, but today it's home to over three hundred animals. Volunteers must be at least sixteen, and we ask everyone to commit to a minimum of one morning a week for three months. You don't need any previous experience. We provide full training, which takes place on the first Saturday of each month."
+     },
+     {
+      "p": "A",
+      "t": "Most volunteers start in the café or the gift shop, but after a few weeks you can apply to help in the otter enclosure, which is by far the most popular choice. In return, you get a free uniform, a hot lunch on the days you work, and unlimited entry to the park for you and one friend. One thing to remember: the otters are fed at half past eleven, so please don't arrange anything before then. To apply, you'll need to complete the form on our website and send two references. The closing date for applications is the fourteenth of March. Finally, parking is limited, so cycling is encouraged. There's a bike shed behind the café. Any questions?"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What was the park at the beginning?",
+     "op": [
+      "A farm for rescued horses",
+      "A shelter for wounded birds",
+      "A zoo with a gift shop",
+      "A training centre for animal doctors"
+     ],
+     "r": 1,
+     "exp": "A small sanctuary for injured owls = pequeno abrigo para corujas feridas, ou seja, aves machucadas."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Volunteers must be at least ___.",
+     "resp": [
+      "sixteen",
+      "16"
+     ],
+     "exp": "At least sixteen = no mínimo 16 anos. O ano de abertura, 1996, é outro número do áudio.",
+     "ouvir": "Volunteers must be at least sixteen."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Most volunteers start in the café or the gift shop.",
+     "exp": "Café: /kéfei/. Volunteers: acento na última sílaba, /volantíaz/.",
+     "ouvir": "Most volunteers start in the café or the gift shop."
+    },
+    {
+     "t": "mc",
+     "q": "Which job do volunteers like best?",
+     "op": [
+      "Working in the gift shop",
+      "Serving in the café",
+      "Looking after the otters",
+      "Training new volunteers"
+     ],
+     "r": 2,
+     "exp": "The otter enclosure is by far the most popular choice. Café e loja são só o começo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "provide",
+      "full",
+      "training",
+      "on",
+      "the",
+      "first",
+      "Saturday",
+      "of",
+      "each",
+      "month."
+     ],
+     "resp": "We provide full training on the first Saturday of each month.",
+     "exp": "Provide full training = oferecer treinamento completo. On the first Saturday of each month = no primeiro sábado de cada mês."
+    },
+    {
+     "t": "gap",
+     "q": "Volunteers must commit to at least one ___ a week for three months.",
+     "resp": [
+      "morning"
+     ],
+     "exp": "A minimum of one morning a week. Três meses é a duração do compromisso."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Would you like to work as a volunteer? Where?",
+     "modelo": "Yes, I would like to help at an animal shelter because I love dogs.",
+     "min": 7,
+     "chave": [
+      "volunteer",
+      "help",
+      "animals",
+      "shelter",
+      "hospital",
+      "school",
+      "because",
+      "yes",
+      "no"
+     ],
+     "exp": "Diga onde ajudaria e por quê. Use I would like to..."
+    },
+    {
+     "t": "mc",
+     "q": "What do volunteers receive on the days they work?",
+     "op": [
+      "A meal",
+      "A bicycle",
+      "Free parking",
+      "Entry tickets for their whole family"
+     ],
+     "r": 0,
+     "exp": "A hot lunch on the days you work. A entrada ilimitada vale para o voluntário e apenas um amigo."
+    },
+    {
+     "t": "gap",
+     "q": "The closing date for applications is 14 ___.",
+     "resp": [
+      "March"
+     ],
+     "exp": "The fourteenth of March = 14 de março. É o prazo para enviar o formulário e as duas cartas de recomendação."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado: B2 First Listening",
+   "objetivo": "Praticar o formato da prova: Part 1 (extratos curtos), Part 2 (completar frases) e Part 3 (cinco falantes).",
+   "foco": "Exam practice: attitude and purpose, sentence completion, multiple matching",
+   "explicacao": [
+    "Part 1: ouça cada extrato e marque a opção sobre atitude, propósito ou situação. Part 2: complete as frases com o que ouvir. Part 3: cinco pessoas falam do mesmo tema.",
+    "Na Part 3 cada falante dá uma razão diferente. As opções falsas citam algo que outro falante disse. Confira quem disse o quê.",
+    "Estratégia: leia as perguntas antes de ouvir, sublinhe a palavra-chave e escute a ideia, não só as palavras.",
+    "Na prova real você escuta duas vezes. Aqui, use o botão de áudio quantas vezes quiser, mas tente responder na primeira ou segunda vez."
+   ],
+   "vocab": [
+    {
+     "en": "to hold your breath",
+     "pt": "prender a respiração (esperar)"
+    },
+    {
+     "en": "out of service",
+     "pt": "fora de serviço"
+    },
+    {
+     "en": "tracking device",
+     "pt": "rastreador"
+    },
+    {
+     "en": "vandalism",
+     "pt": "vandalismo"
+    },
+    {
+     "en": "to walk out",
+     "pt": "sair batendo a porta"
+    },
+    {
+     "en": "to run a business",
+     "pt": "ter um negócio"
+    },
+    {
+     "en": "to come first",
+     "pt": "vir em primeiro lugar"
+    }
+   ],
+   "material": {
+    "titulo": "Exam practice",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Did you manage to get tickets for the concert?"
+     },
+     {
+      "p": "B",
+      "t": "No. By the time I logged on, they had all gone."
+     },
+     {
+      "p": "A",
+      "t": "That's a shame. I'd been looking forward to going with you."
+     },
+     {
+      "p": "B",
+      "t": "Never mind. My cousin works at the venue, so she might be able to sort something out. I'm not holding my breath, though."
+     },
+     {
+      "p": "A",
+      "t": "Don't give up yet."
+     },
+     {
+      "p": "B",
+      "t": "I won't. If that fails, I'll wait for them to release more seats in the summer."
+     },
+     {
+      "p": "C",
+      "t": "This is a message for all residents of Fairview Court. The lift will be out of service on Thursday and Friday while engineers replace the cables. We realise this will be inconvenient, particularly for older residents, and we are arranging for volunteers to help carry shopping. If you need this service, please ring the office before Wednesday lunchtime. We apologise for any trouble this may cause."
+     },
+     {
+      "p": "A",
+      "t": "Thanks for coming to my talk on the Riverside bike scheme. It began three years ago with just forty bikes, and there are now over six hundred at sixty stations around the city. Registration costs five pounds a year, and the first thirty minutes of every journey are free. After that, you pay a pound for each additional hour. The most common reason people give for using the bikes is saving time, although many also mention health. The busiest station is the one outside the railway station, and the quietest is next to the hospital. Our biggest problem is vandalism, which costs the council around twenty thousand pounds a year. To tackle it, we are fitting every bike with a tracking device. If you would like to join, download the app and you will be riding within minutes."
+     },
+     {
+      "p": "A",
+      "t": "I'd been in finance for ten years, and the money was great, but I'd stopped caring about my work. Every Monday felt like a punishment. So I left and trained as a primary school teacher. I earn much less now, and I've never been happier."
+     },
+     {
+      "p": "B",
+      "t": "Honestly, it wasn't my choice. The factory where I worked closed down last spring, and there were no other jobs around. I took a course in computing at the local college, mostly because it was free, and now I'm a web designer."
+     },
+     {
+      "p": "C",
+      "t": "My daughter was born two years ago, and the long hours at the hospital just weren't compatible with a baby. I'm now a pharmacist, with regular hours. I miss the excitement of the emergency department, but my family comes first."
+     },
+     {
+      "p": "A",
+      "t": "I'd always wanted to run my own business. After years of taking orders from others, I opened a small bakery with my brother. It's exhausting, and the profits are tiny, but I'd never go back to being an employee."
+     },
+     {
+      "p": "B",
+      "t": "My manager was impossible. He criticised everything and never gave credit to anyone. One day I simply walked out. A friend offered me a place at her company, which is far better, though the pay is the same."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Part 1, extract 1. What is the man's attitude to getting tickets through his cousin?",
+     "op": [
+      "He is doubtful that it will work",
+      "He is confident she will help",
+      "He is angry that she has not helped",
+      "He is happy to wait for the summer"
+     ],
+     "r": 0,
+     "exp": "I'm not holding my breath = não estou muito esperançoso. Esperar o verão é só o plano B."
+    },
+    {
+     "t": "mc",
+     "q": "Part 1, extract 2. What is the purpose of the message?",
+     "op": [
+      "To ask residents to help repair the lift",
+      "To warn residents of a problem and offer help",
+      "To announce that the lift will be replaced for good",
+      "To complain about residents' behaviour"
+     ],
+     "r": 1,
+     "exp": "A mensagem avisa que o elevador ficará parado e oferece voluntários para carregar compras. Os engenheiros trocam os cabos, não os moradores."
+    },
+    {
+     "t": "gap",
+     "q": "Part 2. The bike scheme started with ___ bikes.",
+     "resp": [
+      "forty",
+      "40"
+     ],
+     "exp": "It began three years ago with just forty bikes. Hoje são mais de seiscentas.",
+     "ouvir": "It began three years ago with just forty bikes."
+    },
+    {
+     "t": "gap",
+     "q": "Part 2. Registration for the scheme costs ___ pounds a year.",
+     "resp": [
+      "five",
+      "5",
+      "£5"
+     ],
+     "exp": "Registration costs five pounds a year. Uma libra é o preço de cada hora extra, depois de 30 minutos grátis."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "I earn much less now, and I've never been happier.",
+     "exp": "I've never been happier: ligue 'never been'. Happier: /hápia/, final fraco.",
+     "ouvir": "I earn much less now, and I've never been happier."
+    },
+    {
+     "t": "gap",
+     "q": "Part 2. The quietest bike station is next to the ___.",
+     "resp": [
+      "hospital"
+     ],
+     "exp": "The busiest is outside the railway station, and the quietest is next to the hospital."
+    },
+    {
+     "t": "gap",
+     "q": "Part 2. To reduce vandalism, every bike is being fitted with a ___ device.",
+     "resp": [
+      "tracking",
+      "tracker"
+     ],
+     "exp": "We are fitting every bike with a tracking device. Vandalism custa vinte mil libras por ano."
+    },
+    {
+     "t": "mc",
+     "q": "Part 3, Speaker 1. What is the main reason this speaker gives for changing career?",
+     "op": [
+      "The salary was too low",
+      "The job no longer interested the speaker",
+      "The speaker wanted more time with family",
+      "The company closed"
+     ],
+     "r": 1,
+     "exp": "I'd stopped caring about my work = parou de se importar. O dinheiro era ótimo (the money was great)."
+    },
+    {
+     "t": "mc",
+     "q": "Part 3, Speaker 3. Why did this speaker change career?",
+     "op": [
+      "To earn more money",
+      "To have working hours that suit family life",
+      "Because the emergency department closed",
+      "To open a business"
+     ],
+     "r": 1,
+     "exp": "Os longos plantões não eram compatíveis com um bebê, então ela virou farmacêutica com horário regular."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Would you ever change your career? Why or why not?",
+     "modelo": "Yes, I might change my career if I stopped enjoying my work, because happiness is important.",
+     "min": 8,
+     "chave": [
+      "yes",
+      "no",
+      "change",
+      "career",
+      "because",
+      "job",
+      "money",
+      "enjoy",
+      "might",
+      "never"
+     ],
+     "exp": "Dê a resposta e um motivo. Use might ou would para falar de algo possível."
+    },
+    {
+     "t": "mc",
+     "q": "Part 3, Speaker 5. Why did this speaker leave the previous job?",
+     "op": [
+      "The pay was too low",
+      "A friend told the speaker to resign",
+      "The speaker disliked the way the manager behaved",
+      "The speaker's company closed"
+     ],
+     "r": 2,
+     "exp": "My manager was impossible: ele criticava tudo. A amiga só ofereceu uma vaga depois. O salário continuou igual."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "first",
+      "thirty",
+      "minutes",
+      "of",
+      "every",
+      "journey",
+      "are",
+      "free."
+     ],
+     "resp": "The first thirty minutes of every journey are free.",
+     "exp": "The first thirty minutes = os primeiros trinta minutos. Verbo are porque minutes é plural."
+    }
+   ]
+  }
+ ]
+}
