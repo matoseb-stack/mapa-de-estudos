@@ -158,7 +158,7 @@
      "q": "Responda de forma desenvolvida: o que, por que e como pretende fazer.",
      "frase": "Is there anything you'd like to learn in the future?",
      "modelo": "Yes, I'd really like to learn how to play the guitar. I've always found music a great way to relax, and I think it would help me meet new people. I'm planning to sign up for classes next year.",
-     "min": 28,
+     "min": 27,
      "chave": [
       "learn",
       "would like",
@@ -298,7 +298,7 @@
      "q": "Conte a experiência com tempos variados e termine com uma reflexão. Fale cerca de 30 segundos.",
      "frase": "Tell us about a memorable experience you have had.",
      "modelo": "One experience that really stands out is the first time I lived away from my family. I used to depend on them for everything, so it was quite a shock. Looking back on it, it was eye-opening, and it taught me to be more independent.",
-     "min": 35,
+     "min": 30,
      "chave": [
       "experience",
       "used to",
@@ -327,7 +327,7 @@
      "q": "Dê sua opinião com uma frase de opinião, um motivo e um exemplo.",
      "frase": "What do you think is the most important thing about learning a language?",
      "modelo": "From my point of view, the most important thing is practising regularly. It seems to me that people who speak every day progress much faster, which is why I try to talk to someone in English each morning.",
-     "min": 35,
+     "min": 26,
      "chave": [
       "practice",
       "practising",
@@ -467,7 +467,7 @@
      "q": "Compare as duas situações em cerca de 40 segundos. Não descreva cada detalhe.",
      "frase": "Compare a family meal in a garden with a man eating alone at his desk.",
      "modelo": "Both pictures show people eating, but the situations are very different. In the first, a family is enjoying a meal together outdoors, whereas in the second a man is having lunch alone at work. One striking difference is the mood: the family seems relaxed, while he seems rushed.",
-     "min": 40,
+     "min": 30,
      "chave": [
       "both",
       "whereas",
@@ -496,7 +496,7 @@
      "q": "Especule sobre os motivos nas duas situações, usando might ou may.",
      "frase": "Why might the people have chosen to eat in these ways?",
      "modelo": "The family might have chosen to eat outdoors because it's a special occasion, perhaps a birthday or a weekend gathering. The man, on the other hand, may simply have too much work, so he can't afford to take a proper break.",
-     "min": 35,
+     "min": 28,
      "chave": [
       "might",
       "may",
@@ -635,7 +635,7 @@
      "q": "Especule sobre sentimentos e causas. Fale cerca de 30 segundos.",
      "frase": "How might the people in a picture of a celebrating team be feeling?",
      "modelo": "Judging by their expressions, they must be absolutely thrilled. They have probably just won an important match, and I get the impression that they've been working towards this for a long time. They might also feel a bit relieved.",
-     "min": 30,
+     "min": 27,
      "chave": [
       "must",
       "might",
@@ -664,7 +664,7 @@
      "q": "Especule sobre o que aconteceu antes. Use modais no passado.",
      "frase": "What might have led to the moment shown in a photo of a student checking exam results?",
      "modelo": "He may have spent months revising for this exam, so he must feel a lot of pressure. It's likely that he has been waiting for these results for weeks, and he might have sacrificed a lot of free time to get them.",
-     "min": 35,
+     "min": 29,
      "chave": [
       "may have",
       "must",
@@ -803,7 +803,7 @@
      "q": "Responda à pergunta do cartão com 2 motivos. Fale cerca de 30 segundos.",
      "frase": "Why might people choose to do risky activities like climbing or diving?",
      "modelo": "I'd say there are a couple of reasons. For one thing, people want to escape their routine and test themselves. For another, the sense of achievement is huge, and it can also help them build confidence in other areas of life.",
-     "min": 35,
+     "min": 28,
      "chave": [
       "challenge",
       "routine",
@@ -832,7 +832,7 @@
      "q": "Compare e responda à pergunta do cartão em cerca de 45 segundos.",
      "frase": "How difficult might it be to learn one of these activities from scratch? Compare two photos.",
      "modelo": "Both activities probably require training, but I think scuba diving may be easier to learn gradually, whereas climbing demands real physical strength. On balance, I'd say climbing is harder, as one mistake could be dangerous. If I were a beginner, I'd start with a short course and a good instructor.",
-     "min": 45,
+     "min": 30,
      "chave": [
       "difficult",
       "hard",
@@ -971,7 +971,7 @@
      "q": "Responda usando pelo menos dois hedges (tend to, arguably, to some extent...).",
      "frase": "Do you think most people spend too much time on social media?",
      "modelo": "To some extent, yes. Many people tend to check their phones more often than they realise, and arguably this affects their concentration. However, social media can also be useful, so it depends on how you use it.",
-     "min": 30,
+     "min": 25,
      "chave": [
       "tend",
       "arguably",
@@ -1000,7 +1000,7 @@
      "q": "Dê uma opinião cautelosa e equilibrada, com pelo menos dois hedges.",
      "frase": "Are people nowadays less patient than they used to be?",
      "modelo": "I'd say that, by and large, people do seem to be less patient, probably because everything is instant these days. That said, I wouldn't generalise too much. Arguably, some people have become more patient thanks to meditation and similar habits.",
-     "min": 35,
+     "min": 28,
      "chave": [
       "seem",
       "probably",
@@ -1139,7 +1139,7 @@
      "q": "Pondere vantagens e desvantagens e conclua com On the whole. Fale cerca de 35 segundos.",
      "frase": "What are the advantages and disadvantages of a longer sports break at school?",
      "modelo": "A longer sports break would be quite beneficial because students would have more time to be active and relax. However, the main drawback is that lessons might become rushed. On the whole, I think the benefits outweigh the downsides.",
-     "min": 35,
+     "min": 27,
      "chave": [
       "advantage",
       "drawback",
@@ -1168,7 +1168,7 @@
      "q": "Justifique com linguagem de avaliação. Fale cerca de 35 segundos.",
      "frase": "Which of the ideas would be the least effective, and why?",
      "modelo": "I'd say a ban on school buses would be the least effective, and it might even be counterproductive. Many students live far away, so it simply isn't practical. On the whole, it would create more problems than it solves.",
-     "min": 35,
+     "min": 27,
      "chave": [
       "least",
       "counterproductive",
@@ -1308,7 +1308,7 @@
      "q": "Proponha uma ideia, dê sua opinião e passe a palavra ao colega. Fale cerca de 30 segundos.",
      "frase": "Start the discussion about making the town centre more attractive. Choose one idea and invite your partner to speak.",
      "modelo": "Shall we start with the green spaces? I think they would make the centre much more pleasant for walking and relaxing. What's your view on that?",
-     "min": 22,
+     "min": 18,
      "chave": [
       "shall",
       "start",
@@ -1337,7 +1337,7 @@
      "q": "Reaja ao colega, discorde com educação e proponha outra ideia.",
      "frase": "Respond to your partner, who says free public transport would solve everything. Disagree politely and bring in another idea.",
      "modelo": "That's an interesting point, but I'm not sure it would solve everything. Free transport is useful, yet people also need a reason to come to the centre. Building on that, perhaps street festivals would be more effective. What do you think?",
-     "min": 35,
+     "min": 28,
      "chave": [
       "interesting",
       "not sure",
@@ -1474,7 +1474,7 @@
      "q": "Concorde em parte, discorde de um detalhe e faça uma pergunta. Fale cerca de 30 segundos.",
      "frase": "Your partner says healthy lunches are the best idea. Agree in part and give your view.",
      "modelo": "Up to a point I agree. Healthy lunches would certainly help, but I'm not so sure they'd motivate people on their own. Flexible hours might be more effective. What do you think?",
-     "min": 25,
+     "min": 22,
      "chave": [
       "agree",
       "up to a point",
@@ -1503,7 +1503,7 @@
      "q": "Discorde com educação e proponha uma alternativa. Fale cerca de 35 segundos.",
      "frase": "Disagree politely with a partner who thinks team trips are a great idea, and suggest an alternative.",
      "modelo": "I see what you mean, but I'm afraid I see it differently. Team trips can be tiring and not everyone has the time. Perhaps regular team lunches would be a more practical alternative. Would you agree?",
-     "min": 35,
+     "min": 25,
      "chave": [
       "afraid",
       "differently",
@@ -1640,7 +1640,7 @@
      "q": "Faça uma proposta e justifique brevemente. Fale cerca de 25 segundos.",
      "frase": "Suggest two ideas to choose and give a short reason.",
      "modelo": "How about if we go for flexible hours and healthy lunches? They seem the most feasible, and they would benefit everyone. What do you think?",
-     "min": 20,
+     "min": 17,
      "chave": [
       "how about",
       "go for",
@@ -1669,7 +1669,7 @@
      "q": "Faça o fechamento completo em cerca de 40 segundos.",
      "frase": "Close the discussion: summarise, agree on a decision and confirm it with your partner.",
      "modelo": "So, we've talked about several options. I think flexible hours are the most feasible, and I'm happy to compromise on the gym. How about if we settle on flexible hours and extra holiday days? So we're agreed, then. That's our decision.",
-     "min": 35,
+     "min": 28,
      "chave": [
       "agreed",
       "settle",
@@ -1806,7 +1806,7 @@
      "q": "Dê opinião, concessão e uma consequência. Fale cerca de 35 segundos.",
      "frase": "How has technology changed the way people communicate?",
      "modelo": "I'd say it has made communication faster and more convenient. Even though we are more connected, it can lead to isolation, because people often prefer messaging to meeting. As a result, face-to-face conversations are becoming less common.",
-     "min": 35,
+     "min": 25,
      "chave": [
       "faster",
       "convenient",
@@ -1836,7 +1836,7 @@
      "q": "Dê opinião, um argumento a favor e um contra. Fale cerca de 40 segundos.",
      "frase": "Should children be allowed to use social media? Explain.",
      "modelo": "I think it depends on their age. On the one hand, social media can help children stay in touch with friends. On the other hand, it exposes them to privacy risks and distractions. On balance, I'd say parents should set limits rather than ban it completely.",
-     "min": 40,
+     "min": 30,
      "chave": [
       "depends",
       "on the one hand",
@@ -1974,7 +1974,7 @@
      "q": "Dê uma posição, mostre os dois lados e dê um exemplo. Fale cerca de 40 segundos.",
      "frase": "Is it fair that some people have better educational opportunities than others?",
      "modelo": "I'd say it isn't fair, but it's hard to solve completely. Some people argue that families have the right to invest in their children's education, whereas others believe the state should guarantee equal opportunities. Personally, I think better public schools would reduce the gap.",
-     "min": 40,
+     "min": 30,
      "chave": [
       "fair",
       "opportunities",
@@ -2004,7 +2004,7 @@
      "q": "Argumente com cuidado e conclua. Fale cerca de 45 segundos.",
      "frase": "Who should be responsible for protecting the environment: individuals, companies or governments?",
      "modelo": "I'd say responsibility should be shared. Individuals can make small changes, but companies cause far more pollution, so they should be held accountable. Ultimately, governments need to set clear rules. If everyone played a part, the results would be much more significant.",
-     "min": 45,
+     "min": 29,
      "chave": [
       "responsible",
       "companies",
@@ -2143,7 +2143,7 @@
      "q": "Responda com um idiom ou colocação e um exemplo pessoal. Fale cerca de 35 segundos.",
      "frase": "Can failure be a good thing? Use at least one natural expression.",
      "modelo": "At the end of the day, I think failure can be a blessing in disguise. When I failed my first driving test, I felt terrible, but it taught me to be more patient and prepare properly.",
-     "min": 30,
+     "min": 25,
      "chave": [
       "blessing",
       "end of the day",
@@ -2173,7 +2173,7 @@
      "q": "Dê duas ideias práticas usando colocações naturais.",
      "frase": "How can a community raise awareness of an important issue?",
      "modelo": "A community can raise awareness by organising events and using social media effectively. It's also important to be on the same page, so local schools and businesses should get the ball rolling together and keep making progress over time.",
-     "min": 40,
+     "min": 27,
      "chave": [
       "raise awareness",
       "events",
@@ -2312,7 +2312,7 @@
      "q": "Use um filler, um conector e uma correção. Fale cerca de 40 segundos.",
      "frase": "What makes someone a good communicator?",
      "modelo": "Well, how can I put it? A good communicator is someone who listens, or rather, someone who really tries to understand others. What's more, they adapt their language to the audience. On top of that, they stay calm under pressure.",
-     "min": 35,
+     "min": 28,
      "chave": [
       "listen",
       "understand",
@@ -2342,7 +2342,7 @@
      "q": "Sustente por cerca de 50 segundos com conectores, correção e hedging.",
      "frase": "Do you think people communicate better today than in the past? Speak for about a minute.",
      "modelo": "Well, it's hard to say. We communicate faster, but not necessarily better, or rather, not always more deeply. Having said that, technology lets us stay close to people far away. What's more, it helps shy people to express themselves. On balance, I'd say it's a mixed picture.",
-     "min": 50,
+     "min": 30,
      "chave": [
       "faster",
       "better",
@@ -2481,7 +2481,7 @@
      "q": "Compare as fotos e especule sobre os motivos. Fale cerca de 50 segundos.",
      "frase": "Part 2: Compare a student studying alone in a library with a group studying in a café, and say why they might have chosen to study in these ways.",
      "modelo": "Both pictures show students studying, but in different ways. In the first one, the student is alone in a library, whereas in the second one a group is working together in a café. The student in the library might prefer silence to concentrate, while the group may find it easier to share ideas. Judging by their expressions, the group seems more relaxed.",
-     "min": 50,
+     "min": 30,
      "chave": [
       "both",
       "whereas",
@@ -2511,7 +2511,7 @@
      "q": "Faça o fechamento: resuma, proponha duas ideias e confirme. Fale cerca de 30 segundos.",
      "frase": "Part 3 decision: Choose the best two ideas with your partner.",
      "modelo": "So, we've talked about several ideas. I think study groups and more practical lessons would help most. How about if we settle on those two? I'm happy to compromise on online courses. So we're agreed, then.",
-     "min": 28,
+     "min": 25,
      "chave": [
       "agreed",
       "settle",
@@ -2559,7 +2559,7 @@
      "q": "Argumente com equilíbrio por cerca de 50 segundos.",
      "frase": "Part 4: How is education changing, and who benefits most? Give a balanced answer.",
      "modelo": "Education is changing quickly, mainly because of technology. Online courses make learning more flexible, so arguably people in remote areas benefit most. Having said that, those without internet access may fall behind. On balance, I think the key is to make sure technology serves everyone, not just a few.",
-     "min": 50,
+     "min": 30,
      "chave": [
       "technology",
       "online",

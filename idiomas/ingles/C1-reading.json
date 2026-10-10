@@ -1551,7 +1551,7 @@
      "q": "Responda em inglês: você prefere um emprego flexível ou estável? Use um conector como whereas ou provided that.",
      "frase": "Would you prefer a flexible job or a stable one?",
      "modelo": "I would prefer a stable job, whereas my brother likes flexibility. I could accept freelance work, provided that the pay were reliable.",
-     "min": 16,
+     "min": 15,
      "chave": [
       "whereas",
       "provided",

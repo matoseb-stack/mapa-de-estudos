@@ -150,7 +150,7 @@
      "q": "Responda em inglês: diga seu nome e soletre.",
      "frase": "What's your name and how do you spell it?",
      "modelo": "My name is Ana. A-N-A.",
-     "min": 4,
+     "min": 3,
      "chave": [
       "name",
       "my",
@@ -1091,7 +1091,7 @@
      "q": "Responda em inglês: qual é a sua comida favorita?",
      "frase": "What's your favourite food?",
      "modelo": "My favourite food is pizza.",
-     "min": 4,
+     "min": 3,
      "chave": [
       "favourite",
       "food",

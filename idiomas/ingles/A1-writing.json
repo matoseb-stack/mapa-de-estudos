@@ -1525,7 +1525,7 @@
      "q": "Diga uma coisa de que você gosta e uma de que não gosta.",
      "frase": "What do you like and what don't you like?",
      "modelo": "I like pizza, but I don't like fish.",
-     "min": 6,
+     "min": 5,
      "chave": [
       "like",
       "love",

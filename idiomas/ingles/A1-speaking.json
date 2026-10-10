@@ -775,7 +775,7 @@
      "q": "Responda: diga o que você come no café da manhã.",
      "frase": "What do you have for breakfast?",
      "modelo": "For breakfast I have bread and milk.",
-     "min": 5,
+     "min": 4,
      "chave": [
       "bread",
       "milk",
@@ -1488,7 +1488,7 @@
      "q": "Responda: explique o caminho até o supermercado.",
      "frase": "Where is the nearest supermarket? Tell the way.",
      "modelo": "Go straight on and turn left. The supermarket is next to the bank.",
-     "min": 10,
+     "min": 9,
      "chave": [
       "straight",
       "left",
@@ -1821,7 +1821,7 @@
      "q": "Responda: descreva a praia (crianças brincando, sol).",
      "frase": "Describe the picture: a beach, children, sun.",
      "modelo": "In the picture I can see a beach. It's sunny. Two children are building a sandcastle.",
-     "min": 12,
+     "min": 11,
      "chave": [
       "beach",
       "sunny",
@@ -1989,7 +1989,7 @@
      "q": "Responda: conte seu fim de semana passado.",
      "frase": "Where did you go last weekend? What did you do?",
      "modelo": "I went to the beach with my family. We swam and ate ice cream.",
-     "min": 10,
+     "min": 9,
      "chave": [
       "went",
       "beach",
@@ -2122,7 +2122,7 @@
      "q": "Responda: corrija o examinador, a menina come uma banana.",
      "frase": "In my picture the girl is eating an apple. What about yours? (She is eating a banana.)",
      "modelo": "In my picture the girl is eating a banana.",
-     "min": 7,
+     "min": 6,
      "chave": [
       "banana",
       "girl",
@@ -2458,7 +2458,7 @@
      "q": "Responda: o menino anda de bicicleta.",
      "frase": "Part 2. What is the boy doing? (He is riding a bike.)",
      "modelo": "He is riding a bike.",
-     "min": 4,
+     "min": 3,
      "chave": [
       "riding",
       "bike",
@@ -2522,7 +2522,7 @@
      "q": "Responda: fale do seu fim de semana passado.",
      "frase": "Part 3. What did you do last weekend?",
      "modelo": "Last weekend I went to the park and played football.",
-     "min": 8,
+     "min": 7,
      "chave": [
       "went",
       "played",

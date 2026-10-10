@@ -775,7 +775,7 @@
      "q": "Fale de dois esportes ou hobbies que você faz, usando um conectivo.",
      "frase": "A friend asks: 'What do you do in your free time?'",
      "modelo": "I play volleyball and I also like reading. I'm not very good at volleyball, but it's fun.",
-     "min": 12,
+     "min": 11,
      "chave": [
       "and",
       "also",
@@ -1104,7 +1104,7 @@
      "q": "Conte em ordem o que você fez ontem, com first, then e finally.",
      "frase": "Your friend asks: 'What did you do yesterday?'",
      "modelo": "First I studied. Then I had lunch with my family. Finally I watched a film.",
-     "min": 12,
+     "min": 10,
      "chave": [
       "first",
       "then",
@@ -1267,7 +1267,7 @@
      "q": "Sugira uma atividade para o fim de semana e dê um motivo.",
      "frase": "Your friend asks: 'What should we do this weekend?'",
      "modelo": "How about going to the beach? I think it will be sunny, and we can relax.",
-     "min": 12,
+     "min": 11,
      "chave": [
       "how about",
       "why don't",
@@ -1757,7 +1757,7 @@
      "q": "Descreva em duas frases um lugar que você conhece bem, com dois adjetivos.",
      "frase": "A friend asks: 'What is your favourite place like?'",
      "modelo": "My favourite place is a small, quiet beach. The water is warm and the sand is soft.",
-     "min": 12,
+     "min": 11,
      "chave": [
       "beautiful",
       "small",
@@ -1920,7 +1920,7 @@
      "q": "Convença um amigo a tentar sua atividade favorita para relaxar.",
      "frase": "Your friend says: 'I'm so stressed. What do you do to relax?'",
      "modelo": "I usually go for a walk in the park. Why don't you try it? It really helps.",
-     "min": 12,
+     "min": 11,
      "chave": [
       "walk",
       "music",
@@ -2082,7 +2082,7 @@
      "q": "Recomende um lugar da sua cidade e diga uma razão.",
      "frase": "A visitor asks: 'Where should I go in your town?'",
      "modelo": "I'd recommend the old market. It's cheap and you can try delicious local food.",
-     "min": 12,
+     "min": 9,
      "chave": [
       "recommend",
       "market",
@@ -2243,7 +2243,7 @@
      "q": "Corrija e responda: 'I am agree that students should do more exercise.' Diga se concorda e por quê.",
      "frase": "Do you agree that students should do more exercise?",
      "modelo": "Yes, I agree. Exercise is good for our health, and it helps us study better.",
-     "min": 12,
+     "min": 10,
      "chave": [
       "agree",
       "exercise",

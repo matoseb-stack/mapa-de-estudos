@@ -1822,7 +1822,7 @@
      "q": "Responda em inglês: que atividade você gosta de fazer e qual você evita?",
      "frase": "What do you enjoy doing, and what do you avoid doing?",
      "modelo": "I enjoy playing football. I avoid getting up early on Sundays.",
-     "min": 8,
+     "min": 7,
      "chave": [
       "enjoy",
       "avoid",
@@ -2131,7 +2131,7 @@
      "q": "Responda em inglês: você acha que a tecnologia ajuda ou atrapalha os estudos? Dê uma razão.",
      "frase": "Does technology help or harm students?",
      "modelo": "In my opinion, technology helps students because they can find information quickly. However, it can distract them.",
-     "min": 12,
+     "min": 11,
      "chave": [
       "opinion",
       "think",
@@ -2307,7 +2307,7 @@
      "q": "Responda em inglês: você gostaria de ir de bicicleta ao trabalho ou à escola? Por quê?",
      "frase": "Would you like to cycle to school or work? Why or why not?",
      "modelo": "Yes, I would, because it is healthy and cheap. However, I live far from school.",
-     "min": 12,
+     "min": 10,
      "chave": [
       "because",
       "healthy",

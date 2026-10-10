@@ -49,10 +49,10 @@
     }
    ],
    "material": {
-    "tarefa": "You have read the two texts below on working from home.\n\nText 1: Remote work has given employees control over their time. Commuting has disappeared, and people report better concentration and a healthier balance between work and family life. Companies that insist on a return to the office risk losing talented staff.\n\nText 2: Offices are more than rows of desks. Spontaneous conversations spark ideas, and younger employees learn by watching colleagues. Without shared spaces, teams drift apart and loyalty to the company weakens.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 180-240 words.",
+    "tarefa": "You have read the two texts below on working from home.\n\nText 1: Remote work has given employees control over their time. Commuting has disappeared, and people report better concentration and a healthier balance between work and family life. Companies that insist on a return to the office risk losing talented staff.\n\nText 2: Offices are more than rows of desks. Spontaneous conversations spark ideas, and younger employees learn by watching colleagues. Without shared spaces, teams drift apart and loyalty to the company weakens.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 160-220 words.",
     "genero": "essay",
-    "min": 180,
-    "max": 240,
+    "min": 160,
+    "max": 220,
     "modelo": "The two texts offer contrasting views on where people should work. The first claims that remote work benefits employees, while the second defends the office as a place of shared learning.\n\nText 1 argues that working from home gives people control over their time. Without a daily commute, staff concentrate better and balance family and professional demands more easily. This is a persuasive case, particularly for experienced workers who already know their roles. However, it assumes that every home offers a quiet, comfortable place to work, which is far from true for many people.\n\nText 2, by contrast, holds that offices encourage chance conversations and allow newcomers to learn from colleagues. It also warns that distance can weaken a team's sense of belonging. I find this point valid, since a great deal of practical knowledge is passed on informally. Nevertheless, the text overlooks the fact that online tools can now replace some of these exchanges.\n\nOn balance, neither text tells the whole story. A flexible arrangement, combining days at home with days together, would preserve the strengths of both approaches.",
     "checklist": [
      "Resumi a ideia principal de CADA texto com minhas próprias palavras?",
@@ -219,10 +219,10 @@
     }
    ],
    "material": {
-    "tarefa": "You have read the two texts below on the use of smartphones in schools.\n\nText 1: Mobile phones are a constant distraction in the classroom. Pupils who keep them in their pockets check them every few minutes, and teachers lose valuable lesson time asking them to put them away. Several countries have already banned phones in schools, with encouraging results.\n\nText 2: Banning phones ignores how young people actually live. Phones are used for research, translation and communication with parents. Teaching pupils to use them responsibly prepares them better for adult life than simply removing them.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 180-240 words.",
+    "tarefa": "You have read the two texts below on the use of smartphones in schools.\n\nText 1: Mobile phones are a constant distraction in the classroom. Pupils who keep them in their pockets check them every few minutes, and teachers lose valuable lesson time asking them to put them away. Several countries have already banned phones in schools, with encouraging results.\n\nText 2: Banning phones ignores how young people actually live. Phones are used for research, translation and communication with parents. Teaching pupils to use them responsibly prepares them better for adult life than simply removing them.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 160-220 words.",
     "genero": "essay",
-    "min": 180,
-    "max": 240,
+    "min": 160,
+    "max": 220,
     "modelo": "The texts disagree about how schools should deal with mobile phones. One favours a ban, while the other recommends teaching pupils to use them sensibly.\n\nAccording to the first writer, handsets constantly pull pupils' attention away from their work, and staff waste time dealing with the problem. The fact that some countries have already prohibited them in schools is presented as proof that the measure works. This is a reasonable argument, since concentration is essential for learning. Yet the text offers no evidence that results improved because of the ban alone.\n\nThe second text takes a more practical stance. It points out that phones serve genuine educational purposes, from looking up information to contacting family, and that young people will need to manage technology throughout their adult lives. I find this view more convincing, although it underestimates how difficult self-discipline is for teenagers.\n\nIn my opinion, a middle path would work best: phones could be kept away during explanations but allowed for specific tasks. That way schools would protect concentration while still preparing pupils for a connected world.",
     "checklist": [
      "Evitei copiar frases dos textos (mudei vocabulário e estrutura)?",
@@ -242,7 +242,7 @@
       "The news is no longer trusted by many people."
      ],
      "r": 1,
-     "exp": "A opção B muda palavras E estrutura (confidence in the media, has fallen). As outras quase não mudam nada ou mudam o sentido."
+     "exp": "A resposta “Public confidence in the media has fallen.” muda palavras E estrutura (confidence in the media, has fallen). As outras quase não mudam nada ou mudam o sentido."
     },
     {
      "t": "gap",
@@ -308,7 +308,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Say in your own words: why do some people think phones should be banned in classrooms?",
      "modelo": "Some people believe that phones distract pupils from their lessons, so removing them helps everyone concentrate.",
-     "min": 14,
+     "min": 11,
      "chave": [
       "distract",
       "concentrate",
@@ -389,10 +389,10 @@
     }
    ],
    "material": {
-    "tarefa": "You have read the two texts below on tourism.\n\nText 1: Tourism brings jobs and income to regions with few other industries. Restaurants, guides and hotels all depend on visitors, and the money spent often reaches small family businesses that larger industries ignore.\n\nText 2: Popular destinations are being overwhelmed. Rents rise, residents are pushed out of historic centres, and fragile landscapes suffer from the sheer number of visitors. Some towns now feel like theme parks rather than places to live.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 200-250 words.",
+    "tarefa": "You have read the two texts below on tourism.\n\nText 1: Tourism brings jobs and income to regions with few other industries. Restaurants, guides and hotels all depend on visitors, and the money spent often reaches small family businesses that larger industries ignore.\n\nText 2: Popular destinations are being overwhelmed. Rents rise, residents are pushed out of historic centres, and fragile landscapes suffer from the sheer number of visitors. Some towns now feel like theme parks rather than places to live.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 180-240 words.",
     "genero": "essay",
-    "min": 200,
-    "max": 250,
+    "min": 180,
+    "max": 240,
     "modelo": "The two texts approach tourism from opposite directions: the first stresses its economic value, whereas the second focuses on the damage it can do to communities and the environment.\n\nIn essence, Text 1 argues that tourism sustains regions with few alternatives, spreading income to small, family-run businesses. This is a strong point, because many rural areas would otherwise struggle to offer any employment at all. However, the text treats all visitors as equally beneficial and says nothing about who actually keeps the profits.\n\nText 2 boils down to a warning: popular places are being overwhelmed. Rising rents force local people out of their own neighbourhoods, and natural sites deteriorate under the weight of visitors. I find this convincing, particularly in cities where residents now struggle to find affordable housing. On the other hand, it describes the worst cases and may give the impression that all tourism is harmful.\n\nIn my view, the two positions are less opposed than they seem. The real question is not whether to welcome visitors but how many, and under what rules. Limits on numbers, together with fair taxes, could keep the benefits while protecting the places that attract people in the first place.",
     "checklist": [
      "Cada resumo tem a ideia principal, sem exemplos desnecessários?",
@@ -478,7 +478,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Summarise in one sentence: why might too many tourists be a problem for a small town?",
      "modelo": "Too many tourists can push up prices, crowd out residents and damage the local environment.",
-     "min": 13,
+     "min": 10,
      "chave": [
       "prices",
       "residents",
@@ -560,10 +560,10 @@
     }
    ],
    "material": {
-    "tarefa": "You have read the two texts below on the role of competition in education.\n\nText 1: Competition motivates pupils to work harder. Exams, rankings and prizes give young people clear goals, and those who learn to cope with pressure are better prepared for the working world.\n\nText 2: Constant comparison damages confidence. Pupils who rarely win begin to believe they cannot succeed, while the highest achievers become anxious. Cooperation, not rivalry, produces the deepest learning.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 220-260 words.",
+    "tarefa": "You have read the two texts below on the role of competition in education.\n\nText 1: Competition motivates pupils to work harder. Exams, rankings and prizes give young people clear goals, and those who learn to cope with pressure are better prepared for the working world.\n\nText 2: Constant comparison damages confidence. Pupils who rarely win begin to believe they cannot succeed, while the highest achievers become anxious. Cooperation, not rivalry, produces the deepest learning.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer. Write 200-250 words.",
     "genero": "essay",
-    "min": 220,
-    "max": 260,
+    "min": 200,
+    "max": 250,
     "modelo": "The two texts reach opposite conclusions about competition in schools: the first sees it as a useful motivator, the second as a threat to wellbeing and genuine learning.\n\nText 1 maintains that exams, rankings and prizes give pupils goals and teach them to handle pressure. There is some truth in this, since many young people do respond well to a clear target. Nevertheless, the claim is sweeping. It assumes that everyone is motivated in the same way and overlooks pupils for whom pressure produces anxiety rather than effort.\n\nText 2 argues that comparison undermines confidence, particularly among those who seldom win, and that cooperation leads to deeper understanding. I am inclined to agree with the first half of this argument, as constant ranking can be discouraging. However, the second half is harder to sustain. Group work is not automatically more effective, and some tasks still require individual effort that can be fairly measured.\n\nIn my view, both texts fall short because they present competition as all good or all bad. Its effect depends on how it is organised. Friendly challenges against one's own previous results, for example, can inspire pupils without humiliating anyone. A balanced system would therefore reward improvement as well as achievement.",
     "checklist": [
      "Concordei, qualifiquei e questionei pelo menos uma ideia?",
@@ -655,7 +655,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Give your opinion: is competition good for children? Mention one benefit and one risk.",
      "modelo": "Competition can motivate children to improve, but it can also make weaker pupils lose confidence.",
-     "min": 15,
+     "min": 10,
      "chave": [
       "motivate",
       "confidence",
@@ -744,7 +744,7 @@
     "genero": "essay",
     "min": 240,
     "max": 280,
-    "modelo": "The two texts are not so much opposed as concerned with different questions: the first considers what artificial intelligence can achieve, while the second asks who will actually benefit.\n\nText 1 takes an optimistic view. By removing tedious tasks, automation would leave employees free to concentrate on creative and human aspects of their work, and the resulting productivity would enrich society. This is a persuasive picture, and history offers some support, as earlier technologies did create new kinds of employment. Yet the text treats prosperity as if it were automatically shared, which is a large assumption.\n\nText 2 addresses precisely this weakness. It predicts that firms adopting the technology early will capture most of the profit, leaving routine workers exposed to unemployment unless governments intervene. I find this warning well founded, although it paints a rather static picture: workers who are given the chance to retrain may move into roles that do not yet exist.\n\nTaken together, the texts are complementary. Both accept that the technology will transform work; they differ over whether the transformation will be fair. My own position is that the outcome depends on policy rather than on technology itself. If retraining is funded and gains are taxed sensibly, the optimism of the first text could be justified. If not, the fears of the second would prove accurate.",
+    "modelo": "The two texts are not so much opposed as concerned with different questions: the first considers what artificial intelligence can achieve, while the second asks who will actually benefit.\n\nText 1 takes an optimistic view. By removing tedious tasks, automation would leave employees free to concentrate on creative and human aspects of their work, and the resulting productivity would enrich society. This is a persuasive picture, and history offers some support, as earlier technologies did create new kinds of employment. Yet the text treats prosperity as if it were automatically shared, which is a large assumption.\n\nText 2 addresses precisely this weakness. It predicts that firms adopting the technology early will capture most of the profit, leaving routine workers exposed to unemployment unless governments intervene. I find this warning well founded, although it paints a rather static picture: workers who are given the chance to retrain may move into roles that do not yet exist.\n\nTaken together, the texts are complementary. Both accept that the technology will transform work; they differ over whether the transformation will be fair. My own position is that the outcome depends on policy rather than on technology itself. If retraining is funded and gains are taxed sensibly, the optimism of the first text could be justified. If not, the fears of the second would prove accurate. Either way, readers should be wary of any prediction that treats the future as inevitable, because choices made today will shape who gains and who loses.",
     "checklist": [
      "Mostrei a relação entre os textos (pontos em comum e diferenças)?",
      "Evitei somar dois resumos sem ligá-los?",
@@ -833,7 +833,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Do you think new technology usually helps everyone equally? Why, or why not?",
      "modelo": "No, I don't think so. New technology often benefits those who can afford it first, so inequality can increase unless there is support for everyone.",
-     "min": 18,
+     "min": 17,
      "chave": [
       "inequality",
       "afford",
@@ -914,10 +914,10 @@
     }
    ],
    "material": {
-    "tarefa": "A local newspaper has published an article proposing that the town library be closed and its building sold to a property developer. Write a letter to the editor responding to the article, expressing your view and proposing an alternative. Write 250-300 words.",
+    "tarefa": "A local newspaper has published an article proposing that the town library be closed and its building sold to a property developer. Write a letter to the editor responding to the article, expressing your view and proposing an alternative. Write 220-280 words.",
     "genero": "letter",
-    "min": 250,
-    "max": 300,
+    "min": 220,
+    "max": 280,
     "modelo": "Dear Sir or Madam,\n\nI am writing with regard to your recent article proposing the closure of the town library. While I appreciate that the council faces difficult financial decisions, I must take issue with the suggestion that a library is a luxury the community can no longer afford.\n\nIt could be argued that, in the age of the internet, books have lost their importance. This view, however, overlooks the many functions the library performs. It offers free computer access to residents without a connection at home, a quiet place for students to revise, and activities for children and elderly people who might otherwise be isolated. Regrettably, the article mentions none of these services.\n\nMoreover, the sale of the building would bring only a temporary financial benefit. Once the money had been spent, the town would be left without a public space of this kind, and rebuilding one would be far more costly than maintaining the present one.\n\nI would therefore urge the council to consider alternatives. Part of the building could be rented to a café or a community group, generating income while keeping the library open. Volunteers, too, might help to reduce running costs.\n\nA library is not simply a collection of books but a shared asset which benefits people of every age. I sincerely hope the council will think again before taking a step that cannot easily be reversed.\n\nYours faithfully,\n\nA. Taylor",
     "checklist": [
      "Usei 'Dear Sir or Madam' e 'Yours faithfully' (ou Sincerely com nome)?",
@@ -1000,7 +1000,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "A friend wants to complain about slow service. Give one polite, formal sentence they could write.",
      "modelo": "I am writing to express my disappointment at the level of service I received, which fell short of my expectations.",
-     "min": 16,
+     "min": 14,
      "chave": [
       "writing",
       "disappointment",
@@ -1086,7 +1086,7 @@
     "genero": "essay",
     "min": 240,
     "max": 280,
-    "modelo": "The question of whether the state should pay for the arts divides the two writers sharply: the former believes public money is essential to culture, while the latter regards it as a luxury.\n\nText 1 contends that theatres, museums and orchestras would struggle to survive in a purely commercial market. In turn, their disappearance would deprive those who cannot afford expensive tickets of any contact with culture at all. This is a compelling argument, and it is strengthened by the fact that cultural education tends to begin in public institutions. That said, the text does not explain why taxpayers who never visit them should contribute.\n\nThe latter, by contrast, puts hospitals and schools first. Such an order of priorities is understandable when budgets are tight, and few would deny that medical care is a basic need. Even so, the argument rests on a false choice. The sums spent on the arts are small compared with health or education, so cutting them would barely improve public services, while the cultural loss would be considerable.\n\nOn balance, I find the first position more persuasive, although I accept that funding should come with conditions. Subsidised institutions could be required to offer low-priced tickets and to reach schools, which would answer the objection that only a privileged minority benefits. In this way, public money would serve the public in the fullest sense.",
+    "modelo": "The question of whether the state should pay for the arts divides the two writers sharply: the former believes public money is essential to culture, while the latter regards it as a luxury.\n\nText 1 contends that theatres, museums and orchestras would struggle to survive in a purely commercial market. In turn, their disappearance would deprive those who cannot afford expensive tickets of any contact with culture at all. This is a compelling argument, and it is strengthened by the fact that cultural education tends to begin in public institutions. That said, the text does not explain why taxpayers who never visit them should contribute.\n\nThe latter, by contrast, puts hospitals and schools first. Such an order of priorities is understandable when budgets are tight, and few would deny that medical care is a basic need. Even so, the argument rests on a false choice. The sums spent on the arts are small compared with health or education, so cutting them would barely improve public services, while the cultural loss would be considerable.\n\nOn balance, I find the first position more persuasive, although I accept that funding should come with conditions. Subsidised institutions could be required to offer low-priced tickets and to reach schools, which would answer the objection that only a privileged minority benefits. In this way, public money would serve the public in the fullest sense. Culture, after all, is not a reward for those who can pay, but a resource that every citizen should be free to enjoy.",
     "checklist": [
      "Usei palavras de referência (this, such, the former/latter) para ligar ideias?",
      "Variei os conectivos e evitei repetir 'however'?",
@@ -1170,7 +1170,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Link these ideas in one or two sentences: buses are cheap; many people still prefer cars.",
      "modelo": "Buses are cheap. Even so, many people still prefer cars because they feel more convenient.",
-     "min": 12,
+     "min": 10,
      "chave": [
       "even so",
       "however",
@@ -1256,7 +1256,7 @@
     "genero": "article",
     "min": 280,
     "max": 320,
-    "modelo": "Can you remember the last time you sat in complete silence? Rarely has it been harder to answer that question. From the moment our alarms ring until we fall asleep with a screen glowing beside us, our days are filled with noise.\n\nIt is not only the traffic and the building sites that are to blame. What has changed most is our own behaviour. Scarcely have we boarded a train than headphones go on; hardly has a meal begun than phones appear on the table. Silence has come to feel uncomfortable, even threatening, as if it were an empty space that must be filled.\n\nThe consequences are subtle but significant. Not only does constant sound make concentration difficult, but it also leaves us with little opportunity to reflect on our own thoughts. Scientists have linked continual noise to stress, poor sleep and even heart problems. Under no circumstances should we dismiss these findings as mere inconveniences.\n\nYet the solution is neither complicated nor expensive. It is a few minutes of quiet each day that can transform our mood. Walk to school without music. Switch your phone off during dinner. Sit in a park and simply listen to what is around you. You may be surprised by how much richer the world sounds when it is not competing with a playlist.\n\nSilence is not an absence; it is a place to think, to rest and to hear ourselves. Not only can we afford to protect it, but we cannot afford to lose it. After all, if we never stop talking and listening to everyone else, when will we find out what we ourselves have to say?",
+    "modelo": "Can you remember the last time you sat in complete silence? Rarely has it been harder to answer that question. From the moment our alarms ring until we fall asleep with a screen glowing beside us, our days are filled with noise.\n\nIt is not only the traffic and the building sites that are to blame. What has changed most is our own behaviour. Scarcely have we boarded a train than headphones go on; hardly has a meal begun than phones appear on the table. Silence has come to feel uncomfortable, even threatening, as if it were an empty space that must be filled.\n\nThe consequences are subtle but significant. Not only does constant sound make concentration difficult, but it also leaves us with little opportunity to reflect on our own thoughts. Scientists have linked continual noise to stress, poor sleep and even heart problems. Under no circumstances should we dismiss these findings as mere inconveniences.\n\nYet the solution is neither complicated nor expensive. It is a few minutes of quiet each day that can transform our mood. Walk to school without music. Switch your phone off during dinner. Sit in a park and simply listen to what is around you. You may be surprised by how much richer the world sounds when it is not competing with a playlist.\n\nSilence is not an absence; it is a place to think, to rest and to hear ourselves. Not only can we afford to protect it, but we cannot afford to lose it. After all, if we never stop talking and listening to everyone else, when will we find out what we ourselves have to say? The answer, I suspect, begins with a moment of quiet tomorrow morning.",
     "checklist": [
      "Usei 2 ou 3 estruturas enfáticas (inversão, cleft) sem exagerar?",
      "Tenho abertura que prende e fechamento marcante?",
@@ -1337,7 +1337,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Use one emphatic structure: say why sleep is important.",
      "modelo": "Not only does sleep restore our energy, but it also helps us learn and remember.",
-     "min": 14,
+     "min": 10,
      "chave": [
       "sleep",
       "not only",
@@ -1423,7 +1423,7 @@
     "genero": "essay",
     "min": 240,
     "max": 280,
-    "modelo": "Social media has provoked a heated debate, and the two texts illustrate its double-edged nature: the first celebrates the closeness it makes possible, while the second laments its psychological cost.\n\nText 1 emphasises how easily platforms connect people. Relatives living on different continents can exchange daily news, and modest campaigns can attract an international audience within hours. This is a substantial advantage, and it has helped to raise awareness of causes that might otherwise have gone unnoticed. The text, however, treats connection and friendship as if they were the same thing, which is questionable.\n\nText 2 sees the picture differently. It argues that platforms foster superficial relationships and encourage users to compare their lives with carefully edited images, a habit linked to widespread anxiety. I find this observation largely convincing, particularly with regard to adolescents, who are under mounting pressure to appear successful. Nevertheless, the text paints heavy users as passive victims, ignoring those who deliberately control how they use the platforms.\n\nIn my view, the texts describe two sides of the same coin. The impact of social media depends on how people use it, rather than on the technology alone. Teaching young people to strike a balance between online and offline life, and to bear in mind that what they see is selective, would reduce the harm while preserving the genuine benefits.",
+    "modelo": "Social media has provoked a heated debate, and the two texts illustrate its double-edged nature: the first celebrates the closeness it makes possible, while the second laments its psychological cost.\n\nText 1 emphasises how easily platforms connect people. Relatives living on different continents can exchange daily news, and modest campaigns can attract an international audience within hours. This is a substantial advantage, and it has helped to raise awareness of causes that might otherwise have gone unnoticed. The text, however, treats connection and friendship as if they were the same thing, which is questionable.\n\nText 2 sees the picture differently. It argues that platforms foster superficial relationships and encourage users to compare their lives with carefully edited images, a habit linked to widespread anxiety. I find this observation largely convincing, particularly with regard to adolescents, who are under mounting pressure to appear successful. Nevertheless, the text paints heavy users as passive victims, ignoring those who deliberately control how they use the platforms.\n\nIn my view, the texts describe two sides of the same coin. The impact of social media depends on how people use it, rather than on the technology alone. Teaching young people to strike a balance between online and offline life, and to bear in mind that what they see is selective, would reduce the harm while preserving the genuine benefits. Schools and families, as much as the companies that design the platforms, share responsibility for making that outcome genuinely possible in practice.",
     "checklist": [
      "Troquei palavras vagas (good, bad, thing) por termos precisos?",
      "Usei colocações naturais (raise awareness, heated debate)?",
@@ -1505,7 +1505,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Use 'strike a balance' to explain what a student should do between study and rest.",
      "modelo": "A student should strike a balance between study and rest to avoid becoming exhausted.",
-     "min": 13,
+     "min": 9,
      "chave": [
       "balance",
       "study",
@@ -1588,7 +1588,7 @@
     "genero": "article",
     "min": 280,
     "max": 320,
-    "modelo": "\"Never lend money to a friend.\" My grandmother said it so often that it became a family joke. I laughed, nodded, and ignored her completely.\n\nThe friend in question was Daniel, who had been in my class since we were six. When he asked to borrow a few hundred pounds to start a small bicycle repair business, I did not hesitate. He was honest, hard-working, and, I told myself, the kind of person for whom rules simply did not apply.\n\nFor the first months, everything went splendidly. The workshop opened, customers arrived, and Daniel sent me cheerful messages with photographs of mended wheels. Then the messages grew shorter. Then they stopped. When we finally met, he looked exhausted and embarrassed, and the business was almost bankrupt. It was not dishonesty, but inexperience: he had never budgeted for repairs, taxes or a single quiet month.\n\nWhat surprised me was my own reaction. I had expected to feel angry, yet what I felt was guilty. I had treated the loan as a gesture of friendship, when I should have treated it as a serious arrangement, with clear terms and a realistic plan. Our friendship survived, but only after several uncomfortable conversations.\n\nSo was my grandmother right? Not entirely. The advice should perhaps have been: never lend money you cannot afford to lose, and never do so without talking honestly about what might go wrong. Daniel now works for a large cycling company, and he has paid back every penny.\n\nThese days, when someone offers me advice, I still listen with a smile. But I listen more carefully, because the best advice often arrives disguised as a family joke.",
+    "modelo": "\"Never lend money to a friend.\" My grandmother said it so often that it became a family joke. I laughed, nodded, and ignored her completely.\n\nThe friend in question was Daniel, who had been in my class since we were six. When he asked to borrow a few hundred pounds to start a small bicycle repair business, I did not hesitate. He was honest, hard-working, and, I told myself, the kind of person for whom rules simply did not apply.\n\nFor the first months, everything went splendidly. The workshop opened, customers arrived, and Daniel sent me cheerful messages with photographs of mended wheels. Then the messages grew shorter. Then they stopped. When we finally met, he looked exhausted and embarrassed, and the business was almost bankrupt. It was not dishonesty, but inexperience: he had never budgeted for repairs, taxes or a single quiet month.\n\nWhat surprised me was my own reaction. I had expected to feel angry, yet what I felt was guilty. I had treated the loan as a gesture of friendship, when I should have treated it as a serious arrangement, with clear terms and a realistic plan. Our friendship survived, but only after several uncomfortable conversations.\n\nSo was my grandmother right? Not entirely. The advice should perhaps have been: never lend money you cannot afford to lose, and never do so without talking honestly about what might go wrong. Daniel now works for a large cycling company, and he has paid back every penny.\n\nThese days, when someone offers me advice, I still listen with a smile. But I listen more carefully, because the best advice often arrives disguised as a family joke. And, once in a while, I even take it.",
     "checklist": [
      "Comecei com um gancho (cena, pergunta ou frase marcante)?",
      "Falei diretamente com o leitor e variei o ritmo das frases?",
@@ -1673,7 +1673,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Describe one short, vivid sentence to start an article about your first day at a new school.",
      "modelo": "My heart was pounding as I pushed open the heavy door of a school where I knew no one.",
-     "min": 16,
+     "min": 13,
      "chave": [
       "school",
       "door",
@@ -1760,7 +1760,7 @@
     "genero": "letter",
     "min": 280,
     "max": 320,
-    "modelo": "Dear Councillor Reed,\n\nI am writing to urge the council to reconsider its decision not to improve the junction of Mill Road and Station Avenue, where I have lived for twelve years. I appreciate that budgets are under strain; nevertheless, I believe that the cost of inaction will ultimately exceed the cost of a solution.\n\nThe problem is serious and well documented. Over the past year, there have been four accidents at this junction, two involving children walking to the nearby primary school. Fortunately, no one has been killed, but it would be unrealistic to assume that this good fortune will continue. Traffic has increased since the new housing estate opened, and drivers regularly cross on red in order to avoid the long queues.\n\nI understand that a full redesign would be expensive. However, there are inexpensive measures which could make a real difference. A pedestrian crossing with a button-operated signal, a lower speed limit, and a camera to discourage drivers from running the red light would cost far less than the compensation and medical expenses that follow a serious accident. Parents have also offered to help raise money for improvements, and a local business has said it would consider sponsorship.\n\nI would therefore be grateful if the council could look into these options and arrange a public meeting where residents can give their views. A reply by the end of next month would be much appreciated.\n\nThis is not a request that concerns one neighbourhood alone. It is a matter of public safety, and the council has the power to address it before another family suffers.\n\nI look forward to hearing from you.\n\nYours sincerely,\n\nMaria Costa",
+    "modelo": "Dear Councillor Reed,\n\nI am writing to urge the council to reconsider its decision not to improve the junction of Mill Road and Station Avenue, where I have lived for twelve years. I appreciate that budgets are under strain; nevertheless, I believe that the cost of inaction will ultimately exceed the cost of a solution.\n\nThe problem is serious and well documented. Over the past year, there have been four accidents at this junction, two involving children walking to the nearby primary school. Fortunately, no one has been killed, but it would be unrealistic to assume that this good fortune will continue. Traffic has increased since the new housing estate opened, and drivers regularly cross on red in order to avoid the long queues.\n\nI understand that a full redesign would be expensive. However, there are inexpensive measures which could make a real difference. A pedestrian crossing with a button-operated signal, a lower speed limit, and a camera to discourage drivers from running the red light would cost far less than the compensation and medical expenses that follow a serious accident. Parents have also offered to help raise money for improvements, and a local business has said it would consider sponsorship.\n\nI would therefore be grateful if the council could look into these options and arrange a public meeting where residents can give their views. A reply by the end of next month would be much appreciated.\n\nThis is not a request that concerns one neighbourhood alone. It is a matter of public safety, and the council has the power to address it before another family suffers. Residents have waited long enough for a safe way to cross the road.\n\nI look forward to hearing from you.\n\nYours sincerely,\n\nMaria Costa",
     "checklist": [
      "Apresentei o problema com fatos concretos, não só opinião?",
      "Reconheci o argumento do outro lado antes de rebater?",
@@ -1847,7 +1847,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Say one persuasive sentence asking a mayor to build a safe cycle path.",
      "modelo": "I urge you to build a safe cycle path, since it would reduce traffic and protect cyclists.",
-     "min": 16,
+     "min": 11,
      "chave": [
       "urge",
       "cycle",
@@ -1934,7 +1934,7 @@
     "genero": "report",
     "min": 280,
     "max": 320,
-    "modelo": "Introduction\n\nThe purpose of this report is to evaluate three ways of helping students practise English outside lessons and to recommend the most suitable.\n\nConversation Club\n\nA weekly club led by a teacher would provide structured speaking practice and immediate feedback. It would be inexpensive, as existing rooms could be used. However, attendance is likely to fall once exams approach, and quieter students may feel reluctant to speak in front of a group.\n\nOnline Platform\n\nAn online platform would be available at any hour, which suits students with irregular schedules. Findings from other colleges suggest that such systems encourage reading and listening but rarely produce real conversation. Moreover, the licence would prove costly, and many learners lose motivation without a human partner.\n\nBuddy System with Local Residents\n\nPairing students with volunteers from the neighbourhood would offer authentic communication in a relaxed setting. Participants could practise vocabulary related to daily life and learn about the culture, which adds a valuable dimension to language learning. The main drawback is organisation: volunteers would need to be recruited and matched carefully, and safety must be guaranteed.\n\nRecommendation\n\nOn the whole, all three options have merit, but the buddy system offers the greatest benefit in relation to cost. It is therefore recommended that the college launch a pilot scheme with twenty students next term, supported by a volunteer coordinator. In the meantime, the conversation club could continue as a low-cost supplement. The online platform should be reconsidered only if funding increases.\n\nThe results of the pilot could then be reviewed before any wider commitment is made.",
+    "modelo": "Introduction\n\nThe purpose of this report is to evaluate three ways of helping students practise English outside lessons and to recommend the most suitable.\n\nConversation Club\n\nA weekly club led by a teacher would provide structured speaking practice and immediate feedback. It would be inexpensive, as existing rooms could be used. However, attendance is likely to fall once exams approach, and quieter students may feel reluctant to speak in front of a group.\n\nOnline Platform\n\nAn online platform would be available at any hour, which suits students with irregular schedules. Findings from other colleges suggest that such systems encourage reading and listening but rarely produce real conversation. Moreover, the licence would prove costly, and many learners lose motivation without a human partner.\n\nBuddy System with Local Residents\n\nPairing students with volunteers from the neighbourhood would offer authentic communication in a relaxed setting. Participants could practise vocabulary related to daily life and learn about the culture, which adds a valuable dimension to language learning. The main drawback is organisation: volunteers would need to be recruited and matched carefully, and safety must be guaranteed.\n\nRecommendation\n\nOn the whole, all three options have merit, but the buddy system offers the greatest benefit in relation to cost. It is therefore recommended that the college launch a pilot scheme with twenty students next term, supported by a volunteer coordinator. In the meantime, the conversation club could continue as a low-cost supplement. The online platform should be reconsidered only if funding increases.\n\nThe results of the pilot could then be reviewed before any wider commitment is made. Student feedback, collected through a short questionnaire, would show whether participants feel more confident, and attendance records would indicate whether the scheme is sustained over time.",
     "checklist": [
      "Usei subtítulos claros e linguagem impessoal (it is recommended)?",
      "Avaliei vantagens E limites de cada opção?",
@@ -2019,7 +2019,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Make a short recommendation to a school: which is better, a school trip or a guest speaker? Give one reason.",
      "modelo": "I would recommend a guest speaker, as it is cheaper and easier to organise than a trip.",
-     "min": 16,
+     "min": 11,
      "chave": [
       "recommend",
       "speaker",
@@ -2106,7 +2106,7 @@
     "genero": "review",
     "min": 280,
     "max": 320,
-    "modelo": "The documentary Dust to Dust, which follows three families farming on the edge of a drying lake, is a quietly powerful film that deserves a far wider audience than it has so far found.\n\nThe subject, climate-driven water shortage, could easily have produced a lecture. Instead, the director chooses to let the farmers speak for themselves. We watch them negotiate for water, argue with neighbours, and worry about whether their children will inherit anything worth keeping. This human focus is the film's greatest strength: statistics are mentioned only sparingly, yet the audience understands the stakes completely.\n\nVisually, the film is stunning. Long shots of cracked earth, filmed at dawn, convey both beauty and desolation without a word of commentary. The soundtrack, however, is less successful. The piano music is occasionally intrusive, and it tells us how to feel at moments when silence would have been more effective.\n\nThe pacing is uneven. The first half hour is a slow burner, and viewers expecting a conventional story may lose patience. Yet those who persevere are rewarded by a moving final sequence in which the three families meet to share their dwindling supplies.\n\nWhere the film falls short is in its treatment of solutions. It identifies the problem with precision, but its only suggestion, a rather vague reference to technology, feels thin. A little more analysis of what governments could do would have made it more complete.\n\nNevertheless, this is thought-provoking and humane filmmaking. I would recommend it to anyone interested in environmental issues, although those looking for fast entertainment should look elsewhere. It lingers in the mind for days after the credits have rolled.",
+    "modelo": "The documentary Dust to Dust, which follows three families farming on the edge of a drying lake, is a quietly powerful film that deserves a far wider audience than it has so far found.\n\nThe subject, climate-driven water shortage, could easily have produced a lecture. Instead, the director chooses to let the farmers speak for themselves. We watch them negotiate for water, argue with neighbours, and worry about whether their children will inherit anything worth keeping. This human focus is the film's greatest strength: statistics are mentioned only sparingly, yet the audience understands the stakes completely.\n\nVisually, the film is stunning. Long shots of cracked earth, filmed at dawn, convey both beauty and desolation without a word of commentary. The soundtrack, however, is less successful. The piano music is occasionally intrusive, and it tells us how to feel at moments when silence would have been more effective.\n\nThe pacing is uneven. The first half hour is a slow burner, and viewers expecting a conventional story may lose patience. Yet those who persevere are rewarded by a moving final sequence in which the three families meet to share their dwindling supplies.\n\nWhere the film falls short is in its treatment of solutions. It identifies the problem with precision, but its only suggestion, a rather vague reference to technology, feels thin. A little more analysis of what governments could do would have made it more complete.\n\nNevertheless, this is thought-provoking and humane filmmaking. I would recommend it to anyone interested in environmental issues, although those looking for fast entertainment should look elsewhere. It lingers in the mind for days after the credits have rolled. It is, in the end, the kind of film that changes the conversation at the dinner table.",
     "checklist": [
      "Descrevi o essencial sem contar o final?",
      "Avaliei pontos fortes e fracos com exemplos?",
@@ -2191,7 +2191,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Give a short balanced opinion about a film or book you know: one strength, one weakness.",
      "modelo": "The story is gripping and the characters are convincing, but the ending feels rushed.",
-     "min": 14,
+     "min": 9,
      "chave": [
       "story",
       "characters",
@@ -2278,7 +2278,7 @@
     "genero": "essay",
     "min": 240,
     "max": 280,
-    "modelo": "The two texts disagree on who should bear the cost of higher education: the first holds that the state ought to pay, whereas the second argues that graduates should contribute once they are earning.\n\nText 1 emphasises opportunity. If tuition were free, talented students from poorer families would no longer be excluded, and the whole economy would profit from a better-qualified workforce. This argument is persuasive, since ability is distributed far more evenly than wealth. Nevertheless, the text does not say how a state with limited resources could afford such a policy, nor whether places would remain available to all who qualify.\n\nText 2 appeals to fairness from a different angle: those who do not attend university should not subsidise the future earnings of those who do. There is some force in this view, particularly as graduates tend to receive higher salaries. However, it overlooks the fact that society also gains from doctors, engineers and teachers. Furthermore, the threat of long-term debt may discourage students from less affluent backgrounds, which would undermine the very fairness the writer defends.\n\nIn my opinion, the second model is the more realistic, provided repayment is linked to income and ceases to be a burden when earnings are low. Such a system would keep universities open to everyone with the ability to benefit from them, while sharing the cost between the individual and the community in proportion to the benefit each receives.",
+    "modelo": "The two texts disagree on who should bear the cost of higher education: the first holds that the state ought to pay, whereas the second argues that graduates should contribute once they are earning.\n\nText 1 emphasises opportunity. If tuition were free, talented students from poorer families would no longer be excluded, and the whole economy would profit from a better-qualified workforce. This argument is persuasive, since ability is distributed far more evenly than wealth. Nevertheless, the text does not say how a state with limited resources could afford such a policy, nor whether places would remain available to all who qualify.\n\nText 2 appeals to fairness from a different angle: those who do not attend university should not subsidise the future earnings of those who do. There is some force in this view, particularly as graduates tend to receive higher salaries. However, it overlooks the fact that society also gains from doctors, engineers and teachers. Furthermore, the threat of long-term debt may discourage students from less affluent backgrounds, which would undermine the very fairness the writer defends.\n\nIn my opinion, the second model is the more realistic, provided repayment is linked to income and ceases to be a burden when earnings are low. Such a system would keep universities open to everyone with the ability to benefit from them, while sharing the cost between the individual and the community in proportion to the benefit each receives. That, surely, is the fairest outcome that can be achieved in practice, and one that both writers would find hard to reject entirely.",
     "checklist": [
      "Reli procurando preposições, concordância e pontuação?",
      "Cortei palavras vazias e repetições?",
@@ -2324,7 +2324,7 @@
       "As a result of the fact that costs are high, many students can not attend."
      ],
      "r": 0,
-     "exp": "'Due to the fact that' é prolixo. A opção A diz o mesmo com menos palavras."
+     "exp": "'Due to the fact that' é prolixo. A resposta “Because of the high cost, many students cannot attend.” diz o mesmo com menos palavras."
     },
     {
      "t": "order",
@@ -2364,7 +2364,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "Correct this sentence aloud: 'The informations in the text is very interesting.' Say the correct version.",
      "modelo": "The information in the text is very interesting.",
-     "min": 8,
+     "min": 5,
      "chave": [
       "the information in"
      ],
@@ -2525,7 +2525,7 @@
      "q": "Responda em inglês, em 2 ou 3 frases.",
      "frase": "In two sentences, say whether you would rather live in a city or in the countryside, and why.",
      "modelo": "I would rather live in a city, because there are more jobs and cultural activities. However, I would like to spend weekends in the countryside.",
-     "min": 20,
+     "min": 17,
      "chave": [
       "city",
       "countryside",

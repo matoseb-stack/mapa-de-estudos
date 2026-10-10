@@ -1545,7 +1545,12 @@
       "time",
       "phone",
       "thought",
-      "ideas"
+      "ideas",
+      "because",
+      "think",
+      "believe",
+      "but",
+      "so"
      ],
      "exp": "Conte uma situação real em poucas frases. Use last week, so, and, although."
     },
@@ -1696,7 +1701,7 @@
      "q": "Describe a book, film or exhibition that was praised highly but disappointed you.",
      "frase": "Describe a book, film or exhibition that was praised highly but disappointed you.",
      "modelo": "A film I saw last year was praised by critics as brilliant, but I found it slow and predictable.",
-     "min": 14,
+     "min": 13,
      "chave": [
       "film",
       "book",
@@ -2177,7 +2182,7 @@
      "q": "Which of the four writers do you agree with most, and why?",
      "frase": "Which of the four writers do you agree with most, and why?",
      "modelo": "I agree most with writer B, because technology has helped many people, even though handwriting still has some value.",
-     "min": 16,
+     "min": 13,
      "chave": [
       "agree",
       "writer",

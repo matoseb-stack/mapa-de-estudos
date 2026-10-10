@@ -919,7 +919,7 @@
      "q": "Fale em inglês qual é o problema de um produto que você comprou.",
      "frase": "Explain a problem with a product you bought and what you want.",
      "modelo": "I bought a phone last week, but the screen does not work properly. I would like a replacement or a refund.",
-     "min": 16,
+     "min": 14,
      "chave": [
       "problem",
       "refund",
@@ -1242,7 +1242,7 @@
      "q": "Dê em inglês uma opinião curta e uma recomendação sobre um filme ou série.",
      "frase": "Tell us about a film or series you recommend.",
      "modelo": "I would recommend the series because the story is gripping and the actors are excellent. However, it is quite long.",
-     "min": 16,
+     "min": 14,
      "chave": [
       "recommend",
       "series",
@@ -1401,7 +1401,7 @@
      "q": "Dê em inglês uma sugestão para melhorar a biblioteca da escola.",
      "frase": "What would you recommend to improve your school library?",
      "modelo": "I would recommend buying more books and extending the opening hours. This would help students who study in the evening.",
-     "min": 16,
+     "min": 14,
      "chave": [
       "recommend",
       "suggest",
@@ -1880,7 +1880,7 @@
      "q": "Fale em inglês uma frase com 'if' sobre o que você faria com mais tempo livre.",
      "frase": "What would you do if you had more free time?",
      "modelo": "If I had more free time, I would learn to play the guitar. I would also travel more.",
-     "min": 14,
+     "min": 12,
      "chave": [
       "if",
       "would",
@@ -2035,7 +2035,7 @@
      "q": "Corrija em voz alta e explique um erro comum dos brasileiros em inglês.",
      "frase": "What is a common mistake Brazilians make in English?",
      "modelo": "Many Brazilians say 'I have 20 years' instead of 'I am 20'. Another mistake is forgetting the subject in the sentence.",
-     "min": 16,
+     "min": 14,
      "chave": [
       "mistake",
       "say",
@@ -2349,7 +2349,7 @@
      "q": "Dê oralmente sua opinião final sobre turismo (2 frases).",
      "frase": "Should tourism be encouraged in your region?",
      "modelo": "In my view, tourism should be encouraged because it creates jobs. However, there should be rules to protect the environment.",
-     "min": 16,
+     "min": 14,
      "chave": [
       "tourism",
       "encourage",

@@ -659,7 +659,7 @@
      "q": "Responda com atividade e companhia.",
      "frase": "What do you like doing at the weekend, and who do you do it with?",
      "modelo": "At the weekend I enjoy going to the beach with my family. We swim and play volleyball.",
-     "min": 12,
+     "min": 11,
      "chave": [
       "weekend",
       "with",
@@ -829,7 +829,7 @@
      "q": "Fale de uma comida de dia especial.",
      "frase": "What do you like cooking or eating on a special day, like a birthday?",
      "modelo": "On my birthday I like eating cake and pizza with my family. I love cooking pasta too.",
-     "min": 12,
+     "min": 11,
      "chave": [
       "cake",
       "pizza",
@@ -957,7 +957,7 @@
      "q": "Diga com que frequência faz exercício.",
      "frase": "How often do you play sport or exercise?",
      "modelo": "I play football twice a week. I sometimes go running too.",
-     "min": 8,
+     "min": 7,
      "chave": [
       "once",
       "twice",
@@ -1166,7 +1166,7 @@
      "q": "Dê sua opinião sobre sua cidade com um motivo.",
      "frase": "Do you like your town? Why or why not?",
      "modelo": "Yes, I like my town because it's small and quiet. There is a beautiful park where I walk with my dog.",
-     "min": 15,
+     "min": 14,
      "chave": [
       "because",
       "like",
@@ -1334,7 +1334,7 @@
      "q": "Fale do seu último fim de semana em 3 frases.",
      "frase": "Tell me about your last weekend. Where did you go?",
      "modelo": "Last weekend I stayed at my grandmother's house. We walked on the beach and I helped her cook dinner.",
-     "min": 15,
+     "min": 13,
      "chave": [
       "last",
       "weekend",
@@ -1674,7 +1674,7 @@
      "q": "Fale dos seus planos depois da escola e dê um motivo.",
      "frase": "What are you going to do after you finish school? Why?",
      "modelo": "After school I'm going to study medicine because I want to help people. I'm also going to travel before university.",
-     "min": 16,
+     "min": 14,
      "chave": [
       "going",
       "study",
@@ -1842,7 +1842,7 @@
      "q": "Fale do seu dia preferido e dê motivos.",
      "frase": "What is your favourite day of the week? Why?",
      "modelo": "My favourite day is Saturday because I don't have school, so I can play football with my friends.",
-     "min": 14,
+     "min": 12,
      "chave": [
       "because",
       "so",
@@ -2010,7 +2010,7 @@
      "q": "Compare duas opções e explique.",
      "frase": "Would you rather go to a party or stay at home with friends? Why?",
      "modelo": "I'd rather stay at home with friends because parties are noisy. I prefer talking and playing games.",
-     "min": 14,
+     "min": 11,
      "chave": [
       "rather",
       "prefer",
@@ -2140,7 +2140,7 @@
      "q": "Concorde ou discorde com um motivo.",
      "frase": "Your partner says: 'I think the beach is the best place for a holiday.' Do you agree?",
      "modelo": "Yes, I agree. The beach is great because I love swimming.",
-     "min": 9,
+     "min": 7,
      "chave": [
       "agree",
       "think",
@@ -2180,7 +2180,7 @@
      "q": "Discorde com educação e proponha outra coisa.",
      "frase": "Your partner says: 'Let's go to the museum.' Say you don't agree and suggest something else.",
      "modelo": "I'm not sure. I think a museum is boring. Why don't we go to the cinema?",
-     "min": 14,
+     "min": 11,
      "chave": [
       "don't",
       "agree",
@@ -2353,7 +2353,7 @@
      "q": "Descreva um lugar de que você gosta em 4 ou 5 frases.",
      "frase": "Describe a place you like, for example a park or a café. What can you see there?",
      "modelo": "I like a small park near my house. There are many trees and a lake. People are walking and children are playing. I think it's relaxing.",
-     "min": 20,
+     "min": 18,
      "chave": [
       "there",
       "trees",
@@ -2525,7 +2525,7 @@
      "q": "Responda usando o passado e going to.",
      "frase": "Part 1: What did you do last weekend, and what are you going to do next weekend?",
      "modelo": "Last weekend I visited my aunt and we cooked together. Next weekend I'm going to play football with my friends.",
-     "min": 16,
+     "min": 14,
      "chave": [
       "last",
       "weekend",
@@ -2571,7 +2571,7 @@
      "q": "Descreva as opções e escolha a melhor, com motivos.",
      "frase": "Part 2: Look at four ways to spend a birthday: a party, a trip, a restaurant meal and a film. Which is best? Why?",
      "modelo": "I think a party is the best way because we can dance and eat cake with friends. A trip is expensive, so I prefer a party. What about you?",
-     "min": 22,
+     "min": 20,
      "chave": [
       "party",
       "trip",

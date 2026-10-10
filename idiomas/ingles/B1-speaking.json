@@ -996,7 +996,7 @@
      "q": "Diga o que falta e por quê.",
      "frase": "What would you change in your town? What is missing?",
      "modelo": "I think there aren't enough places for young people. I would build a sports centre and more cafes because teenagers need places to meet.",
-     "min": 17,
+     "min": 16,
      "chave": [
       "there aren't",
       "would",
@@ -1310,7 +1310,7 @@
      "q": "Use on the left e on the right.",
      "frase": "Describe the left and the right side of a photo of a beach: on the left, children are making a sandcastle; on the right, an old man is reading under an umbrella.",
      "modelo": "On the left of the photo some children are building a sandcastle. On the right an old man is reading a newspaper under an umbrella.",
-     "min": 20,
+     "min": 17,
      "chave": [
       "on the left",
       "on the right",
@@ -1339,7 +1339,7 @@
      "q": "Descreva com pelo menos dois planos.",
      "frase": "Describe a photo of a street at night with cars, shops with bright lights and two people walking. Use foreground and background.",
      "modelo": "In the foreground two people are walking along the pavement. In the background I can see cars and shops with bright lights. It looks like a lively city.",
-     "min": 22,
+     "min": 19,
      "chave": [
       "foreground",
       "background",
@@ -1478,7 +1478,7 @@
      "q": "Faça uma suposição e justifique.",
      "frase": "Look at this photo: a girl is standing alone at a bus stop and holding an umbrella. Say what she might be doing and why.",
      "modelo": "She might be waiting for a bus. Maybe it's raining, because she's holding an umbrella. She could be going to school or to work.",
-     "min": 18,
+     "min": 16,
      "chave": [
       "might",
       "maybe",
@@ -1649,7 +1649,7 @@
      "q": "Dê duas sugestões e peça a opinião do colega.",
      "frase": "Your partner says: 'We need to choose a present for our teacher.' Make two suggestions.",
      "modelo": "Why don't we buy her a book? Or we could get some flowers. What do you think?",
-     "min": 14,
+     "min": 11,
      "chave": [
       "why don't we",
       "how about",
@@ -1677,7 +1677,7 @@
      "q": "Sugira lugares e peça opinião.",
      "frase": "Your partner asks: 'Where could we have a class party?' Give ideas and ask what he or she thinks.",
      "modelo": "How about having it at the park? We could bring food and music. Or why don't we use the school hall? What do you think?",
-     "min": 20,
+     "min": 17,
      "chave": [
       "how about",
       "we could",
@@ -1819,7 +1819,7 @@
      "q": "Discorde com educação e justifique.",
      "frase": "Your partner says: 'A spa day is the best present for grandma.' Disagree politely and give a reason.",
      "modelo": "I see what you mean, but I'm not sure about that. She might prefer to stay at home with her family, so maybe a photo album is better.",
-     "min": 20,
+     "min": 19,
      "chave": [
       "see what you mean",
       "not sure",
@@ -1848,7 +1848,7 @@
      "q": "Dê sua opinião com motivo.",
      "frase": "Your partner says: 'We should choose the cheapest present.' Say what you think. Agree or disagree.",
      "modelo": "That's true, but I don't think the cheapest one is always the best. I'd rather choose something special, like a photo album, even if it costs a bit more.",
-     "min": 22,
+     "min": 20,
      "chave": [
       "true",
       "agree",
@@ -1985,7 +1985,7 @@
      "q": "Compare duas opções com comparativos.",
      "frase": "Compare a picnic and a cooking class for a group of friends.",
      "modelo": "A picnic is cheaper than a cooking class and it's easier to organise. A cooking class is more interesting, but it's more expensive.",
-     "min": 20,
+     "min": 16,
      "chave": [
       "cheaper",
       "more",
@@ -2014,7 +2014,7 @@
      "q": "Escolha e justifique com um comparativo ou superlativo.",
      "frase": "Which would be the best activity for ten friends: bowling, a picnic or a film night? Explain why.",
      "modelo": "I think the best activity is a picnic. It's cheaper than bowling and it's more relaxing than a film night. Everyone can talk and play games.",
-     "min": 22,
+     "min": 18,
      "chave": [
       "best",
       "picnic",
@@ -2155,7 +2155,7 @@
      "q": "Resuma e proponha uma decisão.",
      "frase": "You and your partner agree that a talent show is a good idea, but a car wash is cheaper. Summarise and suggest a decision.",
      "modelo": "To sum up, a talent show is more fun, but a car wash is cheaper. I think we should go for the talent show. Are you happy with that?",
-     "min": 22,
+     "min": 20,
      "chave": [
       "to sum up",
       "go for",
@@ -2184,7 +2184,7 @@
      "q": "Escolha uma opção e dê dois motivos.",
      "frase": "Decide with your partner: which is the best way to raise money, a cake sale or a school concert? Give two reasons.",
      "modelo": "I think the concert is the best idea because many parents will come and tickets can raise a lot of money. Also, students can show their talents. Shall we choose that?",
-     "min": 28,
+     "min": 21,
      "chave": [
       "best",
       "because",
@@ -2326,7 +2326,7 @@
      "q": "Compare passado e presente, com used to.",
      "frase": "How is life different now from when your parents were young?",
      "modelo": "My parents used to write letters, but now we send messages. Life is faster today, and I think it's easier to learn things because we have the internet.",
-     "min": 22,
+     "min": 19,
      "chave": [
       "used to",
       "now",
@@ -2355,7 +2355,7 @@
      "q": "Dê vantagens, desvantagens e sua opinião.",
      "frase": "Do you think children should have a phone? What are the advantages and disadvantages?",
      "modelo": "In my opinion it can be useful, because parents can contact them. On the other hand, children may spend too much time on games. Personally, I think they should have one when they are twelve or older.",
-     "min": 30,
+     "min": 25,
      "chave": [
       "opinion",
       "think",
@@ -2536,7 +2536,7 @@
      "q": "Sugira, compare e decida.",
      "frase": "Part 3. Talk with your partner about a day out for a visitor: museum, park, market, boat trip or cinema. Suggest, compare and decide.",
      "modelo": "How about the boat trip? It's more exciting than the cinema and the visitor can see the city from the water. The museum is also interesting, but it might be a bit boring. So, shall we go for the boat trip? Are you happy with that?",
-     "min": 35,
+     "min": 30,
      "chave": [
       "how about",
       "more",
@@ -2574,7 +2574,7 @@
      "q": "Dê opinião, motivo e exemplo.",
      "frase": "Part 4. Do you think cooking at home is better than eating out? Why or why not?",
      "modelo": "In my opinion, cooking at home is better because it's cheaper and healthier. For example, my mother makes delicious meals and we eat together. On the other hand, eating out is easier when you are tired.",
-     "min": 32,
+     "min": 25,
      "chave": [
       "opinion",
       "think",

@@ -456,7 +456,7 @@
      "q": "Fale como no long turn: abertura, dois pontos e conclusão.",
      "frase": "Why do some people find it hard to change their habits?",
      "modelo": "The question is really why change is so hard. First and foremost, willpower is limited and runs out when we are tired. Secondly, our environment pushes us back into old routines. For example, if you want to eat less sugar but keep sweets at home, you will fail. So, to sum up, habits depend on circumstances more than on character.",
-     "min": 45,
+     "min": 30,
      "chave": [
       "habits",
       "willpower",
@@ -611,7 +611,7 @@
      "q": "Compare as fotos e fale das vantagens de cada uma.",
      "frase": "Compare the two workplaces and say what the advantages of each might be.",
      "modelo": "Whereas the first picture shows a calm, solitary setting, the second is clearly much busier. The quiet room seems ideal for concentration, and there are fewer interruptions. By contrast, the open-plan office probably encourages teamwork and quick exchange of ideas.",
-     "min": 32,
+     "min": 28,
      "chave": [
       "whereas",
       "advantage",
@@ -918,7 +918,7 @@
      "q": "Dê sua opinião e seja educado ao discordar.",
      "frase": "Which two uses of the empty building would be the most valuable for the community?",
      "modelo": "I think the library and the market would be the most valuable. A library serves people of every age, and a market would bring life to the area and support local producers. I see where you're coming from about the youth centre, but I'm not sure it would be well used.",
-     "min": 32,
+     "min": 30,
      "chave": [
       "library",
       "market",
@@ -1074,7 +1074,7 @@
      "q": "Defenda uma posição, reconheça o outro lado e refute.",
      "frase": "Should governments restrict the use of social media by young people?",
      "modelo": "I'd contend that some limits are justified. Admittedly, parents carry the main responsibility, but not every family has the time. Nevertheless, I'd take issue with a total ban, since it overlooks the fact that young people also learn and organise through these platforms. A compromise, such as age limits, would be wiser.",
-     "min": 38,
+     "min": 30,
      "chave": [
       "restrict",
       "ban",
@@ -1231,7 +1231,7 @@
      "q": "Use if + were, would e uma inversão (had I ou were it not for).",
      "frase": "If you could change one thing about the education system in your country, what would it be?",
      "modelo": "If I were in charge, I would reduce the importance of exams. Were it not for the pressure of final tests, students would learn for pleasure. Had I known this at school, I would have studied differently. Provided that teachers are well trained and paid, the system would improve dramatically.",
-     "min": 38,
+     "min": 30,
      "chave": [
       "would",
       "if",
@@ -1387,7 +1387,7 @@
      "q": "Dê uma opinião firme e suavize os detalhes incertos com hedging.",
      "frase": "Is technology making people less capable of thinking for themselves?",
      "modelo": "It could be argued that we have become over-reliant on search engines. To a certain extent that is true, but by and large I'd say tools simply change what we spend our effort on. In all likelihood, critical thinking matters more than ever, because we are flooded with information.",
-     "min": 38,
+     "min": 30,
      "chave": [
       "technology",
       "think",
@@ -1542,7 +1542,7 @@
      "q": "Use pelo menos um idiom e uma colocação natural.",
      "frase": "Can failure be a good thing? Explain your view.",
      "modelo": "At the end of the day, I believe failure can be a blessing in disguise. It forces you to weigh up what went wrong and put forward better ideas. Bearing in mind how many successful people have failed repeatedly, I'd say failure is almost a requirement for growth.",
-     "min": 35,
+     "min": 30,
      "chave": [
       "failure",
       "learn",
@@ -1695,7 +1695,7 @@
      "q": "Fale sobre humor e inclua uma expressão como to say the least.",
      "frase": "How important is a sense of humour in everyday life?",
      "modelo": "A sense of humour is invaluable. After a stressful meeting, a joke can defuse tension, which is, to say the least, a useful skill. Humour does vary across cultures, though. British irony can be lost on people who take things literally. I'd say being able to laugh at yourself is a sign of confidence.",
-     "min": 36,
+     "min": 30,
      "chave": [
       "humour",
       "joke",
@@ -1853,7 +1853,7 @@
      "q": "Equilibre os dois lados e termine com sua posição.",
      "frase": "Should scientists be free to pursue any research they choose?",
      "modelo": "On the one hand, curiosity has produced the greatest discoveries. On the other hand, just because something is possible doesn't mean it's desirable. Genetic editing raises questions of consent and accountability. Where I come down on this is that research should be free but regulated by independent bodies.",
-     "min": 38,
+     "min": 30,
      "chave": [
       "research",
       "scientists",
@@ -2008,7 +2008,7 @@
      "q": "Use uma frase clivada e um exemplo da sua experiência.",
      "frase": "Is the spread of English a threat to other languages?",
      "modelo": "What concerns me is not English itself but what might be lost. Language carries stories, humour and a way of seeing the world. In my own experience, mixing languages isn't necessarily harmful. However, when smaller languages disappear, a piece of cultural heritage disappears with them.",
-     "min": 36,
+     "min": 30,
      "chave": [
       "language",
       "english",
@@ -2162,7 +2162,7 @@
      "q": "Argumente com causa, consequência e visão ampla.",
      "frase": "To what extent should governments reduce economic inequality?",
      "modelo": "Inequality stems from unequal access to education and opportunity, so governments have a role to play. Higher taxes on large fortunes could fund schools, which would have a positive knock-on effect. Admittedly, too much redistribution may weaken motivation. Ultimately, the real question is how much inequality a society can tolerate.",
-     "min": 40,
+     "min": 30,
      "chave": [
       "inequality",
       "government",
@@ -2316,7 +2316,7 @@
      "q": "Faça um long turn curto: abertura, dois pontos e conclusão.",
      "frase": "Is it possible for a society to be both economically successful and fair?",
      "modelo": "The question is whether prosperity and fairness can coexist. Admittedly, competition drives growth, but extreme inequality threatens stability. To strike a balance, we need good schools and fair taxation. All things considered, I'd say it is possible, provided that opportunity is real.",
-     "min": 42,
+     "min": 29,
      "chave": [
       "society",
       "fair",

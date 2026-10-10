@@ -97,7 +97,9 @@
     let respondido = false;
     const ouvirBtn = ex.ouvir ? `<button type="button" class="btn sm ex-ouvir" data-ex="ouvir">▶ Ouvir</button>` : "";
     let corpo = "";
-    if (tipo === "mc") corpo = `<p class="ex-q">${fmtQ(ex.q)}</p><div class="ex-ops">${ex.op.map((o, k) => `<button type="button" class="opt ex-op" data-op="${k}"><b>${"ABCD"[k]}</b><span>${esc(o)}</span></button>`).join("")}</div>`;
+    // as alternativas aparecem em ordem sorteada (a certa não fica sempre na mesma letra)
+    const ordem = tipo === "mc" ? embaralhar(ex.op.map((_, k) => k)) : [];
+    if (tipo === "mc") corpo = `<p class="ex-q">${fmtQ(ex.q)}</p><div class="ex-ops">${ordem.map((k, pos) => `<button type="button" class="opt ex-op" data-op="${k}"><b>${"ABCD"[pos]}</b><span>${esc(ex.op[k])}</span></button>`).join("")}</div>`;
     else if (tipo === "gap") corpo = `<p class="ex-q">${esc(ex.q).replace("___", `<input class="ex-gap" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Resposta">`)}</p>${ex.dica ? `<p class="small muted">Dica: <b>${esc(ex.dica)}</b></p>` : ""}`;
     else if (tipo === "order") corpo = `${ex.q ? `<p class="ex-q">${esc(ex.q)}</p>` : `<p class="ex-q">Toque nas palavras na ordem certa.</p>`}<div class="ex-linha" data-linha aria-live="polite"></div><div class="ex-chips" data-chips>${embaralhar(ex.palavras).map((w, i) => `<button type="button" class="ex-chip" data-w="${i}">${esc(w)}</button>`).join("")}</div>`;
     else if (tipo === "speak") corpo = `<p class="ex-q">${esc(ex.q)}</p><div class="ex-fala">${ex.modo === "repetir" ? `<p class="ex-alvo">“${esc(ex.frase)}”</p>` : `<p class="ex-alvo">${esc(ex.frase)}</p>`}
@@ -115,7 +117,7 @@
     function concluir(ok, info = {}) {
       if (respondido) return; respondido = true;
       pararFala();
-      const certa = tipo === "mc" ? `${"ABCD"[ex.r]}) ${ex.op[ex.r]}` : tipo === "gap" ? ex.resp[0] : tipo === "order" ? ex.resp : ex.modo === "repetir" ? ex.frase : ex.modelo;
+      const certa = tipo === "mc" ? `${"ABCD"[ordem.indexOf(ex.r)]}) ${ex.op[ex.r]}` : tipo === "gap" ? ex.resp[0] : tipo === "order" ? ex.resp : ex.modo === "repetir" ? ex.frase : ex.modelo;
       fb.hidden = false; fb.className = "ex-fb " + (info.pulado ? "pulado" : ok ? "ok" : "no");
       fb.innerHTML = `<b>${info.pulado ? "Fala pulada" : ok ? "✓ Correto!" : "✗ Ainda não"}</b>
         ${info.ouvido != null ? `<p class="small">A gente ouviu: <i>“${esc(info.ouvido || "…")}”</i>${info.s != null ? ` · ${Math.round(info.s * 100)}% da frase` : ""}</p>` : ""}

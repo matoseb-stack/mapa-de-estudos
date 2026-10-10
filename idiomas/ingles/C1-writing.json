@@ -458,7 +458,7 @@
      "q": "Responda em inglês usando um conectivo de contraste (2 frases).",
      "frase": "Is social media mainly good or bad for young people?",
      "modelo": "Social media helps young people stay in touch with friends. However, it can also damage their concentration and self-esteem.",
-     "min": 14,
+     "min": 13,
      "chave": [
       "however",
       "whereas",
@@ -1922,7 +1922,7 @@
      "q": "Responda em inglês usando 'What... is' ou 'It is... that' (2 frases).",
      "frase": "What do you find most difficult about learning English?",
      "modelo": "What I find most difficult is understanding fast speech. It is also hard to remember new vocabulary.",
-     "min": 14,
+     "min": 11,
      "chave": [
       "what",
       "difficult",

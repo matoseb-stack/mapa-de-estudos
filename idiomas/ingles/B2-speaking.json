@@ -301,7 +301,7 @@
      "q": "Fale de uma viagem ou passeio que você fez e do que quer fazer no futuro.",
      "frase": "Tell us about a place you have visited and a place you'd like to visit in the future.",
      "modelo": "Last year I went to Gramado with my family. It was cold but beautiful. I've never been abroad, so I'd love to visit Italy one day because I'm very interested in its food and history.",
-     "min": 25,
+     "min": 24,
      "chave": [
       "went",
       "visited",
@@ -456,7 +456,7 @@
      "q": "Diga se você prefere estudar sozinho ou em grupo e explique por quê.",
      "frase": "Do you prefer studying alone or with other people? Why?",
      "modelo": "Personally, I prefer studying with other people because we can share ideas. What's more, it's more motivating, which is why I usually join a study group before exams.",
-     "min": 20,
+     "min": 19,
      "chave": [
       "prefer",
       "because",
@@ -768,7 +768,7 @@
      "q": "Compare duas fotos: uma de uma praia vazia e outra de uma praia cheia de gente.",
      "frase": "Compare a photo of an empty beach with a photo of a crowded beach. Which would you prefer to visit?",
      "modelo": "Both photos show a beach, but in the first one it's empty and calm, whereas in the second one it's crowded and noisy. I'd prefer the first beach because I like peace and quiet.",
-     "min": 24,
+     "min": 23,
      "chave": [
       "both",
       "whereas",
@@ -924,7 +924,7 @@
      "q": "Fale o que uma pessoa que está sozinha num café e olha para o relógio pode estar pensando.",
      "frase": "A woman is sitting alone in a café, looking at her watch. What might she be thinking?",
      "modelo": "She might be waiting for a friend who is late. She must be a bit annoyed, because she keeps checking her watch. It looks as if she has an appointment soon.",
-     "min": 22,
+     "min": 21,
      "chave": [
       "might",
       "must",
@@ -1080,7 +1080,7 @@
      "q": "Suponha o que aconteceu antes: uma pessoa chega suja de lama em uma festa.",
      "frase": "A man arrives at a party covered in mud. What could have happened?",
      "modelo": "He might have fallen over on his way here, or perhaps he must have been playing football. He can't have planned to look like this, because he seems quite embarrassed.",
-     "min": 24,
+     "min": 21,
      "chave": [
       "might have",
       "must have",
@@ -1545,7 +1545,7 @@
      "q": "Seu colega disse que aulas online são a melhor forma de aprender. Concorde em parte e discorde com educação.",
      "frase": "Your partner says: 'Online lessons are the best way to learn.' Respond.",
      "modelo": "I see what you mean, and online lessons are very convenient. However, I'm not so sure they are the best, because students can lose focus at home. What do you think?",
-     "min": 22,
+     "min": 21,
      "chave": [
       "see what you mean",
       "not so sure",
@@ -1862,7 +1862,7 @@
      "q": "Dê sua opinião: é melhor encontrar pessoas pessoalmente ou falar online? Use um exemplo.",
      "frase": "Do you think it is better to meet people face to face than to talk online? Why?",
      "modelo": "I'd say it's better to meet face to face, because you can see people's expressions. For instance, a joke is easier to understand in person. Having said that, online chats are useful when friends live far away.",
-     "min": 30,
+     "min": 25,
      "chave": [
       "face to face",
       "because",
@@ -2022,7 +2022,7 @@
      "q": "Imagine que você pudesse trabalhar de qualquer lugar. Diga o que faria e por quê.",
      "frase": "If you could work from anywhere in the world, where would you choose and why?",
      "modelo": "If I could work from anywhere, I'd choose a small island, because I love the sea. I'd imagine it would be peaceful. Having said that, I might feel lonely, so it depends on whether my friends could visit.",
-     "min": 30,
+     "min": 26,
      "chave": [
       "if",
       "would",
@@ -2178,7 +2178,7 @@
      "q": "Explique por que algumas pessoas têm medo de falar em público e o que ajudaria. Use marcadores.",
      "frase": "Why do some people fear speaking in public, and what could help them?",
      "modelo": "Well, to be honest, I think people are afraid of being judged. In other words, they worry about making mistakes. As a result, they avoid speaking. What could help is practising in small groups. To conclude, confidence grows with practice.",
-     "min": 32,
+     "min": 28,
      "chave": [
       "to be honest",
       "in other words",
@@ -2343,7 +2343,7 @@
      "q": "Part 4: Dê sua opinião, um exemplo e uma hipótese sobre o meio ambiente.",
      "frase": "Do you think people care enough about the environment? Why or why not?",
      "modelo": "I'd say most people care, but they don't always act. For instance, many people recycle but still use cars every day. If everyone made small changes, it would make a big difference. Having said that, it also depends on governments.",
-     "min": 32,
+     "min": 28,
      "chave": [
       "environment",
       "for instance",
@@ -2373,7 +2373,7 @@
      "q": "Part 4: Descreva como seria sua cidade ideal em termos de transporte e natureza.",
      "frase": "What would your ideal town be like?",
      "modelo": "If I could design my ideal town, I would build lots of green spaces and make public transport free. In my experience, people use buses more if they are cheap. To be honest, I'd also add cycle lanes so that it would be easy to get around.",
-     "min": 32,
+     "min": 30,
      "chave": [
       "if",
       "would",
