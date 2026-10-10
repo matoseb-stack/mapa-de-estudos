@@ -103,7 +103,7 @@
     else if (tipo === "speak") corpo = `<p class="ex-q">${esc(ex.q)}</p><div class="ex-fala">${ex.modo === "repetir" ? `<p class="ex-alvo">“${esc(ex.frase)}”</p>` : `<p class="ex-alvo">${esc(ex.frase)}</p>`}
         <button type="button" class="btn sm" data-ex="modelo">▶ ${ex.modo === "repetir" ? "Ouvir a pronúncia" : "Ouvir a pergunta"}</button></div>
         <div class="ex-mic"><button type="button" class="btn primary ex-mic-b" data-ex="mic">🎙 Toque e fale</button><span class="small muted" data-ouvindo></span></div>`;
-    el.innerHTML = `<div class="ex ex-${tipo}">
+    el.innerHTML = `<div class="ex" data-tipo="${tipo}">
       <div class="ex-tipo"><span>${ICONE[tipo]}</span>${ROTULO[tipo]}${ouvirBtn}</div>
       ${corpo}
       <div class="ex-fb" hidden></div>
