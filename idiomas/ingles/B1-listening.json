@@ -1,0 +1,3013 @@
+{
+ "nivel": "B1",
+ "skill": "listening",
+ "exame": "B1 Preliminary (PET)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Making plans for the weekend",
+   "objetivo": "Entender combinados de dia, hora e lugar em uma conversa entre amigos.",
+   "foco": "Present continuous for future arrangements; time expressions; offers",
+   "explicacao": [
+    "Usamos o present continuous para planos já combinados: I'm meeting my cousin on Saturday.",
+    "Também serve para planos de outras pessoas: Sandra is bringing a cake.",
+    "Expressões de tempo: on Saturday, at seven, in the morning, next Sunday.",
+    "No áudio, preste atenção em horários e lugares: muitas vezes há dois ou três e só um é a resposta."
+   ],
+   "vocab": [
+    {
+     "en": "to be busy",
+     "pt": "estar ocupado"
+    },
+    {
+     "en": "pitch",
+     "pt": "campo (de futebol)"
+    },
+    {
+     "en": "to bring",
+     "pt": "trazer"
+    },
+    {
+     "en": "garden",
+     "pt": "jardim"
+    },
+    {
+     "en": "instead",
+     "pt": "em vez disso"
+    },
+    {
+     "en": "cousin",
+     "pt": "primo(a)"
+    },
+    {
+     "en": "to start",
+     "pt": "começar"
+    },
+    {
+     "en": "to finish",
+     "pt": "terminar"
+    }
+   ],
+   "material": {
+    "titulo": "A party on Saturday",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Hi Tom, are you doing anything this weekend?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, I'm meeting my cousin on Saturday. We're going to the cinema, I think. Why?"
+     },
+     {
+      "p": "A",
+      "t": "I'm having a small party on Saturday evening. It starts at seven. But if you're busy..."
+     },
+     {
+      "p": "B",
+      "t": "The film finishes at five, so I can come after that. Where is it? Is it at your flat?"
+     },
+     {
+      "p": "A",
+      "t": "No, we're using my grandmother's garden. It's at twenty-four Park Road, next to the library."
+     },
+     {
+      "p": "B",
+      "t": "Great. Shall I bring something?"
+     },
+     {
+      "p": "A",
+      "t": "Could you bring some orange juice? Sandra is bringing a cake and Joe is bringing the music."
+     },
+     {
+      "p": "B",
+      "t": "No problem. And what about Sunday? We're playing football in the morning, aren't we?"
+     },
+     {
+      "p": "A",
+      "t": "Not this week. The pitch is closed. We're playing next Sunday instead, at ten."
+     },
+     {
+      "p": "B",
+      "t": "OK. So I'll see you on Saturday at seven."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Where is the party?",
+     "op": [
+      "at Mia's flat",
+      "in her grandmother's garden",
+      "next to the cinema",
+      "at the football pitch"
+     ],
+     "r": 1,
+     "exp": "Mia diz: we're using my grandmother's garden. O cinema é o programa de Tom à tarde e a library fica perto da casa."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I'm ___ my cousin on Saturday.",
+     "resp": [
+      "meeting"
+     ],
+     "exp": "Present continuous para plano combinado: I'm + meeting.",
+     "ouvir": "I'm meeting my cousin on Saturday."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Sandra is bringing a cake and Joe is bringing the music.",
+     "ouvir": "Sandra is bringing a cake and Joe is bringing the music.",
+     "exp": "Em bringing, o -ing soa /ing/ curto. Cake tem som /êi/."
+    },
+    {
+     "t": "mc",
+     "q": "What does Tom offer to bring?",
+     "op": [
+      "orange juice",
+      "a cake",
+      "the music",
+      "a film"
+     ],
+     "r": 0,
+     "exp": "Tom oferece ajuda e Mia pede orange juice. O bolo é da Sandra e a música é do Joe."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We're",
+      "playing",
+      "football",
+      "next",
+      "Sunday",
+      "at",
+      "ten"
+     ],
+     "resp": "We're playing football next Sunday at ten",
+     "exp": "Ordem: sujeito + verbo + objeto + tempo (next Sunday) + hora (at ten)."
+    },
+    {
+     "t": "gap",
+     "q": "The film finishes at ___, so Tom can go to the party afterwards.",
+     "resp": [
+      "five",
+      "5",
+      "five o'clock",
+      "5 o'clock"
+     ],
+     "exp": "Tom diz: The film finishes at five. A festa começa às sete."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "What are you doing this weekend?",
+     "modelo": "I'm meeting my friends on Saturday and I'm playing football on Sunday.",
+     "min": 5,
+     "chave": [
+      "I'm",
+      "going",
+      "meeting",
+      "playing",
+      "weekend",
+      "visiting"
+     ],
+     "exp": "Use o present continuous: I'm + verbo com -ing + dia."
+    },
+    {
+     "t": "mc",
+     "q": "Why aren't they playing football on Sunday morning?",
+     "op": [
+      "Tom is busy.",
+      "The pitch is closed.",
+      "Mia has a party.",
+      "It's going to rain."
+     ],
+     "r": 1,
+     "exp": "Mia diz: Not this week. The pitch is closed. Eles jogam no domingo seguinte."
+    },
+    {
+     "t": "gap",
+     "q": "The party starts at seven, but Tom will arrive ___ the film.",
+     "resp": [
+      "after"
+     ],
+     "exp": "Tom diz: I can come after that. Ele chega depois do filme."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "At the station",
+   "objetivo": "Entender horários, plataformas e preços em uma conversa na bilheteria.",
+   "foco": "Travel vocabulary; numbers and times; comparing options",
+   "explicacao": [
+    "Em estações, o áudio costuma dar vários horários e plataformas. Anote quais são do trem que a pessoa escolhe no final.",
+    "Return = ida e volta; single = só ida. Direct = sem baldeação; change = trocar de trem.",
+    "Preços falados: twenty-four pounds (24), thirty pounds (30). Cuidado com thirteen/thirty.",
+    "A pessoa pode mudar de ideia no meio da conversa: a resposta é a decisão final."
+   ],
+   "vocab": [
+    {
+     "en": "return ticket",
+     "pt": "passagem de ida e volta"
+    },
+    {
+     "en": "platform",
+     "pt": "plataforma"
+    },
+    {
+     "en": "delayed",
+     "pt": "atrasado"
+    },
+    {
+     "en": "direct",
+     "pt": "direto"
+    },
+    {
+     "en": "to change trains",
+     "pt": "trocar de trem"
+    },
+    {
+     "en": "carriage",
+     "pt": "vagão"
+    },
+    {
+     "en": "to save",
+     "pt": "economizar"
+    },
+    {
+     "en": "by the window",
+     "pt": "perto da janela"
+    }
+   ],
+   "material": {
+    "titulo": "Buying a train ticket",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good morning. How can I help?"
+     },
+     {
+      "p": "B",
+      "t": "Hi. I'd like a return ticket to Oxford, please. I'm travelling today."
+     },
+     {
+      "p": "A",
+      "t": "Certainly. The next train leaves at ten twenty from platform three. But it's delayed, I'm afraid, by about fifteen minutes."
+     },
+     {
+      "p": "B",
+      "t": "Oh. Is there a later one?"
+     },
+     {
+      "p": "A",
+      "t": "Yes, at ten fifty from platform five. That one is direct. The earlier train stops in Reading, so you have to change there."
+     },
+     {
+      "p": "B",
+      "t": "Then I'll take the direct one. How much is it?"
+     },
+     {
+      "p": "A",
+      "t": "A return is twenty-four pounds. If you're under twenty-six, you can buy a young person's card for thirty pounds a year and save a third."
+     },
+     {
+      "p": "B",
+      "t": "I'm twenty-two, but I only travel once or twice a year. I'll just pay the normal price."
+     },
+     {
+      "p": "A",
+      "t": "Fine. Do you want to sit in a quiet carriage?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, please. By the window, if possible."
+     },
+     {
+      "p": "A",
+      "t": "Here you are. Platform five, and don't forget your ticket."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What kind of ticket does the man buy?",
+     "op": [
+      "a single to Oxford",
+      "a return to Oxford",
+      "a return to Reading",
+      "a young person's card"
+     ],
+     "r": 1,
+     "exp": "Ele pede a return ticket to Oxford. Reading é só a cidade onde o primeiro trem para."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The next train ___ at ten twenty from platform three.",
+     "resp": [
+      "leaves"
+     ],
+     "exp": "Leaves = parte. O trem das 10.20 sai da plataforma 3, mas está atrasado.",
+     "ouvir": "The next train leaves at ten twenty from platform three."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I'd like a return ticket to Oxford, please.",
+     "ouvir": "I'd like a return ticket to Oxford, please.",
+     "exp": "I'd like soa /aid láik/. Oxford: /ÓKS-fêd/."
+    },
+    {
+     "t": "mc",
+     "q": "Which train does he decide to take?",
+     "op": [
+      "10.20 from platform 3",
+      "10.50 from platform 5",
+      "10.50 from platform 3",
+      "10.20 from platform 5"
+     ],
+     "r": 1,
+     "exp": "Ele escolhe o trem direto: ten fifty, platform five. O das 10.20 está atrasado e tem baldeação."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Is",
+      "there",
+      "a",
+      "later",
+      "one"
+     ],
+     "resp": "Is there a later one",
+     "exp": "Pergunta com there is: Is there + a later one?"
+    },
+    {
+     "t": "gap",
+     "q": "He prefers the later train because it is ___.",
+     "resp": [
+      "direct"
+     ],
+     "exp": "A funcionária diz: That one is direct. O outro para em Reading."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "How do you usually travel to school or work, and how long does it take?",
+     "modelo": "I usually go by bus and it takes about forty minutes.",
+     "min": 6,
+     "chave": [
+      "bus",
+      "train",
+      "car",
+      "walk",
+      "minutes",
+      "bike",
+      "hour",
+      "metro"
+     ],
+     "exp": "Use by + transporte (by bus) e it takes + tempo."
+    },
+    {
+     "t": "mc",
+     "q": "Why doesn't he buy the young person's card?",
+     "op": [
+      "He is too old.",
+      "It is too expensive.",
+      "He doesn't travel often.",
+      "He already has one."
+     ],
+     "r": 2,
+     "exp": "Ele tem 22 anos (pode comprar), mas diz: I only travel once or twice a year."
+    },
+    {
+     "t": "gap",
+     "q": "With the young person's card he could save a ___ of the price.",
+     "resp": [
+      "third",
+      "a third",
+      "one third"
+     ],
+     "exp": "Save a third = economizar um terço. O cartão custa 30 libras por ano."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Shopping and returns",
+   "objetivo": "Entender preços, tamanhos e opções de troca em uma loja.",
+   "foco": "Prices; past simple (bought, paid); comparatives",
+   "explicacao": [
+    "Em compras, o áudio traz vários preços: o original, o da promoção, o do outro produto. Ouça qual é o que a pergunta pede.",
+    "Sale = promoção; reduced from eighty = com desconto de oitenta.",
+    "Past simple de verbos comuns: buy → bought, pay → paid, choose → chose.",
+    "Comparativos: more expensive, cheaper, larger."
+   ],
+   "vocab": [
+    {
+     "en": "receipt",
+     "pt": "recibo, nota fiscal"
+    },
+    {
+     "en": "sale",
+     "pt": "promoção"
+    },
+    {
+     "en": "voucher",
+     "pt": "vale-compra"
+    },
+    {
+     "en": "to exchange",
+     "pt": "trocar"
+    },
+    {
+     "en": "sold out",
+     "pt": "esgotado"
+    },
+    {
+     "en": "changing room",
+     "pt": "provador"
+    },
+    {
+     "en": "to fit",
+     "pt": "servir (tamanho)"
+    },
+    {
+     "en": "extra",
+     "pt": "a mais"
+    }
+   ],
+   "material": {
+    "titulo": "Returning a jacket",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Hello, I bought this jacket here last Thursday, but it doesn't fit. Can I change it?"
+     },
+     {
+      "p": "B",
+      "t": "Of course. Have you got the receipt?"
+     },
+     {
+      "p": "A",
+      "t": "Yes, here. I paid sixty pounds, but it was in the sale, wasn't it?"
+     },
+     {
+      "p": "B",
+      "t": "That's right, it was reduced from eighty. I'm afraid we can't give you money back for sale items, but you can exchange it or take a voucher."
+     },
+     {
+      "p": "A",
+      "t": "Hmm. Do you have it in a larger size? I need a medium, not a small."
+     },
+     {
+      "p": "B",
+      "t": "Let me check... No, sorry, the medium is sold out. But we have a similar one in blue for sixty-five pounds."
+     },
+     {
+      "p": "A",
+      "t": "That's more expensive. I'd have to pay five pounds extra, then."
+     },
+     {
+      "p": "B",
+      "t": "Yes. Or you could choose something different. The shirts are cheaper, only twenty-five."
+     },
+     {
+      "p": "A",
+      "t": "Actually, I'd like to try the blue jacket. Is there a changing room?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, it's at the back, on your left."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why does the customer want to change the jacket?",
+     "op": [
+      "The colour is wrong.",
+      "It is too small.",
+      "It is too expensive.",
+      "It has a hole."
+     ],
+     "r": 1,
+     "exp": "Ela diz: I need a medium, not a small. A jaqueta pequena não serve."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Have you got the ___?",
+     "resp": [
+      "receipt"
+     ],
+     "exp": "Receipt = recibo, necessário para trocar produtos.",
+     "ouvir": "Have you got the receipt?"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I bought this jacket here last Thursday, but it doesn't fit.",
+     "ouvir": "I bought this jacket here last Thursday, but it doesn't fit.",
+     "exp": "Bought soa /bót/. Doesn't: /DÂ-zent/."
+    },
+    {
+     "t": "mc",
+     "q": "How much did she pay for the jacket?",
+     "op": [
+      "80 pounds",
+      "60 pounds",
+      "65 pounds",
+      "25 pounds"
+     ],
+     "r": 1,
+     "exp": "Ela pagou sixty pounds. Eighty era o preço antes da promoção; 65 é o da jaqueta azul; 25 é o da camisa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Do",
+      "you",
+      "have",
+      "it",
+      "in",
+      "a",
+      "larger",
+      "size"
+     ],
+     "resp": "Do you have it in a larger size",
+     "exp": "Pergunta com do: Do you have it in...? Larger é o comparativo de large."
+    },
+    {
+     "t": "gap",
+     "q": "The shop can't give her money back because the jacket was in the ___.",
+     "resp": [
+      "sale"
+     ],
+     "exp": "Itens em promoção (sale items) não têm reembolso, só troca ou vale."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Tell me about something you bought recently. What was it and how much was it?",
+     "modelo": "I bought a new bag last week. It was fifty reais.",
+     "min": 6,
+     "chave": [
+      "bought",
+      "was",
+      "cost",
+      "paid",
+      "reais",
+      "pounds",
+      "dollars"
+     ],
+     "exp": "Passado: I bought... It was/It cost... Se não lembrar o preço, invente."
+    },
+    {
+     "t": "mc",
+     "q": "What must she do to get the blue jacket?",
+     "op": [
+      "Pay five pounds more",
+      "Wait for a delivery",
+      "Take a voucher",
+      "Pay twenty-five pounds"
+     ],
+     "r": 0,
+     "exp": "A azul custa 65 e ela pagou 60: I'd have to pay five pounds extra."
+    },
+    {
+     "t": "gap",
+     "q": "The assistant says the shirts are cheaper, only ___ pounds.",
+     "resp": [
+      "twenty-five",
+      "twenty five",
+      "25"
+     ],
+     "exp": "Twenty-five = 25. Cuidado para não confundir com sixty-five."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Hobbies and free time",
+   "objetivo": "Entender o que as pessoas gostam de fazer e por quê.",
+   "foco": "Verb + -ing (enjoy, give up, start, be into); likes and dislikes",
+   "explicacao": [
+    "Depois de enjoy, like, love, hate, give up e start usamos o verbo com -ing: I enjoy climbing.",
+    "Gostos: I'm into climbing = eu curto escalada. I can't stand = eu não suporto.",
+    "Fique atento a quem fala: duas pessoas podem ter hobbies diferentes e o áudio os mistura.",
+    "Frequência: three times a week, every Sunday, once a month."
+   ],
+   "vocab": [
+    {
+     "en": "to give up",
+     "pt": "desistir de, largar"
+    },
+    {
+     "en": "climbing wall",
+     "pt": "parede de escalada"
+    },
+    {
+     "en": "to be into",
+     "pt": "curtir, gostar muito de"
+    },
+    {
+     "en": "quiet",
+     "pt": "calmo, silencioso"
+    },
+    {
+     "en": "to bake",
+     "pt": "assar"
+    },
+    {
+     "en": "to burn",
+     "pt": "queimar"
+    },
+    {
+     "en": "to come round",
+     "pt": "passar na casa de alguém"
+    },
+    {
+     "en": "to look forward to",
+     "pt": "esperar com ansiedade"
+    }
+   ],
+   "material": {
+    "titulo": "Two friends, two hobbies",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Nina, you look tired. Did you play tennis again last night?"
+     },
+     {
+      "p": "B",
+      "t": "No, I gave up tennis in May. I'm into climbing now. I go to the climbing wall three times a week."
+     },
+     {
+      "p": "A",
+      "t": "Really? I thought you hated sport at school."
+     },
+     {
+      "p": "B",
+      "t": "I did! But I enjoy climbing because it's not like football. You don't need a team, and it's good for your brain."
+     },
+     {
+      "p": "A",
+      "t": "I prefer something quieter. I've started baking. I make bread every Sunday."
+     },
+     {
+      "p": "B",
+      "t": "That sounds nice. I'm not very good at cooking. I always burn everything."
+     },
+     {
+      "p": "A",
+      "t": "You should come round and try. My brother likes cooking too, so he usually helps me."
+     },
+     {
+      "p": "B",
+      "t": "Maybe. I'd love to, but on Sundays I'm usually too tired after climbing on Saturday."
+     },
+     {
+      "p": "A",
+      "t": "What about Monday evening, then? I'm free after six."
+     },
+     {
+      "p": "B",
+      "t": "Monday's good. I'm looking forward to it."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does Nina do three times a week?",
+     "op": [
+      "play tennis",
+      "go climbing",
+      "bake bread",
+      "play football"
+     ],
+     "r": 1,
+     "exp": "Nina diz: I go to the climbing wall three times a week. Tênis ela largou; pão é o hobby do amigo."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I gave ___ tennis in May.",
+     "resp": [
+      "up"
+     ],
+     "exp": "Give up = desistir, largar. Depois dele vem o substantivo ou verbo com -ing.",
+     "ouvir": "I gave up tennis in May."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I enjoy climbing because it's not like football.",
+     "ouvir": "I enjoy climbing because it's not like football.",
+     "exp": "Enjoy: /en-DJÓI/. Climbing: o b é mudo, /KLÁI-ming/."
+    },
+    {
+     "t": "mc",
+     "q": "Why does Nina like climbing?",
+     "op": [
+      "She can do it with friends.",
+      "She doesn't need a team.",
+      "It is quiet.",
+      "It is cheap."
+     ],
+     "r": 1,
+     "exp": "Ela diz: You don't need a team. Quiet (calmo) é o motivo do amigo para gostar de baking."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "make",
+      "bread",
+      "every",
+      "Sunday"
+     ],
+     "resp": "I make bread every Sunday",
+     "exp": "Frequência no fim da frase: every Sunday."
+    },
+    {
+     "t": "gap",
+     "q": "Nina isn't good at cooking. She always ___ everything.",
+     "resp": [
+      "burns"
+     ],
+     "exp": "Burn = queimar. Com she, o verbo leva -s: burns."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "What do you like doing in your free time? Why?",
+     "modelo": "I like playing the guitar because it helps me relax.",
+     "min": 6,
+     "chave": [
+      "like",
+      "love",
+      "enjoy",
+      "play",
+      "watch",
+      "read",
+      "because",
+      "music"
+     ],
+     "exp": "Use like/enjoy + verbo com -ing, e because para o motivo."
+    },
+    {
+     "t": "mc",
+     "q": "When will Nina visit Ben?",
+     "op": [
+      "on Saturday",
+      "on Sunday",
+      "on Monday evening",
+      "on Sunday evening"
+     ],
+     "r": 2,
+     "exp": "Aos domingos ela está cansada. Ele sugere Monday evening, depois das seis, e ela aceita."
+    },
+    {
+     "t": "gap",
+     "q": "Ben's ___ usually helps him with the cooking.",
+     "resp": [
+      "brother"
+     ],
+     "exp": "My brother likes cooking too, so he usually helps me."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "A job at the café",
+   "objetivo": "Entender informações de uma entrevista de emprego de meio período.",
+   "foco": "Work and study vocabulary; numbers, dates and times; used to / be used to",
+   "explicacao": [
+    "Em entrevistas, ouça horário de início, pagamento, uniforme e data. São muitos números, então anote.",
+    "Be used to + -ing = estar acostumado: I'm used to getting up early.",
+    "Part-time job = emprego de meio período. Tips = gorjetas.",
+    "Datas: the fourteenth (14th). O áudio diz 'the fourteenth', não 'fourteen'."
+   ],
+   "vocab": [
+    {
+     "en": "part-time job",
+     "pt": "emprego de meio período"
+    },
+    {
+     "en": "trial day",
+     "pt": "dia de teste"
+    },
+    {
+     "en": "tips",
+     "pt": "gorjetas"
+    },
+    {
+     "en": "apron",
+     "pt": "avental"
+    },
+    {
+     "en": "break",
+     "pt": "intervalo"
+    },
+    {
+     "en": "to earn",
+     "pt": "ganhar (dinheiro)"
+    },
+    {
+     "en": "uniform",
+     "pt": "uniforme"
+    },
+    {
+     "en": "exams",
+     "pt": "provas"
+    }
+   ],
+   "material": {
+    "titulo": "A job interview",
+    "falas": [
+     {
+      "p": "A",
+      "t": "So, Lucy, you want to work at the café on Saturdays?"
+     },
+     {
+      "p": "B",
+      "t": "Yes. I'm studying for my exams during the week, but I'm free at weekends."
+     },
+     {
+      "p": "A",
+      "t": "Have you worked in a café before?"
+     },
+     {
+      "p": "B",
+      "t": "Only in my uncle's bakery, for two weeks last summer. So I'm used to getting up early."
+     },
+     {
+      "p": "A",
+      "t": "Good. We open at eight, but I'd need you here by half past seven. Is that a problem?"
+     },
+     {
+      "p": "B",
+      "t": "Not at all. How many hours would I work?"
+     },
+     {
+      "p": "A",
+      "t": "Eight hours, with a one-hour lunch break. You'd earn seven pounds an hour, plus tips."
+     },
+     {
+      "p": "B",
+      "t": "That's fine. Would I have to wear a uniform?"
+     },
+     {
+      "p": "A",
+      "t": "Yes, we give you an apron and a T-shirt. Please bring black trousers yourself."
+     },
+     {
+      "p": "B",
+      "t": "OK. When can I start?"
+     },
+     {
+      "p": "A",
+      "t": "Come in on the fourteenth for a trial day, and if it goes well, you start the week after."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "When can Lucy work at the café?",
+     "op": [
+      "every evening",
+      "on Saturdays",
+      "during the week",
+      "in the holidays"
+     ],
+     "r": 1,
+     "exp": "Durante a semana ela estuda para as provas; está livre nos fins de semana."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I'd need you here ___ half past seven.",
+     "resp": [
+      "by"
+     ],
+     "exp": "By = até, o mais tardar. O café abre às oito, mas ela deve chegar às 7h30.",
+     "ouvir": "I'd need you here by half past seven."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "So I'm used to getting up early.",
+     "ouvir": "So I'm used to getting up early.",
+     "exp": "I'm used to soa /aim iúst tu/. Early: /ÉR-li/."
+    },
+    {
+     "t": "mc",
+     "q": "Where did Lucy work before?",
+     "op": [
+      "in a café for a year",
+      "in her uncle's bakery",
+      "in a supermarket",
+      "in a hotel"
+     ],
+     "r": 1,
+     "exp": "Ela trabalhou only in my uncle's bakery, por duas semanas no verão passado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "How",
+      "many",
+      "hours",
+      "would",
+      "I",
+      "work"
+     ],
+     "resp": "How many hours would I work",
+     "exp": "How many + plural + would + sujeito + verbo."
+    },
+    {
+     "t": "gap",
+     "q": "She would earn seven pounds an hour, plus ___.",
+     "resp": [
+      "tips"
+     ],
+     "exp": "Plus tips = mais gorjetas."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Would you like a part-time job? What kind of job would you like?",
+     "modelo": "Yes, I would. I'd like to work in a bookshop on Saturdays.",
+     "min": 6,
+     "chave": [
+      "job",
+      "work",
+      "would",
+      "like",
+      "shop",
+      "café",
+      "teach",
+      "bookshop"
+     ],
+     "exp": "Use I'd like to work in/as... para dizer o que você gostaria."
+    },
+    {
+     "t": "mc",
+     "q": "What must Lucy bring herself?",
+     "op": [
+      "black trousers",
+      "an apron",
+      "a T-shirt",
+      "her lunch"
+     ],
+     "r": 0,
+     "exp": "O café dá avental e camiseta, mas ela deve levar a calça preta."
+    },
+    {
+     "t": "gap",
+     "q": "Lucy will go to the café for a trial day on the ___ of the month.",
+     "resp": [
+      "fourteenth",
+      "14th",
+      "14"
+     ],
+     "exp": "On the fourteenth = dia 14. Se o teste for bom, ela começa na semana seguinte."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "At the doctor's",
+   "objetivo": "Entender sintomas e conselhos de saúde dados por um médico.",
+   "foco": "should / shouldn't; health vocabulary; advice",
+   "explicacao": [
+    "Para dar conselho usamos should (deveria) e shouldn't (não deveria): You should drink more water.",
+    "Have to e must indicam obrigação mais forte: You must rest.",
+    "Sintomas: I have a headache / a sore throat / a bad back. My back hurts.",
+    "Em consultas, o médico diz o que NÃO é necessário também: I don't think you need medicine."
+   ],
+   "vocab": [
+    {
+     "en": "headache",
+     "pt": "dor de cabeça"
+    },
+    {
+     "en": "back",
+     "pt": "costas"
+    },
+    {
+     "en": "to hurt",
+     "pt": "doer"
+    },
+    {
+     "en": "breaks",
+     "pt": "pausas"
+    },
+    {
+     "en": "medicine",
+     "pt": "remédio"
+    },
+    {
+     "en": "X-ray",
+     "pt": "radiografia"
+    },
+    {
+     "en": "painful",
+     "pt": "doloroso"
+    },
+    {
+     "en": "to get worse",
+     "pt": "piorar"
+    }
+   ],
+   "material": {
+    "titulo": "A visit to the doctor",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Come in, Mr Davies. What seems to be the problem?"
+     },
+     {
+      "p": "B",
+      "t": "I've had a terrible headache for three days, and my back hurts too."
+     },
+     {
+      "p": "A",
+      "t": "Do you spend a lot of time at a computer?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, about nine hours a day. I work from home."
+     },
+     {
+      "p": "A",
+      "t": "That probably explains the back. Do you take breaks?"
+     },
+     {
+      "p": "B",
+      "t": "Not really. I usually eat lunch at my desk."
+     },
+     {
+      "p": "A",
+      "t": "You should get up every hour and walk around. And you shouldn't sit in the same position all day. Are you drinking enough water?"
+     },
+     {
+      "p": "B",
+      "t": "Probably not. Only a coffee in the morning and one in the afternoon."
+     },
+     {
+      "p": "A",
+      "t": "Well, try to drink two litres of water a day. I don't think you need medicine. Take two paracetamol if the headache gets worse, but no more than that."
+     },
+     {
+      "p": "B",
+      "t": "Should I come back?"
+     },
+     {
+      "p": "A",
+      "t": "Only if it isn't better in a week. And if it's still painful, I'll send you for an X-ray."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is Mr Davies's problem?",
+     "op": [
+      "a headache and a bad back",
+      "a cough and a cold",
+      "a sore throat",
+      "a stomach ache"
+     ],
+     "r": 0,
+     "exp": "Ele diz: a terrible headache... and my back hurts too."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: You ___ get up every hour and walk around.",
+     "resp": [
+      "should"
+     ],
+     "exp": "Should + verbo base dá um conselho.",
+     "ouvir": "You should get up every hour and walk around."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "You shouldn't sit in the same position all day.",
+     "ouvir": "You shouldn't sit in the same position all day.",
+     "exp": "Shouldn't: /CHÚD-nt/, o l de should é mudo."
+    },
+    {
+     "t": "mc",
+     "q": "How much time does he spend at a computer each day?",
+     "op": [
+      "about three hours",
+      "about six hours",
+      "about nine hours",
+      "about twelve hours"
+     ],
+     "r": 2,
+     "exp": "Ele responde: about nine hours a day. Ele trabalha em casa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Should",
+      "I",
+      "come",
+      "back"
+     ],
+     "resp": "Should I come back",
+     "exp": "Pergunta com should: Should + sujeito + verbo base."
+    },
+    {
+     "t": "gap",
+     "q": "Mr Davies usually eats lunch at his ___.",
+     "resp": [
+      "desk"
+     ],
+     "exp": "Ele diz: I usually eat lunch at my desk, por isso quase não faz pausas."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "What do you do to stay healthy?",
+     "modelo": "I try to eat fruit every day and I walk to school.",
+     "min": 6,
+     "chave": [
+      "eat",
+      "drink",
+      "sleep",
+      "walk",
+      "exercise",
+      "sport",
+      "fruit",
+      "water",
+      "run"
+     ],
+     "exp": "Fale de comida, sono ou exercício: I try to... / I always..."
+    },
+    {
+     "t": "mc",
+     "q": "What does the doctor say about medicine?",
+     "op": [
+      "Take paracetamol every day.",
+      "Take two tablets only if it gets worse.",
+      "Take no medicine at all.",
+      "Take medicine after an X-ray."
+     ],
+     "r": 1,
+     "exp": "O médico diz que ele não precisa de remédio agora, mas pode tomar dois paracetamol se a dor de cabeça piorar."
+    },
+    {
+     "t": "gap",
+     "q": "The doctor says he must drink two ___ of water a day.",
+     "resp": [
+      "litres",
+      "liters"
+     ],
+     "exp": "Litres é a grafia britânica de litros."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "What were you doing?",
+   "objetivo": "Entender relatos sobre o que alguém estava fazendo quando algo aconteceu.",
+   "foco": "Past continuous vs past simple; when / while",
+   "explicacao": [
+    "Past continuous (was/were + -ing) mostra uma ação em andamento: I was walking home.",
+    "Past simple mostra o fato que interrompeu: ... when it started to rain.",
+    "While liga duas ações longas: While I was looking at magazines, a boy was standing next to me.",
+    "Em histórias, a ordem do áudio pode confundir: pergunte-se o que estava acontecendo e o que aconteceu."
+   ],
+   "vocab": [
+    {
+     "en": "to lose",
+     "pt": "perder"
+    },
+    {
+     "en": "to notice",
+     "pt": "perceber"
+    },
+    {
+     "en": "bookshop",
+     "pt": "livraria"
+    },
+    {
+     "en": "shop assistant",
+     "pt": "atendente"
+    },
+    {
+     "en": "customer",
+     "pt": "cliente"
+    },
+    {
+     "en": "to search",
+     "pt": "procurar"
+    },
+    {
+     "en": "lucky",
+     "pt": "sortudo"
+    },
+    {
+     "en": "to fall",
+     "pt": "cair"
+    }
+   ],
+   "material": {
+    "titulo": "Where is my phone?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Kate, you look upset. What happened?"
+     },
+     {
+      "p": "B",
+      "t": "I lost my phone yesterday. I was walking home from school when it started to rain, so I went into the bookshop."
+     },
+     {
+      "p": "A",
+      "t": "Were you carrying it in your hand?"
+     },
+     {
+      "p": "B",
+      "t": "No, it was in my bag. While I was looking at some magazines, a boy was standing next to me. I didn't notice anything strange."
+     },
+     {
+      "p": "A",
+      "t": "When did you notice it was missing?"
+     },
+     {
+      "p": "B",
+      "t": "When I was paying for a book. I put my hand in the bag, and there was no phone."
+     },
+     {
+      "p": "A",
+      "t": "Did you ask the shop assistant?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, she was talking to a customer, but she called the manager. They looked everywhere. Then, while we were searching, a woman came in with my phone. She found it in the street outside!"
+     },
+     {
+      "p": "A",
+      "t": "Lucky you! It must have fallen when you were opening your umbrella."
+     },
+     {
+      "p": "B",
+      "t": "Exactly."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What was Kate doing when it started to rain?",
+     "op": [
+      "shopping in the bookshop",
+      "walking home from school",
+      "waiting for a bus",
+      "opening her umbrella"
+     ],
+     "r": 1,
+     "exp": "Ela diz: I was walking home from school when it started to rain. Só depois entrou na livraria."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I ___ walking home from school when it started to rain.",
+     "resp": [
+      "was"
+     ],
+     "exp": "Com I usamos was no past continuous.",
+     "ouvir": "I was walking home from school when it started to rain."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "While I was looking at some magazines, a boy was standing next to me.",
+     "ouvir": "While I was looking at some magazines, a boy was standing next to me.",
+     "exp": "While: /uáil/. Magazines: /mé-gue-ZÍNZ/."
+    },
+    {
+     "t": "mc",
+     "q": "Where was her phone before it disappeared?",
+     "op": [
+      "in her hand",
+      "in her bag",
+      "in her pocket",
+      "on the counter"
+     ],
+     "r": 1,
+     "exp": "Kate diz: No, it was in my bag. A amiga perguntou se estava na mão."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "was",
+      "talking",
+      "to",
+      "a",
+      "customer"
+     ],
+     "resp": "She was talking to a customer",
+     "exp": "Past continuous: was + talking."
+    },
+    {
+     "t": "gap",
+     "q": "Kate noticed the phone was missing while she was ___ for a book.",
+     "resp": [
+      "paying"
+     ],
+     "exp": "When I was paying for a book: foi nesse momento que ela percebeu."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "What were you doing at eight o'clock last night?",
+     "modelo": "I was having dinner with my family and watching TV.",
+     "min": 5,
+     "chave": [
+      "was",
+      "were",
+      "watching",
+      "eating",
+      "studying",
+      "doing",
+      "having",
+      "playing",
+      "sleeping"
+     ],
+     "exp": "Use I was + verbo com -ing: I was watching TV."
+    },
+    {
+     "t": "mc",
+     "q": "Where was the phone found?",
+     "op": [
+      "in the bookshop",
+      "in the street outside",
+      "in Kate's bag",
+      "at school"
+     ],
+     "r": 1,
+     "exp": "Uma mulher entrou com o telefone: She found it in the street outside."
+    },
+    {
+     "t": "gap",
+     "q": "The phone probably fell out of her bag while she was ___ her umbrella.",
+     "resp": [
+      "opening"
+     ],
+     "exp": "A amiga supõe: It must have fallen when you were opening your umbrella."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Have you ever...?",
+   "objetivo": "Entender experiências e planos usando o present perfect.",
+   "foco": "Present perfect: ever, never, just, already, yet",
+   "explicacao": [
+    "Present perfect = have/has + particípio: I've been to Wales. É usado para experiências sem dizer quando.",
+    "Ever (alguma vez) em perguntas: Have you ever been to Scotland? Never = nunca.",
+    "Just = acabou de; already = já; yet = ainda (em negativas e perguntas): I haven't decided yet.",
+    "I've = I have. Ouça bem: I've / I haven't mudam o sentido."
+   ],
+   "vocab": [
+    {
+     "en": "to book",
+     "pt": "reservar"
+    },
+    {
+     "en": "hostel",
+     "pt": "albergue"
+    },
+    {
+     "en": "sleeping bag",
+     "pt": "saco de dormir"
+    },
+    {
+     "en": "spare",
+     "pt": "reserva, extra"
+    },
+    {
+     "en": "hiking",
+     "pt": "caminhada em trilhas"
+    },
+    {
+     "en": "far from",
+     "pt": "longe de"
+    },
+    {
+     "en": "to decide",
+     "pt": "decidir"
+    },
+    {
+     "en": "camp",
+     "pt": "acampamento"
+    }
+   ],
+   "material": {
+    "titulo": "Planning a trip",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Have you ever been to Scotland, Ella?"
+     },
+     {
+      "p": "B",
+      "t": "No, never. I've been to Wales twice, but never further north. Have you?"
+     },
+     {
+      "p": "A",
+      "t": "Yes, I went last year. I've just booked a trip for August, actually, to the Isle of Skye. Do you want to come?"
+     },
+     {
+      "p": "B",
+      "t": "I'd love to. Have you already found somewhere to stay?"
+     },
+     {
+      "p": "A",
+      "t": "Not yet. I've looked at some hostels online, but I haven't decided. One's cheap but far from the sea."
+     },
+     {
+      "p": "B",
+      "t": "I've never stayed in a hostel! Is it OK?"
+     },
+     {
+      "p": "A",
+      "t": "It's fine. I've stayed in lots. You meet interesting people. The only problem is that I've lost my sleeping bag."
+     },
+     {
+      "p": "B",
+      "t": "I've got a spare one. I haven't used it since camp two years ago."
+     },
+     {
+      "p": "A",
+      "t": "Perfect! I've also never tried hiking in the rain, so bring a good coat."
+     },
+     {
+      "p": "B",
+      "t": "Ha! I've just bought one."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Where has Ella never been?",
+     "op": [
+      "Wales",
+      "Scotland",
+      "Ireland",
+      "England"
+     ],
+     "r": 1,
+     "exp": "Ela diz: No, never. I've been to Wales twice, mas nunca esteve mais ao norte."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I've just ___ a trip for August.",
+     "resp": [
+      "booked"
+     ],
+     "exp": "Just + particípio: acabou de reservar. Book → booked.",
+     "ouvir": "I've just booked a trip for August."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I've never stayed in a hostel.",
+     "ouvir": "I've never stayed in a hostel.",
+     "exp": "Never: /NÉ-ver/. Stayed: /stêid/."
+    },
+    {
+     "t": "mc",
+     "q": "Which is true about the accommodation?",
+     "op": [
+      "It is not decided yet.",
+      "A hostel is already booked.",
+      "Ella has booked it.",
+      "They will sleep in a tent."
+     ],
+     "r": 0,
+     "exp": "O amigo viu albergues online mas diz: I haven't decided. E a pergunta de Ella: Not yet."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Have",
+      "you",
+      "ever",
+      "been",
+      "to",
+      "Scotland"
+     ],
+     "resp": "Have you ever been to Scotland",
+     "exp": "Have you ever been to...? Pergunta de experiência."
+    },
+    {
+     "t": "gap",
+     "q": "The hostel the speaker likes is cheap but ___ from the sea.",
+     "resp": [
+      "far"
+     ],
+     "exp": "One's cheap but far from the sea: barato, mas longe do mar."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Have you ever been to another country? Where?",
+     "modelo": "Yes, I have. I've been to Argentina. No, I've never been abroad.",
+     "min": 5,
+     "chave": [
+      "been",
+      "never",
+      "yes",
+      "no",
+      "ever",
+      "visited",
+      "went",
+      "country"
+     ],
+     "exp": "Responda com Yes, I have. I've been to... ou No, I haven't. I've never been abroad."
+    },
+    {
+     "t": "mc",
+     "q": "What problem does the speaker have?",
+     "op": [
+      "has lost a sleeping bag",
+      "hasn't got a coat",
+      "has never camped",
+      "can't afford a hostel"
+     ],
+     "r": 0,
+     "exp": "O amigo diz: I've lost my sleeping bag. Ella tem um saco reserva."
+    },
+    {
+     "t": "gap",
+     "q": "Ella has ___ bought a new coat.",
+     "resp": [
+      "just"
+     ],
+     "exp": "I've just bought one: acabou de comprar."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "A trip tomorrow",
+   "objetivo": "Entender planos e previsões sobre o futuro em um aviso escolar.",
+   "foco": "will vs going to; future arrangements; weather",
+   "explicacao": [
+    "Will é usado para previsões e decisões na hora: It'll rain in the afternoon.",
+    "Going to é usado para planos e intenções: We're going to visit the planetarium.",
+    "O present continuous também aparece: We're meeting at eight. Contrações: it'll, we'll, you'll.",
+    "Cuidado com correções: 'at 8.15, not 8'. Vale o horário corrigido."
+   ],
+   "vocab": [
+    {
+     "en": "forecast",
+     "pt": "previsão do tempo"
+    },
+    {
+     "en": "waterproof",
+     "pt": "impermeável"
+    },
+    {
+     "en": "coach",
+     "pt": "ônibus de viagem"
+    },
+    {
+     "en": "packed lunch",
+     "pt": "lanche levado de casa"
+    },
+    {
+     "en": "crowded",
+     "pt": "lotado"
+    },
+    {
+     "en": "museum",
+     "pt": "museu"
+    },
+    {
+     "en": "to recommend",
+     "pt": "recomendar"
+    },
+    {
+     "en": "planetarium",
+     "pt": "planetário"
+    }
+   ],
+   "material": {
+    "titulo": "School trip announcement",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Listen, everybody. Tomorrow's trip to the science museum is going ahead, but the forecast says it'll rain in the afternoon, so bring a waterproof jacket."
+     },
+     {
+      "p": "B",
+      "t": "Are we going by coach, Mr Hill?"
+     },
+     {
+      "p": "A",
+      "t": "Yes, the coach will leave at eight fifteen, not eight. Please don't be late. We'll arrive at about ten and have a talk about robots."
+     },
+     {
+      "p": "C",
+      "t": "Will we have lunch there?"
+     },
+     {
+      "p": "A",
+      "t": "You'll eat in the museum café at twelve thirty, but I think it'll be quite expensive, so I recommend a packed lunch."
+     },
+     {
+      "p": "B",
+      "t": "What are we going to do after lunch?"
+     },
+     {
+      "p": "A",
+      "t": "We're going to visit the planetarium. I expect it will be crowded. Then we'll come back and be at school by five."
+     },
+     {
+      "p": "C",
+      "t": "Can we take photos?"
+     },
+     {
+      "p": "A",
+      "t": "In most rooms, yes. But not in the planetarium."
+     },
+     {
+      "p": "B",
+      "t": "And can we buy souvenirs?"
+     },
+     {
+      "p": "A",
+      "t": "Yes, there is a shop by the exit. You can go there just before we get back on the coach."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What time will the coach leave?",
+     "op": [
+      "8.00",
+      "8.15",
+      "8.30",
+      "10.00"
+     ],
+     "r": 1,
+     "exp": "Mr Hill corrige: at eight fifteen, not eight. Dez horas é a chegada ao museu."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The forecast says it ___ rain in the afternoon.",
+     "resp": [
+      "will",
+      "'ll"
+     ],
+     "exp": "Will para previsão do tempo.",
+     "ouvir": "The forecast says it will rain in the afternoon."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "We're going to visit the planetarium after lunch.",
+     "ouvir": "We're going to visit the planetarium after lunch.",
+     "exp": "Going to na fala rápida soa /gónã/. Planetarium: /pla-ni-TÉ-ri-um/."
+    },
+    {
+     "t": "mc",
+     "q": "What does Mr Hill recommend for lunch?",
+     "op": [
+      "eating in the café",
+      "bringing a packed lunch",
+      "buying sandwiches on the coach",
+      "skipping lunch"
+     ],
+     "r": 1,
+     "exp": "O café será caro (quite expensive), então ele recomenda a packed lunch."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Please",
+      "don't",
+      "be",
+      "late"
+     ],
+     "resp": "Please don't be late",
+     "exp": "Imperativo negativo: Don't + be + late."
+    },
+    {
+     "t": "gap",
+     "q": "Photos are allowed in most rooms, but not in the ___.",
+     "resp": [
+      "planetarium"
+     ],
+     "exp": "In most rooms, yes. But not in the planetarium."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "What are you going to do next weekend?",
+     "modelo": "I'm going to visit my grandparents and I'll watch a film.",
+     "min": 5,
+     "chave": [
+      "going",
+      "will",
+      "I'm",
+      "visit",
+      "play",
+      "meet",
+      "watch",
+      "stay"
+     ],
+     "exp": "Use I'm going to + verbo para planos."
+    },
+    {
+     "t": "mc",
+     "q": "What will happen at about ten o'clock?",
+     "op": [
+      "They will have lunch.",
+      "They will visit the planetarium.",
+      "They will arrive and listen to a talk.",
+      "They will return to school."
+     ],
+     "r": 2,
+     "exp": "We'll arrive at about ten and have a talk about robots. O almoço é às 12h30 e a volta é às cinco."
+    },
+    {
+     "t": "gap",
+     "q": "The students will be back at school by ___.",
+     "resp": [
+      "five",
+      "5",
+      "five o'clock",
+      "5 o'clock"
+     ],
+     "exp": "Then we'll come back and be at school by five."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Clean-up day",
+   "objetivo": "Completar anotações com informações de um anúncio sobre meio ambiente.",
+   "foco": "Environment vocabulary; listening for numbers, dates and places; notes",
+   "explicacao": [
+    "No Part 3 da prova você completa notas com UMA palavra ou número. Leia as notas antes do áudio.",
+    "A palavra que falta é ouvida no áudio, sem mudar. Escreva exatamente como ouviu.",
+    "Números: nearly four hundred = 400. Datas: the twelfth of May.",
+    "Vocabulário do tema: plastic, rubbish, recycle, charity, clean-up."
+   ],
+   "vocab": [
+    {
+     "en": "charity",
+     "pt": "instituição de caridade"
+    },
+    {
+     "en": "beach clean-up",
+     "pt": "limpeza da praia"
+    },
+    {
+     "en": "rubbish",
+     "pt": "lixo"
+    },
+    {
+     "en": "gloves",
+     "pt": "luvas"
+    },
+    {
+     "en": "fishing nets",
+     "pt": "redes de pesca"
+    },
+    {
+     "en": "to collect",
+     "pt": "coletar"
+    },
+    {
+     "en": "to provide",
+     "pt": "fornecer"
+    },
+    {
+     "en": "to beat",
+     "pt": "superar"
+    }
+   ],
+   "material": {
+    "titulo": "Green Week announcement",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good morning, everyone, and welcome to Green Week at Mapleton School. My name is Helen Carter and I work for a charity called Clean Rivers. Today I'm going to tell you about our beach clean-up on Saturday the twelfth of May. We meet at nine o'clock outside the sports centre, and a bus will take us to Pebble Bay. Please wear old clothes and strong shoes, and bring gloves. We'll provide the rubbish bags."
+     },
+     {
+      "p": "A",
+      "t": "Last year we collected nearly four hundred kilos of plastic, mostly bottles and fishing nets. This year we hope to beat that. After the clean-up, there'll be a picnic lunch, which costs three pounds, and a short talk about sea birds by a local scientist, Dr Patel. We'll be back at school by four. Children under twelve must come with an adult. Thank you."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is Helen Carter's job?",
+     "op": [
+      "She is a scientist at Pebble Bay.",
+      "She works for a charity.",
+      "She is a teacher at Mapleton.",
+      "She manages the sports centre."
+     ],
+     "r": 1,
+     "exp": "Ela diz: I work for a charity called Clean Rivers. Mapleton é a escola e Dr Patel é o cientista."
+    },
+    {
+     "t": "gap",
+     "q": "Notas: Meet outside the ___ at nine o'clock.",
+     "resp": [
+      "sports centre",
+      "sports center"
+     ],
+     "exp": "We meet at nine o'clock outside the sports centre."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Please wear old clothes and strong shoes, and bring gloves.",
+     "ouvir": "Please wear old clothes and strong shoes, and bring gloves.",
+     "exp": "Clothes: /klôuz/ (o th é quase mudo). Gloves: /glávz/."
+    },
+    {
+     "t": "mc",
+     "q": "What did they mostly collect last year?",
+     "op": [
+      "paper and glass",
+      "bottles and fishing nets",
+      "bags and gloves",
+      "shoes and clothes"
+     ],
+     "r": 1,
+     "exp": "Last year we collected nearly four hundred kilos of plastic, mostly bottles and fishing nets."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We'll",
+      "be",
+      "back",
+      "at",
+      "school",
+      "by",
+      "four"
+     ],
+     "resp": "We'll be back at school by four",
+     "exp": "We'll = we will. By four = até as quatro."
+    },
+    {
+     "t": "gap",
+     "q": "Notas: Last year they collected nearly ___ kilos of plastic.",
+     "resp": [
+      "400",
+      "four hundred",
+      "400 kilos",
+      "four hundred kilos"
+     ],
+     "exp": "Nearly four hundred = quase 400. Cuidado: four e fourteen são diferentes."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Do you do anything to protect the environment? What?",
+     "modelo": "Yes, I recycle plastic and paper, and I take short showers.",
+     "min": 6,
+     "chave": [
+      "recycle",
+      "plastic",
+      "bag",
+      "water",
+      "energy",
+      "bike",
+      "save",
+      "rubbish",
+      "paper"
+     ],
+     "exp": "Use I recycle... / I try to save... / I don't use plastic bags."
+    },
+    {
+     "t": "mc",
+     "q": "Who must come with an adult?",
+     "op": [
+      "everyone",
+      "children under twelve",
+      "students under sixteen",
+      "Dr Patel's group"
+     ],
+     "r": 1,
+     "exp": "Children under twelve must come with an adult."
+    },
+    {
+     "t": "gap",
+     "q": "After lunch, Dr Patel will talk about sea ___.",
+     "resp": [
+      "birds"
+     ],
+     "exp": "A short talk about sea birds by a local scientist, Dr Patel."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "If I won the prize",
+   "objetivo": "Entender situações possíveis e imaginárias com condicionais.",
+   "foco": "First and second conditional; unless; might",
+   "explicacao": [
+    "Primeira condicional (possível): If it rains, I'll photograph the bridge. If + presente, will + verbo.",
+    "Segunda condicional (imaginária): If I had a good camera, I'd start a blog. If + passado, would + verbo.",
+    "Unless = a menos que (if not): I might use the park, unless it's too crowded.",
+    "I'd = I would. No áudio, 'I'll' (vou) e 'I'd' (eu faria) soam parecidos: ouça o verbo antes."
+   ],
+   "vocab": [
+    {
+     "en": "competition",
+     "pt": "concurso"
+    },
+    {
+     "en": "prize",
+     "pt": "prêmio"
+    },
+    {
+     "en": "to win",
+     "pt": "ganhar"
+    },
+    {
+     "en": "blog",
+     "pt": "blog"
+    },
+    {
+     "en": "deadline",
+     "pt": "prazo"
+    },
+    {
+     "en": "to accept",
+     "pt": "aceitar"
+    },
+    {
+     "en": "bridge",
+     "pt": "ponte"
+    },
+    {
+     "en": "unless",
+     "pt": "a menos que"
+    }
+   ],
+   "material": {
+    "titulo": "The photo competition",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Did you see the competition at the school? The first prize is a trip to Rome."
+     },
+     {
+      "p": "B",
+      "t": "Yes! If I win, I'll take my sister with me. What would you do if you won?"
+     },
+     {
+      "p": "A",
+      "t": "I'd go with my parents, I think. Though I'd rather get the second prize."
+     },
+     {
+      "p": "B",
+      "t": "Why? It's only a camera."
+     },
+     {
+      "p": "A",
+      "t": "A camera would be more useful. If I had a good camera, I'd start a photography blog. If we go to Rome, we'll just visit museums."
+     },
+     {
+      "p": "B",
+      "t": "But you wouldn't have to pay for the hotel!"
+     },
+     {
+      "p": "A",
+      "t": "True. Anyway, you must send a photo by Friday. If you don't send it on time, they won't accept it."
+     },
+     {
+      "p": "B",
+      "t": "What kind of photo?"
+     },
+     {
+      "p": "A",
+      "t": "Something that shows your town. I'll take one of the market if the weather is nice tomorrow. If it rains, I'll photograph the old bridge instead."
+     },
+     {
+      "p": "B",
+      "t": "Good idea. I might use the park. Unless it's too crowded."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the first prize?",
+     "op": [
+      "a camera",
+      "a trip to Rome",
+      "a tablet",
+      "a photography course"
+     ],
+     "r": 1,
+     "exp": "Na primeira fala: The first prize is a trip to Rome. A câmera é o segundo prêmio."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: If I ___, I'll take my sister with me.",
+     "resp": [
+      "win"
+     ],
+     "exp": "Primeira condicional: If + presente (win), I'll + verbo.",
+     "ouvir": "If I win, I'll take my sister with me."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "If I had a good camera, I'd start a photography blog.",
+     "ouvir": "If I had a good camera, I'd start a photography blog.",
+     "exp": "I'd start soa /aid START/. Photography: /fo-TÓ-gra-fi/."
+    },
+    {
+     "t": "mc",
+     "q": "Who would the second speaker take to Rome?",
+     "op": [
+      "her sister",
+      "her parents",
+      "her brother",
+      "her friends"
+     ],
+     "r": 1,
+     "exp": "Ela diz: I'd go with my parents. A irmã é da primeira pessoa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "If",
+      "you",
+      "don't",
+      "send",
+      "it",
+      "on",
+      "time",
+      "they",
+      "won't",
+      "accept",
+      "it"
+     ],
+     "resp": "If you don't send it on time they won't accept it",
+     "exp": "If + presente negativo, won't + verbo. On time = no prazo."
+    },
+    {
+     "t": "gap",
+     "q": "If the weather is nice tomorrow, she will photograph the ___.",
+     "resp": [
+      "market"
+     ],
+     "exp": "I'll take one of the market if the weather is nice. Se chover, será a ponte."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "What would you do if you won a trip anywhere in the world?",
+     "modelo": "If I won a trip, I would go to Japan with my best friend.",
+     "min": 6,
+     "chave": [
+      "would",
+      "I'd",
+      "go",
+      "visit",
+      "if",
+      "take",
+      "travel"
+     ],
+     "exp": "Segunda condicional: If I won..., I'd go to..."
+    },
+    {
+     "t": "mc",
+     "q": "When is the deadline for the photos?",
+     "op": [
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "tomorrow"
+     ],
+     "r": 1,
+     "exp": "You must send a photo by Friday. Tomorrow é só o dia de tirar a foto do mercado."
+    },
+    {
+     "t": "gap",
+     "q": "The first speaker might use the park, unless it's too ___.",
+     "resp": [
+      "crowded"
+     ],
+     "exp": "Unless it's too crowded = a menos que esteja muito cheio."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "How do you feel about it?",
+   "objetivo": "Entender opiniões e sentimentos em pequenos diálogos.",
+   "foco": "Opinions and feelings; adjectives (disappointed, nervous, excited); would have",
+   "explicacao": [
+    "Adjetivos de sentimento: disappointed (desapontado), nervous, excited, worried, afraid, bored.",
+    "Opiniões: I think..., I can't stand..., I'm not keen on..., Honestly, ...",
+    "Na prova, a pessoa muitas vezes diz algo positivo e depois o sentimento real: The band was good, but I was disappointed.",
+    "I'd have enjoyed it = eu teria gostado (mas não gostei)."
+   ],
+   "vocab": [
+    {
+     "en": "disappointed",
+     "pt": "desapontado"
+    },
+    {
+     "en": "nervous",
+     "pt": "nervoso"
+    },
+    {
+     "en": "friendly",
+     "pt": "simpático"
+    },
+    {
+     "en": "I can't stand it",
+     "pt": "não suporto"
+    },
+    {
+     "en": "to disagree",
+     "pt": "discordar"
+    },
+    {
+     "en": "worried",
+     "pt": "preocupado"
+    },
+    {
+     "en": "excited",
+     "pt": "animado"
+    },
+    {
+     "en": "afraid of",
+     "pt": "com medo de"
+    }
+   ],
+   "material": {
+    "titulo": "Four short conversations",
+    "falas": [
+     {
+      "p": "A",
+      "t": "How was the concert on Saturday?"
+     },
+     {
+      "p": "B",
+      "t": "Honestly, I was a bit disappointed. The band was good, but the sound was terrible and we were standing right at the back."
+     },
+     {
+      "p": "A",
+      "t": "Oh dear."
+     },
+     {
+      "p": "B",
+      "t": "I'd have enjoyed it much more with a seat."
+     },
+     {
+      "p": "A",
+      "t": "Do you like your new school?"
+     },
+     {
+      "p": "B",
+      "t": "I thought I'd feel nervous, but everyone's so friendly that I felt at home on the first day. The only thing I don't like is the homework."
+     },
+     {
+      "p": "A",
+      "t": "What do you think of the new shopping centre?"
+     },
+     {
+      "p": "B",
+      "t": "I can't stand it. It's too noisy, and all the shops are the same."
+     },
+     {
+      "p": "A",
+      "t": "I disagree. I think it's great on rainy days."
+     },
+     {
+      "p": "B",
+      "t": "Well, I'd rather stay at home on rainy days."
+     },
+     {
+      "p": "A",
+      "t": "Are you worried about the exam?"
+     },
+     {
+      "p": "B",
+      "t": "Not really. I'm more excited than worried. It's the results I'm afraid of!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How did the speaker feel about the concert?",
+     "op": [
+      "excited",
+      "disappointed",
+      "bored",
+      "angry"
+     ],
+     "r": 1,
+     "exp": "Honestly, I was a bit disappointed. A banda era boa, mas o som era ruim e eles estavam no fundo."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: It's too ___, and all the shops are the same.",
+     "resp": [
+      "noisy"
+     ],
+     "exp": "Noisy = barulhento. É a crítica ao shopping.",
+     "ouvir": "It's too noisy, and all the shops are the same."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I thought I'd feel nervous, but everyone's so friendly.",
+     "ouvir": "I thought I'd feel nervous, but everyone's so friendly.",
+     "exp": "Nervous: /NÉR-ves/. Friendly: /FRÉND-li/."
+    },
+    {
+     "t": "mc",
+     "q": "What does the speaker dislike about the new school?",
+     "op": [
+      "the teachers",
+      "the homework",
+      "the other students",
+      "the journey"
+     ],
+     "r": 1,
+     "exp": "The only thing I don't like is the homework. Os colegas são simpáticos."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I'd",
+      "have",
+      "enjoyed",
+      "it",
+      "much",
+      "more",
+      "with",
+      "a",
+      "seat"
+     ],
+     "resp": "I'd have enjoyed it much more with a seat",
+     "exp": "I'd have enjoyed = eu teria gostado. Much more = muito mais."
+    },
+    {
+     "t": "gap",
+     "q": "The second speaker says the shopping centre is great on ___ days.",
+     "resp": [
+      "rainy"
+     ],
+     "exp": "A pessoa discorda: I think it's great on rainy days."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "How do you feel before an exam? Why?",
+     "modelo": "I feel a bit nervous because I want to get a good result.",
+     "min": 6,
+     "chave": [
+      "nervous",
+      "worried",
+      "calm",
+      "excited",
+      "afraid",
+      "feel",
+      "because"
+     ],
+     "exp": "Use I feel + adjetivo + because..."
+    },
+    {
+     "t": "mc",
+     "q": "What is the speaker afraid of before the exam?",
+     "op": [
+      "the questions",
+      "the results",
+      "being late",
+      "the teacher"
+     ],
+     "r": 1,
+     "exp": "Not really worried. It's the results I'm afraid of!"
+    },
+    {
+     "t": "gap",
+     "q": "At the concert, the speaker was standing at the ___ of the hall.",
+     "resp": [
+      "back"
+     ],
+     "exp": "We were standing right at the back: lá no fundo."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Shall we...?",
+   "objetivo": "Entender sugestões, concordâncias e discordâncias entre amigos.",
+   "foco": "Suggestions (shall we, why don't we, how about); agreeing and disagreeing; deciding",
+   "explicacao": [
+    "Sugestões: Shall we...? Why don't we...? How about + -ing / noun? What about...?",
+    "Concordar: Good idea. I agree. That's a good idea. OK, agreed.",
+    "Discordar: I'm not sure. I don't agree. I'd prefer...",
+    "Na prova, ouça a decisão final: muitas vezes a primeira ideia é recusada."
+   ],
+   "vocab": [
+    {
+     "en": "retirement",
+     "pt": "aposentadoria"
+    },
+    {
+     "en": "voucher",
+     "pt": "vale"
+    },
+    {
+     "en": "to suggest",
+     "pt": "sugerir"
+    },
+    {
+     "en": "to agree",
+     "pt": "concordar"
+    },
+    {
+     "en": "to spend",
+     "pt": "gastar"
+    },
+    {
+     "en": "tablet",
+     "pt": "tablet"
+    },
+    {
+     "en": "card",
+     "pt": "cartão"
+    },
+    {
+     "en": "I'd prefer",
+     "pt": "eu preferiria"
+    }
+   ],
+   "material": {
+    "titulo": "A present for Mrs Reed",
+    "falas": [
+     {
+      "p": "A",
+      "t": "What shall we get Mrs Reed for her retirement?"
+     },
+     {
+      "p": "B",
+      "t": "How about flowers?"
+     },
+     {
+      "p": "C",
+      "t": "I'm not sure. She has a garden full of them. Why don't we buy her a book?"
+     },
+     {
+      "p": "A",
+      "t": "I don't agree. She reads on her tablet. What about a voucher for a restaurant?"
+     },
+     {
+      "p": "B",
+      "t": "That's a good idea. But how much should we spend?"
+     },
+     {
+      "p": "C",
+      "t": "If each of us pays five pounds, we'll have sixty."
+     },
+     {
+      "p": "A",
+      "t": "Let's ask the other classes too."
+     },
+     {
+      "p": "B",
+      "t": "Yes, and we could also make a card. I'll ask Dan to draw something."
+     },
+     {
+      "p": "C",
+      "t": "Good thinking. Shall we give it to her on Friday after the last lesson?"
+     },
+     {
+      "p": "A",
+      "t": "Not Friday. She's visiting her daughter. Why don't we do it on Thursday morning?"
+     },
+     {
+      "p": "B",
+      "t": "I'd prefer Thursday afternoon, so everyone can come."
+     },
+     {
+      "p": "C",
+      "t": "OK, agreed. Thursday at three o'clock."
+     },
+     {
+      "p": "A",
+      "t": "Great. I'll write a message to everyone tonight, and we'll collect the money tomorrow."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What are they buying the present for?",
+     "op": [
+      "Mrs Reed's birthday",
+      "Mrs Reed's retirement",
+      "Mrs Reed's wedding",
+      "a school trip"
+     ],
+     "r": 1,
+     "exp": "A primeira fala: for her retirement (aposentadoria)."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Why ___ we buy her a book?",
+     "resp": [
+      "don't"
+     ],
+     "exp": "Why don't we...? é uma sugestão.",
+     "ouvir": "Why don't we buy her a book?"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I don't agree. She reads on her tablet.",
+     "ouvir": "I don't agree. She reads on her tablet.",
+     "exp": "Agree: /a-GRÍ/. Tablet: /TÁ-blet/."
+    },
+    {
+     "t": "mc",
+     "q": "What do they decide to give her?",
+     "op": [
+      "flowers",
+      "a book",
+      "a restaurant voucher",
+      "a tablet"
+     ],
+     "r": 2,
+     "exp": "Flores e livro são recusados. O vale para restaurante é aprovado: That's a good idea."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Shall",
+      "we",
+      "give",
+      "it",
+      "to",
+      "her",
+      "on",
+      "Friday"
+     ],
+     "resp": "Shall we give it to her on Friday",
+     "exp": "Shall we + verbo base? é sugestão (e no áudio é recusada)."
+    },
+    {
+     "t": "gap",
+     "q": "If each of them pays five pounds, they will have ___ pounds.",
+     "resp": [
+      "sixty",
+      "60"
+     ],
+     "exp": "If each of us pays five pounds, we'll have sixty. Sixty = 60; não confunda com sixteen."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "A friend suggests going to the cinema, but you don't want to go. What do you say?",
+     "modelo": "I'm not sure. How about going to the park instead?",
+     "min": 6,
+     "chave": [
+      "how about",
+      "why don't",
+      "I'd rather",
+      "instead",
+      "prefer",
+      "sorry",
+      "not sure",
+      "let's"
+     ],
+     "exp": "Recuse com educação e sugira outra coisa: I'd prefer to... / How about...?"
+    },
+    {
+     "t": "mc",
+     "q": "When will they give her the present?",
+     "op": [
+      "Friday after the last lesson",
+      "Thursday morning",
+      "Thursday at three",
+      "Friday at three"
+     ],
+     "r": 2,
+     "exp": "Sexta não dá (ela visita a filha). Quinta de manhã é sugerida, mas eles combinam Thursday at three o'clock."
+    },
+    {
+     "t": "gap",
+     "q": "They can't give it on Friday because Mrs Reed is visiting her ___.",
+     "resp": [
+      "daughter"
+     ],
+     "exp": "Not Friday. She's visiting her daughter."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "A young app designer",
+   "objetivo": "Entender uma entrevista mais longa e identificar opiniões e razões.",
+   "foco": "Interview language; reasons and results; opinions; plans",
+   "explicacao": [
+    "Em entrevistas (Part 4), as perguntas seguem a ordem do áudio. Leia as opções antes de ouvir.",
+    "Todas as opções costumam ser mencionadas; só uma responde à pergunta. Ouça o motivo (because, so, but).",
+    "Palavras de contraste: but, although, actually. Depois delas está a ideia importante.",
+    "Planos: I'm going to..., I'd like to..., I'll keep working on it."
+   ],
+   "vocab": [
+    {
+     "en": "app",
+     "pt": "aplicativo"
+    },
+    {
+     "en": "by accident",
+     "pt": "por acaso"
+    },
+    {
+     "en": "to download",
+     "pt": "baixar"
+    },
+    {
+     "en": "coding",
+     "pt": "programação"
+    },
+    {
+     "en": "presentation",
+     "pt": "apresentação"
+    },
+    {
+     "en": "screens",
+     "pt": "telas"
+    },
+    {
+     "en": "to switch off",
+     "pt": "desligar"
+    },
+    {
+     "en": "design",
+     "pt": "design"
+    }
+   ],
+   "material": {
+    "titulo": "Interview with a young developer",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Today I'm talking to Priya Shah, who designed a language-learning app when she was only seventeen. Priya, how did it start?"
+     },
+     {
+      "p": "B",
+      "t": "Honestly, by accident. I was trying to learn Spanish for a holiday, and I found existing apps boring. They only gave you lists of words, so I decided to make games out of it."
+     },
+     {
+      "p": "A",
+      "t": "Did you have any experience of programming?"
+     },
+     {
+      "p": "B",
+      "t": "Not much. I'd taken a short course at school, but most of it I learnt from videos on the internet. My parents thought I was wasting time at first."
+     },
+     {
+      "p": "A",
+      "t": "And what changed their minds?"
+     },
+     {
+      "p": "B",
+      "t": "When ten thousand people downloaded it in the first month. My dad was amazed. He still can't use his phone properly!"
+     },
+     {
+      "p": "A",
+      "t": "What's the hardest part of your job now?"
+     },
+     {
+      "p": "B",
+      "t": "People think it's the coding, but actually it's explaining ideas to other people. I'm better at writing programs than at giving presentations."
+     },
+     {
+      "p": "A",
+      "t": "Some people worry that young people spend too much time on screens. What do you think?"
+     },
+     {
+      "p": "B",
+      "t": "I think it depends what you do. If you create something, it isn't wasted time. But I do try to switch off my phone after nine at night."
+     },
+     {
+      "p": "A",
+      "t": "What are your plans?"
+     },
+     {
+      "p": "B",
+      "t": "I'm going to university next year to study design, but I'll keep working on the app. I'd like to add Japanese by the summer."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How did Priya begin the app?",
+     "op": [
+      "It was a school project.",
+      "She found other apps boring.",
+      "Her parents asked her.",
+      "She won a competition."
+     ],
+     "r": 1,
+     "exp": "Ela queria aprender espanhol e achou os outros apps chatos: I found existing apps boring."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Most of it I learnt ___ videos on the internet.",
+     "resp": [
+      "from"
+     ],
+     "exp": "Learn from = aprender com/a partir de.",
+     "ouvir": "Most of it I learnt from videos on the internet."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "People think it's the coding, but actually it's explaining ideas to other people.",
+     "ouvir": "People think it's the coding, but actually it's explaining ideas to other people.",
+     "exp": "Actually: /ÉK-tchua-li/. Explaining: /ik-SPLÊI-ning/."
+    },
+    {
+     "t": "mc",
+     "q": "What changed her parents' minds?",
+     "op": [
+      "a prize at school",
+      "ten thousand downloads",
+      "a magazine article",
+      "the money she earned"
+     ],
+     "r": 1,
+     "exp": "When ten thousand people downloaded it in the first month."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I'm",
+      "better",
+      "at",
+      "writing",
+      "programs",
+      "than",
+      "at",
+      "giving",
+      "presentations"
+     ],
+     "resp": "I'm better at writing programs than at giving presentations",
+     "exp": "Better at + -ing than at + -ing: comparação de habilidades."
+    },
+    {
+     "t": "gap",
+     "q": "Priya tries to switch off her phone after ___ at night.",
+     "resp": [
+      "nine",
+      "9",
+      "nine o'clock",
+      "9 o'clock",
+      "9pm"
+     ],
+     "exp": "I do try to switch off my phone after nine at night."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Do you think people spend too much time on their phones? Why?",
+     "modelo": "Yes, I think so. Many people use them all day instead of talking to friends.",
+     "min": 6,
+     "chave": [
+      "think",
+      "yes",
+      "no",
+      "because",
+      "too much",
+      "time",
+      "phone",
+      "friends"
+     ],
+     "exp": "Dê sua opinião com I think... e explique com because."
+    },
+    {
+     "t": "mc",
+     "q": "What does Priya think about time on screens?",
+     "op": [
+      "It is always bad.",
+      "It depends what you do.",
+      "It is only bad at night.",
+      "It is good only for learning."
+     ],
+     "r": 1,
+     "exp": "I think it depends what you do. Se você cria algo, não é tempo perdido."
+    },
+    {
+     "t": "gap",
+     "q": "Priya would like to add ___ to the app by the summer.",
+     "resp": [
+      "Japanese"
+     ],
+     "exp": "I'd like to add Japanese by the summer. Design é o curso da faculdade."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado: B1 Preliminary Listening",
+   "objetivo": "Praticar os três tipos de tarefa da prova: opinião, notas e entrevista.",
+   "foco": "Exam practice: opinions, notes, interview",
+   "explicacao": [
+    "Leia as perguntas e as notas antes de ouvir. Marque o que deve procurar no áudio.",
+    "Parte de opinião: ouça o sentimento real da pessoa, não só o primeiro comentário.",
+    "Parte de notas: escreva uma palavra ou um número, exatamente como ouviu.",
+    "Entrevista: as quatro opções aparecem no áudio; só uma responde à pergunta."
+   ],
+   "vocab": [
+    {
+     "en": "to persuade",
+     "pt": "convencer"
+    },
+    {
+     "en": "soundtrack",
+     "pt": "trilha sonora"
+    },
+    {
+     "en": "moved",
+     "pt": "emocionado"
+    },
+    {
+     "en": "camp",
+     "pt": "acampamento"
+    },
+    {
+     "en": "torch",
+     "pt": "lanterna"
+    },
+    {
+     "en": "challenge",
+     "pt": "desafio"
+    },
+    {
+     "en": "lonely",
+     "pt": "sozinho, solitário"
+    },
+    {
+     "en": "to recommend",
+     "pt": "recomendar"
+    }
+   ],
+   "material": {
+    "titulo": "Film, camp and cycling",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Did you watch the new space film last night?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, my brother and I went. I wanted to see the comedy, but he persuaded me. Actually, I'm glad he did."
+     },
+     {
+      "p": "A",
+      "t": "Really? I thought it was far too long. Nearly three hours!"
+     },
+     {
+      "p": "B",
+      "t": "True, but I didn't get bored. The music was fantastic. I'd never been so moved by a soundtrack."
+     },
+     {
+      "p": "A",
+      "t": "I agree with that. The actors were rather weak, though."
+     },
+     {
+      "p": "C",
+      "t": "Welcome to Seaview Adventure Camp. This is the information for new campers. The camp runs for two weeks, starting on Monday the third of July. The cost is two hundred and fifty pounds, which includes all meals. You'll sleep in tents with three other people. Each morning, you can choose between sailing and rock climbing, and in the afternoons we do team games. The most popular evening activity is film night on Thursday. Please bring a torch, warm clothes and a sleeping bag. You mustn't bring a mobile phone, but you can use the camp office phone every evening at seven."
+     },
+     {
+      "p": "A",
+      "t": "Tom, you cycled across Europe last summer. Why did you decide to do it?"
+     },
+     {
+      "p": "B",
+      "t": "A friend challenged me, really. I'd just finished school and I wanted to do something different before university."
+     },
+     {
+      "p": "A",
+      "t": "Was it difficult?"
+     },
+     {
+      "p": "B",
+      "t": "The first week was hard because my legs hurt every night. But the worst thing was the weather. It rained for five days in Germany, and I was freezing."
+     },
+     {
+      "p": "A",
+      "t": "Did you stay in hotels?"
+     },
+     {
+      "p": "B",
+      "t": "Hardly ever. I mostly camped, which was cheaper. Sometimes local families invited me to stay, which was lovely."
+     },
+     {
+      "p": "A",
+      "t": "Would you recommend it?"
+     },
+     {
+      "p": "B",
+      "t": "Definitely, as long as you don't go alone for too long. I got quite lonely in the last week."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Parte 1. Why did the speaker go to see the space film?",
+     "op": [
+      "The speaker's brother wanted to see it.",
+      "A friend recommended it.",
+      "The music was famous.",
+      "The comedy was sold out."
+     ],
+     "r": 0,
+     "exp": "Ele/ela queria ver a comédia, mas o irmão o/a convenceu (persuaded)."
+    },
+    {
+     "t": "mc",
+     "q": "Parte 1. What does the friend say about the actors?",
+     "op": [
+      "They were rather weak.",
+      "They were fantastic.",
+      "They were too old.",
+      "They were not famous."
+     ],
+     "r": 0,
+     "exp": "O amigo diz: The actors were rather weak, though. A música é que foi elogiada."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I'd never been so moved by a soundtrack.",
+     "ouvir": "I'd never been so moved by a soundtrack.",
+     "exp": "Moved: /múvd/. Soundtrack: /SÁUND-trek/."
+    },
+    {
+     "t": "gap",
+     "q": "Parte 2, notas. The camp starts on Monday the ___ of July.",
+     "resp": [
+      "third",
+      "3rd",
+      "3"
+     ],
+     "exp": "Starting on Monday the third of July. Cuidado com the thirteenth: o áudio diz third."
+    },
+    {
+     "t": "gap",
+     "q": "Parte 2, notas. The camp costs ___ pounds, including all meals.",
+     "resp": [
+      "two hundred and fifty",
+      "250",
+      "two hundred fifty"
+     ],
+     "exp": "The cost is two hundred and fifty pounds, which includes all meals."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "You",
+      "mustn't",
+      "bring",
+      "a",
+      "mobile",
+      "phone"
+     ],
+     "resp": "You mustn't bring a mobile phone",
+     "exp": "Mustn't = é proibido. No acampamento há telefone no escritório às sete."
+    },
+    {
+     "t": "gap",
+     "q": "Parte 2, notas. On Thursday evening there is a ___ night.",
+     "resp": [
+      "film",
+      "movie"
+     ],
+     "exp": "The most popular evening activity is film night on Thursday."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Would you like to go to a summer camp? Why or why not?",
+     "modelo": "Yes, I would. I'd like to make new friends and try sailing.",
+     "min": 6,
+     "chave": [
+      "camp",
+      "would",
+      "like",
+      "because",
+      "friends",
+      "sailing",
+      "tents",
+      "nature",
+      "not"
+     ],
+     "exp": "Dê sua opinião e uma razão: I'd like to... because..."
+    },
+    {
+     "t": "mc",
+     "q": "Parte 3. Why did Tom cycle across Europe?",
+     "op": [
+      "He lost a bet.",
+      "A friend challenged him.",
+      "He was training for university.",
+      "He wanted to raise money."
+     ],
+     "r": 1,
+     "exp": "Ele diz: A friend challenged me, really."
+    },
+    {
+     "t": "mc",
+     "q": "Parte 3. What was the worst part of the trip?",
+     "op": [
+      "pain in his legs",
+      "the weather",
+      "the price of hotels",
+      "feeling lonely"
+     ],
+     "r": 1,
+     "exp": "As pernas doeram na primeira semana e ele ficou sozinho na última, mas the worst thing was the weather."
+    },
+    {
+     "t": "gap",
+     "q": "Parte 3. Tom mostly slept in a ___ because it was cheaper.",
+     "resp": [
+      "tent"
+     ],
+     "exp": "I mostly camped, which was cheaper: acampar = dormir em barraca."
+    },
+    {
+     "t": "mc",
+     "q": "Parte 3. What does Tom say about the trip?",
+     "op": [
+      "He wouldn't do it again.",
+      "He recommends it, but not alone for too long.",
+      "He only recommends it in summer.",
+      "He recommends it with family."
+     ],
+     "r": 1,
+     "exp": "Definitely, as long as you don't go alone for too long."
+    }
+   ]
+  }
+ ]
+}
