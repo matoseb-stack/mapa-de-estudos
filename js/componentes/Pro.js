@@ -35,43 +35,40 @@
   }
 
   /* ---------- teste grátis de 3 dias (sem cartão) ----------
-     A pessoa informa o celular, aceita os termos (entrar no grupo do WhatsApp) e confirma o número
-     com o código enviado por SMS. As regras do Firestore só aceitam o teste com o número confirmado. */
+     A pessoa informa o celular e aceita os termos (entrar no grupo do WhatsApp); o teste começa na hora
+     e o link do grupo aparece. As regras do Firestore conferem o formato do número e só deixam usar
+     o teste uma vez por conta e por número. */
   const TERMOS = "Ao ativar o teste grátis, autorizo o Logic Academy a usar este número de celular para me adicionar ao grupo do Logic Academy no WhatsApp, onde recebo avisos, dicas de estudo e novidades. Posso sair do grupo a qualquer momento. O teste dura 3 dias, não pede cartão e não vira cobrança automática; ele só pode ser usado uma vez por conta e por número.";
   const DDDS = [11,12,13,14,15,16,17,18,19,21,22,24,27,28,31,32,33,34,35,37,38,41,42,43,44,45,46,47,48,49,51,53,54,55,61,62,63,64,65,66,67,68,69,71,73,74,75,77,79,81,82,83,84,85,86,87,88,89,91,92,93,94,95,96,97,98,99];
   // celular brasileiro: DDD válido + 9 dígitos começando com 9 → formato internacional (+55…)
   function celular(v) {
     let d = String(v || "").replace(/\D/g, "");
     if (d.length === 13 && d.startsWith("55")) d = d.slice(2);
-    if (d.length !== 11 || !DDDS.includes(+d.slice(0, 2)) || d[2] !== "9" || /^(\d)\1+$/.test(d.slice(2))) return null;
+    if (d.length !== 11 || !DDDS.includes(+d.slice(0, 2)) || d[2] !== "9") return null;
+    const resto = d.slice(3);                                     // os 8 dígitos depois do 9
+    if (/^(\d)\1+$/.test(resto) || "0123456789".includes(resto) || "9876543210".includes(resto)) return null;   // números claramente inventados
     return "+55" + d;
   }
   const fmtCel = e164 => e164 ? `(${e164.slice(3, 5)}) ${e164.slice(5, 10)}-${e164.slice(10)}` : "";
   function cartaoTeste(app) {
     if (!app.podeTestar || !app.podeTestar()) return "";
     return `<div class="card pro-teste"><div><span class="pro-selo-teste">3 DIAS GRÁTIS</span><h2 style="margin:6px 0 4px">Experimente o Pro de graça</h2>
-      <p class="small muted" style="margin:0">Sem cartão e sem cobrança automática. Basta confirmar seu celular.</p></div>
+      <p class="small muted" style="margin:0">Sem cartão e sem cobrança automática. Basta informar seu celular e entrar no nosso grupo do WhatsApp.</p></div>
       <button class="btn primary" type="button" data-pro-teste>Começar teste grátis</button></div>`;
   }
   function modalTeste(app) {
     if (!app.logado()) { app.toast("Crie sua conta ou entre para usar o teste grátis."); return; }
     document.querySelectorAll(".pro-modal").forEach(x => x.remove());
     const bg = document.createElement("div"); bg.className = "modal-bg pro-modal";
-    let numero = null, conf = null;
+    let numero = null;
     const passo1 = () => `<form class="card stack modal" data-t="1" novalidate style="width:min(480px,100%)">
         <div class="row" style="gap:8px"><span class="pro-selo-teste">3 DIAS GRÁTIS</span><span class="eyebrow">Logic Academy Pro</span></div>
-        <h3 style="margin:0">Confirme seu celular</h3>
-        <p class="small muted" style="margin:0">Vamos enviar um código por SMS para confirmar que o número existe e é seu.</p>
-        <div class="field"><label for="tt-cel">Celular com DDD</label><div class="tt-cel"><span>+55</span><input id="tt-cel" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(11) 91234-5678" maxlength="16" required></div></div>
+        <h3 style="margin:0">Ative seu teste grátis</h3>
+        <p class="small muted" style="margin:0">Informe o celular que você usa no WhatsApp. Depois de ativar, você recebe o link para entrar no grupo do Logic Academy.</p>
+        <div class="field"><label for="tt-cel">Celular com DDD</label><div class="tt-cel"><span>+55</span><input id="tt-cel" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(11) 99734-2851" maxlength="16" required></div></div>
         <label class="tt-termos"><input type="checkbox" id="tt-ok" required><span>${app.esc(TERMOS)} <a href="termos.html#teste-gratis" target="_blank" rel="noopener">Termos de uso</a> · <a href="privacidade.html#celular" target="_blank" rel="noopener">Privacidade</a></span></label>
         <p class="small tt-erro" hidden></p>
-        <div class="row" style="justify-content:flex-end;gap:8px"><button class="btn ghost" type="button" data-tt="x">Cancelar</button><button class="btn primary" type="submit" id="tt-enviar">Enviar código por SMS</button></div></form>`;
-    const passo2 = () => `<form class="card stack modal" data-t="2" novalidate style="width:min(480px,100%)">
-        <h3 style="margin:0">Digite o código</h3>
-        <p class="small muted" style="margin:0">Enviamos um código de 6 números por SMS para <b>${fmtCel(numero)}</b>. Pode levar até 1 minuto.</p>
-        <div class="field"><label for="tt-cod">Código</label><input id="tt-cod" class="tt-cod" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required></div>
-        <p class="small tt-erro" hidden></p>
-        <div class="row" style="justify-content:space-between;gap:8px"><button class="btn ghost sm" type="button" data-tt="voltar">Trocar número</button><button class="btn primary" type="submit">Confirmar e ativar</button></div></form>`;
+        <div class="row" style="justify-content:flex-end;gap:8px"><button class="btn ghost" type="button" data-tt="x">Cancelar</button><button class="btn primary" type="submit" id="tt-enviar">Ativar 3 dias grátis</button></div></form>`;
     const passo3 = ate => `<div class="card stack modal" style="width:min(480px,100%);text-align:center;align-items:center">
         <div class="tt-ok">✓</div><h3 style="margin:0">Seu teste grátis começou!</h3>
         <p class="muted small" style="margin:0">Você tem o Logic Academy Pro até <b>${app.esc(fmtData(ate))}</b>: mentoria sem limite, todas as aulas de Inglês e nenhum anúncio.</p>
@@ -85,7 +82,6 @@
       const b = e.target.closest("[data-tt]"); if (!b && e.target !== bg) return;
       const a = b ? b.dataset.tt : "x";
       if (a === "x") bg.remove();
-      else if (a === "voltar") { conf = null; pintar(passo1()); bg.querySelector("#tt-cel").value = fmtCel(numero); }
       else if (a === "grupo") abrirGrupo(app, b);
     });
     bg.addEventListener("submit", async e => {
@@ -93,23 +89,12 @@
       const f = e.target, btn = f.querySelector('[type="submit"]'), txt = btn.textContent;
       btn.disabled = true;
       try {
-        if (f.dataset.t === "1") {
-          numero = celular(f.querySelector("#tt-cel").value);
-          if (!numero) { erro("Digite um celular brasileiro válido, com DDD (ex.: 11 91234-5678)."); btn.disabled = false; return; }
-          if (!f.querySelector("#tt-ok").checked) { erro("Para ativar o teste, é preciso aceitar os termos."); btn.disabled = false; return; }
-          btn.textContent = "Enviando…";
-          conf = await app.enviarCodigo(numero, "tt-enviar");
-          if (conf === true) { btn.textContent = "Ativando…"; await app.ativarTeste(numero); pintar(passo3(app.testeAte())); return; }   // número já confirmado nesta conta
-          pintar(passo2());
-        } else {
-          const cod = f.querySelector("#tt-cod").value.replace(/\D/g, "");
-          if (cod.length !== 6) { erro("O código tem 6 números."); btn.disabled = false; return; }
-          btn.textContent = "Confirmando…";
-          await app.confirmarCodigo(conf, cod);
-          btn.textContent = "Ativando…";
-          await app.ativarTeste(numero);
-          pintar(passo3(app.testeAte()));
-        }
+        numero = celular(f.querySelector("#tt-cel").value);
+        if (!numero) { erro("Digite um celular brasileiro válido, com DDD (ex.: 11 99734-2851)."); btn.disabled = false; return; }
+        if (!f.querySelector("#tt-ok").checked) { erro("Para ativar o teste, é preciso aceitar os termos."); btn.disabled = false; return; }
+        btn.textContent = "Ativando…";
+        await app.ativarTeste(numero);
+        pintar(passo3(app.testeAte()));
       } catch (err) { btn.disabled = false; btn.textContent = txt; erro(err && err.message ? err.message : "Não foi possível agora. Tente de novo."); }
     });
   }

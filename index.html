@@ -1082,7 +1082,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/ExercicioIdioma.js?v=2.4"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.4"></script>
 <script src="js/componentes/IdiomasView.js?v=2.4"></script>
-<script src="js/componentes/Pro.js?v=2.5"></script>
+<script src="js/componentes/Pro.js?v=2.6"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
 
@@ -2360,25 +2360,7 @@ async function pagarPro(plano){
   try{const r=await firebase.app().functions("southamerica-east1").httpsCallable("criarPagamento")({plano,origem:location.origin+location.pathname});
     S.aguardandoPro=true;try{localStorage.setItem("la_pro_aguardando","1")}catch(e){}return r.data.url}
   catch(e){console.warn("pagamento",e&&e.code,e&&e.message);throw new Error(e&&e.code==="functions/not-found"||e&&e.code==="functions/internal"&&/not.?found/i.test(e.message||"")?"O pagamento ainda não foi ativado neste site.":(e&&e.message)||"Não foi possível abrir o pagamento agora.")}}
-// celular confirmado por SMS (Firebase Auth): o número entra no token e as regras do Firestore conferem
-const ERROS_SMS={"auth/invalid-phone-number":"Esse número não é válido. Confira o DDD e os 9 dígitos.","auth/too-many-requests":"Muitas tentativas. Espere alguns minutos e tente de novo.",
-  "auth/quota-exceeded":"O envio de SMS está temporariamente indisponível. Tente mais tarde.","auth/credential-already-in-use":"Esse celular já está confirmado em outra conta do Logic Academy.",
-  "auth/account-exists-with-different-credential":"Esse celular já está confirmado em outra conta do Logic Academy.","auth/provider-already-linked":"Sua conta já tem outro celular confirmado.",
-  "auth/invalid-verification-code":"Código incorreto. Confira o SMS e digite de novo.","auth/code-expired":"O código venceu. Toque em Trocar número e peça outro.",
-  "auth/operation-not-allowed":"A confirmação por SMS ainda não foi ativada neste site.","auth/billing-not-enabled":"A confirmação por SMS ainda não foi ativada neste site.",
-  "auth/captcha-check-failed":"Não conseguimos confirmar que você não é um robô. Recarregue a página e tente de novo.","auth/missing-phone-number":"Digite o número do celular.",
-  "auth/network-request-failed":"Sem conexão. Confira sua internet."};
-const erroSMS=e=>new Error(ERROS_SMS[e&&e.code]||"Não foi possível enviar o código agora. Tente de novo.");
-async function enviarCodigoSMS(numero,idBotao){
-  const u=FB&&FB.auth.currentUser;if(!u)throw new Error("Entre com sua conta para usar o teste grátis.");
-  if(u.phoneNumber===numero)return true;
-  if(u.phoneNumber)throw new Error(`Sua conta já tem o celular ${u.phoneNumber} confirmado. Use esse número.`);
-  try{if(S.captchaSMS){try{S.captchaSMS.clear()}catch(e){}}
-    S.captchaSMS=new firebase.auth.RecaptchaVerifier(idBotao,{size:"invisible"});
-    return await u.linkWithPhoneNumber(numero,S.captchaSMS)}
-  catch(e){console.warn("sms",e&&e.code,e&&e.message);try{S.captchaSMS&&S.captchaSMS.clear()}catch(x){}S.captchaSMS=null;throw erroSMS(e)}}
-async function confirmarCodigoSMS(conf,codigo){
-  try{await conf.confirm(codigo);await FB.auth.currentUser.getIdToken(true)}catch(e){console.warn("sms código",e&&e.code);throw erroSMS(e)}}
+// teste grátis: grava o celular (uma vez por número) e o início do teste; as regras conferem o formato e o uso único
 async function ativarTeste(numero){
   if(!podeTestar())throw new Error("O teste grátis já foi usado nesta conta.");
   const FV=firebase.firestore.FieldValue,b=S.db.batch();
@@ -2389,7 +2371,7 @@ async function ativarTeste(numero){
 async function linkGrupoWhatsApp(){const d=await S.db.collection("privado").doc("whatsapp").get();const l=d.exists&&d.data().link;return /^https:\/\/chat\.whatsapp\.com\//.test(l||"")?l:null}
 const appPro={esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),go:v=>go(v),
   ehPro:()=>ehPro(),assinatura:()=>S.pro?{plano:S.pro.plano,ate:tsMs(S.pro.ate)}:null,logado:()=>FBM()&&!!S.uid,pagar:p=>pagarPro(p),
-  podeTestar:()=>podeTestar(),testeAte:()=>testeAte(),enviarCodigo:(n,b)=>enviarCodigoSMS(n,b),confirmarCodigo:(c,k)=>confirmarCodigoSMS(c,k),ativarTeste:n=>ativarTeste(n),linkGrupo:()=>linkGrupoWhatsApp()};
+  podeTestar:()=>podeTestar(),testeAte:()=>testeAte(),ativarTeste:n=>ativarTeste(n),linkGrupo:()=>linkGrupoWhatsApp()};
 function renderPro(){LAComp.Pro.render($("#main"),appPro)}
 // volta do Mercado Pago (?pro=ok|pendente|erro)
 (function(){try{const q=new URLSearchParams(location.search),r=q.get("pro");if(!r)return;
@@ -2401,7 +2383,7 @@ window.LA_ADS={cliente:"ca-pub-4234319012596475",slots:{inicio:"",estatisticas:"
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
 const APP_VERSAO="2.4";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
-  {t:"Teste o Pro grátis por 3 dias",d:"Sem cartão: confirme seu celular na tela Logic Academy Pro e use a mentoria sem limite e todas as aulas de Inglês por 3 dias."},
+  {t:"Teste o Pro grátis por 3 dias",d:"Sem cartão: informe seu celular na tela Logic Academy Pro, entre no grupo do WhatsApp e use a mentoria sem limite e todas as aulas de Inglês por 3 dias."},
   {t:"Chegou o Logic Academy Pro",d:"Mentoria com IA sem limite, o curso de Inglês completo (360 aulas) e nada de anúncios, por R$ 9,90/mês ou R$ 79,90/ano. Banco de questões, plano semanal, pomodoro e comunidade continuam grátis."},
   {t:"Curso de Inglês completo, do A1 ao C2",d:"360 aulas em trilhas de Reading & Use of English, Listening, Writing e Speaking, com um simulado da prova Cambridge no fim de cada trilha."},
   {t:"Você escolhe o idioma e a prova",d:"Na aba Idiomas, escolha o idioma (por enquanto, Inglês) e a prova que quer fazer, do A2 Key ao C2 Proficiency. O app mostra quanto falta para você estar pronto."},

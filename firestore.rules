@@ -226,11 +226,12 @@ service cloud.firestore {
           && get(/databases/$(database)/documents/testes/$(uid)).data.inicio + duration.value(3, 'd') > request.time);
     }
 
-    // Teste grátis de 3 dias: só para quem confirmou o celular por SMS (o Firebase coloca o número no token),
-    // uma única vez por conta e por número. O início é a hora do servidor; o fim é sempre início + 3 dias.
+    // Teste grátis de 3 dias: a pessoa informa o celular (formato brasileiro: +55, DDD e 9 dígitos começando com 9)
+    // e aceita os termos. Uma única vez por conta e por número. O início é a hora do servidor; o fim, início + 3 dias.
+    function celularBR(n) { return n is string && n.matches('^[+]55[1-9][1-9]9[0-9]{8}$'); }
     match /telefones/{numero} {
       allow read: if logado() && resource.data.uid == request.auth.uid;
-      allow create: if logado() && request.auth.token.phone_number == numero
+      allow create: if logado() && celularBR(numero)
         && request.resource.data.keys().hasOnly(['uid', 'em', 'termos'])
         && request.resource.data.uid == request.auth.uid
         && request.resource.data.em == request.time && request.resource.data.termos is string;
@@ -238,12 +239,11 @@ service cloud.firestore {
     }
     match /testes/{uid} {
       allow read: if eu(uid);
-      allow create: if eu(uid) && request.auth.token.phone_number is string
+      allow create: if eu(uid)
         && request.resource.data.keys().hasOnly(['inicio', 'telefone', 'termos', 'aceitoEm'])
         && request.resource.data.inicio == request.time && request.resource.data.aceitoEm == request.time
-        && request.resource.data.telefone == request.auth.token.phone_number
-        && request.resource.data.termos is string
-        && getAfter(/databases/$(database)/documents/telefones/$(request.auth.token.phone_number)).data.uid == uid
+        && celularBR(request.resource.data.telefone) && request.resource.data.termos is string
+        && getAfter(/databases/$(database)/documents/telefones/$(request.resource.data.telefone)).data.uid == uid
         && !exists(/databases/$(database)/documents/assinaturas/$(uid));
       allow update, delete: if false;
     }
