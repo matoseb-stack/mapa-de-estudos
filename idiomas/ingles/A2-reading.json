@@ -1,0 +1,2337 @@
+{
+ "nivel": "A2",
+ "skill": "reading",
+ "exame": "A2 Key (KET)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "A weekend in the city",
+   "objetivo": "Entender o relato de um fim de semana no passado.",
+   "foco": "Past simple: regular and irregular verbs; didn't + verb",
+   "explicacao": [
+    "O past simple conta fatos terminados. Verbos regulares ganham -ed: visit - visited, walk - walked.",
+    "Verbos irregulares mudam de forma: go - went, take - took, buy - bought, have - had, eat - ate.",
+    "Negativa: didn't (did not) + verbo no infinitivo, sem -ed. Ex.: She didn't buy a hat. (nunca 'didn't bought')",
+    "Pergunta: Did + sujeito + verbo? Ex.: Did you go out? Com wh-: What time did she arrive?"
+   ],
+   "vocab": [
+    {
+     "en": "to arrive",
+     "pt": "chegar"
+    },
+    {
+     "en": "station",
+     "pt": "estação"
+    },
+    {
+     "en": "to cook",
+     "pt": "cozinhar"
+    },
+    {
+     "en": "to leave",
+     "pt": "sair, partir"
+    },
+    {
+     "en": "scarf",
+     "pt": "cachecol"
+    },
+    {
+     "en": "until",
+     "pt": "até"
+    },
+    {
+     "en": "early",
+     "pt": "cedo"
+    },
+    {
+     "en": "cousin",
+     "pt": "primo(a)"
+    }
+   ],
+   "material": {
+    "titulo": "Emma in Manchester",
+    "texto": "Last Saturday, Emma visited her cousin Jack in Manchester. She took the train at nine o'clock and arrived at eleven. Jack met her at the station and they walked to a small café. Emma had a cheese sandwich, but Jack didn't eat anything because he had a big breakfast. In the afternoon they watched a film at the cinema. It wasn't very good, so they left early and went shopping. Emma bought a blue scarf for her mum. In the evening, Jack cooked pasta for dinner and they played cards until midnight. On Sunday Emma didn't stay long. She said goodbye at the station and caught the four o'clock train home."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How did Emma travel to Manchester?",
+     "op": [
+      "by bus",
+      "by train",
+      "by car",
+      "on foot"
+     ],
+     "r": 1,
+     "exp": "O texto diz: She took the train. Eles caminharam (walked) só do trem até o café."
+    },
+    {
+     "t": "gap",
+     "q": "Jack ___ eat anything at the café.",
+     "resp": [
+      "didn't",
+      "did not"
+     ],
+     "exp": "Negativa do past simple: didn't + verbo base (eat)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Last Saturday, Emma visited her cousin Jack in Manchester.",
+     "exp": "Visited termina com som /id/: VI-zi-tid. Saturday: SÁ-tur-dei."
+    },
+    {
+     "t": "mc",
+     "q": "Why did Emma and Jack leave the cinema early?",
+     "op": [
+      "They were hungry.",
+      "The film wasn't very good.",
+      "Jack wanted to cook dinner.",
+      "Emma had a train to catch."
+     ],
+     "r": 1,
+     "exp": "It wasn't very good, so they left early. Eles foram às compras depois, mas esse não foi o motivo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Emma",
+      "bought",
+      "a",
+      "blue",
+      "scarf",
+      "for",
+      "her",
+      "mum"
+     ],
+     "resp": "Emma bought a blue scarf for her mum",
+     "exp": "Buy é irregular: bought. Ordem: sujeito + verbo + objeto + for + pessoa."
+    },
+    {
+     "t": "gap",
+     "q": "Jack didn't eat at the café because he ___ a big breakfast.",
+     "resp": [
+      "had"
+     ],
+     "exp": "Have é irregular: have - had. O texto diz: he had a big breakfast."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você fez no fim de semana passado?",
+     "frase": "What did you do last weekend?",
+     "modelo": "I visited my grandmother and we watched a film.",
+     "min": 4,
+     "chave": [
+      "visited",
+      "watched",
+      "went",
+      "played",
+      "stayed",
+      "had",
+      "I"
+     ],
+     "exp": "Use verbos no passado: I went..., I watched..., I stayed at home."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "Emma didn't went home early.",
+      "Emma didn't go home early.",
+      "Emma not went home early.",
+      "Emma didn't goes home early."
+     ],
+     "r": 1,
+     "exp": "Depois de didn't o verbo fica no infinitivo: didn't go."
+    },
+    {
+     "t": "gap",
+     "q": "What time ___ Emma arrive in Manchester? - At eleven.",
+     "resp": [
+      "did"
+     ],
+     "exp": "Pergunta no past simple com wh-: What time + did + sujeito + verbo base."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "A strange afternoon",
+   "objetivo": "Acompanhar uma história com ações em andamento e ações curtas.",
+   "foco": "Past continuous (was/were + -ing) with when and while",
+   "explicacao": [
+    "O past continuous mostra uma ação em andamento no passado: I was walking home.",
+    "Forma: was/were + verbo com -ing. I/he/she/it was; you/we/they were.",
+    "Usamos while com a ação longa e when com a ação curta: While I was reading, the phone rang.",
+    "Negativa e pergunta: She wasn't sleeping. What were you doing?"
+   ],
+   "vocab": [
+    {
+     "en": "to rain",
+     "pt": "chover"
+    },
+    {
+     "en": "umbrella",
+     "pt": "guarda-chuva"
+    },
+    {
+     "en": "noise",
+     "pt": "barulho"
+    },
+    {
+     "en": "lorry",
+     "pt": "caminhão (UK)"
+    },
+    {
+     "en": "suddenly",
+     "pt": "de repente"
+    },
+    {
+     "en": "to shout",
+     "pt": "gritar"
+    },
+    {
+     "en": "nobody",
+     "pt": "ninguém"
+    },
+    {
+     "en": "to carry",
+     "pt": "carregar"
+    }
+   ],
+   "material": {
+    "titulo": "Oranges in the street",
+    "texto": "Yesterday afternoon I was walking home from school when it started to rain. I didn't have an umbrella, so I ran into a bookshop. While I was looking at the comics, I heard a loud noise outside. Everyone was talking about it, but nobody knew what was happening. I looked through the window. A lorry was driving slowly down the street and a man was shouting at the driver. The lorry was carrying hundreds of oranges! Suddenly, some of the oranges fell onto the road. The rain stopped, so I went outside and helped the man. He gave me three oranges to say thank you."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What was the writer doing when it started to rain?",
+     "op": [
+      "walking home",
+      "looking at comics",
+      "buying an umbrella",
+      "waiting for a bus"
+     ],
+     "r": 0,
+     "exp": "O texto diz: I was walking home from school when it started to rain. Os quadrinhos vieram depois, na livraria."
+    },
+    {
+     "t": "gap",
+     "q": "While I ___ looking at the comics, I heard a loud noise.",
+     "resp": [
+      "was"
+     ],
+     "exp": "Ação longa no passado: was + -ing (I was looking)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "While I was looking at the comics, I heard a loud noise outside.",
+     "exp": "Was aqui é fraco: /wəz/. Comics: CÓ-mics."
+    },
+    {
+     "t": "mc",
+     "q": "What was the lorry carrying?",
+     "op": [
+      "books",
+      "oranges",
+      "umbrellas",
+      "boxes of comics"
+     ],
+     "r": 1,
+     "exp": "The lorry was carrying hundreds of oranges."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "A",
+      "man",
+      "was",
+      "shouting",
+      "at",
+      "the",
+      "driver"
+     ],
+     "resp": "A man was shouting at the driver",
+     "exp": "Was + shouting = ação em andamento. Ordem: sujeito + was + -ing + complemento."
+    },
+    {
+     "t": "gap",
+     "q": "Everyone ___ talking about the noise.",
+     "resp": [
+      "was"
+     ],
+     "exp": "Everyone é tratado como singular: was (não 'were')."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você estava fazendo ontem às oito da noite?",
+     "frase": "What were you doing at eight o'clock last night?",
+     "modelo": "I was watching TV with my family.",
+     "min": 4,
+     "chave": [
+      "was",
+      "watching",
+      "studying",
+      "eating",
+      "doing",
+      "having",
+      "playing"
+     ],
+     "exp": "Use I was + verbo com -ing: I was cooking, I was studying."
+    },
+    {
+     "t": "mc",
+     "q": "I ___ TV when the phone rang.",
+     "op": [
+      "watched",
+      "was watching",
+      "am watching",
+      "watch"
+     ],
+     "r": 1,
+     "exp": "A ação longa (TV) usa past continuous; a ação curta (rang) usa past simple."
+    },
+    {
+     "t": "gap",
+     "q": "What ___ the man doing when the writer looked through the window?",
+     "resp": [
+      "was"
+     ],
+     "exp": "Pergunta no past continuous: What + was + sujeito + -ing? The man = he, então was."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "A letter from Edinburgh",
+   "objetivo": "Entender um e-mail em que alguém conta o que já fez e o que ainda não fez.",
+   "foco": "Present perfect: have/has + past participle; just, already, yet, ever, never, for, since",
+   "explicacao": [
+    "Present perfect: have/has + particípio. I've visited the castle. She has just arrived.",
+    "Usamos para experiências e resultados sem dizer quando: Have you ever been to Scotland? - Yes, I have.",
+    "Palavras úteis: just (acabou de), already (já), yet (ainda, em negativas e perguntas), never, ever.",
+    "For + período (for three years); since + ponto de partida (since 2021). Particípios irregulares: be - been, see - seen, take - taken."
+   ],
+   "vocab": [
+    {
+     "en": "castle",
+     "pt": "castelo"
+    },
+    {
+     "en": "to try",
+     "pt": "experimentar"
+    },
+    {
+     "en": "delicious",
+     "pt": "delicioso"
+    },
+    {
+     "en": "closed",
+     "pt": "fechado"
+    },
+    {
+     "en": "present",
+     "pt": "presente"
+    },
+    {
+     "en": "already",
+     "pt": "já"
+    },
+    {
+     "en": "yet",
+     "pt": "ainda"
+    },
+    {
+     "en": "never",
+     "pt": "nunca"
+    }
+   ],
+   "material": {
+    "titulo": "A message to Maria",
+    "texto": "Hi Maria, Thanks for your message! I've just arrived in Edinburgh and I've already seen so much. I've visited the castle and I've tried haggis - it was delicious! I haven't been to the museum yet because it was closed on Monday. My friend Sam has lived here for three years, so he's shown me lots of great places. We've never taken the bus; we always walk. I've been here for four days and I haven't bought any presents yet. Have you ever visited Scotland? You should come next year! Love, Ana"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which of these has Ana already done?",
+     "op": [
+      "visited the castle",
+      "been to the museum",
+      "bought presents",
+      "taken the bus"
+     ],
+     "r": 0,
+     "exp": "I've visited the castle. As outras coisas ela ainda não fez (haven't ... yet) ou nunca fez."
+    },
+    {
+     "t": "gap",
+     "q": "Ana ___ been to the museum yet.",
+     "resp": [
+      "hasn't",
+      "has not"
+     ],
+     "exp": "Negativa do present perfect: hasn't/has not + particípio. Com I use haven't; com Ana (she), hasn't."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "I've just arrived in Edinburgh and I've already seen so much.",
+     "exp": "I've = /aiv/. Edinburgh: É-din-bra (o 'gh' quase não soa)."
+    },
+    {
+     "t": "mc",
+     "q": "Why hasn't Ana visited the museum?",
+     "op": [
+      "It was closed on Monday.",
+      "She doesn't like museums.",
+      "It is too expensive.",
+      "Sam is too busy."
+     ],
+     "r": 0,
+     "exp": "O texto diz: it was closed on Monday."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Sam",
+      "has",
+      "lived",
+      "here",
+      "for",
+      "three",
+      "years"
+     ],
+     "resp": "Sam has lived here for three years",
+     "exp": "For + período de tempo. Ordem: sujeito + has + particípio + complemento."
+    },
+    {
+     "t": "gap",
+     "q": "Sam has lived in Edinburgh ___ three years.",
+     "resp": [
+      "for"
+     ],
+     "exp": "For usa-se com a duração (three years). Since usa-se com um ponto no tempo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você já visitou outro país?",
+     "frase": "Have you ever visited another country?",
+     "modelo": "Yes, I have. I've been to Argentina.",
+     "min": 3,
+     "chave": [
+      "have",
+      "been",
+      "visited",
+      "never",
+      "haven't",
+      "I've"
+     ],
+     "exp": "Resposta curta: Yes, I have. / No, I haven't. Depois dê um detalhe: I've been to..."
+    },
+    {
+     "t": "mc",
+     "q": "Sam ___ in Edinburgh since 2021.",
+     "op": [
+      "has lived",
+      "lived",
+      "is living",
+      "lives"
+     ],
+     "r": 0,
+     "exp": "Since + ponto no passado que chega até agora pede present perfect: has lived."
+    },
+    {
+     "t": "gap",
+     "q": "Ana has never ___ the bus in Edinburgh.",
+     "resp": [
+      "taken",
+      "caught"
+     ],
+     "exp": "Particípio de take é taken. Never fica entre has e o particípio."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Choosing a phone",
+   "objetivo": "Comparar produtos e entender qual é o melhor, o mais barato e o mais caro.",
+   "foco": "Comparatives and superlatives; (not) as ... as",
+   "explicacao": [
+    "Adjetivos curtos: -er / the -est. cheap - cheaper - the cheapest; big - bigger - the biggest (dobra a consoante).",
+    "Adjetivos longos: more / the most. expensive - more expensive - the most expensive.",
+    "Irregulares: good - better - the best; bad - worse - the worst.",
+    "Use than para comparar duas coisas: The Nova is faster than the Zip. Use (not) as ... as para igualdade: It isn't as cheap as the Zip."
+   ],
+   "vocab": [
+    {
+     "en": "cheap",
+     "pt": "barato"
+    },
+    {
+     "en": "expensive",
+     "pt": "caro"
+    },
+    {
+     "en": "battery",
+     "pt": "bateria"
+    },
+    {
+     "en": "camera",
+     "pt": "câmera"
+    },
+    {
+     "en": "heavy",
+     "pt": "pesado"
+    },
+    {
+     "en": "useful",
+     "pt": "útil"
+    },
+    {
+     "en": "pocket",
+     "pt": "bolso"
+    },
+    {
+     "en": "choice",
+     "pt": "escolha"
+    }
+   ],
+   "material": {
+    "titulo": "Mia's new phone",
+    "texto": "Mia wants a new phone. She looked at three. The Zip is the cheapest phone in the shop, at £120, but its battery is shorter than the others. The Nova is more expensive than the Zip, at £250, and its camera is better. The Max is the most expensive of all at £400. It is the biggest and the fastest, but it is also heavier than the other two, and Mia thinks it is too big for her pocket. Her brother says the Nova is the best choice. 'It isn't as cheap as the Zip, but it's much more useful,' he says. Mia agrees. She is going to buy the Nova tomorrow."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which phone is the cheapest?",
+     "op": [
+      "the Zip",
+      "the Nova",
+      "the Max",
+      "They all cost the same."
+     ],
+     "r": 0,
+     "exp": "The Zip is the cheapest phone, £120."
+    },
+    {
+     "t": "gap",
+     "q": "The Nova is ___ expensive than the Zip.",
+     "resp": [
+      "more"
+     ],
+     "exp": "Expensive é longo: more expensive than."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "The Max is the biggest and the fastest, but it is also heavier.",
+     "exp": "Biggest: BI-guest. Heavier: RÊ-vi-er (o 'ea' soa como 'é')."
+    },
+    {
+     "t": "mc",
+     "q": "Why doesn't Mia choose the Max?",
+     "op": [
+      "It is too big for her pocket.",
+      "Its battery is short.",
+      "Its camera is bad.",
+      "It is too cheap."
+     ],
+     "r": 0,
+     "exp": "O texto diz que Mia acha o Max too big for her pocket. A bateria curta é do Zip."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "Nova",
+      "is",
+      "more",
+      "expensive",
+      "than",
+      "the",
+      "Zip"
+     ],
+     "resp": "The Nova is more expensive than the Zip",
+     "exp": "Comparativo longo: more + adjetivo + than."
+    },
+    {
+     "t": "gap",
+     "q": "The Zip is the ___ phone in the shop. (CHEAP)",
+     "resp": [
+      "cheapest"
+     ],
+     "exp": "Superlativo de adjetivo curto: the + -est.",
+     "dica": "CHEAP"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: qual é a coisa mais útil na sua mochila?",
+     "frase": "What is the most useful thing in your bag?",
+     "modelo": "My phone is the most useful because I can call my family.",
+     "min": 5,
+     "chave": [
+      "most",
+      "useful",
+      "best",
+      "because",
+      "phone",
+      "book",
+      "bag"
+     ],
+     "exp": "Use the most useful + coisa, e explique com because."
+    },
+    {
+     "t": "mc",
+     "q": "The Nova ___ the Max.",
+     "op": [
+      "isn't as expensive as",
+      "isn't more expensive as",
+      "isn't expensive than",
+      "isn't so more expensive than"
+     ],
+     "r": 0,
+     "exp": "Not as ... as = não tão ... quanto. A estrutura é as + adjetivo + as."
+    },
+    {
+     "t": "gap",
+     "q": "Mia's brother thinks the Nova is the ___ choice. (GOOD)",
+     "resp": [
+      "best"
+     ],
+     "exp": "Good é irregular: good - better - the best.",
+     "dica": "GOOD"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Plans for Saturday",
+   "objetivo": "Entender planos combinados e previsões em uma mensagem.",
+   "foco": "Future with going to and will",
+   "explicacao": [
+    "Going to: planos já decididos e previsões com evidência. My dad is going to drive us. Look at those clouds! It's going to rain.",
+    "Will: decisões na hora, promessas e opiniões sobre o futuro. I'll answer the phone. I think it will be hot.",
+    "Forma: am/is/are going to + verbo; will + verbo (I'll, won't).",
+    "Palavras de futuro: tomorrow, tonight, next week, soon, maybe, I think."
+   ],
+   "vocab": [
+    {
+     "en": "lake",
+     "pt": "lago"
+    },
+    {
+     "en": "raincoat",
+     "pt": "capa de chuva"
+    },
+    {
+     "en": "website",
+     "pt": "site"
+    },
+    {
+     "en": "weather",
+     "pt": "tempo (clima)"
+    },
+    {
+     "en": "to be ready",
+     "pt": "estar pronto"
+    },
+    {
+     "en": "maybe",
+     "pt": "talvez"
+    },
+    {
+     "en": "to text",
+     "pt": "mandar mensagem"
+    },
+    {
+     "en": "lunch",
+     "pt": "almoço"
+    }
+   ],
+   "material": {
+    "titulo": "A message from Dan",
+    "texto": "Hi Leo, I've got some news about Saturday. My dad is going to drive us to the lake at nine, so please be ready before that. It's going to be hot, so I think we'll need lots of water. Ben has bought some bread and cheese; he's going to make sandwiches for everyone. I'm not sure about the weather in the afternoon. The website says it will rain after four o'clock, so I'll bring my raincoat. Maybe you could bring a football? I think we'll have time to play before lunch. Oh, and my sister wants to come too. I'll ask Mum tonight, and I'll text you the answer. See you soon! Dan"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Who is going to drive to the lake?",
+     "op": [
+      "Dan's dad",
+      "Ben",
+      "Leo",
+      "Dan's mum"
+     ],
+     "r": 0,
+     "exp": "My dad is going to drive us to the lake."
+    },
+    {
+     "t": "gap",
+     "q": "Ben ___ going to make sandwiches for everyone.",
+     "resp": [
+      "is"
+     ],
+     "exp": "Ben = he, então is going to."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "My dad is going to drive us to the lake at nine.",
+     "exp": "Going to no inglês falado soa quase 'gonna'. Lake: lêik."
+    },
+    {
+     "t": "mc",
+     "q": "What does the website say about the weather?",
+     "op": [
+      "It will be hot all day.",
+      "It will rain after four o'clock.",
+      "It will be cold in the morning.",
+      "It will be sunny in the afternoon."
+     ],
+     "r": 1,
+     "exp": "The website says it will rain after four o'clock."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It's",
+      "going",
+      "to",
+      "be",
+      "hot",
+      "on",
+      "Saturday"
+     ],
+     "resp": "It's going to be hot on Saturday",
+     "exp": "Previsão: it's going to + verbo. Ordem normal: sujeito + going to + verbo + complemento."
+    },
+    {
+     "t": "gap",
+     "q": "The website says it ___ rain after four o'clock.",
+     "resp": [
+      "will"
+     ],
+     "exp": "Previsão baseada em informação: will + verbo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você vai fazer neste fim de semana?",
+     "frase": "What are you going to do this weekend?",
+     "modelo": "I'm going to visit my grandmother and play football.",
+     "min": 4,
+     "chave": [
+      "going",
+      "I'm",
+      "will",
+      "I'll",
+      "visit",
+      "play",
+      "watch"
+     ],
+     "exp": "Use I'm going to + verbo: I'm going to study, I'm going to see friends."
+    },
+    {
+     "t": "mc",
+     "q": "The phone is ringing. - I ___ answer it!",
+     "op": [
+      "'ll",
+      "'m going to",
+      "am going",
+      "have"
+     ],
+     "r": 0,
+     "exp": "Decisão tomada na hora, no momento da fala: I'll (I will)."
+    },
+    {
+     "t": "gap",
+     "q": "Look at those black clouds! It is ___ to rain.",
+     "resp": [
+      "going"
+     ],
+     "exp": "Há evidência agora (nuvens), então usamos be going to."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Library rules",
+   "objetivo": "Entender regras e avisos com can, must, mustn't e should.",
+   "foco": "Modals: can, can't, must, mustn't, should, have to",
+   "explicacao": [
+    "Can = permissão ou capacidade; can't = não é permitido. You can borrow six books.",
+    "Must = obrigação forte; mustn't = proibido. You must bring your card. You mustn't run.",
+    "Should = conselho. You should speak quietly. Have to também indica obrigação: You have to pay.",
+    "Depois de um modal, o verbo fica no infinitivo sem to: You must go (não 'must to go'). Don't have to = não é necessário."
+   ],
+   "vocab": [
+    {
+     "en": "to borrow",
+     "pt": "pegar emprestado"
+    },
+    {
+     "en": "library card",
+     "pt": "carteirinha da biblioteca"
+    },
+    {
+     "en": "to return",
+     "pt": "devolver"
+    },
+    {
+     "en": "quietly",
+     "pt": "em silêncio"
+    },
+    {
+     "en": "librarian",
+     "pt": "bibliotecário(a)"
+    },
+    {
+     "en": "to book",
+     "pt": "reservar"
+    },
+    {
+     "en": "rule",
+     "pt": "regra"
+    },
+    {
+     "en": "under fourteen",
+     "pt": "menores de quatorze"
+    }
+   ],
+   "material": {
+    "titulo": "Greenfield Library",
+    "texto": "Welcome to Greenfield Library. You can borrow up to six books for three weeks. You must bring your library card every time. Students under fourteen mustn't use the computers after five o'clock. You should return books on time; if you forget, you have to pay 20p a day. You can't eat in the reading room, but you can drink water. You should speak quietly because other people are working. If you need help, you can ask a librarian. There is no need to book a desk, but you must book the meeting room at least one day before."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How many books can you borrow?",
+     "op": [
+      "three",
+      "six",
+      "fourteen",
+      "twenty"
+     ],
+     "r": 1,
+     "exp": "You can borrow up to six books. Three é o número de semanas."
+    },
+    {
+     "t": "gap",
+     "q": "You ___ bring your library card every time.",
+     "resp": [
+      "must",
+      "have to"
+     ],
+     "exp": "Must indica obrigação: you must bring your card."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "You should speak quietly because other people are working.",
+     "exp": "Quietly: QUAI-et-li. Should: o 'l' é mudo, soa /shud/."
+    },
+    {
+     "t": "mc",
+     "q": "What can't you do in the reading room?",
+     "op": [
+      "drink water",
+      "eat",
+      "ask a librarian",
+      "speak quietly"
+     ],
+     "r": 1,
+     "exp": "You can't eat in the reading room, but you can drink water."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "You",
+      "can",
+      "borrow",
+      "up",
+      "to",
+      "six",
+      "books"
+     ],
+     "resp": "You can borrow up to six books",
+     "exp": "Can + verbo base. Up to six = no máximo seis."
+    },
+    {
+     "t": "gap",
+     "q": "Students under fourteen ___ use the computers after five.",
+     "resp": [
+      "mustn't",
+      "must not",
+      "can't",
+      "cannot"
+     ],
+     "exp": "O aviso proíbe: mustn't (must not) ou can't."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: quais são as regras da sua escola?",
+     "frase": "What rules do you have at your school?",
+     "modelo": "We must wear a uniform and we can't use phones in class.",
+     "min": 5,
+     "chave": [
+      "must",
+      "mustn't",
+      "can't",
+      "have to",
+      "should",
+      "can"
+     ],
+     "exp": "Use must / can't / have to + verbo: We can't eat in class."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is true about the meeting room?",
+     "op": [
+      "You don't need to book it.",
+      "You must book it one day before.",
+      "You can only use it after five.",
+      "You should pay 20p to use it."
+     ],
+     "r": 1,
+     "exp": "You must book the meeting room at least one day before. Só a mesa (desk) não precisa de reserva."
+    },
+    {
+     "t": "gap",
+     "q": "If you forget to return a book, you ___ to pay 20p a day.",
+     "resp": [
+      "have"
+     ],
+     "exp": "Have to = obrigação. Com you: have to."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Directions to a party",
+   "objetivo": "Seguir indicações de lugar, caminho e horário.",
+   "foco": "Prepositions of place, movement and time",
+   "explicacao": [
+    "Lugar: next to (ao lado de), opposite (em frente a), between (entre), behind (atrás de), in front of.",
+    "Movimento: along (ao longo de), across/cross (atravessar), past (passar por), over (sobre), turn left/right.",
+    "Tempo: at + hora (at seven), on + dia (on Friday), in + parte do dia (in the evening), from ... to.",
+    "Get on/off a bus: entrar/sair do ônibus. Cuidado: at the corner, in the kitchen, on the second floor."
+   ],
+   "vocab": [
+    {
+     "en": "opposite",
+     "pt": "em frente a"
+    },
+    {
+     "en": "traffic lights",
+     "pt": "semáforo"
+    },
+    {
+     "en": "bridge",
+     "pt": "ponte"
+    },
+    {
+     "en": "between",
+     "pt": "entre"
+    },
+    {
+     "en": "next to",
+     "pt": "ao lado de"
+    },
+    {
+     "en": "chemist",
+     "pt": "farmácia (UK)"
+    },
+    {
+     "en": "to ring the bell",
+     "pt": "tocar a campainha"
+    },
+    {
+     "en": "to get off",
+     "pt": "descer (do ônibus)"
+    }
+   ],
+   "material": {
+    "titulo": "How to get to my flat",
+    "texto": "Hi Nina, here's how to get to my flat. Get off the bus at the post office, which is opposite the bank. Walk along Park Road until you reach the traffic lights, then turn left. Go past the cinema and cross the bridge over the river. My building is between the pizza restaurant and a small shop, next to the chemist. It's the green door. The party starts at seven on Friday evening, but you can come at half past six if you want to help me. I'm in the kitchen from five, so ring the bell twice. Don't use the side door - it's broken. See you on Friday! Kate"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Where should Nina get off the bus?",
+     "op": [
+      "at the post office",
+      "at the bank",
+      "at the cinema",
+      "by the river"
+     ],
+     "r": 0,
+     "exp": "Get off the bus at the post office. O banco fica em frente (opposite)."
+    },
+    {
+     "t": "gap",
+     "q": "Walk ___ Park Road until you reach the traffic lights.",
+     "resp": [
+      "along"
+     ],
+     "exp": "Along = ao longo de uma rua."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Go past the cinema and cross the bridge over the river.",
+     "exp": "Bridge: brídj. River: RI-ver, com o 'r' inicial forte."
+    },
+    {
+     "t": "mc",
+     "q": "Where is Kate's building?",
+     "op": [
+      "opposite the cinema",
+      "between the pizza restaurant and a small shop",
+      "next to the bank",
+      "behind the post office"
+     ],
+     "r": 1,
+     "exp": "My building is between the pizza restaurant and a small shop."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Turn",
+      "left",
+      "at",
+      "the",
+      "traffic",
+      "lights"
+     ],
+     "resp": "Turn left at the traffic lights",
+     "exp": "Verbo no imperativo + direção + at + lugar."
+    },
+    {
+     "t": "gap",
+     "q": "The party starts ___ seven on Friday evening.",
+     "resp": [
+      "at"
+     ],
+     "exp": "At + hora exata: at seven."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: como você vai de casa até a escola?",
+     "frase": "How do you get from your home to school?",
+     "modelo": "I walk along my street and turn right at the bank.",
+     "min": 5,
+     "chave": [
+      "walk",
+      "turn",
+      "left",
+      "right",
+      "along",
+      "past",
+      "bus"
+     ],
+     "exp": "Use verbos de caminho: walk along, turn left, go past, cross."
+    },
+    {
+     "t": "mc",
+     "q": "When can Nina arrive if she wants to help?",
+     "op": [
+      "at seven",
+      "at half past six",
+      "at five",
+      "at half past seven"
+     ],
+     "r": 1,
+     "exp": "You can come at half past six if you want to help me. A festa começa às sete."
+    },
+    {
+     "t": "gap",
+     "q": "Kate will be in the kitchen ___ five o'clock, so Nina should ring the bell.",
+     "resp": [
+      "from",
+      "after"
+     ],
+     "exp": "From five = a partir das cinco. After five também faz sentido aqui."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Notices at the station",
+   "objetivo": "Entender avisos curtos de viagem e transporte.",
+   "foco": "Travel vocabulary; instructions with must/should; because of",
+   "explicacao": [
+    "Avisos de viagem usam frases curtas: Platform 3: the train is cancelled = o trem não vai sair.",
+    "Delayed/late = atrasado; cancelled = cancelado; platform = plataforma; single/return ticket = passagem de ida / de ida e volta.",
+    "Because of + substantivo explica o motivo: Trains are late because of work on the line.",
+    "Instruções: You must buy a ticket before you travel. Passengers should wait here. Leia o aviso inteiro antes de marcar."
+   ],
+   "vocab": [
+    {
+     "en": "platform",
+     "pt": "plataforma"
+    },
+    {
+     "en": "cancelled",
+     "pt": "cancelado"
+    },
+    {
+     "en": "passenger",
+     "pt": "passageiro(a)"
+    },
+    {
+     "en": "ticket",
+     "pt": "passagem, bilhete"
+    },
+    {
+     "en": "luggage",
+     "pt": "bagagem"
+    },
+    {
+     "en": "information desk",
+     "pt": "balcão de informações"
+    },
+    {
+     "en": "delay",
+     "pt": "atraso"
+    },
+    {
+     "en": "return ticket",
+     "pt": "passagem de ida e volta"
+    }
+   ],
+   "material": {
+    "titulo": "Ashford Station notices",
+    "texto": "Ashford Station - Notices. Platform 3: the 10.15 train to London is cancelled. Passengers should take the 10.40 from Platform 5. Tickets: buy your ticket before you travel. You can't buy one on the train after 9 pm. Lost luggage: ask at the information desk, open from 8 am to 6 pm. Taxis: please wait at the front of the station. Cheap day return tickets are available for passengers who travel after 9.30 am. Delays: because of work on the line, trains to Bristol are 20 minutes late today. Lifts: if you have heavy bags, please use the lift next to Platform 1. Café: open every day, with free Wi-Fi for customers."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What should passengers for the 10.15 train to London do?",
+     "op": [
+      "Wait on Platform 3.",
+      "Take the 10.40 train from Platform 5.",
+      "Buy a ticket on the train.",
+      "Ask for a taxi."
+     ],
+     "r": 1,
+     "exp": "O 10.15 está cancelado. Passengers should take the 10.40 from Platform 5."
+    },
+    {
+     "t": "gap",
+     "q": "You must buy your ticket ___ you travel.",
+     "resp": [
+      "before"
+     ],
+     "exp": "Buy your ticket before you travel = compre antes de viajar."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Please wait for taxis at the front of the station.",
+     "exp": "Station: ESTÊ-shan. Taxis: TÉK-siz."
+    },
+    {
+     "t": "mc",
+     "q": "Who can use the cheap day return tickets?",
+     "op": [
+      "anyone, at any time",
+      "people who travel after 9.30 am",
+      "people who travel before 9.30 am",
+      "only people with luggage"
+     ],
+     "r": 1,
+     "exp": "Cheap day return tickets are available for passengers who travel after 9.30 am."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Trains",
+      "to",
+      "Bristol",
+      "are",
+      "twenty",
+      "minutes",
+      "late"
+     ],
+     "resp": "Trains to Bristol are twenty minutes late",
+     "exp": "Late = atrasado. Ordem: sujeito + are + tempo + late."
+    },
+    {
+     "t": "gap",
+     "q": "If you lose your luggage, you should ask at the information ___.",
+     "resp": [
+      "desk"
+     ],
+     "exp": "Information desk = balcão de informações."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: como você costuma viajar para a escola ou o trabalho?",
+     "frase": "How do you usually travel to school or work?",
+     "modelo": "I usually go by bus. It takes twenty minutes.",
+     "min": 5,
+     "chave": [
+      "bus",
+      "train",
+      "walk",
+      "car",
+      "bike",
+      "by",
+      "takes"
+     ],
+     "exp": "Use by + transporte: by bus, by train, by car. On foot = a pé."
+    },
+    {
+     "t": "mc",
+     "q": "The 10.15 train is cancelled. This means that it...",
+     "op": [
+      "is late",
+      "will not run",
+      "is full",
+      "leaves early"
+     ],
+     "r": 1,
+     "exp": "Cancelled = cancelado, o trem não vai sair."
+    },
+    {
+     "t": "gap",
+     "q": "Trains to Bristol are late ___ of work on the line.",
+     "resp": [
+      "because"
+     ],
+     "exp": "Because of + substantivo explica o motivo."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "A shopping trip",
+   "objetivo": "Entender um relato de compras: preços, tamanhos, descontos e trocas.",
+   "foco": "Shopping vocabulary; too/enough; much/many",
+   "explicacao": [
+    "Vocabulário de compras: sale (liquidação), half price (metade do preço), receipt (recibo), to fit (servir), to try on (provar).",
+    "Too = demais (negativo): too big. Enough = suficiente: not big enough.",
+    "Pagamento: pay by card, pay in cash. Desconto: ten per cent off; get your money back = ser reembolsado.",
+    "Comparação de preço: cheap/cheaper, expensive. Pergunta: How much is it? / How much are these jeans?"
+   ],
+   "vocab": [
+    {
+     "en": "sale",
+     "pt": "liquidação"
+    },
+    {
+     "en": "half price",
+     "pt": "metade do preço"
+    },
+    {
+     "en": "assistant",
+     "pt": "vendedor(a)"
+    },
+    {
+     "en": "receipt",
+     "pt": "recibo"
+    },
+    {
+     "en": "to fit",
+     "pt": "servir (tamanho)"
+    },
+    {
+     "en": "per cent off",
+     "pt": "por cento de desconto"
+    },
+    {
+     "en": "to take back",
+     "pt": "devolver"
+    },
+    {
+     "en": "pair of jeans",
+     "pt": "calça jeans"
+    }
+   ],
+   "material": {
+    "titulo": "Looking for a jacket",
+    "texto": "Last weekend I went to the new shopping centre with my sister. I wanted a jacket because the weather is getting colder. The first shop had a sale: everything was half price! But the jackets were too big, and the only small one was yellow. I don't like yellow. In the second shop, I found a nice grey jacket for £45. It was a bit expensive, so I asked the assistant if she had a cheaper one. She said they didn't, but I could use my student card to get ten per cent off. I paid by card and got a receipt. My sister bought two T-shirts and a pair of jeans, but they didn't fit her, so she took them back the next day and got her money back. Next time I'll shop online."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What was the problem with the small jacket in the first shop?",
+     "op": [
+      "It was too expensive.",
+      "It was yellow.",
+      "It was half price.",
+      "It didn't fit."
+     ],
+     "r": 1,
+     "exp": "The only small one was yellow, and the writer doesn't like yellow. Os outros eram grandes demais."
+    },
+    {
+     "t": "gap",
+     "q": "The assistant said she could use her student card to get ten per cent ___.",
+     "resp": [
+      "off"
+     ],
+     "exp": "Ten per cent off = dez por cento de desconto."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "I paid by card and got a receipt.",
+     "exp": "Receipt: ri-SIT (o 'p' é mudo). Card: cárd."
+    },
+    {
+     "t": "mc",
+     "q": "Why did the sister take her clothes back to the shop?",
+     "op": [
+      "They were too expensive.",
+      "They didn't fit her.",
+      "She didn't like the colours.",
+      "They were half price."
+     ],
+     "r": 1,
+     "exp": "They didn't fit her, so she took them back and got her money back."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Everything",
+      "in",
+      "the",
+      "shop",
+      "was",
+      "half",
+      "price"
+     ],
+     "resp": "Everything in the shop was half price",
+     "exp": "Half price = metade do preço. Ordem: sujeito + was + complemento."
+    },
+    {
+     "t": "gap",
+     "q": "The grey jacket was a bit expensive, so she asked for a ___ one. (CHEAP)",
+     "resp": [
+      "cheaper"
+     ],
+     "exp": "Comparativo de adjetivo curto: cheap - cheaper.",
+     "dica": "CHEAP"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você gosta de fazer compras? O que costuma comprar?",
+     "frase": "Do you like shopping? What do you usually buy?",
+     "modelo": "I like shopping for clothes. I usually buy T-shirts.",
+     "min": 5,
+     "chave": [
+      "buy",
+      "bought",
+      "like",
+      "shop",
+      "clothes",
+      "shoes",
+      "usually"
+     ],
+     "exp": "Use I usually buy + coisa. Diga também se prefere loja ou internet."
+    },
+    {
+     "t": "mc",
+     "q": "Can I pay ___ card?",
+     "op": [
+      "by",
+      "with",
+      "in",
+      "on"
+     ],
+     "r": 0,
+     "exp": "A expressão fixa é pay by card (ou pay in cash)."
+    },
+    {
+     "t": "gap",
+     "q": "The jeans didn't ___ her, so she took them back.",
+     "resp": [
+      "fit"
+     ],
+     "exp": "To fit = servir no tamanho certo."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "A message to the coach",
+   "objetivo": "Entender uma mensagem sobre saúde e os conselhos do médico.",
+   "foco": "Health vocabulary; should/shouldn't; told ... to; times a day",
+   "explicacao": [
+    "Vocabulário de saúde: headache (dor de cabeça), sore throat (dor de garganta), cold (resfriado), temperature (febre), medicine (remédio).",
+    "Conselho com should: You should rest. You shouldn't play sport.",
+    "Reported advice: The doctor told me to stay at home (told + pessoa + to + verbo).",
+    "Frequência: once / twice / three times a day. Take it after meals = depois das refeições."
+   ],
+   "vocab": [
+    {
+     "en": "headache",
+     "pt": "dor de cabeça"
+    },
+    {
+     "en": "sore throat",
+     "pt": "dor de garganta"
+    },
+    {
+     "en": "cold",
+     "pt": "resfriado"
+    },
+    {
+     "en": "temperature",
+     "pt": "febre, temperatura"
+    },
+    {
+     "en": "medicine",
+     "pt": "remédio"
+    },
+    {
+     "en": "to rest",
+     "pt": "descansar"
+    },
+    {
+     "en": "meal",
+     "pt": "refeição"
+    },
+    {
+     "en": "to get worse",
+     "pt": "piorar"
+    }
+   ],
+   "material": {
+    "titulo": "An email from Tom",
+    "texto": "Dear Mr Evans, I'm sorry, but I can't come to football practice on Thursday. On Tuesday night I had a terrible headache and a sore throat, so I went to see the doctor yesterday morning. She said I had a bad cold and a slight temperature. She told me to stay at home for two days, drink lots of water and get plenty of rest. She also gave me some medicine to take three times a day after meals. I shouldn't do any sport until next week, in case I get worse. I feel a bit better today, but my nose is still red! I hope I can play in the match on the twentieth. Best wishes, Tom"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why is Tom writing to Mr Evans?",
+     "op": [
+      "to say he can't come to practice",
+      "to ask for the match time",
+      "to say he has a new doctor",
+      "to invite him to a match"
+     ],
+     "r": 0,
+     "exp": "Tom escreve para avisar: I can't come to football practice on Thursday."
+    },
+    {
+     "t": "gap",
+     "q": "Tom had a headache and a sore ___.",
+     "resp": [
+      "throat"
+     ],
+     "exp": "Sore throat = dor de garganta."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "She told me to stay at home and drink lots of water.",
+     "exp": "Throat: /thrôut/ com 'th' de língua entre os dentes. Water: UÓ-ter."
+    },
+    {
+     "t": "mc",
+     "q": "How often should Tom take the medicine?",
+     "op": [
+      "once a day",
+      "three times a day after meals",
+      "only at night",
+      "every week"
+     ],
+     "r": 1,
+     "exp": "The medicine: three times a day after meals."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "shouldn't",
+      "do",
+      "any",
+      "sport",
+      "until",
+      "next",
+      "week"
+     ],
+     "resp": "I shouldn't do any sport until next week",
+     "exp": "Shouldn't + verbo base. Any é usado em frases negativas."
+    },
+    {
+     "t": "gap",
+     "q": "Tom has a bad cold and a slight ___.",
+     "resp": [
+      "temperature",
+      "fever"
+     ],
+     "exp": "Temperature aqui significa febre leve (slight)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você faz quando está resfriado?",
+     "frase": "What do you do when you have a cold?",
+     "modelo": "I stay in bed and drink hot tea.",
+     "min": 5,
+     "chave": [
+      "stay",
+      "drink",
+      "rest",
+      "sleep",
+      "take",
+      "medicine",
+      "go"
+     ],
+     "exp": "Use verbos simples no presente: I stay at home, I drink tea, I take medicine."
+    },
+    {
+     "t": "mc",
+     "q": "You look terrible! You ___ go to the doctor.",
+     "op": [
+      "should",
+      "should to",
+      "would",
+      "shall to"
+     ],
+     "r": 0,
+     "exp": "Conselho: should + verbo base, sem to."
+    },
+    {
+     "t": "gap",
+     "q": "The doctor told Tom ___ stay at home for two days.",
+     "resp": [
+      "to"
+     ],
+     "exp": "Told + pessoa + to + verbo: told Tom to stay."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Life at Oakfield School",
+   "objetivo": "Entender a rotina e as regras de uma escola.",
+   "foco": "School vocabulary; present simple vs future; since/for; have to",
+   "explicacao": [
+    "Present simple para rotinas: School starts at 8.30. We have six lessons.",
+    "Have to = obrigação: Everyone has to bring a packed lunch. Don't have to = não precisa.",
+    "Be good at + substantivo: I'm not good at maths. Be interested in, be afraid of também usam preposição fixa.",
+    "Since + ponto no passado; for + duração: I've been here since I was eleven."
+   ],
+   "vocab": [
+    {
+     "en": "subject",
+     "pt": "matéria"
+    },
+    {
+     "en": "lesson",
+     "pt": "aula"
+    },
+    {
+     "en": "break",
+     "pt": "intervalo"
+    },
+    {
+     "en": "mark",
+     "pt": "nota"
+    },
+    {
+     "en": "term",
+     "pt": "trimestre"
+    },
+    {
+     "en": "debate club",
+     "pt": "clube de debate"
+    },
+    {
+     "en": "packed lunch",
+     "pt": "lanche levado de casa"
+    },
+    {
+     "en": "uniform",
+     "pt": "uniforme"
+    }
+   ],
+   "material": {
+    "titulo": "Carla's school day",
+    "texto": "Hi, I'm Carla and I'm in Year 9 at Oakfield School. School starts at 8.30 and finishes at 3.45. We have six lessons a day, with a break at eleven and an hour for lunch. My favourite subject is science, because our teacher, Mr Khan, does exciting experiments. I'm not very good at maths, so I go to a homework club on Wednesdays. Last term I got a good mark in history and my teacher said I should join the debate club. Next month we're going on a trip to the science museum, and everyone has to bring a packed lunch. We don't wear a uniform, only a school jumper. I've been at this school since I was eleven and I've made lots of friends."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What time does the school day finish?",
+     "op": [
+      "3.15",
+      "3.45",
+      "4.30",
+      "8.30"
+     ],
+     "r": 1,
+     "exp": "School starts at 8.30 and finishes at 3.45."
+    },
+    {
+     "t": "gap",
+     "q": "Carla is not very good ___ maths.",
+     "resp": [
+      "at"
+     ],
+     "exp": "Be good at + matéria."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "We don't wear a uniform, only a school jumper.",
+     "exp": "Uniform: IU-ni-form. Jumper: DJÂM-per."
+    },
+    {
+     "t": "mc",
+     "q": "Why does Carla like science?",
+     "op": [
+      "She always gets the best marks.",
+      "Mr Khan does exciting experiments.",
+      "She goes to a science club.",
+      "It is easy for her."
+     ],
+     "r": 1,
+     "exp": "Our teacher, Mr Khan, does exciting experiments."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Everyone",
+      "has",
+      "to",
+      "bring",
+      "a",
+      "packed",
+      "lunch"
+     ],
+     "resp": "Everyone has to bring a packed lunch",
+     "exp": "Everyone usa has to (3ª pessoa). Packed lunch = lanche de casa."
+    },
+    {
+     "t": "gap",
+     "q": "Last term Carla ___ a good mark in history. (GET)",
+     "resp": [
+      "got"
+     ],
+     "exp": "Get é irregular: get - got.",
+     "dica": "GET"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: qual é a sua matéria favorita e por quê?",
+     "frase": "What is your favourite subject and why?",
+     "modelo": "My favourite subject is history because it is interesting.",
+     "min": 5,
+     "chave": [
+      "favourite",
+      "because",
+      "subject",
+      "like",
+      "interesting",
+      "history",
+      "maths"
+     ],
+     "exp": "Use My favourite subject is... because..."
+    },
+    {
+     "t": "mc",
+     "q": "What did Carla's teacher say about the debate club?",
+     "op": [
+      "Carla should join it.",
+      "Carla must leave it.",
+      "Carla can't go.",
+      "Carla has to wear a uniform."
+     ],
+     "r": 0,
+     "exp": "My teacher said I should join the debate club."
+    },
+    {
+     "t": "gap",
+     "q": "Carla has been at the school ___ she was eleven.",
+     "resp": [
+      "since"
+     ],
+     "exp": "Since + ponto no passado (she was eleven)."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Summer job at the café",
+   "objetivo": "Entender um anúncio de emprego: requisitos, horários e pagamento.",
+   "foco": "Work vocabulary; must/don't need to; will for future; before/after",
+   "explicacao": [
+    "Anúncios de emprego usam: You must be at least sixteen (idade mínima). You don't need experience (não é necessário).",
+    "Verbos de trabalho: to take orders, to serve customers, to apply for a job, to arrange an interview.",
+    "Pagamento: £9 an hour (por hora). Free lunch = almoço grátis.",
+    "Futuro no anúncio: You will wear a T-shirt. She is going to talk to ten students. Preste atenção em before (antes de) e after (depois de)."
+   ],
+   "vocab": [
+    {
+     "en": "job",
+     "pt": "emprego"
+    },
+    {
+     "en": "customer",
+     "pt": "cliente"
+    },
+    {
+     "en": "experience",
+     "pt": "experiência"
+    },
+    {
+     "en": "to apply",
+     "pt": "candidatar-se"
+    },
+    {
+     "en": "interview",
+     "pt": "entrevista"
+    },
+    {
+     "en": "to take orders",
+     "pt": "anotar pedidos"
+    },
+    {
+     "en": "at least",
+     "pt": "pelo menos"
+    },
+    {
+     "en": "an hour",
+     "pt": "por hora"
+    }
+   ],
+   "material": {
+    "titulo": "Sunny Café needs you",
+    "texto": "Summer job at Sunny Café. We are looking for two friendly students to work with us from July to September. You don't need experience, but you must be at least sixteen. The work is from Thursday to Sunday, between ten and four. You will take orders, serve customers and help in the kitchen. We pay £9 an hour and you can eat lunch for free. You'll wear a green T-shirt, which we give you. Please bring your own black trousers. If you are interested, send your name and a short email to Mrs Hart before 30 May. She will phone you to arrange an interview. She is going to talk to ten students and choose the best two."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Who can apply for the job?",
+     "op": [
+      "Anyone of any age",
+      "Students aged sixteen or over",
+      "People with experience",
+      "Only kitchen workers"
+     ],
+     "r": 1,
+     "exp": "You must be at least sixteen. Não é preciso ter experiência."
+    },
+    {
+     "t": "gap",
+     "q": "You ___ need experience for the job.",
+     "resp": [
+      "don't",
+      "do not"
+     ],
+     "exp": "Don't need = não é necessário."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "You will take orders, serve customers and help in the kitchen.",
+     "exp": "Customers: CÂS-ta-mers. Kitchen: KÍ-tchen."
+    },
+    {
+     "t": "mc",
+     "q": "What do the workers get?",
+     "op": [
+      "black trousers and a free lunch",
+      "a green T-shirt and a free lunch",
+      "£9 a day and trousers",
+      "a free coffee and a bus ticket"
+     ],
+     "r": 1,
+     "exp": "The café gives a green T-shirt and a free lunch. As calças pretas o aluno traz."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Send",
+      "a",
+      "short",
+      "email",
+      "to",
+      "Mrs",
+      "Hart"
+     ],
+     "resp": "Send a short email to Mrs Hart",
+     "exp": "Imperativo: verbo no início, sem sujeito."
+    },
+    {
+     "t": "gap",
+     "q": "Applicants must send their email ___ 30 May.",
+     "resp": [
+      "before"
+     ],
+     "exp": "Before 30 May = antes do dia 30 de maio."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: que trabalho você gostaria de ter no futuro? Por quê?",
+     "frase": "What job would you like to do in the future?",
+     "modelo": "I'd like to be a nurse because I want to help people.",
+     "min": 6,
+     "chave": [
+      "like",
+      "want",
+      "be",
+      "because",
+      "job",
+      "work",
+      "help"
+     ],
+     "exp": "Use I'd like to be + profissão, e explique com because."
+    },
+    {
+     "t": "mc",
+     "q": "What will happen after you send the email?",
+     "op": [
+      "Mrs Hart will phone you to arrange an interview.",
+      "You will start work the next day.",
+      "You must bring black trousers.",
+      "You will pay for the T-shirt."
+     ],
+     "r": 0,
+     "exp": "She will phone you to arrange an interview."
+    },
+    {
+     "t": "gap",
+     "q": "Mrs Hart is going to ___ to ten students.",
+     "resp": [
+      "talk",
+      "speak"
+     ],
+     "exp": "Going to + verbo base: talk / speak."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Phones and screens",
+   "objetivo": "Entender uma opinião pessoal sobre tecnologia.",
+   "foco": "Technology vocabulary; past simple vs present perfect; too/enough; gerunds",
+   "explicacao": [
+    "Vocabulário: battery, charge, online, screen, to switch off / turn off, to chat, to watch videos.",
+    "Past simple para o passado terminado: Last month my battery died. Present perfect para ligação com agora: Since then I've turned off my phone.",
+    "Depois de preposição usamos -ing: good for sleeping, a break from using screens.",
+    "Opinião: I believe..., I think..., He thinks that... Conectores: but, so, however."
+   ],
+   "vocab": [
+    {
+     "en": "battery",
+     "pt": "bateria"
+    },
+    {
+     "en": "to charge",
+     "pt": "carregar"
+    },
+    {
+     "en": "online",
+     "pt": "conectado, na internet"
+    },
+    {
+     "en": "screen",
+     "pt": "tela"
+    },
+    {
+     "en": "to switch off",
+     "pt": "desligar"
+    },
+    {
+     "en": "to chat",
+     "pt": "bater papo"
+    },
+    {
+     "en": "classmate",
+     "pt": "colega de turma"
+    },
+    {
+     "en": "break",
+     "pt": "pausa"
+    }
+   ],
+   "material": {
+    "titulo": "My life with a phone",
+    "texto": "I got my first smartphone when I was twelve, and it changed my life. Before that, I used my mum's old laptop to send emails and play games. Now I use my phone to chat with friends, watch videos and check the weather. However, I have learnt that it isn't always a good idea to be online all day. Last month my battery died during a school trip, and I couldn't call my parents. I felt worried at first, but then I talked to my classmates and we had a great time. Since then I've turned off my phone during meals and I always charge it at night. My brother thinks I'm too serious, but I believe a short break from screens is good for everyone."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What did the writer use before getting a phone?",
+     "op": [
+      "a tablet",
+      "his or her mum's old laptop",
+      "a games console",
+      "a school computer"
+     ],
+     "r": 1,
+     "exp": "Before that, I used my mum's old laptop."
+    },
+    {
+     "t": "gap",
+     "q": "The writer's phone battery ___ during a school trip.",
+     "resp": [
+      "died"
+     ],
+     "exp": "Past simple de die: died."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Since then I've turned off my phone during meals.",
+     "exp": "I've = /aiv/. Meals: míulz."
+    },
+    {
+     "t": "mc",
+     "q": "How did the writer feel after the battery died?",
+     "op": [
+      "Angry all day",
+      "Worried at first, but then happy",
+      "Happy at once",
+      "Bored all day"
+     ],
+     "r": 1,
+     "exp": "I felt worried at first, but then I talked to my classmates and we had a great time."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "always",
+      "charge",
+      "my",
+      "phone",
+      "at",
+      "night"
+     ],
+     "resp": "I always charge my phone at night",
+     "exp": "Advérbio de frequência (always) vem antes do verbo principal."
+    },
+    {
+     "t": "gap",
+     "q": "The writer has turned off the phone during meals ___ the school trip.",
+     "resp": [
+      "since"
+     ],
+     "exp": "Since + ponto no passado; aqui, desde a viagem (since then)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: com que frequência você usa o celular e para quê?",
+     "frase": "How often do you use your phone, and what do you use it for?",
+     "modelo": "I use my phone every day to talk to friends and listen to music.",
+     "min": 6,
+     "chave": [
+      "use",
+      "every",
+      "phone",
+      "for",
+      "hours",
+      "day",
+      "friends"
+     ],
+     "exp": "Use I use my phone to + verbo, e diga a frequência: every day, for two hours."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer's brother think?",
+     "op": [
+      "The writer is too serious.",
+      "The writer should buy a new phone.",
+      "Screens are good for everyone.",
+      "The writer is always online."
+     ],
+     "r": 0,
+     "exp": "My brother thinks I'm too serious."
+    },
+    {
+     "t": "gap",
+     "q": "A short break from screens is good ___ everyone.",
+     "resp": [
+      "for"
+     ],
+     "exp": "Good for + pessoa."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "The lost wallet",
+   "objetivo": "Seguir uma pequena história, conectar fatos e inferir sentidos.",
+   "foco": "Mixed tenses: past simple, past continuous, present perfect; have to / don't have to; narrative linkers",
+   "explicacao": [
+    "Em histórias: past simple para os fatos (He found a wallet), past continuous para o cenário (He was thinking), present perfect para o que chega ao presente (They have been friends ever since).",
+    "Conectores de narrativa: when, while, so, because, in the end, a few minutes later.",
+    "Don't have to = não é obrigatório. É diferente de mustn't (proibido): You don't have to give me anything.",
+    "Em questões de compreensão, procure no texto a frase certa e compare com cada opção: distratores usam palavras do texto, mas dizem outra coisa."
+   ],
+   "vocab": [
+    {
+     "en": "wallet",
+     "pt": "carteira (de dinheiro)"
+    },
+    {
+     "en": "to belong to",
+     "pt": "pertencer a"
+    },
+    {
+     "en": "secretary",
+     "pt": "secretário(a)"
+    },
+    {
+     "en": "canteen",
+     "pt": "cantina"
+    },
+    {
+     "en": "to offer",
+     "pt": "oferecer"
+    },
+    {
+     "en": "nearly",
+     "pt": "quase"
+    },
+    {
+     "en": "in the end",
+     "pt": "no fim"
+    },
+    {
+     "en": "ever since",
+     "pt": "desde então"
+    }
+   ],
+   "material": {
+    "titulo": "Oliver and the wallet",
+    "texto": "Last Friday, Oliver found a brown wallet on the bus. There was no name inside, but he saw a student card and thirty pounds. He was thinking about what to do when the bus stopped near the school. He decided to take the wallet to the office. The secretary, Mrs Price, looked at the card and smiled. 'It belongs to Sara in Year 10,' she said. 'She was looking for it all morning. I'll call her now.' A few minutes later Sara ran into the office. She was so happy that she nearly cried. 'I've never lost anything before!' she said. 'I was going to buy a present for my mum with that money.' She offered Oliver five pounds, but he said no. 'You don't have to give me anything,' he said. In the end, she bought him a hot chocolate in the canteen. They have been friends ever since."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Where did Oliver find the wallet?",
+     "op": [
+      "in the canteen",
+      "on the bus",
+      "near the school gate",
+      "in the office"
+     ],
+     "r": 1,
+     "exp": "Oliver found a brown wallet on the bus."
+    },
+    {
+     "t": "gap",
+     "q": "There ___ no name inside the wallet.",
+     "resp": [
+      "was"
+     ],
+     "exp": "There was + substantivo singular no passado."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "She was so happy that she nearly cried.",
+     "exp": "Nearly: NIR-li. Cried: crai-d."
+    },
+    {
+     "t": "mc",
+     "q": "What was Oliver doing when the bus stopped near the school?",
+     "op": [
+      "sleeping",
+      "talking to Sara",
+      "thinking about what to do",
+      "reading the student card"
+     ],
+     "r": 2,
+     "exp": "He was thinking about what to do when the bus stopped."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Sara",
+      "was",
+      "going",
+      "to",
+      "buy",
+      "a",
+      "present",
+      "for",
+      "her",
+      "mum"
+     ],
+     "resp": "Sara was going to buy a present for her mum",
+     "exp": "Was going to + verbo = ia fazer algo (plano no passado)."
+    },
+    {
+     "t": "gap",
+     "q": "'I ___ never lost anything before!' said Sara.",
+     "resp": [
+      "have"
+     ],
+     "exp": "Experiência de vida até agora: present perfect (I have never lost)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você já perdeu ou achou algo importante? O que aconteceu?",
+     "frase": "Have you ever found or lost something important? What happened?",
+     "modelo": "I once lost my phone at the park, but my friend found it.",
+     "min": 6,
+     "chave": [
+      "lost",
+      "found",
+      "once",
+      "never",
+      "have",
+      "I"
+     ],
+     "exp": "Use I lost... / I found... para o fato, e I have never... se nunca aconteceu."
+    },
+    {
+     "t": "mc",
+     "q": "What does 'You don't have to give me anything' mean?",
+     "op": [
+      "Giving me something is not necessary.",
+      "You must not give me anything.",
+      "You can't give me anything.",
+      "You should give me something."
+     ],
+     "r": 0,
+     "exp": "Don't have to = não é necessário. Mustn't é que significa proibido."
+    },
+    {
+     "t": "gap",
+     "q": "Sara and Oliver ___ been friends ever since.",
+     "resp": [
+      "have"
+     ],
+     "exp": "Ever since + present perfect: have been."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado A2 Key Reading",
+   "objetivo": "Treinar no formato da prova: texto longo, vocabulário e lacunas.",
+   "foco": "Exam practice: Part 3 (long text, multiple choice), Part 4 (vocabulary), Part 5 (open cloze)",
+   "explicacao": [
+    "Part 3: leia o texto uma vez e depois procure a resposta de cada pergunta. As perguntas seguem a ordem do texto.",
+    "Part 4: escolha a palavra que combina com o resto da frase (vocabulário e expressões fixas).",
+    "Part 5: complete com UMA palavra. Pense na gramática: preposição, conector, auxiliar, comparativo.",
+    "Cuidado com os distratores: eles repetem palavras do texto, mas dizem outra coisa."
+   ],
+   "vocab": [
+    {
+     "en": "to repair",
+     "pt": "consertar"
+    },
+    {
+     "en": "tool",
+     "pt": "ferramenta"
+    },
+    {
+     "en": "to give up",
+     "pt": "desistir"
+    },
+    {
+     "en": "delighted",
+     "pt": "encantado, muito feliz"
+    },
+    {
+     "en": "to offer",
+     "pt": "oferecer"
+    },
+    {
+     "en": "local",
+     "pt": "do bairro, local"
+    },
+    {
+     "en": "to lend",
+     "pt": "emprestar"
+    },
+    {
+     "en": "to borrow",
+     "pt": "pegar emprestado"
+    }
+   ],
+   "material": {
+    "titulo": "The Bike Doctor",
+    "texto": "When Ravi Patel was thirteen, he got a bad surprise: his old bike broke on the way to school and the shop wanted £60 to repair it. 'That was too much,' he says, 'so I watched videos online and tried to fix it myself.' It took him a whole weekend, and at first he made it worse because he used the wrong tool. But he didn't give up, and on Monday morning the bike worked perfectly. Soon his friends began to ask for help. Ravi started a small repair club in his school's garage every Friday after lessons. Anyone can come, and the club is free, although most students bring a little money to buy parts. Mr Davis, the sports teacher, gave Ravi a few old tools and a table. Last month a local shop heard about the club and offered him a Saturday job. Ravi was delighted, but he has decided to wait until he's fourteen. 'I want to finish my exams first,' he says. 'But I'm going to keep the club open, because fixing things with other people is more fun than working alone.' Next year, he hopes to teach younger children how to ride safely."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why did Ravi try to fix his bike himself?",
+     "op": [
+      "The shop was closed.",
+      "The shop's price was too high.",
+      "He wanted a job in a shop.",
+      "His friends asked him to."
+     ],
+     "r": 1,
+     "exp": "The shop wanted £60 and Ravi said That was too much."
+    },
+    {
+     "t": "mc",
+     "q": "What happened when Ravi first tried to fix the bike?",
+     "op": [
+      "He fixed it at once.",
+      "He made it worse by using the wrong tool.",
+      "The shop helped him.",
+      "He lost his tool."
+     ],
+     "r": 1,
+     "exp": "At first he made it worse because he used the wrong tool; the bike worked on Monday."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Anyone can come, and the club is free.",
+     "exp": "Anyone: É-ni-uan. Free: fri, com o 'r' suave."
+    },
+    {
+     "t": "mc",
+     "q": "What did Mr Davis do for the club?",
+     "op": [
+      "He paid for the parts.",
+      "He gave Ravi some tools and a table.",
+      "He offered Ravi a job.",
+      "He taught the lessons."
+     ],
+     "r": 1,
+     "exp": "Mr Davis gave Ravi a few old tools and a table."
+    },
+    {
+     "t": "mc",
+     "q": "Why hasn't Ravi taken the Saturday job yet?",
+     "op": [
+      "The pay is too low.",
+      "He wants to finish his exams first.",
+      "He doesn't like working with other people.",
+      "The club needs him on Saturdays."
+     ],
+     "r": 1,
+     "exp": "I want to finish my exams first. Ele também diz que vai esperar até os quatorze anos."
+    },
+    {
+     "t": "mc",
+     "q": "Could you ___ me your pen, please? I forgot mine.",
+     "op": [
+      "lend",
+      "borrow",
+      "take",
+      "get"
+     ],
+     "r": 0,
+     "exp": "Lend = emprestar a alguém. Borrow = pegar emprestado (I'd like to borrow your pen)."
+    },
+    {
+     "t": "gap",
+     "q": "Ravi's bike broke ___ the way to school.",
+     "resp": [
+      "on"
+     ],
+     "exp": "A expressão fixa é on the way to."
+    },
+    {
+     "t": "mc",
+     "q": "Excuse me, how much is a return ___ to Leeds?",
+     "op": [
+      "ticket",
+      "trip",
+      "journey",
+      "travel"
+     ],
+     "r": 0,
+     "exp": "Return ticket = passagem de ida e volta."
+    },
+    {
+     "t": "gap",
+     "q": "Ravi was delighted, ___ he has decided to wait.",
+     "resp": [
+      "but"
+     ],
+     "exp": "But liga duas ideias contrárias: feliz, mas vai esperar."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você sabe consertar ou fazer alguma coisa? O quê?",
+     "frase": "Do you know how to repair or make something?",
+     "modelo": "I can fix a bike and I can cook pasta.",
+     "min": 5,
+     "chave": [
+      "can",
+      "fix",
+      "make",
+      "cook",
+      "repair",
+      "build"
+     ],
+     "exp": "Use I can + verbo: I can cook, I can fix my bike. Se não souber: I can't..."
+    },
+    {
+     "t": "mc",
+     "q": "My cousin is very ___ at languages. He speaks five!",
+     "op": [
+      "good",
+      "well",
+      "nice",
+      "fine"
+     ],
+     "r": 0,
+     "exp": "Be good at + substantivo. Well é advérbio (speaks well)."
+    },
+    {
+     "t": "gap",
+     "q": "For Ravi, fixing things with other people is more fun ___ working alone.",
+     "resp": [
+      "than"
+     ],
+     "exp": "Comparativo com more fun: more fun than."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "club",
+      "is",
+      "open",
+      "every",
+      "Friday",
+      "after",
+      "lessons"
+     ],
+     "resp": "The club is open every Friday after lessons",
+     "exp": "Every Friday = toda sexta. After lessons = depois das aulas."
+    }
+   ]
+  }
+ ]
+}
