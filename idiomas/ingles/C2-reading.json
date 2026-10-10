@@ -1015,15 +1015,15 @@
     },
     {
      "t": "mc",
-     "q": "Which word correctly completes the sentence? 'The collection's survival is, by any standard, ___.'",
+     "q": "Which word correctly completes the sentence? 'Archivists are racing against the steady ___ of magnetic tape.' (DETERIORATE)",
      "op": [
-      "precariousy",
-      "precarious",
-      "precariousness",
-      "precariously"
+      "deterioration",
+      "deteriorance",
+      "deteriorating",
+      "deteriorateness"
      ],
-     "r": 1,
-     "exp": "Depois do verbo 'is' precisamos de adjetivo: precarious. Precariously seria advérbio."
+     "r": 0,
+     "exp": "O substantivo de 'deteriorate' é 'deterioration' (sufixo -ation). 'Deteriorance' e 'deteriorateness' não existem; 'deteriorating' é adjetivo/particípio e não cabe depois de 'the steady ___ of'."
     },
     {
      "t": "order",
