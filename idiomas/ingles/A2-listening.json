@@ -1,0 +1,2964 @@
+{
+ "nivel": "A2",
+ "skill": "listening",
+ "exame": "A2 Key (KET)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "What time is it?",
+   "objetivo": "Entender horários em conversas curtas: horas cheias, meias horas e quinze minutos.",
+   "foco": "Telling the time: o'clock, half past, quarter past/to, twenty past",
+   "explicacao": [
+    "Hora cheia: It's eight o'clock. Meia hora: half past eight (8h30).",
+    "Quinze minutos depois: quarter past eight (8h15). Quinze minutos antes: quarter to nine (8h45).",
+    "Outros minutos: ten past eight, twenty past eight, twenty to nine.",
+    "Atenção: no áudio, 'quarter to eight' é 7h45, não 8h15. E 'half past seven' é 7h30, não 6h30."
+   ],
+   "vocab": [
+    {
+     "en": "quarter",
+     "pt": "quarto (15 min)"
+    },
+    {
+     "en": "half past",
+     "pt": "e meia"
+    },
+    {
+     "en": "o'clock",
+     "pt": "em ponto"
+    },
+    {
+     "en": "to leave",
+     "pt": "partir, sair"
+    },
+    {
+     "en": "to start",
+     "pt": "começar"
+    },
+    {
+     "en": "lesson",
+     "pt": "aula"
+    },
+    {
+     "en": "to collect",
+     "pt": "buscar"
+    },
+    {
+     "en": "hurry up",
+     "pt": "ande logo"
+    }
+   ],
+   "material": {
+    "titulo": "Late for the bus",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Mum, what time is it?"
+     },
+     {
+      "p": "B",
+      "t": "It's a quarter to eight, Tom. Your bus leaves at eight o'clock."
+     },
+     {
+      "p": "A",
+      "t": "Oh no! I thought it was half past seven."
+     },
+     {
+      "p": "B",
+      "t": "No, half past seven was fifteen minutes ago. Hurry up!"
+     },
+     {
+      "p": "A",
+      "t": "What time does the first lesson start?"
+     },
+     {
+      "p": "B",
+      "t": "At twenty past eight. Maths with Mr Brown. And lunch is at half past twelve."
+     },
+     {
+      "p": "A",
+      "t": "And football practice?"
+     },
+     {
+      "p": "B",
+      "t": "At four o'clock, but I'll collect you at a quarter past five."
+     },
+     {
+      "p": "A",
+      "t": "OK, Mum. Can I have my sandwich now?"
+     },
+     {
+      "p": "B",
+      "t": "It's in your bag. Now run!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What time does Tom's bus leave?",
+     "op": [
+      "Half past seven",
+      "Quarter to eight",
+      "Eight o'clock",
+      "Twenty past eight"
+     ],
+     "r": 2,
+     "exp": "A mãe diz: Your bus leaves at eight o'clock. Quarter to eight (7h45) é a hora atual e twenty past eight é a hora da aula."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The first lesson starts at ___ past eight.",
+     "resp": [
+      "twenty",
+      "20"
+     ],
+     "exp": "A aula começa às 8h20: twenty past eight.",
+     "ouvir": "The first lesson starts at twenty past eight."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Lunch is at half past twelve.",
+     "exp": "Half past: /haf pást/. Twelve termina com o som /v/, com os dentes no lábio.",
+     "ouvir": "Lunch is at half past twelve."
+    },
+    {
+     "t": "mc",
+     "q": "What time will Tom's mum collect him?",
+     "op": [
+      "At four o'clock",
+      "At a quarter to five",
+      "At a quarter past five",
+      "At half past five"
+     ],
+     "r": 2,
+     "exp": "O treino é às quatro, mas ela vai buscá-lo às 5h15: a quarter past five."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "What",
+      "time",
+      "does",
+      "the",
+      "first",
+      "lesson",
+      "start"
+     ],
+     "resp": "What time does the first lesson start?",
+     "exp": "Pergunta com what time + does + sujeito + verbo sem -s: start."
+    },
+    {
+     "t": "gap",
+     "q": "Segundo o diálogo: Lunch is at half past ___.",
+     "resp": [
+      "twelve",
+      "12"
+     ],
+     "exp": "Lunch is at half past twelve: meio-dia e meia."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda dizendo a que horas você acorda.",
+     "frase": "What time do you get up?",
+     "modelo": "I get up at half past six.",
+     "min": 4,
+     "chave": [
+      "at",
+      "past",
+      "quarter",
+      "o'clock",
+      "half"
+     ],
+     "exp": "Use: I get up at + hora. Ex.: at seven o'clock, at a quarter past six."
+    },
+    {
+     "t": "mc",
+     "q": "How long ago was it half past seven?",
+     "op": [
+      "Five minutes ago",
+      "Ten minutes ago",
+      "Fifteen minutes ago",
+      "Thirty minutes ago"
+     ],
+     "r": 2,
+     "exp": "São 7h45; 7h30 foi há 15 minutos (fifteen). Cuidado: twenty e half também aparecem no áudio, mas com outros sentidos."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I'll collect you at a ___ past five.",
+     "resp": [
+      "quarter"
+     ],
+     "exp": "A quarter past five = 5h15. Quarter significa um quarto de hora.",
+     "ouvir": "Football practice is at four o'clock, but I'll collect you at a quarter past five."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "How much is it?",
+   "objetivo": "Entender preços em libras e pence, troco e formas de pagamento.",
+   "foco": "Prices (£ and p); numbers 13-19 vs 30-90; change; cash and card",
+   "explicacao": [
+    "Preços: £3.50 lê-se three pounds fifty. 80p lê-se eighty pence.",
+    "Cuidado com os números: thirteen (13) e thirty (30) soam parecidos. Em thirTEEN a força está no final; em THIRty, no começo.",
+    "Perguntas úteis: How much is it? How much are they? Can I pay by card? Here's your change.",
+    "Cash = dinheiro em espécie; change = troco; note = cédula; coin = moeda."
+   ],
+   "vocab": [
+    {
+     "en": "how much",
+     "pt": "quanto custa"
+    },
+    {
+     "en": "pence",
+     "pt": "centavos de libra"
+    },
+    {
+     "en": "change",
+     "pt": "troco"
+    },
+    {
+     "en": "cash",
+     "pt": "dinheiro vivo"
+    },
+    {
+     "en": "by card",
+     "pt": "no cartão"
+    },
+    {
+     "en": "altogether",
+     "pt": "ao todo"
+    },
+    {
+     "en": "each",
+     "pt": "cada"
+    },
+    {
+     "en": "note",
+     "pt": "cédula"
+    }
+   ],
+   "material": {
+    "titulo": "At the stationery shop",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good morning. Can I help you?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, how much is this notebook?"
+     },
+     {
+      "p": "A",
+      "t": "The blue one is three pounds fifty and the red one is five pounds thirty."
+     },
+     {
+      "p": "B",
+      "t": "Hmm, and the pens?"
+     },
+     {
+      "p": "A",
+      "t": "They're eighty pence each, or two pounds for three."
+     },
+     {
+      "p": "B",
+      "t": "I'll take the blue notebook and three pens, please."
+     },
+     {
+      "p": "A",
+      "t": "That's five pounds fifty altogether."
+     },
+     {
+      "p": "B",
+      "t": "Can I pay by card?"
+     },
+     {
+      "p": "A",
+      "t": "Sorry, cash only today."
+     },
+     {
+      "p": "B",
+      "t": "No problem. Here's a ten-pound note."
+     },
+     {
+      "p": "A",
+      "t": "Thank you. Here's your change, four pounds fifty."
+     },
+     {
+      "p": "A",
+      "t": "Have a nice day!"
+     },
+     {
+      "p": "B",
+      "t": "You too. Goodbye."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How much is the blue notebook?",
+     "op": [
+      "£3.15",
+      "£3.50",
+      "£5.30",
+      "£5.50"
+     ],
+     "r": 1,
+     "exp": "The blue one is three pounds fifty. £5.30 é o caderno vermelho e £5.50 é o total da compra."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The pens are ___ pence each.",
+     "resp": [
+      "eighty",
+      "80"
+     ],
+     "exp": "Eighty pence (80p) cada caneta. Não confunda com eighteen (18).",
+     "ouvir": "The pens are eighty pence each."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "How much is this notebook?",
+     "exp": "How much: /hau mátch/. Notebook: a força está em NOTE.",
+     "ouvir": "How much is this notebook?"
+    },
+    {
+     "t": "mc",
+     "q": "What does the customer buy?",
+     "op": [
+      "A blue notebook and three pens",
+      "A red notebook and three pens",
+      "A blue notebook and one pen",
+      "A red notebook and a pen"
+     ],
+     "r": 0,
+     "exp": "I'll take the blue notebook and three pens. O caderno vermelho é só mencionado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Can",
+      "I",
+      "pay",
+      "by",
+      "card"
+     ],
+     "resp": "Can I pay by card?",
+     "exp": "Can I + verbo = pedir permissão. Pay by card = pagar no cartão."
+    },
+    {
+     "t": "gap",
+     "q": "Segundo o diálogo, o total é £___.",
+     "resp": [
+      "5.50",
+      "5.5",
+      "five fifty",
+      "five pounds fifty"
+     ],
+     "exp": "Notebook 3.50 + três canetas 2.00 = 5.50 (five pounds fifty)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga quanto custa um café na sua cidade.",
+     "frase": "How much is a cup of coffee in your town?",
+     "modelo": "A cup of coffee is about five reais.",
+     "min": 4,
+     "chave": [
+      "reais",
+      "pounds",
+      "dollars",
+      "euros",
+      "about",
+      "cost",
+      "is"
+     ],
+     "exp": "Use: It is about... ou It costs... Ex.: It costs six reais."
+    },
+    {
+     "t": "mc",
+     "q": "How much change does the customer get?",
+     "op": [
+      "£4.50",
+      "£5.50",
+      "£6.50",
+      "£10"
+     ],
+     "r": 0,
+     "exp": "Ele paga com £10 e a compra é £5.50, então o troco é four pounds fifty."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Here's your change, four pounds ___.",
+     "resp": [
+      "fifty",
+      "50"
+     ],
+     "exp": "Four pounds fifty = £4.50. Ouça a diferença entre fifty (50) e fifteen (15).",
+     "ouvir": "Thank you. Here's your change, four pounds fifty."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Days, dates and birthdays",
+   "objetivo": "Entender dias da semana, datas e meses em combinados entre amigos.",
+   "foco": "Days; months; ordinal numbers (the thirteenth); on + date",
+   "explicacao": [
+    "Datas usam números ordinais: first, second, third, fourth... twelfth, thirteenth, fifteenth, twentieth.",
+    "Dizemos the thirteenth of May (13 de maio). Escrevemos 13th May ou May 13th.",
+    "Usamos on com dias e datas: on Friday, on the fifteenth. Usamos in com meses: in May.",
+    "Atenção: fifteenth (15º) e fiftieth (50º) são diferentes; thirteenth (13º) e thirtieth (30º) também."
+   ],
+   "vocab": [
+    {
+     "en": "birthday",
+     "pt": "aniversário"
+    },
+    {
+     "en": "party",
+     "pt": "festa"
+    },
+    {
+     "en": "a pity",
+     "pt": "uma pena"
+    },
+    {
+     "en": "busy",
+     "pt": "ocupado(a)"
+    },
+    {
+     "en": "to come back",
+     "pt": "voltar"
+    },
+    {
+     "en": "on Fridays",
+     "pt": "às sextas"
+    },
+    {
+     "en": "until",
+     "pt": "até"
+    },
+    {
+     "en": "small",
+     "pt": "pequeno(a)"
+    }
+   ],
+   "material": {
+    "titulo": "Planning a party",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Emma, when is your birthday?"
+     },
+     {
+      "p": "B",
+      "t": "It's on the thirteenth of May. But the party is on Saturday, the fifteenth."
+     },
+     {
+      "p": "A",
+      "t": "Oh no, I'm in Bath on the fifteenth. I come back on Sunday."
+     },
+     {
+      "p": "B",
+      "t": "What a pity! Could you come on Friday the fourteenth? We're having a small dinner then."
+     },
+     {
+      "p": "A",
+      "t": "Yes! What about your dad? Does he work on Fridays?"
+     },
+     {
+      "p": "B",
+      "t": "Until six, but don't worry, dinner is at seven."
+     },
+     {
+      "p": "A",
+      "t": "Perfect. The twelfth is my brother's birthday, so I'll be busy that day too."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "When is Emma's birthday?",
+     "op": [
+      "12 May",
+      "13 May",
+      "14 May",
+      "15 May"
+     ],
+     "r": 1,
+     "exp": "It's on the thirteenth of May. 15 é a data da festa, 14 é o jantar e 12 é o aniversário do irmão da amiga."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The party is on Saturday, the ___.",
+     "resp": [
+      "fifteenth",
+      "15th",
+      "15"
+     ],
+     "exp": "The fifteenth = dia 15. Ouça bem a diferença entre fifteenth e fiftieth.",
+     "ouvir": "The party is on Saturday, the fifteenth."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "My birthday is on the thirteenth of May.",
+     "exp": "Thirteenth: o 'th' é com a língua entre os dentes. The thirteenth of = /dhe thertínth ov/.",
+     "ouvir": "My birthday is on the thirteenth of May."
+    },
+    {
+     "t": "mc",
+     "q": "Why can't Emma's friend go to the party?",
+     "op": [
+      "She works on Saturdays",
+      "She is away in Bath",
+      "She is busy with her brother's birthday",
+      "She is ill"
+     ],
+     "r": 1,
+     "exp": "I'm in Bath on the fifteenth: a amiga está viajando no dia da festa. O aniversário do irmão é no dia 12."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Dinner",
+      "is",
+      "on",
+      "Friday",
+      "the",
+      "fourteenth"
+     ],
+     "resp": "Dinner is on Friday the fourteenth.",
+     "exp": "Estrutura: Dinner is on + dia da semana + the + ordinal."
+    },
+    {
+     "t": "gap",
+     "q": "Her brother's birthday is on the ___.",
+     "resp": [
+      "twelfth",
+      "12th",
+      "12"
+     ],
+     "exp": "The twelfth is my brother's birthday. Twelfth = 12º.",
+     "dica": "Número ordinal"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga a data do seu aniversário.",
+     "frase": "When is your birthday?",
+     "modelo": "My birthday is on the tenth of June.",
+     "min": 5,
+     "chave": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+     ],
+     "exp": "Use: My birthday is on the ... of ... Ex.: the third of April."
+    },
+    {
+     "t": "mc",
+     "q": "What time is dinner on Friday?",
+     "op": [
+      "At six",
+      "At seven",
+      "At eight",
+      "At half past seven"
+     ],
+     "r": 1,
+     "exp": "Dad works until six, but dinner is at seven. Six é o horário em que o pai sai do trabalho."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: We're having a small ___ then.",
+     "resp": [
+      "dinner"
+     ],
+     "exp": "Em vez de uma festa, eles terão um pequeno jantar (dinner) na sexta.",
+     "ouvir": "Could you come on Friday the fourteenth? We're having a small dinner then."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Spelling names and numbers",
+   "objetivo": "Entender nomes soletrados, números de telefone e idades para preencher formulários.",
+   "foco": "The alphabet; double letters/numbers; phone numbers; ages",
+   "explicacao": [
+    "Em formulários, o nome é soletrado letra por letra: Kerry = K-E-R-R-Y.",
+    "Letras que confundem: A (/êi/) e E (/i/), G (/dji/) e J (/djêi/), I (/ai/) e Y (/uai/).",
+    "Números de telefone: dizemos um dígito de cada vez. 0 = oh, e 88 = double eight.",
+    "Idades: seventeen (17) e seventy (70) soam parecidas. Em seven-TEEN a força está no fim."
+   ],
+   "vocab": [
+    {
+     "en": "surname",
+     "pt": "sobrenome"
+    },
+    {
+     "en": "first name",
+     "pt": "primeiro nome"
+    },
+    {
+     "en": "to spell",
+     "pt": "soletrar"
+    },
+    {
+     "en": "double",
+     "pt": "dobro, duas vezes"
+    },
+    {
+     "en": "mobile number",
+     "pt": "número de celular"
+    },
+    {
+     "en": "to join",
+     "pt": "associar-se"
+    },
+    {
+     "en": "library",
+     "pt": "biblioteca"
+    },
+    {
+     "en": "age",
+     "pt": "idade"
+    }
+   ],
+   "material": {
+    "titulo": "Joining the library",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Library. How can I help?"
+     },
+     {
+      "p": "B",
+      "t": "I'd like to join, please."
+     },
+     {
+      "p": "A",
+      "t": "Of course. What's your surname?"
+     },
+     {
+      "p": "B",
+      "t": "It's Whitlow. That's W-H-I-T-L-O-W."
+     },
+     {
+      "p": "A",
+      "t": "And your first name?"
+     },
+     {
+      "p": "B",
+      "t": "Kerry, with a K. K-E-R-R-Y."
+     },
+     {
+      "p": "A",
+      "t": "Thanks. And your mobile number?"
+     },
+     {
+      "p": "B",
+      "t": "Oh seven seven oh nine, three one four, five double eight."
+     },
+     {
+      "p": "A",
+      "t": "And how old are you?"
+     },
+     {
+      "p": "B",
+      "t": "Seventeen."
+     },
+     {
+      "p": "A",
+      "t": "Seventeen or seventy?"
+     },
+     {
+      "p": "B",
+      "t": "Ha! Seventeen."
+     },
+     {
+      "p": "A",
+      "t": "Great. Now I need your address."
+     },
+     {
+      "p": "B",
+      "t": "Flat twelve, Rose Court, Leeds."
+     },
+     {
+      "p": "A",
+      "t": "Thank you, Kerry. Your card will be ready on Monday."
+     },
+     {
+      "p": "B",
+      "t": "Do I need to bring anything?"
+     },
+     {
+      "p": "A",
+      "t": "Just a photo of yourself."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the customer's surname?",
+     "op": [
+      "Whitlock",
+      "Whitlow",
+      "Whitlaw",
+      "Whitelow"
+     ],
+     "r": 1,
+     "exp": "O sobrenome é soletrado: W-H-I-T-L-O-W = Whitlow."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça as letras e escreva o sobrenome: ___",
+     "resp": [
+      "Whitlow"
+     ],
+     "exp": "W-H-I-T-L-O-W forma Whitlow.",
+     "ouvir": "W. H. I. T. L. O. W."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "My first name is Kerry, with a K.",
+     "exp": "With a K: /uíd a kêi/. A letra K em inglês se diz /kêi/.",
+     "ouvir": "My first name is Kerry, with a K."
+    },
+    {
+     "t": "mc",
+     "q": "What is Kerry's mobile number?",
+     "op": [
+      "07709 314 588",
+      "07709 314 858",
+      "07790 314 588",
+      "07709 341 588"
+     ],
+     "r": 0,
+     "exp": "Oh seven seven oh nine, three one four, five double eight = 07709 314 588."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "How",
+      "do",
+      "you",
+      "spell",
+      "your",
+      "surname"
+     ],
+     "resp": "How do you spell your surname?",
+     "exp": "Pergunta para pedir soletração: How do you spell...?"
+    },
+    {
+     "t": "gap",
+     "q": "Kerry is ___ years old.",
+     "resp": [
+      "seventeen",
+      "17"
+     ],
+     "exp": "Ela confirma: Seventeen. A funcionária pergunta se é 17 ou 70 para ter certeza.",
+     "dica": "Número"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga seu primeiro nome e soletre.",
+     "frase": "What's your first name? Can you spell it?",
+     "modelo": "My name is Ana. A, N, A.",
+     "min": 3,
+     "chave": [
+      "name",
+      "my",
+      "is",
+      "spell"
+     ],
+     "exp": "Diga My name is... e depois as letras. Treine o alfabeto: A /êi/, E /i/, I /ai/."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is TRUE?",
+     "op": [
+      "Kerry is seventy.",
+      "Kerry's name starts with a C.",
+      "Kerry's number has a double eight.",
+      "Kerry's surname is Whitlock."
+     ],
+     "r": 2,
+     "exp": "Five double eight: o 88 no final. Ela tem 17 anos, o nome começa com K e o sobrenome é Whitlow."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e escreva os números: 07709 314 ___",
+     "resp": [
+      "588",
+      "five double eight",
+      "five eight eight"
+     ],
+     "exp": "Five double eight = 588.",
+     "ouvir": "Oh seven seven oh nine, three one four, five double eight."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Where is it? Addresses and directions",
+   "objetivo": "Entender indicações de caminho, endereços e a posição de lugares.",
+   "foco": "Directions (turn left, go straight on); prepositions of place; addresses",
+   "explicacao": [
+    "Direções: go straight on (siga em frente), turn left/right (vire à esquerda/direita), at the traffic lights (no semáforo).",
+    "Lugares: opposite (em frente a), next to (ao lado de), between (entre), behind (atrás de), near (perto).",
+    "Endereço: forty-two Park Road = 42 Park Road. Cuidado: forty (40) e fourteen (14) são diferentes.",
+    "On foot = a pé. It's five minutes on foot = fica a cinco minutos a pé."
+   ],
+   "vocab": [
+    {
+     "en": "straight on",
+     "pt": "em frente"
+    },
+    {
+     "en": "traffic lights",
+     "pt": "semáforo"
+    },
+    {
+     "en": "opposite",
+     "pt": "em frente a"
+    },
+    {
+     "en": "next to",
+     "pt": "ao lado de"
+    },
+    {
+     "en": "between",
+     "pt": "entre"
+    },
+    {
+     "en": "on foot",
+     "pt": "a pé"
+    },
+    {
+     "en": "address",
+     "pt": "endereço"
+    },
+    {
+     "en": "far",
+     "pt": "longe"
+    }
+   ],
+   "material": {
+    "titulo": "Finding the museum",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Excuse me, how do I get to the Science Museum?"
+     },
+     {
+      "p": "B",
+      "t": "Go straight on until the traffic lights, then turn left into Park Road."
+     },
+     {
+      "p": "A",
+      "t": "Is it far?"
+     },
+     {
+      "p": "B",
+      "t": "No, it's about five minutes on foot. It's opposite the bank, next to the cinema."
+     },
+     {
+      "p": "A",
+      "t": "Thank you. And what's the address? I need to write it on a form."
+     },
+     {
+      "p": "B",
+      "t": "It's forty-two Park Road."
+     },
+     {
+      "p": "A",
+      "t": "Forty-two or fourteen?"
+     },
+     {
+      "p": "B",
+      "t": "Forty-two."
+     },
+     {
+      "p": "A",
+      "t": "Is there a café near here?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, the Blue Cup is between the museum and the library."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Where does the woman turn left?",
+     "op": [
+      "At the bank",
+      "At the traffic lights",
+      "At the cinema",
+      "At the library"
+     ],
+     "r": 1,
+     "exp": "Go straight on until the traffic lights, then turn left. O banco e o cinema ajudam a localizar o museu."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Go ___ on until the traffic lights.",
+     "resp": [
+      "straight"
+     ],
+     "exp": "Go straight on = siga em frente.",
+     "ouvir": "Go straight on until the traffic lights."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "How do I get to the Science Museum?",
+     "exp": "Science: /sáiens/. Museum: a força está em MU-ZI-um, com som de /ziú/.",
+     "ouvir": "How do I get to the Science Museum?"
+    },
+    {
+     "t": "mc",
+     "q": "Where exactly is the museum?",
+     "op": [
+      "Next to the bank",
+      "Opposite the cinema",
+      "Opposite the bank",
+      "Between the bank and the library"
+     ],
+     "r": 2,
+     "exp": "It's opposite the bank, next to the cinema. O café fica entre o museu e a biblioteca."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It's",
+      "about",
+      "five",
+      "minutes",
+      "on",
+      "foot"
+     ],
+     "resp": "It's about five minutes on foot.",
+     "exp": "On foot = a pé. Compare: by bus (de ônibus), by car (de carro)."
+    },
+    {
+     "t": "gap",
+     "q": "The museum is at ___ Park Road.",
+     "resp": [
+      "forty-two",
+      "forty two",
+      "42"
+     ],
+     "exp": "O endereço é forty-two Park Road. A pessoa confirma: forty-two, não fourteen.",
+     "dica": "Número do endereço"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga onde fica sua escola ou o seu trabalho.",
+     "frase": "Where is your school?",
+     "modelo": "My school is next to a park and opposite a bank.",
+     "min": 4,
+     "chave": [
+      "next",
+      "near",
+      "opposite",
+      "between",
+      "behind",
+      "street",
+      "road"
+     ],
+     "exp": "Use opposite, next to, near ou between. Ex.: It's near my house."
+    },
+    {
+     "t": "mc",
+     "q": "Where is the Blue Cup café?",
+     "op": [
+      "Opposite the bank",
+      "Next to the cinema",
+      "Behind the museum",
+      "Between the museum and the library"
+     ],
+     "r": 3,
+     "exp": "The Blue Cup is between the museum and the library. As outras posições são do museu."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: It's opposite the ___, next to the cinema.",
+     "resp": [
+      "bank"
+     ],
+     "exp": "Opposite the bank = em frente ao banco.",
+     "ouvir": "It's opposite the bank, next to the cinema."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "My day: routines and free time",
+   "objetivo": "Entender rotinas diárias e com que frequência as pessoas fazem cada coisa.",
+   "foco": "Present simple; adverbs of frequency (always, usually, often, sometimes, never)",
+   "explicacao": [
+    "Present simple para rotinas: I get up at six. He starts work at four. Com he/she/it o verbo ganha -s.",
+    "Frequência, do mais ao menos: always (sempre), usually (geralmente), often (muitas vezes), sometimes (às vezes), never (nunca).",
+    "O advérbio vem antes do verbo principal: I always start at four. He never watches TV.",
+    "Atenção ao áudio: a pessoa pode dizer 'usually, yes, but sometimes...'. Escute as duas partes antes de marcar."
+   ],
+   "vocab": [
+    {
+     "en": "to get up",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "baker",
+     "pt": "padeiro(a)"
+    },
+    {
+     "en": "breakfast",
+     "pt": "café da manhã"
+    },
+    {
+     "en": "noon",
+     "pt": "meio-dia"
+    },
+    {
+     "en": "to finish",
+     "pt": "terminar"
+    },
+    {
+     "en": "guitar",
+     "pt": "violão, guitarra"
+    },
+    {
+     "en": "to visit",
+     "pt": "visitar"
+    },
+    {
+     "en": "grandmother",
+     "pt": "avó"
+    }
+   ],
+   "material": {
+    "titulo": "A baker's day",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Jack, you're a baker. What's your day like?"
+     },
+     {
+      "p": "B",
+      "t": "I get up at three in the morning! I always start work at four."
+     },
+     {
+      "p": "A",
+      "t": "Wow. Do you have breakfast at work?"
+     },
+     {
+      "p": "B",
+      "t": "Usually, yes, but sometimes I have it at home. I finish at noon, then I go home and sleep for two hours."
+     },
+     {
+      "p": "A",
+      "t": "And in the evening?"
+     },
+     {
+      "p": "B",
+      "t": "I never watch TV. I often play the guitar, and on Sundays I always visit my grandmother."
+     },
+     {
+      "p": "A",
+      "t": "What a busy day! Thanks for talking to us, Jack."
+     },
+     {
+      "p": "B",
+      "t": "My pleasure."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What time does Jack start work?",
+     "op": [
+      "At three",
+      "At four",
+      "At noon",
+      "At six"
+     ],
+     "r": 1,
+     "exp": "I always start work at four. Ele acorda às três (get up), mas começa a trabalhar às quatro."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I ___ start work at four.",
+     "resp": [
+      "always"
+     ],
+     "exp": "Always = sempre. O advérbio vem antes do verbo start.",
+     "ouvir": "I always start work at four."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "I often play the guitar in the evening.",
+     "exp": "Often pode ser /ófen/ ou /óften/. Guitar: força no meio, gi-TAR.",
+     "ouvir": "I often play the guitar in the evening."
+    },
+    {
+     "t": "mc",
+     "q": "What does Jack do after work?",
+     "op": [
+      "He plays the guitar",
+      "He sleeps for two hours",
+      "He visits his grandmother",
+      "He watches TV"
+     ],
+     "r": 1,
+     "exp": "Depois do trabalho: I go home and sleep for two hours. O violão é à noite e a avó é aos domingos."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "He",
+      "never",
+      "watches",
+      "TV",
+      "in",
+      "the",
+      "evening"
+     ],
+     "resp": "He never watches TV in the evening.",
+     "exp": "Never fica antes do verbo. Com he, o verbo leva -s: watches."
+    },
+    {
+     "t": "gap",
+     "q": "Jack ___ watches TV.",
+     "resp": [
+      "never"
+     ],
+     "exp": "I never watch TV: ele nunca assiste TV.",
+     "dica": "Frequência: 0%"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você faz aos domingos, usando um advérbio de frequência.",
+     "frase": "What do you do on Sundays?",
+     "modelo": "I usually visit my family and sometimes I watch a film.",
+     "min": 5,
+     "chave": [
+      "usually",
+      "always",
+      "often",
+      "sometimes",
+      "never"
+     ],
+     "exp": "Coloque o advérbio antes do verbo: I often go to the park."
+    },
+    {
+     "t": "mc",
+     "q": "Where does Jack usually have breakfast?",
+     "op": [
+      "At work",
+      "At home",
+      "In a café",
+      "On the bus"
+     ],
+     "r": 0,
+     "exp": "Usually, yes, but sometimes I have it at home: normalmente no trabalho; só às vezes em casa."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: ___, yes, but sometimes I have it at home.",
+     "resp": [
+      "usually"
+     ],
+     "exp": "Usually = geralmente. Sometimes = às vezes: o contraste ajuda a entender a rotina.",
+     "ouvir": "Usually, yes, but sometimes I have it at home."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Shopping for clothes",
+   "objetivo": "Entender conversas em lojas de roupa: cores, tamanhos, preços e como pagar.",
+   "foco": "Clothes; colours; sizes; too + adjective; try on",
+   "explicacao": [
+    "Tamanhos: small (P), medium (M), large (G). Perguntas úteis: What size are you? Do you have it in medium?",
+    "Can I try it on? = Posso experimentar? The changing rooms = os provadores.",
+    "Too + adjetivo = demais: It's too big. It's too expensive. It fits = serve bem.",
+    "Cores aparecem junto ao preço e ao tamanho: preste atenção em qual combinação a loja realmente tem."
+   ],
+   "vocab": [
+    {
+     "en": "jacket",
+     "pt": "jaqueta"
+    },
+    {
+     "en": "size",
+     "pt": "tamanho"
+    },
+    {
+     "en": "to try on",
+     "pt": "experimentar"
+    },
+    {
+     "en": "changing room",
+     "pt": "provador"
+    },
+    {
+     "en": "to fit",
+     "pt": "servir (tamanho)"
+    },
+    {
+     "en": "warm",
+     "pt": "quente (agasalho)"
+    },
+    {
+     "en": "expensive",
+     "pt": "caro"
+    },
+    {
+     "en": "cash",
+     "pt": "dinheiro vivo"
+    }
+   ],
+   "material": {
+    "titulo": "A new jacket",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Can I help you?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, I'm looking for a warm jacket. I like green."
+     },
+     {
+      "p": "A",
+      "t": "This green one is thirty-five pounds, but we only have it in small. What size are you?"
+     },
+     {
+      "p": "B",
+      "t": "Medium, I think."
+     },
+     {
+      "p": "A",
+      "t": "Then try this blue one. It comes in medium. It's forty pounds."
+     },
+     {
+      "p": "B",
+      "t": "Can I try it on?"
+     },
+     {
+      "p": "A",
+      "t": "Of course. The changing rooms are at the back."
+     },
+     {
+      "p": "B",
+      "t": "It's lovely, and it fits! I haven't got any cash, so I'll pay by card."
+     },
+     {
+      "p": "A",
+      "t": "Wonderful. Come to the till, please."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What colour jacket does Lucy want at first?",
+     "op": [
+      "Blue",
+      "Green",
+      "Black",
+      "Grey"
+     ],
+     "r": 1,
+     "exp": "I'm looking for a warm jacket. I like green. A jaqueta azul é a sugestão da vendedora."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I'm looking for a warm ___.",
+     "resp": [
+      "jacket"
+     ],
+     "exp": "Jacket = jaqueta. I'm looking for = estou procurando.",
+     "ouvir": "I'm looking for a warm jacket."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Can I try it on?",
+     "exp": "Try it on: ligue as palavras, /trái it on/. Subida de entonação no final, por ser pergunta.",
+     "ouvir": "Can I try it on?"
+    },
+    {
+     "t": "mc",
+     "q": "Why doesn't Lucy buy the green jacket?",
+     "op": [
+      "It is too expensive",
+      "They only have it in small",
+      "She doesn't like the colour",
+      "It is too big"
+     ],
+     "r": 1,
+     "exp": "We only have it in small, mas Lucy usa medium. O preço (£35) é menor que o da azul."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "This",
+      "blue",
+      "one",
+      "comes",
+      "in",
+      "medium"
+     ],
+     "resp": "This blue one comes in medium.",
+     "exp": "Comes in = existe em (tamanho ou cor). Ex.: It comes in red."
+    },
+    {
+     "t": "gap",
+     "q": "The blue jacket costs ___ pounds.",
+     "resp": [
+      "forty",
+      "40"
+     ],
+     "exp": "O preço da azul é forty pounds. Thirty-five é o da verde.",
+     "dica": "Número"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Descreva a roupa que você está usando hoje.",
+     "frase": "What are you wearing today?",
+     "modelo": "I'm wearing a white T-shirt and blue jeans.",
+     "min": 5,
+     "chave": [
+      "wearing",
+      "wear",
+      "wore"
+     ],
+     "exp": "Use I'm wearing + roupa. Ex.: I'm wearing a black jacket and brown shoes."
+    },
+    {
+     "t": "mc",
+     "q": "How will Lucy pay?",
+     "op": [
+      "By card",
+      "In cash",
+      "By cheque",
+      "On the internet"
+     ],
+     "r": 0,
+     "exp": "I haven't got any cash, so I'll pay by card. Cash é o que ela NÃO tem."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I haven't got any ___, so I'll pay by card.",
+     "resp": [
+      "cash",
+      "money"
+     ],
+     "exp": "Cash = dinheiro vivo. Ela não tem, então paga com cartão.",
+     "ouvir": "I haven't got any cash, so I'll pay by card."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Travel by train and bus",
+   "objetivo": "Entender horários de trem, plataformas, preços de passagens e duração de viagens.",
+   "foco": "Transport; single/return; platform; how long; prices",
+   "explicacao": [
+    "Single ticket = só ida. Return ticket = ida e volta. Platform = plataforma.",
+    "How long does it take? It takes about an hour. A viagem dura mais ou menos uma hora.",
+    "Horários de trem são ditos assim: ten forty = 10h40; ten fifteen = 10h15. Ouça se o trem já saiu (has just left).",
+    "Preço total: dois bilhetes de £12.40 custam £24.80. Faça a conta enquanto ouve."
+   ],
+   "vocab": [
+    {
+     "en": "return ticket",
+     "pt": "passagem de ida e volta"
+    },
+    {
+     "en": "platform",
+     "pt": "plataforma"
+    },
+    {
+     "en": "to leave",
+     "pt": "partir"
+    },
+    {
+     "en": "journey",
+     "pt": "viagem"
+    },
+    {
+     "en": "to take (time)",
+     "pt": "levar (tempo)"
+    },
+    {
+     "en": "an hour",
+     "pt": "uma hora"
+    },
+    {
+     "en": "each",
+     "pt": "cada"
+    },
+    {
+     "en": "cheaper",
+     "pt": "mais barato"
+    }
+   ],
+   "material": {
+    "titulo": "At the ticket office",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Next, please."
+     },
+     {
+      "p": "B",
+      "t": "Two return tickets to Oxford, please."
+     },
+     {
+      "p": "A",
+      "t": "Oh, the ten fifteen has just left. The next train is at ten forty, from platform three."
+     },
+     {
+      "p": "B",
+      "t": "How long does it take?"
+     },
+     {
+      "p": "A",
+      "t": "About an hour. It's twelve pounds forty each, so twenty-four pounds eighty."
+     },
+     {
+      "p": "B",
+      "t": "Fine. Is it the same price for the journey back?"
+     },
+     {
+      "p": "A",
+      "t": "Yes, the return ticket is for any train on the same day."
+     },
+     {
+      "p": "B",
+      "t": "Thanks. Platform three, you said?"
+     },
+     {
+      "p": "A",
+      "t": "Hurry, then. The train is already at the platform."
+     },
+     {
+      "p": "B",
+      "t": "Thank you so much."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which platform is the train to Oxford?",
+     "op": [
+      "Platform two",
+      "Platform three",
+      "Platform four",
+      "Platform ten"
+     ],
+     "r": 1,
+     "exp": "The next train is at ten forty, from platform three."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The next train leaves at ten ___.",
+     "resp": [
+      "forty",
+      "40"
+     ],
+     "exp": "Ten forty = 10h40. Atenção a forty (40) e fourteen (14).",
+     "ouvir": "The next train is at ten forty."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Two return tickets to Oxford, please.",
+     "exp": "Return: força em -TURN. Tickets: /tíkits/. Oxford: /óks-fêrd/.",
+     "ouvir": "Two return tickets to Oxford, please."
+    },
+    {
+     "t": "mc",
+     "q": "What time does the next train leave?",
+     "op": [
+      "10.15",
+      "10.40",
+      "11.40",
+      "10.50"
+     ],
+     "r": 1,
+     "exp": "O das 10h15 acabou de sair (has just left). O próximo é às 10h40."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "How",
+      "long",
+      "does",
+      "the",
+      "journey",
+      "take"
+     ],
+     "resp": "How long does the journey take?",
+     "exp": "How long does ... take? pergunta a duração. Resposta: It takes about an hour."
+    },
+    {
+     "t": "gap",
+     "q": "The journey takes about an ___.",
+     "resp": [
+      "hour"
+     ],
+     "exp": "About an hour: cerca de uma hora. Hour começa com h mudo, por isso an hour."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga como você vai ao trabalho ou à escola e quanto tempo leva.",
+     "frase": "How do you usually get to school or work?",
+     "modelo": "I usually go by bus. It takes twenty minutes.",
+     "min": 4,
+     "chave": [
+      "bus",
+      "train",
+      "car",
+      "bike",
+      "walk",
+      "foot",
+      "metro",
+      "by"
+     ],
+     "exp": "Use by + transporte (by bus) ou on foot. E diga It takes + tempo."
+    },
+    {
+     "t": "mc",
+     "q": "How much do the two tickets cost altogether?",
+     "op": [
+      "£12.40",
+      "£24.80",
+      "£14.80",
+      "£22.40"
+     ],
+     "r": 1,
+     "exp": "Cada passagem custa £12.40; duas custam £24.80 (twenty-four pounds eighty)."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: It's twelve pounds forty each, so ___ pounds eighty.",
+     "resp": [
+      "twenty-four",
+      "twenty four",
+      "24"
+     ],
+     "exp": "Twelve forty × 2 = twenty-four eighty.",
+     "ouvir": "It's twelve pounds forty each, so twenty-four pounds eighty."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Ordering food and drink",
+   "objetivo": "Entender pedidos em restaurantes, o que está acabado e o que cada pessoa escolhe.",
+   "foco": "Food and drink; I'd like / I'll have; countable and uncountable; allergies",
+   "explicacao": [
+    "Para pedir: I'd like a sandwich. / I'll have the soup. / Can I have a lemonade, please?",
+    "O garçom pode dizer o que NÃO tem: Sorry, we've no chicken today. Depois ele oferece outras opções (We have fish or pasta).",
+    "A pessoa muda de ideia com frequência: Chicken? No, pasta, please. Ouça a escolha final.",
+    "Alergia: I'm allergic to nuts. No onions, please = sem cebola, por favor."
+   ],
+   "vocab": [
+    {
+     "en": "ready to order",
+     "pt": "pronto(a) para pedir"
+    },
+    {
+     "en": "soup",
+     "pt": "sopa"
+    },
+    {
+     "en": "main course",
+     "pt": "prato principal"
+    },
+    {
+     "en": "chicken",
+     "pt": "frango"
+    },
+    {
+     "en": "pasta",
+     "pt": "macarrão"
+    },
+    {
+     "en": "lemonade",
+     "pt": "limonada"
+    },
+    {
+     "en": "allergic",
+     "pt": "alérgico(a)"
+    },
+    {
+     "en": "onion",
+     "pt": "cebola"
+    }
+   ],
+   "material": {
+    "titulo": "In the restaurant",
+    "falas": [
+     {
+      "p": "W",
+      "t": "Are you ready to order?"
+     },
+     {
+      "p": "B",
+      "t": "Yes. I'll have the vegetable soup, please, and then the chicken with rice."
+     },
+     {
+      "p": "W",
+      "t": "Sorry, we've no chicken today. We have fish or pasta."
+     },
+     {
+      "p": "B",
+      "t": "Then pasta, please."
+     },
+     {
+      "p": "L",
+      "t": "I'd like a cheese sandwich. And can I have an orange juice?"
+     },
+     {
+      "p": "W",
+      "t": "Orange juice is finished, but we have apple or lemonade."
+     },
+     {
+      "p": "L",
+      "t": "Lemonade, then. Ben, what do you want to drink?"
+     },
+     {
+      "p": "B",
+      "t": "Just water, thanks. Oh, and no onions in the soup, please! I'm allergic."
+     },
+     {
+      "p": "W",
+      "t": "Of course. I'll tell the kitchen. Your food will be here soon."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does Ben order for his main course?",
+     "op": [
+      "Chicken",
+      "Fish",
+      "Pasta",
+      "Soup"
+     ],
+     "r": 2,
+     "exp": "Ele pede chicken, mas não há; então diz Then pasta, please. A sopa é a entrada."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: We have ___ or pasta.",
+     "resp": [
+      "fish"
+     ],
+     "exp": "O garçom oferece fish or pasta no lugar do frango.",
+     "ouvir": "Sorry, we've no chicken today. We have fish or pasta."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "I'd like a cheese sandwich, please.",
+     "exp": "I'd like: /aid láik/. Sandwich: /sên-uitch/ ou /sân-uitch/.",
+     "ouvir": "I'd like a cheese sandwich, please."
+    },
+    {
+     "t": "mc",
+     "q": "What does Lily drink?",
+     "op": [
+      "Orange juice",
+      "Apple juice",
+      "Lemonade",
+      "Water"
+     ],
+     "r": 2,
+     "exp": "Lily quer orange juice, mas acabou; ela escolhe lemonade. Água é a bebida do Ben."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "No",
+      "onions",
+      "in",
+      "the",
+      "soup,",
+      "please"
+     ],
+     "resp": "No onions in the soup, please.",
+     "exp": "No + substantivo no plural = sem. Please no final deixa o pedido educado."
+    },
+    {
+     "t": "gap",
+     "q": "Ben can't eat ___ because he is allergic.",
+     "resp": [
+      "onions",
+      "onion"
+     ],
+     "exp": "Ele diz: no onions in the soup! I'm allergic.",
+     "dica": "Legume"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça o seu pedido como em um restaurante.",
+     "frase": "What would you like to eat and drink?",
+     "modelo": "I'd like a pizza and a glass of orange juice.",
+     "min": 5,
+     "chave": [
+      "like",
+      "have",
+      "I'd",
+      "I'll",
+      "would"
+     ],
+     "exp": "Use I'd like... ou I'll have... e termine com please."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is TRUE?",
+     "op": [
+      "Ben orders soup and chicken.",
+      "Lily has a cheese sandwich and lemonade.",
+      "There is no pasta today.",
+      "Lily wants apple juice."
+     ],
+     "r": 1,
+     "exp": "Lily: cheese sandwich + lemonade. O frango acabou, há macarrão e Lily não quis o suco de maçã."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Orange juice is ___, but we have apple or lemonade.",
+     "resp": [
+      "finished"
+     ],
+     "exp": "Finished aqui significa acabou, não temos mais.",
+     "ouvir": "Orange juice is finished, but we have apple or lemonade."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Plans and the weather",
+   "objetivo": "Entender planos para o fim de semana e previsões do tempo.",
+   "foco": "be going to for plans and predictions; weather words; weekend activities",
+   "explicacao": [
+    "Be going to + verbo mostra plano: I'm going to play tennis. They're going to arrive at six.",
+    "Também serve para previsão: It's going to rain. It's going to be sunny.",
+    "Tempo: sunny (ensolarado), rainy (chuvoso), windy (ventoso), cloudy (nublado), snowy (com neve).",
+    "Cuidado: os dias mudam. Sábado pode ter sol e domingo chuva. Anote cada dia."
+   ],
+   "vocab": [
+    {
+     "en": "weekend",
+     "pt": "fim de semana"
+    },
+    {
+     "en": "forecast",
+     "pt": "previsão do tempo"
+    },
+    {
+     "en": "sunny",
+     "pt": "ensolarado"
+    },
+    {
+     "en": "rainy",
+     "pt": "chuvoso"
+    },
+    {
+     "en": "windy",
+     "pt": "ventoso"
+    },
+    {
+     "en": "to arrive",
+     "pt": "chegar"
+    },
+    {
+     "en": "to stay at home",
+     "pt": "ficar em casa"
+    },
+    {
+     "en": "cousin",
+     "pt": "primo(a)"
+    }
+   ],
+   "material": {
+    "titulo": "Weekend plans",
+    "falas": [
+     {
+      "p": "A",
+      "t": "What are you going to do this weekend, Sam?"
+     },
+     {
+      "p": "B",
+      "t": "On Saturday I'm going to play tennis with my cousin, if it doesn't rain."
+     },
+     {
+      "p": "A",
+      "t": "The forecast says it's going to be sunny on Saturday but rainy on Sunday, and windy on Monday."
+     },
+     {
+      "p": "B",
+      "t": "Then on Sunday I'm going to stay at home and cook dinner for my parents. They're going to arrive at six."
+     },
+     {
+      "p": "A",
+      "t": "Nice! I'm going to the cinema on Sunday afternoon. Do you want to come?"
+     },
+     {
+      "p": "B",
+      "t": "No, thanks. I'm going to be too busy with the cooking."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is Sam going to do on Saturday?",
+     "op": [
+      "Play tennis",
+      "Go to the cinema",
+      "Cook dinner",
+      "Stay at home"
+     ],
+     "r": 0,
+     "exp": "On Saturday I'm going to play tennis. Cozinhar e ficar em casa são planos de domingo."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: It's going to be ___ on Saturday.",
+     "resp": [
+      "sunny"
+     ],
+     "exp": "Sábado: sunny. Domingo: rainy. Segunda: windy.",
+     "ouvir": "It's going to be sunny on Saturday."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "I'm going to play tennis with my cousin.",
+     "exp": "Going to costuma soar como /gônã/ no inglês falado. Cousin: /cázn/.",
+     "ouvir": "I'm going to play tennis with my cousin."
+    },
+    {
+     "t": "mc",
+     "q": "What will the weather be like on Sunday?",
+     "op": [
+      "Sunny",
+      "Rainy",
+      "Windy",
+      "Snowy"
+     ],
+     "r": 1,
+     "exp": "Sunny on Saturday but rainy on Sunday. Windy é segunda-feira."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "They",
+      "are",
+      "going",
+      "to",
+      "arrive",
+      "at",
+      "six"
+     ],
+     "resp": "They are going to arrive at six.",
+     "exp": "Estrutura: sujeito + be + going to + verbo base (arrive)."
+    },
+    {
+     "t": "gap",
+     "q": "Sam's parents are going to ___ at six.",
+     "resp": [
+      "arrive",
+      "come"
+     ],
+     "exp": "They're going to arrive at six: os pais chegam às seis.",
+     "dica": "Chegar"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte um plano seu para o fim de semana usando going to.",
+     "frase": "What are you going to do this weekend?",
+     "modelo": "I'm going to visit my grandmother and watch a film.",
+     "min": 5,
+     "chave": [
+      "going",
+      "visit",
+      "play",
+      "watch",
+      "stay",
+      "meet"
+     ],
+     "exp": "Use I'm going to + verbo. Ex.: I'm going to go to the beach."
+    },
+    {
+     "t": "mc",
+     "q": "Why doesn't Sam go to the cinema?",
+     "op": [
+      "He is going to be busy cooking",
+      "He doesn't like films",
+      "It is going to rain",
+      "He has no money"
+     ],
+     "r": 0,
+     "exp": "I'm going to be too busy with the cooking. A chuva só é mencionada para o domingo, mas não é a razão."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I'm going to stay at home and ___ dinner for my parents.",
+     "resp": [
+      "cook",
+      "make"
+     ],
+     "exp": "Cook dinner = preparar o jantar.",
+     "ouvir": "Then on Sunday I'm going to stay at home and cook dinner for my parents."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "What did you do? Talking about the past",
+   "objetivo": "Entender relatos sobre o que as pessoas fizeram em uma viagem ou no fim de semana.",
+   "foco": "Past simple: regular (-ed) and irregular verbs (went, ate, flew, lost)",
+   "explicacao": [
+    "Verbos regulares terminam em -ed: visited, stayed, watched, played.",
+    "Irregulares precisam ser decorados: go-went, eat-ate, fly-flew, lose-lost, buy-bought, see-saw.",
+    "Expressões de tempo: yesterday, last weekend, on Saturday, two days ago.",
+    "No áudio, preste atenção na sequência: first, then, on Sunday, in the evening."
+   ],
+   "vocab": [
+    {
+     "en": "holiday",
+     "pt": "férias"
+    },
+    {
+     "en": "to fly",
+     "pt": "voar, ir de avião"
+    },
+    {
+     "en": "old town",
+     "pt": "centro histórico"
+    },
+    {
+     "en": "beach",
+     "pt": "praia"
+    },
+    {
+     "en": "to lose",
+     "pt": "perder"
+    },
+    {
+     "en": "sunglasses",
+     "pt": "óculos de sol"
+    },
+    {
+     "en": "paella",
+     "pt": "paella (prato espanhol)"
+    },
+    {
+     "en": "lovely",
+     "pt": "adorável, ótimo"
+    }
+   ],
+   "material": {
+    "titulo": "A holiday in Spain",
+    "falas": [
+     {
+      "p": "A",
+      "t": "How was your holiday in Spain, Anna?"
+     },
+     {
+      "p": "B",
+      "t": "Great! We flew to Valencia on Friday and stayed in a small hotel near the centre. On Saturday we visited the old town. On Sunday we went to the beach, but I lost my sunglasses."
+     },
+     {
+      "p": "A",
+      "t": "Oh no! Did you buy new ones?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, they cost fifteen euros. And we ate paella in a lovely restaurant."
+     },
+     {
+      "p": "A",
+      "t": "It sounds lovely. Did the weather stay nice?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, it was hot and sunny every day. I'd like to go back next year."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How did Anna travel to Valencia?",
+     "op": [
+      "By plane",
+      "By train",
+      "By car",
+      "By boat"
+     ],
+     "r": 0,
+     "exp": "We flew to Valencia: flew é o passado de fly, ou seja, foram de avião."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: We ___ in a small hotel near the centre.",
+     "resp": [
+      "stayed"
+     ],
+     "exp": "Stay é regular: stayed.",
+     "ouvir": "We flew to Valencia on Friday and stayed in a small hotel near the centre."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "On Sunday we went to the beach.",
+     "exp": "Went é o passado de go: /uént/. Beach: som longo /bi:tch/, não 'bitch'.",
+     "ouvir": "On Sunday we went to the beach."
+    },
+    {
+     "t": "mc",
+     "q": "What did Anna do on Saturday?",
+     "op": [
+      "She went to the beach",
+      "She visited the old town",
+      "She flew to Valencia",
+      "She lost her passport"
+     ],
+     "r": 1,
+     "exp": "On Saturday we visited the old town. A praia foi no domingo e o voo na sexta."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "visited",
+      "the",
+      "old",
+      "town",
+      "on",
+      "Saturday"
+     ],
+     "resp": "We visited the old town on Saturday.",
+     "exp": "Past simple afirmativo: sujeito + verbo no passado, sem auxiliar."
+    },
+    {
+     "t": "gap",
+     "q": "They ___ paella in a lovely restaurant.",
+     "resp": [
+      "ate"
+     ],
+     "exp": "Eat é irregular: eat - ate - eaten.",
+     "dica": "Passado de EAT"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte uma coisa que você fez no último fim de semana.",
+     "frase": "What did you do last weekend?",
+     "modelo": "I visited my friends and we watched a film.",
+     "min": 5,
+     "chave": [
+      "visited",
+      "went",
+      "watched",
+      "played",
+      "stayed",
+      "ate",
+      "saw",
+      "had"
+     ],
+     "exp": "Use verbos no passado: I went to..., I watched..., I played..."
+    },
+    {
+     "t": "mc",
+     "q": "What did Anna lose on the beach?",
+     "op": [
+      "Her sunglasses",
+      "Her phone",
+      "Her hat",
+      "Her ticket"
+     ],
+     "r": 0,
+     "exp": "On Sunday we went to the beach, but I lost my sunglasses. Depois ela comprou outros por quinze euros."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: On Sunday we ___ to the beach, but I lost my sunglasses.",
+     "resp": [
+      "went"
+     ],
+     "exp": "Went é o passado irregular de go.",
+     "ouvir": "On Sunday we went to the beach, but I lost my sunglasses."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Comparing things",
+   "objetivo": "Entender comparações de preço, tamanho e qualidade para chegar a uma escolha.",
+   "foco": "Comparatives (cheaper, more expensive, better) and superlatives (the cheapest, the most comfortable)",
+   "explicacao": [
+    "Adjetivos curtos: cheap - cheaper - the cheapest; light - lighter - the lightest. Depois: than (do que).",
+    "Adjetivos longos: expensive - more expensive - the most expensive; comfortable - more comfortable - the most comfortable.",
+    "Irregulares: good - better - the best; bad - worse - the worst.",
+    "Em escolhas de compra, a pessoa compara várias coisas e depois decide pelo dinheiro que tem. Ouça o final."
+   ],
+   "vocab": [
+    {
+     "en": "cheap",
+     "pt": "barato"
+    },
+    {
+     "en": "expensive",
+     "pt": "caro"
+    },
+    {
+     "en": "light",
+     "pt": "leve"
+    },
+    {
+     "en": "heavy",
+     "pt": "pesado"
+    },
+    {
+     "en": "fast",
+     "pt": "rápido"
+    },
+    {
+     "en": "comfortable",
+     "pt": "confortável"
+    },
+    {
+     "en": "journey",
+     "pt": "viagem"
+    },
+    {
+     "en": "choice",
+     "pt": "escolha"
+    }
+   ],
+   "material": {
+    "titulo": "Choosing a bike",
+    "falas": [
+     {
+      "p": "A",
+      "t": "We have three bikes. The red one is the cheapest, at one hundred and twenty pounds, but it's heavy."
+     },
+     {
+      "p": "B",
+      "t": "And the black one?"
+     },
+     {
+      "p": "A",
+      "t": "It's lighter and faster, but more expensive. One hundred and eighty pounds. The white one is the most expensive, two hundred and fifty, but it's the most comfortable."
+     },
+     {
+      "p": "B",
+      "t": "Which is best for a long journey?"
+     },
+     {
+      "p": "A",
+      "t": "The white one. But the black is better for a short ride in town."
+     },
+     {
+      "p": "B",
+      "t": "I only have two hundred pounds."
+     },
+     {
+      "p": "A",
+      "t": "Then the black one is your best choice."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which bike is the cheapest?",
+     "op": [
+      "The red one",
+      "The black one",
+      "The white one"
+     ],
+     "r": 0,
+     "exp": "The red one is the cheapest, at £120. A preta custa £180 e a branca £250."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The red one is the ___.",
+     "resp": [
+      "cheapest"
+     ],
+     "exp": "Cheap + superlativo: the cheapest.",
+     "ouvir": "The red one is the cheapest, at one hundred and twenty pounds, but it's heavy."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "The white one is the most comfortable.",
+     "exp": "Most comfortable: /móust cãmftãbl/. Comfortable tem três sílabas: CÃMF-tã-bl.",
+     "ouvir": "The white one is the most comfortable."
+    },
+    {
+     "t": "mc",
+     "q": "Why can't the customer buy the white bike?",
+     "op": [
+      "It is too heavy",
+      "It costs more than he has",
+      "It is too slow",
+      "It is the cheapest"
+     ],
+     "r": 1,
+     "exp": "The white one custa £250 e ele só tem £200 (I only have two hundred pounds)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "black",
+      "bike",
+      "is",
+      "lighter",
+      "than",
+      "the",
+      "red",
+      "one"
+     ],
+     "resp": "The black bike is lighter than the red one.",
+     "exp": "Comparativo curto: adjetivo + -er + than."
+    },
+    {
+     "t": "gap",
+     "q": "The black bike costs ___ pounds.",
+     "resp": [
+      "180",
+      "one hundred and eighty",
+      "one eighty",
+      "a hundred and eighty"
+     ],
+     "exp": "One hundred and eighty pounds = £180.",
+     "dica": "Número"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Compare dois transportes e diga o que acha.",
+     "frase": "Which is better, the bus or the train? Why?",
+     "modelo": "I think the train is faster, but the bus is cheaper.",
+     "min": 6,
+     "chave": [
+      "faster",
+      "cheaper",
+      "better",
+      "more",
+      "than",
+      "comfortable"
+     ],
+     "exp": "Use adjetivo + -er than, ou more + adjetivo longo. Ex.: The train is more comfortable than the bus."
+    },
+    {
+     "t": "mc",
+     "q": "Which bike will the customer probably buy?",
+     "op": [
+      "The red one",
+      "The black one",
+      "The white one"
+     ],
+     "r": 1,
+     "exp": "Then the black one is your best choice: cabe no orçamento de £200 e é leve e rápida."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The black one is lighter and faster, but ___ expensive.",
+     "resp": [
+      "more"
+     ],
+     "exp": "Expensive é longo, então: more expensive.",
+     "ouvir": "The black one is lighter and faster, but more expensive."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Invitations and suggestions",
+   "objetivo": "Entender convites, recusas, sugestões e como os amigos combinam um plano.",
+   "foco": "Would you like...? / Why don't we...? / Shall we...? / Let's...; accepting and refusing",
+   "explicacao": [
+    "Convite: Would you like to come to the cinema? Resposta: Yes, I'd love to. / Sorry, I can't.",
+    "Sugestões: Why don't we go tomorrow? / Shall we have pizza? / Let's meet at six. / What about Saturday?",
+    "Recusa educada: Thanks, but I can't. I have to study. Depois, a pessoa costuma propor outra opção.",
+    "Cuidado: nem toda sugestão é aceita. Ouça quem aceita e quem muda de ideia."
+   ],
+   "vocab": [
+    {
+     "en": "would you like",
+     "pt": "você gostaria de"
+    },
+    {
+     "en": "shall we",
+     "pt": "vamos?"
+    },
+    {
+     "en": "why don't we",
+     "pt": "que tal nós"
+    },
+    {
+     "en": "I'd love to",
+     "pt": "eu adoraria"
+    },
+    {
+     "en": "I can't",
+     "pt": "não posso"
+    },
+    {
+     "en": "to prefer",
+     "pt": "preferir"
+    },
+    {
+     "en": "to book",
+     "pt": "reservar"
+    },
+    {
+     "en": "to meet",
+     "pt": "encontrar-se"
+    }
+   ],
+   "material": {
+    "titulo": "Planning an evening out",
+    "falas": [
+     {
+      "p": "J",
+      "t": "Hi Mia, it's Jo. Would you like to come to the cinema tonight?"
+     },
+     {
+      "p": "M",
+      "t": "Thanks, but I can't. I have to study for a test. Why don't we go tomorrow?"
+     },
+     {
+      "p": "J",
+      "t": "Tomorrow I'm playing football. What about Saturday?"
+     },
+     {
+      "p": "M",
+      "t": "Saturday's good. Shall we have pizza first?"
+     },
+     {
+      "p": "J",
+      "t": "I'd prefer Chinese food, to be honest."
+     },
+     {
+      "p": "M",
+      "t": "OK, let's meet at the restaurant at six. The film starts at half past seven."
+     },
+     {
+      "p": "J",
+      "t": "Great. Shall I book the table?"
+     },
+     {
+      "p": "M",
+      "t": "Yes, please. For two people."
+     },
+     {
+      "p": "J",
+      "t": "Perfect. See you on Saturday!"
+     },
+     {
+      "p": "M",
+      "t": "Bye!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why can't Mia go to the cinema tonight?",
+     "op": [
+      "She has to study",
+      "She is playing football",
+      "She is tired",
+      "She doesn't like films"
+     ],
+     "r": 0,
+     "exp": "I can't. I have to study for a test. O futebol é o motivo do Jo para amanhã."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: ___ you like to come to the cinema tonight?",
+     "resp": [
+      "would"
+     ],
+     "exp": "Would you like to...? é o convite mais comum.",
+     "ouvir": "Would you like to come to the cinema tonight?"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Why don't we go tomorrow?",
+     "exp": "Don't we: /dóunt ui/. Entonação cai no final, é uma sugestão.",
+     "ouvir": "Why don't we go tomorrow?"
+    },
+    {
+     "t": "mc",
+     "q": "Why can't they go to the cinema tomorrow?",
+     "op": [
+      "Jo is playing football",
+      "Mia is studying",
+      "They have no money",
+      "The cinema is closed"
+     ],
+     "r": 0,
+     "exp": "Tomorrow I'm playing football, diz o Jo. O estudo da Mia é hoje à noite."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Shall",
+      "we",
+      "have",
+      "pizza",
+      "first"
+     ],
+     "resp": "Shall we have pizza first?",
+     "exp": "Shall we + verbo = sugestão em grupo. First = antes."
+    },
+    {
+     "t": "gap",
+     "q": "Jo prefers ___ food.",
+     "resp": [
+      "Chinese"
+     ],
+     "exp": "I'd prefer Chinese food. Ela sugeriu pizza, mas ele prefere comida chinesa.",
+     "dica": "Nacionalidade"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda ao convite aceitando ou recusando com educação.",
+     "frase": "Would you like to go to the cinema with me on Saturday?",
+     "modelo": "Yes, that's a great idea. What time shall we meet?",
+     "min": 5,
+     "chave": [
+      "yes",
+      "sorry",
+      "thanks",
+      "great",
+      "sure",
+      "can't",
+      "idea",
+      "love"
+     ],
+     "exp": "Aceite: Yes, I'd love to. Recuse: Sorry, I can't. I have to... E sugira outra opção."
+    },
+    {
+     "t": "mc",
+     "q": "When and where do they meet on Saturday?",
+     "op": [
+      "At six, at the restaurant",
+      "At six, at the cinema",
+      "At half past seven, at the restaurant",
+      "At half past seven, at the cinema"
+     ],
+     "r": 0,
+     "exp": "Let's meet at the restaurant at six. O filme começa às 7h30."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Shall I ___ the table?",
+     "resp": [
+      "book",
+      "reserve"
+     ],
+     "exp": "Book a table = reservar uma mesa.",
+     "ouvir": "Great. Shall I book the table?"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Booking a course: forms and messages",
+   "objetivo": "Anotar dados de uma inscrição por telefone: dias, datas, preços, nome e número.",
+   "foco": "Note-taking: days, times, dates, prices, spelled names, phone numbers",
+   "explicacao": [
+    "Na prova, você completa uma ficha com palavras, números, datas e nomes soletrados. Escreva só o que falta.",
+    "Fique atento às correções e aos números parecidos: thirteen/thirty, fifteen/fifty, and nineteen/ninety.",
+    "Descontos: ten per cent discount = 10% de desconto. O preço final pode ser dito depois.",
+    "Nomes soletrados: ouça letra por letra e confira no final se você formou um nome possível."
+   ],
+   "vocab": [
+    {
+     "en": "beginners",
+     "pt": "iniciantes"
+    },
+    {
+     "en": "course",
+     "pt": "curso"
+    },
+    {
+     "en": "to last",
+     "pt": "durar"
+    },
+    {
+     "en": "discount",
+     "pt": "desconto"
+    },
+    {
+     "en": "per cent",
+     "pt": "por cento"
+    },
+    {
+     "en": "to bring",
+     "pt": "trazer"
+    },
+    {
+     "en": "lesson",
+     "pt": "aula"
+    },
+    {
+     "en": "passport photo",
+     "pt": "foto 3x4"
+    }
+   ],
+   "material": {
+    "titulo": "Booking an English course",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Welcome to Sunrise Language School. How can I help?"
+     },
+     {
+      "p": "B",
+      "t": "Hello, I'd like to book a course. Do you have English classes in the evening?"
+     },
+     {
+      "p": "A",
+      "t": "Yes. There's a beginners' course on Tuesdays and Thursdays, from half past six to eight. It starts on the third of October and lasts ten weeks."
+     },
+     {
+      "p": "B",
+      "t": "How much is it?"
+     },
+     {
+      "p": "A",
+      "t": "Two hundred and sixty pounds, but there's a ten per cent discount for students, so it's two hundred and thirty-four pounds for you."
+     },
+     {
+      "p": "B",
+      "t": "I'm a student. My name is Paula Reynolds. R-E-Y-N-O-L-D-S."
+     },
+     {
+      "p": "A",
+      "t": "And your phone number?"
+     },
+     {
+      "p": "B",
+      "t": "Oh seven seven eight four, two one nine, six nine two."
+     },
+     {
+      "p": "A",
+      "t": "Thank you. Please bring a passport photo to the first lesson."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which days is the course?",
+     "op": [
+      "Mondays and Wednesdays",
+      "Tuesdays and Thursdays",
+      "Tuesdays and Fridays",
+      "Thursdays and Saturdays"
+     ],
+     "r": 1,
+     "exp": "A beginners' course on Tuesdays and Thursdays, das 18h30 às 20h."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The course starts on the ___ of October.",
+     "resp": [
+      "third",
+      "3rd",
+      "3"
+     ],
+     "exp": "The third of October = 3 de outubro.",
+     "ouvir": "It starts on the third of October and lasts ten weeks."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Please bring a passport photo to the first lesson.",
+     "exp": "Photo: /fôutou/. Passport: força em PASS. Lesson: /lésn/.",
+     "ouvir": "Please bring a passport photo to the first lesson."
+    },
+    {
+     "t": "mc",
+     "q": "How much will Paula pay?",
+     "op": [
+      "£260",
+      "£234",
+      "£26",
+      "£243"
+     ],
+     "r": 1,
+     "exp": "O preço é £260, mas estudantes têm 10% de desconto: £234 (two hundred and thirty-four)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "course",
+      "lasts",
+      "ten",
+      "weeks"
+     ],
+     "resp": "The course lasts ten weeks.",
+     "exp": "Last é verbo aqui: durar. The course lasts = o curso dura."
+    },
+    {
+     "t": "gap",
+     "q": "O número de Paula: 07784 219 ___",
+     "resp": [
+      "692",
+      "six nine two"
+     ],
+     "exp": "Oh seven seven eight four, two one nine, six nine two.",
+     "dica": "3 dígitos"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga qual outro idioma você gostaria de estudar e por quê.",
+     "frase": "Would you like to study another language? Which one and why?",
+     "modelo": "Yes, I'd like to study Spanish because it's useful for travelling.",
+     "min": 6,
+     "chave": [
+      "Spanish",
+      "French",
+      "German",
+      "Italian",
+      "English",
+      "because",
+      "would"
+     ],
+     "exp": "Use I'd like to study... because... Ex.: because I want to travel."
+    },
+    {
+     "t": "mc",
+     "q": "What time do the lessons finish?",
+     "op": [
+      "Half past six",
+      "Seven",
+      "Eight",
+      "Half past eight"
+     ],
+     "r": 2,
+     "exp": "From half past six to eight: começam às 18h30 e terminam às 20h."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça as letras e escreva o sobrenome: ___",
+     "resp": [
+      "Reynolds"
+     ],
+     "exp": "R-E-Y-N-O-L-D-S forma Reynolds.",
+     "ouvir": "R. E. Y. N. O. L. D. S."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Mock test: A2 Key Listening",
+   "objetivo": "Praticar no formato da prova: perguntas de marcar, ficha para completar e ligar pessoas a informações.",
+   "foco": "Exam practice: multiple choice, note completion, matching, spelling and numbers",
+   "explicacao": [
+    "Leia as perguntas ANTES de ouvir. Na prova, o áudio toca duas vezes: confira o que anotou na segunda vez.",
+    "Os distratores aparecem no áudio: 12 e 14 libras, 8h e 8h15, nomes de pessoas. Só vale a informação final.",
+    "Nas lacunas, escreva apenas a palavra ou o número que falta. Confira a grafia (Callum, Friday).",
+    "Nomes e números soletrados: anote letra por letra e depois junte."
+   ],
+   "vocab": [
+    {
+     "en": "trip",
+     "pt": "excursão"
+    },
+    {
+     "en": "coach",
+     "pt": "ônibus de viagem"
+    },
+    {
+     "en": "included",
+     "pt": "incluído"
+    },
+    {
+     "en": "sun cream",
+     "pt": "protetor solar"
+    },
+    {
+     "en": "gate",
+     "pt": "portão"
+    },
+    {
+     "en": "emergency",
+     "pt": "emergência"
+    },
+    {
+     "en": "to collect",
+     "pt": "buscar"
+    },
+    {
+     "en": "forecast",
+     "pt": "previsão do tempo"
+    }
+   ],
+   "material": {
+    "titulo": "School trip to Brighton",
+    "falas": [
+     {
+      "p": "H",
+      "t": "Right, everyone. Now, about Saturday's trip to Brighton. The coach leaves school at a quarter past eight, not eight, so please don't be early."
+     },
+     {
+      "p": "N",
+      "t": "Mr Hall, how much is it? I think my mum said twelve pounds."
+     },
+     {
+      "p": "H",
+      "t": "It was twelve pounds, but the museum visit is included now, so it's fourteen pounds. Please bring it on Friday."
+     },
+     {
+      "p": "D",
+      "t": "What shall we bring for lunch?"
+     },
+     {
+      "p": "H",
+      "t": "Sandwiches and a drink. Don't bring chocolate, because we're going to have ice cream on the beach."
+     },
+     {
+      "p": "N",
+      "t": "Can I bring my camera?"
+     },
+     {
+      "p": "H",
+      "t": "Of course. The weather is going to be good, so wear a hat and bring sun cream. If it rains, we're going to visit the aquarium instead."
+     },
+     {
+      "p": "D",
+      "t": "What time do we get back?"
+     },
+     {
+      "p": "H",
+      "t": "At about half past six. Your parents can collect you at the school gate."
+     },
+     {
+      "p": "N",
+      "t": "My brother is going to collect me. His name is Callum. C-A-L-L-U-M."
+     },
+     {
+      "p": "H",
+      "t": "Fine. And the school's emergency number is oh one two seven three, five five two, four nine zero."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What time does the coach leave school on Saturday?",
+     "op": [
+      "Eight o'clock",
+      "A quarter past eight",
+      "Half past eight",
+      "Half past six"
+     ],
+     "r": 1,
+     "exp": "The coach leaves school at a quarter past eight, not eight. Half past six é a hora de volta."
+    },
+    {
+     "t": "gap",
+     "q": "Complete a ficha: Cost of the trip: £___",
+     "resp": [
+      "14",
+      "fourteen"
+     ],
+     "exp": "Era twelve pounds, mas agora o museu está incluído: fourteen pounds.",
+     "ouvir": "It was twelve pounds, but the museum visit is included now, so it's fourteen pounds."
+    },
+    {
+     "t": "mc",
+     "q": "What should the students bring for lunch?",
+     "op": [
+      "Sandwiches and a drink",
+      "Chocolate and a drink",
+      "Ice cream and sandwiches",
+      "Money for the café"
+     ],
+     "r": 0,
+     "exp": "Sandwiches and a drink. Chocolate não, porque haverá ice cream na praia."
+    },
+    {
+     "t": "gap",
+     "q": "Complete a ficha: Bring the money on ___",
+     "resp": [
+      "Friday"
+     ],
+     "exp": "Please bring it on Friday: levar o dinheiro na sexta.",
+     "dica": "Dia da semana"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "The coach leaves school at a quarter past eight.",
+     "exp": "Quarter past: /kuórter past/. Eight: /êit/.",
+     "ouvir": "The coach leaves school at a quarter past eight."
+    },
+    {
+     "t": "mc",
+     "q": "What are they going to do if it rains?",
+     "op": [
+      "Stay at school",
+      "Go to the beach",
+      "Visit the aquarium",
+      "Go home early"
+     ],
+     "r": 2,
+     "exp": "If it rains, we're going to visit the aquarium instead. A praia é o plano com tempo bom."
+    },
+    {
+     "t": "gap",
+     "q": "Escreva o nome do irmão da Nina: ___",
+     "resp": [
+      "Callum"
+     ],
+     "exp": "C-A-L-L-U-M forma Callum.",
+     "ouvir": "C. A. L. L. U. M."
+    },
+    {
+     "t": "mc",
+     "q": "Who is going to take a camera?",
+     "op": [
+      "Mr Hall",
+      "Nina",
+      "Dan",
+      "Nina's brother"
+     ],
+     "r": 1,
+     "exp": "Nina pergunta: Can I bring my camera? Dan pergunta sobre o almoço e o irmão só vai buscá-la."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "are",
+      "going",
+      "to",
+      "have",
+      "ice",
+      "cream",
+      "on",
+      "the",
+      "beach"
+     ],
+     "resp": "We are going to have ice cream on the beach.",
+     "exp": "Estrutura de plano: sujeito + be going to + verbo + complemento."
+    },
+    {
+     "t": "gap",
+     "q": "Complete a ficha: School emergency number: 01273 552 ___",
+     "resp": [
+      "490",
+      "four nine zero"
+     ],
+     "exp": "Four nine zero = 490.",
+     "ouvir": "The school's emergency number is oh one two seven three, five five two, four nine zero."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga aonde você gostaria de ir em uma excursão de um dia.",
+     "frase": "Where would you like to go for a day trip?",
+     "modelo": "I'd like to go to the beach because I love swimming.",
+     "min": 6,
+     "chave": [
+      "beach",
+      "museum",
+      "park",
+      "zoo",
+      "city",
+      "because",
+      "would",
+      "like",
+      "go"
+     ],
+     "exp": "Use I'd like to go to... because... Ex.: I'd like to go to the zoo because I like animals."
+    },
+    {
+     "t": "mc",
+     "q": "What time will the students be back at school?",
+     "op": [
+      "At half past five",
+      "At six o'clock",
+      "At about half past six",
+      "At a quarter past eight"
+     ],
+     "r": 2,
+     "exp": "At about half past six. Quarter past eight é a hora da saída do ônibus."
+    }
+   ]
+  }
+ ]
+}
