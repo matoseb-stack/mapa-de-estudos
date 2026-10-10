@@ -34,20 +34,113 @@
     catch (e) { botao.disabled = false; botao.textContent = txt; app.toast(e && e.message ? e.message : "Não foi possível abrir o pagamento agora. Tente de novo."); }
   }
 
+  /* ---------- teste grátis de 3 dias (sem cartão) ----------
+     A pessoa informa o celular, aceita os termos (entrar no grupo do WhatsApp) e confirma o número
+     com o código enviado por SMS. As regras do Firestore só aceitam o teste com o número confirmado. */
+  const TERMOS = "Ao ativar o teste grátis, autorizo o Logic Academy a usar este número de celular para me adicionar ao grupo do Logic Academy no WhatsApp, onde recebo avisos, dicas de estudo e novidades. Posso sair do grupo a qualquer momento. O teste dura 3 dias, não pede cartão e não vira cobrança automática; ele só pode ser usado uma vez por conta e por número.";
+  const DDDS = [11,12,13,14,15,16,17,18,19,21,22,24,27,28,31,32,33,34,35,37,38,41,42,43,44,45,46,47,48,49,51,53,54,55,61,62,63,64,65,66,67,68,69,71,73,74,75,77,79,81,82,83,84,85,86,87,88,89,91,92,93,94,95,96,97,98,99];
+  // celular brasileiro: DDD válido + 9 dígitos começando com 9 → formato internacional (+55…)
+  function celular(v) {
+    let d = String(v || "").replace(/\D/g, "");
+    if (d.length === 13 && d.startsWith("55")) d = d.slice(2);
+    if (d.length !== 11 || !DDDS.includes(+d.slice(0, 2)) || d[2] !== "9" || /^(\d)\1+$/.test(d.slice(2))) return null;
+    return "+55" + d;
+  }
+  const fmtCel = e164 => e164 ? `(${e164.slice(3, 5)}) ${e164.slice(5, 10)}-${e164.slice(10)}` : "";
+  function cartaoTeste(app) {
+    if (!app.podeTestar || !app.podeTestar()) return "";
+    return `<div class="card pro-teste"><div><span class="pro-selo-teste">3 DIAS GRÁTIS</span><h2 style="margin:6px 0 4px">Experimente o Pro de graça</h2>
+      <p class="small muted" style="margin:0">Sem cartão e sem cobrança automática. Basta confirmar seu celular.</p></div>
+      <button class="btn primary" type="button" data-pro-teste>Começar teste grátis</button></div>`;
+  }
+  function modalTeste(app) {
+    if (!app.logado()) { app.toast("Crie sua conta ou entre para usar o teste grátis."); return; }
+    document.querySelectorAll(".pro-modal").forEach(x => x.remove());
+    const bg = document.createElement("div"); bg.className = "modal-bg pro-modal";
+    let numero = null, conf = null;
+    const passo1 = () => `<form class="card stack modal" data-t="1" novalidate style="width:min(480px,100%)">
+        <div class="row" style="gap:8px"><span class="pro-selo-teste">3 DIAS GRÁTIS</span><span class="eyebrow">Logic Academy Pro</span></div>
+        <h3 style="margin:0">Confirme seu celular</h3>
+        <p class="small muted" style="margin:0">Vamos enviar um código por SMS para confirmar que o número existe e é seu.</p>
+        <div class="field"><label for="tt-cel">Celular com DDD</label><div class="tt-cel"><span>+55</span><input id="tt-cel" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(11) 91234-5678" maxlength="16" required></div></div>
+        <label class="tt-termos"><input type="checkbox" id="tt-ok" required><span>${app.esc(TERMOS)} <a href="termos.html#teste-gratis" target="_blank" rel="noopener">Termos de uso</a> · <a href="privacidade.html#celular" target="_blank" rel="noopener">Privacidade</a></span></label>
+        <p class="small tt-erro" hidden></p>
+        <div class="row" style="justify-content:flex-end;gap:8px"><button class="btn ghost" type="button" data-tt="x">Cancelar</button><button class="btn primary" type="submit" id="tt-enviar">Enviar código por SMS</button></div></form>`;
+    const passo2 = () => `<form class="card stack modal" data-t="2" novalidate style="width:min(480px,100%)">
+        <h3 style="margin:0">Digite o código</h3>
+        <p class="small muted" style="margin:0">Enviamos um código de 6 números por SMS para <b>${fmtCel(numero)}</b>. Pode levar até 1 minuto.</p>
+        <div class="field"><label for="tt-cod">Código</label><input id="tt-cod" class="tt-cod" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required></div>
+        <p class="small tt-erro" hidden></p>
+        <div class="row" style="justify-content:space-between;gap:8px"><button class="btn ghost sm" type="button" data-tt="voltar">Trocar número</button><button class="btn primary" type="submit">Confirmar e ativar</button></div></form>`;
+    const passo3 = ate => `<div class="card stack modal" style="width:min(480px,100%);text-align:center;align-items:center">
+        <div class="tt-ok">✓</div><h3 style="margin:0">Seu teste grátis começou!</h3>
+        <p class="muted small" style="margin:0">Você tem o Logic Academy Pro até <b>${app.esc(fmtData(ate))}</b>: mentoria sem limite, todas as aulas de Inglês e nenhum anúncio.</p>
+        <button class="btn primary" type="button" data-tt="grupo">Entrar no grupo do WhatsApp</button>
+        <button class="btn ghost sm" type="button" data-tt="x">Começar a estudar</button></div>`;
+    const erro = m => { const e = bg.querySelector(".tt-erro"); if (e) { e.hidden = false; e.textContent = m; } };
+    const pintar = h => { bg.innerHTML = h; const i = bg.querySelector("input:not([type=checkbox])"); if (i) setTimeout(() => i.focus(), 50); };
+    pintar(passo1());
+    document.body.appendChild(bg);
+    bg.addEventListener("click", async e => {
+      const b = e.target.closest("[data-tt]"); if (!b && e.target !== bg) return;
+      const a = b ? b.dataset.tt : "x";
+      if (a === "x") bg.remove();
+      else if (a === "voltar") { conf = null; pintar(passo1()); bg.querySelector("#tt-cel").value = fmtCel(numero); }
+      else if (a === "grupo") abrirGrupo(app, b);
+    });
+    bg.addEventListener("submit", async e => {
+      e.preventDefault();
+      const f = e.target, btn = f.querySelector('[type="submit"]'), txt = btn.textContent;
+      btn.disabled = true;
+      try {
+        if (f.dataset.t === "1") {
+          numero = celular(f.querySelector("#tt-cel").value);
+          if (!numero) { erro("Digite um celular brasileiro válido, com DDD (ex.: 11 91234-5678)."); btn.disabled = false; return; }
+          if (!f.querySelector("#tt-ok").checked) { erro("Para ativar o teste, é preciso aceitar os termos."); btn.disabled = false; return; }
+          btn.textContent = "Enviando…";
+          conf = await app.enviarCodigo(numero, "tt-enviar");
+          if (conf === true) { btn.textContent = "Ativando…"; await app.ativarTeste(numero); pintar(passo3(app.testeAte())); return; }   // número já confirmado nesta conta
+          pintar(passo2());
+        } else {
+          const cod = f.querySelector("#tt-cod").value.replace(/\D/g, "");
+          if (cod.length !== 6) { erro("O código tem 6 números."); btn.disabled = false; return; }
+          btn.textContent = "Confirmando…";
+          await app.confirmarCodigo(conf, cod);
+          btn.textContent = "Ativando…";
+          await app.ativarTeste(numero);
+          pintar(passo3(app.testeAte()));
+        }
+      } catch (err) { btn.disabled = false; btn.textContent = txt; erro(err && err.message ? err.message : "Não foi possível agora. Tente de novo."); }
+    });
+  }
+  async function abrirGrupo(app, botao) {
+    const txt = botao ? botao.textContent : ""; if (botao) { botao.disabled = true; botao.textContent = "Abrindo…"; }
+    try { const link = await app.linkGrupo(); if (link) { window.open(link, "_blank", "noopener"); } else app.toast("O link do grupo será liberado em breve. Avisamos por aqui!"); }
+    catch (e) { app.toast("Não foi possível abrir o grupo agora."); }
+    if (botao) { botao.disabled = false; botao.textContent = txt; }
+  }
+
   function render(container, app) {
-    const { esc, ico } = app, a = app.assinatura(), pro = app.ehPro();
+    const { esc, ico } = app, a = app.assinatura(), pro = app.ehPro(), teste = app.testeAte && app.testeAte(), emTeste = pro && !(a && a.ate > Date.now()) && teste > Date.now();
     container.innerHTML = `<div class="page pro-page" style="max-width:900px">
       ${app.pageHead("Logic Academy Pro", "Estude sem limites: mentoria com IA, curso de Inglês completo e nada de anúncios.")}
-      ${pro ? `<div class="card pro-ativo"><span class="pro-tag">PRO</span><div><h2 style="margin:0">Seu Pro está ativo</h2>
+      ${emTeste ? `<div class="card pro-ativo"><span class="pro-tag">PRO</span><div style="flex:1"><h2 style="margin:0">Seu teste grátis está ativo</h2>
+          <p class="muted" style="margin:4px 0 0">Vale até <b>${esc(fmtData(teste))}</b>. Gostou? Assine abaixo para continuar depois do teste.</p></div><button class="btn sm" type="button" data-pro-grupo>Grupo do WhatsApp</button></div>`
+      : pro ? `<div class="card pro-ativo"><span class="pro-tag">PRO</span><div><h2 style="margin:0">Seu Pro está ativo</h2>
           <p class="muted" style="margin:4px 0 0">Plano ${esc(a.plano === "anual" ? "anual" : "mensal")} · válido até <b>${esc(fmtData(a.ate))}</b>. Você pode renovar antes: os dias se somam.</p></div></div>`
         : a && a.ate ? `<div class="card flat"><p style="margin:0">Seu Pro venceu em <b>${esc(fmtData(a.ate))}</b>. Renove para voltar a usar tudo.</p></div>` : ""}
+      ${cartaoTeste(app)}
       <div class="pro-beneficios">${BENEFICIOS.map(([i, t, d]) => `<div class="pro-ben">${ico(i)}<div><b>${esc(t)}</b><p class="small muted">${esc(d)}</p></div></div>`).join("")}</div>
       <h2 style="margin:22px 0 10px">${pro ? "Renovar" : "Escolha seu plano"}</h2>
       ${cartoesPlanos(app)}
       ${app.logado() ? "" : `<p class="small" style="margin-top:10px">Para assinar, <b>entre com sua conta</b>: o Pro fica ligado a ela e vale em qualquer aparelho.</p>`}
       <p class="hint" style="margin-top:14px">Pagamento processado pelo Mercado Pago. Não é renovação automática: quando o prazo acabar, o app avisa e você renova se quiser. O Pro é liberado assim que o pagamento é aprovado (Pix e cartão costumam levar poucos segundos; boleto, até 2 dias úteis). Dúvidas: logicorg.inc@gmail.com.</p>
     </div>`;
-    container.onclick = e => { const b = e.target.closest("[data-pro-plano]"); if (b) assinar(app, b.dataset.proPlano, b); };
+    container.onclick = e => {
+      const b = e.target.closest("[data-pro-plano]"); if (b) { assinar(app, b.dataset.proPlano, b); return; }
+      if (e.target.closest("[data-pro-teste]")) { modalTeste(app); return; }
+      const g = e.target.closest("[data-pro-grupo]"); if (g) abrirGrupo(app, g);
+    };
   }
 
   const MOTIVOS = {
@@ -61,11 +154,13 @@
     bg.innerHTML = `<div class="card stack modal" role="dialog" aria-modal="true" aria-labelledby="pw-t" style="width:min(560px,100%)">
       <div class="row" style="gap:8px"><span class="pro-tag">PRO</span><span class="eyebrow">Logic Academy Pro</span></div>
       <h3 id="pw-t" style="margin:0">${app.esc(t)}</h3><p class="muted small" style="margin:0">${app.esc(d)}</p>
+      ${app.podeTestar && app.podeTestar() ? `<button class="btn primary tt-cta" type="button" data-pro-teste>Testar 3 dias grátis · sem cartão</button><p class="small muted" style="margin:-4px 0 0;text-align:center">ou assine:</p>` : ""}
       ${cartoesPlanos(app)}
       <div class="row" style="justify-content:space-between"><button class="btn ghost sm" type="button" data-pw="ver">Ver tudo o que o Pro inclui</button><button class="btn ghost" type="button" data-pw="x">Agora não</button></div></div>`;
     document.body.appendChild(bg);
     bg.addEventListener("click", e => {
       const b = e.target.closest("[data-pro-plano]"); if (b) { assinar(app, b.dataset.proPlano, b); return; }
+      if (e.target.closest("[data-pro-teste]")) { bg.remove(); modalTeste(app); return; }
       const x = e.target.closest("[data-pw]");
       if (e.target === bg || (x && x.dataset.pw === "x")) bg.remove();
       else if (x && x.dataset.pw === "ver") { bg.remove(); app.go("pro"); }
@@ -99,5 +194,5 @@
     });
   }
 
-  (window.LAComp = window.LAComp || {}).Pro = { render, paywall, anuncios, PLANOS };
+  (window.LAComp = window.LAComp || {}).Pro = { render, paywall, anuncios, modalTeste, celular, PLANOS, TERMOS };
 })();

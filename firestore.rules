@@ -220,8 +220,37 @@ service cloud.firestore {
 
     // Logic Academy Pro: só o servidor (função do Mercado Pago) grava; a pessoa só lê a própria assinatura
     function ehPro(uid) {
-      return exists(/databases/$(database)/documents/assinaturas/$(uid))
-        && get(/databases/$(database)/documents/assinaturas/$(uid)).data.ate > request.time;
+      return (exists(/databases/$(database)/documents/assinaturas/$(uid))
+          && get(/databases/$(database)/documents/assinaturas/$(uid)).data.ate > request.time)
+        || (exists(/databases/$(database)/documents/testes/$(uid))
+          && get(/databases/$(database)/documents/testes/$(uid)).data.inicio + duration.value(3, 'd') > request.time);
+    }
+
+    // Teste grátis de 3 dias: só para quem confirmou o celular por SMS (o Firebase coloca o número no token),
+    // uma única vez por conta e por número. O início é a hora do servidor; o fim é sempre início + 3 dias.
+    match /telefones/{numero} {
+      allow read: if logado() && resource.data.uid == request.auth.uid;
+      allow create: if logado() && request.auth.token.phone_number == numero
+        && request.resource.data.keys().hasOnly(['uid', 'em', 'termos'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.em == request.time && request.resource.data.termos is string;
+      allow update, delete: if false;
+    }
+    match /testes/{uid} {
+      allow read: if eu(uid);
+      allow create: if eu(uid) && request.auth.token.phone_number is string
+        && request.resource.data.keys().hasOnly(['inicio', 'telefone', 'termos', 'aceitoEm'])
+        && request.resource.data.inicio == request.time && request.resource.data.aceitoEm == request.time
+        && request.resource.data.telefone == request.auth.token.phone_number
+        && request.resource.data.termos is string
+        && getAfter(/databases/$(database)/documents/telefones/$(request.auth.token.phone_number)).data.uid == uid
+        && !exists(/databases/$(database)/documents/assinaturas/$(uid));
+      allow update, delete: if false;
+    }
+    // link do grupo do WhatsApp: o dono grava pelo console do Firebase; só quem ativou o teste ou é Pro consegue ler
+    match /privado/whatsapp {
+      allow read: if logado() && (exists(/databases/$(database)/documents/testes/$(request.auth.uid)) || ehPro(request.auth.uid));
+      allow write: if false;
     }
     match /assinaturas/{uid} { allow read: if eu(uid); allow write: if false; }
     match /pagamentos/{id} { allow read, write: if false; }
