@@ -218,6 +218,28 @@ service cloud.firestore {
       allow delete: if false;
     }
 
+    // Logic Academy Pro: só o servidor (função do Mercado Pago) grava; a pessoa só lê a própria assinatura
+    function ehPro(uid) {
+      return exists(/databases/$(database)/documents/assinaturas/$(uid))
+        && get(/databases/$(database)/documents/assinaturas/$(uid)).data.ate > request.time;
+    }
+    match /assinaturas/{uid} { allow read: if eu(uid); allow write: if false; }
+    match /pagamentos/{id} { allow read, write: if false; }
+
+    // Mentoria com IA no plano grátis: 3 perguntas por dia (o contador só sobe de 1 em 1, no dia de hoje)
+    match /usoIA/{uid} {
+      function usoOk() {
+        let d = request.resource.data;
+        let mesmoDia = resource != null && resource.data.dia == diaBR();
+        return d.keys().hasOnly(['dia', 'n']) && d.dia == diaBR()
+          && d.n == (mesmoDia ? resource.data.n + 1 : 1)
+          && (d.n <= 3 || ehPro(uid));
+      }
+      allow read: if eu(uid);
+      allow create, update: if eu(uid) && usoOk();
+      allow delete: if false;
+    }
+
     // Dados da versão anterior (só para migrar e apagar)
     match /msgs/{uid} { allow read: if logado(); allow write: if eu(uid); }
     match /membros/{uid} { allow read: if logado(); allow write: if eu(uid); }

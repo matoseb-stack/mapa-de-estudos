@@ -13,7 +13,10 @@
         ".github/**",
         "**/node_modules/**",
         "redirecionar/**",
-        "icones-oficial/**"
+        "icones-oficial/**",
+        "functions/**",
+        "idiomas/*.py",
+        "idiomas/*.md"
       ],
       "headers": [
         {
@@ -86,5 +89,16 @@
   ],
   "firestore": {
     "rules": "firestore.rules"
-  }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "*.log"
+      ]
+    }
+  ]
 }

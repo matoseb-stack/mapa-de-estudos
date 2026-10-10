@@ -28,6 +28,9 @@
   const Ex = () => window.LAComp.Exercicio;
   const chaveAula = (nivel, skill, n) => `ingles:${nivel}:${skill}:${n}`;
   const comp = k => IN().COMPETENCIAS.find(c => c.k === k);
+  // plano grátis: nivelamento + aula 1 de cada trilha; o resto é Logic Academy Pro
+  const gratis = n => n === 1;
+  const podeAbrir = (app, n) => gratis(n) || !app.ehPro || app.ehPro();
 
   /* ---------- dados ---------- */
   async function carregarTrilha(nivel, skill) {
@@ -138,6 +141,7 @@
           <div class="idm-meta-pct">${pct}%</div></div>
         <div class="prog" style="height:10px"><i style="width:${pct}%"></i></div>
       </div>
+      ${app.ehPro && !app.ehPro() ? `<div class="card flat idm-gratis"><span><span class="pro-tag">PRO</span> No plano grátis você faz o nivelamento e a <b>aula 1 de cada trilha</b>. Libere as 360 aulas e os simulados com o Logic Academy Pro.</span><button class="btn sm primary" type="button" data-id="pro">Ver planos · R$ 9,90/mês</button></div>` : ""}
       <div class="idm-resumo">
         <div class="stat"><div class="eyebrow">Seu nível</div><div class="v">${meu ? esc(meu) : "—"}</div><div class="s">${meu ? esc(I.EXAME[meu]) : "Faça o nivelamento"}</div></div>
         <div class="stat"><div class="eyebrow">XP de idiomas</div><div class="v">${perfil.xp}</div><div class="s">${window.LAService ? "cada habilidade também vale XP no perfil, 1 vez por dia" : "acertos + tempo estudado"}</div></div>
@@ -163,6 +167,7 @@
         if (E.trilhaAberta) abrirLista(container, app, k, true); else container.querySelector("[data-lista]").innerHTML = ""; return; }
       const s = e.target.closest("[data-id-semana]"); if (s) { modalSemana(app, s.dataset.idSemana); return; }
       if (e.target.closest('[data-id="nivelamento"]')) { iniciarTeste(container, app); return; }
+      if (e.target.closest('[data-id="pro"]')) { app.go("pro"); return; }
       if (e.target.closest('[data-id="mudar"]')) escolher(container, app, 1);
     };
   }
@@ -172,7 +177,7 @@
       <p class="small muted">${esc(c.desc)}</p>
       <div class="row" style="justify-content:space-between"><span class="small"><b>${f} de ${T}</b> aulas</span><span class="small muted">${px ? `Próxima: aula ${px}` : "Trilha concluída"}</span></div>
       <div class="prog"><i style="width:${f / T * 100}%"></i></div>
-      <div class="row" style="gap:8px"><button class="btn primary sm" type="button" data-aula="${c.k}:${px || T}">${ico("play")}${px ? (px === 1 ? "Começar · Aula 1" : `Continuar · Aula ${px}`) : "Refazer o simulado"}</button>
+      <div class="row" style="gap:8px"><button class="btn primary sm" type="button" data-aula="${c.k}:${px || T}">${ico("play")}${px ? (px === 1 ? "Começar · Aula 1" : `Continuar · Aula ${px}`) : "Refazer o simulado"}${px && !podeAbrir(app, px) ? ` <span class="pro-tag">PRO</span>` : ""}</button>
         <button class="btn sm" type="button" data-lista-trilha="${c.k}" aria-expanded="${E.trilhaAberta === c.k}">${ico("list")}Ver as ${T} aulas</button>
         <button class="btn sm ghost" type="button" data-id-semana="${c.k}" title="Colocar a próxima aula no seu cronograma">${ico("cal")}Semana</button></div></div>`;
   }
@@ -186,7 +191,7 @@
         return `<li class="${ok ? "feita" : lib ? "aberta" : "fechada"}"><button type="button" ${lib ? `data-aula="${skill}:${a.n}"` : "disabled"} class="idm-aula-li">
           <span class="idm-aula-n">${ok ? "✓" : lib ? a.n : "🔒"}</span>
           <span class="idm-aula-t"><b>${sim ? "Simulado · " : ""}Aula ${a.n} · ${esc(a.titulo)}</b><small>${esc(a.objetivo)}</small></span>
-          <span class="idm-aula-s small">${f && f.pct != null ? `${Math.round(f.pct * 100)}%` : lib ? "▶" : ""}</span></button></li>`; }).join("")}</ol>
+          <span class="idm-aula-s small">${f && f.pct != null ? `${Math.round(f.pct * 100)}%` : ""}${!podeAbrir(app, a.n) ? `<span class="pro-tag">PRO</span>` : lib && !(f && f.pct != null) ? "▶" : ""}</span></button></li>`; }).join("")}</ol>
       <p class="hint">A próxima aula abre quando você acerta pelo menos ${Math.round(APROVA * 100)}% da anterior.</p></div>`;
     if (rolar) box.scrollIntoView({ behavior: "smooth", block: "start" });
   }
@@ -221,6 +226,7 @@
 
   /* ---------- Aula ---------- */
   async function abrirAula(container, app, nv, skill, n) {
+    if (!podeAbrir(app, n)) { Ex().pararFala(); app.paywall("idiomas"); return; }
     E.tela = "aula";
     container.onclick = null;
     container.innerHTML = `<div class="page" style="max-width:860px"><div class="card row muted"><span class="spinner"></span>Abrindo a aula…</div></div>`;

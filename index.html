@@ -3,8 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4234319012596475"
-     crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-4234319012596475">
 <style>
 /* Layout: app de produtividade — barra lateral fixa à esquerda com a navegação, área principal com cartões discretos; monocromático preto/branco */
 :root{
@@ -1074,15 +1073,16 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=2.3">
-<script src="js/firebaseServiceMock.js?v=2.3"></script>
-<script src="js/firebaseService.js?v=2.3"></script>
-<script src="js/idiomas/conteudoIngles.js?v=2.3"></script>
-<script src="js/componentes/PatchNotesModal.js?v=2.3"></script>
-<script src="js/componentes/FloatingTimer.js?v=2.3"></script>
-<script src="js/componentes/ExercicioIdioma.js?v=2.3"></script>
-<script src="js/componentes/CambridgeTestView.js?v=2.3"></script>
-<script src="js/componentes/IdiomasView.js?v=2.3"></script>
+<link rel="stylesheet" href="css/componentes.css?v=2.4">
+<script src="js/firebaseServiceMock.js?v=2.4"></script>
+<script src="js/firebaseService.js?v=2.4"></script>
+<script src="js/idiomas/conteudoIngles.js?v=2.4"></script>
+<script src="js/componentes/PatchNotesModal.js?v=2.4"></script>
+<script src="js/componentes/FloatingTimer.js?v=2.4"></script>
+<script src="js/componentes/ExercicioIdioma.js?v=2.4"></script>
+<script src="js/componentes/CambridgeTestView.js?v=2.4"></script>
+<script src="js/componentes/IdiomasView.js?v=2.4"></script>
+<script src="js/componentes/Pro.js?v=2.4"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
 
@@ -1645,7 +1645,7 @@ async function entrar(modo){
   S.pomoLog=garantirTotais(S.pomoLog&&S.pomoLog.dias?S.pomoLog:{dias:{},sessoes:0});carregarCrono();virarSemana();verificarConquistas(true);if(S.edital&&!Array.isArray(S.edital.materias))S.edital=null;
   if(S.perfil&&S.perfil.ui)aplicarUI(S.perfil.ui);else if(S.perfil&&S.perfil.tema)aplicarTema(S.perfil.tema);
   if(S.perfil&&S.perfil.pomo)Object.assign(P.dur,S.perfil.pomo);else if(S.perfil)Object.assign(P.dur,{foco:+S.perfil.bloco||50,curta:+S.perfil.pausa||10});P.restante=pomoTotal();carregarPomo();
-  if(S.mode==="nuvem"){assinarSocial();if(FBM()){iniciarComunidadeFB();iniciarConquistasSrv()}}
+  if(S.mode==="nuvem"){assinarSocial();if(FBM()){iniciarComunidadeFB();iniciarConquistasSrv();iniciarAssinatura()}}
   if(S.perfil&&S.plano){S.view="inicio";renderShell()}
   else{S.step=0;S.draft=S.perfil?migrar(clone(S.perfil)):perfilPadrao(nomeConta);renderWizard()}
 }
@@ -2291,7 +2291,7 @@ function renderCronometro(){
 /* ================= Idiomas (Inglês · Cambridge) ================= */
 // a aba fica em js/componentes/IdiomasView.js; este objeto dá a ela o que precisa do app
 const appIdiomas={
-  uid:()=>S.uid||"visitante",esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),go:v=>go(v),naTela:()=>S.view==="idiomas",
+  uid:()=>S.uid||"visitante",ehPro:()=>ehPro(),paywall:m=>LAComp.Pro.paywall(appPro,m),esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),go:v=>go(v),naTela:()=>S.view==="idiomas",
   diasSemana:()=>DIAS.map((d,i)=>({k:d.k,n:d.n,hoje:i===hojeIdx()})),
   adicionarBlocoNaSemana(o){ // {dia,inicio,min,materia,tarefa,tipo}
     if(!S.plano)return {ok:false,msg:"Monte sua semana primeiro (aba Minha semana) para adicionar aulas a ela."};
@@ -2329,9 +2329,44 @@ function renderIdiomas(){
   if(!V||!window.FirebaseServiceMock||!window.LA_INGLES){$("#main").innerHTML=`<div class="page">${pageHead("Idiomas")}<div class="card"><p>Não foi possível carregar a aba de idiomas. Atualize a página.</p></div></div>`;return}
   V.render($("#main"),appIdiomas);
 }
+/* ================= Logic Academy Pro ================= */
+// assinaturas/{uid} só é gravada pelo servidor (functions/index.js, depois do pagamento aprovado no Mercado Pago)
+const ehPro=()=>!!(S.pro&&S.pro.ate&&tsMs(S.pro.ate)>Date.now());
+const LIMITE_IA_GRATIS=3;
+function iniciarAssinatura(){
+  S.pro=null;const eraPro=()=>ehPro();
+  S.unsub.push(S.db.collection("assinaturas").doc(S.uid).onSnapshot(d=>{const antes=eraPro();S.pro=d.exists?d.data():null;
+    if(!antes&&ehPro()&&S.aguardandoPro){S.aguardandoPro=false;toast("Pagamento aprovado! Seu Logic Academy Pro está ativo. 🎉")}
+    renderSideUser();LAComp.Pro.anuncios(appPro);if(S.view==="pro")renderPro();
+    if(ehPro()&&!antes)document.querySelectorAll(".pro-modal").forEach(x=>x.remove())},e=>console.warn("assinatura",e&&e.code)))}
+// pergunta à mentoria no plano grátis: soma 1 no contador do dia (as regras do Firestore recusam a 4ª)
+async function usarCotaIA(){
+  if(ehPro()||!FBM()||S.sample)return true;
+  const ref=S.db.collection("usoIA").doc(S.uid),dia=periodosBR().dia;
+  try{await S.db.runTransaction(async t=>{const d=await t.get(ref),x=d.exists?d.data():null,n=x&&x.dia===dia?x.n+1:1;
+      if(n>LIMITE_IA_GRATIS)throw {code:"limite"};t.set(ref,{dia,n})});return true}
+  catch(e){if(e&&(e.code==="limite"||e.code==="permission-denied"))return false;console.warn("cota IA",e&&e.code);return true}}
+async function cotaIARestante(){if(ehPro()||!FBM())return null;try{const d=await S.db.collection("usoIA").doc(S.uid).get(),x=d.exists?d.data():null;return LIMITE_IA_GRATIS-(x&&x.dia===periodosBR().dia?x.n:0)}catch(e){return null}}
+async function pagarPro(plano){
+  if(!FBM()||!S.uid)throw new Error("Entre com sua conta para assinar.");
+  if(!firebase.functions)await carregarScript("https://www.gstatic.com/firebasejs/10.12.2/firebase-functions-compat.js");
+  try{const r=await firebase.app().functions("southamerica-east1").httpsCallable("criarPagamento")({plano,origem:location.origin+location.pathname});
+    S.aguardandoPro=true;try{localStorage.setItem("la_pro_aguardando","1")}catch(e){}return r.data.url}
+  catch(e){console.warn("pagamento",e&&e.code,e&&e.message);throw new Error(e&&e.code==="functions/not-found"||e&&e.code==="functions/internal"&&/not.?found/i.test(e.message||"")?"O pagamento ainda não foi ativado neste site.":(e&&e.message)||"Não foi possível abrir o pagamento agora.")}}
+const appPro={esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),go:v=>go(v),
+  ehPro:()=>ehPro(),assinatura:()=>S.pro?{plano:S.pro.plano,ate:tsMs(S.pro.ate)}:null,logado:()=>FBM()&&!!S.uid,pagar:p=>pagarPro(p)};
+function renderPro(){LAComp.Pro.render($("#main"),appPro)}
+// volta do Mercado Pago (?pro=ok|pendente|erro)
+(function(){try{const q=new URLSearchParams(location.search),r=q.get("pro");if(!r)return;
+  setTimeout(()=>toast(r==="ok"?"Pagamento recebido! O Pro é liberado em instantes.":r==="pendente"?"Pagamento pendente: o Pro é liberado assim que ele for aprovado.":"O pagamento não foi concluído. Você pode tentar de novo na tela Logic Academy Pro."),1800);
+  if(r!=="erro")S.aguardandoPro=true;q.delete("pro");q.delete("collection_id");q.delete("collection_status");q.delete("payment_id");q.delete("status");q.delete("external_reference");q.delete("payment_type");q.delete("merchant_order_id");q.delete("preference_id");q.delete("site_id");q.delete("processing_mode");q.delete("merchant_account_id");
+  history.replaceState(null,"",location.pathname+(q.toString()?"?"+q:"")+location.hash)}catch(e){}})();
+window.LA_ADS={cliente:"ca-pub-4234319012596475",slots:{inicio:"",estatisticas:""}}; // ids dos blocos de anúncio criados no AdSense
+
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="2.2";
+const APP_VERSAO="2.3";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Chegou o Logic Academy Pro",d:"Mentoria com IA sem limite, o curso de Inglês completo (360 aulas) e nada de anúncios, por R$ 9,90/mês ou R$ 79,90/ano. Banco de questões, plano semanal, pomodoro e comunidade continuam grátis."},
   {t:"Curso de Inglês completo, do A1 ao C2",d:"360 aulas em trilhas de Reading & Use of English, Listening, Writing e Speaking, com um simulado da prova Cambridge no fim de cada trilha."},
   {t:"Você escolhe o idioma e a prova",d:"Na aba Idiomas, escolha o idioma (por enquanto, Inglês) e a prova que quer fazer, do A2 Key ao C2 Proficiency. O app mostra quanto falta para você estar pronto."},
   {t:"Aulas que alternam marcar, escrever e falar",d:"Cada aula sobe de dificuldade e mistura questões de marcar, completar, montar frases e falar em inglês (o app ouve e corrige)."},
@@ -3448,6 +3483,9 @@ async function renderMentoria(){
   const ta=$("#mt-in");ta.oninput=()=>{ta.style.height="auto";ta.style.height=Math.min(160,ta.scrollHeight)+"px"};
   ta.onkeydown=e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();$("#mt-form").requestSubmit()}};
   $("#mt-form").onsubmit=e=>{e.preventDefault();const t=ta.value.trim();if(t)mentorEnviar(t)};
+  if(!ehPro()&&FBM())cotaIARestante().then(r=>{if(r==null||S.view!=="mentoria")return;const f=$("#mt-form");if(!f||$("#mt-cota"))return;
+    f.insertAdjacentHTML("afterend",`<p class="hint" id="mt-cota" style="margin:6px 2px 0">Plano grátis: ${Math.max(0,r)} de ${LIMITE_IA_GRATIS} perguntas hoje. <a href="#pro" data-go-pro>Pergunte sem limite com o Pro</a></p>`);
+    $("#mt-cota [data-go-pro]").onclick=e=>{e.preventDefault();go("pro")}});
   $$("[data-sug-mt]").forEach(b=>b.onclick=()=>mentorEnviar(b.dataset.sugMt));
   const lb=$("#mt-limpar");if(lb)lb.onclick=()=>{m.msgs=[];gravar("mentoria",{msgs:[]});renderMentoria()};
   if(S.mentorPendente&&!m.ocupado){const t=S.mentorPendente;S.mentorPendente=null;mentorEnviar(t);return}
@@ -3465,7 +3503,8 @@ function mtFormatar(t){ // markdown simples das respostas: negrito, itálico, t�
       else{if(lista){h+=`</${lista.tipo}>`;lista=null}const hd=l.match(/^\s*#{1,4}\s+(.*)$/);if(l.trim())h+=hd?`<p><b>${inl(hd[1])}</b></p>`:`<p>${inl(l)}</p>`}});
     if(lista)h+=`</${lista.tipo}>`;return h}).join("")}
 async function mentorEnviar(t){
-  const m=S.mentor;if(m.ocupado)return;m.msgs.push({r:"user",t});m.ocupado=true;renderMentoria();
+  const m=S.mentor;if(m.ocupado)return;
+  if(!(await usarCotaIA())){LAComp.Pro.paywall(appPro,"mentoria");const i=$("#mt-in");if(i)i.value=t;return}m.msgs.push({r:"user",t});m.ocupado=true;renderMentoria();
   const sistema=`Você é a mentora de estudos do Logic Academy, um site brasileiro de organização de estudos. Responda em português do Brasil, de forma direta, acolhedora e prática, em no máximo 220 palavras, com listas curtas quando ajudar. Baseie-se nos dados do estudante abaixo; quando faltar informação, diga o que ele pode registrar no site. Pode sugerir abas do site: Minha semana, Pomodoro, Cronômetro, Banco de questões, Tópicos da prova, Desafios, Estatísticas. Não invente datas de provas nem conteúdo de editais.\n\nDADOS DO ESTUDANTE (hoje é ${new Date().toLocaleDateString("pt-BR")}):\n${contextoMentoria()}`;
   const hist=m.msgs.slice(-12).map(x=>({role:x.r==="user"?"user":"assistant",content:x.t}));while(hist.length&&hist[0].role!=="user")hist.shift();
   hist[0]={...hist[0],content:sistema+"\n\nPERGUNTA:\n"+hist[0].content};
@@ -4012,7 +4051,7 @@ function renderTutorial(){
 
 /* ================= Shell com barra lateral ================= */
 const NAV=[
-  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"]]],
+  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"],["pro","Logic Academy Pro","flame"]]],
   ["Prova",[["edital","Escanear edital","scan"],["topicos","Tópicos da prova","list"],["flashcards","Flashcards","cartas"]]],
   ["Comunidade",[["grupos","Meus grupos","users"],...(STANDALONE?[["buscarGrupos","Buscar grupos","search"]]:[]),["voz","Voz global","mic"],["chat","Chat global","chat"],...(STANDALONE?[["mensagens","Mensagens","send"],["amigos","Amigos","user"]]:[]),["ranking","Ranking","trophy"]]],
   ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"]]],
@@ -4081,13 +4120,13 @@ function contaEmail(){try{return (FB&&FB.auth&&FB.auth.currentUser&&FB.auth.curr
 function renderSideUser(){
   const el=$("#side-me");if(!el)return;
   const nm=S.mode==="nuvem"?(S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"Estudante":(S.perfil&&S.perfil.nome)||"Visitante";
-  el.innerHTML=`${S.mode==="nuvem"?avatar(S.uid):`<span class="avatar" aria-hidden="true">${esc(nm[0]||"V").toUpperCase()}</span>`}<div style="min-width:0"><div class="nm">${esc(nm)}</div><div class="sub" title="${esc(contaEmail())}">${S.mode==="nuvem"?(esc(contaEmail())||"Salvo na nuvem"):"Visitante · nada é salvo"}</div></div>`;
+  el.innerHTML=`${S.mode==="nuvem"?avatar(S.uid):`<span class="avatar" aria-hidden="true">${esc(nm[0]||"V").toUpperCase()}</span>`}<div style="min-width:0"><div class="nm">${esc(nm)}${S.mode==="nuvem"&&ehPro()?' <span class="pro-tag">PRO</span>':""}</div><div class="sub" title="${esc(contaEmail())}">${S.mode==="nuvem"?(esc(contaEmail())||"Salvo na nuvem"):"Visitante · nada é salvo"}</div></div>`;
 }
 function progEdital(){if(!S.edital)return 0;const all=S.edital.materias.flatMap(m=>m.topicos);return all.length?Math.round(all.filter(t=>t.feito).length/all.length*100):0}
 function go(v){pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
 function renderView(){
   $$("[data-go]").forEach(a=>{a.classList.toggle("on",a.dataset.go===S.view);if(a.dataset.go===S.view){const g=a.closest(".nav-grp.fech");if(g){g.classList.remove("fech");g.querySelectorAll("a").forEach(x=>x.removeAttribute("tabindex"));const b=g.previousElementSibling;if(b)b.setAttribute("aria-expanded","true")}}if(a.dataset.go==="topicos"){a.hidden=!S.edital;const b=a.querySelector(".badge");if(S.edital){if(b)b.textContent=progEdital()+"%";else a.insertAdjacentHTML("beforeend",`<span class="badge">${progEdital()}%</span>`)}}});
-  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,idiomas:renderIdiomas,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
+  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,idiomas:renderIdiomas,pro:renderPro,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
   f();
 }
 const pageHead=(t,sub,acoes)=>`<div class="page-h"><div><h1>${t}</h1>${sub?`<p>${sub}</p>`:""}</div>${acoes?`<div class="row">${acoes}</div>`:""}</div>`;
@@ -4215,6 +4254,7 @@ function renderInicio(){
       </div>
     </div></div>`;
   $("#ini-pomo").onclick=()=>{if(P.rodando){go("pomodoro");return}if(C.rodando){go("cronometro");return}const prox=blocos.find(b=>!b.feito);iniciarEstudo(prox?hojeK+"|"+prox.id:null)};
+  {const pg=$("#main .page");if(pg){pg.insertAdjacentHTML("beforeend",'<div class="anuncio" data-anuncio="inicio" hidden></div>');LAComp.Pro.anuncios(appPro)}}
   ligarHoje(blocos,hojeK);ligarBlocos();ligarMentoriaInicio();ligarConvite();ligarRevisoes(renderInicio);$$("[data-link]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.dataset.link)}));
   const vc=$("#visit-conta");if(vc)vc.onclick=()=>sair("criar");
   tutTalvezPerguntar();

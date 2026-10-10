@@ -1,5 +1,5 @@
 # Publica só as regras do Firestore (sem mexer no site oficial). Rodar à mão em Actions > "Publicar só as regras".
-# Última publicação pedida: XP de idiomas no perfil (resgate tipo "l").
+# Última publicação pedida: Logic Academy Pro (assinaturas, pagamentos e limite da mentoria grátis).
 name: Publicar só as regras
 
 on:

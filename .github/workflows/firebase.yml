@@ -51,6 +51,17 @@ jobs:
       - name: Publicar regras
         # se a conta de serviço não tiver o papel "Administrador do Firebase", o site sai mesmo assim e fica só o aviso
         run: npx --yes firebase-tools@13 deploy --only firestore:rules --project mapa-de-estudos-d6eca --non-interactive --force || echo "::warning::Não consegui publicar as regras (sem permissão). Dê o papel Administrador do Firebase à conta de serviço no Google Cloud > IAM."
+      - name: Publicar pagamentos do Pro (Mercado Pago)
+        # precisa do plano Blaze no Firebase e do segredo MERCADOPAGO_ACCESS_TOKEN no GitHub; sem eles, o resto do site sai normalmente
+        env:
+          MP: ${{ secrets.MERCADOPAGO_ACCESS_TOKEN }}
+        run: |
+          if [ -z "$MP" ]; then echo "::warning::Sem o segredo MERCADOPAGO_ACCESS_TOKEN: os pagamentos do Pro não foram publicados."; exit 0; fi
+          (cd functions && npm ci --omit=dev)
+          printf '%s' "$MP" | npx --yes firebase-tools@13 functions:secrets:set MP_ACCESS_TOKEN --data-file=- --project mapa-de-estudos-d6eca --non-interactive --force \
+            || { echo "::warning::Não consegui guardar o token do Mercado Pago (a conta de serviço precisa do papel Administrador do Secret Manager)."; exit 0; }
+          npx --yes firebase-tools@13 deploy --only functions --project mapa-de-estudos-d6eca --non-interactive --force \
+            || echo "::warning::Não consegui publicar as funções de pagamento (o projeto precisa estar no plano Blaze e a conta de serviço precisa dos papéis de Cloud Functions)."
       - name: Apagar credencial
         if: always()
         run: rm -f "$RUNNER_TEMP/chave.json"

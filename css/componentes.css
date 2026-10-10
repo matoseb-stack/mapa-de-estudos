@@ -184,3 +184,25 @@
 .ex-fb.pulado{background:var(--sunken)}
 .ex-acoes{justify-content:flex-end;gap:8px}
 @media (max-width:560px){.ex-ops{grid-template-columns:1fr}.idm-niveis{grid-template-columns:repeat(3,minmax(0,1fr))}.idm-meta-pct{font-size:1.6rem}}
+
+/* ---------- Logic Academy Pro ---------- */
+.pro-tag{display:inline-flex;align-items:center;font-size:.62rem;font-weight:700;letter-spacing:.08em;padding:2px 6px;border-radius:5px;background:linear-gradient(135deg,#f59e0b,#ec4899);color:#fff;vertical-align:middle;line-height:1.3}
+.pro-ativo{display:flex;align-items:center;gap:14px;margin-bottom:16px;border-color:#f59e0b}
+.pro-ativo .pro-tag{font-size:.9rem;padding:6px 10px}
+.pro-beneficios{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.pro-ben{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.pro-ben>.i{width:22px;height:22px;flex:none;color:var(--accent)}
+.pro-ben p{margin:4px 0 0}
+.pro-planos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.pro-plano{position:relative;display:flex;flex-direction:column;gap:8px}
+.pro-plano.destaque{border-color:var(--accent);box-shadow:0 0 0 3px var(--ring)}
+.pro-plano p{margin:0}
+.pro-plano .btn{margin-top:auto}
+.pro-selo{position:absolute;top:-10px;right:12px;font-size:.7rem;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--accent);color:var(--accent-fg)}
+.pro-preco{display:flex;align-items:baseline;gap:4px}
+.pro-preco b{font-size:1.8rem;letter-spacing:-.02em}
+.pro-preco span{color:var(--muted)}
+.idm-gratis{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.anuncio{margin-top:18px;padding-top:10px;border-top:1px dashed var(--line);min-height:0}
+.anuncio-rot{display:block;font-size:.68rem;color:var(--muted);margin-bottom:4px}
+@media (max-width:640px){.pro-beneficios,.pro-planos{grid-template-columns:1fr}}
