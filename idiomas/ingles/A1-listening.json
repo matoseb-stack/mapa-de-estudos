@@ -1,0 +1,2820 @@
+{
+ "nivel": "A1",
+ "skill": "listening",
+ "exame": "Pre A1–A1 Movers/Flyers",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Names, ages and spelling",
+   "objetivo": "Entender nomes, sobrenomes e idades ditos em uma conversa curta e anotar as letras.",
+   "foco": "Verb to be; alphabet; numbers 1–15; How old are you?",
+   "explicacao": [
+    "Na prova, nomes costumam ser soletrados letra por letra: Z-O-E. Treine o alfabeto em inglês.",
+    "Para a idade: I'm nine. / He is eleven. Em inglês usamos to be, não have.",
+    "Cuidado com o som final: thirteen (treze) e thirty (trinta) são diferentes."
+   ],
+   "vocab": [
+    {
+     "en": "surname",
+     "pt": "sobrenome"
+    },
+    {
+     "en": "spell",
+     "pt": "soletrar"
+    },
+    {
+     "en": "How old are you?",
+     "pt": "Quantos anos você tem?"
+    },
+    {
+     "en": "brother",
+     "pt": "irmão"
+    },
+    {
+     "en": "class",
+     "pt": "turma"
+    },
+    {
+     "en": "welcome",
+     "pt": "bem-vindo(a)"
+    }
+   ],
+   "material": {
+    "titulo": "The new girl",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Hello! What's your name?"
+     },
+     {
+      "p": "B",
+      "t": "My name is Zoe."
+     },
+     {
+      "p": "A",
+      "t": "How do you spell that?"
+     },
+     {
+      "p": "B",
+      "t": "Z-O-E. Zoe Parker."
+     },
+     {
+      "p": "A",
+      "t": "Nice to meet you, Zoe. How old are you?"
+     },
+     {
+      "p": "B",
+      "t": "I'm nine. My brother is eleven. His name is Jack."
+     },
+     {
+      "p": "A",
+      "t": "Is Jack in this school?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, he is. He's in Class six."
+     },
+     {
+      "p": "A",
+      "t": "Welcome to our school, Zoe!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How old is Zoe?",
+     "op": [
+      "nine",
+      "eleven",
+      "six",
+      "twelve"
+     ],
+     "r": 0,
+     "exp": "Zoe diz: I'm nine. Eleven é a idade do irmão e six é a turma dele."
+    },
+    {
+     "t": "gap",
+     "q": "Her surname is ___.",
+     "resp": [
+      "Parker"
+     ],
+     "exp": "Ela soletra: Z-O-E. Zoe Parker. O sobrenome é Parker.",
+     "ouvir": "Z-O-E. Zoe Parker."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Nice to meet you. My name is Zoe.",
+     "exp": "Meet: /mit/, som longo. Zoe: /ZÔ-i/."
+    },
+    {
+     "t": "mc",
+     "q": "Who is in Class six?",
+     "op": [
+      "Zoe",
+      "Jack",
+      "the teacher",
+      "Zoe's sister"
+     ],
+     "r": 1,
+     "exp": "Jack: He's in Class six. Zoe não tem irmã na conversa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "How",
+      "do",
+      "you",
+      "spell",
+      "your",
+      "name"
+     ],
+     "resp": "How do you spell your name",
+     "exp": "Pergunta com How + do you + verbo: How do you spell...?"
+    },
+    {
+     "t": "gap",
+     "q": "Zoe's brother is ___ years old.",
+     "resp": [
+      "eleven",
+      "11"
+     ],
+     "exp": "My brother is eleven. Não confunda com nine, a idade da Zoe.",
+     "ouvir": "I'm nine. My brother is eleven."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: diga seu nome e soletre.",
+     "frase": "What's your name and how do you spell it?",
+     "modelo": "My name is Ana. A-N-A.",
+     "min": 4,
+     "chave": [
+      "name",
+      "my",
+      "I'm",
+      "spell"
+     ],
+     "exp": "Diga My name is... e soletre as letras do seu nome."
+    },
+    {
+     "t": "mc",
+     "q": "Listen. How do you spell her name?",
+     "op": [
+      "Z-O-E",
+      "Z-O-E-Y",
+      "S-O-E-Y",
+      "Z-O-Y"
+     ],
+     "r": 1,
+     "exp": "No áudio vem a letra Y no final: Z-O-E-Y.",
+     "ouvir": "Her name is Zoey. Z-O-E-Y."
+    },
+    {
+     "t": "gap",
+     "q": "Zoe is nine and her brother Jack is in Class ___.",
+     "resp": [
+      "six",
+      "6"
+     ],
+     "exp": "Jack is in Class six. O número da turma não é a idade dele.",
+     "ouvir": "Zoe is nine years old and her brother Jack is in Class six."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Numbers and phone numbers",
+   "objetivo": "Entender números, preços e telefones ditos em voz alta, sem confundir -teen e -ty.",
+   "foco": "Numbers 1–100; teen vs ty; phone numbers; How much?",
+   "explicacao": [
+    "Diga os números de telefone um por um: 0 = zero (ou oh), 7 = seven. Dois números iguais: double five.",
+    "-teen tem a força no final (thir-TEEN); -ty tem a força no começo (THIR-ty). Ouça com atenção: 13 ou 30?",
+    "Preço: It's eighteen pounds. Em inglês britânico a moeda é pound (£)."
+   ],
+   "vocab": [
+    {
+     "en": "phone number",
+     "pt": "número de telefone"
+    },
+    {
+     "en": "zero",
+     "pt": "zero"
+    },
+    {
+     "en": "price",
+     "pt": "preço"
+    },
+    {
+     "en": "pounds",
+     "pt": "libras (moeda)"
+    },
+    {
+     "en": "join",
+     "pt": "entrar, participar"
+    },
+    {
+     "en": "swimming class",
+     "pt": "aula de natação"
+    }
+   ],
+   "material": {
+    "titulo": "At the swimming club",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good morning. Sunny Pool. Can I help you?"
+     },
+     {
+      "p": "B",
+      "t": "Hi. I want to join the swimming class. My name's Ben."
+     },
+     {
+      "p": "A",
+      "t": "OK, Ben. What's your phone number?"
+     },
+     {
+      "p": "B",
+      "t": "It's zero seven three, one four eight, six two."
+     },
+     {
+      "p": "A",
+      "t": "Zero seven three, one four eight, six two. And how old are you?"
+     },
+     {
+      "p": "B",
+      "t": "I'm thirteen."
+     },
+     {
+      "p": "A",
+      "t": "The class is for twelve to fifteen year olds. It's on Tuesdays and the price is eighteen pounds."
+     },
+     {
+      "p": "B",
+      "t": "Eighteen? Not eighty?"
+     },
+     {
+      "p": "A",
+      "t": "No, eighteen pounds."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How old is Ben?",
+     "op": [
+      "thirteen",
+      "thirty",
+      "fifteen",
+      "twelve"
+     ],
+     "r": 0,
+     "exp": "Ben diz I'm thirteen. Thirty seria muito mais velho; twelve e fifteen são só a idade da turma."
+    },
+    {
+     "t": "gap",
+     "q": "The price is ___ pounds.",
+     "resp": [
+      "eighteen",
+      "18"
+     ],
+     "exp": "Eighteen (18), não eighty (80).",
+     "ouvir": "The price is eighteen pounds."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Is it thirteen or thirty?",
+     "exp": "Thirteen: força no final (thir-TEEN). Thirty: força no começo (THIR-ty)."
+    },
+    {
+     "t": "mc",
+     "q": "What is the price of the class?",
+     "op": [
+      "£80",
+      "£18",
+      "£16",
+      "£15"
+     ],
+     "r": 1,
+     "exp": "Ela confirma: No, eighteen pounds. Eighty é a pegadinha da pergunta do Ben."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "What",
+      "is",
+      "your",
+      "phone",
+      "number"
+     ],
+     "resp": "What is your phone number",
+     "exp": "Pergunta: What is + your phone number?"
+    },
+    {
+     "t": "gap",
+     "q": "The last two numbers are ___.",
+     "resp": [
+      "six two",
+      "62",
+      "6 2"
+     ],
+     "exp": "Ben termina o número com six two.",
+     "ouvir": "Zero seven three, one four eight, six two."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: diga seu número de telefone (pode inventar).",
+     "frase": "What's your phone number?",
+     "modelo": "It's zero seven, one two three, four five six.",
+     "min": 3,
+     "chave": [
+      "it's",
+      "my",
+      "number",
+      "zero",
+      "oh",
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine"
+     ],
+     "exp": "Diga os números um a um: It's zero seven..."
+    },
+    {
+     "t": "mc",
+     "q": "Listen. What are the two numbers?",
+     "op": [
+      "15 and 15",
+      "15 and 50",
+      "50 and 15",
+      "50 and 50"
+     ],
+     "r": 1,
+     "exp": "House number fifteen (15) e telefone terminando em fifty (50).",
+     "ouvir": "My house is number fifteen, and my phone number ends in fifty."
+    },
+    {
+     "t": "gap",
+     "q": "The lesson is on Tuesday at five ___.",
+     "resp": [
+      "fifty",
+      "50"
+     ],
+     "exp": "No áudio: five fifty, ou seja, 5.50.",
+     "ouvir": "The lesson is on Tuesday at five fifty."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Days, dates and the time",
+   "objetivo": "Entender dias da semana, datas e horas (half past, quarter to) em conversas curtas.",
+   "foco": "Days; months; ordinal numbers; telling the time",
+   "explicacao": [
+    "Horas: o'clock (3:00), half past (3:30), quarter past (3:15), quarter to (2:45), ten past (3:10).",
+    "Datas: the fifth of June (5 de junho). Os ordinais: first, second, third, fourth, fifth...",
+    "Usamos on com dias (on Monday) e at com horas (at nine)."
+   ],
+   "vocab": [
+    {
+     "en": "half past",
+     "pt": "e meia"
+    },
+    {
+     "en": "quarter to",
+     "pt": "quinze para"
+    },
+    {
+     "en": "quarter past",
+     "pt": "e quinze"
+    },
+    {
+     "en": "practice",
+     "pt": "treino"
+    },
+    {
+     "en": "lesson",
+     "pt": "aula"
+    },
+    {
+     "en": "birthday",
+     "pt": "aniversário"
+    },
+    {
+     "en": "present",
+     "pt": "presente"
+    }
+   ],
+   "material": {
+    "titulo": "Planning the week",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Tom, what time is football practice on Saturday?"
+     },
+     {
+      "p": "B",
+      "t": "It's at half past nine, Mum."
+     },
+     {
+      "p": "A",
+      "t": "Half past nine? Last week it was at quarter to ten."
+     },
+     {
+      "p": "B",
+      "t": "Yes, but this week the coach is early. And my piano lesson is on Wednesday at ten past four."
+     },
+     {
+      "p": "A",
+      "t": "OK. And Grandma's birthday?"
+     },
+     {
+      "p": "B",
+      "t": "It's on the fifth of June."
+     },
+     {
+      "p": "A",
+      "t": "Great. Let's buy a present on Sunday afternoon."
+     },
+     {
+      "p": "B",
+      "t": "Can we go at two o'clock?"
+     },
+     {
+      "p": "A",
+      "t": "Yes, at two."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What time is football practice on Saturday?",
+     "op": [
+      "9.15",
+      "9.30",
+      "9.45",
+      "10.30"
+     ],
+     "r": 1,
+     "exp": "Half past nine = 9.30. Quarter to ten (9.45) era o horário da semana passada."
+    },
+    {
+     "t": "gap",
+     "q": "My piano lesson is on ___.",
+     "resp": [
+      "Wednesday"
+     ],
+     "exp": "Piano lesson: Wednesday, às dez e dez (ten past four).",
+     "ouvir": "My piano lesson is on Wednesday."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Football practice is at half past nine.",
+     "exp": "Half: /hAf/, o l não se pronuncia."
+    },
+    {
+     "t": "mc",
+     "q": "When is Grandma's birthday?",
+     "op": [
+      "5 May",
+      "5 June",
+      "15 June",
+      "25 June"
+     ],
+     "r": 1,
+     "exp": "The fifth of June = 5 de junho."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "My",
+      "lesson",
+      "is",
+      "at",
+      "ten",
+      "past",
+      "four"
+     ],
+     "resp": "My lesson is at ten past four",
+     "exp": "Ten past four = quatro e dez (4.10)."
+    },
+    {
+     "t": "gap",
+     "q": "They go shopping on ___ at two.",
+     "resp": [
+      "Sunday"
+     ],
+     "exp": "Let's buy a present on Sunday afternoon, às duas (two o'clock).",
+     "ouvir": "Let's go shopping on Sunday at two o'clock."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: que dia é hoje?",
+     "frase": "What day is it today?",
+     "modelo": "Today is Monday.",
+     "min": 3,
+     "chave": [
+      "today",
+      "is",
+      "it's",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "exp": "Responda: Today is... ou It's..."
+    },
+    {
+     "t": "mc",
+     "q": "What time is the piano lesson?",
+     "op": [
+      "4.10",
+      "3.50",
+      "4.50",
+      "4.15"
+     ],
+     "r": 0,
+     "exp": "Ten past four = 4.10. Ten to four seria 3.50.",
+     "ouvir": "My piano lesson is on Wednesday at ten past four."
+    },
+    {
+     "t": "gap",
+     "q": "Last week football was at quarter ___ ten.",
+     "resp": [
+      "to"
+     ],
+     "exp": "Quarter to ten = 9.45 (quinze para as dez).",
+     "ouvir": "Last week practice was at quarter to ten."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "My family and friends",
+   "objetivo": "Entender quem é quem numa família: parentescos, idades e o que cada um faz.",
+   "foco": "Family words; possessive 's; he/she; jobs",
+   "explicacao": [
+    "Parentescos: mum, dad, brother, sister, grandmother, uncle, aunt, cousin.",
+    "O 's mostra posse: my dad's brother = o irmão do meu pai.",
+    "He é para menino e she para menina: He's a pilot. She likes dancing."
+   ],
+   "vocab": [
+    {
+     "en": "uncle",
+     "pt": "tio"
+    },
+    {
+     "en": "aunt",
+     "pt": "tia"
+    },
+    {
+     "en": "cousin",
+     "pt": "primo(a)"
+    },
+    {
+     "en": "baby",
+     "pt": "bebê"
+    },
+    {
+     "en": "pilot",
+     "pt": "piloto"
+    },
+    {
+     "en": "beard",
+     "pt": "barba"
+    },
+    {
+     "en": "photo",
+     "pt": "foto"
+    }
+   ],
+   "material": {
+    "titulo": "A family photo",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Look, this is a photo of my family."
+     },
+     {
+      "p": "B",
+      "t": "Who is the man with the beard?"
+     },
+     {
+      "p": "A",
+      "t": "That's my uncle Pete. He's my dad's brother. He's a pilot."
+     },
+     {
+      "p": "B",
+      "t": "And the girl next to him?"
+     },
+     {
+      "p": "A",
+      "t": "That's my cousin, Lucy. She's ten. She likes dancing."
+     },
+     {
+      "p": "B",
+      "t": "Is this your grandmother?"
+     },
+     {
+      "p": "A",
+      "t": "Yes, she's my mum's mum. She's seventy-two and she lives with us."
+     },
+     {
+      "p": "B",
+      "t": "And who's the baby?"
+     },
+     {
+      "p": "A",
+      "t": "That's my little brother, Sam. He's one."
+     },
+     {
+      "p": "B",
+      "t": "He's lovely!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Who is Pete?",
+     "op": [
+      "Mia's dad",
+      "Mia's uncle",
+      "Mia's grandfather",
+      "Mia's cousin"
+     ],
+     "r": 1,
+     "exp": "Pete é irmão do pai da Mia: my uncle Pete. He's my dad's brother."
+    },
+    {
+     "t": "gap",
+     "q": "Pete is my dad's ___.",
+     "resp": [
+      "brother"
+     ],
+     "exp": "My uncle Pete. He's my dad's brother.",
+     "ouvir": "Pete is my dad's brother."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "She is my mum's mum and she lives with us.",
+     "exp": "Lives: /lIvz/ com i curto."
+    },
+    {
+     "t": "mc",
+     "q": "What does Mia's cousin like?",
+     "op": [
+      "swimming",
+      "dancing",
+      "flying",
+      "drawing"
+     ],
+     "r": 1,
+     "exp": "Lucy likes dancing. Flying (voar) combina com o tio piloto, mas é pegadinha."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "That",
+      "is",
+      "my",
+      "little",
+      "brother",
+      "Sam"
+     ],
+     "resp": "That is my little brother Sam",
+     "exp": "Ordem: That is + my + little + brother + nome."
+    },
+    {
+     "t": "gap",
+     "q": "Mia's grandmother is ___ years old.",
+     "resp": [
+      "seventy-two",
+      "seventy two",
+      "72"
+     ],
+     "exp": "Seventy-two = 72. Não confunda com seventeen (17).",
+     "ouvir": "She's seventy-two and she lives with us."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: quem está na sua família?",
+     "frase": "Who is in your family?",
+     "modelo": "I've got a mum, a dad and a sister.",
+     "min": 4,
+     "chave": [
+      "mum",
+      "dad",
+      "mother",
+      "father",
+      "sister",
+      "brother",
+      "family",
+      "got"
+     ],
+     "exp": "Use I've got... ou There are... in my family."
+    },
+    {
+     "t": "mc",
+     "q": "How old is Sam?",
+     "op": [
+      "one",
+      "ten",
+      "seventy",
+      "two"
+     ],
+     "r": 0,
+     "exp": "He's one. Ten é a idade da Lucy e seventy-two é a da avó."
+    },
+    {
+     "t": "gap",
+     "q": "Pete is a ___ and he is Mia's uncle.",
+     "resp": [
+      "pilot"
+     ],
+     "exp": "No áudio: He's a pilot.",
+     "ouvir": "He is a pilot and he is my dad's brother."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "A day in my life",
+   "objetivo": "Entender uma rotina diária: horários, atividades e meios de transporte.",
+   "foco": "Present simple (I/he/she); daily routine; times; by bus/train",
+   "explicacao": [
+    "Present simple fala de rotina: I get up at six. She goes to school by train.",
+    "Com he/she/it o verbo ganha s: goes, plays, does (do → does, go → goes).",
+    "Horários: at six thirty, at seven fifteen. By + transporte: by bus, by train."
+   ],
+   "vocab": [
+    {
+     "en": "get up",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "have a shower",
+     "pt": "tomar banho"
+    },
+    {
+     "en": "have breakfast",
+     "pt": "tomar café da manhã"
+    },
+    {
+     "en": "leave",
+     "pt": "sair"
+    },
+    {
+     "en": "by train",
+     "pt": "de trem"
+    },
+    {
+     "en": "homework",
+     "pt": "lição de casa"
+    },
+    {
+     "en": "go to bed",
+     "pt": "ir dormir"
+    }
+   ],
+   "material": {
+    "titulo": "Nina's morning",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Nina, what time do you get up?"
+     },
+     {
+      "p": "B",
+      "t": "I get up at six thirty because I live far from school."
+     },
+     {
+      "p": "A",
+      "t": "Six thirty! Then what?"
+     },
+     {
+      "p": "B",
+      "t": "I have a shower and I have breakfast with my dad. We leave at seven fifteen."
+     },
+     {
+      "p": "A",
+      "t": "Do you go by bus?"
+     },
+     {
+      "p": "B",
+      "t": "No, I go by train. School starts at eight forty-five."
+     },
+     {
+      "p": "A",
+      "t": "And after school?"
+     },
+     {
+      "p": "B",
+      "t": "I do my homework, then I play tennis. I go to bed at nine."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What time does Nina get up?",
+     "op": [
+      "5.30",
+      "6.15",
+      "6.30",
+      "7.15"
+     ],
+     "r": 2,
+     "exp": "I get up at six thirty. Seven fifteen é a hora em que saem de casa."
+    },
+    {
+     "t": "gap",
+     "q": "I have ___ with my dad.",
+     "resp": [
+      "breakfast"
+     ],
+     "exp": "Nina toma café da manhã com o pai: breakfast.",
+     "ouvir": "I have breakfast with my dad."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "I get up at half past six and I have a shower.",
+     "exp": "Shower: /XÁ-uer/, duas sílabas curtas."
+    },
+    {
+     "t": "mc",
+     "q": "How does Nina go to school?",
+     "op": [
+      "by bus",
+      "by train",
+      "by car",
+      "by bike"
+     ],
+     "r": 1,
+     "exp": "Do you go by bus? No, I go by train."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Nina",
+      "does",
+      "her",
+      "homework",
+      "after",
+      "school"
+     ],
+     "resp": "Nina does her homework after school",
+     "exp": "Com Nina (she) usamos does, não do."
+    },
+    {
+     "t": "gap",
+     "q": "They leave home at ___.",
+     "resp": [
+      "seven fifteen",
+      "7.15",
+      "7:15",
+      "quarter past seven",
+      "7 15"
+     ],
+     "exp": "We leave at seven fifteen (7.15). School starts later, at 8.45.",
+     "ouvir": "We leave home at seven fifteen."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: a que horas você acorda?",
+     "frase": "What time do you get up?",
+     "modelo": "I get up at seven o'clock.",
+     "min": 4,
+     "chave": [
+      "get",
+      "up",
+      "o'clock",
+      "six",
+      "seven",
+      "eight",
+      "half"
+     ],
+     "exp": "Use I get up at... (horário)."
+    },
+    {
+     "t": "mc",
+     "q": "What does Nina do first after school?",
+     "op": [
+      "plays tennis",
+      "does homework",
+      "has dinner",
+      "goes to bed"
+     ],
+     "r": 1,
+     "exp": "I do my homework, then I play tennis: primeiro a lição de casa."
+    },
+    {
+     "t": "gap",
+     "q": "Nina plays ___ after her homework.",
+     "resp": [
+      "tennis"
+     ],
+     "exp": "Depois da lição, ela joga tênis: I play tennis.",
+     "ouvir": "She plays tennis after she does her homework."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Food and drink",
+   "objetivo": "Entender um pedido em uma lanchonete: o que tem, o que não tem e o que cada um prefere.",
+   "foco": "Food and drink; I'd like; some/any; like/don't like",
+   "explicacao": [
+    "Para pedir: I'd like a sandwich, please. (I'd like = eu gostaria).",
+    "We haven't got any milkshakes = Não temos nenhum milk-shake. Any aparece em negativas e perguntas.",
+    "Gostos: I like chocolate. / I don't like strawberry."
+   ],
+   "vocab": [
+    {
+     "en": "sandwich",
+     "pt": "sanduíche"
+    },
+    {
+     "en": "juice",
+     "pt": "suco"
+    },
+    {
+     "en": "chips",
+     "pt": "batata frita"
+    },
+    {
+     "en": "milkshake",
+     "pt": "milk-shake"
+    },
+    {
+     "en": "ice cream",
+     "pt": "sorvete"
+    },
+    {
+     "en": "strawberry",
+     "pt": "morango"
+    },
+    {
+     "en": "waiter",
+     "pt": "garçom"
+    }
+   ],
+   "material": {
+    "titulo": "At the café",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Hello. What would you like?"
+     },
+     {
+      "p": "B",
+      "t": "I'd like a cheese sandwich and an orange juice, please."
+     },
+     {
+      "p": "A",
+      "t": "Sorry, we haven't got orange juice today. We've got apple juice and milk."
+     },
+     {
+      "p": "B",
+      "t": "Then apple juice, please. And my brother would like some chips."
+     },
+     {
+      "p": "C",
+      "t": "And a banana milkshake, please."
+     },
+     {
+      "p": "A",
+      "t": "Sorry, no milkshakes. But we have got ice cream. Do you like strawberry?"
+     },
+     {
+      "p": "C",
+      "t": "No, I don't. I like chocolate."
+     },
+     {
+      "p": "A",
+      "t": "OK. A cheese sandwich, an apple juice, chips and chocolate ice cream."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does the girl drink?",
+     "op": [
+      "orange juice",
+      "apple juice",
+      "milk",
+      "a milkshake"
+     ],
+     "r": 1,
+     "exp": "Não há suco de laranja; ela escolhe Then apple juice, please."
+    },
+    {
+     "t": "gap",
+     "q": "I'd like a cheese ___, please.",
+     "resp": [
+      "sandwich"
+     ],
+     "exp": "Ela pede a cheese sandwich.",
+     "ouvir": "I'd like a cheese sandwich, please."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "I'd like a cheese sandwich and an apple juice, please.",
+     "exp": "I'd like: /aid laik/. Sandwich: /SÉN-uij/."
+    },
+    {
+     "t": "mc",
+     "q": "Which ice cream does the boy NOT like?",
+     "op": [
+      "chocolate",
+      "strawberry",
+      "vanilla",
+      "banana"
+     ],
+     "r": 1,
+     "exp": "Do you like strawberry? No, I don't."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "haven't",
+      "got",
+      "orange",
+      "juice",
+      "today"
+     ],
+     "resp": "We haven't got orange juice today",
+     "exp": "Haven't got = não temos."
+    },
+    {
+     "t": "gap",
+     "q": "Sorry, we haven't got any ___.",
+     "resp": [
+      "milkshakes",
+      "milkshake",
+      "milk shakes"
+     ],
+     "exp": "O garçom diz: Sorry, no milkshakes.",
+     "ouvir": "Sorry, we haven't got any milkshakes."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: qual é a sua comida favorita?",
+     "frase": "What's your favourite food?",
+     "modelo": "My favourite food is pizza.",
+     "min": 4,
+     "chave": [
+      "favourite",
+      "food",
+      "like",
+      "love",
+      "my",
+      "is",
+      "pizza"
+     ],
+     "exp": "Use My favourite food is... ou I like..."
+    },
+    {
+     "t": "mc",
+     "q": "What does the waiter bring for the boy's dessert?",
+     "op": [
+      "strawberry ice cream",
+      "chocolate ice cream",
+      "a banana milkshake",
+      "chips"
+     ],
+     "r": 1,
+     "exp": "O garoto não quer morango: I like chocolate."
+    },
+    {
+     "t": "gap",
+     "q": "The waiter brings a cheese sandwich, an apple juice, chips and ___ ice cream.",
+     "resp": [
+      "chocolate"
+     ],
+     "exp": "Pedido final: chocolate ice cream.",
+     "ouvir": "A cheese sandwich, an apple juice, chips and chocolate ice cream."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Clothes and colours",
+   "objetivo": "Entender quem veste ou leva cada peça de roupa e de que cor ela é.",
+   "foco": "Clothes; colours; wearing; take/wear",
+   "explicacao": [
+    "Agora, neste momento: I'm wearing a blue jacket (present continuous).",
+    "Roupas no plural: jeans, trousers, socks, trainers. Contamos em pares: two pairs of socks.",
+    "A cor vem antes do nome: a red T-shirt, my green jumper."
+   ],
+   "vocab": [
+    {
+     "en": "jacket",
+     "pt": "jaqueta"
+    },
+    {
+     "en": "T-shirt",
+     "pt": "camiseta"
+    },
+    {
+     "en": "socks",
+     "pt": "meias"
+    },
+    {
+     "en": "trainers",
+     "pt": "tênis"
+    },
+    {
+     "en": "dress",
+     "pt": "vestido"
+    },
+    {
+     "en": "jeans",
+     "pt": "calça jeans"
+    },
+    {
+     "en": "jumper",
+     "pt": "suéter"
+    }
+   ],
+   "material": {
+    "titulo": "Packing a bag",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Emma, put your things in the bag. Have you got your blue jacket?"
+     },
+     {
+      "p": "B",
+      "t": "No, Mum. I'm wearing it. Look!"
+     },
+     {
+      "p": "A",
+      "t": "Oh, yes. And take your red T-shirt, two pairs of socks and your trainers."
+     },
+     {
+      "p": "B",
+      "t": "My trainers are white, but they're dirty. Can I take my boots?"
+     },
+     {
+      "p": "A",
+      "t": "It's sunny this weekend. Take the trainers."
+     },
+     {
+      "p": "B",
+      "t": "What about my yellow dress for the party?"
+     },
+     {
+      "p": "A",
+      "t": "A dress for a trip to the farm? No. Take your jeans and your green jumper."
+     },
+     {
+      "p": "B",
+      "t": "OK. I like green!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What colour is Emma's jacket?",
+     "op": [
+      "red",
+      "blue",
+      "yellow",
+      "green"
+     ],
+     "r": 1,
+     "exp": "Emma está vestindo a blue jacket. Red, yellow e green são outras peças."
+    },
+    {
+     "t": "gap",
+     "q": "I'm ___ my blue jacket.",
+     "resp": [
+      "wearing"
+     ],
+     "exp": "I'm wearing = estou vestindo.",
+     "ouvir": "I'm wearing my blue jacket."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Take your jeans and your green jumper.",
+     "exp": "Jumper: /JÂM-per/. Jeans: /djinz/."
+    },
+    {
+     "t": "mc",
+     "q": "What does Emma NOT take?",
+     "op": [
+      "a T-shirt",
+      "socks",
+      "a yellow dress",
+      "trainers"
+     ],
+     "r": 2,
+     "exp": "A mãe diz No ao vestido amarelo (dress). Para a fazenda: jeans e jumper."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "My",
+      "trainers",
+      "are",
+      "white",
+      "but",
+      "they",
+      "are",
+      "dirty"
+     ],
+     "resp": "My trainers are white but they are dirty",
+     "exp": "Trainers é plural: are. They are = they're."
+    },
+    {
+     "t": "gap",
+     "q": "Take two pairs of ___ and a red T-shirt.",
+     "resp": [
+      "socks"
+     ],
+     "exp": "Two pairs of socks (dois pares de meias).",
+     "ouvir": "Take two pairs of socks and a red T-shirt."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você está vestindo hoje?",
+     "frase": "What are you wearing today?",
+     "modelo": "I'm wearing a blue T-shirt and black trousers.",
+     "min": 4,
+     "chave": [
+      "wearing",
+      "I'm",
+      "wear",
+      "shirt",
+      "trousers",
+      "jeans",
+      "shoes",
+      "dress",
+      "shorts"
+     ],
+     "exp": "Use I'm wearing + cor + roupa."
+    },
+    {
+     "t": "mc",
+     "q": "Why does Mum say 'Take the trainers'?",
+     "op": [
+      "It is cold.",
+      "It is sunny.",
+      "It is raining.",
+      "They are new."
+     ],
+     "r": 1,
+     "exp": "Ela diz It's sunny this weekend (faz sol)."
+    },
+    {
+     "t": "gap",
+     "q": "Emma wants her yellow ___, but Mum says no.",
+     "resp": [
+      "dress"
+     ],
+     "exp": "Emma quer o vestido amarelo (yellow dress), mas a mãe diz não.",
+     "ouvir": "Emma wants to take her yellow dress, but Mum says no."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Places and directions",
+   "objetivo": "Entender indicações de caminho e a posição de lugares na cidade.",
+   "foco": "Places in town; prepositions of place; turn left/right; go straight on",
+   "explicacao": [
+    "Direções: go straight on, turn left, turn right, at the traffic lights.",
+    "Posição: next to (ao lado), opposite (em frente), behind (atrás), in front of (na frente de), between (entre).",
+    "Lugares: library, post office, bookshop, supermarket, cinema, park."
+   ],
+   "vocab": [
+    {
+     "en": "library",
+     "pt": "biblioteca"
+    },
+    {
+     "en": "post office",
+     "pt": "correio"
+    },
+    {
+     "en": "opposite",
+     "pt": "em frente a"
+    },
+    {
+     "en": "behind",
+     "pt": "atrás de"
+    },
+    {
+     "en": "next to",
+     "pt": "ao lado de"
+    },
+    {
+     "en": "traffic lights",
+     "pt": "semáforo"
+    },
+    {
+     "en": "straight on",
+     "pt": "em frente"
+    }
+   ],
+   "material": {
+    "titulo": "Where is the library?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Excuse me, where's the library?"
+     },
+     {
+      "p": "B",
+      "t": "Go straight on, then turn left at the cinema. It's next to the post office."
+     },
+     {
+      "p": "A",
+      "t": "Is the post office opposite the park?"
+     },
+     {
+      "p": "B",
+      "t": "No, the park is behind the library. The post office is opposite the bookshop."
+     },
+     {
+      "p": "A",
+      "t": "Thank you. And is there a supermarket near here?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, it's in Green Street. Turn right at the traffic lights and walk for five minutes."
+     },
+     {
+      "p": "A",
+      "t": "Great. Is it open on Sundays?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, until six o'clock."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Where is the library?",
+     "op": [
+      "next to the post office",
+      "next to the bookshop",
+      "opposite the park",
+      "behind the park"
+     ],
+     "r": 0,
+     "exp": "It's next to the post office. O parque fica atrás da biblioteca."
+    },
+    {
+     "t": "gap",
+     "q": "Turn ___ at the cinema.",
+     "resp": [
+      "left"
+     ],
+     "exp": "Go straight on, then turn left at the cinema.",
+     "ouvir": "Turn left at the cinema."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Go straight on and turn left at the cinema.",
+     "exp": "Straight: /strêit/. Cinema: /SÍ-ne-ma/."
+    },
+    {
+     "t": "mc",
+     "q": "Where is the park?",
+     "op": [
+      "in front of the library",
+      "behind the library",
+      "next to the cinema",
+      "opposite the bookshop"
+     ],
+     "r": 1,
+     "exp": "The park is behind the library. Opposite the bookshop está o correio."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Turn",
+      "right",
+      "at",
+      "the",
+      "traffic",
+      "lights"
+     ],
+     "resp": "Turn right at the traffic lights",
+     "exp": "Turn + direção + at + lugar."
+    },
+    {
+     "t": "gap",
+     "q": "The supermarket is in ___ Street.",
+     "resp": [
+      "Green"
+     ],
+     "exp": "Yes, it's in Green Street.",
+     "ouvir": "The supermarket is in Green Street."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: tem um parque perto da sua casa?",
+     "frase": "Is there a park near your home?",
+     "modelo": "Yes, there is. It's next to my school.",
+     "min": 3,
+     "chave": [
+      "yes",
+      "no",
+      "there",
+      "park",
+      "near",
+      "next",
+      "behind",
+      "opposite"
+     ],
+     "exp": "Responda Yes, there is. / No, there isn't. e diga onde fica."
+    },
+    {
+     "t": "mc",
+     "q": "What is opposite the bookshop?",
+     "op": [
+      "the library",
+      "the post office",
+      "the park",
+      "the cinema"
+     ],
+     "r": 1,
+     "exp": "The post office is opposite the bookshop."
+    },
+    {
+     "t": "gap",
+     "q": "On Sundays the supermarket closes at ___ o'clock.",
+     "resp": [
+      "six",
+      "6"
+     ],
+     "exp": "Yes, until six o'clock.",
+     "ouvir": "The supermarket is open until six o'clock on Sundays."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "There is, there are: my home",
+   "objetivo": "Entender a descrição de uma casa: cômodos, móveis e quantidades.",
+   "foco": "There is / there are; rooms and furniture; some/any; numbers",
+   "explicacao": [
+    "There is (There's) + singular: There's a balcony. There are + plural: There are three bedrooms.",
+    "Negativa: There isn't a garden. There aren't any posters.",
+    "Cômodos: bedroom, bathroom, kitchen, living room, balcony, garden. Móveis: bed, desk, sofa, table, chair."
+   ],
+   "vocab": [
+    {
+     "en": "flat",
+     "pt": "apartamento"
+    },
+    {
+     "en": "bedroom",
+     "pt": "quarto"
+    },
+    {
+     "en": "bathroom",
+     "pt": "banheiro"
+    },
+    {
+     "en": "balcony",
+     "pt": "varanda"
+    },
+    {
+     "en": "living room",
+     "pt": "sala de estar"
+    },
+    {
+     "en": "desk",
+     "pt": "escrivaninha"
+    },
+    {
+     "en": "poster",
+     "pt": "pôster"
+    }
+   ],
+   "material": {
+    "titulo": "Our new flat",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Our new flat is great. There are three bedrooms and two bathrooms."
+     },
+     {
+      "p": "B",
+      "t": "Is there a garden?"
+     },
+     {
+      "p": "A",
+      "t": "No, there isn't a garden, but there's a big balcony. There are lots of plants on it."
+     },
+     {
+      "p": "B",
+      "t": "What's in your bedroom?"
+     },
+     {
+      "p": "A",
+      "t": "There's a bed, a desk and a small sofa. There aren't any posters yet."
+     },
+     {
+      "p": "B",
+      "t": "Is there a TV?"
+     },
+     {
+      "p": "A",
+      "t": "Not in my room. There's a TV in the living room, and there are four chairs around the kitchen table."
+     },
+     {
+      "p": "B",
+      "t": "Sounds lovely!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How many bedrooms are there?",
+     "op": [
+      "two",
+      "three",
+      "four",
+      "five"
+     ],
+     "r": 1,
+     "exp": "Three bedrooms. Two é o número de banheiros e four o de cadeiras."
+    },
+    {
+     "t": "gap",
+     "q": "There is a big ___.",
+     "resp": [
+      "balcony"
+     ],
+     "exp": "Não há jardim, mas há uma big balcony.",
+     "ouvir": "There is a big balcony."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "There are three bedrooms and two bathrooms.",
+     "exp": "Bedrooms: /BÉD-runs/. Bathrooms: /BÁTH-runs/."
+    },
+    {
+     "t": "mc",
+     "q": "What is NOT in Leo's bedroom?",
+     "op": [
+      "a desk",
+      "a sofa",
+      "a TV",
+      "a bed"
+     ],
+     "r": 2,
+     "exp": "A TV está na sala (living room), não no quarto dele."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "There",
+      "aren't",
+      "any",
+      "posters",
+      "yet"
+     ],
+     "resp": "There aren't any posters yet",
+     "exp": "There aren't any + plural = não há nenhum."
+    },
+    {
+     "t": "gap",
+     "q": "There are ___ chairs around the kitchen table.",
+     "resp": [
+      "four",
+      "4"
+     ],
+     "exp": "Four chairs around the kitchen table.",
+     "ouvir": "There are four chairs around the kitchen table."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que tem no seu quarto?",
+     "frase": "What is in your bedroom?",
+     "modelo": "There is a bed and a desk.",
+     "min": 4,
+     "chave": [
+      "there",
+      "bed",
+      "desk",
+      "table",
+      "lamp",
+      "chair",
+      "wardrobe",
+      "sofa"
+     ],
+     "exp": "Use There is a... / There are two..."
+    },
+    {
+     "t": "mc",
+     "q": "Where is the TV?",
+     "op": [
+      "in the bedroom",
+      "on the balcony",
+      "in the living room",
+      "in the kitchen"
+     ],
+     "r": 2,
+     "exp": "There's a TV in the living room."
+    },
+    {
+     "t": "gap",
+     "q": "There isn't a garden, but there are lots of ___ on the balcony.",
+     "resp": [
+      "plants"
+     ],
+     "exp": "Na varanda há muitas plantas: lots of plants.",
+     "ouvir": "There isn't a garden, but there is a balcony with lots of plants."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "What are they doing?",
+   "objetivo": "Entender o que cada pessoa está fazendo agora, numa conversa por telefone.",
+   "foco": "Present continuous; present simple vs continuous; now",
+   "explicacao": [
+    "Present continuous: am/is/are + verbo-ing. She is helping. They are playing.",
+    "Verbos que dobram a letra: sit → sitting, run → running. Verbos com e perdem o e: make → making.",
+    "Palavras de agora: now, at the moment. Use present simple para rotina e continuous para agora."
+   ],
+   "vocab": [
+    {
+     "en": "garden",
+     "pt": "jardim"
+    },
+    {
+     "en": "newspaper",
+     "pt": "jornal"
+    },
+    {
+     "en": "tree",
+     "pt": "árvore"
+    },
+    {
+     "en": "raining",
+     "pt": "chovendo"
+    },
+    {
+     "en": "inside",
+     "pt": "dentro"
+    },
+    {
+     "en": "lunch",
+     "pt": "almoço"
+    },
+    {
+     "en": "see you later",
+     "pt": "até mais tarde"
+    }
+   ],
+   "material": {
+    "titulo": "A phone call",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Hello, Kim. What are you doing?"
+     },
+     {
+      "p": "B",
+      "t": "Hi, Dad. I'm at Grandpa's house. I'm helping him in the garden."
+     },
+     {
+      "p": "A",
+      "t": "Is Grandpa working too?"
+     },
+     {
+      "p": "B",
+      "t": "No, he's sitting under the tree and he's reading a newspaper. Mum is cooking lunch in the kitchen."
+     },
+     {
+      "p": "A",
+      "t": "And what's Tom doing?"
+     },
+     {
+      "p": "B",
+      "t": "He's playing with the dog. Oh, and it's raining now, so we're going inside."
+     },
+     {
+      "p": "A",
+      "t": "OK. I'm coming at four o'clock."
+     },
+     {
+      "p": "B",
+      "t": "Great, see you later!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is Kim doing?",
+     "op": [
+      "cooking lunch",
+      "helping in the garden",
+      "reading a newspaper",
+      "playing with the dog"
+     ],
+     "r": 1,
+     "exp": "Kim: I'm helping him in the garden. As outras ações são da mãe, do avô e do Tom."
+    },
+    {
+     "t": "gap",
+     "q": "Grandpa is ___ under the tree.",
+     "resp": [
+      "sitting"
+     ],
+     "exp": "Sit dobra o t: sitting.",
+     "ouvir": "Grandpa is sitting under the tree."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Mum is cooking lunch in the kitchen.",
+     "exp": "Cooking: /KÚ-quin/, com u curto."
+    },
+    {
+     "t": "mc",
+     "q": "What is Grandpa doing?",
+     "op": [
+      "working",
+      "reading a newspaper",
+      "cooking",
+      "playing with the dog"
+     ],
+     "r": 1,
+     "exp": "Is Grandpa working too? No... he's reading a newspaper."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Tom",
+      "is",
+      "playing",
+      "with",
+      "the",
+      "dog"
+     ],
+     "resp": "Tom is playing with the dog",
+     "exp": "Sujeito + is + verbo-ing + complemento."
+    },
+    {
+     "t": "gap",
+     "q": "It's raining, so we are ___ inside.",
+     "resp": [
+      "going"
+     ],
+     "exp": "Going inside = entrando.",
+     "ouvir": "It's raining, so we're going inside."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você está fazendo agora?",
+     "frase": "What are you doing now?",
+     "modelo": "I'm studying English.",
+     "min": 3,
+     "chave": [
+      "I'm",
+      "studying",
+      "reading",
+      "sitting",
+      "doing",
+      "listening",
+      "learning"
+     ],
+     "exp": "Use I'm + verbo-ing."
+    },
+    {
+     "t": "mc",
+     "q": "Why do they go inside?",
+     "op": [
+      "Grandpa is tired.",
+      "It is raining.",
+      "Lunch is ready.",
+      "Dad is coming."
+     ],
+     "r": 1,
+     "exp": "Oh, and it's raining now, so we're going inside."
+    },
+    {
+     "t": "gap",
+     "q": "Mum is cooking lunch while Tom is ___ with the dog.",
+     "resp": [
+      "playing"
+     ],
+     "exp": "Tom is playing with the dog.",
+     "ouvir": "Mum is cooking lunch while Tom is playing with the dog."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "What can you do?",
+   "objetivo": "Entender o que cada pessoa sabe ou não sabe fazer e escolher o grupo certo.",
+   "foco": "can / can't; hobbies and sports; Can you...? Yes, I can.",
+   "explicacao": [
+    "Can + verbo = saber/conseguir: I can swim. Não se usa to depois de can.",
+    "Negativa: can't (cannot). Pergunta: Can she sing? Yes, she can. / No, she can't.",
+    "Can não muda com he/she: she can play (nunca she cans)."
+   ],
+   "vocab": [
+    {
+     "en": "swim",
+     "pt": "nadar"
+    },
+    {
+     "en": "ride a bike",
+     "pt": "andar de bicicleta"
+    },
+    {
+     "en": "guitar",
+     "pt": "violão, guitarra"
+    },
+    {
+     "en": "sing",
+     "pt": "cantar"
+    },
+    {
+     "en": "join",
+     "pt": "entrar em"
+    },
+    {
+     "en": "club",
+     "pt": "clube"
+    },
+    {
+     "en": "group",
+     "pt": "grupo"
+    }
+   ],
+   "material": {
+    "titulo": "The after-school club",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Welcome to the after-school club. What can you do, Max?"
+     },
+     {
+      "p": "B",
+      "t": "I can swim and I can ride a bike, but I can't play the guitar."
+     },
+     {
+      "p": "A",
+      "t": "And you, Ella?"
+     },
+     {
+      "p": "C",
+      "t": "I can play the guitar and the piano. I can't swim very well."
+     },
+     {
+      "p": "A",
+      "t": "Fantastic! Max, you can join the sports group on Mondays. Ella, you can join the music group on Thursdays."
+     },
+     {
+      "p": "C",
+      "t": "Can my friend come too? She can sing really well."
+     },
+     {
+      "p": "A",
+      "t": "Of course. Can she come on Thursday?"
+     },
+     {
+      "p": "C",
+      "t": "Yes, she can."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What can Max do?",
+     "op": [
+      "play the guitar",
+      "swim",
+      "play the piano",
+      "sing"
+     ],
+     "r": 1,
+     "exp": "Max: I can swim and I can ride a bike. A guitarra e o piano são da Ella."
+    },
+    {
+     "t": "gap",
+     "q": "I can ___ a bike.",
+     "resp": [
+      "ride"
+     ],
+     "exp": "Ride a bike = andar de bicicleta.",
+     "ouvir": "I can ride a bike."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "I can play the guitar, but I can't swim very well.",
+     "exp": "Can't: /quént/ (britânico: /quant/). Can: fraco, /quen/."
+    },
+    {
+     "t": "mc",
+     "q": "Which group can Ella join?",
+     "op": [
+      "sports on Monday",
+      "music on Thursday",
+      "music on Monday",
+      "sports on Thursday"
+     ],
+     "r": 1,
+     "exp": "Ella toca instrumentos: music group on Thursdays. Max vai para o esporte, na segunda."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Can",
+      "your",
+      "friend",
+      "come",
+      "on",
+      "Thursday"
+     ],
+     "resp": "Can your friend come on Thursday",
+     "exp": "Pergunta com can: Can + sujeito + verbo."
+    },
+    {
+     "t": "gap",
+     "q": "She can sing really well, but she ___ play the piano.",
+     "resp": [
+      "can't",
+      "cannot",
+      "can not"
+     ],
+     "exp": "But indica contraste: depois de can, vem can't.",
+     "ouvir": "She can sing really well, but she can't play the piano."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você faz bem?",
+     "frase": "What can you do well?",
+     "modelo": "I can swim and I can draw.",
+     "min": 3,
+     "chave": [
+      "can",
+      "swim",
+      "draw",
+      "play",
+      "sing",
+      "cook",
+      "dance",
+      "run"
+     ],
+     "exp": "Use I can + verbo."
+    },
+    {
+     "t": "mc",
+     "q": "What can Ella's friend do?",
+     "op": [
+      "swim",
+      "sing",
+      "ride a bike",
+      "play the guitar"
+     ],
+     "r": 1,
+     "exp": "She can sing really well."
+    },
+    {
+     "t": "gap",
+     "q": "Max can't play the ___.",
+     "resp": [
+      "guitar"
+     ],
+     "exp": "Max: I can't play the guitar.",
+     "ouvir": "Max can swim, but he can't play the guitar."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Shopping and prices",
+   "objetivo": "Entender preços, quantidades e troco numa conversa de compras.",
+   "foco": "How much is/are...?; prices; plus, change; one pair/two pairs",
+   "explicacao": [
+    "How much is...? para singular e How much are...? para plural: How much are the socks?",
+    "Preços: twelve pounds fifty (£12.50), three pounds (£3).",
+    "Altogether = no total. Change = troco."
+   ],
+   "vocab": [
+    {
+     "en": "how much",
+     "pt": "quanto custa"
+    },
+    {
+     "en": "altogether",
+     "pt": "no total"
+    },
+    {
+     "en": "change",
+     "pt": "troco"
+    },
+    {
+     "en": "pair",
+     "pt": "par"
+    },
+    {
+     "en": "cheap",
+     "pt": "barato"
+    },
+    {
+     "en": "expensive",
+     "pt": "caro"
+    },
+    {
+     "en": "pound",
+     "pt": "libra"
+    }
+   ],
+   "material": {
+    "titulo": "At the market",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good afternoon. Can I help you?"
+     },
+     {
+      "p": "B",
+      "t": "How much is this T-shirt?"
+     },
+     {
+      "p": "A",
+      "t": "It's twelve pounds fifty. And the blue one is fifteen pounds."
+     },
+     {
+      "p": "B",
+      "t": "I'd like the blue one, please. And how much are the socks?"
+     },
+     {
+      "p": "A",
+      "t": "They're three pounds a pair."
+     },
+     {
+      "p": "B",
+      "t": "Two pairs, please. How much is that altogether?"
+     },
+     {
+      "p": "A",
+      "t": "Fifteen plus six... that's twenty-one pounds."
+     },
+     {
+      "p": "B",
+      "t": "Here's twenty-five pounds."
+     },
+     {
+      "p": "A",
+      "t": "Four pounds change. Thank you!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How much is the blue T-shirt?",
+     "op": [
+      "£12.50",
+      "£15",
+      "£50",
+      "£21"
+     ],
+     "r": 1,
+     "exp": "The blue one is fifteen pounds. Twelve pounds fifty é a outra camiseta."
+    },
+    {
+     "t": "gap",
+     "q": "The socks are ___ pounds a pair.",
+     "resp": [
+      "three",
+      "3"
+     ],
+     "exp": "Socks: three pounds a pair.",
+     "ouvir": "The socks are three pounds a pair."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "How much are the socks?",
+     "exp": "Socks: /sócs/. Much: /mâtch/."
+    },
+    {
+     "t": "mc",
+     "q": "How much does the girl pay altogether?",
+     "op": [
+      "£18",
+      "£21",
+      "£25",
+      "£4"
+     ],
+     "r": 1,
+     "exp": "15 + 6 = 21. Vinte e cinco foi o que ela entregou; quatro foi o troco."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "How",
+      "much",
+      "is",
+      "that",
+      "altogether"
+     ],
+     "resp": "How much is that altogether",
+     "exp": "Altogether fecha a pergunta."
+    },
+    {
+     "t": "gap",
+     "q": "The girl gets ___ pounds change.",
+     "resp": [
+      "four",
+      "4"
+     ],
+     "exp": "25 - 21 = 4 pounds.",
+     "ouvir": "Here's twenty-five pounds. Four pounds change."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: quanto custa um sorvete na sua cidade?",
+     "frase": "How much is an ice cream in your town?",
+     "modelo": "It's five reais.",
+     "min": 3,
+     "chave": [
+      "reais",
+      "real",
+      "pounds",
+      "dollars",
+      "euros",
+      "it's",
+      "costs",
+      "is"
+     ],
+     "exp": "Use It's + número + moeda."
+    },
+    {
+     "t": "mc",
+     "q": "What does the girl buy?",
+     "op": [
+      "one T-shirt and two pairs of socks",
+      "two T-shirts and one pair of socks",
+      "one T-shirt and three pairs of socks",
+      "two pairs of socks only"
+     ],
+     "r": 0,
+     "exp": "Ela compra a blue T-shirt e two pairs of socks."
+    },
+    {
+     "t": "gap",
+     "q": "The cheaper T-shirt is twelve pounds ___.",
+     "resp": [
+      "fifty",
+      "50"
+     ],
+     "exp": "It's twelve pounds fifty = £12.50.",
+     "ouvir": "It's twelve pounds fifty."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "What did you do yesterday?",
+   "objetivo": "Entender o que as pessoas fizeram no fim de semana, com verbos regulares e irregulares.",
+   "foco": "Past simple (regular and irregular); did / didn't; last weekend",
+   "explicacao": [
+    "Verbos regulares: + ed (visit → visited, play → played).",
+    "Irregulares comuns: go → went, eat → ate, take → took, swim → swam, have → had.",
+    "Pergunta e negativa usam did + verbo base: Did you go? No, I didn't go."
+   ],
+   "vocab": [
+    {
+     "en": "weekend",
+     "pt": "fim de semana"
+    },
+    {
+     "en": "visited",
+     "pt": "visitou"
+    },
+    {
+     "en": "stayed",
+     "pt": "ficou"
+    },
+    {
+     "en": "went",
+     "pt": "foi"
+    },
+    {
+     "en": "ate",
+     "pt": "comeu"
+    },
+    {
+     "en": "took",
+     "pt": "tirou/levou"
+    },
+    {
+     "en": "photo",
+     "pt": "foto"
+    }
+   ],
+   "material": {
+    "titulo": "Monday morning",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Hi Joe! Did you have a good weekend?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, I did. On Saturday I visited my grandparents. We played cards and I helped my grandpa in the garden."
+     },
+     {
+      "p": "A",
+      "t": "Nice! Did you go to the cinema?"
+     },
+     {
+      "p": "B",
+      "t": "No, I didn't. I stayed at home on Sunday because it rained. I watched a film and I cooked pasta. And you?"
+     },
+     {
+      "p": "A",
+      "t": "I went to the beach with my cousins. We swam and we ate ice cream. Then we took a lot of photos."
+     },
+     {
+      "p": "B",
+      "t": "Lucky you!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What did Joe do on Saturday?",
+     "op": [
+      "visited his grandparents",
+      "went to the beach",
+      "watched a film",
+      "went to the cinema"
+     ],
+     "r": 0,
+     "exp": "Saturday: I visited my grandparents. O filme foi no domingo e a praia é da Sara."
+    },
+    {
+     "t": "gap",
+     "q": "We ___ cards on Saturday.",
+     "resp": [
+      "played"
+     ],
+     "exp": "Passado de play: played.",
+     "ouvir": "We played cards on Saturday."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "I went to the beach with my cousins.",
+     "exp": "Went: /uént/. Beach: /bitch/, i longo."
+    },
+    {
+     "t": "mc",
+     "q": "Why did Joe stay at home on Sunday?",
+     "op": [
+      "He was ill.",
+      "It rained.",
+      "He was tired.",
+      "He had homework."
+     ],
+     "r": 1,
+     "exp": "I stayed at home on Sunday because it rained."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Did",
+      "you",
+      "go",
+      "to",
+      "the",
+      "cinema"
+     ],
+     "resp": "Did you go to the cinema",
+     "exp": "Com did, o verbo fica no infinitivo: go (não went)."
+    },
+    {
+     "t": "gap",
+     "q": "Sara went to the beach and ___ ice cream.",
+     "resp": [
+      "ate"
+     ],
+     "exp": "Passado irregular de eat: ate.",
+     "ouvir": "Sara went to the beach and ate ice cream."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você fez no fim de semana passado?",
+     "frase": "What did you do last weekend?",
+     "modelo": "I played football with my friends.",
+     "min": 4,
+     "chave": [
+      "I",
+      "played",
+      "went",
+      "visited",
+      "watched",
+      "stayed",
+      "cooked",
+      "ate"
+     ],
+     "exp": "Use verbos no passado: I played, I went..."
+    },
+    {
+     "t": "mc",
+     "q": "What did Joe cook?",
+     "op": [
+      "rice",
+      "pasta",
+      "a cake",
+      "soup"
+     ],
+     "r": 1,
+     "exp": "I watched a film and I cooked pasta."
+    },
+    {
+     "t": "gap",
+     "q": "Joe ___ go to the cinema.",
+     "resp": [
+      "didn't",
+      "did not"
+     ],
+     "exp": "No, I didn't. Negativa do passado: didn't + verbo base.",
+     "ouvir": "Joe didn't go to the cinema. He stayed at home."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Animals and descriptions",
+   "objetivo": "Entender a descrição de uma pessoa ou animal: cor, tamanho, partes do corpo e idade.",
+   "foco": "have got; adjectives; colours; describing; What does she look like?",
+   "explicacao": [
+    "Para descrever: She is small. She has got long brown ears.",
+    "What does she look like? = Como ela é? Respondemos com adjetivos: small, big, long, short.",
+    "Ordem dos adjetivos: tamanho + cor + nome (a small brown dog)."
+   ],
+   "vocab": [
+    {
+     "en": "lost",
+     "pt": "perdido(a)"
+    },
+    {
+     "en": "ears",
+     "pt": "orelhas"
+    },
+    {
+     "en": "collar",
+     "pt": "coleira"
+    },
+    {
+     "en": "tail",
+     "pt": "rabo"
+    },
+    {
+     "en": "small",
+     "pt": "pequeno"
+    },
+    {
+     "en": "long",
+     "pt": "comprido"
+    },
+    {
+     "en": "don't worry",
+     "pt": "não se preocupe"
+    }
+   ],
+   "material": {
+    "titulo": "A lost dog",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Happy Paws. Can I help you?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, I've lost my dog. Her name's Coco."
+     },
+     {
+      "p": "A",
+      "t": "What does she look like?"
+     },
+     {
+      "p": "B",
+      "t": "She's small and she's got long brown ears. She's brown and white, and she's got a red collar."
+     },
+     {
+      "p": "A",
+      "t": "How old is she?"
+     },
+     {
+      "p": "B",
+      "t": "She's three. She was in the park near the school this morning."
+     },
+     {
+      "p": "A",
+      "t": "OK. What's your name?"
+     },
+     {
+      "p": "B",
+      "t": "I'm Harry Wood, W-O-O-D."
+     },
+     {
+      "p": "A",
+      "t": "Don't worry, Harry. We'll call you if we find her."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What colour is Coco?",
+     "op": [
+      "all brown",
+      "brown and white",
+      "black and white",
+      "all white"
+     ],
+     "r": 1,
+     "exp": "She's brown and white. As orelhas são brown."
+    },
+    {
+     "t": "gap",
+     "q": "She's got long brown ___.",
+     "resp": [
+      "ears"
+     ],
+     "exp": "Long brown ears = orelhas compridas e marrons.",
+     "ouvir": "She's got long brown ears."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "She is small and she has got a red collar.",
+     "exp": "Collar: /CÓ-la/. Small: /smol/."
+    },
+    {
+     "t": "mc",
+     "q": "Where was Coco this morning?",
+     "op": [
+      "at school",
+      "in the park",
+      "at the vet",
+      "in the garden"
+     ],
+     "r": 1,
+     "exp": "In the park near the school: no parque, não na escola."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "What",
+      "does",
+      "she",
+      "look",
+      "like"
+     ],
+     "resp": "What does she look like",
+     "exp": "Look like pede descrição física."
+    },
+    {
+     "t": "gap",
+     "q": "Coco is ___ years old.",
+     "resp": [
+      "three",
+      "3"
+     ],
+     "exp": "She's three.",
+     "ouvir": "My dog is three years old."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você tem um bichinho? Como ele é?",
+     "frase": "Have you got a pet? What is it like?",
+     "modelo": "I've got a cat. It's small and black.",
+     "min": 4,
+     "chave": [
+      "got",
+      "cat",
+      "dog",
+      "pet",
+      "small",
+      "big",
+      "black",
+      "white",
+      "no"
+     ],
+     "exp": "Use I've got a... It's small/big and..."
+    },
+    {
+     "t": "mc",
+     "q": "What does Harry spell?",
+     "op": [
+      "his first name",
+      "his surname",
+      "the dog's name",
+      "the street"
+     ],
+     "r": 1,
+     "exp": "I'm Harry Wood, W-O-O-D: ele soletra o sobrenome."
+    },
+    {
+     "t": "gap",
+     "q": "Coco is small, brown and white, and she's got a ___ collar.",
+     "resp": [
+      "red"
+     ],
+     "exp": "A coleira é vermelha: a red collar.",
+     "ouvir": "She's brown and white and she's got a red collar."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado: Movers Listening",
+   "objetivo": "Fazer um simulado no estilo da prova: ligar pessoas a nomes, idades, horários e preços ouvidos.",
+   "foco": "Mixed review: names, ages, clothes, activities, time, prices",
+   "explicacao": [
+    "Na prova, ouça tudo uma vez primeiro e escreva só no fim de cada fala; o áudio toca duas vezes.",
+    "Cuidado com correções: a pessoa diz uma coisa e muda de ideia (twelve... no, thirteen!). A resposta é a última.",
+    "Escreva só a palavra ou o número ouvido. Se escrever, confira a ortografia."
+   ],
+   "vocab": [
+    {
+     "en": "cap",
+     "pt": "boné"
+    },
+    {
+     "en": "tall",
+     "pt": "alto"
+    },
+    {
+     "en": "glasses",
+     "pt": "óculos"
+    },
+    {
+     "en": "horse",
+     "pt": "cavalo"
+    },
+    {
+     "en": "jumper",
+     "pt": "suéter"
+    },
+    {
+     "en": "cake",
+     "pt": "bolo"
+    },
+    {
+     "en": "party",
+     "pt": "festa"
+    }
+   ],
+   "material": {
+    "titulo": "The birthday party photo",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Kate, who are all the children in your party photo?"
+     },
+     {
+      "p": "B",
+      "t": "Well, the boy with the red cap is Sam. He's my cousin and he's eleven. The girl next to him is Lily. She's got a yellow dress and she's playing the guitar."
+     },
+     {
+      "p": "A",
+      "t": "And who's the tall boy near the cake?"
+     },
+     {
+      "p": "B",
+      "t": "That's Fred. He's eating a sandwich. He's twelve, I think. No, wait, he's thirteen!"
+     },
+     {
+      "p": "A",
+      "t": "What about the girl with glasses?"
+     },
+     {
+      "p": "B",
+      "t": "That's Mia. She's drawing a picture of a horse. And the boy behind her is Dan. He's wearing a green jumper and he's taking photos."
+     },
+     {
+      "p": "A",
+      "t": "When was the party?"
+     },
+     {
+      "p": "B",
+      "t": "Last Saturday. It started at three o'clock and finished at half past six."
+     },
+     {
+      "p": "A",
+      "t": "How much was the cake?"
+     },
+     {
+      "p": "B",
+      "t": "Mum bought it at the shop for eighteen pounds. It was chocolate. Everybody loved it!"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Who is Sam?",
+     "op": [
+      "Kate's cousin",
+      "Kate's brother",
+      "Kate's friend from school",
+      "Kate's teacher"
+     ],
+     "r": 0,
+     "exp": "The boy with the red cap is Sam. He's my cousin."
+    },
+    {
+     "t": "mc",
+     "q": "What is Lily doing?",
+     "op": [
+      "drawing a picture",
+      "playing the guitar",
+      "eating a sandwich",
+      "taking photos"
+     ],
+     "r": 1,
+     "exp": "Lily has a yellow dress and she's playing the guitar. Os outros fazem as outras coisas."
+    },
+    {
+     "t": "gap",
+     "q": "Fred is ___ years old.",
+     "resp": [
+      "thirteen",
+      "13"
+     ],
+     "exp": "Kate corrige: twelve, I think. No, wait, he's thirteen! Vale a última informação.",
+     "ouvir": "He's twelve, I think. No, wait, he's thirteen!"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Mia is drawing a picture of a horse.",
+     "exp": "Horse: /rrórs/. Picture: /PÍC-tcher/."
+    },
+    {
+     "t": "mc",
+     "q": "Who is wearing a green jumper?",
+     "op": [
+      "Sam",
+      "Fred",
+      "Dan",
+      "Mia"
+     ],
+     "r": 2,
+     "exp": "Dan is wearing a green jumper and taking photos."
+    },
+    {
+     "t": "gap",
+     "q": "Mia is drawing a picture of a ___.",
+     "resp": [
+      "horse"
+     ],
+     "exp": "Mia is drawing a picture of a horse.",
+     "ouvir": "She's drawing a picture of a horse."
+    },
+    {
+     "t": "mc",
+     "q": "What time did the party finish?",
+     "op": [
+      "3.00",
+      "6.30",
+      "6.15",
+      "5.30"
+     ],
+     "r": 1,
+     "exp": "Half past six = 6.30. Three o'clock foi a hora em que começou."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "party",
+      "started",
+      "at",
+      "three",
+      "o'clock"
+     ],
+     "resp": "The party started at three o'clock",
+     "exp": "Verbo no passado: started. At + hora."
+    },
+    {
+     "t": "gap",
+     "q": "The cake cost ___ pounds.",
+     "resp": [
+      "eighteen",
+      "18"
+     ],
+     "exp": "Mum bought it for eighteen pounds. Cuidado: eighty seria 80.",
+     "ouvir": "Mum bought it at the shop for eighteen pounds."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: fale de uma festa a que você foi.",
+     "frase": "Tell me about a party you went to.",
+     "modelo": "I went to my friend's party last Saturday. We ate cake.",
+     "min": 5,
+     "chave": [
+      "party",
+      "cake",
+      "went",
+      "friend",
+      "birthday",
+      "ate",
+      "played",
+      "music"
+     ],
+     "exp": "Use verbos no passado: I went, we ate, we played."
+    },
+    {
+     "t": "mc",
+     "q": "What flavour was the cake?",
+     "op": [
+      "vanilla",
+      "chocolate",
+      "strawberry",
+      "banana"
+     ],
+     "r": 1,
+     "exp": "It was chocolate. Everybody loved it!"
+    },
+    {
+     "t": "gap",
+     "q": "The boy with the red ___ is Sam, and he is eleven.",
+     "resp": [
+      "cap"
+     ],
+     "exp": "Sam is the boy with the red cap: cap = boné.",
+     "ouvir": "The boy with the red cap is Sam, and he is eleven years old."
+    }
+   ]
+  }
+ ]
+}
