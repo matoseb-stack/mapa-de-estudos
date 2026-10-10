@@ -1,0 +1,2487 @@
+{
+ "nivel": "B1",
+ "skill": "writing",
+ "exame": "B1 Preliminary (PET)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Opening and closing an informal email",
+   "objetivo": "Começar e terminar um e-mail informal para um amigo de forma natural, em mais de uma frase.",
+   "foco": "Informal greetings, opening lines and closings; contractions",
+   "explicacao": [
+    "No Part 1 do PET você responde a um e-mail de um amigo. Comece com Hi / Hello + nome e uma frase de abertura: Thanks for your email. / It was great to hear from you.",
+    "Termine com uma frase de fechamento e uma despedida: Write soon! / Hope to see you soon. / Best wishes, / Love, / Take care,",
+    "Em e-mail informal use formas curtas (I'm, I'd, don't) e pontos de exclamação com moderação.",
+    "O nome vai na linha de baixo, depois da despedida."
+   ],
+   "vocab": [
+    {
+     "en": "It was great to hear from you",
+     "pt": "Foi ótimo ter notícias suas"
+    },
+    {
+     "en": "Write soon",
+     "pt": "Escreva logo"
+    },
+    {
+     "en": "Take care",
+     "pt": "Cuide-se"
+    },
+    {
+     "en": "Best wishes",
+     "pt": "Um abraço / Abraços"
+    },
+    {
+     "en": "Sorry for the late reply",
+     "pt": "Desculpe a demora para responder"
+    },
+    {
+     "en": "I can't wait to ...",
+     "pt": "Mal posso esperar para ..."
+    },
+    {
+     "en": "Say hello to ... for me",
+     "pt": "Mande um oi para ... por mim"
+    }
+   ],
+   "material": {
+    "tarefa": "Read Ana's email and write your reply.\nAna: 'Hi! I've just started a new English course. How is your English? Are you studying at the moment? Write soon!'\nWrite your email in about 90-120 words. Answer Ana's questions and add one question of your own.",
+    "genero": "email",
+    "min": 90,
+    "max": 120,
+    "modelo": "Hi Ana,\nThanks for your email. It was great to hear from you, and congratulations on your new English course!\nMy English is getting better, I think. I'm studying for an exam at the moment, so I read a lot and I watch a series in English every evening. It's difficult, but it's also quite fun.\nAre you enjoying your course? Is your teacher friendly? I'd love to hear more about your classmates, too. Maybe we can practise together on the phone one day!\nI have to go now because I'm meeting my cousin for lunch.\nWrite soon!\nBest wishes,\nLucas",
+    "checklist": [
+     "Comecei com Hi + nome e uma frase de abertura?",
+     "Respondi às duas perguntas da Ana e fiz uma pergunta minha?",
+     "Terminei com uma frase de fechamento, uma despedida e meu nome?",
+     "Escrevi entre 90 e 120 palavras, sem repetir as mesmas palavras o tempo todo?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which opening line is best for an email to a friend?",
+     "op": [
+      "Dear Sir or Madam, I am writing to you.",
+      "Hi Ana, thanks for your email. It was great to hear from you!",
+      "Ana, answer. I have your email.",
+      "To whom it may concern, Ana."
+     ],
+     "r": 1,
+     "exp": "Para um amigo: Hi + nome e uma frase simpática. As outras opções são formais demais ou secas."
+    },
+    {
+     "t": "gap",
+     "q": "It was great to hear ___ you after such a long time.",
+     "resp": [
+      "from"
+     ],
+     "exp": "A expressão é hear from someone = ter notícias de alguém."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta a abertura do e-mail.",
+     "frase": "Hi Ana, thanks for your email. It was great to hear from you!",
+     "exp": "Em 'thanks' ponha a língua entre os dentes. Em 'great' o som é 'grêit'."
+    },
+    {
+     "t": "mc",
+     "q": "Which closing is NOT natural in an email to a friend?",
+     "op": [
+      "Write soon!",
+      "Take care,",
+      "Yours faithfully,",
+      "Hope to see you soon."
+     ],
+     "r": 2,
+     "exp": "Yours faithfully é fórmula de carta formal. Entre amigos use Write soon, Take care, Best wishes ou Love."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "am",
+      "sorry",
+      "for",
+      "the",
+      "late",
+      "reply,",
+      "I",
+      "was",
+      "really",
+      "busy",
+      "last",
+      "week."
+     ],
+     "resp": "I am sorry for the late reply, I was really busy last week.",
+     "exp": "Sorry for + the late reply. Depois da vírgula, a segunda frase explica o motivo.",
+     "alt": [
+      "I am sorry for the late reply I was really busy last week."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "I can't wait ___ see you at the party next month.",
+     "resp": [
+      "to"
+     ],
+     "exp": "I can't wait + to + verbo: Mal posso esperar para ver você."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em duas frases: o que você está estudando agora e como está indo.",
+     "frase": "Your friend asks: 'Are you studying anything at the moment? How is it going?'",
+     "modelo": "I'm studying English at the moment. It's going well, but I find grammar quite difficult.",
+     "min": 8,
+     "chave": [
+      "studying",
+      "study",
+      "english",
+      "going",
+      "well",
+      "difficult",
+      "exam",
+      "course"
+     ],
+     "exp": "Use o present continuous (I'm studying) para algo que acontece agora, em período atual."
+    },
+    {
+     "t": "mc",
+     "q": "Ana wrote: 'How are you? What are you doing this month?' Which reply opens her email BEST?",
+     "op": [
+      "Hi Ana, I'm fine. This month I'm working and studying, so I'm quite busy.",
+      "Hello. Fine. Work.",
+      "Dear Ana, I am writing to inform you of my activities.",
+      "Hi, thanks. Bye."
+     ],
+     "r": 0,
+     "exp": "A primeira abre com saudação, responde às duas perguntas e usa frases completas e naturais."
+    },
+    {
+     "t": "gap",
+     "q": "Say hello to your parents ___ me. Take care!",
+     "resp": [
+      "for"
+     ],
+     "exp": "Say hello to someone for me = mande um oi para alguém por mim."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Answering every note in the task",
+   "objetivo": "Ler o e-mail do amigo e as quatro notas e responder a todas, sem esquecer nenhuma.",
+   "foco": "Reading the input email and the four notes; covering all content points",
+   "explicacao": [
+    "No Part 1 você recebe um e-mail e quatro notas escritas à mão. Sua resposta precisa tocar em TODAS as quatro notas: esquecer uma perde pontos.",
+    "Um método: sublinhe cada nota, numere de 1 a 4 e escreva pelo menos uma frase completa para cada uma.",
+    "Se a nota pede uma sugestão ou uma pergunta, faça mesmo: Why don't we ...? / What do you think?",
+    "Não copie as frases do e-mail original; use suas próprias palavras."
+   ],
+   "vocab": [
+    {
+     "en": "note",
+     "pt": "nota, anotação"
+    },
+    {
+     "en": "to suggest",
+     "pt": "sugerir"
+    },
+    {
+     "en": "to reply",
+     "pt": "responder"
+    },
+    {
+     "en": "to mention",
+     "pt": "mencionar"
+    },
+    {
+     "en": "to explain",
+     "pt": "explicar"
+    },
+    {
+     "en": "to include",
+     "pt": "incluir"
+    },
+    {
+     "en": "to cover",
+     "pt": "abranger, tratar de"
+    }
+   ],
+   "material": {
+    "tarefa": "Read Sam's email and the notes, then write your reply.\nSam: 'I'm organising a day out for our class next Saturday. Where would you like to go? Can you tell me what you would like to do there?'\nNotes: [Say where you want to go] [Explain why] [Say what food to bring] [Ask Sam about transport]\nWrite your email in about 90-120 words.",
+    "genero": "email",
+    "min": 90,
+    "max": 120,
+    "modelo": "Hi Sam,\nThanks for organising the day out. What a great idea!\nI think we should go to the lake near the city. The water is clean, and there is a lot of space for games and for walking.\nAs for food, I'd suggest bringing sandwiches, fruit and plenty of water. I can make a big chocolate cake for everyone, if you like.\nHow are we going to get there? Is there a bus, or does somebody have a car? I'm happy to ask my dad if he can drive a few of us.\nPlease tell me the time and the meeting place.\nSee you on Saturday!\nPaula",
+    "checklist": [
+     "Escrevi pelo menos uma frase para cada uma das quatro notas?",
+     "Fiz a pergunta que a nota pediu (sobre o transporte)?",
+     "Usei minhas próprias palavras em vez de copiar o e-mail?",
+     "Tenho saudação, despedida, nome e entre 90 e 120 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How many notes must you answer in Part 1 of the PET Writing?",
+     "op": [
+      "Two of the four",
+      "Only the first",
+      "All four",
+      "Three, you choose"
+     ],
+     "r": 2,
+     "exp": "As quatro notas devem ser respondidas. Cada uma é um ponto de conteúdo avaliado."
+    },
+    {
+     "t": "gap",
+     "q": "I think we should ___ to the lake. (go)",
+     "resp": [
+      "go"
+     ],
+     "exp": "Depois de should usamos o verbo no infinitivo sem to: should go."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Thanks for organising the day out. What a great idea!",
+     "exp": "Em 'organising' o acento está na primeira sílaba: 'ór-ga-nai-zing'."
+    },
+    {
+     "t": "mc",
+     "q": "The note says: [Ask Sam about transport]. Which sentence follows the note?",
+     "op": [
+      "I go by bus every day.",
+      "How are we going to get there?",
+      "Transport is very important.",
+      "Sam, I have a car."
+     ],
+     "r": 1,
+     "exp": "A nota pede uma pergunta ao Sam. Só a segunda opção é uma pergunta sobre o transporte."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Why",
+      "don't",
+      "we",
+      "bring",
+      "sandwiches",
+      "and",
+      "fruit",
+      "for",
+      "lunch?"
+     ],
+     "resp": "Why don't we bring sandwiches and fruit for lunch?",
+     "exp": "Why don't we + verbo é uma sugestão natural. Começa com Why."
+    },
+    {
+     "t": "gap",
+     "q": "Sam wrote: 'Where would you like to go?' Reply: 'I'd ___ to go to the beach.'",
+     "resp": [
+      "like",
+      "love",
+      "prefer"
+     ],
+     "exp": "Would like to / would love to / would prefer to + verbo: respostas naturais a would you like."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Sam pergunta: onde você gostaria de ir e por quê? Responda em duas frases.",
+     "frase": "Sam asks: 'Where would you like to go for our day out, and why?'",
+     "modelo": "I'd like to go to the park because it's free and there is a lot of space for games.",
+     "min": 9,
+     "chave": [
+      "park",
+      "beach",
+      "lake",
+      "museum",
+      "because",
+      "go",
+      "like",
+      "love"
+     ],
+     "exp": "Dê o lugar e o motivo com because."
+    },
+    {
+     "t": "mc",
+     "q": "Which reply covers the note [Explain why you can't come] BEST?",
+     "op": [
+      "I can't come.",
+      "I'm afraid I can't come because I have an exam on Monday and I need to study.",
+      "Why not me? I can't.",
+      "Exams are difficult."
+     ],
+     "r": 1,
+     "exp": "A segunda dá a resposta (não posso ir) e a explicação (prova na segunda-feira), cumprindo a nota por inteiro."
+    },
+    {
+     "t": "gap",
+     "q": "Don't forget to ___ the meeting time in your reply, so Sam knows when to arrive. (mention)",
+     "resp": [
+      "mention",
+      "include",
+      "say"
+     ],
+     "exp": "Você pode mencionar um detalhe pedido na nota: mention, include ou say."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Paragraphs that guide the reader",
+   "objetivo": "Organizar o e-mail em parágrafos curtos, cada um com uma ideia.",
+   "foco": "Paragraph layout; one idea per paragraph; linking sentences",
+   "explicacao": [
+    "Um e-mail de cerca de 100 palavras costuma ter 3 ou 4 parágrafos curtos: abertura, assunto principal, pergunta/sugestão e despedida.",
+    "Cada parágrafo trata de UMA ideia. Quando muda de assunto, pule uma linha.",
+    "Frases de ligação ajudam: Anyway, ... / By the way, ... / As for the food, ... / Talking about ...",
+    "Evite um bloco único de texto: o examinador precisa ver a organização."
+   ],
+   "vocab": [
+    {
+     "en": "paragraph",
+     "pt": "parágrafo"
+    },
+    {
+     "en": "by the way",
+     "pt": "a propósito"
+    },
+    {
+     "en": "anyway",
+     "pt": "enfim, de qualquer forma"
+    },
+    {
+     "en": "as for ...",
+     "pt": "quanto a ..."
+    },
+    {
+     "en": "talking of ...",
+     "pt": "falando em ..."
+    },
+    {
+     "en": "to move on",
+     "pt": "passar para outro assunto"
+    },
+    {
+     "en": "topic",
+     "pt": "assunto, tema"
+    }
+   ],
+   "material": {
+    "tarefa": "Read Mia's email.\nMia: 'I've moved to a new flat! I love it, but I don't know many people here. Did you move house once? Could you give me some tips for making new friends?'\nNotes: [Say congratulations] [Tell Mia about a time you moved] [Suggest ways to make friends] [Invite Mia to visit you]\nWrite your email in 90-120 words, in clear paragraphs.",
+    "genero": "email",
+    "min": 90,
+    "max": 120,
+    "modelo": "Hi Mia,\nCongratulations on your new flat! I'm so happy for you.\nI moved house when I was fourteen, so I know how you feel. At first I didn't know anybody, and I missed my old friends a lot.\nAs for making friends, I'd suggest joining a club or a sports team. That's how I met my best friend! You could also say hello to your neighbours. Most people are friendly.\nBy the way, why don't you come and stay with me in the summer? We could go to the beach and relax.\nLet me know what you think!\nLove,\nCarolina",
+    "checklist": [
+     "Separei o e-mail em parágrafos curtos (pulando linha)?",
+     "Cada parágrafo tem uma única ideia?",
+     "Usei pelo menos uma frase de ligação (By the way, As for ...)?",
+     "Cobri as quatro notas e escrevi entre 90 e 120 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why do we write an email in short paragraphs?",
+     "op": [
+      "Because the exam needs five paragraphs exactly",
+      "So the reader can follow each idea easily",
+      "To make the email look longer",
+      "Because it is a rule for formal letters only"
+     ],
+     "r": 1,
+     "exp": "Parágrafos curtos mostram organização e facilitam a leitura. Não existe número fixo exigido."
+    },
+    {
+     "t": "gap",
+     "q": "I'd love to see you again. ___ the way, are you free in August?",
+     "resp": [
+      "by"
+     ],
+     "exp": "By the way = a propósito, usado para mudar de assunto."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "By the way, why don't you come and stay with me in the summer?",
+     "exp": "'Why don't you' soa como 'uai dôntchu'. Faça a frase fluir sem pausas."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is the best linking sentence to move from the party to the exams?",
+     "op": [
+      "Exams are boring.",
+      "Anyway, how are your exams going?",
+      "I will talk. Exams.",
+      "Party is finished and exams."
+     ],
+     "r": 1,
+     "exp": "Anyway, ... é uma forma natural de mudar de assunto e continua simpática."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "As",
+      "for",
+      "the",
+      "food,",
+      "I",
+      "can",
+      "bring",
+      "some",
+      "sandwiches."
+     ],
+     "resp": "As for the food, I can bring some sandwiches.",
+     "exp": "As for + assunto introduz um novo ponto do e-mail. Depois vem a frase completa."
+    },
+    {
+     "t": "gap",
+     "q": "___ for the weather, it should be sunny on Saturday.",
+     "resp": [
+      "as"
+     ],
+     "exp": "As for = quanto a. Frase fixa para tratar de um ponto específico."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê duas dicas a alguém que mudou de cidade para fazer novos amigos.",
+     "frase": "A friend says: 'I've moved to a new city and I don't know anybody. Any tips?'",
+     "modelo": "You could join a club or a sports team. Also, say hello to your neighbours.",
+     "min": 10,
+     "chave": [
+      "join",
+      "club",
+      "team",
+      "neighbours",
+      "friends",
+      "you could",
+      "why don't",
+      "try"
+     ],
+     "exp": "Use You could ... ou Why don't you ... para dar dicas."
+    },
+    {
+     "t": "mc",
+     "q": "Which email layout is best?",
+     "op": [
+      "One long paragraph with all the information.",
+      "Greeting; a short paragraph for each topic; a closing line and name.",
+      "Only the greeting and the name.",
+      "Every sentence in a new line with no connection."
+     ],
+     "r": 1,
+     "exp": "O melhor é saudação, parágrafos temáticos curtos e uma despedida."
+    },
+    {
+     "t": "gap",
+     "q": "Mia asked about my move. ___ I was fourteen, I moved to Curitiba with my family. (use a time word)",
+     "resp": [
+      "when"
+     ],
+     "exp": "When I was fourteen = quando eu tinha catorze anos. Ajuda a abrir o parágrafo da lembrança."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "A semi-formal email to a teacher or club",
+   "objetivo": "Escrever um e-mail um pouco mais educado e formal, sem perder o tom natural.",
+   "foco": "Semi-formal register: Dear + name, polite requests, Would you mind ...",
+   "explicacao": [
+    "Para professores, diretores ou coordenadores de clube use Dear + Mr / Ms + sobrenome ou Dear + nome. Termine com Best wishes ou Kind regards.",
+    "Evite gírias e abreviações demais. Peça com educação: Could you ...? / Would you mind ...ing? / I'd be grateful if you could ...",
+    "Mesmo semi-formal, o e-mail do PET deve ser simples e claro. Não use frases longas demais.",
+    "Comece com o motivo: I'm writing to ask about ... / I'm writing to say thank you for ..."
+   ],
+   "vocab": [
+    {
+     "en": "I'm writing to ...",
+     "pt": "Estou escrevendo para ..."
+    },
+    {
+     "en": "Could you ...?",
+     "pt": "Você poderia ...?"
+    },
+    {
+     "en": "Would you mind ...ing?",
+     "pt": "Você se importaria de ...?"
+    },
+    {
+     "en": "I'd be grateful if ...",
+     "pt": "Eu agradeceria se ..."
+    },
+    {
+     "en": "Kind regards",
+     "pt": "Atenciosamente"
+    },
+    {
+     "en": "to apologise for",
+     "pt": "pedir desculpas por"
+    },
+    {
+     "en": "in advance",
+     "pt": "com antecedência, de antemão"
+    }
+   ],
+   "material": {
+    "tarefa": "Your English teacher, Mr Harris, has asked you to tell him about the school trip.\nMr Harris: 'I'm planning a trip to London for the class. Please write and tell me what you'd like to see and whether you have any questions.'\nNotes: [Thank him] [Say what you want to see] [Ask about the cost] [Ask what to bring]\nWrite your email in 90-120 words.",
+    "genero": "email",
+    "min": 90,
+    "max": 120,
+    "modelo": "Dear Mr Harris,\nThank you very much for organising the trip to London. I'm really looking forward to it.\nI'd like to see the Tower of London and the British Museum, because I'm interested in history. If we have time, a walk along the river would be wonderful too.\nCould you tell me how much the trip will cost? I'd be grateful if you could also let me know whether we need to pay in advance.\nFinally, would you mind telling us what we should bring? For example, do we need to take lunch, or can we buy it there?\nThank you again.\nKind regards,\nRafael Mendes",
+    "checklist": [
+     "Usei Dear + Mr/Ms + sobrenome e terminei com Kind regards ou Best wishes?",
+     "Fiz pedidos educados (Could you ... / I'd be grateful if ...)?",
+     "Evitei gírias e cobri as quatro notas?",
+     "Escrevi entre 90 e 120 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which greeting is best for an email to your teacher, Mr Harris?",
+     "op": [
+      "Hey Harris!",
+      "Dear Mr Harris,",
+      "Hi mate,",
+      "Mr Harris, listen."
+     ],
+     "r": 1,
+     "exp": "Dear Mr Harris é o certo para o professor. Hey e mate são informais demais."
+    },
+    {
+     "t": "gap",
+     "q": "Could you ___ me how much the trip costs?",
+     "resp": [
+      "tell"
+     ],
+     "exp": "Could you + verbo base: Could you tell me ...?"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "I would be grateful if you could let me know the cost.",
+     "exp": "'Grateful' = 'grêitful'. Faça 'would' fraco: 'uâd'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is polite enough for a teacher?",
+     "op": [
+      "Tell me the price.",
+      "Would you mind telling me the price?",
+      "What's the price, man?",
+      "Price now, please."
+     ],
+     "r": 1,
+     "exp": "Would you mind + verbo com -ing é bem educado. A segunda é a mais adequada."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "would",
+      "be",
+      "grateful",
+      "if",
+      "you",
+      "could",
+      "send",
+      "me",
+      "the",
+      "details."
+     ],
+     "resp": "I would be grateful if you could send me the details.",
+     "exp": "I'd be grateful if you could + verbo base é um pedido formal e educado."
+    },
+    {
+     "t": "gap",
+     "q": "Would you mind ___ me what to bring? (tell)",
+     "resp": [
+      "telling"
+     ],
+     "exp": "Depois de would you mind vem verbo com -ing: telling."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Peça educadamente a seu professor mais informações sobre uma viagem da escola.",
+     "frase": "Your teacher asks: 'Do you have any questions about the trip?'",
+     "modelo": "Yes, could you tell me how much it costs? Also, would you mind telling me what to bring?",
+     "min": 11,
+     "chave": [
+      "could",
+      "would",
+      "cost",
+      "bring",
+      "time",
+      "tell",
+      "grateful"
+     ],
+     "exp": "Use Could you ...? ou Would you mind ...ing? para soar educado."
+    },
+    {
+     "t": "mc",
+     "q": "Which closing is NOT suitable for an email to a teacher?",
+     "op": [
+      "Kind regards,",
+      "Best wishes,",
+      "Love and kisses,",
+      "Yours sincerely,"
+     ],
+     "r": 2,
+     "exp": "Love and kisses é íntimo demais. Kind regards, Best wishes e Yours sincerely servem."
+    },
+    {
+     "t": "gap",
+     "q": "I'm writing ___ ask about the school trip.",
+     "resp": [
+      "to"
+     ],
+     "exp": "I'm writing to + verbo: forma comum de abrir um e-mail com motivo."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Adding and contrasting ideas",
+   "objetivo": "Ligar ideias de adição e contraste para escrever frases mais ricas.",
+   "foco": "Linking words: and, also, as well as, but, however, although",
+   "explicacao": [
+    "Para adicionar: and, also, as well as, too. I like tennis and I also like swimming. / I like tennis as well as swimming.",
+    "Para contrastar: but, however, although. I like tennis, but I'm not good at it. / However, I'm not very good.",
+    "Atenção: however abre uma frase nova e leva vírgula depois: However, I can't come. Although vem antes de um sujeito e verbo: Although it was cold, we went out.",
+    "Não use although e but juntos na mesma frase: Although it was cold, but we ... está errado."
+   ],
+   "vocab": [
+    {
+     "en": "also",
+     "pt": "também, além disso"
+    },
+    {
+     "en": "as well as",
+     "pt": "além de"
+    },
+    {
+     "en": "too",
+     "pt": "também (no fim da frase)"
+    },
+    {
+     "en": "however",
+     "pt": "porém, no entanto"
+    },
+    {
+     "en": "although",
+     "pt": "embora"
+    },
+    {
+     "en": "on the other hand",
+     "pt": "por outro lado"
+    },
+    {
+     "en": "both ... and ...",
+     "pt": "tanto ... quanto ..."
+    }
+   ],
+   "material": {
+    "tarefa": "Read Tom's email.\nTom: 'I'm thinking of joining a gym or a swimming club. What do you think is better? Do you do any sport yourself?'\nNotes: [Say which is better] [Give a reason] [Say what sport you do] [Suggest a time to meet]\nWrite your email in 90-120 words. Use linking words.",
+    "genero": "email",
+    "min": 90,
+    "max": 120,
+    "modelo": "Hi Tom,\nThanks for your email. I think a swimming club is better. It's good for your whole body, and it's also less boring than a gym.\nAlthough gyms are open late, they can be very crowded. Swimming clubs, however, often have small groups and friendly coaches.\nI do sport as well as study! I play volleyball twice a week and I also run on Sundays. I'm not very fast, but I enjoy it.\nWhy don't we visit the swimming club together? I'm free on Saturday morning, and my sister is coming too.\nLet me know!\nBest wishes,\nDaniel",
+    "checklist": [
+     "Usei pelo menos um conectivo de adição e um de contraste?",
+     "Coloquei vírgula depois de However e antes de but?",
+     "Não usei although e but juntos na mesma frase?",
+     "Cobri as quatro notas em 90 a 120 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "Although it was raining, we played football.",
+      "Although it was raining, but we played football.",
+      "Despite it was raining, we played football.",
+      "Although it raining, we played football."
+     ],
+     "r": 0,
+     "exp": "Although já indica contraste, então não se usa but na mesma frase."
+    },
+    {
+     "t": "gap",
+     "q": "I love pizza. ___, I don't eat it every day. (However / But)",
+     "resp": [
+      "however"
+     ],
+     "exp": "However abre uma frase nova e é seguido de vírgula. Responda com However."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Although it was cold, we went for a long walk.",
+     "exp": "'Although' = 'olzôu'. Faça um pequeno descanso depois da vírgula."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence uses 'as well as' correctly?",
+     "op": [
+      "I study English as well as French.",
+      "I study English as well French as.",
+      "As well as I study English and French.",
+      "I as well as study English French."
+     ],
+     "r": 0,
+     "exp": "As well as vem entre dois elementos parecidos: English as well as French."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "flat",
+      "is",
+      "small,",
+      "but",
+      "it",
+      "is",
+      "very",
+      "comfortable."
+     ],
+     "resp": "The flat is small, but it is very comfortable.",
+     "exp": "But liga duas ideias contrárias e leva vírgula antes."
+    },
+    {
+     "t": "gap",
+     "q": "I play the guitar and I ___ sing in a choir.",
+     "resp": [
+      "also"
+     ],
+     "exp": "Also vem antes do verbo principal: I also sing."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale de dois esportes ou hobbies que você faz, usando um conectivo.",
+     "frase": "A friend asks: 'What do you do in your free time?'",
+     "modelo": "I play volleyball and I also like reading. I'm not very good at volleyball, but it's fun.",
+     "min": 11,
+     "chave": [
+      "and",
+      "also",
+      "but",
+      "however",
+      "as well as",
+      "play",
+      "like",
+      "enjoy"
+     ],
+     "exp": "Use and, also ou but para ligar as ideias."
+    },
+    {
+     "t": "mc",
+     "q": "Which pair shows contrast?",
+     "op": [
+      "I like the city. Also, I love the sea.",
+      "The film was long, but it was great.",
+      "I went to the shop and bought bread.",
+      "She is kind as well as clever."
+     ],
+     "r": 1,
+     "exp": "But expressa contraste. As outras opções somam informações."
+    },
+    {
+     "t": "gap",
+     "q": "The tickets were expensive. ___ , we bought them because the band is amazing.",
+     "resp": [
+      "however",
+      "even so",
+      "still"
+     ],
+     "exp": "However / even so / still: conectivos que introduzem uma ação que contraria a expectativa."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Giving reasons and results",
+   "objetivo": "Explicar motivos e consequências com because, so, as e since.",
+   "foco": "Linking words of cause and result: because, because of, as, since, so, that's why",
+   "explicacao": [
+    "Causa: because + sujeito e verbo (because it was late); because of + substantivo (because of the rain). As e since também indicam motivo: As it was late, we went home.",
+    "Resultado: so e that's why. It was late, so we went home. / That's why we went home.",
+    "Em português tendemos a trocar because por 'porque' em tudo. Em inglês: because + frase; because of + nome.",
+    "So fica no meio da frase, depois de vírgula. Não use so no início da frase em escrita mais cuidada."
+   ],
+   "vocab": [
+    {
+     "en": "because",
+     "pt": "porque"
+    },
+    {
+     "en": "because of",
+     "pt": "por causa de"
+    },
+    {
+     "en": "as / since",
+     "pt": "como, já que"
+    },
+    {
+     "en": "so",
+     "pt": "então, por isso"
+    },
+    {
+     "en": "that's why",
+     "pt": "é por isso que"
+    },
+    {
+     "en": "reason",
+     "pt": "motivo"
+    },
+    {
+     "en": "result",
+     "pt": "resultado, consequência"
+    }
+   ],
+   "material": {
+    "tarefa": "Read Nina's email.\nNina: 'I was really disappointed yesterday: I couldn't come to your birthday party. I hope you're not angry! Did you have a good time? What did you do?'\nNotes: [Say you're not angry] [Explain what happened at the party] [Say why it was good/bad] [Suggest meeting soon]\nWrite your email in 90-120 words.",
+    "genero": "email",
+    "min": 90,
+    "max": 120,
+    "modelo": "Hi Nina,\nDon't worry, I'm not angry at all! I know you couldn't come because of your exams.\nThe party was great. About twenty friends came, so the house was full of people. We danced for hours, and my dad made a huge cake. Unfortunately, the neighbours complained because the music was too loud, so we had to turn it down at ten o'clock.\nAs I missed you, I took some photos for you. That's why I'd like to see you soon. Are you free on Saturday? We could have a coffee and I'll show you everything.\nLove,\nIsabela",
+    "checklist": [
+     "Usei because, because of, so ou that's why corretamente?",
+     "Dei motivos claros em vez de só dizer o que aconteceu?",
+     "Cobri as quatro notas?",
+     "Escrevi entre 90 e 120 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Complete: 'We stayed at home ___ the rain.'",
+     "op": [
+      "because",
+      "because of",
+      "so",
+      "as of"
+     ],
+     "r": 1,
+     "exp": "Because of vem antes de substantivo (the rain). Because exige frase com verbo."
+    },
+    {
+     "t": "gap",
+     "q": "It was very late, ___ we took a taxi home.",
+     "resp": [
+      "so"
+     ],
+     "exp": "So introduz o resultado: era tarde, então pegamos um táxi."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "We were tired, so we went home early.",
+     "exp": "Em 'tired' o som é 'taiêrd', uma sílaba só. 'Early' = 'érli'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I stayed in because I was ill.",
+      "I stayed in because of I was ill.",
+      "I stayed in so I was ill.",
+      "I stayed in because ill."
+     ],
+     "r": 0,
+     "exp": "Because + sujeito + verbo. Because of não leva frase completa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "As",
+      "it",
+      "was",
+      "raining,",
+      "we",
+      "decided",
+      "to",
+      "stay",
+      "at",
+      "home."
+     ],
+     "resp": "As it was raining, we decided to stay at home.",
+     "exp": "As = como, já que. Vem no início da frase seguido de vírgula.",
+     "alt": [
+      "We decided to stay at home as it was raining."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "She missed the bus. ___ why she was late for school.",
+     "resp": [
+      "that's",
+      "that is",
+      "thats"
+     ],
+     "exp": "That's why = é por isso que. Introduz o resultado."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Explique por que você gosta do lugar onde mora, usando because.",
+     "frase": "A friend asks: 'Do you like living in your town? Why?'",
+     "modelo": "Yes, I do, because it is quiet and the people are friendly. So I feel very comfortable there.",
+     "min": 12,
+     "chave": [
+      "because",
+      "so",
+      "quiet",
+      "friendly",
+      "like",
+      "love",
+      "town",
+      "city"
+     ],
+     "exp": "Use because para o motivo e so para o resultado."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence has the cause and result in the right order?",
+     "op": [
+      "She was ill, so she stayed in bed.",
+      "She stayed in bed, so she was ill.",
+      "So she was ill, she stayed in bed.",
+      "Because she stayed in bed, so she was ill."
+     ],
+     "r": 0,
+     "exp": "A doença é a causa; ficar na cama é o resultado. Because ... so não se usa junto."
+    },
+    {
+     "t": "gap",
+     "q": "We cancelled the picnic ___ the bad weather.",
+     "resp": [
+      "because of",
+      "due to",
+      "owing to"
+     ],
+     "exp": "Because of / due to / owing to + substantivo (the bad weather). Because sozinho exigiria um verbo."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Putting events in order",
+   "objetivo": "Contar uma sequência de acontecimentos com conectivos de ordem.",
+   "foco": "Sequencers: first, then, after that, later, finally, while, as soon as",
+   "explicacao": [
+    "Para organizar o que aconteceu: First, ... Then ... After that, ... Later, ... Finally, ...",
+    "Conectivos de tempo: while (ao mesmo tempo, com -ing ou continuous), as soon as (assim que), before, after, when.",
+    "Depois de after e before você pode usar -ing: After finishing homework, I went out. / Before leaving, I checked the door.",
+    "Não repita sempre then: varie com after that, next, later."
+   ],
+   "vocab": [
+    {
+     "en": "first",
+     "pt": "primeiro"
+    },
+    {
+     "en": "then / next",
+     "pt": "depois, em seguida"
+    },
+    {
+     "en": "after that",
+     "pt": "depois disso"
+    },
+    {
+     "en": "later",
+     "pt": "mais tarde"
+    },
+    {
+     "en": "finally",
+     "pt": "por fim"
+    },
+    {
+     "en": "as soon as",
+     "pt": "assim que"
+    },
+    {
+     "en": "meanwhile",
+     "pt": "enquanto isso"
+    }
+   ],
+   "material": {
+    "tarefa": "Read Ben's email.\nBen: 'I heard you went to a concert last weekend! Tell me everything! What was the day like? Would you go again?'\nNotes: [Say who you went with] [Describe what happened, in order] [Say what you liked best] [Say if you would go again]\nWrite your email in 90-120 words.",
+    "genero": "email",
+    "min": 90,
+    "max": 120,
+    "modelo": "Hi Ben,\nYes, I went to a fantastic concert last Saturday with my brother and two friends.\nFirst, we met at the station at four o'clock. Then we took the train to the stadium, and we queued for almost an hour. As soon as we got inside, the band started playing! After that, we sang and danced until the end. Finally, we walked home because the last bus had left.\nWhat I liked best was the last song. Everybody had their phones in the air, and it looked amazing.\nI'd definitely go again, but I'd take a warm jacket!\nWrite soon,\nHenrique",
+    "checklist": [
+     "Contei os fatos em ordem, com pelo menos três conectivos de sequência?",
+     "Variei os conectivos (não só then)?",
+     "Respondi às quatro notas?",
+     "Escrevi entre 90 e 120 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which word best finishes the sequence: 'First we ate, then we talked, ___ we went home.'",
+     "op": [
+      "finally",
+      "firstly",
+      "meanwhile",
+      "before"
+     ],
+     "r": 0,
+     "exp": "Finally marca o último passo da sequência."
+    },
+    {
+     "t": "gap",
+     "q": "___ soon as the film ended, we left the cinema.",
+     "resp": [
+      "as"
+     ],
+     "exp": "As soon as = assim que. Expressão fixa."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "First we met at the station, and then we took the train.",
+     "exp": "Em 'station' o som é 'stêishn'. Em 'took' o oo é curto."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence uses 'while' correctly?",
+     "op": [
+      "While I was cooking, my friend called.",
+      "While I cooked yesterday called my friend.",
+      "I was cooking while yesterday.",
+      "While call my friend I cook."
+     ],
+     "r": 0,
+     "exp": "While + past continuous para a ação longa e depois a ação curta interrompendo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "After",
+      "finishing",
+      "our",
+      "homework,",
+      "we",
+      "went",
+      "out",
+      "for",
+      "ice",
+      "cream."
+     ],
+     "resp": "After finishing our homework, we went out for ice cream.",
+     "exp": "After + verbo com -ing: forma comum de sequência sem sujeito repetido."
+    },
+    {
+     "t": "gap",
+     "q": "___ leaving the house, I checked all the windows. (Before / After)",
+     "resp": [
+      "before"
+     ],
+     "exp": "Before leaving = antes de sair. A frase mostra algo que veio antes da saída."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte em ordem o que você fez ontem, com first, then e finally.",
+     "frase": "Your friend asks: 'What did you do yesterday?'",
+     "modelo": "First I studied. Then I had lunch with my family. Finally I watched a film.",
+     "min": 10,
+     "chave": [
+      "first",
+      "then",
+      "after that",
+      "finally",
+      "later",
+      "yesterday",
+      "studied",
+      "went"
+     ],
+     "exp": "Use first, then, after that, finally em ordem."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is in the correct order of events?",
+     "op": [
+      "I got up, had breakfast and then I went to work.",
+      "I went to work and then I got up and had breakfast.",
+      "I had breakfast then I got up and went to work.",
+      "I went to work, had breakfast, got up."
+     ],
+     "r": 0,
+     "exp": "A ordem lógica: levantar, tomar café, ir trabalhar."
+    },
+    {
+     "t": "gap",
+     "q": "I was washing the dishes ___ my sister was watching TV. (conjunction of time)",
+     "resp": [
+      "while",
+      "as"
+     ],
+     "exp": "While / as ligam duas ações que acontecem ao mesmo tempo."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Opinions, suggestions and questions",
+   "objetivo": "Dar opinião, sugerir algo e fazer perguntas naturais em um e-mail.",
+   "foco": "I think / In my opinion; Why don't we ...?; How about ...ing?; Would you like to ...?",
+   "explicacao": [
+    "Opinião: I think ..., In my opinion, ..., I believe ... Não se usa I am thinking que para opinião.",
+    "Sugestão: Why don't we + verbo? / How about + verbo-ing? / Let's + verbo / We could + verbo.",
+    "Convite: Would you like to come? / Do you fancy ...ing? (britânico, informal).",
+    "Pergunta ao amigo: What about you? / Have you ever been there? / What do you think?",
+    "O PET quer ver perguntas e sugestões no e-mail: use pelo menos uma de cada."
+   ],
+   "vocab": [
+    {
+     "en": "in my opinion",
+     "pt": "na minha opinião"
+    },
+    {
+     "en": "I'd suggest ...",
+     "pt": "eu sugeriria ..."
+    },
+    {
+     "en": "How about ...ing?",
+     "pt": "Que tal ...?"
+    },
+    {
+     "en": "Do you fancy ...ing?",
+     "pt": "Você está a fim de ...?"
+    },
+    {
+     "en": "What do you think?",
+     "pt": "O que você acha?"
+    },
+    {
+     "en": "Let's ...",
+     "pt": "Vamos ..."
+    },
+    {
+     "en": "it depends",
+     "pt": "depende"
+    }
+   ],
+   "material": {
+    "tarefa": "Read Zoe's email.\nZoe: 'My birthday is next month and I can't decide how to celebrate! Should I have a party at home or go out? What do you think? Do you have any ideas?'\nNotes: [Give your opinion] [Say why] [Suggest an activity] [Ask Zoe a question]\nWrite your email in 90-120 words.",
+    "genero": "email",
+    "min": 90,
+    "max": 120,
+    "modelo": "Hi Zoe,\nHappy early birthday! How exciting.\nIn my opinion, you should go out. A party at home means a lot of cleaning, and you won't have time to relax. Also, restaurants are usually fun with a small group.\nHow about going bowling and then having pizza? Everybody loves it, and it isn't too expensive. Or we could go to the cinema if you prefer something quiet.\nBy the way, who are you going to invite? Do you fancy asking your cousins as well?\nLet me know what you decide, and I'll help you organise everything.\nLots of love,\nMarina",
+    "checklist": [
+     "Dei minha opinião e o motivo?",
+     "Fiz uma sugestão (How about / Why don't we / We could)?",
+     "Fiz uma pergunta à pessoa?",
+     "Escrevi entre 90 e 120 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is NOT a suggestion?",
+     "op": [
+      "Why don't we go swimming?",
+      "How about going to the park?",
+      "I went to the park yesterday.",
+      "We could try the new café."
+     ],
+     "r": 2,
+     "exp": "I went to the park yesterday conta algo do passado; não sugere."
+    },
+    {
+     "t": "gap",
+     "q": "How about ___ to the cinema on Friday? (go)",
+     "resp": [
+      "going"
+     ],
+     "exp": "How about + verbo com -ing."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Why don't we go bowling and then have pizza?",
+     "exp": "'Bowling' = 'bôulin'. Una 'don't we' e fale rápido."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence gives an opinion in a natural way?",
+     "op": [
+      "In my opinion, a swimming club is better.",
+      "I am thinking that swimming better.",
+      "My opinion is the swimming better club.",
+      "I opinion swimming."
+     ],
+     "r": 0,
+     "exp": "In my opinion, + frase completa. Todas as outras estão erradas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Do",
+      "you",
+      "fancy",
+      "going",
+      "to",
+      "the",
+      "beach",
+      "this",
+      "weekend?"
+     ],
+     "resp": "Do you fancy going to the beach this weekend?",
+     "exp": "Do you fancy + verbo com -ing? Pergunta britânica e informal."
+    },
+    {
+     "t": "gap",
+     "q": "Why don't we ___ a picnic by the river on Sunday? (have)",
+     "resp": [
+      "have",
+      "do",
+      "plan"
+     ],
+     "exp": "Why don't we + verbo base. Have a picnic é o mais comum."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Sugira uma atividade para o fim de semana e dê um motivo.",
+     "frase": "Your friend asks: 'What should we do this weekend?'",
+     "modelo": "How about going to the beach? I think it will be sunny, and we can relax.",
+     "min": 11,
+     "chave": [
+      "how about",
+      "why don't",
+      "let's",
+      "we could",
+      "beach",
+      "park",
+      "cinema",
+      "because"
+     ],
+     "exp": "Use How about ...ing? ou Why don't we ...?"
+    },
+    {
+     "t": "mc",
+     "q": "Zoe asks 'Should I have a party at home or go out?' Which reply is best?",
+     "op": [
+      "I think you should go out because a party at home needs a lot of cleaning.",
+      "Party. Home. Maybe.",
+      "You is going out is good.",
+      "It's your birthday and Zoe."
+     ],
+     "r": 0,
+     "exp": "A primeira dá opinião (I think) e motivo (because ...)."
+    },
+    {
+     "t": "gap",
+     "q": "It ___ on the weather. If it rains, we'll go to the cinema instead.",
+     "resp": [
+      "depends"
+     ],
+     "exp": "It depends on = depende de. Muito usado em sugestões e opiniões."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Past tenses in stories",
+   "objetivo": "Usar bem o past simple, o past continuous e o past perfect para contar uma história.",
+   "foco": "Past simple, past continuous, past perfect in narrative",
+   "explicacao": [
+    "Past simple: ações principais, uma depois da outra: I opened the door and saw a cat.",
+    "Past continuous: o cenário ou uma ação em andamento: It was raining and people were running home. Também: I was walking when I heard a noise.",
+    "Past perfect (had + particípio): algo que aconteceu ANTES de outro momento do passado: When I arrived, the film had started.",
+    "Cuidado com irregulares: go-went-gone, see-saw-seen, buy-bought-bought, take-took-taken.",
+    "Mantenha o mesmo tempo dentro da história; não misture presente e passado sem motivo."
+   ],
+   "vocab": [
+    {
+     "en": "to happen",
+     "pt": "acontecer"
+    },
+    {
+     "en": "suddenly",
+     "pt": "de repente"
+    },
+    {
+     "en": "when",
+     "pt": "quando"
+    },
+    {
+     "en": "had + past participle",
+     "pt": "tempo past perfect"
+    },
+    {
+     "en": "to realise",
+     "pt": "perceber, dar-se conta"
+    },
+    {
+     "en": "to notice",
+     "pt": "notar"
+    },
+    {
+     "en": "at that moment",
+     "pt": "naquele momento"
+    }
+   ],
+   "material": {
+    "tarefa": "You see this notice in an English-language magazine:\nStories wanted! We are looking for stories for our readers. Your story must begin with this sentence: 'I was walking home when I heard a strange noise behind me.'\nWrite your story in about 90-120 words.",
+    "genero": "story",
+    "min": 90,
+    "max": 120,
+    "modelo": "I was walking home when I heard a strange noise behind me. I stopped and turned round, but there was nobody there. It was getting dark, and the street was empty.\nThe noise came again. It was coming from a bush near the gate. I picked up a stick and walked slowly towards it.\nSuddenly, a small brown dog ran out! It was very thin and it had no collar. I realised it had been lost for a long time.\nI took it home, gave it some food and called the police. The next day, an old man came to my door. He had been looking for his dog all week, and he was crying with happiness.",
+    "checklist": [
+     "Usei past simple para as ações e past continuous para o cenário?",
+     "Usei pelo menos um past perfect (had + particípio)?",
+     "Mantive os tempos coerentes e escrevi começando com a frase dada?",
+     "Escrevi entre 90 e 120 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which tense do we use for the background of a story?",
+     "op": [
+      "Past continuous",
+      "Present perfect",
+      "Future simple",
+      "Present simple"
+     ],
+     "r": 0,
+     "exp": "O cenário (It was raining, people were running) usa o past continuous."
+    },
+    {
+     "t": "gap",
+     "q": "I ___ (walk) home when I heard a noise.",
+     "resp": [
+      "was walking"
+     ],
+     "exp": "Ação longa em andamento no passado: was walking. A ação curta (heard) a interrompeu.",
+     "dica": "WALK"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "I was walking home when I heard a strange noise behind me.",
+     "exp": "'Strange' = 'strêinj'. 'Heard' = 'rérd', com o 'h' aspirado e 'ea' como 'ér'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence uses the past perfect correctly?",
+     "op": [
+      "When I arrived, the film had already started.",
+      "When I arrived, the film has already started.",
+      "When I arrived, the film already start.",
+      "When I arrived, the film was already start."
+     ],
+     "r": 0,
+     "exp": "Past perfect: had + particípio, para o que aconteceu antes de eu chegar."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Suddenly",
+      "a",
+      "dog",
+      "ran",
+      "out",
+      "from",
+      "behind",
+      "the",
+      "wall."
+     ],
+     "resp": "Suddenly a dog ran out from behind the wall.",
+     "exp": "Suddenly abre a frase, seguido de sujeito + verbo no past simple."
+    },
+    {
+     "t": "gap",
+     "q": "She was sad because she ___ her keys. (lose)",
+     "resp": [
+      "had lost"
+     ],
+     "exp": "Ela perdeu as chaves ANTES de ficar triste: past perfect, had lost.",
+     "dica": "LOSE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte em duas ou três frases algo que aconteceu quando você estava indo para casa ou para a escola.",
+     "frase": "Your friend asks: 'Did anything funny happen to you last week?'",
+     "modelo": "Last week I was walking to school when I met my old teacher. We talked for twenty minutes.",
+     "min": 12,
+     "chave": [
+      "was",
+      "were",
+      "when",
+      "suddenly",
+      "walked",
+      "met",
+      "saw",
+      "heard"
+     ],
+     "exp": "Use was walking when + past simple."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "She told me she had seen the film before.",
+      "She told me she saw had the film before.",
+      "She told me she has seen the film before.",
+      "She told me she seen the film before."
+     ],
+     "r": 0,
+     "exp": "Past perfect (had seen) para algo anterior ao momento em que ela falou."
+    },
+    {
+     "t": "gap",
+     "q": "When we arrived, everybody ___ already gone home.",
+     "resp": [
+      "had"
+     ],
+     "exp": "Already gone home foi antes de chegarmos: had + particípio."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Starting a story with a given sentence",
+   "objetivo": "Planejar uma história curta que continua a partir da frase dada, com começo, problema e final.",
+   "foco": "Story structure: beginning, problem, solution; planning in 3 steps",
+   "explicacao": [
+    "No PET Part 2 a história começa com uma frase dada. Você DEVE usar essa frase como a primeira (ou integrar no início).",
+    "Planeje em três passos: 1) situação e personagens; 2) problema ou surpresa; 3) o que acontece no final.",
+    "Em 100 palavras não há espaço para muitos personagens: um ou dois bastam.",
+    "Termine com um final claro: She smiled and ..., I never forgot that day.",
+    "Dê nomes e detalhes pequenos (a red bag, a rainy night) para a história ficar viva."
+   ],
+   "vocab": [
+    {
+     "en": "plot",
+     "pt": "enredo"
+    },
+    {
+     "en": "character",
+     "pt": "personagem"
+    },
+    {
+     "en": "setting",
+     "pt": "cenário"
+    },
+    {
+     "en": "problem",
+     "pt": "problema"
+    },
+    {
+     "en": "ending",
+     "pt": "final"
+    },
+    {
+     "en": "surprise",
+     "pt": "surpresa"
+    },
+    {
+     "en": "to solve",
+     "pt": "resolver"
+    }
+   ],
+   "material": {
+    "tarefa": "You see this notice in an English-language magazine:\nStories wanted! We are looking for stories for our readers. Your story must begin with this sentence: 'When Emma opened the box, she couldn't believe her eyes.'\nWrite your story in about 90-120 words.",
+    "genero": "story",
+    "min": 90,
+    "max": 120,
+    "modelo": "When Emma opened the box, she couldn't believe her eyes. Inside there was an old gold key and a small note: 'Find the door.'\nShe looked at the note for a long time. Her grandmother had died the month before, and this was her last present. Emma searched the whole house, but she found no door that fitted the key.\nFinally, she went into the garden. Behind the old apple tree, she noticed a tiny wooden door covered with leaves. Her hands were shaking when she turned the key.\nBehind the door was a small room full of her grandmother's letters and photos. Emma sat down and started to read. She was crying, but she was smiling too.",
+    "checklist": [
+     "Comecei exatamente com a frase dada?",
+     "Há começo, um problema/surpresa e um final?",
+     "Usei poucos personagens e alguns detalhes?",
+     "Escrevi entre 90 e 120 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What must the first sentence of your PET story be?",
+     "op": [
+      "Any sentence you like",
+      "The sentence given in the task",
+      "A question to the reader",
+      "A title in capital letters"
+     ],
+     "r": 1,
+     "exp": "A frase dada deve ser usada como começo da história."
+    },
+    {
+     "t": "gap",
+     "q": "Her hands were shaking ___ she turned the key. (conjunction of time)",
+     "resp": [
+      "when",
+      "as"
+     ],
+     "exp": "When / as ligam duas ações próximas no tempo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "When Emma opened the box, she couldn't believe her eyes.",
+     "exp": "'Couldn't' = 'cúdnt'. 'Believe' = 'bi-LIV'. Una 'opened the'."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the best plan for a 100-word story?",
+     "op": [
+      "Many characters, many places and no ending",
+      "One or two characters, a problem and a clear ending",
+      "A long description and no events",
+      "Dialogue only"
+     ],
+     "r": 1,
+     "exp": "Em 100 palavras: poucos personagens, um problema e um final."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "looked",
+      "at",
+      "the",
+      "note",
+      "for",
+      "a",
+      "long",
+      "time",
+      "before",
+      "she",
+      "spoke."
+     ],
+     "resp": "She looked at the note for a long time before she spoke.",
+     "exp": "Before + sujeito + verbo liga duas ações em sequência."
+    },
+    {
+     "t": "gap",
+     "q": "Emma didn't smile ___ she read the last letter.",
+     "resp": [
+      "until",
+      "till"
+     ],
+     "exp": "Not ... until = só ... quando. Until marca o momento em que algo mudou."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Continue a história em duas frases: 'When Emma opened the box, she couldn't believe her eyes.'",
+     "frase": "Continue the story: 'When Emma opened the box, she couldn't believe her eyes.'",
+     "modelo": "Inside there was a tiny kitten. It looked at her and said nothing, but she loved it immediately.",
+     "min": 11,
+     "chave": [
+      "inside",
+      "there was",
+      "box",
+      "found",
+      "saw",
+      "kitten",
+      "key",
+      "letter"
+     ],
+     "exp": "Diga o que ela viu e o que fez depois, no passado."
+    },
+    {
+     "t": "mc",
+     "q": "Which ending is clear and satisfying?",
+     "op": [
+      "And then. The end.",
+      "From that day on, Emma never opened a box without smiling.",
+      "Emma. Box. Key.",
+      "I do not know what happened."
+     ],
+     "r": 1,
+     "exp": "Um final claro fecha a história e deixa uma imagem."
+    },
+    {
+     "t": "gap",
+     "q": "The story needs a ___: something that goes wrong or surprises the character. (one word)",
+     "resp": [
+      "problem",
+      "surprise"
+     ],
+     "exp": "O problema ou a surpresa é o centro da história."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Adjectives and adverbs that bring a story to life",
+   "objetivo": "Usar adjetivos e advérbios para descrever pessoas, lugares e ações sem exagerar.",
+   "foco": "Adjectives (-ed / -ing), adverbs of manner, word order",
+   "explicacao": [
+    "Adjetivo descreve um nome: a dark street. Advérbio descreve um verbo: she walked slowly. Muitos advérbios terminam em -ly: quickly, quietly, carefully.",
+    "Cuidado: -ed descreve como alguém se sente (I was bored), -ing descreve o que causa o sentimento (the film was boring).",
+    "Irregulares: good → well (She sings well), fast → fast, hard → hard, late → late.",
+    "Ordem: adjetivo antes do nome (a small old house) e advérbio depois do verbo (he spoke quietly).",
+    "Dois ou três bons detalhes valem mais que muitas palavras repetidas."
+   ],
+   "vocab": [
+    {
+     "en": "terrified",
+     "pt": "aterrorizado"
+    },
+    {
+     "en": "exhausted",
+     "pt": "exausto"
+    },
+    {
+     "en": "enormous",
+     "pt": "enorme"
+    },
+    {
+     "en": "silently",
+     "pt": "silenciosamente"
+    },
+    {
+     "en": "carefully",
+     "pt": "com cuidado"
+    },
+    {
+     "en": "exciting / excited",
+     "pt": "empolgante / empolgado"
+    },
+    {
+     "en": "nervous",
+     "pt": "nervoso"
+    }
+   ],
+   "material": {
+    "tarefa": "You see this notice in an English-language magazine:\nStories wanted! We are looking for stories for our readers. Your story must begin with this sentence: 'It was the most frightening night of my life.'\nWrite your story in about 90-120 words.",
+    "genero": "story",
+    "min": 90,
+    "max": 120,
+    "modelo": "It was the most frightening night of my life. I was camping alone in a dark forest, and a strong wind was blowing through the trees.\nAt midnight, I heard a loud, heavy noise outside the tent. I sat up quietly and held my torch with shaking hands. Slowly, I opened the zip.\nIn front of me stood an enormous brown horse! It looked at me calmly and then began to eat the grass next to my tent. I was so relieved that I laughed out loud.\nAfter a few minutes, I lay down again, exhausted but happy. In the morning, a farmer appeared and thanked me for finding his lost horse.",
+    "checklist": [
+     "Usei adjetivos e advérbios em locais úteis, sem exagerar?",
+     "Diferenciei -ed e -ing (excited / exciting)?",
+     "Usei good/well e outros advérbios irregulares corretamente?",
+     "Escrevi entre 90 e 120 palavras com a frase dada no começo?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Choose the correct word: 'The film was really ___.'",
+     "op": [
+      "bored",
+      "boring",
+      "bore",
+      "boringly"
+     ],
+     "r": 1,
+     "exp": "-ing descreve a coisa que causa o sentimento. O filme é boring; eu me sinto bored."
+    },
+    {
+     "t": "gap",
+     "q": "He sang very ___ at the concert. (good)",
+     "resp": [
+      "well"
+     ],
+     "exp": "Good é adjetivo. Para descrever o verbo sang usamos o advérbio well.",
+     "dica": "GOOD"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "She opened the door slowly and walked carefully into the dark room.",
+     "exp": "Em 'carefully' o acento está em 'CARE'. Em 'dark' o r é suave."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence has the adverb in the right place?",
+     "op": [
+      "She quietly closed the door.",
+      "She closed quietly door the.",
+      "Quietly she door closed.",
+      "She closed the quietly door."
+     ],
+     "r": 0,
+     "exp": "Advérbio de modo pode ir antes do verbo (quietly closed) ou depois do objeto (closed the door quietly)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "old",
+      "man",
+      "walked",
+      "slowly",
+      "down",
+      "the",
+      "long",
+      "street."
+     ],
+     "resp": "The old man walked slowly down the long street.",
+     "exp": "Adjetivos antes do nome (old man, long street); advérbio depois do verbo (walked slowly)."
+    },
+    {
+     "t": "gap",
+     "q": "I was so ___ that I couldn't sleep. The match was very exciting. (excite)",
+     "resp": [
+      "excited"
+     ],
+     "exp": "Eu estava empolgado: -ed para sentimento da pessoa.",
+     "dica": "EXCITE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Descreva em duas frases um lugar que você conhece bem, com dois adjetivos.",
+     "frase": "A friend asks: 'What is your favourite place like?'",
+     "modelo": "My favourite place is a small, quiet beach. The water is warm and the sand is soft.",
+     "min": 11,
+     "chave": [
+      "beautiful",
+      "small",
+      "big",
+      "quiet",
+      "warm",
+      "beach",
+      "park",
+      "city"
+     ],
+     "exp": "Use adjetivos antes de nomes: a small, quiet beach."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is the most natural?",
+     "op": [
+      "He ran fastly to the station.",
+      "He ran fast to the station.",
+      "He ran fastness to the station.",
+      "He run fast to the station."
+     ],
+     "r": 1,
+     "exp": "Fast é adjetivo e advérbio ao mesmo tempo: ran fast. Fastly não existe."
+    },
+    {
+     "t": "gap",
+     "q": "It rained ___ all night, so we stayed inside. (hard)",
+     "resp": [
+      "hard"
+     ],
+     "exp": "Hard é adjetivo e advérbio: rained hard (choveu forte). Hardly tem outro sentido, quase não.",
+     "dica": "HARD"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Writing an article: title and opening",
+   "objetivo": "Começar um artigo com título atraente e abertura que fala diretamente com o leitor.",
+   "foco": "Article format: title, opening question, addressing the reader",
+   "explicacao": [
+    "No PET Part 2 você pode escolher escrever um artigo para uma revista ou site. Um artigo precisa de um título e fala com o leitor.",
+    "O título é curto e chama atenção: The best way to relax / Why I love cooking.",
+    "Abra com uma pergunta ao leitor ou uma frase interessante: Have you ever tried ...? Do you know how to ...?",
+    "Fale com 'you': You can ..., If you want to ..., Why don't you ...?",
+    "Um artigo é menos formal que uma carta, mas ainda tem frases organizadas em parágrafos curtos."
+   ],
+   "vocab": [
+    {
+     "en": "article",
+     "pt": "artigo"
+    },
+    {
+     "en": "title",
+     "pt": "título"
+    },
+    {
+     "en": "reader",
+     "pt": "leitor"
+    },
+    {
+     "en": "magazine",
+     "pt": "revista"
+    },
+    {
+     "en": "to catch attention",
+     "pt": "chamar atenção"
+    },
+    {
+     "en": "have you ever ...?",
+     "pt": "você já ...?"
+    },
+    {
+     "en": "topic",
+     "pt": "assunto"
+    }
+   ],
+   "material": {
+    "tarefa": "You see this notice on an English-language website:\nArticles wanted: My favourite way to relax\nDo you have a special way to relax after a busy day? Write an article about it. Tell us what you do and why it helps. Write your article in about 90-120 words.",
+    "genero": "article",
+    "min": 90,
+    "max": 120,
+    "modelo": "My favourite way to relax\nHave you ever tried walking in the park without your phone? It is my favourite way to relax after a long day at work.\nI go to the same park every afternoon. I take a slow walk around the lake and look at the trees and the birds. Nobody calls me, so my mind can rest.\nIt helps me because fresh air makes me feel calm. Also, moving my body stops me from thinking about my problems.\nIf you are tired or worried, why don't you try it? Just thirty minutes can change your whole day. You might be surprised at how good you feel!",
+    "checklist": [
+     "Dei um título ao artigo?",
+     "Comecei com uma pergunta ou frase que fala com o leitor?",
+     "Usei you / why don't you / if you para me dirigir ao leitor?",
+     "Escrevi entre 90 e 120 palavras com o tema pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which title is best for an article about relaxing?",
+     "op": [
+      "Relaxing.",
+      "Dear editor,",
+      "Five easy ways to forget a bad day",
+      "Hello my name is Pedro"
+     ],
+     "r": 2,
+     "exp": "Um bom título é curto e desperta curiosidade. 'Dear editor' é uma carta."
+    },
+    {
+     "t": "gap",
+     "q": "___ you ever tried cooking with your family?",
+     "resp": [
+      "have"
+     ],
+     "exp": "Have you ever + particípio: pergunta sobre experiência na vida."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Have you ever tried walking in the park without your phone?",
+     "exp": "'Ever tried' soa como 'évertraid'. Suba a voz no final da pergunta."
+    },
+    {
+     "t": "mc",
+     "q": "Which opening sentence speaks to the reader?",
+     "op": [
+      "I am going to write about relaxing.",
+      "Do you know a quick way to forget a stressful day?",
+      "This article is about relaxing.",
+      "Relaxing is important for people."
+     ],
+     "r": 1,
+     "exp": "A pergunta direta (Do you know...?) chama o leitor para dentro do texto."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "If",
+      "you",
+      "feel",
+      "stressed,",
+      "why",
+      "don't",
+      "you",
+      "go",
+      "for",
+      "a",
+      "walk?"
+     ],
+     "resp": "If you feel stressed, why don't you go for a walk?",
+     "exp": "If + presente, why don't you + verbo: dica direta ao leitor."
+    },
+    {
+     "t": "gap",
+     "q": "It ___ me relax because the music is so calm. (helps)",
+     "resp": [
+      "helps"
+     ],
+     "exp": "Verbo help na terceira pessoa: it helps. Depois vem me relax sem to."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Convença um amigo a tentar sua atividade favorita para relaxar.",
+     "frase": "Your friend says: 'I'm so stressed. What do you do to relax?'",
+     "modelo": "I usually go for a walk in the park. Why don't you try it? It really helps.",
+     "min": 11,
+     "chave": [
+      "walk",
+      "music",
+      "read",
+      "relax",
+      "try",
+      "why don't",
+      "helps",
+      "calm"
+     ],
+     "exp": "Use Why don't you ...? ou If you ... para falar com a pessoa."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is NOT suitable for an article for teenagers?",
+     "op": [
+      "You'll love it!",
+      "Have you ever tried it?",
+      "Dear Sir or Madam, I wish to inform you.",
+      "Why not give it a go?"
+     ],
+     "r": 2,
+     "exp": "O artigo é para leitores comuns, num tom amigável. A carta formal soaria estranha."
+    },
+    {
+     "t": "gap",
+     "q": "If you are worried, ___ don't you listen to some music?",
+     "resp": [
+      "why"
+     ],
+     "exp": "Why don't you ...? sugere algo ao leitor."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Writing an article: opinions and recommendations",
+   "objetivo": "Dar opinião, exemplos e uma recomendação final num artigo.",
+   "foco": "Article body: giving reasons, examples, recommending, closing line",
+   "explicacao": [
+    "No corpo do artigo dê sua opinião e explique: I think ... because ... For example, ... Another reason is ...",
+    "Para recomendar: I'd recommend ...ing, You should try ..., It's well worth visiting.",
+    "Comparação simples ajuda: It is cheaper / more interesting / the best ... I've ever seen.",
+    "Termine com uma frase que deixa o leitor pensando: So why not give it a try?",
+    "O artigo tem 3 partes: abertura (pergunta), meio (opinião e exemplo), final (recomendação)."
+   ],
+   "vocab": [
+    {
+     "en": "for example",
+     "pt": "por exemplo"
+    },
+    {
+     "en": "I'd recommend",
+     "pt": "eu recomendaria"
+    },
+    {
+     "en": "well worth ...ing",
+     "pt": "vale muito a pena ..."
+    },
+    {
+     "en": "another reason",
+     "pt": "outro motivo"
+    },
+    {
+     "en": "one of the best ...",
+     "pt": "um dos melhores ..."
+    },
+    {
+     "en": "in conclusion",
+     "pt": "para concluir"
+    },
+    {
+     "en": "give it a try",
+     "pt": "experimente"
+    }
+   ],
+   "material": {
+    "tarefa": "You see this notice on an English-language website:\nArticles wanted: A place worth visiting in my country\nWhich place do you think visitors should see in your country? Write an article saying where it is, what you can do there and why you recommend it. Write about 90-120 words.",
+    "genero": "article",
+    "min": 90,
+    "max": 120,
+    "modelo": "A place worth visiting\nHave you ever seen a beach with water as clear as glass? Then Fernando de Noronha is the place for you.\nThis group of islands is in the north-east of Brazil. You can swim with turtles, walk along white beaches and watch beautiful sunsets. For example, the Sancho Bay is often called the best beach in the world.\nAnother reason to go is that the island protects nature, so it is quiet and clean.\nIt is expensive, but I'd recommend saving money for it. In my opinion, it is one of the most beautiful places on Earth. So why not give it a try?",
+    "checklist": [
+     "Dei um título e comecei com uma pergunta?",
+     "Dei minha opinião com reason + example?",
+     "Terminei com uma recomendação ou frase final?",
+     "Escrevi entre 90 e 120 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is a recommendation?",
+     "op": [
+      "I'd recommend visiting in the spring.",
+      "I visited last spring.",
+      "The town is in the north.",
+      "It has 5,000 people."
+     ],
+     "r": 0,
+     "exp": "I'd recommend + -ing é uma recomendação direta."
+    },
+    {
+     "t": "gap",
+     "q": "The museum is well worth ___. (visit)",
+     "resp": [
+      "visiting"
+     ],
+     "exp": "Well worth + verbo com -ing: vale muito a pena visitar."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "In my opinion, it is one of the most beautiful places in the world.",
+     "exp": "'Beautiful' = 'biútiful'. 'World' = 'uérld', não 'uórd'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence gives a good example?",
+     "op": [
+      "For example, you can swim with turtles in the bay.",
+      "For example I like it.",
+      "Example is turtles.",
+      "Examples are nice."
+     ],
+     "r": 0,
+     "exp": "For example + ideia concreta e completa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It",
+      "is",
+      "one",
+      "of",
+      "the",
+      "best",
+      "beaches",
+      "I",
+      "have",
+      "ever",
+      "seen."
+     ],
+     "resp": "It is one of the best beaches I have ever seen.",
+     "exp": "One of the best + plural. Present perfect: I have ever seen."
+    },
+    {
+     "t": "gap",
+     "q": "This is the ___ interesting museum in the city. (most / more)",
+     "resp": [
+      "most"
+     ],
+     "exp": "Superlativo de adjetivos longos: the most interesting."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Recomende um lugar da sua cidade e diga uma razão.",
+     "frase": "A visitor asks: 'Where should I go in your town?'",
+     "modelo": "I'd recommend the old market. It's cheap and you can try delicious local food.",
+     "min": 9,
+     "chave": [
+      "recommend",
+      "market",
+      "park",
+      "museum",
+      "beach",
+      "because",
+      "should",
+      "cheap"
+     ],
+     "exp": "Use I'd recommend + nome ou -ing."
+    },
+    {
+     "t": "mc",
+     "q": "Which closing line is best for an article?",
+     "op": [
+      "That is all. Bye.",
+      "So why not give it a try? You won't be disappointed!",
+      "I finished the article.",
+      "The end of the article."
+     ],
+     "r": 1,
+     "exp": "Um fecho com convite ao leitor (So why not ...?) é natural em artigos."
+    },
+    {
+     "t": "gap",
+     "q": "It's expensive, ___ it is definitely worth it. (contrast)",
+     "resp": [
+      "but",
+      "yet"
+     ],
+     "exp": "But (ou yet) liga a ideia negativa (caro) à positiva (vale a pena), na mesma frase."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Typical mistakes of Brazilian writers",
+   "objetivo": "Reconhecer e corrigir os erros mais comuns de estudantes brasileiros ao escrever.",
+   "foco": "Common errors: false friends, prepositions, subject-verb agreement, word order",
+   "explicacao": [
+    "Falsos amigos: actually = na verdade (não atualmente); pretend = fingir (não pretender); push = empurrar; library = biblioteca; parents = pais.",
+    "Idade e estado: I am 15 years old (não I have 15 years). Também: I'm agree → I agree; It depends ON; married TO; interested IN; good AT.",
+    "Sujeito sempre presente: It is raining (não Is raining). People ARE (plural). Information e advice não têm plural: some information.",
+    "Verbos como make/do: do homework, make a mistake, make a decision, do exercise.",
+    "Ordem: adjetivo antes do nome (a red car); advérbio de frequência antes do verbo (I always study)."
+   ],
+   "vocab": [
+    {
+     "en": "actually",
+     "pt": "na verdade"
+    },
+    {
+     "en": "to pretend",
+     "pt": "fingir"
+    },
+    {
+     "en": "information",
+     "pt": "informação (incontável)"
+    },
+    {
+     "en": "to depend on",
+     "pt": "depender de"
+    },
+    {
+     "en": "to be interested in",
+     "pt": "ter interesse em"
+    },
+    {
+     "en": "to make a mistake",
+     "pt": "cometer um erro"
+    },
+    {
+     "en": "to do homework",
+     "pt": "fazer lição de casa"
+    }
+   ],
+   "material": {
+    "tarefa": "Read Alice's email and write a reply, checking your grammar carefully.\nAlice: 'Hi! I'm new to the school and a bit worried about my English. What are you studying at the moment? Could you give me some advice about learning English?'\nNotes: [Say what you are studying] [Give advice] [Say what you are interested in] [Invite Alice to your house]\nWrite your email in 90-120 words.",
+    "genero": "email",
+    "min": 90,
+    "max": 120,
+    "modelo": "Hi Alice,\nThanks for your email. Don't worry about your English! Actually, many students feel the same at the beginning.\nI'm studying English and history this term. My advice is to read a little every day and to listen to songs in English. It's also important to make mistakes, because that's how we learn.\nI'm interested in music, and I play the guitar in a small band. I'm quite good at it, but I have to practise a lot.\nWould you like to come to my house on Saturday? We could do our homework together and have lunch. My parents would love to meet you.\nBest wishes,\nBianca",
+    "checklist": [
+     "Conferi se todas as frases têm sujeito (It is, There is)?",
+     "Verifiquei preposições (interested in, good at, depend on)?",
+     "Cuidei de information/advice (sem plural) e de people (plural)?",
+     "Escrevi entre 90 e 120 palavras e revisei no fim?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I have 16 years old.",
+      "I am 16 years old.",
+      "I have 16 years.",
+      "I am 16 years."
+     ],
+     "r": 1,
+     "exp": "Em inglês idade usa be: I am 16 (years old). Have não é usado."
+    },
+    {
+     "t": "gap",
+     "q": "I'm very interested ___ photography and I'm good at drawing too.",
+     "resp": [
+      "in"
+     ],
+     "exp": "Interested IN. Good AT. Preposições fixas."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Actually, I'm interested in music, and my parents are very supportive.",
+     "exp": "Actually = 'ákchuali' (na verdade). 'Parents' = 'pérents', não 'parentes'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence has a false-friend mistake?",
+     "op": [
+      "I'm going to pretend a house next year.",
+      "I'm going to buy a house next year.",
+      "I'm going to rent a house.",
+      "I'm going to sell a house."
+     ],
+     "r": 0,
+     "exp": "Pretend = fingir. Para 'pretender' diga intend to / plan to / want to."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "need",
+      "some",
+      "advice",
+      "about",
+      "my",
+      "English",
+      "homework."
+     ],
+     "resp": "I need some advice about my English homework.",
+     "exp": "Advice é incontável: some advice, nunca advices. Homework também não tem plural."
+    },
+    {
+     "t": "gap",
+     "q": "___ raining today, so we can't have the picnic. (Every English sentence needs a subject.)",
+     "resp": [
+      "it's",
+      "it is"
+     ],
+     "exp": "Em inglês toda frase precisa de sujeito: It is raining. Em português dizemos só 'Está chovendo'."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Corrija e responda: 'I am agree that students should do more exercise.' Diga se concorda e por quê.",
+     "frase": "Do you agree that students should do more exercise?",
+     "modelo": "Yes, I agree. Exercise is good for our health, and it helps us study better.",
+     "min": 10,
+     "chave": [
+      "agree",
+      "exercise",
+      "health",
+      "study",
+      "yes",
+      "no",
+      "good",
+      "think"
+     ],
+     "exp": "Diga I agree (sem am). Not I am agree."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "The informations are on the website.",
+      "The information is on the website.",
+      "The information are on the website.",
+      "The informations is on the website."
+     ],
+     "r": 1,
+     "exp": "Information é incontável e usa is: The information is..."
+    },
+    {
+     "t": "gap",
+     "q": "I made a big ___ in the test. I did my best, but I got it wrong. (mistake / error)",
+     "resp": [
+      "mistake",
+      "error"
+     ],
+     "exp": "Make a mistake = cometer um erro. Do a mistake não existe."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Mock exam: PET Writing",
+   "objetivo": "Fazer um simulado completo de Writing do PET: Part 1 (e-mail obrigatório) e conhecer as opções do Part 2.",
+   "foco": "B1 Preliminary Writing: Part 1 email with four notes; Part 2 article or story",
+   "explicacao": [
+    "Part 1: e-mail obrigatório de cerca de 100 palavras, respondendo a todas as quatro notas. Part 2: escolha UMA entre artigo e história (cerca de 100 palavras).",
+    "Antes de escrever, leia o e-mail, sublinhe as quatro notas e faça um plano de 1 minuto.",
+    "Escreva em parágrafos curtos, com conectivos (because, however, then) e tempos corretos.",
+    "Reserve 3 minutos no fim para revisar: palavras faltando, sujeito, preposição, ortografia.",
+    "No Part 2, se for história, use a frase dada no começo; se for artigo, use título, pergunta ao leitor e recomendação."
+   ],
+   "vocab": [
+    {
+     "en": "to revise",
+     "pt": "revisar"
+    },
+    {
+     "en": "word count",
+     "pt": "contagem de palavras"
+    },
+    {
+     "en": "content points",
+     "pt": "pontos de conteúdo"
+    },
+    {
+     "en": "to plan",
+     "pt": "planejar"
+    },
+    {
+     "en": "to sound natural",
+     "pt": "soar natural"
+    },
+    {
+     "en": "range of language",
+     "pt": "variedade de linguagem"
+    },
+    {
+     "en": "accuracy",
+     "pt": "precisão, correção"
+    }
+   ],
+   "material": {
+    "tarefa": "PART 1. You must answer this question. Write your answer in about 90-120 words.\nRead this email from your English friend Chris and the notes you have made.\nChris: 'Hi! Guess what? I'm coming to your city next month for four days! I'd love to see your favourite places. Where should we go? And what's the weather going to be like? I'm also looking for a hotel. Do you know a good one? Thanks!'\nNotes: [Say you are happy] [Suggest two places] [Describe the weather] [Recommend a hotel]\nWrite your email to Chris.",
+    "genero": "email",
+    "min": 90,
+    "max": 120,
+    "modelo": "Hi Chris,\nThat's fantastic news! I'm so happy you're coming. I can't wait to show you my city.\nI think we should visit the old fort and the botanical garden. The fort has an amazing view of the sea, and the garden is quiet and full of colourful flowers.\nAs for the weather, it's usually warm and sunny next month, but it sometimes rains in the evening. Bring a light jacket and an umbrella.\nI'd recommend the Hotel Bela Vista. It's clean and cheap, and it's near the metro. My cousin worked there, so I can ask for a discount.\nLet me know when you arrive!\nBest wishes,\nMarcelo",
+    "checklist": [
+     "Respondi às quatro notas, uma por uma?",
+     "Usei parágrafos curtos e conectivos variados?",
+     "Cuidei dos tempos verbais, preposições e do sujeito em todas as frases?",
+     "Escrevi entre 90 e 120 palavras e revisei no fim?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "PART 1: Chris asks 'Where should we go?' Which reply is the best way to cover the note [Suggest two places]?",
+     "op": [
+      "Go anywhere.",
+      "I think we should visit the old fort and the botanical garden.",
+      "My city is big.",
+      "There are places."
+     ],
+     "r": 1,
+     "exp": "A resposta precisa nomear dois lugares. Só a segunda faz isso."
+    },
+    {
+     "t": "gap",
+     "q": "As ___ the weather, it is usually sunny in October.",
+     "resp": [
+      "for"
+     ],
+     "exp": "As for = quanto a. Útil para tratar de uma nota do e-mail."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "I can't wait to show you my city. I think you will love it.",
+     "exp": "Una 'can't wait'. 'Show you' = 'chôu iú'. Frase com ritmo calmo."
+    },
+    {
+     "t": "mc",
+     "q": "Chris wrote: 'I'm also looking for a hotel. Do you know a good one?' Which sentence answers the question well?",
+     "op": [
+      "I'd recommend the Hotel Bela Vista because it is clean, cheap and near the metro.",
+      "Hotels are expensive.",
+      "I do not sleep in hotels.",
+      "Yes."
+     ],
+     "r": 0,
+     "exp": "A pergunta pede uma recomendação com detalhes. Só a primeira recomenda e justifica."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It",
+      "is",
+      "usually",
+      "warm",
+      "and",
+      "sunny,",
+      "but",
+      "it",
+      "sometimes",
+      "rains",
+      "in",
+      "the",
+      "evening."
+     ],
+     "resp": "It is usually warm and sunny, but it sometimes rains in the evening.",
+     "exp": "But liga calor e chuva. Sometimes fica antes do verbo; in the evening fica no fim."
+    },
+    {
+     "t": "gap",
+     "q": "You should bring a ___ jacket and an umbrella. (light / lighter)",
+     "resp": [
+      "light"
+     ],
+     "exp": "Light jacket = casaco leve. Adjetivo antes do nome."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda a Chris em duas frases: diga que está feliz e sugira um lugar para visitar.",
+     "frase": "Chris says: 'I'm coming to your city next month! Where should we go?'",
+     "modelo": "I'm so happy you're coming! I think we should visit the old fort because it has an amazing view.",
+     "min": 13,
+     "chave": [
+      "happy",
+      "visit",
+      "fort",
+      "museum",
+      "park",
+      "beach",
+      "think",
+      "should"
+     ],
+     "exp": "Use I'm so happy ... e I think we should ..."
+    },
+    {
+     "t": "mc",
+     "q": "PART 2 (choose one): 'Write an article: My favourite season.' Which opening is best?",
+     "op": [
+      "Summer. It is hot.",
+      "Do you prefer sunny days or snowy mornings? For me, autumn is perfect.",
+      "Dear Sir, I am writing about seasons.",
+      "I will talk about the seasons of the year."
+     ],
+     "r": 1,
+     "exp": "Artigo: pergunta ao leitor + opinião própria logo na abertura. A carta formal não combina."
+    },
+    {
+     "t": "gap",
+     "q": "PART 2 story: 'The phone rang late at night.' The next sentence: 'I ___ sleeping, so I almost didn't hear it.' (be)",
+     "resp": [
+      "was"
+     ],
+     "exp": "Past continuous para o cenário: I was sleeping."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "When",
+      "I",
+      "picked",
+      "it",
+      "up,",
+      "nobody",
+      "was",
+      "there."
+     ],
+     "resp": "When I picked it up, nobody was there.",
+     "exp": "When + past simple, depois o resultado. Frase curta e dramática para uma história.",
+     "alt": [
+      "Nobody was there when I picked it up."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Which problem is MOST likely to lose marks in the PET Writing?",
+     "op": [
+      "Writing about three of the four notes",
+      "Using a title in an email",
+      "Writing 100 words",
+      "Using 'however'"
+     ],
+     "r": 0,
+     "exp": "Esquecer uma das notas reduz a nota de conteúdo. Todas as quatro devem ser cobertas."
+    },
+    {
+     "t": "gap",
+     "q": "After writing, always ___ your text for missing words and spelling mistakes. (check)",
+     "resp": [
+      "check",
+      "revise",
+      "read"
+     ],
+     "exp": "Revisar no fim ajuda a corrigir erros simples de sujeito, ortografia e preposição."
+    }
+   ]
+  }
+ ]
+}

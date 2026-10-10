@@ -1,0 +1,2398 @@
+{
+ "nivel": "B2",
+ "skill": "writing",
+ "exame": "B2 First (FCE)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Essay structure: introduction, body, conclusion",
+   "objetivo": "Organizar um essay em quatro parágrafos claros.",
+   "foco": "Essay layout: introduction, two body paragraphs, conclusion",
+   "explicacao": [
+    "No Part 1 do B2 First você escreve um essay de 140–190 palavras. Ele precisa de começo, meio e fim.",
+    "Parágrafo 1 (introdução): apresente o tema com suas palavras. Parágrafos 2 e 3: uma ideia em cada, com uma razão ou exemplo. Parágrafo 4 (conclusão): diga sua opinião final.",
+    "Não copie a pergunta da prova. Reformule: Many people believe that... / It is often said that...",
+    "Um essay é um texto formal: sem abreviações como don't e sem gírias."
+   ],
+   "vocab": [
+    {
+     "en": "introduction",
+     "pt": "introdução"
+    },
+    {
+     "en": "to point out",
+     "pt": "apontar, destacar"
+    },
+    {
+     "en": "on the one hand",
+     "pt": "por um lado"
+    },
+    {
+     "en": "to conclude",
+     "pt": "para concluir"
+    },
+    {
+     "en": "paragraph",
+     "pt": "parágrafo"
+    },
+    {
+     "en": "to put forward",
+     "pt": "apresentar (um argumento)"
+    },
+    {
+     "en": "topic",
+     "pt": "tema, assunto"
+    }
+   ],
+   "material": {
+    "tarefa": "Your class has been discussing whether students should do volunteer work. Write an essay giving your opinion on the following question: Should schools make volunteer work compulsory? Notes: Write about: 1. the benefits for the community 2. the effect on students' free time 3. (your own idea). Write your essay in 120-160 words.",
+    "genero": "essay",
+    "min": 120,
+    "max": 160,
+    "modelo": "Nowadays, many people argue that schools should require students to do volunteer work. This essay will consider both sides of the question.\n\nFirstly, volunteering clearly helps the community. Students can clean parks, help older people or work in food banks, and these activities solve real problems. In addition, young people learn to be responsible and to care about others.\n\nOn the other hand, teenagers already have a lot of homework and exams. If volunteering is compulsory, they may have very little free time to rest, practise sports or see their friends. Another important point is that people who are forced to help often do not enjoy it.\n\nIn conclusion, I believe volunteering is valuable, but it should be encouraged rather than obligatory. Schools could offer rewards and flexible hours instead.",
+    "checklist": [
+     "Tenho introdução, dois parágrafos de argumentos e conclusão?",
+     "Respondi às duas ideias das notas e acrescentei uma ideia minha?",
+     "Usei linguagem formal, sem abreviações (don't, can't)?",
+     "Contei as palavras (entre 120 e 160)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is the best opening for an essay on 'Should students wear school uniforms?'",
+     "op": [
+      "Uniforms are very boring, I hate them.",
+      "School uniforms are a topic that divides opinion among parents and teenagers.",
+      "I am going to write about uniforms now.",
+      "Should students wear school uniforms? That is the question."
+     ],
+     "r": 1,
+     "exp": "A melhor abertura apresenta o tema de forma neutra e formal. As outras são informais, anunciam o texto de forma fraca ou só copiam a pergunta."
+    },
+    {
+     "t": "gap",
+     "q": "Many people believe ___ homework should be reduced.",
+     "resp": [
+      "that"
+     ],
+     "exp": "Depois de believe usamos that para introduzir a opinião."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta a frase de abertura do essay.",
+     "frase": "Nowadays, many people argue that cities need more green spaces.",
+     "exp": "Pronuncie 'argue' como /ˈɑːɡjuː/ e 'cities' com o som /s/ no começo."
+    },
+    {
+     "t": "mc",
+     "q": "What should the final paragraph of an essay do?",
+     "op": [
+      "Introduce a completely new argument",
+      "Summarise the main points and give a final opinion",
+      "Repeat the first paragraph word for word",
+      "Ask the examiner a question"
+     ],
+     "r": 1,
+     "exp": "A conclusão resume as ideias e dá a opinião final. Ideias novas ou cópias enfraquecem o texto."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "In",
+      "conclusion,",
+      "I",
+      "believe",
+      "that",
+      "exercise",
+      "should",
+      "be",
+      "compulsory."
+     ],
+     "resp": "In conclusion, I believe that exercise should be compulsory.",
+     "exp": "A frase de conclusão começa com In conclusion, e depois traz a opinião com I believe that."
+    },
+    {
+     "t": "gap",
+     "q": "___ the one hand, technology saves time; on the other hand, it can be distracting.",
+     "resp": [
+      "on"
+     ],
+     "exp": "On the one hand... on the other hand... mostra dois lados de um assunto."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: dê sua opinião e uma razão (2 frases).",
+     "frase": "Do you think students should have longer holidays?",
+     "modelo": "In my opinion, students should have longer holidays because they need time to rest. In addition, they can learn new skills outside school.",
+     "min": 14,
+     "chave": [
+      "opinion",
+      "think",
+      "believe",
+      "because",
+      "holidays"
+     ],
+     "exp": "Use In my opinion / I believe e depois because para dar a razão."
+    },
+    {
+     "t": "mc",
+     "q": "A student wrote: 'I think that don't is a bad idea because it's boring.' What is the main problem in an essay?",
+     "op": [
+      "It is too long",
+      "The tone is too informal and the reason is weak",
+      "It has no verb",
+      "It uses a full stop"
+     ],
+     "r": 1,
+     "exp": "O essay pede tom formal e razões desenvolvidas. 'Boring' e abreviações deixam o texto informal e fraco."
+    },
+    {
+     "t": "gap",
+     "q": "This essay will ___ both sides of the argument.",
+     "resp": [
+      "consider",
+      "discuss",
+      "examine",
+      "explore"
+     ],
+     "exp": "O verbo vem depois de will; consider/discuss/examine são típicos de introdução formal."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Linking words: addition and contrast",
+   "objetivo": "Ligar ideias com conectivos de adição e de contraste.",
+   "foco": "Linkers: moreover, in addition, however, although, whereas",
+   "explicacao": [
+    "Conectivos ligam frases e deixam o texto fluido. Para somar ideias: moreover, in addition, furthermore, also.",
+    "Para contrastar: however, but, although, even though, whereas, while.",
+    "Atenção: although/whereas ficam no meio da frase e pedem sujeito + verbo: Although it was cheap, it was poor quality. However começa a frase e leva vírgula: It was cheap. However, it was poor quality.",
+    "Depois de despite / in spite of vem substantivo ou -ing, não uma oração: Despite the rain, we went out."
+   ],
+   "vocab": [
+    {
+     "en": "moreover",
+     "pt": "além disso (formal)"
+    },
+    {
+     "en": "however",
+     "pt": "no entanto"
+    },
+    {
+     "en": "although",
+     "pt": "embora"
+    },
+    {
+     "en": "whereas",
+     "pt": "enquanto (contraste)"
+    },
+    {
+     "en": "despite",
+     "pt": "apesar de"
+    },
+    {
+     "en": "furthermore",
+     "pt": "ademais"
+    },
+    {
+     "en": "in addition",
+     "pt": "além disso"
+    }
+   ],
+   "material": {
+    "tarefa": "You have discussed in class whether people should work from home. Write an essay giving your opinion. Notes: 1. flexibility 2. contact with colleagues 3. (your own idea). Write 120-160 words using at least four linking words.",
+    "genero": "essay",
+    "min": 120,
+    "max": 160,
+    "modelo": "Working from home has become increasingly common, and opinions about it are divided.\n\nOn the one hand, it offers great flexibility. Employees can organise their day, avoid long journeys and spend more time with their families. Moreover, companies often save money on office space.\n\nHowever, working at home also has disadvantages. Although some people enjoy the silence, many feel lonely without contact with colleagues. Ideas are usually shared more easily in a meeting room, whereas online calls can be tiring and impersonal.\n\nAnother point is that the boundary between work and rest disappears, so people may work longer hours than before.\n\nIn conclusion, I believe the best solution is a mixture: two or three days at home and the rest in the office. This way, workers could enjoy the benefits of both.",
+    "checklist": [
+     "Usei pelo menos quatro conectivos diferentes?",
+     "Coloquei vírgula depois de However e Moreover no início da frase?",
+     "Usei although/whereas com sujeito + verbo?",
+     "Tenho 120–160 palavras e quatro parágrafos?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "Despite it was raining, we played football.",
+      "Although it was raining, we played football.",
+      "However it was raining, we played football.",
+      "Whereas it was raining, we played football."
+     ],
+     "r": 1,
+     "exp": "Although pede uma oração completa (it was raining). Despite pede substantivo/-ing. However começa uma nova frase."
+    },
+    {
+     "t": "gap",
+     "q": "The film was long. ___, it was never boring.",
+     "resp": [
+      "however",
+      "nevertheless"
+     ],
+     "exp": "Para contrastar com a frase anterior, usamos However, (ou Nevertheless,) com vírgula."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita em voz alta, com pausa depois da vírgula.",
+     "frase": "Moreover, public transport is cheaper than owning a car.",
+     "exp": "Faça uma pequena pausa depois de 'Moreover,'. Acento em MOREover."
+    },
+    {
+     "t": "mc",
+     "q": "Which linker adds an extra reason to a list of advantages?",
+     "op": [
+      "whereas",
+      "in spite of",
+      "furthermore",
+      "although"
+     ],
+     "r": 2,
+     "exp": "Furthermore soma outra ideia. As outras opções expressam contraste."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Despite",
+      "the",
+      "high",
+      "prices,",
+      "many",
+      "tourists",
+      "visit",
+      "the",
+      "city."
+     ],
+     "resp": "Despite the high prices, many tourists visit the city.",
+     "exp": "Despite + substantivo (the high prices), depois vírgula e a oração principal.",
+     "alt": [
+      "Many tourists visit the city despite the high prices."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Despite ___ tired, she finished the report.",
+     "resp": [
+      "being",
+      "feeling"
+     ],
+     "exp": "Depois de despite usamos substantivo ou verbo com -ing: despite being tired."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Compare duas coisas usando whereas ou while (2 frases).",
+     "frase": "Compare living in a city and living in a village.",
+     "modelo": "Living in a city is exciting, whereas living in a village is much quieter. However, city life is more expensive.",
+     "min": 14,
+     "chave": [
+      "whereas",
+      "while",
+      "however",
+      "city",
+      "village"
+     ],
+     "exp": "Whereas liga dois contrastes na mesma frase; however abre a frase seguinte."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is punctuated correctly?",
+     "op": [
+      "Many students work part-time, but however they still get good marks.",
+      "Many students work part-time. However, they still get good marks.",
+      "Many students work part-time; but, they still get good marks.",
+      "Many students work part-time, although. They still get good marks."
+     ],
+     "r": 1,
+     "exp": "However no início de uma nova frase leva ponto antes e vírgula depois. Vírgula sozinha não separa duas frases."
+    },
+    {
+     "t": "gap",
+     "q": "Cars are convenient, ___ bicycles are cheaper and healthier.",
+     "resp": [
+      "whereas",
+      "while"
+     ],
+     "exp": "Whereas/while contrastam duas ideias paralelas dentro da mesma frase."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Topic sentences and developing an argument",
+   "objetivo": "Abrir cada parágrafo com uma ideia central e desenvolvê-la.",
+   "foco": "Topic sentence + explanation + example",
+   "explicacao": [
+    "Cada parágrafo de um essay tem uma ideia principal na primeira frase: a topic sentence. Ex.: One major advantage of online learning is flexibility.",
+    "Depois explique por quê e dê um exemplo: For example, students can watch lessons at any time.",
+    "Fórmula útil: ideia + razão + exemplo. Evite parágrafos de uma frase só.",
+    "Expressões para exemplo: for example, for instance, such as."
+   ],
+   "vocab": [
+    {
+     "en": "topic sentence",
+     "pt": "frase que abre o parágrafo"
+    },
+    {
+     "en": "advantage",
+     "pt": "vantagem"
+    },
+    {
+     "en": "drawback",
+     "pt": "desvantagem"
+    },
+    {
+     "en": "for instance",
+     "pt": "por exemplo"
+    },
+    {
+     "en": "such as",
+     "pt": "como, tal como"
+    },
+    {
+     "en": "as a result",
+     "pt": "como resultado"
+    },
+    {
+     "en": "to lead to",
+     "pt": "levar a"
+    }
+   ],
+   "material": {
+    "tarefa": "Your teacher has asked you to write an essay on this question: Is it better to study in a group or alone? Notes: 1. concentration 2. sharing ideas 3. (your own idea). Write 130-170 words. Begin each paragraph with a clear topic sentence.",
+    "genero": "essay",
+    "min": 130,
+    "max": 170,
+    "modelo": "Students often disagree about whether it is better to study alone or in a group.\n\nOne clear benefit of studying alone is better concentration. Without friends nearby, there are fewer interruptions, so a student can finish difficult tasks faster. For instance, learning irregular verbs requires silence and repetition.\n\nOn the other hand, group study makes it easier to share ideas. When someone does not understand a topic, another person can explain it in a different way. As a result, everyone learns more, and the explanations also help the person who gives them.\n\nA further factor is motivation. Studying with others can be more enjoyable, which encourages students to continue even when they feel tired.\n\nTo sum up, both methods have value. I would suggest studying alone to memorise and in a group to review and solve problems.",
+    "checklist": [
+     "Cada parágrafo começa com uma frase que resume a ideia?",
+     "Dei razão e exemplo para cada ideia?",
+     "Usei for example / for instance / such as?",
+     "Escrevi entre 130 e 170 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which is the best topic sentence for a paragraph about the cost of living in big cities?",
+     "op": [
+      "Big cities are big.",
+      "Another problem is that housing in big cities is extremely expensive.",
+      "I live in a city and I like it.",
+      "For example, a flat costs a lot."
+     ],
+     "r": 1,
+     "exp": "A topic sentence apresenta uma ideia clara do parágrafo. 'For example' sozinho é só um exemplo, sem ideia central."
+    },
+    {
+     "t": "gap",
+     "q": "Many cities have a lot of green areas, ___ as parks and gardens.",
+     "resp": [
+      "such"
+     ],
+     "exp": "such as introduz exemplos: green areas such as parks."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase que abre o parágrafo.",
+     "frase": "One major advantage of studying abroad is the chance to practise a language.",
+     "exp": "Acento em MAjor e ADvantage. 'Abroad' = /əˈbrɔːd/."
+    },
+    {
+     "t": "mc",
+     "q": "Read: 'Public libraries are important. They are important.' What is wrong?",
+     "op": [
+      "Nothing",
+      "The idea is repeated without a reason or example",
+      "The sentence is too formal",
+      "There is no verb"
+     ],
+     "r": 1,
+     "exp": "Repetir a ideia não a desenvolve. É preciso explicar por quê e dar exemplo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "As",
+      "a",
+      "result,",
+      "many",
+      "young",
+      "people",
+      "leave",
+      "their",
+      "villages."
+     ],
+     "resp": "As a result, many young people leave their villages.",
+     "exp": "As a result, + oração mostra consequência. Vírgula depois da expressão inicial."
+    },
+    {
+     "t": "gap",
+     "q": "Regular exercise can ___ to better sleep and more energy.",
+     "resp": [
+      "lead"
+     ],
+     "exp": "A estrutura é lead to + substantivo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê uma ideia e um exemplo sobre vantagens da internet (2 frases).",
+     "frase": "What is one advantage of the internet for students?",
+     "modelo": "One advantage of the internet is quick access to information. For example, students can find articles in a few seconds.",
+     "min": 14,
+     "chave": [
+      "advantage",
+      "internet",
+      "for example",
+      "information",
+      "access"
+     ],
+     "exp": "Estrutura: ideia + for example + exemplo concreto."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence correctly develops the idea 'Fast fashion harms the environment'?",
+     "op": [
+      "It is bad. It is very bad for nature.",
+      "This is because factories produce large amounts of waste and use a lot of water.",
+      "Fast fashion is cheap, and many shops sell it.",
+      "Clothes are important for everyone."
+     ],
+     "r": 1,
+     "exp": "This is because... dá a razão e desenvolve a ideia. As outras não explicam o dano."
+    },
+    {
+     "t": "gap",
+     "q": "Young drivers have more accidents. For ___, in 2022 they caused a third of crashes.",
+     "resp": [
+      "instance",
+      "example"
+     ],
+     "exp": "For instance/for example introduz um caso concreto."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Formal and informal register",
+   "objetivo": "Distinguir e escolher o registro formal ou informal conforme a tarefa.",
+   "foco": "Register: contractions, phrasal verbs, vocabulary choice",
+   "explicacao": [
+    "Registro é o grau de formalidade. Essay, report, carta formal e article sério pedem registro formal ou neutro.",
+    "Formal: sem contractions (do not), sem gírias, verbos mais precisos (obtain, request, discuss). Informal: contractions, phrasal verbs, expressões como Guess what! / loads of.",
+    "Compare: I'm writing to ask for information (neutro) / I am writing to enquire about... (formal) / I just wanted to ask about... (informal).",
+    "Mantenha o mesmo registro do começo ao fim do texto."
+   ],
+   "vocab": [
+    {
+     "en": "to enquire",
+     "pt": "perguntar, solicitar informações"
+    },
+    {
+     "en": "to obtain",
+     "pt": "obter"
+    },
+    {
+     "en": "to require",
+     "pt": "exigir, precisar"
+    },
+    {
+     "en": "a great deal of",
+     "pt": "uma grande quantidade de"
+    },
+    {
+     "en": "loads of",
+     "pt": "um monte de (informal)"
+    },
+    {
+     "en": "to get in touch",
+     "pt": "entrar em contato"
+    },
+    {
+     "en": "appropriate",
+     "pt": "adequado"
+    }
+   ],
+   "material": {
+    "tarefa": "You have seen this announcement: 'Local charity needs volunteers for a weekend event.' Write an email to your English friend, Sam, telling him about it and inviting him (informal). Then rewrite the main request as a formal sentence for the charity. Write 100-140 words in total.",
+    "genero": "email",
+    "min": 100,
+    "max": 140,
+    "modelo": "Hi Sam,\n\nGuess what? There is a charity event in town this weekend and they need volunteers! I'm going to help with the food stalls on Saturday, and it should be great fun. Would you like to come with me? We could meet at ten o'clock outside the library.\n\nLet me know soon, because they need to know numbers by Friday.\n\nSpeak soon,\nRafael\n\nFormal version: I am writing to enquire whether any volunteer positions are still available for the event on Saturday, and I would be grateful if you could send me further details.",
+    "checklist": [
+     "O e-mail informal tem tom amigável e contractions?",
+     "A frase formal não tem contractions nem gírias?",
+     "Cumpri as duas partes da tarefa?",
+     "Escrevi entre 100 e 140 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is the most formal?",
+     "op": [
+      "I'm writing to ask about the job.",
+      "I am writing to enquire about the position.",
+      "Just wondering about the job thing.",
+      "Me again, about that job!"
+     ],
+     "r": 1,
+     "exp": "I am writing to enquire about é típica de carta formal. As outras são neutras ou informais."
+    },
+    {
+     "t": "gap",
+     "q": "We do ___ have enough information to make a decision. (formal, no contraction)",
+     "resp": [
+      "not"
+     ],
+     "exp": "Em registro formal escrevemos do not, não don't."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase formal.",
+     "frase": "I would be grateful if you could send me further details.",
+     "exp": "Fale 'would' fraco: /wəd/. Acento em GRATEful e DEtails."
+    },
+    {
+     "t": "mc",
+     "q": "Which pair is correctly matched (informal – formal)?",
+     "op": [
+      "get in touch with – contact",
+      "a bit – extremely",
+      "kids – parents",
+      "loads of – a few"
+     ],
+     "r": 0,
+     "exp": "Get in touch with e contact têm o mesmo sentido, um informal e um mais formal. As outras trocas mudam o sentido."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "would",
+      "like",
+      "to",
+      "request",
+      "some",
+      "further",
+      "information."
+     ],
+     "resp": "I would like to request some further information.",
+     "exp": "Would like to é uma forma polida de pedir algo em textos formais."
+    },
+    {
+     "t": "gap",
+     "q": "Could you ___ me know your answer by Friday? (informal)",
+     "resp": [
+      "let"
+     ],
+     "exp": "Let me know = avise-me. É informal e comum em e-mails entre amigos."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale em inglês convidando um amigo para uma festa, de modo informal.",
+     "frase": "Invite your friend to your birthday party next Saturday.",
+     "modelo": "Hi! I'm having a party next Saturday at my place. It would be great if you could come. Let me know soon!",
+     "min": 14,
+     "chave": [
+      "party",
+      "come",
+      "invite",
+      "Saturday",
+      "birthday"
+     ],
+     "exp": "Registro informal: contractions e expressões simples como 'Let me know'."
+    },
+    {
+     "t": "mc",
+     "q": "In a formal letter, which is the best ending of a sentence about a problem?",
+     "op": [
+      "It was totally rubbish, mate.",
+      "I was extremely disappointed with the service.",
+      "The service sucked big time.",
+      "It was kind of a mess."
+     ],
+     "r": 1,
+     "exp": "Disappointed with é claro e educado. As outras são gírias ou vagas."
+    },
+    {
+     "t": "gap",
+     "q": "Dear Sir or Madam, I am ___ to apply for the post of receptionist.",
+     "resp": [
+      "writing"
+     ],
+     "exp": "I am writing to + verbo é a abertura padrão de carta formal."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Informal emails and letters to a friend",
+   "objetivo": "Escrever um e-mail informal que responde a todos os pontos da tarefa.",
+   "foco": "Informal letters: openings, reactions, questions, closings",
+   "explicacao": [
+    "Na Part 2 você pode ter que escrever um e-mail informal. Responda a todos os pontos da tarefa em parágrafos curtos.",
+    "Abertura: Thanks for your email. / It was great to hear from you. Reação: I'm so sorry to hear that... / That sounds amazing!",
+    "Use contractions, phrasal verbs e perguntas diretas: Why don't you come? Do you fancy going?",
+    "Fechamento: Write soon, / Hope to see you soon, / Take care, e seu nome."
+   ],
+   "vocab": [
+    {
+     "en": "It was great to hear from you",
+     "pt": "foi ótimo ter notícias suas"
+    },
+    {
+     "en": "That sounds amazing",
+     "pt": "isso parece incrível"
+    },
+    {
+     "en": "I'm so sorry to hear that",
+     "pt": "sinto muito saber disso"
+    },
+    {
+     "en": "Do you fancy ...?",
+     "pt": "você topa/quer ...? (britânico)"
+    },
+    {
+     "en": "Write soon",
+     "pt": "escreva logo"
+    },
+    {
+     "en": "Take care",
+     "pt": "se cuide"
+    },
+    {
+     "en": "by the way",
+     "pt": "a propósito"
+    }
+   ],
+   "material": {
+    "tarefa": "You have received an email from your English friend, Chris: 'I'm coming to your city for a week in July! What should I see? Can you recommend somewhere to stay? Shall we meet?' Write your reply to Chris in 120-160 words.",
+    "genero": "email",
+    "min": 120,
+    "max": 160,
+    "modelo": "Hi Chris,\n\nThanks for your email! It was great to hear from you, and I can't believe you're coming in July. That's wonderful news!\n\nThere is so much to see here. If I were you, I would start with the old town and the market, because they're beautiful and not too expensive. Do you fancy a boat trip, too? The weather is usually warm in July, so it should be lovely.\n\nAs for accommodation, I'd recommend a small hotel near the station. It's cheap and clean, and you'll be able to get around easily. By the way, my cousin runs a nice guesthouse if you prefer something quieter.\n\nOf course we must meet! Why don't you come to my place for dinner on your first evening? My mum is dying to meet you.\n\nWrite soon and tell me your dates.\n\nTake care,\nMarina",
+    "checklist": [
+     "Respondi às três perguntas do Chris (o que ver, onde ficar, encontro)?",
+     "Usei tom amigável, contractions e perguntas diretas?",
+     "Comecei com agradecimento e terminei com despedida informal?",
+     "Tenho entre 120 e 160 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Chris writes: 'I failed my driving test!' Which reply is the most natural?",
+     "op": [
+      "I congratulate you.",
+      "Oh no, I'm so sorry to hear that! Better luck next time.",
+      "That is an excellent result.",
+      "Please accept my condolences."
+     ],
+     "r": 1,
+     "exp": "A reação precisa combinar com a notícia e com o registro informal. Congratulate e condolences são exagerados ou errados."
+    },
+    {
+     "t": "gap",
+     "q": "It was great to ___ from you after so long.",
+     "resp": [
+      "hear"
+     ],
+     "exp": "hear from someone = ter notícias de alguém."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia com entonação animada.",
+     "frase": "That sounds amazing! Why don't you come and stay with us?",
+     "exp": "Suba a voz em 'amazing' e termine 'us' com entonação descendente."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence should NOT be in an informal email to a friend?",
+     "op": [
+      "Do you fancy going to the cinema?",
+      "I would be most obliged if you could reply promptly.",
+      "Guess what happened yesterday!",
+      "Anyway, I must go now."
+     ],
+     "r": 1,
+     "exp": "I would be most obliged é muito formal para um amigo. As outras são naturais."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "If",
+      "I",
+      "were",
+      "you,",
+      "I",
+      "would",
+      "visit",
+      "the",
+      "old",
+      "castle."
+     ],
+     "resp": "If I were you, I would visit the old castle.",
+     "exp": "Conselho com If I were you, I would + verbo."
+    },
+    {
+     "t": "gap",
+     "q": "Shall we ___ outside the cinema at seven?",
+     "resp": [
+      "meet"
+     ],
+     "exp": "Shall we + verbo base é uma sugestão: Shall we meet?"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê dois conselhos a um amigo estrangeiro que vai visitar sua cidade.",
+     "frase": "Your friend is visiting your city. What do you recommend?",
+     "modelo": "If I were you, I would visit the beach and the old market. You should also try the local food because it's delicious.",
+     "min": 16,
+     "chave": [
+      "recommend",
+      "visit",
+      "should",
+      "would",
+      "try"
+     ],
+     "exp": "Use If I were you, I would... e You should... para aconselhar."
+    },
+    {
+     "t": "mc",
+     "q": "A task asks you to 'explain why you cannot come and suggest another day'. Which reply covers BOTH points?",
+     "op": [
+      "I can't come, sorry. See you!",
+      "I'm afraid I can't come on Friday because I have an exam. How about Sunday instead?",
+      "Friday is a good day, and Sunday is better.",
+      "Sorry, I'm very busy these days."
+     ],
+     "r": 1,
+     "exp": "A resposta correta dá a razão (exam) e sugere outro dia (How about Sunday?). Nas outras falta uma parte."
+    },
+    {
+     "t": "gap",
+     "q": "I'm afraid I can't make it ___ I've got to work late.",
+     "resp": [
+      "because",
+      "as",
+      "since"
+     ],
+     "exp": "Because/as/since dão a razão. É uma desculpa educada e natural."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Formal letters and emails",
+   "objetivo": "Escrever uma carta ou e-mail formal com propósito claro e tom educado.",
+   "foco": "Formal letters: Dear Sir or Madam / Yours faithfully; purpose, details, request",
+   "explicacao": [
+    "Se você não sabe o nome da pessoa: Dear Sir or Madam, ... Yours faithfully,. Se sabe: Dear Ms Brown, ... Yours sincerely,.",
+    "Primeiro parágrafo: o motivo. I am writing to apply for / to complain about / to enquire about...",
+    "Depois, dê detalhes em parágrafos separados e termine com o que espera: I look forward to hearing from you. / I would appreciate a prompt reply.",
+    "Evite contractions e frases coloquiais. Use Could you possibly... / I would be grateful if..."
+   ],
+   "vocab": [
+    {
+     "en": "Yours faithfully",
+     "pt": "atenciosamente (sem nome do destinatário)"
+    },
+    {
+     "en": "Yours sincerely",
+     "pt": "atenciosamente (com nome)"
+    },
+    {
+     "en": "I am writing to apply for",
+     "pt": "escrevo para me candidatar a"
+    },
+    {
+     "en": "I look forward to hearing from you",
+     "pt": "aguardo o seu retorno"
+    },
+    {
+     "en": "to attach",
+     "pt": "anexar"
+    },
+    {
+     "en": "a refund",
+     "pt": "reembolso"
+    },
+    {
+     "en": "to apologise",
+     "pt": "pedir desculpas"
+    }
+   ],
+   "material": {
+    "tarefa": "You recently bought a language course online but you cannot access the lessons. Write a formal email to the company. Explain the problem, say what you have already done and ask for a solution. Write 140-190 words.",
+    "genero": "email",
+    "min": 140,
+    "max": 190,
+    "modelo": "Dear Sir or Madam,\n\nI am writing to complain about the online English course I purchased on 3 March, order number 4521.\n\nAlthough I paid in full, I have been unable to access any of the lessons. Every time I log in, a message appears saying that my account has expired. I have tried changing my password and using a different computer, but the problem has not been solved. I also sent a message through your website last week, yet I have not received a reply.\n\nThis situation is extremely frustrating, as I planned to take an exam in June and I need to study regularly. I attach a copy of my receipt for your reference.\n\nI would therefore be grateful if you could repair my account as soon as possible. If this is not possible, I would like to receive a full refund. I would also appreciate a short explanation of what went wrong.\n\nI look forward to hearing from you.\n\nYours faithfully,\nCarla Souza",
+    "checklist": [
+     "Escolhi Dear Sir or Madam com Yours faithfully?",
+     "Expliquei o problema, o que já fiz e o que quero?",
+     "Evitei contractions e gírias?",
+     "Tenho entre 140 e 190 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "You do not know the name of the person you are writing to. Which pair is correct?",
+     "op": [
+      "Dear Sir or Madam – Yours sincerely",
+      "Dear Mr Jones – Yours faithfully",
+      "Dear Sir or Madam – Yours faithfully",
+      "Hi there – Best wishes"
+     ],
+     "r": 2,
+     "exp": "Sem o nome: Dear Sir or Madam / Yours faithfully. Com o nome: Dear Mr Jones / Yours sincerely."
+    },
+    {
+     "t": "gap",
+     "q": "I am writing ___ complain about the quality of the food.",
+     "resp": [
+      "to"
+     ],
+     "exp": "I am writing to + verbo apresenta o motivo da carta."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase final de uma carta formal.",
+     "frase": "I look forward to hearing from you at your earliest convenience.",
+     "exp": "Em 'forward' o /ɔː/ é longo. 'Hearing' tem /ɪə/."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is the best request in a formal email?",
+     "op": [
+      "Send me my money back now.",
+      "I would be grateful if you could arrange a refund.",
+      "Give me a refund, please!",
+      "You must pay me back."
+     ],
+     "r": 1,
+     "exp": "I would be grateful if you could... é educado e firme. As outras são rudes ou imperativas demais."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "have",
+      "attached",
+      "a",
+      "copy",
+      "of",
+      "the",
+      "receipt."
+     ],
+     "resp": "I have attached a copy of the receipt.",
+     "exp": "Present perfect: have + particípio. Usado para dizer que o anexo já foi enviado."
+    },
+    {
+     "t": "gap",
+     "q": "I would ___ a reply within seven days.",
+     "resp": [
+      "appreciate",
+      "expect"
+     ],
+     "exp": "I would appreciate / expect a reply = Eu agradeceria / espero uma resposta."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale em inglês qual é o problema de um produto que você comprou.",
+     "frase": "Explain a problem with a product you bought and what you want.",
+     "modelo": "I bought a phone last week, but the screen does not work properly. I would like a replacement or a refund.",
+     "min": 14,
+     "chave": [
+      "problem",
+      "refund",
+      "replacement",
+      "bought",
+      "screen"
+     ],
+     "exp": "Use I would like + o que você quer, em tom educado."
+    },
+    {
+     "t": "mc",
+     "q": "Which opening sentence best states the purpose of an application letter?",
+     "op": [
+      "Hello, I need work.",
+      "I am writing to apply for the position of sales assistant advertised in The Daily News.",
+      "Your job is interesting for me.",
+      "Please read my letter."
+     ],
+     "r": 1,
+     "exp": "A abertura precisa dizer o motivo e o cargo. As outras são vagas ou com erro."
+    },
+    {
+     "t": "gap",
+     "q": "Please find ___ a copy of my CV. (documento anexo)",
+     "resp": [
+      "attached",
+      "enclosed"
+     ],
+     "exp": "Please find attached/enclosed = segue em anexo."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Articles: titles and hooks",
+   "objetivo": "Criar um título e uma abertura que prendam o leitor.",
+   "foco": "Article: catchy title, hook, rhetorical questions, direct address",
+   "explicacao": [
+    "Um article é escrito para uma revista ou site. O estilo é interessante e pessoal, mais livre que um essay, mas com boa organização.",
+    "Comece com um título curto e uma abertura (hook) que desperte curiosidade: uma pergunta, um fato surpreendente ou uma frase forte. Ex.: Have you ever tried living without your phone?",
+    "Fale diretamente com o leitor (you) e use perguntas retóricas e adjetivos fortes (fascinating, unforgettable).",
+    "Termine com uma frase que fique na memória ou convide o leitor a agir."
+   ],
+   "vocab": [
+    {
+     "en": "hook",
+     "pt": "gancho, abertura que prende"
+    },
+    {
+     "en": "rhetorical question",
+     "pt": "pergunta retórica"
+    },
+    {
+     "en": "eye-catching",
+     "pt": "chamativo"
+    },
+    {
+     "en": "readers",
+     "pt": "leitores"
+    },
+    {
+     "en": "fascinating",
+     "pt": "fascinante"
+    },
+    {
+     "en": "worth trying",
+     "pt": "vale a pena tentar"
+    },
+    {
+     "en": "to get hooked on",
+     "pt": "ficar viciado em"
+    }
+   ],
+   "material": {
+    "tarefa": "You see this announcement in an English-language magazine: 'Write an article about a hobby or sport you recommend to teenagers. Explain why it is enjoyable and what beginners need.' Write your article in 140-190 words.",
+    "genero": "article",
+    "min": 140,
+    "max": 190,
+    "modelo": "Climb Higher!\n\nHave you ever felt that your weekends are all the same? If so, indoor climbing might be exactly what you need.\n\nClimbing is a fascinating sport because it trains both your body and your brain. Every wall is a puzzle: you have to decide where to put your hands and feet, and you feel a real sense of achievement when you reach the top. Better still, it is a friendly activity. Climbers cheer each other on, so it is easy to make new friends.\n\nWhat do beginners need? Surprisingly little. You can rent shoes and a harness at most climbing centres, and the staff will happily teach you the basics. All you need is comfortable clothes and a little courage.\n\nIt is true that your arms will ache after the first session. However, that feeling disappears quickly, and it is replaced by excitement.\n\nSo why not give it a try this weekend? I promise you will want to come back.",
+    "checklist": [
+     "Meu article tem um título chamativo?",
+     "A primeira frase prende o leitor (pergunta ou fato)?",
+     "Falei diretamente com o leitor (you) e usei adjetivos fortes?",
+     "Respondi aos dois pontos da tarefa e escrevi 140–190 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which title is the most eye-catching for an article about cycling to work?",
+     "op": [
+      "About cycling",
+      "Cycling to work and its advantages in cities",
+      "Ditch the Traffic Jam!",
+      "An article I wrote"
+     ],
+     "r": 2,
+     "exp": "Um bom título é curto, vivo e desperta curiosidade. 'Ditch the traffic jam!' chama o leitor à ação."
+    },
+    {
+     "t": "gap",
+     "q": "Have you ___ wondered how people lived without electricity?",
+     "resp": [
+      "ever"
+     ],
+     "exp": "Have you ever...? é uma pergunta retórica clássica para abrir article."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia o gancho com entusiasmo.",
+     "frase": "Have you ever dreamed of living on a boat?",
+     "exp": "Entonação ascendente no final da pergunta. 'Dreamed' pode ser /driːmd/."
+    },
+    {
+     "t": "mc",
+     "q": "Which opening is the weakest hook for an article about a new café?",
+     "op": [
+      "Imagine a café where every cup of coffee tells a story.",
+      "This article is about a café.",
+      "Would you believe that this café has no menu?",
+      "Last Saturday, I discovered the best hot chocolate in town."
+     ],
+     "r": 1,
+     "exp": "'This article is about...' é direto demais e sem emoção. As outras criam curiosidade."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "So",
+      "why",
+      "not",
+      "give",
+      "it",
+      "a",
+      "try",
+      "this",
+      "weekend?"
+     ],
+     "resp": "So why not give it a try this weekend?",
+     "exp": "Pergunta retórica final: So why not + verbo? convida o leitor a agir."
+    },
+    {
+     "t": "gap",
+     "q": "It is a truly ___ experience that you will never forget. (adjetivo forte que significa 'incrível')",
+     "resp": [
+      "fantastic",
+      "fascinating",
+      "wonderful",
+      "amazing",
+      "remarkable"
+     ],
+     "exp": "Adjetivos fortes tornam o article mais vivo. Evite repetir good e nice."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê em inglês um título e uma frase de abertura para um article sobre dormir bem.",
+     "frase": "Imagine you are writing an article called 'Sleep Well'. What is your first sentence?",
+     "modelo": "Do you often feel tired in the morning? You are not alone, and the solution may be simpler than you think.",
+     "min": 14,
+     "chave": [
+      "sleep",
+      "tired",
+      "morning",
+      "night",
+      "you"
+     ],
+     "exp": "Faça uma pergunta ao leitor e prometa uma solução."
+    },
+    {
+     "t": "mc",
+     "q": "In an article, which sentence addresses the reader directly in a natural way?",
+     "op": [
+      "One should always consider alternatives.",
+      "If you are looking for a new hobby, you will love this.",
+      "It is recommended that hobbies are practised.",
+      "Hobbies are practised by many."
+     ],
+     "r": 1,
+     "exp": "Você (you) cria proximidade. As outras são impessoais ou passivas, mais próprias de report."
+    },
+    {
+     "t": "gap",
+     "q": "It might ___ a little strange at first, but you will soon get used to it.",
+     "resp": [
+      "seem",
+      "feel",
+      "sound",
+      "look"
+     ],
+     "exp": "Seem/feel/sound/look são verbos de ligação com adjetivo: it might seem strange."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Reviews: describing and recommending",
+   "objetivo": "Descrever um filme, livro ou lugar e dar uma recomendação final.",
+   "foco": "Review: description, evaluation, recommendation; adjectives and participles",
+   "explicacao": [
+    "Uma review tem: informação básica (o que é), descrição do enredo ou do lugar sem contar o final, sua avaliação com exemplos e uma recomendação.",
+    "Use adjetivos específicos: gripping (empolgante), moving (comovente), disappointing (decepcionante). Cuidado: -ed descreve o sentimento (I was bored), -ing descreve a coisa (the film was boring).",
+    "Para recomendar: I would highly recommend it to anyone who... / It is well worth seeing. / I would not recommend it to those who...",
+    "Dê as duas faces: pontos fortes e fracos."
+   ],
+   "vocab": [
+    {
+     "en": "plot",
+     "pt": "enredo"
+    },
+    {
+     "en": "gripping",
+     "pt": "empolgante"
+    },
+    {
+     "en": "moving",
+     "pt": "comovente"
+    },
+    {
+     "en": "cast",
+     "pt": "elenco"
+    },
+    {
+     "en": "well worth seeing",
+     "pt": "vale muito a pena ver"
+    },
+    {
+     "en": "disappointing",
+     "pt": "decepcionante"
+    },
+    {
+     "en": "setting",
+     "pt": "cenário, ambientação"
+    }
+   ],
+   "material": {
+    "tarefa": "You see this announcement: 'Review a film you have seen recently. Tell us about the story, what you liked or disliked, and whether you recommend it.' Write your review in 140-190 words.",
+    "genero": "review",
+    "min": 140,
+    "max": 190,
+    "modelo": "Review: The Last Lighthouse\n\nThe Last Lighthouse is a British drama set on a remote island in the 1950s. It tells the story of a lighthouse keeper who forms an unlikely friendship with a young girl.\n\nWhat impressed me most was the acting. The two main actors are completely convincing, and their scenes together are both funny and deeply moving. The photography is also stunning: the sea and the storms look so real that you almost feel the wind. Furthermore, the soundtrack fits each scene perfectly.\n\nHowever, the film is not perfect. The middle section is rather slow, and a few characters are not developed enough. I also found the ending slightly predictable.\n\nDespite these weaknesses, I was thoroughly entertained, and I left the cinema feeling thoughtful. I would highly recommend it to anyone who enjoys calm, emotional stories. Viewers who prefer fast action, though, might find it a little boring.",
+    "checklist": [
+     "Descrevi o enredo sem contar o final?",
+     "Dei pontos fortes e fracos com exemplos?",
+     "Terminei com uma recomendação clara?",
+     "Usei adjetivos variados e escrevi 140–190 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "The film was really boring, so I felt boring.",
+      "The film was really boring, so I felt bored.",
+      "The film was really bored, so I felt bored.",
+      "The film was really bored, so I felt boring."
+     ],
+     "r": 1,
+     "exp": "-ing descreve a coisa (the film was boring); -ed descreve a pessoa (I felt bored)."
+    },
+    {
+     "t": "gap",
+     "q": "The story is set ___ a small village in Italy.",
+     "resp": [
+      "in"
+     ],
+     "exp": "Set in = ambientado em."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a recomendação.",
+     "frase": "I would highly recommend it to anyone who enjoys historical novels.",
+     "exp": "Acento em HIGHly e recomMEND. 'Historical' = /hɪˈstɒrɪkl/."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is a recommendation with a reservation?",
+     "op": [
+      "It is a must-see for everyone.",
+      "It is well worth reading, although it may be too slow for some readers.",
+      "Do not waste your time on it.",
+      "The author was born in 1970."
+     ],
+     "r": 1,
+     "exp": "Although... mostra a ressalva, o que faz a recomendação mais equilibrada."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "plot",
+      "is",
+      "gripping",
+      "from",
+      "beginning",
+      "to",
+      "end."
+     ],
+     "resp": "The plot is gripping from beginning to end.",
+     "exp": "Plot is gripping: adjetivo -ing para descrever a coisa.",
+     "alt": [
+      "From beginning to end, the plot is gripping."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "The soundtrack was perfectly ___ to the story. (SUIT)",
+     "resp": [
+      "suited"
+     ],
+     "exp": "Be suited to = ser adequado a. Aqui precisa do particípio: suited.",
+     "dica": "SUIT"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê em inglês uma opinião curta e uma recomendação sobre um filme ou série.",
+     "frase": "Tell us about a film or series you recommend.",
+     "modelo": "I would recommend the series because the story is gripping and the actors are excellent. However, it is quite long.",
+     "min": 14,
+     "chave": [
+      "recommend",
+      "series",
+      "film",
+      "story",
+      "because"
+     ],
+     "exp": "Estrutura: recomendação + because + um ponto fraco com however."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence would NOT be suitable in a review?",
+     "op": [
+      "The ending is a total surprise.",
+      "At the end, the hero dies and the villain wins, so you will not be surprised.",
+      "The acting is unconvincing in places.",
+      "The setting is beautifully photographed."
+     ],
+     "r": 1,
+     "exp": "Uma review não deve contar o final (spoiler). As outras avaliam sem estragar."
+    },
+    {
+     "t": "gap",
+     "q": "It is a thought-provoking book ___ I would recommend to teenagers.",
+     "resp": [
+      "that",
+      "which"
+     ],
+     "exp": "That/which liga a oração relativa ao substantivo (book)."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Reports: headings and recommendations",
+   "objetivo": "Estruturar um report com títulos, seções curtas e recomendações.",
+   "foco": "Report: Introduction, Findings, Recommendations; impersonal style",
+   "explicacao": [
+    "Um report é objetivo e organizado, para um chefe, professor ou comitê. Use títulos: Introduction, Facilities / Transport, Conclusion / Recommendations.",
+    "Abra dizendo o objetivo: The aim of this report is to... Use estilo neutro, mais impessoal e com passiva: It was found that... / The cafeteria is used by...",
+    "Dê recomendações com should / would / could ou It is recommended that...: I would suggest installing more bins.",
+    "Frases curtas e claras; sem muita emoção. Listas simples são aceitas."
+   ],
+   "vocab": [
+    {
+     "en": "the aim of this report",
+     "pt": "o objetivo deste relatório"
+    },
+    {
+     "en": "findings",
+     "pt": "resultados"
+    },
+    {
+     "en": "recommendations",
+     "pt": "recomendações"
+    },
+    {
+     "en": "to suggest",
+     "pt": "sugerir"
+    },
+    {
+     "en": "facilities",
+     "pt": "instalações"
+    },
+    {
+     "en": "to improve",
+     "pt": "melhorar"
+    },
+    {
+     "en": "overall",
+     "pt": "no geral"
+    }
+   ],
+   "material": {
+    "tarefa": "Your school wants to improve its sports facilities. Write a report for the headteacher. Say what facilities are available now, what problems students have and what you recommend. Write 140-190 words.",
+    "genero": "report",
+    "min": 140,
+    "max": 190,
+    "modelo": "Sports Facilities Report\n\nIntroduction\nThe aim of this report is to describe the current sports facilities and to suggest improvements.\n\nCurrent facilities\nThe school has an indoor gym, a football pitch and two tennis courts. Most students use the gym during break times, and the pitch is popular after lessons.\n\nProblems\nA survey of fifty students showed three main complaints. Firstly, the changing rooms are small and often dirty. Secondly, the gym equipment is old, and some machines are broken. Finally, the tennis courts are unavailable when it rains, because they have no cover.\n\nRecommendations\nI would suggest renovating the changing rooms as a priority. It is also recommended that the school buys new equipment for the gym. In addition, a roof over one court could allow students to play all year round.\n\nConclusion\nOverall, the facilities are adequate, but these changes would make them far more attractive and increase participation.",
+    "checklist": [
+     "Usei títulos curtos para cada seção?",
+     "Disse o objetivo no começo e dei recomendações claras?",
+     "Mantive tom neutro e objetivo?",
+     "Tenho entre 140 e 190 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence best begins a report?",
+     "op": [
+      "Hi boss! I'm writing about the cafeteria.",
+      "The aim of this report is to evaluate the school cafeteria and propose improvements.",
+      "Let me tell you a story about the cafeteria.",
+      "Everybody hates the cafeteria."
+     ],
+     "r": 1,
+     "exp": "Report abre com o objetivo, em tom neutro."
+    },
+    {
+     "t": "gap",
+     "q": "The ___ of this report is to compare two possible venues.",
+     "resp": [
+      "aim",
+      "purpose",
+      "objective"
+     ],
+     "exp": "The aim/purpose of this report is to + verbo: abertura padrão."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a recomendação.",
+     "frase": "I would suggest installing more bins and a recycling area.",
+     "exp": "Acento em sugGEST e inSTALLing. 'Recycling' = /riːˈsaɪklɪŋ/."
+    },
+    {
+     "t": "mc",
+     "q": "Which pair of headings is most suitable for a report on a school trip?",
+     "op": [
+      "My Dream Trip / Why I Love Trips",
+      "Introduction / Recommendations",
+      "Dear Sir / Yours faithfully",
+      "Hook / Title"
+     ],
+     "r": 1,
+     "exp": "Report usa títulos funcionais como Introduction e Recommendations. As outras são de carta ou article."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It",
+      "is",
+      "recommended",
+      "that",
+      "the",
+      "library",
+      "opens",
+      "longer."
+     ],
+     "resp": "It is recommended that the library opens longer.",
+     "exp": "It is recommended that + sujeito + verbo é forma impessoal para sugerir."
+    },
+    {
+     "t": "gap",
+     "q": "The gym is ___ by most students at lunchtime. (passive: USE)",
+     "resp": [
+      "used"
+     ],
+     "exp": "Passiva dá tom impessoal: is used by.",
+     "dica": "USE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê em inglês uma sugestão para melhorar a biblioteca da escola.",
+     "frase": "What would you recommend to improve your school library?",
+     "modelo": "I would recommend buying more books and extending the opening hours. This would help students who study in the evening.",
+     "min": 14,
+     "chave": [
+      "recommend",
+      "suggest",
+      "library",
+      "books",
+      "should"
+     ],
+     "exp": "Use I would recommend + -ing ou that."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is too informal for a report?",
+     "op": [
+      "It was found that most students walk to school.",
+      "Loads of kids reckon the canteen is rubbish.",
+      "The majority of respondents were satisfied.",
+      "Several students complained about the noise."
+     ],
+     "r": 1,
+     "exp": "Loads of, kids, reckon e rubbish são informais. Report pede linguagem neutra."
+    },
+    {
+     "t": "gap",
+     "q": "Having ___ the results, I suggest that the club buys new balls.",
+     "resp": [
+      "analysed",
+      "analyzed",
+      "studied",
+      "considered",
+      "reviewed"
+     ],
+     "exp": "Having + particípio resume o que foi feito antes da recomendação."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Hedging and balanced opinions",
+   "objetivo": "Suavizar afirmações fortes e apresentar opiniões equilibradas.",
+   "foco": "Hedging: tend to, may, it seems, a large number of; avoiding absolutes",
+   "explicacao": [
+    "Hedging (suavizar) evita afirmações absolutas e deixa o texto mais acadêmico. Em vez de Everyone hates exams, escreva Many students find exams stressful.",
+    "Modais e verbos: may, might, can, tend to, seem to, appear to. Advérbios: usually, often, generally, probably, perhaps.",
+    "Quantificadores: some, many, a large number of, the majority of. Evite always, never, everybody, nobody.",
+    "Expressões de opinião: In my view, / It could be argued that... / It seems to me that..."
+   ],
+   "vocab": [
+    {
+     "en": "to tend to",
+     "pt": "tender a"
+    },
+    {
+     "en": "it could be argued that",
+     "pt": "pode-se argumentar que"
+    },
+    {
+     "en": "the majority of",
+     "pt": "a maioria de"
+    },
+    {
+     "en": "generally",
+     "pt": "em geral"
+    },
+    {
+     "en": "to appear to",
+     "pt": "parecer"
+    },
+    {
+     "en": "in my view",
+     "pt": "na minha opinião"
+    },
+    {
+     "en": "to a certain extent",
+     "pt": "até certo ponto"
+    }
+   ],
+   "material": {
+    "tarefa": "In your English class you have been talking about social media. Write an essay: Does social media do more harm than good to teenagers? Notes: 1. friendships 2. sleep and concentration 3. (your own idea). Write 140-190 words using hedging expressions.",
+    "genero": "essay",
+    "min": 140,
+    "max": 190,
+    "modelo": "It is often claimed that social media harms teenagers more than it helps them. However, the situation is probably more complicated than it seems.\n\nOn the positive side, social media can strengthen friendships. Teenagers who live far from their friends may use these platforms to stay in touch, and shy young people often feel more confident writing than speaking. It could be argued that this is a significant benefit.\n\nNevertheless, there appears to be a link between heavy use and poor sleep. Many teenagers tend to check their phones late at night, which may reduce their concentration the next day. As a result, school performance can suffer.\n\nAnother point worth considering is the pressure to look perfect. Photos are generally edited, so users might compare themselves with unrealistic images and feel unhappy.\n\nTo a certain extent, then, both views are correct. In my opinion, social media is not harmful in itself; the problem is how long and how often it is used. Parents and schools could help teenagers set sensible limits.",
+    "checklist": [
+     "Evitei palavras absolutas como always, never, everybody?",
+     "Usei pelo menos quatro expressões de hedging?",
+     "Apresentei os dois lados antes da minha opinião?",
+     "Tenho entre 140 e 190 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is the most carefully hedged?",
+     "op": [
+      "Teenagers always waste time online.",
+      "Many teenagers tend to spend a lot of time online.",
+      "All teenagers are addicted to phones.",
+      "Nobody can live without social media."
+     ],
+     "r": 1,
+     "exp": "Many e tend to evitam generalizar. Always, all e nobody são absolutos."
+    },
+    {
+     "t": "gap",
+     "q": "It ___ to me that online lessons are less effective for young children.",
+     "resp": [
+      "seems",
+      "appears"
+     ],
+     "exp": "It seems/appears to me that = me parece que (opinião suavizada)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase com hedging.",
+     "frase": "It could be argued that homework tends to be more useful for older students.",
+     "exp": "Acento em arGUED e HOMEwork. 'Tends' termina com /dz/."
+    },
+    {
+     "t": "mc",
+     "q": "Which version of 'Cars cause all the pollution in cities' is better in an essay?",
+     "op": [
+      "Cars are the only cause of pollution.",
+      "Cars are one of the main causes of pollution in many cities.",
+      "Without cars, there is no pollution.",
+      "Nobody can deny that only cars pollute."
+     ],
+     "r": 1,
+     "exp": "A versão com one of the main e in many cities é precisa e defensável."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Many",
+      "young",
+      "people",
+      "may",
+      "find",
+      "it",
+      "difficult",
+      "to",
+      "concentrate."
+     ],
+     "resp": "Many young people may find it difficult to concentrate.",
+     "exp": "May + verbo é um recurso de hedging. Ordem: sujeito, may, verbo, complemento."
+    },
+    {
+     "t": "gap",
+     "q": "The ___ of students prefer studying in the morning.",
+     "resp": [
+      "majority"
+     ],
+     "exp": "The majority of + plural é mais seguro que 'all students'."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê uma opinião suavizada sobre jogos de vídeo (2 frases).",
+     "frase": "Do video games have a bad influence on children?",
+     "modelo": "In my view, video games may have a negative effect if children play for too long. However, some games seem to improve concentration.",
+     "min": 16,
+     "chave": [
+      "may",
+      "might",
+      "seem",
+      "tend",
+      "view"
+     ],
+     "exp": "Use may, seem, tend to e in my view para suavizar."
+    },
+    {
+     "t": "mc",
+     "q": "Which pair shows the correct way to soften 'This is wrong'?",
+     "op": [
+      "This is probably not the best approach.",
+      "This definitely is the absolute worst idea.",
+      "This is wrong, obviously.",
+      "Everyone knows this is wrong."
+     ],
+     "r": 0,
+     "exp": "Probably not the best approach critica com cuidado. As outras são fortes demais."
+    },
+    {
+     "t": "gap",
+     "q": "Teenagers ___ to prefer messages to phone calls. (TEND)",
+     "resp": [
+      "tend"
+     ],
+     "exp": "tend to + verbo = tendem a. Concorda com teenagers (plural).",
+     "dica": "TEND"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Part 1 essay: using the notes and your own idea",
+   "objetivo": "Usar as duas ideias das notas e desenvolver bem a terceira ideia.",
+   "foco": "Essay Part 1: covering the notes, adding an original third point",
+   "explicacao": [
+    "No Part 1 você recebe duas ideias nas notas e deve usar as duas, mais uma ideia sua. Se faltar uma das três, você perde pontos.",
+    "Planeje antes de escrever (2 minutos): uma ideia por parágrafo e uma razão ou exemplo para cada. A terceira ideia deve ser diferente das duas dadas.",
+    "Não reescreva as notas palavra por palavra. Parafraseie: 'the cost' pode virar 'how much it costs / the financial side'.",
+    "A tarefa pede opinião: deixe claro de que lado você está na conclusão."
+   ],
+   "vocab": [
+    {
+     "en": "to paraphrase",
+     "pt": "parafrasear"
+    },
+    {
+     "en": "your own idea",
+     "pt": "sua própria ideia"
+    },
+    {
+     "en": "cost",
+     "pt": "custo"
+    },
+    {
+     "en": "to cover",
+     "pt": "abordar, cobrir"
+    },
+    {
+     "en": "another factor",
+     "pt": "outro fator"
+    },
+    {
+     "en": "to plan",
+     "pt": "planejar"
+    },
+    {
+     "en": "convincing",
+     "pt": "convincente"
+    }
+   ],
+   "material": {
+    "tarefa": "Your class has had a discussion about whether people should use public transport more. Write an essay: Should governments encourage people to use public transport instead of cars? Notes: 1. cost 2. pollution 3. (your own idea). Write 140-190 words.",
+    "genero": "essay",
+    "min": 140,
+    "max": 190,
+    "modelo": "Many governments are trying to persuade citizens to leave their cars at home and take buses or trains. In my opinion, this is a sensible policy.\n\nFirst of all, public transport is much cheaper for most families. Fuel, parking and insurance are expensive, whereas a monthly bus pass costs only a fraction of this amount. Consequently, people with low incomes would benefit most.\n\nSecondly, fewer cars would mean cleaner air. Traffic produces a large share of the pollution in big cities, and this affects people's health, particularly children and the elderly.\n\nAnother factor that should not be ignored is time. In crowded cities, buses with their own lanes can be faster than private cars stuck in traffic. Passengers can also read or rest during the journey, instead of feeling stressed behind the wheel.\n\nIn conclusion, I believe that governments should invest in modern, frequent and reliable public transport. If the service is good, many drivers will change their habits voluntarily.",
+    "checklist": [
+     "Usei as duas ideias das notas (cost, pollution) e uma terceira minha?",
+     "Parafraseei as notas em vez de copiá-las?",
+     "Dei razão ou exemplo em cada parágrafo?",
+     "Deixei minha opinião clara na conclusão?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "The notes say '1. cost 2. pollution'. Which third idea is acceptable and original?",
+     "op": [
+      "The price of tickets",
+      "Convenience and time saved",
+      "Money spent",
+      "Air quality in towns"
+     ],
+     "r": 1,
+     "exp": "Time/convenience é uma ideia nova. As outras repetem cost ou pollution com outras palavras."
+    },
+    {
+     "t": "gap",
+     "q": "Public transport helps people ___ money. (SAVE, to + verbo ou verbo)",
+     "resp": [
+      "save"
+     ],
+     "exp": "help + pessoa + verbo base: helps people save money."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase de abertura.",
+     "frase": "Many governments are trying to persuade citizens to use public transport.",
+     "exp": "Acento em perSUADE e GOVernments (o 'n' quase some)."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence paraphrases 'cost' best in a body paragraph?",
+     "op": [
+      "The cost is the cost of things.",
+      "From a financial point of view, buses and trains are far less expensive than cars.",
+      "Cost is good.",
+      "Costs, costs and costs."
+     ],
+     "r": 1,
+     "exp": "A paráfrase usa estrutura e vocabulário diferentes mas mantém o significado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Another",
+      "factor",
+      "to",
+      "consider",
+      "is",
+      "the",
+      "time",
+      "saved."
+     ],
+     "resp": "Another factor to consider is the time saved.",
+     "exp": "Another factor to consider is... introduz a ideia própria de forma natural."
+    },
+    {
+     "t": "gap",
+     "q": "Fewer cars would mean ___ air in big cities.",
+     "resp": [
+      "cleaner",
+      "fresher",
+      "healthier"
+     ],
+     "exp": "Comparativo: fewer cars → cleaner air (clean → cleaner)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê em inglês um argumento próprio sobre incentivar o uso de bicicleta.",
+     "frase": "Why should cities encourage cycling?",
+     "modelo": "Cycling is good for people's health and it saves money. Another reason is that bicycles take up very little space on crowded roads.",
+     "min": 16,
+     "chave": [
+      "health",
+      "money",
+      "space",
+      "cycling",
+      "bicycles"
+     ],
+     "exp": "Explique a vantagem e dê uma razão extra com Another reason is that..."
+    },
+    {
+     "t": "mc",
+     "q": "A student uses all three points but forgets to give a reason for the second. What is the likely result?",
+     "op": [
+      "Full marks anyway",
+      "Lower marks for content because the idea is not developed",
+      "No effect",
+      "The essay is automatically failed"
+     ],
+     "r": 1,
+     "exp": "Cada ponto precisa de desenvolvimento. Dizer só a ideia não basta."
+    },
+    {
+     "t": "gap",
+     "q": "In conclusion, I strongly ___ that public transport should be free for students.",
+     "resp": [
+      "believe",
+      "feel"
+     ],
+     "exp": "I strongly believe that dá a opinião final com força."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Variety of structures: passives, conditionals, relatives",
+   "objetivo": "Variar a gramática para mostrar mais nível no texto.",
+   "foco": "Passive voice, second/third conditional, defining and non-defining relative clauses",
+   "explicacao": [
+    "Textos B2 mostram estruturas variadas, não só frases simples. Três ajudas: passiva, condicionais e orações relativas.",
+    "Passiva: The report was written by students. / More trees should be planted. Condicionais: If cities had more parks, people would be happier. If I had known, I would have come.",
+    "Relativas: A teacher who explains clearly is valued. (defining) / London, which is huge, attracts millions. (non-defining, com vírgulas, sem that).",
+    "Outras: inversão (Not only does it..., but it also...), -ing no início (Having finished, ...), it is + adjetivo + to + verbo."
+   ],
+   "vocab": [
+    {
+     "en": "passive voice",
+     "pt": "voz passiva"
+    },
+    {
+     "en": "second conditional",
+     "pt": "segunda condicional (If + past, would)"
+    },
+    {
+     "en": "relative clause",
+     "pt": "oração relativa"
+    },
+    {
+     "en": "not only ... but also",
+     "pt": "não só ... mas também"
+    },
+    {
+     "en": "having done",
+     "pt": "tendo feito"
+    },
+    {
+     "en": "whose",
+     "pt": "cujo"
+    },
+    {
+     "en": "which",
+     "pt": "o qual, que (coisas)"
+    }
+   ],
+   "material": {
+    "tarefa": "Your English teacher has asked for an article for the school magazine on the topic 'A change that would improve my town'. Describe the change, explain how it would help and say what could stop it. Write 140-190 words using a passive, a conditional and a relative clause.",
+    "genero": "article",
+    "min": 140,
+    "max": 190,
+    "modelo": "A Library for Everyone\n\nIf I could change one thing in my town, I would build a modern public library in the centre. At present, the old library, which was opened in 1960, is small and rarely visited.\n\nA new building with comfortable study rooms, free internet and a café would be a place where teenagers could meet and work together. Not only would it help students who have no quiet space at home, but it would also bring families together through story hours and workshops. Elderly people, whose lives are often lonely, could join reading clubs.\n\nOf course, the idea must be paid for. Money would have to be found, and some residents may think that a library is a luxury. Had the council invested earlier, however, we would already have a much better town.\n\nIf we want young people to enjoy reading, we should give them somewhere inviting to do it. Let us hope the mayor reads this article!",
+    "checklist": [
+     "Usei pelo menos uma passiva, uma condicional e uma relativa?",
+     "Descrevi a mudança, o benefício e o obstáculo?",
+     "Escrevi com um título e uma abertura interessante?",
+     "Escrevi entre 140 e 190 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is a correct second conditional?",
+     "op": [
+      "If I will have time, I would help you.",
+      "If I had more time, I would help you.",
+      "If I would have more time, I help you.",
+      "If I have had time, I would help."
+     ],
+     "r": 1,
+     "exp": "Second conditional: If + past simple, would + verbo base."
+    },
+    {
+     "t": "gap",
+     "q": "More trees should ___ planted in the city centre.",
+     "resp": [
+      "be"
+     ],
+     "exp": "Passiva com modal: should + be + particípio."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase com relativa.",
+     "frase": "My grandmother, who lives in Recife, taught me how to cook.",
+     "exp": "Faça pausa depois de 'grandmother' e depois de 'Recife'. 'Who' = /huː/."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence has a correct non-defining relative clause?",
+     "op": [
+      "My brother, that lives in Spain, is a doctor.",
+      "My brother, who lives in Spain, is a doctor.",
+      "My brother, who he lives in Spain, is a doctor.",
+      "My brother, which lives in Spain, is a doctor."
+     ],
+     "r": 1,
+     "exp": "Pessoa + oração entre vírgulas = who (nunca that nas non-defining)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Not",
+      "only",
+      "does",
+      "exercise",
+      "improve",
+      "health,",
+      "but",
+      "it",
+      "also",
+      "reduces",
+      "stress."
+     ],
+     "resp": "Not only does exercise improve health, but it also reduces stress.",
+     "exp": "Após Not only a frase tem inversão: does + sujeito + verbo."
+    },
+    {
+     "t": "gap",
+     "q": "If she had left earlier, she ___ have missed the train. (negativo, 3ª condicional)",
+     "resp": [
+      "would not",
+      "wouldn't"
+     ],
+     "exp": "Third conditional: If + past perfect, would (not) have + particípio."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale em inglês uma frase com 'if' sobre o que você faria com mais tempo livre.",
+     "frase": "What would you do if you had more free time?",
+     "modelo": "If I had more free time, I would learn to play the guitar. I would also travel more.",
+     "min": 12,
+     "chave": [
+      "if",
+      "would",
+      "time",
+      "learn",
+      "travel"
+     ],
+     "exp": "Use If + passado simples e would + verbo."
+    },
+    {
+     "t": "mc",
+     "q": "Which rewrite changes the active sentence 'Someone stole my bike' into the passive?",
+     "op": [
+      "My bike was stolen.",
+      "My bike stole someone.",
+      "My bike has stole.",
+      "My bike is stealing."
+     ],
+     "r": 0,
+     "exp": "A passiva usa be + particípio: was stolen. O agente 'someone' é omitido."
+    },
+    {
+     "t": "gap",
+     "q": "The school, ___ was built in 1990, needs repairs.",
+     "resp": [
+      "which"
+     ],
+     "exp": "Which refere-se a coisas e abre a non-defining relative clause (com vírgulas)."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Typical mistakes by Brazilian students",
+   "objetivo": "Reconhecer e corrigir erros comuns de falantes de português.",
+   "foco": "False friends, prepositions, word order, subject + verb agreement",
+   "explicacao": [
+    "Falsos cognatos: actually = na verdade (não 'atualmente'); push = empurrar (não 'puxar'); pretend = fingir; realise = perceber; library = biblioteca (livraria = bookshop).",
+    "Preposições: depend on (não 'depend of'), interested in, good at, arrive in/at, married to.",
+    "Em inglês a frase precisa de sujeito: It is important... (não 'Is important'). Adjetivo vem antes do substantivo: a big house; não 'a house big'. Plural: advice, information e news não têm plural.",
+    "Concordância: He works / She has / Everybody is. Time clauses: When I arrive (não 'when I will arrive')."
+   ],
+   "vocab": [
+    {
+     "en": "actually",
+     "pt": "na verdade"
+    },
+    {
+     "en": "to depend on",
+     "pt": "depender de"
+    },
+    {
+     "en": "information (uncountable)",
+     "pt": "informação (não contável)"
+    },
+    {
+     "en": "to pretend",
+     "pt": "fingir"
+    },
+    {
+     "en": "to realise",
+     "pt": "perceber, dar-se conta"
+    },
+    {
+     "en": "interested in",
+     "pt": "interessado em"
+    },
+    {
+     "en": "advice",
+     "pt": "conselho(s)"
+    }
+   ],
+   "material": {
+    "tarefa": "Write an email to your English-speaking friend, Jo, who has asked for advice about learning Portuguese. Say how you learned English, what you recommend and what mistakes to avoid. Write 140-190 words.",
+    "genero": "email",
+    "min": 140,
+    "max": 190,
+    "modelo": "Hi Jo,\n\nThanks for your message! I'm really pleased you're interested in learning Portuguese. Actually, I started learning English at the age of ten, and I have been improving ever since.\n\nMy best advice is to listen to the language every day. I watched films with subtitles and read short stories, which helped me to understand natural speech. It also depends on your personality: if you enjoy talking, find a language partner, but if you are shy, apps can be a good start.\n\nAs for mistakes, remember that every beginner makes them. I often said 'I am agree' instead of 'I agree', and I confused 'library' with 'bookshop'. Now I always check small details like prepositions. You'll probably find that our gender system is difficult at first, but you'll get used to it.\n\nIf you need more information, just ask. I'd be delighted to practise with you on video calls.\n\nTake care,\nBruno",
+    "checklist": [
+     "Revisei falsos cognatos e preposições?",
+     "Conferi se todas as frases têm sujeito e verbo concordando?",
+     "Evitei plural em advice/information/news?",
+     "Tenho entre 140 e 190 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I am agree with you.",
+      "I agree with you.",
+      "I agree to you.",
+      "I am agreeing in you."
+     ],
+     "r": 1,
+     "exp": "Agree é verbo: I agree with you. Em português é 'concordo', mas em inglês não se usa 'am' antes."
+    },
+    {
+     "t": "gap",
+     "q": "It depends ___ the weather. (preposição)",
+     "resp": [
+      "on"
+     ],
+     "exp": "Depend on é a regência correta, não 'depend of'."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita sem trocar o som final.",
+     "frase": "Actually, I have never been interested in football.",
+     "exp": "'Actually' = /ˈæktʃuəli/ (não 'atualmente'). 'Interested' = /ˈɪntrəstɪd/."
+    },
+    {
+     "t": "mc",
+     "q": "Which word is a false friend in 'The library is closed on Mondays'?",
+     "op": [
+      "closed",
+      "library",
+      "Mondays",
+      "The"
+     ],
+     "r": 1,
+     "exp": "Library = biblioteca; livraria é bookshop. Muitos brasileiros trocam."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It",
+      "is",
+      "important",
+      "to",
+      "get",
+      "plenty",
+      "of",
+      "rest."
+     ],
+     "resp": "It is important to get plenty of rest.",
+     "exp": "Em inglês a frase precisa de sujeito: It is important to... (não 'Is important')."
+    },
+    {
+     "t": "gap",
+     "q": "She gave me some very useful ___. (CONSELHO, não contável)",
+     "resp": [
+      "advice"
+     ],
+     "exp": "Advice não tem plural. Diga a piece of advice ou some advice."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Corrija em voz alta e explique um erro comum dos brasileiros em inglês.",
+     "frase": "What is a common mistake Brazilians make in English?",
+     "modelo": "Many Brazilians say 'I have 20 years' instead of 'I am 20'. Another mistake is forgetting the subject in the sentence.",
+     "min": 14,
+     "chave": [
+      "mistake",
+      "say",
+      "years",
+      "subject",
+      "grammar"
+     ],
+     "exp": "Dê um exemplo concreto do erro e como se diz o correto."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence has a time-clause error?",
+     "op": [
+      "When I arrive, I'll call you.",
+      "If it rains tomorrow, we'll stay home.",
+      "As soon as she will finish, she'll leave.",
+      "Before we go, we must lock the door."
+     ],
+     "r": 2,
+     "exp": "Depois de as soon as, when, before e if usamos presente (as soon as she finishes), não will."
+    },
+    {
+     "t": "gap",
+     "q": "He's very good ___ maths, but weak at languages.",
+     "resp": [
+      "at"
+     ],
+     "exp": "Good at + disciplina. Confira também: interested in, afraid of."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Proofreading, timing and choosing your Part 2 task",
+   "objetivo": "Revisar o texto, controlar o tempo e escolher a melhor tarefa da Part 2.",
+   "foco": "Checking grammar, spelling and word count; planning the 80 minutes",
+   "explicacao": [
+    "A prova de Writing do B2 dura 80 minutos para duas tarefas. Reserve cerca de 5 minutos para planejar e 5 para revisar cada texto.",
+    "Na Part 2 escolha a tarefa pela confiança, não pelo tema: pense qual formato você domina (email, article, review, report) e quais ideias vêm rápido.",
+    "Revisão: 1) todos os pontos da tarefa? 2) concordância (he works)? 3) tempos verbais? 4) preposições e falsos cognatos? 5) ortografia? 6) pontuação e parágrafos? 7) número de palavras (140–190).",
+    "Escreva com letra legível. Se errar, risque com uma linha e reescreva."
+   ],
+   "vocab": [
+    {
+     "en": "to proofread",
+     "pt": "revisar"
+    },
+    {
+     "en": "word count",
+     "pt": "contagem de palavras"
+    },
+    {
+     "en": "to cross out",
+     "pt": "riscar"
+    },
+    {
+     "en": "layout",
+     "pt": "formato"
+    },
+    {
+     "en": "to plan",
+     "pt": "planejar"
+    },
+    {
+     "en": "spelling",
+     "pt": "ortografia"
+    },
+    {
+     "en": "to run out of time",
+     "pt": "ficar sem tempo"
+    }
+   ],
+   "material": {
+    "tarefa": "You see this announcement in an English-language magazine: 'Tell us about a place in your country that every visitor should see. Describe it and explain why it is special.' Write an article of 140-190 words. After writing, proofread your text.",
+    "genero": "article",
+    "min": 140,
+    "max": 190,
+    "modelo": "The Magic of Lençóis Maranhenses\n\nImagine a desert that fills with blue lakes every year. It is not a dream; it is one of Brazil's most surprising national parks, and every visitor should see it.\n\nThe Lençóis Maranhenses are enormous white sand dunes in the north of the country. Between January and June, heavy rain creates thousands of crystal-clear lagoons between them. You can swim in the warm water, walk across the dunes and watch the sun set over a landscape that looks like another planet.\n\nTravelling there is an adventure in itself. First, you fly to São Luís, then take a four-hour journey by car and finally a boat trip along the river. Local guides, who are friendly and knowledgeable, will show you the best viewpoints.\n\nWhat makes this place special is its silence and its colours. Nowhere else will you feel so small and so calm at the same time.\n\nSo if you are planning a trip, put the Lençóis at the top of your list. You will not regret it.",
+    "checklist": [
+     "Revisei concordância, tempos verbais e preposições?",
+     "Conferi ortografia e pontuação?",
+     "Contei as palavras (140–190) e respondi aos dois pontos?",
+     "Escolhi um formato que domino e usei título e gancho?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "You have 80 minutes for two tasks. What is the best time plan for each task?",
+     "op": [
+      "Write immediately, no planning or checking",
+      "About 5 minutes planning, 30 writing, 5 checking",
+      "Plan for 25 minutes, write for 5",
+      "Spend all your time on the first task"
+     ],
+     "r": 1,
+     "exp": "Cerca de 40 minutos por tarefa: planejar, escrever e revisar."
+    },
+    {
+     "t": "gap",
+     "q": "He ___ to school by bus every day. (GO, present simple)",
+     "resp": [
+      "goes"
+     ],
+     "exp": "Terceira pessoa do singular recebe -es: goes. Erro frequente na revisão.",
+     "dica": "GO"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia as frases de revisão.",
+     "frase": "Check your spelling, your verb tenses and your word count.",
+     "exp": "Acento em SPELLing, TENses e WORD COUNT."
+    },
+    {
+     "t": "mc",
+     "q": "Which Part 2 task is the best choice for a student who loves writing stories but is not sure about report headings?",
+     "op": [
+      "A report on workplace safety",
+      "An article with a story-like opening",
+      "A formal letter of complaint",
+      "A review with a recommendation"
+     ],
+     "r": 1,
+     "exp": "Article usa estilo livre e narrativo. Escolher a tarefa em que você é mais confiante ajuda a ter mais pontos."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I'm",
+      "interested",
+      "in",
+      "learning",
+      "more",
+      "about",
+      "this",
+      "course."
+     ],
+     "resp": "I'm interested in learning more about this course.",
+     "exp": "Interested in + -ing. Frase com sujeito I'm e verbo no -ing no fim."
+    },
+    {
+     "t": "gap",
+     "q": "Everybody ___ waiting for the bus. (concordância no presente)",
+     "resp": [
+      "is"
+     ],
+     "exp": "Everybody é singular: Everybody is... (não 'are')."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga em inglês o que você confere ao revisar um texto.",
+     "frase": "What do you check when you proofread?",
+     "modelo": "I check my grammar, my spelling and the word count. I also make sure I have answered all the points in the task.",
+     "min": 16,
+     "chave": [
+      "check",
+      "spelling",
+      "grammar",
+      "words",
+      "punctuation"
+     ],
+     "exp": "Liste ao menos duas coisas: grammar, spelling, punctuation, word count."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence contains a spelling or punctuation error?",
+     "op": [
+      "Its a beautiful beach, and it's free.",
+      "It's a beautiful beach, and it's free.",
+      "The beach is beautiful. It is also free.",
+      "We visited the beach, which is free."
+     ],
+     "r": 0,
+     "exp": "Its (de posse) ≠ it's (it is). Na primeira opção, falta o apóstrofo em It's."
+    },
+    {
+     "t": "gap",
+     "q": "I'm looking ___ to hearing from you.",
+     "resp": [
+      "forward"
+     ],
+     "exp": "Look forward to + -ing: I'm looking forward to hearing."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Writing mock exam: Part 1 essay",
+   "objetivo": "Fazer um simulado de Writing Part 1 no formato real de B2 First.",
+   "foco": "Exam practice: compulsory essay, 140-190 words, two given notes plus own idea",
+   "explicacao": [
+    "Simulado: você tem 40 minutos para o Part 1. Leia a pergunta duas vezes e sublinhe as notas.",
+    "Plano em 4 parágrafos: introdução, nota 1, nota 2 + ideia própria, conclusão com opinião. Use linking words e hedging.",
+    "Registro neutro ou formal, sem contractions. Revise: pontos da tarefa, gramática, ortografia, 140–190 palavras.",
+    "Os exercícios abaixo repassam o que o examinador observa em content, communicative achievement, organisation e language."
+   ],
+   "vocab": [
+    {
+     "en": "compulsory",
+     "pt": "obrigatório"
+    },
+    {
+     "en": "to be in favour of",
+     "pt": "ser a favor de"
+    },
+    {
+     "en": "to be against",
+     "pt": "ser contra"
+    },
+    {
+     "en": "as far as I am concerned",
+     "pt": "no que me diz respeito"
+    },
+    {
+     "en": "it is widely believed",
+     "pt": "acredita-se amplamente"
+    },
+    {
+     "en": "in the long run",
+     "pt": "a longo prazo"
+    },
+    {
+     "en": "to outweigh",
+     "pt": "pesar mais que"
+    }
+   ],
+   "material": {
+    "tarefa": "In your English class you have been talking about the role of tourism in your country. Now your teacher has asked you to write an essay. Write an essay using all the notes and giving reasons for your point of view. Should tourism be encouraged? Notes: 1. jobs for local people 2. damage to the environment 3. (your own idea). Write your essay in 140-190 words.",
+    "genero": "essay",
+    "min": 140,
+    "max": 190,
+    "modelo": "Tourism is one of the biggest industries in the world, and many countries try to attract more visitors. Whether this should be encouraged is a matter of debate.\n\nFirstly, tourism creates a great number of jobs. Hotels, restaurants, guides and transport companies all employ local people, and small villages can survive thanks to the money that visitors spend. This is particularly important in regions where there are few other opportunities.\n\nHowever, large numbers of tourists can damage the environment. Beaches and forests may become polluted, and fragile places can be destroyed if there are no rules. In some cases, the problems appear to outweigh the benefits.\n\nAnother point worth considering is culture. Visitors who learn about local traditions help keep them alive, although too much tourism might turn customs into shows for money.\n\nIn conclusion, I believe tourism should be encouraged, but only if it is carefully controlled. Limiting numbers and protecting natural areas would allow the country to enjoy the economic advantages without losing its beauty.",
+    "checklist": [
+     "Usei as duas notas e acrescentei uma ideia minha?",
+     "Tenho introdução, argumentos desenvolvidos e conclusão com opinião?",
+     "Usei linking words, hedging e estruturas variadas?",
+     "Revisei gramática e ortografia e tenho 140–190 palavras?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "The task says: 'Write an essay using ALL the notes.' What happens if you ignore the third point?",
+     "op": [
+      "Nothing, it is optional",
+      "You lose marks because content is incomplete",
+      "You get extra marks for being brief",
+      "The examiner stops reading"
+     ],
+     "r": 1,
+     "exp": "As duas notas e a ideia própria fazem parte do conteúdo exigido. Faltar um ponto reduz a nota."
+    },
+    {
+     "t": "gap",
+     "q": "It is widely believed that tourism ___ many advantages. (HAVE, present simple)",
+     "resp": [
+      "has"
+     ],
+     "exp": "Tourism é singular: has. Cuidado com concordância na revisão final.",
+     "dica": "HAVE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase de abertura do essay.",
+     "frase": "Tourism is one of the biggest industries in the world.",
+     "exp": "Acento em TOURism e INdustries. 'One of the' liga-se em /wʌnəvðə/."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is the best linking choice? 'Tourism creates jobs. ___, it can harm nature.'",
+     "op": [
+      "Moreover",
+      "In addition",
+      "However",
+      "Therefore"
+     ],
+     "r": 2,
+     "exp": "A segunda frase contrasta com a primeira, então usamos However."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Tourism",
+      "may",
+      "bring",
+      "both",
+      "advantages",
+      "and",
+      "disadvantages",
+      "for",
+      "local",
+      "communities."
+     ],
+     "resp": "Tourism may bring both advantages and disadvantages for local communities.",
+     "exp": "Hedging com may; both ... and liga os dois lados."
+    },
+    {
+     "t": "gap",
+     "q": "The benefits ___ the risks, so I support tourism. (ver: pesam mais)",
+     "resp": [
+      "outweigh"
+     ],
+     "exp": "Outweigh = pesar mais que. Verbo no plural: the benefits outweigh."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê oralmente sua opinião final sobre turismo (2 frases).",
+     "frase": "Should tourism be encouraged in your region?",
+     "modelo": "In my view, tourism should be encouraged because it creates jobs. However, there should be rules to protect the environment.",
+     "min": 14,
+     "chave": [
+      "tourism",
+      "encourage",
+      "jobs",
+      "environment",
+      "rules"
+     ],
+     "exp": "Estrutura de conclusão: opinião + because + however."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is the most suitable for the introduction of the essay?",
+     "op": [
+      "I love tourism and I go every year.",
+      "Tourism has grown rapidly in recent decades, and its effects are widely discussed.",
+      "Don't you think tourism is great?",
+      "Hello! This essay is about tourism."
+     ],
+     "r": 1,
+     "exp": "Introdução formal apresenta o tema de modo geral. As outras são pessoais, informais ou usam pergunta direta."
+    },
+    {
+     "t": "gap",
+     "q": "In ___, I believe that the advantages are greater than the disadvantages.",
+     "resp": [
+      "conclusion",
+      "summary"
+     ],
+     "exp": "In conclusion / In summary abre o último parágrafo."
+    },
+    {
+     "t": "mc",
+     "q": "Which word shows the best register for an essay?",
+     "op": [
+      "kids",
+      "guys",
+      "young people",
+      "mates"
+     ],
+     "r": 2,
+     "exp": "Young people é neutro e adequado a um essay. Kids, guys e mates são informais."
+    }
+   ]
+  }
+ ]
+}

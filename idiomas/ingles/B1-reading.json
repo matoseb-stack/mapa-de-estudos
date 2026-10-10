@@ -1,0 +1,2366 @@
+{
+ "nivel": "B1",
+ "skill": "reading",
+ "exame": "B1 Preliminary (PET)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "A weekend in Edinburgh",
+   "objetivo": "Entender o relato de uma viagem e distinguir fatos, horários e opiniões.",
+   "foco": "Past simple (regular and irregular); time expressions: last, ago, yesterday, in 2023",
+   "explicacao": [
+    "Usamos o past simple para ações terminadas em um tempo passado: We visited the castle on Saturday.",
+    "Verbos regulares terminam em -ed (visit - visited). Os irregulares mudam: go - went, buy - bought, see - saw.",
+    "Negativa e pergunta usam did + verbo base: We didn't see the sea. Did you enjoy it?",
+    "Expressões típicas: yesterday, last week, two days ago, in 2022."
+   ],
+   "vocab": [
+    {
+     "en": "to book",
+     "pt": "reservar"
+    },
+    {
+     "en": "to arrive",
+     "pt": "chegar"
+    },
+    {
+     "en": "view",
+     "pt": "vista, paisagem"
+    },
+    {
+     "en": "crowded",
+     "pt": "lotado"
+    },
+    {
+     "en": "souvenir",
+     "pt": "lembrança"
+    },
+    {
+     "en": "to miss",
+     "pt": "perder (um trem, um ônibus)"
+    },
+    {
+     "en": "delay",
+     "pt": "atraso"
+    },
+    {
+     "en": "to recommend",
+     "pt": "recomendar"
+    }
+   ],
+   "material": {
+    "titulo": "A trip to Scotland",
+    "texto": "Last month my sister Kate and I spent a weekend in Edinburgh. We booked the trip two weeks before, because hotels there are often full in summer. Our train left London at seven on Friday morning, but it was forty minutes late, so we arrived at the hotel in the afternoon. We didn't have much time, so we only walked around the Old Town and had dinner in a small Scottish restaurant. On Saturday we climbed a hill called Arthur's Seat. The weather was cloudy, but the view of the city was fantastic. Kate took about a hundred photos, and I laughed at her all day! In the afternoon we visited the castle. It stands on a huge rock and it was very crowded. I bought a scarf as a souvenir, and Kate bought some chocolate for our parents. On Sunday we wanted to see a museum, but we got up too late and nearly missed our train home. Next time I will stay for a whole week."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What went wrong on the journey to Edinburgh?",
+     "op": [
+      "The hotel was full.",
+      "The train arrived late.",
+      "They lost their tickets.",
+      "They took the wrong train."
+     ],
+     "r": 1,
+     "exp": "O texto diz que o trem saiu de Londres 'forty minutes late'. O hotel estava reservado e não houve problema com bilhetes."
+    },
+    {
+     "t": "gap",
+     "q": "They didn't ___ much time on Friday, so they only walked around the Old Town.",
+     "resp": [
+      "have"
+     ],
+     "exp": "Depois de didn't usamos o verbo no infinitivo sem to: didn't have."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "Last month my sister and I spent a weekend in Edinburgh.",
+     "exp": "Spent tem som /spent/. Edinburgh se lê 'ÉDinbra', com a última sílaba bem fraca."
+    },
+    {
+     "t": "mc",
+     "q": "Why didn't the writer visit a museum on Sunday?",
+     "op": [
+      "It was closed.",
+      "It was too expensive.",
+      "They woke up too late.",
+      "Kate was ill."
+     ],
+     "r": 2,
+     "exp": "No texto: 'we got up too late and nearly missed our train'. Eles não falam em museu fechado nem em preço."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "booked",
+      "the",
+      "trip",
+      "two",
+      "weeks",
+      "before"
+     ],
+     "resp": "We booked the trip two weeks before",
+     "exp": "Past simple em ordem normal: sujeito + verbo + objeto + expressão de tempo.",
+     "alt": [
+      "Two weeks before we booked the trip"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Kate ___ some chocolate for their parents.",
+     "resp": [
+      "bought"
+     ],
+     "exp": "Buy é irregular: buy - bought no past simple."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: onde você passou suas últimas férias ou um fim de semana diferente?",
+     "frase": "Where did you go on your last holiday or weekend away?",
+     "modelo": "Last year I went to the beach with my family. We stayed for five days and the weather was great.",
+     "min": 8,
+     "chave": [
+      "went",
+      "last",
+      "stayed",
+      "visited",
+      "spent"
+     ],
+     "exp": "Use past simple: I went to..., We stayed..., It was... Fale pelo menos duas frases."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer think about a longer stay in Edinburgh?",
+     "op": [
+      "It would be too expensive.",
+      "It would be a good idea next time.",
+      "Kate doesn't want to go again.",
+      "A weekend was long enough."
+     ],
+     "r": 1,
+     "exp": "A última frase: 'Next time I will stay for a whole week.' O autor quer ficar mais tempo."
+    },
+    {
+     "t": "gap",
+     "q": "On Sunday they nearly missed their train because they got up too ___.",
+     "resp": [
+      "late"
+     ],
+     "exp": "O texto diz: 'we got up too late and nearly missed our train home'. Too + adjetivo/advérbio = demais."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Have you ever tried it?",
+   "objetivo": "Entender experiências de vida e quanto tempo algo dura em um texto sobre tecnologia.",
+   "foco": "Present perfect vs past simple; ever, never, already, yet, for, since",
+   "explicacao": [
+    "Present perfect = have/has + particípio. Usamos para experiências sem data e para situações que continuam: I have used this app for two years.",
+    "Com tempo passado definido (yesterday, in 2019, last week) usamos past simple: I bought it in 2019.",
+    "For + duração (for three years). Since + ponto de partida (since 2020).",
+    "Ever, never, already, yet, just aparecem muito com present perfect."
+   ],
+   "vocab": [
+    {
+     "en": "to download",
+     "pt": "baixar (arquivo, app)"
+    },
+    {
+     "en": "to upgrade",
+     "pt": "atualizar, trocar por um melhor"
+    },
+    {
+     "en": "battery",
+     "pt": "bateria"
+    },
+    {
+     "en": "screen",
+     "pt": "tela"
+    },
+    {
+     "en": "to break",
+     "pt": "quebrar"
+    },
+    {
+     "en": "to replace",
+     "pt": "substituir"
+    },
+    {
+     "en": "device",
+     "pt": "aparelho"
+    },
+    {
+     "en": "reliable",
+     "pt": "confiável"
+    }
+   ],
+   "material": {
+    "titulo": "My phone and me",
+    "texto": "I have had my current phone for almost four years, and I have never dropped it, which is surprising because I am quite careless. My first phone was a very simple one. My parents gave it to me in 2015 and I used it only for calls and texts. Since then I have owned five different models. The last two I bought second-hand, because new ones are so expensive. My friend Tom has just upgraded to a phone with three cameras, but I haven't felt the need to change mine yet. It still works well, although the battery doesn't last as long as it used to. I've already replaced the screen once, after I broke it in a taxi. Some people say we should change our devices every two years, but I think that is a waste of money and bad for the environment. Have you ever repaired a phone yourself? I haven't, but I have watched many videos about it, and next month I'm going to try to change the battery."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How long has the writer had the phone?",
+     "op": [
+      "since 2015",
+      "for about four years",
+      "for two years",
+      "since last month"
+     ],
+     "r": 1,
+     "exp": "O texto diz 'almost four years'. Since 2015 é quando ganhou o primeiro celular, não o atual."
+    },
+    {
+     "t": "gap",
+     "q": "I have ___ dropped my phone, even though I am careless.",
+     "resp": [
+      "never"
+     ],
+     "exp": "Never com present perfect = nunca na vida até agora."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "I have owned five different models since then.",
+     "exp": "Owned: /ound/. Different tem três sílabas só na fala rápida: DIF-rent."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer say about the screen?",
+     "op": [
+      "It has never broken.",
+      "Tom replaced it.",
+      "It was repaired after an accident.",
+      "It was replaced twice."
+     ],
+     "r": 2,
+     "exp": "'I've already replaced the screen once, after I broke it in a taxi.' Foi trocada uma vez, depois de quebrar."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Tom",
+      "has",
+      "just",
+      "upgraded",
+      "to",
+      "a",
+      "new",
+      "phone"
+     ],
+     "resp": "Tom has just upgraded to a new phone",
+     "exp": "Just fica entre has e o particípio: has just upgraded.",
+     "alt": [
+      "Tom has just upgraded to a new phone"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "My parents gave me my first phone ___ 2015.",
+     "resp": [
+      "in"
+     ],
+     "exp": "Com anos usamos in. Atenção: 'in 2015' é tempo definido, por isso o texto usa past simple (gave)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: há quanto tempo você tem seu celular?",
+     "frase": "How long have you had your phone?",
+     "modelo": "I have had my phone for two years. I bought it in 2023.",
+     "min": 6,
+     "chave": [
+      "for",
+      "since",
+      "had",
+      "years",
+      "months"
+     ],
+     "exp": "Use have had + for/since. Ex.: I've had it for a year / since January."
+    },
+    {
+     "t": "mc",
+     "q": "What is the writer's attitude to changing phones every two years?",
+     "op": [
+      "He thinks it is necessary.",
+      "He thinks it is a bad idea.",
+      "He has done it himself.",
+      "He is not sure."
+     ],
+     "r": 1,
+     "exp": "Ele diz 'a waste of money and bad for the environment'. Atitude negativa."
+    },
+    {
+     "t": "gap",
+     "q": "My phone's battery doesn't last as long ___ it used to.",
+     "resp": [
+      "as"
+     ],
+     "exp": "A estrutura é not as long as: não dura tanto quanto antes."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "School days then and now",
+   "objetivo": "Compreender comparações entre o passado e o presente usando used to.",
+   "foco": "used to + infinitive; would for past habits; contrast with present simple",
+   "explicacao": [
+    "Used to + verbo base fala de hábitos ou estados do passado que não existem mais: I used to walk to school.",
+    "Negativa: didn't use to. Pergunta: Did you use to...? (sem o d final).",
+    "Não usamos used to para algo que aconteceu uma vez: Last year I went to Paris (não 'used to go').",
+    "Cuidado: be used to + -ing significa estar acostumado: I'm used to getting up early."
+   ],
+   "vocab": [
+    {
+     "en": "to walk",
+     "pt": "ir a pé"
+    },
+    {
+     "en": "playground",
+     "pt": "pátio de recreio"
+    },
+    {
+     "en": "strict",
+     "pt": "rígido"
+    },
+    {
+     "en": "homework",
+     "pt": "lição de casa"
+    },
+    {
+     "en": "laptop",
+     "pt": "notebook"
+    },
+    {
+     "en": "to share",
+     "pt": "dividir"
+    },
+    {
+     "en": "to get used to",
+     "pt": "acostumar-se"
+    },
+    {
+     "en": "uniform",
+     "pt": "uniforme"
+    }
+   ],
+   "material": {
+    "titulo": "Grandad remembers",
+    "texto": "My grandad is seventy-two, and he loves telling us about school when he was young. He used to walk five kilometres every day, because there wasn't a bus in his village. In winter, he often arrived with wet shoes. The classroom was very different from ours. There used to be forty children in one room, and the teacher was strict. Nobody talked without permission, and pupils who forgot their homework had to stay after school. There weren't any computers, so everything was written by hand. Grandad says that he didn't use to enjoy maths, but he loved playing football in the playground at lunchtime with a ball made of old socks! Today, things are different. My sister uses a tablet in class and I send my homework by email. However, Grandad thinks something important has been lost. He says children used to share more and spend more time outdoors, while now we are used to looking at screens all day. I don't completely agree, but I understand what he means."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why did Grandad walk to school?",
+     "op": [
+      "He liked exercise.",
+      "There was no bus.",
+      "His shoes were wet.",
+      "The teacher asked him to."
+     ],
+     "r": 1,
+     "exp": "O texto diz: 'because there wasn't a bus in his village'."
+    },
+    {
+     "t": "gap",
+     "q": "Grandad ___ to walk five kilometres every day.",
+     "resp": [
+      "used"
+     ],
+     "exp": "Used to + verbo base para hábito passado."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "There used to be forty children in one room.",
+     "exp": "Used to se lê /iust tu/. Forty: FÓR-ti, sem o u de four."
+    },
+    {
+     "t": "mc",
+     "q": "What was school like for Grandad?",
+     "op": [
+      "Pupils did a lot on computers.",
+      "Teachers were relaxed.",
+      "Pupils had to follow strict rules.",
+      "Classes were small."
+     ],
+     "r": 2,
+     "exp": "Strict, ninguém falava sem permissão, e quem esquecia a lição ficava depois da aula. Eram 40 crianças por sala."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "He",
+      "didn't",
+      "use",
+      "to",
+      "enjoy",
+      "maths"
+     ],
+     "resp": "He didn't use to enjoy maths",
+     "exp": "Na negativa: didn't + use to (sem o d).",
+     "alt": [
+      "He didn't use to enjoy maths"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "My sister ___ a tablet in class nowadays.",
+     "resp": [
+      "uses",
+      "is using"
+     ],
+     "exp": "É uma ação do presente. O 'used to' é só para o passado, por isso aqui usamos present simple."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você costumava fazer quando era criança e não faz mais?",
+     "frase": "What did you use to do when you were a child?",
+     "modelo": "When I was a child, I used to play outside every afternoon. Now I study more.",
+     "min": 8,
+     "chave": [
+      "used",
+      "play",
+      "when",
+      "child",
+      "every"
+     ],
+     "exp": "Use I used to + verbo: I used to play football every day."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer think about Grandad's opinion?",
+     "op": [
+      "He agrees completely.",
+      "He thinks Grandad is wrong.",
+      "He partly agrees.",
+      "He doesn't understand it."
+     ],
+     "r": 2,
+     "exp": "'I don't completely agree, but I understand what he means.' Concorda em parte."
+    },
+    {
+     "t": "gap",
+     "q": "We are used to ___ at screens all day.",
+     "resp": [
+      "looking"
+     ],
+     "exp": "Be used to + -ing = estar acostumado a. Look at → looking."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Plans for the future",
+   "objetivo": "Distinguir planos, previsões e decisões do momento em um texto sobre trabalho.",
+   "foco": "Future forms: will, be going to, present continuous; time clauses (when, as soon as)",
+   "explicacao": [
+    "Going to: planos e intenções, ou previsões com evidência: I'm going to apply for a job. Look at those clouds - it's going to rain.",
+    "Present continuous para arranjos marcados: I'm meeting my manager at ten tomorrow.",
+    "Will: decisões na hora, promessas e previsões: I'll help you. I think she'll get the job.",
+    "Depois de when, as soon as, before e until, falando de futuro, usamos o present simple: I'll call you when I arrive."
+   ],
+   "vocab": [
+    {
+     "en": "to apply for",
+     "pt": "candidatar-se a"
+    },
+    {
+     "en": "interview",
+     "pt": "entrevista"
+    },
+    {
+     "en": "manager",
+     "pt": "gerente"
+    },
+    {
+     "en": "salary",
+     "pt": "salário"
+    },
+    {
+     "en": "to hire",
+     "pt": "contratar"
+    },
+    {
+     "en": "experience",
+     "pt": "experiência"
+    },
+    {
+     "en": "to be in charge of",
+     "pt": "ser responsável por"
+    },
+    {
+     "en": "schedule",
+     "pt": "programação"
+    }
+   ],
+   "material": {
+    "titulo": "Starting a new job",
+    "texto": "Next Monday I'm starting a new job at a travel agency, and I'm a bit nervous. The interview was two weeks ago, and the manager called me yesterday to say that I got the position. I'm meeting her at nine o'clock and she's going to show me around the office. After that, a colleague called Rachel will explain my daily tasks. I think I'll spend the first week learning the computer system, which is quite complicated. The salary isn't very high, but the company is going to pay for an English course, which is great for me. In the future, I'm planning to become a team leader, although I know this probably won't happen for a few years. My friends say I'll be fine, and my mum has already promised to cook my favourite dinner as soon as I get home on Monday evening. I hope I'll make some new friends there. If everything goes well, I'll invite the whole team to a barbecue in the summer."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What will happen on Monday morning?",
+     "op": [
+      "The writer will have an interview.",
+      "Rachel will give a computer course.",
+      "The manager will show the writer the office.",
+      "The writer will cook dinner."
+     ],
+     "r": 2,
+     "exp": "'I'm meeting her at nine o'clock and she's going to show me around the office.' Rachel só explica as tarefas depois."
+    },
+    {
+     "t": "gap",
+     "q": "My mum has promised that she ___ cook my favourite dinner.",
+     "resp": [
+      "will",
+      "'ll"
+     ],
+     "exp": "Promessa: usamos will. No texto: my mum has already promised to cook..."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "I'm starting a new job at a travel agency next Monday.",
+     "exp": "Agency: EI-djen-si. Starting: a primeira sílaba é forte, STAR-ting."
+    },
+    {
+     "t": "mc",
+     "q": "What is good about the new job, according to the writer?",
+     "op": [
+      "The high salary.",
+      "The free English course.",
+      "The short working day.",
+      "The easy computer system."
+     ],
+     "r": 1,
+     "exp": "'the company is going to pay for an English course'. O salário não é alto e o sistema é complicado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "will",
+      "call",
+      "you",
+      "as",
+      "soon",
+      "as",
+      "I",
+      "arrive"
+     ],
+     "resp": "I will call you as soon as I arrive",
+     "exp": "Depois de as soon as, usamos o present simple (I arrive), não 'will arrive'.",
+     "alt": [
+      "As soon as I arrive I will call you"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "I'll tell you the news as soon as I ___ home.",
+     "resp": [
+      "get",
+      "arrive",
+      "am",
+      "reach"
+     ],
+     "exp": "Depois de as soon as o verbo fica no present simple, mesmo falando do futuro."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você vai fazer no próximo fim de semana?",
+     "frase": "What are you going to do next weekend?",
+     "modelo": "I'm going to visit my grandparents on Saturday. On Sunday I'm going to study.",
+     "min": 8,
+     "chave": [
+      "going",
+      "next",
+      "weekend",
+      "Saturday",
+      "Sunday",
+      "will"
+     ],
+     "exp": "Use I'm going to + verbo ou I'm meeting... para planos já marcados."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer want to do in the long term?",
+     "op": [
+      "Change company soon.",
+      "Become a team leader.",
+      "Organise a barbecue every week.",
+      "Leave the travel agency."
+     ],
+     "r": 1,
+     "exp": "'I'm planning to become a team leader.' O churrasco é só uma ideia para o verão."
+    },
+    {
+     "t": "gap",
+     "q": "If everything ___ well, I'll invite the whole team to a barbecue.",
+     "resp": [
+      "goes"
+     ],
+     "exp": "Depois de if (primeiro condicional) usamos o present simple: if everything goes well."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Before the film started",
+   "objetivo": "Seguir a ordem de acontecimentos num relato usando past simple e past perfect.",
+   "foco": "Past perfect vs past simple; before, after, when, by the time",
+   "explicacao": [
+    "Past perfect = had + particípio. Mostra uma ação anterior a outra no passado: When we arrived, the film had already started.",
+    "A ação que veio primeiro usa past perfect; a mais recente usa past simple.",
+    "Palavras úteis: already, just, before, after, by the time, never ... before.",
+    "Se a ordem já está clara com before/after, o past simple também é possível: After he left, I went to bed."
+   ],
+   "vocab": [
+    {
+     "en": "to queue",
+     "pt": "fazer fila"
+    },
+    {
+     "en": "ticket",
+     "pt": "ingresso"
+    },
+    {
+     "en": "to run out of",
+     "pt": "ficar sem"
+    },
+    {
+     "en": "seat",
+     "pt": "assento"
+    },
+    {
+     "en": "trailer",
+     "pt": "prévia de filme"
+    },
+    {
+     "en": "plot",
+     "pt": "enredo"
+    },
+    {
+     "en": "to cheer",
+     "pt": "aplaudir, torcer"
+    },
+    {
+     "en": "to leave",
+     "pt": "sair, partir"
+    }
+   ],
+   "material": {
+    "titulo": "A night at the cinema",
+    "texto": "Last Friday I went to see a new science-fiction film with my cousins. We had planned the evening a week before, and we had agreed to meet outside the cinema at six. I got there early, but when I arrived, a long queue had already formed. Unfortunately, my cousin Daniel had forgotten the tickets at home, so he had to go back for them. By the time he returned, the film had started and the staff had closed the doors for the first ten minutes. We were annoyed, but we sat in the bar and had a snack. When we finally went in, we had missed the beginning, so the plot was hard to follow. Luckily, my other cousin had seen the trailer, and she whispered the story to us. The film ended with a big battle, and everybody in the room cheered. After we left, we agreed that we had never seen such an exciting ending. Next time, I will check the tickets myself before we leave home."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why did the group have to wait before going into the cinema?",
+     "op": [
+      "The cinema was closed.",
+      "Daniel had left the tickets at home.",
+      "They arrived at the wrong time.",
+      "They bought snacks first."
+     ],
+     "r": 1,
+     "exp": "'Daniel had forgotten the tickets at home, so he had to go back'. Eles ficaram esperando por ele."
+    },
+    {
+     "t": "gap",
+     "q": "When I arrived, a long queue ___ already formed.",
+     "resp": [
+      "had"
+     ],
+     "exp": "A fila se formou ANTES da chegada: past perfect, had + formed."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "By the time he returned, the film had started.",
+     "exp": "Returned: ri-TÊRND. The film: o 'th' de the é com a língua entre os dentes."
+    },
+    {
+     "t": "mc",
+     "q": "Why was the plot difficult to follow at first?",
+     "op": [
+      "The film was in another language.",
+      "They missed the start of the film.",
+      "They hadn't read the book.",
+      "The sound was bad."
+     ],
+     "r": 1,
+     "exp": "'We had missed the beginning, so the plot was hard to follow.'"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "had",
+      "agreed",
+      "to",
+      "meet",
+      "at",
+      "six"
+     ],
+     "resp": "We had agreed to meet at six",
+     "exp": "Past perfect: had + particípio (agreed). Aqui o acordo veio antes do encontro.",
+     "alt": [
+      "We had agreed to meet at six"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "After we had left the cinema, we agreed that we ___ never seen such an exciting ending.",
+     "resp": [
+      "had"
+     ],
+     "exp": "Em 'we had never seen' falamos de algo anterior ao momento da conversa: past perfect."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você tinha feito antes de sair de casa hoje?",
+     "frase": "What had you done before you left home today?",
+     "modelo": "Before I left home, I had had breakfast and I had packed my bag.",
+     "min": 8,
+     "chave": [
+      "had",
+      "before",
+      "breakfast",
+      "packed",
+      "brushed"
+     ],
+     "exp": "Use had + particípio: I had eaten, I had finished my homework."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer decide to do in the future?",
+     "op": [
+      "Never go to the cinema again.",
+      "Invite fewer people.",
+      "Take care of the tickets himself.",
+      "Arrive after the film starts."
+     ],
+     "r": 2,
+     "exp": "'Next time, I will check the tickets myself before we leave home.'"
+    },
+    {
+     "t": "gap",
+     "q": "My cousin ___ the trailer, so she knew the story.",
+     "resp": [
+      "had seen"
+     ],
+     "exp": "Ela viu o trailer antes do filme: had seen (past perfect). Resposta de duas palavras: had seen."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Feeling under the weather",
+   "objetivo": "Entender conselhos de saúde e relações de causa e efeito com condicionais.",
+   "foco": "Zero and first conditional; unless, as long as; health vocabulary",
+   "explicacao": [
+    "Zero conditional (if + present, present): verdades gerais. If you don't sleep, you feel tired.",
+    "First conditional (if + present, will + verbo): situações reais no futuro. If you rest, you'll feel better.",
+    "Unless = if ... not: Unless you drink water, you'll get a headache.",
+    "As long as = desde que. Podemos inverter a ordem: You'll feel better if you rest."
+   ],
+   "vocab": [
+    {
+     "en": "headache",
+     "pt": "dor de cabeça"
+    },
+    {
+     "en": "sore throat",
+     "pt": "dor de garganta"
+    },
+    {
+     "en": "to recover",
+     "pt": "recuperar-se"
+    },
+    {
+     "en": "to rest",
+     "pt": "descansar"
+    },
+    {
+     "en": "medicine",
+     "pt": "remédio"
+    },
+    {
+     "en": "fever",
+     "pt": "febre"
+    },
+    {
+     "en": "advice",
+     "pt": "conselho (não contável)"
+    },
+    {
+     "en": "to catch a cold",
+     "pt": "pegar um resfriado"
+    }
+   ],
+   "material": {
+    "titulo": "Doctor's advice",
+    "texto": "Dr Patel's column: 'How to avoid winter illnesses'. Many people catch a cold every winter, but there are simple ways to protect yourself. If you wash your hands often, you reduce the risk of infection by almost half. Many patients think that medicine can solve everything, but that is not true. Unless you sleep at least seven hours a night, your body will not fight germs properly. Another tip is to eat fruit and vegetables every day. If you eat well, your body usually recovers more quickly. Exercise matters too. Of course, you should not run in the rain if you have a fever, but a gentle walk is fine as long as you feel comfortable. Some of my patients say that they have no time to exercise. I tell them that ten minutes a day is enough. Finally, if you have a sore throat for more than a week, make an appointment with your doctor. Don't wait until it gets worse. Remember that small habits make a big difference. If you follow this advice, you will probably spend fewer days in bed this winter."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "According to Dr Patel, what happens if you wash your hands often?",
+     "op": [
+      "You never catch a cold.",
+      "You have a lower risk of infection.",
+      "You need less sleep.",
+      "You recover more quickly."
+     ],
+     "r": 1,
+     "exp": "'you reduce the risk of infection by almost half'. Reduzir o risco não é o mesmo que nunca ficar doente."
+    },
+    {
+     "t": "gap",
+     "q": "___ you sleep at least seven hours, your body will not fight germs properly.",
+     "resp": [
+      "Unless"
+     ],
+     "exp": "Unless = if you don't. Unless you sleep... = se você não dormir..."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "If you eat well, your body usually recovers more quickly.",
+     "exp": "Recovers: ri-CÂ-vers, força na segunda sílaba. Quickly: QUI-kli."
+    },
+    {
+     "t": "mc",
+     "q": "What does the doctor say about exercise?",
+     "op": [
+      "Everyone must run every day.",
+      "Short activity can be enough.",
+      "It is dangerous in winter.",
+      "Patients with no time should not try."
+     ],
+     "r": 1,
+     "exp": "'ten minutes a day is enough'. Uma caminhada leve também serve, desde que a pessoa se sinta bem."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "If",
+      "you",
+      "rest",
+      "you",
+      "will",
+      "feel",
+      "better"
+     ],
+     "resp": "If you rest you will feel better",
+     "exp": "Primeiro condicional: if + present simple, will + verbo base.",
+     "alt": [
+      "You will feel better if you rest"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "You can go for a walk as long as you ___ comfortable.",
+     "resp": [
+      "feel"
+     ],
+     "exp": "Depois de as long as usamos o present simple, como depois de if."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você faz quando está com dor de cabeça?",
+     "frase": "What do you do if you have a headache?",
+     "modelo": "If I have a headache, I drink water and I rest for an hour.",
+     "min": 8,
+     "chave": [
+      "if",
+      "water",
+      "rest",
+      "sleep",
+      "medicine",
+      "tablet"
+     ],
+     "exp": "Zero conditional: If I have a headache, I take a tablet / I lie down."
+    },
+    {
+     "t": "mc",
+     "q": "What is the doctor's main purpose in this text?",
+     "op": [
+      "To sell a new medicine.",
+      "To advise readers how to stay healthy.",
+      "To explain why winter is dangerous.",
+      "To describe his patients' problems."
+     ],
+     "r": 1,
+     "exp": "O texto inteiro dá conselhos práticos (hands, sleep, food, exercise). Não vende nada nem descreve só os pacientes."
+    },
+    {
+     "t": "gap",
+     "q": "If the sore throat gets worse, you ___ see a doctor.",
+     "resp": [
+      "should",
+      "must",
+      "need to",
+      "have to"
+     ],
+     "exp": "Para conselho forte: should/must. No texto: make an appointment with your doctor."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "If we all did a little",
+   "objetivo": "Entender hipóteses sobre meio ambiente e sua lógica (se... então).",
+   "foco": "Second conditional: if + past simple, would + verb; I wish; if I were you",
+   "explicacao": [
+    "Second conditional: situações imaginárias ou improváveis. If I had a garden, I would grow vegetables.",
+    "Depois de if usamos past simple (mas o sentido é presente ou futuro). Com I/he/she/it podemos usar were: If I were you...",
+    "Would + verbo base na outra parte. Contração: I'd, we'd.",
+    "Para conselhos: If I were you, I'd recycle more. Compare com o first conditional, que é uma possibilidade real."
+   ],
+   "vocab": [
+    {
+     "en": "to recycle",
+     "pt": "reciclar"
+    },
+    {
+     "en": "waste",
+     "pt": "lixo, desperdício"
+    },
+    {
+     "en": "to pollute",
+     "pt": "poluir"
+    },
+    {
+     "en": "bin",
+     "pt": "lixeira (britânico)"
+    },
+    {
+     "en": "electricity",
+     "pt": "eletricidade"
+    },
+    {
+     "en": "to switch off",
+     "pt": "desligar"
+    },
+    {
+     "en": "landfill",
+     "pt": "aterro sanitário"
+    },
+    {
+     "en": "reusable",
+     "pt": "reutilizável"
+    }
+   ],
+   "material": {
+    "titulo": "Small changes, big results",
+    "texto": "What would happen if everyone in our town recycled properly? According to a local study, we would send nearly half as much rubbish to landfill. At the moment, many people put plastic in the wrong bin because they are not sure which one to use. If the council sent clear instructions to every home, the situation would probably improve. Some residents say they would recycle more if the bins were closer to their houses. Others would use public transport if buses came more often. The mayor, Ms Clark, believes that we could save a lot of electricity if shops turned off their lights at night. 'If I were in charge of every shop, I would make it a rule,' she told reporters. Meanwhile, a group of students has started a project to give out free reusable bags. They say that if everyone brought their own bag, we wouldn't need so many plastic ones. It is easy to say that one person cannot change anything, but if each of us did a little, the result would be surprising."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "According to the study, what would happen if everyone recycled well?",
+     "op": [
+      "The town would have no rubbish.",
+      "Landfill waste would fall a lot.",
+      "The council would close the landfill.",
+      "Plastic would disappear."
+     ],
+     "r": 1,
+     "exp": "'we would send nearly half as much rubbish to landfill'. Cai muito, mas não some."
+    },
+    {
+     "t": "gap",
+     "q": "If buses ___ more often, some people would use public transport.",
+     "resp": [
+      "came",
+      "ran"
+     ],
+     "exp": "Second conditional: if + past simple. 'came' (ou ran) = past simple. O texto usa came."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "If everyone brought their own bag, we wouldn't need so many plastic ones.",
+     "exp": "Wouldn't: UÚ-dnt. Brought: /bró:t/, o 'gh' não se pronuncia."
+    },
+    {
+     "t": "mc",
+     "q": "Why do some residents not recycle more?",
+     "op": [
+      "They don't care about the environment.",
+      "The bins are too far from their homes.",
+      "They are too busy.",
+      "The council has no instructions."
+     ],
+     "r": 1,
+     "exp": "'they would recycle more if the bins were closer to their houses'. Ou seja, os recipientes estão longe."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "If",
+      "I",
+      "were",
+      "you",
+      "I",
+      "would",
+      "recycle",
+      "more"
+     ],
+     "resp": "If I were you I would recycle more",
+     "exp": "If I were you + would: forma comum de dar conselho.",
+     "alt": [
+      "I would recycle more if I were you"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "If shops turned off their lights at night, we ___ save a lot of electricity.",
+     "resp": [
+      "would",
+      "could",
+      "'d"
+     ],
+     "exp": "Resultado imaginário: would (ou could, como no texto)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: o que você faria para ajudar o meio ambiente se tivesse mais tempo?",
+     "frase": "What would you do for the environment if you had more time?",
+     "modelo": "If I had more time, I would plant trees and I would recycle everything.",
+     "min": 8,
+     "chave": [
+      "would",
+      "if",
+      "plant",
+      "recycle",
+      "clean",
+      "walk"
+     ],
+     "exp": "Use If I had more time, I would + verbo. Ex.: I would join a clean-up day."
+    },
+    {
+     "t": "mc",
+     "q": "What is the writer's message in the last sentence?",
+     "op": [
+      "One person can't help.",
+      "Little actions by many people matter.",
+      "Students should lead every project.",
+      "Bags are the main problem."
+     ],
+     "r": 1,
+     "exp": "'if each of us did a little, the result would be surprising'. A ideia: pequenas ações de todos fazem diferença."
+    },
+    {
+     "t": "gap",
+     "q": "I wish I ___ a garden, because I would grow my own vegetables.",
+     "resp": [
+      "had"
+     ],
+     "exp": "Wish + past simple expressa desejo irreal sobre o presente: I wish I had..."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "How is it made?",
+   "objetivo": "Entender a descrição de um processo em que o foco é a ação e não quem a faz.",
+   "foco": "Passive voice: present, past and future; by + agent; modal passive",
+   "explicacao": [
+    "Passiva = be + particípio. Foco no que acontece com algo: Chocolate is made from cocoa beans.",
+    "Passado: The factory was built in 1950. Futuro: It will be opened next year.",
+    "Com modais: The product can be recycled. The door must be closed.",
+    "Usamos by + agente só quando é importante: The book was written by a famous author."
+   ],
+   "vocab": [
+    {
+     "en": "to grow",
+     "pt": "cultivar, crescer"
+    },
+    {
+     "en": "to harvest",
+     "pt": "colher"
+    },
+    {
+     "en": "to export",
+     "pt": "exportar"
+    },
+    {
+     "en": "beans",
+     "pt": "grãos, feijões"
+    },
+    {
+     "en": "to roast",
+     "pt": "torrar"
+    },
+    {
+     "en": "to package",
+     "pt": "embalar"
+    },
+    {
+     "en": "ingredients",
+     "pt": "ingredientes"
+    },
+    {
+     "en": "to ship",
+     "pt": "enviar (por navio)"
+    }
+   ],
+   "material": {
+    "titulo": "From bean to bar",
+    "texto": "Chocolate is made from the seeds of the cacao tree, which is grown in countries with a hot, wet climate such as Ghana, Brazil and Ecuador. When the fruit is ripe, it is picked by hand and opened, and the seeds are taken out. They are left in the sun for about a week, so that the flavour can develop. After that, the beans are dried and put into large bags. Most of them are shipped to Europe, where chocolate factories were built more than a hundred years ago. In the factory, the beans are roasted and then crushed into a thick paste. Sugar and milk are added, and the mixture is mixed for several hours. Finally, the chocolate is poured into moulds, cooled and wrapped. It can be sold within a few days. Some companies say that they will use only fairly paid workers in the future, but critics think this should be checked by independent organisations. Meanwhile, many shoppers are looking for chocolate that has been produced in a more ethical way, and are willing to pay a little more for it."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What happens to the cacao seeds just after they are taken out of the fruit?",
+     "op": [
+      "They are sent to Europe.",
+      "They are crushed.",
+      "They are left in the sun.",
+      "They are mixed with milk."
+     ],
+     "r": 2,
+     "exp": "'They are left in the sun for about a week'. A ordem dos passos importa; o envio e a trituração vêm depois."
+    },
+    {
+     "t": "gap",
+     "q": "Cacao trees ___ grown in countries with a hot, wet climate.",
+     "resp": [
+      "are"
+     ],
+     "exp": "Passiva no presente: are + particípio (grown)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "The beans are roasted and then crushed into a thick paste.",
+     "exp": "Roasted: /ROU-stid/. Crushed termina em /t/: crusht. Thick: o 'th' fraco, língua entre os dentes."
+    },
+    {
+     "t": "mc",
+     "q": "Why does the writer mention independent organisations?",
+     "op": [
+      "They make the chocolate.",
+      "Critics want them to check working conditions.",
+      "They buy the beans.",
+      "They lower prices."
+     ],
+     "r": 1,
+     "exp": "'critics think this should be checked by independent organisations' - verificar se os trabalhadores recebem salário justo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "fruit",
+      "is",
+      "picked",
+      "by",
+      "hand"
+     ],
+     "resp": "The fruit is picked by hand",
+     "exp": "Passiva simples: sujeito + is + particípio + by + agente/modo.",
+     "alt": [
+      "The fruit is picked by hand"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "The first chocolate factories ___ built over a hundred years ago.",
+     "resp": [
+      "were"
+     ],
+     "exp": "Passado passivo, sujeito plural: were + built."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: de onde vem um produto que você usa todos os dias? Use a passiva.",
+     "frase": "Where is your favourite food made?",
+     "modelo": "My favourite food is made in Brazil. It is sold in every supermarket.",
+     "min": 8,
+     "chave": [
+      "made",
+      "sold",
+      "grown",
+      "produced",
+      "is",
+      "are"
+     ],
+     "exp": "Use is/are + particípio: It is made..., They are grown..."
+    },
+    {
+     "t": "mc",
+     "q": "What can we understand about shoppers from the last sentence?",
+     "op": [
+      "They don't care where chocolate comes from.",
+      "Some will spend more money on ethical products.",
+      "They prefer cheaper chocolate.",
+      "They trust all companies."
+     ],
+     "r": 1,
+     "exp": "'are willing to pay a little more for it' - alguns pagam mais por chocolate produzido de forma ética."
+    },
+    {
+     "t": "gap",
+     "q": "This chocolate bar ___ be eaten within two weeks, as the label says.",
+     "resp": [
+      "must",
+      "should",
+      "has to",
+      "needs to"
+     ],
+     "exp": "Modal + be + particípio: must be eaten. 'Has to be eaten' também funciona."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "The people who help us",
+   "objetivo": "Identificar a quem ou a que um pronome relativo se refere em textos sobre profissões.",
+   "foco": "Relative clauses: who, which, that, whose, where; defining and non-defining",
+   "explicacao": [
+    "Who para pessoas, which para coisas e that para ambos (em orações definidoras): A nurse is a person who looks after patients.",
+    "Whose indica posse: a teacher whose students love her. Where fala de lugar: the hospital where she works.",
+    "Orações definidoras identificam quem ou o quê: sem vírgulas. Podemos omitir that/who/which quando são objeto: the job (that) I want.",
+    "Orações não definidoras trazem informação extra, entre vírgulas, e não aceitam that: My boss, who is very kind, helps me."
+   ],
+   "vocab": [
+    {
+     "en": "nurse",
+     "pt": "enfermeiro(a)"
+    },
+    {
+     "en": "firefighter",
+     "pt": "bombeiro(a)"
+    },
+    {
+     "en": "engineer",
+     "pt": "engenheiro(a)"
+    },
+    {
+     "en": "to repair",
+     "pt": "consertar"
+    },
+    {
+     "en": "customer",
+     "pt": "cliente"
+    },
+    {
+     "en": "skills",
+     "pt": "habilidades"
+    },
+    {
+     "en": "shift",
+     "pt": "turno de trabalho"
+    },
+    {
+     "en": "employer",
+     "pt": "empregador"
+    }
+   ],
+   "material": {
+    "titulo": "Jobs that make a difference",
+    "texto": "Last week our school held a careers day, where parents talked about the jobs they do. The first speaker, Mr Lopes, is an engineer who designs bridges. He explained that the bridge which crosses our river was built by his company. His colleague, whose daughter is in my class, repairs old buildings. Then we listened to Mrs Evans, a nurse who works night shifts at the hospital where my grandmother was treated last year. She said that the part of her job that she likes best is meeting people from different backgrounds. 'It is a job which needs patience,' she told us, 'but it is also very rewarding.' The last speaker was a firefighter, Mr Cole, who showed us the special clothes that protect him from heat. He told us about the day when he rescued a cat from a tall tree. Everybody laughed! After the talks, I decided that I wanted a job where I could help people. I haven't chosen which one yet, but I'm going to look for volunteer work at the hospital next summer."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does Mr Lopes do?",
+     "op": [
+      "He repairs old buildings.",
+      "He designs bridges.",
+      "He works night shifts.",
+      "He rescues animals."
+     ],
+     "r": 1,
+     "exp": "'Mr Lopes is an engineer who designs bridges.' Quem conserta prédios é o colega dele."
+    },
+    {
+     "t": "gap",
+     "q": "Mrs Evans is a nurse ___ works at night.",
+     "resp": [
+      "who",
+      "that"
+     ],
+     "exp": "Para pessoa: who (ou that). No texto: a nurse who works night shifts."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "The special clothes protect him from heat.",
+     "exp": "Clothes: /clouz/, o 'th' quase não aparece. Heat: /hi:t/, vogal longa."
+    },
+    {
+     "t": "mc",
+     "q": "What does Mrs Evans like most about her job?",
+     "op": [
+      "The night hours.",
+      "Working with different kinds of people.",
+      "The salary.",
+      "The hospital building."
+     ],
+     "r": 1,
+     "exp": "'meeting people from different backgrounds' - pessoas de origens diferentes."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "hospital",
+      "where",
+      "she",
+      "works",
+      "is",
+      "big"
+     ],
+     "resp": "The hospital where she works is big",
+     "exp": "Where substitui in which / lugar. Ordem: the hospital + where + she works.",
+     "alt": [
+      "The hospital where she works is big"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Mr Lopes's colleague, ___ daughter is in my class, repairs buildings.",
+     "resp": [
+      "whose"
+     ],
+     "exp": "Whose indica posse: a filha do colega."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: que profissão você gostaria de ter e por quê? Use who ou where.",
+     "frase": "What job would you like to do in the future?",
+     "modelo": "I would like to be a doctor who helps children. I want a job where I can help people.",
+     "min": 8,
+     "chave": [
+      "who",
+      "where",
+      "which",
+      "doctor",
+      "teacher",
+      "job"
+     ],
+     "exp": "Use who/where: I want to be a teacher who..., I want to work in a place where..."
+    },
+    {
+     "t": "mc",
+     "q": "What can we say about the writer after the careers day?",
+     "op": [
+      "He wants to be a firefighter.",
+      "He is sure about his future job.",
+      "He wants to help people in his work.",
+      "He does not like hospitals."
+     ],
+     "r": 2,
+     "exp": "'I decided that I wanted a job where I could help people.' Mas ele ainda não escolheu qual (haven't chosen)."
+    },
+    {
+     "t": "gap",
+     "q": "The cat ___ Mr Cole rescued was in a tall tree.",
+     "resp": [
+      "that",
+      "which"
+     ],
+     "exp": "Cat é coisa/animal: that ou which. Como a lacuna só aceita palavra, 'that' e 'which' funcionam."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "An interview with the head teacher",
+   "objetivo": "Entender o que alguém disse e como isso é relatado por outra pessoa.",
+   "foco": "Reported speech: statements, questions, commands; say vs tell; backshift",
+   "explicacao": [
+    "No discurso indireto os tempos recuam: 'I like it' → She said (that) she liked it. 'I'm leaving' → He said he was leaving.",
+    "Present perfect e past simple viram past perfect: 'I have finished' → She said she had finished.",
+    "Say não leva pessoa: He said that... Tell leva: He told me that...",
+    "Perguntas viram afirmação (sem do/did): 'Where do you live?' → He asked where I lived. Ordens: 'Sit down' → She told us to sit down.",
+    "Mudam também: today → that day, tomorrow → the next day, here → there, now → then."
+   ],
+   "vocab": [
+    {
+     "en": "head teacher",
+     "pt": "diretor(a) de escola"
+    },
+    {
+     "en": "to announce",
+     "pt": "anunciar"
+    },
+    {
+     "en": "to ask",
+     "pt": "perguntar, pedir"
+    },
+    {
+     "en": "to tell",
+     "pt": "contar, dizer a alguém"
+    },
+    {
+     "en": "to suggest",
+     "pt": "sugerir"
+    },
+    {
+     "en": "timetable",
+     "pt": "horário de aulas"
+    },
+    {
+     "en": "exam results",
+     "pt": "resultados de provas"
+    },
+    {
+     "en": "to improve",
+     "pt": "melhorar"
+    }
+   ],
+   "material": {
+    "titulo": "News from school",
+    "texto": "Our school magazine interviewed the head teacher, Mrs Hall, last week. When the reporter asked her about the new timetable, she said that classes would start half an hour later from September. She explained that research had shown that teenagers learn better when they sleep more. The reporter asked whether students would have shorter lunch breaks, and Mrs Hall answered that the breaks would stay the same. Then she told us that the school was going to build a new library, which she hoped would open by Christmas. When she was asked what she was most proud of, she replied that exam results had improved every year since 2020. However, she admitted that attendance in the afternoon was still a problem. She suggested that students should join more clubs, and she told them to speak to their form teachers for information. At the end, the reporter wanted to know if she would ever leave the school. Mrs Hall laughed and said that she had no plans to go anywhere. 'I love my job,' she added."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What did Mrs Hall say about the timetable?",
+     "op": [
+      "Lunch would be shorter.",
+      "Lessons would begin later.",
+      "The day would finish earlier.",
+      "There would be fewer lessons."
+     ],
+     "r": 1,
+     "exp": "'classes would start half an hour later from September'. O intervalo do almoço continua igual."
+    },
+    {
+     "t": "gap",
+     "q": "The head teacher said that the school ___ going to build a new library.",
+     "resp": [
+      "was"
+     ],
+     "exp": "Discurso indireto: 'is going to' vira 'was going to'."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "She told us that the school was going to build a new library.",
+     "exp": "Library: LAI-bre-ri (não 'livraria'). Told us: /tould as/, liga as palavras."
+    },
+    {
+     "t": "mc",
+     "q": "What is Mrs Hall proud of?",
+     "op": [
+      "The new library.",
+      "Better exam results.",
+      "Afternoon lessons.",
+      "Many school clubs."
+     ],
+     "r": 1,
+     "exp": "'exam results had improved every year since 2020'. A biblioteca ainda será construída."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "asked",
+      "me",
+      "where",
+      "I",
+      "lived"
+     ],
+     "resp": "She asked me where I lived",
+     "exp": "Perguntas indiretas têm ordem afirmativa: where + sujeito + verbo (sem did).",
+     "alt": [
+      "She asked me where I lived"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Mrs Hall told them ___ speak to their form teachers.",
+     "resp": [
+      "to"
+     ],
+     "exp": "Ordem indireta: told + pessoa + to + verbo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: conte o que um amigo ou professor disse a você recentemente.",
+     "frase": "What did your teacher or a friend tell you recently?",
+     "modelo": "My teacher said that we had a test on Friday. She told us to study.",
+     "min": 8,
+     "chave": [
+      "said",
+      "told",
+      "asked",
+      "that",
+      "teacher"
+     ],
+     "exp": "Use said that... / told me that... Lembre do recuo dos tempos."
+    },
+    {
+     "t": "mc",
+     "q": "What can we understand about attendance?",
+     "op": [
+      "It improves in the afternoon.",
+      "It is a problem in the afternoon.",
+      "Mrs Hall does not think it matters.",
+      "It is better than in 2020."
+     ],
+     "r": 1,
+     "exp": "'attendance in the afternoon was still a problem' - a presença à tarde ainda é um problema."
+    },
+    {
+     "t": "gap",
+     "q": "The reporter asked ___ she would ever leave the school.",
+     "resp": [
+      "if",
+      "whether"
+     ],
+     "exp": "Perguntas de sim/não no discurso indireto usam if ou whether."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Who took the painting?",
+   "objetivo": "Tirar conclusões de pistas usando modais de dedução.",
+   "foco": "Modals of deduction: must, can't, might, may, could (+ be / have + past participle)",
+   "explicacao": [
+    "Must = quase certeza (positivo): He must be the thief. Can't = quase certeza (negativo): She can't be at home.",
+    "Might, may, could = possibilidade: They might be late.",
+    "Para o passado: modal + have + particípio. She must have left early. He can't have seen it.",
+    "Não use mustn't para dedução negativa: use can't."
+   ],
+   "vocab": [
+    {
+     "en": "clue",
+     "pt": "pista"
+    },
+    {
+     "en": "thief",
+     "pt": "ladrão"
+    },
+    {
+     "en": "to steal",
+     "pt": "roubar"
+    },
+    {
+     "en": "suspect",
+     "pt": "suspeito"
+    },
+    {
+     "en": "alibi",
+     "pt": "álibi"
+    },
+    {
+     "en": "footprint",
+     "pt": "pegada"
+    },
+    {
+     "en": "guard",
+     "pt": "guarda, segurança"
+    },
+    {
+     "en": "to disappear",
+     "pt": "desaparecer"
+    }
+   ],
+   "material": {
+    "titulo": "The missing painting",
+    "texto": "On Tuesday morning, staff at the City Museum found an empty frame on the wall of Room 4. A famous painting had disappeared during the night. Detective Marsh immediately started to look for clues. The alarm hadn't gone off, so the thief must have known the security code. There were wet footprints near the back door, which means the person must have come in from the garden, because it had rained all night. The guard, Mr Banks, said he had been asleep at the time, but the detective didn't believe him completely. 'He can't have slept through the noise,' she said. There were also two other suspects. The cleaner, Sara, had a key, but she was on holiday in Spain, so she can't have done it. The museum director, Mr Dean, had been in the building until late. 'It might have been him,' said Marsh, 'but I can't be sure yet.' By Wednesday, the police had found a small piece of green cloth caught on the back gate. 'This could be the answer,' said Detective Marsh. 'Whoever wears this jacket may be our thief.'"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why does the detective think the thief knew the security code?",
+     "op": [
+      "The guard told her.",
+      "The alarm did not ring.",
+      "The code was on the door.",
+      "The cleaner gave it to him."
+     ],
+     "r": 1,
+     "exp": "'The alarm hadn't gone off, so the thief must have known the security code.'"
+    },
+    {
+     "t": "gap",
+     "q": "The footprints were wet, so the thief ___ have come from the garden.",
+     "resp": [
+      "must"
+     ],
+     "exp": "Quase certeza sobre o passado: must have + particípio."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "He can't have slept through the noise.",
+     "exp": "Can't have: 'caint hav' em britânico /ka:nt/. Slept through: junte as palavras suavemente."
+    },
+    {
+     "t": "mc",
+     "q": "Why is Sara not a suspect?",
+     "op": [
+      "She had no key.",
+      "She was away from the country.",
+      "She was asleep.",
+      "She didn't like paintings."
+     ],
+     "r": 1,
+     "exp": "'she was on holiday in Spain, so she can't have done it.'"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It",
+      "might",
+      "have",
+      "been",
+      "the",
+      "director"
+     ],
+     "resp": "It might have been the director",
+     "exp": "Might have been = talvez tenha sido. Ordem: sujeito + modal + have + particípio.",
+     "alt": [
+      "It might have been the director"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "The green cloth ___ belong to the thief, but we need more proof.",
+     "resp": [
+      "could",
+      "may",
+      "might"
+     ],
+     "exp": "Possibilidade: could/may/might + verbo base. O texto usa could e may."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: seu amigo não atendeu o telefone. Dê duas possibilidades.",
+     "frase": "Your friend doesn't answer the phone. Why?",
+     "modelo": "He might be sleeping. He may be in the shower, or his phone could be on silent.",
+     "min": 8,
+     "chave": [
+      "might",
+      "may",
+      "could",
+      "must",
+      "sleeping",
+      "busy"
+     ],
+     "exp": "Use might/may/could + verbo: He might be busy."
+    },
+    {
+     "t": "mc",
+     "q": "What does Detective Marsh think about the museum director?",
+     "op": [
+      "He is definitely the thief.",
+      "He is certainly innocent.",
+      "He is possibly involved, but she has no proof.",
+      "He was in Spain."
+     ],
+     "r": 2,
+     "exp": "'It might have been him... but I can't be sure yet.' Ela suspeita, mas sem certeza."
+    },
+    {
+     "t": "gap",
+     "q": "Mr Banks says he was asleep, but he ___ have been, because the noise was so loud.",
+     "resp": [
+      "can't",
+      "cannot",
+      "couldn't"
+     ],
+     "exp": "Dedução negativa impossível: can't have been."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Keep fit, feel great",
+   "objetivo": "Entender a escolha entre -ing e infinitivo após verbos, adjetivos e preposições.",
+   "foco": "Gerund vs infinitive: enjoy/avoid/finish + -ing; decide/want/hope + to; stop/remember/try; after prepositions",
+   "explicacao": [
+    "Verbos + -ing: enjoy, avoid, finish, suggest, keep, mind. I enjoy swimming.",
+    "Verbos + to: decide, want, hope, plan, promise, learn. I decided to join a gym.",
+    "Depois de preposições usamos -ing: She is good at running. Thanks for helping.",
+    "Mudança de sentido: stop doing (parar de fazer) / stop to do (parar para fazer). Remember doing (lembrar do passado) / remember to do (não esquecer)."
+   ],
+   "vocab": [
+    {
+     "en": "gym",
+     "pt": "academia"
+    },
+    {
+     "en": "to be good at",
+     "pt": "ser bom em"
+    },
+    {
+     "en": "muscles",
+     "pt": "músculos"
+    },
+    {
+     "en": "to improve",
+     "pt": "melhorar"
+    },
+    {
+     "en": "to give up",
+     "pt": "desistir"
+    },
+    {
+     "en": "regularly",
+     "pt": "regularmente"
+    },
+    {
+     "en": "healthy",
+     "pt": "saudável"
+    },
+    {
+     "en": "stretching",
+     "pt": "alongamento"
+    }
+   ],
+   "material": {
+    "titulo": "Getting back into sport",
+    "texto": "Last January I decided to get fit. I had stopped doing any sport after I left school, and I kept making excuses: I had no time, it was too cold, I was too tired. My brother suggested joining a running club, but at first I was afraid of looking silly. In the end I went along, and I'm so glad I did. The first month was hard. I couldn't help feeling embarrassed when the others finished before me, but nobody laughed. They encouraged me to keep going. Now I run three times a week, and I enjoy being outside early in the morning. I still hate getting up when it's dark, so I always remember to prepare my clothes the night before. I've also learned to stretch properly after training, which avoids hurting my legs. Recently I tried swimming too, but I'm not good at it. I'll probably give it up. My next aim is to finish a ten-kilometre race by the summer. I'm hoping to do it in under an hour, though my brother thinks I'm being too ambitious."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why did the writer hesitate to join the running club?",
+     "op": [
+      "It was too expensive.",
+      "He didn't want to look foolish.",
+      "His brother didn't want him there.",
+      "He had an injury."
+     ],
+     "r": 1,
+     "exp": "'I was afraid of looking silly' - com medo de parecer bobo."
+    },
+    {
+     "t": "gap",
+     "q": "My brother suggested ___ a running club.",
+     "resp": [
+      "joining"
+     ],
+     "exp": "Suggest é seguido de -ing: suggested joining."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "I'm hoping to finish a ten-kilometre race by the summer.",
+     "exp": "Kilometre: ki-LÓ-mi-ter ou KI-lo-mi-ter (britânico). Race: /reis/."
+    },
+    {
+     "t": "mc",
+     "q": "How did the other runners behave?",
+     "op": [
+      "They laughed at him.",
+      "They waited for him.",
+      "They supported him.",
+      "They ignored him."
+     ],
+     "r": 2,
+     "exp": "'They encouraged me to keep going.'"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "enjoy",
+      "running",
+      "in",
+      "the",
+      "morning"
+     ],
+     "resp": "I enjoy running in the morning",
+     "exp": "Enjoy + -ing. Ordem: sujeito + enjoy + running + complemento de lugar/tempo.",
+     "alt": [
+      "I enjoy running in the morning"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "I always remember ___ prepare my clothes the night before.",
+     "resp": [
+      "to"
+     ],
+     "exp": "Remember to + verbo = lembrar de fazer (não esquecer)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: que atividade você gosta de fazer e qual você evita?",
+     "frase": "What do you enjoy doing, and what do you avoid doing?",
+     "modelo": "I enjoy playing football. I avoid getting up early on Sundays.",
+     "min": 7,
+     "chave": [
+      "enjoy",
+      "avoid",
+      "like",
+      "hate",
+      "playing",
+      "doing"
+     ],
+     "exp": "Use enjoy/avoid + -ing: I enjoy cooking. I avoid eating late."
+    },
+    {
+     "t": "mc",
+     "q": "What can we understand about the writer's swimming?",
+     "op": [
+      "He wants to swim every day.",
+      "He will probably stop doing it.",
+      "He is better at it than running.",
+      "His brother taught him."
+     ],
+     "r": 1,
+     "exp": "'I'm not good at it. I'll probably give it up.' Ele deve desistir."
+    },
+    {
+     "t": "gap",
+     "q": "She is very good at ___ people to exercise.",
+     "resp": [
+      "persuading",
+      "encouraging",
+      "motivating",
+      "helping"
+     ],
+     "exp": "Depois de preposição (at) usamos -ing. Qualquer verbo -ing adequado serve aqui."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Getting around the city",
+   "objetivo": "Entender significados de phrasal verbs pelo contexto em um relato de viagem de trabalho.",
+   "foco": "Common phrasal verbs: set off, check in, pick up, turn down, look for, run out of, get on, put off",
+   "explicacao": [
+    "Phrasal verb = verbo + partícula, com significado novo: set off = partir; check in = fazer check-in.",
+    "Alguns são separáveis: pick up the keys / pick the keys up. Com pronome, sempre separa: pick them up.",
+    "Outros não separam: look after the children, get on the bus.",
+    "Aprenda cada um em frases completas, sempre pelo contexto."
+   ],
+   "vocab": [
+    {
+     "en": "to set off",
+     "pt": "partir"
+    },
+    {
+     "en": "to check in",
+     "pt": "fazer check-in"
+    },
+    {
+     "en": "to pick up",
+     "pt": "buscar, pegar"
+    },
+    {
+     "en": "to turn down",
+     "pt": "recusar"
+    },
+    {
+     "en": "to run out of",
+     "pt": "ficar sem"
+    },
+    {
+     "en": "to put off",
+     "pt": "adiar"
+    },
+    {
+     "en": "to get on",
+     "pt": "subir (transporte)"
+    },
+    {
+     "en": "to look for",
+     "pt": "procurar"
+    }
+   ],
+   "material": {
+    "titulo": "A business trip to Madrid",
+    "texto": "Last spring my company sent me to Madrid for a conference. I set off for the airport at five in the morning, but the taxi I had ordered didn't turn up, so I had to look for another one in the street. Luckily, I got to the airport on time and checked in without problems. When the plane landed, a colleague was waiting to pick me up. She had offered to show me the city, but I turned her down because I wanted to rest. At the hotel, my room wasn't ready, so I put off my shower until the evening. I tried to find a restaurant for dinner and soon ran out of battery on my phone, so I could not use the map. In the end, I got on the wrong bus and ended up on the other side of the city. A kind old man helped me work out the way back. It was a stressful day, but the conference itself went well. I would like to go back, as long as I don't put off packing until the last minute again."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What went wrong at the beginning of the trip?",
+     "op": [
+      "He missed his flight.",
+      "The taxi he ordered didn't arrive.",
+      "He lost his passport.",
+      "The airport was closed."
+     ],
+     "r": 1,
+     "exp": "'the taxi I had ordered didn't turn up' (turn up = aparecer, chegar)."
+    },
+    {
+     "t": "gap",
+     "q": "The plane landed and a colleague was waiting to ___ me up.",
+     "resp": [
+      "pick"
+     ],
+     "exp": "Pick up = buscar alguém: to pick me up."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "I set off for the airport at five in the morning.",
+     "exp": "Set off: /set óf/. Airport: ÉR-pórt, força na primeira sílaba."
+    },
+    {
+     "t": "mc",
+     "q": "Why did the writer refuse the colleague's offer?",
+     "op": [
+      "He had work to do.",
+      "He wanted to relax.",
+      "He didn't like Madrid.",
+      "He felt ill."
+     ],
+     "r": 1,
+     "exp": "'I turned her down because I wanted to rest.' Turn down = recusar."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "ran",
+      "out",
+      "of",
+      "time",
+      "yesterday"
+     ],
+     "resp": "We ran out of time yesterday",
+     "exp": "Run out of = ficar sem. Ordem: sujeito + ran out of + substantivo + expressão de tempo.",
+     "alt": [
+      "Yesterday we ran out of time"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "I tried to use the map but my phone had run ___ of battery.",
+     "resp": [
+      "out"
+     ],
+     "exp": "Run out of = acabar, ficar sem."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: como você costuma chegar à escola ou ao trabalho? Use um phrasal verb.",
+     "frase": "How do you get to school or work every day?",
+     "modelo": "I set off at seven and I get on the bus near my house.",
+     "min": 8,
+     "chave": [
+      "set off",
+      "get on",
+      "pick up",
+      "get off",
+      "bus",
+      "walk"
+     ],
+     "exp": "Use set off, get on/off, pick up: I get on the bus at seven."
+    },
+    {
+     "t": "mc",
+     "q": "What does the phrasal verb 'work out' mean in 'help me work out the way back'?",
+     "op": [
+      "to exercise",
+      "to find a solution",
+      "to change buses",
+      "to look after"
+     ],
+     "r": 1,
+     "exp": "Work out = descobrir, resolver. Aqui: ajudar a descobrir o caminho de volta."
+    },
+    {
+     "t": "gap",
+     "q": "He decided not to ___ off his homework any longer.",
+     "resp": [
+      "put"
+     ],
+     "exp": "Put off = adiar. Não adie: don't put off."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Is technology making us lazy?",
+   "objetivo": "Identificar a opinião do autor, argumentos e conectivos de contraste e consequência.",
+   "foco": "Linkers: although, however, despite, in spite of, so that, because of, as a result; opinion language",
+   "explicacao": [
+    "Contraste: although/even though + oração (Although it was late, ...); despite/in spite of + substantivo ou -ing (Despite the rain, ...).",
+    "However e nevertheless vêm no início de uma frase, com vírgula: ... However, it is expensive.",
+    "Finalidade: so that + oração (I wrote it down so that I wouldn't forget). Consequência: so, as a result.",
+    "Para opinião: In my view, I (don't) believe, It seems to me that, Some people argue that..."
+   ],
+   "vocab": [
+    {
+     "en": "lazy",
+     "pt": "preguiçoso"
+    },
+    {
+     "en": "to rely on",
+     "pt": "depender de"
+    },
+    {
+     "en": "addicted",
+     "pt": "viciado"
+    },
+    {
+     "en": "skill",
+     "pt": "habilidade"
+    },
+    {
+     "en": "to argue",
+     "pt": "argumentar"
+    },
+    {
+     "en": "benefit",
+     "pt": "benefício"
+    },
+    {
+     "en": "drawback",
+     "pt": "desvantagem"
+    },
+    {
+     "en": "to waste",
+     "pt": "desperdiçar"
+    }
+   ],
+   "material": {
+    "titulo": "Always online",
+    "texto": "Some people argue that modern technology has made us lazy. In my view, this is only partly true. Although it is easy to find answers online in a few seconds, I don't believe that people have stopped thinking. Take navigation apps, for example. Despite their usefulness, they have a clear drawback: drivers rely on them so much that they cannot find their way without one. As a result, many of us have lost basic skills such as reading a map. However, technology also has real benefits. My grandmother, who lives alone, talks to her grandchildren on video calls so that she doesn't feel lonely. In spite of her age, she learned to use a tablet in only a week. Moreover, students can now take free courses from universities all over the world. Nevertheless, there is a risk of becoming addicted, especially for teenagers, because of the endless notifications. It seems to me that the problem is not the technology itself, but how we use it. If we decide when to switch our phones off, we will probably waste less time and enjoy real life more. After all, a tool is only as good as the person using it."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the writer's opinion about technology and laziness?",
+     "op": [
+      "Technology has made everyone lazy.",
+      "The idea is only partly correct.",
+      "Technology is completely harmless.",
+      "Young people are not affected."
+     ],
+     "r": 1,
+     "exp": "'In my view, this is only partly true.' Ele não aceita nem rejeita totalmente a ideia."
+    },
+    {
+     "t": "gap",
+     "q": "___ it is easy to find answers online, people still think.",
+     "resp": [
+      "Although",
+      "Even though",
+      "Though"
+     ],
+     "exp": "Although + oração completa (it is easy...). Despite exigiria substantivo ou -ing."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "It seems to me that the problem is not the technology itself.",
+     "exp": "Technology: tek-NÓ-lo-dji, força na terceira sílaba. Itself: it-SELF."
+    },
+    {
+     "t": "mc",
+     "q": "Why does the writer mention his grandmother?",
+     "op": [
+      "To show that older people dislike technology.",
+      "To give a positive example of technology.",
+      "To complain about video calls.",
+      "To say that she is lonely."
+     ],
+     "r": 1,
+     "exp": "Ela usa videochamadas para não se sentir só e aprendeu a usar o tablet em uma semana: exemplo positivo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Despite",
+      "the",
+      "rain",
+      "we",
+      "went",
+      "out"
+     ],
+     "resp": "Despite the rain we went out",
+     "exp": "Despite + substantivo (the rain). Depois, uma oração normal.",
+     "alt": [
+      "We went out despite the rain"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "She uses video calls ___ that she doesn't feel lonely.",
+     "resp": [
+      "so"
+     ],
+     "exp": "So that + oração = para que (finalidade)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você acha que a tecnologia ajuda ou atrapalha os estudos? Dê uma razão.",
+     "frase": "Does technology help or harm students?",
+     "modelo": "In my opinion, technology helps students because they can find information quickly. However, it can distract them.",
+     "min": 11,
+     "chave": [
+      "opinion",
+      "think",
+      "believe",
+      "however",
+      "although",
+      "because"
+     ],
+     "exp": "Dê sua opinião e use um conectivo: In my view..., because..., However..."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer suggest at the end of the text?",
+     "op": [
+      "People should stop using phones.",
+      "Control over how we use technology is important.",
+      "Notifications are good for teenagers.",
+      "Technology will get worse."
+     ],
+     "r": 1,
+     "exp": "Ele diz que o problema é como usamos a tecnologia e que decidir quando desligar o celular ajuda."
+    },
+    {
+     "t": "gap",
+     "q": "___ the endless notifications, many teenagers find it difficult to concentrate.",
+     "resp": [
+      "Because of",
+      "Due to"
+     ],
+     "exp": "Because of + substantivo (notifications). Because sozinho exigiria uma oração."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado: Reading B1 Preliminary",
+   "objetivo": "Treinar o formato da prova: opinião do autor, frases que se encaixam, vocabulário e gramática em lacunas.",
+   "foco": "Mixed B1 review: reading for attitude, sentence insertion, open cloze, phrasal verbs, conditionals, passive, linkers",
+   "explicacao": [
+    "Leia primeiro o texto todo para entender a ideia geral; depois vá às perguntas.",
+    "Nas perguntas de opinião, a resposta certa parafraseia o texto. Cuidado com opções que usam as mesmas palavras mas mudam o sentido.",
+    "Nas lacunas de gramática (open cloze), escreva uma só palavra e releia a frase completa.",
+    "Nas frases retiradas, verifique pronomes, conectivos e a ordem dos fatos antes e depois da lacuna."
+   ],
+   "vocab": [
+    {
+     "en": "to give up",
+     "pt": "desistir"
+    },
+    {
+     "en": "traffic jam",
+     "pt": "engarrafamento"
+    },
+    {
+     "en": "path",
+     "pt": "trilha, caminho"
+    },
+    {
+     "en": "to save",
+     "pt": "economizar"
+    },
+    {
+     "en": "petrol",
+     "pt": "gasolina (britânico)"
+    },
+    {
+     "en": "cycle lane",
+     "pt": "ciclovia"
+    },
+    {
+     "en": "reflective",
+     "pt": "refletivo"
+    },
+    {
+     "en": "to put off",
+     "pt": "desanimar, adiar"
+    }
+   ],
+   "material": {
+    "titulo": "Two wheels instead of four",
+    "texto": "Last spring I sold my car and started cycling to work. Everyone I knew thought I had lost my mind. My office is twelve kilometres from my flat, and I had never cycled more than a few streets before. My sister said I would give up after a week, and to be honest, I wasn't sure she was wrong. The first morning was awful. It was raining, my legs hurt, and I arrived so wet that my colleagues offered me a towel. If I had known how hard it would be, I might not have started at all.\n\nHowever, things slowly changed. Within a month, I noticed that I was sleeping better and that I didn't feel as tired in the afternoons. I had spent years sitting in traffic jams, getting angry at other drivers. Now I travel on a quiet path beside the river, where I often see birds and even the occasional fox. My journey takes forty minutes, which is only ten minutes longer than by car. And, of course, I no longer have to look for a parking space or pay for petrol. I calculated that I have saved almost two thousand pounds this year.\n\nOf course, cycling isn't perfect. In winter it gets dark early, and I have to wear a lot of reflective clothing so that drivers can see me. Some roads are dangerous, and I am always afraid of being hit by a car. The council ought to build more cycle lanes, but it keeps saying there isn't enough money. Despite these problems, I wouldn't go back to driving. My sister, who used to laugh at me, has just bought her own bike, and we are planning to cycle across Scotland next summer. If you are thinking about trying it, my advice is to start slowly. Don't expect to be fit immediately, and don't let a bad first day put you off."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the writer's main purpose in the text?",
+     "op": [
+      "To persuade readers to buy a bike.",
+      "To describe his experience of changing how he travels.",
+      "To criticise the local council.",
+      "To explain how to repair a bicycle."
+     ],
+     "r": 1,
+     "exp": "Ele conta sua experiência (as primeiras semanas, os benefícios, os problemas). A crítica à prefeitura é só um detalhe."
+    },
+    {
+     "t": "gap",
+     "q": "My sister said I ___ give up after a week.",
+     "resp": [
+      "would"
+     ],
+     "exp": "Discurso indireto: 'You will give up' vira 'I would give up'."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "My journey takes forty minutes, which is only ten minutes longer than by car.",
+     "exp": "Journey: DJÂR-ni. Minutes: MI-nits. Forty: FÓR-ti."
+    },
+    {
+     "t": "mc",
+     "q": "How did the writer feel after his first day of cycling?",
+     "op": [
+      "He was pleased with himself.",
+      "He regretted his decision.",
+      "He felt tired but happy.",
+      "He was not sure at all."
+     ],
+     "r": 1,
+     "exp": "'If I had known how hard it would be, I might not have started at all.' Isso mostra arrependimento."
+    },
+    {
+     "t": "gap",
+     "q": "I ___ never cycled more than a few streets before.",
+     "resp": [
+      "had"
+     ],
+     "exp": "Past perfect: ação anterior ao momento da história (antes de começar a pedalar)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "If",
+      "I",
+      "had",
+      "known",
+      "I",
+      "might",
+      "not",
+      "have",
+      "started"
+     ],
+     "resp": "If I had known I might not have started",
+     "exp": "Terceiro condicional: if + past perfect, might/would + have + particípio.",
+     "alt": [
+      "I might not have started if I had known"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Read the paragraph: 'Within a month, I noticed that I was sleeping better. ___ Now I travel on a quiet path.' Which sentence fits the gap?",
+     "op": [
+      "I had spent years sitting in traffic jams, getting angry at other drivers.",
+      "The council should build more cycle lanes.",
+      "My sister has bought a bike.",
+      "It rained all morning."
+     ],
+     "r": 0,
+     "exp": "A frase explica o contraste com 'Now', falando da vida antiga em engarrafamentos (past perfect). As outras ideias aparecem em outros parágrafos."
+    },
+    {
+     "t": "gap",
+     "q": "I wear reflective clothing so ___ drivers can see me.",
+     "resp": [
+      "that"
+     ],
+     "exp": "So that = para que (finalidade). Está no texto."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você gostaria de ir de bicicleta ao trabalho ou à escola? Por quê?",
+     "frase": "Would you like to cycle to school or work? Why or why not?",
+     "modelo": "Yes, I would, because it is healthy and cheap. However, I live far from school.",
+     "min": 10,
+     "chave": [
+      "because",
+      "healthy",
+      "cheap",
+      "would",
+      "dangerous",
+      "far"
+     ],
+     "exp": "Dê uma opinião com because ou although: I would like it because..."
+    },
+    {
+     "t": "mc",
+     "q": "What does 'put you off' mean in the last sentence?",
+     "op": [
+      "make you stop wanting to do it",
+      "make you fall off",
+      "help you",
+      "make you angry"
+     ],
+     "r": 0,
+     "exp": "Put off aqui = desanimar. Don't let a bad first day put you off = não deixe um primeiro dia ruim desanimar você."
+    },
+    {
+     "t": "gap",
+     "q": "The council ___ to build more cycle lanes, but there isn't enough money.",
+     "resp": [
+      "ought",
+      "needs",
+      "has"
+     ],
+     "exp": "Aqui a frase já traz 'to': ought to / needs to / has to. O texto usa ought to."
+    },
+    {
+     "t": "mc",
+     "q": "What can we conclude about the writer's sister at the end?",
+     "op": [
+      "She still thinks cycling is silly.",
+      "She has changed her opinion.",
+      "She wants to sell her car.",
+      "She is afraid of Scotland."
+     ],
+     "r": 1,
+     "exp": "'who used to laugh at me, has just bought her own bike' - mudou de ideia."
+    },
+    {
+     "t": "gap",
+     "q": "I haven't paid for petrol ___ I sold the car.",
+     "resp": [
+      "since"
+     ],
+     "exp": "Since + momento de início (when I sold the car) com present perfect."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2577 @@
+{
+ "nivel": "C1",
+ "skill": "speaking",
+ "exame": "C1 Advanced (CAE)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Extended answers in Part 1",
+   "objetivo": "Dar respostas naturais e desenvolvidas na entrevista, com opinião, detalhe e exemplo.",
+   "foco": "Developing answers; discourse markers; present and past tenses",
+   "explicacao": [
+    "Na Part 1 o examinador faz perguntas pessoais. No C1 espera-se mais do que resposta + motivo: acrescente um detalhe, uma comparação ou uma lembrança.",
+    "Estrutura útil: resposta direta, explicação, exemplo pessoal. I'm quite into hiking. It clears my head, and last month I spent a weekend in the mountains.",
+    "Use marcadores para soar natural: to be honest, as a matter of fact, what I mean is, in my case.",
+    "Não decore respostas longas demais. Fale por cerca de 20 a 30 segundos e deixe o examinador continuar."
+   ],
+   "vocab": [
+    {
+     "en": "to be into",
+     "pt": "gostar muito de (informal)"
+    },
+    {
+     "en": "as a matter of fact",
+     "pt": "na verdade"
+    },
+    {
+     "en": "to clear your head",
+     "pt": "espairecer"
+    },
+    {
+     "en": "in my case",
+     "pt": "no meu caso"
+    },
+    {
+     "en": "to be honest",
+     "pt": "para ser sincero"
+    },
+    {
+     "en": "a big part of",
+     "pt": "uma grande parte de"
+    },
+    {
+     "en": "these days",
+     "pt": "hoje em dia"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Answer the examiner's questions. Where do you live, and what is it like? What do you do in your free time? Is there anything you would like to learn in the future?",
+    "segundos": 75,
+    "frases_uteis": [
+     "To be honest, ...",
+     "What I particularly enjoy about it is ...",
+     "As a matter of fact, ...",
+     "In my case, ..."
+    ],
+    "modelo": "I live in a medium-sized city in the south of Brazil. To be honest, it's quite hectic during the week, but what I particularly enjoy about it is the number of parks. In my free time I'm really into cycling because it helps me clear my head. As a matter of fact, I'd love to learn the piano one day, as I've always found music relaxing."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "The examiner asks: 'Do you enjoy cooking?' Which answer sounds most natural at C1?",
+     "op": [
+      "Yes, cooking.",
+      "Yes, I do.",
+      "Yes, quite a lot, actually. It's a good way to unwind after work, and I've started trying out recipes from different countries.",
+      "I am enjoying the cooking very much."
+     ],
+     "r": 2,
+     "exp": "A terceira dá resposta, motivo e detalhe, com vocabulário natural."
+    },
+    {
+     "t": "gap",
+     "q": "To be ___, I don't have much free time these days.",
+     "resp": [
+      "honest",
+      "frank"
+     ],
+     "exp": "To be honest = para ser sincero."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "To be honest, I'm quite into hiking because it helps me clear my head.",
+     "exp": "Clear soa 'clier'; hiking soa 'RÁI-king'."
+    },
+    {
+     "t": "mc",
+     "q": "Which phrase introduces a surprising or extra detail?",
+     "op": [
+      "In my case",
+      "As a matter of fact",
+      "On the other hand",
+      "For this reason"
+     ],
+     "r": 1,
+     "exp": "As a matter of fact acrescenta um fato, muitas vezes inesperado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "What",
+      "I",
+      "particularly",
+      "enjoy",
+      "about",
+      "it",
+      "is",
+      "the",
+      "sense",
+      "of",
+      "community"
+     ],
+     "resp": "What I particularly enjoy about it is the sense of community",
+     "exp": "What I enjoy about it is ... é uma estrutura enfática muito usada no C1."
+    },
+    {
+     "t": "gap",
+     "q": "I'm really ___ photography these days.",
+     "resp": [
+      "into",
+      "keen on"
+     ],
+     "exp": "Be into é informal e natural; keen on também serve."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda com opinião, motivo e um exemplo pessoal. Fale por uns 25 segundos.",
+     "frase": "What do you enjoy doing in your free time, and why?",
+     "modelo": "To be honest, I'm really into cycling because it helps me clear my head after a long week. As a matter of fact, last month I rode sixty kilometres with some friends and it was brilliant.",
+     "min": 25,
+     "chave": [
+      "because",
+      "into",
+      "enjoy",
+      "example",
+      "fact",
+      "love"
+     ],
+     "exp": "Mostre variedade: um motivo, um exemplo e uma expressão natural."
+    },
+    {
+     "t": "mc",
+     "q": "The examiner asks: 'Where would you like to be in ten years' time?' Which answer is best?",
+     "op": [
+      "In a big house.",
+      "I'd like to be working abroad, hopefully in a job I'm passionate about. That said, I'm not sure where exactly.",
+      "I want, I want to live.",
+      "I will be in a good place."
+     ],
+     "r": 1,
+     "exp": "Resposta com plano, hedging e naturalidade."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda de forma desenvolvida: o que, por que e como pretende fazer.",
+     "frase": "Is there anything you'd like to learn in the future?",
+     "modelo": "Yes, I'd really like to learn how to play the guitar. I've always found music a great way to relax, and I think it would help me meet new people. I'm planning to sign up for classes next year.",
+     "min": 27,
+     "chave": [
+      "learn",
+      "would like",
+      "guitar",
+      "plan",
+      "love",
+      "want"
+     ],
+     "exp": "Use would like to e um plano concreto."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Talking about experiences and opinions",
+   "objetivo": "Falar de experiências passadas e dar opiniões com variedade de tempos verbais.",
+   "foco": "Past simple, present perfect, used to / would; opinion phrases",
+   "explicacao": [
+    "Para contar uma experiência, misture os tempos: I went to ... (fato fechado), I've always wanted ... (ligação com o presente), I used to ... (hábito passado).",
+    "Would também descreve hábitos passados: When I was young, we would spend every summer at my grandparents' house.",
+    "Para dar opinião: I'd say that ..., From my point of view ..., It seems to me that ...",
+    "Evite frases soltas. Ligue as ideias com so, which meant that, and that's why."
+   ],
+   "vocab": [
+    {
+     "en": "used to",
+     "pt": "costumava"
+    },
+    {
+     "en": "to look back on",
+     "pt": "recordar"
+    },
+    {
+     "en": "a memorable experience",
+     "pt": "uma experiência marcante"
+    },
+    {
+     "en": "it seems to me that",
+     "pt": "me parece que"
+    },
+    {
+     "en": "from my point of view",
+     "pt": "do meu ponto de vista"
+    },
+    {
+     "en": "which is why",
+     "pt": "e é por isso que"
+    },
+    {
+     "en": "eye-opening",
+     "pt": "que abre os olhos"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Answer the examiner's questions. Tell us about a memorable experience you have had. How has your life changed in the last few years? What do you think is the most important thing about learning a language?",
+    "segundos": 80,
+    "frases_uteis": [
+     "One experience that really stands out is ...",
+     "I used to ..., but now ...",
+     "It seems to me that ...",
+     "Which is why ..."
+    ],
+    "modelo": "One experience that really stands out is a trip I took to Chile three years ago. I used to be quite shy, but travelling alone completely changed me, which is why I now enjoy meeting new people. It seems to me that the most important thing about learning a language is being brave enough to make mistakes."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence correctly describes a past habit?",
+     "op": [
+      "When I was a child, I would go fishing every Sunday.",
+      "When I was a child, I would be tall.",
+      "I would go fishing yesterday.",
+      "I am used to go fishing as a child."
+     ],
+     "r": 0,
+     "exp": "Would descreve ações repetidas no passado, não estados como be tall."
+    },
+    {
+     "t": "gap",
+     "q": "I ___ to live in a small village before I moved here.",
+     "resp": [
+      "used"
+     ],
+     "exp": "Used to + verbo = hábito ou estado passado."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "One experience that really stands out is a trip I took three years ago.",
+     "exp": "Stands out: ligue o s final com out ('stan-zaut')."
+    },
+    {
+     "t": "mc",
+     "q": "Which phrase is the best way to give an opinion politely?",
+     "op": [
+      "You are wrong, but I think so.",
+      "It seems to me that online lessons are really flexible.",
+      "Online lessons are the best, sure.",
+      "I am agree with online lessons."
+     ],
+     "r": 1,
+     "exp": "It seems to me that soa educado e natural."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "used",
+      "to",
+      "be",
+      "shy,",
+      "which",
+      "is",
+      "why",
+      "I",
+      "enjoy",
+      "meeting",
+      "new",
+      "people",
+      "now"
+     ],
+     "resp": "I used to be shy, which is why I enjoy meeting new people now",
+     "exp": "Which is why liga a causa à consequência."
+    },
+    {
+     "t": "gap",
+     "q": "Looking ___ on that trip, I realise how much it changed me.",
+     "resp": [
+      "back"
+     ],
+     "exp": "Look back on = recordar."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte a experiência com tempos variados e termine com uma reflexão. Fale cerca de 30 segundos.",
+     "frase": "Tell us about a memorable experience you have had.",
+     "modelo": "One experience that really stands out is the first time I lived away from my family. I used to depend on them for everything, so it was quite a shock. Looking back on it, it was eye-opening, and it taught me to be more independent.",
+     "min": 30,
+     "chave": [
+      "experience",
+      "used to",
+      "looking back",
+      "remember",
+      "once",
+      "stands out"
+     ],
+     "exp": "Use um fato passado, um used to e uma reflexão."
+    },
+    {
+     "t": "mc",
+     "q": "Which answer shows the widest range of grammar?",
+     "op": [
+      "I went abroad. It was good.",
+      "I've been abroad twice, and I'd love to go again, although I used to be afraid of flying.",
+      "I go abroad and I like.",
+      "Abroad is good for me."
+     ],
+     "r": 1,
+     "exp": "Mistura present perfect, would like e used to."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê sua opinião com uma frase de opinião, um motivo e um exemplo.",
+     "frase": "What do you think is the most important thing about learning a language?",
+     "modelo": "From my point of view, the most important thing is practising regularly. It seems to me that people who speak every day progress much faster, which is why I try to talk to someone in English each morning.",
+     "min": 26,
+     "chave": [
+      "practice",
+      "practising",
+      "regularly",
+      "opinion",
+      "seems",
+      "point of view",
+      "important"
+     ],
+     "exp": "Use From my point of view e which is why."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Describing and comparing photos",
+   "objetivo": "Comparar duas fotos com clareza na Part 2, sem apenas descrever.",
+   "foco": "Comparing and contrasting; whereas, while, in contrast, both",
+   "explicacao": [
+    "Na Part 2 você recebe três fotos, o examinador escolhe duas e você fala por 1 minuto. Não descreva cada foto em detalhe: compare.",
+    "Linguagem de comparação: Both pictures show ..., Whereas in the first picture ..., in the second one ...; In contrast, ...; Similarly, ...",
+    "Comece rápido: In the first picture I can see ..., while the second one shows ...",
+    "Depois da comparação, responda à pergunta escrita no cartão. Controle o tempo."
+   ],
+   "vocab": [
+    {
+     "en": "whereas",
+     "pt": "enquanto, ao passo que"
+    },
+    {
+     "en": "in contrast",
+     "pt": "em contraste"
+    },
+    {
+     "en": "both",
+     "pt": "ambos"
+    },
+    {
+     "en": "in the foreground",
+     "pt": "em primeiro plano"
+    },
+    {
+     "en": "in the background",
+     "pt": "ao fundo"
+    },
+    {
+     "en": "similarly",
+     "pt": "da mesma forma"
+    },
+    {
+     "en": "a striking difference",
+     "pt": "uma diferença marcante"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 2: Compare two of these photos: (1) a family eating together at a long table in a garden, (2) a man eating a sandwich alone at his desk in an office, (3) a group of friends at a food market. Say why the people might have chosen to eat in these ways, and how they might be feeling.",
+    "segundos": 60,
+    "frases_uteis": [
+     "Both pictures show ...",
+     "Whereas in the first picture ..., in the second one ...",
+     "One striking difference is that ...",
+     "In contrast, ..."
+    ],
+    "modelo": "Both pictures show people eating, but the situations are very different. In the first one, a family is sharing a meal in a garden, whereas in the second a man is eating alone at his desk. One striking difference is the atmosphere: the family looks relaxed, while the man seems rushed. In contrast to the family, he might be trying to save time because of work."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which opening is best for comparing two photos?",
+     "op": [
+      "The first picture is a family. The second picture is a man.",
+      "Both pictures show people eating, but the settings couldn't be more different.",
+      "I see a table.",
+      "In the picture is people."
+     ],
+     "r": 1,
+     "exp": "Abre com uma comparação, não com uma lista de objetos."
+    },
+    {
+     "t": "gap",
+     "q": "In the first picture they're outdoors, ___ in the second one they're in an office.",
+     "resp": [
+      "whereas",
+      "while"
+     ],
+     "exp": "Whereas e while contrastam duas ideias."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "Both pictures show people eating, but the atmosphere is quite different.",
+     "exp": "Atmosphere: 'ÁT-mos-fir'."
+    },
+    {
+     "t": "mc",
+     "q": "Which expression refers to the part of the photo that is behind the main subject?",
+     "op": [
+      "in the foreground",
+      "in the background",
+      "at the front",
+      "by the side"
+     ],
+     "r": 1,
+     "exp": "Background é o fundo; foreground é o primeiro plano."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "One",
+      "striking",
+      "difference",
+      "is",
+      "that",
+      "the",
+      "man",
+      "is",
+      "on",
+      "his",
+      "own"
+     ],
+     "resp": "One striking difference is that the man is on his own",
+     "exp": "One striking difference is that ... introduz um contraste forte."
+    },
+    {
+     "t": "gap",
+     "q": "The family look relaxed. ___ contrast, the man seems under pressure.",
+     "resp": [
+      "in",
+      "In"
+     ],
+     "exp": "In contrast = em contraste."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Compare as duas situações em cerca de 40 segundos. Não descreva cada detalhe.",
+     "frase": "Compare a family meal in a garden with a man eating alone at his desk.",
+     "modelo": "Both pictures show people eating, but the situations are very different. In the first, a family is enjoying a meal together outdoors, whereas in the second a man is having lunch alone at work. One striking difference is the mood: the family seems relaxed, while he seems rushed.",
+     "min": 30,
+     "chave": [
+      "both",
+      "whereas",
+      "while",
+      "contrast",
+      "different",
+      "difference"
+     ],
+     "exp": "Use both, whereas e one striking difference."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence compares rather than just describes?",
+     "op": [
+      "There is a man and a computer.",
+      "While the family have plenty of time, the man looks as though he is in a hurry.",
+      "There are flowers in the garden.",
+      "The table is long and wooden."
+     ],
+     "r": 1,
+     "exp": "While ... liga as duas fotos numa comparação."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Especule sobre os motivos nas duas situações, usando might ou may.",
+     "frase": "Why might the people have chosen to eat in these ways?",
+     "modelo": "The family might have chosen to eat outdoors because it's a special occasion, perhaps a birthday or a weekend gathering. The man, on the other hand, may simply have too much work, so he can't afford to take a proper break.",
+     "min": 28,
+     "chave": [
+      "might",
+      "may",
+      "perhaps",
+      "because",
+      "possibly"
+     ],
+     "exp": "Use might / may e on the other hand."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Speculating about pictures",
+   "objetivo": "Especular sobre pessoas, sentimentos e situações usando verbos modais e expressões de probabilidade.",
+   "foco": "Modals of speculation: must, might, can't, could have; perhaps, presumably",
+   "explicacao": [
+    "Na Part 2 você não pode ter certeza do que acontece nas fotos. Use linguagem de especulação.",
+    "Quase certeza: He must be tired. Impossível: She can't be a tourist. Possível: They might / could be colleagues.",
+    "Passado: He must have had a long day. She may have just arrived. They can't have been waiting for long.",
+    "Outras expressões: presumably, it's likely that, I get the impression that, judging by their expressions ..."
+   ],
+   "vocab": [
+    {
+     "en": "judging by",
+     "pt": "a julgar por"
+    },
+    {
+     "en": "presumably",
+     "pt": "presumivelmente"
+    },
+    {
+     "en": "I get the impression that",
+     "pt": "tenho a impressão de que"
+    },
+    {
+     "en": "it's likely that",
+     "pt": "é provável que"
+    },
+    {
+     "en": "to look as if",
+     "pt": "parecer que"
+    },
+    {
+     "en": "must have",
+     "pt": "deve ter (certeza no passado)"
+    },
+    {
+     "en": "can't have",
+     "pt": "não pode ter"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 2: Compare two of these photos: (1) a woman on stage receiving an award, (2) a student looking at exam results on a screen, (3) a team celebrating on a sports field. Say how the people might be feeling, and what might have led to this moment.",
+    "segundos": 60,
+    "frases_uteis": [
+     "Judging by their expressions, ...",
+     "She must be / must have ...",
+     "I get the impression that ...",
+     "It's likely that ..."
+    ],
+    "modelo": "Judging by her expression, the woman on stage must be extremely proud. She may have worked for years to get this award. In the second picture, the student looks tense, so I get the impression that he is nervous about the results. He might have studied hard, but he can't be sure yet."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence expresses almost complete certainty?",
+     "op": [
+      "She might be tired.",
+      "She must be tired.",
+      "She could be tired.",
+      "She may be tired."
+     ],
+     "r": 1,
+     "exp": "Must expressa quase certeza."
+    },
+    {
+     "t": "gap",
+     "q": "He looks exhausted. He ___ have had a very long day.",
+     "resp": [
+      "must"
+     ],
+     "exp": "Must have + particípio = dedução sobre o passado."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "Judging by his expression, he must be feeling really nervous.",
+     "exp": "Judging: 'JÂ-jing'; expression: 'iks-PRÉ-shun'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is illogical?",
+     "op": [
+      "She can't be a tourist; she knows the city too well.",
+      "She can't have been there; I saw her there.",
+      "He must be a doctor; he's wearing a white coat.",
+      "They might be friends."
+     ],
+     "r": 1,
+     "exp": "Se você a viu lá, não faz sentido dizer que ela não pode ter estado lá. As outras são lógicas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "get",
+      "the",
+      "impression",
+      "that",
+      "they",
+      "have",
+      "been",
+      "waiting",
+      "for",
+      "a",
+      "long",
+      "time"
+     ],
+     "resp": "I get the impression that they have been waiting for a long time",
+     "exp": "I get the impression that ... é uma forma cuidadosa de especular."
+    },
+    {
+     "t": "gap",
+     "q": "It's ___ that she has been training for years.",
+     "resp": [
+      "likely",
+      "probable"
+     ],
+     "exp": "It's likely / probable that = é provável que."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Especule sobre sentimentos e causas. Fale cerca de 30 segundos.",
+     "frase": "How might the people in a picture of a celebrating team be feeling?",
+     "modelo": "Judging by their expressions, they must be absolutely thrilled. They have probably just won an important match, and I get the impression that they've been working towards this for a long time. They might also feel a bit relieved.",
+     "min": 27,
+     "chave": [
+      "must",
+      "might",
+      "probably",
+      "judging",
+      "impression",
+      "thrilled"
+     ],
+     "exp": "Use must, might e judging by."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is the most natural speculation about the past?",
+     "op": [
+      "He must be having arrived early.",
+      "He may have arrived early, as the room is already tidy.",
+      "He maybe arrived early.",
+      "He can have arrived."
+     ],
+     "r": 1,
+     "exp": "May have + particípio."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Especule sobre o que aconteceu antes. Use modais no passado.",
+     "frase": "What might have led to the moment shown in a photo of a student checking exam results?",
+     "modelo": "He may have spent months revising for this exam, so he must feel a lot of pressure. It's likely that he has been waiting for these results for weeks, and he might have sacrificed a lot of free time to get them.",
+     "min": 29,
+     "chave": [
+      "may have",
+      "must",
+      "might have",
+      "likely",
+      "revising",
+      "studied"
+     ],
+     "exp": "Use may have, must e might have."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Answering the second question in Part 2",
+   "objetivo": "Responder à segunda pergunta do cartão e usar bem o minuto, incluindo a reação ao colega.",
+   "foco": "Personal opinion; conditionals; time management; reacting briefly",
+   "explicacao": [
+    "Além de comparar, você responde a uma pergunta no cartão, como Why might people choose to do this? ou How difficult might it be? A pergunta está escrita acima das fotos.",
+    "Reserve cerca de 20 segundos para ela. Transição: Moving on to the question, ... / As for why ..., I'd say that ...",
+    "Depois, o outro candidato é perguntado brevemente sobre a sua foto. Responda curto: Personally, I'd prefer ... / I think the first one looks more ...",
+    "Use condicionais para dar opinião pessoal: If I were in that situation, I would ..."
+   ],
+   "vocab": [
+    {
+     "en": "as for",
+     "pt": "quanto a"
+    },
+    {
+     "en": "moving on to",
+     "pt": "passando para"
+    },
+    {
+     "en": "if I were in that situation",
+     "pt": "se eu estivesse naquela situação"
+    },
+    {
+     "en": "to be under pressure",
+     "pt": "estar sob pressão"
+    },
+    {
+     "en": "to put it simply",
+     "pt": "para dizer de forma simples"
+    },
+    {
+     "en": "on balance",
+     "pt": "no geral"
+    },
+    {
+     "en": "to take the risk",
+     "pt": "correr o risco"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 2: Compare two of these photos: (1) a climber near the top of a steep mountain, (2) a person learning to scuba dive, (3) a woman bungee jumping. Say why people might choose to do these activities, and how difficult it might be to take part.",
+    "segundos": 60,
+    "frases_uteis": [
+     "Moving on to the question, ...",
+     "As for why people do this, ...",
+     "If I were in that situation, ...",
+     "On balance, I think ..."
+    ],
+    "modelo": "Both pictures show people doing risky activities in nature. The climber looks focused, whereas the diver looks nervous. As for why people choose these activities, I'd say they want a challenge and a break from routine. As for the difficulty, I think scuba diving might be hard at first. If I were in that situation, I would probably feel anxious at the beginning, but proud afterwards."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Where is the question to be answered placed on the Part 2 card?",
+     "op": [
+      "At the top, above the photos",
+      "Only on the examiner's paper",
+      "After the photos, in small letters",
+      "It is spoken, never written"
+     ],
+     "r": 0,
+     "exp": "A pergunta fica escrita acima das fotos, e o examinador também a lê."
+    },
+    {
+     "t": "gap",
+     "q": "Moving ___ to the question, I think people want a challenge.",
+     "resp": [
+      "on"
+     ],
+     "exp": "Moving on to = passando para."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "As for why people choose these activities, I'd say they want a challenge.",
+     "exp": "As for: 'az for' com ligação fluida."
+    },
+    {
+     "t": "mc",
+     "q": "The examiner asks: 'Which activity would you prefer?' (after your partner's turn). Which reply is best?",
+     "op": [
+      "I don't know.",
+      "Personally, I'd go for the diving one, as it looks calmer.",
+      "Prefer the first.",
+      "The second, no."
+     ],
+     "r": 1,
+     "exp": "Resposta breve, com motivo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "If",
+      "I",
+      "were",
+      "in",
+      "that",
+      "situation",
+      "I",
+      "would",
+      "probably",
+      "feel",
+      "quite",
+      "anxious"
+     ],
+     "resp": "If I were in that situation I would probably feel quite anxious",
+     "exp": "If I were + would: condicional de segundo tipo."
+    },
+    {
+     "t": "gap",
+     "q": "If I ___ in that situation, I would ask for advice first.",
+     "resp": [
+      "were",
+      "was"
+     ],
+     "exp": "Were é a forma formal; was é aceita no informal."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta do cartão com 2 motivos. Fale cerca de 30 segundos.",
+     "frase": "Why might people choose to do risky activities like climbing or diving?",
+     "modelo": "I'd say there are a couple of reasons. For one thing, people want to escape their routine and test themselves. For another, the sense of achievement is huge, and it can also help them build confidence in other areas of life.",
+     "min": 28,
+     "chave": [
+      "challenge",
+      "routine",
+      "achievement",
+      "reason",
+      "confidence",
+      "experience"
+     ],
+     "exp": "Use for one thing ... for another."
+    },
+    {
+     "t": "mc",
+     "q": "Which closing sentence best finishes a Part 2 turn?",
+     "op": [
+      "That is all I have.",
+      "Well, to sum up, I'd say these activities appeal to people who want to push their limits.",
+      "Finish.",
+      "So, the end."
+     ],
+     "r": 1,
+     "exp": "Um resumo curto fecha bem o minuto."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Compare e responda à pergunta do cartão em cerca de 45 segundos.",
+     "frase": "How difficult might it be to learn one of these activities from scratch? Compare two photos.",
+     "modelo": "Both activities probably require training, but I think scuba diving may be easier to learn gradually, whereas climbing demands real physical strength. On balance, I'd say climbing is harder, as one mistake could be dangerous. If I were a beginner, I'd start with a short course and a good instructor.",
+     "min": 30,
+     "chave": [
+      "difficult",
+      "hard",
+      "whereas",
+      "beginner",
+      "training",
+      "balance"
+     ],
+     "exp": "Compare, responda à pergunta e feche com On balance."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Hedging and sounding tentative",
+   "objetivo": "Suavizar afirmações e mostrar cautela com expressões de hedging, como um falante avançado.",
+   "foco": "Hedging: tend to, seem to, arguably, to some extent, more or less",
+   "explicacao": [
+    "Hedging é suavizar o que você diz para não soar absoluto. Em C1, é sinal de maturidade: Young people tend to spend more time online.",
+    "Verbos e advérbios úteis: tend to, seem to, appear to, arguably, probably, in many cases, to some extent, more often than not.",
+    "Compare: Everyone hates exams (forte demais) / Many students find exams quite stressful (suavizado).",
+    "Não exagere: um ou dois hedges por frase bastam."
+   ],
+   "vocab": [
+    {
+     "en": "to tend to",
+     "pt": "tender a"
+    },
+    {
+     "en": "arguably",
+     "pt": "possivelmente, é discutível que"
+    },
+    {
+     "en": "to some extent",
+     "pt": "até certo ponto"
+    },
+    {
+     "en": "more often than not",
+     "pt": "na maioria das vezes"
+    },
+    {
+     "en": "to appear to",
+     "pt": "parecer que"
+    },
+    {
+     "en": "by and large",
+     "pt": "de modo geral"
+    },
+    {
+     "en": "a generalisation",
+     "pt": "uma generalização"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 4 practice: Answer the examiner's question. Do you think people today are more stressed than in the past? Why? Use cautious language and give reasons.",
+    "segundos": 80,
+    "frases_uteis": [
+     "People tend to ...",
+     "Arguably, ...",
+     "To some extent, that's true, but ...",
+     "More often than not, ..."
+    ],
+    "modelo": "Arguably, people tend to feel more stressed today than in the past, but I think it depends on the situation. To some extent, technology means we are always available, so it's harder to switch off. By and large, though, we also have more opportunities than earlier generations, which can be a source of pressure."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is the best example of hedging?",
+     "op": [
+      "All teenagers are addicted to phones.",
+      "Many teenagers seem to spend a great deal of time on their phones.",
+      "Teenagers phones always.",
+      "Everybody knows teenagers use phones."
+     ],
+     "r": 1,
+     "exp": "Many ... seem to evita generalização absoluta."
+    },
+    {
+     "t": "gap",
+     "q": "Young people ___ to prefer messaging to calling.",
+     "resp": [
+      "tend"
+     ],
+     "exp": "Tend to = tender a."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "Arguably, young people tend to be more open-minded than their grandparents.",
+     "exp": "Arguably: 'AR-gyu-a-bli'."
+    },
+    {
+     "t": "mc",
+     "q": "Which phrase means 'in a majority of cases'?",
+     "op": [
+      "More often than not",
+      "Every now and then",
+      "Once in a blue moon",
+      "By no means"
+     ],
+     "r": 0,
+     "exp": "More often than not = na maioria das vezes."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "To",
+      "some",
+      "extent",
+      "that",
+      "is",
+      "true",
+      "but",
+      "it",
+      "also",
+      "depends",
+      "on",
+      "the",
+      "person"
+     ],
+     "resp": "To some extent that is true but it also depends on the person",
+     "exp": "To some extent = até certo ponto."
+    },
+    {
+     "t": "gap",
+     "q": "By and ___, I think people are happier in small towns.",
+     "resp": [
+      "large"
+     ],
+     "exp": "By and large = de modo geral."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda usando pelo menos dois hedges (tend to, arguably, to some extent...).",
+     "frase": "Do you think most people spend too much time on social media?",
+     "modelo": "To some extent, yes. Many people tend to check their phones more often than they realise, and arguably this affects their concentration. However, social media can also be useful, so it depends on how you use it.",
+     "min": 25,
+     "chave": [
+      "tend",
+      "arguably",
+      "extent",
+      "seem",
+      "depends",
+      "often"
+     ],
+     "exp": "Evite afirmações absolutas."
+    },
+    {
+     "t": "mc",
+     "q": "Which of these is the most cautious way to say 'Cities are dangerous'?",
+     "op": [
+      "Cities are dangerous.",
+      "Some parts of big cities can appear rather unsafe, especially at night.",
+      "Cities kill people.",
+      "I know cities are dangerous."
+     ],
+     "r": 1,
+     "exp": "Some parts ... can appear rather ... é cuidadoso e preciso."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê uma opinião cautelosa e equilibrada, com pelo menos dois hedges.",
+     "frase": "Are people nowadays less patient than they used to be?",
+     "modelo": "I'd say that, by and large, people do seem to be less patient, probably because everything is instant these days. That said, I wouldn't generalise too much. Arguably, some people have become more patient thanks to meditation and similar habits.",
+     "min": 28,
+     "chave": [
+      "seem",
+      "probably",
+      "arguably",
+      "generalise",
+      "tend",
+      "largely",
+      "by and large"
+     ],
+     "exp": "Mostre equilíbrio com That said."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Evaluating and weighing options",
+   "objetivo": "Avaliar vantagens e desvantagens e ponderar opções com linguagem mais sofisticada.",
+   "foco": "Evaluative language; the advantage of, drawback, outweigh, on the whole",
+   "explicacao": [
+    "Na Part 3 você precisa avaliar ideias. Vá além de good e bad: It would be quite beneficial, It might be counterproductive, That's a bit of a drawback.",
+    "Vocabulário de ponderação: advantage / disadvantage, drawback, benefit, downside, to outweigh. The benefits outweigh the drawbacks.",
+    "Estrutura: ponto positivo + However + ponto negativo + On the whole, I think ...",
+    "Use comparativos fortes: far more effective, considerably less practical, slightly more appealing."
+   ],
+   "vocab": [
+    {
+     "en": "drawback",
+     "pt": "desvantagem"
+    },
+    {
+     "en": "downside",
+     "pt": "lado negativo"
+    },
+    {
+     "en": "to outweigh",
+     "pt": "superar, pesar mais"
+    },
+    {
+     "en": "counterproductive",
+     "pt": "contraproducente"
+    },
+    {
+     "en": "on the whole",
+     "pt": "no geral"
+    },
+    {
+     "en": "appealing",
+     "pt": "atraente"
+    },
+    {
+     "en": "far-reaching",
+     "pt": "de grande alcance"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 3: A school wants to encourage students to become more active. Here are some ideas: a longer break for sport, free gym membership, a school sports tournament, active homework tasks, a ban on school buses. Talk to each other about how effective each idea would be.",
+    "segundos": 120,
+    "frases_uteis": [
+     "That would be quite beneficial because ...",
+     "The main drawback is that ...",
+     "The benefits outweigh the downsides.",
+     "On the whole, I think ..."
+    ],
+    "modelo": "A longer break for sport would be quite beneficial because students would have time to be active. The main drawback is that lessons might become rushed. A free gym membership sounds appealing, but it might not reach students without much interest. On the whole, I think a tournament could be far more motivating."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence evaluates an idea most precisely?",
+     "op": [
+      "This is good.",
+      "The main drawback is that it would be expensive, but the long-term benefits outweigh the cost.",
+      "It is not bad, I think.",
+      "Money is a thing."
+     ],
+     "r": 1,
+     "exp": "Combina desvantagem e ponderação."
+    },
+    {
+     "t": "gap",
+     "q": "The benefits clearly ___ the drawbacks.",
+     "resp": [
+      "outweigh"
+     ],
+     "exp": "Outweigh = pesar mais que."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "On the whole, the benefits outweigh the drawbacks.",
+     "exp": "Outweigh: 'aut-UÊI'."
+    },
+    {
+     "t": "mc",
+     "q": "Which word means 'making a problem worse instead of better'?",
+     "op": [
+      "Appealing",
+      "Counterproductive",
+      "Far-reaching",
+      "Beneficial"
+     ],
+     "r": 1,
+     "exp": "Counterproductive = contraproducente."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "main",
+      "drawback",
+      "is",
+      "that",
+      "it",
+      "could",
+      "be",
+      "extremely",
+      "expensive"
+     ],
+     "resp": "The main drawback is that it could be extremely expensive",
+     "exp": "The main drawback is that ... apresenta a principal desvantagem."
+    },
+    {
+     "t": "gap",
+     "q": "Free gym membership is ___ more appealing than a longer break.",
+     "resp": [
+      "far",
+      "much",
+      "considerably"
+     ],
+     "exp": "Far / much / considerably intensificam o comparativo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Pondere vantagens e desvantagens e conclua com On the whole. Fale cerca de 35 segundos.",
+     "frase": "What are the advantages and disadvantages of a longer sports break at school?",
+     "modelo": "A longer sports break would be quite beneficial because students would have more time to be active and relax. However, the main drawback is that lessons might become rushed. On the whole, I think the benefits outweigh the downsides.",
+     "min": 27,
+     "chave": [
+      "advantage",
+      "drawback",
+      "benefit",
+      "outweigh",
+      "however",
+      "downside"
+     ],
+     "exp": "Vantagem, desvantagem, conclusão."
+    },
+    {
+     "t": "mc",
+     "q": "Which response best evaluates a school tournament?",
+     "op": [
+      "It's nice.",
+      "It could be far more motivating than a gym, since it adds a competitive element, although quieter students may feel left out.",
+      "Tournament, yes yes.",
+      "It is a tournament."
+     ],
+     "r": 1,
+     "exp": "Avalia comparando, e reconhece um ponto contrário."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Justifique com linguagem de avaliação. Fale cerca de 35 segundos.",
+     "frase": "Which of the ideas would be the least effective, and why?",
+     "modelo": "I'd say a ban on school buses would be the least effective, and it might even be counterproductive. Many students live far away, so it simply isn't practical. On the whole, it would create more problems than it solves.",
+     "min": 27,
+     "chave": [
+      "least",
+      "counterproductive",
+      "practical",
+      "problems",
+      "effective",
+      "drawback"
+     ],
+     "exp": "Use least effective, counterproductive e on the whole."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Starting and managing a discussion",
+   "objetivo": "Iniciar a Part 3, envolver o colega e manter a conversa fluindo sem monopolizar.",
+   "foco": "Interactive strategies: inviting, buying time, turn-taking",
+   "explicacao": [
+    "Na Part 3 você conversa com o outro candidato, não com o examinador. Comece com: Shall we start with ...? / Let's begin by looking at ...",
+    "Convide o colega: What do you think? / How about you? / Would you agree?",
+    "Ganhe tempo: Let me think... / That's a good point, let me see. Peça repetição: Sorry, could you say that again?",
+    "Reaja ao colega antes de acrescentar: That's an interesting point. Building on that, ..."
+   ],
+   "vocab": [
+    {
+     "en": "shall we start with",
+     "pt": "vamos começar por"
+    },
+    {
+     "en": "building on that",
+     "pt": "partindo disso"
+    },
+    {
+     "en": "how about you",
+     "pt": "e você"
+    },
+    {
+     "en": "to bring in",
+     "pt": "incluir na conversa"
+    },
+    {
+     "en": "to chip in",
+     "pt": "dar um palpite"
+    },
+    {
+     "en": "let me think",
+     "pt": "deixe-me pensar"
+    },
+    {
+     "en": "to take turns",
+     "pt": "revezar"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 3: A town council wants to make the town centre more attractive to visitors. Here are some ideas: more green spaces, a weekly market, free public transport, street festivals, new cafés. Talk to each other about how much each idea would improve the town centre.",
+    "segundos": 120,
+    "frases_uteis": [
+     "Shall we start with ...?",
+     "What's your view on that?",
+     "Building on that, ...",
+     "Sorry, could you say that again?"
+    ],
+    "modelo": "Shall we start with green spaces? I think they would make the town more pleasant. What's your view on that? Building on that, a weekly market could bring people together too. How about you, do you think free public transport would help?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is the best way to start the Part 3 discussion?",
+     "op": [
+      "Examiner, which one do you like?",
+      "Shall we start with the weekly market? What do you think about it?",
+      "I will say all the ideas.",
+      "Okay, start."
+     ],
+     "r": 1,
+     "exp": "Propõe um ponto e convida o colega."
+    },
+    {
+     "t": "gap",
+     "q": "What's your ___ on that?",
+     "resp": [
+      "view",
+      "opinion",
+      "take"
+     ],
+     "exp": "What's your view / opinion on that? convida o colega."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "Shall we start with green spaces, and then move on to the market?",
+     "exp": "Shall we: 'shal ui'; move on: ligue as palavras."
+    },
+    {
+     "t": "mc",
+     "q": "Your partner has said something you did not catch. What do you say?",
+     "op": [
+      "What?",
+      "Sorry, could you repeat that last point?",
+      "I don't understand you.",
+      "Again!"
+     ],
+     "r": 1,
+     "exp": "Educado e natural."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Building",
+      "on",
+      "that",
+      "I",
+      "think",
+      "street",
+      "festivals",
+      "would",
+      "attract",
+      "visitors",
+      "too"
+     ],
+     "resp": "Building on that I think street festivals would attract visitors too",
+     "exp": "Building on that = partindo do que foi dito."
+    },
+    {
+     "t": "gap",
+     "q": "That's an interesting ___. Can I add something?",
+     "resp": [
+      "point",
+      "idea"
+     ],
+     "exp": "Point/idea é natural para reagir."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Proponha uma ideia, dê sua opinião e passe a palavra ao colega. Fale cerca de 30 segundos.",
+     "frase": "Start the discussion about making the town centre more attractive. Choose one idea and invite your partner to speak.",
+     "modelo": "Shall we start with the green spaces? I think they would make the centre much more pleasant for walking and relaxing. What's your view on that?",
+     "min": 18,
+     "chave": [
+      "shall",
+      "start",
+      "what",
+      "think",
+      "view",
+      "about you"
+     ],
+     "exp": "Termine com uma pergunta ao colega."
+    },
+    {
+     "t": "mc",
+     "q": "Your partner talks for too long. What is the best way to take part?",
+     "op": [
+      "Interrupt rudely.",
+      "Say nothing for two minutes.",
+      "That's a good point. If I could just add something, ...",
+      "Stop talking now."
+     ],
+     "r": 2,
+     "exp": "Entrar com educação mantém o equilíbrio."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Reaja ao colega, discorde com educação e proponha outra ideia.",
+     "frase": "Respond to your partner, who says free public transport would solve everything. Disagree politely and bring in another idea.",
+     "modelo": "That's an interesting point, but I'm not sure it would solve everything. Free transport is useful, yet people also need a reason to come to the centre. Building on that, perhaps street festivals would be more effective. What do you think?",
+     "min": 28,
+     "chave": [
+      "interesting",
+      "not sure",
+      "building",
+      "perhaps",
+      "but",
+      "what do you think"
+     ],
+     "exp": "Reaja, discorde com educação, acrescente."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Agreeing, disagreeing and keeping going",
+   "objetivo": "Concordar, discordar com educação e manter a conversa com perguntas e acréscimos.",
+   "foco": "Agreement and disagreement; softening; asking follow-up questions",
+   "explicacao": [
+    "Concordar de forma variada: Absolutely, I couldn't agree more, That's exactly what I was thinking, I'm with you on that.",
+    "Concordar em parte: Up to a point, I see what you mean, but ... / I agree to some extent, although ...",
+    "Discordar com educação: I'm afraid I see it differently. I'm not so sure about that. With respect, ...",
+    "Se a conversa parar, faça uma pergunta: What about ...? Do you think ...? Or shall we move on to ...?"
+   ],
+   "vocab": [
+    {
+     "en": "I couldn't agree more",
+     "pt": "concordo plenamente"
+    },
+    {
+     "en": "up to a point",
+     "pt": "até certo ponto"
+    },
+    {
+     "en": "I see it differently",
+     "pt": "vejo de outra forma"
+    },
+    {
+     "en": "with respect",
+     "pt": "com todo respeito"
+    },
+    {
+     "en": "to see what you mean",
+     "pt": "entender o que você quer dizer"
+    },
+    {
+     "en": "to move on",
+     "pt": "seguir em frente"
+    },
+    {
+     "en": "to take a different view",
+     "pt": "ter outra visão"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 3: A company wants to help employees stay healthy and motivated. Here are some ideas: flexible hours, a company gym, healthy lunches, extra holiday days, regular team trips. Talk to each other about which ideas would work best.",
+    "segundos": 120,
+    "frases_uteis": [
+     "I couldn't agree more.",
+     "Up to a point, but ...",
+     "I'm afraid I see it differently.",
+     "Shall we move on to ...?"
+    ],
+    "modelo": "I couldn't agree more that flexible hours would help. Up to a point, a company gym would too, but I'm afraid I see it differently when it comes to team trips: they can be tiring. What about extra holiday days? Shall we move on to those?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which phrase shows strong agreement?",
+     "op": [
+      "I'm not so sure.",
+      "I couldn't agree more.",
+      "With respect, no.",
+      "Up to a point."
+     ],
+     "r": 1,
+     "exp": "Expressa concordância total."
+    },
+    {
+     "t": "gap",
+     "q": "I agree ___ to a point, but I see some problems.",
+     "resp": [
+      "up"
+     ],
+     "exp": "Up to a point = até certo ponto."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "I'm afraid I see it differently, because team trips can be quite tiring.",
+     "exp": "I'm afraid: 'aim a-FRÊID'."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the most polite way to disagree?",
+     "op": [
+      "You are wrong.",
+      "That's rubbish.",
+      "I see what you mean, but I'm not so sure it would work.",
+      "No, never."
+     ],
+     "r": 2,
+     "exp": "Reconhece e depois discorda de modo suave."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "see",
+      "what",
+      "you",
+      "mean",
+      "but",
+      "I",
+      "am",
+      "not",
+      "entirely",
+      "convinced"
+     ],
+     "resp": "I see what you mean but I am not entirely convinced",
+     "exp": "Not entirely convinced = não totalmente convencido."
+    },
+    {
+     "t": "gap",
+     "q": "With ___, I think the gym would be unused by most people.",
+     "resp": [
+      "respect"
+     ],
+     "exp": "With respect é uma discordância formal e educada."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Concorde em parte, discorde de um detalhe e faça uma pergunta. Fale cerca de 30 segundos.",
+     "frase": "Your partner says healthy lunches are the best idea. Agree in part and give your view.",
+     "modelo": "Up to a point I agree. Healthy lunches would certainly help, but I'm not so sure they'd motivate people on their own. Flexible hours might be more effective. What do you think?",
+     "min": 22,
+     "chave": [
+      "agree",
+      "up to a point",
+      "sure",
+      "but",
+      "what do you think",
+      "however"
+     ],
+     "exp": "Concorde, discorde e pergunte."
+    },
+    {
+     "t": "mc",
+     "q": "The conversation has gone quiet. What can you say?",
+     "op": [
+      "Okay.",
+      "So, what about extra holiday days? Do you think they would make a difference?",
+      "Silence is nice.",
+      "Is it over?"
+     ],
+     "r": 1,
+     "exp": "Uma pergunta nova mantém a conversa viva."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Discorde com educação e proponha uma alternativa. Fale cerca de 35 segundos.",
+     "frase": "Disagree politely with a partner who thinks team trips are a great idea, and suggest an alternative.",
+     "modelo": "I see what you mean, but I'm afraid I see it differently. Team trips can be tiring and not everyone has the time. Perhaps regular team lunches would be a more practical alternative. Would you agree?",
+     "min": 25,
+     "chave": [
+      "afraid",
+      "differently",
+      "alternative",
+      "perhaps",
+      "agree",
+      "however",
+      "practical"
+     ],
+     "exp": "Reconheça a ideia antes de discordar."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Negotiating and reaching a decision",
+   "objetivo": "Fechar a Part 3: negociar, resumir o que foi dito e chegar a uma decisão conjunta em um minuto.",
+   "foco": "Decision phrases; summarising; compromising",
+   "explicacao": [
+    "Depois de 2 minutos de discussão, o examinador pede uma decisão em cerca de 1 minuto. Comece resumindo: So, we've talked about ...",
+    "Proponha: How about if we go for ...? / I'd suggest we choose ... / Shall we settle on ...?",
+    "Negocie: I'm happy to compromise. If you agree to X, I'm willing to accept Y.",
+    "Confirme no final: So we're agreed, then. / So that's our decision."
+   ],
+   "vocab": [
+    {
+     "en": "to settle on",
+     "pt": "decidir-se por"
+    },
+    {
+     "en": "to compromise",
+     "pt": "fazer concessões"
+    },
+    {
+     "en": "to go for",
+     "pt": "optar por"
+    },
+    {
+     "en": "we're agreed",
+     "pt": "estamos de acordo"
+    },
+    {
+     "en": "to come to a decision",
+     "pt": "chegar a uma decisão"
+    },
+    {
+     "en": "to narrow down",
+     "pt": "reduzir as opções"
+    },
+    {
+     "en": "the most feasible",
+     "pt": "o mais viável"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 3 decision: Now you have about a minute to decide together which TWO ideas would be best for the company: flexible hours, a company gym, healthy lunches, extra holiday days, regular team trips.",
+    "segundos": 60,
+    "frases_uteis": [
+     "So, we've talked about ...",
+     "How about if we go for ...?",
+     "I'm happy to compromise.",
+     "So we're agreed, then."
+    ],
+    "modelo": "So, we've talked about several ideas. I think flexible hours are the most feasible. How about if we also go for healthy lunches? I'm happy to compromise on the gym. So we're agreed, then: flexible hours and healthy lunches."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence best starts the decision stage?",
+     "op": [
+      "So, we've talked about all five ideas. Which two shall we choose?",
+      "Then I finish.",
+      "The end of discussion.",
+      "I decide for you."
+     ],
+     "r": 0,
+     "exp": "Resume e convida o colega a decidir."
+    },
+    {
+     "t": "gap",
+     "q": "How about if we ___ for flexible hours and healthy lunches?",
+     "resp": [
+      "go"
+     ],
+     "exp": "Go for = optar por."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "I'm happy to compromise, so shall we settle on those two ideas?",
+     "exp": "Compromise: 'KOM-pro-maiz'."
+    },
+    {
+     "t": "mc",
+     "q": "Which phrase shows willingness to compromise?",
+     "op": [
+      "Never.",
+      "I'm willing to give up the gym if you accept the extra holiday.",
+      "I won't change.",
+      "You must agree."
+     ],
+     "r": 1,
+     "exp": "Troca de concessões."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "So",
+      "we",
+      "are",
+      "agreed",
+      "then",
+      "flexible",
+      "hours",
+      "and",
+      "healthy",
+      "lunches"
+     ],
+     "resp": "So we are agreed then flexible hours and healthy lunches",
+     "exp": "Fecha confirmando a decisão."
+    },
+    {
+     "t": "gap",
+     "q": "Let's ___ down the options to two.",
+     "resp": [
+      "narrow"
+     ],
+     "exp": "Narrow down = reduzir."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça uma proposta e justifique brevemente. Fale cerca de 25 segundos.",
+     "frase": "Suggest two ideas to choose and give a short reason.",
+     "modelo": "How about if we go for flexible hours and healthy lunches? They seem the most feasible, and they would benefit everyone. What do you think?",
+     "min": 17,
+     "chave": [
+      "how about",
+      "go for",
+      "feasible",
+      "choose",
+      "settle",
+      "propose"
+     ],
+     "exp": "Proponha, justifique, pergunte."
+    },
+    {
+     "t": "mc",
+     "q": "Your partner prefers a different second idea. What is the best response?",
+     "op": [
+      "Impossible.",
+      "I'm happy to compromise: let's pick your idea, as long as we keep flexible hours.",
+      "No more discussion.",
+      "Whatever."
+     ],
+     "r": 1,
+     "exp": "Negociação com condição."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça o fechamento completo em cerca de 40 segundos.",
+     "frase": "Close the discussion: summarise, agree on a decision and confirm it with your partner.",
+     "modelo": "So, we've talked about several options. I think flexible hours are the most feasible, and I'm happy to compromise on the gym. How about if we settle on flexible hours and extra holiday days? So we're agreed, then. That's our decision.",
+     "min": 28,
+     "chave": [
+      "agreed",
+      "settle",
+      "decision",
+      "compromise",
+      "summary",
+      "so we"
+     ],
+     "exp": "Resuma, negocie, confirme."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Technology and society in Part 4",
+   "objetivo": "Discutir tecnologia e sociedade na Part 4 com argumentos abstratos e exemplos.",
+   "foco": "Abstract nouns; cause and effect; concessions (although, even though, while)",
+   "explicacao": [
+    "Na Part 4 as perguntas são abstratas: How has technology changed the way we communicate? Do you think we depend too much on it?",
+    "Estrutura: opinião, motivo, concessão, exemplo. I think we rely on it too much. Even though it makes life easier, it can reduce face-to-face contact.",
+    "Substantivos abstratos: dependence, privacy, convenience, isolation, progress, distraction.",
+    "Causa e efeito: This leads to ..., As a result, ..., One consequence is ..."
+   ],
+   "vocab": [
+    {
+     "en": "to rely on",
+     "pt": "depender de"
+    },
+    {
+     "en": "convenience",
+     "pt": "comodidade"
+    },
+    {
+     "en": "privacy",
+     "pt": "privacidade"
+    },
+    {
+     "en": "isolation",
+     "pt": "isolamento"
+    },
+    {
+     "en": "a distraction",
+     "pt": "uma distração"
+    },
+    {
+     "en": "to lead to",
+     "pt": "levar a"
+    },
+    {
+     "en": "even though",
+     "pt": "embora"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 4: Answer the questions. How has technology changed the way people communicate? Do you think we rely on technology too much? Should children be allowed to use social media?",
+    "segundos": 120,
+    "frases_uteis": [
+     "I'd say that ...",
+     "Even though ..., it can ...",
+     "One consequence is that ...",
+     "As a result, ..."
+    ],
+    "modelo": "I'd say technology has made communication faster and more convenient. Even though we are more connected, I think it can lead to isolation, because people often prefer messaging to meeting. One consequence is that face-to-face conversations are becoming less common."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which answer is best for 'Do we rely on technology too much?'",
+     "op": [
+      "Yes.",
+      "I think so, to a certain extent. Even though it makes life easier, it can reduce our independence.",
+      "Technology is.",
+      "Too much or too less."
+     ],
+     "r": 1,
+     "exp": "Opinião com concessão."
+    },
+    {
+     "t": "gap",
+     "q": "Even ___ it's convenient, it can be distracting.",
+     "resp": [
+      "though"
+     ],
+     "exp": "Even though = embora."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "One consequence is that people are becoming less patient.",
+     "exp": "Consequence: 'KON-se-kuens'."
+    },
+    {
+     "t": "mc",
+     "q": "Which expression introduces a result?",
+     "op": [
+      "As a result",
+      "In spite",
+      "As well",
+      "For instance not"
+     ],
+     "r": 0,
+     "exp": "As a result = como resultado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Technology",
+      "can",
+      "lead",
+      "to",
+      "isolation",
+      "even",
+      "though",
+      "it",
+      "connects",
+      "us"
+     ],
+     "resp": "Technology can lead to isolation even though it connects us",
+     "exp": "Lead to + substantivo."
+    },
+    {
+     "t": "gap",
+     "q": "Many people ___ on their phones for navigation.",
+     "resp": [
+      "rely",
+      "depend"
+     ],
+     "exp": "Rely/depend on."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê opinião, concessão e uma consequência. Fale cerca de 35 segundos.",
+     "frase": "How has technology changed the way people communicate?",
+     "modelo": "I'd say it has made communication faster and more convenient. Even though we are more connected, it can lead to isolation, because people often prefer messaging to meeting. As a result, face-to-face conversations are becoming less common.",
+     "min": 25,
+     "chave": [
+      "faster",
+      "convenient",
+      "connected",
+      "isolation",
+      "result",
+      "messaging",
+      "consequence"
+     ],
+     "exp": "Use even though e as a result."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is the most abstract and developed?",
+     "op": [
+      "Phones are good.",
+      "The convenience of technology often comes at the cost of our privacy.",
+      "I like my phone.",
+      "Phone is useful."
+     ],
+     "r": 1,
+     "exp": "Substantivos abstratos e ideia complexa."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê opinião, um argumento a favor e um contra. Fale cerca de 40 segundos.",
+     "frase": "Should children be allowed to use social media? Explain.",
+     "modelo": "I think it depends on their age. On the one hand, social media can help children stay in touch with friends. On the other hand, it exposes them to privacy risks and distractions. On balance, I'd say parents should set limits rather than ban it completely.",
+     "min": 30,
+     "chave": [
+      "depends",
+      "on the one hand",
+      "other hand",
+      "balance",
+      "risk",
+      "limits",
+      "privacy"
+     ],
+     "exp": "Dois lados e uma conclusão."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Ethics, education and the individual",
+   "objetivo": "Discutir ética, educação e papel do indivíduo com cuidado e profundidade.",
+   "foco": "Modal verbs for obligation and advice; conditionals; abstract nouns",
+   "explicacao": [
+    "Em temas éticos, mostre equilíbrio: Some people argue that ..., whereas others believe ... Personally, I tend to side with ...",
+    "Obrigação e conselho: should, ought to, have to, it's essential that. Companies should be held responsible.",
+    "Condicionais: If schools focused more on creativity, students would be less stressed.",
+    "Termos úteis: fairness, responsibility, accountability, equal opportunities, integrity."
+   ],
+   "vocab": [
+    {
+     "en": "accountability",
+     "pt": "responsabilização"
+    },
+    {
+     "en": "fairness",
+     "pt": "justiça, equidade"
+    },
+    {
+     "en": "equal opportunities",
+     "pt": "igualdade de oportunidades"
+    },
+    {
+     "en": "integrity",
+     "pt": "integridade"
+    },
+    {
+     "en": "to side with",
+     "pt": "ficar do lado de"
+    },
+    {
+     "en": "to be held responsible",
+     "pt": "ser responsabilizado"
+    },
+    {
+     "en": "a moral obligation",
+     "pt": "obrigação moral"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 4: Answer the questions. Should schools teach students how to be good citizens? Is it fair that some people have better educational opportunities than others? Who should be responsible for protecting the environment?",
+    "segundos": 120,
+    "frases_uteis": [
+     "Some people argue that ..., whereas others ...",
+     "Personally, I tend to side with ...",
+     "If ..., would ...",
+     "It's essential that ..."
+    ],
+    "modelo": "Some people argue that schools should only teach subjects, whereas others believe values matter just as much. Personally, I tend to side with the second group. If schools focused on responsibility and integrity, young people would probably become more active citizens."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which answer is the most balanced?",
+     "op": [
+      "Schools must do it.",
+      "Some argue that families should teach values, whereas others believe schools share that responsibility.",
+      "Schools no.",
+      "Everybody agree."
+     ],
+     "r": 1,
+     "exp": "Mostra dois lados."
+    },
+    {
+     "t": "gap",
+     "q": "Companies should be held ___ for the damage they cause.",
+     "resp": [
+      "responsible",
+      "accountable"
+     ],
+     "exp": "Held responsible/accountable."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "Personally, I tend to side with those who believe education should be free.",
+     "exp": "Personally: 'PER-so-nal-i'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence correctly uses a conditional?",
+     "op": [
+      "If schools will teach ethics, students are better.",
+      "If schools taught ethics, students would make wiser choices.",
+      "If schools teach ethics, students would.",
+      "If schools would teach, students make."
+     ],
+     "r": 1,
+     "exp": "Second conditional: past simple + would."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It",
+      "is",
+      "essential",
+      "that",
+      "everyone",
+      "has",
+      "equal",
+      "opportunities"
+     ],
+     "resp": "It is essential that everyone has equal opportunities",
+     "exp": "It's essential that + sujeito + verbo."
+    },
+    {
+     "t": "gap",
+     "q": "Fairness means giving everyone equal ___.",
+     "resp": [
+      "opportunities",
+      "opportunity",
+      "chances"
+     ],
+     "exp": "Equal opportunities."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê uma posição, mostre os dois lados e dê um exemplo. Fale cerca de 40 segundos.",
+     "frase": "Is it fair that some people have better educational opportunities than others?",
+     "modelo": "I'd say it isn't fair, but it's hard to solve completely. Some people argue that families have the right to invest in their children's education, whereas others believe the state should guarantee equal opportunities. Personally, I think better public schools would reduce the gap.",
+     "min": 30,
+     "chave": [
+      "fair",
+      "opportunities",
+      "whereas",
+      "state",
+      "gap",
+      "argue",
+      "education"
+     ],
+     "exp": "Posição, dois lados, solução."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence expresses a moral obligation most strongly?",
+     "op": [
+      "We might help.",
+      "We have a moral obligation to protect future generations.",
+      "Maybe we can protect.",
+      "It's good to protect."
+     ],
+     "r": 1,
+     "exp": "Moral obligation é forte."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Argumente com cuidado e conclua. Fale cerca de 45 segundos.",
+     "frase": "Who should be responsible for protecting the environment: individuals, companies or governments?",
+     "modelo": "I'd say responsibility should be shared. Individuals can make small changes, but companies cause far more pollution, so they should be held accountable. Ultimately, governments need to set clear rules. If everyone played a part, the results would be much more significant.",
+     "min": 29,
+     "chave": [
+      "responsible",
+      "companies",
+      "governments",
+      "individuals",
+      "shared",
+      "accountable",
+      "rules"
+     ],
+     "exp": "Divida responsabilidades e conclua."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Idioms and natural collocations",
+   "objetivo": "Usar idioms e colocações naturais com moderação para soar fluente.",
+   "foco": "Idioms and collocations: make a decision, keep in touch, a blessing in disguise",
+   "explicacao": [
+    "Idioms mostram naturalidade, mas use poucos e na hora certa. Dois bem usados valem mais que cinco forçados.",
+    "Idioms úteis: a blessing in disguise, at the end of the day, the tip of the iceberg, to be on the same page, to get the ball rolling, a piece of cake.",
+    "Colocações importam mais: make progress, take responsibility, raise awareness, meet a deadline, reach a conclusion, heavy traffic.",
+    "Cuidado com colocações erradas: say 'do a decision' está errado; diga make a decision."
+   ],
+   "vocab": [
+    {
+     "en": "a blessing in disguise",
+     "pt": "bênção disfarçada"
+    },
+    {
+     "en": "at the end of the day",
+     "pt": "no fim das contas"
+    },
+    {
+     "en": "the tip of the iceberg",
+     "pt": "a ponta do iceberg"
+    },
+    {
+     "en": "to be on the same page",
+     "pt": "estar na mesma sintonia"
+    },
+    {
+     "en": "to get the ball rolling",
+     "pt": "dar o pontapé inicial"
+    },
+    {
+     "en": "to raise awareness",
+     "pt": "aumentar a conscientização"
+    },
+    {
+     "en": "to meet a deadline",
+     "pt": "cumprir um prazo"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 4 practice: Answer using natural expressions. Do you think failure can be a good thing? How can a community raise awareness of important issues? How important is it to be on the same page with the people you work with?",
+    "segundos": 100,
+    "frases_uteis": [
+     "At the end of the day, ...",
+     "It was a blessing in disguise.",
+     "We need to raise awareness of ...",
+     "Let's get the ball rolling."
+    ],
+    "modelo": "At the end of the day, I believe failure can be a blessing in disguise. When I failed my first driving test, I felt terrible, but it taught me to be more patient. In a community, we need to raise awareness through events and social media, and teams must be on the same page to make real progress."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which collocation is correct?",
+     "op": [
+      "do a decision",
+      "make a decision",
+      "take a decision up",
+      "get a decision"
+     ],
+     "r": 1,
+     "exp": "Make a decision."
+    },
+    {
+     "t": "gap",
+     "q": "At the end of the ___, it's your choice.",
+     "resp": [
+      "day"
+     ],
+     "exp": "At the end of the day = no fim das contas."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "Losing that job was a blessing in disguise, because it pushed me to change career.",
+     "exp": "Disguise: 'dis-GAIZ'."
+    },
+    {
+     "t": "mc",
+     "q": "Which idiom means 'to begin something'?",
+     "op": [
+      "to get the ball rolling",
+      "to drop the ball",
+      "to be in the dark",
+      "to miss the boat"
+     ],
+     "r": 0,
+     "exp": "Get the ball rolling = começar."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "At",
+      "the",
+      "end",
+      "of",
+      "the",
+      "day",
+      "it",
+      "was",
+      "a",
+      "blessing",
+      "in",
+      "disguise"
+     ],
+     "resp": "At the end of the day it was a blessing in disguise",
+     "exp": "Idioms funcionam melhor em frases curtas."
+    },
+    {
+     "t": "gap",
+     "q": "The campaign aims to ___ awareness of climate change.",
+     "resp": [
+      "raise"
+     ],
+     "exp": "Raise awareness."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda com um idiom ou colocação e um exemplo pessoal. Fale cerca de 35 segundos.",
+     "frase": "Can failure be a good thing? Use at least one natural expression.",
+     "modelo": "At the end of the day, I think failure can be a blessing in disguise. When I failed my first driving test, I felt terrible, but it taught me to be more patient and prepare properly.",
+     "min": 25,
+     "chave": [
+      "blessing",
+      "end of the day",
+      "failure",
+      "taught",
+      "learn",
+      "mistake",
+      "disguise"
+     ],
+     "exp": "Use um idiom com naturalidade."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence uses an idiom incorrectly?",
+     "op": [
+      "The first step was just the tip of the iceberg.",
+      "He is a piece of cake.",
+      "Let's get the ball rolling.",
+      "We need to be on the same page."
+     ],
+     "r": 1,
+     "exp": "A piece of cake descreve uma tarefa fácil, não uma pessoa."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê duas ideias práticas usando colocações naturais.",
+     "frase": "How can a community raise awareness of an important issue?",
+     "modelo": "A community can raise awareness by organising events and using social media effectively. It's also important to be on the same page, so local schools and businesses should get the ball rolling together and keep making progress over time.",
+     "min": 27,
+     "chave": [
+      "raise awareness",
+      "events",
+      "social media",
+      "schools",
+      "progress",
+      "community",
+      "campaign"
+     ],
+     "exp": "Use raise awareness e make progress."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Fluency, coherence and recovery",
+   "objetivo": "Falar com fluência e coerência, corrigir-se e se recuperar de uma pausa sem perder a naturalidade.",
+   "foco": "Fillers, self-correction, paraphrasing, linking devices",
+   "explicacao": [
+    "Fluência não é falar rápido: é manter o fluxo com pausas naturais. Use fillers com moderação: well, you know, let me see, how can I put it.",
+    "Se esquecer uma palavra, parafraseie: it's a kind of ..., something you use for ..., what I mean is ...",
+    "Corrija-se com calma: I mean, ..., or rather, ..., sorry, what I meant was ...",
+    "Conectores: what's more, in addition, on top of that, having said that, as a result."
+   ],
+   "vocab": [
+    {
+     "en": "how can I put it",
+     "pt": "como posso dizer"
+    },
+    {
+     "en": "or rather",
+     "pt": "ou melhor"
+    },
+    {
+     "en": "what I mean is",
+     "pt": "o que quero dizer é"
+    },
+    {
+     "en": "what's more",
+     "pt": "além disso"
+    },
+    {
+     "en": "having said that",
+     "pt": "dito isso"
+    },
+    {
+     "en": "on top of that",
+     "pt": "além do mais"
+    },
+    {
+     "en": "to put it another way",
+     "pt": "dizendo de outra forma"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 4 practice: Talk for about a minute. What makes someone a good communicator? Do you think people communicate better today than in the past?",
+    "segundos": 90,
+    "frases_uteis": [
+     "Well, how can I put it ...",
+     "What I mean is ...",
+     "Or rather, ...",
+     "Having said that, ..."
+    ],
+    "modelo": "Well, how can I put it? A good communicator is someone who listens, or rather, someone who really understands the other person. What's more, they can adapt their language. Having said that, I don't think we communicate better than before, because we are often distracted."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "You forget a word. What is the best strategy?",
+     "op": [
+      "Stop and stay quiet.",
+      "Say it in Portuguese.",
+      "Say 'it's a kind of tool you use for cutting paper', and keep going.",
+      "Say 'I don't know'."
+     ],
+     "r": 2,
+     "exp": "Parafrasear mantém a fluência."
+    },
+    {
+     "t": "gap",
+     "q": "A good speaker listens, or ___, truly understands.",
+     "resp": [
+      "rather"
+     ],
+     "exp": "Or rather corrige com elegância."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "What's more, good communicators can adapt their language to the listener.",
+     "exp": "What's more: 'uóts MÓR'."
+    },
+    {
+     "t": "mc",
+     "q": "Which linker adds another point?",
+     "op": [
+      "On top of that",
+      "However",
+      "Despite",
+      "Otherwise"
+     ],
+     "r": 0,
+     "exp": "On top of that = além disso."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Well",
+      "how",
+      "can",
+      "I",
+      "put",
+      "it",
+      "she",
+      "is",
+      "a",
+      "very",
+      "patient",
+      "listener"
+     ],
+     "resp": "Well how can I put it she is a very patient listener",
+     "exp": "How can I put it dá tempo para pensar."
+    },
+    {
+     "t": "gap",
+     "q": "Having said ___, I still think it's too early to decide.",
+     "resp": [
+      "that"
+     ],
+     "exp": "Having said that = dito isso."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Use um filler, um conector e uma correção. Fale cerca de 40 segundos.",
+     "frase": "What makes someone a good communicator?",
+     "modelo": "Well, how can I put it? A good communicator is someone who listens, or rather, someone who really tries to understand others. What's more, they adapt their language to the audience. On top of that, they stay calm under pressure.",
+     "min": 28,
+     "chave": [
+      "listen",
+      "understand",
+      "adapt",
+      "rather",
+      "what's more",
+      "how can i put it",
+      "clear"
+     ],
+     "exp": "Use filler, conector e correção."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the best self-correction?",
+     "op": [
+      "Sorry, no, no, no.",
+      "I went yesterday, I mean, I went last week.",
+      "Wrong again.",
+      "Stop, stop."
+     ],
+     "r": 1,
+     "exp": "I mean sinaliza correção naturalmente."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Sustente por cerca de 50 segundos com conectores, correção e hedging.",
+     "frase": "Do you think people communicate better today than in the past? Speak for about a minute.",
+     "modelo": "Well, it's hard to say. We communicate faster, but not necessarily better, or rather, not always more deeply. Having said that, technology lets us stay close to people far away. What's more, it helps shy people to express themselves. On balance, I'd say it's a mixed picture.",
+     "min": 30,
+     "chave": [
+      "faster",
+      "better",
+      "technology",
+      "having said",
+      "what's more",
+      "balance",
+      "depends"
+     ],
+     "exp": "Mantenha o fluxo e conecte as ideias."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Mock test: full C1 Advanced Speaking",
+   "objetivo": "Fazer um simulado completo das quatro partes do Speaking do C1 Advanced.",
+   "foco": "Parts 1 to 4; long turn; collaborative task; abstract discussion",
+   "explicacao": [
+    "Tempo real: Part 1 (2 min) entrevista; Part 2 (4 min) long turn de 1 minuto cada com duas fotos; Part 3 (4 min) discussão de 2 min e decisão de 1 min; Part 4 (5 min) discussão aprofundada.",
+    "Part 1: respostas desenvolvidas. Part 2: compare, especule e responda à pergunta. Part 3: invente, avalie, negocie e decida. Part 4: argumente com equilíbrio.",
+    "Use hedging, conectores e idioms com moderação. Nunca pare de falar: parafraseie quando faltar uma palavra.",
+    "Respire. Fale com clareza e deixe o colega falar também."
+   ],
+   "vocab": [
+    {
+     "en": "long turn",
+     "pt": "fala individual de um minuto"
+    },
+    {
+     "en": "to elaborate",
+     "pt": "elaborar, desenvolver"
+    },
+    {
+     "en": "to speculate",
+     "pt": "especular"
+    },
+    {
+     "en": "to reach a consensus",
+     "pt": "chegar a um consenso"
+    },
+    {
+     "en": "to justify",
+     "pt": "justificar"
+    },
+    {
+     "en": "balanced view",
+     "pt": "visão equilibrada"
+    },
+    {
+     "en": "to wrap up",
+     "pt": "concluir"
+    }
+   ],
+   "material": {
+    "tarefa": "Full mock: Part 1: Talk about yourself and your plans. Part 2: Compare two photos (a student studying alone in a library; a group of students working together in a café) and say why they might have chosen to study in these ways, and which method might be more effective. Part 3: Discuss which ideas would best help students learn (online courses, study groups, private tutors, more practical lessons, longer school days), then decide on the best two. Part 4: How is education changing, and who benefits most?",
+    "segundos": 180,
+    "frases_uteis": [
+     "To be honest, ...",
+     "Both pictures show ... whereas ...",
+     "Shall we start with ...?",
+     "Having said that, ..."
+    ],
+    "modelo": "To be honest, I'm quite into learning languages. Both pictures show students studying, whereas in the first one the student is alone, and in the second one they are working in a group. They might prefer these ways for different reasons. Shall we start with study groups? Having said that, online courses are flexible too. So we're agreed, then: study groups and practical lessons. As for the future, education is changing quickly, and arguably the biggest beneficiaries are those with access to technology."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Part 1: 'What do you enjoy about studying English?' Which is the best answer?",
+     "op": [
+      "It's okay.",
+      "To be honest, I find it rewarding. As a matter of fact, it has opened up job opportunities I never expected.",
+      "I studying much.",
+      "English is a language."
+     ],
+     "r": 1,
+     "exp": "Resposta desenvolvida com expressões naturais."
+    },
+    {
+     "t": "gap",
+     "q": "Both pictures show students working, ___ in the first one the student is alone.",
+     "resp": [
+      "whereas",
+      "while"
+     ],
+     "exp": "Whereas/while contrastam."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza e ritmo natural.",
+     "frase": "Judging by their expressions, the students in the café seem more relaxed.",
+     "exp": "Expressions: 'iks-PRÉ-shuns'."
+    },
+    {
+     "t": "mc",
+     "q": "Part 2: Which sentence best answers 'which method might be more effective'?",
+     "op": [
+      "The first.",
+      "Arguably, studying in a group could be more effective for discussion, although studying alone would help concentration.",
+      "Both effective yes.",
+      "I don't know exactly."
+     ],
+     "r": 1,
+     "exp": "Posição cautelosa com os dois lados."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Having",
+      "said",
+      "that",
+      "online",
+      "courses",
+      "could",
+      "be",
+      "just",
+      "as",
+      "effective"
+     ],
+     "resp": "Having said that online courses could be just as effective",
+     "exp": "Having said that = dito isso."
+    },
+    {
+     "t": "gap",
+     "q": "Shall we ___ with study groups?",
+     "resp": [
+      "start",
+      "begin"
+     ],
+     "exp": "Shall we start with ...?"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Compare as fotos e especule sobre os motivos. Fale cerca de 50 segundos.",
+     "frase": "Part 2: Compare a student studying alone in a library with a group studying in a café, and say why they might have chosen to study in these ways.",
+     "modelo": "Both pictures show students studying, but in different ways. In the first one, the student is alone in a library, whereas in the second one a group is working together in a café. The student in the library might prefer silence to concentrate, while the group may find it easier to share ideas. Judging by their expressions, the group seems more relaxed.",
+     "min": 30,
+     "chave": [
+      "both",
+      "whereas",
+      "might",
+      "may",
+      "judging",
+      "prefer",
+      "concentrate"
+     ],
+     "exp": "Compare, especule, use judging by."
+    },
+    {
+     "t": "mc",
+     "q": "Part 3: How do you respond when your partner proposes private tutors?",
+     "op": [
+      "No!",
+      "I see what you mean, but I'm not so sure it's accessible for everyone. What about study groups?",
+      "Tutor is rich.",
+      "You are wrong."
+     ],
+     "r": 1,
+     "exp": "Discordância educada com alternativa."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça o fechamento: resuma, proponha duas ideias e confirme. Fale cerca de 30 segundos.",
+     "frase": "Part 3 decision: Choose the best two ideas with your partner.",
+     "modelo": "So, we've talked about several ideas. I think study groups and more practical lessons would help most. How about if we settle on those two? I'm happy to compromise on online courses. So we're agreed, then.",
+     "min": 25,
+     "chave": [
+      "agreed",
+      "settle",
+      "study groups",
+      "practical",
+      "how about",
+      "compromise",
+      "decision"
+     ],
+     "exp": "Resuma, proponha, confirme."
+    },
+    {
+     "t": "mc",
+     "q": "Part 4: Which opening for 'Who benefits most from changes in education?' is the strongest?",
+     "op": [
+      "Students.",
+      "That's an interesting question. Arguably, the main beneficiaries are those with access to technology, although this could widen inequality.",
+      "I think nobody.",
+      "Rich only."
+     ],
+     "r": 1,
+     "exp": "Opinião cautelosa com um contraponto."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It",
+      "seems",
+      "to",
+      "me",
+      "that",
+      "education",
+      "is",
+      "changing",
+      "faster",
+      "than",
+      "ever"
+     ],
+     "resp": "It seems to me that education is changing faster than ever",
+     "exp": "It seems to me that = opinião cautelosa."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Argumente com equilíbrio por cerca de 50 segundos.",
+     "frase": "Part 4: How is education changing, and who benefits most? Give a balanced answer.",
+     "modelo": "Education is changing quickly, mainly because of technology. Online courses make learning more flexible, so arguably people in remote areas benefit most. Having said that, those without internet access may fall behind. On balance, I think the key is to make sure technology serves everyone, not just a few.",
+     "min": 30,
+     "chave": [
+      "technology",
+      "online",
+      "benefit",
+      "arguably",
+      "balance",
+      "access",
+      "flexible"
+     ],
+     "exp": "Dois lados e uma conclusão equilibrada."
+    }
+   ]
+  }
+ ]
+}

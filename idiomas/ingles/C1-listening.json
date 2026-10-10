@@ -1,0 +1,3318 @@
+{
+ "nivel": "C1",
+ "skill": "listening",
+ "exame": "C1 Advanced (CAE)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Reading the speaker's attitude",
+   "objetivo": "Perceber como a pessoa se sente (aliviada, cética, irritada) mesmo quando ela não diz isso diretamente.",
+   "foco": "Attitude adjectives; softening and concession (though, but, to be honest)",
+   "explicacao": [
+    "Em C1 a resposta quase nunca é dita com a palavra exata. Se alguém diz Better than I'd expected, to be honest, o sentimento é alívio ou surpresa agradável.",
+    "Palavras como though, but, honestly e to be fair mostram que a pessoa vai mudar de direção: o que vem depois pesa mais.",
+    "Ouça o tom: voz baixa e pausas indicam dúvida; ênfase forte indica convicção.",
+    "Adjetivos úteis: relieved, sceptical, reluctant, apprehensive, defensive, enthusiastic."
+   ],
+   "vocab": [
+    {
+     "en": "relieved",
+     "pt": "aliviado"
+    },
+    {
+     "en": "to dread",
+     "pt": "temer, ter pavor de"
+    },
+    {
+     "en": "hiccup",
+     "pt": "contratempo pequeno"
+    },
+    {
+     "en": "to pick holes in",
+     "pt": "apontar falhas em"
+    },
+    {
+     "en": "to overstate",
+     "pt": "exagerar"
+    },
+    {
+     "en": "it stings",
+     "pt": "dói (a crítica)"
+    },
+    {
+     "en": "to deserve",
+     "pt": "merecer"
+    },
+    {
+     "en": "sore",
+     "pt": "dolorido"
+    }
+   ],
+   "material": {
+    "titulo": "After the presentation",
+    "falas": [
+     {
+      "p": "A",
+      "t": "So, how did the presentation go yesterday? You were dreading it all week."
+     },
+     {
+      "p": "B",
+      "t": "Better than I'd expected, to be honest. I'd rehearsed it so many times that I barely looked at my notes. The only hiccup was the projector, which packed up halfway through."
+     },
+     {
+      "p": "A",
+      "t": "Oh no. What did you do?"
+     },
+     {
+      "p": "B",
+      "t": "I carried on without the slides. Funnily enough, that's when people started asking questions. Up to then they'd been sitting there like statues."
+     },
+     {
+      "p": "A",
+      "t": "That sounds encouraging. Did Professor Hale say anything afterwards?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, and that's what surprised me. I thought she'd pick holes in my argument, because she's usually quite harsh. Instead she said the data was convincing, though she wasn't sure about my conclusion."
+     },
+     {
+      "p": "A",
+      "t": "Hm. Which part didn't she like?"
+     },
+     {
+      "p": "B",
+      "t": "She thinks I've overstated the link between income and health. I'm not convinced she's right, but I'll look at it again before I submit the final version."
+     },
+     {
+      "p": "A",
+      "t": "Sounds sensible. I'd be tempted to ignore her and move on."
+     },
+     {
+      "p": "B",
+      "t": "Honestly, so would I, a few weeks ago. But I've learnt that her criticism usually turns out to be fair, even when it stings."
+     },
+     {
+      "p": "A",
+      "t": "Well, you deserve a break. Are you still coming to the climbing wall on Friday?"
+     },
+     {
+      "p": "B",
+      "t": "I was going to cancel, because my shoulder's still sore, but I think I'll come along and just watch. Somebody has to hold the ropes."
+     },
+     {
+      "p": "A",
+      "t": "Ha, that's the spirit. Although I should warn you, Ellie is bringing her brother, and he talks non-stop about his training programme."
+     },
+     {
+      "p": "B",
+      "t": "Then I'll bring headphones."
+     },
+     {
+      "p": "A",
+      "t": "Fine, but don't let him see them."
+     },
+     {
+      "p": "B",
+      "t": "Seriously, though, thanks for the pep talk. I'd been dreading telling anyone how nervous I really was."
+     },
+     {
+      "p": "A",
+      "t": "You didn't have to. It was obvious from your messages, which got shorter every single day."
+     },
+     {
+      "p": "B",
+      "t": "Was it? I thought I was hiding it rather well."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How does the man feel about his presentation?",
+     "op": [
+      "Relieved that it went better than he had feared",
+      "Embarrassed about the equipment failure",
+      "Annoyed that the audience stayed silent",
+      "Anxious about the professor's reaction"
+     ],
+     "r": 0,
+     "exp": "Ele diz Better than I'd expected. O projetor quebrou e a plateia ficou calada no início, mas isso não é o que ele sente no geral."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Better than I'd ___, to be honest.",
+     "resp": [
+      "expected"
+     ],
+     "exp": "Better than I'd expected: melhor do que eu esperava.",
+     "ouvir": "Better than I'd expected, to be honest."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I thought she'd pick holes in my argument, because she's usually quite harsh.",
+     "ouvir": "I thought she'd pick holes in my argument, because she's usually quite harsh.",
+     "exp": "Em pick holes, o /k/ de pick liga com holes. Harsh termina em /sh/."
+    },
+    {
+     "t": "mc",
+     "q": "What changed when the projector stopped working?",
+     "op": [
+      "The presentation was cancelled.",
+      "The audience became more involved.",
+      "The professor stopped listening.",
+      "He forgot his main argument."
+     ],
+     "r": 1,
+     "exp": "Ele continuou sem os slides e foi aí que as pessoas começaram a fazer perguntas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "thinks",
+      "I've",
+      "overstated",
+      "the",
+      "link",
+      "between",
+      "income",
+      "and",
+      "health"
+     ],
+     "resp": "She thinks I've overstated the link between income and health",
+     "exp": "Overstate = exagerar. A professora acha que ele exagerou a ligação entre renda e saúde."
+    },
+    {
+     "t": "gap",
+     "q": "The man has learnt that Professor Hale's criticism usually turns out to be ___, even when it stings.",
+     "resp": [
+      "fair",
+      "justified",
+      "valid",
+      "right",
+      "reasonable"
+     ],
+     "exp": "Ele diz: her criticism usually turns out to be fair. Mesmo doendo, ela costuma ter razão."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Tell me about a time when someone criticised your work. How did you react?",
+     "modelo": "I once showed a report to my boss and she said it was too long. I felt annoyed at first, but later I realised she was right, so I cut it by half.",
+     "min": 12,
+     "chave": [
+      "criticised",
+      "felt",
+      "realised",
+      "annoyed",
+      "feedback",
+      "advice",
+      "react",
+      "was"
+     ],
+     "exp": "Use passado: I felt..., I realised... e mostre se concordou com a crítica."
+    },
+    {
+     "t": "mc",
+     "q": "What does the man decide about Friday?",
+     "op": [
+      "He will cancel because of his shoulder.",
+      "He will climb as usual.",
+      "He will go but not climb.",
+      "He will invite Ellie's brother."
+     ],
+     "r": 2,
+     "exp": "Ele ia cancelar, mas diz que vai junto e só vai assistir (hold the ropes). O irmão da Ellie é quem vai falar sem parar."
+    },
+    {
+     "t": "gap",
+     "q": "Ellie's brother talks non-stop about his training ___.",
+     "resp": [
+      "programme",
+      "program",
+      "routine",
+      "schedule"
+     ],
+     "exp": "Ele fala sem parar sobre o training programme, por isso o homem leva fones de ouvido."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Why is she telling me this?",
+   "objetivo": "Identificar o propósito da fala: avisar, convencer, tranquilizar, pedir um favor sem pedir diretamente.",
+   "foco": "Speaker purpose; indirect requests; polite persuasion",
+   "explicacao": [
+    "Pergunte sempre: por que a pessoa diz isso? O propósito pode ser pedir algo, justificar uma decisão ou suavizar uma má notícia.",
+    "Pedidos indiretos: We'd be delighted if you could..., It would be great if... Soam como convites, mas são pedidos.",
+    "Elogios podem ser argumento: It's a compliment, really = estou tentando convencer você.",
+    "Tranquilizar: Nothing like that, Take your time, Perfectly reasonable."
+   ],
+   "vocab": [
+    {
+     "en": "slot",
+     "pt": "horário reservado"
+    },
+    {
+     "en": "to pull out",
+     "pt": "desistir"
+    },
+    {
+     "en": "keynote speaker",
+     "pt": "palestrante principal"
+    },
+    {
+     "en": "delegate",
+     "pt": "participante de congresso"
+    },
+    {
+     "en": "to step in",
+     "pt": "assumir no lugar de alguém"
+    },
+    {
+     "en": "half-baked",
+     "pt": "mal preparado"
+    },
+    {
+     "en": "thin",
+     "pt": "fraco, pouco desenvolvido"
+    },
+    {
+     "en": "considered",
+     "pt": "bem pensado"
+    }
+   ],
+   "material": {
+    "titulo": "A call about a symposium",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Dr Okafor, thanks for picking up. I'm calling about your slot at the symposium next month."
+     },
+     {
+      "p": "B",
+      "t": "Of course. I hope there isn't a problem; I've already booked my train."
+     },
+     {
+      "p": "A",
+      "t": "No, no, nothing like that. It's more that we've had a few last-minute changes. The keynote speaker from Lisbon has pulled out, so we're rearranging the whole of Thursday."
+     },
+     {
+      "p": "B",
+      "t": "I see. Does that affect me?"
+     },
+     {
+      "p": "A",
+      "t": "Slightly. You were down for two o'clock, which was ideal because people are usually most alert after lunch. Now we'd like to move you to nine in the morning, to open the session."
+     },
+     {
+      "p": "B",
+      "t": "Nine? That's rather early for a talk on sleep research. I'd be speaking to half-empty rows."
+     },
+     {
+      "p": "A",
+      "t": "I understand the irony. But in fact we're expecting a full house, since the delegates who were coming for the Lisbon talk will now attend yours. It's a compliment, really. Several of them specifically asked whether you could step in."
+     },
+     {
+      "p": "B",
+      "t": "Well, that's flattering, though I'd need to shorten my presentation, wouldn't I? The Lisbon slot was an hour, and mine was only forty minutes."
+     },
+     {
+      "p": "A",
+      "t": "Actually, the opposite. We'd be delighted if you could extend it to fifty minutes, and add a short question session at the end."
+     },
+     {
+      "p": "B",
+      "t": "Hm. I'd have to rework the second half. I've got plenty of material on adolescents, but the section on shift workers is rather thin."
+     },
+     {
+      "p": "A",
+      "t": "Take your time. We can also cover an extra night in the hotel if that helps you prepare."
+     },
+     {
+      "p": "B",
+      "t": "That's generous. Let me think about it over the weekend and email you on Monday. I don't want to say yes and then deliver something half-baked."
+     },
+     {
+      "p": "A",
+      "t": "Perfectly reasonable. I'd rather have a considered answer than a quick one."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why is the woman calling Dr Okafor?",
+     "op": [
+      "To cancel his talk",
+      "To ask him to accept a different time slot",
+      "To complain about his choice of topic",
+      "To offer him a trip to Lisbon"
+     ],
+     "r": 1,
+     "exp": "Ela explica as mudanças e pede que ele abra a sessão às nove e fale por mais tempo. Lisboa é a origem do palestrante que desistiu."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: It's a ___, really.",
+     "resp": [
+      "compliment"
+     ],
+     "exp": "A organizadora usa o elogio como argumento para convencê-lo.",
+     "ouvir": "It's a compliment, really."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "We'd be delighted if you could extend it to fifty minutes.",
+     "ouvir": "We'd be delighted if you could extend it to fifty minutes.",
+     "exp": "Delighted tem acento em -ligh-. Fifty minutes: o t de minutes é leve."
+    },
+    {
+     "t": "mc",
+     "q": "Why does the woman say the room will be full?",
+     "op": [
+      "Sleep research is very popular.",
+      "Free hotel rooms attract more delegates.",
+      "People who wanted the Lisbon talk will come to his.",
+      "Morning sessions are always crowded."
+     ],
+     "r": 2,
+     "exp": "Os delegados que viriam pela palestra de Lisboa agora irão à dele; vários pediram que ele substituísse o outro palestrante."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "don't",
+      "want",
+      "to",
+      "say",
+      "yes",
+      "and",
+      "then",
+      "deliver",
+      "something",
+      "half-baked"
+     ],
+     "resp": "I don't want to say yes and then deliver something half-baked",
+     "exp": "Half-baked = mal preparado. Ele quer evitar prometer algo e entregar um trabalho fraco."
+    },
+    {
+     "t": "gap",
+     "q": "Dr Okafor says the part of his talk about shift workers is rather ___.",
+     "resp": [
+      "thin",
+      "weak",
+      "underdeveloped",
+      "short"
+     ],
+     "exp": "Ele tem muito material sobre adolescentes, mas a seção sobre trabalhadores em turnos é thin."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Someone asks you to change your plans at the last minute. What do you say?",
+     "modelo": "I'd say I understand the situation, but I'd need some time to think about it, because I've already made other arrangements.",
+     "min": 12,
+     "chave": [
+      "understand",
+      "think",
+      "arrangements",
+      "plans",
+      "time",
+      "maybe",
+      "depends"
+     ],
+     "exp": "Use frases educadas: I'd need some time..., Let me think about it."
+    },
+    {
+     "t": "mc",
+     "q": "How does Dr Okafor respond to the proposal?",
+     "op": [
+      "He refuses politely.",
+      "He accepts immediately.",
+      "He wants time to consider it.",
+      "He accuses the organisers of poor planning."
+     ],
+     "r": 2,
+     "exp": "Ele promete responder na segunda-feira para não aceitar e entregar algo mal feito. A organizadora aprova a cautela."
+    },
+    {
+     "t": "gap",
+     "q": "The woman would rather have a ___ answer than a quick one.",
+     "resp": [
+      "considered",
+      "thoughtful",
+      "careful",
+      "well-considered"
+     ],
+     "exp": "Ela diz: I'd rather have a considered answer than a quick one."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Sarcasm and understatement",
+   "objetivo": "Reconhecer quando a pessoa diz o contrário do que quer dizer e quando minimiza algo grave.",
+   "foco": "Irony, sarcasm, understatement; tone of voice; stress",
+   "explicacao": [
+    "Sarcasmo: a frase é positiva, mas o sentido é negativo. Oh, it was absolutely marvellous (depois de quatro dias de chuva) significa foi horrível.",
+    "Understatement (eufemismo britânico): usar palavras fracas para algo grave. It wasn't ideal = foi um desastre. A minor setback = um problema sério.",
+    "Pistas: ênfase exagerada, pausa antes da frase, e o contexto que contradiz a frase.",
+    "I'll think about it pode ser um não educado. Let me put it this way... introduz uma conclusão indireta."
+   ],
+   "vocab": [
+    {
+     "en": "setback",
+     "pt": "contratempo"
+    },
+    {
+     "en": "to cheer up",
+     "pt": "animar"
+    },
+    {
+     "en": "spectacular",
+     "pt": "espetacular"
+    },
+    {
+     "en": "to pull out of",
+     "pt": "tirar de"
+    },
+    {
+     "en": "refund",
+     "pt": "reembolso"
+    },
+    {
+     "en": "tent",
+     "pt": "barraca"
+    },
+    {
+     "en": "stove",
+     "pt": "fogareiro"
+    },
+    {
+     "en": "to refuse",
+     "pt": "recusar"
+    }
+   ],
+   "material": {
+    "titulo": "A disastrous camping trip",
+    "falas": [
+     {
+      "p": "A",
+      "t": "So, how was the camping trip? You look remarkably relaxed for someone who spent four days in a field."
+     },
+     {
+      "p": "B",
+      "t": "Oh, it was absolutely marvellous. If you enjoy being rained on horizontally for ninety-six hours, I can't recommend it highly enough."
+     },
+     {
+      "p": "A",
+      "t": "Ah. So not entirely a success."
+     },
+     {
+      "p": "B",
+      "t": "Well, it wasn't ideal. The tent collapsed on the first night, which Danny described as a minor setback. Then the stove broke, so we lived on cold beans and biscuits."
+     },
+     {
+      "p": "A",
+      "t": "Lovely. And the famous campsite with the view?"
+     },
+     {
+      "p": "B",
+      "t": "Oh, the view was spectacular. For about ten minutes on Sunday, the cloud lifted and we could see a hill. A whole hill. Danny took forty photos of it."
+     },
+     {
+      "p": "A",
+      "t": "I'm surprised you're still talking to him."
+     },
+     {
+      "p": "B",
+      "t": "To be fair, he did cheer us up. When the car wouldn't start, he said it was good for team spirit. I think that was the moment I actually laughed, rather than screamed."
+     },
+     {
+      "p": "A",
+      "t": "How did you get home in the end?"
+     },
+     {
+      "p": "B",
+      "t": "A farmer pulled us out with his tractor. He was incredibly kind about it, and refused to take any money, although I did buy him a drink at the pub."
+     },
+     {
+      "p": "A",
+      "t": "Would you do it again?"
+     },
+     {
+      "p": "B",
+      "t": "Let me put it this way: Danny's already suggesting Wales next spring, and I said I'd think about it, which in our house means no."
+     },
+     {
+      "p": "A",
+      "t": "Ha! So you won't be packing your bags any time soon."
+     },
+     {
+      "p": "B",
+      "t": "Not unless somebody invents a waterproof tent that puts itself up. Even then I'd want a refund on the last one."
+     },
+     {
+      "p": "A",
+      "t": "Well, next time take me with you. At least I'd bring a decent flask of coffee."
+     },
+     {
+      "p": "B",
+      "t": "Now that, I could be persuaded by. Although I'd still check the weather forecast three times first."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does the woman really mean when she says the trip was 'absolutely marvellous'?",
+     "op": [
+      "It was exactly what she wanted.",
+      "It was an unpleasant experience.",
+      "She wants to return soon.",
+      "She is grateful to Danny."
+     ],
+     "r": 1,
+     "exp": "É sarcasmo: ela descreve quatro dias de chuva horizontal. Ela exagera o elogio para dizer o contrário."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The tent ___ on the first night.",
+     "resp": [
+      "collapsed",
+      "fell down",
+      "fell over",
+      "came down"
+     ],
+     "exp": "Collapsed = desabou. Danny chamou isso de minor setback, um eufemismo.",
+     "ouvir": "The tent collapsed on the first night."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Let me put it this way: Danny's already suggesting Wales next spring.",
+     "ouvir": "Let me put it this way: Danny's already suggesting Wales next spring.",
+     "exp": "Ligue Danny's already numa só linha. Wales soa /uêilz/."
+    },
+    {
+     "t": "mc",
+     "q": "What is the woman's attitude to Danny's comment about the car?",
+     "op": [
+      "She found it irritating at first.",
+      "She found it so unreasonable that she screamed.",
+      "She was finally able to laugh at the situation.",
+      "She agreed that it helped the team."
+     ],
+     "r": 2,
+     "exp": "She says that was the moment I actually laughed, rather than screamed: ela finalmente conseguiu rir da situação."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "said",
+      "I'd",
+      "think",
+      "about",
+      "it",
+      "which",
+      "in",
+      "our",
+      "house",
+      "means",
+      "no"
+     ],
+     "resp": "I said I'd think about it which in our house means no",
+     "exp": "I'll think about it, em tom irônico, é um não educado. Which in our house means no é o fim da piada.",
+     "alt": [
+      "I said I'd think about it which in our house means no"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "On Sunday the cloud ___ for ten minutes and they could see a hill.",
+     "resp": [
+      "lifted",
+      "cleared",
+      "lifted up"
+     ],
+     "exp": "The cloud lifted = as nuvens se dissiparam. Ela chama de spectacular a vista de uma colina, com ironia."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Tell me about a trip or an event that did not go as planned.",
+     "modelo": "Last year I went on a trip with friends, but our train was cancelled and we arrived very late. We laughed about it later, though.",
+     "min": 14,
+     "chave": [
+      "trip",
+      "planned",
+      "cancelled",
+      "late",
+      "wrong",
+      "terrible",
+      "laughed"
+     ],
+     "exp": "Pode usar um pouco de understatement: It wasn't ideal, It was a bit of a disaster."
+    },
+    {
+     "t": "mc",
+     "q": "What does the farmer's behaviour suggest?",
+     "op": [
+      "He expected a reward.",
+      "He was reluctant to help.",
+      "He helped without wanting payment.",
+      "He was amused by their problem."
+     ],
+     "r": 2,
+     "exp": "Ele ajudou com o trator, foi gentil e se recusou a aceitar dinheiro (refused to take any money)."
+    },
+    {
+     "t": "gap",
+     "q": "The woman would even want a ___ for the tent that collapsed.",
+     "resp": [
+      "refund",
+      "money back"
+     ],
+     "exp": "Even then I'd want a refund on the last one: ironia final, ela quer o dinheiro de volta da barraca que quebrou."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Phrasal verbs in the workplace",
+   "objetivo": "Entender phrasal verbs do dia a dia profissional quando o áudio usa um verbo e as opções usam outro.",
+   "foco": "Advanced phrasal verbs: fall behind, take on, turn down, sort out, bring forward, back up, come up with",
+   "explicacao": [
+    "Phrasal verbs quase sempre têm sinônimo formal: fall behind = ficar atrasado, turn down = recusar, sort out = resolver, bring forward = antecipar.",
+    "Cuidado: put off (adiar) e bring forward (antecipar) têm sentidos opostos.",
+    "Take on = assumir (trabalho, responsabilidade). Take over = assumir o lugar de alguém.",
+    "Nas questões, a resposta costuma trocar o phrasal verb por um verbo simples. Pense no significado, não na palavra."
+   ],
+   "vocab": [
+    {
+     "en": "to fall behind",
+     "pt": "ficar para trás, atrasar"
+    },
+    {
+     "en": "to take on",
+     "pt": "assumir (tarefa)"
+    },
+    {
+     "en": "to turn down",
+     "pt": "recusar"
+    },
+    {
+     "en": "to sort out",
+     "pt": "resolver"
+    },
+    {
+     "en": "to bring forward",
+     "pt": "antecipar"
+    },
+    {
+     "en": "to put off",
+     "pt": "adiar"
+    },
+    {
+     "en": "to back up",
+     "pt": "reforçar, apoiar"
+    },
+    {
+     "en": "to come up with",
+     "pt": "propor, criar"
+    }
+   ],
+   "material": {
+    "titulo": "A project that is running late",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Do you have a minute, Marcus? I wanted to run through where we are with the Brightwell project."
+     },
+     {
+      "p": "B",
+      "t": "Sure. To be honest, we've fallen behind. The survey results came in late, and I haven't got round to analysing them yet."
+     },
+     {
+      "p": "A",
+      "t": "I thought as much. Is that down to the data, or have you taken on too much?"
+     },
+     {
+      "p": "B",
+      "t": "A bit of both. I agreed to cover Simon's clients while he's on leave, which I probably should have turned down."
+     },
+     {
+      "p": "A",
+      "t": "That's not like you. Normally you'd push back."
+     },
+     {
+      "p": "B",
+      "t": "I didn't want to let anyone down. But I've sorted it out now: Leila is taking over two of the accounts from Monday."
+     },
+     {
+      "p": "A",
+      "t": "Good. Because the client has asked us to bring the presentation forward by a week."
+     },
+     {
+      "p": "B",
+      "t": "A week? That's a stretch. We'd have to put off the training day."
+     },
+     {
+      "p": "A",
+      "t": "Not necessarily. If we back up the interviews with the existing figures, we could cut the fieldwork completely."
+     },
+     {
+      "p": "B",
+      "t": "Hm, risky. Last time we skipped fieldwork, they picked the report apart."
+     },
+     {
+      "p": "A",
+      "t": "True. Let's come up with a compromise: carry out five interviews instead of fifteen. Would that work?"
+     },
+     {
+      "p": "B",
+      "t": "Five could work if I start tomorrow. But I'd need someone to help transcribe the recordings."
+     },
+     {
+      "p": "A",
+      "t": "I'll ask Tom. He's keen to get more experience, and he's not stretched at the moment."
+     },
+     {
+      "p": "B",
+      "t": "Thanks. And if the deadline slips again, I'll let you know early rather than keep quiet."
+     },
+     {
+      "p": "A",
+      "t": "That's all I ask. Honestly, I'd rather hear bad news on Tuesday than on Friday."
+     },
+     {
+      "p": "B",
+      "t": "Understood. I'll send you a revised timetable by this afternoon."
+     },
+     {
+      "p": "A",
+      "t": "Perfect. And if the interviews go well, take Friday afternoon off; you've earned it."
+     },
+     {
+      "p": "B",
+      "t": "I'll hold you to that."
+     },
+     {
+      "p": "A",
+      "t": "Please do. And thank you for being so straight with me today; it makes my job a lot easier."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why is Marcus behind with the project?",
+     "op": [
+      "The client changed the topic.",
+      "His colleague left the company.",
+      "Late data and too many tasks.",
+      "He disagrees with the method."
+     ],
+     "r": 2,
+     "exp": "Os resultados da pesquisa chegaram tarde e ele assumiu os clientes de Simon (taken on too much). Os dois fatores: a bit of both."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: To be honest, we've ___ behind.",
+     "resp": [
+      "fallen"
+     ],
+     "exp": "Fall behind = ficar atrasado. Particípio: fallen.",
+     "ouvir": "To be honest, we've fallen behind."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I haven't got round to analysing them yet.",
+     "ouvir": "I haven't got round to analysing them yet.",
+     "exp": "Got round to = arranjar tempo para. Britânico: analysing, não analyzing."
+    },
+    {
+     "t": "mc",
+     "q": "What has the client asked for?",
+     "op": [
+      "A longer report",
+      "An earlier presentation",
+      "A cheaper contract",
+      "A training day"
+     ],
+     "r": 1,
+     "exp": "Bring forward = antecipar. O cliente quer a apresentação uma semana mais cedo. O training day é o que teria de ser adiado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Leila",
+      "is",
+      "taking",
+      "over",
+      "two",
+      "of",
+      "the",
+      "accounts",
+      "from",
+      "Monday"
+     ],
+     "resp": "Leila is taking over two of the accounts from Monday",
+     "exp": "Take over = assumir o lugar de alguém. Marcus resolveu o excesso de trabalho passando contas para Leila."
+    },
+    {
+     "t": "gap",
+     "q": "Priya suggests that they do five interviews ___ of fifteen.",
+     "resp": [
+      "instead"
+     ],
+     "exp": "Instead of fifteen: cinco entrevistas em vez de quinze. É o compromisso (compromise) proposto."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "How do you usually deal with a deadline you cannot meet?",
+     "modelo": "I tell my manager as early as possible, explain the problem and suggest a new timetable. It's better to be honest than to keep quiet.",
+     "min": 14,
+     "chave": [
+      "deadline",
+      "tell",
+      "early",
+      "manager",
+      "explain",
+      "timetable",
+      "honest",
+      "help"
+     ],
+     "exp": "Use phrasal verbs: let someone know, put off, sort out, fall behind."
+    },
+    {
+     "t": "mc",
+     "q": "What does Priya imply about bad news?",
+     "op": [
+      "She dislikes hearing it at all.",
+      "It should arrive as early as possible.",
+      "It should be shared only on Fridays.",
+      "It is best handled by Tom."
+     ],
+     "r": 1,
+     "exp": "Ela prefere ouvir más notícias na terça do que na sexta. Quanto mais cedo, melhor."
+    },
+    {
+     "t": "gap",
+     "q": "Marcus needs someone to help ___ the recordings of the interviews.",
+     "resp": [
+      "transcribe",
+      "write up",
+      "type up"
+     ],
+     "exp": "Transcribe = transcrever. Priya vai pedir ao Tom."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Sleep and memory: a science podcast",
+   "objetivo": "Acompanhar um monólogo científico e completar frases com números, termos e ideias parafraseadas.",
+   "foco": "Sentence completion; numbers and percentages; research verbs (suggest, reveal, claim)",
+   "explicacao": [
+    "No Part 2 do exame, a lacuna é uma palavra ou um número que você ouve exatamente, mas a frase escrita usa outras palavras.",
+    "Atenção a percentagens, faixas de idade e durações: twenty per cent, between eighteen and twenty-five, ninety minutes.",
+    "Verbos de pesquisa: reveal (mostrar), suggest (sugerir), claim (afirmar), fall short (não ser suficiente).",
+    "Depois de but, however e yet costuma vir o dado importante. O primeiro número dito pode ser só um distrator."
+   ],
+   "vocab": [
+    {
+     "en": "volunteer",
+     "pt": "voluntário"
+    },
+    {
+     "en": "to recall",
+     "pt": "lembrar"
+    },
+    {
+     "en": "cramming",
+     "pt": "estudar de véspera"
+    },
+    {
+     "en": "brain wave",
+     "pt": "onda cerebral"
+    },
+    {
+     "en": "sample",
+     "pt": "amostra"
+    },
+    {
+     "en": "to replay",
+     "pt": "reproduzir de novo"
+    },
+    {
+     "en": "nap",
+     "pt": "soneca"
+    },
+    {
+     "en": "to fall short",
+     "pt": "ser insuficiente"
+    }
+   ],
+   "material": {
+    "titulo": "Why sleep is not wasted time",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Hello and welcome to Mindwaves. Today I want to look at a question that every student asks at some point: is it really worth sleeping before an exam, or should I just keep revising? A study from a university in Lyon offers a rather clear answer."
+     },
+     {
+      "p": "A",
+      "t": "The researchers recruited eighty volunteers, aged between eighteen and twenty-five, and asked them to learn sixty pairs of unrelated words. Half of the group then slept for eight hours. The other half stayed awake for the same period, going about a normal day. Twelve hours after the learning session, everyone was tested."
+     },
+     {
+      "p": "A",
+      "t": "The result? The sleepers recalled about twenty per cent more words. Now, you might assume that this is simply a matter of being tired, so the awake group performed badly. But the team checked for that, and the gap remained even when the volunteers who stayed awake were given coffee and a long break."
+     },
+     {
+      "p": "A",
+      "t": "What interested the scientists most was the type of sleep involved. Many of us believe that deep sleep is the most valuable stage, and it does matter. But in this experiment, the people who spent longer in the stage known as REM sleep did best of all. Professor Elena Marchetti, who led the project, suggests that during this phase the brain replays the new information and links it to what we already know."
+     },
+     {
+      "p": "A",
+      "t": "A word of caution, though. The sample was small, and made up entirely of students, so we cannot be sure that older adults would show the same effect. And the study only measured memory after a single day, so it tells us nothing about what happens a month later."
+     },
+     {
+      "p": "A",
+      "t": "Still, the practical message is hard to ignore. Cramming through the night may feel productive, but it probably falls short. Marchetti recommends studying in the evening, and then going to bed at a regular time. If that's impossible, a nap of around ninety minutes, long enough to include REM sleep, seems to be better than a short one of twenty minutes. And one last tip from her: put the phone in another room."
+     },
+     {
+      "p": "A",
+      "t": "Next week, we'll be asking whether music really helps you concentrate. Until then, sleep well."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What was the main purpose of the Lyon study?",
+     "op": [
+      "To compare different ways of revising",
+      "To find out how sleep affects remembering",
+      "To test the effect of coffee on learning",
+      "To measure how tired students feel"
+     ],
+     "r": 1,
+     "exp": "Os voluntários aprenderam palavras e foram testados doze horas depois, com ou sem sono. O café foi só um controle."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The sleepers recalled about twenty per ___ more words.",
+     "resp": [
+      "cent"
+     ],
+     "exp": "Twenty per cent = 20%. Em inglês britânico: per cent.",
+     "ouvir": "The sleepers recalled about twenty per cent more words."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Cramming through the night may feel productive, but it probably falls short.",
+     "ouvir": "Cramming through the night may feel productive, but it probably falls short.",
+     "exp": "Cramming: o c soa /k/ e o -ing é curto. Falls short = não basta."
+    },
+    {
+     "t": "mc",
+     "q": "According to the speaker, what did the researchers do about the idea that tiredness explained the result?",
+     "op": [
+      "They ignored it.",
+      "They gave the awake group coffee and a break.",
+      "They tested older adults.",
+      "They shortened the sleeping time."
+     ],
+     "r": 1,
+     "exp": "Eles verificaram: o grupo acordado recebeu café e um intervalo longo, e a diferença continuou."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "brain",
+      "replays",
+      "the",
+      "new",
+      "information",
+      "and",
+      "links",
+      "it",
+      "to",
+      "what",
+      "we",
+      "know"
+     ],
+     "resp": "The brain replays the new information and links it to what we know",
+     "exp": "Segundo Marchetti, na fase REM o cérebro reproduz e liga o novo ao que já sabemos."
+    },
+    {
+     "t": "gap",
+     "q": "The volunteers were aged between eighteen and ___.",
+     "resp": [
+      "twenty-five",
+      "twenty five",
+      "25"
+     ],
+     "exp": "Idades: between eighteen and twenty-five. O 80 é o número de voluntários."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Do you think sleeping is more useful than revising late at night before a test? Why?",
+     "modelo": "Yes, I think so, because when I'm tired I can't concentrate and I forget things easily. A good night's sleep helps me remember more.",
+     "min": 15,
+     "chave": [
+      "sleep",
+      "tired",
+      "remember",
+      "concentrate",
+      "revising",
+      "memory",
+      "exam"
+     ],
+     "exp": "Dê sua opinião e uma razão: I think..., because..."
+    },
+    {
+     "t": "mc",
+     "q": "What does the speaker say is a weakness of the study?",
+     "op": [
+      "It lasted too long.",
+      "It only tested one day later.",
+      "It used too many volunteers.",
+      "It was done in a noisy room."
+     ],
+     "r": 1,
+     "exp": "Ele diz que o estudo só mediu a memória depois de um dia. Uma amostra pequena e só de estudantes também foi citada, mas o foco dessa pergunta é o tempo."
+    },
+    {
+     "t": "gap",
+     "q": "Marchetti suggests a nap of around ___ minutes.",
+     "resp": [
+      "ninety",
+      "90"
+     ],
+     "exp": "A soneca de noventa minutos inclui REM; a de vinte é curta demais."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Idioms in everyday arguments",
+   "objetivo": "Entender expressões idiomáticas em conversas informais sem traduzir palavra por palavra.",
+   "foco": "Idioms: rings a bell, at the end of my tether, the last straw, bite the bullet, back to square one, play it by ear",
+   "explicacao": [
+    "Um idiom tem sentido próprio: it costs an arm and a leg = custa uma fortuna. Não dá para entender pelas palavras soltas.",
+    "Ouça o contexto: o idiom costuma vir com a emoção da pessoa (cansaço, raiva, decisão).",
+    "Pares úteis: the last straw (a gota d'água), at the end of my tether (no limite), bite the bullet (encarar o que é difícil), play it by ear (decidir na hora).",
+    "No exame, as opções reescrevem o idiom em linguagem simples. Procure a opção com o mesmo sentido."
+   ],
+   "vocab": [
+    {
+     "en": "rings a bell",
+     "pt": "soa familiar"
+    },
+    {
+     "en": "an arm and a leg",
+     "pt": "uma fortuna"
+    },
+    {
+     "en": "at the end of my tether",
+     "pt": "no meu limite"
+    },
+    {
+     "en": "the last straw",
+     "pt": "a gota d'água"
+    },
+    {
+     "en": "to bite the bullet",
+     "pt": "encarar o difícil"
+    },
+    {
+     "en": "back to square one",
+     "pt": "voltar à estaca zero"
+    },
+    {
+     "en": "to play it by ear",
+     "pt": "decidir na hora"
+    },
+    {
+     "en": "to fob off",
+     "pt": "enrolar alguém"
+    }
+   ],
+   "material": {
+    "titulo": "Trouble with the landlord",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Right, we need to sort out the heating bill. Did you get the email from the landlord?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, and it rings a bell. Wasn't there something about a rise last year as well?"
+     },
+     {
+      "p": "A",
+      "t": "Exactly. It's going up by thirty per cent, which will cost us an arm and a leg over the winter."
+     },
+     {
+      "p": "B",
+      "t": "Honestly, I'm at the end of my tether with this place. The boiler's been broken since October, and he keeps fobbing us off."
+     },
+     {
+      "p": "A",
+      "t": "I know. And then the noise from upstairs last night was the last straw. I barely slept."
+     },
+     {
+      "p": "B",
+      "t": "So what are you thinking? Moving out?"
+     },
+     {
+      "p": "A",
+      "t": "Not necessarily. I think we should bite the bullet and write a formal complaint. If he doesn't reply, we can go to the council."
+     },
+     {
+      "p": "B",
+      "t": "That might hit the nail on the head, actually. He only reacts when somebody threatens him with something official."
+     },
+     {
+      "p": "A",
+      "t": "Right. And before you suggest it, no, I'm not going to confront him in person. Last time I did that, we ended up back at square one."
+     },
+     {
+      "p": "B",
+      "t": "Fair enough. Do you want me to draft the letter? Priya works in housing law, so I could ask her to look it over."
+     },
+     {
+      "p": "A",
+      "t": "Brilliant. When should we send it?"
+     },
+     {
+      "p": "B",
+      "t": "Let's play it by ear. If the boiler gets fixed this week, we can hold off. If not, it goes in the post on Friday."
+     },
+     {
+      "p": "A",
+      "t": "Agreed. Though knowing him, he'll fix it the minute he gets the letter and then act as if nothing happened."
+     },
+     {
+      "p": "B",
+      "t": "That would be typical. Still, if it works, I won't complain."
+     },
+     {
+      "p": "A",
+      "t": "Right, I'll note it in the shared calendar so we don't forget. And keep the receipts for the heaters we bought."
+     },
+     {
+      "p": "B",
+      "t": "Of course. If he won't pay for a new boiler, I'd at least like him to cover those."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the main problem the flatmates discuss at the start?",
+     "op": [
+      "A rise in the cost of heating",
+      "A disagreement about cleaning",
+      "The landlord's visit",
+      "Their plan to move house"
+     ],
+     "r": 0,
+     "exp": "A conta de aquecimento vai subir trinta por cento. As outras queixas (caldeira, barulho) vêm depois."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: It will cost us an arm and a ___ over the winter.",
+     "resp": [
+      "leg"
+     ],
+     "exp": "An arm and a leg = uma fortuna.",
+     "ouvir": "It's going up by thirty per cent, which will cost us an arm and a leg over the winter."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I'm at the end of my tether with this place.",
+     "ouvir": "I'm at the end of my tether with this place.",
+     "exp": "Tether tem o th sonoro /dh/. At the end of: ligue as palavras."
+    },
+    {
+     "t": "mc",
+     "q": "What does the woman mean when she says the noise was 'the last straw'?",
+     "op": [
+      "It was the first problem she noticed.",
+      "It was the final problem she could tolerate.",
+      "It was a problem she could easily solve.",
+      "It was the noisiest night ever."
+     ],
+     "r": 1,
+     "exp": "The last straw = a gota d'água: a gota que fez transbordar. Já havia outros problemas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "think",
+      "we",
+      "should",
+      "bite",
+      "the",
+      "bullet",
+      "and",
+      "write",
+      "a",
+      "formal",
+      "complaint"
+     ],
+     "resp": "I think we should bite the bullet and write a formal complaint",
+     "exp": "Bite the bullet = fazer o que é difícil e inevitável. Aqui: escrever a reclamação formal."
+    },
+    {
+     "t": "gap",
+     "q": "If the boiler is repaired this week, they will ___ off sending the letter.",
+     "resp": [
+      "hold",
+      "put"
+     ],
+     "exp": "B diz: we can hold off. Hold off = esperar, adiar. Aceitamos hold ou put (put off).",
+     "ouvir": "If the boiler gets fixed this week, we can hold off."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Describe a situation that made you lose your patience. What did you do?",
+     "modelo": "Once my internet stopped working for a week and the company kept ignoring me. In the end I wrote a complaint, and they fixed it in two days.",
+     "min": 15,
+     "chave": [
+      "patience",
+      "complaint",
+      "angry",
+      "tried",
+      "finally",
+      "problem",
+      "last"
+     ],
+     "exp": "Se quiser, use um idiom: the last straw, at the end of my tether."
+    },
+    {
+     "t": "mc",
+     "q": "Why does the woman not want to talk to the landlord face to face?",
+     "op": [
+      "He lives too far away.",
+      "She is afraid of him.",
+      "It didn't work last time.",
+      "He never answers the door."
+     ],
+     "r": 2,
+     "exp": "Last time I did that, we ended up back at square one: da última vez, voltaram ao ponto de partida."
+    },
+    {
+     "t": "gap",
+     "q": "The woman thinks the landlord will fix the boiler as soon as he gets the letter, and then pretend that nothing ___.",
+     "resp": [
+      "happened"
+     ],
+     "exp": "She says: act as if nothing happened. Ela espera uma reação típica e hipócrita dele."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Between the lines in an interview",
+   "objetivo": "Perceber opiniões que o entrevistado deixa só implícitas, por ironia, evasão ou modéstia.",
+   "foco": "Evasive answers; modesty; implied criticism; hedging (I suppose, rather, in a sense)",
+   "explicacao": [
+    "Em entrevistas, a resposta curta ou fugidia já diz algo. Oh, I try not to read them = ele não quer saber das críticas.",
+    "Modéstia britânica: I suppose, rather, a bit lucky. Quem diz isso nem sempre pensa assim; observe o que vem depois.",
+    "Fórmulas de distanciamento: I wouldn't say that, Not exactly, That's one way of putting it = discordo.",
+    "Ao responder, escolha a opção que cabe na atitude geral, não só na frase isolada."
+   ],
+   "vocab": [
+    {
+     "en": "inspiration",
+     "pt": "inspiração"
+    },
+    {
+     "en": "to dread",
+     "pt": "temer"
+    },
+    {
+     "en": "tedious",
+     "pt": "entediante"
+    },
+    {
+     "en": "reviewer",
+     "pt": "crítico (de livro)"
+    },
+    {
+     "en": "adaptation",
+     "pt": "adaptação (filme)"
+    },
+    {
+     "en": "to turn out",
+     "pt": "acabar sendo"
+    },
+    {
+     "en": "modest",
+     "pt": "modesto"
+    },
+    {
+     "en": "that's one way of putting it",
+     "pt": "pode-se dizer assim"
+    }
+   ],
+   "material": {
+    "titulo": "A novelist talks about writing",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Welcome to the programme. Your fifth novel came out last month, to enormous acclaim. Where does the inspiration come from?"
+     },
+     {
+      "p": "B",
+      "t": "Ah, the dreaded question. I'm afraid the honest answer is rather dull. People imagine novelists waiting for a flash of brilliance in a café, but in my case, writing is mostly sitting at a desk at eight o'clock in the morning, feeling slightly bored."
+     },
+     {
+      "p": "A",
+      "t": "Bored? That's surprising."
+     },
+     {
+      "p": "B",
+      "t": "Well, the first draft is the tedious part. You're forcing out words you know are terrible. The enjoyable bit comes later, when you're cutting and reshaping. I'd say that's where a book actually becomes a book."
+     },
+     {
+      "p": "A",
+      "t": "Critics have called this one your most ambitious work. Does that please you?"
+     },
+     {
+      "p": "B",
+      "t": "I'm grateful, naturally. Though I should say I try not to read reviews. The good ones make me complacent, and the bad ones ruin my week, so on balance I'm better off ignorant."
+     },
+     {
+      "p": "A",
+      "t": "And yet one reviewer suggested the ending was a little too neat."
+     },
+     {
+      "p": "B",
+      "t": "Did they? That's one way of putting it. I'd have said the ending is the only part of the book that doesn't lie to the reader. But people are entitled to their opinion, and I'm sure they enjoyed the rest."
+     },
+     {
+      "p": "A",
+      "t": "There's talk of a film adaptation. Are you involved?"
+     },
+     {
+      "p": "B",
+      "t": "In a sense. They've sent me the script, and I've been asked for my comments. I suspect that's a polite way of keeping me quiet, but I'm trying to be helpful."
+     },
+     {
+      "p": "A",
+      "t": "Are you hopeful about it?"
+     },
+     {
+      "p": "B",
+      "t": "I'm curious, which isn't the same thing. Films and novels are different animals. If the film is good, I'll be delighted, and if it's not, I'll say it was a lovely day out and pretend I was never asked."
+     },
+     {
+      "p": "A",
+      "t": "Finally, any advice for young writers?"
+     },
+     {
+      "p": "B",
+      "t": "Yes: finish things. Plenty of talented people start novels. Far fewer turn up on the dull mornings and keep going. That's all it is, really."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does the writer suggest about the early stage of writing?",
+     "op": [
+      "It is the most inspiring part.",
+      "It is unpleasant but necessary.",
+      "It should be done quickly in a café.",
+      "It requires a flash of brilliance."
+     ],
+     "r": 1,
+     "exp": "Ele diz que o primeiro rascunho é a parte tediosa, em que se escreve algo que sabe ser ruim. A graça vem depois, ao cortar e reformular."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: People imagine novelists waiting for a ___ of brilliance.",
+     "resp": [
+      "flash"
+     ],
+     "exp": "A flash of brilliance = um lampejo de genialidade, a imagem que ele quer desfazer.",
+     "ouvir": "People imagine novelists waiting for a flash of brilliance in a café."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "The good ones make me complacent, and the bad ones ruin my week.",
+     "ouvir": "The good ones make me complacent, and the bad ones ruin my week.",
+     "exp": "Complacent: acento em -pla-. Ruin my week: ligue ruin e my."
+    },
+    {
+     "t": "mc",
+     "q": "How does the writer feel about the criticism of the ending?",
+     "op": [
+      "He accepts that it was a weakness.",
+      "He is quietly dismissive of it.",
+      "He is hurt and angry.",
+      "He has not heard it before."
+     ],
+     "r": 1,
+     "exp": "That's one way of putting it e the only part that doesn't lie indicam que ele discorda, mas educadamente."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I'm",
+      "curious",
+      "which",
+      "isn't",
+      "the",
+      "same",
+      "thing",
+      "as",
+      "being",
+      "hopeful"
+     ],
+     "resp": "I'm curious which isn't the same thing as being hopeful",
+     "exp": "Ele evita dizer que está esperançoso: curiosidade não é o mesmo que esperança."
+    },
+    {
+     "t": "gap",
+     "q": "The writer thinks the invitation to comment on the script is a polite way of keeping him ___.",
+     "resp": [
+      "quiet",
+      "silent"
+     ],
+     "exp": "I suspect that's a polite way of keeping me quiet. Ele desconfia que o convite é só para calá-lo.",
+     "ouvir": "I suspect that's a polite way of keeping me quiet."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Do you prefer reading a book or watching its film version? Explain why.",
+     "modelo": "I usually prefer the book, because I can imagine the characters myself. Films are often shorter and miss important details.",
+     "min": 14,
+     "chave": [
+      "book",
+      "film",
+      "prefer",
+      "imagine",
+      "characters",
+      "story",
+      "because"
+     ],
+     "exp": "Compare: I'd rather..., whereas..."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer really say about the talent of young writers?",
+     "op": [
+      "Talent is the most important thing.",
+      "Persistence matters more than talent.",
+      "Most beginners lack talent.",
+      "Writing is easier than it seems."
+     ],
+     "r": 1,
+     "exp": "Muitos talentosos começam romances, mas poucos continuam nas manhãs chatas: persistência pesa mais."
+    },
+    {
+     "t": "gap",
+     "q": "The writer thinks films and novels are different ___.",
+     "resp": [
+      "animals",
+      "things",
+      "beasts"
+     ],
+     "exp": "Films and novels are different animals = são coisas bem diferentes (idiom)."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Urban planning: paraphrasing ideas",
+   "objetivo": "Reconhecer a mesma ideia dita com outras palavras e completar frases de um palestrante.",
+   "foco": "Paraphrase; academic vocabulary (accessibility, density, sustainable, gentrification)",
+   "explicacao": [
+    "No exame, a frase com lacuna parafraseia o áudio: everything within a short walk no áudio pode virar essential services nearby na frase.",
+    "Vocabulário acadêmico: accessible (acessível), density (densidade), sustainable (sustentável), to displace (deslocar moradores).",
+    "Palestrantes marcam contraste com however, yet, on the other hand. Os dados mais importantes vêm depois.",
+    "Treine: ouça uma ideia e diga-a com palavras diferentes antes de olhar as opções."
+   ],
+   "vocab": [
+    {
+     "en": "accessible",
+     "pt": "acessível"
+    },
+    {
+     "en": "density",
+     "pt": "densidade"
+    },
+    {
+     "en": "sustainable",
+     "pt": "sustentável"
+    },
+    {
+     "en": "takings",
+     "pt": "faturamento (de lojas)"
+    },
+    {
+     "en": "to displace",
+     "pt": "deslocar, expulsar"
+    },
+    {
+     "en": "rent",
+     "pt": "aluguel"
+    },
+    {
+     "en": "commute",
+     "pt": "trajeto diário"
+    },
+    {
+     "en": "amenities",
+     "pt": "comodidades"
+    }
+   ],
+   "material": {
+    "titulo": "The fifteen-minute town",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good afternoon, everyone. Today's lecture is about an idea in urban planning that sounds simple but provokes surprisingly strong feelings: the so-called fifteen-minute town. The principle is that most of what residents need every day, such as shops, schools, doctors, parks and workplaces, should be reachable within fifteen minutes on foot or by bicycle."
+     },
+     {
+      "p": "A",
+      "t": "Supporters say the advantages are obvious. If people can reach amenities without a car, there are fewer traffic jams, cleaner air and a stronger sense of community. Critics, however, make two arguments. The first is cost: rebuilding a district around local services takes years of public spending. The second is a misunderstanding, and it is worth correcting. Some opponents claim that the plan would restrict people's movement. In fact, nobody is forbidden to travel; the aim is to make short journeys easier, not to ban long ones."
+     },
+     {
+      "p": "A",
+      "t": "Let me describe a pilot project in a northern English town of about forty thousand inhabitants. Over three years, the council widened pavements, added cycle lanes and encouraged small businesses to open in empty buildings near housing. The results were mixed but promising. Car journeys under two kilometres fell by roughly a fifth, and takings in local shops rose by twelve per cent."
+     },
+     {
+      "p": "A",
+      "t": "There was, however, an unintended consequence. As the area became more attractive, rents went up, and some long-standing residents found they could no longer afford to stay. This process, known as gentrification, is the main challenge for planners. A neighbourhood can be extremely well designed and still fail socially if the people who live there are pushed out."
+     },
+     {
+      "p": "A",
+      "t": "So what should we conclude? In my view, the idea works best when it is combined with affordable housing policies from the very beginning, rather than added as an afterthought. Design alone cannot solve a social problem. For next week, I'd like you to read the case study on your handout and think about who benefits, and who might lose, from this kind of change."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the lecturer's main purpose in the first part?",
+     "op": [
+      "To criticise cycling",
+      "To explain an idea and the debate around it",
+      "To present a new building project",
+      "To compare two cities"
+     ],
+     "r": 1,
+     "exp": "Ele apresenta o princípio da cidade de quinze minutos e a polêmica que provoca. Não critica nem defende logo no início."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Supporters say the advantages are ___.",
+     "resp": [
+      "obvious",
+      "clear"
+     ],
+     "exp": "Obvious = óbvio. Os defensores acham as vantagens evidentes; as críticas vêm depois com however.",
+     "ouvir": "Supporters say the advantages are obvious."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "The aim is to make short journeys easier, not to ban long ones.",
+     "ouvir": "The aim is to make short journeys easier, not to ban long ones.",
+     "exp": "Journeys: o j soa /dj/. Ban long ones: ligue ban e long."
+    },
+    {
+     "t": "mc",
+     "q": "What does the lecturer say about the idea that people's movement would be restricted?",
+     "op": [
+      "It is partly justified.",
+      "It is a misunderstanding of the plan.",
+      "It has been proved by research.",
+      "It is the strongest argument against the plan."
+     ],
+     "r": 1,
+     "exp": "Ele diz que é um equívoco: ninguém é proibido de viajar, só se facilitam as viagens curtas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Car",
+      "journeys",
+      "under",
+      "two",
+      "kilometres",
+      "fell",
+      "by",
+      "roughly",
+      "a",
+      "fifth"
+     ],
+     "resp": "Car journeys under two kilometres fell by roughly a fifth",
+     "exp": "A fifth = um quinto (20%). Roughly = mais ou menos."
+    },
+    {
+     "t": "gap",
+     "q": "In the pilot town, takings in local shops rose by ___ per cent.",
+     "resp": [
+      "twelve",
+      "12"
+     ],
+     "exp": "Dados do projeto-piloto: carros caíram um quinto e o faturamento subiu doze por cento."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Would you like to live in a place where everything is within a short walk? Why or why not?",
+     "modelo": "Yes, I would, because I could save time and money on transport. But I think it would be more expensive and maybe a bit crowded.",
+     "min": 16,
+     "chave": [
+      "walk",
+      "time",
+      "transport",
+      "expensive",
+      "crowded",
+      "quiet",
+      "cycle",
+      "because"
+     ],
+     "exp": "Dê duas ideias: uma vantagem e uma desvantagem."
+    },
+    {
+     "t": "mc",
+     "q": "According to the lecturer, what is the main danger for planners?",
+     "op": [
+      "Residents may stop using bicycles.",
+      "Shops may close.",
+      "Rising rents may push people out.",
+      "Cars may be banned completely."
+     ],
+     "r": 2,
+     "exp": "Gentrification: os aluguéis sobem e moradores antigos não conseguem ficar."
+    },
+    {
+     "t": "gap",
+     "q": "The lecturer thinks the plan works best when affordable housing is included from the ___.",
+     "resp": [
+      "beginning",
+      "start",
+      "outset"
+     ],
+     "exp": "Ele diz: from the very beginning, em vez de depois como afterthought."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "The psychology of habits",
+   "objetivo": "Acompanhar um podcast com dois apresentadores e entender opiniões moderadas, ressalvas e mitos desfeitos.",
+   "foco": "Hedging (arguably, largely, to some extent); not so much X as Y; myth vs evidence",
+   "explicacao": [
+    "Cientistas raramente falam em certezas. Arguably, largely, I wouldn't go that far mostram opinião matizada.",
+    "Estrutura 'not so much X as Y' = menos X do que Y: It's not so much the failure as the story we tell ourselves.",
+    "Mitos aparecem com Most people believe... seguido de Actually / In fact. A informação certa vem depois.",
+    "Dois apresentadores: note quem concorda (Exactly, Right) e quem faz ressalva (Although, Perhaps)."
+   ],
+   "vocab": [
+    {
+     "en": "habit",
+     "pt": "hábito"
+    },
+    {
+     "en": "myth",
+     "pt": "mito"
+    },
+    {
+     "en": "lapse",
+     "pt": "deslize, recaída"
+    },
+    {
+     "en": "to stick to",
+     "pt": "manter-se em"
+    },
+    {
+     "en": "cynical",
+     "pt": "cético, descrente"
+    },
+    {
+     "en": "to blow it",
+     "pt": "estragar tudo"
+    },
+    {
+     "en": "trial",
+     "pt": "estudo, teste"
+    },
+    {
+     "en": "embarrassingly small",
+     "pt": "tão pequeno que dá vergonha"
+    }
+   ],
+   "material": {
+    "titulo": "Why new habits are so hard to keep",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Welcome back to Inside Out. Today we're asking why new habits are so hard to keep. Most of us have heard that it takes twenty-one days to form one."
+     },
+     {
+      "p": "B",
+      "t": "Which is largely a myth. The figure seems to come from a plastic surgeon in the nineteen-sixties, who noticed that patients took about three weeks to get used to their new appearance. It was never meant as a rule about behaviour."
+     },
+     {
+      "p": "A",
+      "t": "So what does the research say?"
+     },
+     {
+      "p": "B",
+      "t": "A well-known study followed ninety-six people who each chose a new habit, such as drinking water with lunch. The average time was sixty-six days, but that hides enormous variety. Some people took eighteen days, others more than eight months."
+     },
+     {
+      "p": "A",
+      "t": "So the average is almost meaningless."
+     },
+     {
+      "p": "B",
+      "t": "I wouldn't go that far, but it reminds us that individuals differ. It also depended on the habit: eating fruit was easier than doing fifty sit-ups."
+     },
+     {
+      "p": "A",
+      "t": "And missing a day? Does that ruin everything?"
+     },
+     {
+      "p": "B",
+      "t": "That's what many people fear, but missing a single day made little difference. It's not so much the failure that matters as the story we tell ourselves afterwards: I've blown it, so I may as well give up."
+     },
+     {
+      "p": "A",
+      "t": "Right, the what-the-hell effect."
+     },
+     {
+      "p": "B",
+      "t": "Exactly. A more helpful response is to plan for lapses. Researchers suggest an if-then plan: if I miss the gym on Tuesday, then I'll go on Wednesday."
+     },
+     {
+      "p": "A",
+      "t": "Which sounds almost too simple."
+     },
+     {
+      "p": "B",
+      "t": "Perhaps, and it's no miracle cure, but trials suggest it roughly doubles the chance of sticking to a goal. Arguably the best idea is to make the habit small enough to be almost embarrassing. Two minutes of stretching, say."
+     },
+     {
+      "p": "A",
+      "t": "I like that, although my cynical side says two minutes is hardly going to change my life."
+     },
+     {
+      "p": "B",
+      "t": "In itself, no. But it gets you through the door, and that's most of the battle."
+     },
+     {
+      "p": "A",
+      "t": "Then I'll start tomorrow. Or, rather, on Monday."
+     },
+     {
+      "p": "B",
+      "t": "Ha! I'm afraid that's the oldest excuse there is."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does the second speaker say about the 'twenty-one days' rule?",
+     "op": [
+      "It is correct for most people.",
+      "It was based on a misunderstood observation.",
+      "It applies only to exercise.",
+      "It was proved in a recent trial."
+     ],
+     "r": 1,
+     "exp": "A regra vem de um cirurgião que observou pacientes se acostumando com a nova aparência, não de pesquisa sobre comportamento."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The average time was sixty-six days, but that hides enormous ___.",
+     "resp": [
+      "variety",
+      "variation",
+      "differences"
+     ],
+     "exp": "O estudo mostrou de 18 dias a mais de 8 meses: a média esconde muita variedade.",
+     "ouvir": "The average time was sixty-six days, but that hides enormous variety."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "It's not so much the failure that matters as the story we tell ourselves.",
+     "ouvir": "It's not so much the failure that matters as the story we tell ourselves.",
+     "exp": "Ênfase em failure e story. A estrutura é not so much X as Y."
+    },
+    {
+     "t": "mc",
+     "q": "How does the second speaker react when the first says the average is 'almost meaningless'?",
+     "op": [
+      "She agrees completely.",
+      "She partly disagrees.",
+      "She changes the subject.",
+      "She laughs at his joke."
+     ],
+     "r": 1,
+     "exp": "I wouldn't go that far = não chego a tanto. Ela concorda que há variação, mas a média ainda diz algo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Missing",
+      "a",
+      "single",
+      "day",
+      "made",
+      "little",
+      "difference",
+      "to",
+      "the",
+      "result"
+     ],
+     "resp": "Missing a single day made little difference to the result",
+     "exp": "Little difference = quase nenhuma diferença. Um deslize único quase não muda o resultado."
+    },
+    {
+     "t": "gap",
+     "q": "The researchers recommend an '___-then' plan for dealing with lapses.",
+     "resp": [
+      "if"
+     ],
+     "exp": "If-then plan: if I miss the gym on Tuesday, then I'll go on Wednesday."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Have you ever tried to form a new habit? What helped or stopped you?",
+     "modelo": "I tried to read every night, and it worked when I kept the goal small, only ten pages. When I missed a day, I felt bad and almost stopped.",
+     "min": 15,
+     "chave": [
+      "habit",
+      "tried",
+      "small",
+      "missed",
+      "stopped",
+      "helped",
+      "goal",
+      "every"
+     ],
+     "exp": "Fale do que aconteceu: I tried..., it helped when..."
+    },
+    {
+     "t": "mc",
+     "q": "What does the first speaker's last comment show about his or her attitude?",
+     "op": [
+      "He is annoyed with the guest.",
+      "He is doubtful but good-humoured.",
+      "He is certain the advice works.",
+      "He has no interest in the topic."
+     ],
+     "r": 1,
+     "exp": "Ele diz que seu lado cético acha dois minutos pouco, mas aceita a ideia e brinca sobre começar na segunda."
+    },
+    {
+     "t": "gap",
+     "q": "The second speaker says a tiny habit 'gets you through the door, and that is most of the ___'.",
+     "resp": [
+      "battle"
+     ],
+     "exp": "Idiom: most of the battle = a parte mais difícil."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "A debate about rewilding",
+   "objetivo": "Distinguir quem defende o quê em um debate com três pessoas e notar concessões.",
+   "foco": "Debate language: concede, counter-argue, reservations; speaker identification",
+   "explicacao": [
+    "Em debates, cada pessoa faz concessões: I'm not against nature, but... A frase depois de but mostra a opinião real.",
+    "Linguagem de desacordo educado: With respect, I'd question that; That may be true, however...",
+    "O apresentador resume ou provoca. Não confunda a opinião dele com a dos convidados.",
+    "Sarcasmo é comum: I'm sure it looks lovely from a train window = quem decide não conhece o campo."
+   ],
+   "vocab": [
+    {
+     "en": "rewilding",
+     "pt": "restauração de ambientes selvagens"
+    },
+    {
+     "en": "beaver",
+     "pt": "castor"
+    },
+    {
+     "en": "flooding",
+     "pt": "enchente"
+    },
+    {
+     "en": "livestock",
+     "pt": "gado, animais de criação"
+    },
+    {
+     "en": "compensation",
+     "pt": "indenização"
+    },
+    {
+     "en": "to consult",
+     "pt": "consultar"
+    },
+    {
+     "en": "reservations",
+     "pt": "dúvidas, ressalvas"
+    },
+    {
+     "en": "downstream",
+     "pt": "rio abaixo"
+    }
+   ],
+   "material": {
+    "titulo": "Should we let nature take over?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Tonight's debate is about rewilding, the idea of returning land to a more natural state. With me are Dr Sara Lindqvist, an ecologist, and Tom Ashworth, who farms sheep in Devon. Sara, why is rewilding worth the trouble?"
+     },
+     {
+      "p": "B",
+      "t": "Because the evidence is increasingly strong. Take beavers. Their dams slow the flow of water, so villages downstream flood less often, and wildlife returns within a few years. It's not sentimental. It's often the cheapest form of flood protection available."
+     },
+     {
+      "p": "A",
+      "t": "Tom, you look unconvinced."
+     },
+     {
+      "p": "C",
+      "t": "I'm not against nature. I've spent forty years looking after this land. But I'm sure it all looks lovely from a train window. When a beaver dam floods my lower field, nobody from the city turns up to explain who pays for the damage."
+     },
+     {
+      "p": "B",
+      "t": "That's a fair point, and I'd say the schemes have often been badly handled. Farmers should be consulted before animals are released, not after."
+     },
+     {
+      "p": "C",
+      "t": "Not just consulted. Listened to. Last time I went to a meeting, the decision had clearly been made weeks before."
+     },
+     {
+      "p": "A",
+      "t": "So you both agree that the process has been poor?"
+     },
+     {
+      "p": "C",
+      "t": "Up to a point. Where Sara and I differ is that she thinks the problem is communication. I think the problem is that the people proposing these schemes don't have to live with the consequences."
+     },
+     {
+      "p": "B",
+      "t": "I'd question that. Many of the projects are led by landowners themselves, and some have made farms more profitable by reducing the need for expensive fertiliser."
+     },
+     {
+      "p": "C",
+      "t": "Some, perhaps. But one success story doesn't pay my feed bill."
+     },
+     {
+      "p": "A",
+      "t": "Is there any common ground?"
+     },
+     {
+      "p": "B",
+      "t": "Compensation. If a farmer loses crops, the public should cover it, quickly and without paperwork."
+     },
+     {
+      "p": "C",
+      "t": "Well, if that were guaranteed, I'd have fewer reservations. It's the word guaranteed I find hard to believe."
+     },
+     {
+      "p": "A",
+      "t": "On that rather sceptical note, we'll take a short break."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why does Sara support rewilding?",
+     "op": [
+      "It is a fashionable idea.",
+      "It can reduce flooding cheaply.",
+      "It will increase the number of sheep.",
+      "It makes farmers richer."
+     ],
+     "r": 1,
+     "exp": "Ela diz que os castores diminuem enchentes rio abaixo, e que é muitas vezes a proteção mais barata. Ela rejeita a ideia de que seja sentimental."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I'm sure it all looks lovely from a train ___.",
+     "resp": [
+      "window"
+     ],
+     "exp": "Sarcasmo: quem vê do trem, de longe, não vive os problemas do campo.",
+     "ouvir": "I'm sure it all looks lovely from a train window."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "One success story doesn't pay my feed bill.",
+     "ouvir": "One success story doesn't pay my feed bill.",
+     "exp": "Feed bill: o /i/ longo de feed. Doesn't soa /dâzent/."
+    },
+    {
+     "t": "mc",
+     "q": "What is Tom's main criticism?",
+     "op": [
+      "Nature should never be disturbed.",
+      "Farmers aren't properly involved in decisions.",
+      "Beavers are dangerous to people.",
+      "Rewilding is too expensive for councils."
+     ],
+     "r": 1,
+     "exp": "Ele não é contra a natureza (I'm not against nature). Reclama de não ser ouvido e de que quem propõe não sofre as consequências."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Farmers",
+      "should",
+      "be",
+      "consulted",
+      "before",
+      "animals",
+      "are",
+      "released",
+      "not",
+      "after"
+     ],
+     "resp": "Farmers should be consulted before animals are released not after",
+     "exp": "Sara concede o ponto de Tom: a consulta deve vir antes."
+    },
+    {
+     "t": "gap",
+     "q": "Sara says some projects have reduced the need for expensive ___ on farms.",
+     "resp": [
+      "fertiliser",
+      "fertilizer"
+     ],
+     "exp": "Ela usa isso como exemplo de que há projetos lucrativos para fazendas."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Is it right to bring back wild animals to places where people live? Give your opinion.",
+     "modelo": "I think it can be right if local people agree and if there is a plan to protect them. Otherwise it may cause conflict.",
+     "min": 16,
+     "chave": [
+      "animals",
+      "local",
+      "people",
+      "agree",
+      "protect",
+      "plan",
+      "conflict",
+      "think"
+     ],
+     "exp": "Dê opinião com ressalva: I think..., as long as..."
+    },
+    {
+     "t": "mc",
+     "q": "What do Sara and Tom agree about?",
+     "op": [
+      "The scheme should be stopped.",
+      "Farmers should be paid for losses.",
+      "Cities should decide the policy.",
+      "Beavers should be moved."
+     ],
+     "r": 1,
+     "exp": "Sara propõe compensação rápida e sem burocracia; Tom diz que teria menos reservas se isso fosse garantido."
+    },
+    {
+     "t": "gap",
+     "q": "Tom has doubts about the word '___' in the promise of compensation.",
+     "resp": [
+      "guaranteed",
+      "guarantee"
+     ],
+     "exp": "Tom: It's the word guaranteed I find hard to believe. Ele duvida da promessa."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Museums, culture and polite defensiveness",
+   "objetivo": "Entender atitudes veladas em uma entrevista cultural: defesa educada, litotes e respostas que evitam a pergunta.",
+   "foco": "Litotes (not unreasonable); concession; evasive answers; rhetorical questions",
+   "explicacao": [
+    "Litotes = negar o contrário para suavizar: It's not an unreasonable view = faz sentido. Not bad = bom.",
+    "Quando o entrevistado diz Some would say... ou I can only say..., ele está se defendendo sem concordar.",
+    "Pergunta retórica (That's rather unfair, isn't it?) mostra desconforto, mas muitas vezes é seguida de uma resposta honesta.",
+    "Para atitude, compare o início e o fim da resposta: a opinião real aparece quase sempre no final."
+   ],
+   "vocab": [
+    {
+     "en": "curator",
+     "pt": "curador(a)"
+    },
+    {
+     "en": "manuscript",
+     "pt": "manuscrito"
+    },
+    {
+     "en": "clear-cut",
+     "pt": "claro, sem dúvida"
+    },
+    {
+     "en": "murky",
+     "pt": "obscuro, nebuloso"
+    },
+    {
+     "en": "blanket rule",
+     "pt": "regra geral"
+    },
+    {
+     "en": "on its own merits",
+     "pt": "caso a caso"
+    },
+    {
+     "en": "wary",
+     "pt": "cauteloso"
+    },
+    {
+     "en": "thumbprint",
+     "pt": "marca de polegar"
+    }
+   ],
+   "material": {
+    "titulo": "A curator under questioning",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Dr Alvarez, your museum has just opened a very expensive digital gallery. Some say the money would have been better spent on the building."
+     },
+     {
+      "p": "B",
+      "t": "I've heard that, and it's not an unreasonable view. The roof leaks, as visitors will tell you with some relish. But the two budgets are separate, which people tend to forget when they see a headline."
+     },
+     {
+      "p": "A",
+      "t": "What does the digital gallery offer that the real one doesn't?"
+     },
+     {
+      "p": "B",
+      "t": "Access, primarily. Only one in five of our objects is ever on display; the rest sit in storage. Online, a student in Kenya can zoom in on a fourteenth-century manuscript in a level of detail no visitor could manage through glass."
+     },
+     {
+      "p": "A",
+      "t": "But isn't something lost? Seeing an object in the flesh?"
+     },
+     {
+      "p": "B",
+      "t": "Of course. I'd never claim a screen replaces standing in front of a real painting. Yet I'd gently point out that most people will never get the chance to visit us at all."
+     },
+     {
+      "p": "A",
+      "t": "There's also the debate over returning objects to their countries of origin. Where do you stand?"
+     },
+     {
+      "p": "B",
+      "t": "It's complicated, and I'm wary of slogans. Some cases are clear-cut, particularly where an object was taken in a violent conflict. In others the history is murky, and ownership has changed hands several times. I'd rather each case be judged on its own merits than have a blanket rule."
+     },
+     {
+      "p": "A",
+      "t": "Critics would say that's a convenient way of doing nothing."
+     },
+     {
+      "p": "B",
+      "t": "Some would. I can only say that we've returned four collections in the past decade, which is hardly nothing."
+     },
+     {
+      "p": "A",
+      "t": "What's your own view, though, rather than the museum's?"
+     },
+     {
+      "p": "B",
+      "t": "Well, that's a rather unfair question, isn't it? But since you ask: I think we spent too long defending our position and not enough time listening. That's changing, slowly."
+     },
+     {
+      "p": "A",
+      "t": "Finally, what's your favourite object?"
+     },
+     {
+      "p": "B",
+      "t": "A very ordinary clay cup. Nothing special by museum standards, yet it has a thumbprint where the potter pressed it three thousand years ago. When I see it, I remember that history is made of people."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How does Dr Alvarez react to the criticism of the spending?",
+     "op": [
+      "She dismisses it as nonsense.",
+      "She accepts there is some sense in it but explains.",
+      "She agrees that the money was wasted.",
+      "She refuses to discuss it."
+     ],
+     "r": 1,
+     "exp": "Not an unreasonable view = faz sentido. Depois ela explica que os orçamentos são separados."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Only one in ___ of our objects is ever on display.",
+     "resp": [
+      "five",
+      "5"
+     ],
+     "exp": "Um em cada cinco objetos fica exposto; o resto fica guardado.",
+     "ouvir": "Only one in five of our objects is ever on display."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I'd rather each case be judged on its own merits than have a blanket rule.",
+     "ouvir": "I'd rather each case be judged on its own merits than have a blanket rule.",
+     "exp": "Merits: o -its soa curto. Blanket rule: regra geral."
+    },
+    {
+     "t": "mc",
+     "q": "What does Dr Alvarez mean by saying 'I'm wary of slogans' about returning objects?",
+     "op": [
+      "She supports a simple rule.",
+      "She distrusts simple answers to a complex issue.",
+      "She has never returned an object.",
+      "She thinks the debate is unimportant."
+     ],
+     "r": 1,
+     "exp": "Ela prefere analisar caso a caso. Slogans seriam respostas simples demais."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "can",
+      "only",
+      "say",
+      "that",
+      "we've",
+      "returned",
+      "four",
+      "collections",
+      "in",
+      "the",
+      "past",
+      "decade"
+     ],
+     "resp": "I can only say that we've returned four collections in the past decade",
+     "exp": "I can only say that = tudo que posso dizer é. Ela se defende com um fato."
+    },
+    {
+     "t": "gap",
+     "q": "Dr Alvarez admits the museum spent too long defending its position and not enough time ___.",
+     "resp": [
+      "listening"
+     ],
+     "exp": "Ela responde com franqueza no final, depois de chamar a pergunta de injusta."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Do you think museums should return objects to the countries they came from? Why?",
+     "modelo": "In some cases I think they should, especially when the objects were taken by force. But each case is different, so it depends.",
+     "min": 16,
+     "chave": [
+      "return",
+      "museum",
+      "country",
+      "objects",
+      "history",
+      "depends",
+      "think",
+      "case"
+     ],
+     "exp": "Use a linguagem de cautela: it depends, in some cases, I'd say."
+    },
+    {
+     "t": "mc",
+     "q": "What does the curator's description of the clay cup show?",
+     "op": [
+      "She prefers cheap objects.",
+      "She values human connection in history.",
+      "She dislikes famous artworks.",
+      "She is disappointed with the collection."
+     ],
+     "r": 1,
+     "exp": "A marca do polegar a faz lembrar que a história é feita de pessoas."
+    },
+    {
+     "t": "gap",
+     "q": "According to Dr Alvarez, a student in Kenya could see a manuscript in more ___ than visitors can through glass.",
+     "resp": [
+      "detail"
+     ],
+     "exp": "Detalhe: no site se pode dar zoom."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Changing careers: five speakers",
+   "objetivo": "Treinar o formato de cinco falantes e duas tarefas: motivo e sentimento sobre a mudança de carreira.",
+   "foco": "Multiple matching; motive vs feeling; distractors that appear in every extract",
+   "explicacao": [
+    "No Part 4 há duas tarefas ao mesmo tempo: o motivo (por que fez) e o sentimento (como se sente agora). Não misture.",
+    "Cada opção costuma aparecer em mais de um falante. Só uma encaixa de verdade: confira o que a pessoa diz no fim.",
+    "Sentimentos aparecem em palavras como proud, regret, resentful, grateful, uneasy, anxious.",
+    "Motivos aparecem após because, so, after, since, or em frases como It was a condition of..."
+   ],
+   "vocab": [
+    {
+     "en": "redundant",
+     "pt": "demitido por corte de pessoal"
+    },
+    {
+     "en": "tangible",
+     "pt": "palpável"
+    },
+    {
+     "en": "resentful",
+     "pt": "ressentido"
+    },
+    {
+     "en": "grateful",
+     "pt": "grato"
+    },
+    {
+     "en": "uneasy",
+     "pt": "pouco à vontade"
+    },
+    {
+     "en": "mortgage",
+     "pt": "financiamento imobiliário"
+    },
+    {
+     "en": "to nag",
+     "pt": "insistir, encher a paciência"
+    },
+    {
+     "en": "reassure",
+     "pt": "tranquilizar"
+    }
+   ],
+   "material": {
+    "titulo": "Five people who changed careers",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Speaker one. People assume I left law because I hated it, which isn't true. I was good at it, and the pay was generous. But after twelve years I realised I couldn't point to a single thing I'd made. Now I build kitchen tables. I earn about half as much, and my back aches, but when a family sits down to eat at something I've built, I feel completely at peace with the decision."
+     },
+     {
+      "p": "B",
+      "t": "Speaker two. I never planned to leave teaching. The school closed, and there simply weren't any posts nearby. I was furious for months, to be honest, and I took the coding course out of desperation. It turned out I was quite good at it. I'm not sure I'd say it was the best thing that ever happened to me, but I'm certainly grateful for how it's worked out."
+     },
+     {
+      "p": "A",
+      "t": "Speaker three. A friend of mine had been volunteering with a refugee charity, and she kept asking me to come along to an event. Eventually I did, mostly to stop her nagging, and ended up there every weekend. When a paid job came up, applying felt natural. My only regret is my old team; they were under pressure and I left in the middle of a big project. I still feel bad about it."
+     },
+     {
+      "p": "B",
+      "t": "Speaker four. I spent eight years as a reporter, and I'll miss it, but the pay was never going to cover a mortgage, especially with a baby on the way. So I moved into communications for a bank. The hours are saner and the salary is double. I won't pretend I'm entirely comfortable, though. Some old colleagues barely speak to me now, as if I'd switched sides."
+     },
+     {
+      "p": "A",
+      "t": "Speaker five. After a decade in hospital medicine I was missing my children's entire childhood. A lecturing post at the university gave me evenings and weekends, which was what I wanted. What I hadn't expected was the worry that I'd lose my practical skills. Every few weeks I wake up wondering whether I'm still a good doctor, and I'm not sure anybody can reassure me."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why did speaker one leave law?",
+     "op": [
+      "The pay was too low.",
+      "He wanted to produce something tangible.",
+      "He disliked the work.",
+      "His health was bad."
+     ],
+     "r": 1,
+     "exp": "A pessoa diz que não deixou por odiar nem pelo salário. Ela não via nada concreto que tivesse feito (a single thing I'd made)."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I couldn't point to a ___ thing I'd made.",
+     "resp": [
+      "single",
+      "one"
+     ],
+     "exp": "A single thing = nem uma coisa. É o motivo da mudança do falante um.",
+     "ouvir": "I couldn't point to a single thing I'd made."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "I won't pretend I'm entirely comfortable, though.",
+     "ouvir": "I won't pretend I'm entirely comfortable, though.",
+     "exp": "Ênfase em entirely. Pretend: acento na segunda sílaba."
+    },
+    {
+     "t": "mc",
+     "q": "How does speaker two feel now about the change?",
+     "op": [
+      "Still angry about the school closing",
+      "Thankful, but not claiming it was ideal",
+      "Certain it was the best event of life",
+      "Embarrassed by the coding course"
+     ],
+     "r": 1,
+     "exp": "Ele ficou furioso por meses, mas diz estar certainly grateful, sem afirmar que foi a melhor coisa que aconteceu."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "A",
+      "friend",
+      "of",
+      "mine",
+      "had",
+      "been",
+      "volunteering",
+      "with",
+      "a",
+      "refugee",
+      "charity"
+     ],
+     "resp": "A friend of mine had been volunteering with a refugee charity",
+     "exp": "Past perfect continuous: a amiga já vinha fazendo voluntariado antes."
+    },
+    {
+     "t": "gap",
+     "q": "Speaker three first went along mostly to stop her friend ___ her.",
+     "resp": [
+      "nagging",
+      "pestering",
+      "bothering"
+     ],
+     "exp": "To stop her nagging = para ela parar de insistir. O motivo inicial não era o trabalho."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Would you ever change your career? What would you like to do instead, and why?",
+     "modelo": "I might, if I could find a job with more freedom. I'd like to work with animals, because I find it more meaningful.",
+     "min": 15,
+     "chave": [
+      "change",
+      "career",
+      "job",
+      "instead",
+      "would",
+      "because",
+      "work",
+      "like"
+     ],
+     "exp": "Fale em hipótese: I might..., I'd like to..., if I could..."
+    },
+    {
+     "t": "mc",
+     "q": "What was speaker four's reason for changing job?",
+     "op": [
+      "He wanted shorter hours.",
+      "He needed to earn more money.",
+      "He had lost his job at the newspaper.",
+      "He disliked his colleagues."
+     ],
+     "r": 1,
+     "exp": "O salário nunca cobriria um financiamento, com um bebê a caminho. As horas melhores são só uma vantagem."
+    },
+    {
+     "t": "mc",
+     "q": "How does speaker five feel about the change?",
+     "op": [
+      "Relieved that she keeps her skills",
+      "Anxious about her professional ability",
+      "Proud of being a lecturer",
+      "Angry with the hospital"
+     ],
+     "r": 1,
+     "exp": "Ela ganhou tempo com os filhos, mas teme perder as habilidades práticas e duvida se ainda é uma boa médica."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Diplomatic criticism in a meeting",
+   "objetivo": "Perceber críticas escondidas em linguagem educada e entender a decisão final de uma reunião.",
+   "foco": "Cautious language: I wonder if, with respect, it strikes me as; hedged criticism",
+   "explicacao": [
+    "Em reuniões britânicas, a crítica vem suavizada: It's certainly bold = tenho dúvidas. I wonder whether = acho que não.",
+    "Palavras como slightly, a bit, rather diminuem o impacto, mas a crítica continua real.",
+    "With the greatest respect... antecede um desacordo forte. Not that I'm against it in principle = mas tenho objeções.",
+    "Preste atenção à decisão final: muitas vezes é condicional (approve the concept but...)."
+   ],
+   "vocab": [
+    {
+     "en": "bold",
+     "pt": "ousado"
+    },
+    {
+     "en": "timeline",
+     "pt": "cronograma"
+    },
+    {
+     "en": "to dampen",
+     "pt": "desanimar"
+    },
+    {
+     "en": "modest",
+     "pt": "modesto, discreto"
+    },
+    {
+     "en": "one-off costs",
+     "pt": "custos únicos"
+    },
+    {
+     "en": "to refine",
+     "pt": "refinar, aperfeiçoar"
+    },
+    {
+     "en": "instinct",
+     "pt": "instinto"
+    },
+    {
+     "en": "safe pair of hands",
+     "pt": "pessoa confiável"
+    }
+   ],
+   "material": {
+    "titulo": "Feedback on a campaign proposal",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Thanks, Sam; that was a very thorough presentation. Joy, first impressions?"
+     },
+     {
+      "p": "C",
+      "t": "It's certainly bold, I'll give you that. I particularly liked the idea of the street installations. I do wonder, though, whether the timing is realistic. We'd be launching in the same fortnight as the sports sponsorship."
+     },
+     {
+      "p": "B",
+      "t": "That was deliberate. We thought we could ride the wave of attention."
+     },
+     {
+      "p": "C",
+      "t": "Mm. Or get lost in it. Not that I'm against the idea in principle."
+     },
+     {
+      "p": "A",
+      "t": "Sam, can I ask about the budget? You've put aside forty thousand for the installations, which is a big chunk."
+     },
+     {
+      "p": "B",
+      "t": "It is, but it's mostly one-off costs. We could reuse the structures in other cities."
+     },
+     {
+      "p": "A",
+      "t": "I see. And the social media side? It strikes me as slightly thin compared with the rest."
+     },
+     {
+      "p": "B",
+      "t": "Honestly, we weren't sure we'd have the resources, so we kept it modest."
+     },
+     {
+      "p": "C",
+      "t": "With the greatest respect, I think that might be a mistake. Younger customers are the target, and they'll never walk past the installations."
+     },
+     {
+      "p": "B",
+      "t": "That's a fair point. I hadn't thought of it quite like that."
+     },
+     {
+      "p": "A",
+      "t": "Look, I don't want to dampen what is a very promising proposal. My instinct is to approve the concept but ask for a revised timeline and a stronger digital plan. Could you get that to me by the end of the month?"
+     },
+     {
+      "p": "B",
+      "t": "Of course. Would it be all right to bring in Mateo from design for the digital side?"
+     },
+     {
+      "p": "A",
+      "t": "Please do. He's a safe pair of hands. And, Sam, for what it's worth, I think you've done something rather brave here. Try not to take the comments personally."
+     },
+     {
+      "p": "B",
+      "t": "I won't. Actually, it's a relief. I was half expecting you to say it needed starting again."
+     },
+     {
+      "p": "A",
+      "t": "Not at all. It needs refining, that's all."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does Joy suggest by saying the proposal is 'certainly bold'?",
+     "op": [
+      "She admires it without reservation.",
+      "She has doubts she's expressing politely.",
+      "She thinks it is too cheap.",
+      "She wants to cancel it."
+     ],
+     "r": 1,
+     "exp": "Certainly bold, I'll give you that e I do wonder são suavização: ela duvida do momento do lançamento."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I do ___, though, whether the timing is realistic.",
+     "resp": [
+      "wonder"
+     ],
+     "exp": "I do wonder whether = tenho dúvidas se. Crítica suave.",
+     "ouvir": "I do wonder, though, whether the timing is realistic."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "My instinct is to approve the concept but ask for a revised timeline.",
+     "ouvir": "My instinct is to approve the concept but ask for a revised timeline.",
+     "exp": "Concept: acento em con-. Revised soa /rivaizd/."
+    },
+    {
+     "t": "mc",
+     "q": "Why does Joy think the social media plan is a mistake?",
+     "op": [
+      "It costs too much.",
+      "The target customers may not see the installations.",
+      "The sports sponsor will object.",
+      "It has no clear leader."
+     ],
+     "r": 1,
+     "exp": "Ela diz que os clientes jovens, o alvo, nunca passariam pelas instalações."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Younger",
+      "customers",
+      "are",
+      "the",
+      "target",
+      "and",
+      "they'll",
+      "never",
+      "walk",
+      "past",
+      "the",
+      "installations"
+     ],
+     "resp": "Younger customers are the target and they'll never walk past the installations",
+     "exp": "They'll never walk past: eles não passam por ali. É o argumento de Joy para o plano digital."
+    },
+    {
+     "t": "gap",
+     "q": "The manager asks for a revised timeline and a stronger ___ plan.",
+     "resp": [
+      "digital",
+      "social media"
+     ],
+     "exp": "Condição para aprovar o conceito: cronograma novo e plano digital mais forte."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Someone asks for your feedback on their idea, but you have doubts. What do you say?",
+     "modelo": "I'd say it's an interesting idea, but I wonder whether it might be too expensive. Perhaps we could look at a cheaper option.",
+     "min": 16,
+     "chave": [
+      "wonder",
+      "interesting",
+      "perhaps",
+      "idea",
+      "expensive",
+      "suggest",
+      "maybe",
+      "think"
+     ],
+     "exp": "Suavize a crítica: I wonder whether..., It might be worth..., Perhaps we could..."
+    },
+    {
+     "t": "mc",
+     "q": "What is the manager's final decision?",
+     "op": [
+      "Reject the proposal entirely",
+      "Accept the idea on certain conditions",
+      "Postpone the meeting",
+      "Ask Joy to take over"
+     ],
+     "r": 1,
+     "exp": "Aprova o conceito, mas pede novo cronograma e plano digital melhor até o fim do mês."
+    },
+    {
+     "t": "gap",
+     "q": "Sam is relieved because he thought the manager would say the proposal needed starting ___.",
+     "resp": [
+      "again",
+      "over",
+      "afresh"
+     ],
+     "exp": "I was half expecting you to say it needed starting again."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Trust in science: a long interview",
+   "objetivo": "Acompanhar uma entrevista longa e entender concessões, ironia sutil e opiniões implícitas de uma especialista.",
+   "foco": "Concession, irony, implied opinions; abstract vocabulary (uncertainty, trust, evidence, persuade)",
+   "explicacao": [
+    "Em entrevistas longas, a pessoa começa contestando a pergunta: It's often assumed so, and I'd like to challenge that. A ideia verdadeira vem depois.",
+    "Ela admite parte da crítica (concessão) e depois segue com a tese. Procure a opção que reflete a posição final.",
+    "Ironia discreta: some colleagues enjoyed the cameras rather more than was wise = críticas aos colegas, dita com educação.",
+    "Palavras abstratas: uncertainty, trust, institutional, evidence, to persuade, to reward."
+   ],
+   "vocab": [
+    {
+     "en": "uncertainty",
+     "pt": "incerteza"
+    },
+    {
+     "en": "to revise",
+     "pt": "rever, corrigir"
+    },
+    {
+     "en": "to excuse",
+     "pt": "desculpar"
+    },
+    {
+     "en": "suspicion",
+     "pt": "desconfiança"
+    },
+    {
+     "en": "in a vacuum",
+     "pt": "isolado, sem contexto"
+    },
+    {
+     "en": "blunt",
+     "pt": "direto, franco"
+    },
+    {
+     "en": "institutional",
+     "pt": "das instituições"
+    },
+    {
+     "en": "to reward",
+     "pt": "recompensar"
+    }
+   ],
+   "material": {
+    "titulo": "Why do people stop trusting scientists?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Professor Reyes, during the pandemic many of us watched scientists change their advice. Did that damage trust?"
+     },
+     {
+      "p": "B",
+      "t": "It's often assumed so, and I'd like to challenge that. What damaged trust, in my view, wasn't that advice changed, but that it was sometimes presented as certain when it wasn't. Science works by revising itself. The failure was one of communication, not of method."
+     },
+     {
+      "p": "A",
+      "t": "Isn't that a convenient defence for scientists?"
+     },
+     {
+      "p": "B",
+      "t": "It would be, if I were excusing us entirely, which I'm not. We were slow to admit uncertainty, and some of my colleagues, let's say, enjoyed the television cameras rather more than was wise."
+     },
+     {
+      "p": "A",
+      "t": "There's a view that the public simply needs more facts."
+     },
+     {
+      "p": "B",
+      "t": "That used to be the standard assumption among researchers, and frankly it's been disproved. If someone's suspicion of a vaccine comes from a bad experience with a clinic, a leaflet full of statistics won't touch it. People don't weigh evidence in a vacuum. They ask whether the person speaking resembles them and has their interests at heart."
+     },
+     {
+      "p": "A",
+      "t": "So how should scientists speak?"
+     },
+     {
+      "p": "B",
+      "t": "First, by being honest about what we don't know, even though it feels like weakness. Second, by listening before talking. And third, if I may be blunt, by accepting that not everyone needs to be persuaded by us. Sometimes it's enough that they trust a local pharmacist who is persuaded."
+     },
+     {
+      "p": "A",
+      "t": "Some would call that giving up on the public."
+     },
+     {
+      "p": "B",
+      "t": "I'd call it being realistic about where trust actually lives. It is local and personal, far more than institutional."
+     },
+     {
+      "p": "A",
+      "t": "What about the media? Do they bear any responsibility?"
+     },
+     {
+      "p": "B",
+      "t": "Naturally, but I try not to blame journalists. A headline has about eight words, and uncertainty doesn't fit into eight words. The responsibility lies equally with us for not supplying clear, short summaries that are still accurate."
+     },
+     {
+      "p": "A",
+      "t": "Are you optimistic about the future?"
+     },
+     {
+      "p": "B",
+      "t": "I'd say cautiously hopeful, which is a polite way of saying I haven't given up. The younger researchers I work with are much better at this than my generation, so long as the universities reward them for it, and at the moment they don't."
+     },
+     {
+      "p": "A",
+      "t": "Why not?"
+     },
+     {
+      "p": "B",
+      "t": "Because promotion still depends almost entirely on publishing papers that nobody outside the field reads. Until that changes, I suspect we'll keep having this conversation."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does Professor Reyes believe damaged public trust?",
+     "op": [
+      "Scientists changing their advice",
+      "Certainty claimed when there was none",
+      "Too many leaflets with statistics",
+      "Journalists writing long headlines"
+     ],
+     "r": 1,
+     "exp": "Para ela, o problema não foi mudar o conselho, mas apresentá-lo como certo quando não era. Falha de comunicação, não de método."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Science works by ___ itself.",
+     "resp": [
+      "revising",
+      "correcting"
+     ],
+     "exp": "Science works by revising itself: a ciência funciona corrigindo-se.",
+     "ouvir": "Science works by revising itself."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "People don't weigh evidence in a vacuum.",
+     "ouvir": "People don't weigh evidence in a vacuum.",
+     "exp": "Vacuum: /vékiuum/. Weigh soa como way."
+    },
+    {
+     "t": "mc",
+     "q": "What does she imply about some of her colleagues?",
+     "op": [
+      "They refused to appear on television.",
+      "They liked the attention more than they should have.",
+      "They were too honest about uncertainty.",
+      "They did not understand the data."
+     ],
+     "r": 1,
+     "exp": "Enjoyed the television cameras rather more than was wise: crítica sutil, com humor e eufemismo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Trust",
+      "is",
+      "local",
+      "and",
+      "personal",
+      "far",
+      "more",
+      "than",
+      "institutional"
+     ],
+     "resp": "Trust is local and personal far more than institutional",
+     "exp": "Far more than = muito mais do que. Para ela, a confiança vem de pessoas próximas, não de instituições."
+    },
+    {
+     "t": "gap",
+     "q": "Professor Reyes is 'cautiously ___', which means she has not given up.",
+     "resp": [
+      "hopeful",
+      "optimistic"
+     ],
+     "exp": "Ela mesma explica: um modo educado de dizer que não desistiu."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Why do you think some people distrust experts? What could help?",
+     "modelo": "I think some people feel experts don't listen to them. It would help if experts were more honest about what they don't know.",
+     "min": 16,
+     "chave": [
+      "trust",
+      "experts",
+      "listen",
+      "honest",
+      "believe",
+      "feel",
+      "help",
+      "because"
+     ],
+     "exp": "Dê causa e solução: I think... because..., It would help if..."
+    },
+    {
+     "t": "mc",
+     "q": "What does she say about the way universities treat younger researchers?",
+     "op": [
+      "They are encouraged to communicate with the public.",
+      "They are promoted mainly for papers few people read.",
+      "They are paid too much.",
+      "They are not skilled at communication."
+     ],
+     "r": 1,
+     "exp": "A promoção depende de artigos que ninguém de fora do campo lê. As jovens pesquisadoras são melhores em comunicar, mas não são recompensadas."
+    },
+    {
+     "t": "gap",
+     "q": "She says a headline has about eight words and ___ does not fit into eight words.",
+     "resp": [
+      "uncertainty",
+      "doubt"
+     ],
+     "exp": "Por isso ela não culpa os jornalistas; pede resumos curtos e precisos."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado: C1 Advanced Listening",
+   "objetivo": "Praticar as quatro partes da prova de listening do C1 em sequência, com ritmo e atenção do exame.",
+   "foco": "Exam practice: extracts, sentence completion, long interview, multiple matching",
+   "explicacao": [
+    "Parte 1: dois ou três trechos curtos, duas perguntas cada. Leia a pergunta antes do áudio.",
+    "Parte 2: monólogo com lacunas. A palavra que você escreve é exatamente a que você ouve.",
+    "Parte 3: entrevista longa; a resposta depende de atitude e opinião, não de palavras iguais.",
+    "Parte 4: cinco falantes e duas tarefas (motivo e sentimento). Cada opção aparece como distrator."
+   ],
+   "vocab": [
+    {
+     "en": "brochure",
+     "pt": "folheto"
+    },
+    {
+     "en": "migration",
+     "pt": "migração"
+    },
+    {
+     "en": "pupil",
+     "pt": "aluno (escola)"
+    },
+    {
+     "en": "caveat",
+     "pt": "ressalva"
+    },
+    {
+     "en": "to hold the line",
+     "pt": "manter a regra"
+    },
+    {
+     "en": "crossroads",
+     "pt": "encruzilhada"
+    },
+    {
+     "en": "humbled",
+     "pt": "humilde, envergonhado"
+    },
+    {
+     "en": "discouraged",
+     "pt": "desanimado"
+    }
+   ],
+   "material": {
+    "titulo": "Practice exam: four short parts",
+    "falas": [
+     {
+      "p": "A",
+      "t": "I've just read the draft of the brochure. The photographs are lovely, but the text, well, it's very thorough."
+     },
+     {
+      "p": "B",
+      "t": "You mean it's long."
+     },
+     {
+      "p": "A",
+      "t": "I mean it reads as though every department insisted on a paragraph. Nobody will get past the second page."
+     },
+     {
+      "p": "B",
+      "t": "To be fair, the board wanted everything in. I could suggest cutting it, but you know what they're like."
+     },
+     {
+      "p": "A",
+      "t": "Then let's not suggest. Let's show them. If I mock up a short version and we test both on a few customers, the figures can do the arguing."
+     },
+     {
+      "p": "B",
+      "t": "Sneaky, but I like it. They can hardly complain about evidence."
+     },
+     {
+      "p": "A",
+      "t": "Exactly, and if they do, we've lost nothing but an afternoon."
+     },
+     {
+      "p": "C",
+      "t": "Today I'd like to talk about the Arctic tern, a bird that holds the record for the longest migration of any animal. Each year it flies from the Arctic to the Antarctic and back, a round trip of around seventy thousand kilometres. Not that it flies in a straight line: it follows a winding route, partly to take advantage of favourable winds. Researchers discovered this by fitting tiny devices, weighing less than a paper clip, to the birds' legs. Interestingly, the data showed that terns see more daylight than any other creature, since they spend the summer at both poles. However, the most worrying finding concerns food. The birds depend on small fish called sand eels, and as the sea warms, these are moving north, which means the terns must work harder to feed their chicks."
+     },
+     {
+      "p": "A",
+      "t": "Mrs Hargreaves, your school banned phones last year. Has it worked?"
+     },
+     {
+      "p": "B",
+      "t": "In some ways, spectacularly. Playgrounds are noisy again, and teachers tell me the break-time conversations have changed. But I'd be lying if I said it was a magic wand. Some pupils are simply doing the same thing at home."
+     },
+     {
+      "p": "A",
+      "t": "Parents were divided, weren't they?"
+     },
+     {
+      "p": "B",
+      "t": "Initially. A vocal minority felt we were treating teenagers like children. What I didn't anticipate was that several of the parents who objected loudest were the ones who later thanked me, privately, because it gave them an excuse to hold the line at home."
+     },
+     {
+      "p": "A",
+      "t": "Would you recommend it to other schools?"
+     },
+     {
+      "p": "B",
+      "t": "With caveats. A ban imposed from above rarely works. We spent a term discussing it with pupils, and I suspect that's what made the difference. If the head simply announces it, you get resistance, and then you've lost the argument before it's begun."
+     },
+     {
+      "p": "A",
+      "t": "Speaker one. I went mainly because my sister had done it and wouldn't stop talking about it. I'd never really thought about volunteering, but I didn't want to be left out. Looking back, I'm quite proud, although I do think I got more out of it than the people I was supposedly helping."
+     },
+     {
+      "p": "B",
+      "t": "Speaker two. I was at a crossroads, to be honest. I'd finished my degree and had no idea what to do. Teaching English in a village seemed as good a way as any of buying time. It turned out to be the most useful decision I ever made, and I have no complaints at all."
+     },
+     {
+      "p": "A",
+      "t": "Speaker three. My company offered paid leave for charity work, so the cost wasn't a problem. I wanted something for my CV, I admit. But I came home humbled and slightly embarrassed by my motives. I'd do it again, for better reasons."
+     },
+     {
+      "p": "B",
+      "t": "Speaker four. A documentary about reef damage did it for me. I felt I had to do something rather than just complain. The trouble is, three months of counting fish makes you realise how small your contribution is. I came back rather discouraged, if I'm honest."
+     },
+     {
+      "p": "A",
+      "t": "Speaker five. It was a condition of my scholarship, so I didn't have a choice. I resented it at first, and I'm not sure I've ever got over the cold showers. But the people were wonderful and I still write to the family I stayed with."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "PART 1 (primeira conversa: Nina e Owen). What is Nina's opinion of the brochure text?",
+     "op": [
+      "It is dull because it is too technical.",
+      "It is too long because every department added to it.",
+      "It is excellent but needs better photographs.",
+      "It is inaccurate in several places."
+     ],
+     "r": 1,
+     "exp": "Ela diz que o texto parece ter um parágrafo de cada departamento e que ninguém passará da segunda página. As fotos ela elogia."
+    },
+    {
+     "t": "mc",
+     "q": "PART 1. What does Nina propose to do about the board?",
+     "op": [
+      "Argue with them in the next meeting",
+      "Let the results of a test persuade them",
+      "Cut the text without telling anyone",
+      "Ask the customers to complain"
+     ],
+     "r": 1,
+     "exp": "Ela quer fazer uma versão curta e testar as duas com clientes: os números fazem o argumento (the figures can do the arguing)."
+    },
+    {
+     "t": "gap",
+     "q": "PART 2 (palestra sobre a gaivina-do-ártico). The bird's round trip is around ___ kilometres.",
+     "resp": [
+      "seventy thousand",
+      "70,000",
+      "70000",
+      "70 000"
+     ],
+     "exp": "A viagem de ida e volta tem cerca de 70.000 quilômetros."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o simulado de novo na parte 3 e repita em voz alta a frase da diretora.",
+     "frase": "A ban imposed from above rarely works.",
+     "ouvir": "A ban imposed from above rarely works.",
+     "exp": "Imposed soa /impôuzd/. Rarely: acento em rare-, /rérli/."
+    },
+    {
+     "t": "gap",
+     "q": "PART 2. The devices fitted to the birds' legs weighed less than a ___.",
+     "resp": [
+      "paper clip",
+      "paperclip"
+     ],
+     "exp": "Os aparelhos pesavam menos que um clipe de papel."
+    },
+    {
+     "t": "gap",
+     "q": "PART 2. The terns see more ___ than any other creature.",
+     "resp": [
+      "daylight",
+      "light",
+      "sunlight"
+     ],
+     "exp": "Elas passam o verão nos dois polos e por isso veem mais luz do dia que qualquer animal."
+    },
+    {
+     "t": "mc",
+     "q": "PART 3 (entrevista com a diretora). What surprised the head teacher about parents?",
+     "op": [
+      "Few parents knew about the ban.",
+      "Most parents refused to accept it.",
+      "Some who objected loudly later thanked her.",
+      "The parents wanted pupils to have more phone time."
+     ],
+     "r": 2,
+     "exp": "Vários pais que mais reclamaram depois agradeceram em particular, porque a proibição os ajudou a manter a regra em casa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "If",
+      "the",
+      "head",
+      "simply",
+      "announces",
+      "it",
+      "you",
+      "get",
+      "resistance"
+     ],
+     "resp": "If the head simply announces it you get resistance",
+     "exp": "A diretora diz que anunciar a medida de cima gera resistência e você perde a discussão antes de começar."
+    },
+    {
+     "t": "mc",
+     "q": "PART 3. What does she think made the ban succeed?",
+     "op": [
+      "The fact that it was imposed immediately",
+      "Strong support from teachers",
+      "Discussion with pupils over a term",
+      "The reaction of the media"
+     ],
+     "r": 2,
+     "exp": "Foi um período de discussão com os alunos (We spent a term discussing it) que, segundo ela, fez a diferença."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês, em voz alta.",
+     "frase": "Should schools ban mobile phones? Give your opinion with reasons.",
+     "modelo": "I think a ban can be useful because pupils would talk to each other more. However, it should be discussed with them first, otherwise they will resist.",
+     "min": 18,
+     "chave": [
+      "ban",
+      "phones",
+      "pupils",
+      "school",
+      "think",
+      "because",
+      "discuss",
+      "students"
+     ],
+     "exp": "Dê opinião, razão e ressalva: I think..., because..., however..."
+    },
+    {
+     "t": "mc",
+     "q": "PART 4 (cinco pessoas que fizeram voluntariado). TASK 1: Why did speaker two go?",
+     "op": [
+      "To postpone a decision about the future",
+      "Because a relative recommended it",
+      "To improve a CV",
+      "Because it was compulsory"
+     ],
+     "r": 0,
+     "exp": "A pessoa estava numa encruzilhada e ensinar inglês era uma forma de ganhar tempo (buying time). Irmã, CV e obrigação são motivos de outros falantes."
+    },
+    {
+     "t": "mc",
+     "q": "PART 4. TASK 2: How does speaker four feel looking back?",
+     "op": [
+      "Proud of the achievement",
+      "Humbled by the motives",
+      "Discouraged by the small impact",
+      "Satisfied with the decision"
+     ],
+     "r": 2,
+     "exp": "Contar peixes por três meses mostrou como era pequena a contribuição; voltou rather discouraged."
+    },
+    {
+     "t": "gap",
+     "q": "PART 2. As the sea warms, sand eels are moving ___.",
+     "resp": [
+      "north",
+      "northwards",
+      "northward"
+     ],
+     "exp": "Os peixes se movem para o norte, e as aves trabalham mais para alimentar os filhotes."
+    }
+   ]
+  }
+ ]
+}

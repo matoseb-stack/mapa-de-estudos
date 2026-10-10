@@ -1,0 +1,3314 @@
+{
+ "nivel": "C2",
+ "skill": "listening",
+ "exame": "C2 Proficiency (CPE)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "What is not said",
+   "objetivo": "Perceber o que a pessoa quer dizer sem dizer, a partir de comentários indiretos e silêncios.",
+   "foco": "Implicature: reading between the lines; hedged feedback",
+   "explicacao": [
+    "Em C2, o importante muitas vezes está implícito. Um elogio pequeno (the slides were colourful) pode ser um jeito educado de não elogiar o resto.",
+    "Frases como 'I wouldn't go that far' recusam uma conclusão forte, mas não negam tudo. Quem ouve deve calcular o meio-termo.",
+    "O silêncio também comunica: 'went rather quiet' pode ser entusiasmo, como no áudio. Preste atenção ao que o falante diz sobre a reação, não só à reação.",
+    "Na prova, a opção certa costuma parafrasear a inferência, e não repetir as palavras do áudio."
+   ],
+   "vocab": [
+    {
+     "en": "to read between the lines",
+     "pt": "ler nas entrelinhas"
+    },
+    {
+     "en": "to stay within the time limit",
+     "pt": "cumprir o tempo"
+    },
+    {
+     "en": "frankly",
+     "pt": "francamente"
+    },
+    {
+     "en": "insurance",
+     "pt": "garantia, seguro"
+    },
+    {
+     "en": "to sit in",
+     "pt": "acompanhar, assistir"
+    },
+    {
+     "en": "make of that what you will",
+     "pt": "tire você mesmo a conclusão"
+    },
+    {
+     "en": "revised",
+     "pt": "revisado"
+    },
+    {
+     "en": "supervision",
+     "pt": "supervisão"
+    }
+   ],
+   "material": {
+    "titulo": "A colleague reports on a meeting",
+    "falas": [
+     {
+      "p": "A",
+      "t": "So, how did it go? Did the director say anything about my presentation?"
+     },
+     {
+      "p": "B",
+      "t": "Well, she did say the slides were very colourful."
+     },
+     {
+      "p": "A",
+      "t": "Colourful. Is that all?"
+     },
+     {
+      "p": "B",
+      "t": "She also mentioned that you stayed within the time limit, which, as you know, is not something she says to everyone."
+     },
+     {
+      "p": "A",
+      "t": "I see. So she hated it."
+     },
+     {
+      "p": "B",
+      "t": "I wouldn't go that far. She asked whether the figures on page six had been checked by anyone. Which is her way of telling you they probably hadn't."
+     },
+     {
+      "p": "A",
+      "t": "They hadn't. I did them on the train, the night before. I assumed nobody would look that closely."
+     },
+     {
+      "p": "B",
+      "t": "Somebody always does. Anyway, she wants a revised version by Thursday, and she's asked Priya to sit in with you on Wednesday afternoon."
+     },
+     {
+      "p": "A",
+      "t": "To sit in? That sounds like supervision."
+     },
+     {
+      "p": "B",
+      "t": "Think of it as insurance. Priya is very good with numbers, and frankly I'd have asked her myself if I'd been you."
+     },
+     {
+      "p": "A",
+      "t": "Fine. I suppose I'd rather be corrected by Priya than by the director. Does Priya know yet?"
+     },
+     {
+      "p": "B",
+      "t": "Not officially. But when I mentioned it, she said she had nothing on Wednesday, and then she went rather quiet, which is how she shows enthusiasm."
+     },
+     {
+      "p": "A",
+      "t": "Ha. Well, I'll take that. And what about the budget section? Did the director comment on it?"
+     },
+     {
+      "p": "B",
+      "t": "She didn't mention it at all. Make of that what you will."
+     },
+     {
+      "p": "A",
+      "t": "Silence could be approval, surely."
+     },
+     {
+      "p": "B",
+      "t": "It could. Or it could mean she is saving it for the next meeting. I'd prepare for both, if I were you."
+     },
+     {
+      "p": "A",
+      "t": "You're not exactly helping, you know."
+     },
+     {
+      "p": "B",
+      "t": "I'm helping more than you realise. You have a whole week to fix the figures, and nobody has asked you to start again from scratch. That is not nothing, in this company."
+     },
+     {
+      "p": "A",
+      "t": "All right. I'll rewrite the figures tonight, and I'll send Priya the file first thing tomorrow, so she has time to look at it properly."
+     },
+     {
+      "p": "B",
+      "t": "Good plan. And do bring a coffee for her on Wednesday. People remember small gestures like that, particularly when they have been quiet for a day."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does the director's remark about the slides suggest?",
+     "op": [
+      "She was impressed by their design",
+      "She found little else to praise",
+      "She wanted them to be more colourful",
+      "She had not had time to read them"
+     ],
+     "r": 1,
+     "exp": "Ela só elogiou algo superficial (colourful). Para o colega, isso mostra que não havia muito mais a elogiar."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: She asked whether the figures on page six had been ___ by anyone.",
+     "resp": [
+      "checked"
+     ],
+     "exp": "A diretora pergunta se alguém conferiu os números: had been checked.",
+     "ouvir": "She asked whether the figures on page six had been checked by anyone."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "I wouldn't go that far.",
+     "exp": "Contração 'wouldn't' = /wúdnt/. A entonação cai em 'far'.",
+     "ouvir": "I wouldn't go that far."
+    },
+    {
+     "t": "mc",
+     "q": "How does the speaker describe Priya's role on Wednesday?",
+     "op": [
+      "As a way of punishing the presenter",
+      "As a safeguard rather than a check on her",
+      "As a sign that the director doubts Priya",
+      "As an unnecessary extra task"
+     ],
+     "r": 1,
+     "exp": "Think of it as insurance: ele apresenta Priya como proteção, não como vigilância."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "went",
+      "rather",
+      "quiet,",
+      "which",
+      "is",
+      "how",
+      "she",
+      "shows",
+      "enthusiasm."
+     ],
+     "resp": "She went rather quiet, which is how she shows enthusiasm.",
+     "exp": "Estrutura: oração + which is how + sujeito + verbo. 'Rather quiet' = bastante calada."
+    },
+    {
+     "t": "gap",
+     "q": "According to the speaker, nobody has asked her to start again from ___.",
+     "resp": [
+      "scratch"
+     ],
+     "exp": "Start again from scratch = recomeçar do zero. O colega vê isso como um sinal bom."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Has anyone ever given you feedback that sounded polite but meant something negative? What did you understand from it?",
+     "modelo": "Once a teacher said my essay was very neat. I understood that the content was not good enough.",
+     "min": 8,
+     "chave": [
+      "polite",
+      "meant",
+      "understood",
+      "negative",
+      "neat",
+      "essay",
+      "feedback",
+      "said"
+     ],
+     "exp": "Conte o que foi dito e o que você entendeu de verdade: She said X, which meant Y."
+    },
+    {
+     "t": "mc",
+     "q": "What does the speaker suggest about the director's silence on the budget?",
+     "op": [
+      "It definitely means she approves",
+      "It certainly means she is angry",
+      "It is uncertain, so one should be ready for two outcomes",
+      "It shows she forgot about the budget"
+     ],
+     "r": 2,
+     "exp": "Make of that what you will + I'd prepare for both: o silêncio é ambíguo."
+    },
+    {
+     "t": "gap",
+     "q": "Priya's silence on hearing about Wednesday was, in fact, a sign of ___.",
+     "resp": [
+      "enthusiasm"
+     ],
+     "exp": "O falante diz que, no caso de Priya, ficar quieta é como ela mostra entusiasmo (enthusiasm)."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Irony and sarcasm",
+   "objetivo": "Distinguir o sentido literal do sentido irônico em comentários secos e sarcásticos.",
+   "foco": "Irony and sarcasm: 'Oh, brilliant', 'just what I needed', exaggerated praise",
+   "explicacao": [
+    "Ironia é dizer o contrário do que se pensa: 'Oh, wonderful' depois de uma má notícia. O tom e o contexto mostram a intenção.",
+    "Marcadores comuns: just what I needed, how very, thank you so much, that's all we need, as usual.",
+    "A prova pergunta o que o falante realmente sente. Se o elogio é exagerado e a situação é ruim, desconfie do sentido literal.",
+    "Cuidado: o outro falante pode não perceber a ironia e responder ao pé da letra, o que também é uma pista."
+   ],
+   "vocab": [
+    {
+     "en": "sarcastic",
+     "pt": "sarcástico"
+    },
+    {
+     "en": "just what I needed",
+     "pt": "exatamente o que eu precisava (ironia)"
+    },
+    {
+     "en": "to be stranded",
+     "pt": "ficar preso, sem saída"
+    },
+    {
+     "en": "replacement bus service",
+     "pt": "ônibus substituto"
+    },
+    {
+     "en": "to put a brave face on it",
+     "pt": "fazer boa cara"
+    },
+    {
+     "en": "as per usual",
+     "pt": "como de costume"
+    },
+    {
+     "en": "to grumble",
+     "pt": "resmungar"
+    },
+    {
+     "en": "delay",
+     "pt": "atraso"
+    }
+   ],
+   "material": {
+    "titulo": "A cancelled train",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Have you seen the board? Every train to Bristol is cancelled until further notice."
+     },
+     {
+      "p": "B",
+      "t": "Oh, wonderful. That's just what I needed after the week I've had."
+     },
+     {
+      "p": "A",
+      "t": "Do you really mean that?"
+     },
+     {
+      "p": "B",
+      "t": "Of course not. I was being sarcastic. I have an interview at two o'clock and it's already half past eleven."
+     },
+     {
+      "p": "A",
+      "t": "Sorry, I never know with you. Last Tuesday you told me you were thrilled about the new parking charges."
+     },
+     {
+      "p": "B",
+      "t": "Well, I wasn't thrilled. I merely said they were a very bold decision, which in my vocabulary is not a compliment."
+     },
+     {
+      "p": "A",
+      "t": "Right. Anyway, there's a replacement bus service. Apparently it leaves from the car park behind the station."
+     },
+     {
+      "p": "B",
+      "t": "How very convenient. A bus to replace a train that takes an hour, which will now take three. I can hardly contain myself."
+     },
+     {
+      "p": "A",
+      "t": "Don't blame the staff. The man at the desk has been apologising all morning, and people keep shouting at him."
+     },
+     {
+      "p": "B",
+      "t": "You're right, and I won't join them. I'll ring the company and ask whether the interview can be moved to a video call. Employers are surprisingly flexible when you explain things politely."
+     },
+     {
+      "p": "A",
+      "t": "I admire your restraint. If I were you I'd already have written an angry letter."
+     },
+     {
+      "p": "B",
+      "t": "Oh, I'll write one later, believe me. But a letter does nothing for me at the moment, and a calm voice on the phone might."
+     },
+     {
+      "p": "A",
+      "t": "Fair enough. Look, I'm travelling to Bath, which is on the way. If the bus is as slow as the board says, we could share a taxi from the station."
+     },
+     {
+      "p": "B",
+      "t": "That is the first genuinely good idea anyone has had today. Who would have thought it would come from you?"
+     },
+     {
+      "p": "A",
+      "t": "Was that a compliment or sarcasm?"
+     },
+     {
+      "p": "B",
+      "t": "Honestly? A bit of both. Let's go and find a taxi before everyone else has the same brilliant thought."
+     },
+     {
+      "p": "A",
+      "t": "I'll pay half. You can pay for the coffee, if there is any coffee left in this town."
+     },
+     {
+      "p": "B",
+      "t": "Deal. Though if the coffee is as good as the service, I'm not hopeful."
+     },
+     {
+      "p": "B",
+      "t": "Right. Station taxi rank, then. Lead the way, and please try not to get lost on the way there."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does the woman mean when she says 'That's just what I needed'?",
+     "op": [
+      "She is pleased about the cancellation",
+      "She is annoyed about the cancellation",
+      "She wants to take a different train",
+      "She does not believe the information"
+     ],
+     "r": 1,
+     "exp": "É ironia: o contexto (entrevista às duas, trens cancelados) mostra que ela está irritada."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Oh, wonderful. That's just what I ___ after the week I've had.",
+     "resp": [
+      "needed"
+     ],
+     "exp": "Just what I needed é a expressão clássica para ironia.",
+     "ouvir": "Oh, wonderful. That's just what I needed after the week I've had."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "I can hardly contain myself.",
+     "exp": "Frase irônica: diga com entonação plana e exagerada. 'Hardly' = /rárdli/ sem o 'h' forte demais.",
+     "ouvir": "I can hardly contain myself."
+    },
+    {
+     "t": "mc",
+     "q": "What had the woman really meant by calling the parking charges 'a very bold decision'?",
+     "op": [
+      "She admired the council's courage",
+      "She disapproved of them",
+      "She thought they were too small",
+      "She had not read about them"
+     ],
+     "r": 1,
+     "exp": "Para ela, 'bold' não é elogio. O falante diz que no vocabulário dela isso não é um compliment."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "A",
+      "bus",
+      "to",
+      "replace",
+      "a",
+      "train",
+      "that",
+      "takes",
+      "an",
+      "hour",
+      "will",
+      "take",
+      "three."
+     ],
+     "resp": "A bus to replace a train that takes an hour will take three.",
+     "exp": "Ordem: sujeito + to replace... + that takes... + will take three. A ironia está no contraste entre uma hora e três."
+    },
+    {
+     "t": "gap",
+     "q": "The woman decides to ask whether the interview can be moved to a ___ call.",
+     "resp": [
+      "video"
+     ],
+     "exp": "Ela quer mover a entrevista para uma chamada de vídeo (video call)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Do you ever use sarcasm when you are annoyed? Give an example.",
+     "modelo": "Sometimes I do. If my phone breaks, I say, Great, just what I needed today.",
+     "min": 8,
+     "chave": [
+      "sarcasm",
+      "sarcastic",
+      "annoyed",
+      "example",
+      "great",
+      "wonderful",
+      "needed",
+      "sometimes"
+     ],
+     "exp": "Dê um exemplo curto com a frase irônica e explique que você não quis dizer isso."
+    },
+    {
+     "t": "mc",
+     "q": "Why does the woman decide not to shout at the staff?",
+     "op": [
+      "She thinks they will not listen",
+      "She feels that it is unfair to blame them",
+      "She is afraid of losing her interview",
+      "She already wrote a letter"
+     ],
+     "r": 1,
+     "exp": "Don't blame the staff e 'I won't join them': ela acha injusto culpar os funcionários."
+    },
+    {
+     "t": "gap",
+     "q": "When the man suggests sharing a taxi, the woman says it is the first genuinely ___ idea of the day.",
+     "resp": [
+      "good"
+     ],
+     "exp": "A mulher diz 'the first genuinely good idea anyone has had today'; depois admite que o elogio é meio elogio, meio sarcasmo."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Understatement and dry humour",
+   "objetivo": "Entender o understatement britânico, em que se diz menos do que se quer dizer, para criar humor.",
+   "foco": "Understatement: a bit, slightly, not ideal, rather; litotes (not unlike, no small feat)",
+   "explicacao": [
+    "Understatement é minimizar algo grande: 'a slight problem' pode ser um desastre. É muito comum no humor britânico.",
+    "Palavras de minimizar: a bit, slightly, rather, not ideal, a little on the cold side. Litotes: 'not bad' (bom), 'no small feat' (grande feito).",
+    "Para achar o sentido real, compare a palavra suave com os fatos descritos. Se os fatos são dramáticos, a palavra suave é humor.",
+    "Na prova, a pergunta pode ser 'o que o falante quer dizer?'. A resposta é o oposto da suavidade da frase."
+   ],
+   "vocab": [
+    {
+     "en": "understatement",
+     "pt": "eufemismo, minimização"
+    },
+    {
+     "en": "a bit on the cold side",
+     "pt": "um pouco frio (ironia)"
+    },
+    {
+     "en": "no small feat",
+     "pt": "um grande feito"
+    },
+    {
+     "en": "not ideal",
+     "pt": "nada bom"
+    },
+    {
+     "en": "to scrape through",
+     "pt": "passar raspando"
+    },
+    {
+     "en": "summit",
+     "pt": "cume, topo"
+    },
+    {
+     "en": "frostbite",
+     "pt": "congelamento"
+    },
+    {
+     "en": "dry humour",
+     "pt": "humor seco"
+    }
+   ],
+   "material": {
+    "titulo": "A mountaineer on the radio",
+    "falas": [
+     {
+      "p": "A",
+      "t": "You've just come back from the Himalayas, and I gather the expedition was, shall we say, eventful."
+     },
+     {
+      "p": "B",
+      "t": "Oh, it had its moments. Nothing too dramatic, really. We lost a tent in a storm, and I did slip into a crevasse on the second day."
+     },
+     {
+      "p": "A",
+      "t": "You slipped into a crevasse? That sounds rather serious."
+     },
+     {
+      "p": "B",
+      "t": "It was a little inconvenient. I was in there for about four hours, which was a bit on the cold side, I'll admit. But my partner had a rope, and she is very good with knots."
+     },
+     {
+      "p": "A",
+      "t": "And the summit? You reached it, I understand."
+     },
+     {
+      "p": "B",
+      "t": "We did, though I wouldn't say the conditions were ideal. The wind was blowing at around eighty miles an hour, and I couldn't feel my fingers. Reaching the top was no small feat, but staying on it was the real challenge. We managed about five minutes."
+     },
+     {
+      "p": "A",
+      "t": "Five minutes at the top of the world, after weeks of preparation?"
+     },
+     {
+      "p": "B",
+      "t": "It sounds disappointing when you say it like that. In fact it was the best five minutes of my life. I just wish I'd been able to take a decent photograph. My camera froze, and the only picture I have shows a rather blurry glove."
+     },
+     {
+      "p": "A",
+      "t": "And you lost some fingers, I read."
+     },
+     {
+      "p": "B",
+      "t": "Two toes, to be precise. The fingers are fine, thank goodness. The doctor said I was lucky, which I thought was generous of him, considering the circumstances."
+     },
+     {
+      "p": "A",
+      "t": "Will you go back?"
+     },
+     {
+      "p": "B",
+      "t": "Not immediately. My partner says she would like to try a quieter hobby, perhaps something with a roof. I told her I'd think about it, which, as she knows, means I've already booked the flights."
+     },
+     {
+      "p": "A",
+      "t": "You are an astonishingly calm man, if I may say so."
+     },
+     {
+      "p": "B",
+      "t": "Am I? I think of it as being polite to the mountain. It was in charge, after all. We were simply guests who stayed a little longer than invited."
+     },
+     {
+      "p": "A",
+      "t": "And what would you say to young climbers who want to follow you?"
+     },
+     {
+      "p": "B",
+      "t": "Pack extra socks. And do learn some knots."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does the climber mean by saying the crevasse was 'a little inconvenient'?",
+     "op": [
+      "The fall caused only minor trouble",
+      "He was seriously frightened",
+      "He enjoyed the experience",
+      "He could not climb afterwards"
+     ],
+     "r": 1,
+     "exp": "Ele ficou quatro horas num abismo de gelo. 'A little inconvenient' é understatement: na verdade foi muito grave."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Reaching the top was no small ___.",
+     "resp": [
+      "feat"
+     ],
+     "exp": "No small feat = um grande feito (litotes).",
+     "ouvir": "Reaching the top was no small feat, but staying on it was the real challenge."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Pack extra socks, and do learn some knots.",
+     "exp": "Foque no ritmo seco e sério. Em 'knots' o k não é pronunciado: /nots/.",
+     "ouvir": "Pack extra socks, and do learn some knots."
+    },
+    {
+     "t": "mc",
+     "q": "Why does the climber say the five minutes at the summit were 'disappointing when you say it like that'?",
+     "op": [
+      "He had hoped to stay longer",
+      "They were in fact deeply satisfying to him",
+      "He was angry about the photo",
+      "He did not reach the top"
+     ],
+     "r": 1,
+     "exp": "Para quem escuta parece pouco, mas ele diz que foram os melhores minutos da vida dele."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "doctor",
+      "said",
+      "I",
+      "was",
+      "lucky,",
+      "which",
+      "I",
+      "thought",
+      "was",
+      "generous."
+     ],
+     "resp": "The doctor said I was lucky, which I thought was generous.",
+     "exp": "Estrutura: reported speech + which I thought was generous. O humor vem de chamar de 'sorte' perder dedos."
+    },
+    {
+     "t": "gap",
+     "q": "The only picture he has shows a rather blurry ___.",
+     "resp": [
+      "glove"
+     ],
+     "exp": "A câmera congelou e a única foto mostra uma luva borrada: a blurry glove."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Can you think of a situation where a British person might say 'it's not ideal' but really mean 'it's a disaster'? Explain it.",
+     "modelo": "If a plane is five hours late, someone might say it is not ideal. They really mean it is terrible.",
+     "min": 9,
+     "chave": [
+      "ideal",
+      "disaster",
+      "terrible",
+      "late",
+      "mean",
+      "really",
+      "not",
+      "plane"
+     ],
+     "exp": "Mostre o contraste entre a frase suave e o que ela realmente quer dizer."
+    },
+    {
+     "t": "mc",
+     "q": "What does the climber imply when he says he will 'think about' going back?",
+     "op": [
+      "He has not decided",
+      "He definitely will not return",
+      "He has already decided to go",
+      "His partner has forbidden it"
+     ],
+     "r": 2,
+     "exp": "Ele mesmo explica que 'I'll think about it' significa que já comprou as passagens."
+    },
+    {
+     "t": "gap",
+     "q": "He describes his attitude to the mountain as being ___ to it.",
+     "resp": [
+      "polite"
+     ],
+     "exp": "Ele diz: I think of it as being polite to the mountain. É mais um exemplo de humor seco."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Reading the critic's tone",
+   "objetivo": "Perceber a atitude sutil de um crítico (elogio fraco, reserva, ressalva) em uma entrevista sobre arte.",
+   "foco": "Subtle attitude: faint praise, hedging, concession (admittedly, if anything, to a degree)",
+   "explicacao": [
+    "Elogio fraco: 'not unimpressive', 'competent', 'perfectly pleasant'. Quando um crítico só diz isso, ele está dizendo que não é bom.",
+    "Marcadores de concessão: admittedly, granted, to a degree, if anything. O que vem depois de 'but' costuma ser a opinião verdadeira.",
+    "Hedging (cautela) como 'rather', 'somewhat', 'one might argue' reduz a força da crítica, mas a atitude pode continuar negativa.",
+    "Pergunte-se sempre: o falante recomenda, tem reservas ou rejeita? A resposta quase nunca é dita com essas palavras."
+   ],
+   "vocab": [
+    {
+     "en": "faint praise",
+     "pt": "elogio fraco"
+    },
+    {
+     "en": "admittedly",
+     "pt": "é verdade que"
+    },
+    {
+     "en": "to a degree",
+     "pt": "até certo ponto"
+    },
+    {
+     "en": "derivative",
+     "pt": "pouco original"
+    },
+    {
+     "en": "competent",
+     "pt": "competente"
+    },
+    {
+     "en": "canvas",
+     "pt": "tela"
+    },
+    {
+     "en": "to be struck by",
+     "pt": "impressionar-se com"
+    },
+    {
+     "en": "underwhelming",
+     "pt": "decepcionante"
+    }
+   ],
+   "material": {
+    "titulo": "Reviewing an exhibition",
+    "falas": [
+     {
+      "p": "A",
+      "t": "You visited the new landscape exhibition at the Harbour Gallery last week. What was your overall impression?"
+     },
+     {
+      "p": "B",
+      "t": "Well, it's not an unimpressive show. The paintings are, for the most part, technically competent, and the gallery has lit them well."
+     },
+     {
+      "p": "A",
+      "t": "That sounds rather lukewarm."
+     },
+     {
+      "p": "B",
+      "t": "Does it? Admittedly, I'm trying to be fair. The artist clearly knows how to handle paint, and there's one canvas of a storm over the estuary which I'd gladly have on my own wall. But if I'm honest, I left feeling that I'd seen it all before."
+     },
+     {
+      "p": "A",
+      "t": "Derivative, in other words?"
+     },
+     {
+      "p": "B",
+      "t": "I'd put it more gently than that. The influence of earlier painters is very visible, and one might argue that the artist hasn't yet found a voice of her own. That's not unusual at her age, and I'd say it's forgivable."
+     },
+     {
+      "p": "A",
+      "t": "The catalogue describes her as a major new talent."
+     },
+     {
+      "p": "B",
+      "t": "Catalogues do tend to say that. To a degree, I see what they mean. There is promise here, and if anything, the later paintings are slightly bolder. But major is a strong word for someone with a first solo show."
+     },
+     {
+      "p": "A",
+      "t": "So would you recommend the exhibition to our listeners?"
+     },
+     {
+      "p": "B",
+      "t": "If you live nearby and have an hour to spare, you could certainly do worse. I wouldn't cross the country to see it. And I wouldn't pay the full ticket price, which is fifteen pounds. Go on a Thursday, when it's free after five o'clock."
+     },
+     {
+      "p": "A",
+      "t": "Fifteen pounds is rather a lot for something that is perfectly pleasant."
+     },
+     {
+      "p": "B",
+      "t": "Quite. Perfectly pleasant is a phrase I use when I am struggling to find anything more interesting to say. I was struck by the storm painting, as I said, but I'd have preferred a smaller exhibition with only the best five or six works."
+     },
+     {
+      "p": "A",
+      "t": "Is she likely to improve, do you think?"
+     },
+     {
+      "p": "B",
+      "t": "I hope so. Artists often become more interesting when they stop trying to please everybody. Let's wait and see what she does next. I'd certainly go to her second show, though perhaps with lower expectations than the catalogue encourages."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the critic's overall opinion of the exhibition?",
+     "op": [
+      "Enthusiastic",
+      "Mildly positive but with reservations",
+      "Completely negative",
+      "Neutral because he missed most of it"
+     ],
+     "r": 1,
+     "exp": "Ele elogia a técnica e uma tela, mas diz que já viu aquilo antes e não faria uma viagem para ver. Atitude: positiva, com reservas."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: It's not an ___ show.",
+     "resp": [
+      "unimpressive"
+     ],
+     "exp": "Not unimpressive = litotes, um elogio fraco.",
+     "ouvir": "Well, it's not an unimpressive show."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "I wouldn't cross the country to see it.",
+     "exp": "Contração 'wouldn't' fraca, com ênfase em 'cross' e 'country'. Tom de voz seco.",
+     "ouvir": "I wouldn't cross the country to see it."
+    },
+    {
+     "t": "mc",
+     "q": "What does the critic imply about the phrase 'a major new talent' in the catalogue?",
+     "op": [
+      "It is fully justified",
+      "It is an exaggeration for her stage of career",
+      "It is an insult to the artist",
+      "It was written by a rival critic"
+     ],
+     "r": 1,
+     "exp": "Ele diz que 'major is a strong word' para alguém que faz a primeira exposição solo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "left",
+      "feeling",
+      "that",
+      "I'd",
+      "seen",
+      "it",
+      "all",
+      "before."
+     ],
+     "resp": "I left feeling that I'd seen it all before.",
+     "exp": "A estrutura 'left feeling that + oração' mostra a impressão final dele: nada de novo."
+    },
+    {
+     "t": "gap",
+     "q": "He suggests visiting on a Thursday, when it is free after ___ o'clock.",
+     "resp": [
+      "five",
+      "5"
+     ],
+     "exp": "Segundo ele, quinta-feira depois das cinco a entrada é grátis."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Think of a film, book or exhibition you found only 'perfectly pleasant'. Why was it not more than that?",
+     "modelo": "I saw a film last month that was perfectly pleasant, but it was predictable and I forgot it quickly.",
+     "min": 9,
+     "chave": [
+      "pleasant",
+      "predictable",
+      "forgot",
+      "film",
+      "book",
+      "boring",
+      "original",
+      "because"
+     ],
+     "exp": "Descreva a obra e explique em uma frase por que ela não foi marcante."
+    },
+    {
+     "t": "mc",
+     "q": "What would the critic have preferred?",
+     "op": [
+      "A larger exhibition with more paintings",
+      "A free exhibition",
+      "A smaller selection of the best works",
+      "A different artist"
+     ],
+     "r": 2,
+     "exp": "Ele diz que preferiria uma exposição menor, com só cinco ou seis obras melhores."
+    },
+    {
+     "t": "gap",
+     "q": "He says he would go to the artist's second show, but with lower ___ than the catalogue encourages.",
+     "resp": [
+      "expectations"
+     ],
+     "exp": "Lower expectations = expectativas mais baixas: uma crítica sutil."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Idioms and phrasal verbs",
+   "objetivo": "Reconhecer idioms e phrasal verbs de registros diferentes (formal, neutro, gíria) no áudio.",
+   "foco": "Idioms and phrasal verbs: bite the bullet, cut corners, fall through, put off, wind up",
+   "explicacao": [
+    "Idiom não se traduz palavra por palavra: 'to bite the bullet' é enfrentar algo desagradável, e não tem a ver com balas.",
+    "Registro importa: 'to wind up' (acabar, informal), 'to terminate' (formal). Na prova, uma opção pode ser a versão formal do que o falante disse com gíria.",
+    "Phrasal verbs têm vários sentidos: 'to put off' = adiar ou desanimar; 'to fall through' = fracassar (um plano).",
+    "Ouça o contexto inteiro. A mesma expressão pode ser ironia, desabafo ou conselho."
+   ],
+   "vocab": [
+    {
+     "en": "to bite the bullet",
+     "pt": "encarar o que é desagradável"
+    },
+    {
+     "en": "to cut corners",
+     "pt": "fazer algo pela metade, economizando"
+    },
+    {
+     "en": "to fall through",
+     "pt": "dar em nada (plano)"
+    },
+    {
+     "en": "to put something off",
+     "pt": "adiar"
+    },
+    {
+     "en": "to wind up",
+     "pt": "acabar, ir parar"
+    },
+    {
+     "en": "to be up against",
+     "pt": "enfrentar"
+    },
+    {
+     "en": "on the back burner",
+     "pt": "em segundo plano"
+    },
+    {
+     "en": "to touch base",
+     "pt": "entrar em contato"
+    }
+   ],
+   "material": {
+    "titulo": "A radio phone-in about starting a business",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Our next caller is Hannah, who has just left a secure job to start her own bakery. Hannah, how's it going?"
+     },
+     {
+      "p": "B",
+      "t": "Early days, but I've been up against some surprises. Mainly money. A friend was going to invest, but the deal fell through at the last minute."
+     },
+     {
+      "p": "A",
+      "t": "That must have been a blow."
+     },
+     {
+      "p": "B",
+      "t": "It was. For a week I seriously thought of giving up. In the end I bit the bullet, borrowed from the bank and ordered the ovens anyway."
+     },
+     {
+      "p": "A",
+      "t": "Brave. Some experts say you shouldn't cut corners with equipment."
+     },
+     {
+      "p": "B",
+      "t": "I agree, and I haven't. I did put off buying a delivery van, though. That's on the back burner until the summer."
+     },
+     {
+      "p": "A",
+      "t": "We have Marcus on the line now, who has some advice. Marcus, you have run three companies, I believe."
+     },
+     {
+      "p": "C",
+      "t": "That's right. Hannah, congratulations first of all. A word of warning, if I may. When I started, I wound up working eighty hours a week, and the business suffered because I never took time off."
+     },
+     {
+      "p": "B",
+      "t": "Yes, I'm already starting to feel that."
+     },
+     {
+      "p": "C",
+      "t": "Delegate early. Touch base with your suppliers every week rather than waiting for problems. And never, ever sign a contract you haven't read twice. I once signed a lease in a hurry and lost a year's profit."
+     },
+     {
+      "p": "A",
+      "t": "Marcus, that's the sort of mistake many people make. Hannah, do you have a plan for the first year?"
+     },
+     {
+      "p": "B",
+      "t": "I do. I want to break even by October, and I'm hoping to hire a part-time assistant. I don't want to take on staff too early, though. It's a big commitment."
+     },
+     {
+      "p": "C",
+      "t": "If I may, Hannah, hire slowly and fire fast is a cruel slogan, but what it really means is that a poor fit hurts everybody. Be patient when you choose, and be honest when it isn't working."
+     },
+     {
+      "p": "A",
+      "t": "Wise words. Hannah, last question. What's the most useful thing you've learnt so far?"
+     },
+     {
+      "p": "B",
+      "t": "That nobody is ever completely ready. If I had waited for the perfect moment, I would still be working for my old company, dreaming about bread."
+     },
+     {
+      "p": "A",
+      "t": "Hannah, we wish you every success. Next week, we ask whether the high street can survive."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why did Hannah almost give up for a week?",
+     "op": [
+      "Her investor withdrew from the deal",
+      "Her bank refused a loan",
+      "The ovens were too expensive",
+      "She was tired of working long hours"
+     ],
+     "r": 0,
+     "exp": "The deal fell through = o acordo com o amigo deu em nada."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: In the end I bit the ___, borrowed from the bank and ordered the ovens anyway.",
+     "resp": [
+      "bullet"
+     ],
+     "exp": "To bite the bullet = encarar o desagradável.",
+     "ouvir": "In the end I bit the bullet, borrowed from the bank and ordered the ovens anyway."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "That's on the back burner until the summer.",
+     "exp": "Em 'burner' o r é fraco no inglês britânico: /bɜ́ːnə/. Ritmo regular.",
+     "ouvir": "That's on the back burner until the summer."
+    },
+    {
+     "t": "mc",
+     "q": "What does 'on the back burner' tell us about the delivery van?",
+     "op": [
+      "Hannah has already bought it",
+      "Hannah considers it less urgent for now",
+      "Hannah cannot afford it ever",
+      "Hannah has cancelled it"
+     ],
+     "r": 1,
+     "exp": "Back burner = fica em segundo plano, para depois."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "A",
+      "poor",
+      "fit",
+      "hurts",
+      "everybody,",
+      "so",
+      "be",
+      "patient",
+      "when",
+      "you",
+      "choose."
+     ],
+     "resp": "A poor fit hurts everybody, so be patient when you choose.",
+     "exp": "Estrutura: sujeito + verbo, + so + imperativo. 'A poor fit' é uma pessoa que não combina com a vaga."
+    },
+    {
+     "t": "gap",
+     "q": "Marcus says he once lost a year's profit by signing a ___ in a hurry.",
+     "resp": [
+      "lease"
+     ],
+     "exp": "Ele assinou um aluguel/contrato de locação (lease) com pressa."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Have you ever had a plan that fell through? What did you do next?",
+     "modelo": "Yes, once a trip fell through at the last minute, so I stayed home and decided to try again later.",
+     "min": 9,
+     "chave": [
+      "fell",
+      "through",
+      "plan",
+      "trip",
+      "decided",
+      "instead",
+      "tried",
+      "again"
+     ],
+     "exp": "Use 'fell through' para o plano que falhou e diga o que fez depois."
+    },
+    {
+     "t": "mc",
+     "q": "What does Marcus mean by the advice to 'hire slowly and fire fast'?",
+     "op": [
+      "Choosing carefully matters, and it is also unfair to keep a wrong person",
+      "Never hire anyone at all",
+      "Always dismiss people quickly",
+      "Be cruel to employees"
+     ],
+     "r": 0,
+     "exp": "Ele diz que é um slogan cruel, mas o sentido real é que uma pessoa que não combina prejudica todo mundo."
+    },
+    {
+     "t": "gap",
+     "q": "Hannah says that if she had waited for the perfect moment, she would still be working for her old ___.",
+     "resp": [
+      "company",
+      "firm",
+      "employer"
+     ],
+     "exp": "Ela diz que ainda estaria na empresa antiga (old company)."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Accents and registers",
+   "objetivo": "Acompanhar a mesma ideia dita em registros diferentes: formal e burocrático contra coloquial e regional.",
+   "foco": "Register shifts: formal vs colloquial; regional words (reckon, nowt, lass, mate)",
+   "explicacao": [
+    "No áudio, A é uma funcionária pública que fala em registro formal (with regard to, in due course). B é um comerciante do norte da Inglaterra, que fala de modo informal e regional (reckon, nowt = nothing, mate).",
+    "Registro formal usa palavras longas e voz passiva: 'The market will be relocated.' O coloquial diz o mesmo mais curto: 'They're shifting us.'",
+    "Palavras regionais: nowt (nada), summat (algo), lass (garota), mither (incomodar). O sotaque muda o som, mas o sentido vem do contexto.",
+    "Dica de prova: não se deixe enganar pelo estilo. Compare o que cada um quer, não como diz."
+   ],
+   "vocab": [
+    {
+     "en": "with regard to",
+     "pt": "com relação a"
+    },
+    {
+     "en": "in due course",
+     "pt": "no devido tempo"
+    },
+    {
+     "en": "to relocate",
+     "pt": "transferir de lugar"
+    },
+    {
+     "en": "to reckon",
+     "pt": "achar, supor (inf.)"
+    },
+    {
+     "en": "nowt",
+     "pt": "nada (norte da Inglaterra)"
+    },
+    {
+     "en": "stallholder",
+     "pt": "dono de banca"
+    },
+    {
+     "en": "footfall",
+     "pt": "movimento de clientes"
+    },
+    {
+     "en": "to be fobbed off",
+     "pt": "ser enrolado"
+    }
+   ],
+   "material": {
+    "titulo": "A market is moved",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good morning, Mr Hardy. Thank you for coming. With regard to the matter of the market, the council has resolved that the stalls will be relocated to the car park on Mill Lane with effect from the first of March."
+     },
+     {
+      "p": "B",
+      "t": "Morning. So, in plain English, you're shifting us out of the square."
+     },
+     {
+      "p": "A",
+      "t": "I would not put it quite that way. The square will be pedestrianised, and the traders will, in due course, be offered an alternative site."
+     },
+     {
+      "p": "B",
+      "t": "In due course. That means no date, then. I've had a stall in that square for thirty-one years, love, and nowt has ever been done in due course."
+     },
+     {
+      "p": "A",
+      "t": "I appreciate your frustration, Mr Hardy. However, I can assure you that the consultation has been thorough."
+     },
+     {
+      "p": "B",
+      "t": "Thorough? I never got a letter. Half the lads I know reckon they've been fobbed off. We heard about it from a woman at the bakery, mate."
+     },
+     {
+      "p": "A",
+      "t": "Letters were sent to all registered stallholders. If yours has gone astray, I will arrange for a copy to be issued."
+     },
+     {
+      "p": "B",
+      "t": "Ta. And what about customers? Mill Lane's a dead end. Nobody walks down there unless they're lost. We'll lose half our footfall by Easter."
+     },
+     {
+      "p": "A",
+      "t": "The council has commissioned a study, which suggests that visitor numbers may be affected only marginally."
+     },
+     {
+      "p": "B",
+      "t": "A study. Well, I've got a study of my own. It's called standing in the cold for thirty years, and it tells me summat different."
+     },
+     {
+      "p": "A",
+      "t": "I understand. Might I suggest that you submit your concerns in writing, so that they can be included in the final report?"
+     },
+     {
+      "p": "B",
+      "t": "Writing's all very well for you lot in your offices. I'm a butcher, not a poet. Can't I just say it to someone's face?"
+     },
+     {
+      "p": "A",
+      "t": "There is a public meeting on Thursday the sixth, at seven o'clock, in the town hall. I would encourage you to attend."
+     },
+     {
+      "p": "B",
+      "t": "Right then. I'll come, and I'll bring half the market with me. And you can tell your bosses that if they want the square pretty, they'll have to find another way of paying for it."
+     },
+     {
+      "p": "A",
+      "t": "I will convey that, Mr Hardy, in somewhat different words."
+     },
+     {
+      "p": "B",
+      "t": "I'd expect nothing less, love. Mind how you go."
+     },
+     {
+      "p": "A",
+      "t": "Thank you. Good day."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does Mr Hardy mean by 'So, in plain English, you're shifting us out of the square'?",
+     "op": [
+      "He wants the council to speak in a simpler way",
+      "He thinks the plan is exactly what he feared",
+      "He does not understand English well",
+      "He is happy about the move"
+     ],
+     "r": 0,
+     "exp": "Ele reformula o texto burocrático em linguagem simples: 'shifting us out'. Isso mostra irritação com o estilo formal."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I've had a stall in that square for thirty-one years, love, and ___ has ever been done in due course.",
+     "resp": [
+      "nowt",
+      "nothing"
+     ],
+     "exp": "Nowt é 'nothing' no norte da Inglaterra.",
+     "ouvir": "I've had a stall in that square for thirty-one years, love, and nowt has ever been done in due course."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Letters were sent to all registered stallholders.",
+     "exp": "Registro formal e voz passiva. Pronuncie 'registered' com três sílabas: /réjistəd/.",
+     "ouvir": "Letters were sent to all registered stallholders."
+    },
+    {
+     "t": "mc",
+     "q": "Why does Mr Hardy doubt the council's study?",
+     "op": [
+      "It was carried out by amateurs",
+      "He believes his own experience contradicts it",
+      "It was written in difficult language",
+      "It does not mention Mill Lane"
+     ],
+     "r": 1,
+     "exp": "Ele diz que seu próprio 'study' (trinta anos no frio) lhe diz outra coisa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Mill",
+      "Lane",
+      "is",
+      "a",
+      "dead",
+      "end,",
+      "and",
+      "nobody",
+      "walks",
+      "down",
+      "there",
+      "unless",
+      "lost."
+     ],
+     "resp": "Mill Lane is a dead end, and nobody walks down there unless lost.",
+     "exp": "Dead end = rua sem saída. 'Unless lost' = a menos que estejam perdidos. Ordem natural do inglês.",
+     "alt": [
+      "Mill Lane is a dead end, and nobody walks down there unless lost."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Mr Hardy says he is a butcher, not a ___.",
+     "resp": [
+      "poet"
+     ],
+     "exp": "Ele diz que é açougueiro, não poeta. Ou seja, não é bom com palavras escritas."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "In your language, is there a big difference between formal and informal ways of saying the same thing? Give an example.",
+     "modelo": "Yes, there is. In formal situations we use longer words, but with friends we say things more simply.",
+     "min": 9,
+     "chave": [
+      "formal",
+      "informal",
+      "friends",
+      "simple",
+      "longer",
+      "example",
+      "different",
+      "polite"
+     ],
+     "exp": "Dê um exemplo curto de uma frase formal e outra informal."
+    },
+    {
+     "t": "mc",
+     "q": "What does the council officer say she will do about Mr Hardy's complaint that he never received a letter?",
+     "op": [
+      "Send him another copy",
+      "Ignore it",
+      "Change the date of the move",
+      "Phone his customers"
+     ],
+     "r": 0,
+     "exp": "She will arrange for a copy to be issued = providenciar uma segunda via."
+    },
+    {
+     "t": "gap",
+     "q": "When the officer says she will pass on his message 'in somewhat different ___', she is gently suggesting she will make it more polite.",
+     "resp": [
+      "words"
+     ],
+     "exp": "Ela quer dizer que vai suavizar o recado: in somewhat different words."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Following a lecture",
+   "objetivo": "Acompanhar uma palestra acadêmica curta por meio dos sinalizadores do discurso e anotar a informação-chave.",
+   "foco": "Signposting in lectures: to begin with, what's more, this brings me to, by way of illustration",
+   "explicacao": [
+    "Palestrantes usam 'sinais de trânsito': to begin with (começo), this brings me to (próximo ponto), by way of illustration (exemplo), to sum up (resumo).",
+    "Uma palestra apresenta uma ideia comum e depois a corrige: 'It is tempting to assume... In fact...'. A resposta certa está depois do 'in fact'.",
+    "Nas lacunas (sentence completion) a palavra do áudio costuma aparecer exatamente igual. Preste atenção a números e substantivos.",
+    "Perguntas de alunos no fim ajudam a ver a opinião real do professor."
+   ],
+   "vocab": [
+    {
+     "en": "signposting",
+     "pt": "sinalização do discurso"
+    },
+    {
+     "en": "tempting",
+     "pt": "tentador"
+    },
+    {
+     "en": "by way of illustration",
+     "pt": "a título de exemplo"
+    },
+    {
+     "en": "to misanalyse",
+     "pt": "analisar de forma errada"
+    },
+    {
+     "en": "nickname",
+     "pt": "apelido"
+    },
+    {
+     "en": "to mishear",
+     "pt": "ouvir errado"
+    },
+    {
+     "en": "boundary",
+     "pt": "fronteira"
+    },
+    {
+     "en": "gradually",
+     "pt": "aos poucos"
+    }
+   ],
+   "material": {
+    "titulo": "Lecture: How words change by mistake",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good afternoon. Today's lecture is on a small but fascinating process in linguistics, which is sometimes called metanalysis. To begin with, I'd like you to consider the word nickname."
+     },
+     {
+      "p": "A",
+      "t": "It is tempting to assume that this word has always been a single unit. In fact, it began as two. In Middle English people said an eke name, where eke meant also or additional. An eke name was therefore an extra name."
+     },
+     {
+      "p": "A",
+      "t": "Now, here is the interesting part. Speakers heard an eke name, and the boundary between the words moved. The n slipped from the article to the noun, so that people started saying a neke name, and eventually a nickname."
+     },
+     {
+      "p": "A",
+      "t": "This brings me to a general point. When we hear a stream of speech, we do not hear gaps between words. We decide where those gaps go. Most of the time we decide correctly, but occasionally we misanalyse, and if enough speakers make the same error, the language changes."
+     },
+     {
+      "p": "A",
+      "t": "By way of illustration, consider apron. It was originally a napron, from the French nappe, a cloth. But a napron was heard as an apron, and the n disappeared. The same happened in reverse with an adder, a snake, which began life as a nadder."
+     },
+     {
+      "p": "A",
+      "t": "What's more, children do this constantly. A child once told me that a tiger was called a stripe. Of course, that is an error of meaning, not of boundary, but the principle is the same. Learners make a reasonable guess that happens to be wrong."
+     },
+     {
+      "p": "A",
+      "t": "I should add a caution here. Some of you may think metanalysis is a rare accident. It is not. Linguists have identified dozens of English words formed this way, and I suspect there are many more which are so well hidden that we have not noticed them."
+     },
+     {
+      "p": "A",
+      "t": "To sum up: first, speech has no spaces; second, listeners create the boundaries; and third, small misunderstandings, repeated often enough, can become the new standard. Language change does not always come from fashion or from the young. Sometimes it comes from nothing more than mishearing."
+     },
+     {
+      "p": "B",
+      "t": "Professor, if I may ask a question. Does this still happen today?"
+     },
+     {
+      "p": "A",
+      "t": "A good question. Yes, though mostly in informal language. Many English speakers now say a whole nother thing, which splits the word another down the middle. Whether that will ever be accepted into the standard language, I wouldn't like to predict. But I would not bet against it."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the lecturer's main point about the word 'nickname'?",
+     "op": [
+      "It was borrowed from French",
+      "It began as two words and the boundary moved",
+      "It was invented by children",
+      "It is the oldest word in English"
+     ],
+     "r": 1,
+     "exp": "An eke name virou a neke name e depois nickname: o limite entre as palavras mudou."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: To ___ with, I'd like you to consider the word nickname.",
+     "resp": [
+      "begin"
+     ],
+     "exp": "To begin with é um sinalizador para o primeiro ponto.",
+     "ouvir": "To begin with, I'd like you to consider the word nickname."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Speech has no spaces, so listeners create the boundaries.",
+     "exp": "Ritmo: ênfase em 'speech', 'spaces', 'listeners', 'boundaries'. O 'no' e 'the' ficam fracos.",
+     "ouvir": "Speech has no spaces, so listeners create the boundaries."
+    },
+    {
+     "t": "mc",
+     "q": "Why does the lecturer mention the tiger and the child?",
+     "op": [
+      "To show that adults never make mistakes",
+      "To illustrate that learners make reasonable but wrong guesses",
+      "To prove that tigers have stripes",
+      "To explain how apron came about"
+     ],
+     "r": 1,
+     "exp": "Ele mesmo diz que o erro é de sentido, não de limite, mas o princípio é o mesmo: palpites razoáveis que estão errados."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Listeners",
+      "decide",
+      "where",
+      "the",
+      "gaps",
+      "between",
+      "words",
+      "go."
+     ],
+     "resp": "Listeners decide where the gaps between words go.",
+     "exp": "Sujeito + verbo + where + oração. 'Gaps' = espaços entre palavras."
+    },
+    {
+     "t": "gap",
+     "q": "An 'adder', a snake, began life as a ___.",
+     "resp": [
+      "nadder"
+     ],
+     "exp": "Adder veio de nadder: o n foi parar no artigo (a nadder → an adder)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Can you think of a time when you misheard a word or a song lyric? What did you hear?",
+     "modelo": "Yes, I once misheard a song lyric and sang the wrong words for years until a friend corrected me.",
+     "min": 9,
+     "chave": [
+      "misheard",
+      "song",
+      "lyric",
+      "word",
+      "wrong",
+      "thought",
+      "sang",
+      "years"
+     ],
+     "exp": "Descreva o que você ouviu errado e quando descobriu."
+    },
+    {
+     "t": "mc",
+     "q": "What does the lecturer suggest about the future of 'a whole nother thing'?",
+     "op": [
+      "It will certainly become standard",
+      "It will certainly disappear",
+      "Its acceptance is uncertain but possible",
+      "It is only used in writing"
+     ],
+     "r": 2,
+     "exp": "I wouldn't like to predict, but I would not bet against it: incerteza, com uma leve inclinação a favor."
+    },
+    {
+     "t": "gap",
+     "q": "The lecturer says that language change does not always come from fashion or the young, but sometimes from simple ___.",
+     "resp": [
+      "mishearing"
+     ],
+     "exp": "Última frase do resumo: nothing more than mishearing."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Science on the radio",
+   "objetivo": "Acompanhar uma entrevista de rádio sobre ciência, separando o que foi provado do que é apenas hipótese.",
+   "foco": "Hedging in science: seems to, may, suggests, is thought to, there is some evidence that",
+   "explicacao": [
+    "Cientistas falam com cautela: 'suggests', 'appears to', 'may', 'is thought to'. Se o falante diz 'suggests', ele não está afirmando como fato.",
+    "Preste atenção a 'correlation is not causation': duas coisas acontecem juntas, mas uma não causa necessariamente a outra.",
+    "O apresentador costuma exagerar ('So sleep is the secret to success?') e o cientista corrige. A resposta correta é a do cientista.",
+    "Números e porcentagens aparecem com palavras vagas: roughly, a little over, just under."
+   ],
+   "vocab": [
+    {
+     "en": "to suggest",
+     "pt": "sugerir"
+    },
+    {
+     "en": "correlation",
+     "pt": "correlação"
+    },
+    {
+     "en": "causation",
+     "pt": "causalidade"
+    },
+    {
+     "en": "sample",
+     "pt": "amostra"
+    },
+    {
+     "en": "sleep deprivation",
+     "pt": "privação de sono"
+    },
+    {
+     "en": "memory consolidation",
+     "pt": "fixação da memória"
+    },
+    {
+     "en": "tentative",
+     "pt": "provisório"
+    },
+    {
+     "en": "to overstate",
+     "pt": "exagerar"
+    }
+   ],
+   "material": {
+    "titulo": "Sleep and memory",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Today we are joined by Dr Imogen Frost, a neuroscientist who has just published a study on sleep and learning. Dr Frost, what did you find?"
+     },
+     {
+      "p": "B",
+      "t": "We asked two hundred students to learn a list of unfamiliar words. Half were allowed to sleep normally that night, and half stayed awake. A week later, those who slept remembered roughly a fifth more."
+     },
+     {
+      "p": "A",
+      "t": "So sleep is the secret to success."
+     },
+     {
+      "p": "B",
+      "t": "I'd be careful with that. What the results suggest is that sleep may help the brain to fix new information. We can't say it is the only factor, and a fifth is not a dramatic difference."
+     },
+     {
+      "p": "A",
+      "t": "But surely the effect was clear?"
+     },
+     {
+      "p": "B",
+      "t": "It was statistically significant, yes, but the sample was small and all the volunteers were young adults. Whether older people would show the same pattern is something we don't know yet."
+     },
+     {
+      "p": "A",
+      "t": "Some newspapers have been saying that you can learn while you sleep."
+     },
+     {
+      "p": "B",
+      "t": "That's a common misreading. There is some evidence that sounds played during sleep can strengthen memories which already exist. It doesn't mean you can put on a language course at night and wake up fluent. I wish it did."
+     },
+     {
+      "p": "A",
+      "t": "What is actually going on in the brain?"
+     },
+     {
+      "p": "B",
+      "t": "The leading theory, and I stress it is a theory, is that during deep sleep the brain replays the day's experiences. This seems to move memories from a temporary store to a more permanent one. Think of it as saving a document."
+     },
+     {
+      "p": "A",
+      "t": "And what about people who sleep very little but still do well?"
+     },
+     {
+      "p": "B",
+      "t": "Interesting. There are such people, but they are rare, and correlation is not causation. Someone may sleep little and succeed in spite of it. It would be a mistake to copy them."
+     },
+     {
+      "p": "A",
+      "t": "So what is your advice to the listener who is revising for exams?"
+     },
+     {
+      "p": "B",
+      "t": "Don't sacrifice a night's sleep to cram, especially the night before. Spread your studying across several days, and try to review the most difficult material before bed. That seems to be a sensible approach, though I would not promise it will work for everybody."
+     },
+     {
+      "p": "A",
+      "t": "Dr Frost, thank you. It's a relief to hear a scientist who says maybe."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does Dr Frost say about the idea that 'sleep is the secret to success'?",
+     "op": [
+      "It is exactly what the study proves",
+      "It overstates what the results show",
+      "It is false in every case",
+      "It was suggested by her volunteers"
+     ],
+     "r": 1,
+     "exp": "I'd be careful with that: ela corrige o exagero do apresentador."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Those who slept ___ roughly a fifth more.",
+     "resp": [
+      "remembered"
+     ],
+     "exp": "A diferença foi de cerca de um quinto (a fifth) a mais de lembrança.",
+     "ouvir": "Those who slept remembered roughly a fifth more."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "It would be a mistake to copy them.",
+     "exp": "'Would be a' liga-se: /wúd bi ə/. Entonação cai no final, tom firme.",
+     "ouvir": "It would be a mistake to copy them."
+    },
+    {
+     "t": "mc",
+     "q": "According to Dr Frost, what is the limitation of the study?",
+     "op": [
+      "The sample was small and consisted of young adults",
+      "The volunteers did not sleep",
+      "The words were too easy",
+      "The study lasted only one night"
+     ],
+     "r": 0,
+     "exp": "Ela diz: the sample was small and all the volunteers were young adults."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It",
+      "seems",
+      "to",
+      "move",
+      "memories",
+      "from",
+      "a",
+      "temporary",
+      "store",
+      "to",
+      "a",
+      "permanent",
+      "one."
+     ],
+     "resp": "It seems to move memories from a temporary store to a permanent one.",
+     "exp": "Seems to = parece. A estrutura 'move X from A to B' descreve a passagem da memória."
+    },
+    {
+     "t": "gap",
+     "q": "Dr Frost advises reviewing the most difficult material before ___.",
+     "resp": [
+      "bed",
+      "sleep"
+     ],
+     "exp": "Conselho: revisar o material mais difícil antes de dormir (before bed)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Do you think you study better after a good night's sleep? Explain.",
+     "modelo": "Yes, I think so. When I sleep well, I remember more and I concentrate better the next day.",
+     "min": 9,
+     "chave": [
+      "sleep",
+      "remember",
+      "concentrate",
+      "tired",
+      "better",
+      "study",
+      "night",
+      "think"
+     ],
+     "exp": "Responda com sua experiência e use um motivo (because / when)."
+    },
+    {
+     "t": "mc",
+     "q": "What does Dr Frost say about people who sleep little and succeed?",
+     "op": [
+      "They prove that sleep is unnecessary",
+      "They are a good model to follow",
+      "They may succeed in spite of lack of sleep, so copying them would be unwise",
+      "They do not exist"
+     ],
+     "r": 2,
+     "exp": "Correlation is not causation: elas podem ter sucesso apesar de dormir pouco."
+    },
+    {
+     "t": "gap",
+     "q": "According to the leading theory, memories move from a temporary store to a more ___ one.",
+     "resp": [
+      "permanent"
+     ],
+     "exp": "Memórias passam de um armazenamento temporário para um mais permanente."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "A debate on the four-day week",
+   "objetivo": "Seguir um debate sobre economia, identificando a posição de cada falante, concessões e contra-argumentos.",
+   "foco": "Argument and concession: granted, that said, even so, the flip side, on balance",
+   "explicacao": [
+    "Em debates, cada falante faz uma concessão antes de contra-atacar: 'Granted, productivity rose, but...'. O que vem depois do 'but' é a posição real.",
+    "Marcadores úteis: that said, even so, the flip side is, on balance, up to a point.",
+    "O moderador resume as posições, às vezes com erros. Compare o resumo com o que cada pessoa disse de fato.",
+    "Números de pesquisas podem ser usados por ambos os lados. Ouça como cada um interpreta o mesmo dado."
+   ],
+   "vocab": [
+    {
+     "en": "productivity",
+     "pt": "produtividade"
+    },
+    {
+     "en": "granted",
+     "pt": "admito que"
+    },
+    {
+     "en": "that said",
+     "pt": "dito isso"
+    },
+    {
+     "en": "the flip side",
+     "pt": "o outro lado"
+    },
+    {
+     "en": "on balance",
+     "pt": "no conjunto"
+    },
+    {
+     "en": "workforce",
+     "pt": "força de trabalho"
+    },
+    {
+     "en": "to burn out",
+     "pt": "esgotar-se"
+    },
+    {
+     "en": "pilot scheme",
+     "pt": "projeto-piloto"
+    }
+   ],
+   "material": {
+    "titulo": "Radio debate: a shorter working week",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Tonight's motion: a four-day working week should become the national norm. Priya Nair, an economist, is for the motion. Victor Okoro, who runs a manufacturing firm, is against. Priya, you first."
+     },
+     {
+      "p": "B",
+      "t": "Thank you. A recent pilot scheme involved sixty companies and several thousand employees. Revenue stayed broadly the same, absence through illness fell, and most of the firms chose to keep the shorter week afterwards. In my view, those results are hard to ignore."
+     },
+     {
+      "p": "C",
+      "t": "Granted, the results were encouraging. But the companies that volunteered were, almost by definition, those who expected it to work. That is hardly a representative sample. Take my own factory. Machines run on shifts. If they stop for an extra day, I do not produce an extra day's worth of goods."
+     },
+     {
+      "p": "B",
+      "t": "That said, Victor, nobody is suggesting that every sector adopt exactly the same model. A factory can run four longer shifts, or share the staff across the week. The point is that fewer hours do not automatically mean less output."
+     },
+     {
+      "p": "C",
+      "t": "Even so, there is a flip side. Longer days are not a gift to workers. Ten hours on a production line is exhausting, and I would worry about safety. I would rather see flexible hours than a fixed pattern."
+     },
+     {
+      "p": "A",
+      "t": "Priya, how do you respond to the safety concern?"
+     },
+     {
+      "p": "B",
+      "t": "It's a fair point, and it applies mostly to physical work. For office jobs, the evidence suggests people burn out less. One company reported that staff turnover halved. Replacing a skilled worker costs a great deal of money, so a shorter week may actually save it."
+     },
+     {
+      "p": "C",
+      "t": "Up to a point. But you are comparing sectors that are nothing alike. Services can compress their work. Hospitals cannot compress childbirth, and shops cannot compress opening hours without losing customers. Calling it a national norm ignores these differences."
+     },
+     {
+      "p": "A",
+      "t": "So you are not against the idea in principle, Victor?"
+     },
+     {
+      "p": "C",
+      "t": "Not at all. I would happily support trials in sectors where it works. What I object to is the word norm, which suggests a one-size-fits-all rule sent from the government."
+     },
+     {
+      "p": "B",
+      "t": "I'd gladly settle for that, honestly. My argument is not that every employer must change tomorrow, but that the default should be questioned. We inherited the five-day week from the nineteenth century. It's not a law of nature."
+     },
+     {
+      "p": "A",
+      "t": "We shall take a vote shortly. Before that, a final word each. Victor?"
+     },
+     {
+      "p": "C",
+      "t": "On balance, I'd say try it, measure it, and be prepared to be disappointed."
+     },
+     {
+      "p": "B",
+      "t": "And I'd say try it, measure it, and be prepared to be surprised."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why does Victor dismiss the results of the pilot scheme?",
+     "op": [
+      "The scheme was too short",
+      "The firms that joined were likely to succeed",
+      "The employees were unhappy",
+      "The sample was too large"
+     ],
+     "r": 1,
+     "exp": "Ele diz que as empresas voluntárias esperavam que desse certo: não é amostra representativa."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Even so, there is a flip ___.",
+     "resp": [
+      "side"
+     ],
+     "exp": "The flip side = o outro lado da questão.",
+     "ouvir": "Even so, there is a flip side."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "My argument is not that every employer must change tomorrow.",
+     "exp": "Ênfase em 'not', 'every' e 'tomorrow'. Ritmo de debate, firme.",
+     "ouvir": "My argument is not that every employer must change tomorrow."
+    },
+    {
+     "t": "mc",
+     "q": "What is Victor's real objection to the proposal?",
+     "op": [
+      "He opposes any trial of a shorter week",
+      "He objects to making the change a standard rule for all",
+      "He thinks workers are lazy",
+      "He believes the government has not discussed it"
+     ],
+     "r": 1,
+     "exp": "Ele aceitaria testes em setores adequados, mas se opõe ao termo 'norm', que passa a ideia de uma regra única."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Fewer",
+      "hours",
+      "do",
+      "not",
+      "automatically",
+      "mean",
+      "less",
+      "output."
+     ],
+     "resp": "Fewer hours do not automatically mean less output.",
+     "exp": "Fewer + plural contável (hours); 'less output' porque output é incontável."
+    },
+    {
+     "t": "gap",
+     "q": "Priya says one company reported that staff ___ halved.",
+     "resp": [
+      "turnover"
+     ],
+     "exp": "Staff turnover halved = a rotatividade de pessoal caiu pela metade."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Would you like to work four days a week instead of five? Give a reason.",
+     "modelo": "Yes, I would. I think a longer weekend would help me rest and I could spend more time with my family.",
+     "min": 9,
+     "chave": [
+      "yes",
+      "no",
+      "rest",
+      "family",
+      "weekend",
+      "productive",
+      "stress",
+      "because"
+     ],
+     "exp": "Dê sua opinião e um motivo. Use 'I would, because...'."
+    },
+    {
+     "t": "mc",
+     "q": "How does the debate end?",
+     "op": [
+      "Both speakers agree to experiment but with different expectations",
+      "Victor changes his mind completely",
+      "Priya withdraws her proposal",
+      "The moderator announces the vote"
+     ],
+     "r": 0,
+     "exp": "Cada um sugere testar e medir, mas Victor espera decepção e Priya, surpresa."
+    },
+    {
+     "t": "gap",
+     "q": "Priya points out that the five-day week was inherited from the ___ century.",
+     "resp": [
+      "nineteenth",
+      "19th"
+     ],
+     "exp": "Ela diz que a semana de cinco dias vem do século XIX; não é uma lei da natureza."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "The art of the fake",
+   "objetivo": "Seguir uma entrevista sobre arte em que o entrevistado mistura humor, ironia e opinião sobre falsificações.",
+   "foco": "Interview skills: attitude, irony and detail in a long conversation about art",
+   "explicacao": [
+    "Em entrevistas longas, a pergunta pode referir-se a um detalhe curto. Leia as opções antes do áudio e ouça os pontos de virada.",
+    "O entrevistado conta uma história e depois comenta a sua atitude: orgulho, culpa ou ironia. A atitude vem nas palavras 'I confess', 'rather proud', 'ironically'.",
+    "Distratores: opções que citam algo mencionado, mas por outra pessoa ou em outro momento.",
+    "Expressões de arte: provenance (origem comprovada), brushwork (pinceladas), authenticity (autenticidade), forgery (falsificação)."
+   ],
+   "vocab": [
+    {
+     "en": "forgery",
+     "pt": "falsificação"
+    },
+    {
+     "en": "provenance",
+     "pt": "procedência"
+    },
+    {
+     "en": "brushwork",
+     "pt": "pinceladas"
+    },
+    {
+     "en": "authenticity",
+     "pt": "autenticidade"
+    },
+    {
+     "en": "to fool",
+     "pt": "enganar"
+    },
+    {
+     "en": "to detect",
+     "pt": "detectar"
+    },
+    {
+     "en": "gullible",
+     "pt": "ingênuo"
+    },
+    {
+     "en": "pigment",
+     "pt": "pigmento"
+    }
+   ],
+   "material": {
+    "titulo": "An art forger turned expert",
+    "falas": [
+     {
+      "p": "A",
+      "t": "You spent nearly twenty years painting fakes. Now you advise museums on how to spot them. Is that ironic?"
+     },
+     {
+      "p": "B",
+      "t": "Terribly. People call it poacher turned gamekeeper. I prefer to think I'm simply a very experienced critic who happens to have once been paid by the wrong side."
+     },
+     {
+      "p": "A",
+      "t": "How did it begin?"
+     },
+     {
+      "p": "B",
+      "t": "By accident. At art school I was asked to copy a Dutch landscape as an exercise. A dealer saw it, offered me a hundred pounds, and said nothing about what he would do with it. Naturally, I knew perfectly well. I just chose not to ask."
+     },
+     {
+      "p": "A",
+      "t": "And how good were you?"
+     },
+     {
+      "p": "B",
+      "t": "Rather good, I confess. I once sold a painting to a private collector who displayed it for six years. The irony is that it was sold as the work of a minor artist, and I had made it far better than anything he had ever done."
+     },
+     {
+      "p": "A",
+      "t": "What gives a fake away, in your experience?"
+     },
+     {
+      "p": "B",
+      "t": "Rarely the brushwork. Any decent painter can imitate that. Usually it's the materials. I once bought old canvases at auctions so that the cloth would be right, and I ground my own pigments. But the one thing I could never forge was the history. A real painting has a provenance, a paper trail of owners and exhibitions. A fake has a story, which is rather different."
+     },
+     {
+      "p": "A",
+      "t": "So museums are fooled less often than we imagine?"
+     },
+     {
+      "p": "B",
+      "t": "I'd say they are fooled more often than they admit. A museum director who finds a forgery in the collection has two options: tell everyone, or quietly put it in the cellar. You can guess which is more common."
+     },
+     {
+      "p": "A",
+      "t": "Do you feel guilty?"
+     },
+     {
+      "p": "B",
+      "t": "A little. Not about the collectors, who were hoping to get a bargain and were therefore not entirely innocent. I feel sorry for the dealer who lost his business. He was the one who went to prison, while I paid a fine and wrote a book."
+     },
+     {
+      "p": "A",
+      "t": "What do you say to someone who admires your fakes?"
+     },
+     {
+      "p": "B",
+      "t": "I say thank you, and then I ask where they saw them. If a fake still hangs on a wall somewhere, it's not impressive, it's embarrassing for the people who hung it."
+     },
+     {
+      "p": "A",
+      "t": "Does authenticity matter if the painting is beautiful?"
+     },
+     {
+      "p": "B",
+      "t": "It matters to everyone except the painting. It's rather humbling when you think about it. We say we love the picture, but what we actually love is the name beneath it."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How does the speaker feel about having once been a forger?",
+     "op": [
+      "Entirely ashamed",
+      "Partly amused and slightly proud",
+      "Fully proud and unrepentant",
+      "Angry with the dealer"
+     ],
+     "r": 1,
+     "exp": "Ele diz que é irônico, 'rather good, I confess' e sente 'a little' de culpa: tom divertido, com orgulho discreto."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I'm simply a very experienced ___ who happens to have once been paid by the wrong side.",
+     "resp": [
+      "critic"
+     ],
+     "exp": "Ele se descreve como um crítico experiente que já foi pago pelo lado errado.",
+     "ouvir": "I prefer to think I'm simply a very experienced critic who happens to have once been paid by the wrong side."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "A real painting has a provenance. A fake has a story.",
+     "exp": "Pausa entre as duas frases e contraste de entonação entre 'provenance' e 'story'. Provenance = /próvənəns/.",
+     "ouvir": "A real painting has a provenance. A fake has a story."
+    },
+    {
+     "t": "mc",
+     "q": "According to the speaker, what is hardest for a forger to reproduce?",
+     "op": [
+      "The brushwork",
+      "The materials",
+      "The documented history",
+      "The signature"
+     ],
+     "r": 2,
+     "exp": "A única coisa que ele nunca conseguiu falsificar foi o histórico (provenance)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "A",
+      "fake",
+      "that",
+      "still",
+      "hangs",
+      "on",
+      "a",
+      "wall",
+      "is",
+      "embarrassing",
+      "for",
+      "the",
+      "people",
+      "who",
+      "hung",
+      "it."
+     ],
+     "resp": "A fake that still hangs on a wall is embarrassing for the people who hung it.",
+     "exp": "Ordem: sujeito + that + oração relativa + verbo. Quem fica embaraçado são os que a penduraram."
+    },
+    {
+     "t": "gap",
+     "q": "The speaker says the dealer went to prison, while he paid a fine and wrote a ___.",
+     "resp": [
+      "book"
+     ],
+     "exp": "O dealer foi preso; ele pagou multa e escreveu um livro."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Does it matter to you whether a painting is original or a copy, if it looks beautiful? Why?",
+     "modelo": "I think it matters a little, because the original has history, but a good copy can still be beautiful.",
+     "min": 10,
+     "chave": [
+      "original",
+      "copy",
+      "history",
+      "beautiful",
+      "matters",
+      "artist",
+      "value",
+      "because"
+     ],
+     "exp": "Dê uma opinião clara e um 'because'. Pode concordar ou discordar do forger."
+    },
+    {
+     "t": "mc",
+     "q": "What does the speaker suggest about museums that find forgeries?",
+     "op": [
+      "They always publish the discovery",
+      "They often keep it quiet",
+      "They sell them to collectors",
+      "They call the police at once"
+     ],
+     "r": 1,
+     "exp": "Ele diz que muitos escolhem 'quietly put it in the cellar': ficam em silêncio."
+    },
+    {
+     "t": "gap",
+     "q": "The speaker feels sorry for the dealer, not for the collectors, who were hoping for a ___.",
+     "resp": [
+      "bargain"
+     ],
+     "exp": "Os colecionadores esperavam um bargain (pechincha), então não eram totalmente inocentes."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Free will: a philosopher's argument",
+   "objetivo": "Seguir um raciocínio filosófico longo, com premissas, objeções e conclusões parciais.",
+   "foco": "Complex argumentation: premises, objections, inversion (Were it not for...), 'it does not follow that'",
+   "explicacao": [
+    "Filósofos montam o argumento em etapas: premissa, objeção, resposta. Cada 'but' ou 'however' é uma virada.",
+    "Estruturas avançadas: 'Were it not for...' (se não fosse por), 'Should that be true...' (se isso fosse verdade), 'It does not follow that...' (não se segue que...).",
+    "Cuidado: o entrevistado pode apresentar a posição de outros (compatibilistas, deterministas) antes da sua. Marque de quem é cada ideia.",
+    "A conclusão final é muitas vezes uma posição moderada, não um 'sim' ou 'não'."
+   ],
+   "vocab": [
+    {
+     "en": "free will",
+     "pt": "livre-arbítrio"
+    },
+    {
+     "en": "determinism",
+     "pt": "determinismo"
+    },
+    {
+     "en": "compatibilist",
+     "pt": "compatibilista"
+    },
+    {
+     "en": "premise",
+     "pt": "premissa"
+    },
+    {
+     "en": "it does not follow that",
+     "pt": "não se segue que"
+    },
+    {
+     "en": "accountable",
+     "pt": "responsável (por seus atos)"
+    },
+    {
+     "en": "to hold someone responsible",
+     "pt": "responsabilizar"
+    },
+    {
+     "en": "objection",
+     "pt": "objeção"
+    }
+   ],
+   "material": {
+    "titulo": "Is free will an illusion?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Professor Lindqvist, many neuroscientists now claim that free will is an illusion, because our decisions are caused by brain activity of which we are unaware. Are they right?"
+     },
+     {
+      "p": "B",
+      "t": "They are right about the facts and, I think, wrong about the conclusion. Let me set out the argument. The first premise is that every decision has a cause in the brain. The second is that we do not choose the causes. From these, people infer that we are never truly free."
+     },
+     {
+      "p": "A",
+      "t": "It seems logical enough."
+     },
+     {
+      "p": "B",
+      "t": "It does, but it does not follow. The argument depends on a particular idea of freedom, that to be free you must be the ultimate source of your actions, untouched by anything that came before. Were that the standard, nobody could ever be free, not even a god, since a god would need a reason to act."
+     },
+     {
+      "p": "A",
+      "t": "So you would change the definition."
+     },
+     {
+      "p": "B",
+      "t": "I would ask what we actually mean when we call someone free. Usually we mean that they acted on their own reasons, without being forced or deceived. A man who hands over his wallet at knifepoint is not free in that sense. A man who buys a coat because he likes it is, even if his liking has a causal history."
+     },
+     {
+      "p": "A",
+      "t": "That is what philosophers call compatibilism."
+     },
+     {
+      "p": "B",
+      "t": "Yes. Compatibilists hold that determinism and responsibility can coexist. Critics reply that this is a trick, a redefinition that changes the subject. I take the objection seriously. If your preferences were planted in you by your upbringing, how can you take credit for them?"
+     },
+     {
+      "p": "A",
+      "t": "Indeed. How do you answer?"
+     },
+     {
+      "p": "B",
+      "t": "Partly by pointing out that we are not passive recipients of our upbringing. We reflect, revise, change our minds. Those processes are also causes, and they are ours. Should that sound circular, I would say it is the circle of any self-correcting system."
+     },
+     {
+      "p": "A",
+      "t": "Does it matter in practice?"
+     },
+     {
+      "p": "B",
+      "t": "Enormously. If people come to believe that they have no free will, experiments suggest they become a little more willing to cheat and a little less willing to help. Not by much, but noticeably. It is not that the belief is dangerous in itself. It's that people draw sloppy conclusions from it."
+     },
+     {
+      "p": "A",
+      "t": "Such as?"
+     },
+     {
+      "p": "B",
+      "t": "That nobody deserves blame, and therefore that nothing is worth trying. I'd argue the opposite. It is because our actions are caused by our reasons and feelings that praise and blame can change them."
+     },
+     {
+      "p": "A",
+      "t": "So the illusion, if there is one, is not the freedom itself."
+     },
+     {
+      "p": "B",
+      "t": "The illusion is that freedom needs to be magic."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "How does Professor Lindqvist respond to the claim that free will is an illusion?",
+     "op": [
+      "He agrees with both the facts and the conclusion",
+      "He accepts the facts but rejects the conclusion",
+      "He rejects the facts of neuroscience",
+      "He refuses to answer"
+     ],
+     "r": 1,
+     "exp": "Ele diz: right about the facts and wrong about the conclusion."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: It does, but it does not ___.",
+     "resp": [
+      "follow"
+     ],
+     "exp": "It does not follow = não é uma consequência lógica.",
+     "ouvir": "It does, but it does not follow."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "The illusion is that freedom needs to be magic.",
+     "exp": "Frase final, curta e dramática. Ênfase em 'illusion' e 'magic'. Pause depois de 'is'.",
+     "ouvir": "The illusion is that freedom needs to be magic."
+    },
+    {
+     "t": "mc",
+     "q": "What does he mean by saying that 'nobody could ever be free, not even a god'?",
+     "op": [
+      "A god is actually less free than humans",
+      "The standard of freedom being criticised is impossible to meet",
+      "Gods do not exist",
+      "Everyone has the same freedom"
+     ],
+     "r": 1,
+     "exp": "Ele mostra que o padrão exigido (ser a fonte última da ação) seria impossível para qualquer ser, até um deus."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Were",
+      "that",
+      "the",
+      "standard,",
+      "nobody",
+      "could",
+      "ever",
+      "be",
+      "free."
+     ],
+     "resp": "Were that the standard, nobody could ever be free.",
+     "exp": "Inversão condicional: Were + sujeito = If + sujeito + were. Estrutura formal de argumento."
+    },
+    {
+     "t": "gap",
+     "q": "If people believe they have no free will, experiments suggest they are a little more willing to ___.",
+     "resp": [
+      "cheat"
+     ],
+     "exp": "Os experimentos sugerem que ficam mais dispostos a trapacear (cheat) e menos dispostos a ajudar."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Do you think people should be held responsible for their actions if their choices are shaped by their upbringing? Explain briefly.",
+     "modelo": "I think they should, because people can still reflect and change, even if their background influences them.",
+     "min": 10,
+     "chave": [
+      "responsible",
+      "upbringing",
+      "choices",
+      "reflect",
+      "change",
+      "background",
+      "blame",
+      "because"
+     ],
+     "exp": "Dê sua posição e um motivo. Pode usar 'although' para reconhecer o outro lado."
+    },
+    {
+     "t": "mc",
+     "q": "What is the professor's view of the objection that compatibilism 'changes the subject'?",
+     "op": [
+      "It is silly and he ignores it",
+      "It is serious, but he has a partial answer",
+      "It is correct and he gives up",
+      "It was made by a god"
+     ],
+     "r": 1,
+     "exp": "I take the objection seriously, e responde que reflexão e revisão também são causas e são nossas."
+    },
+    {
+     "t": "gap",
+     "q": "He argues that praise and blame can change our behaviour because our actions are caused by our reasons and ___.",
+     "resp": [
+      "feelings"
+     ],
+     "exp": "Ele diz que é porque as ações vêm de razões e sentimentos que elogio e culpa podem mudá-las."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "The last speakers of a language",
+   "objetivo": "Acompanhar uma conversa de três pessoas sobre línguas ameaçadas, distinguindo as posições de cada uma.",
+   "foco": "Three voices: agreement, partial agreement, challenge; cleft sentences (What matters is...)",
+   "explicacao": [
+    "Com três falantes, o importante é saber quem defende o quê. Anote A, B e C mentalmente a cada troca.",
+    "Cleft sentences enfatizam: 'What worries me is...', 'It is the children who...'. A informação importante vem depois do 'is'.",
+    "Discordância polida: 'I take your point, but...', 'That may be so, yet...', 'I'm not convinced'.",
+    "Falantes podem concordar em um ponto e discordar no resto. A prova explora isso."
+   ],
+   "vocab": [
+    {
+     "en": "endangered language",
+     "pt": "língua ameaçada"
+    },
+    {
+     "en": "fluent speaker",
+     "pt": "falante fluente"
+    },
+    {
+     "en": "to revive",
+     "pt": "reviver"
+    },
+    {
+     "en": "heritage",
+     "pt": "herança cultural"
+    },
+    {
+     "en": "to take your point",
+     "pt": "entender seu argumento"
+    },
+    {
+     "en": "a lost cause",
+     "pt": "causa perdida"
+    },
+    {
+     "en": "immersion",
+     "pt": "imersão"
+    },
+    {
+     "en": "elders",
+     "pt": "anciãos"
+    }
+   ],
+   "material": {
+    "titulo": "A panel on endangered languages",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Welcome to the programme. Our topic is endangered languages. Around half of the world's languages may disappear by the end of the century. Dr Mensah, is that a tragedy or simply history?"
+     },
+     {
+      "p": "B",
+      "t": "It is a tragedy, and I'll tell you why. A language is not just a code for exchanging information. It holds a community's knowledge: the names of plants, the stories of their ancestors, jokes that cannot be translated. When the last speaker dies, a way of looking at the world dies with her."
+     },
+     {
+      "p": "C",
+      "t": "I take your point, Dr Mensah, but I'm not convinced it is quite so simple. What matters is what the speakers themselves want. Many parents choose to bring their children up in a larger language, because it offers jobs and opportunities. We can hardly blame them for that."
+     },
+     {
+      "p": "B",
+      "t": "Nobody is blaming parents. The problem is that the choice is rarely free. When schools, media and government all operate in one language, a minority language is under pressure from every side."
+     },
+     {
+      "p": "A",
+      "t": "Professor Aaltonen, you've worked on reviving languages. Can it be done?"
+     },
+     {
+      "p": "C",
+      "t": "It has been done, with some success. Hebrew is the famous case, and Welsh has grown after decades of effort. But those had strong institutions behind them. For a language with ten elderly speakers and no written form, the situation is far harder."
+     },
+     {
+      "p": "B",
+      "t": "Though not hopeless. In New Zealand, language nests, where grandparents look after toddlers and speak only Maori, have created a new generation of fluent speakers within twenty years."
+     },
+     {
+      "p": "C",
+      "t": "That is encouraging, I'll grant you. What worries me is that such programmes depend on money, and money depends on politics. A programme can be cut in a single budget meeting."
+     },
+     {
+      "p": "A",
+      "t": "Is there a role for technology?"
+     },
+     {
+      "p": "B",
+      "t": "Yes, a modest one. Recording the elders is vital, and apps can help learners practise. But a recording is not a living language. It is like a photograph of a river."
+     },
+     {
+      "p": "C",
+      "t": "That is a beautiful image, though I'd add that some communities don't want their language recorded at all. Some words are meant to be spoken only in ceremonies. Outsiders with microphones can be a form of intrusion."
+     },
+     {
+      "p": "B",
+      "t": "A fair challenge. It's exactly why the work must be led by the community, not by visiting academics like myself."
+     },
+     {
+      "p": "A",
+      "t": "So where do you both agree?"
+     },
+     {
+      "p": "C",
+      "t": "That the decision belongs to the speakers."
+     },
+     {
+      "p": "B",
+      "t": "And that, if they choose to keep their language, the rest of us should make that choice easier, not harder."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is Professor Aaltonen's main reservation about attempts to save languages?",
+     "op": [
+      "They are never successful",
+      "They depend on funding that can be withdrawn",
+      "They are opposed by all parents",
+      "They require expensive technology"
+     ],
+     "r": 1,
+     "exp": "Ele diz que programas dependem de dinheiro e política; podem ser cortados numa reunião de orçamento."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: What ___ is what the speakers themselves want.",
+     "resp": [
+      "matters"
+     ],
+     "exp": "What matters is... é uma frase clivada (cleft) que destaca o ponto principal.",
+     "ouvir": "What matters is what the speakers themselves want."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "A recording is not a living language. It is like a photograph of a river.",
+     "exp": "Duas frases separadas por uma pausa. Ênfase em 'recording', 'living' e 'photograph'.",
+     "ouvir": "A recording is not a living language. It is like a photograph of a river."
+    },
+    {
+     "t": "mc",
+     "q": "What does Dr Mensah mean by 'the choice is rarely free'?",
+     "op": [
+      "Parents are always forced by law",
+      "Social and institutional pressure limits real choice",
+      "Language lessons are too costly",
+      "Children do not speak at home"
+     ],
+     "r": 1,
+     "exp": "Ela explica que escolas, mídia e governo usam uma só língua: a pressão vem de todos os lados."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Some",
+      "words",
+      "are",
+      "meant",
+      "to",
+      "be",
+      "spoken",
+      "only",
+      "in",
+      "ceremonies."
+     ],
+     "resp": "Some words are meant to be spoken only in ceremonies.",
+     "exp": "'Are meant to be spoken' = voz passiva com sentido de dever. 'Only in ceremonies' fecha a frase."
+    },
+    {
+     "t": "gap",
+     "q": "In New Zealand, language nests created fluent speakers within twenty ___.",
+     "resp": [
+      "years"
+     ],
+     "exp": "Os language nests criaram uma nova geração de falantes em vinte anos."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Is it important to keep small languages alive? Say why or why not.",
+     "modelo": "I think it is important, because each language carries a unique culture and way of seeing the world.",
+     "min": 10,
+     "chave": [
+      "important",
+      "culture",
+      "language",
+      "alive",
+      "lose",
+      "history",
+      "community",
+      "because"
+     ],
+     "exp": "Dê sua opinião e uma razão. Não precisa ser uma resposta longa."
+    },
+    {
+     "t": "mc",
+     "q": "What do the two guests agree on at the end?",
+     "op": [
+      "Technology can solve everything",
+      "The speakers' choice should come first",
+      "Outsiders should lead the projects",
+      "Governments should ban big languages"
+     ],
+     "r": 1,
+     "exp": "Ambos dizem que a decisão pertence aos falantes e que os outros devem facilitar a escolha."
+    },
+    {
+     "t": "gap",
+     "q": "Dr Mensah says a recording of a language is like a photograph of a ___.",
+     "resp": [
+      "river"
+     ],
+     "exp": "A imagem é de uma fotografia de um rio: capta, mas não é o fluxo vivo."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Sentence completion: a long talk",
+   "objetivo": "Treinar a Part 2: ouvir um monólogo longo e captar a palavra ou número exato que completa a frase.",
+   "foco": "Part 2 strategy: predict the missing word; numbers, dates and distractors",
+   "explicacao": [
+    "Na Part 2 você completa frases com palavras do próprio áudio, geralmente de uma a três palavras. Leia a frase antes e preveja a classe da palavra (substantivo, número, adjetivo).",
+    "O áudio costuma dar duas informações perto uma da outra: uma que parece a resposta e a verdadeira, depois de 'actually', 'in fact', 'rather than'. Escolha a final.",
+    "A resposta aparece na mesma ordem das frases. Se perder uma, passe para a próxima.",
+    "Escreva só o necessário e confira a ortografia: erro de grafia pode invalidar a resposta."
+   ],
+   "vocab": [
+    {
+     "en": "tide",
+     "pt": "maré"
+    },
+    {
+     "en": "mill",
+     "pt": "moinho"
+    },
+    {
+     "en": "millpond",
+     "pt": "açude do moinho"
+    },
+    {
+     "en": "sluice gate",
+     "pt": "comporta"
+    },
+    {
+     "en": "grain",
+     "pt": "grão"
+    },
+    {
+     "en": "heritage",
+     "pt": "patrimônio"
+    },
+    {
+     "en": "to restore",
+     "pt": "restaurar"
+    },
+    {
+     "en": "volunteers",
+     "pt": "voluntários"
+    }
+   ],
+   "material": {
+    "titulo": "Talk: Tide mills of the south coast",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Good evening, everyone, and thank you for coming. Tonight I'm going to talk about tide mills, which are some of the quietest and least appreciated pieces of engineering in Britain."
+     },
+     {
+      "p": "A",
+      "t": "Most people have heard of windmills and watermills. A tide mill works differently. As the tide rises, water flows through a gate into a large pond. When the tide goes out, the gate closes, and the water is released through a wheel. The mill could therefore work for about five hours a day, whatever the weather, which was a great advantage over wind."
+     },
+     {
+      "p": "A",
+      "t": "At one time there were more than two hundred tide mills in Britain. Most of them were built in the eighteenth century, although the earliest, recorded in the Domesday Book of 1086, was at Dover. Today fewer than ten survive, and only a handful still work."
+     },
+     {
+      "p": "A",
+      "t": "I'd like to tell you about one that I have visited many times, Woodbridge in Suffolk. People often assume it is the oldest, because it looks so ancient. In fact, the present building dates from 1793, although there has been a mill on the site since the twelfth century. When it was nearly demolished in 1968, a local man bought it for a modest sum and began the restoration, which took twenty years."
+     },
+     {
+      "p": "A",
+      "t": "What I find most remarkable is how the mill ground its grain. The stones were not made of local rock. They were imported from France because French stone was harder and produced a finer flour. These huge circular stones weighed over a ton each, and the miller had to dress them by hand, cutting tiny grooves with a special hammer."
+     },
+     {
+      "p": "A",
+      "t": "So why did the mills disappear? You might expect the answer to be steam engines, and they did play a part. But the real reason was the railway. Once cheap flour could be carried from large inland mills, small coastal mills could no longer compete. Their last customers were local farmers who wanted to feed animals rather than people."
+     },
+     {
+      "p": "A",
+      "t": "What is surprising is that interest in tide power has not vanished. Engineers today are looking again at the same idea, though on a vast scale. A lagoon of several kilometres could drive turbines, producing electricity that is entirely predictable, because the tides are known years in advance."
+     },
+     {
+      "p": "A",
+      "t": "Finally, if you are thinking of visiting, you will find that most of these mills are run by volunteers. Admission is usually free, but a donation is always welcome. I would also advise going on a spring tide, when the wheel turns fastest. Thank you very much."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "According to the speaker, what was the main advantage of a tide mill?",
+     "op": [
+      "It was cheaper to build than other mills",
+      "It could work whatever the weather",
+      "It ground flour more finely",
+      "It needed no pond"
+     ],
+     "r": 1,
+     "exp": "Ela diz que podia trabalhar cerca de cinco horas por dia, qualquer que fosse o tempo, vantagem sobre o vento."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: The mill could therefore work for about ___ hours a day.",
+     "resp": [
+      "five",
+      "5"
+     ],
+     "exp": "A maré permite cerca de cinco horas de trabalho por dia.",
+     "ouvir": "The mill could therefore work for about five hours a day, whatever the weather."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Tide mills are some of the quietest pieces of engineering in Britain.",
+     "exp": "Ênfase em 'quietest' e 'engineering'. 'Engineering' tem quatro sílabas: /endʒɪnɪ́ərɪŋ/.",
+     "ouvir": "Tide mills are some of the quietest pieces of engineering in Britain."
+    },
+    {
+     "t": "mc",
+     "q": "Why does Woodbridge mill look older than it is?",
+     "op": [
+      "It was built in 1086",
+      "It was rebuilt using the original stones",
+      "The building dates from 1793, though the site is much older",
+      "It was restored by the French"
+     ],
+     "r": 2,
+     "exp": "O prédio atual é de 1793, mas há um moinho no local desde o século XII."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "stones",
+      "were",
+      "imported",
+      "from",
+      "France",
+      "because",
+      "French",
+      "stone",
+      "was",
+      "harder."
+     ],
+     "resp": "The stones were imported from France because French stone was harder.",
+     "exp": "'Were imported' é passiva. 'Harder' compara a pedra francesa com as locais."
+    },
+    {
+     "t": "gap",
+     "q": "The real reason the small mills disappeared was the ___.",
+     "resp": [
+      "railway",
+      "railways",
+      "railroad"
+     ],
+     "exp": "Ela diz: the real reason was the railway. As máquinas a vapor também contribuíram, mas não foram a razão principal."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Is there an old building or tradition in your country that is disappearing? Describe it briefly.",
+     "modelo": "Yes, there are old windmills in my region, and many of them are in ruins because nobody pays for repairs.",
+     "min": 10,
+     "chave": [
+      "old",
+      "building",
+      "tradition",
+      "disappearing",
+      "ruins",
+      "repair",
+      "history",
+      "region"
+     ],
+     "exp": "Descreva o que é, onde fica e por que está desaparecendo."
+    },
+    {
+     "t": "mc",
+     "q": "What does the speaker say about modern tidal power projects?",
+     "op": [
+      "They are too unpredictable",
+      "They use the same idea on a much bigger scale",
+      "They have replaced all tide mills",
+      "They have been abandoned"
+     ],
+     "r": 1,
+     "exp": "Engineers are looking again at the same idea, though on a vast scale."
+    },
+    {
+     "t": "gap",
+     "q": "The speaker recommends visiting on a spring ___, when the wheel turns fastest.",
+     "resp": [
+      "tide"
+     ],
+     "exp": "Spring tide é a maré de sizígia, mais forte. O moinho gira mais rápido."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Three voices, two tasks",
+   "objetivo": "Distinguir três falantes que opinam sobre o mesmo tema, como na Part 4: o que cada um sente e a atitude de cada um.",
+   "foco": "Part 4 strategy: matching speakers to topics and attitudes; paraphrase and distractors",
+   "explicacao": [
+    "Na Part 4 há cinco falantes e duas tarefas: por exemplo, o que cada um pensa e como se sente. Aqui treinamos com três.",
+    "Cada falante normalmente menciona todas as opções, mas confirma só uma. Exclua o que a pessoa diz e depois nega.",
+    "Atitudes aparecem em palavras como 'I'm torn', 'I couldn't care less', 'it depresses me', 'I'm cautiously optimistic'.",
+    "Escute o final de cada fala: costuma conter a posição real, depois dos exemplos."
+   ],
+   "vocab": [
+    {
+     "en": "to be torn",
+     "pt": "estar dividido"
+    },
+    {
+     "en": "cautiously optimistic",
+     "pt": "cautelosamente otimista"
+    },
+    {
+     "en": "to dread",
+     "pt": "temer"
+    },
+    {
+     "en": "to rely on",
+     "pt": "depender de"
+    },
+    {
+     "en": "creative industries",
+     "pt": "indústrias criativas"
+    },
+    {
+     "en": "to hold a grudge",
+     "pt": "guardar rancor"
+    },
+    {
+     "en": "shortcut",
+     "pt": "atalho"
+    },
+    {
+     "en": "to take over",
+     "pt": "assumir"
+    }
+   ],
+   "material": {
+    "titulo": "Three people talk about AI in creative work",
+    "falas": [
+     {
+      "p": "A",
+      "t": "I write songs for a living, and I'll be honest: I'm torn. I've tried one of these programs, and it gave me a chorus in thirty seconds that was, frankly, quite good. That scared me. But then I realised I wouldn't have chosen it myself. It had no point of view. I now use it the way I use a rhyming dictionary, for ideas I can reject. If it replaced me, I think listeners would notice the sameness within a year. That's what keeps me from panicking."
+     },
+     {
+      "p": "B",
+      "t": "I illustrate children's books, and I find the whole thing depressing. Nobody asked us before these programs were trained on our work. Now publishers tell me they can get a picture in a minute for nothing. I'm told I should be flexible, and I'd love to be. But how flexible can you be when the ground has been taken from under you? I'm not against technology. I'm against being treated as raw material. I did hold on to hope for a while, but frankly it's fading."
+     },
+     {
+      "p": "C",
+      "t": "I teach art to teenagers, and for me it's partly an opportunity. My students already use these tools, whatever I say, so I'd rather teach them to use them with some intelligence. I ask them to describe in words why an image works or doesn't. They discover that the computer can't tell them. Of course, there is a danger that they'll take shortcuts, and some will. But some students have always copied from the internet. I'm cautiously optimistic, though I wouldn't want to sound too relaxed about it."
+     },
+     {
+      "p": "A",
+      "t": "One more thing I'd add. The song I wrote last month, the one I'm proudest of, started with a mistake that no machine would have made. A wrong chord that I decided to keep. Perhaps that's the difference."
+     },
+     {
+      "p": "B",
+      "t": "I would add that readers, and especially children, deserve pictures made by someone who has actually looked at the world. A drawing of a dog from a person who has owned a dog is different from the average of ten million dogs. People who say otherwise have usually never tried to draw one."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is Speaker A's main reason for not panicking?",
+     "op": [
+      "He thinks the technology will fail",
+      "He believes machine-made work lacks individuality",
+      "He has been promised a contract",
+      "He does not use the program"
+     ],
+     "r": 1,
+     "exp": "Ele diz que o programa 'had no point of view' e que os ouvintes notariam a mesmice."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: I'm not against ___. I'm against being treated as raw material.",
+     "resp": [
+      "technology"
+     ],
+     "exp": "Speaker B não é contra a tecnologia, mas contra ser tratada como matéria-prima.",
+     "ouvir": "I'm not against technology. I'm against being treated as raw material."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "I'm cautiously optimistic, though I wouldn't want to sound too relaxed about it.",
+     "exp": "Ritmo cuidadoso. 'Cautiously' /kɔ́ːʃəsli/ e 'optimistic' com acento em 'mis'.",
+     "ouvir": "I'm cautiously optimistic, though I wouldn't want to sound too relaxed about it."
+    },
+    {
+     "t": "mc",
+     "q": "Which speaker feels that the situation is getting worse for their profession?",
+     "op": [
+      "Speaker A",
+      "Speaker B",
+      "Speaker C",
+      "Speakers A and C"
+     ],
+     "r": 1,
+     "exp": "Speaker B diz que a esperança está desaparecendo (it's fading) e que se sente tratada como matéria-prima."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Some",
+      "students",
+      "have",
+      "always",
+      "copied",
+      "from",
+      "the",
+      "internet."
+     ],
+     "resp": "Some students have always copied from the internet.",
+     "exp": "A frase usa present perfect com 'always'. 'Have always copied' mostra que o fato não é novo."
+    },
+    {
+     "t": "gap",
+     "q": "Speaker C asks her students to describe in ___ why an image works.",
+     "resp": [
+      "words"
+     ],
+     "exp": "Ela pede que descrevam com palavras por que uma imagem funciona."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Would you listen to a song or read a story if you knew a computer had written it? Why or why not?",
+     "modelo": "I might listen, but I would prefer a human creator, because I want to feel a real person's experience.",
+     "min": 10,
+     "chave": [
+      "human",
+      "computer",
+      "prefer",
+      "listen",
+      "read",
+      "feel",
+      "real",
+      "because"
+     ],
+     "exp": "Diga se ouviria ou leria, e dê um motivo."
+    },
+    {
+     "t": "mc",
+     "q": "What is Speaker C's attitude towards the new tools?",
+     "op": [
+      "Fearful of them",
+      "Hopeful but not complacent",
+      "Completely indifferent",
+      "Strongly opposed to them"
+     ],
+     "r": 1,
+     "exp": "Cautiously optimistic: otimista, mas atenta aos perigos."
+    },
+    {
+     "t": "gap",
+     "q": "According to Speaker A, his best recent song began with a wrong ___ that he decided to keep.",
+     "resp": [
+      "chord"
+     ],
+     "exp": "Ele diz que a música de que mais se orgulha começou com um erro: um acorde errado."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado: Proficiency Listening",
+   "objetivo": "Treinar, num só áudio, as partes 1, 2 e 3 da prova de Listening do CPE (extrato curto, monólogo e entrevista).",
+   "foco": "CPE Listening practice: short extract, sentence completion and long interview",
+   "explicacao": [
+    "Neste simulado o áudio tem três partes, como na prova: um extrato curto (Part 1), um monólogo para completar frases (Part 2) e uma entrevista longa (Part 3). A Part 4 foi treinada na aula anterior.",
+    "Antes de ouvir, leia as perguntas. Na Part 2, preveja o tipo de palavra; na Part 3, procure a atitude do falante.",
+    "Lembre dos distratores: o áudio cita quase todas as opções, mas confirma uma só. Escute a resposta final de cada trecho.",
+    "Trate o simulado como a prova. Responda sem pausar demais e confira a ortografia das lacunas."
+   ],
+   "vocab": [
+    {
+     "en": "open-plan",
+     "pt": "espaço aberto"
+    },
+    {
+     "en": "to grumble",
+     "pt": "resmungar"
+    },
+    {
+     "en": "hereditary",
+     "pt": "hereditário"
+    },
+    {
+     "en": "feudal",
+     "pt": "feudal"
+    },
+    {
+     "en": "to wince",
+     "pt": "fazer careta"
+    },
+    {
+     "en": "faintly",
+     "pt": "levemente"
+    },
+    {
+     "en": "gracious",
+     "pt": "gentil"
+    },
+    {
+     "en": "pots",
+     "pt": "covos de lagosta"
+    }
+   ],
+   "material": {
+    "titulo": "Simulado: extract, talk and interview",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Extract one. Two colleagues, a man and a woman, are talking about a new open-plan office."
+     },
+     {
+      "p": "B",
+      "t": "So, how are you finding the new office? I thought it would be a disaster, but I have to admit the light is lovely."
+     },
+     {
+      "p": "C",
+      "t": "Lovely, yes. The noise is another matter. Yesterday I could hear three phone calls and a spirited argument about biscuits, and I'm told that was a quiet day. I do wonder whether the people who designed it ever tried to work in it."
+     },
+     {
+      "p": "B",
+      "t": "Well, the management say that it encourages creativity."
+     },
+     {
+      "p": "C",
+      "t": "I'm sure it does encourage something. Mostly headphones, I'd say. Still, I shouldn't grumble. I'd rather have a noisy desk than a long commute, and this is ten minutes from my front door."
+     },
+     {
+      "p": "A",
+      "t": "Part two. You will hear a woman giving a talk about the island of Sark."
+     },
+     {
+      "p": "C",
+      "t": "Good morning. Sark is a tiny island in the English Channel, only three miles long and a mile and a half wide. It is famous for something that surprises visitors: no cars. Tractors are allowed, because the farmers need them, and so are bicycles, but the only way to get about otherwise is to walk or take a horse-drawn carriage."
+     },
+     {
+      "p": "C",
+      "t": "The island was ruled by a feudal system until 2008, which means that it was one of the last places in Europe to have a hereditary leader, known as the Seigneur. The first Seigneur arrived in 1565, and his task was to settle forty families on the island. They were given the land in exchange for providing a number of armed men, so that the island could be defended."
+     },
+     {
+      "p": "C",
+      "t": "Sark has also been called the first dark sky island in Europe. In 2011 it was officially recognised for the quality of its night skies, because there are almost no street lights. On a clear night you can see the Milky Way stretching right across the sky, and many visitors tell me it's the first time they have seen it. Astronomers come for the autumn, when the nights are longest, but I would say that the best month is February."
+     },
+     {
+      "p": "C",
+      "t": "As for the food, you might think that a place with four hundred inhabitants would depend on imports. In fact, most vegetables are grown on the island, and the local speciality is the Sark lobster, which is caught in small baskets called pots. The season starts in April and ends in October. Visitors often ask me where to eat, and I always say the same thing: book early, because there are very few tables."
+     },
+     {
+      "p": "C",
+      "t": "Finally, a word of caution. There are no pavements and no hospital. If you need medical help, you must be taken by boat to Guernsey, so please walk carefully on the cliffs. Thank you very much."
+     },
+     {
+      "p": "A",
+      "t": "Part three. An interviewer is speaking to a novelist about the experience of rewriting an old book."
+     },
+     {
+      "p": "B",
+      "t": "Your first novel was published thirty years ago. Last year you published a revised edition. Why on earth did you go back?"
+     },
+     {
+      "p": "C",
+      "t": "Partly vanity, and partly embarrassment. Every time I opened the book at a reading I found something that made me wince. A metaphor that was too pleased with itself. A character who explained her own feelings for three pages. I thought, if I can do better, I should."
+     },
+     {
+      "p": "B",
+      "t": "But surely a book belongs to the time it was written in. Isn't there something dishonest about improving it afterwards?"
+     },
+     {
+      "p": "C",
+      "t": "That is the standard objection, and I understand it. But I don't think I made it dishonest. I did not change the plot or the ending. I cut about a fifth of the words, and I removed the sentences where the younger me was showing off. If anything, the book is now closer to what I meant."
+     },
+     {
+      "p": "B",
+      "t": "Did your publisher agree?"
+     },
+     {
+      "p": "C",
+      "t": "Reluctantly. Their view was that the original had a loyal readership, and that readers who loved it might feel betrayed. They were, in the end, very gracious about it. In fact, sales of the revised edition have been better than the first run, which I find faintly irritating, since it implies I could have written it properly the first time."
+     },
+     {
+      "p": "B",
+      "t": "Would you do it with all your books?"
+     },
+     {
+      "p": "C",
+      "t": "Good heavens, no. One was quite enough. With each rewrite you discover that you are a different person from the one who wrote it, and that is a slightly uncomfortable discovery. My advice to young writers is: finish things, publish them, and then leave them alone."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Extract one. What does the woman imply about the new office?",
+     "op": [
+      "It inspires creative work",
+      "Its noise makes it hard to work in",
+      "It is too far from her home",
+      "Its design is excellent"
+     ],
+     "r": 1,
+     "exp": "Parte 1: ela fala de barulho constante e de fones de ouvido. A luz é bonita, mas o problema é o ruído."
+    },
+    {
+     "t": "mc",
+     "q": "Extract one. What does the woman say she would prefer?",
+     "op": [
+      "A quieter office",
+      "A noisy desk and a short journey",
+      "A home office",
+      "A different job"
+     ],
+     "r": 1,
+     "exp": "Ela diz que prefere uma mesa barulhenta a um trajeto longo; o escritório fica a dez minutos de casa."
+    },
+    {
+     "t": "gap",
+     "q": "Part two. The island of Sark has no cars, but farmers are allowed to use ___.",
+     "resp": [
+      "tractors",
+      "tractor"
+     ],
+     "exp": "Os tratores são permitidos porque os agricultores precisam deles."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "The island was one of the last places in Europe to have a hereditary leader.",
+     "exp": "Frase de Part 2. Atenção a 'hereditary' /hɪrédɪtri/ e 'Seigneur' /seɪnjɜ́ː/ quando aparecer.",
+     "ouvir": "The island was one of the last places in Europe to have a hereditary leader."
+    },
+    {
+     "t": "gap",
+     "q": "Part two. The first Seigneur arrived in ___.",
+     "resp": [
+      "1565"
+     ],
+     "exp": "Ele chegou em 1565 para estabelecer quarenta famílias."
+    },
+    {
+     "t": "gap",
+     "q": "Part two. The speaker says the best month for seeing the night sky is ___.",
+     "resp": [
+      "february"
+     ],
+     "exp": "Os astrônomos vão no outono, mas ela diz que o melhor mês é fevereiro."
+    },
+    {
+     "t": "gap",
+     "q": "Part two. Sark lobsters are caught in small baskets called ___.",
+     "resp": [
+      "pots",
+      "lobster pots"
+     ],
+     "exp": "A palavra é pots (covos)."
+    },
+    {
+     "t": "mc",
+     "q": "Part three. Why did the novelist revise her first book?",
+     "op": [
+      "The publisher asked her to",
+      "She felt uncomfortable with parts of the original",
+      "Readers complained about the plot",
+      "She wanted to change the ending"
+     ],
+     "r": 1,
+     "exp": "Ela diz que sentia vergonha: metáforas vaidosas, personagem que explicava demais. Não mudou o enredo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "cut",
+      "about",
+      "a",
+      "fifth",
+      "of",
+      "the",
+      "words."
+     ],
+     "resp": "I cut about a fifth of the words.",
+     "exp": "Cut é irregular (cut, cut). 'A fifth' = um quinto."
+    },
+    {
+     "t": "mc",
+     "q": "Part three. How does the novelist feel about the success of the revised edition?",
+     "op": [
+      "Delighted",
+      "Slightly annoyed",
+      "Surprised and proud",
+      "Guilty"
+     ],
+     "r": 1,
+     "exp": "Faintly irritating: ela acha levemente irritante, pois sugere que podia ter escrito bem da primeira vez."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em inglês, em voz alta.",
+     "frase": "Part three. Would you change something you wrote years ago if you could? Why or why not?",
+     "modelo": "Yes, I would change a few things, because I now know how to write better than before.",
+     "min": 9,
+     "chave": [
+      "change",
+      "write",
+      "better",
+      "years",
+      "would",
+      "because",
+      "embarrassing",
+      "improve"
+     ],
+     "exp": "Diga se mudaria, e explique por quê."
+    },
+    {
+     "t": "mc",
+     "q": "Part three. What advice does the novelist give young writers?",
+     "op": [
+      "Rewrite everything repeatedly",
+      "Finish, publish and leave the work alone",
+      "Avoid publishers",
+      "Never read old books"
+     ],
+     "r": 1,
+     "exp": "Finish things, publish them, and then leave them alone."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2362 @@
+{
+ "nivel": "A1",
+ "skill": "writing",
+ "exame": "Pre A1–A1 Movers/Flyers",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Capital letters and full stops",
+   "objetivo": "Começar frases com maiúscula, usar I e nomes próprios corretamente e terminar com ponto.",
+   "foco": "Capital letters; full stop; question mark",
+   "explicacao": [
+    "Toda frase começa com letra maiúscula e termina com ponto (.) ou ponto de interrogação (?): My name is Ana.",
+    "O pronome I (eu) é sempre maiúsculo: Tom and I are friends.",
+    "Nomes de pessoas, cidades, países, idiomas e dias da semana têm maiúscula: Pedro, Recife, Brazil, English, Monday.",
+    "Em inglês, a idade usa am/is/are, não have: I am nine (não I have nine years)."
+   ],
+   "vocab": [
+    {
+     "en": "name",
+     "pt": "nome"
+    },
+    {
+     "en": "age",
+     "pt": "idade"
+    },
+    {
+     "en": "live",
+     "pt": "morar"
+    },
+    {
+     "en": "city",
+     "pt": "cidade"
+    },
+    {
+     "en": "country",
+     "pt": "país"
+    },
+    {
+     "en": "capital letter",
+     "pt": "letra maiúscula"
+    },
+    {
+     "en": "full stop",
+     "pt": "ponto final"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about yourself. Say your name, how old you are and where you live. Write 10 words or more.",
+    "genero": "short text",
+    "min": 10,
+    "max": 25,
+    "modelo": "My name is Ana. I am nine. I live in Recife, in Brazil.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Escrevi meu nome e os países/cidades com maiúscula?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is written correctly?",
+     "op": [
+      "I live in rio de Janeiro.",
+      "My friend is from Japan.",
+      "My friend from Japan is.",
+      "i live in Brazil."
+     ],
+     "r": 1,
+     "exp": "Frase começa com maiúscula e Japan também; a opção 1 tem rio minúsculo e a 4 começa com i minúsculo."
+    },
+    {
+     "t": "gap",
+     "q": "We have English on monday. Write the day correctly: ___",
+     "resp": [
+      "Monday"
+     ],
+     "exp": "Dias da semana têm maiúscula em inglês: Monday."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "My name is Ana and I am nine.",
+     "exp": "Em 'nine', o som é 'nain'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence needs a question mark (?) at the end?",
+     "op": [
+      "She is ten",
+      "Where do you live",
+      "I like pizza",
+      "It is Monday"
+     ],
+     "r": 1,
+     "exp": "Where do you live é uma pergunta, então termina com ?"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "My",
+      "name",
+      "is",
+      "Lucas"
+     ],
+     "resp": "My name is Lucas.",
+     "exp": "Ordem: My name is + nome."
+    },
+    {
+     "t": "gap",
+     "q": "Correct the mistake: 'I have ten years old.' → I ___ ten years old.",
+     "resp": [
+      "am"
+     ],
+     "exp": "Em inglês a idade usa be: I am ten. Não se usa have."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda com seu nome.",
+     "frase": "What is your name?",
+     "modelo": "My name is Ana.",
+     "min": 3,
+     "chave": [
+      "name",
+      "my",
+      "am"
+     ],
+     "exp": "Comece com My name is... ou I am..."
+    },
+    {
+     "t": "mc",
+     "q": "Which one is correct?",
+     "op": [
+      "Tom and I am friends.",
+      "Tom and I are friends.",
+      "Tom and me are friends.",
+      "Tom I are friends."
+     ],
+     "r": 1,
+     "exp": "Tom and I (sujeito) combina com are. Lembre: I é sempre maiúsculo."
+    },
+    {
+     "t": "gap",
+     "q": "My friend is ten. ___ lives in Salvador. (ele)",
+     "resp": [
+      "He"
+     ],
+     "exp": "He = ele. Depois do ponto, a nova frase começa com maiúscula."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "I am, you are, he is",
+   "objetivo": "Escrever frases simples sobre você e outras pessoas com o verbo be.",
+   "foco": "Verb be: am / is / are; short forms",
+   "explicacao": [
+    "I am (I'm), you are (you're), he is (he's), she is (she's), it is (it's), we/you/they are.",
+    "Para negar, coloque not: I am not tired. She isn't at school.",
+    "Em perguntas, o verbo vem antes: Are you ten? Is he your brother?",
+    "Não esqueça o verbo: She is happy (não She happy)."
+   ],
+   "vocab": [
+    {
+     "en": "tired",
+     "pt": "cansado"
+    },
+    {
+     "en": "happy",
+     "pt": "feliz"
+    },
+    {
+     "en": "at school",
+     "pt": "na escola"
+    },
+    {
+     "en": "at home",
+     "pt": "em casa"
+    },
+    {
+     "en": "brother",
+     "pt": "irmão"
+    },
+    {
+     "en": "friend",
+     "pt": "amigo(a)"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about your best friend. Say his or her name, how old he or she is and where he or she is from. Write 12 words or more.",
+    "genero": "short text",
+    "min": 12,
+    "max": 28,
+    "modelo": "My best friend is Rafa. He is ten. He is from Curitiba and he is very funny.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei is/are em todas as frases (não esqueci o verbo)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "She happy today.",
+      "She is happy today.",
+      "She are happy today.",
+      "She am happy today."
+     ],
+     "r": 1,
+     "exp": "She combina com is, e o verbo não pode faltar."
+    },
+    {
+     "t": "gap",
+     "q": "My brothers ___ at school now.",
+     "resp": [
+      "are"
+     ],
+     "exp": "Brothers é plural (they), então usamos are."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "He is my friend and she is my sister.",
+     "exp": "Em 'she is' o som é 'chi iz'."
+    },
+    {
+     "t": "mc",
+     "q": "Which short form is correct for 'They are'?",
+     "op": [
+      "They's",
+      "Theyre",
+      "They're",
+      "They'r"
+     ],
+     "r": 2,
+     "exp": "They are vira They're, com apóstrofo no lugar do a."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Are",
+      "you",
+      "ten",
+      "years",
+      "old"
+     ],
+     "resp": "Are you ten years old?",
+     "exp": "Pergunta com be: Are + you + ..."
+    },
+    {
+     "t": "gap",
+     "q": "My mum isn't at work. She ___ at home. (use the verb be)",
+     "resp": [
+      "is",
+      "'s"
+     ],
+     "exp": "She is (She's) at home: she combina com is."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga como você está hoje.",
+     "frase": "How are you today?",
+     "modelo": "I am fine, thank you. I am a little tired.",
+     "min": 3,
+     "chave": [
+      "fine",
+      "good",
+      "happy",
+      "tired",
+      "ok",
+      "okay"
+     ],
+     "exp": "Use I am (I'm) + adjetivo: I'm fine."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence has a mistake?",
+     "op": [
+      "We are in class.",
+      "Ana is my cousin.",
+      "They is my teachers.",
+      "I am from Brazil."
+     ],
+     "r": 2,
+     "exp": "They é plural: They are my teachers."
+    },
+    {
+     "t": "gap",
+     "q": "Tom is ill. He ___ at school today. (forma negativa)",
+     "resp": [
+      "isn't",
+      "is not"
+     ],
+     "exp": "Is not = isn't."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "My family: have got",
+   "objetivo": "Falar de família e coisas que temos com have got / has got.",
+   "foco": "have got / has got; possessive 's; my, your, his, her",
+   "explicacao": [
+    "Com I, you, we, they: have got. Com he, she, it: has got. I have got a sister. She has got two dogs.",
+    "Para negar: haven't got / hasn't got. Para perguntar: Have you got a bike?",
+    "'s mostra posse: Ana's brother = o irmão da Ana. Pronomes: my, your, his, her.",
+    "Cuidado: com has o verbo não leva -s de novo: She has got (não She has gots)."
+   ],
+   "vocab": [
+    {
+     "en": "mother / mum",
+     "pt": "mãe"
+    },
+    {
+     "en": "father / dad",
+     "pt": "pai"
+    },
+    {
+     "en": "sister",
+     "pt": "irmã"
+    },
+    {
+     "en": "grandmother",
+     "pt": "avó"
+    },
+    {
+     "en": "uncle",
+     "pt": "tio"
+    },
+    {
+     "en": "pet",
+     "pt": "bicho de estimação"
+    },
+    {
+     "en": "dog",
+     "pt": "cachorro"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about your family. Say who is in your family and what pet you have got. Write 15 words or more.",
+    "genero": "short text",
+    "min": 15,
+    "max": 30,
+    "modelo": "I have got a big family. I have got two sisters and one brother. We have got a small dog. Her name is Mel.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei have got para eu/nós e has got para ele/ela?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "My sister have got a cat.",
+      "My sister has got a cat.",
+      "My sister has gots a cat.",
+      "My sister haves got a cat."
+     ],
+     "r": 1,
+     "exp": "Com he/she/it usamos has got."
+    },
+    {
+     "t": "gap",
+     "q": "I ___ got two brothers.",
+     "resp": [
+      "have",
+      "'ve"
+     ],
+     "exp": "Com I usamos have got."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "My dad has got a red car and my mum has got a bike.",
+     "exp": "'Has' tem o h aspirado: 'hãz'."
+    },
+    {
+     "t": "mc",
+     "q": "'This is Ana's dog.' What does 's mean?",
+     "op": [
+      "Ana is a dog",
+      "The dog belongs to Ana",
+      "Ana has a dog and a cat",
+      "Ana and dog"
+     ],
+     "r": 1,
+     "exp": "'s mostra posse: o cachorro da Ana."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Have",
+      "you",
+      "got",
+      "any",
+      "brothers",
+      "or",
+      "sisters"
+     ],
+     "resp": "Have you got any brothers or sisters?",
+     "exp": "Pergunta: Have + you + got + ..."
+    },
+    {
+     "t": "gap",
+     "q": "My grandma ___ got a big garden and a yellow house.",
+     "resp": [
+      "has",
+      "'s"
+     ],
+     "exp": "Grandma = she, então has got."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga quantos irmãos ou irmãs você tem.",
+     "frase": "Have you got any brothers or sisters?",
+     "modelo": "Yes, I have got one sister. Her name is Lia.",
+     "min": 4,
+     "chave": [
+      "sister",
+      "brother",
+      "no",
+      "yes",
+      "got"
+     ],
+     "exp": "Resposta curta: Yes, I have. / No, I haven't."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is about his family?",
+     "op": [
+      "His mother has got a new job.",
+      "He's mother has got a new job.",
+      "Him mother has got a new job.",
+      "Hes mother has got a new job."
+     ],
+     "r": 0,
+     "exp": "His é o pronome para 'dele'. He's é he is."
+    },
+    {
+     "t": "gap",
+     "q": "My brother ___ got a pet. He doesn't like animals. (negative, short)",
+     "resp": [
+      "hasn't",
+      "has not"
+     ],
+     "exp": "Negativa de he: hasn't got."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Describing things: colours and sizes",
+   "objetivo": "Descrever objetos e pessoas com adjetivos na ordem certa.",
+   "foco": "Adjectives before nouns; colours, sizes",
+   "explicacao": [
+    "Em inglês o adjetivo vem ANTES do substantivo: a red bag (não a bag red).",
+    "O adjetivo não muda no plural: two red bags, three big dogs.",
+    "Use a antes de consoante e an antes de vogal: a big bag, an orange hat.",
+    "Para vários adjetivos: tamanho antes de cor: a small blue cap."
+   ],
+   "vocab": [
+    {
+     "en": "big / small",
+     "pt": "grande / pequeno"
+    },
+    {
+     "en": "long / short",
+     "pt": "comprido / curto"
+    },
+    {
+     "en": "new / old",
+     "pt": "novo / velho"
+    },
+    {
+     "en": "red",
+     "pt": "vermelho"
+    },
+    {
+     "en": "bag",
+     "pt": "mochila"
+    },
+    {
+     "en": "hair",
+     "pt": "cabelo"
+    },
+    {
+     "en": "beautiful",
+     "pt": "bonito"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about your favourite toy or thing. Say what it is, what colour it is and how big it is. Write 15 words or more.",
+    "genero": "short text",
+    "min": 15,
+    "max": 30,
+    "modelo": "My favourite thing is my bike. It is a new red bike. It is not very big, but it is fast.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Coloquei os adjetivos antes do substantivo (a red bike)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Choose the correct order.",
+     "op": [
+      "a bag blue",
+      "a blue bag",
+      "blue a bag",
+      "a bag of blue"
+     ],
+     "r": 1,
+     "exp": "Adjetivo antes do substantivo: a blue bag."
+    },
+    {
+     "t": "gap",
+     "q": "I've got ___ orange hat. (a / an)",
+     "resp": [
+      "an"
+     ],
+     "exp": "Orange começa com som de vogal, então an."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "She has got long black hair and a small red bag.",
+     "exp": "'Hair' = 'hér'. 'Bag' = 'bég'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I have two reds bags.",
+      "I have two red bags.",
+      "I have two bags reds.",
+      "I have two bags red."
+     ],
+     "r": 1,
+     "exp": "O adjetivo vem antes e não muda no plural: two red bags."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "It",
+      "is",
+      "a",
+      "small",
+      "green",
+      "frog"
+     ],
+     "resp": "It is a small green frog.",
+     "exp": "Ordem: tamanho + cor + substantivo."
+    },
+    {
+     "t": "gap",
+     "q": "My cat has got a ___ tail. (comprido)",
+     "resp": [
+      "long"
+     ],
+     "exp": "Long = comprido; short = curto."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Descreva sua mochila ou estojo.",
+     "frase": "What colour is your bag?",
+     "modelo": "My bag is big and blue. It is new.",
+     "min": 4,
+     "chave": [
+      "bag",
+      "blue",
+      "red",
+      "black",
+      "big",
+      "small",
+      "green",
+      "colour"
+     ],
+     "exp": "Use My bag is + cor."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is better for a picture of a big brown dog?",
+     "op": [
+      "It is a brown big dog.",
+      "It is a big brown dog.",
+      "It is a dog big brown.",
+      "It is big a brown dog."
+     ],
+     "r": 1,
+     "exp": "Tamanho antes da cor: a big brown dog."
+    },
+    {
+     "t": "gap",
+     "q": "Look at Tom: he has got short brown ___. (cabelo)",
+     "resp": [
+      "hair"
+     ],
+     "exp": "Hair é incontável: short brown hair (sem -s)."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "There is / There are",
+   "objetivo": "Descrever um lugar dizendo o que existe nele.",
+   "foco": "There is / There are; some, a, any; in, on, under, next to",
+   "explicacao": [
+    "There is + singular: There is a lamp on the desk. There are + plural: There are two books on the bed.",
+    "Negativa: There isn't a TV. There aren't any chairs.",
+    "Lugares: in (dentro), on (em cima), under (embaixo), next to (ao lado de), behind (atrás de).",
+    "Não escreva 'Has a table': em inglês, para existir, use There is / There are."
+   ],
+   "vocab": [
+    {
+     "en": "bedroom",
+     "pt": "quarto"
+    },
+    {
+     "en": "kitchen",
+     "pt": "cozinha"
+    },
+    {
+     "en": "bed",
+     "pt": "cama"
+    },
+    {
+     "en": "desk",
+     "pt": "escrivaninha"
+    },
+    {
+     "en": "under",
+     "pt": "embaixo de"
+    },
+    {
+     "en": "next to",
+     "pt": "ao lado de"
+    },
+    {
+     "en": "window",
+     "pt": "janela"
+    },
+    {
+     "en": "there is",
+     "pt": "há (singular)"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about your bedroom. Say what there is in your room and where things are. Write 15 words or more.",
+    "genero": "short text",
+    "min": 15,
+    "max": 32,
+    "modelo": "There is a bed next to the window. There is a desk and a lamp. There are many books on the desk and a ball under the bed.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei there is com uma coisa e there are com várias?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "Has a lamp on the desk.",
+      "There has a lamp on the desk.",
+      "There is a lamp on the desk.",
+      "There are a lamp on the desk."
+     ],
+     "r": 2,
+     "exp": "Para existir em inglês: There is + singular."
+    },
+    {
+     "t": "gap",
+     "q": "There ___ three books on the table.",
+     "resp": [
+      "are"
+     ],
+     "exp": "Three books é plural, então There are."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "There is a ball under the bed and two books on the desk.",
+     "exp": "Em 'there is', o 'th' tem a língua entre os dentes."
+    },
+    {
+     "t": "mc",
+     "q": "Look: a cat is INSIDE a box. Which sentence is correct?",
+     "op": [
+      "The cat is on the box.",
+      "The cat is in the box.",
+      "The cat is under the box.",
+      "The cat is next the box."
+     ],
+     "r": 1,
+     "exp": "In = dentro."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "There",
+      "aren't",
+      "any",
+      "chairs",
+      "in",
+      "the",
+      "kitchen"
+     ],
+     "resp": "There aren't any chairs in the kitchen.",
+     "exp": "Negativa no plural: There aren't any + substantivo."
+    },
+    {
+     "t": "gap",
+     "q": "There ___ a TV in my bedroom. (forma negativa)",
+     "resp": [
+      "isn't",
+      "is not"
+     ],
+     "exp": "Negativa no singular: There isn't a TV."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que há no seu quarto.",
+     "frase": "What is there in your bedroom?",
+     "modelo": "There is a bed and a desk. There are some books.",
+     "min": 5,
+     "chave": [
+      "bed",
+      "desk",
+      "there",
+      "books",
+      "lamp",
+      "chair"
+     ],
+     "exp": "Comece com There is / There are."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is NOT correct?",
+     "op": [
+      "There are two windows in the kitchen.",
+      "There is a cat next to the door.",
+      "There is five apples on the plate.",
+      "There aren't any books here."
+     ],
+     "r": 2,
+     "exp": "Five apples é plural: There are five apples."
+    },
+    {
+     "t": "gap",
+     "q": "There is a ball ___ to the chair. (ao lado)",
+     "resp": [
+      "next"
+     ],
+     "exp": "Next to = ao lado de."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "My school day: present simple",
+   "objetivo": "Escrever sobre a rotina do dia com o present simple.",
+   "foco": "Present simple (I / he / she); -s and -es; time expressions",
+   "explicacao": [
+    "Usamos o present simple para rotina: I get up at seven. We have lunch at school.",
+    "Com he, she, it, o verbo ganha -s: She gets up. Com go, watch, teach e brush: -es (goes, watches, teaches, brushes).",
+    "Para negar: don't (I, you, we, they) e doesn't (he, she, it) + verbo sem -s: He doesn't eat fish.",
+    "Horas: at seven o'clock, at half past eight. Depois de doesn't o verbo fica sem -s."
+   ],
+   "vocab": [
+    {
+     "en": "to get up",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "to have breakfast",
+     "pt": "tomar café da manhã"
+    },
+    {
+     "en": "to go to school",
+     "pt": "ir à escola"
+    },
+    {
+     "en": "to brush your teeth",
+     "pt": "escovar os dentes"
+    },
+    {
+     "en": "o'clock",
+     "pt": "em ponto"
+    },
+    {
+     "en": "after school",
+     "pt": "depois da escola"
+    },
+    {
+     "en": "in the evening",
+     "pt": "à noite"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about your school day. Say what time you get up, what you have for breakfast and how you go to school. Write 15 words or more.",
+    "genero": "short text",
+    "min": 15,
+    "max": 32,
+    "modelo": "I get up at half past six. I have bread and milk for breakfast. Then I go to school by bus with my sister.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei -s ou -es com he/she (She goes, He gets)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "My brother get up at six.",
+      "My brother gets up at six.",
+      "My brother getting up at six.",
+      "My brother gots up at six."
+     ],
+     "r": 1,
+     "exp": "Com he/she/it o verbo ganha -s: gets."
+    },
+    {
+     "t": "gap",
+     "q": "I ___ breakfast at seven o'clock. (have)",
+     "resp": [
+      "have"
+     ],
+     "exp": "Com I usamos o verbo na forma base: I have breakfast."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "I get up at half past six and I brush my teeth.",
+     "exp": "'Teeth' = 'tiif'; 'half' = 'háf' (o l é mudo)."
+    },
+    {
+     "t": "mc",
+     "q": "What time is it? 7:30",
+     "op": [
+      "It's half past seven.",
+      "It's half to seven.",
+      "It's seven and thirty o'clock.",
+      "It's seven half."
+     ],
+     "r": 0,
+     "exp": "7:30 = half past seven. O'clock só é usado para horas em ponto."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "goes",
+      "to",
+      "school",
+      "by",
+      "bus"
+     ],
+     "resp": "She goes to school by bus.",
+     "exp": "Com she, go vira goes."
+    },
+    {
+     "t": "gap",
+     "q": "My brother ___ eat eggs. He doesn't like them. (negative)",
+     "resp": [
+      "doesn't",
+      "does not"
+     ],
+     "exp": "Com he usamos doesn't + verbo sem -s."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga a que horas você acorda.",
+     "frase": "What time do you get up?",
+     "modelo": "I get up at seven o'clock.",
+     "min": 4,
+     "chave": [
+      "get",
+      "up",
+      "seven",
+      "six",
+      "eight",
+      "o'clock",
+      "half"
+     ],
+     "exp": "Use I get up at + hora."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence has a mistake?",
+     "op": [
+      "He watches TV after school.",
+      "She doesn't like milk.",
+      "My dad doesn't works on Sunday.",
+      "We play football at break."
+     ],
+     "r": 2,
+     "exp": "Depois de doesn't o verbo fica sem -s: doesn't work."
+    },
+    {
+     "t": "gap",
+     "q": "My mum ___ English at a big school. (teach)",
+     "resp": [
+      "teaches"
+     ],
+     "exp": "Verbos terminados em -ch ganham -es: teaches."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Days, times and places: at, on, in",
+   "objetivo": "Usar at, on e in com horas, dias e lugares em frases curtas.",
+   "foco": "Prepositions at / on / in; days of the week",
+   "explicacao": [
+    "At para horas: at six, at noon. On para dias: on Monday, on Saturday morning. In para partes do dia: in the morning, in the evening.",
+    "At night (à noite), mas in the evening. Também: in July, in summer.",
+    "Lugares: at school, at home, in the park, in my bag.",
+    "Brasileiros costumam trocar: escreva on Sunday (não in Sunday) e at home (não in home)."
+   ],
+   "vocab": [
+    {
+     "en": "Monday ... Sunday",
+     "pt": "segunda ... domingo"
+    },
+    {
+     "en": "weekend",
+     "pt": "fim de semana"
+    },
+    {
+     "en": "morning",
+     "pt": "manhã"
+    },
+    {
+     "en": "afternoon",
+     "pt": "tarde"
+    },
+    {
+     "en": "evening",
+     "pt": "noite (começo)"
+    },
+    {
+     "en": "at night",
+     "pt": "à noite / de madrugada"
+    },
+    {
+     "en": "every",
+     "pt": "todo / toda"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about your weekend. Say what you do on Saturday and on Sunday. Write 15 words or more.",
+    "genero": "short text",
+    "min": 15,
+    "max": 32,
+    "modelo": "On Saturday morning I play football in the park. In the afternoon I visit my grandma. On Sunday I stay at home.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei on com os dias, in com manhã/tarde e at com horas?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "I play football in Saturday.",
+      "I play football on Saturday.",
+      "I play football at Saturday.",
+      "I play football Saturday on."
+     ],
+     "r": 1,
+     "exp": "Dias da semana usam on."
+    },
+    {
+     "t": "gap",
+     "q": "We have lunch ___ twelve o'clock.",
+     "resp": [
+      "at"
+     ],
+     "exp": "Horas usam at: at twelve o'clock."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "On Sunday morning we go to the park.",
+     "exp": "'Sunday' = 'sândei'; 'morning' = 'mórnin'."
+    },
+    {
+     "t": "mc",
+     "q": "Which is correct?",
+     "op": [
+      "in the evening",
+      "at the evening",
+      "on the evening",
+      "in evening the"
+     ],
+     "r": 0,
+     "exp": "Partes do dia usam in the: in the morning, in the evening."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "stay",
+      "at",
+      "home",
+      "on",
+      "Sunday",
+      "afternoon"
+     ],
+     "resp": "I stay at home on Sunday afternoon.",
+     "exp": "Home usa at; dia e parte do dia: on Sunday afternoon.",
+     "alt": [
+      "On Sunday afternoon I stay at home."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "My cousin visits us ___ July. (julho)",
+     "resp": [
+      "in"
+     ],
+     "exp": "Meses usam in: in July."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você faz no sábado.",
+     "frase": "What do you do on Saturday?",
+     "modelo": "On Saturday I play with my friends in the park.",
+     "min": 5,
+     "chave": [
+      "saturday",
+      "play",
+      "visit",
+      "go",
+      "friends",
+      "park",
+      "home"
+     ],
+     "exp": "Comece com On Saturday I..."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is NOT correct?",
+     "op": [
+      "She is at school on Monday.",
+      "They play in the park at four o'clock.",
+      "He goes to bed in night.",
+      "We eat dinner in the evening."
+     ],
+     "r": 2,
+     "exp": "A forma correta é at night."
+    },
+    {
+     "t": "gap",
+     "q": "I do my homework ___ the afternoon on Tuesday. Write the missing word.",
+     "resp": [
+      "in"
+     ],
+     "exp": "Partes do dia usam in: in the afternoon; já on Tuesday usa on."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Likes and dislikes",
+   "objetivo": "Dizer do que você gosta e não gosta, com like + palavra ou verbo com -ing.",
+   "foco": "like / love / don't like + noun or -ing; because (intro)",
+   "explicacao": [
+    "I like pizza. I love dogs. I don't like fish. Com he/she: She likes tea. She doesn't like fish.",
+    "Depois de like, love e don't like, você pode usar -ing: I like swimming. He loves playing games.",
+    "Em perguntas: Do you like apples? Does she like football? Resposta: Yes, I do. / No, she doesn't.",
+    "Cuidado: não diga 'I like of pizza'. Em inglês, não existe 'of' depois de like."
+   ],
+   "vocab": [
+    {
+     "en": "favourite",
+     "pt": "preferido"
+    },
+    {
+     "en": "to like / to love",
+     "pt": "gostar / adorar"
+    },
+    {
+     "en": "to hate",
+     "pt": "odiar"
+    },
+    {
+     "en": "fruit",
+     "pt": "fruta"
+    },
+    {
+     "en": "swimming",
+     "pt": "natação / nadar"
+    },
+    {
+     "en": "music",
+     "pt": "música"
+    },
+    {
+     "en": "pizza",
+     "pt": "pizza"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about the food and the sport you like. Say one thing you like and one thing you don't like. Write 15 words or more.",
+    "genero": "short text",
+    "min": 15,
+    "max": 32,
+    "modelo": "I like pizza and ice cream. I love playing football with my friends. I don't like fish, and I don't like swimming.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei like/love e don't like com o -ing quando falei de atividades?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I like of pizza.",
+      "I like pizza.",
+      "I likes pizza.",
+      "I am like pizza."
+     ],
+     "r": 1,
+     "exp": "Like é verbo direto: I like pizza."
+    },
+    {
+     "t": "gap",
+     "q": "My sister ___ apples. (likes / like)",
+     "resp": [
+      "likes"
+     ],
+     "exp": "Com she o verbo ganha -s: likes."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "I love swimming, but I don't like cold water.",
+     "exp": "'Water' em inglês britânico: 'uóta'."
+    },
+    {
+     "t": "mc",
+     "q": "Which answer is correct for 'Does your dad like fish?'",
+     "op": [
+      "Yes, he does.",
+      "Yes, he likes.",
+      "Yes, he do.",
+      "Yes, he is."
+     ],
+     "r": 0,
+     "exp": "Resposta curta repete o auxiliar: Yes, he does."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "doesn't",
+      "like",
+      "playing",
+      "computer",
+      "games"
+     ],
+     "resp": "She doesn't like playing computer games.",
+     "exp": "Depois de doesn't, like fica sem -s e vem o verbo com -ing."
+    },
+    {
+     "t": "gap",
+     "q": "He loves ___ pictures. (draw)",
+     "resp": [
+      "drawing"
+     ],
+     "exp": "Depois de love, o verbo ganha -ing: drawing."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga uma comida de que você gosta.",
+     "frase": "What food do you like?",
+     "modelo": "I like pasta and chocolate. I don't like fish.",
+     "min": 4,
+     "chave": [
+      "like",
+      "love",
+      "pizza",
+      "pasta",
+      "chocolate",
+      "fruit",
+      "rice"
+     ],
+     "exp": "Use I like + comida."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence has a mistake?",
+     "op": [
+      "Do you like tea?",
+      "My brother not like tea.",
+      "I don't like tea.",
+      "She likes tea."
+     ],
+     "r": 1,
+     "exp": "A negativa é doesn't like: My brother doesn't like tea."
+    },
+    {
+     "t": "gap",
+     "q": "Tom ___ like cold milk. He prefers hot milk. (negative)",
+     "resp": [
+      "doesn't",
+      "does not"
+     ],
+     "exp": "Com Tom (he), a negativa é doesn't."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "I can, I can't",
+   "objetivo": "Falar do que sabemos e não sabemos fazer com can e can't.",
+   "foco": "can / can't + base verb; questions with Can ...?",
+   "explicacao": [
+    "Can mostra capacidade: I can swim. She can play the piano.",
+    "Can não muda e o verbo seguinte fica sem to e sem -s: He can run (não He cans runs / can to run).",
+    "Negativa: can't (cannot). Pergunta: Can you ride a bike? Yes, I can. / No, I can't.",
+    "Depois de can use o verbo base: Can you help me?"
+   ],
+   "vocab": [
+    {
+     "en": "to swim",
+     "pt": "nadar"
+    },
+    {
+     "en": "to ride a bike",
+     "pt": "andar de bicicleta"
+    },
+    {
+     "en": "to sing",
+     "pt": "cantar"
+    },
+    {
+     "en": "to cook",
+     "pt": "cozinhar"
+    },
+    {
+     "en": "to speak",
+     "pt": "falar (idioma)"
+    },
+    {
+     "en": "fast",
+     "pt": "rápido"
+    },
+    {
+     "en": "well",
+     "pt": "bem"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about what you can do and what you can't do. Say two things you can do and one thing you can't do. Write 15 words or more.",
+    "genero": "short text",
+    "min": 15,
+    "max": 32,
+    "modelo": "I can swim and I can ride a bike. I can't sing very well, but I can play the guitar. My brother can cook.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei can/can't + verbo sem to e sem -s?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "She can swims.",
+      "She can swim.",
+      "She can to swim.",
+      "She cans swim."
+     ],
+     "r": 1,
+     "exp": "Can + verbo base, sem -s e sem to."
+    },
+    {
+     "t": "gap",
+     "q": "My little brother ___ read yet. He is only three. (negative, short)",
+     "resp": [
+      "can't",
+      "cannot"
+     ],
+     "exp": "Can't = não consegue."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "I can swim very well, but I can't ride a bike.",
+     "exp": "'Can't' em inglês britânico: 'cant' com a longo. 'Can' é curto: 'kən'."
+    },
+    {
+     "t": "mc",
+     "q": "Which question is correct?",
+     "op": [
+      "Can you to swim?",
+      "You can swim?",
+      "Can you swim?",
+      "Do you can swim?"
+     ],
+     "r": 2,
+     "exp": "Pergunta com can: Can + you + verbo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Can",
+      "your",
+      "sister",
+      "play",
+      "the",
+      "piano"
+     ],
+     "resp": "Can your sister play the piano?",
+     "exp": "Can vem antes do sujeito na pergunta."
+    },
+    {
+     "t": "gap",
+     "q": "Yes, I can. I can speak English ___ a little Spanish. (e)",
+     "resp": [
+      "and"
+     ],
+     "exp": "And liga duas coisas."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga uma coisa que você sabe fazer.",
+     "frase": "What can you do well?",
+     "modelo": "I can play football and I can draw.",
+     "min": 4,
+     "chave": [
+      "can",
+      "play",
+      "swim",
+      "draw",
+      "sing",
+      "cook",
+      "run",
+      "ride"
+     ],
+     "exp": "Use I can + verbo."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence has a mistake?",
+     "op": [
+      "He can run fast.",
+      "They can't see the board.",
+      "She can plays the guitar.",
+      "Can I come in?"
+     ],
+     "r": 2,
+     "exp": "Depois de can o verbo fica sem -s: She can play."
+    },
+    {
+     "t": "gap",
+     "q": "The door is locked. I can't ___ it. (abrir)",
+     "resp": [
+      "open"
+     ],
+     "exp": "Depois de can't vem o verbo base, sem to e sem -ing: I can't open it."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Joining ideas with and, but, or",
+   "objetivo": "Ligar duas frases curtas em uma com and, but e or.",
+   "foco": "Linking words: and, but, or; commas",
+   "explicacao": [
+    "And junta ideias iguais: I like tea and cake.",
+    "But mostra contraste: I like football, but I don't like tennis.",
+    "Or mostra escolha: Do you want tea or milk?",
+    "Quando and/but liga duas frases completas, ponha vírgula antes de but: I'm tired, but I'm happy."
+   ],
+   "vocab": [
+    {
+     "en": "and",
+     "pt": "e"
+    },
+    {
+     "en": "but",
+     "pt": "mas"
+    },
+    {
+     "en": "or",
+     "pt": "ou"
+    },
+    {
+     "en": "also",
+     "pt": "também"
+    },
+    {
+     "en": "then",
+     "pt": "depois / então"
+    },
+    {
+     "en": "tired",
+     "pt": "cansado"
+    },
+    {
+     "en": "sometimes",
+     "pt": "às vezes"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about your free time. Say one thing you like and one thing you don't like. Use and and but in your text. Write 18 words or more.",
+    "genero": "short text",
+    "min": 18,
+    "max": 35,
+    "modelo": "I like reading and I like drawing, but I don't like playing computer games. I sometimes watch TV or listen to music.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei and para juntar e but para contrastar?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which word is best? 'I like tea, ___ I don't like coffee.'",
+     "op": [
+      "and",
+      "but",
+      "or",
+      "so"
+     ],
+     "r": 1,
+     "exp": "But mostra contraste entre gostar e não gostar."
+    },
+    {
+     "t": "gap",
+     "q": "I have a dog ___ a cat. (e)",
+     "resp": [
+      "and"
+     ],
+     "exp": "And liga dois itens parecidos."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "I like reading, but I don't like writing.",
+     "exp": "Faça uma pequena pausa na vírgula antes de 'but'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is written correctly?",
+     "op": [
+      "I am tired, but happy I am.",
+      "I am tired, but I am happy.",
+      "I am tired but, am happy.",
+      "I am tired, but I happy."
+     ],
+     "r": 1,
+     "exp": "Duas frases completas ligadas por but: vírgula antes de but, e cada frase tem sujeito + verbo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Do",
+      "you",
+      "want",
+      "tea",
+      "or",
+      "milk"
+     ],
+     "resp": "Do you want tea or milk?",
+     "exp": "Or oferece uma escolha entre duas opções."
+    },
+    {
+     "t": "gap",
+     "q": "Ana can sing, ___ she can't dance. (mas)",
+     "resp": [
+      "but"
+     ],
+     "exp": "But = mas."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga uma coisa de que você gosta e uma de que não gosta.",
+     "frase": "What do you like and what don't you like?",
+     "modelo": "I like pizza, but I don't like fish.",
+     "min": 5,
+     "chave": [
+      "like",
+      "love",
+      "pizza",
+      "but",
+      "and",
+      "don't"
+     ],
+     "exp": "Use but para ligar: I like..., but I don't like..."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is best?",
+     "op": [
+      "I am hungry, and I eat a sandwich.",
+      "I am hungry, so I eat a sandwich.",
+      "I am hungry, but I eat a sandwich.",
+      "I am hungry, or I eat a sandwich."
+     ],
+     "r": 1,
+     "exp": "Para mostrar resultado, use so: Estou com fome, então como."
+    },
+    {
+     "t": "gap",
+     "q": "It is sunny, ___ it is very cold. (but / and)",
+     "resp": [
+      "but"
+     ],
+     "exp": "Sol e frio é um contraste: but."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Giving reasons with because",
+   "objetivo": "Explicar o motivo de uma opinião ou ação com because.",
+   "foco": "because + reason; why? questions",
+   "explicacao": [
+    "Why...? pergunta o motivo. Because responde: Why do you like summer? Because I can swim.",
+    "Because liga duas ideias: I like dogs because they are friendly.",
+    "Depois de because vem uma frase completa, com sujeito e verbo: because he is tired (não because tired).",
+    "Não confunda because (porque) com but (mas) e so (então)."
+   ],
+   "vocab": [
+    {
+     "en": "because",
+     "pt": "porque"
+    },
+    {
+     "en": "why",
+     "pt": "por que"
+    },
+    {
+     "en": "friendly",
+     "pt": "simpático / amigável"
+    },
+    {
+     "en": "funny",
+     "pt": "engraçado"
+    },
+    {
+     "en": "tasty",
+     "pt": "gostoso"
+    },
+    {
+     "en": "favourite",
+     "pt": "preferido"
+    },
+    {
+     "en": "reason",
+     "pt": "motivo"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about your favourite animal. Say what it is and why you like it. Use because. Write 18 words or more.",
+    "genero": "short text",
+    "min": 18,
+    "max": 35,
+    "modelo": "My favourite animal is the dog because it is friendly. I also like cats because they are soft, but I like dogs more.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei because com uma frase completa (sujeito + verbo)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which word answers 'Why do you like Fridays?'",
+     "op": [
+      "Because there is no school.",
+      "But there is no school.",
+      "And no school.",
+      "Or no school."
+     ],
+     "r": 0,
+     "exp": "Why pede o motivo; a resposta começa com because."
+    },
+    {
+     "t": "gap",
+     "q": "I like my teacher ___ she is funny. (porque)",
+     "resp": [
+      "because"
+     ],
+     "exp": "Because = porque."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "I like summer because I can swim every day.",
+     "exp": "'Because' = 'bicóz'; 'summer' = 'sâma'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I like dogs because friendly.",
+      "I like dogs because they are friendly.",
+      "I like dogs because are friendly.",
+      "I like dogs because they friendly."
+     ],
+     "r": 1,
+     "exp": "Depois de because vem sujeito + verbo: they are friendly."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "like",
+      "pizza",
+      "because",
+      "it",
+      "is",
+      "tasty"
+     ],
+     "resp": "I like pizza because it is tasty.",
+     "exp": "Ideia principal + because + motivo."
+    },
+    {
+     "t": "gap",
+     "q": "Mum is happy ___ it is her birthday. (porque)",
+     "resp": [
+      "because"
+     ],
+     "exp": "Because liga a emoção ao motivo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga por que você gosta do seu dia preferido.",
+     "frase": "Why do you like your favourite day?",
+     "modelo": "I like Saturday because I can play with my friends.",
+     "min": 6,
+     "chave": [
+      "because",
+      "like",
+      "saturday",
+      "sunday",
+      "friday",
+      "play"
+     ],
+     "exp": "Responda com Because... ou I like ... because ..."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the best sentence.",
+     "op": [
+      "He is sad because it is raining and his picnic is cancelled.",
+      "He is sad because the rain.",
+      "He is sad because raining.",
+      "He is sad because is rain."
+     ],
+     "r": 0,
+     "exp": "Because + frase completa: it is raining."
+    },
+    {
+     "t": "gap",
+     "q": "We stay at home today ___ it is cold. (because)",
+     "resp": [
+      "because"
+     ],
+     "exp": "Mostra o motivo de ficar em casa."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Yesterday and last weekend: past simple",
+   "objetivo": "Contar o que aconteceu no passado com verbos regulares e irregulares comuns.",
+   "foco": "Past simple: was / were, regular -ed, go–went, have–had, see–saw",
+   "explicacao": [
+    "Regulares ganham -ed: play → played, visit → visited, watch → watched. Com y: study → studied.",
+    "Irregulares comuns: go → went, have → had, see → saw, eat → ate, buy → bought.",
+    "Be no passado: I/he/she/it was; you/we/they were. Marcadores: yesterday, last Saturday, two days ago.",
+    "Negativa e pergunta usam did + verbo base: I didn't go. Did you play? (nunca 'didn't went')."
+   ],
+   "vocab": [
+    {
+     "en": "yesterday",
+     "pt": "ontem"
+    },
+    {
+     "en": "last weekend",
+     "pt": "fim de semana passado"
+    },
+    {
+     "en": "went",
+     "pt": "foi / fui"
+    },
+    {
+     "en": "had",
+     "pt": "teve / tive"
+    },
+    {
+     "en": "saw",
+     "pt": "viu / vi"
+    },
+    {
+     "en": "played",
+     "pt": "jogou / brincou"
+    },
+    {
+     "en": "ago",
+     "pt": "atrás (tempo)"
+    }
+   ],
+   "material": {
+    "tarefa": "Write about last weekend. Say where you went and what you did there. Write 20 words or more.",
+    "genero": "short text",
+    "min": 20,
+    "max": 38,
+    "modelo": "Last Saturday I went to the beach with my family. We played football and I swam in the sea. In the evening we ate pizza.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei o passado em todos os verbos (went, played, had)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Choose the correct sentence.",
+     "op": [
+      "Yesterday I go to the park.",
+      "Yesterday I went to the park.",
+      "Yesterday I goed to the park.",
+      "Yesterday I going to the park."
+     ],
+     "r": 1,
+     "exp": "Go é irregular: went."
+    },
+    {
+     "t": "gap",
+     "q": "Last night I ___ TV for two hours. (watch)",
+     "resp": [
+      "watched"
+     ],
+     "exp": "Regulares ganham -ed: watched."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Yesterday we went to the cinema and saw a funny film.",
+     "exp": "'Went' = 'uént'; 'saw' = 'só'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "She didn't went to school.",
+      "She didn't go to school.",
+      "She not went to school.",
+      "She wasn't go to school."
+     ],
+     "r": 1,
+     "exp": "Depois de didn't o verbo volta ao normal: go."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "had",
+      "lunch",
+      "at",
+      "my",
+      "grandma's",
+      "house"
+     ],
+     "resp": "We had lunch at my grandma's house.",
+     "exp": "Had = passado de have."
+    },
+    {
+     "t": "gap",
+     "q": "My brother ___ at home yesterday. He was ill. (be)",
+     "resp": [
+      "was"
+     ],
+     "exp": "Be no passado: I/he/she/it was."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você fez ontem.",
+     "frase": "What did you do yesterday?",
+     "modelo": "Yesterday I played football and I did my homework.",
+     "min": 5,
+     "chave": [
+      "played",
+      "watched",
+      "went",
+      "had",
+      "visited",
+      "yesterday",
+      "did"
+     ],
+     "exp": "Use verbos no passado: played, went, did."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "Did you saw the match?",
+      "Did you see the match?",
+      "Did you seen the match?",
+      "You did see the match?"
+     ],
+     "r": 1,
+     "exp": "Did + sujeito + verbo base: Did you see ...?"
+    },
+    {
+     "t": "gap",
+     "q": "They ___ a new bike two days ago. (buy)",
+     "resp": [
+      "bought"
+     ],
+     "exp": "Buy é irregular: bought."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Cards and postcards",
+   "objetivo": "Escrever cartões de aniversário e cartões-postais curtos.",
+   "foco": "Greetings; Happy birthday; wishes; postcards (I'm/we're, the weather)",
+   "explicacao": [
+    "Cartão de aniversário: Dear + nome, Happy birthday!, uma frase de desejo e Love from + seu nome.",
+    "Desejos: I hope you have a great day. Have fun! Best wishes.",
+    "Cartão-postal: diga onde está e o que faz. Hello from Rio! The weather is hot and sunny. I'm swimming every day.",
+    "Termine com Love, ou See you soon! e seu nome. Use frases curtas."
+   ],
+   "vocab": [
+    {
+     "en": "birthday",
+     "pt": "aniversário"
+    },
+    {
+     "en": "present / gift",
+     "pt": "presente"
+    },
+    {
+     "en": "card",
+     "pt": "cartão"
+    },
+    {
+     "en": "postcard",
+     "pt": "cartão-postal"
+    },
+    {
+     "en": "weather",
+     "pt": "tempo (clima)"
+    },
+    {
+     "en": "hope",
+     "pt": "esperar / desejar"
+    },
+    {
+     "en": "Love from ...",
+     "pt": "Com carinho, ..."
+    }
+   ],
+   "material": {
+    "tarefa": "It is your friend Lucy's birthday. Write her a birthday card. Say happy birthday, say what present you have for her and say what you hope she does. Write 20 words or more.",
+    "genero": "card",
+    "min": 20,
+    "max": 38,
+    "modelo": "Dear Lucy,\nHappy birthday! I have a small present for you. It is a book about horses. I hope you have a great day with your family.\nLove from Bia",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Comecei com Dear + nome e terminei com Love from + meu nome?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which is the best beginning for a birthday card to Lucy?",
+     "op": [
+      "Dear Lucy,",
+      "Hello Mrs Lucy,",
+      "To the Lucy,",
+      "Lucy dear to,"
+     ],
+     "r": 0,
+     "exp": "Dear + nome é a abertura normal em cartões."
+    },
+    {
+     "t": "gap",
+     "q": "Happy ___, Lucy! You are ten today. (aniversário)",
+     "resp": [
+      "birthday"
+     ],
+     "exp": "Happy birthday! é a felicitação mais comum."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Happy birthday! I hope you have a great day.",
+     "exp": "'Birthday' = 'bârthdei'; 'hope' = 'rôup'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is best for a postcard from the beach?",
+     "op": [
+      "Hello from the beach! The weather is hot and sunny.",
+      "I am the weather hot at beach.",
+      "The beach postcard is me.",
+      "Hello beach, the sun weather."
+     ],
+     "r": 0,
+     "exp": "Num cartão-postal, diga onde está e como está o tempo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "hope",
+      "you",
+      "have",
+      "a",
+      "great",
+      "day"
+     ],
+     "resp": "I hope you have a great day.",
+     "exp": "Hope + frase completa: I hope you have..."
+    },
+    {
+     "t": "gap",
+     "q": "Dear Grandma, thank you for my present. Love ___ Pedro",
+     "resp": [
+      "from"
+     ],
+     "exp": "Love from + nome."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga uma frase de felicitação para um amigo.",
+     "frase": "What do you say on a friend's birthday?",
+     "modelo": "Happy birthday! I hope you have a lovely day.",
+     "min": 5,
+     "chave": [
+      "happy",
+      "birthday",
+      "hope",
+      "day",
+      "wish",
+      "great",
+      "fun"
+     ],
+     "exp": "Comece com Happy birthday!"
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is a good ending for a postcard?",
+     "op": [
+      "See you soon! Love, Tom",
+      "Finish card, Tom",
+      "Goodbye to postcard.",
+      "Your sincerely Tom"
+     ],
+     "r": 0,
+     "exp": "See you soon! Love, + nome é um final informal natural."
+    },
+    {
+     "t": "gap",
+     "q": "Hello from London! The weather ___ cold, but the people are friendly. (be)",
+     "resp": [
+      "is",
+      "'s"
+     ],
+     "exp": "Weather é singular: the weather is."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Notes, invitations and replies",
+   "objetivo": "Escrever um bilhete curto com convite, hora, lugar e pedido.",
+   "foco": "Please, would like, Can you ...?; time and place; Why don't we ...?",
+   "explicacao": [
+    "Convite: Would you like to come to my party? / Can you come to my house on Saturday?",
+    "Dê informações: o quê, quando e onde: My party is on Saturday at four o'clock at my house.",
+    "Resposta: Yes, I'd love to! / Sorry, I can't. I'm busy.",
+    "Peça com please e agradeça com thank you: Please bring a ball. Thank you!"
+   ],
+   "vocab": [
+    {
+     "en": "party",
+     "pt": "festa"
+    },
+    {
+     "en": "invite",
+     "pt": "convidar"
+    },
+    {
+     "en": "would you like to ...?",
+     "pt": "você gostaria de ...?"
+    },
+    {
+     "en": "bring",
+     "pt": "trazer"
+    },
+    {
+     "en": "busy",
+     "pt": "ocupado"
+    },
+    {
+     "en": "please",
+     "pt": "por favor"
+    },
+    {
+     "en": "at my house",
+     "pt": "na minha casa"
+    }
+   ],
+   "material": {
+    "tarefa": "You are having a small party on Saturday. Write a note to your friend Sam. In your note: invite Sam to the party, say the time and the place, and ask Sam to bring something. Write 20 words or more.",
+    "genero": "note",
+    "min": 20,
+    "max": 40,
+    "modelo": "Hi Sam,\nWould you like to come to my party on Saturday? It is at four o'clock at my house. Please bring a ball for the games.\nBye for now,\nNico",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Convidei, disse hora e lugar e pedi para trazer algo?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is a polite invitation?",
+     "op": [
+      "Come to my party!",
+      "Would you like to come to my party?",
+      "You come my party.",
+      "Party my is Saturday."
+     ],
+     "r": 1,
+     "exp": "Would you like to...? é um convite educado."
+    },
+    {
+     "t": "gap",
+     "q": "My party is ___ Saturday at four o'clock. (sábado)",
+     "resp": [
+      "on"
+     ],
+     "exp": "Dias da semana usam on."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Would you like to come to my party on Saturday?",
+     "exp": "'Would you' soa como 'uóju'."
+    },
+    {
+     "t": "mc",
+     "q": "Which answer is a nice reply to an invitation, when you can't go?",
+     "op": [
+      "No.",
+      "Sorry, I can't. I'm busy on Saturday.",
+      "I am not coming, bye.",
+      "Because no."
+     ],
+     "r": 1,
+     "exp": "Sorry, I can't + motivo é uma resposta educada."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Can",
+      "you",
+      "bring",
+      "a",
+      "ball",
+      "please"
+     ],
+     "resp": "Can you bring a ball, please?",
+     "exp": "Please pode ficar no final, depois de vírgula.",
+     "alt": [
+      "Can you please bring a ball?",
+      "Please can you bring a ball?"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Thank you ___ your invitation. I'd love to come! (por)",
+     "resp": [
+      "for"
+     ],
+     "exp": "Thank you for + nome."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Aceite um convite para uma festa.",
+     "frase": "Would you like to come to my party?",
+     "modelo": "Yes, I would love to come. Thank you for inviting me.",
+     "min": 5,
+     "chave": [
+      "yes",
+      "love",
+      "thank",
+      "come",
+      "sorry",
+      "great"
+     ],
+     "exp": "Yes, I'd love to! é a resposta natural."
+    },
+    {
+     "t": "mc",
+     "q": "Which note is complete (what, when, where)?",
+     "op": [
+      "Come to my party.",
+      "My party is on Sunday at three o'clock at my house.",
+      "My party is on Sunday.",
+      "Party at my house, please."
+     ],
+     "r": 1,
+     "exp": "Tem o quê (party), quando (Sunday, three) e onde (my house)."
+    },
+    {
+     "t": "gap",
+     "q": "Please bring ___ ball and some water. (uma)",
+     "resp": [
+      "a",
+      "one"
+     ],
+     "exp": "A ball = uma bola."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Mock test: pictures and a short story",
+   "objetivo": "Fazer um simulado no formato da prova: completar frases, responder perguntas e escrever uma história curta.",
+   "foco": "Movers/Flyers writing: sentences about pictures; short story of 20–40 words",
+   "explicacao": [
+    "No simulado você faz exercícios parecidos com a prova: completar frases sobre uma figura, ordenar palavras, responder perguntas e escrever uma história curta.",
+    "Na história, conte em ordem: onde estavam, o que aconteceu e como terminou. Use went, saw, had, was e conectivos and, but, because, then.",
+    "Escreva frases curtas e completas, com maiúscula no início e ponto no final.",
+    "Releia no fim: verbos no passado, as palavras na ordem certa e a quantidade de palavras (20–40)."
+   ],
+   "vocab": [
+    {
+     "en": "kite",
+     "pt": "pipa"
+    },
+    {
+     "en": "tree",
+     "pt": "árvore"
+    },
+    {
+     "en": "ladder",
+     "pt": "escada"
+    },
+    {
+     "en": "then",
+     "pt": "depois"
+    },
+    {
+     "en": "suddenly",
+     "pt": "de repente"
+    },
+    {
+     "en": "help",
+     "pt": "ajudar"
+    },
+    {
+     "en": "story",
+     "pt": "história"
+    }
+   ],
+   "material": {
+    "tarefa": "Look at the three pictures. Picture 1: Sam and his dad are at the beach with a red kite. Picture 2: The kite is in a tree. Sam is sad. Picture 3: A girl has a ladder and Sam is happy. Write the story. Write 20 words or more.",
+    "genero": "story",
+    "min": 20,
+    "max": 40,
+    "modelo": "Sam and his dad went to the beach on Saturday. They had a red kite, but the wind took it into a tree. Then a girl brought a ladder and helped them. Sam was happy.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com letra maiúscula e termina com ponto (ou ?)?",
+     "Escrevi o número de palavras pedido?",
+     "Contei a história na ordem das três figuras?",
+     "Usei o passado (went, had, was) e conectivos (but, then)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Picture: a boy and a dog are in the park. Which sentence is best?",
+     "op": [
+      "The boy and the dog is in the park.",
+      "The boy and the dog are in the park.",
+      "The boy and the dog in park.",
+      "The boy and the dog are on the park."
+     ],
+     "r": 1,
+     "exp": "Dois sujeitos (the boy and the dog) pedem are; e in the park."
+    },
+    {
+     "t": "gap",
+     "q": "Picture: a girl has a red bag. → The girl ___ a red bag. (has got / has)",
+     "resp": [
+      "has",
+      "has got"
+     ],
+     "exp": "Com she: has (got)."
+    },
+    {
+     "t": "mc",
+     "q": "Picture: a cat is sleeping under the table. Which sentence is correct?",
+     "op": [
+      "The cat is under the table.",
+      "The cat is on the table.",
+      "The cat is next the table.",
+      "The cat under is the table."
+     ],
+     "r": 0,
+     "exp": "Under = embaixo de."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "There",
+      "are",
+      "three",
+      "birds",
+      "in",
+      "the",
+      "tree"
+     ],
+     "resp": "There are three birds in the tree.",
+     "exp": "There are + plural + lugar."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Yesterday we went to the park and played with a red ball.",
+     "exp": "'Played' = 'plêid'; 'went' = 'uént'."
+    },
+    {
+     "t": "gap",
+     "q": "Last Sunday Tom ___ to the zoo with his uncle. (go)",
+     "resp": [
+      "went"
+     ],
+     "exp": "Go é irregular: went."
+    },
+    {
+     "t": "mc",
+     "q": "Which two sentences go best together in a story?",
+     "op": [
+      "It was raining, so we stayed at home.",
+      "It was raining, so we goes to the park.",
+      "It was raining, but we stay home.",
+      "It rains, so we stayed at home."
+     ],
+     "r": 0,
+     "exp": "Passado + conectivo so: It was raining, so we stayed at home."
+    },
+    {
+     "t": "gap",
+     "q": "The boy is sad ___ he lost his kite. (porque)",
+     "resp": [
+      "because"
+     ],
+     "exp": "Because dá o motivo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte em duas frases o que você fez no último fim de semana.",
+     "frase": "What did you do last weekend?",
+     "modelo": "Last weekend I went to the park with my cousin. We played football.",
+     "min": 6,
+     "chave": [
+      "went",
+      "played",
+      "visited",
+      "had",
+      "watched",
+      "weekend"
+     ],
+     "exp": "Use o passado: went, played, had."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Then",
+      "a",
+      "girl",
+      "helped",
+      "Sam",
+      "and",
+      "he",
+      "was",
+      "happy"
+     ],
+     "resp": "Then a girl helped Sam and he was happy.",
+     "exp": "Then abre a frase; and liga as duas partes."
+    }
+   ]
+  }
+ ]
+}

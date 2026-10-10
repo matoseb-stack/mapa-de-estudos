@@ -1,0 +1,2590 @@
+{
+ "nivel": "A2",
+ "skill": "speaking",
+ "exame": "A2 Key (KET)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Saying who you are",
+   "objetivo": "Dizer seu nome, idade, de onde você é e onde mora.",
+   "foco": "Be, my/your, I live in; spelling your name",
+   "explicacao": [
+    "No começo da entrevista o examinador pergunta: What's your name? Where are you from? Where do you live?",
+    "Responda com frases completas: My name is Ana. I'm from Brazil. I live in Recife.",
+    "Para idade, use be: I'm fifteen. (Não diga 'I have fifteen'.)",
+    "Se o examinador pedir, soletre seu nome: How do you spell your surname? A-L-V-E-S."
+   ],
+   "vocab": [
+    {
+     "en": "surname",
+     "pt": "sobrenome"
+    },
+    {
+     "en": "to spell",
+     "pt": "soletrar"
+    },
+    {
+     "en": "to be from",
+     "pt": "ser de (origem)"
+    },
+    {
+     "en": "to live in",
+     "pt": "morar em"
+    },
+    {
+     "en": "years old",
+     "pt": "anos de idade"
+    },
+    {
+     "en": "nice to meet you",
+     "pt": "prazer em conhecer você"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Answer the examiner's questions. What's your name? How old are you? Where are you from? Where do you live?",
+    "segundos": 45,
+    "frases_uteis": [
+     "My name is ...",
+     "I'm ... years old.",
+     "I'm from ...",
+     "I live in ...",
+     "Nice to meet you."
+    ],
+    "modelo": "Hello, my name is Camila. I'm sixteen years old. I'm from Brazil and I live in Curitiba, with my mum, my dad and my brother. Nice to meet you."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "The examiner says: 'What's your name?' Which answer is best?",
+     "op": [
+      "I have Rafael.",
+      "My name is Rafael.",
+      "I am name Rafael.",
+      "Rafael my."
+     ],
+     "r": 1,
+     "exp": "My name is + nome é a resposta natural."
+    },
+    {
+     "t": "gap",
+     "q": "I ___ from Brazil.",
+     "resp": [
+      "am",
+      "'m",
+      "i'm"
+     ],
+     "exp": "Com I usamos am (ou I'm): I'm from Brazil."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma.",
+     "frase": "Hello, my name is Ana and I'm from Brazil.",
+     "exp": "Fale devagar e termine a frase com a voz descendo."
+    },
+    {
+     "t": "mc",
+     "q": "'How old are you?' Which answer is correct?",
+     "op": [
+      "I have sixteen.",
+      "I'm sixteen.",
+      "I am sixteen years.",
+      "I have sixteen years old."
+     ],
+     "r": 1,
+     "exp": "Idade em inglês usa be: I'm sixteen."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "live",
+      "in",
+      "a",
+      "small",
+      "flat",
+      "in",
+      "Salvador."
+     ],
+     "resp": "I live in a small flat in Salvador.",
+     "exp": "Ordem: sujeito + verbo + lugar. Flat é apartamento (britânico)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda dizendo seu nome e de onde você é.",
+     "frase": "What's your name and where are you from?",
+     "modelo": "My name is Lucas and I'm from Brazil. I'm from Goiânia.",
+     "min": 6,
+     "chave": [
+      "name",
+      "from",
+      "I'm",
+      "Brazil"
+     ],
+     "exp": "Dê duas informações: nome e cidade ou país."
+    },
+    {
+     "t": "gap",
+     "q": "A: Where do you live? B: I ___ in Porto Alegre.",
+     "resp": [
+      "live"
+     ],
+     "exp": "Com I usamos o verbo sem -s: I live."
+    },
+    {
+     "t": "mc",
+     "q": "The examiner asks: 'How do you spell your surname?' What do you do?",
+     "op": [
+      "Say your age.",
+      "Say the letters one by one.",
+      "Say your address.",
+      "Say 'yes, please'."
+     ],
+     "r": 1,
+     "exp": "Spell = soletrar: diga as letras uma a uma."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda onde mora e com quem.",
+     "frase": "Where do you live? Who do you live with?",
+     "modelo": "I live in Recife with my mother and my sister.",
+     "min": 6,
+     "chave": [
+      "live",
+      "with",
+      "mother",
+      "father",
+      "sister",
+      "brother",
+      "family",
+      "alone"
+     ],
+     "exp": "Use I live in ... with ..."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "School, study and work",
+   "objetivo": "Falar da escola, das matérias e do que você faz ou quer fazer.",
+   "foco": "Present simple: I study, I go to; subjects; I want to be",
+   "explicacao": [
+    "Perguntas comuns: Do you go to school? What's your favourite subject? What do you want to do in the future?",
+    "Com I, you, we e they o verbo fica igual: I study English. Com he/she/it, acrescente -s: She studies maths.",
+    "Para negar, use don't: I don't like history.",
+    "Para falar do futuro: I want to be a doctor. / I'd like to work with animals."
+   ],
+   "vocab": [
+    {
+     "en": "subject",
+     "pt": "matéria escolar"
+    },
+    {
+     "en": "favourite",
+     "pt": "favorito"
+    },
+    {
+     "en": "homework",
+     "pt": "lição de casa"
+    },
+    {
+     "en": "teacher",
+     "pt": "professor(a)"
+    },
+    {
+     "en": "to study",
+     "pt": "estudar"
+    },
+    {
+     "en": "I want to be ...",
+     "pt": "quero ser ..."
+    },
+    {
+     "en": "maths",
+     "pt": "matemática"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Answer questions about your school or work. Do you go to school? What is your favourite subject? Why? What do you want to do in the future?",
+    "segundos": 50,
+    "frases_uteis": [
+     "I go to school in the morning.",
+     "My favourite subject is ...",
+     "I like it because ...",
+     "I want to be a ...",
+     "I'd like to work with ..."
+    ],
+    "modelo": "I go to school every morning. My favourite subject is English because it's fun and I like music in English. In the future I want to be a teacher."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "'What's your favourite subject?' Which answer is best?",
+     "op": [
+      "I study school.",
+      "My favourite subject is science.",
+      "Science is my teacher.",
+      "I am science."
+     ],
+     "r": 1,
+     "exp": "Favourite subject is + matéria."
+    },
+    {
+     "t": "gap",
+     "q": "I ___ English at school on Mondays.",
+     "resp": [
+      "study",
+      "have"
+     ],
+     "exp": "Com I usamos o verbo sem -s: I study / I have."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "My favourite subject is history because it is interesting.",
+     "exp": "Em 'history' a sílaba forte é a primeira: HIS-to-ry."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "She study maths.",
+      "She studies maths.",
+      "She studys maths.",
+      "She is study maths."
+     ],
+     "r": 1,
+     "exp": "Com she, study vira studies (y vira ies)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "don't",
+      "like",
+      "getting",
+      "up",
+      "early",
+      "on",
+      "school",
+      "days."
+     ],
+     "resp": "I don't like getting up early on school days.",
+     "exp": "Negativo: I + don't + verbo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga qual é sua matéria preferida.",
+     "frase": "What is your favourite subject at school?",
+     "modelo": "My favourite subject is English. I like it because the lessons are fun.",
+     "min": 6,
+     "chave": [
+      "favourite",
+      "subject",
+      "English",
+      "maths",
+      "history",
+      "science",
+      "like"
+     ],
+     "exp": "Comece com My favourite subject is..."
+    },
+    {
+     "t": "gap",
+     "q": "My brother ___ to a big school near our house.",
+     "resp": [
+      "goes"
+     ],
+     "exp": "Com he/she/it, go vira goes."
+    },
+    {
+     "t": "mc",
+     "q": "The examiner asks: 'What do you want to do in the future?' Which answer is best?",
+     "op": [
+      "I am doctor.",
+      "I want to be a doctor.",
+      "I want doctor.",
+      "I will to be doctor."
+     ],
+     "r": 1,
+     "exp": "I want to be a + profissão."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale do que você quer ser no futuro.",
+     "frase": "What do you want to do in the future?",
+     "modelo": "I want to be an engineer. I'd like to build bridges.",
+     "min": 7,
+     "chave": [
+      "want",
+      "would",
+      "like",
+      "be",
+      "work",
+      "study",
+      "future"
+     ],
+     "exp": "Use I want to be a ... ou I'd like to ..."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "My daily routine",
+   "objetivo": "Descrever o que você faz do acordar ao dormir, com horários.",
+   "foco": "Present simple routine verbs; times: at seven, in the morning",
+   "explicacao": [
+    "Rotina usa o present simple: I get up at six. I have breakfast. I go to school by bus.",
+    "Horários: at + hora (at seven o'clock); in the morning / afternoon / evening; at night.",
+    "Palavras de ligação deixam a resposta mais natural: first, then, after that, finally.",
+    "Verbos úteis: get up, have breakfast, go to school, do homework, go to bed."
+   ],
+   "vocab": [
+    {
+     "en": "to get up",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "to have breakfast",
+     "pt": "tomar café da manhã"
+    },
+    {
+     "en": "by bus",
+     "pt": "de ônibus"
+    },
+    {
+     "en": "o'clock",
+     "pt": "em ponto"
+    },
+    {
+     "en": "then",
+     "pt": "depois, em seguida"
+    },
+    {
+     "en": "to go to bed",
+     "pt": "ir dormir"
+    },
+    {
+     "en": "after that",
+     "pt": "depois disso"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Talk about your day. What time do you get up? What do you do after school? What time do you go to bed?",
+    "segundos": 60,
+    "frases_uteis": [
+     "I get up at ...",
+     "First, I ... Then, I ...",
+     "After school I ...",
+     "I usually go to bed at ...",
+     "In the evening I ..."
+    ],
+    "modelo": "I get up at six thirty. I have breakfast and go to school by bus. After school I do my homework and watch TV. In the evening I have dinner with my family. I go to bed at ten."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which question asks about time?",
+     "op": [
+      "Where do you get up?",
+      "What time do you get up?",
+      "Who gets up?",
+      "Why do you get up?"
+     ],
+     "r": 1,
+     "exp": "What time = que horas."
+    },
+    {
+     "t": "gap",
+     "q": "I get up ___ seven o'clock.",
+     "resp": [
+      "at"
+     ],
+     "exp": "Hora exata usa at: at seven o'clock."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "I get up at six and I have breakfast with my mum.",
+     "exp": "Em 'breakfast' o 'ea' é curto: BREK-fast."
+    },
+    {
+     "t": "mc",
+     "q": "Which answer is best for 'What do you do in the evening?'",
+     "op": [
+      "I am evening.",
+      "I watch TV and talk to my family.",
+      "Evening is nice.",
+      "At six o'clock evening."
+     ],
+     "r": 1,
+     "exp": "A pergunta pede ação: use verbo no present simple."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "After",
+      "school",
+      "I",
+      "do",
+      "my",
+      "homework",
+      "and",
+      "then",
+      "I",
+      "play",
+      "football."
+     ],
+     "resp": "After school I do my homework and then I play football.",
+     "exp": "Then liga duas ações em sequência."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte como começa seu dia.",
+     "frase": "What time do you get up and what do you do first?",
+     "modelo": "I get up at seven. First, I have a shower and then I have breakfast.",
+     "min": 8,
+     "chave": [
+      "get",
+      "up",
+      "at",
+      "first",
+      "breakfast",
+      "shower",
+      "then"
+     ],
+     "exp": "Use at + hora e first / then."
+    },
+    {
+     "t": "gap",
+     "q": "I usually ___ to bed at half past ten.",
+     "resp": [
+      "go"
+     ],
+     "exp": "A expressão é go to bed."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the correct time expression?",
+     "op": [
+      "in night",
+      "at the night",
+      "at night",
+      "on night"
+     ],
+     "r": 2,
+     "exp": "Em inglês dizemos at night, mas in the morning/afternoon/evening."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Descreva seu dia em 4 ou 5 frases.",
+     "frase": "Tell me about your day, from morning to night.",
+     "modelo": "I get up at six. Then I go to school by bus. After school I do my homework. In the evening I watch TV and I go to bed at ten.",
+     "min": 15,
+     "chave": [
+      "get",
+      "up",
+      "school",
+      "homework",
+      "evening",
+      "bed",
+      "then",
+      "after"
+     ],
+     "exp": "Conecte as frases com then e after that."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Hobbies and free time",
+   "objetivo": "Falar do que você gosta de fazer no tempo livre.",
+   "foco": "Like / love / enjoy + -ing; can for ability",
+   "explicacao": [
+    "Depois de like, love, enjoy e don't mind use o verbo com -ing: I like swimming. She loves reading.",
+    "Para dizer que não gosta: I don't like cooking. / I hate waiting.",
+    "Use can para habilidade: I can play the guitar. I can't swim very well.",
+    "Dê um detalhe: I play football with my friends at the weekend."
+   ],
+   "vocab": [
+    {
+     "en": "free time",
+     "pt": "tempo livre"
+    },
+    {
+     "en": "to enjoy",
+     "pt": "gostar de, curtir"
+    },
+    {
+     "en": "to play the guitar",
+     "pt": "tocar violão"
+    },
+    {
+     "en": "to go for a walk",
+     "pt": "dar uma caminhada"
+    },
+    {
+     "en": "to hang out",
+     "pt": "passar tempo com amigos"
+    },
+    {
+     "en": "at the weekend",
+     "pt": "no fim de semana"
+    },
+    {
+     "en": "quite good at",
+     "pt": "bastante bom em"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Talk about your free time. What do you like doing at the weekend? Who do you do it with? Can you play any sports or instruments?",
+    "segundos": 60,
+    "frases_uteis": [
+     "In my free time I ...",
+     "I love / I enjoy + -ing",
+     "I do it with my friends.",
+     "I can play ...",
+     "I'm quite good at ..."
+    ],
+    "modelo": "In my free time I like playing video games and riding my bike. I usually do it with my cousin at the weekend. I can play the guitar too, but I'm not very good."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I like swim.",
+      "I like swimming.",
+      "I like to swimming.",
+      "I like swims."
+     ],
+     "r": 1,
+     "exp": "Depois de like use -ing (ou to + verbo): I like swimming."
+    },
+    {
+     "t": "gap",
+     "q": "My sister loves ___ pictures. She wants to be an artist. (DRAW)",
+     "resp": [
+      "drawing"
+     ],
+     "exp": "Depois de loves, o verbo leva -ing: drawing."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "I enjoy playing football with my friends at the weekend.",
+     "exp": "Pronuncie 'enjoy' como en-JOY, com a força no final."
+    },
+    {
+     "t": "mc",
+     "q": "'Can you play the guitar?' Which answer is best?",
+     "op": [
+      "Yes, I can play.",
+      "Yes, I can. I play it every day.",
+      "I can the guitar.",
+      "Yes, I playing."
+     ],
+     "r": 1,
+     "exp": "Responda Yes, I can. e acrescente um detalhe."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "like",
+      "watching",
+      "films",
+      "with",
+      "my",
+      "brother",
+      "on",
+      "Saturdays."
+     ],
+     "resp": "I like watching films with my brother on Saturdays.",
+     "exp": "Like + verbo com -ing + complemento."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga duas coisas que você gosta de fazer.",
+     "frase": "What do you like doing in your free time?",
+     "modelo": "I like playing video games and listening to music with my friends.",
+     "min": 8,
+     "chave": [
+      "like",
+      "love",
+      "enjoy",
+      "playing",
+      "watching",
+      "listening",
+      "reading",
+      "music"
+     ],
+     "exp": "Use I like + -ing para as duas atividades."
+    },
+    {
+     "t": "gap",
+     "q": "I ___ swim very well. I'm afraid of deep water.",
+     "resp": [
+      "can't",
+      "cannot",
+      "can not"
+     ],
+     "exp": "Can't = cannot, o contrário de can."
+    },
+    {
+     "t": "mc",
+     "q": "The examiner asks: 'Who do you do it with?' Which answer is best?",
+     "op": [
+      "With my friends.",
+      "Because it's fun.",
+      "At the park.",
+      "Twice a week."
+     ],
+     "r": 0,
+     "exp": "Who pergunta com quem: With my friends."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda com atividade e companhia.",
+     "frase": "What do you like doing at the weekend, and who do you do it with?",
+     "modelo": "At the weekend I enjoy going to the beach with my family. We swim and play volleyball.",
+     "min": 11,
+     "chave": [
+      "weekend",
+      "with",
+      "friends",
+      "family",
+      "beach",
+      "play",
+      "enjoy",
+      "like"
+     ],
+     "exp": "Dê uma atividade, com quem e um detalhe."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Food and drink",
+   "objetivo": "Falar de comidas preferidas e fazer pedidos simples.",
+   "foco": "Countable/uncountable: some, any; would like; likes and dislikes",
+   "explicacao": [
+    "Fale do que gosta: I love pasta. I don't like fish. My favourite food is rice and beans.",
+    "Pedidos: Can I have a sandwich, please? / I'd like a glass of water, please.",
+    "Some e any: I'd like some water. We haven't got any milk.",
+    "Dê uma razão simples: I like it because it's tasty."
+   ],
+   "vocab": [
+    {
+     "en": "favourite food",
+     "pt": "comida preferida"
+    },
+    {
+     "en": "tasty",
+     "pt": "gostoso"
+    },
+    {
+     "en": "a glass of",
+     "pt": "um copo de"
+    },
+    {
+     "en": "a bottle of",
+     "pt": "uma garrafa de"
+    },
+    {
+     "en": "breakfast / lunch / dinner",
+     "pt": "café da manhã / almoço / jantar"
+    },
+    {
+     "en": "I'd like ...",
+     "pt": "eu gostaria de ..."
+    },
+    {
+     "en": "healthy",
+     "pt": "saudável"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Talk about food. What do you usually eat for breakfast? What is your favourite food? Is there any food you don't like?",
+    "segundos": 60,
+    "frases_uteis": [
+     "For breakfast I usually have ...",
+     "My favourite food is ...",
+     "I don't like ... because ...",
+     "It's tasty / healthy.",
+     "I'd like ..."
+    ],
+    "modelo": "For breakfast I usually have bread with cheese and a glass of orange juice. My favourite food is pizza because it's tasty. I don't like fish because the smell is strong."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "You are in a café. Which sentence is polite?",
+     "op": [
+      "Give me a coffee.",
+      "I'd like a coffee, please.",
+      "I want coffee now.",
+      "Coffee!"
+     ],
+     "r": 1,
+     "exp": "I'd like ..., please é educado."
+    },
+    {
+     "t": "gap",
+     "q": "Can I have ___ water, please?",
+     "resp": [
+      "some",
+      "a glass of"
+     ],
+     "exp": "Em pedidos, some water ou a glass of water."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita o pedido.",
+     "frase": "I'd like a sandwich and a glass of milk, please.",
+     "exp": "Em 'sandwich' o w quase não aparece: SAN-widge."
+    },
+    {
+     "t": "mc",
+     "q": "'What do you usually have for breakfast?' Which answer is best?",
+     "op": [
+      "Breakfast is at seven.",
+      "I usually have bread and coffee.",
+      "I eat the breakfast.",
+      "Yes, I do."
+     ],
+     "r": 1,
+     "exp": "Responda com o que você come."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "don't",
+      "like",
+      "fish",
+      "because",
+      "the",
+      "smell",
+      "is",
+      "strong."
+     ],
+     "resp": "I don't like fish because the smell is strong.",
+     "exp": "Because liga o motivo ao que você disse."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga sua comida preferida e por quê.",
+     "frase": "What is your favourite food? Why do you like it?",
+     "modelo": "My favourite food is pasta because it's tasty and easy to cook.",
+     "min": 8,
+     "chave": [
+      "favourite",
+      "because",
+      "tasty",
+      "pasta",
+      "pizza",
+      "rice",
+      "like",
+      "love"
+     ],
+     "exp": "Use because para dar o motivo."
+    },
+    {
+     "t": "gap",
+     "q": "We haven't got ___ milk. Can you buy some?",
+     "resp": [
+      "any"
+     ],
+     "exp": "Em frases negativas usamos any."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I eat many rice.",
+      "I eat a lot of rice.",
+      "I eat a lot rice.",
+      "I eat much of rices."
+     ],
+     "r": 1,
+     "exp": "Rice não se conta; use a lot of."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale de uma comida de dia especial.",
+     "frase": "What do you like cooking or eating on a special day, like a birthday?",
+     "modelo": "On my birthday I like eating cake and pizza with my family. I love cooking pasta too.",
+     "min": 11,
+     "chave": [
+      "cake",
+      "pizza",
+      "pasta",
+      "eating",
+      "cooking",
+      "birthday",
+      "like",
+      "love"
+     ],
+     "exp": "Use I like + -ing e um detalhe."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "How often? Weekends and habits",
+   "objetivo": "Dizer com que frequência você faz as coisas e falar do fim de semana.",
+   "foco": "Adverbs of frequency; once a week; How often...?",
+   "explicacao": [
+    "Advérbios de frequência vão antes do verbo: I always get up early. She never eats meat. We usually go out on Saturdays.",
+    "Mas depois do verbo be: He is often late.",
+    "Outras formas: every day, once a week, twice a month, three times a year.",
+    "A pergunta é How often do you ...? Responda: Twice a week."
+   ],
+   "vocab": [
+    {
+     "en": "always",
+     "pt": "sempre"
+    },
+    {
+     "en": "usually",
+     "pt": "geralmente"
+    },
+    {
+     "en": "sometimes",
+     "pt": "às vezes"
+    },
+    {
+     "en": "never",
+     "pt": "nunca"
+    },
+    {
+     "en": "once a week",
+     "pt": "uma vez por semana"
+    },
+    {
+     "en": "twice a month",
+     "pt": "duas vezes por mês"
+    },
+    {
+     "en": "every day",
+     "pt": "todo dia"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Talk about your habits. How often do you play sport? What do you usually do on Sundays? Do you ever stay at home all weekend?",
+    "segundos": 60,
+    "frases_uteis": [
+     "I usually ...",
+     "I sometimes ...",
+     "I never ...",
+     "I go swimming twice a week.",
+     "On Sundays I ..."
+    ],
+    "modelo": "I usually play football twice a week with my friends. On Sundays I often visit my grandparents and we have lunch together. I sometimes stay at home and watch films, but I never get up late."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Where does 'always' go? Choose the correct sentence.",
+     "op": [
+      "I get always up early.",
+      "I always get up early.",
+      "Always I get up early today.",
+      "I get up early always."
+     ],
+     "r": 1,
+     "exp": "O advérbio de frequência vem antes do verbo principal."
+    },
+    {
+     "t": "gap",
+     "q": "My dad ___ drinks coffee in the evening. He says it's bad for sleep.",
+     "resp": [
+      "never"
+     ],
+     "exp": "Never = nunca, vai antes do verbo. O sentido (não bebe) indica never."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "I usually visit my grandparents on Sundays.",
+     "exp": "Em 'usually' o som é YOU-zhu-a-li."
+    },
+    {
+     "t": "mc",
+     "q": "'How often do you go to the cinema?' Which answer is best?",
+     "op": [
+      "Yesterday.",
+      "About once a month.",
+      "At the weekend cinema.",
+      "By bus."
+     ],
+     "r": 1,
+     "exp": "How often pede frequência: once a month."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "usually",
+      "have",
+      "lunch",
+      "together",
+      "on",
+      "Sundays."
+     ],
+     "resp": "We usually have lunch together on Sundays.",
+     "exp": "Usually fica antes do verbo have."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga com que frequência faz exercício.",
+     "frase": "How often do you play sport or exercise?",
+     "modelo": "I play football twice a week. I sometimes go running too.",
+     "min": 7,
+     "chave": [
+      "once",
+      "twice",
+      "week",
+      "sometimes",
+      "usually",
+      "often",
+      "every",
+      "never"
+     ],
+     "exp": "Use twice a week, once a month, etc."
+    },
+    {
+     "t": "gap",
+     "q": "She is ___ late for school because the bus is slow.",
+     "resp": [
+      "often",
+      "always",
+      "usually",
+      "sometimes"
+     ],
+     "exp": "Com be, o advérbio vem depois: is often late."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I go swimming two times in week.",
+      "I go swimming twice a week.",
+      "I go swimming twice in the week.",
+      "I go swimming second a week."
+     ],
+     "r": 1,
+     "exp": "Twice a week = duas vezes por semana."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Descreva seu domingo normal.",
+     "frase": "What do you usually do on Sundays?",
+     "modelo": "On Sundays I usually get up late. Then I have lunch with my family and in the afternoon I often watch a film.",
+     "min": 15,
+     "chave": [
+      "Sunday",
+      "Sundays",
+      "usually",
+      "often",
+      "lunch",
+      "family",
+      "afternoon",
+      "watch"
+     ],
+     "exp": "Use usually e often e conecte com then."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "My town and my home",
+   "objetivo": "Descrever onde você mora, sua casa e a cidade.",
+   "foco": "There is / there are; prepositions of place; adjectives",
+   "explicacao": [
+    "There is (singular) e there are (plural) mostram o que existe: There is a park near my house. There are two cinemas in the town.",
+    "Preposições de lugar: in, on, next to, near, between, opposite, behind.",
+    "Adjetivos: big, small, quiet, noisy, beautiful, boring, modern.",
+    "Dê sua opinião: I like my town because it's quiet and there is a nice beach."
+   ],
+   "vocab": [
+    {
+     "en": "next to",
+     "pt": "ao lado de"
+    },
+    {
+     "en": "near",
+     "pt": "perto de"
+    },
+    {
+     "en": "opposite",
+     "pt": "em frente a"
+    },
+    {
+     "en": "quiet",
+     "pt": "calmo, silencioso"
+    },
+    {
+     "en": "noisy",
+     "pt": "barulhento"
+    },
+    {
+     "en": "bedroom",
+     "pt": "quarto"
+    },
+    {
+     "en": "shopping centre",
+     "pt": "shopping"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Talk about where you live. Do you live in a house or a flat? What is there near your home? Do you like your town?",
+    "segundos": 60,
+    "frases_uteis": [
+     "I live in a ... (house / flat).",
+     "There is a ... near my house.",
+     "There are ... in my town.",
+     "It's next to the ...",
+     "I like it because ..."
+    ],
+    "modelo": "I live in a flat with my family. There is a big park near my building and a supermarket opposite it. There are two shopping centres in my town. I like it because it's quiet and the people are friendly."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "There is two parks near here.",
+      "There are two parks near here.",
+      "There be two parks near here.",
+      "It are two parks near here."
+     ],
+     "r": 1,
+     "exp": "Plural pede there are."
+    },
+    {
+     "t": "gap",
+     "q": "There ___ a big supermarket next to my school.",
+     "resp": [
+      "is"
+     ],
+     "exp": "Singular: there is."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "There is a small park next to my house.",
+     "exp": "Em 'park' o 'r' é fraco no inglês britânico: PAHK."
+    },
+    {
+     "t": "mc",
+     "q": "'Do you live in a house or a flat?' Which answer is best?",
+     "op": [
+      "I live in a flat on the second floor.",
+      "Yes, I do.",
+      "I am a flat.",
+      "My flat lives."
+     ],
+     "r": 0,
+     "exp": "A pergunta tem duas opções: responda com uma delas e dê um detalhe."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "library",
+      "is",
+      "opposite",
+      "the",
+      "bus",
+      "station."
+     ],
+     "resp": "The library is opposite the bus station.",
+     "exp": "Opposite = em frente a."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que existe perto da sua casa.",
+     "frase": "What is there near your home?",
+     "modelo": "There is a big supermarket near my house and there are two parks.",
+     "min": 8,
+     "chave": [
+      "there",
+      "near",
+      "park",
+      "supermarket",
+      "school",
+      "shop",
+      "beach",
+      "bus"
+     ],
+     "exp": "Use there is (um) e there are (vários)."
+    },
+    {
+     "t": "gap",
+     "q": "My bedroom is ___ to the bathroom, so it's easy to wash in the morning.",
+     "resp": [
+      "next"
+     ],
+     "exp": "Next to = ao lado de."
+    },
+    {
+     "t": "mc",
+     "q": "Which word means the opposite of 'noisy'?",
+     "op": [
+      "Busy",
+      "Quiet",
+      "Crowded",
+      "Modern"
+     ],
+     "r": 1,
+     "exp": "Noisy = barulhento; quiet = calmo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê sua opinião sobre sua cidade com um motivo.",
+     "frase": "Do you like your town? Why or why not?",
+     "modelo": "Yes, I like my town because it's small and quiet. There is a beautiful park where I walk with my dog.",
+     "min": 14,
+     "chave": [
+      "because",
+      "like",
+      "quiet",
+      "small",
+      "big",
+      "park",
+      "beach",
+      "friendly",
+      "boring"
+     ],
+     "exp": "Use because + adjetivo."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Yesterday and last weekend",
+   "objetivo": "Contar o que você fez ontem e no fim de semana passado.",
+   "foco": "Past simple regular verbs; time words: yesterday, last week, ago",
+   "explicacao": [
+    "Para falar do passado, verbos regulares ganham -ed: I played football. We watched a film. She visited her aunt.",
+    "Verbos terminados em -e só ganham -d (liked, danced). Consoante + y vira -ied (study, studied).",
+    "Palavras de tempo: yesterday, last night, last weekend, two days ago.",
+    "Pergunta com did: Did you play football? Resposta curta: Yes, I did. / No, I didn't."
+   ],
+   "vocab": [
+    {
+     "en": "yesterday",
+     "pt": "ontem"
+    },
+    {
+     "en": "last weekend",
+     "pt": "no fim de semana passado"
+    },
+    {
+     "en": "ago",
+     "pt": "atrás (tempo)"
+    },
+    {
+     "en": "to visit",
+     "pt": "visitar"
+    },
+    {
+     "en": "to watch",
+     "pt": "assistir"
+    },
+    {
+     "en": "to stay at home",
+     "pt": "ficar em casa"
+    },
+    {
+     "en": "to walk",
+     "pt": "caminhar"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Talk about the past. What did you do last weekend? Did you go out with friends? What did you do yesterday evening?",
+    "segundos": 60,
+    "frases_uteis": [
+     "Last weekend I ...",
+     "Yesterday I ...",
+     "I played / watched / visited ...",
+     "Two days ago ...",
+     "Did you ...? Yes, I did."
+    ],
+    "modelo": "Last weekend I visited my grandmother. We cooked lunch together and then I watched a film. On Sunday I stayed at home and I studied for a test."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is in the past?",
+     "op": [
+      "I watch a film now.",
+      "I watched a film yesterday.",
+      "I am watching a film.",
+      "I will watch a film."
+     ],
+     "r": 1,
+     "exp": "Yesterday pede passado: watched."
+    },
+    {
+     "t": "gap",
+     "q": "We ___ football in the park last Saturday. (PLAY)",
+     "resp": [
+      "played"
+     ],
+     "exp": "Verbo regular + -ed: played."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "Yesterday I watched a film and then I played games.",
+     "exp": "Em 'watched' o -ed soa como T: WOTCHT."
+    },
+    {
+     "t": "mc",
+     "q": "'What did you do last weekend?' Which answer is best?",
+     "op": [
+      "I visit my cousin.",
+      "I visited my cousin and we played games.",
+      "I will visit my cousin.",
+      "I visiting my cousin."
+     ],
+     "r": 1,
+     "exp": "Last weekend pede o passado: visited, played."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Did",
+      "you",
+      "stay",
+      "at",
+      "home",
+      "last",
+      "night?"
+     ],
+     "resp": "Did you stay at home last night?",
+     "exp": "Pergunta no passado: Did + sujeito + verbo base."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte o que fez ontem à noite.",
+     "frase": "What did you do yesterday evening?",
+     "modelo": "Yesterday evening I watched TV and talked to my friend on the phone.",
+     "min": 8,
+     "chave": [
+      "yesterday",
+      "watched",
+      "talked",
+      "played",
+      "studied",
+      "cooked",
+      "phoned",
+      "evening"
+     ],
+     "exp": "Use verbos com -ed: watched, talked."
+    },
+    {
+     "t": "gap",
+     "q": "I ___ English for two hours yesterday. I have a test today. (STUDY)",
+     "resp": [
+      "studied"
+     ],
+     "exp": "Study vira studied (y vira ied)."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "Did you played tennis?",
+      "Did you play tennis?",
+      "Do you played tennis?",
+      "You did played tennis?"
+     ],
+     "r": 1,
+     "exp": "Depois de did, o verbo fica na forma base: play."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale do seu último fim de semana em 3 frases.",
+     "frase": "Tell me about your last weekend. Where did you go?",
+     "modelo": "Last weekend I stayed at my grandmother's house. We walked on the beach and I helped her cook dinner.",
+     "min": 13,
+     "chave": [
+      "last",
+      "weekend",
+      "went",
+      "visited",
+      "walked",
+      "stayed",
+      "played",
+      "watched"
+     ],
+     "exp": "Use last weekend e depois then."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Holidays and journeys",
+   "objetivo": "Falar de férias e viagens passadas, incluindo verbos irregulares.",
+   "foco": "Irregular past: went, saw, ate, took; How was ...?",
+   "explicacao": [
+    "Alguns verbos são irregulares no passado: go - went, see - saw, eat - ate, have - had, take - took, buy - bought.",
+    "Conte a viagem: Last summer I went to Bahia. We stayed in a small hotel. The weather was great.",
+    "Was e were são o passado de be: The food was delicious. The people were friendly.",
+    "Pergunta: Where did you go? Who did you go with? How was it?"
+   ],
+   "vocab": [
+    {
+     "en": "holiday",
+     "pt": "férias"
+    },
+    {
+     "en": "trip",
+     "pt": "viagem"
+    },
+    {
+     "en": "hotel",
+     "pt": "hotel"
+    },
+    {
+     "en": "beach",
+     "pt": "praia"
+    },
+    {
+     "en": "weather",
+     "pt": "clima, tempo"
+    },
+    {
+     "en": "to travel by plane / bus",
+     "pt": "viajar de avião / ônibus"
+    },
+    {
+     "en": "souvenir",
+     "pt": "lembrancinha"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Talk about a holiday. Where did you go on your last holiday? Who did you go with? What did you do there? Did you like it?",
+    "segundos": 70,
+    "frases_uteis": [
+     "Last summer I went to ...",
+     "I travelled by ...",
+     "We stayed in ...",
+     "The weather was ...",
+     "It was great because ..."
+    ],
+    "modelo": "Last summer I went to Florianópolis with my family. We travelled by bus and stayed in a small hotel near the beach. We swam every day and ate delicious seafood. It was a great holiday because the weather was sunny."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the past of 'go'?",
+     "op": [
+      "goed",
+      "went",
+      "gone",
+      "going"
+     ],
+     "r": 1,
+     "exp": "Go é irregular: go - went."
+    },
+    {
+     "t": "gap",
+     "q": "Last year we ___ to the beach by bus. (GO)",
+     "resp": [
+      "went"
+     ],
+     "exp": "Irregular: go - went."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "Last summer I went to the beach with my family.",
+     "exp": "'Went' soa como UENT; 'summer' como SA-ma."
+    },
+    {
+     "t": "mc",
+     "q": "'How was your holiday?' Which answer is best?",
+     "op": [
+      "It was wonderful. The weather was sunny.",
+      "It is wonderful.",
+      "I go to the beach.",
+      "Yes, it was a holiday."
+     ],
+     "r": 0,
+     "exp": "How was ...? pede uma opinião no passado com was."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "We",
+      "stayed",
+      "in",
+      "a",
+      "small",
+      "hotel",
+      "near",
+      "the",
+      "sea."
+     ],
+     "resp": "We stayed in a small hotel near the sea.",
+     "exp": "Stayed = ficamos hospedados."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga para onde foi nas últimas férias.",
+     "frase": "Where did you go on your last holiday?",
+     "modelo": "I went to Salvador with my family. We stayed in a hotel near the beach.",
+     "min": 8,
+     "chave": [
+      "went",
+      "travelled",
+      "stayed",
+      "with",
+      "beach",
+      "hotel",
+      "family",
+      "visited"
+     ],
+     "exp": "Use went to + lugar."
+    },
+    {
+     "t": "gap",
+     "q": "The food in the hotel ___ delicious. (BE, past)",
+     "resp": [
+      "was"
+     ],
+     "exp": "Food é singular: was. Com plural usamos were."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I buyed a souvenir.",
+      "I bought a souvenir.",
+      "I buy a souvenir yesterday.",
+      "I did bought a souvenir."
+     ],
+     "r": 1,
+     "exp": "Buy - bought (irregular)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte uma viagem que você lembra bem.",
+     "frase": "Tell me about a holiday you remember. What did you do there?",
+     "modelo": "Last July I went to my uncle's farm. I rode a horse, ate fresh fruit and saw many animals. It was great.",
+     "min": 15,
+     "chave": [
+      "went",
+      "saw",
+      "ate",
+      "rode",
+      "swam",
+      "visited",
+      "took",
+      "had",
+      "holiday"
+     ],
+     "exp": "Misture verbos irregulares: went, saw, ate."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Plans and the future with going to",
+   "objetivo": "Falar de planos para o fim de semana, as férias e o futuro.",
+   "foco": "Be going to; tomorrow, next week, this summer",
+   "explicacao": [
+    "Para planos já decididos, use am/is/are + going to + verbo: I'm going to visit my cousin tomorrow.",
+    "Negativo: She isn't going to come. Pergunta: Are you going to travel this summer?",
+    "Expressões de tempo: tomorrow, tonight, next week, this summer, in July.",
+    "Você pode acrescentar um motivo: I'm going to study because I have a test."
+   ],
+   "vocab": [
+    {
+     "en": "tomorrow",
+     "pt": "amanhã"
+    },
+    {
+     "en": "tonight",
+     "pt": "hoje à noite"
+    },
+    {
+     "en": "next week",
+     "pt": "semana que vem"
+    },
+    {
+     "en": "plan",
+     "pt": "plano"
+    },
+    {
+     "en": "to meet",
+     "pt": "encontrar"
+    },
+    {
+     "en": "to get a job",
+     "pt": "conseguir um emprego"
+    },
+    {
+     "en": "one day",
+     "pt": "um dia"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Talk about your plans. What are you going to do this weekend? Are you going to go on holiday this year? What are you going to do after school?",
+    "segundos": 60,
+    "frases_uteis": [
+     "I'm going to ...",
+     "This weekend I'm going to ...",
+     "Next summer we're going to ...",
+     "I'm not going to ...",
+     "I want to ... one day."
+    ],
+    "modelo": "This weekend I'm going to visit my cousin and we are going to play video games. Next summer my family and I are going to travel to the north. I'm not going to study on Sunday!"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is about a plan?",
+     "op": [
+      "I visit my cousin yesterday.",
+      "I'm going to visit my cousin tomorrow.",
+      "I visited my cousin.",
+      "I am visiting my cousin ago."
+     ],
+     "r": 1,
+     "exp": "Plano futuro: be going to + verbo."
+    },
+    {
+     "t": "gap",
+     "q": "We ___ going to have a party on Saturday.",
+     "resp": [
+      "are",
+      "'re"
+     ],
+     "exp": "We usamos are: We're going to."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "I'm going to visit my grandparents next weekend.",
+     "exp": "'Going to' costuma soar como 'gonna' na fala rápida."
+    },
+    {
+     "t": "mc",
+     "q": "'What are you going to do tomorrow?' Which answer is best?",
+     "op": [
+      "I did homework.",
+      "I'm going to meet my friends at the park.",
+      "I go to the park yesterday.",
+      "I meet my friends."
+     ],
+     "r": 1,
+     "exp": "Tomorrow pede be going to."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "isn't",
+      "going",
+      "to",
+      "come",
+      "to",
+      "the",
+      "party",
+      "tonight."
+     ],
+     "resp": "She isn't going to come to the party tonight.",
+     "exp": "Negativo: is + not (isn't) + going to + verbo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga seus planos para este fim de semana.",
+     "frase": "What are you going to do this weekend?",
+     "modelo": "This weekend I'm going to play football and I'm going to visit my aunt.",
+     "min": 9,
+     "chave": [
+      "going",
+      "play",
+      "visit",
+      "meet",
+      "watch",
+      "go",
+      "weekend"
+     ],
+     "exp": "Use I'm going to + verbo duas vezes."
+    },
+    {
+     "t": "gap",
+     "q": "Look at the sky! It ___ going to rain.",
+     "resp": [
+      "is",
+      "'s"
+     ],
+     "exp": "It is (it's) going to rain."
+    },
+    {
+     "t": "mc",
+     "q": "Which question is correct?",
+     "op": [
+      "You are going to travel this summer?",
+      "Are you going to travel this summer?",
+      "Do you going to travel this summer?",
+      "Going you to travel?"
+     ],
+     "r": 1,
+     "exp": "Pergunta: Are + you + going to + verbo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale dos seus planos depois da escola e dê um motivo.",
+     "frase": "What are you going to do after you finish school? Why?",
+     "modelo": "After school I'm going to study medicine because I want to help people. I'm also going to travel before university.",
+     "min": 14,
+     "chave": [
+      "going",
+      "study",
+      "work",
+      "travel",
+      "university",
+      "because",
+      "want",
+      "job"
+     ],
+     "exp": "Use going to e because."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Giving reasons with because",
+   "objetivo": "Explicar por que você gosta ou não gosta de algo, usando because e so.",
+   "foco": "because / so; adjectives of opinion",
+   "explicacao": [
+    "Because dá o motivo: I like swimming because it's fun. Because responde à pergunta Why?",
+    "So dá o resultado: It was hot, so we went to the beach.",
+    "Adjetivos úteis para opinião: fun, boring, interesting, relaxing, expensive, difficult, useful.",
+    "Na prova, nunca responda só com uma palavra: complete com porque + motivo."
+   ],
+   "vocab": [
+    {
+     "en": "because",
+     "pt": "porque"
+    },
+    {
+     "en": "so",
+     "pt": "então, por isso"
+    },
+    {
+     "en": "fun",
+     "pt": "divertido"
+    },
+    {
+     "en": "boring",
+     "pt": "chato, entediante"
+    },
+    {
+     "en": "relaxing",
+     "pt": "relaxante"
+    },
+    {
+     "en": "expensive",
+     "pt": "caro"
+    },
+    {
+     "en": "useful",
+     "pt": "útil"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Give reasons. Why do you study English? Why do you like your favourite sport or hobby? Why is it good to learn new things?",
+    "segundos": 60,
+    "frases_uteis": [
+     "I like it because ...",
+     "I don't like it because ...",
+     "It's fun / relaxing / useful.",
+     "It was raining, so ...",
+     "That's why I ..."
+    ],
+    "modelo": "I study English because it's useful for travelling and for my future job. I love music, so I listen to songs in English every day. I like it because it's fun and I learn new words."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "'Why do you like football?' Which answer is best?",
+     "op": [
+      "Because it's fun and I play with my friends.",
+      "Yes, I like.",
+      "Football is a sport.",
+      "I like because."
+     ],
+     "r": 0,
+     "exp": "Why pede um motivo: Because + frase completa."
+    },
+    {
+     "t": "gap",
+     "q": "I don't like the cinema ___ it is very expensive.",
+     "resp": [
+      "because"
+     ],
+     "exp": "Because liga o motivo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "I like swimming because it is relaxing.",
+     "exp": "Em 'because' a força está na segunda sílaba: bi-KOZ."
+    },
+    {
+     "t": "mc",
+     "q": "Choose the best sentence.",
+     "op": [
+      "It was cold because I wore a coat.",
+      "It was cold, so I wore a coat.",
+      "It was cold so because I wore a coat.",
+      "It was cold because so a coat."
+     ],
+     "r": 1,
+     "exp": "So mostra o resultado; o frio é a causa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "study",
+      "English",
+      "because",
+      "I",
+      "want",
+      "to",
+      "travel."
+     ],
+     "resp": "I study English because I want to travel.",
+     "exp": "Because + sujeito + verbo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga por que estuda inglês.",
+     "frase": "Why do you study English?",
+     "modelo": "I study English because I want to travel and talk to people from other countries.",
+     "min": 9,
+     "chave": [
+      "because",
+      "travel",
+      "job",
+      "work",
+      "music",
+      "films",
+      "talk",
+      "future"
+     ],
+     "exp": "Comece com Because ... ou I study English because ..."
+    },
+    {
+     "t": "gap",
+     "q": "It was very hot, ___ we went to the beach.",
+     "resp": [
+      "so"
+     ],
+     "exp": "So = por isso; mostra o resultado."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence has a mistake?",
+     "op": [
+      "I like cooking because it's fun.",
+      "I stayed at home because I was ill.",
+      "I like cooking because fun.",
+      "I was tired, so I went to bed."
+     ],
+     "r": 2,
+     "exp": "Depois de because precisa de sujeito e verbo: because it's fun."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale do seu dia preferido e dê motivos.",
+     "frase": "What is your favourite day of the week? Why?",
+     "modelo": "My favourite day is Saturday because I don't have school, so I can play football with my friends.",
+     "min": 12,
+     "chave": [
+      "because",
+      "so",
+      "Saturday",
+      "Sunday",
+      "Friday",
+      "weekend",
+      "friends",
+      "school"
+     ],
+     "exp": "Use because e so."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Preferences: I prefer, I'd rather, would like",
+   "objetivo": "Escolher entre opções e dizer o que você prefere.",
+   "foco": "prefer ... to, would rather, would like; comparatives",
+   "explicacao": [
+    "I prefer tea to coffee. / I prefer playing football to watching it. Use to para comparar duas coisas.",
+    "I'd rather + verbo sem to: I'd rather stay at home. (I would rather = prefiro)",
+    "I'd like + algo ou to + verbo é um pedido ou desejo educado: I'd like a pizza. I'd like to go.",
+    "Compare com -er e more: Trains are faster. Planes are more expensive."
+   ],
+   "vocab": [
+    {
+     "en": "to prefer",
+     "pt": "preferir"
+    },
+    {
+     "en": "I'd rather",
+     "pt": "eu preferiria"
+    },
+    {
+     "en": "I'd like",
+     "pt": "eu gostaria"
+    },
+    {
+     "en": "cheaper",
+     "pt": "mais barato"
+    },
+    {
+     "en": "more interesting",
+     "pt": "mais interessante"
+    },
+    {
+     "en": "better",
+     "pt": "melhor"
+    },
+    {
+     "en": "instead of",
+     "pt": "em vez de"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1 / Part 2: Choose and explain. Do you prefer the beach or the mountains? Would you rather go to the cinema or stay at home? Why?",
+    "segundos": 70,
+    "frases_uteis": [
+     "I prefer ... to ...",
+     "I'd rather ... than ...",
+     "I'd like to ...",
+     "... is cheaper / more fun.",
+     "That's why I prefer ..."
+    ],
+    "modelo": "I prefer the beach to the mountains because I love swimming. In the evening I'd rather stay at home than go to the cinema because films at home are cheaper. I'd like to go to the mountains one day, but I prefer the sea."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I prefer tea than coffee.",
+      "I prefer tea to coffee.",
+      "I prefer tea from coffee.",
+      "I prefer tea or coffee."
+     ],
+     "r": 1,
+     "exp": "Prefer ... to ... compara duas coisas."
+    },
+    {
+     "t": "gap",
+     "q": "I'd rather ___ at home tonight than go out. (STAY)",
+     "resp": [
+      "stay"
+     ],
+     "exp": "Depois de I'd rather use o verbo sem to: stay."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "I prefer the beach to the mountains because I love swimming.",
+     "exp": "Em 'prefer' a força está no fim: pri-FER."
+    },
+    {
+     "t": "mc",
+     "q": "'Would you like tea or coffee?' Which answer is best?",
+     "op": [
+      "Tea, please.",
+      "Yes, I would.",
+      "I would tea.",
+      "Like tea."
+     ],
+     "r": 0,
+     "exp": "Pergunta com 'or' pede uma escolha."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I'd",
+      "rather",
+      "watch",
+      "a",
+      "film",
+      "than",
+      "play",
+      "football."
+     ],
+     "resp": "I'd rather watch a film than play football.",
+     "exp": "I'd rather + verbo base + than + verbo base."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Escolha e dê um motivo.",
+     "frase": "Do you prefer the beach or the mountains? Why?",
+     "modelo": "I prefer the beach because I love swimming and the weather is hot.",
+     "min": 9,
+     "chave": [
+      "prefer",
+      "rather",
+      "beach",
+      "mountains",
+      "because",
+      "swim",
+      "hot",
+      "cold"
+     ],
+     "exp": "Use I prefer ... because ..."
+    },
+    {
+     "t": "gap",
+     "q": "I prefer cats ___ dogs because they are quiet.",
+     "resp": [
+      "to"
+     ],
+     "exp": "Prefer A to B."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is correct?",
+     "op": [
+      "I'd rather to go home.",
+      "I'd rather go home.",
+      "I'd rather going home.",
+      "I'd rather goes home."
+     ],
+     "r": 1,
+     "exp": "Rather é seguido de verbo sem to."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Compare duas opções e explique.",
+     "frase": "Would you rather go to a party or stay at home with friends? Why?",
+     "modelo": "I'd rather stay at home with friends because parties are noisy. I prefer talking and playing games.",
+     "min": 11,
+     "chave": [
+      "rather",
+      "prefer",
+      "party",
+      "home",
+      "because",
+      "noisy",
+      "friends",
+      "quiet"
+     ],
+     "exp": "Use I'd rather ... than ... e because."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Agreeing and disagreeing",
+   "objetivo": "Concordar, discordar com educação e dar sua opinião com um colega.",
+   "foco": "I think..., I agree, I don't agree, What about you?",
+   "explicacao": [
+    "Para dar opinião: I think ... / In my opinion ... / I like ...",
+    "Para concordar: I agree. / Me too. / So do I. / Yes, that's right.",
+    "Para discordar com educação: I don't agree. / I'm not sure. / Really? I think ... / I'm sorry, but I prefer ...",
+    "Faça perguntas ao colega: What about you? / Do you like ...? / Which one do you like?"
+   ],
+   "vocab": [
+    {
+     "en": "I agree",
+     "pt": "eu concordo"
+    },
+    {
+     "en": "I don't agree",
+     "pt": "eu não concordo"
+    },
+    {
+     "en": "in my opinion",
+     "pt": "na minha opinião"
+    },
+    {
+     "en": "me too",
+     "pt": "eu também"
+    },
+    {
+     "en": "What about you?",
+     "pt": "e você?"
+    },
+    {
+     "en": "I'm not sure",
+     "pt": "não tenho certeza"
+    },
+    {
+     "en": "maybe",
+     "pt": "talvez"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 2: Talk with your partner. Look at the activities: a cinema, a football match, a museum and a picnic. Talk about which one is best for a Saturday and why.",
+    "segundos": 90,
+    "frases_uteis": [
+     "I think ... is a good idea.",
+     "I agree. / Me too.",
+     "I don't agree. I prefer ...",
+     "What about you?",
+     "Why don't we ...?"
+    ],
+    "modelo": "I think a picnic is a good idea because the weather is nice. What about you? ... I agree, a football match is fun, but it is expensive. Why don't we go to the picnic and play football there?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Your partner says: 'I love pizza.' Which reply shows agreement?",
+     "op": [
+      "Me too!",
+      "I don't think so.",
+      "What time?",
+      "Not at all."
+     ],
+     "r": 0,
+     "exp": "Me too = eu também."
+    },
+    {
+     "t": "gap",
+     "q": "A: I think the museum is boring. B: I don't ___. I think it is interesting.",
+     "resp": [
+      "agree"
+     ],
+     "exp": "I don't agree = eu não concordo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "I think the park is a good idea. What about you?",
+     "exp": "Suba a voz em 'you' porque é pergunta."
+    },
+    {
+     "t": "mc",
+     "q": "Your partner says: 'Swimming is boring.' Which is a polite disagreement?",
+     "op": [
+      "No! You're wrong!",
+      "I'm not sure. I think it's fun.",
+      "Swimming is boring too.",
+      "Be quiet."
+     ],
+     "r": 1,
+     "exp": "I'm not sure + sua opinião é uma forma educada de discordar."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "don't",
+      "agree",
+      "because",
+      "the",
+      "cinema",
+      "is",
+      "too",
+      "expensive."
+     ],
+     "resp": "I don't agree because the cinema is too expensive.",
+     "exp": "Dê o motivo depois de I don't agree."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Concorde ou discorde com um motivo.",
+     "frase": "Your partner says: 'I think the beach is the best place for a holiday.' Do you agree?",
+     "modelo": "Yes, I agree. The beach is great because I love swimming.",
+     "min": 7,
+     "chave": [
+      "agree",
+      "think",
+      "beach",
+      "because",
+      "me",
+      "too",
+      "not",
+      "prefer"
+     ],
+     "exp": "Diga I agree ou I don't agree e use because."
+    },
+    {
+     "t": "gap",
+     "q": "A: I love horror films. B: ___ too! They are exciting.",
+     "resp": [
+      "me",
+      "me,"
+     ],
+     "exp": "Me too = eu também."
+    },
+    {
+     "t": "mc",
+     "q": "Which question asks the other person for their opinion?",
+     "op": [
+      "What about you?",
+      "Why do I?",
+      "Where is it?",
+      "How much is it?"
+     ],
+     "r": 0,
+     "exp": "What about you? devolve a pergunta ao colega."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Discorde com educação e proponha outra coisa.",
+     "frase": "Your partner says: 'Let's go to the museum.' Say you don't agree and suggest something else.",
+     "modelo": "I'm not sure. I think a museum is boring. Why don't we go to the cinema?",
+     "min": 11,
+     "chave": [
+      "don't",
+      "agree",
+      "sure",
+      "why",
+      "prefer",
+      "instead",
+      "rather",
+      "cinema",
+      "park"
+     ],
+     "exp": "Use I'm not sure / I don't agree e Why don't we ...?"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Talking about pictures and the long turn",
+   "objetivo": "Descrever figuras com palavras simples e continuar falando sem travar.",
+   "foco": "In the picture there is...; he/she is wearing; filler phrases",
+   "explicacao": [
+    "Para descrever uma figura use there is/are e o present continuous: In the picture there is a girl. She is eating an ice cream.",
+    "Diga onde está cada coisa: on the left, on the right, in the middle, at the top.",
+    "Se esquecer uma palavra, explique: It's a thing for ... / It's like a ... / I don't know the word, but it's ...",
+    "Para ganhar tempo: Let me think ... / Well, ... / I think ... Para pedir repetição: Sorry, can you say that again?"
+   ],
+   "vocab": [
+    {
+     "en": "on the left",
+     "pt": "à esquerda"
+    },
+    {
+     "en": "on the right",
+     "pt": "à direita"
+    },
+    {
+     "en": "in the middle",
+     "pt": "no meio"
+    },
+    {
+     "en": "wearing",
+     "pt": "vestindo"
+    },
+    {
+     "en": "in the background",
+     "pt": "ao fundo"
+    },
+    {
+     "en": "Sorry, can you repeat that?",
+     "pt": "Desculpe, pode repetir?"
+    },
+    {
+     "en": "Let me think",
+     "pt": "deixe-me pensar"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1 / Part 2: Describe the photo. It shows two friends at a café. Say what you can see, what the people are doing and say what you think about the place.",
+    "segundos": 75,
+    "frases_uteis": [
+     "In the picture there is / there are ...",
+     "On the left / on the right ...",
+     "He / She is wearing ...",
+     "They are ...-ing",
+     "I don't know the word, but ..."
+    ],
+    "modelo": "In the picture there are two friends at a café. On the left there is a girl. She is wearing a yellow T-shirt and she is drinking juice. On the right a boy is eating a sandwich. They are laughing. I think it is a nice place because it is sunny."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "You forget a word. What is the best thing to say?",
+     "op": [
+      "Nothing.",
+      "I don't know the word, but it's a thing you use to cook.",
+      "No English.",
+      "Stop, please."
+     ],
+     "r": 1,
+     "exp": "Explique com outras palavras para continuar falando."
+    },
+    {
+     "t": "gap",
+     "q": "In the picture ___ a dog in the garden.",
+     "resp": [
+      "there is",
+      "there's"
+     ],
+     "exp": "Singular: there is."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "On the left there is a girl and she is drinking juice.",
+     "exp": "Em 'drinking' o 'ng' é nasal, sem o som de g forte."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence describes what is happening now in the picture?",
+     "op": [
+      "The boy eats sandwiches every day.",
+      "The boy is eating a sandwich.",
+      "The boy ate a sandwich.",
+      "The boy will eat a sandwich."
+     ],
+     "r": 1,
+     "exp": "Para o que acontece na figura, use is + -ing."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "girl",
+      "on",
+      "the",
+      "right",
+      "is",
+      "wearing",
+      "a",
+      "red",
+      "hat."
+     ],
+     "resp": "The girl on the right is wearing a red hat.",
+     "exp": "On the right diz a posição; is wearing descreve a roupa."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Descreva uma foto de família na praia.",
+     "frase": "Look at a photo of a family at the beach. What can you see?",
+     "modelo": "In the picture there is a family at the beach. The children are playing in the sea and the parents are sitting under an umbrella.",
+     "min": 14,
+     "chave": [
+      "there",
+      "picture",
+      "playing",
+      "sitting",
+      "beach",
+      "wearing",
+      "children",
+      "people"
+     ],
+     "exp": "Use In the picture there is ... e is/are + -ing."
+    },
+    {
+     "t": "gap",
+     "q": "The boy ___ wearing a blue jacket and a hat.",
+     "resp": [
+      "is",
+      "'s"
+     ],
+     "exp": "He is wearing = ele está vestindo."
+    },
+    {
+     "t": "mc",
+     "q": "The examiner speaks fast and you don't understand. What do you say?",
+     "op": [
+      "What?",
+      "Sorry, can you say that again, please?",
+      "I'm no understand.",
+      "Again you!"
+     ],
+     "r": 1,
+     "exp": "Sorry, can you say that again? é educado e permitido."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Descreva um lugar de que você gosta em 4 ou 5 frases.",
+     "frase": "Describe a place you like, for example a park or a café. What can you see there?",
+     "modelo": "I like a small park near my house. There are many trees and a lake. People are walking and children are playing. I think it's relaxing.",
+     "min": 18,
+     "chave": [
+      "there",
+      "trees",
+      "park",
+      "people",
+      "playing",
+      "walking",
+      "relaxing",
+      "see",
+      "lake"
+     ],
+     "exp": "Use there is/are, is/are + -ing e uma opinião final."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado: A2 Key Speaking",
+   "objetivo": "Praticar a prova inteira: Part 1 (perguntas pessoais) e Part 2 (conversa a partir de figuras).",
+   "foco": "Exam practice: personal questions, long turn, discussion with a partner",
+   "explicacao": [
+    "Part 1: o examinador faz perguntas pessoais (nome, escola, rotina, gostos, planos). Responda com frases completas e um detalhe.",
+    "Part 2: você e o colega olham figuras e conversam sobre elas: descreva as opções, diga do que gosta e por quê.",
+    "Use because para dar razões, I prefer / I'd rather para escolher, e I agree / I don't agree para reagir ao colega.",
+    "Se não entender, peça: Sorry, can you say that again? Fale com calma e tente nunca ficar em silêncio."
+   ],
+   "vocab": [
+    {
+     "en": "Can you say that again?",
+     "pt": "pode repetir?"
+    },
+    {
+     "en": "What about you?",
+     "pt": "e você?"
+    },
+    {
+     "en": "I think ...",
+     "pt": "eu acho que ..."
+    },
+    {
+     "en": "because",
+     "pt": "porque"
+    },
+    {
+     "en": "I prefer ... to ...",
+     "pt": "prefiro ... a ..."
+    },
+    {
+     "en": "I agree",
+     "pt": "eu concordo"
+    },
+    {
+     "en": "Why don't we ...?",
+     "pt": "que tal ...?"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Answer the examiner's questions about yourself (name, school, daily life, free time, plans). Part 2: Look at pictures of four ways to spend a birthday (a party, a trip, a meal in a restaurant, a film). Talk to your partner: which is the best way to celebrate and why?",
+    "segundos": 90,
+    "frases_uteis": [
+     "My name is ... and I live in ...",
+     "In my free time I like ...",
+     "Last weekend I ...",
+     "Next summer I'm going to ...",
+     "I think ... because ...",
+     "I agree. / I don't agree. I prefer ..."
+    ],
+    "modelo": "Hello, my name is Julia. I'm sixteen and I live in Salvador. I go to school in the morning and in my free time I like dancing. Last weekend I went to the beach with my friends. Next summer I'm going to visit my cousins. For a birthday, I think a party is the best idea because I love music. What about you? ... I agree, a meal is nice, but I prefer a party."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Part 1: 'Where are you from?' Which answer is best?",
+     "op": [
+      "I am from Brazil. I live in Recife.",
+      "Yes, I am.",
+      "My name Ana.",
+      "Brazil is a country."
+     ],
+     "r": 0,
+     "exp": "Responda a pergunta e acrescente um detalhe."
+    },
+    {
+     "t": "gap",
+     "q": "A: What do you do after school? B: I usually ___ my homework and then I play football.",
+     "resp": [
+      "do"
+     ],
+     "exp": "Do homework = fazer a lição de casa."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com clareza.",
+     "frase": "My name is Ana and I live in Recife with my family.",
+     "exp": "Fale em ritmo calmo; pause depois de 'Ana'."
+    },
+    {
+     "t": "mc",
+     "q": "Part 2: Your partner says: 'I think a trip is the best idea.' You don't agree. What do you say?",
+     "op": [
+      "I don't agree. I think a party is better because we can dance.",
+      "Yes, trip.",
+      "Me too, I don't agree.",
+      "No, no, no."
+     ],
+     "r": 0,
+     "exp": "Discorde com educação e dê um motivo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Last",
+      "weekend",
+      "I",
+      "went",
+      "to",
+      "the",
+      "cinema",
+      "with",
+      "my",
+      "friends."
+     ],
+     "resp": "Last weekend I went to the cinema with my friends.",
+     "exp": "Passado de go é went."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda como na Part 1.",
+     "frase": "Part 1: What do you like doing in your free time? Why?",
+     "modelo": "In my free time I like playing football because it's fun and I can play with my friends.",
+     "min": 9,
+     "chave": [
+      "like",
+      "love",
+      "enjoy",
+      "because",
+      "playing",
+      "watching",
+      "free",
+      "time"
+     ],
+     "exp": "Use I like + -ing e because."
+    },
+    {
+     "t": "gap",
+     "q": "Next summer I'm ___ to visit my grandparents.",
+     "resp": [
+      "going"
+     ],
+     "exp": "Plano futuro: be going to."
+    },
+    {
+     "t": "mc",
+     "q": "Part 2: Which sentence describes an option in a picture?",
+     "op": [
+      "There is a party with music and cake.",
+      "I went to a party.",
+      "Parties were good.",
+      "A party is when I like."
+     ],
+     "r": 0,
+     "exp": "Descreva a figura com there is/are."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda usando o passado e going to.",
+     "frase": "Part 1: What did you do last weekend, and what are you going to do next weekend?",
+     "modelo": "Last weekend I visited my aunt and we cooked together. Next weekend I'm going to play football with my friends.",
+     "min": 14,
+     "chave": [
+      "last",
+      "weekend",
+      "visited",
+      "went",
+      "next",
+      "going",
+      "play",
+      "cook"
+     ],
+     "exp": "Passado (visited) e futuro (going to)."
+    },
+    {
+     "t": "mc",
+     "q": "Part 2: Which sentence gives a reason?",
+     "op": [
+      "I like the film.",
+      "I prefer the trip because it is exciting.",
+      "The trip is on the left.",
+      "We went on a trip."
+     ],
+     "r": 1,
+     "exp": "Because introduz o motivo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Part 2: repita a frase como se falasse ao colega.",
+     "frase": "I think a party is the best idea because we can dance and have fun.",
+     "exp": "Pare um instante depois de 'idea'."
+    },
+    {
+     "t": "gap",
+     "q": "I think a restaurant is nice, ___ it is a bit expensive.",
+     "resp": [
+      "but"
+     ],
+     "exp": "But mostra contraste: é bom, mas caro."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Descreva as opções e escolha a melhor, com motivos.",
+     "frase": "Part 2: Look at four ways to spend a birthday: a party, a trip, a restaurant meal and a film. Which is best? Why?",
+     "modelo": "I think a party is the best way because we can dance and eat cake with friends. A trip is expensive, so I prefer a party. What about you?",
+     "min": 20,
+     "chave": [
+      "party",
+      "trip",
+      "restaurant",
+      "film",
+      "best",
+      "because",
+      "prefer",
+      "think"
+     ],
+     "exp": "Cite as opções, escolha uma e use because e I prefer."
+    }
+   ]
+  }
+ ]
+}

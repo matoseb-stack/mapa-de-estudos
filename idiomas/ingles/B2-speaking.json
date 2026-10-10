@@ -1,0 +1,2391 @@
+{
+ "nivel": "B2",
+ "skill": "speaking",
+ "exame": "B2 First (FCE)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Developing your answers in Part 1",
+   "objetivo": "Dar respostas desenvolvidas na entrevista: resposta direta, motivo e um exemplo.",
+   "foco": "Answer + reason + example; present simple and past simple",
+   "explicacao": [
+    "Na Part 1 o examinador faz perguntas pessoais. No B2 não basta uma frase curta: dê a resposta, um motivo e um exemplo.",
+    "Fórmula simples: resposta + because + for example. I enjoy cooking because it helps me relax. For example, I often make dinner for my family.",
+    "Evite parar depois de yes ou no. Acrescente um detalhe: Yes, I do. I've lived here for ten years.",
+    "Se precisar de tempo, use: Well, let me think... ou That's an interesting question."
+   ],
+   "vocab": [
+    {
+     "en": "to develop an answer",
+     "pt": "desenvolver uma resposta"
+    },
+    {
+     "en": "for example",
+     "pt": "por exemplo"
+    },
+    {
+     "en": "to be keen on",
+     "pt": "gostar muito de"
+    },
+    {
+     "en": "to be fond of",
+     "pt": "gostar de"
+    },
+    {
+     "en": "to look forward to",
+     "pt": "esperar ansiosamente por"
+    },
+    {
+     "en": "the thing is",
+     "pt": "o fato é que"
+    },
+    {
+     "en": "in my spare time",
+     "pt": "no meu tempo livre"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Answer the examiner's questions. Where are you from? What do you like about living there? What do you enjoy doing in your spare time? Why?",
+    "segundos": 60,
+    "frases_uteis": [
+     "I'm originally from ... but now I live in ...",
+     "What I like most about it is ...",
+     "I'm quite keen on ...-ing because ...",
+     "For example, last weekend I ..."
+    ],
+    "modelo": "I'm from Fortaleza, a city on the coast in the north-east of Brazil. What I like most about it is the weather and the beach, because I can go running there in the morning. In my spare time I'm quite keen on photography. For example, last weekend I took photos of the sunset with my cousin."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "The examiner asks: 'Do you like your town?' Which answer is the best for B2?",
+     "op": [
+      "Yes.",
+      "Yes, I do, because it's quite lively. For example, there's always something going on at the weekend.",
+      "Yes, I like very much my town.",
+      "My town is."
+     ],
+     "r": 1,
+     "exp": "Resposta + motivo + exemplo mostra o nível B2."
+    },
+    {
+     "t": "gap",
+     "q": "What I like most about my town ___ the people.",
+     "resp": [
+      "is"
+     ],
+     "exp": "What I like most about ... + is: What I like most about it is the food."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "What I like most about my town is the friendly atmosphere.",
+     "exp": "Pronuncie atmosphere como 'ÁT-mos-fir'."
+    },
+    {
+     "t": "mc",
+     "q": "Which phrase gives an example?",
+     "op": [
+      "Because of that",
+      "For example",
+      "In fact not",
+      "As well"
+     ],
+     "r": 1,
+     "exp": "For example introduz um exemplo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "am",
+      "quite",
+      "keen",
+      "on",
+      "cooking",
+      "because",
+      "it",
+      "helps",
+      "me",
+      "relax"
+     ],
+     "resp": "I am quite keen on cooking because it helps me relax",
+     "exp": "Keen on + verbo com -ing; because dá o motivo."
+    },
+    {
+     "t": "gap",
+     "q": "I'm very fond ___ walking by the sea.",
+     "resp": [
+      "of"
+     ],
+     "exp": "Fond of + -ing: fond of walking."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "I'm quite keen on photography, so I often take pictures of my friends.",
+     "exp": "Keen soa 'kin'; photography tem acento em TÓ."
+    },
+    {
+     "t": "mc",
+     "q": "The examiner asks: 'What do you enjoy doing in your spare time?' Which answer is the most developed?",
+     "op": [
+      "Sport.",
+      "I enjoy sport, I think.",
+      "I enjoy playing volleyball because it keeps me fit. For example, I play twice a week with my team.",
+      "I enjoy to play volleyball."
+     ],
+     "r": 2,
+     "exp": "A terceira tem resposta, motivo e exemplo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale de uma coisa que você gosta de fazer no tempo livre. Dê um motivo e um exemplo.",
+     "frase": "What do you enjoy doing in your spare time, and why?",
+     "modelo": "I enjoy drawing in my spare time because it helps me switch off after a busy day. For example, last Sunday I spent two hours drawing my dog.",
+     "min": 18,
+     "chave": [
+      "enjoy",
+      "because",
+      "spare",
+      "example",
+      "like"
+     ],
+     "exp": "Use enjoy + -ing, because e for example."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Talking about the past and future plans",
+   "objetivo": "Falar de experiências passadas e planos futuros na entrevista com tempos verbais variados.",
+   "foco": "Past simple vs present perfect; future forms (going to, hope to, would like to)",
+   "explicacao": [
+    "O examinador pergunta: Tell us about a holiday you've had. Use o past simple para um momento fechado: I went to Bahia last summer.",
+    "Use o present perfect para experiência sem data: I've been to Rio twice. I've never tried surfing.",
+    "Para planos: I'm going to apply for a course. Para sonhos: I'd like to / I hope to live abroad one day.",
+    "Para mostrar variedade, misture os tempos na mesma resposta."
+   ],
+   "vocab": [
+    {
+     "en": "to have been to",
+     "pt": "ter ido a (e voltado)"
+    },
+    {
+     "en": "to apply for",
+     "pt": "candidatar-se a"
+    },
+    {
+     "en": "to hope to",
+     "pt": "esperar conseguir"
+    },
+    {
+     "en": "in the near future",
+     "pt": "num futuro próximo"
+    },
+    {
+     "en": "one day",
+     "pt": "um dia"
+    },
+    {
+     "en": "to take up",
+     "pt": "começar (um hobby)"
+    },
+    {
+     "en": "ever",
+     "pt": "alguma vez"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Answer the examiner's questions. Tell us about a trip you have enjoyed. What are you planning to do next year? What would you like to achieve in the future?",
+    "segundos": 75,
+    "frases_uteis": [
+     "Last year I went to ... with ...",
+     "I've never ... but I'd love to ...",
+     "Next year I'm going to ...",
+     "I hope to ... one day."
+    ],
+    "modelo": "Last year I went to Salvador with my family and we had a wonderful time. I've never been abroad, but I'd love to visit Portugal. Next year I'm going to start a university course and I hope to study English in London one day."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "'Have you ever been abroad?' Which answer is correct?",
+     "op": [
+      "Yes, I went abroad ever.",
+      "No, I've never been abroad, but I'd love to.",
+      "No, I never been abroad.",
+      "Yes, I have go to Chile."
+     ],
+     "r": 1,
+     "exp": "Present perfect para experiência: I've never been. Depois acrescente um detalhe."
+    },
+    {
+     "t": "gap",
+     "q": "I ___ to Recife last July.",
+     "resp": [
+      "went"
+     ],
+     "exp": "Tempo fechado (last July) pede past simple: went."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "I've never been abroad, but I'd love to visit Portugal.",
+     "exp": "Never been: 'NÉ-ver bin'. Love soa 'lav'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence talks about a plan?",
+     "op": [
+      "I was a student.",
+      "I'm going to apply for a scholarship.",
+      "I have lived here.",
+      "I used to swim."
+     ],
+     "r": 1,
+     "exp": "Be going to expressa plano."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Next",
+      "year",
+      "I",
+      "am",
+      "going",
+      "to",
+      "start",
+      "a",
+      "new",
+      "course"
+     ],
+     "resp": "Next year I am going to start a new course",
+     "exp": "Be going to + verbo no infinitivo para planos."
+    },
+    {
+     "t": "gap",
+     "q": "I've never ___ sushi, but I'd like to. (EAT)",
+     "resp": [
+      "eaten"
+     ],
+     "exp": "Present perfect: have + particípio (eaten).",
+     "dica": "EAT"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "One day I hope to live in a country where I can use my English every day.",
+     "exp": "Hope to + infinitivo; destaque hope e country."
+    },
+    {
+     "t": "mc",
+     "q": "The examiner asks: 'What are your plans for next year?' Which is the best answer?",
+     "op": [
+      "Plans.",
+      "I think next year.",
+      "I'm going to finish school and I'd like to study engineering, although I haven't decided where yet.",
+      "I will to study."
+     ],
+     "r": 2,
+     "exp": "Combina plano, desejo e um contraste com although."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale de uma viagem ou passeio que você fez e do que quer fazer no futuro.",
+     "frase": "Tell us about a place you have visited and a place you'd like to visit in the future.",
+     "modelo": "Last year I went to Gramado with my family. It was cold but beautiful. I've never been abroad, so I'd love to visit Italy one day because I'm very interested in its food and history.",
+     "min": 24,
+     "chave": [
+      "went",
+      "visited",
+      "been",
+      "would",
+      "love",
+      "like",
+      "hope"
+     ],
+     "exp": "Misture past simple (went) e would like to (futuro)."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Giving opinions and reasons",
+   "objetivo": "Expressar opinião com clareza e justificar usando linguagem de B2.",
+   "foco": "In my opinion, I reckon, as far as I'm concerned; because/since/as",
+   "explicacao": [
+    "Para dar opinião: In my opinion..., I reckon..., As far as I'm concerned..., I'd say that...",
+    "Para justificar: because, since, as, which is why. I don't like crowded places, which is why I prefer small cafés.",
+    "Para suavizar: I tend to..., Personally, I think... Evite repetir I think o tempo todo.",
+    "Para acrescentar informação: What's more, ... / Besides, ..."
+   ],
+   "vocab": [
+    {
+     "en": "in my opinion",
+     "pt": "na minha opinião"
+    },
+    {
+     "en": "I reckon",
+     "pt": "acho (informal)"
+    },
+    {
+     "en": "as far as I'm concerned",
+     "pt": "no que me diz respeito"
+    },
+    {
+     "en": "which is why",
+     "pt": "e é por isso que"
+    },
+    {
+     "en": "what's more",
+     "pt": "além disso"
+    },
+    {
+     "en": "to tend to",
+     "pt": "ter tendência a"
+    },
+    {
+     "en": "personally",
+     "pt": "pessoalmente"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 1: Answer the examiner's questions. Do you think it is important to learn English? Do you prefer studying alone or with other people? Why?",
+    "segundos": 75,
+    "frases_uteis": [
+     "In my opinion, ... is important because ...",
+     "As far as I'm concerned, ...",
+     "I tend to ..., which is why ...",
+     "What's more, ..."
+    ],
+    "modelo": "In my opinion, learning English is very important because it opens a lot of doors. As far as I'm concerned, I prefer studying alone, since I can concentrate better. What's more, I can choose my own pace, which is why I get through more work."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which phrase is used to give an opinion?",
+     "op": [
+      "As far as I'm concerned",
+      "On the other hand",
+      "For instance",
+      "In the end"
+     ],
+     "r": 0,
+     "exp": "As far as I'm concerned = no que me diz respeito, na minha opinião."
+    },
+    {
+     "t": "gap",
+     "q": "In my ___, learning English is essential.",
+     "resp": [
+      "opinion"
+     ],
+     "exp": "In my opinion = na minha opinião."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "As far as I'm concerned, studying with friends is more fun.",
+     "exp": "Concerned: 'kon-SÊRND'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence gives a reason?",
+     "op": [
+      "I like music.",
+      "I like music, which is why I go to concerts.",
+      "Music is music.",
+      "I like to music."
+     ],
+     "r": 1,
+     "exp": "Which is why liga um fato ao resultado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "tend",
+      "to",
+      "study",
+      "alone",
+      "since",
+      "I",
+      "concentrate",
+      "better"
+     ],
+     "resp": "I tend to study alone since I concentrate better",
+     "exp": "Tend to + infinitivo; since explica o motivo."
+    },
+    {
+     "t": "gap",
+     "q": "I prefer small cafés, ___ is why I rarely go to the mall.",
+     "resp": [
+      "which"
+     ],
+     "exp": "Which is why = e é por isso que."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "What's more, I can choose my own pace, which is why I learn faster.",
+     "exp": "Una what's more; pace soa 'peis'."
+    },
+    {
+     "t": "mc",
+     "q": "Which answer sounds the most natural and developed?",
+     "op": [
+      "Yes, English is important.",
+      "English important because work.",
+      "Yes, I reckon it's important, since most jobs ask for it. What's more, you can read and watch things in the original language.",
+      "I think I think it is important."
+     ],
+     "r": 2,
+     "exp": "Opinião, motivo e informação extra."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga se você prefere estudar sozinho ou em grupo e explique por quê.",
+     "frase": "Do you prefer studying alone or with other people? Why?",
+     "modelo": "Personally, I prefer studying with other people because we can share ideas. What's more, it's more motivating, which is why I usually join a study group before exams.",
+     "min": 19,
+     "chave": [
+      "prefer",
+      "because",
+      "since",
+      "group",
+      "alone",
+      "opinion"
+     ],
+     "exp": "Dê opinião com personally ou in my opinion e acrescente what's more."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Describing photos: Part 2 first steps",
+   "objetivo": "Descrever o que se vê nas fotos com present continuous e expressões de lugar.",
+   "foco": "Present continuous; in the foreground/background; on the left/right",
+   "explicacao": [
+    "Na Part 2 você recebe duas fotos. Comece descrevendo, sem entrar em detalhes demais: In the first photo, a woman is cooking in a kitchen.",
+    "Use o present continuous para ações: They're laughing. He's carrying a bag.",
+    "Use expressões de lugar: in the foreground (em primeiro plano), in the background (ao fundo), on the left/right, in the middle.",
+    "Se não souber uma palavra, explique: It's a thing you use to..."
+   ],
+   "vocab": [
+    {
+     "en": "in the foreground",
+     "pt": "em primeiro plano"
+    },
+    {
+     "en": "in the background",
+     "pt": "ao fundo"
+    },
+    {
+     "en": "on the left",
+     "pt": "à esquerda"
+    },
+    {
+     "en": "in the middle",
+     "pt": "no meio"
+    },
+    {
+     "en": "to carry",
+     "pt": "carregar"
+    },
+    {
+     "en": "crowded",
+     "pt": "lotado"
+    },
+    {
+     "en": "a thing you use to...",
+     "pt": "uma coisa que se usa para..."
+    }
+   ],
+   "material": {
+    "tarefa": "Part 2: Look at two photos. Photo 1 shows a family having a picnic in a park. Photo 2 shows a group of friends eating in a restaurant. Describe what you can see in the photos. (Do this for about 1 minute.)",
+    "segundos": 60,
+    "frases_uteis": [
+     "In the first photo, I can see ...",
+     "In the foreground there is ...",
+     "In the background there are ...",
+     "On the left/right ..."
+    ],
+    "modelo": "In the first photo, I can see a family having a picnic in a park. In the foreground there is a blanket with some food, and in the background there are some trees. In the second photo, a group of friends are sitting around a table in a restaurant. They are smiling and talking."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence describes what is happening right now in a photo?",
+     "op": [
+      "The man works in an office.",
+      "A man is working on his laptop.",
+      "A man worked on a laptop.",
+      "A man will work."
+     ],
+     "r": 1,
+     "exp": "Present continuous para ações da foto."
+    },
+    {
+     "t": "gap",
+     "q": "In the ___, there are some mountains.",
+     "resp": [
+      "background"
+     ],
+     "exp": "In the background = ao fundo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "In the first photo, a woman is cooking while her children are playing.",
+     "exp": "Cooking soa 'KU-quin'."
+    },
+    {
+     "t": "mc",
+     "q": "Which phrase starts a photo description?",
+     "op": [
+      "I agree with you.",
+      "In the first photo, I can see a group of friends.",
+      "Because they are happy.",
+      "Tell me more."
+     ],
+     "r": 1,
+     "exp": "I can see ... é a forma mais simples de começar."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "In",
+      "the",
+      "background",
+      "there",
+      "are",
+      "some",
+      "people",
+      "dancing"
+     ],
+     "resp": "In the background there are some people dancing",
+     "exp": "There are + plural; dancing descreve a ação."
+    },
+    {
+     "t": "gap",
+     "q": "A boy is ___ a heavy bag. (CARRY)",
+     "resp": [
+      "carrying"
+     ],
+     "exp": "Present continuous: is + carrying.",
+     "dica": "CARRY"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "On the left, a man is talking on the phone and behind him there is a bus.",
+     "exp": "Phone: 'FÔUN'. Behind: 'bi-RÁIND'."
+    },
+    {
+     "t": "mc",
+     "q": "You do not know the word 'umbrella'. What can you say?",
+     "op": [
+      "I don't know.",
+      "It's a thing you use when it rains.",
+      "Nothing.",
+      "Please tell me."
+     ],
+     "r": 1,
+     "exp": "Explicar com palavras simples mantém o fluxo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Descreva uma foto imaginária de pessoas num parque. Diga o que está em primeiro plano e ao fundo.",
+     "frase": "Describe a photo of people spending time in a park.",
+     "modelo": "In the foreground there is a couple sitting on a bench. They are eating ice cream and smiling. In the background there are some children playing football and a few trees.",
+     "min": 20,
+     "chave": [
+      "foreground",
+      "background",
+      "left",
+      "right",
+      "see",
+      "there is",
+      "there are"
+     ],
+     "exp": "Use in the foreground, in the background e o present continuous."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Comparing and contrasting two photos",
+   "objetivo": "Comparar e contrastar duas fotos com whereas, while, both e unlike.",
+   "foco": "Whereas, while, both, unlike, however; comparatives",
+   "explicacao": [
+    "Part 2 pede comparação. Não faça duas descrições separadas: ligue as fotos.",
+    "Semelhança: Both photos show people..., In both pictures..., Similarly,...",
+    "Diferença: In the first photo..., whereas/while in the second one... Unlike the first photo,... However,...",
+    "Comparativos ajudam: The people in the first photo look more relaxed than in the second."
+   ],
+   "vocab": [
+    {
+     "en": "whereas",
+     "pt": "enquanto (contraste)"
+    },
+    {
+     "en": "while",
+     "pt": "enquanto"
+    },
+    {
+     "en": "both",
+     "pt": "ambos"
+    },
+    {
+     "en": "unlike",
+     "pt": "diferente de"
+    },
+    {
+     "en": "similarly",
+     "pt": "da mesma forma"
+    },
+    {
+     "en": "however",
+     "pt": "no entanto"
+    },
+    {
+     "en": "compared with",
+     "pt": "comparado com"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 2: Compare the two photos: Photo 1 shows a student studying alone in a quiet library. Photo 2 shows students studying together in a noisy café. Why might people choose to study in these places? (Talk for about 1 minute.)",
+    "segundos": 75,
+    "frases_uteis": [
+     "Both photos show ...",
+     "In the first photo ..., whereas in the second ...",
+     "Unlike the first photo, ...",
+     "People might choose ... because ..."
+    ],
+    "modelo": "Both photos show students studying. In the first photo, a student is working alone in a quiet library, whereas in the second one a group is studying together in a busy café. Unlike the first student, the group look relaxed. People might choose the library because it is quiet, while others prefer a café because it is more social."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which word shows contrast?",
+     "op": [
+      "Whereas",
+      "Because",
+      "Both",
+      "Since"
+     ],
+     "r": 0,
+     "exp": "Whereas liga duas ideias opostas."
+    },
+    {
+     "t": "gap",
+     "q": "___ photos show people at work.",
+     "resp": [
+      "both",
+      "in both"
+     ],
+     "exp": "Both + substantivo plural: Both photos."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "In the first photo they are outside, whereas in the second they are indoors.",
+     "exp": "Whereas: 'uér-ÉZ'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence compares the photos correctly?",
+     "op": [
+      "The first photo is happy more.",
+      "The people in the first photo look happier than in the second.",
+      "The first photo is more happier.",
+      "Both of photos are same."
+     ],
+     "r": 1,
+     "exp": "Happy → happier; than liga a comparação."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Unlike",
+      "the",
+      "first",
+      "photo",
+      "the",
+      "second",
+      "one",
+      "shows",
+      "a",
+      "crowd"
+     ],
+     "resp": "Unlike the first photo the second one shows a crowd",
+     "exp": "Unlike + substantivo; vírgula depois do primeiro grupo."
+    },
+    {
+     "t": "gap",
+     "q": "The first student is alone, ___ the second group is together.",
+     "resp": [
+      "whereas",
+      "while"
+     ],
+     "exp": "Whereas/while introduzem contraste."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "Both pictures show people having fun, but in different ways.",
+     "exp": "Fun: 'fan'. Different: 'DI-frent'."
+    },
+    {
+     "t": "mc",
+     "q": "Which opening is best for Part 2?",
+     "op": [
+      "The first photo has a man and the second has a woman.",
+      "Both photos show people enjoying a meal, but the atmosphere is quite different.",
+      "I will talk about food.",
+      "Yes, they eat."
+     ],
+     "r": 1,
+     "exp": "Une as fotos já na primeira frase e anuncie o contraste."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Compare duas fotos: uma de uma praia vazia e outra de uma praia cheia de gente.",
+     "frase": "Compare a photo of an empty beach with a photo of a crowded beach. Which would you prefer to visit?",
+     "modelo": "Both photos show a beach, but in the first one it's empty and calm, whereas in the second one it's crowded and noisy. I'd prefer the first beach because I like peace and quiet.",
+     "min": 23,
+     "chave": [
+      "both",
+      "whereas",
+      "while",
+      "unlike",
+      "however",
+      "prefer"
+     ],
+     "exp": "Use both e whereas/while e responda no fim."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Speculating: must, might, can't",
+   "objetivo": "Fazer suposições sobre o que as pessoas das fotos estão fazendo ou sentindo.",
+   "foco": "Modals of deduction: must/might/may/could/can't + infinitive",
+   "explicacao": [
+    "Na Part 2 você deve especular, pois não sabe a verdade. Use verbos modais + infinitivo.",
+    "Certeza alta: She must be tired. (Tenho quase certeza.) She can't be a teacher. (Quase certo que não.)",
+    "Possibilidade: He might/may/could be waiting for a friend.",
+    "Para ações em andamento: They must be having a good time. = must be + -ing.",
+    "Outras expressões: It looks as if..., He seems to be..., Perhaps / Maybe..."
+   ],
+   "vocab": [
+    {
+     "en": "must be",
+     "pt": "deve ser"
+    },
+    {
+     "en": "might be",
+     "pt": "talvez seja"
+    },
+    {
+     "en": "can't be",
+     "pt": "não pode ser"
+    },
+    {
+     "en": "it looks as if",
+     "pt": "parece que"
+    },
+    {
+     "en": "seems to be",
+     "pt": "parece estar"
+    },
+    {
+     "en": "perhaps",
+     "pt": "talvez"
+    },
+    {
+     "en": "probably",
+     "pt": "provavelmente"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 2: Photo 1 shows a man sitting alone at a table with a laptop, looking worried. Photo 2 shows a woman laughing on the phone in a park. What might these people be thinking or feeling? (Talk for about 1 minute.)",
+    "segundos": 75,
+    "frases_uteis": [
+     "He must be ... because ...",
+     "She might be ...",
+     "It looks as if ...",
+     "I'd say that he can't be ..."
+    ],
+    "modelo": "The man must be worried because he is frowning at his laptop. He might be working on something difficult, or perhaps he has received bad news. The woman looks very happy. She must be talking to a close friend, and she might be planning something exciting."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "You are 95% sure the man is a doctor because he wears a white coat. What do you say?",
+     "op": [
+      "He might be a doctor.",
+      "He must be a doctor.",
+      "He can't be a doctor.",
+      "He is maybe a doctor."
+     ],
+     "r": 1,
+     "exp": "Must = quase certeza."
+    },
+    {
+     "t": "gap",
+     "q": "She looks very happy. She ___ be having a great time.",
+     "resp": [
+      "must"
+     ],
+     "exp": "Must + be + -ing para dedução forte."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "He must be very tired because he is yawning.",
+     "exp": "Yawning: 'IÓ-nin'. Because: 'bi-KÓZ'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence expresses a possibility, not certainty?",
+     "op": [
+      "She must be angry.",
+      "She might be angry.",
+      "She is angry.",
+      "She can't be angry."
+     ],
+     "r": 1,
+     "exp": "Might = possibilidade."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "They",
+      "cannot",
+      "be",
+      "on",
+      "holiday",
+      "because",
+      "they",
+      "are",
+      "wearing",
+      "suits"
+     ],
+     "resp": "They cannot be on holiday because they are wearing suits",
+     "exp": "Cannot = can not: quase certeza de que não."
+    },
+    {
+     "t": "gap",
+     "q": "It looks ___ if he is waiting for someone.",
+     "resp": [
+      "as"
+     ],
+     "exp": "It looks as if ... = parece que."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "She might be waiting for a friend, or perhaps she is just relaxing.",
+     "exp": "Might: 'máit'. Perhaps: 'per-RÁPS'."
+    },
+    {
+     "t": "mc",
+     "q": "Which is the best way to guess the woman's feeling?",
+     "op": [
+      "I know she is sad.",
+      "She seems to be quite nervous, perhaps because she has an exam.",
+      "She is nervous.",
+      "Nervous woman."
+     ],
+     "r": 1,
+     "exp": "Seems to be + perhaps mostram suposição."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale o que uma pessoa que está sozinha num café e olha para o relógio pode estar pensando.",
+     "frase": "A woman is sitting alone in a café, looking at her watch. What might she be thinking?",
+     "modelo": "She might be waiting for a friend who is late. She must be a bit annoyed, because she keeps checking her watch. It looks as if she has an appointment soon.",
+     "min": 21,
+     "chave": [
+      "might",
+      "must",
+      "perhaps",
+      "looks",
+      "seems",
+      "could"
+     ],
+     "exp": "Use might, must e it looks as if."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Speculating about the past",
+   "objetivo": "Supor o que aconteceu antes da cena da foto com must have, might have e can't have.",
+   "foco": "Modal perfect: must/might/could/can't have + past participle",
+   "explicacao": [
+    "Para suposições sobre o passado, use modal + have + particípio.",
+    "Certeza: She must have run to get here. (Estava sem fôlego.) He can't have forgotten. (É impossível.)",
+    "Possibilidade: They might have had an argument. He could have missed the bus.",
+    "Também combine com o presente: She looks tired. She must have worked late last night.",
+    "Lembre dos particípios irregulares: been, gone, seen, taken, had."
+   ],
+   "vocab": [
+    {
+     "en": "must have + participle",
+     "pt": "deve ter (certeza)"
+    },
+    {
+     "en": "might have + participle",
+     "pt": "pode ter"
+    },
+    {
+     "en": "can't have + participle",
+     "pt": "não pode ter"
+    },
+    {
+     "en": "to miss the bus",
+     "pt": "perder o ônibus"
+    },
+    {
+     "en": "to have an argument",
+     "pt": "ter uma discussão"
+    },
+    {
+     "en": "out of breath",
+     "pt": "sem fôlego"
+    },
+    {
+     "en": "to run late",
+     "pt": "estar atrasado"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 2: Photo 1 shows a young man out of breath at a bus stop, looking at his watch. Photo 2 shows a woman holding a broken phone next to a car. What could have happened before these photos were taken? (Talk for about 1 minute.)",
+    "segundos": 80,
+    "frases_uteis": [
+     "He must have ...",
+     "She might have ...",
+     "He can't have ... because ...",
+     "Something must have gone wrong."
+    ],
+    "modelo": "The man must have run to the bus stop because he is out of breath. He might have missed the bus, or perhaps he overslept. The woman might have dropped her phone, and it can't have been a small accident because the screen is completely broken."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "She is out of breath. What can you say?",
+     "op": [
+      "She must have run.",
+      "She must run.",
+      "She can have run.",
+      "She must ran."
+     ],
+     "r": 0,
+     "exp": "Must have + particípio: dedução sobre o passado."
+    },
+    {
+     "t": "gap",
+     "q": "He looks upset. He might ___ missed the train.",
+     "resp": [
+      "have"
+     ],
+     "exp": "Might have + particípio."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "She must have run because she is completely out of breath.",
+     "exp": "Run (corrida): 'ran'; breath soa 'bréth'."
+    },
+    {
+     "t": "mc",
+     "q": "You are almost sure he did NOT see the sign. What do you say?",
+     "op": [
+      "He can't have seen it.",
+      "He must see it.",
+      "He might see it.",
+      "He can't see have."
+     ],
+     "r": 0,
+     "exp": "Can't have + particípio = é quase impossível que tenha."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "They",
+      "might",
+      "have",
+      "had",
+      "an",
+      "argument",
+      "before",
+      "the",
+      "photo"
+     ],
+     "resp": "They might have had an argument before the photo",
+     "exp": "Might have + had (particípio de have)."
+    },
+    {
+     "t": "gap",
+     "q": "The window is open. Someone must ___ left it open. (HAVE)",
+     "resp": [
+      "have"
+     ],
+     "exp": "Must have + particípio.",
+     "dica": "HAVE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "He can't have forgotten his keys, because he has just locked the door.",
+     "exp": "Forgotten: 'for-GÓ-tn'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence is the most natural for speculation?",
+     "op": [
+      "Maybe she was tired.",
+      "She looks exhausted, so she must have been working all night.",
+      "She was working all night for sure.",
+      "She must working."
+     ],
+     "r": 1,
+     "exp": "Combina a evidência da foto com must have been."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Suponha o que aconteceu antes: uma pessoa chega suja de lama em uma festa.",
+     "frase": "A man arrives at a party covered in mud. What could have happened?",
+     "modelo": "He might have fallen over on his way here, or perhaps he must have been playing football. He can't have planned to look like this, because he seems quite embarrassed.",
+     "min": 21,
+     "chave": [
+      "might have",
+      "must have",
+      "can't have",
+      "could have",
+      "perhaps"
+     ],
+     "exp": "Misture might have, must have e can't have."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Answering the Part 2 question",
+   "objetivo": "Comparar fotos e responder à pergunta do examinador dentro de um minuto, de forma organizada.",
+   "foco": "Structure: compare, speculate, answer; linking phrases",
+   "explicacao": [
+    "Em Part 2 há uma pergunta escrita sobre as fotos, por exemplo: Why might the people have chosen to spend their time like this? Responda a ela, sem só descrever.",
+    "Estrutura de 1 minuto: 1) uma frase de comparação; 2) um detalhe de cada foto; 3) a resposta à pergunta, com especulação.",
+    "Marcadores úteis: To begin with..., Another thing is..., All in all...",
+    "Se acabar cedo, volte à pergunta: Going back to the question..., So I'd say that..."
+   ],
+   "vocab": [
+    {
+     "en": "to go back to the question",
+     "pt": "voltar à pergunta"
+    },
+    {
+     "en": "to begin with",
+     "pt": "para começar"
+    },
+    {
+     "en": "another thing is",
+     "pt": "outra coisa é"
+    },
+    {
+     "en": "all in all",
+     "pt": "no geral"
+    },
+    {
+     "en": "to be thrilled",
+     "pt": "estar empolgado"
+    },
+    {
+     "en": "to take risks",
+     "pt": "correr riscos"
+    },
+    {
+     "en": "sense of achievement",
+     "pt": "sensação de conquista"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 2: Photo 1 shows people climbing a mountain with heavy backpacks. Photo 2 shows people relaxing in a spa. Why might the people have chosen to spend their time like this? (Talk for about 1 minute.)",
+    "segundos": 90,
+    "frases_uteis": [
+     "To begin with, both photos show ...",
+     "Going back to the question, ...",
+     "They might have chosen this because ...",
+     "All in all, I'd say that ..."
+    ],
+    "modelo": "Both photos show people spending time on holiday. In the first one, a group is climbing a mountain, whereas in the second one people are relaxing in a spa. Going back to the question, the climbers might have chosen this because they want a sense of achievement. The people in the spa probably need to rest after a stressful year. All in all, I'd say both groups want to escape their daily routine."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the best structure for a one-minute Part 2 answer?",
+     "op": [
+      "Describe only photo 1 for one minute.",
+      "Compare the photos, add details, then answer the question.",
+      "Only answer yes or no.",
+      "Read the question aloud."
+     ],
+     "r": 1,
+     "exp": "Compare, detalhe, resposta."
+    },
+    {
+     "t": "gap",
+     "q": "Going ___ to the question, I think they enjoy the challenge.",
+     "resp": [
+      "back"
+     ],
+     "exp": "Going back to the question retoma a pergunta."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "Going back to the question, they might have chosen this to escape their routine.",
+     "exp": "Escape: 'is-KEIP'. Routine: 'ru-TIN'."
+    },
+    {
+     "t": "mc",
+     "q": "You have finished early. What can you say?",
+     "op": [
+      "That's all.",
+      "Is that okay?",
+      "Going back to the question, I'd say they probably want some adventure.",
+      "I can't think."
+     ],
+     "r": 2,
+     "exp": "Retome a pergunta para continuar falando com sentido."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "To",
+      "begin",
+      "with",
+      "both",
+      "photos",
+      "show",
+      "people",
+      "on",
+      "holiday"
+     ],
+     "resp": "To begin with both photos show people on holiday",
+     "exp": "To begin with abre a sequência de ideias."
+    },
+    {
+     "t": "gap",
+     "q": "All in ___, both groups want some peace.",
+     "resp": [
+      "all"
+     ],
+     "exp": "All in all = no geral, no final."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "The climbers probably enjoy the challenge, whereas the others just want to relax.",
+     "exp": "Climbers: 'KLÁI-mers' (b mudo). Challenge: 'TCHÁ-lenj'."
+    },
+    {
+     "t": "mc",
+     "q": "The question is 'How might the people be feeling?' Which answer stays on topic?",
+     "op": [
+      "They are at the beach.",
+      "The first group might be exhausted but proud, whereas the second probably feel calm.",
+      "I like the mountains.",
+      "The photo is colourful."
+     ],
+     "r": 1,
+     "exp": "Responda à pergunta (feelings), não só descreva."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: por que as pessoas de uma foto escolheram passar o tempo livre estudando em grupo na biblioteca?",
+     "frase": "Two photos show students studying in a library and students studying online at home. Why might they have chosen these places?",
+     "modelo": "To begin with, both photos show students preparing for exams. Going back to the question, the students in the library might want to concentrate without distractions, whereas those at home probably prefer to be comfortable. All in all, it depends on the person.",
+     "min": 30,
+     "chave": [
+      "might",
+      "probably",
+      "whereas",
+      "because",
+      "concentrate",
+      "comfortable"
+     ],
+     "exp": "Compare, especule e termine com all in all."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Part 3: starting and suggesting ideas",
+   "objetivo": "Iniciar a tarefa colaborativa e sugerir ideias com naturalidade.",
+   "foco": "Let's...; How about...?; We could...; What about...?",
+   "explicacao": [
+    "Na Part 3 você e o colega conversam sobre 5 opções, em torno de uma pergunta central, por cerca de 2 minutos. Depois decidem juntos (1 minuto).",
+    "Comece sem pausa: Shall we start with this one? / Let's begin with the first idea.",
+    "Sugerir: How about talking about...? / We could start with...? / What about the second one?",
+    "Mostre interesse nas opções: This one is interesting because...",
+    "Fale de cada opção ligada à pergunta central: How would this help people save money?"
+   ],
+   "vocab": [
+    {
+     "en": "shall we start with...?",
+     "pt": "vamos começar por...?"
+    },
+    {
+     "en": "how about...?",
+     "pt": "que tal...?"
+    },
+    {
+     "en": "we could...",
+     "pt": "poderíamos..."
+    },
+    {
+     "en": "to make a start",
+     "pt": "começar"
+    },
+    {
+     "en": "the first option",
+     "pt": "a primeira opção"
+    },
+    {
+     "en": "to move on to",
+     "pt": "passar para"
+    },
+    {
+     "en": "in terms of",
+     "pt": "em termos de"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 3: Look at the five ideas on the card: sports centre, library, cinema, park, shopping mall. A town wants to improve life for young people. Talk to each other about how each idea could improve life for young people in the town. Then decide which two would be the most useful.",
+    "segundos": 120,
+    "frases_uteis": [
+     "Shall we start with ...?",
+     "How about the library? It could ...",
+     "What about the park? I think it would ...",
+     "Let's move on to the next one."
+    ],
+    "modelo": "Shall we start with the sports centre? It could help young people stay fit and make friends. How about the library? Students could study there. Let's move on to the cinema. What about you, which one do you think is the most useful?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "You and your partner see five ideas. What should you say first?",
+     "op": [
+      "Nothing.",
+      "Shall we start with the first one?",
+      "I don't know.",
+      "You decide everything."
+     ],
+     "r": 1,
+     "exp": "Comece a conversa para dar ritmo."
+    },
+    {
+     "t": "gap",
+     "q": "How ___ the second idea? It looks interesting.",
+     "resp": [
+      "about"
+     ],
+     "exp": "How about + substantivo/-ing."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "Shall we start with the sports centre? It could keep young people active.",
+     "exp": "Shall: 'shal'. Active: 'ÁK-tiv'."
+    },
+    {
+     "t": "mc",
+     "q": "Which suggestion is polite and natural?",
+     "op": [
+      "Talk about the park!",
+      "How about we talk about the park next?",
+      "The park, now.",
+      "You must say the park."
+     ],
+     "r": 1,
+     "exp": "How about we... é sugestão suave."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "What",
+      "about",
+      "the",
+      "library",
+      "it",
+      "could",
+      "help",
+      "students",
+      "study"
+     ],
+     "resp": "What about the library it could help students study",
+     "exp": "What about + ideia, depois explique por quê."
+    },
+    {
+     "t": "gap",
+     "q": "We ___ start with the cinema, if you like.",
+     "resp": [
+      "could"
+     ],
+     "exp": "We could = poderíamos."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "Let's move on to the next idea. What do you think about the park?",
+     "exp": "Think: 'thínk' (th com a língua entre os dentes)."
+    },
+    {
+     "t": "mc",
+     "q": "The question is 'How could each idea improve life for young people?' Which comment is on topic?",
+     "op": [
+      "The mall sells clothes.",
+      "A sports centre could help them stay healthy and meet new people.",
+      "I like parks.",
+      "It is big."
+     ],
+     "r": 1,
+     "exp": "Relacione a opção à pergunta central."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Comece a conversa e sugira a primeira ideia à colega: uma biblioteca.",
+     "frase": "How could a new library improve life for young people?",
+     "modelo": "Shall we start with the library? It could give young people a quiet place to study and they could borrow books. How about you? Do you think it would be useful?",
+     "min": 20,
+     "chave": [
+      "shall",
+      "how about",
+      "could",
+      "library",
+      "study",
+      "what"
+     ],
+     "exp": "Comece com shall we e feche com uma pergunta ao colega."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Part 3: inviting, agreeing and disagreeing",
+   "objetivo": "Convidar o colega a falar, concordar parcialmente e discordar com tato.",
+   "foco": "What do you think?; I see what you mean, but...; I'm not so sure",
+   "explicacao": [
+    "Part 3 é uma conversa de verdade. Dê espaço ao colega: What do you think? / Do you agree?",
+    "Concordar totalmente: Absolutely. / I couldn't agree more.",
+    "Concordar parcialmente: I see what you mean, but... / That's true, although... / You have a point, however...",
+    "Discordar com tato: I'm not so sure about that. / I'm afraid I see it differently.",
+    "Depois de discordar, dê um motivo: I'm not so sure, because...."
+   ],
+   "vocab": [
+    {
+     "en": "do you agree?",
+     "pt": "você concorda?"
+    },
+    {
+     "en": "I couldn't agree more",
+     "pt": "concordo totalmente"
+    },
+    {
+     "en": "I see what you mean, but...",
+     "pt": "entendo, mas..."
+    },
+    {
+     "en": "you have a point",
+     "pt": "você tem razão"
+    },
+    {
+     "en": "I'm not so sure",
+     "pt": "não tenho tanta certeza"
+    },
+    {
+     "en": "I see it differently",
+     "pt": "vejo de outra forma"
+    },
+    {
+     "en": "to have a point",
+     "pt": "ter razão"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 3: Look at the five ideas: online lessons, group projects, school trips, sports, school clubs. Talk to each other about how each activity could help students learn better. Then decide which one is the most important.",
+    "segundos": 120,
+    "frases_uteis": [
+     "What do you think about ...?",
+     "I see what you mean, but ...",
+     "That's a good point, although ...",
+     "I'm not so sure about that because ..."
+    ],
+    "modelo": "What do you think about school trips? I see what you mean, but I'm not so sure they help students learn. You have a point, although I think trips can make lessons more memorable. Do you agree?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Your partner says 'Sport is the most useful.' You partly agree. What do you say?",
+     "op": [
+      "No!",
+      "I see what you mean, but I think clubs are more useful too.",
+      "That is wrong.",
+      "I don't speak."
+     ],
+     "r": 1,
+     "exp": "I see what you mean, but... concorda em parte."
+    },
+    {
+     "t": "gap",
+     "q": "I'm not so ___ about that.",
+     "resp": [
+      "sure"
+     ],
+     "exp": "I'm not so sure = não tenho tanta certeza."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "I see what you mean, but I'm not so sure about that.",
+     "exp": "Sure: 'xur'. Mean: 'min'."
+    },
+    {
+     "t": "mc",
+     "q": "Which phrase invites your partner to speak?",
+     "op": [
+      "Right.",
+      "What do you think?",
+      "I think.",
+      "Wait."
+     ],
+     "r": 1,
+     "exp": "Pergunte para o colega participar."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "You",
+      "have",
+      "a",
+      "point",
+      "but",
+      "I",
+      "think",
+      "trips",
+      "are",
+      "more",
+      "useful"
+     ],
+     "resp": "You have a point but I think trips are more useful",
+     "exp": "But liga a concordância parcial à sua opinião."
+    },
+    {
+     "t": "gap",
+     "q": "I couldn't ___ more. That is a great idea.",
+     "resp": [
+      "agree"
+     ],
+     "exp": "I couldn't agree more = concordo totalmente."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "That's a good point, although I'd say group projects are more useful.",
+     "exp": "Although: 'ol-DÔU'."
+    },
+    {
+     "t": "mc",
+     "q": "Which response disagrees politely?",
+     "op": [
+      "You are wrong.",
+      "I'm afraid I see it differently, because online lessons are not very personal.",
+      "No, never.",
+      "That is silly."
+     ],
+     "r": 1,
+     "exp": "Seja educado e dê motivo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Seu colega disse que aulas online são a melhor forma de aprender. Concorde em parte e discorde com educação.",
+     "frase": "Your partner says: 'Online lessons are the best way to learn.' Respond.",
+     "modelo": "I see what you mean, and online lessons are very convenient. However, I'm not so sure they are the best, because students can lose focus at home. What do you think?",
+     "min": 21,
+     "chave": [
+      "see what you mean",
+      "not so sure",
+      "however",
+      "although",
+      "point",
+      "agree"
+     ],
+     "exp": "Concorde em parte, discorde com motivo e devolva a pergunta."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Part 3: summarising and deciding",
+   "objetivo": "Resumir a conversa e chegar a uma decisão conjunta na parte final da Part 3.",
+   "foco": "So, to sum up...; Shall we agree on...?; Let's go for...",
+   "explicacao": [
+    "Depois dos 2 minutos de conversa, o examinador pede uma decisão. Você tem cerca de 1 minuto para chegar a um acordo.",
+    "Comece resumindo: So, to sum up, we've talked about... / Overall, I think the most useful ones are...",
+    "Proponha: Shall we choose...? / Why don't we go for...? / I'd suggest we pick...",
+    "Peça confirmação: Are you happy with that? / Do we agree?",
+    "Mostre acordo ao final: Great, so we've decided on... because..."
+   ],
+   "vocab": [
+    {
+     "en": "to sum up",
+     "pt": "resumindo"
+    },
+    {
+     "en": "overall",
+     "pt": "no geral"
+    },
+    {
+     "en": "to go for",
+     "pt": "optar por"
+    },
+    {
+     "en": "to pick",
+     "pt": "escolher"
+    },
+    {
+     "en": "to reach an agreement",
+     "pt": "chegar a um acordo"
+    },
+    {
+     "en": "are you happy with that?",
+     "pt": "você concorda com isso?"
+    },
+    {
+     "en": "to settle on",
+     "pt": "decidir-se por"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 3 (decision): Now decide together which two of the five ideas (online lessons, group projects, school trips, sports, school clubs) would be the most important for students. Give reasons for your choice.",
+    "segundos": 90,
+    "frases_uteis": [
+     "So, to sum up, ...",
+     "Shall we go for ... and ...?",
+     "Are you happy with that?",
+     "We've decided on ... because ..."
+    ],
+    "modelo": "So, to sum up, we've talked about five ideas. Overall, I think group projects and school clubs are the most useful, because students learn to work as a team. Shall we go for those two? Are you happy with that? Great, so we've decided on group projects and clubs."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "The examiner says 'Now decide which two are the best.' What should you do first?",
+     "op": [
+      "Say nothing.",
+      "Say 'So, to sum up, ...' and propose two options.",
+      "Change the topic.",
+      "Ask the examiner to choose."
+     ],
+     "r": 1,
+     "exp": "Resuma e proponha para avançar."
+    },
+    {
+     "t": "gap",
+     "q": "Shall we go ___ the park and the library?",
+     "resp": [
+      "for"
+     ],
+     "exp": "Go for = optar por."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "So, to sum up, I think the library and the park are the best options.",
+     "exp": "Sum: 'sam'. Options: 'ÓP-xons'."
+    },
+    {
+     "t": "mc",
+     "q": "Which phrase checks agreement?",
+     "op": [
+      "I decide.",
+      "Are you happy with that?",
+      "It is late.",
+      "Whatever."
+     ],
+     "r": 1,
+     "exp": "Confirme com o colega."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Overall",
+      "I",
+      "think",
+      "we",
+      "should",
+      "choose",
+      "the",
+      "sports",
+      "centre",
+      "and",
+      "the",
+      "park"
+     ],
+     "resp": "Overall I think we should choose the sports centre and the park",
+     "exp": "Overall resume; should choose propõe."
+    },
+    {
+     "t": "gap",
+     "q": "We have ___ on the library because it helps everyone. (DECIDE)",
+     "resp": [
+      "decided"
+     ],
+     "exp": "Present perfect: have decided on.",
+     "dica": "DECIDE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "Great, so we've decided on the park and the library, because they benefit everyone.",
+     "exp": "Decided: 'di-SÁI-did'. Benefit: 'BÉ-ni-fit'."
+    },
+    {
+     "t": "mc",
+     "q": "Your partner prefers sports, you prefer clubs. What is a good way to reach agreement?",
+     "op": [
+      "Argue until the end.",
+      "We could pick one each: sports for fitness and clubs for friendship. Is that okay?",
+      "Say they are wrong.",
+      "Leave."
+     ],
+     "r": 1,
+     "exp": "Compromisso: cada um escolhe uma, com motivo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Resuma e proponha duas escolhas: parque e biblioteca. Dê motivos e peça confirmação.",
+     "frase": "Decide together which two ideas would help young people in your town the most.",
+     "modelo": "So, to sum up, I think the park and the library are the best choices. The park lets people relax, and the library helps them study. Shall we go for those two? Are you happy with that?",
+     "min": 25,
+     "chave": [
+      "sum up",
+      "go for",
+      "choose",
+      "pick",
+      "agree",
+      "decided",
+      "happy"
+     ],
+     "exp": "Resuma, proponha, dê motivos e peça confirmação."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Part 4: justifying opinions with examples",
+   "objetivo": "Dar opiniões longas na Part 4, com argumentos e exemplos pessoais ou gerais.",
+   "foco": "I'd say that...; the reason is...; for instance; in my experience",
+   "explicacao": [
+    "Na Part 4 o examinador faz perguntas mais abstratas, como Do you think people spend too much time online? A resposta deve ter 4 ou 5 frases.",
+    "Estrutura: opinião + razão + exemplo + contraponto. I think it's a problem. The reason is that we lose touch with real life. For instance, ... Having said that, ...",
+    "Use in my experience e from what I've seen para exemplos pessoais.",
+    "Having said that / On the other hand mostram os dois lados."
+   ],
+   "vocab": [
+    {
+     "en": "the reason is that",
+     "pt": "a razão é que"
+    },
+    {
+     "en": "for instance",
+     "pt": "por exemplo"
+    },
+    {
+     "en": "in my experience",
+     "pt": "na minha experiência"
+    },
+    {
+     "en": "having said that",
+     "pt": "dito isso"
+    },
+    {
+     "en": "on the other hand",
+     "pt": "por outro lado"
+    },
+    {
+     "en": "to lose touch with",
+     "pt": "perder o contato com"
+    },
+    {
+     "en": "to a certain extent",
+     "pt": "até certo ponto"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 4: Discuss these questions with your partner and the examiner. Do you think people spend too much time on social media? Why? How can it affect friendships? Is it better to meet people face to face?",
+    "segundos": 120,
+    "frases_uteis": [
+     "I'd say that ... The reason is that ...",
+     "For instance, ...",
+     "In my experience, ...",
+     "Having said that, ..."
+    ],
+    "modelo": "I'd say that people do spend too much time on social media. The reason is that it is so easy to scroll without noticing. For instance, I often check my phone for an hour without realising. In my experience, it can affect friendships, because people talk less. Having said that, it also helps us keep in touch with people far away."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which answer is the most developed for 'Do you think people spend too much time online?'",
+     "op": [
+      "Yes.",
+      "Yes, a lot.",
+      "I'd say so. The reason is that it's so easy to lose track of time. For instance, I often scroll for an hour without noticing.",
+      "Online is online."
+     ],
+     "r": 2,
+     "exp": "Opinião, razão e exemplo."
+    },
+    {
+     "t": "gap",
+     "q": "The ___ is that it saves time.",
+     "resp": [
+      "reason"
+     ],
+     "exp": "The reason is that + frase."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "In my experience, people talk less when everyone is looking at their phones.",
+     "exp": "Experience: 'iks-PÍ-ri-ens'."
+    },
+    {
+     "t": "mc",
+     "q": "Which phrase introduces the opposite side?",
+     "op": [
+      "Having said that",
+      "For instance",
+      "In my experience",
+      "Besides"
+     ],
+     "r": 0,
+     "exp": "Having said that = dito isso (contraponto)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Having",
+      "said",
+      "that",
+      "it",
+      "also",
+      "helps",
+      "us",
+      "keep",
+      "in",
+      "touch",
+      "with",
+      "friends"
+     ],
+     "resp": "Having said that it also helps us keep in touch with friends",
+     "exp": "Having said that mostra o outro lado."
+    },
+    {
+     "t": "gap",
+     "q": "People spend too much time online. ___ instance, I check my phone constantly.",
+     "resp": [
+      "for"
+     ],
+     "exp": "For instance = por exemplo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "To a certain extent, social media helps us stay close to friends who live far away.",
+     "exp": "Extent: 'iks-TÊNT'."
+    },
+    {
+     "t": "mc",
+     "q": "Which opinion shows two sides?",
+     "op": [
+      "Social media is great.",
+      "Social media can be useful for staying in touch, but on the other hand it can waste time.",
+      "Social media is bad.",
+      "Social media is social."
+     ],
+     "r": 1,
+     "exp": "On the other hand mostra equilíbrio."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê sua opinião: é melhor encontrar pessoas pessoalmente ou falar online? Use um exemplo.",
+     "frase": "Do you think it is better to meet people face to face than to talk online? Why?",
+     "modelo": "I'd say it's better to meet face to face, because you can see people's expressions. For instance, a joke is easier to understand in person. Having said that, online chats are useful when friends live far away.",
+     "min": 25,
+     "chave": [
+      "face to face",
+      "because",
+      "for instance",
+      "reason",
+      "experience",
+      "however",
+      "having said that"
+     ],
+     "exp": "Opinião + razão + for instance + having said that."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Part 4: hypotheses and generalising",
+   "objetivo": "Falar de situações hipotéticas e fazer generalizações na discussão final.",
+   "foco": "Second conditional; if I were...; generally, tend to; people who...",
+   "explicacao": [
+    "Na Part 4 aparecem perguntas hipotéticas: What would you do if you could work from home? Use o second conditional: If + past simple, would + infinitivo.",
+    "If I had more time, I would learn another language. Com I/he/she use were: If I were you, I'd...",
+    "Para generalizar sem exagerar: Generally speaking,..., Most people tend to..., It depends on the person.",
+    "Para opinião em grupo: I'd imagine that..., It's likely that..."
+   ],
+   "vocab": [
+    {
+     "en": "if I were you",
+     "pt": "se eu fosse você"
+    },
+    {
+     "en": "generally speaking",
+     "pt": "de modo geral"
+    },
+    {
+     "en": "most people tend to",
+     "pt": "a maioria das pessoas tende a"
+    },
+    {
+     "en": "it depends on",
+     "pt": "depende de"
+    },
+    {
+     "en": "I'd imagine that",
+     "pt": "imagino que"
+    },
+    {
+     "en": "it's likely that",
+     "pt": "é provável que"
+    },
+    {
+     "en": "on average",
+     "pt": "em média"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 4: Discuss these questions. If you could work from home, would you enjoy it? What are the advantages and disadvantages of working from home? Do you think most people would prefer to work from home? Why?",
+    "segundos": 120,
+    "frases_uteis": [
+     "If I could ..., I would ...",
+     "Generally speaking, ...",
+     "It depends on the person.",
+     "I'd imagine that most people ..."
+    ],
+    "modelo": "If I could work from home, I think I would enjoy it, because I would save time travelling. Generally speaking, most people tend to like the flexibility. However, it depends on the person. If I were working alone every day, I would probably feel isolated."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Which sentence is a correct second conditional?",
+     "op": [
+      "If I will have time, I learn Spanish.",
+      "If I had more time, I would learn Spanish.",
+      "If I would have time, I learn Spanish.",
+      "If I have had time, I would learn."
+     ],
+     "r": 1,
+     "exp": "If + past simple, would + infinitivo."
+    },
+    {
+     "t": "gap",
+     "q": "If I ___ you, I would ask for help.",
+     "resp": [
+      "were",
+      "was"
+     ],
+     "exp": "If I were you = se eu fosse você (were é a forma mais usada)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "If I could live anywhere, I would choose a small town by the sea.",
+     "exp": "Would: 'wud'. Anywhere: 'É-ni-uér'."
+    },
+    {
+     "t": "mc",
+     "q": "Which phrase makes a safe generalisation?",
+     "op": [
+      "Everybody always does that.",
+      "Most people tend to prefer flexibility.",
+      "Nobody likes it.",
+      "People are all same."
+     ],
+     "r": 1,
+     "exp": "Tend to evita exagero."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "If",
+      "I",
+      "had",
+      "more",
+      "free",
+      "time",
+      "I",
+      "would",
+      "learn",
+      "a",
+      "new",
+      "language"
+     ],
+     "resp": "If I had more free time I would learn a new language",
+     "exp": "Second conditional: past simple + would."
+    },
+    {
+     "t": "gap",
+     "q": "It ___ on the person whether they prefer working alone.",
+     "resp": [
+      "depends"
+     ],
+     "exp": "It depends on + substantivo.",
+     "dica": "DEPEND"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "Generally speaking, most people tend to prefer jobs that give them flexibility.",
+     "exp": "Flexibility: 'flék-si-BÍ-li-ti'."
+    },
+    {
+     "t": "mc",
+     "q": "'What would you do if you won a lot of money?' Which is the best answer?",
+     "op": [
+      "I will buy a house.",
+      "If I won a lot of money, I'd probably travel round the world, although I'd also save some for the future.",
+      "I won money yesterday.",
+      "If I would win, I buy."
+     ],
+     "r": 1,
+     "exp": "Second conditional + probably + contraste com although."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Imagine que você pudesse trabalhar de qualquer lugar. Diga o que faria e por quê.",
+     "frase": "If you could work from anywhere in the world, where would you choose and why?",
+     "modelo": "If I could work from anywhere, I'd choose a small island, because I love the sea. I'd imagine it would be peaceful. Having said that, I might feel lonely, so it depends on whether my friends could visit.",
+     "min": 26,
+     "chave": [
+      "if",
+      "would",
+      "could",
+      "imagine",
+      "depends",
+      "choose"
+     ],
+     "exp": "Second conditional (if + passado, would) e depends on."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Fluency: discourse markers and paraphrasing",
+   "objetivo": "Falar com fluência usando marcadores do discurso, pausas naturais e paráfrase.",
+   "foco": "Fillers; discourse markers; paraphrasing: what I mean is, in other words",
+   "explicacao": [
+    "Fluência não é falar rápido: é manter o fluxo. Use marcadores no lugar de silêncio: Well, ... / Let me think... / Actually, ... / To be honest, ...",
+    "Para organizar: First of all, ... / Moreover, ... / In addition, ... / As a result, ... / To conclude, ...",
+    "Se não souber uma palavra, parafraseie: What I mean is... / In other words, ... / It's a kind of ... / Something like...",
+    "Para corrigir-se: Sorry, I mean... / Or rather,...",
+    "Evite parar muito tempo e repetir so, so, so."
+   ],
+   "vocab": [
+    {
+     "en": "well,",
+     "pt": "bom,"
+    },
+    {
+     "en": "let me think",
+     "pt": "deixe-me pensar"
+    },
+    {
+     "en": "to be honest",
+     "pt": "para ser honesto"
+    },
+    {
+     "en": "in other words",
+     "pt": "em outras palavras"
+    },
+    {
+     "en": "what I mean is",
+     "pt": "o que quero dizer é"
+    },
+    {
+     "en": "as a result",
+     "pt": "como resultado"
+    },
+    {
+     "en": "or rather",
+     "pt": "ou melhor"
+    }
+   ],
+   "material": {
+    "tarefa": "Part 4: Discuss these questions. Why do some people find it difficult to speak in front of other people? What could be done to help them? Do you think speaking skills are as important as writing skills? Why?",
+    "segundos": 150,
+    "frases_uteis": [
+     "Well, let me think ...",
+     "To be honest, ...",
+     "In other words, ...",
+     "As a result, ... / To conclude, ..."
+    ],
+    "modelo": "Well, let me think. To be honest, I think many people feel nervous because they're afraid of making mistakes. In other words, they worry about what others think. As a result, they stay quiet. To help them, teachers could organise small group practice. To conclude, speaking skills are just as important as writing, since we use them every day."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "You need a moment to think. What can you say?",
+     "op": [
+      "...",
+      "Well, let me think about that for a second.",
+      "I don't know anything.",
+      "Nothing, sorry."
+     ],
+     "r": 1,
+     "exp": "Filler com naturalidade evita silêncio."
+    },
+    {
+     "t": "gap",
+     "q": "To be ___, I get nervous before speaking tests.",
+     "resp": [
+      "honest"
+     ],
+     "exp": "To be honest = para ser honesto."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "To be honest, I get a bit nervous, but it helps when I practise with a friend.",
+     "exp": "Honest: 'Ó-nist' (h mudo)."
+    },
+    {
+     "t": "mc",
+     "q": "You forget the word 'fridge'. What is the best way to continue?",
+     "op": [
+      "Sorry, I can't talk.",
+      "It's a kind of machine in the kitchen that keeps food cold.",
+      "Fridge! I forgot!",
+      "Stop."
+     ],
+     "r": 1,
+     "exp": "Parafrasear mantém o fluxo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "In",
+      "other",
+      "words",
+      "many",
+      "people",
+      "are",
+      "afraid",
+      "of",
+      "making",
+      "mistakes"
+     ],
+     "resp": "In other words many people are afraid of making mistakes",
+     "exp": "In other words reformula a ideia."
+    },
+    {
+     "t": "gap",
+     "q": "People feel anxious. ___ a result, they stay quiet.",
+     "resp": [
+      "as"
+     ],
+     "exp": "As a result = como resultado."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "What I mean is, speaking is a skill that improves only if you practise regularly.",
+     "exp": "Skill: 'skil'. Regularly: 'RÉ-gui-lar-li'."
+    },
+    {
+     "t": "mc",
+     "q": "Which sequence of markers organises a long answer best?",
+     "op": [
+      "Then, then, then",
+      "First of all..., Moreover..., To conclude...",
+      "So so so",
+      "Because, because, because"
+     ],
+     "r": 1,
+     "exp": "Marcadores claros guiam o ouvinte."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Explique por que algumas pessoas têm medo de falar em público e o que ajudaria. Use marcadores.",
+     "frase": "Why do some people fear speaking in public, and what could help them?",
+     "modelo": "Well, to be honest, I think people are afraid of being judged. In other words, they worry about making mistakes. As a result, they avoid speaking. What could help is practising in small groups. To conclude, confidence grows with practice.",
+     "min": 28,
+     "chave": [
+      "to be honest",
+      "in other words",
+      "as a result",
+      "to conclude",
+      "well",
+      "what I mean"
+     ],
+     "exp": "Use well, in other words, as a result e to conclude."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Mock test: B2 First Speaking",
+   "objetivo": "Fazer um simulado completo das 4 partes do Speaking do B2 First.",
+   "foco": "All four parts: interview, long turn, collaborative task, discussion",
+   "explicacao": [
+    "O Speaking do B2 First dura cerca de 14 minutos, com um colega. Part 1: entrevista (2 min). Part 2: comparar duas fotos e responder a uma pergunta (1 min cada). Part 3: tarefa em dupla com 5 opções e uma decisão (4 min). Part 4: discussão aprofundada (4 min).",
+    "Part 1: resposta + motivo + exemplo. Part 2: compare com whereas/while, especule com might/must e responda à pergunta.",
+    "Part 3: sugira, convide o colega, concorde em parte e decida juntos. Part 4: opinião, exemplo, hipótese e contraponto.",
+    "Mantenha o fluxo: use marcadores e paráfrase; fale claro e dê respostas desenvolvidas."
+   ],
+   "vocab": [
+    {
+     "en": "to compare",
+     "pt": "comparar"
+    },
+    {
+     "en": "to speculate",
+     "pt": "especular"
+    },
+    {
+     "en": "to reach a decision",
+     "pt": "chegar a uma decisão"
+    },
+    {
+     "en": "a long turn",
+     "pt": "fala longa"
+    },
+    {
+     "en": "to interact",
+     "pt": "interagir"
+    },
+    {
+     "en": "fluency",
+     "pt": "fluência"
+    },
+    {
+     "en": "range of language",
+     "pt": "variedade de linguagem"
+    }
+   ],
+   "material": {
+    "tarefa": "Full test. Part 1: Where do you live and what do you like about it? Part 2: Compare two photos (people working in an office / people working outdoors) and say which job might be more rewarding. Part 3: Five ideas to make a town greener (parks, bikes, recycling, trees, public transport): discuss, then decide on two. Part 4: Do you think people care enough about the environment? Why?",
+    "segundos": 180,
+    "frases_uteis": [
+     "In my opinion, ...",
+     "Both photos show ... whereas ...",
+     "They might be ... because ...",
+     "How about ...? What do you think? / So, to sum up, ...",
+     "If everyone ..., it would ..."
+    ],
+    "modelo": "I live in a medium-sized city, and what I like most is that it has many parks. Both photos show people working, whereas in the first they are in an office and in the second they are outdoors. The office workers must be busy, but the outdoor workers might feel more free. How about starting with trees? So, to sum up, I'd go for parks and public transport. In my opinion, people don't care enough, but if everyone did a little, it would make a big difference."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Part 1: 'What do you like about the place where you live?' Which answer is best?",
+     "op": [
+      "It is okay.",
+      "I like it a lot, because it has lots of parks. For example, I jog there every morning.",
+      "Parks.",
+      "I live there."
+     ],
+     "r": 1,
+     "exp": "Resposta + motivo + exemplo."
+    },
+    {
+     "t": "gap",
+     "q": "In the first photo they are in an office, ___ in the second they are outside.",
+     "resp": [
+      "whereas",
+      "while"
+     ],
+     "exp": "Whereas/while: contraste entre fotos."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "Both photos show people working, but the atmosphere is very different.",
+     "exp": "Atmosphere: 'ÁT-mos-fir'."
+    },
+    {
+     "t": "mc",
+     "q": "Part 2: You must answer 'Which job might be more rewarding?' What is the best ending?",
+     "op": [
+      "Thank you.",
+      "Going back to the question, I'd say working outdoors might be more rewarding, because people can enjoy fresh air.",
+      "I like photos.",
+      "That's all."
+     ],
+     "r": 1,
+     "exp": "Retome a pergunta e responda."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "workers",
+      "in",
+      "the",
+      "office",
+      "must",
+      "be",
+      "very",
+      "busy"
+     ],
+     "resp": "The workers in the office must be very busy",
+     "exp": "Must be + adjetivo para dedução."
+    },
+    {
+     "t": "gap",
+     "q": "He looks tired. He might ___ stayed up late. (HAVE)",
+     "resp": [
+      "have"
+     ],
+     "exp": "Might have + particípio.",
+     "dica": "HAVE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma e clareza.",
+     "frase": "How about starting with trees? I think they would make the town healthier.",
+     "exp": "Trees: 'tríiz'. Healthier: 'HÉL-thi-er'."
+    },
+    {
+     "t": "mc",
+     "q": "Part 3: Your partner says that bikes are the best idea. You partly disagree. What do you say?",
+     "op": [
+      "No.",
+      "I see what you mean, but I'm not so sure, because not everybody can ride a bike.",
+      "That's wrong.",
+      "Silence."
+     ],
+     "r": 1,
+     "exp": "Discorde com tato e dê motivo."
+    },
+    {
+     "t": "gap",
+     "q": "So, to ___ up, I think parks and trees are the best choices.",
+     "resp": [
+      "sum"
+     ],
+     "exp": "To sum up = resumindo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Part 4: Dê sua opinião, um exemplo e uma hipótese sobre o meio ambiente.",
+     "frase": "Do you think people care enough about the environment? Why or why not?",
+     "modelo": "I'd say most people care, but they don't always act. For instance, many people recycle but still use cars every day. If everyone made small changes, it would make a big difference. Having said that, it also depends on governments.",
+     "min": 28,
+     "chave": [
+      "environment",
+      "for instance",
+      "would",
+      "if",
+      "care",
+      "depends",
+      "recycle"
+     ],
+     "exp": "Opinião + for instance + if/would + having said that."
+    },
+    {
+     "t": "mc",
+     "q": "Part 4: Which phrase best concludes a discussion answer?",
+     "op": [
+      "That is the end.",
+      "To conclude, I think small daily changes can make a real difference.",
+      "Because yes.",
+      "I finished."
+     ],
+     "r": 1,
+     "exp": "To conclude fecha a resposta com uma ideia final."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Part 4: Descreva como seria sua cidade ideal em termos de transporte e natureza.",
+     "frase": "What would your ideal town be like?",
+     "modelo": "If I could design my ideal town, I would build lots of green spaces and make public transport free. In my experience, people use buses more if they are cheap. To be honest, I'd also add cycle lanes so that it would be easy to get around.",
+     "min": 30,
+     "chave": [
+      "if",
+      "would",
+      "transport",
+      "green",
+      "bike",
+      "town",
+      "cycle"
+     ],
+     "exp": "Second conditional e in my experience."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2420 @@
+{
+ "nivel": "C1",
+ "skill": "reading",
+ "exame": "C1 Advanced (CAE)",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "The second life of vinyl",
+   "objetivo": "Perceber a atitude do autor (ressalvas, ironia leve) em um texto de opinião.",
+   "foco": "Author's attitude; hedging language: admittedly, arguably, at best, albeit",
+   "explicacao": [
+    "No C1, a pergunta muitas vezes não é 'o que o texto diz', mas 'o que o autor pensa'. Procure palavras que suavizam ou limitam uma ideia.",
+    "Admittedly, arguably, at best, to some extent e albeit mostram ressalva: The results are, at best, mixed.",
+    "Advérbios como rather, hardly e scarcely podem esconder ironia: it rather undermines the argument = isso enfraquece o argumento (e o autor sabe disso).",
+    "Cuidado: uma opção de resposta pode usar uma palavra do texto, mas dizer o contrário do que o autor pensa."
+   ],
+   "vocab": [
+    {
+     "en": "revival",
+     "pt": "retomada, ressurgimento"
+    },
+    {
+     "en": "nostalgia",
+     "pt": "saudosismo"
+    },
+    {
+     "en": "abundance",
+     "pt": "abundância"
+    },
+    {
+     "en": "debatable",
+     "pt": "discutível"
+    },
+    {
+     "en": "niche",
+     "pt": "nicho de mercado"
+    },
+    {
+     "en": "lucrative",
+     "pt": "lucrativo"
+    },
+    {
+     "en": "to undermine",
+     "pt": "enfraquecer, minar"
+    },
+    {
+     "en": "ritual",
+     "pt": "ritual, hábito repetido"
+    }
+   ],
+   "material": {
+    "titulo": "The return of the record",
+    "texto": "It is easy to dismiss the revival of vinyl records as little more than nostalgia for people who never had to own one. Admittedly, the typical buyer is no longer a collector in a cardigan; walk into any independent record shop on a Saturday and you will find teenagers flicking through sleeves with the concentration of customs officers. Sales in Britain have risen for more than a decade, and last year records outsold compact discs for the first time since the late 1980s. Yet the figures, striking as they are, tell only part of the story. Streaming services offer more music than anyone could hear in several lifetimes, and it is precisely this abundance that seems to have driven some listeners back to the turntable.\n\nOwning a record, they argue, forces a certain discipline. You cannot skip a track without getting up from the sofa, so you tend to hear an album as its makers intended: as a sequence rather than a playlist. Whether this makes the music better is debatable, and the claim that vinyl sounds warmer is, at best, difficult to prove. Several blind tests have suggested that most listeners cannot reliably tell a record from a high-quality digital file. Fans are rarely troubled by this. For them, the pleasure lies less in the sound than in the ritual: lifting the needle, reading the sleeve notes, turning the disc over halfway through.\n\nThe industry, naturally, has noticed. Major labels now press limited editions in coloured wax, and some of these are priced so high that they are bought to be displayed rather than played, which rather undermines the argument about ritual. A few small pressing plants, struggling to keep up, have waiting lists of up to a year. Environmental campaigners have also pointed out that the plastic involved is hardly harmless, although the sums are small compared with the carbon footprint of the data centres that keep streaming alive.\n\nNone of this means that vinyl will replace anything. It is likely to remain a niche, albeit a lucrative one. But perhaps that is the point. In a world where nearly everything can be summoned instantly and for free, a modest taste for the slow and the physical may be less a retreat than a quiet protest. Time will tell whether the protest lasts, but I suspect that for now the turntable is here to stay, if only because, like a good book, it asks something of us in return."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the writer's view of the claim that the vinyl revival is merely nostalgia?",
+     "op": [
+      "It is unfair to older collectors who started the trend.",
+      "It contains some truth but does not explain the whole situation.",
+      "It is completely wrong, because buyers are mostly young.",
+      "It is correct, although the sales figures are surprising."
+     ],
+     "r": 1,
+     "exp": "'Easy to dismiss' + 'the figures... tell only part of the story': o autor admite parte da ideia, mas acha que ela é incompleta."
+    },
+    {
+     "t": "gap",
+     "q": "The claim that vinyl sounds warmer is, at ___, difficult to prove.",
+     "resp": [
+      "best"
+     ],
+     "exp": "Expressão fixa: at best = no máximo, na melhor das hipóteses. Mostra ressalva do autor."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase do texto.",
+     "frase": "Admittedly, the figures tell only part of the story.",
+     "exp": "Admittedly = /ədˈmɪtɪdli/, com acento em MIT. Faça uma pequena pausa depois da vírgula."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer imply about the expensive coloured editions?",
+     "op": [
+      "They sound noticeably better than ordinary records.",
+      "Some buyers treat them as objects, which contradicts a common argument.",
+      "Pressing plants refuse to produce them.",
+      "They are the main reason why sales have grown."
+     ],
+     "r": 1,
+     "exp": "'bought to be displayed rather than played, which rather undermines the argument about ritual': o autor aponta uma contradição, com leve ironia."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Streaming",
+      "services",
+      "offer",
+      "more",
+      "music",
+      "than",
+      "anyone",
+      "could",
+      "hear",
+      "in",
+      "a",
+      "lifetime"
+     ],
+     "resp": "Streaming services offer more music than anyone could hear in a lifetime",
+     "exp": "Estrutura comparativa: more ... than anyone could hear. Aqui 'anyone' aparece depois de than."
+    },
+    {
+     "t": "gap",
+     "q": "Although the plastic is hardly harmless, the sums are small compared ___ the carbon footprint of data centres.",
+     "resp": [
+      "with",
+      "to"
+     ],
+     "exp": "Compared with/to = comparado com. As duas preposições são aceitas."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você prefere mídia física (livros, discos) ou digital? Dê um motivo.",
+     "frase": "Do you prefer physical or digital media, and why?",
+     "modelo": "I would say I prefer physical books, admittedly because I like the ritual of turning pages. Digital is more practical, but it is easier to get distracted.",
+     "min": 14,
+     "chave": [
+      "prefer",
+      "physical",
+      "digital",
+      "admittedly",
+      "because"
+     ],
+     "exp": "Tente usar uma palavra de ressalva: admittedly, to some extent, at best."
+    },
+    {
+     "t": "mc",
+     "q": "In the final paragraph, the writer's tone is best described as",
+     "op": [
+      "cautiously optimistic about vinyl's staying power.",
+      "alarmed about the future of streaming.",
+      "certain that vinyl will replace digital music.",
+      "dismissive of people who buy records."
+     ],
+     "r": 0,
+     "exp": "'Time will tell' e 'I suspect' mostram otimismo cauteloso. 'None of this means that vinyl will replace anything' elimina a última opção."
+    },
+    {
+     "t": "gap",
+     "q": "It is difficult for most listeners to tell a record from a digital file. HARD\nMost listeners ___ tell a record from a digital file.",
+     "resp": [
+      "find it hard to",
+      "are hard pressed to"
+     ],
+     "exp": "Com HARD: find it hard to + verbo. Também vale 'are hard pressed to' (têm dificuldade em).",
+     "dica": "HARD"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Never has the sea been so quiet",
+   "objetivo": "Entender frases com inversão após advérbios negativos em um texto narrativo.",
+   "foco": "Inversion after negative adverbials: never, hardly, not only, rarely, no sooner",
+   "explicacao": [
+    "Em estilo formal ou literário, colocamos um advérbio negativo no início e invertemos sujeito e auxiliar: Never had she seen such a storm.",
+    "Not only did the engine fail, but the radio also went dead. Hardly had we left when it began to rain. No sooner had he arrived than the phone rang.",
+    "Hardly/Scarcely usam when; No sooner usa than. Under no circumstances, Little did they know e Only after... também pedem inversão.",
+    "Sem auxiliar, use do/does/did: Rarely does a lighthouse keeper see another person for weeks."
+   ],
+   "vocab": [
+    {
+     "en": "lighthouse",
+     "pt": "farol"
+    },
+    {
+     "en": "gale",
+     "pt": "vendaval"
+    },
+    {
+     "en": "to withstand",
+     "pt": "resistir a"
+    },
+    {
+     "en": "isolation",
+     "pt": "isolamento"
+    },
+    {
+     "en": "supplies",
+     "pt": "provisões"
+    },
+    {
+     "en": "to drift",
+     "pt": "ir à deriva"
+    },
+    {
+     "en": "remote",
+     "pt": "remoto, isolado"
+    },
+    {
+     "en": "to automate",
+     "pt": "automatizar"
+    }
+   ],
+   "material": {
+    "titulo": "The last keeper",
+    "texto": "When Alan Dunmore took up his post at the lighthouse on Skerry Rock in 1971, he was twenty-six and had never spent a night alone on an island. Rarely does a young man choose such a life, and his friends assumed that he would be home within a month. Not only did he stay for thirty-one years, but he also became, in the eyes of local fishermen, something of a legend.\n\nThe rock itself is barely larger than a football pitch. Supplies arrived by boat every fortnight, weather permitting, and in winter that condition was often not met. On one occasion, Dunmore went nineteen days without seeing another human being. Hardly had he finished repairing a window broken by one gale when the next arrived to break it again. He kept a diary, which his family has recently donated to a maritime museum, and in it he writes with a dry humour that is easy to underestimate. 'The sea has no opinion of me,' he noted in January 1978. 'This is restful.'\n\nHis most famous night came in 1983, when a small cargo ship lost power in thick fog and began to drift towards the rocks. No sooner had Dunmore noticed the ship's lights than he realised how close it was. Under no circumstances could he leave the lamp, yet the radio had been damaged by the damp. Little did he know that his solution, burning oil-soaked rope in a metal drum on the gallery, would be remembered for decades. The crew saw the glow, altered course, and passed the rock with metres to spare. Only after the fog lifted the following morning did they discover how narrow their escape had been.\n\nIn 2002 the light was automated, and Dunmore, then fifty-seven, was told that his services were no longer required. He did not complain. Today he lives in a small town on the mainland, where he claims to find the noise exhausting. Never once has he said that he regrets leaving the sea, but visitors to his kitchen notice that every window faces the water. A film about his life is planned, though he has made it clear that he will not be attending the première. 'If I wanted to watch people looking at the sea,' he says, 'I would simply go back to work.'"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why did Dunmore's friends expect him to return home soon?",
+     "op": [
+      "The job was only temporary.",
+      "He was frightened of the sea.",
+      "The island had no food supplies.",
+      "Few young people would voluntarily choose that way of life."
+     ],
+     "r": 3,
+     "exp": "'Rarely does a young man choose such a life': a inversão significa que é raro alguém escolher isso. Eles achavam que ele desistiria."
+    },
+    {
+     "t": "gap",
+     "q": "___ had he finished repairing one window when the next gale broke it again.",
+     "resp": [
+      "hardly",
+      "scarcely"
+     ],
+     "exp": "Hardly/Scarcely + had + sujeito + particípio ... when. Uma ação logo depois da outra."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta, com ritmo natural.",
+     "frase": "Rarely does a young man choose such a life.",
+     "exp": "Faça a voz subir em 'Rarely' e descer no final. 'Choose' termina em /z/."
+    },
+    {
+     "t": "mc",
+     "q": "What can be inferred from Dunmore's diary comment, 'The sea has no opinion of me. This is restful'?",
+     "op": [
+      "He believed the sea was dangerous.",
+      "He found the work unbearably lonely.",
+      "He enjoyed being away from other people's judgement.",
+      "He wanted to write a book about the sea."
+     ],
+     "r": 2,
+     "exp": "Ele diz que o mar não o julga e chama isso de 'restful'. Humor seco que revela que ele gosta de não ser avaliado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "No",
+      "sooner",
+      "had",
+      "he",
+      "noticed",
+      "the",
+      "lights",
+      "than",
+      "he",
+      "realised",
+      "how",
+      "close",
+      "the",
+      "ship",
+      "was"
+     ],
+     "resp": "No sooner had he noticed the lights than he realised how close the ship was",
+     "exp": "No sooner + had + sujeito + particípio ... than. A inversão vem logo depois de 'No sooner'."
+    },
+    {
+     "t": "gap",
+     "q": "Under no ___ could he leave the lamp unattended.",
+     "resp": [
+      "circumstances"
+     ],
+     "exp": "Under no circumstances = em nenhuma hipótese; exige inversão (could he)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você já passou muito tempo sozinho(a)? Como foi? Use uma inversão se puder.",
+     "frase": "Have you ever spent a long time on your own? What was it like?",
+     "modelo": "Never have I spent more than a weekend alone, but I found it relaxing. Not only did I read a lot, but I also slept very well.",
+     "min": 14,
+     "chave": [
+      "never",
+      "not only",
+      "rarely",
+      "alone",
+      "hardly"
+     ],
+     "exp": "Modelo de inversão: Never have I..., Not only did I... but I also..."
+    },
+    {
+     "t": "mc",
+     "q": "What does the final remark by Dunmore suggest?",
+     "op": [
+      "He has no wish to see people admire the sea.",
+      "He is annoyed by the filmmakers.",
+      "He is looking forward to the film.",
+      "He finds towns more peaceful than the island."
+     ],
+     "r": 0,
+     "exp": "'If I wanted to watch people looking at the sea, I would simply go back to work' = ele já passou a vida vendo o mar e não quer a plateia, é um comentário bem-humorado."
+    },
+    {
+     "t": "gap",
+     "q": "He has never once said that he regrets leaving. NEVER\n___ said that he regrets leaving the sea.",
+     "resp": [
+      "never once has he",
+      "never has he once"
+     ],
+     "exp": "Com a palavra no início, invertemos: Never once has he said... (has antes de he).",
+     "dica": "NEVER"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "What really matters is the bread",
+   "objetivo": "Compreender frases enfáticas (cleft sentences) em um texto sobre cultura e comida.",
+   "foco": "Cleft sentences: It was ... that / What ... is / The reason why ... is",
+   "explicacao": [
+    "Cleft sentences colocam em destaque uma parte da frase. It was the price that put people off. (e não a qualidade)",
+    "Com what: What surprised me was the silence. All I wanted was a seat. The thing that matters is...",
+    "Com a reason/the place/the person: The reason why they closed is simple: rent.",
+    "Em provas, uma opção pode parecer verdadeira porque repete o texto, mas a ênfase mostra o que o autor realmente destaca."
+   ],
+   "vocab": [
+    {
+     "en": "bakery",
+     "pt": "padaria"
+    },
+    {
+     "en": "sourdough",
+     "pt": "pão de fermentação natural"
+    },
+    {
+     "en": "to queue",
+     "pt": "fazer fila"
+    },
+    {
+     "en": "rent",
+     "pt": "aluguel"
+    },
+    {
+     "en": "to put off",
+     "pt": "desanimar, afastar"
+    },
+    {
+     "en": "craft",
+     "pt": "ofício artesanal"
+    },
+    {
+     "en": "loyal",
+     "pt": "fiel"
+    },
+    {
+     "en": "to knead",
+     "pt": "sovar (massa)"
+    }
+   ],
+   "material": {
+    "titulo": "Bread and belonging",
+    "texto": "Ask the owner of Hartley's Bakery what makes it special and she will not mention the sourdough. It is the Tuesday regulars she wants to talk about, an assortment of retired teachers, night nurses and one very serious pigeon who has, in her words, 'earned his crumbs'. 'What I sell is not really bread,' says Ruth Hartley. 'What people are buying is five minutes of being recognised.'\n\nThat may sound sentimental, but it is also good business. In the past decade, hundreds of independent bakeries have opened in British towns, and a surprising number have survived. It was not the quality of the loaves alone that kept them alive, according to a recent study from a Manchester business school, but their ability to turn a transaction into a habit. Customers who are greeted by name, the researchers found, spend about a fifth more and are far less likely to switch to a supermarket.\n\nStill, the model has limits. What worries Hartley most is not competition but rent. Her landlord has announced that the lease will rise by forty per cent in the spring, and she is unsure whether the shop can absorb it. 'It's the rent that will finish us, not the customers,' she says. 'People are loyal. Property agents are not.' The same story is repeated across the high street, where it is often the buildings, rather than the businesses inside them, that decide who stays.\n\nThere is an irony here. The very charm that attracts investors to a street, the smell of baking, the chalkboard menus, is created by the people the investors then price out. The council has promised to protect what it calls 'community assets', but the phrase is vague and its enforcement uncertain. It is a gesture, not a policy, and Hartley treats it accordingly.\n\nShe has, nevertheless, a practical plan. All she needs is a longer lease, and she has asked her customers to sign a petition to support that request. By Friday there were four hundred names. The pigeon, as far as anyone can tell, has not signed, but he has been seen at the door every morning at six, which in this particular neighbourhood counts as a vote of confidence."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "According to Ruth Hartley, what do customers value most?",
+     "op": [
+      "Being treated as familiar faces.",
+      "The chance to meet local politicians.",
+      "The low prices compared with supermarkets.",
+      "The traditional sourdough recipe."
+     ],
+     "r": 0,
+     "exp": "'What people are buying is five minutes of being recognised': a frase com what destaca a experiência de ser reconhecido, não o pão."
+    },
+    {
+     "t": "gap",
+     "q": "___ worries Hartley most is not competition but the rent.",
+     "resp": [
+      "what"
+     ],
+     "exp": "What worries... is... é uma cleft sentence: o que mais preocupa é o aluguel."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta, destacando a palavra mais importante.",
+     "frase": "It is the rent that will finish us, not the customers.",
+     "exp": "Na cleft sentence, o acento forte cai em 'rent' e em 'customers'. 'Finish' = /ˈfɪnɪʃ/."
+    },
+    {
+     "t": "mc",
+     "q": "What is the writer's attitude to the council's promise about 'community assets'?",
+     "op": [
+      "Neutral, since the text offers no details.",
+      "Enthusiastic, because it will save the bakery.",
+      "Hostile, because the council caused the problem.",
+      "Doubtful, because it seems to lack real force."
+     ],
+     "r": 3,
+     "exp": "'The phrase is vague and its enforcement uncertain. It is a gesture, not a policy': o autor desconfia da promessa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "reason",
+      "why",
+      "the",
+      "bakery",
+      "may",
+      "close",
+      "is",
+      "the",
+      "rent",
+      "rather",
+      "than",
+      "a",
+      "lack",
+      "of",
+      "customers"
+     ],
+     "resp": "The reason why the bakery may close is the rent rather than a lack of customers",
+     "exp": "Cleft com 'the reason why ... is'. Rather than liga duas ideias contrastantes.",
+     "alt": [
+      "The reason why the bakery may close is the rent rather than a lack of customers"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Hartley only needs a longer lease. ALL\n___ is a longer lease.",
+     "resp": [
+      "all she needs",
+      "all hartley needs"
+     ],
+     "exp": "All (that) + sujeito + needs + is: forma de cleft com ALL.",
+     "dica": "ALL"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: qual lugar do seu bairro você acha importante para a comunidade? Por quê?",
+     "frase": "Which local place is important to your community, and why?",
+     "modelo": "What I value most is the small bakery near my house. It is the owner who makes it special, because she knows everyone by name.",
+     "min": 14,
+     "chave": [
+      "what",
+      "it is",
+      "community",
+      "because",
+      "bakery",
+      "owner"
+     ],
+     "exp": "Tente uma cleft: What I like most is... / It is the people that make it special."
+    },
+    {
+     "t": "mc",
+     "q": "What point does the final paragraph make through the pigeon?",
+     "op": [
+      "The petition has not gained wide support.",
+      "The community's affection is shown with gentle humour.",
+      "Animals are a nuisance for small businesses.",
+      "Hartley is unable to take the campaign seriously."
+     ],
+     "r": 1,
+     "exp": "O pombo 'não assinou', mas aparece todo dia às seis: o texto usa humor leve para sugerir apoio e carinho. A campanha tem quatrocentos nomes, então não é falta de apoio."
+    },
+    {
+     "t": "gap",
+     "q": "The rent, not the customers, worries her. IT\n___ that worries her, not the customers.",
+     "resp": [
+      "it is the rent",
+      "it's the rent"
+     ],
+     "exp": "Cleft com IT: It is + elemento destacado + that. Destacamos 'the rent'.",
+     "dica": "IT"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Restored to its former glory",
+   "objetivo": "Entender orações participiais (-ing, -ed, perfect) que resumem ações e causas.",
+   "foco": "Participle clauses: Having done..., Built in 1890..., Seen from above...",
+   "explicacao": [
+    "Orações participiais encurtam frases: Having lost his keys, he waited outside = Because he had lost his keys, he waited.",
+    "O particípio passado tem sentido passivo: Built in 1890, the station is still used = The station, which was built in 1890...",
+    "O sujeito do particípio deve ser o mesmo da oração principal: Walking home, I saw a fox (eu andava). Evite sujeitos confusos.",
+    "Também aparecem depois de conjunções: while waiting, once finished, although built in stone."
+   ],
+   "vocab": [
+    {
+     "en": "to restore",
+     "pt": "restaurar"
+    },
+    {
+     "en": "derelict",
+     "pt": "abandonado, em ruínas"
+    },
+    {
+     "en": "heritage",
+     "pt": "patrimônio"
+    },
+    {
+     "en": "platform",
+     "pt": "plataforma (de trem)"
+    },
+    {
+     "en": "funding",
+     "pt": "financiamento"
+    },
+    {
+     "en": "vaulted",
+     "pt": "abobadado"
+    },
+    {
+     "en": "to reopen",
+     "pt": "reabrir"
+    },
+    {
+     "en": "volunteer",
+     "pt": "voluntário"
+    }
+   ],
+   "material": {
+    "titulo": "The station that refused to die",
+    "texto": "Built in 1893 to serve a prosperous mining valley, Aldermere Station was, for almost a century, the beating heart of a town of eleven thousand people. Closed in 1986 after the mines had gone, it was left to the pigeons, the weather and, eventually, a small group of teenagers with spray paint. Having stood empty for nearly thirty years, the building looked beyond rescue: its roof had partly collapsed, and local newspapers described it with the weary word 'eyesore'.\n\nThen, in 2016, a retired engineer named Margaret Oyelaran began to write letters. Convinced that the station could be saved, she contacted councillors, railway historians and anyone else who might listen. Most replies were polite and unhelpful. Undeterred, she organised a weekend cleaning event, hoping to attract perhaps a dozen people. Two hundred turned up, many of them carrying buckets they had borrowed from neighbours.\n\nThe restoration that followed was slow, much of it done by volunteers. Funded largely by small donations, it moved forward in stages, with each completed section used as evidence for the next grant application. The vaulted ticket hall, seen from the gallery, is now the most striking part of the building, its original tiles carefully matched with fragments found in the rubble. Engineers, surprised by the quality of the Victorian ironwork, decided to keep it exposed rather than hide it behind modern panels.\n\nNot everyone approves. Some residents, expecting a working railway, are disappointed that the line itself will not reopen, and a few have complained that the money would have been better spent on a bus service. Oyelaran, asked about this, answers with a patience that suggests she has heard the question many times. 'A bus service doesn't give you somewhere to be proud of,' she says. 'And the buses were never going to need a roof.'\n\nThe station now houses a café, a repair workshop and a small museum. Visited by almost sixty thousand people last year, it has become, in the words of one councillor, 'the only thing in town that everyone agrees on'. Whether that agreement will last when the next funding decision arrives is, of course, another matter. Having come this far, however, few in Aldermere seem inclined to doubt Oyelaran again."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What was the condition of Aldermere Station before the restoration?",
+     "op": [
+      "It was empty and seriously damaged.",
+      "It was already protected by the council.",
+      "It was partly open to railway passengers.",
+      "It was being used as a warehouse."
+     ],
+     "r": 0,
+     "exp": "'Having stood empty for nearly thirty years' e 'roof had partly collapsed': vazia e muito danificada."
+    },
+    {
+     "t": "gap",
+     "q": "___ by the quality of the Victorian ironwork, engineers decided to keep it visible.",
+     "resp": [
+      "surprised",
+      "impressed"
+     ],
+     "exp": "Particípio passado com sentido passivo: engineers (were) surprised/impressed by... Aqui os dois funcionam."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Having stood empty for nearly thirty years, the building looked beyond rescue.",
+     "exp": "Having = /ˈhævɪŋ/. Faça uma pausa curta depois de 'years' para separar as duas orações."
+    },
+    {
+     "t": "mc",
+     "q": "How did Oyelaran react to the early replies to her letters?",
+     "op": [
+      "She asked the newspapers to criticise the councillors.",
+      "She gave up and organised a cleaning event instead.",
+      "She was discouraged but accepted the advice.",
+      "She was not put off and tried another approach."
+     ],
+     "r": 3,
+     "exp": "'Undeterred' = sem se deixar desanimar. Depois da resposta fraca ela organizou o evento de limpeza como outro caminho."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Funded",
+      "largely",
+      "by",
+      "small",
+      "donations,",
+      "the",
+      "project",
+      "moved",
+      "forward",
+      "in",
+      "stages"
+     ],
+     "resp": "Funded largely by small donations, the project moved forward in stages",
+     "exp": "Particípio passado no início (Funded...), com o sujeito 'the project' na oração principal."
+    },
+    {
+     "t": "gap",
+     "q": "Because she was convinced that the station could be saved, she wrote to councillors.\n___ that the station could be saved, she wrote to councillors.",
+     "resp": [
+      "convinced"
+     ],
+     "exp": "Particípio passado no início: (Being) convinced that... = Because she was convinced..."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: existe um prédio antigo na sua cidade que merece ser restaurado? Descreva-o.",
+     "frase": "Is there an old building in your town that should be restored? Why?",
+     "modelo": "There is an old cinema in my town. Built in the 1950s, it has been empty for years. Restored properly, it could become a cultural centre.",
+     "min": 14,
+     "chave": [
+      "built",
+      "restored",
+      "empty",
+      "old",
+      "cinema",
+      "building"
+     ],
+     "exp": "Use particípios para descrever: Built in..., Left empty for years, ..."
+    },
+    {
+     "t": "mc",
+     "q": "What does Oyelaran's comment about buses imply?",
+     "op": [
+      "Buses are too expensive for the town.",
+      "Buildings can provide something that services cannot.",
+      "The station will never need to be repaired.",
+      "Public transport is more important than heritage."
+     ],
+     "r": 1,
+     "exp": "'Doesn't give you somewhere to be proud of': para ela, um prédio dá orgulho e identidade, algo que um ônibus não dá. A parte do 'roof' é um toque de humor."
+    },
+    {
+     "t": "gap",
+     "q": "When it is seen from the gallery, the ticket hall is striking. SEEN\n___, the ticket hall is striking.",
+     "resp": [
+      "seen from the gallery"
+     ],
+     "exp": "Particípio passado como oração reduzida: Seen from the gallery, ... (a sala é vista da galeria).",
+     "dica": "SEEN"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "The four-day week experiment",
+   "objetivo": "Entender recomendações, desejos e situações irreais em um texto sobre trabalho.",
+   "foco": "Subjunctive and unreal tenses: suggest/insist that + base form; it's high time; would rather; as if; wish",
+   "explicacao": [
+    "Depois de suggest, recommend, insist, demand, propose usamos that + sujeito + verbo base (subjuntivo): The report recommends that the trial be extended.",
+    "No inglês britânico também vale should: ...that the trial should be extended.",
+    "It's (high) time + passado: It's time we changed the system. I'd rather + sujeito + passado: I'd rather you didn't tell her.",
+    "As if / as though + passado para algo irreal: He talks as if he owned the place. Wish/If only + passado (presente) ou past perfect (passado)."
+   ],
+   "vocab": [
+    {
+     "en": "trial",
+     "pt": "teste, experimento"
+    },
+    {
+     "en": "productivity",
+     "pt": "produtividade"
+    },
+    {
+     "en": "burnout",
+     "pt": "esgotamento profissional"
+    },
+    {
+     "en": "to insist",
+     "pt": "insistir"
+    },
+    {
+     "en": "workforce",
+     "pt": "força de trabalho"
+    },
+    {
+     "en": "sceptical",
+     "pt": "cético"
+    },
+    {
+     "en": "to pilot",
+     "pt": "testar, fazer um piloto"
+    },
+    {
+     "en": "flexibility",
+     "pt": "flexibilidade"
+    }
+   ],
+   "material": {
+    "titulo": "Friday off, results on",
+    "texto": "When a group of sixty-one British companies agreed to let their employees work four days a week without any loss of pay, many commentators predicted chaos. The consultancy that organised the trial insisted that every firm measure productivity carefully before and after, and recommended that managers be given training in how to run shorter, sharper meetings. Six months later, the results were hard to dismiss. Nearly all the companies chose to continue the scheme, and about a third made it permanent.\n\nThe benefits were not purely financial. Staff reported lower levels of stress and fewer cases of burnout, and resignations fell by more than half. Several managers admitted that they had been sceptical at first. 'I would rather we had never started,' one said at the outset, 'but it's high time somebody tested the idea properly.' By the end, she was telling visitors that she wished the experiment had begun years earlier.\n\nNot everyone is persuaded. Critics point out that the firms which volunteered were, by definition, the ones most likely to succeed: small, office-based and open to change. It is one thing for a design studio to operate as if Fridays did not exist, they argue, and quite another for a hospital or a factory. Economists have also warned that productivity gains achieved in a short trial may fade once the novelty wears off. The researchers themselves accept this, and have urged that the findings be treated as encouraging rather than conclusive.\n\nThere is, besides, a question of fairness. If only everyone could take a four-day week, as one union leader put it, the debate would be simpler. In reality, teachers, nurses and delivery drivers are unlikely to be offered the option, and there is a danger that a shorter week becomes another privilege of the already comfortable. The union's own proposal is that any reduction in hours be accompanied by a commitment to extend it, wherever possible, to less flexible sectors.\n\nPerhaps the most telling result, though, was also the least expected. When asked whether they would accept a pay rise in exchange for returning to five days, only a handful of employees said yes. Most spoke about the extra day as if it were something they had always been owed. Whatever the economists eventually conclude, it may prove hard to take it away."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What did the organisers of the trial require of the companies?",
+     "op": [
+      "They had to hire consultants to run the meetings.",
+      "They had to cut salaries in the first six months.",
+      "They had to keep the five-day week for senior staff.",
+      "They had to measure productivity before and after the change."
+     ],
+     "r": 3,
+     "exp": "'insisted that every firm measure productivity carefully before and after'. Insist that + verbo base (measure)."
+    },
+    {
+     "t": "gap",
+     "q": "The report recommended that managers ___ given training in running shorter meetings.",
+     "resp": [
+      "be"
+     ],
+     "exp": "Depois de recommend that usamos o subjuntivo: managers be given (sem -s e sem 'are')."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta, com entonação natural.",
+     "frase": "It's high time somebody tested the idea properly.",
+     "exp": "Observe o passado depois de 'it's high time': tested, que soa /ˈtestɪd/. A frase fala do presente."
+    },
+    {
+     "t": "mc",
+     "q": "Why do critics doubt the trial's conclusions?",
+     "op": [
+      "The employees were paid less than usual.",
+      "The trial lasted much too long.",
+      "The companies involved were not typical of the economy as a whole.",
+      "The consultancy that ran the trial was not independent."
+     ],
+     "r": 2,
+     "exp": "'the firms which volunteered were... the ones most likely to succeed: small, office-based and open to change'. A amostra não representa hospitais e fábricas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "She",
+      "wishes",
+      "the",
+      "experiment",
+      "had",
+      "begun",
+      "years",
+      "earlier"
+     ],
+     "resp": "She wishes the experiment had begun years earlier",
+     "exp": "Wish + past perfect para lamentar algo do passado: wishes the experiment had begun."
+    },
+    {
+     "t": "gap",
+     "q": "The researchers have urged that the findings ___ treated as encouraging rather than conclusive.",
+     "resp": [
+      "be"
+     ],
+     "exp": "Verbos de pedido (urge, suggest, insist) + that + verbo base: ...that the findings be treated."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você gostaria de trabalhar ou estudar menos dias por semana? O que mudaria?",
+     "frase": "Would you like to work or study four days a week instead of five? What would change?",
+     "modelo": "I would rather have a shorter week, because I think I would concentrate better. If only my school suggested a trial like that.",
+     "min": 14,
+     "chave": [
+      "rather",
+      "wish",
+      "if only",
+      "suggest",
+      "would",
+      "time"
+     ],
+     "exp": "Estruturas úteis: I'd rather..., It's time we..., I wish..., If only..."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer suggest by the last paragraph?",
+     "op": [
+      "Economists have already reached a clear conclusion.",
+      "Workers regard the extra day as unimportant.",
+      "The scheme may be difficult to reverse once people have tried it.",
+      "Employees would reject a pay rise in any circumstances."
+     ],
+     "r": 2,
+     "exp": "Poucos aceitariam trocar o dia livre por aumento; 'hard to take it away' = difícil retirar o benefício depois de dado."
+    },
+    {
+     "t": "gap",
+     "q": "I would prefer you not to mention the trial to the press. RATHER\nI ___ mention the trial to the press.",
+     "resp": [
+      "would rather you didn't",
+      "'d rather you didn't",
+      "would rather you did not"
+     ],
+     "exp": "I'd rather + sujeito + passado (didn't): preferência sobre o comportamento de outra pessoa.",
+     "dica": "RATHER"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "The wreck that nobody remembered",
+   "objetivo": "Usar modais de dedução e crítica sobre o passado para acompanhar uma investigação.",
+   "foco": "Modals of deduction and criticism in the past: must have, can't have, might well have, needn't have, ought to have",
+   "explicacao": [
+    "Dedução no passado: must have + particípio (quase certeza), can't/couldn't have (impossível), may/might/could have (possibilidade).",
+    "Might well have e may well have indicam possibilidade forte: The captain may well have ignored the warning.",
+    "Críticas e arrependimentos: should/ought to have done (era o certo e não foi feito); needn't have done (fez, mas não era necessário).",
+    "Atenção: didn't need to = não era necessário (e talvez não fez); needn't have = fez sem necessidade."
+   ],
+   "vocab": [
+    {
+     "en": "shipwreck",
+     "pt": "naufrágio"
+    },
+    {
+     "en": "cargo",
+     "pt": "carga"
+    },
+    {
+     "en": "crew",
+     "pt": "tripulação"
+    },
+    {
+     "en": "hull",
+     "pt": "casco"
+    },
+    {
+     "en": "evidence",
+     "pt": "evidência, prova"
+    },
+    {
+     "en": "to sink",
+     "pt": "afundar"
+    },
+    {
+     "en": "inquiry",
+     "pt": "inquérito, investigação"
+    },
+    {
+     "en": "survivor",
+     "pt": "sobrevivente"
+    }
+   ],
+   "material": {
+    "titulo": "A ship without a story",
+    "texto": "For more than a century, the steamship Calloway was a footnote. She sank in the Irish Sea in 1911 on a calm night, and an official inquiry blamed 'an error of navigation', a phrase that explained everything and nothing. Nobody was greatly interested until 2019, when a team of marine archaeologists, searching for something else entirely, found her hull lying upright on the seabed at a depth of ninety metres.\n\nThe first surprise was her condition. Cold, dark water had preserved the wood and iron remarkably well, and the divers could read the name on the stern. The second was the cargo. According to the inquiry, the ship had been carrying farm machinery. What the cameras revealed, however, were hundreds of wooden crates stamped with the name of a Belfast distillery. 'Somebody must have lied on the paperwork,' says Dr Hannah Reyes, who leads the project. 'Farm machinery wasn't taxed. Whisky certainly was.'\n\nThe most puzzling discovery is that the lifeboats were still in their cradles. Reyes thinks the crew can't have had time to launch them, which suggests that the ship went down much faster than the inquiry claimed. A few historians disagree. The captain might well have ordered the boats to be left in place, they argue, in order to keep the passengers calm, an act of leadership that may or may not have been wise. Reyes is polite about this theory but plainly unconvinced. 'If the captain had wanted calm,' she says, 'he ought to have told somebody where the lifejackets were.'\n\nWhat of the error in navigation? The team has found the ship's compass, and it is damaged in a way that suggests it was struck by a heavy object. Whether that happened during the sinking or before it cannot yet be said. A collision with another vessel could explain both the damage and the speed of the sinking, but no other ship was ever reported missing, and the owners had every reason to keep quiet if the cargo was illegal. 'We needn't have been so surprised,' Reyes admits. 'Smuggling was hardly unusual. What's unusual is that anyone has bothered to look.'\n\nThe project has no deadline, and funding for only two more seasons. In the meantime, the descendants of the crew have begun to write to the team, bringing letters and photographs of men who, until now, had no recorded history at all."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does Dr Reyes imply about the ship's official cargo?",
+     "op": [
+      "It was probably described untruthfully.",
+      "It was too heavy for the ship.",
+      "It had been stolen in Belfast.",
+      "It was damaged by water."
+     ],
+     "r": 0,
+     "exp": "'Somebody must have lied on the paperwork': dedução forte. Crates de uísque, não máquinas agrícolas."
+    },
+    {
+     "t": "gap",
+     "q": "The crew ___ have had time to launch the lifeboats, since they were still in their cradles.",
+     "resp": [
+      "can't",
+      "cannot",
+      "couldn't",
+      "could not"
+     ],
+     "exp": "Can't/couldn't have + particípio = impossibilidade. Os botes continuavam no lugar, então não houve tempo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Somebody must have lied on the paperwork.",
+     "exp": "'Must have' é reduzido: /ˈmʌst əv/. O 'have' quase some, e 'lied' soa /laɪd/."
+    },
+    {
+     "t": "mc",
+     "q": "What is the historians' alternative explanation for the lifeboats?",
+     "op": [
+      "The captain wanted to avoid panic among passengers.",
+      "The inquiry had moved them after the accident.",
+      "The lifeboats were too damaged to be used.",
+      "The crew had deserted the ship earlier."
+     ],
+     "r": 0,
+     "exp": "'might well have ordered the boats to be left in place... to keep the passengers calm'. É teoria dos historiadores, que Reyes rejeita."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "The",
+      "captain",
+      "ought",
+      "to",
+      "have",
+      "told",
+      "somebody",
+      "where",
+      "the",
+      "lifejackets",
+      "were"
+     ],
+     "resp": "The captain ought to have told somebody where the lifejackets were",
+     "exp": "Ought to have + particípio expressa crítica sobre algo que não foi feito no passado."
+    },
+    {
+     "t": "gap",
+     "q": "It is possible that the compass was hit before the ship sank, but we can't be sure. MIGHT\nThe compass ___ hit before the ship sank.",
+     "resp": [
+      "might have been",
+      "might well have been"
+     ],
+     "exp": "Might (well) have been + particípio: possibilidade passiva no passado.",
+     "dica": "MIGHT"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: pense em um mistério (um objeto perdido, um fato histórico). O que pode ter acontecido?",
+     "frase": "What do you think might have happened in a famous historical mystery?",
+     "modelo": "I think the explorers may well have lost their way in the snow. They can't have had enough food, so they must have been exhausted.",
+     "min": 16,
+     "chave": [
+      "might have",
+      "must have",
+      "may have",
+      "could have",
+      "can't have"
+     ],
+     "exp": "Use modais de dedução: must have, can't have, might have, may well have."
+    },
+    {
+     "t": "mc",
+     "q": "What does Reyes mean by 'We needn't have been so surprised'?",
+     "op": [
+      "The inquiry was right in the end.",
+      "The discovery should have been predicted, given how common smuggling was.",
+      "The team was wrong to start the search.",
+      "It was unnecessary to dive so deep."
+     ],
+     "r": 1,
+     "exp": "Needn't have been = não havia necessidade de ficar surpreso, porque contrabando era comum. Ela diz que o incomum é alguém ter investigado."
+    },
+    {
+     "t": "gap",
+     "q": "It was a mistake not to check the compass sooner. SHOULD\nThe team ___ the compass sooner.",
+     "resp": [
+      "should have checked",
+      "ought to have checked",
+      "should have examined"
+     ],
+     "exp": "Críticas sobre o passado: should have + particípio. Aqui: should have checked.",
+     "dica": "SHOULD"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "What sleep scientists say",
+   "objetivo": "Entender estruturas impessoais (is said to, is believed to have) em textos de ciência.",
+   "foco": "Impersonal passive: It is said that... / He is thought to have... / are believed to be",
+   "explicacao": [
+    "Usamos a passiva impessoal para ideias gerais ou notícias sem dizer quem afirma: It is believed that the disease spreads quickly.",
+    "A segunda forma põe o sujeito no início: The disease is believed to spread quickly. Para passado, use to have + particípio: He is said to have left early.",
+    "Verbos comuns: say, believe, think, consider, report, know, expect, claim, suppose.",
+    "Em textos de ciência, repare em hedging: seems to, appears to, is thought to, tends to. Mostram prudência e valem pontos em perguntas sobre o que o autor realmente afirma."
+   ],
+   "vocab": [
+    {
+     "en": "sleep deprivation",
+     "pt": "privação de sono"
+    },
+    {
+     "en": "memory",
+     "pt": "memória"
+    },
+    {
+     "en": "to consolidate",
+     "pt": "consolidar, fixar"
+    },
+    {
+     "en": "alertness",
+     "pt": "atenção, estado de alerta"
+    },
+    {
+     "en": "circadian",
+     "pt": "circadiano (ciclo de 24 h)"
+    },
+    {
+     "en": "evidence",
+     "pt": "evidência"
+    },
+    {
+     "en": "to claim",
+     "pt": "afirmar"
+    },
+    {
+     "en": "drowsy",
+     "pt": "sonolento"
+    }
+   ],
+   "material": {
+    "titulo": "The sleeping brain at work",
+    "texto": "For most of the twentieth century, sleep was considered little more than a pause in the brain's activity, a nightly power cut during which the body repaired itself. It is now thought that nothing could be further from the truth. Recordings of brain waves show that the sleeping brain is often as busy as the waking one, and sometimes busier. The deepest phase of sleep is believed to play a key part in the consolidation of memory, when the day's experiences are sorted, strengthened or quietly discarded.\n\nThe evidence for this comes from a series of ingenious experiments. In one of the best-known, volunteers were taught a set of word pairs in the evening. Those who were allowed to sleep afterwards recalled around forty per cent more than those who stayed awake for the same period. Similar results have been reported in people learning musical passages, and there are claims, though these are less secure, that a short nap improves the ability to solve problems that require creative thinking.\n\nThe damage done by chronic sleep loss is better established. People who regularly sleep for fewer than six hours a night are known to be at higher risk of heart disease and are reported to make more errors at work, a pattern that has been linked to several major industrial accidents. Even so, researchers are cautious. Sleep habits are difficult to measure, since people tend to overestimate how long they have slept, and poor sleep may be a symptom of illness as well as a cause of it.\n\nThere is also a popular belief, repeated in many self-help books, that everyone needs exactly eight hours. Sleep scientists regard this as an oversimplification. Historical records suggest that, before electric light, people in many societies slept in two separate periods during the night, and a few apparently healthy individuals are said to function well on much less than the average. The figure is probably best seen as a rough guide rather than a target.\n\nWhat, then, should the tired reader do? The advice that most specialists agree on is unglamorous: keep regular hours, avoid screens late at night, and treat the bedroom as a place for sleep. Not everyone will find that easy, but as one researcher remarked, it has the advantage of being cheaper than almost everything else on offer in the wellness industry."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "According to the text, what did researchers once believe about sleep?",
+     "op": [
+      "That it was less important than exercise.",
+      "That it mainly helped the body to recover.",
+      "That it occurred in two separate periods.",
+      "That it was essential for creative thinking."
+     ],
+     "r": 1,
+     "exp": "'a nightly power cut during which the body repaired itself': a ideia antiga era de pausa em que o corpo se recuperava."
+    },
+    {
+     "t": "gap",
+     "q": "Deep sleep ___ believed to play a key part in memory.",
+     "resp": [
+      "is"
+     ],
+     "exp": "Passiva impessoal: is believed to + verbo. 'Deep sleep is believed to play...'"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "The deepest phase of sleep is believed to play a key part in memory.",
+     "exp": "'Believed' = /bɪˈliːvd/, com som longo. Ligue 'is believed' sem pausa."
+    },
+    {
+     "t": "mc",
+     "q": "Why does the writer say that claims about naps and creative thinking are 'less secure'?",
+     "op": [
+      "Creative people refuse to take part in studies.",
+      "Naps have been proved harmful by researchers.",
+      "The experiments were carried out on animals.",
+      "The evidence is weaker than for memory and learning."
+     ],
+     "r": 3,
+     "exp": "'there are claims, though these are less secure': menos evidência do que nos testes de memória. O texto não fala de danos nem de animais."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "A",
+      "short",
+      "nap",
+      "is",
+      "said",
+      "to",
+      "improve",
+      "the",
+      "ability",
+      "to",
+      "solve",
+      "problems"
+     ],
+     "resp": "A short nap is said to improve the ability to solve problems",
+     "exp": "Passiva impessoal: sujeito + is said to + verbo base."
+    },
+    {
+     "t": "gap",
+     "q": "Many people are believed to ___ slept for longer than they actually did.",
+     "resp": [
+      "have"
+     ],
+     "exp": "Para uma ação passada usamos to have + particípio: are believed to have slept."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: como é o seu sono e o que você acha que ajuda a dormir melhor?",
+     "frase": "How well do you sleep, and what do you think helps?",
+     "modelo": "I am thought to be a night owl by my family. I usually sleep about seven hours, and it is said that avoiding screens helps, so I try to do that.",
+     "min": 14,
+     "chave": [
+      "said",
+      "thought",
+      "believed",
+      "sleep",
+      "hours",
+      "screens"
+     ],
+     "exp": "Use passiva impessoal: It is said that..., X is believed to..."
+    },
+    {
+     "t": "mc",
+     "q": "What is the purpose of the fourth paragraph?",
+     "op": [
+      "To show that the eight-hour rule is not as fixed as people think.",
+      "To advise readers to sleep in two periods.",
+      "To prove that electric light is harmful.",
+      "To criticise self-help books for their cost."
+     ],
+     "r": 0,
+     "exp": "Mostra que a regra das oito horas é simplificação: 'a rough guide rather than a target'. O texto não recomenda dormir em dois períodos."
+    },
+    {
+     "t": "gap",
+     "q": "People say that he sleeps less than five hours a night. SAID\nHe ___ less than five hours a night.",
+     "resp": [
+      "is said to sleep"
+     ],
+     "exp": "Passiva impessoal com SAID: He is said to sleep... (presente, então to + verbo base).",
+     "dica": "SAID"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Running into the wall",
+   "objetivo": "Reconhecer collocations e phrasal verbs em um texto narrativo sobre esporte.",
+   "foco": "Collocations and phrasal verbs: take up, give up on, come across, strong/heavy/bitter, make/do",
+   "explicacao": [
+    "Collocations são combinações naturais: heavy rain (e não strong rain), bitterly disappointed, make progress, do damage, take a risk.",
+    "No Part 1 da prova (multiple-choice cloze), várias opções têm sentido parecido, mas só uma combina com a palavra vizinha. Leia a frase toda.",
+    "Phrasal verbs têm sentido próprio: take up (começar um hábito), carry on (continuar), get through (superar), pull out (desistir), set off (partir).",
+    "Aprenda em blocos, nunca palavra solta: not 'progress', mas make progress."
+   ],
+   "vocab": [
+    {
+     "en": "to take up",
+     "pt": "começar (hobby, esporte)"
+    },
+    {
+     "en": "to pull out",
+     "pt": "desistir, retirar-se"
+    },
+    {
+     "en": "stamina",
+     "pt": "resistência física"
+    },
+    {
+     "en": "to cramp",
+     "pt": "ter câimbra"
+    },
+    {
+     "en": "setback",
+     "pt": "contratempo"
+    },
+    {
+     "en": "to push on",
+     "pt": "seguir em frente"
+    },
+    {
+     "en": "gruelling",
+     "pt": "exaustivo"
+    },
+    {
+     "en": "milestone",
+     "pt": "marco"
+    }
+   ],
+   "material": {
+    "titulo": "Mile twenty",
+    "texto": "I took up running at thirty-nine, which my doctor described as 'optimistic' and my wife as 'sudden'. The reasons were not heroic. I had come across an old photograph in which I looked, to put it kindly, comfortable, and a colleague had casually mentioned that he was training for a marathon. By the end of the following week I owned shoes that cost more than my first car.\n\nProgress was painfully slow. My first attempt at a gentle three-kilometre run left me gasping on a park bench, watched by a toddler who seemed more worried than I was. Still, I kept at it, and within three months I could run for half an hour without stopping. Each small milestone brought a disproportionate sense of achievement. I began to bore my friends with talk of pace and heart rate, and a heavy cold in the autumn, which forced me to rest for ten days, felt like a personal tragedy.\n\nThe marathon itself, in April, was a lesson in humility. Heavy rain had been forecast, and for once the forecast was right. The first twenty miles went better than I had dared to hope, and I was beginning to feel rather pleased with myself when my left leg cramped at the foot of a long hill. I stood by the roadside, bitterly disappointed and quite certain that I would have to pull out. A woman handing out bananas looked at me with the tired sympathy of someone who has seen this before. 'Everyone hits it somewhere,' she said. 'Most people carry on.'\n\nI can't claim that this was a wise piece of advice, but it was the right one for that moment. I walked for a while, then jogged, then walked again, and gradually found a rhythm that my body would accept. The last six miles were gruelling, and I cannot recall the final stretch with any accuracy, except that a stranger shouted my name, which was printed on my number, with a conviction that made me cry. I crossed the line in five hours and eleven minutes, a time that would embarrass a professional but, I feel, did me no discredit.\n\nI have not made any resolutions since. I still run three times a week, mostly because I have learned that mild discomfort is not a reason to stop. It turns out that setbacks, like hills, are rarely as permanent as they look from the bottom."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why did the writer start running?",
+     "op": [
+      "A mixture of embarrassment and a colleague's example.",
+      "A doctor had advised him to lose weight.",
+      "His wife challenged him to complete a marathon.",
+      "He wanted to compete professionally."
+     ],
+     "r": 0,
+     "exp": "A foto antiga ('comfortable') e o colega que treinava para a maratona. O médico apenas comentou que era 'optimistic'."
+    },
+    {
+     "t": "gap",
+     "q": "Heavy ___ had been forecast, and for once the forecast was right.",
+     "resp": [
+      "rain"
+     ],
+     "exp": "Collocation: heavy rain (e não strong rain). Também: heavy traffic, heavy cold."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "I stood by the roadside, bitterly disappointed.",
+     "exp": "'Bitterly' = /ˈbɪtəli/. A collocation bitterly disappointed é bem comum em textos de jornal."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer mean by 'Each small milestone brought a disproportionate sense of achievement'?",
+     "op": [
+      "His friends felt jealous of his training.",
+      "He considered his progress unimportant.",
+      "He wanted to avoid talking about his results.",
+      "Small successes made him feel happier than their size justified."
+     ],
+     "r": 3,
+     "exp": "Disproportionate = desproporcional: pequenas conquistas lhe davam uma sensação de vitória maior do que mereciam, com humor leve."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "I",
+      "was",
+      "certain",
+      "that",
+      "I",
+      "would",
+      "have",
+      "to",
+      "pull",
+      "out",
+      "of",
+      "the",
+      "race"
+     ],
+     "resp": "I was certain that I would have to pull out of the race",
+     "exp": "Phrasal verb pull out of = desistir de (uma competição). Certain that + oração."
+    },
+    {
+     "t": "gap",
+     "q": "He took ___ running at the age of thirty-nine.",
+     "resp": [
+      "up"
+     ],
+     "exp": "Take up = começar um hobby ou atividade. Não confunda com take on (assumir uma tarefa)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: conte um desafio que você enfrentou e como o superou. Use um phrasal verb.",
+     "frase": "Tell me about a challenge you faced and how you got through it.",
+     "modelo": "Last year I took up swimming, and at first I wanted to give up. I carried on, and now I swim twice a week.",
+     "min": 15,
+     "chave": [
+      "took up",
+      "carried on",
+      "gave up",
+      "got through",
+      "pushed on",
+      "challenge"
+     ],
+     "exp": "Phrasal verbs úteis: take up, carry on, give up, get through, push on."
+    },
+    {
+     "t": "mc",
+     "q": "What is the effect of the final sentence?",
+     "op": [
+      "It shows that the writer is still angry.",
+      "It offers a light-hearted lesson drawn from the story.",
+      "It repeats the doctor's original opinion.",
+      "It warns readers about the dangers of running."
+     ],
+     "r": 1,
+     "exp": "Compara contratempos a morros: leve, bem-humorado, uma lição. Não há aviso nem raiva."
+    },
+    {
+     "t": "gap",
+     "q": "He was extremely disappointed to have to stop. BITTERLY\nHe was ___ to have to stop.",
+     "resp": [
+      "bitterly disappointed"
+     ],
+     "exp": "Collocation: bitterly disappointed. Outras: deeply grateful, utterly exhausted, strongly recommend.",
+     "dica": "BITTERLY"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Invisible particles, visible concern",
+   "objetivo": "Formar palavras com prefixos e sufixos (Part 3) e entender um texto científico sobre meio ambiente.",
+   "foco": "Word formation: prefixes un-, im-, ir-, mis-, over-; suffixes -ness, -ity, -ment, -able, -ous, -ify",
+   "explicacao": [
+    "Em word formation, olhe a classe da palavra que falta (substantivo, adjetivo, verbo, advérbio) e depois decida se precisa de prefixo negativo.",
+    "Sufixos mudam a classe: -ment/-ness/-ity/-ence (substantivos), -able/-ous/-ful/-ive (adjetivos), -ise/-ify/-en (verbos), -ly (advérbios).",
+    "Prefixos negativos: un- (unreliable), in-/im-/il-/ir- (impossible, illegal, irresponsible), dis- (disagree), mis- (misunderstand). Nunca invente: im- vem antes de p, m, b.",
+    "Às vezes é preciso mudar a base: decide - decision, long - length, strong - strength, deep - depth. Confira se o substantivo é plural."
+   ],
+   "vocab": [
+    {
+     "en": "microplastics",
+     "pt": "micropartículas de plástico"
+    },
+    {
+     "en": "contamination",
+     "pt": "contaminação"
+    },
+    {
+     "en": "to detect",
+     "pt": "detectar"
+    },
+    {
+     "en": "harmful",
+     "pt": "prejudicial"
+    },
+    {
+     "en": "regulation",
+     "pt": "regulamentação"
+    },
+    {
+     "en": "to ingest",
+     "pt": "ingerir"
+    },
+    {
+     "en": "significant",
+     "pt": "significativo"
+    },
+    {
+     "en": "reliable",
+     "pt": "confiável"
+    }
+   ],
+   "material": {
+    "titulo": "Plastic in the bloodstream",
+    "texto": "The first time scientists reported finding microplastics in human blood, the reaction was a mixture of alarm and scepticism. Alarm, because the particles, which measure less than five millimetres and often much less, had apparently travelled further into the body than anyone had assumed. Scepticism, because the techniques used to detect them are so sensitive that contamination from the laboratory itself is an ever-present danger. Since then, several independent teams have reported similar results, which makes it harder to dismiss the original findings as an error.\n\nWhat the discoveries mean for health is far less clear. Plastic particles have been found in lungs, placentas and even in the brain, and laboratory studies on cells suggest that some types can cause inflammation. But a laboratory dish is not a living body, and the doses used in experiments are often much higher than anything a person is likely to encounter. Researchers who work in the field stress that the evidence of actual harm to people remains thin, and several have complained that headlines have run well ahead of the data.\n\nThere is, however, no doubt about where the particles come from. Clothing made from synthetic fibres sheds thousands of tiny strands in every wash, car tyres wear down on the road, and plastic packaging breaks into fragments long before it disappears. Much of this material ends up in rivers and then in the sea, where it is eaten by fish, and, in due course, by us. The difficulty of tracing and removing such small objects makes cleaning up almost impossible; prevention is the only realistic strategy.\n\nHere the debate becomes political. Some campaigners want an outright ban on single-use plastics, arguing that the precautionary principle justifies action before the science is settled. Industry representatives respond that bans are blunt instruments, and that improved recycling and better design would achieve more at lower cost. A few economists suggest a tax on the most polluting products, which would make the price of plastic reflect the damage it does.\n\nWhoever is right, the speed at which the research is developing leaves little room for complacency. A decade ago, nobody was looking for microplastics in the body. Today the question is no longer whether they are there, but whether it matters, and the honest answer, for the moment, is that nobody knows."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Why were some scientists initially sceptical about the discovery of microplastics in blood?",
+     "op": [
+      "Plastic had never been found in human tissue before.",
+      "The particles seemed too large to enter the body.",
+      "The tests are so sensitive that laboratory contamination was possible.",
+      "The first teams worked without proper funding."
+     ],
+     "r": 2,
+     "exp": "'the techniques... are so sensitive that contamination from the laboratory itself is an ever-present danger'. Esse foi o motivo da dúvida."
+    },
+    {
+     "t": "gap",
+     "q": "Laboratory ___ is an ever-present danger in this kind of research. (CONTAMINATE)",
+     "resp": [
+      "contamination"
+     ],
+     "exp": "Depois de adjetivo (laboratory) precisamos de um substantivo: contaminate - contamination.",
+     "dica": "CONTAMINATE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "The evidence of actual harm to people remains thin.",
+     "exp": "'Evidence' = /ˈevɪdəns/, três sílabas. 'Thin' começa com /θ/, língua entre os dentes."
+    },
+    {
+     "t": "mc",
+     "q": "What is the writer's view of press coverage of the topic?",
+     "op": [
+      "It has ignored the laboratory results.",
+      "It has been strongly supported by experts.",
+      "It has paid too little attention to industry.",
+      "It has exaggerated what the evidence shows."
+     ],
+     "r": 3,
+     "exp": "'headlines have run well ahead of the data' = manchetes foram além dos dados. É a crítica do autor, através de pesquisadores."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Prevention",
+      "is",
+      "the",
+      "only",
+      "realistic",
+      "strategy",
+      "for",
+      "dealing",
+      "with",
+      "such",
+      "small",
+      "objects"
+     ],
+     "resp": "Prevention is the only realistic strategy for dealing with such small objects",
+     "exp": "Estrutura simples com 'the only realistic strategy'. Preste atenção em 'dealing with'."
+    },
+    {
+     "t": "gap",
+     "q": "The ___ of removing such tiny particles makes cleaning up almost impossible. (DIFFICULT)",
+     "resp": [
+      "difficulty"
+     ],
+     "exp": "Depois de 'The' e antes de 'of', precisamos de substantivo. Atenção à mudança: difficult - difficulty.",
+     "dica": "DIFFICULT"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você acha que devemos proibir plásticos descartáveis? Dê sua opinião.",
+     "frase": "Do you think single-use plastics should be banned?",
+     "modelo": "In my opinion they should be banned, because the damage is irreversible. However, a tax might be more practical, since recycling is unreliable in many places.",
+     "min": 16,
+     "chave": [
+      "ban",
+      "tax",
+      "recycling",
+      "plastic",
+      "because",
+      "opinion"
+     ],
+     "exp": "Tente usar uma palavra formada: irreversible, unreliable, effectiveness, enforcement."
+    },
+    {
+     "t": "mc",
+     "q": "What do industry representatives argue?",
+     "op": [
+      "That plastic has no effect on health.",
+      "That bans are less effective than better recycling and design.",
+      "That economists should control the market.",
+      "That the precautionary principle is scientifically proven."
+     ],
+     "r": 1,
+     "exp": "'bans are blunt instruments, and that improved recycling and better design would achieve more at lower cost'."
+    },
+    {
+     "t": "gap",
+     "q": "Many experts see the new rules as ___ to enforce. (POSSIBLE)",
+     "resp": [
+      "impossible"
+     ],
+     "exp": "Prefixo negativo: possible - impossible (im- antes de p). Atenção: o sentido pede negação.",
+     "dica": "POSSIBLE"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Notwithstanding the app",
+   "objetivo": "Entender e usar conectores sofisticados que marcam contraste, concessão e condição.",
+   "foco": "Advanced linkers: notwithstanding, albeit, whereas, in so far as, provided that, on the grounds that",
+   "explicacao": [
+    "Contraste e concessão: whereas e while (opõem dois fatos), albeit (embora, com adjetivo), notwithstanding (apesar de, com substantivo), even so, nonetheless.",
+    "Condição: provided/providing (that), as long as, unless, in case. Limite: in so far as, to the extent that.",
+    "Razão e finalidade: on the grounds that, in view of, owing to, with a view to, so as to.",
+    "Atenção à forma: notwithstanding + substantivo; albeit + adjetivo ou advérbio (curto); whereas + oração completa."
+   ],
+   "vocab": [
+    {
+     "en": "gig economy",
+     "pt": "economia de bicos, de plataformas"
+    },
+    {
+     "en": "freelance",
+     "pt": "autônomo"
+    },
+    {
+     "en": "to exploit",
+     "pt": "explorar"
+    },
+    {
+     "en": "benefit",
+     "pt": "benefício"
+    },
+    {
+     "en": "entitlement",
+     "pt": "direito garantido"
+    },
+    {
+     "en": "flexible",
+     "pt": "flexível"
+    },
+    {
+     "en": "legislation",
+     "pt": "legislação"
+    },
+    {
+     "en": "tenant",
+     "pt": "inquilino, locatário"
+    }
+   ],
+   "material": {
+    "titulo": "Working for the algorithm",
+    "texto": "Few developments have divided opinion about modern work as sharply as the arrival of the delivery app. To its supporters, it is a triumph of flexibility: workers choose their own hours, and customers get hot food in twenty minutes. To its critics, it is an old problem in a new coat, with companies passing on risk to individuals while keeping most of the profit. Both camps can find evidence to support their view, which is why the argument has been so long and so loud.\n\nThe most contested question is status. The companies maintain that the riders are self-employed, on the grounds that nobody tells them when or whether to work. The riders reply that, notwithstanding the app's cheerful language about 'partners', they are monitored constantly and can be removed from the platform after a series of poor ratings. Courts in several countries have sided with the riders, albeit in judgments that apply only narrowly. Whereas some courts look at the contract, others look at how the work is actually done, and the results are inconsistent.\n\nSupporters of the platforms point to surveys in which a majority of riders say they value their independence. This is true, as far as it goes. Yet the same surveys show that many riders would accept a more secure arrangement provided that it did not force them into fixed shifts. In so far as flexibility is the main attraction, it seems possible to keep it while improving pay and protection; the companies' insistence that the choice is all or nothing may be as much a negotiating position as a business necessity.\n\nSome governments have begun to act. A recent European directive presumes that platform workers are employees unless the company can prove otherwise, which reverses the burden of proof. Even so, enforcement is likely to depend on national legislation, and firms have already threatened to leave markets where the rules become costly. Past experience suggests that such threats are seldom carried out in full, but they are rarely empty either.\n\nFor the riders themselves, the debate can seem rather distant. A cyclist interviewed outside a city-centre station said that he cared less about the legal definition of his job than about whether anyone would pay for his repairs if he crashed. His point, delivered with a shrug, was perhaps the most persuasive one anyone made all week."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the main disagreement about the delivery app?",
+     "op": [
+      "Whether customers should pay higher prices.",
+      "Whether the riders are genuinely independent.",
+      "Whether the app is safe to use.",
+      "Whether riders should work in cities."
+     ],
+     "r": 1,
+     "exp": "'The most contested question is status': empregado ou autônomo. O resto não é o foco do texto."
+    },
+    {
+     "t": "gap",
+     "q": "The riders argue that, ___ the app's friendly language, they are constantly monitored.",
+     "resp": [
+      "notwithstanding"
+     ],
+     "exp": "Notwithstanding + substantivo = apesar de. Equivale a despite/in spite of, mas é mais formal."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Courts have sided with the riders, albeit in narrow judgments.",
+     "exp": "'Albeit' = /ɔːlˈbiːɪt/. Acento em 'bee'. 'Judgments' tem /dʒʌdʒ/ no início."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer suggest about the companies' claim that the choice is 'all or nothing'?",
+     "op": [
+      "It has already been accepted by courts.",
+      "It is true, because the apps cannot survive otherwise.",
+      "It is irrelevant to the riders.",
+      "It is probably a bargaining tactic as much as a necessity."
+     ],
+     "r": 3,
+     "exp": "'may be as much a negotiating position as a business necessity': o autor sugere que é, em parte, tática de negociação."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Many",
+      "riders",
+      "would",
+      "accept",
+      "security",
+      "provided",
+      "that",
+      "it",
+      "did",
+      "not",
+      "force",
+      "fixed",
+      "shifts"
+     ],
+     "resp": "Many riders would accept security provided that it did not force fixed shifts",
+     "exp": "'Provided that' = desde que, introduz condição. Observe a ordem: provided that it did not force them."
+    },
+    {
+     "t": "gap",
+     "q": "Many riders prefer the job ___ it gives them control over their hours.",
+     "resp": [
+      "on the grounds that"
+     ],
+     "exp": "On the grounds that + oração = por motivo de, sob o argumento de. (No texto a expressão aparece em outra frase.)"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você prefere um emprego flexível ou estável? Use um conector como whereas ou provided that.",
+     "frase": "Would you prefer a flexible job or a stable one?",
+     "modelo": "I would prefer a stable job, whereas my brother likes flexibility. I could accept freelance work, provided that the pay were reliable.",
+     "min": 15,
+     "chave": [
+      "whereas",
+      "provided",
+      "although",
+      "flexible",
+      "stable",
+      "albeit"
+     ],
+     "exp": "Use whereas para comparar e provided that para condição."
+    },
+    {
+     "t": "mc",
+     "q": "The cyclist's comment about repair costs is included to show that",
+     "op": [
+      "practical security matters more to riders than legal labels.",
+      "he is unaware of the legal debate.",
+      "riders are generally careless about safety.",
+      "the companies already pay for accidents."
+     ],
+     "r": 0,
+     "exp": "Ele se importa mais com quem paga os reparos do que com a definição legal: o ponto mais 'persuasivo' segundo o autor."
+    },
+    {
+     "t": "gap",
+     "q": "The scheme is successful to the extent that it offers real security. INSOFAR\nThe scheme is successful ___ it offers real security.",
+     "resp": [
+      "in so far as",
+      "insofar as"
+     ],
+     "exp": "In so far as = na medida em que. Limita uma afirmação.",
+     "dica": "INSOFAR"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "The museum that learned to listen",
+   "objetivo": "Treinar Part 4 (key word transformation) em um texto sobre cultura e museus.",
+   "foco": "Key word transformations: passive, reported speech, comparatives, fixed phrases, gerunds",
+   "explicacao": [
+    "Na Part 4 você reescreve uma frase com a palavra-chave, sem mudar, e usa de 3 a 6 palavras (aqui, 3 a 5). Contrações valem como duas.",
+    "Passos: 1) descubra a estrutura exigida (voz passiva? discurso indireto? comparativo?). 2) use a palavra-chave sem alterar. 3) confira tempo verbal e preposição.",
+    "Estruturas comuns: the more... the more; no sooner... than; regret + -ing; be worth + -ing; prevent X from -ing; look forward to + -ing.",
+    "Se a resposta tiver mais de cinco palavras, você provavelmente se afastou da estrutura. Releia a frase original."
+   ],
+   "vocab": [
+    {
+     "en": "exhibit",
+     "pt": "peça exposta"
+    },
+    {
+     "en": "curator",
+     "pt": "curador(a)"
+    },
+    {
+     "en": "admission",
+     "pt": "entrada, ingresso"
+    },
+    {
+     "en": "to display",
+     "pt": "expor"
+    },
+    {
+     "en": "visitor",
+     "pt": "visitante"
+    },
+    {
+     "en": "archive",
+     "pt": "arquivo, acervo"
+    },
+    {
+     "en": "to commission",
+     "pt": "encomendar"
+    },
+    {
+     "en": "donation",
+     "pt": "doação"
+    }
+   ],
+   "material": {
+    "titulo": "A gallery of small voices",
+    "texto": "Until recently, the Harbour Museum was a place that people visited once, usually on a wet afternoon, and promptly forgot. Its collection of fishing nets, brass compasses and portraits of unsmiling merchants was admired by specialists and ignored by almost everyone else. Attendance had fallen for six years, and the trustees were reported to be considering closure when a new director, Tamsin Osei, arrived with an unusual proposal: she wanted to ask the visitors what they thought.\n\nThe first experiment was modest. Cards were placed beside forty objects, inviting people to write down a memory or a question, and the cards were displayed on the walls alongside the labels. Some responses were predictable. Others were not. Beside a rusted anchor, one visitor had written, 'My grandfather told me this was the one thing the sea never took back.' Beside a ship's bell, a child asked whether it had ever been rung by mistake. Within weeks, staff noticed that people were spending twice as long in front of the objects as they had before.\n\nWhat began as a trick to hold attention became a policy. The museum now commissions local residents to curate small displays, and the oldest exhibits are often interpreted by people with no formal training in history. Purists have objected, and one retired professor wrote to the local paper that the museum was 'turning scholarship into a conversation at a bus stop'. Osei does not apologise. 'A conversation at a bus stop,' she replied, 'is exactly where most people have always done their thinking.'\n\nThe results speak for themselves. Admission figures are up by over a third, and the museum's archive has grown considerably, thanks to families who, having discovered that their grandparents' letters were wanted, donated boxes of them. The risk, as Osei herself admits, is that popularity may dilute accuracy. Each personal story is checked against records before being displayed, and several have been politely declined.\n\nIt would be easy to read this as a story about one museum. It is also, perhaps, a modest argument about how institutions should treat their audiences: not as passive recipients of knowledge, but as people who arrive already carrying some. The anchor, incidentally, is still rusting quietly in its case. It is just that now, when people stand in front of it, they have something to say."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What was the museum's problem before Tamsin Osei arrived?",
+     "op": [
+      "Its objects were being damaged.",
+      "Its collection was too small.",
+      "Its trustees opposed any change.",
+      "Too few people were interested in its collection."
+     ],
+     "r": 3,
+     "exp": "'Attendance had fallen for six years' e a coleção era admirada só por especialistas."
+    },
+    {
+     "t": "gap",
+     "q": "Reports said that the trustees were considering closure. REPORTED\nThe trustees ___ considering closure.",
+     "resp": [
+      "were reported to be"
+     ],
+     "exp": "Passiva impessoal com REPORTED: were reported to be + -ing... Aqui 'to be considering'. O tempo segue o do texto.",
+     "dica": "REPORTED"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "A conversation at a bus stop is exactly where most people do their thinking.",
+     "exp": "Ritmo com ênfase em 'conversation', 'bus stop' e 'thinking'. 'Exactly' = /ɪɡˈzæktli/."
+    },
+    {
+     "t": "mc",
+     "q": "How does Osei respond to the professor's criticism?",
+     "op": [
+      "She agrees and promises to restore tradition.",
+      "She ignores it completely.",
+      "She turns the insult into a defence of her approach.",
+      "She asks him to write for the museum."
+     ],
+     "r": 2,
+     "exp": "Ela reaproveita a imagem do ponto de ônibus como argumento: é onde as pessoas pensam. Resposta sem pedir desculpas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Each",
+      "personal",
+      "story",
+      "is",
+      "checked",
+      "against",
+      "records",
+      "before",
+      "it",
+      "is",
+      "displayed"
+     ],
+     "resp": "Each personal story is checked against records before it is displayed",
+     "exp": "Passiva em duas orações ligadas por before. Checked against records = conferida com registros."
+    },
+    {
+     "t": "gap",
+     "q": "'I haven't been here for years,' said a visitor. FOR\nA visitor said that she ___ years.",
+     "resp": [
+      "had not been there for",
+      "hadn't been there for",
+      "had not been here for",
+      "hadn't been here for"
+     ],
+     "exp": "Discurso indireto: have not been → had not been; here → there. A palavra FOR já está na frase; a resposta termina com 'for'.",
+     "dica": "FOR"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: que museu ou lugar cultural você recomenda e por quê?",
+     "frase": "Which museum or cultural place would you recommend, and why?",
+     "modelo": "I would recommend the science museum in my city, since it lets visitors touch the exhibits. It is well worth visiting, especially with children.",
+     "min": 14,
+     "chave": [
+      "museum",
+      "recommend",
+      "worth",
+      "visit",
+      "exhibits",
+      "gallery"
+     ],
+     "exp": "Use be worth + -ing: The museum is well worth visiting."
+    },
+    {
+     "t": "mc",
+     "q": "What is the risk of the museum's new approach, according to Osei?",
+     "op": [
+      "The objects may be moved.",
+      "Personal stories may reduce the accuracy of the displays.",
+      "Visitors may stop paying admission.",
+      "The archive may become too large."
+     ],
+     "r": 1,
+     "exp": "'popularity may dilute accuracy': por isso as histórias são conferidas com registros."
+    },
+    {
+     "t": "gap",
+     "q": "It was a mistake to say no to the first donation. REGRET\nThe museum ___ the first donation.",
+     "resp": [
+      "regrets saying no to",
+      "regretted saying no to",
+      "regrets refusing"
+     ],
+     "exp": "Regret + -ing = lamentar ter feito algo: regrets saying no to the first donation.",
+     "dica": "REGRET"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "A commuter's complaint",
+   "objetivo": "Perceber ironia, humor e tom do autor em uma crônica de jornal; interpretar expressões idiomáticas.",
+   "foco": "Idioms and figurative language; irony, understatement and tone",
+   "explicacao": [
+    "Expressões idiomáticas têm sentido figurado: a drop in the ocean (pouquíssimo), the last straw (a gota d'água), break the ice (quebrar o gelo).",
+    "Understatement diz menos do que o real: 'a slight delay' para três horas parados. Ironia diz o contrário do que quer dizer: 'Lovely weather' sob chuva forte.",
+    "Em perguntas sobre tom, pense em palavras como wry, ironic, sardonic, resigned, light-hearted, scathing.",
+    "Se a frase parece elogio, mas o contexto é negativo, desconfie: é provavelmente irônico."
+   ],
+   "vocab": [
+    {
+     "en": "commuter",
+     "pt": "quem viaja diariamente ao trabalho"
+    },
+    {
+     "en": "delay",
+     "pt": "atraso"
+    },
+    {
+     "en": "the last straw",
+     "pt": "a gota d'água"
+    },
+    {
+     "en": "wry",
+     "pt": "irônico, seco"
+    },
+    {
+     "en": "to grumble",
+     "pt": "resmungar"
+    },
+    {
+     "en": "punctual",
+     "pt": "pontual"
+    },
+    {
+     "en": "fare",
+     "pt": "tarifa"
+    },
+    {
+     "en": "rush hour",
+     "pt": "hora do rush"
+    }
+   ],
+   "material": {
+    "titulo": "The 7.42 to nowhere in particular",
+    "texto": "There is a particular kind of silence that falls over a railway carriage when the driver announces, in the voice of a man reading his own obituary, that the train is being held 'due to the late running of a previous service'. It is not a peaceful silence. It is the silence of two hundred adults calculating how many meetings they will miss and whether the person in the next seat is likely to offer sympathy or merely sigh. I have heard it every working day for nine years, and I can report that it has not improved with practice.\n\nThe railway company, to be fair, is generous with explanations. Over the past month we have been informed of leaves on the line, a signal failure, a shortage of staff, 'the wrong kind of sunshine' and, on one memorable Thursday, a swan. I have no wish to belittle the swan. It was, I am told, a large one, and it showed an admirable disregard for the timetable. But a service that is derailed by wildlife about once a week suggests, at least to a passenger with my modest knowledge of engineering, that the problem may lie elsewhere.\n\nFares, meanwhile, rise every January with the quiet confidence of a tide. This year's increase, we are told, reflects 'investment in the network', a phrase which I have chosen to interpret as a joke. My season ticket now costs more than my first flat did per month, and for that sum I am entitled to stand, with luck, in a space the size of a doormat. When the last straw arrived, in the form of an announcement that the buffet car would be 'temporarily unavailable', I felt only a mild sense of relief that I had stopped expecting anything.\n\nAnd yet, I find I cannot quite give up on the whole business. There is a strange fellowship in delay. Strangers who would never normally speak have started to trade jokes, and a woman I had only ever seen behind a newspaper recently offered me half her sandwich. Last week the 7.42 arrived four minutes early, and the entire carriage looked at the clock as if it had confessed to something.\n\nI would not suggest that this makes up for the trains. Nobody sensible would. But if the network cannot yet get me to work on time, it has at least taught me something about the people who are trying to get there with me."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What is the writer's attitude in the opening paragraph?",
+     "op": [
+      "Wryly resigned.",
+      "Openly enthusiastic.",
+      "Furious and aggressive.",
+      "Frightened and anxious."
+     ],
+     "r": 0,
+     "exp": "Humor seco ('the voice of a man reading his own obituary') e conformismo ('has not improved with practice'): resignado e irônico."
+    },
+    {
+     "t": "gap",
+     "q": "The last ___ came when the buffet car was declared temporarily unavailable.",
+     "resp": [
+      "straw"
+     ],
+     "exp": "The last straw = a gota d'água, o último de uma série de problemas."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta, com tom de ironia.",
+     "frase": "It is the silence of two hundred adults calculating how many meetings they will miss.",
+     "exp": "'Calculating' = /ˈkælkjuleɪtɪŋ/. Dê um tom seco, quase sem emoção, à parte final."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer mean by saying he 'chose to interpret as a joke' the phrase 'investment in the network'?",
+     "op": [
+      "He does not believe fares rise because of real improvements.",
+      "He thinks the phrase is funny in a friendly way.",
+      "He believes the company is investing too heavily.",
+      "He wants to complain to the company directly."
+     ],
+     "r": 0,
+     "exp": "Ironia: ele acha que o aumento não tem relação com melhoria real. Chamar de 'piada' é crítica indireta."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "A",
+      "service",
+      "that",
+      "is",
+      "delayed",
+      "by",
+      "a",
+      "swan",
+      "once",
+      "a",
+      "week",
+      "suggests",
+      "the",
+      "problem",
+      "lies",
+      "elsewhere"
+     ],
+     "resp": "A service that is delayed by a swan once a week suggests the problem lies elsewhere",
+     "exp": "Oração relativa com 'that is delayed'. 'Lies elsewhere' = está em outro lugar (a causa é outra)."
+    },
+    {
+     "t": "gap",
+     "q": "A four-minute improvement is a drop in the ___ compared with the usual delays.",
+     "resp": [
+      "ocean"
+     ],
+     "exp": "A drop in the ocean = quase nada diante de um problema enorme."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: conte uma situação em que um atraso ou problema virou uma boa história. Use humor se puder.",
+     "frase": "Tell me about a time when a delay or problem turned into a good story.",
+     "modelo": "Once my bus broke down for two hours, which was a nightmare at the time. But I met a friendly woman who is now my neighbour, so it was not entirely wasted.",
+     "min": 16,
+     "chave": [
+      "delay",
+      "bus",
+      "story",
+      "funny",
+      "luckily",
+      "actually",
+      "nightmare"
+     ],
+     "exp": "Pode usar understatement: It wasn't ideal. / It was a slight delay (de duas horas!)."
+    },
+    {
+     "t": "mc",
+     "q": "What is the writer's conclusion in the final paragraph?",
+     "op": [
+      "Delays have at least revealed something positive about passengers.",
+      "He plans to stop travelling by train.",
+      "The railway company deserves praise for its efforts.",
+      "Commuters should refuse to pay fares."
+     ],
+     "r": 0,
+     "exp": "'it has at least taught me something about the people who are trying to get there with me': ponto positivo, mas sem perdoar a empresa."
+    },
+    {
+     "t": "gap",
+     "q": "The speaker described three hours stuck in a tunnel as 'a slight inconvenience'. That is an example of ___.",
+     "resp": [
+      "understatement",
+      "an understatement"
+     ],
+     "exp": "Understatement: dizer menos do que a realidade. Três horas presos é bem mais do que 'slight'."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Words with no heirs",
+   "objetivo": "Seguir a lógica de um texto: referências (this, the latter, such), conectores e parágrafos que se encaixam (Parts 6 e 7).",
+   "foco": "Cohesion and reference: this/that, the former/the latter, such, so, however; gapped text strategy",
+   "explicacao": [
+    "Na Part 7, uma frase retirada do texto só encaixa se combinar com o que vem antes e depois. Procure referências: this, such, the latter, these, the same.",
+    "'The former' é o primeiro de dois itens citados; 'the latter' é o segundo. A frase com 'this approach' exige que o parágrafo anterior descreva uma abordagem.",
+    "Conectores indicam direção: however, even so (contraste); in addition, what is more (soma); as a result, hence (consequência); for instance (exemplo).",
+    "Na Part 6 (4 textos), compare opiniões: quem concorda com quem, e com que ressalvas? Cuidado com opiniões parecidas que diferem em um ponto."
+   ],
+   "vocab": [
+    {
+     "en": "endangered",
+     "pt": "ameaçado de extinção"
+    },
+    {
+     "en": "fluent",
+     "pt": "fluente"
+    },
+    {
+     "en": "dialect",
+     "pt": "dialeto"
+    },
+    {
+     "en": "to revive",
+     "pt": "reviver"
+    },
+    {
+     "en": "heritage",
+     "pt": "herança, patrimônio"
+    },
+    {
+     "en": "generation",
+     "pt": "geração"
+    },
+    {
+     "en": "to document",
+     "pt": "documentar"
+    },
+    {
+     "en": "grammar",
+     "pt": "gramática"
+    }
+   ],
+   "material": {
+    "titulo": "When the last speaker leaves",
+    "texto": "Roughly half of the world's seven thousand languages are expected to disappear before the end of this century. The causes are not mysterious. Children learn the language that will help them find work, and in most places that means a national or international language rather than the one their grandparents spoke. Within two or three generations, a language that was once the centre of a community's life may survive only in songs and a few kitchen words.\n\nLinguists have approached the problem in two main ways. The first is to record as much as possible while speakers are still alive: vocabulary, grammar, stories, even the way people argue. The second is to try to persuade communities to keep using the language in daily life, through schools, radio and, more recently, apps. Both strategies have their champions, and the former is usually cheaper and quicker. The latter, however, is where the real difference can be made, since a recording cannot hold a conversation.\n\nThere are some success stories. Welsh, once in steep decline, is now taught in most schools in Wales, and the number of young speakers has risen. In New Zealand, Māori language nests, where very young children are cared for entirely in the language, helped to create a generation of fluent speakers. Such results have encouraged others, but they should not be overstated. Both examples depended on strong political support and considerable funding, neither of which is available to a community of two hundred people in a remote valley.\n\nThere is also a delicate question of ownership. Some communities are reluctant to have their language recorded by outsiders, fearing that it will be used without permission or published in ways they cannot control. This is understandable, and increasingly researchers work under agreements that give speakers the final say. What is more, the best archives are now often built by community members themselves, with the linguist in a supporting role.\n\nIs it worth the effort? Sceptics argue that languages have always died, and that the resources might be better spent on health or education. But a language is more than a tool for communication: it holds a particular way of naming plants, telling time, remembering ancestors. When it goes, so does a knowledge that took centuries to build, and that, in most cases, nobody has had the time to write down."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What does 'the former' in the second paragraph refer to?",
+     "op": [
+      "Recording speakers while they are still alive.",
+      "Teaching languages in schools.",
+      "Encouraging daily use of the language.",
+      "Using apps to learn."
+     ],
+     "r": 0,
+     "exp": "'The first... recording' e 'The second... persuade communities'. 'The former' = o primeiro dos dois, ou seja, gravar. 'The latter' = incentivar o uso diário."
+    },
+    {
+     "t": "gap",
+     "q": "Within three generations a language may survive only in songs; ___ is how many disappear.",
+     "resp": [
+      "that",
+      "this"
+     ],
+     "exp": "This/that retoma a ideia inteira da oração anterior: o desaparecimento gradual."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "A recording cannot hold a conversation.",
+     "exp": "Frase curta e forte. 'Recording' tem acento na segunda sílaba: /rɪˈkɔːdɪŋ/."
+    },
+    {
+     "t": "mc",
+     "q": "The writer says 'Such results have encouraged others, but they should not be overstated' because",
+     "op": [
+      "the schools in Wales have closed.",
+      "these languages are not really spoken any more.",
+      "the numbers were calculated incorrectly.",
+      "the success of Welsh and Māori depended on conditions that most communities lack."
+     ],
+     "r": 3,
+     "exp": "Logo depois: 'depended on strong political support and considerable funding, neither of which is available...'. 'Such results' se refere aos exemplos anteriores."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "This",
+      "is",
+      "understandable,",
+      "and",
+      "researchers",
+      "increasingly",
+      "work",
+      "under",
+      "agreements",
+      "that",
+      "give",
+      "speakers",
+      "the",
+      "final",
+      "say"
+     ],
+     "resp": "This is understandable, and researchers increasingly work under agreements that give speakers the final say",
+     "exp": "'This' retoma o medo das comunidades. Relativa 'that give speakers the final say' completa 'agreements'."
+    },
+    {
+     "t": "gap",
+     "q": "Both strategies have champions; the former is cheaper, ___ the latter makes more difference.",
+     "resp": [
+      "whereas",
+      "while",
+      "but"
+     ],
+     "exp": "Conector de contraste entre os dois itens. Whereas/while/but funcionam."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você acha importante preservar línguas ameaçadas? Por quê?",
+     "frase": "Is it important to protect endangered languages?",
+     "modelo": "I think it is important, because a language holds a unique knowledge. However, communities should decide for themselves, and the former approach alone is not enough.",
+     "min": 15,
+     "chave": [
+      "important",
+      "language",
+      "community",
+      "because",
+      "however",
+      "culture"
+     ],
+     "exp": "Pode usar the former / the latter e conectores como however, what is more."
+    },
+    {
+     "t": "mc",
+     "q": "Which sentence would fit best at the start of the fourth paragraph's argument, after 'ownership'?",
+     "op": [
+      "Not all linguists share this concern about outsiders.",
+      "Some communities worry about how outsiders will treat their recordings.",
+      "Welsh has recovered strongly in recent decades.",
+      "Languages are rarely taught in schools."
+     ],
+     "r": 1,
+     "exp": "O parágrafo continua com 'Some communities are reluctant...': a frase que combina é a que apresenta a preocupação das comunidades. As outras mudam de assunto."
+    },
+    {
+     "t": "gap",
+     "q": "Linguists try to keep records and to encourage daily use of the language. The ___ is the harder task. (use one word)",
+     "resp": [
+      "latter"
+     ],
+     "exp": "The latter = o segundo item citado (encorajar o uso diário), que é o mais difícil."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "The unreliable archive",
+   "objetivo": "Treinar Parts 1 e 2 (cloze): collocations, preposições dependentes e palavras gramaticais, em um texto sobre memória.",
+   "foco": "Cloze skills: dependent prepositions, auxiliaries, fixed phrases, linking words",
+   "explicacao": [
+    "No open cloze falta uma palavra gramatical: preposição, auxiliar, pronome, artigo, conector. Leia a frase toda, antes e depois da lacuna.",
+    "Preposições dependentes: responsible for, depend on, result in, aware of, blame X for Y, accuse X of -ing. Aprenda com o adjetivo ou verbo.",
+    "Fixed phrases: in spite of, as far as I know, no matter how, all the more, as opposed to, by no means.",
+    "No multiple-choice cloze, as quatro opções têm sentido parecido; só uma combina gramaticalmente e com as palavras vizinhas (cast doubt on, but not 'put doubt on')."
+   ],
+   "vocab": [
+    {
+     "en": "to recall",
+     "pt": "recordar"
+    },
+    {
+     "en": "reliable",
+     "pt": "confiável"
+    },
+    {
+     "en": "vivid",
+     "pt": "vívido, nítido"
+    },
+    {
+     "en": "to distort",
+     "pt": "distorcer"
+    },
+    {
+     "en": "witness",
+     "pt": "testemunha"
+    },
+    {
+     "en": "to fabricate",
+     "pt": "inventar, fabricar"
+    },
+    {
+     "en": "confidence",
+     "pt": "confiança"
+    },
+    {
+     "en": "trace",
+     "pt": "vestígio"
+    }
+   ],
+   "material": {
+    "titulo": "Remembering what never happened",
+    "texto": "Most of us treat our memories as a kind of private archive, a collection of events stored faithfully and retrieved on request. Psychologists have been telling us for decades that this picture is badly wrong. Each time a memory is recalled it is, in effect, rebuilt, and in the rebuilding, details can be altered, added or lost without our noticing. The memories that feel most vivid are not necessarily the most accurate, and confidence is by no means a guide to truth.\n\nThe point was made famously in a series of experiments in which volunteers watched film of a car accident and were then asked how fast the vehicles had been going when they 'smashed' into each other, or when they 'hit' each other. Those given the stronger word estimated higher speeds, and a week later many of them recalled seeing broken glass, although there was none. A single word, it seemed, had been enough to leave a false trace.\n\nThe consequences for justice are serious. Eyewitness testimony carries great weight in court, since jurors tend to be impressed by a witness who speaks with certainty. Yet analysis of cases in which convictions were later overturned has shown that mistaken identification played a part in the majority. Some police forces have responded by changing the way suspects are presented to witnesses, and by training officers to avoid leading questions, but progress has been uneven.\n\nNone of this means that memory is useless. For most purposes, it works remarkably well, and its flexibility may even be an advantage: it lets us combine past experiences, imagine the future and, up to a point, forgive ourselves. The danger lies in not being aware of its limits. People who are told that their memories can be distorted are, on the whole, more careful about how much they rely on them.\n\nPerhaps the most useful habit is a modest one. When a recollection seems unusually clear, especially about an argument or an injury, it is worth asking whether anyone else was there and whether any written record exists. The answer may confirm the memory. But it may equally reveal that the story we have told ourselves for twenty years has been quietly improved along the way."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "According to the first paragraph, what is wrong with the common view of memory?",
+     "op": [
+      "It assumes that memories are stored unchanged.",
+      "It overestimates how much we forget.",
+      "It confuses memory with imagination.",
+      "It ignores the effect of age."
+     ],
+     "r": 0,
+     "exp": "O texto diz que o quadro de um 'arquivo' fiel está errado: ao lembrar, reconstruímos a memória."
+    },
+    {
+     "t": "gap",
+     "q": "Memories can be altered without us ___ aware of the change.",
+     "resp": [
+      "being"
+     ],
+     "exp": "Sem + sujeito + -ing: without us being aware. Open cloze: forma de -ing depois de preposição."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Confidence is by no means a guide to truth.",
+     "exp": "'By no means' = de forma alguma. Acento em 'means' e em 'truth' (/truːθ/)."
+    },
+    {
+     "t": "mc",
+     "q": "Which word best fits the gap? The study has ___ doubt on the reliability of eyewitnesses.",
+     "op": [
+      "cast",
+      "set",
+      "laid",
+      "held"
+     ],
+     "r": 0,
+     "exp": "Collocation fixa: cast doubt on = lançar dúvida sobre. As outras opções não combinam com 'doubt on'."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Jurors",
+      "tend",
+      "to",
+      "be",
+      "impressed",
+      "by",
+      "a",
+      "witness",
+      "who",
+      "speaks",
+      "with",
+      "certainty"
+     ],
+     "resp": "Jurors tend to be impressed by a witness who speaks with certainty",
+     "exp": "Relativa 'who speaks with certainty' modifica 'a witness'. Tend to be impressed by = costumam se impressionar com."
+    },
+    {
+     "t": "gap",
+     "q": "Mistaken identification played a part ___ most of the cases that were overturned.",
+     "resp": [
+      "in"
+     ],
+     "exp": "Play a part in = ter um papel em. Preposição dependente do substantivo part."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você já se lembrou de algo de um jeito e depois descobriu que foi diferente? Conte.",
+     "frase": "Has a memory of yours ever turned out to be wrong?",
+     "modelo": "Yes, I once remembered a trip with my cousins, but photographs proved I was wrong. I was certain that it had rained, though in fact the weather was perfect.",
+     "min": 16,
+     "chave": [
+      "remember",
+      "memory",
+      "wrong",
+      "certain",
+      "actually",
+      "turned out",
+      "photograph"
+     ],
+     "exp": "Estruturas úteis: I was certain that..., It turned out that..., In fact..."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer suggest about people who know that memory can be distorted?",
+     "op": [
+      "They become better witnesses in court.",
+      "They find it easier to forgive others.",
+      "They stop trusting their memory altogether.",
+      "They tend to be more cautious about relying on it."
+     ],
+     "r": 3,
+     "exp": "'more careful about how much they rely on them'. O texto não diz que deixam de confiar nem que viram melhores testemunhas."
+    },
+    {
+     "t": "gap",
+     "q": "No matter how vivid a memory feels, we should not rely ___ it without checking.",
+     "resp": [
+      "on",
+      "upon"
+     ],
+     "exp": "Rely on/upon = confiar em. Preposição dependente do verbo."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado: Reading and Use of English",
+   "objetivo": "Fazer um simulado com os formatos da prova C1 Advanced: leitura longa, cloze, word formation e key word transformation.",
+   "foco": "Mock exam: Parts 1-5 of CAE Reading and Use of English",
+   "explicacao": [
+    "Este simulado reúne os formatos de Reading & Use of English: Part 1 (multiple-choice cloze), Part 2 (open cloze), Part 3 (word formation), Part 4 (key word transformation) e Part 5 (texto longo com atitude do autor).",
+    "Leia o texto uma vez para a ideia geral, depois volte para cada pergunta. Em Part 5, elimine as opções que repetem palavras do texto mas mudam o sentido.",
+    "Em Part 4, mantenha a palavra-chave sem mudar e use de 3 a 5 palavras. Confira tempos verbais e preposições.",
+    "Gerencie o tempo: no exame real, são 90 minutos para as 8 partes. Aqui, respire e responda com calma."
+   ],
+   "vocab": [
+    {
+     "en": "to feed into",
+     "pt": "inserir, alimentar (um programa)"
+    },
+    {
+     "en": "competent",
+     "pt": "competente"
+    },
+    {
+     "en": "flat",
+     "pt": "sem graça, monótono"
+    },
+    {
+     "en": "margin",
+     "pt": "margem (de lucro)"
+    },
+    {
+     "en": "draft",
+     "pt": "rascunho"
+    },
+    {
+     "en": "to creep into",
+     "pt": "infiltrar-se aos poucos"
+    },
+    {
+     "en": "casualty",
+     "pt": "vítima, perda"
+    },
+    {
+     "en": "invisible labour",
+     "pt": "trabalho invisível"
+    }
+   ],
+   "material": {
+    "titulo": "The translator and the machine",
+    "texto": "When I began translating novels twenty-five years ago, I assumed that the profession would one day be quietly retired by technology. I did not imagine that the retirement would be announced by software that could translate a paragraph in a fraction of a second, and could do so, disconcertingly, rather well. The first time I fed one of my own translations into such a program and compared the results, I felt something between professional alarm and unexpected curiosity. The machine had produced a competent version. It had also, in a sentence I had spent an hour on, produced a mistake so confident that I laughed aloud.\n\nIt is tempting to describe the difference as one of accuracy, but that would be to misunderstand the task. A literary translator is not only converting words; she is deciding which of the author's habits to preserve and which to sacrifice. A writer who repeats a word obsessively may be establishing a rhythm, or may simply lack an editor, and the translator has to judge which. Software, by contrast, tends to smooth out oddities, producing text that is fluent but strangely flat. The result reads like a good imitation of a book, rather than a book.\n\nNone of this prevents publishers from taking an interest. Margins in the industry are thin, translated fiction accounts for a small share of sales in English-speaking countries, and the temptation to cut costs is obvious. Several colleagues have already been offered contracts in which they are asked simply to 'edit' a machine draft, at a fraction of their usual rate. I have declined two such offers, not out of pride but because correcting a draft often takes longer than starting again. One has to unlearn the machine's mistakes before one can see the author's meaning, and it is hard to do both at once.\n\nStill, I would be dishonest if I claimed to be unaffected. I now find myself using the software for the least interesting work: the first pass through a technical manual, say, or a tedious letter. It saves time, and I cannot pretend that I miss the typing. The danger, as I see it, is subtle. If translators come to treat the machine's version as a starting point, there is a risk that its choices will become the default, and over time a kind of average style will creep into every book we read. The variety that makes literature worth translating in the first place would, ironically, be the first casualty.\n\nMy younger colleagues are more optimistic than I am, and perhaps they are right. They point out that photography did not destroy painting, though it changed what painters were for. I find this argument comforting rather than convincing. Painting survived because people discovered that they cared about something a camera could not give them. Whether readers will care, in sufficient numbers, about the invisible labour of a translator is a question to which I have no answer. What I do know is that on the day the machine learns to laugh at its own mistakes, I shall begin to worry."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "What was the writer's reaction when she first compared the machine's version with her own?",
+     "op": [
+      "She decided at once to stop translating.",
+      "She was relieved that it was so inaccurate.",
+      "She was horrified by how good it was.",
+      "She felt a mixture of concern and interest, and amusement at one error."
+     ],
+     "r": 3,
+     "exp": "'something between professional alarm and unexpected curiosity' e 'I laughed aloud' diante do erro. Part 5."
+    },
+    {
+     "t": "mc",
+     "q": "What does the writer mean by saying the translator must decide 'which of the author's habits to preserve'?",
+     "op": [
+      "Every habit must be copied exactly.",
+      "Authors should work with editors more.",
+      "Translators should correct an author's faults.",
+      "Some repetition may be deliberate, so judgement is needed."
+     ],
+     "r": 3,
+     "exp": "'may be establishing a rhythm, or may simply lack an editor, and the translator has to judge which'. A questão é julgamento, não cópia nem correção automática. Part 5."
+    },
+    {
+     "t": "gap",
+     "q": "Software tends to smooth out oddities, producing text that is fluent but strangely ___. (EXPRESS)",
+     "resp": [
+      "inexpressive",
+      "unexpressive"
+     ],
+     "exp": "Adjetivo negativo a partir de express: inexpressive (sem expressão). 'Flat' no texto expressa o mesmo sentido. Part 3.",
+     "dica": "EXPRESS"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "On the day the machine learns to laugh at its own mistakes, I shall begin to worry.",
+     "exp": "Pausa depois de 'mistakes'. 'Shall' é formal e britânico: /ʃæl/ ou /ʃəl/."
+    },
+    {
+     "t": "mc",
+     "q": "Why has the writer refused to 'edit' machine drafts?",
+     "op": [
+      "The rates are too low for her pride.",
+      "Publishers have not made any offers.",
+      "She dislikes using computers.",
+      "Correcting often takes longer than translating from scratch."
+     ],
+     "r": 3,
+     "exp": "'not out of pride but because correcting a draft often takes longer than starting again'. A resposta está explícita; a opção do orgulho é negada. Part 5."
+    },
+    {
+     "t": "gap",
+     "q": "Margins in the industry are thin, ___ the temptation to cut costs is obvious. (one word)",
+     "resp": [
+      "so",
+      "hence"
+     ],
+     "exp": "Open cloze (Part 2): conector de consequência. Margens pequenas, por isso a tentação de cortar custos. Aceitamos so ou hence."
+    },
+    {
+     "t": "gap",
+     "q": "'I haven't finished the translation yet,' she said. STILL\nShe said that she ___ the translation.",
+     "resp": [
+      "still hadn't finished",
+      "had still not finished",
+      "still had not finished"
+     ],
+     "exp": "Discurso indireto com STILL: still hadn't finished / had still not finished. Part 4.",
+     "dica": "STILL"
+    },
+    {
+     "t": "mc",
+     "q": "Choose the word that best fits: Several colleagues have been offered contracts at a ___ of their usual rate.",
+     "op": [
+      "division",
+      "fraction",
+      "segment",
+      "portion"
+     ],
+     "r": 1,
+     "exp": "Collocation: at a fraction of the rate/price = por uma pequena parte do valor. Part 1 (multiple-choice cloze)."
+    },
+    {
+     "t": "gap",
+     "q": "The writer fears that over time a kind of average style will creep into every book. DANGER\nThere is ___ an average style will creep into every book.",
+     "resp": [
+      "a danger that",
+      "a real danger that"
+     ],
+     "exp": "Com DANGER: there is a danger that + oração. Part 4.",
+     "dica": "DANGER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em inglês: você acha que a tecnologia pode substituir tradutores ou artistas? Dê sua opinião com um exemplo.",
+     "frase": "Do you think technology will replace translators or artists?",
+     "modelo": "Personally, I do not believe it will replace them completely. Although machines can imitate a style, they lack human judgement, whereas translators understand the culture behind the words.",
+     "min": 18,
+     "chave": [
+      "replace",
+      "machine",
+      "translator",
+      "human",
+      "judgement",
+      "technology",
+      "artist"
+     ],
+     "exp": "Use conectores da aula 10: whereas, although, provided that, albeit."
+    },
+    {
+     "t": "mc",
+     "q": "What is the writer's attitude to her younger colleagues' comparison with photography and painting?",
+     "op": [
+      "She is entirely persuaded by it.",
+      "She finds it reassuring but is not truly convinced.",
+      "She thinks it is unrelated to translation.",
+      "She believes it is offensive."
+     ],
+     "r": 1,
+     "exp": "'comforting rather than convincing' = reconfortante, mas não convincente. Part 5."
+    },
+    {
+     "t": "gap",
+     "q": "The machine can't distinguish between a deliberate repetition and a careless one. ABLE\nThe machine ___ a deliberate repetition from a careless one.",
+     "resp": [
+      "is not able to tell",
+      "isn't able to tell",
+      "is not able to distinguish",
+      "isn't able to distinguish"
+     ],
+     "exp": "Com ABLE: is not able to + verbo (tell ... from / distinguish ... from). Part 4.",
+     "dica": "ABLE"
+    }
+   ]
+  }
+ ]
+}

@@ -1074,14 +1074,15 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=2.2">
-<script src="js/firebaseServiceMock.js?v=2.2"></script>
-<script src="js/firebaseService.js?v=2.2"></script>
-<script src="js/idiomas/conteudoIngles.js?v=2.2"></script>
-<script src="js/componentes/PatchNotesModal.js?v=2.2"></script>
-<script src="js/componentes/FloatingTimer.js?v=2.2"></script>
-<script src="js/componentes/CambridgeTestView.js?v=2.2"></script>
-<script src="js/componentes/IdiomasView.js?v=2.2"></script>
+<link rel="stylesheet" href="css/componentes.css?v=2.3">
+<script src="js/firebaseServiceMock.js?v=2.3"></script>
+<script src="js/firebaseService.js?v=2.3"></script>
+<script src="js/idiomas/conteudoIngles.js?v=2.3"></script>
+<script src="js/componentes/PatchNotesModal.js?v=2.3"></script>
+<script src="js/componentes/FloatingTimer.js?v=2.3"></script>
+<script src="js/componentes/ExercicioIdioma.js?v=2.3"></script>
+<script src="js/componentes/CambridgeTestView.js?v=2.3"></script>
+<script src="js/componentes/IdiomasView.js?v=2.3"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
 
@@ -2329,15 +2330,14 @@ function renderIdiomas(){
   V.render($("#main"),appIdiomas);
 }
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="2.1";
+const APP_VERSAO="2.2";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
-  {t:"Nova aba Idiomas: Inglês no estilo Cambridge",d:"Aulas de Reading & Use of English, Writing, Listening e Speaking, do A1 ao C2."},
-  {t:"Teste de nivelamento",d:"18 questões rápidas para descobrir seu nível e ajustar as aulas."},
-  {t:"Aulas de idioma na sua semana",d:"Toque em “Adicionar à semana” para colocar, por exemplo, “Listening - B2” no seu cronograma."},
-  {t:"XP de idiomas também no perfil",d:"Cada tipo de aula (Reading, Listening, Writing, Speaking e tempo de Inglês) vale XP no seu nível e no ranking uma vez por dia."},
-  {t:"Cronômetro com meta e alarme",d:"Escolha uma meta (15 a 120 min) e o alarme toca quando o tempo chegar."},
-  {t:"Mini-janela do relógio",d:"Ao sair da tela do pomodoro ou cronômetro, ou rolar a página, o tempo continua visível num cantinho. Feche no X."},
-  {t:"Aviso de bloqueio",d:"Se o tempo não puder mais ser contado (limite de 16 h por dia, por exemplo), o cronômetro pausa e avisa com som."}]};
+  {t:"Curso de Inglês completo, do A1 ao C2",d:"360 aulas em trilhas de Reading & Use of English, Listening, Writing e Speaking, com um simulado da prova Cambridge no fim de cada trilha."},
+  {t:"Você escolhe o idioma e a prova",d:"Na aba Idiomas, escolha o idioma (por enquanto, Inglês) e a prova que quer fazer, do A2 Key ao C2 Proficiency. O app mostra quanto falta para você estar pronto."},
+  {t:"Aulas que alternam marcar, escrever e falar",d:"Cada aula sobe de dificuldade e mistura questões de marcar, completar, montar frases e falar em inglês (o app ouve e corrige)."},
+  {t:"Nivelamento mais desafiador",d:"O teste sobe de nível conforme você acerta e mistura os quatro tipos de questão."},
+  {t:"XP de idiomas também no perfil",d:"Cada habilidade concluída vale XP no seu nível e no ranking uma vez por dia."},
+  {t:"Cronômetro com meta, alarme e mini-janela",d:"Escolha uma meta de tempo; o relógio continua visível num cantinho quando você muda de tela."}]};
 function mostrarNovidades(){
   const PN=window.LAComp&&LAComp.PatchNotesModal;if(!PN||!$("#shell"))return;
   // conta nova (ainda não viu o convite do tutorial): não precisa de "o que mudou"
