@@ -110,8 +110,7 @@
      "t": "gap",
      "q": "Cette conversation m'a beaucoup ___.",
      "resp": [
-      "touchée",
-      "touchee"
+      "touchée"
      ],
      "exp": "Le pronom m' (= la narratrice, féminin) est objet direct et se place avant le verbe : le participe s'accorde, touchée.",
      "dica": "TOUCHER"
@@ -146,8 +145,7 @@
      "t": "gap",
      "q": "Les tables que nous avons ___ étaient très lourdes.",
      "resp": [
-      "installées",
-      "installees"
+      "installées"
      ],
      "exp": "Avec avoir, le participe s'accorde avec le COD placé avant : les tables (féminin pluriel) → installées.",
      "dica": "INSTALLER"
@@ -1762,8 +1760,7 @@
      "t": "gap",
      "q": "Les déchets sont ___ par des salariés avant d'aller à l'usine.",
      "resp": [
-      "triés",
-      "tries"
+      "triés"
      ],
      "exp": "Voix passive : sont + participe passé accordé (déchets = masculin pluriel) → triés.",
      "dica": "TRIER"

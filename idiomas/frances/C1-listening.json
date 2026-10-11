@@ -201,9 +201,7 @@
      "q": "Selon l'urbaniste, les cyclistes et elle veulent la même chose, mais ils divergent sur la ___ d'y arriver.",
      "resp": [
       "façon",
-      "manière",
-      "maniere",
-      "facon"
+      "manière"
      ],
      "exp": "'Nous divergeons sur la façon d'y arriver': mesmo objetivo (cidade mais calma), meios diferentes."
     }
@@ -412,8 +410,7 @@
      "t": "gap",
      "q": "Pour mieux dormir, le médecin conseille d'éviter les ___ en fin de soirée.",
      "resp": [
-      "écrans",
-      "ecrans"
+      "écrans"
      ],
      "exp": "'Éviter les écrans en fin de soirée' e se expor à luz natural de manhã: os dois conselhos práticos."
     }
@@ -585,7 +582,6 @@
      "q": "Pour l'économiste, la même hausse des prix est une ___ devant l'inflation.",
      "resp": [
       "inégalité",
-      "inegalite",
       "inégalités"
      ],
      "exp": "'Une inégalité devant l'inflation': a mesma alta pesa mais para os pobres. Atenção ao feminino: une inégalité."
@@ -625,8 +621,7 @@
      "t": "gap",
      "q": "Sans limite de durée, le chèque alimentaire entretiendrait la ___.",
      "resp": [
-      "dépendance",
-      "dependance"
+      "dépendance"
      ],
      "exp": "'Autrement, on entretient la dépendance': sem prazo, a ajuda cria dependência."
     }
@@ -1022,8 +1017,7 @@
      "t": "gap",
      "q": "La table ronde sur l'édition ___ réunira quatre invités à quatorze heures.",
      "resp": [
-      "numérique",
-      "numerique"
+      "numérique"
      ],
      "exp": "A mesa-redonda não muda: 14 h, grande salle, quatro convidados. 'Édition numérique' = publicação digital."
     }
@@ -1140,8 +1134,7 @@
      "t": "gap",
      "q": "Ouça e complete : Le salarié moyen répond à ses courriels à vingt-deux heures. Quelle ___ !",
      "resp": [
-      "productivité",
-      "productivite"
+      "productivité"
      ],
      "exp": "Aqui 'quelle productivité !' é irônico: responder e-mails às 22 h mostra que o trabalho invadiu a vida privada.",
      "ouvir": "Oh, bien sûr, et je les crois sur parole. Quelle productivité !"
@@ -1226,8 +1219,7 @@
      "t": "gap",
      "q": "Le chroniqueur résume : on a vendu la liberté et on a livré la ___ permanente.",
      "resp": [
-      "disponibilité",
-      "disponibilite"
+      "disponibilité"
      ],
      "exp": "Liberdade prometida, disponibilidade permanente entregue: é o contraste central da crônica."
     }
@@ -1344,8 +1336,7 @@
      "t": "gap",
      "q": "Ouça e complete : ___ l'image serait parfaite, on ne ressentirait ni l'échelle de la toile ni la matière de la peinture.",
      "resp": [
-      "Quand bien même",
-      "quand bien meme"
+      "Quand bien même"
      ],
      "exp": "'Quand bien même' + condicional (serait) = mesmo que. Expressão de concessão típica do nível C1.",
      "ouvir": "Quand bien même l'image serait parfaite, on ne ressentirait ni l'échelle d'une toile de quatre mètres, ni la matière de la peinture."
@@ -1432,8 +1423,7 @@
      "t": "gap",
      "q": "Pour Mme Perrin, il vaut mieux investir d'abord dans la ___ sur place.",
      "resp": [
-      "médiation",
-      "mediation"
+      "médiation"
      ],
      "exp": "Ela prefere investir na mediação cultural presencial, em vez de gastar milhões em visitas virtuais que ninguém termina."
     }
@@ -1771,8 +1761,7 @@
      "q": "Ouça e complete : Je n'ai pas dit ___. Il change.",
      "resp": [
       "cela",
-      "ça",
-      "ca"
+      "ça"
      ],
      "exp": "O professor corrige a conclusão do jornalista: o ofício não desaparece, se transforma.",
      "ouvir": "Je n'ai pas dit cela. Il change."
@@ -1854,8 +1843,7 @@
      "t": "gap",
      "q": "Ce qui inquiète le professeur, c'est la facilité avec laquelle on renonce à ___.",
      "resp": [
-      "vérifier",
-      "verifier"
+      "vérifier"
      ],
      "exp": "A preocupação não é a máquina, mas a perda do hábito de conferir o texto."
     }
@@ -2396,8 +2384,7 @@
      "t": "gap",
      "q": "Ouça e complete : Je ___ en trois temps.",
      "resp": [
-      "procéderai",
-      "procederai"
+      "procéderai"
      ],
      "exp": "'Je procéderai' (futuro de procéder) anuncia o plano. 'Procéder' = proceder, agir de certa maneira.",
      "ouvir": "Je procéderai en trois temps."
@@ -2799,8 +2786,7 @@
      "t": "gap",
      "q": "Ouça e complete : Les billets seront ___ gratuitement jusqu'à dimanche minuit.",
      "resp": [
-      "échangeables",
-      "echangeables"
+      "échangeables"
      ],
      "exp": "'Échangeables gratuitement' (trocáveis) até domingo à meia-noite; já o reembolso é um pedido à parte, on-line.",
      "ouvir": "Les billets seront échangeables gratuitement jusqu'à dimanche minuit."
@@ -3017,7 +3003,6 @@
      "q": "Ouça e complete : Les chiffres sont ___.",
      "resp": [
       "têtus",
-      "tetus",
       "têtu"
      ],
      "exp": "'Les chiffres sont têtus' = os números são teimosos, não se pode ignorá-los. Frase usada para responder à acusação de alarmismo.",

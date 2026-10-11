@@ -157,8 +157,7 @@
      "t": "gap",
      "q": "Je vous prie d'___, Madame, Monsieur, l'expression de mes salutations distinguées.",
      "resp": [
-      "agréer",
-      "agreer"
+      "agréer"
      ],
      "exp": "Agréer = aceitar, receber (verbo regular em -er). Veuillez agréer… é a variante com veuillez."
     }
@@ -601,8 +600,7 @@
      "t": "gap",
      "q": "Elle a réussi ___ à son travail régulier.",
      "resp": [
-      "grâce",
-      "grace"
+      "grâce"
      ],
      "exp": "Grâce à + substantivo = causa positiva (graças a). À cause de seria negativo.",
      "dica": "cause positive"
@@ -642,7 +640,6 @@
      "q": "Elle n'a pas pu venir ___ d'un accident.",
      "resp": [
       "à cause",
-      "a cause",
       "en raison",
       "en raison d'"
      ],
@@ -1927,8 +1924,7 @@
      "t": "gap",
      "q": "Il ___ qu'il connaît le directeur, mais ce n'est pas vrai.",
      "resp": [
-      "prétend",
-      "pretend"
+      "prétend"
      ],
      "exp": "Prétendre que = alegar que (sem garantia de verdade). Não significa 'pretender'.",
      "dica": "PRÉTENDRE"
@@ -2418,8 +2414,7 @@
      "t": "gap",
      "q": "Il faut que la mairie ___ plus de transports en commun.",
      "resp": [
-      "crée",
-      "cree"
+      "crée"
      ],
      "exp": "Il faut que + subjuntivo. Créer → que la mairie crée (forma: crée, com é acentuado + e final mudo).",
      "dica": "CRÉER"

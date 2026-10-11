@@ -121,7 +121,7 @@
      "q": "Responda em francês: diga seu nome e sua idade.",
      "frase": "Comment tu t'appelles et quel âge as-tu ?",
      "modelo": "Je m'appelle Ana et j'ai douze ans.",
-     "min": 5,
+     "min": 4,
      "chave": [
       "m'appelle",
       "ans",
@@ -1186,8 +1186,7 @@
      "q": "___ est-ce que le cours commence ? — À 17 h 30.",
      "resp": [
       "Quand",
-      "À quelle heure",
-      "A quelle heure"
+      "À quelle heure"
      ],
      "exp": "A resposta é uma hora, então a pergunta é « Quand… ? » ou « À quelle heure… ? »."
     },
@@ -1830,7 +1829,6 @@
      "q": "Le café n'est pas compris : il coûte 2 euros en ___.",
      "resp": [
       "supplément",
-      "supplement",
       "plus"
      ],
      "exp": "« En supplément » = a mais, adicional. Café fora do menu custa 2 €.",
@@ -2151,8 +2149,6 @@
      "resp": [
       "écrivez",
       "téléphonez",
-      "ecrivez",
-      "telephonez",
       "parlez"
      ],
      "exp": "Imperativo de vous: écrivez ou téléphonez à la directrice. Os dois verbos usam « à » antes de quem recebe.",

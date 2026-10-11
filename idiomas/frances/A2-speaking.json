@@ -412,8 +412,7 @@
      "t": "gap",
      "q": "Le matin, je me ___ à sept heures.",
      "resp": [
-      "lève",
-      "leve"
+      "lève"
      ],
      "exp": "Se lever : je me lève (com acento grave)."
     },
@@ -478,8 +477,7 @@
      "t": "gap",
      "q": "Le soir, nous ___ à huit heures. (dîner)",
      "resp": [
-      "dînons",
-      "dinons"
+      "dînons"
      ],
      "exp": "Nous + -ons : nous dînons.",
      "dica": "dîner"
@@ -586,8 +584,7 @@
      "t": "gap",
      "q": "J'adore ___ de la musique. (écouter)",
      "resp": [
-      "écouter",
-      "ecouter"
+      "écouter"
      ],
      "exp": "Depois de adorer, use o infinitivo : écouter.",
      "dica": "écouter"
@@ -825,8 +822,7 @@
      "t": "gap",
      "q": "Mon école est ___ de chez moi : j'y vais à pied. (perto)",
      "resp": [
-      "près",
-      "pres"
+      "près"
      ],
      "exp": "Près de = perto.",
      "dica": "près"
@@ -1656,8 +1652,7 @@
      "t": "gap",
      "q": "Elle est ___ à la plage avec ses amis. (aller)",
      "resp": [
-      "allée",
-      "allee"
+      "allée"
      ],
      "exp": "Elle é feminino : allée.",
      "dica": "aller"
@@ -2526,8 +2521,7 @@
      "t": "gap",
      "q": "Excusez-moi, je voudrais ___ une table pour six personnes. (réserver)",
      "resp": [
-      "réserver",
-      "reserver"
+      "réserver"
      ],
      "exp": "Je voudrais + infinitivo.",
      "dica": "réserver"

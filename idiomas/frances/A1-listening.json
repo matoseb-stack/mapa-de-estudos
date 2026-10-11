@@ -184,8 +184,7 @@
      "t": "gap",
      "q": "Hugo est dans le club de ___.",
      "resp": [
-      "théâtre",
-      "theatre"
+      "théâtre"
      ],
      "exp": "Hugo est dans le club de théâtre; Camille, no de musique.",
      "ouvir": "Hugo est dans le club de théâtre, et Camille dans le club de musique."
@@ -914,8 +913,7 @@
      "t": "gap",
      "q": "Inès apporte un ___.",
      "resp": [
-      "gâteau",
-      "gateau"
+      "gâteau"
      ],
      "exp": "Inès diz : J'apporte un gâteau. Gâteau = \"gatô\".",
      "ouvir": "Super ! J'apporte un gâteau."
@@ -1113,8 +1111,7 @@
      "t": "gap",
      "q": "Elle parle portugais, espagnol et ___.",
      "resp": [
-      "français",
-      "francais"
+      "français"
      ],
      "exp": "Elle parle portugais, espagnol et français. Trois langues.",
      "ouvir": "Elle parle portugais, espagnol et français."
@@ -1295,8 +1292,7 @@
      "q": "Dans la photo, la mère de Léa est à côté de sa ___.",
      "resp": [
       "grand-mère",
-      "grand mère",
-      "grand-mere"
+      "grand mère"
      ],
      "exp": "Ma mère est à côté d'elle, c'est-à-dire de la grand-mère. Resposta: grand-mère.",
      "ouvir": "C'est ma grand-mère. Ma mère est à côté d'elle."
@@ -1483,8 +1479,7 @@
      "t": "gap",
      "q": "La gare est derrière l'___.",
      "resp": [
-      "église",
-      "eglise"
+      "église"
      ],
      "exp": "Pour la gare: de l'autre côté, derrière l'église.",
      "ouvir": "La gare est derrière l'église, de l'autre côté de la ville."

@@ -1034,8 +1034,7 @@
      "t": "gap",
      "q": "Sur la fiche : « Nom : SILVA ; ___ : Ana ». Complétez le champ.",
      "resp": [
-      "Prénom",
-      "Prenom"
+      "Prénom"
      ],
      "exp": "Ana é o nome de batismo: prénom (com acento agudo)."
     },
@@ -1113,7 +1112,6 @@
       "numéro de téléphone",
       "numéro",
       "téléphone",
-      "numero",
       "portable",
       "numéro de portable"
      ],
@@ -1583,8 +1581,7 @@
      "t": "gap",
      "q": "Tchau, até logo ! → ___ bientôt !",
      "resp": [
-      "À",
-      "A"
+      "À"
      ],
      "exp": "Até logo = À bientôt (com acento grave)."
     },
@@ -1622,8 +1619,7 @@
      "t": "gap",
      "q": "Pour une amie, on écrit : « ___ Marie, ». (querida)",
      "resp": [
-      "Chère",
-      "Chere"
+      "Chère"
      ],
      "exp": "Para uma mulher: Chère, com accent grave."
     }
@@ -1930,7 +1926,7 @@
      "q": "Diga onde você está e como está o tempo.",
      "frase": "Où es-tu en vacances et quel temps fait-il ?",
      "modelo": "Je suis à Paris. Il fait beau.",
-     "min": 5,
+     "min": 4,
      "chave": [
       "fait",
       "beau",

@@ -2642,7 +2642,7 @@
      "q": "Responda em francês, em voz alta.",
      "frase": "Aimeriez-vous changer de métier ou d'études ? Pourquoi ?",
      "modelo": "Oui, j'aimerais changer parce que je voudrais un travail plus créatif.",
-     "min": 8,
+     "min": 7,
      "chave": [
       "aimerais",
       "changer",

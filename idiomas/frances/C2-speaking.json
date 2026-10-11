@@ -615,7 +615,7 @@
      "q": "Evite 'parce que'. Use ao menos duas nominalizações (ex.: le manque d'emplois, l'attrait des services).",
      "frase": "Expliquez, en nominalisant, pourquoi les jeunes quittent les campagnes pour la ville.",
      "modelo": "Le départ des jeunes s'explique par le manque d'emplois qualifiés et par l'attrait des services urbains. Il en résulte un vieillissement des campagnes, ce qui entraîne la fermeture des écoles et des commerces.",
-     "min": 28,
+     "min": 23,
      "chave": [
       "départ",
       "manque",
@@ -1401,7 +1401,7 @@
      "q": "Reformule, mantenha a tese e use 'j'irais même jusqu'à dire'.",
      "frase": "Ne trouvez-vous pas votre proposition un peu utopique ? Défendez-la avec fermeté.",
      "modelo": "Si je vous comprends bien, vous me demandez si ma proposition est réaliste. Je maintiens qu'elle l'est, et j'irais même jusqu'à dire qu'elle est indispensable. À cet égard, les expériences menées ailleurs montrent qu'une réforme ambitieuse peut réussir si elle est progressive.",
-     "min": 30,
+     "min": 29,
      "chave": [
       "si je vous comprends bien",
       "je maintiens",

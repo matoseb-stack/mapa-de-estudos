@@ -69,8 +69,7 @@
      "t": "gap",
      "q": "Certes, la mode est parfois futile ; il ___ que le phénomène répond à une fatigue bien réelle.",
      "resp": [
-      "n'empêche",
-      "n'empeche"
+      "n'empêche"
      ],
      "exp": "Il n'empêche que = ainda assim, apesar disso. É uma concessão: o autor admite o lado fútil, mas mantém sua tese."
     },
@@ -1362,8 +1361,7 @@
      "t": "gap",
      "q": "Distribuer de l'argent à tout-va, c'est parfois jeter l'argent par les ___.",
      "resp": [
-      "fenêtres",
-      "fenetres"
+      "fenêtres"
      ],
      "exp": "Jeter l'argent par les fenêtres = desperdiçar dinheiro."
     },
@@ -1401,8 +1399,7 @@
      "t": "gap",
      "q": "Pendant des années, elle a su tirer son ___ du jeu.",
      "resp": [
-      "épingle",
-      "epingle"
+      "épingle"
      ],
      "exp": "Tirer son épingle du jeu = sair-se bem de uma situação competitiva."
     }
@@ -1475,7 +1472,6 @@
      "q": "Elle lui demandait qu'il se ___ à Lyon avant la fin du mois.",
      "resp": [
       "rendît",
-      "rendit",
       "rende"
      ],
      "exp": "Subjonctif imparfait de se rendre: qu'il se rendît (literário). No francês atual, 'rende' é aceito, mas o texto usa a forma clássica.",
@@ -1686,8 +1682,7 @@
      "t": "gap",
      "q": "Quant à l'argument social, il est plus fragile qu'il n'y ___.",
      "resp": [
-      "paraît",
-      "parait"
+      "paraît"
      ],
      "exp": "Plus… que… + ne explétif: plus fragile qu'il n'y paraît (verbo paraître)."
     },
@@ -2205,8 +2200,7 @@
      "t": "gap",
      "q": "Il ne parvenait pas à ___ les deux sentiments : dire lequel l'emportait.",
      "resp": [
-      "départager",
-      "departager"
+      "départager"
      ],
      "exp": "Départager = decidir entre duas coisas iguais. Aqui: ridicule et heureux ficam em equilíbrio."
     }

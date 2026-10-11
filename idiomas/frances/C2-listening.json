@@ -202,8 +202,7 @@
      "t": "gap",
      "q": "Selon Marc, personne n'a demandé à Léa de tout reprendre à ___.",
      "resp": [
-      "zéro",
-      "zero"
+      "zéro"
      ],
      "exp": "« Reprendre à zéro » = recomeçar do zero. Para Marc, isso já é um bom sinal."
     },
@@ -444,8 +443,7 @@
      "q": "La femme va demander si son entretien peut avoir lieu en ___.",
      "resp": [
       "visioconférence",
-      "visio",
-      "visioconference"
+      "visio"
      ],
      "exp": "Ela quer propor uma entrevista por videochamada: en visioconférence (ou « en visio », mais familiar)."
     },
@@ -688,8 +686,7 @@
      "t": "gap",
      "q": "Paul a reçu un message de sa banque l'informant d'un petit ___.",
      "resp": [
-      "découvert",
-      "decouvert"
+      "découvert"
      ],
      "exp": "« Un découvert » = saldo negativo. Atenção: não é « descoberta ». O detalhe cômico fecha a aventura."
     },
@@ -865,8 +862,7 @@
      "t": "gap",
      "q": "Ouça e complete : Je comprends que le travail vous ait épuisé, mais il ___ mieux valu commencer plus tôt.",
      "resp": [
-      "eût",
-      "eut"
+      "eût"
      ],
      "exp": "« Il eût mieux valu » = il aurait mieux valu (plus-que-parfait du subjonctif, registre soutenu). Circunflexo em « eût ».",
      "ouvir": "Je comprends que le travail vous ait épuisé, mais il eût mieux valu commencer plus tôt."
@@ -1365,8 +1361,7 @@
      "q": "Quand on dit « ils sont fous, ces Romains », on ne parle pas de l'___.",
      "resp": [
       "Antiquité",
-      "antiquité",
-      "antiquite"
+      "antiquité"
      ],
      "exp": "A frase de Obélix serve para qualquer situação absurda atual, não para a Roma antiga."
     },
@@ -1953,8 +1948,7 @@
      "t": "gap",
      "q": "Ouça e complete : Quand près d'un électeur sur deux reste chez lui, la ___ s'affaiblit.",
      "resp": [
-      "légitimité",
-      "legitimite"
+      "légitimité"
      ],
      "exp": "« Légitimité » = legitimidade. O argumento: um eleito com pouca participação representa menos o povo.",
      "ouvir": "Quand près d'un électeur sur deux reste chez lui, la légitimité s'affaiblit."
@@ -2010,7 +2004,7 @@
      "q": "Responda à pergunta em francês, em voz alta.",
      "frase": "Êtes-vous pour ou contre le vote obligatoire ? Donnez un argument et répondez à une objection.",
      "modelo": "Je suis pour, car l'abstention affaiblit la démocratie. Certes, voter est un droit, mais on accepte d'autres obligations pour l'intérêt commun.",
-     "min": 15,
+     "min": 14,
      "chave": [
       "pour",
       "contre",
@@ -2220,8 +2214,7 @@
      "t": "gap",
      "q": "Mme Roche est contre la généralisation ___.",
      "resp": [
-      "hâtive",
-      "hative"
+      "hâtive"
      ],
      "exp": "« Hâtive » concorda com « généralisation » (feminino). Significa precipitada, apressada."
     },
@@ -2878,8 +2871,7 @@
      "t": "gap",
      "q": "Je soutiendrais les deux premiers, ___ que les recettes servent vraiment à entretenir les lieux.",
      "resp": [
-      "à condition",
-      "a condition"
+      "à condition"
      ],
      "exp": "« À condition que + subjonctif » = desde que. O hoteleiro aceita as medidas sob essa condição."
     },
@@ -3047,8 +3039,7 @@
      "t": "gap",
      "q": "Ouça e complete : Les rendre, ce n'est pas faire preuve de générosité, c'est cesser de ___ ce qui ne nous appartient pas.",
      "resp": [
-      "détenir",
-      "detenir"
+      "détenir"
      ],
      "exp": "« Détenir » = possuir, ter em seu poder. Não confundir com « retenir » (reter) nem « contenir » (conter).",
      "ouvir": "Les rendre, ce n'est pas faire preuve de générosité, c'est cesser de détenir ce qui ne nous appartient pas."
@@ -3104,7 +3095,7 @@
      "q": "Faça o compte rendu em francês, em voz alta: apresente a problemática e a posição de cada convidado.",
      "frase": "Faites un compte rendu oral de ce débat : présentez la problématique et la position de chaque invité.",
      "modelo": "Le document porte sur la restitution d'œuvres pillées. La première invitée estime qu'il s'agit d'un rattrapage. En revanche, le conservateur comprend l'argument, mais craint pour les collections. Ils s'accordent sur les prêts réciproques.",
-     "min": 25,
+     "min": 23,
      "chave": [
       "restitution",
       "œuvres",
@@ -3133,8 +3124,7 @@
      "t": "gap",
      "q": "Pour Mme Sow, la restitution soulage, mais ne ___ pas.",
      "resp": [
-      "répare",
-      "repare"
+      "répare"
      ],
      "exp": "« Soulager » (aliviar) vs « réparer » (reparar): a restituição alivia, mas não repara o passado."
     }
@@ -3299,8 +3289,7 @@
      "t": "gap",
      "q": "Ouça e complete : Le modèle ne comprend pas, il ___ quel mot a le plus de chances de suivre le précédent.",
      "resp": [
-      "prédit",
-      "predit"
+      "prédit"
      ],
      "exp": "« Prédire » no présent: il prédit. O pesquisador explica que o modelo calcula probabilidades, não entende.",
      "ouvir": "Il ne comprend pas, il prédit quel mot a le plus de chances de suivre le précédent."

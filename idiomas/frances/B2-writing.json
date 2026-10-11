@@ -158,8 +158,7 @@
      "t": "gap",
      "q": "Il y a deux manières de construire le développement : le plan dialectique et le plan ___ (un thème par paragraphe).",
      "resp": [
-      "thématique",
-      "thematique"
+      "thématique"
      ],
      "exp": "Plano thématique: aspectos diferentes (économique, social, écologique). Escreve-se « thématique » com acento no é."
     }
@@ -286,8 +285,7 @@
      "q": "Dans un premier temps, nous analyserons les causes ; dans un ___ temps, les conséquences.",
      "resp": [
       "second",
-      "deuxième",
-      "deuxieme"
+      "deuxième"
      ],
      "exp": "« Dans un premier temps… dans un second temps » é um par clássico. Aceita-se « second » ou « deuxième »."
     },
@@ -1130,7 +1128,7 @@
      "q": "Você liga para o serviço ao cliente. Em 2 frases, explique o problema e peça uma solução.",
      "frase": "Que s'est-il passé avec votre commande et que demandez-vous ?",
      "modelo": "Mon colis est arrivé avec une semaine de retard et l'appareil était cassé. Je vous demande de me rembourser ou de m'envoyer un produit neuf.",
-     "min": 18,
+     "min": 17,
      "chave": [
       "retard",
       "cassé",
@@ -1295,7 +1293,7 @@
      "q": "Proponha uma melhoria para seu bairro em 2 frases.",
      "frase": "Quelle amélioration proposeriez-vous au maire pour votre quartier ?",
      "modelo": "Je proposerais de créer une piste cyclable dans notre quartier. Elle permettrait de réduire la circulation et d'améliorer la sécurité des enfants.",
-     "min": 16,
+     "min": 15,
      "chave": [
       "proposerais",
       "propose",
@@ -1623,7 +1621,7 @@
      "q": "Fale em 2 frases sobre um arrependimento nos estudos.",
      "frase": "Si vous aviez pu changer une décision dans vos études, laquelle auriez-vous changée ?",
      "modelo": "Si j'avais pu changer une décision, j'aurais commencé à apprendre le français plus tôt. Je pense que j'aurais déjà passé le DELF.",
-     "min": 16,
+     "min": 15,
      "chave": [
       "j'aurais",
       "si j'avais",
@@ -1809,8 +1807,7 @@
      "t": "gap",
      "q": "Comme il a échoué, il a ressenti une grande déception. → Son ___ lui a causé une grande déception.",
      "resp": [
-      "échec",
-      "echec"
+      "échec"
      ],
      "exp": "Échouer → l'échec (masculino). Atenção ao acento agudo: échec."
     }
@@ -2221,8 +2218,7 @@
      "t": "gap",
      "q": "Marie et Sophie sont ___ en retard à la réunion.",
      "resp": [
-      "arrivées",
-      "arrivees"
+      "arrivées"
      ],
      "exp": "Com o auxiliar être, o particípio concorda com o sujeito: duas mulheres → arrivées.",
      "dica": "ARRIVER, participe passé"
@@ -2386,8 +2382,7 @@
      "t": "gap",
      "q": "Je termine ma lettre au maire par : « Veuillez ___, Monsieur le Maire, l'expression de mes salutations respectueuses. »",
      "resp": [
-      "agréer",
-      "agreer"
+      "agréer"
      ],
      "exp": "Fórmula final fixa: « Veuillez agréer… l'expression de mes salutations… ». Verbo agréer no imperativo de politesse."
     },

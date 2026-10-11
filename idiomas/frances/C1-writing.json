@@ -305,7 +305,7 @@
      "q": "Diga a frase com outras palavras, em francês (uma frase).",
      "frase": "Comment reformuleriez-vous « les internautes partagent sans vérifier » ?",
      "modelo": "Les utilisateurs relaient les nouvelles sans en contrôler l'origine.",
-     "min": 7,
+     "min": 6,
      "chave": [
       "utilisateurs",
       "relaient",
@@ -1634,7 +1634,7 @@
      "q": "Responda em francês, em duas frases.",
      "frase": "Annoncez en deux phrases un plan dialectique sur la gratuité des musées.",
      "modelo": "Je montrerai d'abord les avantages de la gratuité, puis ses limites, avant de proposer une gratuité ciblée.",
-     "min": 12,
+     "min": 11,
      "chave": [
       "d'abord",
       "puis",
@@ -1797,7 +1797,7 @@
      "q": "Responda em francês, em duas frases formais.",
      "frase": "Dans un registre soutenu, dites si l'école doit enseigner les langues régionales.",
      "modelo": "À mon sens, l'école doit proposer ces langues en option. Il est souhaitable que les régions complètent cette offre.",
-     "min": 14,
+     "min": 13,
      "chave": [
       "école",
       "option",
@@ -1964,7 +1964,7 @@
      "q": "Responda em francês, em uma frase, com um conector de oposição.",
      "frase": "Reliez avec un connecteur : « L'avion pollue » / « Il est indispensable aux îles ».",
      "modelo": "L'avion pollue beaucoup ; cependant, il reste indispensable aux habitants des îles.",
-     "min": 8,
+     "min": 7,
      "chave": [
       "cependant",
       "pourtant",
@@ -2129,7 +2129,7 @@
      "q": "Responda em francês, com « certes » e um conector de oposição.",
      "frase": "Nuancez en deux phrases : l'obligation a des avantages, mais…",
      "modelo": "Certes, l'obligation permettrait de mélanger les milieux sociaux. Cependant, un engagement imposé risque de perdre son sens.",
-     "min": 14,
+     "min": 11,
      "chave": [
       "certes",
       "cependant",

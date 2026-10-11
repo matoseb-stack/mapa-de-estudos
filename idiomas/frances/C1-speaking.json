@@ -158,7 +158,7 @@
      "q": "Explique em 2 ou 3 frases por que o plano anunciado ajuda o júri e você.",
      "frase": "Pourquoi est-il important d'annoncer son plan au jury dès l'introduction ?",
      "modelo": "Annoncer son plan permet au jury de suivre mon raisonnement et montre que mon exposé est structuré. Cela m'aide aussi à ne pas me perdre pendant que je parle.",
-     "min": 22,
+     "min": 20,
      "chave": [
       "plan",
       "structur",
@@ -298,7 +298,7 @@
      "q": "Em 3 frases: o tema, a tensão e a pergunta central. Cerca de 30 segundos.",
      "frase": "Dégagez la problématique d'un dossier sur l'intelligence artificielle à l'école.",
      "modelo": "Les documents traitent de l'intelligence artificielle à l'école. Ils révèlent une tension entre efficacité et esprit critique. Dans quelle mesure l'école peut-elle intégrer ces outils sans affaiblir la réflexion des élèves ?",
-     "min": 25,
+     "min": 21,
      "chave": [
       "dans quelle mesure",
       "tension",
@@ -326,7 +326,7 @@
      "q": "Responda em 2 ou 3 frases, com um conector de causa.",
      "frase": "Pourquoi une simple liste d'avantages et d'inconvénients ne suffit-elle pas à construire un bon exposé ?",
      "modelo": "Une liste d'avantages et d'inconvénients reste descriptive : elle ne répond à aucune question. Un bon exposé doit analyser une tension et défendre une réponse nuancée, c'est pourquoi la problématique est essentielle.",
-     "min": 25,
+     "min": 21,
      "chave": [
       "problématique",
       "tension",
@@ -465,7 +465,7 @@
      "q": "Use um conector de ordem em cada parte. Fale por uns 30 segundos.",
      "frase": "Annoncez en trois phrases le plan d'un exposé sur la mobilité urbaine.",
      "modelo": "Dans un premier temps, j'examinerai pourquoi la voiture reste indispensable pour beaucoup de citadins. J'en viendrai ensuite aux alternatives comme les transports en commun et le vélo. Enfin, je m'interrogerai sur le rôle des pouvoirs publics.",
-     "min": 28,
+     "min": 25,
      "chave": [
       "dans un premier temps",
       "d'abord",
@@ -493,7 +493,7 @@
      "q": "Amorce + dossier + problématique + plano. Fale cerca de 60 segundos.",
      "frase": "Prononcez l'introduction complète d'un exposé sur la place de la voiture en ville.",
      "modelo": "Chaque jour, des millions de citadins prennent leur voiture. Le dossier que j'ai étudié comporte un rapport sur la pollution, une interview d'un maire et un sondage. Il s'agit de savoir comment concilier mobilité et santé publique. J'examinerai d'abord l'utilité de la voiture, puis les alternatives possibles.",
-     "min": 45,
+     "min": 32,
      "chave": [
       "pollution",
       "voiture",
@@ -632,7 +632,7 @@
      "q": "Use connectores como d'une part/d'autre part, toutefois, ainsi. Fale uns 40 segundos.",
      "frase": "Développez la première partie d'un exposé sur la consommation de viande en utilisant au moins trois connecteurs.",
      "modelo": "D'une part, la consommation de viande baisse chez les jeunes. D'autre part, l'offre végétarienne se développe dans les supermarchés. Toutefois, les éleveurs rappellent que la viande reste une tradition. Ainsi, le changement est réel mais inégal.",
-     "min": 35,
+     "min": 25,
      "chave": [
       "d'une part",
       "toutefois",
@@ -661,7 +661,7 @@
      "q": "Dê 2 medidas, com conectores de adição e oposição. Cerca de 40 segundos.",
      "frase": "Quelles mesures le gouvernement devrait-il prendre pour encourager une alimentation plus durable ?",
      "modelo": "D'abord, il pourrait taxer les produits les plus polluants. En outre, il devrait soutenir les agriculteurs qui changent de pratiques. Toutefois, ces mesures doivent rester accessibles aux familles modestes, par conséquent il faut les accompagner d'aides.",
-     "min": 35,
+     "min": 25,
      "chave": [
       "d'abord",
       "en outre",
@@ -801,7 +801,7 @@
      "q": "Mostre um ponto de convergência e um de divergência. Cerca de 40 segundos.",
      "frase": "Comparez en quelques phrases un article alarmiste et l'interview d'un professionnel du tourisme.",
      "modelo": "Le journaliste dénonce les excès du tourisme, alors que le professionnel adopte un ton plus nuancé. Ils s'accordent sur le constat, mais diffèrent sur les solutions : limiter les arrivées d'un côté, mieux les répartir de l'autre.",
-     "min": 35,
+     "min": 25,
      "chave": [
       "s'accord",
       "diverg",
@@ -829,7 +829,7 @@
      "q": "Use um conector de oposição ou de causa. Cerca de 30 segundos.",
      "frase": "Pourquoi vaut-il mieux croiser les documents plutôt que les résumer un par un ?",
      "modelo": "Croiser les documents permet de faire apparaître des points communs et des oppositions. Un résumé successif reste descriptif, tandis qu'une comparaison construit un véritable raisonnement.",
-     "min": 25,
+     "min": 17,
      "chave": [
       "croiser",
       "comparer",
@@ -970,7 +970,7 @@
      "q": "Use certes... mais e uma opinião. Cerca de 40 segundos.",
      "frase": "Donnez votre point de vue nuancé sur la suppression des notes à l'école.",
      "modelo": "Certes, les notes donnent des repères, mais elles peuvent aussi décourager. À mon sens, il faudrait les compléter par des appréciations détaillées. Cependant, il n'est pas certain que leur suppression totale soit la meilleure solution.",
-     "min": 35,
+     "min": 24,
      "chave": [
       "certes",
       "mais",
@@ -999,7 +999,7 @@
      "q": "Opine com concessão e uma ressalva. Cerca de 40 segundos.",
      "frase": "Selon vous, l'école doit-elle développer l'esprit de compétition ?",
      "modelo": "Pour ma part, la compétition peut stimuler les élèves, mais je ne pense pas qu'elle doive devenir l'objectif principal. Bien qu'elle prépare au monde du travail, elle risque aussi de creuser les inégalités.",
-     "min": 35,
+     "min": 23,
      "chave": [
       "compétition",
       "pour ma part",
@@ -1140,7 +1140,7 @@
      "q": "Use o condicional passado pelo menos 2 vezes. Cerca de 40 segundos.",
      "frase": "Qu'aurait-il fallu faire il y a vingt ans pour réussir la transition énergétique ?",
      "modelo": "Il aurait fallu investir massivement dans les énergies renouvelables. Nous aurions dû aussi informer les citoyens et soutenir la recherche. Si l'on avait agi plus tôt, nous aurions aujourd'hui moins de dépendance.",
-     "min": 35,
+     "min": 22,
      "chave": [
       "aurait",
       "aurions",
@@ -1168,7 +1168,7 @@
      "q": "Dê um regret, uma causa e uma consequência. Cerca de 40 segundos.",
      "frase": "Quelle occasion manquée de notre société évoqueriez-vous à propos de l'environnement ?",
      "modelo": "Je pense que nous aurions dû protéger plus tôt les forêts. Si nous l'avions fait, nous aurions évité une grande partie des incendies. Aujourd'hui, nous en payons le prix.",
-     "min": 35,
+     "min": 20,
      "chave": [
       "aurions",
       "aurait",
@@ -1254,8 +1254,7 @@
      "t": "gap",
      "q": "___ titre d'exemple, le document 3 cite une étude.",
      "resp": [
-      "à",
-      "A"
+      "à"
      ],
      "exp": "À titre d'exemple = a título de exemplo."
     },
@@ -1311,7 +1310,7 @@
      "q": "Invente um número plausível, cite o documento e interprete-o. Cerca de 40 segundos.",
      "frase": "Illustrez par un exemple chiffré l'idée que les jeunes lisent moins qu'avant.",
      "modelo": "À titre d'exemple, selon le tableau du document 2, seuls trois jeunes sur dix lisent un livre par mois. Ce chiffre s'explique par la concurrence des écrans. Il suggère que la lecture devient un loisir parmi d'autres.",
-     "min": 35,
+     "min": 25,
      "chave": [
       "à titre d'exemple",
       "selon",
@@ -1341,7 +1340,7 @@
      "q": "Responda com 2 razões. Cerca de 30 segundos.",
      "frase": "Pourquoi les chiffres et les exemples renforcent-ils un exposé ?",
      "modelo": "Les chiffres et les exemples rendent un exposé plus concret et plus crédible. Ils montrent aussi que le candidat a réellement analysé les documents plutôt que de se contenter d'opinions.",
-     "min": 25,
+     "min": 21,
      "chave": [
       "concret",
       "crédible",
@@ -1487,7 +1486,7 @@
      "q": "Resuma a parte 1 em uma frase, depois anuncie a parte 2. Cerca de 30 segundos.",
      "frase": "Faites la transition entre la première partie (les causes du stress au travail) et la deuxième (les solutions).",
      "modelo": "Après avoir examiné les causes du stress au travail, notamment la surcharge de courriels, j'en viens maintenant aux solutions. Cela m'amène à m'interroger sur le rôle de la loi et des entreprises.",
-     "min": 28,
+     "min": 22,
      "chave": [
       "après avoir",
       "j'en viens",
@@ -1516,7 +1515,7 @@
      "q": "Dê sua opinião e use uma transição interna. Cerca de 40 segundos.",
      "frase": "Que pensez-vous du droit à la déconnexion ?",
      "modelo": "À mon sens, le droit à la déconnexion est nécessaire pour protéger la santé des salariés. Après avoir constaté les abus, il convient de les encadrer. Cela dit, la règle doit rester souple pour s'adapter aux métiers.",
-     "min": 35,
+     "min": 25,
      "chave": [
       "déconnexion",
       "santé",
@@ -1658,7 +1657,7 @@
      "q": "Faça bilan, resposta e abertura. Cerca de 40 segundos.",
      "frase": "Formulez la conclusion d'un exposé sur le vieillissement de la population.",
      "modelo": "Pour conclure, le vieillissement est un défi autant qu'un progrès. En définitive, il faut repenser le travail, la santé et le logement. Au-delà de ce dossier, on peut se demander comment valoriser la place des aînés dans la société.",
-     "min": 35,
+     "min": 27,
      "chave": [
       "pour conclure",
       "en définitive",
@@ -1687,7 +1686,7 @@
      "q": "Explique em 2 ou 3 frases. Cerca de 30 segundos.",
      "frase": "Comment terminer un exposé pour inviter le jury au débat sans paraître hésitant ?",
      "modelo": "Il faut terminer par une phrase d'ouverture ferme, par exemple une question qui prolonge la réflexion. Ensuite, je remercie le jury et je me tiens à sa disposition, sans excuses ni hésitations.",
-     "min": 25,
+     "min": 22,
      "chave": [
       "ouverture",
       "remerci",
@@ -1831,7 +1830,7 @@
      "q": "Reformule, reconheça o ponto e responda. Cerca de 40 segundos.",
      "frase": "Le jury objecte : « Vous dites que la technologie est la solution, mais n'est-elle pas aussi le problème ? »",
      "modelo": "Si je vous suis bien, vous soulignez que la technologie crée aussi des difficultés. Vous avez raison, elle peut aggraver les inégalités. Cependant, je pense qu'elle reste un outil : tout dépend de l'usage que l'on en fait.",
-     "min": 35,
+     "min": 25,
      "chave": [
       "si je vous suis bien",
       "vous avez raison",
@@ -1860,7 +1859,7 @@
      "q": "Responda com subjuntivo e um exemplo. Cerca de 40 segundos.",
      "frase": "Pensez-vous que la mondialisation ait appauvri les cultures locales ?",
      "modelo": "Je ne pense pas qu'elle les ait appauvries : certaines traditions ont gagné en visibilité grâce aux échanges. Toutefois, les langues minoritaires sont plus fragiles. Je dirais donc qu'elle est à la fois un risque et une chance.",
-     "min": 35,
+     "min": 25,
      "chave": [
       "mondialisation",
       "cultures",
@@ -2002,7 +2001,7 @@
      "q": "Conceda e refute com exemplo. Cerca de 40 segundos.",
      "frase": "Le jury objecte : « Votre position me paraît très idéaliste. »",
      "modelo": "Je vous accorde ce point, certaines mesures semblent ambitieuses. Il n'en reste pas moins que plusieurs villes ont déjà réussi à les appliquer. Je ne partage donc pas tout à fait votre analyse.",
-     "min": 35,
+     "min": 23,
      "chave": [
       "je vous accorde",
       "il n'en reste pas moins",
@@ -2030,7 +2029,7 @@
      "q": "Equilibre concessão e opinião. Cerca de 40 segundos.",
      "frase": "Ne pensez-vous pas que l'on exagère les dangers des réseaux sociaux ?",
      "modelo": "Certes, certains discours sont alarmistes, mais je ne crois pas qu'on exagère : les études montrent des effets réels sur le sommeil et l'attention. Quand bien même ces effets seraient moindres, il faudrait protéger les plus jeunes.",
-     "min": 35,
+     "min": 25,
      "chave": [
       "certes",
       "mais",
@@ -2174,7 +2173,7 @@
      "q": "Troque o registro familiar por soutenu. Cerca de 30 segundos.",
      "frase": "Reformulez en langage soutenu : « Cette mesure est nulle, ça sert à rien. »",
      "modelo": "Cette mesure me paraît dénuée d'efficacité, voire contre-productive. Elle ne répond pas à l'objectif annoncé.",
-     "min": 20,
+     "min": 10,
      "chave": [
       "dénué",
       "efficacité",
@@ -2203,7 +2202,7 @@
      "q": "Fale devagar e use a pausa que você descreve. Cerca de 30 segundos.",
      "frase": "Expliquez en quelques phrases pourquoi l'art de la pause est important dans un exposé.",
      "modelo": "La pause permet au jury de suivre mon raisonnement et à moi de reprendre mon souffle. Elle donne du poids aux idées importantes et évite les « euh » qui fatiguent l'auditoire.",
-     "min": 25,
+     "min": 21,
      "chave": [
       "pause",
       "jury",
@@ -2347,7 +2346,7 @@
      "q": "Responda com hipótese (si + imparfait) e justifique. Cerca de 40 segundos.",
      "frase": "Le jury demande : « Si vous étiez ministre, rendriez-vous le vote obligatoire ? »",
      "modelo": "Si j'étais ministre, je ne rendrais pas le vote obligatoire, car je crois que la participation ne se décrète pas. Je privilégierais plutôt l'éducation civique pour que les citoyens votent par conviction.",
-     "min": 35,
+     "min": 22,
      "chave": [
       "si j'étais",
       "je ne rendrais",
@@ -2376,7 +2375,7 @@
      "q": "Escolha um ponto, justifique e relacione ao tema. Cerca de 30 segundos.",
      "frase": "Qu'est-ce qui vous a le plus surpris dans ce dossier ?",
      "modelo": "Ce qui m'a le plus surpris, c'est l'écart entre les taux de participation de pays proches. Cela montre que les raisons du vote ne sont pas seulement légales, mais aussi culturelles.",
-     "min": 25,
+     "min": 21,
      "chave": [
       "surpris",
       "écart",
@@ -2520,7 +2519,7 @@
      "q": "Amorce, dossiê, problématique e plano. Cerca de 60 segundos.",
      "frase": "Présentez l'introduction complète de votre exposé sur le sport professionnel et l'argent.",
      "modelo": "Le sport professionnel brasse aujourd'hui des sommes considérables. Le dossier que j'ai étudié comporte un article, un graphique et une tribune. Cela nous amène à nous demander dans quelle mesure l'argent transforme le sport sans en trahir l'esprit. J'examinerai d'abord les causes de cette inflation, puis ses effets sur les valeurs.",
-     "min": 45,
+     "min": 35,
      "chave": [
       "dossier",
       "problématique",
@@ -2557,7 +2556,7 @@
      "q": "Conceda, nuance e responda com subjuntivo. Cerca de 50 segundos.",
      "frase": "Le jury vous demande : « Pensez-vous que l'on doive limiter les salaires dans le sport professionnel ? »",
      "modelo": "Je me permets de nuancer la question. Certes, il est possible que des plafonds corrigent certains excès, mais je ne suis pas sûr qu'on puisse les appliquer partout. Bien que cette idée soit séduisante, elle suppose une règle commune à plusieurs pays. À mon sens, il vaudrait mieux réguler les droits télévisés.",
-     "min": 40,
+     "min": 36,
      "chave": [
       "je me permets de nuancer",
       "certes",
@@ -2586,7 +2585,7 @@
      "q": "Bilan + resposta + ouverture. Cerca de 40 segundos.",
      "frase": "Concluez votre exposé et ouvrez le débat en deux ou trois phrases.",
      "modelo": "En définitive, l'argent a profondément transformé le sport sans en détruire l'esprit, à condition de le réguler. Au-delà de ce dossier, on peut se demander si les spectateurs sont prêts à soutenir un sport plus équitable. Je vous remercie de votre attention.",
-     "min": 30,
+     "min": 29,
      "chave": [
       "en définitive",
       "au-delà",

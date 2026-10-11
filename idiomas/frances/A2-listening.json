@@ -700,8 +700,7 @@
      "t": "gap",
      "q": "Le café est au premier ___.",
      "resp": [
-      "étage",
-      "etage"
+      "étage"
      ],
      "exp": "Au premier étage = no primeiro andar (o 'primeiro' fica acima do térreo)."
     },
@@ -1079,8 +1078,7 @@
      "t": "gap",
      "q": "Ouça e complete : Votre voiture est ___.",
      "resp": [
-      "prête",
-      "prete"
+      "prête"
      ],
      "exp": "Prête = pronta (feminino, porque 'la voiture').",
      "ouvir": "Ici le garage Dupont. Votre voiture est prête."
@@ -1376,8 +1374,7 @@
      "t": "gap",
      "q": "Ouça e complete : Marc va organiser un ___ chez lui.",
      "resp": [
-      "dîner",
-      "diner"
+      "dîner"
      ],
      "exp": "Un dîner = um jantar.",
      "ouvir": "Je vais organiser un dîner chez moi."
@@ -1653,8 +1650,7 @@
      "t": "gap",
      "q": "Ouça e complete : Dans le groupe, il y a une personne ___.",
      "resp": [
-      "végétarienne",
-      "vegetarienne"
+      "végétarienne"
      ],
      "exp": "Végétarienne (feminino, porque 'personne' é feminino), mesmo que seja um homem.",
      "ouvir": "Nous avons une personne végétarienne."
@@ -1852,8 +1848,7 @@
      "t": "gap",
      "q": "Ouça e complete : Le magasin accepte la carte ou les ___.",
      "resp": [
-      "espèces",
-      "especes"
+      "espèces"
      ],
      "exp": "Les espèces = o dinheiro vivo.",
      "ouvir": "Non, seulement la carte ou les espèces."
@@ -2226,8 +2221,7 @@
      "t": "gap",
      "q": "Ouça e complete : En ___, mon amie va chez ses parents.",
      "resp": [
-      "août",
-      "aout"
+      "août"
      ],
      "exp": "Août se pronuncia u (ou ut). É o mês de agosto.",
      "ouvir": "En août, je vais aller chez mes parents à la campagne."
@@ -2415,8 +2409,7 @@
      "t": "gap",
      "q": "Ouça e complete : Le soir, sa cousine est venue ___.",
      "resp": [
-      "dîner",
-      "diner"
+      "dîner"
      ],
      "exp": "Venir + infinitivo: est venue dîner = veio jantar.",
      "ouvir": "Le soir, ma cousine est venue dîner."

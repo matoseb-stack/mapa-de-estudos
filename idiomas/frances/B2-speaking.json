@@ -954,7 +954,7 @@
      "q": "Reaja usando ao menos dois conectores (certes, cependant, par conséquent, en revanche).",
      "frase": "Certains disent que les devoirs à la maison sont inutiles. Réagissez avec au moins deux connecteurs logiques.",
      "modelo": "Certes, les devoirs prennent du temps aux élèves. Cependant, ils permettent de revoir la leçon ; par conséquent, ils aident à mieux mémoriser. En revanche, il ne faut pas en donner trop.",
-     "min": 25,
+     "min": 21,
      "chave": [
       "cependant",
       "certes",
@@ -1275,7 +1275,7 @@
      "q": "Responda com uma hipótese: si + imperfeito, condicional.",
      "frase": "Si vous étiez ministre de l'Éducation, que changeriez-vous ? Répondez avec « si + imparfait + conditionnel ».",
      "modelo": "Si j'étais ministre de l'Éducation, je réduirais le nombre d'élèves par classe, car les professeurs pourraient mieux suivre chacun. Je dirais aussi qu'il faudrait davantage de sport à l'école.",
-     "min": 25,
+     "min": 20,
      "chave": [
       "étais",
       "réduirais",
@@ -1756,7 +1756,7 @@
      "q": "Reformule a pergunta (si je vous comprends bien...) e depois responda.",
      "frase": "L'examinateur : « Selon vous, il faudrait supprimer les notes à l'école ? » Reformulez sa question avant d'y répondre.",
      "modelo": "Si je vous comprends bien, vous me demandez si l'on devrait supprimer complètement les notes. Je dirais plutôt qu'il faudrait les compléter par une évaluation plus détaillée, car une note seule ne montre pas les progrès de l'élève.",
-     "min": 28,
+     "min": 26,
      "chave": [
       "comprends",
       "demandez",
@@ -1913,7 +1913,7 @@
      "q": "Responda com boa articulação e liaisons: les_employeurs, très_important.",
      "frase": "Expliquez en quelques phrases pourquoi, selon vous, il est important d'apprendre une langue étrangère. Faites attention aux liaisons.",
      "modelo": "Il est très important d'apprendre une langue étrangère, parce que cela ouvre des portes sur le plan professionnel. Les employeurs apprécient les candidats qui ont une bonne maîtrise de plusieurs langues, et c'est aussi une ouverture sur d'autres cultures.",
-     "min": 28,
+     "min": 27,
      "chave": [
       "langue",
       "important",
@@ -2072,7 +2072,7 @@
      "q": "Fale do futuro do trabalho usando eh bien, disons que, ou plutôt, comment dire.",
      "frase": "Parlez une trentaine de secondes de l'avenir du travail, en utilisant au moins deux marqueurs d'hésitation utiles ou d'autocorrection.",
      "modelo": "Eh bien, disons que le travail de demain sera plus flexible, ou plutôt plus connecté. Comment dire... les salariés auront davantage de liberté, mais ils devront aussi savoir se déconnecter.",
-     "min": 28,
+     "min": 21,
      "chave": [
       "disons",
       "plutôt",
@@ -2233,7 +2233,7 @@
      "q": "Reconheça um ponto, refute com argumento/exemplo e reafirme sua posição.",
      "frase": "L'examinateur : « Interdire les voitures en ville serait injuste pour les travailleurs. » Défendez votre point de vue.",
      "modelo": "Je vous accorde que certains travailleurs dépendent de leur voiture. Néanmoins, cet argument ne tient pas pour la majorité, puisque des transports en commun fiables existent. Je reste donc convaincu qu'il faut réduire la circulation.",
-     "min": 30,
+     "min": 24,
      "chave": [
       "accorde",
       "néanmoins",
@@ -2334,7 +2334,7 @@
      "q": "Faça a introdução completa: documento, problemática e plano em três partes.",
      "frase": "Présentez le document (nature, source, thème), dégagez la problématique, puis annoncez votre plan.",
      "modelo": "Le document est une tribune parue dans un quotidien, dans laquelle une enseignante s'interroge sur les devoirs à la maison. La question qui se pose est de savoir dans quelle mesure on peut développer l'autonomie sans creuser les inégalités. Dans un premier temps, j'examinerai les limites des devoirs ; ensuite, leurs atouts ; enfin, je proposerai une solution.",
-     "min": 40,
+     "min": 39,
      "chave": [
       "tribune",
       "document",
@@ -2393,7 +2393,7 @@
      "q": "Desenvolva a primeira parte com argumento, exemplo e conector.",
      "frase": "Développez votre première partie : donnez un argument et un exemple concret.",
      "modelo": "D'une part, les devoirs creusent les inégalités, car tous les élèves n'ont pas les mêmes conditions de travail. Par exemple, un élève qui partage une pièce avec trois frères ne peut pas se concentrer. Selon moi, cela explique que certains enfants ne progressent pas autant que les autres.",
-     "min": 35,
+     "min": 33,
      "chave": [
       "inégalités",
       "exemple",
