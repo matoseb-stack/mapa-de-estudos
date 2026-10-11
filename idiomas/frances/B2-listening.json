@@ -1090,7 +1090,7 @@
       "Ils ne font plus confiance aux journalistes"
      ],
      "r": 1,
-     "exp": "Karim: « beaucoup recoupent leurs sources, ce que les adultes font moins souvent qu'on ne le croit ». As opções 3 e 1 invertem ou exageram."
+     "exp": "Karim: « beaucoup recoupent leurs sources, ce que les adultes font moins souvent qu'on ne le croit ». As outras opções exageram (ne lisent plus rien, ne font plus confiance) ou invertem a comparação com os adultos."
     },
     {
      "t": "gap",
@@ -1485,7 +1485,7 @@
       "Pour gagner plus qu'avant"
      ],
      "r": 1,
-     "exp": "Ela começa com o dinheiro, mas se corrige: « ce n'était pas seulement ça »; o solo também estava « fatigué ». A opção 1 é o distrator da primeira frase."
+     "exp": "Ela começa com o dinheiro, mas se corrige: « ce n'était pas seulement ça »; o solo também estava « fatigué ». A opção 0 (« seulement pour des raisons d'argent ») é o distrator da primeira frase."
     },
     {
      "t": "gap",
@@ -1502,7 +1502,7 @@
      "modo": "repetir",
      "q": "Ouça o modelo e repita a frase em voz alta.",
      "frase": "Au début, mes voisins se moquaient un peu de moi.",
-     "exp": "« Se moquer de » = zombar de. Imparfait: se moquaient (o -aient final é mudo, soa /mɔk/). Em « moi », o oi soa /wa/.",
+     "exp": "« Se moquer de » = zombar de. Imparfait: se moquaient (o -ent final é mudo; -aient soa /ɛ/: se mo-KÈ). Em « moi », o oi soa /wa/.",
      "ouvir": "Au début, mes voisins se moquaient un peu de moi."
     },
     {
@@ -1597,7 +1597,7 @@
     "As expressões idiomáticas aparecem em entrevistas informais e o significado literal engana. « Tourner en rond » não é 'girar em círculo' de verdade: é não avançar.",
     "Algumas muito usadas: sauter le pas (decidir-se), mettre de l'argent de côté (guardar dinheiro), ce n'est pas rien (é importante), ça en vaut la peine (vale a pena), se voiler la face (negar a realidade).",
     "Estratégia: se uma expressão estranha aparece, ouça o contexto antes e depois. O que a pessoa conta ao redor revela o sentido.",
-    "Cuidado com o verbo « courir après le temps »: correr contra o relógio, estar sempre atrasado."
+    "Cuidado com a expressão « courir après le temps »: correr contra o relógio, estar sempre atrasado."
    ],
    "vocab": [
     {
@@ -1785,7 +1785,7 @@
     "Num QCM, três opções aparecem no áudio. Só uma responde à pergunta. A armadilha é marcar a que você ouviu primeiro ou mais alto.",
     "Atenção a marcadores de mudança: d'abord / puis / finalement (o que vale é o último), j'avais pensé à... mais (ideia descartada), j'avais hésité... finalement (a escolha está no final).",
     "Uma ideia pode ser mencionada e rejeitada: « J'ai hésité à payer par virement, mais finalement j'ai préféré la carte » → a resposta é a carte.",
-    "Falso cognato: « finalement » = por fim (e não 'finalmente' no sentido de 'enfim chegou'), e « éventuellement » = eventualmente, se for o caso."
+    "Falso cognato: « éventuellement » = se for o caso, talvez (não 'eventualmente' no sentido de 'às vezes'). « Finalement » = no fim das contas: o que vale é a decisão final."
    ],
    "vocab": [
     {
@@ -2170,7 +2170,7 @@
       "reconnaissante",
       "reconnaissant"
      ],
-     "exp": "« Reconnaissant » = grato (não 'reconhecido'). Ela acha que permanecer em sua casa é um direito, e não um favor.",
+     "exp": "« Reconnaissant » = grato, agradecido (em português, 'reconhecido' também tem esse sentido). Ela acha que permanecer em sua casa é um direito, e não um favor.",
      "ouvir": "Qu'on ne nous demande pas d'être reconnaissants d'être encore là."
     }
    ]
@@ -2338,7 +2338,7 @@
       "Une seule nuit courte n'a aucun effet"
      ],
      "r": 1,
-     "exp": "« Ce n'est pas la durée seule qui compte : un sommeil haché est presque aussi nocif qu'un sommeil court ». A opção 4 contradiz: uma noite curta já reduz a concentração."
+     "exp": "« Ce n'est pas la durée seule qui compte : un sommeil haché est presque aussi nocif qu'un sommeil court ». A última opção contradiz o áudio: uma só noite curta já reduz a concentração."
     },
     {
      "t": "gap",
@@ -2346,7 +2346,7 @@
      "resp": [
       "durable"
      ],
-     "exp": "« Durable » = que dura (não 'durável' só de objeto): uma solução de longo prazo. Última recomendação do orador.",
+     "exp": "« Durable » = duradouro, de longo prazo: os somníferos não resolvem o problema de forma duradoura. Última recomendação do orador.",
      "ouvir": "Je précise que les somnifères ne sont pas une solution durable."
     }
    ]
@@ -2778,7 +2778,7 @@
    "objetivo": "Treinar o formato real da prova: uma entrevista longa seguida de QCM sobre ideias, argumentos e atitudes.",
    "foco": "Simulado: interview radio, QCM, nuances, chiffres, inférence",
    "explicacao": [
-    "Formato da prova: cerca de 30 minutos, vários documentos (entrevista, reportagem, conferência), cada um ouvido duas vezes, com QCM. Aqui você faz uma entrevista de ~3 minutos.",
+    "Formato da prova: cerca de 30 minutos, vários documentos (entrevista, reportagem, conferência), cada um ouvido uma ou duas vezes, com QCM. Aqui você faz uma entrevista de ~3 minutos.",
     "Antes de ouvir, leia as perguntas: elas guiam sua atenção. Na primeira escuta, pegue a ideia geral; na segunda, os detalhes.",
     "Gestão do tempo: não fique preso numa pergunta. Marque a melhor opção e passe para a próxima; todas valem o mesmo.",
     "Revise os pontos que mais derrubam: números, auto-correções, ironia, concessões (certes... mais), dedução (inferência) e distratores que aparecem no áudio.",

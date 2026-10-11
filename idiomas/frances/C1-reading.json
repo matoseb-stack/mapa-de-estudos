@@ -133,7 +133,7 @@
       "temps",
       "utile"
      ],
-     "exp": "Modelo: Certes… mais…, Pour autant…. Cuidado: 'actuellement' = atualmente, não 'na verdade'."
+     "exp": "Modelo: Certes… mais…, Pour autant…. Use 'certes' para admitir um ponto antes de relativizá-lo."
     },
     {
      "t": "mc",
@@ -356,7 +356,7 @@
    ],
    "material": {
     "titulo": "Faut-il supprimer les notes ?",
-    "texto": "À peine a-t-on prononcé le mot « notes » dans une salle des professeurs que les visages se ferment. Aussi la proposition de les supprimer à l'école primaire a-t-elle suscité, l'an dernier, un débat d'une rare intensité. Sans doute les partisans de la réforme avaient-ils de bons arguments : la note, soutenaient-ils, réduit un élève à un chiffre, décourage les plus fragiles et encourage les autres à calculer plutôt qu'à comprendre. Encore faut-il se demander ce qui la remplacerait.\n\nCar c'est là que le bât blesse. Les expériences menées dans quelques établissements montrent que l'évaluation par compétences, censée être plus nuancée, l'est rarement dans les faits. Tout au plus remplace-t-elle une échelle de vingt points par une échelle de quatre couleurs, que les parents, loin de s'en désintéresser, décryptent avec la même anxiété. Peut-être ces codes sont-ils plus doux pour l'enfant ; ils ne sont pas pour autant plus clairs pour sa famille. Et rarement a-t-on vu une réforme gagner l'adhésion des enseignants lorsqu'elle leur impose une charge administrative supplémentaire. Ceux-ci déplorent d'ailleurs de passer plus de temps à renseigner des grilles qu'à préparer leurs cours.\n\nIl serait pourtant injuste de ne voir dans ce débat qu'une querelle de chapelles. Jamais l'école n'a eu autant besoin de redéfinir ce qu'elle entend par « réussir ». Longtemps, la réussite a été synonyme de classement : être premier, ou ne pas l'être. Or les enfants qui, aujourd'hui, grandissent dans un monde où l'on mesure tout, leurs pas, leur sommeil, leur popularité en ligne, ne sont guère disposés à voir dans la note un jugement définitif. Tout se passe comme si l'évaluation avait cessé d'être une information pour devenir une identité.\n\nIl ne s'agit donc pas de choisir entre la sévérité et la complaisance, mais de décider ce que l'on veut mesurer, et pour qui. Ainsi, ni la nostalgie de la dictée notée ni l'enthousiasme pour les « parcours personnalisés » ne suffisent à trancher. Ce que l'on peut raisonnablement demander, c'est que toute évaluation, qu'elle soit chiffrée ou non, réponde à trois exigences : qu'elle soit lisible, qu'elle soit utile à l'élève pour progresser, et qu'elle ne le définisse pas. À cette condition seulement l'école pourra se permettre de se passer des notes, ou de les conserver sans honte."
+    "texto": "À peine a-t-on prononcé le mot « notes » dans une salle des professeurs que les visages se ferment. Aussi la proposition de les supprimer à l'école primaire a-t-elle suscité, l'an dernier, un débat d'une rare intensité. Sans doute les partisans de la réforme avaient-ils de bons arguments : la note, soutenaient-ils, réduit un élève à un chiffre, décourage les plus fragiles et encourage les autres à calculer plutôt qu'à comprendre. Encore faut-il se demander ce qui la remplacerait.\n\nCar c'est là que le bât blesse. Les expériences menées dans quelques établissements montrent que l'évaluation par compétences, censée être plus nuancée, l'est rarement dans les faits. Tout au plus remplace-t-elle une échelle de vingt points par une échelle de quatre couleurs, que les parents, loin de s'en désintéresser, décryptent avec la même anxiété. Peut-être ces codes sont-ils plus doux pour l'enfant ; ils ne sont pas pour autant plus clairs pour sa famille. Et rarement a-t-on vu une réforme gagner l'adhésion des enseignants lorsqu'elle leur impose une charge administrative supplémentaire. Ceux-ci déplorent d'ailleurs de passer plus de temps à renseigner des grilles qu'à préparer leurs cours.\n\nIl serait pourtant injuste de ne voir dans ce débat qu'une querelle de chapelles. Jamais l'école n'a-t-elle eu autant besoin de redéfinir ce qu'elle entend par « réussir ». Longtemps, la réussite a été synonyme de classement : être premier, ou ne pas l'être. Or les enfants qui, aujourd'hui, grandissent dans un monde où l'on mesure tout, leurs pas, leur sommeil, leur popularité en ligne, ne sont guère disposés à voir dans la note un jugement définitif. Tout se passe comme si l'évaluation avait cessé d'être une information pour devenir une identité.\n\nIl ne s'agit donc pas de choisir entre la sévérité et la complaisance, mais de décider ce que l'on veut mesurer, et pour qui. Ainsi, ni la nostalgie de la dictée notée ni l'enthousiasme pour les « parcours personnalisés » ne suffisent à trancher. Ce que l'on peut raisonnablement demander, c'est que toute évaluation, qu'elle soit chiffrée ou non, réponde à trois exigences : qu'elle soit lisible, qu'elle soit utile à l'élève pour progresser, et qu'elle ne le définisse pas. À cette condition seulement l'école pourra se permettre de se passer des notes, ou de les conserver sans honte."
    },
    "exercicios": [
     {
@@ -785,7 +785,7 @@
    "explicacao": [
     "Or NÃO significa 'ouro' nem 'portanto': é um conector que introduz um fato novo, quase sempre em oposição ao que veio antes. Personne ne conteste X. Or Y = ninguém contesta X. Mas (acontece que) Y.",
     "Dès lors = por conseguinte, a partir daí. Introduz a consequência de um fato: Dès lors, il n'est pas surprenant que… Não confunda com 'désormais' (de agora em diante).",
-    "En l'occurrence = no caso em questão, nesse caso específico. Não é 'ocasionalmente'. A fortiori = com mais razão (se vale para o mais difícil, vale para o mais fácil).",
+    "En l'occurrence = no caso em questão, nesse caso específico. Não é 'ocasionalmente'. A fortiori = com mais razão (se vale para o caso mais fraco, vale ainda mais para o mais forte: se a tarifa não dissuade um particular, será impotente diante dos grandes irrigantes).",
     "Estratégia de prova: ao ler, sublinhe os conectores. Eles mostram o esqueleto do argumento: concessão, oposição (or, tandis que), consequência (dès lors, aussi + inversão), reforço (a fortiori)."
    ],
    "vocab": [
@@ -1101,7 +1101,7 @@
    "foco": "Faux amis et lexique abstrait : conservateur, actuellement, éventuel, assister, prosaïque, ignorer",
    "explicacao": [
     "Os falsos cognatos mais perigosos do C1: conservateur = curador (também 'conservador' na política), actuellement = atualmente, éventuel = possível (não 'eventual'), assister à = estar presente, ignorer = não saber, prétendre = afirmar, attendre = esperar.",
-    "Prosaïque = banal, terra a terra (não 'prosaico' no sentido literário). Dans la réalité est plus prosaïque = a realidade é menos glamourosa.",
+    "Prosaïque = banal, terra a terra (não 'prosaico' no sentido literário). La réalité est plus prosaïque = a realidade é menos glamourosa.",
     "Campo lexical da cultura: les collections, la réserve, la mise en scène, le prêt, la restitution, la conservation. Grave expressões inteiras: faute de moyens (por falta de recursos), du même coup (ao mesmo tempo), voire (e até).",
     "Voire = e até mesmo, não 'ver' (voir). Faute de + substantivo = por falta de. Ambos aparecem muito em textos de ideias."
    ],
@@ -1455,7 +1455,7 @@
    ],
    "material": {
     "titulo": "Le notaire et la lettre",
-    "texto": "Le notaire de Saint-Aubin ne passait pas pour un homme de lettres, et il eût été surpris qu'on le lui dît. Pourtant, ce soir-là, tandis que la pluie battait les vitres de l'étude, il relut une troisième fois la lettre que le facteur avait déposée à midi. Elle venait d'une cousine qu'il n'avait pas revue depuis trente ans, et dont il avait presque oublié le visage. Elle lui demandait, sans autre préambule, qu'il se rendît à Lyon avant la fin du mois, car il lui restait, disait-elle, une affaire à régler qui ne souffrait pas de retard.\n\nIl ne se décida pas tout de suite. Il craignait que ce voyage ne réveillât des souvenirs qu'il avait mis tant d'années à classer. Quand il fut enfant, la maison de la cousine avait été le lieu de toutes ses libertés : on y mangeait des cerises dans le jardin, on y lisait à voix haute les romans que son père avait interdits. Puis une dispute, dont il ne se rappelait plus l'objet, avait brisé ces habitudes, et chacun s'était replié sur sa vie comme sur une boîte dont on aurait perdu la clé.\n\nLe lendemain, il prit le train. Dans le compartiment, une jeune femme lisait un livre dont il ne put voir le titre, et il se surprit à souhaiter qu'elle le lui montrât. Elle ne le fit pas. Il en conçut un léger dépit, aussitôt tempéré par la pensée que, si elle l'avait fait, il n'aurait su que dire. À Lyon, la pluie avait cessé. Il marcha longtemps le long du fleuve avant de se résoudre à sonner à la porte de la maison, qui lui parut plus petite qu'autrefois, comme si les années l'avaient lentement enfoncée dans la terre.\n\nLa cousine l'attendait dans le salon. Elle était devenue très vieille, mais son regard n'avait pas changé. Elle ne lui parla ni de la dispute ni de l'enfance ; elle lui tendit simplement un paquet de lettres, qu'il avait écrites autrefois et qu'il croyait brûlées. « Je voulais, dit-elle, que tu les relises avant que je n'en dispose. » Il comprit alors que le véritable objet de sa visite n'était pas un acte à signer, mais une absolution qu'il n'avait pas osé demander.\n\nIl repartit le soir même, les lettres sous le bras, sans avoir prononcé le mot qu'il était venu dire. Dans le train, la jeune femme avait disparu. Il pensa qu'il valait mieux, après tout, que certaines choses restassent à demi dites."
+    "texto": "Le notaire de Saint-Aubin ne passait pas pour un homme de lettres, et il eût été surpris qu'on le lui dît. Pourtant, ce soir-là, tandis que la pluie battait les vitres de l'étude, il relut une troisième fois la lettre que le facteur avait déposée à midi. Elle venait d'une cousine qu'il n'avait pas revue depuis trente ans, et dont il avait presque oublié le visage. Elle lui demandait, sans autre préambule, qu'il se rendît à Lyon avant la fin du mois, car il lui restait, disait-elle, une affaire à régler qui ne souffrait pas de retard.\n\nIl ne se décida pas tout de suite. Il craignait que ce voyage ne réveillât des souvenirs qu'il avait mis tant d'années à classer. Lorsqu'il était enfant, la maison de la cousine était le lieu de toutes ses libertés : on y mangeait des cerises dans le jardin, on y lisait à voix haute les romans que son père avait interdits. Puis une dispute, dont il ne se rappelait plus l'objet, avait brisé ces habitudes, et chacun s'était replié sur sa vie comme sur une boîte dont on aurait perdu la clé.\n\nLe lendemain, il prit le train. Dans le compartiment, une jeune femme lisait un livre dont il ne put voir le titre, et il se surprit à souhaiter qu'elle le lui montrât. Elle ne le fit pas. Il en conçut un léger dépit, aussitôt tempéré par la pensée que, si elle l'avait fait, il n'aurait su que dire. À Lyon, la pluie avait cessé. Il marcha longtemps le long du fleuve avant de se résoudre à sonner à la porte de la maison, qui lui parut plus petite qu'autrefois, comme si les années l'avaient lentement enfoncée dans la terre.\n\nLa cousine l'attendait dans le salon. Elle était devenue très vieille, mais son regard n'avait pas changé. Elle ne lui parla ni de la dispute ni de l'enfance ; elle lui tendit simplement un paquet de lettres, qu'il avait écrites autrefois et qu'il croyait brûlées. « Je veux, dit-elle, que tu les relises avant que je n'en dispose. » Il comprit alors que le véritable objet de sa visite n'était pas un acte à signer, mais une absolution qu'il n'avait pas osé demander.\n\nIl repartit le soir même, les lettres sous le bras, sans avoir prononcé le mot qu'il était venu dire. Dans le train, la jeune femme avait disparu. Il pensa qu'il valait mieux, après tout, que certaines choses restassent à demi dites."
    },
    "exercicios": [
     {
@@ -1558,12 +1558,12 @@
     },
     {
      "t": "gap",
-     "q": "Quand il ___ enfant, la maison de la cousine avait été le lieu de toutes ses libertés.",
+     "q": "Le lendemain, il ___ le train.",
      "resp": [
-      "fut"
+      "prit"
      ],
-     "exp": "Passé simple de être: il fut. Marca o momento narrado; 'avait été' vem antes dele.",
-     "dica": "ÊTRE (passé simple)"
+     "exp": "Passé simple de prendre: il prit. É o fato principal da narração (ação pontual); o imparfait e o plus-que-parfait ficam para o pano de fundo.",
+     "dica": "PRENDRE (passé simple)"
     }
    ]
   },
@@ -1576,7 +1576,7 @@
     "Um texto argumentativo do C1 segue um esqueleto: problema → tese → argumentos adversos (concessão) → refutação com fatos → conclusão nuançada. Antes de responder, marque em cada parágrafo qual é sua função.",
     "Marcadores úteis: je voudrais montrer que… (tese), certes / les partisans avancent… (argumentos do outro lado), cependant / il faut pourtant les confronter aux faits (virada), autrement dit (reformulação), nullement (não, de forma alguma).",
     "Plus… qu'il n'y paraît: o 'ne' é explétif. Plus fragile qu'il n'y paraît = mais frágil do que parece. Aparece muito em textos de opinião.",
-    "Cuidado com o falso cognato 'quant à' (= quanto a) vs 'quand' (= quando). Quant à l'argument social = quanto ao argumento social."
+    "Cuidado com a confusão entre quant à (= quanto a) e quand (= quando). Quant à l'argument social = quanto ao argumento social."
    ],
    "vocab": [
     {
@@ -1727,7 +1727,8 @@
       "Nullement",
       "Pas du tout",
       "Absolument pas",
-      "Certainement pas"
+      "Certainement pas",
+      "Aucunement"
      ],
      "exp": "Nullement = de modo algum. Resposta enfática negativa, comum em textos argumentativos."
     }
@@ -1742,7 +1743,7 @@
     "Questões de reformulação pedem a frase que mantém o MESMO sentido e a mesma intenção. Descarte opções que exageram (toujours, jamais), invertem a causa ou trocam a posição do autor.",
     "Equivalências formais: ce qui revient à = o que equivale a ; au profit de = em favor de ; buter sur = esbarrar em ; au bout du compte = no fim das contas ; à condition que + subjuntivo = desde que.",
     "Expressões figuradas: abandonné à son sort = deixado por conta própria, sem acompanhamento ; financer la patience = pagar pelo que exige tempo (professores, turmas pequenas).",
-    "Falso cognato: moins… que: 'moins la présence que la nature' = não tanto a presença, mas a natureza. Moins A que B inverte a ênfase: o ponto principal é B."
+    "Atenção a moins A que B: 'moins la présence que la nature' = não tanto a presença, mas a natureza. A ênfase recai em B, como no texto (moins la présence des devoirs que leur nature)."
    ],
    "vocab": [
     {
@@ -2129,7 +2130,7 @@
     },
     {
      "t": "mc",
-     "q": "Pourquoi la réflexion « quelque chose de spirituel » lui paraît-elle « alarmante » ?",
+     "q": "Pourquoi le fait d'avoir dit « quelque chose de spirituel » lui paraît-il « alarmant » ?",
      "op": [
       "Parce qu'elle est mal comprise de la jeune femme",
       "Parce qu'elle bouleverse l'image qu'il a de lui-même",
@@ -2365,7 +2366,7 @@
       "écologie",
       "déchets"
      ],
-     "exp": "Use revenir plus cher / moins cher. D'habitude = geralmente (não 'habitualmente' ao pé da letra)."
+     "exp": "Use revenir plus cher / moins cher. D'habitude = geralmente, normalmente."
     },
     {
      "t": "mc",
