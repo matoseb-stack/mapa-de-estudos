@@ -7,8 +7,8 @@ TIPOS = {"mc", "gap", "order", "speak"}
 ESCREVER = {"gap", "order"}
 LIM_TEXTO = {"A1": (50, 110), "A2": (90, 170), "B1": (160, 280), "B2": (260, 430), "C1": (350, 600), "C2": (420, 700)}
 LIM_FALAS = {"A1": (50, 130), "A2": (80, 180), "B1": (130, 280), "B2": (200, 400), "C1": (280, 520), "C2": (330, 650)}
-def pal(s): return len(re.findall(r"[A-Za-z'’-]+", s or ""))
-def norm(s): return re.sub(r"[^a-z0-9' ]", "", re.sub(r"\s+", " ", (s or "").lower().replace("’", "'"))).strip()
+def pal(s): return len(re.findall(r"[A-Za-zÀ-ÿœŒæÆ'’-]+", s or ""))
+def norm(s): return re.sub(r"[^a-z0-9à-ÿœæ' -]", "", re.sub(r"\s+", " ", (s or "").lower().replace("’", "'"))).strip()
 erros = []
 def err(m): erros.append(m)
 def main(p):

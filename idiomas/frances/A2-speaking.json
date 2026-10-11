@@ -1,0 +1,2589 @@
+{
+ "nivel": "A2",
+ "skill": "speaking",
+ "exame": "DELF A2",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Se présenter",
+   "objetivo": "Dizer seu nome, idade, nacionalidade e onde mora.",
+   "foco": "Je m'appelle, j'ai … ans, je suis, j'habite à",
+   "explicacao": [
+    "No começo da prova o examinador faz o entretien dirigé e usa « vous » : Comment vous appelez-vous ? Quel âge avez-vous ? Où habitez-vous ?",
+    "Responda com frase completa : Je m'appelle Ana. Je suis brésilienne. J'habite à Recife.",
+    "Em francês a idade usa avoir, não être : J'ai seize ans. (Não diga « Je suis seize ans ».)",
+    "Para soletrar, diga as letras em francês : A-L-V-E-S (a, l, vé, e, esse)."
+   ],
+   "vocab": [
+    {
+     "en": "s'appeler",
+     "pt": "chamar-se"
+    },
+    {
+     "en": "avoir … ans",
+     "pt": "ter … anos"
+    },
+    {
+     "en": "habiter à",
+     "pt": "morar em"
+    },
+    {
+     "en": "venir de",
+     "pt": "vir de"
+    },
+    {
+     "en": "épeler",
+     "pt": "soletrar"
+    },
+    {
+     "en": "le nom de famille",
+     "pt": "sobrenome"
+    },
+    {
+     "en": "enchanté(e)",
+     "pt": "muito prazer"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 1 – Entretien dirigé : Présentez-vous. Dites comment vous vous appelez, votre âge, votre nationalité et où vous habitez.",
+    "segundos": 45,
+    "frases_uteis": [
+     "Je m'appelle …",
+     "J'ai … ans.",
+     "Je suis brésilien(ne).",
+     "J'habite à …",
+     "Enchanté(e)."
+    ],
+    "modelo": "Bonjour, je m'appelle Camila. J'ai seize ans. Je suis brésilienne et j'habite à Curitiba avec ma mère, mon père et mon frère. Enchantée."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "O examinador pergunta : « Comment vous appelez-vous ? » Qual é a melhor resposta ?",
+     "op": [
+      "Je suis appelle Rafael.",
+      "Je m'appelle Rafael.",
+      "Mon nom m'appelle Rafael.",
+      "J'ai Rafael."
+     ],
+     "r": 1,
+     "exp": "Use Je m'appelle + nome."
+    },
+    {
+     "t": "gap",
+     "q": "Je ___ brésilien.",
+     "resp": [
+      "suis"
+     ],
+     "exp": "Nacionalidade usa être : je suis brésilien."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma.",
+     "frase": "Bonjour, je m'appelle Ana et je suis brésilienne.",
+     "exp": "Em « Bonjour » o on é nasal (sem falar o n). Termine com a voz descendo."
+    },
+    {
+     "t": "mc",
+     "q": "« Quel âge avez-vous ? » Qual resposta está correta ?",
+     "op": [
+      "Je suis seize ans.",
+      "J'ai seize ans.",
+      "Je suis seize.",
+      "Je fais seize ans."
+     ],
+     "r": 1,
+     "exp": "A idade usa avoir : J'ai seize ans."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "J'habite",
+      "à",
+      "Recife",
+      "avec",
+      "ma",
+      "mère",
+      "et",
+      "ma",
+      "sœur."
+     ],
+     "resp": "J'habite à Recife avec ma mère et ma sœur.",
+     "exp": "Ordem : sujeito + verbo + lugar + com quem."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga seu nome e de onde você é.",
+     "frase": "Comment vous appelez-vous et d'où venez-vous ?",
+     "modelo": "Je m'appelle Lucas et je viens du Brésil. Je suis de Goiânia.",
+     "min": 6,
+     "chave": [
+      "appelle",
+      "viens",
+      "suis",
+      "Brésil",
+      "brésilien",
+      "brésilienne"
+     ],
+     "exp": "Dê duas informações : o nome e o país ou a cidade."
+    },
+    {
+     "t": "gap",
+     "q": "Je ___ du Brésil.",
+     "resp": [
+      "viens"
+     ],
+     "exp": "Venir : je viens, tu viens, il vient."
+    },
+    {
+     "t": "mc",
+     "q": "O examinador diz : « Pouvez-vous épeler votre nom de famille ? » O que fazer ?",
+     "op": [
+      "Dizer sua idade.",
+      "Dizer as letras uma a uma em francês.",
+      "Dizer seu endereço.",
+      "Responder « oui, merci »."
+     ],
+     "r": 1,
+     "exp": "Épeler = soletrar : diga as letras uma por uma."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga onde mora e com quem.",
+     "frase": "Où habitez-vous ? Avec qui ?",
+     "modelo": "J'habite à Recife avec ma mère et ma sœur.",
+     "min": 6,
+     "chave": [
+      "habite",
+      "avec",
+      "mère",
+      "père",
+      "sœur",
+      "frère",
+      "famille",
+      "seul",
+      "seule"
+     ],
+     "exp": "Use J'habite à … avec …"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "La famille et les amis",
+   "objetivo": "Falar da sua família e de um amigo.",
+   "foco": "Mon/ma/mes, il/elle est, avoir + descrição",
+   "explicacao": [
+    "Perguntas comuns : Parlez-moi de votre famille. Avez-vous des frères et sœurs ? Qui est votre meilleur(e) ami(e) ?",
+    "Os possessivos concordam com a coisa possuída : mon père, ma mère, mes parents. Antes de vogal feminina use mon : mon amie.",
+    "Para descrever : Il est grand. Elle a les cheveux longs. Il s'appelle Paul et il a vingt ans.",
+    "Depois de negação, des e un viram de : Je n'ai pas de frère."
+   ],
+   "vocab": [
+    {
+     "en": "un frère / une sœur",
+     "pt": "irmão / irmã"
+    },
+    {
+     "en": "les parents",
+     "pt": "os pais (e parentes)"
+    },
+    {
+     "en": "les grands-parents",
+     "pt": "os avós"
+    },
+    {
+     "en": "un(e) ami(e)",
+     "pt": "amigo(a)"
+    },
+    {
+     "en": "le/la meilleur(e) ami(e)",
+     "pt": "melhor amigo(a)"
+    },
+    {
+     "en": "les cheveux",
+     "pt": "o cabelo"
+    },
+    {
+     "en": "sympa",
+     "pt": "simpático, legal"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 1 – Entretien dirigé : Parlez de votre famille. Avez-vous des frères et sœurs ? Parlez de votre meilleur ami.",
+    "segundos": 50,
+    "frases_uteis": [
+     "Dans ma famille, il y a …",
+     "J'ai un frère / une sœur.",
+     "Je n'ai pas de frère.",
+     "Mon meilleur ami s'appelle …",
+     "Il est très sympa."
+    ],
+    "modelo": "Dans ma famille, nous sommes quatre : mes parents, ma sœur et moi. Ma sœur s'appelle Julia, elle a douze ans. Mon meilleur ami s'appelle Pedro. Il est grand, il a les cheveux courts et il est très sympa."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "« Avez-vous des frères et sœurs ? » Qual é a melhor resposta ?",
+     "op": [
+      "Oui, j'ai un frère et une sœur.",
+      "Oui, je suis un frère.",
+      "Oui, mon frère ai.",
+      "Non, j'ai pas frère sœur."
+     ],
+     "r": 0,
+     "exp": "Avoir + irmãos : j'ai un frère et une sœur."
+    },
+    {
+     "t": "gap",
+     "q": "Voici ___ mère, elle s'appelle Marta.",
+     "resp": [
+      "ma"
+     ],
+     "exp": "Mère é feminino : ma mère."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "Dans ma famille, il y a mes parents, mon frère et moi.",
+     "exp": "Em « mon frère » o on é nasal : não pronuncie o n. Fale devagar e termine descendo a voz."
+    },
+    {
+     "t": "mc",
+     "q": "Qual frase está correta ?",
+     "op": [
+      "Je n'ai pas des frères.",
+      "Je n'ai pas de frères.",
+      "Je n'ai pas un frère.",
+      "Je ne suis pas de frères."
+     ],
+     "r": 1,
+     "exp": "Após negação, des vira de : pas de frères."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Mon",
+      "meilleur",
+      "ami",
+      "s'appelle",
+      "Pedro",
+      "et",
+      "il",
+      "est",
+      "très",
+      "sympa."
+     ],
+     "resp": "Mon meilleur ami s'appelle Pedro et il est très sympa.",
+     "exp": "Ordem : sujeito + verbo + descrição."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale da sua família em poucas frases.",
+     "frase": "Parlez-moi de votre famille.",
+     "modelo": "Dans ma famille, il y a mon père, ma mère et ma sœur. J'ai aussi un chien.",
+     "min": 7,
+     "chave": [
+      "famille",
+      "père",
+      "mère",
+      "sœur",
+      "frère",
+      "parents",
+      "il y a"
+     ],
+     "exp": "Use Dans ma famille, il y a …"
+    },
+    {
+     "t": "gap",
+     "q": "Ma sœur ___ les cheveux longs.",
+     "resp": [
+      "a"
+     ],
+     "exp": "Descrever cabelo usa avoir : elle a les cheveux longs."
+    },
+    {
+     "t": "mc",
+     "q": "Para falar de um amigo que você adora, qual frase é mais natural ?",
+     "op": [
+      "Il est mon ami très bon.",
+      "C'est mon meilleur ami, il est très gentil.",
+      "Il a mon ami gentil.",
+      "Ami mien est gentil."
+     ],
+     "r": 1,
+     "exp": "C'est mon meilleur ami + descrição com il est."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Descreva um amigo seu.",
+     "frase": "Comment est votre meilleur ami ou votre meilleure amie ?",
+     "modelo": "Mon meilleur ami s'appelle Paulo. Il est grand et il est très drôle.",
+     "min": 7,
+     "chave": [
+      "ami",
+      "amie",
+      "grand",
+      "grande",
+      "gentil",
+      "gentille",
+      "drôle",
+      "sympa",
+      "il est",
+      "elle est"
+     ],
+     "exp": "Nome + duas características com il est / elle est."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Ma journée type",
+   "objetivo": "Contar a rotina de um dia comum.",
+   "foco": "Verbes pronominaux, heures, le matin / l'après-midi",
+   "explicacao": [
+    "No monologue suivi você pode falar da sua rotina : Le matin, je me lève à sept heures.",
+    "Verbos pronominais levam me/te/se : je me lève, tu te couches, il se douche.",
+    "Horas : Il est sept heures et demie. Je pars à huit heures moins le quart.",
+    "Conectores simples ajudam : d'abord, ensuite, après, puis, enfin."
+   ],
+   "vocab": [
+    {
+     "en": "se lever",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "se coucher",
+     "pt": "deitar-se"
+    },
+    {
+     "en": "prendre le petit-déjeuner",
+     "pt": "tomar café da manhã"
+    },
+    {
+     "en": "aller en cours",
+     "pt": "ir à aula"
+    },
+    {
+     "en": "rentrer",
+     "pt": "voltar para casa"
+    },
+    {
+     "en": "le soir",
+     "pt": "à noite"
+    },
+    {
+     "en": "d'abord / ensuite",
+     "pt": "primeiro / depois"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 2 – Monologue suivi : Parlez de votre journée habituelle : le matin, l'après-midi et le soir.",
+    "segundos": 60,
+    "frases_uteis": [
+     "Le matin, je me lève à …",
+     "D'abord …, ensuite …",
+     "L'après-midi, je vais …",
+     "Le soir, je rentre à …",
+     "Je me couche vers …"
+    ],
+    "modelo": "Le matin, je me lève à six heures et demie. Je prends le petit-déjeuner, puis je vais à l'école en bus. L'après-midi, je fais mes devoirs. Le soir, je dîne avec ma famille et je me couche vers dix heures."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qual frase conta bem a rotina da manhã ?",
+     "op": [
+      "Je lève à sept heures.",
+      "Je me lève à sept heures.",
+      "Je me levez à sept heures.",
+      "Je suis lève à sept heures."
+     ],
+     "r": 1,
+     "exp": "Verbo pronominal : je me lève."
+    },
+    {
+     "t": "gap",
+     "q": "Le matin, je me ___ à sept heures.",
+     "resp": [
+      "lève",
+      "leve"
+     ],
+     "exp": "Se lever : je me lève (com acento grave)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "Le matin, je me lève à sept heures et je prends mon petit-déjeuner.",
+     "exp": "« Sept heures » : o t de sept é falado e o h não. Fale « se-tœr »."
+    },
+    {
+     "t": "mc",
+     "q": "Como dizer « 7h45 » de forma natural ?",
+     "op": [
+      "Sept heures moins le quart.",
+      "Huit heures moins le quart.",
+      "Sept heures et quart.",
+      "Huit heures et demie."
+     ],
+     "r": 1,
+     "exp": "7h45 = huit heures moins le quart."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Après",
+      "les",
+      "cours,",
+      "je",
+      "rentre",
+      "à",
+      "la",
+      "maison",
+      "vers",
+      "cinq",
+      "heures."
+     ],
+     "resp": "Après les cours, je rentre à la maison vers cinq heures.",
+     "exp": "Ordem : tempo + sujeito + verbo + lugar + horário."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga a que horas levanta e o que faz depois.",
+     "frase": "À quelle heure vous levez-vous le matin et que faites-vous ensuite ?",
+     "modelo": "Je me lève à sept heures. Ensuite je prends le petit-déjeuner.",
+     "min": 8,
+     "chave": [
+      "lève",
+      "heures",
+      "ensuite",
+      "après",
+      "petit-déjeuner",
+      "douche"
+     ],
+     "exp": "Use Je me lève à … puis ensuite …"
+    },
+    {
+     "t": "gap",
+     "q": "Le soir, nous ___ à huit heures. (dîner)",
+     "resp": [
+      "dînons",
+      "dinons"
+     ],
+     "exp": "Nous + -ons : nous dînons.",
+     "dica": "dîner"
+    },
+    {
+     "t": "mc",
+     "q": "Qual é o melhor conector para « depois » ao contar a rotina ?",
+     "op": [
+      "Parce que",
+      "Ensuite",
+      "Cependant",
+      "Pourtant"
+     ],
+     "r": 1,
+     "exp": "Ensuite / puis / après organizam a sequência."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte como foi o seu dia, do começo ao fim.",
+     "frase": "Racontez votre journée de la veille.",
+     "modelo": "Le matin je vais au travail. L'après-midi je fais du sport et le soir je regarde un film.",
+     "min": 12,
+     "chave": [
+      "matin",
+      "après-midi",
+      "soir",
+      "ensuite",
+      "puis",
+      "je vais",
+      "je fais"
+     ],
+     "exp": "Use matin, après-midi, soir e conectores."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Mes goûts et mes loisirs",
+   "objetivo": "Dizer o que você gosta e não gosta de fazer.",
+   "foco": "Aimer / adorer / détester + infinitif ; jouer à / faire du",
+   "explicacao": [
+    "O examinador pergunta : Qu'est-ce que vous aimez faire pendant votre temps libre ?",
+    "Aimer, adorer, détester vêm com infinitivo : J'adore écouter de la musique. Je déteste faire la vaisselle.",
+    "Esportes : jouer au foot, faire de la natation, faire du vélo. Instrumentos : jouer de la guitare.",
+    "Dê um motivo com parce que : J'aime le foot parce que c'est amusant."
+   ],
+   "vocab": [
+    {
+     "en": "le temps libre",
+     "pt": "tempo livre"
+    },
+    {
+     "en": "jouer au foot",
+     "pt": "jogar futebol"
+    },
+    {
+     "en": "faire du sport",
+     "pt": "praticar esporte"
+    },
+    {
+     "en": "écouter de la musique",
+     "pt": "ouvir música"
+    },
+    {
+     "en": "regarder des séries",
+     "pt": "assistir a séries"
+    },
+    {
+     "en": "se promener",
+     "pt": "passear"
+    },
+    {
+     "en": "parce que",
+     "pt": "porque"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 1 – Entretien dirigé : Qu'est-ce que vous aimez faire pendant votre temps libre ? Qu'est-ce que vous n'aimez pas ?",
+    "segundos": 55,
+    "frases_uteis": [
+     "J'aime beaucoup …",
+     "J'adore …",
+     "Je n'aime pas …",
+     "Je fais du / de la …",
+     "parce que c'est …"
+    ],
+    "modelo": "Pendant mon temps libre, j'aime écouter de la musique et jouer au foot avec mes amis. Le week-end, je fais aussi du vélo. Je n'aime pas faire la vaisselle parce que c'est ennuyeux."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "« Qu'est-ce que vous aimez faire le week-end ? » Qual resposta é adequada ?",
+     "op": [
+      "J'aime jouer au foot avec mes amis.",
+      "J'aime le week-end foot.",
+      "Je suis aimer foot.",
+      "Il aime foot moi."
+     ],
+     "r": 0,
+     "exp": "J'aime + infinitif."
+    },
+    {
+     "t": "gap",
+     "q": "J'adore ___ de la musique. (écouter)",
+     "resp": [
+      "écouter",
+      "ecouter"
+     ],
+     "exp": "Depois de adorer, use o infinitivo : écouter.",
+     "dica": "écouter"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "J'adore jouer au foot avec mes amis le samedi après-midi.",
+     "exp": "Em « jouer » o j é suave e o ou é um u fechado."
+    },
+    {
+     "t": "mc",
+     "q": "Qual frase está correta ?",
+     "op": [
+      "Je joue du foot.",
+      "Je joue au foot.",
+      "Je joue le foot.",
+      "Je fais au foot."
+     ],
+     "r": 1,
+     "exp": "Esportes com jouer usam à : jouer au foot."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "n'aime",
+      "pas",
+      "faire",
+      "la",
+      "vaisselle",
+      "parce",
+      "que",
+      "c'est",
+      "ennuyeux."
+     ],
+     "resp": "Je n'aime pas faire la vaisselle parce que c'est ennuyeux.",
+     "exp": "Negação com ne … pas em volta do verbo : n'aime pas."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale de dois hobbies seus.",
+     "frase": "Qu'est-ce que vous faites pendant votre temps libre ?",
+     "modelo": "J'aime écouter de la musique et je joue au foot avec mes amis.",
+     "min": 8,
+     "chave": [
+      "aime",
+      "adore",
+      "musique",
+      "foot",
+      "sport",
+      "lire",
+      "film",
+      "série",
+      "jouer",
+      "faire"
+     ],
+     "exp": "Use J'aime / J'adore + infinitif."
+    },
+    {
+     "t": "gap",
+     "q": "Mon frère ___ la natation. (adorer)",
+     "resp": [
+      "adore"
+     ],
+     "exp": "Il/elle adore : -e no final.",
+     "dica": "adorer"
+    },
+    {
+     "t": "mc",
+     "q": "Como dar um motivo educado ?",
+     "op": [
+      "Parce que c'est amusant.",
+      "Parce que amusant.",
+      "Car je suis amusant.",
+      "Donc amusant."
+     ],
+     "r": 0,
+     "exp": "Parce que + sujeito + verbo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Explique por que gosta de uma atividade.",
+     "frase": "Pourquoi aimez-vous cette activité ?",
+     "modelo": "J'aime le foot parce que c'est amusant et je vois mes amis.",
+     "min": 8,
+     "chave": [
+      "parce que",
+      "amusant",
+      "aime",
+      "amis",
+      "fun",
+      "sympa",
+      "relaxant"
+     ],
+     "exp": "Use J'aime … parce que c'est …"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Ma ville et mon quartier",
+   "objetivo": "Descrever onde você mora e o que existe por perto.",
+   "foco": "Il y a, prépositions de lieu, c'est près de",
+   "explicacao": [
+    "Pergunta típica : Pouvez-vous décrire votre ville ou votre quartier ?",
+    "Il y a + lugares : Dans mon quartier, il y a une boulangerie et un parc.",
+    "Lugares : à côté de, en face de, près de, loin de. Com le vira du : en face du cinéma.",
+    "Opinião curta : J'aime mon quartier parce qu'il est calme. Attention : « actuellement » significa « agora », não « na verdade »."
+   ],
+   "vocab": [
+    {
+     "en": "le quartier",
+     "pt": "bairro"
+    },
+    {
+     "en": "la boulangerie",
+     "pt": "padaria"
+    },
+    {
+     "en": "le parc",
+     "pt": "parque"
+    },
+    {
+     "en": "à côté de",
+     "pt": "ao lado de"
+    },
+    {
+     "en": "en face de",
+     "pt": "em frente a"
+    },
+    {
+     "en": "près de",
+     "pt": "perto de"
+    },
+    {
+     "en": "loin de",
+     "pt": "longe de"
+    },
+    {
+     "en": "calme / bruyant",
+     "pt": "calmo / barulhento"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 2 – Monologue suivi : Décrivez votre quartier ou votre ville. Qu'est-ce qu'il y a ? Est-ce que vous l'aimez ?",
+    "segundos": 60,
+    "frases_uteis": [
+     "Dans mon quartier, il y a …",
+     "C'est à côté de …",
+     "C'est près de chez moi.",
+     "C'est un quartier calme.",
+     "J'aime / je n'aime pas parce que …"
+    ],
+    "modelo": "J'habite dans un quartier calme à Salvador. Il y a une boulangerie, un petit parc et une pharmacie. Mon école est loin de chez moi, mais l'arrêt de bus est à côté de ma maison. J'aime mon quartier parce que les gens sont sympas."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qual frase descreve bem o bairro ?",
+     "op": [
+      "Il a un parc dans mon quartier.",
+      "Dans mon quartier, il y a un parc.",
+      "Mon quartier a un parc il y a.",
+      "Il y a mon quartier un parc."
+     ],
+     "r": 1,
+     "exp": "« Il y a » = há/existe."
+    },
+    {
+     "t": "gap",
+     "q": "La boulangerie est en face ___ cinéma.",
+     "resp": [
+      "du"
+     ],
+     "exp": "de + le = du : en face du cinéma."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "Dans mon quartier, il y a une boulangerie à côté de la pharmacie.",
+     "exp": "Faça « il y a » rápido : « i-li-a »."
+    },
+    {
+     "t": "mc",
+     "q": "Para dizer que o parque está perto da sua casa :",
+     "op": [
+      "Le parc est loin de chez moi.",
+      "Le parc est près de chez moi.",
+      "Le parc est contre moi.",
+      "Le parc est dedans chez moi."
+     ],
+     "r": 1,
+     "exp": "Près de chez moi = perto da minha casa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "La",
+      "poste",
+      "est",
+      "à",
+      "côté",
+      "de",
+      "la",
+      "banque."
+     ],
+     "resp": "La poste est à côté de la banque.",
+     "exp": "à côté de + la = à côté de la."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Cite três lugares do seu bairro.",
+     "frase": "Qu'est-ce qu'il y a dans votre quartier ?",
+     "modelo": "Dans mon quartier, il y a une boulangerie, un parc et une pharmacie.",
+     "min": 8,
+     "chave": [
+      "il y a",
+      "boulangerie",
+      "parc",
+      "pharmacie",
+      "école",
+      "magasin",
+      "supermarché",
+      "banque"
+     ],
+     "exp": "Use Il y a + lugares."
+    },
+    {
+     "t": "gap",
+     "q": "Mon école est ___ de chez moi : j'y vais à pied. (perto)",
+     "resp": [
+      "près",
+      "pres"
+     ],
+     "exp": "Près de = perto.",
+     "dica": "près"
+    },
+    {
+     "t": "mc",
+     "q": "« Votre quartier est-il calme ? » Qual resposta é natural ?",
+     "op": [
+      "Oui, il est très calme et agréable.",
+      "Oui, il calme est.",
+      "Oui, je calme.",
+      "Oui, c'est calmez."
+     ],
+     "r": 0,
+     "exp": "Il est + adjetivo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga se gosta da sua cidade e por quê.",
+     "frase": "Aimez-vous votre ville ? Pourquoi ?",
+     "modelo": "J'aime ma ville parce qu'il y a la plage et les gens sont sympas.",
+     "min": 9,
+     "chave": [
+      "aime",
+      "ville",
+      "parce que",
+      "plage",
+      "gens",
+      "calme",
+      "grand",
+      "petit",
+      "belle"
+     ],
+     "exp": "Use J'aime … parce que …"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Bien prononcer",
+   "objetivo": "Treinar sons difíceis : nasais, u/ou, é/è, liaison e e muet.",
+   "foco": "Voyelles nasales, u / ou, é / è, liaison, e muet",
+   "explicacao": [
+    "Nasais : an/en (enfant), on (bon), in/ain (pain), un (lundi). Não pronuncie o n final.",
+    "u (tu, rue) com lábios arredondados e língua à frente ; ou (tout, rouge) como o u do português.",
+    "Liaison obrigatória : les‿amis (z), vous‿êtes (z), un‿ami (n), ils‿ont (z). Não faça liaison depois de « et ».",
+    "e muet : na fala rápida cai : je ne sais pas → « j'n'sais pas ». Entonação : sobe em perguntas sim/não, desce no fim das frases."
+   ],
+   "vocab": [
+    {
+     "en": "une voyelle nasale",
+     "pt": "vogal nasal"
+    },
+    {
+     "en": "la liaison",
+     "pt": "ligação entre palavras"
+    },
+    {
+     "en": "l'accent",
+     "pt": "acento"
+    },
+    {
+     "en": "l'intonation",
+     "pt": "entonação"
+    },
+    {
+     "en": "répéter",
+     "pt": "repetir"
+    },
+    {
+     "en": "doucement",
+     "pt": "devagar"
+    },
+    {
+     "en": "une rue",
+     "pt": "uma rua"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 1 – Entretien dirigé : Lisez la phrase suivante lentement : « Mon ami et moi, nous avons un grand appartement en ville. » Puis dites où vous habitez.",
+    "segundos": 45,
+    "frases_uteis": [
+     "Je répète lentement.",
+     "Pouvez-vous répéter, s'il vous plaît ?",
+     "Je ne comprends pas.",
+     "Plus lentement, s'il vous plaît.",
+     "J'habite dans un grand appartement."
+    ],
+    "modelo": "Mon ami et moi, nous avons un grand appartement en ville. J'habite dans un appartement calme, près d'un parc."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Em « les amis » a liaison é pronunciada como :",
+     "op": [
+      "[z]",
+      "[t]",
+      "[n]",
+      "Sem liaison"
+     ],
+     "r": 0,
+     "exp": "Les‿amis : o s final soa como z."
+    },
+    {
+     "t": "gap",
+     "q": "Complétez avec le mot entendu : Il y a une ___ près d'ici.",
+     "resp": [
+      "rue"
+     ],
+     "exp": "Rue tem o som u (lábios arredondados).",
+     "ouvir": "Il y a une rue près d'ici."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita fazendo as ligações.",
+     "frase": "Vous êtes un bon ami et nous avons un grand jardin.",
+     "exp": "Vous‿êtes (z), un‿bon‿ami (n), nous‿avons (z)."
+    },
+    {
+     "t": "mc",
+     "q": "Qual palavra tem som nasal ?",
+     "op": [
+      "bonne",
+      "bon",
+      "bonté",
+      "bonheur"
+     ],
+     "r": 1,
+     "exp": "« Bon » tem on nasal ; em « bonne » o n é falado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Nous",
+      "avons",
+      "un",
+      "grand",
+      "appartement",
+      "en",
+      "ville."
+     ],
+     "resp": "Nous avons un grand appartement en ville.",
+     "exp": "Faça a liaison em nous‿avons e un‿appartement."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita; deixe o e de « je » e « ne » bem curto.",
+     "frase": "Je ne sais pas, mais j'ai un petit frère et deux amis.",
+     "exp": "Em fala rápida : « j'n'sais pas »."
+    },
+    {
+     "t": "gap",
+     "q": "Je voudrais un verre de ___ blanc, s'il vous plaît.",
+     "resp": [
+      "vin"
+     ],
+     "exp": "Vin tem o nasal in.",
+     "ouvir": "Je voudrais un verre de vin blanc, s'il vous plaît."
+    },
+    {
+     "t": "mc",
+     "q": "Qual frase tem entonação de pergunta sim/não ?",
+     "op": [
+      "Vous habitez ici ? (voz sobe no final)",
+      "Vous habitez ici. (voz desce no final)",
+      "Vous habitez ici. (voz fica baixa o tempo todo)"
+     ],
+     "r": 0,
+     "exp": "Em perguntas sim/não a voz sobe no fim."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga uma frase com duas ligações, por exemplo com « les amis ».",
+     "frase": "Dites une phrase avec deux liaisons.",
+     "modelo": "Les amis sont arrivés et ils ont faim.",
+     "min": 6,
+     "chave": [
+      "les amis",
+      "ils ont",
+      "vous avez",
+      "nous avons",
+      "un ami",
+      "ont",
+      "avez",
+      "amis"
+     ],
+     "exp": "Ligue : les‿amis, ils‿ont."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Au café et au restaurant",
+   "objetivo": "Pedir comida e bebida com educação.",
+   "foco": "Je voudrais, du/de la/des, de après negação",
+   "explicacao": [
+    "No exercice en interaction você pode ser cliente : Bonjour, je voudrais un café, s'il vous plaît.",
+    "Partitivos : du pain, de la salade, de l'eau, des légumes. Depois de negação : Je ne mange pas de viande.",
+    "Educado : Je voudrais … / Je vais prendre … / L'addition, s'il vous plaît.",
+    "Pergunte : Qu'est-ce que vous avez comme desserts ? Est-ce qu'il y a un plat végétarien ?"
+   ],
+   "vocab": [
+    {
+     "en": "la carte / le menu",
+     "pt": "cardápio / menu fixo"
+    },
+    {
+     "en": "l'entrée / le plat / le dessert",
+     "pt": "entrada / prato / sobremesa"
+    },
+    {
+     "en": "l'addition",
+     "pt": "a conta"
+    },
+    {
+     "en": "un jus d'orange",
+     "pt": "suco de laranja"
+    },
+    {
+     "en": "végétarien",
+     "pt": "vegetariano"
+    },
+    {
+     "en": "je vais prendre",
+     "pt": "vou querer"
+    },
+    {
+     "en": "c'est délicieux",
+     "pt": "está delicioso"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 3 – Exercice en interaction : Vous êtes dans un café avec un ami. Le serveur prend votre commande. Vous commandez une boisson et un plat, puis vous demandez l'addition.",
+    "segundos": 70,
+    "frases_uteis": [
+     "Bonjour, je voudrais …",
+     "Je vais prendre …",
+     "Qu'est-ce que vous avez comme … ?",
+     "Je ne mange pas de …",
+     "L'addition, s'il vous plaît."
+    ],
+    "modelo": "Bonjour, je voudrais une salade et un jus d'orange, s'il vous plaît. Je ne mange pas de viande. Qu'est-ce que vous avez comme desserts ? Je vais prendre une glace. Merci, l'addition, s'il vous plaît."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qual frase é mais educada para pedir um café ?",
+     "op": [
+      "Je veux un café.",
+      "Donne-moi un café.",
+      "Je voudrais un café, s'il vous plaît.",
+      "Un café maintenant."
+     ],
+     "r": 2,
+     "exp": "Je voudrais + s'il vous plaît é o registro certo."
+    },
+    {
+     "t": "gap",
+     "q": "Je prends ___ salade et un jus d'orange.",
+     "resp": [
+      "une"
+     ],
+     "exp": "Salade é feminino : une salade."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com educação.",
+     "frase": "Bonjour, je voudrais une salade et de l'eau, s'il vous plaît.",
+     "exp": "Faça « de l'eau » ligado : « de-lô »."
+    },
+    {
+     "t": "mc",
+     "q": "Você é vegetariano. O que diz ao garçom ?",
+     "op": [
+      "Je mange pas la viande.",
+      "Je ne mange pas de viande.",
+      "Je ne mange pas des viandes.",
+      "Je mange non viande."
+     ],
+     "r": 1,
+     "exp": "Após negação, de : pas de viande."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Qu'est-ce",
+      "que",
+      "vous",
+      "avez",
+      "comme",
+      "desserts",
+      "?"
+     ],
+     "resp": "Qu'est-ce que vous avez comme desserts ?",
+     "exp": "Pergunta útil no restaurante."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Peça uma bebida e um prato.",
+     "frase": "Bonjour, qu'est-ce que vous désirez ?",
+     "modelo": "Je voudrais une salade et un jus d'orange, s'il vous plaît.",
+     "min": 8,
+     "chave": [
+      "voudrais",
+      "prendre",
+      "salade",
+      "jus",
+      "eau",
+      "café",
+      "plat",
+      "pizza",
+      "s'il vous plaît"
+     ],
+     "exp": "Comece com Je voudrais … e termine com s'il vous plaît."
+    },
+    {
+     "t": "gap",
+     "q": "Je ne bois pas ___ café le soir.",
+     "resp": [
+      "de",
+      "du"
+     ],
+     "exp": "Após negação : de café.",
+     "dica": "de"
+    },
+    {
+     "t": "mc",
+     "q": "Para pedir a conta :",
+     "op": [
+      "Je paie.",
+      "L'addition, s'il vous plaît.",
+      "Donnez l'argent.",
+      "C'est fini."
+     ],
+     "r": 1,
+     "exp": "Addition = conta."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Aceite ou recuse com educação.",
+     "frase": "Voulez-vous un dessert ?",
+     "modelo": "Oui, je vais prendre une glace à la fraise, s'il vous plaît.",
+     "min": 8,
+     "chave": [
+      "oui",
+      "non",
+      "merci",
+      "glace",
+      "gâteau",
+      "dessert",
+      "prendre",
+      "voudrais"
+     ],
+     "exp": "Responda e peça com Je vais prendre …"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Faire les achats",
+   "objetivo": "Comprar roupas e coisas : tamanho, cor e preço.",
+   "foco": "Combien, trop cher, essayer, ne … pas",
+   "explicacao": [
+    "Cenário de prova : você está numa loja e fala com o vendeur. Bonjour, je cherche une chemise.",
+    "Perguntas : Combien ça coûte ? Vous avez une taille plus grande ? Je peux l'essayer ?",
+    "Preço : Ça fait vingt-cinq euros. Em recusa educada : C'est trop cher, je ne le prends pas.",
+    "Pagamento : Je peux payer par carte ? Faux ami : « une pièce » é moeda ou cômodo, não « peça de roupa »."
+   ],
+   "vocab": [
+    {
+     "en": "chercher",
+     "pt": "procurar"
+    },
+    {
+     "en": "la taille",
+     "pt": "tamanho"
+    },
+    {
+     "en": "essayer",
+     "pt": "experimentar"
+    },
+    {
+     "en": "trop cher",
+     "pt": "caro demais"
+    },
+    {
+     "en": "en solde",
+     "pt": "em promoção"
+    },
+    {
+     "en": "payer par carte",
+     "pt": "pagar com cartão"
+    },
+    {
+     "en": "la couleur",
+     "pt": "a cor"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 3 – Exercice en interaction : Vous êtes dans un magasin de vêtements. Vous cherchez un pull. Demandez le prix, la taille et dites si vous le prenez.",
+    "segundos": 70,
+    "frases_uteis": [
+     "Je cherche un pull.",
+     "Combien ça coûte ?",
+     "Vous avez une taille plus grande ?",
+     "Je peux l'essayer ?",
+     "Je le prends."
+    ],
+    "modelo": "Bonjour, je cherche un pull bleu, taille M. Combien ça coûte ? Trente-cinq euros ? Je peux l'essayer ? Il est un peu grand, vous avez une taille plus petite ? D'accord, je le prends. Je peux payer par carte ?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Você quer saber o preço. O que diz ?",
+     "op": [
+      "Combien ça coûte ?",
+      "Qui ça coûte ?",
+      "Où ça coûte ?",
+      "Comment ça coûte ?"
+     ],
+     "r": 0,
+     "exp": "Combien ça coûte ? = quanto custa?"
+    },
+    {
+     "t": "gap",
+     "q": "Ce pull est trop cher, je ne le prends ___.",
+     "resp": [
+      "pas"
+     ],
+     "exp": "Negação : ne … pas."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "Bonjour, je cherche une chemise blanche, taille M.",
+     "exp": "« Chemise » começa com ch = x do português."
+    },
+    {
+     "t": "mc",
+     "q": "Quer experimentar a calça. Qual pergunta é boa ?",
+     "op": [
+      "Je peux l'essayer ?",
+      "Je dois l'essayer vous ?",
+      "Essayer moi ?",
+      "Vous essayez ?"
+     ],
+     "r": 0,
+     "exp": "Je peux l'essayer ? é o jeito polido."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "peux",
+      "payer",
+      "par",
+      "carte",
+      "?"
+     ],
+     "resp": "Je peux payer par carte ?",
+     "exp": "Payer par carte = pagar com cartão."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que procura numa loja.",
+     "frase": "Bonjour, je peux vous aider ?",
+     "modelo": "Oui, je cherche un pull bleu, taille M.",
+     "min": 7,
+     "chave": [
+      "cherche",
+      "pull",
+      "chemise",
+      "pantalon",
+      "robe",
+      "chaussures",
+      "taille"
+     ],
+     "exp": "Use Je cherche + objeto."
+    },
+    {
+     "t": "gap",
+     "q": "Vous avez cette chemise en taille ___ ? (maior : plus grande)",
+     "resp": [
+      "plus grande"
+     ],
+     "exp": "Plus grande = maior ; plus petite = menor.",
+     "dica": "plus grande"
+    },
+    {
+     "t": "mc",
+     "q": "O vendedor diz « Ça fait quarante euros ». Isso significa :",
+     "op": [
+      "Custa 40 euros.",
+      "São 4 euros.",
+      "Faltam 40 euros.",
+      "São 14 euros."
+     ],
+     "r": 0,
+     "exp": "Ça fait + valor = é/custa."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Decida se compra ou não e diga o motivo.",
+     "frase": "Alors, vous le prenez ?",
+     "modelo": "Oui, je le prends, il est très joli. Je peux payer par carte ?",
+     "min": 8,
+     "chave": [
+      "prends",
+      "prenez",
+      "joli",
+      "cher",
+      "carte",
+      "oui",
+      "non",
+      "trop"
+     ],
+     "exp": "Je le prends ou Je ne le prends pas + motivo."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Demander son chemin",
+   "objetivo": "Pedir e dar direções com o imperativo.",
+   "foco": "Impératif : allez, tournez, prenez ; vouvoiement",
+   "explicacao": [
+    "Para pedir : Excusez-moi, pour aller à la gare, s'il vous plaît ? / Où est la poste ?",
+    "Direções usam o imperativo com vous : Allez tout droit. Tournez à gauche. Prenez la deuxième rue à droite.",
+    "Com amigos (tu) : Va tout droit. Tourne à droite. Note : no imperativo de verbos em -er o s do tu cai.",
+    "Termine com Merci beaucoup ! ou Merci, c'est très gentil."
+   ],
+   "vocab": [
+    {
+     "en": "tout droit",
+     "pt": "reto"
+    },
+    {
+     "en": "tourner à gauche",
+     "pt": "virar à esquerda"
+    },
+    {
+     "en": "à droite",
+     "pt": "à direita"
+    },
+    {
+     "en": "traverser",
+     "pt": "atravessar"
+    },
+    {
+     "en": "le feu rouge",
+     "pt": "semáforo"
+    },
+    {
+     "en": "la gare",
+     "pt": "estação"
+    },
+    {
+     "en": "à pied",
+     "pt": "a pé"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 3 – Exercice en interaction : Vous êtes dans la rue. Demandez à un passant comment aller à la gare, puis répétez les indications.",
+    "segundos": 60,
+    "frases_uteis": [
+     "Excusez-moi, pour aller à … ?",
+     "Allez tout droit.",
+     "Tournez à gauche / à droite.",
+     "C'est loin d'ici ?",
+     "Merci beaucoup !"
+    ],
+    "modelo": "Excusez-moi, madame, pour aller à la gare, s'il vous plaît ? Alors, je vais tout droit, puis je tourne à droite au feu rouge. C'est loin d'ici ? Dix minutes à pied ? Merci beaucoup, bonne journée !"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Você precisa parar um passante. Como começa ?",
+     "op": [
+      "Hé, la gare !",
+      "Excusez-moi, pour aller à la gare, s'il vous plaît ?",
+      "Donne la gare.",
+      "Où gare toi ?"
+     ],
+     "r": 1,
+     "exp": "Excusez-moi + pergunta educada."
+    },
+    {
+     "t": "gap",
+     "q": "___ tout droit, puis tournez à gauche. (aller, vous)",
+     "resp": [
+      "allez"
+     ],
+     "exp": "Imperativo de aller com vous : allez.",
+     "dica": "aller"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita como se falasse com um desconhecido.",
+     "frase": "Excusez-moi, pour aller à la poste, s'il vous plaît ?",
+     "exp": "Voz sobe no final da pergunta."
+    },
+    {
+     "t": "mc",
+     "q": "Qual é o imperativo correto com « vous » ?",
+     "op": [
+      "Tourner à droite.",
+      "Tournez à droite.",
+      "Tournes à droite.",
+      "Tourne à droite."
+     ],
+     "r": 1,
+     "exp": "Com vous : tournez."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Prenez",
+      "la",
+      "deuxième",
+      "rue",
+      "à",
+      "droite."
+     ],
+     "resp": "Prenez la deuxième rue à droite.",
+     "exp": "Imperativo : verbo no início."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Peça para ir ao supermercado.",
+     "frase": "Excusez-moi, vous cherchez quelque chose ?",
+     "modelo": "Oui, pour aller au supermarché, s'il vous plaît ?",
+     "min": 6,
+     "chave": [
+      "supermarché",
+      "aller",
+      "pour",
+      "où",
+      "s'il vous plaît",
+      "excusez"
+     ],
+     "exp": "Comece com Excusez-moi."
+    },
+    {
+     "t": "gap",
+     "q": "Pour aller à la gare, ___ la première rue à droite. (prendre, vous)",
+     "resp": [
+      "prenez"
+     ],
+     "exp": "Prendre → prenez.",
+     "dica": "prendre"
+    },
+    {
+     "t": "mc",
+     "q": "« C'est à dix minutes à pied » significa :",
+     "op": [
+      "Chega em dez minutos de carro.",
+      "Chega em dez minutos andando.",
+      "Fica a dez quilômetros.",
+      "Fica a dez metros."
+     ],
+     "r": 1,
+     "exp": "À pied = a pé."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Repita a explicação com suas palavras.",
+     "frase": "Pouvez-vous répéter les indications pour aller à la gare ?",
+     "modelo": "Je vais tout droit, puis je tourne à gauche et la gare est en face.",
+     "min": 10,
+     "chave": [
+      "tout droit",
+      "tourne",
+      "gauche",
+      "droite",
+      "gare",
+      "en face",
+      "feu"
+     ],
+     "exp": "Use je vais tout droit, je tourne …"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Raconter mon week-end",
+   "objetivo": "Contar o que você fez no passado.",
+   "foco": "Passé composé avec avoir et être",
+   "explicacao": [
+    "Passé composé = avoir ou être no presente + particípio : J'ai mangé. Je suis allé.",
+    "Verbos de movimento e pronominais usam être : aller, venir, sortir, partir, arriver, se lever. O particípio concorda : Elle est allée, nous sommes partis.",
+    "Particípios irregulares : faire → fait, voir → vu, prendre → pris, avoir → eu, être → été.",
+    "Indicadores : hier, samedi dernier, la semaine dernière, ce matin."
+   ],
+   "vocab": [
+    {
+     "en": "hier",
+     "pt": "ontem"
+    },
+    {
+     "en": "le week-end dernier",
+     "pt": "no fim de semana passado"
+    },
+    {
+     "en": "sortir",
+     "pt": "sair"
+    },
+    {
+     "en": "rendre visite à",
+     "pt": "visitar"
+    },
+    {
+     "en": "faire les courses",
+     "pt": "fazer compras"
+    },
+    {
+     "en": "rester à la maison",
+     "pt": "ficar em casa"
+    },
+    {
+     "en": "s'amuser",
+     "pt": "divertir-se"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 2 – Monologue suivi : Racontez ce que vous avez fait le week-end dernier.",
+    "segundos": 70,
+    "frases_uteis": [
+     "Samedi, j'ai …",
+     "Dimanche, je suis allé(e) …",
+     "Ensuite, nous avons …",
+     "C'était très bien.",
+     "Je me suis bien amusé(e)."
+    ],
+    "modelo": "Samedi matin, j'ai fait les courses avec ma mère. L'après-midi, je suis allé au parc avec mes amis. Dimanche, nous avons mangé chez ma grand-mère et j'ai regardé un film. Je me suis bien amusé."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qual frase está correta ?",
+     "op": [
+      "Hier, j'ai allé au cinéma.",
+      "Hier, je suis allé au cinéma.",
+      "Hier, j'allé au cinéma.",
+      "Hier, je suis aller au cinéma."
+     ],
+     "r": 1,
+     "exp": "Aller usa être : je suis allé."
+    },
+    {
+     "t": "gap",
+     "q": "Hier, j'___ regardé un film.",
+     "resp": [
+      "ai"
+     ],
+     "exp": "Regarder usa avoir : j'ai regardé."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "Samedi dernier, nous avons mangé au restaurant avec mes parents.",
+     "exp": "Em « avons mangé » ligue o s de « nous » a « avons »."
+    },
+    {
+     "t": "mc",
+     "q": "Particípio passado de « faire » :",
+     "op": [
+      "fais",
+      "faisé",
+      "fait",
+      "fé"
+     ],
+     "r": 2,
+     "exp": "Faire → fait : j'ai fait du sport."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Samedi",
+      "soir,",
+      "nous",
+      "sommes",
+      "allés",
+      "au",
+      "cinéma."
+     ],
+     "resp": "Samedi soir, nous sommes allés au cinéma.",
+     "exp": "Aller usa être e o particípio concorda com nous : allés."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte uma coisa que você fez no fim de semana.",
+     "frase": "Qu'avez-vous fait le week-end dernier ?",
+     "modelo": "Samedi, j'ai regardé un film et dimanche je suis allé chez ma grand-mère.",
+     "min": 9,
+     "chave": [
+      "j'ai",
+      "je suis",
+      "samedi",
+      "dimanche",
+      "film",
+      "allé",
+      "allée",
+      "mangé",
+      "fait"
+     ],
+     "exp": "Use j'ai + particípio ou je suis + particípio."
+    },
+    {
+     "t": "gap",
+     "q": "Elle est ___ à la plage avec ses amis. (aller)",
+     "resp": [
+      "allée",
+      "allee"
+     ],
+     "exp": "Elle é feminino : allée.",
+     "dica": "aller"
+    },
+    {
+     "t": "mc",
+     "q": "Qual conector indica sequência no passado ?",
+     "op": [
+      "Ensuite, nous avons mangé.",
+      "Parce que nous avons mangé.",
+      "Pourtant nous avons mangé.",
+      "Donc nous avons mangé."
+     ],
+     "r": 0,
+     "exp": "Ensuite = depois."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte duas coisas que fez ontem.",
+     "frase": "Qu'est-ce que vous avez fait hier ?",
+     "modelo": "Hier, je suis allé à l'école, puis j'ai fait mes devoirs.",
+     "min": 10,
+     "chave": [
+      "hier",
+      "j'ai",
+      "je suis",
+      "puis",
+      "ensuite",
+      "après",
+      "fait",
+      "allé",
+      "allée"
+     ],
+     "exp": "Use hier + passé composé."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Mes souvenirs d'enfance",
+   "objetivo": "Falar de lembranças e hábitos no passado.",
+   "foco": "Imparfait : habitudes et descriptions",
+   "explicacao": [
+    "Imparfait : fale de hábitos e descrições no passado. Base nous do presente sem -ons + -ais, -ais, -ait, -ions, -iez, -aient.",
+    "Quand j'étais petit, j'habitais à la campagne. Nous allions chez ma grand-mère tous les dimanches.",
+    "Être é irregular: j'étais. Il y avait, il faisait beau, c'était bien.",
+    "Imparfait descreve o cenário ; passé composé conta o fato : Il pleuvait quand je suis sorti."
+   ],
+   "vocab": [
+    {
+     "en": "quand j'étais petit(e)",
+     "pt": "quando eu era pequeno(a)"
+    },
+    {
+     "en": "tous les dimanches",
+     "pt": "todos os domingos"
+    },
+    {
+     "en": "la campagne",
+     "pt": "o campo"
+    },
+    {
+     "en": "jouer dans la rue",
+     "pt": "brincar na rua"
+    },
+    {
+     "en": "autrefois",
+     "pt": "antigamente"
+    },
+    {
+     "en": "un souvenir",
+     "pt": "uma lembrança"
+    },
+    {
+     "en": "c'était bien",
+     "pt": "era legal"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 2 – Monologue suivi : Parlez d'un souvenir d'enfance. Où habitiez-vous ? Qu'est-ce que vous aimiez faire ?",
+    "segundos": 80,
+    "frases_uteis": [
+     "Quand j'étais petit(e), …",
+     "J'habitais à …",
+     "Nous allions chez …",
+     "Tous les week-ends, je jouais …",
+     "C'était très bien."
+    ],
+    "modelo": "Quand j'étais petit, j'habitais dans une petite ville avec mes grands-parents. Tous les dimanches, nous mangions ensemble et je jouais au foot dans la rue avec mes cousins. C'était très bien."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Para falar de hábito na infância, use :",
+     "op": [
+      "Quand j'étais petit, je jouais dans la rue.",
+      "Quand je suis petit, je joué dans la rue.",
+      "Quand j'étais petit, j'ai joué.",
+      "Quand j'est petit, je joue."
+     ],
+     "r": 0,
+     "exp": "Hábito no passado = imparfait."
+    },
+    {
+     "t": "gap",
+     "q": "Quand j'étais petit, je ___ au foot tous les jours. (jouer)",
+     "resp": [
+      "jouais"
+     ],
+     "exp": "Je + -ais : jouais.",
+     "dica": "jouer"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "Quand j'étais petit, j'habitais à la campagne avec mes grands-parents.",
+     "exp": "J'étais : é fechado. J'habitais : o h é mudo."
+    },
+    {
+     "t": "mc",
+     "q": "Qual frase descreve bem o tempo no passado ?",
+     "op": [
+      "Il faisait beau et il y avait du soleil.",
+      "Il fait beau hier.",
+      "Il a fait beau toujours.",
+      "Il fera beau avant."
+     ],
+     "r": 0,
+     "exp": "Descrição = imparfait : il faisait beau."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Nous",
+      "allions",
+      "chez",
+      "ma",
+      "grand-mère",
+      "tous",
+      "les",
+      "dimanches."
+     ],
+     "resp": "Nous allions chez ma grand-mère tous les dimanches.",
+     "exp": "Nous + -ions : allions."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga onde morava quando era pequeno.",
+     "frase": "Où habitiez-vous quand vous étiez petit ?",
+     "modelo": "Quand j'étais petit, j'habitais dans une petite maison à Fortaleza.",
+     "min": 8,
+     "chave": [
+      "habitais",
+      "étais",
+      "petit",
+      "petite",
+      "maison",
+      "ville",
+      "campagne",
+      "quand"
+     ],
+     "exp": "Use j'habitais …"
+    },
+    {
+     "t": "gap",
+     "q": "Tous les étés, nous ___ à la plage. (aller)",
+     "resp": [
+      "allions"
+     ],
+     "exp": "Nous + -ions.",
+     "dica": "aller"
+    },
+    {
+     "t": "mc",
+     "q": "Qual frase combina imparfait e passé composé ?",
+     "op": [
+      "Il pleuvait quand je suis sorti.",
+      "Il plut quand je sortais.",
+      "Il pleut quand je suis sorti.",
+      "Il pleuvait quand je sors."
+     ],
+     "r": 0,
+     "exp": "Cenário em imparfait ; acontecimento em passé composé."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte o que fazia aos fins de semana.",
+     "frase": "Que faisiez-vous le week-end quand vous étiez enfant ?",
+     "modelo": "Le week-end, je jouais avec mes cousins et nous mangions chez ma grand-mère.",
+     "min": 11,
+     "chave": [
+      "jouais",
+      "mangions",
+      "allions",
+      "regardais",
+      "faisais",
+      "week-end",
+      "cousins",
+      "grand-mère"
+     ],
+     "exp": "Use verbos no imparfait."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Mes projets et mes vacances",
+   "objetivo": "Falar de planos e de férias futuras.",
+   "foco": "Futur proche : aller + infinitif",
+   "explicacao": [
+    "Futur proche : verbo aller no presente + infinitivo : Je vais visiter Paris. Nous allons voyager en juillet.",
+    "Aller : je vais, tu vas, il va, nous allons, vous allez, ils vont.",
+    "Negação em volta de aller : Je ne vais pas partir en vacances.",
+    "Indicadores : demain, la semaine prochaine, cet été, dans deux jours."
+   ],
+   "vocab": [
+    {
+     "en": "les vacances",
+     "pt": "férias"
+    },
+    {
+     "en": "voyager",
+     "pt": "viajar"
+    },
+    {
+     "en": "visiter",
+     "pt": "visitar"
+    },
+    {
+     "en": "la semaine prochaine",
+     "pt": "semana que vem"
+    },
+    {
+     "en": "cet été",
+     "pt": "neste verão"
+    },
+    {
+     "en": "réserver",
+     "pt": "reservar"
+    },
+    {
+     "en": "la valise",
+     "pt": "mala"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 2 – Monologue suivi : Parlez de vos prochaines vacances. Où allez-vous aller ? Avec qui ? Qu'allez-vous faire ?",
+    "segundos": 80,
+    "frases_uteis": [
+     "Cet été, je vais …",
+     "Nous allons voyager en …",
+     "Je vais visiter …",
+     "Je vais rester …",
+     "J'ai hâte !"
+    ],
+    "modelo": "Cet été, je vais aller à Florianópolis avec ma famille. Nous allons rester une semaine dans un petit hôtel près de la plage. Je vais nager tous les jours et nous allons visiter la ville. J'ai hâte !"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pour parler d'un projet proche, on dit :",
+     "op": [
+      "Je vais voyager demain.",
+      "Je voyage allé demain.",
+      "Je vas voyager demain.",
+      "Je suis voyager demain."
+     ],
+     "r": 0,
+     "exp": "Futur proche : aller + infinitif."
+    },
+    {
+     "t": "gap",
+     "q": "Demain, je ___ visiter le musée.",
+     "resp": [
+      "vais"
+     ],
+     "exp": "Je vais."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "Cet été, nous allons voyager à Paris avec mes cousins.",
+     "exp": "Em « allons voyager » a voz fica regular, sem pausa."
+    },
+    {
+     "t": "mc",
+     "q": "Como negar o futuro próximo ?",
+     "op": [
+      "Je ne vais pas partir.",
+      "Je vais ne pas partir.",
+      "Je ne vais partir pas.",
+      "Je ne pas vais partir."
+     ],
+     "r": 0,
+     "exp": "Ne … pas em volta de aller."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "La",
+      "semaine",
+      "prochaine,",
+      "nous",
+      "allons",
+      "prendre",
+      "le",
+      "train."
+     ],
+     "resp": "La semaine prochaine, nous allons prendre le train.",
+     "exp": "Nous allons + infinitivo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale de dois planos para as férias.",
+     "frase": "Que allez-vous faire pendant les vacances ?",
+     "modelo": "Pendant les vacances, je vais aller à la plage et je vais voir mes amis.",
+     "min": 9,
+     "chave": [
+      "vais",
+      "allons",
+      "vacances",
+      "plage",
+      "voyager",
+      "visiter",
+      "amis",
+      "famille"
+     ],
+     "exp": "Use je vais + infinitif."
+    },
+    {
+     "t": "gap",
+     "q": "Mes parents ___ réserver un hôtel. (aller)",
+     "resp": [
+      "vont"
+     ],
+     "exp": "Ils/elles vont.",
+     "dica": "aller"
+    },
+    {
+     "t": "mc",
+     "q": "Qual frase está certa para « vamos viajar de avião » ?",
+     "op": [
+      "Nous allons voyager en avion.",
+      "Nous voyager avion allons.",
+      "Nous allez voyager par avion.",
+      "Nous va voyager en avion."
+     ],
+     "r": 0,
+     "exp": "Nous allons + infinitif + en avion."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga para onde vai e com quem.",
+     "frase": "Où allez-vous partir en vacances cette année ? Avec qui ?",
+     "modelo": "Cette année, je vais partir en vacances à Gramado avec ma famille.",
+     "min": 10,
+     "chave": [
+      "vais",
+      "partir",
+      "vacances",
+      "avec",
+      "famille",
+      "amis",
+      "plage",
+      "montagne",
+      "Gramado"
+     ],
+     "exp": "Use je vais partir …"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Réserver et réclamer",
+   "objetivo": "Reservar um quarto e reclamar com educação.",
+   "foco": "Je voudrais réserver, problème, registre poli",
+   "explicacao": [
+    "Reserva : Bonjour, je voudrais réserver une chambre pour deux personnes, du 10 au 12 juillet.",
+    "Reclamação educada : Excusez-moi, il y a un problème. Le chauffage ne marche pas. Pourriez-vous m'aider ?",
+    "Evite ser seco : prefira Je voudrais, Pourriez-vous, Est-ce que vous pouvez, e termine com Merci.",
+    "Para pedir solução : Pouvez-vous me donner une autre chambre ? / Je voudrais être remboursé(e)."
+   ],
+   "vocab": [
+    {
+     "en": "réserver",
+     "pt": "reservar"
+    },
+    {
+     "en": "une chambre",
+     "pt": "quarto"
+    },
+    {
+     "en": "un billet",
+     "pt": "bilhete"
+    },
+    {
+     "en": "un problème",
+     "pt": "problema"
+    },
+    {
+     "en": "ne marche pas",
+     "pt": "não funciona"
+    },
+    {
+     "en": "pourriez-vous …",
+     "pt": "poderia o senhor …"
+    },
+    {
+     "en": "être remboursé(e)",
+     "pt": "ser reembolsado(a)"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 3 – Exercice en interaction : Vous téléphonez à un hôtel pour réserver une chambre. Plus tard, vous arrivez et la chambre a un problème. Parlez avec le réceptionniste.",
+    "segundos": 90,
+    "frases_uteis": [
+     "Je voudrais réserver …",
+     "C'est pour deux nuits.",
+     "Il y a un problème.",
+     "Pourriez-vous m'aider ?",
+     "Merci beaucoup."
+    ],
+    "modelo": "Bonjour, je voudrais réserver une chambre pour deux personnes, du dix au douze juillet. Excusez-moi, il y a un problème : le chauffage ne marche pas. Pourriez-vous me donner une autre chambre, s'il vous plaît ? Merci beaucoup."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pour réserver une chambre poliment :",
+     "op": [
+      "Je veux une chambre.",
+      "Je voudrais réserver une chambre pour deux nuits.",
+      "Donne une chambre.",
+      "Chambre deux nuits."
+     ],
+     "r": 1,
+     "exp": "Je voudrais réserver … é educado."
+    },
+    {
+     "t": "gap",
+     "q": "Je ___ réserver une table pour quatre personnes.",
+     "resp": [
+      "voudrais"
+     ],
+     "exp": "Condicional de cortesia : je voudrais."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase.",
+     "frase": "Bonjour, je voudrais réserver une chambre pour deux nuits.",
+     "exp": "Em « voudrais » o ou é fechado e o ai final soa como é."
+    },
+    {
+     "t": "mc",
+     "q": "Qual reclamação é mais educada ?",
+     "op": [
+      "Votre hôtel est nul.",
+      "Excusez-moi, le chauffage ne marche pas.",
+      "Réparez ça tout de suite.",
+      "Vous êtes incompétent."
+     ],
+     "r": 1,
+     "exp": "Excusez-moi + descrição do problema."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Pourriez-vous",
+      "me",
+      "donner",
+      "une",
+      "autre",
+      "chambre",
+      "?"
+     ],
+     "resp": "Pourriez-vous me donner une autre chambre ?",
+     "exp": "Pourriez-vous + infinitif = pedido educado."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça uma reserva por telefone.",
+     "frase": "Bonjour, je peux vous aider ?",
+     "modelo": "Oui, je voudrais réserver une chambre pour deux nuits, s'il vous plaît.",
+     "min": 9,
+     "chave": [
+      "voudrais",
+      "réserver",
+      "chambre",
+      "nuits",
+      "table",
+      "billet",
+      "s'il vous plaît"
+     ],
+     "exp": "Use Je voudrais réserver …"
+    },
+    {
+     "t": "gap",
+     "q": "Excusez-moi, la climatisation ne ___ pas.",
+     "resp": [
+      "marche",
+      "fonctionne"
+     ],
+     "exp": "Marcher = funcionar (aparelho).",
+     "dica": "marcher"
+    },
+    {
+     "t": "mc",
+     "q": "O recepcionista diz « Je suis désolé ». Qual resposta é boa ?",
+     "op": [
+      "Ce n'est pas grave, mais pouvez-vous m'aider ?",
+      "Tant pis pour vous.",
+      "Je m'en fiche.",
+      "Vous avez tort."
+     ],
+     "r": 0,
+     "exp": "Seja calmo e peça solução."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Explique o problema e peça ajuda.",
+     "frase": "Il y a un problème dans votre chambre. Que dites-vous ?",
+     "modelo": "Excusez-moi, la télévision ne marche pas. Pourriez-vous m'aider, s'il vous plaît ?",
+     "min": 11,
+     "chave": [
+      "problème",
+      "marche",
+      "pourriez",
+      "aider",
+      "excusez",
+      "chambre",
+      "chauffage",
+      "télévision"
+     ],
+     "exp": "Descreva e peça com Pourriez-vous."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Proposer une sortie",
+   "objetivo": "Convidar, aceitar, recusar e combinar horário e lugar.",
+   "foco": "Ça te dirait de…, on se retrouve à…, je suis désolé(e)",
+   "explicacao": [
+    "Convite com amigos (tu) : Tu es libre samedi ? Ça te dirait d'aller au cinéma ?",
+    "Aceitar : Oui, avec plaisir ! / Bonne idée ! Recusar : Désolé(e), je ne peux pas, je dois travailler.",
+    "Combinar : On se retrouve où ? — Devant le cinéma, à six heures.",
+    "Atenção ao registro : com amigos « tu » e « ça te dirait » ; com um adulto « vous » e « Accepteriez-vous… »."
+   ],
+   "vocab": [
+    {
+     "en": "proposer",
+     "pt": "propor"
+    },
+    {
+     "en": "avec plaisir",
+     "pt": "com prazer"
+    },
+    {
+     "en": "bonne idée",
+     "pt": "boa ideia"
+    },
+    {
+     "en": "je ne peux pas",
+     "pt": "não posso"
+    },
+    {
+     "en": "se retrouver",
+     "pt": "encontrar-se"
+    },
+    {
+     "en": "devant le cinéma",
+     "pt": "em frente ao cinema"
+    },
+    {
+     "en": "tant pis",
+     "pt": "paciência"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 3 – Exercice en interaction : Vous voulez sortir avec un ami samedi soir. Proposez une sortie, choisissez l'heure et le lieu.",
+    "segundos": 80,
+    "frases_uteis": [
+     "Tu es libre samedi ?",
+     "Ça te dirait d'aller …",
+     "Avec plaisir !",
+     "Désolé(e), je ne peux pas.",
+     "On se retrouve à …"
+    ],
+    "modelo": "Salut Léa ! Tu es libre samedi soir ? Ça te dirait d'aller au cinéma ? On se retrouve devant le cinéma à sept heures. Après, on peut manger une pizza. Super, à samedi !"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Você quer convidar um amigo. Qual frase é natural ?",
+     "op": [
+      "Ça te dirait d'aller au cinéma samedi ?",
+      "Vous devez cinéma samedi.",
+      "Cinéma toi samedi ?",
+      "Je dis cinéma tu ?"
+     ],
+     "r": 0,
+     "exp": "Ça te dirait de + infinitif."
+    },
+    {
+     "t": "gap",
+     "q": "Tu ___ libre samedi soir ?",
+     "resp": [
+      "es"
+     ],
+     "exp": "Être no tu : tu es."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita com entonação amigável.",
+     "frase": "Salut ! Ça te dirait d'aller au cinéma samedi soir ?",
+     "exp": "Voz sobe em « soir ? » no fim."
+    },
+    {
+     "t": "mc",
+     "q": "Para recusar com educação :",
+     "op": [
+      "Non.",
+      "Désolé, je ne peux pas, je dois travailler.",
+      "Jamais.",
+      "Quelle idée stupide !"
+     ],
+     "r": 1,
+     "exp": "Peça desculpa e dê um motivo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "On",
+      "se",
+      "retrouve",
+      "devant",
+      "le",
+      "cinéma",
+      "à",
+      "sept",
+      "heures."
+     ],
+     "resp": "On se retrouve devant le cinéma à sept heures.",
+     "exp": "Combinar lugar e horário."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Aceite o convite e proponha o horário.",
+     "frase": "Salut ! Tu es libre samedi ? Ça te dirait d'aller au cinéma ?",
+     "modelo": "Oui, avec plaisir ! On se retrouve à sept heures devant le cinéma ?",
+     "min": 9,
+     "chave": [
+      "plaisir",
+      "idée",
+      "oui",
+      "retrouve",
+      "heures",
+      "cinéma",
+      "d'accord"
+     ],
+     "exp": "Aceite e proponha hora e lugar."
+    },
+    {
+     "t": "gap",
+     "q": "Désolé, je ne ___ pas venir samedi. (pouvoir)",
+     "resp": [
+      "peux"
+     ],
+     "exp": "Pouvoir : je peux.",
+     "dica": "pouvoir"
+    },
+    {
+     "t": "mc",
+     "q": "Seu professor (adulto) diz « Voulez-vous venir au concert ? ». A melhor resposta :",
+     "op": [
+      "Oui, avec plaisir, merci beaucoup.",
+      "Ouais, cool.",
+      "Ça marche, mec.",
+      "Non, tu rigoles."
+     ],
+     "r": 0,
+     "exp": "Com adulto, use vous e linguagem educada."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda e combine outro dia.",
+     "frase": "Samedi, c'est impossible pour moi. Vous préférez dimanche ?",
+     "modelo": "D'accord, dimanche, c'est parfait. On se retrouve à quatre heures ?",
+     "min": 10,
+     "chave": [
+      "dimanche",
+      "d'accord",
+      "parfait",
+      "heures",
+      "retrouve",
+      "oui",
+      "non",
+      "samedi"
+     ],
+     "exp": "Aceite o novo dia e combine a hora."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulation – Production orale DELF A2",
+   "objetivo": "Simulado das 3 partes da prova oral DELF A2.",
+   "foco": "Entretien dirigé, monologue suivi, exercice en interaction",
+   "explicacao": [
+    "A prova dura 6 a 8 minutos e tem 3 partes : entretien dirigé (se présenter), monologue suivi (falar de si), exercice en interaction (jogo de papéis).",
+    "Use frases completas, vouvoie o examinador e fale com calma.",
+    "Se não entender, diga : Pouvez-vous répéter, s'il vous plaît ?",
+    "Revise : passé composé, imparfait, futur proche, impératif, registre poli."
+   ],
+   "vocab": [
+    {
+     "en": "pouvez-vous répéter ?",
+     "pt": "poderia repetir?"
+    },
+    {
+     "en": "je voudrais",
+     "pt": "eu gostaria"
+    },
+    {
+     "en": "pourriez-vous",
+     "pt": "poderia"
+    },
+    {
+     "en": "je vais",
+     "pt": "eu vou"
+    },
+    {
+     "en": "hier",
+     "pt": "ontem"
+    },
+    {
+     "en": "quand j'étais petit",
+     "pt": "quando eu era pequeno"
+    },
+    {
+     "en": "avec plaisir",
+     "pt": "com prazer"
+    }
+   ],
+   "material": {
+    "tarefa": "Partie 1 : Présentez-vous (nom, âge, ville, famille, loisirs). Partie 2 : Parlez de vos vacances préférées ou de votre dernier week-end. Partie 3 : Vous voulez réserver une table dans un restaurant pour un anniversaire. Téléphonez et posez des questions.",
+    "segundos": 120,
+    "frases_uteis": [
+     "Je m'appelle … et j'habite à …",
+     "L'été dernier, je suis allé(e) …",
+     "Cet été, je vais …",
+     "Je voudrais réserver une table pour …",
+     "Pourriez-vous me confirmer … ?"
+    ],
+    "modelo": "Bonjour, je m'appelle Marina. J'ai dix-sept ans et j'habite à Belo Horizonte avec mes parents. J'aime lire et faire du sport. Le week-end dernier, je suis allée chez ma grand-mère et nous avons mangé ensemble. Cet été, je vais voyager à la plage. Pour la partie trois : Bonjour, je voudrais réserver une table pour six personnes samedi soir à vingt heures. C'est pour un anniversaire. Pourriez-vous me confirmer ? Merci beaucoup."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Au début de l'examen, l'examinateur dit : « Présentez-vous, s'il vous plaît ». Quelle est la meilleure réponse ?",
+     "op": [
+      "Je m'appelle Marina, j'ai dix-sept ans et j'habite à Belo Horizonte.",
+      "Marina.",
+      "Moi Marina dix-sept.",
+      "Je suis dix-sept ans."
+     ],
+     "r": 0,
+     "exp": "Frases completas com nome, idade e cidade."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "PARTE 1 : responda as 3 perguntas.",
+     "frase": "Comment vous appelez-vous ? Quel âge avez-vous ? Où habitez-vous ?",
+     "modelo": "Je m'appelle Marina, j'ai dix-sept ans et j'habite à Belo Horizonte.",
+     "min": 9,
+     "chave": [
+      "appelle",
+      "ans",
+      "habite",
+      "j'ai",
+      "je suis"
+     ],
+     "exp": "Seja claro: nome, idade e cidade."
+    },
+    {
+     "t": "gap",
+     "q": "J'___ dix-sept ans.",
+     "resp": [
+      "ai"
+     ],
+     "exp": "Idade usa avoir : j'ai."
+    },
+    {
+     "t": "mc",
+     "q": "Para falar do fim de semana passado, você usa :",
+     "op": [
+      "Le week-end dernier, je suis allé chez ma grand-mère.",
+      "Le week-end dernier, je vais chez ma grand-mère.",
+      "Le week-end dernier, j'ai aller.",
+      "Le week-end dernier, je irai."
+     ],
+     "r": 0,
+     "exp": "Passé composé com aller: je suis allé."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Cet",
+      "été,",
+      "je",
+      "vais",
+      "voyager",
+      "à",
+      "la",
+      "plage."
+     ],
+     "resp": "Cet été, je vais voyager à la plage.",
+     "exp": "Futur proche : aller + infinitif."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "PARTE 2 : fale por cerca de um minuto.",
+     "frase": "Parlez de votre dernier week-end ou de vos vacances préférées.",
+     "modelo": "Le week-end dernier, je suis allé chez ma grand-mère. Nous avons mangé ensemble et j'ai regardé un film. C'était très bien.",
+     "min": 20,
+     "chave": [
+      "week-end",
+      "vacances",
+      "j'ai",
+      "je suis",
+      "allé",
+      "allée",
+      "c'était",
+      "mangé",
+      "fait"
+     ],
+     "exp": "Use passé composé e imparfait para descrever."
+    },
+    {
+     "t": "gap",
+     "q": "Excusez-moi, je voudrais ___ une table pour six personnes. (réserver)",
+     "resp": [
+      "réserver",
+      "reserver"
+     ],
+     "exp": "Je voudrais + infinitivo.",
+     "dica": "réserver"
+    },
+    {
+     "t": "mc",
+     "q": "Para pedir educadamente uma confirmação :",
+     "op": [
+      "Confirme !",
+      "Pourriez-vous me confirmer, s'il vous plaît ?",
+      "Tu me dis ok ?",
+      "Dis-moi oui."
+     ],
+     "r": 1,
+     "exp": "Pourriez-vous + infinitif é polido."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "PARTE 3 : reserve uma mesa para seis pessoas.",
+     "frase": "Bonjour, restaurant Le Soleil, je vous écoute.",
+     "modelo": "Bonjour, je voudrais réserver une table pour six personnes samedi soir, s'il vous plaît.",
+     "min": 11,
+     "chave": [
+      "voudrais",
+      "réserver",
+      "table",
+      "personnes",
+      "samedi",
+      "soir",
+      "s'il vous plaît"
+     ],
+     "exp": "Use Je voudrais réserver + data + número de pessoas."
+    },
+    {
+     "t": "mc",
+     "q": "Você não entendeu uma pergunta. O que fazer ?",
+     "op": [
+      "Ficar em silêncio.",
+      "Dire : Pouvez-vous répéter, s'il vous plaît ?",
+      "Mudar de assunto.",
+      "Dire non."
+     ],
+     "r": 1,
+     "exp": "Pedir para repetir é aceito e útil."
+    },
+    {
+     "t": "gap",
+     "q": "___ à gauche puis allez tout droit. (tourner, vous)",
+     "resp": [
+      "tournez"
+     ],
+     "exp": "Imperativo com vous : tournez.",
+     "dica": "tourner"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda e agradeça.",
+     "frase": "C'est pour quelle occasion ?",
+     "modelo": "C'est pour un anniversaire. Pourriez-vous nous donner une table près de la fenêtre ? Merci beaucoup.",
+     "min": 12,
+     "chave": [
+      "anniversaire",
+      "fête",
+      "pourriez",
+      "merci",
+      "table",
+      "occasion",
+      "fenêtre"
+     ],
+     "exp": "Dê o motivo e termine com Merci."
+    }
+   ]
+  }
+ ]
+}

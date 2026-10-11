@@ -1,0 +1,2311 @@
+{
+ "nivel": "A2",
+ "skill": "reading",
+ "exame": "DELF A2",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Un week-end à Lyon",
+   "objetivo": "Entender o relato de um fim de semana no passado.",
+   "foco": "Passé composé avec avoir",
+   "explicacao": [
+    "O passé composé conta fatos terminados. Forma: avoir (j'ai, tu as, il a, nous avons, vous avez, ils ont) + particípio passado.",
+    "Verbos em -er: parler - parlé, visiter - visité, manger - mangé. Irregulares: prendre - pris, avoir - eu, voir - vu, faire - fait.",
+    "Negação: ne + avoir + pas + particípio. Ex.: Elle n'a pas eu faim.",
+    "Cuidado: em português usamos 'visitei' (uma palavra); em francês são duas: j'ai visité."
+   ],
+   "vocab": [
+    {
+     "en": "une auberge",
+     "pt": "uma pousada"
+    },
+    {
+     "en": "un quartier",
+     "pt": "um bairro"
+    },
+    {
+     "en": "goûter",
+     "pt": "provar (comida)"
+    },
+    {
+     "en": "un bateau",
+     "pt": "um barco"
+    },
+    {
+     "en": "dîner",
+     "pt": "jantar"
+    },
+    {
+     "en": "un musée",
+     "pt": "um museu"
+    },
+    {
+     "en": "la spécialité",
+     "pt": "a especialidade"
+    },
+    {
+     "en": "un croissant",
+     "pt": "um croissant"
+    }
+   ],
+   "material": {
+    "titulo": "Un week-end à Lyon",
+    "texto": "Le week-end dernier, j'ai visité Lyon avec ma sœur Camille. Nous avons pris le train vendredi soir et nous avons dormi dans une petite auberge près de la gare. Samedi matin, nous avons mangé des croissants dans un café, puis nous avons visité le vieux quartier. À midi, j'ai acheté un sandwich, mais Camille n'a pas eu faim. L'après-midi, nous avons regardé les bateaux sur le Rhône. Le soir, nous avons dîné dans un restaurant lyonnais et nous avons goûté la spécialité de la ville. Dimanche, il a plu, alors nous avons choisi un musée. Nous avons passé un week-end formidable !"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment les deux sœurs ont-elles voyagé ?",
+     "op": [
+      "en voiture",
+      "en bus",
+      "en train",
+      "en avion"
+     ],
+     "r": 2,
+     "exp": "O texto diz: Nous avons pris le train vendredi soir."
+    },
+    {
+     "t": "gap",
+     "q": "Nous ___ pris le train vendredi soir.",
+     "resp": [
+      "avons"
+     ],
+     "exp": "Com nous, o auxiliar avoir é avons: nous avons pris."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Nous avons visité le vieux quartier de Lyon.",
+     "exp": "Visité: vi-zi-TÉ. Quartier: kar-TIÉ (o r final de -er não se pronuncia no particípio)."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi les sœurs ont-elles choisi un musée dimanche ?",
+     "op": [
+      "Elles étaient fatiguées.",
+      "Il a plu.",
+      "Le musée était gratuit.",
+      "Camille a eu faim."
+     ],
+     "r": 1,
+     "exp": "Dimanche, il a plu, alors nous avons choisi un musée. 'Il a plu' = choveu."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Camille",
+      "n'a",
+      "pas",
+      "eu",
+      "faim"
+     ],
+     "resp": "Camille n'a pas eu faim",
+     "exp": "Negação: ne + a + pas + particípio (eu). 'N'a' vem junto, com apóstrofo."
+    },
+    {
+     "t": "gap",
+     "q": "Samedi matin, nous avons ___ des croissants dans un café.",
+     "resp": [
+      "mangé"
+     ],
+     "exp": "Verbos em -er formam o particípio em -é: manger - mangé.",
+     "dica": "MANGER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que você fez no fim de semana passado?",
+     "frase": "Qu'est-ce que vous avez fait le week-end dernier ?",
+     "modelo": "Le week-end dernier, j'ai regardé un film et j'ai mangé chez ma mère.",
+     "min": 5,
+     "chave": [
+      "ai",
+      "avons",
+      "on a",
+      "regardé",
+      "visité",
+      "mangé",
+      "fait"
+     ],
+     "exp": "Use j'ai + particípio: j'ai regardé, j'ai joué, j'ai mangé. Se foi viagem: nous avons visité..."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je visité Lyon.",
+      "J'ai visiter Lyon.",
+      "Je suis visité Lyon.",
+      "J'ai visité Lyon."
+     ],
+     "r": 3,
+     "exp": "Passé composé = auxiliar + particípio (-é, não -er): j'ai visité."
+    },
+    {
+     "t": "gap",
+     "q": "Vous ___ fini vos devoirs ? - Oui, nous avons fini.",
+     "resp": [
+      "avez"
+     ],
+     "exp": "Com vous, o auxiliar é avez: vous avez fini."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Un message de Marseille",
+   "objetivo": "Acompanhar um e-mail de viagem com verbos de movimento.",
+   "foco": "Passé composé avec être; accord du participe",
+   "explicacao": [
+    "Verbos de movimento e de mudança usam être: aller, venir, arriver, partir, entrer, sortir, monter, descendre, rester, tomber, rentrer, revenir. Também todos os verbos pronominais.",
+    "Com être, o particípio concorda com o sujeito: elle est arrivée, ils sont partis, elles sont allées.",
+    "Macete: je suis allé(e), tu es allé(e), il/elle est allé(e), nous sommes allé(e)s, vous êtes allé(e)(s), ils/elles sont allé(e)s.",
+    "Em português dizemos 'eu cheguei'; em francês é 'je suis arrivé(e)'. Não use avoir com esses verbos."
+   ],
+   "vocab": [
+    {
+     "en": "arriver",
+     "pt": "chegar"
+    },
+    {
+     "en": "partir",
+     "pt": "partir, sair"
+    },
+    {
+     "en": "descendre",
+     "pt": "descer"
+    },
+    {
+     "en": "rentrer",
+     "pt": "voltar para casa"
+    },
+    {
+     "en": "rester",
+     "pt": "ficar"
+    },
+    {
+     "en": "monter",
+     "pt": "subir"
+    },
+    {
+     "en": "tomber",
+     "pt": "cair"
+    },
+    {
+     "en": "une valise",
+     "pt": "uma mala"
+    },
+    {
+     "en": "cassé",
+     "pt": "quebrado"
+    }
+   ],
+   "material": {
+    "titulo": "Un message de Marseille",
+    "texto": "Salut Léa, je suis bien arrivée à Marseille ! Je suis partie de Paris à 8 h et je suis descendue du train à midi. Mon cousin Théo est venu me chercher à la gare. Nous sommes allés au Vieux-Port, puis nous sommes entrés dans un petit restaurant. Après le déjeuner, Théo est rentré chez lui pour travailler et je suis restée seule : je suis montée à Notre-Dame de la Garde. Je suis revenue à l'appartement vers 18 h. Ma valise est tombée dans l'escalier, mais heureusement, rien n'est cassé ! Demain, nous partons à la plage. Bises, Inès"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qui est venu chercher Inès à la gare ?",
+     "op": [
+      "Léa",
+      "Son cousin Théo",
+      "Sa mère",
+      "Un taxi"
+     ],
+     "r": 1,
+     "exp": "O texto diz: Mon cousin Théo est venu me chercher à la gare. Léa é quem recebe o e-mail."
+    },
+    {
+     "t": "gap",
+     "q": "Je ___ partie de Paris à 8 h.",
+     "resp": [
+      "suis"
+     ],
+     "exp": "Partir usa être. Com je: je suis partie (o -e final mostra que quem escreve é mulher)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Nous sommes allés au Vieux-Port, puis nous sommes entrés dans un restaurant.",
+     "exp": "Sommes: som. Allés e entrés terminam em som de É. Não pronuncie o s final."
+    },
+    {
+     "t": "mc",
+     "q": "Que vont faire Inès et Théo demain ?",
+     "op": [
+      "Ils vont rentrer à Paris.",
+      "Ils vont visiter Notre-Dame.",
+      "Ils vont à la plage.",
+      "Ils vont travailler."
+     ],
+     "r": 2,
+     "exp": "O texto diz: Demain, nous partons à la plage. Notre-Dame foi hoje, e Théo trabalhou depois do almoço."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Inès",
+      "est",
+      "arrivée",
+      "à",
+      "Marseille",
+      "à",
+      "midi"
+     ],
+     "resp": "Inès est arrivée à Marseille à midi",
+     "exp": "Arriver usa être e o particípio concorda com Inès (feminino): arrivée."
+    },
+    {
+     "t": "gap",
+     "q": "Inès et sa cousine sont ___ à la plage. (aller)",
+     "resp": [
+      "allées"
+     ],
+     "exp": "Sujeito feminino plural + être: particípio com -es (allées).",
+     "dica": "ALLER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: para onde você foi nas últimas férias?",
+     "frase": "Tu es allé(e) où pendant tes dernières vacances ?",
+     "modelo": "Je suis allé à Salvador avec ma famille.",
+     "min": 5,
+     "chave": [
+      "suis",
+      "sommes",
+      "allé",
+      "allée",
+      "allés",
+      "allées",
+      "parti"
+     ],
+     "exp": "Aller usa être: je suis allé(e). Se for mulher, acrescente -e: je suis allée."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Elle est arrivé hier.",
+      "Elle est arrivée hier.",
+      "Elle a arrivée hier.",
+      "Elle est arrivés hier."
+     ],
+     "r": 1,
+     "exp": "Arriver usa être e concorda com 'elle': arrivée."
+    },
+    {
+     "t": "gap",
+     "q": "Mes amies ne sont pas ___ à la fête. (venir)",
+     "resp": [
+      "venues"
+     ],
+     "exp": "Venir usa être. Amies = feminino plural: venues.",
+     "dica": "VENIR"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Quand j'étais petit",
+   "objetivo": "Entender a descrição de lugares, pessoas e hábitos do passado.",
+   "foco": "Imparfait: description et habitudes",
+   "explicacao": [
+    "O imparfait descreve como as coisas eram e o que se fazia sempre. Base: nous (presente) sem -ons + terminações -ais, -ais, -ait, -ions, -iez, -aient. Ex.: nous habitons - j'habitais.",
+    "Exceção: être - j'étais, tu étais, il était, nous étions, vous étiez, ils étaient.",
+    "Use também com 'tous les jours', 'souvent', 'toujours', 'quand j'étais petit'.",
+    "Equivale ao nosso 'eu morava / eu era / eu brincava'. Il y avait = havia."
+   ],
+   "vocab": [
+    {
+     "en": "l'enfance",
+     "pt": "a infância"
+    },
+    {
+     "en": "la campagne",
+     "pt": "o campo (zona rural)"
+    },
+    {
+     "en": "un pommier",
+     "pt": "uma macieira"
+    },
+    {
+     "en": "la confiture",
+     "pt": "a geleia / o doce"
+    },
+    {
+     "en": "une institutrice",
+     "pt": "uma professora primária"
+    },
+    {
+     "en": "une rivière",
+     "pt": "um rio"
+    },
+    {
+     "en": "sentir bon",
+     "pt": "cheirar bem"
+    },
+    {
+     "en": "heureux",
+     "pt": "feliz"
+    }
+   ],
+   "material": {
+    "titulo": "Mon enfance à la campagne",
+    "texto": "Quand j'étais enfant, j'habitais dans une petite maison à la campagne, près de Bordeaux. Il y avait un grand jardin avec des pommiers. Mon frère et moi, nous jouions dehors tous les après-midi. Ma grand-mère faisait des confitures et la maison sentait bon. À l'école, mon institutrice s'appelait Madame Roux : elle était gentille et elle portait toujours des lunettes rouges. Le mercredi, nous n'avions pas classe, alors nous allions à la rivière. Il faisait souvent beau et nous étions heureux. Aujourd'hui, j'habite en ville, mais je pense souvent à cette époque."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Où habitait l'auteur quand il était enfant ?",
+     "op": [
+      "dans un appartement en ville",
+      "chez sa grand-mère à Paris",
+      "dans une maison à la campagne",
+      "dans une ferme au bord de la mer"
+     ],
+     "r": 2,
+     "exp": "O texto diz: j'habitais dans une petite maison à la campagne, près de Bordeaux."
+    },
+    {
+     "t": "gap",
+     "q": "Il y ___ un grand jardin avec des pommiers.",
+     "resp": [
+      "avait"
+     ],
+     "exp": "Descrição no passado: il y avait (havia). Avoir no imparfait: j'avais, il avait."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Quand j'étais enfant, j'habitais dans une petite maison.",
+     "exp": "Étais e habitais terminam em som de É aberto (-ais). O h de habitais é mudo: a-bi-TÊ."
+    },
+    {
+     "t": "mc",
+     "q": "Comment était Madame Roux ?",
+     "op": [
+      "Elle était sévère.",
+      "Elle était gentille.",
+      "Elle était très jeune.",
+      "Elle était toujours fatiguée."
+     ],
+     "r": 1,
+     "exp": "O texto diz: elle était gentille et elle portait toujours des lunettes rouges."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Mon",
+      "frère",
+      "et",
+      "moi,",
+      "nous",
+      "jouions",
+      "dehors"
+     ],
+     "resp": "Mon frère et moi nous jouions dehors",
+     "exp": "Imparfait de jouer com nous: jouions. Hábito do passado."
+    },
+    {
+     "t": "gap",
+     "q": "Le mercredi, nous n'___ pas classe.",
+     "resp": [
+      "avions"
+     ],
+     "exp": "Avoir no imparfait com nous: nous avions. Negação: ne + verbo + pas."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: como era sua casa quando você era criança?",
+     "frase": "Comment était ta maison quand tu étais petit(e) ?",
+     "modelo": "Ma maison était grande et j'avais une chambre jaune.",
+     "min": 5,
+     "chave": [
+      "était",
+      "avait",
+      "avais",
+      "grande",
+      "petite",
+      "il y avait"
+     ],
+     "exp": "Use était para descrever e j'avais para dizer o que você tinha. Ex.: Elle était petite."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase décrit une habitude du passé ?",
+     "op": [
+      "Hier, j'ai joué au foot.",
+      "Tous les soirs, je jouais au foot.",
+      "Demain, je vais jouer au foot.",
+      "Maintenant, je joue au foot."
+     ],
+     "r": 1,
+     "exp": "'Tous les soirs' indica hábito: imparfait (je jouais)."
+    },
+    {
+     "t": "gap",
+     "q": "Quand nous étions petits, nous ___ toujours chez nos grands-parents en été. (aller)",
+     "resp": [
+      "allions"
+     ],
+     "exp": "Aller no imparfait com nous: nous allions.",
+     "dica": "ALLER"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Le premier jour au bureau",
+   "objetivo": "Entender um relato que mistura descrição e ações no passado.",
+   "foco": "Passé composé et imparfait",
+   "explicacao": [
+    "Passé composé = ação que aconteceu e terminou (j'ai rempli des papiers). Imparfait = cenário, descrição, ação em andamento (il pleuvait, j'avais peur).",
+    "Quando uma ação interrompe outra: Je regardais la télé quand mon ami a téléphoné.",
+    "Dica: 'hier', 'à midi', 'soudain' pedem passé composé; 'souvent', 'toujours', 'pendant que' pedem imparfait.",
+    "Em português, o pretérito perfeito e o imperfeito funcionam de modo parecido: eu cheguei (passé composé) x eu estava com medo (imparfait)."
+   ],
+   "vocab": [
+    {
+     "en": "un collègue",
+     "pt": "um colega de trabalho"
+    },
+    {
+     "en": "une directrice",
+     "pt": "uma diretora"
+    },
+    {
+     "en": "une agence",
+     "pt": "uma agência"
+    },
+    {
+     "en": "remplir",
+     "pt": "preencher"
+    },
+    {
+     "en": "la cantine",
+     "pt": "o refeitório"
+    },
+    {
+     "en": "un client",
+     "pt": "um cliente"
+    },
+    {
+     "en": "en retard",
+     "pt": "atrasado"
+    },
+    {
+     "en": "parler vite",
+     "pt": "falar rápido"
+    }
+   ],
+   "material": {
+    "titulo": "Mon premier jour au bureau",
+    "texto": "Bonjour Papa, hier, c'était mon premier jour dans l'agence de voyages. Il pleuvait quand je suis parti et j'avais peur d'être en retard. Finalement, je suis arrivé à 8 h 50. La directrice, Madame Martin, m'attendait à l'entrée. Elle portait un joli costume bleu. Elle m'a présenté mes collègues, puis j'ai rempli des papiers. À midi, nous avons déjeuné ensemble à la cantine : tout le monde était très sympa. L'après-midi, j'ai répondu à des clients au téléphone, mais je n'ai pas tout compris parce que les gens parlaient vite. Le soir, j'étais fatigué mais content. À bientôt ! Lucas"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "À quelle heure Lucas est-il arrivé au bureau ?",
+     "op": [
+      "à 8 h",
+      "à 8 h 30",
+      "à 8 h 50",
+      "à 9 h 10"
+     ],
+     "r": 2,
+     "exp": "O texto diz: je suis arrivé à 8 h 50. Atenção: nada de 8 h 30 nem 9 h."
+    },
+    {
+     "t": "gap",
+     "q": "Il ___ quand Lucas est parti de chez lui. (pleuvoir)",
+     "resp": [
+      "pleuvait"
+     ],
+     "exp": "Descrição do cenário: imparfait (il pleuvait = estava chovendo). A ação 'est parti' é o passé composé.",
+     "dica": "PLEUVOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Madame Martin m'attendait à l'entrée de l'agence.",
+     "exp": "Attendait: a-tan-DÊ. Cuidado: attendre em francês é ESPERAR, não 'atender' (falso cognato)."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi Lucas n'a-t-il pas tout compris au téléphone ?",
+     "op": [
+      "Il avait peur.",
+      "La ligne était mauvaise.",
+      "Les gens parlaient vite.",
+      "Il n'avait pas fini ses papiers."
+     ],
+     "r": 2,
+     "exp": "O texto diz: je n'ai pas tout compris parce que les gens parlaient vite."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elle",
+      "m'a",
+      "présenté",
+      "mes",
+      "collègues"
+     ],
+     "resp": "Elle m'a présenté mes collègues",
+     "exp": "Passé composé com o pronome m'(me) antes do auxiliar: elle m'a présenté."
+    },
+    {
+     "t": "gap",
+     "q": "Quand la directrice est entrée, nous ___ à la cantine. (déjeuner)",
+     "resp": [
+      "déjeunions",
+      "dejeunions"
+     ],
+     "exp": "Ação em andamento no passado: imparfait. Nous + déjeuner: déjeunions.",
+     "dica": "DÉJEUNER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que você fez ontem à noite?",
+     "frase": "Qu'est-ce que tu as fait hier soir ?",
+     "modelo": "Hier soir, j'ai dîné avec ma famille et j'ai regardé la télé.",
+     "min": 5,
+     "chave": [
+      "ai",
+      "suis",
+      "sommes",
+      "dîné",
+      "regardé",
+      "mangé",
+      "fait"
+     ],
+     "exp": "Para ações terminadas use o passé composé: j'ai dîné, j'ai regardé, je suis rentré(e)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "J'ai regardé la télé quand mon ami téléphonait.",
+      "J'ai regardais la télé quand mon ami a téléphoné.",
+      "Je regardais la télé quand mon ami a téléphoné.",
+      "Je suis regardé la télé quand mon ami a téléphoné."
+     ],
+     "r": 2,
+     "exp": "A ação longa (regarder) fica no imparfait; a que interrompe (téléphoner) fica no passé composé."
+    },
+    {
+     "t": "gap",
+     "q": "Il y avait beaucoup de monde, alors je ___ debout pendant tout le trajet. (rester)",
+     "resp": [
+      "suis resté",
+      "suis restée"
+     ],
+     "exp": "Ação terminada com resultado: passé composé. Rester usa être: je suis resté(e).",
+     "dica": "RESTER"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "La fête de l'école",
+   "objetivo": "Entender um programa de evento e os planos para o futuro próximo.",
+   "foco": "Futur proche: aller + infinitif",
+   "explicacao": [
+    "O futur proche diz o que vai acontecer logo: aller (presente) + infinitivo. Ex.: Je vais manger, tu vas partir, il va pleuvoir.",
+    "Presente de aller: je vais, tu vas, il/elle/on va, nous allons, vous allez, ils/elles vont.",
+    "Negação: ne vai antes de aller e pas depois: Il ne va pas venir.",
+    "Equivale ao nosso 'vou fazer / vamos viajar'. Em francês, aller não perde o 'a-l-l': nous allons (não 'nous irons' para o futuro próximo)."
+   ],
+   "vocab": [
+    {
+     "en": "une fête",
+     "pt": "uma festa"
+    },
+    {
+     "en": "la cour",
+     "pt": "o pátio"
+    },
+    {
+     "en": "un repas",
+     "pt": "uma refeição"
+    },
+    {
+     "en": "participer",
+     "pt": "participar"
+    },
+    {
+     "en": "une course",
+     "pt": "uma corrida"
+    },
+    {
+     "en": "un spectacle",
+     "pt": "um espetáculo"
+    },
+    {
+     "en": "réserver",
+     "pt": "reservar"
+    },
+    {
+     "en": "le gymnase",
+     "pt": "a quadra / o ginásio"
+    }
+   ],
+   "material": {
+    "titulo": "Fête de l'école Jean-Moulin",
+    "texto": "Chers parents, samedi prochain, l'école Jean-Moulin va organiser sa fête annuelle. À 10 h, les élèves de CP vont chanter dans la cour. À 11 h, le directeur va présenter le nouveau jardin. À midi, vous allez pouvoir manger un repas préparé par les parents : le prix est de 5 euros. L'après-midi, on va jouer : les enfants vont participer à une course et un clown va faire un spectacle. S'il pleut, la fête va avoir lieu dans le gymnase. Pour réserver votre repas, vous allez remplir le papier ci-joint avant jeudi. Les places sont limitées, alors venez nombreux avec vos amis ! Le soir, tout le monde va ranger les tables ensemble."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qui va présenter le nouveau jardin ?",
+     "op": [
+      "un élève de CP",
+      "le directeur",
+      "un clown",
+      "les parents"
+     ],
+     "r": 1,
+     "exp": "O texto diz: À 11 h, le directeur va présenter le nouveau jardin."
+    },
+    {
+     "t": "gap",
+     "q": "Les élèves de CP ___ chanter dans la cour.",
+     "resp": [
+      "vont"
+     ],
+     "exp": "Com ils/elles/les élèves, aller = vont: ils vont chanter."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Samedi prochain, l'école va organiser sa fête annuelle.",
+     "exp": "Va organiser: va-or-ga-ni-ZÉ. O final -er do infinitivo soa como É."
+    },
+    {
+     "t": "mc",
+     "q": "Que va-t-il se passer s'il pleut ?",
+     "op": [
+      "La fête est annulée.",
+      "La fête a lieu dans le gymnase.",
+      "La fête continue dans la cour.",
+      "La fête est remise à jeudi."
+     ],
+     "r": 1,
+     "exp": "O texto diz: S'il pleut, la fête va avoir lieu dans le gymnase."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Un",
+      "clown",
+      "va",
+      "faire",
+      "un",
+      "spectacle"
+     ],
+     "resp": "Un clown va faire un spectacle",
+     "exp": "Futur proche: sujeito + va + infinitivo (faire)."
+    },
+    {
+     "t": "gap",
+     "q": "Moi, je ___ participer à la course avec mes amis.",
+     "resp": [
+      "vais"
+     ],
+     "exp": "Com je, aller = vais: je vais participer."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que você vai fazer neste fim de semana?",
+     "frase": "Qu'est-ce que tu vas faire ce week-end ?",
+     "modelo": "Ce week-end, je vais aller au cinéma avec mes amis.",
+     "min": 5,
+     "chave": [
+      "vais",
+      "vas",
+      "va",
+      "allons",
+      "vont"
+     ],
+     "exp": "Use je vais + infinitivo: je vais étudier, je vais voir mes amis, je vais rester à la maison."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase exprime un futur proche ?",
+     "op": [
+      "Nous avons visité le musée hier.",
+      "Nous allons visiter le musée demain.",
+      "Nous visitions le musée souvent.",
+      "Nous sommes allés au musée."
+     ],
+     "r": 1,
+     "exp": "Futur proche = aller no presente + infinitivo: nous allons visiter."
+    },
+    {
+     "t": "gap",
+     "q": "Les enfants ne ___ pas venir à la fête, ils sont malades.",
+     "resp": [
+      "vont"
+     ],
+     "exp": "Negação do futur proche: ne + vont + pas + infinitivo."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Chercher un logement",
+   "objetivo": "Comparar anúncios de moradia.",
+   "foco": "Comparatif et superlatif",
+   "explicacao": [
+    "Comparativo: plus / moins / aussi + adjetivo + que. Ex.: Le studio est plus petit que l'appartement.",
+    "Superlativo: le/la/les plus ou le/la/les moins + adjetivo. Ex.: C'est le logement le moins cher.",
+    "Atenção: bon (bom) - meilleur (melhor): Cette cuisine est meilleure. Nunca 'plus bon'. Já bien - mieux (advérbio).",
+    "Que = do que. O adjetivo concorda com o substantivo: une grande cuisine, un grand balcon."
+   ],
+   "vocab": [
+    {
+     "en": "un loyer",
+     "pt": "um aluguel"
+    },
+    {
+     "en": "un étage",
+     "pt": "um andar"
+    },
+    {
+     "en": "un ascenseur",
+     "pt": "um elevador"
+    },
+    {
+     "en": "le rez-de-chaussée",
+     "pt": "o térreo"
+    },
+    {
+     "en": "un balcon",
+     "pt": "uma varanda"
+    },
+    {
+     "en": "calme",
+     "pt": "calmo, tranquilo"
+    },
+    {
+     "en": "bon marché",
+     "pt": "barato"
+    },
+    {
+     "en": "un quartier",
+     "pt": "um bairro"
+    }
+   ],
+   "material": {
+    "titulo": "Trois annonces de logement",
+    "texto": "Annonce 1 : appartement de 45 m², 3e étage sans ascenseur, en centre-ville. Un salon, une chambre, une petite cuisine. Loyer : 550 € par mois. Annonce 2 : appartement de 60 m², 1er étage avec ascenseur, à quinze minutes du centre en bus. Deux chambres, une grande cuisine, un balcon. Loyer : 680 € par mois. Annonce 3 : studio de 25 m², rez-de-chaussée, dans le quartier le plus calme de la ville. C'est le logement le moins cher des trois : 400 € par mois. Mais il est plus petit que les autres et il n'y a pas de cuisine séparée. Dans les trois cas, les charges sont comprises dans le loyer. Les visites ont lieu le week-end."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel logement est le plus grand ?",
+     "op": [
+      "l'annonce 1",
+      "l'annonce 2",
+      "l'annonce 3",
+      "Ils ont la même taille."
+     ],
+     "r": 1,
+     "exp": "60 m² (annonce 2) é maior que 45 m² e 25 m²."
+    },
+    {
+     "t": "gap",
+     "q": "L'appartement de l'annonce 2 est ___ loin du centre que celui de l'annonce 1.",
+     "resp": [
+      "plus"
+     ],
+     "exp": "O apartamento 2 fica a 15 minutos de ônibus do centro; o 1 está no centro: plus loin que."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Le studio est plus petit que les autres appartements.",
+     "exp": "Plus petit: o s de 'plus' não se pronuncia antes de consoante (plu pe-TI). Que soa 'ke'."
+    },
+    {
+     "t": "mc",
+     "q": "Marc cherche un logement très bon marché et calme. Quelle annonce choisit-il ?",
+     "op": [
+      "l'annonce 1",
+      "l'annonce 2",
+      "l'annonce 3",
+      "aucune"
+     ],
+     "r": 2,
+     "exp": "O estúdio é o mais barato (400 €) e fica no bairro mais calmo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "L'appartement",
+      "est",
+      "plus",
+      "grand",
+      "que",
+      "le",
+      "studio"
+     ],
+     "resp": "L'appartement est plus grand que le studio",
+     "exp": "Estrutura do comparativo: est + plus + adjetivo + que + termo de comparação."
+    },
+    {
+     "t": "gap",
+     "q": "Le studio est le logement le ___ cher des trois.",
+     "resp": [
+      "moins"
+     ],
+     "exp": "O mais barato = o menos caro: le moins cher. Superlativo: le + moins/plus + adjetivo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: seu apartamento ou sua casa é maior ou menor do que a de seus amigos?",
+     "frase": "Ton logement est plus grand ou plus petit que celui de tes amis ?",
+     "modelo": "Mon appartement est plus petit que la maison de ma tante.",
+     "min": 5,
+     "chave": [
+      "plus",
+      "moins",
+      "aussi",
+      "que"
+     ],
+     "exp": "Use plus/moins + adjetivo + que. Ex.: Ma chambre est plus calme que le salon."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Cette cuisine est plus bonne que l'autre.",
+      "Cette cuisine est meilleure que l'autre.",
+      "Cette cuisine est plus meilleure que l'autre.",
+      "Cette cuisine est la plus bon."
+     ],
+     "r": 1,
+     "exp": "Bon tem comparativo especial: meilleur(e). Não se diz 'plus bon'."
+    },
+    {
+     "t": "gap",
+     "q": "La cuisine de l'annonce 2 est ___ que celle du studio. (bon)",
+     "resp": [
+      "meilleure"
+     ],
+     "exp": "Cuisine é feminino: meilleure (comparativo de bonne).",
+     "dica": "BON"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Faire les courses",
+   "objetivo": "Entender uma lista de compras e usar os artigos partitivos.",
+   "foco": "Partitifs: du, de la, de l', des; pas de",
+   "explicacao": [
+    "Partitivo = uma parte de algo que não se conta: du pain (m), de la salade (f), de l'eau (antes de vogal), des tomates (plural).",
+    "Depois de negação, vira de (d'): Je n'ai pas de fromage. Je ne mange pas de viande. Exceção: com être (ce n'est pas du pain).",
+    "Depois de expressões de quantidade, só de: beaucoup de lait, un peu de sel, un kilo de pommes.",
+    "Atenção: em português dizemos só 'como pão'. Em francês o partitivo é obrigatório: je mange du pain."
+   ],
+   "vocab": [
+    {
+     "en": "le marché",
+     "pt": "a feira / o mercado"
+    },
+    {
+     "en": "une liste",
+     "pt": "uma lista"
+    },
+    {
+     "en": "l'huile (f)",
+     "pt": "o azeite / óleo"
+    },
+    {
+     "en": "le sel",
+     "pt": "o sal"
+    },
+    {
+     "en": "la crème",
+     "pt": "o creme de leite"
+    },
+    {
+     "en": "la glace",
+     "pt": "o sorvete"
+    },
+    {
+     "en": "la viande",
+     "pt": "a carne"
+    },
+    {
+     "en": "un légume",
+     "pt": "um legume / uma verdura"
+    }
+   ],
+   "material": {
+    "titulo": "Un dîner pour six personnes",
+    "texto": "Salut Mathilde ! Ce soir, je prépare un dîner pour six personnes. Peux-tu passer au marché avant 19 h ? Voici la liste : pour l'entrée, j'ai besoin de la salade et des tomates. Pour le plat, je fais des pâtes. J'ai de l'huile et du sel, mais je n'ai pas de fromage et je n'ai plus de crème. Achète aussi du pain et de l'eau gazeuse. Pour le dessert, je ne fais pas de gâteau : je prends de la glace à la vanille. Attention, Paul ne mange pas de viande ! Il préfère manger des légumes. Merci beaucoup ! Camille"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qu'est-ce que Camille n'a plus à la maison ?",
+     "op": [
+      "du sel",
+      "de l'huile",
+      "de la crème",
+      "du pain"
+     ],
+     "r": 2,
+     "exp": "O texto diz: je n'ai plus de crème. Ela ainda tem sal e azeite."
+    },
+    {
+     "t": "gap",
+     "q": "J'ai ___ huile et du sel.",
+     "resp": [
+      "de l'",
+      "de l’"
+     ],
+     "exp": "Huile começa com vogal: de l'huile (partitivo feminino antes de vogal)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je n'ai pas de fromage et je n'ai plus de crème.",
+     "exp": "Depois da negação, du/de la viram de: pas DE fromage. Fromage: fro-MAJ."
+    },
+    {
+     "t": "mc",
+     "q": "Que prend Camille pour le dessert ?",
+     "op": [
+      "un gâteau au chocolat",
+      "de la glace à la vanille",
+      "des fruits",
+      "du fromage"
+     ],
+     "r": 1,
+     "exp": "O texto diz: je ne fais pas de gâteau : je prends de la glace à la vanille."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Paul",
+      "ne",
+      "mange",
+      "pas",
+      "de",
+      "viande"
+     ],
+     "resp": "Paul ne mange pas de viande",
+     "exp": "Na negação, o partitivo vira de: ne mange pas de viande (não 'pas de la viande')."
+    },
+    {
+     "t": "gap",
+     "q": "Il n'y a plus ___ lait dans le frigo.",
+     "resp": [
+      "de",
+      "d'"
+     ],
+     "exp": "Negação + quantidade zero: de lait (nunca 'du lait' aqui)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que você come no café da manhã?",
+     "frase": "Qu'est-ce que tu manges au petit-déjeuner ?",
+     "modelo": "Au petit-déjeuner, je mange du pain et je bois du café.",
+     "min": 5,
+     "chave": [
+      "du",
+      "de la",
+      "de l'",
+      "des",
+      "pain",
+      "café",
+      "mange",
+      "bois"
+     ],
+     "exp": "Use du/de la/des: je mange du pain, je bois du café, je mange des fruits."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je ne veux pas du café.",
+      "Je veux pas des café.",
+      "Je ne veux pas de la café.",
+      "Je ne veux pas de café."
+     ],
+     "r": 3,
+     "exp": "Depois de ne... pas, o partitivo vira de: pas de café."
+    },
+    {
+     "t": "gap",
+     "q": "Pour faire ce gâteau, il faut ___ farine, des œufs et du sucre.",
+     "resp": [
+      "de la"
+     ],
+     "exp": "Farine é feminino: de la farine. Il faut + partitivo."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Nous déménageons !",
+   "objetivo": "Entender um e-mail pessoal e usar os possessivos.",
+   "foco": "Adjectifs possessifs: mon, ton, son, notre, votre, leur",
+   "explicacao": [
+    "Os possessivos concordam com a coisa possuída, não com o dono: son frère / sa sœur (de ele ou de ela). Singular: mon, ma, mes; ton, ta, tes; son, sa, ses.",
+    "Plural dos donos: notre/nos, votre/vos, leur/leurs. Ex.: nos amis, leur maison, leurs enfants.",
+    "Antes de vogal usa-se mon/ton/son mesmo com feminino: mon amie, ton école, son adresse.",
+    "Cuidado: em português 'seu' serve para tudo. Em francês escolha: son/sa/ses (ele, ela), ton/ta/tes (tu), votre/vos (você, vocês)."
+   ],
+   "vocab": [
+    {
+     "en": "déménager",
+     "pt": "mudar de casa"
+    },
+    {
+     "en": "une adresse",
+     "pt": "um endereço"
+    },
+    {
+     "en": "un immeuble",
+     "pt": "um prédio"
+    },
+    {
+     "en": "une affaire",
+     "pt": "um objeto, pertence"
+    },
+    {
+     "en": "un carton",
+     "pt": "uma caixa de papelão"
+    },
+    {
+     "en": "un ours en peluche",
+     "pt": "um urso de pelúcia"
+    },
+    {
+     "en": "ancien",
+     "pt": "antigo, anterior"
+    },
+    {
+     "en": "aider",
+     "pt": "ajudar"
+    }
+   ],
+   "material": {
+    "titulo": "Notre déménagement",
+    "texto": "Bonjour Sophie, comme tu le sais, ma famille déménage samedi. Mes parents ont vendu leur maison et ils ont trouvé un appartement près de mon école. Notre nouvelle adresse est le 12, rue des Lilas. Mon frère Antoine est content : sa chambre est plus grande et ses amis habitent dans le même immeuble. Moi, je garde mes affaires dans deux cartons seulement ! Ma petite sœur a oublié son ours en peluche dans l'ancienne maison. Toi et tes parents, pouvez-vous venir nous aider avec votre voiture ? Apportez vos gants et votre bonne humeur ! Ton amie, Julie"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quand la famille de Julie déménage-t-elle ?",
+     "op": [
+      "vendredi",
+      "samedi",
+      "dimanche",
+      "lundi"
+     ],
+     "r": 1,
+     "exp": "O texto diz: ma famille déménage samedi."
+    },
+    {
+     "t": "gap",
+     "q": "Mes parents ont vendu ___ maison.",
+     "resp": [
+      "leur"
+     ],
+     "exp": "Os pais (dois donos) venderam uma casa (um objeto): leur maison."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Notre nouvelle adresse est le douze, rue des Lilas.",
+     "exp": "Notre: NÓ-tr (o o é aberto). Rue: o som u francês, com lábios em bico, como em 'i'."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi Antoine est-il content ?",
+     "op": [
+      "Il a un nouveau vélo.",
+      "Sa chambre est plus grande et ses amis habitent dans l'immeuble.",
+      "Il change d'école.",
+      "Il garde tous ses jouets."
+     ],
+     "r": 1,
+     "exp": "O texto diz: sa chambre est plus grande et ses amis habitent dans le même immeuble."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Ma",
+      "petite",
+      "sœur",
+      "a",
+      "oublié",
+      "son",
+      "ours",
+      "en",
+      "peluche"
+     ],
+     "resp": "Ma petite sœur a oublié son ours en peluche",
+     "exp": "Ours é masculino: son ours (a posse é dela, mas o possessivo concorda com ours)."
+    },
+    {
+     "t": "gap",
+     "q": "Antoine range ___ affaires dans des cartons.",
+     "resp": [
+      "ses"
+     ],
+     "exp": "Affaires é feminino plural, o dono é um só (Antoine): ses affaires."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: apresente sua família.",
+     "frase": "Présente ta famille : comment s'appellent ton père, ta mère, tes frères et sœurs ?",
+     "modelo": "Mon père s'appelle Carlos et ma mère s'appelle Ana. J'ai une sœur.",
+     "min": 5,
+     "chave": [
+      "mon",
+      "ma",
+      "mes",
+      "père",
+      "mère",
+      "sœur",
+      "frère",
+      "s'appelle"
+     ],
+     "exp": "Use mon père, ma mère, mes parents. Ex.: Ma sœur s'appelle Clara."
+    },
+    {
+     "t": "mc",
+     "q": "Marie dit à ses amis : « Où sont ___ clés ? »",
+     "op": [
+      "votre",
+      "vos",
+      "tes",
+      "leurs"
+     ],
+     "r": 1,
+     "exp": "Ela fala com vários amigos (vous) e as chaves são plural: vos clés."
+    },
+    {
+     "t": "gap",
+     "q": "J'attends ___ amie Clara devant la gare.",
+     "resp": [
+      "mon"
+     ],
+     "exp": "Antes de vogal, mesmo no feminino: mon amie (não 'ma amie')."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Les soldes",
+   "objetivo": "Entender um anúncio de promoções e usar os demonstrativos.",
+   "foco": "Adjectifs démonstratifs: ce, cet, cette, ces",
+   "explicacao": [
+    "Demonstrativos: ce (masc.), cet (masc. antes de vogal ou h mudo), cette (fem.), ces (plural). Ex.: ce pantalon, cet imperméable, cette veste, ces chaussures.",
+    "Para distinguir perto e longe: ce livre-ci (este), ce livre-là (aquele).",
+    "Em francês não existe 'este/esse/aquele': ce serve para os três. Ex.: cet après-midi = esta tarde; ce soir = hoje à noite.",
+    "Cuidado: cet hôtel (h mudo) e cet été, mas ce héros (h aspirado)."
+   ],
+   "vocab": [
+    {
+     "en": "les soldes",
+     "pt": "a liquidação"
+    },
+    {
+     "en": "un pantalon",
+     "pt": "uma calça"
+    },
+    {
+     "en": "une veste",
+     "pt": "uma jaqueta"
+    },
+    {
+     "en": "un imperméable",
+     "pt": "uma capa de chuva"
+    },
+    {
+     "en": "une paire",
+     "pt": "um par"
+    },
+    {
+     "en": "à moitié prix",
+     "pt": "pela metade do preço"
+    },
+    {
+     "en": "la réduction",
+     "pt": "o desconto"
+    },
+    {
+     "en": "une cabine d'essayage",
+     "pt": "um provador"
+    }
+   ],
+   "material": {
+    "titulo": "Soldes d'hiver chez Mode&Vous",
+    "texto": "Cette semaine, ce magasin propose des prix très bas. Ce pantalon noir coûte 20 € au lieu de 45 €. Cette veste en cuir est à 60 € et ces chaussures de sport sont à 35 €. Cet imperméable bleu, parfait pour la pluie, est à 30 €. Ces articles sont en vente jusqu'au samedi 20 janvier. Cet après-midi, la deuxième paire de chaussures est à moitié prix. Les clients avec cette carte de fidélité reçoivent 10 % de réduction en plus. Ce soir, le magasin ferme à 20 h. Les cabines d'essayage sont au fond, à gauche. Les paiements par carte sont acceptés et tout le monde peut essayer les vêtements avant d'acheter."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Combien coûte la veste en cuir ?",
+     "op": [
+      "20 €",
+      "35 €",
+      "60 €",
+      "30 €"
+     ],
+     "r": 2,
+     "exp": "O texto diz: Cette veste en cuir est à 60 €."
+    },
+    {
+     "t": "gap",
+     "q": "___ pantalon noir coûte 20 € au lieu de 45 €.",
+     "resp": [
+      "ce"
+     ],
+     "exp": "Pantalon é masculino e começa com consoante: ce pantalon."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Cet imperméable bleu est parfait pour la pluie.",
+     "exp": "Cet: sét (pronuncia-se o t). Imperméable: ãn-pér-mê-A-bl."
+    },
+    {
+     "t": "mc",
+     "q": "Jusqu'à quand les articles sont-ils en vente ?",
+     "op": [
+      "jusqu'à ce soir",
+      "jusqu'au samedi 20 janvier",
+      "toute l'année",
+      "jusqu'à la fin du mois"
+     ],
+     "r": 1,
+     "exp": "O texto diz: Ces articles sont en vente jusqu'au samedi 20 janvier."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Ces",
+      "chaussures",
+      "de",
+      "sport",
+      "sont",
+      "à",
+      "35",
+      "euros"
+     ],
+     "resp": "Ces chaussures de sport sont à 35 euros",
+     "exp": "Chaussures é feminino plural: ces (serve para masc. e fem. no plural)."
+    },
+    {
+     "t": "gap",
+     "q": "___ après-midi, la deuxième paire de chaussures est à moitié prix.",
+     "resp": [
+      "cet"
+     ],
+     "exp": "Après-midi começa com vogal e é masculino: cet après-midi."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: de qual peça de roupa você gosta mais e por quê?",
+     "frase": "Quel vêtement préfères-tu ? Pourquoi ?",
+     "modelo": "Je préfère ce pantalon noir parce qu'il est confortable.",
+     "min": 5,
+     "chave": [
+      "ce",
+      "cet",
+      "cette",
+      "ces",
+      "préfère",
+      "aime"
+     ],
+     "exp": "Use ce/cette/ces + peça. Ex.: J'aime cette veste parce qu'elle est belle."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Ce hôtel est près de la gare.",
+      "Cette hôtel est près de la gare.",
+      "Ces hôtel est près de la gare.",
+      "Cet hôtel est près de la gare."
+     ],
+     "r": 3,
+     "exp": "Hôtel é masculino e o h é mudo: cet hôtel."
+    },
+    {
+     "t": "gap",
+     "q": "Je prends ___ chaussures-là, elles sont plus confortables.",
+     "resp": [
+      "ces"
+     ],
+     "exp": "Chaussures é plural: ces chaussures. O -là mostra que é aquele par, mais longe."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Comment venir chez moi",
+   "objetivo": "Seguir um itinerário e entender as preposições de lugar.",
+   "foco": "Prépositions de lieu: devant, derrière, entre, à côté de, en face de; à/en/au + pays",
+   "explicacao": [
+    "Preposições de lugar: devant (na frente de), derrière (atrás de), entre (entre), à côté de (ao lado de), en face de (em frente a), sous (embaixo de), sur (sobre), dans (dentro de), près de (perto de).",
+    "Com de + artigo: à côté du parc, en face de la pharmacie, près des écoles.",
+    "Cidades: à Paris, à Lyon. Países femininos: en France, en Italie. Masculinos: au Brésil, au Portugal. Plural: aux États-Unis.",
+    "Direções: tourne à gauche / à droite, va tout droit, traverse la place."
+   ],
+   "vocab": [
+    {
+     "en": "tourner",
+     "pt": "virar"
+    },
+    {
+     "en": "tout droit",
+     "pt": "em frente, reto"
+    },
+    {
+     "en": "traverser",
+     "pt": "atravessar"
+    },
+    {
+     "en": "une pharmacie",
+     "pt": "uma farmácia"
+    },
+    {
+     "en": "une boulangerie",
+     "pt": "uma padaria"
+    },
+    {
+     "en": "la poste",
+     "pt": "o correio"
+    },
+    {
+     "en": "un escalier",
+     "pt": "uma escada"
+    },
+    {
+     "en": "se perdre",
+     "pt": "se perder"
+    }
+   ],
+   "material": {
+    "titulo": "Le chemin jusqu'à chez Hugo",
+    "texto": "Salut Tom, voici comment venir chez moi. Quand tu sors de la gare, tourne à gauche et marche jusqu'à la pharmacie. En face de la pharmacie, il y a une boulangerie. Va tout droit, passe devant la poste et traverse la place. Mon immeuble est entre la banque et le cinéma, à côté d'un petit parc. J'habite au troisième étage, c'est la porte verte. Mon vélo est dans la cour, sous l'escalier, mais ne le touche pas ! Si tu te perds, appelle-moi : je suis chez moi tout l'après-midi. À samedi ! Hugo"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Où se trouve la boulangerie ?",
+     "op": [
+      "à côté de la poste",
+      "derrière la gare",
+      "en face de la pharmacie",
+      "entre la banque et le cinéma"
+     ],
+     "r": 2,
+     "exp": "O texto diz: En face de la pharmacie, il y a une boulangerie. 'Entre la banque et le cinéma' é o prédio de Hugo."
+    },
+    {
+     "t": "gap",
+     "q": "Mon immeuble est ___ la banque et le cinéma.",
+     "resp": [
+      "entre"
+     ],
+     "exp": "Entre = entre dois lugares: entre la banque et le cinéma."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Quand tu sors de la gare, tourne à gauche.",
+     "exp": "Sors: sor (o s final é mudo). Gauche: gôch (ch = som de x em 'xícara')."
+    },
+    {
+     "t": "mc",
+     "q": "Où est le vélo de Hugo ?",
+     "op": [
+      "devant la porte verte",
+      "dans la cour, sous l'escalier",
+      "au troisième étage",
+      "à côté du parc"
+     ],
+     "r": 1,
+     "exp": "O texto diz: Mon vélo est dans la cour, sous l'escalier."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Tourne",
+      "à",
+      "gauche",
+      "devant",
+      "la",
+      "pharmacie"
+     ],
+     "resp": "Tourne à gauche devant la pharmacie",
+     "exp": "Tourne à gauche = vire à esquerda. Devant la pharmacie = na frente da farmácia."
+    },
+    {
+     "t": "gap",
+     "q": "Le petit parc est ___ de mon immeuble.",
+     "resp": [
+      "à côté",
+      "a côté"
+     ],
+     "exp": "À côté de = ao lado de. Aqui sem artigo depois: à côté de mon immeuble."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: onde fica sua casa? O que há perto?",
+     "frase": "Où est ta maison ? Qu'est-ce qu'il y a près de chez toi ?",
+     "modelo": "Ma maison est près de la plage, à côté d'un supermarché.",
+     "min": 5,
+     "chave": [
+      "près",
+      "à côté",
+      "devant",
+      "derrière",
+      "en face",
+      "entre",
+      "dans"
+     ],
+     "exp": "Use près de / à côté de / en face de. Ex.: Il y a une école en face de chez moi."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je vais à France.",
+      "Je vais en France.",
+      "Je vais au France.",
+      "Je vais dans France."
+     ],
+     "r": 1,
+     "exp": "País feminino: en France. Masculino: au Brésil. Plural: aux États-Unis."
+    },
+    {
+     "t": "gap",
+     "q": "Nous partons en vacances ___ Portugal.",
+     "resp": [
+      "au"
+     ],
+     "exp": "Portugal é masculino: au Portugal."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Programme du festival",
+   "objetivo": "Ler um programa de evento e usar preposições de tempo.",
+   "foco": "Prépositions de temps: à, de... à, du... au, avant, après, pendant, depuis, il y a, en",
+   "explicacao": [
+    "Hora: à 8 h. Dia: lundi, le lundi (todo(s) o(s) segunda(s)). Mês: en juillet, au mois de juillet. Duração: de 10 h à 12 h, du 5 au 7 juillet.",
+    "Antes e depois: avant le déjeuner, après le concert, jusqu'à 18 h, à partir de 15 h.",
+    "Pendant = durante (pendant le dîner). Depuis = desde / faz (J'habite ici depuis deux ans).",
+    "Il y a = faz (no passado): Je suis arrivé il y a deux jours. Não confunda com il y a = há/existe."
+   ],
+   "vocab": [
+    {
+     "en": "un atelier",
+     "pt": "uma oficina, um workshop"
+    },
+    {
+     "en": "l'inscription",
+     "pt": "a inscrição"
+    },
+    {
+     "en": "un débutant",
+     "pt": "um iniciante"
+    },
+    {
+     "en": "la durée",
+     "pt": "a duração"
+    },
+    {
+     "en": "le départ",
+     "pt": "a partida, a saída"
+    },
+    {
+     "en": "gratuit",
+     "pt": "gratuito"
+    },
+    {
+     "en": "la salle des fêtes",
+     "pt": "o salão de festas"
+    },
+    {
+     "en": "en cas de pluie",
+     "pt": "em caso de chuva"
+    }
+   ],
+   "material": {
+    "titulo": "Festival de musique de Saint-Malo",
+    "texto": "Du 5 au 7 juillet. Vendredi 5 juillet : concert d'ouverture à 20 h 30 sur la plage. L'entrée est gratuite pour les enfants de moins de 12 ans. Samedi 6 juillet : de 10 h à 12 h, atelier de guitare pour les débutants (inscription avant le 1er juillet). À partir de 15 h, concerts dans les rues. Pendant le dîner, un orchestre joue dans le port. Dimanche 7 juillet : le matin, balade musicale en bateau (départ à 9 h, durée : deux heures). Après le déjeuner, concert final à 16 h. Les portes ferment à 18 h. En cas de pluie, les concerts ont lieu dans la salle des fêtes pendant tout le week-end."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "À quelle heure commence l'atelier de guitare ?",
+     "op": [
+      "à 9 h",
+      "à 10 h",
+      "à 15 h",
+      "à 20 h 30"
+     ],
+     "r": 1,
+     "exp": "O texto diz: samedi 6 juillet : de 10 h à 12 h, atelier de guitare."
+    },
+    {
+     "t": "gap",
+     "q": "Le festival dure ___ 5 au 7 juillet.",
+     "resp": [
+      "du"
+     ],
+     "exp": "Período de datas: du 5 au 7 juillet (de + le = du)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Le concert d'ouverture commence à vingt heures trente.",
+     "exp": "Vingt: vẽ (nasal). Trente: trãt. Heures: êr (o h é mudo, liaison com vingt: vẽ-têr)."
+    },
+    {
+     "t": "mc",
+     "q": "Jusqu'à quand peut-on s'inscrire à l'atelier de guitare ?",
+     "op": [
+      "jusqu'au 5 juillet",
+      "jusqu'au samedi matin",
+      "avant le 1er juillet",
+      "jusqu'à 18 h"
+     ],
+     "r": 2,
+     "exp": "O texto diz: inscription avant le 1er juillet."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "La",
+      "balade",
+      "en",
+      "bateau",
+      "dure",
+      "deux",
+      "heures"
+     ],
+     "resp": "La balade en bateau dure deux heures",
+     "exp": "Durer = durar. Duração: dure deux heures."
+    },
+    {
+     "t": "gap",
+     "q": "Le concert final a lieu ___ le déjeuner, à 16 h.",
+     "resp": [
+      "après",
+      "apres"
+     ],
+     "exp": "Après = depois de. O concerto final é depois do almoço."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: a que horas você acorda no domingo?",
+     "frase": "À quelle heure te lèves-tu le dimanche ?",
+     "modelo": "Le dimanche, je me lève à neuf heures.",
+     "min": 4,
+     "chave": [
+      "à",
+      "vers",
+      "heures",
+      "heure",
+      "dimanche",
+      "lève"
+     ],
+     "exp": "Use à + hora: à neuf heures, à huit heures et demie. Ex.: Je me lève vers dix heures."
+    },
+    {
+     "t": "mc",
+     "q": "Mon anniversaire est ___ mars.",
+     "op": [
+      "à",
+      "en",
+      "dans",
+      "au"
+     ],
+     "r": 1,
+     "exp": "Com meses usamos en (en mars, en juillet) ou au mois de."
+    },
+    {
+     "t": "gap",
+     "q": "Nous sommes arrivés à Saint-Malo ___ deux jours.",
+     "resp": [
+      "il y a"
+     ],
+     "exp": "Il y a + duração = faz (tempo passado): il y a deux jours = há dois dias. Não confunda com depuis."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Un concert samedi",
+   "objetivo": "Entender um e-mail entre amigos e usar os pronomes COD.",
+   "foco": "Pronoms COD: me, te, le, la, l', les",
+   "explicacao": [
+    "O COD (complemento direto) responde a 'quem?' ou 'o quê?'. Pronomes: me, te, le, la (l'), nous, vous, les.",
+    "O pronome vem antes do verbo: Je les achète. Je ne l'ai pas trouvé. No passé composé, vem antes do auxiliar.",
+    "No passé composé, o particípio concorda com o COD que vem antes: Les billets ? Je les ai achetés. La clé ? Je l'ai perdue.",
+    "Em português dizemos 'comprei-os / comprei eles'; em francês o pronome nunca vem depois do verbo (exceto no imperativo afirmativo)."
+   ],
+   "vocab": [
+    {
+     "en": "un billet",
+     "pt": "um ingresso, uma passagem"
+    },
+    {
+     "en": "un programme",
+     "pt": "um programa"
+    },
+    {
+     "en": "un voisin",
+     "pt": "um vizinho"
+    },
+    {
+     "en": "inviter",
+     "pt": "convidar"
+    },
+    {
+     "en": "des lunettes (f)",
+     "pt": "óculos"
+    },
+    {
+     "en": "chercher",
+     "pt": "procurar"
+    },
+    {
+     "en": "perdre",
+     "pt": "perder"
+    },
+    {
+     "en": "un kiosque",
+     "pt": "uma banca"
+    }
+   ],
+   "material": {
+    "titulo": "Rendez-vous pour le concert",
+    "texto": "Bonjour Nina, merci pour ton message. Tu me demandes si j'ai déjà acheté les billets pour le concert : oui, je les ai achetés hier. Pour le programme, je ne l'ai pas encore trouvé sur Internet. Tu connais Léo, mon voisin ? Je l'ai rencontré au lycée et je l'invite avec nous. Et ta cousine, tu l'invites aussi ? Je ne la connais pas, mais elle a l'air sympa. J'ai perdu mes lunettes : je les cherche partout. Rendez-vous à la gare à 18 h. Je t'attends devant le kiosque. Après le concert, nous allons dîner dans un petit restaurant près de la salle. À samedi, Marie"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quand Marie a-t-elle acheté les billets ?",
+     "op": [
+      "aujourd'hui",
+      "hier",
+      "samedi",
+      "il y a une semaine"
+     ],
+     "r": 1,
+     "exp": "O texto diz: je les ai achetés hier. Les = os ingressos."
+    },
+    {
+     "t": "gap",
+     "q": "Les billets ? Je ___ ai achetés hier.",
+     "resp": [
+      "les"
+     ],
+     "exp": "Billets é masculino plural: pronome les. O particípio concorda: achetés."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je l'ai rencontré au lycée et je l'invite avec nous.",
+     "exp": "L'ai: lé. Rencontré: ran-kon-TRÉ. Invite: ẽ-VIT."
+    },
+    {
+     "t": "mc",
+     "q": "Que cherche Marie partout ?",
+     "op": [
+      "son téléphone",
+      "ses lunettes",
+      "les billets",
+      "le programme"
+     ],
+     "r": 1,
+     "exp": "O texto diz: J'ai perdu mes lunettes : je les cherche partout. O programa ela ainda não encontrou na internet."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "ne",
+      "l'ai",
+      "pas",
+      "encore",
+      "trouvé"
+     ],
+     "resp": "Je ne l'ai pas encore trouvé",
+     "exp": "Ordem: ne + pronome + auxiliar + pas + encore + particípio. L' = le (o programa)."
+    },
+    {
+     "t": "gap",
+     "q": "Ta cousine ? Je ne ___ connais pas.",
+     "resp": [
+      "la"
+     ],
+     "exp": "Cousine é feminino: pronome la. Connais começa com consoante, então fica la (e não l')."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, usando um pronome: você assiste TV com frequência?",
+     "frase": "Tu regardes souvent la télé ?",
+     "modelo": "Oui, je la regarde tous les soirs.",
+     "min": 4,
+     "chave": [
+      "la",
+      "le",
+      "l'",
+      "les",
+      "regarde"
+     ],
+     "exp": "Troque o objeto pelo pronome: la télé - je la regarde. Ex.: Non, je ne la regarde pas."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je les ai acheté.",
+      "Je ai les achetés.",
+      "Je les ai achetés.",
+      "Je les achetés ai."
+     ],
+     "r": 2,
+     "exp": "O COD les vem antes do auxiliar e o particípio concorda: achetés."
+    },
+    {
+     "t": "gap",
+     "q": "Les clés ? Je les ai ___ sur la table. (poser)",
+     "resp": [
+      "posées",
+      "posees"
+     ],
+     "exp": "O COD les (clés, feminino plural) vem antes: o particípio concorda: posées.",
+     "dica": "POSER"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Postuler à un emploi",
+   "objetivo": "Entender uma mensagem profissional e usar os pronomes COI.",
+   "foco": "Pronoms COI: me, te, lui, nous, vous, leur",
+   "explicacao": [
+    "O COI (complemento indireto) responde a 'a quem?' e vem com à: parler à, téléphoner à, donner à, écrire à, répondre à.",
+    "Pronomes: me (m'), te (t'), lui (a ele/ela), nous, vous, leur (a eles/elas). Ex.: Je lui parle. Je leur écris.",
+    "Lui serve para masculino e feminino. Leur é sempre sem -s como pronome (Je leur parle).",
+    "Cuidado: attendre (esperar), chercher (procurar) e écouter (ouvir) são diretos em francês: je l'attends, je la cherche."
+   ],
+   "vocab": [
+    {
+     "en": "postuler",
+     "pt": "candidatar-se"
+    },
+    {
+     "en": "un poste",
+     "pt": "um cargo, uma vaga"
+    },
+    {
+     "en": "une secrétaire",
+     "pt": "uma secretária"
+    },
+    {
+     "en": "en réunion",
+     "pt": "em reunião"
+    },
+    {
+     "en": "rappeler",
+     "pt": "ligar de volta"
+    },
+    {
+     "en": "un patron",
+     "pt": "um chefe, patrão"
+    },
+    {
+     "en": "un rendez-vous",
+     "pt": "um encontro, uma entrevista marcada"
+    },
+    {
+     "en": "cordialement",
+     "pt": "atenciosamente"
+    }
+   ],
+   "material": {
+    "titulo": "Candidature pour un poste",
+    "texto": "Bonjour Monsieur Dupuis, je vous écris au sujet du poste d'assistant. J'ai téléphoné à votre secrétaire hier et elle m'a répondu que vous étiez en réunion. Je lui ai laissé mon numéro, mais personne ne m'a rappelé. Mon ancien patron vous a envoyé une lettre de recommandation. Je lui ai demandé de le faire. Je parle français et anglais, et j'ai deux ans d'expérience dans une agence de voyages. Je voudrais vous montrer mon CV et vous poser quelques questions. Pouvez-vous me donner un rendez-vous cette semaine ? Je vous remercie d'avance. Cordialement, Paul Garnier"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qu'a répondu la secrétaire à Paul ?",
+     "op": [
+      "Que le poste était déjà pris.",
+      "Que M. Dupuis était en réunion.",
+      "Que M. Dupuis allait rappeler.",
+      "Que Paul devait écrire une lettre."
+     ],
+     "r": 1,
+     "exp": "O texto diz: elle m'a répondu que vous étiez en réunion."
+    },
+    {
+     "t": "gap",
+     "q": "J'ai téléphoné à votre secrétaire : je ___ ai laissé mon numéro.",
+     "resp": [
+      "lui"
+     ],
+     "exp": "Téléphoner à + pessoa = COI. Para uma pessoa (ele ou ela): lui."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Pouvez-vous me donner un rendez-vous cette semaine ?",
+     "exp": "Pouvez-vous: pu-VÉ-vu. Donner: do-NÊ. Semaine: se-MÉN."
+    },
+    {
+     "t": "mc",
+     "q": "Qui a envoyé une lettre de recommandation à M. Dupuis ?",
+     "op": [
+      "la secrétaire",
+      "l'ancien patron de Paul",
+      "Paul lui-même",
+      "un collègue de M. Dupuis"
+     ],
+     "r": 1,
+     "exp": "O texto diz: Mon ancien patron vous a envoyé une lettre de recommandation."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elle",
+      "m'a",
+      "répondu",
+      "que",
+      "vous",
+      "étiez",
+      "en",
+      "réunion"
+     ],
+     "resp": "Elle m'a répondu que vous étiez en réunion",
+     "exp": "Répondre à quelqu'un: m'a répondu = respondeu-me. M' = me (COI)."
+    },
+    {
+     "t": "gap",
+     "q": "Mes collègues ? Je ___ parle tous les jours.",
+     "resp": [
+      "leur"
+     ],
+     "exp": "Parler à + várias pessoas: leur (sem -s, pois aqui é pronome)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: para quem você telefona com frequência?",
+     "frase": "À qui téléphones-tu souvent ?",
+     "modelo": "Je téléphone souvent à ma mère. Je lui parle le dimanche.",
+     "min": 5,
+     "chave": [
+      "lui",
+      "leur",
+      "à",
+      "téléphone",
+      "parle"
+     ],
+     "exp": "Use téléphoner à + pessoa. Ex.: Je téléphone à mes amis. Je leur parle tous les jours."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je le téléphone.",
+      "Je téléphone lui.",
+      "Je lui téléphone.",
+      "Je la téléphone à lui."
+     ],
+     "r": 2,
+     "exp": "Téléphoner à quelqu'un: pronome COI antes do verbo: je lui téléphone."
+    },
+    {
+     "t": "gap",
+     "q": "Tes parents t'ont écrit ? - Oui, ils ___ ont envoyé une carte.",
+     "resp": [
+      "m'",
+      "me"
+     ],
+     "exp": "Quem fala é a pessoa a quem escreveram: ils m'ont envoyé (me/m' COI)."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Chez le médecin",
+   "objetivo": "Entender conselhos médicos e usar y, en, il faut e devoir.",
+   "foco": "Y et en (initiation); il faut / devoir",
+   "explicacao": [
+    "En substitui de + coisa ou uma quantidade: Tu as des frères ? J'en ai deux. Il n'y a plus de sirop ? J'en achète. Y substitui um lugar com à/dans/en: Tu vas à la pharmacie ? J'y vais.",
+    "Os dois ficam antes do verbo: J'y vais. Il n'y va pas. Il faut en faire. N'y allez pas !",
+    "Il faut + infinitivo = é preciso (regra geral). Il ne faut pas = não se deve. Devoir = ter de: je dois, tu dois, il doit, nous devons, vous devez, ils doivent.",
+    "Cuidado: il faut é impessoal e nunca muda. Ex.: Il faut boire de l'eau."
+   ],
+   "vocab": [
+    {
+     "en": "la fièvre",
+     "pt": "a febre"
+    },
+    {
+     "en": "la grippe",
+     "pt": "a gripe"
+    },
+    {
+     "en": "avoir mal à la tête",
+     "pt": "ter dor de cabeça"
+    },
+    {
+     "en": "un médicament",
+     "pt": "um remédio"
+    },
+    {
+     "en": "le sirop",
+     "pt": "o xarope"
+    },
+    {
+     "en": "la toux",
+     "pt": "a tosse"
+    },
+    {
+     "en": "se reposer",
+     "pt": "descansar"
+    },
+    {
+     "en": "un cabinet",
+     "pt": "um consultório"
+    }
+   ],
+   "material": {
+    "titulo": "Conseils du docteur Moreau",
+    "texto": "Pour votre grippe : vous avez de la fièvre et mal à la tête ? Il faut rester au lit et boire beaucoup d'eau. Vous devez prendre un médicament trois fois par jour, après les repas. Si vous n'en avez plus, allez à la pharmacie : elle ouvre à 8 h et vous y trouvez tout ce qu'il faut. Pour la toux, prenez du sirop : deux cuillères le soir. Le sport ? Il ne faut pas en faire pendant une semaine. Le travail ? N'y allez pas avant lundi. Si la fièvre continue après trois jours, vous devez appeler le cabinet."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Combien de fois par jour faut-il prendre le médicament ?",
+     "op": [
+      "une fois",
+      "deux fois",
+      "trois fois",
+      "quatre fois"
+     ],
+     "r": 2,
+     "exp": "O texto diz: un médicament trois fois par jour, après les repas."
+    },
+    {
+     "t": "gap",
+     "q": "Il n'y a plus de sirop. Je vais à la pharmacie pour ___ acheter.",
+     "resp": [
+      "en"
+     ],
+     "exp": "En substitui 'du sirop'. Com infinitivo, o pronome vem antes: pour en acheter."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Il faut rester au lit et boire beaucoup d'eau.",
+     "exp": "Faut: fô. Beaucoup: bô-KU. Eau: ô. Cuidado com o final de rester: É."
+    },
+    {
+     "t": "mc",
+     "q": "Que doit faire le patient si la fièvre continue après trois jours ?",
+     "op": [
+      "Prendre plus de sirop.",
+      "Aller au travail.",
+      "Faire du sport.",
+      "Appeler le cabinet."
+     ],
+     "r": 3,
+     "exp": "O texto diz: vous devez appeler le cabinet. O trabalho e o esporte são proibidos."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "N'y",
+      "allez",
+      "pas",
+      "avant",
+      "lundi"
+     ],
+     "resp": "N'y allez pas avant lundi",
+     "exp": "Y = au travail (lugar). Imperativo negativo: ne + y + verbo + pas."
+    },
+    {
+     "t": "gap",
+     "q": "La pharmacie ? Oui, j'___ vais maintenant.",
+     "resp": [
+      "y"
+     ],
+     "exp": "Y substitui um lugar (à la pharmacie): j'y vais."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que é preciso fazer quando se tem dor de cabeça?",
+     "frase": "Qu'est-ce qu'il faut faire quand on a mal à la tête ?",
+     "modelo": "Il faut se reposer et il faut boire de l'eau.",
+     "min": 5,
+     "chave": [
+      "il faut",
+      "faut",
+      "dois",
+      "devez",
+      "reposer",
+      "boire"
+     ],
+     "exp": "Use il faut + infinitivo: il faut dormir, il faut boire de l'eau, il faut prendre un médicament."
+    },
+    {
+     "t": "mc",
+     "q": "Du sport ? Il ne faut pas ___ faire.",
+     "op": [
+      "y",
+      "lui",
+      "en",
+      "le"
+     ],
+     "r": 2,
+     "exp": "Du sport = partitivo: o pronome é en (il ne faut pas en faire)."
+    },
+    {
+     "t": "gap",
+     "q": "Tu es malade : tu ___ aller chez le médecin. (devoir)",
+     "resp": [
+      "dois"
+     ],
+     "exp": "Devoir com tu: tu dois (você deve / precisa).",
+     "dica": "DEVOIR"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado : Compréhension des écrits",
+   "objetivo": "Treinar a prova de Compréhension des écrits do DELF A2 com cinco documentos curtos.",
+   "foco": "DELF A2 - Compréhension des écrits (QCM): annonce, e-mail, instructions, texte informatif, programme",
+   "explicacao": [
+    "Leia a pergunta antes do documento e procure a informação exata (hora, dia, condição). Os distratores usam palavras do texto, mas com outro sentido.",
+    "Atenção a pegadinhas: ne... pas (o que NÃO fazer), avant/après, au lieu de, plus/moins que.",
+    "Em cada documento, identifique o tipo (anúncio, e-mail, instruções, programa) e o objetivo: informar, pedir, convidar, aconselhar.",
+    "Na prova real, você tem cerca de 30 minutos. Aqui: leia os 5 documentos e responda sem traduzir palavra por palavra."
+   ],
+   "vocab": [
+    {
+     "en": "emprunter",
+     "pt": "pegar emprestado (não é 'emprestar')"
+    },
+    {
+     "en": "fermer",
+     "pt": "fechar"
+    },
+    {
+     "en": "lumineux",
+     "pt": "iluminado, claro"
+    },
+    {
+     "en": "décider",
+     "pt": "decidir"
+    },
+    {
+     "en": "couper",
+     "pt": "cortar"
+    },
+    {
+     "en": "le vinaigre",
+     "pt": "o vinagre"
+    },
+    {
+     "en": "s'inscrire",
+     "pt": "se inscrever"
+    },
+    {
+     "en": "un casque",
+     "pt": "um capacete"
+    },
+    {
+     "en": "obligatoire",
+     "pt": "obrigatório"
+    },
+    {
+     "en": "accompagné",
+     "pt": "acompanhado"
+    }
+   ],
+   "material": {
+    "titulo": "Cinq documents",
+    "texto": "Document 1. Bibliothèque Jean-Moulin. À partir du 3 mars, la bibliothèque ferme à 18 h au lieu de 19 h le samedi. Elle reste ouverte jusqu'à 20 h le mercredi. Vous pouvez emprunter cinq livres pendant trois semaines. Document 2. De : Clara. À : Julien. Salut Julien ! Hier, j'ai visité l'appartement près du parc. Il était lumineux et il avait un grand balcon, mais il est plus cher que l'autre : 720 € par mois. Je n'ai pas encore décidé. Peux-tu venir le voir avec moi samedi à 10 h ? Clara. Document 3. Pour faire la salade : coupez des tomates et du concombre, ajoutez de l'huile, du sel et un peu de fromage. Ne mettez pas de vinaigre. Servez la salade froide. Document 4. Le Tour de la ville est une course à vélo ouverte à tous. Elle a lieu dimanche 12 mai. Il faut s'inscrire avant jeudi sur le site de la mairie. Le départ est à 9 h devant la mairie. Les enfants de moins de dix ans doivent être accompagnés. Un casque est obligatoire. Document 5. Fête de la musique, samedi 21 juin. À 17 h, chorale des écoliers sur la place. À 19 h, groupe de rock dans le parc. À 21 h, concert de jazz gratuit au théâtre (réservation obligatoire). En cas de pluie, tous les concerts ont lieu au théâtre."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Document 1. À partir du 3 mars, quel jour la bibliothèque ferme-t-elle plus tôt ?",
+     "op": [
+      "le lundi",
+      "le mercredi",
+      "le samedi",
+      "le dimanche"
+     ],
+     "r": 2,
+     "exp": "O samedi fecha às 18 h em vez de 19 h. O mercredi fica aberta até 20 h."
+    },
+    {
+     "t": "mc",
+     "q": "Document 2. Que demande Clara à Julien ?",
+     "op": [
+      "De lui prêter 720 euros.",
+      "De visiter l'appartement avec elle.",
+      "De chercher un autre appartement.",
+      "De garder son balcon."
+     ],
+     "r": 1,
+     "exp": "Ela pergunta: Peux-tu venir le voir avec moi samedi à 10 h ? Le voir = visiter l'appartement."
+    },
+    {
+     "t": "gap",
+     "q": "Hier, Clara ___ visité l'appartement près du parc.",
+     "resp": [
+      "a"
+     ],
+     "exp": "Passé composé com avoir: Clara a visité. Visiter usa avoir."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je n'ai pas encore décidé, peux-tu venir avec moi ?",
+     "exp": "Décidé: dé-si-DÉ. Peux-tu: pö-TU (o u francês, lábios em bico)."
+    },
+    {
+     "t": "mc",
+     "q": "Document 3. Qu'est-ce qu'il ne faut pas mettre dans la salade ?",
+     "op": [
+      "de l'huile",
+      "du sel",
+      "du fromage",
+      "du vinaigre"
+     ],
+     "r": 3,
+     "exp": "O texto diz: Ne mettez pas de vinaigre. Os outros ingredientes estão na lista a adicionar."
+    },
+    {
+     "t": "mc",
+     "q": "Document 4. Quelle condition faut-il respecter pour participer à la course ?",
+     "op": [
+      "Avoir plus de dix ans.",
+      "Porter un casque.",
+      "Habiter dans la ville.",
+      "Payer à la mairie."
+     ],
+     "r": 1,
+     "exp": "O texto diz: Un casque est obligatoire. Crianças com menos de dez anos podem participar, mas acompanhadas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "faut",
+      "s'inscrire",
+      "avant",
+      "jeudi"
+     ],
+     "resp": "Il faut s'inscrire avant jeudi",
+     "exp": "Il faut + infinitivo (s'inscrire). Avant = antes de."
+    },
+    {
+     "t": "mc",
+     "q": "Document 5. Que se passe-t-il s'il pleut le 21 juin ?",
+     "op": [
+      "Ils sont annulés.",
+      "Ils sont reportés au dimanche.",
+      "Ils ont lieu au théâtre.",
+      "Ils ont lieu dans le parc."
+     ],
+     "r": 2,
+     "exp": "O texto diz: En cas de pluie, tous les concerts ont lieu au théâtre."
+    },
+    {
+     "t": "gap",
+     "q": "Les enfants de moins de dix ans ___ être accompagnés. (devoir)",
+     "resp": [
+      "doivent"
+     ],
+     "exp": "Devoir com ils/elles/les enfants: doivent.",
+     "dica": "DEVOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: você prefere o ciclismo ou a música? Por quê?",
+     "frase": "Tu choisis quelle activité : le vélo ou la musique ? Pourquoi ?",
+     "modelo": "Je choisis la musique parce que j'aime le jazz.",
+     "min": 5,
+     "chave": [
+      "choisis",
+      "préfère",
+      "parce que",
+      "vélo",
+      "musique",
+      "aime"
+     ],
+     "exp": "Dê sua escolha e uma razão: Je préfère le vélo parce que c'est bon pour la santé."
+    },
+    {
+     "t": "mc",
+     "q": "Julien visite l'appartement samedi à 10 h. Ensuite il veut aller à la bibliothèque à 17 h 30 le même samedi. Est-ce possible ?",
+     "op": [
+      "Non, elle ferme à 17 h.",
+      "Non, elle est fermée le samedi.",
+      "Oui, elle est ouverte jusqu'à 18 h.",
+      "Oui, elle ferme à 19 h."
+     ],
+     "r": 2,
+     "exp": "Segundo o documento 1, aos sábados ela fecha às 18 h (não às 19 h). Às 17 h 30 ainda está aberta."
+    }
+   ]
+  }
+ ]
+}

@@ -1073,16 +1073,17 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=2.8">
-<script src="js/firebaseServiceMock.js?v=2.4"></script>
-<script src="js/firebaseService.js?v=2.4"></script>
-<script src="js/idiomas/conteudoIngles.js?v=2.4"></script>
+<link rel="stylesheet" href="css/componentes.css?v=2.9">
+<script src="js/firebaseServiceMock.js?v=2.9"></script>
+<script src="js/firebaseService.js?v=2.9"></script>
+<script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
+<script src="js/idiomas/conteudoFrances.js?v=2.9"></script>
 <script src="js/componentes/PatchNotesModal.js?v=2.4"></script>
 <script src="js/componentes/FloatingTimer.js?v=2.4"></script>
-<script src="js/componentes/ExercicioIdioma.js?v=2.4"></script>
-<script src="js/componentes/CambridgeTestView.js?v=2.4"></script>
-<script src="js/componentes/IdiomasView.js?v=2.8"></script>
-<script src="js/componentes/Pro.js?v=2.8"></script>
+<script src="js/componentes/ExercicioIdioma.js?v=2.9"></script>
+<script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
+<script src="js/componentes/IdiomasView.js?v=2.9"></script>
+<script src="js/componentes/Pro.js?v=2.9"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
 
@@ -2120,7 +2121,8 @@ function registrar(min,materia,fonte){
   const ks=Object.keys(L.dias).sort();while(ks.length>120){delete L.dias[ks.shift()]}
   gravar("pomo",L,true);
   publicarRanking();verificarConquistas();atualizarBadgeDesafios();
-  if(norm(k)===norm("Inglês")&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.xpPorTempo(appIdiomas.uid(),min).then(xp=>{if(min>=10)appIdiomas.xpPerfil("tempo");return xp}).then(xp=>{if(xp)setTimeout(()=>toast(`+${xp} XP de idiomas pelo tempo de Inglês.`),900)}).catch(()=>{});
+  const lingua=["Inglês","Francês"].find(x=>norm(x)===norm(k));
+  if(lingua&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.xpPorTempo(appIdiomas.uid(),min,lingua).then(xp=>{if(min>=10)appIdiomas.xpPerfil("tempo");return xp}).then(xp=>{if(xp)setTimeout(()=>toast(`+${xp} XP de idiomas pelo tempo de ${lingua}.`),900)}).catch(()=>{});
 }
 let actx=null;
 /* ---- Alarme do pomodoro ----
@@ -2288,7 +2290,7 @@ function renderCronometro(){
   tickCrono();
 }
 
-/* ================= Idiomas (Inglês · Cambridge) ================= */
+/* ================= Idiomas (Inglês · Cambridge e Francês · DELF/DALF) ================= */
 // a aba fica em js/componentes/IdiomasView.js; este objeto dá a ela o que precisa do app
 const appIdiomas={
   uid:()=>S.uid||"visitante",ehPro:()=>ehPro(),paywall:m=>LAComp.Pro.paywall(appPro,m),esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),go:v=>go(v),naTela:()=>S.view==="idiomas",
@@ -2307,10 +2309,10 @@ const appIdiomas={
     catch(e){console.warn("xp idiomas",e&&e.code);return 0}},
   estudarComCronometro(materia){
     if(P.rodando){toast("Existe um pomodoro rodando. Pause-o antes de usar o cronômetro.");return}
-    if(C.rodando&&C.materia===materia){toast("O cronômetro já está contando Inglês.");return}
+    if(C.rodando&&C.materia===materia){toast(`O cronômetro já está contando ${materia}.`);return}
     if(C.rodando)pausarCrono();if(cronoMs()>0&&C.materia!==materia){toast("Finalize ou descarte o tempo atual do cronômetro antes de trocar de matéria.");go("cronometro");return}
     C.materia=materia;C.bloco=null;C.blocoMin=0;salvarCronoLocal();somPreparar();iniciarCrono();
-    toast("Cronômetro contando Inglês. Cada minuto vale 1 XP de idiomas ao finalizar.");
+    toast(`Cronômetro contando ${materia}. Cada minuto vale 1 XP de idiomas ao finalizar.`);
   }};
 window.LA_APP=appIdiomas;
 // serviço da nuvem (js/firebaseService.js): com conta, tudo fica no Firestore; no modo visitante usa o simulado
@@ -2478,16 +2480,14 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="2.5";
+const APP_VERSAO="2.6";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
-  {t:"Teste o Pro grátis por 3 dias",d:"Sem cartão: informe seu celular na tela Logic Academy Pro, entre no grupo do WhatsApp e use a mentoria sem limite e todas as aulas de Inglês por 3 dias."},
-  {t:"Chegou o Logic Academy Pro",d:"Mentoria com IA sem limite, o curso de Inglês completo (360 aulas) e nada de anúncios, por R$ 5,00/mês ou R$ 49,90/ano, com pagamento por Pix combinado pelo WhatsApp. Banco de questões, plano semanal, pomodoro e comunidade continuam grátis."},
-  {t:"Curso de Inglês completo, do A1 ao C2",d:"360 aulas em trilhas de Reading & Use of English, Listening, Writing e Speaking, com um simulado da prova Cambridge no fim de cada trilha."},
-  {t:"Você escolhe o idioma e a prova",d:"Na aba Idiomas, escolha o idioma (por enquanto, Inglês) e a prova que quer fazer, do A2 Key ao C2 Proficiency. O app mostra quanto falta para você estar pronto."},
-  {t:"Aulas que alternam marcar, escrever e falar",d:"Cada aula sobe de dificuldade e mistura questões de marcar, completar, montar frases e falar em inglês (o app ouve e corrige)."},
-  {t:"Nivelamento mais desafiador",d:"O teste sobe de nível conforme você acerta e mistura os quatro tipos de questão."},
-  {t:"XP de idiomas também no perfil",d:"Cada habilidade concluída vale XP no seu nível e no ranking uma vez por dia."},
-  {t:"Cronômetro com meta, alarme e mini-janela",d:"Escolha uma meta de tempo; o relógio continua visível num cantinho quando você muda de tela."}]};
+  {t:"Chegou o curso de Francês 🇫🇷",d:"360 aulas do A1 ao C2 no formato das provas DELF e DALF: Compréhension des écrits, Compréhension de l'oral, Production écrite e Production orale, com um simulado da prova no fim de cada trilha."},
+  {t:"Nivelamento de Francês",d:"Um teste que sobe de nível conforme você acerta, para o curso começar no ponto certo."},
+  {t:"Correção no padrão DELF/DALF",d:"Suas produções escritas e orais em francês são corrigidas pela IA com os critérios da prova, apontando acentos, gênero e os erros mais comuns de brasileiros."},
+  {t:"Troque de idioma quando quiser",d:"Na aba Idiomas, use as abas Inglês e Francês. Nível, meta e progresso ficam guardados em cada idioma."},
+  {t:"Acento conta",d:"Nas questões de escrever, a resposta sem acento é aceita, mas o app avisa a forma certa, porque na prova o acento conta."},
+  {t:"Pro com Inglês e Francês",d:"O Logic Academy Pro (R$ 5,00/mês ou R$ 49,90/ano) libera as 720 aulas dos dois idiomas, a mentoria sem limite e tira os anúncios. Dá para testar 3 dias grátis."}]};
 function mostrarNovidades(){
   const PN=window.LAComp&&LAComp.PatchNotesModal;if(!PN||!$("#shell"))return;
   // conta nova (ainda não viu o convite do tutorial): não precisa de "o que mudou"

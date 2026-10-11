@@ -1,0 +1,2460 @@
+{
+ "nivel": "A1",
+ "skill": "writing",
+ "exame": "DELF A1",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Majuscules et ponctuation",
+   "objetivo": "Começar frases com maiúscula, terminar com a pontuação certa e saber o que NÃO leva maiúscula em francês.",
+   "foco": "Majuscule; point; point d'interrogation; jours, mois et nationalités en minuscule",
+   "explicacao": [
+    "Toda frase começa com maiúscula e termina com ponto (.), ponto de interrogação (?) ou de exclamação (!): Je m'appelle Ana.",
+    "Nomes de pessoas, cidades e países têm maiúscula: Paul, Lyon, le Brésil. Mas o pronome je só tem maiúscula no começo da frase.",
+    "Atenção, é diferente do inglês: dias, meses, idiomas e nacionalidades vão em minúscula: lundi, mai, le français, brésilien.",
+    "Em francês, coloca-se um espaço antes de ? e !: Où habites-tu ? O ponto final não leva espaço antes."
+   ],
+   "vocab": [
+    {
+     "en": "le nom",
+     "pt": "o sobrenome / o nome"
+    },
+    {
+     "en": "le prénom",
+     "pt": "o nome (de batismo)"
+    },
+    {
+     "en": "la phrase",
+     "pt": "a frase"
+    },
+    {
+     "en": "la majuscule",
+     "pt": "a letra maiúscula"
+    },
+    {
+     "en": "le point",
+     "pt": "o ponto final"
+    },
+    {
+     "en": "habiter",
+     "pt": "morar"
+    },
+    {
+     "en": "la ville",
+     "pt": "a cidade"
+    }
+   ],
+   "material": {
+    "tarefa": "Présentez-vous : écrivez votre prénom, votre âge et votre ville. Écrivez 8 mots ou plus.",
+    "genero": "petit texte",
+    "min": 8,
+    "max": 20,
+    "modelo": "Je m'appelle Ana. J'ai quinze ans. J'habite à Recife, au Brésil.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Escrevi nomes de pessoas e cidades com maiúscula, mas mês, dia e nacionalidade com minúscula?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qual destas palavras leva letra maiúscula em francês?",
+     "op": [
+      "lundi",
+      "Paris",
+      "brésilien",
+      "janvier"
+     ],
+     "r": 1,
+     "exp": "Nomes de cidades levam maiúscula: Paris. Dias, meses e nacionalidades vão em minúscula."
+    },
+    {
+     "t": "gap",
+     "q": "___ m'appelle Ana. (eu — com maiúscula, no começo da frase)",
+     "resp": [
+      "Je"
+     ],
+     "exp": "Je = eu. No começo da frase leva maiúscula: Je m'appelle Ana."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Je m'appelle Ana et j'habite à Recife.",
+     "exp": "Em 'habite' o h não se pronuncia: j'a-bit."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase a besoin d'un point d'interrogation (?) à la fin ?",
+     "op": [
+      "Tu habites à Paris",
+      "Où habites-tu",
+      "Il est étudiant",
+      "C'est lundi"
+     ],
+     "r": 1,
+     "exp": "'Où habites-tu' é uma pergunta, então termina com ? (com espaço antes: Où habites-tu ?)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "m'appelle",
+      "Lucas"
+     ],
+     "resp": "Je m'appelle Lucas.",
+     "exp": "Ordem: Je m'appelle + prénom."
+    },
+    {
+     "t": "gap",
+     "q": "Corrigez : 'Nous sommes Lundi.' → Nous sommes ___.",
+     "resp": [
+      "lundi"
+     ],
+     "exp": "Em francês os dias da semana não levam maiúscula: lundi."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda com seu nome.",
+     "frase": "Comment tu t'appelles ?",
+     "modelo": "Je m'appelle Ana.",
+     "min": 3,
+     "chave": [
+      "appelle",
+      "m'appelle",
+      "suis",
+      "moi"
+     ],
+     "exp": "Comece com Je m'appelle... ou Je suis..."
+    },
+    {
+     "t": "mc",
+     "q": "Qual destas palavras deve ficar em minúscula em francês?",
+     "op": [
+      "Paul",
+      "Lyon",
+      "français (o idioma)",
+      "Brésil"
+     ],
+     "r": 2,
+     "exp": "Idiomas e nacionalidades vão em minúscula: le français. Nomes de pessoas, cidades e países levam maiúscula."
+    },
+    {
+     "t": "gap",
+     "q": "Mon anniversaire est en ___. (julho, em minúscula)",
+     "resp": [
+      "juillet"
+     ],
+     "exp": "Os meses não levam maiúscula: juillet. Cuidado com a grafia: ill + et."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Je m'appelle, j'ai, j'habite",
+   "objetivo": "Escrever frases para se apresentar: nome, idade e lugar onde mora.",
+   "foco": "S'appeler; avoir + âge; habiter à / en / au; élision j'",
+   "explicacao": [
+    "Para dizer o nome: Je m'appelle Paulo. Para morar: J'habite à Salvador.",
+    "A idade usa o verbo avoir (ter), nunca être: J'ai quinze ans. (Não: Je suis quinze ans.)",
+    "Antes de vogal ou h mudo, je vira j': j'ai, j'habite, j'aime.",
+    "Lugares: à + cidade (à Paris); en + país feminino (en France, en Italie); au + país masculino (au Brésil, au Portugal); aux + plural (aux États-Unis)."
+   ],
+   "vocab": [
+    {
+     "en": "s'appeler",
+     "pt": "chamar-se"
+    },
+    {
+     "en": "avoir … ans",
+     "pt": "ter … anos"
+    },
+    {
+     "en": "habiter",
+     "pt": "morar"
+    },
+    {
+     "en": "le pays",
+     "pt": "o país"
+    },
+    {
+     "en": "la ville",
+     "pt": "a cidade"
+    },
+    {
+     "en": "étudiant(e)",
+     "pt": "estudante"
+    },
+    {
+     "en": "aussi",
+     "pt": "também"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous vous présentez à un nouvel ami français. Écrivez votre prénom, votre âge, votre ville et votre pays. Écrivez 12 mots ou plus.",
+    "genero": "petit texte",
+    "min": 12,
+    "max": 28,
+    "modelo": "Bonjour ! Je m'appelle Paulo. J'ai dix-sept ans. J'habite à Salvador, au Brésil. J'aime le football.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei avoir (j'ai ... ans) para a idade e j' antes de vogal?",
+     "Usei à, en ou au corretamente com cidade e país?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment dit-on « Eu tenho 15 anos » ?",
+     "op": [
+      "Je suis quinze ans.",
+      "J'ai quinze ans.",
+      "Je ai quinze ans.",
+      "Je fais quinze ans."
+     ],
+     "r": 1,
+     "exp": "A idade usa avoir, e je + ai vira j'ai."
+    },
+    {
+     "t": "gap",
+     "q": "Je m'___ Clara. (verbo APPELER)",
+     "resp": [
+      "appelle"
+     ],
+     "exp": "Je m'appelle: dois L e e no final. Pronuncia-se 'apél'.",
+     "dica": "APPELER"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "J'habite à Recife, au Brésil.",
+     "exp": "Em 'Brésil' o r é gutural e o s final soa 'l'. Faça a ligação suave: j'ha-bi-ta."
+    },
+    {
+     "t": "mc",
+     "q": "J'habite ___ Brésil.",
+     "op": [
+      "en",
+      "à",
+      "au",
+      "aux"
+     ],
+     "r": 2,
+     "exp": "Brésil é masculino: au Brésil. Com países femininos usamos en: en France."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "m'appelle",
+      "Julie",
+      "et",
+      "j'ai",
+      "douze",
+      "ans"
+     ],
+     "resp": "Je m'appelle Julie et j'ai douze ans.",
+     "exp": "Nome com m'appelle; idade com j'ai ... ans."
+    },
+    {
+     "t": "gap",
+     "q": "Corrigez : 'Je suis quinze ans.' → ___ quinze ans.",
+     "resp": [
+      "J'ai"
+     ],
+     "exp": "Em francês a idade é 'ter': J'ai quinze ans."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga sua idade em francês.",
+     "frase": "Quel âge as-tu ?",
+     "modelo": "J'ai quinze ans.",
+     "min": 3,
+     "chave": [
+      "ans",
+      "ai",
+      "j'ai"
+     ],
+     "exp": "Responda com J'ai ... ans."
+    },
+    {
+     "t": "mc",
+     "q": "Où habites-tu ? Choisissez la bonne réponse.",
+     "op": [
+      "J'habite à Brésil.",
+      "J'habite au Brésil.",
+      "J'habite en Brésil.",
+      "J'habite à le Brésil."
+     ],
+     "r": 1,
+     "exp": "à + le = au. País masculino: au Brésil."
+    },
+    {
+     "t": "gap",
+     "q": "Mon amie habite ___ États-Unis. (em, com país plural)",
+     "resp": [
+      "aux"
+     ],
+     "exp": "États-Unis é plural: aux États-Unis (à + les = aux)."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Être et avoir",
+   "objetivo": "Conjugar être e avoir no presente e usá-los em frases sobre você, família e amigos.",
+   "foco": "Présent de être et avoir; avoir faim / soif / sommeil",
+   "explicacao": [
+    "Être: je suis, tu es, il/elle est, nous sommes, vous êtes, ils/elles sont.",
+    "Avoir: j'ai, tu as, il/elle a, nous avons, vous avez, ils/elles ont.",
+    "Sensações usam avoir, não être: J'ai faim (estou com fome), j'ai sommeil (estou com sono), j'ai chaud (estou com calor).",
+    "Cuidado para não confundir est (é) com et (e), e a (tem) com à (preposição): Il a un frère et il est grand."
+   ],
+   "vocab": [
+    {
+     "en": "être",
+     "pt": "ser / estar"
+    },
+    {
+     "en": "avoir",
+     "pt": "ter"
+    },
+    {
+     "en": "avoir faim",
+     "pt": "estar com fome"
+    },
+    {
+     "en": "avoir sommeil",
+     "pt": "estar com sono"
+    },
+    {
+     "en": "le frère",
+     "pt": "o irmão"
+    },
+    {
+     "en": "la sœur",
+     "pt": "a irmã"
+    },
+    {
+     "en": "content(e)",
+     "pt": "contente"
+    },
+    {
+     "en": "fatigué(e)",
+     "pt": "cansado"
+    }
+   ],
+   "material": {
+    "tarefa": "Présentez votre meilleur(e) ami(e) : son prénom, son âge, sa ville et son caractère. Écrivez 15 mots ou plus.",
+    "genero": "petit texte",
+    "min": 15,
+    "max": 32,
+    "modelo": "Mon meilleur ami s'appelle Rafa. Il a seize ans. Il est de Curitiba. Il est très drôle et il a deux frères.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Conjuguei être e avoir certo (il est, il a, ils sont, ils ont)?",
+     "Não confundi est/et nem a/à?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Choisissez la phrase correcte.",
+     "op": [
+      "Nous sommes contents.",
+      "Nous êtes contents.",
+      "Nous avons contents.",
+      "Nous sont contents."
+     ],
+     "r": 0,
+     "exp": "Nous combina com sommes (être)."
+    },
+    {
+     "t": "gap",
+     "q": "Tu ___ fatigué ? (verbo ÊTRE)",
+     "resp": [
+      "es"
+     ],
+     "exp": "Tu es: segunda pessoa do singular de être.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Ils sont frères et ils ont une sœur.",
+     "exp": "'Ils sont' termina em som nasal 'sõ'; o t não soa. Em 'ils ont' faça a ligação: il-zõ."
+    },
+    {
+     "t": "mc",
+     "q": "Comment dit-on « Estou com fome » ?",
+     "op": [
+      "Je suis faim.",
+      "J'ai faim.",
+      "Je fais faim.",
+      "Je suis de faim."
+     ],
+     "r": 1,
+     "exp": "Fome, sede e sono usam avoir: J'ai faim."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elle",
+      "a",
+      "quatorze",
+      "ans"
+     ],
+     "resp": "Elle a quatorze ans.",
+     "exp": "Idade com avoir: elle a ... ans."
+    },
+    {
+     "t": "gap",
+     "q": "Mes parents ___ à Lyon. (verbo ÊTRE)",
+     "resp": [
+      "sont"
+     ],
+     "exp": "Mes parents = ils: sont.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda sobre seus irmãos.",
+     "frase": "Tu as des frères et des sœurs ?",
+     "modelo": "J'ai un frère et une sœur.",
+     "min": 3,
+     "chave": [
+      "frère",
+      "frères",
+      "sœur",
+      "sœurs",
+      "ai",
+      "non"
+     ],
+     "exp": "Use J'ai un frère / une sœur ou Je n'ai pas de frère."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase contient une erreur ?",
+     "op": [
+      "Vous êtes brésiliens.",
+      "Il est quinze ans.",
+      "Elles ont sommeil.",
+      "J'ai un chat."
+     ],
+     "r": 1,
+     "exp": "Idade usa avoir: Il a quinze ans."
+    },
+    {
+     "t": "gap",
+     "q": "Vous ___ un stylo ? (verbo AVOIR)",
+     "resp": [
+      "avez"
+     ],
+     "exp": "Vous avez: a forma de vous é terminada em -ez.",
+     "dica": "AVOIR"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Le, la, les, un, une, des",
+   "objetivo": "Escolher o artigo certo (definido ou indefinido) e usar au / du com atenção ao gênero.",
+   "foco": "Articles définis et indéfinis; l'; à + le = au; de + le = du",
+   "explicacao": [
+    "Artigos definidos: le (masculino), la (feminino), l' (antes de vogal ou h mudo), les (plural): le livre, la maison, l'école, les amis.",
+    "Artigos indefinidos: un (masculino), une (feminino), des (plural): J'ai un frère, une sœur et des cousins.",
+    "à + le = au, à + les = aux, de + le = du, de + les = des: Je parle au professeur. Voici le livre du professeur.",
+    "O gênero deve ser decorado com o substantivo e nem sempre é igual ao português: le lait (o leite), la voiture (o carro), la dent (o dente)."
+   ],
+   "vocab": [
+    {
+     "en": "le livre",
+     "pt": "o livro"
+    },
+    {
+     "en": "la maison",
+     "pt": "a casa"
+    },
+    {
+     "en": "l'école",
+     "pt": "a escola"
+    },
+    {
+     "en": "le chat",
+     "pt": "o gato"
+    },
+    {
+     "en": "un ordinateur",
+     "pt": "um computador"
+    },
+    {
+     "en": "le cahier",
+     "pt": "o caderno"
+    },
+    {
+     "en": "il y a",
+     "pt": "há / tem"
+    },
+    {
+     "en": "ma chambre",
+     "pt": "meu quarto"
+    }
+   ],
+   "material": {
+    "tarefa": "Décrivez votre chambre : écrivez trois objets avec un article (un, une, des). Écrivez 15 mots ou plus.",
+    "genero": "petit texte",
+    "min": 15,
+    "max": 30,
+    "modelo": "Dans ma chambre, il y a un lit, une table et des livres. Sur la table, il y a un ordinateur. J'aime ma chambre.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei un/une/des nos objetos?",
+     "Conferi o gênero dos substantivos (un lit, une table)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "___ école est grande.",
+     "op": [
+      "Le",
+      "La",
+      "L'",
+      "Les"
+     ],
+     "r": 2,
+     "exp": "Antes de vogal usamos l': l'école."
+    },
+    {
+     "t": "gap",
+     "q": "J'ai ___ frère et une sœur. (artigo indefinido masculino)",
+     "resp": [
+      "un"
+     ],
+     "exp": "Frère é masculino: un frère."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Il y a un livre et des stylos sur la table.",
+     "exp": "'Il y a' pronuncia-se 'il-i-á'. Em 'des stylos' o s é ligado: dé-sti-lô."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je parle à le professeur.",
+      "Je parle au professeur.",
+      "Je parle à la professeur.",
+      "Je parle des professeur."
+     ],
+     "r": 1,
+     "exp": "à + le = au: je parle au professeur."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Le",
+      "chat",
+      "de",
+      "Marie",
+      "est",
+      "noir"
+     ],
+     "resp": "Le chat de Marie est noir.",
+     "exp": "Ordem: artigo + substantivo + de + dono + est + adjetivo."
+    },
+    {
+     "t": "gap",
+     "q": "Corrigez : 'Il y a un voiture.' → Il y a ___ voiture.",
+     "resp": [
+      "une"
+     ],
+     "exp": "Voiture é feminino: une voiture."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga dois objetos que estão na sua mochila.",
+     "frase": "Qu'est-ce qu'il y a dans ton sac ?",
+     "modelo": "Il y a un livre et des stylos.",
+     "min": 4,
+     "chave": [
+      "livre",
+      "stylo",
+      "stylos",
+      "cahier",
+      "trousse",
+      "ordinateur",
+      "il",
+      "y"
+     ],
+     "exp": "Use Il y a un/une/des + objeto."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je vais à la cinéma.",
+      "Je vais au cinéma.",
+      "Je vais du cinéma.",
+      "Je vais aux cinéma."
+     ],
+     "r": 1,
+     "exp": "Cinéma é masculino: à + le = au cinéma."
+    },
+    {
+     "t": "gap",
+     "q": "Voici le livre ___ professeur. (de + le)",
+     "resp": [
+      "du"
+     ],
+     "exp": "de + le = du: le livre du professeur."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Masculin, féminin, pluriel",
+   "objetivo": "Fazer a concordância de gênero e número em substantivos e adjetivos simples.",
+   "foco": "Accord du genre et du nombre; féminin en -e, -ienne; pluriel en -s, -x; mon / ma / mes",
+   "explicacao": [
+    "Para o feminino, em geral, acrescenta-se -e: un ami → une amie; grand → grande; content → contente.",
+    "Alguns mudam mais: -ien → -ienne (italien, italienne); -eur → -euse (vendeur, vendeuse); -er → -ère (infirmier, infirmière).",
+    "Plural: acrescenta-se -s (un ami → des amis). Palavras em -eau levam -x (un gâteau → des gâteaux) e em -al viram -aux (un journal → des journaux).",
+    "O adjetivo concorda com o substantivo: Ma sœur est petite. Mes amis sont contents. Possessivos: mon (masc.), ma (fem.), mes (plural)."
+   ],
+   "vocab": [
+    {
+     "en": "grand(e)",
+     "pt": "grande / alto"
+    },
+    {
+     "en": "petit(e)",
+     "pt": "pequeno"
+    },
+    {
+     "en": "gentil(le)",
+     "pt": "gentil"
+    },
+    {
+     "en": "sportif / sportive",
+     "pt": "esportista"
+    },
+    {
+     "en": "un ami / une amie",
+     "pt": "um amigo / uma amiga"
+    },
+    {
+     "en": "le gâteau",
+     "pt": "o bolo"
+    },
+    {
+     "en": "le journal",
+     "pt": "o jornal"
+    },
+    {
+     "en": "mon / ma / mes",
+     "pt": "meu / minha / meus"
+    }
+   ],
+   "material": {
+    "tarefa": "Décrivez une personne de votre famille : son physique et son caractère. Écrivez 15 mots ou plus.",
+    "genero": "petit texte",
+    "min": 15,
+    "max": 32,
+    "modelo": "Ma sœur s'appelle Clara. Elle est grande et blonde. Elle est sportive et très gentille. Mes parents sont fiers de ma sœur.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Os adjetivos concordam em gênero e número com o substantivo?",
+     "Usei mon/ma/mes corretamente?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Ma cousine est ___.",
+     "op": [
+      "grand",
+      "grande",
+      "grands",
+      "grandes"
+     ],
+     "r": 1,
+     "exp": "Cousine é feminino singular: grande."
+    },
+    {
+     "t": "gap",
+     "q": "Les ___ sont sur la table. (um gâteau)",
+     "resp": [
+      "gâteaux"
+     ],
+     "exp": "Palavras em -eau têm plural em -x: des gâteaux."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Mes amies sont petites et très gentilles.",
+     "exp": "Os -s finais não se pronunciam; o -e final de 'petite' também não: soa 'pe-tit'."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le féminin de « un étudiant » ?",
+     "op": [
+      "une étudiant",
+      "une étudiante",
+      "un étudiante",
+      "une étudiants"
+     ],
+     "r": 1,
+     "exp": "Artigo e substantivo vão para o feminino: une étudiante."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elle",
+      "est",
+      "petite",
+      "et",
+      "brune"
+     ],
+     "resp": "Elle est petite et brune.",
+     "exp": "Elle est + adjetivo no feminino (com -e)."
+    },
+    {
+     "t": "gap",
+     "q": "Mon frère est content. Ma sœur est ___. (content)",
+     "resp": [
+      "contente"
+     ],
+     "exp": "No feminino, content ganha -e: contente."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Descreva um amigo com dois adjetivos.",
+     "frase": "Comment est ton meilleur ami ?",
+     "modelo": "Il est grand et sympa.",
+     "min": 3,
+     "chave": [
+      "grand",
+      "grande",
+      "petit",
+      "petite",
+      "sympa",
+      "gentil",
+      "drôle",
+      "il",
+      "elle",
+      "est"
+     ],
+     "exp": "Use Il/Elle est + adjetivo (concorde com o gênero)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Mes amis sont contentes.",
+      "Mes amis sont contents.",
+      "Mes ami sont contents.",
+      "Mon amis sont contents."
+     ],
+     "r": 1,
+     "exp": "Mes + amis (plural masculino) + contents."
+    },
+    {
+     "t": "gap",
+     "q": "Les journal sont sur la table. → Les ___ sont sur la table.",
+     "resp": [
+      "journaux"
+     ],
+     "exp": "Palavras em -al fazem plural em -aux: journaux."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Les verbes en -er",
+   "objetivo": "Conjugar verbos regulares em -er no presente para falar de gostos e atividades.",
+   "foco": "Présent des verbes en -er (parler, aimer, jouer, regarder, manger)",
+   "explicacao": [
+    "Tire o -er e acrescente: je -e, tu -es, il/elle -e, nous -ons, vous -ez, ils/elles -ent. Ex.: parler → je parle, tu parles, nous parlons, vous parlez, ils parlent.",
+    "Pronúncia: -e, -es e -ent não soam. Je parle, tu parles e ils parlent soam igual.",
+    "Antes de vogal, je vira j': j'aime, j'adore, j'habite. Manger: nous mangeons (com o e).",
+    "Depois de aimer, adorer e détester, o artigo é obrigatório: J'aime la musique. Para jogar: jouer au football, jouer de la guitare."
+   ],
+   "vocab": [
+    {
+     "en": "parler",
+     "pt": "falar"
+    },
+    {
+     "en": "aimer",
+     "pt": "gostar / amar"
+    },
+    {
+     "en": "jouer",
+     "pt": "jogar / tocar"
+    },
+    {
+     "en": "regarder",
+     "pt": "olhar / assistir"
+    },
+    {
+     "en": "travailler",
+     "pt": "trabalhar"
+    },
+    {
+     "en": "étudier",
+     "pt": "estudar"
+    },
+    {
+     "en": "manger",
+     "pt": "comer"
+    },
+    {
+     "en": "le week-end",
+     "pt": "o fim de semana"
+    }
+   ],
+   "material": {
+    "tarefa": "Parlez de vos activités : ce que vous aimez et ce que vous faites le week-end. Écrivez 20 mots ou plus.",
+    "genero": "petit texte",
+    "min": 20,
+    "max": 40,
+    "modelo": "J'aime le sport. Le samedi, je joue au football avec mes amis. Le dimanche, je regarde un film et je mange chez ma grand-mère. J'adore le week-end !",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Conjuguei os verbos em -er (je joue, nous mangeons, ils jouent)?",
+     "Usei o artigo depois de aimer (j'aime la musique)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Nous ___ le français.",
+     "op": [
+      "parle",
+      "parles",
+      "parlons",
+      "parlent"
+     ],
+     "r": 2,
+     "exp": "Nous → -ons: nous parlons."
+    },
+    {
+     "t": "gap",
+     "q": "Ils ___ au football. (verbo JOUER)",
+     "resp": [
+      "jouent"
+     ],
+     "exp": "Ils → -ent: ils jouent.",
+     "dica": "JOUER"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Nous aimons regarder des films le soir.",
+     "exp": "Em 'nous aimons' faça a ligação: nou-zé-mõ."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "J'aime le musique.",
+      "J'aime la musique.",
+      "Je aime la musique.",
+      "J'aime musique."
+     ],
+     "r": 1,
+     "exp": "Musique é feminino: la musique. Je + aime vira j'aime."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Tu",
+      "habites",
+      "à",
+      "Paris",
+      "avec",
+      "ta",
+      "famille"
+     ],
+     "resp": "Tu habites à Paris avec ta famille.",
+     "exp": "Tu + verbo com -es."
+    },
+    {
+     "t": "gap",
+     "q": "Corrigez : 'Vous parlons français.' → Vous ___ français.",
+     "resp": [
+      "parlez"
+     ],
+     "exp": "Vous → -ez: vous parlez."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga uma coisa que você gosta de fazer.",
+     "frase": "Qu'est-ce que tu aimes faire le week-end ?",
+     "modelo": "J'aime jouer au football.",
+     "min": 3,
+     "chave": [
+      "aime",
+      "j'aime",
+      "joue",
+      "regarde",
+      "adore",
+      "football",
+      "film",
+      "musique"
+     ],
+     "exp": "Use J'aime + verbo ou J'aime + nome."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase contient une erreur ?",
+     "op": [
+      "Elle travaille à Lyon.",
+      "Elles mangent une pomme.",
+      "Il étudie le français.",
+      "Je mangons un gâteau."
+     ],
+     "r": 3,
+     "exp": "Com je a terminação é -e: je mange."
+    },
+    {
+     "t": "gap",
+     "q": "Marie et Paul ___ un film ce soir. (verbo REGARDER)",
+     "resp": [
+      "regardent"
+     ],
+     "exp": "Marie et Paul = ils: regardent.",
+     "dica": "REGARDER"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Remplir un formulaire",
+   "objetivo": "Preencher uma ficha com nome, nacionalidade, data de nascimento, endereço, profissão e telefone, no estilo francês.",
+   "foco": "Nom, prénom, nationalité, adresse, date de naissance, profession, téléphone",
+   "explicacao": [
+    "Atenção: nom = sobrenome (escreve-se em maiúsculas: SILVA) e prénom = nome de batismo (Ana).",
+    "Data: jour/mois/année, como no Brasil: 14/03/2009 ou le 14 mars 2009. Telefone francês: 06 12 34 56 78.",
+    "O endereço começa pelo número: 12, rue Victor Hugo, 75005 Paris (número, rua, código postal, cidade).",
+    "Nacionalidade com minúscula e concordando com a pessoa: brésilien (homem), brésilienne (mulher). Em geral escreve-se uma resposta curta por campo."
+   ],
+   "vocab": [
+    {
+     "en": "le nom",
+     "pt": "o sobrenome"
+    },
+    {
+     "en": "le prénom",
+     "pt": "o nome de batismo"
+    },
+    {
+     "en": "la nationalité",
+     "pt": "a nacionalidade"
+    },
+    {
+     "en": "la date de naissance",
+     "pt": "a data de nascimento"
+    },
+    {
+     "en": "l'adresse",
+     "pt": "o endereço"
+    },
+    {
+     "en": "le code postal",
+     "pt": "o CEP"
+    },
+    {
+     "en": "la profession",
+     "pt": "a profissão"
+    },
+    {
+     "en": "le numéro de téléphone",
+     "pt": "o número de telefone"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous vous inscrivez à un club de français. Remplissez la fiche avec vos informations (vous pouvez les inventer) : nom, prénom, nationalité, date de naissance, adresse, profession et téléphone. Écrivez une ligne par information.",
+    "genero": "formulaire",
+    "min": 12,
+    "max": 40,
+    "modelo": "Nom : SILVA\nPrénom : Ana\nNationalité : brésilienne\nDate de naissance : le 12 mai 2008\nAdresse : 25, rue des Fleurs, 75012 Paris\nProfession : étudiante\nTéléphone : 06 12 34 56 78",
+    "checklist": [
+     "Preenchi todos os campos pedidos (nom, prénom, nationalité, data, adresse, profession, téléphone)?",
+     "Escrevi o sobrenome em MAIÚSCULAS e o prénom com a inicial maiúscula?",
+     "A nacionalidade e a profissão estão em minúscula e concordam com o gênero?",
+     "O endereço começa pelo número da rua e tem o código postal?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Em uma ficha francesa, « Prénom » é...",
+     "op": [
+      "o sobrenome",
+      "o nome de batismo",
+      "o apelido",
+      "o endereço"
+     ],
+     "r": 1,
+     "exp": "Prénom = nome (Ana, Paulo). O sobrenome é nom."
+    },
+    {
+     "t": "gap",
+     "q": "Sur la fiche : « Nom : SILVA ; ___ : Ana ». Complétez le champ.",
+     "resp": [
+      "Prénom"
+     ],
+     "exp": "Ana é o nome de batismo: prénom (com acento agudo)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Mon nom de famille est Silva et mon prénom est Ana.",
+     "exp": "'Prénom' soa 'pre-nõ' (õ nasal)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle nationalité écrit une fille brésilienne ?",
+     "op": [
+      "brésilien",
+      "brésilienne",
+      "brésiliens",
+      "brésiliennes"
+     ],
+     "r": 1,
+     "exp": "Uma mulher: brésilienne (feminino singular)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Mon",
+      "adresse",
+      "est",
+      "12",
+      "rue",
+      "Victor",
+      "Hugo"
+     ],
+     "resp": "Mon adresse est 12 rue Victor Hugo.",
+     "exp": "Em francês o número vem antes do nome da rua."
+    },
+    {
+     "t": "gap",
+     "q": "Le 14/03/2009 → le ___ mars 2009. (14 em letras)",
+     "resp": [
+      "quatorze"
+     ],
+     "exp": "14 = quatorze."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga sua nacionalidade em francês.",
+     "frase": "Quelle est ta nationalité ?",
+     "modelo": "Je suis brésilienne.",
+     "min": 3,
+     "chave": [
+      "brésilien",
+      "brésilienne",
+      "suis"
+     ],
+     "exp": "Use Je suis + nacionalidade (brésilien/brésilienne)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle adresse est écrite à la française ?",
+     "op": [
+      "Rue Victor Hugo 12, Paris",
+      "12, rue Victor Hugo, 75005 Paris",
+      "Paris 75005, Victor Hugo rue 12",
+      "Victor Hugo 12 rue"
+     ],
+     "r": 1,
+     "exp": "Ordem francesa: número, rua, código postal e cidade."
+    },
+    {
+     "t": "gap",
+     "q": "Mon ___ est le 06 12 34 56 78. (número de telefone)",
+     "resp": [
+      "numéro de téléphone",
+      "numéro",
+      "téléphone"
+     ],
+     "exp": "Mon numéro de téléphone est... ou mon numéro est..."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Nationalités et professions",
+   "objetivo": "Falar de nacionalidades e profissões com o gênero certo e sem artigo depois de être.",
+   "foco": "Nationalités et professions au masculin et au féminin; Je suis + profession sans article",
+   "explicacao": [
+    "Nacionalidades: brésilien/brésilienne, français/française, portugais/portugaise, italien/italienne, canadien/canadienne. Escreva sempre em minúscula.",
+    "Profissões: étudiant/étudiante, vendeur/vendeuse, coiffeur/coiffeuse, infirmier/infirmière. Algumas não mudam: médecin, professeur, ingénieur.",
+    "Depois de être, não se usa artigo com profissão: Je suis infirmière. Elle est médecin. (Com c'est usa-se artigo: C'est une infirmière.)",
+    "Países: la France, l'Italie, le Brésil, le Portugal. Para morar: en France, en Italie, au Brésil, au Portugal."
+   ],
+   "vocab": [
+    {
+     "en": "brésilien(ne)",
+     "pt": "brasileiro(a)"
+    },
+    {
+     "en": "français(e)",
+     "pt": "francês(a)"
+    },
+    {
+     "en": "portugais(e)",
+     "pt": "português(a)"
+    },
+    {
+     "en": "médecin",
+     "pt": "médico(a)"
+    },
+    {
+     "en": "professeur",
+     "pt": "professor(a)"
+    },
+    {
+     "en": "vendeur / vendeuse",
+     "pt": "vendedor(a)"
+    },
+    {
+     "en": "infirmier / infirmière",
+     "pt": "enfermeiro(a)"
+    },
+    {
+     "en": "ingénieur",
+     "pt": "engenheiro(a)"
+    }
+   ],
+   "material": {
+    "tarefa": "Présentez deux personnes de votre famille ou de vos amis : leur nationalité et leur profession. Écrivez 20 mots ou plus.",
+    "genero": "petit texte",
+    "min": 20,
+    "max": 40,
+    "modelo": "Mon père est brésilien et il est médecin. Ma mère est portugaise et elle est professeure. Moi, je suis étudiante et j'habite à Lisbonne avec mes parents.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "A nacionalidade e a profissão concordam com o gênero da pessoa?",
+     "Não usei artigo depois de être com a profissão (Je suis infirmière)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Marie est ___.",
+     "op": [
+      "infirmier",
+      "infirmière",
+      "infirmières",
+      "infirmiers"
+     ],
+     "r": 1,
+     "exp": "Marie é mulher: infirmière (feminino singular)."
+    },
+    {
+     "t": "gap",
+     "q": "Lucas est brésilien, Sofia est ___.",
+     "resp": [
+      "brésilienne"
+     ],
+     "exp": "Feminino de -ien é -ienne: brésilienne."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Elle est française et elle est professeure.",
+     "exp": "'Française' soa 'frã-sez'. O -e final não soa mas o s vira 'z'."
+    },
+    {
+     "t": "mc",
+     "q": "Comment dit-on « Sou médico » ?",
+     "op": [
+      "Je suis un médecin.",
+      "Je suis médecin.",
+      "Je suis le médecin.",
+      "J'ai médecin."
+     ],
+     "r": 1,
+     "exp": "Depois de être, profissão sem artigo: Je suis médecin."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "est",
+      "vendeur",
+      "dans",
+      "un",
+      "magasin"
+     ],
+     "resp": "Il est vendeur dans un magasin.",
+     "exp": "Il est + profissão (sem artigo) + lugar."
+    },
+    {
+     "t": "gap",
+     "q": "Elle est coiffeuse. Il est ___. (masculino)",
+     "resp": [
+      "coiffeur"
+     ],
+     "exp": "O masculino de coiffeuse é coiffeur."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga sua nacionalidade e sua ocupação.",
+     "frase": "Quelle est ta nationalité et que fais-tu dans la vie ?",
+     "modelo": "Je suis brésilien et je suis étudiant.",
+     "min": 4,
+     "chave": [
+      "suis",
+      "brésilien",
+      "brésilienne",
+      "étudiant",
+      "étudiante"
+     ],
+     "exp": "Use Je suis + nacionalidade e Je suis + profissão."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase contient une erreur ?",
+     "op": [
+      "Il est ingénieur.",
+      "Elle est Brésilienne.",
+      "Ils sont portugais.",
+      "Elle est vendeuse."
+     ],
+     "r": 1,
+     "exp": "Nacionalidade em minúscula: Elle est brésilienne."
+    },
+    {
+     "t": "gap",
+     "q": "Mon oncle habite en Italie : il est ___. (nacionalidade)",
+     "resp": [
+      "italien"
+     ],
+     "exp": "Italie → italien (masculino)."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Dates et heures en lettres",
+   "objetivo": "Escrever datas e horas por extenso, com dias e meses em minúscula.",
+   "foco": "Jours, mois, dates; l'heure (et quart, et demie, moins le quart); premier",
+   "explicacao": [
+    "Data: le 15 mars 2026. O primeiro dia é le 1er mai (premier). Dias e meses em minúscula: lundi, février.",
+    "Números úteis: onze, douze, treize, quatorze, quinze, seize, dix-sept, dix-huit, dix-neuf, vingt, vingt et un, vingt-deux, trente.",
+    "Horas: Il est huit heures. Com minutos: huit heures dix, huit heures et quart (8 h 15), huit heures et demie (8 h 30), neuf heures moins le quart (8 h 45). Midi e minuit são masculinos: midi et demi.",
+    "Para dizer a hora de um evento use à: Le cours commence à neuf heures. Lundi = esta segunda; le lundi = toda segunda."
+   ],
+   "vocab": [
+    {
+     "en": "lundi",
+     "pt": "segunda-feira"
+    },
+    {
+     "en": "janvier",
+     "pt": "janeiro"
+    },
+    {
+     "en": "midi",
+     "pt": "meio-dia"
+    },
+    {
+     "en": "minuit",
+     "pt": "meia-noite"
+    },
+    {
+     "en": "et quart",
+     "pt": "e quinze"
+    },
+    {
+     "en": "et demie",
+     "pt": "e meia"
+    },
+    {
+     "en": "le matin",
+     "pt": "de manhã"
+    },
+    {
+     "en": "le soir",
+     "pt": "à noite"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous avez rendez-vous avec un ami. Écrivez la date et l'heure en lettres, et dites où vous vous retrouvez. Écrivez 12 mots ou plus.",
+    "genero": "petit texte",
+    "min": 12,
+    "max": 30,
+    "modelo": "Mon rendez-vous est le vingt mars à quatorze heures trente. Je retrouve Paul devant le cinéma de ma ville.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Escrevi a data e a hora por extenso?",
+     "Dias e meses estão em minúscula?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Como se escrevem dias da semana e meses em francês?",
+     "op": [
+      "Com maiúscula: Lundi, Mars",
+      "Em minúscula: lundi, mars",
+      "Só os meses com maiúscula",
+      "Só os dias com maiúscula"
+     ],
+     "r": 1,
+     "exp": "Dias e meses vão em minúscula: lundi 5 mars."
+    },
+    {
+     "t": "gap",
+     "q": "Il est 8 h 15 → Il est huit heures et ___.",
+     "resp": [
+      "quart"
+     ],
+     "exp": "8 h 15 = huit heures et quart."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Le cours commence à neuf heures et demie.",
+     "exp": "'Neuf heures' liga: neu-veur. 'Demie' soa 'de-mi'."
+    },
+    {
+     "t": "mc",
+     "q": "12 h 30 se dit :",
+     "op": [
+      "Il est midi et demi.",
+      "Il est midi et demie.",
+      "Il est midi moins le quart.",
+      "Il est minuit et quart."
+     ],
+     "r": 0,
+     "exp": "Midi é masculino, então: midi et demi (sem e)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Mon",
+      "anniversaire",
+      "est",
+      "le",
+      "dix",
+      "juillet"
+     ],
+     "resp": "Mon anniversaire est le dix juillet.",
+     "exp": "Ordem: le + número + mês."
+    },
+    {
+     "t": "gap",
+     "q": "Corrigez : 'le 1 mai' → le ___ mai. (dia 1)",
+     "resp": [
+      "premier",
+      "1er"
+     ],
+     "exp": "O primeiro dia do mês usa premier (1er)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga a data do seu aniversário.",
+     "frase": "Quelle est la date de ton anniversaire ?",
+     "modelo": "Mon anniversaire est le douze mai.",
+     "min": 4,
+     "chave": [
+      "anniversaire",
+      "janvier",
+      "février",
+      "mars",
+      "avril",
+      "mai",
+      "juin",
+      "juillet",
+      "août",
+      "septembre",
+      "octobre",
+      "novembre",
+      "décembre"
+     ],
+     "exp": "Use Mon anniversaire est le + número + mês."
+    },
+    {
+     "t": "mc",
+     "q": "15 h 45 se dit :",
+     "op": [
+      "trois heures et quart",
+      "quatre heures moins le quart",
+      "trois heures moins le quart",
+      "quatre heures et demie"
+     ],
+     "r": 1,
+     "exp": "15 h 45 = quatre heures moins le quart (faltam 15 minutos para as 16 h)."
+    },
+    {
+     "t": "gap",
+     "q": "Le cours finit à ___ heures. (17 h, em letras)",
+     "resp": [
+      "dix-sept"
+     ],
+     "exp": "17 = dix-sept (com hífen)."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Salut, Cher Paul, Bisous",
+   "objetivo": "Abrir e encerrar mensagens para amigos com as fórmulas certas.",
+   "foco": "Formules d'ouverture et de clôture: Salut, Cher / Chère, Bisous, À bientôt",
+   "explicacao": [
+    "Para abrir uma mensagem a um amigo: Salut Paul, / Coucou Marie, / Cher Paul, / Chère Marie, (cher para homem, chère para mulher; sempre com vírgula).",
+    "Para encerrar entre amigos: À bientôt, / À très vite, / Bisous, / Grosses bises, / Amitiés,. Depois, escreva só o seu prénom.",
+    "Cuidado com a tradução literal: Querido = cher (não 'querido'); Beijos = bisous (não 'beijos'); Até logo = à bientôt.",
+    "Com amigos use tu: Comment vas-tu ? Merci pour ton message. Com desconhecidos, vous (veremos depois)."
+   ],
+   "vocab": [
+    {
+     "en": "Salut",
+     "pt": "Oi"
+    },
+    {
+     "en": "Cher / Chère",
+     "pt": "Querido / Querida"
+    },
+    {
+     "en": "Coucou",
+     "pt": "Oi (bem informal)"
+    },
+    {
+     "en": "Bisous",
+     "pt": "Beijos"
+    },
+    {
+     "en": "À bientôt",
+     "pt": "Até logo"
+    },
+    {
+     "en": "Amitiés",
+     "pt": "Abraços / Saudações"
+    },
+    {
+     "en": "Merci pour ton message",
+     "pt": "Obrigado pela sua mensagem"
+    },
+    {
+     "en": "écrire",
+     "pt": "escrever"
+    }
+   ],
+   "material": {
+    "tarefa": "Écrivez le début et la fin d'un message à un ami, Paul : une formule d'ouverture, deux phrases et une formule de clôture. Écrivez 15 mots ou plus.",
+    "genero": "message",
+    "min": 15,
+    "max": 35,
+    "modelo": "Salut Paul, comment vas-tu ? Moi, ça va bien. Je suis en vacances à la plage avec ma famille. À bientôt ! Bisous, Ana",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Comecei com Salut/Cher/Chère e uma vírgula?",
+     "Terminei com À bientôt ou Bisous e assinei com meu prénom?",
+     "Usei tu com o amigo?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Ouverture d'un message pour une amie, Julie :",
+     "op": [
+      "Cher Julie,",
+      "Chère Julie,",
+      "Chers Julie,",
+      "Querida Julie,"
+     ],
+     "r": 1,
+     "exp": "Para uma mulher: Chère + vírgula."
+    },
+    {
+     "t": "gap",
+     "q": "Fin d'un message à un ami : « À bientôt, ___, Ana ». (beijos)",
+     "resp": [
+      "Bisous",
+      "Bises",
+      "Grosses bises",
+      "Gros bisous"
+     ],
+     "exp": "Entre amigos: Bisous ou Bises."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Salut Paul ! Merci pour ton message.",
+     "exp": "'Merci' soa 'mér-si'; 'message' soa 'me-sáj'."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle formule de fin est correcte entre amis ?",
+     "op": [
+      "Cordialement",
+      "Bisous",
+      "Veuillez agréer",
+      "Respectueusement"
+     ],
+     "r": 1,
+     "exp": "Entre amigos: Bisous. As outras são formais."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Cher",
+      "Paul",
+      "merci",
+      "pour",
+      "ton",
+      "invitation"
+     ],
+     "resp": "Cher Paul, merci pour ton invitation.",
+     "exp": "Abertura + vírgula + frase."
+    },
+    {
+     "t": "gap",
+     "q": "Tchau, até logo ! → ___ bientôt !",
+     "resp": [
+      "À"
+     ],
+     "exp": "Até logo = À bientôt (com acento grave)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga como terminaria uma mensagem a um amigo.",
+     "frase": "Comment finis-tu un message à un ami ?",
+     "modelo": "Je finis avec : À bientôt, bisous.",
+     "min": 3,
+     "chave": [
+      "bisous",
+      "bientôt",
+      "bises",
+      "amitiés",
+      "à"
+     ],
+     "exp": "Use À bientôt, Bisous ou Amitiés."
+    },
+    {
+     "t": "mc",
+     "q": "Quel message est correct ?",
+     "op": [
+      "Salut Paul, comment vas-tu ?",
+      "Salut Paul, comment va-tu ?",
+      "Salut Paul, comment es-tu vas ?",
+      "Salut Paul, comment tu est ?"
+     ],
+     "r": 0,
+     "exp": "Comment vas-tu ? é a pergunta correta (tu vas, com hífen)."
+    },
+    {
+     "t": "gap",
+     "q": "Pour une amie, on écrit : « ___ Marie, ». (querida)",
+     "resp": [
+      "Chère"
+     ],
+     "exp": "Para uma mulher: Chère, com accent grave."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Et, mais, parce que",
+   "objetivo": "Ligar ideias simples com et, mais, ou e parce que e explicar o motivo.",
+   "foco": "Connecteurs: et, mais, ou, parce que; pourquoi ?",
+   "explicacao": [
+    "et = e (soma): J'aime le thé et le café. Cuidado: est = é/está (verbo) e et = e. Il est grand et blond.",
+    "mais = mas (oposição): J'aime le thé, mais je n'aime pas le café. Atenção, falso amigo: mais em francês NÃO é 'mais' do português (isso é plus).",
+    "ou = ou: Tu veux du thé ou du café ? (Sem acento. Com acento, où = onde.)",
+    "Pourquoi ? = por quê? e parce que = porque: Je reste ici parce que j'ai un examen. Antes de vogal: parce qu'il, parce qu'elle."
+   ],
+   "vocab": [
+    {
+     "en": "et",
+     "pt": "e"
+    },
+    {
+     "en": "mais",
+     "pt": "mas"
+    },
+    {
+     "en": "ou",
+     "pt": "ou"
+    },
+    {
+     "en": "parce que",
+     "pt": "porque"
+    },
+    {
+     "en": "pourquoi",
+     "pt": "por que"
+    },
+    {
+     "en": "aussi",
+     "pt": "também"
+    },
+    {
+     "en": "très",
+     "pt": "muito"
+    },
+    {
+     "en": "un peu",
+     "pt": "um pouco"
+    }
+   ],
+   "material": {
+    "tarefa": "Dites ce que vous aimez et ce que vous n'aimez pas. Expliquez avec « parce que ». Écrivez 20 mots ou plus.",
+    "genero": "petit texte",
+    "min": 20,
+    "max": 40,
+    "modelo": "J'aime le sport parce que c'est amusant. J'aime aussi la musique, mais je n'aime pas le piano. Mon ami Paul joue de la guitare et il chante très bien.",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Usei et, mais e parce que no lugar certo?",
+     "Não confundi et (e) com est (é)?",
+     "Usei parce qu' antes de vogal (parce qu'il)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Je suis fatigué ___ je travaille beaucoup.",
+     "op": [
+      "mais",
+      "parce que",
+      "ou",
+      "et"
+     ],
+     "r": 1,
+     "exp": "O motivo da fadiga: parce que (porque)."
+    },
+    {
+     "t": "gap",
+     "q": "J'aime le thé ___ je n'aime pas le café.",
+     "resp": [
+      "mais"
+     ],
+     "exp": "Oposição: mais = mas."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Je reste à la maison parce qu'il pleut.",
+     "exp": "'Parce qu'il' soa 'pars-kil'. 'Pleut' soa 'plö'."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Il est content parce que il a un cadeau.",
+      "Il est content parce qu'il a un cadeau.",
+      "Il est content par que il a un cadeau.",
+      "Il est content parce qu'il à un cadeau."
+     ],
+     "r": 1,
+     "exp": "Parce que vira parce qu' antes de il; e 'a' (tem) não leva acento."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elle",
+      "est",
+      "triste",
+      "parce",
+      "qu'elle",
+      "est",
+      "seule"
+     ],
+     "resp": "Elle est triste parce qu'elle est seule.",
+     "exp": "Resultado + parce qu' + motivo."
+    },
+    {
+     "t": "gap",
+     "q": "Pourquoi tu manges ? — ___ j'ai faim.",
+     "resp": [
+      "Parce que"
+     ],
+     "exp": "Resposta a pourquoi: parce que."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Explique por que você estuda francês.",
+     "frase": "Pourquoi tu apprends le français ?",
+     "modelo": "J'apprends le français parce que j'aime voyager.",
+     "min": 4,
+     "chave": [
+      "parce",
+      "français",
+      "voyager",
+      "aime",
+      "travail",
+      "études"
+     ],
+     "exp": "Comece com Parce que... ou J'apprends le français parce que..."
+    },
+    {
+     "t": "mc",
+     "q": "Em francês, « mais » quer dizer:",
+     "op": [
+      "mas (oposição)",
+      "mais (maior quantidade)",
+      "muito",
+      "também"
+     ],
+     "r": 0,
+     "exp": "Mais = mas. Para 'mais' (quantidade) o francês usa plus."
+    },
+    {
+     "t": "gap",
+     "q": "Tu veux du thé ___ du café ? (ou)",
+     "resp": [
+      "ou"
+     ],
+     "exp": "Opção entre duas coisas: ou (sem acento)."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "La carte postale",
+   "objetivo": "Escrever um cartão-postal curto contando onde você está, o tempo e o que faz.",
+   "foco": "Carte postale: lieu, météo, activités; il fait + adjectif; aller au présent",
+   "explicacao": [
+    "Estrutura: abertura (Cher Paul,) + onde você está + o tempo + o que você faz + fecho (Bisous).",
+    "Tempo: Il fait beau (faz bom tempo), Il fait chaud / froid, Il pleut (chove). Não use être: errado = Il est chaud.",
+    "Verbo aller (ir): je vais, tu vas, il/elle va, nous allons, vous allez, ils/elles vont. Ex.: Nous allons à la plage.",
+    "Atividades: Je visite la ville, je mange dans un restaurant, je me promène. Dica: use et, mais e parce que para ligar as frases."
+   ],
+   "vocab": [
+    {
+     "en": "en vacances",
+     "pt": "de férias"
+    },
+    {
+     "en": "la plage",
+     "pt": "a praia"
+    },
+    {
+     "en": "la ville",
+     "pt": "a cidade"
+    },
+    {
+     "en": "Il fait beau",
+     "pt": "Faz bom tempo"
+    },
+    {
+     "en": "Il fait chaud",
+     "pt": "Está calor"
+    },
+    {
+     "en": "visiter",
+     "pt": "visitar"
+    },
+    {
+     "en": "le soleil",
+     "pt": "o sol"
+    },
+    {
+     "en": "le restaurant",
+     "pt": "o restaurante"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous êtes en vacances. Vous écrivez une carte postale à un ami français, Paul. Vous dites où vous êtes, le temps qu'il fait et ce que vous faites. Écrivez entre 30 et 50 mots.",
+    "genero": "carte postale",
+    "min": 30,
+    "max": 50,
+    "modelo": "Cher Paul, je suis en vacances à Rio avec ma famille. Il fait très beau et il fait chaud. Le matin, nous allons à la plage. Le soir, nous mangeons dans un petit restaurant. La ville est magnifique et les gens sont gentils. Bisous, Ana",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Disse onde estou, o tempo e o que faço?",
+     "Usei il fait para o tempo e aller (nous allons) corretamente?",
+     "Abri com Cher/Chère e fechei com Bisous ou À bientôt?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle ouverture convient pour une carte postale à un ami ?",
+     "op": [
+      "Cher Paul,",
+      "Monsieur,",
+      "Madame la directrice,",
+      "Objet : vacances"
+     ],
+     "r": 0,
+     "exp": "Para um amigo: Cher Paul,."
+    },
+    {
+     "t": "gap",
+     "q": "Il ___ très beau aujourd'hui. (faire)",
+     "resp": [
+      "fait"
+     ],
+     "exp": "O tempo usa faire: il fait beau.",
+     "dica": "FAIRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Je suis à Rome et il fait très chaud.",
+     "exp": "'Chaud' soa 'chô'. Em 'fait' o t final não soa."
+    },
+    {
+     "t": "mc",
+     "q": "Comment dit-on « Está calor » (tempo) ?",
+     "op": [
+      "Il est chaud.",
+      "Il fait chaud.",
+      "Il a chaud.",
+      "Il y a chaud."
+     ],
+     "r": 1,
+     "exp": "Para o tempo: Il fait chaud. Il a chaud = ele sente calor."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Nous",
+      "allons",
+      "à",
+      "la",
+      "plage",
+      "tous",
+      "les",
+      "matins"
+     ],
+     "resp": "Nous allons à la plage tous les matins.",
+     "exp": "Nous + allons (aller) + lugar + tempo.",
+     "alt": [
+      "Tous les matins nous allons à la plage."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Corrigez : 'Nous vont au musée.' → Nous ___ au musée. (aller)",
+     "resp": [
+      "allons"
+     ],
+     "exp": "Nous → allons.",
+     "dica": "ALLER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga onde você está e como está o tempo.",
+     "frase": "Où es-tu en vacances et quel temps fait-il ?",
+     "modelo": "Je suis à Paris. Il fait beau.",
+     "min": 5,
+     "chave": [
+      "suis",
+      "fait",
+      "beau",
+      "chaud",
+      "froid",
+      "pleut"
+     ],
+     "exp": "Use Je suis à + cidade e Il fait + adjetivo."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase finit bien une carte postale à un ami ?",
+     "op": [
+      "Bisous et à bientôt !",
+      "Cordialement, Monsieur",
+      "Veuillez agréer mes salutations",
+      "Dans l'attente de votre réponse"
+     ],
+     "r": 0,
+     "exp": "Entre amigos: Bisous et à bientôt."
+    },
+    {
+     "t": "gap",
+     "q": "Je mange ___ un petit restaurant. (em)",
+     "resp": [
+      "dans"
+     ],
+     "exp": "Dentro de um lugar fechado usamos dans: dans un restaurant."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Inviter un ami",
+   "objetivo": "Escrever um convite curto com data, hora e lugar.",
+   "foco": "Inviter: Tu veux venir ? Je t'invite; pouvoir et vouloir; date, heure, lieu",
+   "explicacao": [
+    "Para convidar: Je t'invite à mon anniversaire. / Tu veux venir à ma fête ? / Tu peux venir samedi ?",
+    "Verbos úteis: pouvoir (je peux, tu peux, il peut, nous pouvons), vouloir (je veux, tu veux, il veut, nous voulons) e venir (je viens, tu viens). Atenção: tu peux (não 'tu peut').",
+    "Num convite diga sempre quando, onde e a que horas: samedi 12 avril, chez moi, à dix-neuf heures.",
+    "Termine pedindo uma resposta: Réponds-moi vite ! e com uma fórmula de despedida: Bisous."
+   ],
+   "vocab": [
+    {
+     "en": "inviter",
+     "pt": "convidar"
+    },
+    {
+     "en": "la fête",
+     "pt": "a festa"
+    },
+    {
+     "en": "l'anniversaire",
+     "pt": "o aniversário"
+    },
+    {
+     "en": "chez moi",
+     "pt": "na minha casa"
+    },
+    {
+     "en": "pouvoir",
+     "pt": "poder"
+    },
+    {
+     "en": "vouloir",
+     "pt": "querer"
+    },
+    {
+     "en": "venir",
+     "pt": "vir"
+    },
+    {
+     "en": "Réponds-moi",
+     "pt": "Responda-me"
+    }
+   ],
+   "material": {
+    "tarefa": "C'est bientôt votre anniversaire. Vous écrivez un message à une amie, Julie, pour l'inviter à votre fête. Vous donnez la date, l'heure et le lieu. Écrivez entre 30 et 50 mots.",
+    "genero": "invitation",
+    "min": 30,
+    "max": 50,
+    "modelo": "Salut Julie, samedi 12 avril, c'est mon anniversaire ! J'organise une fête chez moi, 15 rue des Fleurs, à dix-neuf heures. Tu peux venir ? Nous allons manger, danser et écouter de la musique. Il y a aussi un gâteau au chocolat. Réponds-moi vite ! Bisous, Ana",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Escrevi a data, a hora e o lugar da festa?",
+     "Perguntei se o amigo pode vir (Tu peux venir ?) e usei tu?",
+     "Pedi uma resposta e terminei com Bisous?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pour inviter un ami, on écrit :",
+     "op": [
+      "Tu veux venir à ma fête ?",
+      "Tu veux venez à ma fête ?",
+      "Tu veux venir à mon fête ?",
+      "Tu veux de venir ma fête ?"
+     ],
+     "r": 0,
+     "exp": "Vouloir + infinitivo (venir), e fête é feminino: ma fête."
+    },
+    {
+     "t": "gap",
+     "q": "Tu ___ venir samedi ? (verbo POUVOIR)",
+     "resp": [
+      "peux"
+     ],
+     "exp": "Tu peux (com x).",
+     "dica": "POUVOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Je t'invite à mon anniversaire samedi à dix-huit heures.",
+     "exp": "'Dix-huit' soa 'di-zuit'; 'heures' soa 'ör'."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase donne le lieu de la fête ?",
+     "op": [
+      "La fête est chez moi.",
+      "La fête est à vingt heures.",
+      "La fête est samedi.",
+      "La fête est amusante."
+     ],
+     "r": 0,
+     "exp": "Chez moi = na minha casa: é o lugar."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "t'invite",
+      "à",
+      "dîner",
+      "chez",
+      "moi",
+      "vendredi"
+     ],
+     "resp": "Je t'invite à dîner chez moi vendredi.",
+     "exp": "Je t'invite à + infinitivo + lugar + dia."
+    },
+    {
+     "t": "gap",
+     "q": "Corrigez : 'Tu peut venir ?' → Tu ___ venir ?",
+     "resp": [
+      "peux"
+     ],
+     "exp": "Com tu, o verbo pouvoir termina em -x: tu peux."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda se você está livre no sábado à noite.",
+     "frase": "Tu es libre samedi soir ?",
+     "modelo": "Oui, je suis libre samedi soir.",
+     "min": 4,
+     "chave": [
+      "oui",
+      "non",
+      "libre",
+      "désolé",
+      "désolée"
+     ],
+     "exp": "Responda com Oui, je suis libre... ou Non, je suis occupé."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le bon ordre pour une invitation ?",
+     "op": [
+      "Salut / invitation (quand, où) / question / Bisous",
+      "Bisous / invitation / Salut",
+      "Invitation / Bisous / Salut",
+      "Question / Salut / Bisous"
+     ],
+     "r": 0,
+     "exp": "Abertura, convite com data e lugar, pergunta e despedida."
+    },
+    {
+     "t": "gap",
+     "q": "Rendez-vous ___ quinze heures devant le cinéma. (às)",
+     "resp": [
+      "à"
+     ],
+     "exp": "Para a hora usamos à: à quinze heures."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Répondre à une invitation",
+   "objetivo": "Aceitar ou recusar um convite com educação e dar um motivo.",
+   "foco": "Accepter / refuser; Merci pour…; Je suis désolé(e); ne … pas; parce que",
+   "explicacao": [
+    "Comece agradecendo: Merci pour ton invitation. / Merci beaucoup pour ton message.",
+    "Para aceitar: Oui, avec plaisir ! Je viens avec ma sœur. À samedi !",
+    "Para recusar: Je suis désolé(e), mais je ne peux pas venir parce que je travaille. A negação fica em volta do verbo: ne + verbo + pas (je ne peux pas).",
+    "Sempre dê um motivo com parce que e termine com uma fórmula amigável: Bisous, À bientôt. Cuidado com o gênero: désolé (homem), désolée (mulher)."
+   ],
+   "vocab": [
+    {
+     "en": "avec plaisir",
+     "pt": "com prazer"
+    },
+    {
+     "en": "Merci pour",
+     "pt": "Obrigado por"
+    },
+    {
+     "en": "désolé(e)",
+     "pt": "desculpe / sinto muito"
+    },
+    {
+     "en": "je ne peux pas",
+     "pt": "eu não posso"
+    },
+    {
+     "en": "venir",
+     "pt": "vir"
+    },
+    {
+     "en": "le cadeau",
+     "pt": "o presente"
+    },
+    {
+     "en": "occupé(e)",
+     "pt": "ocupado(a)"
+    },
+    {
+     "en": "À samedi",
+     "pt": "Até sábado"
+    }
+   ],
+   "material": {
+    "tarefa": "Votre amie Julie vous invite à son anniversaire samedi. Vous répondez : vous la remerciez, vous acceptez ou vous refusez, et vous donnez une raison. Écrivez entre 30 et 50 mots.",
+    "genero": "réponse à une invitation",
+    "min": 30,
+    "max": 50,
+    "modelo": "Chère Julie, merci beaucoup pour ton invitation. Je suis désolé, mais je ne peux pas venir samedi parce que je travaille. Je t'envoie un petit cadeau avec Marie. Bon anniversaire ! Nous allons faire une sortie ensemble dimanche prochain. Bisous, Paul",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa?",
+     "Cada frase começa com maiúscula e termina com ponto (ou ? / !)?",
+     "Escrevi o número de palavras pedido?",
+     "Agradeci o convite (Merci pour ton invitation)?",
+     "Aceitei ou recusei e dei um motivo com parce que?",
+     "Usei ne ... pas ao negar (je ne peux pas)?",
+     "Terminei com uma fórmula de despedida?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pour accepter avec plaisir :",
+     "op": [
+      "Oui, avec plaisir !",
+      "Non, merci beaucoup.",
+      "Désolé, je suis occupé.",
+      "Peut-être jamais."
+     ],
+     "r": 0,
+     "exp": "Aceitar: Oui, avec plaisir !"
+    },
+    {
+     "t": "gap",
+     "q": "Merci ___ ton invitation.",
+     "resp": [
+      "pour"
+     ],
+     "exp": "Agradecer por algo: merci pour."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Je suis désolée, je ne peux pas venir samedi.",
+     "exp": "Em 'peux' o x não soa: 'pö'. 'Désolée' soa 'dé-zo-lê'."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je ne peux pas venir parce que j'ai un examen.",
+      "Je peux pas ne venir parce que j'ai un examen.",
+      "Je ne pas peux venir parce que j'ai un examen.",
+      "Je ne peux venir pas parce que j'ai un examen."
+     ],
+     "r": 0,
+     "exp": "Ne antes do verbo e pas depois: ne peux pas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "ne",
+      "peux",
+      "pas",
+      "venir",
+      "parce",
+      "que",
+      "je",
+      "travaille"
+     ],
+     "resp": "Je ne peux pas venir parce que je travaille.",
+     "exp": "Je + ne + verbo + pas + infinitivo + motivo."
+    },
+    {
+     "t": "gap",
+     "q": "Elle est malade : elle ne vient ___ à la fête.",
+     "resp": [
+      "pas"
+     ],
+     "exp": "A negação é ne ... pas: elle ne vient pas."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda ao convite: aceite ou recuse.",
+     "frase": "Tu viens à ma fête samedi ?",
+     "modelo": "Oui, avec plaisir, je viens avec ma sœur.",
+     "min": 4,
+     "chave": [
+      "oui",
+      "non",
+      "plaisir",
+      "désolé",
+      "désolée",
+      "viens",
+      "peux"
+     ],
+     "exp": "Aceite com Oui, avec plaisir ou recuse com Désolé(e), je ne peux pas."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle réponse refuse poliment ?",
+     "op": [
+      "Désolé, je ne suis pas libre samedi.",
+      "Oui, je viens avec plaisir.",
+      "À samedi, bisous !",
+      "Super, j'arrive !"
+     ],
+     "r": 0,
+     "exp": "Para recusar educadamente: Désolé + motivo."
+    },
+    {
+     "t": "gap",
+     "q": "Je viens ___ ma sœur. (com)",
+     "resp": [
+      "avec"
+     ],
+     "exp": "Companhia: avec = com."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulacre : formulaire et message",
+   "objetivo": "Fazer um simulado completo da Production écrite do DELF A1: formulário e mensagem de 40 a 50 palavras.",
+   "foco": "Production écrite DELF A1: formulaire + message (invitation / réponse)",
+   "explicacao": [
+    "A prova tem 2 partes: (1) preencher uma ficha e (2) escrever uma mensagem curta a um amigo. Tempo de referência: cerca de 30 minutos.",
+    "No formulário: nom em maiúsculas, prénom com inicial maiúscula, nacionalidade em minúscula, data, endereço (número, rua, código postal, cidade), profissão e telefone.",
+    "Na mensagem: abertura (Salut Marc, / Cher Marc,), 40 a 50 palavras, tu com o amigo, data e hora por extenso, et / mais / parce que e fecho (Bisous, À bientôt).",
+    "Antes de entregar releia: maiúsculas, acordos (petit/petite, amis/amies), verbos (je vais, tu peux, nous allons) e acentos (à, é, è)."
+   ],
+   "vocab": [
+    {
+     "en": "la fiche d'inscription",
+     "pt": "a ficha de inscrição"
+    },
+    {
+     "en": "s'inscrire",
+     "pt": "inscrever-se"
+    },
+    {
+     "en": "le club de sport",
+     "pt": "o clube esportivo"
+    },
+    {
+     "en": "la natation",
+     "pt": "a natação"
+    },
+    {
+     "en": "près de chez moi",
+     "pt": "perto da minha casa"
+    },
+    {
+     "en": "Réponds-moi vite",
+     "pt": "Responda-me rápido"
+    },
+    {
+     "en": "ensemble",
+     "pt": "juntos"
+    },
+    {
+     "en": "proposer",
+     "pt": "propor"
+    }
+   ],
+   "material": {
+    "tarefa": "Exercice 1 : Vous vous inscrivez à un club de sport en France. Remplissez la fiche : nom, prénom, nationalité, date de naissance, adresse, profession, téléphone. Exercice 2 : Vous écrivez un message à un ami français, Marc. Vous lui dites que vous avez trouvé un club de sport, vous l'invitez à venir avec vous et vous proposez un jour et une heure. Écrivez entre 40 et 50 mots.",
+    "genero": "formulaire + message",
+    "min": 40,
+    "max": 60,
+    "modelo": "Salut Marc, comment vas-tu ? Je viens de trouver un club de sport près de chez moi. Il y a du football, du tennis et de la natation. Tu veux venir avec moi samedi à dix heures ? Nous allons jouer ensemble. Réponds-moi vite ! Bisous, Ana",
+    "checklist": [
+     "Preenchi todos os campos do formulário (nom, prénom, nationalité, date de naissance, adresse, profession, téléphone)?",
+     "Escrevi o sobrenome em maiúsculas e a nacionalidade e profissão em minúscula?",
+     "A mensagem tem entre 40 e 50 palavras e responde a todos os pontos (clube, convite, dia e hora)?",
+     "Abri e fechei a mensagem com as fórmulas certas (Salut / Cher; Bisous / À bientôt)?",
+     "Conferi verbos, acordos, acentos e pontuação?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Dans la fiche, où écrit-on « DUPONT » ?",
+     "op": [
+      "Prénom",
+      "Nom",
+      "Nationalité",
+      "Profession"
+     ],
+     "r": 1,
+     "exp": "O sobrenome vai em Nom, em maiúsculas."
+    },
+    {
+     "t": "gap",
+     "q": "Nationalité (vous êtes une femme brésilienne) : ___",
+     "resp": [
+      "brésilienne"
+     ],
+     "exp": "Mulher brasileira: brésilienne, em minúscula."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Je voudrais m'inscrire au club de natation.",
+     "exp": "'Natation' soa 'na-ta-siõ'. 'Voudrais' soa 'vu-dré'."
+    },
+    {
+     "t": "mc",
+     "q": "Le 03/09/2008 se lit :",
+     "op": [
+      "le trois septembre deux mille huit",
+      "le neuf mars deux mille huit",
+      "le trois septembre deux mille dix",
+      "le treize septembre deux mille huit"
+     ],
+     "r": 0,
+     "exp": "Na França a ordem é dia/mês/ano, como no Brasil: 3 de setembro de 2008."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Mon",
+      "adresse",
+      "est",
+      "8",
+      "rue",
+      "de",
+      "la",
+      "Paix",
+      "à",
+      "Lyon"
+     ],
+     "resp": "Mon adresse est 8 rue de la Paix à Lyon.",
+     "exp": "Número, rua e cidade, nessa ordem."
+    },
+    {
+     "t": "gap",
+     "q": "Mes amis ___ contents de venir. (verbo ÊTRE)",
+     "resp": [
+      "sont"
+     ],
+     "exp": "Mes amis = ils: sont.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "mc",
+     "q": "Choisissez le début et la fin corrects pour écrire à Marc :",
+     "op": [
+      "Cher Marc, ... Bisous",
+      "Monsieur, ... Bisous",
+      "Cher Marc, ... Veuillez agréer",
+      "Salut Monsieur, ... Cordialement"
+     ],
+     "r": 0,
+     "exp": "Para um amigo: Cher Marc + Bisous. As outras misturam registro formal e informal."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você faz aos sábados.",
+     "frase": "Qu'est-ce que tu fais le samedi ?",
+     "modelo": "Le samedi, je joue au football avec mes amis.",
+     "min": 4,
+     "chave": [
+      "joue",
+      "regarde",
+      "vais",
+      "mange",
+      "samedi",
+      "amis"
+     ],
+     "exp": "Use Le samedi, je + verbo (joue, mange, vais)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Tu",
+      "veux",
+      "venir",
+      "avec",
+      "moi",
+      "samedi",
+      "à",
+      "dix",
+      "heures"
+     ],
+     "resp": "Tu veux venir avec moi samedi à dix heures ?",
+     "exp": "Convite: Tu veux venir + com quem + quando.",
+     "alt": [
+      "Tu veux venir avec moi à dix heures samedi."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Je ne peux pas venir ___ je travaille.",
+     "resp": [
+      "parce que",
+      "parce qu'"
+     ],
+     "exp": "O motivo: parce que."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Nous allons au parc et nous jouons au tennis.",
+      "Nous allez au parc et nous jouons au tennis.",
+      "Nous allons à le parc et nous jouent au tennis.",
+      "Nous aller au parc et nous jouons au tennis."
+     ],
+     "r": 0,
+     "exp": "Nous allons au parc (à + le = au) e nous jouons."
+    },
+    {
+     "t": "gap",
+     "q": "10 h 30 → Il est dix heures et ___.",
+     "resp": [
+      "demie"
+     ],
+     "exp": "30 minutos: et demie (heure é feminino)."
+    }
+   ]
+  }
+ ]
+}

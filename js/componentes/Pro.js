@@ -12,7 +12,7 @@
   ];
   const BENEFICIOS = [
     ["mentor", "Mentoria com IA sem limite", "Pergunte quanto quiser: o que revisar, planos de estudo e explicação de questões. No grátis são 3 perguntas por dia."],
-    ["book", "Curso de Inglês completo", "As 360 aulas do A1 ao C2, simulados Cambridge e correção de redação e fala pela IA. No grátis: nivelamento e a aula 1 de cada trilha."],
+    ["book", "Cursos de Inglês e Francês completos", "720 aulas do A1 ao C2, simulados Cambridge e DELF/DALF, e correção de redação e fala pela IA. No grátis: nivelamento e a aula 1 de cada trilha."],
     ["lock", "Sem anúncios", "Estude sem nenhuma propaganda no app."],
     ["trophy", "Ajuda a manter o Logic Academy", "O banco de questões, o plano semanal e a comunidade continuam grátis para todo mundo."]
   ];
@@ -84,7 +84,7 @@
         <div class="row" style="justify-content:flex-end;gap:8px"><button class="btn ghost" type="button" data-tt="x">Cancelar</button><button class="btn primary" type="submit" id="tt-enviar">Ativar 3 dias grátis</button></div></form>`;
     const passo3 = ate => `<div class="card stack modal" style="width:min(480px,100%);text-align:center;align-items:center">
         <div class="tt-ok">✓</div><h3 style="margin:0">Seu teste grátis começou!</h3>
-        <p class="muted small" style="margin:0">Você tem o Logic Academy Pro até <b>${app.esc(fmtData(ate))}</b>: mentoria sem limite, todas as aulas de Inglês e nenhum anúncio.</p>
+        <p class="muted small" style="margin:0">Você tem o Logic Academy Pro até <b>${app.esc(fmtData(ate))}</b>: mentoria sem limite, todas as aulas de Inglês e Francês e nenhum anúncio.</p>
         <button class="btn primary" type="button" data-tt="grupo">Entrar no grupo do WhatsApp</button>
         <button class="btn ghost sm" type="button" data-tt="x">Começar a estudar</button></div>`;
     const erro = m => { const e = bg.querySelector(".tt-erro"); if (e) { e.hidden = false; e.textContent = m; } };
@@ -130,7 +130,7 @@
   function render(container, app) {
     const { esc, ico } = app, a = app.assinatura(), pro = app.ehPro(), teste = app.testeAte && app.testeAte(), emTeste = pro && !(a && a.ate > Date.now()) && teste > Date.now();
     container.innerHTML = `<div class="page pro-page" style="max-width:900px">
-      ${app.pageHead("Logic Academy Pro", "Estude sem limites: mentoria com IA, curso de Inglês completo e nada de anúncios.")}
+      ${app.pageHead("Logic Academy Pro", "Estude sem limites: mentoria com IA, cursos de Inglês e Francês completos e nada de anúncios.")}
       ${app.ehAdmin && app.ehAdmin() ? `<div class="card pro-ativo"><span class="pro-tag">ADMIN</span><div style="flex:1"><h2 style="margin:0">Você é administrador</h2>
           <p class="muted" style="margin:4px 0 0">Todos os recursos Pro estão liberados na sua conta. Libere o Pro dos alunos no painel de administração.</p></div><button class="btn sm primary" type="button" data-pro-admin>Abrir painel</button></div>`
       : emTeste ? `<div class="card pro-ativo"><span class="pro-tag">PRO</span><div style="flex:1"><h2 style="margin:0">Seu teste grátis está ativo</h2>
@@ -155,7 +155,7 @@
 
   const MOTIVOS = {
     mentoria: ["Você usou as 3 perguntas grátis de hoje", "Com o Pro, a mentoria com IA não tem limite. Amanhã você ganha mais 3 perguntas grátis."],
-    idiomas: ["Esta aula faz parte do Pro", "No plano grátis você faz o nivelamento e a aula 1 de cada trilha. Com o Pro, libera as 360 aulas do A1 ao C2 e os simulados."]
+    idiomas: ["Esta aula faz parte do Pro", "No plano grátis você faz o nivelamento e a aula 1 de cada trilha. Com o Pro, libera as 720 aulas de Inglês e Francês, do A1 ao C2, e os simulados."]
   };
   function paywall(app, motivo) {
     document.querySelectorAll(".pro-modal").forEach(x => x.remove());

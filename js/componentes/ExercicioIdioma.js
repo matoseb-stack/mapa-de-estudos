@@ -3,21 +3,27 @@
      mc     marcar a alternativa
      gap    escrever a palavra que falta
      order  montar a frase clicando nas palavras
-     speak  falar em inglês (reconhecimento de voz do navegador); "repetir" uma frase ou "responder" uma pergunta
+     speak  falar no idioma da aula (reconhecimento de voz do navegador); "repetir" uma frase ou "responder" uma pergunta
    Uso: LAComp.Exercicio.render(el, ex, { app, aoResultado(ok, info), aoContinuar(), rotuloContinuar })
-   Também exporta: falar(texto) (voz em inglês), pararFala(), vozDisponivel(), reconhecimentoDisponivel(). */
+   Também exporta: falar(texto), pararFala(), vozDisponivel(), reconhecimentoDisponivel() e
+   idioma("fr-FR") para trocar a voz e o microfone (padrão: inglês britânico). */
 (function () {
   "use strict";
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-  const norm = s => String(s || "").toLowerCase().replace(/[’‘`´]/g, "'").replace(/[“”]/g, '"').replace(/[^a-z0-9à-ÿ' -]/g, " ").replace(/\s+/g, " ").trim();
+  const norm = s => String(s || "").toLowerCase().replace(/[’‘`´]/g, "'").replace(/[“”]/g, '"').replace(/[^a-z0-9à-ÿœæ' -]/g, " ").replace(/\s+/g, " ").trim();
   const palavras = s => norm(s).split(" ").filter(Boolean);
+  // "ecole" = "école": usado para aceitar resposta sem acento (com aviso) e na fala
+  const semAcento = s => norm(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/œ/g, "oe").replace(/æ/g, "ae");
+  let LINGUA = "en-GB";
+  function idioma(lang) { if (lang && lang !== LINGUA) { LINGUA = lang; vozEn = null; escolherVoz(); } return LINGUA; }
 
   /* ---------- voz (texto → fala) ---------- */
   let vozEn = null;
   function escolherVoz() {
     if (!("speechSynthesis" in window)) return null;
-    const vs = speechSynthesis.getVoices().filter(v => /^en[-_]/i.test(v.lang));
-    vozEn = vs.find(v => /GB/i.test(v.lang) && /Google|Natural|Online/i.test(v.name)) || vs.find(v => /GB/i.test(v.lang)) || vs.find(v => /US/i.test(v.lang)) || vs[0] || null;
+    const [lg, reg] = LINGUA.split("-"), vs = speechSynthesis.getVoices().filter(v => new RegExp("^" + lg + "[-_]", "i").test(v.lang));
+    const daRegiao = v => new RegExp(reg + "$", "i").test(v.lang.replace("_", "-"));
+    vozEn = vs.find(v => daRegiao(v) && /Google|Natural|Online/i.test(v.name)) || vs.find(daRegiao) || (lg === "en" && vs.find(v => /US/i.test(v.lang))) || vs[0] || null;
     return vozEn;
   }
   if ("speechSynthesis" in window) { escolherVoz(); speechSynthesis.onvoiceschanged = escolherVoz; }
@@ -32,7 +38,7 @@
       const pessoas = [...new Set(falas.map(f => f.p))];
       falas.forEach((f, i) => {
         const u = new SpeechSynthesisUtterance(f.t);
-        u.lang = (v && v.lang) || "en-GB"; if (v) u.voice = v;
+        u.lang = (v && v.lang) || LINGUA; if (v) u.voice = v;
         u.rate = op.rate || 0.95; u.pitch = [1.05, 0.8, 1.3][pessoas.indexOf(f.p) % 3];
         if (i === falas.length - 1) { u.onend = () => ok(true); u.onerror = () => ok(false); }
         speechSynthesis.speak(u);
@@ -45,7 +51,7 @@
   const reconhecimentoDisponivel = () => !!Rec;
   function ouvir(aoParcial) {
     return new Promise((ok, no) => {
-      const r = new Rec(); r.lang = "en-GB"; r.interimResults = true; r.maxAlternatives = 3; r.continuous = false;
+      const r = new Rec(); r.lang = LINGUA; r.interimResults = true; r.maxAlternatives = 3; r.continuous = false;
       let finais = [], parcial = "";
       r.onresult = e => {
         parcial = ""; finais = [];
@@ -68,13 +74,13 @@
     const a = palavras(alvo), b = palavras(dito); if (!a.length) return 0;
     const m = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
     for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++)
-      m[i][j] = a[i - 1] === b[j - 1] || a[i - 1].replace(/'/g, "") === b[j - 1].replace(/'/g, "") ? m[i - 1][j - 1] + 1 : Math.max(m[i - 1][j], m[i][j - 1]);
+      m[i][j] = a[i - 1] === b[j - 1] || semAcento(a[i - 1]).replace(/'/g, "") === semAcento(b[j - 1]).replace(/'/g, "") ? m[i - 1][j - 1] + 1 : Math.max(m[i - 1][j], m[i][j - 1]);
     return m[a.length][b.length] / a.length;
   }
   function avaliarFala(ex, alternativas) {
     if (ex.modo === "responder") {
-      const melhor = alternativas.map(t => { const ws = palavras(t), txt = " " + ws.join(" ") + " ";
-        const chave = !(ex.chave || []).length || ex.chave.some(c => txt.includes(" " + norm(c)) || txt.includes(norm(c) + " "));
+      const melhor = alternativas.map(t => { const ws = palavras(t), txt = " " + semAcento(ws.join(" ")) + " ";
+        const chave = !(ex.chave || []).length || ex.chave.some(c => txt.includes(" " + semAcento(c)) || txt.includes(semAcento(c) + " "));
         return { t, n: ws.length, chave, ok: ws.length >= (ex.min || 3) && chave }; }).sort((x, y) => (y.ok - x.ok) || (y.n - x.n))[0];
       return melhor || { t: "", n: 0, ok: false };
     }
@@ -83,7 +89,8 @@
   }
 
   /* ---------- correção de texto ---------- */
-  const confereGap = (ex, v) => (ex.resp || []).some(r => norm(r) === norm(v));
+  // certo / certo mas sem o acento (vale, com aviso) / errado
+  const confereGap = (ex, v) => (ex.resp || []).some(r => norm(r) === norm(v)) ? "ok" : (ex.resp || []).some(r => semAcento(r) === semAcento(v)) ? "acento" : "";
   const confereOrder = (ex, frase) => [ex.resp].concat(ex.alt || []).some(r => norm(r) === norm(frase));
   const embaralhar = a => { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; }
     return b.join(" ") === a.join(" ") && a.length > 2 ? embaralhar(a) : b; };
@@ -120,6 +127,7 @@
       const certa = tipo === "mc" ? `${"ABCD"[ordem.indexOf(ex.r)]}) ${ex.op[ex.r]}` : tipo === "gap" ? ex.resp[0] : tipo === "order" ? ex.resp : ex.modo === "repetir" ? ex.frase : ex.modelo;
       fb.hidden = false; fb.className = "ex-fb " + (info.pulado ? "pulado" : ok ? "ok" : "no");
       fb.innerHTML = `<b>${info.pulado ? "Fala pulada" : ok ? "✓ Correto!" : "✗ Ainda não"}</b>
+        ${info.acento ? `<p class="small">⚠️ Atenção ao acento: o certo é <b>${esc(ex.resp.find(r => semAcento(r) === semAcento(info.texto)) || certa)}</b>. Na prova, o acento conta.</p>` : ""}
         ${info.ouvido != null ? `<p class="small">A gente ouviu: <i>“${esc(info.ouvido || "…")}”</i>${info.s != null ? ` · ${Math.round(info.s * 100)}% da frase` : ""}</p>` : ""}
         ${!ok || tipo === "speak" ? `<p class="small">${tipo === "speak" && ex.modo === "responder" ? "Exemplo de resposta" : "Resposta"}: <b>${esc(certa)}</b></p>` : ""}
         ${ex.exp ? `<p class="small muted">${esc(ex.exp)}</p>` : ""}`;
@@ -137,7 +145,7 @@
     // escrever
     if (tipo === "gap") {
       const inp = $(".ex-gap");
-      const verif = () => { if (!inp.value.trim()) { inp.focus(); return; } const ok = confereGap(ex, inp.value); inp.classList.add(ok ? "ok" : "no"); concluir(ok, { texto: inp.value }); };
+      const verif = () => { if (!inp.value.trim()) { inp.focus(); return; } const c = confereGap(ex, inp.value), ok = !!c; inp.classList.add(ok ? "ok" : "no"); concluir(ok, { texto: inp.value, acento: c === "acento" }); };
       $('[data-ex="verificar"]').onclick = verif;
       inp.addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); if (!respondido) verif(); else $('[data-ex="continuar"]').click(); } });
       setTimeout(() => inp.focus({ preventScroll: true }), 50);
@@ -185,5 +193,5 @@
   }
   const fmtQ = q => esc(q).replace("___", '<span class="cbt-gap">_____</span>');
 
-  (window.LAComp = window.LAComp || {}).Exercicio = { render, falar, pararFala, vozDisponivel, reconhecimentoDisponivel, semelhanca, norm };
+  (window.LAComp = window.LAComp || {}).Exercicio = { render, falar, pararFala, vozDisponivel, reconhecimentoDisponivel, semelhanca, norm, semAcento, idioma };
 })();

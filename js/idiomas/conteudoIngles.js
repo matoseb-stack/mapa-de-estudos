@@ -71,5 +71,11 @@
     ]
   };
 
-  window.LA_INGLES = { NIVEIS, EXAME, METAS, COMPETENCIAS, NIVELAMENTO, AULAS_POR_TRILHA, arquivo };
+  window.LA_INGLES = {
+    k: "ingles", nome: "Inglês", bandeira: "🇬🇧", prova: "Cambridge English", provaCurta: "Cambridge", lang: "en-GB", materia: "Inglês",
+    metaPadrao: "B2", placeholder: "Write your answer here…",
+    aviso: "Curso no formato das provas Cambridge English (Key, Preliminary, First, Advanced e Proficiency). Conteúdo próprio do Logic Academy, sem vínculo com a Cambridge University Press & Assessment.",
+    NIVEIS, EXAME, METAS, COMPETENCIAS, NIVELAMENTO, AULAS_POR_TRILHA, arquivo
+  };
+  (window.LA_IDIOMAS = window.LA_IDIOMAS || {}).ingles = window.LA_INGLES;
 })();

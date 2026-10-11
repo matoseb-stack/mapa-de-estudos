@@ -1,20 +1,21 @@
 /* CambridgeTestView — teste de nivelamento adaptativo (A1 → C2).
    Cada etapa tem 5 ou 6 questões de um nível, alternando marcar, escrever, montar a frase e falar.
    Acertou 75% ou mais → sobe para o próximo nível. Acertou metade → fica nesse nível. Menos → fica no anterior.
-   Uso: LAComp.CambridgeTestView.abrir(container, { app, aoConcluir(resultado), aoCancelar() }) */
+   Uso: LAComp.CambridgeTestView.abrir(container, { app, idioma: "ingles"|"frances", aoConcluir(resultado), aoCancelar() }) */
 (function () {
   "use strict";
   const XP_POR_ACERTO = 5;
 
   function abrir(container, op) {
-    const { app } = op, IN = window.LA_INGLES, Srv = window.LAService || window.FirebaseServiceMock, Ex = window.LAComp.Exercicio, esc = app.esc;
+    const { app } = op, IN = (window.LA_IDIOMAS || {})[op.idioma || "ingles"] || window.LA_INGLES, Srv = window.LAService || window.FirebaseServiceMock, Ex = window.LAComp.Exercicio, esc = app.esc;
     const N = IN.NIVEIS, porNivel = {};
+    Ex.idioma(IN.lang || "en-GB");
     let iN = 0, iQ = 0, acertos = 0, validas = 0, totalAcertos = 0, feitas = 0, final = null;
 
     function pintar() {
       const lista = IN.NIVELAMENTO[N[iN]], ex = lista[iQ];
       container.innerHTML = `<div class="page" style="max-width:720px">
-        ${app.pageHead("Teste de nivelamento", "Inglês no padrão Cambridge. As questões ficam mais difíceis conforme você acerta. Se não souber, tente mesmo assim: errar também ajuda a achar o seu nível.")}
+        ${app.pageHead("Teste de nivelamento", `${IN.nome || "Inglês"} no padrão ${IN.provaCurta || "Cambridge"}. As questões ficam mais difíceis conforme você acerta. Se não souber, tente mesmo assim: errar também ajuda a achar o seu nível.`)}
         <div class="card stack cbt">
           <div class="row" style="justify-content:space-between"><span class="eyebrow">Etapa ${iN + 1} de ${N.length} · questão ${iQ + 1} de ${lista.length}</span><button class="btn ghost sm" type="button" data-cbt="sair">Sair do teste</button></div>
           <div class="cbt-etapas" aria-hidden="true">${N.map((n, k) => `<i class="${k < iN ? "feita" : k === iN ? "atual" : ""}"></i>`).join("")}</div>
@@ -48,8 +49,8 @@
     async function concluir() {
       container.innerHTML = `<div class="page" style="max-width:720px"><div class="card stack" style="align-items:center;text-align:center;padding:40px 20px"><span class="spinner"></span><p class="muted">Calculando e salvando seu nível…</p></div></div>`;
       try {
-        const reg = await Srv.saveUserLevel(app.uid(), "ingles", { nivel: final, pontos: totalAcertos, total: feitas, porNivel });
-        const xp = await Srv.addLanguageXP(app.uid(), totalAcertos * XP_POR_ACERTO, "Teste de nivelamento");
+        const reg = await Srv.saveUserLevel(app.uid(), IN.k || "ingles", { nivel: final, pontos: totalAcertos, total: feitas, porNivel });
+        const xp = await Srv.addLanguageXP(app.uid(), totalAcertos * XP_POR_ACERTO, `Teste de nivelamento · ${IN.nome || "Inglês"}`);
         if (app.xpPerfil) app.xpPerfil("nivelamento");                // XP no perfil: só na primeira vez
         container.innerHTML = `<div class="page" style="max-width:720px"><div class="card stack cbt-res" style="align-items:center;text-align:center">
           <span class="eyebrow">Resultado do nivelamento</span>

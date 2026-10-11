@@ -127,6 +127,10 @@
 .idm-nv{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 4px;border:1px solid var(--line-2);border-radius:var(--r-sm);background:var(--surface);color:var(--fg);cursor:pointer;font:inherit}
 .idm-nv b{font-size:1.05rem}.idm-nv small{font-size:.68rem;color:var(--muted);white-space:nowrap}
 .idm-nv.on{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}.idm-nv.on small{color:inherit;opacity:.85}
+.idm-linguas{display:flex;gap:8px;margin-bottom:12px;overflow-x:auto}
+.idm-lg{display:grid;grid-template-columns:auto 1fr;column-gap:8px;align-items:center;padding:8px 14px;border:1px solid var(--line-2);border-radius:var(--r-sm);background:var(--surface);color:var(--fg);cursor:pointer;font:inherit;text-align:left;flex:0 0 auto}
+.idm-lg span{grid-row:span 2;font-size:1.4rem}.idm-lg small{font-size:.7rem;color:var(--muted)}
+.idm-lg.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
 .idm-aulas{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
 .idm-aula-li{width:100%;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--surface);color:var(--fg);font:inherit;text-align:left;cursor:pointer}
 .idm-aula-li:hover:not([disabled]){border-color:var(--accent)}

@@ -1,0 +1,2795 @@
+{
+ "nivel": "A2",
+ "skill": "listening",
+ "exame": "DELF A2",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Quelle heure est-il ?",
+   "objetivo": "Entender horários em conversas curtas: hora cheia, e quart, et demie, moins le quart e formato de 24 horas.",
+   "foco": "L'heure: et quart, et demie, moins le quart, midi, 24 h",
+   "explicacao": [
+    "Hora cheia: Il est huit heures. Com minutos: huit heures dix. Quinze depois: huit heures et quart (8h15). Meia hora: huit heures et demie (8h30).",
+    "Quinze antes: neuf heures moins le quart (8h45). Atenção: 'huit heures moins le quart' é 7h45, não 8h15.",
+    "Meio-dia e meia-noite: midi, minuit. Midi et demi = 12h30. Na estação e no rádio se usa o formato 24 h: seize heures = 16h, dix-sept heures quinze = 17h15.",
+    "Pronúncia: em 'huit heures' o t de huit soa e se liga ao h mudo (ui-tœr). Em 'deux heures' e 'trois heures' o s soa como z: deu-zœr, troi-zœr. Esse z é a liaison."
+   ],
+   "vocab": [
+    {
+     "en": "quelle heure est-il ?",
+     "pt": "que horas são?"
+    },
+    {
+     "en": "et quart",
+     "pt": "e quinze"
+    },
+    {
+     "en": "et demie",
+     "pt": "e meia"
+    },
+    {
+     "en": "moins le quart",
+     "pt": "quinze para"
+    },
+    {
+     "en": "midi",
+     "pt": "meio-dia"
+    },
+    {
+     "en": "partir",
+     "pt": "partir, sair"
+    },
+    {
+     "en": "se dépêcher",
+     "pt": "apressar-se"
+    },
+    {
+     "en": "venir chercher",
+     "pt": "vir buscar"
+    }
+   ],
+   "material": {
+    "titulo": "Le train de Léo",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Léo, quelle heure est-il ?"
+     },
+     {
+      "p": "B",
+      "t": "Il est sept heures et quart, maman."
+     },
+     {
+      "p": "A",
+      "t": "Ton train part à huit heures moins le quart ! Dépêche-toi."
+     },
+     {
+      "p": "B",
+      "t": "Ah non ! Je croyais qu'il partait à huit heures et demie."
+     },
+     {
+      "p": "A",
+      "t": "Non, ça, c'est l'heure de ton cours de physique, à neuf heures."
+     },
+     {
+      "p": "B",
+      "t": "Et le déjeuner, c'est à quelle heure ?"
+     },
+     {
+      "p": "A",
+      "t": "À midi et demi. Et ton match de football commence à seize heures."
+     },
+     {
+      "p": "B",
+      "t": "Tu viens me chercher après ?"
+     },
+     {
+      "p": "A",
+      "t": "Oui, à dix-sept heures quinze, devant le stade."
+     },
+     {
+      "p": "B",
+      "t": "D'accord. Je prends mon sandwich !"
+     },
+     {
+      "p": "A",
+      "t": "Il est dans ton sac. Vite !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "À quelle heure part le train de Léo ?",
+     "op": [
+      "7 h 15",
+      "7 h 45",
+      "8 h 30",
+      "9 h 00"
+     ],
+     "r": 1,
+     "exp": "'Huit heures moins le quart' = 7 h 45. 7 h 15 é a hora atual e 8 h 30 é a hora que Léo achava errado."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Le déjeuner est à midi et ___.",
+     "resp": [
+      "demi",
+      "demie"
+     ],
+     "exp": "'Midi et demi' = 12 h 30. Com 'midi' (masculino) escreve-se demi; com 'heure' (feminino), demie.",
+     "ouvir": "Le déjeuner est à midi et demi."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Mon train part à huit heures moins le quart.",
+     "exp": "Em 'huit heures' o t soa e liga com a palavra seguinte: ui-tœr. 'Moins le quart': o e de 'le' é muito fraco (e muet).",
+     "ouvir": "Mon train part à huit heures moins le quart."
+    },
+    {
+     "t": "mc",
+     "q": "Quand commence le cours de physique ?",
+     "op": [
+      "8 h 30",
+      "9 h 00",
+      "12 h 30",
+      "16 h 00"
+     ],
+     "r": 1,
+     "exp": "A mãe diz: le cours de physique, à neuf heures. 8 h 30 é a hora do trem que Léo achava; 16 h é o futebol."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "est",
+      "sept",
+      "heures",
+      "et",
+      "quart"
+     ],
+     "resp": "Il est sept heures et quart.",
+     "exp": "Hora: Il est + número + heures + et quart. 'Sept heures et quart' = 7h15."
+    },
+    {
+     "t": "gap",
+     "q": "Léo va retrouver sa mère à dix-sept heures ___.",
+     "resp": [
+      "quinze",
+      "15"
+     ],
+     "exp": "Ela vem buscá-lo às 17h15: dix-sept heures quinze."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga a que horas você começa o seu dia.",
+     "frase": "À quelle heure commencez-vous votre journée ?",
+     "modelo": "Je commence à huit heures et demie.",
+     "min": 4,
+     "chave": [
+      "heure",
+      "heures",
+      "midi",
+      "demie",
+      "quart"
+     ],
+     "exp": "Use : Je commence à + hora. Ex.: à sept heures, à huit heures et quart."
+    },
+    {
+     "t": "mc",
+     "q": "Il est sept heures et quart. Dans combien de temps le train part-il ?",
+     "op": [
+      "Dans 15 minutes",
+      "Dans 30 minutes",
+      "Dans 45 minutes",
+      "Dans 1 heure"
+     ],
+     "r": 1,
+     "exp": "São 7h15 e o trem sai às 7h45 (huit heures moins le quart): faltam 30 minutos."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Ton match de football commence à ___ heures.",
+     "resp": [
+      "seize",
+      "16"
+     ],
+     "exp": "Seize heures = 16h. Não confunda com seize (16) e six (6).",
+     "ouvir": "Ton match de football commence à seize heures."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Combien ça coûte ?",
+   "objetivo": "Entender preços em euros e centimes, totais, troco e formas de pagamento.",
+   "foco": "Prix en euros; nombres 60-99; la monnaie; payer par carte ou en espèces",
+   "explicacao": [
+    "Preço: 2,70 € lê-se 'deux euros soixante-dix'. 0,90 € = 'quatre-vingt-dix centimes'. A vírgula é dita 'euros'.",
+    "Números difíceis: 70 = soixante-dix, 80 = quatre-vingts, 90 = quatre-vingt-dix, 99 = quatre-vingt-dix-neuf. Cuidado com 17 (dix-sept) e 70 (soixante-dix).",
+    "Perguntas úteis: Ça coûte combien ? C'est combien ? Je peux payer par carte ? Voici votre monnaie.",
+    "Pronúncia: 'trois euros' tem liaison (troi-zeuros) e 'deux euros' também (deu-zeuros)."
+   ],
+   "vocab": [
+    {
+     "en": "ça coûte combien ?",
+     "pt": "quanto custa?"
+    },
+    {
+     "en": "un kilo",
+     "pt": "um quilo"
+    },
+    {
+     "en": "la monnaie",
+     "pt": "o troco"
+    },
+    {
+     "en": "en espèces",
+     "pt": "em dinheiro"
+    },
+    {
+     "en": "par carte",
+     "pt": "no cartão"
+    },
+    {
+     "en": "en tout",
+     "pt": "ao todo"
+    },
+    {
+     "en": "la barquette",
+     "pt": "a cestinha, a embalagem"
+    },
+    {
+     "en": "désolé",
+     "pt": "desculpe"
+    }
+   ],
+   "material": {
+    "titulo": "Au marché",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour madame, vous désirez ?"
+     },
+     {
+      "p": "B",
+      "t": "Bonjour. Les tomates, c'est combien ?"
+     },
+     {
+      "p": "A",
+      "t": "Deux euros soixante-dix le kilo. Les pommes sont à trois euros quatre-vingt-dix."
+     },
+     {
+      "p": "B",
+      "t": "Et les fraises ?"
+     },
+     {
+      "p": "A",
+      "t": "Six euros cinquante la barquette. Elles sont très bonnes et elles viennent du jardin de mon frère."
+     },
+     {
+      "p": "B",
+      "t": "Alors je prends un kilo de tomates et deux barquettes de fraises."
+     },
+     {
+      "p": "A",
+      "t": "Ça fait quinze euros soixante-dix en tout."
+     },
+     {
+      "p": "B",
+      "t": "Je peux payer par carte ?"
+     },
+     {
+      "p": "A",
+      "t": "Désolé, seulement en espèces aujourd'hui."
+     },
+     {
+      "p": "B",
+      "t": "Pas de problème. Voici vingt euros."
+     },
+     {
+      "p": "A",
+      "t": "Et voici votre monnaie : quatre euros trente. Bonne journée !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Combien coûte le kilo de tomates ?",
+     "op": [
+      "2,17 €",
+      "2,70 €",
+      "3,90 €",
+      "6,50 €"
+     ],
+     "r": 1,
+     "exp": "'Deux euros soixante-dix' = 2,70 €. 3,90 € são as maçãs e 6,50 € as morangos."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Les pommes sont à trois euros ___.",
+     "resp": [
+      "quatre-vingt-dix",
+      "quatre vingt dix",
+      "90"
+     ],
+     "exp": "Quatre-vingt-dix = 90. Não confunda com soixante-dix (70).",
+     "ouvir": "Les pommes sont à trois euros quatre-vingt-dix."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Les fraises sont à six euros cinquante.",
+     "exp": "'Six euros': liaison em 'six euros' (si-zeuros). 'Cinquante' tem som nasal an: cin-quan-te.",
+     "ouvir": "Les fraises sont à six euros cinquante."
+    },
+    {
+     "t": "mc",
+     "q": "Qu'achète la cliente ?",
+     "op": [
+      "Un kilo de tomates et deux barquettes de fraises",
+      "Un kilo de pommes et deux barquettes de fraises",
+      "Un kilo de tomates et une barquette de fraises",
+      "Deux kilos de tomates et des pommes"
+     ],
+     "r": 0,
+     "exp": "Ela diz: un kilo de tomates et deux barquettes de fraises. As maçãs só aparecem como informação de preço."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "peux",
+      "payer",
+      "par",
+      "carte"
+     ],
+     "resp": "Je peux payer par carte?",
+     "exp": "Je peux + verbo = pedir permissão. Payer par carte = pagar no cartão."
+    },
+    {
+     "t": "gap",
+     "q": "Selon le dialogue, le total est de quinze euros ___.",
+     "resp": [
+      "soixante-dix",
+      "soixante dix",
+      "70"
+     ],
+     "exp": "2,70 + 2 x 6,50 = 15,70: quinze euros soixante-dix."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga quanto custa um café na sua cidade.",
+     "frase": "Combien coûte un café dans votre ville ?",
+     "modelo": "Un café coûte deux euros.",
+     "min": 4,
+     "chave": [
+      "euro",
+      "euros",
+      "coûte",
+      "cinquante",
+      "centimes"
+     ],
+     "exp": "Use : Un café coûte + número + euros. Ex.: deux euros cinquante."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle monnaie la cliente reçoit-elle ?",
+     "op": [
+      "4,30 €",
+      "4,03 €",
+      "5,30 €",
+      "15,70 €"
+     ],
+     "r": 0,
+     "exp": "Ela dá 20 € e paga 15,70 €: troco de 4,30 € (quatre euros trente). 15,70 € é o total."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Voici votre monnaie : quatre euros ___.",
+     "resp": [
+      "trente",
+      "30"
+     ],
+     "exp": "Trente = 30. Não confunda com treize (13).",
+     "ouvir": "Voici votre monnaie : quatre euros trente."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "À la gare",
+   "objetivo": "Entender anúncios de estação: atrasos, mudança de plataforma, trens suprimidos.",
+   "foco": "Annonces en gare: retard, voie, supprimé, guichet",
+   "explicacao": [
+    "Anúncios típicos: Le train pour Lyon partira avec vingt minutes de retard. Le train est supprimé. Le départ aura lieu voie 7.",
+    "'Voie' ou 'quai' = plataforma. 'Un retard' = atraso. 'Supprimé' = cancelado. 'Guichet' = bilheteria.",
+    "Quando há correção, preste atenção em 'et non' e 'au lieu de': voie 7 et non voie 4.",
+    "Pronúncia: 'vingt' soa vẽ; em 'vingt minutes' o t não soa. No anúncio, 'prévu à quatorze heures vingt' = 14h20 programado."
+   ],
+   "vocab": [
+    {
+     "en": "un retard",
+     "pt": "um atraso"
+    },
+    {
+     "en": "la voie / le quai",
+     "pt": "a plataforma"
+    },
+    {
+     "en": "supprimé",
+     "pt": "cancelado"
+    },
+    {
+     "en": "le guichet",
+     "pt": "a bilheteria"
+    },
+    {
+     "en": "prévu",
+     "pt": "previsto"
+    },
+    {
+     "en": "les bagages",
+     "pt": "a bagagem"
+    },
+    {
+     "en": "être prié de",
+     "pt": "ser solicitado a"
+    },
+    {
+     "en": "la surveillance",
+     "pt": "a vigilância"
+    }
+   ],
+   "material": {
+    "titulo": "Annonces à la gare",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Attention, mesdames et messieurs. Le train pour Lyon, prévu à quatorze heures vingt, partira avec quinze minutes de retard. Il partira de la voie sept et non de la voie quatre. Le train pour Marseille de quatorze heures trente-cinq est supprimé. Les voyageurs pour Marseille sont priés de se rendre au guichet."
+     },
+     {
+      "p": "A",
+      "t": "Le train pour Dijon partira à quinze heures dix, voie deux. Il ne sera pas en retard. Veuillez ne pas laisser vos bagages sans surveillance. La SNCF vous remercie de votre patience."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "À quelle heure le train pour Lyon part-il finalement ?",
+     "op": [
+      "14 h 20",
+      "14 h 35",
+      "15 h 10",
+      "14 h 15"
+     ],
+     "r": 1,
+     "exp": "Previsto às 14h20 mais com quinze minutos de atraso: 14h35. 15h10 é Dijon."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Le train pour Lyon part de la voie ___.",
+     "resp": [
+      "sept",
+      "7"
+     ],
+     "exp": "A voie muda: sept et non quatre.",
+     "ouvir": "Il partira de la voie sept et non de la voie quatre."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Le train pour Dijon partira voie deux.",
+     "exp": "'Deux' soa como deu. 'Partira' tem e final fraco. Fale 'par-ti-ra voi deu'.",
+     "ouvir": "Le train pour Dijon partira voie deux."
+    },
+    {
+     "t": "mc",
+     "q": "Que se passe-t-il pour le train de Marseille ?",
+     "op": [
+      "Il a quinze minutes de retard",
+      "Il change de quai",
+      "Il est supprimé",
+      "Il part à 15 h 10"
+     ],
+     "r": 2,
+     "exp": "'Est supprimé' = cancelado. Os passageiros devem ir ao guichet."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Les",
+      "voyageurs",
+      "sont",
+      "priés",
+      "de",
+      "se",
+      "rendre",
+      "au",
+      "guichet"
+     ],
+     "resp": "Les voyageurs sont priés de se rendre au guichet.",
+     "exp": "Être prié de + verbo = ser solicitado a. Se rendre = ir até."
+    },
+    {
+     "t": "gap",
+     "q": "Ne laissez pas vos bagages sans ___.",
+     "resp": [
+      "surveillance"
+     ],
+     "exp": "Sans surveillance = sem vigilância, sem ninguém olhando."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga como você viaja normalmente.",
+     "frase": "Comment voyagez-vous : en train, en bus ou en voiture ?",
+     "modelo": "Je voyage en train.",
+     "min": 3,
+     "chave": [
+      "train",
+      "bus",
+      "voiture",
+      "métro",
+      "avion"
+     ],
+     "exp": "Use : Je voyage en + meio de transporte. Ex.: en bus, en voiture."
+    },
+    {
+     "t": "mc",
+     "q": "Quel train part le plus tard ?",
+     "op": [
+      "Lyon",
+      "Marseille",
+      "Dijon"
+     ],
+     "r": 2,
+     "exp": "Dijon sai às 15h10, depois de Lyon (14h35). O de Marseille foi cancelado."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Le train pour Dijon partira à quinze heures ___.",
+     "resp": [
+      "dix",
+      "10"
+     ],
+     "exp": "Quinze heures dix = 15h10.",
+     "ouvir": "Le train pour Dijon partira à quinze heures dix."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "À l'aéroport",
+   "objetivo": "Entender anúncios de aeroporto: portas de embarque, atrasos, chamadas de passageiros.",
+   "foco": "À l'aéroport: vol, porte, embarquement, retard, brouillard",
+   "explicacao": [
+    "Palavras-chave: le vol (voo), la porte (portão), l'embarquement (embarque), à destination de (com destino a).",
+    "Motivos de atraso: le brouillard (neblina), la grève (greve), l'orage (tempestade).",
+    "'Prévu à dix-huit heures' é a hora programada; o atraso muda a hora real: 18h + 40 minutos = 18h40.",
+    "Pronúncia: 'à destination' liga o t: à-des-ti-na-sion. Em 'vol pour Madrid', 'pour' soa pur."
+   ],
+   "vocab": [
+    {
+     "en": "le vol",
+     "pt": "o voo"
+    },
+    {
+     "en": "la porte",
+     "pt": "o portão"
+    },
+    {
+     "en": "l'embarquement",
+     "pt": "o embarque"
+    },
+    {
+     "en": "à destination de",
+     "pt": "com destino a"
+    },
+    {
+     "en": "le brouillard",
+     "pt": "a neblina"
+    },
+    {
+     "en": "le passager",
+     "pt": "o passageiro"
+    },
+    {
+     "en": "l'étage",
+     "pt": "o andar"
+    },
+    {
+     "en": "à côté de",
+     "pt": "ao lado de"
+    }
+   ],
+   "material": {
+    "titulo": "Annonce et question à l'aéroport",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Le vol AF 1280 à destination de Lisbonne, prévu à dix-huit heures, a quarante minutes de retard à cause du brouillard. L'embarquement se fera porte vingt-quatre. Le vol pour Madrid embarque porte douze. Madame Lopez, passagère pour Rome, est priée de se présenter porte dix."
+     },
+     {
+      "p": "B",
+      "t": "Excusez-moi, madame, mon vol pour Lisbonne part bien à dix-huit heures ?"
+     },
+     {
+      "p": "C",
+      "t": "Non, monsieur, il part à dix-huit heures quarante, à cause du brouillard. Allez à la porte vingt-quatre."
+     },
+     {
+      "p": "B",
+      "t": "Merci. Et où est le café ?"
+     },
+     {
+      "p": "C",
+      "t": "Au premier étage, à côté de la boutique."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle est la porte d'embarquement pour Lisbonne ?",
+     "op": [
+      "Porte 10",
+      "Porte 12",
+      "Porte 24",
+      "Porte 42"
+     ],
+     "r": 2,
+     "exp": "Lisbonne: porte vingt-quatre. A porta 12 é de Madri e a 10 de Mme Lopez."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Le vol a ___ minutes de retard.",
+     "resp": [
+      "quarante",
+      "40"
+     ],
+     "exp": "Quarante = 40. Cuidado com quatorze (14).",
+     "ouvir": "Le vol a quarante minutes de retard."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "L'embarquement se fera porte vingt-quatre.",
+     "exp": "Enchaînement: 'L'embarquement' se pronuncia lan-bar-ke-man. 'Se fera': o e de 'se' é fraco.",
+     "ouvir": "L'embarquement se fera porte vingt-quatre."
+    },
+    {
+     "t": "mc",
+     "q": "À quelle heure le vol pour Lisbonne part-il vraiment ?",
+     "op": [
+      "18 h 00",
+      "18 h 14",
+      "18 h 40",
+      "19 h 00"
+     ],
+     "r": 2,
+     "exp": "Previsto às 18h, com 40 minutos de atraso: 18h40."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Madame",
+      "Lopez",
+      "est",
+      "priée",
+      "de",
+      "se",
+      "présenter",
+      "porte",
+      "dix"
+     ],
+     "resp": "Madame Lopez est priée de se présenter porte dix.",
+     "exp": "Madame Lopez é mulher: priée (com e). Se présenter = apresentar-se."
+    },
+    {
+     "t": "gap",
+     "q": "Le café est au premier ___.",
+     "resp": [
+      "étage",
+      "etage"
+     ],
+     "exp": "Au premier étage = no primeiro andar (o 'primeiro' fica acima do térreo)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga uma cidade ou país que você gosta de visitar.",
+     "frase": "Où aimez-vous voyager ?",
+     "modelo": "J'aime voyager en France.",
+     "min": 3,
+     "chave": [
+      "aime",
+      "voyage",
+      "voyager",
+      "visiter"
+     ],
+     "exp": "Use : J'aime voyager + en / au + país. Ex.: au Portugal, en Italie."
+    },
+    {
+     "t": "mc",
+     "q": "Où va Madame Lopez ?",
+     "op": [
+      "À Rome",
+      "À Madrid",
+      "À Lisbonne"
+     ],
+     "r": 0,
+     "exp": "Ela é 'passagère pour Rome'. Madri e Lisboa são outros voos."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Le vol pour Madrid embarque porte ___.",
+     "resp": [
+      "douze",
+      "12"
+     ],
+     "exp": "Douze = 12. Não confunda com deux (2) nem dix (10).",
+     "ouvir": "Le vol pour Madrid embarque porte douze."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Dans un magasin",
+   "objetivo": "Entender anúncios de loja: promoções, horário de fechamento, localização dos caixas.",
+   "foco": "Annonces en magasin: promotions, réduction, fermeture, rayon",
+   "explicacao": [
+    "Anúncios típicos: Profitez de nos promotions ! Moins trente pour cent sur les pulls. Le magasin ferme à vingt heures.",
+    "Palavras: un rayon (seção), une caisse (caixa), le rez-de-chaussée (térreo), l'accueil (recepção).",
+    "Atenção às correções: 'à vingt heures et non à vingt et une heures'. A hora que vale é a primeira.",
+    "Pronúncia: 'moins trente pour cent' = mouê trã-te pur sã. 'Vingt et une' liga o t: vẽ-té-un."
+   ],
+   "vocab": [
+    {
+     "en": "un rayon",
+     "pt": "uma seção"
+    },
+    {
+     "en": "une caisse",
+     "pt": "um caixa"
+    },
+    {
+     "en": "le rez-de-chaussée",
+     "pt": "o térreo"
+    },
+    {
+     "en": "l'accueil",
+     "pt": "a recepção"
+    },
+    {
+     "en": "moins 30 %",
+     "pt": "30% de desconto"
+    },
+    {
+     "en": "fermer",
+     "pt": "fechar"
+    },
+    {
+     "en": "le pull",
+     "pt": "o suéter"
+    },
+    {
+     "en": "perdu",
+     "pt": "perdido"
+    }
+   ],
+   "material": {
+    "titulo": "Annonce au supermarché",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Chers clients, bonjour. Cette semaine, profitez de nos promotions : au rayon fruits, les pommes sont à un euro vingt le kilo et les bananes à un euro quatre-vingt-dix. Au rayon vêtements, moins trente pour cent sur les pulls."
+     },
+     {
+      "p": "A",
+      "t": "Attention, le magasin fermera ses portes à vingt heures ce soir, et non à vingt et une heures comme d'habitude. Les caisses sont au rez-de-chaussée. Un enfant perdu, Paul, six ans, avec un pull rouge, attend à l'accueil. Merci de votre attention."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Combien coûtent les pommes ?",
+     "op": [
+      "1,02 €",
+      "1,20 €",
+      "1,90 €",
+      "2,10 €"
+     ],
+     "r": 1,
+     "exp": "'Un euro vingt' = 1,20 €. 1,90 € são as bananas."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Ce soir, le magasin ferme à ___ heures.",
+     "resp": [
+      "vingt",
+      "20"
+     ],
+     "exp": "Hoje fecha às 20h, não às 21h (vingt et une heures).",
+     "ouvir": "Ce soir, le magasin ferme à vingt heures."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Les caisses sont au rez-de-chaussée.",
+     "exp": "'Les caisses': o s final não soa. 'Rez-de-chaussée' = rè-de-cho-sé, com e muet em 'de'.",
+     "ouvir": "Les caisses sont au rez-de-chaussée."
+    },
+    {
+     "t": "mc",
+     "q": "Sur quel produit y a-t-il une réduction de 30 % ?",
+     "op": [
+      "Les pommes",
+      "Les bananes",
+      "Les pulls"
+     ],
+     "r": 2,
+     "exp": "Moins trente pour cent sur les pulls. Frutas só têm preço promocional."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Paul",
+      "attend",
+      "à",
+      "l'accueil",
+      "avec",
+      "un",
+      "pull",
+      "rouge"
+     ],
+     "resp": "Paul attend à l'accueil avec un pull rouge.",
+     "exp": "Attendre = esperar (falso cognato de 'atender'). À l'accueil = na recepção."
+    },
+    {
+     "t": "gap",
+     "q": "Le pull de Paul est ___.",
+     "resp": [
+      "rouge"
+     ],
+     "exp": "Rouge = vermelho. Paul porte un pull rouge."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você gosta de comprar no supermercado.",
+     "frase": "Qu'aimez-vous acheter dans un supermarché ?",
+     "modelo": "J'achète des fruits et du pain.",
+     "min": 4,
+     "chave": [
+      "achète",
+      "fruits",
+      "pain",
+      "lait",
+      "légumes"
+     ],
+     "exp": "Use : J'achète + du / de la / des + produto. Ex.: du lait, de la viande, des fruits."
+    },
+    {
+     "t": "mc",
+     "q": "Quel âge a Paul ?",
+     "op": [
+      "4 ans",
+      "6 ans",
+      "16 ans",
+      "60 ans"
+     ],
+     "r": 1,
+     "exp": "'Six ans' = 6 anos. Seize (16) e soixante (60) são parecidos mas não aparecem."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Les bananes coûtent un euro ___.",
+     "resp": [
+      "quatre-vingt-dix",
+      "quatre vingt dix",
+      "90"
+     ],
+     "exp": "Quatre-vingt-dix = 90 centimes.",
+     "ouvir": "Les bananes sont à un euro quatre-vingt-dix."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Messages sur répondeur",
+   "objetivo": "Entender mensagens de voz: motivo da ligação, dias, horas e números de telefone.",
+   "foco": "Messages vocaux: numéro de téléphone, rappeler, rendez-vous",
+   "explicacao": [
+    "Mensagens de voz seguem uma ordem: quem fala, por que liga, o que pedir (rappeler, venir, confirmer).",
+    "Números de telefone são ditos de dois em dois: 06 12 34 56 78 = zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit.",
+    "Pedidos comuns: Rappelle-moi / Rappelez-moi, Pouvez-vous confirmer ?, Je te laisse un message.",
+    "Pronúncia: 'je te laisse' → j'te laisse (e muet cai). Em 'soixante-dix-huit' o t de huit soa: ui-t."
+   ],
+   "vocab": [
+    {
+     "en": "laisser un message",
+     "pt": "deixar um recado"
+    },
+    {
+     "en": "rappeler",
+     "pt": "ligar de volta"
+    },
+    {
+     "en": "éteint",
+     "pt": "desligado"
+    },
+    {
+     "en": "le dentiste",
+     "pt": "o dentista"
+    },
+    {
+     "en": "jusqu'à",
+     "pt": "até"
+    },
+    {
+     "en": "prêt",
+     "pt": "pronto"
+    },
+    {
+     "en": "fermé",
+     "pt": "fechado"
+    },
+    {
+     "en": "chercher",
+     "pt": "buscar"
+    }
+   ],
+   "material": {
+    "titulo": "Deux messages",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour Camille, c'est Julie. Je te laisse un message parce que ton téléphone est éteint. Demain, je ne peux pas déjeuner avec toi, j'ai un rendez-vous chez le dentiste. On peut déjeuner jeudi, à douze heures trente ? Rappelle-moi ce soir avant vingt-deux heures au zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit. Merci, à bientôt !"
+     },
+     {
+      "p": "B",
+      "t": "Bonjour madame Martin, ici le garage Dupont. Votre voiture est prête. Vous pouvez venir la chercher jusqu'à dix-huit heures. Nous sommes fermés le dimanche. Merci et bonne journée."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi Julie ne peut-elle pas déjeuner demain ?",
+     "op": [
+      "Elle a un rendez-vous chez le dentiste",
+      "Elle est malade",
+      "Elle travaille",
+      "Elle est en voyage"
+     ],
+     "r": 0,
+     "exp": "Ela diz: j'ai un rendez-vous chez le dentiste."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : On peut déjeuner ___ à douze heures trente.",
+     "resp": [
+      "jeudi"
+     ],
+     "exp": "Julie propõe quinta-feira (jeudi) ao meio-dia e meia.",
+     "ouvir": "On peut déjeuner jeudi, à douze heures trente."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Rappelle-moi ce soir avant vingt-deux heures.",
+     "exp": "'Rappelle-moi': o e final de 'rappelle' não soa. 'Vingt-deux heures' tem liaison: vẽ-deu-zœr.",
+     "ouvir": "Rappelle-moi ce soir avant vingt-deux heures."
+    },
+    {
+     "t": "mc",
+     "q": "Comment se termine le numéro de téléphone de Julie ?",
+     "op": [
+      "34 56",
+      "56 78",
+      "12 34",
+      "78 56"
+     ],
+     "r": 1,
+     "exp": "A sequência é 06, 12, 34, 56, 78: termina em cinquante-six, soixante-dix-huit (56 78)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Vous",
+      "pouvez",
+      "venir",
+      "la",
+      "chercher",
+      "jusqu'à",
+      "dix-huit",
+      "heures"
+     ],
+     "resp": "Vous pouvez venir la chercher jusqu'à dix-huit heures.",
+     "exp": "Venir la chercher = vir buscá-la. 'Jusqu'à' = até (hora limite)."
+    },
+    {
+     "t": "gap",
+     "q": "Le garage est fermé le ___.",
+     "resp": [
+      "dimanche"
+     ],
+     "exp": "Fermés le dimanche = fechado aos domingos."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga em que dia você está livre para almoçar.",
+     "frase": "Quel jour êtes-vous libre pour déjeuner ?",
+     "modelo": "Je suis libre mardi à midi.",
+     "min": 4,
+     "chave": [
+      "lundi",
+      "mardi",
+      "mercredi",
+      "jeudi",
+      "vendredi",
+      "samedi",
+      "dimanche",
+      "libre"
+     ],
+     "exp": "Use : Je suis libre + dia + à + hora. Ex.: samedi à treize heures."
+    },
+    {
+     "t": "mc",
+     "q": "Jusqu'à quelle heure peut-on récupérer la voiture ?",
+     "op": [
+      "17 h",
+      "18 h",
+      "20 h",
+      "22 h"
+     ],
+     "r": 1,
+     "exp": "'Jusqu'à dix-huit heures' = até 18h. 22h é a hora limite para ligar para Julie."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Votre voiture est ___.",
+     "resp": [
+      "prête",
+      "prete"
+     ],
+     "exp": "Prête = pronta (feminino, porque 'la voiture').",
+     "ouvir": "Ici le garage Dupont. Votre voiture est prête."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Adresses et directions",
+   "objetivo": "Entender indicações de caminho: esquerda, direita, em frente, distâncias e lugares.",
+   "foco": "Directions: tout droit, tourner à gauche/droite, en face de, à côté de",
+   "explicacao": [
+    "Indicações: Allez tout droit. Tournez à gauche / à droite. Continuez cent mètres. Prenez la deuxième rue.",
+    "Lugares: en face de (em frente a), à côté de (ao lado de), près de (perto de), au coin de (na esquina de).",
+    "Distância: à cinq minutes à pied = a cinco minutos a pé. C'est loin ? C'est près ?",
+    "Pronúncia: 'tout droit' = tu-drua. 'Cent mètres' → sã mè-tr. Em 'tournez à gauche', o z liga com à: tur-né-za-gôch."
+   ],
+   "vocab": [
+    {
+     "en": "tout droit",
+     "pt": "em frente"
+    },
+    {
+     "en": "à gauche",
+     "pt": "à esquerda"
+    },
+    {
+     "en": "à droite",
+     "pt": "à direita"
+    },
+    {
+     "en": "en face de",
+     "pt": "em frente a"
+    },
+    {
+     "en": "à côté de",
+     "pt": "ao lado de"
+    },
+    {
+     "en": "le feu rouge",
+     "pt": "o semáforo"
+    },
+    {
+     "en": "la poste",
+     "pt": "o correio"
+    },
+    {
+     "en": "à pied",
+     "pt": "a pé"
+    }
+   ],
+   "material": {
+    "titulo": "Pour aller à la poste",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Excusez-moi, monsieur, pour aller à la poste, s'il vous plaît ?"
+     },
+     {
+      "p": "B",
+      "t": "La poste ? C'est facile. Vous allez tout droit jusqu'au feu rouge. Ensuite, vous tournez à gauche dans la rue Victor Hugo."
+     },
+     {
+      "p": "A",
+      "t": "À gauche ? Et après ?"
+     },
+     {
+      "p": "B",
+      "t": "Vous continuez cent mètres. La poste est à droite, en face de la pharmacie, à côté de la boulangerie."
+     },
+     {
+      "p": "A",
+      "t": "C'est loin ?"
+     },
+     {
+      "p": "B",
+      "t": "Non, à cinq minutes à pied. Mais attention, elle ferme à midi le samedi."
+     },
+     {
+      "p": "A",
+      "t": "Merci beaucoup. Il est dix heures, j'ai le temps."
+     },
+     {
+      "p": "B",
+      "t": "De rien. Bonne journée !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Où faut-il tourner à gauche ?",
+     "op": [
+      "Au feu rouge",
+      "À la pharmacie",
+      "À la boulangerie",
+      "À la poste"
+     ],
+     "r": 0,
+     "exp": "Tout droit jusqu'au feu rouge, puis à gauche, rue Victor Hugo."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Vous continuez ___ mètres.",
+     "resp": [
+      "cent",
+      "100"
+     ],
+     "exp": "Cent mètres = 100 metros.",
+     "ouvir": "Vous continuez cent mètres."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Pour aller à la poste, s'il vous plaît ?",
+     "exp": "'S'il vous plaît' = sil vou plè. 'Pour aller' = pur a-lé, sem pausa entre as palavras (enchaînement).",
+     "ouvir": "Pour aller à la poste, s'il vous plaît ?"
+    },
+    {
+     "t": "mc",
+     "q": "Où se trouve la poste ?",
+     "op": [
+      "À gauche, à côté de la pharmacie",
+      "À droite, en face de la pharmacie",
+      "À droite, en face de la boulangerie",
+      "Au feu rouge"
+     ],
+     "r": 1,
+     "exp": "A poste fica à direita, em frente à farmácia e ao lado da padaria."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Vous",
+      "tournez",
+      "à",
+      "gauche",
+      "dans",
+      "la",
+      "rue",
+      "Victor",
+      "Hugo"
+     ],
+     "resp": "Vous tournez à gauche dans la rue Victor Hugo.",
+     "exp": "Tourner à gauche = virar à esquerda. Dans la rue = na rua."
+    },
+    {
+     "t": "gap",
+     "q": "La poste est à cinq minutes à ___.",
+     "resp": [
+      "pied",
+      "pieds"
+     ],
+     "exp": "À pied = a pé. Em francês, 'à pied' não é plural.",
+     "ouvir": "Non, c'est à cinq minutes à pied."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Explique onde fica a estação na sua cidade.",
+     "frase": "Où est la gare, dans votre ville ?",
+     "modelo": "La gare est à droite, près de la mairie.",
+     "min": 4,
+     "chave": [
+      "droite",
+      "gauche",
+      "près",
+      "côté",
+      "face",
+      "droit"
+     ],
+     "exp": "Use : à droite, à gauche, près de, en face de. Ex.: La gare est en face du parc."
+    },
+    {
+     "t": "mc",
+     "q": "Quand la poste ferme-t-elle ?",
+     "op": [
+      "Le samedi à midi",
+      "Le samedi à dix heures",
+      "Le dimanche à midi",
+      "Tous les jours à midi"
+     ],
+     "r": 0,
+     "exp": "'Elle ferme à midi le samedi'. Dix heures é a hora em que o homem fala."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : La poste est en ___ de la pharmacie.",
+     "resp": [
+      "face"
+     ],
+     "exp": "En face de = em frente a. Não confunda com 'à côté de'.",
+     "ouvir": "La poste est à droite, en face de la pharmacie."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Inviter et proposer",
+   "objetivo": "Entender convites por telefone: ocasião, dia, hora, o que levar e endereço.",
+   "foco": "Inviter, accepter, refuser; Tu veux venir ? Avec plaisir ! Désolé, je ne peux pas",
+   "explicacao": [
+    "Para convidar: Tu fais quelque chose samedi ? Tu veux venir ? Je t'invite à dîner.",
+    "Para aceitar: Avec plaisir ! Bien sûr ! Pour recusar: Désolé(e), je ne peux pas. J'ai déjà quelque chose.",
+    "Para combinar: Peux-tu apporter un dessert ? Je m'occupe de... (eu cuido de...). Atenção aos endereços: au douze, avenue Pasteur, au troisième étage.",
+    "Pronúncia: 'tu veux venir' → t'veu v'nir (e muet). Em 'avec plaisir', o c liga: a-vèk plê-zir."
+   ],
+   "vocab": [
+    {
+     "en": "un anniversaire",
+     "pt": "um aniversário"
+    },
+    {
+     "en": "inviter",
+     "pt": "convidar"
+    },
+    {
+     "en": "avec plaisir",
+     "pt": "com prazer"
+    },
+    {
+     "en": "apporter",
+     "pt": "trazer, levar"
+    },
+    {
+     "en": "un dessert",
+     "pt": "uma sobremesa"
+    },
+    {
+     "en": "déménager",
+     "pt": "mudar de casa"
+    },
+    {
+     "en": "un étage",
+     "pt": "um andar"
+    },
+    {
+     "en": "s'occuper de",
+     "pt": "cuidar de"
+    }
+   ],
+   "material": {
+    "titulo": "Une invitation",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Allô, Inès ? C'est Marc. Tu fais quelque chose samedi soir ?"
+     },
+     {
+      "p": "B",
+      "t": "Samedi ? Non, pas encore. Pourquoi ?"
+     },
+     {
+      "p": "A",
+      "t": "Je vais organiser un dîner chez moi pour mon anniversaire, vers vingt heures. Tu veux venir ?"
+     },
+     {
+      "p": "B",
+      "t": "Avec plaisir ! Mais je finis mon travail à vingt heures, je serai un peu en retard."
+     },
+     {
+      "p": "A",
+      "t": "Pas de problème. Peux-tu apporter un dessert ? Je m'occupe du plat principal."
+     },
+     {
+      "p": "B",
+      "t": "D'accord, je ferai un gâteau au chocolat. Tu habites toujours rue des Lilas ?"
+     },
+     {
+      "p": "A",
+      "t": "Non, j'ai déménagé. Maintenant c'est au douze, avenue Pasteur, au troisième étage."
+     },
+     {
+      "p": "B",
+      "t": "Parfait. À samedi !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi Marc invite-t-il Inès ?",
+     "op": [
+      "Pour son anniversaire",
+      "Pour un mariage",
+      "Pour fêter son nouvel appartement",
+      "Pour un match de football"
+     ],
+     "r": 0,
+     "exp": "Marc organise un dîner pour son anniversaire. Ele mudou de casa (déménagé), mas esse não é o motivo da festa."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Marc va organiser un ___ chez lui.",
+     "resp": [
+      "dîner",
+      "diner"
+     ],
+     "exp": "Un dîner = um jantar.",
+     "ouvir": "Je vais organiser un dîner chez moi."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Avec plaisir, mais je finis mon travail à vingt heures.",
+     "exp": "'Avec plaisir': o c liga ao p, sem pausa. 'Je finis': o e de 'je' é muito fraco: j'finis.",
+     "ouvir": "Avec plaisir, mais je finis mon travail à vingt heures."
+    },
+    {
+     "t": "mc",
+     "q": "Qu'est-ce qu'Inès va apporter ?",
+     "op": [
+      "Le plat principal",
+      "Un dessert",
+      "Des boissons",
+      "Un cadeau"
+     ],
+     "r": 1,
+     "exp": "Marc cuida do prato principal; Inès faz um bolo de chocolate (un dessert)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Tu",
+      "fais",
+      "quelque",
+      "chose",
+      "samedi",
+      "soir"
+     ],
+     "resp": "Tu fais quelque chose samedi soir?",
+     "exp": "Faire quelque chose = fazer alguma coisa. Pergunta informal com entonação."
+    },
+    {
+     "t": "gap",
+     "q": "Marc habite maintenant avenue ___.",
+     "resp": [
+      "Pasteur"
+     ],
+     "exp": "Nouvelle adresse: au douze, avenue Pasteur. A rue des Lilas é o endereço antigo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Aceite um convite para o aniversário de um amigo.",
+     "frase": "Tu viens à mon anniversaire samedi ?",
+     "modelo": "Oui, avec plaisir, je viens !",
+     "min": 3,
+     "chave": [
+      "oui",
+      "plaisir",
+      "bien",
+      "sûr",
+      "viens",
+      "désolé",
+      "non"
+     ],
+     "exp": "Aceite com Oui, avec plaisir ! ou recuse com Désolé, je ne peux pas."
+    },
+    {
+     "t": "mc",
+     "q": "À quel étage habite Marc ?",
+     "op": [
+      "Au premier",
+      "Au deuxième",
+      "Au troisième",
+      "Au douzième"
+     ],
+     "r": 2,
+     "exp": "'Au troisième étage'. O número 12 é o número da casa (au douze), não o andar."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Le numéro de la maison de Marc est le ___.",
+     "resp": [
+      "douze",
+      "12"
+     ],
+     "exp": "Au douze, avenue Pasteur: número 12.",
+     "ouvir": "J'ai déménagé. Maintenant c'est au douze, avenue Pasteur."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Réserver une table ou une chambre",
+   "objetivo": "Entender reservas por telefone: dia, hora, número de pessoas, nome e pedidos especiais.",
+   "foco": "Réservations: Je voudrais réserver..., complet, à quel nom ?, épeler un nom",
+   "explicacao": [
+    "Para reservar: Je voudrais réserver une table pour quatre personnes. Pour quel jour ? À quelle heure ? À quel nom ?",
+    "Quando não há vaga: C'est complet. Je peux vous proposer... (Posso lhe propor...). Preste atenção: o cliente recusa uma hora e aceita outra.",
+    "Soletrar o nome: D-U-B-O-I-S se diz dé, u, bé, o, i, esse. Letras que confundem: G (jé) e J (ji); E (e) e I (i).",
+    "Pronúncia: 'je voudrais' → j'voudrais. 'Vingt et une heures trente' liga o t: vẽ-té-un."
+   ],
+   "vocab": [
+    {
+     "en": "réserver",
+     "pt": "reservar"
+    },
+    {
+     "en": "une table pour quatre",
+     "pt": "uma mesa para quatro"
+    },
+    {
+     "en": "complet",
+     "pt": "lotado"
+    },
+    {
+     "en": "proposer",
+     "pt": "propor, oferecer"
+    },
+    {
+     "en": "trop tôt",
+     "pt": "cedo demais"
+    },
+    {
+     "en": "végétarien",
+     "pt": "vegetariano"
+    },
+    {
+     "en": "à quel nom ?",
+     "pt": "em nome de quem?"
+    },
+    {
+     "en": "noter",
+     "pt": "anotar"
+    }
+   ],
+   "material": {
+    "titulo": "Au restaurant Le Jardin",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Restaurant Le Jardin, bonjour."
+     },
+     {
+      "p": "B",
+      "t": "Bonjour madame. Je voudrais réserver une table pour vendredi soir, s'il vous plaît."
+     },
+     {
+      "p": "A",
+      "t": "Pour combien de personnes ?"
+     },
+     {
+      "p": "B",
+      "t": "Pour quatre personnes. Vers vingt heures."
+     },
+     {
+      "p": "A",
+      "t": "Je suis désolée, à vingt heures, c'est complet. Je peux vous proposer dix-neuf heures ou vingt et une heures trente."
+     },
+     {
+      "p": "B",
+      "t": "Dix-neuf heures, c'est trop tôt. Va pour vingt et une heures trente."
+     },
+     {
+      "p": "A",
+      "t": "C'est à quel nom ?"
+     },
+     {
+      "p": "B",
+      "t": "Dubois, D-U-B-O-I-S. Et nous avons une personne végétarienne."
+     },
+     {
+      "p": "A",
+      "t": "Pas de problème. Je note : table pour quatre, vendredi, vingt et une heures trente, au nom de Dubois."
+     },
+     {
+      "p": "B",
+      "t": "Merci, au revoir !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pour quel jour le client réserve-t-il ?",
+     "op": [
+      "Jeudi soir",
+      "Vendredi soir",
+      "Samedi soir",
+      "Vendredi midi"
+     ],
+     "r": 1,
+     "exp": "Je voudrais réserver une table pour vendredi soir."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Ils réservent une table pour ___ personnes.",
+     "resp": [
+      "quatre",
+      "4"
+     ],
+     "exp": "Quatre personnes = 4 pessoas.",
+     "ouvir": "Je voudrais une table pour quatre personnes."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Je voudrais réserver une table pour vendredi soir.",
+     "exp": "'Je voudrais': j'voudrais, com e muet. 'Une table': o e final de 'une' é muito fraco (ün tabl).",
+     "ouvir": "Je voudrais réserver une table pour vendredi soir."
+    },
+    {
+     "t": "mc",
+     "q": "À quelle heure la table est-elle réservée finalement ?",
+     "op": [
+      "19 h 00",
+      "20 h 00",
+      "21 h 30",
+      "21 h 00"
+     ],
+     "r": 2,
+     "exp": "20h está lotado; 19h é cedo demais; ele aceita vingt et une heures trente = 21h30."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "C'est",
+      "à",
+      "quel",
+      "nom"
+     ],
+     "resp": "C'est à quel nom?",
+     "exp": "À quel nom = em nome de quem. Pergunta curta, comum em reservas."
+    },
+    {
+     "t": "gap",
+     "q": "Le nom de la réservation est ___.",
+     "resp": [
+      "Dubois"
+     ],
+     "exp": "Dubois, soletrado D-U-B-O-I-S."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga para quantas pessoas você quer reservar.",
+     "frase": "Pour combien de personnes voulez-vous réserver ?",
+     "modelo": "Pour trois personnes, s'il vous plaît.",
+     "min": 3,
+     "chave": [
+      "pour",
+      "personnes",
+      "deux",
+      "trois",
+      "quatre",
+      "cinq"
+     ],
+     "exp": "Use : Pour + número + personnes. Ex.: pour deux personnes."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi le client refuse-t-il dix-neuf heures ?",
+     "op": [
+      "Il trouve que c'est trop tôt",
+      "Il trouve que c'est trop tard",
+      "La table est trop petite",
+      "Le restaurant est fermé"
+     ],
+     "r": 0,
+     "exp": "Ele diz: Dix-neuf heures, c'est trop tôt."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Dans le groupe, il y a une personne ___.",
+     "resp": [
+      "végétarienne",
+      "vegetarienne"
+     ],
+     "exp": "Végétarienne (feminino, porque 'personne' é feminino), mesmo que seja um homem.",
+     "ouvir": "Nous avons une personne végétarienne."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Acheter des vêtements",
+   "objetivo": "Entender uma conversa de compra: tamanho, cor, preço, promoção e forma de pagamento.",
+   "foco": "Vêtements: taille, essayer, en solde, au lieu de, trop petit",
+   "explicacao": [
+    "Em loja de roupas: Je cherche une veste en taille 40. Je peux l'essayer ? Vous l'avez en bleu ?",
+    "Promoção: en solde, au lieu de. Exemplo: 59 € au lieu de 79 € = custa 59, e custava 79.",
+    "Tamanhos e cores: trop petit, trop grand, une taille au-dessus. Cores: noir, bleu, rouge, gris, blanc.",
+    "Pronúncia: 'cinquante-neuf' = sin-kãt-nêf. 'Soixante-dix-neuf' = suá-sãt-diz-nêf. Em 'quarante-deux', o e de 'quarante' é fraco."
+   ],
+   "vocab": [
+    {
+     "en": "une veste",
+     "pt": "um casaco, jaqueta"
+    },
+    {
+     "en": "la taille",
+     "pt": "o tamanho"
+    },
+    {
+     "en": "essayer",
+     "pt": "experimentar"
+    },
+    {
+     "en": "en solde",
+     "pt": "em liquidação"
+    },
+    {
+     "en": "au lieu de",
+     "pt": "em vez de"
+    },
+    {
+     "en": "une cabine d'essayage",
+     "pt": "um provador"
+    },
+    {
+     "en": "trop petit",
+     "pt": "pequeno demais"
+    },
+    {
+     "en": "un chèque",
+     "pt": "um cheque"
+    }
+   ],
+   "material": {
+    "titulo": "À la boutique",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour, je peux vous aider ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui, je cherche une veste noire en taille quarante."
+     },
+     {
+      "p": "A",
+      "t": "Voici une veste noire à quatre-vingt-neuf euros. Et celle-ci, en bleu, est en solde : cinquante-neuf euros au lieu de soixante-dix-neuf."
+     },
+     {
+      "p": "B",
+      "t": "Je peux essayer la bleue ?"
+     },
+     {
+      "p": "A",
+      "t": "Bien sûr, les cabines sont au fond, à gauche."
+     },
+     {
+      "p": "B",
+      "t": "Elle est trop petite. Vous l'avez en quarante-deux ?"
+     },
+     {
+      "p": "A",
+      "t": "Je regarde... Oui, la voici."
+     },
+     {
+      "p": "B",
+      "t": "Elle me va très bien. Je la prends. Vous acceptez les chèques ?"
+     },
+     {
+      "p": "A",
+      "t": "Non, seulement la carte ou les espèces."
+     },
+     {
+      "p": "B",
+      "t": "Alors je paie par carte."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle veste la cliente cherche-t-elle au départ ?",
+     "op": [
+      "Une veste noire en 40",
+      "Une veste bleue en 40",
+      "Une veste noire en 42",
+      "Une veste bleue en 42"
+     ],
+     "r": 0,
+     "exp": "Ela procura uma jaqueta preta tamanho 40. Depois experimenta a azul."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : La veste bleue coûte ___ euros.",
+     "resp": [
+      "cinquante-neuf",
+      "cinquante neuf",
+      "59"
+     ],
+     "exp": "59 euros em liquidação (a 79 € antes).",
+     "ouvir": "Elle est en solde : cinquante-neuf euros."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Je peux essayer la veste bleue ?",
+     "exp": "'Essayer' = è-sê-yê. 'Peux' soa pâ, com o som eu da boca arredondada.",
+     "ouvir": "Je peux essayer la veste bleue ?"
+    },
+    {
+     "t": "mc",
+     "q": "Quelle taille la cliente achète-t-elle finalement ?",
+     "op": [
+      "38",
+      "40",
+      "42",
+      "44"
+     ],
+     "r": 2,
+     "exp": "A 40 é pequena demais; ela leva a 42 (quarante-deux)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Vous",
+      "l'avez",
+      "en",
+      "quarante-deux"
+     ],
+     "resp": "Vous l'avez en quarante-deux?",
+     "exp": "L'avez: le/la + avez = l'avez (elisão). 'Vous l'avez en...' = Vocês têm em...?"
+    },
+    {
+     "t": "gap",
+     "q": "Les cabines d'essayage sont au fond, à ___.",
+     "resp": [
+      "gauche"
+     ],
+     "exp": "À gauche = à esquerda."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga qual é a sua cor preferida.",
+     "frase": "Quelle est votre couleur préférée ?",
+     "modelo": "Ma couleur préférée est le bleu.",
+     "min": 4,
+     "chave": [
+      "bleu",
+      "rouge",
+      "vert",
+      "noir",
+      "blanc",
+      "jaune",
+      "couleur"
+     ],
+     "exp": "Use : Ma couleur préférée est + le + cor. Ex.: le vert, le rouge."
+    },
+    {
+     "t": "mc",
+     "q": "Comment la cliente paie-t-elle ?",
+     "op": [
+      "Par chèque",
+      "Par carte",
+      "En espèces"
+     ],
+     "r": 1,
+     "exp": "Cheque não é aceito; ela diz: Alors je paie par carte."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Le magasin accepte la carte ou les ___.",
+     "resp": [
+      "espèces",
+      "especes"
+     ],
+     "exp": "Les espèces = o dinheiro vivo.",
+     "ouvir": "Non, seulement la carte ou les espèces."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Chez le médecin",
+   "objetivo": "Entender marcação de consulta e conselhos médicos: sintomas, horários e tratamento.",
+   "foco": "La santé: avoir mal à, la fièvre, un rendez-vous, prendre un médicament",
+   "explicacao": [
+    "Sintomas: J'ai mal à la gorge / à la tête / au ventre. J'ai de la fièvre. Je tousse.",
+    "Marcar consulta: Je voudrais un rendez-vous. C'est possible demain matin ? Pensez à apporter votre carte Vitale.",
+    "Conselhos do médico: Prenez ce sirop trois fois par jour. Reposez-vous. Buvez beaucoup d'eau. Revenez si ça ne va pas mieux.",
+    "Pronúncia: 'mal à la gorge' → mal-a-la-gorj. 'Trois fois par jour' → trua fua par jur."
+   ],
+   "vocab": [
+    {
+     "en": "avoir mal à",
+     "pt": "sentir dor em"
+    },
+    {
+     "en": "la fièvre",
+     "pt": "a febre"
+    },
+    {
+     "en": "la gorge",
+     "pt": "a garganta"
+    },
+    {
+     "en": "un rendez-vous",
+     "pt": "uma consulta, compromisso"
+    },
+    {
+     "en": "un sirop",
+     "pt": "um xarope"
+    },
+    {
+     "en": "trois fois par jour",
+     "pt": "três vezes por dia"
+    },
+    {
+     "en": "se reposer",
+     "pt": "descansar"
+    },
+    {
+     "en": "une angine",
+     "pt": "uma amigdalite"
+    }
+   ],
+   "material": {
+    "titulo": "Rendez-vous chez le docteur Roux",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Cabinet du docteur Roux, bonjour."
+     },
+     {
+      "p": "B",
+      "t": "Bonjour, je voudrais un rendez-vous, s'il vous plaît. J'ai de la fièvre depuis hier et j'ai mal à la gorge."
+     },
+     {
+      "p": "A",
+      "t": "Vous pouvez venir aujourd'hui à seize heures trente ?"
+     },
+     {
+      "p": "B",
+      "t": "Je travaille jusqu'à dix-sept heures. Demain matin, c'est possible ?"
+     },
+     {
+      "p": "A",
+      "t": "Demain à neuf heures. Pensez à apporter votre carte Vitale."
+     },
+     {
+      "p": "C",
+      "t": "Vous avez une angine. Prenez ce sirop trois fois par jour, avant les repas, pendant cinq jours. Reposez-vous et buvez beaucoup d'eau. Revenez me voir si vous avez encore de la fièvre dimanche."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel est le problème du patient ?",
+     "op": [
+      "Il a mal au dos",
+      "Il a mal à la gorge et de la fièvre",
+      "Il a mal à la tête",
+      "Il a mal au ventre"
+     ],
+     "r": 1,
+     "exp": "Ele diz: de la fièvre depuis hier et mal à la gorge."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Le patient a de la fièvre depuis ___.",
+     "resp": [
+      "hier"
+     ],
+     "exp": "Depuis hier = desde ontem.",
+     "ouvir": "J'ai de la fièvre depuis hier."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "J'ai mal à la gorge depuis hier.",
+     "exp": "'J'ai mal' = jé mal. 'Gorge' termina com som j (gorj). 'Depuis hier' = de-pui-yèr.",
+     "ouvir": "J'ai mal à la gorge depuis hier."
+    },
+    {
+     "t": "mc",
+     "q": "Quand est le rendez-vous ?",
+     "op": [
+      "Aujourd'hui à 16 h 30",
+      "Demain à 9 h",
+      "Demain à 17 h",
+      "Dimanche à 9 h"
+     ],
+     "r": 1,
+     "exp": "Hoje às 16h30 não serve (ele trabalha até 17h); fica amanhã às 9h."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Prenez",
+      "ce",
+      "sirop",
+      "trois",
+      "fois",
+      "par",
+      "jour"
+     ],
+     "resp": "Prenez ce sirop trois fois par jour.",
+     "exp": "Prenez é imperativo de prendre (vous). Trois fois par jour = três vezes ao dia."
+    },
+    {
+     "t": "gap",
+     "q": "Le médecin dit de boire beaucoup d'___.",
+     "resp": [
+      "eau"
+     ],
+     "exp": "Beaucoup d'eau = muita água. Eau soa ô."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você sente quando está doente.",
+     "frase": "Qu'est-ce qui ne va pas ?",
+     "modelo": "J'ai mal à la tête.",
+     "min": 3,
+     "chave": [
+      "mal",
+      "fièvre",
+      "fievre",
+      "toux",
+      "tête",
+      "tete",
+      "gorge",
+      "ventre"
+     ],
+     "exp": "Use : J'ai mal à la / au + parte do corpo, ou J'ai de la fièvre."
+    },
+    {
+     "t": "mc",
+     "q": "Pendant combien de temps faut-il prendre le sirop ?",
+     "op": [
+      "Trois jours",
+      "Cinq jours",
+      "Sept jours",
+      "Trois fois"
+     ],
+     "r": 1,
+     "exp": "Trois fois par jour é a frequência; a duração é pendant cinq jours."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : La secrétaire demande d'apporter la carte ___.",
+     "resp": [
+      "Vitale"
+     ],
+     "exp": "A carte Vitale é o cartão do seguro de saúde na França.",
+     "ouvir": "Pensez à apporter votre carte Vitale."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Le futur proche",
+   "objetivo": "Entender planos e projetos futuros com aller + infinitif: férias, viagens e fins de semana.",
+   "foco": "Futur proche: aller + infinitif; expressions de temps (demain, cet été, en août)",
+   "explicacao": [
+    "Futur proche = presente de aller + infinitivo: Je vais partir. Nous allons visiter Lisbonne. Elles vont louer une maison.",
+    "Conjugação de aller: je vais, tu vas, il/elle va, nous allons, vous allez, ils/elles vont.",
+    "Expressões de tempo: demain, ce week-end, cet été, en août, la semaine prochaine, le quinze juillet.",
+    "Atenção ao áudio: quem vai com quem? Sofia viaja com a irmã (sœur); o irmão (frère) só se junta no fim de semana."
+   ],
+   "vocab": [
+    {
+     "en": "partir",
+     "pt": "partir, viajar"
+    },
+    {
+     "en": "louer",
+     "pt": "alugar"
+    },
+    {
+     "en": "rejoindre",
+     "pt": "encontrar, juntar-se a"
+    },
+    {
+     "en": "quelques jours",
+     "pt": "alguns dias"
+    },
+    {
+     "en": "d'abord",
+     "pt": "primeiro"
+    },
+    {
+     "en": "se reposer",
+     "pt": "descansar"
+    },
+    {
+     "en": "la campagne",
+     "pt": "o campo"
+    },
+    {
+     "en": "l'été",
+     "pt": "o verão"
+    }
+   ],
+   "material": {
+    "titulo": "Les vacances de Sofia",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Qu'est-ce que tu vas faire cet été, Sofia ?"
+     },
+     {
+      "p": "B",
+      "t": "Je vais partir au Portugal avec ma sœur. On va prendre l'avion le quinze juillet."
+     },
+     {
+      "p": "A",
+      "t": "Vous allez rester combien de temps ?"
+     },
+     {
+      "p": "B",
+      "t": "Deux semaines. On va louer une petite maison près de la mer. Mon frère va nous rejoindre le week-end."
+     },
+     {
+      "p": "A",
+      "t": "Super ! Et vous allez visiter Lisbonne ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui, mais d'abord nous allons passer quelques jours à Porto. Et toi ?"
+     },
+     {
+      "p": "A",
+      "t": "Moi, je vais rester ici et travailler. Mais en août, je vais aller chez mes parents à la campagne."
+     },
+     {
+      "p": "B",
+      "t": "Tu vas bien te reposer !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Où Sofia va-t-elle partir en vacances ?",
+     "op": [
+      "Au Portugal",
+      "En Espagne",
+      "À la campagne",
+      "En France"
+     ],
+     "r": 0,
+     "exp": "Elle dit: Je vais partir au Portugal. A campagne é o plano da amiga, em agosto."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Elles vont prendre l'avion le ___ juillet.",
+     "resp": [
+      "quinze",
+      "15"
+     ],
+     "exp": "Le quinze juillet = 15 de julho.",
+     "ouvir": "On va prendre l'avion le quinze juillet."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Nous allons passer quelques jours à Porto.",
+     "exp": "'Nous allons' tem liaison: nu-za-lõ. 'Quelques jours' → kèl-kê-jur, com e muet fraco.",
+     "ouvir": "Nous allons passer quelques jours à Porto."
+    },
+    {
+     "t": "mc",
+     "q": "Qui va rejoindre Sofia le week-end ?",
+     "op": [
+      "Sa sœur",
+      "Son frère",
+      "Ses parents",
+      "Son amie"
+     ],
+     "r": 1,
+     "exp": "A irmã (ma sœur) vai com ela; o irmão (mon frère) se junta no fim de semana."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Qu'est-ce",
+      "que",
+      "tu",
+      "vas",
+      "faire",
+      "cet",
+      "été"
+     ],
+     "resp": "Qu'est-ce que tu vas faire cet été?",
+     "exp": "Qu'est-ce que = o que. Tu vas faire = o que você vai fazer (futur proche)."
+    },
+    {
+     "t": "gap",
+     "q": "Elles vont louer une petite maison près de la ___.",
+     "resp": [
+      "mer"
+     ],
+     "exp": "La mer = o mar. Atenção: mer (mar) e mère (mãe) soam quase igual."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você vai fazer neste fim de semana.",
+     "frase": "Qu'est-ce que vous allez faire ce week-end ?",
+     "modelo": "Je vais voir mes amis.",
+     "min": 4,
+     "chave": [
+      "vais",
+      "vas",
+      "allons",
+      "vont"
+     ],
+     "exp": "Use : Je vais + infinitivo. Ex.: Je vais rester à la maison / sortir avec des amis."
+    },
+    {
+     "t": "mc",
+     "q": "Où les deux sœurs vont-elles passer les premiers jours ?",
+     "op": [
+      "À Lisbonne",
+      "À Porto",
+      "Chez leurs parents",
+      "À la campagne"
+     ],
+     "r": 1,
+     "exp": "D'abord à Porto, depois Lisbonne. 'D'abord' = primeiro."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : En ___, mon amie va chez ses parents.",
+     "resp": [
+      "août",
+      "aout"
+     ],
+     "exp": "Août se pronuncia u (ou ut). É o mês de agosto.",
+     "ouvir": "En août, je vais aller chez mes parents à la campagne."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Raconter au passé composé",
+   "objetivo": "Entender relatos de fim de semana no passé composé: o que aconteceu, quando e com quem.",
+   "foco": "Passé composé: avoir / être + participe passé (j'ai pris, je suis allé)",
+   "explicacao": [
+    "O passé composé conta ações terminadas: Nous avons pris le train. J'ai acheté un livre.",
+    "Com verbos de movimento: être + particípio, que concorda com o sujeito: Elle est venue. Nous sommes arrivés.",
+    "Particípios úteis: j'ai fait, j'ai pris, j'ai vu, j'ai mangé, il est allé, elle est restée.",
+    "No áudio, 'j'ai acheté' (ai) e 'je suis allé' (suis) soam diferentes: preste atenção ao auxiliar para saber quem fez o quê. Liaison: 'nous avons' → nu-za-vô."
+   ],
+   "vocab": [
+    {
+     "en": "le week-end",
+     "pt": "o fim de semana"
+    },
+    {
+     "en": "visiter",
+     "pt": "visitar um lugar"
+    },
+    {
+     "en": "le vieux quartier",
+     "pt": "o bairro antigo"
+    },
+    {
+     "en": "acheter",
+     "pt": "comprar"
+    },
+    {
+     "en": "faire le ménage",
+     "pt": "fazer a faxina"
+    },
+    {
+     "en": "regarder un film",
+     "pt": "assistir a um filme"
+    },
+    {
+     "en": "la cousine",
+     "pt": "a prima"
+    },
+    {
+     "en": "puis",
+     "pt": "depois, em seguida"
+    }
+   ],
+   "material": {
+    "titulo": "Le week-end de Théo",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Alors, Théo, comment s'est passé ton week-end ?"
+     },
+     {
+      "p": "B",
+      "t": "Très bien ! Samedi, je suis allé à Lyon avec des amis. Nous avons pris le train à huit heures et nous sommes arrivés à dix heures."
+     },
+     {
+      "p": "A",
+      "t": "Qu'est-ce que vous avez fait ?"
+     },
+     {
+      "p": "B",
+      "t": "Nous avons visité le vieux quartier, puis nous avons mangé dans un petit restaurant. J'ai acheté un livre pour ma mère."
+     },
+     {
+      "p": "A",
+      "t": "Et dimanche ?"
+     },
+     {
+      "p": "B",
+      "t": "Dimanche, je suis resté à la maison. J'ai fait le ménage et j'ai regardé un film. Le soir, ma cousine est venue dîner."
+     },
+     {
+      "p": "A",
+      "t": "Quel week-end !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Où Théo est-il allé samedi ?",
+     "op": [
+      "À Lyon",
+      "Chez sa cousine",
+      "Au restaurant",
+      "À la maison"
+     ],
+     "r": 0,
+     "exp": "Samedi, je suis allé à Lyon. A casa e a prima são do domingo."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Ils ont pris le ___ à huit heures.",
+     "resp": [
+      "train"
+     ],
+     "exp": "Prendre le train = pegar o trem.",
+     "ouvir": "Nous avons pris le train à huit heures."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Nous sommes arrivés à dix heures.",
+     "exp": "'Nous sommes' → nu-som. 'Arrivés' termina em ê. Em 'dix heures', o x soa z: di-zœr.",
+     "ouvir": "Nous sommes arrivés à dix heures."
+    },
+    {
+     "t": "mc",
+     "q": "Qu'a-t-il acheté ?",
+     "op": [
+      "Un livre pour sa mère",
+      "Un film",
+      "Un billet de train",
+      "Un cadeau pour sa cousine"
+     ],
+     "r": 0,
+     "exp": "J'ai acheté un livre pour ma mère."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Samedi,",
+      "je",
+      "suis",
+      "allé",
+      "à",
+      "Lyon",
+      "avec",
+      "des",
+      "amis"
+     ],
+     "resp": "Samedi, je suis allé à Lyon avec des amis.",
+     "exp": "Aller usa être: je suis allé. O particípio concorda: Théo é homem, allé sem e extra."
+    },
+    {
+     "t": "gap",
+     "q": "Le dimanche, il a regardé un ___.",
+     "resp": [
+      "film"
+     ],
+     "exp": "J'ai regardé un film = assisti a um filme."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você fez ontem.",
+     "frase": "Qu'est-ce que vous avez fait hier ?",
+     "modelo": "Hier, j'ai travaillé et j'ai regardé la télévision.",
+     "min": 5,
+     "chave": [
+      "ai",
+      "suis",
+      "allé",
+      "allée",
+      "fait",
+      "mangé",
+      "travaillé"
+     ],
+     "exp": "Use : Hier, j'ai + particípio / je suis + particípio. Ex.: j'ai mangé, je suis sorti."
+    },
+    {
+     "t": "mc",
+     "q": "Que s'est-il passé dimanche soir ?",
+     "op": [
+      "Sa cousine est venue dîner",
+      "Il est allé à Lyon",
+      "Il a pris le train",
+      "Il a acheté un livre"
+     ],
+     "r": 0,
+     "exp": "Le soir, ma cousine est venue dîner. As outras ações foram no sábado."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Le soir, sa cousine est venue ___.",
+     "resp": [
+      "dîner",
+      "diner"
+     ],
+     "exp": "Venir + infinitivo: est venue dîner = veio jantar.",
+     "ouvir": "Le soir, ma cousine est venue dîner."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Imparfait et passé composé",
+   "objetivo": "Entender relatos que misturam cenário (imparfait) e fatos (passé composé).",
+   "foco": "Imparfait (il pleuvait, j'attendais) + passé composé (le bus est arrivé)",
+   "explicacao": [
+    "Imparfait = cenário, ação em andamento, hábito: Il pleuvait. J'attendais le bus. Il était très gentil.",
+    "Passé composé = fato que interrompe ou acontece: Mon téléphone a sonné. Le bus est parti.",
+    "Marcadores: soudain, pendant que, quand, depuis, ensuite. Exemplo: Pendant que je parlais, le bus est arrivé.",
+    "Terminação do imparfait: je -ais, tu -ais, il -ait, nous -ions, vous -iez, ils -aient. No áudio, ais/ait soam è: pleuvait = pleu-vè."
+   ],
+   "vocab": [
+    {
+     "en": "il pleuvait",
+     "pt": "chovia"
+    },
+    {
+     "en": "attendre",
+     "pt": "esperar"
+    },
+    {
+     "en": "soudain",
+     "pt": "de repente"
+    },
+    {
+     "en": "sonner",
+     "pt": "tocar"
+    },
+    {
+     "en": "pendant que",
+     "pt": "enquanto"
+    },
+    {
+     "en": "un voisin",
+     "pt": "um vizinho"
+    },
+    {
+     "en": "s'arrêter",
+     "pt": "parar"
+    },
+    {
+     "en": "mouillé",
+     "pt": "molhado"
+    }
+   ],
+   "material": {
+    "titulo": "Un mauvais moment",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Alors, Amélie, c'est vrai que tu as eu un problème hier ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui ! Il pleuvait très fort, et j'attendais le bus depuis vingt minutes. Soudain, mon téléphone a sonné. C'était ma sœur."
+     },
+     {
+      "p": "A",
+      "t": "Et ensuite ?"
+     },
+     {
+      "p": "B",
+      "t": "Pendant que je parlais avec elle, le bus est arrivé, mais je ne l'ai pas vu ! Il est parti sans moi."
+     },
+     {
+      "p": "A",
+      "t": "Oh non ! Tu es rentrée comment ?"
+     },
+     {
+      "p": "B",
+      "t": "Un voisin passait en voiture. Il m'a vue et il s'est arrêté. Il était très gentil. Quand je suis arrivée à la maison, j'étais toute mouillée mais contente."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel temps faisait-il ?",
+     "op": [
+      "Il neigeait",
+      "Il pleuvait",
+      "Il faisait beau",
+      "Il y avait du vent"
+     ],
+     "r": 1,
+     "exp": "Il pleuvait très fort = chovia muito."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Il ___ très fort.",
+     "resp": [
+      "pleuvait"
+     ],
+     "exp": "Pleuvait é o imparfait de pleuvoir: descreve o cenário.",
+     "ouvir": "Il pleuvait très fort."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "J'attendais le bus depuis vingt minutes.",
+     "exp": "'Attendais' termina com som è. 'Depuis vingt minutes': o t de vingt não soa, mas 'minutes' começa com m.",
+     "ouvir": "J'attendais le bus depuis vingt minutes."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi Amélie a-t-elle raté le bus ?",
+     "op": [
+      "Elle parlait avec sa sœur au téléphone",
+      "Elle dormait",
+      "Elle courait trop lentement",
+      "Elle cherchait son billet"
+     ],
+     "r": 0,
+     "exp": "Pendant que je parlais avec elle, le bus est arrivé: ela não viu o ônibus."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Pendant",
+      "que",
+      "je",
+      "parlais,",
+      "le",
+      "bus",
+      "est",
+      "arrivé"
+     ],
+     "resp": "Pendant que je parlais, le bus est arrivé.",
+     "exp": "Parlais (imparfait) = ação em andamento; est arrivé (passé composé) = fato que acontece."
+    },
+    {
+     "t": "gap",
+     "q": "Un voisin ___ en voiture.",
+     "resp": [
+      "passait"
+     ],
+     "exp": "Passait (imparfait): ele passava de carro quando viu Amélie."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você fazia quando começou a chover (ou à noite, ontem).",
+     "frase": "Que faisiez-vous quand il a commencé à pleuvoir ?",
+     "modelo": "Je marchais dans la rue.",
+     "min": 3,
+     "chave": [
+      "marchais",
+      "étais",
+      "faisais",
+      "regardais",
+      "lisais",
+      "attendais",
+      "travaillais",
+      "mangeais",
+      "dormais"
+     ],
+     "exp": "Use o imparfait: je marchais, j'étais, je regardais. Termina em -ais."
+    },
+    {
+     "t": "mc",
+     "q": "Comment Amélie est-elle rentrée ?",
+     "op": [
+      "En bus",
+      "Avec un voisin",
+      "En taxi",
+      "À pied"
+     ],
+     "r": 1,
+     "exp": "Un voisin passait en voiture: ele a levou. O ônibus foi embora sem ela."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Le voisin l'a ___ et il s'est arrêté.",
+     "resp": [
+      "vue"
+     ],
+     "exp": "Vue (com e final) porque o COD feminino 'm'/l' (Amélie) vem antes do verbo.",
+     "ouvir": "Il m'a vue et il s'est arrêté."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado DELF A2 : Compréhension de l'oral",
+   "objetivo": "Praticar a prova de Compréhension de l'oral do DELF A2 com quatro documentos curtos e perguntas em QCM.",
+   "foco": "Simulado: anúncio, mensagem de voz, compra e relato no passado",
+   "explicacao": [
+    "Na prova, você ouve cada documento duas vezes e responde a QCM. Leia as perguntas antes de ouvir.",
+    "Dicas: anote números, horas e nomes. Desconfie das correções ('et non', 'au lieu de') e dos distratores: tudo o que está nas opções costuma aparecer no áudio.",
+    "Documento 1: anúncio na estação. Documento 2: mensagem de voz. Documento 3: compra em loja. Documento 4: relato no passado.",
+    "Revisão de formas: futur proche (je vais partir), passé composé (nous sommes rentrés), imparfait (il faisait beau)."
+   ],
+   "vocab": [
+    {
+     "en": "un retard",
+     "pt": "um atraso"
+    },
+    {
+     "en": "supprimé",
+     "pt": "cancelado"
+    },
+    {
+     "en": "un examen",
+     "pt": "uma prova"
+    },
+    {
+     "en": "apporter",
+     "pt": "trazer"
+    },
+    {
+     "en": "un manteau",
+     "pt": "um casaco"
+    },
+    {
+     "en": "en solde",
+     "pt": "em liquidação"
+    },
+    {
+     "en": "un pique-nique",
+     "pt": "um piquenique"
+    },
+    {
+     "en": "rentrer",
+     "pt": "voltar para casa"
+    }
+   ],
+   "material": {
+    "titulo": "Quatre documents sonores",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Document un. Mesdames et messieurs, le train pour Bordeaux, prévu à dix-sept heures quinze, partira avec vingt minutes de retard, voie neuf. Le train pour Nantes est supprimé."
+     },
+     {
+      "p": "B",
+      "t": "Document deux. Bonjour Paul, c'est Lucie. Samedi, je ne peux pas venir à ton anniversaire, j'ai un examen lundi. Mais on peut dîner dimanche, vers dix-neuf heures trente, chez moi. Apporte du pain, s'il te plaît. Rappelle-moi au zéro six, vingt-deux, quarante-cinq, soixante-sept, quatre-vingt-neuf."
+     },
+     {
+      "p": "A",
+      "t": "Document trois. Bonjour, je cherche un manteau gris."
+     },
+     {
+      "p": "C",
+      "t": "Nous avons celui-ci à cent vingt euros, mais il est en solde à quatre-vingt-quinze euros."
+     },
+     {
+      "p": "A",
+      "t": "Je peux l'essayer ? ... Il est parfait, je le prends. Je paie par carte."
+     },
+     {
+      "p": "B",
+      "t": "Document quatre. Hier, il faisait beau, alors nous sommes allés au parc avec les enfants. Nous avons pique-niqué, puis il a commencé à pleuvoir. Nous sommes rentrés à quatre heures."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Document 1. À quelle heure le train pour Bordeaux part-il vraiment ?",
+     "op": [
+      "17 h 15",
+      "17 h 20",
+      "17 h 35",
+      "17 h 45"
+     ],
+     "r": 2,
+     "exp": "Previsto às 17h15 com vinte minutos de atraso: 17h35."
+    },
+    {
+     "t": "gap",
+     "q": "Document 1. Ouça e complete : Le train pour Bordeaux part de la voie ___.",
+     "resp": [
+      "neuf",
+      "9"
+     ],
+     "exp": "Voie neuf = plataforma 9.",
+     "ouvir": "Le train pour Bordeaux partira voie neuf."
+    },
+    {
+     "t": "mc",
+     "q": "Document 1. Que se passe-t-il pour le train de Nantes ?",
+     "op": [
+      "Il a vingt minutes de retard",
+      "Il est supprimé",
+      "Il part voie 9",
+      "Il part à 17 h 15"
+     ],
+     "r": 1,
+     "exp": "'Est supprimé' = foi cancelado."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Le train pour Bordeaux partira avec vingt minutes de retard.",
+     "exp": "'Avec vingt' liga o c com v: a-vèk-vẽ. 'Retard': o d final não soa.",
+     "ouvir": "Le train pour Bordeaux partira avec vingt minutes de retard."
+    },
+    {
+     "t": "mc",
+     "q": "Document 2. Pourquoi Lucie ne vient-elle pas à l'anniversaire de Paul ?",
+     "op": [
+      "Elle a un examen lundi",
+      "Elle travaille dimanche",
+      "Elle est malade",
+      "Elle dîne chez Paul"
+     ],
+     "r": 0,
+     "exp": "Ela diz: j'ai un examen lundi. O jantar de domingo é uma alternativa na casa dela."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "On",
+      "peut",
+      "dîner",
+      "dimanche",
+      "vers",
+      "dix-neuf",
+      "heures",
+      "trente"
+     ],
+     "resp": "On peut dîner dimanche vers dix-neuf heures trente.",
+     "exp": "Vers + hora = por volta de. Dix-neuf heures trente = 19h30."
+    },
+    {
+     "t": "gap",
+     "q": "Document 2. Lucie demande d'apporter du ___.",
+     "resp": [
+      "pain"
+     ],
+     "exp": "Apporte du pain, s'il te plaît. Pain soa pẽ (nasal)."
+    },
+    {
+     "t": "mc",
+     "q": "Document 2. Comment se termine le numéro de téléphone de Lucie ?",
+     "op": [
+      "45 67",
+      "67 89",
+      "89 67",
+      "22 45"
+     ],
+     "r": 1,
+     "exp": "06, 22, 45, 67, 89: termina em soixante-sept, quatre-vingt-neuf (67 89)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você faz no domingo à noite.",
+     "frase": "Que faites-vous le dimanche soir ?",
+     "modelo": "Le dimanche soir, je dîne en famille.",
+     "min": 4,
+     "chave": [
+      "dîne",
+      "dine",
+      "reste",
+      "regarde",
+      "sors",
+      "mange",
+      "travaille",
+      "lis",
+      "fais"
+     ],
+     "exp": "Use o presente: Je dîne, je regarde la télé, je reste à la maison."
+    },
+    {
+     "t": "mc",
+     "q": "Document 3. Combien le client paie-t-il le manteau ?",
+     "op": [
+      "120 €",
+      "95 €",
+      "59 €",
+      "195 €"
+     ],
+     "r": 1,
+     "exp": "Era 120 €, mas está em liquidação a 95 € (quatre-vingt-quinze)."
+    },
+    {
+     "t": "gap",
+     "q": "Document 3. Ouça e complete : Le client paie par ___.",
+     "resp": [
+      "carte"
+     ],
+     "exp": "Je paie par carte = pago no cartão.",
+     "ouvir": "Il est parfait, je le prends. Je paie par carte."
+    },
+    {
+     "t": "mc",
+     "q": "Document 4. Pourquoi la famille est-elle rentrée ?",
+     "op": [
+      "Il a commencé à pleuvoir",
+      "Les enfants avaient faim",
+      "Il faisait trop chaud",
+      "Le parc fermait"
+     ],
+     "r": 0,
+     "exp": "Nous avons pique-niqué, puis il a commencé à pleuvoir. Depois eles voltaram para casa."
+    }
+   ]
+  }
+ ]
+}

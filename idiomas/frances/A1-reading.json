@@ -1,0 +1,2323 @@
+{
+ "nivel": "A1",
+ "skill": "reading",
+ "exame": "DELF A1",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Je me présente",
+   "objetivo": "Entender uma apresentação pessoal simples: nome, idade, origem e amigos.",
+   "foco": "être et avoir; pronoms sujets; s'appeler; nombres",
+   "explicacao": [
+    "Être (ser/estar): je suis, tu es, il/elle est, nous sommes, vous êtes, ils/elles sont. Ex.: Karim est algérien.",
+    "Para dizer a idade, o francês usa AVOIR (ter), como o português: j'ai onze ans. Nunca « je suis onze ans ».",
+    "Para o nome: je m'appelle Léa (literalmente «eu me chamo»). Pergunta: Comment tu t'appelles ?",
+    "Nacionalidades: no feminino costumam ganhar -e: français → française, algérien → algérienne. Mas brésilien/brésilienne se escreve com i!"
+   ],
+   "vocab": [
+    {
+     "en": "je m'appelle",
+     "pt": "eu me chamo"
+    },
+    {
+     "en": "j'ai … ans",
+     "pt": "tenho … anos"
+    },
+    {
+     "en": "j'habite",
+     "pt": "eu moro"
+    },
+    {
+     "en": "meilleur ami",
+     "pt": "melhor amigo"
+    },
+    {
+     "en": "la classe",
+     "pt": "a turma"
+    },
+    {
+     "en": "le professeur / la professeure",
+     "pt": "o professor / a professora"
+    },
+    {
+     "en": "gentil(le)",
+     "pt": "simpático(a), gentil"
+    },
+    {
+     "en": "le numéro de téléphone",
+     "pt": "o número de telefone"
+    }
+   ],
+   "material": {
+    "titulo": "Je me présente",
+    "texto": "Bonjour ! Je m'appelle Léa Martin. J'ai onze ans et j'habite à Lyon, en France. Je suis française, mais ma mère est brésilienne. Mon père est professeur. Il s'appelle Marc. Mon meilleur ami s'appelle Karim. Il a douze ans. Il est algérien. Nous sommes dans la même classe. Notre professeure, c'est Madame Dupuis. Elle est très gentille. Mon numéro de téléphone est le 06 12 45 78 90. Et toi, comment tu t'appelles ?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel âge a Léa ?",
+     "op": [
+      "treize ans",
+      "douze ans",
+      "onze ans",
+      "dix ans"
+     ],
+     "r": 2,
+     "exp": "O texto diz « J'ai onze ans ». Douze ans é a idade de Karim."
+    },
+    {
+     "t": "gap",
+     "q": "Karim ___ algérien.",
+     "resp": [
+      "est",
+      "il est"
+     ],
+     "exp": "Karim = il, então usamos « est » (être). No texto: « Il est algérien »."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Bonjour ! Je m'appelle Léa et j'ai onze ans.",
+     "exp": "« Je m'appelle » se lê [jə ma-pɛl]. Em « ans », o som é nasal [ɑ̃]: não pronuncie o n."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est vraie ?",
+     "op": [
+      "La mère de Léa est brésilienne.",
+      "Madame Dupuis est la mère de Karim.",
+      "Léa habite au Brésil.",
+      "Karim est le père de Léa."
+     ],
+     "r": 0,
+     "exp": "« Ma mère est brésilienne ». Karim é amigo de Léa, Madame Dupuis é a professora e Léa mora em Lyon, na França."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Nous",
+      "sommes",
+      "dans",
+      "la",
+      "même",
+      "classe"
+     ],
+     "resp": "Nous sommes dans la même classe",
+     "exp": "Ordem básica: sujeito (Nous) + verbo (sommes) + complemento. « Même » significa «mesma»."
+    },
+    {
+     "t": "gap",
+     "q": "Karim ___ douze ans.",
+     "resp": [
+      "a",
+      "il a"
+     ],
+     "exp": "Idade = AVOIR, como em português «tem». Karim a douze ans (não « est douze ans »)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: diga seu nome e sua idade.",
+     "frase": "Comment tu t'appelles et quel âge as-tu ?",
+     "modelo": "Je m'appelle Ana et j'ai douze ans.",
+     "min": 5,
+     "chave": [
+      "m'appelle",
+      "ans",
+      "j'ai",
+      "suis"
+     ],
+     "exp": "Use « Je m'appelle… » e « J'ai … ans ». Lembre: idade com avoir."
+    },
+    {
+     "t": "mc",
+     "q": "Complétez : Karim et moi, nous ___ amis.",
+     "op": [
+      "sont",
+      "sommes",
+      "suis",
+      "êtes"
+     ],
+     "r": 1,
+     "exp": "Karim et moi = nous. Com nous, o verbo être é « sommes »."
+    },
+    {
+     "t": "gap",
+     "q": "Léa et Karim ___ dans la même classe.",
+     "resp": [
+      "sont",
+      "ils sont"
+     ],
+     "exp": "Léa et Karim = ils (duas pessoas). Com ils/elles: « sont »."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Ma famille",
+   "objetivo": "Ler a descrição de uma família e entender quem é quem e o que cada um tem.",
+   "foco": "avoir; adjectifs possessifs (mon, ma, mes, leur); la famille",
+   "explicacao": [
+    "Avoir: j'ai, tu as, il/elle a, nous avons, vous avez, ils/elles ont. Ex.: Pedro a les cheveux courts.",
+    "Possessivos concordam com a coisa possuída, não com o dono: mon frère, ma sœur, mes parents. Diante de vogal usa-se mon: mon amie, mon école.",
+    "Son/sa/ses = dele OU dela (o português distingue, o francês não): sa sœur = a irmã dele / a irmã dela.",
+    "Leur(s) = deles/delas: leur chien, leurs enfants. Cuidado: « cousin » é primo; « neveu » é sobrinho!"
+   ],
+   "vocab": [
+    {
+     "en": "le frère / la sœur",
+     "pt": "o irmão / a irmã"
+    },
+    {
+     "en": "les jumelles",
+     "pt": "as gêmeas"
+    },
+    {
+     "en": "les grands-parents",
+     "pt": "os avós"
+    },
+    {
+     "en": "la tante",
+     "pt": "a tia"
+    },
+    {
+     "en": "l'oncle",
+     "pt": "o tio"
+    },
+    {
+     "en": "le cousin / la cousine",
+     "pt": "o primo / a prima"
+    },
+    {
+     "en": "les lunettes",
+     "pt": "os óculos"
+    },
+    {
+     "en": "la barbe",
+     "pt": "a barba"
+    }
+   ],
+   "material": {
+    "titulo": "La famille de Sofia",
+    "texto": "Voici la photo de ma famille. Je m'appelle Sofia et j'ai un frère et deux sœurs. Mon frère s'appelle Pedro. Il a quatorze ans et il a les cheveux courts. Mes sœurs sont jumelles : elles s'appellent Clara et Julia. Elles ont six ans. Mes grands-parents habitent avec nous. Mon grand-père a une grande barbe grise et ma grand-mère a des lunettes. Nous avons aussi un chien. Il s'appelle Max. La sœur de ma mère, ma tante Rita, a trois enfants. Ce sont mes cousins !"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Combien de sœurs Sofia a-t-elle ?",
+     "op": [
+      "quatre",
+      "trois",
+      "une",
+      "deux"
+     ],
+     "r": 3,
+     "exp": "« Deux sœurs » : Clara et Julia. Trois est le nombre d'enfants de la tante Rita."
+    },
+    {
+     "t": "gap",
+     "q": "Pedro ___ les cheveux courts.",
+     "resp": [
+      "a",
+      "il a"
+     ],
+     "exp": "Pedro = il, então « a » (avoir). No texto: « il a les cheveux courts »."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Mon grand-père a une grande barbe grise et ma grand-mère a des lunettes.",
+     "exp": "« Grand-père » e « grand-mère » têm o r francês, suave, no fundo da garganta. « Lunettes » tem o u francês (lábios arredondados dizendo i)."
+    },
+    {
+     "t": "mc",
+     "q": "Qui a des lunettes ?",
+     "op": [
+      "La tante Rita",
+      "La grand-mère de Sofia",
+      "Le grand-père de Sofia",
+      "Pedro"
+     ],
+     "r": 1,
+     "exp": "« Ma grand-mère a des lunettes ». O avô tem barba."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elles",
+      "s'appellent",
+      "Clara",
+      "et",
+      "Julia"
+     ],
+     "resp": "Elles s'appellent Clara et Julia",
+     "exp": "« Elles s'appellent » = elas se chamam. A ordem também pode ser Julia et Clara.",
+     "alt": [
+      "Elles s'appellent Julia et Clara"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Rita est la sœur de ma mère : c'est ma ___.",
+     "resp": [
+      "tante"
+     ],
+     "exp": "La sœur de ma mère = ma tante. Atenção: « tante » com um só t no meio, ao contrário do português «tia»."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: você tem irmãos ou irmãs? Diga os nomes.",
+     "frase": "Tu as des frères et sœurs ?",
+     "modelo": "Oui, j'ai un frère. Il s'appelle João.",
+     "min": 4,
+     "chave": [
+      "frère",
+      "frères",
+      "sœur",
+      "sœurs",
+      "j'ai",
+      "enfant unique",
+      "n'ai pas"
+     ],
+     "exp": "Use « J'ai un frère / une sœur… » ou « Je suis enfant unique » (filho único)."
+    },
+    {
+     "t": "mc",
+     "q": "Les enfants de ma tante sont mes ___.",
+     "op": [
+      "grands-parents",
+      "frères",
+      "neveux",
+      "cousins"
+     ],
+     "r": 3,
+     "exp": "Filhos dos tios = primos (cousins). « Neveux » são sobrinhos, filhos dos irmãos."
+    },
+    {
+     "t": "gap",
+     "q": "Sofia et ses sœurs ont un chien. C'est ___ chien.",
+     "resp": [
+      "leur"
+     ],
+     "exp": "Dos três (Sofia e as irmãs) = « leur » (deles/delas). Diante de substantivo singular: leur chien; plural: leurs chiens."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Dans mon sac",
+   "objetivo": "Entender a descrição de objetos e onde eles estão, usando artigos.",
+   "foco": "articles définis et indéfinis; il y a; prépositions de lieu",
+   "explicacao": [
+    "Artigos definidos: le (masc.), la (fem.), l' (diante de vogal), les (plural). Indefinidos: un, une, des. Ex.: un cahier, une trousse, des stylos.",
+    "Todo substantivo francês é masculino ou feminino, e nem sempre como em português: le livre, la table, le lait (masc.), la voiture (fem.). Aprenda a palavra COM o artigo.",
+    "Para dizer o que existe: il y a + artigo indefinido. Ex.: Il y a une règle dans le sac. Usa-se o definido quando já se falou da coisa: Il y a une école. L'école est grande.",
+    "Onde? dans (dentro de), sur (sobre), sous (embaixo de), à côté de, devant, derrière."
+   ],
+   "vocab": [
+    {
+     "en": "le sac",
+     "pt": "a mochila, a bolsa"
+    },
+    {
+     "en": "la trousse",
+     "pt": "o estojo"
+    },
+    {
+     "en": "le cahier",
+     "pt": "o caderno"
+    },
+    {
+     "en": "le stylo",
+     "pt": "a caneta"
+    },
+    {
+     "en": "la règle",
+     "pt": "a régua"
+    },
+    {
+     "en": "les clés",
+     "pt": "as chaves"
+    },
+    {
+     "en": "le bureau",
+     "pt": "a escrivaninha"
+    },
+    {
+     "en": "la table",
+     "pt": "a mesa"
+    }
+   ],
+   "material": {
+    "titulo": "Le sac de Nina",
+    "texto": "Voici le sac de Nina. Dans le sac, il y a une trousse, un cahier et des stylos. Il y a aussi une règle verte, un livre de maths et un sandwich pour le déjeuner. Les clés de la maison sont sur la table de la cuisine. Le téléphone de Nina est sur le bureau de sa chambre. Dans la classe, sur la table, il y a trois cahiers, deux trousses et des feuilles. La trousse rouge est à Nina, la bleue est à Hugo."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qu'est-ce qu'il y a dans le sac de Nina ?",
+     "op": [
+      "Des clés, un cahier et une trousse",
+      "Un sandwich, des feuilles et une règle",
+      "Une trousse, un cahier et des stylos",
+      "Un téléphone, une trousse et des stylos"
+     ],
+     "r": 2,
+     "exp": "Dans le sac : trousse, cahier, stylos. As chaves estão na mesa da cozinha, o telefone na escrivaninha e as folhas na mesa da classe."
+    },
+    {
+     "t": "gap",
+     "q": "Il y a ___ règle verte dans le sac.",
+     "resp": [
+      "une"
+     ],
+     "exp": "« Règle » é feminino, então « une règle ». O texto diz: « une règle verte »."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Dans le sac, il y a une trousse, un cahier et des stylos.",
+     "exp": "« Il y a » se lê quase como uma palavra só: [ilia]. Em « stylos », o y soa como i."
+    },
+    {
+     "t": "mc",
+     "q": "Où sont les clés de la maison ?",
+     "op": [
+      "Dans la classe",
+      "Sur la table de la cuisine",
+      "Sur le bureau",
+      "Dans le sac de Nina"
+     ],
+     "r": 1,
+     "exp": "« Les clés de la maison sont sur la table de la cuisine »."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Le",
+      "téléphone",
+      "est",
+      "sur",
+      "le",
+      "bureau"
+     ],
+     "resp": "Le téléphone est sur le bureau",
+     "exp": "« Sur » = sobre/em cima de. « Le bureau » pode ser a escrivaninha (não é só «escritório»)."
+    },
+    {
+     "t": "gap",
+     "q": "Le cahier est vert et ___ trousse est rouge.",
+     "resp": [
+      "la"
+     ],
+     "exp": "« Trousse » é feminino: la trousse. « Cahier » é masculino: le cahier."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que há na sua mochila?",
+     "frase": "Qu'est-ce qu'il y a dans ton sac ?",
+     "modelo": "Dans mon sac, il y a un cahier, une trousse et un livre.",
+     "min": 6,
+     "chave": [
+      "il y a",
+      "cahier",
+      "trousse",
+      "livre",
+      "sac",
+      "stylo"
+     ],
+     "exp": "Comece com « Dans mon sac, il y a… » e use un/une/des antes de cada objeto."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "La trousse est rouge.",
+      "Les trousse sont rouges.",
+      "Le trousse est rouge.",
+      "Un trousse est rouge."
+     ],
+     "r": 0,
+     "exp": "« Trousse » é feminino: la trousse, une trousse. As outras opções erram o gênero ou o plural."
+    },
+    {
+     "t": "gap",
+     "q": "Dans ma rue, il y a ___ école. L'école est grande.",
+     "resp": [
+      "une"
+     ],
+     "exp": "Primeira vez que falamos da escola: « une école ». Depois, já conhecida: « l'école »."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Mon appartement",
+   "objetivo": "Entender a descrição de uma casa e dos cômodos, com adjetivos que concordam.",
+   "foco": "genre et nombre des adjectifs; il y a / il n'y a pas de; le logement",
+   "explicacao": [
+    "Adjetivos concordam com o substantivo: um grande quarto = une grande chambre; paredes brancas = des murs blancs.",
+    "Feminino: em geral + e (petit → petite, joli → jolie). Alguns mudam mais: blanc → blanche, gentil → gentille, clair → claire.",
+    "Plural: em geral + s (vert → verts, verte → vertes). Mas: blanc → blancs; beau → beaux.",
+    "Diferente do português, muitos adjetivos vêm ANTES do substantivo: un petit appartement, un grand jardin, une jolie cuisine. Cores vêm depois: des rideaux verts."
+   ],
+   "vocab": [
+    {
+     "en": "l'appartement (m.)",
+     "pt": "o apartamento"
+    },
+    {
+     "en": "l'étage (m.)",
+     "pt": "o andar"
+    },
+    {
+     "en": "la chambre",
+     "pt": "o quarto"
+    },
+    {
+     "en": "la salle de bains",
+     "pt": "o banheiro"
+    },
+    {
+     "en": "la cuisine",
+     "pt": "a cozinha"
+    },
+    {
+     "en": "l'immeuble (m.)",
+     "pt": "o prédio"
+    },
+    {
+     "en": "le voisin / la voisine",
+     "pt": "o vizinho / a vizinha"
+    },
+    {
+     "en": "clair(e)",
+     "pt": "claro(a), iluminado(a)"
+    }
+   ],
+   "material": {
+    "titulo": "L'appartement de Hugo",
+    "texto": "J'habite dans un petit appartement au deuxième étage. Il y a un salon, une cuisine, une salle de bains et deux chambres. Ma chambre est grande et claire : les murs sont blancs et les rideaux sont verts. Il y a un lit, un bureau et des étagères. La cuisine est petite, mais elle est jolie. Il n'y a pas de balcon, mais il y a un grand jardin devant l'immeuble. Mes voisins sont sympathiques : ce sont des étudiants italiens."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Où habite Hugo ?",
+     "op": [
+      "Dans une grande maison avec un jardin",
+      "Chez ses voisins italiens",
+      "Dans un studio au rez-de-chaussée",
+      "Dans un petit appartement au deuxième étage"
+     ],
+     "r": 3,
+     "exp": "« J'habite dans un petit appartement au deuxième étage ». O jardin fica na frente do prédio."
+    },
+    {
+     "t": "gap",
+     "q": "La chambre de Hugo est grande et ___.",
+     "resp": [
+      "claire"
+     ],
+     "exp": "« Chambre » é feminino, então o adjetivo vai ao feminino: clair → claire.",
+     "dica": "CLAIR"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Ma chambre est grande et claire.",
+     "exp": "O « r » francês vem do fundo da garganta. « Chambre » começa com [ʃ] (como «ch» em «chuva») e tem som nasal [ɑ̃]."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle pièce est petite ?",
+     "op": [
+      "L'appartement entier",
+      "La cuisine",
+      "La chambre de Hugo",
+      "Le salon"
+     ],
+     "r": 1,
+     "exp": "« La cuisine est petite, mais elle est jolie ». A chambre é grande e clara."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Les",
+      "murs",
+      "sont",
+      "blancs",
+      "et",
+      "les",
+      "rideaux",
+      "sont",
+      "verts"
+     ],
+     "resp": "Les murs sont blancs et les rideaux sont verts",
+     "exp": "Os dois adjetivos vão para o plural (blancs, verts) porque murs e rideaux são masculinos plurais."
+    },
+    {
+     "t": "gap",
+     "q": "Les deux voisines de Hugo sont très ___.",
+     "resp": [
+      "gentilles"
+     ],
+     "exp": "Voisines = feminino plural: gentil → gentille → gentilles (dois l!).",
+     "dica": "GENTIL"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: onde você mora? Como é seu quarto?",
+     "frase": "Où est-ce que tu habites ? Comment est ta chambre ?",
+     "modelo": "J'habite dans un appartement. Ma chambre est petite et il y a un lit.",
+     "min": 6,
+     "chave": [
+      "habite",
+      "chambre",
+      "appartement",
+      "maison",
+      "il y a",
+      "grande",
+      "petite"
+     ],
+     "exp": "Use « J'habite dans… » e « Ma chambre est + adjetivo (no feminino) »."
+    },
+    {
+     "t": "mc",
+     "q": "Qu'est-ce qu'il n'y a pas chez Hugo ?",
+     "op": [
+      "Des étagères",
+      "Un jardin",
+      "Une cuisine",
+      "Un balcon"
+     ],
+     "r": 3,
+     "exp": "« Il n'y a pas de balcon ». O jardin fica na frente do prédio, a cuisine e as étagères existem."
+    },
+    {
+     "t": "gap",
+     "q": "Il n'y a pas ___ balcon.",
+     "resp": [
+      "de"
+     ],
+     "exp": "Depois de « pas », o artigo un/une/des vira « de » (ou d'): il y a un balcon → il n'y a pas de balcon."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Le samedi de Thomas",
+   "objetivo": "Entender uma rotina e as horas, com verbos em -er no presente.",
+   "foco": "présent des verbes en -er; l'heure; la routine",
+   "explicacao": [
+    "Verbos em -er (a maioria): tire o -er e some -e, -es, -e, -ons, -ez, -ent. Ex.: jouer → je joue, tu joues, il joue, nous jouons, vous jouez, ils jouent.",
+    "Na fala, -e, -es e -ent não soam: il mange e ils mangent têm o mesmo som! Mas na escrita não podem faltar.",
+    "As horas: Il est huit heures. / huit heures et quart (8h15) / huit heures et demie (8h30) / neuf heures moins le quart (8h45) / midi / minuit. Para «às 8h»: à huit heures.",
+    "Verbos pronominais (se lever, se coucher) levam me/te/se/nous/vous/se: il se lève, il se couche."
+   ],
+   "vocab": [
+    {
+     "en": "se lever",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "se coucher",
+     "pt": "deitar-se"
+    },
+    {
+     "en": "manger",
+     "pt": "comer"
+    },
+    {
+     "en": "jouer au football",
+     "pt": "jogar futebol"
+    },
+    {
+     "en": "rentrer",
+     "pt": "voltar para casa"
+    },
+    {
+     "en": "préparer",
+     "pt": "preparar"
+    },
+    {
+     "en": "regarder",
+     "pt": "assistir, olhar"
+    },
+    {
+     "en": "écouter",
+     "pt": "escutar"
+    }
+   ],
+   "material": {
+    "titulo": "Le samedi de Thomas",
+    "texto": "Le samedi, Thomas se lève à huit heures et demie. Il mange des céréales et il boit un chocolat chaud. À dix heures, il joue au football avec ses amis au parc. À midi et quart, il rentre à la maison et il prépare le déjeuner avec son père. L'après-midi, il regarde un film ou il écoute de la musique. Le soir, il dîne à sept heures et il téléphone à sa grand-mère. Il se couche à dix heures moins le quart. Le dimanche, Thomas ne travaille pas : il se repose."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "À quelle heure Thomas se lève-t-il le samedi ?",
+     "op": [
+      "À dix heures",
+      "À neuf heures et demie",
+      "À huit heures et demie",
+      "À huit heures"
+     ],
+     "r": 2,
+     "exp": "« Se lève à huit heures et demie » = 8h30. Dix heures é a hora do futebol."
+    },
+    {
+     "t": "gap",
+     "q": "Thomas ___ au football avec ses amis.",
+     "resp": [
+      "joue"
+     ],
+     "exp": "Jouer é regular em -er: il joue (sem -s na 3ª pessoa).",
+     "dica": "JOUER"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "À midi et quart, il rentre à la maison.",
+     "exp": "« Midi et quart » = 12h15. Em « rentre », o r francês é suave; o -e final não se pronuncia."
+    },
+    {
+     "t": "mc",
+     "q": "Que fait Thomas à 21 h 45 ?",
+     "op": [
+      "Il dîne.",
+      "Il regarde un film.",
+      "Il se couche.",
+      "Il téléphone à sa grand-mère."
+     ],
+     "r": 2,
+     "exp": "« Dix heures moins le quart » = 9h45 da noite (21h45). É a hora de se coucher."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Le",
+      "soir",
+      "il",
+      "téléphone",
+      "à",
+      "sa",
+      "grand-mère"
+     ],
+     "resp": "Le soir il téléphone à sa grand-mère",
+     "exp": "Atenção: « téléphoner À quelqu'un » (com à), como «telefonar para». Diferente do português que não exige o artigo."
+    },
+    {
+     "t": "gap",
+     "q": "Thomas et moi, nous ___ de la musique.",
+     "resp": [
+      "écoutons"
+     ],
+     "exp": "Com nous, a terminação é -ons: nous écoutons. Escutar = écouter (não « entendre »).",
+     "dica": "ÉCOUTER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que você faz no sábado de manhã?",
+     "frase": "Qu'est-ce que tu fais le samedi matin ?",
+     "modelo": "Le samedi matin, je me lève à neuf heures et je mange des céréales.",
+     "min": 6,
+     "chave": [
+      "je",
+      "lève",
+      "mange",
+      "joue",
+      "regarde",
+      "samedi",
+      "matin"
+     ],
+     "exp": "Use o presente em -er: je mange, je joue, je regarde. Para a hora: à neuf heures."
+    },
+    {
+     "t": "mc",
+     "q": "Complétez : Ses amis ___ au football avec lui.",
+     "op": [
+      "joue",
+      "jouez",
+      "jouons",
+      "jouent"
+     ],
+     "r": 3,
+     "exp": "Ses amis = ils. Com ils: terminação -ent (jouent). Não se pronuncia, mas é obrigatória."
+    },
+    {
+     "t": "gap",
+     "q": "Il se couche à dix heures ___ le quart.",
+     "resp": [
+      "moins"
+     ],
+     "exp": "Para os últimos 15 minutos antes da hora usamos « moins le quart »: 9h45 = dix heures moins le quart."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Piscine : les horaires",
+   "objetivo": "Ler um quadro de horários e preços e responder sobre dias, horas e valores.",
+   "foco": "les horaires; de … à …; les nombres; les jours",
+   "explicacao": [
+    "Para intervalos: de 9 h à 18 h = das 9h às 18h. Para dias: du lundi au vendredi = de segunda a sexta. « Le samedi » (com artigo) = todo sábado.",
+    "Horas oficiais usam 24 h: 14 h = 2 h de l'après-midi. Lê-se « quatorze heures ». Escreve-se 14 h ou 14 h 30.",
+    "Números: 20 vingt, 30 trente, 40 quarante, 50 cinquante, 60 soixante, 70 soixante-dix, 80 quatre-vingts, 90 quatre-vingt-dix.",
+    "Il faut + infinitivo = é preciso: il faut réserver. Gratuit = grátis. Ouvrir/fermer: la piscine ouvre à 9 h et ferme à midi."
+   ],
+   "vocab": [
+    {
+     "en": "ouvrir / fermer",
+     "pt": "abrir / fechar"
+    },
+    {
+     "en": "l'entrée (f.)",
+     "pt": "a entrada, o ingresso"
+    },
+    {
+     "en": "gratuit(e)",
+     "pt": "grátis"
+    },
+    {
+     "en": "réserver",
+     "pt": "reservar"
+    },
+    {
+     "en": "l'accueil (m.)",
+     "pt": "a recepção"
+    },
+    {
+     "en": "le cours de natation",
+     "pt": "a aula de natação"
+    },
+    {
+     "en": "le mercredi",
+     "pt": "(toda) quarta-feira"
+    },
+    {
+     "en": "moins de douze ans",
+     "pt": "menos de doze anos"
+    }
+   ],
+   "material": {
+    "titulo": "Piscine municipale Jean-Bouin",
+    "texto": "Piscine municipale Jean-Bouin. Horaires : du lundi au vendredi, de 7 h 30 à 20 h. Le samedi, de 9 h à 18 h. Le dimanche, la piscine ouvre à 9 h et ferme à midi. Fermée le 1er mai et le 25 décembre. Cours de natation pour enfants : le mercredi à 14 h et le samedi à 10 h 30. Entrée : adulte 4 euros, enfant de moins de 12 ans 2 euros. Le mardi soir, de 18 h à 20 h, l'entrée est gratuite pour les étudiants. Pour les cours, il faut réserver à l'accueil."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quand la piscine ferme-t-elle le dimanche ?",
+     "op": [
+      "À midi",
+      "À 18 h",
+      "À 20 h",
+      "À 9 h"
+     ],
+     "r": 0,
+     "exp": "« Le dimanche, la piscine ouvre à 9 h et ferme à midi » (12 h)."
+    },
+    {
+     "t": "gap",
+     "q": "La piscine est ouverte ___ lundi au vendredi.",
+     "resp": [
+      "du"
+     ],
+     "exp": "Du … au … = de … a …: du lundi au vendredi (de + le = du).",
+     "dica": "DE + LE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "La piscine ouvre à neuf heures le samedi.",
+     "exp": "« Neuf heures » faz ligação: neuf-heures soa [nœvœr] com f→v. « Ouvre » tem o som [uvr]."
+    },
+    {
+     "t": "mc",
+     "q": "Combien paie un enfant de dix ans pour l'entrée ?",
+     "op": [
+      "2 euros",
+      "12 euros",
+      "4 euros",
+      "Rien : c'est gratuit"
+     ],
+     "r": 0,
+     "exp": "Enfant de moins de 12 ans = 2 euros. Os 4 euros são do adulto; só estudantes, terça à noite, entram de graça."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Le",
+      "mardi",
+      "soir",
+      "l'entrée",
+      "est",
+      "gratuite",
+      "pour",
+      "les",
+      "étudiants"
+     ],
+     "resp": "Le mardi soir l'entrée est gratuite pour les étudiants",
+     "exp": "« Gratuite » vai ao feminino porque « l'entrée » é feminino."
+    },
+    {
+     "t": "gap",
+     "q": "Pour les cours, il faut ___ à l'accueil.",
+     "resp": [
+      "réserver"
+     ],
+     "exp": "Il faut + infinitivo: « il faut réserver ». Atenção: « réserver » = reservar, não «reservar» no sentido de guardar.",
+     "dica": "RÉSERVER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: a que horas você acorda e começa a escola ou o trabalho?",
+     "frase": "À quelle heure tu te lèves et tu commences ?",
+     "modelo": "Je me lève à sept heures et je commence l'école à huit heures.",
+     "min": 6,
+     "chave": [
+      "heure",
+      "heures",
+      "lève",
+      "commence",
+      "h"
+     ],
+     "exp": "Use « à + hora »: à sept heures, à huit heures. « Commencer » também é regular em -er (je commence)."
+    },
+    {
+     "t": "mc",
+     "q": "Karim veut nager le 1er mai à 10 h. Que se passe-t-il ?",
+     "op": [
+      "Il peut venir au cours de natation.",
+      "Impossible : la piscine est fermée.",
+      "Il peut entrer gratuitement.",
+      "Il doit réserver à l'accueil."
+     ],
+     "r": 1,
+     "exp": "« Fermée le 1er mai et le 25 décembre ». Atenção: 1er = premier."
+    },
+    {
+     "t": "gap",
+     "q": "Le cours est à quatorze heures, c'est-à-dire à deux heures ___ l'après-midi.",
+     "resp": [
+      "de"
+     ],
+     "exp": "Para dizer a parte do dia: deux heures DE l'après-midi, huit heures DU matin, dix heures DU soir."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Règlement de la bibliothèque",
+   "objetivo": "Entender regras e proibições escritas e usar a negação.",
+   "foco": "la négation ne … pas; pas de; il faut / il ne faut pas",
+   "explicacao": [
+    "Negação: ne + verbo + pas. Ex.: Je ne mange pas. Diante de vogal: n' → Il n'est pas ici. Na fala informal o « ne » cai, mas na escrita ele é obrigatório.",
+    "Depois de pas, os artigos un/une/des/du/de la viram « de » (ou d'): J'ai un livre → Je n'ai pas de livre.",
+    "Exceção: com être o artigo não muda: Ce n'est pas un livre.",
+    "Il faut + infinitivo = é preciso. Il ne faut pas + infinitivo = não se deve / é proibido. Ex.: Il ne faut pas téléphoner."
+   ],
+   "vocab": [
+    {
+     "en": "le règlement",
+     "pt": "o regulamento"
+    },
+    {
+     "en": "emprunter",
+     "pt": "pegar emprestado"
+    },
+    {
+     "en": "rendre",
+     "pt": "devolver"
+    },
+    {
+     "en": "le silence",
+     "pt": "o silêncio"
+    },
+    {
+     "en": "l'inscription (f.)",
+     "pt": "a matrícula, o cadastro"
+    },
+    {
+     "en": "la pièce d'identité",
+     "pt": "o documento de identidade"
+    },
+    {
+     "en": "l'amende (f.)",
+     "pt": "a multa"
+    },
+    {
+     "en": "seul(e)",
+     "pt": "sozinho(a)"
+    }
+   ],
+   "material": {
+    "titulo": "Bibliothèque Victor-Hugo",
+    "texto": "Bibliothèque Victor-Hugo : règlement. Il ne faut pas manger dans la salle de lecture. Il ne faut pas téléphoner : le silence est obligatoire. On n'emprunte pas plus de cinq livres. Les enfants de moins de dix ans ne restent pas seuls. Vous n'avez pas de carte ? Pas de problème : l'inscription est gratuite, mais vous devez apporter une pièce d'identité. Si vous rendez un livre en retard, vous payez une amende de 1 euro par jour. La bibliothèque n'est pas ouverte le lundi. Vous pouvez boire de l'eau dans le hall."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que peut-on faire dans la salle de lecture ?",
+     "op": [
+      "Laisser seul un enfant de huit ans",
+      "Manger un sandwich",
+      "Téléphoner",
+      "Lire en silence"
+     ],
+     "r": 3,
+     "exp": "Interdits : manger, téléphoner e deixar sozinhas crianças com menos de dez anos. Só resta ler em silêncio."
+    },
+    {
+     "t": "gap",
+     "q": "Il ___ faut pas téléphoner.",
+     "resp": [
+      "ne"
+     ],
+     "exp": "A negação tem duas partes: ne … pas. Aqui falta o « ne » antes do verbo (faut)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Il ne faut pas téléphoner dans la salle de lecture.",
+     "exp": "« Téléphoner » tem o som [tele-fo-ne]; o -er final soa [e]. Em « faut », o au soa como o do português «ô»."
+    },
+    {
+     "t": "mc",
+     "q": "Pour s'inscrire à la bibliothèque, il faut ...",
+     "op": [
+      "avoir déjà une carte",
+      "apporter une pièce d'identité",
+      "avoir plus de dix ans",
+      "payer cinq euros"
+     ],
+     "r": 1,
+     "exp": "A inscription é grátis mas exige « une pièce d'identité ». Quem não tem carta pode se inscrever."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "On",
+      "n'emprunte",
+      "pas",
+      "plus",
+      "de",
+      "cinq",
+      "livres"
+     ],
+     "resp": "On n'emprunte pas plus de cinq livres",
+     "exp": "« Ne … pas plus de » = não mais do que. O « ne » vira n' diante de vogal."
+    },
+    {
+     "t": "gap",
+     "q": "Vous n'avez pas ___ carte ?",
+     "resp": [
+      "de"
+     ],
+     "exp": "Depois de « pas », une carte vira « de carte » (de + consoante)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que não se pode fazer na biblioteca?",
+     "frase": "Qu'est-ce qu'on ne peut pas faire dans la bibliothèque ?",
+     "modelo": "On ne peut pas manger et on ne peut pas téléphoner.",
+     "min": 5,
+     "chave": [
+      "ne",
+      "n'",
+      "pas",
+      "manger",
+      "téléphoner",
+      "parler"
+     ],
+     "exp": "Use « On ne peut pas + infinitivo » ou « Il ne faut pas + infinitivo »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je pas mange de viande.",
+      "Je ne mange pas des viande.",
+      "Je ne mange pas de viande.",
+      "Je mange ne pas de viande."
+     ],
+     "r": 2,
+     "exp": "O « ne » vem antes do verbo, o « pas » depois, e o artigo vira « de »."
+    },
+    {
+     "t": "gap",
+     "q": "La bibliothèque est fermée le lundi : elle n'___ pas ouverte.",
+     "resp": [
+      "est"
+     ],
+     "exp": "« N'est pas ouverte » = não está aberta. O verbo être fica entre n' e pas."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Un club de théâtre",
+   "objetivo": "Entender informações de um clube/atividade e fazer perguntas.",
+   "foco": "les questions : est-ce que, qu'est-ce que, où, quand, combien",
+   "explicacao": [
+    "Pergunta com « Est-ce que » + frase normal: Est-ce que le cours est gratuit ? (sobe a voz no fim). Resposta: oui / non.",
+    "Palavras interrogativas: où (onde), quand (quando), combien (quanto), qui (quem), comment (como), pourquoi (por que). Ex.: Où est-ce que le club est ? / Quand est-ce que le cours commence ?",
+    "Qu'est-ce que (o que): Qu'est-ce que vous apportez ? Atenção: « que » ≠ «que» do português; « qu'est-ce que » = «o que».",
+    "Mais fácil: sujeito e verbo invertidos (Combien coûte l'inscription ?) ou apenas entonação (Tu viens ?)."
+   ],
+   "vocab": [
+    {
+     "en": "le club de théâtre",
+     "pt": "o clube de teatro"
+    },
+    {
+     "en": "coûter",
+     "pt": "custar"
+    },
+    {
+     "en": "l'inscription (f.)",
+     "pt": "a matrícula"
+    },
+    {
+     "en": "apporter",
+     "pt": "trazer"
+    },
+    {
+     "en": "essayer",
+     "pt": "experimentar"
+    },
+    {
+     "en": "la salle des fêtes",
+     "pt": "o salão de festas"
+    },
+    {
+     "en": "confortable",
+     "pt": "confortável"
+    },
+    {
+     "en": "par an",
+     "pt": "por ano"
+    }
+   ],
+   "material": {
+    "titulo": "Club de théâtre Les Masques",
+    "texto": "Club de théâtre Les Masques : bienvenue ! Où ? Salle des fêtes, 12 rue Pasteur. Quand ? Tous les jeudis, de 17 h 30 à 19 h. Combien ça coûte ? L'inscription coûte 60 euros par an. Qui peut venir ? Les jeunes de 12 à 17 ans. Qu'est-ce qu'on apporte ? Des vêtements confortables et une bouteille d'eau. Est-ce que le premier cours est gratuit ? Oui, vous pouvez venir essayer sans payer. Pour vous inscrire, écrivez à Madame Garnier."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Où se trouve le club de théâtre ?",
+     "op": [
+      "À l'école Pasteur",
+      "Salle des fêtes, rue Pasteur",
+      "Chez Madame Garnier",
+      "Au théâtre municipal"
+     ],
+     "r": 1,
+     "exp": "« Où ? Salle des fêtes, 12 rue Pasteur »."
+    },
+    {
+     "t": "gap",
+     "q": "___ coûte l'inscription ? — 60 euros par an.",
+     "resp": [
+      "Combien"
+     ],
+     "exp": "Perguntamos o preço com « combien » (quanto). « Combien coûte… ? »"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Est-ce que le premier cours est gratuit ?",
+     "exp": "« Est-ce que » soa [esk]. Sobe a voz no final da pergunta."
+    },
+    {
+     "t": "mc",
+     "q": "Quand a lieu le cours ?",
+     "op": [
+      "Le jeudi, de 19 h à 20 h",
+      "Le mardi, de 17 h à 19 h 30",
+      "Tous les jours à 17 h 30",
+      "Le jeudi, de 17 h 30 à 19 h"
+     ],
+     "r": 3,
+     "exp": "« Tous les jeudis, de 17 h 30 à 19 h ». Cuidado com os horários parecidos."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Qu'est-ce",
+      "que",
+      "vous",
+      "apportez"
+     ],
+     "resp": "Qu'est-ce que vous apportez",
+     "exp": "« Qu'est-ce que » = o que. Depois vem sujeito + verbo (vous apportez)."
+    },
+    {
+     "t": "gap",
+     "q": "___ est-ce que le cours commence ? — À 17 h 30.",
+     "resp": [
+      "Quand",
+      "À quelle heure",
+      "A quelle heure"
+     ],
+     "exp": "A resposta é uma hora, então a pergunta é « Quand… ? » ou « À quelle heure… ? »."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: quanto custa a inscrição e quem pode ir ao clube?",
+     "frase": "Combien coûte l'inscription au club, et qui peut venir ?",
+     "modelo": "L'inscription coûte soixante euros et les jeunes de douze à dix-sept ans peuvent venir.",
+     "min": 6,
+     "chave": [
+      "coûte",
+      "euros",
+      "jeunes",
+      "ans",
+      "soixante"
+     ],
+     "exp": "Responda com « L'inscription coûte… » e « Les jeunes de… ans peuvent venir »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle question correspond à « Le jeudi à 17 h 30 » ?",
+     "op": [
+      "Combien coûte le cours ?",
+      "Quand est le cours ?",
+      "Qui est le professeur ?",
+      "Où est le cours ?"
+     ],
+     "r": 1,
+     "exp": "Resposta com dia e hora = pergunta com « quand »."
+    },
+    {
+     "t": "gap",
+     "q": "___-ce que vous aimez le théâtre ?",
+     "resp": [
+      "Est"
+     ],
+     "exp": "A pergunta sim/não começa com « Est-ce que… ». Aqui falta o « Est » (est-ce que)."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Un message de Samir",
+   "objetivo": "Entender uma mensagem sobre deslocamentos e meios de transporte.",
+   "foco": "aller, venir, prendre; les transports; à / en",
+   "explicacao": [
+    "Aller (ir): je vais, tu vas, il va, nous allons, vous allez, ils vont. Venir (vir): je viens, tu viens, il vient, nous venons, vous venez, ils viennent.",
+    "Prendre (pegar/tomar): je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent. Ex.: Je prends le bus.",
+    "Transportes: en bus, en voiture, en train, en taxi, en métro; mas à pied (a pé), à vélo (de bicicleta).",
+    "Cuidado: « aller à + lugar » (je vais à la gare) e « chez + pessoa » (je vais chez toi)."
+   ],
+   "vocab": [
+    {
+     "en": "le bus / l'arrêt (m.)",
+     "pt": "o ônibus / o ponto"
+    },
+    {
+     "en": "la gare",
+     "pt": "a estação de trem"
+    },
+    {
+     "en": "passer",
+     "pt": "passar"
+    },
+    {
+     "en": "arriver",
+     "pt": "chegar"
+    },
+    {
+     "en": "à pied",
+     "pt": "a pé"
+    },
+    {
+     "en": "en voiture",
+     "pt": "de carro"
+    },
+    {
+     "en": "cher / chère",
+     "pt": "caro(a)"
+    },
+    {
+     "en": "l'oncle (m.)",
+     "pt": "o tio"
+    }
+   ],
+   "material": {
+    "titulo": "Un message de Samir",
+    "texto": "Salut Inès ! Demain, je vais chez toi en bus. Je prends le bus 12 à la gare. Il passe à 14 h 10 et il arrive à ton arrêt vers 14 h 35. Ma sœur ne vient pas : elle va à la piscine avec ses copines. Mes cousins viennent en voiture avec mon oncle. Nous prenons un taxi pour aller au cinéma ? Non, c'est trop cher ! Nous allons au cinéma à pied : il est à dix minutes. À demain ! Samir"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment Samir va-t-il chez Inès ?",
+     "op": [
+      "À pied",
+      "En bus",
+      "En voiture",
+      "En taxi"
+     ],
+     "r": 1,
+     "exp": "« Je vais chez toi en bus ». A voiture é dos primos e o taxi é descartado."
+    },
+    {
+     "t": "gap",
+     "q": "Je ___ le bus 12 à la gare.",
+     "resp": [
+      "prends"
+     ],
+     "exp": "Prendre: je prends (com s). Em francês pegar o ônibus é « prendre le bus » (e não «prendre» no sentido de prender).",
+     "dica": "PRENDRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Demain, je vais chez toi en bus.",
+     "exp": "« Chez toi » soa [ʃe-twa]. O r de « vais » não existe: [vɛ]."
+    },
+    {
+     "t": "mc",
+     "q": "Qui vient en voiture ?",
+     "op": [
+      "Samir",
+      "Les cousins de Samir",
+      "Inès",
+      "La sœur de Samir"
+     ],
+     "r": 1,
+     "exp": "« Mes cousins viennent en voiture avec mon oncle ». A irmã vai à piscina."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Ma",
+      "sœur",
+      "va",
+      "à",
+      "la",
+      "piscine"
+     ],
+     "resp": "Ma sœur va à la piscine",
+     "exp": "Aller à + lugar: elle va à la piscine. Va = 3ª pessoa de aller (diferente de « vas »)."
+    },
+    {
+     "t": "gap",
+     "q": "Mes cousins ___ en voiture.",
+     "resp": [
+      "viennent"
+     ],
+     "exp": "Venir com ils/elles: ils viennent (e não « venent »).",
+     "dica": "VENIR"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: como você vai à escola ou ao trabalho?",
+     "frase": "Comment tu vas à l'école ou au travail ?",
+     "modelo": "Je vais à l'école à pied. Je prends le bus quand il pleut.",
+     "min": 5,
+     "chave": [
+      "vais",
+      "prends",
+      "bus",
+      "pied",
+      "voiture",
+      "métro",
+      "vélo"
+     ],
+     "exp": "Use « Je vais… à pied / en bus » ou « Je prends le bus ». Não confunda: à pied, mas en bus."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi ils ne prennent pas un taxi ?",
+     "op": [
+      "Parce que c'est trop cher.",
+      "Parce que le cinéma est loin.",
+      "Parce que la sœur ne vient pas.",
+      "Parce que le taxi est en retard."
+     ],
+     "r": 0,
+     "exp": "« Non, c'est trop cher ! ». O cinema fica a dez minutos a pé, portanto não é longe."
+    },
+    {
+     "t": "gap",
+     "q": "Nous ___ au cinéma à pied.",
+     "resp": [
+      "allons"
+     ],
+     "exp": "Aller com nous: allons. « Aller à pied » = ir a pé.",
+     "dica": "ALLER"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "En ville",
+   "objetivo": "Entender indicações de lugar e de caminho em uma cidade.",
+   "foco": "la ville; prépositions de lieu; à + article / de + article; l'impératif",
+   "explicacao": [
+    "Contrações obrigatórias: à + le = au (au musée), à + les = aux (aux toilettes); de + le = du (en face du musée), de + les = des.",
+    "Com la e l' não há contração: à la poste, à l'hôtel, en face de la gare, à côté de l'église.",
+    "Direções: tournez à gauche / à droite, allez tout droit, traversez la place, continuez jusqu'au feu. É o imperativo com vous (sem sujeito).",
+    "Lugares: entre A et B (entre A e B), au bout de la rue (no fim da rua), derrière, devant, en face de."
+   ],
+   "vocab": [
+    {
+     "en": "tourner",
+     "pt": "virar"
+    },
+    {
+     "en": "tout droit",
+     "pt": "em frente"
+    },
+    {
+     "en": "à gauche / à droite",
+     "pt": "à esquerda / à direita"
+    },
+    {
+     "en": "traverser",
+     "pt": "atravessar"
+    },
+    {
+     "en": "l'office de tourisme",
+     "pt": "o posto de turismo"
+    },
+    {
+     "en": "la poste",
+     "pt": "o correio"
+    },
+    {
+     "en": "la pharmacie",
+     "pt": "a farmácia"
+    },
+    {
+     "en": "le feu rouge",
+     "pt": "o semáforo"
+    }
+   ],
+   "material": {
+    "titulo": "De la gare à l'office de tourisme",
+    "texto": "Pour aller de la gare à l'office de tourisme : sortez de la gare et tournez à gauche. Allez tout droit jusqu'au feu rouge, puis traversez la place. L'office de tourisme est à côté de la poste, en face du musée. La pharmacie est derrière l'église, entre la boulangerie et le café. Le parking est au bout de la rue, à droite. Attention : le marché a lieu sur la place du lundi au samedi, alors prenez la petite rue à gauche de la banque."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Où est l'office de tourisme ?",
+     "op": [
+      "À côté de la poste, en face du musée",
+      "Derrière l'église",
+      "Entre la boulangerie et le café",
+      "À droite du parking"
+     ],
+     "r": 0,
+     "exp": "« À côté de la poste, en face du musée »."
+    },
+    {
+     "t": "gap",
+     "q": "Pour aller à l'office de tourisme, tournez à ___ .",
+     "resp": [
+      "gauche"
+     ],
+     "exp": "O texto manda sair da estação e « tournez à gauche »."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "L'office de tourisme est à côté de la poste.",
+     "exp": "« Côté » tem o o fechado [ko-te]. « Poste » = [pɔst], não «posti»."
+    },
+    {
+     "t": "mc",
+     "q": "Où est la pharmacie ?",
+     "op": [
+      "À côté de la poste",
+      "Devant l'église",
+      "En face de la gare",
+      "Derrière l'église, entre la boulangerie et le café"
+     ],
+     "r": 3,
+     "exp": "« Derrière l'église, entre la boulangerie et le café »."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Allez",
+      "tout",
+      "droit",
+      "jusqu'au",
+      "feu",
+      "rouge"
+     ],
+     "resp": "Allez tout droit jusqu'au feu rouge",
+     "exp": "Imperativo com vous: allez (de aller). « Jusqu'au » = jusqu'à + le. Tout droit = em frente."
+    },
+    {
+     "t": "gap",
+     "q": "La pharmacie est ___ la boulangerie et le café.",
+     "resp": [
+      "entre"
+     ],
+     "exp": "« Entre A et B » = entre A e B."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: explique como chegar ao correio (a poste é à direita).",
+     "frase": "Pardon, où est la poste, s'il vous plaît ?",
+     "modelo": "Allez tout droit et tournez à droite. La poste est à côté du musée.",
+     "min": 6,
+     "chave": [
+      "droit",
+      "droite",
+      "gauche",
+      "côté",
+      "face",
+      "tournez"
+     ],
+     "exp": "Use o imperativo: allez, tournez, traversez. Termine com « La poste est à côté de… »."
+    },
+    {
+     "t": "mc",
+     "q": "Complétez : Je vais ___ musée.",
+     "op": [
+      "à la",
+      "au",
+      "à le",
+      "aux"
+     ],
+     "r": 1,
+     "exp": "Musée é masculino: à + le = au. « À le » não existe."
+    },
+    {
+     "t": "gap",
+     "q": "L'office est en face ___ musée.",
+     "resp": [
+      "du"
+     ],
+     "exp": "En face DE + le = en face DU musée (contração obrigatória)."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Au marché",
+   "objetivo": "Ler uma tabela de preços de feira e entender quantidades e valores.",
+   "foco": "les courses; du / de la / des (partitif); les quantités; les prix",
+   "explicacao": [
+    "Partitivo: du (masc.), de la (fem.), de l' (vogal), des (plural) = uma parte de algo. Ex.: Je mange du pain et de la salade. Em português geralmente não há artigo!",
+    "Com quantidades, usamos de sem artigo: un kilo de pommes, une bouteille de lait, une douzaine d'œufs, beaucoup de fruits.",
+    "Preços: 2,50 € = deux euros cinquante. « Le kilo » = por quilo: 3 € le kilo.",
+    "Pagar: payer en espèces (em dinheiro) ou par carte. Je voudrais… = eu gostaria de… (educado)."
+   ],
+   "vocab": [
+    {
+     "en": "la pomme / la poire",
+     "pt": "a maçã / a pera"
+    },
+    {
+     "en": "le fromage de chèvre",
+     "pt": "o queijo de cabra"
+    },
+    {
+     "en": "les œufs",
+     "pt": "os ovos"
+    },
+    {
+     "en": "la douzaine",
+     "pt": "a dúzia"
+    },
+    {
+     "en": "le litre",
+     "pt": "o litro"
+    },
+    {
+     "en": "offert(e)",
+     "pt": "oferecido(a), de graça"
+    },
+    {
+     "en": "en espèces",
+     "pt": "em dinheiro"
+    },
+    {
+     "en": "la baguette",
+     "pt": "a baguete"
+    }
+   ],
+   "material": {
+    "titulo": "Marché de Saint-Paul",
+    "texto": "Marché de Saint-Paul : prix du jour. Pommes : 2,50 € le kilo. Poires : 3 € le kilo. Tomates : 4 € le kilo. Fromage de chèvre : 2 € la pièce. Œufs : 3,20 € la douzaine. Pain : 1,10 € la baguette. Lait : 1 € le litre. Offre du jour : un kilo de pommes acheté, une bouteille de jus offerte ! Le marché est ouvert le mardi, le jeudi et le dimanche matin. Paiement en espèces ou par carte à partir de 10 €."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Combien coûtent les poires ?",
+     "op": [
+      "3,20 € la douzaine",
+      "2,50 € le kilo",
+      "4 € le kilo",
+      "3 € le kilo"
+     ],
+     "r": 3,
+     "exp": "« Poires : 3 € le kilo ». 2,50 € são as maçãs e 3,20 € os ovos."
+    },
+    {
+     "t": "gap",
+     "q": "Je voudrais un kilo ___ tomates, s'il vous plaît.",
+     "resp": [
+      "de"
+     ],
+     "exp": "Depois de uma quantidade (un kilo), usamos « de » sem artigo: un kilo de tomates."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je voudrais un kilo de pommes et une baguette, s'il vous plaît.",
+     "exp": "« Voudrais » soa [vu-drê]. O « ai » final soa como é aberto. O « s' » de s'il vous plaît liga com il."
+    },
+    {
+     "t": "mc",
+     "q": "Madame Roy achète deux kilos de pommes et un litre de lait. Elle paie ...",
+     "op": [
+      "6 euros",
+      "7 euros",
+      "5 euros",
+      "6,50 euros"
+     ],
+     "r": 0,
+     "exp": "Deux kilos de pommes = 2 × 2,50 = 5 €, mais un litre de lait = 1 €. Total: 6 €."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "voudrais",
+      "une",
+      "douzaine",
+      "d'œufs"
+     ],
+     "resp": "Je voudrais une douzaine d'œufs",
+     "exp": "« Une douzaine DE œufs » vira d'œufs (de + vogal). Douzaine = dúzia."
+    },
+    {
+     "t": "gap",
+     "q": "Au petit-déjeuner, je mange ___ pain avec du beurre.",
+     "resp": [
+      "du"
+     ],
+     "exp": "Pain é masculino: du pain. Partitivo = uma parte de pão, sem equivalente em português."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: compre algo na feira e pergunte o preço.",
+     "frase": "Qu'est-ce que vous voulez ? Combien ça coûte ?",
+     "modelo": "Je voudrais un kilo de tomates. Ça coûte quatre euros.",
+     "min": 6,
+     "chave": [
+      "voudrais",
+      "kilo",
+      "euros",
+      "coûte",
+      "pommes",
+      "prends"
+     ],
+     "exp": "Use « Je voudrais + quantidade + de + produto ». Para o preço: « Ça coûte… euros »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je voudrais une pain.",
+      "Je voudrais du pain.",
+      "Je voudrais de la pain.",
+      "Je voudrais des pain."
+     ],
+     "r": 1,
+     "exp": "Pain é masculino singular, então partitivo « du ». « De la » é para feminino."
+    },
+    {
+     "t": "gap",
+     "q": "À partir de dix euros, on peut payer ___ carte.",
+     "resp": [
+      "par"
+     ],
+     "exp": "Pagar com cartão = payer par carte (e não « avec »). Em dinheiro = en espèces."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Au restaurant",
+   "objetivo": "Entender um cardápio e escolher o que pedir.",
+   "foco": "la nourriture; le menu; je voudrais / je prends; du, de la, des",
+   "explicacao": [
+    "Menu = pacote fechado (menu du jour: entrada + prato ou prato + sobremesa). O cardápio com todos os pratos é « la carte ». Falso cognato: « menu » no restaurante francês ≠ cardápio inteiro!",
+    "Pedir: Je voudrais… / Je prends… / Vous désirez ? (O que deseja?). Para a conta: L'addition, s'il vous plaît.",
+    "Um prato COM algo usa à/au/aux ou avec: une glace à la vanille, une tarte aux pommes, du poulet avec du riz.",
+    "Comida não vem com artigo em português, mas em francês sim: du riz, de la salade, des frites. Verbos: manger, boire, prendre."
+   ],
+   "vocab": [
+    {
+     "en": "l'entrée / le plat / le dessert",
+     "pt": "a entrada / o prato principal / a sobremesa"
+    },
+    {
+     "en": "le poulet rôti",
+     "pt": "o frango assado"
+    },
+    {
+     "en": "les frites (f.)",
+     "pt": "as batatas fritas"
+    },
+    {
+     "en": "les pâtes (f.)",
+     "pt": "o macarrão"
+    },
+    {
+     "en": "la glace",
+     "pt": "o sorvete"
+    },
+    {
+     "en": "la boisson",
+     "pt": "a bebida"
+    },
+    {
+     "en": "végétarien(ne)",
+     "pt": "vegetariano(a)"
+    },
+    {
+     "en": "le supplément",
+     "pt": "o adicional"
+    }
+   ],
+   "material": {
+    "titulo": "Restaurant Chez Mamie",
+    "texto": "Restaurant Chez Mamie. Menu enfant à 9,50 € : un steak haché avec des frites ou des pâtes, une glace à la vanille ou à la fraise, une boisson. Menu du jour à 14 € : entrée + plat ou plat + dessert. Entrées : salade verte, soupe de légumes. Plats : poulet rôti avec du riz, poisson du jour, omelette au fromage (plat végétarien). Desserts : tarte aux pommes, fromage blanc, mousse au chocolat. Boissons : eau, jus d'orange, café (en supplément : 2 €). Fermé le lundi. Réservation conseillée le week-end."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qu'est-ce qu'il y a dans le menu enfant ?",
+     "op": [
+      "Une soupe, du poulet et un café",
+      "Du poisson, des frites et un dessert au choix",
+      "Un steak haché, une glace et une boisson",
+      "Une omelette, une tarte et un jus"
+     ],
+     "r": 2,
+     "exp": "Menu enfant: steak haché (com frites ou pâtes), glace e boisson. Os outros misturam itens do menu du jour."
+    },
+    {
+     "t": "gap",
+     "q": "Avec le poulet rôti, il y a ___ riz.",
+     "resp": [
+      "du"
+     ],
+     "exp": "Riz é masculino: du riz (partitivo). No texto: « poulet rôti avec du riz »."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je voudrais une soupe de légumes et du poulet rôti, s'il vous plaît.",
+     "exp": "« Légumes » = [le-gum]. « Poulet » = [pu-lê]. O « -et » final soa como [ê]."
+    },
+    {
+     "t": "mc",
+     "q": "Avec le menu du jour à 14 €, on peut prendre ...",
+     "op": [
+      "une entrée et un plat",
+      "une entrée, un plat et un dessert",
+      "une entrée et un dessert",
+      "un plat et un café"
+     ],
+     "r": 0,
+     "exp": "« Entrée + plat ou plat + dessert »: só dois itens, nunca os três. O café é um suplemento de 2 €."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Qu'est-ce",
+      "que",
+      "vous",
+      "voulez",
+      "comme",
+      "dessert"
+     ],
+     "resp": "Qu'est-ce que vous voulez comme dessert",
+     "exp": "« Comme dessert » = de sobremesa. « Qu'est-ce que » = o que."
+    },
+    {
+     "t": "gap",
+     "q": "Je ne mange pas de viande : je prends l'omelette. C'est un plat ___.",
+     "resp": [
+      "végétarien"
+     ],
+     "exp": "Plat é masculino, então végétarien (sem -ne).",
+     "dica": "VÉGÉTARIEN"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: faça seu pedido ao garçom.",
+     "frase": "Vous désirez, Madame ?",
+     "modelo": "Je voudrais une salade et du poisson, s'il vous plaît. Comme boisson, de l'eau.",
+     "min": 6,
+     "chave": [
+      "voudrais",
+      "prends",
+      "salade",
+      "poisson",
+      "eau",
+      "boisson",
+      "s'il vous plaît"
+     ],
+     "exp": "Use « Je voudrais… » ou « Je prends… » e termine com « s'il vous plaît »."
+    },
+    {
+     "t": "mc",
+     "q": "Jules ne mange pas de viande. Quel plat peut-il choisir ?",
+     "op": [
+      "Le poulet rôti avec du riz",
+      "La soupe de légumes",
+      "L'omelette au fromage",
+      "Le steak haché avec des frites"
+     ],
+     "r": 2,
+     "exp": "Plat végétarien = omelette. Poulet e steak são carne; a soupe é uma entrada, não um plat."
+    },
+    {
+     "t": "gap",
+     "q": "Le café n'est pas compris : il coûte 2 euros en ___.",
+     "resp": [
+      "supplément"
+     ],
+     "exp": "« En supplément » = a mais, adicional. Café fora do menu custa 2 €.",
+     "dica": "SUPPLÉMENT"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Une invitation",
+   "objetivo": "Entender um convite de aniversário: data, hora, atividades e resposta.",
+   "foco": "la date; les loisirs; jouer à / jouer de / faire de; inviter",
+   "explicacao": [
+    "Data: le + número + mês. Ex.: le samedi 14 mars. Dia 1: le 1er (premier); depois cardinais: le deux, le trois… Sem « de » entre dia e mês.",
+    "Esporte = jouer AU (le) / À LA: jouer au volley, jouer à la pétanque. Instrumento = jouer DU / DE LA: jouer de la guitare, jouer du piano. Faire de + atividade: faire de la natation, du sport.",
+    "Convidar: Je t'invite à ma fête. Responder: Réponds avant mardi, s'il te plaît. « Tu peux venir ? » = Você pode vir?",
+    "Meses: janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre (sem maiúscula)."
+   ],
+   "vocab": [
+    {
+     "en": "l'anniversaire (m.)",
+     "pt": "o aniversário"
+    },
+    {
+     "en": "fêter",
+     "pt": "comemorar"
+    },
+    {
+     "en": "le gâteau",
+     "pt": "o bolo"
+    },
+    {
+     "en": "le jardin",
+     "pt": "o quintal, o jardim"
+    },
+    {
+     "en": "le maillot de bain",
+     "pt": "o maiô, a sunga"
+    },
+    {
+     "en": "répondre",
+     "pt": "responder"
+    },
+    {
+     "en": "les copains",
+     "pt": "os colegas, amigos"
+    },
+    {
+     "en": "bises",
+     "pt": "beijos (fim de mensagem)"
+    }
+   ],
+   "material": {
+    "titulo": "Salut Chloé !",
+    "texto": "Salut Chloé ! Je fête mon anniversaire le samedi 14 mars. J'ai quinze ans ! La fête est à la maison, de 15 h à 19 h. Nous allons jouer au volley dans le jardin, manger du gâteau et écouter de la musique. Mes copains jouent de la guitare : on va chanter ! Apporte un maillot de bain, car nous allons peut-être faire de la natation à la piscine à côté. Réponds avant le mardi 10 mars, s'il te plaît. Est-ce que tu peux venir ? Bises, Maëlle"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quand est l'anniversaire de Maëlle ?",
+     "op": [
+      "Le samedi 14 mars",
+      "Le samedi 10 mars",
+      "Le mardi 10 mars",
+      "Le dimanche 14 mars"
+     ],
+     "r": 0,
+     "exp": "« Je fête mon anniversaire le samedi 14 mars ». O 10 mars é o prazo da resposta."
+    },
+    {
+     "t": "gap",
+     "q": "Mes copains jouent ___ guitare.",
+     "resp": [
+      "de la"
+     ],
+     "exp": "Instrumento: jouer DE LA guitare (de + la). Esporte seria jouer AU volley."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Nous allons jouer au volley dans le jardin.",
+     "exp": "« Jardin » termina em som nasal [ɛ̃]. « Volley » lê-se [vɔ-lɛ]."
+    },
+    {
+     "t": "mc",
+     "q": "Que doit faire Chloé avant le 10 mars ?",
+     "op": [
+      "Jouer de la guitare",
+      "Apporter un gâteau",
+      "Aller à la piscine",
+      "Répondre à Maëlle"
+     ],
+     "r": 3,
+     "exp": "« Réponds avant le mardi 10 mars ». Ela precisa responder dizendo se pode vir."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Est-ce",
+      "que",
+      "tu",
+      "peux",
+      "venir"
+     ],
+     "resp": "Est-ce que tu peux venir",
+     "exp": "« Est-ce que » + frase normal faz a pergunta. « Peux » = pode (pouvoir)."
+    },
+    {
+     "t": "gap",
+     "q": "Mon anniversaire, c'est ___ 14 mars.",
+     "resp": [
+      "le"
+     ],
+     "exp": "Data em francês: le + número + mês. Sem preposição: le 14 mars (não « en 14 mars »)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: quando é seu aniversário? O que você gosta de fazer na festa?",
+     "frase": "C'est quand ton anniversaire ?",
+     "modelo": "Mon anniversaire est le dix juin. J'aime jouer au football et manger du gâteau.",
+     "min": 7,
+     "chave": [
+      "anniversaire",
+      "le",
+      "jouer",
+      "faire",
+      "aime",
+      "gâteau"
+     ],
+     "exp": "Diga « Mon anniversaire est le + data ». Para gostos: « J'aime + infinitivo »."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi Chloé doit-elle apporter un maillot de bain ?",
+     "op": [
+      "Parce qu'il y a une piscine dans le jardin.",
+      "Parce que les amis vont peut-être nager.",
+      "Parce que Maëlle fait de la natation le samedi.",
+      "Parce que la fête est à la plage."
+     ],
+     "r": 1,
+     "exp": "« Nous allons peut-être faire de la natation à la piscine à côté »: a piscina fica ao lado, não no jardim."
+    },
+    {
+     "t": "gap",
+     "q": "La fête commence à 15 h et finit à 19 h : elle dure ___ heures.",
+     "resp": [
+      "quatre",
+      "4"
+     ],
+     "exp": "De 15 h a 19 h são quatre heures. Cuidado: « quatre » (e não « quarante »)."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Sortie au zoo : avis aux parents",
+   "objetivo": "Entender um aviso com instruções, proibições e horários.",
+   "foco": "l'impératif; il faut + infinitif; interdit de; les consignes",
+   "explicacao": [
+    "Imperativo (vous): tire o sujeito. Vous signez → Signez ! Vous n'oubliez pas → N'oubliez pas ! Com -er: tu → sem s (Écoute !).",
+    "Obrigação: il faut + infinitivo (é preciso), vous devez + infinitivo (você deve). Proibição: il est interdit de + infinitivo, ne … pas, défense de.",
+    "Avisos escritos: pas de téléphone portable (sem celular), attention !, en cas de pluie (em caso de chuva).",
+    "Falso cognato: « attention » = cuidado (e não «atenção» de atender); « annuler » = cancelar."
+   ],
+   "vocab": [
+    {
+     "en": "la sortie",
+     "pt": "o passeio, a excursão"
+    },
+    {
+     "en": "le pique-nique",
+     "pt": "o lanche para levar"
+    },
+    {
+     "en": "la casquette",
+     "pt": "o boné"
+    },
+    {
+     "en": "l'autorisation (f.)",
+     "pt": "a autorização"
+    },
+    {
+     "en": "annuler",
+     "pt": "cancelar"
+    },
+    {
+     "en": "interdit(e)",
+     "pt": "proibido(a)"
+    },
+    {
+     "en": "la directrice",
+     "pt": "a diretora"
+    },
+    {
+     "en": "revenir",
+     "pt": "voltar"
+    }
+   ],
+   "material": {
+    "titulo": "Avis aux parents",
+    "texto": "Avis aux parents : la sortie au zoo est le jeudi 5 juin. Les enfants doivent arriver à l'école à 8 h 15 avec un pique-nique et une casquette. Le bus part à 8 h 30 et revient à 17 h. N'oubliez pas de signer l'autorisation avant lundi. En cas de pluie, la sortie est annulée. Attention : pas de téléphone portable. Il est interdit de donner à manger aux animaux. Pour toute question, téléphonez ou écrivez à la directrice, Madame Bernard."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que doivent apporter les enfants ?",
+     "op": [
+      "Un pique-nique et une casquette",
+      "Un maillot de bain et une serviette",
+      "Un téléphone portable et de l'argent",
+      "De la nourriture pour les animaux"
+     ],
+     "r": 0,
+     "exp": "« Avec un pique-nique et une casquette ». Telefone e comida para animais são proibidos."
+    },
+    {
+     "t": "gap",
+     "q": "N'___ pas de signer l'autorisation.",
+     "resp": [
+      "oubliez"
+     ],
+     "exp": "Imperativo de vous: vous oubliez → oubliez ! Aqui é um pedido aos pais.",
+     "dica": "OUBLIER"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Il est interdit de donner à manger aux animaux.",
+     "exp": "« Interdit » termina com t mudo: [ɛ̃-tɛr-di]. « Animaux » soa [a-ni-mo]."
+    },
+    {
+     "t": "mc",
+     "q": "Que se passe-t-il s'il pleut ?",
+     "op": [
+      "La sortie est annulée.",
+      "Les enfants restent sous un abri.",
+      "Le bus part plus tôt.",
+      "La sortie est reportée au lundi."
+     ],
+     "r": 0,
+     "exp": "« En cas de pluie, la sortie est annulée » (cancelada). Não há nova data."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Signez",
+      "l'autorisation",
+      "avant",
+      "lundi"
+     ],
+     "resp": "Signez l'autorisation avant lundi",
+     "exp": "Imperativo com vous: Signez ! Sem sujeito. « Avant lundi » = antes de segunda."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut ___ une casquette et un pique-nique.",
+     "resp": [
+      "apporter"
+     ],
+     "exp": "Il faut + infinitivo: apporter (trazer). Não confundir com « porter » (levar/vestir).",
+     "dica": "APPORTER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: diga uma regra importante da escola ou do trabalho.",
+     "frase": "Quelle règle est importante à l'école ou au travail ?",
+     "modelo": "Il est interdit de fumer. On ne doit pas téléphoner.",
+     "min": 5,
+     "chave": [
+      "interdit",
+      "ne",
+      "pas",
+      "faut",
+      "doit"
+     ],
+     "exp": "Use « Il est interdit de… », « Il ne faut pas… » ou « On ne doit pas… »."
+    },
+    {
+     "t": "mc",
+     "q": "À quelle heure le bus revient-il à l'école ?",
+     "op": [
+      "À 12 h",
+      "À 8 h 30",
+      "À 17 h",
+      "À 15 h"
+     ],
+     "r": 2,
+     "exp": "« Le bus part à 8 h 30 et revient à 17 h ». 8 h 30 é a partida."
+    },
+    {
+     "t": "gap",
+     "q": "Pour toute question, ___ à la directrice.",
+     "resp": [
+      "écrivez",
+      "téléphonez",
+      "ecrivez",
+      "telephonez"
+     ],
+     "exp": "Imperativo de vous: écrivez ou téléphonez à la directrice. Os dois verbos usam « à » antes de quem recebe.",
+     "dica": "ÉCRIRE"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado DELF A1",
+   "objetivo": "Praticar o formato da Compréhension des écrits do DELF A1: vários documentos curtos e perguntas de múltipla escolha.",
+   "foco": "documents variés : message, affiche, menu, recette",
+   "explicacao": [
+    "No DELF A1 há 4 a 5 documentos curtos (mensagem, cartaz, horário, cardápio, instrução). Cada um tem 2 a 4 perguntas QCM.",
+    "Leia a pergunta primeiro e depois procure no documento. Cuidado com números, dias e horas: os distratores usam valores do próprio texto.",
+    "Não precisa entender todas as palavras. Procure as palavras-chave: dias, horas, preços, lugares, verbos de ordem (mélangez, apportez).",
+    "Tempo de prova: cerca de 30 minutos para todos os documentos."
+   ],
+   "vocab": [
+    {
+     "en": "le rendez-vous",
+     "pt": "o encontro marcado"
+    },
+    {
+     "en": "gratuit(e)",
+     "pt": "grátis"
+    },
+    {
+     "en": "un pull",
+     "pt": "um suéter"
+    },
+    {
+     "en": "frais / fraîche",
+     "pt": "fresco(a)"
+    },
+    {
+     "en": "la farine",
+     "pt": "a farinha"
+    },
+    {
+     "en": "laisser reposer",
+     "pt": "deixar descansar"
+    },
+    {
+     "en": "la poêle",
+     "pt": "a frigideira"
+    },
+    {
+     "en": "fermé le dimanche",
+     "pt": "fechado aos domingos"
+    }
+   ],
+   "material": {
+    "titulo": "Documents A1",
+    "texto": "Document 1 – Message. Salut Paul ! Je ne peux pas venir au cinéma samedi : j'ai un match de basket à 15 h. Mais dimanche, je suis libre. On va au cinéma à 16 h ? Rendez-vous devant le cinéma Rex. Réponds-moi vite ! Julie\n\nDocument 2 – Affiche. Fête de la musique : vendredi 21 juin, à partir de 18 h, place de la Mairie. Concert gratuit. Apportez un pull : il fait frais le soir. Pas de voitures dans le centre-ville : parking à la gare.\n\nDocument 3 – Menu. Café du Port. Petit-déjeuner : café ou thé + croissant, 3,50 €. Midi : sandwich + boisson, 6 €. Fermé le dimanche.\n\nDocument 4 – Recette de crêpes pour 4 personnes. Mélangez 250 g de farine, 3 œufs et un demi-litre de lait. Laissez reposer la pâte une heure. Faites cuire dans une poêle chaude avec un peu de beurre."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Document 1 – Pourquoi Julie ne vient-elle pas samedi ?",
+     "op": [
+      "Elle doit travailler.",
+      "Elle va au cinéma.",
+      "Elle a un match de basket.",
+      "Elle est malade."
+     ],
+     "r": 2,
+     "exp": "« J'ai un match de basket à 15 h ». O cinema é a proposta para domingo."
+    },
+    {
+     "t": "mc",
+     "q": "Document 1 – Que propose Julie ?",
+     "op": [
+      "Jouer au basket dimanche",
+      "Se retrouver chez Paul",
+      "Aller au cinéma samedi à 15 h",
+      "Aller au cinéma dimanche à 16 h"
+     ],
+     "r": 3,
+     "exp": "« Mais dimanche, je suis libre. On va au cinéma à 16 h ? ». 15 h é a hora do jogo de sábado."
+    },
+    {
+     "t": "gap",
+     "q": "Rendez-vous ___ le cinéma Rex.",
+     "resp": [
+      "devant"
+     ],
+     "exp": "Julie marca o encontro « devant le cinéma Rex » (na frente do cinema)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "On va au cinéma dimanche à seize heures ?",
+     "exp": "« Seize » soa [sɛz]. « Cinéma » tem acento no último a: ci-né-MA."
+    },
+    {
+     "t": "mc",
+     "q": "Document 2 – Que doit-on apporter pour la fête de la musique ?",
+     "op": [
+      "Un billet d'entrée",
+      "Un pull",
+      "Un instrument de musique",
+      "Sa voiture"
+     ],
+     "r": 1,
+     "exp": "« Apportez un pull : il fait frais le soir ». O concerto é grátis e carros não são bem-vindos no centro."
+    },
+    {
+     "t": "mc",
+     "q": "Document 2 – Quand a lieu la fête ?",
+     "op": [
+      "Vendredi 21 juin à 8 h",
+      "Samedi 21 juin à 18 h",
+      "Vendredi 18 juin à 21 h",
+      "Vendredi 21 juin, à partir de 18 h"
+     ],
+     "r": 3,
+     "exp": "« Vendredi 21 juin, à partir de 18 h ». Cuidado com troca de números."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Le",
+      "concert",
+      "est",
+      "gratuit",
+      "place",
+      "de",
+      "la",
+      "Mairie"
+     ],
+     "resp": "Le concert est gratuit place de la Mairie",
+     "exp": "« Gratuit » é masculino porque « concert » é masculino. « Place de la Mairie » = praça da Prefeitura."
+    },
+    {
+     "t": "mc",
+     "q": "Document 3 – Combien coûtent un sandwich et une boisson à midi ?",
+     "op": [
+      "6 euros",
+      "3,50 euros",
+      "2 euros",
+      "9,50 euros"
+     ],
+     "r": 0,
+     "exp": "« Midi : sandwich + boisson, 6 € ». 3,50 € é o café da manhã."
+    },
+    {
+     "t": "mc",
+     "q": "Document 3 – Marc veut aller au Café du Port dimanche matin. Que peut-il faire ?",
+     "op": [
+      "Rien : le café est fermé.",
+      "Prendre un petit-déjeuner à 3,50 €",
+      "Boire un café seulement",
+      "Manger un sandwich à midi"
+     ],
+     "r": 0,
+     "exp": "« Fermé le dimanche ». Não há exceção para o café da manhã."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que você come no café da manhã?",
+     "frase": "Qu'est-ce que tu manges au petit-déjeuner ?",
+     "modelo": "Au petit-déjeuner, je mange du pain et je bois du lait.",
+     "min": 6,
+     "chave": [
+      "mange",
+      "bois",
+      "prends",
+      "pain",
+      "lait",
+      "café",
+      "crêpes"
+     ],
+     "exp": "Use « Je mange du… / Je bois du… » (partitivo)."
+    },
+    {
+     "t": "mc",
+     "q": "Document 4 – Que faut-il faire avant la cuisson ?",
+     "op": [
+      "Faire cuire la pâte une heure.",
+      "Laisser reposer la pâte pendant une heure.",
+      "Mettre du beurre dans la pâte.",
+      "Acheter trois œufs."
+     ],
+     "r": 1,
+     "exp": "« Laissez reposer la pâte une heure » antes de « faites cuire »."
+    },
+    {
+     "t": "gap",
+     "q": "Pour faire des crêpes, il faut trois ___.",
+     "resp": [
+      "œufs",
+      "oeufs"
+     ],
+     "exp": "Receita: 250 g de farinha, trois œufs e meio litro de leite. Œufs = ovos (o ‹œ› une o e e)."
+    },
+    {
+     "t": "gap",
+     "q": "Mélangez la farine ___ les œufs et le lait.",
+     "resp": [
+      "avec",
+      "et"
+     ],
+     "exp": "Mélanger A avec B = misturar A com B. « Mélangez » é o imperativo de vous."
+    }
+   ]
+  }
+ ]
+}

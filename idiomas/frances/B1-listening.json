@@ -1,0 +1,2869 @@
+{
+ "nivel": "B1",
+ "skill": "listening",
+ "exame": "DELF B1",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Fixer un rendez-vous",
+   "objetivo": "Entender dias, horas e lugares em uma conversa entre amigos e separar o que é combinado do que é cancelado.",
+   "foco": "Futur proche et présent pour les projets; jours et heures; invitations",
+   "explicacao": [
+    "No francês falado, os planos aparecem no presente ou no futur proche: Je vois ma cousine samedi. On va au marché.",
+    "As horas vêm em formato de 24 h na fala: dix-neuf heures = 19 h, quatorze heures = 14 h. Treine a conversão rápida.",
+    "Cuidado com os distratores: o áudio cita vários dias e lugares. A resposta é o que fica combinado no final.",
+    "Falso cognato: 'apporter' é levar/trazer alguma coisa; 'amener' é levar/trazer uma pessoa."
+   ],
+   "vocab": [
+    {
+     "en": "avoir quelque chose de prévu",
+     "pt": "ter algo programado"
+    },
+    {
+     "en": "une fête",
+     "pt": "uma festa"
+    },
+    {
+     "en": "apporter",
+     "pt": "trazer (um objeto)"
+    },
+    {
+     "en": "le terrain",
+     "pt": "o campo"
+    },
+    {
+     "en": "fermé",
+     "pt": "fechado"
+    },
+    {
+     "en": "à côté de",
+     "pt": "ao lado de"
+    },
+    {
+     "en": "la grand-mère",
+     "pt": "a avó"
+    },
+    {
+     "en": "dimanche prochain",
+     "pt": "domingo que vem"
+    }
+   ],
+   "material": {
+    "titulo": "Une fête samedi soir",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Salut Hugo, t'as quelque chose de prévu samedi ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui, je vois ma cousine le matin. On va au marché et après on déjeune ensemble. Pourquoi ?"
+     },
+     {
+      "p": "A",
+      "t": "Je fais une petite fête samedi soir. Ça commence à dix-neuf heures."
+     },
+     {
+      "p": "B",
+      "t": "Ah, super, Léa ! Le déjeuner finit vers quatorze heures, donc je peux venir. C'est chez toi ?"
+     },
+     {
+      "p": "A",
+      "t": "Non, on est chez ma grand-mère, au vingt-quatre rue des Lilas, à côté de la bibliothèque."
+     },
+     {
+      "p": "B",
+      "t": "D'accord. Je peux apporter quelque chose ?"
+     },
+     {
+      "p": "A",
+      "t": "Si tu veux, apporte du jus d'orange. Sandra fait un gâteau et Joe s'occupe de la musique."
+     },
+     {
+      "p": "B",
+      "t": "Pas de problème. Et dimanche ? On joue au foot le matin, non ?"
+     },
+     {
+      "p": "A",
+      "t": "Pas cette semaine, le terrain est fermé. On joue dimanche prochain, à dix heures."
+     },
+     {
+      "p": "B",
+      "t": "Ok. Alors à samedi, dix-neuf heures !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Où a lieu la fête ?",
+     "op": [
+      "chez Hugo",
+      "chez la grand-mère de Léa",
+      "à la bibliothèque",
+      "sur le terrain de foot"
+     ],
+     "r": 1,
+     "exp": "A diz: on est chez ma grand-mère, rue des Lilas. A biblioteca só indica a referência (à côté de) e o campo é do futebol."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Je ___ ma cousine le matin.",
+     "resp": [
+      "vois"
+     ],
+     "exp": "Voir quelqu'un = encontrar alguém (informal). Je vois ma cousine = vou encontrar minha prima.",
+     "ouvir": "Je vois ma cousine le matin."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Sandra fait un gâteau et Joe s'occupe de la musique.",
+     "ouvir": "Sandra fait un gâteau et Joe s'occupe de la musique.",
+     "exp": "Em gâteau, o 'â' soa como /a/ fechado. Faça a ligação suave em 'Joe s'occupe' (/jo s-o-kup/)."
+    },
+    {
+     "t": "mc",
+     "q": "Que va apporter Hugo ?",
+     "op": [
+      "du jus d'orange",
+      "un gâteau",
+      "de la musique",
+      "des boissons chaudes"
+     ],
+     "r": 0,
+     "exp": "Léa pede du jus d'orange. O bolo é de Sandra e a música é de Joe."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "On",
+      "joue",
+      "dimanche",
+      "prochain",
+      "à",
+      "dix",
+      "heures"
+     ],
+     "resp": "On joue dimanche prochain à dix heures",
+     "exp": "Ordem: sujeito + verbo + dia + hora. 'Prochain' vem depois de 'dimanche'.",
+     "alt": [
+      "On joue à dix heures dimanche prochain"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Le déjeuner de Hugo finit vers ___ heures.",
+     "resp": [
+      "quatorze",
+      "14"
+     ],
+     "exp": "Hugo diz: le déjeuner finit vers quatorze heures (14 h). Dix-neuf é a hora da festa."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Qu'est-ce que vous faites ce week-end ?",
+     "modelo": "Samedi, je vois des amis et dimanche, je vais au cinéma.",
+     "min": 5,
+     "chave": [
+      "samedi",
+      "dimanche",
+      "vais",
+      "vois",
+      "fais",
+      "week-end"
+     ],
+     "exp": "Use o présent ou o futur proche: je vais + infinitivo. Indique o dia: samedi, dimanche."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi les amis ne jouent-ils pas au foot ce dimanche ?",
+     "op": [
+      "Hugo est occupé.",
+      "Le terrain est fermé.",
+      "Il pleut.",
+      "Léa organise une fête."
+     ],
+     "r": 1,
+     "exp": "Léa diz: le terrain est fermé. O jogo passa para o domingo seguinte, às 10 h."
+    },
+    {
+     "t": "gap",
+     "q": "La fête commence à ___ heures.",
+     "resp": [
+      "dix-neuf",
+      "19"
+     ],
+     "exp": "Dix-neuf heures = 19 h. Não confunda com dix-sept (17) ou dix-huit (18)."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Un message sur le répondeur",
+   "objetivo": "Entender um recado gravado: motivo da ligação, nova data e o que é preciso fazer.",
+   "foco": "Messages enregistrés; report et annulation; consignes",
+   "explicacao": [
+    "Em recados gravados, o motivo vem logo no começo: je vous appelle car / c'est pour vous dire que...",
+    "Reporter un rendez-vous = adiar; annuler = cancelar. Não confunda com 'retirer'.",
+    "Anote a nova data e a nova hora: o áudio cita a antiga para criar confusão (distrator clássico).",
+    "Consignas comuns: apportez..., rappelez-nous avant..., sinon pas besoin de répondre (caso contrário, não precisa responder)."
+   ],
+   "vocab": [
+    {
+     "en": "reporter",
+     "pt": "adiar"
+    },
+    {
+     "en": "convenir",
+     "pt": "convir, servir"
+    },
+    {
+     "en": "rappeler",
+     "pt": "ligar de volta"
+    },
+    {
+     "en": "une prise de sang",
+     "pt": "um exame de sangue"
+    },
+    {
+     "en": "une carte vitale",
+     "pt": "cartão do seguro de saúde (França)"
+    },
+    {
+     "en": "fermé",
+     "pt": "fechado"
+    },
+    {
+     "en": "avant midi",
+     "pt": "antes do meio-dia"
+    },
+    {
+     "en": "sinon",
+     "pt": "caso contrário"
+    }
+   ],
+   "material": {
+    "titulo": "Cabinet du docteur Perrin",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour madame Morel, c'est Claire, du cabinet du docteur Perrin. Je vous appelle car le docteur est malade. Votre rendez-vous de jeudi quatorze heures trente est donc reporté au lundi suivant, à dix heures quinze."
+     },
+     {
+      "p": "A",
+      "t": "Si cette date ne vous convient pas, rappelez-nous au zéro quatre, soixante-douze, cinquante-cinq, trente et un, zéro huit, avant mercredi midi. Sinon, vous n'avez pas besoin de répondre."
+     },
+     {
+      "p": "A",
+      "t": "N'oubliez pas d'apporter votre carte vitale et les résultats de votre prise de sang. Attention : le cabinet sera fermé vendredi après-midi. Bonne journée, madame, et à lundi !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi Claire téléphone-t-elle à madame Morel ?",
+     "op": [
+      "Pour annuler définitivement le rendez-vous.",
+      "Pour reporter le rendez-vous.",
+      "Pour confirmer l'heure habituelle.",
+      "Pour demander un document."
+     ],
+     "r": 1,
+     "exp": "O médico está doente e a consulta é reporté (adiada). Não é cancelamento definitivo: há uma nova data."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Votre rendez-vous est ___ au lundi suivant.",
+     "resp": [
+      "reporté"
+     ],
+     "exp": "Reporté = adiado (particípio de reporter). Concorda com 'rendez-vous' (masculino singular).",
+     "ouvir": "Votre rendez-vous est reporté au lundi suivant."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Rappelez-nous avant mercredi midi si cette date ne vous convient pas.",
+     "ouvir": "Rappelez-nous avant mercredi midi si cette date ne vous convient pas.",
+     "exp": "Em 'convient' o 'ient' soa /vjẽ/ (nasal) e o 't' final é mudo. Em 'rappelez-nous', o 'ez' soa /e/."
+    },
+    {
+     "t": "mc",
+     "q": "À quelle heure est le nouveau rendez-vous ?",
+     "op": [
+      "14 h 30",
+      "10 h 15",
+      "10 h 50",
+      "15 h 10"
+     ],
+     "r": 1,
+     "exp": "Nova hora: dix heures quinze (10 h 15). 14 h 30 era a hora antiga."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "N'oubliez",
+      "pas",
+      "d'apporter",
+      "votre",
+      "carte",
+      "vitale"
+     ],
+     "resp": "N'oubliez pas d'apporter votre carte vitale",
+     "exp": "Imperativo negativo: ne + verbo + pas, e depois de + infinitivo."
+    },
+    {
+     "t": "gap",
+     "q": "Pour changer de date, la patiente doit rappeler avant mercredi ___.",
+     "resp": [
+      "midi"
+     ],
+     "exp": "Avant mercredi midi = até quarta ao meio-dia. Midi = 12 h."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Vous avez un rendez-vous, mais vous ne pouvez pas venir. Que dites-vous ?",
+     "modelo": "Bonjour, je ne peux pas venir mardi. Est-ce qu'on peut reporter le rendez-vous à jeudi ?",
+     "min": 8,
+     "chave": [
+      "reporter",
+      "annuler",
+      "rendez-vous",
+      "peux",
+      "jeudi",
+      "mardi"
+     ],
+     "exp": "Use: je ne peux pas venir / est-ce qu'on peut reporter... Cuidado: 'annuler' cancela, 'reporter' adia."
+    },
+    {
+     "t": "mc",
+     "q": "Que doit faire madame Morel si la nouvelle date lui convient ?",
+     "op": [
+      "Rappeler avant mercredi.",
+      "Ne rien faire.",
+      "Venir plus tôt.",
+      "Envoyer un message."
+     ],
+     "r": 1,
+     "exp": "Sinon, vous n'avez pas besoin de répondre = se serve, não precisa fazer nada. É um clássico: só se não servir é que se liga."
+    },
+    {
+     "t": "gap",
+     "q": "Elle doit apporter sa carte vitale et les résultats de sa prise de ___.",
+     "resp": [
+      "sang"
+     ],
+     "exp": "Une prise de sang = coleta/exame de sangue. Não confunda com 'prise de courant' (tomada)."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Le français parlé : « j'sais pas »",
+   "objetivo": "Reconhecer o francês falado real: ne omitido, contrações e on no sentido de nous.",
+   "foco": "Omission de 'ne'; élisions familières; 'on' = 'nous'",
+   "explicacao": [
+    "Na fala, o 'ne' costuma sumir: J'ai pas fini = Je n'ai pas fini. Procure o 'pas' para perceber a negação.",
+    "Contrações comuns: j'sais pas (je ne sais pas), t'as (tu as), y'a (il y a), j'suis (je suis), faut pas (il ne faut pas).",
+    "On = nous na conversa: On va au restaurant = Nous allons au restaurant. Também pode ser 'as pessoas'.",
+    "Palavras familiares muito frequentes: boulot (trabalho), resto (restaurante), crevé (exausto), un truc (uma coisa), ça marche (combinado)."
+   ],
+   "vocab": [
+    {
+     "en": "le boulot",
+     "pt": "o trabalho (informal)"
+    },
+    {
+     "en": "crevé",
+     "pt": "exausto (informal)"
+    },
+    {
+     "en": "un truc",
+     "pt": "uma coisa, um negócio"
+    },
+    {
+     "en": "annuler",
+     "pt": "cancelar"
+    },
+    {
+     "en": "ça marche",
+     "pt": "combinado, fechado"
+    },
+    {
+     "en": "direct",
+     "pt": "direto, já"
+    },
+    {
+     "en": "c'est pas grave",
+     "pt": "não tem problema"
+    },
+    {
+     "en": "être libre",
+     "pt": "estar livre"
+    }
+   ],
+   "material": {
+    "titulo": "Une invitation entre amis",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Salut Théo ! Alors, tu viens ce soir ? On va au resto vers vingt heures."
+     },
+     {
+      "p": "B",
+      "t": "Ben, Camille, j'sais pas trop. J'ai pas fini mon rapport et j'suis crevé."
+     },
+     {
+      "p": "A",
+      "t": "Mais c'est pas grave ! On t'attend, on prend le temps. Y'a Marie et Karim aussi."
+     },
+     {
+      "p": "B",
+      "t": "Ah, ils viennent ? Je croyais qu'ils étaient pas libres."
+     },
+     {
+      "p": "A",
+      "t": "Si, si, ils ont annulé leur truc de famille. Du coup, on est six."
+     },
+     {
+      "p": "B",
+      "t": "Bon, écoute, j'ai encore une heure de boulot. Si j'termine avant sept heures et demie, je viens direct."
+     },
+     {
+      "p": "A",
+      "t": "Ça marche. Mais n'oublie pas : le resto ferme la cuisine à vingt-deux heures, alors faut pas arriver trop tard."
+     },
+     {
+      "p": "B",
+      "t": "Promis. J'te rappelle dans une heure, d'accord ?"
+     },
+     {
+      "p": "A",
+      "t": "Parfait. À tout à l'heure, peut-être !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que veut Camille ?",
+     "op": [
+      "Inviter Théo au restaurant.",
+      "Demander de l'aide pour un rapport.",
+      "Annuler la soirée.",
+      "Savoir si Marie est libre."
+     ],
+     "r": 0,
+     "exp": "Ela pergunta: tu viens ce soir? On va au resto. É um convite. O relatório é problema do Théo."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete (francês escrito): Je n'___ pas fini mon rapport.",
+     "resp": [
+      "ai"
+     ],
+     "exp": "Na fala: J'ai pas fini. Na escrita: Je n'ai pas fini (ne + ai + pas).",
+     "ouvir": "J'ai pas fini mon rapport."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Bon, écoute, j'ai encore une heure de boulot.",
+     "ouvir": "Bon, écoute, j'ai encore une heure de boulot.",
+     "exp": "'Bon' é nasal (/bõ/). 'Boulot' tem o som 'ou' (/bu-lo/), como em 'bula'."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi Marie et Karim peuvent-ils venir ?",
+     "op": [
+      "Ils ont annulé un événement familial.",
+      "Ils ont fini leur travail plus tôt.",
+      "Ils ont changé de restaurant.",
+      "Ils ne viennent pas."
+     ],
+     "r": 0,
+     "exp": "Ils ont annulé leur truc de famille. Théo achava que eles não estavam livres, mas Camille responde: Si, si (contradiz uma negação)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Si",
+      "je",
+      "termine",
+      "avant",
+      "sept",
+      "heures",
+      "et",
+      "demie",
+      "je",
+      "viens",
+      "direct"
+     ],
+     "resp": "Si je termine avant sept heures et demie je viens direct",
+     "exp": "Si + présent (condição) + présent. 'Direct' aqui significa 'imediatamente, sem passar por outro lugar'."
+    },
+    {
+     "t": "gap",
+     "q": "Dans « On va au resto », le pronom « on » veut dire « ___ ».",
+     "resp": [
+      "nous"
+     ],
+     "exp": "No francês falado, on = nous. Teria o mesmo sentido: Nous allons au restaurant."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Et vous, qu'est-ce que vous faites ce soir ?",
+     "modelo": "Ce soir, je reste à la maison et je regarde un film.",
+     "min": 6,
+     "chave": [
+      "soir",
+      "maison",
+      "film",
+      "vais",
+      "reste",
+      "regarde",
+      "sors"
+     ],
+     "exp": "Resposta com présent: je reste, je regarde, je sors. Use ce soir no começo."
+    },
+    {
+     "t": "mc",
+     "q": "Que va faire Théo ?",
+     "op": [
+      "Venir s'il termine avant 19 h 30.",
+      "Venir vers 22 heures.",
+      "Ne pas venir.",
+      "Venir avec Marie."
+     ],
+     "r": 0,
+     "exp": "Théo diz: si j'termine avant sept heures et demie, je viens direct. Vingt-deux heures é a hora em que a cozinha fecha."
+    },
+    {
+     "t": "gap",
+     "q": "La cuisine du restaurant ferme à ___ heures.",
+     "resp": [
+      "vingt-deux",
+      "22"
+     ],
+     "exp": "Vingt-deux heures = 22 h. O áudio o diz para avisar que não se deve chegar tarde."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Un entretien d'embauche",
+   "objetivo": "Reconhecer liaisons e enchaînements para entender números, datas e informações em uma entrevista de emprego.",
+   "foco": "Liaisons (vous_avez, ils_ont); enchaînements; vocabulaire du travail",
+   "explicacao": [
+    "Na fala as palavras se ligam: vous_avez soa /vu-za-ve/, ils_ont soa /il-zõ/. Ouça a 'consoante fantasma' para saber quem fala.",
+    "Distinga: ils ont (/il-zõ/, eles têm) x ils sont (/il-sõ/, eles são); on a (/õ-na/) x on est (/õ-nè/).",
+    "Vocabulário do trabalho: un poste (vaga), un salaire (salário), à temps partiel (meio período), à temps plein (tempo integral).",
+    "Falso cognato: 'un stage' é estágio; 'actuellement' = atualmente (não 'na verdade', que é 'en fait')."
+   ],
+   "vocab": [
+    {
+     "en": "un entretien",
+     "pt": "uma entrevista"
+    },
+    {
+     "en": "un poste",
+     "pt": "uma vaga, um cargo"
+    },
+    {
+     "en": "un salaire",
+     "pt": "um salário"
+    },
+    {
+     "en": "à temps partiel",
+     "pt": "meio período"
+    },
+    {
+     "en": "l'expérience",
+     "pt": "a experiência"
+    },
+    {
+     "en": "couramment",
+     "pt": "fluentemente"
+    },
+    {
+     "en": "quitter",
+     "pt": "deixar, sair de"
+    },
+    {
+     "en": "fermer",
+     "pt": "fechar"
+    }
+   ],
+   "material": {
+    "titulo": "Entretien dans une agence",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour monsieur Dubois. Asseyez-vous. Vous avez travaillé trois ans dans une agence de voyages, c'est bien ça ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui, j'ai commencé en septembre deux mille vingt-deux comme assistant. J'organisais des voyages de groupe, surtout pour des écoles."
+     },
+     {
+      "p": "A",
+      "t": "Et pourquoi avez-vous quitté cet emploi ?"
+     },
+     {
+      "p": "B",
+      "t": "L'agence a fermé au mois de mars. Mais j'avais déjà envie de changer, parce que je voulais travailler davantage avec les clients."
+     },
+     {
+      "p": "A",
+      "t": "Très bien. Notre poste est à temps partiel : vingt-quatre heures par semaine, avec un salaire de mille quatre cents euros par mois."
+     },
+     {
+      "p": "B",
+      "t": "Ça me convient. Je suis aussi inscrit à l'université le mardi et le jeudi, donc je suis libre les autres jours."
+     },
+     {
+      "p": "A",
+      "t": "Parfait. Vous parlez quelles langues ?"
+     },
+     {
+      "p": "B",
+      "t": "L'anglais et l'espagnol couramment, et un peu d'italien. Je l'ai appris pendant mes vacances."
+     },
+     {
+      "p": "A",
+      "t": "Excellent. Vous pouvez commencer le premier avril ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui, sans problème."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel type de poste est proposé ?",
+     "op": [
+      "Un temps plein de 35 heures.",
+      "Un temps partiel de 24 heures par semaine.",
+      "Un stage non payé.",
+      "Un contrat le week-end."
+     ],
+     "r": 1,
+     "exp": "A recrutadora diz: à temps partiel, vingt-quatre heures par semaine. 24 h/semana não é tempo integral."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Vous ___ travaillé trois ans dans une agence.",
+     "resp": [
+      "avez"
+     ],
+     "exp": "Vous avez: a liaison faz soar /vu-za-ve/. Não escreva 'vous êtes' nem 'vous a'.",
+     "ouvir": "Vous avez travaillé trois ans dans une agence."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Nous avons un entretien à neuf heures et quart.",
+     "ouvir": "Nous avons un entretien à neuf heures et quart.",
+     "exp": "Liaisons: nous_avons (/nu-za-võ/), un_entretien, neuf_heures (o 'f' soa /v/ em 'neuf heures': /nœ-vœr/)."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le salaire mensuel proposé ?",
+     "op": [
+      "1 400 euros",
+      "1 040 euros",
+      "1 440 euros",
+      "2 400 euros"
+     ],
+     "r": 0,
+     "exp": "Mille quatre cents = 1 400. Cuidado com 'quarante' (40) x 'quatre cents' (400)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Ils",
+      "ont",
+      "deux",
+      "ans",
+      "d'expérience"
+     ],
+     "resp": "Ils ont deux ans d'expérience",
+     "exp": "Ils ont (liaison /il-zõ/) = eles têm. Com 'ils sont' o sentido seria outro."
+    },
+    {
+     "t": "gap",
+     "q": "Le candidat n'est pas libre le mardi et le ___.",
+     "resp": [
+      "jeudi"
+     ],
+     "exp": "Ele está na universidade le mardi et le jeudi. Nos outros dias, está livre."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Quelles langues parlez-vous ?",
+     "modelo": "Je parle portugais, un peu d'anglais et j'apprends le français.",
+     "min": 6,
+     "chave": [
+      "parle",
+      "portugais",
+      "anglais",
+      "français",
+      "langues",
+      "apprends"
+     ],
+     "exp": "Je parle + língua (sem artigo: je parle portugais). Para nível: un peu de, assez bien, couramment."
+    },
+    {
+     "t": "mc",
+     "q": "À partir de quand le candidat peut-il commencer ?",
+     "op": [
+      "le 1er mars",
+      "le 1er mai",
+      "le 1er avril",
+      "le 1er septembre"
+     ],
+     "r": 2,
+     "exp": "A recrutadora pergunta: le premier avril? e ele aceita. Mars é o mês em que a agência fechou, septembre é quando ele começou lá."
+    },
+    {
+     "t": "gap",
+     "q": "Il parle couramment l'anglais et l'___.",
+     "resp": [
+      "espagnol"
+     ],
+     "exp": "L'espagnol: élision (l'). Ele fala também un peu d'italien, que é o distrator."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Donner son avis sur les études",
+   "objetivo": "Identificar a opinião de cada falante e os verbos e expressões que a introduzem.",
+   "foco": "À mon avis, je trouve que, il me semble que, je ne suis pas d'accord",
+   "explicacao": [
+    "Expressões de opinião: à mon avis, je trouve que, je pense que, je crois que, il me semble que (mais prudente).",
+    "Acordo e desacordo: je suis d'accord / je ne suis pas d'accord; tu as raison; ça dépend.",
+    "Atenção: no áudio, um falante pode apresentar uma ideia e depois recusá-la com mais..., par contre, en revanche. A opinião final está depois.",
+    "Falso cognato: 'je préfère' é gostar mais de; 'convaincu' = convencido; 'une bourse' = bolsa de estudos (não 'bolsa' de mão = un sac)."
+   ],
+   "vocab": [
+    {
+     "en": "une bourse",
+     "pt": "uma bolsa (de estudos)"
+    },
+    {
+     "en": "un semestre",
+     "pt": "um semestre"
+    },
+    {
+     "en": "un stage",
+     "pt": "um estágio"
+    },
+    {
+     "en": "convaincu",
+     "pt": "convencido"
+    },
+    {
+     "en": "rassurer",
+     "pt": "tranquilizar"
+    },
+    {
+     "en": "un séjour",
+     "pt": "uma estadia"
+    },
+    {
+     "en": "à l'étranger",
+     "pt": "no exterior"
+    },
+    {
+     "en": "ça dépend",
+     "pt": "depende"
+    }
+   ],
+   "material": {
+    "titulo": "Partir ou rester ?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Marc, tu as décidé pour l'année prochaine ? Moi, je pense partir un semestre à Montréal."
+     },
+     {
+      "p": "B",
+      "t": "À mon avis, c'est une super idée, mais ça coûte cher. Je trouve que l'Europe est plus raisonnable."
+     },
+     {
+      "p": "A",
+      "t": "Il me semble que la bourse couvre presque tout. Et puis, je trouve que parler avec des gens du pays, c'est la meilleure façon d'apprendre."
+     },
+     {
+      "p": "B",
+      "t": "Peut-être, mais moi, je ne suis pas convaincu. Je préfère rester ici et faire un stage en entreprise. Je crois que ça aide plus pour trouver du travail."
+     },
+     {
+      "p": "A",
+      "t": "Ah non, je ne suis pas d'accord. Un séjour à l'étranger, ça se voit sur un CV, et ça rassure les recruteurs."
+     },
+     {
+      "p": "B",
+      "t": "Ça dépend du secteur. Pour moi, l'important, c'est l'expérience pratique. Et puis ma copine reste ici."
+     },
+     {
+      "p": "A",
+      "t": "Ha, voilà la vraie raison ! Enfin, tu fais comme tu veux."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que pense la première personne d'un séjour à l'étranger ?",
+     "op": [
+      "Elle le trouve utile pour apprendre et pour son CV.",
+      "Elle le juge trop coûteux.",
+      "Elle hésite encore.",
+      "Elle préfère faire un stage."
+     ],
+     "r": 0,
+     "exp": "A primeira pessoa diz que falar com os locais é a melhor maneira de aprender e que o CV fica mais confiável. A ideia de custo vem de Marc."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: À mon ___, c'est une super idée.",
+     "resp": [
+      "avis"
+     ],
+     "exp": "À mon avis = na minha opinião. Também se diz: à mon sens, selon moi.",
+     "ouvir": "À mon avis, c'est une super idée."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Il me semble que la bourse couvre presque tout.",
+     "ouvir": "Il me semble que la bourse couvre presque tout.",
+     "exp": "'Semble' tem o 'e' final mudo: /sãbl/. 'Couvre presque' soa /kuv-prɛsk/."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est l'opinion de Marc ?",
+     "op": [
+      "Il veut partir à Montréal.",
+      "Il préfère rester et faire un stage.",
+      "Il trouve l'Europe trop chère.",
+      "Il n'a pas d'avis."
+     ],
+     "r": 1,
+     "exp": "Marc prefere ficar e fazer um estágio. Ele acha a Europa mais razoável que Montréal (não 'cara demais')."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "ne",
+      "suis",
+      "pas",
+      "d'accord",
+      "avec",
+      "toi"
+     ],
+     "resp": "Je ne suis pas d'accord avec toi",
+     "exp": "Para discordar: je ne suis pas d'accord (avec toi). O 'ne' costuma sumir na fala: j'suis pas d'accord."
+    },
+    {
+     "t": "gap",
+     "q": "Pour donner un avis prudent, on peut dire : « Il me ___ que... »",
+     "resp": [
+      "semble"
+     ],
+     "exp": "Il me semble que = parece-me que. Mais suave que 'je pense que'."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Pensez-vous qu'étudier à l'étranger est une bonne idée ? Donnez votre avis.",
+     "modelo": "À mon avis, c'est une bonne idée parce qu'on apprend une langue et on rencontre des gens.",
+     "min": 8,
+     "chave": [
+      "avis",
+      "trouve",
+      "pense",
+      "crois",
+      "semble",
+      "parce",
+      "idée"
+     ],
+     "exp": "Estruture: opinião (à mon avis...) + parce que + razão. Use pelo menos uma expressão de opinião."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle raison personnelle Marc ajoute-t-il ?",
+     "op": [
+      "Sa copine reste ici.",
+      "Il manque d'argent.",
+      "Il a déjà un stage.",
+      "Il n'aime pas le Canada."
+     ],
+     "r": 0,
+     "exp": "Ele diz: et puis ma copine reste ici. É o motivo pessoal, que a amiga chama de 'vraie raison'."
+    },
+    {
+     "t": "gap",
+     "q": "Marc croit qu'un stage aide plus à trouver du ___.",
+     "resp": [
+      "travail"
+     ],
+     "exp": "Je crois que ça aide plus pour trouver du travail. Aqui 'travail' = emprego/trabalho."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Un voyage raconté : bon, alors, du coup",
+   "objetivo": "Entender um relato de viagem e o papel dos marcadores de discurso (bon, alors, en fait, du coup).",
+   "foco": "Marqueurs de discours; récit au passé; conséquence",
+   "explicacao": [
+    "Marcadores muito frequentes na fala: bon (ok, bem), alors (então), en fait (na verdade), du coup (por isso, então), franchement (sinceramente).",
+    "Du coup indica consequência: Mon vol était annulé, du coup j'ai dormi à l'aéroport. Não significa 'de repente'.",
+    "En fait introduz uma correção ou um contraste: Ça a mal commencé, mais en fait c'était pas grave. Falso cognato: 'en fait' não é 'em fato', é 'na verdade'.",
+    "Dica de prova: os marcadores anunciam a ideia importante. Depois de 'mais' e 'en fait', ouça com atenção."
+   ],
+   "vocab": [
+    {
+     "en": "un vol annulé",
+     "pt": "um voo cancelado"
+    },
+    {
+     "en": "rater",
+     "pt": "perder (um trem, uma visita)"
+    },
+    {
+     "en": "le lendemain",
+     "pt": "no dia seguinte"
+    },
+    {
+     "en": "prolonger",
+     "pt": "prolongar"
+    },
+    {
+     "en": "le fleuve",
+     "pt": "o rio (grande)"
+    },
+    {
+     "en": "franchement",
+     "pt": "sinceramente"
+    },
+    {
+     "en": "évidemment",
+     "pt": "claro, evidentemente"
+    },
+    {
+     "en": "regretter",
+     "pt": "lamentar, arrepender-se"
+    }
+   ],
+   "material": {
+    "titulo": "Retour de Lisbonne",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Alors, tu es rentré de Lisbonne ? C'était comment ?"
+     },
+     {
+      "p": "B",
+      "t": "Bon, franchement, c'était super, mais en fait ça a mal commencé. Mon vol était annulé, du coup j'ai dû dormir à l'aéroport."
+     },
+     {
+      "p": "A",
+      "t": "Oh non ! Et tu as pu partir quand ?"
+     },
+     {
+      "p": "B",
+      "t": "Le lendemain matin, à six heures quarante. Alors j'ai raté la première visite de la ville, mais en fait c'était pas si grave."
+     },
+     {
+      "p": "A",
+      "t": "Et l'hôtel ?"
+     },
+     {
+      "p": "B",
+      "t": "Alors là, une bonne surprise : une petite chambre avec vue sur le fleuve, pour soixante-dix euros la nuit. Du coup, j'ai prolongé mon séjour de deux jours."
+     },
+     {
+      "p": "A",
+      "t": "Génial. Et tu as mangé des pasteis de nata ?"
+     },
+     {
+      "p": "B",
+      "t": "Évidemment ! Bon, à la fin j'en mangeais trois par jour... mais en fait, je ne regrette rien."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qu'est-ce qui a mal commencé le voyage ?",
+     "op": [
+      "Son vol a été annulé.",
+      "L'hôtel était complet.",
+      "Il a perdu sa valise.",
+      "Il a raté son train."
+     ],
+     "r": 0,
+     "exp": "Mon vol était annulé, du coup j'ai dû dormir à l'aéroport. Os demais itens não aparecem."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Mon vol était annulé, du ___ j'ai dû dormir à l'aéroport.",
+     "resp": [
+      "coup"
+     ],
+     "exp": "Du coup = por isso. Marcador de consequência muito comum no francês falado.",
+     "ouvir": "Mon vol était annulé, du coup j'ai dû dormir à l'aéroport."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Bon, franchement, c'était super, mais en fait ça a mal commencé.",
+     "ouvir": "Bon, franchement, c'était super, mais en fait ça a mal commencé.",
+     "exp": "Em 'franchement', o 'an' é nasal (/frã-ʃə-mã/). Em 'en fait', o 't' final soa: /ã fɛt/."
+    },
+    {
+     "t": "mc",
+     "q": "Que signifie « du coup » dans « du coup, j'ai prolongé mon séjour » ?",
+     "op": [
+      "par conséquent",
+      "malgré cela",
+      "pourtant",
+      "avant cela"
+     ],
+     "r": 0,
+     "exp": "Du coup = par conséquent (por isso). Ele gostou do hotel, então prolongou a estadia."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "J'ai",
+      "prolongé",
+      "mon",
+      "séjour",
+      "de",
+      "deux",
+      "jours"
+     ],
+     "resp": "J'ai prolongé mon séjour de deux jours",
+     "exp": "Passé composé: j'ai + particípio (prolongé). Prolonger de deux jours = prolongar por dois dias."
+    },
+    {
+     "t": "gap",
+     "q": "La chambre d'hôtel coûte ___ euros la nuit.",
+     "resp": [
+      "soixante-dix",
+      "70"
+     ],
+     "exp": "Soixante-dix = 70 (60 + 10). Não confunda com 'soixante' (60) nem com 'quatre-vingt-dix' (90)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Racontez un voyage ou une sortie récente. C'était comment ?",
+     "modelo": "Le mois dernier, je suis allé à la plage. Bon, il pleuvait, mais en fait c'était sympa.",
+     "min": 9,
+     "chave": [
+      "bon",
+      "alors",
+      "fait",
+      "coup",
+      "voyage",
+      "c'était",
+      "sympa"
+     ],
+     "exp": "Use um marcador (bon, alors, en fait, du coup) e o imparfait para descrever: c'était, il pleuvait."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est l'attitude de la personne qui revient de voyage à la fin ?",
+     "op": [
+      "Il regrette d'avoir mangé trop de pâtisseries.",
+      "Il ne regrette rien.",
+      "Il est déçu de son voyage.",
+      "Il est fâché contre l'hôtel."
+     ],
+     "r": 1,
+     "exp": "Je ne regrette rien. Mesmo comendo três por dia, ele está satisfeito. O tom é bem-humorado."
+    },
+    {
+     "t": "gap",
+     "q": "Le nouveau vol part à six heures ___.",
+     "resp": [
+      "quarante",
+      "40"
+     ],
+     "exp": "Six heures quarante = 6 h 40. Não confunda com quatorze (14) ou quatre-vingts (80).",
+     "ouvir": "Le lendemain matin, à six heures quarante."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Chiffres et dates à toute vitesse",
+   "objetivo": "Entender números, preços, datas e horas ditos rapidamente em uma inscrição por telefone.",
+   "foco": "Nombres 60-99; heures; dates; pourcentages",
+   "explicacao": [
+    "Números franceses que enganam: 70 = soixante-dix, 80 = quatre-vingts, 90 = quatre-vingt-dix, 95 = quatre-vingt-quinze.",
+    "Números de telefone são ditos em pares: 06 78 91 45 12 = zéro six, soixante-dix-huit, quatre-vingt-onze, quarante-cinq, douze.",
+    "Hora: na fala usa-se o formato 24 h (seize heures quarante-cinq = 16 h 45). Datas: le quinze juillet, le premier avril.",
+    "Na prova, os números são cercados de distratores: duas sessões, dois preços, uma data limite. Anote tudo e escolha pela pergunta."
+   ],
+   "vocab": [
+    {
+     "en": "s'inscrire",
+     "pt": "inscrever-se"
+    },
+    {
+     "en": "un stage",
+     "pt": "um curso intensivo, um estágio"
+    },
+    {
+     "en": "une place",
+     "pt": "uma vaga, um lugar"
+    },
+    {
+     "en": "une réduction",
+     "pt": "um desconto"
+    },
+    {
+     "en": "payer par chèque",
+     "pt": "pagar com cheque"
+    },
+    {
+     "en": "un chèque",
+     "pt": "um cheque"
+    },
+    {
+     "en": "noté",
+     "pt": "anotado"
+    },
+    {
+     "en": "la semaine",
+     "pt": "a semana"
+    }
+   ],
+   "material": {
+    "titulo": "Inscription à un stage de danse",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour, école de danse Mouvement, j'écoute."
+     },
+     {
+      "p": "B",
+      "t": "Bonjour, je voudrais m'inscrire au stage d'été, s'il vous plaît."
+     },
+     {
+      "p": "A",
+      "t": "Bien sûr. Il y a deux sessions : du quinze au dix-neuf juillet, ou du vingt-deux au vingt-six. Le prix est de quatre-vingt-quinze euros pour la semaine."
+     },
+     {
+      "p": "B",
+      "t": "Je prends la deuxième. Il reste des places ?"
+     },
+     {
+      "p": "A",
+      "t": "Oui, il en reste dix-sept. Les cours commencent à neuf heures quinze et finissent à seize heures quarante-cinq."
+     },
+     {
+      "p": "B",
+      "t": "Très bien. Je peux payer par chèque ?"
+     },
+     {
+      "p": "A",
+      "t": "Oui, ou par carte. Si vous payez avant le trente juin, vous avez dix pour cent de réduction."
+     },
+     {
+      "p": "B",
+      "t": "Alors je paie avant. Mon numéro, c'est le zéro six, soixante-dix-huit, quatre-vingt-onze, quarante-cinq, douze."
+     },
+     {
+      "p": "A",
+      "t": "Zéro six, soixante-dix-huit, quatre-vingt-onze, quarante-cinq, douze. C'est noté. À bientôt !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle session choisit le client ?",
+     "op": [
+      "du 15 au 19 juillet",
+      "du 22 au 26 juillet",
+      "du 15 au 19 août",
+      "du 22 au 26 août"
+     ],
+     "r": 1,
+     "exp": "Je prends la deuxième = a segunda, de 22 a 26 de julho. A primeira é o distrator."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Le prix est de ___ euros pour la semaine.",
+     "resp": [
+      "quatre-vingt-quinze",
+      "95"
+     ],
+     "exp": "Quatre-vingt-quinze = 95 (4 x 20 + 15). Pode escrever em algarismos: 95.",
+     "ouvir": "Le prix est de quatre-vingt-quinze euros pour la semaine."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Les cours commencent à neuf heures quinze et finissent à seize heures quarante-cinq.",
+     "ouvir": "Les cours commencent à neuf heures quinze et finissent à seize heures quarante-cinq.",
+     "exp": "Neuf heures: o 'f' de 'neuf' soa /v/ antes de 'heures' (/nœ-vœr/). Seize = /sɛz/."
+    },
+    {
+     "t": "mc",
+     "q": "Combien de places restent-ils ?",
+     "op": [
+      "7",
+      "17",
+      "70",
+      "27"
+     ],
+     "r": 1,
+     "exp": "Il en reste dix-sept = 17. Cuidado com dix-sept (17) x dix-huit (18) x soixante-dix (70)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "voudrais",
+      "m'inscrire",
+      "au",
+      "stage",
+      "d'été"
+     ],
+     "resp": "Je voudrais m'inscrire au stage d'été",
+     "exp": "Je voudrais (condicional de politesse) + infinitivo. S'inscrire = inscrever-se."
+    },
+    {
+     "t": "gap",
+     "q": "Pour avoir la réduction de ___ pour cent, il faut payer avant le 30 juin.",
+     "resp": [
+      "dix",
+      "10"
+     ],
+     "exp": "Dix pour cent = 10 %. O dia 30 de junho (trente juin) é a data-limite."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Donnez votre numéro de téléphone et dites votre date de naissance.",
+     "modelo": "Mon numéro est le zéro six, douze, quarante-cinq, soixante-dix-huit, quatre-vingt-dix. Je suis né le quatre mai.",
+     "min": 8,
+     "chave": [
+      "numéro",
+      "zéro",
+      "né",
+      "naissance",
+      "mai",
+      "mon"
+     ],
+     "exp": "Fale o número em pares. Data de nascimento: Je suis né(e) le + dia + mês."
+    },
+    {
+     "t": "mc",
+     "q": "À quelle heure finissent les cours ?",
+     "op": [
+      "à 16 h 45",
+      "à 16 h 15",
+      "à 15 h 45",
+      "à 19 h 15"
+     ],
+     "r": 0,
+     "exp": "Les cours finissent à seize heures quarante-cinq (16 h 45). 9 h 15 é a hora de início."
+    },
+    {
+     "t": "gap",
+     "q": "Pour avoir la réduction, il faut payer avant le ___ juin.",
+     "resp": [
+      "trente",
+      "30"
+     ],
+     "exp": "Avant le trente juin. Cuidado: 'trente' (30) x 'treize' (13).",
+     "ouvir": "Si vous payez avant le trente juin, vous avez dix pour cent de réduction."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Il change d'avis : repérer la bonne réponse",
+   "objetivo": "Acompanhar correções e mudanças de ideia no meio da conversa e escolher a informação final.",
+   "foco": "Auto-corrections (non, pardon…); concession (enfin, mais); transports",
+   "explicacao": [
+    "No oral, o falante se corrige: Vingt kilomètres... non, pardon, douze. A resposta é sempre a versão corrigida.",
+    "Sinais de correção: non, pardon / enfin / je veux dire / plutôt / ou plutôt / en fait.",
+    "Em temas de transporte e meio ambiente: à vélo ou en vélo? Diga à vélo, en voiture, en tram, à pied.",
+    "Palavras de quantidade: la moitié (a metade), un tiers, un quart, presque, environ."
+   ],
+   "vocab": [
+    {
+     "en": "un abonnement",
+     "pt": "uma assinatura, um passe"
+    },
+    {
+     "en": "rembourser",
+     "pt": "reembolsar"
+    },
+    {
+     "en": "la moitié",
+     "pt": "a metade"
+    },
+    {
+     "en": "la route",
+     "pt": "a estrada, o trajeto"
+    },
+    {
+     "en": "le tram",
+     "pt": "o bonde, o VLT"
+    },
+    {
+     "en": "à l'arrivée",
+     "pt": "na chegada"
+    },
+    {
+     "en": "pareil",
+     "pt": "igual"
+    },
+    {
+     "en": "essayer",
+     "pt": "tentar, experimentar"
+    }
+   ],
+   "material": {
+    "titulo": "Comment aller au bureau ?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Tu viens toujours en voiture au bureau ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui, enfin non, plus depuis janvier. Avant, je faisais quarante minutes de route, maintenant je prends le vélo."
+     },
+     {
+      "p": "A",
+      "t": "Ah bon ? Mais il y a vingt kilomètres, non ?"
+     },
+     {
+      "p": "B",
+      "t": "Non, pardon, douze kilomètres seulement. Je mets trente-cinq minutes, c'est presque pareil !"
+     },
+     {
+      "p": "A",
+      "t": "Et quand il pleut ?"
+     },
+     {
+      "p": "B",
+      "t": "Alors là, je prends le tram. Il y a une station à cinq minutes de chez moi, mais pas devant le bureau, donc je marche dix minutes à l'arrivée."
+     },
+     {
+      "p": "A",
+      "t": "Et ça te coûte combien ?"
+     },
+     {
+      "p": "B",
+      "t": "Le tram, c'est cinquante euros par mois avec l'abonnement. Avant, je pensais payer plus cher, mais l'entreprise en rembourse la moitié."
+     },
+     {
+      "p": "A",
+      "t": "Je crois que je vais essayer aussi. Enfin, peut-être au printemps, pas en hiver."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment la personne va-t-elle au bureau en général ?",
+     "op": [
+      "en voiture",
+      "à vélo",
+      "en tram",
+      "à pied"
+     ],
+     "r": 1,
+     "exp": "Maintenant je prends le vélo; o bonde é só quando chove. A voiture era antes de janeiro."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Non, pardon, ___ kilomètres seulement.",
+     "resp": [
+      "douze",
+      "12"
+     ],
+     "exp": "Autocorreção: vinte -> douze. Douze = 12, bem diferente de vingt (20).",
+     "ouvir": "Non, pardon, douze kilomètres seulement."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Je mets trente-cinq minutes, c'est presque pareil.",
+     "ouvir": "Je mets trente-cinq minutes, c'est presque pareil.",
+     "exp": "'Mettre du temps' = levar tempo: je mets 35 minutes. 'Presque' soa /prɛsk/ e 'pareil' /pa-rɛj/."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la distance entre la maison et le bureau ?",
+     "op": [
+      "20 km",
+      "12 km",
+      "35 km",
+      "5 km"
+     ],
+     "r": 1,
+     "exp": "A pessoa corrige: non, pardon, douze kilomètres. Trente-cinq é o tempo em minutos."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "prends",
+      "le",
+      "tram",
+      "quand",
+      "il",
+      "pleut"
+     ],
+     "resp": "Je prends le tram quand il pleut",
+     "exp": "Quand + présent: quand il pleut. Prendre le tram = pegar o bonde."
+    },
+    {
+     "t": "gap",
+     "q": "L'entreprise rembourse la ___ de l'abonnement.",
+     "resp": [
+      "moitié"
+     ],
+     "exp": "La moitié = a metade. Pronúncia: /mwa-tje/.",
+     "ouvir": "L'entreprise rembourse la moitié de l'abonnement."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Comment venez-vous au travail ou à l'école, et combien de temps ça prend ?",
+     "modelo": "Je viens en bus et ça prend environ quarante minutes.",
+     "min": 7,
+     "chave": [
+      "bus",
+      "vélo",
+      "voiture",
+      "métro",
+      "pied",
+      "minutes",
+      "heure",
+      "prend"
+     ],
+     "exp": "Use en + transporte (en bus, en voiture), mas à vélo, à pied. Tempo: ça prend + duração."
+    },
+    {
+     "t": "mc",
+     "q": "Que pense faire l'interlocuteur à la fin ?",
+     "op": [
+      "Acheter un vélo immédiatement.",
+      "Essayer le vélo peut-être au printemps.",
+      "Refuser de changer.",
+      "Prendre le tram toute l'année."
+     ],
+     "r": 1,
+     "exp": "Je vais essayer aussi. Enfin, peut-être au printemps, pas en hiver: ele hesita e adia. 'Enfin' marca a correção."
+    },
+    {
+     "t": "gap",
+     "q": "L'abonnement de tram coûte ___ euros par mois.",
+     "resp": [
+      "cinquante",
+      "50"
+     ],
+     "exp": "Cinquante = 50. A empresa reembolsa metade, mas o preço do passe é 50 €.",
+     "ouvir": "Le tram, c'est cinquante euros par mois avec l'abonnement."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Radio : trier ses déchets",
+   "objetivo": "Entender um programa de rádio sobre meio ambiente: objetivo, resultados e preocupações.",
+   "foco": "Environnement; chiffres et proportions; opinion de l'invité",
+   "explicacao": [
+    "No programa de rádio há um apresentador (que faz perguntas) e um convidado (que responde). Foque nas respostas do convidado.",
+    "Proporções: un tiers (1/3), la moitié (1/2), un quart (1/4), plus de quatre sur dix (mais de 40 %).",
+    "Vocabulário do ambiente: trier (separar o lixo), le composteur, les déchets, réduire, gratuitement.",
+    "Atitude: sceptique (cético), surpris, inquiet. Verbos como reconnaître (admitir) indicam uma limitação."
+   ],
+   "vocab": [
+    {
+     "en": "trier",
+     "pt": "separar, selecionar"
+    },
+    {
+     "en": "les déchets",
+     "pt": "o lixo, os resíduos"
+    },
+    {
+     "en": "un composteur",
+     "pt": "uma composteira"
+    },
+    {
+     "en": "réduire",
+     "pt": "reduzir"
+    },
+    {
+     "en": "sceptique",
+     "pt": "cético"
+    },
+    {
+     "en": "une poubelle",
+     "pt": "uma lixeira"
+    },
+    {
+     "en": "le verre",
+     "pt": "o vidro"
+    },
+    {
+     "en": "un bac",
+     "pt": "um contêiner"
+    }
+   ],
+   "material": {
+    "titulo": "Planète Demain",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour à tous. Aujourd'hui, nous parlons du tri des déchets avec Élodie Marchand, responsable environnement à la mairie de Grenoble. Élodie, la ville vient de lancer une nouvelle campagne. De quoi s'agit-il ?"
+     },
+     {
+      "p": "B",
+      "t": "Bonjour. Depuis septembre, nous distribuons gratuitement un composteur à chaque famille qui habite en maison. L'objectif, c'est de réduire d'un tiers les déchets d'ici deux ans."
+     },
+     {
+      "p": "A",
+      "t": "Mais les gens ont-ils vraiment envie de trier ?"
+     },
+     {
+      "p": "B",
+      "t": "Au début, certains étaient sceptiques. Ils pensaient que ce serait compliqué et que ça sentirait mauvais. Aujourd'hui, plus de quatre familles sur dix l'utilisent, et les résultats nous ont agréablement surpris."
+     },
+     {
+      "p": "A",
+      "t": "Et pour ceux qui vivent en appartement ?"
+     },
+     {
+      "p": "B",
+      "t": "C'est plus difficile, je le reconnais. Nous installons des bacs collectifs dans les cours d'immeuble, mais le chemin est encore long. Ce qui m'inquiète, c'est le verre : trop de bouteilles finissent encore à la poubelle ordinaire."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que distribue la mairie aux familles ?",
+     "op": [
+      "des poubelles jaunes",
+      "des composteurs",
+      "des sacs réutilisables",
+      "des bacs collectifs"
+     ],
+     "r": 1,
+     "exp": "Nous distribuons gratuitement un composteur. Os bacs collectifs são para quem mora em apartamento."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Nous distribuons ___ un composteur à chaque famille.",
+     "resp": [
+      "gratuitement"
+     ],
+     "exp": "Gratuitement = de graça (advérbio em -ment). Não confunda com 'gratuit' (adjetivo).",
+     "ouvir": "Nous distribuons gratuitement un composteur à chaque famille."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "L'objectif, c'est de réduire d'un tiers les déchets d'ici deux ans.",
+     "ouvir": "L'objectif, c'est de réduire d'un tiers les déchets d'ici deux ans.",
+     "exp": "'Tiers' soa /tjɛr/. 'D'ici deux ans' = daqui a dois anos. O 'ch' de 'déchets' soa /ʃ/."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est l'objectif de la campagne ?",
+     "op": [
+      "supprimer tous les déchets",
+      "réduire les déchets d'un tiers",
+      "réduire les déchets de moitié",
+      "doubler le tri du verre"
+     ],
+     "r": 1,
+     "exp": "Réduire d'un tiers (1/3) d'ici deux ans. Moitié (1/2) é um distrator numérico."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Plus",
+      "de",
+      "quatre",
+      "familles",
+      "sur",
+      "dix",
+      "l'utilisent"
+     ],
+     "resp": "Plus de quatre familles sur dix l'utilisent",
+     "exp": "Plus de quatre sur dix = mais de 40 %. L'utilisent: le = le composteur."
+    },
+    {
+     "t": "gap",
+     "q": "Ce qui inquiète Élodie Marchand, c'est le ___.",
+     "resp": [
+      "verre"
+     ],
+     "exp": "Ce qui m'inquiète, c'est le verre. Atenção: 'inquiéter' = preocupar, não 'inquietar'."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Triez-vous vos déchets ? Pourquoi ?",
+     "modelo": "Oui, je trie le papier et le plastique parce que c'est important pour la planète.",
+     "min": 8,
+     "chave": [
+      "trie",
+      "déchets",
+      "plastique",
+      "papier",
+      "planète",
+      "poubelle",
+      "non"
+     ],
+     "exp": "Je trie + material. Justifique com parce que... Se não separa: je ne trie pas parce que..."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle était la réaction de certains habitants au début ?",
+     "op": [
+      "Ils étaient enthousiastes.",
+      "Ils étaient sceptiques.",
+      "Ils étaient en colère.",
+      "Ils étaient indifférents."
+     ],
+     "r": 1,
+     "exp": "Au début, certains étaient sceptiques: achavam complicado. Depois, os resultados surpreenderam positivamente."
+    },
+    {
+     "t": "gap",
+     "q": "Les bacs collectifs sont installés dans les ___ d'immeuble.",
+     "resp": [
+      "cours"
+     ],
+     "exp": "Une cour d'immeuble = pátio do prédio. Plural: les cours (não confundir com 'cours' = aula).",
+     "ouvir": "Nous installons des bacs collectifs dans les cours d'immeuble."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "À la sortie du cinéma",
+   "objetivo": "Distinguir entusiasmo e decepção em uma conversa sobre cultura e entender os argumentos de cada um.",
+   "foco": "Culture; opinion nuancée; concession (certes, mais; par contre)",
+   "explicacao": [
+    "Em críticas culturais, o falante mistura elogios e críticas. Procure mais, par contre, en revanche, certes... mais.",
+    "Verbos de sentimento: adorer, être déçu, être ému (comovido), s'ennuyer (ficar entediado). Falso cognato: 'déçu' = decepcionado.",
+    "Je te l'accorde = admito (concordo com você neste ponto). Não é 'eu te dou'.",
+    "Dica: pergunte-se 'qual é a opinião global de cada pessoa?'. Em geral, a conclusão aparece na última frase de cada um."
+   ],
+   "vocab": [
+    {
+     "en": "déçu",
+     "pt": "decepcionado"
+    },
+    {
+     "en": "une longueur",
+     "pt": "um trecho arrastado"
+    },
+    {
+     "en": "prévisible",
+     "pt": "previsível"
+    },
+    {
+     "en": "ému",
+     "pt": "comovido"
+    },
+    {
+     "en": "toucher",
+     "pt": "comover, tocar"
+    },
+    {
+     "en": "un prix",
+     "pt": "um prêmio"
+    },
+    {
+     "en": "le précédent",
+     "pt": "o anterior"
+    },
+    {
+     "en": "rater",
+     "pt": "perder (um filme)"
+    }
+   ],
+   "material": {
+    "titulo": "Un film de trois heures",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Alors, tu en as pensé quoi ? Moi, j'ai adoré !"
+     },
+     {
+      "p": "B",
+      "t": "Franchement, je suis un peu déçu. L'histoire est belle, mais le film dure presque trois heures. Il y a des longueurs."
+     },
+     {
+      "p": "A",
+      "t": "Oui, c'est vrai, mais l'actrice principale est extraordinaire. Elle a reçu un prix à Cannes."
+     },
+     {
+      "p": "B",
+      "t": "Ça, je te l'accorde. Elle joue très bien. Par contre, la fin est trop prévisible : on devine tout dès la moitié."
+     },
+     {
+      "p": "A",
+      "t": "Moi, je trouve que c'est justement ça qui est touchant. Tu n'as pas été ému ?"
+     },
+     {
+      "p": "B",
+      "t": "Un peu, au début. Mais pas plus. Je préférais le film précédent du réalisateur, celui qui se passait en Bretagne."
+     },
+     {
+      "p": "A",
+      "t": "Ah, celui-là, je l'ai raté. On peut le regarder ce week-end, si tu veux ?"
+     },
+     {
+      "p": "B",
+      "t": "Pourquoi pas. Je prépare le dîner, tu choisis le film et on se met d'accord. Mais pas trois heures, d'accord ?"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle est l'opinion générale de la première personne ?",
+     "op": [
+      "Elle est déçue.",
+      "Elle est enthousiaste.",
+      "Elle est indifférente.",
+      "Elle s'ennuie."
+     ],
+     "r": 1,
+     "exp": "Moi, j'ai adoré! Ela defende o filme (atriz, final comovente). Quem está decepcionado é a segunda pessoa."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Il y a des ___.",
+     "resp": [
+      "longueurs"
+     ],
+     "exp": "Une longueur = trecho longo e cansativo. Falso amigo: não é 'longura'.",
+     "ouvir": "Il y a des longueurs."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "L'histoire est belle, mais le film dure presque trois heures.",
+     "ouvir": "L'histoire est belle, mais le film dure presque trois heures.",
+     "exp": "'Histoire' tem 'h' mudo: /is-twar/. 'Trois' = /trwa/. Mantenha a pausa depois de 'belle'."
+    },
+    {
+     "t": "mc",
+     "q": "Que critique surtout le deuxième interlocuteur ?",
+     "op": [
+      "Le jeu de l'actrice.",
+      "La durée et la fin prévisible.",
+      "La musique.",
+      "Les décors."
+     ],
+     "r": 1,
+     "exp": "Critica a duração (longueurs, 3 h) e a fim prévisible. Sobre a atriz, ele diz que joue très bien."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elle",
+      "a",
+      "reçu",
+      "un",
+      "prix",
+      "à",
+      "Cannes"
+     ],
+     "resp": "Elle a reçu un prix à Cannes",
+     "exp": "Passé composé de recevoir: elle a reçu. Un prix = um prêmio (não 'preço' aqui)."
+    },
+    {
+     "t": "gap",
+     "q": "Le deuxième interlocuteur admet que l'actrice ___ très bien.",
+     "resp": [
+      "joue"
+     ],
+     "exp": "Ça, je te l'accorde: admite o ponto. Elle joue très bien (jouer, 3ª pessoa: joue)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Quel est le dernier film ou la dernière série que vous avez vu ? Qu'en pensez-vous ?",
+     "modelo": "J'ai vu un film d'aventure. Je l'ai trouvé très bien parce que l'histoire était originale.",
+     "min": 9,
+     "chave": [
+      "film",
+      "série",
+      "trouvé",
+      "aimé",
+      "adoré",
+      "histoire",
+      "pense"
+     ],
+     "exp": "Passé composé para o que viu (j'ai vu) e opinião: je l'ai trouvé..., j'ai adoré, j'ai été déçu."
+    },
+    {
+     "t": "mc",
+     "q": "Que proposent-ils de faire ce week-end ?",
+     "op": [
+      "Revoir le même film.",
+      "Regarder le film précédent du réalisateur.",
+      "Aller au festival de Cannes.",
+      "Regarder un autre film de trois heures."
+     ],
+     "r": 1,
+     "exp": "Celui qui se passait en Bretagne, que a primeira pessoa ainda não viu. Mas pas trois heures: querem um filme mais curto."
+    },
+    {
+     "t": "gap",
+     "q": "Le film dure presque ___ heures.",
+     "resp": [
+      "trois",
+      "3"
+     ],
+     "exp": "Presque trois heures = quase 3 h. 'Presque' = quase (não 'presque' = prestes)."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Interview : les ados et les écrans",
+   "objetivo": "Entender uma entrevista de rádio sobre tecnologia, separando fatos, opinião do especialista e conselhos.",
+   "foco": "Technologie; opinion nuancée (je ne dirais pas ça; en revanche); conseils",
+   "explicacao": [
+    "Em entrevistas, o especialista dá dados (trois heures par jour) e depois a sua opinião. A pergunta quase sempre pede a opinião.",
+    "Frases de nuance: Je ne dirais pas ça (eu não diria isso); me paraît inefficace (me parece ineficaz); en revanche (por outro lado).",
+    "Estrutura de conselho: donner l'exemple, discuter plutôt que punir. Plutôt que = em vez de.",
+    "Falso cognato: 'un portable' é o celular (não um laptop); 'contourner' = driblar, não 'contornar' no sentido de enfeitar."
+   ],
+   "vocab": [
+    {
+     "en": "un adolescent",
+     "pt": "um adolescente"
+    },
+    {
+     "en": "un écran",
+     "pt": "uma tela"
+    },
+    {
+     "en": "interdire",
+     "pt": "proibir"
+    },
+    {
+     "en": "contourner",
+     "pt": "driblar, contornar"
+    },
+    {
+     "en": "favorable à",
+     "pt": "favorável a"
+    },
+    {
+     "en": "punir",
+     "pt": "punir"
+    },
+    {
+     "en": "fixer des règles",
+     "pt": "estabelecer regras"
+    },
+    {
+     "en": "le coucher",
+     "pt": "a hora de dormir"
+    }
+   ],
+   "material": {
+    "titulo": "Docteur Bernard sur France Info Jeunes",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Docteur Bernard, vous avez mené une étude sur l'usage du téléphone chez les adolescents. Quel est le résultat principal ?"
+     },
+     {
+      "p": "B",
+      "t": "Les jeunes passent en moyenne trois heures par jour sur leur téléphone, ce qui n'est pas énorme en soi. Ce qui m'a frappé, c'est que la moitié d'entre eux regardent leur écran dans la demi-heure qui précède le coucher."
+     },
+     {
+      "p": "A",
+      "t": "Faut-il interdire les portables à l'école ?"
+     },
+     {
+      "p": "B",
+      "t": "Je ne dirais pas ça. Une interdiction totale me paraît inefficace : les élèves trouvent toujours un moyen de la contourner. En revanche, je suis favorable à des moments sans écran, par exemple pendant les repas."
+     },
+     {
+      "p": "A",
+      "t": "Et les parents, que peuvent-ils faire ?"
+     },
+     {
+      "p": "B",
+      "t": "Donner l'exemple, d'abord ! Je constate que beaucoup d'adultes consultent leur téléphone à table. Ensuite, discuter plutôt que punir. Si un adolescent se sent compris, il est plus facile de fixer des règles."
+     },
+     {
+      "p": "A",
+      "t": "Vous restez donc optimiste ?"
+     },
+     {
+      "p": "B",
+      "t": "Plutôt, oui. La technologie n'est ni bonne ni mauvaise : tout dépend de l'usage qu'on en fait."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qu'est-ce qui a le plus surpris le chercheur ?",
+     "op": [
+      "Les trois heures d'usage par jour.",
+      "La moitié des jeunes regarde l'écran avant de dormir.",
+      "L'usage en classe.",
+      "L'âge des utilisateurs."
+     ],
+     "r": 1,
+     "exp": "Ce qui m'a frappé: a metade olha a tela antes de dormir. Trois heures por dia, ele diz, 'n'est pas énorme en soi'."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Je suis ___ à des moments sans écran.",
+     "resp": [
+      "favorable"
+     ],
+     "exp": "Être favorable à = ser favorável a. O oposto é défavorable ou opposé à.",
+     "ouvir": "Je suis favorable à des moments sans écran."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "La technologie n'est ni bonne ni mauvaise : tout dépend de l'usage.",
+     "ouvir": "La technologie n'est ni bonne ni mauvaise : tout dépend de l'usage.",
+     "exp": "Ni... ni exige 'ne': n'est ni bonne ni mauvaise. 'Dépend' tem 'en' nasal: /de-pã/."
+    },
+    {
+     "t": "mc",
+     "q": "Que pense le docteur d'une interdiction totale du portable à l'école ?",
+     "op": [
+      "Il la réclame.",
+      "Il la juge inefficace.",
+      "Il l'a déjà testée.",
+      "Il n'a pas d'avis."
+     ],
+     "r": 1,
+     "exp": "Une interdiction totale me paraît inefficace. Ele prefere momentos sem tela, mas não uma proibição total."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "faut",
+      "donner",
+      "l'exemple",
+      "aux",
+      "enfants"
+     ],
+     "resp": "Il faut donner l'exemple aux enfants",
+     "exp": "Il faut + infinitivo = é preciso. Donner l'exemple = dar o exemplo."
+    },
+    {
+     "t": "gap",
+     "q": "Selon lui, il vaut mieux discuter plutôt que ___.",
+     "resp": [
+      "punir"
+     ],
+     "exp": "Discuter plutôt que punir = conversar em vez de punir. 'Plutôt que' é seguido de infinitivo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Combien de temps passez-vous sur votre téléphone ? Est-ce trop, à votre avis ?",
+     "modelo": "Je passe environ deux heures par jour sur mon téléphone. À mon avis, ce n'est pas trop.",
+     "min": 9,
+     "chave": [
+      "heures",
+      "téléphone",
+      "avis",
+      "trop",
+      "passe",
+      "écran"
+     ],
+     "exp": "Passer + tempo + sur: je passe deux heures sur mon téléphone. Dê sua opinião: à mon avis, je trouve que."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est l'attitude générale du docteur ?",
+     "op": [
+      "Pessimiste et inquiète.",
+      "Plutôt optimiste et nuancée.",
+      "Indifférente.",
+      "Très critique envers les parents."
+     ],
+     "r": 1,
+     "exp": "Vous restez optimiste? Plutôt, oui. Ele critica um comportamento dos adultos, mas não é 'très critique': aconselha dialogar."
+    },
+    {
+     "t": "gap",
+     "q": "Beaucoup d'adultes consultent leur téléphone à ___.",
+     "resp": [
+      "table"
+     ],
+     "exp": "À table = durante a refeição. Ele cita isso como exemplo de mau modelo.",
+     "ouvir": "Je constate que beaucoup d'adultes consultent leur téléphone à table."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Radio santé : bien dormir",
+   "objetivo": "Entender conselhos e recomendações em um programa sobre saúde, com números e horários.",
+   "foco": "Santé; conseils (il faut, je recommande, mieux vaut); heures",
+   "explicacao": [
+    "Conselhos aparecem com: il faut, il vaut mieux, je recommande de, ne... pas après... Preste atenção às horas e aos limites (au moins, jusqu'à, avant).",
+    "Contraste: Certaines personnes... d'autres... Opinião dividida; a resposta é geralmente 'ça dépend'.",
+    "Falso cognato: 'une médecin' = a médica (o curso é 'médecine'); 'un médicament' é remédio (não 'medicamento' como substância).",
+    "Dica de prova: o especialista reformula a dúvida do apresentador. Compare a pergunta com o que diz sobre 'en moyenne' e 'idéalement'."
+   ],
+   "vocab": [
+    {
+     "en": "le sommeil",
+     "pt": "o sono"
+    },
+    {
+     "en": "se sentir reposé",
+     "pt": "sentir-se descansado"
+    },
+    {
+     "en": "la fatigue",
+     "pt": "o cansaço"
+    },
+    {
+     "en": "réviser",
+     "pt": "revisar, estudar para a prova"
+    },
+    {
+     "en": "contre-productif",
+     "pt": "contraproducente"
+    },
+    {
+     "en": "un remède",
+     "pt": "um remédio, uma solução"
+    },
+    {
+     "en": "régulier",
+     "pt": "regular"
+    },
+    {
+     "en": "se lever",
+     "pt": "levantar-se"
+    }
+   ],
+   "material": {
+    "titulo": "Bien dans sa vie",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Aujourd'hui, parlons du sommeil. Camille Roux, vous êtes médecin du sport. On dit qu'il faut dormir huit heures par nuit : est-ce vrai ?"
+     },
+     {
+      "p": "B",
+      "t": "C'est une moyenne. Certaines personnes ont besoin de sept heures, d'autres de neuf. L'important, c'est de se sentir reposé le matin. En revanche, en dessous de six heures, la fatigue s'accumule."
+     },
+     {
+      "p": "A",
+      "t": "Beaucoup d'étudiants dorment peu, surtout avant les examens."
+     },
+     {
+      "p": "B",
+      "t": "Oui, et c'est une erreur. Réviser jusqu'à deux heures du matin, c'est contre-productif : la mémoire fonctionne mieux après une bonne nuit. Je recommande plutôt d'arrêter de travailler une heure avant le coucher."
+     },
+     {
+      "p": "A",
+      "t": "Et le café ?"
+     },
+     {
+      "p": "B",
+      "t": "Pas après quatorze heures, car il reste longtemps dans le corps. Et attention : le sport le soir est excellent, mais pas juste avant de dormir. Idéalement, il faut finir au moins deux heures avant."
+     },
+     {
+      "p": "A",
+      "t": "Un dernier conseil ?"
+     },
+     {
+      "p": "B",
+      "t": "Gardez des horaires réguliers, même le week-end. Se lever à la même heure, c'est le meilleur remède, bien plus efficace que les médicaments."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Selon la médecin, de combien d'heures de sommeil a-t-on besoin ?",
+     "op": [
+      "Exactement huit heures.",
+      "Cela dépend des personnes.",
+      "Toujours neuf heures.",
+      "Six heures suffisent."
+     ],
+     "r": 1,
+     "exp": "C'est une moyenne: certains sept heures, d'autres neuf. Em dessous de six heures, o cansaço se acumula."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Réviser jusqu'à deux heures du matin, c'est ___.",
+     "resp": [
+      "contre-productif",
+      "contreproductif",
+      "contre productif"
+     ],
+     "exp": "Contre-productif = contraproducente. A memória funciona melhor depois de uma boa noite de sono.",
+     "ouvir": "Réviser jusqu'à deux heures du matin, c'est contre-productif."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Gardez des horaires réguliers, même le week-end.",
+     "ouvir": "Gardez des horaires réguliers, même le week-end.",
+     "exp": "'Réguliers' soa /re-gy-lje/. Atenção ao 'u' francês (como o 'i' com lábios arredondados) em 'régulier'."
+    },
+    {
+     "t": "mc",
+     "q": "À partir de quand faut-il éviter le café ?",
+     "op": [
+      "après 12 h",
+      "après 14 h",
+      "après 16 h",
+      "après le dîner"
+     ],
+     "r": 1,
+     "exp": "Pas après quatorze heures. Ele dá esse limite porque o café permanece muito tempo no corpo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "faut",
+      "finir",
+      "le",
+      "sport",
+      "deux",
+      "heures",
+      "avant",
+      "de",
+      "dormir"
+     ],
+     "resp": "Il faut finir le sport deux heures avant de dormir",
+     "exp": "Il faut + infinitivo; finir le sport = terminar o exercício; avant de + infinitivo."
+    },
+    {
+     "t": "gap",
+     "q": "Pour la mémoire, mieux vaut une bonne ___ que réviser très tard.",
+     "resp": [
+      "nuit"
+     ],
+     "exp": "Mieux vaut... que = é melhor... do que. La mémoire fonctionne mieux après une bonne nuit."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Combien d'heures dormez-vous en général ? Est-ce suffisant ?",
+     "modelo": "Je dors environ sept heures par nuit et je pense que c'est suffisant.",
+     "min": 9,
+     "chave": [
+      "dors",
+      "heures",
+      "nuit",
+      "suffisant",
+      "dormir",
+      "fatigué"
+     ],
+     "exp": "Dormir: je dors, tu dors, il dort. Para dar opinião: je pense que c'est suffisant / ce n'est pas assez."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le meilleur remède pour bien dormir, selon elle ?",
+     "op": [
+      "Prendre des médicaments.",
+      "Se lever à la même heure chaque jour.",
+      "Faire du sport juste avant le coucher.",
+      "Dormir plus le week-end."
+     ],
+     "r": 1,
+     "exp": "Se lever à la même heure, c'est le meilleur remède, mieux que les médicaments. Ela pede horários regulares, mesmo no fim de semana."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut arrêter de travailler ___ heure avant de se coucher.",
+     "resp": [
+      "une",
+      "1"
+     ],
+     "exp": "Je recommande d'arrêter de travailler une heure avant le coucher. Une heure (feminino).",
+     "ouvir": "Je recommande plutôt d'arrêter de travailler une heure avant le coucher."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Débat : le télétravail",
+   "objetivo": "Reconhecer acordo, desacordo, ironia e dúvida em um debate com três pessoas.",
+   "foco": "Attitudes du locuteur; ironie; compromis; je doute que",
+   "explicacao": [
+    "No debate, cada pessoa tem uma posição. Anote quem diz sim, quem diz não e quem propõe um compromisso.",
+    "Acordo: là, je suis d'accord; tu as raison. Desacordo: je ne suis pas sûr(e); je doute que... (+ subjonctif).",
+    "Ironia: o falante diz o contrário do que pensa. Ex.: quelle perte énorme pour l'humanité! (sobre o café na máquina) mostra brincadeira.",
+    "Falso cognato: 'sensible' = sensível; 'actuellement' = atualmente. 'Un compromis' = acordo intermediário."
+   ],
+   "vocab": [
+    {
+     "en": "le télétravail",
+     "pt": "o trabalho remoto"
+    },
+    {
+     "en": "isolé",
+     "pt": "isolado"
+    },
+    {
+     "en": "un compromis",
+     "pt": "um meio-termo"
+    },
+    {
+     "en": "la direction",
+     "pt": "a diretoria"
+    },
+    {
+     "en": "à condition de",
+     "pt": "com a condição de"
+    },
+    {
+     "en": "douter",
+     "pt": "duvidar"
+    },
+    {
+     "en": "rigoler",
+     "pt": "rir, brincar"
+    },
+    {
+     "en": "naître",
+     "pt": "nascer"
+    }
+   ],
+   "material": {
+    "titulo": "Travailler chez soi ?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Alors, le télétravail cinq jours par semaine, c'est l'idéal, non ?"
+     },
+     {
+      "p": "B",
+      "t": "Pour moi, oui, clairement. Je gagne deux heures de transport par jour et je suis plus efficace chez moi."
+     },
+     {
+      "p": "C",
+      "t": "Hum, je ne suis pas sûre... Moi, je me sens vite isolée. Sans mes collègues, je perds l'envie."
+     },
+     {
+      "p": "B",
+      "t": "Ah oui, bien sûr, la machine à café, quelle perte énorme pour l'humanité !"
+     },
+     {
+      "p": "C",
+      "t": "Tu rigoles, mais les idées naissent dans ces moments-là."
+     },
+     {
+      "p": "A",
+      "t": "Je comprends les deux points de vue. Personnellement, trois jours à la maison me semblent un bon compromis."
+     },
+     {
+      "p": "B",
+      "t": "Trois jours... pourquoi pas, mais à condition de choisir soi-même les jours."
+     },
+     {
+      "p": "C",
+      "t": "Là, je suis d'accord. Par contre, l'entreprise doit aussi payer une partie de la connexion internet."
+     },
+     {
+      "p": "A",
+      "t": "Bon, alors on propose ça à la direction ?"
+     },
+     {
+      "p": "B",
+      "t": "Si vous voulez. Mais je doute qu'ils acceptent, honnêtement."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que pense B du télétravail à cent pour cent ?",
+     "op": [
+      "Il y est favorable.",
+      "Il le refuse.",
+      "Il hésite.",
+      "Il veut moins de jours."
+     ],
+     "r": 0,
+     "exp": "Pour moi, oui, clairement: ganha tempo de transporte e é mais eficiente. Quem tem dúvida é C."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Je ___ suis pas sûre.",
+     "resp": [
+      "ne"
+     ],
+     "exp": "Je ne suis pas sûre: negação em duas partes. Sûre (com e) indica que quem fala é uma mulher.",
+     "ouvir": "Je ne suis pas sûre."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Je comprends les deux points de vue.",
+     "ouvir": "Je comprends les deux points de vue.",
+     "exp": "'Comprends' é nasal (/kõ-prã/); o 's' final é mudo. Ritmo tranquilo, sem pausas."
+    },
+    {
+     "t": "mc",
+     "q": "Que veut dire B avec « quelle perte énorme pour l'humanité » ?",
+     "op": [
+      "Il est sincèrement triste.",
+      "Il est ironique.",
+      "Il est en colère.",
+      "Il hésite."
+     ],
+     "r": 1,
+     "exp": "Ironia: ele exagera de propósito sobre a máquina de café. C responde: Tu rigoles (você está brincando)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Trois",
+      "jours",
+      "me",
+      "semblent",
+      "un",
+      "bon",
+      "compromis"
+     ],
+     "resp": "Trois jours me semblent un bon compromis",
+     "exp": "Sujeito plural (trois jours) = verbo plural (semblent). Un compromis = meio-termo."
+    },
+    {
+     "t": "gap",
+     "q": "B accepte trois jours à condition de choisir soi-même les ___.",
+     "resp": [
+      "jours"
+     ],
+     "exp": "À condition de + infinitivo (choisir). Condição: escolher ele mesmo os dias."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Préférez-vous travailler à la maison ou au bureau ? Pourquoi ?",
+     "modelo": "Je préfère travailler à la maison parce que je suis plus concentré, mais j'aime voir mes collègues.",
+     "min": 10,
+     "chave": [
+      "préfère",
+      "maison",
+      "bureau",
+      "parce",
+      "collègues",
+      "télétravail"
+     ],
+     "exp": "Je préfère + infinitivo + parce que. Use mais ou en revanche para nuançar."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est l'attitude de B à la fin ?",
+     "op": [
+      "Il est optimiste.",
+      "Il est sceptique.",
+      "Il est furieux.",
+      "Il est reconnaissant."
+     ],
+     "r": 1,
+     "exp": "Je doute qu'ils acceptent = duvido que aceitem. Atitude cética. Note 'honnêtement' antes: ele é sincero."
+    },
+    {
+     "t": "gap",
+     "q": "C demande aussi que l'entreprise paie une partie de la connexion ___.",
+     "resp": [
+      "internet"
+     ],
+     "exp": "Par contre, l'entreprise doit aussi payer une partie de la connexion internet. Por contre = em compensação.",
+     "ouvir": "Par contre, l'entreprise doit aussi payer une partie de la connexion internet."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Interview : changer de vie",
+   "objetivo": "Entender as intenções e os motivos de uma pessoa em uma entrevista longa e descartar os distratores.",
+   "foco": "Intention du locuteur; pas pour... mais pour...; regret et choix",
+   "explicacao": [
+    "A pergunta 'pourquoi dit-il cela?' pede a intenção. Procure expressões: pour que, afin de, je voulais, j'aimerais.",
+    "Estrutura pegadinha: Pas pour faire de la publicité, mais pour que les jeunes comprennent... A primeira parte é o distrator; a intenção real vem depois do 'mais'.",
+    "Mudança de opinião: Il a changé d'avis quand... Preste atenção a quem muda e por quê.",
+    "Falso cognato: 'un ingénieur' é engenheiro; 'la fortune' = riqueza; 'je ne vais pas vous mentir' = não vou mentir."
+   ],
+   "vocab": [
+    {
+     "en": "un atelier",
+     "pt": "uma oficina"
+    },
+    {
+     "en": "bricoler",
+     "pt": "fazer pequenos consertos"
+    },
+    {
+     "en": "changer d'avis",
+     "pt": "mudar de ideia"
+    },
+    {
+     "en": "un projet",
+     "pt": "um projeto"
+    },
+    {
+     "en": "gérer",
+     "pt": "gerenciar"
+    },
+    {
+     "en": "jeter",
+     "pt": "jogar fora"
+    },
+    {
+     "en": "quitte à",
+     "pt": "mesmo que isso signifique"
+    },
+    {
+     "en": "se tromper",
+     "pt": "errar"
+    }
+   ],
+   "material": {
+    "titulo": "De l'ingénieur au réparateur",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Samir, vous avez ouvert un atelier de réparation de vélos il y a un an. Pourquoi ce choix, alors que vous étiez ingénieur ?"
+     },
+     {
+      "p": "B",
+      "t": "Disons que j'en avais assez de passer mes journées devant un écran. J'ai toujours bricolé, et je voulais un métier où l'on voit le résultat de son travail."
+     },
+     {
+      "p": "A",
+      "t": "Vos amis ont dû vous trouver fou."
+     },
+     {
+      "p": "B",
+      "t": "Certains, oui ! Mon père m'a même dit que c'était une erreur. Mais il a changé d'avis quand il a vu la queue devant la boutique le premier samedi."
+     },
+     {
+      "p": "A",
+      "t": "Vous gagnez correctement votre vie ?"
+     },
+     {
+      "p": "B",
+      "t": "Ce n'est pas la fortune, je ne vais pas vous mentir. Je gagne environ la moitié de mon ancien salaire. Mais je ne regrette rien, parce que je gère mon temps comme je veux."
+     },
+     {
+      "p": "A",
+      "t": "Et vous avez des projets ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui, j'aimerais organiser des ateliers pour apprendre aux enfants à réparer eux-mêmes. Pas pour faire de la publicité, mais pour que les jeunes comprennent qu'on peut réparer plutôt que jeter."
+     },
+     {
+      "p": "A",
+      "t": "Un message pour ceux qui hésitent à changer de vie ?"
+     },
+     {
+      "p": "B",
+      "t": "Surtout, ne pas attendre d'être sûr à cent pour cent. On ne l'est jamais. Il faut tester, quitte à se tromper."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi Samir a-t-il changé de métier ?",
+     "op": [
+      "Il a été licencié.",
+      "Pour gagner plus d'argent.",
+      "Il voulait voir le résultat concret de son travail.",
+      "Pour suivre les conseils de son père."
+     ],
+     "r": 2,
+     "exp": "Il voulait un métier où l'on voit le résultat de son travail. O salário caiu pela metade, e o pai era contra."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete: Je gagne environ la ___ de mon ancien salaire.",
+     "resp": [
+      "moitié"
+     ],
+     "exp": "La moitié = a metade. Ele ganha menos, mas está satisfeito.",
+     "ouvir": "Je gagne environ la moitié de mon ancien salaire."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Je ne regrette rien, parce que je gère mon temps comme je veux.",
+     "ouvir": "Je ne regrette rien, parce que je gère mon temps comme je veux.",
+     "exp": "'Gère' soa /ʒɛr/ (g suave). 'Regrette' tem e mudo final: /rə-grɛt/."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle a été la réaction de son père ?",
+     "op": [
+      "Il l'a toujours soutenu.",
+      "Il était contre, puis il a changé d'avis.",
+      "Il est resté opposé.",
+      "Il a financé l'atelier."
+     ],
+     "r": 1,
+     "exp": "Il a changé d'avis quand il a vu la queue devant la boutique. Mudou de opinião por causa do sucesso."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "On",
+      "peut",
+      "réparer",
+      "plutôt",
+      "que",
+      "jeter"
+     ],
+     "resp": "On peut réparer plutôt que jeter",
+     "exp": "Plutôt que + infinitivo. Réparer plutôt que jeter = consertar em vez de jogar fora."
+    },
+    {
+     "t": "gap",
+     "q": "Samir veut organiser des ateliers pour les ___.",
+     "resp": [
+      "enfants"
+     ],
+     "exp": "Ele quer ensinar as crianças a consertar sozinhas (apprendre aux enfants à réparer)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Aimeriez-vous changer de métier ou d'études ? Pourquoi ?",
+     "modelo": "Oui, j'aimerais changer parce que je voudrais un travail plus créatif.",
+     "min": 8,
+     "chave": [
+      "aimerais",
+      "changer",
+      "métier",
+      "travail",
+      "parce",
+      "voudrais",
+      "études"
+     ],
+     "exp": "Use o condicional: j'aimerais, je voudrais. Justifique com parce que ou pour + infinitivo."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi Samir veut-il organiser ces ateliers ?",
+     "op": [
+      "Pour faire de la publicité.",
+      "Pour faire comprendre l'intérêt de réparer.",
+      "Pour gagner plus d'argent.",
+      "Pour trouver des employés."
+     ],
+     "r": 1,
+     "exp": "Pas pour faire de la publicité (distrator!) mais pour que les jeunes comprennent qu'on peut réparer. A intenção real vem depois do 'mais'."
+    },
+    {
+     "t": "gap",
+     "q": "Son conseil : ne pas attendre d'être sûr à ___ pour cent.",
+     "resp": [
+      "cent",
+      "100"
+     ],
+     "exp": "À cent pour cent = 100 %. On ne l'est jamais: nunca se tem certeza total.",
+     "ouvir": "Surtout, ne pas attendre d'être sûr à cent pour cent."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulacre DELF B1 : trois documents",
+   "objetivo": "Fazer um simulado no formato da Compréhension de l'oral do DELF B1: três documentos, QCM de informação, opinião e intenção.",
+   "foco": "Simulation DELF B1 CO; recado, programa de rádio, entrevista",
+   "explicacao": [
+    "Na prova real, cada documento é ouvido duas vezes. Na primeira, entenda o tema; na segunda, procure as respostas.",
+    "Leia as perguntas antes do áudio. Marque a resposta que corresponde ao que o falante diz no fim (correções) e não ao primeiro número ou nome citado.",
+    "Os distratores também aparecem no áudio: horários antigos, opiniões de outra pessoa, ideias negadas com pas pour... mais pour...",
+    "Estratégia: se não souber, elimine opções absurdas e responda. Não deixe questões em branco: não há desconto por erro."
+   ],
+   "vocab": [
+    {
+     "en": "déplacer",
+     "pt": "mudar de lugar, remarcar"
+    },
+    {
+     "en": "un concours",
+     "pt": "um concurso"
+    },
+    {
+     "en": "des travaux",
+     "pt": "obras"
+    },
+    {
+     "en": "un jardin partagé",
+     "pt": "uma horta comunitária"
+    },
+    {
+     "en": "une parcelle",
+     "pt": "um lote, uma parcela"
+    },
+    {
+     "en": "un refuge",
+     "pt": "um abrigo, um refúgio"
+    },
+    {
+     "en": "la facture",
+     "pt": "a fatura (verbo: facturer)"
+    },
+    {
+     "en": "couper (un portable)",
+     "pt": "desligar (um celular)"
+    }
+   ],
+   "material": {
+    "titulo": "Compréhension de l'oral : trois documents",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Document un. Un message sur un répondeur."
+     },
+     {
+      "p": "B",
+      "t": "Bonjour Nadia, c'est Paul. Pour samedi, il y a un changement. Le match de basket n'est plus à quatorze heures, mais à seize heures, parce que la salle est occupée par un concours de danse. Du coup, on se retrouve devant le gymnase à quinze heures trente. Ne prends pas ta voiture : ils font des travaux sur le parking. Rappelle-moi ce soir avant vingt et une heures, mon portable est coupé après."
+     },
+     {
+      "p": "A",
+      "t": "Document deux. Une émission de radio."
+     },
+     {
+      "p": "C",
+      "t": "Marie Lambert, vous coordonnez trois jardins partagés dans le quartier Saint-Michel. Comment ça marche ?"
+     },
+     {
+      "p": "B",
+      "t": "Chaque habitant paie vingt euros par an et cultive une petite parcelle. Ce qui me touche le plus, c'est que des voisins qui ne se parlaient jamais discutent maintenant autour des tomates. Le seul souci, c'est le prix de l'eau, que la mairie facture cher."
+     },
+     {
+      "p": "A",
+      "t": "Document trois. Une interview."
+     },
+     {
+      "p": "C",
+      "t": "Chloé, vous revenez d'un an en Norvège. Pourquoi ce pays ?"
+     },
+     {
+      "p": "B",
+      "t": "Un peu par hasard. J'ai trouvé une association qui cherchait des aides pour un refuge de montagne. Là-bas, le silence m'a étonnée, et un café coûte six euros ! Le plus dur, c'est l'hiver : j'ai failli rentrer en décembre, mais l'équipe m'a soutenue, alors je suis restée."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Document 1. Pourquoi le match de basket est-il déplacé ?",
+     "op": [
+      "La salle est occupée par un autre événement.",
+      "Il va pleuvoir.",
+      "Paul est malade.",
+      "Les joueurs sont en retard."
+     ],
+     "r": 0,
+     "exp": "La salle est occupée par un concours de danse. O horário muda de 14 h para 16 h."
+    },
+    {
+     "t": "mc",
+     "q": "Document 1. À quelle heure Nadia doit-elle retrouver Paul ?",
+     "op": [
+      "à 14 h",
+      "à 15 h 30",
+      "à 16 h",
+      "à 21 h"
+     ],
+     "r": 1,
+     "exp": "On se retrouve devant le gymnase à quinze heures trente. 16 h é a hora do jogo e 21 h é o limite para ligar."
+    },
+    {
+     "t": "gap",
+     "q": "Document 1. Nadia ne doit pas venir en voiture à cause des ___ sur le parking.",
+     "resp": [
+      "travaux"
+     ],
+     "exp": "Ils font des travaux sur le parking. Atenção: 'travaux' (obras) é sempre plural; não é 'trabalhos'.",
+     "ouvir": "Ils font des travaux sur le parking."
+    },
+    {
+     "t": "mc",
+     "q": "Document 2. Combien paie un habitant chaque année ?",
+     "op": [
+      "2 euros",
+      "20 euros",
+      "200 euros",
+      "Rien, c'est gratuit"
+     ],
+     "r": 1,
+     "exp": "Chaque habitant paie vingt euros par an. Vingt (20) x douze (12) x deux (2): cuidado."
+    },
+    {
+     "t": "mc",
+     "q": "Document 2. Qu'est-ce qui plaît le plus à Marie Lambert ?",
+     "op": [
+      "Les grosses récoltes.",
+      "Les rencontres entre voisins.",
+      "Le prix de l'eau.",
+      "Les outils partagés."
+     ],
+     "r": 1,
+     "exp": "Ce qui me touche le plus: vizinhos que nunca se falavam agora conversam. O preço da água é o problema."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça a frase e repita em voz alta.",
+     "frase": "Ce qui me touche le plus, c'est que des voisins discutent autour des tomates.",
+     "ouvir": "Ce qui me touche le plus, c'est que des voisins discutent autour des tomates.",
+     "exp": "Ce qui me touche = o que mais me comove. 'Voisins' soa /vwa-zẽ/ (nasal no fim)."
+    },
+    {
+     "t": "mc",
+     "q": "Document 2. Quel problème Marie Lambert signale-t-elle ?",
+     "op": [
+      "Le manque de parcelles.",
+      "Le manque d'outils.",
+      "Le prix de l'eau.",
+      "Les voisins bruyants."
+     ],
+     "r": 2,
+     "exp": "Le seul souci, c'est le prix de l'eau, que la mairie facture cher."
+    },
+    {
+     "t": "gap",
+     "q": "Document 2. Marie Lambert coordonne ___ jardins partagés.",
+     "resp": [
+      "trois",
+      "3"
+     ],
+     "exp": "Vous coordonnez trois jardins partagés: a apresentadora diz. Quatre é só uma esperança futura (não neste áudio).",
+     "ouvir": "Vous coordonnez trois jardins partagés dans le quartier Saint-Michel."
+    },
+    {
+     "t": "mc",
+     "q": "Document 3. Pourquoi Chloé est-elle allée en Norvège ?",
+     "op": [
+      "Par passion pour le pays.",
+      "Par hasard, grâce à une offre de volontariat.",
+      "Pour apprendre la langue.",
+      "Pour retrouver sa famille."
+     ],
+     "r": 1,
+     "exp": "Un peu par hasard: encontrou uma associação que procurava ajudantes em um refúgio de montanha."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em voz alta.",
+     "frase": "Avez-vous déjà voyagé à l'étranger ? Racontez en deux phrases.",
+     "modelo": "Oui, je suis allé en Argentine l'an dernier. Ce qui m'a le plus étonné, c'était la nourriture.",
+     "min": 10,
+     "chave": [
+      "voyagé",
+      "suis allé",
+      "étranger",
+      "étonné",
+      "pays",
+      "l'an dernier",
+      "jamais"
+     ],
+     "exp": "Passé composé com être: je suis allé(e). Use ce qui m'a étonné(e) para destacar o que mais marcou."
+    },
+    {
+     "t": "mc",
+     "q": "Document 3. Pourquoi Chloé n'est-elle pas rentrée en décembre ?",
+     "op": [
+      "Son billet coûtait trop cher.",
+      "Elle aimait beaucoup l'hiver.",
+      "L'équipe l'a soutenue.",
+      "Elle n'avait plus d'argent."
+     ],
+     "r": 2,
+     "exp": "J'ai failli rentrer en décembre (quase voltei), mais l'équipe m'a soutenue. 'Failli' + infinitivo = quase fez."
+    },
+    {
+     "t": "gap",
+     "q": "Document 3. En Norvège, un café coûte ___ euros.",
+     "resp": [
+      "six",
+      "6"
+     ],
+     "exp": "Un café coûte six euros: surpresa com o custo de vida. Six (6) x seize (16) x soixante (60).",
+     "ouvir": "Un café coûte six euros."
+    }
+   ]
+  }
+ ]
+}

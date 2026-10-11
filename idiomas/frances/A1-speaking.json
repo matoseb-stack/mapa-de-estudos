@@ -1,0 +1,2505 @@
+{
+ "nivel": "A1",
+ "skill": "speaking",
+ "exame": "DELF A1",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Bonjour, je m'appelle...",
+   "objetivo": "Cumprimentar, dizer o nome e perguntar como a pessoa está.",
+   "foco": "Salutations; s'appeler; ça va ?; enchanté(e)",
+   "explicacao": [
+    "Para se apresentar: Bonjour ! Je m'appelle Ana. Enchantée ! (homem diz enchanté, mulher diz enchantée, mas o som é o mesmo).",
+    "Para perguntar o nome: Comment vous appelez-vous ? (formal) ou Tu t'appelles comment ? (com amigos).",
+    "Para saber como a pessoa está: Comment allez-vous ? / Ça va ? Resposta: Ça va bien, merci. Et vous ?",
+    "Despedidas: Au revoir ! À bientôt ! Bonne journée !"
+   ],
+   "vocab": [
+    {
+     "en": "bonjour",
+     "pt": "bom dia; olá"
+    },
+    {
+     "en": "salut",
+     "pt": "oi; tchau (informal)"
+    },
+    {
+     "en": "au revoir",
+     "pt": "tchau"
+    },
+    {
+     "en": "je m'appelle",
+     "pt": "eu me chamo"
+    },
+    {
+     "en": "enchanté(e)",
+     "pt": "prazer"
+    },
+    {
+     "en": "ça va ?",
+     "pt": "tudo bem?"
+    },
+    {
+     "en": "merci",
+     "pt": "obrigado(a)"
+    },
+    {
+     "en": "s'il vous plaît",
+     "pt": "por favor"
+    }
+   ],
+   "material": {
+    "tarefa": "Présentez-vous à l'examinateur : dites bonjour, votre nom et votre prénom. Demandez ensuite comment il va.",
+    "segundos": 30,
+    "frases_uteis": [
+     "Bonjour, je m'appelle...",
+     "Enchanté(e) !",
+     "Comment allez-vous ?",
+     "Et vous ?"
+    ],
+    "modelo": "Bonjour, madame. Je m'appelle Ana Souza. Enchantée ! Comment allez-vous ?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "A examinadora diz: « Bonjour, comment vous appelez-vous ? ». Qual é a melhor resposta?",
+     "op": [
+      "J'ai vingt ans.",
+      "Ça va bien, merci.",
+      "Je m'appelle Ana Souza.",
+      "Au revoir !"
+     ],
+     "r": 2,
+     "exp": "A pergunta é sobre o nome. A resposta é Je m'appelle + nome."
+    },
+    {
+     "t": "gap",
+     "q": "Je ___ Pedro. (me chamo)",
+     "resp": [
+      "m'appelle",
+      "me appelle"
+     ],
+     "exp": "Je m'appelle = eu me chamo. Escreve-se com apóstrofo: m'appelle."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Bonjour, je m'appelle Ana. Enchantée !",
+     "exp": "Em bonjour, o « on » é nasal: não pronuncie o N. O j soa como em « janela ». O r é suave, no fundo da garganta."
+    },
+    {
+     "t": "mc",
+     "q": "O examinador pergunta: « Comment ça va ? ». O que você responde?",
+     "op": [
+      "Je m'appelle Ça va.",
+      "Oui, je suis Ana.",
+      "Il est dix heures.",
+      "Ça va bien, merci. Et vous ?"
+     ],
+     "r": 3,
+     "exp": "Responda ao bem-estar e devolva a pergunta: Et vous ?"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Enchanté",
+      "de",
+      "faire",
+      "votre",
+      "connaissance"
+     ],
+     "resp": "Enchanté de faire votre connaissance",
+     "exp": "Enchanté de faire votre connaissance é uma forma mais formal de dizer « prazer em conhecê-lo »."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga seu nome em francês.",
+     "frase": "Bonjour, comment vous appelez-vous ?",
+     "modelo": "Bonjour, je m'appelle Ana Souza.",
+     "min": 3,
+     "chave": [
+      "m'appelle",
+      "appelle",
+      "je",
+      "suis",
+      "nom"
+     ],
+     "exp": "Diga: Je m'appelle + seu nome. Pode acrescentar Enchanté(e)."
+    },
+    {
+     "t": "gap",
+     "q": "Je m'appelle Ana. ___ vous ? (e o senhor/a senhora?)",
+     "resp": [
+      "Et"
+     ],
+     "exp": "Et vous ? devolve a pergunta ao examinador."
+    },
+    {
+     "t": "mc",
+     "q": "Você não entendeu o que o examinador disse. O que falar?",
+     "op": [
+      "Au revoir, monsieur.",
+      "Pouvez-vous répéter, s'il vous plaît ?",
+      "Je m'appelle répéter.",
+      "Merci beaucoup, bonne soirée."
+     ],
+     "r": 1,
+     "exp": "Pouvez-vous répéter, s'il vous plaît ? é o pedido educado para repetir."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga como você está.",
+     "frase": "Comment ça va ?",
+     "modelo": "Ça va très bien, merci. Et vous ?",
+     "min": 3,
+     "chave": [
+      "ça va",
+      "ca va",
+      "bien",
+      "merci",
+      "et vous",
+      "et toi"
+     ],
+     "exp": "Ça va bien, merci. Et vous ? Na pronúncia, « ça » soa como « sá »."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Je suis brésilien(ne)",
+   "objetivo": "Dizer idade, nacionalidade e onde mora.",
+   "foco": "avoir pour l'âge; nationalités; habiter à / en / au",
+   "explicacao": [
+    "Idade usa o verbo avoir (ter): J'ai dix-huit ans. Nunca diga « Je suis dix-huit ans ».",
+    "Nacionalidade: Je suis brésilien (homem) / Je suis brésilienne (mulher). O feminino acrescenta -ne e o n final passa a soar.",
+    "Origem: Je viens du Brésil / de France. Moradia: J'habite à São Paulo (cidade), au Brésil (país masculino), en France (país feminino).",
+    "Perguntas: Quel âge avez-vous ? Quelle est votre nationalité ? Où habitez-vous ?"
+   ],
+   "vocab": [
+    {
+     "en": "avoir ... ans",
+     "pt": "ter ... anos"
+    },
+    {
+     "en": "brésilien / brésilienne",
+     "pt": "brasileiro / brasileira"
+    },
+    {
+     "en": "français(e)",
+     "pt": "francês / francesa"
+    },
+    {
+     "en": "j'habite à",
+     "pt": "eu moro em (cidade)"
+    },
+    {
+     "en": "je viens de",
+     "pt": "eu venho de"
+    },
+    {
+     "en": "un pays",
+     "pt": "um país"
+    },
+    {
+     "en": "une ville",
+     "pt": "uma cidade"
+    },
+    {
+     "en": "la nationalité",
+     "pt": "a nacionalidade"
+    }
+   ],
+   "material": {
+    "tarefa": "Dites votre nom, votre âge, votre nationalité et la ville où vous habitez.",
+    "segundos": 35,
+    "frases_uteis": [
+     "J'ai ... ans.",
+     "Je suis brésilien(ne).",
+     "J'habite à...",
+     "Je viens du Brésil."
+    ],
+    "modelo": "Je m'appelle Ana. J'ai dix-sept ans. Je suis brésilienne et j'habite à Recife, au Brésil."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "O examinador pergunta: « Quel âge avez-vous ? ». Qual resposta está correta?",
+     "op": [
+      "Je suis vingt ans.",
+      "J'ai vingt ans.",
+      "Je viens vingt ans.",
+      "Je m'appelle vingt ans."
+     ],
+     "r": 1,
+     "exp": "Em francês a idade usa avoir: J'ai vingt ans."
+    },
+    {
+     "t": "gap",
+     "q": "J'___ dix-huit ans.",
+     "resp": [
+      "ai"
+     ],
+     "exp": "J'ai = eu tenho. A idade usa avoir, não être."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "J'ai dix-sept ans et j'habite à Recife.",
+     "exp": "Em « j'ai », o som é « jê ». Em « dix-sept », o x vira s e o p não se pronuncia: « di-sét »."
+    },
+    {
+     "t": "mc",
+     "q": "Você é mulher e brasileira. Como responder a « Quelle est votre nationalité ? »",
+     "op": [
+      "Je suis brésilien.",
+      "J'ai brésilienne.",
+      "Je suis brésilienne.",
+      "Je viens brésilienne."
+     ],
+     "r": 2,
+     "exp": "No feminino: brésilienne (com -ne)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "viens",
+      "du",
+      "Brésil"
+     ],
+     "resp": "Je viens du Brésil",
+     "exp": "Brésil é masculino: de + le = du. Je viens du Brésil."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga onde você mora.",
+     "frase": "Où habitez-vous ?",
+     "modelo": "J'habite à São Paulo, au Brésil.",
+     "min": 3,
+     "chave": [
+      "j'habite",
+      "habite",
+      "à",
+      "au",
+      "brésil",
+      "vis"
+     ],
+     "exp": "Use J'habite à + cidade. Ex.: J'habite à Recife."
+    },
+    {
+     "t": "gap",
+     "q": "Elle habite ___ Brésil. (no)",
+     "resp": [
+      "au"
+     ],
+     "exp": "Brésil é masculino: au Brésil. Para países femininos: en France."
+    },
+    {
+     "t": "mc",
+     "q": "Como dizer « Eu venho do Brasil »?",
+     "op": [
+      "Je viens à Brésil.",
+      "Je viens de le Brésil.",
+      "Je vais du Brésil.",
+      "Je viens du Brésil."
+     ],
+     "r": 3,
+     "exp": "de + le = du. Nunca « de le »."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga sua nacionalidade e sua idade.",
+     "frase": "Quelle est votre nationalité et quel âge avez-vous ?",
+     "modelo": "Je suis brésilien. J'ai vingt ans.",
+     "min": 4,
+     "chave": [
+      "suis",
+      "brésilien",
+      "brésilienne",
+      "nationalité",
+      "j'ai",
+      "ans"
+     ],
+     "exp": "Combine: Je suis brésilien(ne). J'ai ... ans."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Tu ou vous ?",
+   "objetivo": "Escolher entre tu e vous conforme a situação.",
+   "foco": "tutoiement / vouvoiement; accord du verbe",
+   "explicacao": [
+    "Tu é informal: use com amigos, família, crianças e colegas jovens. Vous é formal: use com desconhecidos, adultos, vendedores e com o examinador do DELF.",
+    "O verbo muda: tu t'appelles / vous vous appelez; tu as / vous avez; tu es / vous êtes.",
+    "Vous também é o plural de tu. Na prova, chame o examinador de monsieur ou madame e use sempre vous.",
+    "Cuidado: misturar tu e vous na mesma frase soa estranho. Escolha um e mantenha."
+   ],
+   "vocab": [
+    {
+     "en": "tu",
+     "pt": "você (informal)"
+    },
+    {
+     "en": "vous",
+     "pt": "o senhor / a senhora; vocês"
+    },
+    {
+     "en": "monsieur",
+     "pt": "senhor"
+    },
+    {
+     "en": "madame",
+     "pt": "senhora"
+    },
+    {
+     "en": "excusez-moi",
+     "pt": "com licença; desculpe"
+    },
+    {
+     "en": "pardon",
+     "pt": "desculpe"
+    },
+    {
+     "en": "tu t'appelles comment ?",
+     "pt": "como você se chama?"
+    },
+    {
+     "en": "comment vous appelez-vous ?",
+     "pt": "como o senhor/a senhora se chama?"
+    }
+   ],
+   "material": {
+    "tarefa": "Imaginez : vous parlez à l'examinateur, puis à un ami. Répondez poliment à l'examinateur avec « vous » et posez-lui une question.",
+    "segundos": 35,
+    "frases_uteis": [
+     "Et vous, monsieur ?",
+     "Vous habitez ici ?",
+     "Excusez-moi, madame...",
+     "Salut ! Tu vas bien ?"
+    ],
+    "modelo": "Je vais bien, merci. Et vous, madame ? Vous habitez à Paris ? Ah, d'accord. Merci beaucoup."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Você quer perguntar o nome ao examinador. Qual frase é adequada?",
+     "op": [
+      "Comment tu t'appelles ?",
+      "Quel est ton nom ?",
+      "Comment vous appelez-vous, monsieur ?",
+      "Salut, tu es qui ?"
+     ],
+     "r": 2,
+     "exp": "Com o examinador, use sempre vous."
+    },
+    {
+     "t": "gap",
+     "q": "Madame, vous ___ française ? (êtes)",
+     "resp": [
+      "êtes"
+     ],
+     "exp": "Com vous, o verbo être é vous êtes (com acento circunflexo)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Excusez-moi, monsieur, vous parlez portugais ?",
+     "exp": "« Excusez-moi » soa « ékskuzê-mua ». O u de « excusez » é o u francês: lábios arredondados, língua como no i."
+    },
+    {
+     "t": "mc",
+     "q": "Com um amigo da sua idade, o natural é dizer:",
+     "op": [
+      "Enchanté de faire votre connaissance.",
+      "Bonjour, madame, comment allez-vous ?",
+      "Veuillez m'excuser, monsieur.",
+      "Salut ! Tu vas bien ?"
+     ],
+     "r": 3,
+     "exp": "Com amigos usamos tu e frases curtas e informais."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Où",
+      "est-ce",
+      "que",
+      "tu",
+      "habites"
+     ],
+     "resp": "Où est-ce que tu habites",
+     "exp": "Com amigo: tu habites. Pergunta com est-ce que: Où est-ce que tu habites ?"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda formalmente (com vous) à examinadora.",
+     "frase": "Bonjour ! Comment allez-vous ?",
+     "modelo": "Je vais bien, merci. Et vous, madame ?",
+     "min": 4,
+     "chave": [
+      "bien",
+      "merci",
+      "et vous",
+      "madame",
+      "monsieur"
+     ],
+     "exp": "Use bien, merci e devolva a pergunta com Et vous, madame ?"
+    },
+    {
+     "t": "gap",
+     "q": "Salut Léo, ___ vas bien ?",
+     "resp": [
+      "tu"
+     ],
+     "exp": "Com um amigo (Léo), use tu: tu vas bien ?"
+    },
+    {
+     "t": "mc",
+     "q": "Qual frase está correta?",
+     "op": [
+      "Vous as un frère ?",
+      "Tu avez un frère ?",
+      "Tu ont un frère ?",
+      "Vous avez un frère ?"
+     ],
+     "r": 3,
+     "exp": "Vous combina com avez. Tu combina com as."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda a um amigo, de modo informal: diga seu nome.",
+     "frase": "Tu t'appelles comment ?",
+     "modelo": "Salut ! Moi, c'est Ana. Et toi ?",
+     "min": 3,
+     "chave": [
+      "moi",
+      "c'est",
+      "appelle",
+      "et toi",
+      "salut"
+     ],
+     "exp": "Entre amigos: Moi, c'est Ana. Et toi ?"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Ma famille",
+   "objetivo": "Falar da família: quem são, como se chamam e que idade têm.",
+   "foco": "possessifs mon/ma/mes; il y a; ne ... pas de",
+   "explicacao": [
+    "Possessivos: mon (masc.), ma (fem.), mes (plural). Mon père, ma mère, mes parents. Diante de vogal use mon: mon amie.",
+    "O possessivo concorda com a coisa possuída, não com o dono: sa sœur pode ser a irmã dele ou dela.",
+    "Para ter: J'ai un frère et une sœur. Na negação, un/une/des viram de: Je n'ai pas de frère.",
+    "Para dizer com quem mora: J'habite avec mes parents. Ma sœur s'appelle Bia et elle a douze ans."
+   ],
+   "vocab": [
+    {
+     "en": "la mère",
+     "pt": "a mãe"
+    },
+    {
+     "en": "le père",
+     "pt": "o pai"
+    },
+    {
+     "en": "le frère",
+     "pt": "o irmão"
+    },
+    {
+     "en": "la sœur",
+     "pt": "a irmã"
+    },
+    {
+     "en": "les parents",
+     "pt": "os pais"
+    },
+    {
+     "en": "les grands-parents",
+     "pt": "os avós"
+    },
+    {
+     "en": "un enfant",
+     "pt": "uma criança; um filho"
+    },
+    {
+     "en": "mon mari / ma femme",
+     "pt": "meu marido / minha esposa"
+    }
+   ],
+   "material": {
+    "tarefa": "Parlez de votre famille : avec qui vous habitez, les prénoms et l'âge de deux personnes.",
+    "segundos": 45,
+    "frases_uteis": [
+     "J'habite avec...",
+     "Mon père s'appelle...",
+     "Elle a ... ans.",
+     "Je n'ai pas de..."
+    ],
+    "modelo": "J'habite avec mes parents et ma sœur. Mon père s'appelle Paulo et il a quarante-cinq ans. Ma sœur s'appelle Bia, elle a douze ans. Je n'ai pas de frère."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "O examinador pergunta: « Vous avez des frères et sœurs ? ». Qual resposta é adequada?",
+     "op": [
+      "Oui, je suis un frère.",
+      "Non, j'ai pas frère.",
+      "Oui, ma frère s'appelle Leo.",
+      "Oui, j'ai un frère et une sœur."
+     ],
+     "r": 3,
+     "exp": "Resposta completa e correta: j'ai un frère et une sœur."
+    },
+    {
+     "t": "gap",
+     "q": "___ mère s'appelle Rosa. (minha)",
+     "resp": [
+      "Ma"
+     ],
+     "exp": "Mère é feminino: ma mère."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "J'habite avec mes parents et ma sœur.",
+     "exp": "« Sœur » tem um som parecido com « cör » (lábios arredondados). Em « mes », o e é fechado: « mê »."
+    },
+    {
+     "t": "mc",
+     "q": "Como dizer « Eu não tenho irmão »?",
+     "op": [
+      "Je n'ai pas de frère.",
+      "Je n'ai pas un frère.",
+      "Je ne pas ai de frère.",
+      "Je n'ai pas des frère."
+     ],
+     "r": 0,
+     "exp": "Na negação, un/une/des viram de (ou d')."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Mon",
+      "père",
+      "a",
+      "quarante",
+      "ans"
+     ],
+     "resp": "Mon père a quarante ans",
+     "exp": "Possessivo + substantivo + avoir + número + ans."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: fale da sua família em poucas frases.",
+     "frase": "Parlez-moi de votre famille.",
+     "modelo": "J'habite avec mes parents. J'ai un frère. Il s'appelle Leo.",
+     "min": 6,
+     "chave": [
+      "famille",
+      "père",
+      "mère",
+      "frère",
+      "sœur",
+      "soeur",
+      "parents",
+      "j'habite",
+      "avec"
+     ],
+     "exp": "Diga com quem mora e dê um nome: J'habite avec... Mon frère s'appelle..."
+    },
+    {
+     "t": "gap",
+     "q": "Mon frère a quinze ans et ___ sœur a douze ans. (a irmã dele)",
+     "resp": [
+      "sa"
+     ],
+     "exp": "Sœur é feminino, então sa sœur (o possessivo concorda com sœur)."
+    },
+    {
+     "t": "mc",
+     "q": "Ana fala da avó dela. Qual frase está correta?",
+     "op": [
+      "Mon grand-mère habite à Lyon.",
+      "Ma grand-mère habite à Lyon.",
+      "Mes grand-mère habite à Lyon.",
+      "Son grand-mère habite à Lyon."
+     ],
+     "r": 1,
+     "exp": "Grand-mère é feminino: ma grand-mère."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga se você tem irmãos e como se chamam.",
+     "frase": "Vous avez des frères et sœurs ?",
+     "modelo": "Oui, j'ai une sœur. Elle s'appelle Bia et elle a douze ans.",
+     "min": 5,
+     "chave": [
+      "frère",
+      "sœur",
+      "soeur",
+      "j'ai",
+      "non",
+      "oui",
+      "pas de"
+     ],
+     "exp": "Comece com Oui, j'ai... ou Non, je n'ai pas de... e acrescente um detalhe."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Les sons u et ou",
+   "objetivo": "Pronunciar u e ou, e o r francês, sem confundir as palavras.",
+   "foco": "voyelles u / ou; le r français",
+   "explicacao": [
+    "O som ou é igual ao u do português: vous (« vu »), tout, nous.",
+    "O u francês não existe em português: arredonde os lábios como para dizer u, mas coloque a língua na posição do i. Treine: tu, rue, sur.",
+    "Pares que mudam de sentido: tu / tout, rue / roue, vu / vous. Errar o som pode trocar a palavra.",
+    "O r francês vem do fundo da garganta, suave, parecido com um h leve (como o r de « rato » no Rio)."
+   ],
+   "vocab": [
+    {
+     "en": "une rue",
+     "pt": "uma rua"
+    },
+    {
+     "en": "rouge",
+     "pt": "vermelho"
+    },
+    {
+     "en": "un jus",
+     "pt": "um suco"
+    },
+    {
+     "en": "beaucoup",
+     "pt": "muito"
+    },
+    {
+     "en": "nous",
+     "pt": "nós"
+    },
+    {
+     "en": "la route",
+     "pt": "a estrada"
+    },
+    {
+     "en": "le sucre",
+     "pt": "o açúcar"
+    },
+    {
+     "en": "la musique",
+     "pt": "a música"
+    }
+   ],
+   "material": {
+    "tarefa": "Dites dans quelle rue ou dans quel quartier vous habitez, et ce que vous buvez le matin.",
+    "segundos": 40,
+    "frases_uteis": [
+     "J'habite dans la rue...",
+     "Le matin, je bois...",
+     "du jus, du café, du lait",
+     "C'est beaucoup !"
+    ],
+    "modelo": "J'habite dans la rue des Fleurs, un quartier tranquille. Le matin, je bois du jus et du café."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qual palavra tem o som u francês (lábios arredondados, língua como no i)?",
+     "op": [
+      "tout",
+      "vous",
+      "tu",
+      "nous"
+     ],
+     "r": 2,
+     "exp": "Tu tem o u francês. Tout, vous e nous têm o som ou."
+    },
+    {
+     "t": "gap",
+     "q": "Pouvez-vous répéter, s'il ___ plaît ?",
+     "resp": [
+      "vous"
+     ],
+     "exp": "S'il vous plaît: o « ou » de vous soa como u do português."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Tu as vu la rue rouge ?",
+     "exp": "« Tu », « vu » e « rue » têm o u francês (lábios em u, língua como no i). « Rouge » tem o som ou."
+    },
+    {
+     "t": "mc",
+     "q": "Qual par tem o som u francês na primeira palavra e o som ou na segunda?",
+     "op": [
+      "tu – tout",
+      "tout – tu",
+      "vous – nous",
+      "rue – tu"
+     ],
+     "r": 0,
+     "exp": "Tu = u francês. Tout = ou, como o u português."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "bois",
+      "du",
+      "jus",
+      "de",
+      "fruits"
+     ],
+     "resp": "Je bois du jus de fruits",
+     "exp": "Boire: je bois. Partitivo: du jus."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Nous voulons une salade du jour, s'il vous plaît.",
+     "exp": "Nous, voulons, jour e vous têm o som ou. « Salade » e « plaît » têm o som a/é, sem ditongo."
+    },
+    {
+     "t": "gap",
+     "q": "Le feu est ___ : je m'arrête. (vermelho)",
+     "resp": [
+      "rouge"
+     ],
+     "exp": "Rouge = vermelho. O ou soa como u do português e o r é suave."
+    },
+    {
+     "t": "mc",
+     "q": "Como se pronuncia o r francês?",
+     "op": [
+      "Batendo a língua no céu da boca, como em « caro »",
+      "No fundo da garganta, suave, como um h leve",
+      "Como um l",
+      "Como um s"
+     ],
+     "r": 1,
+     "exp": "O r francês é produzido no fundo da garganta, sem vibrar a língua."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga o que você bebe de manhã.",
+     "frase": "Qu'est-ce que vous buvez le matin ?",
+     "modelo": "Le matin, je bois du jus et du café.",
+     "min": 5,
+     "chave": [
+      "bois",
+      "jus",
+      "café",
+      "lait",
+      "thé",
+      "du",
+      "matin"
+     ],
+     "exp": "Use Je bois du/de la... Atenção aos sons u e ou em jus e du."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Nasales, liaison et e muet",
+   "objetivo": "Pronunciar os sons nasais, ligar palavras e reduzir o e fraco.",
+   "foco": "voyelles nasales an/on/in; liaison; e muet",
+   "explicacao": [
+    "Três nasais principais: an/en (enfant), on (bon) e in/ain (vin, pain). Não pronuncie o N final: o ar passa pelo nariz.",
+    "Liaison: a consoante final liga com a vogal da palavra seguinte. Vous avez soa « vou-za-vê », les amis soa « lê-za-mi », nous avons soa « nou-za-vom ».",
+    "O e muet (e fraco) quase some na fala: je ne sais pas soa « j'ne sé pa ». Mas em le/ne/me entre palavras ele ajuda a pronunciar.",
+    "Treino: cinq ans (« sé-kã »), quinze, vingt, enfant, bon."
+   ],
+   "vocab": [
+    {
+     "en": "un enfant",
+     "pt": "uma criança"
+    },
+    {
+     "en": "bon / bonne",
+     "pt": "bom / boa"
+    },
+    {
+     "en": "le pain",
+     "pt": "o pão"
+    },
+    {
+     "en": "quinze",
+     "pt": "quinze"
+    },
+    {
+     "en": "vingt",
+     "pt": "vinte"
+    },
+    {
+     "en": "les amis",
+     "pt": "os amigos"
+    },
+    {
+     "en": "un an",
+     "pt": "um ano"
+    },
+    {
+     "en": "le petit-déjeuner",
+     "pt": "o café da manhã"
+    }
+   ],
+   "material": {
+    "tarefa": "Dites votre âge, l'âge d'un(e) ami(e), puis ce que vous mangez au petit-déjeuner.",
+    "segundos": 45,
+    "frases_uteis": [
+     "J'ai ... ans.",
+     "Mon ami(e) a ... ans.",
+     "Je mange du pain.",
+     "Je bois un bon café."
+    ],
+    "modelo": "J'ai quinze ans. Mon ami Léo a seize ans. Au petit-déjeuner, je mange du pain avec du beurre et je bois un bon chocolat."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qual palavra tem o som nasal « an » (como em enfant)?",
+     "op": [
+      "bon",
+      "vin",
+      "enfant",
+      "bonne"
+     ],
+     "r": 2,
+     "exp": "Enfant tem o nasal an. Bon tem on, vin tem in, bonne não é nasal (o n soa)."
+    },
+    {
+     "t": "gap",
+     "q": "Mon ___ a cinq ans. (criança)",
+     "resp": [
+      "enfant"
+     ],
+     "exp": "Un enfant = uma criança. O « an » é nasal."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Quinze enfants mangent du bon pain.",
+     "exp": "Quinze e enfants têm nasais diferentes (in / an). Em bon e pain não se pronuncia o N. Não diga « bom-n »."
+    },
+    {
+     "t": "mc",
+     "q": "A liaison em « vous avez » se pronuncia:",
+     "op": [
+      "vou a-vê, sem ligar",
+      "vou-za-vê",
+      "vous-tavê",
+      "vou-ra-vê"
+     ],
+     "r": 1,
+     "exp": "O s de vous liga com a vogal seguinte e soa como z."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Les",
+      "enfants",
+      "ont",
+      "cinq",
+      "ans"
+     ],
+     "resp": "Les enfants ont cinq ans",
+     "exp": "Les enfants: liaison em « lê-zã-fã ». Ont = eles têm."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Vous avez quinze amis en vacances.",
+     "exp": "Faça as ligações: vou-za-vê e quinze-za-mi. Em « en vacances », os dois nasais são an."
+    },
+    {
+     "t": "gap",
+     "q": "Elle a ___ ans. (15)",
+     "resp": [
+      "quinze"
+     ],
+     "exp": "Quinze = 15. Escreve-se com z e o in é nasal."
+    },
+    {
+     "t": "mc",
+     "q": "Em « Je ne sais pas », na fala rápida, o e de « je » e de « ne »:",
+     "op": [
+      "vira a",
+      "costuma ficar fraco ou quase desaparece",
+      "deve soar como é aberto",
+      "nunca pode cair"
+     ],
+     "r": 1,
+     "exp": "É o e muet: j'ne sais pas. Mas na escrita ele continua."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga o que você come de manhã.",
+     "frase": "Qu'est-ce que vous mangez au petit-déjeuner ?",
+     "modelo": "Je mange du pain avec du beurre et je bois un café.",
+     "min": 5,
+     "chave": [
+      "mange",
+      "pain",
+      "beurre",
+      "café",
+      "lait",
+      "croissant",
+      "petit-déjeuner"
+     ],
+     "exp": "Fale: Je mange du pain... Cuidado: em pain, não pronuncie o N."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Mon travail, mes études",
+   "objetivo": "Dizer o que você faz: trabalho ou estudos.",
+   "foco": "profession sans article; étudier / travailler; lieu",
+   "explicacao": [
+    "Para profissão, não use artigo depois de être: Je suis infirmière (não « une infirmière »). Em C'est, sim: C'est un médecin.",
+    "Feminino: étudiant → étudiante; infirmier → infirmière; professeur (também professeure no Canadá).",
+    "Para estudos: J'étudie le droit à l'université. Para trabalho: Je travaille dans une banque / dans un magasin.",
+    "Perguntas do examinador: Qu'est-ce que vous faites dans la vie ? Où travaillez-vous ? Vous êtes étudiant ?"
+   ],
+   "vocab": [
+    {
+     "en": "étudiant(e)",
+     "pt": "estudante"
+    },
+    {
+     "en": "professeur",
+     "pt": "professor(a)"
+    },
+    {
+     "en": "médecin",
+     "pt": "médico(a)"
+    },
+    {
+     "en": "le travail",
+     "pt": "o trabalho"
+    },
+    {
+     "en": "travailler",
+     "pt": "trabalhar"
+    },
+    {
+     "en": "étudier",
+     "pt": "estudar"
+    },
+    {
+     "en": "l'université",
+     "pt": "a universidade"
+    },
+    {
+     "en": "le lycée",
+     "pt": "o ensino médio"
+    }
+   ],
+   "material": {
+    "tarefa": "Dites si vous travaillez ou si vous étudiez, où et ce que vous faites.",
+    "segundos": 50,
+    "frases_uteis": [
+     "Je suis étudiant(e).",
+     "J'étudie... à l'université.",
+     "Je travaille dans...",
+     "Actuellement, je..."
+    ],
+    "modelo": "Je suis étudiante. J'étudie la médecine à l'université de Brasília. J'ai cours le matin et l'après-midi, je travaille un peu dans un magasin."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qual resposta combina com « Qu'est-ce que vous faites dans la vie ? »",
+     "op": [
+      "Je fais de l'hôpital.",
+      "J'ai infirmière.",
+      "Je suis infirmière à l'hôpital.",
+      "Je vais dans la vie."
+     ],
+     "r": 2,
+     "exp": "Je suis + profissão (sem artigo) + lugar."
+    },
+    {
+     "t": "gap",
+     "q": "Je suis ___ à l'université. (estudante, mulher)",
+     "resp": [
+      "étudiante"
+     ],
+     "exp": "Étudiante com -e no feminino."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je suis étudiant et j'étudie l'informatique.",
+     "exp": "« Étudiant » e « étudie » têm o u francês (lábios em u, língua como no i). O final -ant é nasal."
+    },
+    {
+     "t": "mc",
+     "q": "Qual frase está correta?",
+     "op": [
+      "Il est un médecin.",
+      "Il a médecin.",
+      "Il fait médecin.",
+      "Il est médecin."
+     ],
+     "r": 3,
+     "exp": "Depois de être, profissão sem artigo: Il est médecin. (Ou: C'est un médecin.)"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "travaille",
+      "dans",
+      "un",
+      "grand",
+      "magasin"
+     ],
+     "resp": "Je travaille dans un grand magasin",
+     "exp": "Travailler dans + lugar de trabalho."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga se você trabalha ou estuda.",
+     "frase": "Vous travaillez ou vous étudiez ?",
+     "modelo": "J'étudie à l'université. Je suis étudiant en droit.",
+     "min": 4,
+     "chave": [
+      "étudie",
+      "étudiant",
+      "étudiante",
+      "travaille",
+      "université",
+      "lycée",
+      "école"
+     ],
+     "exp": "Use J'étudie... ou Je travaille... e diga onde."
+    },
+    {
+     "t": "gap",
+     "q": "Où ___ -vous ? — Je travaille dans une banque.",
+     "resp": [
+      "travaillez"
+     ],
+     "exp": "Com vous: vous travaillez → travaillez-vous ?"
+    },
+    {
+     "t": "mc",
+     "q": "Falso cognato: « actuellement » significa:",
+     "op": [
+      "na verdade",
+      "atualmente",
+      "realmente",
+      "antigamente"
+     ],
+     "r": 1,
+     "exp": "Actuellement = atualmente. « Na verdade » é en fait."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga qual é seu estudo ou seu ofício.",
+     "frase": "Qu'est-ce que vous étudiez, ou quel est votre métier ?",
+     "modelo": "Je suis professeur d'anglais. Je travaille dans une école, près de chez moi.",
+     "min": 6,
+     "chave": [
+      "professeur",
+      "étudie",
+      "travaille",
+      "suis",
+      "métier",
+      "école",
+      "bureau"
+     ],
+     "exp": "Diga a profissão ou o que estuda e acrescente onde."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "J'aime, je n'aime pas",
+   "objetivo": "Falar de gostos e atividades de lazer, e dar um motivo.",
+   "foco": "aimer + article défini; faire du / jouer au; parce que",
+   "explicacao": [
+    "Com aimer, adorer e détester use o artigo definido: J'aime le football, la musique, les films.",
+    "Na negação, aimer mantém o artigo: Je n'aime pas le café (não « de café »).",
+    "Esportes: faire du sport, faire de la natation, jouer au foot, jouer au tennis. Instrumento: jouer de la guitare.",
+    "Para explicar: parce que (porque). J'aime la lecture parce que j'adore les histoires."
+   ],
+   "vocab": [
+    {
+     "en": "aimer",
+     "pt": "gostar de; amar"
+    },
+    {
+     "en": "adorer",
+     "pt": "adorar"
+    },
+    {
+     "en": "détester",
+     "pt": "detestar"
+    },
+    {
+     "en": "le cinéma",
+     "pt": "o cinema"
+    },
+    {
+     "en": "le football",
+     "pt": "o futebol"
+    },
+    {
+     "en": "la cuisine",
+     "pt": "a cozinha; a culinária"
+    },
+    {
+     "en": "lire",
+     "pt": "ler"
+    },
+    {
+     "en": "voyager",
+     "pt": "viajar"
+    }
+   ],
+   "material": {
+    "tarefa": "Parlez de vos goûts : trois choses que vous aimez, une chose que vous n'aimez pas, et pourquoi.",
+    "segundos": 50,
+    "frases_uteis": [
+     "J'aime...",
+     "J'adore...",
+     "Je n'aime pas...",
+     "parce que..."
+    ],
+    "modelo": "J'adore le football et j'aime la musique brésilienne. Je joue au foot avec mes amis le samedi. Je n'aime pas la pluie, parce que je ne peux pas sortir."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "O examinador pergunta: « Quel sport aimez-vous ? ». Qual resposta é adequada?",
+     "op": [
+      "Je suis le tennis.",
+      "J'aime à le tennis.",
+      "J'aime le tennis et le vélo.",
+      "Je joue la tennis."
+     ],
+     "r": 2,
+     "exp": "J'aime + artigo definido + esporte."
+    },
+    {
+     "t": "gap",
+     "q": "J'aime ___ musique brésilienne.",
+     "resp": [
+      "la"
+     ],
+     "exp": "Com aimer use o artigo definido: la musique."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "J'adore la musique et je déteste le froid.",
+     "exp": "Em « adore » e « froid », o r é suave. « Froid » soa « froá ». « Déteste » tem dois e fechados: dé-tést."
+    },
+    {
+     "t": "mc",
+     "q": "Como dizer que você não gosta de futebol?",
+     "op": [
+      "Je pas aime le foot.",
+      "Je n'aime pas le foot.",
+      "Je ne aime pas foot.",
+      "Je n'aime pas du foot."
+     ],
+     "r": 1,
+     "exp": "Je n'aime pas + artigo definido. Ne + aime vira n'aime."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "joue",
+      "au",
+      "foot",
+      "avec",
+      "mes",
+      "amis"
+     ],
+     "resp": "Je joue au foot avec mes amis",
+     "exp": "Jouer au + esporte. Avec mes amis = com meus amigos."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga o que você gosta de fazer no fim de semana.",
+     "frase": "Qu'est-ce que vous aimez faire le week-end ?",
+     "modelo": "J'aime écouter de la musique et sortir avec mes amis.",
+     "min": 5,
+     "chave": [
+      "aime",
+      "adore",
+      "musique",
+      "sortir",
+      "amis",
+      "sport",
+      "film",
+      "lire"
+     ],
+     "exp": "Use J'aime + verbo no infinitivo: J'aime lire, J'aime sortir."
+    },
+    {
+     "t": "gap",
+     "q": "Elle n'aime pas ___ café. (o)",
+     "resp": [
+      "le"
+     ],
+     "exp": "Com aimer na negação, o artigo definido continua: le café."
+    },
+    {
+     "t": "mc",
+     "q": "O examinador pergunta: « Pourquoi aimez-vous le cinéma ? ». Qual resposta é mais completa?",
+     "op": [
+      "Je suis cinéma.",
+      "Car moi cinéma.",
+      "Pourquoi j'aime.",
+      "Parce que j'adore les histoires."
+     ],
+     "r": 3,
+     "exp": "Parce que + frase: porque eu adoro as histórias."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga seu passatempo favorito e por quê.",
+     "frase": "Quel est votre passe-temps préféré ? Pourquoi ?",
+     "modelo": "Mon passe-temps préféré, c'est la lecture, parce que j'aime les histoires.",
+     "min": 6,
+     "chave": [
+      "préféré",
+      "parce que",
+      "j'aime",
+      "j'adore",
+      "lire",
+      "lecture",
+      "sport"
+     ],
+     "exp": "Estrutura: Mon passe-temps préféré, c'est... parce que..."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Poser des questions",
+   "objetivo": "Fazer perguntas simples com entonação, est-ce que e palavras interrogativas.",
+   "foco": "est-ce que; où, quand, comment, combien; intonation montante",
+   "explicacao": [
+    "Três jeitos de perguntar: entonação (Vous habitez ici ?), est-ce que (Est-ce que vous habitez ici ?) e inversão (Habitez-vous ici ?). No A1, os dois primeiros bastam.",
+    "Na pergunta com entonação, a voz sobe no fim: Vous travaillez ? ↗",
+    "Palavras de pergunta: où (onde), quand (quando), comment (como), combien (quanto), pourquoi (por que), qui (quem), quel/quelle (qual).",
+    "Qu'est-ce que = o que: Qu'est-ce que vous faites ? Combine: Où est-ce que vous habitez ?"
+   ],
+   "vocab": [
+    {
+     "en": "où",
+     "pt": "onde"
+    },
+    {
+     "en": "quand",
+     "pt": "quando"
+    },
+    {
+     "en": "comment",
+     "pt": "como"
+    },
+    {
+     "en": "pourquoi",
+     "pt": "por que"
+    },
+    {
+     "en": "qui",
+     "pt": "quem"
+    },
+    {
+     "en": "combien",
+     "pt": "quanto"
+    },
+    {
+     "en": "quel / quelle",
+     "pt": "qual"
+    },
+    {
+     "en": "est-ce que",
+     "pt": "(marca de pergunta)"
+    }
+   ],
+   "material": {
+    "tarefa": "L'examinateur vous donne des mots : « nom », « habiter », « travail ». Transformez chaque mot en question avec « vous ».",
+    "segundos": 45,
+    "frases_uteis": [
+     "Comment vous appelez-vous ?",
+     "Où est-ce que vous habitez ?",
+     "Quel est votre travail ?",
+     "Qu'est-ce que vous faites ?"
+    ],
+    "modelo": "Comment vous appelez-vous ? Où est-ce que vous habitez ? Quel est votre travail ? Quand est-ce que vous travaillez ?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qual pergunta está errada?",
+     "op": [
+      "Vous habitez où ?",
+      "Où est-ce que vous habitez ?",
+      "Où habitez-vous ?",
+      "Où vous est-ce habitez ?"
+     ],
+     "r": 3,
+     "exp": "A ordem de est-ce que é: palavra de pergunta + est-ce que + sujeito + verbo."
+    },
+    {
+     "t": "gap",
+     "q": "___-ce que vous travaillez ici ?",
+     "resp": [
+      "Est"
+     ],
+     "exp": "Est-ce que = marca de pergunta."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Est-ce que vous habitez à Paris ?",
+     "exp": "Faça a voz subir no final. « Est-ce que » soa « éssk'». O e de « que » é muito fraco."
+    },
+    {
+     "t": "mc",
+     "q": "Para perguntar um preço, a melhor frase é:",
+     "op": [
+      "Quand ça coûte ?",
+      "Où ça coûte ?",
+      "Pourquoi ça coûte ?",
+      "Combien ça coûte ?"
+     ],
+     "r": 3,
+     "exp": "Combien = quanto."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Quand",
+      "est-ce",
+      "que",
+      "vous",
+      "travaillez"
+     ],
+     "resp": "Quand est-ce que vous travaillez",
+     "exp": "Quand est-ce que vous travaillez ? Quando o senhor trabalha?"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça uma pergunta ao examinador usando a palavra week-end.",
+     "frase": "Mot : « week-end ». Posez-moi une question.",
+     "modelo": "Qu'est-ce que vous faites le week-end ?",
+     "min": 3,
+     "chave": [
+      "week-end",
+      "weekend",
+      "faites",
+      "vous",
+      "aimez"
+     ],
+     "exp": "Ex.: Qu'est-ce que vous faites le week-end ? Faça a voz subir no final."
+    },
+    {
+     "t": "gap",
+     "q": "Qu'est-ce que tu fais ___ week-end ? (neste / no)",
+     "resp": [
+      "le",
+      "ce"
+     ],
+     "exp": "Le week-end (sempre) ou ce week-end (neste)."
+    },
+    {
+     "t": "mc",
+     "q": "Palavra-chave: sport. Qual pergunta é natural com vous?",
+     "op": [
+      "Vous êtes sport ?",
+      "Sport vous faites avoir ?",
+      "Vous faites quel sport ?",
+      "Vous sport quoi ?"
+     ],
+     "r": 2,
+     "exp": "Vous faites quel sport ? = Que esporte o senhor pratica?"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça uma pergunta ao examinador usando a palavra travail.",
+     "frase": "Mot : « travail ». Posez-moi une question.",
+     "modelo": "Où est-ce que vous travaillez ?",
+     "min": 3,
+     "chave": [
+      "travaillez",
+      "travail",
+      "où",
+      "quel",
+      "faites",
+      "métier"
+     ],
+     "exp": "Ex.: Où est-ce que vous travaillez ? / Quel est votre travail ?"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Échange d'informations",
+   "objetivo": "Fazer perguntas a partir de palavras-chave (parte 2 da prova).",
+   "foco": "questions à partir d'un mot; varier les mots interrogatifs; réagir",
+   "explicacao": [
+    "Na parte 2 você recebe cartões com uma palavra (ex.: vacances, cuisine, animal). Para cada um, faça uma pergunta ao examinador com vous.",
+    "Varie as perguntas: Vous avez ... ? / Vous aimez ... ? / Où est-ce que... ? / Qu'est-ce que vous... ?",
+    "Depois de ouvir a resposta, reaja: Ah bon ? / D'accord. / C'est intéressant ! Isso mostra que você interage.",
+    "Se não entender a palavra, peça: Pardon ? ou Pouvez-vous répéter ?"
+   ],
+   "vocab": [
+    {
+     "en": "les vacances",
+     "pt": "as férias"
+    },
+    {
+     "en": "la cuisine",
+     "pt": "a culinária"
+    },
+    {
+     "en": "la ville",
+     "pt": "a cidade"
+    },
+    {
+     "en": "un animal",
+     "pt": "um animal"
+    },
+    {
+     "en": "la musique",
+     "pt": "a música"
+    },
+    {
+     "en": "les loisirs",
+     "pt": "o lazer"
+    },
+    {
+     "en": "ah bon ?",
+     "pt": "ah, é?"
+    },
+    {
+     "en": "d'accord",
+     "pt": "de acordo; certo"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous avez cinq cartes : « vacances », « animal », « cuisine », « ville », « musique ». Posez une question à l'examinateur avec chaque mot.",
+    "segundos": 70,
+    "frases_uteis": [
+     "Vous avez un animal ?",
+     "Où est-ce que vous passez vos vacances ?",
+     "Vous aimez la musique ?",
+     "Ah bon ? D'accord."
+    ],
+    "modelo": "Où est-ce que vous aimez passer vos vacances ? Vous avez un animal à la maison ? Qu'est-ce que vous aimez cuisiner ? Vous habitez dans une grande ville ? Quelle musique est-ce que vous écoutez ?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Cartão: « animal ». Qual pergunta é adequada ao examinador?",
+     "op": [
+      "Tu as un animal ?",
+      "Animal vous avez où ?",
+      "Vous êtes un animal ?",
+      "Vous avez un animal à la maison ?"
+     ],
+     "r": 3,
+     "exp": "Com o examinador, vous + pergunta simples e correta."
+    },
+    {
+     "t": "gap",
+     "q": "Quelle musique est-ce que vous ___ ? (ouvir)",
+     "resp": [
+      "écoutez"
+     ],
+     "exp": "Écouter com vous: écoutez."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Qu'est-ce que vous faites pendant vos vacances ?",
+     "exp": "« Pendant » tem dois nasais (en, an). « Vacances » soa « va-cãs ». Voz sobe no final."
+    },
+    {
+     "t": "mc",
+     "q": "Cartão: « cuisine ». Qual pergunta pede o gosto do examinador?",
+     "op": [
+      "Vous faites aimer la cuisine ?",
+      "Vous aimez faire la cuisine ?",
+      "Vous aimez la cuisine faire ?",
+      "Tu aimes cuisiner où ?"
+     ],
+     "r": 1,
+     "exp": "Vous aimez + infinitivo: Vous aimez faire la cuisine ?"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Est-ce",
+      "que",
+      "vous",
+      "aimez",
+      "voyager"
+     ],
+     "resp": "Est-ce que vous aimez voyager",
+     "exp": "Est-ce que vous aimez voyager ? Aimer + infinitivo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Cartão: « ville ». Faça uma pergunta ao examinador.",
+     "frase": "Carte : « ville ». Posez-moi une question.",
+     "modelo": "Vous habitez dans une grande ville ?",
+     "min": 3,
+     "chave": [
+      "ville",
+      "habitez",
+      "aimez",
+      "où",
+      "quelle"
+     ],
+     "exp": "Ex.: Vous habitez dans une grande ville ? / Quelle est votre ville préférée ?"
+    },
+    {
+     "t": "gap",
+     "q": "Vous aimez la ville ___ la campagne ? (ou)",
+     "resp": [
+      "ou"
+     ],
+     "exp": "Ou = ou (alternativa). O som é « u » como em português."
+    },
+    {
+     "t": "mc",
+     "q": "Depois que o examinador responde, uma reação natural é:",
+     "op": [
+      "Au revoir, madame.",
+      "Je m'appelle Ana.",
+      "J'ai vingt ans.",
+      "Ah bon ? C'est intéressant !"
+     ],
+     "r": 3,
+     "exp": "Reagir mostra que você está conversando de verdade."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Cartão: « vacances ». Faça uma pergunta e reaja à resposta « J'aime la mer. »",
+     "frase": "Carte : « vacances ». Posez une question, puis réagissez : « J'aime la mer. »",
+     "modelo": "Où est-ce que vous passez vos vacances ? — Ah bon, vous aimez la mer ! Moi aussi.",
+     "min": 6,
+     "chave": [
+      "vacances",
+      "où",
+      "quand",
+      "aimez",
+      "vous",
+      "mer"
+     ],
+     "exp": "Faça a pergunta e reaja com Ah bon ? ou Moi aussi."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Ma journée, mon week-end",
+   "objetivo": "Descrever a rotina e o fim de semana com horas e dias.",
+   "foco": "heures; verbes pronominaux; le samedi / samedi; faire du sport",
+   "explicacao": [
+    "Horas: Il est huit heures. Midi et quart = 12h15; midi et demi = 12h30; une heure moins le quart = 12h45.",
+    "Verbos pronominais: je me lève, je me couche, je me douche. O pronome vem antes: Je me lève à sept heures.",
+    "Le samedi = todo sábado. Samedi = este sábado. Também: le matin, l'après-midi, le soir.",
+    "Faire du sport / de la natation / de la musique. Frequência: souvent, toujours, parfois, jamais."
+   ],
+   "vocab": [
+    {
+     "en": "se lever",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "se coucher",
+     "pt": "deitar-se"
+    },
+    {
+     "en": "déjeuner",
+     "pt": "almoçar"
+    },
+    {
+     "en": "rentrer",
+     "pt": "voltar para casa"
+    },
+    {
+     "en": "sortir",
+     "pt": "sair"
+    },
+    {
+     "en": "le matin",
+     "pt": "de manhã"
+    },
+    {
+     "en": "le soir",
+     "pt": "à noite"
+    },
+    {
+     "en": "souvent",
+     "pt": "frequentemente"
+    }
+   ],
+   "material": {
+    "tarefa": "Décrivez votre journée habituelle et ce que vous faites le week-end.",
+    "segundos": 60,
+    "frases_uteis": [
+     "Je me lève à...",
+     "Le soir, je rentre à...",
+     "Le samedi, je...",
+     "Je fais du sport."
+    ],
+    "modelo": "Je me lève à sept heures et je prends le bus pour aller au travail. Le soir, je rentre à six heures. Le week-end, je fais du sport le samedi et je sors avec mes amis."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Como responder a « À quelle heure vous levez-vous ? »",
+     "op": [
+      "Je lève sept heures.",
+      "Je suis levé à sept.",
+      "Je me lève sept heures à.",
+      "Je me lève à sept heures."
+     ],
+     "r": 3,
+     "exp": "Je me lève à + hora."
+    },
+    {
+     "t": "gap",
+     "q": "Je me ___ à onze heures du soir. (deitar)",
+     "resp": [
+      "couche"
+     ],
+     "exp": "Se coucher: je me couche."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je me lève à sept heures et demie.",
+     "exp": "« Heures » começa com h mudo: soa « eur ». « Demie » soa « dé-mi ». O r é suave."
+    },
+    {
+     "t": "mc",
+     "q": "« Le samedi, je joue au foot » significa:",
+     "op": [
+      "só neste sábado",
+      "todo sábado",
+      "no sábado passado",
+      "nunca aos sábados"
+     ],
+     "r": 1,
+     "exp": "Le + dia = hábito, todo sábado."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Le",
+      "soir",
+      "je",
+      "rentre",
+      "à",
+      "six",
+      "heures"
+     ],
+     "resp": "Le soir je rentre à six heures",
+     "exp": "Le soir = à noite. Rentrer à + hora."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga o que você faz no fim de semana.",
+     "frase": "Qu'est-ce que vous faites le week-end ?",
+     "modelo": "Le samedi, je fais du sport. Le dimanche, je reste à la maison avec ma famille.",
+     "min": 6,
+     "chave": [
+      "samedi",
+      "dimanche",
+      "sport",
+      "maison",
+      "amis",
+      "famille",
+      "week-end",
+      "sors",
+      "fais"
+     ],
+     "exp": "Use dias da semana e verbos simples: je fais, je sors, je reste."
+    },
+    {
+     "t": "gap",
+     "q": "Je fais ___ sport le samedi. (de + le)",
+     "resp": [
+      "du"
+     ],
+     "exp": "Faire du sport: de + le = du."
+    },
+    {
+     "t": "mc",
+     "q": "« Il est midi et quart » = ",
+     "op": [
+      "12h15",
+      "12h45",
+      "11h15",
+      "12h50"
+     ],
+     "r": 0,
+     "exp": "Et quart = mais 15 minutos."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: descreva sua rotina de um dia comum.",
+     "frase": "Quelle est votre journée habituelle ?",
+     "modelo": "Je me lève à sept heures, je prends le petit-déjeuner et je vais à l'université. Le soir, je rentre à la maison.",
+     "min": 8,
+     "chave": [
+      "lève",
+      "petit-déjeuner",
+      "université",
+      "travail",
+      "rentre",
+      "matin",
+      "soir"
+     ],
+     "exp": "Conte em ordem: je me lève, je vais..., je rentre. Use le matin e le soir."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Les nombres et les prix",
+   "objetivo": "Ler e dizer números e preços em euros.",
+   "foco": "nombres 0-100; euros et centimes; combien",
+   "explicacao": [
+    "Números difíceis: 70 soixante-dix, 80 quatre-vingts, 90 quatre-vingt-dix, 99 quatre-vingt-dix-neuf.",
+    "Preços: 12,50 € = douze euros cinquante. 1,20 € = un euro vingt. Não é preciso dizer centimes.",
+    "Perguntas: Ça coûte combien ? C'est combien ? Ça fait combien ? Respostas: Ça fait trois euros soixante.",
+    "Pronúncia: vingt soa « vẽ »; cinq soa « sẽk »; dix euros soa « di-zeu-ro » (liaison)."
+   ],
+   "vocab": [
+    {
+     "en": "combien",
+     "pt": "quanto"
+    },
+    {
+     "en": "le prix",
+     "pt": "o preço"
+    },
+    {
+     "en": "un euro",
+     "pt": "um euro"
+    },
+    {
+     "en": "un centime",
+     "pt": "um centavo"
+    },
+    {
+     "en": "cher / chère",
+     "pt": "caro"
+    },
+    {
+     "en": "bon marché",
+     "pt": "barato"
+    },
+    {
+     "en": "ça coûte",
+     "pt": "custa"
+    },
+    {
+     "en": "ça fait",
+     "pt": "dá; totaliza"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous êtes au marché. Demandez le prix de deux produits et dites combien vous payez en tout.",
+    "segundos": 50,
+    "frases_uteis": [
+     "C'est combien ?",
+     "Ça coûte ... euros.",
+     "Ça fait combien ?",
+     "Ça fait ... euros ... en tout."
+    ],
+    "modelo": "Bonjour ! C'est combien, les pommes ? Deux euros cinquante le kilo. Et le pain ? Un euro vingt. Alors, ça fait trois euros soixante-dix, c'est ça ?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Como se escreve 80 por extenso?",
+     "op": [
+      "soixante-vingt",
+      "quatre-vingts",
+      "octante",
+      "huit-dix"
+     ],
+     "r": 1,
+     "exp": "80 = quatre-vingts (4 × 20)."
+    },
+    {
+     "t": "gap",
+     "q": "Ça coûte ___ euros. (15)",
+     "resp": [
+      "quinze"
+     ],
+     "exp": "Quinze = 15."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Ça fait douze euros cinquante, s'il vous plaît.",
+     "exp": "« Douze euros » liga: « dou-zeu-ro ». « Cinquante » soa « sẽ-kãt » (dois nasais)."
+    },
+    {
+     "t": "mc",
+     "q": "A vendedora diz: « Ça fait neuf euros soixante. » O que ela quer dizer?",
+     "op": [
+      "9,16 €",
+      "9,60 €",
+      "90,60 €",
+      "9,06 €"
+     ],
+     "r": 1,
+     "exp": "Neuf euros soixante = 9,60 €."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "C'est",
+      "combien",
+      "le",
+      "kilo",
+      "de",
+      "tomates"
+     ],
+     "resp": "C'est combien le kilo de tomates",
+     "exp": "C'est combien le kilo de tomates ? Perguntar o preço do quilo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Calcule e diga: pão 1,20 € e dois croissants 2,40 €. Quanto dá no total?",
+     "frase": "Le pain coûte un euro vingt. Les deux croissants coûtent deux euros quarante. Ça fait combien ?",
+     "modelo": "Ça fait trois euros soixante.",
+     "min": 3,
+     "chave": [
+      "trois",
+      "euros",
+      "soixante",
+      "3,60"
+     ],
+     "exp": "1,20 + 2,40 = 3,60. Diga: trois euros soixante."
+    },
+    {
+     "t": "gap",
+     "q": "Soixante-___ = 70.",
+     "resp": [
+      "dix"
+     ],
+     "exp": "70 = soixante-dix (60 + 10)."
+    },
+    {
+     "t": "mc",
+     "q": "1,50 € se lê:",
+     "op": [
+      "un cent cinquante",
+      "une euro cinquante",
+      "un euros cinq",
+      "un euro cinquante"
+     ],
+     "r": 3,
+     "exp": "Un euro cinquante. Euro é masculino."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Quatre-vingt-dix-neuf centimes, c'est bon marché.",
+     "exp": "« Quatre-vingt-dix-neuf » é 99. Pronuncie devagar, em blocos. O d final de « vingt » não soa."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Faire des achats",
+   "objetivo": "Comprar em uma loja com educação: pedir, perguntar preço e pagar.",
+   "foco": "je voudrais; vous avez ...?; le / la / les (COD)",
+   "explicacao": [
+    "Para pedir com educação use Je voudrais... (eu gostaria). Je veux... é seco demais com vendedor.",
+    "Perguntas úteis: Vous avez ce pull en taille M ? C'est combien ? Je peux essayer ? Vous acceptez la carte ?",
+    "Para decidir: Je le prends (masculino), je la prends (feminino), je les prends (plural). Se for caro: C'est trop cher.",
+    "Com vendedores, use sempre vous. Comece com Bonjour e termine com Merci, au revoir !"
+   ],
+   "vocab": [
+    {
+     "en": "je voudrais",
+     "pt": "eu gostaria"
+    },
+    {
+     "en": "vous désirez ?",
+     "pt": "o que deseja?"
+    },
+    {
+     "en": "la taille",
+     "pt": "o tamanho"
+    },
+    {
+     "en": "essayer",
+     "pt": "experimentar"
+    },
+    {
+     "en": "trop cher",
+     "pt": "caro demais"
+    },
+    {
+     "en": "par carte",
+     "pt": "com cartão"
+    },
+    {
+     "en": "en espèces",
+     "pt": "em dinheiro"
+    },
+    {
+     "en": "c'est tout",
+     "pt": "é só isso"
+    }
+   ],
+   "material": {
+    "tarefa": "Dialogue simulé : vous êtes dans un magasin de vêtements. Vous voulez acheter un tee-shirt. Demandez le prix et la taille, puis payez.",
+    "segundos": 60,
+    "frases_uteis": [
+     "Je voudrais...",
+     "Vous avez ... en taille M ?",
+     "C'est combien ?",
+     "Je le prends."
+    ],
+    "modelo": "Bonjour, madame. Je voudrais un tee-shirt bleu, s'il vous plaît. Vous avez la taille M ? Il coûte combien ? Quinze euros ? D'accord, je le prends. Je peux payer par carte ? Merci, au revoir !"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Para comprar com educação, qual frase é a melhor?",
+     "op": [
+      "Je veux une baguette !",
+      "Donne-moi une baguette.",
+      "Je voudrais une baguette, s'il vous plaît.",
+      "Une baguette, vite."
+     ],
+     "r": 2,
+     "exp": "Je voudrais + s'il vous plaît é educado e correto."
+    },
+    {
+     "t": "gap",
+     "q": "Vous ___ ce pull en taille M ? (têm)",
+     "resp": [
+      "avez"
+     ],
+     "exp": "Vous avez... ? = o senhor tem... ?"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je voudrais essayer ce pantalon, s'il vous plaît.",
+     "exp": "« Voudrais » soa « vu-dré ». O u francês em « pantalon » e o on nasal em « pantalon » (« pã-ta-lõ »)."
+    },
+    {
+     "t": "mc",
+     "q": "O preço está alto demais. O que dizer?",
+     "op": [
+      "C'est gratuit, merci.",
+      "C'est trop cher, merci.",
+      "Je suis cher.",
+      "Ça coûte beaucoup petit."
+     ],
+     "r": 1,
+     "exp": "C'est trop cher = é caro demais."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "le",
+      "prends",
+      "et",
+      "je",
+      "paie",
+      "par",
+      "carte"
+     ],
+     "resp": "Je le prends et je paie par carte",
+     "exp": "Le substitui o objeto masculino (le pull): je le prends."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda como cliente: peça uma jaqueta preta.",
+     "frase": "Bonjour, vous désirez ?",
+     "modelo": "Bonjour, madame. Je voudrais une veste noire, s'il vous plaît.",
+     "min": 5,
+     "chave": [
+      "voudrais",
+      "veste",
+      "tee-shirt",
+      "pantalon",
+      "s'il vous plaît",
+      "cherche"
+     ],
+     "exp": "Cumprimente e peça: Je voudrais... s'il vous plaît."
+    },
+    {
+     "t": "gap",
+     "q": "Ce pull est joli, je ___ prends. (o pulôver, masculino)",
+     "resp": [
+      "le"
+     ],
+     "exp": "Pull é masculino: je le prends."
+    },
+    {
+     "t": "mc",
+     "q": "A vendedora diz: « Ce sera tout ? ». Você não quer mais nada:",
+     "op": [
+      "Oui, je suis tout.",
+      "Non, c'est le tout chose.",
+      "Oui, c'est tout. Ça fait combien ?",
+      "Ça coûte tout."
+     ],
+     "r": 2,
+     "exp": "C'est tout = é só isso. Depois, pergunte o total."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda: diga como vai pagar.",
+     "frase": "Voilà le tee-shirt, il coûte quinze euros. Vous payez comment ?",
+     "modelo": "Je paie par carte, s'il vous plaît.",
+     "min": 4,
+     "chave": [
+      "carte",
+      "espèces",
+      "paie",
+      "payer",
+      "cash"
+     ],
+     "exp": "Opções: Je paie par carte / en espèces."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Demander une information",
+   "objetivo": "Pedir informações e direções na rua, com educação.",
+   "foco": "où est ...; à gauche / à droite / tout droit; à quelle heure",
+   "explicacao": [
+    "Para abordar alguém: Excusez-moi, monsieur / madame... Depois: Où est la gare ? / Il y a une pharmacie près d'ici ?",
+    "Direções: à gauche (esquerda), à droite (direita), tout droit (reto). Prenez la première rue à gauche.",
+    "Horários: À quelle heure ouvre le musée ? Il ouvre à neuf heures. Il ferme à dix-huit heures.",
+    "Se não entender: Pouvez-vous répéter, s'il vous plaît ? / Plus lentement, s'il vous plaît. Termine: Merci beaucoup, bonne journée !"
+   ],
+   "vocab": [
+    {
+     "en": "à gauche",
+     "pt": "à esquerda"
+    },
+    {
+     "en": "à droite",
+     "pt": "à direita"
+    },
+    {
+     "en": "tout droit",
+     "pt": "em frente; reto"
+    },
+    {
+     "en": "près d'ici",
+     "pt": "perto daqui"
+    },
+    {
+     "en": "loin",
+     "pt": "longe"
+    },
+    {
+     "en": "la gare",
+     "pt": "a estação"
+    },
+    {
+     "en": "ouvrir / fermer",
+     "pt": "abrir / fechar"
+    },
+    {
+     "en": "à quelle heure ?",
+     "pt": "a que horas?"
+    }
+   ],
+   "material": {
+    "tarefa": "Dialogue simulé : vous êtes en ville. Demandez à un passant où est la gare et à quelle heure le musée ouvre.",
+    "segundos": 60,
+    "frases_uteis": [
+     "Excusez-moi, monsieur...",
+     "Où est la gare ?",
+     "C'est loin d'ici ?",
+     "À quelle heure ouvre le musée ?"
+    ],
+    "modelo": "Excusez-moi, monsieur. Où est la gare, s'il vous plaît ? C'est loin d'ici ? Merci beaucoup. Et le musée, il ouvre à quelle heure ? À neuf heures ? Parfait. Merci, bonne journée !"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Para chamar a atenção de um passante com educação:",
+     "op": [
+      "Eh, toi, la pharmacie !",
+      "Pharmacie où madame toi ?",
+      "Excusez-moi, madame, où est la pharmacie ?",
+      "Salut, je suis pharmacie."
+     ],
+     "r": 2,
+     "exp": "Excusez-moi + madame/monsieur + pergunta."
+    },
+    {
+     "t": "gap",
+     "q": "Allez tout ___ , puis tournez à gauche. (reto)",
+     "resp": [
+      "droit"
+     ],
+     "exp": "Tout droit = em frente."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Excusez-moi, il y a une banque près d'ici ?",
+     "exp": "« Il y a » soa « i-li-a ». « Près » tem um e aberto (« prê »). A voz sobe no final."
+    },
+    {
+     "t": "mc",
+     "q": "« C'est à droite » significa:",
+     "op": [
+      "Fica à esquerda",
+      "Fica à direita",
+      "Vá reto",
+      "Está longe"
+     ],
+     "r": 1,
+     "exp": "Droite = direita. Gauche = esquerda."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "À",
+      "quelle",
+      "heure",
+      "ouvre",
+      "le",
+      "musée"
+     ],
+     "resp": "À quelle heure ouvre le musée",
+     "exp": "À quelle heure... ? = A que horas...?"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Pergunte a um passante onde fica a estação.",
+     "frase": "Je suis un passant. Demandez-moi où est la gare.",
+     "modelo": "Excusez-moi, monsieur, où est la gare, s'il vous plaît ?",
+     "min": 5,
+     "chave": [
+      "gare",
+      "où",
+      "excusez",
+      "s'il vous plaît"
+     ],
+     "exp": "Comece com Excusez-moi e termine com s'il vous plaît."
+    },
+    {
+     "t": "gap",
+     "q": "Pouvez-vous ___ , s'il vous plaît ? Je n'ai pas compris. (repetir)",
+     "resp": [
+      "répéter"
+     ],
+     "exp": "Répéter = repetir (é ao final: é)."
+    },
+    {
+     "t": "mc",
+     "q": "A passante diz: « La gare est tout droit, à deux cents mètres. » O que você entendeu?",
+     "op": [
+      "Vire à esquerda, 20 km",
+      "Está fechada",
+      "Fica atrás de você",
+      "Siga reto, cerca de 200 metros"
+     ],
+     "r": 3,
+     "exp": "Tout droit = reto; deux cents mètres = 200 metros."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "O passante diz: « Prenez la deuxième rue à droite. » Agradeça e se despeça.",
+     "frase": "Prenez la deuxième rue à droite.",
+     "modelo": "D'accord, merci beaucoup, monsieur ! Au revoir.",
+     "min": 3,
+     "chave": [
+      "merci",
+      "d'accord",
+      "au revoir"
+     ],
+     "exp": "Confirme com D'accord, agradeça e se despeça."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado : Production orale DELF A1",
+   "objetivo": "Praticar as 3 partes da Production orale do DELF A1 em sequência.",
+   "foco": "entretien dirigé; échange d'informations; dialogue simulé",
+   "explicacao": [
+    "A prova dura 5 a 7 minutos e tem 3 partes: 1) entretien dirigé (você fala de si), 2) échange d'informations (perguntas a partir de palavras), 3) dialogue simulé (compra ou pedido de informação).",
+    "Use vous com o examinador. Fale frases curtas e corretas, sem pressa. Se não entender: Pouvez-vous répéter, s'il vous plaît ?",
+    "Cuide da pronúncia: u / ou, nasais, liaison, r suave e voz subindo nas perguntas.",
+    "Revise os temas: nome, idade, país, família, trabalho/estudos, gostos, rotina, preços e direções."
+   ],
+   "vocab": [
+    {
+     "en": "l'entretien dirigé",
+     "pt": "entrevista guiada"
+    },
+    {
+     "en": "l'échange d'informations",
+     "pt": "troca de informações"
+    },
+    {
+     "en": "le dialogue simulé",
+     "pt": "diálogo simulado"
+    },
+    {
+     "en": "l'examinateur",
+     "pt": "o examinador"
+    },
+    {
+     "en": "répéter",
+     "pt": "repetir"
+    },
+    {
+     "en": "poser une question",
+     "pt": "fazer uma pergunta"
+    },
+    {
+     "en": "le prix",
+     "pt": "o preço"
+    },
+    {
+     "en": "s'il vous plaît",
+     "pt": "por favor"
+    }
+   ],
+   "material": {
+    "tarefa": "Production orale DELF A1. Partie 1 : présentez-vous (nom, âge, nationalité, famille, travail ou études, goûts). Partie 2 : avec les mots « week-end » et « sport », posez deux questions à l'examinateur. Partie 3 : dans un magasin, achetez un objet, demandez le prix et payez.",
+    "segundos": 90,
+    "frases_uteis": [
+     "Je m'appelle... J'ai ... ans.",
+     "Qu'est-ce que vous faites le week-end ?",
+     "Je voudrais..., s'il vous plaît.",
+     "C'est combien ?"
+    ],
+    "modelo": "Bonjour, madame. Je m'appelle Ana Souza, j'ai dix-huit ans. Je suis brésilienne et j'habite à Recife avec mes parents. Je suis étudiante et j'aime le cinéma. Qu'est-ce que vous faites le week-end ? Vous faites du sport ? Bonjour, monsieur. Je voudrais un sac noir, s'il vous plaît. C'est combien ? Vingt euros ? Je le prends. Je paie par carte. Merci, au revoir !"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Parte 1. O examinador abre a prova. Como você o cumprimenta?",
+     "op": [
+      "Salut ! Ça va ?",
+      "Bonjour, madame. Enchantée !",
+      "Hé, tu t'appelles comment ?",
+      "Au revoir, monsieur."
+     ],
+     "r": 1,
+     "exp": "Com o examinador: Bonjour, madame/monsieur, tom formal e vous."
+    },
+    {
+     "t": "gap",
+     "q": "Parte 1. J'___ dix-huit ans. (tenho)",
+     "resp": [
+      "ai"
+     ],
+     "exp": "Idade com avoir: j'ai dix-huit ans."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Parte 1. Apresente-se: nome, idade, nacionalidade e onde mora.",
+     "frase": "Présentez-vous, s'il vous plaît.",
+     "modelo": "Je m'appelle Ana Souza. J'ai dix-huit ans. Je suis brésilienne et j'habite à Recife.",
+     "min": 8,
+     "chave": [
+      "m'appelle",
+      "ans",
+      "suis",
+      "j'habite",
+      "brésilien",
+      "brésilienne",
+      "nom"
+     ],
+     "exp": "Fale devagar: Je m'appelle..., J'ai... ans, Je suis..., J'habite à..."
+    },
+    {
+     "t": "mc",
+     "q": "Parte 1. « Vous avez des frères et sœurs ? » Qual resposta está correta?",
+     "op": [
+      "Oui, je suis deux frères.",
+      "Non, je n'ai pas des frères.",
+      "Oui, j'ai ma sœur de douze ans.",
+      "Oui, j'ai une sœur. Elle s'appelle Bia."
+     ],
+     "r": 3,
+     "exp": "A resposta completa e correta é: j'ai une sœur. Elle s'appelle Bia."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "suis",
+      "étudiante",
+      "et",
+      "j'étudie",
+      "le",
+      "droit"
+     ],
+     "resp": "Je suis étudiante et j'étudie le droit",
+     "exp": "Profissão/estudos sem artigo depois de être: Je suis étudiante."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Parte 2. Palavra: « week-end ». Faça uma pergunta ao examinador.",
+     "frase": "Mot : « week-end ». Posez une question.",
+     "modelo": "Qu'est-ce que vous faites le week-end ?",
+     "min": 3,
+     "chave": [
+      "week-end",
+      "weekend",
+      "faites",
+      "vous",
+      "aimez"
+     ],
+     "exp": "Use vous e faça a voz subir: Qu'est-ce que vous faites le week-end ?"
+    },
+    {
+     "t": "gap",
+     "q": "Parte 2. Est-ce que vous ___ du sport ? (faites)",
+     "resp": [
+      "faites"
+     ],
+     "exp": "Vous faites (vous + faire). Faire du sport."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Parte 2. Palavra: « sport ». Faça outra pergunta ao examinador.",
+     "frase": "Mot : « sport ». Posez une question.",
+     "modelo": "Vous faites quel sport ?",
+     "min": 3,
+     "chave": [
+      "sport",
+      "faites",
+      "aimez",
+      "quel",
+      "pratiquez"
+     ],
+     "exp": "Ex.: Vous aimez le sport ? / Vous faites quel sport ?"
+    },
+    {
+     "t": "mc",
+     "q": "Parte 3. Em uma loja, como você pede um objeto com educação?",
+     "op": [
+      "Je veux un sac noir !",
+      "Donne-moi un sac.",
+      "Un sac noir, vite.",
+      "Je voudrais un sac noir, s'il vous plaît."
+     ],
+     "r": 3,
+     "exp": "Je voudrais ... s'il vous plaît. É o registro correto com o vendedor."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "paie",
+      "par",
+      "carte",
+      "et",
+      "je",
+      "le",
+      "prends"
+     ],
+     "resp": "Je paie par carte et je le prends",
+     "exp": "Paga e decide: je paie par carte, je le prends.",
+     "alt": [
+      "Je le prends et je paie par carte"
+     ]
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Parte 3. Você quer um saco preto. Peça, pergunte o preço e decida.",
+     "frase": "Bonjour, monsieur. Vous désirez ?",
+     "modelo": "Je voudrais un sac noir, s'il vous plaît. C'est combien ? Vingt euros ? Je le prends.",
+     "min": 8,
+     "chave": [
+      "voudrais",
+      "sac",
+      "combien",
+      "prends",
+      "euros",
+      "s'il vous plaît"
+     ],
+     "exp": "Peça, pergunte C'est combien ? e diga Je le prends. Use vous."
+    },
+    {
+     "t": "gap",
+     "q": "Parte 3. Excusez-moi, où ___ la gare ? (é)",
+     "resp": [
+      "est"
+     ],
+     "exp": "Où est la gare ? Verbo être, 3ª pessoa: est."
+    }
+   ]
+  }
+ ]
+}

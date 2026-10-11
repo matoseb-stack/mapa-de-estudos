@@ -1,0 +1,2463 @@
+{
+ "nivel": "A2",
+ "skill": "writing",
+ "exame": "DELF A2",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Saluer et finir un message",
+   "objetivo": "Começar e terminar uma mensagem para um amigo do jeito certo.",
+   "foco": "Salutations et formules de fin (registre familier)",
+   "explicacao": [
+    "No DELF A2 você escreve mensagens a amigos: comece com Salut + prénom ou Cher/Chère + prénom (Chère Léa para mulher, Cher Paul para homem).",
+    "Depois da saudação, agradeça ou pergunte: Merci pour ton message ! / Comment vas-tu ?",
+    "Termine com À bientôt, Bises, Grosses bises ou Je t'embrasse, e escreva seu nome na linha de baixo.",
+    "Entre amigos use tu e ton/ta/tes: Merci pour ta lettre."
+   ],
+   "vocab": [
+    {
+     "en": "Salut ...,",
+     "pt": "Oi ..., (início informal)"
+    },
+    {
+     "en": "Cher / Chère ...,",
+     "pt": "Querido / Querida ..."
+    },
+    {
+     "en": "Merci pour ton message",
+     "pt": "Obrigado pela sua mensagem"
+    },
+    {
+     "en": "À bientôt",
+     "pt": "Até breve"
+    },
+    {
+     "en": "Bises",
+     "pt": "Beijos"
+    },
+    {
+     "en": "Je t'embrasse",
+     "pt": "Um abraço (carinhoso)"
+    },
+    {
+     "en": "des nouvelles (f)",
+     "pt": "notícias"
+    },
+    {
+     "en": "Comment vas-tu ?",
+     "pt": "Como vai você?"
+    }
+   ],
+   "material": {
+    "tarefa": "Un ami français, Hugo, vous a envoyé un message. Répondez-lui : remerciez-le, donnez de vos nouvelles et dites ce que vous faites ce week-end. Écrivez entre 40 et 60 mots.",
+    "genero": "message",
+    "min": 40,
+    "max": 60,
+    "modelo": "Salut Hugo,\nMerci pour ton message ! Moi, je vais très bien. Je travaille beaucoup cette semaine, mais je suis content. Ce week-end, je reste à la maison et je regarde un film avec ma sœur. Et toi, que fais-tu ?\nGrosses bises,\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment commencer un message à une amie qui s'appelle Léa ?",
+     "op": [
+      "Madame Léa,",
+      "Chère Léa,",
+      "Cher Léa,",
+      "Bonjour Monsieur Léa,"
+     ],
+     "r": 1,
+     "exp": "Para uma amiga: Chère Léa (feminino). Madame é formal."
+    },
+    {
+     "t": "gap",
+     "q": "Merci ___ ton message !",
+     "resp": [
+      "pour"
+     ],
+     "exp": "Agradecemos por algo com merci pour."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a abertura e o fechamento em voz alta.",
+     "frase": "Salut Paul, merci pour ton message. À bientôt !",
+     "exp": "Em « merci », o r é suave na garganta; « bientôt » tem som nasal em -ien."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle fin convient à un message pour un ami ?",
+     "op": [
+      "Veuillez agréer mes salutations distinguées.",
+      "Bises et à bientôt !",
+      "Cordialement, Monsieur.",
+      "Je vous prie de croire à mes sentiments."
+     ],
+     "r": 1,
+     "exp": "Bises et à bientôt é natural entre amigos. As outras são formais."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "t'embrasse",
+      "et",
+      "à",
+      "très",
+      "bientôt"
+     ],
+     "resp": "Je t'embrasse et à très bientôt.",
+     "exp": "Fórmula de despedida carinhosa: Je t'embrasse + et à très bientôt."
+    },
+    {
+     "t": "gap",
+     "q": "J'espère avoir bientôt de tes ___.",
+     "resp": [
+      "nouvelles"
+     ],
+     "exp": "Avoir des nouvelles = ter notícias. Nouvelles é feminino plural: tes nouvelles."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em uma ou duas frases como você está.",
+     "frase": "Comment vas-tu en ce moment ?",
+     "modelo": "Je vais très bien, merci. Je travaille beaucoup mais je suis content.",
+     "min": 6,
+     "chave": [
+      "vais",
+      "bien",
+      "content",
+      "contente",
+      "fatigué",
+      "fatiguée"
+     ],
+     "exp": "Use je vais bien / je suis content(e) + um motivo."
+    },
+    {
+     "t": "mc",
+     "q": "Message : « Salut Hugo, merci pour ta lettre. Je suis à Lyon cette semaine. » Qu'est-ce qui manque ?",
+     "op": [
+      "Une salutation",
+      "Une formule de fin et la signature",
+      "Un lieu",
+      "Un remerciement"
+     ],
+     "r": 1,
+     "exp": "Há saudação, lugar e agradecimento, mas falta a despedida e o nome."
+    },
+    {
+     "t": "gap",
+     "q": "Grosses ___ et à bientôt !",
+     "resp": [
+      "bises"
+     ],
+     "exp": "Grosses bises = beijos grandes. Bises é feminino plural."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Tu ou vous ?",
+   "objetivo": "Escolher o registro certo (tu ou vous) e manter até o fim da mensagem.",
+   "foco": "Registre familier et formel; formules de politesse",
+   "explicacao": [
+    "Use tu com amigos, família e crianças; use vous com desconhecidos, chefe, professor ou várias pessoas.",
+    "Os possessivos mudam junto: tu → ton/ta/tes; vous → votre/vos. O verbo também: tu peux / vous pouvez.",
+    "Mensagem formal: Madame, / Monsieur, no início e Cordialement, no fim.",
+    "O erro mais comum é misturar os dois: escolha tu ou vous e mantenha no texto todo."
+   ],
+   "vocab": [
+    {
+     "en": "tutoyer",
+     "pt": "tratar por tu"
+    },
+    {
+     "en": "vouvoyer",
+     "pt": "tratar por vous"
+    },
+    {
+     "en": "Madame, / Monsieur,",
+     "pt": "Senhora, / Senhor, (início formal)"
+    },
+    {
+     "en": "Cordialement",
+     "pt": "Atenciosamente"
+    },
+    {
+     "en": "Pourriez-vous ... ?",
+     "pt": "O senhor/a senhora poderia ...?"
+    },
+    {
+     "en": "Peux-tu ... ?",
+     "pt": "Você pode ...?"
+    },
+    {
+     "en": "s'il vous plaît",
+     "pt": "por favor (formal)"
+    },
+    {
+     "en": "je vous remercie",
+     "pt": "eu agradeço (formal)"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous voulez vous inscrire à un cours de cuisine. Écrivez un message à la directrice, Madame Roche : présentez-vous, demandez les horaires et le prix. Écrivez entre 50 et 70 mots.",
+    "genero": "message formel",
+    "min": 50,
+    "max": 70,
+    "modelo": "Madame la directrice,\nJe m'appelle Pedro Santos et j'habite à Lyon depuis un mois. Je voudrais m'inscrire à votre cours de cuisine. Pourriez-vous m'indiquer les horaires et le prix, s'il vous plaît ? Je suis libre le soir et le samedi.\nJe vous remercie d'avance de votre réponse.\nCordialement,\nPedro Santos",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Vous écrivez à un professeur que vous ne connaissez pas. Quelle phrase est correcte ?",
+     "op": [
+      "Peux-tu m'aider, s'il te plaît ?",
+      "Pouvez-vous m'aider, s'il vous plaît ?",
+      "Tu peux m'aider, s'il vous plaît ?",
+      "Pouvez-vous m'aider, s'il te plaît ?"
+     ],
+     "r": 1,
+     "exp": "Professor desconhecido: vous do começo ao fim (pouvez-vous ... s'il vous plaît)."
+    },
+    {
+     "t": "gap",
+     "q": "Madame Durand, pouvez-___ me donner un rendez-vous ?",
+     "resp": [
+      "vous"
+     ],
+     "exp": "Com Madame usamos vous: pouvez-vous."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase formal em voz alta.",
+     "frase": "Pourriez-vous me répondre avant vendredi, s'il vous plaît ?",
+     "exp": "Em « pourriez-vous », faça a ligação suave entre os dois verbos e pronuncie o « vous » como « vu »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle fin convient à un message pour la directrice d'une école ?",
+     "op": [
+      "Bises",
+      "Cordialement",
+      "À+",
+      "Salut"
+     ],
+     "r": 1,
+     "exp": "Cordialement é adequado para mensagens formais."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Est-ce",
+      "que",
+      "tu",
+      "peux",
+      "m'aider",
+      "demain"
+     ],
+     "resp": "Est-ce que tu peux m'aider demain ?",
+     "exp": "Em registro informal: Est-ce que + tu + verbo."
+    },
+    {
+     "t": "gap",
+     "q": "Cher Monsieur, merci de ___ réponse.",
+     "resp": [
+      "votre"
+     ],
+     "exp": "Com vous e Monsieur, o possessivo é votre: votre réponse."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Peça o endereço ao amigo, com tu.",
+     "frase": "Vous voulez l'adresse de votre ami Marc. Que lui demandez-vous ?",
+     "modelo": "Peux-tu me donner ton adresse, s'il te plaît ?",
+     "min": 5,
+     "chave": [
+      "peux",
+      "adresse",
+      "tu",
+      "ton",
+      "donner"
+     ],
+     "exp": "Com amigo: Peux-tu ... ? + ton/ta."
+    },
+    {
+     "t": "mc",
+     "q": "« Bonjour Madame, je vous écris pour savoir si tu es libre samedi. » Quel est le problème ?",
+     "op": [
+      "Mélange de tu et vous",
+      "Pas de salutation",
+      "Pas de date",
+      "Trop de formules"
+     ],
+     "r": 0,
+     "exp": "A frase mistura vous e tu: escolha um só registro."
+    },
+    {
+     "t": "gap",
+     "q": "Salut Anna, je te remercie de ___ aide.",
+     "resp": [
+      "ton"
+     ],
+     "exp": "Aide é feminino, mas começa com vogal: usamos ton aide (não ta aide)."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Inviter quelqu'un",
+   "objetivo": "Escrever um convite claro, com data, hora, lugar e pedido de resposta.",
+   "foco": "Inviter : je t'invite à, est-ce que tu veux ; date, heure, lieu",
+   "explicacao": [
+    "Para convidar: Je t'invite à + nome (à ma fête) ou à + infinitivo (à dîner chez moi). Também: Est-ce que tu veux venir ... ?",
+    "Sempre dê as informações: quand (samedi 14 mai), à quelle heure (à vingt heures), où (chez moi, rue des Fleurs).",
+    "Peça uma resposta: Dis-moi si tu peux venir. / Réponds-moi vite !",
+    "Para planos use aller + infinitivo: Je vais préparer un gâteau."
+   ],
+   "vocab": [
+    {
+     "en": "inviter",
+     "pt": "convidar"
+    },
+    {
+     "en": "une fête",
+     "pt": "uma festa"
+    },
+    {
+     "en": "un anniversaire",
+     "pt": "um aniversário"
+    },
+    {
+     "en": "apporter",
+     "pt": "trazer"
+    },
+    {
+     "en": "chez moi",
+     "pt": "na minha casa"
+    },
+    {
+     "en": "à vingt heures",
+     "pt": "às vinte horas (20h)"
+    },
+    {
+     "en": "organiser",
+     "pt": "organizar"
+    },
+    {
+     "en": "Dis-moi si tu peux venir.",
+     "pt": "Diga-me se você pode vir."
+    }
+   ],
+   "material": {
+    "tarefa": "Vous organisez une fête pour votre anniversaire. Écrivez un message à un ami français : invitez-le, donnez la date, l'heure et le lieu, dites ce qu'il doit apporter. Écrivez entre 40 et 70 mots.",
+    "genero": "message",
+    "min": 40,
+    "max": 70,
+    "modelo": "Salut Julie,\nSamedi 14 mai, je fête mon anniversaire ! Je t'invite à dîner chez moi, au 12 rue des Fleurs, à vingt heures. Je vais préparer un grand gâteau au chocolat. Peux-tu apporter de la musique et une boisson ? Dis-moi vite si tu peux venir.\nBises,\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est une invitation ?",
+     "op": [
+      "Je suis désolé, je ne peux pas.",
+      "Je t'invite à mon anniversaire samedi.",
+      "Merci pour ton cadeau.",
+      "Je suis arrivé hier."
+     ],
+     "r": 1,
+     "exp": "Je t'invite à ... é a fórmula de convite."
+    },
+    {
+     "t": "gap",
+     "q": "Je t'invite ___ dîner chez moi vendredi soir.",
+     "resp": [
+      "à"
+     ],
+     "exp": "Inviter quelqu'un à + infinitivo: je t'invite à dîner."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia o convite em voz alta.",
+     "frase": "Est-ce que tu veux venir à ma fête samedi à vingt heures ?",
+     "exp": "Faça a ligação em « veux venir » e pronuncie « heures » com o som ö."
+    },
+    {
+     "t": "mc",
+     "q": "« Salut Léo ! Je fais une fête chez moi. Tu viens ? » Qu'est-ce qui manque dans ce convite ?",
+     "op": [
+      "La date et l'heure",
+      "Le prénom",
+      "La salutation",
+      "Le verbe"
+     ],
+     "r": 0,
+     "exp": "O convite não diz quando começa: faltam data e hora."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Dis-moi",
+      "si",
+      "tu",
+      "peux",
+      "venir"
+     ],
+     "resp": "Dis-moi si tu peux venir.",
+     "exp": "Dis-moi si + tu peux + venir: pedido de resposta."
+    },
+    {
+     "t": "gap",
+     "q": "Réponds-moi aussi ___ que possible !",
+     "resp": [
+      "vite"
+     ],
+     "exp": "Aussi vite que possible = o mais rápido possível."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Convide o amigo para o sábado à noite.",
+     "frase": "Un ami vous demande : Qu'est-ce que tu fais samedi soir ? Invitez-le.",
+     "modelo": "Samedi soir, je fais une fête chez moi. Tu veux venir ?",
+     "min": 6,
+     "chave": [
+      "fête",
+      "invite",
+      "viens",
+      "venir",
+      "dîner",
+      "veux"
+     ],
+     "exp": "Use Je t'invite à ... ou Tu veux venir ... ?"
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase demande une réponse ?",
+     "op": [
+      "Fais-moi savoir si tu viens.",
+      "Je suis content de te voir.",
+      "À samedi !",
+      "Merci beaucoup."
+     ],
+     "r": 0,
+     "exp": "Fais-moi savoir si ... pede uma resposta."
+    },
+    {
+     "t": "gap",
+     "q": "Pour mon anniversaire, je vais ___ une fête.",
+     "resp": [
+      "organiser",
+      "faire"
+     ],
+     "exp": "Aller + infinitivo expressa o futuro próximo: je vais organiser.",
+     "dica": "ORGANISER"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Accepter ou refuser",
+   "objetivo": "Aceitar ou recusar um convite com educação, dando o motivo e propondo outra data.",
+   "foco": "Accepter, refuser, justifier : avec plaisir, malheureusement, je dois",
+   "explicacao": [
+    "Para aceitar: Avec plaisir ! / Oui, je viens volontiers. / C'est une bonne idée !",
+    "Para recusar: Malheureusement, je ne peux pas venir + parce que / car + motivo.",
+    "Depois proponha outra data: Mais on peut se voir dimanche ?",
+    "Je dois + infinitivo = eu preciso: Je dois travailler. Cuidado com o acordo: Je suis désolé (homem) / désolée (mulher)."
+   ],
+   "vocab": [
+    {
+     "en": "avec plaisir",
+     "pt": "com prazer"
+    },
+    {
+     "en": "volontiers",
+     "pt": "de bom grado"
+    },
+    {
+     "en": "malheureusement",
+     "pt": "infelizmente"
+    },
+    {
+     "en": "je suis désolé(e)",
+     "pt": "sinto muito"
+    },
+    {
+     "en": "je dois + infinitif",
+     "pt": "eu preciso / devo"
+    },
+    {
+     "en": "être occupé(e)",
+     "pt": "estar ocupado(a)"
+    },
+    {
+     "en": "proposer",
+     "pt": "propor"
+    },
+    {
+     "en": "une autre fois",
+     "pt": "outra vez"
+    }
+   ],
+   "material": {
+    "tarefa": "Un ami français vous invite à sa fête mardi soir. Vous ne pouvez pas venir. Écrivez-lui : remerciez-le, refusez, expliquez pourquoi et proposez de vous voir un autre jour. Écrivez entre 40 et 70 mots.",
+    "genero": "message",
+    "min": 40,
+    "max": 70,
+    "modelo": "Salut Hugo,\nMerci beaucoup pour ton invitation ! Malheureusement, je ne peux pas venir mardi soir, parce que je dois travailler tard. Je suis vraiment désolé. Mais j'ai une idée : est-ce qu'on peut dîner ensemble jeudi ou vendredi ? Dis-moi quel jour te convient.\nGrosses bises,\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle réponse refuse poliment l'invitation ?",
+     "op": [
+      "Non, merci.",
+      "Malheureusement, je ne peux pas venir, car je travaille.",
+      "Je viens pas.",
+      "Ça m'est égal."
+     ],
+     "r": 1,
+     "exp": "Malheureusement + motivo é a forma educada de recusar."
+    },
+    {
+     "t": "gap",
+     "q": "Merci de ton invitation ! Je viens avec ___.",
+     "resp": [
+      "plaisir"
+     ],
+     "exp": "Avec plaisir = com prazer."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a recusa em voz alta.",
+     "frase": "Malheureusement, je ne peux pas venir samedi, mais on peut se voir dimanche.",
+     "exp": "« Malheureusement » tem 5 sílabas; o -ent final é nasal em « -ment »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase accepte l'invitation ?",
+     "op": [
+      "C'est dommage, je suis occupé.",
+      "Avec plaisir, j'arrive à huit heures !",
+      "Je dois rester à la maison.",
+      "Je ne suis pas libre."
+     ],
+     "r": 1,
+     "exp": "Avec plaisir aceita o convite; as outras recusam."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "suis",
+      "désolée",
+      "je",
+      "dois",
+      "travailler",
+      "samedi"
+     ],
+     "resp": "Je suis désolée, je dois travailler samedi.",
+     "exp": "Mulher falando: désolée com -e. Je dois + infinitivo."
+    },
+    {
+     "t": "gap",
+     "q": "Léa écrit à Paul : « Je suis ___, mais je ne peux pas venir. »",
+     "resp": [
+      "désolée"
+     ],
+     "exp": "Léa é mulher: désolée (com -e no fim).",
+     "dica": "DÉSOLÉ"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Recuse o convite, explique e proponha outro dia.",
+     "frase": "Un ami vous invite au cinéma samedi, mais vous travaillez. Que répondez-vous ?",
+     "modelo": "Merci pour l'invitation, mais malheureusement je travaille samedi. On peut y aller dimanche ?",
+     "min": 8,
+     "chave": [
+      "malheureusement",
+      "désolé",
+      "désolée",
+      "travaille",
+      "dimanche",
+      "pas"
+     ],
+     "exp": "Estrutura: merci + recusa + motivo + outra data."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase a la bonne négation ?",
+     "op": [
+      "Je peux pas venir samedi.",
+      "Je ne peux pas venir samedi.",
+      "Je ne peux venir pas samedi.",
+      "Je ne pas peux venir samedi."
+     ],
+     "r": 1,
+     "exp": "A negação envolve o verbo: ne + verbo + pas."
+    },
+    {
+     "t": "gap",
+     "q": "Je ne peux pas venir : je ___ aller chez le médecin.",
+     "resp": [
+      "dois"
+     ],
+     "exp": "Devoir + infinitivo: je dois aller.",
+     "dica": "DEVOIR"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Remercier et s'excuser",
+   "objetivo": "Agradecer por uma visita ou presente e pedir desculpas dando uma explicação.",
+   "foco": "Merci pour / merci de ; s'excuser : excuse-moi, je suis désolé(e) de",
+   "explicacao": [
+    "Para agradecer: Merci pour ton cadeau (nome) / Merci de ton aide. Não existe « merci à » nem « merci en ».",
+    "Para se desculpar: Excuse-moi (tu) / Excusez-moi (vous) / Je suis désolé(e) de + infinitivo.",
+    "Uma boa desculpa tem 3 partes: pedir perdão + explicar + propor uma solução.",
+    "Passé composé: J'ai oublié ton livre. Je n'ai pas pu venir."
+   ],
+   "vocab": [
+    {
+     "en": "remercier",
+     "pt": "agradecer"
+    },
+    {
+     "en": "un cadeau",
+     "pt": "um presente"
+    },
+    {
+     "en": "s'excuser",
+     "pt": "pedir desculpas"
+    },
+    {
+     "en": "pardon",
+     "pt": "perdão"
+    },
+    {
+     "en": "être en retard",
+     "pt": "estar atrasado"
+    },
+    {
+     "en": "oublier",
+     "pt": "esquecer"
+    },
+    {
+     "en": "gentil / gentille",
+     "pt": "gentil"
+    },
+    {
+     "en": "casser",
+     "pt": "quebrar"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous avez passé le week-end chez une amie française, Claire. Écrivez-lui : remerciez-la, dites ce que vous avez aimé et excusez-vous parce que vous avez cassé un verre. Écrivez entre 50 et 70 mots.",
+    "genero": "message",
+    "min": 50,
+    "max": 70,
+    "modelo": "Chère Claire,\nMerci pour ce week-end chez toi : j'ai passé des moments formidables ! J'ai adoré ta cuisine et la promenade au bord de la rivière. Je suis aussi très désolé, car j'ai cassé un verre samedi soir. Je vais t'en offrir un autre à ma prochaine visite.\nJe t'embrasse,\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment remercier pour un cadeau ?",
+     "op": [
+      "Merci à ton cadeau.",
+      "Merci pour ton cadeau.",
+      "Merci ton cadeau.",
+      "Merci en ton cadeau."
+     ],
+     "r": 1,
+     "exp": "Agradecemos por algo com merci pour."
+    },
+    {
+     "t": "gap",
+     "q": "Je suis désolée ___ ne pas venir.",
+     "resp": [
+      "de"
+     ],
+     "exp": "Être désolé(e) de + infinitivo: désolée de ne pas venir."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia o pedido de desculpas.",
+     "frase": "Excuse-moi, j'ai oublié notre rendez-vous. Je suis vraiment désolé.",
+     "exp": "Em « oublié », pronuncie o -é final fechado, sem « i » no fim."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle excuse est complète (raison + proposition) ?",
+     "op": [
+      "Pardon.",
+      "Désolé, j'avais un problème de transport. On se voit demain ?",
+      "Ce n'est pas ma faute.",
+      "Je suis là."
+     ],
+     "r": 1,
+     "exp": "Boa desculpa: perdão, explicação e uma solução."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Merci",
+      "pour",
+      "ton",
+      "aide",
+      "tu",
+      "es",
+      "très",
+      "gentil"
+     ],
+     "resp": "Merci pour ton aide, tu es très gentil.",
+     "exp": "Gentil é masculino porque fala-se a um homem; para mulher: gentille."
+    },
+    {
+     "t": "gap",
+     "q": "Hier, j'ai ___ ton livre chez moi.",
+     "resp": [
+      "oublié"
+     ],
+     "exp": "Passé composé com avoir: j'ai oublié.",
+     "dica": "OUBLIER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Peça desculpas por ter chegado atrasado.",
+     "frase": "Vous êtes arrivé en retard à un rendez-vous avec une amie. Que lui dites-vous ?",
+     "modelo": "Excuse-moi d'être en retard. Il y avait beaucoup de circulation.",
+     "min": 6,
+     "chave": [
+      "excuse",
+      "désolé",
+      "désolée",
+      "pardon",
+      "retard"
+     ],
+     "exp": "Use Excuse-moi de/d' + infinitivo ou Je suis désolé(e)."
+    },
+    {
+     "t": "mc",
+     "q": "Marie (une femme) s'excuse. Quelle phrase est correcte ?",
+     "op": [
+      "Je suis désolée, je ne suis pas venue.",
+      "Je suis désolée, je ne suis pas venu.",
+      "Je suis désolé, je n'ai pas venue.",
+      "Je suis désolée, je n'ai pas venue."
+     ],
+     "r": 0,
+     "exp": "Venir usa être e concorda com o sujeito feminino: je ne suis pas venue."
+    },
+    {
+     "t": "gap",
+     "q": "Merci ___ ton invitation : c'était une très belle soirée !",
+     "resp": [
+      "pour"
+     ],
+     "exp": "Merci pour + nome."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Demander et informer",
+   "objetivo": "Pedir uma informação com educação e avisar alguém de algo importante.",
+   "foco": "Demander : je voudrais savoir, pourriez-vous ; informer : je t'écris pour te dire que",
+   "explicacao": [
+    "Para pedir: Je voudrais savoir ... / Pourriez-vous m'envoyer ... ? Evite « Je veux » (muito direto).",
+    "Para informar: Je t'écris pour te dire que ... / Je vous informe que ... + a informação.",
+    "Falsos amigos: attendre = esperar alguém (J'attends ta réponse); espérer = ter esperança (J'espère que tu vas bien).",
+    "Actuellement = atualmente (não « na verdade »)."
+   ],
+   "vocab": [
+    {
+     "en": "je voudrais savoir",
+     "pt": "eu gostaria de saber"
+    },
+    {
+     "en": "pourriez-vous",
+     "pt": "o senhor poderia"
+    },
+    {
+     "en": "informer",
+     "pt": "informar"
+    },
+    {
+     "en": "un renseignement",
+     "pt": "uma informação"
+    },
+    {
+     "en": "un horaire",
+     "pt": "um horário"
+    },
+    {
+     "en": "attendre",
+     "pt": "esperar (aguardar)"
+    },
+    {
+     "en": "espérer",
+     "pt": "esperar (ter esperança)"
+    },
+    {
+     "en": "actuellement",
+     "pt": "atualmente"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous êtes étudiant dans une école de langues à Paris. Écrivez à votre professeur, Monsieur Lambert : informez-le que vous êtes malade et que vous ne viendrez pas au cours, demandez-lui les devoirs. Écrivez entre 40 et 70 mots.",
+    "genero": "message formel",
+    "min": 40,
+    "max": 70,
+    "modelo": "Monsieur Lambert,\nJe suis malade depuis hier : j'ai de la fièvre et mal à la tête. Je ne viendrai donc pas au cours de demain. Je suis désolé de vous prévenir si tard. Pourriez-vous m'indiquer les devoirs, s'il vous plaît ? J'espère être là lundi prochain.\nCordialement,\nPedro Santos",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment demander poliment un prix à un inconnu ?",
+     "op": [
+      "Je veux le prix.",
+      "Je voudrais savoir le prix, s'il vous plaît.",
+      "Donne-moi le prix.",
+      "Tu dis le prix ?"
+     ],
+     "r": 1,
+     "exp": "Je voudrais savoir + s'il vous plaît é educado e formal."
+    },
+    {
+     "t": "gap",
+     "q": "Je t'écris ___ te dire que le cours est annulé.",
+     "resp": [
+      "pour"
+     ],
+     "exp": "Écrire pour + infinitivo: je t'écris pour te dire."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia o pedido em voz alta.",
+     "frase": "Pourriez-vous m'envoyer les horaires du cours, s'il vous plaît ?",
+     "exp": "Em « horaires », o h não se pronuncia: « o-rér »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase veut dire « Estou esperando sua resposta » ?",
+     "op": [
+      "Je m'attends ta réponse.",
+      "J'attends ta réponse.",
+      "J'espère ta réponse.",
+      "Je regarde ta réponse."
+     ],
+     "r": 1,
+     "exp": "Attendre quelque chose = esperar/aguardar algo. Espérer é ter esperança."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "voudrais",
+      "savoir",
+      "à",
+      "quelle",
+      "heure",
+      "commence",
+      "le",
+      "cours"
+     ],
+     "resp": "Je voudrais savoir à quelle heure commence le cours.",
+     "exp": "Pergunta indireta: Je voudrais savoir + pergunta."
+    },
+    {
+     "t": "gap",
+     "q": "J'___ que tu vas bien.",
+     "resp": [
+      "espère"
+     ],
+     "exp": "Espérer que = esperar que (ter esperança).",
+     "dica": "ESPÉRER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Pergunte o preço do curso noturno.",
+     "frase": "Vous écrivez à une école de langues. Quelle question posez-vous sur le prix du cours du soir ?",
+     "modelo": "Bonjour, je voudrais savoir combien coûte le cours du soir, s'il vous plaît.",
+     "min": 6,
+     "chave": [
+      "prix",
+      "coûte",
+      "combien",
+      "voudrais",
+      "tarif"
+     ],
+     "exp": "Use Je voudrais savoir combien ... + s'il vous plaît."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase informe quelqu'un ?",
+     "op": [
+      "Le rendez-vous est reporté à jeudi à dix heures.",
+      "Pouvez-vous venir jeudi ?",
+      "Merci de votre réponse.",
+      "Je suis désolé."
+     ],
+     "r": 0,
+     "exp": "Informar é dar um fato: o encontro foi adiado."
+    },
+    {
+     "t": "gap",
+     "q": "Je ne bois pas ___ café le soir.",
+     "resp": [
+      "de",
+      "d'"
+     ],
+     "exp": "Depois de uma negação, du/de la/des viram de (d'): pas de café."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Le passé composé avec avoir",
+   "objetivo": "Contar o que você fez usando passé composé com avoir.",
+   "foco": "Passé composé avec avoir : participes réguliers et irréguliers",
+   "explicacao": [
+    "Passé composé = auxiliar avoir + particípio passado: j'ai mangé, tu as fini, nous avons attendu.",
+    "Particípios regulares: -er → -é (parler → parlé); -ir → -i (finir → fini); -re → -u (attendre → attendu).",
+    "Irregulares: faire → fait, prendre → pris, voir → vu, avoir → eu, écrire → écrit, lire → lu, boire → bu.",
+    "Negação em volta do auxiliar: je n'ai pas mangé. Marcadores: hier, ce matin, la semaine dernière, il y a trois jours."
+   ],
+   "vocab": [
+    {
+     "en": "hier",
+     "pt": "ontem"
+    },
+    {
+     "en": "ce matin",
+     "pt": "hoje de manhã"
+    },
+    {
+     "en": "la semaine dernière",
+     "pt": "semana passada"
+    },
+    {
+     "en": "il y a trois jours",
+     "pt": "há três dias"
+    },
+    {
+     "en": "j'ai fait",
+     "pt": "eu fiz"
+    },
+    {
+     "en": "j'ai pris",
+     "pt": "eu peguei / tomei"
+    },
+    {
+     "en": "j'ai vu",
+     "pt": "eu vi"
+    },
+    {
+     "en": "j'ai écrit",
+     "pt": "eu escrevi"
+    }
+   ],
+   "material": {
+    "tarefa": "Racontez votre dernier week-end à un ami français : ce que vous avez fait le samedi et le dimanche. Écrivez entre 60 et 80 mots.",
+    "genero": "message",
+    "min": 60,
+    "max": 80,
+    "modelo": "Salut Marc,\nCe week-end, j'ai passé deux jours super ! Samedi, j'ai fait du sport le matin, puis j'ai mangé avec mes amis dans un petit restaurant. L'après-midi, nous avons visité le musée de la ville. Dimanche, j'ai dormi tard et j'ai regardé un film. Et toi, qu'est-ce que tu as fait ? J'espère que tu as passé un bon week-end aussi.\nÀ bientôt,\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est au passé composé ?",
+     "op": [
+      "Hier, j'ai mangé au restaurant.",
+      "Hier, je mange au restaurant.",
+      "Hier, j'ai mangeais au restaurant.",
+      "Hier, je suis mangé au restaurant."
+     ],
+     "r": 0,
+     "exp": "Passé composé: ai + particípio mangé."
+    },
+    {
+     "t": "gap",
+     "q": "Samedi dernier, nous ___ un film au cinéma.",
+     "resp": [
+      "avons vu"
+     ],
+     "exp": "Voir → vu; com nous: nous avons vu.",
+     "dica": "VOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Hier, j'ai pris le train et j'ai visité Lyon.",
+     "exp": "« J'ai » soa como « jé »; faça a ligação suave com o verbo."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le participe passé du verbe « prendre » ?",
+     "op": [
+      "prendu",
+      "pris",
+      "prit",
+      "pri"
+     ],
+     "r": 1,
+     "exp": "Prendre é irregular: j'ai pris."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Hier",
+      "soir",
+      "nous",
+      "avons",
+      "regardé",
+      "un",
+      "film"
+     ],
+     "resp": "Hier soir, nous avons regardé un film.",
+     "exp": "Sujeito + avoir + particípio. O marcador de tempo pode ficar no início.",
+     "alt": [
+      "Nous avons regardé un film hier soir."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Ils ___ fini leurs devoirs avant le dîner.",
+     "resp": [
+      "ont"
+     ],
+     "exp": "Com ils/elles o auxiliar é ont."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga duas coisas que você fez ontem.",
+     "frase": "Qu'est-ce que vous avez fait hier ?",
+     "modelo": "Hier, j'ai travaillé le matin et j'ai regardé un film le soir.",
+     "min": 6,
+     "chave": [
+      "ai",
+      "j'ai",
+      "hier",
+      "travaillé",
+      "regardé",
+      "mangé",
+      "fait"
+     ],
+     "exp": "Use j'ai + particípio: j'ai travaillé, j'ai mangé."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase négative est correcte ?",
+     "op": [
+      "Je n'ai pas mangé ce matin.",
+      "Je ne pas ai mangé ce matin.",
+      "Je n'ai mangé pas ce matin.",
+      "Je ne suis pas mangé ce matin."
+     ],
+     "r": 0,
+     "exp": "Ne e pas ficam em volta do auxiliar: je n'ai pas mangé."
+    },
+    {
+     "t": "gap",
+     "q": "Hier, Paul a ___ une lettre à sa mère.",
+     "resp": [
+      "écrit"
+     ],
+     "exp": "Écrire é irregular: écrit.",
+     "dica": "ÉCRIRE"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Le passé composé avec être",
+   "objetivo": "Usar être no passé composé e fazer a concordância do particípio.",
+   "foco": "Passé composé avec être : verbes de mouvement, verbes pronominaux, accord",
+   "explicacao": [
+    "Com ~15 verbos de movimento/mudança usamos être: aller, venir, arriver, partir, entrer, sortir, monter, descendre, rester, tomber, naître, mourir, devenir, retourner. Também verbos pronominais: je me suis levé(e).",
+    "Com être, o particípio concorda com o sujeito: il est allé, elle est allée, ils sont allés, elles sont allées.",
+    "Com avoir NÃO há concordância com o sujeito: elle a mangé (não « mangée »).",
+    "Erro típico de brasileiros: « j'ai allé » → correto: je suis allé(e)."
+   ],
+   "vocab": [
+    {
+     "en": "aller → allé",
+     "pt": "ir → ido"
+    },
+    {
+     "en": "partir → parti",
+     "pt": "partir"
+    },
+    {
+     "en": "arriver → arrivé",
+     "pt": "chegar"
+    },
+    {
+     "en": "rester → resté",
+     "pt": "ficar"
+    },
+    {
+     "en": "tomber → tombé",
+     "pt": "cair"
+    },
+    {
+     "en": "sortir → sorti",
+     "pt": "sair"
+    },
+    {
+     "en": "se lever",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "se promener",
+     "pt": "passear"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous êtes parti(e) en voyage le mois dernier. Écrivez à un ami français pour raconter où vous êtes allé(e), avec qui et comment vous êtes arrivé(e). Écrivez entre 60 et 80 mots.",
+    "genero": "message",
+    "min": 60,
+    "max": 80,
+    "modelo": "Salut Anna,\nLe mois dernier, je suis parti en voyage à Salvador avec mon frère. Nous sommes arrivés un vendredi soir et nous sommes allés directement à l'hôtel. Samedi, nous sommes restés à la plage toute la journée. Dimanche, nous sommes montés dans une vieille église, puis nous sommes rentrés fatigués mais heureux. J'ai pris beaucoup de photos et je vais te les montrer bientôt.\nBises,\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Elle a allé à Paris.",
+      "Elle est allée à Paris.",
+      "Elle est allé à Paris.",
+      "Elle va allée à Paris."
+     ],
+     "r": 1,
+     "exp": "Aller usa être e o particípio concorda com elle: allée."
+    },
+    {
+     "t": "gap",
+     "q": "Hier, nous ___ partis à huit heures.",
+     "resp": [
+      "sommes"
+     ],
+     "exp": "Nous + être: nous sommes partis.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Ma sœur est arrivée hier soir et elle est restée trois jours.",
+     "exp": "« Sœur » tem o som ö; « restée » termina em -é fechado."
+    },
+    {
+     "t": "mc",
+     "q": "Quel verbe se conjugue avec être au passé composé ?",
+     "op": [
+      "manger",
+      "arriver",
+      "regarder",
+      "finir"
+     ],
+     "r": 1,
+     "exp": "Arriver é verbo de movimento: je suis arrivé."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elles",
+      "sont",
+      "allées",
+      "au",
+      "cinéma",
+      "samedi"
+     ],
+     "resp": "Elles sont allées au cinéma samedi.",
+     "exp": "Elles (feminino plural) → allées, com -es."
+    },
+    {
+     "t": "gap",
+     "q": "Marie et Julie sont ___ à la plage.",
+     "resp": [
+      "allées"
+     ],
+     "exp": "O sujeito é feminino plural: allées.",
+     "dica": "ALLER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga aonde você foi nas últimas férias.",
+     "frase": "Où êtes-vous allé(e) pour les dernières vacances ?",
+     "modelo": "Je suis allé à Salvador avec ma famille. Nous sommes restés une semaine.",
+     "min": 6,
+     "chave": [
+      "suis",
+      "allé",
+      "allée",
+      "parti",
+      "partie",
+      "restés",
+      "restée",
+      "sommes"
+     ],
+     "exp": "Je suis allé(e) à/en/au + lugar."
+    },
+    {
+     "t": "mc",
+     "q": "Sujet féminin pluriel : quelle phrase est correcte ?",
+     "op": [
+      "Mes amies sont parties tôt.",
+      "Mes amies ont parti tôt.",
+      "Mes amies sont partis tôt.",
+      "Mes amies sont parti tôt."
+     ],
+     "r": 0,
+     "exp": "Partir usa être; amies é feminino plural: parties."
+    },
+    {
+     "t": "gap",
+     "q": "Ce matin, je me ___ levée à six heures.",
+     "resp": [
+      "suis"
+     ],
+     "exp": "Verbo pronominal usa être: je me suis levée (mulher falando).",
+     "dica": "ÊTRE"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "L'imparfait pour décrire",
+   "objetivo": "Descrever o cenário e os hábitos do passado com o imparfait.",
+   "foco": "Imparfait : formation et emplois (description, habitude)",
+   "explicacao": [
+    "Formação: radical de nous no presente sem -ons + -ais, -ais, -ait, -ions, -iez, -aient. Nous parlons → je parlais; nous finissons → je finissais.",
+    "Exceção: être → j'étais, tu étais, il était, nous étions.",
+    "Usamos o imparfait para descrever (il faisait beau, il y avait du monde, j'étais fatigué) e para hábitos: Quand j'étais petit, je jouais tous les jours.",
+    "Palavras comuns: souvent, toujours, tous les étés, à cette époque, autrefois."
+   ],
+   "vocab": [
+    {
+     "en": "il faisait beau",
+     "pt": "fazia sol (tempo bom)"
+    },
+    {
+     "en": "il pleuvait",
+     "pt": "chovia"
+    },
+    {
+     "en": "j'étais fatigué(e)",
+     "pt": "eu estava cansado(a)"
+    },
+    {
+     "en": "quand j'étais petit(e)",
+     "pt": "quando eu era pequeno(a)"
+    },
+    {
+     "en": "souvent",
+     "pt": "muitas vezes"
+    },
+    {
+     "en": "autrefois",
+     "pt": "antigamente"
+    },
+    {
+     "en": "à cette époque",
+     "pt": "naquela época"
+    },
+    {
+     "en": "tous les étés",
+     "pt": "todos os verões"
+    }
+   ],
+   "material": {
+    "tarefa": "Décrivez à un ami français votre maison ou votre ville quand vous étiez petit(e) et ce que vous faisiez le week-end. Écrivez entre 60 et 80 mots.",
+    "genero": "message",
+    "min": 60,
+    "max": 80,
+    "modelo": "Salut Léa,\nQuand j'étais petit, j'habitais dans une grande maison à Recife. Il y avait un jardin avec des manguiers, et mon chien dormait sous les arbres. Le week-end, nous allions chez mes grands-parents. Ma grand-mère cuisinait et mes cousins jouaient au football avec moi. J'étais très heureux à cette époque, et je pense souvent à ces beaux souvenirs.\nÀ bientôt,\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase décrit une habitude dans le passé ?",
+     "op": [
+      "Hier, j'ai joué au foot.",
+      "Quand j'étais enfant, je jouais au foot tous les samedis.",
+      "Demain, je jouerai au foot.",
+      "Je joue au foot."
+     ],
+     "r": 1,
+     "exp": "Habitude no passado: imparfait (je jouais)."
+    },
+    {
+     "t": "gap",
+     "q": "Il ___ beau et nous avions chaud.",
+     "resp": [
+      "faisait"
+     ],
+     "exp": "Faire no imparfait: il faisait.",
+     "dica": "FAIRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a descrição em voz alta.",
+     "frase": "Il faisait beau, les enfants jouaient dans le jardin.",
+     "exp": "« Faisait » soa como « fezé »; « jouaient » soa como « jouê »."
+    },
+    {
+     "t": "mc",
+     "q": "Imparfait de « finir » avec je : nous finissons → je ___",
+     "op": [
+      "finissais",
+      "finisais",
+      "finirais",
+      "finissai"
+     ],
+     "r": 0,
+     "exp": "Nous finissons → radical finiss- + ais: je finissais."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Quand",
+      "j'étais",
+      "petite",
+      "je",
+      "jouais",
+      "dans",
+      "le",
+      "jardin"
+     ],
+     "resp": "Quand j'étais petite, je jouais dans le jardin.",
+     "exp": "Quand + imparfait de être + imparfait do hábito."
+    },
+    {
+     "t": "gap",
+     "q": "Tous les étés, nous ___ chez mes grands-parents.",
+     "resp": [
+      "allions"
+     ],
+     "exp": "Aller no imparfait: nous allions.",
+     "dica": "ALLER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você fazia aos domingos quando criança.",
+     "frase": "Que faisiez-vous le dimanche quand vous étiez enfant ?",
+     "modelo": "Quand j'étais enfant, le dimanche, je mangeais chez ma grand-mère et je jouais avec mes cousins.",
+     "min": 8,
+     "chave": [
+      "étais",
+      "j'étais",
+      "jouais",
+      "mangeais",
+      "allais",
+      "habitais"
+     ],
+     "exp": "Use o imparfait: je jouais, je mangeais, j'allais."
+    },
+    {
+     "t": "mc",
+     "q": "Choisissez la bonne forme : « Nous ___ souvent ensemble. »",
+     "op": [
+      "mangions",
+      "mangeions",
+      "mangons",
+      "mangiens"
+     ],
+     "r": 0,
+     "exp": "Nous mangions: o e de mangeons cai antes de -i."
+    },
+    {
+     "t": "gap",
+     "q": "À cette époque, j'___ à Recife.",
+     "resp": [
+      "habitais"
+     ],
+     "exp": "Habiter no imparfait com je: habitais.",
+     "dica": "HABITER"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Passé composé ou imparfait ?",
+   "objetivo": "Combinar imparfait (cenário) e passé composé (ação) na mesma narração.",
+   "foco": "Contraste imparfait / passé composé : cadre et événement",
+   "explicacao": [
+    "Imparfait = o cenário: como era, o que estava acontecendo, hábitos. Passé composé = o fato: o que aconteceu e fez a história avançar.",
+    "Os dois aparecem juntos: Il pleuvait quand je suis sorti. / Je dormais quand mon frère est rentré.",
+    "Pistas do passé composé: soudain, tout à coup, un jour, ce matin-là. Pistas do imparfait: toujours, souvent, d'habitude, pendant que.",
+    "Pergunte-se: « O que aconteceu? » → passé composé; « Como era? » → imparfait."
+   ],
+   "vocab": [
+    {
+     "en": "soudain",
+     "pt": "de repente"
+    },
+    {
+     "en": "tout à coup",
+     "pt": "de repente"
+    },
+    {
+     "en": "un jour",
+     "pt": "um dia"
+    },
+    {
+     "en": "d'habitude",
+     "pt": "normalmente"
+    },
+    {
+     "en": "pendant que",
+     "pt": "enquanto"
+    },
+    {
+     "en": "quand",
+     "pt": "quando"
+    },
+    {
+     "en": "se passer",
+     "pt": "acontecer"
+    },
+    {
+     "en": "heureusement",
+     "pt": "felizmente"
+    }
+   ],
+   "material": {
+    "tarefa": "Racontez à un ami un moment où vous avez eu un petit problème (vous avez perdu quelque chose, raté un train...). Décrivez la situation et dites ce qui s'est passé. Écrivez entre 60 et 80 mots.",
+    "genero": "message",
+    "min": 60,
+    "max": 80,
+    "modelo": "Salut Tom,\nSamedi dernier, j'ai eu un petit problème. Il pleuvait et j'étais pressé, donc j'ai couru vers la gare. Soudain, j'ai vu que mon sac n'était plus sur mon épaule ! Je l'ai laissé dans le bus. Heureusement, le chauffeur a trouvé le sac et il me l'a rendu le soir. Quelle chance ! Maintenant, je fais très attention à mes affaires.\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Il pleuvait quand je ___ de la maison.",
+     "op": [
+      "sortais",
+      "suis sorti",
+      "sorti",
+      "sortirai"
+     ],
+     "r": 1,
+     "exp": "Sortir foi uma ação pontual: passé composé com être (je suis sorti)."
+    },
+    {
+     "t": "gap",
+     "q": "Soudain, le téléphone ___.",
+     "resp": [
+      "a sonné"
+     ],
+     "exp": "Soudain anuncia um fato: passé composé (a sonné).",
+     "dica": "SONNER"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "Il était huit heures quand le train est arrivé.",
+     "exp": "« Était » = « êté »; « est arrivé » liga-se: « é-ta-ri-vê »."
+    },
+    {
+     "t": "mc",
+     "q": "Hier, il (faire) soleil, alors nous (aller) à la plage. Quelle combinaison est correcte ?",
+     "op": [
+      "a fait / allions",
+      "faisait / sommes allés",
+      "fait / allons",
+      "faisait / allions"
+     ],
+     "r": 1,
+     "exp": "Cenário = faisait; ação pontual = sommes allés."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "dormais",
+      "quand",
+      "mon",
+      "frère",
+      "est",
+      "rentré"
+     ],
+     "resp": "Je dormais quand mon frère est rentré.",
+     "exp": "Imparfait (dormais) = cenário; passé composé (est rentré) = fato."
+    },
+    {
+     "t": "gap",
+     "q": "Pendant que je ___, mon ami a téléphoné.",
+     "resp": [
+      "cuisinais"
+     ],
+     "exp": "Pendant que + ação em curso: imparfait (cuisinais).",
+     "dica": "CUISINER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você estava fazendo ontem às oito da noite.",
+     "frase": "Que faisiez-vous hier à huit heures du soir ?",
+     "modelo": "Hier à huit heures, je dînais avec ma famille et je regardais la télévision.",
+     "min": 6,
+     "chave": [
+      "dînais",
+      "mangeais",
+      "regardais",
+      "étais",
+      "travaillais",
+      "j'étais",
+      "faisais",
+      "lisais"
+     ],
+     "exp": "Ação em curso no passado: imparfait."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Un jour, j'ai rencontré Paul dans la rue.",
+      "Un jour, je rencontrais Paul dans la rue.",
+      "Un jour, j'étais rencontré Paul dans la rue.",
+      "Un jour, je suis rencontré Paul."
+     ],
+     "r": 0,
+     "exp": "Un jour anuncia um fato único: passé composé com avoir."
+    },
+    {
+     "t": "gap",
+     "q": "Il ___ très tard quand nous sommes arrivés.",
+     "resp": [
+      "était"
+     ],
+     "exp": "Descrição do momento: imparfait de être (était).",
+     "dica": "ÊTRE"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Les connecteurs de temps",
+   "objetivo": "Organizar uma narração com d'abord, ensuite, puis, enfin.",
+   "foco": "Connecteurs chronologiques : d'abord, ensuite, puis, enfin, plus tard",
+   "explicacao": [
+    "Use conectores para ordenar os fatos: d'abord (primeiro), ensuite / puis / après (depois), plus tard (mais tarde), enfin / finalement (por fim).",
+    "Coloque vírgula depois de d'abord, ensuite e enfin: D'abord, j'ai mangé. Ensuite, je suis sorti.",
+    "Também ajudam: le lendemain (no dia seguinte), ce soir-là, pendant ce temps, deux heures plus tard.",
+    "Um conector novo a cada ação: evite repetir só « et » e « puis » o texto inteiro."
+   ],
+   "vocab": [
+    {
+     "en": "d'abord",
+     "pt": "primeiro"
+    },
+    {
+     "en": "ensuite",
+     "pt": "depois"
+    },
+    {
+     "en": "puis",
+     "pt": "em seguida"
+    },
+    {
+     "en": "après",
+     "pt": "depois"
+    },
+    {
+     "en": "plus tard",
+     "pt": "mais tarde"
+    },
+    {
+     "en": "enfin",
+     "pt": "por fim"
+    },
+    {
+     "en": "finalement",
+     "pt": "finalmente"
+    },
+    {
+     "en": "le lendemain",
+     "pt": "no dia seguinte"
+    }
+   ],
+   "material": {
+    "tarefa": "Racontez à un ami une journée ou une sortie récente en utilisant d'abord, ensuite (ou puis) et enfin. Écrivez entre 60 et 80 mots.",
+    "genero": "message",
+    "min": 60,
+    "max": 80,
+    "modelo": "Salut Marc,\nHier, j'ai passé une journée super. D'abord, je me suis levé tôt et j'ai fait du sport dans le parc. Ensuite, j'ai retrouvé mes amis et nous avons déjeuné dans un petit restaurant. Puis nous avons visité un musée. Enfin, nous sommes rentrés à pied. J'étais fatigué mais très content ! Et toi, qu'as-tu fait de beau hier ?\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel est le bon ordre ?",
+     "op": [
+      "Enfin, ensuite, d'abord",
+      "D'abord, ensuite, enfin",
+      "Ensuite, enfin, d'abord",
+      "Enfin, d'abord, puis"
+     ],
+     "r": 1,
+     "exp": "A ordem natural é d'abord, ensuite (puis), enfin."
+    },
+    {
+     "t": "gap",
+     "q": "D'abord, j'ai préparé le repas. ___, j'ai invité mes amis.",
+     "resp": [
+      "ensuite",
+      "puis",
+      "après"
+     ],
+     "exp": "Ensuite / puis / après introduzem a segunda ação."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a sequência em voz alta.",
+     "frase": "D'abord, nous avons visité le musée, puis nous avons mangé, et enfin nous sommes rentrés.",
+     "exp": "Em « enfin », o -in é nasal; em « d'abord », o d é pronunciado."
+    },
+    {
+     "t": "mc",
+     "q": "Quel connecteur convient pour la dernière phrase ? « ___, je me suis couchée très fatiguée. »",
+     "op": [
+      "D'abord",
+      "Enfin",
+      "Ensuite",
+      "Puis"
+     ],
+     "r": 1,
+     "exp": "Enfin marca o último momento."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Ensuite",
+      "nous",
+      "sommes",
+      "allés",
+      "au",
+      "marché"
+     ],
+     "resp": "Ensuite, nous sommes allés au marché.",
+     "exp": "Ensuite abre a frase e vem com vírgula."
+    },
+    {
+     "t": "gap",
+     "q": "Le ___, nous avons pris le petit-déjeuner sur la plage.",
+     "resp": [
+      "lendemain"
+     ],
+     "exp": "Le lendemain = no dia seguinte."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte sua manhã com d'abord, puis e enfin.",
+     "frase": "Racontez votre matinée en trois étapes.",
+     "modelo": "D'abord, je me suis levé. Puis j'ai pris mon petit-déjeuner. Enfin, je suis parti au travail.",
+     "min": 10,
+     "chave": [
+      "d'abord",
+      "puis",
+      "enfin",
+      "ensuite"
+     ],
+     "exp": "Uma ação por frase: d'abord ..., puis ..., enfin ..."
+    },
+    {
+     "t": "mc",
+     "q": "Remettez dans l'ordre : A) Enfin, nous sommes rentrés. B) D'abord, nous avons pris le bus. C) Ensuite, nous avons visité le château.",
+     "op": [
+      "B, C, A",
+      "A, B, C",
+      "C, B, A",
+      "B, A, C"
+     ],
+     "r": 0,
+     "exp": "d'abord (B), ensuite (C), enfin (A)."
+    },
+    {
+     "t": "gap",
+     "q": "Nous avons mangé. Deux heures ___, nous avons fait une promenade.",
+     "resp": [
+      "plus tard"
+     ],
+     "exp": "Deux heures plus tard = duas horas mais tarde."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Partitifs, articles et genre",
+   "objetivo": "Evitar erros de artigo partitivo, gênero e concordância do adjetivo.",
+   "foco": "Articles partitifs (du, de la, de l', des, de) ; genre des noms",
+   "explicacao": [
+    "Partitivos para quantidade não contada: du pain, de la viande, de l'eau, des fruits.",
+    "Depois de negação ou quantidade usamos só de/d': Je ne mange pas de viande. Beaucoup de monde. Un peu d'eau.",
+    "Gênero: decore com o artigo: la voiture, le lait, le problème, la main, le soir. Não confie no português.",
+    "O adjetivo concorda: un grand appartement / une grande maison."
+   ],
+   "vocab": [
+    {
+     "en": "du pain",
+     "pt": "pão (um pouco de)"
+    },
+    {
+     "en": "de la viande",
+     "pt": "carne"
+    },
+    {
+     "en": "de l'eau (f)",
+     "pt": "água"
+    },
+    {
+     "en": "beaucoup de",
+     "pt": "muito(a)"
+    },
+    {
+     "en": "un peu de",
+     "pt": "um pouco de"
+    },
+    {
+     "en": "la voiture",
+     "pt": "o carro"
+    },
+    {
+     "en": "le lait",
+     "pt": "o leite"
+    },
+    {
+     "en": "le problème",
+     "pt": "o problema"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous invitez un ami français à dîner. Écrivez-lui : dites ce que vous allez préparer, ce que vous avez acheté au marché et demandez s'il y a des aliments qu'il ne mange pas. Écrivez entre 60 et 80 mots.",
+    "genero": "message",
+    "min": 60,
+    "max": 80,
+    "modelo": "Salut Paul,\nSamedi, je t'invite à dîner chez moi. Je vais préparer de la soupe, du poisson et une grande salade. Au marché, j'ai acheté des fruits et de l'eau, mais je n'ai pas pris de viande. Est-ce qu'il y a des aliments que tu ne manges pas ? Dis-moi vite ! J'ai aussi un peu de fromage et du pain pour l'entrée.\nÀ samedi,\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je bois du eau.",
+      "Je bois de l'eau.",
+      "Je bois de la eau.",
+      "Je bois des eau."
+     ],
+     "r": 1,
+     "exp": "Eau começa com vogal: de l'eau."
+    },
+    {
+     "t": "gap",
+     "q": "Au petit-déjeuner, je mange ___ pain avec du beurre.",
+     "resp": [
+      "du"
+     ],
+     "exp": "Pain é masculino: du pain."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia o pedido em voz alta.",
+     "frase": "Je voudrais de la salade, du fromage et de l'eau, s'il vous plaît.",
+     "exp": "« Fromage » tem o som ô; « eau » também soa « ô »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase négative est correcte ?",
+     "op": [
+      "Je n'ai pas du café.",
+      "Je n'ai pas de café.",
+      "Je n'ai pas des café.",
+      "Je n'ai pas du cafés."
+     ],
+     "r": 1,
+     "exp": "Depois de negação: pas de café."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "y",
+      "a",
+      "beaucoup",
+      "de",
+      "monde",
+      "dans",
+      "la",
+      "rue"
+     ],
+     "resp": "Il y a beaucoup de monde dans la rue.",
+     "exp": "Beaucoup de + nome, sem artigo."
+    },
+    {
+     "t": "gap",
+     "q": "Nous n'avons pas ___ voiture.",
+     "resp": [
+      "de"
+     ],
+     "exp": "Negação: pas de voiture."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga o que você come e bebe no café da manhã.",
+     "frase": "Qu'est-ce que vous mangez au petit-déjeuner ?",
+     "modelo": "Le matin, je mange du pain avec du fromage et je bois du café.",
+     "min": 6,
+     "chave": [
+      "du",
+      "de la",
+      "pain",
+      "café",
+      "mange",
+      "bois",
+      "fromage"
+     ],
+     "exp": "Use du/de la/des: je mange du pain, je bois du café."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le bon genre ?",
+     "op": [
+      "la problème",
+      "le problème",
+      "une problème",
+      "le problèmes"
+     ],
+     "r": 1,
+     "exp": "Problème é masculino: le problème."
+    },
+    {
+     "t": "gap",
+     "q": "Ma mère a acheté ___ nouvelle voiture.",
+     "resp": [
+      "une"
+     ],
+     "exp": "Voiture é feminino: une nouvelle voiture."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Raconter une expérience",
+   "objetivo": "Montar um relato completo: situar, descrever, narrar e dar sua reação.",
+   "foco": "Structure du récit : situer, décrire, raconter, réagir",
+   "explicacao": [
+    "Passo 1: situe a história (L'été dernier, il y a deux ans, un jour) com onde e com quem.",
+    "Passo 2: descreva o cenário no imparfait (Il faisait beau, il y avait du monde).",
+    "Passo 3: narre os fatos no passé composé com conectores (d'abord, soudain, enfin).",
+    "Passo 4: termine com sua reação: J'étais très heureux(se). C'était génial ! Je n'oublierai jamais ce jour."
+   ],
+   "vocab": [
+    {
+     "en": "l'été dernier",
+     "pt": "no verão passado"
+    },
+    {
+     "en": "il y a deux ans",
+     "pt": "há dois anos"
+    },
+    {
+     "en": "une expérience",
+     "pt": "uma experiência"
+    },
+    {
+     "en": "une surprise",
+     "pt": "uma surpresa"
+    },
+    {
+     "en": "c'était génial",
+     "pt": "foi ótimo"
+    },
+    {
+     "en": "ému(e)",
+     "pt": "emocionado(a)"
+    },
+    {
+     "en": "inoubliable",
+     "pt": "inesquecível"
+    },
+    {
+     "en": "je n'oublierai jamais",
+     "pt": "eu nunca vou esquecer"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous avez vécu une expérience inoubliable (un voyage, une fête, une rencontre). Racontez-la à un ami français : quand, où, ce qui s'est passé et ce que vous avez ressenti. Écrivez entre 60 et 80 mots.",
+    "genero": "message",
+    "min": 60,
+    "max": 80,
+    "modelo": "Salut Camille,\nL'été dernier, je suis parti en Bretagne avec mes parents. Il faisait beau et il y avait beaucoup de monde sur la plage. Un jour, nous avons fait une promenade en bateau. Soudain, j'ai vu des dauphins ! J'étais très ému. C'était une expérience inoubliable et je ne l'oublierai jamais. J'ai envie de retourner là-bas l'été prochain avec toi.\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase situe l'histoire au début ?",
+     "op": [
+      "Je n'oublierai jamais ce jour.",
+      "L'été dernier, je suis allé en Bretagne avec ma famille.",
+      "C'était génial !",
+      "Enfin, nous sommes rentrés."
+     ],
+     "r": 1,
+     "exp": "Começamos situando: quando, onde e com quem."
+    },
+    {
+     "t": "gap",
+     "q": "Quand j'ai ouvert la porte, c'___ une belle surprise !",
+     "resp": [
+      "était"
+     ],
+     "exp": "Reação/descrição no passado: imparfait (c'était).",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a conclusão em voz alta.",
+     "frase": "C'était une expérience inoubliable et je n'oublierai jamais ce voyage.",
+     "exp": "« Inoubliable » tem 5 sílabas: i-nou-bli-a-ble."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase exprime une réaction personnelle ?",
+     "op": [
+      "Nous avons pris le bus.",
+      "J'étais très ému et très heureux.",
+      "Il y avait beaucoup de monde.",
+      "Ensuite, nous avons mangé."
+     ],
+     "r": 1,
+     "exp": "J'étais ému e heureux dizem o que você sentiu."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "L'été",
+      "dernier",
+      "je",
+      "suis",
+      "parti",
+      "en",
+      "vacances",
+      "avec",
+      "ma",
+      "sœur"
+     ],
+     "resp": "L'été dernier, je suis parti en vacances avec ma sœur.",
+     "exp": "Marcador de tempo + je suis parti (être) + com quem."
+    },
+    {
+     "t": "gap",
+     "q": "C'était une belle expérience ; je ne l'___ jamais.",
+     "resp": [
+      "oublierai"
+     ],
+     "exp": "Je n'oublierai jamais = eu nunca vou esquecer (futuro).",
+     "dica": "OUBLIER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte em duas frases um passeio de que você gostou.",
+     "frase": "Parlez d'un voyage ou d'une sortie que vous avez aimé : où, quand, avec qui ?",
+     "modelo": "L'année dernière, je suis allé à la plage avec mes amis. C'était super !",
+     "min": 8,
+     "chave": [
+      "dernier",
+      "dernière",
+      "allé",
+      "allée",
+      "avec",
+      "c'était",
+      "plage",
+      "voyage"
+     ],
+     "exp": "Quando + je suis allé(e) + avec qui + C'était ..."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase décrit bien le cadre ?",
+     "op": [
+      "Il a fait très beau et il y a eu beaucoup de monde.",
+      "Il faisait très beau et il y avait beaucoup de monde.",
+      "Il fera très beau et il y aura beaucoup de monde.",
+      "Il fait beau et il y a beaucoup de monde."
+     ],
+     "r": 1,
+     "exp": "Cenário no passado: imparfait (faisait, y avait)."
+    },
+    {
+     "t": "gap",
+     "q": "Un jour, j'___ un chien perdu dans la rue.",
+     "resp": [
+      "ai trouvé"
+     ],
+     "exp": "Fato pontual: passé composé (j'ai trouvé).",
+     "dica": "TROUVER"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Relire et corriger son texte",
+   "objetivo": "Revisar o texto e corrigir os erros típicos de brasileiros antes de entregar.",
+   "foco": "Auto-correction : auxiliaire, accord, partitif, tu/vous, accents",
+   "explicacao": [
+    "Releia sempre com uma lista: 1) être ou avoir? 2) o particípio concorda (com être)? 3) artigo/partitivo e gênero? 4) tu ou vous coerente? 5) acentos e pontuação? 6) 60 a 80 mots?",
+    "Erros típicos: « j'ai allé » (certo: je suis allé), « je suis 20 ans » (certo: j'ai 20 ans), « beaucoup des amis » (certo: beaucoup d'amis).",
+    "Verbos de estado físico usam avoir: j'ai faim, j'ai froid, j'ai chaud.",
+    "Acentos fazem parte da ortografia: é, è, ê, à, ç. Sem eles a palavra está errada."
+   ],
+   "vocab": [
+    {
+     "en": "relire",
+     "pt": "reler"
+    },
+    {
+     "en": "une faute",
+     "pt": "um erro"
+    },
+    {
+     "en": "corriger",
+     "pt": "corrigir"
+    },
+    {
+     "en": "un accent",
+     "pt": "um acento"
+    },
+    {
+     "en": "le participe passé",
+     "pt": "o particípio passado"
+    },
+    {
+     "en": "l'auxiliaire (m)",
+     "pt": "o verbo auxiliar"
+    },
+    {
+     "en": "j'ai vingt ans",
+     "pt": "eu tenho vinte anos"
+    },
+    {
+     "en": "j'ai faim",
+     "pt": "estou com fome"
+    }
+   ],
+   "material": {
+    "tarefa": "Écrivez un message à un ami pour raconter votre journée d'hier. Relisez-le avec la liste : auxiliaire, accord, tu cohérent, accents. Écrivez entre 60 et 80 mots.",
+    "genero": "message",
+    "min": 60,
+    "max": 80,
+    "modelo": "Salut Sara,\nHier, ma journée a été longue. Je me suis levée à six heures et je suis allée au travail en bus. L'après-midi, j'ai mangé de la salade avec mes collègues. Ensuite, j'ai fini mon rapport. Le soir, je suis rentrée chez moi et je n'ai pas regardé la télévision : j'étais trop fatiguée. Et toi, comment était ta journée ? J'ai hâte de te lire.\nMarie",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Corrigez : « Hier, j'ai allé au marché. »",
+     "op": [
+      "Hier, je suis allé au marché.",
+      "Hier, j'ai été au marché allé.",
+      "Hier, je vais au marché.",
+      "Hier, j'ai aller au marché."
+     ],
+     "r": 0,
+     "exp": "Aller usa être no passé composé: je suis allé."
+    },
+    {
+     "t": "gap",
+     "q": "Corrigez : « Je suis vingt ans » → « Je ___ vingt ans »",
+     "resp": [
+      "ai"
+     ],
+     "exp": "Em francês a idade usa avoir: j'ai vingt ans."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "J'ai vingt ans et je suis arrivée hier à Paris.",
+     "exp": "« Vingt » soa « vin »; « arrivée » tem o -é fechado final."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Elle est tombé dans la rue.",
+      "Elle est tombée dans la rue.",
+      "Elle a tombée dans la rue.",
+      "Elle est tombés dans la rue."
+     ],
+     "r": 1,
+     "exp": "Tomber usa être e concorda com elle: tombée."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Nous",
+      "ne",
+      "sommes",
+      "pas",
+      "restés",
+      "à",
+      "la",
+      "maison"
+     ],
+     "resp": "Nous ne sommes pas restés à la maison.",
+     "exp": "Ne + être + pas + particípio concordando com nous (restés)."
+    },
+    {
+     "t": "gap",
+     "q": "Elle a mangé beaucoup ___ gâteaux.",
+     "resp": [
+      "de",
+      "d'"
+     ],
+     "exp": "Beaucoup de + nome, sem artigo (beaucoup de gâteaux)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Explique por que você se atrasou.",
+     "frase": "Dites en une phrase pourquoi vous êtes en retard, avec le passé composé.",
+     "modelo": "Je suis arrivé en retard parce que j'ai manqué le bus.",
+     "min": 6,
+     "chave": [
+      "suis",
+      "ai",
+      "retard",
+      "bus",
+      "parce",
+      "car"
+     ],
+     "exp": "Use parce que + passé composé (j'ai manqué le bus)."
+    },
+    {
+     "t": "mc",
+     "q": "« Salut Marie, vous allez bien ? Je t'invite à ma fête. » Quelle est l'erreur ?",
+     "op": [
+      "Mélange de tu et vous",
+      "Pas de date",
+      "Mauvaise salutation",
+      "Trop long"
+     ],
+     "r": 0,
+     "exp": "A mensagem mistura vous e tu."
+    },
+    {
+     "t": "gap",
+     "q": "Hier, mes amies sont ___ à la fête.",
+     "resp": [
+      "arrivées"
+     ],
+     "exp": "Arriver usa être e amies é feminino plural: arrivées.",
+     "dica": "ARRIVER"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado : Production écrite DELF A2",
+   "objetivo": "Treinar as 2 tarefas da Production écrite do DELF A2 em condições de prova.",
+   "foco": "Simulation : récit d'une expérience + message (remercier, s'excuser, refuser, proposer)",
+   "explicacao": [
+    "Na prova real são 45 minutos e 2 textos de 60 a 80 mots cada: (1) contar uma experiência; (2) escrever uma mensagem.",
+    "Texto 1: passé composé + imparfait + conectores (d'abord, ensuite, enfin) + sua reação.",
+    "Texto 2: saudação, agradecimento, desculpa ou recusa, motivo, proposta, despedida. Mantenha tu ou vous.",
+    "Reserve 5 minutos para releitura: auxiliar, acordo, partitivos, gênero e acentos."
+   ],
+   "vocab": [
+    {
+     "en": "raconter",
+     "pt": "contar"
+    },
+    {
+     "en": "une expérience",
+     "pt": "uma experiência"
+    },
+    {
+     "en": "inviter",
+     "pt": "convidar"
+    },
+    {
+     "en": "remercier",
+     "pt": "agradecer"
+    },
+    {
+     "en": "s'excuser",
+     "pt": "pedir desculpas"
+    },
+    {
+     "en": "refuser",
+     "pt": "recusar"
+    },
+    {
+     "en": "proposer",
+     "pt": "propor"
+    },
+    {
+     "en": "relire",
+     "pt": "reler"
+    }
+   ],
+   "material": {
+    "tarefa": "Production écrite (45 minutes). Exercice 1 : Vous avez passé des vacances ou un week-end inoubliable. Vous racontez cette expérience à un ami français (60 à 80 mots). Exercice 2 : Un ami français, Thomas, vous invite à sa fête d'anniversaire samedi prochain. Vous ne pouvez pas venir. Écrivez-lui un message pour le remercier, vous excuser, expliquer pourquoi et proposer une autre date (60 à 80 mots). Total : entre 120 et 170 mots.",
+    "genero": "simulado DELF A2 (2 textes)",
+    "min": 120,
+    "max": 170,
+    "modelo": "Exercice 1\nSalut Camille,\nL'été dernier, je suis parti à Florianópolis avec mon cousin. Il faisait très chaud et la plage était magnifique. D'abord, nous avons loué une petite maison près de la mer. Ensuite, nous avons nagé tous les jours et nous avons mangé du poisson dans un restaurant sympa. Enfin, un soir, nous avons vu des dauphins ! J'étais très ému. C'était un voyage inoubliable et je ne l'oublierai jamais.\nPedro\n\nExercice 2\nSalut Thomas,\nMerci beaucoup pour ton invitation ! Je suis vraiment désolé, mais je ne peux pas venir samedi, parce que je dois travailler toute la journée. Je te souhaite un très bel anniversaire et je t'envoie un petit cadeau. Est-ce qu'on peut dîner ensemble dimanche prochain ? Je t'invite au restaurant, comme ça nous pouvons fêter ton anniversaire un peu plus tard.\nGrosses bises,\nPedro",
+    "checklist": [
+     "Respondi a todos os pontos da tarefa, um por um?",
+     "Usei o mesmo registro (tu ou vous) do começo ao fim?",
+     "Conferi o auxiliar (être/avoir), o acordo do particípio e os acentos?",
+     "Comecei com uma saudação e terminei com uma despedida e meu nome?",
+     "Escrevi o número de palavras pedido?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Exercice 1 : vous racontez un voyage passé. Quels temps utilisez-vous ?",
+     "op": [
+      "Passé composé et imparfait",
+      "Futur et conditionnel",
+      "Seulement le présent",
+      "Subjonctif"
+     ],
+     "r": 0,
+     "exp": "Narração no passado: passé composé para os fatos e imparfait para o cenário."
+    },
+    {
+     "t": "gap",
+     "q": "Madame, je vous ___ de votre réponse.",
+     "resp": [
+      "remercie"
+     ],
+     "exp": "Remercier quelqu'un de/pour: je vous remercie de votre réponse.",
+     "dica": "REMERCIER"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a frase em voz alta.",
+     "frase": "L'été dernier, nous sommes partis en Bretagne et il faisait très beau.",
+     "exp": "« Partis » termina em i; « faisait » soa « fezé »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle fin convient pour un message à un directeur ?",
+     "op": [
+      "Bises et à+",
+      "Cordialement,",
+      "Salut !",
+      "Je t'embrasse"
+     ],
+     "r": 1,
+     "exp": "Cordialement é a fórmula formal."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Quand",
+      "nous",
+      "sommes",
+      "arrivés",
+      "il",
+      "pleuvait",
+      "beaucoup"
+     ],
+     "resp": "Quand nous sommes arrivés, il pleuvait beaucoup.",
+     "exp": "Passé composé (fato) + imparfait (cenário).",
+     "alt": [
+      "Il pleuvait beaucoup quand nous sommes arrivés."
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Elles sont allées ___ musée samedi.",
+     "resp": [
+      "au"
+     ],
+     "exp": "À + le = au (le musée)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Convide um amigo para jantar no sábado à noite.",
+     "frase": "Invitez un ami à dîner samedi soir.",
+     "modelo": "Samedi soir, je fais un dîner chez moi. Est-ce que tu veux venir à huit heures ?",
+     "min": 8,
+     "chave": [
+      "dîner",
+      "invite",
+      "viens",
+      "venir",
+      "veux",
+      "fête",
+      "samedi"
+     ],
+     "exp": "Dê o dia, a hora e o lugar."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Hier, je suis allé au cinéma et j'ai vu un bon film.",
+      "Hier, j'ai allé au cinéma et j'ai vu un bon film.",
+      "Hier, je suis allé au cinéma et je suis vu un bon film.",
+      "Hier, j'allé au cinéma et j'ai vu un bon film."
+     ],
+     "r": 0,
+     "exp": "Aller usa être (je suis allé); voir usa avoir (j'ai vu)."
+    },
+    {
+     "t": "gap",
+     "q": "Je n'ai pas ___ argent pour ce voyage.",
+     "resp": [
+      "d'"
+     ],
+     "exp": "Depois de negação: pas d'argent (de + vogal = d')."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Malheureusement",
+      "je",
+      "ne",
+      "peux",
+      "pas",
+      "venir",
+      "à",
+      "ta",
+      "fête"
+     ],
+     "resp": "Malheureusement, je ne peux pas venir à ta fête.",
+     "exp": "Malheureusement abre a frase; ne ... pas em volta de peux."
+    }
+   ]
+  }
+ ]
+}

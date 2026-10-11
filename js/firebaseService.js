@@ -40,11 +40,22 @@
       });
       cache = d; return d;
     }
-    const contarPalavras = t => (String(t || "").match(/[A-Za-zÀ-ÿ'’-]+/g) || []).length;
+    const contarPalavras = t => (String(t || "").match(/[A-Za-zÀ-ÿœŒæÆ'’-]+/g) || []).length;
 
     /* ---------- correção pela IA ---------- */
-    async function corrigirWriting(p) {
-      const prompt = `Você é examinador(a) do Cambridge English (${p.nivel}). Corrija a redação abaixo de um estudante brasileiro.
+    // francês (módulo "frances:...") é corrigido no padrão DELF/DALF; o resto no padrão Cambridge
+    const ehFrances = p => String(p.modulo || "").startsWith("frances:");
+    const provaFr = nivel => /^C/.test(nivel || "") ? "DALF" : "DELF";
+    const pedidoWriting = p => ehFrances(p) ? `Você é examinador(a) habilitado(a) do ${provaFr(p.nivel)} ${p.nivel} (France Éducation international). Corrija a produção escrita abaixo de um estudante brasileiro.
+Tarefa pedida: ${p.prompt || "(não informada)"}
+Gênero: ${p.genero || "—"} · Limite: ${p.minPalavras || "?"}–${p.maxPalavras || "?"} palavras · O estudante escreveu ${p.palavras} palavras.
+Avalie pela grade oficial resumida em 4 critérios, nota de 0 a 5 cada, considerando o nível ${p.nivel}: respeito à tarefa e adequação sociolinguística (registro tu/vous, fórmulas, número de palavras); capacidade de apresentar fatos e argumentar; coerência e coesão (organização, conectores, pontuação); competência linguística (léxico, morfossintaxe, ortografia, acentos, concordâncias).
+Responda SÓ com JSON, comentários em português simples:
+{"nota":0-20,"resumo":"2 frases","criterios":[{"nome":"Consigne et registre","nota":0-5,"comentario":"..."},{"nome":"Contenu et argumentation","nota":0-5,"comentario":"..."},{"nome":"Cohérence et cohésion","nota":0-5,"comentario":"..."},{"nome":"Lexique et grammaire","nota":0-5,"comentario":"..."}],
+"erros":[{"trecho":"texto original","correcao":"forma correta","explicacao":"curta"}],"dicas":["até 3 dicas práticas para a prova"],"versaoMelhorada":"um parágrafo do texto reescrito no nível ${p.nivel}"}
+No máximo 6 erros, os mais importantes (atenção aos erros típicos de brasileiros: gênero, acentos, être/avoir, concordância do particípio, falsos cognatos). Se o texto não estiver em francês ou fugir da tarefa, diga isso no resumo e dê nota baixa no primeiro critério.
+
+` : `Você é examinador(a) do Cambridge English (${p.nivel}). Corrija a redação abaixo de um estudante brasileiro.
 Tarefa pedida: ${p.prompt || "(não informada)"}
 Gênero: ${p.genero || "—"} · Limite: ${p.minPalavras || "?"}–${p.maxPalavras || "?"} palavras · O estudante escreveu ${p.palavras} palavras.
 Avalie pelos 4 critérios oficiais do Cambridge Writing (Content, Communicative Achievement, Organisation, Language), nota de 0 a 5 cada, considerando o nível ${p.nivel}.
@@ -53,7 +64,9 @@ Responda SÓ com JSON, comentários em português simples:
 "erros":[{"trecho":"texto original","correcao":"forma correta","explicacao":"curta"}],"dicas":["até 3 dicas práticas"],"versaoMelhorada":"um parágrafo do texto reescrito no nível ${p.nivel}"}
 No máximo 6 erros, os mais importantes. Se o texto não estiver em inglês ou fugir da tarefa, diga isso no resumo e dê nota baixa em Content.
 
-REDAÇÃO:
+`;
+    async function corrigirWriting(p) {
+      const prompt = `${pedidoWriting(p)}REDAÇÃO:
 """${p.texto}"""`;
       const r = await deps.iaJson(prompt);
       const n = x => Math.max(0, Math.min(5, Math.round(+x || 0)));
@@ -67,7 +80,12 @@ REDAÇÃO:
       };
     }
     async function corrigirSpeaking(p) {
-      const prompt = `Você é examinador(a) do Cambridge English Speaking (${p.nivel}). Ouça a resposta gravada de um estudante brasileiro.
+      const prompt = ehFrances(p) ? `Você é examinador(a) habilitado(a) da Production orale do ${provaFr(p.nivel)} ${p.nivel}. Ouça a resposta gravada de um estudante brasileiro.
+Tarefa: ${p.prompt || "(não informada)"}
+Avalie 4 critérios (0 a 5 cada) para o nível ${p.nivel}: realização da tarefa (cumpre o pedido, registro, argumenta quando pedido), léxico (variedade e precisão), morfossintaxe (correção gramatical) e fonética e fluência (nasais, u/ou, liaison, entonação, ritmo).
+Responda SÓ com JSON, comentários em português simples:
+{"transcricao":"o que o estudante disse, em francês","resumo":"2 frases","criterios":[{"nome":"Réalisation de la tâche","nota":0-5,"comentario":"..."},{"nome":"Lexique","nota":0-5,"comentario":"..."},{"nome":"Morphosyntaxe","nota":0-5,"comentario":"..."},{"nome":"Phonétique et fluidité","nota":0-5,"comentario":"..."}],"dicas":["até 3 dicas práticas"]}
+Se não houver fala em francês no áudio, diga isso no resumo e dê notas baixas.` : `Você é examinador(a) do Cambridge English Speaking (${p.nivel}). Ouça a resposta gravada de um estudante brasileiro.
 Tarefa: ${p.prompt || "(não informada)"}
 Avalie Grammar & Vocabulary, Discourse Management, Pronunciation e Interactive Communication (0 a 5 cada) para o nível ${p.nivel}.
 Responda SÓ com JSON, comentários em português simples:
@@ -95,7 +113,7 @@ Se não houver fala em inglês no áudio, diga isso no resumo e dê notas baixas
       /* ---------- envios ao mentor (IA) ---------- */
       async submitWriting(uid, p) {
         const texto = String(p.texto || "").slice(0, MAX_TEXTO), palavras = contarPalavras(texto);
-        const previa = Mock.dicasWriting(texto, p.minPalavras, p.maxPalavras);   // dicas instantâneas, sem rede
+        const previa = Mock.dicasWriting(texto, p.minPalavras, p.maxPalavras, ehFrances(p));   // dicas instantâneas, sem rede
         const base = { tipo: "writing", modulo: p.modulo, nivel: p.nivel, texto, palavras, prompt: String(p.prompt || "").slice(0, 1200), genero: p.genero || "", minPalavras: p.minPalavras || 0, maxPalavras: p.maxPalavras || 0, em: Date.now(), criadoEm: FV.serverTimestamp() };
         const ref = colEnvios().doc();
         await ref.set({ ...base, status: "corrigindo" });

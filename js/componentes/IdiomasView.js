@@ -1,4 +1,5 @@
-/* IdiomasView — aba "Idiomas": curso em trilhas de aulas (primeiro idioma: Inglês, padrão Cambridge).
+/* IdiomasView — aba "Idiomas": cursos em trilhas de aulas (Inglês no padrão Cambridge, Francês no padrão DELF/DALF).
+   Os dados de cada idioma ficam em window.LA_IDIOMAS (js/idiomas/conteudo*.js); nível, meta e aulas são guardados por idioma.
    - Na primeira visita a pessoa escolhe o idioma e a prova-meta e pode fazer o nivelamento (CambridgeTestView).
    - Cada nível (A1–C2) tem 4 trilhas (Reading & Use of English, Listening, Writing, Speaking) com 15 aulas cada;
      a aula 15 é um simulado. A próxima aula abre quando a anterior tem 60% de acerto.
@@ -12,21 +13,24 @@
   "use strict";
   const XP = { acerto: 5, tarefa: 20, porMinuto: 1 };
   const APROVA = 0.6;                                  // acerto mínimo para abrir a próxima aula
-  const MATERIA = "Inglês";
   const IDIOMAS = [
     { k: "ingles", nome: "Inglês", bandeira: "🇬🇧", ativo: true, prova: "Cambridge English" },
     { k: "espanhol", nome: "Espanhol", bandeira: "🇪🇸", prova: "DELE" },
-    { k: "frances", nome: "Francês", bandeira: "🇫🇷", prova: "DELF/DALF" },
+    { k: "frances", nome: "Francês", bandeira: "🇫🇷", ativo: true, prova: "DELF/DALF" },
     { k: "alemao", nome: "Alemão", bandeira: "🇩🇪", prova: "Goethe-Zertifikat" },
     { k: "italiano", nome: "Italiano", bandeira: "🇮🇹", prova: "CELI" },
     { k: "japones", nome: "Japonês", bandeira: "🇯🇵", prova: "JLPT" }
   ];
-  const E = { uid: null, nivelVer: null, trilhaAberta: null, perfil: null, nivel: null, gravacao: null, aulas: {}, tela: "inicio" };
+  const E = { uid: null, idioma: "ingles", nivelVer: null, trilhaAberta: null, perfil: null, nivel: null, gravacao: null, aulas: {}, tela: "inicio" };
 
   const Srv = () => window.LAService || window.FirebaseServiceMock;   // nuvem com conta; simulado só no modo visitante
-  const IN = () => window.LA_INGLES;
+  const IN = () => (window.LA_IDIOMAS || {})[E.idioma] || window.LA_INGLES;
+  const materia = () => IN().materia || "Inglês";
+  const ativos = () => IDIOMAS.filter(l => l.ativo && (window.LA_IDIOMAS || {})[l.k]);
+  // meta por idioma (quem escolheu antes desta versão tem só prefs.meta, que era do inglês)
+  const metaDe = (prefs, k = E.idioma) => ((prefs || {}).metas || {})[k] || (k === "ingles" && (prefs || {}).meta) || null;
   const Ex = () => window.LAComp.Exercicio;
-  const chaveAula = (nivel, skill, n) => `ingles:${nivel}:${skill}:${n}`;
+  const chaveAula = (nivel, skill, n) => `${E.idioma}:${nivel}:${skill}:${n}`;
   const comp = k => IN().COMPETENCIAS.find(c => c.k === k);
   // plano grátis: nivelamento + aula 1 de cada trilha; o resto é Logic Academy Pro
   const gratis = n => n === 1;
@@ -34,8 +38,8 @@
 
   /* ---------- dados ---------- */
   async function carregarTrilha(nivel, skill) {
-    const id = nivel + "-" + skill;
-    if (!E.aulas[id]) E.aulas[id] = fetch(IN().arquivo(nivel, skill) + "?v=2.2").then(r => { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+    const id = E.idioma + "-" + nivel + "-" + skill;
+    if (!E.aulas[id]) E.aulas[id] = fetch(IN().arquivo(nivel, skill) + "?v=2.9").then(r => { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
       .catch(e => { delete E.aulas[id]; throw e; });
     return E.aulas[id];
   }
@@ -46,7 +50,7 @@
   const feitasNivel = (nivel, skill) => { let c = 0; for (let n = 1; n <= IN().AULAS_POR_TRILHA; n++) if (aprovada(nivel, skill, n)) c++; return c; };
   // trilha até a prova-meta: do nível atual da pessoa até o nível da meta
   function prontidao() {
-    const N = IN().NIVEIS, prefs = (E.perfil && E.perfil.prefs) || {}, meta = prefs.meta || "B2", de = (E.nivel && E.nivel.nivel) || "A1";
+    const N = IN().NIVEIS, prefs = (E.perfil && E.perfil.prefs) || {}, meta = metaDe(prefs) || IN().metaPadrao || "B2", de = (E.nivel && E.nivel.nivel) || "A1";
     const niveis = N.slice(Math.min(N.indexOf(de), N.indexOf(meta)), N.indexOf(meta) + 1);
     let feitas = 0, total = 0;
     niveis.forEach(nv => IN().COMPETENCIAS.forEach(c => { feitas += feitasNivel(nv, c.k); total += IN().AULAS_POR_TRILHA; }));
@@ -56,41 +60,52 @@
 
   async function render(container, app) {
     container.onclick = null;
-    if (E.uid !== app.uid()) Object.assign(E, { uid: app.uid(), nivelVer: null, trilhaAberta: null, perfil: null, nivel: null, tela: "inicio" });   // trocou de conta
+    if (E.uid !== app.uid()) Object.assign(E, { uid: app.uid(), idioma: "ingles", nivelVer: null, trilhaAberta: null, perfil: null, nivel: null, tela: "inicio" });   // trocou de conta
     container.innerHTML = `<div class="page">${app.pageHead("Idiomas", "Cursos completos até a prova internacional, no seu ritmo.")}<div class="card row muted"><span class="spinner"></span>Carregando seu curso…</div></div>`;
     let nivel, perfil;
-    try { [nivel, perfil] = await Promise.all([Srv().getUserLevel(app.uid(), "ingles"), Srv().getLanguageProfile(app.uid())]); }
+    try {
+      perfil = await Srv().getLanguageProfile(app.uid());
+      const k = perfil.prefs && perfil.prefs.idioma;
+      if (k && (window.LA_IDIOMAS || {})[k] && k !== E.idioma) Object.assign(E, { idioma: k, nivelVer: null, trilhaAberta: null });
+      nivel = await Srv().getUserLevel(app.uid(), E.idioma);
+    }
     catch (e) { container.innerHTML = `<div class="page">${app.pageHead("Idiomas")}<div class="card"><p>Não foi possível carregar agora. Confira sua internet e tente de novo.</p><button class="btn" type="button" data-id="tentar">Tentar de novo</button></div></div>`;
       container.querySelector('[data-id="tentar"]').onclick = () => render(container, app); return; }
     if (!app.naTela()) return;                                   // a pessoa saiu da aba enquanto carregava
     E.nivel = nivel; E.perfil = perfil;
     if (!E.nivelVer) E.nivelVer = (nivel && nivel.nivel) || "A1";
+    Ex().idioma(IN().lang || "en-GB");
     if (!perfil.prefs || !perfil.prefs.idioma) { escolher(container, app, 1); return; }
+    if (!metaDe(perfil.prefs)) { escolher(container, app, 2, { idioma: E.idioma }); return; }
     pintarInicio(container, app);
+    if (E.perguntar) { E.perguntar = false; if (!nivel) perguntarNivelamento(container, app); }   // idioma novo: oferece o nivelamento
   }
 
   /* ---------- 1ª visita: a pessoa escolhe o idioma e a prova-meta ---------- */
   function escolher(container, app, passo, sel = {}) {
-    const esc = app.esc, I = IN(), atual = (E.perfil && E.perfil.prefs) || {};
+    const esc = app.esc, atual = (E.perfil && E.perfil.prefs) || {};
+    const I = (window.LA_IDIOMAS || {})[sel.idioma] || IN(), metaAtual = metaDe(atual, I.k);
     if (passo === 1) {
       container.innerHTML = `<div class="page" style="max-width:820px">${app.pageHead("Qual idioma você quer aprender?", "Escolha o idioma e, em seguida, a prova que você quer estar pronto para fazer.")}
         <div class="idm-escolha">${IDIOMAS.map(l => `<button type="button" class="opt idm-lingua ${l.k === (atual.idioma || "") ? "on" : ""}" data-lingua="${l.k}" ${l.ativo ? "" : "disabled"}>
           <span class="idm-band">${l.bandeira}</span><b>${esc(l.nome)}</b><span>${l.ativo ? `Curso completo · ${esc(l.prova)}` : `Em breve · ${esc(l.prova)}`}</span></button>`).join("")}</div>
-        <p class="hint">Por enquanto só o Inglês está disponível. Os outros idiomas chegam nas próximas atualizações.</p></div>`;
+        <p class="hint">Inglês (Cambridge) e Francês (DELF/DALF) já têm o curso completo, do A1 ao C2. Os outros idiomas chegam nas próximas atualizações. Seu progresso fica guardado em cada idioma.</p></div>`;
       container.onclick = e => { const b = e.target.closest("[data-lingua]"); if (b && !b.disabled) escolher(container, app, 2, { idioma: b.dataset.lingua }); };
       return;
     }
     container.innerHTML = `<div class="page" style="max-width:820px">${app.pageHead("Qual prova você quer fazer?", "O curso monta a sua trilha até essa prova. Dá para mudar quando quiser.")}
-      <div class="idm-escolha">${I.METAS.map(m => `<button type="button" class="opt idm-meta ${m.nivel === (atual.meta || "") ? "on" : ""}" data-meta="${m.nivel}"><span class="idm-band">${m.nivel}</span><b>${esc(m.nome)}</b><span>${esc(m.desc)}</span></button>`).join("")}
-        <button type="button" class="opt idm-meta" data-meta="?"><span class="idm-band">?</span><b>Ainda não sei</b><span>Começamos com o B2 First, o mais pedido. Você troca depois.</span></button></div>
+      <div class="idm-escolha">${I.METAS.map(m => `<button type="button" class="opt idm-meta ${m.nivel === (metaAtual || "") ? "on" : ""}" data-meta="${m.nivel}"><span class="idm-band">${m.nivel}</span><b>${esc(m.nome)}</b><span>${esc(m.desc)}</span></button>`).join("")}
+        <button type="button" class="opt idm-meta" data-meta="?"><span class="idm-band">?</span><b>Ainda não sei</b><span>Começamos com o ${esc(I.EXAME[I.metaPadrao || "B2"])}, o mais pedido. Você troca depois.</span></button></div>
       <div class="row" style="margin-top:12px"><button class="btn ghost" type="button" data-volta>Voltar</button></div></div>`;
     container.onclick = async e => {
       if (e.target.closest("[data-volta]")) { escolher(container, app, 1, sel); return; }
       const b = e.target.closest("[data-meta]"); if (!b) return;
       container.querySelectorAll("[data-meta]").forEach(x => x.disabled = true);
       try {
-        const prefs = await Srv().savePrefs(app.uid(), { idioma: sel.idioma || "ingles", meta: b.dataset.meta === "?" ? "B2" : b.dataset.meta });
+        const k = I.k || "ingles", meta = b.dataset.meta === "?" ? (I.metaPadrao || "B2") : b.dataset.meta;
+        const prefs = await Srv().savePrefs(app.uid(), { idioma: k, metas: { ...(atual.metas || {}), ...(atual.meta && !(atual.metas || {}).ingles ? { ingles: atual.meta } : {}), [k]: meta } });
         E.perfil = { ...(E.perfil || {}), prefs };
+        if (k !== E.idioma) { Object.assign(E, { idioma: k, nivelVer: null, trilhaAberta: null, perguntar: true }); render(container, app); return; }
       } catch (err) { app.toast("Não foi possível salvar agora. Tente de novo."); container.querySelectorAll("[data-meta]").forEach(x => x.disabled = false); return; }
       pintarInicio(container, app);
       if (!E.nivel) perguntarNivelamento(container, app);
@@ -100,7 +115,7 @@
     const bg = document.createElement("div");
     bg.className = "modal-bg";
     bg.innerHTML = `<div class="card stack modal" role="dialog" aria-modal="true" aria-labelledby="idm-t">
-      <span class="eyebrow">Inglês · Cambridge</span><h3 id="idm-t">Vamos descobrir o seu nível?</h3>
+      <span class="eyebrow">${app.esc(IN().nome)} · ${app.esc(IN().provaCurta)}</span><h3 id="idm-t">Vamos descobrir o seu nível?</h3>
       <p class="muted small">O teste fica mais difícil conforme você acerta, misturando questões de marcar, escrever e falar (leva de 5 a 15 minutos). Assim o curso começa no ponto certo.</p>
       <div class="opts opts-col"><button type="button" class="opt" data-idm="sim"><b>Fazer o teste de nivelamento</b><span>Recomendado</span></button>
         <button type="button" class="opt" data-idm="a1"><b>Começar do zero (A1)</b><span>Para quem está começando agora</span></button>
@@ -118,7 +133,7 @@
   function iniciarTeste(container, app) {
     E.tela = "teste";
     window.LAComp.CambridgeTestView.abrir(container, {
-      app,
+      app, idioma: E.idioma,
       aoConcluir: reg => { E.nivel = reg; E.nivelVer = reg.nivel; E.tela = "inicio"; render(container, app); },
       aoCancelar: () => { E.tela = "inicio"; render(container, app); }
     });
@@ -129,11 +144,12 @@
     E.tela = "inicio";
     const { esc, ico } = app, I = IN(), nv = E.nivelVer, perfil = E.perfil || { xp: 0, concluidos: {} }, prefs = perfil.prefs || {};
     const meu = E.nivel && E.nivel.nivel, P = prontidao(), metaNome = (I.METAS.find(m => m.nivel === P.meta) || {}).nome || I.EXAME[P.meta];
-    const lingua = IDIOMAS.find(l => l.k === (prefs.idioma || "ingles"));
+    const lingua = IDIOMAS.find(l => l.k === E.idioma) || IDIOMAS[0];
     const pct = P.total ? Math.round(P.feitas / P.total * 100) : 0;
-    const concl = Object.keys(perfil.concluidos || {}).filter(k => k.split(":").length === 4 && (perfil.concluidos[k].pct == null || perfil.concluidos[k].pct >= APROVA)).length;
+    const concl = Object.keys(perfil.concluidos || {}).filter(k => k.split(":").length === 4 && k.startsWith(E.idioma + ":") && (perfil.concluidos[k].pct == null || perfil.concluidos[k].pct >= APROVA)).length;
     container.innerHTML = `<div class="page idiomas">
-      ${app.pageHead("Idiomas", `${lingua.bandeira} ${esc(lingua.nome)} · meta: <b>${esc(metaNome)}</b>`, `<button class="btn ghost" type="button" data-id="mudar">${ico("gear")}Idioma e meta</button><button class="btn" type="button" data-id="nivelamento">${ico("chart")}${meu ? "Refazer nivelamento" : "Fazer nivelamento"}</button>`)}
+      ${app.pageHead("Idiomas", `${lingua.bandeira} ${esc(lingua.nome)} · meta: <b>${esc(metaNome)}</b>`, `<button class="btn ghost" type="button" data-id="mudar">${ico("gear")}Mudar a meta</button><button class="btn" type="button" data-id="nivelamento">${ico("chart")}${meu ? "Refazer nivelamento" : "Fazer nivelamento"}</button>`)}
+      ${ativos().length > 1 ? `<div class="idm-linguas" role="tablist" aria-label="Idioma">${ativos().map(l => `<button type="button" role="tab" class="idm-lg ${l.k === E.idioma ? "on" : ""}" data-trocar-lingua="${l.k}" aria-selected="${l.k === E.idioma}"><span>${l.bandeira}</span><b>${esc(l.nome)}</b><small>${esc(l.prova)}</small></button>`).join("")}</div>` : ""}
       <div class="card idm-meta-card">
         <div class="idm-meta-top"><div><span class="eyebrow">Sua trilha até o ${esc(metaNome)}</span>
           <h2 style="margin:4px 0 0">${P.pronto ? "Você está pronto para a prova! 🎉" : `${P.feitas} de ${P.total} aulas concluídas`}</h2>
@@ -141,7 +157,7 @@
           <div class="idm-meta-pct">${pct}%</div></div>
         <div class="prog" style="height:10px"><i style="width:${pct}%"></i></div>
       </div>
-      ${app.ehPro && !app.ehPro() ? `<div class="card flat idm-gratis"><span><span class="pro-tag">PRO</span> No plano grátis você faz o nivelamento e a <b>aula 1 de cada trilha</b>. Libere as 360 aulas e os simulados com o Logic Academy Pro.</span><button class="btn sm primary" type="button" data-id="pro">Ver planos · R$ 5/mês</button></div>` : ""}
+      ${app.ehPro && !app.ehPro() ? `<div class="card flat idm-gratis"><span><span class="pro-tag">PRO</span> No plano grátis você faz o nivelamento e a <b>aula 1 de cada trilha</b>. Libere as ${ativos().length * 360} aulas (${ativos().map(l => esc(l.nome)).join(" e ")}) e os simulados com o Logic Academy Pro.</span><button class="btn sm primary" type="button" data-id="pro">Ver planos · R$ 5/mês</button></div>` : ""}
       <div class="idm-resumo">
         <div class="stat"><div class="eyebrow">Seu nível</div><div class="v">${meu ? esc(meu) : "—"}</div><div class="s">${meu ? esc(I.EXAME[meu]) : "Faça o nivelamento"}</div></div>
         <div class="stat"><div class="eyebrow">XP de idiomas</div><div class="v">${perfil.xp}</div><div class="s">${window.LAService ? "cada habilidade também vale XP no perfil, 1 vez por dia" : "acertos + tempo estudado"}</div></div>
@@ -154,7 +170,7 @@
       <div data-lista></div>
       <div data-envios></div>
       ${perfil.historico && perfil.historico.length ? `<div class="card" style="margin-top:14px"><div class="card-h"><h3>Últimos XP de idiomas</h3></div><div class="list">${perfil.historico.slice(0, 5).map(h => `<div class="li" style="grid-template-columns:minmax(0,1fr) auto"><span class="small">${esc(h.motivo)}</span><b class="small">+${h.xp} XP</b></div>`).join("")}</div></div>` : ""}
-      <p class="hint" style="margin-top:12px">Curso no formato das provas Cambridge English (Key, Preliminary, First, Advanced e Proficiency). Conteúdo próprio do Logic Academy, sem vínculo com a Cambridge University Press & Assessment.</p>
+      <p class="hint" style="margin-top:12px">${esc(I.aviso || "")}</p>
     </div>`;
     if (E.trilhaAberta) abrirLista(container, app, E.trilhaAberta, false);
     pintarEnvios(container, app);
@@ -168,8 +184,19 @@
       const s = e.target.closest("[data-id-semana]"); if (s) { modalSemana(app, s.dataset.idSemana); return; }
       if (e.target.closest('[data-id="nivelamento"]')) { iniciarTeste(container, app); return; }
       if (e.target.closest('[data-id="pro"]')) { app.go("pro"); return; }
-      if (e.target.closest('[data-id="mudar"]')) escolher(container, app, 1);
+      const tl = e.target.closest("[data-trocar-lingua]"); if (tl) { trocarIdioma(container, app, tl.dataset.trocarLingua); return; }
+      if (e.target.closest('[data-id="mudar"]')) escolher(container, app, 2, { idioma: E.idioma });
     };
+  }
+  // troca de idioma pelas abas do painel: guarda a escolha e abre o painel do outro idioma
+  async function trocarIdioma(container, app, k) {
+    if (k === E.idioma || !(window.LA_IDIOMAS || {})[k]) return;
+    Ex().pararFala();
+    const prefs = (E.perfil && E.perfil.prefs) || {};
+    if (!metaDe(prefs, k)) { escolher(container, app, 2, { idioma: k }); return; }
+    try { E.perfil = { ...(E.perfil || {}), prefs: await Srv().savePrefs(app.uid(), { idioma: k }) }; } catch (e) {}
+    Object.assign(E, { idioma: k, nivelVer: null, trilhaAberta: null });
+    render(container, app);
   }
   function cartaoTrilha(app, nv, c) {
     const { esc, ico } = app, T = IN().AULAS_POR_TRILHA, f = feitasNivel(nv, c.k), px = proxima(nv, c.k);
@@ -207,7 +234,7 @@
       <div class="field"><label for="ids-dia">Dia</label><select id="ids-dia">${dias.map(d => `<option value="${d.k}" ${d.hoje ? "selected" : ""}>${esc(d.n)}${d.hoje ? " (hoje)" : ""}</option>`).join("")}</select></div>
       <div class="grid2"><div class="field"><label for="ids-ini">Começa às</label><input type="time" id="ids-ini" value="19:00" required></div>
       <div class="field"><label for="ids-min">Duração (min)</label><input type="number" id="ids-min" min="10" max="180" step="5" value="${c.min}" required></div></div>
-      <p class="small muted">O bloco entra na sua semana como <b>${MATERIA}</b>. Se o horário estiver ocupado, ele vai para o próximo horário livre do dia.</p>
+      <p class="small muted">O bloco entra na sua semana como <b>${esc(materia())}</b>. Se o horário estiver ocupado, ele vai para o próximo horário livre do dia.</p>
       <div class="row" style="justify-content:flex-end;gap:8px"><button class="btn ghost" type="button" data-ids="x">Cancelar</button><button class="btn primary" type="submit">Adicionar</button></div></form>`;
     document.body.appendChild(bg);
     const f = bg.querySelector("form");
@@ -217,8 +244,8 @@
       const dia = f.querySelector("#ids-dia").value, inicio = f.querySelector("#ids-ini").value || "19:00", min = Math.max(10, Math.min(180, +f.querySelector("#ids-min").value || c.min));
       const bt = f.querySelector('[type="submit"]'); bt.disabled = true; bt.textContent = "Adicionando…";
       try {
-        await Srv().addLanguageTaskToWeek(app.uid(), { idioma: "ingles", modulo: chaveAula(nv, skill, n), rotulo, dia, inicio, min });
-        const r = app.adicionarBlocoNaSemana({ dia, inicio, min, materia: MATERIA, tarefa: titulo ? `${rotulo}: ${titulo}` : rotulo, tipo: "exercícios" });
+        await Srv().addLanguageTaskToWeek(app.uid(), { idioma: E.idioma, modulo: chaveAula(nv, skill, n), rotulo, dia, inicio, min });
+        const r = app.adicionarBlocoNaSemana({ dia, inicio, min, materia: materia(), tarefa: titulo ? `${rotulo}: ${titulo}` : rotulo, tipo: "exercícios" });
         bg.remove(); app.toast(r.msg);
       } catch (err) { bt.disabled = false; bt.textContent = "Adicionar"; app.toast("Não foi possível adicionar agora. Tente de novo."); }
     };
@@ -239,7 +266,7 @@
     function topo() {
       return `<div class="row idm-aula-topo"><button class="btn ghost sm" type="button" data-a="voltar">${ico("back")}Aulas</button>
         <span class="pill solid">${esc(nv)}</span><span class="pill">${esc(c.curto)} · ${sim ? "Simulado" : `Aula ${n} de ${T}`}</span>
-        <button class="btn sm" type="button" data-a="crono" style="margin-left:auto" title="Conta o tempo como Inglês e vale XP">${ico("watch")}Estudar com cronômetro</button></div>`;
+        <button class="btn sm" type="button" data-a="crono" style="margin-left:auto" title="Conta o tempo como ${esc(materia())} e vale XP">${ico("watch")}Estudar com cronômetro</button></div>`;
     }
     const vocabHtml = () => (a.vocab || []).length ? `<div class="idm-vocab">${a.vocab.map((v, k) => `<button type="button" class="idm-voc" data-voc="${k}" title="Ouvir"><b>${esc(v.en)}</b><span>${esc(v.pt)}</span></button>`).join("")}</div>` : "";
     const frasesHtml = () => (m.frases_uteis || []).length ? `<p class="small"><b>Frases úteis:</b> ${m.frases_uteis.map(x => `<span class="idm-frase">${esc(x)}</span>`).join(" ")}</p>` : "";
@@ -284,7 +311,7 @@
         <div class="card stack"><span class="eyebrow">Tarefa final · ${skill === "writing" ? esc(m.genero) : "fala livre"}</span>
           <div class="idm-texto">${esc(m.tarefa).replace(/\n/g, "<br>")}</div>
           ${skill === "writing" ? `${(m.checklist || []).length ? `<details><summary class="small">Antes de enviar, confira</summary><ul class="small">${m.checklist.map(x => `<li>${esc(x)}</li>`).join("")}</ul></details>` : ""}
-            <textarea class="idm-editor" rows="12" spellcheck="true" lang="en" placeholder="Write your answer here…" aria-label="Sua resposta em inglês"></textarea>
+            <textarea class="idm-editor" rows="12" spellcheck="true" lang="${esc((IN().lang || "en").slice(0, 2))}" placeholder="${esc(IN().placeholder || "")}" aria-label="Sua resposta em ${esc(IN().nome.toLowerCase())}"></textarea>
             <div class="row" style="justify-content:space-between"><span class="small muted" data-contador>0 palavras · meta ${m.min}–${m.max}</span>
             <div class="row"><button class="btn ghost" type="button" data-a="pular">Pular tarefa</button><button class="btn primary" type="button" data-enviar-w>Enviar para o Mentor</button></div></div>`
           : `${frasesHtml()}
@@ -326,7 +353,7 @@
         const b = e.target.closest("[data-a]"); if (!b) return;
         const x = b.dataset.a;
         if (x === "voltar") sair();
-        else if (x === "crono") app.estudarComCronometro(MATERIA);
+        else if (x === "crono") app.estudarComCronometro(materia());
         else if (x === "comecar") { i = 0; exercicio(); scrollTo(0, 0); }
         else if (x === "ouvir") {
           if (window.speechSynthesis && speechSynthesis.speaking) { Ex().pararFala(); b.textContent = "▶ Ouvir o áudio"; return; }
@@ -339,6 +366,7 @@
         else if (x === "refazer") abrirAula(container, app, nv, skill, n);
       };
     }
+    Ex().idioma(IN().lang || "en-GB");
     intro(); scrollTo(0, 0);
   }
   const fmt = x => `${Math.floor(x / 60)}:${String(Math.floor(x % 60)).padStart(2, "0")}`;
@@ -348,12 +376,12 @@
     const $ = s => container.querySelector(s), { m, nv, chave } = t;
     const ed = $(".idm-editor");
     if (ed) {
-      const cont = $("[data-contador]"), conta = () => (ed.value.match(/[A-Za-zÀ-ÿ'’-]+/g) || []).length;
+      const cont = $("[data-contador]"), conta = () => (ed.value.match(/[A-Za-zÀ-ÿœŒæÆ'’-]+/g) || []).length;
       ed.oninput = () => { const n = conta(); cont.textContent = `${n} palavras · meta ${m.min}–${m.max}`; cont.classList.toggle("txt-on", n >= m.min && n <= m.max); };
       $("[data-enviar-w]").onclick = async ev => {
         const n = conta(); if (n < Math.min(15, m.min)) { app.toast("Escreva um pouco mais antes de enviar."); return; }
         const b = ev.currentTarget; b.disabled = true; b.textContent = "O mentor está corrigindo…"; ed.readOnly = true;
-        $("[data-previa]").innerHTML = `<div class="idm-previa row" style="gap:10px"><span class="spinner"></span><span class="small muted">A IA está lendo sua redação com os critérios Cambridge. Leva uns 10 a 30 segundos.</span></div>`;
+        $("[data-previa]").innerHTML = `<div class="idm-previa row" style="gap:10px"><span class="spinner"></span><span class="small muted">A IA está lendo sua redação com os critérios ${app.esc(IN().provaCurta)}. Leva uns 10 a 30 segundos.</span></div>`;
         try {
           const r = await Srv().submitWriting(app.uid(), { modulo: chave, nivel: nv, texto: ed.value, minPalavras: m.min, maxPalavras: m.max, prompt: m.tarefa, genero: m.genero });
           b.textContent = "Enviado ✓"; const pul = $('[data-a="pular"]'); if (pul) pul.hidden = true;
@@ -424,10 +452,11 @@
   async function pintarEnvios(container, app) {
     const box = container.querySelector("[data-envios]"); if (!box || !window.LAService || !window.LAService.getSubmissions) return;
     let lista = []; try { lista = await window.LAService.getSubmissions(app.uid(), 8); } catch (e) { box.innerHTML = ""; return; }
+    lista = lista.filter(e => String(e.modulo || "ingles:").startsWith(E.idioma + ":"));
     if (!lista.length || !box.isConnected) { box.innerHTML = ""; return; }
     const esc = app.esc, data = t => new Date(t).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" });
     box.innerHTML = `<div class="card" style="margin-top:14px"><div class="card-h"><h3>Correções do mentor</h3></div><div class="list">${lista.map(e => `<details class="idm-env">
-      <summary><span class="pill">${e.tipo === "writing" ? "Writing" : "Speaking"} · ${esc(e.nivel)}</span><span class="small muted">${data(e.em)}</span>
+      <summary><span class="pill">${esc((comp(e.tipo) || {}).curto || e.tipo)} · ${esc(e.nivel)}</span><span class="small muted">${data(e.em)}</span>
       ${e.correcao ? `<b class="small">${e.correcao.nota}/20</b>` : `<span class="small muted">sem correção</span>`}</summary>
       ${e.correcao ? correcaoHtml(app, e) : `<p class="small muted">A IA não conseguiu corrigir na hora.</p>${e.tipo === "writing" ? `<button class="btn sm" type="button" data-refazer="${esc(e.id)}">Pedir correção de novo</button>` : ""}`}
       ${e.texto ? `<details><summary class="small">Seu texto</summary><p class="small idm-texto">${esc(e.texto).replace(/\n/g, "<br>")}</p></details>` : ""}</details>`).join("")}</div></div>`;
@@ -440,12 +469,13 @@
   }
   function pararGravacao() { if (E.gravacao) E.gravacao.parar(); }
 
-  // tempo de cronômetro/pomodoro em "Inglês" vira XP de idiomas (1 XP por minuto)
-  async function xpPorTempo(uid, minutos) {
+  // tempo de cronômetro/pomodoro em "Inglês" ou "Francês" vira XP de idiomas (1 XP por minuto)
+  const MATERIAS = ["Inglês", "Francês"];
+  async function xpPorTempo(uid, minutos, nomeMateria = "Inglês") {
     const xp = Math.floor(minutos * XP.porMinuto);
-    if (xp > 0) { await Srv().addLanguageXP(uid, xp, `${Math.round(minutos)} min de estudo de Inglês`); E.perfil = null; }
+    if (xp > 0) { await Srv().addLanguageXP(uid, xp, `${Math.round(minutos)} min de estudo de ${nomeMateria}`); E.perfil = null; }
     return xp;
   }
   function sairDaAba() { if (window.LAComp.Exercicio) Ex().pararFala(); pararGravacao(); }
-  (window.LAComp = window.LAComp || {}).IdiomasView = { render, xpPorTempo, sairDaAba, MATERIA, XP };
+  (window.LAComp = window.LAComp || {}).IdiomasView = { render, xpPorTempo, sairDaAba, MATERIAS, MATERIA: "Inglês", XP };
 })();

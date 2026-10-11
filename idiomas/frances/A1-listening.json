@@ -1,0 +1,2760 @@
+{
+ "nivel": "A1",
+ "skill": "listening",
+ "exame": "DELF A1",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Je m'appelle… : nom, âge et alphabet",
+   "objetivo": "Entender nomes, idades e letras soletradas em uma conversa curta de apresentação.",
+   "foco": "s'appeler, avoir + âge; l'alphabet; nombres 1–20",
+   "explicacao": [
+    "Em francês a idade usa o verbo avoir (ter), não être: J'ai seize ans. (e não \"je suis seize\").",
+    "Para o nome: Je m'appelle Camille. Para pedir que soletrem: Vous pouvez épeler, s'il vous plaît ?",
+    "Atenção às letras: E soa \"ê\", I soa \"i\", U soa \"ü\" (boca de assobio). A letra Y se diz \"i grec\" e W se diz \"double vé\".",
+    "Seize se diz \"sèz\" (o S final soa como Z); dix-sept se diz \"dissèt\"."
+   ],
+   "vocab": [
+    {
+     "en": "s'appeler",
+     "pt": "chamar-se"
+    },
+    {
+     "en": "le nom de famille",
+     "pt": "o sobrenome"
+    },
+    {
+     "en": "épeler",
+     "pt": "soletrar"
+    },
+    {
+     "en": "avoir … ans",
+     "pt": "ter … anos"
+    },
+    {
+     "en": "un frère",
+     "pt": "um irmão"
+    },
+    {
+     "en": "le club de théâtre",
+     "pt": "o clube de teatro"
+    },
+    {
+     "en": "bienvenue",
+     "pt": "bem-vindo(a)"
+    }
+   ],
+   "material": {
+    "titulo": "Inscription au club",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour ! Vous vous appelez comment ?"
+     },
+     {
+      "p": "B",
+      "t": "Je m'appelle Camille Dubois."
+     },
+     {
+      "p": "A",
+      "t": "Vous pouvez épeler votre nom de famille, s'il vous plaît ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui. D, U, B, O, I, S. Dubois."
+     },
+     {
+      "p": "A",
+      "t": "Merci. Et vous avez quel âge, Camille ?"
+     },
+     {
+      "p": "B",
+      "t": "J'ai seize ans. Mon frère a dix-sept ans, il s'appelle Hugo."
+     },
+     {
+      "p": "A",
+      "t": "Il est dans le même club ?"
+     },
+     {
+      "p": "B",
+      "t": "Non, il est dans le club de théâtre. Moi, je suis dans le club de musique."
+     },
+     {
+      "p": "A",
+      "t": "Très bien. Bienvenue !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel âge a Camille ?",
+     "op": [
+      "seize ans",
+      "dix-sept ans",
+      "dix-neuf ans",
+      "six ans"
+     ],
+     "r": 0,
+     "exp": "Camille dit : J'ai seize ans. Dix-sept ans, c'est l'âge de son frère Hugo."
+    },
+    {
+     "t": "gap",
+     "q": "Le nom de famille de Camille s'écrit D-U-B-O-I-___.",
+     "resp": [
+      "S",
+      "s"
+     ],
+     "exp": "Ela soletra D, U, B, O, I, S. A última letra é S (\"ès\").",
+     "ouvir": "D, U, B, O, I, S. Dubois."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Je m'appelle Camille. J'ai seize ans.",
+     "exp": "J'ai = \"jê\" (um só som). Seize = \"sèz\", com o S final sonoro como Z."
+    },
+    {
+     "t": "mc",
+     "q": "Qui est dans le club de théâtre ?",
+     "op": [
+      "Camille",
+      "Hugo",
+      "Le réceptionniste",
+      "Camille et Hugo"
+     ],
+     "r": 1,
+     "exp": "Hugo est dans le club de théâtre. Camille est dans le club de musique."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Vous",
+      "vous",
+      "appelez",
+      "comment"
+     ],
+     "resp": "Vous vous appelez comment",
+     "exp": "Pergunta informal: Vous vous appelez comment ? Também se pode dizer Comment vous vous appelez ?",
+     "alt": [
+      "Comment vous vous appelez"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Le frère de Camille a ___ ans.",
+     "resp": [
+      "dix-sept",
+      "17",
+      "dix sept"
+     ],
+     "exp": "Mon frère a dix-sept ans. Não confunda com seize (16), a idade dela.",
+     "ouvir": "J'ai seize ans. Mon frère a dix-sept ans."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: diga seu nome e sua idade.",
+     "frase": "Vous vous appelez comment ? Vous avez quel âge ?",
+     "modelo": "Je m'appelle Ana. J'ai vingt ans.",
+     "min": 4,
+     "chave": [
+      "appelle",
+      "ai",
+      "ans",
+      "suis"
+     ],
+     "exp": "Use Je m'appelle… e J'ai … ans. Lembre: em francês se \"tem\" idade (avoir)."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Comment s'écrit son prénom ?",
+     "op": [
+      "L-I-S-A",
+      "L-I-Z-A",
+      "L-Y-S-A",
+      "L-I-S-E"
+     ],
+     "r": 0,
+     "exp": "Ela diz: L, I, S, A. Pas Liza avec un Z (não é com Z).",
+     "ouvir": "Mon prénom, c'est Lisa. L, I, S, A. Pas Liza avec un Z."
+    },
+    {
+     "t": "gap",
+     "q": "Hugo est dans le club de ___.",
+     "resp": [
+      "théâtre",
+      "theatre"
+     ],
+     "exp": "Hugo est dans le club de théâtre; Camille, no de musique.",
+     "ouvir": "Hugo est dans le club de théâtre, et Camille dans le club de musique."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Les nombres et le téléphone",
+   "objetivo": "Entender números de 0 a 69, idades, preços e números de telefone ditos em voz alta.",
+   "foco": "nombres 0–69; le numéro de téléphone; treize / trente",
+   "explicacao": [
+    "Os telefones franceses se dizem de dois em dois: 06 14 48 62 33 = zéro six, quatorze, quarante-huit, soixante-deux, trente-trois.",
+    "Cuidado: treize (13, \"trèz\") e trente (30, \"trãt\", som nasal) são diferentes; o mesmo vale para quatorze/quarante e seize/seul.",
+    "De 21 a 69 diz-se vingt-deux, trente-trois… e com et em vingt et un, trente et un (mas só no 1).",
+    "O som nasal de trente, quarante, cinquante: não pronuncie o N como em português; a boca não fecha."
+   ],
+   "vocab": [
+    {
+     "en": "le numéro de téléphone",
+     "pt": "o número de telefone"
+    },
+    {
+     "en": "s'inscrire",
+     "pt": "inscrever-se"
+    },
+    {
+     "en": "le cours de natation",
+     "pt": "a aula de natação"
+    },
+    {
+     "en": "coûter",
+     "pt": "custar"
+    },
+    {
+     "en": "le mardi",
+     "pt": "às terças-feiras"
+    },
+    {
+     "en": "la piscine",
+     "pt": "a piscina"
+    },
+    {
+     "en": "treize",
+     "pt": "treze"
+    },
+    {
+     "en": "trente",
+     "pt": "trinta"
+    }
+   ],
+   "material": {
+    "titulo": "À la piscine",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour, ici la piscine municipale."
+     },
+     {
+      "p": "B",
+      "t": "Bonjour. Je voudrais m'inscrire au cours de natation. Je m'appelle Théo Martin."
+     },
+     {
+      "p": "A",
+      "t": "Quel est votre numéro de téléphone ?"
+     },
+     {
+      "p": "B",
+      "t": "C'est le zéro six, quatorze, quarante-huit, soixante-deux, trente-trois."
+     },
+     {
+      "p": "A",
+      "t": "Zéro six, quatorze, quarante-huit, soixante-deux, trente-trois. Vous avez quel âge ?"
+     },
+     {
+      "p": "B",
+      "t": "J'ai treize ans."
+     },
+     {
+      "p": "A",
+      "t": "Le cours est pour les douze à quinze ans. Il est le mardi et il coûte dix-huit euros."
+     },
+     {
+      "p": "B",
+      "t": "Dix-huit ? Pas quatre-vingts ?"
+     },
+     {
+      "p": "A",
+      "t": "Non, dix-huit euros."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel âge a Théo ?",
+     "op": [
+      "treize ans",
+      "trente ans",
+      "quinze ans",
+      "douze ans"
+     ],
+     "r": 0,
+     "exp": "Théo dit : J'ai treize ans. Trente est un piège; douze et quinze sont les limites du cours."
+    },
+    {
+     "t": "gap",
+     "q": "Le cours coûte ___ euros.",
+     "resp": [
+      "dix-huit",
+      "18",
+      "dix huit"
+     ],
+     "exp": "Dix-huit (18), pas quatre-vingts (80).",
+     "ouvir": "Il est le mardi et il coûte dix-huit euros."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "C'est treize ou trente ?",
+     "exp": "Treize = \"trèz\" (E aberto, Z no final). Trente = \"trãt\" (vogal nasal, T final)."
+    },
+    {
+     "t": "mc",
+     "q": "Le numéro de Théo se termine par :",
+     "op": [
+      "soixante-deux, trente-trois",
+      "soixante-douze, trente-trois",
+      "quarante-deux, treize",
+      "soixante-deux, treize"
+     ],
+     "r": 0,
+     "exp": "O final é 62 33: soixante-deux, trente-trois. Cuidado com douze/deux e treize/trente."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Quel",
+      "est",
+      "votre",
+      "numéro",
+      "de",
+      "téléphone"
+     ],
+     "resp": "Quel est votre numéro de téléphone",
+     "exp": "Pergunta formal e muito comum na prova: Quel est votre numéro de téléphone ?"
+    },
+    {
+     "t": "gap",
+     "q": "Complétez le numéro : 06 14 ___ 62 33.",
+     "resp": [
+      "quarante-huit",
+      "48",
+      "quarante huit"
+     ],
+     "exp": "O terceiro par é quarante-huit (48).",
+     "ouvir": "Zéro six, quatorze, quarante-huit, soixante-deux, trente-trois."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: diga um número de telefone (pode inventar), de dois em dois.",
+     "frase": "Quel est votre numéro de téléphone ?",
+     "modelo": "C'est le zéro six, douze, vingt-trois, trente-quatre, quarante-cinq.",
+     "min": 5,
+     "chave": [
+      "c'est",
+      "zéro",
+      "six",
+      "06",
+      "mon"
+     ],
+     "exp": "Diga os números em pares. Treine zéro (\"zérô\") e quarante (\"karãt\")."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Combien coûte le cahier ?",
+     "op": [
+      "16 €",
+      "6 €",
+      "60 €",
+      "26 €"
+     ],
+     "r": 0,
+     "exp": "O caderno custa seize euros (16). Six euros é o preço da caneta.",
+     "ouvir": "Le cahier coûte seize euros. Et le stylo coûte six euros."
+    },
+    {
+     "t": "gap",
+     "q": "Théo a treize ans : il peut entrer dans le groupe des ___ à quinze ans.",
+     "resp": [
+      "douze",
+      "12"
+     ],
+     "exp": "O curso é para les douze à quinze ans; Théo, com 13, está dentro.",
+     "ouvir": "Le cours est pour les douze à quinze ans."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Quelle heure est-il ?",
+   "objetivo": "Entender horários e combinar um encontro, distinguindo heures et demie, et quart e moins le quart.",
+   "foco": "l'heure: et demie, et quart, moins le quart; à quelle heure ?",
+   "explicacao": [
+    "Quelle heure est-il ? Il est huit heures. À quelle heure ? À huit heures et demie (8h30).",
+    "Et quart = +15 min (sept heures et quart = 7h15). Moins le quart = −15 min (huit heures moins le quart = 7h45). Moins dix = 10 minutos antes.",
+    "Atenção: huit heures moins dix é 7h50, e huit heures dix é 8h10. Na prova, ouça o moins!",
+    "Em avisos oficiais usa-se o relógio de 24 h: quatorze heures trente = 14h30. Midi = meio-dia; minuit = meia-noite."
+   ],
+   "vocab": [
+    {
+     "en": "se retrouver",
+     "pt": "encontrar-se"
+    },
+    {
+     "en": "le rendez-vous",
+     "pt": "o encontro, o compromisso"
+    },
+    {
+     "en": "commencer",
+     "pt": "começar"
+    },
+    {
+     "en": "finir",
+     "pt": "terminar"
+    },
+    {
+     "en": "fermer",
+     "pt": "fechar"
+    },
+    {
+     "en": "devant le cinéma",
+     "pt": "na frente do cinema"
+    },
+    {
+     "en": "et demie",
+     "pt": "e meia"
+    },
+    {
+     "en": "moins le quart",
+     "pt": "quinze para"
+    }
+   ],
+   "material": {
+    "titulo": "Rendez-vous au cinéma",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Allô, Marie ? C'est Paul. On se retrouve à quelle heure demain ?"
+     },
+     {
+      "p": "B",
+      "t": "Le film commence à huit heures et demie. Alors rendez-vous à huit heures moins le quart devant le cinéma."
+     },
+     {
+      "p": "A",
+      "t": "D'accord. Mais je finis le travail à sept heures et quart. Je peux être là à huit heures moins dix."
+     },
+     {
+      "p": "B",
+      "t": "Parfait. Et après le film, on mange une pizza ?"
+     },
+     {
+      "p": "A",
+      "t": "Oui, le restaurant ferme à onze heures, c'est bon."
+     },
+     {
+      "p": "B",
+      "t": "Alors à demain !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Le film commence à quelle heure ?",
+     "op": [
+      "huit heures et demie",
+      "huit heures",
+      "huit heures moins le quart",
+      "huit heures dix"
+     ],
+     "r": 0,
+     "exp": "Le film commence à huit heures et demie (20h30). Huit heures moins le quart est l'heure du rendez-vous."
+    },
+    {
+     "t": "gap",
+     "q": "Rendez-vous à huit heures ___ le quart devant le cinéma.",
+     "resp": [
+      "moins"
+     ],
+     "exp": "Huit heures moins le quart = 19h45, quinze minutos antes das oito.",
+     "ouvir": "Rendez-vous à huit heures moins le quart devant le cinéma."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Il est huit heures et demie.",
+     "exp": "Huit = \"uit\" (o H não soa). Demie = \"demi\"; em horário, o E final não se pronuncia."
+    },
+    {
+     "t": "mc",
+     "q": "Paul peut arriver à quelle heure ?",
+     "op": [
+      "huit heures moins dix",
+      "huit heures moins le quart",
+      "sept heures et quart",
+      "huit heures dix"
+     ],
+     "r": 0,
+     "exp": "Paul diz : Je peux être là à huit heures moins dix (19h50). Sept heures et quart é a hora em que ele termina o trabalho."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Le",
+      "film",
+      "commence",
+      "à",
+      "huit",
+      "heures",
+      "et",
+      "demie"
+     ],
+     "resp": "Le film commence à huit heures et demie",
+     "exp": "Ordem: sujeito + verbo + à + hora. Et demie fica no final."
+    },
+    {
+     "t": "gap",
+     "q": "Le restaurant ferme à ___ heures.",
+     "resp": [
+      "onze",
+      "11"
+     ],
+     "exp": "Le restaurant ferme à onze heures (23h).",
+     "ouvir": "Oui, le restaurant ferme à onze heures, c'est bon."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: diga a que horas você termina o trabalho ou a escola.",
+     "frase": "Vous finissez à quelle heure ?",
+     "modelo": "Je finis à six heures.",
+     "min": 3,
+     "chave": [
+      "finis",
+      "heure",
+      "heures",
+      "à"
+     ],
+     "exp": "Use Je finis à + hora. Heures: o H é mudo e o S final não soa."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. À quelle heure part le bus ?",
+     "op": [
+      "16 h 45",
+      "17 h 15",
+      "17 h 45",
+      "15 h 45"
+     ],
+     "r": 0,
+     "exp": "Cinq heures moins le quart = 16h45. O trem (dix-sept heures quinze) é que sai às 17h15.",
+     "ouvir": "Le train part à dix-sept heures quinze, mais le bus part à cinq heures moins le quart."
+    },
+    {
+     "t": "gap",
+     "q": "Paul finit le travail à sept heures et ___.",
+     "resp": [
+      "quart",
+      "un quart"
+     ],
+     "exp": "Sept heures et quart = 19h15.",
+     "ouvir": "Je finis le travail à sept heures et quart, mais je peux être au cinéma à huit heures moins dix."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Les prix au magasin",
+   "objetivo": "Entender preços em euros e centavos, inclusive números de 70 a 99, em anúncios de loja.",
+   "foco": "euros et centimes; nombres 70–99; combien ça coûte ?",
+   "explicacao": [
+    "Preço: 2,50 € = deux euros cinquante. 0,70 € = soixante-dix centimes. Combien coûte… ? ou Ça coûte combien ?",
+    "70 = soixante-dix (60+10), 80 = quatre-vingts (4×20), 90 = quatre-vingt-dix, 95 = quatre-vingt-quinze. É tudo \"somado\" ou \"multiplicado\".",
+    "Na prova, anúncios de loja trazem promoções: ouça se o preço é o novo ou o antigo (au lieu de = em vez de).",
+    "Le kilo, la boîte, le litre: a unidade vem depois do preço (deux euros le kilo)."
+   ],
+   "vocab": [
+    {
+     "en": "le prix",
+     "pt": "o preço"
+    },
+    {
+     "en": "le kilo",
+     "pt": "o quilo"
+    },
+    {
+     "en": "la baguette",
+     "pt": "a baguete"
+    },
+    {
+     "en": "le croissant",
+     "pt": "o croissant"
+    },
+    {
+     "en": "le fromage",
+     "pt": "o queijo"
+    },
+    {
+     "en": "le centime",
+     "pt": "o centavo"
+    },
+    {
+     "en": "le rayon",
+     "pt": "a seção (da loja)"
+    },
+    {
+     "en": "au lieu de",
+     "pt": "em vez de"
+    }
+   ],
+   "material": {
+    "titulo": "Annonce au supermarché",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Mesdames et messieurs, bonjour. Aujourd'hui au rayon fruits, les pommes sont à deux euros cinquante le kilo et les fraises à quatre euros quatre-vingt-dix la boîte."
+     },
+     {
+      "p": "A",
+      "t": "Au rayon boulangerie, la baguette coûte un euro dix et le croissant soixante-dix centimes."
+     },
+     {
+      "p": "A",
+      "t": "Attention : le fromage n'est plus à neuf euros, il est à sept euros quatre-vingt-quinze. Le magasin ferme à vingt heures. Merci et bonne journée !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Combien coûtent les pommes ?",
+     "op": [
+      "2,50 € le kilo",
+      "2,15 € le kilo",
+      "4,90 € le kilo",
+      "1,10 € le kilo"
+     ],
+     "r": 0,
+     "exp": "Les pommes sont à deux euros cinquante le kilo. 4,90 € é o preço dos morangos."
+    },
+    {
+     "t": "gap",
+     "q": "La baguette coûte un euro ___.",
+     "resp": [
+      "dix",
+      "10"
+     ],
+     "exp": "A baguete custa 1,10 € (un euro dix).",
+     "ouvir": "La baguette coûte un euro dix et le croissant soixante-dix centimes."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Ça coûte quatre euros quatre-vingt-dix.",
+     "exp": "Quatre-vingt-dix: \"katr-vẽ-dis\". O som nasal em vingt (vẽ) não fecha em N."
+    },
+    {
+     "t": "mc",
+     "q": "Combien coûte le croissant ?",
+     "op": [
+      "70 centimes",
+      "1,70 €",
+      "60 centimes",
+      "90 centimes"
+     ],
+     "r": 0,
+     "exp": "Le croissant coûte soixante-dix centimes. Un euro dix é o preço da baguete."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Combien",
+      "coûte",
+      "la",
+      "baguette",
+      "s'il",
+      "vous",
+      "plaît"
+     ],
+     "resp": "Combien coûte la baguette s'il vous plaît",
+     "exp": "Pergunta de compra: Combien coûte… ? + s'il vous plaît."
+    },
+    {
+     "t": "gap",
+     "q": "Le fromage coûte maintenant sept euros ___.",
+     "resp": [
+      "quatre-vingt-quinze",
+      "95",
+      "quatre vingt quinze"
+     ],
+     "exp": "Le fromage est à sept euros quatre-vingt-quinze (7,95 €), não mais neuf euros.",
+     "ouvir": "Le fromage n'est plus à neuf euros, il est à sept euros quatre-vingt-quinze."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: diga que o pão custa 1,20 €.",
+     "frase": "Combien coûte le pain ?",
+     "modelo": "Le pain coûte un euro vingt.",
+     "min": 3,
+     "chave": [
+      "euro",
+      "euros",
+      "coûte",
+      "1,20"
+     ],
+     "exp": "Diga: Le pain coûte un euro vingt. Coûte = \"kut\" (aqui û soa como \"u\" de \"tu\" em português); euro = \"êrô\"."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Combien coûte le jus d'orange ?",
+     "op": [
+      "3,60 €",
+      "3,16 €",
+      "3,06 €",
+      "6,30 €"
+     ],
+     "r": 0,
+     "exp": "Le jus d'orange: trois euros soixante (3,60). Le jus de pomme: trois euros seize (3,16).",
+     "ouvir": "Le jus d'orange est à trois euros soixante, et le jus de pomme à trois euros seize."
+    },
+    {
+     "t": "gap",
+     "q": "Le magasin ferme à ___ heures.",
+     "resp": [
+      "vingt",
+      "20"
+     ],
+     "exp": "Il ferme à vingt heures (20h), não às dix-huit heures.",
+     "ouvir": "Le magasin ferme à vingt heures, et non à dix-huit heures."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Les jours, les mois et les dates",
+   "objetivo": "Entender dias da semana, meses e datas em um convite para uma festa.",
+   "foco": "les jours, les mois; la date; c'est quand ?",
+   "explicacao": [
+    "Dias da semana (sem maiúscula): lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Cuidado com lundi/mardi.",
+    "Data: le douze mars, le vingt et un juin. Só o primeiro dia do mês usa ordinal: le premier mai.",
+    "Pergunta: C'est quand, ton anniversaire ? / Quelle est la date ? Resposta: Mon anniversaire est le douze mars.",
+    "Les mois: janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre."
+   ],
+   "vocab": [
+    {
+     "en": "l'anniversaire",
+     "pt": "o aniversário"
+    },
+    {
+     "en": "la fête",
+     "pt": "a festa"
+    },
+    {
+     "en": "le calendrier",
+     "pt": "o calendário"
+    },
+    {
+     "en": "libre",
+     "pt": "livre, disponível"
+    },
+    {
+     "en": "apporter",
+     "pt": "trazer"
+    },
+    {
+     "en": "le gâteau",
+     "pt": "o bolo"
+    },
+    {
+     "en": "dimanche",
+     "pt": "domingo"
+    },
+    {
+     "en": "juin",
+     "pt": "junho"
+    }
+   ],
+   "material": {
+    "titulo": "Une invitation",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Salut Inès ! C'est quand, ton anniversaire ?"
+     },
+     {
+      "p": "B",
+      "t": "Le douze mars. Et toi ?"
+     },
+     {
+      "p": "A",
+      "t": "Le vingt et un juin. Je fais une fête le samedi vingt-deux juin chez moi. Tu viens ?"
+     },
+     {
+      "p": "B",
+      "t": "Le vingt-deux ? Parfait, je suis libre. Mais le vingt-trois, dimanche, j'ai un cours de danse."
+     },
+     {
+      "p": "A",
+      "t": "Pas de problème. La fête commence à dix-neuf heures."
+     },
+     {
+      "p": "B",
+      "t": "Super ! J'apporte un gâteau."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quand est l'anniversaire d'Inès ?",
+     "op": [
+      "le douze mars",
+      "le vingt et un juin",
+      "le vingt-deux juin",
+      "le vingt-trois mars"
+     ],
+     "r": 0,
+     "exp": "Inès dit : Le douze mars. Le vingt et un juin, c'est l'anniversaire de son ami."
+    },
+    {
+     "t": "gap",
+     "q": "L'anniversaire de son ami est le vingt et un ___.",
+     "resp": [
+      "juin"
+     ],
+     "exp": "Son ami dit : Le vingt et un juin.",
+     "ouvir": "Le vingt et un juin."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Mon anniversaire, c'est le premier mai.",
+     "exp": "Premier = \"premiê\". Juin e juillet soam parecido; juin = \"juẽ\" (nasal)."
+    },
+    {
+     "t": "mc",
+     "q": "La fête est quel jour ?",
+     "op": [
+      "samedi 22 juin",
+      "dimanche 23 juin",
+      "samedi 23 juin",
+      "vendredi 21 juin"
+     ],
+     "r": 0,
+     "exp": "La fête est le samedi vingt-deux juin. Le dimanche vingt-trois, Inès a cours de danse."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Mon",
+      "anniversaire",
+      "est",
+      "le",
+      "douze",
+      "mars"
+     ],
+     "resp": "Mon anniversaire est le douze mars",
+     "exp": "Data: le + número + mês. Sem preposição \"em\"."
+    },
+    {
+     "t": "gap",
+     "q": "Inès a un cours de danse le ___.",
+     "resp": [
+      "dimanche"
+     ],
+     "exp": "Le vingt-trois, dimanche, j'ai un cours de danse.",
+     "ouvir": "Le vingt-trois, dimanche, j'ai un cours de danse."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: diga a data do seu aniversário.",
+     "frase": "C'est quand, votre anniversaire ?",
+     "modelo": "Mon anniversaire est le dix juillet.",
+     "min": 4,
+     "chave": [
+      "anniversaire",
+      "est",
+      "c'est",
+      "le"
+     ],
+     "exp": "Diga Mon anniversaire est le + número + mês. Ex.: le quinze août."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Quels jours y a-t-il cours de français ?",
+     "op": [
+      "lundi et jeudi",
+      "lundi et mercredi",
+      "mardi et jeudi",
+      "mercredi et jeudi"
+     ],
+     "r": 0,
+     "exp": "Il y a cours le lundi et le jeudi. Le mercredi, il n'y a pas de cours.",
+     "ouvir": "Le cours de français est le lundi et le jeudi. Le mercredi, il n'y a pas de cours."
+    },
+    {
+     "t": "gap",
+     "q": "Inès apporte un ___.",
+     "resp": [
+      "gâteau",
+      "gateau"
+     ],
+     "exp": "Inès diz : J'apporte un gâteau. Gâteau = \"gatô\".",
+     "ouvir": "Super ! J'apporte un gâteau."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Se présenter : nationalité et métier",
+   "objetivo": "Entender nacionalidade, profissão, cidade e família em uma entrevista curta.",
+   "foco": "être + nationalité / profession; habiter à; il est / elle est",
+   "explicacao": [
+    "Je suis brésilien (homem) / brésilienne (mulher). A nacionalidade concorda com o gênero e vem sem maiúscula.",
+    "Profissão sem artigo: Je suis infirmier. Elle est professeure. Pergunta: Vous faites quoi dans la vie ?",
+    "Moradia: J'habite à Lyon. O H de habiter é mudo: j'habite = \"jabit\".",
+    "Cuidado com falsos amigos ouvidos: espagnol (língua) é diferente de espagnole (mulher espanhola)."
+   ],
+   "vocab": [
+    {
+     "en": "la nationalité",
+     "pt": "a nacionalidade"
+    },
+    {
+     "en": "algérien",
+     "pt": "argelino"
+    },
+    {
+     "en": "infirmier",
+     "pt": "enfermeiro"
+    },
+    {
+     "en": "professeure",
+     "pt": "professora"
+    },
+    {
+     "en": "habiter",
+     "pt": "morar"
+    },
+    {
+     "en": "depuis deux ans",
+     "pt": "há dois anos"
+    },
+    {
+     "en": "la fille",
+     "pt": "a filha"
+    },
+    {
+     "en": "parler",
+     "pt": "falar"
+    }
+   ],
+   "material": {
+    "titulo": "Une interview",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour, vous êtes de quelle nationalité ?"
+     },
+     {
+      "p": "B",
+      "t": "Je suis algérien, mais j'habite à Lyon depuis deux ans."
+     },
+     {
+      "p": "A",
+      "t": "Et vous faites quoi dans la vie ?"
+     },
+     {
+      "p": "B",
+      "t": "Je suis infirmier à l'hôpital. Ma femme est professeure d'espagnol."
+     },
+     {
+      "p": "A",
+      "t": "Elle est espagnole ?"
+     },
+     {
+      "p": "B",
+      "t": "Non, elle est brésilienne. Elle parle portugais, espagnol et français."
+     },
+     {
+      "p": "A",
+      "t": "Vous avez des enfants ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui, une fille de cinq ans. Elle s'appelle Nour."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Karim est de quelle nationalité ?",
+     "op": [
+      "algérien",
+      "brésilien",
+      "espagnol",
+      "français"
+     ],
+     "r": 0,
+     "exp": "Il dit : Je suis algérien. Sa femme est brésilienne."
+    },
+    {
+     "t": "gap",
+     "q": "Karim habite à ___.",
+     "resp": [
+      "Lyon"
+     ],
+     "exp": "J'habite à Lyon depuis deux ans.",
+     "ouvir": "Je suis algérien, mais j'habite à Lyon depuis deux ans."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Je suis brésilien et j'habite à Paris.",
+     "exp": "Brésilien = \"brêzilĩ\" (nasal final). J'habite: o H não soa e o J + a liga: \"jabit\"."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le métier de la femme de Karim ?",
+     "op": [
+      "professeure d'espagnol",
+      "infirmière",
+      "médecin",
+      "étudiante"
+     ],
+     "r": 0,
+     "exp": "Ma femme est professeure d'espagnol. Karim, lui, est infirmier."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Vous",
+      "faites",
+      "quoi",
+      "dans",
+      "la",
+      "vie"
+     ],
+     "resp": "Vous faites quoi dans la vie",
+     "exp": "Pergunta sobre profissão no registro neutro: Vous faites quoi dans la vie ?"
+    },
+    {
+     "t": "gap",
+     "q": "Nour a ___ ans.",
+     "resp": [
+      "cinq",
+      "5"
+     ],
+     "exp": "Une fille de cinq ans. Ela se chama Nour.",
+     "ouvir": "Une fille de cinq ans. Elle s'appelle Nour."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: diga sua nacionalidade e onde você mora.",
+     "frase": "Vous êtes de quelle nationalité ? Vous habitez où ?",
+     "modelo": "Je suis brésilienne. J'habite à São Paulo.",
+     "min": 4,
+     "chave": [
+      "suis",
+      "habite",
+      "brésilien",
+      "brésilienne",
+      "j'habite"
+     ],
+     "exp": "Use Je suis + nacionalidade (brésilien / brésilienne) e J'habite à + cidade."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Quelle phrase est vraie ?",
+     "op": [
+      "Elle est brésilienne et professeure d'espagnol.",
+      "Elle est espagnole et professeure de portugais.",
+      "Elle est espagnole et infirmière.",
+      "Elle est brésilienne et infirmière."
+     ],
+     "r": 0,
+     "exp": "No áudio: Elle n'est pas espagnole, elle est brésilienne, mais elle est professeure d'espagnol.",
+     "ouvir": "Elle n'est pas espagnole, elle est brésilienne, mais elle est professeure d'espagnol."
+    },
+    {
+     "t": "gap",
+     "q": "Elle parle portugais, espagnol et ___.",
+     "resp": [
+      "français",
+      "francais"
+     ],
+     "exp": "Elle parle portugais, espagnol et français. Trois langues.",
+     "ouvir": "Elle parle portugais, espagnol et français."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Ma famille en photo",
+   "objetivo": "Entender quem é quem em uma foto de família e distinguir parentes (oncle, cousin, jumeaux…).",
+   "foco": "la famille; mon / ma / mes; je n'ai pas de…",
+   "explicacao": [
+    "Família: le père, la mère, le frère, la sœur, les parents, le grand-père, la grand-mère, l'oncle, la tante, le cousin, la cousine.",
+    "Possessivos: mon père (masc.), ma mère (fem.), mes frères (plural). Antes de vogal usa-se mon: mon amie, mon oncle.",
+    "Negação com de: J'ai une sœur. → Je n'ai pas de sœur (não \"pas une\"). Em fala rápida o ne some: J'ai pas de sœur.",
+    "Frères e sœurs: les frères et sœurs. Jumeaux = gêmeos."
+   ],
+   "vocab": [
+    {
+     "en": "l'oncle",
+     "pt": "o tio"
+    },
+    {
+     "en": "la tante",
+     "pt": "a tia"
+    },
+    {
+     "en": "le cousin / la cousine",
+     "pt": "o primo / a prima"
+    },
+    {
+     "en": "la grand-mère",
+     "pt": "a avó"
+    },
+    {
+     "en": "jumeaux",
+     "pt": "gêmeos"
+    },
+    {
+     "en": "la barbe",
+     "pt": "a barba"
+    },
+    {
+     "en": "à gauche / à droite",
+     "pt": "à esquerda / à direita"
+    },
+    {
+     "en": "la photo",
+     "pt": "a foto"
+    }
+   ],
+   "material": {
+    "titulo": "Regarde la photo",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Regarde la photo, Tom. Voici ma famille."
+     },
+     {
+      "p": "B",
+      "t": "C'est ton père, Léa, à gauche ?"
+     },
+     {
+      "p": "A",
+      "t": "Non, c'est mon oncle Paul, le frère de mon père. Mon père, il est à droite, avec la barbe."
+     },
+     {
+      "p": "B",
+      "t": "Et la dame avec le chien ?"
+     },
+     {
+      "p": "A",
+      "t": "C'est ma grand-mère. Elle a soixante-huit ans. Ma mère est à côté d'elle. Et là, ce sont mes deux petits frères. Ils sont jumeaux : Max et Noé."
+     },
+     {
+      "p": "B",
+      "t": "Et toi, tu as une sœur ?"
+     },
+     {
+      "p": "A",
+      "t": "Non, je n'ai pas de sœur, mais j'ai une cousine, Clara."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qui est l'homme à gauche sur la photo ?",
+     "op": [
+      "son oncle",
+      "son père",
+      "son grand-père",
+      "son frère"
+     ],
+     "r": 0,
+     "exp": "À gauche, c'est l'oncle Paul. Le père de Léa est à droite, avec la barbe."
+    },
+    {
+     "t": "gap",
+     "q": "Max et Noé sont des ___.",
+     "resp": [
+      "jumeaux"
+     ],
+     "exp": "Ce sont mes deux petits frères. Ils sont jumeaux.",
+     "ouvir": "Ce sont mes deux petits frères. Ils sont jumeaux : Max et Noé."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "J'ai deux frères et une cousine.",
+     "exp": "Frères = \"frér\" (R na garganta). Une cousine = \"ün kuzin\", com U francês (boca de assobio) e S sonoro como Z."
+    },
+    {
+     "t": "mc",
+     "q": "Quel âge a la grand-mère ?",
+     "op": [
+      "68 ans",
+      "78 ans",
+      "58 ans",
+      "86 ans"
+     ],
+     "r": 0,
+     "exp": "Ela diz : Elle a soixante-huit ans. Soixante-huit = 60 + 8."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "n'ai",
+      "pas",
+      "de",
+      "sœur"
+     ],
+     "resp": "Je n'ai pas de sœur",
+     "exp": "Depois de pas, usa-se de (e não une): je n'ai pas de sœur."
+    },
+    {
+     "t": "gap",
+     "q": "Léa n'a pas de sœur, mais elle a une ___.",
+     "resp": [
+      "cousine"
+     ],
+     "exp": "Je n'ai pas de sœur, mais j'ai une cousine, Clara.",
+     "ouvir": "Non, je n'ai pas de sœur, mais j'ai une cousine, Clara."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: fale sobre seus irmãos (ou diga que não tem).",
+     "frase": "Vous avez des frères et sœurs ?",
+     "modelo": "Oui, j'ai un frère et une sœur.",
+     "min": 3,
+     "chave": [
+      "frère",
+      "sœur",
+      "j'ai",
+      "non",
+      "ai"
+     ],
+     "exp": "Se tiver: J'ai un frère. Se não: Je n'ai pas de frère. Frère = \"frér\" (R francês, na garganta)."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Qui est Hugo ?",
+     "op": [
+      "le cousin",
+      "le frère",
+      "l'oncle",
+      "le neveu"
+     ],
+     "r": 0,
+     "exp": "A tia Julie é irmã da mãe. O filho dela, Hugo, é o primo (cousin).",
+     "ouvir": "Ma tante Julie est la sœur de ma mère. Son fils, Hugo, est mon cousin."
+    },
+    {
+     "t": "gap",
+     "q": "Dans la photo, la mère de Léa est à côté de sa ___.",
+     "resp": [
+      "grand-mère",
+      "grand mère",
+      "grand-mere"
+     ],
+     "exp": "Ma mère est à côté d'elle, c'est-à-dire de la grand-mère. Resposta: grand-mère.",
+     "ouvir": "C'est ma grand-mère. Ma mère est à côté d'elle."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Où est la poste ?",
+   "objetivo": "Entender indicações de caminho e a posição de lugares da cidade (à côté de, en face de, derrière).",
+   "foco": "les lieux de la ville; tout droit, à gauche, à droite; prépositions de lieu",
+   "explicacao": [
+    "Pedir o caminho: Où est la poste, s'il vous plaît ? / Pour aller à la gare ?",
+    "Indicações: allez tout droit, tournez à gauche / à droite, prenez la deuxième rue. Le feu rouge = o semáforo.",
+    "Lugar: à côté de (ao lado de), en face de (em frente a), devant (na frente de), derrière (atrás de), entre.",
+    "Tempo a pé: C'est à cinq minutes à pied. Loin / près = longe / perto."
+   ],
+   "vocab": [
+    {
+     "en": "tout droit",
+     "pt": "reto, em frente"
+    },
+    {
+     "en": "tourner",
+     "pt": "virar"
+    },
+    {
+     "en": "le feu rouge",
+     "pt": "o semáforo"
+    },
+    {
+     "en": "en face de",
+     "pt": "em frente a"
+    },
+    {
+     "en": "à côté de",
+     "pt": "ao lado de"
+    },
+    {
+     "en": "derrière",
+     "pt": "atrás de"
+    },
+    {
+     "en": "la pharmacie",
+     "pt": "a farmácia"
+    },
+    {
+     "en": "à pied",
+     "pt": "a pé"
+    }
+   ],
+   "material": {
+    "titulo": "Dans la rue",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Excusez-moi, Madame, où est la poste, s'il vous plaît ?"
+     },
+     {
+      "p": "B",
+      "t": "La poste ? Vous allez tout droit jusqu'au feu rouge. Ensuite, vous tournez à gauche dans la rue Victor Hugo."
+     },
+     {
+      "p": "A",
+      "t": "Et après ?"
+     },
+     {
+      "p": "B",
+      "t": "La poste est à droite, en face de la pharmacie, à côté de la boulangerie."
+     },
+     {
+      "p": "A",
+      "t": "C'est loin ?"
+     },
+     {
+      "p": "B",
+      "t": "Non, c'est à cinq minutes à pied."
+     },
+     {
+      "p": "A",
+      "t": "Merci beaucoup ! Et la gare est dans cette direction aussi ?"
+     },
+     {
+      "p": "B",
+      "t": "Non, la gare, c'est de l'autre côté, derrière l'église."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que faut-il faire au feu rouge ?",
+     "op": [
+      "tourner à gauche",
+      "tourner à droite",
+      "continuer tout droit",
+      "traverser le pont"
+     ],
+     "r": 0,
+     "exp": "Au feu rouge, vous tournez à gauche dans la rue Victor Hugo. A poste fica depois, à direita."
+    },
+    {
+     "t": "gap",
+     "q": "La poste est en ___ de la pharmacie.",
+     "resp": [
+      "face"
+     ],
+     "exp": "En face de = em frente a. La poste est à droite, en face de la pharmacie.",
+     "ouvir": "La poste est à droite, en face de la pharmacie."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Tournez à droite, puis allez tout droit.",
+     "exp": "Droite = \"drwat\". Tout = \"tu\" (U como em português). Puis = \"püi\", com U francês."
+    },
+    {
+     "t": "mc",
+     "q": "La poste est à côté de quoi ?",
+     "op": [
+      "la boulangerie",
+      "la pharmacie",
+      "l'église",
+      "la gare"
+     ],
+     "r": 0,
+     "exp": "A poste fica ao lado da boulangerie e em frente à pharmacie."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Où",
+      "est",
+      "la",
+      "gare",
+      "s'il",
+      "vous",
+      "plaît"
+     ],
+     "resp": "Où est la gare s'il vous plaît",
+     "exp": "Pergunta de direção: Où est + lugar + s'il vous plaît ?"
+    },
+    {
+     "t": "gap",
+     "q": "C'est à ___ minutes à pied.",
+     "resp": [
+      "cinq",
+      "5"
+     ],
+     "exp": "Cinq minutes à pied. Cinq = \"sẽk\".",
+     "ouvir": "Non, c'est à cinq minutes à pied."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: indique o caminho (reto, esquerda, direita).",
+     "frase": "Où est la gare, s'il vous plaît ?",
+     "modelo": "Allez tout droit, puis tournez à gauche.",
+     "min": 4,
+     "chave": [
+      "droit",
+      "gauche",
+      "droite",
+      "tout",
+      "tournez"
+     ],
+     "exp": "Use o imperativo: Allez tout droit… Tournez à gauche… Prenez la rue…"
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Où est la gare ?",
+     "op": [
+      "derrière l'hôtel",
+      "devant la banque",
+      "à gauche de l'hôtel",
+      "en face de la banque"
+     ],
+     "r": 0,
+     "exp": "Passez devant la banque, mas a estação está juste derrière l'hôtel.",
+     "ouvir": "Prenez la deuxième rue à droite, passez devant la banque et la gare est juste derrière l'hôtel."
+    },
+    {
+     "t": "gap",
+     "q": "La gare est derrière l'___.",
+     "resp": [
+      "église",
+      "eglise"
+     ],
+     "exp": "Pour la gare: de l'autre côté, derrière l'église.",
+     "ouvir": "La gare est derrière l'église, de l'autre côté de la ville."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Annonces à la gare",
+   "objetivo": "Entender anúncios de estação e ponto de ônibus: destino, horário, plataforma, atrasos e cancelamentos.",
+   "foco": "la gare: le train, la voie, le retard; annonces",
+   "explicacao": [
+    "Anúncio típico: Le train pour Bordeaux, prévu à 14 h 20, partira avec 15 minutes de retard. Prévu = programado; retard = atraso.",
+    "La voie = a plataforma (quai também). Voie douze, voie quatre. Aller simple = só ida; aller-retour = ida e volta.",
+    "Atenção às mudanças: o horário anunciado primeiro costuma ser o antigo; o que vale é o novo.",
+    "Valider/composter le billet: marcar o bilhete antes de entrar no trem. O autobus e o tramway usam números: le bus numéro quinze."
+   ],
+   "vocab": [
+    {
+     "en": "le train",
+     "pt": "o trem"
+    },
+    {
+     "en": "la voie",
+     "pt": "a plataforma, a linha"
+    },
+    {
+     "en": "le retard",
+     "pt": "o atraso"
+    },
+    {
+     "en": "supprimé",
+     "pt": "cancelado"
+    },
+    {
+     "en": "le billet",
+     "pt": "a passagem"
+    },
+    {
+     "en": "l'aller-retour",
+     "pt": "ida e volta"
+    },
+    {
+     "en": "le guichet",
+     "pt": "o guichê"
+    },
+    {
+     "en": "valider",
+     "pt": "validar"
+    }
+   ],
+   "material": {
+    "titulo": "Annonce en gare",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Attention, mesdames et messieurs. Le train pour Bordeaux, prévu à quatorze heures vingt, partira avec quinze minutes de retard, à quatorze heures trente-cinq, voie douze. Le train pour Toulouse part à quatorze heures quarante-cinq, voie quatre, comme prévu."
+     },
+     {
+      "p": "A",
+      "t": "Nous vous rappelons que les billets doivent être validés avant de monter. Les voyageurs pour Nantes sont priés de se rendre au guichet numéro deux. Merci de votre attention."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Le train pour Bordeaux part à quelle heure ?",
+     "op": [
+      "14 h 35",
+      "14 h 20",
+      "14 h 45",
+      "14 h 15"
+     ],
+     "r": 0,
+     "exp": "Prévu à 14 h 20, mais avec quinze minutes de retard: 14 h 35 (quatorze heures trente-cinq)."
+    },
+    {
+     "t": "gap",
+     "q": "Le train pour Bordeaux part voie ___.",
+     "resp": [
+      "douze",
+      "12"
+     ],
+     "exp": "Voie douze (12). A voie quatre é a do trem de Toulouse.",
+     "ouvir": "Le train pour Bordeaux part à quatorze heures trente-cinq, voie douze."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Le train part à quatorze heures trente.",
+     "exp": "Quatorze = \"katórz\". Heures: o H é mudo e o S final não soa. Trente é nasal."
+    },
+    {
+     "t": "mc",
+     "q": "Sur quelle voie part le train pour Toulouse ?",
+     "op": [
+      "voie 4",
+      "voie 12",
+      "voie 14",
+      "voie 2"
+     ],
+     "r": 0,
+     "exp": "Le train pour Toulouse part voie quatre. Voie douze é para Bordeaux; guichet 2 é para Nantes."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "voudrais",
+      "un",
+      "billet",
+      "pour",
+      "Lyon",
+      "s'il",
+      "vous",
+      "plaît"
+     ],
+     "resp": "Je voudrais un billet pour Lyon s'il vous plaît",
+     "exp": "Na bilheteria: Je voudrais un billet pour + cidade, s'il vous plaît."
+    },
+    {
+     "t": "gap",
+     "q": "Le train pour Bordeaux a quinze minutes de ___.",
+     "resp": [
+      "retard"
+     ],
+     "exp": "Le train partira avec quinze minutes de retard.",
+     "ouvir": "Le train pour Bordeaux partira avec quinze minutes de retard."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: peça uma passagem de ida e volta para Paris.",
+     "frase": "Vous voulez un aller simple ou un aller-retour ?",
+     "modelo": "Un aller-retour pour Paris, s'il vous plaît.",
+     "min": 3,
+     "chave": [
+      "aller",
+      "retour",
+      "simple",
+      "billet"
+     ],
+     "exp": "Aller simple = só ida. Aller-retour = ida e volta. Retour = \"retur\" (R francês)."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Quel bus est supprimé ?",
+     "op": [
+      "le 15",
+      "le 50",
+      "le 5",
+      "le 55"
+     ],
+     "r": 0,
+     "exp": "Le bus numéro quinze est supprimé. Cinquante e ligne cinq são as alternativas.",
+     "ouvir": "Le bus numéro quinze est supprimé. Prenez le bus numéro cinquante ou le tramway ligne cinq."
+    },
+    {
+     "t": "gap",
+     "q": "Les billets doivent être ___ avant de monter.",
+     "resp": [
+      "validés"
+     ],
+     "exp": "O anúncio diz : les billets doivent être validés avant de monter.",
+     "ouvir": "Nous vous rappelons que les billets doivent être validés avant de monter."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Faire les courses",
+   "objetivo": "Entender uma compra no mercado: produtos, quantidades, total, forma de pagamento e troco.",
+   "foco": "quantités: un kilo de, une bouteille de, six œufs; payer; rendre la monnaie",
+   "explicacao": [
+    "Depois de quantidade usa-se de: un kilo de tomates, une bouteille d'eau, deux cents grammes de fromage.",
+    "Pedido: Je voudrais… / Je prends… / Vous désirez ? Total: Ça fait onze euros vingt.",
+    "Pagamento: par carte (cartão), en espèces (dinheiro vivo), par chèque. La monnaie = o troco: Je vous rends huit euros.",
+    "Cuidado com os números: cent/cents, deux cents grammes (200 g) e six œufs (seis ovos, \"si zê\" sem o X)."
+   ],
+   "vocab": [
+    {
+     "en": "je voudrais",
+     "pt": "eu gostaria"
+    },
+    {
+     "en": "la bouteille",
+     "pt": "a garrafa"
+    },
+    {
+     "en": "les œufs",
+     "pt": "os ovos"
+    },
+    {
+     "en": "le gramme",
+     "pt": "o grama"
+    },
+    {
+     "en": "en tout",
+     "pt": "no total"
+    },
+    {
+     "en": "en espèces",
+     "pt": "em dinheiro"
+    },
+    {
+     "en": "rendre",
+     "pt": "devolver (troco)"
+    },
+    {
+     "en": "le billet",
+     "pt": "a nota de dinheiro"
+    }
+   ],
+   "material": {
+    "titulo": "Au marché",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour Madame, vous désirez ?"
+     },
+     {
+      "p": "B",
+      "t": "Bonjour. Je voudrais un kilo de tomates et une bouteille d'eau, s'il vous plaît."
+     },
+     {
+      "p": "A",
+      "t": "Voilà. Les tomates sont à trois euros le kilo. Et avec ça ?"
+     },
+     {
+      "p": "B",
+      "t": "Je prends aussi deux cents grammes de fromage et six œufs."
+     },
+     {
+      "p": "A",
+      "t": "Les œufs coûtent deux euros quarante la boîte. Ça fait en tout onze euros vingt."
+     },
+     {
+      "p": "B",
+      "t": "Je peux payer par carte ?"
+     },
+     {
+      "p": "A",
+      "t": "Désolé, la machine ne marche pas. Seulement en espèces aujourd'hui."
+     },
+     {
+      "p": "B",
+      "t": "Ah, j'ai juste un billet de vingt euros."
+     },
+     {
+      "p": "A",
+      "t": "Pas de problème. Je vous rends huit euros quatre-vingts."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qu'est-ce que la cliente achète au début ?",
+     "op": [
+      "des tomates et de l'eau",
+      "du fromage et du lait",
+      "des œufs et du pain",
+      "des pommes et du jus"
+     ],
+     "r": 0,
+     "exp": "Au début: un kilo de tomates et une bouteille d'eau. Le fromage et les œufs viennent après."
+    },
+    {
+     "t": "gap",
+     "q": "Les tomates coûtent ___ euros le kilo.",
+     "resp": [
+      "trois",
+      "3"
+     ],
+     "exp": "Les tomates sont à trois euros le kilo.",
+     "ouvir": "Les tomates sont à trois euros le kilo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Je voudrais un kilo de tomates, s'il vous plaît.",
+     "exp": "Voudrais = \"vudrê\". Tomates: \"tomat\", o E final não soa (e muet)."
+    },
+    {
+     "t": "mc",
+     "q": "Combien la cliente doit-elle payer en tout ?",
+     "op": [
+      "11,20 €",
+      "8,80 €",
+      "12,10 €",
+      "20 €"
+     ],
+     "r": 0,
+     "exp": "Ça fait en tout onze euros vingt. Huit euros quatre-vingts é o troco."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "peux",
+      "payer",
+      "par",
+      "carte"
+     ],
+     "resp": "Je peux payer par carte",
+     "exp": "Pergunta simples: Je peux payer par carte ?"
+    },
+    {
+     "t": "gap",
+     "q": "Le vendeur rend ___ euros quatre-vingts.",
+     "resp": [
+      "huit",
+      "8"
+     ],
+     "exp": "20 − 11,20 = 8,80 : huit euros quatre-vingts.",
+     "ouvir": "Je vous rends huit euros quatre-vingts."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: peça um quilo de maçãs.",
+     "frase": "Vous désirez, Madame ?",
+     "modelo": "Je voudrais un kilo de pommes, s'il vous plaît.",
+     "min": 4,
+     "chave": [
+      "voudrais",
+      "je",
+      "kilo",
+      "pommes",
+      "s'il"
+     ],
+     "exp": "Use Je voudrais + quantidade + de + produto. Pommes = \"pom\"."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Comment peut-on payer aujourd'hui ?",
+     "op": [
+      "en espèces ou par chèque",
+      "par carte",
+      "par carte ou en espèces",
+      "seulement par chèque"
+     ],
+     "r": 0,
+     "exp": "Pas de carte aujourd'hui : seulement les espèces ou les chèques.",
+     "ouvir": "Désolé, on ne prend pas la carte aujourd'hui. Seulement les espèces ou les chèques."
+    },
+    {
+     "t": "gap",
+     "q": "Elle paye avec un billet de ___ euros.",
+     "resp": [
+      "vingt",
+      "20"
+     ],
+     "exp": "J'ai juste un billet de vingt euros.",
+     "ouvir": "Ah, j'ai juste un billet de vingt euros."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Au restaurant et au café",
+   "objetivo": "Entender um pedido no restaurante, com mudanças de última hora, bebidas, sobremesa e preço do menu.",
+   "foco": "la nourriture et les boissons; du / de la / des; il n'y a plus de…",
+   "explicacao": [
+    "Pedir: Je voudrais / Je prends… Partitivo: du poisson, de la soupe, de l'eau, des frites, des pâtes.",
+    "Il n'y a plus de poulet: depois de negação, só de (sem du/des). Désolé = sinto muito.",
+    "Menu à vingt-deux euros: entrée + plat + dessert. Menu enfant = menu infantil. Par personne = por pessoa.",
+    "Boissons: un café, un thé, un jus d'orange, une carafe d'eau. Sans sucre = sem açúcar."
+   ],
+   "vocab": [
+    {
+     "en": "la soupe",
+     "pt": "a sopa"
+    },
+    {
+     "en": "le poulet",
+     "pt": "o frango"
+    },
+    {
+     "en": "le poisson",
+     "pt": "o peixe"
+    },
+    {
+     "en": "les pâtes",
+     "pt": "o macarrão"
+    },
+    {
+     "en": "une carafe d'eau",
+     "pt": "uma jarra d'água"
+    },
+    {
+     "en": "le dessert",
+     "pt": "a sobremesa"
+    },
+    {
+     "en": "sans sucre",
+     "pt": "sem açúcar"
+    },
+    {
+     "en": "le menu",
+     "pt": "o menu (preço fixo)"
+    }
+   ],
+   "material": {
+    "titulo": "Au restaurant",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonsoir, vous avez choisi ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui. Pour moi, une soupe de légumes, puis le poulet avec des frites."
+     },
+     {
+      "p": "A",
+      "t": "Désolé, il n'y a plus de poulet. Je peux vous proposer du poisson."
+     },
+     {
+      "p": "B",
+      "t": "Très bien, alors du poisson avec des frites."
+     },
+     {
+      "p": "A",
+      "t": "Et comme boisson ?"
+     },
+     {
+      "p": "B",
+      "t": "Une carafe d'eau, s'il vous plaît. Ma fille prend un jus d'orange et des pâtes au fromage."
+     },
+     {
+      "p": "A",
+      "t": "Très bien. Et pour le dessert ?"
+     },
+     {
+      "p": "B",
+      "t": "Nous n'avons plus faim ! Seulement deux cafés, mais sans sucre."
+     },
+     {
+      "p": "A",
+      "t": "Parfait. Le menu est à vingt-cinq euros par personne."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Finalement, que mange le client comme plat principal ?",
+     "op": [
+      "du poisson avec des frites",
+      "du poulet avec des frites",
+      "des pâtes au fromage",
+      "de la soupe de légumes"
+     ],
+     "r": 0,
+     "exp": "Il n'y a plus de poulet. Le client prend alors du poisson avec des frites. La soupe est l'entrée."
+    },
+    {
+     "t": "gap",
+     "q": "Sa fille prend un jus d'___.",
+     "resp": [
+      "orange"
+     ],
+     "exp": "Ma fille prend un jus d'orange. Liaison: jus d'orange = \"jü dorãj\".",
+     "ouvir": "Ma fille prend un jus d'orange et des pâtes au fromage."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Je voudrais du poisson avec des frites.",
+     "exp": "Poisson = \"pwasõ\" (nasal final). Avec des: \"avék dê\"; frites = \"frit\"."
+    },
+    {
+     "t": "mc",
+     "q": "Que prend la fille du client ?",
+     "op": [
+      "un jus d'orange et des pâtes au fromage",
+      "une carafe d'eau et du poisson",
+      "un café et du poulet",
+      "de la soupe et un jus de pomme"
+     ],
+     "r": 0,
+     "exp": "Sa fille prend un jus d'orange et des pâtes au fromage. La carafe d'eau est pour le père."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "n'y",
+      "a",
+      "plus",
+      "de",
+      "poulet"
+     ],
+     "resp": "Il n'y a plus de poulet",
+     "exp": "Negação com plus + de: Il n'y a plus de poulet. Sem du."
+    },
+    {
+     "t": "gap",
+     "q": "Les deux cafés sont sans ___.",
+     "resp": [
+      "sucre"
+     ],
+     "exp": "Seulement deux cafés, mais sans sucre.",
+     "ouvir": "Seulement deux cafés, mais sans sucre."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: peça uma bebida.",
+     "frase": "Qu'est-ce que vous prenez comme boisson ?",
+     "modelo": "Je prends un jus d'orange, s'il vous plaît.",
+     "min": 3,
+     "chave": [
+      "prends",
+      "voudrais",
+      "jus",
+      "eau",
+      "café",
+      "thé"
+     ],
+     "exp": "Use Je prends / Je voudrais + bebida. Un thé = \"ẽ té\" (nasal + T)."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Combien coûte le menu enfant ?",
+     "op": [
+      "12 €",
+      "22 €",
+      "20 €",
+      "32 €"
+     ],
+     "r": 0,
+     "exp": "Le menu enfant est à douze euros. O menu normal é a vingt-deux euros.",
+     "ouvir": "Le menu à vingt-deux euros comprend une entrée, un plat et un dessert. Le menu enfant est à douze euros."
+    },
+    {
+     "t": "gap",
+     "q": "Le menu coûte vingt-cinq euros par ___.",
+     "resp": [
+      "personne"
+     ],
+     "exp": "Par personne = por pessoa.",
+     "ouvir": "Le menu est à vingt-cinq euros par personne."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Ma journée type",
+   "objetivo": "Entender a rotina de alguém: horários, transporte, refeições e atividades da semana.",
+   "foco": "la routine; verbes pronominaux (se lever, se coucher); à + heure",
+   "explicacao": [
+    "Rotina: je me lève (levanto), je prends une douche, je prends le métro, je déjeune, je me couche (vou dormir).",
+    "Horas: à six heures, vers sept heures (por volta das 7), à midi, à minuit. Le matin, l'après-midi, le soir.",
+    "Frequência: tous les jours, deux fois par semaine, le lundi (toda segunda).",
+    "Negação: je ne mange pas le matin. Em fala rápida, o ne some: je mange pas."
+   ],
+   "vocab": [
+    {
+     "en": "se lever",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "prendre une douche",
+     "pt": "tomar banho"
+    },
+    {
+     "en": "le métro",
+     "pt": "o metrô"
+    },
+    {
+     "en": "le bureau",
+     "pt": "o escritório"
+    },
+    {
+     "en": "déjeuner",
+     "pt": "almoçar"
+    },
+    {
+     "en": "faire du sport",
+     "pt": "praticar esporte"
+    },
+    {
+     "en": "se coucher",
+     "pt": "ir dormir"
+    },
+    {
+     "en": "deux fois par semaine",
+     "pt": "duas vezes por semana"
+    }
+   ],
+   "material": {
+    "titulo": "Une journée de Julie",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Alors Julie, dites-nous : comment commence votre journée ?"
+     },
+     {
+      "p": "B",
+      "t": "Je me lève à six heures, je prends une douche et je bois un café. Je ne mange pas le matin."
+     },
+     {
+      "p": "A",
+      "t": "Et ensuite ?"
+     },
+     {
+      "p": "B",
+      "t": "Je prends le métro à sept heures et demie et j'arrive au bureau à huit heures. Je déjeune à midi avec mes collègues."
+     },
+     {
+      "p": "A",
+      "t": "Vous finissez à quelle heure ?"
+     },
+     {
+      "p": "B",
+      "t": "À dix-sept heures. Le soir, je fais du sport deux fois par semaine, le lundi et le jeudi, puis je me couche vers vingt-deux heures."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "À quelle heure Julie se lève-t-elle ?",
+     "op": [
+      "à six heures",
+      "à sept heures et demie",
+      "à huit heures",
+      "à cinq heures"
+     ],
+     "r": 0,
+     "exp": "Je me lève à six heures. Sept heures et demie, c'est l'heure du métro."
+    },
+    {
+     "t": "gap",
+     "q": "Julie prend un café, mais elle ne ___ pas le matin.",
+     "resp": [
+      "mange"
+     ],
+     "exp": "Je ne mange pas le matin. Ela só toma café.",
+     "ouvir": "Je ne mange pas le matin."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Je me lève à six heures et je prends une douche.",
+     "exp": "Lève = \"lév\" (E aberto). Douche = \"duch\": ou = \"u\", ch = \"x\" em português."
+    },
+    {
+     "t": "mc",
+     "q": "Quand Julie fait-elle du sport ?",
+     "op": [
+      "le lundi et le jeudi",
+      "le lundi et le mardi",
+      "le mardi et le jeudi",
+      "tous les jours"
+     ],
+     "r": 0,
+     "exp": "Deux fois par semaine, le lundi et le jeudi. Atenção: lundi ≠ mardi."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "prends",
+      "le",
+      "métro",
+      "à",
+      "sept",
+      "heures",
+      "et",
+      "demie"
+     ],
+     "resp": "Je prends le métro à sept heures et demie",
+     "exp": "Ordem: sujeito + verbo + complemento + à + hora."
+    },
+    {
+     "t": "gap",
+     "q": "Elle déjeune à ___ avec ses collègues.",
+     "resp": [
+      "midi",
+      "12 h",
+      "douze heures"
+     ],
+     "exp": "Elle déjeune à midi (meio-dia) avec ses collègues.",
+     "ouvir": "Je déjeune à midi avec mes collègues."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: diga a que horas você se levanta.",
+     "frase": "Vous vous levez à quelle heure ?",
+     "modelo": "Je me lève à sept heures.",
+     "min": 4,
+     "chave": [
+      "lève",
+      "heures",
+      "heure",
+      "sept",
+      "six"
+     ],
+     "exp": "Use Je me lève à + hora. Lève = \"lév\"; não pronuncie o E final de me como \"mi\", mas \"me\" curto."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Le week-end, quand se lève-t-elle ?",
+     "op": [
+      "vers dix heures",
+      "vers sept heures",
+      "vers midi",
+      "à six heures"
+     ],
+     "r": 0,
+     "exp": "Le week-end, elle se lève tard, vers dix heures, puis fait les courses avec sa sœur.",
+     "ouvir": "Le week-end, je me lève tard, vers dix heures, puis je fais les courses avec ma sœur."
+    },
+    {
+     "t": "gap",
+     "q": "Elle se couche vers ___ heures.",
+     "resp": [
+      "vingt-deux",
+      "22",
+      "dix"
+     ],
+     "exp": "Vers vingt-deux heures = por volta das 22 h (10 da noite).",
+     "ouvir": "Puis je me couche vers vingt-deux heures."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "La météo",
+   "objetivo": "Entender uma previsão do tempo: chuva, sol, frio, calor, vento, neve e temperaturas por região.",
+   "foco": "il fait + adjectif; il pleut / il neige; les degrés; le nord, le sud",
+   "explicacao": [
+    "Il fait chaud / froid / beau / mauvais. Il pleut (chove). Il neige (neva). Il y a du soleil / du vent / des nuages.",
+    "Temperatura: il fait douze degrés = 12 °C. Os números aparecem muito: huit, douze, vingt-cinq.",
+    "Regiões: le nord, le sud, l'est, l'ouest, le centre. Samedi, dimanche = quando.",
+    "Conselhos: pensez à prendre un parapluie / un manteau. Ciel nuageux = céu nublado."
+   ],
+   "vocab": [
+    {
+     "en": "il pleut",
+     "pt": "chove"
+    },
+    {
+     "en": "il neige",
+     "pt": "neva"
+    },
+    {
+     "en": "il fait chaud",
+     "pt": "faz calor"
+    },
+    {
+     "en": "il fait froid",
+     "pt": "faz frio"
+    },
+    {
+     "en": "le soleil",
+     "pt": "o sol"
+    },
+    {
+     "en": "le vent",
+     "pt": "o vento"
+    },
+    {
+     "en": "nuageux",
+     "pt": "nublado"
+    },
+    {
+     "en": "le parapluie",
+     "pt": "o guarda-chuva"
+    }
+   ],
+   "material": {
+    "titulo": "Bulletin météo",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Voici la météo pour demain. Dans le nord, il pleut le matin, avec huit degrés seulement, et le vent est fort."
+     },
+     {
+      "p": "A",
+      "t": "Dans le centre, le ciel est nuageux, il fait douze degrés. Dans le sud, il y a du soleil et il fait chaud : vingt-cinq degrés à Marseille. Samedi, il neige dans les montagnes, mais dimanche, il fait beau partout. Pensez à prendre un parapluie si vous partez vers le nord !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel temps fait-il dans le nord le matin ?",
+     "op": [
+      "Il pleut.",
+      "Il neige.",
+      "Il y a du soleil.",
+      "Il fait chaud."
+     ],
+     "r": 0,
+     "exp": "Dans le nord, il pleut le matin, et il fait seulement huit degrés."
+    },
+    {
+     "t": "gap",
+     "q": "À Marseille, il fait ___ degrés.",
+     "resp": [
+      "vingt-cinq",
+      "25",
+      "vingt cinq"
+     ],
+     "exp": "Dans le sud, il fait chaud : vingt-cinq degrés à Marseille.",
+     "ouvir": "Dans le sud, il y a du soleil et il fait chaud : vingt-cinq degrés à Marseille."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Aujourd'hui, il fait beau et il y a du soleil.",
+     "exp": "Beau = \"bô\". Soleil = \"solèj\" (o \"eil\" soa \"èj\"). Il y a = \"il ia\"."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la température dans le centre ?",
+     "op": [
+      "12 degrés",
+      "8 degrés",
+      "25 degrés",
+      "2 degrés"
+     ],
+     "r": 0,
+     "exp": "Dans le centre, il fait douze degrés. Huit degrés é no norte; vingt-cinq, no sul."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "fait",
+      "froid",
+      "et",
+      "il",
+      "pleut"
+     ],
+     "resp": "Il fait froid et il pleut",
+     "exp": "Il fait + froid/chaud/beau; il pleut é verbo (sem fait)."
+    },
+    {
+     "t": "gap",
+     "q": "Dans le nord, il faut prendre un ___.",
+     "resp": [
+      "parapluie"
+     ],
+     "exp": "Pensez à prendre un parapluie si vous partez vers le nord.",
+     "ouvir": "Pensez à prendre un parapluie si vous partez vers le nord !"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: diga como está o tempo onde você está.",
+     "frase": "Quel temps fait-il chez vous aujourd'hui ?",
+     "modelo": "Il fait chaud et il y a du soleil.",
+     "min": 3,
+     "chave": [
+      "fait",
+      "pleut",
+      "soleil",
+      "froid",
+      "chaud",
+      "neige",
+      "nuages",
+      "beau"
+     ],
+     "exp": "Use Il fait + adjetivo ou Il y a du + substantivo. Chaud = \"xô\"."
+    },
+    {
+     "t": "mc",
+     "q": "Écoutez. Quel temps fait-il dimanche ?",
+     "op": [
+      "Il fait beau partout.",
+      "Il neige en montagne.",
+      "Il pleut dans le nord.",
+      "Il y a du vent."
+     ],
+     "r": 0,
+     "exp": "Samedi, il neige dans les montagnes; dimanche, il fait beau partout.",
+     "ouvir": "Samedi, il neige dans les montagnes, mais dimanche, il fait beau partout."
+    },
+    {
+     "t": "gap",
+     "q": "Samedi, dans les montagnes, il ___.",
+     "resp": [
+      "neige"
+     ],
+     "exp": "Il neige dans les montagnes samedi.",
+     "ouvir": "Samedi, il neige dans les montagnes, mais dimanche, il fait beau partout."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Messages et invitations",
+   "objetivo": "Entender mensagens de secretária eletrônica: convite, endereço, data, telefone e cancelamento de consulta.",
+   "foco": "inviter, répondre; message sur répondeur; adresse et numéro",
+   "explicacao": [
+    "Convite: Je t'invite à mon anniversaire. Tu peux venir ? Resposta: Oui, avec plaisir ! / Désolé, je ne peux pas.",
+    "Endereço: au vingt-trois, rue des Lilas (23, rue des Lilas). O número vem antes do nome da rua.",
+    "Mensagem de consultório: votre rendez-vous est annulé = foi cancelado. Rappelez-nous = ligue de novo para nós.",
+    "Atenção às correções no áudio: Attention, ce n'est pas le treize, c'est le quatorze! Guarde a data corrigida."
+   ],
+   "vocab": [
+    {
+     "en": "inviter",
+     "pt": "convidar"
+    },
+    {
+     "en": "apporter",
+     "pt": "trazer"
+    },
+    {
+     "en": "répondre",
+     "pt": "responder"
+    },
+    {
+     "en": "le cabinet",
+     "pt": "o consultório"
+    },
+    {
+     "en": "le rendez-vous",
+     "pt": "a consulta, o compromisso"
+    },
+    {
+     "en": "annulé",
+     "pt": "cancelado"
+    },
+    {
+     "en": "rappeler",
+     "pt": "ligar de volta"
+    },
+    {
+     "en": "avec plaisir",
+     "pt": "com prazer"
+    }
+   ],
+   "material": {
+    "titulo": "Deux messages",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour Sophie, c'est Antoine. Je t'invite à mon anniversaire samedi prochain, le quatorze, chez moi, au vingt-trois rue des Lilas, à partir de vingt heures. Tu peux apporter une boisson ? Attention, ce n'est pas le treize ! Réponds-moi avant jeudi au zéro six, quarante et un, vingt-huit, cinquante-deux, soixante-sept. À bientôt !"
+     },
+     {
+      "p": "B",
+      "t": "Bonjour, ici le cabinet du docteur Roux. Votre rendez-vous de mardi à quinze heures est annulé. Vous pouvez venir mercredi à dix heures trente. Merci de nous rappeler."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quand est la fête d'Antoine ?",
+     "op": [
+      "samedi 14",
+      "samedi 13",
+      "jeudi 14",
+      "dimanche 14"
+     ],
+     "r": 0,
+     "exp": "La fête est samedi prochain, le quatorze. Antoine corrige : ce n'est pas le treize."
+    },
+    {
+     "t": "gap",
+     "q": "La fête est au vingt-trois rue des ___.",
+     "resp": [
+      "Lilas"
+     ],
+     "exp": "L'adresse est 23, rue des Lilas.",
+     "ouvir": "Chez moi, au vingt-trois rue des Lilas, à partir de vingt heures."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Tu peux venir à ma fête samedi soir ?",
+     "exp": "Tu = \"tü\" (boca de assobio, como o I com lábios redondos). Peux = \"pê\". Fête = \"fét\"."
+    },
+    {
+     "t": "mc",
+     "q": "Que doit apporter Sophie ?",
+     "op": [
+      "une boisson",
+      "un gâteau",
+      "des fleurs",
+      "rien"
+     ],
+     "r": 0,
+     "exp": "Antoine demande : Tu peux apporter une boisson ?"
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "t'invite",
+      "à",
+      "mon",
+      "anniversaire",
+      "samedi",
+      "soir"
+     ],
+     "resp": "Je t'invite à mon anniversaire samedi soir",
+     "exp": "Inviter quelqu'un à + evento: Je t'invite à mon anniversaire."
+    },
+    {
+     "t": "gap",
+     "q": "Antoine demande de répondre avant ___.",
+     "resp": [
+      "jeudi"
+     ],
+     "exp": "Réponds-moi avant jeudi.",
+     "ouvir": "Réponds-moi avant jeudi au zéro six, quarante et un, vingt-huit."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: aceite o convite ou recuse com educação.",
+     "frase": "Tu viens à ma fête samedi ?",
+     "modelo": "Oui, avec plaisir ! À quelle heure ?",
+     "min": 3,
+     "chave": [
+      "oui",
+      "non",
+      "plaisir",
+      "désolé",
+      "désolée",
+      "merci",
+      "volontiers",
+      "peux"
+     ],
+     "exp": "Para aceitar: Oui, avec plaisir ! Para recusar: Désolé(e), je ne peux pas."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le nouveau rendez-vous chez le docteur Roux ?",
+     "op": [
+      "mercredi à 10 h 30",
+      "mardi à 15 h",
+      "mercredi à 15 h",
+      "mardi à 10 h 30"
+     ],
+     "r": 0,
+     "exp": "Le rendez-vous de mardi, 15 h, est annulé. On peut venir mercredi à dix heures trente."
+    },
+    {
+     "t": "gap",
+     "q": "Complétez le numéro d'Antoine : 06 41 28 52 ___.",
+     "resp": [
+      "soixante-sept",
+      "67",
+      "soixante sept"
+     ],
+     "exp": "Le numéro se termine par soixante-sept (67).",
+     "ouvir": "Zéro six, quarante et un, vingt-huit, cinquante-deux, soixante-sept."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado DELF A1 : Compréhension de l'oral",
+   "objetivo": "Treinar o formato real da prova: quatro documentos curtos (mensagem, anúncio de loja, anúncio de estação, diálogo) com QCM.",
+   "foco": "épreuve type DELF A1 : documents courts, QCM",
+   "explicacao": [
+    "Na prova real você ouve cada documento duas vezes e responde a QCM (3 opções) com poucas perguntas por documento.",
+    "Leia as perguntas antes de ouvir. Marque a resposta na primeira escuta e confirme na segunda.",
+    "Os distratores são números e horários parecidos (15 / 50, 39,90 / 60). Anote os números enquanto ouve.",
+    "Documentos típicos do A1: mensagem de secretária eletrônica, anúncio de loja, anúncio de estação, diálogo no café."
+   ],
+   "vocab": [
+    {
+     "en": "le répondeur",
+     "pt": "a secretária eletrônica"
+    },
+    {
+     "en": "fermer",
+     "pt": "fechar"
+    },
+    {
+     "en": "les chaussures",
+     "pt": "os sapatos"
+    },
+    {
+     "en": "au lieu de",
+     "pt": "em vez de"
+    },
+    {
+     "en": "supprimé",
+     "pt": "cancelado"
+    },
+    {
+     "en": "la voie",
+     "pt": "a plataforma"
+    },
+    {
+     "en": "le thé citron",
+     "pt": "o chá com limão"
+    },
+    {
+     "en": "rendre la monnaie",
+     "pt": "dar o troco"
+    }
+   ],
+   "material": {
+    "titulo": "Quatre documents sonores",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Document un. Bonjour, c'est Marc. Je ne peux pas venir au cours de tennis jeudi à dix-huit heures. Je viendrai vendredi à dix-sept heures quinze. Rappelle-moi au zéro sept, vingt-deux, quarante-six, trente-cinq, dix-huit."
+     },
+     {
+      "p": "B",
+      "t": "Document deux. Mesdames et messieurs, le magasin ferme dans quinze minutes. Aujourd'hui, les chaussures sont à trente-neuf euros quatre-vingt-dix au lieu de soixante euros. Le rayon vêtements est au premier étage."
+     },
+     {
+      "p": "B",
+      "t": "Document trois. Le train pour Nice, prévu à quinze heures cinquante, est supprimé. Les voyageurs peuvent prendre le train de seize heures dix, voie sept."
+     },
+     {
+      "p": "A",
+      "t": "Document quatre. Bonjour, vous désirez ?"
+     },
+     {
+      "p": "C",
+      "t": "Un thé citron et un croissant, s'il vous plaît."
+     },
+     {
+      "p": "A",
+      "t": "Quatre euros cinquante."
+     },
+     {
+      "p": "C",
+      "t": "Voici cinq euros."
+     },
+     {
+      "p": "A",
+      "t": "Je vous rends cinquante centimes. Bonne journée !"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Document 1. Quand Marc viendra-t-il au cours de tennis ?",
+     "op": [
+      "vendredi à 17 h 15",
+      "jeudi à 18 h",
+      "vendredi à 18 h",
+      "jeudi à 17 h 15"
+     ],
+     "r": 0,
+     "exp": "Marc ne peut pas venir jeudi à 18 h. Il viendra vendredi à dix-sept heures quinze."
+    },
+    {
+     "t": "mc",
+     "q": "Document 1. Le numéro de Marc se termine par :",
+     "op": [
+      "35 18",
+      "35 80",
+      "53 18",
+      "35 15"
+     ],
+     "r": 0,
+     "exp": "O final é trente-cinq, dix-huit (35 18). Cuidado com dix-huit e quatre-vingts."
+    },
+    {
+     "t": "gap",
+     "q": "Document 2. Le magasin ferme dans ___ minutes.",
+     "resp": [
+      "quinze",
+      "15"
+     ],
+     "exp": "Le magasin ferme dans quinze minutes.",
+     "ouvir": "Le magasin ferme dans quinze minutes."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça se quiser e repita a frase em voz alta.",
+     "frase": "Le train pour Nice est supprimé.",
+     "exp": "Supprimé = \"süprimê\", com U francês. Train = \"trẽ\" (nasal)."
+    },
+    {
+     "t": "mc",
+     "q": "Document 2. Combien coûtent les chaussures aujourd'hui ?",
+     "op": [
+      "39,90 €",
+      "60 €",
+      "49,90 €",
+      "29,90 €"
+     ],
+     "r": 0,
+     "exp": "Les chaussures sont à trente-neuf euros quatre-vingt-dix, au lieu de soixante euros."
+    },
+    {
+     "t": "mc",
+     "q": "Document 3. Sur quelle voie part le train de 16 h 10 ?",
+     "op": [
+      "voie 7",
+      "voie 17",
+      "voie 10",
+      "voie 6"
+     ],
+     "r": 0,
+     "exp": "Le train de seize heures dix part voie sept. Quinze heures cinquante est le train supprimé."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "voudrais",
+      "un",
+      "thé",
+      "et",
+      "un",
+      "croissant"
+     ],
+     "resp": "Je voudrais un thé et un croissant",
+     "exp": "Pedido no café: Je voudrais + produto. Un thé citron = chá com limão."
+    },
+    {
+     "t": "gap",
+     "q": "Document 3. Le train de seize heures dix part voie ___.",
+     "resp": [
+      "sept",
+      "7"
+     ],
+     "exp": "Voie sept (7). Sept se diz \"sèt\": o P não soa.",
+     "ouvir": "Le train de seize heures dix part voie sept."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: peça uma bebida no café.",
+     "frase": "Qu'est-ce que vous désirez ?",
+     "modelo": "Je voudrais un café, s'il vous plaît.",
+     "min": 3,
+     "chave": [
+      "voudrais",
+      "café",
+      "thé",
+      "jus",
+      "eau",
+      "prends"
+     ],
+     "exp": "Use Je voudrais… s'il vous plaît. Café = \"kafê\"."
+    },
+    {
+     "t": "mc",
+     "q": "Document 4. Que prend le client ?",
+     "op": [
+      "un thé citron et un croissant",
+      "un café et un croissant",
+      "un thé citron et un gâteau",
+      "un jus et un croissant"
+     ],
+     "r": 0,
+     "exp": "Le client commande un thé citron et un croissant."
+    },
+    {
+     "t": "mc",
+     "q": "Document 4. Combien le serveur rend-il ?",
+     "op": [
+      "50 centimes",
+      "5 euros",
+      "4,50 €",
+      "1 euro"
+     ],
+     "r": 0,
+     "exp": "Ça coûte 4,50 € et le client donne 5 euros : le serveur rend cinquante centimes."
+    },
+    {
+     "t": "gap",
+     "q": "Document 2. Les chaussures coûtent trente-neuf euros ___.",
+     "resp": [
+      "quatre-vingt-dix",
+      "90",
+      "quatre vingt dix"
+     ],
+     "exp": "Trente-neuf euros quatre-vingt-dix = 39,90 €.",
+     "ouvir": "Les chaussures sont à trente-neuf euros quatre-vingt-dix au lieu de soixante euros."
+    }
+   ]
+  }
+ ]
+}
