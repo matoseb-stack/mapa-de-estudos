@@ -238,7 +238,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta esta frase.",
      "frase": "La conjoncture force la rencontre prématurée du temps long de la recherche et du temps court de la décision.",
-     "exp": "Pronuncie 'conjoncture' como kon-jon-TÜR (o 'u' francês). 'Prématurée' tem acentos: pré-ma-tü-RÊ. Mantenha o ritmo em duas partes: temps long / temps court."
+     "exp": "Pronuncie 'conjoncture' como kon-jonk-TÜR (o 'u' francês). 'Prématurée' tem acentos: pré-ma-tü-RÊ. Mantenha o ritmo em duas partes: temps long / temps court."
     },
     {
      "t": "mc",
@@ -273,8 +273,7 @@
      "t": "gap",
      "q": "Pour limiter les dégâts de la sécheresse, ces mesures ne sont que des ___, et non de vrais remèdes.",
      "resp": [
-      "palliatifs",
-      "palliatif"
+      "palliatifs"
      ],
      "exp": "'Palliatif' = medida que atenua sem curar. O verbo é 'pallier' (sem preposição): 'pallier un manque'. Não confundir com 'palier' (patamar)."
     },
@@ -307,15 +306,20 @@
       "Ils sont le signe d'une conspiration entre savants."
      ],
      "r": 0,
-     "exp": "O último parágrafo diz que o desacordo 'en est le moteur' (o motor do sistema) e que mostrá-lo pode se tornar 'le gage' (a garantia) de credibilidade. Cuidado com a opção 0, que é o contrário."
+     "exp": "O último parágrafo diz que o desacordo 'en est le moteur' (o motor do sistema) e que mostrá-lo pode se tornar 'le gage' (a garantia) de credibilidade."
     },
     {
      "t": "gap",
      "q": "Les désaccords entre chercheurs ne sont pas une ___ du système : ils en sont le moteur.",
      "resp": [
-      "infection"
+      "infection",
+      "maladie",
+      "faiblesse",
+      "faille",
+      "tare",
+      "anomalie"
      ],
-     "exp": "'Infection' = contaminação (sentido médico ou figurado). Armadilha: 'infestation' é invasão por parasitas; 'infection' é doença ou contaminação. Aqui, o autor recusa a ideia de doença do sistema."
+     "exp": "'Infection' = contaminação (sentido médico ou figurado). 'Infection' = doença ou contaminação (aqui, no sentido figurado); não confundir com 'infestation' (invasão por parasitas). Palavras como 'maladie' ou 'faiblesse' também seriam aceitáveis. Aqui, o autor recusa a ideia de doença do sistema."
     }
    ]
   },
@@ -385,7 +389,8 @@
      "t": "gap",
      "q": "Le français serait, ___ menacé, la victime d'une exposition inédite.",
      "resp": [
-      "prétendument"
+      "prétendument",
+      "soi-disant"
      ],
      "exp": "'Prétendument' = pretensamente, segundo se diz (e o autor duvida). Advérbio de modalização crítica, como 'soi-disant'.",
      "dica": "PRÉTENDRE"
@@ -395,7 +400,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta esta frase.",
      "frase": "Une langue vivante change comme un fleuve change de lit, sans cesser d'être le même fleuve.",
-     "exp": "Preste atenção na liaison inexistente entre 'change' e 'comme'. Pronuncie 'fleuve' com o som /ø/ (como 'eu'), não 'flu-ve'. Ritmo: três blocos."
+     "exp": "Preste atenção na liaison inexistente entre 'change' e 'comme'. Pronuncie 'fleuve' com o som /œ/ (como o 'eu' aberto de 'peur'), não 'flu-ve'. Ritmo: três blocos."
     },
     {
      "t": "mc",
@@ -557,7 +562,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta esta frase.",
      "frase": "Qu'une courbe grimpe indéfiniment dans un monde fini, voilà un miracle que seuls les économistes ont su accomplir.",
-     "exp": "A frase abre com 'Qu'une courbe grimpe' (subjuntivo de tema, sem verbo principal antes). Faça uma pausa depois de 'fini'. Pronuncie 'économistes' sem o 'k' final marcado."
+     "exp": "A frase abre com 'Qu'une courbe grimpe' (subjuntivo de tema, sem verbo principal antes). Faça uma pausa depois de 'fini'. Pronuncie 'économistes' (é-co-no-MIST) sem marcar o 'es' final."
     },
     {
      "t": "mc",
@@ -741,7 +746,10 @@
       "loin"
      ],
      "resp": "Il craignait de leur ressembler fût-ce de loin",
-     "exp": "'Fût-ce' (subjuntivo imperfeito de 'être', forma fixa) = 'mesmo que fosse apenas'. É uma expressão literária frequente nos dossiês C2. Equivalente moderno: 'même de loin'."
+     "exp": "'Fût-ce' (subjuntivo imperfeito de 'être', forma fixa) = 'mesmo que fosse apenas'. É uma expressão literária frequente nos dossiês C2. Equivalente moderno: 'même de loin'.",
+     "alt": [
+      "Fût-ce de loin il craignait de leur ressembler"
+     ]
     },
     {
      "t": "gap",
@@ -790,7 +798,7 @@
      "resp": [
       "comprit"
      ],
-     "exp": "'Comprit' = passé simple de 'comprendre'. Cuidado: 'il comprend' (presente) e 'il comprit' (passado simples) têm pronúncia parecida em alguns falantes; o passé simple é típico da narrativa escrita.",
+     "exp": "'Comprit' = passé simple de 'comprendre'. Não confunda 'il comprit' (passé simple, /kɔ̃pri/) com 'il comprend' (presente) e 'il comprenait' (imparfait); o passé simple é típico da narrativa escrita.",
      "dica": "COMPRENDRE (passé simple)"
     }
    ]
@@ -842,7 +850,7 @@
    ],
    "material": {
     "titulo": "Bayle, Voltaire et la tolérance",
-    "texto": "Lorsque Pierre Bayle publia, à la fin du XVIIe siècle, son plaidoyer pour la liberté de conscience, nul ne s'attendait à ce que sa voix fût entendue au-delà d'un cercle restreint de lettrés. Exilé en Hollande, il avait vu la révocation de l'édit de Nantes pousser ses coreligionnaires sur les routes, et il avait compris que l'intolérance ne tenait pas seulement à la cruauté des princes, mais à une erreur de logique : on voulait que chacun crût ce qu'on lui ordonnait de croire, comme si la foi se commandait.\n\nCette erreur ne cessa de hanter la pensée des Lumières. Voltaire, qui eût sans doute applaudi les arguments de Bayle, y ajouta l'indignation, et l'affaire Calas lui fournit l'occasion de la faire retentir : le philosophe dénonça, avec une ironie féroce, les magistrats qui avaient fait rouer un innocent au nom d'une orthodoxie qu'ils n'avaient même pas comprise. Il fallait que l'opinion s'émût, que les juges rougissent de leur arrêt, pour que le jugement fût révisé. Il n'était pas question de prêcher la bienveillance universelle ; Voltaire, d'ailleurs, ne se fit jamais d'illusions sur la nature humaine. Il souhaitait seulement que l'on tolérât ce que l'on ne pouvait empêcher.\n\nUne telle position paraît bien modeste aujourd'hui, et d'aucuns y voient même une faiblesse. Mais il importe de mesurer ce qu'elle impliquait. Tolérer, à l'origine, c'est supporter, et l'on ne supporte que ce que l'on désapprouve. Le tolérant n'approuve pas l'hérétique : il consent seulement à ne pas le persécuter, bien qu'il le jugeât dans l'erreur. Cette retenue, qui nous semble aujourd'hui insuffisante, constituait alors une révolution : elle séparait pour la première fois la vérité de la contrainte.\n\nLes contemporains ne s'y trompèrent pas. Quoique l'Église eût condamné ces écrits, ils circulèrent sous le manteau, et il fallut que les censeurs fussent bien naïfs pour croire qu'une interdiction suffirait à les arrêter. Les libraires prenaient des risques considérables, mais la clientèle, elle, ne se laissait pas intimider. Chaque saisie ajoutait au prestige de l'ouvrage saisi. On a pu dire que la censure fut, au siècle des Lumières, le meilleur éditeur de la philosophie.\n\nIl serait toutefois anachronique d'attribuer à ces penseurs notre conception moderne de la liberté. Ils n'auraient pas souhaité que les athées fussent protégés, ni que tous les cultes fussent traités à égalité. Le chemin de la tolérance fut tortueux, et c'est précisément ce qui en fait l'intérêt : il nous rappelle qu'une idée, pour s'imposer, n'a pas besoin d'être complète. Il suffit qu'elle soit assez juste pour que l'on ne puisse plus faire comme si elle n'avait jamais été formulée."
+    "texto": "Lorsque Pierre Bayle publia, à la fin du XVIIe siècle, son plaidoyer pour la liberté de conscience, nul ne s'attendait à ce que sa voix fût entendue au-delà d'un cercle restreint de lettrés. Exilé en Hollande, il avait vu la révocation de l'édit de Nantes pousser ses coreligionnaires sur les routes, et il avait compris que l'intolérance ne tenait pas seulement à la cruauté des princes, mais à une erreur de logique : on voulait que chacun crût ce qu'on lui ordonnait de croire, comme si la foi se commandait.\n\nCette erreur ne cessa de hanter la pensée des Lumières. Voltaire, qui eût sans doute applaudi les arguments de Bayle, y ajouta l'indignation, et l'affaire Calas lui fournit l'occasion de la faire retentir : le philosophe dénonça, avec une ironie féroce, les magistrats qui avaient fait rouer un innocent au nom d'une orthodoxie qu'ils n'avaient même pas comprise. Il fallait que l'opinion s'émût, que les juges rougissent de leur arrêt, pour que le jugement fût révisé. Il n'était pas question de prêcher la bienveillance universelle ; Voltaire, d'ailleurs, ne se fit jamais d'illusions sur la nature humaine. Il souhaitait seulement que l'on tolérât ce que l'on ne pouvait empêcher.\n\nUne telle position paraît bien modeste aujourd'hui, et d'aucuns y voient même une faiblesse. Mais il importe de mesurer ce qu'elle impliquait. Tolérer, à l'origine, c'est supporter, et l'on ne supporte que ce que l'on désapprouve. Le tolérant d'alors n'approuvait pas l'hérétique : il consentait seulement à ne pas le persécuter, bien qu'il le jugeât dans l'erreur. Cette retenue, qui nous semble aujourd'hui insuffisante, constituait alors une révolution : elle séparait pour la première fois la vérité de la contrainte.\n\nLes contemporains ne s'y trompèrent pas. Quoique l'Église eût condamné ces écrits, ils circulèrent sous le manteau, et il fallut que les censeurs fussent bien naïfs pour croire qu'une interdiction suffirait à les arrêter. Les libraires prenaient des risques considérables, mais la clientèle, elle, ne se laissait pas intimider. Chaque saisie ajoutait au prestige de l'ouvrage saisi. On a pu dire que la censure fut, au siècle des Lumières, le meilleur éditeur de la philosophie.\n\nIl serait toutefois anachronique d'attribuer à ces penseurs notre conception moderne de la liberté. Ils n'auraient pas souhaité que les athées fussent protégés, ni que tous les cultes fussent traités à égalité. Le chemin de la tolérance fut tortueux, et c'est précisément ce qui en fait l'intérêt : il nous rappelle qu'une idée, pour s'imposer, n'a pas besoin d'être complète. Il suffit qu'elle soit assez juste pour que l'on ne puisse plus faire comme si elle n'avait jamais été formulée."
    },
    "exercicios": [
     {
@@ -859,7 +867,7 @@
     },
     {
      "t": "gap",
-     "q": "Il fallait que l'opinion s'___ pour que les juges révisent leur arrêt.",
+     "q": "Il fallait que l'opinion s'___ pour que le jugement fût révisé.",
      "resp": [
       "émût"
      ],
@@ -871,7 +879,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta esta frase.",
      "frase": "Il souhaitait seulement que l'on tolérât ce que l'on ne pouvait empêcher.",
-     "exp": "Pronuncie 'tolérât' como to-le-RA (o circunflexo não muda o som). Observe o 'l'on' eufônico (liaison em 'que l'on'). Ritmo: souhaitait seulement / que l'on tolérât / ce que l'on ne pouvait empêcher."
+     "exp": "Pronuncie 'tolérât' como to-le-RA (o circunflexo não muda o som). Observe o 'l'on' eufônico: o 'l'' só evita o encontro de vogais, sem liaison. Ritmo: souhaitait seulement / que l'on tolérât / ce que l'on ne pouvait empêcher."
     },
     {
      "t": "mc",
@@ -939,15 +947,15 @@
       "La tolérance moderne est meilleure que celle des Lumières."
      ],
      "r": 2,
-     "exp": "A frase prepara a conclusão: justamente as limitações históricas ensinam que uma ideia pode vencer sem ser perfeita. A opção 2 é uma comparação que o texto evita fazer ('anachronique')."
+     "exp": "A frase prepara a conclusão: justamente as limitações históricas ensinam que uma ideia pode vencer sem ser perfeita. A opção 3 é uma comparação que o texto evita fazer ('anachronique')."
     },
     {
      "t": "gap",
-     "q": "Le tolérant consent seulement à ne pas persécuter l'hérétique, bien qu'il le ___ dans l'erreur.",
+     "q": "Le tolérant consentait seulement à ne pas persécuter l'hérétique, bien qu'il le ___ dans l'erreur.",
      "resp": [
       "jugeât"
      ],
-     "exp": "'Bien que' + subjuntivo. No contexto de passado (consent… constituait alors), o texto usa o imperfeito: 'bien qu'il le jugeât'. Conjugação: que je jugeasse, qu'il jugeât.",
+     "exp": "'Bien que' + subjuntivo. No contexto de passado (consentait… constituait alors), o texto usa o imperfeito: 'bien qu'il le jugeât'. Conjugação: que je jugeasse, qu'il jugeât.",
      "dica": "JUGER, subjonctif imparfait"
     }
    ]
@@ -1019,7 +1027,8 @@
      "q": "___ séduisante que paraisse la décision rapide, elle a un coût que l'on n'aperçoit qu'après coup.",
      "resp": [
       "si",
-      "aussi"
+      "aussi",
+      "quelque"
      ],
      "exp": "'Si / aussi + adjetivo + que + subjuntivo' = concessão ('por mais sedutora que pareça'). 'Si' é mais frequente; 'aussi' é mais literário. Não use 'tellement'."
     },
@@ -1172,8 +1181,7 @@
      "t": "gap",
      "q": "Agissons avant qu'il ___ soit trop tard.",
      "resp": [
-      "ne",
-      "n'"
+      "ne"
      ],
      "exp": "Depois de 'avant que', 'à moins que', 'de peur que', 'craindre que', usa-se frequentemente o 'ne' explétivo no registro formal. Ele é facultativo, mas muito frequente em textos C2.",
      "dica": "ne explétif"
@@ -1252,7 +1260,7 @@
       "Il l'accepte avec prudence : le risque existe, mais il est moins grand qu'on ne le dit."
      ],
      "r": 3,
-     "exp": "O autor reconhece o risco ('le risque existe, sans doute') e relativiza ('moins grand qu'on ne le dit'). Concessão + nuance = posição moderadamente favorável. A opção 0 confunde a objeção com a tese."
+     "exp": "O autor reconhece o risco ('le risque existe, sans doute') e relativiza ('moins grand qu'on ne le dit'). Concessão + nuance = posição moderadamente favorável. A opção 1 confunde a objeção levantada no texto com a posição do autor."
     },
     {
      "t": "gap",
@@ -1418,7 +1426,8 @@
      "t": "gap",
      "q": "Ci-___, nous désignerons sous le nom de « normalisation de l'urgence » ce processus de reconduction.",
      "resp": [
-      "après"
+      "après",
+      "dessous"
      ],
      "exp": "'Ci-après' = mais adiante, a seguir (usado em contratos e textos formais). Seu oposto é 'ci-dessus' (acima). Também existe 'ci-joint' (anexo).",
      "dica": "mot de renvoi"
@@ -1472,7 +1481,7 @@
    ],
    "material": {
     "titulo": "Le commerce de proximité",
-    "texto": "Pendant des décennies, le commerce de proximité a fait florès dans les centres-villes. La boulangerie, la librairie, le café du coin formaient un tissu serré qui donnait aux rues leur physionomie et aux quartiers leur âme. Aujourd'hui, ce modèle est mis à mal par les plateformes de vente en ligne qui, tenant la dragée haute aux boutiques physiques, proposent des prix que nul commerçant indépendant ne saurait égaler. Dans bien des villes moyennes, les locaux vacants se multiplient, et les rideaux baissés finissent par décourager les derniers chalands. Une rue qui se vide appelle d'autres départs : c'est un cercle vicieux, que l'on a longtemps pris pour une fatalité alors qu'il résulte aussi de choix d'aménagement, de loyers excessifs et de politiques d'urbanisme tournées vers les périphéries.\n\nLes pouvoirs publics ont tiré la sonnette d'alarme, sans grand effet. On a multiplié les rapports, les états généraux, les plans de sauvegarde ; à chaque fois, la montagne a accouché d'une souris. Le dernier dispositif en date, une exonération temporaire de charges, a été accueilli avec un scepticisme poli par les intéressés : ils y voient une mesure à courte vue, qui retarde la fermeture sans en traiter la cause.\n\nCertains commerçants, pourtant, tirent leur épingle du jeu. Ils ne se contentent pas de vendre : ils conseillent, animent, organisent des rencontres, et font flèche de tout bois pour fidéliser une clientèle qui, sans eux, ne mettrait plus les pieds en ville. Leur réussite bat en brèche l'idée reçue selon laquelle la proximité serait condamnée par la technique. Ce qui est condamné, c'est la proximité qui ne propose rien d'autre qu'elle-même.\n\nReste la question épineuse de la fiscalité, véritable pierre d'achoppement entre les élus locaux et l'État. Les premiers voudraient taxer les plateformes ; les seconds objectent que l'on ne peut mettre la charrue avant les bœufs : sans cadre européen cohérent, une taxe nationale ne ferait que déplacer les sièges sociaux. L'argument n'est pas dénué de fondement, mais il est devenu un alibi commode, que l'on brandit tantôt à bon escient, tantôt pour masquer l'indécision.\n\nFaut-il pour autant jeter l'éponge ? Les urbanistes que nous avons consultés l'écartent résolument. À leurs yeux, les plateformes ne sonnent pas le glas des centres-villes ; elles les obligent à se réinventer. Mais ils précisent aussitôt que cette réinvention ne se fera pas toute seule, et qu'un commerçant laissé sur la sellette par les banques, par l'administration et par la grande distribution ne dispose que d'une marge de manœuvre étroite. Autrement dit, aucun cheval de Troie numérique ne vaincra jamais une ville qui sait ce qu'elle veut être."
+    "texto": "Pendant des décennies, le commerce de proximité a fait florès dans les centres-villes. La boulangerie, la librairie, le café du coin formaient un tissu serré qui donnait aux rues leur physionomie et aux quartiers leur âme. Aujourd'hui, ce modèle est mis à mal par les plateformes de vente en ligne qui, tenant la dragée haute aux boutiques physiques, proposent des prix que nul commerçant indépendant ne saurait égaler. Dans bien des villes moyennes, les locaux vacants se multiplient, et les rideaux baissés finissent par décourager les derniers chalands. Une rue qui se vide appelle d'autres départs : c'est un cercle vicieux, que l'on a longtemps pris pour une fatalité alors qu'il résulte aussi de choix d'aménagement, de loyers excessifs et de politiques d'urbanisme tournées vers les périphéries.\n\nLes pouvoirs publics ont tiré la sonnette d'alarme, sans grand effet. On a multiplié les rapports, les états généraux, les plans de sauvegarde ; à chaque fois, la montagne a accouché d'une souris. Le dernier dispositif en date, une exonération temporaire de charges, a été accueilli avec un scepticisme poli par les intéressés : ils y voient une mesure à courte vue, qui retarde la fermeture sans en traiter la cause.\n\nCertains commerçants, pourtant, tirent leur épingle du jeu. Ils ne se contentent pas de vendre : ils conseillent, animent, organisent des rencontres, et font flèche de tout bois pour fidéliser une clientèle qui, sans eux, ne mettrait plus les pieds en ville. Leur réussite bat en brèche l'idée reçue selon laquelle la proximité serait condamnée par la technique. Ce qui est condamné, c'est la proximité qui ne propose rien d'autre qu'elle-même.\n\nReste la question épineuse de la fiscalité, véritable pierre d'achoppement entre les élus locaux et l'État. Les premiers voudraient taxer les plateformes ; les seconds objectent que l'on ne peut mettre la charrue avant les bœufs : sans cadre européen cohérent, une taxe nationale ne ferait que déplacer les sièges sociaux. L'argument n'est pas dénué de fondement, mais il est devenu un alibi commode, que l'on brandit tantôt à bon escient, tantôt pour masquer l'indécision.\n\nFaut-il pour autant jeter l'éponge ? Les urbanistes que nous avons consultés l'écartent résolument. À leurs yeux, les plateformes ne sonnent pas le glas des centres-villes ; elles les obligent à se réinventer. Mais ils précisent aussitôt que cette réinvention ne se fera pas toute seule, et qu'un commerçant laissé sur le carreau par les banques, par l'administration et par la grande distribution ne dispose que d'une marge de manœuvre étroite. Autrement dit, aucun cheval de Troie numérique ne vaincra jamais une ville qui sait ce qu'elle veut être."
    },
    "exercicios": [
     {
@@ -1485,7 +1494,7 @@
       "s'est transformé en plateforme."
      ],
      "r": 1,
-     "exp": "'Faire florès' = ter grande popularidade, prosperar (do latim 'floris'). Não confunda com 'faire fleur' nem com 'fleurir' (florescer, literal). Falsa pista: 'flor' em português lembra 'florescer', e aqui o sentido é próximo, mas a expressão é fixa."
+     "exp": "'Faire florès' = ter grande popularidade, prosperar . Não confunda com 'faire fleur' nem com 'fleurir' (florescer, literal). Falsa pista: 'flor' em português lembra 'florescer', e aqui o sentido é próximo, mas a expressão é fixa."
     },
     {
      "t": "gap",
@@ -1493,7 +1502,7 @@
      "resp": [
       "souris"
      ],
-     "exp": "'La montagne accouche d'une souris' = muito barulho por um resultado mínimo. A imagem vem de uma fábula de La Fontaine/Horácio. Em C2, expressões desse tipo exigem compreensão da imagem."
+     "exp": "'La montagne accouche d'une souris' = muito barulho por um resultado mínimo. A imagem vem de um verso de Horácio (Art poétique), retomado por La Fontaine. Em C2, expressões desse tipo exigem compreensão da imagem."
     },
     {
      "t": "speak",
@@ -1537,7 +1546,7 @@
      "resp": [
       "sonnette"
      ],
-     "exp": "'Tirer la sonnette d'alarme' = dar o alarme, alertar. Não confundir com 'sonner l'alarme'. O substantivo é feminino: la sonnette.",
+     "exp": "'Tirer la sonnette d'alarme' = dar o alarme, alertar. A expressão fixa usa o verbo 'tirer', não 'sonner'. O substantivo é feminino: la sonnette.",
      "dica": "locution : alerter"
     },
     {
@@ -1693,9 +1702,11 @@
      "resp": [
       "suppose",
       "présuppose",
-      "postule"
+      "postule",
+      "implique",
+      "exige"
      ],
-     "exp": "'Supposer' = ter como condição prévia. O argumento: só se transgride o que se conhece, então a variação pressupõe a norma. Não confunda com 'supposer' no sentido de 'achar' (suponer, em português)."
+     "exp": "'Supposer' = ter como condição prévia. O argumento: só se transgride o que se conhece, então a variação pressupõe a norma. Não confunda com 'supposer' no sentido de 'achar' (supor, em português)."
     },
     {
      "t": "speak",
@@ -1726,13 +1737,14 @@
       "Qu'elle fait partie du vocabulaire vestimentaire."
      ],
      "r": 1,
-     "exp": "A metáfora do 'costume' indica que a falsa familiaridade é um disfarce. O auditor, 'qui n'est pas dupe', percebe o artifício. Reformule a metáfora por um termo abstrato (artifício, procedimento) para responder bem."
+     "exp": "A metáfora do 'costume' indica que a falsa familiaridade é um disfarce. O ouvinte, 'qui n'est pas dupe', percebe o artifício. Reformule a metáfora por um termo abstrato (artifício, procedimento) para responder bem."
     },
     {
      "t": "gap",
      "q": "Le comique d'un registre incongru tient au ___ qu'il produit avec celui qui l'entoure.",
      "resp": [
-      "contraste"
+      "contraste",
+      "décalage"
      ],
      "exp": "'Contraste' = oposição que gera efeito. O texto conclui que o cômico (e a ironia) dependem da diferença entre dois registros vizinhos. Atenção ao gênero: un contraste (masculino)."
     }
@@ -1798,7 +1810,7 @@
       "Le document 2 réfute entièrement le document 1 et nie tout problème de lecture."
      ],
      "r": 0,
-     "exp": "No dossiê C2, a relação é central: convergência, oposição ou complementaridade. Aqui há convergência parcial (a leitura rápida empobrece) e divergência sobre a causa (suporte x uso). A opção 2 exagera: a pesquisadora diz 'cela ne signifie pas que tout va bien'."
+     "exp": "No dossiê C2, a relação é central: convergência, oposição ou complementaridade. Aqui há convergência parcial (a leitura rápida empobrece) e divergência sobre a causa (suporte x uso). A opção 3 exagera: a pesquisadora diz 'cela ne signifie pas que tout va bien'."
     },
     {
      "t": "gap",
@@ -1813,7 +1825,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta esta frase.",
      "frase": "Ce n'est pas le support qui détermine l'attention, c'est l'usage que l'on en fait.",
-     "exp": "Frase clivada (c'est… qui / c'est… que) comum em argumentação. Dê ênfase a 'support' e 'usage'. Em 'que l'on en fait', faça a ligação em 'l'on' (/lɔ̃/) e o 'en' nasal."
+     "exp": "Frase clivada (c'est… qui / c'est… que) comum em argumentação. Dê ênfase a 'support' e 'usage'. Em 'que l'on en fait', faça a ligação 'on en' (/lɔ̃nɑ̃/)."
     },
     {
      "t": "mc",
@@ -1960,9 +1972,10 @@
      "t": "gap",
      "q": "Les historiens ne cherchent pas à salir : ils se ___ à nuancer.",
      "resp": [
-      "bornent"
+      "bornent",
+      "limitent"
      ],
-     "exp": "'Se borner à' = limitar-se a. Aparece com muita frequência para marcar uma restrição. Atenção ao falso cognato: 'borne' não é 'borne' em português; trata-se de 'limite'.",
+     "exp": "'Se borner à' = limitar-se a. Aparece com muita frequência para marcar uma restrição. O verbo vem de 'borne' (marco, limite).",
      "dica": "se borner à"
     },
     {
@@ -2002,13 +2015,18 @@
       "vérité"
      ],
      "resp": "La douleur pour légitime qu'elle soit ne suffit pas à établir la vérité",
-     "exp": "Estrutura concessiva 'pour + adjetivo + que + subjuntivo' (= por mais legítima que seja). É uma equivalente de 'si légitime qu'elle soit' e de 'quelque légitime que'."
+     "exp": "Estrutura concessiva 'pour + adjetivo + que + subjuntivo' (= por mais legítima que seja). É uma equivalente de 'si légitime qu'elle soit' e de 'quelque légitime que'.",
+     "alt": [
+      "Pour légitime qu'elle soit la douleur ne suffit pas à établir la vérité"
+     ]
     },
     {
      "t": "gap",
      "q": "Le passage à la mémoire savante n'est pas un ___ : il oblige chacun à choisir ce qu'il veut transmettre.",
      "resp": [
-      "appauvrissement"
+      "appauvrissement",
+      "affaiblissement",
+      "recul"
      ],
      "exp": "'Appauvrissement' = empobrecimento. O autor contradiz a ideia de que a memória 'aprendida' seria menos valiosa; ela obriga a escolher, portanto a assumir a herança.",
      "dica": "APPAUVRIR"
@@ -2202,13 +2220,17 @@
       "Considérer la sobriété comme un sacrifice ou une punition."
      ],
      "r": 3,
-     "exp": "O filósofo diz: 'On parle de sobriété comme d'un sacrifice, et c'est là le malentendu'. A sobriedade só dura se for escolhida por convicção. Cuidado: as opções 0 e 2 resumem outros documentos."
+     "exp": "O filósofo diz: 'On parle de sobriété comme d'un sacrifice, et c'est là le malentendu'. A sobriedade só dura se for escolhida por convicção. Cuidado: as demais opções não correspondem ao 'malentendu' citado."
     },
     {
      "t": "gap",
      "q": "La technique réduit l'impact de chaque unité produite, mais ne ___ pas le nombre d'unités.",
      "resp": [
-      "limite"
+      "limite",
+      "réduit",
+      "restreint",
+      "diminue",
+      "plafonne"
      ],
      "exp": "'Limiter' = restringir. A frase opõe o impacto por unidade ('réduit') ao número de unidades. Não confundir 'limiter' com 'délimiter' (demarcar)."
     }
@@ -2356,7 +2378,10 @@
       "remplaçaient"
      ],
      "resp": "Le tisserand n'avait pas fourni lui-même les métiers qui le remplaçaient",
-     "exp": "Argumento irônico do doc 3: o tecelão não financiou nem forneceu as máquinas que o substituíram, ao passo que o ilustrador forneceu (com suas obras) o material de aprendizado da IA. 'Lui-même' reforça a ideia."
+     "exp": "Argumento irônico do doc 3: o tecelão não financiou nem forneceu as máquinas que o substituíram, ao passo que o ilustrador forneceu (com suas obras) o material de aprendizado da IA. 'Lui-même' reforça a ideia.",
+     "alt": [
+      "Le tisserand n'avait pas lui-même fourni les métiers qui le remplaçaient"
+     ]
     },
     {
      "t": "mc",
@@ -2368,7 +2393,7 @@
       "Le document 2 traite d'un sujet sans rapport avec le premier."
      ],
      "r": 0,
-     "exp": "O doc 1 termina perguntando se o pintor que se inspira dos predecessores faz outra coisa que 'recombiner'; o doc 2 responde pela 'nécessité intérieure'. É complementaridade, com aprofundamento teórico. Cuidado com a opção 3: não é um resumo."
+     "exp": "O doc 1 termina perguntando se o pintor que se inspira dos predecessores faz outra coisa que 'recombiner'; o doc 2 responde pela 'nécessité intérieure'. É complementaridade, com aprofundamento teórico. Cuidado com a opção 2: o doc 2 não resume o doc 1, ele aprofunda uma questão."
     },
     {
      "t": "gap",
@@ -2376,7 +2401,7 @@
      "resp": [
       "paraît"
      ],
-     "exp": "'Moins solide qu'il n'y paraît' = menos sólida do que parece. Observe o 'ne' explétivo e o pronome 'y' (= à première vue). Expressão fixa de nuance: 'plus/moins… qu'il n'y paraît'.",
+     "exp": "'Moins solide qu'il n'y paraît' = menos sólida do que parece. Observe o 'ne' explétivo e o 'y' fixo da expressão 'il n'y paraît'. Expressão fixa de nuance: 'plus/moins… qu'il n'y paraît'.",
      "dica": "PARAÎTRE"
     },
     {
@@ -2389,7 +2414,7 @@
       "Le document 2 défend les machines et le document 3 les condamne pour des raisons esthétiques."
      ],
      "r": 1,
-     "exp": "Doc 2 = questão filosófica (o que é criar?); doc 3 = questão econômica e moral (transferência de valor). Não há contradição frontal: são ângulos diferentes. Opções 1 e 2 deformam as posições."
+     "exp": "Doc 2 = questão filosófica (o que é criar?); doc 3 = questão econômica e moral (transferência de valor). Não há contradição frontal: são ângulos diferentes. As demais opções deformam as posições."
     },
     {
      "t": "mc",
