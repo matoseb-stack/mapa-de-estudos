@@ -78,7 +78,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta esta frase.",
      "frase": "Nous avons visité le vieux quartier de Lyon.",
-     "exp": "Visité: vi-zi-TÉ. Quartier: kar-TIÉ (o r final de -er não se pronuncia no particípio)."
+     "exp": "Visité: vi-zi-TÉ (o r final de -er não se pronuncia). Quartier: kar-TIÉ (a terminação -ier também soa É; o r final é mudo)."
     },
     {
      "t": "mc",
@@ -258,7 +258,10 @@
       "midi"
      ],
      "resp": "Inès est arrivée à Marseille à midi",
-     "exp": "Arriver usa être e o particípio concorda com Inès (feminino): arrivée."
+     "exp": "Arriver usa être e o particípio concorda com Inès (feminino): arrivée.",
+     "alt": [
+      "À midi, Inès est arrivée à Marseille."
+     ]
     },
     {
      "t": "gap",
@@ -275,7 +278,7 @@
      "q": "Responda em francês: para onde você foi nas últimas férias?",
      "frase": "Tu es allé(e) où pendant tes dernières vacances ?",
      "modelo": "Je suis allé à Salvador avec ma famille.",
-     "min": 5,
+     "min": 4,
      "chave": [
       "suis",
       "sommes",
@@ -411,7 +414,10 @@
       "dehors"
      ],
      "resp": "Mon frère et moi nous jouions dehors",
-     "exp": "Imparfait de jouer com nous: jouions. Hábito do passado."
+     "exp": "Imparfait de jouer com nous: jouions. Hábito do passado.",
+     "alt": [
+      "Nous jouions dehors, mon frère et moi."
+     ]
     },
     {
      "t": "gap",
@@ -427,7 +433,7 @@
      "q": "Responda em francês: como era sua casa quando você era criança?",
      "frase": "Comment était ta maison quand tu étais petit(e) ?",
      "modelo": "Ma maison était grande et j'avais une chambre jaune.",
-     "min": 5,
+     "min": 4,
      "chave": [
       "était",
       "avait",
@@ -605,10 +611,11 @@
     },
     {
      "t": "gap",
-     "q": "Il y avait beaucoup de monde, alors je ___ debout pendant tout le trajet. (rester)",
+     "q": "Il y avait beaucoup de monde dans le bus, alors hier, je ___ debout pendant tout le trajet. (rester)",
      "resp": [
       "suis resté",
-      "suis restée"
+      "suis restée",
+      "suis resté(e)"
      ],
      "exp": "Ação terminada com resultado: passé composé. Rester usa être: je suis resté(e).",
      "dica": "RESTER"
@@ -624,7 +631,7 @@
     "O futur proche diz o que vai acontecer logo: aller (presente) + infinitivo. Ex.: Je vais manger, tu vas partir, il va pleuvoir.",
     "Presente de aller: je vais, tu vas, il/elle/on va, nous allons, vous allez, ils/elles vont.",
     "Negação: ne vai antes de aller e pas depois: Il ne va pas venir.",
-    "Equivale ao nosso 'vou fazer / vamos viajar'. Em francês, aller não perde o 'a-l-l': nous allons (não 'nous irons' para o futuro próximo)."
+    "Cuidado com a forma: aller muda no presente (je vais, tu vas, nous allons, ils vont). Só depois vem o infinitivo: nous allons visiter (e não 'nous allons visité')."
    ],
    "vocab": [
     {
@@ -1337,7 +1344,7 @@
      "q": "Responda em francês: de qual peça de roupa você gosta mais e por quê?",
      "frase": "Quel vêtement préfères-tu ? Pourquoi ?",
      "modelo": "Je préfère ce pantalon noir parce qu'il est confortable.",
-     "min": 5,
+     "min": 4,
      "chave": [
       "ce",
       "cet",
@@ -1470,11 +1477,14 @@
       "pharmacie"
      ],
      "resp": "Tourne à gauche devant la pharmacie",
-     "exp": "Tourne à gauche = vire à esquerda. Devant la pharmacie = na frente da farmácia."
+     "exp": "Tourne à gauche = vire à esquerda. Devant la pharmacie = na frente da farmácia.",
+     "alt": [
+      "Devant la pharmacie, tourne à gauche."
+     ]
     },
     {
      "t": "gap",
-     "q": "Le petit parc est ___ de mon immeuble.",
+     "q": "Le petit parc est ___ de mon immeuble. (ao lado de)",
      "resp": [
       "à côté",
       "a côté"
@@ -1788,7 +1798,7 @@
      "q": "Responda em francês, usando um pronome: você assiste TV com frequência?",
      "frase": "Tu regardes souvent la télé ?",
      "modelo": "Oui, je la regarde tous les soirs.",
-     "min": 4,
+     "min": 3,
      "chave": [
       "la",
       "le",
@@ -1966,8 +1976,7 @@
      "t": "gap",
      "q": "Tes parents t'ont écrit ? - Oui, ils ___ ont envoyé une carte.",
      "resp": [
-      "m'",
-      "me"
+      "m'"
      ],
      "exp": "Quem fala é a pessoa a quem escreveram: ils m'ont envoyé (me/m' COI)."
     }
@@ -2072,7 +2081,10 @@
       "lundi"
      ],
      "resp": "N'y allez pas avant lundi",
-     "exp": "Y = au travail (lugar). Imperativo negativo: ne + y + verbo + pas."
+     "exp": "Y = au travail (lugar). Imperativo negativo: ne + y + verbo + pas.",
+     "alt": [
+      "Avant lundi, n'y allez pas."
+     ]
     },
     {
      "t": "gap",
@@ -2282,7 +2294,7 @@
      "q": "Responda em francês: você prefere o ciclismo ou a música? Por quê?",
      "frase": "Tu choisis quelle activité : le vélo ou la musique ? Pourquoi ?",
      "modelo": "Je choisis la musique parce que j'aime le jazz.",
-     "min": 5,
+     "min": 4,
      "chave": [
       "choisis",
       "préfère",

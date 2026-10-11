@@ -1,0 +1,2505 @@
+{
+ "nivel": "C1",
+ "skill": "writing",
+ "exame": "DALF C1",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "La synthèse du DALF C1 : les règles du jeu",
+   "objetivo": "Entender o que a prova de synthèse exige: texto único, neutro, com plano próprio e título.",
+   "foco": "Synthèse rules: two documents, ~220 words, neutral tone, own plan, title, no quotations",
+   "explicacao": [
+    "A synthèse do DALF C1 junta as ideias de DOIS documentos (cerca de 1 000 palavras no total) em um único texto de cerca de 220 palavras. Não é um resumo do texto 1 seguido de um resumo do texto 2.",
+    "Regras de ouro: texto objetivo e sem opinião pessoal (nada de « je pense que »), sem frases copiadas, com título, plano próprio e parágrafos. Exemplo: « Les deux documents s'interrogent sur les effets du télétravail. »",
+    "Agrupe as ideias por temas (vantagens / limites / soluções) e, dentro de cada tema, confronte os dois documentos. Use a 3ª pessoa e o presente.",
+    "Cuidado: « actuellement » significa « hoje em dia » (não « na verdade »). Respeitar o limite de palavras (±10 %) também conta nota."
+   ],
+   "vocab": [
+    {
+     "en": "la synthèse",
+     "pt": "a síntese (texto único a partir de vários documentos)"
+    },
+    {
+     "en": "un document",
+     "pt": "um documento / texto-fonte"
+    },
+    {
+     "en": "reformuler",
+     "pt": "reformular, dizer com outras palavras"
+    },
+    {
+     "en": "la problématique",
+     "pt": "a questão central do tema"
+    },
+    {
+     "en": "le plan",
+     "pt": "o plano, a organização das ideias"
+    },
+    {
+     "en": "un titre",
+     "pt": "um título"
+    },
+    {
+     "en": "une idée directrice",
+     "pt": "uma ideia central"
+    },
+    {
+     "en": "mettre en relation",
+     "pt": "relacionar, confrontar"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez une synthèse (environ 220 mots) des deux documents ci-dessous. Donnez un titre à votre texte, organisez les idées selon un plan personnel et ne donnez pas votre opinion.\n\nDocument 1 – Article de presse (résumé) : Depuis la crise sanitaire, le télétravail s'est installé dans de nombreuses entreprises. Les salariés apprécient de gagner du temps sur les trajets, de mieux concilier vie professionnelle et vie familiale et de travailler au calme. Les employeurs, eux, réalisent des économies de locaux.\nLe journaliste souligne toutefois que le travail à distance profite surtout aux cadres, alors que les ouvriers et les employés de service restent sur site. Il évoque un risque de fracture entre deux catégories de salariés.\n\nDocument 2 – Étude sociologique (résumé) : Une sociologue observe que l'isolement progresse chez les télétravailleurs : les échanges informels et le sentiment d'appartenance à une équipe disparaissent. Les jeunes recrues, privées d'un apprentissage au contact de leurs collègues, en pâtissent particulièrement.\nElle préconise néanmoins un modèle hybride, avec deux ou trois jours sur site, et demande aux entreprises de former les managers à l'animation d'équipes à distance.",
+    "genero": "synthèse",
+    "min": 200,
+    "max": 240,
+    "modelo": "Le télétravail : un progrès à encadrer\n\nLe télétravail, devenu courant depuis la crise sanitaire, séduit de nombreux salariés mais soulève plusieurs réserves. Les deux documents en dressent les atouts et les limites.\n\nD'une part, les avantages sont reconnus. Les employés économisent du temps de transport, concilient plus aisément vie professionnelle et vie familiale et bénéficient d'un environnement plus calme. De leur côté, les entreprises réduisent leurs dépenses immobilières, ce qui explique la rapidité de sa diffusion.\n\nD'autre part, les deux auteurs mettent en garde contre des effets négatifs. Le premier relève une inégalité : ce mode d'organisation concerne surtout les cadres, tandis que les ouvriers et les employés de service doivent rester sur site, d'où le risque d'une division entre deux catégories de travailleurs. Le second texte insiste sur l'isolement : les échanges informels et l'esprit d'équipe s'affaiblissent, ce qui pénalise particulièrement les jeunes recrues, privées d'un apprentissage auprès de leurs collègues.\n\nFace à ces difficultés, la sociologue recommande un modèle hybride, alternant jours de présence et jours à distance, ainsi qu'une formation des responsables à l'encadrement d'équipes dispersées, afin que la distance ne nuise ni à la cohésion des groupes ni à l'apprentissage des plus jeunes.\n\nLe travail à distance ne représente donc une avancée durable que s'il préserve l'égalité entre salariés et le lien entre collègues.",
+    "checklist": [
+     "Mon texte a un titre et ne reprend pas le titre des documents ?",
+     "Aucune opinion personnelle (pas de « je », pas de « à mon avis ») ?",
+     "Les idées sont regroupées par thèmes, et non document par document ?",
+     "Aucune phrase copiée : tout est reformulé ?",
+     "Le nombre de mots est proche de 220 (±10 %) ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Parmi ces affirmations, laquelle décrit correctement la synthèse du DALF C1 ?",
+     "op": [
+      "Elle résume le document 1, puis le document 2, puis donne l'avis du candidat.",
+      "Elle reprend les phrases les plus importantes des deux textes entre guillemets.",
+      "Elle donne le point de vue personnel du candidat sur le thème des documents.",
+      "Elle réunit les idées des deux documents dans un texte neutre, avec un plan personnel et un titre."
+     ],
+     "r": 3,
+     "exp": "A synthèse é neutra e reúne as ideias por temas. Resumos em sequência, citações e opinião pessoal são os erros mais comuns."
+    },
+    {
+     "t": "gap",
+     "q": "Une synthèse doit rester ___ : on n'y donne pas son opinion personnelle.",
+     "resp": [
+      "objective",
+      "neutre"
+     ],
+     "exp": "Como « synthèse » é feminino, o adjetivo concorda: objective. « Neutre » também é aceito.",
+     "dica": "OBJECTIF"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "La synthèse présente les idées des deux documents dans un texte unique.",
+     "exp": "Atenção ao « y » de « synthèse » (som /i/) e à nasal em « présente » e « documents »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase pourrait ouvrir une synthèse sur le télétravail ?",
+     "op": [
+      "Je pense que le télétravail est une excellente solution.",
+      "Dans le document 1, l'auteur dit que le télétravail est bien.",
+      "Les deux documents s'interrogent sur les effets du télétravail.",
+      "Voici mon avis sur le travail à distance."
+     ],
+     "r": 2,
+     "exp": "A abertura apresenta o tema e os documentos de forma neutra. Opinião (« je pense ») e « l'auteur dit » em sequência são evitados."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Les",
+      "idées",
+      "des",
+      "deux",
+      "textes",
+      "sont",
+      "regroupées",
+      "par",
+      "thèmes."
+     ],
+     "resp": "Les idées des deux textes sont regroupées par thèmes.",
+     "exp": "Plural: « les idées… sont regroupées » (particípio concorda com o sujeito feminino plural)."
+    },
+    {
+     "t": "gap",
+     "q": "Il ne faut pas ___ des phrases entières des documents.",
+     "resp": [
+      "copier",
+      "recopier"
+     ],
+     "exp": "« Recopier / copier » = copiar. A banca penaliza fortemente trechos copiados."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em uma ou duas frases: por que não resumir um documento depois do outro?",
+     "frase": "Pourquoi ne faut-il pas résumer les deux documents l'un après l'autre ?",
+     "modelo": "Parce que la synthèse doit regrouper les idées par thèmes et confronter les deux documents.",
+     "min": 9,
+     "chave": [
+      "thèmes",
+      "regrouper",
+      "confronter",
+      "plan",
+      "idées"
+     ],
+     "exp": "Dê a razão principal: agrupar por temas e confrontar os documentos."
+    },
+    {
+     "t": "mc",
+     "q": "Votre synthèse compte 300 mots pour 220 demandés. Que se passe-t-il ?",
+     "op": [
+      "Elle dépasse nettement la limite et sera pénalisée.",
+      "Rien : la longueur est libre si le contenu est bon.",
+      "Le correcteur ne lit que les 220 premiers mots.",
+      "Elle est mieux notée, car plus complète."
+     ],
+     "r": 0,
+     "exp": "Há tolerância de cerca de 10 %. Com 300 palavras, você ultrapassa muito o limite e perde pontos."
+    },
+    {
+     "t": "gap",
+     "q": "Les deux auteurs ___ sur un point : l'isolement des salariés est réel.",
+     "resp": [
+      "convergent",
+      "s'accordent"
+     ],
+     "exp": "« Converger » (convergent) mostra que os dois textos concordam: um verbo útil para confrontar documentos.",
+     "dica": "CONVERGER"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Reformuler sans copier",
+   "objetivo": "Dizer as ideias dos textos com suas próprias palavras: sinônimos, termos genéricos e mudança de estrutura.",
+   "foco": "Reformulation techniques: synonyms, generic terms, change of structure, passive voice",
+   "explicacao": [
+    "Reformular é dizer a mesma coisa com outras palavras e outra estrutura. Regra prática: não repita mais de 2 ou 3 palavras seguidas do texto original.",
+    "Quatro técnicas: (1) sinônimo: gagner du temps → réduire la durée ; (2) termo genérico: les quotidiens, les radios → les médias ; (3) mudar a classe da palavra: ils se déplacent → leurs déplacements ; (4) voz passiva: les experts recommandent X → X est recommandé par les experts.",
+    "Mantenha o sentido: um sinônimo errado muda a ideia. « Prétendre » = afirmar (não « pretender »); « supporter » = suportar/aguentar; « actuellement » = hoje em dia.",
+    "Exemplo: « Les salariés gagnent du temps sur les trajets » → « Les employés réduisent la durée de leurs déplacements. »"
+   ],
+   "vocab": [
+    {
+     "en": "reformuler",
+     "pt": "reformular"
+    },
+    {
+     "en": "un synonyme",
+     "pt": "um sinônimo"
+    },
+    {
+     "en": "un terme générique",
+     "pt": "um termo genérico"
+    },
+    {
+     "en": "recopier",
+     "pt": "copiar, recopiar"
+    },
+    {
+     "en": "la formulation",
+     "pt": "a formulação"
+    },
+    {
+     "en": "s'écarter de",
+     "pt": "afastar-se de"
+    },
+    {
+     "en": "en substance",
+     "pt": "em essência"
+    },
+    {
+     "en": "propager / se propager",
+     "pt": "espalhar / espalhar-se"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez une synthèse (environ 220 mots) des deux documents ci-dessous. Donnez un titre à votre texte, organisez les idées selon un plan personnel et ne donnez pas votre opinion.\n\nDocument 1 – Article de presse (résumé) : Les réseaux sociaux sont devenus la première source d'information des moins de 30 ans. L'information y circule instantanément et chacun peut devenir témoin, voire reporter. Les médias traditionnels y trouvent un nouveau public.\nL'auteur déplore toutefois la propagation de fausses informations, amplifiée par des algorithmes qui favorisent les contenus les plus émotionnels.\n\nDocument 2 – Rapport d'experts (résumé) : Les experts constatent que les internautes vérifient rarement l'origine d'une information avant de la partager. Les plateformes ont mis en place des outils de signalement, mais leur efficacité reste limitée.\nLes auteurs préconisent une éducation aux médias dès le collège et réclament davantage de transparence sur le fonctionnement des algorithmes.",
+    "genero": "synthèse",
+    "min": 200,
+    "max": 240,
+    "modelo": "Réseaux sociaux et information : une source précieuse mais fragile\n\nPour une majorité de jeunes, les plateformes numériques constituent désormais le principal canal d'accès à l'actualité. Les deux documents examinent les bénéfices de cette évolution, puis ses dangers et les remèdes envisageables.\n\nSur le plan des avantages, la diffusion est immédiate et tout utilisateur peut transmettre ce dont il est témoin. Les médias classiques y trouvent en outre un public renouvelé, et la frontière entre professionnels de l'information et simples témoins devient de plus en plus floue.\n\nCependant, cette rapidité a un coût. Le premier auteur regrette la multiplication des rumeurs, que renforcent des systèmes de classement privilégiant les contenus qui provoquent le plus de réactions. Le second texte observe que les internautes contrôlent rarement la provenance d'une nouvelle avant de la relayer ; les outils de signalement créés par les plateformes restent peu efficaces.\n\nPour y remédier, les experts recommandent d'enseigner dès l'adolescence les clés de lecture des médias et d'exiger des entreprises du secteur qu'elles expliquent le fonctionnement de leurs algorithmes.\n\nAinsi, les réseaux sociaux enrichissent l'accès à l'information à condition que les citoyens et les plateformes assument leurs responsabilités respectives et que l'esprit critique des utilisateurs soit développé dès le plus jeune âge.",
+    "checklist": [
+     "Evitei copiar sequências de mais de 2 ou 3 palavras dos documentos ?",
+     "Troquei verbos por substantivos ou usei termos genéricos pelo menos 3 vezes ?",
+     "Os sinônimos que usei mantêm exatamente o sentido ?",
+     "Há um título, um plano por temas e nenhuma opinião ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est la meilleure reformulation de « Les salariés gagnent du temps sur les trajets » ?",
+     "op": [
+      "Les salariés gagnent du temps sur les trajets.",
+      "Les employés réduisent la durée de leurs déplacements.",
+      "Les employés perdent du temps sur leurs trajets.",
+      "Les salariés aiment beaucoup leurs trajets."
+     ],
+     "r": 1,
+     "exp": "A boa reformulação troca as palavras (employés, déplacements) e mantém o sentido. A cópia e o sentido contrário são erros."
+    },
+    {
+     "t": "gap",
+     "q": "Reformulez : « La rumeur se propage vite » → « La ___ des fausses nouvelles est rapide. »",
+     "resp": [
+      "propagation",
+      "diffusion"
+     ],
+     "exp": "Nominalização do verbo: se propager → la propagation. « Diffusion » também serve.",
+     "dica": "PROPAGER"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Reformuler, c'est dire la même chose avec ses propres mots.",
+     "exp": "Atenção ao « r » francês (garganta) em « reformuler » e « propres », e ao « ch » de « chose » (/ʃ/)."
+    },
+    {
+     "t": "mc",
+     "q": "Quel terme générique résume « les quotidiens, les radios et les chaînes de télévision » ?",
+     "op": [
+      "les plateformes",
+      "les annonceurs",
+      "les réseaux",
+      "les médias"
+     ],
+     "r": 3,
+     "exp": "« Les médias » reúne jornais, rádios e TV. Os outros termos designam outra coisa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Les",
+      "internautes",
+      "vérifient",
+      "rarement",
+      "la",
+      "source",
+      "d'une",
+      "information."
+     ],
+     "resp": "Les internautes vérifient rarement la source d'une information.",
+     "exp": "Advérbio depois do verbo: « vérifient rarement ». « Source » aqui é feminino: la source."
+    },
+    {
+     "t": "gap",
+     "q": "Une éducation aux médias est ___ par les experts. (voix passive)",
+     "resp": [
+      "recommandée",
+      "préconisée",
+      "conseillée"
+     ],
+     "exp": "Na passiva, o particípio concorda com o sujeito: « une éducation » (fem. sing.) → recommandée.",
+     "dica": "RECOMMANDER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Diga a frase com outras palavras, em francês (uma frase).",
+     "frase": "Comment reformuleriez-vous « les internautes partagent sans vérifier » ?",
+     "modelo": "Les utilisateurs relaient les nouvelles sans en contrôler l'origine.",
+     "min": 7,
+     "chave": [
+      "utilisateurs",
+      "relaient",
+      "contrôler",
+      "origine",
+      "diffusent",
+      "source"
+     ],
+     "exp": "Troque verbo e substantivos por sinônimos (partager → relayer, vérifier → contrôler)."
+    },
+    {
+     "t": "mc",
+     "q": "Que signifie « actuellement » dans « Actuellement, les médias traditionnels cherchent un nouveau public » ?",
+     "op": [
+      "na verdade, de fato",
+      "antigamente",
+      "realmente, de forma concreta",
+      "hoje em dia, no momento presente"
+     ],
+     "r": 3,
+     "exp": "« Actuellement » = hoje em dia. Para « na verdade », use « en fait » ou « en réalité »."
+    },
+    {
+     "t": "gap",
+     "q": "Les rumeurs, ___ par les algorithmes, se propagent rapidement.",
+     "resp": [
+      "amplifiées",
+      "renforcées",
+      "accélérées"
+     ],
+     "exp": "Particípio como adjetivo: concorda com « les rumeurs » (fem. plural) → amplifiées. Esta técnica evita a repetição de um verbo conjugado.",
+     "dica": "AMPLIFIER"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "La nominalisation : dire plus avec moins de mots",
+   "objetivo": "Transformar verbos em substantivos para tornar a frase mais densa e mais formal.",
+   "foco": "Nominalisation: -tion, -ment, -ance/-ence, -age, -ité; en raison de, grâce à, malgré",
+   "explicacao": [
+    "A nominalização transforma verbo em substantivo: « les prix augmentent » → « l'augmentation des prix ». O texto fica mais curto, mais formal e com o estilo esperado no C1.",
+    "Sufixos frequentes: -tion / -sion (limiter → la limitation), -ment (développer → le développement), -ance / -ence (croître… la croissance), -age (stationner → le stationnement), irregulares: échouer → l'échec, reculer → le recul, baisser → la baisse.",
+    "O gênero importa: la réduction, la diminution, l'amélioration (femininos); le développement, le recul, l'essor (masculinos).",
+    "Depois da nominalização, use uma preposição de causa ou consequência: en raison de, à cause de (efeito negativo), grâce à (efeito positivo), malgré (oposição)."
+   ],
+   "vocab": [
+    {
+     "en": "la hausse / la baisse",
+     "pt": "a alta / a queda"
+    },
+    {
+     "en": "la diminution",
+     "pt": "a diminuição"
+    },
+    {
+     "en": "le développement",
+     "pt": "o desenvolvimento"
+    },
+    {
+     "en": "le recul",
+     "pt": "o recuo, a queda"
+    },
+    {
+     "en": "l'essor (m.)",
+     "pt": "o crescimento rápido, o auge"
+    },
+    {
+     "en": "l'amélioration (f.)",
+     "pt": "a melhoria"
+    },
+    {
+     "en": "la disparition",
+     "pt": "o desaparecimento"
+    },
+    {
+     "en": "l'apaisement (m.)",
+     "pt": "a pacificação, a calma"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez une synthèse (environ 220 mots) des deux documents ci-dessous. Donnez un titre à votre texte, organisez les idées selon un plan personnel et ne donnez pas votre opinion.\n\nDocument 1 – Article de presse (résumé) : Plusieurs grandes villes européennes restreignent la circulation automobile dans leur centre. Elles créent des zones à faibles émissions, augmentent le prix du stationnement et développent les pistes cyclables. Les premiers résultats montrent une baisse de la pollution de l'air et du bruit.\nPour le journaliste, ces mesures améliorent la qualité de vie des habitants et encouragent la pratique du vélo.\n\nDocument 2 – Tribune (résumé) : Des commerçants et des artisans s'inquiètent : leurs clients venus de la périphérie renonceraient à se déplacer et leurs livraisons deviendraient plus coûteuses. Certains parlent d'une diminution du chiffre d'affaires.\nUn urbaniste nuance ce constat : à long terme, les rues apaisées attirent plus de piétons, donc plus de clients. Il demande toutefois que les transports en commun soient renforcés pour les habitants éloignés.",
+    "genero": "synthèse",
+    "min": 200,
+    "max": 240,
+    "modelo": "Voitures en ville : entre qualité de vie et activité économique\n\nFace à la pollution, plusieurs métropoles européennes ont décidé de restreindre l'usage de l'automobile dans leur centre. Les deux documents confrontent les bénéfices de cette politique et les inquiétudes qu'elle suscite.\n\nLa limitation de la circulation, la création de zones à faibles émissions, le renchérissement du stationnement et l'extension des pistes cyclables ont déjà produit des effets : la baisse de la pollution atmosphérique et sonore améliore la qualité de vie des riverains et stimule la pratique du vélo, ce que confirment les premiers bilans chiffrés réalisés dans les villes pionnières.\n\nEn revanche, les professionnels du commerce redoutent la désertion d'une clientèle venue des banlieues et l'augmentation du coût des livraisons, d'où une possible diminution de leur chiffre d'affaires.\n\nUn urbaniste relativise cette crainte : à terme, l'apaisement des rues favorise la fréquentation piétonne et, par conséquent, l'activité des boutiques. Il subordonne toutefois cette réussite au renforcement des transports collectifs, indispensable aux habitants éloignés du centre.\n\nEn définitive, la réduction de la place de la voiture ne profite durablement à la ville que si elle s'accompagne d'une offre de déplacement alternative suffisante, notamment pour les ménages vivant loin des quartiers centraux et des grands axes de transport.",
+    "checklist": [
+     "Usei pelo menos 4 nominalizações (la baisse, la limitation, la diminution…) ?",
+     "O gênero e o artigo de cada substantivo estão corretos ?",
+     "Usei en raison de / grâce à / à cause de com o sentido certo ?",
+     "O texto continua neutro e sem opinião ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle est la nominalisation correcte du verbe « diminuer » ?",
+     "op": [
+      "le diminution",
+      "la diminuance",
+      "la diminution",
+      "le diminuement"
+     ],
+     "r": 2,
+     "exp": "Diminuer → la diminution (feminino, sufixo -tion)."
+    },
+    {
+     "t": "gap",
+     "q": "Les prix augmentent. → L'___ des prix inquiète les commerçants.",
+     "resp": [
+      "augmentation"
+     ],
+     "exp": "Augmenter → l'augmentation (feminino). Cuidado com a grafia: -tion, não « -sion ».",
+     "dica": "AUGMENTER"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "La baisse de la pollution améliore la qualité de vie des habitants.",
+     "exp": "Atenção ao « u » de « pollution » (lábios arredondados) e à nasal de « habitants » (/abitɑ̃/)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase nominalise correctement « Les villes limitent la circulation » ?",
+     "op": [
+      "Le limitement de la circulation par les villes progresse.",
+      "La limiter de la circulation par les villes progresse.",
+      "L'limite la circulation par les villes progresse.",
+      "La limitation de la circulation par les villes progresse."
+     ],
+     "r": 3,
+     "exp": "Limiter → la limitation. Não existe « limitement » nem infinitivo precedido de « la »."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "La",
+      "diminution",
+      "du",
+      "chiffre",
+      "d'affaires",
+      "inquiète",
+      "les",
+      "commerçants."
+     ],
+     "resp": "La diminution du chiffre d'affaires inquiète les commerçants.",
+     "exp": "« Chiffre d'affaires » = faturamento. Atenção: « la diminution » (fem.) mas « le chiffre » (masc.)."
+    },
+    {
+     "t": "gap",
+     "q": "Le trafic recule. → Le ___ du trafic est visible.",
+     "resp": [
+      "recul"
+     ],
+     "exp": "Reculer → le recul (masculino). É uma nominalização irregular: sem sufixo.",
+     "dica": "RECULER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês usando substantivos (baisse, amélioration…).",
+     "frase": "Que provoque la réduction de la circulation en centre-ville ?",
+     "modelo": "Elle provoque une baisse de la pollution et une amélioration de la qualité de vie, mais elle inquiète certains commerçants.",
+     "min": 10,
+     "chave": [
+      "pollution",
+      "baisse",
+      "qualité",
+      "commerçants",
+      "amélioration"
+     ],
+     "exp": "Use substantivos no lugar de verbos: une baisse, une amélioration."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle reformulation est correcte pour « Comme les prix du stationnement ont augmenté, les automobilistes renoncent à venir » ?",
+     "op": [
+      "Grâce à l'augmentation du prix du stationnement, les automobilistes renoncent à venir.",
+      "Malgré l'augmentation du prix du stationnement, les automobilistes renoncent à venir.",
+      "En raison de l'augmentation du prix du stationnement, les automobilistes renoncent à venir.",
+      "À l'augmentation du prix du stationnement, les automobilistes renoncent à venir."
+     ],
+     "r": 2,
+     "exp": "« En raison de » indica causa neutra. « Grâce à » sugere algo positivo; « malgré » indica oposição, o que muda o sentido."
+    },
+    {
+     "t": "gap",
+     "q": "Les rues sont apaisées, ce qui attire des piétons. → L'___ des rues attire des piétons.",
+     "resp": [
+      "apaisement"
+     ],
+     "exp": "Apaiser → l'apaisement (masculino, sufixo -ment). Com elisão: l'apaisement.",
+     "dica": "APAISER"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Les connecteurs de comparaison et d'opposition",
+   "objetivo": "Confrontar dois documentos com alors que, tandis que, de même, à l'inverse, en revanche.",
+   "foco": "alors que, tandis que, de même, à l'inverse, en revanche, tous deux, l'un… l'autre",
+   "explicacao": [
+    "Para confrontar documentos use conectores de oposição (alors que, tandis que, en revanche, à l'inverse, au contraire) e de semelhança (de même, de même que, tous deux, comme).",
+    "« Alors que » e « tandis que » levam o INDICATIVO: Le texte 1 est optimiste, tandis que le texte 2 est critique. Já « bien que » e « quoique » levam o SUBJUNTIVO.",
+    "« En revanche » e « à l'inverse » abrem uma nova frase: Le premier auteur insiste sur l'économie ; en revanche, le second parle des habitants. Evite « par contre » em texto formal.",
+    "« Tous deux » = os dois juntos: Tous deux reconnaissent… (verbo no plural). « L'un… l'autre » distribui: L'un défend…, l'autre dénonce…"
+   ],
+   "vocab": [
+    {
+     "en": "alors que",
+     "pt": "enquanto, ao passo que (+ indicativo)"
+    },
+    {
+     "en": "tandis que",
+     "pt": "enquanto, ao passo que"
+    },
+    {
+     "en": "en revanche",
+     "pt": "em contrapartida"
+    },
+    {
+     "en": "à l'inverse",
+     "pt": "ao contrário, inversamente"
+    },
+    {
+     "en": "de même",
+     "pt": "da mesma forma"
+    },
+    {
+     "en": "tous deux",
+     "pt": "ambos"
+    },
+    {
+     "en": "l'un… l'autre",
+     "pt": "um… o outro"
+    },
+    {
+     "en": "bien que",
+     "pt": "embora (+ subjuntivo)"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez une synthèse (environ 220 mots) des deux documents ci-dessous. Donnez un titre à votre texte, organisez les idées selon un plan personnel et ne donnez pas votre opinion.\n\nDocument 1 – Article de presse (résumé) : Le tourisme représente plus de 10 % de l'économie mondiale et fait vivre des régions entières. À Venise comme à Barcelone, hôtels, restaurants et commerces emploient des milliers d'habitants. L'auteur rappelle que les recettes touristiques financent aussi la restauration du patrimoine.\nIl admet pourtant que la fréquentation excessive use les sites et dégrade la vie des habitants.\n\nDocument 2 – Communiqué d'un collectif d'habitants (résumé) : Le collectif dénonce la hausse des loyers causée par les locations de courte durée. Les commerces de proximité cèdent la place aux boutiques de souvenirs et les riverains quittent le centre.\nIl réclame des quotas de visiteurs et une taxe plus élevée sur les nuitées, mais ne souhaite pas la fin du tourisme : il veut un tourisme mieux étalé dans le temps et dans l'espace.",
+    "genero": "synthèse",
+    "min": 200,
+    "max": 240,
+    "modelo": "Tourisme de masse : une ressource qui menace ceux qu'elle fait vivre\n\nLe tourisme occupe une place majeure dans l'économie mondiale, mais sa croissance suscite des tensions dans les villes les plus visitées. Les deux documents l'envisagent sous des angles différents, qui se rejoignent sur un point.\n\nLe premier texte met en avant les retombées économiques : des quartiers entiers vivent de l'hôtellerie, de la restauration et du commerce, tandis que les recettes contribuent à l'entretien du patrimoine. Le second, à l'inverse, adopte le point de vue des habitants, qui subissent la flambée des loyers provoquée par les locations de courte durée. Alors que les boutiques de souvenirs se multiplient, les commerces de proximité disparaissent et les riverains s'éloignent du centre.\n\nTous deux reconnaissent néanmoins les dégâts d'une fréquentation excessive : usure des sites, appauvrissement de la vie locale et dégradation du cadre de vie quotidien des riverains.\n\nDe même, ni l'un ni l'autre ne réclame la fin du tourisme. Le collectif préconise l'instauration de quotas de visiteurs et une taxation plus lourde des nuitées, afin d'étaler les flux dans l'espace et dans le temps, et de redonner ainsi aux quartiers historiques une fonction autre que celle de décor pour visiteurs.\n\nIl s'agit donc moins de choisir entre économie et qualité de vie que de mieux répartir les visiteurs.",
+    "checklist": [
+     "Usei pelo menos 3 conectores de oposição ou comparação diferentes ?",
+     "Depois de alors que / tandis que usei o indicativo ?",
+     "Usei tous deux ou l'un… l'autre para unir ou separar os autores ?",
+     "Evitei « par contre » e « mais » repetidos ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Lequel de ces connecteurs exprime une opposition entre deux faits ?",
+     "op": [
+      "de même",
+      "tandis que",
+      "c'est pourquoi",
+      "par exemple"
+     ],
+     "r": 1,
+     "exp": "« Tandis que » opõe dois fatos. « De même » compara por semelhança; « c'est pourquoi » indica consequência; « par exemple » dá um exemplo."
+    },
+    {
+     "t": "gap",
+     "q": "Le document 1 est optimiste, ___ le document 2 est critique.",
+     "resp": [
+      "alors que",
+      "tandis que"
+     ],
+     "exp": "Os dois conectores opõem as posições e levam o indicativo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Le premier texte est optimiste, tandis que le second est plus critique.",
+     "exp": "Atenção à liaison em « est optimiste » e à pronúncia de « tandis » (/tɑ̃di/, o « s » final não soa)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Tous deux reconnaissent le problème.",
+      "Tous deux reconnaît le problème.",
+      "Tout deux reconnaissent le problème.",
+      "Tous deux reconnaitre le problème."
+     ],
+     "r": 0,
+     "exp": "« Tous deux » (com s) leva o verbo no plural: reconnaissent."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "L'un",
+      "défend",
+      "le",
+      "tourisme,",
+      "l'autre",
+      "en",
+      "dénonce",
+      "les",
+      "excès."
+     ],
+     "resp": "L'un défend le tourisme, l'autre en dénonce les excès.",
+     "exp": "« En » substitui « du tourisme » (dénoncer les excès DU tourisme). Em francês é preciso colocar o « en » antes do verbo."
+    },
+    {
+     "t": "gap",
+     "q": "Le premier auteur insiste sur l'économie ; ___, le second parle de la vie des habitants.",
+     "resp": [
+      "en revanche",
+      "à l'inverse"
+     ],
+     "exp": "Os dois conectores opõem as duas posições e vêm no início da segunda parte."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, com um conector de oposição.",
+     "frase": "Comparez en une phrase l'auteur 1 (économie) et le collectif (habitants).",
+     "modelo": "L'auteur du premier document souligne les bénéfices économiques, alors que le collectif insiste sur les difficultés des habitants.",
+     "min": 12,
+     "chave": [
+      "alors que",
+      "tandis que",
+      "en revanche",
+      "économiques",
+      "habitants"
+     ],
+     "exp": "Use « alors que » ou « tandis que » + indicativo para opor as duas posições."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est grammaticalement correcte ?",
+     "op": [
+      "Bien que le tourisme enrichit la région, il fragilise la vie locale.",
+      "Alors que le tourisme enrichisse la région, il fragilise la vie locale.",
+      "Tandis que le tourisme enrichisse la région, il fragilise la vie locale.",
+      "Bien que le tourisme enrichisse la région, il fragilise la vie locale."
+     ],
+     "r": 3,
+     "exp": "« Bien que » pede subjuntivo (enrichisse). « Alors que » e « tandis que » pedem indicativo."
+    },
+    {
+     "t": "gap",
+     "q": "Les deux rapports sont sévères : ___ deux jugent la fréquentation excessive.",
+     "resp": [
+      "tous"
+     ],
+     "exp": "Expressão fixa « tous deux » (no início da frase, « Tous deux jugent… »)."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Confronter deux points de vue",
+   "objetivo": "Organizar a synthèse por pontos de acordo e desacordo, sem citar os documentos um por um.",
+   "foco": "selon / pour / d'après, d'un côté… de l'autre, l'un et l'autre, ni l'un ni l'autre, points de convergence",
+   "explicacao": [
+    "Uma boa synthèse mostra onde os documentos concordam e onde divergem. Plano possível: 1) o problema ; 2) as posições opostas ; 3) os pontos comuns e as soluções.",
+    "Evite repetir « le document 1 / le document 2 ». Varie: Selon l'enseignant…, Pour la neuroscientifique…, D'après le premier texte…, L'auteure estime que…",
+    "Estruturas úteis: D'un côté… de l'autre ; L'un… l'autre ; L'un et l'autre admettent… ; Ni l'un ni l'autre ne souhaite… ; Tous deux…",
+    "Falso cognato: « prétendre » = afirmar, sustentar (La chercheuse prétend que… = ela afirma que…), nunca « pretender »."
+   ],
+   "vocab": [
+    {
+     "en": "selon / d'après",
+     "pt": "segundo"
+    },
+    {
+     "en": "d'un côté… de l'autre",
+     "pt": "de um lado… do outro"
+    },
+    {
+     "en": "l'un et l'autre",
+     "pt": "ambos"
+    },
+    {
+     "en": "ni l'un ni l'autre",
+     "pt": "nem um nem outro"
+    },
+    {
+     "en": "diverger",
+     "pt": "divergir"
+    },
+    {
+     "en": "s'accorder sur",
+     "pt": "concordar sobre"
+    },
+    {
+     "en": "prétendre",
+     "pt": "afirmar, sustentar"
+    },
+    {
+     "en": "réserver à",
+     "pt": "reservar a"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez une synthèse (environ 220 mots) des deux documents ci-dessous. Donnez un titre à votre texte, organisez les idées selon un plan personnel et ne donnez pas votre opinion.\n\nDocument 1 – Tribune d'un enseignant (résumé) : L'auteur défend l'usage des tablettes en classe. Elles allègent les cartables, donnent accès à des ressources actualisées et permettent d'adapter les exercices au rythme de chaque élève. Les élèves, attirés par l'outil, seraient plus motivés.\nIl reconnaît que la tablette peut distraire, mais estime que la formation des enseignants suffit à limiter ce risque.\n\nDocument 2 – Entretien avec une neuroscientifique (résumé) : La chercheuse rappelle que la lecture sur papier favorise la concentration et la mémorisation. Sur écran, les élèves survolent le texte et se laissent tenter par les notifications.\nElle ne rejette pas le numérique, mais le réserve à des activités précises (recherche, simulation) et recommande de conserver le livre pour l'apprentissage de la lecture.",
+    "genero": "synthèse",
+    "min": 200,
+    "max": 240,
+    "modelo": "Tablette ou livre : deux conceptions de l'école numérique\n\nL'introduction des tablettes à l'école divise enseignants et chercheurs. Les deux documents s'opposent sur l'outil le mieux adapté à l'apprentissage, tout en admettant des limites communes.\n\nPour l'enseignant, la tablette présente plusieurs atouts : elle allège le poids des cartables, donne accès à des contenus à jour et permet de personnaliser les exercices selon le rythme de chacun, sans qu'aucun élève soit laissé de côté. La nouveauté de l'outil renforcerait de surcroît la motivation des élèves. À l'inverse, la neuroscientifique estime que le papier favorise la concentration et la mémorisation, alors que la lecture sur écran encourage un parcours superficiel du texte et expose aux sollicitations des notifications.\n\nCes divergences ne sont toutefois pas radicales. L'un et l'autre admettent le risque de dispersion, que l'enseignant juge maîtrisable grâce à la formation des professeurs. Ni l'un ni l'autre ne souhaite par ailleurs bannir le numérique : la chercheuse l'accepte pour des tâches ciblées, comme la recherche documentaire ou la simulation, mais réserve le livre à l'apprentissage de la lecture.\n\nLe débat porte donc moins sur l'opposition entre deux supports que sur la place à accorder à chacun, ainsi que sur la formation indispensable des enseignants à ces outils.",
+    "checklist": [
+     "Mostrei claramente pontos de divergência E pontos de convergência ?",
+     "Variei as formas de citar os autores (selon, pour, d'après…) ?",
+     "Usei l'un et l'autre / ni l'un ni l'autre com a concordância certa ?",
+     "Cada parágrafo trata de um tema e confronta os dois textos ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel plan convient le mieux à une synthèse de deux documents ?",
+     "op": [
+      "Le document 1, puis le document 2, puis mon opinion.",
+      "Mon opinion, puis un résumé de chaque document.",
+      "Une phrase par document, puis une longue conclusion.",
+      "Les points d'opposition, puis les points communs, avec les deux documents dans chaque partie."
+     ],
+     "r": 3,
+     "exp": "Cada parte do plano deve confrontar os dois documentos. Resumir em sequência é o erro clássico."
+    },
+    {
+     "t": "gap",
+     "q": "Ni l'un ni l'autre ne ___ le numérique.",
+     "resp": [
+      "rejette",
+      "rejettent",
+      "refuse",
+      "refusent"
+     ],
+     "exp": "Depois de « ni l'un ni l'autre ne », o verbo pode ficar no singular ou no plural."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "D'un côté, l'enseignant défend la tablette ; de l'autre, la chercheuse préfère le papier.",
+     "exp": "Atenção ao « ch » de « chercheuse » (/ʃ/) e ao « eu » de « chercheuse » (som /ø/)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase évite la répétition de « le document 1 / le document 2 » en restant neutre ?",
+     "op": [
+      "Je trouve que l'enseignant a raison de défendre la tablette.",
+      "Le document 1 dit une chose et le document 2 en dit une autre.",
+      "Pour l'enseignant, la tablette motive les élèves, alors que, selon la neuroscientifique, le papier favorise la mémorisation.",
+      "L'enseignant dit : « la tablette allège les cartables »."
+     ],
+     "r": 2,
+     "exp": "Varie as fórmulas de citação, mantenha o tom neutro e não use aspas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "L'un",
+      "privilégie",
+      "l'écran,",
+      "l'autre",
+      "défend",
+      "le",
+      "papier."
+     ],
+     "resp": "L'un privilégie l'écran, l'autre défend le papier.",
+     "exp": "« L'un… l'autre » distribui duas posições. « Privilégier » = dar preferência a."
+    },
+    {
+     "t": "gap",
+     "q": "___ l'enseignant, la tablette motive les élèves.",
+     "resp": [
+      "pour",
+      "selon",
+      "d'après"
+     ],
+     "exp": "Para indicar a fonte sem repetir o verbo « dire »: pour, selon, d'après."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: qual é o ponto em comum entre os dois autores?",
+     "frase": "Sur quel point les deux auteurs sont-ils d'accord ?",
+     "modelo": "Tous deux reconnaissent que la tablette peut distraire les élèves et ni l'un ni l'autre ne veut supprimer le numérique.",
+     "min": 10,
+     "chave": [
+      "distraire",
+      "dispersion",
+      "numérique",
+      "tous deux",
+      "accord"
+     ],
+     "exp": "Mencione o risco de dispersão e a recusa de eliminar o digital: são os pontos em comum."
+    },
+    {
+     "t": "mc",
+     "q": "Que signifie « La chercheuse prétend que le papier favorise la mémoire » ?",
+     "op": [
+      "A pesquisadora pretende fazer o papel favorecer a memória.",
+      "A pesquisadora finge que o papel favorece a memória.",
+      "A pesquisadora duvida de que o papel favoreça a memória.",
+      "A pesquisadora afirma que o papel favorece a memória."
+     ],
+     "r": 3,
+     "exp": "« Prétendre que » = afirmar que. Falso cognato clássico com « pretender »."
+    },
+    {
+     "t": "gap",
+     "q": "Les auteurs divergent sur l'outil ; ___, ils reconnaissent le risque de dispersion.",
+     "resp": [
+      "cependant",
+      "néanmoins",
+      "toutefois",
+      "pourtant"
+     ],
+     "exp": "Conector de concessão: depois da divergência, mostra o ponto em comum."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Les verbes introducteurs : souligner, déplorer, préconiser…",
+   "objetivo": "Variar os verbos que apresentam as ideias dos autores, com o nuance e a construção corretos.",
+   "foco": "souligner, déplorer, préconiser, nuancer, s'interroger sur, mettre en garde contre, plaider pour",
+   "explicacao": [
+    "Em vez de repetir « l'auteur dit que », escolha um verbo que mostre a atitude do autor: constater (observa), souligner (destaca), déplorer (lamenta), préconiser (recomenda), nuancer (relativiza), s'interroger sur (questiona), mettre en garde contre (alerta), plaider pour (defende).",
+    "Atenção às regências: s'interroger SUR, mettre en garde CONTRE, s'inquiéter DE, plaider POUR / EN FAVEUR DE, réclamer + substantivo (sem preposição).",
+    "Modo verbal: constater / souligner / estimer que + INDICATIVO ; déplorer / regretter / souhaiter / exiger que + SUBJUNTIVO (L'auteur déplore que les salariés ne soient pas informés).",
+    "Os verbos devem refletir a intenção do autor sem exagero: « déplorer » é mais forte que « constater »; « dénoncer » mais forte que « regretter ». Nunca coloque verbos de opinião sua (« je trouve »)."
+   ],
+   "vocab": [
+    {
+     "en": "souligner",
+     "pt": "destacar, sublinhar"
+    },
+    {
+     "en": "déplorer",
+     "pt": "lamentar"
+    },
+    {
+     "en": "préconiser",
+     "pt": "recomendar, aconselhar"
+    },
+    {
+     "en": "nuancer",
+     "pt": "relativizar, matizar"
+    },
+    {
+     "en": "s'interroger sur",
+     "pt": "questionar-se sobre"
+    },
+    {
+     "en": "mettre en garde contre",
+     "pt": "alertar contra"
+    },
+    {
+     "en": "plaider pour",
+     "pt": "defender (uma causa)"
+    },
+    {
+     "en": "réclamer",
+     "pt": "exigir, reivindicar"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez une synthèse (environ 220 mots) des deux documents ci-dessous. Donnez un titre à votre texte, organisez les idées selon un plan personnel et ne donnez pas votre opinion.\n\nDocument 1 – Article d'un économiste (résumé) : Selon l'auteur, l'intelligence artificielle automatise déjà des tâches répétitives dans les banques, les assurances et le secrétariat. Des millions d'emplois pourraient être transformés d'ici dix ans. Il estime que de nouveaux métiers apparaîtront, comme celui de formateur d'algorithmes.\nIl rappelle cependant que les travailleurs les moins qualifiés auront plus de mal à s'adapter.\n\nDocument 2 – Tribune d'un syndicaliste (résumé) : L'auteur s'inquiète de l'absence de règles : des entreprises utilisent l'IA pour surveiller ou évaluer leurs salariés sans les informer. Il réclame une négociation collective avant tout déploiement.\nIl plaide aussi pour un grand plan de formation continue financé par les entreprises qui tirent profit de ces technologies.",
+    "genero": "synthèse",
+    "min": 200,
+    "max": 240,
+    "modelo": "Intelligence artificielle et emploi : anticiper plutôt que subir\n\nL'essor de l'intelligence artificielle bouleverse le monde du travail. Les deux documents s'accordent sur l'ampleur des transformations, mais diffèrent sur les moyens d'y répondre.\n\nUn économiste constate que les tâches répétitives sont déjà automatisées dans la banque, l'assurance et le secrétariat, et prévoit qu'un grand nombre d'emplois seront modifiés d'ici dix ans. Il nuance toutefois ce constat en annonçant l'apparition de métiers inédits, tel celui de formateur d'algorithmes, tout en rappelant que les salariés peu qualifiés s'adapteront plus difficilement, faute de compétences techniques facilement transposables.\n\nLe syndicaliste, lui, s'inquiète de l'absence de cadre juridique : certaines entreprises surveillent ou évaluent leur personnel au moyen de ces outils sans l'en avertir. Il réclame donc une négociation collective préalable à toute mise en service, ainsi que l'information préalable de chaque salarié concerné.\n\nTous deux appellent, de fait, à accompagner les travailleurs : le second plaide pour un vaste programme de formation continue, financé par les sociétés qui bénéficient de ces technologies, afin que personne ne soit écarté du marché du travail et que les entreprises assument leur part de responsabilité.\n\nEn somme, la révolution technologique n'est socialement acceptable que si elle s'accompagne de règles et de formation.",
+    "checklist": [
+     "Variei os verbos introdutores (pelo menos 4 diferentes) ?",
+     "Cada verbo corresponde à atitude real do autor (déplorer ≠ constater) ?",
+     "Conferi regência e modo (déplorer que + subjuntivo) ?",
+     "Não usei « je pense », « à mon avis » nem aspas ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel verbe signifie « recommander » ?",
+     "op": [
+      "déplorer",
+      "constater",
+      "nuancer",
+      "préconiser"
+     ],
+     "r": 3,
+     "exp": "Préconiser = recomendar. Déplorer = lamentar; constater = observar; nuancer = relativizar."
+    },
+    {
+     "t": "gap",
+     "q": "L'auteur ___ la hausse du chômage : il la juge regrettable.",
+     "resp": [
+      "déplore",
+      "regrette"
+     ],
+     "exp": "Déplorer = lamentar fortemente. Também seria correto « regretter »."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "L'économiste constate que de nombreux emplois seront transformés.",
+     "exp": "Atenção ao « -aient / -ent » mudo e à pronúncia de « emplois » (/ɑ̃plwa/)."
+    },
+    {
+     "t": "mc",
+     "q": "Quel verbe complète : « Le syndicaliste ___ contre l'absence de règles » ?",
+     "op": [
+      "plaide",
+      "s'interroge",
+      "met en garde",
+      "préconise"
+     ],
+     "r": 2,
+     "exp": "« Mettre en garde contre » = alertar contra. Plaider é « pour », s'interroger é « sur »."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Le",
+      "syndicaliste",
+      "met",
+      "en",
+      "garde",
+      "contre",
+      "la",
+      "surveillance",
+      "des",
+      "salariés."
+     ],
+     "resp": "Le syndicaliste met en garde contre la surveillance des salariés.",
+     "exp": "« Mettre en garde » é uma expressão verbal fixa seguida de « contre »."
+    },
+    {
+     "t": "gap",
+     "q": "L'économiste s'interroge ___ l'avenir des métiers peu qualifiés.",
+     "resp": [
+      "sur"
+     ],
+     "exp": "S'interroger SUR + substantivo (ou « si… »)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês com um verbo introdutor.",
+     "frase": "Que préconise le syndicaliste ?",
+     "modelo": "Il préconise une négociation collective avant l'utilisation de l'intelligence artificielle et un plan de formation continue.",
+     "min": 10,
+     "chave": [
+      "préconise",
+      "négociation",
+      "formation",
+      "réclame",
+      "plaide"
+     ],
+     "exp": "Use préconiser, réclamer ou plaider pour: nunca « il dit »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "L'auteur déplore que les salariés ne sont pas informés.",
+      "L'auteur déplore que les salariés ne soient pas informés.",
+      "L'auteur déplore que les salariés n'étaient pas informés.",
+      "L'auteur déplore de les salariés ne pas être informés."
+     ],
+     "r": 1,
+     "exp": "Déplorer que + subjuntivo (soient). Com sujeito diferente, não se usa « de » + infinitivo."
+    },
+    {
+     "t": "gap",
+     "q": "Le syndicaliste souhaite que les syndicats ___ consultés avant tout déploiement.",
+     "resp": [
+      "soient"
+     ],
+     "exp": "Souhaiter que + subjuntivo: que les syndicats SOIENT consultés.",
+     "dica": "ÊTRE (subjonctif)"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Le plan, le titre et l'introduction de la synthèse",
+   "objetivo": "Construir título, introdução e plano de uma synthèse sem copiar a estrutura dos documentos.",
+   "foco": "Titre informatif, introduction (thème + documents + problématique + annonce du plan), conclusion neutre",
+   "explicacao": [
+    "Estrutura da synthèse: introdução curta (tema, natureza dos documentos, questão central, anúncio do plano), 2 ou 3 parágrafos temáticos e uma frase final neutra. Não é preciso um parágrafo de conclusão longo.",
+    "Título: informativo, nominal e curto (até uns 10 palavras), que cubra os dois documentos. Ex.: « Circuits courts : des atouts réels, une solution partielle ». Nada de « Synthèse de documents » nem de títulos em forma de opinião.",
+    "Introdução modelo: Marchés et paniers se multiplient. Les deux documents s'interrogent sur… ; ils en examinent d'abord… puis…",
+    "Após « Aussi » ou « Ainsi » no início da frase, faça a inversão do sujeito: Aussi les experts recommandent-ils… (= c'est pourquoi)."
+   ],
+   "vocab": [
+    {
+     "en": "un titre informatif",
+     "pt": "um título informativo"
+    },
+    {
+     "en": "l'amorce (f.)",
+     "pt": "a frase de abertura"
+    },
+    {
+     "en": "annoncer le plan",
+     "pt": "anunciar o plano"
+    },
+    {
+     "en": "s'interroger sur",
+     "pt": "questionar-se sobre"
+    },
+    {
+     "en": "examiner",
+     "pt": "examinar"
+    },
+    {
+     "en": "les atouts / les limites",
+     "pt": "os pontos fortes / os limites"
+    },
+    {
+     "en": "tempérer",
+     "pt": "moderar, atenuar"
+    },
+    {
+     "en": "aussi (+ inversion)",
+     "pt": "por isso (+ inversão)"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez une synthèse (environ 220 mots) des deux documents ci-dessous. Donnez un titre à votre texte, organisez les idées selon un plan personnel et ne donnez pas votre opinion.\n\nDocument 1 – Article de presse (résumé) : Les circuits courts, où le consommateur achète directement au producteur ou par un seul intermédiaire, se développent : marchés, paniers hebdomadaires, magasins de producteurs. Ils garantissent aux agriculteurs une meilleure rémunération et aux clients des produits frais et de saison.\nL'auteur y voit aussi un moyen de réduire les transports et de recréer du lien entre villes et campagnes.\n\nDocument 2 – Note d'une ingénieure agronome (résumé) : L'auteure relativise les bénéfices écologiques : un petit producteur qui livre en camionnette de petites quantités peut émettre davantage de CO2 par produit qu'un transport groupé sur de longues distances.\nElle note aussi que les circuits courts ne peuvent nourrir qu'une partie de la population, car l'offre est limitée et les prix restent plus élevés. Elle recommande de les compléter par une agriculture durable à grande échelle.",
+    "genero": "synthèse",
+    "min": 200,
+    "max": 240,
+    "modelo": "Circuits courts : des atouts réels, une solution partielle\n\nMarchés, paniers hebdomadaires et magasins de producteurs se multiplient. Les deux documents s'interrogent sur la contribution réelle des circuits courts à une alimentation plus juste et plus écologique.\n\nLe premier texte en souligne les avantages. Les agriculteurs y obtiennent une rémunération plus équitable, tandis que les consommateurs bénéficient de produits frais et de saison. L'auteur y voit également un moyen de diminuer les transports et de renouer le dialogue entre les villes et les campagnes.\n\nLa seconde source tempère cet enthousiasme. D'une part, l'intérêt écologique n'est pas systématique : un producteur qui effectue de petites livraisons en camionnette peut rejeter plus de dioxyde de carbone par produit qu'un convoi de grande capacité. D'autre part, la production locale ne saurait approvisionner qu'une fraction de la population, en raison d'une offre restreinte et de tarifs plus élevés, ce qui limite l'accès des ménages modestes à ces produits.\n\nAussi l'ingénieure recommande-t-elle d'associer ces filières à une agriculture durable pratiquée à plus grande échelle, de manière à garantir à tous une alimentation de qualité, abordable et respectueuse de l'environnement.\n\nLes circuits courts constituent donc un levier utile, mais insuffisant à lui seul pour transformer durablement le système alimentaire.",
+    "checklist": [
+     "O título é informativo, curto e cobre os dois documentos ?",
+     "A introdução apresenta o tema, a questão central e anuncia o plano ?",
+     "O plano é por temas (avantages / limites…), e não por documento ?",
+     "A frase final é neutra, sem opinião pessoal ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel titre convient à une synthèse ?",
+     "op": [
+      "Synthèse des documents 1 et 2",
+      "Je pense que les circuits courts sont une bonne idée",
+      "Circuits courts : des atouts réels, une solution partielle",
+      "Document 1 et document 2 : comparaison"
+     ],
+     "r": 2,
+     "exp": "O título deve informar sobre o tema e a conclusão geral. « Synthèse » ou « documents 1 et 2 » não dizem nada."
+    },
+    {
+     "t": "gap",
+     "q": "L'introduction comprend le thème, les documents et l'annonce du ___.",
+     "resp": [
+      "plan"
+     ],
+     "exp": "Introdução da synthèse: amorce, apresentação dos documentos, questão central e anúncio do plano."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Les deux documents s'interrogent sur l'intérêt réel des circuits courts.",
+     "exp": "Atenção ao « -ent » final de « interrogent », que é mudo, e ao « r » francês (garganta)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase d'introduction est la mieux adaptée ?",
+     "op": [
+      "Les circuits courts séduisent de plus en plus de consommateurs ; les deux documents en évaluent les bénéfices et les limites.",
+      "Dans le document 1, l'auteur dit que les circuits courts sont bons.",
+      "Aujourd'hui, depuis toujours, l'homme mange des produits.",
+      "Je vais vous présenter mon opinion sur les circuits courts."
+     ],
+     "r": 0,
+     "exp": "A boa introdução apresenta o tema e a problemática de forma neutra e anuncia o plano (bénéfices / limites)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Les",
+      "deux",
+      "textes",
+      "évaluent",
+      "les",
+      "bénéfices",
+      "et",
+      "les",
+      "limites",
+      "des",
+      "circuits",
+      "courts."
+     ],
+     "resp": "Les deux textes évaluent les bénéfices et les limites des circuits courts.",
+     "exp": "« Bénéfices » e « limites » preparam um plano em duas partes."
+    },
+    {
+     "t": "gap",
+     "q": "Le premier document souligne les avantages ; le second, ___, en relève les limites.",
+     "resp": [
+      "en revanche",
+      "à l'inverse",
+      "pour sa part"
+     ],
+     "exp": "Esses conectores marcam o contraste entre os dois documentos."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em uma ou duas frases, anunciando o plano.",
+     "frase": "Comment annonceriez-vous le plan de votre synthèse sur les circuits courts ?",
+     "modelo": "Nous verrons d'abord les avantages des circuits courts, puis leurs limites écologiques et économiques.",
+     "min": 9,
+     "chave": [
+      "avantages",
+      "limites",
+      "d'abord",
+      "puis",
+      "ensuite"
+     ],
+     "exp": "Anuncie duas partes com « d'abord… puis… » ou « ensuite »."
+    },
+    {
+     "t": "mc",
+     "q": "Que doit contenir la dernière phrase d'une synthèse ?",
+     "op": [
+      "Mon opinion sur le thème.",
+      "Une répétition mot pour mot de l'introduction.",
+      "Une idée générale qui résume l'ensemble, sans avis personnel.",
+      "Une question ouverte au lecteur."
+     ],
+     "r": 2,
+     "exp": "A frase final resume a ideia geral. A opinião só entra no essai."
+    },
+    {
+     "t": "gap",
+     "q": "Les circuits courts ne suffisent pas ; ___ les experts recommandent-ils de les compléter.",
+     "resp": [
+      "aussi"
+     ],
+     "exp": "Aussi em início de frase = c'est pourquoi, e exige a inversão do sujeito (recommandent-ils)."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Condenser sans trahir : tenir en 220 mots",
+   "objetivo": "Reduzir o texto ao limite de palavras eliminando exemplos, números secundários e repetições.",
+   "foco": "Concision: termes génériques, suppression des exemples, regroupement, participes, nominalisation",
+   "explicacao": [
+    "Dois documentos de ~1 000 palavras viram um texto de ~220: você tem de cortar muito. Corte primeiro exemplos, números secundários, anedotas e repetições. Mantenha ideias principais, causas, consequências e recomendações.",
+    "Técnicas: (1) trocar enumeração por termo genérico (les secteurs de service) ; (2) usar particípio ou substantivo (Ayant constaté…, la réduction de…) ; (3) agrupar ideias parecidas numa só frase.",
+    "Controle o tamanho: conte as palavras ao rascunhar. A tolerância é de cerca de 10 % (aprox. 200–240); passar disso é penalizado. Confira as regras de contagem do edital oficial.",
+    "Cuidado: condensar não é inventar nem deturpar. « Réduction » do tempo de trabalho ≠ « suppression ». Mantenha a nuance (peut, pourrait, souvent)."
+   ],
+   "vocab": [
+    {
+     "en": "condenser",
+     "pt": "condensar"
+    },
+    {
+     "en": "supprimer",
+     "pt": "suprimir"
+    },
+    {
+     "en": "l'essentiel (m.)",
+     "pt": "o essencial"
+    },
+    {
+     "en": "un exemple secondaire",
+     "pt": "um exemplo secundário"
+    },
+    {
+     "en": "regrouper",
+     "pt": "agrupar"
+    },
+    {
+     "en": "un terme général",
+     "pt": "um termo geral"
+    },
+    {
+     "en": "alourdir",
+     "pt": "tornar mais pesado, aumentar"
+    },
+    {
+     "en": "condenser le travail",
+     "pt": "concentrar o trabalho"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez une synthèse (environ 220 mots) des deux documents ci-dessous. Donnez un titre à votre texte, organisez les idées selon un plan personnel et ne donnez pas votre opinion.\n\nDocument 1 – Article de presse (résumé) : Plusieurs entreprises testent la semaine de quatre jours sans baisse de salaire. Les salariés se disent moins stressés, plus motivés et moins souvent absents. Une société de logiciels a vu sa productivité rester stable et le recrutement devenir plus facile.\nLe journaliste y voit une réponse à l'épuisement professionnel et un atout pour attirer les jeunes diplômés.\n\nDocument 2 – Analyse d'un économiste (résumé) : L'auteur émet des doutes : dans les hôpitaux, les écoles ou les commerces, réduire la présence suppose d'embaucher, donc d'augmenter les coûts. Dans d'autres cas, les salariés concentrent leur travail sur moins de jours, avec des journées plus longues et plus fatigantes.\nIl estime que la mesure convient à certains secteurs, mais ne peut être généralisée sans risque pour la compétitivité.",
+    "genero": "synthèse",
+    "min": 200,
+    "max": 240,
+    "modelo": "La semaine de quatre jours : une piste prometteuse mais difficile à généraliser\n\nDes entreprises expérimentent la semaine de quatre jours sans réduction de salaire. Les deux documents évaluent l'intérêt et la faisabilité de cette organisation.\n\nLes résultats des premiers essais, menés dans plusieurs pays, paraissent encourageants et suscitent l'intérêt des directions. Les salariés déclarent ressentir moins de stress, s'investissent davantage et s'absentent moins souvent. Une entreprise du numérique a ainsi conservé sa productivité tout en facilitant ses recrutements, ce qui constitue un avantage non négligeable dans un secteur où la concurrence pour attirer les talents est vive. Le journaliste y voit un remède à l'épuisement professionnel et un argument pour séduire les jeunes diplômés.\n\nL'économiste se montre plus réservé. Dans les secteurs qui exigent une présence continue, comme la santé, l'enseignement ou le commerce, la réduction du temps de présence impose des embauches et alourdit les dépenses. Ailleurs, le travail est parfois simplement condensé sur moins de jours, ce qui rend les journées plus longues et plus éprouvantes.\n\nLa mesure semble donc adaptée à certaines activités, mais sa généralisation menacerait la compétitivité des entreprises, qui devraient alors choisir entre embaucher davantage et conserver leur organisation actuelle, au prix d'une pression accrue sur les équipes.",
+    "checklist": [
+     "Cortei exemplos e números que não são essenciais ?",
+     "Meu texto está entre 200 e 240 palavras (contei) ?",
+     "Mantive as nuances (peut, pourrait, certains) sem deturpar ?",
+     "Nenhuma ideia importante de um dos documentos ficou de fora ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pour raccourcir « les hôpitaux, les écoles et les commerces », que peut-on faire ?",
+     "op": [
+      "Recopier toute l'énumération.",
+      "Supprimer l'idée complètement.",
+      "Ajouter un exemple personnel.",
+      "Utiliser un terme général, comme « les secteurs de service »."
+     ],
+     "r": 3,
+     "exp": "Termo genérico ou apenas um ou dois exemplos mantêm a ideia com menos palavras."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut ___ les exemples détaillés et les chiffres secondaires.",
+     "resp": [
+      "supprimer",
+      "éliminer",
+      "écarter"
+     ],
+     "exp": "Para atingir o limite de palavras, suprima o que é acessório."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "La mesure convient à certains secteurs mais ne peut pas être généralisée.",
+     "exp": "Atenção ao « ç » e ao « s » de « certains secteurs » (nasal /sɛʁtɛ̃/) e à nasal em « convient »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est la plus concise pour « Les salariés disent qu'ils sont moins stressés, qu'ils sont plus motivés et qu'ils sont moins souvent absents » ?",
+     "op": [
+      "Les salariés disent qu'ils sont moins stressés, qu'ils sont plus motivés et qu'ils sont moins souvent absents.",
+      "Les salariés sont contents.",
+      "Les salariés se déclarent moins stressés, plus motivés et moins absents.",
+      "Les salariés disent beaucoup de choses sur leur vie au travail."
+     ],
+     "r": 2,
+     "exp": "Fatore o sujeito, use « se déclarer » e adjetivos coordenados: mantém as três ideias com metade das palavras."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "La",
+      "réduction",
+      "du",
+      "temps",
+      "de",
+      "présence",
+      "impose",
+      "des",
+      "embauches",
+      "et",
+      "alourdit",
+      "les",
+      "coûts."
+     ],
+     "resp": "La réduction du temps de présence impose des embauches et alourdit les coûts.",
+     "exp": "Dois verbos coordenados (impose… et alourdit…) para um mesmo sujeito: concisão."
+    },
+    {
+     "t": "gap",
+     "q": "Le travail est ___ sur moins de jours, avec des journées plus longues.",
+     "resp": [
+      "condensé",
+      "concentré",
+      "regroupé"
+     ],
+     "exp": "Particípio masculino singular (« le travail »). « Condensé » mantém a ideia de compressão."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em uma frase curta.",
+     "frase": "Résumez en une phrase la réserve de l'économiste.",
+     "modelo": "L'économiste estime que cette mesure coûte cher dans certains secteurs et ne peut pas être généralisée.",
+     "min": 9,
+     "chave": [
+      "coûts",
+      "secteurs",
+      "embauches",
+      "généralisée",
+      "compétitivité",
+      "coûte"
+     ],
+     "exp": "Seja breve: um motivo (custo/contratações) e uma conclusão (não generalizar)."
+    },
+    {
+     "t": "mc",
+     "q": "Votre synthèse compte 262 mots pour 220 demandés. Que faire ?",
+     "op": [
+      "Rien : 262 reste dans la tolérance.",
+      "Supprimer détails, chiffres secondaires et redites jusqu'à environ 220 mots.",
+      "Supprimer l'introduction et la fin.",
+      "Écrire plus petit pour que cela paraisse plus court."
+     ],
+     "r": 1,
+     "exp": "A tolerância é de cerca de 10 %, ou seja, ~242 palavras. 262 está fora: corte detalhes, não as ideias principais."
+    },
+    {
+     "t": "gap",
+     "q": "Grâce à la ___ du stress, les salariés s'absentent moins.",
+     "resp": [
+      "baisse",
+      "diminution",
+      "réduction"
+     ],
+     "exp": "Nominalização: le stress diminue → la baisse / la diminution du stress."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "L'essai argumenté : problématique et prise de position",
+   "objetivo": "Entender a estrutura do essai e formular uma problemática com posição clara.",
+   "foco": "Essai: amorce, problématique, annonce de la position, arguments + exemples, conclusion",
+   "explicacao": [
+    "Depois da synthèse, o essai argumenté (~250 palavras) pede que VOCÊ tome posição sobre o mesmo tema. Aqui a opinião é obrigatória, com « je » ou « nous » e exemplos pessoais, mas sem repetir o conteúdo dos documentos.",
+    "Estrutura: (1) introdução: amorce + problématique (uma pergunta) + posição anunciada ; (2) dois ou três argumentos, cada um com ideia + explicação + exemplo ; (3) conclusão que responde à pergunta e abre uma perspectiva.",
+    "Problemáticas típicas: Faut-il… ? Dans quelle mesure… ? Peut-on… ? Ex.: « Faut-il limiter strictement le temps d'écran des enfants ? »",
+    "Registro: soutenu, sem abreviações. Fórmulas para tomar posição: Je soutiendrai que… ; À mon sens… ; Il me semble que… ; Je défendrai l'idée que…"
+   ],
+   "vocab": [
+    {
+     "en": "une problématique",
+     "pt": "uma questão central, uma problemática"
+    },
+    {
+     "en": "prendre position",
+     "pt": "tomar posição"
+    },
+    {
+     "en": "soutenir que",
+     "pt": "sustentar que"
+    },
+    {
+     "en": "un argument",
+     "pt": "um argumento"
+    },
+    {
+     "en": "un exemple",
+     "pt": "um exemplo"
+    },
+    {
+     "en": "à mon sens",
+     "pt": "a meu ver"
+    },
+    {
+     "en": "voire",
+     "pt": "e até mesmo"
+    },
+    {
+     "en": "contre-productif",
+     "pt": "contraproducente"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez un essai argumenté (environ 250 mots) en prenant clairement position et en justifiant votre point de vue par des arguments et des exemples. Faut-il limiter strictement le temps d'écran des enfants ?\n\nDocument 1 – Interview d'un pédiatre (résumé) : Le médecin alerte sur le temps passé devant les écrans par les enfants : trois heures par jour en moyenne avant dix ans. Il observe des troubles du sommeil, une baisse de l'attention et moins d'activité physique.\nIl recommande d'interdire les écrans avant six ans et d'en limiter l'usage ensuite.\n\nDocument 2 – Tribune d'une enseignante (résumé) : L'auteure rappelle que les écrans servent aussi à apprendre, créer et rester en contact avec des proches éloignés. Elle distingue la consommation passive de vidéos et les usages actifs, comme le codage ou le montage.\nPour elle, interdire est inefficace : mieux vaut accompagner les enfants et former les parents.",
+    "genero": "essai",
+    "min": 230,
+    "max": 290,
+    "modelo": "Faut-il fixer des limites strictes au temps d'écran des enfants ?\n\nSmartphones, tablettes et consoles occupent désormais une place considérable dans l'enfance. Les spécialistes ne s'accordent pas : doit-on encadrer rigoureusement l'usage des écrans ou accompagner les enfants dans leur découverte ? Je soutiendrai que des règles claires s'imposent, à condition qu'elles s'accompagnent d'une véritable éducation.\n\nD'abord, les effets d'une exposition excessive sont préoccupants. Troubles du sommeil, baisse de l'attention et sédentarité sont régulièrement signalés chez les plus jeunes. Il est établi que le manque de repos et de mouvement fragilise la santé à long terme. Un enfant qui passe trois heures par jour devant un écran perd autant d'heures de jeu, de lecture et de sport, activités pourtant essentielles à son développement.\n\nNéanmoins, une interdiction générale serait peu réaliste, voire contre-productive. Les écrans permettent aussi d'apprendre, de créer et de garder contact avec des proches éloignés. Surtout, un usage actif, tel que le codage ou le montage vidéo, n'a rien de comparable avec le visionnage passif de vidéos en continu. Une prohibition risquerait en outre de rendre l'objet encore plus attrayant.\n\nC'est pourquoi la solution me paraît résider dans un cadre mesuré : pas d'écran avant six ans, puis des durées limitées et des contenus choisis avec les parents, eux-mêmes formés.\n\nEn définitive, limiter n'est pas interdire : c'est offrir à l'enfant le temps de grandir hors du numérique, dans un monde où il devra pourtant apprendre à se servir de ces outils avec discernement.",
+    "checklist": [
+     "A introdução tem amorce, problemática (pergunta) e posição anunciada ?",
+     "Cada argumento tem ideia + explicação + exemplo ?",
+     "A conclusão responde claramente à pergunta ?",
+     "Usei registro soutenu e conectores variados (d'abord, néanmoins, en outre…) ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle formulation constitue une vraie problématique ?",
+     "op": [
+      "Faut-il limiter strictement le temps d'écran des enfants ?",
+      "Les écrans.",
+      "Les enfants et les écrans, c'est un sujet important.",
+      "Je n'aime pas les écrans."
+     ],
+     "r": 0,
+     "exp": "A problemática é uma pergunta que exige posição e justificativa. Um tema isolado ou uma frase vaga não basta."
+    },
+    {
+     "t": "gap",
+     "q": "Dans l'essai, il faut ___ position dès l'introduction.",
+     "resp": [
+      "prendre"
+     ],
+     "exp": "Prendre position = tomar posição. Verbo irregular: prendre."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Je soutiendrai que des règles claires s'imposent, à condition qu'elles s'accompagnent d'une éducation.",
+     "exp": "Atenção à nasal de « condition » e ao futuro « soutiendrai » (/sutjɛ̃dʁɛ/), com « r » forte."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la principale différence entre la synthèse et l'essai ?",
+     "op": [
+      "L'essai demande de prendre position avec des arguments et des exemples ; la synthèse reste neutre.",
+      "Les deux interdisent toute opinion personnelle.",
+      "L'essai doit recopier les documents ; la synthèse les résume.",
+      "La synthèse exige une opinion ; l'essai est neutre."
+     ],
+     "r": 0,
+     "exp": "Na synthèse: neutralidade. No essai: tomada de posição argumentada."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "soutiendrai",
+      "que",
+      "des",
+      "règles",
+      "claires",
+      "s'imposent."
+     ],
+     "resp": "Je soutiendrai que des règles claires s'imposent.",
+     "exp": "Futuro: je soutiendrai. « S'imposer » = ser necessário, impor-se."
+    },
+    {
+     "t": "gap",
+     "q": "Je défends l'idée d'une limitation, ___ qu'elle soit accompagnée d'explications.",
+     "resp": [
+      "à condition"
+     ],
+     "exp": "« À condition que » exige o subjuntivo (soit)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas frases, com posição e razão.",
+     "frase": "Formulez votre position : faut-il limiter le temps d'écran des enfants ?",
+     "modelo": "Je pense qu'il faut limiter le temps d'écran, car l'excès nuit au sommeil et à l'attention. Toutefois, il faut aussi accompagner les enfants.",
+     "min": 15,
+     "chave": [
+      "limiter",
+      "sommeil",
+      "attention",
+      "accompagner",
+      "écran",
+      "pense"
+     ],
+     "exp": "Dê a posição na primeira frase e uma razão com « car » ou « parce que »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle conclusion d'essai est la plus efficace ?",
+     "op": [
+      "Voilà, j'ai fini mon essai.",
+      "Pour conclure, je répète tout ce que j'ai déjà dit.",
+      "Les enfants aiment les écrans, et moi aussi.",
+      "En définitive, limiter n'est pas interdire : c'est offrir à l'enfant le temps de grandir hors du numérique."
+     ],
+     "r": 3,
+     "exp": "A conclusão responde à pergunta com uma frase marcante, sem repetir tudo."
+    },
+    {
+     "t": "gap",
+     "q": "Une interdiction totale serait peu réaliste, ___ contre-productive.",
+     "resp": [
+      "voire"
+     ],
+     "exp": "« Voire » = e até mesmo. Não confundir com « voir » (ver)."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Plan dialectique et plan analytique",
+   "objetivo": "Escolher e desenvolver um plano para o essai: tese/antítese/superação ou análise por aspectos.",
+   "foco": "Plan dialectique (thèse–antithèse–dépassement), plan analytique, certes… mais, or, cependant, d'une part… d'autre part",
+   "explicacao": [
+    "Plano dialético: (1) tese (os argumentos a favor), (2) antítese (os limites, as objeções), (3) superação (uma posição nuançada que ultrapassa o « sim ou não »). É o plano mais seguro para « Faut-il… ? ».",
+    "Plano analítico: por aspectos (causas / consequências / soluções, ou aspectos económico / social / ecológico). Bom quando a pergunta é « Pourquoi… ? » ou « Quelles solutions… ? ».",
+    "Cada argumento: ideia + explicação + exemplo. Conectores de articulação: d'abord, en outre, certes… mais, or (= ora, porém), cependant, d'ailleurs, en effet, par conséquent, il convient donc de…",
+    "« Or » é conjunção (ora, mas) que introduz a objeção: La gratuité est généreuse. Or elle prive les musées de ressources. Não confunda com « or » = ouro."
+   ],
+   "vocab": [
+    {
+     "en": "la thèse / l'antithèse",
+     "pt": "a tese / a antítese"
+    },
+    {
+     "en": "dépasser",
+     "pt": "ultrapassar, superar"
+    },
+    {
+     "en": "certes… mais",
+     "pt": "certamente… mas"
+    },
+    {
+     "en": "or (conj.)",
+     "pt": "ora, porém"
+    },
+    {
+     "en": "d'une part… d'autre part",
+     "pt": "por um lado… por outro"
+    },
+    {
+     "en": "en outre",
+     "pt": "além disso"
+    },
+    {
+     "en": "cibler / ciblé",
+     "pt": "visar / direcionado"
+    },
+    {
+     "en": "la médiation",
+     "pt": "a mediação cultural"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez un essai argumenté (environ 250 mots) en prenant clairement position et en justifiant votre point de vue par des arguments et des exemples. L'entrée des musées doit-elle être gratuite pour tous ? Suivez un plan dialectique.\n\nDocument 1 – Article de presse (résumé) : Plusieurs pays ont rendu l'entrée des musées nationaux gratuite. Les responsables constatent une hausse de fréquentation de 20 à 30 %, surtout chez les jeunes et les familles modestes.\nPour le ministre, la culture est un bien commun qui ne doit pas dépendre du revenu.\n\nDocument 2 – Lettre de directeurs de musée (résumé) : Les directeurs alertent sur la perte de recettes : la billetterie finance l'entretien des collections et les expositions temporaires. La gratuité attire peu les publics éloignés de la culture, freinés par d'autres obstacles : distance, manque d'information, sentiment de ne pas être concernés.\nIls proposent une gratuité ciblée et des actions de médiation dans les quartiers.",
+    "genero": "essai",
+    "min": 230,
+    "max": 290,
+    "modelo": "L'entrée des musées doit-elle être gratuite pour tous ?\n\nAccessibles à tous en théorie, les musées restent en pratique fréquentés par une minorité, souvent aisée et diplômée. Plusieurs États ont donc supprimé le droit d'entrée, au risque de priver ces institutions de ressources. La gratuité universelle est-elle la meilleure manière de démocratiser la culture ? Je défendrai l'idée d'une gratuité ciblée plutôt que générale.\n\nCertes, la gratuité présente des atouts indéniables. Elle lève l'obstacle financier que rencontrent les familles modestes et a fait progresser la fréquentation, notamment chez les jeunes. Elle traduit en outre une conviction forte : le patrimoine appartient à la collectivité, et nul ne devrait en être écarté faute de moyens.\n\nOr cette mesure comporte des limites sérieuses. D'une part, la billetterie contribue à l'entretien des collections et à l'organisation d'expositions temporaires ; sans elle, la qualité de l'offre se dégrade ou l'État doit compenser par l'impôt. D'autre part, le prix n'est pas le seul frein : l'éloignement, le manque d'information et le sentiment de ne pas être concerné découragent bien des personnes, que la gratuité ne suffit pas à convaincre.\n\nIl convient donc de dépasser cette alternative. Réserver la gratuité aux jeunes et aux chômeurs, puis investir les sommes préservées dans des actions de médiation au cœur des quartiers, permettrait de toucher ceux qui n'ont jamais franchi la porte d'un musée, ce qui constitue le véritable enjeu d'une politique culturelle ambitieuse et équitable.",
+    "checklist": [
+     "Meu plano tem tese, antítese e uma superação nuançada ?",
+     "Usei certes… mais / or / cependant para articular as partes ?",
+     "Cada argumento tem exemplo ou ilustração concreta ?",
+     "Minha conclusão responde claramente à pergunta ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Parmi ces plans, lequel est un plan dialectique ?",
+     "op": [
+      "Causes, conséquences, solutions",
+      "Définition, exemples, conclusion",
+      "Thèse, antithèse, dépassement",
+      "Mon avis, mon avis, mon avis"
+     ],
+     "r": 2,
+     "exp": "O plano dialético opõe uma tese a uma antítese e propõe um dépassement (superação)."
+    },
+    {
+     "t": "gap",
+     "q": "Le plan dialectique oppose une thèse à une ___.",
+     "resp": [
+      "antithèse"
+     ],
+     "exp": "Antithèse = o ponto de vista oposto, as objeções."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Certes, la gratuité présente des atouts, mais elle comporte aussi des limites.",
+     "exp": "Atenção ao « ç » de « certes » e ao « gr » de « gratuité ». O « e » final de « présente » é mudo."
+    },
+    {
+     "t": "mc",
+     "q": "Comment structurer un argument dans l'essai ?",
+     "op": [
+      "Exemple, exemple, exemple.",
+      "Idée, explication, puis exemple.",
+      "Opinion répétée trois fois.",
+      "Citation littérale d'un document."
+     ],
+     "r": 1,
+     "exp": "Um argumento completo tem uma ideia clara, a explicação e um exemplo concreto."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Certes,",
+      "la",
+      "gratuité",
+      "attire",
+      "les",
+      "jeunes,",
+      "mais",
+      "elle",
+      "prive",
+      "les",
+      "musées",
+      "de",
+      "ressources."
+     ],
+     "resp": "Certes, la gratuité attire les jeunes, mais elle prive les musées de ressources.",
+     "exp": "« Priver de » = privar de."
+    },
+    {
+     "t": "gap",
+     "q": "La gratuité est généreuse. ___ elle prive les musées de ressources.",
+     "resp": [
+      "or",
+      "cependant",
+      "pourtant",
+      "néanmoins"
+     ],
+     "exp": "« Or » introduz a objeção no plano dialético (ora, porém)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas frases.",
+     "frase": "Annoncez en deux phrases un plan dialectique sur la gratuité des musées.",
+     "modelo": "Je montrerai d'abord les avantages de la gratuité, puis ses limites, avant de proposer une gratuité ciblée.",
+     "min": 12,
+     "chave": [
+      "d'abord",
+      "puis",
+      "avantages",
+      "limites",
+      "ciblée",
+      "gratuité"
+     ],
+     "exp": "Anuncie: vantagens, depois limites, depois uma solução de superação."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase annonce le passage à l'antithèse ?",
+     "op": [
+      "Or, cette mesure comporte des limites sérieuses.",
+      "En outre, la gratuité est utile.",
+      "Ainsi, la gratuité est utile.",
+      "Par exemple, la gratuité est utile."
+     ],
+     "r": 0,
+     "exp": "« Or » vira a página para a objeção. Os outros reforçam a tese."
+    },
+    {
+     "t": "gap",
+     "q": "Il convient de ___ cette alternative en proposant une gratuité ciblée.",
+     "resp": [
+      "dépasser"
+     ],
+     "exp": "Dépasser = ultrapassar, superar: é a função da terceira parte do plano dialético."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Registre soutenu, subjonctif et concordance des temps",
+   "objetivo": "Escrever em registro formal e usar corretamente subjuntivo e condicional na argumentação.",
+   "foco": "Registre soutenu, subjonctif (il faut que, bien que, pour que), si + imparfait → conditionnel, concordance",
+   "explicacao": [
+    "No C1, o registro deve ser soutenu: nada de « ça », « plein de », « un truc », « super », nem « on » em excesso ou negações sem « ne ». Prefira: cela, de nombreux, un élément, remarquable, nous / l'on.",
+    "Subjuntivo: il faut que, il est nécessaire que, bien que, quoique, pour que, afin que, à condition que, avant que, regretter / déplorer que + subjuntivo. Ex.: Il faut que l'école fasse sa part (faire → fasse).",
+    "Hipóteses: si + imparfait → conditionnel présent (Si l'école n'intervenait pas, ces langues disparaîtraient) ; si + plus-que-parfait → conditionnel passé (Si l'école avait agi, elles auraient survécu).",
+    "Subjuntivo passado para ação anterior: Je regrette que l'école n'ait pas agi plus tôt. Cuidado: « sensible » = sensível/delicado (ok), mas « sensible à » = atento a ; « éventuel » = possível, nunca « eventual » no sentido de « de vez em quando »."
+   ],
+   "vocab": [
+    {
+     "en": "il faut que (+ subj.)",
+     "pt": "é preciso que"
+    },
+    {
+     "en": "bien que / quoique",
+     "pt": "embora"
+    },
+    {
+     "en": "à condition que",
+     "pt": "com a condição de que"
+    },
+    {
+     "en": "incomber à",
+     "pt": "caber a, ser responsabilidade de"
+    },
+    {
+     "en": "un idiome",
+     "pt": "um idioma, uma língua"
+    },
+    {
+     "en": "pourvu que (+ subj.)",
+     "pt": "contanto que"
+    },
+    {
+     "en": "à mon sens",
+     "pt": "a meu ver"
+    },
+    {
+     "en": "dès lors",
+     "pt": "a partir daí, assim"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez un essai argumenté (environ 250 mots) en prenant clairement position et en justifiant votre point de vue par des arguments et des exemples. Faut-il enseigner les langues régionales à l'école ? Soignez le registre.\n\nDocument 1 – Article d'un linguiste (résumé) : L'auteur rappelle qu'une langue disparaît en moyenne toutes les deux semaines dans le monde. Les langues régionales de France, comme le breton ou l'occitan, comptent de moins en moins de locuteurs. Il y voit une perte de savoirs, de mémoire et de manières de voir le monde.\nIl défend leur enseignement dès l'école maternelle.\n\nDocument 2 – Tribune d'un responsable de l'éducation (résumé) : L'auteur rappelle que l'école doit d'abord garantir la maîtrise du français et d'une langue étrangère ouverte sur le monde, comme l'anglais. Multiplier les langues enseignées coûte cher et mobilise des enseignants.\nIl admet cependant que les familles attachées à une langue régionale doivent pouvoir la transmettre, avec le soutien de la région et des associations.",
+    "genero": "essai",
+    "min": 230,
+    "max": 290,
+    "modelo": "Faut-il enseigner les langues régionales à l'école ?\n\nÀ en croire les linguistes, une langue disparaît toutes les deux semaines dans le monde. En France, le breton, l'occitan ou le corse comptent de moins en moins de locuteurs. Dès lors, l'école doit-elle se charger de les transmettre ? Je soutiendrai qu'elle y a sa part, pourvu qu'elle n'y sacrifie pas les apprentissages fondamentaux.\n\nIl est indéniable que la disparition d'une langue appauvrit l'humanité tout entière. Avec elle s'effacent des savoirs, des récits et une manière singulière de concevoir le monde. Si l'école n'intervenait pas, la transmission familiale, aujourd'hui fragile, ne suffirait sans doute plus à assurer la survie de ces idiomes. Il faut donc que les institutions s'en préoccupent, bien que cette tâche ne leur incombe pas exclusivement. Les familles, les associations et les collectivités locales ont également un rôle essentiel à jouer dans cette transmission.\n\nCependant, les moyens de l'école ne sont pas illimités. Il est nécessaire que chaque élève maîtrise le français et accède à une langue étrangère largement répandue, car ces compétences conditionnent son avenir professionnel. Or multiplier les enseignements suppose de recruter des professeurs et d'engager des dépenses considérables.\n\nUn compromis me semble envisageable : proposer ces langues en option, à la demande des familles, et confier aux régions et aux associations le soin de compléter l'offre. Ainsi, le patrimoine linguistique serait préservé sans que l'école y perde sa mission première.",
+    "checklist": [
+     "Evitei palavras coloquiais (ça, plein de, un truc) e usei registro soutenu ?",
+     "Os verbos depois de il faut que / bien que / pour que estão no subjuntivo ?",
+     "As frases com si seguem a regra (imparfait → conditionnel) ?",
+     "Mantive a coerência dos tempos entre os parágrafos ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est rédigée en registre soutenu ?",
+     "op": [
+      "De nombreuses langues disparaissent chaque année.",
+      "Y'a plein de langues qui disparaissent.",
+      "Ça craint, les langues qui disparaissent.",
+      "Les langues, elles disparaissent grave."
+     ],
+     "r": 0,
+     "exp": "Registro soutenu: vocabulário preciso, negação completa e sem gíria."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut que l'école ___ sa part.",
+     "resp": [
+      "fasse"
+     ],
+     "exp": "Il faut que + subjuntivo: faire → que je fasse.",
+     "dica": "FAIRE (subjonctif)"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Bien que cette tâche soit nécessaire, elle ne peut incomber à l'école seule.",
+     "exp": "Atenção ao « soit » (/swa/) e à nasal de « incomber » (/ɛ̃kɔ̃be/)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle forme complète : « Si l'école n'intervenait pas, ces langues ___ rapidement » ?",
+     "op": [
+      "disparaîtront",
+      "disparaîtraient",
+      "auraient disparu",
+      "disparaissaient"
+     ],
+     "r": 1,
+     "exp": "Si + imparfait → conditionnel présent (disparaîtraient)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "est",
+      "nécessaire",
+      "que",
+      "chaque",
+      "élève",
+      "maîtrise",
+      "le",
+      "français."
+     ],
+     "resp": "Il est nécessaire que chaque élève maîtrise le français.",
+     "exp": "« Il est nécessaire que » + subjuntivo (maîtrise é igual no indicativo, mas aqui o modo é subjuntivo)."
+    },
+    {
+     "t": "gap",
+     "q": "Bien que ces langues ___ menacées, beaucoup de familles les transmettent encore.",
+     "resp": [
+      "soient"
+     ],
+     "exp": "Bien que + subjuntivo: être → soient.",
+     "dica": "ÊTRE (subjonctif)"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas frases formais.",
+     "frase": "Dans un registre soutenu, dites si l'école doit enseigner les langues régionales.",
+     "modelo": "À mon sens, l'école doit proposer ces langues en option. Il est souhaitable que les régions complètent cette offre.",
+     "min": 14,
+     "chave": [
+      "école",
+      "option",
+      "langues",
+      "régions",
+      "souhaitable",
+      "sens"
+     ],
+     "exp": "Use fórmulas formais: à mon sens, il est souhaitable que + subjuntivo."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ? « Si l'école avait enseigné ces langues, elles ___ aujourd'hui davantage de locuteurs. »",
+     "op": [
+      "avaient",
+      "auraient",
+      "auront",
+      "aient"
+     ],
+     "r": 1,
+     "exp": "Si + plus-que-parfait → conditionnel (aqui, conditionnel présent para o resultado atual: auraient)."
+    },
+    {
+     "t": "gap",
+     "q": "Je regrette que l'école n'___ pas agi plus tôt.",
+     "resp": [
+      "ait"
+     ],
+     "exp": "Regretter que + subjuntivo passado: que l'école n'ait pas agi.",
+     "dica": "AVOIR (subjonctif)"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Ponctuation, paragraphes et cohésion",
+   "objetivo": "Organizar parágrafos, pontuação francesa e retomadas (ce dernier, celui-ci) para um texto coerente.",
+   "foco": "Ponctuation française (espace avant ; : ? !), paragraphes, anaphores, connecteurs logiques",
+   "explicacao": [
+    "Pontuação francesa: espaço antes de ; : ? ! e « » (Est-ce justifié ?). Vírgula não se usa antes de « que ». Ponto-e-vírgula separa ideias próximas; dois-pontos introduz explicação ou consequência.",
+    "Parágrafos: uma ideia principal por parágrafo, com ideia + explicação + exemplo. Linha em branco entre introdução, desenvolvimento e conclusão. Evite um bloco único.",
+    "Retomadas para evitar repetições: celui-ci / celle-ci, ce dernier / cette dernière (o último citado), ceux-ci, y, en, cela. Ex.: Les entreprises et les États devront agir ; ces derniers pourraient taxer les billets (= os Estados).",
+    "Conectores lógicos: cependant, en revanche, or, ainsi, par conséquent, en effet, d'ailleurs, de plus, quant à. Falso cognato: « or » = ora/porém (conj.). « Quant à elles » = quanto a elas."
+   ],
+   "vocab": [
+    {
+     "en": "ce dernier / ces derniers",
+     "pt": "este último / estes últimos"
+    },
+    {
+     "en": "celui-ci / celle-ci",
+     "pt": "este / esta"
+    },
+    {
+     "en": "par conséquent",
+     "pt": "por consequência"
+    },
+    {
+     "en": "en effet",
+     "pt": "com efeito, de fato"
+    },
+    {
+     "en": "quant à",
+     "pt": "quanto a"
+    },
+    {
+     "en": "d'ailleurs",
+     "pt": "aliás"
+    },
+    {
+     "en": "un paragraphe",
+     "pt": "um parágrafo"
+    },
+    {
+     "en": "la cohérence",
+     "pt": "a coerência"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez un essai argumenté (environ 250 mots) en prenant clairement position et en justifiant votre point de vue par des arguments et des exemples. Faut-il renoncer à l'avion pour limiter le réchauffement climatique ? Soignez la cohérence, les paragraphes et la ponctuation.\n\nDocument 1 – Tribune d'un collectif d'étudiants (résumé) : Le transport aérien assure environ 3 % des émissions mondiales de CO2, mais sa part augmente vite. Les auteurs proposent de renoncer à l'avion pour les trajets de moins de quatre heures en train.\nIls demandent aux entreprises de revoir leurs politiques de voyages d'affaires.\n\nDocument 2 – Entretien avec un économiste du tourisme (résumé) : L'expert rappelle que l'avion permet aux familles dispersées de se retrouver et fait vivre des îles qui n'ont pas d'autre ressource. Il pense que l'innovation (carburants durables, avions plus sobres) réduira l'impact à terme.\nIl juge une taxation progressive plus juste qu'une interdiction.",
+    "genero": "essai",
+    "min": 230,
+    "max": 290,
+    "modelo": "Faut-il renoncer à l'avion pour protéger le climat ?\n\nLe transport aérien ne représente qu'une faible part des émissions mondiales de dioxyde de carbone ; sa croissance rapide inquiète cependant les écologistes. Certains militants réclament désormais qu'on le supprime sur les trajets que le train peut assurer. Une telle exigence est-elle justifiée ? Je défendrai l'idée d'une réduction ciblée plutôt que d'un renoncement général.\n\nEn premier lieu, il serait absurde de maintenir des vols qui concurrencent le train sur de courtes distances. Ceux-ci, en effet, polluent beaucoup pour un gain de temps souvent négligeable. De même, les entreprises pourraient privilégier la visioconférence pour leurs déplacements professionnels, ce qui diminuerait leurs émissions sans nuire à leur activité. Ce changement d'habitudes, déjà observé pendant la crise sanitaire, montre qu'il est possible de se réunir sans parcourir des milliers de kilomètres.\n\nEn revanche, l'avion demeure indispensable à certains territoires. Les habitants des îles, par exemple, en dépendent pour se soigner, se déplacer et vivre du tourisme ; quant aux familles dispersées sur plusieurs continents, il leur permet de se retrouver. Interdire tous les vols reviendrait donc à pénaliser ceux qui n'ont pas d'alternative.\n\nReste à savoir comment agir. Une taxation progressive, qui frapperait davantage les voyageurs fréquents, me paraît plus équitable qu'une interdiction, car elle responsabilise sans exclure. Elle financerait en outre la recherche de carburants durables.\n\nAinsi, voler moins et mieux est préférable à ne plus voler du tout : l'enjeu est de réserver l'avion aux usages qui le justifient vraiment.",
+    "checklist": [
+     "Cada parágrafo trata de uma ideia, com linha em branco entre eles ?",
+     "Coloquei espaço antes de ; : ? ! (norma francesa) ?",
+     "Usei retomadas (ceux-ci, ce dernier, y, en) para não repetir palavras ?",
+     "Os conectores indicam a lógica (oposição, causa, consequência) corretamente ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Dans « Les entreprises et les États devront agir ; ces derniers pourraient taxer les billets », que désigne « ces derniers » ?",
+     "op": [
+      "les entreprises",
+      "les billets",
+      "les deux",
+      "les États"
+     ],
+     "r": 3,
+     "exp": "« Ce dernier / ces derniers » retoma o ÚLTIMO elemento citado: les États."
+    },
+    {
+     "t": "gap",
+     "q": "L'avion pollue ; ___, il est parfois indispensable.",
+     "resp": [
+      "cependant",
+      "pourtant",
+      "toutefois",
+      "néanmoins",
+      "en revanche"
+     ],
+     "exp": "Conector de oposição depois do ponto-e-vírgula, seguido de vírgula."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Voler moins et mieux est préférable à ne plus voler du tout.",
+     "exp": "Atenção ao « v » de « voler » e ao « r » final de « préférable » (/pʁefeʁabl/)."
+    },
+    {
+     "t": "mc",
+     "q": "Quel connecteur complète : « Les vols courts concurrencent le train ; ___, il serait logique de les supprimer » ?",
+     "op": [
+      "néanmoins",
+      "tandis que",
+      "du moins",
+      "par conséquent"
+     ],
+     "r": 3,
+     "exp": "Por conséquent introduz uma consequência lógica. Néanmoins opõe; tandis que compara."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Interdire",
+      "tous",
+      "les",
+      "vols",
+      "reviendrait",
+      "à",
+      "pénaliser",
+      "les",
+      "îles."
+     ],
+     "resp": "Interdire tous les vols reviendrait à pénaliser les îles.",
+     "exp": "« Reviendrait à » = equivaleria a (condicional). « Pénaliser » = prejudicar."
+    },
+    {
+     "t": "gap",
+     "q": "Les îles dépendent de l'avion ; les familles dispersées, ___, s'en servent pour se retrouver.",
+     "resp": [
+      "quant à elles"
+     ],
+     "exp": "« Quant à » + pronome tônico: quant à elles (= as famílias, feminino plural)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em uma frase, com um conector de oposição.",
+     "frase": "Reliez avec un connecteur : « L'avion pollue » / « Il est indispensable aux îles ».",
+     "modelo": "L'avion pollue beaucoup ; cependant, il reste indispensable aux habitants des îles.",
+     "min": 8,
+     "chave": [
+      "cependant",
+      "pourtant",
+      "toutefois",
+      "néanmoins",
+      "en revanche",
+      "mais"
+     ],
+     "exp": "Use um conector de concessão depois do ponto-e-vírgula."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la bonne règle pour un paragraphe d'essai ?",
+     "op": [
+      "Toutes les idées dans un seul bloc.",
+      "Une idée principale développée avec explication et exemple.",
+      "Une seule phrase par paragraphe.",
+      "Une idée par phrase, sans lien."
+     ],
+     "r": 1,
+     "exp": "Parágrafos claros mostram a organização e valem nota em cohérence."
+    },
+    {
+     "t": "gap",
+     "q": "Une taxe frapperait les voyageurs fréquents ; ___, elle financerait la recherche.",
+     "resp": [
+      "en outre",
+      "de plus",
+      "par ailleurs"
+     ],
+     "exp": "Conector de adição: depois do ponto-e-vírgula, seguido de vírgula."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Nuancer, concéder, relativiser",
+   "objetivo": "Evitar afirmações absolutas e usar concessões para argumentar com nuance.",
+   "foco": "Certes… mais, il est vrai que… cependant, même si, quand bien même, il n'en reste pas moins que, modalisateurs",
+   "explicacao": [
+    "Um bom essai C1 nuança. Evite generalizações absolutas (tous, jamais, toujours, aucun). Prefira: souvent, la plupart, dans une certaine mesure, en partie, il semble que, peut-être, tendre à.",
+    "Concessão: Certes, X ; mais Y. Il est vrai que X ; cependant Y. Même si + indicativo (Même si l'objectif est louable…). Bien que / quoique + subjuntivo. Quand bien même + CONDICIONAL.",
+    "Conclusão da concessão: Il n'en reste pas moins que… (= apesar disso, permanece que). Il n'en demeure pas moins que… é equivalente.",
+    "Dica: ao conceder, reconheça um argumento real do outro lado, depois diga por que sua posição continua mais sólida. Isso mostra capacidade de argumentar (critério C1)."
+   ],
+   "vocab": [
+    {
+     "en": "certes",
+     "pt": "é verdade, certamente"
+    },
+    {
+     "en": "il n'en reste pas moins que",
+     "pt": "ainda assim, permanece que"
+    },
+    {
+     "en": "dans une certaine mesure",
+     "pt": "até certo ponto"
+    },
+    {
+     "en": "quand bien même",
+     "pt": "mesmo que (+ condicional)"
+    },
+    {
+     "en": "relativiser",
+     "pt": "relativizar"
+    },
+    {
+     "en": "de surcroît",
+     "pt": "além disso"
+    },
+    {
+     "en": "contre-productif",
+     "pt": "contraproducente"
+    },
+    {
+     "en": "décréter",
+     "pt": "decretar"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez un essai argumenté (environ 250 mots) en prenant clairement position et en justifiant votre point de vue par des arguments et des exemples. Le service civique doit-il être obligatoire pour tous les jeunes ? Nuancez votre position.\n\nDocument 1 – Rapport officiel (résumé) : Les auteurs proposent de rendre un service civique obligatoire de trois mois pour tous les jeunes de dix-huit ans. Ils y voient un moyen de mélanger les milieux sociaux, de faire découvrir des métiers utiles et de renforcer le sentiment d'appartenance à la nation.\nIls estiment le coût à plusieurs milliards d'euros par an.\n\nDocument 2 – Communiqué d'une association de jeunesse (résumé) : L'association défend le volontariat : un engagement imposé perd son sens et risque de provoquer du ressentiment. Elle craint aussi que des missions obligatoires remplacent de vrais emplois.\nElle préfère développer le service civique volontaire, mieux indemnisé et mieux connu des jeunes.",
+    "genero": "essai",
+    "min": 230,
+    "max": 290,
+    "modelo": "Le service civique doit-il être obligatoire pour tous les jeunes ?\n\nCertains projets de réforme prévoient d'imposer trois mois d'engagement à tous les jeunes de dix-huit ans. L'idée séduit par sa dimension collective, mais elle heurte l'idéal de liberté qui fonde l'engagement. Peut-on contraindre à la solidarité ? Je répondrai que l'obligation paraît, dans l'ensemble, contre-productive, même si l'objectif poursuivi mérite d'être soutenu.\n\nIl est vrai que ce dispositif présenterait des avantages. Il mêlerait des jeunes issus de milieux différents, leur ferait découvrir des métiers utiles à la société et renforcerait, dans une certaine mesure, leur sentiment d'appartenance. Ces bénéfices ne sont pas négligeables et expliquent le soutien d'une partie de l'opinion.\n\nToutefois, un engagement imposé risque de perdre son sens. Quand bien même les missions seraient bien conçues, certains jeunes les vivraient comme une corvée et en garderaient du ressentiment. De surcroît, on peut craindre que des tâches obligatoires se substituent à de véritables emplois. Le coût, qui se chiffrerait en milliards d'euros par an, n'est pas non plus à négliger.\n\nIl n'en demeure pas moins que le volontariat actuel reste trop discret. Plutôt que d'obliger, il serait donc préférable de mieux l'indemniser et de le faire connaître dans les lycées. Ainsi, la solidarité serait encouragée sans être décrétée, et elle y gagnerait peut-être en sincérité. Les pouvoirs publics auraient ainsi tout intérêt à faire confiance à la générosité des jeunes plutôt qu'à la contrainte.",
+    "checklist": [
+     "Reconheci pelo menos um argumento do outro lado (certes, il est vrai que…) ?",
+     "Evitei absolutos (tous, jamais, aucun) e usei modalisateurs (souvent, dans une certaine mesure) ?",
+     "Usei bien que / même si / quand bien même com o modo certo ?",
+     "Concluí com il n'en reste pas moins que… ou equivalente ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est la plus nuancée ?",
+     "op": [
+      "Tous les jeunes détestent l'obligation.",
+      "Aucun jeune n'acceptera jamais cette mesure.",
+      "Beaucoup de jeunes risquent de vivre l'obligation comme une contrainte.",
+      "Les jeunes ont toujours tort."
+     ],
+     "r": 2,
+     "exp": "Nuançar é evitar absolutos: beaucoup, risquer de, souvent."
+    },
+    {
+     "t": "gap",
+     "q": "___ le dispositif ait des avantages, il reste coûteux.",
+     "resp": [
+      "bien que",
+      "quoique"
+     ],
+     "exp": "Bien que / quoique + subjuntivo (ait)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Il n'en reste pas moins que l'obligation risque de décourager les jeunes.",
+     "exp": "Atenção à sequência « n'en reste pas moins » e ao « r » de « risque ». « Moins » = /mwɛ̃/."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est grammaticalement correcte ?",
+     "op": [
+      "Même si l'objectif soit louable, la méthode pose problème.",
+      "Même si l'objectif serait louable, la méthode pose problème.",
+      "Même si l'objectif est louable, la méthode pose problème.",
+      "Même si l'objectif fût louable, la méthode pose problème."
+     ],
+     "r": 2,
+     "exp": "« Même si » nunca leva subjuntivo nem condicional diretamente: vem com indicativo (est)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "n'en",
+      "reste",
+      "pas",
+      "moins",
+      "que",
+      "cette",
+      "mesure",
+      "est",
+      "coûteuse."
+     ],
+     "resp": "Il n'en reste pas moins que cette mesure est coûteuse.",
+     "exp": "Expressão fixa: « il n'en reste pas moins que » + indicativo."
+    },
+    {
+     "t": "gap",
+     "q": "Certes, ces missions sont utiles, ___ elles ne remplacent pas un emploi.",
+     "resp": [
+      "mais"
+     ],
+     "exp": "Estrutura clássica: Certes… mais…"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, com « certes » e um conector de oposição.",
+     "frase": "Nuancez en deux phrases : l'obligation a des avantages, mais…",
+     "modelo": "Certes, l'obligation permettrait de mélanger les milieux sociaux. Cependant, un engagement imposé risque de perdre son sens.",
+     "min": 14,
+     "chave": [
+      "certes",
+      "cependant",
+      "toutefois",
+      "mais",
+      "avantages"
+     ],
+     "exp": "Primeira frase: reconheça a vantagem. Segunda: contraponha com cependant, toutefois ou mais."
+    },
+    {
+     "t": "mc",
+     "q": "Quel mode suit « quand bien même » ?",
+     "op": [
+      "le subjonctif",
+      "l'indicatif futur",
+      "l'infinitif",
+      "le conditionnel"
+     ],
+     "r": 3,
+     "exp": "Quand bien même les missions seraient bien conçues… (condicional)."
+    },
+    {
+     "t": "gap",
+     "q": "Dans une certaine ___, cette crainte est justifiée.",
+     "resp": [
+      "mesure"
+     ],
+     "exp": "Dans une certaine mesure = até certo ponto: modalisador típico."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Synthèse : méthode complète et pièges de la relecture",
+   "objetivo": "Aplicar a metodologia completa e conferir os erros que mais custam pontos na synthèse.",
+   "foco": "Méthode: lire, relever, regrouper, plan, rédiger, relire; pièges: opinion, copie, oubli d'un document, dépassement",
+   "explicacao": [
+    "Método (sugestão): 1) leia os dois documentos e sublinhe ideias principais ; 2) faça uma tabela de ideias por tema ; 3) escolha título e plano ; 4) redija ; 5) reserve tempo para reler (acordo, pontuação, contagem de palavras). Treine para caber no tempo total da prova (2h30, incluindo o essai).",
+    "Erros que mais custam pontos: dar opinião pessoal, copiar frases, esquecer um dos documentos, resumir em sequência, passar muito do limite, falta de título, texto sem parágrafos, mistura de registros.",
+    "Na releitura, confira: concordância dos particípios (Les gains, estimés par…), pronomes relativos (dont la fabrication exige), concordância dos tempos, falsos cognatos (actuellement, prétendre, éventuellement).",
+    "Um bom modelo termina com uma frase-síntese neutra: Le bilan dépendra donc de… Evite « on peut conclure que je pense… »."
+   ],
+   "vocab": [
+    {
+     "en": "relever",
+     "pt": "destacar, anotar"
+    },
+    {
+     "en": "une grille d'idées",
+     "pt": "uma tabela de ideias"
+    },
+    {
+     "en": "relire",
+     "pt": "reler"
+    },
+    {
+     "en": "la cohérence",
+     "pt": "a coerência"
+    },
+    {
+     "en": "dont",
+     "pt": "cujo, de que (pron. relativo)"
+    },
+    {
+     "en": "convergent",
+     "pt": "convergem"
+    },
+    {
+     "en": "la sobriété",
+     "pt": "a sobriedade, o uso moderado"
+    },
+    {
+     "en": "un bilan",
+     "pt": "um balanço"
+    }
+   ],
+   "material": {
+    "tarefa": "Rédigez une synthèse (environ 220 mots) des deux documents ci-dessous. Donnez un titre à votre texte, organisez les idées selon un plan personnel et ne donnez pas votre opinion.\n\nDocument 1 – Rapport d'un ingénieur (résumé) : L'auteur indique que le numérique est responsable d'environ 4 % des émissions mondiales de gaz à effet de serre, une part comparable à celle de l'aviation civile, qui pourrait doubler d'ici 2030. La fabrication des appareils pèse plus lourd que leur usage, car elle exige des métaux rares et beaucoup d'énergie.\nIl recommande d'allonger la durée de vie des appareils et de réparer plutôt que remplacer.\n\nDocument 2 – Tribune d'un dirigeant d'entreprise technologique (résumé) : L'auteur souligne que le numérique permet aussi d'économiser de l'énergie : télétravail, dématérialisation, optimisation des réseaux électriques et des transports. Il estime que les gains pourraient dépasser les émissions produites.\nIl demande toutefois aux plateformes de vidéo de réduire la qualité par défaut et aux utilisateurs de se modérer, car les usages augmentent plus vite que les économies.",
+    "genero": "synthèse",
+    "min": 200,
+    "max": 240,
+    "modelo": "Numérique et climat : un bilan encore ambigu\n\nEn quelques années, le numérique s'est imposé dans tous les domaines de la vie. Les deux documents s'interrogent sur son bilan environnemental, présenté tantôt comme un fardeau, tantôt comme un levier.\n\nLe premier texte insiste sur le poids du secteur : environ 4 % des émissions mondiales de gaz à effet de serre, soit autant que l'aviation civile, avec une part susceptible de doubler d'ici 2030. L'essentiel de cet impact tient à la fabrication des appareils, qui nécessite des métaux rares et beaucoup d'énergie, plutôt qu'à leur usage. L'auteur préconise donc de prolonger la durée de vie du matériel et de privilégier la réparation plutôt que le remplacement systématique des appareils.\n\nLe second document adopte un point de vue plus favorable : en permettant le télétravail, la dématérialisation et une meilleure gestion des réseaux d'électricité et de transport, le numérique pourrait économiser davantage d'énergie qu'il n'en consomme.\n\nLes deux sources convergent néanmoins sur un point : la progression rapide des usages menace d'annuler les gains obtenus. Le dirigeant invite ainsi les plateformes de vidéo à diminuer la qualité par défaut et les utilisateurs à se modérer.\n\nLe bilan climatique du numérique dépendra donc de la sobriété de ses usages.",
+    "checklist": [
+     "Fiz uma tabela de ideias por tema antes de escrever ?",
+     "Não há opinião, citações literais nem 'je' ?",
+     "Os DOIS documentos aparecem em cada parágrafo temático ?",
+     "Reli acordos, pontuação e contei as palavras (200–240) ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Laquelle de ces phrases contient une opinion à éviter dans une synthèse ?",
+     "op": [
+      "À mon avis, le numérique est dangereux pour la planète.",
+      "Le premier texte souligne le poids du secteur.",
+      "L'ingénieur recommande de réparer les appareils.",
+      "Le second texte adopte un point de vue plus favorable."
+     ],
+     "r": 0,
+     "exp": "Só a primeira traz opinião (« à mon avis »). Na synthèse, o autor do texto é a fonte das ideias."
+    },
+    {
+     "t": "gap",
+     "q": "Il ne faut pas citer : on reformule avec ses propres ___.",
+     "resp": [
+      "mots"
+     ],
+     "exp": "Reformular com as próprias palavras, sem aspas."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Le bilan climatique du numérique dépendra de la sobriété de ses usages.",
+     "exp": "Atenção ao futuro « dépendra » (/depɑ̃dʁa/) e ao « é » de « sobriété » e « usages » (/yzaʒ/)."
+    },
+    {
+     "t": "mc",
+     "q": "Vous avez oublié de traiter un des deux documents. Quelle est la conséquence ?",
+     "op": [
+      "La synthèse est incomplète et perd des points.",
+      "Aucune, car la synthèse est courte.",
+      "Vous gagnez des points pour la concision.",
+      "La copie est automatiquement annulée."
+     ],
+     "r": 0,
+     "exp": "Os dois documentos devem ser tratados. Esquecer um é falha grave de conteúdo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Les",
+      "deux",
+      "sources",
+      "convergent",
+      "sur",
+      "la",
+      "progression",
+      "rapide",
+      "des",
+      "usages."
+     ],
+     "resp": "Les deux sources convergent sur la progression rapide des usages.",
+     "exp": "« Converger sur » = convergir sobre. Plural: « convergent »."
+    },
+    {
+     "t": "gap",
+     "q": "Les gains, ___ par le second auteur, pourraient dépasser les émissions.",
+     "resp": [
+      "estimés",
+      "avancés",
+      "annoncés",
+      "évalués",
+      "prévus"
+     ],
+     "exp": "Particípio com valor de adjetivo: concorda com « les gains » (masc. plural) → estimés."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas frases neutras.",
+     "frase": "Quelle idée est commune aux deux documents sur l'avenir du numérique ?",
+     "modelo": "Les deux documents estiment que la croissance des usages menace les gains obtenus. Il faut donc réduire la consommation et prolonger la vie des appareils.",
+     "min": 14,
+     "chave": [
+      "usages",
+      "croissance",
+      "sobriété",
+      "gains",
+      "réduire",
+      "menace"
+     ],
+     "exp": "Mencione a progressão dos usos como ponto comum."
+    },
+    {
+     "t": "mc",
+     "q": "Quel titre est le mieux adapté à cette synthèse ?",
+     "op": [
+      "Synthèse sur le numérique",
+      "Numérique et climat : un bilan encore ambigu",
+      "Pourquoi je pense que le numérique pollue",
+      "Document 1 et document 2"
+     ],
+     "r": 1,
+     "exp": "Título informativo, neutro e que cobre os dois documentos."
+    },
+    {
+     "t": "gap",
+     "q": "Ces appareils, ___ fabrication exige des métaux rares, pèsent lourd sur le climat.",
+     "resp": [
+      "dont la"
+     ],
+     "exp": "Pronome relativo « dont » + artigo: dont la fabrication (= cuja fabricação)."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado DALF C1 : synthèse et essai argumenté",
+   "objetivo": "Fazer a Production écrite completa: synthèse (~220 palavras) e essai argumenté (~250 palavras) sobre o mesmo tema.",
+   "foco": "Simulation of DALF C1 written production: synthèse + essai argumenté on the same topic",
+   "explicacao": [
+    "Formato real da prova: 2h30 para as duas tarefas, a partir de um dossiê de dois documentos (~1 000 palavras no total). 1) Synthèse (~220 palavras): neutra, com título e plano próprio. 2) Essai argumenté (~250 palavras): posição clara e argumentos.",
+    "Sugestão de tempo: cerca de 20 min lendo e planejando, 55–60 min na synthèse, 50–55 min no essai e o restante relendo. Treine para não gastar tempo demais na primeira tarefa.",
+    "Synthèse: sem opinião, sem copiar, por temas, com conectores de oposição e verbos introdutores. Essai: problemática, plano (dialético ou analítico), exemplos, registro soutenu, subjuntivo e conclusão.",
+    "Antes de entregar: título da synthèse, contagem de palavras das duas partes (200–240 e 230–290), acordos, pontuação, concordância dos tempos."
+   ],
+   "vocab": [
+    {
+     "en": "la végétalisation",
+     "pt": "o plantio de vegetação, a arborização"
+    },
+    {
+     "en": "une canicule",
+     "pt": "uma onda de calor"
+    },
+    {
+     "en": "la fraîcheur",
+     "pt": "a frescor"
+    },
+    {
+     "en": "l'entretien (m.)",
+     "pt": "a manutenção"
+    },
+    {
+     "en": "la sécheresse",
+     "pt": "a seca"
+    },
+    {
+     "en": "l'écogentrification (f.)",
+     "pt": "gentrificação ecológica"
+    },
+    {
+     "en": "coûter moins cher",
+     "pt": "custar menos"
+    },
+    {
+     "en": "être contraint de",
+     "pt": "ser obrigado a"
+    }
+   ],
+   "material": {
+    "tarefa": "PARTIE 1 – SYNTHÈSE (environ 220 mots). Rédigez une synthèse des deux documents ci-dessous. Donnez un titre à votre texte, sans opinion personnelle.\nPARTIE 2 – ESSAI ARGUMENTÉ (environ 250 mots). La végétalisation est-elle la meilleure réponse aux fortes chaleurs en ville ? Prenez position et justifiez votre point de vue.\n\nDocument 1 – Article de presse (résumé) : Face aux vagues de chaleur, de nombreuses villes plantent des arbres, ouvrent des cours d'école à la nature et transforment des parkings en jardins. Un arbre adulte peut faire baisser la température locale de plusieurs degrés et absorber des polluants. Les habitants y gagnent aussi en santé mentale.\nL'auteur y voit un investissement rentable, car il limite les dépenses de santé et de climatisation.\n\nDocument 2 – Tribune d'un urbaniste (résumé) : L'auteur met en garde contre une végétalisation de façade : planter sans entretien ni arrosage condamne les jeunes arbres, surtout en période de sécheresse. Il note que les quartiers verts voient leurs prix immobiliers augmenter, ce qui chasse les habitants modestes, un phénomène qualifié d'écogentrification.\nIl demande que les projets associent les habitants, privilégient les quartiers les plus chauds et prévoient dès le départ un budget d'entretien.",
+    "genero": "synthèse + essai argumenté",
+    "min": 430,
+    "max": 530,
+    "modelo": "SYNTHÈSE\n\nVégétaliser la ville : un remède efficace à condition d'être bien conduit\n\nConfrontées à la multiplication des vagues de chaleur, de nombreuses villes plantent des arbres et transforment des espaces minéralisés en jardins. Les deux documents évaluent l'efficacité de cette stratégie et les conditions de sa réussite.\n\nLe premier texte en souligne les bénéfices. Un arbre adulte abaisse la température locale de plusieurs degrés et retient des polluants, tandis que les habitants jouissent d'un meilleur équilibre psychologique. L'auteur y voit un investissement rentable, puisque ces aménagements réduisent les dépenses de santé et de climatisation.\n\nLe second adopte un ton plus prudent. Il dénonce une végétalisation superficielle : des arbres plantés sans entretien ni arrosage dépérissent, en particulier lors des sécheresses. Il redoute en outre que la hausse des prix de l'immobilier dans les quartiers verdis éloigne les ménages modestes, phénomène appelé écogentrification.\n\nL'urbaniste en conclut que planter ne suffit pas et préconise d'associer les habitants, de commencer par les secteurs les plus chauds et de prévoir dès l'origine un budget d'entretien.\n\nLa verdure urbaine n'apporte ainsi une réponse durable que si elle est suivie dans le temps et socialement équitable, c'est-à-dire accessible à tous les habitants.\n\nESSAI ARGUMENTÉ\n\nLa végétalisation est-elle la meilleure réponse aux fortes chaleurs en ville ?\n\nChaque été, les canicules rendent les centres urbains plus difficilement vivables. Pour y remédier, les municipalités misent sur la plantation d'arbres et la création de jardins. Cette stratégie est-elle la plus pertinente ? Je soutiendrai qu'elle constitue une réponse précieuse, mais qu'elle ne saurait suffire à elle seule.\n\nIl est incontestable que la présence de végétation rafraîchit l'air et améliore le quotidien des habitants. L'ombre des arbres, par exemple, rend supportable une rue qui ne l'était plus, et un parc offre un refuge aux personnes âgées pendant les heures les plus chaudes de la journée. De surcroît, ces aménagements coûtent moins cher que la climatisation généralisée, laquelle aggrave le réchauffement.\n\nCependant, la végétalisation se heurte à des limites. Planter des arbres est un engagement durable : sans arrosage ni entretien, ils meurent, et l'argent public est gaspillé. Par ailleurs, l'embellissement d'un quartier fait grimper les loyers, si bien que les familles modestes, pourtant les plus exposées à la chaleur, sont parfois contraintes de partir, alors que les quartiers aisés disposent déjà de nombreux espaces verts.\n\nIl faut donc compléter cette politique. Isoler les bâtiments, adopter des revêtements plus clairs pour les chaussées et créer des îlots de fraîcheur publics devraient accompagner la plantation d'arbres, qui doit débuter par les quartiers les plus chauds et associer leurs habitants.\n\nEn somme, la nature en ville est une alliée indispensable, à condition de n'être ni un décor ni un alibi.",
+    "checklist": [
+     "Synthèse : título, sem opinião, por temas, ~220 palavras ?",
+     "Essai : problemática, posição clara, 2–3 argumentos com exemplos, ~250 palavras ?",
+     "Registro soutenu, subjuntivo e concordância dos tempos conferidos ?",
+     "Contei as palavras de cada parte (total entre 430 e 530) ?",
+     "Reli acordos, pontuação (espaço antes de ; : ? !) e conectores ?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle consigne résume le mieux la première tâche du DALF C1 écrit ?",
+     "op": [
+      "Un texte de 500 mots donnant son opinion sur le thème des documents.",
+      "Un résumé du premier document suivi d'un résumé du second.",
+      "Un texte d'environ 220 mots, neutre, avec titre et plan personnel, à partir de deux documents.",
+      "Une lettre formelle au directeur de l'établissement."
+     ],
+     "r": 2,
+     "exp": "A synthèse tem cerca de 220 palavras, é neutra e agrupa as ideias dos dois documentos."
+    },
+    {
+     "t": "gap",
+     "q": "Dans la synthèse, on n'emploie pas « ___ » : l'opinion personnelle est exclue.",
+     "resp": [
+      "je"
+     ],
+     "exp": "Na synthèse não se usa a 1ª pessoa. No essai, sim."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "La végétalisation n'apporte une réponse durable que si elle est entretenue.",
+     "exp": "Atenção ao « ne… que » (= somente) e ao « -tion » de « végétalisation » (/sjɔ̃/)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase reformule le mieux « Un arbre adulte fait baisser la température » ?",
+     "op": [
+      "La présence d'arbres adultes entraîne une baisse de la température locale.",
+      "Un arbre adulte fait baisser la température.",
+      "Les arbres adultes font monter la température.",
+      "Un arbre adulte est grand."
+     ],
+     "r": 0,
+     "exp": "Nominalização e sinônimo (entraîner une baisse) mantêm o sentido sem copiar."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "L'urbaniste",
+      "préconise",
+      "d'associer",
+      "les",
+      "habitants",
+      "aux",
+      "projets."
+     ],
+     "resp": "L'urbaniste préconise d'associer les habitants aux projets.",
+     "exp": "« Préconiser de + infinitivo » = recomendar fazer algo."
+    },
+    {
+     "t": "gap",
+     "q": "Le premier texte vante les bénéfices ; ___, le second invite à la prudence.",
+     "resp": [
+      "en revanche",
+      "à l'inverse"
+     ],
+     "exp": "Conectores de oposição entre os dois documentos."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas frases neutras.",
+     "frase": "Donnez en deux phrases la problématique de la synthèse sur la végétalisation.",
+     "modelo": "Les deux documents s'interrogent sur l'efficacité de la végétalisation face à la chaleur. Ils en examinent les bénéfices puis les limites.",
+     "min": 14,
+     "chave": [
+      "végétalisation",
+      "efficacité",
+      "bénéfices",
+      "limites",
+      "chaleur"
+     ],
+     "exp": "Apresente o tema e anuncie bénéfices / limites, sem opinião."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle introduction convient à l'essai ?",
+     "op": [
+      "Je vais parler de la chaleur dans ce texte.",
+      "La végétalisation est un très bon sujet de réflexion.",
+      "« Un arbre adulte peut faire baisser la température locale de plusieurs degrés. »",
+      "Chaque été, les canicules rendent les villes difficilement vivables ; la végétalisation est-elle la meilleure réponse ? Je soutiendrai qu'elle est précieuse mais insuffisante."
+     ],
+     "r": 3,
+     "exp": "Boa introdução: amorce + problématique + posição anunciada. Evite anunciar vagamente ou copiar o documento."
+    },
+    {
+     "t": "gap",
+     "q": "Bien qu'elle ___ utile, la végétalisation ne suffit pas.",
+     "resp": [
+      "soit"
+     ],
+     "exp": "Bien que + subjuntivo (soit).",
+     "dica": "ÊTRE (subjonctif)"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia a conclusão do essai em voz alta.",
+     "frase": "En somme, la nature en ville est une alliée indispensable, à condition de n'être ni un décor ni un alibi.",
+     "exp": "Atenção à liaison « en somme » (sem liaison) e ao « -tion » de « condition » (/sjɔ̃/)."
+    },
+    {
+     "t": "mc",
+     "q": "Votre essai compte 180 mots pour 250 demandés. Quelle est la meilleure décision ?",
+     "op": [
+      "Développer un argument avec un exemple pour approcher des 250 mots.",
+      "Le laisser tel quel : 180 est une bonne longueur.",
+      "Répéter l'introduction pour ajouter des mots.",
+      "Ajouter une liste de mots sans phrases."
+     ],
+     "r": 0,
+     "exp": "Texto muito curto significa argumentos pouco desenvolvidos. Acrescente ideia + explicação + exemplo, sem repetir."
+    },
+    {
+     "t": "gap",
+     "q": "Planter ne suffit pas : encore faut-il que les arbres ___ arrosés.",
+     "resp": [
+      "soient"
+     ],
+     "exp": "« Encore faut-il que » + subjuntivo (soient). Inversão típica do registro soutenu.",
+     "dica": "ÊTRE (subjonctif)"
+    }
+   ]
+  }
+ ]
+}

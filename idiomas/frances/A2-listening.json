@@ -69,7 +69,7 @@
      },
      {
       "p": "A",
-      "t": "Non, ça, c'est l'heure de ton cours de physique, à neuf heures."
+      "t": "Non, tu confonds : ton cours de physique commence à neuf heures."
      },
      {
       "p": "B",
@@ -158,7 +158,8 @@
      "q": "Léo va retrouver sa mère à dix-sept heures ___.",
      "resp": [
       "quinze",
-      "15"
+      "15",
+      "et quart"
      ],
      "exp": "Ela vem buscá-lo às 17h15: dix-sept heures quinze."
     },
@@ -168,7 +169,7 @@
      "q": "Diga a que horas você começa o seu dia.",
      "frase": "À quelle heure commencez-vous votre journée ?",
      "modelo": "Je commence à huit heures et demie.",
-     "min": 4,
+     "min": 3,
      "chave": [
       "heure",
       "heures",
@@ -307,7 +308,7 @@
       "6,50 €"
      ],
      "r": 1,
-     "exp": "'Deux euros soixante-dix' = 2,70 €. 3,90 € são as maçãs e 6,50 € as morangos."
+     "exp": "'Deux euros soixante-dix' = 2,70 €. 3,90 € são as maçãs e 6,50 € os morangos (por barquette)."
     },
     {
      "t": "gap",
@@ -368,7 +369,7 @@
      "q": "Diga quanto custa um café na sua cidade.",
      "frase": "Combien coûte un café dans votre ville ?",
      "modelo": "Un café coûte deux euros.",
-     "min": 4,
+     "min": 3,
      "chave": [
       "euro",
       "euros",
@@ -488,7 +489,7 @@
      "modo": "repetir",
      "q": "Ouça o modelo e repita a frase em voz alta.",
      "frase": "Le train pour Dijon partira voie deux.",
-     "exp": "'Deux' soa como deu. 'Partira' tem e final fraco. Fale 'par-ti-ra voi deu'.",
+     "exp": "'Deux' soa deu. 'Partira' tem o acento na última sílaba: par-ti-RA. Fale 'par-ti-ra voi deu'.",
      "ouvir": "Le train pour Dijon partira voie deux."
     },
     {
@@ -575,7 +576,7 @@
     "Palavras-chave: le vol (voo), la porte (portão), l'embarquement (embarque), à destination de (com destino a).",
     "Motivos de atraso: le brouillard (neblina), la grève (greve), l'orage (tempestade).",
     "'Prévu à dix-huit heures' é a hora programada; o atraso muda a hora real: 18h + 40 minutos = 18h40.",
-    "Pronúncia: 'à destination' liga o t: à-des-ti-na-sion. Em 'vol pour Madrid', 'pour' soa pur."
+    "Pronúncia: em 'destination' o ti soa si (des-ti-na-SSION). Em 'vol pour Madrid', 'pour' soa pur."
    ],
    "vocab": [
     {
@@ -715,7 +716,12 @@
       "aime",
       "voyage",
       "voyager",
-      "visiter"
+      "visiter",
+      "voudrais",
+      "adore",
+      "préfère",
+      "en",
+      "au"
      ],
      "exp": "Use : J'aime voyager + en / au + país. Ex.: au Portugal, en Italie."
     },
@@ -871,13 +877,19 @@
      "q": "Diga o que você gosta de comprar no supermercado.",
      "frase": "Qu'aimez-vous acheter dans un supermarché ?",
      "modelo": "J'achète des fruits et du pain.",
-     "min": 4,
+     "min": 3,
      "chave": [
       "achète",
       "fruits",
       "pain",
       "lait",
-      "légumes"
+      "légumes",
+      "aime",
+      "acheter",
+      "des",
+      "du",
+      "viande",
+      "fromage"
      ],
      "exp": "Use : J'achète + du / de la / des + produto. Ex.: du lait, de la viande, des fruits."
     },
@@ -1019,7 +1031,10 @@
       "heures"
      ],
      "resp": "Vous pouvez venir la chercher jusqu'à dix-huit heures.",
-     "exp": "Venir la chercher = vir buscá-la. 'Jusqu'à' = até (hora limite)."
+     "exp": "Venir la chercher = vir buscá-la. 'Jusqu'à' = até (hora limite).",
+     "alt": [
+      "Jusqu'à dix-huit heures, vous pouvez venir la chercher."
+     ]
     },
     {
      "t": "gap",
@@ -1035,7 +1050,7 @@
      "q": "Diga em que dia você está livre para almoçar.",
      "frase": "Quel jour êtes-vous libre pour déjeuner ?",
      "modelo": "Je suis libre mardi à midi.",
-     "min": 4,
+     "min": 3,
      "chave": [
       "lundi",
       "mardi",
@@ -1217,8 +1232,7 @@
      "t": "gap",
      "q": "La poste est à cinq minutes à ___.",
      "resp": [
-      "pied",
-      "pieds"
+      "pied"
      ],
      "exp": "À pied = a pé. Em francês, 'à pied' não é plural.",
      "ouvir": "Non, c'est à cinq minutes à pied."
@@ -1373,7 +1387,7 @@
      "modo": "repetir",
      "q": "Ouça o modelo e repita a frase em voz alta.",
      "frase": "Avec plaisir, mais je finis mon travail à vingt heures.",
-     "exp": "'Avec plaisir': o c liga ao p, sem pausa. 'Je finis': o e de 'je' é muito fraco: j'finis.",
+     "exp": "'Avec plaisir': o c final de 'avec' soa (a-vèk) e se junta ao p, sem pausa. 'Je finis': o e de 'je' é muito fraco: j'finis.",
      "ouvir": "Avec plaisir, mais je finis mon travail à vingt heures."
     },
     {
@@ -1399,7 +1413,10 @@
       "soir"
      ],
      "resp": "Tu fais quelque chose samedi soir?",
-     "exp": "Faire quelque chose = fazer alguma coisa. Pergunta informal com entonação."
+     "exp": "Faire quelque chose = fazer alguma coisa. Pergunta informal com entonação.",
+     "alt": [
+      "Samedi soir, tu fais quelque chose ?"
+     ]
     },
     {
      "t": "gap",
@@ -1803,7 +1820,7 @@
      "q": "Diga qual é a sua cor preferida.",
      "frase": "Quelle est votre couleur préférée ?",
      "modelo": "Ma couleur préférée est le bleu.",
-     "min": 4,
+     "min": 3,
      "chave": [
       "bleu",
       "rouge",
@@ -1811,7 +1828,12 @@
       "noir",
       "blanc",
       "jaune",
-      "couleur"
+      "couleur",
+      "préférée",
+      "rose",
+      "orange",
+      "violet",
+      "gris"
      ],
      "exp": "Use : Ma couleur préférée est + le + cor. Ex.: le vert, le rouge."
     },
@@ -1966,7 +1988,10 @@
       "jour"
      ],
      "resp": "Prenez ce sirop trois fois par jour.",
-     "exp": "Prenez é imperativo de prendre (vous). Trois fois par jour = três vezes ao dia."
+     "exp": "Prenez é imperativo de prendre (vous). Trois fois par jour = três vezes ao dia.",
+     "alt": [
+      "Trois fois par jour, prenez ce sirop."
+     ]
     },
     {
      "t": "gap",
@@ -2155,7 +2180,10 @@
       "été"
      ],
      "resp": "Qu'est-ce que tu vas faire cet été?",
-     "exp": "Qu'est-ce que = o que. Tu vas faire = o que você vai fazer (futur proche)."
+     "exp": "Qu'est-ce que = o que. Tu vas faire = o que você vai fazer (futur proche).",
+     "alt": [
+      "Cet été, qu'est-ce que tu vas faire ?"
+     ]
     },
     {
      "t": "gap",
@@ -2171,12 +2199,14 @@
      "q": "Diga o que você vai fazer neste fim de semana.",
      "frase": "Qu'est-ce que vous allez faire ce week-end ?",
      "modelo": "Je vais voir mes amis.",
-     "min": 4,
+     "min": 3,
      "chave": [
       "vais",
       "vas",
       "allons",
-      "vont"
+      "vont",
+      "va",
+      "on va"
      ],
      "exp": "Use : Je vais + infinitivo. Ex.: Je vais rester à la maison / sortir avec des amis."
     },
@@ -2338,7 +2368,10 @@
       "amis"
      ],
      "resp": "Samedi, je suis allé à Lyon avec des amis.",
-     "exp": "Aller usa être: je suis allé. O particípio concorda: Théo é homem, allé sem e extra."
+     "exp": "Aller usa être: je suis allé. O particípio concorda: Théo é homem, allé sem e extra.",
+     "alt": [
+      "Je suis allé à Lyon avec des amis samedi."
+     ]
     },
     {
      "t": "gap",
@@ -2354,7 +2387,7 @@
      "q": "Diga o que você fez ontem.",
      "frase": "Qu'est-ce que vous avez fait hier ?",
      "modelo": "Hier, j'ai travaillé et j'ai regardé la télévision.",
-     "min": 5,
+     "min": 4,
      "chave": [
       "ai",
       "suis",
@@ -2519,7 +2552,10 @@
       "arrivé"
      ],
      "resp": "Pendant que je parlais, le bus est arrivé.",
-     "exp": "Parlais (imparfait) = ação em andamento; est arrivé (passé composé) = fato que acontece."
+     "exp": "Parlais (imparfait) = ação em andamento; est arrivé (passé composé) = fato que acontece.",
+     "alt": [
+      "Le bus est arrivé pendant que je parlais."
+     ]
     },
     {
      "t": "gap",
@@ -2563,11 +2599,11 @@
     },
     {
      "t": "gap",
-     "q": "Ouça e complete : Le voisin l'a ___ et il s'est arrêté.",
+     "q": "Ouça e complete : Il m'a ___ et il s'est arrêté.",
      "resp": [
       "vue"
      ],
-     "exp": "Vue (com e final) porque o COD feminino 'm'/l' (Amélie) vem antes do verbo.",
+     "exp": "Vue (com e final) porque o COD 'm'' (= Amélie, uma mulher) vem antes do verbo: Il m'a vue.",
      "ouvir": "Il m'a vue et il s'est arrêté."
     }
    ]
@@ -2626,7 +2662,7 @@
      },
      {
       "p": "B",
-      "t": "Document deux. Bonjour Paul, c'est Lucie. Samedi, je ne peux pas venir à ton anniversaire, j'ai un examen lundi. Mais on peut dîner dimanche, vers dix-neuf heures trente, chez moi. Apporte du pain, s'il te plaît. Rappelle-moi au zéro six, vingt-deux, quarante-cinq, soixante-sept, quatre-vingt-neuf."
+      "t": "Document deux. Bonjour Paul, c'est Lucie. Samedi, je ne peux pas venir à ton anniversaire, j'ai un examen lundi et je dois réviser. Mais on peut dîner dimanche, vers dix-neuf heures trente, chez moi. Apporte du pain, s'il te plaît. Rappelle-moi au zéro six, vingt-deux, quarante-cinq, soixante-sept, quatre-vingt-neuf."
      },
      {
       "p": "A",
@@ -2686,7 +2722,7 @@
      "modo": "repetir",
      "q": "Ouça o modelo e repita a frase em voz alta.",
      "frase": "Le train pour Bordeaux partira avec vingt minutes de retard.",
-     "exp": "'Avec vingt' liga o c com v: a-vèk-vẽ. 'Retard': o d final não soa.",
+     "exp": "'Avec vingt' soa a-vèk vẽ, sem liaison com o c. 'Retard': o d final não soa.",
      "ouvir": "Le train pour Bordeaux partira avec vingt minutes de retard."
     },
     {
@@ -2714,7 +2750,10 @@
       "trente"
      ],
      "resp": "On peut dîner dimanche vers dix-neuf heures trente.",
-     "exp": "Vers + hora = por volta de. Dix-neuf heures trente = 19h30."
+     "exp": "Vers + hora = por volta de. Dix-neuf heures trente = 19h30.",
+     "alt": [
+      "Dimanche, on peut dîner vers dix-neuf heures trente."
+     ]
     },
     {
      "t": "gap",
@@ -2742,7 +2781,7 @@
      "q": "Diga o que você faz no domingo à noite.",
      "frase": "Que faites-vous le dimanche soir ?",
      "modelo": "Le dimanche soir, je dîne en famille.",
-     "min": 4,
+     "min": 3,
      "chave": [
       "dîne",
       "dine",

@@ -12,7 +12,7 @@
     "No começo da prova o examinador faz o entretien dirigé e usa « vous » : Comment vous appelez-vous ? Quel âge avez-vous ? Où habitez-vous ?",
     "Responda com frase completa : Je m'appelle Ana. Je suis brésilienne. J'habite à Recife.",
     "Em francês a idade usa avoir, não être : J'ai seize ans. (Não diga « Je suis seize ans ».)",
-    "Para soletrar, diga as letras em francês : A-L-V-E-S (a, l, vé, e, esse)."
+    "Para soletrar, diga as letras em francês : A-L-V-E-S (a, èl, vé, e, èss)."
    ],
    "vocab": [
     {
@@ -155,7 +155,7 @@
      "q": "Diga onde mora e com quem.",
      "frase": "Où habitez-vous ? Avec qui ?",
      "modelo": "J'habite à Recife avec ma mère et ma sœur.",
-     "min": 6,
+     "min": 4,
      "chave": [
       "habite",
       "avec",
@@ -325,7 +325,7 @@
      "q": "Descreva um amigo seu.",
      "frase": "Comment est votre meilleur ami ou votre meilleure amie ?",
      "modelo": "Mon meilleur ami s'appelle Paulo. Il est grand et il est très drôle.",
-     "min": 7,
+     "min": 6,
      "chave": [
       "ami",
       "amie",
@@ -452,7 +452,10 @@
       "heures."
      ],
      "resp": "Après les cours, je rentre à la maison vers cinq heures.",
-     "exp": "Ordem : tempo + sujeito + verbo + lugar + horário."
+     "exp": "Ordem : tempo + sujeito + verbo + lugar + horário.",
+     "alt": [
+      "Je rentre à la maison vers cinq heures après les cours."
+     ]
     },
     {
      "t": "speak",
@@ -460,7 +463,7 @@
      "q": "Diga a que horas levanta e o que faz depois.",
      "frase": "À quelle heure vous levez-vous le matin et que faites-vous ensuite ?",
      "modelo": "Je me lève à sept heures. Ensuite je prends le petit-déjeuner.",
-     "min": 8,
+     "min": 5,
      "chave": [
       "lève",
       "heures",
@@ -499,7 +502,7 @@
      "q": "Conte como foi o seu dia, do começo ao fim.",
      "frase": "Racontez votre journée de la veille.",
      "modelo": "Le matin je vais au travail. L'après-midi je fais du sport et le soir je regarde un film.",
-     "min": 12,
+     "min": 9,
      "chave": [
       "matin",
       "après-midi",
@@ -631,7 +634,7 @@
      "q": "Fale de dois hobbies seus.",
      "frase": "Qu'est-ce que vous faites pendant votre temps libre ?",
      "modelo": "J'aime écouter de la musique et je joue au foot avec mes amis.",
-     "min": 8,
+     "min": 6,
      "chave": [
       "aime",
       "adore",
@@ -673,7 +676,7 @@
      "q": "Explique por que gosta de uma atividade.",
      "frase": "Pourquoi aimez-vous cette activité ?",
      "modelo": "J'aime le foot parce que c'est amusant et je vois mes amis.",
-     "min": 8,
+     "min": 6,
      "chave": [
       "parce que",
       "amusant",
@@ -805,7 +808,7 @@
      "q": "Cite três lugares do seu bairro.",
      "frase": "Qu'est-ce qu'il y a dans votre quartier ?",
      "modelo": "Dans mon quartier, il y a une boulangerie, un parc et une pharmacie.",
-     "min": 8,
+     "min": 6,
      "chave": [
       "il y a",
       "boulangerie",
@@ -846,7 +849,7 @@
      "q": "Diga se gosta da sua cidade e por quê.",
      "frase": "Aimez-vous votre ville ? Pourquoi ?",
      "modelo": "J'aime ma ville parce qu'il y a la plage et les gens sont sympas.",
-     "min": 9,
+     "min": 7,
      "chave": [
       "aime",
       "ville",
@@ -950,11 +953,11 @@
      "op": [
       "bonne",
       "bon",
-      "bonté",
+      "banane",
       "bonheur"
      ],
      "r": 1,
-     "exp": "« Bon » tem on nasal ; em « bonne » o n é falado."
+     "exp": "« Bon » tem on nasal ; em « bonne », « banane » e « bonheur » a vogal é oral e o n é falado."
     },
     {
      "t": "order",
@@ -1003,7 +1006,7 @@
      "q": "Diga uma frase com duas ligações, por exemplo com « les amis ».",
      "frase": "Dites une phrase avec deux liaisons.",
      "modelo": "Les amis sont arrivés et ils ont faim.",
-     "min": 6,
+     "min": 4,
      "chave": [
       "les amis",
       "ils ont",
@@ -1088,7 +1091,8 @@
      "t": "gap",
      "q": "Je prends ___ salade et un jus d'orange.",
      "resp": [
-      "une"
+      "une",
+      "la"
      ],
      "exp": "Salade é feminino : une salade."
     },
@@ -1131,7 +1135,7 @@
      "q": "Peça uma bebida e um prato.",
      "frase": "Bonjour, qu'est-ce que vous désirez ?",
      "modelo": "Je voudrais une salade et un jus d'orange, s'il vous plaît.",
-     "min": 8,
+     "min": 5,
      "chave": [
       "voudrais",
       "prendre",
@@ -1149,8 +1153,7 @@
      "t": "gap",
      "q": "Je ne bois pas ___ café le soir.",
      "resp": [
-      "de",
-      "du"
+      "de"
      ],
      "exp": "Após negação : de café.",
      "dica": "de"
@@ -1173,7 +1176,7 @@
      "q": "Aceite ou recuse com educação.",
      "frase": "Voulez-vous un dessert ?",
      "modelo": "Oui, je vais prendre une glace à la fraise, s'il vous plaît.",
-     "min": 8,
+     "min": 6,
      "chave": [
       "oui",
       "non",
@@ -1300,7 +1303,7 @@
      "q": "Diga o que procura numa loja.",
      "frase": "Bonjour, je peux vous aider ?",
      "modelo": "Oui, je cherche un pull bleu, taille M.",
-     "min": 7,
+     "min": 4,
      "chave": [
       "cherche",
       "pull",
@@ -1339,7 +1342,7 @@
      "q": "Decida se compra ou não e diga o motivo.",
      "frase": "Alors, vous le prenez ?",
      "modelo": "Oui, je le prends, il est très joli. Je peux payer par carte ?",
-     "min": 8,
+     "min": 6,
      "chave": [
       "prends",
       "prenez",
@@ -1467,7 +1470,7 @@
      "q": "Peça para ir ao supermercado.",
      "frase": "Excusez-moi, vous cherchez quelque chose ?",
      "modelo": "Oui, pour aller au supermarché, s'il vous plaît ?",
-     "min": 6,
+     "min": 4,
      "chave": [
       "supermarché",
       "aller",
@@ -1505,7 +1508,7 @@
      "q": "Repita a explicação com suas palavras.",
      "frase": "Pouvez-vous répéter les indications pour aller à la gare ?",
      "modelo": "Je vais tout droit, puis je tourne à gauche et la gare est en face.",
-     "min": 10,
+     "min": 7,
      "chave": [
       "tout droit",
       "tourne",
@@ -1624,7 +1627,10 @@
       "cinéma."
      ],
      "resp": "Samedi soir, nous sommes allés au cinéma.",
-     "exp": "Aller usa être e o particípio concorda com nous : allés."
+     "exp": "Aller usa être e o particípio concorda com nous : allés.",
+     "alt": [
+      "Nous sommes allés au cinéma samedi soir."
+     ]
     },
     {
      "t": "speak",
@@ -1632,7 +1638,7 @@
      "q": "Conte uma coisa que você fez no fim de semana.",
      "frase": "Qu'avez-vous fait le week-end dernier ?",
      "modelo": "Samedi, j'ai regardé un film et dimanche je suis allé chez ma grand-mère.",
-     "min": 9,
+     "min": 6,
      "chave": [
       "j'ai",
       "je suis",
@@ -1674,7 +1680,7 @@
      "q": "Conte duas coisas que fez ontem.",
      "frase": "Qu'est-ce que vous avez fait hier ?",
      "modelo": "Hier, je suis allé à l'école, puis j'ai fait mes devoirs.",
-     "min": 10,
+     "min": 5,
      "chave": [
       "hier",
       "j'ai",
@@ -1797,7 +1803,10 @@
       "dimanches."
      ],
      "resp": "Nous allions chez ma grand-mère tous les dimanches.",
-     "exp": "Nous + -ions : allions."
+     "exp": "Nous + -ions : allions.",
+     "alt": [
+      "Tous les dimanches, nous allions chez ma grand-mère."
+     ]
     },
     {
      "t": "speak",
@@ -1805,7 +1814,7 @@
      "q": "Diga onde morava quando era pequeno.",
      "frase": "Où habitiez-vous quand vous étiez petit ?",
      "modelo": "Quand j'étais petit, j'habitais dans une petite maison à Fortaleza.",
-     "min": 8,
+     "min": 5,
      "chave": [
       "habitais",
       "étais",
@@ -1845,7 +1854,7 @@
      "q": "Conte o que fazia aos fins de semana.",
      "frase": "Que faisiez-vous le week-end quand vous étiez enfant ?",
      "modelo": "Le week-end, je jouais avec mes cousins et nous mangions chez ma grand-mère.",
-     "min": 11,
+     "min": 6,
      "chave": [
       "jouais",
       "mangions",
@@ -1902,7 +1911,7 @@
     }
    ],
    "material": {
-    "tarefa": "Partie 2 – Monologue suivi : Parlez de vos prochaines vacances. Où allez-vous aller ? Avec qui ? Qu'allez-vous faire ?",
+    "tarefa": "Partie 2 – Monologue suivi : Parlez de vos prochaines vacances. Où allez-vous partir ? Avec qui ? Qu'allez-vous faire ?",
     "segundos": 80,
     "frases_uteis": [
      "Cet été, je vais …",
@@ -1966,15 +1975,18 @@
       "train."
      ],
      "resp": "La semaine prochaine, nous allons prendre le train.",
-     "exp": "Nous allons + infinitivo."
+     "exp": "Nous allons + infinitivo.",
+     "alt": [
+      "Nous allons prendre le train la semaine prochaine."
+     ]
     },
     {
      "t": "speak",
      "modo": "responder",
      "q": "Fale de dois planos para as férias.",
-     "frase": "Que allez-vous faire pendant les vacances ?",
+     "frase": "Qu'allez-vous faire pendant les vacances ?",
      "modelo": "Pendant les vacances, je vais aller à la plage et je vais voir mes amis.",
-     "min": 9,
+     "min": 7,
      "chave": [
       "vais",
       "allons",
@@ -2014,7 +2026,7 @@
      "q": "Diga para onde vai e com quem.",
      "frase": "Où allez-vous partir en vacances cette année ? Avec qui ?",
      "modelo": "Cette année, je vais partir en vacances à Gramado avec ma famille.",
-     "min": 10,
+     "min": 6,
      "chave": [
       "vais",
       "partir",
@@ -2143,7 +2155,7 @@
      "q": "Faça uma reserva por telefone.",
      "frase": "Bonjour, je peux vous aider ?",
      "modelo": "Oui, je voudrais réserver une chambre pour deux nuits, s'il vous plaît.",
-     "min": 9,
+     "min": 6,
      "chave": [
       "voudrais",
       "réserver",
@@ -2183,7 +2195,7 @@
      "q": "Explique o problema e peça ajuda.",
      "frase": "Il y a un problème dans votre chambre. Que dites-vous ?",
      "modelo": "Excusez-moi, la télévision ne marche pas. Pourriez-vous m'aider, s'il vous plaît ?",
-     "min": 11,
+     "min": 5,
      "chave": [
       "problème",
       "marche",
@@ -2305,7 +2317,10 @@
       "heures."
      ],
      "resp": "On se retrouve devant le cinéma à sept heures.",
-     "exp": "Combinar lugar e horário."
+     "exp": "Combinar lugar e horário.",
+     "alt": [
+      "À sept heures, on se retrouve devant le cinéma."
+     ]
     },
     {
      "t": "speak",
@@ -2313,7 +2328,7 @@
      "q": "Aceite o convite e proponha o horário.",
      "frase": "Salut ! Tu es libre samedi ? Ça te dirait d'aller au cinéma ?",
      "modelo": "Oui, avec plaisir ! On se retrouve à sept heures devant le cinéma ?",
-     "min": 9,
+     "min": 6,
      "chave": [
       "plaisir",
       "idée",
@@ -2352,7 +2367,7 @@
      "q": "Responda e combine outro dia.",
      "frase": "Samedi, c'est impossible pour moi. Vous préférez dimanche ?",
      "modelo": "D'accord, dimanche, c'est parfait. On se retrouve à quatre heures ?",
-     "min": 10,
+     "min": 5,
      "chave": [
       "dimanche",
       "d'accord",
@@ -2439,7 +2454,7 @@
      "q": "PARTE 1 : responda as 3 perguntas.",
      "frase": "Comment vous appelez-vous ? Quel âge avez-vous ? Où habitez-vous ?",
      "modelo": "Je m'appelle Marina, j'ai dix-sept ans et j'habite à Belo Horizonte.",
-     "min": 9,
+     "min": 5,
      "chave": [
       "appelle",
       "ans",
@@ -2482,7 +2497,10 @@
       "plage."
      ],
      "resp": "Cet été, je vais voyager à la plage.",
-     "exp": "Futur proche : aller + infinitif."
+     "exp": "Futur proche : aller + infinitif.",
+     "alt": [
+      "Je vais voyager à la plage cet été."
+     ]
     },
     {
      "t": "speak",
@@ -2490,7 +2508,7 @@
      "q": "PARTE 2 : fale por cerca de um minuto.",
      "frase": "Parlez de votre dernier week-end ou de vos vacances préférées.",
      "modelo": "Le week-end dernier, je suis allé chez ma grand-mère. Nous avons mangé ensemble et j'ai regardé un film. C'était très bien.",
-     "min": 20,
+     "min": 10,
      "chave": [
       "week-end",
       "vacances",
@@ -2532,7 +2550,7 @@
      "q": "PARTE 3 : reserve uma mesa para seis pessoas.",
      "frase": "Bonjour, restaurant Le Soleil, je vous écoute.",
      "modelo": "Bonjour, je voudrais réserver une table pour six personnes samedi soir, s'il vous plaît.",
-     "min": 11,
+     "min": 7,
      "chave": [
       "voudrais",
       "réserver",
@@ -2571,7 +2589,7 @@
      "q": "Responda e agradeça.",
      "frase": "C'est pour quelle occasion ?",
      "modelo": "C'est pour un anniversaire. Pourriez-vous nous donner une table près de la fenêtre ? Merci beaucoup.",
-     "min": 12,
+     "min": 7,
      "chave": [
       "anniversaire",
       "fête",

@@ -247,7 +247,7 @@
      "modo": "repetir",
      "q": "Leia a frase formal em voz alta.",
      "frase": "Pourriez-vous me répondre avant vendredi, s'il vous plaît ?",
-     "exp": "Em « pourriez-vous », faça a ligação suave entre os dois verbos e pronuncie o « vous » como « vu »."
+     "exp": "Pourriez-vous : pu-ri-É-vu. O « vous » soa vu (como o 'vu' do português, e não o u francês). Termine com a voz subindo, é uma pergunta."
     },
     {
      "t": "mc",
@@ -272,7 +272,10 @@
       "demain"
      ],
      "resp": "Est-ce que tu peux m'aider demain ?",
-     "exp": "Em registro informal: Est-ce que + tu + verbo."
+     "exp": "Em registro informal: Est-ce que + tu + verbo.",
+     "alt": [
+      "Demain, est-ce que tu peux m'aider ?"
+     ]
     },
     {
      "t": "gap",
@@ -288,7 +291,7 @@
      "q": "Peça o endereço ao amigo, com tu.",
      "frase": "Vous voulez l'adresse de votre ami Marc. Que lui demandez-vous ?",
      "modelo": "Peux-tu me donner ton adresse, s'il te plaît ?",
-     "min": 5,
+     "min": 4,
      "chave": [
       "peux",
       "adresse",
@@ -409,7 +412,7 @@
     },
     {
      "t": "mc",
-     "q": "« Salut Léo ! Je fais une fête chez moi. Tu viens ? » Qu'est-ce qui manque dans ce convite ?",
+     "q": "« Salut Léo ! Je fais une fête chez moi. Tu viens ? » Qu'est-ce qui manque dans cette invitation ?",
      "op": [
       "La date et l'heure",
       "Le prénom",
@@ -435,7 +438,9 @@
      "t": "gap",
      "q": "Réponds-moi aussi ___ que possible !",
      "resp": [
-      "vite"
+      "vite",
+      "tôt",
+      "rapidement"
      ],
      "exp": "Aussi vite que possible = o mais rápido possível."
     },
@@ -445,7 +450,7 @@
      "q": "Convide o amigo para o sábado à noite.",
      "frase": "Un ami vous demande : Qu'est-ce que tu fais samedi soir ? Invitez-le.",
      "modelo": "Samedi soir, je fais une fête chez moi. Tu veux venir ?",
-     "min": 6,
+     "min": 5,
      "chave": [
       "fête",
       "invite",
@@ -473,7 +478,8 @@
      "q": "Pour mon anniversaire, je vais ___ une fête.",
      "resp": [
       "organiser",
-      "faire"
+      "faire",
+      "préparer"
      ],
      "exp": "Aller + infinitivo expressa o futuro próximo: je vais organiser.",
      "dica": "ORGANISER"
@@ -608,7 +614,7 @@
      "q": "Recuse o convite, explique e proponha outro dia.",
      "frase": "Un ami vous invite au cinéma samedi, mais vous travaillez. Que répondez-vous ?",
      "modelo": "Merci pour l'invitation, mais malheureusement je travaille samedi. On peut y aller dimanche ?",
-     "min": 8,
+     "min": 6,
      "chave": [
       "malheureusement",
       "désolé",
@@ -771,7 +777,7 @@
      "q": "Peça desculpas por ter chegado atrasado.",
      "frase": "Vous êtes arrivé en retard à un rendez-vous avec une amie. Que lui dites-vous ?",
      "modelo": "Excuse-moi d'être en retard. Il y avait beaucoup de circulation.",
-     "min": 6,
+     "min": 5,
      "chave": [
       "excuse",
       "désolé",
@@ -797,7 +803,8 @@
      "t": "gap",
      "q": "Merci ___ ton invitation : c'était une très belle soirée !",
      "resp": [
-      "pour"
+      "pour",
+      "de"
      ],
      "exp": "Merci pour + nome."
     }
@@ -1042,7 +1049,8 @@
      "t": "gap",
      "q": "Samedi dernier, nous ___ un film au cinéma.",
      "resp": [
-      "avons vu"
+      "avons vu",
+      "avons regardé"
      ],
      "exp": "Voir → vu; com nous: nous avons vu.",
      "dica": "VOIR"
@@ -1243,7 +1251,10 @@
       "samedi"
      ],
      "resp": "Elles sont allées au cinéma samedi.",
-     "exp": "Elles (feminino plural) → allées, com -es."
+     "exp": "Elles (feminino plural) → allées, com -es.",
+     "alt": [
+      "Samedi, elles sont allées au cinéma."
+     ]
     },
     {
      "t": "gap",
@@ -1409,7 +1420,10 @@
       "jardin"
      ],
      "resp": "Quand j'étais petite, je jouais dans le jardin.",
-     "exp": "Quand + imparfait de être + imparfait do hábito."
+     "exp": "Quand + imparfait de être + imparfait do hábito.",
+     "alt": [
+      "Je jouais dans le jardin quand j'étais petite."
+     ]
     },
     {
      "t": "gap",
@@ -1720,8 +1734,8 @@
      "op": [
       "D'abord",
       "Enfin",
-      "Ensuite",
-      "Puis"
+      "Au début",
+      "Pour commencer"
      ],
      "r": 1,
      "exp": "Enfin marca o último momento."
@@ -1737,7 +1751,10 @@
       "marché"
      ],
      "resp": "Ensuite, nous sommes allés au marché.",
-     "exp": "Ensuite abre a frase e vem com vírgula."
+     "exp": "Ensuite abre a frase e vem com vírgula.",
+     "alt": [
+      "Nous sommes allés au marché ensuite."
+     ]
     },
     {
      "t": "gap",
@@ -1753,7 +1770,7 @@
      "q": "Conte sua manhã com d'abord, puis e enfin.",
      "frase": "Racontez votre matinée en trois étapes.",
      "modelo": "D'abord, je me suis levé. Puis j'ai pris mon petit-déjeuner. Enfin, je suis parti au travail.",
-     "min": 10,
+     "min": 8,
      "chave": [
       "d'abord",
       "puis",
@@ -1869,7 +1886,7 @@
      "modo": "repetir",
      "q": "Leia o pedido em voz alta.",
      "frase": "Je voudrais de la salade, du fromage et de l'eau, s'il vous plaît.",
-     "exp": "« Fromage » tem o som ô; « eau » também soa « ô »."
+     "exp": "« Eau » soa ô. Em « fromage » o primeiro o é aberto (fro-MAJ) e o -ge final soa j."
     },
     {
      "t": "mc",
@@ -2062,7 +2079,10 @@
       "sœur"
      ],
      "resp": "L'été dernier, je suis parti en vacances avec ma sœur.",
-     "exp": "Marcador de tempo + je suis parti (être) + com quem."
+     "exp": "Marcador de tempo + je suis parti (être) + com quem.",
+     "alt": [
+      "Je suis parti en vacances avec ma sœur l'été dernier."
+     ]
     },
     {
      "t": "gap",
@@ -2079,7 +2099,7 @@
      "q": "Conte em duas frases um passeio de que você gostou.",
      "frase": "Parlez d'un voyage ou d'une sortie que vous avez aimé : où, quand, avec qui ?",
      "modelo": "L'année dernière, je suis allé à la plage avec mes amis. C'était super !",
-     "min": 8,
+     "min": 6,
      "chave": [
       "dernier",
       "dernière",
@@ -2233,8 +2253,7 @@
      "t": "gap",
      "q": "Elle a mangé beaucoup ___ gâteaux.",
      "resp": [
-      "de",
-      "d'"
+      "de"
      ],
      "exp": "Beaucoup de + nome, sem artigo (beaucoup de gâteaux)."
     },
@@ -2244,7 +2263,7 @@
      "q": "Explique por que você se atrasou.",
      "frase": "Dites en une phrase pourquoi vous êtes en retard, avec le passé composé.",
      "modelo": "Je suis arrivé en retard parce que j'ai manqué le bus.",
-     "min": 6,
+     "min": 5,
      "chave": [
       "suis",
       "ai",
