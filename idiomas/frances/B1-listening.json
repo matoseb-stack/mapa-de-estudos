@@ -88,8 +88,12 @@
       "t": "Pas cette semaine, le terrain est fermé. On joue dimanche prochain, à dix heures."
      },
      {
+      "p": "A",
+      "t": "Génial. Et si tu as faim avant, il y a une boulangerie en face de la bibliothèque."
+     },
+     {
       "p": "B",
-      "t": "Ok. Alors à samedi, dix-neuf heures !"
+      "t": "Merci, mais je mangerai chez ta grand-mère avec les autres. Ok. Alors à samedi, dix-neuf heures !"
      }
     ]
    },
@@ -259,7 +263,7 @@
      },
      {
       "p": "A",
-      "t": "N'oubliez pas d'apporter votre carte vitale et les résultats de votre prise de sang. Attention : le cabinet sera fermé vendredi après-midi. Bonne journée, madame, et à lundi !"
+      "t": "N'oubliez pas d'apporter votre carte vitale et les résultats de votre prise de sang. Attention : le cabinet sera fermé vendredi après-midi. Le docteur Perrin s'excuse pour ce changement : il prendra un peu plus de temps pour vous, vingt-cinq minutes au lieu de vingt. Pour toute question, le secrétariat est ouvert de huit heures à midi, du lundi au jeudi. Nous sommes désolés pour la gêne. Bonne journée, madame, et à lundi !"
      }
     ]
    },
@@ -447,7 +451,7 @@
      },
      {
       "p": "A",
-      "t": "Parfait. À tout à l'heure, peut-être !"
+      "t": "Parfait. À tout à l'heure, peut-être ! Ça fait longtemps qu'on s'est pas vus, ça serait sympa. J'ai réservé une grande table au fond."
      }
     ]
    },
@@ -1007,6 +1011,14 @@
      },
      {
       "p": "A",
+      "t": "Et le temps ? Il a fait beau ?"
+     },
+     {
+      "p": "B",
+      "t": "Il faisait très chaud, trente-deux degrés tous les jours, alors on mangeait toujours dehors, au bord de l'eau."
+     },
+     {
+      "p": "A",
       "t": "Génial. Et tu as mangé des pasteis de nata ?"
      },
      {
@@ -1204,7 +1216,11 @@
      },
      {
       "p": "A",
-      "t": "Zéro six, soixante-dix-huit, quatre-vingt-onze, quarante-cinq, douze. C'est noté. À bientôt !"
+      "t": "Zéro six, soixante-dix-huit, quatre-vingt-onze, quarante-cinq, douze. C'est noté. Vous recevrez un courriel de confirmation dans l'heure. Pensez à apporter des chaussons et une bouteille d'eau."
+     },
+     {
+      "p": "B",
+      "t": "Merci beaucoup, au revoir !"
      }
     ]
    },
@@ -1393,6 +1409,14 @@
      {
       "p": "B",
       "t": "Le tram, c'est cinquante euros par mois avec l'abonnement. Avant, je pensais payer plus cher, mais l'entreprise en rembourse la moitié."
+     },
+     {
+      "p": "A",
+      "t": "Et le vélo, tu le gares où ?"
+     },
+     {
+      "p": "B",
+      "t": "Dans le garage de l'entreprise : c'est gratuit et c'est surveillé."
      },
      {
       "p": "A",
@@ -2767,7 +2791,7 @@
       "Rien, c'est gratuit"
      ],
      "r": 1,
-     "exp": "Chaque habitant paie vingt euros par an. Vingt (20) x douze (12) x deux (2): cuidado."
+     "exp": "Chaque habitant paie vingt euros par an. Cuidado com vingt (20), douze (12) e deux (2) na fala rápida."
     },
     {
      "t": "mc",
@@ -2808,7 +2832,7 @@
       "trois",
       "3"
      ],
-     "exp": "Vous coordonnez trois jardins partagés: a apresentadora diz. Quatre é só uma esperança futura (não neste áudio).",
+     "exp": "Vous coordonnez trois jardins partagés: a apresentadora diz. Cuidado: o número de hortas é três, não quatro.",
      "ouvir": "Vous coordonnez trois jardins partagés dans le quartier Saint-Michel."
     },
     {
@@ -2860,7 +2884,7 @@
       "six",
       "6"
      ],
-     "exp": "Un café coûte six euros: surpresa com o custo de vida. Six (6) x seize (16) x soixante (60).",
+     "exp": "Un café coûte six euros: surpresa com o custo de vida. Não confunda six (6), seize (16) e soixante (60).",
      "ouvir": "Un café coûte six euros."
     }
    ]

@@ -1,0 +1,2453 @@
+{
+ "nivel": "B1",
+ "skill": "writing",
+ "exame": "DELF B1",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Ouvrir et fermer un courrier : ami ou inconnu ?",
+   "objetivo": "Escolher a saudação e a despedida certas conforme o destinatário (amigo ou pessoa desconhecida).",
+   "foco": "Registre : formules d'ouverture et de clôture; tu / vous",
+   "explicacao": [
+    "No DELF B1 o primeiro critério é a adequação sociolinguística: tu ou vous, saudação e despedida coerentes com o destinatário.",
+    "Para um amigo: Salut Théo, / Cher Théo, ... À bientôt, / Bises, / Amitiés, / Je t'embrasse. Use tu o texto todo.",
+    "Para um desconhecido (jornal, prefeitura, diretor): Madame, Monsieur, ... Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées. Use vous o texto todo.",
+    "Nunca misture os dois registros na mesma carta. Em português 'Atenciosamente' serve para tudo; em francês não."
+   ],
+   "vocab": [
+    {
+     "en": "Salut / Cher ami",
+     "pt": "Oi / Querido amigo"
+    },
+    {
+     "en": "À bientôt",
+     "pt": "Até breve"
+    },
+    {
+     "en": "Je t'embrasse",
+     "pt": "Um beijo (para amigos)"
+    },
+    {
+     "en": "Madame, Monsieur,",
+     "pt": "Prezados senhores (carta formal)"
+    },
+    {
+     "en": "Je vous prie d'agréer…",
+     "pt": "Receba, por favor… (fecho formal)"
+    },
+    {
+     "en": "J'ai hâte de te voir",
+     "pt": "Mal posso esperar para te ver"
+    },
+    {
+     "en": "répondre si tard",
+     "pt": "responder tão tarde"
+    }
+   ],
+   "material": {
+    "tarefa": "Votre ami Théo vous invite à son anniversaire samedi prochain. Vous lui répondez : vous acceptez, vous proposez d'apporter quelque chose et vous demandez comment venir chez lui. (80 à 110 mots)",
+    "genero": "lettre à un ami",
+    "min": 80,
+    "max": 110,
+    "modelo": "Salut Théo,\n\nMerci pour ton message, il m'a fait très plaisir ! Je suis désolé de répondre si tard : j'ai eu beaucoup de travail ces derniers jours.\n\nTu me demandes si je veux venir à ton anniversaire samedi prochain. Bien sûr, j'y serai avec plaisir ! Je peux apporter un gâteau au chocolat, si tu veux. Est-ce que tu as besoin d'autre chose ?\n\nDis-moi à quelle heure la fête commence et comment je peux venir chez toi, car je ne connais pas bien ton quartier.\n\nJ'ai hâte de te voir !\n\nÀ bientôt,\nMarina",
+    "checklist": [
+     "Usei saudação e despedida de amigo (Salut… / À bientôt) e tutoiei o texto todo?",
+     "Respondi aos três pontos: aceitar, propor algo, perguntar como chegar?",
+     "Conferi acentos e concordâncias (je suis désolé / désolée)?",
+     "Contei as palavras: entre 90 e 120?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle formule finale convient à un message à un ami proche ?",
+     "op": [
+      "Veuillez agréer, Monsieur, l'expression de mes salutations distinguées.",
+      "À bientôt, grosses bises !",
+      "Cordialement vôtre, le directeur.",
+      "Je vous prie de croire à mes sentiments respectueux."
+     ],
+     "r": 1,
+     "exp": "Entre amigos: À bientôt, Bises, Je t'embrasse. As outras são fórmulas formais."
+    },
+    {
+     "t": "gap",
+     "q": "Merci pour ton message, il m'a fait très ___ !",
+     "resp": [
+      "plaisir"
+     ],
+     "exp": "Faire plaisir = dar prazer, alegrar. Expressão muito comum para agradecer um e-mail."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta a abertura da resposta.",
+     "frase": "Salut Théo, merci pour ton message, il m'a fait très plaisir !",
+     "exp": "Em 'plaisir' o r é gutural e o 'ai' soa como 'é'. Em 'message' o 'e' final não é pronunciado."
+    },
+    {
+     "t": "mc",
+     "q": "Vous écrivez au directeur d'une école que vous ne connaissez pas. Quelle ouverture choisissez-vous ?",
+     "op": [
+      "Salut Monsieur,",
+      "Madame, Monsieur,",
+      "Coucou,",
+      "Cher ami,"
+     ],
+     "r": 1,
+     "exp": "Sem saber o nome do destinatário, use Madame, Monsieur,. Salut e Coucou são só para amigos."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "suis",
+      "désolé",
+      "de",
+      "répondre",
+      "si",
+      "tard,",
+      "j'ai",
+      "eu",
+      "beaucoup",
+      "de",
+      "travail."
+     ],
+     "resp": "Je suis désolé de répondre si tard, j'ai eu beaucoup de travail.",
+     "exp": "Être désolé de + infinitif. Depois da vírgula vem o motivo, no passé composé (j'ai eu)."
+    },
+    {
+     "t": "gap",
+     "q": "J'ai hâte ___ te voir !",
+     "resp": [
+      "de"
+     ],
+     "exp": "Avoir hâte de + infinitif = mal poder esperar para. Em português não há preposição equivalente: cuidado com o 'de'."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Seu amigo convida você para o aniversário dele. Responda em duas frases: aceite e proponha trazer algo.",
+     "frase": "Théo vous écrit : « Tu viens à mon anniversaire samedi ? »",
+     "modelo": "Oui, bien sûr, je viens avec plaisir ! Je peux apporter un gâteau.",
+     "min": 8,
+     "chave": [
+      "viens",
+      "plaisir",
+      "apporter",
+      "gâteau",
+      "volontiers",
+      "oui"
+     ],
+     "exp": "Use tu/je e verbos no presente: je viens, je peux apporter. Não precisa de frase longa."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle formule finale est correcte dans une lettre à un journal ?",
+     "op": [
+      "Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.",
+      "Je te prie d'agréer, Madame, Monsieur, mes salutations distinguées.",
+      "Bisous, Madame, Monsieur.",
+      "Je vous prie d'agréer, cher ami, mes salutations."
+     ],
+     "r": 0,
+     "exp": "A 2ª mistura tu e vous; a 3ª e a 4ª misturam registros. A fórmula completa e coerente é a 1ª."
+    },
+    {
+     "t": "gap",
+     "q": "Je vous prie d'___, Madame, Monsieur, l'expression de mes salutations distinguées.",
+     "resp": [
+      "agréer",
+      "agreer"
+     ],
+     "exp": "Agréer = aceitar, receber (verbo do 2º grupo). Veuillez agréer… é a variante com veuillez."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Donner son opinion : indicatif ou subjonctif ?",
+   "objetivo": "Expressar uma opinião com o modo verbal correto: je pense que + indicativo, je ne pense pas que + subjuntivo.",
+   "foco": "Expressions d'opinion; je pense que + indicatif / je ne pense pas que + subjonctif",
+   "explicacao": [
+    "Opinião afirmativa: je pense que, je crois que, il me semble que, à mon avis, selon moi + indicativo: Je pense que c'est utile.",
+    "Opinião negativa ou dúvida: je ne pense pas que, je ne crois pas que, je doute que + subjuntivo: Je ne pense pas que ce soit utile.",
+    "Subjuntivos que você precisa saber de cor: être → soit, avoir → ait, faire → fasse, aller → aille, pouvoir → puisse, savoir → sache.",
+    "À mon avis e selon moi não pedem que: À mon avis, c'est utile. Não escreva 'selon moi que'."
+   ],
+   "vocab": [
+    {
+     "en": "à mon avis",
+     "pt": "na minha opinião"
+    },
+    {
+     "en": "selon moi",
+     "pt": "segundo eu / para mim"
+    },
+    {
+     "en": "il me semble que",
+     "pt": "parece-me que"
+    },
+    {
+     "en": "je doute que",
+     "pt": "duvido que"
+    },
+    {
+     "en": "être d'accord",
+     "pt": "concordar"
+    },
+    {
+     "en": "interdire",
+     "pt": "proibir"
+    },
+    {
+     "en": "le portable",
+     "pt": "o celular"
+    }
+   ],
+   "material": {
+    "tarefa": "Sur un forum, on discute de la question : « Faut-il interdire le téléphone portable au collège ? » Vous donnez votre opinion en quelques lignes. (90 à 120 mots)",
+    "genero": "contribution à un forum",
+    "min": 90,
+    "max": 120,
+    "modelo": "Bonjour à tous,\n\nÀ mon avis, il ne faut pas interdire complètement le téléphone portable au collège. Je pense que les élèves peuvent s'en servir pour chercher une information ou prévenir leurs parents. Pourtant, je ne pense pas qu'il soit utile de l'utiliser pendant les cours, car cela empêche de se concentrer.\n\nSelon moi, la meilleure solution est d'autoriser le portable seulement à la récréation. Ainsi, les élèves restent en contact avec leur famille, mais ils écoutent le professeur en classe. Il me semble aussi que les professeurs devraient expliquer comment bien utiliser son téléphone.\n\nEt vous, qu'en pensez-vous ?",
+    "checklist": [
+     "Dei minha opinião com expressões variadas (à mon avis, selon moi, je pense que)?",
+     "Usei o subjuntivo depois de je ne pense pas que?",
+     "Justifiquei a opinião com pelo menos uma razão?",
+     "Contei as palavras: entre 100 e 130?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je ne pense pas que ce soit une bonne idée.",
+      "Je ne pense pas que c'est une bonne idée.",
+      "Je pense que ce soit une bonne idée.",
+      "Je ne pense pas que ce sera une bonne idée."
+     ],
+     "r": 0,
+     "exp": "Je ne pense pas que + subjuntivo (soit). No dia a dia se ouve o indicativo, mas na prova use o subjuntivo. Je pense que + indicativo (c'est)."
+    },
+    {
+     "t": "gap",
+     "q": "Je ne pense pas que les devoirs ___ utiles.",
+     "resp": [
+      "soient"
+     ],
+     "exp": "Ne pas penser que + subjuntivo. Être no subjuntivo: que ils soient.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "À mon avis, il ne faut pas interdire le téléphone portable au collège.",
+     "exp": "'Avis' termina em i (o s não soa). 'Portable' tem o 'o' fechado e o 'a' final de 'able' fraco."
+    },
+    {
+     "t": "mc",
+     "q": "Je pense que les transports gratuits ___ une bonne solution.",
+     "op": [
+      "soient",
+      "sont",
+      "être",
+      "étaient"
+     ],
+     "r": 1,
+     "exp": "Opinião afirmativa (je pense que) pede indicativo: sont. O subjuntivo só aparece na negação ou na dúvida."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Selon",
+      "moi,",
+      "la",
+      "lecture",
+      "est",
+      "plus",
+      "utile",
+      "que",
+      "la",
+      "télévision."
+     ],
+     "resp": "Selon moi, la lecture est plus utile que la télévision.",
+     "exp": "Selon moi + indicativo. Comparação: plus + adjetivo + que. Selon moi não leva 'que'."
+    },
+    {
+     "t": "gap",
+     "q": "Je ne crois pas qu'il ___ raison.",
+     "resp": [
+      "ait"
+     ],
+     "exp": "Avoir raison = ter razão. Depois de ne pas croire que vem o subjuntivo: qu'il ait.",
+     "dica": "AVOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê sua opinião em duas frases: o home office é uma boa ideia?",
+     "frase": "Le télétravail : est-ce une bonne idée selon vous ?",
+     "modelo": "À mon avis, c'est une bonne idée, car on gagne du temps. Je ne pense pas que ce soit parfait, mais c'est pratique.",
+     "min": 12,
+     "chave": [
+      "avis",
+      "pense",
+      "selon",
+      "télétravail",
+      "temps",
+      "car",
+      "parce"
+     ],
+     "exp": "Use uma expressão de opinião e uma justificativa com car ou parce que. Se usar je ne pense pas que, o verbo vai no subjuntivo."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase exprime un doute et demande donc le subjonctif ?",
+     "op": [
+      "Il est évident que c'est utile.",
+      "Je suis certain que c'est utile.",
+      "Je ne suis pas sûr que ce soit utile.",
+      "Je sais que c'est utile."
+     ],
+     "r": 2,
+     "exp": "Dúvida ou negação: subjuntivo (ce soit). Certeza (évident, certain, savoir): indicativo."
+    },
+    {
+     "t": "gap",
+     "q": "Je doute que tout le monde ___ d'accord.",
+     "resp": [
+      "soit"
+     ],
+     "exp": "Douter que + subjuntivo. Être d'accord = concordar (sem artigo, ao contrário de 'estar de acordo').",
+     "dica": "ÊTRE"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Organiser ses idées : d'abord, ensuite, enfin",
+   "objetivo": "Encadear os argumentos com conectores de ordem e de adição para que o texto fique claro.",
+   "foco": "Connecteurs d'organisation : d'abord, ensuite, de plus, enfin, en conclusion",
+   "explicacao": [
+    "Um bom texto tem três blocos: introdução, 2 ou 3 argumentos, conclusão. Cada argumento começa com um conector que mostra a ordem.",
+    "Ordem: d'abord / premièrement → ensuite / puis / deuxièmement → enfin / pour finir. Adição: de plus, en outre, par ailleurs, en plus.",
+    "Dois lados de um mesmo tema: d'une part… d'autre part…",
+    "Conclusão: en conclusion, pour conclure, en résumé. Não use 'finalement' para concluir um argumento: ele quer dizer 'no fim das contas'."
+   ],
+   "vocab": [
+    {
+     "en": "d'abord",
+     "pt": "primeiro, antes de tudo"
+    },
+    {
+     "en": "ensuite",
+     "pt": "em seguida"
+    },
+    {
+     "en": "de plus",
+     "pt": "além disso"
+    },
+    {
+     "en": "en outre",
+     "pt": "além do mais"
+    },
+    {
+     "en": "enfin",
+     "pt": "por fim"
+    },
+    {
+     "en": "d'une part… d'autre part",
+     "pt": "por um lado… por outro"
+    },
+    {
+     "en": "en conclusion",
+     "pt": "em conclusão"
+    }
+   ],
+   "material": {
+    "tarefa": "Pour le journal de votre lycée, vous écrivez un petit article : « Pourquoi faut-il apprendre une langue étrangère ? » Organisez vos idées avec des connecteurs. (100 à 130 mots)",
+    "genero": "article",
+    "min": 100,
+    "max": 130,
+    "modelo": "Pourquoi apprendre une langue étrangère ?\n\nD'abord, parler une autre langue permet de voyager plus facilement. On peut demander son chemin, commander au restaurant et discuter avec les habitants, ce qui rend le voyage beaucoup plus riche.\n\nEnsuite, c'est un avantage pour le travail. De nombreuses entreprises cherchent des employés qui parlent anglais, espagnol ou français. De plus, les personnes bilingues gagnent souvent un meilleur salaire.\n\nEnfin, apprendre une langue aide à mieux comprendre les autres cultures. On découvre des films, des livres et des chansons qu'on ne connaissait pas.\n\nEn conclusion, je pense que tout le monde devrait apprendre au moins une langue étrangère.",
+    "checklist": [
+     "Tenho introdução, 2 ou 3 argumentos e conclusão?",
+     "Cada argumento começa com um conector de ordem (d'abord, ensuite, enfin)?",
+     "Usei de plus ou en outre para somar ideias?",
+     "Contei as palavras: entre 110 e 140?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Dans quel ordre logique place-t-on ces connecteurs ?",
+     "op": [
+      "En conclusion – D'abord – Ensuite – Enfin",
+      "D'abord – Ensuite – Enfin – En conclusion",
+      "Enfin – D'abord – En conclusion – Ensuite",
+      "Ensuite – En conclusion – D'abord – Enfin"
+     ],
+     "r": 1,
+     "exp": "Primeiro d'abord, depois ensuite, por fim enfin e, no último parágrafo, en conclusion."
+    },
+    {
+     "t": "gap",
+     "q": "D'abord, je vais présenter l'idée. ___, je donnerai un exemple.",
+     "resp": [
+      "ensuite",
+      "puis",
+      "après",
+      "deuxièmement"
+     ],
+     "exp": "Ensuite / puis marcam o segundo passo. Nunca repita d'abord duas vezes."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "D'abord, parler une autre langue permet de voyager plus facilement.",
+     "exp": "Em 'parler' o r final não se pronuncia (par-lê). 'Permet' soa 'perrmê'."
+    },
+    {
+     "t": "mc",
+     "q": "Le sport est bon pour la santé. ___, il aide à se faire des amis.",
+     "op": [
+      "De plus",
+      "Cependant",
+      "En revanche",
+      "Pourtant"
+     ],
+     "r": 0,
+     "exp": "De plus soma uma ideia. Cependant, en revanche e pourtant indicam oposição."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Enfin,",
+      "apprendre",
+      "une",
+      "langue",
+      "aide",
+      "à",
+      "comprendre",
+      "d'autres",
+      "cultures."
+     ],
+     "resp": "Enfin, apprendre une langue aide à comprendre d'autres cultures.",
+     "exp": "Aider à + infinitif: apprendre une langue aide à comprendre. Enfin abre o último argumento."
+    },
+    {
+     "t": "gap",
+     "q": "D'une part, c'est utile ; d'___ part, c'est agréable.",
+     "resp": [
+      "autre"
+     ],
+     "exp": "D'une part… d'autre part… apresenta os dois lados. Atenção: 'd'autre part' (sem s)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê duas razões para aprender francês usando d'abord e ensuite.",
+     "frase": "Pourquoi apprenez-vous le français ?",
+     "modelo": "D'abord, je veux voyager en France. Ensuite, j'espère trouver un meilleur travail.",
+     "min": 10,
+     "chave": [
+      "abord",
+      "ensuite",
+      "enfin",
+      "français",
+      "voyager",
+      "travail",
+      "parce"
+     ],
+     "exp": "Duas frases curtas, uma com d'abord e outra com ensuite. Pronuncie o t de 'ensuite' (ã-suit)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase termine correctement un article ?",
+     "op": [
+      "En conclusion, je pense que tout le monde devrait apprendre une langue.",
+      "Finalement d'abord, je pense qu'il faut apprendre une langue.",
+      "Ensuite, enfin, voilà mon article.",
+      "D'abord, je termine mon texte."
+     ],
+     "r": 0,
+     "exp": "En conclusion fecha o texto. D'abord e ensuite pertencem ao desenvolvimento."
+    },
+    {
+     "t": "gap",
+     "q": "Le sport est bon pour la santé. ___ outre, il aide à se faire des amis.",
+     "resp": [
+      "en"
+     ],
+     "exp": "En outre = além do mais (conector formal). Dica: en outre, en plus, en effet usam sempre a preposição en."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Argumenter avec des exemples",
+   "objetivo": "Sustentar cada ideia com uma causa ou um exemplo concreto (par exemple, en effet, car, grâce à).",
+   "foco": "Exemple et cause : par exemple, en effet, car, parce que, puisque, grâce à, à cause de",
+   "explicacao": [
+    "Uma opinião sem exemplo vale pouco. Depois de cada argumento, dê um fato ou uma experiência pessoal: Par exemple, ma cousine est partie à Montréal et elle parle très bien l'anglais.",
+    "En effet explica a frase anterior: Le sport est utile : en effet, il réduit le stress.",
+    "Causa: car (após vírgula), parce que, puisque (causa já conhecida). Com substantivo: à cause de (negativo) e grâce à (positivo).",
+    "Cuidado: parce que + frase, à cause de + substantivo. Não diga 'à cause qu'il pleut'."
+   ],
+   "vocab": [
+    {
+     "en": "par exemple",
+     "pt": "por exemplo"
+    },
+    {
+     "en": "en effet",
+     "pt": "com efeito, de fato"
+    },
+    {
+     "en": "car",
+     "pt": "pois"
+    },
+    {
+     "en": "puisque",
+     "pt": "já que"
+    },
+    {
+     "en": "grâce à",
+     "pt": "graças a"
+    },
+    {
+     "en": "à cause de",
+     "pt": "por causa de"
+    },
+    {
+     "en": "une bourse",
+     "pt": "uma bolsa de estudos"
+    }
+   ],
+   "material": {
+    "tarefa": "Votre ami Hugo hésite à partir étudier à l'étranger. Vous lui écrivez pour lui donner votre opinion et la justifier avec des exemples. (100 à 130 mots)",
+    "genero": "lettre à un ami",
+    "min": 100,
+    "max": 130,
+    "modelo": "Salut Hugo,\n\nJ'ai bien reçu ton message. Tu hésites à partir étudier à l'étranger, et je pense que tu devrais le faire.\n\nD'abord, tu progresseras beaucoup en langue. Par exemple, ma cousine est partie à Montréal l'année dernière, et elle parle maintenant très bien l'anglais. Ensuite, tu rencontreras des gens du monde entier. En effet, dans les résidences universitaires, on se fait vite des amis de plusieurs pays.\n\nBien sûr, c'est un peu cher et tu seras loin de ta famille. Mais tu pourras téléphoner souvent, et il existe des bourses pour t'aider.\n\nAlors, n'hésite plus ! Dis-moi ce que tu décides.\n\nÀ bientôt,\nClara",
+    "checklist": [
+     "Cada argumento tem um exemplo concreto (par exemple, en effet)?",
+     "Usei car / parce que / grâce à corretamente?",
+     "Dei minha opinião logo no início?",
+     "Contei as palavras: entre 110 e 140?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase contient un vrai exemple (et pas seulement une affirmation) ?",
+     "op": [
+      "Le sport est très bon.",
+      "Par exemple, mon frère court trois fois par semaine et il dort mieux.",
+      "Tout le monde fait du sport.",
+      "C'est évident, donc c'est vrai."
+     ],
+     "r": 1,
+     "exp": "Um exemplo traz fato concreto (quem, quando, o quê). As outras são afirmações vagas."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut manger moins de sucre : ___ effet, il augmente le risque de diabète.",
+     "resp": [
+      "en"
+     ],
+     "exp": "En effet introduz uma explicação da frase anterior. Não confunda com 'en fait' (na verdade)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Par exemple, ma cousine est partie à Montréal et elle parle très bien l'anglais.",
+     "exp": "'Cousine' tem z e 'montréal' tem o 'on' nasal. O 'ai' de 'anglais' soa como 'é'."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase exprime une cause NÉGATIVE correctement ?",
+     "op": [
+      "Il est en retard à cause du trafic.",
+      "Il est en retard grâce au trafic.",
+      "Il est en retard puisque du trafic.",
+      "Il est en retard parce que du trafic."
+     ],
+     "r": 0,
+     "exp": "À cause de + substantivo: causa negativa. Grâce à: causa positiva. Parce que e puisque pedem uma frase com verbo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "pense",
+      "qu'il",
+      "faut",
+      "voyager,",
+      "car",
+      "cela",
+      "ouvre",
+      "l'esprit."
+     ],
+     "resp": "Je pense qu'il faut voyager, car cela ouvre l'esprit.",
+     "exp": "Car vem depois da vírgula e explica a opinião. Je pense que + indicativo (faut)."
+    },
+    {
+     "t": "gap",
+     "q": "Elle a réussi ___ à son travail régulier.",
+     "resp": [
+      "grâce",
+      "grace"
+     ],
+     "exp": "Grâce à + substantivo = causa positiva (graças a). À cause de seria negativo.",
+     "dica": "cause positive"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê sua opinião e um exemplo pessoal: é útil fazer esporte?",
+     "frase": "Pensez-vous qu'il est utile de faire du sport ?",
+     "modelo": "Oui, je pense que c'est très utile. Par exemple, mon frère fait du sport et il est en meilleure santé.",
+     "min": 12,
+     "chave": [
+      "sport",
+      "exemple",
+      "pense",
+      "santé",
+      "oui",
+      "car",
+      "parce"
+     ],
+     "exp": "Responda com opinião + par exemple. Em 'santé' o é é fechado."
+    },
+    {
+     "t": "mc",
+     "q": "Complétez : « ___ tu as le temps, viens m'aider. »",
+     "op": [
+      "Bien que",
+      "Puisque",
+      "Pour que",
+      "Avant que"
+     ],
+     "r": 1,
+     "exp": "Puisque = já que, causa conhecida de todos (+ indicativo). Bien que, pour que e avant que pedem subjuntivo e têm outros sentidos."
+    },
+    {
+     "t": "gap",
+     "q": "Elle n'a pas pu venir ___ d'un accident.",
+     "resp": [
+      "à cause",
+      "a cause"
+     ],
+     "exp": "À cause de + substantivo (d'un accident). Não existe 'por causa que' em francês."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Opposer et nuancer : cependant, en revanche, bien que",
+   "objetivo": "Mostrar o outro lado de uma questão com conectores de oposição e concessão, usando o subjuntivo depois de bien que.",
+   "foco": "Opposition et concession : cependant, pourtant, en revanche, bien que + subjonctif, même si + indicatif",
+   "explicacao": [
+    "Para opor duas ideias: mais, cependant, pourtant, en revanche, par contre (menos formal), néanmoins.",
+    "Bien que e quoique pedem subjuntivo: Bien qu'il pleuve, nous sortons. Même si pede indicativo: Même s'il pleut, nous sortons.",
+    "Reconhecer o argumento do outro lado (certes… mais…) mostra maturidade e vale pontos em cohérence.",
+    "Em revanche = 'em compensação', e não 'ao contrário' de forma agressiva. Par contre é comum na fala, mas prefira en revanche na prova."
+   ],
+   "vocab": [
+    {
+     "en": "cependant",
+     "pt": "no entanto"
+    },
+    {
+     "en": "pourtant",
+     "pt": "e no entanto"
+    },
+    {
+     "en": "en revanche",
+     "pt": "em compensação"
+    },
+    {
+     "en": "bien que",
+     "pt": "embora"
+    },
+    {
+     "en": "même si",
+     "pt": "mesmo que (+ indicativo)"
+    },
+    {
+     "en": "certes… mais",
+     "pt": "é verdade que… mas"
+    },
+    {
+     "en": "néanmoins",
+     "pt": "contudo"
+    }
+   ],
+   "material": {
+    "tarefa": "Sur un forum, on discute : « Vacances à la mer ou à la montagne ? » Vous donnez votre préférence, vous comparez les deux possibilités avec des connecteurs d'opposition. (100 à 130 mots)",
+    "genero": "contribution à un forum",
+    "min": 100,
+    "max": 130,
+    "modelo": "Bonjour à tous,\n\nPour moi, les vacances à la mer sont plus agréables, même si elles coûtent souvent plus cher. On peut se baigner, se reposer sur la plage et manger du poisson frais. En revanche, la montagne demande plus d'efforts physiques.\n\nCependant, je comprends ceux qui préfèrent la montagne. Bien qu'il y ait moins de plages, on y trouve de l'air pur et des paysages magnifiques. De plus, les prix y sont souvent plus bas en été.\n\nPourtant, je choisirais toujours la mer, parce que j'adore l'eau. Les vacances sont faites pour se détendre, et je me détends mieux près des vagues.\n\nEt vous, quelle destination préférez-vous ?",
+    "checklist": [
+     "Usei pelo menos dois conectores de oposição (cependant, en revanche, pourtant)?",
+     "Usei bien que com subjuntivo e même si com indicativo?",
+     "Reconheci o argumento do outro lado antes de dar minha opinião?",
+     "Contei as palavras: entre 120 e 150?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Il adore la ville ; ___, sa sœur préfère la campagne.",
+     "op": [
+      "en revanche",
+      "par conséquent",
+      "de plus",
+      "d'abord"
+     ],
+     "r": 0,
+     "exp": "Duas pessoas com gostos opostos: en revanche. Par conséquent indica consequência; de plus soma."
+    },
+    {
+     "t": "gap",
+     "q": "Bien qu'il ___ froid, nous sortons.",
+     "resp": [
+      "fasse"
+     ],
+     "exp": "Bien que + subjuntivo. Faire → que je fasse, qu'il fasse. Il fait froid vira bien qu'il fasse froid.",
+     "dica": "FAIRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Même si c'est cher, j'aime voyager en train.",
+     "exp": "'Même' soa 'mém'; 'cher' começa com som de 'x' (ch = ʃ). 'Train' tem o 'in' nasal."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Bien qu'il pleuve, nous allons à la plage.",
+      "Bien qu'il pleut, nous allons à la plage.",
+      "Bien qu'il pleuvra, nous allons à la plage.",
+      "Bien que il pleuve, nous allons à la plage."
+     ],
+     "r": 0,
+     "exp": "Bien que + subjuntivo (pleuve). Na 4ª opção falta a elisão: bien qu'il."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Cependant,",
+      "je",
+      "comprends",
+      "ceux",
+      "qui",
+      "préfèrent",
+      "la",
+      "montagne."
+     ],
+     "resp": "Cependant, je comprends ceux qui préfèrent la montagne.",
+     "exp": "Cependant abre a concessão. Ceux qui = aqueles que (plural masculino)."
+    },
+    {
+     "t": "gap",
+     "q": "Il est fatigué ; ___, il continue de travailler.",
+     "resp": [
+      "pourtant",
+      "cependant",
+      "néanmoins",
+      "malgré tout"
+     ],
+     "exp": "Pourtant / cependant ligam duas frases que se opõem. Mais também seria possível, mas aqui há ponto e vírgula."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Prefere mar ou montanha? Dê uma vantagem e uma desvantagem.",
+     "frase": "Préférez-vous la mer ou la montagne ? Donnez un avantage et un inconvénient.",
+     "modelo": "Je préfère la mer. Elle est agréable, mais en revanche, elle est souvent chère.",
+     "min": 10,
+     "chave": [
+      "mer",
+      "montagne",
+      "revanche",
+      "cependant",
+      "mais",
+      "pourtant",
+      "préfère"
+     ],
+     "exp": "Use mais ou en revanche para opor a vantagem ao inconveniente."
+    },
+    {
+     "t": "mc",
+     "q": "Laquelle de ces phrases demande OBLIGATOIREMENT le subjonctif ?",
+     "op": [
+      "Bien qu'elle soit fatiguée, elle travaille.",
+      "Même si elle est fatiguée, elle travaille.",
+      "Elle est fatiguée, mais elle travaille.",
+      "Elle est fatiguée ; pourtant, elle travaille."
+     ],
+     "r": 0,
+     "exp": "Só bien que (e quoique) exige subjuntivo. Même si, mais e pourtant usam o indicativo."
+    },
+    {
+     "t": "gap",
+     "q": "Bien qu'il ne ___ pas venir, il a envoyé un message.",
+     "resp": [
+      "puisse"
+     ],
+     "exp": "Bien que + subjuntivo. Pouvoir → qu'il puisse (cuidado: não 'peut').",
+     "dica": "POUVOIR"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Conséquence et but : donc, par conséquent, pour que",
+   "objetivo": "Ligar causa, consequência e finalidade sem errar o modo verbal (pour que + subjuntivo).",
+   "foco": "Conséquence et but : donc, c'est pourquoi, par conséquent; pour / afin de + infinitif; pour que / afin que + subjonctif",
+   "explicacao": [
+    "Consequência: donc, alors, c'est pourquoi, par conséquent, ainsi. Il pleut beaucoup, donc nous restons à la maison.",
+    "Finalidade com o mesmo sujeito: pour / afin de + infinitivo. Je travaille pour réussir.",
+    "Finalidade com sujeitos diferentes: pour que / afin que + subjuntivo. Je t'écris pour que tu viennes à ma fête.",
+    "Erro de brasileiro: usar 'para que eu' em francês. Se o sujeito é o mesmo, use o infinitivo (pour réussir), não pour que je réussisse."
+   ],
+   "vocab": [
+    {
+     "en": "donc",
+     "pt": "portanto"
+    },
+    {
+     "en": "c'est pourquoi",
+     "pt": "é por isso que"
+    },
+    {
+     "en": "par conséquent",
+     "pt": "por consequência"
+    },
+    {
+     "en": "afin de",
+     "pt": "a fim de"
+    },
+    {
+     "en": "afin que",
+     "pt": "a fim de que"
+    },
+    {
+     "en": "trier les déchets",
+     "pt": "separar o lixo"
+    },
+    {
+     "en": "la poubelle",
+     "pt": "a lixeira"
+    }
+   ],
+   "material": {
+    "tarefa": "Pour le blog de votre lycée, vous écrivez un article sur le sujet : « Faut-il trier ses déchets ? » Donnez votre opinion en expliquant les conséquences et le but du tri. (110 à 140 mots)",
+    "genero": "article",
+    "min": 110,
+    "max": 140,
+    "modelo": "Faut-il trier ses déchets ?\n\nBeaucoup de gens pensent que le tri est inutile. Je ne suis pas d'accord. Chaque année, nous produisons des tonnes de déchets, donc il est important de réagir.\n\nD'abord, trier permet de recycler le verre, le papier et le plastique. Par conséquent, on utilise moins de matières premières et on protège la nature. De plus, certaines villes ont installé des poubelles de couleur pour que les habitants trient plus facilement.\n\nCependant, il faut que les mairies expliquent mieux les règles, afin que personne ne se trompe de poubelle.\n\nEn conclusion, trier est un petit geste, mais il a un grand effet : si tout le monde le fait, notre ville sera beaucoup plus propre.",
+    "checklist": [
+     "Usei pelo menos um conector de consequência (donc, par conséquent, c'est pourquoi)?",
+     "Usei pour que / afin que + subjuntivo só quando os sujeitos são diferentes?",
+     "Mantive introdução, desenvolvimento e conclusão?",
+     "Contei as palavras: entre 120 e 150?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase exprime une conséquence ?",
+     "op": [
+      "Il a beaucoup travaillé ; par conséquent, il a réussi.",
+      "Il a réussi bien qu'il ait peu travaillé.",
+      "Il a réussi pour qu'on le félicite.",
+      "Il a réussi même s'il est tombé malade."
+     ],
+     "r": 0,
+     "exp": "Par conséquent = por consequência. As outras expressam oposição (bien que, même si) ou finalidade (pour que)."
+    },
+    {
+     "t": "gap",
+     "q": "Il y a trop de bruit ; c'est ___ nous déménageons.",
+     "resp": [
+      "pourquoi"
+     ],
+     "exp": "C'est pourquoi = é por isso que. Escreva pourquoi em uma palavra só (pour + quoi)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Il pleut beaucoup, donc nous restons à la maison.",
+     "exp": "'Pleut' soa 'plê'. Em 'maison' o 'ai' soa como 'é' e o 'on' é nasal."
+    },
+    {
+     "t": "mc",
+     "q": "Je t'écris pour que tu ___ à ma fête.",
+     "op": [
+      "viens",
+      "viendras",
+      "viennes",
+      "venir"
+     ],
+     "r": 2,
+     "exp": "Pour que + subjuntivo: que tu viennes. Pour que nunca é seguido de indicativo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Les",
+      "prix",
+      "augmentent,",
+      "par",
+      "conséquent",
+      "les",
+      "gens",
+      "achètent",
+      "moins."
+     ],
+     "resp": "Les prix augmentent, par conséquent les gens achètent moins.",
+     "exp": "Par conséquent liga a consequência ao fato. Acheter moins = comprar menos."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut recycler afin que la planète ___ plus propre.",
+     "resp": [
+      "soit"
+     ],
+     "exp": "Afin que + subjuntivo. Être → que la planète soit.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "O que devemos fazer para proteger o meio ambiente? Responda em duas frases.",
+     "frase": "Que faut-il faire pour protéger l'environnement ?",
+     "modelo": "Il faut trier les déchets pour que la planète soit plus propre. Par conséquent, nous devons tous agir.",
+     "min": 10,
+     "chave": [
+      "trier",
+      "déchets",
+      "pour",
+      "afin",
+      "conséquent",
+      "environnement",
+      "faut",
+      "recycler"
+     ],
+     "exp": "Use il faut + infinitivo ou il faut que + subjuntivo e um conector de consequência."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est INCORRECTE ?",
+     "op": [
+      "Je travaille pour réussir.",
+      "Je travaille pour que je réussisse.",
+      "Je travaille pour que tu réussisses.",
+      "Je travaille afin de réussir."
+     ],
+     "r": 1,
+     "exp": "Mesmo sujeito (je… je): use pour + infinitivo. Pour que só com sujeitos diferentes."
+    },
+    {
+     "t": "gap",
+     "q": "Il a pris le train ___ arriver à l'heure.",
+     "resp": [
+      "pour",
+      "afin de"
+     ],
+     "exp": "Mesmo sujeito: pour / afin de + infinitivo. Cuidado com 'afin de' (não 'afin à')."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Donner un conseil et faire une suggestion : le conditionnel",
+   "objetivo": "Aconselhar e sugerir com educação usando o condicional (je ferais, tu pourrais, on devrait).",
+   "foco": "Conditionnel de politesse et de conseil; si + imparfait → conditionnel",
+   "explicacao": [
+    "O condicional suaviza uma ordem: Tu devrais te reposer. On pourrait réviser ensemble. À ta place, je ferais un planning.",
+    "Formação: radical do futuro + terminações do imparfait: je ferais, tu pourrais, il faudrait, ce serait.",
+    "Hipótese: si + imparfait → condicional. Si j'étais riche, j'achèterais une maison. Nunca coloque o condicional depois de si.",
+    "Convites e sugestões: Que dirais-tu de… ? / Et si on allait… ? / Pourquoi ne pas… ?"
+   ],
+   "vocab": [
+    {
+     "en": "à ta place",
+     "pt": "no seu lugar"
+    },
+    {
+     "en": "tu devrais",
+     "pt": "você deveria"
+    },
+    {
+     "en": "on pourrait",
+     "pt": "poderíamos"
+    },
+    {
+     "en": "Que dirais-tu de… ?",
+     "pt": "Que tal… ?"
+    },
+    {
+     "en": "réviser",
+     "pt": "revisar, estudar para a prova"
+    },
+    {
+     "en": "se reposer",
+     "pt": "descansar"
+    },
+    {
+     "en": "le planning",
+     "pt": "o cronograma"
+    }
+   ],
+   "material": {
+    "tarefa": "Votre ami Karim est très stressé avant ses examens. Vous lui écrivez pour le rassurer, lui donner trois conseils et lui proposer une activité ensemble. (90 à 120 mots)",
+    "genero": "lettre à un ami",
+    "min": 90,
+    "max": 120,
+    "modelo": "Salut Karim,\n\nMerci de m'avoir écrit. Je suis désolé d'apprendre que tu es très stressé avant tes examens.\n\nÀ ta place, je ferais un planning pour organiser mes révisions. Tu pourrais travailler deux heures le matin et deux heures l'après-midi, avec des pauses. Tu devrais aussi dormir davantage : on retient mieux quand on est reposé.\n\nSi tu veux, on pourrait réviser ensemble samedi à la bibliothèque. Ce serait plus agréable, et je pourrais t'expliquer les exercices de maths. Que dirais-tu de cette idée ?\n\nJe suis sûr que tu vas réussir, parce que tu es sérieux et que tu travailles beaucoup. Courage !\n\nAmitiés,\nLéa",
+    "checklist": [
+     "Usei o condicional nos conselhos (je ferais, tu pourrais, tu devrais)?",
+     "Fiz pelo menos uma sugestão com on pourrait ou que dirais-tu de?",
+     "Mantive o tutoiement e o tom de amigo?",
+     "Contei as palavras: entre 110 e 140?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est un conseil poli ?",
+     "op": [
+      "Tu devrais te reposer un peu.",
+      "Tu devras te reposer demain.",
+      "Tu dois reposer toi.",
+      "Tu te reposeras un peu."
+     ],
+     "r": 0,
+     "exp": "Devrais (condicional) suaviza o conselho. 'Devras' é futuro; a 3ª tem erro de pronome."
+    },
+    {
+     "t": "gap",
+     "q": "À ta place, je ___ un planning.",
+     "resp": [
+      "ferais"
+     ],
+     "exp": "Faire no condicional: je ferais (radical fer- + ais). Não confunda com je ferai (futuro).",
+     "dica": "FAIRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Si tu veux, on pourrait réviser ensemble samedi.",
+     "exp": "'Pourrait' termina em 'rê'. Em 'réviser' o s entre vogais soa como z."
+    },
+    {
+     "t": "mc",
+     "q": "Si j'avais plus de temps, je ___ du sport.",
+     "op": [
+      "ferais",
+      "ferai",
+      "aurais fait",
+      "fais"
+     ],
+     "r": 0,
+     "exp": "Si + imparfait → condicional presente: je ferais. Hipótese irreal no presente."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Que",
+      "dirais-tu",
+      "d'aller",
+      "au",
+      "cinéma",
+      "ce",
+      "soir ?"
+     ],
+     "resp": "Que dirais-tu d'aller au cinéma ce soir ?",
+     "exp": "Que dirais-tu de + infinitivo é uma sugestão muito comum. De + aller vira d'aller."
+    },
+    {
+     "t": "gap",
+     "q": "Si tu étais plus patient, tu ___ réussir.",
+     "resp": [
+      "pourrais"
+     ],
+     "exp": "Si + imparfait → condicional: tu pourrais. Não use o condicional depois de si.",
+     "dica": "POUVOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Seu amigo está estressado antes de uma prova. Dê dois conselhos em duas frases.",
+     "frase": "Votre ami est stressé avant un examen. Que lui conseillez-vous ?",
+     "modelo": "À ta place, je réviserais un peu chaque jour. Tu pourrais aussi faire du sport pour te détendre.",
+     "min": 12,
+     "chave": [
+      "place",
+      "pourrais",
+      "devrais",
+      "réviser",
+      "sport",
+      "dormir",
+      "pauses"
+     ],
+     "exp": "Use à ta place, tu pourrais ou tu devrais. Pronuncie o r do condicional (-rais) com suavidade."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Si j'étais riche, j'achèterais une maison.",
+      "Si je serais riche, j'achèterais une maison.",
+      "Si j'étais riche, j'achèterai une maison.",
+      "Si je suis riche, j'achèterais une maison."
+     ],
+     "r": 0,
+     "exp": "Erro clássico de brasileiros: 'se eu fosse' vira si j'étais, nunca si je serais."
+    },
+    {
+     "t": "gap",
+     "q": "Ce ___ une bonne idée de partir tôt.",
+     "resp": [
+      "serait"
+     ],
+     "exp": "Condicional de être: ce serait. Suavizar uma sugestão.",
+     "dica": "ÊTRE"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Il faut que… : le subjonctif dans les conseils",
+   "objetivo": "Dar orientações com il faut que / il est important que / il vaut mieux que + subjuntivo.",
+   "foco": "Subjonctif après il faut que, il est important que, il vaut mieux que, il est essentiel que",
+   "explicacao": [
+    "Depois de expressões de necessidade, vontade e sentimento usamos o subjuntivo: il faut que, il est important que, il vaut mieux que, il est essentiel que.",
+    "Il faut que tu fasses (faire), que tu ailles (aller), que nous soyons (être), que vous preniez (prendre), qu'elle sache (savoir).",
+    "Il faut + infinitivo vale para qualquer pessoa (Il faut partir). Il faut que + subjuntivo vale para alguém específico.",
+    "Il est probable / il est certain que pedem indicativo. Il est possible que pede subjuntivo."
+   ],
+   "vocab": [
+    {
+     "en": "il faut que",
+     "pt": "é preciso que"
+    },
+    {
+     "en": "il vaut mieux que",
+     "pt": "é melhor que"
+    },
+    {
+     "en": "il est essentiel que",
+     "pt": "é essencial que"
+    },
+    {
+     "en": "le passeport",
+     "pt": "o passaporte"
+    },
+    {
+     "en": "un logement",
+     "pt": "uma moradia"
+    },
+    {
+     "en": "emporter",
+     "pt": "levar consigo"
+    },
+    {
+     "en": "à l'avance",
+     "pt": "com antecedência"
+    }
+   ],
+   "material": {
+    "tarefa": "Votre ami Nico va passer un an au Canada. Vous lui écrivez pour lui dire ce qu'il est important de faire avant de partir. (100 à 130 mots)",
+    "genero": "lettre à un ami",
+    "min": 100,
+    "max": 130,
+    "modelo": "Salut Nico,\n\nJe suis très content que tu partes au Canada ! Tu me demandes quels conseils je peux te donner.\n\nD'abord, il faut que tu fasses ton passeport et ton visa le plus tôt possible, car cela prend du temps. Ensuite, il est important que tu choisisses un logement avant ton arrivée. Il vaut mieux que tu contactes une résidence étudiante.\n\nJe pense aussi qu'il est utile que tu apprennes quelques expressions locales, afin que les gens te comprennent. Enfin, il faut que tu emportes des vêtements chauds, parce qu'il fait très froid en hiver.\n\nBon voyage, et donne-moi vite de tes nouvelles !\n\nJe t'embrasse,\nMarc",
+    "checklist": [
+     "Usei il faut que / il est important que com o verbo no subjuntivo?",
+     "Dei pelo menos três conselhos práticos e organizados (d'abord, ensuite, enfin)?",
+     "Conferi as formas irregulares (fasse, aille, soit, sache)?",
+     "Contei as palavras: entre 120 e 150?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Il faut que tu fasses tes devoirs.",
+      "Il faut que tu fais tes devoirs.",
+      "Il faut que tu feras tes devoirs.",
+      "Il faut tu fasses tes devoirs."
+     ],
+     "r": 0,
+     "exp": "Il faut que + subjuntivo: que tu fasses. Não omita o que."
+    },
+    {
+     "t": "gap",
+     "q": "Il est important que nous ___ à l'heure.",
+     "resp": [
+      "arrivions"
+     ],
+     "exp": "Nous arrivions: no subjuntivo, nous e vous têm a mesma forma do imparfait.",
+     "dica": "ARRIVER"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Il faut que tu fasses ton passeport le plus tôt possible.",
+     "exp": "'Fasses' tem o 'a' como em 'fa' (não 'fe'). 'Tôt' soa 'tô' com o o fechado."
+    },
+    {
+     "t": "mc",
+     "q": "Après quelle expression n'utilise-t-on PAS le subjonctif ?",
+     "op": [
+      "Il est important que",
+      "Il vaut mieux que",
+      "Il est probable que",
+      "Il faut que"
+     ],
+     "r": 2,
+     "exp": "Il est probable que pede indicativo (probabilidade). Os outros expressam necessidade ou conselho."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "vaut",
+      "mieux",
+      "que",
+      "tu",
+      "partes",
+      "avant",
+      "huit",
+      "heures."
+     ],
+     "resp": "Il vaut mieux que tu partes avant huit heures.",
+     "exp": "Il vaut mieux que + subjuntivo. Il vaut mieux que = é melhor que. Não use 'il est mieux que'."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut que vous ___ votre billet à l'avance.",
+     "resp": [
+      "preniez"
+     ],
+     "exp": "Prendre no subjuntivo: que vous preniez, que nous prenions, mas que tu prennes.",
+     "dica": "PRENDRE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Seu amigo vai estudar fora. Diga o que ele deve fazer, em duas frases.",
+     "frase": "Votre ami part étudier à l'étranger. Que lui dites-vous de faire ?",
+     "modelo": "Il faut que tu apprennes la langue. Il est aussi important que tu trouves un logement.",
+     "min": 12,
+     "chave": [
+      "faut",
+      "important",
+      "apprennes",
+      "trouves",
+      "logement",
+      "passeport",
+      "vaut"
+     ],
+     "exp": "Use il faut que ou il est important que e o verbo no subjuntivo. Em 'apprennes' o n é duplo."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Il faut que j'aille à la poste.",
+      "Il faut que je vais à la poste.",
+      "Il faut que j'irai à la poste.",
+      "Il faut que j'allais à la poste."
+     ],
+     "r": 0,
+     "exp": "Aller no subjuntivo: que j'aille (e que nous allions). Nunca vais, irai ou allais depois de il faut que."
+    },
+    {
+     "t": "gap",
+     "q": "Il est essentiel qu'elle ___ la vérité.",
+     "resp": [
+      "sache"
+     ],
+     "exp": "Savoir no subjuntivo: que je sache, qu'elle sache. Não existe 'qu'elle sait' depois de il est essentiel que.",
+     "dica": "SAVOIR"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "La contribution à un forum",
+   "objetivo": "Escrever uma mensagem de fórum: cumprimento aos participantes, opinião, reação aos outros e pergunta final.",
+   "foco": "Forum : registre, accroche, réaction aux autres, question finale",
+   "explicacao": [
+    "Num fórum, o tom é cordial e direto, sem ser familiar demais: Bonjour à tous, / Salut à tous (se o fórum for jovem). Vouvoie o grupo (vous).",
+    "Estrutura útil: saudação → opinião clara → 2 argumentos com exemplo → reação a outro participante (Je ne suis pas tout à fait d'accord avec…) → pergunta final: Et vous, qu'en pensez-vous ?",
+    "Fórmulas de acordo e desacordo: Je suis d'accord avec vous. / Je ne suis pas convaincu par… / Je partage l'avis de…",
+    "Evite gírias, abreviações de SMS e frases telegráficas: o corretor avalia correção sociolinguística."
+   ],
+   "vocab": [
+    {
+     "en": "Bonjour à tous",
+     "pt": "Olá a todos"
+    },
+    {
+     "en": "donner son avis",
+     "pt": "dar sua opinião"
+    },
+    {
+     "en": "Qu'en pensez-vous ?",
+     "pt": "O que vocês acham?"
+    },
+    {
+     "en": "je partage l'avis de…",
+     "pt": "concordo com a opinião de…"
+    },
+    {
+     "en": "convaincu(e)",
+     "pt": "convencido(a)"
+    },
+    {
+     "en": "nuancer",
+     "pt": "relativizar, matizar"
+    },
+    {
+     "en": "les écrans",
+     "pt": "as telas"
+    }
+   ],
+   "material": {
+    "tarefa": "Sur un forum, on lit : « Les jeunes passent trop de temps devant les écrans. Qu'en pensez-vous ? » Vous participez à la discussion en donnant votre point de vue. (110 à 140 mots)",
+    "genero": "contribution à un forum",
+    "min": 110,
+    "max": 140,
+    "modelo": "Bonjour à tous,\n\nJe viens de lire la question du forum et je voudrais donner mon avis. Je pense que les jeunes passent effectivement trop de temps devant les écrans, mais il faut nuancer.\n\nD'un côté, les écrans permettent d'apprendre, de communiquer et de se divertir. Par exemple, beaucoup d'élèves regardent des vidéos pour comprendre une leçon difficile. De l'autre, un usage excessif fatigue les yeux et réduit le temps consacré au sport ou aux amis.\n\nC'est pourquoi je suggère de fixer des limites : une heure par jour pour les jeux, par exemple. Les parents devraient aussi donner l'exemple.\n\nJe suis curieux de savoir si vous êtes d'accord avec moi. Merci d'avance pour vos réponses !\n\nJulien",
+    "checklist": [
+     "Comecei com uma saudação ao grupo (Bonjour à tous)?",
+     "Dei uma opinião clara e pelo menos um argumento com exemplo?",
+     "Terminei com uma pergunta ou convite à discussão?",
+     "Contei as palavras: entre 120 e 150?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment commencer une contribution à un forum ?",
+     "op": [
+      "Bonjour à tous, je voudrais donner mon avis sur ce sujet.",
+      "Monsieur le Directeur, je vous écris au sujet de…",
+      "Salut mon chéri, quoi de neuf ?",
+      "Je vous prie d'agréer l'expression de mes salutations."
+     ],
+     "r": 0,
+     "exp": "Fórum = cumprimento ao grupo + intenção. As outras opções são de carta formal ou de conversa íntima."
+    },
+    {
+     "t": "gap",
+     "q": "Je ___ de lire votre message et je voudrais réagir.",
+     "resp": [
+      "viens"
+     ],
+     "exp": "Venir de + infinitivo = acabar de. Je viens de lire = acabei de ler."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Bonjour à tous, je voudrais donner mon avis sur ce sujet.",
+     "exp": "'Voudrais' termina em 'rê'. Em 'avis' o s final é mudo."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle réponse à un autre participant est la plus adaptée ?",
+     "op": [
+      "Je ne suis pas tout à fait d'accord avec Marie, car les écrans aident aussi à apprendre.",
+      "Marie a tort, point.",
+      "Madame Marie, je vous informe que…",
+      "Je déteste Marie."
+     ],
+     "r": 0,
+     "exp": "Discordar com educação, citando o argumento do outro e justificando. Agressividade e formalidade excessiva são inadequadas."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "suis",
+      "curieux",
+      "de",
+      "savoir",
+      "si",
+      "vous",
+      "êtes",
+      "d'accord."
+     ],
+     "resp": "Je suis curieux de savoir si vous êtes d'accord.",
+     "exp": "Savoir si + indicativo (pergunta indireta). Être curieux de + infinitivo."
+    },
+    {
+     "t": "gap",
+     "q": "Je suis d'accord ___ vous sur ce point.",
+     "resp": [
+      "avec"
+     ],
+     "exp": "Être d'accord avec quelqu'un. Em português se diz 'concordo com você'; em francês o verbo é être d'accord (não existe 'je concorde')."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Reaja como num fórum: as redes sociais fazem bem aos jovens? Duas frases.",
+     "frase": "Les réseaux sociaux sont-ils bons pour les jeunes ? Réagissez comme sur un forum.",
+     "modelo": "Bonjour à tous, je pense que les réseaux sociaux ont des avantages, mais ils prennent trop de temps. Qu'en pensez-vous ?",
+     "min": 14,
+     "chave": [
+      "réseaux",
+      "pense",
+      "avis",
+      "qu'en",
+      "temps",
+      "jeunes",
+      "bonjour"
+     ],
+     "exp": "Cumprimente, dê sua opinião e termine com uma pergunta. Em 'réseaux' o x final é mudo."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est trop familière pour un forum public ?",
+     "op": [
+      "Je pense qu'il faut limiter les écrans.",
+      "À mon avis, c'est utile.",
+      "T'as vu, c'est nul, ce truc, franchement !",
+      "Je ne suis pas convaincu par cet argument."
+     ],
+     "r": 2,
+     "exp": "Gírias e frases soltas (nul, truc, t'as vu) baixam a nota de registro. Prefira a linguagem corrente e correta."
+    },
+    {
+     "t": "gap",
+     "q": "Et vous, qu'___ pensez-vous ?",
+     "resp": [
+      "en"
+     ],
+     "exp": "Penser quelque chose de quelque chose: que pensez-vous de cela ? → qu'en pensez-vous ? O pronome en substitui de + coisa."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "La lettre formelle à un journal ou à une mairie",
+   "objetivo": "Escrever uma carta formal de opinião: fórmulas de abertura, motivo, argumentos e fecho com vous prie d'agréer.",
+   "foco": "Courrier formel : Madame, Monsieur / objet / formules de politesse; vouvoiement; conditionnel de politesse",
+   "explicacao": [
+    "Estrutura: Madame, Monsieur, → motivo (Je me permets de vous écrire au sujet de…) → opinião e argumentos → pedido educado → fórmula final.",
+    "Fórmula final completa: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées. Também: Veuillez agréer… ou Cordialement (menos formal).",
+    "Use vous e o condicional de polidez: Je vous serais reconnaissant de bien vouloir publier ma lettre.",
+    "Evite contrações e gírias: nada de 'c'est cool'. Au sujet de = a respeito de; à propos de também funciona."
+   ],
+   "vocab": [
+    {
+     "en": "Madame, Monsieur,",
+     "pt": "Prezados senhores,"
+    },
+    {
+     "en": "au sujet de",
+     "pt": "a respeito de"
+    },
+    {
+     "en": "je me permets de vous écrire",
+     "pt": "permito-me escrever-lhe"
+    },
+    {
+     "en": "je vous serais reconnaissant de…",
+     "pt": "ficaria grato se…"
+    },
+    {
+     "en": "bien vouloir",
+     "pt": "fazer a gentileza de"
+    },
+    {
+     "en": "la mairie",
+     "pt": "a prefeitura"
+    },
+    {
+     "en": "la bibliothèque",
+     "pt": "a biblioteca (não 'livraria')"
+    }
+   ],
+   "material": {
+    "tarefa": "Dans le journal de votre ville, vous lisez que la mairie veut fermer la bibliothèque municipale. Vous écrivez une lettre au journal pour donner votre opinion et proposer une solution. (120 à 150 mots)",
+    "genero": "lettre formelle",
+    "min": 120,
+    "max": 150,
+    "modelo": "Madame, Monsieur,\n\nJ'ai lu avec surprise dans votre édition du 12 mars que la mairie souhaite fermer la bibliothèque municipale. Je me permets de vous écrire pour exprimer mon désaccord.\n\nTout d'abord, la bibliothèque est un lieu essentiel pour les étudiants, qui y trouvent des livres et un endroit calme pour travailler. Ensuite, elle offre des activités gratuites aux enfants et aux personnes âgées, ce qui crée du lien entre les générations.\n\nCertes, l'entretien du bâtiment coûte cher. Néanmoins, il serait possible de réduire les dépenses sans supprimer ce service, par exemple en réduisant les horaires du week-end.\n\nJe vous serais reconnaissant de publier ma lettre afin que les habitants puissent réagir.\n\nJe vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.\n\nPierre Moreau",
+    "checklist": [
+     "Comecei com Madame, Monsieur, e usei vous o tempo todo?",
+     "Expliquei o motivo (au sujet de…) e dei pelo menos dois argumentos?",
+     "Propus uma solução com o condicional?",
+     "Terminei com a fórmula completa (Je vous prie d'agréer…) e assinei?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment terminer une lettre à un journal ?",
+     "op": [
+      "Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.",
+      "Bisous et à bientôt !",
+      "Cordialement vôtre, ton ami.",
+      "À plus, Madame, Monsieur."
+     ],
+     "r": 0,
+     "exp": "Carta formal pede a fórmula completa. As outras são informais ou misturam registros."
+    },
+    {
+     "t": "gap",
+     "q": "Je me ___ de vous écrire pour exprimer mon désaccord.",
+     "resp": [
+      "permets"
+     ],
+     "exp": "Se permettre de + infinitivo (je me permets). Fórmula de cortesia para começar uma carta formal.",
+     "dica": "PERMETTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Je me permets de vous écrire pour exprimer mon désaccord.",
+     "exp": "'Permets' soa 'perrmé'. Em 'exprimer' o x soa 'ks' (eks-pri-mê)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle formule d'ouverture convient quand on ne connaît pas le nom du destinataire ?",
+     "op": [
+      "Madame, Monsieur,",
+      "Cher Monsieur Dupont,",
+      "Salut,",
+      "Chers amis,"
+     ],
+     "r": 0,
+     "exp": "Madame, Monsieur, é a abertura padrão para um destinatário desconhecido."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "vous",
+      "serais",
+      "reconnaissant",
+      "de",
+      "bien",
+      "vouloir",
+      "publier",
+      "ma",
+      "lettre."
+     ],
+     "resp": "Je vous serais reconnaissant de bien vouloir publier ma lettre.",
+     "exp": "Je vous serais reconnaissant de… = ficaria grato se… (condicional de polidez). Bien vouloir deixa o pedido ainda mais educado."
+    },
+    {
+     "t": "gap",
+     "q": "Je vous écris ___ sujet de la fermeture de la bibliothèque.",
+     "resp": [
+      "au"
+     ],
+     "exp": "Au sujet de = a respeito de. Cuidado: 'sobre o assunto' em francês é au sujet de, não 'sur le sujet de'."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Apresente-se educadamente ao escrever para o jornal. Duas frases.",
+     "frase": "Pourquoi écrivez-vous au journal ? Présentez-vous poliment.",
+     "modelo": "Madame, Monsieur, je me permets de vous écrire au sujet de la bibliothèque, car je ne suis pas d'accord avec la mairie.",
+     "min": 14,
+     "chave": [
+      "permets",
+      "sujet",
+      "écrire",
+      "bibliothèque",
+      "madame",
+      "désaccord",
+      "mairie"
+     ],
+     "exp": "Comece com Madame, Monsieur e use vous. 'Mairie' soa 'mé-ri'."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte dans une lettre formelle ?",
+     "op": [
+      "Je vous prie de bien vouloir m'excuser pour ce retard.",
+      "Excuse-moi pour le retard, ok ?",
+      "Je t'écris pour te dire que je suis fâché.",
+      "Dis-moi vite ce que vous pensez."
+     ],
+     "r": 0,
+     "exp": "Je vous prie de bien vouloir + infinitivo é linguagem formal. As outras são familiares ou misturam tu e vous."
+    },
+    {
+     "t": "gap",
+     "q": "Je vous ___ reconnaissant de répondre rapidement.",
+     "resp": [
+      "serais"
+     ],
+     "exp": "Condicional de polidez: je vous serais reconnaissant de + infinitivo.",
+     "dica": "ÊTRE"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Genre, accords et passé composé : les pièges des Brésiliens",
+   "objetivo": "Evitar erros de gênero dos substantivos, de concordância do particípio e de escolha entre être e avoir.",
+   "foco": "Genre des noms; passé composé avec être / avoir; accord du participe passé",
+   "explicacao": [
+    "Gênero diferente do português: le problème, le lait, le sang, la dent, la fleur, la jambe, la mer (m.): le problème, le lait, la dent, l'avion (m.), la souris (f.).",
+    "Passé composé com être: verbos de movimento (aller, venir, partir, arriver, rester, tomber, naître, mourir…) e todos os pronominais. O particípio concorda com o sujeito: Elle est allée. Elles se sont levées.",
+    "Com avoir, o particípio concorda com o COD só se ele vier ANTES do verbo: Les photos que j'ai prises. Mas: J'ai pris des photos.",
+    "Verbos como monter, descendre, sortir, rentrer usam avoir quando têm complemento direto: Elle a monté les valises. / Elle est montée."
+   ],
+   "vocab": [
+    {
+     "en": "un problème (m.)",
+     "pt": "um problema"
+    },
+    {
+     "en": "une dent (f.)",
+     "pt": "um dente"
+    },
+    {
+     "en": "du lait (m.)",
+     "pt": "leite"
+    },
+    {
+     "en": "se perdre",
+     "pt": "perder-se"
+    },
+    {
+     "en": "la carte",
+     "pt": "o mapa"
+    },
+    {
+     "en": "délicieux",
+     "pt": "delicioso"
+    },
+    {
+     "en": "partager",
+     "pt": "compartilhar"
+    }
+   ],
+   "material": {
+    "tarefa": "Un ami français vous demande si vous préférez voyager en groupe ou seul(e). Vous lui répondez en donnant votre opinion et en racontant un voyage récent. (120 à 150 mots)",
+    "genero": "lettre à un ami",
+    "min": 120,
+    "max": 150,
+    "modelo": "Salut Camille,\n\nMerci pour ta lettre. Tu me demandes si je préfère voyager en groupe ou seule. Pour moi, un voyage en groupe est plus agréable.\n\nL'été dernier, mes amies et moi sommes parties en Italie. Nous sommes arrivées à Rome le matin et nous avons visité la ville ensemble. Les rues étaient magnifiques, et les glaces que nous avons mangées étaient délicieuses ! Ce qui m'a plu, c'est qu'aucune de nous ne s'est perdue : nous avions toujours quelqu'un pour lire la carte.\n\nEn revanche, voyager seule donne plus de liberté, mais je trouve cela un peu triste. Quand on voit un beau paysage, on a envie de le partager avec quelqu'un. Et puis, on se fait de nouveaux souvenirs que l'on raconte ensuite pendant des années.\n\nVoilà mon avis ! Et toi, que préfères-tu ?\n\nBises,\nAlice",
+    "checklist": [
+     "Conferi o gênero dos substantivos duvidosos (le problème, la dent, le lait)?",
+     "Usei être com verbos de movimento e pronominais e fiz a concordância do particípio?",
+     "Usei imparfait para descrever e passé composé para as ações?",
+     "Contei as palavras: entre 130 e 160?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel groupe de mots est correct ?",
+     "op": [
+      "un problème, une voiture, du lait",
+      "une problème, une voiture, du lait",
+      "un problème, un voiture, de la lait",
+      "un problème, une voiture, de la lait"
+     ],
+     "r": 0,
+     "exp": "Problème e lait são masculinos, voiture é feminino. Du lait (partitivo masculino). Pegadinhas: le problème (m., como todos os -ème), la dent (f.), le lait (m.)."
+    },
+    {
+     "t": "gap",
+     "q": "Marie est ___ à Paris hier.",
+     "resp": [
+      "arrivée"
+     ],
+     "exp": "Arriver usa être e o particípio concorda com o sujeito feminino: arrivée.",
+     "dica": "ARRIVER"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Mes amies et moi sommes parties en Italie l'été dernier.",
+     "exp": "Em 'parties' o s final de 'sommes' liga com a vogal seguinte se houver. 'Dernier' soa 'dêr-niê'."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Les photos que j'ai prises sont belles.",
+      "Les photos que j'ai pris sont belles.",
+      "Les photos que j'ai prise sont belles.",
+      "Les photos que je suis prises sont belles."
+     ],
+     "r": 0,
+     "exp": "COD (les photos, feminino plural) vem antes do verbo: prises. Prendre usa avoir, nunca être."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elle",
+      "s'est",
+      "levée",
+      "tôt",
+      "et",
+      "elle",
+      "est",
+      "partie."
+     ],
+     "resp": "Elle s'est levée tôt et elle est partie.",
+     "exp": "Pronominal (se lever) usa être e concorda com o sujeito: levée. Partir também usa être: partie."
+    },
+    {
+     "t": "gap",
+     "q": "Elle ___ monté les valises dans la chambre.",
+     "resp": [
+      "a"
+     ],
+     "exp": "Monter com complemento direto (les valises) usa avoir. Sem complemento: Elle est montée au premier étage.",
+     "dica": "avoir / être"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conte em duas frases uma viagem que você fez com amigos.",
+     "frase": "Racontez en deux phrases un voyage que vous avez fait avec des amis.",
+     "modelo": "L'été dernier, je suis allé au Chili avec des amis. Nous avons visité plusieurs villes.",
+     "min": 12,
+     "chave": [
+      "voyage",
+      "suis",
+      "sommes",
+      "avons",
+      "amis",
+      "visité",
+      "parti",
+      "allé",
+      "allée"
+     ],
+     "exp": "Je suis allé(e) usa être; visiter usa avoir. Mulheres escrevem allée."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte pour une femme qui parle d'elle ?",
+     "op": [
+      "Je suis allée à la plage et je me suis baignée.",
+      "Je suis allé à la plage et je me suis baigné.",
+      "J'ai allée à la plage et je me suis baignée.",
+      "Je suis allée à la plage et je m'ai baignée."
+     ],
+     "r": 0,
+     "exp": "Mulher: allée, baignée (concordam com o sujeito feminino). Verbo pronominal sempre com être: je me suis (não 'je m'ai')."
+    },
+    {
+     "t": "gap",
+     "q": "Les fleurs qu'il m'a ___ sentent bon.",
+     "resp": [
+      "offertes"
+     ],
+     "exp": "O COD (les fleurs) vem antes: o particípio de offrir concorda com ele (fem. plural): offertes.",
+     "dica": "OFFRIR"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Faux amis et prépositions : actuellement, assister, sensible…",
+   "objetivo": "Reconhecer falsos cognatos frequentes e escolher a preposição correta depois de alguns verbos.",
+   "foco": "Faux amis (actuellement, attendre, assister à, sensible, éventuellement, prétendre); prépositions avec les verbes",
+   "explicacao": [
+    "Falsos cognatos: actuellement = atualmente/no momento (não 'na verdade': en fait). Attendre = esperar (não 'atender'). Assister à = estar presente. Sensible = sensível. Éventuellement = se for o caso, talvez.",
+    "Prétendre = afirmar, alegar (Il prétend qu'il est malade); para 'pretender fazer' use compter faire ou avoir l'intention de.",
+    "Preposições que mudam do português: rêver de, penser à, s'intéresser à, avoir besoin de, assister à, être d'accord avec, au sujet de.",
+    "Resultado: o corretor desconta léxico e morfossintaxe. Treine as palavras que mais enganam brasileiros."
+   ],
+   "vocab": [
+    {
+     "en": "actuellement",
+     "pt": "atualmente"
+    },
+    {
+     "en": "attendre",
+     "pt": "esperar"
+    },
+    {
+     "en": "assister à",
+     "pt": "estar presente em"
+    },
+    {
+     "en": "sensible",
+     "pt": "sensível"
+    },
+    {
+     "en": "éventuellement",
+     "pt": "eventualmente, se for o caso"
+    },
+    {
+     "en": "prétendre",
+     "pt": "alegar, afirmar"
+    },
+    {
+     "en": "compter + inf.",
+     "pt": "pretender, ter a intenção de"
+    }
+   ],
+   "material": {
+    "tarefa": "Un ami français vous demande ce que vous pensez des cours en ligne. Vous lui répondez en comparant ce type de cours avec les cours en classe. (120 à 150 mots)",
+    "genero": "lettre à un ami",
+    "min": 120,
+    "max": 150,
+    "modelo": "Salut Julien,\n\nTu me demandes ce que je pense des cours en ligne. Actuellement, je suis des cours de français sur Internet et je trouve cette méthode très pratique.\n\nD'abord, on peut apprendre à son rythme. Ensuite, on n'a pas besoin d'attendre le bus ni de perdre du temps dans les transports. Cependant, je suis sensible au manque de contact : quand on assiste à un cours en classe, on pose plus facilement des questions au professeur.\n\nÉventuellement, on pourrait combiner les deux méthodes. Par exemple, je suivrais les cours en ligne la semaine et j'assisterais à un atelier le samedi. Je pense que ce serait la meilleure solution pour les personnes qui travaillent et qui ont peu de temps libre.\n\nJe compte sur toi pour me donner ton avis !\n\nÀ bientôt,\nPaula",
+    "checklist": [
+     "Usei actuellement no sentido de 'no momento' e não de 'na verdade'?",
+     "Conferi attendre, assister à, sensible, éventuellement e prétendre?",
+     "Verifiquei as preposições dos verbos (rêver de, s'intéresser à…)?",
+     "Contei as palavras: entre 130 e 160?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "« Actuellement » en français signifie…",
+     "op": [
+      "en ce moment",
+      "en réalité",
+      "finalement",
+      "autrefois"
+     ],
+     "r": 0,
+     "exp": "Actuellement = no momento, hoje em dia. 'Na verdade' é en fait ou en réalité (falso cognato clássico)."
+    },
+    {
+     "t": "gap",
+     "q": "Je suis fatigué : j'___ le bus depuis vingt minutes.",
+     "resp": [
+      "attends"
+     ],
+     "exp": "Attendre = esperar (não 'atender'). Atender o telefone = répondre au téléphone.",
+     "dica": "ATTENDRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Actuellement, je suis des cours de français sur Internet.",
+     "exp": "'Actuellement' soa 'ak-tü-el-mã'. O 'u' é arredondado, como o ü alemão. 'Internet' leva o 'ê' no fim."
+    },
+    {
+     "t": "mc",
+     "q": "Comment dit-on « assistir a uma aula » ?",
+     "op": [
+      "assister à un cours",
+      "regarder un cours",
+      "aider un cours",
+      "suivre à un cours"
+     ],
+     "r": 0,
+     "exp": "Assister à = estar presente. 'Regarder un cours' significa olhar a aula, e assistir a um filme é regarder un film."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "pense",
+      "assister",
+      "à",
+      "un",
+      "cours",
+      "en",
+      "ligne",
+      "ce",
+      "soir."
+     ],
+     "resp": "Je pense assister à un cours en ligne ce soir.",
+     "exp": "Assister à + substantivo. Penser + infinitivo = ter a intenção de (sentido próximo de compter)."
+    },
+    {
+     "t": "gap",
+     "q": "Il rêve ___ devenir médecin.",
+     "resp": [
+      "de"
+     ],
+     "exp": "Rêver de + infinitivo (sonhar em ser). Em português 'sonha em', mas em francês usa-se de."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Como você estuda francês no momento? Use actuellement.",
+     "frase": "Comment étudiez-vous le français actuellement ? Utilisez « actuellement » dans votre réponse.",
+     "modelo": "Actuellement, j'étudie le français sur Internet et je regarde des films.",
+     "min": 10,
+     "chave": [
+      "actuellement",
+      "étudie",
+      "apprends",
+      "internet",
+      "français",
+      "cours"
+     ],
+     "exp": "Coloque actuellement no começo da frase. Cuidado para não usá-lo no sentido de 'na verdade'."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase utilise « sensible » avec le bon sens ?",
+     "op": [
+      "Elle est très sensible, elle pleure facilement.",
+      "Il est sensible : il prend toujours de bonnes décisions.",
+      "C'est un homme sensible, il ne dit que des choses logiques.",
+      "Sois sensible, pense avant d'agir !"
+     ],
+     "r": 0,
+     "exp": "Sensible = sensível (emocionalmente). 'Sensato' é raisonnable ou sage."
+    },
+    {
+     "t": "gap",
+     "q": "Il ___ qu'il connaît le directeur, mais ce n'est pas vrai.",
+     "resp": [
+      "prétend",
+      "pretend"
+     ],
+     "exp": "Prétendre que = alegar que (sem garantia de verdade). Não significa 'pretender'.",
+     "dica": "PRÉTENDRE"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Introduction et conclusion efficaces",
+   "objetivo": "Abrir o texto apresentando o tema e a opinião e fechá-lo com um resumo e uma abertura.",
+   "foco": "Introduction (amener le sujet, poser la question, donner son opinion) et conclusion (résumer, ouvrir)",
+   "explicacao": [
+    "Introdução em 3 passos: apresentar o tema (De plus en plus d'étudiants travaillent) → fazer a pergunta (Est-ce une bonne idée ?) → dar a opinião (Personnellement, je pense que oui, à condition que…).",
+    "Conclusão em 2 passos: resumir com outras palavras (En conclusion, un emploi limité est positif) → abrir (Il faudrait que les écoles aident les étudiants).",
+    "Não repita a introdução palavra por palavra e não traga argumento novo na conclusão.",
+    "À condition que + subjuntivo (com a condição de que). Pronome: personnellement, pour ma part, quant à moi."
+   ],
+   "vocab": [
+    {
+     "en": "de plus en plus de",
+     "pt": "cada vez mais"
+    },
+    {
+     "en": "personnellement",
+     "pt": "pessoalmente"
+    },
+    {
+     "en": "pour ma part",
+     "pt": "da minha parte"
+    },
+    {
+     "en": "à condition que",
+     "pt": "com a condição de que (+ subjuntivo)"
+    },
+    {
+     "en": "en résumé",
+     "pt": "em resumo"
+    },
+    {
+     "en": "l'avenir",
+     "pt": "o futuro"
+    },
+    {
+     "en": "à temps partiel",
+     "pt": "em tempo parcial"
+    }
+   ],
+   "material": {
+    "tarefa": "Dans un essai, vous répondez à la question : « Faut-il que les étudiants aient un travail pendant leurs études ? » Soignez l'introduction et la conclusion. (140 à 170 mots)",
+    "genero": "essai",
+    "min": 140,
+    "max": 170,
+    "modelo": "De plus en plus d'étudiants travaillent pendant leurs études. Mais est-ce vraiment une bonne idée ? Personnellement, je pense que oui, à condition que ce travail reste limité.\n\nPremièrement, un petit emploi permet de gagner de l'argent. Cela évite de demander toujours de l'aide à ses parents et donne un sentiment de liberté. Par exemple, un ami à moi a payé son permis de conduire grâce à son travail dans un café.\n\nDeuxièmement, travailler apprend à être responsable. Un étudiant qui doit arriver à l'heure et servir des clients développe des qualités utiles pour sa future carrière.\n\nCependant, je ne pense pas qu'il soit raisonnable de travailler plus de dix heures par semaine, car les études risquent d'en souffrir.\n\nEn conclusion, un emploi à temps partiel est positif s'il est bien organisé. Il faudrait donc que les écoles aident les étudiants à trouver des postes adaptés à leur emploi du temps.",
+    "checklist": [
+     "A introdução apresenta o tema, faz a pergunta e dá minha opinião?",
+     "A conclusão resume sem repetir a introdução e não traz argumento novo?",
+     "Usei à condition que + subjuntivo ou outra nuance?",
+     "Contei as palavras: entre 140 e 170?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle introduction est la meilleure ?",
+     "op": [
+      "Aujourd'hui, on va parler du travail. Je vais dire ce que je pense.",
+      "De plus en plus d'étudiants travaillent. Est-ce une bonne idée ? Je pense que oui, à condition que ce travail reste limité.",
+      "Le travail, c'est bien. Voilà.",
+      "Bonjour, je m'appelle Paul et j'écris un texte."
+     ],
+     "r": 1,
+     "exp": "A boa introdução apresenta o tema, formula a pergunta e anuncia a opinião. As outras são vagas, frases soltas ou fora do tema."
+    },
+    {
+     "t": "gap",
+     "q": "En ___, un emploi à temps partiel est positif.",
+     "resp": [
+      "conclusion"
+     ],
+     "exp": "En conclusion abre o último parágrafo. Escreva conclusion com -sion, não -são."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "De plus en plus d'étudiants travaillent pendant leurs études.",
+     "exp": "Em 'étudiants' o t final é mudo e 'ud' soa como 'ü'. Em 'plus' o s final não soa antes de consoante."
+    },
+    {
+     "t": "mc",
+     "q": "Laquelle de ces conclusions est la plus efficace ?",
+     "op": [
+      "En conclusion, un petit emploi est positif s'il est bien organisé. Il faudrait que les écoles aident les étudiants.",
+      "Voilà, j'ai fini mon texte.",
+      "Je ne sais pas quoi dire de plus.",
+      "Donc, voilà, c'est tout ce que je pense, merci beaucoup de me lire."
+     ],
+     "r": 0,
+     "exp": "A boa conclusão resume a ideia e abre para o futuro. Não comente o ato de escrever."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Premièrement,",
+      "un",
+      "petit",
+      "emploi",
+      "permet",
+      "de",
+      "gagner",
+      "de",
+      "l'argent."
+     ],
+     "resp": "Premièrement, un petit emploi permet de gagner de l'argent.",
+     "exp": "Premièrement abre o primeiro argumento. Permettre de + infinitivo."
+    },
+    {
+     "t": "gap",
+     "q": "Je suis pour, à ___ que le travail reste limité.",
+     "resp": [
+      "condition"
+     ],
+     "exp": "À condition que + subjuntivo (que le travail reste).",
+     "dica": "CONDITION"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Apresente o tema e dê sua opinião em duas frases: é preciso aprender uma língua estrangeira na escola?",
+     "frase": "Présentez le sujet et donnez votre opinion en deux phrases : faut-il apprendre une langue étrangère à l'école ?",
+     "modelo": "De plus en plus de gens voyagent. Personnellement, je pense qu'il faut apprendre une langue étrangère dès l'école.",
+     "min": 14,
+     "chave": [
+      "personnellement",
+      "pense",
+      "langue",
+      "étrangère",
+      "école",
+      "avis",
+      "selon"
+     ],
+     "exp": "Frase 1: o tema. Frase 2: a opinião (personnellement, je pense que…)."
+    },
+    {
+     "t": "mc",
+     "q": "Dans une conclusion, qu'est-ce qu'il faut ÉVITER ?",
+     "op": [
+      "Un nouvel argument très long qui n'a pas été présenté avant.",
+      "Un rappel de votre opinion avec d'autres mots.",
+      "Une suggestion pour l'avenir.",
+      "Un connecteur comme « en conclusion »."
+     ],
+     "r": 0,
+     "exp": "Conclusão não é lugar para argumento novo: fica desproporcional. Resuma e abra."
+    },
+    {
+     "t": "gap",
+     "q": "Il ___ donc que les écoles aident les étudiants.",
+     "resp": [
+      "faudrait"
+     ],
+     "exp": "Il faudrait que + subjuntivo (aident). O condicional atenua a sugestão.",
+     "dica": "FALLOIR"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Relire, compter, ponctuer : gérer les 45 minutes",
+   "objetivo": "Planejar o tempo da prova, contar as palavras e revisar acentos, concordâncias e pontuação.",
+   "foco": "Gestion du temps, comptage des mots, accents, homophones, ponctuation",
+   "explicacao": [
+    "Plano para 45 minutos: 5 min para ler a consigne e fazer o plano; 30 min para escrever; 7 a 10 min para reler e contar as palavras.",
+    "Releitura em 4 passadas: (1) acentos, (2) concordância de gênero e número, (3) conjugações e modo (subjuntivo!), (4) pontuação e maiúsculas.",
+    "Homófonos que enganam: a / à, ou / où, et / est, ces / ses / c'est / s'est, son / sont, leur / leurs, ce / se.",
+    "Contagem: mínimo 160 palavras. Se faltar, acrescente um argumento com exemplo; não repita frases nem copie a consigne. Em geral, o excesso grande também é penalizado."
+   ],
+   "vocab": [
+    {
+     "en": "relire",
+     "pt": "reler"
+    },
+    {
+     "en": "compter les mots",
+     "pt": "contar as palavras"
+    },
+    {
+     "en": "la ponctuation",
+     "pt": "a pontuação"
+    },
+    {
+     "en": "l'accent aigu / grave",
+     "pt": "acento agudo / grave"
+    },
+    {
+     "en": "l'orthographe",
+     "pt": "a ortografia"
+    },
+    {
+     "en": "un brouillon",
+     "pt": "um rascunho"
+    },
+    {
+     "en": "le plan",
+     "pt": "o plano"
+    }
+   ],
+   "material": {
+    "tarefa": "Dans un essai, vous répondez à la question : « Faut-il interdire les voitures au centre-ville ? » Écrivez votre texte, puis relisez-le (accents, accords, ponctuation) et vérifiez le nombre de mots. (140 à 180 mots)",
+    "genero": "essai",
+    "min": 140,
+    "max": 180,
+    "modelo": "Faut-il interdire les voitures au centre-ville ? Cette question divise les habitants de ma ville. Personnellement, je pense que oui, car les avantages sont plus nombreux que les inconvénients.\n\nD'abord, l'air serait plus pur. Les voitures produisent de la pollution et du bruit, et beaucoup d'enfants souffrent d'asthme. Ensuite, les rues seraient plus agréables : on pourrait y installer des terrasses, des arbres et des pistes cyclables. De plus, les commerçants vendraient peut-être davantage, puisque les piétons se promènent plus longtemps.\n\nCependant, je comprends les personnes âgées ou handicapées, qui ont besoin de leur voiture. Il faudrait donc que la mairie crée des parkings à l'entrée de la ville et que des bus gratuits circulent toutes les dix minutes.\n\nEn conclusion, bien qu'une telle mesure soit difficile à accepter au début, elle améliorerait la qualité de vie de tous et rendrait notre ville plus agréable pour les enfants comme pour les personnes âgées.",
+    "checklist": [
+     "Reservei 7 a 10 minutos para reler e contar as palavras?",
+     "Conferi acentos, concordâncias, subjuntivos e homófonos (a/à, ou/où, et/est)?",
+     "Terminei todas as frases com pontuação e comecei com maiúscula?",
+     "Contei as palavras: entre 140 e 180 (mínimo 160 na prova)?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Combien de temps faut-il garder pour relire à l'épreuve de 45 minutes ?",
+     "op": [
+      "Environ 5 à 10 minutes",
+      "Aucune, on écrit jusqu'à la fin",
+      "30 minutes",
+      "Une heure"
+     ],
+     "r": 0,
+     "exp": "Reserve 5 a 10 minutos para reler: erros de acento e de concordância são fáceis de corrigir e pesam na nota."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut que je ___ mon texte avant de le rendre.",
+     "resp": [
+      "relise"
+     ],
+     "exp": "Relire no subjuntivo: que je relise. Il faut que + subjuntivo.",
+     "dica": "RELIRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Avant de rendre mon texte, je compte les mots et je vérifie les accents.",
+     "exp": "'Compte' soa 'cõt' com o on nasal. Em 'vérifie' o é é fechado."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correctement écrite ?",
+     "op": [
+      "Où est-ce que tu as mis tes affaires ?",
+      "Ou est-ce que tu as mis tes affaires ?",
+      "Où est-ce que tu as mi tes affaires ?",
+      "Où est ce que tu a mis tes affaires ?"
+     ],
+     "r": 0,
+     "exp": "Où (com acento) = onde; ou = ou. Mis (particípio de mettre) tem s. Tu as mis (não 'tu a')."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "relis",
+      "mon",
+      "texte",
+      "pour",
+      "corriger",
+      "les",
+      "accents",
+      "et",
+      "la",
+      "ponctuation."
+     ],
+     "resp": "Je relis mon texte pour corriger les accents et la ponctuation.",
+     "exp": "Pour + infinitivo (finalidade, mesmo sujeito). Les accents: masculino plural."
+    },
+    {
+     "t": "gap",
+     "q": "Elle ___ un frère et une sœur.",
+     "resp": [
+      "a"
+     ],
+     "exp": "Avoir: elle a (sem acento). À (com acento) é a preposição: elle va à Paris.",
+     "dica": "avoir / à"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Como você revisa um texto antes de entregar? Duas frases.",
+     "frase": "Comment vérifiez-vous un texte avant de le rendre ?",
+     "modelo": "Je relis le texte, je compte les mots et je vérifie les accords et les accents.",
+     "min": 12,
+     "chave": [
+      "relis",
+      "compte",
+      "mots",
+      "accents",
+      "accords",
+      "vérifie",
+      "ponctuation"
+     ],
+     "exp": "Use verbos no presente (je relis, je vérifie). Pronuncie o t final de 'relis' mudo."
+    },
+    {
+     "t": "mc",
+     "q": "Le texte demandé a 160 mots minimum. Vous en avez 120. Que faites-vous ?",
+     "op": [
+      "Je développe un argument avec un exemple.",
+      "Je répète la même phrase.",
+      "Je recopie la consigne.",
+      "Je rends le texte tel quel."
+     ],
+     "r": 0,
+     "exp": "Abaixo do mínimo você perde pontos. Acrescente um argumento com exemplo, sem repetir nem copiar a consigne."
+    },
+    {
+     "t": "gap",
+     "q": "Les étudiants ___ travaillent beaucoup réussissent mieux.",
+     "resp": [
+      "qui"
+     ],
+     "exp": "Pronome relativo sujeito: qui. Cuidado: 'que' é para o objeto direto (les étudiants que je connais)."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado : Production écrite DELF B1",
+   "objetivo": "Fazer a prova de Production écrite do DELF B1 em condições reais: 45 minutos, mínimo de 160 palavras, opinião justificada.",
+   "foco": "Simulado DELF B1 : contribution à un forum (opinion, arguments, exemples, conclusion)",
+   "explicacao": [
+    "Leia a consigne com atenção: tipo de texto (forum), tema, o que é pedido (réagir, donner son opinion, expliquer avec des exemples) e o mínimo de palavras.",
+    "Estrutura segura: saudação → opinião clara → 2 argumentos com exemplo → concessão (certes… cependant…) → conclusão → assinatura.",
+    "Revise: subjuntivo depois de je ne pense pas que / bien que / il faut que, acentos, concordâncias, falsos cognatos e a contagem (mínimo 160).",
+    "Distribua o tempo: 5 min de plano, 30 min de redação, 10 min de revisão."
+   ],
+   "vocab": [
+    {
+     "en": "réagir à un message",
+     "pt": "reagir a uma mensagem"
+    },
+    {
+     "en": "il vaut mieux",
+     "pt": "é melhor"
+    },
+    {
+     "en": "la vie culturelle",
+     "pt": "a vida cultural"
+    },
+    {
+     "en": "le calme",
+     "pt": "a calma"
+    },
+    {
+     "en": "les transports en commun",
+     "pt": "o transporte público"
+    },
+    {
+     "en": "à ma place",
+     "pt": "no meu lugar"
+    },
+    {
+     "en": "certes",
+     "pt": "é verdade que"
+    }
+   ],
+   "material": {
+    "tarefa": "Vous participez à un forum de discussion sur Internet consacré à la vie en ville. Un internaute a écrit : « Il vaut mieux habiter à la campagne qu'en ville : il y a moins de bruit, moins de stress et plus de nature. » Vous réagissez à ce message en donnant votre opinion et en expliquant vos arguments avec des exemples. (160 mots minimum)",
+    "genero": "contribution à un forum",
+    "min": 160,
+    "max": 200,
+    "modelo": "Bonjour à tous,\n\nJe viens de lire le message de Thomas et je voudrais donner mon avis. Personnellement, je ne pense pas qu'il soit toujours préférable d'habiter à la campagne, même si cette idée est séduisante.\n\nD'abord, la ville offre beaucoup plus de possibilités de travail. Par exemple, ma sœur vit à Lyon et elle a trouvé un emploi en deux mois, alors que mon oncle, qui habite dans un petit village, fait quarante kilomètres chaque jour pour aller au bureau. De plus, les transports en commun permettent de se déplacer sans voiture, ce qui est meilleur pour l'environnement.\n\nEnsuite, la vie culturelle est plus riche en ville. On peut aller au cinéma, visiter un musée ou assister à un concert presque tous les soirs. En revanche, à la campagne, il faut souvent conduire longtemps pour trouver un simple théâtre.\n\nCertes, la campagne est plus calme et l'air y est plus pur. Cependant, le bruit et le stress dépendent aussi de notre façon de vivre.\n\nEn conclusion, le meilleur choix dépend de chacun. Pour ma part, je préfère la ville, car elle me permet de rencontrer des gens.\n\nMerci de m'avoir lu !\nCamille",
+    "checklist": [
+     "Atendi a consigne: reagi à mensagem, dei minha opinião e expliquei com exemplos?",
+     "Tenho saudação, argumentos organizados com conectores, concessão (certes… cependant) e conclusão?",
+     "Revisei subjuntivos, acentos, concordâncias e falsos cognatos?",
+     "Escrevi pelo menos 160 palavras e terminei em 45 minutos?"
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Consigne : « Vous participez à un forum… Vous réagissez à ce message… (160 mots minimum). » Quel registre est adapté ?",
+     "op": [
+      "Poli, sans argot : vouvoiement du groupe (« à tous »), phrases complètes",
+      "Très familier, avec de l'argot et des abréviations SMS",
+      "Lettre administrative avec « Veuillez agréer »",
+      "Télégraphique, en une suite de mots-clés"
+     ],
+     "r": 0,
+     "exp": "Fórum: cordial, correto, sem gíria e sem fórmulas de carta administrativa. Escreva frases completas."
+    },
+    {
+     "t": "gap",
+     "q": "Je ne pense pas qu'il ___ toujours préférable d'habiter à la campagne.",
+     "resp": [
+      "soit"
+     ],
+     "exp": "Je ne pense pas que + subjuntivo: qu'il soit.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta.",
+     "frase": "Personnellement, je ne pense pas qu'il soit toujours préférable d'habiter à la campagne.",
+     "exp": "'Préférable' tem o 'é' fechado duas vezes. 'Habiter' começa com h mudo: liga com a vogal (l'ha-bi-té)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase est le meilleur argument (idée + exemple) ?",
+     "op": [
+      "La ville est mieux. C'est évident.",
+      "La ville offre plus de travail : par exemple, ma sœur a trouvé un emploi en deux mois à Lyon.",
+      "Tout le monde sait que la ville est meilleure.",
+      "J'aime la ville parce que je l'aime."
+     ],
+     "r": 1,
+     "exp": "O bom argumento traz a ideia e um exemplo concreto (nome, lugar, tempo). As outras são afirmações vagas ou circulares."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Cependant,",
+      "le",
+      "bruit",
+      "et",
+      "le",
+      "stress",
+      "dépendent",
+      "aussi",
+      "de",
+      "notre",
+      "façon",
+      "de",
+      "vivre."
+     ],
+     "resp": "Cependant, le bruit et le stress dépendent aussi de notre façon de vivre.",
+     "exp": "Cependant abre a concessão/oposição. Dépendre de = depender de (verbo plural: le bruit et le stress dépendent)."
+    },
+    {
+     "t": "gap",
+     "q": "La campagne est calme ; ___, la ville offre plus de loisirs.",
+     "resp": [
+      "en revanche",
+      "par contre",
+      "cependant"
+     ],
+     "exp": "En revanche opõe duas vantagens. Evite 'au contraire' aqui, que nega a frase anterior."
+    },
+    {
+     "t": "mc",
+     "q": "Complétez la conclusion : « En conclusion, bien que la campagne ___ calme, je préfère la ville. »",
+     "op": [
+      "soit",
+      "est",
+      "sera",
+      "serait"
+     ],
+     "r": 0,
+     "exp": "Bien que pede subjuntivo: soit."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Resuma sua opinião em duas frases: vida na cidade ou no campo?",
+     "frase": "Résumez votre opinion sur la vie en ville ou à la campagne en deux phrases.",
+     "modelo": "Pour ma part, je préfère la ville parce qu'elle offre plus de travail et de loisirs. Cependant, je comprends que certaines personnes aiment la campagne.",
+     "min": 15,
+     "chave": [
+      "ville",
+      "campagne",
+      "préfère",
+      "parce",
+      "cependant",
+      "travail",
+      "opinion"
+     ],
+     "exp": "Use pour ma part e cependant. Fale com clareza e mantenha frases completas."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut que la mairie ___ plus de transports en commun.",
+     "resp": [
+      "crée",
+      "cree"
+     ],
+     "exp": "Il faut que + subjuntivo. Créer → que la mairie crée (com acento no é antes do e mudo final: crée).",
+     "dica": "CRÉER"
+    },
+    {
+     "t": "mc",
+     "q": "Vous avez écrit 125 mots (minimum 160). Quelle est la meilleure solution ?",
+     "op": [
+      "Ajouter un argument avec un exemple, puis une phrase de conclusion",
+      "Écrire plusieurs fois « donc » et « aussi »",
+      "Recopier la consigne",
+      "Rendre ainsi : le texte est assez long"
+     ],
+     "r": 0,
+     "exp": "Abaixo do mínimo você perde pontos. Acrescente conteúdo útil (argumento + exemplo)."
+    },
+    {
+     "t": "gap",
+     "q": "Ma sœur vit à Lyon et elle a trouvé un emploi ___ deux mois.",
+     "resp": [
+      "en"
+     ],
+     "exp": "En + duração = prazo para fazer algo (em dois meses). Dans deux mois seria 'daqui a dois meses'."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta a conclusão.",
+     "frase": "En conclusion, il me semble que le meilleur choix dépend de chacun.",
+     "exp": "'Conclusion' tem o 'on' nasal e o final -sion como 'zi-õ'. 'Chacun' soa 'xa-kã'."
+    }
+   ]
+  }
+ ]
+}

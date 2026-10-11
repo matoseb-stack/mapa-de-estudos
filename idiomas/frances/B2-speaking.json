@@ -1,0 +1,2465 @@
+{
+ "nivel": "B2",
+ "skill": "speaking",
+ "exame": "DELF B2",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Présenter le document et le thème",
+   "objetivo": "Abrir o exposé identificando o documento (natureza, fonte, tema) com precisão e vocabulário de B2.",
+   "foco": "Nature, source et thème du document; il s'agit de, traiter de, s'interroger sur",
+   "explicacao": [
+    "No DELF B2 você recebe um artigo de opinião e tem 30 minutos para se preparar. O exposé começa sempre identificando o documento: natureza (article d'opinion, tribune), fonte (un quotidien, un magazine) e tema.",
+    "Fórmulas úteis: Le document que j'ai choisi est une tribune parue dans... ; Il s'agit d'un article qui traite de... ; L'auteur s'interroge sur... Em português diríamos 'fala sobre', mas em francês é traiter de (sem preposição extra).",
+    "Cuidado: il s'agit de pede de + o que vem depois (Il s'agit du télétravail et de ses effets). Não se diz 'ça s'agit'. E 'actuellement' significa 'atualmente', nunca 'de fato'.",
+    "Evite 'Je vais parler sur le document' (calco do português). Prefira: Je vais vous présenter..."
+   ],
+   "vocab": [
+    {
+     "en": "une tribune",
+     "pt": "artigo de opinião assinado (jornal)"
+    },
+    {
+     "en": "paraître (paru)",
+     "pt": "ser publicado"
+    },
+    {
+     "en": "traiter de",
+     "pt": "tratar de, abordar"
+    },
+    {
+     "en": "il s'agit de",
+     "pt": "trata-se de"
+    },
+    {
+     "en": "s'interroger sur",
+     "pt": "questionar-se sobre"
+    },
+    {
+     "en": "un sujet d'actualité",
+     "pt": "um tema atual"
+    },
+    {
+     "en": "actuellement",
+     "pt": "atualmente (falso cognato: não é 'de fato')"
+    },
+    {
+     "en": "l'auteur",
+     "pt": "o autor"
+    }
+   ],
+   "material": {
+    "tarefa": "Document : une tribune parue dans un quotidien national, intitulée « Télétravail : liberté ou isolement ? ». L'auteur y décrit la progression du travail à distance depuis cinq ans. Présentez le document : sa nature, sa source et son thème.",
+    "segundos": 90,
+    "frases_uteis": [
+     "Le document que j'ai choisi est...",
+     "Il s'agit d'une tribune parue dans...",
+     "Cet article traite de...",
+     "L'auteur s'interroge sur..."
+    ],
+    "modelo": "Bonjour. Le document que j'ai choisi est une tribune parue dans un quotidien national. Il s'agit d'un article d'opinion qui traite du télétravail. L'auteur s'interroge sur les effets du travail à distance : il y voit à la fois une plus grande liberté et un risque d'isolement pour les salariés."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase présente correctement le document ?",
+     "op": [
+      "Je vais parler sur le document que le télétravail.",
+      "Le document que j'ai en main est une tribune parue dans un quotidien, dans laquelle l'auteur s'interroge sur le télétravail.",
+      "Mon document dit que télétravail est bon pour tout le monde.",
+      "C'est un texte qui parle du texte et de l'auteur."
+     ],
+     "r": 1,
+     "exp": "Natureza + fonte + tema numa frase só. 'Parler sur' é calco do português."
+    },
+    {
+     "t": "gap",
+     "q": "Ce document est un article d'opinion ___ dans le journal en mars dernier. (PARAÎTRE)",
+     "resp": [
+      "paru"
+     ],
+     "exp": "Particípio de paraître: paru (article paru dans...).",
+     "dica": "PARAÎTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Le document que j'ai choisi est une tribune parue dans un quotidien national.",
+     "exp": "Tribune: o u é francês [y], lábios arredondados; parue: [pa-ry]."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle construction est correcte ?",
+     "op": [
+      "Il s'agit du télétravail et ses effets.",
+      "Ça s'agit du télétravail et de ses effets.",
+      "Il s'agit du télétravail et de ses effets.",
+      "Il agit du télétravail et de ses effets."
+     ],
+     "r": 2,
+     "exp": "Il s'agit de exige de antes de cada complemento: du télétravail et de ses effets."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Cet",
+      "article",
+      "d'opinion",
+      "traite",
+      "de",
+      "la",
+      "place",
+      "des",
+      "écrans",
+      "à",
+      "l'école"
+     ],
+     "resp": "Cet article d'opinion traite de la place des écrans à l'école",
+     "exp": "Traiter de + tema. 'Cet article d'opinion' vem primeiro como sujeito."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Il s'agit d'un article qui traite d'un sujet d'actualité dans notre société.",
+     "exp": "Liaison: il s'agit [il-sa-ji]; d'un_article com enchaînement."
+    },
+    {
+     "t": "gap",
+     "q": "Cet article ___ de l'impact des réseaux sociaux sur les jeunes. (TRAITER)",
+     "resp": [
+      "traite"
+     ],
+     "exp": "Traiter de: 3ª pessoa, il traite.",
+     "dica": "TRAITER"
+    },
+    {
+     "t": "mc",
+     "q": "Quelle introduction est la plus adaptée à l'examen ?",
+     "op": [
+      "Bonjour. Le document que j'ai choisi est une tribune parue dans un quotidien, dans laquelle l'auteur s'interroge sur l'essor du télétravail.",
+      "Bonjour, je vais dire ce que je pense du télétravail.",
+      "Bonjour. Télétravail, c'est bien ou pas bien ? Moi je pense que oui.",
+      "Bonjour, mon document est un texte sur une personne qui travaille."
+     ],
+     "r": 0,
+     "exp": "O examinador espera: natureza, fonte e tema, antes da sua opinião."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Apresente o documento em duas frases: natureza, fonte e tema.",
+     "frase": "Présentez en deux phrases ce document : une tribune sur la réduction du temps de travail à quatre jours par semaine.",
+     "modelo": "Le document est une tribune parue dans un magazine. Il s'agit d'un article d'opinion qui traite de la semaine de quatre jours et l'auteur s'interroge sur ses effets pour les salariés.",
+     "min": 18,
+     "chave": [
+      "article",
+      "tribune",
+      "document",
+      "traite",
+      "auteur",
+      "s'agit"
+     ],
+     "exp": "Use: nature (tribune), tema (traite de) e o verbo s'interroger."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Dégager la problématique",
+   "objetivo": "Distinguir tema de problemática e formular a pergunta central do documento.",
+   "foco": "La problématique; se demander si, dans quelle mesure, la question qui se pose",
+   "explicacao": [
+    "Tema não é problemática. Tema: le télétravail. Problemática: a pergunta que o texto levanta, por exemplo 'Le télétravail améliore-t-il vraiment la qualité de vie des salariés ?'. A banca dá pontos por isso.",
+    "Fórmulas: La question qui se pose est de savoir si... ; On peut se demander dans quelle mesure... ; Cet article soulève la question de...",
+    "Depois de se demander ou de savoir, use si sem inversão: Je me demande si le télétravail est utile. Mas na pergunta direta use a inversão: Le télétravail est-il utile ?",
+    "Boa problemática = pergunta com tensão entre duas ideias (vantagem x risco), não uma pergunta de sim ou não vaga."
+   ],
+   "vocab": [
+    {
+     "en": "la problématique",
+     "pt": "a questão central, a problemática"
+    },
+    {
+     "en": "se demander si",
+     "pt": "perguntar-se se"
+    },
+    {
+     "en": "dans quelle mesure",
+     "pt": "em que medida"
+    },
+    {
+     "en": "un enjeu",
+     "pt": "o que está em jogo, desafio"
+    },
+    {
+     "en": "soulever une question",
+     "pt": "levantar uma questão"
+    },
+    {
+     "en": "remettre en cause",
+     "pt": "pôr em questão"
+    },
+    {
+     "en": "le débat",
+     "pt": "o debate"
+    },
+    {
+     "en": "un sujet de société",
+     "pt": "tema social"
+    }
+   ],
+   "material": {
+    "tarefa": "Document : tribune « Écrans à l'école : faut-il tout interdire ? ». L'auteur rappelle que les écrans distraient les élèves, mais que le numérique est aussi un outil pour apprendre. Dégagez la problématique du texte.",
+    "segundos": 90,
+    "frases_uteis": [
+     "La question qui se pose est de savoir si...",
+     "On peut se demander dans quelle mesure...",
+     "Cet article soulève la question de...",
+     "Le véritable enjeu est de..."
+    ],
+    "modelo": "Le thème de ce document est la place des écrans à l'école. Mais la vraie problématique est la suivante : dans quelle mesure peut-on profiter du numérique pour apprendre sans que les élèves perdent leur concentration ? C'est la question qui se pose à tous les établissements aujourd'hui."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle formulation est une vraie problématique ?",
+     "op": [
+      "Le télétravail.",
+      "Le document parle du télétravail et des salariés.",
+      "Le télétravail est un sujet d'actualité.",
+      "Dans quelle mesure le télétravail améliore-t-il la qualité de vie des salariés ?"
+     ],
+     "r": 3,
+     "exp": "Problemática = pergunta precisa. As outras são só tema ou descrição."
+    },
+    {
+     "t": "gap",
+     "q": "On peut se demander ___ mesure les réseaux sociaux influencent nos choix.",
+     "resp": [
+      "dans quelle"
+     ],
+     "exp": "Dans quelle mesure = em que medida."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Cet article soulève la question de savoir si le télétravail améliore vraiment la qualité de vie.",
+     "exp": "Soulève: [su-lèv]; savoir si: [sa-vwar si]."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la différence entre le thème et la problématique ?",
+     "op": [
+      "Le thème est la question précise ; la problématique est le sujet général.",
+      "Il n'y a aucune différence entre les deux.",
+      "Le thème est le sujet général ; la problématique est la question précise que le texte pose.",
+      "La problématique est l'avis personnel du candidat."
+     ],
+     "r": 2,
+     "exp": "No exposé, primeiro o tema, depois a pergunta que organiza todo o discurso."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "La",
+      "question",
+      "qui",
+      "se",
+      "pose",
+      "est",
+      "de",
+      "savoir",
+      "si",
+      "l'école",
+      "doit",
+      "interdire",
+      "les",
+      "portables"
+     ],
+     "resp": "La question qui se pose est de savoir si l'école doit interdire les portables",
+     "exp": "La question qui se pose est de savoir si + indicatif (sem inversão)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "On peut donc se demander dans quelle mesure l'intelligence artificielle menace l'emploi.",
+     "exp": "Donc: [donk]; menace: [me-nas] com e mudo mantido."
+    },
+    {
+     "t": "gap",
+     "q": "La question est de savoir ___ les réseaux sociaux nuisent à la concentration.",
+     "resp": [
+      "si"
+     ],
+     "exp": "Depois de savoir/se demander, a pergunta indireta usa si (não 'que' nem 'se')."
+    },
+    {
+     "t": "mc",
+     "q": "Texte : « Les villes limitent les voitures en centre-ville. Pour les uns, c'est un progrès écologique ; pour les autres, une atteinte à la liberté de circuler. » Quelle problématique convient ?",
+     "op": [
+      "Les voitures polluent.",
+      "Faut-il limiter les voitures en centre-ville au nom de l'écologie, au risque de restreindre la liberté de circuler ?",
+      "Les centres-villes sont beaux.",
+      "La ville est-elle grande ?"
+     ],
+     "r": 1,
+     "exp": "A boa problemática reúne os dois lados do debate presentes no texto."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Formule a problemática do documento com uma das fórmulas aprendidas.",
+     "frase": "Le document porte sur la semaine de quatre jours. Quelle problématique pouvez-vous dégager ?",
+     "modelo": "Le document traite de la semaine de quatre jours. La question qui se pose est de savoir dans quelle mesure travailler moins de jours peut améliorer à la fois le bien-être des salariés et la productivité des entreprises.",
+     "min": 18,
+     "chave": [
+      "question",
+      "mesure",
+      "savoir",
+      "faut-il",
+      "demander",
+      "problématique"
+     ],
+     "exp": "Junte duas ideias em tensão (bem-estar x produtividade)."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Annoncer son plan en deux ou trois parties",
+   "objetivo": "Anunciar um plano claro e equilibrado, com os marcadores certos.",
+   "foco": "Dans un premier temps, ensuite, enfin; d'une part... d'autre part",
+   "explicacao": [
+    "Depois da problemática, anuncie o plano em 2 ou 3 partes. Isso mostra organização e garante pontos de cohérence.",
+    "Marcadores: Dans un premier temps... ensuite... enfin ; D'une part... d'autre part ; En premier lieu... en second lieu... en dernier lieu. Use o futuro: j'examinerai, j'aborderai.",
+    "Cuidado: finalement não é 'finalmente' de plano. Finalement indica um desfecho inesperado (no fim das contas). Para a última parte use enfin, en dernier lieu ou pour terminer.",
+    "Plano de B2 bom: 1) argumentos a favor / causas, 2) limites / consequências, 3) sua posição ou solução. Evite repetir a mesma ideia em partes diferentes."
+   ],
+   "vocab": [
+    {
+     "en": "dans un premier temps",
+     "pt": "em um primeiro momento"
+    },
+    {
+     "en": "ensuite",
+     "pt": "em seguida"
+    },
+    {
+     "en": "enfin",
+     "pt": "por fim"
+    },
+    {
+     "en": "d'une part… d'autre part",
+     "pt": "por um lado… por outro"
+    },
+    {
+     "en": "aborder",
+     "pt": "abordar"
+    },
+    {
+     "en": "examiner",
+     "pt": "examinar"
+    },
+    {
+     "en": "en dernier lieu",
+     "pt": "por último"
+    },
+    {
+     "en": "finalement",
+     "pt": "no fim das contas (não é 'finalmente')"
+    }
+   ],
+   "material": {
+    "tarefa": "Document : tribune sur l'essor du télétravail. Vous avez déjà présenté le document et la problématique. Annoncez maintenant votre plan en trois parties.",
+    "segundos": 90,
+    "frases_uteis": [
+     "Dans un premier temps, j'examinerai...",
+     "Ensuite, j'aborderai...",
+     "Enfin, je proposerai...",
+     "D'une part... d'autre part..."
+    ],
+    "modelo": "Pour répondre à cette question, j'examinerai dans un premier temps les avantages du télétravail, puis j'aborderai ses limites, notamment l'isolement. Enfin, je défendrai une solution équilibrée entre travail à distance et présence au bureau."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle annonce de plan est correcte et claire ?",
+     "op": [
+      "Je vais parler premièrement des avantages, après les inconvénients et finalement des solutions.",
+      "Pour commencer, les avantages ; pour terminer, les avantages encore.",
+      "Je ferai trois parties : avantages, inconvénients, et c'est tout.",
+      "Dans un premier temps, j'examinerai les avantages ; ensuite, j'aborderai les limites ; enfin, je proposerai des pistes."
+     ],
+     "r": 3,
+     "exp": "Plano claro, no futuro, com progressão lógica."
+    },
+    {
+     "t": "gap",
+     "q": "D'une ___, le télétravail offre plus de liberté ; d'autre part, il isole.",
+     "resp": [
+      "part"
+     ],
+     "exp": "D'une part… d'autre part: dois lados de um mesmo argumento."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Dans un premier temps, j'examinerai les avantages ; ensuite, j'aborderai les limites.",
+     "exp": "Premier temps: [pre-myé tan]; ensuite: [an-sui-t]."
+    },
+    {
+     "t": "mc",
+     "q": "Quel mot est maladroit pour annoncer la dernière partie d'un plan ?",
+     "op": [
+      "Finalement",
+      "Enfin",
+      "En dernier lieu",
+      "Pour terminer"
+     ],
+     "r": 0,
+     "exp": "Finalement indica um desfecho inesperado; no plano use enfin ou en dernier lieu."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "commencerai",
+      "par",
+      "les",
+      "causes,",
+      "puis",
+      "j'aborderai",
+      "les",
+      "conséquences"
+     ],
+     "resp": "Je commencerai par les causes, puis j'aborderai les conséquences",
+     "exp": "Futuro simples: je commencerai, j'aborderai."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "D'une part, ce phénomène présente des avantages ; d'autre part, il comporte des risques.",
+     "exp": "Pause curta no ponto e vírgula; d'autre part com liaison suave."
+    },
+    {
+     "t": "gap",
+     "q": "Dans un ___ temps, je présenterai les causes du phénomène.",
+     "resp": [
+      "premier"
+     ],
+     "exp": "Dans un premier temps (masculino: temps)."
+    },
+    {
+     "t": "mc",
+     "q": "Pour un sujet « pour ou contre », quel plan est le plus adapté au B2 ?",
+     "op": [
+      "1) Je suis pour ; 2) Je suis encore pour ; 3) Je suis toujours pour.",
+      "1) Définition de chaque mot ; 2) Histoire depuis l'Antiquité ; 3) Fin.",
+      "1) Les avantages ; 2) Les limites ; 3) Mon point de vue nuancé.",
+      "Pas de plan : je parle librement."
+     ],
+     "r": 2,
+     "exp": "O júri avalia a capacidade de argumentar com equilíbrio e depois tomar posição."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Anuncie seu plano em três partes, usando futuro e marcadores.",
+     "frase": "Vous avez présenté la problématique. Annoncez maintenant votre plan en trois parties.",
+     "modelo": "Pour répondre à cette question, j'examinerai dans un premier temps les avantages de cette mesure, puis j'aborderai ses limites, et enfin je défendrai une solution équilibrée.",
+     "min": 18,
+     "chave": [
+      "premier",
+      "ensuite",
+      "enfin",
+      "puis",
+      "temps"
+     ],
+     "exp": "Três partes, no futuro: j'examinerai, j'aborderai, je défendrai."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Donner son point de vue avec nuance",
+   "objetivo": "Expressar e justificar uma opinião pessoal sem ser radical.",
+   "foco": "Pour ma part, selon moi, dans une certaine mesure; soutenir",
+   "explicacao": [
+    "Depois do plano, defenda seu ponto de vista: Pour ma part, Selon moi, À mon avis, Je suis convaincu(e) que... Sempre dê uma razão (parce que, car) e, se possível, um exemplo.",
+    "Nuance mostra nível B2: dans une certaine mesure, plutôt, globalement, Il me semble que... Evite afirmações absolutas (toujours, jamais, tout le monde).",
+    "Cuidado: soutenir é 'apoiar'; supporter é 'suportar, aguentar'. Je supporte cette réforme significa que você a aguenta com dificuldade. Também: avoir raison (não 'être raison'); être pour ou contre.",
+    "Com 'je pense que' use indicativo; com 'je ne pense pas que' use subjuntivo (veremos na aula 7)."
+   ],
+   "vocab": [
+    {
+     "en": "à mon avis",
+     "pt": "na minha opinião"
+    },
+    {
+     "en": "pour ma part",
+     "pt": "de minha parte"
+    },
+    {
+     "en": "selon moi",
+     "pt": "segundo eu"
+    },
+    {
+     "en": "être convaincu que",
+     "pt": "estar convencido de que"
+    },
+    {
+     "en": "dans une certaine mesure",
+     "pt": "até certo ponto"
+    },
+    {
+     "en": "soutenir",
+     "pt": "apoiar, sustentar"
+    },
+    {
+     "en": "défendre un point de vue",
+     "pt": "defender um ponto de vista"
+    },
+    {
+     "en": "il me semble que",
+     "pt": "parece-me que"
+    }
+   ],
+   "material": {
+    "tarefa": "Document : tribune « Faut-il limiter le temps passé devant les écrans ? ». Donnez votre point de vue en une minute et demie, avec une nuance et une justification.",
+    "segundos": 90,
+    "frases_uteis": [
+     "Pour ma part, je pense que...",
+     "Selon moi, il faut...",
+     "Dans une certaine mesure, je suis d'accord...",
+     "C'est pourquoi je soutiens..."
+    ],
+    "modelo": "Pour ma part, je pense qu'il faut limiter le temps d'écran, surtout pour les enfants, parce que cela perturbe le sommeil et la concentration. Cependant, dans une certaine mesure, les écrans peuvent aussi être utiles pour apprendre. C'est pourquoi je soutiens une limitation raisonnable plutôt qu'une interdiction totale."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase exprime un avis nuancé ?",
+     "op": [
+      "Le télétravail est mauvais, point final.",
+      "Pour ma part, je suis plutôt favorable au télétravail, même si, dans une certaine mesure, il peut isoler.",
+      "Je supporte le télétravail.",
+      "Moi, télétravail, oui oui, toujours."
+     ],
+     "r": 1,
+     "exp": "Nuance = opinião + ressalva. 'Je supporte' seria 'eu aguento' (falso cognato)."
+    },
+    {
+     "t": "gap",
+     "q": "Pour ma ___, je pense que l'école devrait commencer plus tard.",
+     "resp": [
+      "part"
+     ],
+     "exp": "Pour ma part = de minha parte."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Pour ma part, je suis plutôt favorable à cette idée, même si elle comporte des limites.",
+     "exp": "Plutôt: [plu-tô]; même si: [mèm si]."
+    },
+    {
+     "t": "mc",
+     "q": "« Eu apoio essa reforma. » Complétez : « Je ___ cette réforme. »",
+     "op": [
+      "soutiens",
+      "supporte",
+      "prétends",
+      "assiste"
+     ],
+     "r": 0,
+     "exp": "Soutenir = apoiar. Supporter = suportar; prétendre = afirmar; assister = estar presente."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Selon",
+      "moi,",
+      "il",
+      "faut",
+      "trouver",
+      "un",
+      "équilibre",
+      "entre",
+      "liberté",
+      "et",
+      "sécurité"
+     ],
+     "resp": "Selon moi, il faut trouver un équilibre entre liberté et sécurité",
+     "exp": "Selon moi abre a frase; il faut + infinitivo."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Je suis convaincu que le travail à distance est bénéfique, à condition d'être bien organisé.",
+     "exp": "Convaincu: nasal [kɔ̃-vɛ̃-ky]; bénéfique: [be-ne-fik]."
+    },
+    {
+     "t": "gap",
+     "q": "Dans une certaine ___, je suis d'accord avec cette idée.",
+     "resp": [
+      "mesure"
+     ],
+     "exp": "Dans une certaine mesure = até certo ponto."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle réponse défend un point de vue ET le justifie ?",
+     "op": [
+      "Je suis pour, parce que je suis pour.",
+      "Je suis pour, voilà.",
+      "Je ne sais pas, c'est compliqué.",
+      "Je suis pour, parce que cela réduit le stress ; par exemple, on gagne une heure de transport."
+     ],
+     "r": 3,
+     "exp": "Opinião + razão + exemplo: a fórmula do B2."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Dê sua opinião com uma razão e uma nuance (cependant, dans une certaine mesure).",
+     "frase": "Faut-il limiter le temps passé devant les écrans ? Donnez votre point de vue avec une nuance.",
+     "modelo": "Pour ma part, je pense qu'il faut limiter le temps d'écran, surtout pour les enfants, parce que cela perturbe le sommeil. Cependant, dans une certaine mesure, les écrans peuvent aussi être utiles pour apprendre.",
+     "min": 22,
+     "chave": [
+      "part",
+      "selon",
+      "avis",
+      "pense",
+      "mesure",
+      "cependant"
+     ],
+     "exp": "Opinião, razão com parce que, e uma ressalva com cependant."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Illustrer par des exemples et des chiffres",
+   "objetivo": "Sustentar argumentos com exemplos concretos e dados, usando a expressão certa.",
+   "foco": "Par exemple, ainsi, selon une étude, un sur trois, la moitié",
+   "explicacao": [
+    "Um argumento sem exemplo parece vago. Use: par exemple, ainsi, pour illustrer ce point, prenons l'exemple de..., c'est le cas de...",
+    "Dados: Selon une étude, près de la moitié des... ; un Français sur trois ; plus de 40 % ; environ ; une minorité / la majorité. Cuidado: 'un sur trois' vem depois do substantivo (un salarié sur trois).",
+    "Com la majorité des + plural, o verbo pode ficar no plural (La majorité des étudiants travaillent). Para porcentagem: 40 % lê-se 'quarante pour cent'.",
+    "Não invente dados que pareçam falsos: dizer selon une étude, près de... ou en général, é aceito. O importante é a estrutura."
+   ],
+   "vocab": [
+    {
+     "en": "par exemple",
+     "pt": "por exemplo"
+    },
+    {
+     "en": "pour illustrer ce point",
+     "pt": "para ilustrar este ponto"
+    },
+    {
+     "en": "selon une étude",
+     "pt": "segundo um estudo"
+    },
+    {
+     "en": "près de",
+     "pt": "quase"
+    },
+    {
+     "en": "un sur trois",
+     "pt": "um em cada três"
+    },
+    {
+     "en": "la moitié",
+     "pt": "a metade"
+    },
+    {
+     "en": "c'est le cas de",
+     "pt": "é o caso de"
+    },
+    {
+     "en": "la majorité / une minorité",
+     "pt": "a maioria / uma minoria"
+    }
+   ],
+   "material": {
+    "tarefa": "Document : tribune « Pour un vrai plan vélo dans les grandes villes ». Défendez l'idée qu'il faut encourager le vélo en ville, en donnant au moins un exemple ou un chiffre.",
+    "segundos": 120,
+    "frases_uteis": [
+     "Prenons l'exemple de...",
+     "Selon une étude, près de...",
+     "C'est le cas de...",
+     "Pour illustrer ce point,..."
+    ],
+    "modelo": "Je pense qu'il faut encourager le vélo en ville, car c'est bon pour la santé et pour l'environnement. Pour illustrer ce point, selon une étude, près d'un trajet sur trois en ville fait moins de trois kilomètres : il pourrait donc se faire à vélo. C'est le cas de plusieurs grandes villes européennes qui ont créé des pistes cyclables et vu la circulation diminuer."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase illustre bien un argument ?",
+     "op": [
+      "Les transports en commun sont utiles. C'est utile.",
+      "Les transports en commun sont utiles : par exemple, dans certaines grandes villes, un habitant sur trois les prend chaque jour.",
+      "Les transports en commun, c'est ça.",
+      "Par exemple, je n'ai pas d'exemple."
+     ],
+     "r": 1,
+     "exp": "Argumento + exemplo concreto com dado."
+    },
+    {
+     "t": "gap",
+     "q": "Selon une étude, près ___ la moitié des jeunes dorment moins de sept heures.",
+     "resp": [
+      "de"
+     ],
+     "exp": "Près de + quantidade (quase)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Selon une étude récente, plus de la moitié des salariés souhaitent travailler à distance.",
+     "exp": "Étude: [é-tyd]; plus de la moitié: [ply d(e) la mwa-tyé]."
+    },
+    {
+     "t": "mc",
+     "q": "Comment dit-on « um em cada três franceses » ?",
+     "op": [
+      "un Français de trois",
+      "un sur Français trois",
+      "un Français sur trois",
+      "un Français à trois"
+     ],
+     "r": 2,
+     "exp": "Estrutura: un + nom + sur + número."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Ainsi,",
+      "un",
+      "salarié",
+      "sur",
+      "trois",
+      "télétravaille",
+      "au",
+      "moins",
+      "un",
+      "jour",
+      "par",
+      "semaine"
+     ],
+     "resp": "Ainsi, un salarié sur trois télétravaille au moins un jour par semaine",
+     "exp": "Ainsi introduz o exemplo; un salarié sur trois = um em cada três."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Prenons l'exemple d'une grande ville où la circulation a diminué de trente pour cent.",
+     "exp": "Trente [trant]: nasal; pour cent: [pur san]."
+    },
+    {
+     "t": "gap",
+     "q": "C'est ___ cas de nombreuses entreprises, qui ont adopté la semaine de quatre jours.",
+     "resp": [
+      "le"
+     ],
+     "exp": "C'est le cas de... = é o caso de..."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle formule introduit un exemple de façon plus soutenue que « par exemple » ?",
+     "op": [
+      "Pour illustrer ce point,",
+      "Genre,",
+      "Style,",
+      "Comme ça,"
+     ],
+     "r": 0,
+     "exp": "Genre/style são familiares; para o júri use pour illustrer ce point ou prenons l'exemple de."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Defenda a ideia com um argumento e um exemplo ou dado.",
+     "frase": "Défendez l'idée que le vélo devrait être encouragé en ville, en donnant un exemple ou un chiffre.",
+     "modelo": "Je pense qu'il faut encourager le vélo en ville, car c'est bon pour la santé et pour l'environnement. Pour illustrer ce point, selon une étude, près d'un trajet sur trois en ville fait moins de trois kilomètres : il pourrait donc se faire à vélo.",
+     "min": 25,
+     "chave": [
+      "exemple",
+      "illustrer",
+      "étude",
+      "selon",
+      "chiffre",
+      "ainsi"
+     ],
+     "exp": "Argumento + pour illustrer ce point + dado."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Les connecteurs logiques de l'argumentation",
+   "objetivo": "Usar causa, consequência, oposição e concessão sem confundir falsos amigos.",
+   "foco": "Cause, conséquence, opposition, concession; pourtant, or, par conséquent",
+   "explicacao": [
+    "Causa: parce que, car, puisque, en raison de, grâce à (positivo), à cause de (negativo). Consequência: donc, par conséquent, c'est pourquoi, si bien que.",
+    "Oposição: cependant, en revanche, alors que, pourtant. Concessão: certes... mais, même si + indicativo, bien que + subjuntivo.",
+    "Falsos amigos: pourtant NÃO é 'portanto' (é 'no entanto, contudo'); 'portanto' = par conséquent ou donc. Or não é 'ou': significa 'ora, acontece que' e introduz um fato que contradiz ou reforça o raciocínio.",
+    "Dica de prova: em 2 minutos de fala, use pelo menos 4 conectores diferentes e varie, em vez de repetir 'mais' e 'donc'."
+   ],
+   "vocab": [
+    {
+     "en": "cependant",
+     "pt": "no entanto"
+    },
+    {
+     "en": "en revanche",
+     "pt": "em compensação, por outro lado"
+    },
+    {
+     "en": "pourtant",
+     "pt": "no entanto (não é 'portanto')"
+    },
+    {
+     "en": "par conséquent",
+     "pt": "portanto, por consequência"
+    },
+    {
+     "en": "or",
+     "pt": "ora, acontece que (não é 'ou')"
+    },
+    {
+     "en": "grâce à",
+     "pt": "graças a"
+    },
+    {
+     "en": "à cause de",
+     "pt": "por causa de (negativo)"
+    },
+    {
+     "en": "certes… mais",
+     "pt": "é verdade… mas"
+    }
+   ],
+   "material": {
+    "tarefa": "Document : tribune « Les devoirs à la maison sont-ils utiles ? ». Réagissez à l'idée que les devoirs sont inutiles, en utilisant au moins quatre connecteurs logiques différents.",
+    "segundos": 120,
+    "frases_uteis": [
+     "Certes,... mais...",
+     "Par conséquent,...",
+     "En revanche,...",
+     "Cependant,..."
+    ],
+    "modelo": "Certes, les devoirs prennent beaucoup de temps aux élèves. Cependant, ils permettent de revoir la leçon et, par conséquent, de mieux mémoriser. En revanche, il ne faut pas en donner trop, car les enfants ont aussi besoin de jouer et de se reposer. Pourtant, supprimer les devoirs me paraît une mauvaise solution."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment dit-on « portanto » en français ?",
+     "op": [
+      "pourtant",
+      "par conséquent",
+      "cependant",
+      "néanmoins"
+     ],
+     "r": 1,
+     "exp": "Pourtant, cependant e néanmoins marcam oposição; 'portanto' = par conséquent ou donc."
+    },
+    {
+     "t": "gap",
+     "q": "Les prix ont augmenté ; ___ conséquent, la consommation a baissé.",
+     "resp": [
+      "par"
+     ],
+     "exp": "Par conséquent = portanto."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Certes, cette mesure est coûteuse, mais elle permettra d'économiser à long terme.",
+     "exp": "Certes: [sèrt] com o s final pronunciado; coûteuse: [ku-tëz]."
+    },
+    {
+     "t": "mc",
+     "q": "« Le chômage a baissé ___ aux nouvelles formations. » Quel mot convient ?",
+     "op": [
+      "à cause",
+      "puisque",
+      "grâce",
+      "parce"
+     ],
+     "r": 2,
+     "exp": "Grâce à = causa positiva; à cause de = causa negativa."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Le",
+      "projet",
+      "est",
+      "ambitieux,",
+      "cependant",
+      "il",
+      "reste",
+      "très",
+      "coûteux"
+     ],
+     "resp": "Le projet est ambitieux, cependant il reste très coûteux",
+     "exp": "Cependant marca oposição entre duas ideias."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Les prix ont augmenté ; par conséquent, les ménages consomment moins.",
+     "exp": "Par conséquent: [par kon-sé-kan]; faça uma pausa no ponto e vírgula."
+    },
+    {
+     "t": "gap",
+     "q": "Les élèves sont fatigués, ___ les cours commencent trop tôt.",
+     "resp": [
+      "puisque",
+      "car",
+      "parce que"
+     ],
+     "exp": "Car, puisque ou parce que introduzem a causa."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase utilise correctement « or » ?",
+     "op": [
+      "Tout le monde dit que c'est sûr ; or, une étude récente montre le contraire.",
+      "Nous partirons demain or après-demain.",
+      "Il pleut or.",
+      "Or le soleil brille, nous sortons."
+     ],
+     "r": 0,
+     "exp": "Or introduz um fato novo que contradiz ou muda o raciocínio. Não significa 'ou'."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Reaja usando ao menos dois conectores (certes, cependant, par conséquent, en revanche).",
+     "frase": "Certains disent que les devoirs à la maison sont inutiles. Réagissez avec au moins deux connecteurs logiques.",
+     "modelo": "Certes, les devoirs prennent du temps aux élèves. Cependant, ils permettent de revoir la leçon ; par conséquent, ils aident à mieux mémoriser. En revanche, il ne faut pas en donner trop.",
+     "min": 25,
+     "chave": [
+      "cependant",
+      "certes",
+      "conséquent",
+      "revanche",
+      "car",
+      "donc"
+     ],
+     "exp": "Quatro conectores diferentes valem mais que um repetido."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Le subjonctif de l'opinion et du doute",
+   "objetivo": "Usar o subjuntivo correto depois de expressões de opinião, dúvida, obrigação e concessão.",
+   "foco": "Subjonctif après il faut que, bien que, pour que, je ne pense pas que",
+   "explicacao": [
+    "Subjuntivo depois de: il faut que, il est important/essentiel/nécessaire que, je veux que, bien que, pour que, avant que, à condition que, je ne pense pas que, je doute que. Indicativo depois de: je pense que, il est évident que, il me semble que.",
+    "Irregulares frequentes: être → soit, avoir → ait, aller → aille, faire → fasse, pouvoir → puisse, savoir → sache, vouloir → veuille. Exemplo: Il faut que nous soyons prudents.",
+    "Se o sujeito é o mesmo nas duas partes, use o infinitivo: Je veux partir (e não 'je veux que je parte'). Com bien que não se usa indicativo: Bien que ce soit difficile.",
+    "Na fala, o subjuntivo muda a nota: o júri percebe se você domina 'qu'il ait', 'qu'il soit', 'que vous puissiez'."
+   ],
+   "vocab": [
+    {
+     "en": "il faut que",
+     "pt": "é preciso que"
+    },
+    {
+     "en": "bien que",
+     "pt": "embora"
+    },
+    {
+     "en": "pour que",
+     "pt": "para que"
+    },
+    {
+     "en": "à condition que",
+     "pt": "com a condição de que"
+    },
+    {
+     "en": "avant que",
+     "pt": "antes que"
+    },
+    {
+     "en": "douter que",
+     "pt": "duvidar que"
+    },
+    {
+     "en": "il est essentiel que",
+     "pt": "é essencial que"
+    },
+    {
+     "en": "il est possible que",
+     "pt": "é possível que"
+    }
+   ],
+   "material": {
+    "tarefa": "Document : tribune « Comment donner aux jeunes le goût de la lecture ? ». Dites ce qu'il faut faire pour que les jeunes lisent davantage, en utilisant au moins deux subjonctifs.",
+    "segundos": 120,
+    "frases_uteis": [
+     "Il faut que...",
+     "Bien que... soit...",
+     "Pour que..., il est important que...",
+     "Je ne pense pas que... soit..."
+    ],
+    "modelo": "Il faut que l'école donne le goût de la lecture dès le plus jeune âge. Bien que les écrans soient très attractifs, je pense qu'il est important que les parents lisent avec leurs enfants pour qu'ils prennent cette habitude. Je ne suis pas sûr que les listes de lectures obligatoires suffisent."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Je ne pense pas qu'il a raison.",
+      "Je ne pense pas qu'il avait raison.",
+      "Je ne pense pas qu'il a eu raison.",
+      "Je ne pense pas qu'il ait raison."
+     ],
+     "r": 3,
+     "exp": "Je ne pense pas que exige o subjuntivo: qu'il ait raison."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut que les élèves ___ plus de sommeil. (AVOIR)",
+     "resp": [
+      "aient"
+     ],
+     "exp": "Il faut que + subjuntivo de avoir: aient.",
+     "dica": "AVOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Bien que cette solution soit séduisante, elle me paraît difficile à appliquer.",
+     "exp": "Bien que: [byɛ̃ k(e)]; séduisante: [sé-dui-zant]."
+    },
+    {
+     "t": "mc",
+     "q": "« Para que todos entendam » se traduz por :",
+     "op": [
+      "pour que tout le monde comprend",
+      "pour tout le monde comprendre",
+      "pour que tout le monde comprenne",
+      "pour comprendre tout le monde"
+     ],
+     "r": 2,
+     "exp": "Pour que + subjuntivo (comprenne)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "est",
+      "essentiel",
+      "que",
+      "chacun",
+      "puisse",
+      "donner",
+      "son",
+      "avis"
+     ],
+     "resp": "Il est essentiel que chacun puisse donner son avis",
+     "exp": "Il est essentiel que + subjuntivo (puisse)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Je ne suis pas sûr que cette mesure soit vraiment efficace.",
+     "exp": "Soit: [swa]; efficace: [é-fi-kas]."
+    },
+    {
+     "t": "gap",
+     "q": "Bien qu'il ___ tard, nous continuons à discuter. (ÊTRE)",
+     "resp": [
+      "soit"
+     ],
+     "exp": "Bien que + subjuntivo de être: soit.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase utilise l'indicatif correctement ?",
+     "op": [
+      "Il est évident que la situation soit grave.",
+      "Il est évident que la situation est grave.",
+      "Il est possible que la situation est grave.",
+      "Je doute que la situation est grave."
+     ],
+     "r": 1,
+     "exp": "Il est évident que = certeza = indicativo. Il est possible/Je doute = subjuntivo."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda usando il faut que, bien que ou pour que.",
+     "frase": "Que faut-il faire pour que les jeunes lisent davantage ? Utilisez au moins un subjonctif.",
+     "modelo": "Il faut que l'école donne le goût de la lecture dès le plus jeune âge. Bien que les écrans soient très attractifs, je pense qu'il est important que les parents lisent avec leurs enfants pour qu'ils prennent cette habitude.",
+     "min": 25,
+     "chave": [
+      "faut que",
+      "bien que",
+      "pour que",
+      "important que",
+      "faut"
+     ],
+     "exp": "Pelo menos um subjuntivo correto: il faut que + verbo no subjuntivo."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Le conditionnel pour nuancer et atténuer",
+   "objetivo": "Usar o condicional para suavizar opinião, formular hipóteses e relatar informação não confirmada.",
+   "foco": "Conditionnel présent et passé; si + imparfait; je dirais que",
+   "explicacao": [
+    "O condicional suaviza: Je voudrais dire que... ; Il serait souhaitable que... ; On pourrait penser que..., mais... No debate, Je dirais que... soa mais educado do que Je dis que...",
+    "Hipótese: si + imparfait → condicional presente (Si j'avais plus de temps, je lirais). Nunca 'si + condicional'. Passado: si + plus-que-parfait → condicional passado (Si j'avais su, je ne serais pas venu).",
+    "Na imprensa, o condicional indica informação não confirmada: Le ministre aurait démissionné (dizem que...).",
+    "Cuidado com a concordância do particípio no condicional passado: elle serait venue, ils auraient pris."
+   ],
+   "vocab": [
+    {
+     "en": "je dirais que",
+     "pt": "eu diria que"
+    },
+    {
+     "en": "on pourrait penser que",
+     "pt": "poderíamos pensar que"
+    },
+    {
+     "en": "il serait souhaitable que",
+     "pt": "seria desejável que"
+    },
+    {
+     "en": "à mon sens",
+     "pt": "a meu ver"
+    },
+    {
+     "en": "si + imparfait",
+     "pt": "se + imperfeito (hipótese)"
+    },
+    {
+     "en": "au cas où",
+     "pt": "caso, na eventualidade de"
+    },
+    {
+     "en": "quitte à",
+     "pt": "mesmo que isso signifique"
+    },
+    {
+     "en": "aurait démissionné",
+     "pt": "teria se demitido (não confirmado)"
+    }
+   ],
+   "material": {
+    "tarefa": "Document : tribune « Réformer l'école : mission impossible ? ». Imaginez que vous êtes ministre de l'Éducation. Dites ce que vous changeriez, en utilisant « si + imparfait + conditionnel ».",
+    "segundos": 120,
+    "frases_uteis": [
+     "Si j'étais ministre, je...",
+     "Je dirais que...",
+     "Il serait souhaitable que...",
+     "On pourrait penser que..., mais..."
+    ],
+    "modelo": "Si j'étais ministre de l'Éducation, je réduirais le nombre d'élèves par classe, car les professeurs pourraient mieux suivre chacun. Je dirais aussi qu'il faudrait davantage de sport et d'art à l'école. On pourrait penser que cela coûterait trop cher, mais ce serait un investissement pour l'avenir."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle phrase est correcte ?",
+     "op": [
+      "Si j'aurais plus de temps, je lirais davantage.",
+      "Si j'avais plus de temps, je lis davantage.",
+      "Si j'aurai plus de temps, je lirais davantage.",
+      "Si j'avais plus de temps, je lirais davantage."
+     ],
+     "r": 3,
+     "exp": "Si + imparfait → condicional presente. Nunca 'si + condicional'."
+    },
+    {
+     "t": "gap",
+     "q": "Si les villes ___ plus de pistes cyclables, on roulerait davantage à vélo. (AVOIR)",
+     "resp": [
+      "avaient"
+     ],
+     "exp": "Si + imparfait: avaient.",
+     "dica": "AVOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Je dirais plutôt que cette mesure serait utile si elle était mieux expliquée.",
+     "exp": "Dirais: [di-rè]; serait: [s(e)-rè]; é fechado/aberto no final."
+    },
+    {
+     "t": "mc",
+     "q": "À quoi sert « Je dirais que... » dans un débat ?",
+     "op": [
+      "À atténuer et nuancer son opinion.",
+      "À poser une question à l'examinateur.",
+      "À conclure l'exposé.",
+      "À annoncer un exemple chiffré."
+     ],
+     "r": 0,
+     "exp": "O condicional torna a opinião menos brusca e mais polida."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "On",
+      "pourrait",
+      "penser",
+      "que",
+      "c'est",
+      "inutile,",
+      "mais",
+      "ce",
+      "serait",
+      "une",
+      "erreur"
+     ],
+     "resp": "On pourrait penser que c'est inutile, mais ce serait une erreur",
+     "exp": "On pourrait penser que... mais... = concessão polida."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Il serait souhaitable que les écoles proposent davantage d'activités sportives.",
+     "exp": "Souhaitable: [swè-ta-bl(e)]; proposent: o -ent final é mudo."
+    },
+    {
+     "t": "gap",
+     "q": "Si j'avais su, je ne ___ pas venu. (ÊTRE)",
+     "resp": [
+      "serais"
+     ],
+     "exp": "Condicional passado: je ne serais pas venu.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase signale une information non confirmée ?",
+     "op": [
+      "Le ministre a démissionné hier.",
+      "Le ministre démissionne hier.",
+      "Le ministre aurait démissionné hier.",
+      "Le ministre démissionnera hier."
+     ],
+     "r": 2,
+     "exp": "Condicional passado jornalístico = 'teria se demitido', sem confirmação."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda com uma hipótese: si + imperfeito, condicional.",
+     "frase": "Si vous étiez ministre de l'Éducation, que changeriez-vous ? Répondez avec « si + imparfait + conditionnel ».",
+     "modelo": "Si j'étais ministre de l'Éducation, je réduirais le nombre d'élèves par classe, car les professeurs pourraient mieux suivre chacun. Je dirais aussi qu'il faudrait davantage de sport à l'école.",
+     "min": 25,
+     "chave": [
+      "étais",
+      "réduirais",
+      "ferais",
+      "changerais",
+      "serais",
+      "pourrait",
+      "faudrait"
+     ],
+     "exp": "Hipótese com si + imperfeito e consequência no condicional."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Introduire et conclure un exposé",
+   "objetivo": "Estruturar abertura e fechamento: gancho, apresentação, problemática, plano; balanço e abertura final.",
+   "foco": "Accroche, bilan, ouverture; pour conclure, en somme, en définitive",
+   "explicacao": [
+    "Introdução em 4 passos: accroche (pergunta ou fato), présentation du document, problématique, annonce du plan. Leva uns 40 a 60 segundos.",
+    "Conclusão em 3 passos: bilan (resumo das partes), seu ponto de vista final, ouverture (nova pergunta ou perspectiva). Fórmulas: Pour conclure, En somme, En définitive, Il en ressort que, Tout bien considéré.",
+    "Cuidado: en conclusion existe, mas finalement muda o sentido. Evite terminar com 'voilà' ou 'c'est tout': feche com uma ouverture que convide ao debate.",
+    "Treine o tempo: introdução e conclusão curtas deixam espaço para as 2 ou 3 partes."
+   ],
+   "vocab": [
+    {
+     "en": "une accroche",
+     "pt": "um gancho de abertura"
+    },
+    {
+     "en": "faire le bilan",
+     "pt": "fazer o balanço"
+    },
+    {
+     "en": "pour conclure",
+     "pt": "para concluir"
+    },
+    {
+     "en": "en somme",
+     "pt": "em suma"
+    },
+    {
+     "en": "en définitive",
+     "pt": "em última análise"
+    },
+    {
+     "en": "il en ressort que",
+     "pt": "depreende-se que"
+    },
+    {
+     "en": "tout bien considéré",
+     "pt": "bem pesado tudo"
+    },
+    {
+     "en": "une ouverture",
+     "pt": "uma abertura (perspectiva final)"
+    }
+   ],
+   "material": {
+    "tarefa": "Document : tribune « Le travail à distance, un progrès ? ». Faites une conclusion d'exposé (une dizaine de secondes) : bilan, point de vue, ouverture.",
+    "segundos": 90,
+    "frases_uteis": [
+     "Pour conclure,...",
+     "En définitive, il en ressort que...",
+     "Tout bien considéré,...",
+     "On peut se demander si, demain,..."
+    ],
+    "modelo": "Pour conclure, le travail à distance présente de vrais avantages, mais il demande une bonne organisation. Pour ma part, je pense qu'il faut un équilibre entre présence au bureau et travail à la maison. On peut se demander si, demain, les bureaux auront encore la même utilité."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel est l'ordre logique d'une introduction d'exposé ?",
+     "op": [
+      "Plan, accroche, document, problématique.",
+      "Accroche, présentation du document, problématique, annonce du plan.",
+      "Problématique, plan, document, accroche.",
+      "Document, conclusion, plan, accroche."
+     ],
+     "r": 1,
+     "exp": "Do geral para o específico: gancho, documento, problemática, plano."
+    },
+    {
+     "t": "gap",
+     "q": "Pour ___, je dirais que le télétravail est un progrès à condition d'être encadré.",
+     "resp": [
+      "conclure"
+     ],
+     "exp": "Pour conclure = para concluir."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "En définitive, il en ressort que le bénéfice dépend surtout de l'organisation.",
+     "exp": "Définitive: [dé-fi-ni-tiv]; ressort: [r(e)-sor] com o t mudo."
+    },
+    {
+     "t": "mc",
+     "q": "Laquelle est une bonne ouverture en fin d'exposé ?",
+     "op": [
+      "On peut se demander si, demain, l'intelligence artificielle changera aussi notre manière d'apprendre.",
+      "Voilà, merci, c'est fini.",
+      "Je n'ai plus rien à dire.",
+      "Je répète tout depuis le début."
+     ],
+     "r": 0,
+     "exp": "A ouverture propõe uma nova reflexão e convida ao debate."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Pour",
+      "conclure,",
+      "je",
+      "dirais",
+      "qu'il",
+      "faut",
+      "trouver",
+      "un",
+      "juste",
+      "équilibre"
+     ],
+     "resp": "Pour conclure, je dirais qu'il faut trouver un juste équilibre",
+     "exp": "Pour conclure + je dirais que (condicional de atenuação)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Tout bien considéré, cette mesure me semble utile, mais elle doit être accompagnée.",
+     "exp": "Considéré: [kon-si-dé-ré]; accompagnée: [a-kon-pa-ñé]."
+    },
+    {
+     "t": "gap",
+     "q": "Il en ___ que les avantages l'emportent sur les inconvénients.",
+     "resp": [
+      "ressort"
+     ],
+     "exp": "Il en ressort que = depreende-se que."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle accroche convient pour un exposé sur le sommeil des adolescents ?",
+     "op": [
+      "Bonjour, je m'appelle Ana et j'ai vingt-deux ans.",
+      "Le sommeil, c'est quand on dort.",
+      "Je vais parler de dormir.",
+      "Combien d'heures dormez-vous par nuit ? Pour beaucoup d'adolescents, la réponse est inquiétante."
+     ],
+     "r": 3,
+     "exp": "Gancho = pergunta ou fato que prende a atenção e leva ao tema."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça uma conclusão curta: balanço, sua posição e uma abertura final.",
+     "frase": "Concluez en une dizaine de secondes un exposé sur le travail à distance : bilan, point de vue, ouverture.",
+     "modelo": "Pour conclure, le travail à distance présente de vrais avantages, mais il demande une bonne organisation. Pour ma part, je pense qu'il faut un équilibre entre présentiel et distanciel. On peut se demander si, demain, les bureaux auront encore la même utilité.",
+     "min": 28,
+     "chave": [
+      "conclure",
+      "somme",
+      "définitive",
+      "bilan",
+      "part",
+      "équilibre"
+     ],
+     "exp": "Três elementos: bilan, ponto de vista e ouverture."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Débat : réagir, nuancer, concéder",
+   "objetivo": "Reagir a uma objeção do examinador concordando, concordando em parte ou discordando com educação.",
+   "foco": "Je vous rejoins, j'entends bien, permettez-moi de nuancer",
+   "explicacao": [
+    "Depois do exposé, o examinador contradiz você. Não discuta bruscamente: reconheça, nuance, depois defenda. Acordo total: Je vous rejoins sur ce point. Acordo parcial: J'entends bien, c'est en partie vrai. Desacordo educado: Permettez-moi de nuancer, Je ne partage pas tout à fait votre avis.",
+    "Use sempre vous com o júri. Evite Non, vous avez tort e tu. Em francês, avoir raison / avoir tort (e não 'être').",
+    "Estrutura de resposta: reconhecer (J'entends bien) + nuança (permettez-moi de nuancer) + argumento ou exemplo.",
+    "Mostre flexibilidade: o júri avalia a capacidade de interagir, não de vencer."
+   ],
+   "vocab": [
+    {
+     "en": "je vous rejoins sur ce point",
+     "pt": "concordo com o senhor neste ponto"
+    },
+    {
+     "en": "j'entends bien",
+     "pt": "entendo bem"
+    },
+    {
+     "en": "permettez-moi de nuancer",
+     "pt": "permita-me nuançar"
+    },
+    {
+     "en": "je ne partage pas tout à fait votre avis",
+     "pt": "não compartilho totalmente da sua opinião"
+    },
+    {
+     "en": "c'est en partie vrai",
+     "pt": "é em parte verdade"
+    },
+    {
+     "en": "je concède que",
+     "pt": "admito que"
+    },
+    {
+     "en": "avoir raison / tort",
+     "pt": "ter razão / estar errado"
+    },
+    {
+     "en": "toutefois",
+     "pt": "contudo"
+    }
+   ],
+   "material": {
+    "tarefa": "L'examinateur affirme : « Les réseaux sociaux ne sont qu'une perte de temps. » Réagissez en nuançant son point de vue.",
+    "segundos": 120,
+    "frases_uteis": [
+     "J'entends bien, mais...",
+     "Je vous rejoins sur ce point...",
+     "Permettez-moi de nuancer...",
+     "Je ne partage pas tout à fait votre avis..."
+    ],
+    "modelo": "J'entends bien votre point de vue et je vous rejoins sur un point : on peut y perdre beaucoup de temps. Permettez-moi cependant de nuancer, car les réseaux sociaux permettent aussi de s'informer et de garder le contact avec ses proches. Tout dépend de l'usage qu'on en fait."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "L'examinateur : « Vous ne trouvez pas que le télétravail isole les gens ? » Quelle est la meilleure réaction ?",
+     "op": [
+      "Non, vous avez tort.",
+      "J'entends bien, c'est en partie vrai ; permettez-moi toutefois de nuancer : cela dépend de l'organisation de l'entreprise.",
+      "Je suis d'accord avec vous, tu as raison.",
+      "Oui."
+     ],
+     "r": 1,
+     "exp": "Reconhecer + nuançar + justificar, sempre com vous."
+    },
+    {
+     "t": "gap",
+     "q": "Vous ___ raison sur ce point, mais il faut nuancer. (AVOIR)",
+     "resp": [
+      "avez"
+     ],
+     "exp": "Avoir raison: vous avez raison.",
+     "dica": "AVOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "J'entends bien votre argument, mais permettez-moi de nuancer.",
+     "exp": "J'entends: [jan-tan]; permettez-moi: [per-mè-té mwa]."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle expression exprime un accord total ?",
+     "op": [
+      "Permettez-moi de nuancer.",
+      "Je ne partage pas votre avis.",
+      "Je vous rejoins tout à fait sur ce point.",
+      "C'est en partie vrai."
+     ],
+     "r": 2,
+     "exp": "Je vous rejoins = concordo. As outras são nuance ou desacordo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "vous",
+      "rejoins",
+      "sur",
+      "ce",
+      "point,",
+      "cependant",
+      "il",
+      "faut",
+      "aussi",
+      "considérer",
+      "les",
+      "risques"
+     ],
+     "resp": "Je vous rejoins sur ce point, cependant il faut aussi considérer les risques",
+     "exp": "Primeiro concordância, depois cependant introduz a ressalva."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Je ne partage pas tout à fait votre avis, mais je comprends votre point de vue.",
+     "exp": "Partage: [par-taj]; avis: o s final é mudo [a-vi]."
+    },
+    {
+     "t": "gap",
+     "q": "J'entends ___, mais je ne suis pas totalement convaincu.",
+     "resp": [
+      "bien"
+     ],
+     "exp": "J'entends bien = entendo bem (marca de concessão)."
+    },
+    {
+     "t": "mc",
+     "q": "Quel registre est adapté au débat avec le jury ?",
+     "op": [
+      "Je comprends votre objection, néanmoins je maintiens que...",
+      "Ouais, mais t'as pas compris.",
+      "Faux, faux, faux.",
+      "Tu exagères un peu."
+     ],
+     "r": 0,
+     "exp": "Registro formal, vous, conectores sérios."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Reaja ao examinador: reconheça, nuance e explique.",
+     "frase": "L'examinateur dit : « Les réseaux sociaux ne sont qu'une perte de temps. » Réagissez en nuançant.",
+     "modelo": "J'entends bien votre point de vue et je vous rejoins sur un point : on peut y perdre beaucoup de temps. Permettez-moi cependant de nuancer, car les réseaux sociaux permettent aussi de s'informer et de garder le contact avec ses proches.",
+     "min": 28,
+     "chave": [
+      "entends",
+      "rejoins",
+      "nuancer",
+      "cependant",
+      "partage",
+      "raison"
+     ],
+     "exp": "Use ao menos duas fórmulas do quadro: reconhecer e nuançar."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Débat : reformuler et demander des précisions",
+   "objetivo": "Reformular a pergunta do examinador e pedir esclarecimento sem ficar em silêncio.",
+   "foco": "Si je vous comprends bien, autrement dit, pourriez-vous préciser",
+   "explicacao": [
+    "Se não entendeu bem, não fique calado: peça. Pardon, je n'ai pas bien saisi la question ; pourriez-vous la reformuler, s'il vous plaît ? Isso é avaliado como competência de interação, não como falha.",
+    "Reformule antes de responder: Si je vous comprends bien, vous me demandez si... ; Autrement dit, ... ; En d'autres termes,... Assim você ganha tempo e mostra compreensão.",
+    "Para pedir precisão: Que voulez-vous dire par là ? ; Pourriez-vous préciser ?. Para dar precisão: C'est-à-dire que... ; À savoir...",
+    "Evite Quoi ? e Répétez (secos). Use vous, conditionnel (pourriez-vous) e s'il vous plaît."
+   ],
+   "vocab": [
+    {
+     "en": "si je vous comprends bien",
+     "pt": "se entendi bem"
+    },
+    {
+     "en": "autrement dit",
+     "pt": "em outras palavras"
+    },
+    {
+     "en": "en d'autres termes",
+     "pt": "em outros termos"
+    },
+    {
+     "en": "pourriez-vous préciser ?",
+     "pt": "poderia especificar?"
+    },
+    {
+     "en": "que voulez-vous dire par là ?",
+     "pt": "o que quer dizer com isso?"
+    },
+    {
+     "en": "je n'ai pas bien saisi",
+     "pt": "não captei bem"
+    },
+    {
+     "en": "c'est-à-dire",
+     "pt": "isto é"
+    },
+    {
+     "en": "à savoir",
+     "pt": "a saber"
+    }
+   ],
+   "material": {
+    "tarefa": "L'examinateur demande : « Selon vous, faudrait-il supprimer les notes à l'école ? » Reformulez sa question pour vérifier que vous l'avez bien comprise, puis répondez.",
+    "segundos": 120,
+    "frases_uteis": [
+     "Si je vous comprends bien,...",
+     "Autrement dit,...",
+     "Pourriez-vous préciser ?",
+     "Que voulez-vous dire par là ?"
+    ],
+    "modelo": "Si je vous comprends bien, vous me demandez si l'on devrait supprimer complètement les notes. Je dirais plutôt qu'il faudrait les compléter par une évaluation plus détaillée, car une note seule ne montre pas les progrès de l'élève. Autrement dit, je suis favorable à une évaluation plus riche, pas à une école sans repères."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Vous n'avez pas compris la question. Quelle est la meilleure réaction ?",
+     "op": [
+      "Quoi ?",
+      "Pardon, je n'ai pas bien saisi la question ; pourriez-vous la reformuler, s'il vous plaît ?",
+      "Je passe.",
+      "(Silence de dix secondes)"
+     ],
+     "r": 1,
+     "exp": "Pedir reformulação com educação é bem avaliado."
+    },
+    {
+     "t": "gap",
+     "q": "Si je vous ___ bien, vous pensez que l'école est trop rigide. (COMPRENDRE)",
+     "resp": [
+      "comprends"
+     ],
+     "exp": "Si je vous comprends bien: présent (si + presente).",
+     "dica": "COMPRENDRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Si je vous comprends bien, vous voulez dire que cette réforme est inutile.",
+     "exp": "Comprends: [kon-pran] nasal; voulez-vous dire: ligue vous voulez."
+    },
+    {
+     "t": "mc",
+     "q": "« Autrement dit » introduit :",
+     "op": [
+      "une opposition",
+      "une cause",
+      "une reformulation",
+      "une concession"
+     ],
+     "r": 2,
+     "exp": "Autrement dit = em outras palavras (reformulação)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Pourriez-vous",
+      "préciser",
+      "ce",
+      "que",
+      "vous",
+      "entendez",
+      "par",
+      "là"
+     ],
+     "resp": "Pourriez-vous préciser ce que vous entendez par là",
+     "exp": "Pourriez-vous + infinitif = pedido educado."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Autrement dit, vous estimez que les avantages ne compensent pas les risques.",
+     "exp": "Autrement: [o-tre-man]; estimez: [ès-ti-mé]."
+    },
+    {
+     "t": "gap",
+     "q": "Que voulez-vous dire ___ là ?",
+     "resp": [
+      "par"
+     ],
+     "exp": "Que voulez-vous dire par là ? = o que quer dizer com isso?"
+    },
+    {
+     "t": "mc",
+     "q": "L'examinateur : « Vous parlez d'équilibre, mais c'est vague. » Quelle est la meilleure réponse ?",
+     "op": [
+      "Vous avez raison, je précise : par équilibre, j'entends deux jours de télétravail et trois jours au bureau.",
+      "C'est vous qui êtes vague.",
+      "Je ne sais pas.",
+      "C'est comme ça, c'est tout."
+     ],
+     "r": 0,
+     "exp": "Aceite a crítica e dê um exemplo concreto."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Reformule a pergunta (si je vous comprends bien...) e depois responda.",
+     "frase": "L'examinateur : « Selon vous, il faudrait supprimer les notes à l'école ? » Reformulez sa question avant d'y répondre.",
+     "modelo": "Si je vous comprends bien, vous me demandez si l'on devrait supprimer complètement les notes. Je dirais plutôt qu'il faudrait les compléter par une évaluation plus détaillée, car une note seule ne montre pas les progrès de l'élève.",
+     "min": 28,
+     "chave": [
+      "comprends",
+      "demandez",
+      "autrement",
+      "notes",
+      "précis"
+     ],
+     "exp": "Reformule primeiro, depois responda com condicional."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Liaison, enchaînements et intonation d'insistance",
+   "objetivo": "Melhorar a fluidez da fala com liaisons corretas, enchaînement e entonação para destacar ideias.",
+   "foco": "Liaison obligatoire/interdite, enchaînement, intonation montante et descendante",
+   "explicacao": [
+    "Liaison obrigatória: artigo ou adjetivo + substantivo (les_amis [lez-ami], un_homme), pronome + verbo (vous_avez, ils_ont), depois de palavras curtas (très_important). O s ou x faz [z]; d faz [t].",
+    "Liaison proibida: depois de et (et | il), antes de h aspiré (les | héros), depois de nome singular + palavra (un étudiant | intelligent). Enchaînement: a consoante final passa para a vogal seguinte (elle_a, il_est).",
+    "Entonação: o grupo de sentido sobe quando a frase continua (Dans un premier temps ↗) e desce no fim (...les limites ↘). Para enfatizar, faça uma pausa antes do ponto-chave e articule mais forte a primeira sílaba.",
+    "Erros de brasileiros: pronunciar o s final de 'les' sem ligar, achatar as nasais e fazer o u como ou."
+   ],
+   "vocab": [
+    {
+     "en": "la liaison",
+     "pt": "a ligação entre palavras"
+    },
+    {
+     "en": "l'enchaînement",
+     "pt": "o encadeamento consoante-vogal"
+    },
+    {
+     "en": "le h aspiré",
+     "pt": "h aspirado (sem liaison)"
+    },
+    {
+     "en": "un groupe de sens",
+     "pt": "grupo de sentido"
+    },
+    {
+     "en": "mettre l'accent sur",
+     "pt": "enfatizar"
+    },
+    {
+     "en": "la montée mélodique",
+     "pt": "a subida da voz"
+    },
+    {
+     "en": "la chute",
+     "pt": "a queda da voz"
+    },
+    {
+     "en": "articuler",
+     "pt": "articular"
+    }
+   ],
+   "material": {
+    "tarefa": "Document : tribune « Apprendre une langue étrangère, un luxe ? ». Expliquez en 60 secondes pourquoi il est important d'apprendre une langue étrangère. Soignez les liaisons et l'intonation.",
+    "segundos": 90,
+    "frases_uteis": [
+     "Il est très important que...",
+     "Les employeurs apprécient...",
+     "C'est aussi une ouverture sur...",
+     "Ils ont des idées intéressantes..."
+    ],
+    "modelo": "Il est très important d'apprendre une langue étrangère, parce que cela ouvre des portes sur le plan professionnel. Les employeurs apprécient les candidats qui ont une bonne maîtrise de plusieurs langues, et c'est aussi une ouverture sur d'autres cultures."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Dans « vous avez raison », où se fait la liaison ?",
+     "op": [
+      "Entre « avez » et « raison ».",
+      "Il n'y a aucune liaison.",
+      "Partout, entre tous les mots.",
+      "Entre « vous » et « avez » : [vu-za-vé]."
+     ],
+     "r": 3,
+     "exp": "Pronome + verbo: liaison obrigatória [z]."
+    },
+    {
+     "t": "gap",
+     "q": "Ils ___ des idées très intéressantes.",
+     "resp": [
+      "ont"
+     ],
+     "exp": "Ils ont [il-zon] com liaison; ils sont é [il-son] sem liaison.",
+     "ouvir": "Ils ont des idées très intéressantes."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Les enjeux sont très importants pour les enfants et pour les adultes.",
+     "exp": "Ligações: les_enjeux [lé-zan-jø]; très_importants [trè-zin-por-tan]."
+    },
+    {
+     "t": "mc",
+     "q": "Où ne faut-il PAS faire de liaison ?",
+     "op": [
+      "les amis",
+      "ils arrivent",
+      "les | héros (h aspiré)",
+      "un ancien élève"
+     ],
+     "r": 2,
+     "exp": "Antes de h aspirado não há liaison: les | héros."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "C'est",
+      "un",
+      "enjeu",
+      "très",
+      "important",
+      "pour",
+      "les",
+      "adolescents"
+     ],
+     "resp": "C'est un enjeu très important pour les adolescents",
+     "exp": "Liaisons: c'est_un_enjeu; très_important; les_adolescents."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Il est absolument essentiel que chacun ait un avis.",
+     "exp": "Absolument: [ab-so-ly-man]; essentiel [é-san-syèl]; que chacun ait: sem pausa."
+    },
+    {
+     "t": "gap",
+     "q": "Pour insister, on place l'accent sur la ___ syllabe du groupe.",
+     "resp": [
+      "dernière"
+     ],
+     "exp": "Em francês o acento de grupo cai na última sílaba pronunciada."
+    },
+    {
+     "t": "mc",
+     "q": "Que faire pour mettre en valeur une idée importante dans un débat ?",
+     "op": [
+      "Parler beaucoup plus vite.",
+      "Marquer une courte pause avant le mot clé, bien l'articuler et faire retomber la voix à la fin de la phrase.",
+      "Chuchoter la phrase.",
+      "Allonger toutes les syllabes de la même façon."
+     ],
+     "r": 1,
+     "exp": "Pausa, articulação e queda da voz destacam o ponto principal."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda com boa articulação e liaisons: les_employeurs, très_important.",
+     "frase": "Expliquez en quelques phrases pourquoi, selon vous, il est important d'apprendre une langue étrangère. Faites attention aux liaisons.",
+     "modelo": "Il est très important d'apprendre une langue étrangère, parce que cela ouvre des portes sur le plan professionnel. Les employeurs apprécient les candidats qui ont une bonne maîtrise de plusieurs langues, et c'est aussi une ouverture sur d'autres cultures.",
+     "min": 28,
+     "chave": [
+      "langue",
+      "important",
+      "parce que",
+      "employeurs",
+      "culture",
+      "professionnel"
+     ],
+     "exp": "Fale devagar e ligue as palavras: les_employeurs, c'est_aussi."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Fluidité : pauses, hésitations utiles, autocorrection",
+   "objetivo": "Ganhar tempo sem perder naturalidade e corrigir-se com elegância.",
+   "foco": "Eh bien, disons que, comment dire; ou plutôt, je veux dire",
+   "explicacao": [
+    "Silêncio longo e muitos 'euh' derrubam a nota de fluência. Use marcadores de hesitação útil: Eh bien..., Disons que..., Comment dire..., C'est une bonne question, laissez-moi réfléchir.",
+    "Autocorreção elegante: ... ou plutôt..., ... je veux dire..., ... enfin... Exemplo: Il y a dix ans, ou plutôt quinze ans, ce métier n'existait pas.",
+    "Pausa certa: depois de um grupo de sentido (por vírgula), não no meio de um grupo. Respire nas fronteiras: Dans un premier temps / j'examinerai / les avantages.",
+    "Evite tradução palavra por palavra do português. Se faltar uma palavra, explique com outra: c'est-à-dire que..., autrement dit..."
+   ],
+   "vocab": [
+    {
+     "en": "eh bien",
+     "pt": "pois bem"
+    },
+    {
+     "en": "disons que",
+     "pt": "digamos que"
+    },
+    {
+     "en": "comment dire",
+     "pt": "como dizer"
+    },
+    {
+     "en": "ou plutôt",
+     "pt": "ou melhor"
+    },
+    {
+     "en": "je veux dire",
+     "pt": "quero dizer"
+    },
+    {
+     "en": "c'est une bonne question",
+     "pt": "é uma boa pergunta"
+    },
+    {
+     "en": "laissez-moi réfléchir",
+     "pt": "deixe-me pensar"
+    },
+    {
+     "en": "en fait",
+     "pt": "na verdade"
+    }
+   ],
+   "material": {
+    "tarefa": "Document : tribune « Quel travail demain ? ». Parlez 90 secondes de l'avenir du travail en utilisant au moins deux marqueurs d'hésitation utiles ou d'autocorrection.",
+    "segundos": 120,
+    "frases_uteis": [
+     "Eh bien, disons que...",
+     "Comment dire...",
+     "...ou plutôt...",
+     "Laissez-moi réfléchir un instant."
+    ],
+    "modelo": "Eh bien, disons que le travail de demain sera plus flexible, ou plutôt plus connecté. Comment dire... les salariés auront davantage de liberté, mais ils devront aussi savoir se déconnecter. C'est, je pense, un vrai défi pour les entreprises."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "L'examinateur : « Quel est, selon vous, le plus grand défi de notre époque ? » Vous avez besoin de temps. Quelle est la meilleure réaction ?",
+     "op": [
+      "Euh... euh... euh... euh...",
+      "(Silence)",
+      "Je sais pas.",
+      "C'est une bonne question... Disons que, pour ma part, je placerais en premier le défi climatique."
+     ],
+     "r": 3,
+     "exp": "Marcador útil + resposta estruturada ganha tempo sem perder pontos."
+    },
+    {
+     "t": "gap",
+     "q": "Il y a dix ans, ou ___, quinze ans, ce métier n'existait pas.",
+     "resp": [
+      "plutôt"
+     ],
+     "exp": "Ou plutôt = ou melhor (autocorreção)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Eh bien, disons que la situation est plus complexe qu'elle n'y paraît.",
+     "exp": "Eh bien: [é byɛ̃]; complexe: [kon-plèks]; paraît: [pa-rè]."
+    },
+    {
+     "t": "mc",
+     "q": "Quel marqueur sert à se reprendre en cours de phrase ?",
+     "op": [
+      "ou plutôt",
+      "alors que",
+      "d'ailleurs",
+      "en revanche"
+     ],
+     "r": 0,
+     "exp": "Ou plutôt corrige o que acabou de ser dito."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Comment",
+      "dire,",
+      "c'est",
+      "un",
+      "problème",
+      "qui",
+      "touche",
+      "surtout",
+      "les",
+      "jeunes"
+     ],
+     "resp": "Comment dire, c'est un problème qui touche surtout les jeunes",
+     "exp": "Comment dire = marcador de hesitação; depois a frase segue normal."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Laissez-moi réfléchir un instant : je dirais que le principal enjeu est l'éducation.",
+     "exp": "Réfléchir: [ré-flé-chir]; instant: nasal [ɛ̃-stan]."
+    },
+    {
+     "t": "gap",
+     "q": "Je veux ___, c'est un peu plus compliqué que cela.",
+     "resp": [
+      "dire"
+     ],
+     "exp": "Je veux dire = quero dizer."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle stratégie améliore la fluidité ?",
+     "op": [
+      "Parler très vite pour ne jamais s'arrêter.",
+      "Répéter la même phrase plusieurs fois.",
+      "Parler en groupes de sens, avec de courtes pauses et des connecteurs.",
+      "Traduire mot à mot du portugais."
+     ],
+     "r": 2,
+     "exp": "Fluência = ritmo contínuo e natural, não velocidade."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Fale do futuro do trabalho usando eh bien, disons que, ou plutôt, comment dire.",
+     "frase": "Parlez une trentaine de secondes de l'avenir du travail, en utilisant au moins deux marqueurs d'hésitation utiles ou d'autocorrection.",
+     "modelo": "Eh bien, disons que le travail de demain sera plus flexible, ou plutôt plus connecté. Comment dire... les salariés auront davantage de liberté, mais ils devront aussi savoir se déconnecter.",
+     "min": 28,
+     "chave": [
+      "disons",
+      "plutôt",
+      "comment dire",
+      "eh bien",
+      "veux dire",
+      "fait"
+     ],
+     "exp": "Dois marcadores bem colocados mostram controle da fala."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Défendre son point de vue face à un contre-argument",
+   "objetivo": "Rebater uma objeção mantendo posição: reconhecer, refutar com argumento e reafirmar.",
+   "foco": "Je vous accorde que... néanmoins; cet argument ne tient pas",
+   "explicacao": [
+    "Quando o examinador contraria sua tese, siga a estrutura: reconhecer (Je vous accorde que...) + refutar (Néanmoins, cet argument ne tient pas, car...) + exemplo + reafirmar (Je reste convaincu(e) que...).",
+    "Ferramentas: Il ne faut pas confondre X et Y ; Au contraire ; Tout de même ; Certes..., mais... ; Cela dit,... Não ceda de imediato: o júri quer ver capacidade de defender.",
+    "Cuidado: prétendre que = afirmar/alegar (não 'pretender'). Vous prétendez que... soa como: o senhor alega que... (um pouco duro). Para algo mais suave, use Vous estimez que...",
+    "Evite generalizações. Prefira uma refutação precisa e um exemplo curto."
+   ],
+   "vocab": [
+    {
+     "en": "je vous accorde que",
+     "pt": "admito que o senhor tem razão em"
+    },
+    {
+     "en": "néanmoins",
+     "pt": "contudo"
+    },
+    {
+     "en": "cet argument ne tient pas",
+     "pt": "esse argumento não se sustenta"
+    },
+    {
+     "en": "il ne faut pas confondre",
+     "pt": "não se deve confundir"
+    },
+    {
+     "en": "au contraire",
+     "pt": "pelo contrário"
+    },
+    {
+     "en": "prétendre que",
+     "pt": "alegar que, afirmar que"
+    },
+    {
+     "en": "cela dit",
+     "pt": "dito isso"
+    },
+    {
+     "en": "rester convaincu que",
+     "pt": "continuar convencido de que"
+    }
+   ],
+   "material": {
+    "tarefa": "L'examinateur affirme : « Interdire les voitures en ville serait injuste pour les travailleurs. » Défendez votre point de vue.",
+    "segundos": 150,
+    "frases_uteis": [
+     "Je vous accorde que...",
+     "Néanmoins, cet argument ne tient pas...",
+     "Il ne faut pas confondre... et...",
+     "Je reste convaincu que..."
+    ],
+    "modelo": "Je vous accorde que certains travailleurs dépendent de leur voiture. Néanmoins, cet argument ne tient pas pour la majorité, puisque des transports en commun fiables existent. Je reste donc convaincu qu'il faut réduire la circulation, par exemple en créant des parkings à l'entrée de la ville."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "L'examinateur : « Les écrans sont mauvais pour tout le monde. » Choisissez la meilleure réfutation.",
+     "op": [
+      "Faux.",
+      "Je vous accorde que l'excès est nocif ; néanmoins, utilisés avec modération, les écrans peuvent favoriser l'apprentissage.",
+      "Vous avez raison, j'ai changé d'avis.",
+      "Je n'ai rien à répondre."
+     ],
+     "r": 1,
+     "exp": "Reconhecer um ponto, refutar e justificar mantém a posição."
+    },
+    {
+     "t": "gap",
+     "q": "Je vous ___ que ce risque existe, néanmoins il reste limité.",
+     "resp": [
+      "accorde"
+     ],
+     "exp": "Je vous accorde que = admito que você tem razão em."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Cet argument ne tient pas, car il ne faut pas confondre usage et abus.",
+     "exp": "Confondre: [kon-fondr(e)]; usage: [y-zaj]."
+    },
+    {
+     "t": "mc",
+     "q": "« Vous prétendez que... » signifie :",
+     "op": [
+      "Vous affirmez que...",
+      "Vous voulez que...",
+      "Vous espérez que...",
+      "Vous attendez que..."
+     ],
+     "r": 0,
+     "exp": "Prétendre que = alegar que (falso cognato de 'pretender')."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "vous",
+      "accorde",
+      "ce",
+      "point,",
+      "néanmoins",
+      "je",
+      "reste",
+      "convaincu",
+      "du",
+      "contraire"
+     ],
+     "resp": "Je vous accorde ce point, néanmoins je reste convaincu du contraire",
+     "exp": "Je vous accorde + néanmoins = concessão e manutenção da tese."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Certes, ce changement coûte cher, mais il rapportera bien davantage à long terme.",
+     "exp": "Rapportera: [ra-por-t(e)-ra]; davantage: [da-van-taj]."
+    },
+    {
+     "t": "gap",
+     "q": "Il ne faut pas ___ la fatigue et la paresse. (CONFONDRE)",
+     "resp": [
+      "confondre"
+     ],
+     "exp": "Il ne faut pas confondre X et Y.",
+     "dica": "CONFONDRE"
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la meilleure structure pour répondre à un contre-argument ?",
+     "op": [
+      "Répéter la même idée plus fort.",
+      "Changer tout de suite d'avis.",
+      "Parler d'un autre sujet.",
+      "Reconnaître un point, réfuter avec un argument ou un exemple, puis réaffirmer sa position."
+     ],
+     "r": 3,
+     "exp": "Reconhecer, refutar, reafirmar: estrutura de debate."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Reconheça um ponto, refute com argumento/exemplo e reafirme sua posição.",
+     "frase": "L'examinateur : « Interdire les voitures en ville serait injuste pour les travailleurs. » Défendez votre point de vue.",
+     "modelo": "Je vous accorde que certains travailleurs dépendent de leur voiture. Néanmoins, cet argument ne tient pas pour la majorité, puisque des transports en commun fiables existent. Je reste donc convaincu qu'il faut réduire la circulation.",
+     "min": 30,
+     "chave": [
+      "accorde",
+      "néanmoins",
+      "convaincu",
+      "argument",
+      "certes",
+      "cependant"
+     ],
+     "exp": "Estrutura: concessão, refutação, reafirmação."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado : exposé argumenté et débat (DELF B2)",
+   "objetivo": "Treinar a prova completa: apresentar o documento, argumentar com plano e debater com o examinador.",
+   "foco": "Exposé + débat; problématique, plan, point de vue, nuance, reformulation",
+   "explicacao": [
+    "Formato real: 30 minutos de preparação, depois cerca de 20 minutos: exposé de uns 8 a 10 minutos e débat com o examinador. Faça o simulado com cronômetro.",
+    "Roteiro: 1) accroche + présentation du document ; 2) problématique ; 3) annonce du plan ; 4) 2 ou 3 parties com argumentos e exemplos ; 5) conclusion com ouverture ; 6) débat: reconhecer, nuançar, reformular.",
+    "Critérios: prononciation et fluidité, lexique, morphosyntaxe (subjonctif, conditionnel), capacité à argumenter et interagir, registre (vous).",
+    "Se travar, use marcadores (Eh bien, disons que...) e peça precisão (Pourriez-vous préciser ?). Nunca fique em silêncio."
+   ],
+   "vocab": [
+    {
+     "en": "l'exposé",
+     "pt": "a exposição oral"
+    },
+    {
+     "en": "le débat",
+     "pt": "o debate"
+    },
+    {
+     "en": "la problématique",
+     "pt": "a problemática"
+    },
+    {
+     "en": "dégager",
+     "pt": "extrair, identificar"
+    },
+    {
+     "en": "étayer",
+     "pt": "sustentar com provas"
+    },
+    {
+     "en": "nuancer",
+     "pt": "nuançar"
+    },
+    {
+     "en": "concéder",
+     "pt": "conceder"
+    },
+    {
+     "en": "réaffirmer",
+     "pt": "reafirmar"
+    }
+   ],
+   "material": {
+    "tarefa": "Document (extrait) : tribune « Devoirs à la maison : stop ou encore ? », parue dans un quotidien. L'auteure, enseignante, écrit : « Les devoirs creusent les inégalités : l'élève qui dispose d'un bureau calme et de parents disponibles réussit mieux que celui qui travaille dans une pièce commune. Pourtant, supprimer tout travail personnel serait dangereux : apprendre à s'organiser seul prépare à l'autonomie exigée à l'université. Peut-être faudrait-il faire les devoirs à l'école, encadrés. » Consigne : présentez le document, dégagez la problématique, annoncez votre plan, défendez votre point de vue avec des exemples, puis débattez avec l'examinateur.",
+    "segundos": 240,
+    "frases_uteis": [
+     "Le document que j'ai choisi est...",
+     "La question qui se pose est de savoir si...",
+     "Dans un premier temps,... ensuite,... enfin,...",
+     "J'entends bien, mais permettez-moi de nuancer..."
+    ],
+    "modelo": "Bonjour. Le document que j'ai choisi est une tribune parue dans un quotidien, dans laquelle une enseignante s'interroge sur l'utilité des devoirs à la maison. La question qui se pose est de savoir dans quelle mesure on peut développer l'autonomie des élèves sans creuser les inégalités. Dans un premier temps, j'examinerai les limites des devoirs ; ensuite, j'aborderai leurs atouts ; enfin, je défendrai une solution équilibrée. D'une part, les devoirs dépendent des conditions de vie de chacun : un élève sans bureau calme est désavantagé. D'autre part, ils apprennent à s'organiser. Pour ma part, je pense qu'il faudrait que les devoirs soient faits à l'école, avec un adulte. Si c'était le cas, tous les élèves auraient les mêmes chances. Pour conclure, on peut se demander si l'école de demain ne devrait pas repenser entièrement le temps de travail des élèves."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle problématique dégage le mieux le document ?",
+     "op": [
+      "Les devoirs sont fatigants.",
+      "Comment concilier l'autonomie que développent les devoirs avec l'égalité entre les élèves ?",
+      "Les enseignants travaillent trop.",
+      "Faut-il aller à l'université ?"
+     ],
+     "r": 1,
+     "exp": "A problemática reúne as duas tensões do texto: autonomia x igualdade."
+    },
+    {
+     "t": "gap",
+     "q": "Certes, les devoirs développent l'autonomie ; ___, ils creusent les inégalités.",
+     "resp": [
+      "en revanche",
+      "cependant",
+      "pourtant",
+      "toutefois",
+      "néanmoins"
+     ],
+     "exp": "Conectores de oposição: en revanche, cependant, toutefois, néanmoins."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça a introdução completa: documento, problemática e plano em três partes.",
+     "frase": "Présentez le document (nature, source, thème), dégagez la problématique, puis annoncez votre plan.",
+     "modelo": "Le document est une tribune parue dans un quotidien, dans laquelle une enseignante s'interroge sur les devoirs à la maison. La question qui se pose est de savoir dans quelle mesure on peut développer l'autonomie sans creuser les inégalités. Dans un premier temps, j'examinerai les limites des devoirs ; ensuite, leurs atouts ; enfin, je proposerai une solution.",
+     "min": 40,
+     "chave": [
+      "tribune",
+      "document",
+      "question",
+      "mesure",
+      "premier",
+      "ensuite",
+      "enfin",
+      "plan"
+     ],
+     "exp": "Natureza e fonte, problemática, plano com marcadores."
+    },
+    {
+     "t": "mc",
+     "q": "Quel plan est le plus cohérent pour cet exposé ?",
+     "op": [
+      "1) Les devoirs ; 2) Les devoirs ; 3) Les devoirs.",
+      "1) Histoire de l'école ; 2) Les notes ; 3) Mes vacances.",
+      "1) Les limites des devoirs (inégalités) ; 2) Leurs atouts (autonomie) ; 3) Une solution : des devoirs encadrés à l'école.",
+      "1) Résumé mot à mot ; 2) Résumé encore ; 3) Résumé de nouveau."
+     ],
+     "r": 2,
+     "exp": "Plano equilibrado: dois lados e uma saída pessoal."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Dans",
+      "un",
+      "premier",
+      "temps,",
+      "j'examinerai",
+      "les",
+      "limites",
+      "des",
+      "devoirs",
+      "à",
+      "la",
+      "maison"
+     ],
+     "resp": "Dans un premier temps, j'examinerai les limites des devoirs à la maison",
+     "exp": "Marcador + futuro simples (j'examinerai)."
+    },
+    {
+     "t": "gap",
+     "q": "Il faudrait que les devoirs ___ faits à l'école. (ÊTRE)",
+     "resp": [
+      "soient"
+     ],
+     "exp": "Il faudrait que + subjuntivo: soient.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Desenvolva a primeira parte com argumento, exemplo e conector.",
+     "frase": "Développez votre première partie : donnez un argument et un exemple concret.",
+     "modelo": "D'une part, les devoirs creusent les inégalités, car tous les élèves n'ont pas les mêmes conditions de travail. Par exemple, un élève qui partage une pièce avec trois frères ne peut pas se concentrer. Selon moi, cela explique que certains enfants ne progressent pas autant que les autres.",
+     "min": 35,
+     "chave": [
+      "inégalités",
+      "exemple",
+      "car",
+      "d'une part",
+      "selon",
+      "conditions"
+     ],
+     "exp": "Argumento, exemplo com par exemple e conector de causa."
+    },
+    {
+     "t": "mc",
+     "q": "L'examinateur : « Mais si l'on supprime les devoirs, les élèves n'apprendront plus rien ! » Quelle est la meilleure réaction ?",
+     "op": [
+      "J'entends bien votre inquiétude, mais permettez-moi de nuancer : je ne propose pas de supprimer le travail personnel, mais de l'encadrer à l'école.",
+      "Vous avez tort, c'est faux.",
+      "Oui, vous avez raison, j'abandonne.",
+      "Je n'ai pas compris."
+     ],
+     "r": 0,
+     "exp": "Reconhecer + nuançar + reafirmar a proposta."
+    },
+    {
+     "t": "gap",
+     "q": "Si les devoirs ___ faits à l'école, tous les élèves auraient les mêmes chances. (ÊTRE)",
+     "resp": [
+      "étaient"
+     ],
+     "exp": "Si + imparfait: étaient; depois condicional: auraient.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
+     "frase": "Je vous accorde que l'autonomie est importante ; néanmoins, l'égalité des chances me paraît prioritaire.",
+     "exp": "Néanmoins: [né-an-mwɛ̃]; égalité: [é-ga-li-té]."
+    },
+    {
+     "t": "mc",
+     "q": "Vous voulez vérifier que vous avez compris la question. Quelle phrase utilisez-vous ?",
+     "op": [
+      "Quoi ?",
+      "Répétez tout depuis le début.",
+      "Je vous comprends pas.",
+      "Si je vous comprends bien, vous me demandez si les devoirs sont toujours injustes ?"
+     ],
+     "r": 3,
+     "exp": "Reformular mostra compreensão e dá tempo para pensar."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Conclua reafirmando sua posição e terminando com uma abertura.",
+     "frase": "Concluez le débat : réaffirmez votre point de vue en quelques phrases, avec une ouverture.",
+     "modelo": "Pour conclure, je reste convaincu que les devoirs ne devraient pas dépendre des conditions de vie de chaque élève. Il faudrait que l'école encadre le travail personnel pour que tous aient les mêmes chances. On peut se demander si, demain, l'école ne devrait pas repenser entièrement le temps de travail.",
+     "min": 35,
+     "chave": [
+      "conclure",
+      "convaincu",
+      "faudrait",
+      "ouverture",
+      "demander",
+      "pour que"
+     ],
+     "exp": "Reafirme com je reste convaincu(e) e termine com on peut se demander si."
+    }
+   ]
+  }
+ ]
+}
