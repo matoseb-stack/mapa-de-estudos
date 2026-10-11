@@ -10,7 +10,7 @@
    "foco": "Nature, source et thème du document; il s'agit de, traiter de, s'interroger sur",
    "explicacao": [
     "No DELF B2 você recebe um artigo de opinião e tem 30 minutos para se preparar. O exposé começa sempre identificando o documento: natureza (article d'opinion, tribune), fonte (un quotidien, un magazine) e tema.",
-    "Fórmulas úteis: Le document que j'ai choisi est une tribune parue dans... ; Il s'agit d'un article qui traite de... ; L'auteur s'interroge sur... Em português diríamos 'fala sobre', mas em francês é traiter de (sem preposição extra).",
+    "Fórmulas úteis: Le document que j'ai choisi est une tribune parue dans... ; Il s'agit d'un article qui traite de... ; L'auteur s'interroge sur... Em português dizemos 'fala sobre', mas em francês use traiter de ou porter sur (nunca 'parler sur').",
     "Cuidado: il s'agit de pede de + o que vem depois (Il s'agit du télétravail et de ses effets). Não se diz 'ça s'agit'. E 'actuellement' significa 'atualmente', nunca 'de fato'.",
     "Evite 'Je vais parler sur le document' (calco do português). Prefira: Je vais vous présenter..."
    ],
@@ -238,7 +238,8 @@
      "t": "gap",
      "q": "On peut se demander ___ mesure les réseaux sociaux influencent nos choix.",
      "resp": [
-      "dans quelle"
+      "dans quelle",
+      "en quelle"
      ],
      "exp": "Dans quelle mesure = em que medida."
     },
@@ -449,11 +450,11 @@
     },
     {
      "t": "gap",
-     "q": "Dans un ___ temps, je présenterai les causes du phénomène.",
+     "q": "Dans un ___ temps, je présenterai les causes du phénomène ; dans un second temps, les conséquences.",
      "resp": [
       "premier"
      ],
-     "exp": "Dans un premier temps (masculino: temps)."
+     "exp": "Dans un premier temps… dans un second temps: par de marcadores. Masculino: un premier temps."
     },
     {
      "t": "mc",
@@ -1208,7 +1209,7 @@
      "modo": "repetir",
      "q": "Repita a frase com calma, fazendo as pausas e as ligações.",
      "frase": "Je dirais plutôt que cette mesure serait utile si elle était mieux expliquée.",
-     "exp": "Dirais: [di-rè]; serait: [s(e)-rè]; é fechado/aberto no final."
+     "exp": "Dirais: [di-rè]; serait: [s(e)-rè]; as terminações -ais e -ait soam /ɛ/ (é aberto)."
     },
     {
      "t": "mc",
@@ -1334,7 +1335,7 @@
     }
    ],
    "material": {
-    "tarefa": "Document : tribune « Le travail à distance, un progrès ? ». Faites une conclusion d'exposé (une dizaine de secondes) : bilan, point de vue, ouverture.",
+    "tarefa": "Document : tribune « Le travail à distance, un progrès ? ». Faites une conclusion d'exposé (quelques phrases) : bilan, point de vue, ouverture.",
     "segundos": 90,
     "frases_uteis": [
      "Pour conclure,...",
@@ -1432,7 +1433,7 @@
      "t": "speak",
      "modo": "responder",
      "q": "Faça uma conclusão curta: balanço, sua posição e uma abertura final.",
-     "frase": "Concluez en une dizaine de secondes un exposé sur le travail à distance : bilan, point de vue, ouverture.",
+     "frase": "Concluez en quelques phrases un exposé sur le travail à distance : bilan, point de vue, ouverture.",
      "modelo": "Pour conclure, le travail à distance présente de vrais avantages, mais il demande une bonne organisation. Pour ma part, je pense qu'il faut un équilibre entre présentiel et distanciel. On peut se demander si, demain, les bureaux auront encore la même utilité.",
      "min": 28,
      "chave": [
@@ -1888,11 +1889,11 @@
     },
     {
      "t": "gap",
-     "q": "Pour insister, on place l'accent sur la ___ syllabe du groupe.",
+     "q": "En français, l'accent normal d'un groupe de sens tombe sur la ___ syllabe prononcée.",
      "resp": [
       "dernière"
      ],
-     "exp": "Em francês o acento de grupo cai na última sílaba pronunciada."
+     "exp": "Em francês, o acento do grupo cai na última sílaba pronunciada (c'est impor-TANT). Só na ênfase expressiva se reforça a primeira sílaba (c'est FOR-midable)."
     },
     {
      "t": "mc",
@@ -2322,7 +2323,8 @@
       "cependant",
       "pourtant",
       "toutefois",
-      "néanmoins"
+      "néanmoins",
+      "mais"
      ],
      "exp": "Conectores de oposição: en revanche, cependant, toutefois, néanmoins."
     },
