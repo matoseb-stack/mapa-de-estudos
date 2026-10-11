@@ -371,7 +371,9 @@
      "t": "gap",
      "q": "Plusieurs lycées ont décalé la rentrée à neuf heures, ___ une heure plus tard.",
      "resp": [
-      "soit"
+      "soit",
+      "c'est-à-dire",
+      "autrement dit"
      ],
      "exp": "'Soit' = ou seja, isto é. Reformula a informação dando o valor do atraso: uma hora."
     },
@@ -755,7 +757,7 @@
      "q": "Ouça a frase e repita em voz alta.",
      "frase": "L'Insee publie ce matin le taux de chômage du troisième trimestre.",
      "ouvir": "L'Insee publie ce matin le taux de chômage du troisième trimestre.",
-     "exp": "'Insee' lê-se /ɛ̃-se/ (in-sé) ou 'in-zé'. 'Chômage': ch = /ʃ/ e 'ô' fechado. 'Trimestre': o e final é mudo."
+     "exp": "'Insee' lê-se /ɛ̃se/ (in-sé), como uma palavra. 'Chômage': ch = /ʃ/ e 'ô' fechado. 'Trimestre': o e final é mudo."
     },
     {
      "t": "mc",
@@ -1036,7 +1038,7 @@
     "Na ironia o locutor elogia para criticar: 'Quelle belle invention !', 'Quelle productivité !'. Se o conteúdo é absurdo e o tom exagerado, desconfie do sentido literal.",
     "Sinais: exclamações, superlativos ('remarquable'), 'du moins en théorie', 'je les crois sur parole'. A frase seguinte costuma revelar o verdadeiro pensamento.",
     "Sous-entendu = o que é dado a entender sem ser dito: o empregador oferece um app de meditação 'para meditar sobre os dossiês atrasados' (reprovação implícita).",
-    "Falso cognato: 'disponibilité' é disponibilidade para o trabalho (estar sempre acessível), não 'disponível' como produto à venda."
+    "Atenção a 'la disponibilité permanente': aqui significa estar sempre acessível ao empregador. É o sentido negativo que a crônica dá ao termo."
    ],
    "vocab": [
     {
@@ -1281,7 +1283,7 @@
     "falas": [
      {
       "p": "A",
-      "t": "Aujourd'hui, une question : les musées virtuels peuvent-ils remplacer les salles réelles ? Madame Perrin, conservatrice, vous êtes sceptique."
+      "t": "Aujourd'hui, une question : les musées virtuels peuvent-ils remplacer les salles réelles ? Madame Perrin, conservatrice, vous êtes sceptique. Monsieur Aubry, responsable des publics numériques, vous l'êtes moins."
      },
      {
       "p": "B",
@@ -1662,7 +1664,7 @@
     "Entrevistadores costumam resumir de forma exagerada ('Donc le métier disparaît ?'). O entrevistado corrige: 'Je n'ai pas dit cela. Il change...'. A resposta de prova está na correção, não no resumo.",
     "'Disons que' suaviza uma afirmação; 'évidemment' pode ser irônico; 'Suffisante pour qui ?' é uma pergunta retórica que contesta a premissa.",
     "O implícito aparece em detalhes: tarifa 'inférieur' = trabalho desvalorizado. Pergunte: que consequência a pessoa deixa entender?",
-    "Falso cognato: 'un brevet' é uma patente (e também um diploma escolar), não 'breve'. 'Prêter à sourire' = fazer sorrir (de modo irônico)."
+    "Falso cognato: 'un brevet' é uma patente (e também um diploma escolar), não 'breve'. 'Cela prête à sourire' = é risível, dá vontade de sorrir (com ironia)."
    ],
    "vocab": [
     {
@@ -1921,7 +1923,7 @@
      },
      {
       "p": "C",
-      "t": "Si vous me laissiez terminer, madame. Je disais que ce parc créera quatre cents emplois pendant la construction, et cent vingt emplois permanents."
+      "t": "Si vous me laissiez terminer, madame. Je disais que ce parc créerait quatre cents emplois pendant la construction, et cent vingt emplois permanents."
      },
      {
       "p": "B",
@@ -1995,8 +1997,8 @@
      "t": "speak",
      "modo": "repetir",
      "q": "Ouça a frase e repita em voz alta.",
-     "frase": "Si vous me laissiez terminer, madame, je disais que ce parc créera quatre cents emplois.",
-     "ouvir": "Si vous me laissiez terminer, madame, je disais que ce parc créera quatre cents emplois.",
+     "frase": "Si vous me laissiez terminer, madame, je disais que ce parc créerait quatre cents emplois.",
+     "ouvir": "Si vous me laissiez terminer, madame, je disais que ce parc créerait quatre cents emplois.",
      "exp": "'Laissiez' termina em /e/ (imparfait). 'Quatre cents' sem liaison. Mantenha o tom firme mas educado."
     },
     {
@@ -2252,7 +2254,7 @@
     },
     {
      "t": "gap",
-     "q": "La retraitée évoque une réunion à laquelle ___ personnes ont assisté, dans une commune de douze mille habitants.",
+     "q": "La femme interrogée évoque une réunion à laquelle ___ personnes ont assisté, dans une commune de douze mille habitants.",
      "resp": [
       "quarante",
       "40"
@@ -2281,7 +2283,7 @@
     },
     {
      "t": "mc",
-     "q": "Que pense la retraitée du pari du jeune homme sur la date de livraison ?",
+     "q": "Que pense la femme interrogée du pari du jeune homme sur la date de livraison ?",
      "op": [
       "Elle le trouve ridicule.",
       "Elle propose une autre date.",
@@ -2442,8 +2444,7 @@
      "q": "À Lyon, l'équipe a recensé ___ espèces de plantes sauvages en un an (en chiffres).",
      "resp": [
       "312",
-      "trois cent douze",
-      "trois cents douze"
+      "trois cent douze"
      ],
      "exp": "312: 'trois cent douze'. Anote em algarismos para não errar.",
      "dica": "un nombre"
@@ -2496,10 +2497,10 @@
    "objetivo": "Medir o grau de convicção do locutor (possível, provável, certo) para responder a perguntas sobre posição e nuance.",
    "foco": "Modalisation : il se pourrait que, force est de constater, tout porte à croire, il est peu vraisemblable",
    "explicacao": [
-    "A escala de certeza: 'il se pourrait que' (possível, subjuntivo) < 'il est probable que' < 'tout porte à croire que' < 'il est certain que'. Negativos: 'il est peu vraisemblable que' (subjuntivo).",
+    "A escala de certeza: 'il se pourrait que' (possível, subjuntivo) < 'il est probable que' < 'tout porte à croire que' < 'il est certain que'. Negativos: 'il est peu vraisemblable que' (subjuntivo). Atenção: 'il est probable que' leva INDICATIVO.",
     "'Force est de constater que' = é preciso reconhecer que (fato inegável). Diferente de 'il faut constater'. 'Je n'irais pas jusque-là' recusa uma generalização.",
     "Registre: 'réservé' ≠ 'hostile'. Quem diz 'plutôt réservé' é prudente, não contra. A prova pede o tom exato.",
-    "Falso cognato: 'lacunaire' = com lacunas, incompleto. 'Infime' = ínfimo, minúsculo."
+    "Vocabulário: 'lacunaire' = com lacunas, incompleto. 'Infime' = ínfimo, minúsculo."
    ],
    "vocab": [
     {
@@ -2576,7 +2577,7 @@
      },
      {
       "p": "B",
-      "t": "Je dirais plutôt réservé. Il est probable que les monnaies locales soient utiles dans de petites communautés, il est peu vraisemblable qu'elles changent la donne à l'échelle d'un pays. Quant à les remplacer par une monnaie numérique publique, c'est une autre question, que je ne trancherai pas ce soir."
+      "t": "Je dirais plutôt réservé. Il est probable que les monnaies locales sont utiles dans de petites communautés, il est peu vraisemblable qu'elles changent la donne à l'échelle d'un pays. Quant à les remplacer par une monnaie numérique publique, c'est une autre question, que je ne trancherai pas ce soir."
      },
      {
       "p": "A",

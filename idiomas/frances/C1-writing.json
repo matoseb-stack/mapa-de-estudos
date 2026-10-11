@@ -80,7 +80,8 @@
      "q": "Une synthèse doit rester ___ : on n'y donne pas son opinion personnelle.",
      "resp": [
       "objective",
-      "neutre"
+      "neutre",
+      "impartiale"
      ],
      "exp": "Como « synthèse » é feminino, o adjetivo concorda: objective. « Neutre » também é aceito.",
      "dica": "OBJECTIF"
@@ -159,12 +160,14 @@
     },
     {
      "t": "gap",
-     "q": "Les deux auteurs ___ sur un point : l'isolement des salariés est réel.",
+     "q": "Les deux auteurs ___ sur un point : le télétravail ne présente pas que des avantages.",
      "resp": [
       "convergent",
-      "s'accordent"
+      "s'accordent",
+      "se rejoignent",
+      "s'entendent"
      ],
-     "exp": "« Converger » (convergent) mostra que os dois textos concordam: um verbo útil para confrontar documentos.",
+     "exp": "« Converger » (convergent) mostra que os dois textos concordam: um verbo útil para confrontar documentos. Aqui, ambos apontam limites (fratura entre categorias e isolamento).",
      "dica": "CONVERGER"
     }
    ]
@@ -290,7 +293,8 @@
      "resp": [
       "recommandée",
       "préconisée",
-      "conseillée"
+      "conseillée",
+      "suggérée"
      ],
      "exp": "Na passiva, o particípio concorda com o sujeito: « une éducation » (fem. sing.) → recommandée.",
      "dica": "RECOMMANDER"
@@ -330,7 +334,9 @@
      "resp": [
       "amplifiées",
       "renforcées",
-      "accélérées"
+      "accélérées",
+      "alimentées",
+      "accrues"
      ],
      "exp": "Particípio como adjetivo: concorda com « les rumeurs » (fem. plural) → amplifiées. Esta técnica evita a repetição de um verbo conjugado.",
      "dica": "AMPLIFIER"
@@ -739,7 +745,9 @@
       "rejette",
       "rejettent",
       "refuse",
-      "refusent"
+      "refusent",
+      "bannit",
+      "bannissent"
      ],
      "exp": "Depois de « ni l'un ni l'autre ne », o verbo pode ficar no singular ou no plural."
     },
@@ -821,7 +829,8 @@
       "cependant",
       "néanmoins",
       "toutefois",
-      "pourtant"
+      "pourtant",
+      "en revanche"
      ],
      "exp": "Conector de concessão: depois da divergência, mostra o ponto em comum."
     }
@@ -877,7 +886,7 @@
     "genero": "synthèse",
     "min": 200,
     "max": 240,
-    "modelo": "Intelligence artificielle et emploi : anticiper plutôt que subir\n\nL'essor de l'intelligence artificielle bouleverse le monde du travail. Les deux documents s'accordent sur l'ampleur des transformations, mais diffèrent sur les moyens d'y répondre.\n\nUn économiste constate que les tâches répétitives sont déjà automatisées dans la banque, l'assurance et le secrétariat, et prévoit qu'un grand nombre d'emplois seront modifiés d'ici dix ans. Il nuance toutefois ce constat en annonçant l'apparition de métiers inédits, tel celui de formateur d'algorithmes, tout en rappelant que les salariés peu qualifiés s'adapteront plus difficilement, faute de compétences techniques facilement transposables.\n\nLe syndicaliste, lui, s'inquiète de l'absence de cadre juridique : certaines entreprises surveillent ou évaluent leur personnel au moyen de ces outils sans l'en avertir. Il réclame donc une négociation collective préalable à toute mise en service, ainsi que l'information préalable de chaque salarié concerné.\n\nTous deux appellent, de fait, à accompagner les travailleurs : le second plaide pour un vaste programme de formation continue, financé par les sociétés qui bénéficient de ces technologies, afin que personne ne soit écarté du marché du travail et que les entreprises assument leur part de responsabilité.\n\nEn somme, la révolution technologique n'est socialement acceptable que si elle s'accompagne de règles et de formation.",
+    "modelo": "Intelligence artificielle et emploi : anticiper plutôt que subir\n\nL'essor de l'intelligence artificielle bouleverse le monde du travail. Les deux documents s'accordent sur l'ampleur des transformations, mais diffèrent sur les moyens d'y répondre.\n\nUn économiste constate que les tâches répétitives sont déjà automatisées dans la banque, l'assurance et le secrétariat, et prévoit qu'un grand nombre d'emplois seront modifiés d'ici dix ans. Il nuance toutefois ce constat en annonçant l'apparition de métiers inédits, tel celui de formateur d'algorithmes, tout en rappelant que les salariés peu qualifiés s'adapteront plus difficilement, faute de compétences techniques facilement transposables.\n\nLe syndicaliste, lui, s'inquiète de l'absence de cadre juridique : certaines entreprises surveillent ou évaluent leur personnel au moyen de ces outils sans l'en avertir. Il réclame donc une négociation collective préalable à toute mise en service, ainsi que l'information préalable de chaque salarié concerné.\n\nFace à ces difficultés, le second auteur propose d'accompagner les travailleurs : il plaide pour un vaste programme de formation continue, financé par les sociétés qui bénéficient de ces technologies, afin que personne ne soit écarté du marché du travail et que les entreprises assument leur part de responsabilité.\n\nEn somme, la révolution technologique n'est socialement acceptable que si elle s'accompagne de règles et de formation.",
     "checklist": [
      "Variei os verbos introdutores (pelo menos 4 diferentes) ?",
      "Cada verbo corresponde à atitude real do autor (déplorer ≠ constater) ?",
@@ -903,7 +912,8 @@
      "q": "L'auteur ___ la hausse du chômage : il la juge regrettable.",
      "resp": [
       "déplore",
-      "regrette"
+      "regrette",
+      "lamente"
      ],
      "exp": "Déplorer = lamentar fortemente. Também seria correto « regretter »."
     },
@@ -999,7 +1009,7 @@
     "Estrutura da synthèse: introdução curta (tema, natureza dos documentos, questão central, anúncio do plano), 2 ou 3 parágrafos temáticos e uma frase final neutra. Não é preciso um parágrafo de conclusão longo.",
     "Título: informativo, nominal e curto (até uns 10 palavras), que cubra os dois documentos. Ex.: « Circuits courts : des atouts réels, une solution partielle ». Nada de « Synthèse de documents » nem de títulos em forma de opinião.",
     "Introdução modelo: Marchés et paniers se multiplient. Les deux documents s'interrogent sur… ; ils en examinent d'abord… puis…",
-    "Após « Aussi » ou « Ainsi » no início da frase, faça a inversão do sujeito: Aussi les experts recommandent-ils… (= c'est pourquoi)."
+    "Após « Aussi » (= c'est pourquoi) no início da frase, faça a inversão do sujeito: Aussi les experts recommandent-ils… Já « Ainsi » (= assim, desse modo) não exige inversão obrigatória."
    ],
    "vocab": [
     {
@@ -1205,7 +1215,7 @@
     "genero": "synthèse",
     "min": 200,
     "max": 240,
-    "modelo": "La semaine de quatre jours : une piste prometteuse mais difficile à généraliser\n\nDes entreprises expérimentent la semaine de quatre jours sans réduction de salaire. Les deux documents évaluent l'intérêt et la faisabilité de cette organisation.\n\nLes résultats des premiers essais, menés dans plusieurs pays, paraissent encourageants et suscitent l'intérêt des directions. Les salariés déclarent ressentir moins de stress, s'investissent davantage et s'absentent moins souvent. Une entreprise du numérique a ainsi conservé sa productivité tout en facilitant ses recrutements, ce qui constitue un avantage non négligeable dans un secteur où la concurrence pour attirer les talents est vive. Le journaliste y voit un remède à l'épuisement professionnel et un argument pour séduire les jeunes diplômés.\n\nL'économiste se montre plus réservé. Dans les secteurs qui exigent une présence continue, comme la santé, l'enseignement ou le commerce, la réduction du temps de présence impose des embauches et alourdit les dépenses. Ailleurs, le travail est parfois simplement condensé sur moins de jours, ce qui rend les journées plus longues et plus éprouvantes.\n\nLa mesure semble donc adaptée à certaines activités, mais sa généralisation menacerait la compétitivité des entreprises, qui devraient alors choisir entre embaucher davantage et conserver leur organisation actuelle, au prix d'une pression accrue sur les équipes.",
+    "modelo": "La semaine de quatre jours : une piste prometteuse mais difficile à généraliser\n\nDes entreprises expérimentent la semaine de quatre jours sans réduction de salaire. Les deux documents évaluent l'intérêt et la faisabilité de cette organisation.\n\nLes résultats des premiers essais, menés dans plusieurs entreprises, paraissent encourageants. Les salariés déclarent ressentir moins de stress, s'investissent davantage et s'absentent moins souvent. Une société de logiciels a ainsi conservé sa productivité tout en facilitant ses recrutements, ce qui lui permet d'attirer plus aisément les jeunes diplômés. Le journaliste y voit un remède à l'épuisement professionnel et un atout pour séduire ces nouveaux talents.\n\nL'économiste se montre plus réservé. Dans les secteurs qui exigent une présence continue, comme la santé, l'enseignement ou le commerce, la réduction du temps de présence impose des embauches et alourdit les dépenses. Ailleurs, le travail est parfois simplement condensé sur moins de jours, ce qui rend les journées plus longues et plus éprouvantes.\n\nLa mesure semble donc adaptée à certaines activités, mais, selon l'économiste, elle ne peut être généralisée sans risque pour la compétitivité des entreprises ; il convient donc de l'adapter secteur par secteur plutôt que de l'imposer partout, sous peine d'alourdir les coûts ou de fatiguer les équipes.",
     "checklist": [
      "Cortei exemplos e números que não são essenciais ?",
      "Meu texto está entre 200 e 240 palavras (contei) ?",
@@ -1281,7 +1291,9 @@
      "resp": [
       "condensé",
       "concentré",
-      "regroupé"
+      "regroupé",
+      "comprimé",
+      "ramassé"
      ],
      "exp": "Particípio masculino singular (« le travail »). « Condensé » mantém a ideia de compressão."
     },
@@ -1442,7 +1454,8 @@
      "t": "gap",
      "q": "Je défends l'idée d'une limitation, ___ qu'elle soit accompagnée d'explications.",
      "resp": [
-      "à condition"
+      "à condition",
+      "pourvu"
      ],
      "exp": "« À condition que » exige o subjuntivo (soit)."
     },
@@ -1610,7 +1623,8 @@
       "or",
       "cependant",
       "pourtant",
-      "néanmoins"
+      "néanmoins",
+      "toutefois"
      ],
      "exp": "« Or » introduz a objeção no plano dialético (ora, porém)."
     },
@@ -1662,7 +1676,7 @@
     "No C1, o registro deve ser soutenu: nada de « ça », « plein de », « un truc », « super », nem « on » em excesso ou negações sem « ne ». Prefira: cela, de nombreux, un élément, remarquable, nous / l'on.",
     "Subjuntivo: il faut que, il est nécessaire que, bien que, quoique, pour que, afin que, à condition que, avant que, regretter / déplorer que + subjuntivo. Ex.: Il faut que l'école fasse sa part (faire → fasse).",
     "Hipóteses: si + imparfait → conditionnel présent (Si l'école n'intervenait pas, ces langues disparaîtraient) ; si + plus-que-parfait → conditionnel passé (Si l'école avait agi, elles auraient survécu).",
-    "Subjuntivo passado para ação anterior: Je regrette que l'école n'ait pas agi plus tôt. Cuidado: « sensible » = sensível/delicado (ok), mas « sensible à » = atento a ; « éventuel » = possível, nunca « eventual » no sentido de « de vez em quando »."
+    "Subjuntivo passado para ação anterior: Je regrette que l'école n'ait pas agi plus tôt. Cuidado com o falso cognato: « éventuel » = possível, hipotético (e não « eventual » no sentido de « de vez em quando »)."
    ],
    "vocab": [
     {
@@ -1939,7 +1953,8 @@
      "t": "gap",
      "q": "Les îles dépendent de l'avion ; les familles dispersées, ___, s'en servent pour se retrouver.",
      "resp": [
-      "quant à elles"
+      "quant à elles",
+      "pour leur part"
      ],
      "exp": "« Quant à » + pronome tônico: quant à elles (= as famílias, feminino plural)."
     },
@@ -2430,7 +2445,8 @@
      "q": "Le premier texte vante les bénéfices ; ___, le second invite à la prudence.",
      "resp": [
       "en revanche",
-      "à l'inverse"
+      "à l'inverse",
+      "pour sa part"
      ],
      "exp": "Conectores de oposição entre os dois documentos."
     },

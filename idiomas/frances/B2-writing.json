@@ -58,7 +58,7 @@
      "Tenho introdução, dois ou três parágrafos de desenvolvimento e conclusão, separados por linhas em branco?",
      "Cada parágrafo traz um argumento e pelo menos um exemplo?",
      "Escolhi um plano claro (dialético ou temático) e o segui até o fim?",
-     "Contei as palavras (entre 220 e 280) e usei vouvoiement/registro neutro?"
+     "Contei as palavras (entre 220 e 280) e usei registro formal, sem gírias nem contrações orais?"
     ]
    },
    "exercicios": [
@@ -124,7 +124,7 @@
       "puis",
       "ensuite"
      ],
-     "exp": "Para anunciar o plano: d'abord… puis / ensuite… enfin. Evite « depois » traduzido como « après » sozinho."
+     "exp": "Para anunciar o plano: d'abord… puis / ensuite… enfin. Evite « après » sozinho como conector de plano: prefira puis, ensuite ou enfin."
     },
     {
      "t": "speak",
@@ -243,7 +243,7 @@
       "question",
       "problématique"
      ],
-     "exp": "A problématique é a pergunta central. « Cœur » tem o ligature œ; sem acento especial, o app aceita « coeur »."
+     "exp": "A problématique é a pergunta central do texto; « question » também é aceita aqui porque resume o debate."
     },
     {
      "t": "speak",
@@ -407,7 +407,8 @@
       "ainsi",
       "donc",
       "c'est pourquoi",
-      "dès lors"
+      "dès lors",
+      "en conséquence"
      ],
      "exp": "A frase seguinte é a consequência do aumento dos aluguéis. « Par conséquent, » vem com vírgula."
     },
@@ -458,7 +459,8 @@
       "à cause de",
       "en raison de",
       "du fait de",
-      "suite à"
+      "suite à",
+      "à la suite de"
      ],
      "exp": "Fato negativo: « à cause de » (ou « en raison de »). « Grâce à » só serve para algo positivo."
     },
@@ -509,7 +511,7 @@
     "Concessão = você admite um ponto do outro lado antes de defender o seu. Estrutura clássica: Certes, A… mais B. Mostra maturidade argumentativa e é muito valorizada no B2.",
     "Bien que / quoique / encore que exigem SUBJUNTIVO: Bien qu'il soit fatigué, il continue. « Même si » exige INDICATIVO (presente ou imperfeito), nunca subjuntivo nem futuro: Même si le projet coûte cher, il est utile.",
     "Conectores de oposição: cependant, néanmoins, toutefois, pourtant, en revanche (contraste entre dois fatos), or (ora, porém: introduz o fato que muda o raciocínio), tandis que / alors que (contraste na mesma frase).",
-    "Erro de brasileiro: dizer « apesar que » → *malgré que*. Em bom francês: « bien que + subjonctif » ou « malgré + nome » (malgré la pluie)."
+    "Cuidado com « apesar que »: não existe *malgré que* em registro formal. Use « bien que + subjonctif » ou « malgré + nome » (malgré la pluie)."
    ],
    "vocab": [
     {
@@ -676,7 +678,7 @@
     "Cada parágrafo do desenvolvimento segue um modelo: 1) a ideia principal (frase-tópico), 2) a explicação (en effet, cela s'explique par…), 3) o exemplo concreto (par exemple, à titre d'exemple), 4) uma frase de ligação com o argumento seguinte (ainsi, c'est pourquoi).",
     "Um argumento sem exemplo parece vago; um exemplo sem explicação parece solto. Prefira exemplos verificáveis (uma cidade, um país, um estudo, um fato do cotidiano) a « tout le monde sait que… ».",
     "Estruturas úteis: s'expliquer par le fait que…, il suffit de penser à…, prenons le cas de…, cela se vérifie notamment dans…, c'est le cas de…",
-    "Falso cognato: « exemplo » é « exemple » (masculino: un exemple); « un exemplaire » = um exemplar (de livro). Evite também « il a un exemple de… » por « é um exemplo de »: diga « c'est un exemple de… »."
+    "Cuidado: « exemple » é masculino (un exemple); « un exemplaire » = um exemplar (de livro). Para dizer 'é um exemplo de', use « c'est un exemple de… »."
    ],
    "vocab": [
     {
@@ -743,11 +745,13 @@
      "q": "Un paragraphe commence par une idée principale, puis on l'___ et on donne un exemple.",
      "resp": [
       "explique",
-      "développe",
       "illustre",
-      "argumente"
+      "étaye",
+      "justifie",
+      "appuie",
+      "commente"
      ],
-     "exp": "Depois da ideia principal, você a explica ou desenvolve e só então ilustra. Verbo na 3ª pessoa do presente."
+     "exp": "Depois da ideia principal, você a explica ou a justifica (« on l'explique ») e só então dá o exemplo. Verbo na 3ª pessoa do presente, com l' diante de vogal."
     },
     {
      "t": "speak",
@@ -838,9 +842,9 @@
    "objetivo": "Abrir, estruturar e encerrar uma carta formal com as fórmulas e o registro corretos.",
    "foco": "Lettre formelle : Madame, Monsieur, / Je me permets de… / Dans l'attente de… / Veuillez agréer…",
    "explicacao": [
-    "Uma carta formal tem: lugar e data, objet (assunto), apelação (Madame, Monsieur, — sem « Cher »), introdução (motivo da carta), desenvolvimento em parágrafos, pedido final, fórmula de despedida e assinatura. No DELF B2, o registro vale pontos: sempre « vous », nunca contrações orais.",
+    "Uma carta formal tem: lugar e data, objet (assunto), vocativo (Madame, Monsieur, — sem « Cher »), introdução (motivo da carta), desenvolvimento em parágrafos, pedido final, fórmula de despedida e assinatura. No DELF B2, o registro vale pontos: sempre « vous », nunca contrações orais.",
     "Abertura: Je me permets de vous écrire au sujet de… / Je vous écris à la suite de… / Suite à votre article… Opinião: Je souhaite vous faire part de mon désaccord / Je tiens à exprimer mon opinion.",
-    "Pedido: Je vous serais reconnaissant(e) de bien vouloir… / Je vous prie de bien vouloir… Fecho: Dans l'attente de votre réponse, veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées. Repita sempre a apelação (Madame, Monsieur) no fecho.",
+    "Pedido: Je vous serais reconnaissant(e) de bien vouloir… / Je vous prie de bien vouloir… Fecho: Dans l'attente de votre réponse, veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées. Repita sempre a vocativo (Madame, Monsieur) no fecho.",
     "Erros comuns de brasileiros: « Prezado » → *Cher Monsieur* só se conhece o destinatário; sem nome use « Madame, Monsieur, ». Cuidado também com « Atenciosamente » → *Cordialement* é informal demais para o DELF formal."
    ],
    "vocab": [
@@ -884,7 +888,7 @@
     "max": 280,
     "modelo": "Madame, Monsieur,\n\nJe me permets de vous écrire à la suite de l'article paru dans votre édition du 12 mars, intitulé « Vers la suppression de trois lignes de bus ». Habitante du quartier des Lilas depuis vingt ans, je souhaite vous faire part de mon désaccord.\n\nTout d'abord, ces lignes sont indispensables aux personnes qui n'ont pas de voiture. En effet, de nombreux retraités, étudiants et salariés les empruntent chaque jour pour aller travailler, faire leurs courses ou se rendre à l'hôpital. Leur suppression les obligerait à marcher plusieurs kilomètres ou à dépendre de leurs proches. Certains devraient même renoncer à leurs rendez-vous médicaux, faute de moyen de transport.\n\nPar ailleurs, la municipalité justifie sa décision par des raisons financières. Or, il me semble que cette économie serait de courte durée. Si les habitants renonçaient aux transports en commun, ils reprendraient leur voiture, ce qui augmenterait les embouteillages et la pollution. Les coûts pour la collectivité seraient alors bien plus élevés.\n\nCertes, certaines lignes sont peu fréquentées aux heures creuses. Néanmoins, au lieu de les supprimer, on pourrait réduire le nombre de bus en soirée ou proposer un service à la demande. Une telle solution coûterait moins cher et protégerait les habitants les plus fragiles.\n\nJe vous serais donc reconnaissante de bien vouloir publier ma lettre afin que les élus prennent conscience des conséquences de leur projet.\n\nVeuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.\n\nClaire Moreau",
     "checklist": [
-     "Abri com « Madame, Monsieur, » e terminei com « Veuillez agréer… » repetindo a apelação?",
+     "Abri com « Madame, Monsieur, » e terminei com « Veuillez agréer… » repetindo a vocativo?",
      "Usei « vous » e fórmulas educadas (Je me permets de…, Je vous serais reconnaissant(e)…)?",
      "Expliquei o motivo da carta logo no primeiro parágrafo?",
      "Contei as palavras (220 a 280) e assinei no fim?"
@@ -1044,7 +1048,7 @@
     "genero": "lettre de réclamation",
     "min": 220,
     "max": 280,
-    "modelo": "Madame, Monsieur,\n\nLe 5 mars dernier, j'ai commandé sur votre site un ordinateur portable (référence XK-450, commande n° 20458) au prix de 749 euros. Il devait m'être livré en cinq jours ouvrables, comme l'indiquait la confirmation de commande. Or, je ne l'ai reçu que le 24 mars, soit presque trois semaines plus tard.\n\nCe retard est déjà regrettable, mais ce n'est pas tout. À l'ouverture du colis, j'ai constaté que l'écran était rayé et que le chargeur ne fonctionnait pas. J'ai immédiatement contacté votre service client par téléphone. On m'a promis de me rappeler sous quarante-huit heures, mais personne ne l'a fait. J'ai donc dû envoyer deux courriels, restés sans réponse. Cet ordinateur m'était nécessaire pour mon travail, ce qui m'a causé un préjudice réel.\n\nCompte tenu de ces faits, je vous demande de bien vouloir procéder, au choix, à l'échange de l'appareil contre un produit neuf ou à son remboursement intégral. Je vous prie également de prendre en charge les frais de retour. À défaut de réponse de votre part dans un délai de quinze jours, je me verrai contraint de saisir une association de consommateurs.\n\nJe joins à cette lettre une copie de la facture ainsi que des photographies de l'écran abîmé, qui prouvent le défaut du produit.\n\nDans l'attente de votre réponse, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.\n\nPedro Alves",
+    "modelo": "Madame, Monsieur,\n\nLe 5 mars dernier, j'ai commandé sur votre site un ordinateur portable (référence XK-450, commande n° 20458) au prix de 749 euros. Il devait m'être livré en cinq jours ouvrables, comme l'indiquait la confirmation de commande. Or, je ne l'ai reçu que le 2 avril, soit trois semaines après la date annoncée.\n\nCe retard est déjà regrettable, mais ce n'est pas tout. À l'ouverture du colis, j'ai constaté que l'écran était rayé et que le chargeur ne fonctionnait pas. J'ai immédiatement contacté votre service client par téléphone. On m'a promis de me rappeler sous quarante-huit heures, mais personne ne l'a fait. J'ai donc dû envoyer deux courriels, restés sans réponse. Cet ordinateur m'était nécessaire pour mon travail, ce qui m'a causé un préjudice réel.\n\nCompte tenu de ces faits, je vous demande de bien vouloir procéder, au choix, à l'échange de l'appareil contre un produit neuf ou à son remboursement intégral. Je vous prie également de prendre en charge les frais de retour. À défaut de réponse de votre part dans un délai de quinze jours, je me verrai contraint de saisir une association de consommateurs.\n\nJe joins à cette lettre une copie de la facture ainsi que des photographies de l'écran abîmé, qui prouvent le défaut du produit.\n\nDans l'attente de votre réponse, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.\n\nPedro Alves",
     "checklist": [
      "Citei datas, preço e número do pedido para provar os fatos?",
      "Descrevi o problema sem insultos e pedi uma solução precisa (échange, remboursement…)?",
@@ -1090,7 +1094,7 @@
       "Finalement, le produit était cassé."
      ],
      "r": 1,
-     "exp": "« En fait » = na verdade. « Actuellement » = atualmente, « éventuellement » = eventualmente/possivelmente e « finalement » = por fim: são falsos amigos."
+     "exp": "« En fait » = na verdade. « Actuellement » = atualmente, « éventuellement » = eventualmente/possivelmente e « finalement » = por fim: são armadilhas de sentido."
     },
     {
      "t": "order",
@@ -1110,10 +1114,7 @@
       "produit."
      ],
      "resp": "Je vous prie de prendre en charge les frais de retour du produit.",
-     "exp": "« Prendre en charge » = assumir (os custos). « Les frais » é sempre plural em francês.",
-     "alt": [
-      "Je vous prie de prendre en charge les frais de retour du produit."
-     ]
+     "exp": "« Prendre en charge » = assumir (os custos). « Les frais » é sempre plural em francês."
     },
     {
      "t": "gap",
@@ -1169,7 +1170,7 @@
    "objetivo": "Propor uma melhoria a uma autoridade, argumentando e se antecipando às objeções.",
    "foco": "Lettre de proposition : soumettre un projet, argumenter, anticiper les objections",
    "explicacao": [
-    "Cartas ao prefeito (Monsieur le Maire,) ou ao diretor (Monsieur le Directeur,) usam o título da função na apelação e no fecho: Veuillez agréer, Monsieur le Maire, l'expression de mes salutations respectueuses.",
+    "Cartas ao prefeito (Monsieur le Maire,) ou ao diretor (Monsieur le Directeur,) usam o título da função na vocativo e no fecho: Veuillez agréer, Monsieur le Maire, l'expression de mes salutations respectueuses.",
     "Estrutura: 1) quem sou e por que escrevo, 2) o problema, 3) a proposta com 2 ou 3 argumentos, 4) uma concessão (Je suis conscient que… / Certes, le budget est limité…) e uma solução, 5) pedido de reunião ou resposta.",
     "Use o CONDICIONAL para propor com polidez: Un jardin partagé permettrait de…, Cela renforcerait… Para condições: Si vous acceptiez de…, nous pourrions… (si + imparfait → conditionnel présent).",
     "Armadilha: « conscient que » exige INDICATIVO (Je suis conscient que le budget est limité), mas « Il faut que / Je souhaite que » pedem SUBJUNTIVO. E « réunion » = reunião (de pessoas); « rencontre » = encontro."
@@ -1498,7 +1499,7 @@
    "foco": "Hypothèse : si + présent → futur ; si + imparfait → conditionnel présent ; si + plus-que-parfait → conditionnel passé",
    "explicacao": [
     "Três tipos de hipótese. Possível: Si on investit, la situation s'améliorera (si + presente → futuro). Improvável ou irreal no presente: Si on investissait, la situation s'améliorerait (si + imparfait → condicional presente). Irreal no passado: Si on avait investi, la situation se serait améliorée (si + plus-que-parfait → condicional passado).",
-    "Regra de ouro: NUNCA use futuro ou condicional logo depois de « si » (hipótese). Errado: *Si j'aurais su* ✗ → Si j'avais su ✓. O brasileiro erra por causa do « se eu tivesse sabido », mas a regra francesa é clara.",
+    "Regra de ouro: NUNCA use futuro ou condicional logo depois de « si » (hipótese). Errado: *Si j'aurais su* ✗ → Si j'avais su ✓. É um erro muito comum entre estudantes, mas a regra francesa não tem exceção.",
     "Condicional passado = auxiliar no condicional + particípio: j'aurais fait, elle serait partie, nous aurions pu. Atenção ao auxiliar être e ao acordo (elle serait partie, ils seraient venus).",
     "Para argumentar: À mon avis, si les villes avaient investi plus tôt…, la situation serait meilleure. Outras fórmulas: au cas où + condicional, à condition que + subjuntivo, sans cela / autrement + condicional."
    ],
@@ -1774,7 +1775,7 @@
      "resp": [
       "refus"
      ],
-     "exp": "Nominalização irregular: refuser → le refus (masculino). Não confunda com *refuso*."
+     "exp": "Nominalização irregular: refuser → le refus (masculino). Atenção: é « refus » (com s), e não « refusal » como no inglês."
     },
     {
      "t": "speak",
@@ -1936,7 +1937,7 @@
      "resp": [
       "au"
      ],
-     "exp": "Verbo « réagir à » + a contração a + le = au. Não existe *réagir sur*."
+     "exp": "O verbo se constrói com a preposição « à »: « réagir à quelque chose », e à + le = au."
     },
     {
      "t": "speak",
@@ -1985,7 +1986,7 @@
    "explicacao": [
     "A conclusão tem duas partes: 1) le bilan (resumir a resposta à problemática: En somme, En définitive, Pour conclure) e 2) l'ouverture (ampliar a reflexão: Reste à savoir si…, On peut se demander si…, Une question demeure : …). Nunca traga um argumento novo nem copie a introdução.",
     "O article critique (resenha de filme, livro, exposição, documentário) segue: 1) apresentar a obra (título, autor, tema), 2) pontos fortes com exemplos, 3) reservas (Cependant, Néanmoins), 4) veredito claro e a quem recomendar. Escreva no presente do indicativo.",
-    "Fórmulas: Le film a le mérite de…, Il est regrettable que… + subjonctif, On regrette un manque de…, Malgré quelques réserves, Ce livre mérite d'être lu. Cuidado: « n'est pas exempt de » (não *isento de*), « un film » é masculino, « une critique » é feminino.",
+    "Fórmulas: Le film a le mérite de…, Il est regrettable que… + subjonctif, On regrette un manque de…, Malgré quelques réserves, Ce livre mérite d'être lu. Cuidado: « n'est pas exempt de » = não está isento de (defeitos); « un film » é masculino, « une critique » é feminino.",
     "Falso cognato: « une critique » pode ser a avaliação (positiva ou negativa), não só a crítica negativa; « la pièce » = a peça de teatro; « assister à » = estar presente (não *assistir* na TV: dizer « regarder »)."
    ],
    "vocab": [
@@ -2098,9 +2099,10 @@
      "t": "gap",
      "q": "Le documentaire n'est pas ___ de défauts.",
      "resp": [
-      "exempt"
+      "exempt",
+      "dépourvu"
      ],
-     "exp": "Expressão fixa: « ne pas être exempt de » = não estar isento de. Também existe « sans défaut ».",
+     "exp": "Expressão fixa: « ne pas être exempt de » = não estar isento de. Também se aceita « ne pas être dépourvu de ».",
      "dica": "synonyme de « libre de »"
     },
     {
@@ -2361,7 +2363,7 @@
     "max": 300,
     "modelo": "Madame la Maire,\n\nJ'ai appris par la presse locale que la mairie envisageait d'interdire les trottinettes électriques en libre-service à la suite de plusieurs accidents. Utilisatrice régulière de ce moyen de transport, je me permets de vous faire part de mon point de vue sur cette décision.\n\nJe comprends parfaitement l'inquiétude des habitants. Des trottinettes abandonnées au milieu du trottoir gênent les personnes âgées, les familles avec poussette et les personnes handicapées. De plus, certains conducteurs roulent trop vite et sans casque, ce qui met en danger les piétons comme eux-mêmes.\n\nCependant, je ne crois pas qu'une interdiction totale soit la meilleure réponse. D'abord, ces trottinettes offrent une alternative économique et écologique à la voiture. Grâce à elles, de nombreux étudiants et salariés peuvent se rendre au travail sans polluer ni perdre de temps dans les embouteillages. Si la ville les supprimait, une partie de ces usagers reprendrait sans doute sa voiture, ce qui aggraverait la pollution et le bruit. Ensuite, les accidents s'expliquent surtout par un manque de règles claires plutôt que par l'existence même du service.\n\nC'est pourquoi je vous propose plusieurs mesures. Il faudrait que la mairie impose des zones de stationnement réservées, afin que les trottinettes ne bloquent plus les trottoirs. Il serait également souhaitable de limiter la vitesse dans les zones piétonnes et de sanctionner les conducteurs imprudents. Enfin, des campagnes de prévention permettraient d'apprendre les bons comportements.\n\nJe vous serais reconnaissante de bien vouloir étudier ces propositions avant de prendre votre décision définitive. Je reste à votre disposition pour participer à toute réunion de concertation.\n\nDans l'attente de votre réponse, veuillez agréer, Madame la Maire, l'expression de mes salutations respectueuses.\n\nSofia Almeida",
     "checklist": [
-     "Respeitei o tipo de texto (lettre formelle) com apelação, fecho e assinatura?",
+     "Respeitei o tipo de texto (lettre formelle) com vocativo, fecho e assinatura?",
      "Tenho introdução (motivo da carta), 2 a 3 argumentos com exemplos, concessão e proposta de soluções?",
      "Usei conectores variados, subjuntivo (il faut que, bien que) e hipótese (si + imparfait → conditionnel)?",
      "Reli os acordos e acentos e contei as palavras (mínimo 250)?"

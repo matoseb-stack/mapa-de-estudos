@@ -1,0 +1,3428 @@
+{
+ "nivel": "C2",
+ "skill": "listening",
+ "exame": "DALF C2",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Ce qui n'est pas dit",
+   "objetivo": "Perceber o que a pessoa quer dizer sem dizer, a partir de elogios vagos, perguntas retóricas e silêncios.",
+   "foco": "L'implicite : sous-entendus, éloges faibles, silences",
+   "explicacao": [
+    "No C2, o essencial muitas vezes está nas entrelinhas. Um elogio pequeno (« une présentation très soignée ») pode ser um jeito educado de não elogiar o resto.",
+    "Fórmulas como « Je n'irais pas jusque-là » recusam uma conclusão forte, mas não negam tudo. Você precisa calcular o meio-termo.",
+    "Uma pergunta pode ser uma crítica disfarçada: « Quelqu'un a-t-il vérifié les chiffres ? » quer dizer que ninguém verificou. O silêncio também comunica: o falante explica a reação, e você interpreta.",
+    "Na prova, a resposta certa costuma PARAFRASEAR a inferência, e não repetir as palavras do áudio. Cuidado com a opção que copia uma frase ouvida mas diz outra coisa."
+   ],
+   "vocab": [
+    {
+     "en": "soigné(e)",
+     "pt": "caprichado, cuidado"
+    },
+    {
+     "en": "je n'irais pas jusque-là",
+     "pt": "eu não chegaria a tanto"
+    },
+    {
+     "en": "lire entre les lignes",
+     "pt": "ler nas entrelinhas"
+    },
+    {
+     "en": "un sous-entendu",
+     "pt": "um subentendido"
+    },
+    {
+     "en": "tirer ses conclusions",
+     "pt": "tirar suas conclusões"
+    },
+    {
+     "en": "reprendre à zéro",
+     "pt": "recomeçar do zero"
+    },
+    {
+     "en": "la soutenance",
+     "pt": "a defesa (da tese)"
+    },
+    {
+     "en": "à ta place",
+     "pt": "no seu lugar"
+    }
+   ],
+   "material": {
+    "titulo": "Un compte rendu de jury",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Alors, Marc, le jury a dit quelque chose sur mon dossier de bourse ?"
+     },
+     {
+      "p": "B",
+      "t": "La présidente a trouvé ta présentation très soignée."
+     },
+     {
+      "p": "A",
+      "t": "Soignée. C'est tout ?"
+     },
+     {
+      "p": "B",
+      "t": "Elle a aussi remarqué que tu avais respecté tes dix minutes, ce qu'elle ne dit pas à tout le monde."
+     },
+     {
+      "p": "A",
+      "t": "Je vois. Donc ça leur a déplu."
+     },
+     {
+      "p": "B",
+      "t": "Je n'irais pas jusque-là. Elle a demandé si les chiffres du deuxième tableau avaient été vérifiés par un statisticien. C'est sa manière de te faire comprendre qu'ils ne l'étaient pas."
+     },
+     {
+      "p": "A",
+      "t": "Ils ne l'étaient pas. Je les ai refaits dans le train, la veille. Je me suis dit que personne n'irait regarder de si près."
+     },
+     {
+      "p": "B",
+      "t": "Il y a toujours quelqu'un pour le faire. Bref, ils attendent une version corrigée jeudi, et ils ont suggéré que Nadia assiste à ta prochaine répétition, mercredi après-midi."
+     },
+     {
+      "p": "A",
+      "t": "Qu'elle y assiste ? On dirait de la surveillance."
+     },
+     {
+      "p": "B",
+      "t": "Vois plutôt ça comme une assurance. Nadia est excellente en statistiques et, franchement, à ta place, je le lui aurais demandé moi-même."
+     },
+     {
+      "p": "A",
+      "t": "Soit. Entre être corrigée par Nadia et l'être par le jury, je préfère Nadia. Elle est au courant ?"
+     },
+     {
+      "p": "B",
+      "t": "Pas officiellement. Mais quand je lui en ai parlé, elle a dit qu'elle n'avait rien de prévu mercredi, puis elle s'est tue un moment, ce qui chez elle est la marque d'un grand enthousiasme."
+     },
+     {
+      "p": "A",
+      "t": "Ha ! Je prends. Et la partie sur le calendrier, la présidente en a parlé ?"
+     },
+     {
+      "p": "B",
+      "t": "Pas un mot. À toi d'en tirer ce que tu voudras."
+     },
+     {
+      "p": "A",
+      "t": "Un silence, ça peut valoir approbation, non ?"
+     },
+     {
+      "p": "B",
+      "t": "Peut-être. Ou alors elle garde ça pour la séance suivante. Je me préparerais aux deux hypothèses."
+     },
+     {
+      "p": "A",
+      "t": "Tu ne m'aides pas beaucoup, tu sais."
+     },
+     {
+      "p": "B",
+      "t": "Plus que tu ne le crois. Tu as une semaine pour corriger tes tableaux et personne ne t'a demandé de tout reprendre à zéro. Dans ce jury, ce n'est pas rien."
+     },
+     {
+      "p": "A",
+      "t": "D'accord. Je refais les calculs ce soir et j'envoie le fichier à Nadia demain, à la première heure."
+     },
+     {
+      "p": "B",
+      "t": "Bonne idée. Et apporte-lui un café mercredi : les gens n'oublient pas ces petites attentions."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que laisse entendre la remarque de la présidente sur la présentation (« très soignée ») ?",
+     "op": [
+      "Elle a été impressionnée par le contenu",
+      "Elle n'avait guère d'autre éloge à faire",
+      "Elle aurait voulu une présentation plus longue",
+      "Elle n'a pas eu le temps de la suivre"
+     ],
+     "r": 1,
+     "exp": "Ela só elogiou algo superficial (soignée) e o respeito ao tempo. Marc interpreta isso como falta de elogios mais substanciais."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Elle a demandé si les chiffres du deuxième tableau avaient été ___ par un statisticien.",
+     "resp": [
+      "vérifiés",
+      "vérifié"
+     ],
+     "exp": "Particípio concordando com « les chiffres » (masculino plural): vérifiés. A pergunta é uma crítica disfarçada.",
+     "ouvir": "Elle a demandé si les chiffres du deuxième tableau avaient été vérifiés par un statisticien."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Je n'irais pas jusque-là.",
+     "exp": "Condicional « irais » = /irê/. Ligação suave em « jusque-là ». A entonação desce no fim.",
+     "ouvir": "Je n'irais pas jusque-là."
+    },
+    {
+     "t": "mc",
+     "q": "Comment Marc présente-t-il le rôle de Nadia mercredi ?",
+     "op": [
+      "Comme une punition pour la doctorante",
+      "Comme une protection plutôt qu'un contrôle",
+      "Comme la preuve que le jury doute de Nadia",
+      "Comme une tâche inutile imposée par la présidente"
+     ],
+     "r": 1,
+     "exp": "« Vois plutôt ça comme une assurance »: ele apresenta Nadia como garantia, não como vigilância."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elle",
+      "s'est",
+      "tue",
+      "un",
+      "moment,",
+      "ce",
+      "qui",
+      "chez",
+      "elle",
+      "est",
+      "la",
+      "marque",
+      "d'un",
+      "grand",
+      "enthousiasme."
+     ],
+     "resp": "Elle s'est tue un moment, ce qui chez elle est la marque d'un grand enthousiasme.",
+     "exp": "« Ce qui » retoma a ideia da oração anterior. « Se taire » no passé composé: elle s'est tue (concordância com o sujeito feminino)."
+    },
+    {
+     "t": "gap",
+     "q": "Selon Marc, personne n'a demandé à Léa de tout reprendre à ___.",
+     "resp": [
+      "zéro",
+      "zero"
+     ],
+     "exp": "« Reprendre à zéro » = recomeçar do zero. Para Marc, isso já é um bom sinal."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Avez-vous déjà reçu un compliment qui cachait en réalité une critique ? Qu'avez-vous compris ?",
+     "modelo": "Une fois, un professeur m'a dit que mon exposé était très ordonné. J'ai compris que le fond ne l'avait pas convaincu.",
+     "min": 8,
+     "chave": [
+      "compliment",
+      "critique",
+      "compris",
+      "compris",
+      "ordonné",
+      "professeur",
+      "sous-entendu",
+      "comprendre"
+     ],
+     "exp": "Conte o que foi dito e o que você entendeu de verdade: Il m'a dit que..., ce qui voulait dire que..."
+    },
+    {
+     "t": "mc",
+     "q": "Que suggère Marc à propos du silence de la présidente sur le calendrier ?",
+     "op": [
+      "Qu'il signifie sûrement une approbation",
+      "Qu'il prouve que le calendrier est irréaliste",
+      "Qu'il est ambigu et qu'il faut envisager deux issues",
+      "Qu'elle a oublié d'en parler"
+     ],
+     "r": 2,
+     "exp": "« À toi d'en tirer ce que tu voudras » + « Je me préparerais aux deux hypothèses »: o silêncio é ambíguo."
+    },
+    {
+     "t": "gap",
+     "q": "D'après Marc, le silence de Nadia est chez elle la marque d'un grand ___.",
+     "resp": [
+      "enthousiasme"
+     ],
+     "exp": "Marc explica que, no caso de Nadia, ficar calada é sinal de entusiasmo."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Ironie et sarcasme",
+   "objetivo": "Distinguir o sentido literal do sentido irônico em comentários secos, exagerados ou sarcásticos.",
+   "foco": "L'ironie : éloge exagéré, « c'est exactement ce qu'il me fallait »",
+   "explicacao": [
+    "Ironia é dizer o contrário do que se pensa: « Magnifique ! » depois de uma má notícia. O tom e o contexto revelam a intenção.",
+    "Marcadores frequentes: « c'est exactement ce qu'il me fallait », « quelle bonne nouvelle », « je n'en peux plus de joie », « on ne peut pas dire que... ».",
+    "A prova pergunta o que o falante REALMENTE sente. Se o elogio é exagerado e a situação é ruim, desconfie do sentido literal.",
+    "Atenção: o outro personagem pode não perceber e responder ao pé da letra; e nem toda frase positiva é irônica. Um « merci, vraiment » dito a quem não tem culpa costuma ser sincero."
+   ],
+   "vocab": [
+    {
+     "en": "supprimer",
+     "pt": "cancelar, suprimir (não é « suprimir » de texto)"
+    },
+    {
+     "en": "jusqu'à nouvel ordre",
+     "pt": "até segunda ordem"
+    },
+    {
+     "en": "un car de remplacement",
+     "pt": "ônibus de substituição"
+    },
+    {
+     "en": "la gêne occasionnée",
+     "pt": "o transtorno causado"
+    },
+    {
+     "en": "n'y être pour rien",
+     "pt": "não ter culpa nenhuma"
+    },
+    {
+     "en": "le sang-froid",
+     "pt": "a calma, o sangue-frio"
+    },
+    {
+     "en": "l'entretien d'embauche",
+     "pt": "a entrevista de emprego"
+    },
+    {
+     "en": "une idée de génie",
+     "pt": "uma ideia genial"
+    }
+   ],
+   "material": {
+    "titulo": "Grève en gare de Lyon",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Tu as vu le panneau ? Tous les TGV pour Lyon sont supprimés jusqu'à nouvel ordre."
+     },
+     {
+      "p": "B",
+      "t": "Ah, magnifique. C'est exactement ce qu'il me fallait après la semaine que je viens de passer."
+     },
+     {
+      "p": "A",
+      "t": "Tu es sérieuse ?"
+     },
+     {
+      "p": "B",
+      "t": "Bien sûr que non, c'était ironique. J'ai un entretien d'embauche à quatorze heures et il est déjà onze heures et demie."
+     },
+     {
+      "p": "A",
+      "t": "Pardon, avec toi on ne sait jamais. Mardi dernier, tu m'as dit que tu étais ravie des nouveaux tarifs du parking."
+     },
+     {
+      "p": "B",
+      "t": "Je n'étais pas ravie du tout. J'ai simplement dit que c'était une décision très courageuse, ce qui, dans mon vocabulaire, n'a rien d'un compliment."
+     },
+     {
+      "p": "A",
+      "t": "Ah. Bon. Il paraît qu'il y a des cars de remplacement, derrière la gare."
+     },
+     {
+      "p": "B",
+      "t": "Quelle bonne nouvelle ! Un car pour remplacer un train qui mettait deux heures et qui va en mettre cinq. Je n'en peux plus de joie."
+     },
+     {
+      "p": "C",
+      "t": "Mesdames, je vous rappelle que les cars de substitution partent toutes les quarante minutes, quai numéro huit. Je suis désolé pour la gêne occasionnée."
+     },
+     {
+      "p": "B",
+      "t": "Mais vous n'y êtes pour rien, monsieur. Merci de votre patience, vraiment."
+     },
+     {
+      "p": "C",
+      "t": "Vous êtes bien aimable. Si vous saviez ce qu'on m'a dit depuis ce matin..."
+     },
+     {
+      "p": "A",
+      "t": "Alors, tu vas faire quoi ? Écrire une lettre furieuse à la direction ?"
+     },
+     {
+      "p": "B",
+      "t": "Oh, j'en écrirai une plus tard, ne t'inquiète pas. Mais pour l'instant, une lettre ne me sert à rien, alors qu'un coup de fil poli pourrait sauver mon entretien. Je vais demander s'il peut avoir lieu en visioconférence. Les employeurs sont étonnamment souples quand on leur explique les choses calmement."
+     },
+     {
+      "p": "A",
+      "t": "J'admire ton sang-froid. Moi, j'aurais déjà tout cassé."
+     },
+     {
+      "p": "B",
+      "t": "Je n'ai pas eu besoin de te voir faire pour l'imaginer."
+     },
+     {
+      "p": "A",
+      "t": "Écoute, je vais à Mâcon, c'est sur ta route. Plutôt que d'attendre le car, on peut chercher un covoiturage ensemble."
+     },
+     {
+      "p": "B",
+      "t": "Voilà la première idée vraiment intelligente de la journée. Qui aurait cru qu'elle viendrait de toi ?"
+     },
+     {
+      "p": "A",
+      "t": "C'était un compliment ou du sarcasme ?"
+     },
+     {
+      "p": "B",
+      "t": "Un peu des deux, franchement. Allons trouver un conducteur avant que tout le monde ait la même idée de génie."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que veut dire la femme par « C'est exactement ce qu'il me fallait » ?",
+     "op": [
+      "Elle est contente de l'annulation",
+      "Elle est contrariée par l'annulation",
+      "Elle veut prendre un autre train",
+      "Elle ne croit pas l'information"
+     ],
+     "r": 1,
+     "exp": "É ironia: o contexto (entrevista às 14h, trens cancelados) mostra que ela está irritada."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Ah, magnifique. C'est exactement ce qu'il me ___ après la semaine que je viens de passer.",
+     "resp": [
+      "fallait"
+     ],
+     "exp": "« Ce qu'il me fallait » (imparfait de falloir) é a fórmula clássica da ironia.",
+     "ouvir": "Ah, magnifique. C'est exactement ce qu'il me fallait après la semaine que je viens de passer."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Je n'en peux plus de joie.",
+     "exp": "Frase irônica: entonação plana, exagerada. « Peux » /pø/, sem pronunciar o x.",
+     "ouvir": "Je n'en peux plus de joie."
+    },
+    {
+     "t": "mc",
+     "q": "Que pensait réellement la femme des nouveaux tarifs du parking ?",
+     "op": [
+      "Elle admirait le courage de la mairie",
+      "Elle les désapprouvait",
+      "Elle les trouvait trop bas",
+      "Elle ne les avait pas lus"
+     ],
+     "r": 1,
+     "exp": "« Une décision très courageuse » não é elogio no vocabulário dela: é crítica velada."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Un",
+      "car",
+      "pour",
+      "remplacer",
+      "un",
+      "train",
+      "qui",
+      "mettait",
+      "deux",
+      "heures",
+      "et",
+      "qui",
+      "va",
+      "en",
+      "mettre",
+      "cinq."
+     ],
+     "resp": "Un car pour remplacer un train qui mettait deux heures et qui va en mettre cinq.",
+     "exp": "Note o pronome « en » = « cinq (heures) ». A ironia está no contraste entre duas e cinco horas."
+    },
+    {
+     "t": "gap",
+     "q": "La femme va demander si son entretien peut avoir lieu en ___.",
+     "resp": [
+      "visioconférence",
+      "visio",
+      "visioconference"
+     ],
+     "exp": "Ela quer propor uma entrevista por videochamada: en visioconférence (ou « en visio », mais familiar)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Vous arrive-t-il d'utiliser l'ironie quand vous êtes contrarié(e) ? Donnez un exemple.",
+     "modelo": "Parfois, oui. Quand mon téléphone tombe en panne, je dis : « Super, c'est exactement ce qu'il me fallait aujourd'hui ! »",
+     "min": 8,
+     "chave": [
+      "ironie",
+      "ironique",
+      "exemple",
+      "super",
+      "génial",
+      "parfois",
+      "contrarié",
+      "fallait"
+     ],
+     "exp": "Dê um exemplo curto com a frase irônica e explique que você não pensa isso de verdade."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi la femme est-elle aimable avec l'agent de la gare ?",
+     "op": [
+      "Elle reste ironique avec lui",
+      "Elle estime qu'il n'est pas responsable du problème",
+      "Elle espère obtenir un remboursement",
+      "Elle ne l'a pas entendu"
+     ],
+     "r": 1,
+     "exp": "« Vous n'y êtes pour rien » e « merci, vraiment »: aqui ela é sincera, pois não culpa o funcionário."
+    },
+    {
+     "t": "gap",
+     "q": "La femme dit : « Qui aurait ___ que l'idée viendrait de toi ? »",
+     "resp": [
+      "cru"
+     ],
+     "exp": "Conditionnel passé: aurait cru. A frase é meio elogio, meio sarcasmo, como ela mesma admite."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Litote et pince-sans-rire",
+   "objetivo": "Entender atenuações e humor seco, em que o falante diz menos do que pensa (« pas mauvais » = excelente).",
+   "foco": "La litote et l'euphémisme : « pas mal », « légèrement contrariant »",
+   "explicacao": [
+    "A litote diz menos para sugerir mais: « Ce n'est pas mauvais » pode querer dizer « é excelente »; « rien de bien méchant » pode esconder algo grave.",
+    "No humor pince-sans-rire (seco), o falante conta algo dramático com tom neutro. Compare o que é descrito (um desmoronamento) com as palavras escolhidas (« quelques rochers »): o contraste é a pista.",
+    "Expressões típicas: « on a connu mieux », « ce n'était pas l'idéal », « un peu attentifs, tout au plus ». Cuidado: nem sempre a atenuação é humor; às vezes é só cortesia.",
+    "Na prova, pergunte-se sempre: o falante minimiza ou exagera? A resposta certa reflete a realidade, não as palavras."
+   ],
+   "vocab": [
+    {
+     "en": "un éboulement",
+     "pt": "um desmoronamento"
+    },
+    {
+     "en": "dévaler",
+     "pt": "despencar, rolar ladeira abaixo"
+    },
+    {
+     "en": "rien de bien méchant",
+     "pt": "nada de grave"
+    },
+    {
+     "en": "je vous l'accorde",
+     "pt": "admito, concordo"
+    },
+    {
+     "en": "un abri de berger",
+     "pt": "abrigo de pastor"
+    },
+    {
+     "en": "un découvert",
+     "pt": "saldo negativo na conta"
+    },
+    {
+     "en": "incorrigible",
+     "pt": "incorrigível"
+    },
+    {
+     "en": "s'en souvenir",
+     "pt": "lembrar-se (verbo pronominal!)"
+    }
+   ],
+   "material": {
+    "titulo": "Chronique radio : une randonnée mouvementée",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Étienne, racontez-nous votre dernière expédition dans le Vercors. Il paraît que ça ne s'est pas passé exactement comme prévu."
+     },
+     {
+      "p": "B",
+      "t": "Disons que ça a été animé. Nous avions prévu trois jours de marche et, le deuxième matin, une partie du chemin avait disparu."
+     },
+     {
+      "p": "A",
+      "t": "Disparu ? Comment ça ?"
+     },
+     {
+      "p": "B",
+      "t": "Un éboulement. Quelques rochers, rien de bien méchant : à peu près la taille d'une maison."
+     },
+     {
+      "p": "A",
+      "t": "Une maison !"
+     },
+     {
+      "p": "B",
+      "t": "Une petite maison. Enfin, un chalet. Bref, nous avons dû faire un détour de quatre heures, et c'est là que le sac de Paul a dévalé la pente."
+     },
+     {
+      "p": "A",
+      "t": "Avec le matériel ?"
+     },
+     {
+      "p": "B",
+      "t": "Avec le matériel, la nourriture et son téléphone. Ce n'était pas l'idéal, je vous l'accorde. Paul a trouvé la situation légèrement contrariante. Ce sont ses mots."
+     },
+     {
+      "p": "A",
+      "t": "Vous deviez être plutôt inquiets."
+     },
+     {
+      "p": "B",
+      "t": "Inquiets, non. Un peu attentifs, tout au plus. Nous avions encore deux barres de céréales et une bonne dose d'optimisme, un équipement que l'on sous-estime trop souvent en montagne. Disons que nous avons accéléré le pas, ce qui, avec un sac en moins, était assez facile."
+     },
+     {
+      "p": "A",
+      "t": "Et le soir, vous avez dormi où ?"
+     },
+     {
+      "p": "B",
+      "t": "Dans un abri de berger. Pas un palace, mais le toit n'avait que trois trous, ce qui, à cette altitude, est presque un luxe. Et le berger nous a offert un fromage dont je me souviendrai longtemps : ce n'était pas mauvais."
+     },
+     {
+      "p": "A",
+      "t": "Pas mauvais ? Chez vous, ça veut dire..."
+     },
+     {
+      "p": "B",
+      "t": "Que c'était le meilleur fromage de ma vie. Chez moi, on ne dit jamais « excellent » : on garde ça pour les grandes occasions, comme les mariages ou la fin d'un orage."
+     },
+     {
+      "p": "A",
+      "t": "Et le troisième jour ?"
+     },
+     {
+      "p": "B",
+      "t": "Nous avons retrouvé le sac de Paul, accroché à un arbre cent mètres plus bas. Le téléphone marchait encore ; il a même reçu un message de sa banque l'informant d'un petit découvert."
+     },
+     {
+      "p": "A",
+      "t": "Vous avez ri ?"
+     },
+     {
+      "p": "B",
+      "t": "Nous avons surtout été soulagés. Mais je ne le dirai pas à ma mère, qui croit que nous avons fait une promenade tranquille. Je n'ai pas à lui mentir : c'était une promenade, d'une certaine façon."
+     },
+     {
+      "p": "A",
+      "t": "Étienne, vous êtes incorrigible."
+     },
+     {
+      "p": "B",
+      "t": "On me l'a déjà dit, mais d'habitude, c'est moins gentil."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "En disant « Quelques rochers, rien de bien méchant », qu'exprime Étienne ?",
+     "op": [
+      "Que l'obstacle était réellement insignifiant",
+      "Que l'éboulement était important, mais qu'il le minimise par humour",
+      "Que les rochers n'ont pas gêné la marche",
+      "Qu'il n'a pas vu l'éboulement"
+     ],
+     "r": 1,
+     "exp": "A «taille d'une maison» desmente o « rien de bien méchant »: é litote humorística."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Paul a trouvé la situation légèrement ___.",
+     "resp": [
+      "contrariante"
+     ],
+     "exp": "Euphémisme: perder o saco com tudo dentro é descrito como « légèrement contrariante ».",
+     "ouvir": "Paul a trouvé la situation légèrement contrariante."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Ce n'était pas l'idéal, je vous l'accorde.",
+     "exp": "Ligação: « n'était pas » /netepa/. « L'idéal » com tom seco, sem dramatizar.",
+     "ouvir": "Ce n'était pas l'idéal, je vous l'accorde."
+    },
+    {
+     "t": "mc",
+     "q": "À propos du fromage, que signifie « ce n'était pas mauvais » dans la bouche d'Étienne ?",
+     "op": [
+      "C'était médiocre",
+      "C'était correct sans plus",
+      "C'était excellent",
+      "Il n'en a pas mangé"
+     ],
+     "r": 2,
+     "exp": "Ele mesmo explica: « le meilleur fromage de ma vie ». Elogios fortes são raros em seu vocabulário."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Le",
+      "toit",
+      "n'avait",
+      "que",
+      "trois",
+      "trous,",
+      "ce",
+      "qui,",
+      "à",
+      "cette",
+      "altitude,",
+      "est",
+      "presque",
+      "un",
+      "luxe."
+     ],
+     "resp": "Le toit n'avait que trois trous, ce qui, à cette altitude, est presque un luxe.",
+     "exp": "« Ne... que » = apenas. « Ce qui » comenta toda a oração; a ironia vem de « presque un luxe »."
+    },
+    {
+     "t": "gap",
+     "q": "Paul a reçu un message de sa banque l'informant d'un petit ___.",
+     "resp": [
+      "découvert",
+      "decouvert"
+     ],
+     "exp": "« Un découvert » = saldo negativo. Atenção: não é « descoberta ». O detalhe cômico fecha a aventura."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Connaissez-vous des façons de minimiser une situation grave, en français ou dans votre langue ? Donnez un exemple.",
+     "modelo": "Oui. En français, on peut dire « ce n'est pas terrible » pour une catastrophe. C'est une manière de rester calme.",
+     "min": 8,
+     "chave": [
+      "minimiser",
+      "exemple",
+      "litote",
+      "pas terrible",
+      "pas mal",
+      "grave",
+      "humour",
+      "calme"
+     ],
+     "exp": "Cite uma atenuação e explique o que ela esconde: on dit X, mais on veut dire Y."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi Étienne ne dira-t-il pas la vérité à sa mère ?",
+     "op": [
+      "Il a honte de l'échec de l'expédition",
+      "Il estime que « promenade » reste vrai en un sens et préfère ne pas l'inquiéter",
+      "Sa mère n'aime pas la montagne",
+      "Paul lui a demandé de se taire"
+     ],
+     "r": 1,
+     "exp": "Humor: ele prefere não preocupar a mãe e ainda acha que «promenade» não é totalmente falso."
+    },
+    {
+     "t": "gap",
+     "q": "Le berger leur a offert un fromage dont Étienne se ___ longtemps.",
+     "resp": [
+      "souviendra"
+     ],
+     "exp": "« Se souvenir de » exige o pronome reflexivo; « dont » substitui « de ce fromage ». Futur: souviendra."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Registres mêlés",
+   "objetivo": "Acompanhar uma conversa em que se misturam francês familiar e francês soutenu, sem perder o fio.",
+   "foco": "Registre familier vs soutenu : ne omis, argot, imparfait du subjonctif",
+   "explicacao": [
+    "No francês falado, o registro familiar apaga o « ne » (« j'ai pas capté »), reduz « tu » (« j'suis cuit ») e usa gíria (« ouf », « la flemme », « le fric », « bosser », « un truc »).",
+    "O registro soutenu usa estruturas raras: imparfait du subjonctif (« fût-ce par sa difficulté »), plus-que-parfait du subjonctif (« il eût mieux valu » = il aurait mieux valu), inversões e vocabulário preciso (« retenue », « tyrannique »).",
+    "A prova mistura os dois no mesmo áudio. Entenda o SENTIDO, mas note também a atitude: quem corrige o outro, quem faz piada, quem concede.",
+    "Não confunda « eût » (subjuntivo imperfeito de avoir) com « eut » (passé simple). Nas questões de ditado, aceite o acento circunflexo no lugar certo."
+   ],
+   "vocab": [
+    {
+     "en": "avoir la flemme",
+     "pt": "estar com preguiça"
+    },
+    {
+     "en": "ouf",
+     "pt": "incrível / difícil (gíria)"
+    },
+    {
+     "en": "le fric",
+     "pt": "a grana"
+    },
+    {
+     "en": "bosser",
+     "pt": "trabalhar (familiar)"
+    },
+    {
+     "en": "j'ai pas capté",
+     "pt": "não entendi (familiar)"
+    },
+    {
+     "en": "fût-ce",
+     "pt": "ainda que seja (soutenu)"
+    },
+    {
+     "en": "il eût mieux valu",
+     "pt": "teria sido melhor"
+    },
+    {
+     "en": "sur parole",
+     "pt": "sob palavra"
+    }
+   ],
+   "material": {
+    "titulo": "Une conversation après le cours",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Madame Delcourt, j'vous jure, j'ai pas capté un mot de la dernière partie de votre cours. C'était ouf, mais vraiment compliqué."
+     },
+     {
+      "p": "B",
+      "t": "Je vous en prie, Théo, modérez votre langage. Cela dit, je suis ravie que ce passage vous ait frappé, fût-ce par sa difficulté."
+     },
+     {
+      "p": "C",
+      "t": "Elle veut dire qu'elle est contente que tu te donnes du mal, mec."
+     },
+     {
+      "p": "B",
+      "t": "Je l'aurais exprimé avec un peu plus de retenue, mais l'idée y est. Voyons, Théo : où en êtes-vous de votre mémoire ?"
+     },
+     {
+      "p": "A",
+      "t": "Franchement, j'ai trop la flemme de m'y mettre. J'ai bossé tout l'été à la boulangerie pour me faire un peu de fric, et là, j'suis cuit."
+     },
+     {
+      "p": "B",
+      "t": "Je comprends que le travail vous ait épuisé, mais il eût mieux valu commencer plus tôt. À quelques semaines de la soutenance, on ne peut plus se permettre la moindre improvisation."
+     },
+     {
+      "p": "C",
+      "t": "Elle a raison, tu sais. Moi, j'ai déjà un début de plan, et même une bibliographie provisoire."
+     },
+     {
+      "p": "A",
+      "t": "Toi, t'as toujours un début. C'est jamais la fin qui te pose problème, c'est le milieu."
+     },
+     {
+      "p": "B",
+      "t": "Messieurs, sans vouloir interrompre ces échanges fort instructifs, je voudrais vous rappeler qu'un bon plan n'est pas affaire de chance, mais de méthode. Je vous propose ceci : vous m'envoyez, d'ici vendredi, une page qui résume votre problématique."
+     },
+     {
+      "p": "A",
+      "t": "Une page ? Ça va, c'est jouable. Du moment que vous ne voulez pas un truc de quarante lignes avec des notes partout."
+     },
+     {
+      "p": "B",
+      "t": "Je ne suis pas à ce point tyrannique. Je vous demande simplement de savoir ce que vous cherchez à démontrer. Nombre d'étudiants brillants ont échoué faute d'avoir su l'énoncer."
+     },
+     {
+      "p": "C",
+      "t": "Théo, c'est le moment de la fermer et de dire merci."
+     },
+     {
+      "p": "A",
+      "t": "Merci, madame. Sérieux, je vais le faire. Je vous le jure sur la tête de ma grand-mère."
+     },
+     {
+      "p": "B",
+      "t": "Je vous crois sur parole, et je dispense votre grand-mère de toute responsabilité."
+     },
+     {
+      "p": "C",
+      "t": "Madame, vous pouvez compter sur nous. Enfin, sur lui surtout, moi, j'ai déjà un début."
+     },
+     {
+      "p": "B",
+      "t": "Un début, Nathan, n'est pas un travail. Songez que le plus difficile n'est pas de commencer, mais de finir. À vendredi, messieurs."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quand Théo dit que la dernière partie du cours « c'était ouf, mais vraiment compliqué », que veut-il dire ?",
+     "op": [
+      "Que le cours était ennuyeux et inutile",
+      "Que le cours était impressionnant mais très difficile à suivre",
+      "Que le cours était trop facile",
+      "Que le cours était mal organisé"
+     ],
+     "r": 1,
+     "exp": "« Ouf » (verlan de « fou ») = incrível, impressionante; « j'ai pas capté » = não entendi."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Je comprends que le travail vous ait épuisé, mais il ___ mieux valu commencer plus tôt.",
+     "resp": [
+      "eût",
+      "eut"
+     ],
+     "exp": "« Il eût mieux valu » = il aurait mieux valu (plus-que-parfait du subjonctif, registre soutenu). Circunflexo em « eût ».",
+     "ouvir": "Je comprends que le travail vous ait épuisé, mais il eût mieux valu commencer plus tôt."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Il eût mieux valu commencer plus tôt.",
+     "exp": "« Eût » = /y/ (como « u »). Fale com tom formal, calmo e levemente severo.",
+     "ouvir": "Il eût mieux valu commencer plus tôt."
+    },
+    {
+     "t": "mc",
+     "q": "Comment Mme Delcourt réagit-elle au langage de Théo ?",
+     "op": [
+      "Elle refuse de continuer la discussion",
+      "Elle le reprend poliment, sans se fâcher",
+      "Elle adopte elle-même le langage familier",
+      "Elle ne remarque pas la différence de registre"
+     ],
+     "r": 1,
+     "exp": "« Modérez votre langage » + humor no fim: ela corrige com firmeza educada."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Un",
+      "bon",
+      "plan",
+      "n'est",
+      "pas",
+      "affaire",
+      "de",
+      "chance,",
+      "mais",
+      "de",
+      "méthode."
+     ],
+     "resp": "Un bon plan n'est pas affaire de chance, mais de méthode.",
+     "exp": "« Être affaire de » = depender de / ser questão de. Estrutura soutenue: ne... pas... mais."
+    },
+    {
+     "t": "gap",
+     "q": "Théo dit que le problème de Nathan n'est pas la fin, c'est le ___.",
+     "resp": [
+      "milieu"
+     ],
+     "exp": "Brincadeira entre amigos: Nathan tem sempre um começo, mas se perde no desenvolvimento."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Comment adaptez-vous votre façon de parler selon que vous vous adressez à un ami ou à un professeur ? Donnez deux exemples.",
+     "modelo": "Avec un ami, je dis « j'ai pas compris » ; avec un professeur, je dis « je n'ai pas compris ». Je choisis aussi des mots plus précis.",
+     "min": 10,
+     "chave": [
+      "ami",
+      "professeur",
+      "registre",
+      "formel",
+      "familier",
+      "dis",
+      "mots",
+      "langage"
+     ],
+     "exp": "Compare duas frases do mesmo sentido: uma familiar (sem « ne ») e uma formal (com « ne... pas »)."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le ton de la phrase « je dispense votre grand-mère de toute responsabilité » ?",
+     "op": [
+      "Une menace",
+      "Un reproche sérieux",
+      "Une plaisanterie bienveillante",
+      "Une marque d'indifférence"
+     ],
+     "r": 2,
+     "exp": "Ela responde com humor ao juramento «sur la tête de ma grand-mère»: brincadeira afetuosa, em registro soutenu."
+    },
+    {
+     "t": "gap",
+     "q": "D'après Mme Delcourt, nombre d'étudiants brillants ont échoué ___ d'avoir su énoncer leur problématique.",
+     "resp": [
+      "faute"
+     ],
+     "exp": "« Faute de + infinitif » = por falta de. Estrutura formal comum nos textos orais C2."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Expressions idiomatiques",
+   "objetivo": "Reconhecer expressões idiomáticas francesas em fala rápida e deduzir o sentido pelo contexto.",
+   "foco": "Expressions imagées : poser un lapin, mettre les pieds dans le plat, noyer le poisson",
+   "explicacao": [
+    "O francês falado está cheio de expressões imagéticas que não se traduzem palavra por palavra: « poser un lapin » = deixar alguém esperando; « mettre les pieds dans le plat » = dizer o que ninguém ousa dizer.",
+    "Estratégia: ignore as palavras literais e procure o sentido pelo contexto. Quem diz « Elle m'a posé un lapin pour la troisième fois » está irritado com a falta de confiabilidade.",
+    "Algumas são negativas na forma mas positivas no sentido: « ça ne mange pas de pain » = não custa nada. Outras: « tirer la couverture à soi » = pegar para si o mérito.",
+    "Na prova, uma opção costuma usar o sentido LITERAL da imagem (um lapin, une mayonnaise) como distrator."
+   ],
+   "vocab": [
+    {
+     "en": "poser un lapin",
+     "pt": "dar um bolo (não aparecer)"
+    },
+    {
+     "en": "noyer le poisson",
+     "pt": "enrolar, fugir do assunto"
+    },
+    {
+     "en": "mettre les pieds dans le plat",
+     "pt": "dar uma gafe / dizer o que ninguém diz"
+    },
+    {
+     "en": "avoir un poil dans la main",
+     "pt": "ser preguiçoso"
+    },
+    {
+     "en": "ça ne mange pas de pain",
+     "pt": "não custa nada"
+    },
+    {
+     "en": "tomber dans les pommes",
+     "pt": "desmaiar"
+    },
+    {
+     "en": "avoir le cafard",
+     "pt": "estar na fossa"
+    },
+    {
+     "en": "faire monter la mayonnaise",
+     "pt": "criar suspense / exagerar"
+    }
+   ],
+   "material": {
+    "titulo": "Un départ à la boîte",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Tu as appris la nouvelle ? Bertrand quitte la boîte à la fin du mois. Ça a fait l'effet d'un coup de tonnerre dans un ciel serein."
+     },
+     {
+      "p": "B",
+      "t": "Franchement, moi, je m'en doutais un peu. Depuis des mois, il tirait la couverture à lui en réunion."
+     },
+     {
+      "p": "A",
+      "t": "Il n'est pas le seul. La direction noie le poisson dès qu'on lui demande des comptes. Hier, quelqu'un a mis les pieds dans le plat en parlant des primes, et le directeur a changé de sujet."
+     },
+     {
+      "p": "B",
+      "t": "Ça ne m'étonne pas. Moi, j'ai arrêté de me mettre martel en tête. Je fais mon travail, je rentre chez moi, et je ne casse pas du sucre sur le dos des collègues."
+     },
+     {
+      "p": "A",
+      "t": "Pourtant, hier, tu as bien râlé contre Sylvie."
+     },
+     {
+      "p": "B",
+      "t": "Ah, ça, c'est différent. Elle m'a posé un lapin pour la troisième fois, et j'avais réservé une salle qui coûte les yeux de la tête."
+     },
+     {
+      "p": "A",
+      "t": "Elle a un poil dans la main, c'est connu. Mais je te jure qu'elle n'est pas méchante."
+     },
+     {
+      "p": "B",
+      "t": "Je n'ai pas dit qu'elle l'était. Je dis seulement qu'à force de repousser ses rendez-vous, on finit par ne plus lui faire confiance."
+     },
+     {
+      "p": "A",
+      "t": "Tu as raison. Pour Bertrand, tu comptes lui offrir quelque chose ?"
+     },
+     {
+      "p": "B",
+      "t": "Oui, une petite carte, avec un mot de chacun. Ça ne mange pas de pain, et ça lui fera plaisir."
+     },
+     {
+      "p": "A",
+      "t": "Et un pot de départ ? Je ne voudrais pas qu'il parte la queue entre les jambes."
+     },
+     {
+      "p": "B",
+      "t": "Un pot, oui, mais pas trop tôt. Quand on lui a annoncé que son projet était suspendu, il est presque tombé dans les pommes. Il vaut mieux lui laisser le temps de digérer."
+     },
+     {
+      "p": "A",
+      "t": "Je pensais qu'il aurait le cafard. Pas du tout. Il paraît qu'il a trouvé un poste dans une start-up à Nantes, et qu'il est aux anges."
+     },
+     {
+      "p": "B",
+      "t": "Alors pourquoi tout ce suspense ? Tu m'as annoncé ça comme si c'était la fin du monde."
+     },
+     {
+      "p": "A",
+      "t": "Je voulais faire monter la mayonnaise, c'est tout."
+     },
+     {
+      "p": "B",
+      "t": "Eh bien, c'est réussi. Allez, on prépare cette carte ? Et on invite Sylvie au pot, pour voir si elle viendra, pour une fois."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que signifie « un coup de tonnerre dans un ciel serein » ?",
+     "op": [
+      "Un orage prévisible",
+      "Une nouvelle totalement inattendue",
+      "Une très bonne nouvelle",
+      "Une dispute entre collègues"
+     ],
+     "r": 1,
+     "exp": "A imagem é um trovão com céu limpo: algo surpreendente. Mas B diz que já desconfiava, o que mostra que a surpresa é só de A."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : La direction ___ le poisson dès qu'on lui demande des comptes.",
+     "resp": [
+      "noie"
+     ],
+     "exp": "« Noyer le poisson » = enrolar para evitar responder. Conjugação: elle noie (verbo em -oyer: noie, noies, noyons).",
+     "ouvir": "La direction noie le poisson dès qu'on lui demande des comptes."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Elle m'a posé un lapin pour la troisième fois.",
+     "exp": "Passé composé com « poser »: m'a posé (sem concordância, pois « un lapin » vem depois). « Lapin » nasal /lapɛ̃/.",
+     "ouvir": "Elle m'a posé un lapin pour la troisième fois."
+    },
+    {
+     "t": "mc",
+     "q": "Quand B dit « Ça ne mange pas de pain », que veut-il dire ?",
+     "op": [
+      "Que la carte est trop chère",
+      "Que la carte ne coûte rien et ne peut pas faire de mal",
+      "Que la carte est mauvaise",
+      "Que personne n'aime écrire des cartes"
+     ],
+     "r": 1,
+     "exp": "« Ça ne mange pas de pain » = não custa nada, não tem inconveniente."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Quelqu'un",
+      "a",
+      "mis",
+      "les",
+      "pieds",
+      "dans",
+      "le",
+      "plat",
+      "en",
+      "parlant",
+      "des",
+      "primes."
+     ],
+     "resp": "Quelqu'un a mis les pieds dans le plat en parlant des primes.",
+     "exp": "« Mettre les pieds dans le plat » = tocar num assunto delicado. Gerúndio: en + parlant."
+    },
+    {
+     "t": "gap",
+     "q": "Bertrand est presque tombé dans les ___ quand on lui a annoncé que son projet était suspendu.",
+     "resp": [
+      "pommes"
+     ],
+     "exp": "« Tomber dans les pommes » = desmaiar, no sentido figurado aqui: ficar chocado."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Quelle expression imagée française aimez-vous le plus ? Expliquez ce qu'elle veut dire.",
+     "modelo": "J'aime « poser un lapin », qui veut dire ne pas venir à un rendez-vous sans prévenir. L'image est amusante.",
+     "min": 8,
+     "chave": [
+      "expression",
+      "veut dire",
+      "lapin",
+      "signifie",
+      "image",
+      "pommes",
+      "mayonnaise",
+      "poisson"
+     ],
+     "exp": "Cite a expressão, explique o sentido real e, se possível, dê um exemplo de situação."
+    },
+    {
+     "t": "mc",
+     "q": "Contrairement à ce que pensait l'un des interlocuteurs, quelle est la situation de Bertrand ?",
+     "op": [
+      "Il est déprimé",
+      "Il est ravi de son nouveau poste",
+      "Il a été licencié",
+      "Il hésite encore à partir"
+     ],
+     "r": 1,
+     "exp": "A esperava que ele estivesse com o cafard (na fossa), mas ele está « aux anges » (nas nuvens)."
+    },
+    {
+     "t": "gap",
+     "q": "A voulait simplement faire monter la ___ .",
+     "resp": [
+      "mayonnaise"
+     ],
+     "exp": "« Faire monter la mayonnaise » = criar suspense, dramatizar uma notícia. Atenção: no sentido literal, ninguém cozinha nada."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Références culturelles françaises",
+   "objetivo": "Reconhecer alusões culturais francesas (história, política, quadrinhos, slogans) e perceber o tom com que são usadas.",
+   "foco": "Allusions culturelles : la rentrée, la cohabitation, Mai 68, Astérix",
+   "explicacao": [
+    "Os franceses citam slogans, personagens e fatos históricos sem explicar: « Sous les pavés, la plage », « Ils sont fous, ces Romains », « la cohabitation ». Quem não conhece o contexto perde a graça.",
+    "Estratégia: ouça como a referência é usada, não o que ela diz literalmente. « Ils sont fous, ces Romains » não fala de Roma: fala de qualquer situação absurda.",
+    "Muitas citações são ditas com ironia leve, entre o sério e o brincalhão. A pergunta de prova costuma ser: qual é a intenção ou o tom do falante?",
+    "Referências recorrentes: la rentrée (retomada em setembro), les congés d'été, la cohabitation (presidente e primeiro-ministro de campos opostos), De Gaulle e os queijos, Mai 68."
+   ],
+   "vocab": [
+    {
+     "en": "la rentrée",
+     "pt": "a volta às aulas e ao trabalho (setembro)"
+    },
+    {
+     "en": "la cohabitation",
+     "pt": "coabitação política"
+    },
+    {
+     "en": "un slogan",
+     "pt": "um slogan, um lema"
+    },
+    {
+     "en": "un pavé",
+     "pt": "paralelepípedo"
+    },
+    {
+     "en": "une allusion",
+     "pt": "uma alusão"
+    },
+    {
+     "en": "au ralenti",
+     "pt": "em câmera lenta, devagar"
+    },
+    {
+     "en": "un embouteillage",
+     "pt": "um engarrafamento"
+    },
+    {
+     "en": "s'intégrer",
+     "pt": "integrar-se"
+    }
+   ],
+   "material": {
+    "titulo": "Décrypter les références",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Tu as remarqué qu'en France, tout le monde parle de « la rentrée » dès la fin août ? C'est presque un concept national."
+     },
+     {
+      "p": "B",
+      "t": "Oui, ça m'a surpris. À Abidjan, on n'a pas de mot pour ça. Ici, même les gens sans enfants ont l'air de reprendre le travail avec solennité."
+     },
+     {
+      "p": "A",
+      "t": "C'est parce que juillet et août sont sacrés. On dit que le pays tourne au ralenti. De Gaulle aurait demandé comment gouverner un pays qui compte plus de deux cent cinquante variétés de fromage. Il y a du vrai : on n'est jamais d'accord."
+     },
+     {
+      "p": "B",
+      "t": "J'ai aussi entendu parler de la cohabitation. C'est une sorte de mariage forcé, non ?"
+     },
+     {
+      "p": "A",
+      "t": "Exactement. C'est quand le président et le Premier ministre sont de camps opposés. Mitterrand et Chirac l'ont vécu dans les années quatre-vingt, et on en parle encore comme d'un feuilleton."
+     },
+     {
+      "p": "B",
+      "t": "Et Mai 68 ? Mes collègues y font référence à tout propos. Hier, quelqu'un a dit : « Sous les pavés, la plage », et tout le monde a ri."
+     },
+     {
+      "p": "A",
+      "t": "C'est un slogan de l'époque. Les pavés, ce sont ceux qu'on arrachait des rues pour les barricades, et la plage, la promesse d'une vie plus libre. Aujourd'hui, on l'utilise pour parler de n'importe quel désir de changement, souvent avec un sourire."
+     },
+     {
+      "p": "B",
+      "t": "Je pensais que c'était une citation sérieuse."
+     },
+     {
+      "p": "A",
+      "t": "Elle l'est, et elle ne l'est pas. C'est tout le charme de ces références : on les cite avec une légère distance. Pareil pour Astérix. Quand on dit « ils sont fous, ces Romains », on ne parle pas de l'Antiquité."
+     },
+     {
+      "p": "B",
+      "t": "On parle de quoi, alors ?"
+     },
+     {
+      "p": "A",
+      "t": "De n'importe quelle situation absurde. Un embouteillage, une réforme administrative..."
+     },
+     {
+      "p": "B",
+      "t": "Je commence à comprendre pourquoi je ne saisissais rien aux conversations du déjeuner. Il faut avoir lu les mêmes albums de bande dessinée."
+     },
+     {
+      "p": "A",
+      "t": "Pas forcément les avoir lus, mais en avoir entendu parler. D'ailleurs, un conseil : si on dit de quelqu'un qu'il joue les Cassandre, ne cherche pas une Grecque. Cela veut dire qu'il annonce des catastrophes auxquelles personne ne croit."
+     },
+     {
+      "p": "B",
+      "t": "Je suppose que c'est un pessimiste."
+     },
+     {
+      "p": "A",
+      "t": "Un pessimiste qu'on n'écoute pas, voilà. Tu apprends vite. Dans six mois, tu feras des allusions que même les Français ne comprendront pas."
+     },
+     {
+      "p": "B",
+      "t": "Ce sera ma façon de m'intégrer."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Selon Hélène, pourquoi « la rentrée » est-elle presque un concept national ?",
+     "op": [
+      "Parce qu'elle concerne uniquement l'école",
+      "Parce que l'été est une pause collective, et la reprise un moment que tous partagent",
+      "Parce que l'État l'impose par la loi",
+      "Parce que les Français détestent travailler en septembre"
+     ],
+     "r": 1,
+     "exp": "Hélène diz que julho e agosto são « sacrés » e o país funciona em câmera lenta; a rentrée é a retomada coletiva."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : C'est quand le président et le Premier ministre sont de camps opposés : c'est la ___.",
+     "resp": [
+      "cohabitation"
+     ],
+     "exp": "« Cohabitation » = presidente e primeiro-ministro de partidos opostos. Não é só « morar junto ».",
+     "ouvir": "C'est quand le président et le Premier ministre sont de camps opposés. C'est la cohabitation."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Sous les pavés, la plage.",
+     "exp": "Slogan de Mai 68. « Pavés » /pavé/, « plage » /plaʒ/. Diga com um pequeno sorriso na voz.",
+     "ouvir": "Sous les pavés, la plage."
+    },
+    {
+     "t": "mc",
+     "q": "Avec quel ton les Français citent-ils généralement « Sous les pavés, la plage » aujourd'hui ?",
+     "op": [
+      "Avec une solennité historique",
+      "Avec une légère distance, mi-sérieuse, mi-amusée",
+      "Avec une colère politique",
+      "Avec une indifférence totale"
+     ],
+     "r": 1,
+     "exp": "Hélène: « Elle l'est, et elle ne l'est pas »: a citação é séria na origem, mas usada hoje com leveza."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "C'est",
+      "tout",
+      "le",
+      "charme",
+      "de",
+      "ces",
+      "références",
+      ":",
+      "on",
+      "les",
+      "cite",
+      "avec",
+      "une",
+      "légère",
+      "distance."
+     ],
+     "resp": "C'est tout le charme de ces références : on les cite avec une légère distance.",
+     "exp": "« Tout le charme de » = o grande encanto de. Pronome « les » antes do verbo: on les cite."
+    },
+    {
+     "t": "gap",
+     "q": "Quand on dit « ils sont fous, ces Romains », on ne parle pas de l'___.",
+     "resp": [
+      "Antiquité",
+      "antiquité",
+      "antiquite"
+     ],
+     "exp": "A frase de Obélix serve para qualquer situação absurda atual, não para a Roma antiga."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Quelles références culturelles de votre pays un étranger aurait-il du mal à comprendre ? Donnez un exemple.",
+     "modelo": "Au Brésil, on dit « jeitinho brasileiro ». Un étranger ne comprend pas toujours que c'est une façon de contourner les règles avec humour.",
+     "min": 10,
+     "chave": [
+      "référence",
+      "exemple",
+      "étranger",
+      "expression",
+      "pays",
+      "humour",
+      "comprendre",
+      "culture"
+     ],
+     "exp": "Escolha uma referência do seu país e explique o que ela quer dizer e quando se usa."
+    },
+    {
+     "t": "mc",
+     "q": "Que veut dire « Elle l'est, et elle ne l'est pas » à propos de la citation ?",
+     "op": [
+      "Que la citation est fausse",
+      "Qu'elle est à la fois sérieuse par son origine et employée sur un ton léger",
+      "Que personne ne comprend la citation",
+      "Qu'elle appartient à la fois à deux époques"
+     ],
+     "r": 1,
+     "exp": "A citação é séria (Mai 68) e leve (uso atual). A pergunta pede para você interpretar uma frase aparentemente contraditória."
+    },
+    {
+     "t": "gap",
+     "q": "Pour comprendre ces allusions, il n'est pas nécessaire d'avoir lu les albums, mais d'en avoir ___ parler.",
+     "resp": [
+      "entendu"
+     ],
+     "exp": "« Avoir entendu parler de » = ter ouvido falar. Particípio de entendre: entendu."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Suivre une conférence",
+   "objetivo": "Acompanhar a estrutura de uma exposição longa (plano, transições, resumo) e captar a ideia central de cada parte.",
+   "foco": "Marqueurs du discours : d'abord, en revanche, autrement dit, pour résumer",
+   "explicacao": [
+    "Numa conferência, o orador anuncia o plano (« en trois temps ») e usa marcadores para guiar o ouvinte: d'abord, ensuite, enfin; certes... toutefois; autrement dit; pour résumer.",
+    "Anote mentalmente o plano logo no início. Cada transição (« J'en viens maintenant à... ») marca uma nova parte, e a pergunta da prova costuma se referir a uma parte específica.",
+    "Atenção às concessões: « Certes, A. Toutefois, B. » A ideia que o orador defende é B. E « non pas que + subjonctif » apresenta algo que ele NÃO afirma.",
+    "No DALF C2 você fará um compte rendu: ou seja, deve restituir a problemática, o plano e as conclusões com suas próprias palavras."
+   ],
+   "vocab": [
+    {
+     "en": "procéder en trois temps",
+     "pt": "proceder em três etapas"
+    },
+    {
+     "en": "certes... toutefois",
+     "pt": "é verdade... no entanto"
+    },
+    {
+     "en": "autrement dit",
+     "pt": "em outras palavras"
+    },
+    {
+     "en": "une panacée",
+     "pt": "uma panaceia"
+    },
+    {
+     "en": "un îlot",
+     "pt": "uma ilha, um núcleo isolado"
+    },
+    {
+     "en": "l'assignation à résidence",
+     "pt": "prisão domiciliar (aqui, imagem)"
+    },
+    {
+     "en": "la proximité",
+     "pt": "a proximidade"
+    },
+    {
+     "en": "laisser ouvert",
+     "pt": "deixar em aberto"
+    }
+   ],
+   "material": {
+    "titulo": "Conférence : la ville du quart d'heure",
+    "falas": [
+     {
+      "p": "B",
+      "t": "Mesdames et messieurs, bienvenue. Notre invitée, urbaniste, va nous parler d'une idée dont on entend beaucoup parler : la ville du quart d'heure. Je précise que la conférence durera quarante minutes, suivies d'un échange avec la salle. Je vous demande de ne pas hésiter à poser vos questions à la fin."
+     },
+     {
+      "p": "A",
+      "t": "Merci. Je voudrais procéder en trois temps. D'abord, rappeler l'origine de l'idée ; ensuite, en examiner les promesses ; enfin, en soulever les limites, qui sont, à mes yeux, les plus instructives."
+     },
+     {
+      "p": "A",
+      "t": "Premier temps. L'idée est simple : chacun devrait pouvoir accéder en quinze minutes, à pied ou à vélo, à l'essentiel de ses besoins : travailler, se soigner, se nourrir, se divertir. Non pas que cette idée soit neuve, les villages fonctionnaient ainsi depuis toujours, mais elle prend un relief particulier avec la crise climatique."
+     },
+     {
+      "p": "A",
+      "t": "Deuxième temps : les promesses. Moins de voitures, donc moins de pollution ; davantage de vie de quartier ; des commerces de proximité qui survivent. Certes, les premières études sont encourageantes. Toutefois, il faut se garder de conclure trop vite : elles portent surtout sur des centres-villes déjà denses."
+     },
+     {
+      "p": "A",
+      "t": "J'en viens maintenant aux limites. Première limite : l'inégalité. Un quartier où tout est proche attire, donc devient cher, et ceux que l'on voulait servir finissent par partir. Autrement dit, on risque de fabriquer des îlots privilégiés. Deuxième limite : la liberté. Certains y voient une assignation à résidence, ce qui est excessif, mais révèle une inquiétude réelle : qui décide de ce qui est nécessaire ?"
+     },
+     {
+      "p": "A",
+      "t": "Pour résumer : la ville du quart d'heure n'est ni une panacée ni un piège. C'est un outil, dont l'effet dépend de la politique qui l'accompagne. Je terminerai par une question que je laisse ouverte : voulons-nous des villes où l'on n'a plus besoin de sortir de chez soi, ou des villes où l'on a envie d'en sortir ?"
+     },
+     {
+      "p": "B",
+      "t": "Merci. Une question dans la salle ?"
+     },
+     {
+      "p": "C",
+      "t": "Vous avez dit que les études portaient sur des centres-villes denses. Qu'en est-il des zones rurales ?"
+     },
+     {
+      "p": "A",
+      "t": "Excellente question. C'est justement le point faible du concept : la ruralité n'y trouve pas sa place, ce qui montre qu'il a été pensé par et pour des citadins."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment la conférencière organise-t-elle son intervention ?",
+     "op": [
+      "Histoire, exemples, conclusion",
+      "Origine de l'idée, promesses, limites",
+      "Définition, critique, solution",
+      "Avantages, inconvénients, alternatives"
+     ],
+     "r": 1,
+     "exp": "Ela anuncia três tempos: l'origine, les promesses, les limites. Note o « enfin » para o último."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : D'abord, rappeler l'origine de l'idée ; ensuite, en examiner les promesses ; ___, en soulever les limites.",
+     "resp": [
+      "enfin"
+     ],
+     "exp": "Série d'abord / ensuite / enfin: marcadores de plano. « Finalement » também seria possível em outro contexto, mas aqui ela diz « enfin ».",
+     "ouvir": "D'abord, rappeler l'origine de l'idée ; ensuite, en examiner les promesses ; enfin, en soulever les limites."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "La ville du quart d'heure n'est ni une panacée ni un piège.",
+     "exp": "« Ni... ni... » exige ne sem pas. « Panacée » /panase/: a nasalização não existe, pronuncie o n claramente.",
+     "ouvir": "La ville du quart d'heure n'est ni une panacée ni un piège."
+    },
+    {
+     "t": "mc",
+     "q": "Que signale l'expression « Non pas que cette idée soit neuve » ?",
+     "op": [
+      "Que l'idée est entièrement nouvelle",
+      "Que l'oratrice concède que l'idée n'est pas nouvelle, mais en souligne un aspect actuel",
+      "Que l'oratrice refuse de parler de l'origine de l'idée",
+      "Que l'idée est fausse"
+     ],
+     "r": 1,
+     "exp": "« Non pas que + subjonctif » apresenta algo que NÃO se afirma. A conferencista admite que a ideia é velha, mas acrescenta um relevo novo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Autrement",
+      "dit,",
+      "on",
+      "risque",
+      "de",
+      "fabriquer",
+      "des",
+      "îlots",
+      "privilégiés."
+     ],
+     "resp": "Autrement dit, on risque de fabriquer des îlots privilégiés.",
+     "exp": "« Autrement dit » = em outras palavras: reformula a frase anterior. « Risquer de + infinitif »."
+    },
+    {
+     "t": "gap",
+     "q": "Certes, les premières études sont encourageantes. ___, il faut se garder de conclure trop vite.",
+     "resp": [
+      "Toutefois",
+      "Cependant",
+      "Néanmoins",
+      "Pourtant"
+     ],
+     "exp": "Depois de « certes », vem o contraponto introduzido por toutefois / cependant / néanmoins. A tese defendida é a que vem DEPOIS."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Résumez en deux ou trois phrases les trois parties de la conférence.",
+     "modelo": "L'oratrice présente d'abord l'origine de l'idée, puis ses promesses, comme moins de pollution. Enfin, elle expose les limites : l'inégalité et la liberté.",
+     "min": 15,
+     "chave": [
+      "origine",
+      "promesses",
+      "limites",
+      "inégalité",
+      "liberté",
+      "quart d'heure",
+      "ville",
+      "enfin"
+     ],
+     "exp": "Use os marcadores do plano: d'abord, ensuite, enfin, e cite uma ideia por parte."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi la conférencière juge-t-elle les limites « les plus instructives » ?",
+     "op": [
+      "Parce qu'elles invalident complètement le concept",
+      "Parce qu'elles montrent que l'effet de l'outil dépend des choix politiques",
+      "Parce que le public connaît déjà les promesses",
+      "Parce qu'elles sont plus faciles à mesurer"
+     ],
+     "r": 1,
+     "exp": "A conclusão é que a ville du quart d'heure é um outil: seu efeito depende da política que o acompanha."
+    },
+    {
+     "t": "gap",
+     "q": "À propos de la ruralité, l'oratrice admet que le concept a été pensé par et pour des ___.",
+     "resp": [
+      "citadins",
+      "citadin"
+     ],
+     "exp": "« Citadins » = quem vive na cidade. Cuidado: « citoyens » = cidadãos (falso amigo de sentido)."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Science et éthique à la radio",
+   "objetivo": "Acompanhar um debate radiofônico sobre ciência e ética, identificando a posição de cada convidado e seus pontos de acordo.",
+   "foco": "Débat éthique : thérapie ou amélioration, cadre commun, principe de précaution",
+   "explicacao": [
+    "Num debate, cada falante defende uma posição, mas há concessões: « je vous l'accorde », « certes ». Anote o que cada um aceita e o que recusa.",
+    "O jornalista faz perguntas que orientam o tema; os convidados podem interromper (« Permettez-moi d'intervenir »). Cuidado com quem fala: a mesma frase pode ser de um ou de outro.",
+    "Vocabulário de ética: thérapie (cura), amélioration (melhoria), descendance (descendência), moratoire (suspensão), pente glissante (ladeira escorregadia), fait accompli (fato consumado).",
+    "Distratores frequentes: atribuir a um convidado a opinião do outro, ou trocar o sentido de « accorder » (conceder) por « concordar com tudo »."
+   ],
+   "vocab": [
+    {
+     "en": "l'édition du génome",
+     "pt": "a edição genômica"
+    },
+    {
+     "en": "la descendance",
+     "pt": "a descendência"
+    },
+    {
+     "en": "une prouesse",
+     "pt": "um feito, uma façanha"
+    },
+    {
+     "en": "la pente glissante",
+     "pt": "a ladeira escorregadia"
+    },
+    {
+     "en": "légiférer",
+     "pt": "legislar"
+    },
+    {
+     "en": "un moratoire",
+     "pt": "uma moratória"
+    },
+    {
+     "en": "un fait accompli",
+     "pt": "um fato consumado"
+    },
+    {
+     "en": "je vous l'accorde",
+     "pt": "eu concedo, admito"
+    }
+   ],
+   "material": {
+    "titulo": "L'édition du génome : où fixer la limite ?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Ce matin, nous parlons de l'édition du génome. Professeure Morel, un laboratoire vient d'annoncer avoir corrigé une mutation responsable d'une maladie du sang chez des embryons. Faut-il s'en réjouir ?"
+     },
+     {
+      "p": "B",
+      "t": "Je me réjouirais de la guérison d'un patient, pas d'une prouesse de laboratoire. La distinction est capitale. Corriger une cellule chez un adulte malade, c'est de la thérapie. Modifier un embryon, c'est transmettre la modification à toute la descendance."
+     },
+     {
+      "p": "C",
+      "t": "Permettez-moi d'intervenir. Je suis d'accord sur la distinction, mais pas sur la conclusion. Si l'on peut épargner à une famille une maladie qui tue à vingt ans, refuser de le faire est aussi un choix, et un choix lourd."
+     },
+     {
+      "p": "B",
+      "t": "Bien sûr, mais ne soyons pas naïfs : la frontière entre soigner et améliorer est floue. Aujourd'hui, une maladie du sang ; demain, la taille ou l'intelligence ?"
+     },
+     {
+      "p": "C",
+      "t": "C'est l'argument de la pente glissante, et il me semble fallacieux. On ne glisse pas tout seul : on légifère."
+     },
+     {
+      "p": "B",
+      "t": "Je vous l'accorde, la loi peut tracer des limites. Encore faut-il qu'elle le fasse avant les laboratoires, et non après. Or, dans ce domaine, l'histoire de la science est plutôt celle des faits accomplis."
+     },
+     {
+      "p": "A",
+      "t": "Docteur Aubry, les chercheurs ne sont-ils pas tentés d'aller vite pour ne pas se laisser distancer ?"
+     },
+     {
+      "p": "C",
+      "t": "Évidemment, la concurrence internationale existe, et ce serait mentir que de le nier. Mais c'est précisément pour cela que je plaide pour un cadre commun, plutôt qu'un patchwork de législations nationales."
+     },
+     {
+      "p": "B",
+      "t": "Là-dessus, nous sommes d'accord. Un cadre, oui ; un moratoire ou une interdiction à vie, je n'y crois pas non plus. Le plus important, c'est le débat public : on ne peut pas laisser aux seuls scientifiques le soin de décider de ce qui est acceptable."
+     },
+     {
+      "p": "C",
+      "t": "Je ne le prétends pas. Mais je demande qu'on distingue l'émotion de l'information. Beaucoup de craintes reposent sur des scénarios de science-fiction."
+     },
+     {
+      "p": "B",
+      "t": "Et beaucoup d'espoirs sur des promesses de communication, il faut le reconnaître."
+     },
+     {
+      "p": "A",
+      "t": "Voilà qui nous ramène à l'essentiel : qui décide, et sur quels critères ? Dernière question, très brève : si votre enfant était atteint de cette maladie, accepteriez-vous le traitement ?"
+     },
+     {
+      "p": "B",
+      "t": "Pour un enfant déjà né, sans hésiter. Pour un embryon, je demanderais d'abord ce qu'on risque de transmettre."
+     },
+     {
+      "p": "C",
+      "t": "Pour ma part, oui, et sans trop me poser de questions, ce qui n'est peut-être pas très scientifique de ma part."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle distinction la professeure Morel juge-t-elle capitale ?",
+     "op": [
+      "Entre recherche publique et recherche privée",
+      "Entre soigner un adulte et modifier un embryon dont la modification sera transmise",
+      "Entre maladie du sang et autres maladies",
+      "Entre laboratoires français et étrangers"
+     ],
+     "r": 1,
+     "exp": "Terapia em adulto não passa aos descendentes; modificar um embrião transmite a alteração a toda a descendance."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Modifier un embryon, c'est transmettre la modification à toute la ___.",
+     "resp": [
+      "descendance"
+     ],
+     "exp": "« Descendance » = descendência, os filhos e seus filhos. Atenção ao sufixo -ance, não -ence.",
+     "ouvir": "Modifier un embryon, c'est transmettre la modification à toute la descendance."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Ne soyons pas naïfs : la frontière entre soigner et améliorer est floue.",
+     "exp": "Impératif de « être » à la 1ère pers. du pluriel: soyons. « Floue » /flu/.",
+     "ouvir": "Ne soyons pas naïfs : la frontière entre soigner et améliorer est floue."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la position du docteur Aubry ?",
+     "op": [
+      "Il rejette toute distinction entre thérapie et amélioration",
+      "Il admet la distinction mais pense que s'abstenir est aussi un choix lourd, et que la loi peut fixer des limites",
+      "Il demande une interdiction à vie",
+      "Il pense que les scientifiques doivent décider seuls"
+     ],
+     "r": 1,
+     "exp": "Aubry aceita a distinção, mas não a conclusão: recusar a cura também é um choix. E diz « on légifère »."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "On",
+      "ne",
+      "glisse",
+      "pas",
+      "tout",
+      "seul",
+      ":",
+      "on",
+      "légifère."
+     ],
+     "resp": "On ne glisse pas tout seul : on légifère.",
+     "exp": "Resposta de Aubry ao argumento da pente glissante: a lei pode impedir o deslize. « Légiférer » = fazer leis."
+    },
+    {
+     "t": "gap",
+     "q": "Selon Mme Morel, l'histoire de la science est plutôt celle des faits ___.",
+     "resp": [
+      "accomplis",
+      "accompli"
+     ],
+     "exp": "« Fait accompli » = fato consumado: faits accomplis no plural. O particípio concorda com « faits »."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Résumez en quelques phrases le point de désaccord entre les deux invités, puis leur point d'accord.",
+     "modelo": "Ils ne sont pas d'accord sur la frontière entre soigner et améliorer. En revanche, ils veulent tous les deux un cadre commun et un débat public.",
+     "min": 15,
+     "chave": [
+      "désaccord",
+      "accord",
+      "cadre",
+      "débat",
+      "soigner",
+      "améliorer",
+      "embryon",
+      "loi"
+     ],
+     "exp": "Use « en revanche » para opor os dois pontos: désaccord d'abord, accord ensuite."
+    },
+    {
+     "t": "mc",
+     "q": "Sur quoi les deux invités sont-ils d'accord ?",
+     "op": [
+      "Sur l'interdiction définitive de toute modification",
+      "Sur la nécessité d'un cadre commun et d'un débat public, sans moratoire éternel",
+      "Sur le fait que les scientifiques doivent décider seuls",
+      "Sur le fait que les craintes sont toutes infondées"
+     ],
+     "r": 1,
+     "exp": "Morel: « Un cadre, oui ; un moratoire ou une interdiction à vie, je n'y crois pas non plus »; os dois citam o debate público e a regulação."
+    },
+    {
+     "t": "gap",
+     "q": "Mme Morel concède : « Je vous l'___, la loi peut tracer des limites. »",
+     "resp": [
+      "accorde"
+     ],
+     "exp": "« Accorder quelque chose à quelqu'un » = conceder. Não é « combinar » nem « acordar ». É uma concessão típica de debate."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Débat politique et interruptions",
+   "objetivo": "Acompanhar um debate com interrupções, ironia e réplicas rápidas, identificando quem diz o quê.",
+   "foco": "Le débat : interruptions, mauvaise foi, objections et contre-arguments",
+   "explicacao": [
+    "Em debates, as vozes se cruzam: « Permettez-moi de vous interrompre », « Laissez-moi finir ». Anote quem defende o quê antes de ouvir as perguntas.",
+    "A réplica pode ser irônica: « Quel bel argument ! Dommage qu'il n'ait aucun fondement ». Aqui o elogio é falso e o subjuntivo « qu'il n'ait » vem depois de « dommage que ».",
+    "Palavras de argumentação: concéder (certes... mais), réfuter (contester), la mauvaise foi (desonestidade intelectual), un biais, de pure forme (só no papel).",
+    "Distratores: o locutor repete a tese do adversário para refutá-la; não confunda isso com a opinião dele."
+   ],
+   "vocab": [
+    {
+     "en": "l'abstention",
+     "pt": "a abstenção"
+    },
+    {
+     "en": "le vote blanc",
+     "pt": "o voto em branco"
+    },
+    {
+     "en": "de pure forme",
+     "pt": "apenas formal"
+    },
+    {
+     "en": "la mauvaise foi",
+     "pt": "a má-fé"
+    },
+    {
+     "en": "la légitimité",
+     "pt": "a legitimidade"
+    },
+    {
+     "en": "fondement empirique",
+     "pt": "base empírica"
+    },
+    {
+     "en": "une amende",
+     "pt": "uma multa"
+    },
+    {
+     "en": "le jury d'assises",
+     "pt": "o júri popular"
+    }
+   ],
+   "material": {
+    "titulo": "Faut-il rendre le vote obligatoire ?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonsoir. Ce soir, une question qui revient à chaque élection : faut-il rendre le vote obligatoire ? Madame Garnier, vous êtes pour. Pourquoi ?"
+     },
+     {
+      "p": "B",
+      "t": "Parce que l'abstention a atteint un niveau où l'on peut se demander si l'élu représente encore le peuple. Quand près d'un électeur sur deux reste chez lui, la légitimité s'affaiblit."
+     },
+     {
+      "p": "C",
+      "t": "Permettez-moi de vous interrompre. Une légitimité qui s'affaiblit, c'est une chose ; mais obliger les gens à voter ne leur redonne pas confiance. On va simplement voir des bulletins blancs ou des votes de protestation."
+     },
+     {
+      "p": "B",
+      "t": "Laissez-moi finir. Je disais que l'obligation ne suffit pas, évidemment. Elle doit s'accompagner d'une reconnaissance du vote blanc. C'est ce qui se fait dans d'autres pays."
+     },
+     {
+      "p": "C",
+      "t": "Dans quelques pays, et avec des résultats inégaux. En Belgique, par exemple, l'amende est tellement symbolique qu'elle n'est quasiment jamais appliquée. Voilà une obligation de pure forme."
+     },
+     {
+      "p": "B",
+      "t": "Certes, mais la participation y reste très élevée, ce qui prouve que la norme sociale joue un rôle."
+     },
+     {
+      "p": "C",
+      "t": "Sauf que vous confondez les causes. Les Belges votent peut-être par habitude, et non par contrainte."
+     },
+     {
+      "p": "A",
+      "t": "Madame Garnier, votre adversaire dit qu'on soigne le symptôme sans traiter la maladie. Que répondez-vous ?"
+     },
+     {
+      "p": "B",
+      "t": "Que le symptôme est grave et que la maladie est longue. Pendant ce temps, on ne peut pas attendre que la confiance revienne d'elle-même. Obliger à voter, c'est aussi obliger les partis à parler à tout le monde, y compris à ceux qu'ils ignorent aujourd'hui."
+     },
+     {
+      "p": "C",
+      "t": "Quel bel argument ! Dommage qu'il n'ait aucun fondement empirique. Les partis ciblent ceux qui votent ; si tout le monde vote, ils ciblent tout le monde, mais avec des promesses plus floues."
+     },
+     {
+      "p": "B",
+      "t": "Vous êtes d'une mauvaise foi remarquable."
+     },
+     {
+      "p": "C",
+      "t": "Je suis d'une prudence remarquable, c'est différent. Le vote est un droit avant d'être un devoir, et un droit que l'on impose cesse d'être un droit."
+     },
+     {
+      "p": "A",
+      "t": "Une dernière réaction, Madame Garnier."
+     },
+     {
+      "p": "B",
+      "t": "Le jury d'assises, l'impôt : nous acceptons mille obligations au nom de l'intérêt commun. Pourquoi pas celle-là ?"
+     },
+     {
+      "p": "C",
+      "t": "Parce que le jury d'assises ne vous demande pas votre opinion, il vous demande votre jugement. Voter, c'est exprimer qui l'on est."
+     },
+     {
+      "p": "A",
+      "t": "Nous nous arrêterons là-dessus. Merci à tous les deux."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel est l'argument principal de Mme Garnier en faveur du vote obligatoire ?",
+     "op": [
+      "Le vote est une tradition ancienne",
+      "L'abstention affaiblit la légitimité des élus",
+      "Les partis ne parlent qu'aux jeunes",
+      "Le vote blanc est interdit"
+     ],
+     "r": 1,
+     "exp": "Ela abre dizendo que, com quase metade dos eleitores ausentes, la légitimité s'affaiblit."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Quand près d'un électeur sur deux reste chez lui, la ___ s'affaiblit.",
+     "resp": [
+      "légitimité",
+      "legitimite"
+     ],
+     "exp": "« Légitimité » = legitimidade. O argumento: um eleito com pouca participação representa menos o povo.",
+     "ouvir": "Quand près d'un électeur sur deux reste chez lui, la légitimité s'affaiblit."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Laissez-moi finir, je n'ai pas terminé.",
+     "exp": "Imperativo + pronome: « Laissez-moi ». Tom firme, ritmo rápido, como numa interrupção real.",
+     "ouvir": "Laissez-moi finir, je n'ai pas terminé."
+    },
+    {
+     "t": "mc",
+     "q": "Que veut dire le politologue par « Voilà une obligation de pure forme » à propos de la Belgique ?",
+     "op": [
+      "Que l'obligation est très bien respectée",
+      "Que l'obligation existe sur le papier mais n'est presque pas appliquée",
+      "Que l'obligation est trop sévère",
+      "Que l'obligation est récente"
+     ],
+     "r": 1,
+     "exp": "L'amende est symbolique et presque jamais appliquée: a obrigação é « de pure forme »."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Les",
+      "Belges",
+      "votent",
+      "peut-être",
+      "par",
+      "habitude,",
+      "et",
+      "non",
+      "par",
+      "contrainte."
+     ],
+     "resp": "Les Belges votent peut-être par habitude, et non par contrainte.",
+     "exp": "« Peut-être » no meio da frase não exige inversão. « Et non par » opõe duas causas."
+    },
+    {
+     "t": "gap",
+     "q": "Selon le politologue, le vote est un droit avant d'être un ___.",
+     "resp": [
+      "devoir"
+     ],
+     "exp": "« Un droit avant d'être un devoir »: é a tese central dele contra a obrigação."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Êtes-vous pour ou contre le vote obligatoire ? Donnez un argument et répondez à une objection.",
+     "modelo": "Je suis pour, car l'abstention affaiblit la démocratie. Certes, voter est un droit, mais on accepte d'autres obligations pour l'intérêt commun.",
+     "min": 15,
+     "chave": [
+      "pour",
+      "contre",
+      "vote",
+      "obligatoire",
+      "argument",
+      "démocratie",
+      "droit",
+      "abstention"
+     ],
+     "exp": "Estruture: position, argument, concessão (certes... mais), resposta à objeção."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le ton du politologue quand il dit « Quel bel argument ! Dommage qu'il n'ait aucun fondement empirique » ?",
+     "op": [
+      "Sincèrement admiratif",
+      "Ironique : il rejette l'argument",
+      "Neutre et informatif",
+      "Hésitant"
+     ],
+     "r": 1,
+     "exp": "Elogio exagerado + « dommage que » = ironia. Note o subjuntivo depois de « dommage que »."
+    },
+    {
+     "t": "gap",
+     "q": "D'après le politologue, voter, c'est exprimer qui l'on ___.",
+     "resp": [
+      "est"
+     ],
+     "exp": "« Qui l'on est » (identidade). O jurado dá seu julgamento; o eleitor expressa quem é."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Économie : la semaine de quatre jours",
+   "objetivo": "Seguir um debate econômico, distinguindo dados, opiniões, ressalvas e a posição de cada convidado.",
+   "foco": "Débat économique : productivité, biais de sélection, généralisation hâtive",
+   "explicacao": [
+    "Em debates econômicos, os falantes citam dados (« un tiers »), mas também ressalvas: « sauf que... », « à condition que... », « ce qui est possible dans X ne l'est pas dans Y ». Separe o que é fato do que é opinião.",
+    "Cuidado com o falso amigo « prétendre »: em francês, significa AFIRMAR (« je ne prétends pas que tout est rose » = não afirmo que seja tudo perfeito), não 'pretender'. Também: « actuellement » = atualmente.",
+    "Conceitos: biais de sélection (viés de seleção), gains de productivité (ganhos de produtividade), réduction vs condensation du temps de travail, diagnostic vs remède.",
+    "Na prova, pergunte-se: quem fala? Que ressalva faz? Está contra, ou só contra a generalização?"
+   ],
+   "vocab": [
+    {
+     "en": "la semaine de quatre jours",
+     "pt": "a semana de quatro dias"
+    },
+    {
+     "en": "l'absentéisme",
+     "pt": "o absenteísmo"
+    },
+    {
+     "en": "un biais de sélection",
+     "pt": "um viés de seleção"
+    },
+    {
+     "en": "prétendre",
+     "pt": "afirmar (falso amigo!)"
+    },
+    {
+     "en": "condenser",
+     "pt": "condensar, concentrar"
+    },
+    {
+     "en": "un gain de productivité",
+     "pt": "um ganho de produtividade"
+    },
+    {
+     "en": "hâtif / hâtive",
+     "pt": "precipitado"
+    },
+    {
+     "en": "un pari",
+     "pt": "uma aposta"
+    }
+   ],
+   "material": {
+    "titulo": "Le débat du matin : quatre jours de travail ?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Plusieurs entreprises françaises testent la semaine de quatre jours. Pierre Vidal, vous dirigez une PME de logiciels et vous l'avez adoptée il y a deux ans. Quel bilan ?"
+     },
+     {
+      "p": "B",
+      "t": "Un bilan plutôt positif, même si je ne vais pas prétendre que tout est rose. L'absentéisme a baissé d'un tiers, et nous recrutons plus facilement. En revanche, la charge de travail s'est concentrée sur quatre jours, et certains salariés se plaignent de journées plus denses."
+     },
+     {
+      "p": "C",
+      "t": "C'est précisément mon premier point. On parle de réduction du temps de travail, alors que très souvent, on se contente de condenser les mêmes heures. Passer de cinq jours à quatre en gardant trente-cinq heures, ce n'est pas la même chose que travailler moins."
+     },
+     {
+      "p": "B",
+      "t": "Chez nous, les horaires ont diminué sans baisse de salaire."
+     },
+     {
+      "p": "C",
+      "t": "Ce qui est possible dans le logiciel, où la productivité est facile à augmenter, ne l'est pas dans un hôpital ou une boulangerie. On ne soigne pas un patient en un quart d'heure de moins."
+     },
+     {
+      "p": "B",
+      "t": "Je ne le nie pas. Je dis seulement que dans notre secteur, ça marche."
+     },
+     {
+      "p": "A",
+      "t": "Madame Roche, vous êtes donc contre ?"
+     },
+     {
+      "p": "C",
+      "t": "Pas du tout. Je suis contre la généralisation hâtive. La plupart des expériences reposent sur des entreprises volontaires, donc déjà convaincues. C'est ce qu'on appelle un biais de sélection."
+     },
+     {
+      "p": "B",
+      "t": "Vous avez raison sur ce point, mais le biais joue aussi dans l'autre sens : les entreprises qui échouent ne le disent pas toujours."
+     },
+     {
+      "p": "C",
+      "t": "Ah, voilà qui est honnête. Mais on ne peut pas fonder une politique publique sur des témoignages."
+     },
+     {
+      "p": "A",
+      "t": "Qu'est-ce que cela change pour l'économie dans son ensemble ?"
+     },
+     {
+      "p": "C",
+      "t": "Cela dépend des gains de productivité. S'ils ne suivent pas, les coûts augmentent, les prix aussi, et ce sont les consommateurs qui paient. Si, au contraire, les salariés sont plus efficaces, tout le monde y gagne. C'est un pari, pas une certitude."
+     },
+     {
+      "p": "B",
+      "t": "Moi, je préfère parler de choix. Une entreprise qui ne fait rien prend aussi un risque, celui de perdre ses meilleurs éléments."
+     },
+     {
+      "p": "C",
+      "t": "Voilà : nous sommes d'accord sur le diagnostic, pas sur le remède."
+     },
+     {
+      "p": "A",
+      "t": "Je retiens la formule. Merci à tous les deux."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel inconvénient de la semaine de quatre jours M. Vidal reconnaît-il dans son entreprise ?",
+     "op": [
+      "Une hausse de l'absentéisme",
+      "Des journées plus denses pour certains salariés",
+      "Une baisse des salaires",
+      "Des difficultés à recruter"
+     ],
+     "r": 1,
+     "exp": "Ele diz « certains salariés se plaignent de journées plus denses ». O absenteísmo caiu, e o recrutamento ficou mais fácil."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : L'absentéisme a baissé d'un ___, et nous recrutons plus facilement.",
+     "resp": [
+      "tiers"
+     ],
+     "exp": "« Un tiers » = 1/3. Pronuncia-se /tjɛʁ/. Não confundir com « tiers » no sentido de terceiros.",
+     "ouvir": "L'absentéisme a baissé d'un tiers, et nous recrutons plus facilement."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Nous sommes d'accord sur le diagnostic, pas sur le remède.",
+     "exp": "Atenção ao ritmo: pausa curta após « diagnostic ». « Remède » /ʁəmɛd/.",
+     "ouvir": "Nous sommes d'accord sur le diagnostic, pas sur le remède."
+    },
+    {
+     "t": "mc",
+     "q": "Que veut dire Mme Roche par « biais de sélection » ?",
+     "op": [
+      "Les entreprises testées sont volontaires et déjà convaincues, donc les résultats ne sont pas généralisables",
+      "Les entreprises sont choisies au hasard",
+      "Le gouvernement choisit les secteurs",
+      "Les salariés votent pour la mesure"
+     ],
+     "r": 0,
+     "exp": "Entreprises voluntárias = já convencidas: os resultados não valem para todos. É por isso que ela rejeita a « généralisation hâtive »."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "On",
+      "ne",
+      "soigne",
+      "pas",
+      "un",
+      "patient",
+      "en",
+      "un",
+      "quart",
+      "d'heure",
+      "de",
+      "moins."
+     ],
+     "resp": "On ne soigne pas un patient en un quart d'heure de moins.",
+     "exp": "Argumento de Roche: em certos setores não se ganha produtividade. « Un quart d'heure de moins » = 15 minutos a menos."
+    },
+    {
+     "t": "gap",
+     "q": "Mme Roche est contre la généralisation ___.",
+     "resp": [
+      "hâtive",
+      "hative"
+     ],
+     "exp": "« Hâtive » concorda com « généralisation » (feminino). Significa precipitada, apressada."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Pensez-vous que la semaine de quatre jours soit une bonne idée ? Donnez un argument pour et une réserve.",
+     "modelo": "Je pense que c'est une bonne idée pour certains secteurs, car elle réduit l'absentéisme. Toutefois, elle n'est pas possible partout, par exemple dans un hôpital.",
+     "min": 15,
+     "chave": [
+      "semaine",
+      "quatre jours",
+      "idée",
+      "secteur",
+      "productivité",
+      "réserve",
+      "absentéisme",
+      "toutefois"
+     ],
+     "exp": "Dê um argumento a favor, depois uma ressalva com « toutefois » ou « en revanche »."
+    },
+    {
+     "t": "mc",
+     "q": "Quand M. Vidal dit « je ne vais pas prétendre que tout est rose », que veut-il dire ?",
+     "op": [
+      "Il ne veut pas affirmer que tout est parfait",
+      "Il n'a pas l'intention que tout devienne rose",
+      "Il refuse de faire semblant de travailler",
+      "Il espère que tout sera parfait"
+     ],
+     "r": 0,
+     "exp": "« Prétendre » significa AFIRMAR (falso amigo de 'pretender'). A frase é uma ressalva: o balanço é positivo, mas não perfeito."
+    },
+    {
+     "t": "gap",
+     "q": "Pour Mme Roche, c'est un ___, pas une certitude.",
+     "resp": [
+      "pari"
+     ],
+     "exp": "« Un pari » = uma aposta. A economista vê os ganhos de produtividade como incertos."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "L'art du faux",
+   "objetivo": "Acompanhar uma discussão sobre arte e autenticidade, com desacordos sutis entre dois especialistas.",
+   "foco": "Les arts : authenticité, faussaire, jugement esthétique",
+   "explicacao": [
+    "Debates sobre arte misturam fatos (um falsário enganou museus) e ideias (o valor estético depende do que sabemos?). Separe a narração do argumento.",
+    "As discordâncias são educadas, mas firmes: « Là, je m'inscris en faux » (= eu contesto), « Soit. Mais admettez que... » (= concedo, mas...). Cuidado: « s'inscrire en faux » nunca significa 'assinar um falso'.",
+    "Vocabulário: faussaire, authentique, chef-d'œuvre, cartel (legenda de museu, MASCULINO), crédule, escroquerie, plaidoyer.",
+    "Pergunta típica de prova: o que um falante pensa da posição do outro? Procure adjetivos de avaliação (honnête, cynique, commode)."
+   ],
+   "vocab": [
+    {
+     "en": "un faussaire",
+     "pt": "um falsário"
+    },
+    {
+     "en": "s'inscrire en faux",
+     "pt": "contestar formalmente"
+    },
+    {
+     "en": "crédule",
+     "pt": "crédulo"
+    },
+    {
+     "en": "un cartel",
+     "pt": "a legenda de uma obra no museu"
+    },
+    {
+     "en": "une escroquerie",
+     "pt": "um golpe"
+    },
+    {
+     "en": "un plaidoyer",
+     "pt": "uma defesa, um discurso em defesa"
+    },
+    {
+     "en": "démasquer",
+     "pt": "desmascarar"
+    },
+    {
+     "en": "commode",
+     "pt": "cômodo, conveniente"
+    }
+   ],
+   "material": {
+    "titulo": "Un faussaire dans les musées",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Armand Lescure a vendu pendant vingt ans de faux tableaux de la Renaissance à des collectionneurs et même à deux musées. Madame Berger, historienne de l'art, comment est-ce possible ?"
+     },
+     {
+      "p": "B",
+      "t": "Parce que les experts voient ce qu'ils s'attendent à voir. Lescure ne copiait pas des tableaux existants : il inventait des œuvres perdues d'artistes connus, dans le style attendu. Personne ne pouvait comparer avec un original, puisqu'il n'y en avait pas."
+     },
+     {
+      "p": "A",
+      "t": "Monsieur Duval, vous êtes galeriste. Le marché de l'art est-il naïf ?"
+     },
+     {
+      "p": "C",
+      "t": "Je dirais plutôt qu'il est humain. Un expert qui découvre un chef-d'œuvre inconnu a envie d'y croire. Ça ne l'excuse pas, mais ça l'explique. Cela dit, je trouve injuste de faire porter tout le blâme sur les professionnels. Les collectionneurs sont parfois complices : ils achètent une signature, pas une œuvre."
+     },
+     {
+      "p": "B",
+      "t": "Là, je m'inscris en faux. Un collectionneur n'est pas un complice parce qu'il est crédule. La complicité suppose de savoir."
+     },
+     {
+      "p": "C",
+      "t": "Soit. Mais admettez que certains préfèrent ne pas savoir."
+     },
+     {
+      "p": "B",
+      "t": "Peut-être, mais le débat intéressant est ailleurs. Une fois le faux démasqué, le tableau a-t-il changé ? Les pigments sont les mêmes, la composition est la même, et ceux qui l'admiraient l'admiraient sincèrement."
+     },
+     {
+      "p": "C",
+      "t": "Voilà un raisonnement bien commode pour un faussaire."
+     },
+     {
+      "p": "B",
+      "t": "Ce n'est pas un plaidoyer. Je constate seulement que notre jugement esthétique dépend de ce que nous croyons savoir de l'objet. Ce que l'on voit n'est pas indépendant de ce que l'on sait."
+     },
+     {
+      "p": "A",
+      "t": "Les musées ont-ils décroché les faux ?"
+     },
+     {
+      "p": "B",
+      "t": "L'un d'eux l'a fait aussitôt. L'autre a choisi de les exposer, avec un cartel explicite : « Faux, mais remarquable ». J'ai trouvé la formule honnête."
+     },
+     {
+      "p": "C",
+      "t": "Moi, je la trouve cynique. On fait payer l'entrée pour admirer une escroquerie."
+     },
+     {
+      "p": "B",
+      "t": "Elle a au moins le mérite de dire les choses. Et, à vrai dire, l'affluence a doublé."
+     },
+     {
+      "p": "A",
+      "t": "Que reste-t-il de cette affaire ?"
+     },
+     {
+      "p": "B",
+      "t": "Une leçon d'humilité pour les experts, et une question pour nous tous : aimons-nous les œuvres, ou l'idée que nous nous faisons de leur histoire ?"
+     },
+     {
+      "p": "C",
+      "t": "Je suis sûr que Lescure, lui, aime surtout l'argent."
+     },
+     {
+      "p": "A",
+      "t": "Merci à tous les deux pour cet échange qui laisse, je crois, plus de questions que de réponses."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi les experts ont-ils été trompés par Lescure ?",
+     "op": [
+      "Il copiait fidèlement des tableaux célèbres",
+      "Il créait des œuvres perdues dans le style attendu, sans original à comparer",
+      "Il corrompait les experts",
+      "Il vendait seulement à des amateurs"
+     ],
+     "r": 1,
+     "exp": "Ele inventava obras « perdues » no estilo esperado; sem original, não havia comparação possível."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Parce que les experts voient ce qu'ils s'___ à voir.",
+     "resp": [
+      "attendent",
+      "attendent "
+     ],
+     "exp": "« S'attendre à » = esperar (falso amigo: « attendre » = esperar por alguém). Aqui, os especialistas veem o que esperam ver.",
+     "ouvir": "Parce que les experts voient ce qu'ils s'attendent à voir."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Ce que l'on voit n'est pas indépendant de ce que l'on sait.",
+     "exp": "« Ce que l'on » com liaison suave: /sə kə lɔ̃/. Ritmo de aforismo: pausa após « voit ».",
+     "ouvir": "Ce que l'on voit n'est pas indépendant de ce que l'on sait."
+    },
+    {
+     "t": "mc",
+     "q": "Que signifie « Là, je m'inscris en faux » dans la bouche de Mme Berger ?",
+     "op": [
+      "Je signe un faux document",
+      "Je conteste formellement ce que vous venez de dire",
+      "Je reconnais mon erreur",
+      "Je suis d'accord avec vous"
+     ],
+     "r": 1,
+     "exp": "« S'inscrire en faux contre » = contestar. É resposta à ideia de que os colecionadores seriam cúmplices."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Un",
+      "collectionneur",
+      "n'est",
+      "pas",
+      "un",
+      "complice",
+      "parce",
+      "qu'il",
+      "est",
+      "crédule."
+     ],
+     "resp": "Un collectionneur n'est pas un complice parce qu'il est crédule.",
+     "exp": "A negação « n'est pas... parce que » nega a causa: ser crédulo não basta para ser cúmplice."
+    },
+    {
+     "t": "gap",
+     "q": "Un musée a exposé les faux avec un cartel : « Faux, mais ___ ».",
+     "resp": [
+      "remarquable"
+     ],
+     "exp": "Cartel (masculino) = legenda explicativa. A fórmula é considerada honesta por B e cínica por C."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Une œuvre falsifiée peut-elle être belle ? Donnez votre opinion en deux ou trois phrases.",
+     "modelo": "Oui, une œuvre fausse peut être belle, car les couleurs et la composition ne changent pas. Mais elle perd sa valeur de témoignage historique.",
+     "min": 15,
+     "chave": [
+      "faux",
+      "belle",
+      "œuvre",
+      "valeur",
+      "artiste",
+      "opinion",
+      "composition",
+      "authentique"
+     ],
+     "exp": "Dê uma opinião clara e nuance-a com « mais » ou « cependant »."
+    },
+    {
+     "t": "mc",
+     "q": "Comment Mme Berger et M. Duval jugent-ils le cartel « Faux, mais remarquable » ?",
+     "op": [
+      "Les deux le jugent cynique",
+      "Mme Berger le trouve honnête, M. Duval le trouve cynique",
+      "M. Duval l'approuve, Mme Berger le critique",
+      "Les deux l'approuvent"
+     ],
+     "r": 1,
+     "exp": "Berger: « J'ai trouvé la formule honnête »; Duval: « Moi, je la trouve cynique ». Cuidado para não inverter as vozes."
+    },
+    {
+     "t": "gap",
+     "q": "Selon Mme Berger, la complicité suppose de ___.",
+     "resp": [
+      "savoir"
+     ],
+     "exp": "Complicidade exige saber; ser crédulo não basta. É o ponto central da discordância com Duval."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Langues régionales",
+   "objetivo": "Acompanhar um debate sobre línguas e identidade, com causas múltiplas, memória histórica e nuances entre convidados.",
+   "foco": "Langage et société : langues minoritaires, honte linguistique, décret et envie",
+   "explicacao": [
+    "Debates sobre língua misturam história (a proibição nas escolas), sociologia (êxodo rural) e sentimento (a vergonha). Cada convidado dá peso diferente: a linguista, às causas estruturais; a professora, à vivência.",
+    "Palavras de nuance: « ou pas seulement », « je ne nie pas... j'insiste seulement », « avec une nuance ». Elas mostram acordo parcial.",
+    "Cuidado com os falsos amigos e as armadilhas: « la honte » (a vergonha), « disparaître » (desaparecer, verbo com avoir ou être? com être/avoir conforme o sentido), « folklore » (aqui, algo decorativo).",
+    "No compte rendu, mostre como as posições se aproximam ou se afastam: B e C concordam que o decreto não basta, mas divergem sobre a causa."
+   ],
+   "vocab": [
+    {
+     "en": "une langue minoritaire",
+     "pt": "uma língua minoritária"
+    },
+    {
+     "en": "l'exode rural",
+     "pt": "o êxodo rural"
+    },
+    {
+     "en": "la honte",
+     "pt": "a vergonha"
+    },
+    {
+     "en": "culpabiliser",
+     "pt": "culpabilizar"
+    },
+    {
+     "en": "un décret",
+     "pt": "um decreto"
+    },
+    {
+     "en": "la fierté",
+     "pt": "o orgulho"
+    },
+    {
+     "en": "recevable",
+     "pt": "aceitável, admissível"
+    },
+    {
+     "en": "la houle",
+     "pt": "a ondulação do mar"
+    }
+   ],
+   "material": {
+    "titulo": "Peut-on sauver une langue ?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "En France, le breton, l'alsacien ou l'occitan ont longtemps été interdits à l'école. Aujourd'hui, on les enseigne. Madame Le Goff, vous enseignez le breton à des enfants dont les grands-parents le parlaient. Que transmettez-vous exactement ?"
+     },
+     {
+      "p": "C",
+      "t": "Pas seulement une langue, une manière de dire le monde. Mais je suis lucide : mes élèves parlent breton à l'école et français à la maison, parfois même entre eux dans la cour. La langue vit en classe, pas dans la rue."
+     },
+     {
+      "p": "B",
+      "t": "Et c'est là toute la difficulté. Une langue ne meurt pas seulement parce qu'on l'interdit ; elle meurt quand plus personne n'a de raison de s'en servir. L'interdiction scolaire a été brutale, certes, mais ce sont surtout la mobilité sociale et l'exode rural qui ont fait le plus de dégâts."
+     },
+     {
+      "p": "C",
+      "t": "Je n'en suis pas si sûre. Mes grands-parents ont appris à avoir honte de leur langue. Dans les écoles, on faisait porter un objet, le « symbole », à celui qui parlait breton. Cette honte-là, elle ne se mesure pas dans les statistiques."
+     },
+     {
+      "p": "B",
+      "t": "Je ne nie pas la honte. J'insiste seulement sur le fait que les causes sont multiples. Ce que je crains, c'est qu'on se serve de l'histoire pour culpabiliser, plutôt que pour comprendre."
+     },
+     {
+      "p": "A",
+      "t": "Peut-on sauver une langue par décret ?"
+     },
+     {
+      "p": "B",
+      "t": "Non, et c'est l'illusion principale. On peut créer des conditions, financer des écoles, produire des livres, des séries, de la musique. Mais le décret ne remplace pas l'envie."
+     },
+     {
+      "p": "C",
+      "t": "Je suis d'accord, avec une nuance : l'envie se fabrique aussi. Chez mes élèves, elle vient de la fierté. Un enfant qui entend sa langue dans une chanson qu'il aime n'a plus honte."
+     },
+     {
+      "p": "A",
+      "t": "Certains disent que c'est du folklore, et que l'argent public serait mieux utilisé ailleurs."
+     },
+     {
+      "p": "B",
+      "t": "C'est une critique recevable, mais qui suppose que la diversité linguistique n'a pas de valeur. Quand une langue disparaît, c'est tout un monde de savoirs qui s'éteint avec elle."
+     },
+     {
+      "p": "C",
+      "t": "J'aurais dit un peu moins solennellement : ce sont des mots pour des choses que le français ne sait pas nommer."
+     },
+     {
+      "p": "A",
+      "t": "Un exemple ?"
+     },
+     {
+      "p": "C",
+      "t": "Le vocabulaire de la mer, chez nous. On dit qu'il existe des dizaines de mots pour décrire les états de la houle, alors que le français n'en a qu'un ou deux. Je ne les citerai pas tous, je risquerais de me tromper de mutation."
+     },
+     {
+      "p": "B",
+      "t": "Voilà qui prouve que même les spécialistes redoutent les subtilités de leur propre langue."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle différence Mme Le Goff fait-elle entre l'école et la rue ?",
+     "op": [
+      "Les enfants parlent breton partout",
+      "La langue vit en classe, mais pas dans la vie quotidienne",
+      "Les enfants parlent français en classe seulement",
+      "Les parents refusent que leurs enfants parlent breton"
+     ],
+     "r": 1,
+     "exp": "Ela diz « La langue vit en classe, pas dans la rue »: os alunos falam bretão na escola, mas francês fora."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Elle meurt quand plus personne n'a de ___ de s'en servir.",
+     "resp": [
+      "raison"
+     ],
+     "exp": "« Une raison de + infinitif » = um motivo para. Atenção: depois de « n'a de » o artigo some (plus personne n'a de raison). A língua morre quando perde o uso social.",
+     "ouvir": "Elle meurt quand plus personne n'a de raison de s'en servir."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Le décret ne remplace pas l'envie.",
+     "exp": "« Décret » /dekʁɛ/. Ritmo curto, afirmativo; a nasal « envie » /ɑ̃vi/.",
+     "ouvir": "Le décret ne remplace pas l'envie."
+    },
+    {
+     "t": "mc",
+     "q": "Sur quel point la linguiste et la professeure divergent-elles ?",
+     "op": [
+      "Sur l'utilité d'enseigner le breton",
+      "Sur le poids relatif de la honte ressentie et des facteurs sociaux dans le déclin de la langue",
+      "Sur la date de l'interdiction",
+      "Sur le nombre de locuteurs"
+     ],
+     "r": 1,
+     "exp": "Mercier: mobilidade social e êxodo rural; Le Goff: a vergonha herdada. Ambas aceitam parte do argumento da outra."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Une",
+      "langue",
+      "ne",
+      "meurt",
+      "pas",
+      "seulement",
+      "parce",
+      "qu'on",
+      "l'interdit."
+     ],
+     "resp": "Une langue ne meurt pas seulement parce qu'on l'interdit.",
+     "exp": "« Ne... pas seulement » = não só. Tire o « pas » e a frase mudaria de sentido."
+    },
+    {
+     "t": "gap",
+     "q": "La linguiste craint qu'on ne se serve de l'histoire pour ___ plutôt que pour comprendre.",
+     "resp": [
+      "culpabiliser"
+     ],
+     "exp": "« Culpabiliser » = fazer sentir culpado. É uma nuance: ela não nega a vergonha, mas teme o uso político dela."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Faut-il, selon vous, protéger les langues minoritaires par la loi ? Donnez votre avis.",
+     "modelo": "Je pense que la loi peut aider, mais elle ne suffit pas. Il faut aussi que les jeunes aient envie de parler la langue.",
+     "min": 12,
+     "chave": [
+      "langue",
+      "loi",
+      "protéger",
+      "envie",
+      "jeunes",
+      "école",
+      "minoritaire",
+      "avis"
+     ],
+     "exp": "Retome a ideia do debate: o decreto ajuda mas não substitui o desejo de falar."
+    },
+    {
+     "t": "mc",
+     "q": "Que pense la linguiste de la critique « c'est du folklore » ?",
+     "op": [
+      "Elle la juge absurde et refuse d'y répondre",
+      "Elle l'approuve entièrement",
+      "Elle la juge recevable, mais elle repose selon elle sur un présupposé qu'elle conteste",
+      "Elle la trouve sans intérêt"
+     ],
+     "r": 2,
+     "exp": "« C'est une critique recevable, mais qui suppose que la diversité linguistique n'a pas de valeur »: ela aceita a crítica como legítima, não o pressuposto."
+    },
+    {
+     "t": "gap",
+     "q": "Selon la linguiste, quand une langue disparaît, c'est tout un monde de ___ qui s'éteint.",
+     "resp": [
+      "savoirs",
+      "savoir"
+     ],
+     "exp": "« Un monde de savoirs » (= conhecimentos). Frase de efeito, mais solene, que a professora retoma com mais simplicidade."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Concessions et nuances",
+   "objetivo": "Distinguir o que cada falante concede, recusa ou nuança, com conectores e subjuntivos de concessão.",
+   "foco": "Concession : bien que + subjonctif, quitte à, à condition que, n'en déplaise à",
+   "explicacao": [
+    "A concessão reconhece um ponto do adversário e mantém a própria tese: « bien que », « certes... mais », « quitte à », « tout en reconnaissant que ». A ideia defendida costuma vir depois.",
+    "Estruturas com subjuntivo: « bien que + subj. » (embora), « à condition que + subj. » (desde que), « sans que + subj. ». Ouça o conector, não só o verbo.",
+    "« N'en déplaise à X » = apesar da opinião contrária de X, tom firme e levemente irônico. « Quitte à + inf. » = mesmo que isso custe.",
+    "Armadilha: perguntas do tipo « Que concède X ? » pedem a parte reconhecida, não a tese final."
+   ],
+   "vocab": [
+    {
+     "en": "bien que + subjonctif",
+     "pt": "embora"
+    },
+    {
+     "en": "quitte à",
+     "pt": "mesmo que isso signifique"
+    },
+    {
+     "en": "à condition que",
+     "pt": "desde que"
+    },
+    {
+     "en": "n'en déplaise à",
+     "pt": "com todo o respeito, apesar de"
+    },
+    {
+     "en": "un quota",
+     "pt": "uma cota"
+    },
+    {
+     "en": "le piétinement",
+     "pt": "o pisoteio"
+    },
+    {
+     "en": "renflouer",
+     "pt": "reforçar, recompor (finanças)"
+    },
+    {
+     "en": "démagogique",
+     "pt": "demagógico"
+    }
+   ],
+   "material": {
+    "titulo": "Un site classé sous pression",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Chaque été, un site breton accueille en quelques semaines plus de visiteurs que d'habitants en une vie entière. Madame Perrin, maire, vous avez annoncé un quota. Pourquoi ?"
+     },
+     {
+      "p": "B",
+      "t": "Parce que, bien que le tourisme fasse vivre la commune, il finit par la détruire. Nous avons cinq cents habitants et trois millions de visiteurs. Certes, les commerçants en profitent ; mais les habitants, eux, partent, faute de logement et de calme."
+     },
+     {
+      "p": "C",
+      "t": "Je suis le premier à reconnaître que la situation est difficile, quitte à passer pour un traître auprès de mes collègues. Cela dit, un quota, c'est facile à voter et difficile à appliquer. Qui sera refusé ? Le retraité venu de loin, ou l'étudiant qui a économisé toute l'année pour voir ce lieu ?"
+     },
+     {
+      "p": "B",
+      "t": "Le quota ne vise personne en particulier. Il vise la saturation. Et tout en comprenant votre inquiétude, je rappelle que vous n'avez pas toujours été aussi sensible au sort des habitants."
+     },
+     {
+      "p": "C",
+      "t": "Vous n'avez pas tort, je vous l'accorde. Mais n'en déplaise à certains, mon hôtel emploie vingt personnes toute l'année, et pas seulement en saison."
+     },
+     {
+      "p": "A",
+      "t": "Au-delà du social, quel est l'effet sur l'environnement ?"
+     },
+     {
+      "p": "B",
+      "t": "Le piétinement fragilise les dunes, et les eaux usées dépassent la capacité de la station. Ce n'est pas un détail : la baie pourrait perdre son classement international si rien ne change."
+     },
+     {
+      "p": "C",
+      "t": "Là-dessus, je ne conteste pas les chiffres, mais je nuancerais le diagnostic. La baie a déjà connu pire, et elle s'est refaite. Il ne faut pas confondre dégradation réversible et catastrophe."
+     },
+     {
+      "p": "B",
+      "t": "Réversible, à condition que l'on agisse à temps. Si l'on attend, ce ne sera plus le cas."
+     },
+     {
+      "p": "A",
+      "t": "Alors, que propose-t-on, concrètement ?"
+     },
+     {
+      "p": "B",
+      "t": "Un quota progressif, une réservation obligatoire en haute saison, et des tarifs réduits pour les habitants et les écoles."
+     },
+     {
+      "p": "C",
+      "t": "Je soutiendrais les deux premiers, à condition que les recettes servent vraiment à entretenir les lieux, et non à renflouer le budget général. Le troisième, je le trouve démagogique."
+     },
+     {
+      "p": "B",
+      "t": "Démagogique ? Il s'agit de permettre aux enfants du pays de voir leur propre patrimoine."
+     },
+     {
+      "p": "C",
+      "t": "Alors reformulons : tarifs réduits pour les scolaires, oui ; pour tous les habitants adultes, non."
+     },
+     {
+      "p": "A",
+      "t": "On voit que, même sur ce point, une base d'entente est possible."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle concession la maire fait-elle au début de son intervention ?",
+     "op": [
+      "Elle reconnaît que le tourisme fait vivre la commune",
+      "Elle reconnaît que le quota est inutile",
+      "Elle admet que les habitants ne veulent pas partir",
+      "Elle admet que les visiteurs sont peu nombreux"
+     ],
+     "r": 0,
+     "exp": "« Bien que le tourisme fasse vivre la commune, il finit par la détruire »: a parte concedida está depois de « bien que »; a tese vem depois da vírgula."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Parce que, bien que le tourisme ___ vivre la commune, il finit par la détruire.",
+     "resp": [
+      "fasse"
+     ],
+     "exp": "« Bien que » exige subjuntivo: que le tourisme fasse (subjonctif de faire), não « fait ».",
+     "ouvir": "Parce que, bien que le tourisme fasse vivre la commune, il finit par la détruire."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Je ne conteste pas les chiffres, mais je nuancerais le diagnostic.",
+     "exp": "Condicional « nuancerais » /nɥɑ̃sʁɛ/. Ritmo em duas partes, com leve pausa antes de « mais ».",
+     "ouvir": "Je ne conteste pas les chiffres, mais je nuancerais le diagnostic."
+    },
+    {
+     "t": "mc",
+     "q": "Que fait l'hôtelier avec « Vous n'avez pas tort, je vous l'accorde. Mais n'en déplaise à certains, mon hôtel emploie vingt personnes toute l'année » ?",
+     "op": [
+      "Il s'excuse puis abandonne sa position",
+      "Il concède un point, puis défend l'utilité de son activité malgré les critiques",
+      "Il attaque la maire personnellement",
+      "Il propose de fermer son hôtel"
+     ],
+     "r": 1,
+     "exp": "Concessão (« je vous l'accorde ») + réplica firme (« n'en déplaise à certains »): ele defende a utilidade do hotel."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Réversible,",
+      "à",
+      "condition",
+      "que",
+      "l'on",
+      "agisse",
+      "à",
+      "temps."
+     ],
+     "resp": "Réversible, à condition que l'on agisse à temps.",
+     "exp": "« À condition que » + subjuntivo (agisse). A maire retoma a palavra « réversible » do hôtelier."
+    },
+    {
+     "t": "gap",
+     "q": "Je soutiendrais les deux premiers, ___ que les recettes servent vraiment à entretenir les lieux.",
+     "resp": [
+      "à condition",
+      "a condition"
+     ],
+     "exp": "« À condition que + subjonctif » = desde que. O hoteleiro aceita as medidas sob essa condição."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda à pergunta em francês, em voz alta.",
+     "frase": "Faut-il limiter le nombre de visiteurs dans les sites naturels fragiles ? Donnez votre avis en nuançant.",
+     "modelo": "Je pense qu'il faut limiter les visites, bien que le tourisme soit important pour l'économie. Cela dit, il faut protéger les habitants.",
+     "min": 12,
+     "chave": [
+      "limiter",
+      "visiteurs",
+      "tourisme",
+      "nuancer",
+      "bien que",
+      "protéger",
+      "site",
+      "avis"
+     ],
+     "exp": "Use « bien que + subjonctif » ou « certes... mais » para nuançar sua opinião."
+    },
+    {
+     "t": "mc",
+     "q": "Quel compromis esquissent-ils à la fin à propos des tarifs réduits ?",
+     "op": [
+      "Des tarifs réduits pour tous les habitants",
+      "Des tarifs réduits réservés aux scolaires",
+      "Aucun tarif réduit",
+      "Des tarifs réduits pour les touristes étrangers"
+     ],
+     "r": 1,
+     "exp": "O hoteleiro reformula: « tarifs réduits pour les scolaires, oui; pour tous les habitants adultes, non »."
+    },
+    {
+     "t": "gap",
+     "q": "L'hôtelier dit qu'il ne faut pas confondre dégradation réversible et ___.",
+     "resp": [
+      "catastrophe"
+     ],
+     "exp": "« Dégradation réversible » vs « catastrophe »: nuance entre um dano que pode ser desfeito e um irreversível."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Trois voix, un compte rendu",
+   "objetivo": "Treinar o compte rendu: identificar problemática, posições dos três falantes, pontos de convergência e distratores.",
+   "foco": "Restitution des œuvres : compte rendu d'un débat à trois voix",
+   "explicacao": [
+    "O compte rendu do DALF exige: apresentar a problemática, resumir a posição de cada falante com suas próprias palavras e mostrar convergências ou divergências.",
+    "Enquanto ouve, anote: quem fala, que tese defende, que argumentos usa, em que concorda ou discorda com o outro. Evite copiar frases inteiras.",
+    "O áudio inclui distratores: um falante cita uma objeção (« certains disent que... ») para refutá-la. Não é a posição dele.",
+    "Para o oral: « Le document porte sur... », « La première intervenante estime que... », « En revanche, son interlocuteur... », « Ils s'accordent sur... »."
+   ],
+   "vocab": [
+    {
+     "en": "la restitution",
+     "pt": "a devolução"
+    },
+    {
+     "en": "un rattrapage",
+     "pt": "uma reparação, um acerto de contas"
+    },
+    {
+     "en": "piller",
+     "pt": "saquear"
+    },
+    {
+     "en": "détenir",
+     "pt": "deter, possuir"
+    },
+    {
+     "en": "le conservateur",
+     "pt": "o curador de museu"
+    },
+    {
+     "en": "condescendant",
+     "pt": "condescendente, paternalista"
+    },
+    {
+     "en": "réparer",
+     "pt": "reparar"
+    },
+    {
+     "en": "un prêt réciproque",
+     "pt": "um empréstimo recíproco"
+    }
+   ],
+   "material": {
+    "titulo": "Faut-il rendre les œuvres pillées ?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Le Parlement français a voté la restitution de vingt-six œuvres au Bénin. Certains y voient un tournant, d'autres une exception qui fera tache d'huile. Madame Sow, historienne de l'art, commençons par vous."
+     },
+     {
+      "p": "B",
+      "t": "Je parlerais moins de tournant que de rattrapage. Ces objets ont été pillés lors d'une expédition militaire en 1892. Les rendre, ce n'est pas faire preuve de générosité, c'est cesser de détenir ce qui ne nous appartient pas."
+     },
+     {
+      "p": "C",
+      "t": "Je comprends l'argument moral, et je ne le conteste pas. Mais permettez-moi de poser le problème autrement. Mon rôle est de conserver. Or, si chaque objet issu d'un contexte colonial devait être rendu, il faudrait vider une grande partie de nos collections. Où s'arrête-t-on ?"
+     },
+     {
+      "p": "B",
+      "t": "On s'arrête là où commence la violence documentée. Personne ne demande de tout rendre ; on demande de distinguer le don, l'achat et le pillage. C'est un travail d'archives, long, mais faisable."
+     },
+     {
+      "p": "C",
+      "t": "Faisable, oui, et c'est ce que nous faisons déjà. La question est celle du rythme. Sans cadre juridique, chaque demande devient un conflit diplomatique."
+     },
+     {
+      "p": "A",
+      "t": "Monsieur Hébert, certains disent que l'argument de la conservation est un prétexte : les pays demandeurs n'auraient pas les moyens d'exposer ces œuvres correctement."
+     },
+     {
+      "p": "C",
+      "t": "C'est un argument que je refuse d'utiliser. Il est, à mes yeux, condescendant. Plusieurs musées africains récents sont de très haut niveau. Le vrai sujet n'est pas la technique, c'est la mémoire."
+     },
+     {
+      "p": "B",
+      "t": "Je suis heureuse de vous l'entendre dire. J'ajouterais que la mémoire ne se limite pas aux vitrines. Une œuvre restituée revient dans un pays où des jeunes n'avaient jamais vu leur propre héritage autrement qu'en photo."
+     },
+     {
+      "p": "A",
+      "t": "La restitution est-elle un geste symbolique ou concret ?"
+     },
+     {
+      "p": "B",
+      "t": "Les deux, et c'est ce qui la rend délicate. Elle soulage, mais ne répare pas. Elle ne remplace pas un dialogue plus large : formation, prêts réciproques, recherche conjointe."
+     },
+     {
+      "p": "C",
+      "t": "Je signe des deux mains pour les prêts réciproques. C'est peut-être là que nous nous retrouverons, même si nous partons de points de vue différents."
+     },
+     {
+      "p": "A",
+      "t": "Une dernière chose : ces objets appartiennent-ils à l'humanité ou à un peuple ?"
+     },
+     {
+      "p": "B",
+      "t": "Aux deux. Mais l'humanité a le droit de les voir sans qu'un peuple soit privé de les posséder."
+     },
+     {
+      "p": "C",
+      "t": "Moi, je dirais plutôt que c'est une fausse alternative, et qu'il faut apprendre à partager."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Comment Mme Sow qualifie-t-elle la restitution des œuvres ?",
+     "op": [
+      "Un geste de générosité de la France",
+      "Un rattrapage : cesser de détenir ce qui ne nous appartient pas",
+      "Une exception sans importance",
+      "Un danger pour les collections"
+     ],
+     "r": 1,
+     "exp": "Ela prefere « rattrapage » a « tournant » e diz que rendre não é generosidade."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Les rendre, ce n'est pas faire preuve de générosité, c'est cesser de ___ ce qui ne nous appartient pas.",
+     "resp": [
+      "détenir",
+      "detenir"
+     ],
+     "exp": "« Détenir » = possuir, ter em seu poder. Não confundir com « retenir » (reter) nem « contenir » (conter).",
+     "ouvir": "Les rendre, ce n'est pas faire preuve de générosité, c'est cesser de détenir ce qui ne nous appartient pas."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "Sans cadre juridique, chaque demande devient un conflit diplomatique.",
+     "exp": "« Juridique » /ʒyʁidik/ e « diplomatique » /diplɔmatik/: cuidado com o u francês e a acentuação final.",
+     "ouvir": "Sans cadre juridique, chaque demande devient un conflit diplomatique."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la position de M. Hébert ?",
+     "op": [
+      "Il rejette totalement l'argument moral",
+      "Il comprend l'argument moral mais s'inquiète de l'ampleur des demandes et du manque de cadre juridique",
+      "Il refuse toute discussion avec les pays demandeurs",
+      "Il pense que les pays demandeurs ne peuvent pas conserver les œuvres"
+     ],
+     "r": 1,
+     "exp": "Ele aceita o argumento moral e se preocupa com ritmo e quadro jurídico. A última opção é a objeção que ele recusa usar."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "On",
+      "demande",
+      "de",
+      "distinguer",
+      "le",
+      "don,",
+      "l'achat",
+      "et",
+      "le",
+      "pillage."
+     ],
+     "resp": "On demande de distinguer le don, l'achat et le pillage.",
+     "exp": "Distinção central de Sow: nem todo objeto colonial foi saqueado. Sujeito « on » (impessoal) + de + infinitivo."
+    },
+    {
+     "t": "gap",
+     "q": "Pour M. Hébert, dire que les pays demandeurs n'auraient pas les moyens d'exposer les œuvres est un argument ___.",
+     "resp": [
+      "condescendant"
+     ],
+     "exp": "« Condescendant » = paternalista, que trata o outro de cima. Ele recusa esse argumento: é um distrator no áudio."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça o compte rendu em francês, em voz alta: apresente a problemática e a posição de cada convidado.",
+     "frase": "Faites un compte rendu oral de ce débat : présentez la problématique et la position de chaque invité.",
+     "modelo": "Le document porte sur la restitution d'œuvres pillées. La première invitée estime qu'il s'agit d'un rattrapage. En revanche, le conservateur comprend l'argument, mais craint pour les collections. Ils s'accordent sur les prêts réciproques.",
+     "min": 25,
+     "chave": [
+      "restitution",
+      "œuvres",
+      "rattrapage",
+      "conservateur",
+      "historienne",
+      "prêts",
+      "collections",
+      "problématique"
+     ],
+     "exp": "Estrutura: « Le document porte sur... », « La première intervenante estime que... », « En revanche... », « Ils s'accordent sur... »."
+    },
+    {
+     "t": "mc",
+     "q": "Sur quel point les deux invités pourraient-ils se retrouver ?",
+     "op": [
+      "Sur le principe de ne rien restituer",
+      "Sur les prêts réciproques et la coopération",
+      "Sur la nécessité de vider les musées",
+      "Sur le fait que la restitution soit symbolique seulement"
+     ],
+     "r": 1,
+     "exp": "Hébert: « Je signe des deux mains pour les prêts réciproques ». Sow os cita como parte de um diálogo mais amplo."
+    },
+    {
+     "t": "gap",
+     "q": "Pour Mme Sow, la restitution soulage, mais ne ___ pas.",
+     "resp": [
+      "répare",
+      "repare"
+     ],
+     "exp": "« Soulager » (aliviar) vs « réparer » (reparar): a restituição alivia, mas não repara o passado."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado : compte rendu DALF C2",
+   "objetivo": "Simular a parte de compreensão do DALF C2: ouvir um documento longo e responder como em um compte rendu.",
+   "foco": "Simulado : un entretien radiophonique, deux positions, une problématique",
+   "explicacao": [
+    "No DALF C2, você ouve um documento de cerca de 15 minutos (duas vezes) e faz um compte rendu oral: problemática, posição de cada falante, argumentos, conclusão.",
+    "Ouça primeiro para entender a problemática e quem defende o quê; na segunda vez, anote argumentos, concessões e exemplos.",
+    "Cuidado com os distratores: objeções citadas para serem refutadas, dados repetidos com sentido diferente, ironia e formulações metafóricas (« un miroir »).",
+    "Neste simulado, o áudio é mais longo que nas aulas anteriores. Faça as 13 questões como na prova: com atenção ao detalhe e sem copiar frases inteiras no compte rendu."
+   ],
+   "vocab": [
+    {
+     "en": "un modèle de langage",
+     "pt": "um modelo de linguagem"
+    },
+    {
+     "en": "lisse",
+     "pt": "liso, sem asperidades"
+    },
+    {
+     "en": "une aspérité",
+     "pt": "uma aspereza, um traço marcante"
+    },
+    {
+     "en": "à ses dépens",
+     "pt": "à sua custa"
+    },
+    {
+     "en": "formulaire",
+     "pt": "padronizado, de fórmula"
+    },
+    {
+     "en": "rémunérer",
+     "pt": "remunerar"
+    },
+    {
+     "en": "je vous en sais gré",
+     "pt": "eu lhe sou grato"
+    },
+    {
+     "en": "rejoindre quelqu'un",
+     "pt": "concordar com alguém"
+    }
+   ],
+   "material": {
+    "titulo": "Le Grand Entretien : une machine peut-elle écrire un roman ?",
+    "falas": [
+     {
+      "p": "A",
+      "t": "Bonjour et bienvenue dans « Le Grand Entretien ». Aujourd'hui, une question qui divise le monde de l'édition : une machine peut-elle écrire un roman ? J'ai le plaisir de recevoir la romancière Hélène Marchand, auteure de neuf livres, et le chercheur en informatique Samuel Idrissi, qui travaille sur les modèles de langage. Hélène Marchand, un éditeur vient d'annoncer qu'il publiera à la rentrée un roman écrit en grande partie par un programme. Cela vous inquiète ?"
+     },
+     {
+      "p": "B",
+      "t": "Disons que ça m'intrigue autant que ça m'agace. Ça m'agace parce que, dans l'annonce, on a beaucoup parlé de technologie et très peu de littérature. Ça m'intrigue parce que je me demande ce qu'on va juger : le livre ou le procédé ?"
+     },
+     {
+      "p": "C",
+      "t": "Si je peux me permettre, le procédé n'a rien d'extraordinaire. Nous avons entraîné un modèle sur des millions de textes ; il ne comprend pas, il prédit quel mot a le plus de chances de suivre le précédent. Cela dit, le résultat peut être étonnamment cohérent."
+     },
+     {
+      "p": "B",
+      "t": "Cohérent, oui, mais cohérent n'est pas vivant. J'ai lu quelques pages : elles étaient lisses. Aucune aspérité, aucune hésitation, rien de ce qui fait qu'une phrase vous poursuit après la lecture."
+     },
+     {
+      "p": "C",
+      "t": "Je ne conteste pas votre impression, mais je la crois un peu plus subjective que vous ne le dites. Dans une expérience récente, on a fait lire à des lecteurs des extraits de romans humains et des extraits générés. Les lecteurs se sont trompés une fois sur deux."
+     },
+     {
+      "p": "B",
+      "t": "Évidemment ! Les lecteurs ne savaient pas ce qu'ils cherchaient. Et puis, un extrait n'est qu'un extrait. Un roman, c'est une durée, une construction, une obsession qui revient. Une machine ne peut pas avoir d'obsession."
+     },
+     {
+      "p": "C",
+      "t": "Voilà un mot qui m'intéresse. Vous dites qu'elle ne peut pas en avoir ; je dirais qu'elle n'en a pas besoin pour en simuler les effets. La différence compte-t-elle pour le lecteur ?"
+     },
+     {
+      "p": "A",
+      "t": "La question est posée. Hélène Marchand ?"
+     },
+     {
+      "p": "B",
+      "t": "Elle compte pour moi, et je vais vous dire pourquoi. Quand je lis un grand roman, je ne lis pas seulement des phrases : je rencontre quelqu'un qui a eu quelque chose à dire, parfois à ses dépens. La littérature est un rapport entre deux personnes qui ne se connaissent pas. Un texte sans personne derrière, c'est un miroir : on s'y voit, mais on n'y rencontre personne."
+     },
+     {
+      "p": "C",
+      "t": "C'est une belle formule, mais je me permets de la retourner. Beaucoup de lecteurs lisent justement pour se voir dans le texte. Si la machine le leur permet, qui sommes-nous pour le leur reprocher ?"
+     },
+     {
+      "p": "B",
+      "t": "Je ne leur reproche rien. Je dis que ce n'est pas la même chose, et que le mot « roman » devrait désigner autre chose qu'un produit."
+     },
+     {
+      "p": "A",
+      "t": "Samuel Idrissi, vous avez parlé de simulation. N'y a-t-il pas un risque pour les auteurs, financièrement ?"
+     },
+     {
+      "p": "C",
+      "t": "Un risque réel, oui, et je ne vais pas le minimiser. Les premiers touchés seront les auteurs de textes très codifiés : romans de gare, scénarios de séries, notices. Pas parce que ce sont de mauvais écrivains, mais parce que leur genre est formulaire."
+     },
+     {
+      "p": "B",
+      "t": "Voilà qui est franc, et je vous en sais gré. Mais je ne suis pas sûre que la frontière soit si nette. Beaucoup d'auteurs que l'on dit « formulaires » ont une voix qu'aucun modèle ne reproduira."
+     },
+     {
+      "p": "C",
+      "t": "Peut-être. La question de fond, à mon sens, n'est pas technique mais économique : qui sera payé, et pour quoi ? Si l'on a entraîné la machine sur les œuvres d'auteurs vivants sans les rémunérer, c'est un problème de droit, pas de style."
+     },
+     {
+      "p": "B",
+      "t": "Là, je vous rejoins totalement. Et c'est même là-dessus qu'il faudrait faire du bruit. Le reste, c'est de la métaphysique."
+     },
+     {
+      "p": "A",
+      "t": "Et pour l'avenir, que vous inspire tout cela ?"
+     },
+     {
+      "p": "B",
+      "t": "De la curiosité, je dois l'avouer. Je ne serais pas surprise qu'on voie des auteurs travailler avec ces outils, comme certains peintres ont adopté la photographie. Mais ce que j'espère, c'est qu'on continuera à demander : qui a écrit cela, et pourquoi ?"
+     },
+     {
+      "p": "C",
+      "t": "Pour ma part, je pense que la littérature survivra, justement parce qu'elle est un acte humain. Ce que les machines vont changer, c'est la valeur du simple talent technique. Écrire correctement ne suffira plus."
+     },
+     {
+      "p": "A",
+      "t": "Une façon de conclure en nuançant les deux positions. Merci à tous les deux."
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle est la problématique centrale de l'entretien ?",
+     "op": [
+      "Le coût de production des romans",
+      "La valeur littéraire d'un roman écrit par une machine, comparée à celle d'un roman humain, et ses enjeux",
+      "La rapidité avec laquelle les machines peuvent écrire",
+      "Le choix des éditeurs en matière de technologie"
+     ],
+     "r": 1,
+     "exp": "A pergunta inicial (« une machine peut-elle écrire un roman ? ») se desdobra em valor literário, relação autor-leitor e implicações econômicas."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi la romancière est-elle agacée par l'annonce de l'éditeur ?",
+     "op": [
+      "Parce que le roman est mal écrit",
+      "Parce qu'on y parle beaucoup de technologie et très peu de littérature",
+      "Parce que l'éditeur refuse de la publier",
+      "Parce que le programme est trop coûteux"
+     ],
+     "r": 1,
+     "exp": "Ela diz: « on a beaucoup parlé de technologie et très peu de littérature ». O segundo sentimento, curiosidade, vem de outra pergunta."
+    },
+    {
+     "t": "gap",
+     "q": "Ouça e complete : Le modèle ne comprend pas, il ___ quel mot a le plus de chances de suivre le précédent.",
+     "resp": [
+      "prédit",
+      "predit"
+     ],
+     "exp": "« Prédire » no présent: il prédit. O pesquisador explica que o modelo calcula probabilidades, não entende.",
+     "ouvir": "Il ne comprend pas, il prédit quel mot a le plus de chances de suivre le précédent."
+    },
+    {
+     "t": "mc",
+     "q": "Comment Mme Marchand répond-elle à l'expérience citée par le chercheur ?",
+     "op": [
+      "Elle conteste les résultats chiffrés",
+      "Elle observe que les lecteurs ne savaient pas ce qu'ils cherchaient et qu'un extrait n'est pas un roman",
+      "Elle admet que les machines écrivent mieux",
+      "Elle refuse de parler de l'expérience"
+     ],
+     "r": 1,
+     "exp": "Ela responde que um trecho não é um romance: um romance é duração, construção e obsessão."
+    },
+    {
+     "t": "gap",
+     "q": "Pour la romancière, un texte sans personne derrière, c'est un ___ : on s'y voit, mais on n'y rencontre personne.",
+     "resp": [
+      "miroir"
+     ],
+     "exp": "Metáfora central: o texto da máquina funciona como espelho. Em prova, procure a imagem e sua interpretação."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Ouça o modelo e repita a frase em voz alta.",
+     "frase": "La littérature est un rapport entre deux personnes qui ne se connaissent pas.",
+     "exp": "Frase de aforismo: ritmo constante, entonação descendente ao final. Atenção à liaison em « entre deux ».",
+     "ouvir": "La littérature est un rapport entre deux personnes qui ne se connaissent pas."
+    },
+    {
+     "t": "mc",
+     "q": "De quelle façon le chercheur retourne-t-il la formule de la romancière ?",
+     "op": [
+      "Il affirme que les lecteurs détestent les miroirs",
+      "Il rappelle que beaucoup de lecteurs lisent justement pour se voir dans le texte",
+      "Il soutient que la machine rencontre le lecteur",
+      "Il admet que la formule est fausse"
+     ],
+     "r": 1,
+     "exp": "Ele diz: « Beaucoup de lecteurs lisent justement pour se voir dans le texte. Si la machine le leur permet... ». Ele inverte o argumento, não o nega por completo."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Beaucoup",
+      "de",
+      "lecteurs",
+      "lisent",
+      "justement",
+      "pour",
+      "se",
+      "voir",
+      "dans",
+      "le",
+      "texte."
+     ],
+     "resp": "Beaucoup de lecteurs lisent justement pour se voir dans le texte.",
+     "exp": "« Pour + infinitif » exprime o objetivo. « Justement » realça a ironia da resposta do pesquisador."
+    },
+    {
+     "t": "mc",
+     "q": "Quel risque économique le chercheur identifie-t-il, et pour qui ?",
+     "op": [
+      "Un risque pour tous les écrivains, quel que soit leur genre",
+      "Un risque pour les auteurs de textes très codifiés, comme les romans de gare ou les scénarios de séries",
+      "Un risque pour les éditeurs uniquement",
+      "Aucun risque réel, selon lui"
+     ],
+     "r": 1,
+     "exp": "Ele cita « romans de gare, scénarios de séries, notices » porque o gênero é formulaire, não por serem maus escritores."
+    },
+    {
+     "t": "gap",
+     "q": "Pour le chercheur, si l'on entraîne la machine sur les œuvres d'auteurs vivants sans les rémunérer, c'est un problème de ___, pas de style.",
+     "resp": [
+      "droit"
+     ],
+     "exp": "A questão de fundo é econômica e jurídica (direito autoral). A romancière diz concordar totalmente com esse ponto."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Faça o compte rendu em francês, em voz alta, em cerca de 30 palavras ou mais.",
+     "frase": "Faites le compte rendu oral de l'entretien : problématique, position de la romancière, position du chercheur, point d'accord.",
+     "modelo": "Le document porte sur la possibilité qu'une machine écrive un roman. La romancière estime que la littérature suppose une personne derrière le texte. Le chercheur nuance, car les lecteurs ne distinguent pas toujours. Ils s'accordent sur le problème de la rémunération des auteurs.",
+     "min": 30,
+     "chave": [
+      "problématique",
+      "romancière",
+      "chercheur",
+      "machine",
+      "roman",
+      "accord",
+      "rémunération",
+      "lecteurs"
+     ],
+     "exp": "Estrutura: problemática, tese de A, tese de B, convergência. Use « estime que », « nuance », « s'accordent sur »."
+    },
+    {
+     "t": "mc",
+     "q": "Comment le chercheur envisage-t-il l'avenir de la littérature ?",
+     "op": [
+      "Elle disparaîtra à cause des machines",
+      "Elle survivra parce qu'elle est un acte humain, mais le simple talent technique perdra de la valeur",
+      "Elle sera entièrement automatisée",
+      "Elle ne changera pas du tout"
+     ],
+     "r": 1,
+     "exp": "Ele diz: « la littérature survivra, justement parce qu'elle est un acte humain » e « écrire correctement ne suffira plus »."
+    },
+    {
+     "t": "gap",
+     "q": "La romancière compare l'usage de ces outils par les auteurs à l'adoption de la ___ par certains peintres.",
+     "resp": [
+      "photographie"
+     ],
+     "exp": "A comparação histórica relativiza o medo. Ela mostra abertura, mas insiste em perguntar « qui a écrit cela, et pourquoi ? »."
+    }
+   ]
+  }
+ ]
+}
