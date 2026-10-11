@@ -150,8 +150,7 @@
      "t": "gap",
      "q": "Ouça e complete : Elle a demandé si les chiffres du deuxième tableau avaient été ___ par un statisticien.",
      "resp": [
-      "vérifiés",
-      "vérifié"
+      "vérifiés"
      ],
      "exp": "Particípio concordando com « les chiffres » (masculino plural): vérifiés. A pergunta é uma crítica disfarçada.",
      "ouvir": "Elle a demandé si les chiffres du deuxième tableau avaient été vérifiés par un statisticien."
@@ -161,7 +160,7 @@
      "modo": "repetir",
      "q": "Ouça o modelo e repita a frase em voz alta.",
      "frase": "Je n'irais pas jusque-là.",
-     "exp": "Condicional « irais » = /irê/. Ligação suave em « jusque-là ». A entonação desce no fim.",
+     "exp": "Condicional « irais » = /irê/. Em « jusque-là », pronuncie /ʒysk(ə)la/, sem pausa no meio. A entonação desce no fim.",
      "ouvir": "Je n'irais pas jusque-là."
     },
     {
@@ -200,7 +199,7 @@
     },
     {
      "t": "gap",
-     "q": "Selon Marc, personne n'a demandé à Léa de tout reprendre à ___.",
+     "q": "Selon Marc, personne n'a demandé à son interlocutrice de tout reprendre à ___.",
      "resp": [
       "zéro"
      ],
@@ -216,7 +215,6 @@
      "chave": [
       "compliment",
       "critique",
-      "compris",
       "compris",
       "ordonné",
       "professeur",
@@ -261,7 +259,7 @@
    "vocab": [
     {
      "en": "supprimer",
-     "pt": "cancelar, suprimir (não é « suprimir » de texto)"
+     "pt": "cancelar (um trem, um voo)"
     },
     {
      "en": "jusqu'à nouvel ordre",
@@ -482,9 +480,11 @@
      "t": "gap",
      "q": "La femme dit : « Qui aurait ___ que l'idée viendrait de toi ? »",
      "resp": [
-      "cru"
+      "cru",
+      "pensé",
+      "imaginé"
      ],
-     "exp": "Conditionnel passé: aurait cru. A frase é meio elogio, meio sarcasmo, como ela mesma admite."
+     "exp": "Conditionnel passé: aurait cru (também caberiam « pensé » ou « imaginé »). A frase é meio elogio, meio sarcasmo, como ela mesma admite."
     }
    ]
   },
@@ -645,7 +645,7 @@
      "modo": "repetir",
      "q": "Ouça o modelo e repita a frase em voz alta.",
      "frase": "Ce n'était pas l'idéal, je vous l'accorde.",
-     "exp": "Ligação: « n'était pas » /netepa/. « L'idéal » com tom seco, sem dramatizar.",
+     "exp": "Pronuncie « n'était pas » /netɛ pa/, sem liaison entre « était » e « pas ». « L'idéal » com tom seco, sem dramatizar.",
      "ouvir": "Ce n'était pas l'idéal, je vous l'accorde."
     },
     {
@@ -1174,7 +1174,7 @@
      "resp": [
       "mayonnaise"
      ],
-     "exp": "« Faire monter la mayonnaise » = criar suspense, dramatizar uma notícia. Atenção: no sentido literal, ninguém cozinha nada."
+     "exp": "« Faire monter la mayonnaise » = criar suspense, dramatizar uma notícia. A imagem vem da maionese que vai 'subindo' quando é batida."
     }
    ]
   },
@@ -1236,7 +1236,7 @@
      },
      {
       "p": "A",
-      "t": "C'est parce que juillet et août sont sacrés. On dit que le pays tourne au ralenti. De Gaulle aurait demandé comment gouverner un pays qui compte plus de deux cent cinquante variétés de fromage. Il y a du vrai : on n'est jamais d'accord."
+      "t": "C'est parce que juillet et août sont sacrés. On dit que le pays tourne au ralenti. De Gaulle aurait demandé comment gouverner un pays qui compte plus de deux cent quarante variétés de fromage. Il y a du vrai : on n'est jamais d'accord."
      },
      {
       "p": "B",
@@ -1295,7 +1295,7 @@
    "exercicios": [
     {
      "t": "mc",
-     "q": "Selon Hélène, pourquoi « la rentrée » est-elle presque un concept national ?",
+     "q": "Selon A, pourquoi « la rentrée » est-elle presque un concept national ?",
      "op": [
       "Parce qu'elle concerne uniquement l'école",
       "Parce que l'été est une pause collective, et la reprise un moment que tous partagent",
@@ -1303,7 +1303,7 @@
       "Parce que les Français détestent travailler en septembre"
      ],
      "r": 1,
-     "exp": "Hélène diz que julho e agosto são « sacrés » e o país funciona em câmera lenta; a rentrée é a retomada coletiva."
+     "exp": "A diz que julho e agosto são « sacrés » e o país funciona em câmera lenta; a rentrée é a retomada coletiva."
     },
     {
      "t": "gap",
@@ -1332,7 +1332,7 @@
       "Avec une indifférence totale"
      ],
      "r": 1,
-     "exp": "Hélène: « Elle l'est, et elle ne l'est pas »: a citação é séria na origem, mas usada hoje com leveza."
+     "exp": "A: « Elle l'est, et elle ne l'est pas »: a citação é séria na origem, mas usada hoje com leveza."
     },
     {
      "t": "order",
@@ -1509,7 +1509,8 @@
      "t": "gap",
      "q": "Ouça e complete : D'abord, rappeler l'origine de l'idée ; ensuite, en examiner les promesses ; ___, en soulever les limites.",
      "resp": [
-      "enfin"
+      "enfin",
+      "finalement"
      ],
      "exp": "Série d'abord / ensuite / enfin: marcadores de plano. « Finalement » também seria possível em outro contexto, mas aqui ela diz « enfin ».",
      "ouvir": "D'abord, rappeler l'origine de l'idée ; ensuite, en examiner les promesses ; enfin, en soulever les limites."
@@ -1567,7 +1568,7 @@
      "q": "Responda à pergunta em francês, em voz alta.",
      "frase": "Résumez en deux ou trois phrases les trois parties de la conférence.",
      "modelo": "L'oratrice présente d'abord l'origine de l'idée, puis ses promesses, comme moins de pollution. Enfin, elle expose les limites : l'inégalité et la liberté.",
-     "min": 15,
+     "min": 11,
      "chave": [
       "origine",
       "promesses",
@@ -1596,10 +1597,9 @@
      "t": "gap",
      "q": "À propos de la ruralité, l'oratrice admet que le concept a été pensé par et pour des ___.",
      "resp": [
-      "citadins",
-      "citadin"
+      "citadins"
      ],
-     "exp": "« Citadins » = quem vive na cidade. Cuidado: « citoyens » = cidadãos (falso amigo de sentido)."
+     "exp": "« Citadins » = quem vive na cidade. Não confunda com « citoyens » (cidadãos)."
     }
    ]
   },
@@ -1771,8 +1771,7 @@
      "t": "gap",
      "q": "Selon Mme Morel, l'histoire de la science est plutôt celle des faits ___.",
      "resp": [
-      "accomplis",
-      "accompli"
+      "accomplis"
      ],
      "exp": "« Fait accompli » = fato consumado: faits accomplis no plural. O particípio concorda com « faits »."
     },
@@ -1782,7 +1781,7 @@
      "q": "Responda à pergunta em francês, em voz alta.",
      "frase": "Résumez en quelques phrases le point de désaccord entre les deux invités, puis leur point d'accord.",
      "modelo": "Ils ne sont pas d'accord sur la frontière entre soigner et améliorer. En revanche, ils veulent tous les deux un cadre commun et un débat public.",
-     "min": 15,
+     "min": 12,
      "chave": [
       "désaccord",
       "accord",
@@ -1963,7 +1962,7 @@
     },
     {
      "t": "mc",
-     "q": "Que veut dire le politologue par « Voilà une obligation de pure forme » à propos de la Belgique ?",
+     "q": "Que veut dire l'adversaire de Mme Garnier par « Voilà une obligation de pure forme » à propos de la Belgique ?",
      "op": [
       "Que l'obligation est très bien respectée",
       "Que l'obligation existe sur le papier mais n'est presque pas appliquée",
@@ -1992,7 +1991,7 @@
     },
     {
      "t": "gap",
-     "q": "Selon le politologue, le vote est un droit avant d'être un ___.",
+     "q": "Selon l'adversaire de Mme Garnier, le vote est un droit avant d'être un ___.",
      "resp": [
       "devoir"
      ],
@@ -2004,7 +2003,7 @@
      "q": "Responda à pergunta em francês, em voz alta.",
      "frase": "Êtes-vous pour ou contre le vote obligatoire ? Donnez un argument et répondez à une objection.",
      "modelo": "Je suis pour, car l'abstention affaiblit la démocratie. Certes, voter est un droit, mais on accepte d'autres obligations pour l'intérêt commun.",
-     "min": 14,
+     "min": 10,
      "chave": [
       "pour",
       "contre",
@@ -2019,7 +2018,7 @@
     },
     {
      "t": "mc",
-     "q": "Quel est le ton du politologue quand il dit « Quel bel argument ! Dommage qu'il n'ait aucun fondement empirique » ?",
+     "q": "Quel est le ton de l'adversaire de Mme Garnier quand il dit « Quel bel argument ! Dommage qu'il n'ait aucun fondement empirique » ?",
      "op": [
       "Sincèrement admiratif",
       "Ironique : il rejette l'argument",
@@ -2031,7 +2030,7 @@
     },
     {
      "t": "gap",
-     "q": "D'après le politologue, voter, c'est exprimer qui l'on ___.",
+     "q": "D'après l'adversaire de Mme Garnier, voter, c'est exprimer qui l'on ___.",
      "resp": [
       "est"
      ],
@@ -2224,7 +2223,7 @@
      "q": "Responda à pergunta em francês, em voz alta.",
      "frase": "Pensez-vous que la semaine de quatre jours soit une bonne idée ? Donnez un argument pour et une réserve.",
      "modelo": "Je pense que c'est une bonne idée pour certains secteurs, car elle réduit l'absentéisme. Toutefois, elle n'est pas possible partout, par exemple dans un hôpital.",
-     "min": 15,
+     "min": 12,
      "chave": [
       "semaine",
       "quatre jours",
@@ -2397,7 +2396,7 @@
       "attendent",
       "attendent "
      ],
-     "exp": "« S'attendre à » = esperar (falso amigo: « attendre » = esperar por alguém). Aqui, os especialistas veem o que esperam ver.",
+     "exp": "« S'attendre à » = contar com, esperar (prever); não é « attendre » = aguardar. Aqui, os especialistas veem o que esperam ver.",
      "ouvir": "Parce que les experts voient ce qu'ils s'attendent à voir."
     },
     {
@@ -2405,7 +2404,7 @@
      "modo": "repetir",
      "q": "Ouça o modelo e repita a frase em voz alta.",
      "frase": "Ce que l'on voit n'est pas indépendant de ce que l'on sait.",
-     "exp": "« Ce que l'on » com liaison suave: /sə kə lɔ̃/. Ritmo de aforismo: pausa após « voit ».",
+     "exp": "« Ce que l'on »: /sə kə lɔ̃/, sem liaison. Ritmo de aforismo: pausa após « voit ».",
      "ouvir": "Ce que l'on voit n'est pas indépendant de ce que l'on sait."
     },
     {
@@ -2451,7 +2450,7 @@
      "q": "Responda à pergunta em francês, em voz alta.",
      "frase": "Une œuvre falsifiée peut-elle être belle ? Donnez votre opinion en deux ou trois phrases.",
      "modelo": "Oui, une œuvre fausse peut être belle, car les couleurs et la composition ne changent pas. Mais elle perd sa valeur de témoignage historique.",
-     "min": 15,
+     "min": 12,
      "chave": [
       "faux",
       "belle",
@@ -2494,7 +2493,7 @@
    "explicacao": [
     "Debates sobre língua misturam história (a proibição nas escolas), sociologia (êxodo rural) e sentimento (a vergonha). Cada convidado dá peso diferente: a linguista, às causas estruturais; a professora, à vivência.",
     "Palavras de nuance: « ou pas seulement », « je ne nie pas... j'insiste seulement », « avec une nuance ». Elas mostram acordo parcial.",
-    "Cuidado com os falsos amigos e as armadilhas: « la honte » (a vergonha), « disparaître » (desaparecer, verbo com avoir ou être? com être/avoir conforme o sentido), « folklore » (aqui, algo decorativo).",
+    "Cuidado com os falsos amigos e as armadilhas: « la honte » (a vergonha), « disparaître » (desaparecer; no passé composé usa-se « avoir »: elle a disparu), « folklore » (aqui, algo decorativo).",
     "No compte rendu, mostre como as posições se aproximam ou se afastam: B e C concordam que o decreto não basta, mas divergem sobre a causa."
    ],
    "vocab": [
@@ -2536,7 +2535,7 @@
     "falas": [
      {
       "p": "A",
-      "t": "En France, le breton, l'alsacien ou l'occitan ont longtemps été interdits à l'école. Aujourd'hui, on les enseigne. Madame Le Goff, vous enseignez le breton à des enfants dont les grands-parents le parlaient. Que transmettez-vous exactement ?"
+      "t": "En France, le breton, l'alsacien ou l'occitan ont longtemps été interdits à l'école. Aujourd'hui, on les enseigne. J'ai avec moi Madame Mercier, linguiste, et Madame Le Goff, qui enseigne le breton à des enfants dont les grands-parents le parlaient. Madame Le Goff, que transmettez-vous exactement ?"
      },
      {
       "p": "C",
@@ -2881,7 +2880,7 @@
      "q": "Responda à pergunta em francês, em voz alta.",
      "frase": "Faut-il limiter le nombre de visiteurs dans les sites naturels fragiles ? Donnez votre avis en nuançant.",
      "modelo": "Je pense qu'il faut limiter les visites, bien que le tourisme soit important pour l'économie. Cela dit, il faut protéger les habitants.",
-     "min": 12,
+     "min": 11,
      "chave": [
       "limiter",
       "visiteurs",
@@ -3095,7 +3094,7 @@
      "q": "Faça o compte rendu em francês, em voz alta: apresente a problemática e a posição de cada convidado.",
      "frase": "Faites un compte rendu oral de ce débat : présentez la problématique et la position de chaque invité.",
      "modelo": "Le document porte sur la restitution d'œuvres pillées. La première invitée estime qu'il s'agit d'un rattrapage. En revanche, le conservateur comprend l'argument, mais craint pour les collections. Ils s'accordent sur les prêts réciproques.",
-     "min": 23,
+     "min": 16,
      "chave": [
       "restitution",
       "œuvres",
@@ -3319,7 +3318,7 @@
      "modo": "repetir",
      "q": "Ouça o modelo e repita a frase em voz alta.",
      "frase": "La littérature est un rapport entre deux personnes qui ne se connaissent pas.",
-     "exp": "Frase de aforismo: ritmo constante, entonação descendente ao final. Atenção à liaison em « entre deux ».",
+     "exp": "Frase de aforismo: ritmo constante, entonação descendente ao final. Não há liaison em « entre deux » nem em « personnes qui ».",
      "ouvir": "La littérature est un rapport entre deux personnes qui ne se connaissent pas."
     },
     {
@@ -3350,7 +3349,7 @@
       "texte."
      ],
      "resp": "Beaucoup de lecteurs lisent justement pour se voir dans le texte.",
-     "exp": "« Pour + infinitif » exprime o objetivo. « Justement » realça a ironia da resposta do pesquisador."
+     "exp": "« Pour + infinitif » exprime o objetivo. « Justement » (precisamente) realça a inversão feita pelo pesquisador."
     },
     {
      "t": "mc",
@@ -3375,10 +3374,10 @@
     {
      "t": "speak",
      "modo": "responder",
-     "q": "Faça o compte rendu em francês, em voz alta, em cerca de 30 palavras ou mais.",
+     "q": "Faça o compte rendu em francês, em voz alta, em cerca de 25 palavras ou mais.",
      "frase": "Faites le compte rendu oral de l'entretien : problématique, position de la romancière, position du chercheur, point d'accord.",
      "modelo": "Le document porte sur la possibilité qu'une machine écrive un roman. La romancière estime que la littérature suppose une personne derrière le texte. Le chercheur nuance, car les lecteurs ne distinguent pas toujours. Ils s'accordent sur le problème de la rémunération des auteurs.",
-     "min": 30,
+     "min": 21,
      "chave": [
       "problématique",
       "romancière",

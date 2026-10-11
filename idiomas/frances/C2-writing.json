@@ -53,7 +53,7 @@
     "genero": "éditorial (introduction)",
     "min": 120,
     "max": 190,
-    "modelo": "Il y a cinq ans, le bureau était une évidence ; aujourd'hui, c'est un choix. Depuis 2020, près d'un salarié sur quatre travaille au moins un jour par semaine à distance, et rares sont ceux qui accepteraient de revenir en arrière. Les entreprises, elles, constatent que la productivité tient bon et que les loyers baissent, mais elles s'inquiètent de voir s'effriter la cohésion des équipes.\n\nFaut-il pour autant tenir le télétravail pour un progrès sans réserve ? Telle est la question que nous voudrions poser à nos lecteurs, car la liberté gagnée par les uns ne doit pas se payer de l'isolement des autres, ni de l'exclusion de ceux dont le métier ne se pratique pas à distance.\n\nNous montrerons d'abord ce que le télétravail apporte aux salariés, puis les risques qu'il fait peser sur le lien social, avant de plaider pour un cadre qui préserve à la fois l'autonomie et la solidarité.",
+    "modelo": "Avant 2020, le bureau était une évidence ; aujourd'hui, c'est un choix. Depuis 2020, près d'un salarié sur quatre travaille au moins un jour par semaine à distance, et l'isolement guette pourtant les plus jeunes recrues. Les entreprises, elles, constatent que la productivité tient bon et que les loyers baissent, mais elles s'inquiètent de voir s'effriter la cohésion des équipes.\n\nFaut-il pour autant tenir le télétravail pour un progrès sans réserve ? Telle est la question que nous voudrions poser à nos lecteurs, car la liberté gagnée par les uns ne doit pas se payer de l'isolement des autres, ni de l'exclusion de ceux dont le métier ne se pratique pas à distance.\n\nNous montrerons d'abord ce que le télétravail apporte aux salariés, puis les risques qu'il fait peser sur le lien social, avant de plaider pour un cadre qui préserve à la fois l'autonomie et la solidarité.",
     "checklist": [
      "J'ai respecté le genre (éditorial) et le destinataire (salariés), sans m'adresser au jury ?",
      "Mon introduction a une accroche, un contexte, une vraie problématique (une question qui oblige à choisir) et une annonce du plan ?",
@@ -219,7 +219,7 @@
     "genero": "rapport (paragraphe de synthèse)",
     "min": 140,
     "max": 230,
-    "modelo": "Le tourisme de masse place la ville devant un paradoxe : il enrichit ses commerçants tout en appauvrissant la vie de ses habitants.\n\nSur le plan économique, les visiteurs font vivre près d'un emploi sur cinq, mais cette manne se concentre sur quelques quartiers et sur des postes saisonniers, souvent précaires. Sur le plan social, la multiplication des locations de courte durée chasse les familles du centre, où le prix du mètre carré a augmenté de moitié en dix ans ; les commerces de proximité cèdent la place aux boutiques de souvenirs. Enfin, sur le plan environnemental, les paquebots et les flux de cars saturent l'air et les ruelles, au point que certains monuments se dégradent plus vite qu'on ne peut les restaurer.\n\nIl ne s'agit pas de fermer la ville aux visiteurs, mais d'en maîtriser la fréquentation. C'est pourquoi nous recommandons de plafonner les locations meublées, d'instaurer une taxe modulée selon la saison et de répartir les flux vers les quartiers périphériques. Ces mesures, peu coûteuses, protégeraient à la fois les habitants et l'attractivité durable de la ville.",
+    "modelo": "Le tourisme de masse place la ville devant un paradoxe : il enrichit ses commerçants tout en appauvrissant la vie de ses habitants.\n\nSur le plan économique, les visiteurs font vivre près d'un emploi sur cinq, mais ces emplois sont surtout saisonniers. Sur le plan social, la multiplication des locations de courte durée chasse les familles du centre, où le prix du mètre carré a augmenté de moitié en dix ans ; les commerces de proximité cèdent la place aux boutiques de souvenirs. Enfin, sur le plan environnemental, les paquebots et les flux de cars saturent l'air et les ruelles, au point que certains monuments se dégradent plus vite que prévu.\n\nIl ne s'agit pas de fermer la ville aux visiteurs, mais d'en maîtriser la fréquentation. C'est pourquoi nous recommandons de plafonner les locations meublées, d'instaurer une taxe modulée selon la saison et de répartir les flux vers les quartiers périphériques. Ces mesures protégeraient à la fois les habitants et l'attractivité durable de la ville.",
     "checklist": [
      "J'ai regroupé les idées en blocs (économique, social, environnemental) et non document par document ?",
      "J'ai utilisé des chiffres du dossier, mais reformulés ?",
@@ -306,7 +306,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Comment sélectionnez-vous les informations utiles dans un dossier ?",
      "modelo": "Je lis d'abord la consigne, puis je note les idées qui répondent à la question posée. J'écarte les détails secondaires et je garde les chiffres et les exemples les plus parlants.",
-     "min": 16,
+     "min": 15,
      "chave": [
       "consigne",
       "idées",
@@ -389,7 +389,7 @@
     "genero": "article (introduction)",
     "min": 120,
     "max": 210,
-    "modelo": "Longtemps, les machines ont remplacé nos bras ; elles s'attaquent désormais à nos mots. Selon plusieurs études, un emploi sur trois pourrait être transformé par l'intelligence artificielle d'ici dix ans, et les tâches de rédaction ou d'administration sont les premières concernées. Pour les uns, c'est la promesse de métiers nouveaux ; pour les autres, la menace d'un travail plus intense, moins bien payé et moins réfléchi.\n\nLa véritable question n'est donc pas de savoir si cette technique s'imposera, mais à quelles conditions elle peut servir les salariés plutôt que s'en servir. Dans quelle mesure l'intelligence artificielle peut-elle améliorer le travail sans appauvrir ceux qui l'accomplissent ?\n\nPour y répondre, nous examinerons d'abord les gains de productivité que l'on peut raisonnablement en attendre. Nous verrons ensuite que ces gains risquent d'être captés par les employeurs et de fragiliser le jugement des salariés. Nous défendrons enfin l'idée que la formation et le partage des bénéfices constituent la seule voie qui concilie progrès technique et justice sociale.",
+    "modelo": "Longtemps, les machines ont remplacé nos bras ; elles s'attaquent désormais à nos mots. Selon une étude récente, un emploi sur trois pourrait être transformé par l'intelligence artificielle d'ici dix ans, et les tâches de rédaction ou d'administration sont les premières concernées. Pour les uns, c'est la promesse de métiers nouveaux ; pour les autres, la menace d'un travail plus intense, moins bien payé et moins réfléchi.\n\nLa véritable question n'est donc pas de savoir si cette technique s'imposera, mais à quelles conditions elle peut servir les salariés plutôt que s'en servir. Dans quelle mesure l'intelligence artificielle peut-elle améliorer le travail sans appauvrir ceux qui l'accomplissent ?\n\nPour y répondre, nous examinerons d'abord les gains de productivité que l'on peut raisonnablement en attendre. Nous verrons ensuite que ces gains risquent d'être captés par les employeurs et de fragiliser le jugement des salariés. Nous défendrons enfin l'idée que la formation et le partage des bénéfices constituent la seule voie qui concilie progrès technique et justice sociale.",
     "checklist": [
      "Ma problématique est une question qui oblige à choisir, pas une liste d'avantages et d'inconvénients ?",
      "L'annonce du plan est élégante (« d'abord... ensuite... enfin ») et suit un fil conducteur ?",
@@ -423,7 +423,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta, com ritmo natural e pausas nas vírgulas.",
      "frase": "Nous verrons d'abord les gains attendus, puis les risques, avant de proposer des garde-fous.",
-     "exp": "« Garde-fous » lê-se /gaʁdəfu/; o « e » de « de » quase desaparece (e muet)."
+     "exp": "« Garde-fous » lê-se /gaʁdəfu/; o « e » de « garde » quase desaparece (e muet)."
     },
     {
      "t": "mc",
@@ -462,7 +462,7 @@
      "resp": [
       "autour"
      ],
-     "exp": "« S'articuler autour de » = organizar-se em torno de. Não use « ao redor » traduzindo literalmente."
+     "exp": "« S'articuler autour de » = organizar-se em torno de. A preposição fixa é « autour de »."
     },
     {
      "t": "speak",
@@ -470,7 +470,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Quelle est la différence entre un thème et une problématique ?",
      "modelo": "Un thème est un sujet général, comme le travail. Une problématique est une question précise qui oblige à choisir une position et qui organise tout le texte.",
-     "min": 18,
+     "min": 13,
      "chave": [
       "question",
       "position",
@@ -497,7 +497,10 @@
      "q": "Après avoir étudié les gains, il ___ d'examiner les risques.",
      "resp": [
       "convient",
-      "importe"
+      "importe",
+      "est temps",
+      "est nécessaire",
+      "est utile"
      ],
      "exp": "« Il convient de » + infinitivo é uma fórmula soutenue de transição. « Il faut d'examiner » está errado: depois de « il faut » não há « de »."
     }
@@ -510,7 +513,7 @@
    "foco": "reformulation, nominalisation, faux amis (prétendre, assister à)",
    "explicacao": [
     "Copiar frases do dossiê é penalizado. Regra prática: nunca mais de 3 ou 4 palavras seguidas iguais às do documento.",
-    "Técnicas: sinônimos (augmenter → s'accroître), nominalização (« Les prix augmentent » → « La hausse des prix »), mudança de voz (« On a interdit » → « L'interdiction a été décrétée ») e inversão do ponto de vista (« Les jeunes lisent moins » → « La lecture recule chez les jeunes »).",
+    "Técnicas: sinônimos (augmenter → s'accroître), nominalização (« Les prix augmentent » → « La hausse des prix »), mudança de estrutura (« On a interdit » → « L'interdiction a été décrétée ») e inversão do ponto de vista (« Les jeunes lisent moins » → « La lecture recule chez les jeunes »).",
     "A nominalização dá tom soutenu e economiza palavras: « Comme les salaires ont baissé, les gens se sont plaints » → « La baisse des salaires a suscité des plaintes ».",
     "Falsos cognatos: prétendre = afirmar (não « pretender »); assister à = estar presente / ser testemunha (não « ajudar », que é aider); actuellement = atualmente (e « na verdade » é en fait)."
    ],
@@ -553,7 +556,7 @@
     "genero": "article (paragraphe reformulé)",
     "min": 120,
     "max": 190,
-    "modelo": "La lecture n'a pas disparu : elle a changé de visage. En quinze ans, la proportion d'adolescents qui ouvrent un livre par plaisir chaque semaine est tombée de plus de la moitié à un peu plus d'un tiers, et les professeurs observent un recul de l'attention soutenue. Il serait pourtant hâtif d'en conclure à un désintérêt général : les jeunes déchiffrent chaque jour des centaines de messages, de sous-titres et de commentaires.\n\nReste que tous les supports ne se valent pas. Selon un spécialiste du cerveau, le papier aide à mémoriser l'enchaînement d'un récit, puisque le lecteur se repère dans l'épaisseur du volume, tandis que l'écran incite à parcourir plutôt qu'à lire. Le remède n'est cependant pas d'opposer les deux formes, mais d'apprendre à passer de l'une à l'autre. Les bibliothèques, qui voient leurs prêts numériques doubler, s'y emploient déjà ; encore faudrait-il leur donner les moyens d'accompagner les familles les plus éloignées des livres.",
+    "modelo": "La lecture n'a pas disparu : elle a changé de visage. En quinze ans, la proportion d'adolescents qui ouvrent un livre par plaisir chaque semaine est tombée de plus de la moitié à un peu plus d'un tiers, et les professeurs observent un recul de l'attention soutenue. Il serait pourtant hâtif d'en conclure à un désintérêt général : les jeunes lisent beaucoup, mais sur écran : messages, forums et sous-titres.\n\nReste que tous les supports ne se valent pas. Selon un spécialiste du cerveau, le papier aide à mémoriser l'enchaînement d'un récit, puisque le lecteur se repère dans l'épaisseur du volume, tandis que l'écran incite à parcourir plutôt qu'à lire. Le remède n'est cependant pas d'opposer les deux formes, mais d'apprendre à passer de l'une à l'autre. Les bibliothèques, qui voient leurs prêts numériques doubler, s'y emploient déjà ; encore faudrait-il leur donner les moyens d'accompagner les familles les plus éloignées des livres.",
     "checklist": [
      "Aucune phrase du dossier n'est recopiée (pas plus de 3 ou 4 mots identiques à la suite) ?",
      "J'ai utilisé au moins trois nominalisations ou changements de structure ?",
@@ -588,7 +591,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta, com ritmo natural e pausas nas vírgulas.",
      "frase": "La baisse de la fréquentation n'a pas entraîné celle des prêts numériques.",
-     "exp": "« Fréquentation » tem som nasal /ɑ̃/ no final; « entraîné » tem /ɑ̃/ inicial. Não pronuncie o n como no português."
+     "exp": "« Fréquentation » termina em /ɔ̃/ e tem /ɑ̃/ no meio (-quen-); « entraîné » começa com /ɑ̃/. Não pronuncie o n como no português."
     },
     {
      "t": "mc",
@@ -618,7 +621,11 @@
       "enseignants."
      ],
      "resp": "La désaffection des jeunes pour la lecture inquiète désormais les enseignants.",
-     "exp": "« Désaffection » é uma nominalização elegante. O sujeito é longo, por isso o verbo « inquiète » vem só depois do complemento."
+     "exp": "« Désaffection » é uma nominalização elegante. O sujeito é longo, por isso o verbo « inquiète » vem só depois do complemento.",
+     "alt": [
+      "Désormais la désaffection des jeunes pour la lecture inquiète les enseignants.",
+      "La désaffection des jeunes pour la lecture inquiète les enseignants désormais."
+     ]
     },
     {
      "t": "gap",
@@ -634,7 +641,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Pourquoi ne faut-il pas recopier les phrases du dossier ?",
      "modelo": "Recopier montre que l'on n'a pas compris les textes. Le jury évalue notre capacité à reformuler les idées avec nos propres mots.",
-     "min": 15,
+     "min": 11,
      "chave": [
       "reformuler",
       "propres mots",
@@ -660,7 +667,8 @@
      "t": "gap",
      "q": "Les enseignants ___ à une baisse de la concentration, sans pouvoir l'enrayer.",
      "resp": [
-      "assistent"
+      "assistent",
+      "font face"
      ],
      "exp": "Falso cognato: « assister à » = presenciar, ser testemunha de. Para « ajudar » use aider."
     }
@@ -716,7 +724,7 @@
     "genero": "tribune (paragraphe argumentatif)",
     "min": 110,
     "max": 180,
-    "modelo": "La semaine de quatre jours n'est pas un luxe : c'est un investissement dans la santé des salariés et dans l'attractivité des emplois. Un travail plus concentré, suivi d'un repos plus long, réduit la fatigue accumulée, et c'est la fatigue, bien plus que la charge de travail elle-même, qui nourrit les absences. L'expérience menée pendant un an dans une collectivité du Nord, auprès de quatre cents agents, le montre sans ambiguïté : les arrêts maladie y ont reculé d'un cinquième, tandis que les candidatures aux postes vacants ont doublé. Autrement dit, ce que l'employeur concède en temps, il le regagne en présence, en motivation et en capacité de recruter. Certes, il faut veiller à ce que le service rendu aux usagers n'en pâtisse pas, mais ce risque tient à l'organisation, non au principe. Dès lors, refuser d'essayer reviendrait à préférer une habitude à des résultats mesurés.",
+    "modelo": "La semaine de quatre jours n'est pas un luxe : c'est un investissement dans la santé des salariés et dans l'attractivité des emplois. Un travail plus concentré, suivi d'un repos plus long, réduit la fatigue accumulée, et la fatigue nourrit en partie les absences. L'expérience menée pendant un an dans une collectivité du Nord, auprès de quatre cents agents, le montre sans ambiguïté : les arrêts maladie y ont reculé d'un cinquième, tandis que les candidatures aux postes vacants ont doublé. Autrement dit, ce que l'employeur concède en temps, il le regagne en présence, en motivation et en capacité de recruter. Certes, il faut veiller à ce que le service rendu aux usagers n'en pâtisse pas, mais ce risque tient à l'organisation, non au principe. Dès lors, refuser d'essayer reviendrait à préférer une habitude à des résultats mesurés.",
     "checklist": [
      "Mon paragraphe commence par une idée directrice claire, et une seule ?",
      "J'ai un argument qui explique POURQUOI, pas seulement une affirmation ?",
@@ -801,7 +809,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Quelles sont les étapes d'un paragraphe argumentatif ?",
      "modelo": "On commence par l'idée directrice, puis on développe un argument. Ensuite, on donne un exemple précis, et on termine par une mini-conclusion qui revient à la problématique.",
-     "min": 18,
+     "min": 13,
      "chave": [
       "idée",
       "argument",
@@ -966,7 +974,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Que faut-il faire après avoir reconnu un argument contraire ?",
      "modelo": "Après avoir reconnu l'argument avec « certes », je le réfute avec « mais » ou « pourtant ». J'appuie ma réfutation sur un fait ou un chiffre précis.",
-     "min": 16,
+     "min": 11,
      "chave": [
       "mais",
       "pourtant",
@@ -987,7 +995,7 @@
       "Bien qu'il avait raison, sa conclusion est excessive."
      ],
      "r": 1,
-     "exp": "« Bien que » + subjonctif présent: qu'il ait (verbo avoir). Os brasileiros costumam usar o indicativo por analogia com « embora » + indicativo em frases como « embora ele tem »."
+     "exp": "« Bien que » + subjonctif présent: qu'il ait (verbo avoir). Atenção: « bien que » pede sempre subjuntivo, assim como « embora » em português (« embora ele tenha »)."
     },
     {
      "t": "gap",
@@ -1050,7 +1058,7 @@
     "genero": "article (intégration des sources)",
     "min": 180,
     "max": 290,
-    "modelo": "Dans le Sud, l'eau cesse d'être une évidence pour devenir un enjeu de société. Selon un institut de recherche, les nappes phréatiques y ont perdu en moyenne quatre mètres en vingt ans, tandis que les épisodes de sécheresse se font plus longs et plus fréquents. Les chercheurs en tirent une recommandation précise : réduire de dix pour cent les prélèvements d'ici cinq ans.\n\nOr cet effort ne pèse pas également sur tous. Un arboriculteur de la région confie que, sans irrigation, ses arbres ne survivraient pas à un seul été. Il se dit prêt à changer de culture, mais rappelle qu'une telle conversion demande des années et un capital que peu d'exploitants possèdent. « On nous demande des efforts, pas des moyens », déplore-t-il, et l'on comprend sa colère.\n\nLes élus, eux, doivent arbitrer entre des usages qui ne se laissent pas comparer. La maire d'une commune observe que sa piscine municipale consomme autant que cinq cents habitants, mais qu'elle reste le seul endroit où les enfants apprennent à nager. Elle plaide pour un arbitrage sans caricature, et il me semble qu'elle a raison.\n\nÀ mon sens, la sobriété ne se décrète pas ; elle se négocie, usage par usage, et se finance. Il se pourrait que les agriculteurs soient prêts à y consentir si la collectivité s'engageait à les accompagner. Faute de quoi, la rareté de l'eau risque de devenir celle de la confiance.",
+    "modelo": "Dans le Sud, l'eau cesse d'être une évidence pour devenir un enjeu de société. Selon un institut de recherche, les nappes phréatiques y ont perdu en moyenne quatre mètres en vingt ans, tandis que les épisodes de sécheresse se font plus longs et plus fréquents. Les chercheurs en tirent une recommandation précise : réduire de dix pour cent les prélèvements d'ici cinq ans.\n\nOr cet effort ne pèse pas également sur tous. Un arboriculteur de la région confie que, sans irrigation, ses arbres ne survivraient pas à un seul été. Il se dit prêt à changer de culture, mais rappelle qu'une telle conversion demande des années et de lourds investissements. « On nous demande des efforts, pas des moyens », déplore-t-il, et l'on comprend sa colère.\n\nLes élus, eux, doivent arbitrer entre des usages qui ne se laissent pas comparer. La maire d'une commune observe que sa piscine municipale consomme autant que cinq cents habitants, mais qu'elle reste le seul endroit où les enfants apprennent à nager. Elle plaide pour un arbitrage sans caricature, et il me semble qu'elle a raison.\n\nÀ mon sens, la sobriété ne se décrète pas ; elle se négocie, usage par usage, et se finance. Il se pourrait que les agriculteurs soient prêts à y consentir si la collectivité s'engageait à les accompagner. Faute de quoi, la rareté de l'eau risque de devenir celle de la confiance.",
     "checklist": [
      "Je n'ai écrit « le document 1/2/3 » nulle part ?",
      "J'ai utilisé au moins quatre verbes de rapport différents (constater, rappeler, déplorer, observer...) ?",
@@ -1136,7 +1144,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Comment présenter une source sans écrire « le document 1 » ?",
      "modelo": "On présente la source par sa nature ou par son auteur, par exemple « selon un institut de recherche » ou « un agriculteur rappelle ». Ainsi, le texte reste autonome.",
-     "min": 16,
+     "min": 13,
      "chave": [
       "selon",
       "auteur",
@@ -1219,7 +1227,7 @@
     "genero": "billet de blog (connecteurs et transitions)",
     "min": 190,
     "max": 300,
-    "modelo": "Faut-il supprimer les notes ? La question divise parce qu'elle touche à ce que l'école croit devoir mesurer.\n\nD'un côté, les établissements qui ont remplacé le chiffre par la validation de compétences constatent un recul de l'anxiété chez les élèves. D'autant que les résultats en lecture à quinze ans demeurent comparables dans les pays qui retardent la notation. L'argument est sérieux ; il ne suffit pas, cependant, à clore le débat.\n\nCar si la note inquiète, elle rassure aussi, en offrant un langage commun aux élèves, aux familles et aux professeurs. Un enseignant de lycée rappelle qu'elle permet d'orienter et de comparer ; la supprimer ne ferait que déplacer la sélection vers des critères moins visibles, donc moins contestables. Qui plus est, les familles déclarent comprendre moins bien des bilans de compétences que des moyennes, alors même que l'on souhaite les associer davantage à la scolarité.\n\nDès lors, le véritable enjeu n'est pas le chiffre, mais l'usage que l'on en fait. Lorsque la note sanctionne, elle décourage ; lorsqu'elle accompagne, elle éclaire. Une étude internationale montre d'ailleurs que les élèves défavorisés progressent davantage quand les évaluations servent à apprendre plutôt qu'à classer.\n\nPar conséquent, plutôt que de trancher entre la note et son absence, il conviendrait de former les enseignants à évaluer autrement, de sorte que chaque élève sache ce qu'il a compris et ce qu'il lui reste à travailler. De surcroît, une telle réforme coûterait moins qu'un bouleversement complet du système.",
+    "modelo": "Faut-il supprimer les notes ? La question divise parce qu'elle touche à ce que l'école croit devoir mesurer.\n\nD'un côté, les établissements qui ont remplacé le chiffre par la validation de compétences constatent un recul de l'anxiété chez les élèves. Ce changement est d'autant moins risqué que les résultats en lecture à quinze ans demeurent comparables dans les pays qui retardent la notation. L'argument est sérieux ; il ne suffit pas, cependant, à clore le débat.\n\nCar si la note inquiète, elle rassure aussi, en offrant un langage commun aux élèves, aux familles et aux professeurs. Un enseignant de lycée rappelle qu'elle permet d'orienter et de comparer ; la supprimer ne ferait que déplacer la sélection vers des critères moins visibles, donc moins contestables. Qui plus est, les familles déclarent comprendre moins bien un bilan de compétences qu'une moyenne chiffrée.\n\nDès lors, le véritable enjeu n'est pas le chiffre, mais l'usage que l'on en fait. Lorsque la note sanctionne, elle décourage ; lorsqu'elle accompagne, elle éclaire. Une étude internationale montre d'ailleurs que les élèves défavorisés progressent davantage quand les évaluations servent à apprendre plutôt qu'à classer.\n\nPar conséquent, plutôt que de trancher entre la note et son absence, il conviendrait de former les enseignants à évaluer autrement, de sorte que chaque élève sache ce qu'il a compris et ce qu'il lui reste à travailler. De surcroît, une réforme aussi mesurée aurait l'avantage de ne priver ni les familles ni les professeurs de repères.",
     "checklist": [
      "J'ai employé au moins six connecteurs différents et précis (en revanche, d'autant que, qui plus est, dès lors...) ?",
      "Mes transitions retombent sur l'idée précédente avant de lancer la suivante ?",
@@ -1245,7 +1253,8 @@
      "q": "Les familles apprécient la clarté de la note ; les enseignants, ___, y voient un instrument injuste.",
      "resp": [
       "en revanche",
-      "à l'inverse"
+      "à l'inverse",
+      "au contraire"
      ],
      "exp": "« Par contre » existe na fala, mas em texto soutenu use en revanche ou à l'inverse."
     },
@@ -1305,7 +1314,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Pourquoi faut-il éviter de répéter « mais » et « donc » ?",
      "modelo": "Parce que chaque connecteur marque une relation logique précise. En varier le choix, avec des mots comme « en revanche » ou « par conséquent », rend le raisonnement plus nuancé et le style plus soutenu.",
-     "min": 18,
+     "min": 16,
      "chave": [
       "connecteur",
       "logique",
@@ -1388,7 +1397,7 @@
     "genero": "éditorial",
     "min": 190,
     "max": 310,
-    "modelo": "Faut-il continuer à offrir le bus ? À l'heure où la municipalité se félicite d'une fréquentation en hausse de soixante pour cent, nous voudrions dire que la gratuité n'est ni le triomphe annoncé ni la folie dénoncée par ses adversaires. Elle est une promesse à moitié tenue, qu'il faut maintenant tenir tout à fait.\n\nReconnaissons d'abord ses effets. Un quart des nouveaux voyageurs affirment avoir laissé leur voiture au garage : voilà qui n'est pas rien dans une ville qui étouffe. Et il y a ces témoignages, comme celui de cette habitante qui ne compte plus chaque euro avant de sortir. Peut-on sérieusement réduire cette liberté nouvelle à une dépense ? Non : c'est, pour beaucoup, la possibilité de se déplacer, de travailler, de voir du monde.\n\nMais l'économiste a raison de rappeler que les huit millions d'euros annuels ne sont pas gratuits pour tout le monde. La mesure attire surtout des piétons et des cyclistes, qui profitent d'un service dont ils n'avaient pas besoin, tandis que les automobilistes restent derrière leur volant. Pis encore, la même habitante nous apprend que le soir, les bus ne passent plus. À quoi sert un billet offert si le véhicule n'arrive jamais ?\n\nAussi demandons-nous à la municipalité de ne pas choisir entre la gratuité et la qualité, mais de les faire avancer ensemble : un tarif social pour ceux qui en ont besoin, et des horaires élargis pour tous. Car un bus gratuit mais absent n'est pas un service public : c'est un panneau d'affichage.",
+    "modelo": "Faut-il continuer à offrir le bus ? À l'heure où la municipalité se félicite d'une fréquentation en hausse de soixante pour cent, nous voudrions dire que la gratuité n'est ni le triomphe annoncé ni la folie dénoncée par ses adversaires. Elle est une promesse à moitié tenue, qu'il faut maintenant tenir tout à fait.\n\nReconnaissons d'abord ses effets. Un quart des nouveaux voyageurs affirment avoir laissé leur voiture au garage : voilà qui n'est pas rien pour la ville. Et il y a ces témoignages, comme celui de cette habitante qui ne compte plus chaque euro avant de sortir. Peut-on sérieusement réduire cette liberté nouvelle à une dépense ? Non : c'est, pour beaucoup, la possibilité de se déplacer, de travailler, de voir du monde.\n\nMais l'économiste a raison de rappeler que les huit millions d'euros annuels ne sont pas gratuits pour tout le monde. La mesure attire surtout des piétons et des cyclistes, et très peu d'automobilistes. Pis encore, la même habitante nous apprend que le soir, les bus ne passent plus. À quoi sert un billet offert si le véhicule n'arrive jamais ?\n\nAussi demandons-nous à la municipalité de ne pas choisir entre la gratuité et la qualité, mais de les faire avancer ensemble : un tarif social pour ceux qui en ont besoin, et des horaires élargis pour tous. Car un bus gratuit mais absent n'est pas un service public : c'est un panneau d'affichage.",
     "checklist": [
      "Ma position est claire dès le premier paragraphe ?",
      "J'ai utilisé « nous » (et non « je ») et au moins une question rhétorique ?",
@@ -1413,7 +1422,8 @@
      "t": "gap",
      "q": "Ce n'est pas une dépense, ___ un investissement.",
      "resp": [
-      "c'est"
+      "c'est",
+      "mais"
      ],
      "exp": "Antítese com paralelismo: « Ce n'est pas A, c'est B ». É uma estrutura clássica de éditorial."
     },
@@ -1452,7 +1462,10 @@
       "?"
      ],
      "resp": "Peut-on sérieusement réduire cette liberté nouvelle à une simple dépense ?",
-     "exp": "Inversão interrogativa « Peut-on » (verbo + pronome com hífen). « Réduire à » = reduzir a."
+     "exp": "Inversão interrogativa « Peut-on » (verbo + pronome com hífen). « Réduire à » = reduzir a.",
+     "alt": [
+      "Peut-on réduire sérieusement cette liberté nouvelle à une simple dépense ?"
+     ]
     },
     {
      "t": "gap",
@@ -1471,7 +1484,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Comment un éditorial se distingue-t-il d'un rapport ?",
      "modelo": "Un éditorial prend position clairement et s'adresse directement aux lecteurs, alors qu'un rapport reste plus neutre et technique. Il se termine souvent par une formule frappante.",
-     "min": 16,
+     "min": 13,
      "chave": [
       "position",
       "lecteurs",
@@ -1554,7 +1567,7 @@
     "genero": "lettre ouverte",
     "min": 180,
     "max": 300,
-    "modelo": "Madame la Présidente,\n\nNous nous permettons de nous adresser à vous publiquement, car la décision de transformer quarante bureaux de poste en simples points de retrait concerne chacun des habitants de notre département.\n\nL'administration invoque la baisse du courrier et la nécessité de réduire les coûts, et nous ne contestons pas ces contraintes. Mais ces chiffres ne disent pas ce que le guichet représente dans nos communes de moins de mille habitants : souvent le dernier service public, où les personnes âgées retirent leur argent, envoient un colis ou demandent de l'aide pour une démarche. Or un tiers des habitants interrogés n'a pas Internet chez lui. Comment leur proposer, pour tout remplacement, une camionnette qui passe deux fois par semaine ?\n\nIl y va, en outre, de la vie même de nos villages. Les commerces qui subsistent dépendent des visiteurs qu'attire le bureau de poste ; le fermer, c'est dire à une commune qu'elle est de trop.\n\nAussi nous paraît-il indispensable que vous renonciez à ce projet en l'état et que vous étudiiez, avec les maires concernés, une solution de rechange. Plusieurs d'entre eux proposent de réunir la poste, la mairie et un café dans un même lieu : ce serait une économie réelle et un service préservé.\n\nNous vous prions de bien vouloir nous recevoir avant que la décision soit définitive.\n\nVeuillez agréer, Madame la Présidente, l'expression de notre haute considération.\n\nLe collectif des habitants du Haut-Pays",
+    "modelo": "Madame la Présidente,\n\nNous nous permettons de nous adresser à vous publiquement, car la décision de transformer quarante bureaux de poste en simples points de retrait concerne chacun des habitants de notre département.\n\nL'administration invoque la baisse du courrier et la nécessité de réduire les coûts, et nous ne contestons pas ces contraintes. Mais ces chiffres ne disent pas ce que le guichet représente dans nos communes de moins de mille habitants : souvent le dernier service public, où les personnes âgées retirent leur argent, envoient un colis ou demandent de l'aide pour une démarche. Or un tiers des habitants interrogés n'a pas Internet chez lui. Comment leur proposer, pour tout remplacement, une camionnette qui passe deux fois par semaine ?\n\nIl y va, en outre, de la vie même de nos villages. Les commerces qui subsistent dépendent des visiteurs qu'attire le bureau de poste ; le fermer, c'est dire à une commune qu'elle est de trop.\n\nAussi nous paraît-il indispensable que vous renonciez à ce projet en l'état et que vous étudiiez, avec les maires concernés, une solution de rechange. Un maire rural propose de réunir la poste, la mairie et un café dans un même lieu : ce serait un service préservé et, sans doute, une économie.\n\nNous vous prions de bien vouloir nous recevoir avant que la décision soit définitive.\n\nVeuillez agréer, Madame la Présidente, l'expression de notre haute considération.\n\nLe collectif d'habitants",
     "checklist": [
      "Formule d'appel (Madame la Présidente,) et formule finale (Veuillez agréer...) présentes et correctes ?",
      "Vouvoiement et registre soutenu partout, sans mots familiers ?",
@@ -1588,7 +1601,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta, com ritmo natural e pausas nas vírgulas.",
      "frase": "Veuillez agréer, Madame la Présidente, l'expression de notre haute considération.",
-     "exp": "« Haute » tem h aspiré: não há ligação (la haute considération, sem liaison em « t »). Pronuncie /ot/."
+     "exp": "Em « haute » o h é aspirado (sem elisão nem liaison) e o « t » final é pronunciado: /ot/."
     },
     {
      "t": "mc",
@@ -1630,7 +1643,8 @@
       "réexaminiez",
       "suspendiez",
       "retiriez",
-      "annuliez"
+      "annuliez",
+      "revoyiez"
      ],
      "exp": "Depois de « il est indispensable que », subjonctif présent: que vous reconsidériez (terminação -iez).",
      "dica": "verbo no subjonctif"
@@ -1641,7 +1655,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Que doit contenir une lettre ouverte efficace ?",
      "modelo": "Elle commence par une formule d'appel et le motif de la lettre. Ensuite, elle présente des arguments précis, formule une demande claire et se termine par une formule de politesse.",
-     "min": 18,
+     "min": 15,
      "chave": [
       "appel",
       "arguments",
@@ -1723,7 +1737,7 @@
     "genero": "discours",
     "min": 190,
     "max": 300,
-    "modelo": "Mesdames et Messieurs, chers élèves, chers parents, chers professeurs,\n\nJe voudrais commencer par une confidence. À votre âge, personne ne m'avait parlé du service civique. J'ai découvert ce que je savais faire en aidant des enfants à lire, et cette découverte m'a donné une confiance que ni les examens ni les compliments n'avaient su me donner.\n\nAujourd'hui, un jeune sur trois s'engage dans une activité bénévole, contre un sur cinq il y a dix ans. Voilà une bonne nouvelle, et nous devons la saluer. Mais regardons-la en face : ce sont encore, le plus souvent, les enfants de familles déjà engagées qui franchissent le pas. Les autres, ceux des quartiers populaires, n'ont pas moins de générosité ; ils ont moins d'information.\n\nCar l'engagement ressemble à un muscle : il ne se développe que si on l'entraîne, et il s'atrophie lorsqu'on le laisse dormir. Un pays qui n'offre pas à ses jeunes l'occasion de s'y exercer ne doit pas s'étonner de les voir hésiter.\n\nOr le service civique manque de places : une demande sur deux est refusée. Nous voulons que cela change. Nous voulons que chaque lycée parle de cette possibilité. Nous voulons que chaque association puisse accueillir et former les volontaires.\n\nÀ vous, qui allez quitter ces murs, je dis simplement ceci : n'attendez pas qu'on vous invite. Que chacun d'entre vous pousse une porte, une seule, cette année. Vous serez surpris de découvrir ce qui se trouve derrière.\n\nJe vous remercie.",
+    "modelo": "Mesdames et Messieurs, chers élèves, chers parents, chers professeurs,\n\nJe voudrais commencer par la confidence d'une ancienne volontaire : à votre âge, personne ne lui avait parlé du service civique. Elle a découvert ce qu'elle savait faire en aidant des élèves à lire, et cette découverte lui a donné une confiance en elle qu'elle ne soupçonnait pas.\n\nAujourd'hui, un jeune sur trois s'engage dans une activité bénévole, contre un sur cinq il y a dix ans. Voilà une bonne nouvelle, et nous devons la saluer. Mais regardons-la en face : ce sont encore, le plus souvent, les enfants de familles déjà engagées qui franchissent le pas. Les autres, ceux des quartiers populaires, n'ont pas moins de générosité ; ils ont moins d'information.\n\nCar l'engagement ressemble à un muscle : il ne se développe que si on l'entraîne, et il s'atrophie lorsqu'on le laisse dormir. Un pays qui n'offre pas à ses jeunes l'occasion de s'y exercer ne doit pas s'étonner de les voir hésiter.\n\nOr le service civique manque de places : une demande sur deux est refusée. Nous voulons que cela change. Nous voulons que chaque lycée parle de cette possibilité. Nous voulons que chaque association puisse accueillir et former les volontaires.\n\nÀ vous, qui allez quitter ces murs, je dis simplement ceci : n'attendez pas qu'on vous invite. Que chacun d'entre vous pousse une porte, une seule, cette année. Vous serez surpris de découvrir ce qui se trouve derrière.\n\nJe vous remercie.",
     "checklist": [
      "J'ai commencé par une formule d'adresse adaptée au public (Mesdames et Messieurs, chers élèves...) ?",
      "Mon texte contient une anaphore, une analogie et un appel final au subjonctif ou à l'impératif ?",
@@ -1800,7 +1814,7 @@
      "resp": [
       "à un"
      ],
-     "exp": "« Ressembler à » + artigo: à un muscle. Em português não há preposição em « parece um músculo », e o erro é frequente."
+     "exp": "« Ressembler à » + artigo: à un muscle. Em português, « parecer » não pede preposição; em francês, « ressembler » exige « à »."
     },
     {
      "t": "speak",
@@ -1808,7 +1822,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Pourquoi utiliser une analogie dans un discours ?",
      "modelo": "Une analogie rend une idée abstraite concrète et facile à retenir. Elle frappe l'imagination du public, qui se souvient d'une image plus longtemps que d'un raisonnement.",
-     "min": 16,
+     "min": 13,
      "chave": [
       "image",
       "concrète",
@@ -1890,7 +1904,7 @@
     "genero": "article (récit et plaidoyer)",
     "min": 170,
     "max": 280,
-    "modelo": "Au début du XXe siècle, dans certaines régions, plus de la moitié des habitants parlaient une langue régionale à la maison. Puis l'école de la République, qui voyait dans ces langues un obstacle à l'unité nationale, les interdit pendant longtemps, parfois en punissant les enfants qui les employaient. Les parents, craignant que leurs fils n'échouent à l'école, cessèrent de les transmettre. Aujourd'hui, moins de cinq pour cent des jeunes les parlent couramment.\n\nFaut-il se résigner ? Non, car la situation change. Depuis dix ans, des écoles bilingues ouvrent chaque année et leurs effectifs ont doublé. Les parents, qui disaient d'abord vouloir transmettre une identité, reconnaissent désormais qu'ils offrent aussi à leurs enfants un avantage linguistique. Il faut pourtant que les pouvoirs publics forment davantage d'enseignants, sans quoi cet élan retombera.\n\nIl faut aussi que ces langues sortent de la salle de classe. Un linguiste le rappelle : une langue ne survit que si l'on peut s'en servir tous les jours, au travail, sur Internet, à la mairie. Les réseaux sociaux ont déjà offert aux jeunes locuteurs des occasions inédites, bien qu'elles ne remplacent pas l'école.\n\nJe ne pense pas que l'on puisse décréter la renaissance d'une langue ; en revanche, on peut créer les conditions pour qu'elle revive. Si nous agissons maintenant, nos enfants diront un jour qu'ils ont hérité de ce que d'autres avaient failli perdre.",
+    "modelo": "Au début du XXe siècle, dans certaines régions, plus de la moitié des habitants parlaient une langue régionale à la maison. Puis l'école de la République les interdit pendant longtemps, parfois en punissant les enfants qui les employaient. Peu à peu, la transmission familiale se tarit. Aujourd'hui, moins de cinq pour cent des jeunes les parlent couramment.\n\nFaut-il se résigner ? Non, car la situation change. Depuis dix ans, des écoles bilingues ouvrent chaque année et leurs effectifs ont doublé. Les parents disent vouloir transmettre une identité, mais aussi offrir à leurs enfants un avantage linguistique. Il faut pourtant que les pouvoirs publics forment davantage d'enseignants, sans quoi cet élan retombera.\n\nIl faut aussi que ces langues sortent de la salle de classe. Un linguiste le rappelle : une langue ne survit que si l'on peut s'en servir tous les jours, au travail, sur Internet, à la mairie. Les réseaux sociaux ont déjà offert aux jeunes locuteurs des occasions inédites, bien qu'elles ne remplacent pas l'école.\n\nJe ne pense pas que l'on puisse décréter la renaissance d'une langue ; en revanche, on peut créer les conditions pour qu'elle revive. Si nous agissons maintenant, nos enfants diront un jour qu'ils ont hérité de ce que d'autres avaient failli perdre.",
     "checklist": [
      "Les temps du récit (passé) et de l'argumentation (présent, futur) sont cohérents ?",
      "J'ai utilisé le subjonctif au moins trois fois, avec les bons déclencheurs (il faut que, bien que, pour que) ?",
@@ -1970,7 +1984,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Qu'est-ce qu'il faut pour sauver une langue régionale, selon vous ?",
      "modelo": "Il faut que cette langue soit enseignée à l'école, mais aussi qu'on puisse l'utiliser tous les jours, au travail ou sur Internet. Sans cela, elle risque de disparaître.",
-     "min": 18,
+     "min": 14,
      "chave": [
       "école",
       "utiliser",
@@ -2053,7 +2067,7 @@
     "genero": "article (introduction et conclusion)",
     "min": 160,
     "max": 270,
-    "modelo": "Trois heures par jour : c'est le temps que passe, en moyenne, un adolescent sur les réseaux sociaux, soit plus d'un mois et demi chaque année. Les enseignants s'inquiètent d'une attention qui s'effrite ; les élèves répondent qu'ils y trouvent leurs amis et l'actualité. Qui a raison ? Au-delà de l'accusation et de la défense, la vraie question est de savoir si ces plateformes nous volent notre attention ou si nous la leur abandonnons. Nous verrons d'abord comment elles sont conçues, puis ce que nous pouvons y changer.\n\n[…]\n\nAu terme de cette réflexion, la réponse tient en une nuance : les réseaux sociaux ne volent pas notre attention, mais ils sont fabriqués pour la capter, et nous la leur cédons plus facilement qu'il ne le faudrait. L'étude citée ne prouve d'ailleurs aucun lien direct entre ces heures de connexion et les difficultés scolaires ; elle montre en revanche que les élèves les plus connectés sont aussi les plus isolés. L'interdiction n'est pas la solution, comme le rappelle une lycéenne qui réclame un cadre plutôt qu'une privation. Apprendre à se servir de ces outils, comme on apprend à bien manger, est donc la seule voie raisonnable.\n\nReste une question que chacun peut se poser ce soir : si ces trois heures étaient les nôtres, qu'en ferions-nous ?",
+    "modelo": "Trois heures par jour : c'est le temps que passe, en moyenne, un adolescent sur les réseaux sociaux, soit plus d'un mois et demi chaque année. Les enseignants s'inquiètent d'une attention qui s'effrite ; une lycéenne répond qu'elle y garde ses amis et y trouve de l'information. Qui a raison ? Au-delà de l'accusation et de la défense, la vraie question est de savoir si ces plateformes nous volent notre attention ou si nous la leur abandonnons. Nous verrons d'abord comment elles sont conçues, puis ce que nous pouvons y changer.\n\n[…]\n\nAu terme de cette réflexion, la réponse tient en une nuance : les réseaux sociaux ne volent pas notre attention, mais ils sont fabriqués pour la capter, et nous la leur cédons plus facilement qu'il ne le faudrait. L'étude citée ne prouve d'ailleurs aucun lien direct entre ces heures de connexion et les difficultés d'attention ; elle montre en revanche que les élèves les plus connectés sont aussi les plus isolés. L'interdiction n'est pas la solution, comme le rappelle une lycéenne qui réclame un cadre plutôt qu'une privation. Apprendre à se servir de ces outils, comme on apprend à bien manger, est donc la seule voie raisonnable.\n\nReste une question que chacun peut se poser ce soir : si ces trois heures étaient les nôtres, qu'en ferions-nous ?",
     "checklist": [
      "Mon introduction a une accroche concrète (chiffre, scène, contraste) et non une généralité ?",
      "La problématique est posée sous forme de question et le plan est annoncé ?",
@@ -2136,7 +2150,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Que faut-il éviter dans l'introduction et la conclusion ?",
      "modelo": "Dans l'introduction, il faut éviter les généralités comme « de tout temps ». Dans la conclusion, il ne faut ni répéter tout le texte ni ajouter un nouvel argument.",
-     "min": 18,
+     "min": 13,
      "chave": [
       "généralités",
       "répéter",
@@ -2165,7 +2179,10 @@
       "constituent",
       "sont",
       "forment",
-      "offrent"
+      "offrent",
+      "représentent",
+      "apportent",
+      "fournissent"
      ],
      "exp": "Com « ni... ni... », os dois sujeitos somam-se: verbo no plural. O singular só aparece se um excluir o outro."
     }
@@ -2221,7 +2238,7 @@
     "genero": "éditorial (texte révisé)",
     "min": 120,
     "max": 210,
-    "modelo": "Les Jeux olympiques ont coûté très cher, mais ils ont aussi permis de construire des logements et de nouvelles lignes de transport. Le bilan financier reste débattu ; le bilan social l'est beaucoup moins.\n\nAprès la compétition, les inscriptions dans les clubs sportifs ont augmenté de dix pour cent, surtout chez les enfants, qui se sont inscrits en nombre. Une athlète le reconnaît : les Jeux lui ont donné une visibilité qu'elle n'aurait jamais eue. Elle ajoute pourtant que l'effet s'estompe dès que les clubs manquent d'entraîneurs.\n\nCependant, les équipements restent peu utilisés dans certains quartiers, comme si le sport avait oublié ceux à qui il s'adresse. Une infrastructure ne suffit pas : il faut des personnes pour l'animer.\n\nIl faut donc que l'État fasse davantage, et qu'il le fasse dans la durée. Les mesures qu'il a prises pendant les Jeux, utiles mais ponctuelles, doivent désormais devenir permanentes. Car, comme le rappelle cette athlète, l'héritage se construit chaque année, et non en quinze jours.",
+    "modelo": "Les Jeux olympiques ont coûté très cher, mais ils ont aussi permis de construire des logements et de nouvelles lignes de transport. Le bilan financier reste débattu ; l'héritage, lui, reste à construire.\n\nAprès la compétition, les inscriptions dans les clubs sportifs ont augmenté de dix pour cent, surtout chez les enfants, qui se sont inscrits en nombre. Une athlète le reconnaît : les Jeux lui ont donné une visibilité qu'elle n'aurait jamais eue. Elle ajoute pourtant que l'effet s'estompe dès que les clubs manquent d'entraîneurs.\n\nCependant, les équipements restent peu utilisés dans certains quartiers, comme si le sport avait oublié ceux à qui il s'adresse. Une infrastructure ne suffit pas : il faut des personnes pour l'animer.\n\nIl faut donc que l'État fasse davantage, et qu'il le fasse dans la durée. Les efforts consentis pour les Jeux en matière de logements et de transports, utiles mais ponctuels, doivent désormais se prolonger dans les clubs. Car, comme le rappelle cette athlète, l'héritage se construit chaque année, et non en quinze jours.",
     "checklist": [
      "J'ai corrigé les accords en nombre (les Jeux olympiques, des logements, les équipements restent) ?",
      "Les participes passés sont corrects (ont coûté, ont permis, se sont inscrits) et j'ai écrit « très cher » ?",
@@ -2255,7 +2272,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta, com ritmo natural e pausas nas vírgulas.",
      "frase": "Les mesures qu'il a prises pendant les Jeux doivent désormais devenir permanentes.",
-     "exp": "« Prises » = /pʁiz/ (s final de feminino soa /z/). « Permanentes » tem /ɑ̃/ na terceira sílaba."
+     "exp": "« Prises » = /pʁiz/: o « s » do meio soa /z/ e o « s » final do plural é mudo. « Permanentes » tem /ɑ̃/ na terceira sílaba."
     },
     {
      "t": "mc",
@@ -2300,7 +2317,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Comment organisez-vous la relecture de votre texte ?",
      "modelo": "Je relis en trois étapes : d'abord le fond, pour vérifier la consigne et le plan, ensuite la grammaire, comme les accords, puis la forme, c'est-à-dire la ponctuation et les accents.",
-     "min": 20,
+     "min": 15,
      "chave": [
       "étapes",
       "fond",
@@ -2384,7 +2401,7 @@
     "genero": "article",
     "min": 600,
     "max": 800,
-    "modelo": "Sobriété numérique : à qui la tâche ?\n\nOn l'appelle « le nuage », comme si le numérique flottait au-dessus de nos têtes sans peser sur la terre. Pourtant, il absorbe près de dix pour cent de l'électricité consommée en France et il est à l'origine de près de trois pour cent de nos émissions de gaz à effet de serre. Face à ce constat, deux discours s'affrontent : l'un invite chacun à modérer ses usages, l'autre répond que l'effort doit venir des industriels. Qui, des utilisateurs ou des fabricants, doit alors porter la sobriété numérique ? Nous défendrons ici l'idée que la responsabilité est partagée, mais que le premier pas revient à ceux qui conçoivent et vendent nos appareils.\n\nReconnaissons d'abord ce que l'argument des industriels a de solide. Selon le dirigeant d'une entreprise du secteur, le numérique évite aussi des déplacements, réduit la consommation de papier et permet de mieux piloter l'énergie des bâtiments et des usines. Il ajoute que les centres de données fonctionnent de plus en plus grâce aux énergies renouvelables et que l'efficacité des équipements progresse chaque année. Ces progrès sont réels, et il serait injuste de les ignorer. Il est vrai également que culpabiliser le consommateur, comme on le fait parfois pour le plastique ou l'avion, ne produit guère de changements durables.\n\nMais cet optimisme ne résiste pas aux chiffres que fournit une agence publique. D'une part, c'est la fabrication des appareils, et non leur utilisation, qui pèse le plus lourd : près de quatre-vingts pour cent de l'empreinte d'un téléphone provient de sa production. Or les gains d'efficacité d'un modèle neuf ne compensent pas l'énergie dépensée pour le fabriquer. D'autre part, les centres de données consomment une eau croissante pour se refroidir, ce qui déplace le problème au lieu de le résoudre. Autrement dit, tant que l'on fabrique des appareils fragiles, difficiles à réparer et remplacés au bout de trois ans, les énergies renouvelables ne feront que verdir un modèle qui reste gaspilleur.\n\nFaut-il pour autant exonérer les utilisateurs ? Certainement pas. Le visionnage de vidéos représente la plus grande part du trafic de données, et les jeunes de dix-huit à vingt-quatre ans, qui en sont les plus gros consommateurs, se disent pourtant les plus prêts à changer leurs habitudes si on les informe. Le problème est donc moins la mauvaise volonté que l'ignorance : six Français sur dix avouent ne pas connaître l'impact de leurs usages. Quant au renouvellement des téléphones, il intervient en moyenne tous les trois ans, alors qu'un appareil pourrait durer plus de cinq ans. Les consommateurs détiennent ainsi, par leurs achats, un pouvoir qu'ils exercent encore trop peu.\n\nCependant, ce pouvoir est entravé. Les personnes interrogées désignent le prix des réparations comme le premier obstacle à la prolongation de la vie de leurs appareils : on ne peut pas demander à quelqu'un de garder son téléphone quand la réparation coûte presque autant qu'un neuf. De même, comment choisir le moins polluant si rien n'indique ce que chaque appareil coûte à la planète ? Une majorité de nos concitoyens se déclare favorable à un affichage obligatoire de cet impact ; voilà une mesure simple, peu coûteuse et immédiatement lisible.\n\nC'est pourquoi nous plaidons pour un partage des rôles clairement hiérarchisé. Aux fabricants, il revient de concevoir des appareils réparables, de garantir la disponibilité des pièces et de publier leur empreinte environnementale. Aux pouvoirs publics, il appartient d'imposer cette transparence et de soutenir la réparation par des aides ciblées. Aux utilisateurs, enfin, il incombe de prolonger la vie de leurs appareils, de limiter les vidéos superflues et d'exiger des comptes.\n\nAu terme de ce raisonnement, la réponse à notre question tient moins à un nom qu'à un ordre : on ne peut demander la sobriété aux utilisateurs que lorsqu'on la leur rend possible. Si le nuage a longtemps paru léger, c'est parce que nous n'en voyions pas les rouages. À nous, désormais, d'exiger qu'on les montre, et à ceux qui les construisent de les alléger.",
+    "modelo": "Sobriété numérique : à qui la tâche ?\n\nOn l'appelle « le nuage », comme si le numérique flottait au-dessus de nos têtes sans peser sur la terre. Pourtant, il absorbe près de dix pour cent de l'électricité consommée en France et il est à l'origine de près de trois pour cent de nos émissions de gaz à effet de serre. Face à ce constat, deux discours s'affrontent : l'un invite chacun à modérer ses usages, l'autre répond que l'effort doit venir des industriels. Qui, des utilisateurs ou des fabricants, doit alors porter la sobriété numérique ? Nous défendrons ici l'idée que la responsabilité est partagée, mais que le premier pas revient à ceux qui conçoivent et vendent nos appareils.\n\nReconnaissons d'abord ce que l'argument des industriels a de solide. Selon le dirigeant d'une entreprise du secteur, le numérique évite aussi des déplacements, réduit la consommation de papier et permet de mieux piloter l'énergie des bâtiments et des usines. Il ajoute que les centres de données fonctionnent de plus en plus grâce aux énergies renouvelables et que l'efficacité des équipements progresse chaque année. Ces progrès sont réels, et il serait injuste de les ignorer. Il est vrai également que culpabiliser le consommateur, ne produit guère de changements durables.\n\nMais cet optimisme ne résiste pas aux chiffres que fournit une agence publique. D'une part, c'est la fabrication des appareils, et non leur utilisation, qui pèse le plus lourd : près de quatre-vingts pour cent de l'empreinte d'un téléphone provient de sa production. Dès lors, un modèle neuf, même plus efficace, n'efface pas le poids de sa fabrication. D'autre part, les centres de données consomment une eau croissante pour se refroidir, ce qui déplace le problème au lieu de le résoudre. Autrement dit, tant que l'on fabrique des appareils fragiles, difficiles à réparer et remplacés au bout de trois ans, les énergies renouvelables ne feront que verdir un modèle qui reste gaspilleur.\n\nFaut-il pour autant exonérer les utilisateurs ? Certainement pas. Le visionnage de vidéos représente la plus grande part du trafic de données, et les jeunes de dix-huit à vingt-quatre ans, qui en sont les plus gros consommateurs, se disent pourtant les plus prêts à changer leurs habitudes si on les informe. Le problème est donc moins la mauvaise volonté que l'ignorance : six Français sur dix avouent ne pas connaître l'impact de leurs usages. Quant au renouvellement des téléphones, il intervient en moyenne tous les trois ans, alors qu'un appareil pourrait durer plus de cinq ans. Les consommateurs détiennent ainsi, par leurs achats, un pouvoir qu'ils exercent encore trop peu.\n\nCependant, ce pouvoir est entravé. Les personnes interrogées désignent le prix des réparations comme le premier obstacle à la prolongation de la vie de leurs appareils : on ne peut pas demander à quelqu'un de garder son téléphone quand la réparation coûte trop cher. De même, comment choisir le moins polluant si rien n'indique ce que chaque appareil coûte à la planète ? Une majorité de nos concitoyens se déclare favorable à un affichage obligatoire de cet impact ; voilà une mesure simple et immédiatement lisible.\n\nC'est pourquoi nous plaidons pour un partage des rôles clairement hiérarchisé. Aux fabricants, il revient de concevoir des appareils réparables, de garantir la disponibilité des pièces et de publier leur empreinte environnementale. Aux pouvoirs publics, il appartient d'imposer cette transparence et de soutenir la réparation par des aides ciblées. Aux utilisateurs, enfin, il incombe de prolonger la vie de leurs appareils, de limiter les vidéos superflues et d'exiger des comptes.\n\nAu terme de ce raisonnement, la réponse à notre question tient moins à un nom qu'à un ordre : on ne peut demander la sobriété aux utilisateurs que lorsqu'on la leur rend possible. Si le nuage a longtemps paru léger, c'est parce que nous n'en voyions pas les rouages. À nous, désormais, d'exiger qu'on les montre, et à ceux qui les construisent de les alléger.",
     "checklist": [
      "J'ai respecté le genre (article de magazine) et le destinataire (lecteurs non spécialistes), avec un titre ?",
      "Ma problématique est claire, mon plan équilibré (introduction, trois parties, conclusion) et mes transitions sont fluides ?",
@@ -2411,7 +2428,7 @@
      "resp": [
       "feront"
      ],
-     "exp": "« Tant que » + présent no condicionante e futuro na principal: « ne feront que ». Atenção: « ne... que » = apenas."
+     "exp": "« Tant que » + présent na subordinada e futuro na principal: « ne feront que ». Atenção: « ne... que » = apenas."
     },
     {
      "t": "speak",
@@ -2464,7 +2481,7 @@
      "q": "Responda em francês, em 2 ou 3 frases.",
      "frase": "Résumez votre position sur la responsabilité de la sobriété numérique.",
      "modelo": "Je pense que la responsabilité est partagée, mais que les fabricants doivent agir les premiers. On ne peut pas demander aux utilisateurs de garder leurs appareils s'ils ne sont pas réparables.",
-     "min": 20,
+     "min": 15,
      "chave": [
       "fabricants",
       "utilisateurs",

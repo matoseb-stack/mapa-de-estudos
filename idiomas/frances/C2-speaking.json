@@ -11,7 +11,7 @@
    "explicacao": [
     "No DALF C2 a banca avalia a aisance: falar sem esforço aparente, com vocabulário preciso e registro soutenu. Evite euh, bon, ben, genre e trucs.",
     "Marcadores de abertura: À vrai dire, ... ; À mon sens, ... ; Force est de constater que ... ; Il n'en demeure pas moins que ... (a ideia continua verdadeira apesar do que foi dito).",
-    "Cuidado com os falsos cognatos: actuellement = em ce moment (não 'na verdade'); sensible = sensível, impressionável; prétendre = alegar, afirmar (não 'pretender').",
+    "Cuidado com os falsos cognatos: actuellement = atualmente (não 'na verdade', que é en fait); sensible = sensível, impressionável; prétendre = alegar, afirmar (não 'pretender').",
     "No registro soutenu, algumas liaisons facultativas aparecem (il est_arrivé, pas_encore). Use poucas e com naturalidade: o excesso soa afetado."
    ],
    "vocab": [
@@ -72,7 +72,8 @@
      "t": "gap",
      "q": "Force est de ___ que la situation s'est dégradée depuis dix ans.",
      "resp": [
-      "constater"
+      "constater",
+      "reconnaître"
      ],
      "exp": "Force est de constater que = é forçoso reconhecer que. Expressão fixa, sempre com 'est' (não 'sont')."
     },
@@ -81,7 +82,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo regular e entonação expressiva.",
      "frase": "Force est de constater que le sujet est bien plus complexe qu'il n'y paraît.",
-     "exp": "Articule con-sta-TER e fais une petite pause après constater que. Mantenha o e muet de 'complexe' leve."
+     "exp": "Articule con-sta-TÊ (o « -er » final soa /e/) e faça uma pequena pausa depois de « constater que ». Mantenha o e muet de 'complexe' leve."
     },
     {
      "t": "mc",
@@ -146,7 +147,7 @@
      "q": "Responda em registro soutenu, com pelo menos duas expressões da aula, sem euh.",
      "frase": "Présentez-vous en une minute et dites ce qui vous attire dans la prise de parole en français.",
      "modelo": "Madame, Monsieur, je suis étudiante et je prépare ce diplôme depuis deux ans. À vrai dire, ce qui m'attire dans la prise de parole, c'est le défi de convaincre sans notes. Force est de constater que l'aisance ne s'improvise pas. Il n'en demeure pas moins que chaque prise de parole m'enrichit.",
-     "min": 28,
+     "min": 25,
      "chave": [
       "à vrai dire",
       "force est",
@@ -239,7 +240,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo regular e entonação expressiva.",
      "frase": "Le document que nous venons d'entendre est une interview d'une économiste qui aborde la question du télétravail.",
-     "exp": "Frase longa: respire depois de 'interview' e depois de 'économiste'. Dica: une inter-VIEW, com o v pronunciado como /v/."
+     "exp": "Frase longa: respire depois de 'interview' e depois de 'économiste'. Dica: « interview » lê-se /ɛ̃tɛʁvju/, com final em « iu »."
     },
     {
      "t": "mc",
@@ -301,8 +302,8 @@
      "modo": "responder",
      "q": "Responda com a abertura de um compte rendu, em 2 ou 3 frases, sem opinião.",
      "frase": "Vous venez d'entendre un reportage sur la disparition des librairies de quartier. Annoncez le document et son thème en deux ou trois phrases.",
-     "modelo": "Le document que nous venons d'entendre est un reportage qui aborde la disparition progressive des librairies de quartier. Il s'agit d'un phénomène que le journaliste illustre par le témoignage de plusieurs libraires. Dans un premier temps, il en expose les causes économiques.",
-     "min": 28,
+     "modelo": "Le document que nous venons d'entendre est un reportage qui aborde la disparition progressive des librairies de quartier. Il s'agit d'un phénomène que le journaliste examine en plusieurs temps. Dans un premier temps, il en rappelle le contexte.",
+     "min": 19,
      "chave": [
       "document",
       "reportage",
@@ -323,7 +324,7 @@
    "foco": "Verbes introducteurs ; discours indirect ; concordance des temps",
    "explicacao": [
     "Em vez de repetir 'il dit que', varie conforme a atitude do locutor: affirmer, souligner, faire valoir que, soutenir que, concéder que, déplorer que (+ subjonctif), s'insurger contre.",
-    "Prétendre que = alegar (frequentemente com dúvida). Para 'pretender fazer', diga compter ou avoir l'intention de. Outro falso cognato: se rappeler/se souvenir (lembrar-se), não 'recordar'.",
+    "Prétendre que = alegar (frequentemente com dúvida). Para 'pretender fazer', diga compter ou avoir l'intention de. Para 'lembrar-se', use se rappeler ou se souvenir de.",
     "No discurso indireto no passado, o futuro vira conditionnel: « Je viendrai » → Il a dit qu'il viendrait. O passé composé vira plus-que-parfait: « J'ai échoué » → Il a reconnu qu'il avait échoué.",
     "Verbos de sentimento como déplorer, regretter, s'étonner exigem que + subjonctif: Elle déplore que les élèves lisent si peu."
    ],
@@ -395,7 +396,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo regular e entonação expressiva.",
      "frase": "L'enseignant fait valoir que l'élève risque de perdre l'habitude de l'effort.",
-     "exp": "Faire valoir = argumentar. Pronúncia: 'fait' /fɛ/ ligado a 'valoir'. Atenção ao u de 'habitude' (som /y/)."
+     "exp": "Faire valoir = argumentar. Pronúncia: 'fait' /fɛ/, sem ligação com 'valoir'. Atenção ao u de 'habitude' (som /y/)."
     },
     {
      "t": "mc",
@@ -458,7 +459,7 @@
      "q": "Use pelo menos três verbos diferentes e feche com uma frase de síntese.",
      "frase": "Deux intervenants débattent : l'un juge l'intelligence artificielle dangereuse à l'école, l'autre la juge utile. Rapportez leurs positions avec des verbes variés.",
      "modelo": "Le premier intervenant s'insurge contre l'usage de l'intelligence artificielle en classe : il soutient que les élèves perdront le goût de l'effort et il déplore qu'on ne leur apprenne plus à rédiger. Le second concède que le risque existe, mais il fait valoir que cet outil peut aider les élèves en difficulté.",
-     "min": 30,
+     "min": 26,
      "chave": [
       "soutient",
       "fait valoir",
@@ -543,14 +544,14 @@
      "resp": [
       "flambée"
      ],
-     "exp": "Flamber → la flambée. Substantivos femininos em -ée: la montée, la chute, la hausse (mas 'le recul' é masculino)."
+     "exp": "Flamber → la flambée. Substantivos femininos: la flambée, la montée, la chute, la hausse (mas 'le recul' é masculino)."
     },
     {
      "t": "speak",
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo regular e entonação expressiva.",
      "frase": "On assiste à un essor spectaculaire du travail à distance, alors que la présence au bureau recule.",
-     "exp": "Ligue 'on assiste' (on-nassiste). Em 'essor' o r final é vibrante. Uma pausa antes de 'alors que'."
+     "exp": "Ligue 'on assiste' (on-nassiste). Em 'essor' o r final é o r francês (de garganta). Uma pausa antes de 'alors que'."
     },
     {
      "t": "mc",
@@ -587,7 +588,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo regular e entonação expressiva.",
      "frase": "La prise de conscience écologique a profondément transformé les habitudes de consommation.",
-     "exp": "Prise de conscience: 'conscience' tem som nasal /ɑ̃/ + /s/. Ritmo: 4 grupos de sentido."
+     "exp": "Prise de conscience: 'conscience' /kɔ̃sjɑ̃s/ tem duas nasais (/ɔ̃/ e /ɑ̃/). Ritmo: 4 grupos de sentido."
     },
     {
      "t": "gap",
@@ -615,7 +616,7 @@
      "q": "Evite 'parce que'. Use ao menos duas nominalizações (ex.: le manque d'emplois, l'attrait des services).",
      "frase": "Expliquez, en nominalisant, pourquoi les jeunes quittent les campagnes pour la ville.",
      "modelo": "Le départ des jeunes s'explique par le manque d'emplois qualifiés et par l'attrait des services urbains. Il en résulte un vieillissement des campagnes, ce qui entraîne la fermeture des écoles et des commerces.",
-     "min": 23,
+     "min": 16,
      "chave": [
       "départ",
       "manque",
@@ -745,7 +746,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo regular e entonação expressiva.",
      "frase": "Au-delà du constat, c'est la question de la responsabilité collective qui se trouve posée.",
-     "exp": "Frase clivée (c'est ... qui). Ênfase em 'responsabilité collective'. Ligue 'au-delà du'."
+     "exp": "Frase clivée (c'est ... qui). Ênfase em 'responsabilité collective'. Diga 'au-delà du constat' sem pausa."
     },
     {
      "t": "gap",
@@ -765,7 +766,7 @@
       "justement"
      ],
      "r": 0,
-     "exp": "Actuellement = atualmente (falso cognato de 'na verdade', que é en réalité / en fait)."
+     "exp": "Actuellement = atualmente (não confunda com 'na verdade', que é en réalité / en fait)."
     },
     {
      "t": "speak",
@@ -773,7 +774,7 @@
      "q": "Formule a problemática com 'dans quelle mesure' ou 'en quoi' e destaque a tensão.",
      "frase": "Un reportage montre que les jeunes lisent moins de livres mais écrivent davantage sur les réseaux sociaux. Quelle est, selon vous, la problématique du document ?",
      "modelo": "La problématique est la suivante : dans quelle mesure l'écriture sur les réseaux sociaux peut-elle compenser le recul de la lecture longue ? Au cœur du débat se trouve donc une tension entre la quantité de textes produits et la profondeur de la pensée qu'ils expriment.",
-     "min": 28,
+     "min": 23,
      "chave": [
       "dans quelle mesure",
       "problématique",
@@ -795,7 +796,7 @@
    "explicacao": [
     "Na 2ª parte da prova você expõe uma opinião argumentada a partir da problemática. Estrutura: accroche, problématique, thèse, annonce du plan, 2 ou 3 parties, conclusion com ouverture.",
     "Transições que organizam o raciocínio: Ceci étant dit, ... ; Venons-en à ... ; Reste à savoir si ... ; Passons à présent à ... Evite 'bom, então' e 'depois'.",
-    "Conclusão: En définitive, ... ; Somme toute, ... ; Pour conclure, ... Atenção: finalement indica o resultado de um processo (Il a finalement renoncé), não é só 'finalmente'.",
+    "Conclusão: En définitive, ... ; Somme toute, ... ; Pour conclure, ... Atenção: finalement = por fim, depois de hesitações (Il a finalement renoncé); para fechar um texto, prefira En définitive.",
     "O subjonctif é obrigatório depois de il faut que, pour que, afin que, bien que: Il faut que nous repensions notre rapport au temps ; pour que chacun puisse s'exprimer."
    ],
    "vocab": [
@@ -930,7 +931,7 @@
      "q": "Em 3 a 4 frases: tese clara + plano em dois tempos, com um subjonctif.",
      "frase": "Faut-il enseigner l'art du débat à l'école ? Présentez votre thèse et annoncez votre plan.",
      "modelo": "Je soutiendrai ici qu'il faut enseigner l'art du débat à l'école. Je procéderai en deux temps : d'abord, ce que cet apprentissage apporte à l'élève ; ensuite, les conditions pour qu'il ne se réduise pas à un simple concours d'éloquence. Il faut que chacun puisse s'exprimer sans crainte.",
-     "min": 30,
+     "min": 24,
      "chave": [
       "je soutiendrai",
       "thèse",
@@ -953,7 +954,7 @@
     "Concessão simples: Certes, ... mais / cependant / il n'en demeure pas moins que ... Concessão com subjonctif: Bien que / Quoique + subjonctif (Quoique l'argument paraisse séduisant, ...).",
     "Estruturas de C2: Si brillant soit-il, ... ; Quelque brillants qu'ils soient, ... ; Tout intelligent qu'il soit, ... (+ subjonctif). Hipótese concessiva: Quand bien même il aurait raison, ... (+ conditionnel).",
     "Or não é 'ouro': é um conector que introduz o fato que faz o raciocínio virar. Il promet des économies ; or les coûts ont doublé. Em revanche = em contrapartida (compara), au contraire = ao contrário (nega).",
-    "Cuidado: bien que nunca vem com indicativo, mesmo que 'embora' em português pareça natural com indicativo no oral. Malgré que também é considerado incorreto no registro soutenu."
+    "Cuidado: bien que pede sempre subjuntivo, como « embora » em português (« embora ele tenha »). Malgré que também é considerado incorreto no registro soutenu."
    ],
    "vocab": [
     {
@@ -1023,7 +1024,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo regular e entonação expressiva.",
      "frase": "Certes, les réseaux sociaux élargissent le débat public ; il n'en demeure pas moins qu'ils le fragmentent.",
-     "exp": "Pausa no ponto e vírgula. Mantenha 'il n'en demeure pas moins' como um bloco: i-lnan-de-meur."
+     "exp": "Pausa no ponto e vírgula. Mantenha « il n'en demeure pas moins » como um bloco: /il nɑ̃ dəmœʁ pa mwɛ̃/."
     },
     {
      "t": "mc",
@@ -1088,7 +1089,7 @@
      "q": "Comece com 'certes', nuance com 'il n'en demeure pas moins', e use um subjonctif.",
      "frase": "Les réseaux sociaux rendent-ils les citoyens plus libres ? Répondez en reconnaissant d'abord un point, puis en nuançant.",
      "modelo": "Certes, les réseaux sociaux donnent la parole à ceux qu'on n'entendait pas auparavant. Il n'en demeure pas moins que les algorithmes orientent ce que nous voyons. Quoique la liberté d'expression paraisse élargie, la liberté de choisir reste limitée, car l'information est triée à notre place.",
-     "min": 30,
+     "min": 22,
      "chave": [
       "certes",
       "il n'en demeure",
@@ -1152,7 +1153,7 @@
      "Près de la moitié ... ; la part de ... est passée de ... à ...",
      "Si l'on avait ..., on aurait ..."
     ],
-    "modelo": "Prenons le cas du Portugal : près d'un jeune diplômé sur cinq a quitté le pays pour trouver un emploi à la hauteur de sa formation. La part des étudiants partant à l'étranger est passée de 12 % à 30 % en dix ans, ce qui montre que la mobilité n'est plus une exception. Certes, cette expérience enrichit les individus ; mais si les pays d'origine avaient investi plus tôt dans la recherche, ils auraient sans doute retenu leurs meilleurs talents. Les mesures qu'on aurait dû prendre n'ont jamais été appliquées. La mobilité devient alors une chance seulement lorsqu'elle est réversible."
+    "modelo": "Prenons le cas d'un petit pays que j'imagine ici : près d'un jeune diplômé sur cinq l'a quitté pour trouver un emploi à la hauteur de sa formation. La part des étudiants partant à l'étranger y est passée de 12 % à 30 % en dix ans, ce qui montre que la mobilité n'est plus une exception. Certes, cette expérience enrichit les individus ; mais si les pays d'origine avaient investi plus tôt dans la recherche, ils auraient sans doute retenu leurs meilleurs talents. Les mesures qu'on aurait dû prendre n'ont jamais été appliquées. La mobilité devient alors une chance seulement lorsqu'elle est réversible."
    },
    "exercicios": [
     {
@@ -1246,7 +1247,7 @@
      "q": "Dê um exemplo (pode inventar de forma plausível), um dado e um conditionnel passé.",
      "frase": "Selon vous, les études à l'étranger sont-elles une chance ou une fuite des cerveaux ? Illustrez par un exemple et un chiffre.",
      "modelo": "Prenons le cas d'un jeune ingénieur qui part étudier en Allemagne : près d'un étudiant sur trois ne rentre pas dans son pays d'origine. Si son pays avait investi dans la recherche, il aurait peut-être choisi de rester. La mobilité est donc une chance pour l'individu, mais un risque pour la collectivité.",
-     "min": 30,
+     "min": 26,
      "chave": [
       "prenons le cas",
       "sur trois",
@@ -1338,7 +1339,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo regular e entonação expressiva.",
      "frase": "J'irais même jusqu'à dire que cette mesure est la condition de toute réforme durable.",
-     "exp": "Ênfase em 'même' e em 'condition'. Ligue 'j'irais' /ʒiʁɛ/ sem pronunciar o s."
+     "exp": "Ênfase em 'même' e em 'condition'. Pronuncie « j'irais » /ʒiʁɛ/, sem o s final."
     },
     {
      "t": "mc",
@@ -1401,7 +1402,7 @@
      "q": "Reformule, mantenha a tese e use 'j'irais même jusqu'à dire'.",
      "frase": "Ne trouvez-vous pas votre proposition un peu utopique ? Défendez-la avec fermeté.",
      "modelo": "Si je vous comprends bien, vous me demandez si ma proposition est réaliste. Je maintiens qu'elle l'est, et j'irais même jusqu'à dire qu'elle est indispensable. À cet égard, les expériences menées ailleurs montrent qu'une réforme ambitieuse peut réussir si elle est progressive.",
-     "min": 29,
+     "min": 21,
      "chave": [
       "si je vous comprends bien",
       "je maintiens",
@@ -1521,7 +1522,7 @@
       "raisonnement"
      ],
      "resp": "C'est là que le bât blesse dans votre raisonnement",
-     "exp": "Là où le bât blesse = o ponto fraco. 'Bât' é o selo do burro: expressão idiomática."
+     "exp": "Là où le bât blesse = o ponto fraco. 'Bât' é a albarda (sela de carga) do burro: expressão idiomática."
     },
     {
      "t": "speak",
@@ -1557,7 +1558,7 @@
      "q": "Reconheça algo, nomeie a falha e dê um fato. Mantenha a cortesia.",
      "frase": "Un membre du jury affirme : « Les écrans rendent les jeunes moins intelligents. » Réfutez cette affirmation avec élégance.",
      "modelo": "Permettez-moi de ne pas partager cette analyse. Sans vouloir caricaturer votre propos, vous passez d'un constat limité à une conclusion générale : c'est une généralisation hâtive. Force est de constater que les études ne montrent pas de lien de cause à effet. Je ne suis donc pas certain que cet argument soit solide.",
-     "min": 30,
+     "min": 26,
      "chave": [
       "permettez-moi",
       "sans vouloir",
@@ -1714,7 +1715,7 @@
      "q": "Reconheça a limite e depois mude de escala (local → global, individual → coletivo).",
      "frase": "Votre exemple ne vaut que pour les pays riches, n'est-ce pas ? Reconnaissez la limite, puis changez d'échelle.",
      "modelo": "Vous touchez là un point sensible, et je reconnais volontiers que mon exemple a ses limites. Dans une certaine mesure, il vaut surtout pour des pays dotés d'un système éducatif solide. Mais si l'on change d'échelle, ce sont précisément les pays aux ressources limitées qui ont le plus à y gagner.",
-     "min": 30,
+     "min": 25,
      "chave": [
       "je reconnais",
       "limites",
@@ -1778,7 +1779,7 @@
      "Ce raisonnement ne tient pas la route.",
      "Cette étude a mis en lumière ..."
     ],
-    "modelo": "Je suis favorable au droit à la déconnexion, et cette position n'a rien de provocateur. Une récente étude a mis en lumière l'ampleur de l'épuisement professionnel : elle a jeté un pavé dans la mare en montrant que près d'un salarié sur trois répondait à des messages le soir. Pour beaucoup, c'était la goutte d'eau qui faisait déborder le vase. On objecte que certaines entreprises ont tiré leur épingle du jeu sans ce droit ; mais cet argument ne tient pas la route, car il confond la performance d'une organisation et la santé de ses salariés. Je reste convaincue que le repos n'est pas un luxe : c'est une condition de la productivité."
+    "modelo": "Je suis favorable au droit à la déconnexion, et cette position n'a rien de provocateur. Une récente étude a mis en lumière l'ampleur de l'épuisement professionnel : elle a jeté un pavé dans la mare en montrant que de nombreux salariés répondaient à des messages le soir. Pour beaucoup, c'était la goutte d'eau qui faisait déborder le vase. On objecte que certaines entreprises ont tiré leur épingle du jeu sans ce droit ; mais cet argument ne tient pas la route, car il confond la performance d'une organisation et la santé de ses salariés. Je reste convaincue que le repos n'est pas un luxe : c'est une condition de la productivité."
    },
    "exercicios": [
     {
@@ -1871,7 +1872,7 @@
      "q": "Use uma expressão da aula e mantenha o registro soutenu do início ao fim.",
      "frase": "Les entreprises doivent-elles garantir un droit à la déconnexion ? Répondez en employant au moins une expression idiomatique, en registre soutenu.",
      "modelo": "Je suis favorable à ce droit : une étude récente a jeté un pavé dans la mare en montrant l'ampleur de l'épuisement professionnel. Pour beaucoup de salariés, les messages du soir étaient la goutte d'eau qui faisait déborder le vase. Le repos n'est pas un luxe, c'est une condition de la productivité.",
-     "min": 30,
+     "min": 26,
      "chave": [
       "jeté un pavé",
       "goutte d'eau",
@@ -2026,7 +2027,7 @@
      "q": "Faça pausas antes das ideias importantes e varie a melodia. O conteúdo vem em segundo plano.",
      "frase": "Plaidez en une minute pour la lecture à voix haute à l'école, en soignant votre intonation et vos pauses.",
      "modelo": "Madame, Monsieur, lire à voix haute, ce n'est pas seulement déchiffrer, c'est donner corps aux idées. Quand un élève lit devant ses camarades, il apprend le rythme, l'intonation et la patience. C'est absolument essentiel pour qu'il devienne un citoyen qui sait écouter.",
-     "min": 28,
+     "min": 21,
      "chave": [
       "lire",
       "voix haute",
@@ -2090,7 +2091,7 @@
      "Voilà une question qui mérite réflexion.",
      "Cela me ramène à ..."
     ],
-    "modelo": "Permettez-moi de rectifier : je n'ai pas dit que l'école devait supprimer les notes, mais qu'il fallait repenser leur rôle. Voilà une question qui mérite réflexion, car supprimer les notes sans alternative serait en effet risqué. Je doute que la note soit le meilleur outil pour motiver, mais je ne suis pas sûr non plus que son absence suffise à régler le problème. Cela me ramène à ma thèse initiale : l'évaluation doit éclairer l'élève, non le classer. Pourriez-vous préciser si vous visez l'école primaire ou le lycée ? La réponse éventuelle dépendrait de l'âge des élèves."
+    "modelo": "Permettez-moi de rectifier : je n'ai pas dit que l'école devait supprimer les notes, mais qu'il fallait repenser leur rôle. Voilà une question qui mérite réflexion, car supprimer les notes sans alternative serait en effet risqué. Je doute que la note soit le meilleur outil pour motiver, mais je ne suis pas sûr non plus que son absence suffise à régler le problème. Cela me ramène à ma thèse initiale : l'évaluation doit éclairer l'élève, non le classer. Pourriez-vous préciser si vous visez l'école primaire ou le lycée ? La réponse dépendrait sans doute de l'âge des élèves."
    },
    "exercicios": [
     {
@@ -2131,7 +2132,7 @@
       "certainement"
      ],
      "r": 0,
-     "exp": "Éventuellement (falso cognato de 'eventualmente') = se for o caso, possivelmente."
+     "exp": "Éventuellement = se for o caso, possivelmente (não é 'finalmente', como o inglês 'eventually')."
     },
     {
      "t": "order",
@@ -2182,7 +2183,7 @@
      "q": "Retifique a premissa (você só disse que é preciso repensar o papel das notas) e responda sobre o mérito.",
      "frase": "Vous avez dit que l'école devrait supprimer les notes. N'est-ce pas dangereux ?",
      "modelo": "Permettez-moi de rectifier : je n'ai pas dit qu'il fallait supprimer les notes, mais en repenser le rôle. Voilà une question qui mérite réflexion, car les supprimer sans alternative serait risqué. Je doute que la note soit le meilleur outil pour motiver les élèves.",
-     "min": 30,
+     "min": 22,
      "chave": [
       "rectifier",
       "je n'ai pas dit",
@@ -2246,7 +2247,7 @@
      "Certes, ... ; il n'en demeure pas moins que ...",
      "Sans vouloir caricaturer votre propos, ..."
     ],
-    "modelo": "Le document que nous venons d'entendre est une interview d'une juriste qui aborde la question du droit à l'oubli numérique. Dans un premier temps, elle rappelle que la mémoire infinie d'Internet peut devenir un fardeau. Elle expose ensuite le débat : certains défendent le droit à l'oubli, d'autres s'en inquiètent pour la liberté d'informer. En dernier lieu, elle plaide pour une solution médiane, au cas par cas. La problématique est la suivante : dans quelle mesure peut-on effacer le passé numérique sans porter atteinte à l'intérêt public ? Je soutiendrai qu'il faut protéger la vie privée, mais jamais l'histoire. Certes, chacun mérite une seconde chance ; il n'en demeure pas moins que le débat public a besoin de mémoire. Si le jury objecte que c'est de la censure, je répondrai, sans vouloir caricaturer son propos, que la censure interdit à la source, alors que le déréférencement laisse l'information accessible dans les archives."
+    "modelo": "Le document que nous venons d'entendre est un reportage qui aborde la question du droit à l'oubli numérique et rapporte les propos d'une juriste. Dans un premier temps, elle rappelle que la mémoire infinie d'Internet peut devenir un fardeau. Elle expose ensuite le débat : certains défendent le droit à l'oubli, d'autres s'en inquiètent pour la liberté d'informer. En dernier lieu, elle plaide pour une solution médiane, au cas par cas. La problématique est la suivante : dans quelle mesure peut-on effacer le passé numérique sans porter atteinte à l'intérêt public ? Je soutiendrai qu'il faut protéger la vie privée, mais jamais l'histoire. Certes, chacun mérite une seconde chance ; il n'en demeure pas moins que le débat public a besoin de mémoire. Si le jury objecte que c'est de la censure, je répondrai, sans vouloir caricaturer son propos, que la censure interdit à la source, alors que le déréférencement laisse l'information accessible dans les archives."
    },
    "exercicios": [
     {
@@ -2289,7 +2290,7 @@
      "modo": "responder",
      "q": "Compte rendu fiel: natureza, tema, plano em 3 tempos, verbos de parole variados e sem 'je pense'.",
      "frase": "Faites le compte rendu oral du document : nature, thème et trois idées principales, sans opinion personnelle.",
-     "modelo": "Le document que nous venons d'entendre est une interview d'une juriste qui aborde la question du droit à l'oubli numérique. Dans un premier temps, elle rappelle que la mémoire infinie d'Internet peut devenir un fardeau. Elle expose ensuite le débat entre partisans et détracteurs. En dernier lieu, elle plaide pour une solution médiane, au cas par cas.",
+     "modelo": "Le document que nous venons d'entendre est un reportage qui aborde la question du droit à l'oubli numérique et rapporte les propos d'une juriste. Dans un premier temps, elle rappelle que la mémoire infinie d'Internet peut devenir un fardeau. Elle expose ensuite le débat entre partisans et détracteurs. En dernier lieu, elle plaide pour une solution médiane, au cas par cas.",
      "min": 30,
      "chave": [
       "document",
@@ -2299,7 +2300,8 @@
       "dans un premier temps",
       "en dernier lieu",
       "solution médiane",
-      "fardeau"
+      "fardeau",
+      "reportage"
      ],
      "exp": "Natureza + tema + 3 ideias + conclusão. Nada de 'je pense que'."
     },
@@ -2407,7 +2409,7 @@
      "q": "Débat: reformule, concede, refuta com elegância (sem atacar a pessoa) e, se possível, mude de escala.",
      "frase": "Le droit à l'oubli n'est-il pas une forme de censure ? Réfutez avec élégance et nuancez votre réponse.",
      "modelo": "Si je vous comprends bien, vous y voyez une forme de censure. Permettez-moi de ne pas partager entièrement cette analyse : la censure supprime l'information à la source, alors que le déréférencement la laisse accessible aux archives. Certes, la frontière est floue, mais si l'on change d'échelle, c'est la dignité des personnes qui est en jeu.",
-     "min": 30,
+     "min": 28,
      "chave": [
       "si je vous comprends bien",
       "permettez-moi",
