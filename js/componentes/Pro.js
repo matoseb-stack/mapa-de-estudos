@@ -98,10 +98,19 @@
       } catch (err) { btn.disabled = false; btn.textContent = txt; erro(err && err.message ? err.message : "Não foi possível agora. Tente de novo."); }
     });
   }
+  // abre o grupo no mesmo toque: se o link já foi buscado, abre na hora (o navegador não bloqueia);
+  // se ainda não, busca e abre na mesma aba (no celular, o WhatsApp abre direto)
   async function abrirGrupo(app, botao) {
+    const pronto = app.linkGrupoPronto && app.linkGrupoPronto();
+    if (pronto) { const w = window.open(pronto, "_blank", "noopener"); if (!w) location.href = pronto; return; }
     const txt = botao ? botao.textContent : ""; if (botao) { botao.disabled = true; botao.textContent = "Abrindo…"; }
-    try { const link = await app.linkGrupo(); if (link) { window.open(link, "_blank", "noopener"); } else app.toast("O link do grupo será liberado em breve. Avisamos por aqui!"); }
-    catch (e) { app.toast("Não foi possível abrir o grupo agora."); }
+    try {
+      const link = await app.linkGrupo();
+      if (link) location.href = link;
+      else app.toast("O link do grupo ainda não foi configurado. Avisamos assim que estiver pronto!");
+    } catch (e) {
+      app.toast(e && e.code === "permission-denied" ? "Ative o teste grátis ou o Pro para entrar no grupo." : "Não foi possível abrir o grupo agora. Confira sua internet.");
+    }
     if (botao) { botao.disabled = false; botao.textContent = txt; }
   }
 

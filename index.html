@@ -1082,7 +1082,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/ExercicioIdioma.js?v=2.4"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.4"></script>
 <script src="js/componentes/IdiomasView.js?v=2.4"></script>
-<script src="js/componentes/Pro.js?v=2.6"></script>
+<script src="js/componentes/Pro.js?v=2.7"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
 
@@ -2341,7 +2341,7 @@ const LIMITE_IA_GRATIS=3;
 function iniciarAssinatura(){
   S.pro=null;S.teste=null;S.testeOk=false;const eraPro=()=>ehPro();
   S.unsub.push(S.db.collection("testes").doc(S.uid).onSnapshot(d=>{if(d.metadata.hasPendingWrites)return;S.teste=d.exists?d.data():null;S.testeOk=true;
-    renderSideUser();LAComp.Pro.anuncios(appPro);if(S.view==="pro")renderPro()},e=>{console.warn("teste",e&&e.code);S.testeOk=true}));
+    renderSideUser();LAComp.Pro.anuncios(appPro);if(S.view==="pro")renderPro();if(ehPro())linkGrupoWhatsApp().catch(()=>{})},e=>{console.warn("teste",e&&e.code);S.testeOk=true}));
   S.unsub.push(S.db.collection("assinaturas").doc(S.uid).onSnapshot(d=>{const antes=eraPro();S.pro=d.exists?d.data():null;
     if(!antes&&ehPro()&&S.aguardandoPro){S.aguardandoPro=false;toast("Pagamento aprovado! Seu Logic Academy Pro está ativo. 🎉")}
     renderSideUser();LAComp.Pro.anuncios(appPro);if(S.view==="pro")renderPro();
@@ -2367,11 +2367,18 @@ async function ativarTeste(numero){
   b.set(S.db.collection("telefones").doc(numero),{uid:S.uid,em:FV.serverTimestamp(),termos:TERMOS_TESTE});
   b.set(S.db.collection("testes").doc(S.uid),{inicio:FV.serverTimestamp(),aceitoEm:FV.serverTimestamp(),telefone:numero,termos:TERMOS_TESTE});
   try{await b.commit()}catch(e){console.warn("teste",e&&e.code);throw new Error(e&&e.code==="permission-denied"?"Esse celular ou esta conta já usaram o teste grátis.":"Não foi possível ativar o teste agora. Tente de novo.")}
-  S.teste={inicio:Date.now(),telefone:numero};LAComp.Pro.anuncios(appPro);renderSideUser();if(S.view==="pro")renderPro()}
-async function linkGrupoWhatsApp(){const d=await S.db.collection("privado").doc("whatsapp").get();const l=d.exists&&d.data().link;return /^https:\/\/chat\.whatsapp\.com\//.test(l||"")?l:null}
+  S.teste={inicio:Date.now(),telefone:numero};linkGrupoWhatsApp().catch(()=>{});LAComp.Pro.anuncios(appPro);renderSideUser();if(S.view==="pro")renderPro()}
+// link do grupo: aceita espaços e quebras de linha em volta e "http://" (vira https); guardado em S.linkGrupo para abrir no mesmo toque
+async function linkGrupoWhatsApp(){
+  if(S.linkGrupo)return S.linkGrupo;
+  const d=await S.db.collection("privado").doc("whatsapp").get();
+  let l=String(d.exists&&d.data().link||"").trim().replace(/^http:\/\//i,"https://");
+  if(/^chat\.whatsapp\.com\//i.test(l))l="https://"+l;
+  if(!/^https:\/\/chat\.whatsapp\.com\/\S+$/i.test(l)){console.warn("link do grupo inválido ou ausente");return null}
+  return S.linkGrupo=l}
 const appPro={esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),go:v=>go(v),
   ehPro:()=>ehPro(),assinatura:()=>S.pro?{plano:S.pro.plano,ate:tsMs(S.pro.ate)}:null,logado:()=>FBM()&&!!S.uid,pagar:p=>pagarPro(p),
-  podeTestar:()=>podeTestar(),testeAte:()=>testeAte(),ativarTeste:n=>ativarTeste(n),linkGrupo:()=>linkGrupoWhatsApp()};
+  podeTestar:()=>podeTestar(),testeAte:()=>testeAte(),ativarTeste:n=>ativarTeste(n),linkGrupo:()=>linkGrupoWhatsApp(),linkGrupoPronto:()=>S.linkGrupo||null};
 function renderPro(){LAComp.Pro.render($("#main"),appPro)}
 // volta do Mercado Pago (?pro=ok|pendente|erro)
 (function(){try{const q=new URLSearchParams(location.search),r=q.get("pro");if(!r)return;
