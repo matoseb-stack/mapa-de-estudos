@@ -386,7 +386,6 @@
      "resp": [
       "alors que",
       "tandis que",
-      "et que",
       "et"
      ],
      "exp": "Alors que / tandis que = 'enquanto' (oposição paralela entre duas informações). Atenção: 'alors que' não é 'então que'."
@@ -408,7 +407,7 @@
       "Il annonce la conclusion de l'article."
      ],
      "r": 1,
-     "exp": "'Or' é um conector de argumentação: os setores que não podem fechar são justamente os que mais reclamam. Complica a ideia anterior. Não significa 'ou' (= ou), que se escreve 'ou'."
+     "exp": "'Or' é um conector de argumentação: os setores que não podem fechar são justamente os que mais reclamam, o que complica a ideia anterior. Não significa 'ou' (que em francês é 'ou', sem acento); 'or' como substantivo é 'ouro'."
     },
     {
      "t": "order",
@@ -473,7 +472,8 @@
      "resp": [
       "possible",
       "envisageable",
-      "hypothétique"
+      "hypothétique",
+      "potentielle"
      ],
      "exp": "Falso cognato: 'éventuel' = possível, hipotético. Em português, 'eventual' costuma indicar 'ocasional', mas o sentido francês é outro."
     }
@@ -742,7 +742,7 @@
       "publics"
      ],
      "resp": "La réduction de la sédentarité suppose un engagement des pouvoirs publics",
-     "exp": "Frase toda nominalizada: réduction (de réduire), engagement (de s'engager). Supposer = exigir, pressupor (não 'supor')."
+     "exp": "Frase toda nominalizada: réduction (de réduire), engagement (de s'engager). Supposer = pressupor, implicar (nesse contexto, não é 'supor' no sentido de imaginar)."
     },
     {
      "t": "gap",
@@ -804,7 +804,7 @@
     "Voz passiva = être + particípio passado, que concorda com o sujeito: Les rivières ont été nettoyées. O tempo do verbo être é o tempo da frase ativa.",
     "O agente vem com par (Le rapport est publié par l'Agence). Com verbos de estado ou sentimento usa-se de: bordé de béton, entouré de, connu de.",
     "Em textos formais a passiva é muito comum: serve para falar do que foi feito sem dizer quem fez. Na prova, pergunte: quem faz a ação?",
-    "Alternativa: on + verbo ativo, ou se faire + infinitivo. Cuidado: 'il a été fait' não é 'ele foi feito' no sentido de 'ele se tornou'."
+    "Alternativa à passiva: on + verbo ativo (On a nettoyé les rivières). Cuidado com se faire + infinitivo (Il s'est fait voler): é algo sofrido pelo sujeito, não uma ação que ele escolhe."
    ],
    "vocab": [
     {
@@ -863,7 +863,7 @@
      "resp": [
       "nettoyées"
      ],
-     "exp": "Passiva com avoir/être: o particípio concorda com o sujeito 'rivières' (feminino plural): nettoyées.",
+     "exp": "Passiva no passé composé: ont été + particípio passado, que concorda com o sujeito 'rivières' (feminino plural): nettoyées.",
      "dica": "NETTOYER"
     },
     {
@@ -1098,7 +1098,7 @@
       "Le désir de changer de métier."
      ],
      "r": 0,
-     "exp": "Déception = decepção. 'Enganar' é tromper; 'tromperie' = engano. Em português, 'decepção' pode confundir com 'deception' do inglês."
+     "exp": "Déception = decepção, igual ao português. O falso amigo é para quem sabe inglês: 'deception' = engano, que em francês é tromperie."
     },
     {
      "t": "gap",
@@ -1157,7 +1157,7 @@
    ],
    "material": {
     "titulo": "Les musées cherchent un nouveau public",
-    "texto": "Les musées français, dont la fréquentation avait chuté pendant la crise sanitaire, cherchent aujourd'hui à séduire un public plus jeune. Parmi les initiatives lancées cette année figure le « samedi nocturne », durant lequel certains établissements restent ouverts jusqu'à minuit. Le Musée d'art moderne de Lyon, auquel on reproche souvent son austérité, y organise des concerts et des ateliers.\n\nLes responsables du projet expliquent qu'ils ont d'abord interrogé les visiteurs potentiels, parmi lesquels beaucoup de moins de trente ans. Le principal obstacle cité n'était pas le prix, contre lequel plusieurs mesures avaient déjà été prises, mais l'impression que le musée est un lieu solennel où l'on n'a pas sa place. « Il fallait changer l'image du musée, à laquelle trop de jeunes restent attachés : celle d'un lieu froid et silencieux », résume la directrice.\n\nCette ouverture ne fait pourtant pas l'unanimité. Certains conservateurs, pour lesquels la mission première d'un musée est de protéger les œuvres, redoutent que le bruit et la foule ne les abîment. Ils rappellent aussi l'importance des moyens financiers, sans lesquels aucune politique culturelle ne peut durer. Les subventions publiques, sur lesquelles les établissements comptent depuis toujours, ont baissé de 8 % en cinq ans.\n\nLes premiers résultats sont toutefois favorables : le nombre de visiteurs de moins de vingt-cinq ans a augmenté de 40 % lors des soirées dont le programme comprenait de la musique. Reste à savoir si ces nouveaux venus reviendront en dehors des événements, ce qui est la condition d'un véritable changement. Les responsables du projet, eux, restent optimistes : ils estiment que la curiosité est un public que l'on ne perd pas facilement une fois qu'on l'a conquis."
+    "texto": "Les musées français, dont la fréquentation avait chuté pendant la crise sanitaire, cherchent aujourd'hui à séduire un public plus jeune. Parmi les initiatives lancées cette année figure le « samedi nocturne », durant lequel certains établissements restent ouverts jusqu'à minuit. Le Musée d'art moderne de Lyon, auquel on reproche souvent son austérité, y organise des concerts et des ateliers.\n\nLes responsables du projet expliquent qu'ils ont d'abord interrogé les visiteurs potentiels, parmi lesquels beaucoup de moins de trente ans. Le principal obstacle cité n'était pas le prix, contre lequel plusieurs mesures avaient déjà été prises, mais l'impression que le musée est un lieu solennel où l'on n'a pas sa place. « Il fallait changer l'image du musée, à laquelle trop de jeunes restent attachés : celle d'un lieu froid et silencieux », résume la directrice.\n\nCette ouverture ne fait pourtant pas l'unanimité. Certains conservateurs, pour lesquels la mission première d'un musée est de protéger les œuvres, redoutent que le bruit et la foule ne les abîment. Ils rappellent aussi l'importance des moyens financiers, sans lesquels aucune politique culturelle ne peut durer. Les subventions publiques, sur lesquelles les établissements comptent depuis toujours, ont baissé de 8 % en cinq ans.\n\nLes premiers résultats sont toutefois favorables : le nombre de visiteurs de moins de vingt-cinq ans a augmenté de 40 % lors des soirées dont le programme comprenait de la musique. Reste à savoir si ces nouveaux venus reviendront en dehors des événements, ce qui est la condition d'un véritable changement. Les responsables du projet, eux, restent optimistes : ils estiment qu'un public conquis par la curiosité ne s'en détourne pas facilement."
    },
    "exercicios": [
     {
@@ -1475,7 +1475,7 @@
    ],
    "material": {
     "titulo": "Le bénévolat, une force discrète",
-    "texto": "Hier soir, à Lille, l'association « Main tendue » a fêté ses vingt ans. Sa présidente, Nadia Berthier, a raconté comment tout avait commencé. « En 2004, j'étais infirmière et je voyais chaque jour des personnes isolées qui n'avaient personne à qui parler. J'ai pensé qu'il fallait faire quelque chose, alors j'ai réuni quelques voisins. » Au début, l'équipe ne comptait que six personnes, qui distribuaient des repas dans un local prêté par la mairie.\n\nAujourd'hui, l'association rassemble trois cents bénévoles et accompagne plus de mille personnes chaque année. Nadia Berthier a expliqué que le plus difficile n'avait pas été de trouver de l'argent, mais de convaincre les gens que le bénévolat n'était pas réservé aux retraités. « On nous disait que les jeunes n'auraient jamais le temps. Or ils sont aujourd'hui plus nombreux que nous ne l'espérions », a-t-elle précisé.\n\nLes chiffres nationaux confirment cette évolution. Selon un sondage publié récemment, un Français sur quatre s'était engagé dans une association au cours de l'année écoulée, contre un sur cinq dix ans auparavant. Les chercheurs notent toutefois que l'engagement a changé de forme : les bénévoles s'investissent plus volontiers pour une mission précise et limitée dans le temps que pour une adhésion à long terme.\n\nLors de la soirée, le maire a annoncé que la ville augmenterait sa subvention l'an prochain. Il a ajouté que, si les associations n'avaient pas existé, de nombreux services indispensables auraient disparu. La présidente, quant à elle, a averti qu'on ne devait pas profiter du dévouement des bénévoles pour réduire le financement public : « L'engagement n'a de valeur que si l'État assume lui aussi ses responsabilités. »"
+    "texto": "Hier soir, à Lille, l'association « Main tendue » a fêté ses vingt ans. Sa présidente, Nadia Berthier, a raconté comment tout avait commencé. « En 2004, j'étais infirmière et je voyais chaque jour des personnes isolées qui n'avaient personne à qui parler. J'ai pensé qu'il fallait faire quelque chose, alors j'ai réuni quelques voisins. » Au début, l'équipe ne comptait que six personnes, qui distribuaient des repas dans un local prêté par la mairie.\n\nAujourd'hui, l'association rassemble trois cents bénévoles et accompagne plus de mille personnes chaque année. Nadia Berthier a expliqué que le plus difficile n'avait pas été de trouver de l'argent, mais de convaincre les gens que le bénévolat n'était pas réservé aux retraités. « On nous disait que les jeunes n'auraient jamais le temps. Or ils sont aujourd'hui plus nombreux que nous ne l'espérions », a-t-elle précisé.\n\nLes chiffres nationaux confirment cette évolution. Selon un sondage publié récemment, un Français sur quatre s'est engagé dans une association au cours de l'année écoulée, contre un sur cinq dix ans auparavant. Les chercheurs notent toutefois que l'engagement a changé de forme : les bénévoles s'investissent plus volontiers pour une mission précise et limitée dans le temps que pour une adhésion à long terme.\n\nLors de la soirée, le maire a annoncé que la ville augmenterait sa subvention l'an prochain. Il a ajouté que, si les associations n'avaient pas existé, de nombreux services indispensables auraient disparu. La présidente, quant à elle, a averti qu'on ne devait pas profiter du dévouement des bénévoles pour réduire le financement public : « L'engagement n'a de valeur que si l'État assume lui aussi ses responsabilités. »"
    },
    "exercicios": [
     {
