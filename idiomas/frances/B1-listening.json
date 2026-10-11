@@ -85,15 +85,11 @@
      },
      {
       "p": "A",
-      "t": "Pas cette semaine, le terrain est fermé. On joue dimanche prochain, à dix heures."
-     },
-     {
-      "p": "A",
-      "t": "Génial. Et si tu as faim avant, il y a une boulangerie en face de la bibliothèque."
+      "t": "Pas cette semaine, le terrain est fermé. On joue dimanche prochain, à dix heures. Et si tu as faim avant, il y a une boulangerie en face de la bibliothèque."
      },
      {
       "p": "B",
-      "t": "Merci, mais je mangerai chez ta grand-mère avec les autres. Ok. Alors à samedi, dix-neuf heures !"
+      "t": "Génial. Merci, mais je mangerai chez ta grand-mère avec les autres. Ok. Alors à samedi, dix-neuf heures !"
      }
     ]
    },
@@ -125,7 +121,7 @@
      "q": "Ouça a frase e repita em voz alta.",
      "frase": "Sandra fait un gâteau et Joe s'occupe de la musique.",
      "ouvir": "Sandra fait un gâteau et Joe s'occupe de la musique.",
-     "exp": "Em gâteau, o 'â' soa como /a/ fechado. Faça a ligação suave em 'Joe s'occupe' (/jo s-o-kup/)."
+     "exp": "Em gâteau, o 'â' soa como /a/ fechado. Faça a ligação suave em 'Joe s'occupe' (/ʒo s-o-kyp/, com o u francês em « occupe »)."
     },
     {
      "t": "mc",
@@ -178,7 +174,12 @@
       "vais",
       "vois",
       "fais",
-      "week-end"
+      "week-end",
+      "sors",
+      "reste",
+      "joue",
+      "match",
+      "soirée"
      ],
      "exp": "Use o présent ou o futur proche: je vais + infinitivo. Indique o dia: samedi, dimanche."
     },
@@ -214,7 +215,7 @@
     "Em recados gravados, o motivo vem logo no começo: je vous appelle car / c'est pour vous dire que...",
     "Reporter un rendez-vous = adiar; annuler = cancelar. Não confunda com 'retirer'.",
     "Anote a nova data e a nova hora: o áudio cita a antiga para criar confusão (distrator clássico).",
-    "Consignas comuns: apportez..., rappelez-nous avant..., sinon pas besoin de répondre (caso contrário, não precisa responder)."
+    "Instruções comuns: apportez..., rappelez-nous avant..., sinon pas besoin de répondre (caso contrário, não precisa responder)."
    ],
    "vocab": [
     {
@@ -343,7 +344,11 @@
       "rendez-vous",
       "peux",
       "jeudi",
-      "mardi"
+      "mardi",
+      "désolé",
+      "déplacer",
+      "décaler",
+      "empêché"
      ],
      "exp": "Use: je ne peux pas venir / est-ce qu'on peut reporter... Cuidado: 'annuler' cancela, 'reporter' adia."
     },
@@ -513,7 +518,10 @@
       "direct"
      ],
      "resp": "Si je termine avant sept heures et demie je viens direct",
-     "exp": "Si + présent (condição) + présent. 'Direct' aqui significa 'imediatamente, sem passar por outro lugar'."
+     "exp": "Si + présent (condição) + présent. 'Direct' aqui significa 'imediatamente, sem passar por outro lugar'.",
+     "alt": [
+      "Je viens direct si je termine avant sept heures et demie"
+     ]
     },
     {
      "t": "gap",
@@ -931,7 +939,8 @@
      "t": "gap",
      "q": "Marc croit qu'un stage aide plus à trouver du ___.",
      "resp": [
-      "travail"
+      "travail",
+      "boulot"
      ],
      "exp": "Je crois que ça aide plus pour trouver du travail. Aqui 'travail' = emprego/trabalho."
     }
@@ -944,7 +953,7 @@
    "foco": "Marqueurs de discours; récit au passé; conséquence",
    "explicacao": [
     "Marcadores muito frequentes na fala: bon (ok, bem), alors (então), en fait (na verdade), du coup (por isso, então), franchement (sinceramente).",
-    "Du coup indica consequência: Mon vol était annulé, du coup j'ai dormi à l'aéroport. Não significa 'de repente'.",
+    "Du coup indica consequência: Mon vol a été annulé, du coup j'ai dormi à l'aéroport. Não significa 'de repente'.",
     "En fait introduz uma correção ou um contraste: Ça a mal commencé, mais en fait c'était pas grave. Falso cognato: 'en fait' não é 'em fato', é 'na verdade'.",
     "Dica de prova: os marcadores anunciam a ideia importante. Depois de 'mais' e 'en fait', ouça com atenção."
    ],
@@ -991,7 +1000,7 @@
      },
      {
       "p": "B",
-      "t": "Bon, franchement, c'était super, mais en fait ça a mal commencé. Mon vol était annulé, du coup j'ai dû dormir à l'aéroport."
+      "t": "Bon, franchement, c'était super, mais en fait ça a mal commencé. Mon vol a été annulé, du coup j'ai dû dormir à l'aéroport."
      },
      {
       "p": "A",
@@ -1019,7 +1028,7 @@
      },
      {
       "p": "A",
-      "t": "Génial. Et tu as mangé des pasteis de nata ?"
+      "t": "Génial. Et tu as mangé des pastéis de nata ?"
      },
      {
       "p": "B",
@@ -1038,16 +1047,16 @@
       "Il a raté son train."
      ],
      "r": 0,
-     "exp": "Mon vol était annulé, du coup j'ai dû dormir à l'aéroport. Os demais itens não aparecem."
+     "exp": "Mon vol a été annulé, du coup j'ai dû dormir à l'aéroport. Os demais itens não aparecem."
     },
     {
      "t": "gap",
-     "q": "Ouça e complete: Mon vol était annulé, du ___ j'ai dû dormir à l'aéroport.",
+     "q": "Ouça e complete: Mon vol a été annulé, du ___ j'ai dû dormir à l'aéroport.",
      "resp": [
       "coup"
      ],
      "exp": "Du coup = por isso. Marcador de consequência muito comum no francês falado.",
-     "ouvir": "Mon vol était annulé, du coup j'ai dû dormir à l'aéroport."
+     "ouvir": "Mon vol a été annulé, du coup j'ai dû dormir à l'aéroport."
     },
     {
      "t": "speak",
@@ -1282,7 +1291,7 @@
     },
     {
      "t": "gap",
-     "q": "Pour avoir la réduction de ___ pour cent, il faut payer avant le 30 juin.",
+     "q": "Si on paie à l'avance, la réduction est de ___ pour cent.",
      "resp": [
       "dix",
       "10"
@@ -1479,7 +1488,10 @@
       "pleut"
      ],
      "resp": "Je prends le tram quand il pleut",
-     "exp": "Quand + présent: quand il pleut. Prendre le tram = pegar o bonde."
+     "exp": "Quand + présent: quand il pleut. Prendre le tram = pegar o bonde.",
+     "alt": [
+      "Quand il pleut je prends le tram"
+     ]
     },
     {
      "t": "gap",
@@ -1895,7 +1907,7 @@
       "trois",
       "3"
      ],
-     "exp": "Presque trois heures = quase 3 h. 'Presque' = quase (não 'presque' = prestes)."
+     "exp": "Presque trois heures = quase 3 h. 'Presque' = quase."
     }
    ]
   },
@@ -1908,7 +1920,7 @@
     "Em entrevistas, o especialista dá dados (trois heures par jour) e depois a sua opinião. A pergunta quase sempre pede a opinião.",
     "Frases de nuance: Je ne dirais pas ça (eu não diria isso); me paraît inefficace (me parece ineficaz); en revanche (por outro lado).",
     "Estrutura de conselho: donner l'exemple, discuter plutôt que punir. Plutôt que = em vez de.",
-    "Falso cognato: 'un portable' é o celular (não um laptop); 'contourner' = driblar, não 'contornar' no sentido de enfeitar."
+    "Falso cognato: 'un portable' é o celular (não um laptop); 'contourner' = contornar, driblar (uma regra)."
    ],
    "vocab": [
     {
@@ -2040,7 +2052,8 @@
      "t": "gap",
      "q": "Selon lui, il vaut mieux discuter plutôt que ___.",
      "resp": [
-      "punir"
+      "punir",
+      "sanctionner"
      ],
      "exp": "Discuter plutôt que punir = conversar em vez de punir. 'Plutôt que' é seguido de infinitivo."
     },

@@ -104,7 +104,7 @@
       "contente"
      ],
      "resp": "Je suis rentrée fatiguée mais très contente",
-     "exp": "Rentrer prend être et la narratrice est une femme (Camille) : rentrée, fatiguée, contente, avec -e."
+     "exp": "Rentrer prend être et la narratrice est une femme : rentrée, fatiguée, contente, avec -e."
     },
     {
      "t": "gap",
@@ -163,7 +163,7 @@
     "Imparfait = descrição, hábito, ação em andamento no passado: il faisait froid ; nous faisions du patin tous les week-ends.",
     "Passé composé = fato pontual, terminado, que faz a história avançar: un étudiant m'a proposé son aide ; j'ai rencontré Étienne.",
     "Os dois aparecem juntos: Pendant que je cherchais mon chemin (imparfait, cenário), un étudiant m'a parlé (passé composé, evento).",
-    "Formação do imparfait: radical de nous no presente + -ais, -ais, -ait, -ions, -iez, -aient (nous voyons → je voyais ; nous voyions com dois i)."
+    "Formação do imparfait: radical de nous no presente + -ais, -ais, -ait, -ions, -iez, -aient (nous voyons → je voyais ; nous voyions, com y + i)."
    ],
    "vocab": [
     {
@@ -300,7 +300,7 @@
      "resp": [
       "voyions"
      ],
-     "exp": "Voir à l'imparfait : nous voyions, avec deux i (radical voy- + -ions). Erreur fréquente : écrire « voyons » (présent).",
+     "exp": "Voir à l'imparfait : nous voyions, avec y puis i (radical voy- + -ions). Erreur fréquente : écrire « voyons » (présent).",
      "dica": "VOIR"
     }
    ]
@@ -889,7 +889,15 @@
       "ferais",
       "voyagerais",
       "achèterais",
-      "aiderais"
+      "aiderais",
+      "gagnais",
+      "donnerais",
+      "serais",
+      "partirais",
+      "aurais",
+      "acheterais",
+      "offrirais",
+      "paierais"
      ],
      "exp": "Estrutura: Si je gagnais..., je ferais / j'achèterais / je voyagerais. Não diga « si je gagnerais »."
     },
@@ -1043,7 +1051,12 @@
       "faut",
       "voudrais",
       "respecter",
-      "silence"
+      "silence",
+      "soient",
+      "respectent",
+      "poli",
+      "bruit",
+      "calme"
      ],
      "exp": "Estrutura: Il est important que + subjonctif (soient, respectent). Je voudrais qu'on + subjonctif (dise)."
     },
@@ -1194,7 +1207,10 @@
       "habite",
       "quartier",
       "parc",
-      "maison"
+      "maison",
+      "j'habite",
+      "calme",
+      "il y a"
      ],
      "exp": "Use qui, que e où: un quartier qui est calme, une boulangerie que j'adore, un parc où je vais. Duas ou três frases bastam."
     },
@@ -1346,7 +1362,10 @@
       "que",
       "série",
       "film",
-      "livre"
+      "livre",
+      "j'aime",
+      "regarde",
+      "histoire"
      ],
      "exp": "Tente usar dont (une série dont j'aime l'histoire) e que (un livre que j'ai lu). Para 'assistir' a uma série ou filme, diga regarder, não « voir » nem « assister »."
     },
@@ -1473,7 +1492,10 @@
       "semaine"
      ],
      "resp": "Nous y allons trois fois par semaine",
-     "exp": "Y se place avant le verbe conjugué : nous y allons (= nous allons au parc, à la salle...)."
+     "exp": "Y se place avant le verbe conjugué : nous y allons (= nous allons au parc, à la salle...).",
+     "alt": [
+      "Trois fois par semaine nous y allons"
+     ]
     },
     {
      "t": "gap",
@@ -1494,7 +1516,11 @@
       "fais",
       "vais",
       "piscine",
-      "sport"
+      "sport",
+      "joue",
+      "cours",
+      "nage",
+      "marche"
      ],
      "exp": "Exemplos: J'en fais (de la natation). J'y vais (à la piscine). O pronome vem sempre antes do verbo."
     },
@@ -1567,7 +1593,7 @@
    ],
    "material": {
     "titulo": "Mon déménagement en cours",
-    "texto": "Salut Clara ! Je te raconte où j'en suis pour mon déménagement. Mon frère dit qu'il peut me prêter sa camionnette. Je lui demande s'il peut me la laisser tout le week-end, et il répond qu'il me la laissera volontiers si je lui rends le plein d'essence. Ma voisine, Mme Faure, me dit qu'elle a une dizaine de cartons et qu'elle me les apportera demain matin. Pour la table, Théo me promet qu'il me la réparera avant samedi ; il veut savoir où je veux la mettre, alors je la lui décris et je lui envoie une photo de la pièce. Mon père, lui, me téléphone pour me rappeler de prévenir la banque. Je lui réponds que je l'ai déjà fait, mais il me demande si je lui ai envoyé ma nouvelle adresse. Je ne l'ai pas encore fait : je la lui enverrai ce soir ! Enfin, j'ai une question pour toi : peux-tu me prêter ton aspirateur ? Je te le rendrai dimanche soir, c'est promis. Dis-moi vite si tu peux me l'apporter, parce que je demande à tous mes amis s'ils ont du matériel à prêter. Merci d'avance !"
+    "texto": "Salut Clara ! Je te raconte où j'en suis pour mon déménagement. Mon frère dit qu'il peut me prêter sa camionnette. Je lui demande s'il peut me la laisser tout le week-end, et il répond qu'il me la laissera volontiers si je fais le plein d'essence. Ma voisine, Mme Faure, me dit qu'elle a une dizaine de cartons et qu'elle me les apportera demain matin. Pour la table, Théo me promet qu'il me la réparera avant samedi ; il veut savoir où je veux la mettre, alors je la lui décris et je lui envoie une photo de la pièce. Mon père, lui, me téléphone pour me rappeler de prévenir la banque. Je lui réponds que je l'ai déjà fait, mais il me demande si je lui ai envoyé ma nouvelle adresse. Je ne l'ai pas encore fait : je la lui enverrai ce soir ! Enfin, j'ai une question pour toi : peux-tu me prêter ton aspirateur ? Je te le rendrai dimanche soir, c'est promis. Dis-moi vite si tu peux me l'apporter, parce que je demande à tous mes amis s'ils ont du matériel à prêter. Merci d'avance !"
    },
    "exercicios": [
     {
@@ -1620,7 +1646,10 @@
       "soir"
      ],
      "resp": "Je te le rendrai dimanche soir",
-     "exp": "Ordre des pronoms : te (COI) avant le (COD) — « je te le rendrai ». Avec lui/leur, c'est l'inverse : je le lui rendrai."
+     "exp": "Ordre des pronoms : te (COI) avant le (COD) — « je te le rendrai ». Avec lui/leur, c'est l'inverse : je le lui rendrai.",
+     "alt": [
+      "Dimanche soir je te le rendrai"
+     ]
     },
     {
      "t": "gap",
@@ -1793,7 +1822,9 @@
       "déchets",
       "recycle",
       "économise",
-      "eau"
+      "eau",
+      "en",
+      "je trie"
      ],
      "exp": "Gérondif: en rentrant, en prenant, en utilisant. Diga o modo: Je protège la nature en + verbo-ant."
     },
@@ -1936,7 +1967,8 @@
      "q": "Certaines entreprises acceptent le télétravail, ___ d'autres exigent un retour au bureau.",
      "resp": [
       "tandis que",
-      "alors que"
+      "alors que",
+      "mais"
      ],
      "exp": "Tandis que / alors que expriment l'opposition entre deux faits. Ne les confondez pas avec « pendant que » (simple simultanéité)."
     },
@@ -1972,7 +2004,9 @@
      "t": "gap",
      "q": "Il a manqué la réunion ___ un retard de train, mais il l'a suivie en ligne.",
      "resp": [
-      "à cause d'"
+      "à cause d'",
+      "en raison d'",
+      "à cause d’"
      ],
      "exp": "À cause de + nom exprime une cause négative (retard). On dit à cause d'un retard. Grâce à serait possible seulement pour une cause positive.",
      "dica": "À CAUSE ..."
@@ -2144,7 +2178,7 @@
    "objetivo": "Treinar a prova completa: comparar anúncios de voluntariado (exercício 1) e compreender um artigo de opinião (exercício 2).",
    "foco": "Simulation : comparaison d'offres + article d'opinion",
    "explicacao": [
-    "A prova DELF B1 de compréhension des écrits dura cerca de 45 minutos e tem dois exercícios. O 1º compara anúncios para um perfil; o 2º é um artigo com perguntas de QCM e verdadeiro/falso com justificativa.",
+    "A prova DELF B1 de compréhension des écrits dura cerca de 45 minutos e é feita de QCM. Há um exercício que compara anúncios para um perfil e outro com um artigo, com perguntas sobre ideias e detalhes (às vezes é preciso escolher também a justificativa certa).",
     "Estratégia: leia as perguntas ANTES do texto, procure as palavras-chave, e confirme cada resposta no texto. Cuidado com os distratores: uma opção pode estar quase certa, mas dizer outra coisa.",
     "Verdadeiro/falso justificado: a resposta só é certa se a justificação também estiver certa. Em francês, procure a frase exata do texto (le texte dit... « ... »).",
     "Gramática em contexto: temps du passé, pronoms relatifs, conditionnel, subjonctif e connecteurs aparecem nas lacunas. Gerencie o tempo: ~20 min no exercício 1 e ~25 min no exercício 2."
