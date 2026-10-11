@@ -22,6 +22,12 @@ Saída em `videos/`: `logic-academy-AAAA-MM-DD.mp4`, `-legenda.txt` (texto do po
 
 Precisa de: Node 18+, Playwright com Chromium e ffmpeg com libx264.
 
+## Vídeo de lançamento das novidades
+```bash
+node novidades.js --repo ../site --saida ./videos      # curso de Inglês, nivelamento, fala corrigida, cronômetro, Pro R$ 5 e teste grátis
+```
+O reconhecimento de voz é simulado na gravação (a "fala" é a própria frase do exercício).
+
 ## Cenas (`cenas.js`)
 Estudo: `cadastro`, `plano`, `pomodoro`, `questao`, `mentoria`, `molduras`, `estatisticas`, `convite`.
 Comunidade: `chatAoVivo`, `enviarQuestao`, `chamada`, `conversa`, `ranking`, `grupo`.

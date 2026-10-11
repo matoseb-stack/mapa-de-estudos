@@ -15,9 +15,9 @@ function montarSite(repo){
   if(i<0||k<i)throw new Error("estrutura do index.html mudou: não achei o bloco principal");
   s=s.slice(0,k)+"window.__ev=c=>eval(c);\n"+s.slice(k);
   fs.writeFileSync(path.join(dir,"index.html"),s);
-  for(const n of ["questoes","icones","icones-oficial","firebase-config.js","manifest.webmanifest"])if(fs.existsSync(path.join(repo,n)))fs.symlinkSync(path.join(repo,n),path.join(dir,n));
+  for(const n of ["questoes","icones","icones-oficial","firebase-config.js","manifest.webmanifest","js","css","sons","idiomas"])if(fs.existsSync(path.join(repo,n)))fs.symlinkSync(path.join(repo,n),path.join(dir,n));
   return dir}
-function servir(dir){const tipos={".html":"text/html",".js":"application/javascript",".json":"application/json",".webp":"image/webp",".png":"image/png",".svg":"image/svg+xml",".webmanifest":"application/manifest+json",".jpg":"image/jpeg"};
+function servir(dir){const tipos={".html":"text/html",".js":"application/javascript",".json":"application/json",".webp":"image/webp",".png":"image/png",".svg":"image/svg+xml",".webmanifest":"application/manifest+json",".jpg":"image/jpeg",".css":"text/css",".wav":"audio/wav"};
   return new Promise(ok=>{const srv=http.createServer((q,r)=>{let p=decodeURIComponent(q.url.split("?")[0]);if(p.endsWith("/"))p+="index.html";const f=path.join(dir,p);
     if(!f.startsWith(dir)||!fs.existsSync(f)||fs.statSync(f).isDirectory()){r.writeHead(404);r.end();return}
     r.writeHead(200,{"content-type":tipos[path.extname(f)]||"application/octet-stream"});fs.createReadStream(f).pipe(r)});
@@ -39,11 +39,12 @@ async function abrir(o){
   await ctx.addInitScript({path:path.join(AQUI,"mock-firebase.js")});
   await ctx.addInitScript({path:path.join(AQUI,"demo-dados.js")});
   if(o.ia)await ctx.addInitScript(`window.DEMO_IA=${o.ia.toString()};`);
+  for(const extra of o.init||[])await ctx.addInitScript(extra);   // scripts extras do roteiro (ex.: voz simulada)
   const iaMod=fs.readFileSync(path.join(AQUI,"mock-ai.mjs"));
   await ctx.route(/^https:\/\//,async r=>{const u=r.request().url();
     if(/gstatic\.com\/firebasejs\/[^/]+\/firebase-[a-z-]+-compat\.js/.test(u))return r.fulfill({status:200,contentType:"application/javascript",body:"/* demo: firebase simulado */"});
     if(/gstatic\.com\/firebasejs\/[^/]+\/firebase-(app|ai|app-check)\.js/.test(u))return r.fulfill({status:200,contentType:"application/javascript",body:iaMod,headers:{"access-control-allow-origin":"*"}});
-    if(/googleapis\.com\/(?!css)|firebaseio|identitytoolkit|recaptcha|googletagmanager|google-analytics|firebasevertexai/.test(u)&&!/fonts\.googleapis/.test(u))return r.abort();
+    if(/googleapis\.com\/(?!css)|firebaseio|identitytoolkit|recaptcha|googletagmanager|google-analytics|firebasevertexai|googlesyndication|doubleclick|adservice/.test(u)&&!/fonts\.googleapis/.test(u))return r.abort();
     const x=await baixar(u);r.fulfill({status:x.status,contentType:x.ct,body:x.body,headers:{"access-control-allow-origin":"*"}})});
   const p=await ctx.newPage();const erros=[];p.on("pageerror",e=>erros.push(e.message));
   await p.goto(url,{waitUntil:"load"});

@@ -44,7 +44,8 @@
     async set(d,o){const antigo=STORE.get(this.path);escrever(this.path,o&&o.merge?mescla(antigo,d):resolve(d))}
     async update(d){const antigo=STORE.get(this.path);if(antigo===undefined){const e=new Error("not-found");e.code="not-found";throw e}escrever(this.path,atualiza(antigo,d))}
     async delete(){escrever(this.path,null)}
-    onSnapshot(fn,err){let ultimo;const l={rodar:()=>{const d=STORE.get(this.path),j=JSON.stringify(d);if(j===ultimo)return;ultimo=j;fn(new DocSnap(this,d))}};
+    onSnapshot(fn,err){let ultimo={};const l={rodar:()=>{const d=STORE.get(this.path),j=JSON.stringify(d===undefined?null:d);   // avisa também quando o documento não existe (como o Firebase real)
+      if(j===ultimo)return;ultimo=j;fn(new DocSnap(this,d))}};
       LIS.add(l);setTimeout(()=>l.rodar(),0);return ()=>LIS.delete(l)}
     isEqual(o){return o&&o.path===this.path}}
   class Query{constructor(col,filtros,ordem,lim){this._col=col;this._f=filtros||[];this._o=ordem||[];this._l=lim}

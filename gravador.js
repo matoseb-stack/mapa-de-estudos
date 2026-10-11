@@ -14,7 +14,7 @@ const CSS=`#ad-cap{position:fixed;left:50%;top:11.5%;transform:translateX(-50%);
 #ad-full p{margin:0;font-size:19px;opacity:.85;line-height:1.35}#ad-full .url{font:700 22px Geist;background:#fff;color:#07070c;padding:12px 22px;border-radius:999px}
 #ad-full .tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}#ad-full .tags b{font-size:15px;font-weight:600;background:#ffffff1f;border:1px solid #ffffff33;padding:7px 12px;border-radius:999px}
 #ad-full .nota{font-size:12px;opacity:.55}#ad-full.off{opacity:0}
-.faixa-teste{display:none!important}`;
+.faixa-teste,#crono-teste-bloq{display:none!important}`;
 function kit({p,E,ctx}){
   const w=ms=>p.waitForTimeout(ms);
   const prep=async()=>{await p.addStyleTag({content:CSS}).catch(()=>{});await E(`S.tutPerguntou=true`).catch(()=>{})};
