@@ -218,3 +218,9 @@
 .tt-erro{color:var(--danger,#dc2626);margin:0}
 .tt-ok{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:#16a34a;color:#fff;font-size:2rem}
 .tt-cta{width:100%;background:#16a34a;border-color:#16a34a}
+/* administração */
+.admin-pill{background:#1d4ed8;color:#fff;border-color:#1d4ed8;margin-top:4px}
+.adm-resumo{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:14px}
+.adm-li{grid-template-columns:minmax(0,1fr) auto!important;align-items:center}
+.adm-form{gap:8px;flex-wrap:wrap}
+@media (max-width:640px){.adm-resumo{grid-template-columns:1fr}.adm-li{grid-template-columns:1fr!important}}

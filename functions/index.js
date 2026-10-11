@@ -16,8 +16,8 @@ const PROJETO = process.env.GCLOUD_PROJECT || "mapa-de-estudos-d6eca";
 const WEBHOOK = `https://${REGIAO}-${PROJETO}.cloudfunctions.net/mpWebhook`;
 
 const PLANOS = {
-  mensal: { titulo: "Logic Academy Pro — 1 mês", preco: 9.9, dias: 31 },
-  anual: { titulo: "Logic Academy Pro — 12 meses", preco: 79.9, dias: 366 }
+  mensal: { titulo: "Logic Academy Pro — 1 mês", preco: 5.0, dias: 31 },
+  anual: { titulo: "Logic Academy Pro — 12 meses", preco: 49.9, dias: 366 }
 };
 // só volta para os sites do Logic Academy depois do pagamento
 const ORIGENS = ["https://logicacademy.web.app/", "https://logicacademy.firebaseapp.com/", "https://matoseb-stack.github.io/mapa-de-estudos/"];

@@ -7,8 +7,8 @@
 (function () {
   "use strict";
   const PLANOS = [
-    { k: "mensal", nome: "Mensal", preco: "R$ 9,90", por: "/mês", obs: "Pague com Pix, cartão ou boleto. Vale por 31 dias." },
-    { k: "anual", nome: "Anual", preco: "R$ 79,90", por: "/ano", obs: "Equivale a R$ 6,66 por mês. Vale por 12 meses.", selo: "Economize 33%" }
+    { k: "mensal", nome: "Mensal", preco: "R$ 5,00", por: "/mês", obs: "Pague por Pix, combinando pelo WhatsApp. Vale por 31 dias." },
+    { k: "anual", nome: "Anual", preco: "R$ 49,90", por: "/ano", obs: "Equivale a R$ 4,16 por mês. Vale por 12 meses.", selo: "Economize 17%" }
   ];
   const BENEFICIOS = [
     ["mentor", "Mentoria com IA sem limite", "Pergunte quanto quiser: o que revisar, planos de estudo e explicação de questões. No grátis são 3 perguntas por dia."],
@@ -25,13 +25,26 @@
       <span class="eyebrow">${esc(p.nome)}</span>
       <div class="pro-preco"><b>${esc(p.preco)}</b><span>${esc(p.por)}</span></div>
       <p class="small muted">${esc(p.obs)}</p>
-      <button class="btn ${p.k === "anual" ? "primary" : ""}" type="button" data-pro-plano="${p.k}">Assinar ${esc(p.nome.toLowerCase())}</button></div>`).join("")}</div>`;
+      <button class="btn ${p.k === "anual" ? "primary" : ""}" type="button" data-pro-plano="${p.k}">Assinar ${esc(p.nome.toLowerCase())} pelo WhatsApp</button></div>`).join("")}</div>`;
   }
-  async function assinar(app, plano, botao) {
+  // assinatura pelo WhatsApp: abre a conversa com a mensagem pronta (no mesmo toque, para o navegador não bloquear)
+  // e registra o pedido; o administrador confirma o Pix e libera o Pro no painel de administração
+  // abre um link numa aba nova; devolve false se o navegador bloqueou (aí o chamador abre na mesma aba)
+  function abrirAba(url) {
+    let w = null;
+    try { w = window.open(url, "_blank"); } catch (e) { w = null; }
+    if (!w) return false;
+    try { w.opener = null; } catch (e) {}
+    return true;
+  }
+  function assinar(app, plano, botao) {
     if (!app.logado()) { app.toast("Entre com sua conta para assinar o Pro."); return; }
-    const txt = botao.textContent; botao.disabled = true; botao.textContent = "Abrindo o pagamento…";
-    try { const url = await app.pagar(plano); location.href = url; }
-    catch (e) { botao.disabled = false; botao.textContent = txt; app.toast(e && e.message ? e.message : "Não foi possível abrir o pagamento agora. Tente de novo."); }
+    const url = app.linkPedido(plano);
+    if (!url) { app.toast("A assinatura pelo WhatsApp ainda não foi configurada. Tente de novo mais tarde."); return; }
+    const abriu = abrirAba(url);
+    app.registrarPedido(plano).catch(() => {});
+    if (!abriu) location.href = url;
+    else app.toast("Abrimos o WhatsApp com a sua mensagem. Envie e combine o Pix; o Pro é liberado assim que o pagamento for confirmado.");
   }
 
   /* ---------- teste grátis de 3 dias (sem cartão) ----------
@@ -102,7 +115,7 @@
   // se ainda não, busca e abre na mesma aba (no celular, o WhatsApp abre direto)
   async function abrirGrupo(app, botao) {
     const pronto = app.linkGrupoPronto && app.linkGrupoPronto();
-    if (pronto) { const w = window.open(pronto, "_blank", "noopener"); if (!w) location.href = pronto; return; }
+    if (pronto) { if (!abrirAba(pronto)) location.href = pronto; return; }
     const txt = botao ? botao.textContent : ""; if (botao) { botao.disabled = true; botao.textContent = "Abrindo…"; }
     try {
       const link = await app.linkGrupo();
@@ -118,7 +131,9 @@
     const { esc, ico } = app, a = app.assinatura(), pro = app.ehPro(), teste = app.testeAte && app.testeAte(), emTeste = pro && !(a && a.ate > Date.now()) && teste > Date.now();
     container.innerHTML = `<div class="page pro-page" style="max-width:900px">
       ${app.pageHead("Logic Academy Pro", "Estude sem limites: mentoria com IA, curso de Inglês completo e nada de anúncios.")}
-      ${emTeste ? `<div class="card pro-ativo"><span class="pro-tag">PRO</span><div style="flex:1"><h2 style="margin:0">Seu teste grátis está ativo</h2>
+      ${app.ehAdmin && app.ehAdmin() ? `<div class="card pro-ativo"><span class="pro-tag">ADMIN</span><div style="flex:1"><h2 style="margin:0">Você é administrador</h2>
+          <p class="muted" style="margin:4px 0 0">Todos os recursos Pro estão liberados na sua conta. Libere o Pro dos alunos no painel de administração.</p></div><button class="btn sm primary" type="button" data-pro-admin>Abrir painel</button></div>`
+      : emTeste ? `<div class="card pro-ativo"><span class="pro-tag">PRO</span><div style="flex:1"><h2 style="margin:0">Seu teste grátis está ativo</h2>
           <p class="muted" style="margin:4px 0 0">Vale até <b>${esc(fmtData(teste))}</b>. Gostou? Assine abaixo para continuar depois do teste.</p></div><button class="btn sm" type="button" data-pro-grupo>Grupo do WhatsApp</button></div>`
       : pro ? `<div class="card pro-ativo"><span class="pro-tag">PRO</span><div><h2 style="margin:0">Seu Pro está ativo</h2>
           <p class="muted" style="margin:4px 0 0">Plano ${esc(a.plano === "anual" ? "anual" : "mensal")} · válido até <b>${esc(fmtData(a.ate))}</b>. Você pode renovar antes: os dias se somam.</p></div></div>`
@@ -128,11 +143,12 @@
       <h2 style="margin:22px 0 10px">${pro ? "Renovar" : "Escolha seu plano"}</h2>
       ${cartoesPlanos(app)}
       ${app.logado() ? "" : `<p class="small" style="margin-top:10px">Para assinar, <b>entre com sua conta</b>: o Pro fica ligado a ela e vale em qualquer aparelho.</p>`}
-      <p class="hint" style="margin-top:14px">Pagamento processado pelo Mercado Pago. Não é renovação automática: quando o prazo acabar, o app avisa e você renova se quiser. O Pro é liberado assim que o pagamento é aprovado (Pix e cartão costumam levar poucos segundos; boleto, até 2 dias úteis). Dúvidas: logicorg.inc@gmail.com.</p>
+      <p class="hint" style="margin-top:14px">Como funciona: ao tocar em assinar, o WhatsApp abre com uma mensagem pronta para o Logic Academy. Você combina o pagamento por Pix e o Pro é liberado na sua conta assim que ele for confirmado. Não há renovação automática: quando o prazo acabar, o app avisa e você renova se quiser. Dúvidas: logicorg.inc@gmail.com.</p>
     </div>`;
     container.onclick = e => {
       const b = e.target.closest("[data-pro-plano]"); if (b) { assinar(app, b.dataset.proPlano, b); return; }
       if (e.target.closest("[data-pro-teste]")) { modalTeste(app); return; }
+      if (e.target.closest("[data-pro-admin]")) { app.go("admin"); return; }
       const g = e.target.closest("[data-pro-grupo]"); if (g) abrirGrupo(app, g);
     };
   }

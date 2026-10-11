@@ -3,6 +3,8 @@ service cloud.firestore {
   match /databases/{database}/documents {
     function logado() { return request.auth != null; }
     function eu(uid) { return logado() && request.auth.uid == uid; }
+    // administrador do Logic Academy (e-mail verificado pelo login do Google/Firebase)
+    function ehAdmin() { return logado() && request.auth.token.email == 'gustavodematospk@gmail.com' && request.auth.token.email_verified == true; }
 
     // Dados privados de cada pessoa: triagem, plano, edital, tempo de estudo, grupos e conversas vistas
     match /data/users/{uid}/{doc=**} { allow read, write: if eu(uid); }
@@ -230,7 +232,7 @@ service cloud.firestore {
     // e aceita os termos. Uma única vez por conta e por número. O início é a hora do servidor; o fim, início + 3 dias.
     function celularBR(n) { return n is string && n.matches('^[+]55[1-9][1-9]9[0-9]{8}$'); }
     match /telefones/{numero} {
-      allow read: if logado() && resource.data.uid == request.auth.uid;
+      allow read: if (logado() && resource.data.uid == request.auth.uid) || ehAdmin();
       allow create: if logado() && celularBR(numero)
         && request.resource.data.keys().hasOnly(['uid', 'em', 'termos'])
         && request.resource.data.uid == request.auth.uid
@@ -238,7 +240,7 @@ service cloud.firestore {
       allow update, delete: if false;
     }
     match /testes/{uid} {
-      allow read: if eu(uid);
+      allow read: if eu(uid) || ehAdmin();
       allow create: if eu(uid)
         && request.resource.data.keys().hasOnly(['inicio', 'telefone', 'termos', 'aceitoEm'])
         && request.resource.data.inicio == request.time && request.resource.data.aceitoEm == request.time
@@ -249,10 +251,32 @@ service cloud.firestore {
     }
     // link do grupo do WhatsApp: o dono grava pelo console do Firebase; só quem ativou o teste ou é Pro consegue ler
     match /privado/whatsapp {
-      allow read: if logado() && (exists(/databases/$(database)/documents/testes/$(request.auth.uid)) || ehPro(request.auth.uid));
-      allow write: if false;
+      allow read: if logado() && (exists(/databases/$(database)/documents/testes/$(request.auth.uid)) || ehPro(request.auth.uid) || ehAdmin());
+      allow write: if ehAdmin();
     }
-    match /assinaturas/{uid} { allow read: if eu(uid); allow write: if false; }
+    // o Pro é liberado pelo administrador depois do pagamento combinado pelo WhatsApp
+    match /assinaturas/{uid} {
+      allow read: if eu(uid) || ehAdmin();
+      allow create, update: if ehAdmin()
+        && request.resource.data.keys().hasOnly(['ate', 'plano', 'status', 'liberadoPor', 'atualizado', 'ultimoPagamento'])
+        && request.resource.data.ate is timestamp && request.resource.data.plano in ['mensal', 'anual', 'cortesia']
+        && request.resource.data.atualizado == request.time;
+      allow delete: if ehAdmin();
+    }
+    // pedido de assinatura: o aluno registra (mensal ou anual) e chama no WhatsApp; o administrador marca como pago
+    match /pedidos/{uid} {
+      allow read: if eu(uid) || ehAdmin();
+      allow create, update: if (eu(uid) && request.resource.data.keys().hasOnly(['plano', 'nome', 'email', 'em', 'status'])
+            && request.resource.data.plano in ['mensal', 'anual'] && request.resource.data.status == 'pendente'
+            && request.resource.data.em == request.time && request.resource.data.nome is string && request.resource.data.nome.size() <= 80
+            && request.resource.data.email is string && request.resource.data.email.size() <= 120)
+        || (ehAdmin() && request.resource.data.status in ['pendente', 'pago', 'recusado']);
+      allow delete: if ehAdmin();
+    }
+    // configuração pública dos pagamentos (número do WhatsApp que recebe os pedidos)
+    match /config/pagamento { allow read: if logado(); allow write: if ehAdmin(); }
+    // quem é administrador (aparece "Administrador" no perfil)
+    match /admins/{uid} { allow read: if logado(); allow create, update: if ehAdmin() && uid == request.auth.uid; allow delete: if ehAdmin(); }
     match /pagamentos/{id} { allow read, write: if false; }
 
     // Mentoria com IA no plano grátis: 3 perguntas por dia (o contador só sobe de 1 em 1, no dia de hoje)
@@ -262,7 +286,7 @@ service cloud.firestore {
         let mesmoDia = resource != null && resource.data.dia == diaBR();
         return d.keys().hasOnly(['dia', 'n']) && d.dia == diaBR()
           && d.n == (mesmoDia ? resource.data.n + 1 : 1)
-          && (d.n <= 3 || ehPro(uid));
+          && (d.n <= 3 || ehPro(uid) || ehAdmin());
       }
       allow read: if eu(uid);
       allow create, update: if eu(uid) && usoOk();

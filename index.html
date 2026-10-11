@@ -1073,7 +1073,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=2.5">
+<link rel="stylesheet" href="css/componentes.css?v=2.8">
 <script src="js/firebaseServiceMock.js?v=2.4"></script>
 <script src="js/firebaseService.js?v=2.4"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.4"></script>
@@ -1081,8 +1081,8 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/FloatingTimer.js?v=2.4"></script>
 <script src="js/componentes/ExercicioIdioma.js?v=2.4"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.4"></script>
-<script src="js/componentes/IdiomasView.js?v=2.4"></script>
-<script src="js/componentes/Pro.js?v=2.7"></script>
+<script src="js/componentes/IdiomasView.js?v=2.8"></script>
+<script src="js/componentes/Pro.js?v=2.8"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
 
@@ -2331,15 +2331,22 @@ function renderIdiomas(){
 }
 /* ================= Logic Academy Pro ================= */
 // assinaturas/{uid} só é gravada pelo servidor (functions/index.js, depois do pagamento aprovado no Mercado Pago)
+// administrador do Logic Academy (as regras do Firestore conferem o mesmo e-mail, verificado)
+const ADMIN_EMAIL="gustavodematospk@gmail.com";
+const ehAdmin=()=>{try{const u=FB&&FB.auth&&FB.auth.currentUser;return !!(FBM()&&u&&u.emailVerified&&String(u.email||"").toLowerCase()===ADMIN_EMAIL)}catch(e){return false}};
 const assinaturaAtiva=()=>!!(S.pro&&S.pro.ate&&tsMs(S.pro.ate)>Date.now());
 // teste grátis: 3 dias a partir da hora do servidor (testes/{uid}.inicio)
 const testeAte=()=>S.teste&&S.teste.inicio?tsMs(S.teste.inicio)+3*864e5:0;
-const ehPro=()=>assinaturaAtiva()||testeAte()>Date.now();
+const ehPro=()=>ehAdmin()||assinaturaAtiva()||testeAte()>Date.now();
 const podeTestar=()=>FBM()&&!!S.uid&&S.testeOk===true&&!S.teste&&!(S.pro&&S.pro.ate);
 const TERMOS_TESTE="v1";
 const LIMITE_IA_GRATIS=3;
 function iniciarAssinatura(){
-  S.pro=null;S.teste=null;S.testeOk=false;const eraPro=()=>ehPro();
+  S.pro=null;S.teste=null;S.testeOk=false;S.admins={};const eraPro=()=>ehPro();
+  // quem é administrador (para mostrar "Administrador" no perfil) e o número do WhatsApp que recebe as assinaturas
+  S.unsub.push(S.db.collection("admins").onSnapshot(q=>{const m={};q.forEach(d=>m[d.id]=true);S.admins=m;renderSideUser()},()=>{}));
+  S.unsub.push(S.db.collection("config").doc("pagamento").onSnapshot(d=>{S.numeroPagamento=d.exists&&d.data().whatsapp||""},()=>{}));
+  if(ehAdmin())S.db.collection("admins").doc(S.uid).set({desde:firebase.firestore.FieldValue.serverTimestamp()},{merge:true}).catch(e=>console.warn("admin",e&&e.code));
   S.unsub.push(S.db.collection("testes").doc(S.uid).onSnapshot(d=>{if(d.metadata.hasPendingWrites)return;S.teste=d.exists?d.data():null;S.testeOk=true;
     renderSideUser();LAComp.Pro.anuncios(appPro);if(S.view==="pro")renderPro();if(ehPro())linkGrupoWhatsApp().catch(()=>{})},e=>{console.warn("teste",e&&e.code);S.testeOk=true}));
   S.unsub.push(S.db.collection("assinaturas").doc(S.uid).onSnapshot(d=>{const antes=eraPro();S.pro=d.exists?d.data():null;
@@ -2376,9 +2383,18 @@ async function linkGrupoWhatsApp(){
   if(/^chat\.whatsapp\.com\//i.test(l))l="https://"+l;
   if(!/^https:\/\/chat\.whatsapp\.com\/\S+$/i.test(l)){console.warn("link do grupo inválido ou ausente");return null}
   return S.linkGrupo=l}
+function linkPedidoWhatsApp(plano){
+  const n=String(S.numeroPagamento||"").replace(/\D/g,"");if(n.length<12)return null;
+  const nome=(S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"",email=contaEmail();
+  const msg=`Olá! Quero assinar o Logic Academy Pro: plano ${plano==="anual"?"anual (R$ 49,90)":"mensal (R$ 5,00)"}.\nNome: ${nome}\nE-mail: ${email}\nCódigo da conta: ${S.uid}`;
+  return `https://wa.me/${n}?text=${encodeURIComponent(msg)}`}
+async function registrarPedido(plano){
+  await S.db.collection("pedidos").doc(S.uid).set({plano,status:"pendente",em:firebase.firestore.FieldValue.serverTimestamp(),
+    nome:String((S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"").slice(0,80),email:String(contaEmail()).slice(0,120)})}
 const appPro={esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),go:v=>go(v),
   ehPro:()=>ehPro(),assinatura:()=>S.pro?{plano:S.pro.plano,ate:tsMs(S.pro.ate)}:null,logado:()=>FBM()&&!!S.uid,pagar:p=>pagarPro(p),
-  podeTestar:()=>podeTestar(),testeAte:()=>testeAte(),ativarTeste:n=>ativarTeste(n),linkGrupo:()=>linkGrupoWhatsApp(),linkGrupoPronto:()=>S.linkGrupo||null};
+  podeTestar:()=>podeTestar(),testeAte:()=>testeAte(),ativarTeste:n=>ativarTeste(n),linkGrupo:()=>linkGrupoWhatsApp(),linkGrupoPronto:()=>S.linkGrupo||null,
+  ehAdmin:()=>ehAdmin(),linkPedido:p=>linkPedidoWhatsApp(p),registrarPedido:p=>registrarPedido(p)};
 function renderPro(){LAComp.Pro.render($("#main"),appPro)}
 // volta do Mercado Pago (?pro=ok|pendente|erro)
 (function(){try{const q=new URLSearchParams(location.search),r=q.get("pro");if(!r)return;
@@ -2387,11 +2403,85 @@ function renderPro(){LAComp.Pro.render($("#main"),appPro)}
   history.replaceState(null,"",location.pathname+(q.toString()?"?"+q:"")+location.hash)}catch(e){}})();
 window.LA_ADS={cliente:"ca-pub-4234319012596475",slots:{inicio:"",estatisticas:""}}; // ids dos blocos de anúncio criados no AdSense
 
+/* ================= Painel de administração ================= */
+// liberar Pro depois do Pix combinado pelo WhatsApp, ver pedidos, assinantes e testes grátis, e configurar o número e o grupo
+const DIAS_PLANO={mensal:31,anual:366,cortesia:7};
+async function liberarPro(uid,plano,dias){
+  const ref=S.db.collection("assinaturas").doc(uid),FV=firebase.firestore.FieldValue;
+  await S.db.runTransaction(async t=>{const d=await t.get(ref),ate=d.exists&&d.data().ate?tsMs(d.data().ate):0;
+    t.set(ref,{ate:firebase.firestore.Timestamp.fromMillis(Math.max(Date.now(),ate)+dias*864e5),plano,status:"ativo",liberadoPor:"admin",atualizado:FV.serverTimestamp()})});
+  try{await S.db.collection("pedidos").doc(uid).update({status:"pago"})}catch(e){}}
+async function cancelarPro(uid){
+  await S.db.collection("assinaturas").doc(uid).set({ate:firebase.firestore.Timestamp.fromMillis(Date.now()),plano:"mensal",status:"cancelado",liberadoPor:"admin",atualizado:firebase.firestore.FieldValue.serverTimestamp()})}
+const nomeAdm=uid=>(S.soc&&S.soc.perfis&&S.soc.perfis[uid]&&S.soc.perfis[uid].nome)||"";
+const dataCurta=ms=>ms?new Date(ms).toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit",year:"2-digit"}):"—";
+async function renderAdmin(){
+  if(!ehAdmin()){go("inicio");return}
+  $("#main").innerHTML=`<div class="page admin-page" style="max-width:980px">${pageHead("Administração","Libere o Pro dos alunos, acompanhe pedidos, assinantes e testes grátis.")}<div class="card row muted"><span class="spinner"></span>Carregando…</div></div>`;
+  let ped=[],ass=[],tes=[],cfg={},grupo="";
+  try{const [a,b,c,d,e]=await Promise.all([S.db.collection("pedidos").where("status","==","pendente").get(),S.db.collection("assinaturas").get(),S.db.collection("testes").get(),
+      S.db.collection("config").doc("pagamento").get(),S.db.collection("privado").doc("whatsapp").get()]);
+    ped=a.docs.map(x=>({uid:x.id,...x.data()})).sort((x,y)=>tsMs(y.em)-tsMs(x.em));
+    ass=b.docs.map(x=>({uid:x.id,...x.data()})).filter(x=>x.ate&&tsMs(x.ate)>Date.now()).sort((x,y)=>tsMs(x.ate)-tsMs(y.ate));
+    tes=c.docs.map(x=>({uid:x.id,...x.data()})).sort((x,y)=>tsMs(y.inicio)-tsMs(x.inicio));
+    cfg=d.exists?d.data():{};grupo=e.exists?e.data().link||"":""}
+  catch(e){console.warn("admin",e&&e.code);$("#main").innerHTML=`<div class="page">${pageHead("Administração")}<div class="card"><p>Não foi possível carregar (${esc(e&&e.code||"erro")}). As regras novas podem levar alguns minutos para valer; tente de novo.</p></div></div>`;return}
+  if(S.view!=="admin")return;
+  const ativosTeste=tes.filter(t=>tsMs(t.inicio)+3*864e5>Date.now());
+  const linhaPedido=p=>`<div class="li adm-li"><div style="min-width:0"><div class="nm">${esc(p.nome||nomeAdm(p.uid)||"(sem nome)")} <span class="pill">${p.plano==="anual"?"Anual · R$ 49,90":"Mensal · R$ 5,00"}</span></div>
+      <div class="small muted">${esc(p.email||"")} · pedido em ${dataCurta(tsMs(p.em))} · código <span class="mono">${esc(p.uid)}</span></div></div>
+      <div class="row" style="gap:6px"><button class="btn sm primary" type="button" data-adm-liberar="${esc(p.uid)}" data-plano="${esc(p.plano)}">Pago: liberar ${p.plano==="anual"?"1 ano":"1 mês"}</button><button class="btn sm ghost" type="button" data-adm-recusar="${esc(p.uid)}">Recusar</button></div></div>`;
+  $("#main").innerHTML=`<div class="page admin-page" style="max-width:980px">
+    ${pageHead("Administração","Libere o Pro dos alunos, acompanhe pedidos, assinantes e testes grátis.")}
+    <div class="adm-resumo"><div class="stat"><div class="eyebrow">Pedidos pendentes</div><div class="v">${ped.length}</div></div>
+      <div class="stat"><div class="eyebrow">Assinantes ativos</div><div class="v">${ass.length}</div></div>
+      <div class="stat"><div class="eyebrow">Testes grátis ativos</div><div class="v">${ativosTeste.length}</div><div class="s">${tes.length} no total</div></div></div>
+    ${!cfg.whatsapp?`<div class="card flat" style="border-color:#f59e0b;margin-bottom:14px"><b>Configure o número do WhatsApp</b> (lá embaixo) para os alunos conseguirem assinar.</div>`:""}
+    <div class="card"><div class="card-h"><h3>Pedidos de assinatura</h3><span class="small muted">confira o Pix antes de liberar</span></div>
+      ${ped.length?`<div class="list">${ped.map(linhaPedido).join("")}</div>`:`<p class="small muted">Nenhum pedido pendente.</p>`}</div>
+    <div class="card" style="margin-top:14px"><div class="card-h"><h3>Liberar pelo código da conta</h3></div>
+      <p class="small muted">O código vem na mensagem do WhatsApp ("Código da conta"). Os dias se somam ao Pro que a pessoa já tiver.</p>
+      <form class="row adm-form" id="adm-manual"><input type="text" id="adm-uid" placeholder="Código da conta" autocomplete="off" required style="flex:1;min-width:200px">
+        <select id="adm-plano"><option value="mensal">1 mês (31 dias)</option><option value="anual">1 ano (366 dias)</option><option value="cortesia">Cortesia (7 dias)</option></select>
+        <button class="btn primary" type="submit">Liberar Pro</button></form></div>
+    <div class="card" style="margin-top:14px"><div class="card-h"><h3>Assinantes ativos</h3></div>
+      ${ass.length?`<div class="list">${ass.map(a=>`<div class="li adm-li"><div style="min-width:0"><div class="nm">${esc(nomeAdm(a.uid)||"(sem nome)")} <span class="pill">${esc(a.plano||"")}</span></div><div class="small muted">até ${dataCurta(tsMs(a.ate))} · <span class="mono">${esc(a.uid)}</span></div></div>
+        <div class="row" style="gap:6px"><button class="btn sm" type="button" data-adm-liberar="${esc(a.uid)}" data-plano="mensal">+1 mês</button><button class="btn sm ghost danger" type="button" data-adm-cancelar="${esc(a.uid)}">Encerrar</button></div></div>`).join("")}</div>`:`<p class="small muted">Nenhum assinante ativo.</p>`}</div>
+    <div class="card" style="margin-top:14px"><div class="card-h"><h3>Testes grátis</h3>${tes.length?`<button class="btn sm" type="button" id="adm-copiar">Copiar todos os números</button>`:""}</div>
+      ${tes.length?`<div class="list">${tes.slice(0,100).map(t=>{const fim=tsMs(t.inicio)+3*864e5;return `<div class="li adm-li"><div style="min-width:0"><div class="nm">${esc(nomeAdm(t.uid)||"(sem nome)")} <span class="mono small">${esc(t.telefone||"")}</span></div>
+        <div class="small muted">${fim>Date.now()?`ativo até ${dataCurta(fim)}`:`terminou em ${dataCurta(fim)}`} · <span class="mono">${esc(t.uid)}</span></div></div>
+        <a class="btn sm ghost" href="https://wa.me/${esc(String(t.telefone||"").replace(/\D/g,""))}" target="_blank" rel="noopener">WhatsApp</a></div>`}).join("")}</div>`:`<p class="small muted">Ninguém ativou o teste ainda.</p>`}</div>
+    <div class="card" style="margin-top:14px"><div class="card-h"><h3>Configurações</h3></div>
+      <form class="stack" id="adm-cfg">
+        <div class="field"><label for="adm-zap">Seu WhatsApp para receber as assinaturas (com DDD)</label><input id="adm-zap" type="tel" placeholder="(11) 99734-2851" value="${esc(cfg.whatsapp?LAComp.Pro.celular(cfg.whatsapp)?cfg.whatsapp.slice(2):cfg.whatsapp:"")}"></div>
+        <div class="field"><label for="adm-grupo">Link do grupo do WhatsApp (teste grátis)</label><input id="adm-grupo" type="url" placeholder="https://chat.whatsapp.com/…" value="${esc(grupo)}"></div>
+        <div class="row" style="justify-content:flex-end"><button class="btn primary" type="submit">Salvar configurações</button></div></form></div>
+  </div>`;
+  const recarregar=()=>{if(S.view==="admin")renderAdmin()};
+  $("#main").onclick=async e=>{
+    const l=e.target.closest("[data-adm-liberar]"),r=e.target.closest("[data-adm-recusar]"),c=e.target.closest("[data-adm-cancelar]");
+    try{
+      if(l){l.disabled=true;await liberarPro(l.dataset.admLiberar,l.dataset.plano,DIAS_PLANO[l.dataset.plano]||31);toast("Pro liberado!");recarregar()}
+      else if(r){r.disabled=true;await S.db.collection("pedidos").doc(r.dataset.admRecusar).update({status:"recusado"});toast("Pedido recusado.");recarregar()}
+      else if(c){if(c.dataset.ok!=="1"){c.dataset.ok="1";c.textContent="Toque de novo para encerrar";return}await cancelarPro(c.dataset.admCancelar);toast("Pro encerrado.");recarregar()}
+      else if(e.target.id==="adm-copiar"){const t=tes.map(x=>x.telefone).filter(Boolean).join("\n");try{await navigator.clipboard.writeText(t);toast(`${tes.length} números copiados.`)}catch(x){prompt("Copie os números:",t)}}
+    }catch(x){console.warn("admin",x&&x.code);toast("Não foi possível fazer isso agora ("+(x&&x.code||"erro")+").");if(l)l.disabled=false;if(r)r.disabled=false}};
+  $("#adm-manual").onsubmit=async e=>{e.preventDefault();const uid=$("#adm-uid").value.trim(),pl=$("#adm-plano").value;
+    if(!/^[A-Za-z0-9]{20,40}$/.test(uid)){toast("Código inválido: copie o código da conta exatamente como veio na mensagem.");return}
+    const b=e.target.querySelector("[type=submit]");b.disabled=true;
+    try{await liberarPro(uid,pl,DIAS_PLANO[pl]);toast("Pro liberado!");recarregar()}catch(x){b.disabled=false;toast("Não foi possível liberar ("+(x&&x.code||"erro")+").")}};
+  $("#adm-cfg").onsubmit=async e=>{e.preventDefault();const zap=$("#adm-zap").value.trim(),gr=$("#adm-grupo").value.trim(),num=zap?LAComp.Pro.celular(zap):"";
+    if(zap&&!num){toast("Número inválido: use DDD + 9 dígitos.");return}
+    if(gr&&!/^https:\/\/chat\.whatsapp\.com\/\S+$/i.test(gr)){toast("O link do grupo precisa começar com https://chat.whatsapp.com/");return}
+    try{await Promise.all([S.db.collection("config").doc("pagamento").set({whatsapp:num?num.slice(1):""},{merge:true}),S.db.collection("privado").doc("whatsapp").set({link:gr},{merge:true})]);
+      S.linkGrupo=null;toast("Configurações salvas.");recarregar()}catch(x){toast("Não foi possível salvar ("+(x&&x.code||"erro")+").")}};
+}
+
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="2.4";
+const APP_VERSAO="2.5";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
   {t:"Teste o Pro grátis por 3 dias",d:"Sem cartão: informe seu celular na tela Logic Academy Pro, entre no grupo do WhatsApp e use a mentoria sem limite e todas as aulas de Inglês por 3 dias."},
-  {t:"Chegou o Logic Academy Pro",d:"Mentoria com IA sem limite, o curso de Inglês completo (360 aulas) e nada de anúncios, por R$ 9,90/mês ou R$ 79,90/ano. Banco de questões, plano semanal, pomodoro e comunidade continuam grátis."},
+  {t:"Chegou o Logic Academy Pro",d:"Mentoria com IA sem limite, o curso de Inglês completo (360 aulas) e nada de anúncios, por R$ 5,00/mês ou R$ 49,90/ano, com pagamento por Pix combinado pelo WhatsApp. Banco de questões, plano semanal, pomodoro e comunidade continuam grátis."},
   {t:"Curso de Inglês completo, do A1 ao C2",d:"360 aulas em trilhas de Reading & Use of English, Listening, Writing e Speaking, com um simulado da prova Cambridge no fim de cada trilha."},
   {t:"Você escolhe o idioma e a prova",d:"Na aba Idiomas, escolha o idioma (por enquanto, Inglês) e a prova que quer fazer, do A2 Key ao C2 Proficiency. O app mostra quanto falta para você estar pronto."},
   {t:"Aulas que alternam marcar, escrever e falar",d:"Cada aula sobe de dificuldade e mistura questões de marcar, completar, montar frases e falar em inglês (o app ouve e corrige)."},
@@ -4079,7 +4169,7 @@ const NAV=[
   ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"],["pro","Logic Academy Pro","flame"]]],
   ["Prova",[["edital","Escanear edital","scan"],["topicos","Tópicos da prova","list"],["flashcards","Flashcards","cartas"]]],
   ["Comunidade",[["grupos","Meus grupos","users"],...(STANDALONE?[["buscarGrupos","Buscar grupos","search"]]:[]),["voz","Voz global","mic"],["chat","Chat global","chat"],...(STANDALONE?[["mensagens","Mensagens","send"],["amigos","Amigos","user"]]:[]),["ranking","Ranking","trophy"]]],
-  ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"]]],
+  ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"],["admin","Administração","lock"]]],
   ["Ajuda",[["tutorial","Tutorial","bussola"]]]];
 function renderShell(){
   $("#root").innerHTML=`
@@ -4090,7 +4180,7 @@ function renderShell(){
       <div id="mini-pomo" class="mini-pomo" hidden role="button" tabindex="0"></div>
       <div id="mini-crono" class="mini-pomo" hidden role="button" tabindex="0"></div>
       <div id="mini-voz" class="mini-voz" hidden data-voz="abrir" role="button" tabindex="0" aria-label="Abrir canal de voz"></div>
-      <nav class="nav" id="nav">${NAV.map(([sec,items])=>{const f=lateral().fech.includes(sec);return `<button type="button" class="nav-sec" data-sec="${sec}" aria-expanded="${!f}">${sec}${ico("next")}</button><div class="nav-grp ${f?"fech":""}"><div>`+items.map(([k,n,i])=>`<a data-go="${k}" ${k==="topicos"&&!S.edital?"hidden":""} href="#${k}" title="${n}" ${f?'tabindex="-1"':""}>${ico(i)}<span>${n}</span>${k==="topicos"&&S.edital?`<span class="badge">${progEdital()}%</span>`:""}</a>`).join("")+`</div></div>`}).join("")}</nav>
+      <nav class="nav" id="nav">${NAV.map(([sec,items])=>{const f=lateral().fech.includes(sec);return `<button type="button" class="nav-sec" data-sec="${sec}" aria-expanded="${!f}">${sec}${ico("next")}</button><div class="nav-grp ${f?"fech":""}"><div>`+items.filter(([k])=>k!=="admin"||ehAdmin()).map(([k,n,i])=>`<a data-go="${k}" ${k==="topicos"&&!S.edital?"hidden":""} href="#${k}" title="${n}" ${f?'tabindex="-1"':""}>${ico(i)}<span>${n}</span>${k==="topicos"&&S.edital?`<span class="badge">${progEdital()}%</span>`:""}</a>`).join("")+`</div></div>`}).join("")}</nav>
       <div class="side-foot">
         <button class="btn ghost sm" type="button" data-theme-lbl style="justify-content:flex-start">${temaBtnHtml()}</button>
         <div class="me" id="side-me" role="button" tabindex="0"></div>
@@ -4145,13 +4235,13 @@ function contaEmail(){try{return (FB&&FB.auth&&FB.auth.currentUser&&FB.auth.curr
 function renderSideUser(){
   const el=$("#side-me");if(!el)return;
   const nm=S.mode==="nuvem"?(S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"Estudante":(S.perfil&&S.perfil.nome)||"Visitante";
-  el.innerHTML=`${S.mode==="nuvem"?avatar(S.uid):`<span class="avatar" aria-hidden="true">${esc(nm[0]||"V").toUpperCase()}</span>`}<div style="min-width:0"><div class="nm">${esc(nm)}${S.mode==="nuvem"&&ehPro()?' <span class="pro-tag">PRO</span>':""}</div><div class="sub" title="${esc(contaEmail())}">${S.mode==="nuvem"?(esc(contaEmail())||"Salvo na nuvem"):"Visitante · nada é salvo"}</div></div>`;
+  el.innerHTML=`${S.mode==="nuvem"?avatar(S.uid):`<span class="avatar" aria-hidden="true">${esc(nm[0]||"V").toUpperCase()}</span>`}<div style="min-width:0"><div class="nm">${esc(nm)}${S.mode==="nuvem"&&ehPro()?' <span class="pro-tag">PRO</span>':""}</div><div class="sub" title="${esc(contaEmail())}">${S.mode==="nuvem"&&ehAdmin()?"🛡 Administrador":S.mode==="nuvem"?(esc(contaEmail())||"Salvo na nuvem"):"Visitante · nada é salvo"}</div></div>`;
 }
 function progEdital(){if(!S.edital)return 0;const all=S.edital.materias.flatMap(m=>m.topicos);return all.length?Math.round(all.filter(t=>t.feito).length/all.length*100):0}
 function go(v){pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
 function renderView(){
   $$("[data-go]").forEach(a=>{a.classList.toggle("on",a.dataset.go===S.view);if(a.dataset.go===S.view){const g=a.closest(".nav-grp.fech");if(g){g.classList.remove("fech");g.querySelectorAll("a").forEach(x=>x.removeAttribute("tabindex"));const b=g.previousElementSibling;if(b)b.setAttribute("aria-expanded","true")}}if(a.dataset.go==="topicos"){a.hidden=!S.edital;const b=a.querySelector(".badge");if(S.edital){if(b)b.textContent=progEdital()+"%";else a.insertAdjacentHTML("beforeend",`<span class="badge">${progEdital()}%</span>`)}}});
-  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,idiomas:renderIdiomas,pro:renderPro,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
+  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,idiomas:renderIdiomas,pro:renderPro,admin:renderAdmin,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
   f();
 }
 const pageHead=(t,sub,acoes)=>`<div class="page-h"><div><h1>${t}</h1>${sub?`<p>${sub}</p>`:""}</div>${acoes?`<div class="row">${acoes}</div>`:""}</div>`;
@@ -4956,7 +5046,7 @@ function cartaoPerfil(id,p,opts){
   const meta=[p.objetivo,p.instituicao,p.cidade].filter(Boolean).map(esc);
   const foto=p.foto&&/^data:image\/(jpeg|png|webp);base64,/.test(p.foto)?`<img class="avatar lg" src="${p.foto}" alt="">`:`<span class="avatar lg" aria-hidden="true">${esc(((p.nome||"?").split(/\s+/).map(w=>w[0]||"").join("").slice(0,2)).toUpperCase())}</span>`;
   return `<div class="perfil-card"><div class="capa" style="background:${capaDe(p)}"></div><div class="corpo"><div class="row" style="justify-content:space-between;align-items:flex-end">${comMoldura(p.moldura,foto)}${p.nivel?`<span class="pill solid" style="margin-bottom:6px">Nível ${p.nivel}</span>`:""}</div>
-    <div><h2 style="overflow-wrap:anywhere">${esc(p.nome||"Seu nome")}${ponto(id)}</h2>${p.usuario?`<div class="handle">@${esc(p.usuario)}</div>`:""}${p.titulo&&TITULOS[p.titulo]?`<span class="pill titulo-pill">${ib("crown",12)} ${esc(TITULOS[p.titulo])}</span>`:""}</div>
+    <div><h2 style="overflow-wrap:anywhere">${esc(p.nome||"Seu nome")}${ponto(id)}</h2>${S.admins&&S.admins[id]?`<span class="pill admin-pill">🛡 Administrador</span>`:""}${p.usuario?`<div class="handle">@${esc(p.usuario)}</div>`:""}${p.titulo&&TITULOS[p.titulo]?`<span class="pill titulo-pill">${ib("crown",12)} ${esc(TITULOS[p.titulo])}</span>`:""}</div>
     ${(p.emblemas||[]).filter(k=>EMBLEMAS[k]).length?`<div class="emblemas">${p.emblemas.filter(k=>EMBLEMAS[k]).map(k=>`<span class="pill" style="gap:5px">${ib(EMBLEMAS[k][1],13)}${esc(EMBLEMAS[k][0])}</span>`).join("")}</div>`:""}
     ${meta.length?`<div class="meta">${meta.map(m=>`<span>${m}</span>`).join("")}</div>`:""}
     ${p.bio?`<p style="overflow-wrap:anywhere">${esc(p.bio)}</p>`:opts&&opts.preview?`<p class="small muted">Sua bio aparece aqui.</p>`:""}

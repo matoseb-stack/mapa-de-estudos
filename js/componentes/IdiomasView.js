@@ -141,7 +141,7 @@
           <div class="idm-meta-pct">${pct}%</div></div>
         <div class="prog" style="height:10px"><i style="width:${pct}%"></i></div>
       </div>
-      ${app.ehPro && !app.ehPro() ? `<div class="card flat idm-gratis"><span><span class="pro-tag">PRO</span> No plano grátis você faz o nivelamento e a <b>aula 1 de cada trilha</b>. Libere as 360 aulas e os simulados com o Logic Academy Pro.</span><button class="btn sm primary" type="button" data-id="pro">Ver planos · R$ 9,90/mês</button></div>` : ""}
+      ${app.ehPro && !app.ehPro() ? `<div class="card flat idm-gratis"><span><span class="pro-tag">PRO</span> No plano grátis você faz o nivelamento e a <b>aula 1 de cada trilha</b>. Libere as 360 aulas e os simulados com o Logic Academy Pro.</span><button class="btn sm primary" type="button" data-id="pro">Ver planos · R$ 5/mês</button></div>` : ""}
       <div class="idm-resumo">
         <div class="stat"><div class="eyebrow">Seu nível</div><div class="v">${meu ? esc(meu) : "—"}</div><div class="s">${meu ? esc(I.EXAME[meu]) : "Faça o nivelamento"}</div></div>
         <div class="stat"><div class="eyebrow">XP de idiomas</div><div class="v">${perfil.xp}</div><div class="s">${window.LAService ? "cada habilidade também vale XP no perfil, 1 vez por dia" : "acertos + tempo estudado"}</div></div>
