@@ -1,0 +1,2335 @@
+{
+ "nivel": "B1",
+ "skill": "reading",
+ "exame": "DELF B1",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "Une journée de bénévole",
+   "objetivo": "Entender o relato de um dia de voluntariado e acertar o passé composé (avoir ou être) e a concordância do particípio.",
+   "foco": "Passé composé avec avoir et être ; accord du participe passé",
+   "explicacao": [
+    "O passé composé narra ações terminadas: auxiliar avoir ou être no presente + particípio passado. J'ai travaillé ; nous sommes arrivés.",
+    "Usam être os verbos de movimento/mudança (aller, venir, arriver, partir, rentrer, rester, devenir) e os verbos pronominais. Com être, o particípio concorda com o sujeito: elle est rentrée ; ils sont venus.",
+    "Com avoir, o particípio concorda com o objeto direto SÓ quando ele vem ANTES do verbo: la dame m'a remerciée ; les tables que nous avons installées.",
+    "Cuidado: em francês 'assister' é ir a/estar presente; ajudar é aider. E 'actuellement' quer dizer 'no momento', não 'na verdade' (en fait)."
+   ],
+   "vocab": [
+    {
+     "en": "bénévole",
+     "pt": "voluntário(a)"
+    },
+    {
+     "en": "une association",
+     "pt": "associação, ONG"
+    },
+    {
+     "en": "servir",
+     "pt": "servir (uma refeição)"
+    },
+    {
+     "en": "remercier",
+     "pt": "agradecer"
+    },
+    {
+     "en": "sans domicile",
+     "pt": "sem-teto"
+    },
+    {
+     "en": "toucher",
+     "pt": "comover, tocar"
+    },
+    {
+     "en": "nettoyer",
+     "pt": "limpar"
+    },
+    {
+     "en": "avoir besoin de",
+     "pt": "precisar de"
+    }
+   ],
+   "material": {
+    "titulo": "Ma première journée à l'association",
+    "texto": "Depuis septembre, je suis bénévole dans une association qui distribue des repas aux personnes sans domicile. Hier, j'ai travaillé de huit heures à quatorze heures avec une équipe de six personnes. Nous sommes arrivés très tôt pour préparer la salle. Marc, le responsable, a expliqué les tâches : certains ont coupé les légumes, d'autres ont installé les tables. Moi, j'ai servi la soupe et le pain. Vers midi, soixante-dix personnes sont venues manger. Une dame âgée m'a remerciée et m'a raconté sa vie ; elle a perdu son appartement l'année dernière, mais elle espère retrouver un logement bientôt. Cette conversation m'a beaucoup touchée. Après le repas, nous avons tout nettoyé et nous sommes restés un moment pour discuter. Je suis rentrée fatiguée, mais très contente. Beaucoup de mes amis pensent que le bénévolat prend trop de temps. Moi, je trouve au contraire que cela donne un sens à ma semaine. Je n'ai pas encore décidé si je continuerai pendant mes examens, mais je voudrais vraiment rester dans l'association. Si vous avez un après-midi libre, venez nous aider : on a toujours besoin de monde !"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Qu'est-ce que la narratrice a fait elle-même pendant la matinée ?",
+     "op": [
+      "Elle a coupé les légumes.",
+      "Elle a servi la soupe et le pain.",
+      "Elle a installé les tables.",
+      "Elle a expliqué les tâches à l'équipe."
+     ],
+     "r": 1,
+     "exp": "Le texte dit « Moi, j'ai servi la soupe et le pain ». Les autres actions sont faites par d'autres bénévoles ou par Marc."
+    },
+    {
+     "t": "gap",
+     "q": "Nous ___ arrivés très tôt pour préparer la salle.",
+     "resp": [
+      "sommes"
+     ],
+     "exp": "Arriver est un verbe de mouvement : il se conjugue avec être. Nous sommes arrivés."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Hier, j'ai travaillé de huit heures à quatorze heures.",
+     "exp": "Em « huit heures », faça a ligação: /ɥi.tœʁ/ (o t soa). « J'ai » se diz /ʒe/, e « quatorze » /katɔʁz/ termina com o som z."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi la conversation avec la dame âgée a-t-elle touché la narratrice ?",
+     "op": [
+      "La dame a critiqué l'association.",
+      "La dame a refusé de manger.",
+      "La dame a perdu son logement mais garde espoir.",
+      "La dame a proposé de devenir bénévole."
+     ],
+     "r": 2,
+     "exp": "Le texte raconte qu'elle a perdu son appartement mais espère retrouver un logement. Aucune critique ni refus dans le texte."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "suis",
+      "rentrée",
+      "fatiguée",
+      "mais",
+      "très",
+      "contente"
+     ],
+     "resp": "Je suis rentrée fatiguée mais très contente",
+     "exp": "Rentrer prend être et la narratrice est une femme (Camille) : rentrée, fatiguée, contente, avec -e."
+    },
+    {
+     "t": "gap",
+     "q": "Cette conversation m'a beaucoup ___.",
+     "resp": [
+      "touchée",
+      "touchee"
+     ],
+     "exp": "Le pronom m' (= la narratrice, féminin) est objet direct et se place avant le verbe : le participe s'accorde, touchée.",
+     "dica": "TOUCHER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que você fez ontem?",
+     "frase": "Qu'avez-vous fait hier ?",
+     "modelo": "Hier, je suis allé au travail, puis j'ai étudié le français. Le soir, j'ai regardé un film avec ma famille.",
+     "min": 8,
+     "chave": [
+      "hier",
+      "j'ai",
+      "je suis"
+     ],
+     "exp": "Use o passé composé: j'ai + particípio (j'ai étudié) e je suis + particípio para movimento (je suis allé). Fale pelo menos duas frases."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est l'opinion de la narratrice sur le bénévolat ?",
+     "op": [
+      "Il prend trop de temps.",
+      "Il donne un sens à sa semaine.",
+      "Il est mal organisé.",
+      "Il est trop fatigant pour les étudiants."
+     ],
+     "r": 1,
+     "exp": "« Cela donne un sens à ma semaine ». L'idée « prend trop de temps » est l'opinion de ses amis, pas la sienne : piège classique de compréhension."
+    },
+    {
+     "t": "gap",
+     "q": "Les tables que nous avons ___ étaient très lourdes.",
+     "resp": [
+      "installées",
+      "installees"
+     ],
+     "exp": "Avec avoir, le participe s'accorde avec le COD placé avant : les tables (féminin pluriel) → installées.",
+     "dica": "INSTALLER"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Mon année à l'étranger",
+   "objetivo": "Entender um relato de estudos no exterior e distinguir o que é cenário/hábito (imparfait) do que é fato pontual (passé composé).",
+   "foco": "Imparfait et passé composé",
+   "explicacao": [
+    "Imparfait = descrição, hábito, ação em andamento no passado: il faisait froid ; nous faisions du patin tous les week-ends.",
+    "Passé composé = fato pontual, terminado, que faz a história avançar: un étudiant m'a proposé son aide ; j'ai rencontré Étienne.",
+    "Os dois aparecem juntos: Pendant que je cherchais mon chemin (imparfait, cenário), un étudiant m'a parlé (passé composé, evento).",
+    "Formação do imparfait: radical de nous no presente + -ais, -ais, -ait, -ions, -iez, -aient (nous voyons → je voyais ; nous voyions com dois i)."
+   ],
+   "vocab": [
+    {
+     "en": "un échange",
+     "pt": "intercâmbio"
+    },
+    {
+     "en": "au début",
+     "pt": "no começo"
+    },
+    {
+     "en": "avoir du mal à",
+     "pt": "ter dificuldade para"
+    },
+    {
+     "en": "proposer",
+     "pt": "propor, oferecer"
+    },
+    {
+     "en": "annuler",
+     "pt": "cancelar"
+    },
+    {
+     "en": "un voisin",
+     "pt": "vizinho"
+    },
+    {
+     "en": "changé",
+     "pt": "mudado"
+    },
+    {
+     "en": "repartir",
+     "pt": "partir de novo"
+    }
+   ],
+   "material": {
+    "titulo": "Neuf mois à Montréal",
+    "texto": "L'année dernière, j'ai passé neuf mois à Montréal grâce à un programme d'échange. Quand je suis arrivé en septembre, il faisait déjà froid et je ne connaissais personne. Au début, j'avais du mal à comprendre l'accent québécois, et mes voisins riaient quand je parlais du « déjeuner » en pensant au repas de midi, car au Québec c'est le petit-déjeuner. Un soir, pendant que je cherchais mon chemin vers l'université, un étudiant m'a proposé de m'accompagner. C'est comme ça que j'ai rencontré Étienne, qui est devenu mon meilleur ami. Nous nous voyions tous les week-ends : nous faisions du patin sur le lac, nous cuisinions ensemble et il m'expliquait les expressions locales. En décembre, il neigeait tellement que les cours ont été annulés pendant deux jours ! J'ai appris à m'habiller correctement et à ne plus avoir peur de l'hiver. À mon retour, mes parents m'ont trouvé changé : j'étais plus sûr de moi et je parlais plus vite. Aujourd'hui, je pense que cette expérience a été la plus importante de mes études. Si je le pouvais, je repartirais demain."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi l'auteur a-t-il eu des difficultés au début ?",
+     "op": [
+      "Il comprenait mal l'accent québécois.",
+      "Il n'avait pas de logement.",
+      "Il détestait la neige.",
+      "Il parlait trop vite."
+     ],
+     "r": 0,
+     "exp": "« Il avait du mal à comprendre l'accent québécois ». La neige vient seulement en décembre, et parler vite est un changement du retour."
+    },
+    {
+     "t": "gap",
+     "q": "Quand je suis arrivé, il ___ déjà froid.",
+     "resp": [
+      "faisait"
+     ],
+     "exp": "Description du temps = cadre de l'histoire → imparfait : il faisait froid."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Quand je suis arrivé, il faisait déjà froid.",
+     "exp": "Em « faisait », o « ai » do começo se lê /ə/: /fəzɛ/ (quase « fezé »). « Quand je » /kɑ̃ ʒə/ tem vogal nasal, sem pronunciar o d final."
+    },
+    {
+     "t": "mc",
+     "q": "Comment l'auteur a-t-il rencontré Étienne ?",
+     "op": [
+      "Pendant un cours à l'université.",
+      "Dans un club de patinage.",
+      "Grâce à ses voisins.",
+      "Étienne lui a offert son aide quand il était perdu."
+     ],
+     "r": 3,
+     "exp": "Un soir, pendant qu'il cherchait son chemin, un étudiant lui a proposé de l'accompagner : c'était Étienne."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Nous",
+      "nous",
+      "voyions",
+      "tous",
+      "les",
+      "week-ends"
+     ],
+     "resp": "Nous nous voyions tous les week-ends",
+     "exp": "Habitude répétée dans le passé → imparfait (nous voyions). Tous les week-ends est le signal de l'habitude.",
+     "alt": [
+      "Tous les week-ends nous nous voyions"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Un soir, pendant que je ___ mon chemin, un étudiant m'a proposé son aide.",
+     "resp": [
+      "cherchais"
+     ],
+     "exp": "Action en cours au moment où l'événement arrive → imparfait. Après « pendant que » en récit passé, on utilise souvent l'imparfait.",
+     "dica": "CHERCHER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: onde você morava quando era criança?",
+     "frase": "Où habitiez-vous quand vous étiez enfant ?",
+     "modelo": "Quand j'étais enfant, j'habitais dans une petite ville. Mes grands-parents habitaient près de chez nous et je jouais souvent dehors.",
+     "min": 8,
+     "chave": [
+      "habitais",
+      "étais",
+      "quand"
+     ],
+     "exp": "Descrição de um passado habitual pede imparfait: j'habitais, j'étais, je jouais. Não use o passé composé para hábitos."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le sentiment de l'auteur à la fin du texte ?",
+     "op": [
+      "Il regrette son départ.",
+      "Il préfère rester en France.",
+      "Il pense que l'expérience a été inutile.",
+      "Il aimerait repartir."
+     ],
+     "r": 3,
+     "exp": "« Si je le pouvais, je repartirais demain » exprime le désir de repartir. Cette structure (si + imparfait → conditionnel) sera revue à la leçon 6."
+    },
+    {
+     "t": "gap",
+     "q": "Quand j'étais à Montréal, nous nous ___ tous les week-ends.",
+     "resp": [
+      "voyions"
+     ],
+     "exp": "Voir à l'imparfait : nous voyions, avec deux i (radical voy- + -ions). Erreur fréquente : écrire « voyons » (présent).",
+     "dica": "VOIR"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Un stage qui commence mal",
+   "objetivo": "Entender o que aconteceu ANTES de outro fato no passado, usando o plus-que-parfait.",
+   "foco": "Plus-que-parfait",
+   "explicacao": [
+    "Plus-que-parfait = imparfait de avoir/être + particípio passado: j'avais préparé, elle était partie. Mostra uma ação anterior a outra ação no passado.",
+    "Escolha do auxiliar: igual ao passé composé. J'avais étudié (avoir) ; ils étaient arrivés (être, com concordância).",
+    "Exemplo: Quand je suis arrivé, personne ne m'attendait : on avait avancé la réunion. (primeiro: avancer ; depois: arriver).",
+    "Palavras-sinal: déjà, la veille, avant, auparavant, l'année précédente. Cuidado: un stage = estágio (não 'stage' de palco); un courriel = e-mail (Québec/oficial), un mail na linguagem corrente."
+   ],
+   "vocab": [
+    {
+     "en": "un stage",
+     "pt": "estágio"
+    },
+    {
+     "en": "un stagiaire",
+     "pt": "estagiário"
+    },
+    {
+     "en": "un tuteur / une tutrice",
+     "pt": "tutor(a) do estágio"
+    },
+    {
+     "en": "prévenir",
+     "pt": "avisar"
+    },
+    {
+     "en": "la veille",
+     "pt": "na véspera, no dia anterior"
+    },
+    {
+     "en": "les courriers indésirables",
+     "pt": "caixa de spam"
+    },
+    {
+     "en": "avancer une date",
+     "pt": "antecipar uma data"
+    },
+    {
+     "en": "rassurer",
+     "pt": "tranquilizar"
+    }
+   ],
+   "material": {
+    "titulo": "Premier jour de stage",
+    "texto": "Lundi dernier, j'ai commencé mon stage dans une agence de communication, mais le début a été compliqué. J'avais pourtant bien préparé ce premier jour : j'avais repassé ma chemise, j'avais étudié le site de l'entreprise et j'étais parti de chez moi une heure plus tôt. Malheureusement, quand je suis arrivé devant l'immeuble, personne ne m'attendait. La réceptionniste m'a expliqué que ma tutrice, Mme Lefèvre, était en réunion, car on avait avancé la date de la présentation d'un client. Personne ne m'avait prévenu ! J'ai attendu quarante minutes dans le hall. Quand elle est enfin descendue, elle s'est excusée : elle avait envoyé un courriel la veille, mais il était arrivé dans mes courriers indésirables. Après cela, tout s'est mieux passé. Elle m'a présenté à l'équipe, puis elle m'a donné un ordinateur et un premier dossier à traiter. À la fin de la journée, j'avais déjà compris que l'ambiance était agréable. Mes collègues m'ont raconté que, l'année précédente, un stagiaire avait oublié la clé de la salle de réunion et que toute l'équipe était restée dehors ! Ça m'a rassuré. Maintenant, je vérifie toujours mes courriers indésirables."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi personne n'attendait le narrateur à son arrivée ?",
+     "op": [
+      "Il était arrivé trop tard.",
+      "Il s'était trompé de jour.",
+      "Mme Lefèvre était malade.",
+      "La date d'une présentation avait été avancée."
+     ],
+     "r": 3,
+     "exp": "La réceptionniste explique que la tutrice était en réunion « car on avait avancé la date de la présentation d'un client »."
+    },
+    {
+     "t": "gap",
+     "q": "J'avais bien préparé ce jour : j'___ repassé ma chemise.",
+     "resp": [
+      "avais"
+     ],
+     "exp": "Plus-que-parfait de repasser : j'avais repassé (imparfait de avoir + participe)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Personne ne m'avait prévenu de ce changement.",
+     "exp": "« Personne » se dit /pɛʁsɔn/ : ne prononcez pas le -e final comme en portugais. « Prévenu » : /pʁevny/, avec le son u français (lèvres arrondies, langue en avant)."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi le narrateur n'avait-il pas lu le message de sa tutrice ?",
+     "op": [
+      "Le message était dans ses courriers indésirables.",
+      "Il avait effacé le message.",
+      "La tutrice l'avait envoyé trop tard.",
+      "Il n'avait pas encore d'ordinateur."
+     ],
+     "r": 0,
+     "exp": "« Il était arrivé dans mes courriers indésirables » : le message est bien arrivé, mais dans le spam."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Elle",
+      "avait",
+      "envoyé",
+      "un",
+      "courriel",
+      "la",
+      "veille"
+     ],
+     "resp": "Elle avait envoyé un courriel la veille",
+     "exp": "« La veille » signale une action antérieure : plus-que-parfait (avait envoyé).",
+     "alt": [
+      "La veille elle avait envoyé un courriel"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Quand je suis arrivé devant l'immeuble, tout le monde ___ déjà parti.",
+     "resp": [
+      "était"
+     ],
+     "exp": "Partir se conjugue avec être : était parti. Le mot « déjà » confirme l'antériorité.",
+     "dica": "ÊTRE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que você tinha preparado antes do seu último dia importante (prova, entrevista, viagem)?",
+     "frase": "Qu'aviez-vous préparé avant votre dernier examen, entretien ou voyage ?",
+     "modelo": "Avant mon dernier entretien, j'avais relu mon CV et j'avais cherché des informations sur l'entreprise. J'étais aussi parti de chez moi très tôt.",
+     "min": 8,
+     "chave": [
+      "avais",
+      "avant",
+      "étais"
+     ],
+     "exp": "Use o plus-que-parfait para o que veio ANTES: j'avais relu, j'avais préparé. Depois conte o evento com passé composé."
+    },
+    {
+     "t": "mc",
+     "q": "Que fait le narrateur depuis cette expérience ?",
+     "op": [
+      "Il arrive toujours plus tôt.",
+      "Il ne fait plus confiance à la réceptionniste.",
+      "Il vérifie ses courriers indésirables.",
+      "Il appelle sa tutrice chaque matin."
+     ],
+     "r": 2,
+     "exp": "La dernière phrase : « Maintenant, je vérifie toujours mes courriers indésirables »."
+    },
+    {
+     "t": "gap",
+     "q": "Je n'ai pas pu entrer parce que j'___ mon badge à la maison.",
+     "resp": [
+      "avais laissé",
+      "avais oublié"
+     ],
+     "exp": "Le badge a été laissé AVANT l'impossibilité d'entrer → plus-que-parfait : j'avais laissé / j'avais oublié."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "La ressourcerie ouvre ses portes",
+   "objetivo": "Entender um anúncio sobre o futuro (data, horários, condições) e usar o futur simple, inclusive os irregulares.",
+   "foco": "Futur simple et « si + présent »",
+   "explicacao": [
+    "Futur simple = infinitivo + terminações -ai, -as, -a, -ons, -ez, -ont: j'ouvrirai, ils récupéreront. Verbos em -re perdem o -e: vendre → je vendrai.",
+    "Irregulares frequentes: être → serai, avoir → aurai, aller → irai, faire → ferai, pouvoir → pourrai, venir → viendrai, devoir → devrai, falloir → il faudra, voir → verrai.",
+    "Frase com condição possível: si + présent, futur. Si tout se passe bien, nous ouvrirons une deuxième boutique. (Nunca « si + futur ».)",
+    "Cuidado: « une ressourcerie » é um lugar que recicla e revende objetos; « récupérer » = recolher/reaver, não 'recuperar-se' de doença (aí se diz guérir)."
+   ],
+   "vocab": [
+    {
+     "en": "une ressourcerie",
+     "pt": "loja que recolhe, conserta e revende objetos"
+    },
+    {
+     "en": "récupérer",
+     "pt": "recolher, reaproveitar"
+    },
+    {
+     "en": "réparer",
+     "pt": "consertar"
+    },
+    {
+     "en": "jeter",
+     "pt": "jogar fora"
+    },
+    {
+     "en": "une inauguration",
+     "pt": "inauguração"
+    },
+    {
+     "en": "à domicile",
+     "pt": "em casa, a domicílio"
+    },
+    {
+     "en": "gratuitement",
+     "pt": "gratuitamente"
+    },
+    {
+     "en": "à l'avance",
+     "pt": "com antecedência"
+    }
+   ],
+   "material": {
+    "titulo": "Une seconde vie pour les objets",
+    "texto": "Bonne nouvelle pour les habitants de Villeneuve : la ressourcerie « Seconde Vie » ouvrira ses portes le samedi 14 mars, rue des Tilleuls. Cette association récupérera les objets dont les gens n'ont plus besoin (meubles, vélos, vêtements, livres) pour les réparer et les revendre à petit prix. Ainsi, rien ne sera jeté inutilement. Le jour de l'inauguration, le maire coupera le ruban à dix heures et un atelier de réparation de vélos aura lieu à quatorze heures. Les enfants pourront peindre de vieux meubles, et chaque visiteur recevra un sac en tissu. La boutique sera ouverte du mardi au samedi, de dix heures à dix-huit heures. Les personnes qui voudront donner des objets viendront les déposer à l'entrée ; pour les meubles trop lourds, l'équipe se déplacera gratuitement à domicile, mais il faudra téléphoner une semaine à l'avance. L'association cherche encore des bénévoles : ceux qui nous rejoindront apprendront à réparer des appareils et rencontreront des gens passionnés. « Nous espérons que les habitants viendront nombreux, explique la directrice, Sophie Marchal. Si tout se passe bien, nous ouvrirons une deuxième boutique l'an prochain. » Pour plus d'informations, consultez notre site internet."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que fera l'association avec les objets récupérés ?",
+     "op": [
+      "Elle les donnera gratuitement.",
+      "Elle les réparera puis les vendra.",
+      "Elle les jettera.",
+      "Elle les exposera dans un musée."
+     ],
+     "r": 1,
+     "exp": "« Pour les réparer et les revendre à petit prix ». Les objets ne sont pas donnés, et « rien ne sera jeté »."
+    },
+    {
+     "t": "gap",
+     "q": "La ressourcerie ___ ses portes le 14 mars.",
+     "resp": [
+      "ouvrira"
+     ],
+     "exp": "Ouvrir se conjugue comme un verbe en -er au futur : j'ouvrirai, il ouvrira.",
+     "dica": "OUVRIR"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Les enfants pourront peindre de vieux meubles.",
+     "exp": "Pourront : /puʁɔ̃/, nasale « on » ; le « t » final ne se prononce pas. Futur de pouvoir : radical « pourr- » avec deux r."
+    },
+    {
+     "t": "mc",
+     "q": "Que doit faire une personne qui veut donner un meuble très lourd ?",
+     "op": [
+      "Le déposer à l'entrée de la boutique.",
+      "Téléphoner à l'association une semaine avant.",
+      "Attendre le jour de l'inauguration.",
+      "Payer le transport."
+     ],
+     "r": 1,
+     "exp": "Le déplacement est gratuit, mais « il faudra téléphoner une semaine à l'avance »."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Chaque",
+      "visiteur",
+      "recevra",
+      "un",
+      "sac",
+      "en",
+      "tissu"
+     ],
+     "resp": "Chaque visiteur recevra un sac en tissu",
+     "exp": "Futur régulier de recevoir : il recevra (radical recevr-). « Chaque » est toujours au singulier."
+    },
+    {
+     "t": "gap",
+     "q": "Si tout se passe bien, nous ___ une deuxième boutique l'an prochain.",
+     "resp": [
+      "ouvrirons"
+     ],
+     "exp": "Structure : si + présent → futur. Nous ouvrirons (et non « nous ouvrons » ni « si nous ouvrirons »).",
+     "dica": "OUVRIR"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que você fará no próximo fim de semana?",
+     "frase": "Que ferez-vous le week-end prochain ?",
+     "modelo": "Samedi, j'irai chez des amis et nous ferons un barbecue. Dimanche, je me reposerai et j'étudierai le français.",
+     "min": 8,
+     "chave": [
+      "irai",
+      "ferai",
+      "serai",
+      "samedi",
+      "dimanche"
+     ],
+     "exp": "Use o futur simple: j'irai, je ferai, je serai. Atenção: faire → je ferai (não « je faizerai »)."
+    },
+    {
+     "t": "mc",
+     "q": "Quel avantage de la ressourcerie est mentionné dans l'article ?",
+     "op": [
+      "Elle vend uniquement des produits neufs.",
+      "Elle crée des emplois pour tous les habitants.",
+      "Elle permet de réduire les déchets.",
+      "Elle remplace la déchetterie de la ville."
+     ],
+     "r": 2,
+     "exp": "« Ainsi, rien ne sera jeté inutilement » : l'idée est de réduire les déchets. Les autres options ne sont pas dans le texte."
+    },
+    {
+     "t": "gap",
+     "q": "Pour les meubles lourds, il ___ téléphoner une semaine à l'avance.",
+     "resp": [
+      "faudra"
+     ],
+     "exp": "Falloir est impersonnel et irrégulier au futur : il faudra.",
+     "dica": "FALLOIR"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Dormir mieux : les conseils du docteur",
+   "objetivo": "Entender conselhos e desejos de um texto de saúde e produzir o conditionnel présent.",
+   "foco": "Conditionnel présent : conseil, désir, politesse",
+   "explicacao": [
+    "Conditionnel présent = radical do futuro + terminações do imparfait (-ais, -ais, -ait, -ions, -iez, -aient): je voudrais, vous devriez, il faudrait.",
+    "Usos: conselho (Vous devriez vous coucher tôt), desejo (J'aimerais dormir plus), polidez (Pourriez-vous m'aider ?), fato incerto (Il vaudrait mieux...).",
+    "À votre place, je + conditionnel é uma ótima fórmula para aconselhar: À votre place, je ne boirais plus de café.",
+    "Cuidado: « sensible » em francês = sensível (emocionalmente), mas « raisonnable » = sensato. Para 'sensato', diga raisonnable, não sensible."
+   ],
+   "vocab": [
+    {
+     "en": "un conseil",
+     "pt": "conselho"
+    },
+    {
+     "en": "se coucher",
+     "pt": "deitar-se"
+    },
+    {
+     "en": "s'endormir",
+     "pt": "adormecer"
+    },
+    {
+     "en": "éviter",
+     "pt": "evitar"
+    },
+    {
+     "en": "un écran",
+     "pt": "tela"
+    },
+    {
+     "en": "un progrès",
+     "pt": "progresso"
+    },
+    {
+     "en": "il vaudrait mieux",
+     "pt": "seria melhor"
+    },
+    {
+     "en": "une consultation",
+     "pt": "consulta médica"
+    }
+   ],
+   "material": {
+    "titulo": "Mieux dormir en dix jours",
+    "texto": "Vous dormez mal et vous êtes fatigué toute la journée ? Voici quelques conseils du docteur Lambert, médecin du sommeil. « D'abord, vous devriez vous coucher à la même heure tous les soirs, même le week-end. Votre corps aime les habitudes. Ensuite, il faudrait éviter les écrans pendant l'heure qui précède le coucher : la lumière du téléphone empêche de s'endormir. Je vous conseillerais aussi de ne plus boire de café après quinze heures. Beaucoup de patients me disent qu'ils aimeraient dormir huit heures, mais qu'ils n'ont pas le temps. À mon avis, ils pourraient commencer par dormir trente minutes de plus : ce serait déjà un progrès. Enfin, si vous n'arrivez pas à vous endormir, ne restez pas au lit. Il vaudrait mieux vous lever, lire un livre quelques minutes, puis revenir. » Marion, 34 ans, a suivi ces conseils : « Je voudrais dire que c'est facile, mais ce n'est pas vrai. Pourtant, après deux semaines, je me réveille moins fatiguée. Je ne pourrais plus revenir en arrière ! » Le docteur Lambert précise qu'une consultation resterait nécessaire si les problèmes duraient plus d'un mois."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que recommande le médecin à propos des écrans ?",
+     "op": [
+      "Les utiliser pour s'endormir.",
+      "Les éviter avant de se coucher.",
+      "Les éteindre seulement le week-end.",
+      "Les installer dans la chambre."
+     ],
+     "r": 1,
+     "exp": "« Il faudrait éviter les écrans pendant l'heure qui précède le coucher ». Le téléphone empêche de s'endormir."
+    },
+    {
+     "t": "gap",
+     "q": "Vous ___ vous coucher à la même heure tous les soirs.",
+     "resp": [
+      "devriez"
+     ],
+     "exp": "Conseil poli : vous devriez + infinitif (conditionnel de devoir).",
+     "dica": "DEVOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je vous conseillerais de ne plus boire de café après quinze heures.",
+     "exp": "Dans « conseillerais », prononcez « ais » final /ɛ/ ; « quinze » /kɛ̃z/, avec nasale puis z. Évitez de dire « conselhéria »."
+    },
+    {
+     "t": "mc",
+     "q": "Que doit faire une personne qui n'arrive pas à s'endormir ?",
+     "op": [
+      "Rester au lit les yeux fermés.",
+      "Boire un café.",
+      "Se lever quelques minutes puis revenir au lit.",
+      "Regarder son téléphone."
+     ],
+     "r": 2,
+     "exp": "« Il vaudrait mieux vous lever, lire un livre quelques minutes, puis revenir »."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "voudrais",
+      "dormir",
+      "huit",
+      "heures",
+      "par",
+      "nuit"
+     ],
+     "resp": "Je voudrais dormir huit heures par nuit",
+     "exp": "Désir poli : je voudrais + infinitif. Attention : « par nuit » (et non « por noite »)."
+    },
+    {
+     "t": "gap",
+     "q": "À votre place, je ne ___ plus de café après quinze heures.",
+     "resp": [
+      "boirais"
+     ],
+     "exp": "Boire : radical irrégulier boir- au conditionnel et au futur. À votre place, je ne boirais plus.",
+     "dica": "BOIRE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: que conselho você daria a um amigo que dorme mal?",
+     "frase": "Quel conseil donneriez-vous à un ami qui dort mal ?",
+     "modelo": "À sa place, je me coucherais plus tôt et je ne regarderais plus mon téléphone le soir. Il pourrait aussi faire du sport.",
+     "min": 8,
+     "chave": [
+      "devrait",
+      "pourrait",
+      "conseillerais",
+      "place"
+     ],
+     "exp": "Use: À sa place, je + conditionnel ; Il devrait / il pourrait + infinitif. O conditionnel suaviza o conselho."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est l'attitude de Marion ?",
+     "op": [
+      "Elle trouve les conseils inutiles.",
+      "Elle pense que c'est très facile.",
+      "Elle a arrêté après deux semaines.",
+      "Elle admet que c'est difficile mais se sent mieux."
+     ],
+     "r": 3,
+     "exp": "Elle dit que ce n'est pas facile (« Je voudrais dire que c'est facile, mais ce n'est pas vrai ») et que pourtant elle se réveille moins fatiguée."
+    },
+    {
+     "t": "gap",
+     "q": "Il ___ mieux vous lever, lire un livre quelques minutes, puis revenir.",
+     "resp": [
+      "vaudrait",
+      "serait"
+     ],
+     "exp": "Expression : il vaut mieux → il vaudrait mieux (seria melhor). Valoir est irrégulier : vaudr-.",
+     "dica": "VALOIR"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Et si les réseaux disparaissaient ?",
+   "objetivo": "Entender hipóteses sobre a mídia e as redes sociais e usar a estrutura si + imparfait → conditionnel.",
+   "foco": "Hypothèse : si + imparfait, conditionnel présent",
+   "explicacao": [
+    "Hipótese irreal ou improvável no presente: si + imparfait, conditionnel présent. Si je n'avais pas de notifications, je me concentrerais mieux.",
+    "Nunca use o conditionnel depois de si: ERRADO « si j'aurais » ; CERTO « si j'avais ». O futur e o conditionnel ficam na outra metade da frase.",
+    "As duas metades podem inverter: Je perdrais le contact si on supprimait les réseaux. A conjugação não muda.",
+    "Para uma condição possível, use si + présent + futur (lição 4). Compare: Si j'ai le temps, je viendrai (possível) / Si j'avais le temps, je viendrais (improvável)."
+   ],
+   "vocab": [
+    {
+     "en": "un réseau social",
+     "pt": "rede social"
+    },
+    {
+     "en": "une notification",
+     "pt": "notificação"
+    },
+    {
+     "en": "l'actualité / les actualités",
+     "pt": "as notícias"
+    },
+    {
+     "en": "la presse",
+     "pt": "a imprensa"
+    },
+    {
+     "en": "un sondage",
+     "pt": "pesquisa de opinião"
+    },
+    {
+     "en": "s'informer",
+     "pt": "informar-se"
+    },
+    {
+     "en": "un soulagement",
+     "pt": "um alívio"
+    },
+    {
+     "en": "se concentrer",
+     "pt": "concentrar-se"
+    }
+   ],
+   "material": {
+    "titulo": "Sans réseaux sociaux : trois jeunes répondent",
+    "texto": "Imaginez : demain matin, plus de réseaux sociaux. Qu'est-ce qui changerait dans votre vie ? Nous avons posé la question à trois jeunes. Léa, 19 ans, étudiante en journalisme, avoue qu'elle serait d'abord perdue : « Si je n'avais plus mon application d'actualités, je ne saurais pas comment m'informer. Mais je lirais peut-être davantage la presse papier, et je regarderais les journaux télévisés avec mes parents. » Karim, 24 ans, est technicien. Pour lui, ce serait plutôt un soulagement : « Si je n'avais pas de notifications toute la journée, je me concentrerais mieux au travail. Je téléphonerais à mes amis au lieu de leur envoyer des messages. » Enfin, Inès, 17 ans, est plus inquiète : « Si on supprimait les réseaux, je perdrais le contact avec mes cousins qui vivent au Canada. Je ne pourrais pas voir leurs photos, et on se parlerait beaucoup moins. » Selon un sondage récent, 60 % des jeunes de 15 à 25 ans passeraient plus de temps avec leurs proches si les réseaux n'existaient pas. Mais les spécialistes restent prudents : même sans ces applications, nous trouverions probablement d'autres moyens de nous distraire. Et vous, que feriez-vous ?"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi Léa serait-elle d'abord perdue ?",
+     "op": [
+      "Elle ne pourrait plus parler avec ses parents.",
+      "Elle n'aurait plus son moyen habituel de s'informer.",
+      "Elle devrait changer d'études.",
+      "Elle déteste la presse papier."
+     ],
+     "r": 1,
+     "exp": "Elle dit : « Si je n'avais plus mon application d'actualités, je ne saurais pas comment m'informer ». Elle pense même lire la presse papier."
+    },
+    {
+     "t": "gap",
+     "q": "Si je n'avais plus de téléphone, je ne ___ pas comment m'informer.",
+     "resp": [
+      "saurais"
+     ],
+     "exp": "Après une hypothèse en si + imparfait, on met le conditionnel : savoir → je saurais (radical saur-).",
+     "dica": "SAVOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Si je n'avais pas de notifications, je me concentrerais mieux.",
+     "exp": "« Concentrerais » : /kɔ̃sɑ̃tʁəʁɛ/, trois sons nasaux/r à enchaîner. Gardez le rythme : deux groupes de mots, avec une petite pause après la virgule."
+    },
+    {
+     "t": "mc",
+     "q": "Que ferait Karim sans notifications ?",
+     "op": [
+      "Il écrirait plus de messages.",
+      "Il lirait la presse.",
+      "Il changerait de métier.",
+      "Il téléphonerait à ses amis."
+     ],
+     "r": 3,
+     "exp": "« Je téléphonerais à mes amis au lieu de leur envoyer des messages »."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Si",
+      "on",
+      "supprimait",
+      "les",
+      "réseaux",
+      "je",
+      "perdrais",
+      "le",
+      "contact"
+     ],
+     "resp": "Si on supprimait les réseaux je perdrais le contact",
+     "exp": "Si + imparfait (supprimait), puis conditionnel (perdrais).",
+     "alt": [
+      "Je perdrais le contact si on supprimait les réseaux"
+     ]
+    },
+    {
+     "t": "gap",
+     "q": "Si j'___ plus de temps libre, je ferais du bénévolat.",
+     "resp": [
+      "avais"
+     ],
+     "exp": "Après si, jamais de conditionnel : on utilise l'imparfait (j'avais) et le conditionnel va dans l'autre partie (je ferais)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que você faria se ganhasse na loteria?",
+     "frase": "Que feriez-vous si vous gagniez à la loterie ?",
+     "modelo": "Si je gagnais à la loterie, je voyagerais dans le monde entier et j'achèterais une maison pour mes parents.",
+     "min": 8,
+     "chave": [
+      "ferais",
+      "voyagerais",
+      "achèterais",
+      "aiderais"
+     ],
+     "exp": "Estrutura: Si je gagnais..., je ferais / j'achèterais / je voyagerais. Não diga « si je gagnerais »."
+    },
+    {
+     "t": "mc",
+     "q": "Que disent les spécialistes à la fin de l'article ?",
+     "op": [
+      "Les gens ne chercheraient aucune distraction.",
+      "Les gens trouveraient probablement d'autres distractions.",
+      "Les réseaux sont indispensables à la vie sociale.",
+      "Les réseaux devraient être interdits."
+     ],
+     "r": 1,
+     "exp": "« Même sans ces applications, nous trouverions probablement d'autres moyens de nous distraire »."
+    },
+    {
+     "t": "gap",
+     "q": "Si les réseaux n'___ pas, 60 % des jeunes passeraient plus de temps avec leurs proches.",
+     "resp": [
+      "existaient"
+     ],
+     "exp": "Hypothèse irréelle : si + imparfait. Existaient (ils/elles) s'écrit avec -aient, qui se prononce comme -ait.",
+     "dica": "EXISTER"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Mieux vivre ensemble",
+   "objetivo": "Entender regras e opiniões sobre a vida em sociedade e usar o subjonctif présent depois de il faut que, vouloir que e verbos de emoção.",
+   "foco": "Subjonctif présent après il faut que, vouloir que, émotion",
+   "explicacao": [
+    "Subjonctif présent: radical de ils no presente + -e, -es, -e, -ions, -iez, -ent. Il faut que vous lisiez ; je veux qu'ils parlent.",
+    "Irregulares muito cobrados: être → soit ; avoir → ait ; aller → aille ; faire → fasse ; pouvoir → puisse ; savoir → sache ; vouloir → veuille.",
+    "Gatilhos: il faut que, il est important que, je veux / je souhaite que, je suis content / heureux / désolé que, bien que, pour que, avant que.",
+    "Depois de certeza usa-se o indicatif (je pense / je crois que + indicatif); com dúvida ou negação, subjonctif (je ne crois pas que + subjonctif)."
+   ],
+   "vocab": [
+    {
+     "en": "le voisin",
+     "pt": "vizinho"
+    },
+    {
+     "en": "le bruit",
+     "pt": "barulho"
+    },
+    {
+     "en": "une poubelle",
+     "pt": "lixeira"
+    },
+    {
+     "en": "une plainte",
+     "pt": "reclamação"
+    },
+    {
+     "en": "respecter",
+     "pt": "respeitar"
+    },
+    {
+     "en": "déranger",
+     "pt": "incomodar"
+    },
+    {
+     "en": "la mairie",
+     "pt": "prefeitura"
+    },
+    {
+     "en": "s'entendre bien",
+     "pt": "dar-se bem"
+    }
+   ],
+   "material": {
+    "titulo": "Un guide pour les voisins",
+    "texto": "Le bruit, les poubelles, les vélos dans l'escalier : la vie en immeuble n'est pas toujours simple. Pour que tout le monde s'entende, la mairie de Nantes vient de publier un petit guide. Elle rappelle d'abord qu'il faut que chaque habitant respecte le silence après vingt-deux heures. Ensuite, elle demande que les voisins préviennent les autres avant une fête, même s'ils pensent que le bruit ne dérangera personne. « Nous voulons que les gens se parlent plus souvent », explique Hélène Roux, responsable du projet. Le guide conseille aussi de laisser un mot aimable plutôt que de crier dans le couloir : il vaut mieux qu'on explique calmement le problème. Certains habitants sont ravis que la mairie s'occupe de ces questions. D'autres doutent que ce guide change vraiment les choses. « Je suis content qu'on y pense, mais je ne crois pas que les gens le lisent », dit Paul, 58 ans. Pourtant, dans la résidence des Lilas, où l'expérience a commencé en janvier, les plaintes ont baissé de moitié. Les habitants ont même organisé un repas de voisins, bien que ce soit un peu compliqué. Avant que l'été arrive, la mairie souhaite que cinquante immeubles aient reçu le guide."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel est l'objectif du guide publié par la mairie ?",
+     "op": [
+      "Punir les habitants bruyants.",
+      "Interdire toutes les fêtes.",
+      "Aider les voisins à mieux s'entendre.",
+      "Faire baisser les loyers."
+     ],
+     "r": 2,
+     "exp": "« Pour que tout le monde s'entende » et « Nous voulons que les gens se parlent plus souvent » : le but est de mieux vivre ensemble, pas de punir."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut que chacun ___ un effort pour réduire le bruit.",
+     "resp": [
+      "fasse"
+     ],
+     "exp": "Faire au subjonctif : que je fasse, que tu fasses, qu'il fasse. Après il faut que, on utilise toujours le subjonctif.",
+     "dica": "FAIRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je suis content que la mairie s'occupe de ces questions.",
+     "exp": "« Content » : /kɔ̃tɑ̃/ (deux nasales). « Mairie » : /meʁi/. Après « content que », rappelez-vous que le verbe suivant est au subjonctif."
+    },
+    {
+     "t": "mc",
+     "q": "Que pense Paul du guide ?",
+     "op": [
+      "Il est certain que le guide changera tout.",
+      "Il apprécie l'idée mais doute que les gens le lisent.",
+      "Il refuse de respecter les règles.",
+      "Il a rédigé le guide lui-même."
+     ],
+     "r": 1,
+     "exp": "« Je suis content qu'on y pense, mais je ne crois pas que les gens le lisent » : appréciation positive de l'idée et doute sur l'effet réel."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Nous",
+      "voulons",
+      "que",
+      "les",
+      "gens",
+      "se",
+      "parlent",
+      "plus",
+      "souvent"
+     ],
+     "resp": "Nous voulons que les gens se parlent plus souvent",
+     "exp": "Vouloir que + subjonctif : parlent (identique à l'indicatif pour les verbes en -er, mais c'est du subjonctif)."
+    },
+    {
+     "t": "gap",
+     "q": "Il faut que vous ___ ce guide avant la réunion.",
+     "resp": [
+      "lisiez"
+     ],
+     "exp": "Lire au subjonctif : que vous lisiez (radical lis- + -iez). Ne dites pas « que vous lez ».",
+     "dica": "LIRE"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que é importante para você numa boa vizinhança?",
+     "frase": "Pour vous, qu'est-ce qui est important pour bien s'entendre avec ses voisins ?",
+     "modelo": "Pour moi, il est important que les voisins soient polis et qu'ils respectent le silence le soir. Je voudrais aussi qu'on se dise bonjour.",
+     "min": 8,
+     "chave": [
+      "important",
+      "faut",
+      "voudrais",
+      "respecter",
+      "silence"
+     ],
+     "exp": "Estrutura: Il est important que + subjonctif (soient, respectent). Je voudrais qu'on + subjonctif (dise)."
+    },
+    {
+     "t": "mc",
+     "q": "Quel résultat a été observé dans la résidence des Lilas ?",
+     "op": [
+      "Il y a eu plus de plaintes.",
+      "Les plaintes ont diminué de moitié.",
+      "Les loyers ont baissé.",
+      "Le guide a été supprimé."
+     ],
+     "r": 1,
+     "exp": "« Les plaintes ont baissé de moitié » : moitié = metade. Piège : « baissé » ne parle ni des loyers ni du guide."
+    },
+    {
+     "t": "gap",
+     "q": "Les habitants ont organisé un repas de voisins, bien que ce ___ compliqué.",
+     "resp": [
+      "soit"
+     ],
+     "exp": "Bien que est suivi du subjonctif. Être : que ce soit (et non « bien que c'est »).",
+     "dica": "ÊTRE"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Trouver un logement étudiant",
+   "objetivo": "Ler anúncios de moradia e entender os pronomes relativos qui, que, où e ce qui.",
+   "foco": "Pronoms relatifs : qui, que, où, ce qui",
+   "explicacao": [
+    "QUI substitui o sujeito: un studio qui se trouve près du campus. QUE substitui o objeto direto: la chambre que nous proposons. Depois de que, vem sujeito + verbo.",
+    "OÙ indica lugar ou tempo: un quartier où il y a des restaurants ; le jour où je suis arrivé. CE QUI / CE QUE retomam uma ideia inteira: Je prépare le petit-déjeuner, ce qui permet de rencontrer quelqu'un.",
+    "Erro comum de brasileiros: dizer « le studio que il se trouve » (errado). Use qui quando o próximo termo é o verbo. Elisão: que + il = qu'il, mas qui não elide.",
+    "Cuidado: « un loyer » = aluguel; « une location » = locação; « charges comprises » = condomínio/contas incluídos. « Meublé » = mobiliado."
+   ],
+   "vocab": [
+    {
+     "en": "un loyer",
+     "pt": "aluguel"
+    },
+    {
+     "en": "les charges",
+     "pt": "despesas (condomínio, água...)"
+    },
+    {
+     "en": "meublé",
+     "pt": "mobiliado"
+    },
+    {
+     "en": "un colocataire",
+     "pt": "colega de apartamento"
+    },
+    {
+     "en": "une cour",
+     "pt": "pátio"
+    },
+    {
+     "en": "un propriétaire",
+     "pt": "proprietário"
+    },
+    {
+     "en": "chez l'habitant",
+     "pt": "em casa de família"
+    },
+    {
+     "en": "louer",
+     "pt": "alugar"
+    }
+   ],
+   "material": {
+    "titulo": "Trois annonces pour étudiants",
+    "texto": "Annonce 1 — Studio meublé à Grenoble. Voici un studio qui se trouve à cinq minutes du campus, dans un quartier où il y a beaucoup de restaurants et de commerces. Il dispose d'une cuisine que le propriétaire vient de rénover. Il est idéal pour un étudiant qui préfère vivre seul. Loyer : 480 euros par mois, charges comprises. Annonce 2 — Chambre en colocation à Lyon. Nous sommes deux étudiants qui cherchons un troisième colocataire. L'appartement, que nous louons depuis deux ans, est situé près du métro. La chambre que nous proposons donne sur une cour calme où l'on peut garer son vélo. Nous voudrions quelqu'un qui aime cuisiner et qui ne fume pas. Loyer : 360 euros. Annonce 3 — Chambre chez l'habitant à Lille. Je suis une retraitée qui aime la compagnie des jeunes. Ma maison, où j'habite depuis trente ans, a une chambre que je loue aux étudiants étrangers. Je prépare le petit-déjeuner, ce qui permet de rencontrer quelqu'un chaque matin. C'est idéal pour les étudiants qui veulent pratiquer le français. Loyer : 420 euros, petit-déjeuner compris."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quel logement est le moins cher ?",
+     "op": [
+      "Le studio de Grenoble.",
+      "La chambre de Lyon.",
+      "La chambre de Lille.",
+      "Les trois logements ont le même prix."
+     ],
+     "r": 1,
+     "exp": "Grenoble : 480 € ; Lyon : 360 € ; Lille : 420 €. Lyon est le moins cher (mais le loyer de Lille inclut le petit-déjeuner)."
+    },
+    {
+     "t": "gap",
+     "q": "C'est un quartier ___ il y a beaucoup de restaurants.",
+     "resp": [
+      "où"
+     ],
+     "exp": "Où remplace un lieu : un quartier où il y a... Ne confondez pas avec « ou » (alternative, sans accent)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Voici un studio qui se trouve à cinq minutes du campus.",
+     "exp": "« Studio » : /stydjo/ avec le u français ; « campus » /kɑ̃pys/ : le s final se prononce, contrairement à beaucoup de mots en -s."
+    },
+    {
+     "t": "mc",
+     "q": "Un étudiant étranger veut parler français chaque matin et ne pas préparer son petit-déjeuner. Quelle annonce lui convient ?",
+     "op": [
+      "L'annonce 1 (Grenoble).",
+      "L'annonce 2 (Lyon).",
+      "L'annonce 3 (Lille).",
+      "Aucune des trois."
+     ],
+     "r": 2,
+     "exp": "À Lille, la propriétaire prépare le petit-déjeuner : on rencontre quelqu'un chaque matin et on peut pratiquer le français. Lyon ne propose pas cela."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "La",
+      "chambre",
+      "que",
+      "nous",
+      "proposons",
+      "donne",
+      "sur",
+      "une",
+      "cour"
+     ],
+     "resp": "La chambre que nous proposons donne sur une cour",
+     "exp": "Que est COD de « proposons » : la chambre (que nous proposons) donne sur une cour. Attention à l'ordre : sujet (nous) + verbe après que."
+    },
+    {
+     "t": "gap",
+     "q": "L'appartement ___ nous louons depuis deux ans est près du métro.",
+     "resp": [
+      "que"
+     ],
+     "exp": "On loue l'appartement (COD) : on utilise que. Si l'on met qui, il faudrait un verbe juste après : « qui est près du métro »."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: descreva o bairro onde você mora.",
+     "frase": "Pouvez-vous décrire le quartier où vous habitez ?",
+     "modelo": "J'habite dans un quartier qui est calme. Il y a un parc où je vais courir et une boulangerie que j'adore.",
+     "min": 8,
+     "chave": [
+      "habite",
+      "quartier",
+      "parc",
+      "maison"
+     ],
+     "exp": "Use qui, que e où: un quartier qui est calme, une boulangerie que j'adore, un parc où je vais. Duas ou três frases bastam."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle personne cherche-t-on pour la colocation à Lyon ?",
+     "op": [
+      "Quelqu'un qui fume et qui a une voiture.",
+      "Quelqu'un qui aime cuisiner et qui ne fume pas.",
+      "Un couple d'étudiants.",
+      "Un étudiant qui reste seulement un mois."
+     ],
+     "r": 1,
+     "exp": "« Nous voudrions quelqu'un qui aime cuisiner et qui ne fume pas »."
+    },
+    {
+     "t": "gap",
+     "q": "Elle prépare le petit-déjeuner, ___ permet de rencontrer quelqu'un chaque matin.",
+     "resp": [
+      "ce qui"
+     ],
+     "exp": "Ce qui reprend toute la phrase précédente (le fait de préparer le petit-déjeuner) et fait fonction de sujet de « permet »."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "La voix du podcast",
+   "objetivo": "Entender um retrato de jornalista e usar dont e ce dont.",
+   "foco": "Pronom relatif dont ; ce dont",
+   "explicacao": [
+    "DONT substitui « de + algo »: le sujet dont on parle (parler de un sujet) ; une journaliste dont les reportages sont écoutés (les reportages de la journaliste). Depois de dont vem sujeito + verbo ou substantivo.",
+    "Verbos com de que pedem dont: parler de, avoir besoin de, rêver de, être fier de, se souvenir de, avoir peur de. Os métiers dont les jeunes rêvent.",
+    "CE DONT retoma uma ideia: Le podcast a 200 000 auditeurs, ce dont Nadia est fière. Compare com ce qui (sujeito) e ce que (objeto).",
+    "Erro típico: dizer « le livre que je parle » (errado) → le livre dont je parle. Cuidado: « un journal » = jornal; « une revue » = revista, não 'revisão'."
+   ],
+   "vocab": [
+    {
+     "en": "un podcast",
+     "pt": "podcast"
+    },
+    {
+     "en": "un reportage",
+     "pt": "reportagem"
+    },
+    {
+     "en": "un auditeur",
+     "pt": "ouvinte"
+    },
+    {
+     "en": "une fausse information",
+     "pt": "notícia falsa"
+    },
+    {
+     "en": "fier / fière",
+     "pt": "orgulhoso(a)"
+    },
+    {
+     "en": "une source",
+     "pt": "fonte"
+    },
+    {
+     "en": "un quotidien",
+     "pt": "jornal diário"
+    },
+    {
+     "en": "vérifier",
+     "pt": "verificar"
+    }
+   ],
+   "material": {
+    "titulo": "Nadia Benali, journaliste à l'écoute",
+    "texto": "Portrait — Nadia Benali, la voix du podcast « Au fil des jours ». Nadia est une journaliste dont beaucoup de jeunes écoutent les reportages chaque semaine. Elle a créé son podcast il y a trois ans, après avoir travaillé pour un grand quotidien dont elle trouvait les articles trop courts. « Je voulais prendre le temps d'expliquer les sujets dont on parle peu », raconte-t-elle. Dans ses émissions, elle interroge des chercheurs, des artisans, des habitants de petites villes dont personne n'entend jamais la voix. Un de ses épisodes les plus appréciés est celui qu'elle a consacré aux fausses informations, un problème dont les médias sont devenus conscients depuis quelques années. Elle y explique comment vérifier une source, ce qui n'est pas toujours facile. Son équipe, dont deux membres sont bénévoles, travaille dans un petit studio où l'on entend parfois les voisins. Aujourd'hui, le podcast compte plus de 200 000 auditeurs, ce dont Nadia est très fière. Elle reste pourtant modeste : « Ce qui compte, c'est la confiance des gens. Les auditeurs dont je reçois les messages me disent souvent qu'ils ont appris quelque chose. » Son prochain projet : une série sur les métiers dont les jeunes rêvent."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi Nadia a-t-elle créé son podcast ?",
+     "op": [
+      "Elle voulait plus de temps pour expliquer certains sujets.",
+      "Elle avait été renvoyée de son journal.",
+      "Elle voulait devenir célèbre.",
+      "Elle cherchait un studio moins cher."
+     ],
+     "r": 0,
+     "exp": "Elle trouvait les articles de son ancien journal trop courts et voulait « prendre le temps d'expliquer les sujets dont on parle peu »."
+    },
+    {
+     "t": "gap",
+     "q": "C'est une journaliste ___ beaucoup de jeunes écoutent les reportages.",
+     "resp": [
+      "dont"
+     ],
+     "exp": "On écoute les reportages DE la journaliste → dont. Dont remplace « de + nom »."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Elle parle des sujets dont on parle peu.",
+     "exp": "« Dont » : /dɔ̃/, nasale, sans prononcer le t. « Peu » /pø/ : lèvres arrondies, comme dans « deux »."
+    },
+    {
+     "t": "mc",
+     "q": "Qui sont les invités de ses émissions ?",
+     "op": [
+      "Uniquement des hommes politiques.",
+      "Des chercheurs, des artisans et des habitants de petites villes.",
+      "Des journalistes célèbres.",
+      "Les auditeurs qui lui écrivent."
+     ],
+     "r": 1,
+     "exp": "« Elle interroge des chercheurs, des artisans, des habitants de petites villes ». Les auditeurs lui envoient des messages, mais ne sont pas décrits comme invités."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Les",
+      "fausses",
+      "informations",
+      "sont",
+      "un",
+      "problème",
+      "dont",
+      "on",
+      "parle",
+      "beaucoup"
+     ],
+     "resp": "Les fausses informations sont un problème dont on parle beaucoup",
+     "exp": "« On parle d'un problème » → un problème dont on parle. Dont est suivi du sujet (on) puis du verbe."
+    },
+    {
+     "t": "gap",
+     "q": "Le podcast a 200 000 auditeurs, ___ Nadia est très fière.",
+     "resp": [
+      "ce dont"
+     ],
+     "exp": "Être fier de quelque chose → de + toute l'idée précédente → ce dont. Ce dont reprend la phrase entière."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: fale de um filme, livro ou programa de que você gosta.",
+     "frase": "Quel livre, film ou programme aimez-vous ? Pourquoi ?",
+     "modelo": "J'aime une série dont l'histoire se passe à Paris. C'est un programme que je regarde chaque semaine avec ma sœur.",
+     "min": 8,
+     "chave": [
+      "dont",
+      "que",
+      "série",
+      "film",
+      "livre"
+     ],
+     "exp": "Tente usar dont (une série dont j'aime l'histoire) e que (un livre que j'ai lu). Para 'assistir' a uma série ou filme, diga regarder, não « voir » nem « assister »."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est l'attitude de Nadia face à son succès ?",
+     "op": [
+      "Elle est fière mais reste modeste.",
+      "Elle veut arrêter le podcast.",
+      "Elle est déçue par ses auditeurs.",
+      "Elle pense que le succès vient de sa publicité."
+     ],
+     "r": 0,
+     "exp": "Elle est « très fière » mais « reste modeste » : ce qui compte pour elle, c'est la confiance des gens."
+    },
+    {
+     "t": "gap",
+     "q": "Le studio est un endroit ___ l'on entend parfois les voisins.",
+     "resp": [
+      "où"
+     ],
+     "exp": "Le lieu est repris par où. Dont n'est pas possible : on n'entend pas « de l'endroit » les voisins."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Se remettre au sport",
+   "objetivo": "Entender um testemunho sobre saúde e esporte e usar os pronomes y e en.",
+   "foco": "Pronoms y et en",
+   "explicacao": [
+    "Y substitui à + coisa/lugar ou um lugar: Tu vas au parc ? Oui, j'y vais. Penser à → y penser: J'y pense.",
+    "EN substitui de + coisa, ou uma quantidade (partitivo): Tu bois de l'eau ? J'en bois. Tu as des baskets ? J'en ai deux. Être content de → en être content.",
+    "Posição: antes do verbo conjugado. No passé composé, antes do auxiliar: Nous y sommes allés. Na negação: Je n'en ai pas acheté. Com a quantidade, repete-se o número: J'en ai deux.",
+    "Cuidado: en e y NÃO se usam para pessoas depois de penser à / parler de com sentido pessoal (penser à lui, parler de lui). Cuidado: « le sport » = esporte, mas « la gym » = academia/ginástica."
+   ],
+   "vocab": [
+    {
+     "en": "courir",
+     "pt": "correr"
+    },
+    {
+     "en": "le jogging",
+     "pt": "corrida (esporte)"
+    },
+    {
+     "en": "manquer de",
+     "pt": "faltar"
+    },
+    {
+     "en": "bouger",
+     "pt": "se mexer"
+    },
+    {
+     "en": "emporter",
+     "pt": "levar consigo"
+    },
+    {
+     "en": "une paire de chaussures",
+     "pt": "par de sapatos"
+    },
+    {
+     "en": "un progrès",
+     "pt": "progresso"
+    },
+    {
+     "en": "hésiter",
+     "pt": "hesitar"
+    }
+   ],
+   "material": {
+    "titulo": "Je cours trois fois par semaine",
+    "texto": "Depuis que j'ai commencé à courir, je ne peux plus m'en passer ! Il y a six mois, mon médecin m'a dit que je manquais d'exercice et que j'avais besoin de bouger. J'ai d'abord hésité : je n'avais pas fait de sport depuis dix ans. Mon voisin, Julien, qui fait du jogging tous les matins, m'a proposé de l'accompagner. J'y suis allé avec lui dès le lendemain, au parc près de chez nous. Au début, j'avais très mal aux jambes, mais Julien m'a conseillé de ne pas m'arrêter. Il m'a aussi expliqué qu'il fallait boire de l'eau avant et après la course : « Tu en bois assez ? », m'a-t-il demandé. Honnêtement, non ! Aujourd'hui, j'en emporte toujours une bouteille. Nous courons trois fois par semaine, et j'y pense même quand je suis au bureau. Mon médecin est content de mes progrès : j'ai perdu quatre kilos et je dors mieux. Des collègues voudraient m'imiter. Je leur ai parlé de notre groupe et ils veulent y participer. Des chaussures de sport, j'en ai acheté deux paires, parce que les premières étaient trop petites. Si vous hésitez, essayez : vous ne le regretterez pas !"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi le narrateur a-t-il commencé à courir ?",
+     "op": [
+      "Pour participer à une compétition.",
+      "Parce que son médecin lui a conseillé de bouger.",
+      "Parce que Julien l'a obligé.",
+      "Pour perdre du temps au bureau."
+     ],
+     "r": 1,
+     "exp": "« Mon médecin m'a dit que je manquais d'exercice et que j'avais besoin de bouger »."
+    },
+    {
+     "t": "gap",
+     "q": "Julien court au parc. J'___ suis allé avec lui dès le lendemain.",
+     "resp": [
+      "y"
+     ],
+     "exp": "Y remplace « au parc » (lieu). Aller + lieu → y aller. Au passé composé, y se place avant l'auxiliaire."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Tu bois assez d'eau ? Moi, j'en emporte toujours une bouteille.",
+     "exp": "« En » est une voyelle nasale /ɑ̃/. Dans « j'en emporte », faites l'enchaînement /ʒɑ̃.nɑ̃pɔʁt/. « Bouteille » : le « ill » se prononce /j/."
+    },
+    {
+     "t": "mc",
+     "q": "Que représente « en » dans « J'en emporte toujours une bouteille » ?",
+     "op": [
+      "Le parc.",
+      "L'eau.",
+      "Les chaussures.",
+      "Le médecin."
+     ],
+     "r": 1,
+     "exp": "En remplace « de l'eau » (partitif), ici avec la quantité : une bouteille (d'eau). Le contexte de la phrase précédente le montre."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Nous",
+      "y",
+      "allons",
+      "trois",
+      "fois",
+      "par",
+      "semaine"
+     ],
+     "resp": "Nous y allons trois fois par semaine",
+     "exp": "Y se place avant le verbe conjugué : nous y allons (= nous allons au parc, à la salle...)."
+    },
+    {
+     "t": "gap",
+     "q": "Tu as des baskets ? Oui, j'___ ai deux paires.",
+     "resp": [
+      "en"
+     ],
+     "exp": "Quantité précise + de + nom → en + nombre : j'en ai deux (paires)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: você faz esporte? Use 'en' ou 'y' na resposta.",
+     "frase": "Faites-vous du sport ? Vous y allez souvent ?",
+     "modelo": "Oui, j'en fais deux fois par semaine. Je vais à la piscine : j'y vais le mardi et le jeudi.",
+     "min": 8,
+     "chave": [
+      "fais",
+      "vais",
+      "piscine",
+      "sport"
+     ],
+     "exp": "Exemplos: J'en fais (de la natation). J'y vais (à la piscine). O pronome vem sempre antes do verbo."
+    },
+    {
+     "t": "mc",
+     "q": "Que veulent faire les collègues du narrateur ?",
+     "op": [
+      "Arrêter le sport.",
+      "Participer au groupe de course.",
+      "Changer de médecin.",
+      "Acheter les chaussures de Julien."
+     ],
+     "r": 1,
+     "exp": "« Des collègues voudraient m'imiter [...] ils veulent y participer » : y = au groupe."
+    },
+    {
+     "t": "gap",
+     "q": "Ton médecin est-il content de tes progrès ? Oui, il ___ est très content.",
+     "resp": [
+      "en"
+     ],
+     "exp": "Être content DE quelque chose → en être content. Y est incorrect car la préposition est « de », pas « à »."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Je te le prête, je te le rends",
+   "objetivo": "Entender quem faz o quê com quem num e-mail e usar dois pronomes juntos e o discurso indireto no presente.",
+   "foco": "Double pronominalisation ; discours indirect au présent",
+   "explicacao": [
+    "Ordem dos pronomes: me/te/nous/vous + le/la/les + lui/leur + y + en. Je te le rends ; je la lui envoie ; il me les apporte. Com lui/leur, o COD vem primeiro: je la lui envoie (não « je lui la envoie »).",
+    "Na negação, ne vem antes de todos os pronomes: Je ne te le rends pas. No imperativo afirmativo: Donne-le-moi !",
+    "Discurso indireto no presente: il dit que + indicatif ; il demande si + indicatif (« Tu peux venir ? » → Il demande si je peux venir) ; il veut savoir où / quand / pourquoi + indicatif.",
+    "Os pronomes pessoais e possessivos mudam: « Je viens » → Il dit qu'il vient. Cuidado: « demander » = pedir/perguntar (não 'exigir'); « prêter » = emprestar; « emprunter » = pedir emprestado."
+   ],
+   "vocab": [
+    {
+     "en": "prêter",
+     "pt": "emprestar"
+    },
+    {
+     "en": "emprunter",
+     "pt": "pedir emprestado"
+    },
+    {
+     "en": "rendre",
+     "pt": "devolver"
+    },
+    {
+     "en": "déménager",
+     "pt": "mudar de casa"
+    },
+    {
+     "en": "un carton",
+     "pt": "caixa de papelão"
+    },
+    {
+     "en": "un aspirateur",
+     "pt": "aspirador de pó"
+    },
+    {
+     "en": "promettre",
+     "pt": "prometer"
+    },
+    {
+     "en": "prévenir",
+     "pt": "avisar"
+    }
+   ],
+   "material": {
+    "titulo": "Mon déménagement en cours",
+    "texto": "Salut Clara ! Je te raconte où j'en suis pour mon déménagement. Mon frère dit qu'il peut me prêter sa camionnette. Je lui demande s'il peut me la laisser tout le week-end, et il répond qu'il me la laissera volontiers si je lui rends le plein d'essence. Ma voisine, Mme Faure, me dit qu'elle a une dizaine de cartons et qu'elle me les apportera demain matin. Pour la table, Théo me promet qu'il me la réparera avant samedi ; il veut savoir où je veux la mettre, alors je la lui décris et je lui envoie une photo de la pièce. Mon père, lui, me téléphone pour me rappeler de prévenir la banque. Je lui réponds que je l'ai déjà fait, mais il me demande si je lui ai envoyé ma nouvelle adresse. Je ne l'ai pas encore fait : je la lui enverrai ce soir ! Enfin, j'ai une question pour toi : peux-tu me prêter ton aspirateur ? Je te le rendrai dimanche soir, c'est promis. Dis-moi vite si tu peux me l'apporter, parce que je demande à tous mes amis s'ils ont du matériel à prêter. Merci d'avance !"
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que dit le frère du narrateur ?",
+     "op": [
+      "Qu'il vend sa camionnette.",
+      "Qu'il peut prêter sa camionnette.",
+      "Qu'il vient aider pour le déménagement.",
+      "Qu'il n'a pas de voiture."
+     ],
+     "r": 1,
+     "exp": "« Mon frère dit qu'il peut me prêter sa camionnette » : discours indirect au présent (dit que + indicatif)."
+    },
+    {
+     "t": "gap",
+     "q": "Ma voisine a des cartons et dit qu'elle me ___ apportera demain.",
+     "resp": [
+      "les"
+     ],
+     "exp": "Cartons = masculin pluriel, COD → les. Ordre correct : elle me les apportera."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je la lui enverrai ce soir, c'est promis.",
+     "exp": "« Enverrai » /ɑ̃vɛʁe/ ; « soir » /swaʁ/ ; « promis » /pʁɔmi/ (le s final ne se prononce pas). Rythme : « je-la-lui-en-ver-rai » doit sonner comme un seul groupe."
+    },
+    {
+     "t": "mc",
+     "q": "Que demande le père au narrateur ?",
+     "op": [
+      "S'il a changé de banque.",
+      "S'il lui a envoyé sa nouvelle adresse.",
+      "S'il a trouvé un appartement.",
+      "S'il peut venir à la fête."
+     ],
+     "r": 1,
+     "exp": "« Il me demande si je lui ai envoyé ma nouvelle adresse ». Piège : le père lui rappelle aussi de prévenir la banque, mais ce n'est pas une question."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "te",
+      "le",
+      "rendrai",
+      "dimanche",
+      "soir"
+     ],
+     "resp": "Je te le rendrai dimanche soir",
+     "exp": "Ordre des pronoms : te (COI) avant le (COD) — « je te le rendrai ». Avec lui/leur, c'est l'inverse : je le lui rendrai."
+    },
+    {
+     "t": "gap",
+     "q": "« Où veux-tu la mettre ? » → Il veut savoir où je ___ la mettre.",
+     "resp": [
+      "veux"
+     ],
+     "exp": "En discours indirect au présent, on garde le présent et on adapte le pronom : tu → je. Pas d'inversion : où je veux la mettre."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: um amigo pede um livro emprestado. Responda usando dois pronomes (ex.: je te le prête).",
+     "frase": "Tu peux me prêter ton livre ?",
+     "modelo": "Oui, je te le prête volontiers. Tu me le rends dans une semaine, d'accord ?",
+     "min": 8,
+     "chave": [
+      "prête",
+      "rends",
+      "rendras",
+      "volontiers"
+     ],
+     "exp": "Treine: Je te le prête / Tu me le rends / Je te le donne. Lembre: me/te antes de le/la/les."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi le narrateur écrit-il à Clara ?",
+     "op": [
+      "Pour lui annoncer qu'il déménage à l'étranger.",
+      "Pour lui demander de lui prêter un appareil.",
+      "Pour l'inviter à une fête.",
+      "Pour se plaindre de son frère."
+     ],
+     "r": 1,
+     "exp": "Il lui demande de prêter son aspirateur et lui donne des nouvelles. Les autres options ne sont pas dans le message."
+    },
+    {
+     "t": "gap",
+     "q": "Tu as envoyé la photo à Théo ? — Oui, je la ___ ai envoyée.",
+     "resp": [
+      "lui"
+     ],
+     "exp": "Deux pronoms de la 3e personne : COD (la) puis COI (lui) : je la lui ai envoyée. Le participe s'accorde avec la (photo, féminin)."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Moins de plastique dans nos ports",
+   "objetivo": "Entender um artigo sobre meio ambiente e reconhecer a voz passiva e o gérondif.",
+   "foco": "Voix passive ; gérondif",
+   "explicacao": [
+    "Voz passiva = être + particípio passado, concordando com o sujeito: Les bouteilles sont triées. O agente vem com par: Elles sont transformées par une usine. Pode estar em qualquer tempo: a été financé, sera étendu.",
+    "O passé composé passivo usa a été: Le projet a été financé par la région. Cuidado: « a été » = foi (passiva) ; « a étudié » = estudou (outro verbo).",
+    "Gérondif = en + radical de nous + -ant: en ramassant, en rentrant, en achetant. Indica o modo ou a simultaneidade: On agit en achetant moins. O sujeito é o mesmo do verbo principal.",
+    "Cuidado: « le plastique » = plástico (nome); « plastic » é a explosão. « Un déchet » = lixo, resíduo; « les déchets » costuma estar no plural."
+   ],
+   "vocab": [
+    {
+     "en": "un déchet",
+     "pt": "resíduo, lixo"
+    },
+    {
+     "en": "ramasser",
+     "pt": "recolher, apanhar"
+    },
+    {
+     "en": "un filet",
+     "pt": "rede"
+    },
+    {
+     "en": "un emballage",
+     "pt": "embalagem"
+    },
+    {
+     "en": "trier",
+     "pt": "separar (lixo)"
+    },
+    {
+     "en": "interdire",
+     "pt": "proibir"
+    },
+    {
+     "en": "jetable",
+     "pt": "descartável"
+    },
+    {
+     "en": "réduire",
+     "pt": "reduzir"
+    }
+   ],
+   "material": {
+    "titulo": "Pollution plastique : l'expérience de La Rochelle",
+    "texto": "Chaque année, des millions de tonnes de plastique sont jetées dans les océans. Ce problème est connu depuis longtemps, mais les solutions arrivent lentement. Dans le port de La Rochelle, une nouvelle expérience a été lancée en mars : des filets spéciaux installés près des quais récupèrent les déchets avant qu'ils atteignent la mer. Les bouteilles et les sacs sont ensuite triés par des salariés, puis envoyés dans une usine où ils sont transformés en bancs publics. Les habitants ont été invités à participer. « En ramassant des déchets sur la plage le dimanche, on se rend compte de l'ampleur du problème », explique Maëlle, 26 ans, bénévole. Les pêcheurs aussi sont concernés : en rentrant au port, ils rapportent les déchets qu'ils trouvent dans leurs filets. Le projet a été financé par la région, mais il pourrait être étendu à d'autres villes. Certains experts restent prudents : selon eux, on ne résoudra pas la pollution en nettoyant seulement les ports. Il faut aussi réduire la production de plastique, en interdisant certains emballages par exemple. La loi vient d'ailleurs d'être modifiée : les pailles et les couverts en plastique sont désormais interdits. En attendant, chacun peut agir en achetant moins d'objets jetables."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Que deviennent les bouteilles récupérées ?",
+     "op": [
+      "Elles sont brûlées.",
+      "Elles sont transformées en bancs publics.",
+      "Elles sont revendues aux pêcheurs.",
+      "Elles sont renvoyées en mer."
+     ],
+     "r": 1,
+     "exp": "« Ils sont transformés en bancs publics » après le tri par des salariés et l'envoi à l'usine."
+    },
+    {
+     "t": "gap",
+     "q": "Les déchets sont ___ par des salariés avant d'aller à l'usine.",
+     "resp": [
+      "triés",
+      "tries"
+     ],
+     "exp": "Voix passive : sont + participe passé accordé (déchets = masculin pluriel) → triés.",
+     "dica": "TRIER"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "En ramassant des déchets, on se rend compte du problème.",
+     "exp": "« Ramassant » : /ʁamasɑ̃/ ; le gérondif se termine toujours par la nasale /ɑ̃/. « Se rend compte » : /sə ʁɑ̃ kɔ̃t/, deux nasales différentes."
+    },
+    {
+     "t": "mc",
+     "q": "Qui a financé l'expérience de La Rochelle ?",
+     "op": [
+      "Les pêcheurs.",
+      "La région.",
+      "Une usine privée.",
+      "Les bénévoles."
+     ],
+     "r": 1,
+     "exp": "« Le projet a été financé par la région » : par introduit l'agent de la phrase passive."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Les",
+      "habitants",
+      "ont",
+      "été",
+      "invités",
+      "à",
+      "participer"
+     ],
+     "resp": "Les habitants ont été invités à participer",
+     "exp": "Passé composé passif : ont été + participe accordé avec habitants (masculin pluriel) : invités."
+    },
+    {
+     "t": "gap",
+     "q": "Maëlle se rend compte du problème en ___ des déchets sur la plage.",
+     "resp": [
+      "ramassant"
+     ],
+     "exp": "Gérondif : en + radical de « nous ramassons » + -ant → en ramassant. Même sujet pour les deux verbes (Maëlle).",
+     "dica": "RAMASSER"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: o que você faz para proteger o meio ambiente? Use um gérondif (en + -ant).",
+     "frase": "Que faites-vous pour protéger l'environnement ?",
+     "modelo": "Je trie mes déchets en rentrant du travail. Je réduis ma consommation d'eau en prenant des douches courtes.",
+     "min": 8,
+     "chave": [
+      "trie",
+      "déchets",
+      "recycle",
+      "économise",
+      "eau"
+     ],
+     "exp": "Gérondif: en rentrant, en prenant, en utilisant. Diga o modo: Je protège la nature en + verbo-ant."
+    },
+    {
+     "t": "mc",
+     "q": "Selon certains experts, que faut-il faire en plus de nettoyer les ports ?",
+     "op": [
+      "Nettoyer plus souvent les plages.",
+      "Réduire la production de plastique.",
+      "Ne rien changer.",
+      "Fermer les ports de pêche."
+     ],
+     "r": 1,
+     "exp": "« Il faut aussi réduire la production de plastique, en interdisant certains emballages »."
+    },
+    {
+     "t": "gap",
+     "q": "Le projet ___ financé par la région au printemps dernier.",
+     "resp": [
+      "a été"
+     ],
+     "exp": "Passé composé de la voix passive : a été + participe. Ne confondez pas avec « a étudié » ou « est financé » (présent).",
+     "dica": "ÊTRE"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Télétravail : liberté ou piège ?",
+   "objetivo": "Entender um texto de opinião e reconhecer conectores de causa, consequência e oposição.",
+   "foco": "Connecteurs : cause, conséquence, opposition",
+   "explicacao": [
+    "CAUSA: car (+ frase, nunca no início), parce que, puisque, grâce à (causa positiva), à cause de (causa negativa). Il a raté le train à cause d'un retard ; Grâce au télétravail, on gagne du temps.",
+    "CONSEQUÊNCIA: donc, alors, par conséquent, ainsi, si bien que. Il ne faisait plus de pause, donc il finissait épuisé.",
+    "OPOSIÇÃO: mais, pourtant, cependant, en revanche, alors que, tandis que, bien que (+ subjonctif). Certaines entreprises acceptent, tandis que d'autres refusent.",
+    "Cuidado com falsos cognatos: « actuellement » = atualmente (no momento), « finalement » = enfim; « pourtant » não é 'portanto' (portanto = donc). Em prova, destaque o conector e pergunte: causa, consequência ou contraste?"
+   ],
+   "vocab": [
+    {
+     "en": "le télétravail",
+     "pt": "trabalho remoto"
+    },
+    {
+     "en": "un salarié",
+     "pt": "empregado"
+    },
+    {
+     "en": "un bureau",
+     "pt": "escritório, mesa de trabalho"
+    },
+    {
+     "en": "épuisé",
+     "pt": "exausto"
+    },
+    {
+     "en": "être convaincu",
+     "pt": "estar convencido"
+    },
+    {
+     "en": "l'isolement",
+     "pt": "isolamento"
+    },
+    {
+     "en": "exiger",
+     "pt": "exigir"
+    },
+    {
+     "en": "un équilibre",
+     "pt": "equilíbrio"
+    }
+   ],
+   "material": {
+    "titulo": "Le télétravail est-il vraiment une chance ?",
+    "texto": "Depuis la crise sanitaire, de plus en plus de salariés travaillent à domicile quelques jours par semaine. Pour beaucoup, c'est une chance. Grâce au télétravail, on gagne du temps de transport et on peut mieux organiser sa journée. Julie, graphiste, explique : « Je suis plus efficace chez moi, car je ne suis pas interrompue sans arrêt. » Résultat : elle termine ses projets plus vite et se sent moins stressée. Pourtant, tout le monde n'est pas convaincu. À cause de l'isolement, certains employés ont l'impression de perdre le contact avec leur équipe. Thomas, comptable, raconte qu'il travaillait trop longtemps alors qu'il aurait dû s'arrêter à dix-huit heures : il ne faisait plus de pause, donc il finissait épuisé. Les entreprises sont aussi partagées. Certaines ont réduit leurs bureaux parce que moins de salariés viennent, tandis que d'autres exigent un retour au bureau, car elles pensent que la créativité naît des rencontres. Les spécialistes recommandent un équilibre : deux ou trois jours chez soi, le reste au bureau. Ainsi, on garde les avantages de la liberté sans perdre le lien social. Bref, le télétravail n'est ni une solution magique ni un danger : tout dépend de la façon dont il est organisé."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi Julie est-elle plus efficace chez elle ?",
+     "op": [
+      "Parce qu'elle est moins interrompue.",
+      "Parce qu'elle a un bureau plus grand.",
+      "Parce qu'elle travaille plus longtemps.",
+      "Parce qu'elle a moins de projets."
+     ],
+     "r": 0,
+     "exp": "Le connecteur « car » introduit la cause : « car je ne suis pas interrompue sans arrêt »."
+    },
+    {
+     "t": "gap",
+     "q": "Julie est plus efficace chez elle ___ elle n'est pas interrompue sans arrêt.",
+     "resp": [
+      "car",
+      "parce qu'",
+      "parce que",
+      "puisqu'",
+      "puisque"
+     ],
+     "exp": "La cause est introduite par car ou parce que. Après ces conjonctions, on a un verbe conjugué.",
+     "dica": "CAUSE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Grâce au télétravail, on gagne du temps de transport.",
+     "exp": "« Grâce » /gʁas/ : le c devient s. « Transport » /tʁɑ̃spɔʁ/ : nasale + r final prononcé. Faites une petite pause après la virgule."
+    },
+    {
+     "t": "mc",
+     "q": "Pourquoi Thomas finissait-il épuisé ?",
+     "op": [
+      "Il avait trop de réunions.",
+      "Il ne faisait plus de pause et travaillait trop longtemps.",
+      "Il se levait trop tôt.",
+      "Il n'avait pas d'ordinateur personnel."
+     ],
+     "r": 1,
+     "exp": "« Il ne faisait plus de pause, donc il finissait épuisé » : donc introduit la conséquence."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "ne",
+      "faisait",
+      "plus",
+      "de",
+      "pause",
+      "donc",
+      "il",
+      "finissait",
+      "épuisé"
+     ],
+     "resp": "Il ne faisait plus de pause donc il finissait épuisé",
+     "exp": "« Donc » exprime la conséquence. « Ne ... plus » entoure le verbe, et « de » remplace « une » après la négation : plus de pause."
+    },
+    {
+     "t": "gap",
+     "q": "Certaines entreprises acceptent le télétravail, ___ d'autres exigent un retour au bureau.",
+     "resp": [
+      "tandis que",
+      "alors que"
+     ],
+     "exp": "Tandis que / alors que expriment l'opposition entre deux faits. Ne les confondez pas avec « pendant que » (simple simultanéité)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: você prefere estudar/trabalhar em casa ou fora? Justifique com car, donc ou pourtant.",
+     "frase": "Préférez-vous travailler ou étudier à la maison ou à l'extérieur ? Pourquoi ?",
+     "modelo": "Je préfère étudier à la maison car il y a moins de bruit. Pourtant, je me sens parfois seul, donc je vais à la bibliothèque une fois par semaine.",
+     "min": 8,
+     "chave": [
+      "car",
+      "donc",
+      "pourtant",
+      "parce que",
+      "alors que"
+     ],
+     "exp": "Dê causa (car / parce que), consequência (donc) e contraste (pourtant / mais). Isso mostra coesão, critério avaliado no DELF."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle conclusion tire l'article ?",
+     "op": [
+      "Le télétravail est dangereux.",
+      "Le télétravail est une solution magique.",
+      "Le télétravail doit être interdit.",
+      "Tout dépend de l'organisation."
+     ],
+     "r": 3,
+     "exp": "« Ni une solution magique ni un danger : tout dépend de la façon dont il est organisé »."
+    },
+    {
+     "t": "gap",
+     "q": "Il a manqué la réunion ___ un retard de train, mais il l'a suivie en ligne.",
+     "resp": [
+      "à cause d'"
+     ],
+     "exp": "À cause de + nom exprime une cause négative (retard). On dit à cause d'un retard. Grâce à serait possible seulement pour une cause positive.",
+     "dica": "À CAUSE ..."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Comparer des offres : la méthode",
+   "objetivo": "Aprender a comparar vários anúncios e a escolher o mais adequado a um perfil, eliminando por critérios (parte 1 da prova DELF B1).",
+   "foco": "Stratégie : comparer des offres selon un profil",
+   "explicacao": [
+    "Na prova, leia primeiro o PERFIL (quem é a pessoa, o que quer, o que não aceita) e sublinhe os critérios: orçamento, horário, duração, alojamento, idade.",
+    "Depois percorra cada anúncio e ELIMINE: uma oferta só serve se atender a TODOS os critérios obrigatórios. Um critério que falha basta para descartar.",
+    "Cuidado com as armadilhas: preços por semana x por mês, « logement non compris » (alojamento não incluído), horário de noite x de manhã, idade mínima, e informações que parecem boas mas não respondem ao perfil.",
+    "Vocabulário útil: convenir à (convir), correspondre à, un tarif, un forfait, inclus / compris / non compris, un cadre, à partir de, au plus tard. Não confunda « inscription » (matrícula) com 'inscrição' de texto."
+   ],
+   "vocab": [
+    {
+     "en": "convenir à",
+     "pt": "convir a, ser adequado a"
+    },
+    {
+     "en": "un tarif",
+     "pt": "tarifa, preço"
+    },
+    {
+     "en": "un séjour",
+     "pt": "estadia"
+    },
+    {
+     "en": "logé(e)",
+     "pt": "hospedado(a)"
+    },
+    {
+     "en": "inclus / compris",
+     "pt": "incluído"
+    },
+    {
+     "en": "un groupe restreint",
+     "pt": "grupo pequeno"
+    },
+    {
+     "en": "une ferme",
+     "pt": "fazenda"
+    },
+    {
+     "en": "un cadre rural",
+     "pt": "ambiente rural"
+    }
+   ],
+   "material": {
+    "titulo": "Quatre façons d'apprendre le français",
+    "texto": "Offres de cours de français pour adultes, cette année. A — Cours de français intensif, Université de Strasbourg : 20 heures par semaine, du lundi au vendredi, sur quatre semaines (juillet). 780 euros, logement non compris. Diplôme de fin de stage. Groupes de 15 personnes. Pas de sorties prévues. Inscription avant le 30 avril. B — École « Bonjour Nice » : cours le matin (9 h-12 h 30), activités culturelles l'après-midi (visites, cuisine, plage). De 2 à 12 semaines. 190 euros par semaine. Possibilité d'être logé chez l'habitant (+ 160 euros par semaine). Groupes de 8 personnes maximum. C — Cours du soir à l'Alliance française de Lyon : 4 heures par semaine, de 18 h 30 à 20 h 30, deux soirs. 240 euros par trimestre. Pas de logement proposé. Conseillé aux personnes qui travaillent la journée et qui veulent continuer leur activité. D — Séjour linguistique à la ferme en Bretagne : 3 heures de cours le matin, travail dans la ferme l'après-midi, en échange du logement et des repas. Séjour d'un mois, 150 euros seulement. Pour les personnes de plus de 18 ans qui sont à l'aise dans un cadre rural."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Lucas travaille toute la journée et veut progresser en français sans changer d'emploi. Quelle offre lui convient ?",
+     "op": [
+      "L'offre A (Strasbourg).",
+      "L'offre B (Nice).",
+      "L'offre C (Lyon).",
+      "L'offre D (Bretagne)."
+     ],
+     "r": 2,
+     "exp": "Seule l'offre C propose des cours le soir (18 h 30-20 h 30), compatibles avec un travail de jour. Les autres offres occupent la journée."
+    },
+    {
+     "t": "gap",
+     "q": "Les cours de l'école de Nice ont lieu le ___.",
+     "resp": [
+      "matin"
+     ],
+     "exp": "Dans l'offre B : « cours le matin ». Les activités culturelles sont l'après-midi."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Cette offre me convient parce qu'elle propose des activités culturelles.",
+     "exp": "« Convient » : /kɔ̃vjɛ̃/, deux nasales différentes. « Qu'elle » /kɛl/ : le qu a le son k."
+    },
+    {
+     "t": "mc",
+     "q": "Sofia a 25 ans, un petit budget (moins de 200 euros), aime la nature et veut être logée gratuitement. Quelle offre lui convient ?",
+     "op": [
+      "L'offre B (Nice).",
+      "L'offre C (Lyon).",
+      "L'offre A (Strasbourg).",
+      "L'offre D (Bretagne)."
+     ],
+     "r": 3,
+     "exp": "L'offre D coûte 150 € et le logement et les repas sont inclus. L'offre C est bon marché, mais n'offre pas de logement."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Je",
+      "choisis",
+      "l'offre",
+      "B",
+      "parce",
+      "qu'elle",
+      "propose",
+      "des",
+      "activités",
+      "culturelles"
+     ],
+     "resp": "Je choisis l'offre B parce qu'elle propose des activités culturelles",
+     "exp": "Phrase pour justifier un choix : Je choisis ... parce que + sujet + verbe. À l'oral, c'est une formule très utile."
+    },
+    {
+     "t": "gap",
+     "q": "L'offre D est la moins chère, ___ elle demande de travailler à la ferme.",
+     "resp": [
+      "mais",
+      "cependant",
+      "pourtant"
+     ],
+     "exp": "Le texte oppose un avantage (prix bas) et une contrainte (travail à la ferme) : mais / cependant / pourtant.",
+     "dica": "MAIS"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: qual curso você escolheria e por quê? Cite um critério (preço, horário, alojamento).",
+     "frase": "Quelle offre choisiriez-vous et pourquoi ?",
+     "modelo": "Je choisirais l'offre B parce que les cours sont le matin et que je pourrais visiter la région l'après-midi. Le logement chez l'habitant m'intéresse aussi.",
+     "min": 8,
+     "chave": [
+      "choisirais",
+      "offre",
+      "logement",
+      "prix",
+      "horaires"
+     ],
+     "exp": "Estruture: Je choisirais l'offre... parce que + critère. Cite pelo menos um critério do anúncio (horário, preço, logement)."
+    },
+    {
+     "t": "mc",
+     "q": "Karim veut un cours en petit groupe (moins de dix personnes) avec des activités culturelles. Quelle offre lui convient ?",
+     "op": [
+      "L'offre A (Strasbourg).",
+      "L'offre B (Nice).",
+      "L'offre C (Lyon).",
+      "L'offre D (Bretagne)."
+     ],
+     "r": 1,
+     "exp": "L'offre B limite les groupes à 8 personnes et propose des activités culturelles. L'offre A a 15 personnes par groupe et aucune sortie."
+    },
+    {
+     "t": "gap",
+     "q": "L'offre A ne convient pas à quelqu'un qui veut visiter la région, ___ aucune sortie n'est prévue.",
+     "resp": [
+      "car",
+      "puisque",
+      "parce que",
+      "parce qu'"
+     ],
+     "exp": "Pour justifier l'élimination d'une offre, on utilise car ou parce que : le critère (visiter) n'est pas satisfait.",
+     "dica": "CAUSE"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado DELF B1 : compréhension des écrits",
+   "objetivo": "Treinar a prova completa: comparar anúncios de voluntariado (exercício 1) e compreender um artigo de opinião (exercício 2).",
+   "foco": "Simulation : comparaison d'offres + article d'opinion",
+   "explicacao": [
+    "A prova DELF B1 de compréhension des écrits dura cerca de 45 minutos e tem dois exercícios. O 1º compara anúncios para um perfil; o 2º é um artigo com perguntas de QCM e verdadeiro/falso com justificativa.",
+    "Estratégia: leia as perguntas ANTES do texto, procure as palavras-chave, e confirme cada resposta no texto. Cuidado com os distratores: uma opção pode estar quase certa, mas dizer outra coisa.",
+    "Verdadeiro/falso justificado: a resposta só é certa se a justificação também estiver certa. Em francês, procure a frase exata do texto (le texte dit... « ... »).",
+    "Gramática em contexto: temps du passé, pronoms relatifs, conditionnel, subjonctif e connecteurs aparecem nas lacunas. Gerencie o tempo: ~20 min no exercício 1 e ~25 min no exercício 2."
+   ],
+   "vocab": [
+    {
+     "en": "une mission",
+     "pt": "missão, tarefa"
+    },
+    {
+     "en": "une démarche",
+     "pt": "trâmite, procedimento"
+    },
+    {
+     "en": "une indemnité",
+     "pt": "pequena remuneração, ajuda de custo"
+    },
+    {
+     "en": "une bourse",
+     "pt": "bolsa de estudos"
+    },
+    {
+     "en": "décourager",
+     "pt": "desestimular"
+    },
+    {
+     "en": "se débrouiller",
+     "pt": "se virar"
+    },
+    {
+     "en": "les recruteurs",
+     "pt": "os recrutadores"
+    },
+    {
+     "en": "renoncer à",
+     "pt": "renunciar a"
+    }
+   ],
+   "material": {
+    "titulo": "Bénévolat et études à l'étranger",
+    "texto": "DOCUMENT 1 — Quatre missions de bénévolat cet été. A. Chantier nature (Vosges) : réparer des sentiers de randonnée, deux semaines en juillet, logement en tente, repas fournis. Aucun diplôme demandé, mais il faut aimer le travail physique. À partir de 18 ans. B. Soutien scolaire (Marseille) : aider des enfants de 8 à 12 ans à faire leurs devoirs, trois après-midi par semaine pendant tout l'été. Logement non fourni. Qualités demandées : patience et sens de l'écoute. C. Accueil de réfugiés (Lille) : accompagner des familles dans leurs démarches (courriers, rendez-vous). Mission de six mois, formation de deux jours, petite indemnité mensuelle. Le français et une autre langue sont indispensables. D. Festival de musique (Rennes) : accueillir le public et vendre les billets, cinq jours en août. Entrée gratuite aux concerts et repas offerts, mais pas de logement. DOCUMENT 2 — Partir étudier à l'étranger : une bonne idée ? Chaque année, des milliers d'étudiants français choisissent de passer un semestre dans une université étrangère. Pour Clara Dubois, sociologue, cette expérience est précieuse : « On apprend une langue, bien sûr, mais surtout à se débrouiller seul. » Les recruteurs apprécient d'ailleurs ces profils, qu'ils jugent plus autonomes. Pourtant, partir n'est pas à la portée de tous. Le coût du logement et du voyage décourage de nombreuses familles, même si des bourses existent. Un autre problème est souvent oublié : le retour. Après un an à Montréal, Hugo a eu du mal à se réadapter. « Mes amis avaient continué leur vie sans moi, et je me sentais étranger dans ma propre ville », raconte-t-il. Faut-il alors renoncer ? Clara Dubois ne le pense pas, mais elle conseille de se préparer : s'informer sur les aides, apprendre quelques mots de la langue avant de partir et garder le contact avec sa famille. Elle ajoute que, si l'on hésite à s'éloigner longtemps, une courte période de trois mois peut déjà changer une vie. Mieux vaut commencer petit que ne jamais essayer, conclut-elle."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "EXERCICE 1. Léa, 19 ans, parle français et anglais. Elle veut aider des personnes en difficulté pendant au moins six mois. Quelle mission lui convient ?",
+     "op": [
+      "A. Chantier nature (Vosges)",
+      "B. Soutien scolaire (Marseille)",
+      "C. Accueil de réfugiés (Lille)",
+      "D. Festival de musique (Rennes)"
+     ],
+     "r": 2,
+     "exp": "Seule la mission C dure six mois, demande deux langues et concerne des personnes en difficulté (familles de réfugiés). Les autres sont plus courtes ou concernent un autre public."
+    },
+    {
+     "t": "mc",
+     "q": "EXERCICE 1. Antoine habite à Marseille, aime les enfants et ne peut pas payer un logement ailleurs. Quelle mission lui convient ?",
+     "op": [
+      "A. Chantier nature (Vosges)",
+      "B. Soutien scolaire (Marseille)",
+      "C. Accueil de réfugiés (Lille)",
+      "D. Festival de musique (Rennes)"
+     ],
+     "r": 1,
+     "exp": "La mission B se déroule à Marseille, donc il n'a pas besoin de logement, et elle concerne les enfants. Les missions A, C et D demandent de partir de Marseille."
+    },
+    {
+     "t": "gap",
+     "q": "Pour la mission A, il faut aimer le travail ___.",
+     "resp": [
+      "physique"
+     ],
+     "exp": "Le texte dit : « il faut aimer le travail physique ». Les sentiers se réparent à la main.",
+     "dica": "PHYSIQUE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Je voudrais participer à une mission où je pourrais aider les autres.",
+     "exp": "« Voudrais » /vudʁɛ/ et « pourrais » /puʁɛ/ finissent par le même son /ɛ/. « Où » (lieu) a un accent grave, mais se prononce /u/ comme « ou »."
+    },
+    {
+     "t": "mc",
+     "q": "EXERCICE 2. Selon Clara Dubois, que gagne-t-on surtout en partant étudier à l'étranger ?",
+     "op": [
+      "Un meilleur salaire.",
+      "Un diplôme plus prestigieux.",
+      "De l'autonomie.",
+      "Des amis pour la vie."
+     ],
+     "r": 2,
+     "exp": "« On apprend une langue, bien sûr, mais surtout à se débrouiller seul » : se débrouiller seul = être autonome."
+    },
+    {
+     "t": "mc",
+     "q": "EXERCICE 2. Pourquoi partir à l'étranger n'est-il pas à la portée de tous ?",
+     "op": [
+      "Les bourses n'existent pas.",
+      "Les universités étrangères refusent les Français.",
+      "Les recruteurs n'aiment pas ces profils.",
+      "Le coût décourage de nombreuses familles."
+     ],
+     "r": 3,
+     "exp": "« Le coût du logement et du voyage décourage de nombreuses familles, même si des bourses existent ». Les recruteurs, au contraire, apprécient ces profils."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Mieux",
+      "vaut",
+      "commencer",
+      "petit",
+      "que",
+      "ne",
+      "jamais",
+      "essayer"
+     ],
+     "resp": "Mieux vaut commencer petit que ne jamais essayer",
+     "exp": "Expression de conclusion : mieux vaut + infinitif + que + infinitif. Le « ne » devant « jamais » est de style soutenu."
+    },
+    {
+     "t": "mc",
+     "q": "EXERCICE 2. Vrai ou faux ? « Hugo s'est facilement réadapté à son retour. » Choisissez la réponse et la justification correctes.",
+     "op": [
+      "Vrai : il a continué sa vie comme avant.",
+      "Faux : il se sentait étranger dans sa propre ville.",
+      "Faux : il n'a pas voulu revoir ses amis.",
+      "Vrai : ses amis l'attendaient avec impatience."
+     ],
+     "r": 1,
+     "exp": "Hugo dit : « Mes amis avaient continué leur vie sans moi, et je me sentais étranger dans ma propre ville ». La justification doit correspondre exactement au texte."
+    },
+    {
+     "t": "gap",
+     "q": "« Mes amis ___ continué leur vie sans moi », raconte Hugo.",
+     "resp": [
+      "avaient"
+     ],
+     "exp": "Plus-que-parfait : l'action (continuer leur vie) est antérieure à son retour → avaient continué.",
+     "dica": "AVOIR"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês: você gostaria de estudar ou fazer voluntariado no exterior? Dê uma razão.",
+     "frase": "Aimeriez-vous étudier ou faire du bénévolat à l'étranger ? Pourquoi ?",
+     "modelo": "Oui, j'aimerais étudier en France pendant un semestre, car je voudrais améliorer mon français. Pourtant, cela coûte cher, donc je chercherais une bourse.",
+     "min": 10,
+     "chave": [
+      "aimerais",
+      "voudrais",
+      "car",
+      "pourtant",
+      "bourse",
+      "étudier"
+     ],
+     "exp": "Use: j'aimerais + infinitif (conditionnel), car / parce que (cause), pourtant (contraste), donc (consequência). Mínimo de duas frases."
+    },
+    {
+     "t": "mc",
+     "q": "EXERCICE 2. Quelle est l'idée principale de la conclusion de Clara Dubois ?",
+     "op": [
+      "Les études à l'étranger sont inutiles.",
+      "Il faut partir au moins un an.",
+      "Même un court séjour vaut mieux que rien.",
+      "Seuls les étudiants riches doivent partir."
+     ],
+     "r": 2,
+     "exp": "« Mieux vaut commencer petit que ne jamais essayer » : un séjour court (trois mois) peut déjà changer une vie."
+    },
+    {
+     "t": "mc",
+     "q": "EXERCICE 2. Quel est le but de ce texte ?",
+     "op": [
+      "Faire la promotion d'un programme précis.",
+      "Présenter les avantages et les difficultés d'un départ à l'étranger.",
+      "Raconter le voyage d'un étudiant.",
+      "Critiquer les universités françaises."
+     ],
+     "r": 1,
+     "exp": "Le texte donne l'avis d'une sociologue, cite les avantages (autonomie) et les difficultés (coût, retour). Ce n'est ni une publicité ni un récit de voyage."
+    }
+   ]
+  }
+ ]
+}
