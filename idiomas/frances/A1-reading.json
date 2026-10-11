@@ -264,7 +264,7 @@
      "resp": [
       "tante"
      ],
-     "exp": "La sœur de ma mère = ma tante. Atenção: « tante » com um só t no meio, ao contrário do português «tia»."
+     "exp": "La sœur de ma mère = ma tante. Atenção: « tante » se escreve com -nt- (não «tia»)."
     },
     {
      "t": "speak",
@@ -410,7 +410,7 @@
     },
     {
      "t": "gap",
-     "q": "Le cahier est vert et ___ trousse est rouge.",
+     "q": "Le cahier est vert et ___ trousse est rouge. (le / la / les)",
      "resp": [
       "la"
      ],
@@ -463,7 +463,7 @@
    "explicacao": [
     "Adjetivos concordam com o substantivo: um grande quarto = une grande chambre; paredes brancas = des murs blancs.",
     "Feminino: em geral + e (petit → petite, joli → jolie). Alguns mudam mais: blanc → blanche, gentil → gentille, clair → claire.",
-    "Plural: em geral + s (vert → verts, verte → vertes). Mas: blanc → blancs; beau → beaux.",
+    "Plural: em geral + s (vert → verts, verte → vertes). Mas: beau → beaux, nouveau → nouveaux. Adjetivos que já terminam em -s ou -x não mudam: gris, heureux.",
     "Diferente do português, muitos adjetivos vêm ANTES do substantivo: un petit appartement, un grand jardin, une jolie cuisine. Cores vêm depois: des rideaux verts."
    ],
    "vocab": [
@@ -712,7 +712,7 @@
       "grand-mère"
      ],
      "resp": "Le soir il téléphone à sa grand-mère",
-     "exp": "Atenção: « téléphoner À quelqu'un » (com à), como «telefonar para». Diferente do português que não exige o artigo."
+     "exp": "« Téléphoner À quelqu'un » (com à), como «telefonar para/a alguém». Sem preposição fica errado em francês."
     },
     {
      "t": "gap",
@@ -731,13 +731,20 @@
      "modelo": "Le samedi matin, je me lève à neuf heures et je mange des céréales.",
      "min": 6,
      "chave": [
-      "je",
       "lève",
       "mange",
       "joue",
       "regarde",
-      "samedi",
-      "matin"
+      "dors",
+      "fais",
+      "vais",
+      "reste",
+      "écoute",
+      "travaille",
+      "étudie",
+      "déjeune",
+      "prends",
+      "dîne"
      ],
      "exp": "Use o presente em -er: je mange, je joue, je regarde. Para a hora: à neuf heures."
     },
@@ -867,7 +874,11 @@
       "étudiants"
      ],
      "resp": "Le mardi soir l'entrée est gratuite pour les étudiants",
-     "exp": "« Gratuite » vai ao feminino porque « l'entrée » é feminino."
+     "exp": "« Gratuite » vai ao feminino porque « l'entrée » é feminino.",
+     "alt": [
+      "L'entrée est gratuite pour les étudiants le mardi soir",
+      "Pour les étudiants l'entrée est gratuite le mardi soir"
+     ]
     },
     {
      "t": "gap",
@@ -875,7 +886,7 @@
      "resp": [
       "réserver"
      ],
-     "exp": "Il faut + infinitivo: « il faut réserver ». Atenção: « réserver » = reservar, não «reservar» no sentido de guardar.",
+     "exp": "Il faut + infinitivo: « il faut réserver ». Réserver = reservar (fazer reserva).",
      "dica": "RÉSERVER"
     },
     {
@@ -1035,12 +1046,16 @@
      "modelo": "On ne peut pas manger et on ne peut pas téléphoner.",
      "min": 5,
      "chave": [
-      "ne",
-      "n'",
-      "pas",
       "manger",
       "téléphoner",
-      "parler"
+      "parler",
+      "boire",
+      "fumer",
+      "bruit",
+      "crier",
+      "courir",
+      "dormir",
+      "jouer"
      ],
      "exp": "Use « On ne peut pas + infinitivo » ou « Il ne faut pas + infinitivo »."
     },
@@ -1073,8 +1088,8 @@
    "foco": "les questions : est-ce que, qu'est-ce que, où, quand, combien",
    "explicacao": [
     "Pergunta com « Est-ce que » + frase normal: Est-ce que le cours est gratuit ? (sobe a voz no fim). Resposta: oui / non.",
-    "Palavras interrogativas: où (onde), quand (quando), combien (quanto), qui (quem), comment (como), pourquoi (por que). Ex.: Où est-ce que le club est ? / Quand est-ce que le cours commence ?",
-    "Qu'est-ce que (o que): Qu'est-ce que vous apportez ? Atenção: « que » ≠ «que» do português; « qu'est-ce que » = «o que».",
+    "Palavras interrogativas: où (onde), quand (quando), combien (quanto), qui (quem), comment (como), pourquoi (por que). Ex.: Où est-ce que tu habites ? / Quand est-ce que le cours commence ?",
+    "Qu'est-ce que = «o que» (expressão fixa): Qu'est-ce que vous apportez ? Antes de vogal, que vira qu'.",
     "Mais fácil: sujeito e verbo invertidos (Combien coûte l'inscription ?) ou apenas entonação (Tu viens ?)."
    ],
    "vocab": [
@@ -1282,7 +1297,7 @@
      "resp": [
       "prends"
      ],
-     "exp": "Prendre: je prends (com s). Em francês pegar o ônibus é « prendre le bus » (e não «prendre» no sentido de prender).",
+     "exp": "Prendre: je prends (com s). « Prendre le bus » = pegar o ônibus. Cuidado: « prendre » não é «prender».",
      "dica": "PRENDRE"
     },
     {
@@ -1290,7 +1305,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta esta frase.",
      "frase": "Demain, je vais chez toi en bus.",
-     "exp": "« Chez toi » soa [ʃe-twa]. O r de « vais » não existe: [vɛ]."
+     "exp": "« Chez toi » soa [ʃe-twa]. « Vais » soa [vɛ]: o s final é mudo."
     },
     {
      "t": "mc",
@@ -1340,7 +1355,12 @@
       "pied",
       "voiture",
       "métro",
-      "vélo"
+      "vélo",
+      "marche",
+      "tram",
+      "train",
+      "moto",
+      "taxi"
      ],
      "exp": "Use « Je vais… à pied / en bus » ou « Je prends le bus ». Não confunda: à pied, mas en bus."
     },
@@ -1603,7 +1623,7 @@
       "6,50 euros"
      ],
      "r": 0,
-     "exp": "Deux kilos de pommes = 2 × 2,50 = 5 €, mais un litre de lait = 1 €. Total: 6 €."
+     "exp": "Deux kilos de pommes = 2 × 2,50 = 5 €, mais un litre de lait = 1 €. Total: 5 + 1 = 6 €."
     },
     {
      "t": "order",
@@ -1809,7 +1829,9 @@
      "t": "gap",
      "q": "Le café n'est pas compris : il coûte 2 euros en ___.",
      "resp": [
-      "supplément"
+      "supplément",
+      "supplement",
+      "plus"
      ],
      "exp": "« En supplément » = a mais, adicional. Café fora do menu custa 2 €.",
      "dica": "SUPPLÉMENT"
@@ -1933,12 +1955,25 @@
      "modelo": "Mon anniversaire est le dix juin. J'aime jouer au football et manger du gâteau.",
      "min": 7,
      "chave": [
-      "anniversaire",
-      "le",
+      "janvier",
+      "février",
+      "mars",
+      "avril",
+      "mai",
+      "juin",
+      "juillet",
+      "août",
+      "septembre",
+      "octobre",
+      "novembre",
+      "décembre",
       "jouer",
       "faire",
       "aime",
-      "gâteau"
+      "gâteau",
+      "fête",
+      "manger",
+      "danser"
      ],
      "exp": "Diga « Mon anniversaire est le + data ». Para gostos: « J'aime + infinitivo »."
     },
@@ -1974,7 +2009,7 @@
     "Imperativo (vous): tire o sujeito. Vous signez → Signez ! Vous n'oubliez pas → N'oubliez pas ! Com -er: tu → sem s (Écoute !).",
     "Obrigação: il faut + infinitivo (é preciso), vous devez + infinitivo (você deve). Proibição: il est interdit de + infinitivo, ne … pas, défense de.",
     "Avisos escritos: pas de téléphone portable (sem celular), attention !, en cas de pluie (em caso de chuva).",
-    "Falso cognato: « attention » = cuidado (e não «atenção» de atender); « annuler » = cancelar."
+    "« Attention ! » = Cuidado! / Atenção! (aviso). « Annuler » = cancelar. « Pique-nique » = piquenique (lanche levado para comer ao ar livre)."
    ],
    "vocab": [
     {
@@ -2070,7 +2105,9 @@
      "t": "gap",
      "q": "Il faut ___ une casquette et un pique-nique.",
      "resp": [
-      "apporter"
+      "apporter",
+      "avoir",
+      "prendre"
      ],
      "exp": "Il faut + infinitivo: apporter (trazer). Não confundir com « porter » (levar/vestir).",
      "dica": "APPORTER"
@@ -2084,10 +2121,15 @@
      "min": 5,
      "chave": [
       "interdit",
-      "ne",
-      "pas",
+      "défendu",
       "faut",
-      "doit"
+      "doit",
+      "silence",
+      "respecter",
+      "obligatoire",
+      "écouter",
+      "arriver",
+      "retard"
      ],
      "exp": "Use « Il est interdit de… », « Il ne faut pas… » ou « On ne doit pas… »."
     },
@@ -2110,7 +2152,8 @@
       "écrivez",
       "téléphonez",
       "ecrivez",
-      "telephonez"
+      "telephonez",
+      "parlez"
      ],
      "exp": "Imperativo de vous: écrivez ou téléphonez à la directrice. Os dois verbos usam « à » antes de quem recebe.",
      "dica": "ÉCRIRE"
@@ -2204,7 +2247,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta esta frase.",
      "frase": "On va au cinéma dimanche à seize heures ?",
-     "exp": "« Seize » soa [sɛz]. « Cinéma » tem acento no último a: ci-né-MA."
+     "exp": "« Cinéma » tem as três sílabas quase com a mesma força (ci-né-ma): em francês o acento cai levemente na última sílaba. « Seize » soa [sɛz]."
     },
     {
      "t": "mc",

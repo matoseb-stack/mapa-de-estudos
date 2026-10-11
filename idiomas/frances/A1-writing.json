@@ -89,7 +89,7 @@
      "t": "mc",
      "q": "Quelle phrase a besoin d'un point d'interrogation (?) à la fin ?",
      "op": [
-      "Tu habites à Paris",
+      "Elle habite à Paris",
       "Où habites-tu",
       "Il est étudiant",
       "C'est lundi"
@@ -234,7 +234,7 @@
      "modo": "repetir",
      "q": "Leia a frase em voz alta.",
      "frase": "J'habite à Recife, au Brésil.",
-     "exp": "Em 'Brésil' o r é gutural e o s final soa 'l'. Faça a ligação suave: j'ha-bi-ta."
+     "exp": "Em 'Brésil' o r é gutural e o s soa como z: bré-zil. Em j'habite, o h é mudo: j'a-bit."
     },
     {
      "t": "mc",
@@ -551,7 +551,7 @@
      "modo": "repetir",
      "q": "Leia a frase em voz alta.",
      "frase": "Il y a un livre et des stylos sur la table.",
-     "exp": "'Il y a' pronuncia-se 'il-i-á'. Em 'des stylos' o s é ligado: dé-sti-lô."
+     "exp": "'Il y a' pronuncia-se 'il-i-a'. Em 'des stylos' o s de des não soa (a palavra seguinte começa com consoante): dê-sti-lô."
     },
     {
      "t": "mc",
@@ -600,8 +600,10 @@
       "cahier",
       "trousse",
       "ordinateur",
-      "il",
-      "y"
+      "téléphone",
+      "clés",
+      "règle",
+      "sandwich"
      ],
      "exp": "Use Il y a un/une/des + objeto."
     },
@@ -761,9 +763,13 @@
       "sympa",
       "gentil",
       "drôle",
-      "il",
-      "elle",
-      "est"
+      "timide",
+      "blond",
+      "brun",
+      "sportif",
+      "amusant",
+      "intelligent",
+      "sympathique"
      ],
      "exp": "Use Il/Elle est + adjetivo (concorde com o gênero)."
     },
@@ -1028,7 +1034,8 @@
      "t": "gap",
      "q": "Sur la fiche : « Nom : SILVA ; ___ : Ana ». Complétez le champ.",
      "resp": [
-      "Prénom"
+      "Prénom",
+      "Prenom"
      ],
      "exp": "Ana é o nome de batismo: prénom (com acento agudo)."
     },
@@ -1105,7 +1112,10 @@
      "resp": [
       "numéro de téléphone",
       "numéro",
-      "téléphone"
+      "téléphone",
+      "numero",
+      "portable",
+      "numéro de portable"
      ],
      "exp": "Mon numéro de téléphone est... ou mon numéro est..."
     }
@@ -1118,7 +1128,7 @@
    "foco": "Nationalités et professions au masculin et au féminin; Je suis + profession sans article",
    "explicacao": [
     "Nacionalidades: brésilien/brésilienne, français/française, portugais/portugaise, italien/italienne, canadien/canadienne. Escreva sempre em minúscula.",
-    "Profissões: étudiant/étudiante, vendeur/vendeuse, coiffeur/coiffeuse, infirmier/infirmière. Algumas não mudam: médecin, professeur, ingénieur.",
+    "Profissões: étudiant/étudiante, vendeur/vendeuse, coiffeur/coiffeuse, infirmier/infirmière. Algumas costumam não mudar: médecin, ingénieur (professeur também, embora hoje se veja professeure).",
     "Depois de être, não se usa artigo com profissão: Je suis infirmière. Elle est médecin. (Com c'est usa-se artigo: C'est une infirmière.)",
     "Países: la France, l'Italie, le Brésil, le Portugal. Para morar: en France, en Italie, au Brésil, au Portugal."
    ],
@@ -1242,8 +1252,24 @@
       "suis",
       "brésilien",
       "brésilienne",
+      "français",
+      "française",
+      "italien",
+      "italienne",
+      "portugais",
+      "portugaise",
+      "argentin",
+      "argentine",
       "étudiant",
-      "étudiante"
+      "étudiante",
+      "professeur",
+      "professeure",
+      "médecin",
+      "infirmier",
+      "infirmière",
+      "vendeur",
+      "vendeuse",
+      "ingénieur"
      ],
      "exp": "Use Je suis + nacionalidade e Je suis + profissão."
     },
@@ -1430,7 +1456,8 @@
      "t": "gap",
      "q": "Le cours finit à ___ heures. (17 h, em letras)",
      "resp": [
-      "dix-sept"
+      "dix-sept",
+      "dix sept"
      ],
      "exp": "17 = dix-sept (com hífen)."
     }
@@ -1444,7 +1471,7 @@
    "explicacao": [
     "Para abrir uma mensagem a um amigo: Salut Paul, / Coucou Marie, / Cher Paul, / Chère Marie, (cher para homem, chère para mulher; sempre com vírgula).",
     "Para encerrar entre amigos: À bientôt, / À très vite, / Bisous, / Grosses bises, / Amitiés,. Depois, escreva só o seu prénom.",
-    "Cuidado com a tradução literal: Querido = cher (não 'querido'); Beijos = bisous (não 'beijos'); Até logo = à bientôt.",
+    "Cuidado com a tradução literal: Querido(a) = cher/chère; Beijos = bisous; Até logo = à bientôt.",
     "Com amigos use tu: Comment vas-tu ? Merci pour ton message. Com desconhecidos, vous (veremos depois)."
    ],
    "vocab": [
@@ -1556,7 +1583,8 @@
      "t": "gap",
      "q": "Tchau, até logo ! → ___ bientôt !",
      "resp": [
-      "À"
+      "À",
+      "A"
      ],
      "exp": "Até logo = À bientôt (com acento grave)."
     },
@@ -1572,7 +1600,9 @@
       "bientôt",
       "bises",
       "amitiés",
-      "à"
+      "bonne journée",
+      "à demain",
+      "à très vite"
      ],
      "exp": "Use À bientôt, Bisous ou Amitiés."
     },
@@ -1592,7 +1622,8 @@
      "t": "gap",
      "q": "Pour une amie, on écrit : « ___ Marie, ». (querida)",
      "resp": [
-      "Chère"
+      "Chère",
+      "Chere"
      ],
      "exp": "Para uma mulher: Chère, com accent grave."
     }
@@ -1661,7 +1692,7 @@
    "exercicios": [
     {
      "t": "mc",
-     "q": "Je suis fatigué ___ je travaille beaucoup.",
+     "q": "— Pourquoi tu es fatigué ? — ___ je travaille beaucoup.",
      "op": [
       "mais",
       "parce que",
@@ -1673,7 +1704,7 @@
     },
     {
      "t": "gap",
-     "q": "J'aime le thé ___ je n'aime pas le café.",
+     "q": "J'aime le thé ___ je n'aime pas le café. (mas)",
      "resp": [
       "mais"
      ],
@@ -1729,11 +1760,17 @@
      "min": 4,
      "chave": [
       "parce",
-      "français",
+      "pour",
       "voyager",
-      "aime",
+      "voyage",
       "travail",
-      "études"
+      "études",
+      "aime",
+      "j'aime",
+      "métier",
+      "famille",
+      "amis",
+      "important"
      ],
      "exp": "Comece com Parce que... ou J'apprends le français parce que..."
     },
@@ -1895,12 +1932,14 @@
      "modelo": "Je suis à Paris. Il fait beau.",
      "min": 5,
      "chave": [
-      "suis",
       "fait",
       "beau",
       "chaud",
       "froid",
-      "pleut"
+      "pleut",
+      "neige",
+      "soleil",
+      "vent"
      ],
      "exp": "Use Je suis à + cidade e Il fait + adjetivo."
     },
@@ -2039,7 +2078,10 @@
       "vendredi"
      ],
      "resp": "Je t'invite à dîner chez moi vendredi.",
-     "exp": "Je t'invite à + infinitivo + lugar + dia."
+     "exp": "Je t'invite à + infinitivo + lugar + dia.",
+     "alt": [
+      "Je t'invite à dîner vendredi chez moi"
+     ]
     },
     {
      "t": "gap",
@@ -2057,11 +2099,16 @@
      "modelo": "Oui, je suis libre samedi soir.",
      "min": 4,
      "chave": [
-      "oui",
-      "non",
       "libre",
       "désolé",
-      "désolée"
+      "désolée",
+      "occupé",
+      "occupée",
+      "peux",
+      "viens",
+      "disponible",
+      "oui",
+      "non"
      ],
      "exp": "Responda com Oui, je suis libre... ou Non, je suis occupé."
     },
@@ -2401,8 +2448,12 @@
       "regarde",
       "vais",
       "mange",
-      "samedi",
-      "amis"
+      "dors",
+      "reste",
+      "travaille",
+      "sors",
+      "étudie",
+      "fais"
      ],
      "exp": "Use Le samedi, je + verbo (joue, mange, vais)."
     },
@@ -2430,7 +2481,8 @@
      "q": "Je ne peux pas venir ___ je travaille.",
      "resp": [
       "parce que",
-      "parce qu'"
+      "parce qu'",
+      "car"
      ],
      "exp": "O motivo: parce que."
     },

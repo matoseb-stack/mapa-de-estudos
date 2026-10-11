@@ -54,7 +54,7 @@
      "Usei saudação e despedida de amigo (Salut… / À bientôt) e tutoiei o texto todo?",
      "Respondi aos três pontos: aceitar, propor algo, perguntar como chegar?",
      "Conferi acentos e concordâncias (je suis désolé / désolée)?",
-     "Contei as palavras: entre 90 e 120?"
+     "Contei as palavras: entre 80 e 110?"
     ]
    },
    "exercicios": [
@@ -130,7 +130,7 @@
      "q": "Seu amigo convida você para o aniversário dele. Responda em duas frases: aceite e proponha trazer algo.",
      "frase": "Théo vous écrit : « Tu viens à mon anniversaire samedi ? »",
      "modelo": "Oui, bien sûr, je viens avec plaisir ! Je peux apporter un gâteau.",
-     "min": 8,
+     "min": 6,
      "chave": [
       "viens",
       "plaisir",
@@ -160,7 +160,7 @@
       "agréer",
       "agreer"
      ],
-     "exp": "Agréer = aceitar, receber (verbo do 2º grupo). Veuillez agréer… é a variante com veuillez."
+     "exp": "Agréer = aceitar, receber (verbo regular em -er). Veuillez agréer… é a variante com veuillez."
     }
    ]
   },
@@ -215,7 +215,7 @@
      "Dei minha opinião com expressões variadas (à mon avis, selon moi, je pense que)?",
      "Usei o subjuntivo depois de je ne pense pas que?",
      "Justifiquei a opinião com pelo menos uma razão?",
-     "Contei as palavras: entre 100 e 130?"
+     "Contei as palavras: entre 90 e 120?"
     ]
    },
    "exercicios": [
@@ -237,7 +237,7 @@
      "resp": [
       "soient"
      ],
-     "exp": "Ne pas penser que + subjuntivo. Être no subjuntivo: que ils soient.",
+     "exp": "Ne pas penser que + subjuntivo. Être no subjuntivo: qu'ils soient.",
      "dica": "ÊTRE"
     },
     {
@@ -245,7 +245,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta.",
      "frase": "À mon avis, il ne faut pas interdire le téléphone portable au collège.",
-     "exp": "'Avis' termina em i (o s não soa). 'Portable' tem o 'o' fechado e o 'a' final de 'able' fraco."
+     "exp": "'Avis' termina em i (o s não soa). 'Portable' soa /pɔʁtabl/: o aberto e o 'e' final mudo."
     },
     {
      "t": "mc",
@@ -291,7 +291,7 @@
      "q": "Dê sua opinião em duas frases: o home office é uma boa ideia?",
      "frase": "Le télétravail : est-ce une bonne idée selon vous ?",
      "modelo": "À mon avis, c'est une bonne idée, car on gagne du temps. Je ne pense pas que ce soit parfait, mais c'est pratique.",
-     "min": 12,
+     "min": 10,
      "chave": [
       "avis",
       "pense",
@@ -377,7 +377,7 @@
      "Tenho introdução, 2 ou 3 argumentos e conclusão?",
      "Cada argumento começa com um conector de ordem (d'abord, ensuite, enfin)?",
      "Usei de plus ou en outre para somar ideias?",
-     "Contei as palavras: entre 110 e 140?"
+     "Contei as palavras: entre 100 e 130?"
     ]
    },
    "exercicios": [
@@ -453,7 +453,7 @@
      "q": "Dê duas razões para aprender francês usando d'abord e ensuite.",
      "frase": "Pourquoi apprenez-vous le français ?",
      "modelo": "D'abord, je veux voyager en France. Ensuite, j'espère trouver un meilleur travail.",
-     "min": 10,
+     "min": 6,
      "chave": [
       "abord",
       "ensuite",
@@ -538,7 +538,7 @@
      "Cada argumento tem um exemplo concreto (par exemple, en effet)?",
      "Usei car / parce que / grâce à corretamente?",
      "Dei minha opinião logo no início?",
-     "Contei as palavras: entre 110 e 140?"
+     "Contei as palavras: entre 100 e 130?"
     ]
    },
    "exercicios": [
@@ -613,7 +613,7 @@
      "q": "Dê sua opinião e um exemplo pessoal: é útil fazer esporte?",
      "frase": "Pensez-vous qu'il est utile de faire du sport ?",
      "modelo": "Oui, je pense que c'est très utile. Par exemple, mon frère fait du sport et il est en meilleure santé.",
-     "min": 12,
+     "min": 10,
      "chave": [
       "sport",
       "exemple",
@@ -642,7 +642,9 @@
      "q": "Elle n'a pas pu venir ___ d'un accident.",
      "resp": [
       "à cause",
-      "a cause"
+      "a cause",
+      "en raison",
+      "en raison d'"
      ],
      "exp": "À cause de + substantivo (d'un accident). Não existe 'por causa que' em francês."
     }
@@ -699,7 +701,7 @@
      "Usei pelo menos dois conectores de oposição (cependant, en revanche, pourtant)?",
      "Usei bien que com subjuntivo e même si com indicativo?",
      "Reconheci o argumento do outro lado antes de dar minha opinião?",
-     "Contei as palavras: entre 120 e 150?"
+     "Contei as palavras: entre 100 e 130?"
     ]
    },
    "exercicios": [
@@ -775,7 +777,7 @@
      "q": "Prefere mar ou montanha? Dê uma vantagem e uma desvantagem.",
      "frase": "Préférez-vous la mer ou la montagne ? Donnez un avantage et un inconvénient.",
      "modelo": "Je préfère la mer. Elle est agréable, mais en revanche, elle est souvent chère.",
-     "min": 10,
+     "min": 7,
      "chave": [
       "mer",
       "montagne",
@@ -861,7 +863,7 @@
      "Usei pelo menos um conector de consequência (donc, par conséquent, c'est pourquoi)?",
      "Usei pour que / afin que + subjuntivo só quando os sujeitos são diferentes?",
      "Mantive introdução, desenvolvimento e conclusão?",
-     "Contei as palavras: entre 120 e 150?"
+     "Contei as palavras: entre 110 e 140?"
     ]
    },
    "exercicios": [
@@ -909,15 +911,15 @@
      "palavras": [
       "Les",
       "prix",
-      "augmentent,",
+      "augmentent;",
       "par",
-      "conséquent",
+      "conséquent,",
       "les",
       "gens",
       "achètent",
       "moins."
      ],
-     "resp": "Les prix augmentent, par conséquent les gens achètent moins.",
+     "resp": "Les prix augmentent; par conséquent, les gens achètent moins.",
      "exp": "Par conséquent liga a consequência ao fato. Acheter moins = comprar menos."
     },
     {
@@ -935,7 +937,7 @@
      "q": "O que devemos fazer para proteger o meio ambiente? Responda em duas frases.",
      "frase": "Que faut-il faire pour protéger l'environnement ?",
      "modelo": "Il faut trier les déchets pour que la planète soit plus propre. Par conséquent, nous devons tous agir.",
-     "min": 10,
+     "min": 9,
      "chave": [
       "trier",
       "déchets",
@@ -1022,7 +1024,7 @@
      "Usei o condicional nos conselhos (je ferais, tu pourrais, tu devrais)?",
      "Fiz pelo menos uma sugestão com on pourrait ou que dirais-tu de?",
      "Mantive o tutoiement e o tom de amigo?",
-     "Contei as palavras: entre 110 e 140?"
+     "Contei as palavras: entre 90 e 120?"
     ]
    },
    "exercicios": [
@@ -1095,7 +1097,7 @@
      "q": "Seu amigo está estressado antes de uma prova. Dê dois conselhos em duas frases.",
      "frase": "Votre ami est stressé avant un examen. Que lui conseillez-vous ?",
      "modelo": "À ta place, je réviserais un peu chaque jour. Tu pourrais aussi faire du sport pour te détendre.",
-     "min": 12,
+     "min": 9,
      "chave": [
       "place",
       "pourrais",
@@ -1181,7 +1183,7 @@
      "Usei il faut que / il est important que com o verbo no subjuntivo?",
      "Dei pelo menos três conselhos práticos e organizados (d'abord, ensuite, enfin)?",
      "Conferi as formas irregulares (fasse, aille, soit, sache)?",
-     "Contei as palavras: entre 120 e 150?"
+     "Contei as palavras: entre 100 e 130?"
     ]
    },
    "exercicios": [
@@ -1256,7 +1258,7 @@
      "q": "Seu amigo vai estudar fora. Diga o que ele deve fazer, em duas frases.",
      "frase": "Votre ami part étudier à l'étranger. Que lui dites-vous de faire ?",
      "modelo": "Il faut que tu apprennes la langue. Il est aussi important que tu trouves un logement.",
-     "min": 12,
+     "min": 8,
      "chave": [
       "faut",
       "important",
@@ -1342,7 +1344,7 @@
      "Comecei com uma saudação ao grupo (Bonjour à tous)?",
      "Dei uma opinião clara e pelo menos um argumento com exemplo?",
      "Terminei com uma pergunta ou convite à discussão?",
-     "Contei as palavras: entre 120 e 150?"
+     "Contei as palavras: entre 110 e 140?"
     ]
    },
    "exercicios": [
@@ -1415,7 +1417,7 @@
      "q": "Reaja como num fórum: as redes sociais fazem bem aos jovens? Duas frases.",
      "frase": "Les réseaux sociaux sont-ils bons pour les jeunes ? Réagissez comme sur un forum.",
      "modelo": "Bonjour à tous, je pense que les réseaux sociaux ont des avantages, mais ils prennent trop de temps. Qu'en pensez-vous ?",
-     "min": 14,
+     "min": 10,
      "chave": [
       "réseaux",
       "pense",
@@ -1567,7 +1569,7 @@
      "resp": [
       "au"
      ],
-     "exp": "Au sujet de = a respeito de. Cuidado: 'sobre o assunto' em francês é au sujet de, não 'sur le sujet de'."
+     "exp": "Au sujet de = a respeito de. Em carta formal prefira au sujet de a 'sur le sujet de'."
     },
     {
      "t": "speak",
@@ -1575,7 +1577,7 @@
      "q": "Apresente-se educadamente ao escrever para o jornal. Duas frases.",
      "frase": "Pourquoi écrivez-vous au journal ? Présentez-vous poliment.",
      "modelo": "Madame, Monsieur, je me permets de vous écrire au sujet de la bibliothèque, car je ne suis pas d'accord avec la mairie.",
-     "min": 14,
+     "min": 10,
      "chave": [
       "permets",
       "sujet",
@@ -1616,7 +1618,7 @@
    "objetivo": "Evitar erros de gênero dos substantivos, de concordância do particípio e de escolha entre être e avoir.",
    "foco": "Genre des noms; passé composé avec être / avoir; accord du participe passé",
    "explicacao": [
-    "Gênero diferente do português: le problème, le lait, le sang, la dent, la fleur, la jambe, la mer (m.): le problème, le lait, la dent, l'avion (m.), la souris (f.).",
+    "Atenção ao gênero: la dent (o dente, fem.), la mer (o mar, fem.), la souris (fem.), le problème (masc., como todos os substantivos em -ème), le lait (masc.), l'avion (masc.).",
     "Passé composé com être: verbos de movimento (aller, venir, partir, arriver, rester, tomber, naître, mourir…) e todos os pronominais. O particípio concorda com o sujeito: Elle est allée. Elles se sont levées.",
     "Com avoir, o particípio concorda com o COD só se ele vier ANTES do verbo: Les photos que j'ai prises. Mas: J'ai pris des photos.",
     "Verbos como monter, descendre, sortir, rentrer usam avoir quando têm complemento direto: Elle a monté les valises. / Elle est montée."
@@ -1661,7 +1663,7 @@
      "Conferi o gênero dos substantivos duvidosos (le problème, la dent, le lait)?",
      "Usei être com verbos de movimento e pronominais e fiz a concordância do particípio?",
      "Usei imparfait para descrever e passé composé para as ações?",
-     "Contei as palavras: entre 130 e 160?"
+     "Contei as palavras: entre 120 e 150?"
     ]
    },
    "exercicios": [
@@ -1691,7 +1693,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta.",
      "frase": "Mes amies et moi sommes parties en Italie l'été dernier.",
-     "exp": "Em 'parties' o s final de 'sommes' liga com a vogal seguinte se houver. 'Dernier' soa 'dêr-niê'."
+     "exp": "Em 'sommes' o s final é mudo. 'Dernier' soa /dɛʁnje/."
     },
     {
      "t": "mc",
@@ -1735,7 +1737,7 @@
      "q": "Conte em duas frases uma viagem que você fez com amigos.",
      "frase": "Racontez en deux phrases un voyage que vous avez fait avec des amis.",
      "modelo": "L'été dernier, je suis allé au Chili avec des amis. Nous avons visité plusieurs villes.",
-     "min": 12,
+     "min": 7,
      "chave": [
       "voyage",
       "suis",
@@ -1823,7 +1825,7 @@
      "Usei actuellement no sentido de 'no momento' e não de 'na verdade'?",
      "Conferi attendre, assister à, sensible, éventuellement e prétendre?",
      "Verifiquei as preposições dos verbos (rêver de, s'intéresser à…)?",
-     "Contei as palavras: entre 130 e 160?"
+     "Contei as palavras: entre 120 e 150?"
     ]
    },
    "exercicios": [
@@ -1898,7 +1900,7 @@
      "q": "Como você estuda francês no momento? Use actuellement.",
      "frase": "Comment étudiez-vous le français actuellement ? Utilisez « actuellement » dans votre réponse.",
      "modelo": "Actuellement, j'étudie le français sur Internet et je regarde des films.",
-     "min": 10,
+     "min": 5,
      "chave": [
       "actuellement",
       "étudie",
@@ -1942,7 +1944,7 @@
     "Introdução em 3 passos: apresentar o tema (De plus en plus d'étudiants travaillent) → fazer a pergunta (Est-ce une bonne idée ?) → dar a opinião (Personnellement, je pense que oui, à condition que…).",
     "Conclusão em 2 passos: resumir com outras palavras (En conclusion, un emploi limité est positif) → abrir (Il faudrait que les écoles aident les étudiants).",
     "Não repita a introdução palavra por palavra e não traga argumento novo na conclusão.",
-    "À condition que + subjuntivo (com a condição de que). Pronome: personnellement, pour ma part, quant à moi."
+    "À condition que + subjuntivo (com a condição de que). Para marcar a opinião pessoal: personnellement, pour ma part, quant à moi."
    ],
    "vocab": [
     {
@@ -2013,7 +2015,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta.",
      "frase": "De plus en plus d'étudiants travaillent pendant leurs études.",
-     "exp": "Em 'étudiants' o t final é mudo e 'ud' soa como 'ü'. Em 'plus' o s final não soa antes de consoante."
+     "exp": "Em 'étudiants' o t final é mudo e 'ud' soa como 'ü'. Em 'plus en' faz-se a ligação (/plyzɑ̃/); no último 'plus', antes de 'd'étudiants', o s não soa."
     },
     {
      "t": "mc",
@@ -2058,7 +2060,7 @@
      "q": "Apresente o tema e dê sua opinião em duas frases: é preciso aprender uma língua estrangeira na escola?",
      "frase": "Présentez le sujet et donnez votre opinion en deux phrases : faut-il apprendre une langue étrangère à l'école ?",
      "modelo": "De plus en plus de gens voyagent. Personnellement, je pense qu'il faut apprendre une langue étrangère dès l'école.",
-     "min": 14,
+     "min": 9,
      "chave": [
       "personnellement",
       "pense",
@@ -2144,7 +2146,7 @@
      "Reservei 7 a 10 minutos para reler e contar as palavras?",
      "Conferi acentos, concordâncias, subjuntivos e homófonos (a/à, ou/où, et/est)?",
      "Terminei todas as frases com pontuação e comecei com maiúscula?",
-     "Contei as palavras: entre 140 e 180 (mínimo 160 na prova)?"
+     "Contei as palavras: entre 140 e 180?"
     ]
    },
    "exercicios": [
@@ -2221,7 +2223,7 @@
      "q": "Como você revisa um texto antes de entregar? Duas frases.",
      "frase": "Comment vérifiez-vous un texte avant de le rendre ?",
      "modelo": "Je relis le texte, je compte les mots et je vérifie les accords et les accents.",
-     "min": 12,
+     "min": 8,
      "chave": [
       "relis",
       "compte",
@@ -2231,7 +2233,7 @@
       "vérifie",
       "ponctuation"
      ],
-     "exp": "Use verbos no presente (je relis, je vérifie). Pronuncie o t final de 'relis' mudo."
+     "exp": "Use verbos no presente (je relis, je vérifie). Em 'relis' e 'compte' as consoantes finais não se leem como em português: o s de 'relis' é mudo."
     },
     {
      "t": "mc",
@@ -2376,7 +2378,9 @@
      "resp": [
       "en revanche",
       "par contre",
-      "cependant"
+      "cependant",
+      "pourtant",
+      "néanmoins"
      ],
      "exp": "En revanche opõe duas vantagens. Evite 'au contraire' aqui, que nega a frase anterior."
     },
@@ -2398,7 +2402,7 @@
      "q": "Resuma sua opinião em duas frases: vida na cidade ou no campo?",
      "frase": "Résumez votre opinion sur la vie en ville ou à la campagne en deux phrases.",
      "modelo": "Pour ma part, je préfère la ville parce qu'elle offre plus de travail et de loisirs. Cependant, je comprends que certaines personnes aiment la campagne.",
-     "min": 15,
+     "min": 10,
      "chave": [
       "ville",
       "campagne",
@@ -2417,7 +2421,7 @@
       "crée",
       "cree"
      ],
-     "exp": "Il faut que + subjuntivo. Créer → que la mairie crée (com acento no é antes do e mudo final: crée).",
+     "exp": "Il faut que + subjuntivo. Créer → que la mairie crée (forma: crée, com é acentuado + e final mudo).",
      "dica": "CRÉER"
     },
     {

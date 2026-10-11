@@ -76,8 +76,7 @@
      "t": "gap",
      "q": "Je ___ Pedro. (me chamo)",
      "resp": [
-      "m'appelle",
-      "me appelle"
+      "m'appelle"
      ],
      "exp": "Je m'appelle = eu me chamo. Escreve-se com apóstrofo: m'appelle."
     },
@@ -122,9 +121,10 @@
      "chave": [
       "m'appelle",
       "appelle",
-      "je",
       "suis",
-      "nom"
+      "moi c'est",
+      "enchanté",
+      "enchantée"
      ],
      "exp": "Diga: Je m'appelle + seu nome. Pode acrescentar Enchanté(e)."
     },
@@ -284,10 +284,12 @@
      "chave": [
       "j'habite",
       "habite",
-      "à",
-      "au",
       "brésil",
-      "vis"
+      "vis",
+      "ville",
+      "maison",
+      "recife",
+      "paulo"
      ],
      "exp": "Use J'habite à + cidade. Ex.: J'habite à Recife."
     },
@@ -401,9 +403,10 @@
     },
     {
      "t": "gap",
-     "q": "Madame, vous ___ française ? (êtes)",
+     "q": "Madame, vous ___ française ? (verbe ÊTRE)",
      "resp": [
-      "êtes"
+      "êtes",
+      "etes"
      ],
      "exp": "Com vous, o verbo être é vous êtes (com acento circunflexo)."
     },
@@ -651,10 +654,10 @@
       "frère",
       "sœur",
       "soeur",
-      "j'ai",
-      "non",
-      "oui",
-      "pas de"
+      "pas de",
+      "enfant unique",
+      "frères",
+      "sœurs"
      ],
      "exp": "Comece com Oui, j'ai... ou Non, je n'ai pas de... e acrescente um detalhe."
     }
@@ -809,8 +812,8 @@
       "café",
       "lait",
       "thé",
-      "du",
-      "matin"
+      "chocolat",
+      "eau"
      ],
      "exp": "Use Je bois du/de la... Atenção aos sons u e ou em jus e du."
     }
@@ -965,7 +968,10 @@
       "café",
       "lait",
       "croissant",
-      "petit-déjeuner"
+      "céréales",
+      "fruits",
+      "jus",
+      "bois"
      ],
      "exp": "Fale: Je mange du pain... Cuidado: em pain, não pronuncie o N."
     }
@@ -1100,7 +1106,7 @@
     },
     {
      "t": "gap",
-     "q": "Où ___ -vous ? — Je travaille dans une banque.",
+     "q": "Où ___-vous ? — Je travaille dans une banque.",
      "resp": [
       "travaillez"
      ],
@@ -1108,7 +1114,7 @@
     },
     {
      "t": "mc",
-     "q": "Falso cognato: « actuellement » significa:",
+     "q": "Cuidado com o inglês: « actuellement » (parecido com «actually») significa:",
      "op": [
       "na verdade",
       "atualmente",
@@ -1220,7 +1226,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta esta frase.",
      "frase": "J'adore la musique et je déteste le froid.",
-     "exp": "Em « adore » e « froid », o r é suave. « Froid » soa « froá ». « Déteste » tem dois e fechados: dé-tést."
+     "exp": "Em « adore » e « froid », o r é suave. « Froid » soa « froá ». « Déteste » soa dé-tèst (o primeiro e é fechado, o segundo é aberto)."
     },
     {
      "t": "mc",
@@ -1295,13 +1301,20 @@
      "modelo": "Mon passe-temps préféré, c'est la lecture, parce que j'aime les histoires.",
      "min": 6,
      "chave": [
-      "préféré",
-      "parce que",
+      "passe-temps",
+      "c'est",
       "j'aime",
       "j'adore",
       "lire",
       "lecture",
-      "sport"
+      "sport",
+      "musique",
+      "cinéma",
+      "football",
+      "danse",
+      "jeux",
+      "voyager",
+      "cuisine"
      ],
      "exp": "Estrutura: Mon passe-temps préféré, c'est... parce que..."
     }
@@ -1426,8 +1439,10 @@
       "week-end",
       "weekend",
       "faites",
-      "vous",
-      "aimez"
+      "aimez",
+      "sortez",
+      "faire",
+      "fait"
      ],
      "exp": "Ex.: Qu'est-ce que vous faites le week-end ? Faça a voz subir no final."
     },
@@ -1591,7 +1606,10 @@
       "habitez",
       "aimez",
       "où",
-      "quelle"
+      "quelle",
+      "habite",
+      "grande",
+      "petite"
      ],
      "exp": "Ex.: Vous habitez dans une grande ville ? / Quelle est votre ville préférée ?"
     },
@@ -1627,8 +1645,11 @@
       "où",
       "quand",
       "aimez",
-      "vous",
-      "mer"
+      "mer",
+      "passez",
+      "allez",
+      "ah bon",
+      "moi aussi"
      ],
      "exp": "Faça a pergunta e reaja com Ah bon ? ou Moi aussi."
     }
@@ -1867,7 +1888,7 @@
      "op": [
       "soixante-vingt",
       "quatre-vingts",
-      "octante",
+      "huit-vingts",
       "huit-dix"
      ],
      "r": 1,
@@ -1953,7 +1974,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta esta frase.",
      "frase": "Quatre-vingt-dix-neuf centimes, c'est bon marché.",
-     "exp": "« Quatre-vingt-dix-neuf » é 99. Pronuncie devagar, em blocos. O d final de « vingt » não soa."
+     "exp": "« Quatre-vingt-dix-neuf » é 99. Pronuncie devagar, em blocos. O t final de « vingt » não soa aqui."
     }
    ]
   },
@@ -2039,7 +2060,7 @@
      "modo": "repetir",
      "q": "Leia em voz alta esta frase.",
      "frase": "Je voudrais essayer ce pantalon, s'il vous plaît.",
-     "exp": "« Voudrais » soa « vu-dré ». O u francês em « pantalon » e o on nasal em « pantalon » (« pã-ta-lõ »)."
+     "exp": "« Voudrais » soa « vu-dré ». « Pantalon » soa « pã-ta-lõ » (dois nasais: an e on). « Essayer » soa « é-sé-ié »."
     },
     {
      "t": "mc",
@@ -2066,7 +2087,10 @@
       "carte"
      ],
      "resp": "Je le prends et je paie par carte",
-     "exp": "Le substitui o objeto masculino (le pull): je le prends."
+     "exp": "Le substitui o objeto masculino (le pull): je le prends.",
+     "alt": [
+      "Je paie par carte et je le prends"
+     ]
     },
     {
      "t": "speak",
@@ -2078,8 +2102,8 @@
      "chave": [
       "voudrais",
       "veste",
-      "tee-shirt",
-      "pantalon",
+      "blouson",
+      "manteau",
       "s'il vous plaît",
       "cherche"
      ],
@@ -2117,6 +2141,9 @@
       "espèces",
       "paie",
       "payer",
+      "paye",
+      "liquide",
+      "chèque",
       "cash"
      ],
      "exp": "Opções: Je paie par carte / en espèces."
@@ -2194,7 +2221,7 @@
     },
     {
      "t": "gap",
-     "q": "Allez tout ___ , puis tournez à gauche. (reto)",
+     "q": "Allez tout ___, puis tournez à gauche. (reto)",
      "resp": [
       "droit"
      ],
@@ -2249,7 +2276,7 @@
     },
     {
      "t": "gap",
-     "q": "Pouvez-vous ___ , s'il vous plaît ? Je n'ai pas compris. (repetir)",
+     "q": "Pouvez-vous ___, s'il vous plaît ? Je n'ai pas compris. (repetir)",
      "resp": [
       "répéter"
      ],
@@ -2373,8 +2400,7 @@
       "suis",
       "j'habite",
       "brésilien",
-      "brésilienne",
-      "nom"
+      "brésilienne"
      ],
      "exp": "Fale devagar: Je m'appelle..., J'ai... ans, Je suis..., J'habite à..."
     },
@@ -2415,14 +2441,15 @@
       "week-end",
       "weekend",
       "faites",
-      "vous",
-      "aimez"
+      "aimez",
+      "sortez",
+      "faire"
      ],
      "exp": "Use vous e faça a voz subir: Qu'est-ce que vous faites le week-end ?"
     },
     {
      "t": "gap",
-     "q": "Parte 2. Est-ce que vous ___ du sport ? (faites)",
+     "q": "Parte 2. Est-ce que vous ___ du sport ? (verbe FAIRE)",
      "resp": [
       "faites"
      ],

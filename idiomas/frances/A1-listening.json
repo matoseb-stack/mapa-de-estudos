@@ -12,7 +12,7 @@
     "Em francês a idade usa o verbo avoir (ter), não être: J'ai seize ans. (e não \"je suis seize\").",
     "Para o nome: Je m'appelle Camille. Para pedir que soletrem: Vous pouvez épeler, s'il vous plaît ?",
     "Atenção às letras: E soa \"ê\", I soa \"i\", U soa \"ü\" (boca de assobio). A letra Y se diz \"i grec\" e W se diz \"double vé\".",
-    "Seize se diz \"sèz\" (o S final soa como Z); dix-sept se diz \"dissèt\"."
+    "Seize se diz \"sèz\" (o Z final soa); dix-sept se diz \"dissèt\"."
    ],
    "vocab": [
     {
@@ -113,7 +113,7 @@
      "modo": "repetir",
      "q": "Ouça se quiser e repita a frase em voz alta.",
      "frase": "Je m'appelle Camille. J'ai seize ans.",
-     "exp": "J'ai = \"jê\" (um só som). Seize = \"sèz\", com o S final sonoro como Z."
+     "exp": "J'ai = \"jê\" (um só som). Seize = \"sèz\", com o Z final bem pronunciado."
     },
     {
      "t": "mc",
@@ -199,7 +199,7 @@
    "foco": "nombres 0–69; le numéro de téléphone; treize / trente",
    "explicacao": [
     "Os telefones franceses se dizem de dois em dois: 06 14 48 62 33 = zéro six, quatorze, quarante-huit, soixante-deux, trente-trois.",
-    "Cuidado: treize (13, \"trèz\") e trente (30, \"trãt\", som nasal) são diferentes; o mesmo vale para quatorze/quarante e seize/seul.",
+    "Cuidado: treize (13, \"trèz\") e trente (30, \"trãt\", som nasal) são diferentes; o mesmo vale para quatorze/quarante e quinze/cinquante.",
     "De 21 a 69 diz-se vingt-deux, trente-trois… e com et em vingt et un, trente et un (mas só no 1).",
     "O som nasal de trente, quarante, cinquante: não pronuncie o N como em português; a boca não fecha."
    ],
@@ -537,7 +537,8 @@
       "finis",
       "heure",
       "heures",
-      "à"
+      "midi",
+      "jusqu'à"
      ],
      "exp": "Use Je finis à + hora. Heures: o H é mudo e o S final não soa."
     },
@@ -881,9 +882,18 @@
      "min": 4,
      "chave": [
       "anniversaire",
-      "est",
-      "c'est",
-      "le"
+      "janvier",
+      "février",
+      "mars",
+      "avril",
+      "mai",
+      "juin",
+      "juillet",
+      "août",
+      "septembre",
+      "octobre",
+      "novembre",
+      "décembre"
      ],
      "exp": "Diga Mon anniversaire est le + número + mês. Ex.: le quinze août."
     },
@@ -921,7 +931,7 @@
     "Je suis brésilien (homem) / brésilienne (mulher). A nacionalidade concorda com o gênero e vem sem maiúscula.",
     "Profissão sem artigo: Je suis infirmier. Elle est professeure. Pergunta: Vous faites quoi dans la vie ?",
     "Moradia: J'habite à Lyon. O H de habiter é mudo: j'habite = \"jabit\".",
-    "Cuidado com falsos amigos ouvidos: espagnol (língua) é diferente de espagnole (mulher espanhola)."
+    "Cuidado com o gênero ouvido: espagnol (homem ou língua) e espagnole (mulher) soam diferentes, porque o -e final faz o L soar com mais clareza. Escute o final da palavra."
    ],
    "vocab": [
     {
@@ -962,7 +972,7 @@
     "falas": [
      {
       "p": "A",
-      "t": "Bonjour, vous êtes de quelle nationalité ?"
+      "t": "Bonjour Karim, vous êtes de quelle nationalité ?"
      },
      {
       "p": "B",
@@ -1070,6 +1080,18 @@
       "habite",
       "brésilien",
       "brésilienne",
+      "française",
+      "français",
+      "italien",
+      "italienne",
+      "portugais",
+      "portugaise",
+      "argentin",
+      "argentine",
+      "espagnol",
+      "espagnole",
+      "japonais",
+      "américain",
       "j'habite"
      ],
      "exp": "Use Je suis + nacionalidade (brésilien / brésilienne) e J'habite à + cidade."
@@ -1204,7 +1226,7 @@
      "modo": "repetir",
      "q": "Ouça se quiser e repita a frase em voz alta.",
      "frase": "J'ai deux frères et une cousine.",
-     "exp": "Frères = \"frér\" (R na garganta). Une cousine = \"ün kuzin\", com U francês (boca de assobio) e S sonoro como Z."
+     "exp": "Frères = \"frèr\" (R na garganta). Une cousine = \"ün kuzin\", com U francês (boca de assobio) e S sonoro como Z."
     },
     {
      "t": "mc",
@@ -1253,7 +1275,7 @@
       "non",
       "ai"
      ],
-     "exp": "Se tiver: J'ai un frère. Se não: Je n'ai pas de frère. Frère = \"frér\" (R francês, na garganta)."
+     "exp": "Se tiver: J'ai un frère. Se não: Je n'ai pas de frère. Frère = \"frèr\" (R francês, na garganta)."
     },
     {
      "t": "mc",
@@ -1642,7 +1664,7 @@
     "Depois de quantidade usa-se de: un kilo de tomates, une bouteille d'eau, deux cents grammes de fromage.",
     "Pedido: Je voudrais… / Je prends… / Vous désirez ? Total: Ça fait onze euros vingt.",
     "Pagamento: par carte (cartão), en espèces (dinheiro vivo), par chèque. La monnaie = o troco: Je vous rends huit euros.",
-    "Cuidado com os números: cent/cents, deux cents grammes (200 g) e six œufs (seis ovos, \"si zê\" sem o X)."
+    "Cuidado com os números: cent/cents, deux cents grammes (200 g) e six œufs (seis ovos: o x de six soa como z na ligação, \"si-zeu\")."
    ],
    "vocab": [
     {
@@ -1792,10 +1814,12 @@
      "min": 4,
      "chave": [
       "voudrais",
-      "je",
       "kilo",
       "pommes",
-      "s'il"
+      "pain",
+      "fromage",
+      "lait",
+      "eau"
      ],
      "exp": "Use Je voudrais + quantidade + de + produto. Pommes = \"pom\"."
     },
@@ -1906,7 +1930,7 @@
      },
      {
       "p": "A",
-      "t": "Parfait. Le menu est à vingt-cinq euros par personne."
+      "t": "Parfait. Le menu est à vingt-deux euros par personne."
      }
     ]
    },
@@ -1986,7 +2010,13 @@
       "jus",
       "eau",
       "café",
-      "thé"
+      "thé",
+      "limonade",
+      "lait",
+      "chocolat",
+      "bière",
+      "vin",
+      "coca"
      ],
      "exp": "Use Je prends / Je voudrais + bebida. Un thé = \"ẽ té\" (nasal + T)."
     },
@@ -2005,12 +2035,12 @@
     },
     {
      "t": "gap",
-     "q": "Le menu coûte vingt-cinq euros par ___.",
+     "q": "Le menu coûte vingt-deux euros par ___.",
      "resp": [
       "personne"
      ],
      "exp": "Par personne = por pessoa.",
-     "ouvir": "Le menu est à vingt-cinq euros par personne."
+     "ouvir": "Le menu est à vingt-deux euros par personne."
     }
    ]
   },
@@ -2170,7 +2200,7 @@
       "sept",
       "six"
      ],
-     "exp": "Use Je me lève à + hora. Lève = \"lév\"; não pronuncie o E final de me como \"mi\", mas \"me\" curto."
+     "exp": "Use Je me lève à + hora. Lève = \"lèv\" (E aberto). Me soa como um \"mê\" curto e fraco."
     },
     {
      "t": "mc",
