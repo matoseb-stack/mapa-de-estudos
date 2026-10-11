@@ -1,0 +1,2442 @@
+{
+ "nivel": "C2",
+ "skill": "reading",
+ "exame": "DALF C2",
+ "aulas": [
+  {
+   "n": 1,
+   "titulo": "La thèse et ses contours",
+   "objetivo": "Identificar a tese de um ensaio e separar tese, concessão e objeção.",
+   "foco": "Thèse, concession, objection ; connecteurs argumentatifs",
+   "explicacao": [
+    "Em um texto argumentativo C2, a tese raramente vem escrita como 'Ma thèse est…'. Procure-a na virada (cependant, or, pourtant) e na conclusão.",
+    "A concessão reconhece um ponto do adversário: certes… mais, sans doute… cependant, non sans raison. Quem confunde a concessão com a tese erra a questão.",
+    "Fique atento aos modalizadores: 'il serait exagéré de' e 'il est plus juste de dire' mostram que o autor corrige uma ideia, sem a negar totalmente.",
+    "Falso cognato: 'prétendre' = afirmar, e não 'pretender'. 'Prétendre que le mérite est illusoire' = afirmar que o mérito é ilusório."
+   ],
+   "vocab": [
+    {
+     "en": "le mérite",
+     "pt": "o mérito"
+    },
+    {
+     "en": "une aumône",
+     "pt": "uma esmola"
+    },
+    {
+     "en": "tributaire de",
+     "pt": "dependente de"
+    },
+    {
+     "en": "à son insu",
+     "pt": "sem o saber, à revelia"
+    },
+    {
+     "en": "non sans raison",
+     "pt": "com boas razões (litote)"
+    },
+    {
+     "en": "envenimer",
+     "pt": "agravar, envenenar (um conflito)"
+    },
+    {
+     "en": "un rempart",
+     "pt": "muralha, proteção"
+    },
+    {
+     "en": "prétendre que",
+     "pt": "afirmar que (falso cognato de 'pretender')"
+    }
+   ],
+   "material": {
+    "titulo": "Le mérite, monnaie fragile",
+    "texto": "On a coutume de croire que le mérite est la plus équitable des monnaies : à chacun selon ses efforts, et la société n'aurait qu'à tenir les comptes. Cette idée, que nos démocraties répètent avec une constance presque liturgique, mérite pourtant qu'on s'y arrête, car elle repose sur un présupposé que l'on examine rarement.\n\nQue suppose-t-on, en effet, lorsqu'on affirme que quelqu'un a mérité sa réussite ? Que son effort lui appartient en propre, qu'il en est l'auteur plein et entier. Or l'effort lui-même dépend de circonstances que nul ne choisit : le tempérament reçu à la naissance, la patience d'un maître rencontré par hasard, la bibliothèque familiale ou son absence. Le philosophe américain John Rawls l'avait noté : la capacité de fournir un effort est elle-même tributaire d'une « loterie naturelle ». Il serait donc exagéré de prétendre que le mérite est une pure illusion ; il est plus juste de dire qu'il est moins pur qu'on ne le suppose.\n\nLes défenseurs de la méritocratie objecteront, non sans raison, que l'alternative est pire. Une société qui répartirait les places selon la naissance ou la faveur serait à la fois injuste et inefficace. Personne ne souhaite être opéré par un chirurgien qui aurait obtenu son diplôme grâce à ses relations. Le mérite demeure, à cet égard, un rempart contre l'arbitraire, et l'on aurait tort de le jeter avec l'eau du bain sous prétexte qu'il n'est pas parfait.\n\nCependant, le véritable danger ne tient pas au principe, mais à ce qu'il engendre chez les vainqueurs comme chez les vaincus. Les premiers, persuadés de ne rien devoir qu'à eux-mêmes, éprouvent peu de gratitude et encore moins d'obligation envers ceux qui sont restés en chemin. Les seconds, convaincus que leur échec est la juste mesure de leur valeur, finissent par se mépriser, ou par haïr ceux qui les ont devancés. Ainsi, la méritocratie, loin d'apaiser les rivalités, les envenime en les parant d'une apparence de légitimité morale.\n\nFaut-il pour autant renoncer à récompenser l'effort ? Telle n'est pas la conclusion que l'on tirera ici. Il s'agit plutôt de rétablir une forme d'humilité : reconnaître que nos succès sont en partie des dons, et que cette part de chance fonde, mieux que la charité, un devoir de solidarité. L'impôt progressif, la gratuité de l'école, la considération pour les métiers modestes ne sont alors plus des aumônes consenties par les gagnants, mais la restitution d'une dette que chacun contracte à son insu.\n\nOn voit ainsi se dessiner une position médiane, que la polémique ordinaire a du mal à entendre : le mérite est un critère utile, mais un mauvais fondement de la fierté. Il peut organiser la répartition des tâches sans prétendre justifier la hiérarchie des êtres."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle formule résume le mieux la thèse défendue dans ce texte ?",
+     "op": [
+      "La chance est le seul facteur de réussite, et l'effort n'y change rien.",
+      "Le mérite est un critère utile pour répartir les places, mais il ne justifie ni la fierté des vainqueurs ni le mépris des vaincus.",
+      "Le mérite est une illusion dangereuse qu'il faut abolir.",
+      "La méritocratie est le seul système équitable, malgré quelques excès."
+     ],
+     "r": 1,
+     "exp": "A tese vem na conclusão: o mérito serve como critério prático, mas é mau fundamento de orgulho. A opção 0 é radical demais (o texto diz que seria 'exagéré' falar em pura ilusão); a 2 ignora a crítica; a 3 exagera. No DALF C2, identificar a tese é separar o que o autor defende do que ele só menciona."
+    },
+    {
+     "t": "gap",
+     "q": "Il est exagéré de dire que le mérite est une pure illusion ; il est plus juste de dire qu'il est ___ pur qu'on ne le suppose.",
+     "resp": [
+      "moins"
+     ],
+     "exp": "'Moins pur que' marca a nuance central: o mérito existe, mas é menos puro do que se pensa. Note o 'ne' (explétif) depois de 'que' na comparação: 'qu'on ne le suppose'."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Le mérite est un critère utile, mais un mauvais fondement de la fierté.",
+     "exp": "Atenção ao 'mérite' (mê-RIT) e ao 'fondement' (fon-de-MAN, sem pronunciar o 't'). Faça uma pequena pausa antes de 'mais'."
+    },
+    {
+     "t": "mc",
+     "q": "Dans « Les défenseurs de la méritocratie objecteront, non sans raison, que l'alternative est pire », l'auteur…",
+     "op": [
+      "concède une part de vérité à l'objection avant de nuancer.",
+      "attribue cette opinion à un adversaire ridicule.",
+      "annonce sa propre conclusion.",
+      "rejette entièrement l'objection."
+     ],
+     "r": 0,
+     "exp": "'Non sans raison' = 'com razão, não sem fundamento': é uma concessão. O autor admite que o argumento adversário tem valor e, logo depois ('Cependant…'), desloca o debate. Reconhecer concessões evita atribuir ao autor uma opinião que ele só reconhece."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "serait",
+      "donc",
+      "exagéré",
+      "de",
+      "prétendre",
+      "que",
+      "le",
+      "mérite",
+      "est",
+      "une",
+      "illusion"
+     ],
+     "resp": "Il serait donc exagéré de prétendre que le mérite est une illusion",
+     "exp": "Atenção: 'prétendre que' = afirmar que (falso cognato de 'pretender'). O condicional 'serait' suaviza a afirmação."
+    },
+    {
+     "t": "gap",
+     "q": "Les défenseurs de la méritocratie objecteront, non ___ raison, que l'alternative serait pire.",
+     "resp": [
+      "sans"
+     ],
+     "exp": "A locução 'non sans raison' (litote) significa 'com boas razões'. Litotes (dizer menos para dizer mais) são frequentes em textos C2."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Selon vous, le mérite suffit-il à justifier les inégalités sociales ? Répondez en deux ou trois phrases.",
+     "modelo": "À mon sens, le mérite ne suffit pas à justifier les inégalités, car l'effort lui-même dépend de circonstances que nul ne choisit. Il demeure toutefois un critère utile pour répartir les places.",
+     "min": 12,
+     "chave": [
+      "mérite",
+      "effort",
+      "inégalités",
+      "chance",
+      "justifier",
+      "toutefois",
+      "cependant",
+      "selon",
+      "sens"
+     ],
+     "exp": "Dê uma posição clara e use um conector de nuance (toutefois, cependant, certes… mais). Evite 'je pense que' repetido: prefira 'à mon sens', 'selon moi'."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la fonction du paragraphe qui commence par « Cependant, le véritable danger… » ?",
+     "op": [
+      "Il déplace le débat : du principe lui-même vers ses effets psychologiques et sociaux.",
+      "Il répète l'argument des défenseurs de la méritocratie.",
+      "Il annonce que l'auteur change d'avis.",
+      "Il introduit un exemple historique."
+     ],
+     "r": 0,
+     "exp": "'Cependant' marca a virada: depois de conceder, o autor mostra o verdadeiro problema (os efeitos nos vencedores e vencidos). Em dossiês, anote o papel de cada parágrafo: tese, concessão, objeção, virada, conclusão."
+    },
+    {
+     "t": "gap",
+     "q": "Les impôts progressifs ne seraient plus des aumônes, mais la ___ d'une dette que chacun contracte à son insu.",
+     "resp": [
+      "restitution"
+     ],
+     "exp": "'Restitution' = devolução. O substantivo vem de 'restituer'. Cuidado: 'à son insu' = sem que ele saiba (não confundir com 'inconscient').",
+     "dica": "RESTITUER"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Paronymes et faux amis du lexique savant",
+   "objetivo": "Distinguir parônimos do vocabulário erudito (éminent/imminent, conjecture/conjoncture…).",
+   "foco": "Paronymes : éminent/imminent, conjecture/conjoncture, collusion/collision",
+   "explicacao": [
+    "Parônimos são palavras de som ou grafia parecidos e sentido diferente. No DALF C2, um parônimo trocado muda o sentido de uma frase inteira.",
+    "Pares essenciais: éminent (ilustre) x imminent (prestes a acontecer); conjecture (hipótese) x conjoncture (contexto atual); collusion (conluio) x collision (choque); pallier (atenuar) x palier (patamar).",
+    "Estratégia: ao ler, pare quando encontrar uma palavra erudita que 'parece' conhecida. Teste-a no contexto: o sentido bate com a frase inteira?",
+    "Atenção para os falsos cognatos com o português: 'conjoncture' tem a mesma origem de 'conjuntura', mas 'conjecture' é só hipótese."
+   ],
+   "vocab": [
+    {
+     "en": "une conjecture",
+     "pt": "uma hipótese não provada"
+    },
+    {
+     "en": "la conjoncture",
+     "pt": "a conjuntura, o contexto do momento"
+    },
+    {
+     "en": "éminent / imminent",
+     "pt": "ilustre / iminente"
+    },
+    {
+     "en": "une collusion / une collision",
+     "pt": "um conluio / um choque"
+    },
+    {
+     "en": "pallier",
+     "pt": "atenuar (verbo transitivo direto)"
+    },
+    {
+     "en": "un palliatif",
+     "pt": "um paliativo"
+    },
+    {
+     "en": "un gage",
+     "pt": "uma garantia, um penhor"
+    },
+    {
+     "en": "se retrancher derrière",
+     "pt": "entrincheirar-se atrás de"
+    }
+   ],
+   "material": {
+    "titulo": "Les experts et le pouvoir",
+    "texto": "Il est devenu courant de déplorer que les décideurs politiques n'écoutent plus les scientifiques. La plainte n'est pas sans fondement, mais elle masque une difficulté plus subtile : la confusion, dans le débat public, entre deux espèces de savoir que tout oppose. L'une est la connaissance établie, celle qui résiste aux réfutations depuis des décennies ; l'autre est la conjecture, que le chercheur avance à titre d'hypothèse et qui n'a pas encore subi l'épreuve des faits.\n\nOr l'actualité exige souvent des réponses immédiates. Lorsqu'une épidémie menace, qu'un barrage se fissure ou qu'une crise financière paraît imminente, le ministre convoque les experts, lesquels sont tenus de se prononcer sur des phénomènes qu'ils ne maîtrisent qu'à moitié. Un éminent spécialiste, tout en refusant de s'avancer, voit alors ses réserves transformées en certitudes par les titres des journaux. Qu'il dise « il est possible que », la presse imprime « il est établi que » ; qu'il parle de « probabilité », on entend « promesse ».\n\nIl faut se garder de confondre ce malentendu avec une collusion. Il n'y a, dans la plupart des cas, aucun complot entre les savants et le pouvoir. La collision est d'un autre ordre : elle oppose le temps long de la recherche, qui procède par doutes et par corrections, au temps court de la décision, qui réclame des arbitrages avant la fin de l'enquête. Chacun obéit à sa logique, et c'est la conjoncture, c'est-à-dire l'état présent des circonstances, qui force leur rencontre prématurée.\n\nLes conséquences de cet empressement ne sont pas négligeables. Quand une prévision se révèle fausse, ce n'est pas seulement l'expert qui est discrédité, mais la science tout entière, dont l'autorité repose sur la confiance plus que sur la preuve, au moins aux yeux du citoyen ordinaire. Celui-ci, ne pouvant vérifier lui-même un calcul de modélisation, juge la méthode à la sincérité de ceux qui la défendent. Perdre cette sincérité, c'est donc perdre l'essentiel.\n\nQue faire ? Certains proposent d'infliger aux experts un devoir de prudence rédactionnelle, d'autres de former les journalistes aux notions élémentaires de statistique. Ce sont des palliatifs utiles, non des remèdes. Il importe d'abord que la parole savante apprenne à dire l'incertitude sans s'en excuser, comme une propriété de la connaissance et non comme un défaut à dissimuler. Il importe ensuite que le responsable politique accepte d'assumer sa part de pari, au lieu de se retrancher derrière « les chiffres ». La décision relève du jugement, non de la preuve.\n\nOn évitera enfin de perpétuer une illusion commode : celle d'une science qui parlerait d'une seule voix. Les désaccords entre chercheurs ne sont pas une infection du système ; ils en sont le moteur. Les cacher, c'est affaiblir ce qu'on prétend défendre. Les montrer, loin de nuire à la crédibilité, pourrait bien en devenir le gage."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Parmi ces énoncés, lequel correspond au sens de « conjecture » dans le texte ?",
+     "op": [
+      "Une réfutation publique d'un résultat.",
+      "Un accord secret entre scientifiques.",
+      "L'état général des circonstances économiques du moment.",
+      "Une hypothèse avancée sans preuve définitive."
+     ],
+     "r": 3,
+     "exp": "'Conjecture' = hipótese não comprovada. Não confundir com 'conjoncture' = conjunto das circunstâncias do momento (a 'conjuntura'). É o par de parônimos mais cobrado."
+    },
+    {
+     "t": "gap",
+     "q": "Une crise financière paraît ___ : tout laisse penser qu'elle éclatera dans les jours qui viennent.",
+     "resp": [
+      "imminente"
+     ],
+     "exp": "'Imminent' = prestes a acontecer. Não confundir com 'éminent' = ilustre, de grande prestígio. Concorda com 'crise' (feminino).",
+     "dica": "IMMINENT"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "La conjoncture force la rencontre prématurée du temps long de la recherche et du temps court de la décision.",
+     "exp": "Pronuncie 'conjoncture' como kon-jon-TÜR (o 'u' francês). 'Prématurée' tem acentos: pré-ma-tü-RÊ. Mantenha o ritmo em duas partes: temps long / temps court."
+    },
+    {
+     "t": "mc",
+     "q": "« Il faut se garder de confondre ce malentendu avec une collusion. » Une collusion, c'est…",
+     "op": [
+      "une erreur de calcul involontaire.",
+      "un choc entre deux forces opposées.",
+      "une entente secrète entre des personnes au détriment d'autrui.",
+      "une explication simplifiée destinée au public."
+     ],
+     "r": 2,
+     "exp": "'Collusion' = conluio, acordo oculto. 'Collision' = choque (aparece depois no texto). O autor diz: não há conluio entre cientistas e poder, mas choque de ritmos."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Un",
+      "éminent",
+      "spécialiste",
+      "refuse",
+      "de",
+      "s'avancer",
+      "sur",
+      "une",
+      "menace",
+      "imminente"
+     ],
+     "resp": "Un éminent spécialiste refuse de s'avancer sur une menace imminente",
+     "exp": "'Éminent' qualifica o especialista (ilustre); 'imminente' qualifica a ameaça (próxima). 'S'avancer' = arriscar uma afirmação."
+    },
+    {
+     "t": "gap",
+     "q": "Pour limiter les dégâts de la sécheresse, ces mesures ne sont que des ___, et non de vrais remèdes.",
+     "resp": [
+      "palliatifs",
+      "palliatif"
+     ],
+     "exp": "'Palliatif' = medida que atenua sem curar. O verbo é 'pallier' (sem preposição): 'pallier un manque'. Não confundir com 'palier' (patamar)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Selon vous, pourquoi la parole des experts est-elle souvent mal comprise du grand public ? Répondez en deux ou trois phrases.",
+     "modelo": "À mon avis, les experts parlent en probabilités, alors que le public attend des certitudes. De plus, la presse simplifie souvent leurs réserves, ce qui transforme une hypothèse en fait établi.",
+     "min": 12,
+     "chave": [
+      "experts",
+      "probabilité",
+      "certitude",
+      "presse",
+      "hypothèse",
+      "public",
+      "simplifie",
+      "incertitude"
+     ],
+     "exp": "Use vocabulário da aula (hypothèse, incertitude, certitude). Estrutura útil: 'À mon avis… De plus… ce qui…' (ce qui = pronome relativo que retoma a frase inteira)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle phrase décrit le mieux la position de l'auteur sur les désaccords entre chercheurs ?",
+     "op": [
+      "Ils font partie du fonctionnement normal de la science et gagneraient à être montrés.",
+      "Ils prouvent que les décideurs ont raison de ne pas écouter les experts.",
+      "Ils discréditent la science et doivent rester secrets.",
+      "Ils sont le signe d'une conspiration entre savants."
+     ],
+     "r": 0,
+     "exp": "O último parágrafo diz que o desacordo 'en est le moteur' (o motor do sistema) e que mostrá-lo pode se tornar 'le gage' (a garantia) de credibilidade. Cuidado com a opção 0, que é o contrário."
+    },
+    {
+     "t": "gap",
+     "q": "Les désaccords entre chercheurs ne sont pas une ___ du système : ils en sont le moteur.",
+     "resp": [
+      "infection"
+     ],
+     "exp": "'Infection' = contaminação (sentido médico ou figurado). Armadilha: 'infestation' é invasão por parasitas; 'infection' é doença ou contaminação. Aqui, o autor recusa a ideia de doença do sistema."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Modalisation : dire sans affirmer",
+   "objetivo": "Perceber a atitude do autor pelos modalizadores (condicional, advérbios, locuções de distanciamento).",
+   "foco": "Modalisation : conditionnel, adverbes (apparemment, prétendument), locutions (force est de, d'aucuns)",
+   "explicacao": [
+    "Modalizar é mostrar o grau de certeza ou de adesão. O autor pode afirmar (force est de constater), duvidar (il semblerait que), distanciar-se (soi-disant, prétendument) ou atenuar (à tout le moins).",
+    "O condicional é um grande sinal: 'il semblerait que', 'ce serait', 'pourrait bien' indicam hipótese ou informação não confirmada.",
+    "As aspas também modalizam: « crise », « âge d'or » mostram que o autor não adota o termo.",
+    "Cuidado com 'prétendre': 'prétendre que' = afirmar que (sem garantir que seja verdade); 'prétendument' é o advérbio de dúvida."
+   ],
+   "vocab": [
+    {
+     "en": "d'aucuns",
+     "pt": "alguns (literário)"
+    },
+    {
+     "en": "force est de constater",
+     "pt": "é forçoso constatar"
+    },
+    {
+     "en": "prétendument",
+     "pt": "pretensamente"
+    },
+    {
+     "en": "soi-disant",
+     "pt": "pretenso, suposto"
+    },
+    {
+     "en": "à tout le moins",
+     "pt": "pelo menos"
+    },
+    {
+     "en": "tonitruant",
+     "pt": "ruidoso, bombástico"
+    },
+    {
+     "en": "un puriste",
+     "pt": "um purista"
+    },
+    {
+     "en": "à tout prendre",
+     "pt": "em suma, no fim das contas"
+    }
+   ],
+   "material": {
+    "titulo": "La langue se dégrade-t-elle ?",
+    "texto": "Chaque génération se persuade que sa langue se dégrade. Il semblerait, à entendre les déclinistes, que le français ait connu un âge d'or, quelque part entre Racine et la IIIe République, dont nous ne serions plus que les héritiers dilapidateurs. Force est pourtant de constater que ce discours n'est pas neuf : Du Bellay déplorait déjà la « pauvreté » de la langue, et Voltaire jugeait qu'on ne parlait plus comme sous Louis XIV.\n\nCe qui change, c'est peut-être moins la langue que l'angle sous lequel on la regarde. Les réseaux sociaux ont rendu visibles des usages qui demeuraient jadis confinés à la conversation : les fautes, les abréviations, les néologismes, toute cette écume que le papier imprimé filtrait. Le lecteur d'aujourd'hui, qui lit chaque jour plus de phrases qu'aucun de ses aïeux, se trouve donc exposé à davantage d'erreurs, ce qui nourrit l'impression d'un naufrage général. Prétendument menacé, le français serait ainsi la victime d'une exposition inédite plutôt que d'une véritable altération.\n\nIl serait toutefois téméraire d'en conclure que tout va pour le mieux. Les enseignants constatent, apparemment à bon droit, un appauvrissement du vocabulaire écrit chez nombre d'élèves, et certaines études, dont la rigueur reste d'ailleurs à vérifier, évoquent un recul de la maîtrise des subordonnées complexes. Rien, cependant, ne prouve que ce recul soit irréversible, ni même qu'il tienne à la langue plutôt qu'aux pratiques scolaires. Dans le doute, mieux vaut s'abstenir de pronostics tonitruants.\n\nLes linguistes, eux, observent avec sérénité ce que d'aucuns appellent la « crise ». Une langue vivante, rappellent-ils, change comme un fleuve change de lit : sans que personne l'ait décidé, et sans cesser d'être le même fleuve. Le subjonctif imparfait a disparu de la conversation sans que la pensée s'en trouve appauvrie ; en revanche, l'érosion de certaines nuances, telle la différence entre « emprunter » et « prêter », pourrait bien, à la longue, brouiller la communication. On notera que le mot « pourrait » dit ici tout ce que la prudence autorise.\n\nReste la question du jugement de valeur. Soi-disant neutre, le linguiste décrit ; le puriste, lui, prescrit. Ni l'un ni l'autre n'a entièrement raison. À tout le moins, le second rappelle que la langue n'est pas qu'un outil : elle est aussi le lieu où une société choisit de se reconnaître. Le premier rappelle, à l'inverse, qu'aucune autorité n'a jamais pu empêcher un mot de naître.\n\nSans doute convient-il de se garder des deux excès : de la nostalgie, qui embellit un passé qu'elle connaît mal, et de l'indifférence, qui prend l'usage pour la norme. Entre ces deux écueils, la vigilance tranquille de ceux qui lisent, écrivent et corrigent leurs brouillons demeure, à tout prendre, la meilleure défense que l'on connaisse."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Dans « Il semblerait que le français ait connu un âge d'or », le conditionnel signale que l'auteur…",
+     "op": [
+      "prend ses distances avec une opinion qu'il rapporte.",
+      "pose une hypothèse sur l'avenir.",
+      "exprime un souhait.",
+      "adhère pleinement à cette idée."
+     ],
+     "r": 0,
+     "exp": "O condicional de 'il semblerait que' é um modalizador de distanciamento: o autor reporta uma opinião sem assumi-la. Também é o 'conditionnel journalistique' (uma informação não confirmada). Verbo seguido do subjuntivo: 'ait connu'."
+    },
+    {
+     "t": "gap",
+     "q": "Le français serait, ___ menacé, la victime d'une exposition inédite.",
+     "resp": [
+      "prétendument"
+     ],
+     "exp": "'Prétendument' = pretensamente, segundo se diz (e o autor duvida). Advérbio de modalização crítica, como 'soi-disant'.",
+     "dica": "PRÉTENDRE"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Une langue vivante change comme un fleuve change de lit, sans cesser d'être le même fleuve.",
+     "exp": "Preste atenção na liaison inexistente entre 'change' e 'comme'. Pronuncie 'fleuve' com o som /ø/ (como 'eu'), não 'flu-ve'. Ritmo: três blocos."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle expression traduit une réserve de l'auteur sur la fiabilité des études citées ?",
+     "op": [
+      "Entre ces deux écueils.",
+      "Force est de constater.",
+      "Rien ne prouve.",
+      "dont la rigueur reste d'ailleurs à vérifier."
+     ],
+     "r": 3,
+     "exp": "A reserva sobre o rigor das pesquisas está na oração relativa 'dont la rigueur reste d'ailleurs à vérifier'. 'Force est de constater' ao contrário reforça um fato; 'rien ne prouve' nega uma conclusão; 'écueils' é metáfora."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "À",
+      "tout",
+      "le",
+      "moins",
+      "le",
+      "puriste",
+      "rappelle",
+      "que",
+      "la",
+      "langue",
+      "n'est",
+      "pas",
+      "qu'un",
+      "outil"
+     ],
+     "resp": "À tout le moins le puriste rappelle que la langue n'est pas qu'un outil",
+     "exp": "'À tout le moins' = pelo menos (registro soutenu). 'Ne… que' é restritivo: 'n'est pas qu'un outil' = não é apenas uma ferramenta."
+    },
+    {
+     "t": "gap",
+     "q": "___ est pourtant de constater que ce discours n'est pas neuf.",
+     "resp": [
+      "force",
+      "Force"
+     ],
+     "exp": "'Force est de constater que…' é uma locução fixa (impessoal) que apresenta um fato a que não se pode escapar. Não se diz 'la force est'.",
+     "dica": "locution figée"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Pensez-vous que la langue française soit en déclin ? Répondez en deux ou trois phrases en nuançant votre avis.",
+     "modelo": "Il me semble que la langue évolue plus qu'elle ne se dégrade. Certes, le vocabulaire écrit paraît s'appauvrir, mais rien ne prouve que ce soit irréversible.",
+     "min": 12,
+     "chave": [
+      "langue",
+      "évolue",
+      "certes",
+      "semble",
+      "paraît",
+      "peut-être",
+      "probablement",
+      "nuance",
+      "déclin"
+     ],
+     "exp": "Use modalizadores: il me semble que, certes… mais, peut-être, il se pourrait que + subjuntivo. Evite afirmações categóricas: a prova valoriza a nuance."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la nuance exacte de « d'aucuns appellent la “crise” » ?",
+     "op": [
+      "Certaines personnes emploient ce mot, ce que l'auteur ne reprend pas à son compte.",
+      "Tout le monde utilise ce mot.",
+      "Aucun linguiste n'emploie ce mot.",
+      "L'auteur défend le terme."
+     ],
+     "r": 0,
+     "exp": "'D'aucuns' (registro literário) = alguns, certas pessoas. Não significa 'ninguém'. As aspas em 'crise' reforçam o distanciamento do autor."
+    },
+    {
+     "t": "gap",
+     "q": "Soi-___ neutre, le linguiste décrit ; le puriste, lui, prescrit.",
+     "resp": [
+      "disant"
+     ],
+     "exp": "'Soi-disant' = pretensamente (inclui um sentido crítico). Invariável quando se refere a uma pessoa ou coisa: 'ces soi-disant experts'. Não diga 'soi-disante'."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "L'ironie et l'antiphrase",
+   "objetivo": "Reconhecer a ironia e a antífrase e entender o que o autor realmente pensa.",
+   "foco": "Ironie, antiphrase, hyperbole, euphémisme ; implicite",
+   "explicacao": [
+    "A ironia diz o contrário do que se pensa (antífrase) ou exagera para tornar algo absurdo (hipérbole). O leitor atento percebe o contraste entre o tom e o conteúdo.",
+    "Sinais clássicos: elogios desproporcionais, vocabulário solene para temas banais, falsa humildade, exclamações e perguntas retóricas.",
+    "No DALF C2, perguntas sobre ironia pedem a intenção real do autor, não o sentido literal. Ao responder, reformule em tom neutro.",
+    "Atenção ao implícito: o que a frase sugere sem dizer. 'La gravité fonctionne à rebours' sugere que a riqueza não desce."
+   ],
+   "vocab": [
+    {
+     "en": "rendre hommage à",
+     "pt": "prestar homenagem a"
+    },
+    {
+     "en": "la langue de bois",
+     "pt": "a linguagem vazia, burocrática"
+    },
+    {
+     "en": "le ruissellement",
+     "pt": "o 'gotejamento' (trickle-down)"
+    },
+    {
+     "en": "à rebours",
+     "pt": "ao contrário, em sentido inverso"
+    },
+    {
+     "en": "vendre la peau de l'ours",
+     "pt": "contar com algo que ainda não se tem"
+    },
+    {
+     "en": "un esprit chagrin",
+     "pt": "um espírito ranzinza, pessimista"
+    },
+    {
+     "en": "complaisant",
+     "pt": "complacente, indulgente"
+    },
+    {
+     "en": "une antiphrase",
+     "pt": "antífrase (dizer o contrário)"
+    }
+   ],
+   "material": {
+    "titulo": "Éloge de la croissance éternelle",
+    "texto": "Rendons hommage, pour commencer, à ceux qui nous promettent depuis soixante-dix ans que la croissance va tout résoudre. Voilà des optimistes d'une trempe rare : ni la raréfaction des ressources, ni la fonte des glaciers, ni même l'évidence arithmétique ne parviennent à entamer leur foi. Qu'une courbe grimpe indéfiniment dans un monde fini, voilà un miracle que seuls les économistes ont su accomplir sans effort.\n\nAdmirons aussi la délicatesse du vocabulaire. On ne dit plus qu'une usine ferme, on dit qu'elle « optimise son empreinte industrielle » ; on ne licencie plus, on « libère des talents » ; et lorsque la consommation recule de deux points, nous traversons une « correction », mot rassurant qui évoque la copie d'un élève un peu distrait plutôt que le sort de milliers de familles. La langue de bois, décidément, est le plus durable de nos matériaux renouvelables.\n\nSaluons encore le culte de la compétitivité, cette course où chacun doit courir plus vite que son voisin pour que, tous ensemble, nous restions exactement à la même place. Les pays qui baissent leurs salaires sont félicités, puis imités, puis dépassés par d'autres qui les baissent davantage ; la sagesse des nations a trouvé là son plus beau paradoxe, que personne n'ose appeler un cercle vicieux de peur de paraître pessimiste.\n\nLe plus savoureux demeure l'argument du ruissellement. Il suffirait d'enrichir le sommet de la pyramide pour que la prospérité, tel un liquide bien élevé, descende docilement jusqu'à la base. Que la gravité semble fonctionner à rebours depuis quarante ans n'a jamais troublé ses partisans : sans doute attendent-ils que le liquide ait fini de remplir les coupes du dessus. On leur souhaite bon appétit et longue patience.\n\nQuant au progrès technique, il est naturellement appelé à nous sauver de tout, y compris des dégâts du progrès technique. Nul besoin de changer nos habitudes : une machine à capturer le carbone, quelque part, s'en chargera. Il est vrai que celle-ci n'existe pas encore à l'échelle requise ; mais nous avons tant de fois réussi à vendre la peau de l'ours qu'on ne voit pas pourquoi nous y renoncerions maintenant.\n\nQue les esprits chagrins se rassurent donc : personne ne leur demande de renoncer à l'espoir, seulement à l'examen. Car l'espoir, lui, ne coûte rien ; c'est l'examen qui risque de coûter cher.\n\nIl faudrait être bien ingrat pour ne pas saluer cette constance. Les dirigeants qui nous gouvernent ont fait de l'optimisme une politique, ce qui a l'avantage de dispenser d'en avoir une autre. Souhaitons-leur de ne jamais manquer d'une réalité complaisante, car il serait fâcheux que la réalité, un jour, se mît à les contredire."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle est l'intention réelle de l'auteur lorsqu'il écrit « Rendons hommage à ceux qui nous promettent que la croissance va tout résoudre » ?",
+     "op": [
+      "Il critique, par antiphrase, la foi aveugle dans la croissance.",
+      "Il raconte une anecdote personnelle.",
+      "Il propose une nouvelle théorie économique.",
+      "Il félicite sincèrement les partisans de la croissance."
+     ],
+     "r": 0,
+     "exp": "Antífrase: dizer o contrário do que se pensa. Os sinais da ironia são o exagero ('optimistes d'une trempe rare'), o vocabulário elogioso aplicado a algo absurdo e a conclusão (a política do otimismo 'dispensa de ter outra política'). Se você entende o elogio ao pé da letra, erra o texto inteiro."
+    },
+    {
+     "t": "gap",
+     "q": "On ne licencie plus, on « libère des talents » : c'est un ___ destiné à adoucir la réalité.",
+     "resp": [
+      "euphémisme"
+     ],
+     "exp": "'Euphémisme' = termo suave que disfarça algo duro. O texto o usa para criticar a 'langue de bois' (linguagem tecnocrática vazia). Atenção: é masculino (un euphémisme)."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Qu'une courbe grimpe indéfiniment dans un monde fini, voilà un miracle que seuls les économistes ont su accomplir.",
+     "exp": "A frase abre com 'Qu'une courbe grimpe' (subjuntivo de tema, sem verbo principal antes). Faça uma pausa depois de 'fini'. Pronuncie 'économistes' sem o 'k' final marcado."
+    },
+    {
+     "t": "mc",
+     "q": "Quand l'auteur écrit que « la gravité semble fonctionner à rebours depuis quarante ans », il sous-entend que…",
+     "op": [
+      "les économistes ignorent la physique.",
+      "la richesse s'accumule en haut au lieu de ruisseler vers le bas.",
+      "les lois de la physique ont changé.",
+      "la prospérité a bien atteint toute la population."
+     ],
+     "r": 1,
+     "exp": "É uma metáfora irônica sobre a teoria do 'ruissellement' (trickle-down): se a riqueza descesse como um líquido, a base já a teria recebido. O autor sugere que, ao contrário, ela sobe ou fica no topo. Implícito = o que não está dito, mas é necessário para entender a frase."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "serait",
+      "fâcheux",
+      "que",
+      "la",
+      "réalité",
+      "se",
+      "mît",
+      "à",
+      "les",
+      "contredire"
+     ],
+     "resp": "Il serait fâcheux que la réalité se mît à les contredire",
+     "exp": "'Se mît' é o subjuntivo imperfeito de 'se mettre' (3a pessoa do singular), usado após um condicional ('serait fâcheux'). O efeito é solene e irônico: o autor imita o tom grave das elites."
+    },
+    {
+     "t": "gap",
+     "q": "Nous avons tant de fois réussi à vendre la peau de l'___ qu'on ne voit pas pourquoi nous y renoncerions.",
+     "resp": [
+      "ours"
+     ],
+     "exp": "'Vendre la peau de l'ours (avant de l'avoir tué)' = contar com um lucro que ainda não existe. Aqui, a máquina de captura de carbono ainda não existe, mas já se vende seu efeito."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Pourquoi, à votre avis, l'auteur choisit-il l'ironie plutôt qu'un raisonnement direct ? Répondez en deux ou trois phrases.",
+     "modelo": "À mon avis, l'ironie permet de dénoncer l'absurdité d'un discours sans l'attaquer de front. Elle amène aussi le lecteur à conclure de lui-même, ce qui rend la critique plus efficace.",
+     "min": 12,
+     "chave": [
+      "ironie",
+      "dénoncer",
+      "absurdité",
+      "lecteur",
+      "critique",
+      "efficace",
+      "discours",
+      "permet"
+     ],
+     "exp": "Explique o efeito da ironia: denunciar sem atacar de frente, envolver o leitor, tornar a crítica mais memorável. Use 'permettre de + infinitivo' e 'amener quelqu'un à'."
+    },
+    {
+     "t": "mc",
+     "q": "« Personne ne leur demande de renoncer à l'espoir, seulement à l'examen. » Cette phrase signifie, en réalité, que…",
+     "op": [
+      "les esprits chagrins ont raison de désespérer.",
+      "les optimistes refusent de vérifier si leurs promesses se réalisent.",
+      "l'examen des faits coûte moins cher que l'espoir.",
+      "l'espoir est inutile en économie."
+     ],
+     "r": 1,
+     "exp": "O autor opõe 'espoir' (gratuito) e 'examen' (caro). A ironia: o otimismo é cômodo, mas a verificação dos fatos custaria caro politicamente. A opção 2 inverte a frase final do parágrafo."
+    },
+    {
+     "t": "gap",
+     "q": "Faire de l'optimisme une politique a l'___ de dispenser d'en avoir une autre.",
+     "resp": [
+      "avantage"
+     ],
+     "exp": "'Avantage' é irônico: na verdade seria um defeito (não ter outra política). Em textos irônicos, palavras positivas (avantage, bonheur, chance) podem esconder crítica."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Le passé simple et le récit littéraire",
+   "objetivo": "Ler uma narrativa literária e interpretar o passé simple, o imparfait e o plus-que-parfait.",
+   "foco": "Passé simple, imparfait, plus-que-parfait ; subjonctif imparfait (fût-ce) ; incises",
+   "explicacao": [
+    "Na narrativa literária, o passé simple apresenta os fatos pontuais (il descendit, il comprit) e o imparfait descreve o cenário e os estados (la mer déferlait, il craignait).",
+    "O plus-que-parfait mostra o que aconteceu antes da ação principal. Procure o 'antes e depois' para reconstruir a cronologia.",
+    "Formas a reconhecer: il finit, il fallut, il sut, il vint, ils firent, il fût. Incisos com inversão: dit-il, finit-il par dire.",
+    "Em textos literários, o sentido está no implícito: o que o personagem sente aparece no gesto e no monólogo interior, mais do que em explicações."
+   ],
+   "vocab": [
+    {
+     "en": "fût-ce",
+     "pt": "mesmo que fosse apenas"
+    },
+    {
+     "en": "taciturne",
+     "pt": "taciturno, calado"
+    },
+    {
+     "en": "déferler",
+     "pt": "rebentar, quebrar em ondas"
+    },
+    {
+     "en": "la grève",
+     "pt": "a praia de seixos, a margem"
+    },
+    {
+     "en": "un chevalet",
+     "pt": "um cavalete"
+    },
+    {
+     "en": "trahir",
+     "pt": "trair, desvirtuar"
+    },
+    {
+     "en": "sans malice",
+     "pt": "sem maldade"
+    },
+    {
+     "en": "une toile",
+     "pt": "uma tela"
+    }
+   ],
+   "material": {
+    "titulo": "Le peintre de Collioure",
+    "texto": "Le peintre Anselme Rivière atteignit Collioure à la fin de l'automne 1887, sans autre bagage qu'une boîte de couleurs à moitié vide et une lettre de recommandation dont il ne savait trop que faire. L'aubergiste, un homme taciturne que la guerre avait vieilli avant l'âge, lui désigna une chambre sous les toits, d'où l'on apercevait, par temps clair, la ligne bleue des Pyrénées. Rivière ne dit rien ; il posa sa boîte sur la table et ouvrit la fenêtre.\n\nLes premières semaines, il ne peignit pas. Il marchait le long de la plage, observait les barques et les filets qui séchaient, s'asseyait des heures sur un rocher comme s'il avait attendu de la mer une permission. Les pêcheurs, d'abord méfiants, finirent par s'habituer à cet étranger qui ne leur demandait rien. L'un d'eux, un vieux nommé Baptiste, lui lança un jour, sans malice : « Vous regardez tant, monsieur, qu'on dirait que vous avez peur d'y toucher. » Rivière sourit, mais la remarque le poursuivit longtemps.\n\nCar Baptiste avait raison. Ce que le peintre redoutait, ce n'était pas le paysage, mais le moment où il lui faudrait choisir, c'est-à-dire trahir. Toute toile, songeait-il, est un renoncement : on retient une lumière et on en sacrifie mille. Il avait vu à Paris des confrères qui, trop sûrs de leur main, avaient fini par peindre ce qu'ils savaient et non ce qu'ils voyaient. Il craignait de leur ressembler, fût-ce de loin.\n\nUn matin de décembre, il fallut pourtant se décider. Une tempête avait dispersé les barques ; la mer, d'un gris presque violet, déferlait sur la grève avec une régularité de métronome. Rivière descendit, planta son chevalet dans le sable et, sans réfléchir davantage, posa sur la toile une première tache de couleur. Elle était fausse ; il le sut aussitôt. Il la recouvrit d'une autre, puis d'une troisième, jusqu'à ce que la toile, saturée, ne ressemblât plus à rien de ce qu'il avait appris.\n\nLe soir venu, Baptiste passa derrière lui. Il resta longtemps silencieux, la pipe éteinte entre les dents. « Ça ne ressemble pas à la mer, finit-il par dire. Mais c'est bien elle. » Rivière ne répondit rien. Il comprit que ce qu'il avait voulu fixer n'était pas l'apparence de l'eau, mais la peur qu'elle inspirait, et que cette peur, une fois peinte, cessait d'être une peur pour devenir une forme.\n\nIl ne vendit pas le tableau, qu'il accrocha au mur de sa chambre, face au lit, comme un reproche amical. Quelques années plus tard, lorsqu'on lui demanda ce qu'il avait appris à Collioure, il répondit qu'il y avait appris à se tromper avec courage."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi Rivière ne peint-il pas pendant les premières semaines ?",
+     "op": [
+      "Il est malade depuis son arrivée.",
+      "Il redoute le moment du choix, qui lui paraît une forme de trahison.",
+      "Il manque de couleurs et de matériel.",
+      "Les pêcheurs lui interdisent de travailler sur la plage."
+     ],
+     "r": 1,
+     "exp": "O narrador explica: 'Ce que le peintre redoutait… c'était le moment où il lui faudrait choisir, c'est-à-dire trahir'. Quem lê só o início ('boîte à moitié vide') cai na primeira opção. Em textos literários, a causa psicológica está no imperfeito e no discurso interior ('songeait-il')."
+    },
+    {
+     "t": "gap",
+     "q": "Un matin de décembre, il ___ pourtant se décider.",
+     "resp": [
+      "fallut"
+     ],
+     "exp": "'Il fallut' é o passé simple de 'falloir' (verbo impessoal, só tem 3a pessoa do singular). O passé simple marca o fato pontual que quebra o ritmo do imperfeito.",
+     "dica": "FALLOIR (passé simple)"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Ça ne ressemble pas à la mer, finit-il par dire. Mais c'est bien elle.",
+     "exp": "Observe a inversão do sujeito: 'finit-il' (verbo + pronome), típica de um inciso narrativo. Entonação descendente em 'dire' e ênfase em 'bien elle'."
+    },
+    {
+     "t": "mc",
+     "q": "Que veut dire Baptiste par « Ça ne ressemble pas à la mer. Mais c'est bien elle » ?",
+     "op": [
+      "Le tableau est exact quant aux détails, mais mal composé.",
+      "Le vieux pêcheur se moque du peintre.",
+      "Le tableau est raté et ne représente rien.",
+      "Le tableau ne copie pas l'apparence de la mer, mais en exprime l'essence."
+     ],
+     "r": 3,
+     "exp": "Baptiste fala da fidelidade à essência, não à aparência. A narrativa confirma: Rivière entende que quis fixar 'la peur qu'elle inspirait', não 'l'apparence de l'eau'."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "craignait",
+      "de",
+      "leur",
+      "ressembler",
+      "fût-ce",
+      "de",
+      "loin"
+     ],
+     "resp": "Il craignait de leur ressembler fût-ce de loin",
+     "exp": "'Fût-ce' (subjuntivo imperfeito de 'être', forma fixa) = 'mesmo que fosse apenas'. É uma expressão literária frequente nos dossiês C2. Equivalente moderno: 'même de loin'."
+    },
+    {
+     "t": "gap",
+     "q": "Il la recouvrit d'une autre tache, puis d'une troisième, jusqu'à ce que la toile ne ___ plus à rien de ce qu'il avait appris.",
+     "resp": [
+      "ressemblât",
+      "ressemblat"
+     ],
+     "exp": "Após 'jusqu'à ce que' em tempo narrativo do passé simple (recouvrit), usa-se o subjuntivo imperfeito: 'ressemblât'. O acento circunflexo na 3a pessoa do singular é obrigatório.",
+     "dica": "RESSEMBLER, subjonctif imparfait"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Quelle leçon le peintre tire-t-il de son séjour à Collioure ? Répondez en deux ou trois phrases.",
+     "modelo": "Le peintre apprend qu'il faut oser se tromper pour créer. Il comprend aussi que la peinture ne copie pas l'apparence des choses, mais exprime ce qu'elles inspirent.",
+     "min": 12,
+     "chave": [
+      "tromper",
+      "courage",
+      "oser",
+      "apparence",
+      "peinture",
+      "comprend",
+      "apprend",
+      "créer",
+      "émotion"
+     ],
+     "exp": "Resuma a lição em duas ideias: aceitar o erro e pintar a essência (a emoção) em vez da aparência. Use o presente de narração/comentário: 'il comprend que…'."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la valeur du plus-que-parfait dans « une tempête avait dispersé les barques » ?",
+     "op": [
+      "Une action antérieure au moment raconté au passé simple.",
+      "Une hypothèse irréelle.",
+      "Une action habituelle dans le passé.",
+      "Une action postérieure au moment où le peintre descend."
+     ],
+     "r": 0,
+     "exp": "O plus-que-parfait mostra o que veio antes da ação principal (a tempestade antes da descida de Rivière). Dica: sempre que houver passé simple na narração, veja os plus-que-parfaits como 'flashbacks' curtos."
+    },
+    {
+     "t": "gap",
+     "q": "Rivière ne répondit rien. Il ___ que ce qu'il avait voulu fixer n'était pas l'apparence de l'eau.",
+     "resp": [
+      "comprit"
+     ],
+     "exp": "'Comprit' = passé simple de 'comprendre'. Cuidado: 'il comprend' (presente) e 'il comprit' (passado simples) têm pronúncia parecida em alguns falantes; o passé simple é típico da narrativa escrita.",
+     "dica": "COMPRENDRE (passé simple)"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Concordance des temps et subjonctif imparfait",
+   "objetivo": "Reconhecer o subjuntivo imperfeito e mais-que-perfeito e a concordância dos tempos em textos históricos.",
+   "foco": "Subjonctif imparfait et plus-que-parfait (reconnaissance) ; concordance des temps ; conditionnel passé 2e forme",
+   "explicacao": [
+    "Em francês literário, a oração subordinada segue o tempo da principal. Principal no passado (fallut, fallait, souhaitait) → subjuntivo imperfeito (fût, tolérât, émût); anterioridade → mais-que-perfeito (eût condamné).",
+    "Formas para reconhecer: que je fusse, qu'il eût, qu'il fît, qu'il vînt, qu'il dît, qu'il pût, qu'ils eussent. Terminação típica: -ât, -ît, -ût na 3a pessoa do singular.",
+    "'Eût + particípio' sem 'que' no início = conditionnel passé 2e forme ('Il eût suffi' = il aurait suffi).",
+    "Não é preciso produzir essas formas no DALF C2 escrito, mas é indispensável reconhecê-las: elas aparecem nos dossiês e mudam o sentido temporal."
+   ],
+   "vocab": [
+    {
+     "en": "un plaidoyer",
+     "pt": "uma defesa, um alegato"
+    },
+    {
+     "en": "sous le manteau",
+     "pt": "clandestinamente"
+    },
+    {
+     "en": "un coreligionnaire",
+     "pt": "correligionário"
+    },
+    {
+     "en": "retentir",
+     "pt": "ecoar, repercutir"
+    },
+    {
+     "en": "un arrêt",
+     "pt": "uma sentença (jurídico)"
+    },
+    {
+     "en": "hanter",
+     "pt": "assombrar, perseguir"
+    },
+    {
+     "en": "anachronique",
+     "pt": "anacrônico"
+    },
+    {
+     "en": "tortueux",
+     "pt": "tortuoso, cheio de rodeios"
+    }
+   ],
+   "material": {
+    "titulo": "Bayle, Voltaire et la tolérance",
+    "texto": "Lorsque Pierre Bayle publia, à la fin du XVIIe siècle, son plaidoyer pour la liberté de conscience, nul ne s'attendait à ce que sa voix fût entendue au-delà d'un cercle restreint de lettrés. Exilé en Hollande, il avait vu la révocation de l'édit de Nantes pousser ses coreligionnaires sur les routes, et il avait compris que l'intolérance ne tenait pas seulement à la cruauté des princes, mais à une erreur de logique : on voulait que chacun crût ce qu'on lui ordonnait de croire, comme si la foi se commandait.\n\nCette erreur ne cessa de hanter la pensée des Lumières. Voltaire, qui eût sans doute applaudi les arguments de Bayle, y ajouta l'indignation, et l'affaire Calas lui fournit l'occasion de la faire retentir : le philosophe dénonça, avec une ironie féroce, les magistrats qui avaient fait rouer un innocent au nom d'une orthodoxie qu'ils n'avaient même pas comprise. Il fallait que l'opinion s'émût, que les juges rougissent de leur arrêt, pour que le jugement fût révisé. Il n'était pas question de prêcher la bienveillance universelle ; Voltaire, d'ailleurs, ne se fit jamais d'illusions sur la nature humaine. Il souhaitait seulement que l'on tolérât ce que l'on ne pouvait empêcher.\n\nUne telle position paraît bien modeste aujourd'hui, et d'aucuns y voient même une faiblesse. Mais il importe de mesurer ce qu'elle impliquait. Tolérer, à l'origine, c'est supporter, et l'on ne supporte que ce que l'on désapprouve. Le tolérant n'approuve pas l'hérétique : il consent seulement à ne pas le persécuter, bien qu'il le jugeât dans l'erreur. Cette retenue, qui nous semble aujourd'hui insuffisante, constituait alors une révolution : elle séparait pour la première fois la vérité de la contrainte.\n\nLes contemporains ne s'y trompèrent pas. Quoique l'Église eût condamné ces écrits, ils circulèrent sous le manteau, et il fallut que les censeurs fussent bien naïfs pour croire qu'une interdiction suffirait à les arrêter. Les libraires prenaient des risques considérables, mais la clientèle, elle, ne se laissait pas intimider. Chaque saisie ajoutait au prestige de l'ouvrage saisi. On a pu dire que la censure fut, au siècle des Lumières, le meilleur éditeur de la philosophie.\n\nIl serait toutefois anachronique d'attribuer à ces penseurs notre conception moderne de la liberté. Ils n'auraient pas souhaité que les athées fussent protégés, ni que tous les cultes fussent traités à égalité. Le chemin de la tolérance fut tortueux, et c'est précisément ce qui en fait l'intérêt : il nous rappelle qu'une idée, pour s'imposer, n'a pas besoin d'être complète. Il suffit qu'elle soit assez juste pour que l'on ne puisse plus faire comme si elle n'avait jamais été formulée."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Dans « Voltaire, qui eût sans doute applaudi les arguments de Bayle », la forme « eût applaudi » équivaut à…",
+     "op": [
+      "aurait applaudi (conditionnel passé)",
+      "applaudit (passé simple)",
+      "avait applaudi (plus-que-parfait de l'indicatif)",
+      "applaudirait (conditionnel présent)"
+     ],
+     "r": 0,
+     "exp": "Em registro literário, 'eût + particípio' é o 'conditionnel passé 2e forme', com o mesmo sentido de 'aurait applaudi'. É a forma que aparece junto de 'sans doute' para expressar uma hipótese no passado. Não confunda com o plus-que-parfait do indicativo (avait applaudi)."
+    },
+    {
+     "t": "gap",
+     "q": "Il fallait que l'opinion s'___ pour que les juges révisent leur arrêt.",
+     "resp": [
+      "émût",
+      "emut"
+     ],
+     "exp": "Subjuntivo imperfeito de 'émouvoir': que je m'émusse, qu'il s'émût. Com 'il fallait que' (passado), a concordância dos tempos pede o imperfeito do subjuntivo, embora o francês moderno use hoje 'qu'il s'émeuve'.",
+     "dica": "ÉMOUVOIR, subjonctif imparfait"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Il souhaitait seulement que l'on tolérât ce que l'on ne pouvait empêcher.",
+     "exp": "Pronuncie 'tolérât' como to-le-RA (o circunflexo não muda o som). Observe o 'l'on' eufônico (liaison em 'que l'on'). Ritmo: souhaitait seulement / que l'on tolérât / ce que l'on ne pouvait empêcher."
+    },
+    {
+     "t": "mc",
+     "q": "Dans « Quoique l'Église eût condamné ces écrits », « eût condamné » est…",
+     "op": [
+      "un conditionnel présent.",
+      "un imparfait de l'indicatif.",
+      "un subjonctif plus-que-parfait.",
+      "un passé simple."
+     ],
+     "r": 2,
+     "exp": "'Quoique' exige o subjuntivo; 'eût condamné' = imparfait de 'avoir' + particípio = subjuntivo mais-que-perfeito. Equivale a 'quoique l'Église ait condamné' na língua moderna. Reconhecer essas formas evita erros de sentido."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Ils",
+      "n'auraient",
+      "pas",
+      "souhaité",
+      "que",
+      "les",
+      "athées",
+      "fussent",
+      "protégés"
+     ],
+     "resp": "Ils n'auraient pas souhaité que les athées fussent protégés",
+     "exp": "'Fussent' é o subjuntivo imperfeito de 'être' (3a pessoa do plural). Depois de um condicional (n'auraient pas souhaité), a concordância dos tempos pede o imperfeito do subjuntivo."
+    },
+    {
+     "t": "gap",
+     "q": "Il fallut que les censeurs ___ bien naïfs pour croire qu'une interdiction suffirait.",
+     "resp": [
+      "fussent"
+     ],
+     "exp": "'Fussent' = subjuntivo imperfeito de 'être'. 'Il fallut que' (passé simple) pede o subjuntivo imperfeito em registro literário. No francês oral, diria-se 'soient'.",
+     "dica": "ÊTRE, subjonctif imparfait"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Selon le texte, en quoi la tolérance défendue par Voltaire était-elle une révolution malgré sa modestie ? Répondez en deux ou trois phrases.",
+     "modelo": "Même si elle paraît modeste, cette tolérance séparait pour la première fois la vérité de la contrainte. On pouvait désapprouver quelqu'un sans le persécuter, ce qui changeait tout.",
+     "min": 12,
+     "chave": [
+      "tolérance",
+      "vérité",
+      "contrainte",
+      "persécuter",
+      "désapprouver",
+      "révolution",
+      "supporter",
+      "première"
+     ],
+     "exp": "Retome a ideia-chave do 3o parágrafo: tolerar é suportar sem perseguir; isso separou a verdade da coerção. Use 'même si… ' + indicativo e 'sans + infinitivo'."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le sens de l'avant-dernière phrase : « Le chemin de la tolérance fut tortueux, et c'est précisément ce qui en fait l'intérêt » ?",
+     "op": [
+      "Le chemin vers la tolérance est resté inachevé.",
+      "Les penseurs des Lumières étaient incohérents et peu fiables.",
+      "L'histoire de la tolérance, avec ses limites, montre qu'une idée n'a pas besoin d'être complète pour s'imposer.",
+      "La tolérance moderne est meilleure que celle des Lumières."
+     ],
+     "r": 2,
+     "exp": "A frase prepara a conclusão: justamente as limitações históricas ensinam que uma ideia pode vencer sem ser perfeita. A opção 2 é uma comparação que o texto evita fazer ('anachronique')."
+    },
+    {
+     "t": "gap",
+     "q": "Le tolérant consent seulement à ne pas persécuter l'hérétique, bien qu'il le ___ dans l'erreur.",
+     "resp": [
+      "jugeât",
+      "jugeat"
+     ],
+     "exp": "'Bien que' + subjuntivo. No contexto de passado (consent… constituait alors), o texto usa o imperfeito: 'bien qu'il le jugeât'. Conjugação: que je jugeasse, qu'il jugeât.",
+     "dica": "JUGER, subjonctif imparfait"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Inversions et concessions littéraires",
+   "objetivo": "Compreender inversões do sujeito e concessões com quelque… que, si… que, tout… que, pour peu que.",
+   "foco": "Inversion du sujet ; quelque/si/aussi/tout… que ; pour peu que ; à peine… que ; pourvu que",
+   "explicacao": [
+    "Depois de certos advérbios no início da frase (sans doute, peut-être, à peine, aussi, ainsi, du moins), o sujeito pronominal vem depois do verbo: 'Sans doute est-il…', 'À peine eut-il parlé que…'.",
+    "Concessão com subjuntivo: quelque / si / aussi / tout + adjetivo + que. Ex.: 'Si prudent qu'il soit…', 'Quelque difficile que soit la tâche…'.",
+    "'Pour peu que' (basta que) e 'pourvu que' (contanto que) expressam condição e pedem o subjuntivo.",
+    "Estratégia: ao ver uma inversão ou um subjuntivo em início de frase, identifique a relação lógica (concessão, condição, consequência) antes de ler o resto."
+   ],
+   "vocab": [
+    {
+     "en": "pour peu que",
+     "pt": "basta que"
+    },
+    {
+     "en": "à peine… que",
+     "pt": "mal… quando"
+    },
+    {
+     "en": "quelque… que",
+     "pt": "por mais… que"
+    },
+    {
+     "en": "tout… que",
+     "pt": "embora, por mais que"
+    },
+    {
+     "en": "un contrepoids",
+     "pt": "um contrapeso"
+    },
+    {
+     "en": "s'affranchir de",
+     "pt": "libertar-se de"
+    },
+    {
+     "en": "s'éterniser",
+     "pt": "arrastar-se, durar demais"
+    },
+    {
+     "en": "pourvu que",
+     "pt": "contanto que (+ subjuntivo)"
+    }
+   ],
+   "material": {
+    "titulo": "Les lenteurs de la démocratie",
+    "texto": "On reproche volontiers aux démocraties leur lenteur. Quelque pressantes que soient les circonstances, le débat s'éternise, les commissions se succèdent, les amendements s'accumulent, et le citoyen pressé finit par envier les régimes qui décident sans consulter. Sans doute cette impatience est-elle compréhensible. Pourtant, elle repose sur une confusion entre la vitesse et l'efficacité.\n\nLes exemples ne manquent pas. Dans nombre de pays, des lois adoptées en quelques jours, sous le coup de l'émotion, ont dû être corrigées quelques mois plus tard, quand leurs effets pervers sont apparus. À l'inverse, certaines réformes longuement mûries ont fini par recueillir un assentiment que la précipitation n'aurait jamais obtenu. Le temps n'est pas l'ennemi de l'action : il en est parfois la condition. La question n'est donc pas de savoir s'il faut aller vite, mais pour quoi faire et avec quelles garanties.\n\nSi séduisante que paraisse la décision rapide, elle a un coût que l'on n'aperçoit qu'après coup. Pour peu qu'un pouvoir s'affranchisse des contrepoids, il se trompe plus vite, et surtout plus durablement : nul ne l'avertit, nul ne le corrige. À peine l'erreur est-elle commise qu'elle devient une politique, et la politique, une loi. L'histoire du XXe siècle offre sur ce point de cruelles illustrations. Ainsi en fut-il des grands projets d'aménagement planifiés sans concertation, dont on mesura trop tard les dégâts.\n\nTout partisan qu'il soit de la délibération, l'auteur n'ignore pas ses défauts. La lenteur peut servir d'alibi aux conservateurs de toute espèce, et il n'est pas rare que l'on invoque le « temps du débat » pour enterrer une réforme que l'on n'ose pas combattre ouvertement. Aussi faut-il distinguer deux sortes de délai : celui qui permet de réfléchir et celui qui sert à ne rien faire. Le premier est une vertu, le second un vice, mais ils se ressemblent comme deux gouttes d'eau, et c'est ce qui rend la critique si commode.\n\nPeut-être la solution consiste-t-elle à fixer des échéances plutôt qu'à raccourcir les procédures. Telle est du moins la proposition que défend l'essayiste : que le débat soit long, pourvu qu'il ait une fin. Quelque réticence que suscite l'idée, elle a le mérite de ne sacrifier ni la discussion ni la décision.\n\nReste la question de la confiance. Une démocratie ne se paralyse pas seulement par excès de procédures, mais aussi par défaut de crédit : lorsque les citoyens ne croient plus que leurs représentants décident dans l'intérêt commun, tout retard paraît suspect, toute précipitation scandaleuse. Autant dire que la vitesse idéale n'existe pas ; il existe seulement une vitesse que l'on accepte parce qu'on a confiance. Là réside, au fond, le véritable enjeu : non pas accélérer le temps politique, mais rétablir la légitimité de ceux qui le gèrent."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "« Quelque pressantes que soient les circonstances, le débat s'éternise. » Cette construction exprime…",
+     "op": [
+      "la conséquence : les circonstances sont si pressantes que le débat s'éternise.",
+      "la cause : le débat s'éternise parce que les circonstances sont pressantes.",
+      "la condition : si les circonstances sont pressantes, le débat s'éternise.",
+      "la concession : malgré l'urgence, le débat se prolonge."
+     ],
+     "r": 3,
+     "exp": "'Quelque + adjetivo + que + subjuntivo' = concessão (por mais urgentes que sejam). Equivale a 'bien que / même si'. Armadilha: não confunda com 'quelque' = 'algum/cerca de'. Aqui, 'quelque' é advérbio invariável."
+    },
+    {
+     "t": "gap",
+     "q": "___ séduisante que paraisse la décision rapide, elle a un coût que l'on n'aperçoit qu'après coup.",
+     "resp": [
+      "si",
+      "aussi"
+     ],
+     "exp": "'Si / aussi + adjetivo + que + subjuntivo' = concessão ('por mais sedutora que pareça'). 'Si' é mais frequente; 'aussi' é mais literário. Não use 'tellement'."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "À peine l'erreur est-elle commise qu'elle devient une politique.",
+     "exp": "Após 'à peine' no início da frase, o sujeito é invertido: 'est-elle'. Faça a ligação em 'est-elle' (/ɛtɛl/) e uma pausa leve antes de 'qu'elle'."
+    },
+    {
+     "t": "mc",
+     "q": "« Pour peu qu'un pouvoir s'affranchisse des contrepoids, il se trompe plus vite. » « Pour peu que » indique…",
+     "op": [
+      "une comparaison : autant que…",
+      "un but : afin que…",
+      "une opposition : bien que…",
+      "une condition minimale : il suffit que…"
+     ],
+     "r": 3,
+     "exp": "'Pour peu que + subjuntivo' = basta que, se por pouco que. Expressa uma condição mínima com consequência certa. Armadilha: o subjuntivo e o sentido de 'pour que' (finalidade) parecem próximos, mas a ideia aqui é de condição."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Sans",
+      "doute",
+      "cette",
+      "impatience",
+      "est-elle",
+      "compréhensible"
+     ],
+     "resp": "Sans doute cette impatience est-elle compréhensible",
+     "exp": "Depois de 'sans doute' no início da frase, faz-se a inversão do sujeito (est-elle). O mesmo acontece com 'peut-être', 'à peine', 'ainsi', 'aussi' (= c'est pourquoi) e 'du moins'."
+    },
+    {
+     "t": "gap",
+     "q": "___ partisan qu'il soit de la délibération, l'auteur n'ignore pas ses défauts.",
+     "resp": [
+      "tout"
+     ],
+     "exp": "'Tout + adjetivo/nome + que' = concessão ('embora seja…'). Aqui, 'tout partisan qu'il soit' = embora seja partidário. Pode aparecer com indicativo ('qu'il est') ou subjuntivo ('qu'il soit').",
+     "dica": "tout… que"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Faut-il fixer des échéances au débat démocratique plutôt que raccourcir les procédures ? Donnez votre avis en deux ou trois phrases.",
+     "modelo": "À mon avis, fixer des échéances est une bonne solution, car elle évite que le débat serve d'alibi pour ne rien décider. Cependant, il faut aussi laisser assez de temps pour consulter les citoyens.",
+     "min": 12,
+     "chave": [
+      "échéances",
+      "débat",
+      "décision",
+      "procédures",
+      "temps",
+      "délibération",
+      "cependant",
+      "avis"
+     ],
+     "exp": "Dê um posicionamento e use 'évite que + subjuntivo'. Conectores úteis: cependant, en revanche, d'une part… d'autre part. Evite a repetição de 'penser que'."
+    },
+    {
+     "t": "mc",
+     "q": "Dans « Aussi faut-il distinguer deux sortes de délai », « aussi » placé en tête de phrase avec inversion signifie…",
+     "op": [
+      "également.",
+      "malgré tout.",
+      "c'est pourquoi, par conséquent.",
+      "autant que."
+     ],
+     "r": 2,
+     "exp": "'Aussi' + inversão do sujeito = consequência ('portanto, é por isso que'). Sem inversão, 'aussi' significa 'também'. Pequena armadilha muito cobrada em textos formais."
+    },
+    {
+     "t": "gap",
+     "q": "Ainsi en ___-il des grands projets d'aménagement planifiés sans concertation.",
+     "resp": [
+      "fut"
+     ],
+     "exp": "'Ainsi en fut-il de…' (passé simple de 'être') = o mesmo ocorreu com… Fórmula literária de comparação com inversão. O 't' intercalar não aparece, pois 'fut' já termina em -t.",
+     "dica": "ÊTRE, passé simple"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Ne explétif et nominalisations",
+   "objetivo": "Reconhecer o 'ne' explétivo e desfazer nominalizações para entender ideias condensadas.",
+   "foco": "Ne explétif (craindre que, avant que, à moins que, comparatifs) ; nominalisation",
+   "explicacao": [
+    "O 'ne' explétivo não nega nada. Aparece após craindre que, avoir peur que, éviter que, empêcher que, avant que, à moins que, de peur que e em comparações (plus/moins… que).",
+    "Atenção: 'Je ne doute pas qu'il ne vienne' e 'Je crains qu'il ne vienne' têm 'ne' explétivo; já 'Je ne crains pas qu'il vienne' não o exige.",
+    "Nominalização: o verbo ou o adjetivo vira substantivo (raréfier → raréfaction). Para compreender, volte à forma verbal e reconstrua a oração.",
+    "Armadilha: não traduza o 'ne' explétivo como negação. 'Je crains qu'il ne pleuve' = temo que chova."
+   ],
+   "vocab": [
+    {
+     "en": "l'érosion de la biodiversité",
+     "pt": "a perda de biodiversidade"
+    },
+    {
+     "en": "la raréfaction",
+     "pt": "a escassez crescente"
+    },
+    {
+     "en": "l'épuisement",
+     "pt": "o esgotamento"
+    },
+    {
+     "en": "une nappe phréatique",
+     "pt": "um lençol freático"
+    },
+    {
+     "en": "l'artificialisation des sols",
+     "pt": "a impermeabilização dos solos"
+    },
+    {
+     "en": "à courte vue",
+     "pt": "de visão curta"
+    },
+    {
+     "en": "faire défaut",
+     "pt": "faltar"
+    },
+    {
+     "en": "les marges de manœuvre",
+     "pt": "a margem de manobra"
+    }
+   ],
+   "material": {
+    "titulo": "Le temps de la nature",
+    "texto": "Nul ne conteste plus que la biodiversité s'érode à un rythme sans précédent. Le désaccord porte sur la gravité du phénomène et sur le délai dont nous disposons pour agir. Les écologues craignent que la disparition des pollinisateurs ne compromette les récoltes bien avant qu'une pénurie alimentaire ne soit perceptible dans les rayons des supermarchés, car les systèmes vivants encaissent longtemps les chocs avant de céder d'un seul coup.\n\nCette inertie des écosystèmes est au cœur du problème. Elle explique que le dommage soit souvent irréversible quand il devient visible. L'artificialisation des sols, la raréfaction des zones humides, l'épuisement des nappes phréatiques progressent par petites touches, si bien que personne ne s'alarme tant que le seuil critique n'a pas été franchi. À mesure que les alertes se multiplient, les décideurs hésitent : ils redoutent que des mesures contraignantes ne provoquent des révoltes, et peut-être la crainte n'est-elle pas infondée. Mais l'inaction a aussi ses coûts, plus lourds qu'on ne l'admet généralement.\n\nUn exemple récent le montre. Dans plusieurs régions, la disparition d'une espèce d'insectes a entraîné, en cascade, celle des oiseaux qui s'en nourrissaient, puis la prolifération de parasites que ces derniers contenaient. Nul n'avait prévu cette chaîne d'événements, et nul ne sait au juste où elle s'arrêtera. Les chercheurs eux-mêmes admettent que leurs modèles sous-estiment ces effets de cascade.\n\nIl serait faux de croire que les solutions manquent. Des spécialistes ont montré que l'on pourrait restaurer une part importante des milieux dégradés, à moins que les financements ne fassent défaut. L'obstacle n'est donc pas technique mais politique : empêcher que les intérêts de court terme ne l'emportent sur ceux de la collectivité exige un courage dont les assemblées élues ne font pas toujours preuve. D'où l'idée, souvent avancée, de confier la protection des milieux à des instances indépendantes, de peur que les échéances électorales ne dictent des arbitrages à courte vue.\n\nL'objection ne tarde pas à surgir : une telle délégation ne risque-t-elle pas d'affaiblir la démocratie ? Le risque existe, sans doute ; il est cependant moins grand qu'on ne le dit. Les mêmes sociétés qui confient à des juges la défense des libertés pourraient, sans se renier, confier à des institutions spécialisées la défense des équilibres naturels. Il ne s'agit pas de dépouiller les citoyens de leur pouvoir, mais de garantir que ce pouvoir ne s'exerce pas au détriment de ceux qui n'ont pas encore de voix : les générations à venir.\n\nAgir avant qu'il ne soit trop tard n'est certes pas un programme d'une grande originalité. C'est pourtant le seul qui vaille. La difficulté tient à ce que le « trop tard » ne se signale par aucune sirène : il se constate après coup, lorsque les marges de manœuvre se sont évaporées sans bruit."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Dans « Les écologues craignent que la disparition des pollinisateurs ne compromette les récoltes », le « ne » est…",
+     "op": [
+      "un « ne » explétif, sans valeur négative.",
+      "une négation : les récoltes ne seront pas compromises.",
+      "un « ne » obligatoire qui change le sens de la phrase.",
+      "une restriction équivalant à « seulement »."
+     ],
+     "r": 0,
+     "exp": "Depois de verbos de temor (craindre, redouter, avoir peur) + que, o 'ne' é explétivo: não nega. A frase significa que os ecólogos temem que os polinizadores desapareçam e que as colheitas sejam comprometidas. Armadilha clássica: traduzir como se fosse negação."
+    },
+    {
+     "t": "gap",
+     "q": "Agissons avant qu'il ___ soit trop tard.",
+     "resp": [
+      "ne",
+      "n'"
+     ],
+     "exp": "Depois de 'avant que', 'à moins que', 'de peur que', 'craindre que', usa-se frequentemente o 'ne' explétivo no registro formal. Ele é facultativo, mas muito frequente em textos C2.",
+     "dica": "ne explétif"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Le risque existe, sans doute ; il est cependant moins grand qu'on ne le dit.",
+     "exp": "Na comparação de desigualdade (moins… que, plus… que), o 'ne' é explétivo: 'qu'on ne le dit'. Pronuncie 'qu'on ne le dit' em uma só emissão, com o 'ne' fraco (/n(ə)/)."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle reformulation verbale équivaut à « la raréfaction des zones humides » ?",
+     "op": [
+      "la fierté d'avoir des zones humides",
+      "le désir de rafraîchir les zones humides",
+      "le fait que les zones humides soient protégées",
+      "le fait que les zones humides deviennent de plus en plus rares"
+     ],
+     "r": 3,
+     "exp": "'Raréfaction' vem de 'se raréfier' (tornar-se raro). A nominalização condensa uma oração em um substantivo: é uma marca do estilo jornalístico e acadêmico. Em C2, treine a 'desnominalizar' para entender a ideia."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "On",
+      "craint",
+      "que",
+      "des",
+      "mesures",
+      "contraignantes",
+      "ne",
+      "provoquent",
+      "des",
+      "révoltes"
+     ],
+     "resp": "On craint que des mesures contraignantes ne provoquent des révoltes",
+     "exp": "'Craindre que… ne + subjuntivo': o 'ne' é explétivo. Verbo 'provoquent' no subjuntivo presente (idêntico ao indicativo no plural). Atenção: 'contraignantes' vem de 'contraindre'."
+    },
+    {
+     "t": "gap",
+     "q": "On pourrait restaurer ces milieux, à moins que les financements ne ___ défaut.",
+     "resp": [
+      "fassent"
+     ],
+     "exp": "'À moins que + subjuntivo' (condição negativa), com 'ne' explétivo. 'Faire défaut' = faltar. O subjuntivo de 'faire': que les financements fassent.",
+     "dica": "FAIRE, subjonctif présent"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Faut-il confier la protection de la nature à des instances indépendantes ? Donnez votre avis en deux ou trois phrases.",
+     "modelo": "À mon sens, c'est une bonne idée, car les élus pensent souvent à court terme. Toutefois, il faudrait que ces instances rendent des comptes aux citoyens.",
+     "min": 12,
+     "chave": [
+      "instances",
+      "indépendantes",
+      "nature",
+      "élus",
+      "court terme",
+      "citoyens",
+      "toutefois",
+      "avis"
+     ],
+     "exp": "Dê sua opinião com concessão (toutefois, cependant). Use 'il faudrait que + subjuntivo'. Vocabulário útil: à court terme / à long terme, rendre des comptes, les générations futures."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la position de l'auteur à l'égard de la délégation à des instances indépendantes ?",
+     "op": [
+      "Il l'ignore complètement.",
+      "Il la rejette, car elle affaiblirait la démocratie.",
+      "Il la considère comme inutile.",
+      "Il l'accepte avec prudence : le risque existe, mais il est moins grand qu'on ne le dit."
+     ],
+     "r": 3,
+     "exp": "O autor reconhece o risco ('le risque existe, sans doute') e relativiza ('moins grand qu'on ne le dit'). Concessão + nuance = posição moderadamente favorável. A opção 0 confunde a objeção com a tese."
+    },
+    {
+     "t": "gap",
+     "q": "Transformez le verbe en nom : « Les zones humides se raréfient » → la ___ des zones humides.",
+     "resp": [
+      "raréfaction"
+     ],
+     "exp": "Nominalização de 'se raréfier' → 'la raréfaction'. Outros pares do texto: épuiser → l'épuisement ; artificialiser → l'artificialisation ; disparaître → la disparition.",
+     "dica": "RARÉFIER"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Registre juridique et formules soutenues",
+   "objetivo": "Compreender o vocabulário jurídico e as fórmulas de registro elevado (nonobstant, d'aucuns, ledit, au demeurant).",
+   "foco": "Registre soutenu : nonobstant, d'aucuns, ledit, au demeurant, en l'espèce, cela étant",
+   "explicacao": [
+    "Textos políticos e jurídicos usam formas arcaizantes: nonobstant (malgré), ledit/ladite (o referido), ci-après/ci-dessus (a seguir/acima), en l'espèce (no caso presente), au demeurant (aliás).",
+    "'D'aucuns' = alguns (sem negação). Já 'aucun… ne' = nenhum. Cuidado com o contraste, pois muda totalmente o sentido.",
+    "Os conectores de nuance: cela étant (dito isso), il n'en demeure pas moins que (nem por isso deixa de ser verdade que), force est de reconnaître que.",
+    "Estratégia: você não precisa usar essas fórmulas na escrita, mas precisa reconhecê-las rapidamente para não perder o fio do argumento."
+   ],
+   "vocab": [
+    {
+     "en": "nonobstant",
+     "pt": "apesar de (jurídico)"
+    },
+    {
+     "en": "d'aucuns",
+     "pt": "alguns, certos (literário)"
+    },
+    {
+     "en": "ledit / ladite",
+     "pt": "o referido / a referida"
+    },
+    {
+     "en": "au demeurant",
+     "pt": "aliás, de resto"
+    },
+    {
+     "en": "en l'espèce",
+     "pt": "no caso presente"
+    },
+    {
+     "en": "cela étant",
+     "pt": "dito isto"
+    },
+    {
+     "en": "ci-après",
+     "pt": "a seguir"
+    },
+    {
+     "en": "une soupape",
+     "pt": "uma válvula de escape"
+    }
+   ],
+   "material": {
+    "titulo": "L'État de droit et l'exception",
+    "texto": "Il est d'usage de célébrer l'État de droit comme une conquête définitive. Or le droit n'est jamais un acquis : il est une construction continue, que d'aucuns jugent trop rigide et d'autres trop complaisante. Pour en saisir la fragilité, il suffit d'examiner la manière dont les sociétés traitent leurs exceptions.\n\nPrenons l'exemple, banal en apparence, de la clause dite de sauvegarde. Nonobstant les principes généraux, la plupart des constitutions prévoient qu'en cas de péril exceptionnel, l'exécutif puisse suspendre certaines garanties. Ladite clause a été conçue comme une soupape : on y recourt rarement, brièvement, sous contrôle. Au demeurant, les juristes s'accordent à reconnaître qu'elle est nécessaire, car aucun texte ne saurait prévoir toutes les catastrophes.\n\nLe problème surgit lorsque l'exception, au lieu de rester exceptionnelle, s'installe. Ci-après, nous désignerons sous le nom de « normalisation de l'urgence » ce processus par lequel des mesures provisoires sont reconduites, puis codifiées, puis oubliées. En l'espèce, le danger tient moins à la mesure elle-même qu'à l'accoutumance : on s'habitue aux contrôles, aux fichiers, aux perquisitions, comme on s'habitue à un bruit de fond. Les exemples abondent : état d'urgence prorogé de trimestre en trimestre, dispositifs de surveillance présentés comme transitoires et devenus permanents, procédures dérogatoires étendues à des infractions sans rapport avec la menace initiale. Chaque prolongation, prise isolément, paraît raisonnable ; c'est leur addition qui change la nature du régime. Rien n'est plus aisé que de prolonger ce qui existe déjà.\n\nLes défenseurs de ces dispositifs invoquent, non sans raison, la sécurité des citoyens. Nul ne songe à nier qu'un État doive protéger sa population. Cela étant, la sécurité n'est pas une liberté parmi d'autres : elle en est la condition, et c'est pourquoi on la brandit si volontiers pour en limiter l'exercice. Ledit paradoxe n'a pas échappé à Montesquieu, qui voyait dans la modération le premier devoir du législateur.\n\nQue conclure ? Que le droit, pour demeurer ce qu'il prétend être, doit se munir d'un mécanisme d'autocorrection : des clauses d'extinction automatique, une évaluation indépendante, un juge toujours en mesure d'être saisi. Cette dernière précaution est la plus décisive. Un droit sans recours est un droit de papier, et nonobstant les déclarations solennelles dont on l'orne, il ne protège que ceux que le pouvoir se refuse déjà à inquiéter.\n\nOn objectera, il est vrai, que les citoyens eux-mêmes réclament parfois ces restrictions, par lassitude ou par peur. L'argument est sérieux, et il serait vain de le balayer d'un revers de main. Il impose cependant une exigence supplémentaire : que la loi, même votée à une large majorité, demeure révisable, afin que l'émotion d'un jour ne devienne pas la contrainte de plusieurs décennies."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Dans « le droit… que d'aucuns jugent trop rigide », « d'aucuns » signifie…",
+     "op": [
+      "tout le monde",
+      "personne",
+      "certaines personnes",
+      "les juristes uniquement"
+     ],
+     "r": 2,
+     "exp": "'D'aucuns' (literário) = alguns, certas pessoas. Cuidado: 'aucun' com 'ne' é negativo (aucun ne… = nenhum), mas 'd'aucuns' no plural, sem 'ne', é positivo. É uma armadilha clássica de leitura."
+    },
+    {
+     "t": "gap",
+     "q": "___ les principes généraux, la plupart des constitutions prévoient une clause d'exception.",
+     "resp": [
+      "nonobstant",
+      "Nonobstant"
+     ],
+     "exp": "'Nonobstant' = malgré (registro jurídico/administrativo, invariável). Seguido diretamente de um nome: 'nonobstant les principes généraux'. Em C2, aparece em textos de direito e de imprensa solene.",
+     "dica": "= malgré (registre juridique)"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Un droit sans recours est un droit de papier.",
+     "exp": "Frase curta e densa, com paralelismo: 'un droit… un droit'. Pronuncie 'recours' como re-KUR (o 's' final é mudo). Pausa depois de 'recours'."
+    },
+    {
+     "t": "mc",
+     "q": "Dans « Ladite clause a été conçue comme une soupape », « ladite clause » désigne…",
+     "op": [
+      "toutes les clauses d'une constitution.",
+      "la clause de sauvegarde mentionnée dans la phrase précédente.",
+      "une clause fictive.",
+      "une clause dont il sera question plus loin."
+     ],
+     "r": 1,
+     "exp": "'Ledit/ladite/lesdits/lesdites' = o dito, a referida (retoma o que acabou de ser mencionado). É o vocabulário jurídico de coesão. Não confundir com 'celle-ci' (também anafórico, mas de registro menos formal)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "En",
+      "l'espèce",
+      "le",
+      "danger",
+      "tient",
+      "moins",
+      "à",
+      "la",
+      "mesure",
+      "qu'à",
+      "l'accoutumance"
+     ],
+     "resp": "En l'espèce le danger tient moins à la mesure qu'à l'accoutumance",
+     "exp": "'En l'espèce' = no caso presente (jurídico). 'Tenir à' = dever-se a. A estrutura 'moins… que' compara duas causas; atenção à contração 'qu'à'."
+    },
+    {
+     "t": "gap",
+     "q": "Les juristes s'accordent, au ___, à reconnaître que la clause est nécessaire.",
+     "resp": [
+      "demeurant"
+     ],
+     "exp": "'Au demeurant' = aliás, de resto. Locução adverbial literária que acrescenta um argumento. Não confundir com 'demeurer' (permanecer) no sentido literal.",
+     "dica": "locution : aliás, de resto"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Comment un État peut-il protéger la sécurité de ses citoyens sans sacrifier leurs libertés ? Répondez en deux ou trois phrases.",
+     "modelo": "Un État peut limiter les mesures d'exception dans le temps et les soumettre au contrôle d'un juge indépendant. Ainsi, la sécurité est assurée sans que les libertés soient durablement menacées.",
+     "min": 12,
+     "chave": [
+      "sécurité",
+      "libertés",
+      "juge",
+      "contrôle",
+      "exception",
+      "durée",
+      "temps",
+      "loi"
+     ],
+     "exp": "Proponha mecanismos concretos do texto: cláusulas de extinção automática, avaliação independente, recurso a um juiz. Use 'sans que + subjuntivo' para expressar a ausência de efeito colateral."
+    },
+    {
+     "t": "mc",
+     "q": "Dans « Cela étant, la sécurité n'est pas une liberté parmi d'autres », « cela étant » introduit…",
+     "op": [
+      "une cause : parce que cela existe.",
+      "une restriction : cela dit, malgré ce qui précède.",
+      "une addition : en outre.",
+      "une conséquence : par conséquent."
+     ],
+     "r": 1,
+     "exp": "'Cela étant' = dito isso, mesmo assim: reconhece o argumento anterior e acrescenta um contraponto. Em textos formais, é um conector de restrição, não de causa."
+    },
+    {
+     "t": "gap",
+     "q": "Ci-___, nous désignerons sous le nom de « normalisation de l'urgence » ce processus de reconduction.",
+     "resp": [
+      "après"
+     ],
+     "exp": "'Ci-après' = mais adiante, a seguir (usado em contratos e textos formais). Seu oposto é 'ci-dessus' (acima). Também existe 'ci-joint' (anexo).",
+     "dica": "mot de renvoi"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Expressions figées et images",
+   "objetivo": "Entender locuções idiomáticas raras e a lógica das imagens (militares, náuticas, rurais).",
+   "foco": "Expressions idiomatiques : faire florès, battre en brèche, tirer son épingle du jeu, pierre d'achoppement",
+   "explicacao": [
+    "Locuções fixas têm sentido global; traduzir palavra por palavra leva ao erro. 'Battre en brèche' não é 'bater em brecha', e sim 'atacar um argumento'.",
+    "Muitas imagens vêm do vocabulário militar, rural e náutico: mettre à mal, battre en brèche, mettre la charrue avant les bœufs, sonner le glas, tirer la sonnette d'alarme.",
+    "Estratégia: pelo contexto, decida se a imagem é positiva ou negativa (faire florès = bom; mettre à mal = ruim) e depois procure o sentido preciso.",
+    "No DALF C2, essas expressões aparecem em perguntas de reformulação: você precisa substituí-las por uma paráfrase sem a imagem."
+   ],
+   "vocab": [
+    {
+     "en": "faire florès",
+     "pt": "fazer sucesso, prosperar"
+    },
+    {
+     "en": "mettre à mal",
+     "pt": "pôr em perigo, prejudicar"
+    },
+    {
+     "en": "tenir la dragée haute",
+     "pt": "impor condições duras, ter a vantagem"
+    },
+    {
+     "en": "tirer son épingle du jeu",
+     "pt": "sair-se bem de uma situação difícil"
+    },
+    {
+     "en": "faire flèche de tout bois",
+     "pt": "usar todos os meios disponíveis"
+    },
+    {
+     "en": "battre en brèche",
+     "pt": "atacar, derrubar (um argumento)"
+    },
+    {
+     "en": "une pierre d'achoppement",
+     "pt": "um obstáculo, um tropeço"
+    },
+    {
+     "en": "jeter l'éponge",
+     "pt": "desistir"
+    }
+   ],
+   "material": {
+    "titulo": "Le commerce de proximité",
+    "texto": "Pendant des décennies, le commerce de proximité a fait florès dans les centres-villes. La boulangerie, la librairie, le café du coin formaient un tissu serré qui donnait aux rues leur physionomie et aux quartiers leur âme. Aujourd'hui, ce modèle est mis à mal par les plateformes de vente en ligne qui, tenant la dragée haute aux boutiques physiques, proposent des prix que nul commerçant indépendant ne saurait égaler. Dans bien des villes moyennes, les locaux vacants se multiplient, et les rideaux baissés finissent par décourager les derniers chalands. Une rue qui se vide appelle d'autres départs : c'est un cercle vicieux, que l'on a longtemps pris pour une fatalité alors qu'il résulte aussi de choix d'aménagement, de loyers excessifs et de politiques d'urbanisme tournées vers les périphéries.\n\nLes pouvoirs publics ont tiré la sonnette d'alarme, sans grand effet. On a multiplié les rapports, les états généraux, les plans de sauvegarde ; à chaque fois, la montagne a accouché d'une souris. Le dernier dispositif en date, une exonération temporaire de charges, a été accueilli avec un scepticisme poli par les intéressés : ils y voient une mesure à courte vue, qui retarde la fermeture sans en traiter la cause.\n\nCertains commerçants, pourtant, tirent leur épingle du jeu. Ils ne se contentent pas de vendre : ils conseillent, animent, organisent des rencontres, et font flèche de tout bois pour fidéliser une clientèle qui, sans eux, ne mettrait plus les pieds en ville. Leur réussite bat en brèche l'idée reçue selon laquelle la proximité serait condamnée par la technique. Ce qui est condamné, c'est la proximité qui ne propose rien d'autre qu'elle-même.\n\nReste la question épineuse de la fiscalité, véritable pierre d'achoppement entre les élus locaux et l'État. Les premiers voudraient taxer les plateformes ; les seconds objectent que l'on ne peut mettre la charrue avant les bœufs : sans cadre européen cohérent, une taxe nationale ne ferait que déplacer les sièges sociaux. L'argument n'est pas dénué de fondement, mais il est devenu un alibi commode, que l'on brandit tantôt à bon escient, tantôt pour masquer l'indécision.\n\nFaut-il pour autant jeter l'éponge ? Les urbanistes que nous avons consultés l'écartent résolument. À leurs yeux, les plateformes ne sonnent pas le glas des centres-villes ; elles les obligent à se réinventer. Mais ils précisent aussitôt que cette réinvention ne se fera pas toute seule, et qu'un commerçant laissé sur la sellette par les banques, par l'administration et par la grande distribution ne dispose que d'une marge de manœuvre étroite. Autrement dit, aucun cheval de Troie numérique ne vaincra jamais une ville qui sait ce qu'elle veut être."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "« Le commerce de proximité a fait florès » signifie qu'il…",
+     "op": [
+      "a disparu progressivement.",
+      "a connu un grand succès.",
+      "a été interdit.",
+      "s'est transformé en plateforme."
+     ],
+     "r": 1,
+     "exp": "'Faire florès' = ter grande popularidade, prosperar (do latim 'floris'). Não confunda com 'faire fleur' nem com 'fleurir' (florescer, literal). Falsa pista: 'flor' em português lembra 'florescer', e aqui o sentido é próximo, mas a expressão é fixa."
+    },
+    {
+     "t": "gap",
+     "q": "Le plan annoncé en grande pompe n'a rien changé : la montagne a accouché d'une ___.",
+     "resp": [
+      "souris"
+     ],
+     "exp": "'La montagne accouche d'une souris' = muito barulho por um resultado mínimo. A imagem vem de uma fábula de La Fontaine/Horácio. Em C2, expressões desse tipo exigem compreensão da imagem."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Leur réussite bat en brèche l'idée reçue selon laquelle la proximité serait condamnée.",
+     "exp": "Pronuncie 'brèche' com o /ɛ/ aberto e o 'ch' como 'x' em português ('chá'). Em 'selon laquelle', não elida. O condicional 'serait condamnée' mostra o distanciamento do autor."
+    },
+    {
+     "t": "mc",
+     "q": "« Battre en brèche » une idée reçue, c'est…",
+     "op": [
+      "la contourner discrètement.",
+      "l'attaquer vigoureusement pour l'ébranler.",
+      "l'ignorer complètement.",
+      "la confirmer par des exemples."
+     ],
+     "r": 1,
+     "exp": "'Battre en brèche' vem do vocabulário militar (abrir uma brecha nas muralhas): atacar um argumento para enfraquecê-lo. Armadilha: não significa 'vencer sem esforço'."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "On",
+      "ne",
+      "peut",
+      "pas",
+      "mettre",
+      "la",
+      "charrue",
+      "avant",
+      "les",
+      "bœufs"
+     ],
+     "resp": "On ne peut pas mettre la charrue avant les bœufs",
+     "exp": "'Mettre la charrue avant les bœufs' = fazer as coisas na ordem errada. Atenção ao 'œ' em 'bœufs' (pronuncia-se /bø/ no plural, sem o 'f'). Em português: 'colocar o carro na frente dos bois'."
+    },
+    {
+     "t": "gap",
+     "q": "Les pouvoirs publics ont tiré la ___ d'alarme, sans grand effet.",
+     "resp": [
+      "sonnette"
+     ],
+     "exp": "'Tirer la sonnette d'alarme' = dar o alarme, alertar. Não confundir com 'sonner l'alarme'. O substantivo é feminino: la sonnette.",
+     "dica": "locution : alerter"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Que pensez-vous de l'avenir du petit commerce face aux plateformes en ligne ? Répondez en deux ou trois phrases.",
+     "modelo": "À mon avis, le petit commerce peut survivre s'il propose des services que les plateformes ne peuvent pas offrir, comme le conseil et la convivialité. Il aura toutefois besoin d'un soutien des pouvoirs publics.",
+     "min": 12,
+     "chave": [
+      "commerce",
+      "plateformes",
+      "conseil",
+      "services",
+      "soutien",
+      "toutefois",
+      "survivre",
+      "proximité"
+     ],
+     "exp": "Use uma expressão do texto (tirer son épingle du jeu, battre en brèche) para enriquecer a resposta. Estrutura: posição + argumento + ressalva (toutefois)."
+    },
+    {
+     "t": "mc",
+     "q": "« Une pierre d'achoppement » entre élus et État désigne…",
+     "op": [
+      "un obstacle qui provoque un désaccord.",
+      "une solution définitive.",
+      "un fondement solide.",
+      "un compromis historique."
+     ],
+     "r": 0,
+     "exp": "'Pierre d'achoppement' = obstáculo, ponto de tropeço que impede o acordo. Armadilha: 'pierre' faz pensar em 'fundamento' (pedra angular), mas 'achopper' é tropeçar."
+    },
+    {
+     "t": "gap",
+     "q": "Les plateformes ne sonnent pas le ___ des centres-villes ; elles les obligent à se réinventer.",
+     "resp": [
+      "glas"
+     ],
+     "exp": "'Sonner le glas de quelque chose' = anunciar o fim, o toque de finados. O substantivo 'glas' vem de 'classicum'. O 's' final não se pronuncia: /gla/.",
+     "dica": "son de cloches funèbres"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Changements de registre et de ton",
+   "objetivo": "Perceber como mudanças de registro e de tom revelam a intenção do autor.",
+   "foco": "Registres (soutenu, courant, familier), glissements de ton, effets stylistiques",
+   "explicacao": [
+    "Registro soutenu: vocabulário elevado, subjuntivo, inversões, verbos como 'entendre' (= pretender, ter a intenção de: 'le gouvernement entend poursuivre'). Registro familiar: cortes, gíria, fórmulas orais (c'est du lourd, ça coince).",
+    "Quando um autor muda de registro no meio de um parágrafo, ele quer um efeito: ironia, cumplicidade, desprezo, ternura, humor. A pergunta certa é sempre 'por quê aqui?'",
+    "Marcadores de familiaridade: elisão do 'ne' (c'est pas), pronomes 'on' e 'ça', expressões idiomáticas, exclamações.",
+    "Cuidado com os falsos amigos de registro: 'entendre' (literário) = pretender/ter a intenção de; 'prétendre' = afirmar; 'se méprendre' = enganar-se."
+   ],
+   "vocab": [
+    {
+     "en": "le registre soutenu / familier",
+     "pt": "o registro formal / coloquial"
+    },
+    {
+     "en": "un glissement",
+     "pt": "um deslizamento, uma mudança gradual"
+    },
+    {
+     "en": "la connivence",
+     "pt": "a cumplicidade"
+    },
+    {
+     "en": "le verlan",
+     "pt": "gíria que inverte sílabas"
+    },
+    {
+     "en": "incongru",
+     "pt": "incongruente, deslocado"
+    },
+    {
+     "en": "feint",
+     "pt": "fingido"
+    },
+    {
+     "en": "lâcher",
+     "pt": "soltar, deixar escapar"
+    },
+    {
+     "en": "le café du commerce",
+     "pt": "a conversa de bar (opiniões sem fundamento)"
+    }
+   ],
+   "material": {
+    "titulo": "Parler comme un livre ?",
+    "texto": "Il fut un temps où l'on distinguait sans effort la langue de la tribune de celle du comptoir. L'une ordonnait, l'autre bavardait ; l'une se vêtait de subjonctifs, l'autre allait en bras de chemise. Aujourd'hui, la frontière s'est brouillée, et le linguiste, en bon observateur, ne sait plus très bien s'il doit s'en réjouir ou s'en plaindre.\n\nPrenons un ministre à la radio. Au micro, il énonce, de sa voix la plus solennelle, que « le gouvernement entend poursuivre sans relâche l'œuvre de redressement engagée » ; puis, interrogé sur une polémique, il lâche, avec un sourire de connivence, qu'« il ne faut pas non plus raconter n'importe quoi ». Le procédé n'a rien d'innocent. En passant du registre soutenu au registre familier, l'orateur ne change pas seulement de mots : il change de rapport avec son auditeur. Il cesse d'être le personnage officiel pour devenir l'un des nôtres, le voisin de palier qui dit les choses comme elles sont.\n\nOn aurait tort d'y voir une simple commodité. Ce glissement est une stratégie, aussi vieille que l'éloquence : l'orateur sait que la hauteur impressionne, mais que la familiarité convainc. Il lui suffit de doser. Trop de solennité éloigne ; trop de familiarité discrédite, et l'on cesse de prendre au sérieux celui qui parle comme au café du commerce.\n\nLe registre familier, toutefois, n'est pas un bloc. Entre « C'est pas mal » et « C'est du lourd », il y a toute la distance qui sépare l'approbation tiède de l'enthousiasme. Les jeunes générations enrichissent sans cesse ce répertoire d'inventions que les dictionnaires mettent des années à enregistrer, quand ils ne les ignorent pas par dédain. Le verlan, que l'on croyait réservé à une poignée de quartiers, a fourni à la langue commune des mots désormais familiers à tous les âges.\n\nMais que l'on ne se méprenne pas. Cette souplesse n'abolit pas la norme ; elle la suppose. On ne peut transgresser que ce que l'on connaît, et le comique d'un registre incongru tient au contraste qu'il produit avec celui qui l'entoure. Un texte qui n'utiliserait que le familier ne ferait plus rire personne, comme un discours qui n'emploierait que le soutenu ne toucherait plus personne.\n\nLa leçon vaut pour le lecteur autant que pour l'écrivain. Repérer un changement de registre, c'est repérer une intention : ironie, complicité, mépris, tendresse, ou volonté de désarmer l'adversaire. Quand un auteur de tribune glisse soudain un « bref, ça coince » au milieu d'une période majestueuse, il ne s'est pas laissé aller : il a calculé l'effet.\n\nReste à savoir si cette alternance finira par épuiser son propre pouvoir. À force d'être imitée, la familiarité feinte devient un procédé, et l'auditeur, qui n'est pas dupe, finit par l'entendre pour ce qu'elle est : un costume parmi d'autres. Peut-être faudra-t-il alors inventer autre chose, ou revenir, par un détour que nos ancêtres auraient trouvé comique, à la franchise des mots simples."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Pourquoi le ministre passe-t-il du registre soutenu au registre familier ?",
+     "op": [
+      "Pour se moquer de ses adversaires.",
+      "Pour créer une complicité avec l'auditeur et paraître proche de lui.",
+      "Parce que le sujet est trivial.",
+      "Parce qu'il a oublié son texte."
+     ],
+     "r": 1,
+     "exp": "O texto afirma: 'il change de rapport avec son auditeur… devenir l'un des nôtres'. A mudança de registro é uma estratégia retórica de aproximação. Em C2, toda mudança de registro deve ser lida como intenção, e não como acidente."
+    },
+    {
+     "t": "gap",
+     "q": "Il cesse d'être le personnage officiel pour devenir l'un des nôtres, le ___ de palier qui dit les choses comme elles sont.",
+     "resp": [
+      "voisin"
+     ],
+     "exp": "'Voisin de palier' = vizinho de andar. É uma imagem de proximidade cotidiana, típica do registro familiar buscado pelo orador."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "L'orateur sait que la hauteur impressionne, mais que la familiarité convainc.",
+     "exp": "Duas subordinadas paralelas com 'que'. Pronuncie 'impressionne' e 'convainc' (kon-VIN) com clareza: o 'c' final de 'convainc' é mudo. Marque a oposição com a entonação."
+    },
+    {
+     "t": "mc",
+     "q": "Quel verbe de registre soutenu remplace le mieux « lâcher » dans « il lâche, avec un sourire de connivence, qu'il ne faut pas raconter n'importe quoi » ?",
+     "op": [
+      "laisser échapper",
+      "renoncer à",
+      "énoncer solennellement",
+      "proclamer avec emphase"
+     ],
+     "r": 0,
+     "exp": "'Lâcher' (familiar) = deixar escapar uma frase, quase sem querer. O equivalente soutenu é 'laisser échapper'. 'Énoncer solennellement' e 'proclamer' seriam o contrário do tom descontraído."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Repérer",
+      "un",
+      "changement",
+      "de",
+      "registre",
+      "c'est",
+      "repérer",
+      "une",
+      "intention"
+     ],
+     "resp": "Repérer un changement de registre c'est repérer une intention",
+     "exp": "A estrutura 'Infinitivo, c'est + infinitivo' é um recurso de definição em ensaios (equivale a 'identificar… é identificar…'). Mantenha a vírgula mental após 'registre'."
+    },
+    {
+     "t": "gap",
+     "q": "Cette souplesse n'abolit pas la norme ; elle la ___.",
+     "resp": [
+      "suppose",
+      "présuppose",
+      "postule"
+     ],
+     "exp": "'Supposer' = ter como condição prévia. O argumento: só se transgride o que se conhece, então a variação pressupõe a norma. Não confunda com 'supposer' no sentido de 'achar' (suponer, em português)."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Vous arrive-t-il de changer de registre de langue selon votre interlocuteur ? Donnez un exemple en deux ou trois phrases.",
+     "modelo": "Oui, bien sûr. Avec mes amis, je parle de façon décontractée, alors qu'avec un professeur j'emploie un registre plus soutenu. Cela me permet de m'adapter à la situation.",
+     "min": 12,
+     "chave": [
+      "registre",
+      "amis",
+      "soutenu",
+      "familier",
+      "situation",
+      "interlocuteur",
+      "adapter",
+      "langage"
+     ],
+     "exp": "Dê um exemplo concreto contrastando dois contextos (amigos x professor, e-mail formal x mensagem). Use 'alors que' ou 'tandis que' para o contraste e 's'adapter à' para a conclusão."
+    },
+    {
+     "t": "mc",
+     "q": "Que signifie « un costume parmi d'autres » à propos de la familiarité feinte ?",
+     "op": [
+      "Qu'elle est réservée aux politiciens.",
+      "Qu'elle devient un artifice parmi les procédés de l'orateur, que l'auditeur finit par repérer.",
+      "Qu'elle est élégante et durable.",
+      "Qu'elle fait partie du vocabulaire vestimentaire."
+     ],
+     "r": 1,
+     "exp": "A metáfora do 'costume' indica que a falsa familiaridade é um disfarce. O auditor, 'qui n'est pas dupe', percebe o artifício. Reformule a metáfora por um termo abstrato (artifício, procedimento) para responder bem."
+    },
+    {
+     "t": "gap",
+     "q": "Le comique d'un registre incongru tient au ___ qu'il produit avec celui qui l'entoure.",
+     "resp": [
+      "contraste"
+     ],
+     "exp": "'Contraste' = oposição que gera efeito. O texto conclui que o cômico (e a ironia) dependem da diferença entre dois registros vizinhos. Atenção ao gênero: un contraste (masculino)."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Deux documents : convergence et divergence",
+   "objetivo": "Analisar a relação entre dois textos do dossiê: pontos comuns, oposições, nuances.",
+   "foco": "Relation entre documents : convergence, opposition, complémentarité ; là où, alors que, en revanche",
+   "explicacao": [
+    "No dossiê do DALF C2, você compara documentos. Primeiro, ache a tese de cada um. Depois, responda: concordam em quê? divergem em quê? um completa o outro?",
+    "Conectores de oposição: alors que, tandis que, là où… , en revanche, à l'inverse, contrairement à. Conectores de convergência: de même, tout comme, les deux auteurs s'accordent pour dire que.",
+    "Cuidado com o exagero: se um autor nuança, não o apresente como se ele negasse tudo. 'Plus de prudence' ≠ 'rejet total'.",
+    "Estratégia: faça uma tabela mental (tese, argumentos, tom, exemplos) para cada documento e compare linha por linha."
+   ],
+   "vocab": [
+    {
+     "en": "balayer",
+     "pt": "varrer; ler por alto"
+    },
+    {
+     "en": "un gisement",
+     "pt": "uma jazida (de informações)"
+    },
+    {
+     "en": "proscrire",
+     "pt": "proibir, banir"
+    },
+    {
+     "en": "parcourir / approfondir",
+     "pt": "percorrer / aprofundar"
+    },
+    {
+     "en": "incriminer",
+     "pt": "acusar, pôr a culpa em"
+    },
+    {
+     "en": "l'écart",
+     "pt": "a diferença"
+    },
+    {
+     "en": "pour autant",
+     "pt": "nem por isso"
+    },
+    {
+     "en": "là où",
+     "pt": "enquanto, ao passo que"
+    }
+   ],
+   "material": {
+    "titulo": "Lire à l'écran : deux regards",
+    "texto": "Document 1 — Le lecteur dispersé (tribune)\n\nNous ne lisons plus : nous balayons. L'œil, jadis docile, glisse sur la page en quête d'un mot-clé, comme un moteur de recherche sur une base de données, et le texte, réduit à un gisement d'informations, perd l'épaisseur qui faisait sa valeur. Ce n'est pas un détail. Lire un livre, c'est consentir à une durée que l'on ne maîtrise pas, à un auteur qui nous mène là où nous ne comptions pas aller. La lecture numérique, elle, flatte notre impatience : elle offre le résumé avant le récit, l'extrait avant l'œuvre, la notification avant la pensée.\n\nLes conséquences sont déjà visibles. Les enseignants constatent que leurs élèves, capables de retrouver n'importe quel fait en quelques secondes, peinent à suivre un raisonnement de trois pages. Faute d'attention soutenue, la nuance s'évapore, et avec elle la faculté de supporter la contradiction. À ce rythme, il se pourrait que nous formions une génération de lecteurs rapides et de penseurs superficiels. Le diagnostic est sévère ; il n'est pas pour autant infondé. On objectera que les livres n'ont pas disparu et que jamais on n'a autant écrit. L'objection est juste, mais elle ne répond pas à la question : ce qui se raréfie n'est pas le texte, c'est la lecture lente, celle qui laisse le temps de changer d'avis en cours de route.\n\nDocument 2 — Lire à l'écran : ce que disent les études (entretien avec une chercheuse)\n\nIl est tentant de lire dans l'écran la cause de tous nos maux, et la tentation n'est pas nouvelle : Socrate soupçonnait déjà, dans le Phèdre de Platon, l'écriture d'affaiblir la mémoire. Les études disponibles invitent à plus de prudence. Elles montrent que la compréhension d'un texte long est, en moyenne, légèrement meilleure sur papier, mais l'écart varie considérablement selon l'âge, l'entraînement et le type de texte. Surtout, ce n'est pas le support qui détermine l'attention : c'est l'usage que l'on en fait. Un lecteur qui désactive ses notifications et s'impose un but de lecture obtient sur tablette des résultats comparables à ceux du papier.\n\nCela ne signifie pas que tout va bien. La lecture rapide, quand elle devient la seule, appauvrit l'interprétation. Mais le remède n'est pas de proscrire l'écran ; il est d'enseigner explicitement deux gestes que l'on croyait naturels : parcourir et approfondir. Un bon lecteur sait passer de l'un à l'autre, comme un bon conducteur sait quand il faut ralentir. Les enseignants, de leur côté, auraient intérêt à cesser d'opposer les deux supports : les élèves les plus à l'aise sont ceux qui ont appris à adapter leur manière de lire à ce qu'ils lisent. Reste à savoir si l'école en a les moyens."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle relation globale existe-t-il entre le document 1 et le document 2 ?",
+     "op": [
+      "Le document 2 nuance et corrige en partie le diagnostic sévère du document 1, tout en reconnaissant certains de ses constats.",
+      "Les deux documents traitent de sujets sans rapport.",
+      "Ils défendent exactement la même thèse avec les mêmes arguments.",
+      "Le document 2 réfute entièrement le document 1 et nie tout problème de lecture."
+     ],
+     "r": 0,
+     "exp": "No dossiê C2, a relação é central: convergência, oposição ou complementaridade. Aqui há convergência parcial (a leitura rápida empobrece) e divergência sobre a causa (suporte x uso). A opção 2 exagera: a pesquisadora diz 'cela ne signifie pas que tout va bien'."
+    },
+    {
+     "t": "gap",
+     "q": "Le premier auteur dresse un diagnostic sévère ; la chercheuse, elle, invite à plus de ___.",
+     "resp": [
+      "prudence"
+     ],
+     "exp": "'Invite à plus de prudence' é uma formulação de nuance, ideal para sínteses. Outras equivalentes: 'appelle à la prudence', 'incite à la mesure'."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Ce n'est pas le support qui détermine l'attention, c'est l'usage que l'on en fait.",
+     "exp": "Frase clivada (c'est… qui / c'est… que) comum em argumentação. Dê ênfase a 'support' e 'usage'. Em 'que l'on en fait', faça a ligação em 'l'on' (/lɔ̃/) e o 'en' nasal."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle formulation de synthèse rend le mieux compte de la divergence entre les deux documents ?",
+     "op": [
+      "Là où le premier auteur incrimine la lecture numérique elle-même, la seconde met plutôt en cause l'usage qu'on en fait.",
+      "Le premier auteur défend l'écran, la seconde le critique.",
+      "Les deux auteurs condamnent l'écran au même degré.",
+      "La seconde reprend les propos du premier pour les confirmer."
+     ],
+     "r": 0,
+     "exp": "A divergência: causa no suporte (doc 1) x causa no uso (doc 2). 'Là où… , la seconde…' é uma estrutura de oposição ideal para sínteses. As outras opções distorcem as posições (inversão, exagero)."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Un",
+      "bon",
+      "lecteur",
+      "sait",
+      "passer",
+      "de",
+      "l'un",
+      "à",
+      "l'autre"
+     ],
+     "resp": "Un bon lecteur sait passer de l'un à l'autre",
+     "exp": "'L'un' e 'l'autre' retomam os dois gestos mencionados (parcourir et approfondir). Em sínteses, a anáfora 'l'un… l'autre' evita repetições."
+    },
+    {
+     "t": "gap",
+     "q": "Il se pourrait que nous ___ une génération de lecteurs rapides et de penseurs superficiels.",
+     "resp": [
+      "formions"
+     ],
+     "exp": "'Il se pourrait que' exige o subjuntivo. No plural de 'nous', o subjuntivo presente tem a mesma forma do imperfeito do indicativo: que nous formions. A hipótese é marcada pelo condicional ('se pourrait').",
+     "dica": "FORMER, subjonctif présent"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Résumez en deux phrases la différence de position entre les deux documents.",
+     "modelo": "Le premier document affirme que la lecture numérique rend les lecteurs plus superficiels. Le second, en revanche, estime que le support importe moins que l'usage que l'on en fait.",
+     "min": 12,
+     "chave": [
+      "support",
+      "usage",
+      "numérique",
+      "papier",
+      "superficiels",
+      "en revanche",
+      "alors que",
+      "tandis que"
+     ],
+     "exp": "Estruture em duas frases: posição do doc 1, depois 'en revanche / alors que' + posição do doc 2. Reformule com suas palavras, sem copiar trechos."
+    },
+    {
+     "t": "mc",
+     "q": "Que signifie « Le diagnostic est sévère ; il n'est pas pour autant infondé » ?",
+     "op": [
+      "Le diagnostic est dur, mais il repose sur des constats réels.",
+      "Le diagnostic est mensonger.",
+      "Le diagnostic est faux, mais l'auteur l'accepte.",
+      "Le diagnostic est sévère parce qu'il est infondé."
+     ],
+     "r": 0,
+     "exp": "Litote: 'pas pour autant infondé' = fundado, apesar do tom duro. A estrutura 'ne… pas pour autant' marca uma concessão. Cuidado com a dupla negação aparente: 'sévère' e 'infondé' não são sinônimos."
+    },
+    {
+     "t": "gap",
+     "q": "Les deux textes se rejoignent sur un point : la lecture rapide, quand elle devient la seule, ___ l'interprétation.",
+     "resp": [
+      "appauvrit"
+     ],
+     "exp": "Ponto de convergência: ambos reconhecem o empobrecimento da interpretação. O verbo 'appauvrir' (empobrecer) aparece no doc 2; o doc 1 diz 'la nuance s'évapore'. Para sínteses, procure os pontos em comum antes das diferenças.",
+     "dica": "APPAUVRIR"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Reformuler avec précision",
+   "objetivo": "Reformular e resumir ideias do texto com fidelidade, sem repetir as mesmas palavras nem deformar o sentido.",
+   "foco": "Reformulation, paraphrase, nominalisation ; pour… que (concession) ; se borner à",
+   "explicacao": [
+    "Reformular é dizer a mesma coisa com outras palavras, mantendo o sentido exato. No DALF C2, a prova penaliza tanto a cópia do texto quanto a deformação da ideia.",
+    "Técnicas: substituir por sinônimo preciso (se borner à = se limiter à), transformar verbo em nome (restituer → la restitution), inverter a construção (ne… que → seulement).",
+    "Um resumo fiel mantém a tese, os argumentos principais e a ordem lógica; não acrescenta opinião. Evite generalizar ('toujours', 'jamais') se o texto matiza.",
+    "Armadilhas: trocar um modalizador (peut-être → certainement) muda o sentido; usar um parônimo errado distorce a ideia."
+   ],
+   "vocab": [
+    {
+     "en": "à double tranchant",
+     "pt": "de dois gumes"
+    },
+    {
+     "en": "se borner à",
+     "pt": "limitar-se a"
+    },
+    {
+     "en": "le ressassement",
+     "pt": "a ruminação, repetição obsessiva"
+    },
+    {
+     "en": "un deuil",
+     "pt": "um luto"
+    },
+    {
+     "en": "légué / léguer",
+     "pt": "legado / legar"
+    },
+    {
+     "en": "une polémique",
+     "pt": "uma polêmica"
+    },
+    {
+     "en": "irréconciliable",
+     "pt": "irreconciliável"
+    },
+    {
+     "en": "en connaissance de cause",
+     "pt": "com pleno conhecimento"
+    }
+   ],
+   "material": {
+    "titulo": "Mémoire et histoire",
+    "texto": "Toute nation raconte son passé, mais aucune ne le raconte tout entier. La commémoration, ce rituel civique qui fixe à date régulière ce dont il convient de se souvenir, est à cet égard un instrument à double tranchant. Elle protège de l'oubli ; elle ne protège pas de la simplification.\n\nSongeons à la manière dont les monuments se dressent. Il faut qu'un événement paraisse assez grand pour être gravé dans le marbre, mais pas assez dérangeant pour diviser. Le monument aux morts, par exemple, a pu unir des villages entiers autour du deuil précisément parce qu'il évitait la question des responsabilités. Là où la mémoire est douloureuse, la pierre tend à se faire discrète ; là où elle est glorieuse, elle devient volontiers bavarde. Les monuments vieillissent aussi : ce qui paraissait évident à ceux qui les ont érigés devient, deux générations plus tard, un texte à déchiffrer.\n\nLes historiens, eux, n'ont pas pour métier de consoler. Ils cherchent à comprendre comment le passé s'est produit, non à décider ce que le présent doit en retenir. D'où la tension, fréquente, entre le travail de l'historien et les attentes de la mémoire collective : la seconde réclame des héros et des victimes, le premier ne trouve le plus souvent que des hommes pris dans des circonstances qu'ils ne maîtrisaient pas. Aucun témoin, si sincère soit-il, ne voit la totalité de ce qu'il a vécu. Cet écart explique les polémiques que suscite périodiquement tout anniversaire : on reproche à l'historien de salir, alors qu'il se borne à nuancer.\n\nFaut-il en conclure que mémoire et histoire sont irréconciliables ? Telle n'est pas la thèse de l'auteur. À son sens, elles se corrigent mutuellement. La mémoire rappelle à l'histoire que les faits ont été vécus, qu'ils ont laissé des blessures que nul tableau statistique ne rend. L'histoire rappelle à la mémoire que la douleur, pour légitime qu'elle soit, ne suffit pas à établir la vérité. Une société qui renoncerait à l'une ou à l'autre se condamnerait soit à l'amnésie, soit au ressassement.\n\nIl y a plus. Les générations qui n'ont pas connu l'événement ne se rapportent pas à lui comme leurs aînés. Pour elles, la mémoire n'est plus un héritage vécu, mais une matière apprise, transmise par l'école, par les musées, par les films. Ce passage de la mémoire vivante à la mémoire savante n'est pas un appauvrissement : il oblige chacun à choisir ce qu'il veut transmettre, au lieu de subir passivement ce qui lui a été légué. Rien n'est plus fragile qu'un souvenir que personne n'interroge. C'est peut-être là, au fond, que se joue la dignité d'un héritage : dans le fait de pouvoir l'accepter en connaissance de cause, ou le refuser."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle reformulation est la plus fidèle à « la commémoration est un instrument à double tranchant » ?",
+     "op": [
+      "Elle est deux fois plus efficace que l'histoire.",
+      "Elle sert à couper les liens avec le passé.",
+      "Elle présente à la fois des avantages et des risques.",
+      "Elle divise toujours la société."
+     ],
+     "r": 2,
+     "exp": "'À double tranchant' = que corta dos dois lados: tem vantagens e riscos. O texto explicita: protege do esquecimento, mas não da simplificação. Na reformulação, mantenha as duas faces da ideia."
+    },
+    {
+     "t": "gap",
+     "q": "Les historiens ne cherchent pas à salir : ils se ___ à nuancer.",
+     "resp": [
+      "bornent"
+     ],
+     "exp": "'Se borner à' = limitar-se a. Aparece com muita frequência para marcar uma restrição. Atenção ao falso cognato: 'borne' não é 'borne' em português; trata-se de 'limite'.",
+     "dica": "se borner à"
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "Une société qui renoncerait à l'une ou à l'autre se condamnerait soit à l'amnésie, soit au ressassement.",
+     "exp": "Frase longa com condicional. Pronuncie 'renoncerait' (re-non-se-RÊ) e 'ressassement' (re-sa-se-MAN). Faça pausa antes de 'soit à l'amnésie'."
+    },
+    {
+     "t": "mc",
+     "q": "Que désigne le mot « ressassement » dans cette phrase ?",
+     "op": [
+      "Une commémoration solennelle.",
+      "Une répétition obsessionnelle du passé, qui empêche d'en tirer parti.",
+      "Un débat scientifique.",
+      "Un oubli volontaire."
+     ],
+     "r": 1,
+     "exp": "'Ressasser' = repetir sem cessar (ideias, lembranças). Aqui, 'ressassement' é o excesso de memória sem distância crítica; 'amnésie' é o excesso oposto, o esquecimento. A frase opõe os dois extremos."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "La",
+      "douleur",
+      "pour",
+      "légitime",
+      "qu'elle",
+      "soit",
+      "ne",
+      "suffit",
+      "pas",
+      "à",
+      "établir",
+      "la",
+      "vérité"
+     ],
+     "resp": "La douleur pour légitime qu'elle soit ne suffit pas à établir la vérité",
+     "exp": "Estrutura concessiva 'pour + adjetivo + que + subjuntivo' (= por mais legítima que seja). É uma equivalente de 'si légitime qu'elle soit' e de 'quelque légitime que'."
+    },
+    {
+     "t": "gap",
+     "q": "Le passage à la mémoire savante n'est pas un ___ : il oblige chacun à choisir ce qu'il veut transmettre.",
+     "resp": [
+      "appauvrissement"
+     ],
+     "exp": "'Appauvrissement' = empobrecimento. O autor contradiz a ideia de que a memória 'aprendida' seria menos valiosa; ela obriga a escolher, portanto a assumir a herança.",
+     "dica": "APPAUVRIR"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Selon vous, quelle est la différence entre la mémoire et l'histoire ? Répondez en deux ou trois phrases.",
+     "modelo": "La mémoire garde le souvenir vécu et les émotions d'un groupe, alors que l'histoire cherche à comprendre les faits par des méthodes rigoureuses. Les deux se complètent et se corrigent mutuellement.",
+     "min": 12,
+     "chave": [
+      "mémoire",
+      "histoire",
+      "souvenir",
+      "faits",
+      "émotions",
+      "méthode",
+      "complètent",
+      "corrigent"
+     ],
+     "exp": "Retome o par mémoire/histoire do texto: uma vive e sente, a outra explica e verifica. Use 'alors que' para o contraste e 'se compléter / se corriger' para a complementaridade."
+    },
+    {
+     "t": "mc",
+     "q": "Lequel de ces résumés est le plus fidèle au texte ?",
+     "op": [
+      "La mémoire collective doit s'effacer devant l'histoire, seule source de vérité.",
+      "Les monuments disent toujours la vérité sur le passé.",
+      "Mémoire et histoire, malgré leur tension, se corrigent mutuellement et une société a besoin des deux.",
+      "Les historiens et les gouvernements s'opposent systématiquement."
+     ],
+     "r": 2,
+     "exp": "O resumo fiel mantém a tese do autor ('elles se corrigent mutuellement'). As outras opções deturpam: a 0 cai em um extremo, a 1 contradiz o texto (pedra 'discreta' ou 'faladora'), a 3 generaliza sem apoio. Em resumo, evite acrescentar ideias."
+    },
+    {
+     "t": "gap",
+     "q": "La commémoration protège de l'oubli ; elle ne protège pas de la ___.",
+     "resp": [
+      "simplification"
+     ],
+     "exp": "Retomada da tese na abertura: a comemoração protege do esquecimento, mas não da simplificação. Perguntas de reformulação do DALF cobram exatamente essa precisão lexical."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Un dossier à trois voix",
+   "objetivo": "Articular três documentos complementares e perceber a progressão lógica entre eles.",
+   "foco": "Dossier à trois documents : complémentarité, progression, synthèse ; faute de quoi, cela dit",
+   "explicacao": [
+    "Em dossiês com três documentos, a relação raramente é simples. Pode haver duas posições contra uma, três etapas de um raciocínio, ou dois exemplos e um contraponto.",
+    "Identifique a pergunta comum e a função de cada texto: constatar (o que acontece), explicar (por quê), propor (o que fazer), questionar (para quê).",
+    "Conectores úteis: de plus, en outre, par ailleurs (acréscimo); faute de quoi (sem o que); cela dit, toutefois (nuance); en définitive (conclusão).",
+    "Falso cognato: 'il s'agit de' ≠ 'ele age'. 'Il s'agit de + nome/infinitivo' = trata-se de."
+   ],
+   "vocab": [
+    {
+     "en": "l'effet rebond",
+     "pt": "o efeito rebote"
+    },
+    {
+     "en": "la sobriété",
+     "pt": "a sobriedade, o consumo moderado"
+    },
+    {
+     "en": "hors de prix",
+     "pt": "caríssimo, proibitivo"
+    },
+    {
+     "en": "un levier",
+     "pt": "uma alavanca, um meio de ação"
+    },
+    {
+     "en": "ménager (une ressource)",
+     "pt": "poupar, administrar com cuidado"
+    },
+    {
+     "en": "contourner",
+     "pt": "contornar"
+    },
+    {
+     "en": "une incitation",
+     "pt": "um incentivo"
+    },
+    {
+     "en": "faute de quoi",
+     "pt": "sem o que, caso contrário"
+    }
+   ],
+   "material": {
+    "titulo": "Transition écologique : trois voix",
+    "texto": "Document 1 — L'ingénieure\n\nOn entend dire que la technique ne suffira pas. C'est exact, mais l'affirmation sert trop souvent d'excuse pour ne rien faire. Dans l'énergie, les progrès sont considérables : le coût du solaire a chuté de façon spectaculaire en une dizaine d'années, et des batteries que l'on jugeait hors de prix sont devenues banales. Il serait absurde de se priver de ces leviers sous prétexte qu'ils ne résolvent pas tout. Le véritable danger serait de croire qu'une innovation future nous dispensera d'agir dès aujourd'hui. Cela dit, une technologie n'est jamais qu'un outil : elle réduit l'impact de chaque unité produite, mais ne limite pas le nombre d'unités. L'efficacité énergétique des appareils s'améliore depuis des décennies, et pourtant notre consommation totale continue d'augmenter. La technique est une condition nécessaire de la transition ; elle n'en est pas la condition suffisante.\n\nDocument 2 — L'économiste\n\nPourquoi l'efficacité ne réduit-elle pas la consommation ? Parce que ce que l'on économise d'un côté, on le dépense de l'autre : un appareil moins gourmand coûte moins cher à utiliser, donc on l'utilise davantage. Les économistes parlent d'« effet rebond ». Il ne suffit donc pas d'inventer ; il faut aussi donner un prix aux ressources que l'on ménage, faute de quoi les gains de la technique sont annulés par la liberté de consommer. Une taxe sur le carbone, des quotas, des normes contraignantes sont des instruments imparfaits, mais ils ont le mérite de transformer en intérêt individuel ce qui n'est aujourd'hui qu'un impératif collectif. Cependant, le prix seul ne fait pas une politique : mal conçu, il frappe d'abord les plus modestes, et c'est alors la légitimité de toute la transition qui vacille. Il n'existe pas de solution indolore, seulement des répartitions plus ou moins justes des efforts.\n\nDocument 3 — Le philosophe\n\nOn parle de sobriété comme d'un sacrifice, et c'est là le malentendu. La technique offre des moyens, l'économie des incitations, mais ni l'une ni l'autre ne dit à quoi nous tenons. Or une société qui ne sait pas ce qui compte à ses yeux accepte les restrictions comme une punition, et les contourne dès qu'elle le peut. Les sociétés n'ont jamais supporté durablement ce qu'elles n'avaient pas décidé elles-mêmes. La sobriété n'a de chance de durer que si elle est choisie au nom d'une idée de la vie bonne : moins de biens, peut-être, mais plus de temps, de liens, de lenteur. Il ne s'agit pas de renoncer au confort, mais de s'interroger sur ce qui, dans notre confort, relève du besoin et ce qui relève de l'habitude. Cette interrogation est politique avant d'être technique : elle suppose des délibérations que ni un ingénieur ni un économiste ne peuvent mener à notre place."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Quelle relation existe-t-il entre les trois documents ?",
+     "op": [
+      "Ils s'opposent frontalement sur tous les points.",
+      "Ils répètent la même idée sans rien ajouter.",
+      "Le troisième réfute les deux premiers.",
+      "Ils sont complémentaires : chacun ajoute une condition (technique, prix, valeurs) à la transition écologique."
+     ],
+     "r": 3,
+     "exp": "Cada documento acrescenta uma camada: técnica (necessária, não suficiente), preço (corrige o efeito rebote), valores (dá sentido). É uma relação de complementaridade, não de oposição. No DALF C2, perceber o encadeamento é essencial para uma síntese coerente."
+    },
+    {
+     "t": "gap",
+     "q": "Ce que l'on économise d'un côté, on le dépense de l'autre : c'est ce que les économistes appellent l'effet ___.",
+     "resp": [
+      "rebond"
+     ],
+     "exp": "'Effet rebond' = efeito rebote: ganhos de eficiência levam a um consumo maior. É o argumento-chave do doc 2 para explicar por que a técnica sozinha não basta."
+    },
+    {
+     "t": "speak",
+     "modo": "repetir",
+     "q": "Leia em voz alta esta frase.",
+     "frase": "La technique est une condition nécessaire de la transition ; elle n'en est pas la condition suffisante.",
+     "exp": "Oposição 'nécessaire / suffisante'. O pronome 'en' retoma 'de la transition'. Pronuncie 'suffisante' como sü-fi-ZANT e marque o contraste com a entonação."
+    },
+    {
+     "t": "mc",
+     "q": "Qu'ajoute le document 2 au document 1 ?",
+     "op": [
+      "Il explique pourquoi les gains d'efficacité ne réduisent pas la consommation totale et propose un levier : le prix.",
+      "Il propose d'abandonner toute technologie.",
+      "Il contredit l'affirmation que la technique a progressé.",
+      "Il répète le constat du document 1 avec d'autres exemples."
+     ],
+     "r": 0,
+     "exp": "O doc 1 constata o paradoxo (eficiência melhora, consumo total aumenta); o doc 2 o explica (efeito rebote) e propõe um remédio (preço). É complementaridade com progressão lógica."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Il",
+      "ne",
+      "s'agit",
+      "pas",
+      "de",
+      "renoncer",
+      "au",
+      "confort",
+      "mais",
+      "de",
+      "s'interroger",
+      "sur",
+      "ses",
+      "besoins"
+     ],
+     "resp": "Il ne s'agit pas de renoncer au confort mais de s'interroger sur ses besoins",
+     "exp": "'Il s'agit de' é impessoal e sempre seguido de infinitivo ou nome, nunca de sujeito pessoal. A estrutura 'ne… pas de… mais de…' opõe duas ações. Atenção ao falso cognato: 'il s'agit de' não é 'ele age'."
+    },
+    {
+     "t": "gap",
+     "q": "Un prix mal conçu frappe d'abord les plus modestes : c'est alors la ___ de toute la transition qui vacille.",
+     "resp": [
+      "légitimité",
+      "legitimite"
+     ],
+     "exp": "'Légitimité' = aceitação política e moral de uma decisão. O doc 2 alerta que um preço injusto fragiliza o apoio popular. Cuidado: substantivo feminino em -é (la légitimité).",
+     "dica": "LÉGITIME"
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Responda em francês, em duas ou três frases.",
+     "frase": "Parmi les trois approches (la technique, le prix, les valeurs), laquelle vous paraît la plus décisive ? Justifiez en deux ou trois phrases.",
+     "modelo": "À mon sens, les valeurs sont décisives, car sans adhésion de la société, les mesures techniques et fiscales sont contournées. Cependant, elles ne suffisent pas sans outils concrets.",
+     "min": 12,
+     "chave": [
+      "valeurs",
+      "technique",
+      "prix",
+      "société",
+      "adhésion",
+      "cependant",
+      "décisif",
+      "transition"
+     ],
+     "exp": "Escolha uma e justifique com um argumento dos documentos; reconheça os limites das outras ('cependant'). Mostrar nuance é bem avaliado."
+    },
+    {
+     "t": "mc",
+     "q": "Quel est le « malentendu » dont parle le document 3 ?",
+     "op": [
+      "Ignorer le rôle des ingénieurs.",
+      "Penser que les économistes ont tort.",
+      "Croire que la technique résoudra tout.",
+      "Considérer la sobriété comme un sacrifice ou une punition."
+     ],
+     "r": 3,
+     "exp": "O filósofo diz: 'On parle de sobriété comme d'un sacrifice, et c'est là le malentendu'. A sobriedade só dura se for escolhida por convicção. Cuidado: as opções 0 e 2 resumem outros documentos."
+    },
+    {
+     "t": "gap",
+     "q": "La technique réduit l'impact de chaque unité produite, mais ne ___ pas le nombre d'unités.",
+     "resp": [
+      "limite"
+     ],
+     "exp": "'Limiter' = restringir. A frase opõe o impacto por unidade ('réduit') ao número de unidades. Não confundir 'limiter' com 'délimiter' (demarcar)."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Simulado DALF C2 : dossier de trois documents",
+   "objetivo": "Treinar a compreensão de um dossiê de três documentos no estilo do DALF C2 (tese, implícito, ironia, relação entre documentos).",
+   "foco": "Simulation : dossier de 3 documents ; thèse, ironie, implicite, relations entre documents",
+   "explicacao": [
+    "Formato: um dossiê com três documentos (artigo de fundo, extrato de ensaio, tribuna irônica), seguido de perguntas sobre cada documento e sobre a relação entre eles.",
+    "Estratégia: leia cada documento resumindo-o em uma frase (tese + argumento principal + tom). Depois compare: que documentos concordam, se opõem ou se completam?",
+    "Atenção ao implícito, à ironia (doc 3) e às nuanças (condicionais, 'moins… que…'). Responda com suas palavras, sem copiar o texto.",
+    "Na prova real (3h30 no total), a compreensão do dossiê prepara a produção de um texto estruturado de cerca de 700 palavras: note já as ideias que servirão à sua síntese."
+   ],
+   "vocab": [
+    {
+     "en": "une supercherie",
+     "pt": "uma fraude, um logro"
+    },
+    {
+     "en": "jalonné de",
+     "pt": "pontuado por"
+    },
+    {
+     "en": "à y regarder de près",
+     "pt": "olhando de perto"
+    },
+    {
+     "en": "usurper",
+     "pt": "usurpar"
+    },
+    {
+     "en": "le rabais",
+     "pt": "o desconto, a redução de preço"
+    },
+    {
+     "en": "que je sache",
+     "pt": "que eu saiba"
+    },
+    {
+     "en": "une antiphrase",
+     "pt": "antífrase (dizer o contrário)"
+    },
+    {
+     "en": "s'ensuivre",
+     "pt": "decorrer, resultar"
+    }
+   ],
+   "material": {
+    "titulo": "Art et intelligence artificielle : le dossier",
+    "texto": "Document 1 — Le tableau et la machine (article de fond)\n\nLorsque, voici peu, une image produite par un programme informatique a remporté un prix dans un concours d'arts plastiques, la polémique a éclaté avec une rapidité qui en dit long sur les inquiétudes du milieu. Les uns y ont vu une supercherie, les autres l'annonce d'une ère nouvelle. À y regarder de près, le débat porte moins sur la qualité de l'image, que nul n'a vraiment contestée, que sur une question plus ancienne : qu'est-ce qui fait l'œuvre ?\n\nLes défenseurs de la technique font valoir que l'histoire de l'art est jalonnée d'innovations d'abord jugées indignes : la photographie, accusée de tuer la peinture, a fini par la libérer de l'obligation de ressembler. Pourquoi la machine ferait-elle exception ? Leurs adversaires répondent qu'un appareil photographique capte un réel, alors qu'un programme recombine des œuvres existantes, aspirées sans consentement dans d'immenses bases de données. Le problème serait donc moins esthétique que juridique et moral.\n\nReste que la frontière est floue. Le peintre qui s'inspire de ses prédécesseurs fait-il autre chose que recombiner ? Les spécialistes n'ont pas tranché, et il n'est pas certain qu'ils y parviennent : sans doute faudra-t-il, comme souvent, que les usages précèdent les définitions.\n\nDocument 2 — Extrait d'un essai sur la création\n\nOn prétend que la machine ne crée pas, qu'elle se borne à imiter. L'objection est moins solide qu'il n'y paraît, car elle suppose que nous sachions ce que créer veut dire, et nous l'ignorons. Nous nommons création le moment où quelque chose surgit que rien ne laissait prévoir ; mais ce moment, si nous l'examinons de près, s'enracine toujours dans des matériaux hérités. Le poète n'invente pas la langue qu'il emploie.\n\nCe n'est donc pas dans l'origine des éléments qu'il faut chercher la différence, mais dans ce qu'on pourrait appeler la nécessité intérieure. L'artiste ne produit pas parce qu'on le lui demande : il produit parce qu'il ne peut faire autrement, et c'est cette contrainte ressentie, cette urgence, qui donne à l'œuvre son poids. Une machine, tant qu'elle ne risque rien, ne saurait connaître d'urgence. Elle peut aligner des formes d'une beauté troublante ; elle ne peut pas y mettre en jeu sa vie.\n\nIl ne s'ensuit pas que ses productions soient sans valeur. Le spectateur, lui, a toujours le pouvoir de projeter du sens sur ce qu'il regarde, et l'on a vu des nuages, des taches de rouille, des pierres veinées émouvoir des esprits très cultivés. Le danger n'est pas que la machine usurpe la place de l'artiste ; c'est que nous perdions l'habitude de demander, devant une image, qui l'a faite et pourquoi.\n\nDocument 3 — Tribune d'un illustrateur\n\nRéjouissons-nous : les illustrateurs vont enfin pouvoir se reposer. Pendant des années, nous avons eu la mauvaise habitude de passer des nuits sur nos tables à dessin pour des tarifs que le premier stagiaire aurait refusés ; voici qu'une machine, aimable et inépuisable, nous propose de nous remplacer, gratuitement ou presque. Qu'importe si elle a appris son métier en regardant les nôtres : n'a-t-on pas toujours dit que l'imitation était la forme la plus sincère de la flatterie ?\n\nLes éditeurs, que l'on dit soucieux de culture, ont accueilli la nouveauté avec un enthousiasme dont la sincérité se mesure au rabais qu'ils espèrent. On me répond que je ne comprends rien au progrès, que les métiers changent, que le tisserand d'hier est devenu l'ingénieur d'aujourd'hui. Fort bien. Mais le tisserand n'avait pas, que je sache, fourni lui-même les métiers qui le remplaçaient.\n\nJe ne demande pas que l'on interdise la technique. Je demande seulement que l'on cesse de nous présenter comme un progrès ce qui est, d'abord, un transfert de valeur : de ceux qui ont créé les images vers ceux qui possèdent les machines. Si ce transfert est juste, qu'on nous l'explique ; s'il ne l'est pas, qu'on ait au moins la décence de ne pas l'appeler poésie."
+   },
+   "exercicios": [
+    {
+     "t": "mc",
+     "q": "Document 1. Selon l'auteur, quel est l'enjeu central de la polémique née du prix décerné à l'image ?",
+     "op": [
+      "L'interdiction de l'usage des ordinateurs dans les concours.",
+      "Le montant de la récompense obtenue.",
+      "La qualité technique de l'image, jugée médiocre.",
+      "La question ancienne de ce qui fait l'œuvre, plus que la qualité de l'image elle-même."
+     ],
+     "r": 3,
+     "exp": "O texto diz que o debate 'porte moins sur la qualité de l'image, que nul n'a vraiment contestée, que sur une question plus ancienne'. No DALF C2, a pergunta tende a pedir a questão de fundo, não o fato anedótico. A estrutura 'moins… que…' dá a hierarquia."
+    },
+    {
+     "t": "mc",
+     "q": "Document 1. En évoquant la photographie « accusée de tuer la peinture » mais qui « a fini par la libérer de l'obligation de ressembler », les défenseurs de la technique veulent suggérer que…",
+     "op": [
+      "la peinture doit toujours ressembler à la réalité.",
+      "la machine est supérieure à l'appareil photographique.",
+      "la photographie a effectivement détruit la peinture.",
+      "une innovation d'abord jugée menaçante peut, à terme, transformer l'art de façon féconde."
+     ],
+     "r": 3,
+     "exp": "É um argumento por analogia histórica, com um implícito: a máquina pode, como a fotografia, libertar a arte. Atenção ao verbo 'libérer', que mostra um efeito positivo; a opção 0 retoma só a acusação inicial."
+    },
+    {
+     "t": "gap",
+     "q": "Les adversaires de la technique soutiennent qu'un programme ___ des œuvres existantes, aspirées sans consentement.",
+     "resp": [
+      "recombine"
+     ],
+     "exp": "'Recombiner' (verbo do doc 1) opõe a máquina à fotografia, que 'capte un réel'. Perguntas de reformulação lexical pedem a palavra exata do texto ou um sinônimo preciso.",
+     "dica": "RECOMBINER"
+    },
+    {
+     "t": "mc",
+     "q": "Document 2. L'auteur écrit que la machine « ne peut pas y mettre en jeu sa vie ». Cette formule signifie que…",
+     "op": [
+      "la machine ne vit pas assez longtemps.",
+      "la machine peut détruire l'artiste.",
+      "la machine ne sait pas peindre.",
+      "la machine ne risque rien dans ce qu'elle produit et ne connaît donc pas la nécessité intérieure de l'artiste."
+     ],
+     "r": 3,
+     "exp": "'Mettre en jeu sa vie' = arriscar-se existencialmente. Liga-se à 'nécessité intérieure' e à urgência do artista. É uma metáfora: 'vie' não é literal. Responder 'a máquina não sabe pintar' ignora o argumento filosófico."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Répondez en français, en deux ou trois phrases, sans copier le texte.",
+     "frase": "Selon le document 2, qu'est-ce qui distingue l'artiste de la machine ? Répondez en deux ou trois phrases.",
+     "modelo": "Selon le document 2, l'artiste crée par nécessité intérieure, parce qu'il ne peut pas faire autrement, alors que la machine ne risque rien et ne connaît pas l'urgence. C'est cette contrainte ressentie qui donne du poids à l'œuvre.",
+     "min": 14,
+     "chave": [
+      "nécessité",
+      "urgence",
+      "contrainte",
+      "risque",
+      "artiste",
+      "machine",
+      "intérieure",
+      "œuvre"
+     ],
+     "exp": "Resuma com suas palavras (sem copiar) a ideia de 'nécessité intérieure'. Use 'selon le document 2' para atribuir a ideia e 'alors que' para o contraste."
+    },
+    {
+     "t": "mc",
+     "q": "Document 3. La première phrase (« Réjouissons-nous : les illustrateurs vont enfin pouvoir se reposer ») est…",
+     "op": [
+      "une description neutre d'une situation professionnelle.",
+      "une antiphrase qui dénonce la menace pesant sur les emplois des illustrateurs.",
+      "une annonce d'une réduction du temps de travail.",
+      "une invitation sincère à fêter le progrès."
+     ],
+     "r": 1,
+     "exp": "Antífrase típica: o tom festivo contrasta com a realidade (ser substituído, receber menos). Os indícios: 'enfin', 'aimable et inépuisable', 'gratuitement ou presque'. Quem lê ao pé da letra erra todo o documento."
+    },
+    {
+     "t": "order",
+     "palavras": [
+      "Le",
+      "tisserand",
+      "n'avait",
+      "pas",
+      "fourni",
+      "lui-même",
+      "les",
+      "métiers",
+      "qui",
+      "le",
+      "remplaçaient"
+     ],
+     "resp": "Le tisserand n'avait pas fourni lui-même les métiers qui le remplaçaient",
+     "exp": "Argumento irônico do doc 3: o tecelão não financiou nem forneceu as máquinas que o substituíram, ao passo que o ilustrador forneceu (com suas obras) o material de aprendizado da IA. 'Lui-même' reforça a ideia."
+    },
+    {
+     "t": "mc",
+     "q": "Quelle relation y a-t-il entre le document 1 et le document 2 ?",
+     "op": [
+      "Le document 2 approfondit philosophiquement une question que le document 1 laisse ouverte : la différence entre recombiner et créer.",
+      "Le document 2 contredit tous les faits donnés par le document 1.",
+      "Le document 2 résume le document 1.",
+      "Le document 2 traite d'un sujet sans rapport avec le premier."
+     ],
+     "r": 0,
+     "exp": "O doc 1 termina perguntando se o pintor que se inspira dos predecessores faz outra coisa que 'recombiner'; o doc 2 responde pela 'nécessité intérieure'. É complementaridade, com aprofundamento teórico. Cuidado com a opção 3: não é um resumo."
+    },
+    {
+     "t": "gap",
+     "q": "L'objection est moins solide qu'il n'y ___, car elle suppose que nous sachions ce que créer veut dire.",
+     "resp": [
+      "paraît",
+      "parait"
+     ],
+     "exp": "'Moins solide qu'il n'y paraît' = menos sólida do que parece. Observe o 'ne' explétivo e o pronome 'y' (= à première vue). Expressão fixa de nuance: 'plus/moins… qu'il n'y paraît'.",
+     "dica": "PARAÎTRE"
+    },
+    {
+     "t": "mc",
+     "q": "Quelle est la divergence principale entre le document 2 et le document 3 ?",
+     "op": [
+      "Le document 3 est plus technique que le document 2.",
+      "Le document 2 s'interroge sur la nature de la création, tandis que le document 3 conteste la répartition économique de la valeur produite.",
+      "Les deux documents se contredisent sur les faits.",
+      "Le document 2 défend les machines et le document 3 les condamne pour des raisons esthétiques."
+     ],
+     "r": 1,
+     "exp": "Doc 2 = questão filosófica (o que é criar?); doc 3 = questão econômica e moral (transferência de valor). Não há contradição frontal: são ângulos diferentes. Opções 1 e 2 deformam as posições."
+    },
+    {
+     "t": "mc",
+     "q": "Quel point commun relie les trois documents ?",
+     "op": [
+      "Tous trois contestent la qualité esthétique des productions de la machine.",
+      "Tous trois interrogent la légitimité de la machine face aux créateurs humains, chacun sous un angle différent (définition, philosophie, économie).",
+      "Tous trois recommandent d'interdire la technique.",
+      "Tous trois ont le même ton ironique."
+     ],
+     "r": 1,
+     "exp": "Ponto comum: a legitimidade da máquina diante do criador. Ângulos: jornalístico/definição (doc 1), filosófico (doc 2), econômico e polêmico (doc 3). O doc 3 não condena a técnica ('Je ne demande pas que l'on interdise la technique'); só o doc 3 é irônico."
+    },
+    {
+     "t": "speak",
+     "modo": "responder",
+     "q": "Répondez en français, en deux ou trois phrases, en vous appuyant sur les documents.",
+     "frase": "En deux ou trois phrases, quelle est votre opinion sur l'usage de l'intelligence artificielle dans la création artistique ?",
+     "modelo": "À mon sens, l'intelligence artificielle peut être un outil utile, à condition de respecter le travail des artistes dont elle s'inspire. Il faudrait aussi que les créateurs soient rémunérés lorsque leurs œuvres servent à entraîner ces programmes.",
+     "min": 14,
+     "chave": [
+      "intelligence artificielle",
+      "artistes",
+      "outil",
+      "création",
+      "œuvres",
+      "rémunérés",
+      "droits",
+      "respect"
+     ],
+     "exp": "Em uma resposta de C2, dê sua posição, uma condição e uma proposta. Use 'à condition que / de' e 'il faudrait que + subjuntivo'. Mostre que você conhece os argumentos dos documentos."
+    },
+    {
+     "t": "gap",
+     "q": "Le danger n'est pas que la machine usurpe la place de l'artiste ; c'est que nous ___ l'habitude de demander, devant une image, qui l'a faite et pourquoi.",
+     "resp": [
+      "perdions"
+     ],
+     "exp": "'C'est que nous perdions' = subjuntivo presente de 'perdre' (mesma forma do imperfeito do indicativo). A estrutura 'Le danger n'est pas que… c'est que…' exige o subjuntivo nos dois membros.",
+     "dica": "PERDRE, subjonctif présent"
+    }
+   ]
+  }
+ ]
+}

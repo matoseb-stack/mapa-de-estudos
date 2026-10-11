@@ -287,7 +287,8 @@
      "resp": [
       "soulèvent",
       "posent",
-      "révèlent"
+      "révèlent",
+      "suscitent"
      ],
      "exp": "Soulever une controverse = levantar uma polêmica."
     },
@@ -419,7 +420,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo natural e as liaisons.",
      "frase": "Le dossier qui m'a été remis comporte trois documents consacrés à la mobilité urbaine.",
-     "exp": "Trois documents: liaison 'trois‿documents' e 'consacrés‿à'. Um ritmo calmo."
+     "exp": "Liaison obrigatória em 'trois‿documents'; não há liaison em 'consacrés à'. Mantenha um ritmo calmo."
     },
     {
      "t": "mc",
@@ -586,7 +587,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo natural e as liaisons.",
      "frase": "Dans un premier temps, j'examinerai les causes ; j'en viendrai ensuite aux conséquences.",
-     "exp": "Dans‿un‿premier temps: liaisons. Voz sobe em 'causes', desce em 'conséquences'."
+     "exp": "Liaison em 'dans‿un'; sem liaison em 'premier temps'. A voz sobe em 'causes' e desce em 'conséquences'."
     },
     {
      "t": "mc",
@@ -1128,7 +1129,8 @@
      "t": "gap",
      "q": "Les autorités auraient ___ agir plus vite. (regret)",
      "resp": [
-      "dû"
+      "dû",
+      "pu"
      ],
      "exp": "Devoir → dû (particípio, com acento circunflexo)."
     },
@@ -1262,7 +1264,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo natural e as liaisons.",
      "frase": "Selon l'étude citée dans le document trois, près de deux tiers des jeunes lisent sur écran.",
-     "exp": "Deux tiers: liaison fraca; 'près de' soa 'PRÈ de'. Voz desce em 'écran'."
+     "exp": "Deux tiers: sem liaison (tiers começa com consoante). 'Près de' soa /pʁɛ də/. A voz desce em 'écran'."
     },
     {
      "t": "mc",
@@ -1361,7 +1363,7 @@
     "Transição = resumo da parte que acaba + anúncio da próxima: Après avoir examiné les causes, j'en viens maintenant aux conséquences.",
     "Fórmulas: Cela m'amène à..., Passons à..., Il convient désormais d'aborder..., Venons-en à...",
     "Après + infinitivo passado (nunca infinitivo simples): Après avoir lu, après être arrivé, après m'être préparé. 'Après lire' é erro.",
-    "Il convient de = é preciso (não 'convém' casual): registro formal."
+    "Il convient de = convém, é preciso (registro formal)."
    ],
    "vocab": [
     {
@@ -1472,7 +1474,10 @@
       "amène",
       "conduit",
       "mène",
-      "porte"
+      "porte",
+      "pousse",
+      "invite",
+      "incite"
      ],
      "exp": "Amener/conduire/mener/porter à penser que."
     },
@@ -1704,7 +1709,7 @@
     "Depois do exposé, o júri discute com você por cerca de 20 min. Ele pode contestar, pedir exemplos ou mudar de ângulo. Nunca responda só 'oui' ou 'non'.",
     "Reformule antes de responder: Si je vous suis bien, vous me demandez si... Se não entendeu: Pourriez-vous reformuler / préciser ce point ?",
     "Para ganhar tempo sem hesitar: C'est une question intéressante, laissez-moi y réfléchir un instant. Evite euh... bah... je sais pas.",
-    "Verbo pronominal e subjuntivo: Je ne pense pas que la mondialisation ait appauvri les cultures."
+    "Subjuntivo passado: Je ne pense pas que la mondialisation ait appauvri les cultures (ait + particípio, para uma ação anterior)."
    ],
    "vocab": [
     {
@@ -1777,7 +1782,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo natural e as liaisons.",
      "frase": "Si je vous suis bien, vous me demandez si cette solution est réellement applicable.",
-     "exp": "Liaison 'vous‿me', 'est‿réellement'. Sem pressa."
+     "exp": "Não há liaison em 'vous me' nem em 'est réellement' (a palavra seguinte começa com consoante). Mantenha o ritmo regular e sem pressa."
     },
     {
      "t": "mc",
@@ -1814,7 +1819,9 @@
      "resp": [
       "préciser",
       "clarifier",
-      "expliciter"
+      "expliciter",
+      "détailler",
+      "reformuler"
      ],
      "exp": "Préciser/clarifier/expliciter ce point = detalhar esse ponto."
     },
@@ -1948,7 +1955,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo natural e as liaisons.",
      "frase": "Je vous accorde ce point, il n'en reste pas moins que la situation est plus complexe.",
-     "exp": "Il n'en reste: liaison 'n'en‿reste'. Pausa após 'point'."
+     "exp": "Sem liaison em 'n'en reste' (reste começa com consoante). 'Moins' = /mwɛ̃/. Pausa após 'point'."
     },
     {
      "t": "mc",
@@ -2120,7 +2127,7 @@
      "modo": "repetir",
      "q": "Repita a frase com clareza, ritmo natural e as liaisons.",
      "frase": "Autrement dit, les enjeux économiques ont souvent des conséquences humaines considérables.",
-     "exp": "Faça as liaisons 'les‿enjeux' e 'économiques‿ont'; NÃO faça liaison em 'conséquences humaines'."
+     "exp": "Liaison obrigatória em 'les‿enjeux'. Em 'économiques ont' ela é facultativa e rara; em 'conséquences humaines' não se faz. Ritmo regular."
     },
     {
      "t": "mc",
@@ -2271,12 +2278,12 @@
      "q": "Le jury vous demande un exemple personnel que vous n'avez pas. Quelle est la meilleure réaction ?",
      "op": [
       "Dire que la question est hors sujet.",
-      "Donner un exemple réaliste ou observé, sans le présenter comme inventé.",
+      "Donner un exemple plausible tiré de ce que l'on a lu, observé ou entendu, en restant honnête sur sa source.",
       "Rester silencieux.",
       "Changer de sujet."
      ],
      "r": 1,
-     "exp": "Dê um exemplo plausível e vivido, mesmo que simples."
+     "exp": "Dê um exemplo plausível, tirado do dossiê ou da sua experiência, sendo honesto sobre a fonte. Silêncio ou fuga de assunto custam pontos."
     },
     {
      "t": "gap",
@@ -2549,7 +2556,7 @@
      "modo": "responder",
      "q": "Conceda, nuance e responda com subjuntivo. Cerca de 50 segundos.",
      "frase": "Le jury vous demande : « Pensez-vous que l'on doive limiter les salaires dans le sport professionnel ? »",
-     "modelo": "Je me permets de nuancer la question. Certes, il est probable que des plafonds corrigeraient certains excès, mais je ne suis pas sûr qu'on puisse les appliquer partout. Bien que cette idée soit séduisante, elle suppose une règle commune à plusieurs pays. À mon sens, il vaudrait mieux réguler les droits télévisés.",
+     "modelo": "Je me permets de nuancer la question. Certes, il est possible que des plafonds corrigent certains excès, mais je ne suis pas sûr qu'on puisse les appliquer partout. Bien que cette idée soit séduisante, elle suppose une règle commune à plusieurs pays. À mon sens, il vaudrait mieux réguler les droits télévisés.",
      "min": 40,
      "chave": [
       "je me permets de nuancer",
