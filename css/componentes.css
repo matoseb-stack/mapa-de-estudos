@@ -159,7 +159,11 @@
 .ex{display:flex;flex-direction:column;gap:12px}
 .ex-tipo{display:flex;align-items:center;gap:8px;font-size:.74rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
 .ex-tipo>span{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--sunken);font-size:.85rem}
-.ex-ouvir{margin-left:auto;text-transform:none;letter-spacing:0}
+.ex-tipo-acoes{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.ex-ouvir,.ex-dica{text-transform:none;letter-spacing:0}
+.ex-ia{padding:12px 14px;border-radius:var(--r-sm);border:1px solid color-mix(in srgb,var(--accent) 45%,var(--line));background:color-mix(in srgb,var(--accent) 7%,var(--surface));font-size:.92rem}
+.ex-ia p{margin:6px 0 0}.ex-ia ol{margin:4px 0 0;padding-left:20px}.ex-ia li{margin:2px 0}
+.ex-ia-t{font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--accent-ink,var(--accent))}
 .ex-q{font-size:1.1rem;line-height:1.55;margin:0}
 .ex-ops{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 .ex-op{flex-direction:row;align-items:center;gap:10px}

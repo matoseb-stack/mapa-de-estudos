@@ -4,7 +4,9 @@
      gap    escrever a palavra que falta
      order  montar a frase clicando nas palavras
      speak  falar no idioma da aula (reconhecimento de voz do navegador); "repetir" uma frase ou "responder" uma pergunta
-   Uso: LAComp.Exercicio.render(el, ex, { app, aoResultado(ok, info), aoContinuar(), rotuloContinuar })
+   Uso: LAComp.Exercicio.render(el, ex, { app, aoResultado(ok, info), aoContinuar(), rotuloContinuar, dica })
+   dica (opcional): async (ex, { respondido, ok, info }) => { contexto, caminho: [], porque, erro } — mostra o botão
+   "Dica da IA" (antes de responder: caminho sem a resposta; depois: explica a resposta e o erro).
    Também exporta: falar(texto), pararFala(), vozDisponivel(), reconhecimentoDisponivel() e
    idioma("fr-FR") para trocar a voz e o microfone (padrão: inglês britânico). */
 (function () {
@@ -15,6 +17,7 @@
   // "ecole" = "école": usado para aceitar resposta sem acento (com aviso) e na fala
   const semAcento = s => norm(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/œ/g, "oe").replace(/æ/g, "ae");
   let LINGUA = "en-GB";
+  const NOME_LINGUA = { en: "inglês", fr: "francês", es: "espanhol", de: "alemão", it: "italiano" };
   function idioma(lang) { if (lang && lang !== LINGUA) { LINGUA = lang; vozEn = null; escolherVoz(); } return LINGUA; }
 
   /* ---------- voz (texto → fala) ---------- */
@@ -103,6 +106,8 @@
     const app = op.app || {}, tipo = ex.t;
     let respondido = false;
     const ouvirBtn = ex.ouvir ? `<button type="button" class="btn sm ex-ouvir" data-ex="ouvir">▶ Ouvir</button>` : "";
+    const dicaBtn = op.dica ? `<button type="button" class="btn sm ex-dica" data-ex="dica" title="A IA explica o assunto e o caminho até a resposta">💡 Dica da IA</button>` : "";
+    let ultimo = { respondido: false };
     let corpo = "";
     // as alternativas aparecem em ordem sorteada (a certa não fica sempre na mesma letra)
     const ordem = tipo === "mc" ? embaralhar(ex.op.map((_, k) => k)) : [];
@@ -113,8 +118,9 @@
         <button type="button" class="btn sm" data-ex="modelo">▶ ${ex.modo === "repetir" ? "Ouvir a pronúncia" : "Ouvir a pergunta"}</button></div>
         <div class="ex-mic"><button type="button" class="btn primary ex-mic-b" data-ex="mic">🎙 Toque e fale</button><span class="small muted" data-ouvindo></span></div>`;
     el.innerHTML = `<div class="ex" data-tipo="${tipo}">
-      <div class="ex-tipo"><span>${ICONE[tipo]}</span>${ROTULO[tipo]}${ouvirBtn}</div>
+      <div class="ex-tipo"><span>${ICONE[tipo]}</span>${ROTULO[tipo]}<span class="ex-tipo-acoes">${dicaBtn}${ouvirBtn}</span></div>
       ${corpo}
+      <div class="ex-ia" hidden aria-live="polite"></div>
       <div class="ex-fb" hidden></div>
       <div class="row ex-acoes">${tipo === "gap" || tipo === "order" ? `<button type="button" class="btn primary" data-ex="verificar">Verificar</button>` : ""}
         ${tipo === "speak" ? `<button type="button" class="btn ghost sm" data-ex="pular-fala">Não posso falar agora</button>` : ""}
@@ -133,7 +139,33 @@
         ${ex.exp ? `<p class="small muted">${esc(ex.exp)}</p>` : ""}`;
       el.querySelectorAll("input,.ex-op,.ex-chip,[data-ex=verificar],[data-ex=mic],[data-ex=pular-fala]").forEach(x => { x.disabled = true; });
       const c = $('[data-ex="continuar"]'); c.hidden = false; setTimeout(() => c.focus({ preventScroll: true }), 30);
+      ultimo = { respondido: true, ok, info };
+      const db = $('[data-ex="dica"]'); if (db) db.textContent = "💡 Entender com a IA";
       if (op.aoResultado) op.aoResultado(ok, info);
+    }
+    // dica da IA: antes de responder mostra o caminho (sem a resposta); depois explica a resposta
+    if (op.dica) {
+      const cache = {};
+      $('[data-ex="dica"]').onclick = async () => {
+        const box = $(".ex-ia"), fase = ultimo.respondido ? "depois" : "antes", b = $('[data-ex="dica"]');
+        if (!box.hidden && box.dataset.fase === fase) { box.hidden = true; return; }
+        box.hidden = false; box.dataset.fase = fase; if (fase === "depois") box.dataset.depois = "1";
+        if (cache[fase]) { box.innerHTML = cache[fase]; return; }
+        box.innerHTML = `<div class="row" style="gap:8px"><span class="spinner"></span><span class="small muted">A IA está preparando ${fase === "antes" ? "uma dica (sem entregar a resposta)" : "a explicação"}…</span></div>`;
+        b.disabled = true;
+        try {
+          const r = await op.dica(ex, ultimo);
+          const txt = x => esc(String(x || "")).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+          cache[fase] = `<div class="ex-ia-t">💡 ${fase === "antes" ? "Dica da IA" : "Explicação da IA"}</div>
+            ${r.contexto ? `<p><b>📚 O que você está estudando:</b> ${txt(r.contexto)}</p>` : ""}
+            ${(r.caminho || []).length ? `<p><b>🧭 Como chegar na resposta:</b></p><ol>${r.caminho.map(x => `<li>${txt(x)}</li>`).join("")}</ol>` : ""}
+            ${r.porque ? `<p><b>🤔 Por quê:</b> ${txt(r.porque)}</p>` : ""}
+            ${r.erro ? `<p><b>✏️ Sobre a sua resposta:</b> ${txt(r.erro)}</p>` : ""}`;
+          if (box.dataset.fase === fase) box.innerHTML = cache[fase];
+        } catch (e) {
+          box.innerHTML = `<p class="small muted">${esc((e && e.msg) || "A IA não conseguiu responder agora. Tente de novo daqui a pouco.")}</p>`;
+        } finally { b.disabled = false; }
+      };
     }
 
     // marcar
@@ -172,7 +204,7 @@
         mic.onclick = () => concluir(true, { semReconhecimento: true });
       } else mic.onclick = async () => {
         if (mic.dataset.ouvindo) { try { ouvir.atual && ouvir.atual.stop(); } catch (e) {} return; }
-        pararFala(); mic.dataset.ouvindo = "1"; mic.textContent = "■ Parar"; mic.classList.add("gravando"); st.textContent = "Ouvindo… fale agora em inglês.";
+        pararFala(); mic.dataset.ouvindo = "1"; mic.textContent = "■ Parar"; mic.classList.add("gravando"); st.textContent = `Ouvindo… fale agora em ${NOME_LINGUA[LINGUA.slice(0, 2)] || "voz alta"}.`;
         try {
           const r = await ouvir(t => { st.textContent = "“" + t.trim() + "”"; });
           delete mic.dataset.ouvindo; mic.classList.remove("gravando"); mic.textContent = "🎙 Tentar de novo";

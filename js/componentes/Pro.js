@@ -155,6 +155,7 @@
 
   const MOTIVOS = {
     mentoria: ["Você usou as 3 perguntas grátis de hoje", "Com o Pro, a mentoria com IA não tem limite. Amanhã você ganha mais 3 perguntas grátis."],
+    dica: ["Você usou as 3 perguntas grátis de hoje", "As dicas da IA nos exercícios e a mentoria dividem as 3 perguntas grátis por dia. Com o Pro, peça quantas dicas quiser."],
     idiomas: ["Esta aula faz parte do Pro", "No plano grátis você faz o nivelamento e a aula 1 de cada trilha. Com o Pro, libera as 720 aulas de Inglês e Francês, do A1 ao C2, e os simulados."]
   };
   function paywall(app, motivo) {

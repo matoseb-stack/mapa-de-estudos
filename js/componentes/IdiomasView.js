@@ -299,7 +299,8 @@
           <div class="prog"><i style="width:${i / tot * 100}%"></i></div><div data-ex-area></div></div></div>`;
       ligar();
       Ex().render(container.querySelector("[data-ex-area]"), ex, {
-        app, rotuloContinuar: i === tot - 1 ? (skill === "writing" || skill === "speaking" ? "Ir para a tarefa" : "Ver resultado") : "Próximo",
+        app, dica: app.dicaIA ? (x, est) => pedirDica(app, { nv, skill, a, m, c }, x, est) : null,
+        rotuloContinuar: i === tot - 1 ? (skill === "writing" || skill === "speaking" ? "Ir para a tarefa" : "Ver resultado") : "Próximo",
         aoResultado: (ok, info) => { res.total++; if (info.pulado) res.pulados++; if (ok) res.ok++; },
         aoContinuar: () => { i++; if (i < tot) exercicio(); else if (skill === "writing" || skill === "speaking") tarefa(); else fim(); scrollTo(0, 0); }
       });
@@ -370,6 +371,39 @@
     intro(); scrollTo(0, 0);
   }
   const fmt = x => `${Math.floor(x / 60)}:${String(Math.floor(x % 60)).padStart(2, "0")}`;
+
+  /* ---------- dica da IA: contextualiza o exercício, mostra o caminho e explica o porquê ---------- */
+  async function pedirDica(app, aula, ex, est) {
+    const I = IN(), { nv, skill, a, m, c } = aula, corta = (t, n) => { t = String(t || ""); return t.length > n ? t.slice(0, n) + "…" : t; };
+    const material = skill === "reading" ? `Texto da aula ("${m.titulo || ""}"):\n${corta(m.texto, 2600)}`
+      : skill === "listening" ? `Transcrição do áudio da aula ("${m.titulo || ""}"; o estudante só ouve, não lê):\n${corta((m.falas || []).map(f => `${f.p}: ${f.t}`).join("\n"), 2600)}`
+      : `Tarefa da aula: ${corta(m.tarefa, 900)}`;
+    let exercicio, certa;
+    if (ex.t === "mc") { exercicio = `Questão de marcar: ${ex.q}\nAlternativas: ${ex.op.map(o => `"${o}"`).join(" | ")}`; certa = ex.op[ex.r]; }
+    else if (ex.t === "gap") { exercicio = `Completar a lacuna (___): ${ex.q}${ex.dica ? `\nDica impressa: ${ex.dica}` : ""}${ex.ouvir ? `\nFrase ouvida no áudio: ${ex.ouvir}` : ""}`; certa = ex.resp.join(" / "); }
+    else if (ex.t === "order") { exercicio = `Montar a frase com as palavras: ${ex.palavras.join(" · ")}${ex.q ? `\nEnunciado: ${ex.q}` : ""}`; certa = ex.resp; }
+    else { exercicio = ex.modo === "repetir" ? `Falar em voz alta (repetir): "${ex.frase}"` : `Responder falando: "${ex.frase}" (pelo menos ${ex.min || 3} palavras)`; certa = ex.modo === "repetir" ? ex.frase : `exemplo: ${ex.modelo}`; }
+    const inf = est.info || {}, resposta = inf.pulado ? "(pulou)" : inf.texto || inf.ouvido || (inf.escolha != null ? ex.op[inf.escolha] : "") || "";
+    const depois = !!est.respondido;
+    const prompt = `Você é professor(a) particular de ${I.nome.toLowerCase()} que prepara um estudante brasileiro para a prova ${I.EXAME[nv]} (parte: ${c.nome}).
+Aula ${a.n}: "${a.titulo}". Objetivo: ${a.objetivo}. Foco: ${a.foco}.
+${material}
+
+EXERCÍCIO
+${exercicio}
+Resposta correta: ${certa}
+${ex.exp ? `Nota do professor: ${ex.exp}\n` : ""}${depois ? `O estudante respondeu: "${resposta}" — ${est.ok ? "acertou" : "errou"}.
+Explique a resposta correta: o que o exercício treina, o raciocínio passo a passo até a resposta (citando o trecho do texto/áudio quando houver) e a regra por trás.${est.ok ? "" : " Diga com gentileza por que a resposta dele não serve."}`
+  : `O estudante ainda NÃO respondeu e pediu uma dica. NÃO revele a resposta: não escreva a palavra/alternativa/frase correta, nem a letra, e não elimine as outras de forma que sobre só uma. Guie o raciocínio: o que procurar no texto/áudio (sem citar o trecho exato que contém a resposta), que regra usar e como testar cada possibilidade.`}
+Escreva em português do Brasil simples, frases curtas; palavras em ${I.nome.toLowerCase()} entre aspas. Dê um exemplo NOVO (diferente do exercício) quando explicar a regra. Inclua uma dica de prova (${I.EXAME[nv]}) quando fizer sentido.
+Responda SÓ com JSON:
+{"contexto":"1 ou 2 frases: o que este exercício treina e onde isso cai na prova","caminho":["2 a 4 passos curtos para chegar à resposta"],"porque":"a regra ou o raciocínio por trás, com um exemplo novo"${depois && !est.ok ? `,"erro":"por que a resposta do estudante não serve"` : ""}}`;
+    let r;
+    try { r = await app.dicaIA(prompt); }
+    catch (e) { throw { msg: e && e.code === "sem_ia" ? "Entre com a sua conta para pedir dicas à IA." : e && e.code === "limite" ? "Você usou as 3 perguntas grátis de hoje para a IA. Com o Pro, as dicas não têm limite." : (e && e.msg) || "A IA não conseguiu responder agora. Tente de novo daqui a pouco." }; }
+    const s = (x, n) => String(x || "").slice(0, n);
+    return { contexto: s(r.contexto, 500), caminho: (Array.isArray(r.caminho) ? r.caminho : []).slice(0, 5).map(x => s(x, 400)), porque: s(r.porque, 900), erro: depois && !est.ok ? s(r.erro, 500) : "" };
+  }
 
   // tarefa livre: redação (writing) ou gravação (speaking), corrigidas pela IA do mentor
   function ligarTarefa(container, app, t) {
