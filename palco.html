@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>Palco do vídeo</title>
+<!-- Palco dos vídeos "vitrine": o app roda no iframe #app dentro de um celular, com fundo animado,
+     barra de capítulos (estilo stories), títulos que entram palavra por palavra, adesivos e cartões.
+     O roteiro controla tudo pela API window.P. Tamanho: 540×960 CSS, gravado em 2× (1080×1920). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#3b82f6;--roxo:#a855f7;--rosa:#f43f5e;--ciano:#22d3ee;--fr-azul:#2a5bd7;--fr-verm:#ef4135}
+*{box-sizing:border-box}
+html,body{margin:0;width:540px;height:960px;overflow:hidden;background:#05060d;color:#fff;font-family:Geist,system-ui,sans-serif}
+/* fundo: manchas de luz que flutuam + grade suave */
+.fundo{position:absolute;inset:0;overflow:hidden}
+.mancha{position:absolute;border-radius:50%;filter:blur(70px);opacity:.75;animation:flutua 13s ease-in-out infinite alternate}
+.m1{width:420px;height:420px;background:var(--fr-azul);left:-140px;top:40px}
+.m2{width:380px;height:380px;background:var(--roxo);right:-150px;top:360px;animation-duration:16s;animation-delay:-4s}
+.m3{width:360px;height:360px;background:var(--fr-verm);left:60px;bottom:-200px;animation-duration:11s;opacity:.55}
+@keyframes flutua{to{transform:translate(70px,-90px) scale(1.18)}}
+.grade{position:absolute;inset:0;background-image:linear-gradient(#ffffff0b 1px,transparent 1px),linear-gradient(90deg,#ffffff0b 1px,transparent 1px);
+  background-size:30px 30px;-webkit-mask-image:radial-gradient(circle at 50% 40%,#000 25%,transparent 72%)}
+.brilho{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:0;animation:pisca 3.2s ease-in-out infinite}
+@keyframes pisca{50%{opacity:.9;transform:scale(2.2)}}
+/* barras de capítulo */
+#barras{position:absolute;top:12px;left:16px;right:16px;display:flex;gap:5px;z-index:8}
+#barras i{flex:1;height:4px;border-radius:4px;background:#ffffff30;overflow:hidden}
+#barras i b{display:block;height:100%;width:0;background:#fff;border-radius:4px}
+/* títulos */
+#topo{position:absolute;top:28px;left:18px;right:18px;height:176px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;text-align:center;z-index:8}
+.tag{font-weight:700;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;padding:7px 13px;border-radius:999px;background:#ffffff14;border:1px solid #ffffff2c;
+  backdrop-filter:blur(10px);opacity:0;transform:translateY(-8px);transition:.35s}
+.tag.on{opacity:1;transform:none}
+h1{margin:0;font-size:31px;line-height:1.08;font-weight:900;letter-spacing:-.035em;text-wrap:balance;text-shadow:0 6px 30px #0008}
+h1 .p{display:inline-block;opacity:0;transform:translateY(22px) scale(.86) rotate(-3deg);filter:blur(6px);animation:entra .5s cubic-bezier(.2,.9,.25,1.35) forwards}
+h1 .p.d{background:linear-gradient(95deg,#7dd3fc 0%,#c4b5fd 45%,#fda4af 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1.sai .p{animation:sai .25s ease-in forwards!important}
+@keyframes entra{to{opacity:1;transform:none;filter:none}}
+@keyframes sai{to{opacity:0;transform:translateY(-14px);filter:blur(4px)}}
+/* celular */
+.celular{position:absolute;left:78px;top:214px;width:384px;height:724px;border-radius:54px;padding:12px;background:linear-gradient(145deg,#2a2e3a,#0c0d13 40%,#1b1e28);
+  box-shadow:0 0 0 1.5px #4b5160,0 40px 90px #000c,0 0 120px #3b82f640;z-index:4;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.celular:before{content:"";position:absolute;inset:-2px;border-radius:56px;padding:2px;background:linear-gradient(140deg,#7dd3fc,#c4b5fd 40%,transparent 60%,#fda4af);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.75;animation:gira 6s linear infinite;pointer-events:none}
+@keyframes gira{50%{opacity:.35}}
+.celular iframe{width:360px;height:700px;border:0;border-radius:43px;display:block;background:#fff}
+.celular .botao{position:absolute;right:-5px;top:150px;width:4px;height:70px;border-radius:3px;background:#2a2e3a}
+.reflexo{position:absolute;inset:12px;border-radius:43px;pointer-events:none;background:linear-gradient(120deg,#ffffff14,transparent 30%);z-index:5}
+/* adesivos */
+.adesivo{position:absolute;z-index:9;padding:10px 14px;border-radius:16px;font-weight:800;font-size:16px;line-height:1.1;letter-spacing:-.01em;white-space:nowrap;
+  color:#0b0c12;background:#fff;box-shadow:0 14px 34px #000a,0 0 0 1px #0000000f;transform:rotate(var(--r,0deg)) scale(0);animation:pula .55s cubic-bezier(.2,1.2,.3,1.4) forwards}
+.adesivo small{display:block;font-size:11px;font-weight:700;opacity:.6;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+.adesivo.azul{background:linear-gradient(135deg,#60a5fa,#2563eb);color:#fff}.adesivo.roxo{background:linear-gradient(135deg,#c084fc,#7c3aed);color:#fff}
+.adesivo.rosa{background:linear-gradient(135deg,#fb7185,#e11d48);color:#fff}.adesivo.amar{background:linear-gradient(135deg,#fde047,#f59e0b)}
+.adesivo.vidro{background:#ffffff1c;color:#fff;border:1px solid #ffffff40;backdrop-filter:blur(12px)}
+.adesivo.vai{animation:some .3s ease-in forwards}
+@keyframes pula{to{transform:rotate(var(--r,0deg)) scale(1)}}
+@keyframes some{from{transform:rotate(var(--r,0deg)) scale(1)}to{transform:rotate(var(--r,0deg)) scale(0);opacity:0}}
+.adesivo.balanca{animation:pula .55s cubic-bezier(.2,1.2,.3,1.4) forwards,balanca 2.4s .6s ease-in-out infinite}
+@keyframes balanca{0%,100%{transform:rotate(var(--r,0deg)) scale(1)}50%{transform:rotate(calc(var(--r,0deg) * -1)) scale(1.06)}}
+/* toque */
+.toque{position:absolute;z-index:12;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;border:3px solid #fff;background:#ffffff55;box-shadow:0 0 0 3px #0005,0 0 30px #7dd3fc;
+  animation:toque .6s ease-out forwards;pointer-events:none}
+@keyframes toque{0%{transform:scale(.3)}70%{transform:scale(1);opacity:.9}100%{transform:scale(1.5);opacity:0}}
+/* número de capítulo */
+#numero{position:absolute;inset:0;z-index:15;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none;opacity:0}
+#numero.on{animation:numero 1.25s cubic-bezier(.3,.8,.2,1) forwards}
+#numero b{font-size:190px;font-weight:900;letter-spacing:-.06em;line-height:.9;background:linear-gradient(180deg,#fff,#ffffff40);-webkit-background-clip:text;background-clip:text;color:transparent}
+#numero span{font-size:20px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+#numero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle,#05060ddd 30%,#05060d99 70%);z-index:-1}
+@keyframes numero{0%{opacity:0;transform:scale(1.4)}18%{opacity:1;transform:scale(1)}78%{opacity:1;transform:scale(.97)}100%{opacity:0;transform:scale(.9)}}
+/* cartões de tela cheia (abertura e fim) */
+#cartao{position:absolute;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:40px 30px;text-align:center;
+  background:radial-gradient(circle at 50% 30%,#1e3a8a99,transparent 60%),#05060dee;backdrop-filter:blur(16px);opacity:0;transition:opacity .4s;pointer-events:none}
+#cartao.on{opacity:1}
+#cartao .lg{width:84px;height:84px;border-radius:24px;display:grid;place-items:center;font-size:44px;font-weight:900;color:#04131a;
+  background:linear-gradient(135deg,#7dd3fc,#3b82f6);box-shadow:0 14px 50px #3b82f677;animation:pula .6s cubic-bezier(.2,1.2,.3,1.4) both;transform:scale(0)}
+#cartao h2{margin:0;font-size:44px;line-height:1;font-weight:900;letter-spacing:-.045em}
+#cartao h2 em{font-style:normal;background:linear-gradient(95deg,#7dd3fc,#c4b5fd,#fda4af);-webkit-background-clip:text;background-clip:text;color:transparent}
+#cartao p{margin:0;font-size:18px;line-height:1.35;opacity:.86}
+#cartao .url{font-weight:800;font-size:22px;background:#fff;color:#05060d;padding:13px 24px;border-radius:999px;box-shadow:0 10px 40px #7dd3fc55}
+#cartao .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:470px}
+#cartao .chips b{font-size:14px;font-weight:700;padding:8px 12px;border-radius:999px;background:#ffffff16;border:1px solid #ffffff30;opacity:0;animation:entra .45s forwards}
+#cartao .nota{font-size:11px;opacity:.5}
+.carimbo{font-weight:900;font-size:18px;letter-spacing:.14em;padding:8px 16px;border:3px solid #fda4af;color:#fda4af;border-radius:10px;transform:rotate(-8deg) scale(2.4);opacity:0;
+  animation:carimbo .45s .5s cubic-bezier(.3,1.4,.4,1) forwards}
+@keyframes carimbo{to{transform:rotate(-8deg) scale(1);opacity:1}}
+.bandeira{display:flex;width:150px;height:100px;border-radius:14px;overflow:hidden;box-shadow:0 18px 50px #000a}
+.bandeira i{flex:1;transform:scaleY(0);animation:faixa .5s cubic-bezier(.2,.9,.2,1.2) forwards}
+.bandeira i:nth-child(1){background:var(--fr-azul)}.bandeira i:nth-child(2){background:#fff;animation-delay:.12s}.bandeira i:nth-child(3){background:var(--fr-verm);animation-delay:.24s}
+@keyframes faixa{to{transform:none}}
+.contador{font-size:96px;font-weight:900;letter-spacing:-.05em;line-height:.9}
+#marca{position:absolute;bottom:6px;left:0;right:0;text-align:center;font-size:11px;font-weight:700;letter-spacing:.12em;opacity:.55;z-index:8;text-transform:uppercase}
+</style></head>
+<body>
+<div class="fundo"><div class="mancha m1"></div><div class="mancha m2"></div><div class="mancha m3"></div><div class="grade"></div><div id="brilhos"></div></div>
+<div id="barras"></div>
+<div id="topo"><span class="tag" id="tag"></span><h1 id="titulo"></h1></div>
+<div class="celular" id="celular"><iframe id="app" src="index.html" title="Logic Academy"></iframe><div class="reflexo"></div><span class="botao"></span></div>
+<div id="adesivos"></div>
+<div id="numero"><b></b><span></span></div>
+<div id="cartao"></div>
+<div id="marca">logicacademy.web.app</div>
+<script>
+// brilhos no fundo
+(function(){const b=document.getElementById("brilhos");for(let i=0;i<26;i++){const s=document.createElement("i");s.className="brilho";
+  s.style.left=Math.random()*540+"px";s.style.top=Math.random()*960+"px";s.style.animationDelay=(-Math.random()*3.2)+"s";b.appendChild(s)}})();
+const $=s=>document.querySelector(s);
+window.P={
+  // barra de capítulos estilo stories
+  barras(n){$("#barras").innerHTML="<i><b></b></i>".repeat(n)},
+  capitulo(i,ms){const bs=[...document.querySelectorAll("#barras b")];bs.forEach((b,k)=>{b.style.transition="none";b.style.width=k<i?"100%":"0"});
+    const b=bs[i];if(!b)return;void b.offsetWidth;b.style.transition=`width ${ms}ms linear`;b.style.width="100%"},
+  // título: palavras entram uma a uma; trechos entre *asteriscos* ficam em degradê
+  titulo(tag,txt){const h=$("#titulo"),t=$("#tag");
+    const montar=()=>{h.classList.remove("sai");let k=0,d=false;
+      h.innerHTML=txt.split(/(\*[^*]+\*)/).filter(Boolean).map(pedaco=>{d=pedaco.startsWith("*");return pedaco.replace(/\*/g,"").split(/\s+/).filter(Boolean)
+        .map(w=>`<span class="p${d?" d":""}" style="animation-delay:${(k++)*70}ms">${w}</span>`).join(" ")}).join(" ");
+      t.textContent=tag||"";t.classList.toggle("on",!!tag)};
+    if(h.innerHTML){h.classList.add("sai");t.classList.remove("on");setTimeout(montar,260)}else montar()},
+  adesivo(id,html,x,y,o){o=o||{};let a=document.getElementById("ad-"+id);if(a)a.remove();a=document.createElement("div");a.id="ad-"+id;
+    a.className="adesivo "+(o.cor||"")+(o.balanca?" balanca":"");a.style.left=x+"px";a.style.top=y+"px";a.style.setProperty("--r",(o.r||0)+"deg");a.innerHTML=html;
+    $("#adesivos").appendChild(a)},
+  tira(id){const a=document.getElementById("ad-"+id);if(a){a.classList.remove("balanca");a.classList.add("vai");setTimeout(()=>a.remove(),320)}},
+  limpa(){document.querySelectorAll(".adesivo").forEach(a=>{a.classList.remove("balanca");a.classList.add("vai");setTimeout(()=>a.remove(),320)})},
+  toque(x,y){const d=document.createElement("div");d.className="toque";d.style.left=x+"px";d.style.top=y+"px";document.body.appendChild(d);setTimeout(()=>d.remove(),650)},
+  numero(n,txt){const e=$("#numero");e.querySelector("b").textContent=n;e.querySelector("span").textContent=txt||"";e.classList.remove("on");void e.offsetWidth;e.classList.add("on")},
+  cartao(html){const c=$("#cartao");if(!html){c.classList.remove("on");return}c.innerHTML=html;
+    c.querySelectorAll(".chips b").forEach((b,i)=>b.style.animationDelay=(0.5+i*0.12)+"s");c.classList.add("on")},
+  conta(sel,ate,ms){const e=document.querySelector(sel);if(!e)return;const t0=performance.now();
+    const f=t=>{const p=Math.min(1,(t-t0)/ms),v=Math.round(ate*(1-Math.pow(1-p,3)));e.textContent=v.toLocaleString("pt-BR");if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)},
+  celular(transform){$("#celular").style.transform=transform||""}
+};
+</script>
+</body></html>

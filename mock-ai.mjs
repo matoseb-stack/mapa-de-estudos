@@ -11,9 +11,11 @@ export function getGenerativeModel(){return {
   async generateContentStream({contents}){
     const txt=(contents||[]).filter(c=>c.role==="user").map(c=>c.parts.map(p=>p.text||"").join(" ")).join("\n");
     // pedidos que esperam JSON (plano, edital): sem IA no vídeo, o app usa o cálculo local
-    if(/JSON/.test(txt)&&!/PERGUNTA:/.test(txt))throw new Error("demo: sem IA para JSON");
+    // (o roteiro pode responder alguns pedidos JSON com window.DEMO_IA_JSON, ex.: a dica dos exercícios de idioma)
+    const json=/JSON/.test(txt)&&!/PERGUNTA:/.test(txt)?(window.DEMO_IA_JSON&&window.DEMO_IA_JSON(txt)):null;
+    if(/JSON/.test(txt)&&!/PERGUNTA:/.test(txt)&&!json)throw new Error("demo: sem IA para JSON");
     const pergunta=(txt.split("PERGUNTA:").pop()||txt).trim();
-    const resp=(window.DEMO_IA&&window.DEMO_IA(pergunta))||"Ótima pergunta! Vamos montar isso juntos.";
+    const resp=json?JSON.stringify(json):(window.DEMO_IA&&window.DEMO_IA(pergunta))||"Ótima pergunta! Vamos montar isso juntos.";
     const pedacos=resp.match(/\S+\s*/g)||[resp];
     await espera(700);
     return {stream:(async function*(){for(const p of pedacos){await espera(38);yield {text:()=>p}}})(),response:Promise.resolve({text:()=>resp})}},

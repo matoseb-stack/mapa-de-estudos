@@ -33,7 +33,10 @@ async function abrir(o){
   const dir=montarSite(o.repo),{srv,url}=await servir(dir);
   const {chromium}=achaPlaywright();
   const b=await chromium.launch({executablePath:achaChrome(),args:["--autoplay-policy=no-user-gesture-required"]});
-  const ctx=await b.newContext({viewport:{width:432,height:768},deviceScaleFactor:2.5,isMobile:true,hasTouch:true,locale:"pt-BR",timezoneId:"America/Sao_Paulo",colorScheme:o.tema,
+  // o.palco: grava uma página-palco (ex.: o app dentro de um celular) em vez do app em tela cheia
+  const tela=o.palco?{viewport:o.palco.viewport,deviceScaleFactor:o.palco.dsf,isMobile:false,hasTouch:false}:{viewport:{width:432,height:768},deviceScaleFactor:2.5,isMobile:true,hasTouch:true};
+  if(o.palco)fs.copyFileSync(o.palco.arquivo,path.join(dir,"palco.html"));
+  const ctx=await b.newContext({...tela,locale:"pt-BR",timezoneId:"America/Sao_Paulo",colorScheme:o.tema,
     userAgent:"Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Mobile Safari/537.36"});
   await ctx.addInitScript(`window.DEMO_EU=${JSON.stringify(o.eu)};`);
   await ctx.addInitScript({path:path.join(AQUI,"mock-firebase.js")});
@@ -47,8 +50,11 @@ async function abrir(o){
     if(/googleapis\.com\/(?!css)|firebaseio|identitytoolkit|recaptcha|googletagmanager|google-analytics|firebasevertexai|googlesyndication|doubleclick|adservice/.test(u)&&!/fonts\.googleapis/.test(u))return r.abort();
     const x=await baixar(u);r.fulfill({status:x.status,contentType:x.ct,body:x.body,headers:{"access-control-allow-origin":"*"}})});
   const p=await ctx.newPage();const erros=[];p.on("pageerror",e=>erros.push(e.message));
-  await p.goto(url,{waitUntil:"load"});
-  const E=c=>p.evaluate(c=>window.__ev(c),c);
+  await p.goto(url+(o.palco?"palco.html":""),{waitUntil:"load"});
+  // com palco, o app roda dentro do iframe #app e E() avalia lá dentro
+  const app=o.palco?await (await p.waitForSelector("iframe#app")).contentFrame():p;
+  if(o.palco)await app.waitForFunction(()=>!!window.__ev,null,{timeout:20000});
+  const E=c=>app.evaluate(c=>window.__ev(c),c);
   const fechar=async()=>{await b.close().catch(()=>{});srv.close();fs.rmSync(dir,{recursive:true,force:true})};
-  return {b,ctx,p,E,erros,fechar}}
+  return {b,ctx,p,app,E,erros,fechar}}
 module.exports={abrir};

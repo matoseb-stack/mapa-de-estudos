@@ -32,3 +32,11 @@ O reconhecimento de voz é simulado na gravação (a "fala" é a própria frase 
 Estudo: `cadastro`, `plano`, `pomodoro`, `questao`, `mentoria`, `molduras`, `estatisticas`, `convite`.
 Comunidade: `chatAoVivo`, `enviarQuestao`, `chamada`, `conversa`, `ranking`, `grupo`.
 Cada dia sorteia (pela data) 2 cenas de comunidade + 2 de estudo, a frase de abertura, o nome e o tema (claro/preto).
+
+## Vídeo "vitrine" do curso de Francês (visual novo)
+```bash
+node vitrine-frances.js --repo ../site --saida ./videos      # ~1 min: idioma, nivelamento, 360 aulas, Dica da IA, fala, Pro
+```
+O app aparece dentro de um celular num palco animado (`palco.html`: fundo de luzes, barra de capítulos estilo stories,
+títulos palavra por palavra, adesivos, números de capítulo e cartões de abertura e fim). Com `abrir({palco})` o app roda no
+iframe `#app` e `E()` avalia lá dentro. A dica da IA usa `window.DEMO_IA_JSON` (respostas fixas, só no vídeo).
