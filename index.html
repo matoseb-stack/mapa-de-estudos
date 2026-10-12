@@ -88,6 +88,7 @@ textarea{min-height:88px;resize:vertical}
 .auth{min-height:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
 .auth-l{padding:48px clamp(16px,5vw,64px);display:flex;flex-direction:column;justify-content:center;gap:28px;max-width:620px;margin-left:auto;width:100%}
 .auth-r{background:var(--inv-bg);color:var(--inv-fg);padding:48px clamp(16px,5vw,56px);display:flex;flex-direction:column;justify-content:center;gap:18px}
+.auth-guias{display:flex;flex-direction:column;gap:4px;margin-top:14px;font-size:.85rem}.auth-guias b{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;opacity:.7}.auth-guias a{color:inherit;opacity:.8}.auth-guias a:hover{opacity:1;text-decoration:underline}
 .auth-links{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:.85rem}.auth-links a{color:inherit;opacity:.75}.auth-links a:hover{opacity:1}
 .auth-r .feat{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start}
 .auth-r .feat span{width:36px;height:36px;border-radius:9px;border:1px solid color-mix(in srgb,var(--inv-fg) 25%,transparent);display:grid;place-items:center}
@@ -1620,9 +1621,12 @@ function renderLogin(erro){document.body.classList.remove("menu-aberto");
       ${[["spark",STANDALONE?"Plano semanal automático":"Plano semanal por IA","Distribui suas horas por matéria conforme a dificuldade, a prioridade e o tempo livre de cada dia."],
          ["timer","Pomodoro integrado","Cada sessão concluída entra no seu histórico e no ranking diário."],
          ["scan","Leitura de edital","Envie o PDF do edital ou escreva o nome da prova (ENEM, Pism 1, EsPCEx, PM MG…) e receba os tópicos por matéria."],
+         ["book","Inglês e Francês","Cursos do A1 ao C2 no formato Cambridge e DELF/DALF, com nivelamento, aulas e dica da IA."],
          ["users","Grupos e ranking","Crie grupos de estudo, converse no chat do grupo ou no chat geral e compare horas estudadas."]]
         .map(([i,t,d])=>`<div class="feat"><span>${ico(i)}</span><div><b>${t}</b><p>${d}</p></div></div>`).join("")}
       <nav class="auth-links" aria-label="Páginas do site"><a href="guias/">Guias de estudo</a><a href="banco-de-questoes.html">Banco de questões</a><a href="sobre.html">Sobre</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a><a href="contato.html">Contato</a></nav>
+      <div class="auth-guias"><b>Guias de estudo</b>${[["como-estudar-para-o-enem","Como estudar para o ENEM"],["competencias-da-redacao-do-enem","As 5 competências da redação"],["cronograma-de-estudos","Como montar um cronograma"],["como-se-preparar-para-o-delf-e-dalf","DELF e DALF: como se preparar"],["como-se-preparar-para-o-cambridge-b2-first","Cambridge B2 First"],["estudo-ativo-e-tecnica-feynman","Estudo ativo e técnica Feynman"]]
+        .map(([f,t])=>`<a href="guias/${f}.html">${t}</a>`).join("")}</div>
     </aside>
   </div>`;
   $("#btnLocal").onclick=()=>entrar("local");

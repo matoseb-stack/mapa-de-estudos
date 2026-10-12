@@ -181,14 +181,16 @@
   }
 
   /* ---------- anúncios (só para quem não é Pro) ----------
-     Usa o Google AdSense: os anúncios automáticos do site + os espaços [data-anuncio] (se houver ids em LA_ADS.slots).
-     Nunca aparecem dentro de aulas, questões ou do relógio de estudo. */
+     Só nos espaços [data-anuncio] com id em LA_ADS.slots (telas com conteúdo, como o Início). Sem anúncios automáticos:
+     pelas regras do AdSense, anúncio não pode aparecer em telas sem conteúdo do editor (login, formulários,
+     cronômetro, chats da comunidade). Por isso o script do AdSense só é carregado quando há um espaço configurado. */
   let carregado = false;
   function anuncios(app) {
     const cfg = window.LA_ADS || {};
     if (!cfg.cliente) return;
     if (app.ehPro()) { document.querySelectorAll("[data-anuncio]").forEach(x => { x.innerHTML = ""; x.hidden = true; }); return; }
-    if (!carregado) {
+    const temEspaco = [...document.querySelectorAll("[data-anuncio]:not([data-pronto])")].some(b => (cfg.slots || {})[b.dataset.anuncio]);
+    if (!carregado && temEspaco) {
       carregado = true;
       const s = document.createElement("script");
       s.async = true; s.crossOrigin = "anonymous";
