@@ -1,4 +1,6 @@
-# Vídeos do Logic Academy para o TikTok
+# Vídeos e carrosséis do Logic Academy (TikTok e Instagram)
+
+**Estética padrão (todos os vídeos e carrosséis):** palco escuro com luzes animadas, o app dentro de um celular, barra de capítulos estilo stories, títulos palavra por palavra com destaque em degradê, números de capítulo, adesivos e cartões de abertura/fim (`palco.html` + `palco-kit.js`; carrossel em `carrossel.js`).
 
 Gera um vídeo por dia (9:16, 1080×1920, MP4) gravando o app de verdade num navegador automático,
 com legendas de anúncio, toques na tela e uma **comunidade de demonstração**.
@@ -17,7 +19,7 @@ cd marketing && node gerar.js --repo ../site --saida ./videos                 # 
 node gerar.js --repo ../site --data 2026-10-07                                # roteiro de outro dia
 node gerar.js --repo ../site --cenas chatAoVivo,conversa,questao,convite      # escolher as cenas
 ```
-Saída em `videos/`: `logic-academy-AAAA-MM-DD.mp4`, `-legenda.txt` (texto do post com hashtags),
+Saída em `videos/`: `logic-academy-AAAA-MM-DD.mp4` (já acelerado 1,15×), `-carrossel-1..6.png` (Instagram 1080×1350) + `-carrossel-legenda.txt`, `-legenda.txt` (texto do post com hashtags),
 `-roteiro.json` (cenas usadas) e `-conferencia.jpg` (folha com quadros para conferir).
 
 Precisa de: Node 18+, Playwright com Chromium e ffmpeg com libx264.

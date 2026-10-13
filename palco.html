@@ -117,8 +117,9 @@ window.P={
         .map(w=>`<span class="p${d?" d":""}" style="animation-delay:${(k++)*70}ms">${w}</span>`).join(" ")}).join(" ");
       t.textContent=tag||"";t.classList.toggle("on",!!tag)};
     if(h.innerHTML){h.classList.add("sai");t.classList.remove("on");setTimeout(montar,260)}else montar()},
-  adesivo(id,html,x,y,o){o=o||{};let a=document.getElementById("ad-"+id);if(a)a.remove();a=document.createElement("div");a.id="ad-"+id;
-    a.className="adesivo "+(o.cor||"")+(o.balanca?" balanca":"");a.style.left=x+"px";a.style.top=y+"px";a.style.setProperty("--r",(o.r||0)+"deg");a.innerHTML=html;
+  adesivo(id,html,x,y,o){ // x negativo = distância da borda direita
+    o=o||{};let a=document.getElementById("ad-"+id);if(a)a.remove();a=document.createElement("div");a.id="ad-"+id;
+    a.className="adesivo "+(o.cor||"")+(o.balanca?" balanca":"");if(x<0)a.style.right=(-x)+"px";else a.style.left=x+"px";a.style.top=y+"px";a.style.setProperty("--r",(o.r||0)+"deg");a.innerHTML=html;
     $("#adesivos").appendChild(a)},
   tira(id){const a=document.getElementById("ad-"+id);if(a){a.classList.remove("balanca");a.classList.add("vai");setTimeout(()=>a.remove(),320)}},
   limpa(){document.querySelectorAll(".adesivo").forEach(a=>{a.classList.remove("balanca");a.classList.add("vai");setTimeout(()=>a.remove(),320)})},
