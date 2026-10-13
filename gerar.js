@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-// Gera o vídeo do dia para o TikTok (9:16, 1080x1920, MP4) e o carrossel do Instagram (6 imagens 1080x1350),
+// Gera o vídeo do dia para o TikTok (9:16, 1080x1920, MP4) e o carrossel do Instagram (6 imagens 1080x1350, um tema por dia: temas-carrossel.js),
 // os dois na estética do palco (palco.html): app dentro de um celular, fundo de luzes, capítulos, títulos e adesivos.
-// uso: node gerar.js --repo /caminho/do/site [--data 2026-10-07] [--saida ./videos] [--cenas chatAoVivo,questao,...] [--tema light|dark] [--velocidade 1.15]
+// uso: node gerar.js --repo /caminho/do/site [--data 2026-10-07] [--saida ./videos] [--cenas chatAoVivo,questao,...] [--tema light|dark] [--velocidade 1.15] [--carrossel mentor|esquece|sozinho|...]
 // A mistura de cenas, a frase de abertura, o tema e o nome mudam conforme a data (o mesmo dia gera sempre o mesmo roteiro).
 const fs=require("fs"),path=require("path");
-const {abrir}=require("./base.js"),{CENAS,prepararConta,iaDemo}=require("./cenas.js"),{criar,PALCO,paraTitulo}=require("./palco-kit.js"),{montarCarrossel}=require("./carrossel.js");
+const {abrir}=require("./base.js"),{CENAS,prepararConta,iaDemo}=require("./cenas.js"),{criar,PALCO,paraTitulo}=require("./palco-kit.js"),{montarCarrossel,recortesDoTema}=require("./carrossel.js"),{abrirCapturas}=require("./capturas.js"),{TEMAS}=require("./temas-carrossel.js");
 const {execFileSync}=require("child_process");
 // rótulo do capítulo e adesivo de cada cena (o adesivo aparece no vídeo e no carrossel)
 const INFO={cadastro:["Comece em 1 minuto",["⚡ 4 perguntas","amar"]],plano:["Plano da semana",["📅 automático","azul"]],pomodoro:["Foco",["🍅 25 min de foco","rosa"]],
@@ -20,6 +20,8 @@ const r=(()=>{let a=h;return ()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15
 const um=l=>l[Math.floor(r()*l.length)];
 const embaralha=l=>{const a=l.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
 const nDia=Math.floor(Date.parse(DATA+"T12:00:00Z")/864e5);
+// tema do carrossel: --carrossel <id> ou um por dia, em rodízio
+const temaDoDia=()=>TEMAS.find(t=>t.id===arg("carrossel"))||TEMAS[((nDia%TEMAS.length)+TEMAS.length)%TEMAS.length];
 const TEMA=arg("tema")||(nDia%2?"dark":"light");
 const NOME=um(["Ana Souza","Júlia Martins","Pedro Henrique","Larissa Oliveira","Matheus Carvalho","Sofia Ribeiro","Gustavo Nunes","Isabela Freitas"]);
 const GANCHOS=[
@@ -36,7 +38,7 @@ const GANCHOS=[
   const nome=`logic-academy-${DATA}`;fs.mkdirSync(SAIDA,{recursive:true});
   console.log(`Dia ${DATA} · tema ${TEMA} · ${NOME} · cenas: ${nomes.join(", ")}`);
   const nav=await abrir({repo:REPO,tema:TEMA,ia:iaDemo,eu:{uid:"demo_eu",nome:NOME},palco:PALCO});const k=criar(nav),P=k.P;
-  const gancho=um(GANCHOS),fotos=[];
+  const gancho=um(GANCHOS);
   try{
     await k.ate(`S.mode==="nuvem"`,20000);await k.w(800);
     if(TEMA==="dark")await k.E(`mudarUI("modo","escuro")`).catch(()=>{});
@@ -54,9 +56,7 @@ const GANCHOS=[
       await P("numero",String(i+1).padStart(2,"0"),tag);await k.w(650);await P("capitulo",i,7500);
       if(ad){const [x,y]=POS[i%POS.length];await P("adesivo","cena",ad[0],x,y,{cor:ad[1],r:x<0?6:-6,balanca:true})}
       try{await CENAS[c].run(k,r,{nome:NOME});await k.prep()}catch(e){console.warn("cena",c,"falhou:",e.message);await k.E(`document.querySelectorAll(".modal-bg").forEach(m=>m.remove())`).catch(()=>{})}
-      // foto limpa da tela para o carrossel (sem adesivos nem toques por cima)
-      await P("limpa");await k.w(700);
-      try{fotos.push({tag,titulo:k.ultimaCap||tag,foto:await k.foto(),adesivo:ad})}catch(e){}}
+      await P("limpa")}
     await P("titulo","","");
     await k.full(`<div class="lg">L</div><h1>Logic <em>Academy</em></h1><p>${um(["Organize seus estudos, resolva questões e estude com os amigos.","Plano, foco, questões e comunidade num só lugar.","Estude todo dia. Com amigos, fica mais fácil."])}</p>
       <div class="tags"><b>📅 Plano da semana</b><b>⏱️ Pomodoro</b><b>📝 Questões</b><b>👥 Comunidades</b><b>📹 Chamadas</b><b>🤖 Mentoria IA</b></div>
@@ -68,18 +68,17 @@ const GANCHOS=[
     if(vel!==1){const tmp=res.mp4.replace(/\.mp4$/,"-tmp.mp4");fs.renameSync(res.mp4,tmp);
       execFileSync("ffmpeg",["-y","-loglevel","error","-i",tmp,"-filter:v",`setpts=PTS/${vel},fps=30`,"-c:v","libx264","-preset","slow","-crf","18","-profile:v","high","-pix_fmt","yuv420p","-movflags","+faststart","-an",res.mp4]);
       fs.rmSync(tmp);res.dur/=vel}
-    // carrossel do Instagram na mesma estética
-    let carrossel=[];
-    if(fotos.length>=2)try{carrossel=await montarCarrossel({ctx:nav.ctx,saida:SAIDA,nome,
-      capa:{tag:"Logic Academy",titulo:paraTitulo(gancho),sub:`Plano da semana, pomodoro, +${n.toLocaleString("pt-BR")} questões e comunidade. Grátis.`},
-      telas:fotos.slice(0,4),
-      fim:{titulo:"Comece *hoje*, de graça",sub:"Organize seus estudos, resolva questões e estude com os amigos.",chips:["📅 Plano da semana","⏱️ Pomodoro","📝 Questões","👥 Comunidades","🤖 Mentoria IA","🇬🇧🇫🇷 Idiomas"]}})}
-      catch(e){console.warn("carrossel falhou:",e.message)}
+    // carrossel do Instagram: tema do dia (texto que convence + recortes limpos do site)
+    let carrossel=[];const TEMA_C=temaDoDia();
+    try{const c=await abrirCapturas(nav),recortes={};
+      for(const nm of recortesDoTema(TEMA_C)){const b=await c.tirar(nm);if(b)recortes[nm]=b}
+      await c.fechar();carrossel=await montarCarrossel({ctx:nav.ctx,saida:SAIDA,nome,tema:TEMA_C,recortes})}
+    catch(e){console.warn("carrossel falhou:",e.message)}
     const tags="#enem #enem2026 #estudos #vestibular #medicina #studytok #dicasdeestudo #pomodoro #concurso #foco";
     const legenda=`${um(["Seu próximo ano de estudos começa aqui 📚","Estudar com amigos muda tudo 👥","Bora bater a meta de hoje? 🚀","Organização é metade da aprovação ✅"])}\n\nPlano da semana, pomodoro, +${n.toLocaleString("pt-BR")} questões oficiais, comunidades e mentoria com IA. Grátis em logicacademy.web.app (link na bio).\n\n${tags}\n`;
     fs.writeFileSync(path.join(SAIDA,nome+"-legenda.txt"),legenda);
-    if(carrossel.length)fs.writeFileSync(path.join(SAIDA,nome+"-carrossel-legenda.txt"),`${paraTitulo(gancho).replace(/\*/g,"")} 👇\n\nArrasta pro lado e vê como funciona: ${fotos.slice(0,4).map(f=>f.tag.replace(/^(\S)/,c=>c.toLowerCase())).join(", ")}. Grátis em logicacademy.web.app (link na bio).\n\nSalva esse post e manda pra quem estuda com você 📚\n\n#enem #enem2026 #estudos #vestibular #medicina #studygram #dicasdeestudo #pomodoro #concurso #foco\n`);
-    fs.writeFileSync(path.join(SAIDA,nome+"-roteiro.json"),JSON.stringify({data:DATA,tema:TEMA,nome:NOME,cenas:nomes,duracao:+res.dur.toFixed(1),carrossel:carrossel.map(f=>path.basename(f)),erros:nav.erros},null,1));
+    if(carrossel.length)fs.writeFileSync(path.join(SAIDA,nome+"-carrossel-legenda.txt"),`${TEMA_C.legenda}\n\nlogicacademy.web.app (link na bio) · salva e manda pra quem estuda com você 📚\n\n#enem #enem2026 #estudos #vestibular #medicina #studygram #dicasdeestudo #concurso #foco #organizacao\n`);
+    fs.writeFileSync(path.join(SAIDA,nome+"-roteiro.json"),JSON.stringify({data:DATA,tema:TEMA,nome:NOME,cenas:nomes,duracao:+res.dur.toFixed(1),carrossel:carrossel.map(f=>path.basename(f)),temaCarrossel:TEMA_C.id,erros:nav.erros},null,1));
     console.log(`OK ${res.mp4} · ${res.dur.toFixed(1)} s · ${res.quadros} quadros\nconferência: ${res.folha}\ncarrossel: ${carrossel.length} imagens`);
     if(nav.erros.length)console.log("Erros na página:",nav.erros.slice(0,5));
   }finally{await nav.fechar()}

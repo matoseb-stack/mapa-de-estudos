@@ -42,3 +42,14 @@ node vitrine-frances.js --repo ../site --saida ./videos      # ~1 min: idioma, n
 O app aparece dentro de um celular num palco animado (`palco.html`: fundo de luzes, barra de capítulos estilo stories,
 títulos palavra por palavra, adesivos, números de capítulo e cartões de abertura e fim). Com `abrir({palco})` o app roda no
 iframe `#app` e `E()` avalia lá dentro. A dica da IA usa `window.DEMO_IA_JSON` (respostas fixas, só no vídeo).
+
+## Carrosséis do Instagram (um tema por dia)
+O `gerar.js` cria junto com o vídeo um carrossel com o **tema do dia** (rodízio em `temas-carrossel.js`):
+mentor ("Já pensou estudar com um mentor?"), esquece (revisão espaçada), sozinho (comunidade), procrastina (pomodoro),
+plano (plano da semana), idiomas (Cambridge/DELF/DALF), questoes (banco de questões) e convite.
+Estrutura: gancho → dor → solução → prova (recorte limpo do site) → como usar → chamada. As imagens do site são só
+recortes do pedaço útil (`capturas.js`, página alta sem barras); se um recorte falhar, o slide vira só texto.
+```bash
+node carrossel-gerar.js --repo ../site --saida ./videos --tema mentor     # só o carrossel (ou --tema todos)
+node gerar.js --repo ../site --carrossel idiomas                          # vídeo do dia + carrossel com tema escolhido
+```
