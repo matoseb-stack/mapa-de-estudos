@@ -56,9 +56,9 @@ const TEMAS = [
     ] },
   { id: "plano", legenda: "Estudar sem plano é andar em círculos 📅\n\nResponda 4 perguntas e receba sua semana de estudos pronta, com horários, pomodoro e revisões. Grátis no Logic Academy.",
     slides: [
-      { t: "capa", tag: "Organização", titulo: "Pare de estudar *sem plano*", sub: "Sua semana de estudos pronta em *1 minuto*.", emoji: "📅" },
+      { t: "capa", tag: "Organização", titulo: "Pare de estudar *sem plano*", sub: "Sua semana de estudos pronta em *1 minuto*.", emoji: "🎯" },
       { t: "lista", tag: "Sem plano…", titulo: "O que acontece", marca: "✗", itens: ["Você estuda o que gosta e foge do que precisa", "Matérias pesadas ficam para depois", "Chega perto da prova sem ter visto tudo"] },
-      { t: "passos", tag: "Como funciona", titulo: "Em 4 perguntas", itens: ["Qual prova e quando", "Quais matérias e dificuldade", "Quanto tempo você tem por dia → *semana pronta*"] },
+      { t: "passos", tag: "Como funciona", titulo: "3 respostas e *pronto*", itens: ["Qual prova você vai fazer e quando", "Quais matérias e qual a dificuldade de cada uma", "Quanto tempo você tem em cada dia", "Pronto: *sua semana sai montada*"] },
       { t: "tela", tag: "Resultado", titulo: "Cada dia com *o que* e *a que horas*", cap: "semana", adesivos: [["⚡ automático", "azul"]],
         seFalhar: { t: "lista", titulo: "Sua semana pronta", marca: "✓", itens: ["Blocos com horário", "Teoria + exercícios", "Revisões no dia certo"] } },
       { t: "tela", tag: "Acompanhe", titulo: "Veja *quanto* estudou de cada matéria", cap: "estatisticas", adesivos: [["📊 por matéria", "roxo"]],
