@@ -1074,7 +1074,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=3.0">
+<link rel="stylesheet" href="css/componentes.css?v=3.1">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -1084,6 +1084,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/ExercicioIdioma.js?v=3.0"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
+<script src="js/componentes/Estante.js?v=3.1"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
@@ -1619,10 +1620,10 @@ function renderLogin(erro){document.body.classList.remove("menu-aberto");
     <aside class="auth-r">
       <div class="brand"><span class="logo">${LOGO}</span></div>
       ${[["spark",STANDALONE?"Plano semanal automático":"Plano semanal por IA","Distribui suas horas por matéria conforme a dificuldade, a prioridade e o tempo livre de cada dia."],
-         ["timer","Pomodoro integrado","Cada sessão concluída entra no seu histórico e no ranking diário."],
+         ["timer","Pomodoro integrado","Cada sessão concluída entra no seu histórico e nas suas estatísticas."],
          ["scan","Leitura de edital","Envie o PDF do edital ou escreva o nome da prova (ENEM, Pism 1, EsPCEx, PM MG…) e receba os tópicos por matéria."],
          ["book","Inglês e Francês","Cursos do A1 ao C2 no formato Cambridge e DELF/DALF, com nivelamento, aulas e dica da IA."],
-         ["users","Grupos e ranking","Crie grupos de estudo, converse no chat do grupo ou no chat geral e compare horas estudadas."]]
+         ["bookmark","Estante virtual","Guarde PDFs e imagens por matéria e escreva neles com caneta e marca-texto."]]
         .map(([i,t,d])=>`<div class="feat"><span>${ico(i)}</span><div><b>${t}</b><p>${d}</p></div></div>`).join("")}
       <nav class="auth-links" aria-label="Páginas do site"><a href="guias/">Guias de estudo</a><a href="banco-de-questoes.html">Banco de questões</a><a href="sobre.html">Sobre</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a><a href="contato.html">Contato</a></nav>
       <div class="auth-guias"><b>Guias de estudo</b>${[["como-estudar-para-o-enem","Como estudar para o ENEM"],["competencias-da-redacao-do-enem","As 5 competências da redação"],["cronograma-de-estudos","Como montar um cronograma"],["como-se-preparar-para-o-delf-e-dalf","DELF e DALF: como se preparar"],["como-se-preparar-para-o-cambridge-b2-first","Cambridge B2 First"],["estudo-ativo-e-tecnica-feynman","Estudo ativo e técnica Feynman"]]
@@ -2335,6 +2336,13 @@ Object.defineProperty(window,"LAService",{configurable:true,get(){
     minutosHojeNuvem:async()=>{if(Date.now()-minNuvemCache.em<5*60e3)return minNuvemCache.min;const s=await meuDoc("pomo").get(),d=s.exists?s.data():null;
       const m=d&&d.dias&&d.dias[dataISO()]?d.dias[dataISO()].min||0:0;minNuvemCache={em:Date.now(),min:Math.max(m,minutosDia(dataISO()))};return minNuvemCache.min}})}
   return servNuvem}});
+/* ================= Minha estante (js/componentes/Estante.js) ================= */
+// arquivos da pessoa por categoria, com caneta e marca-texto; com conta, também ficam na nuvem (data/users/{uid}/estante)
+const appEstante={uid:()=>S.uid||"visitante",db:()=>FBM()?S.db:null,esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),naTela:()=>S.view==="estante"};
+function renderEstante(){
+  if(!window.LAComp||!LAComp.Estante){$("#main").innerHTML=`<div class="page">${pageHead("Minha estante")}<div class="card"><p>Não foi possível carregar a estante. Atualize a página.</p></div></div>`;return}
+  LAComp.Estante.render($("#main"),appEstante);
+}
 function renderIdiomas(){
   const V=window.LAComp&&LAComp.IdiomasView;
   if(!V||!window.FirebaseServiceMock||!window.LA_INGLES){$("#main").innerHTML=`<div class="page">${pageHead("Idiomas")}<div class="card"><p>Não foi possível carregar a aba de idiomas. Atualize a página.</p></div></div>`;return}
@@ -2489,8 +2497,13 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="2.6";
+const APP_VERSAO="2.7";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Minha estante 🗂️",d:"Uma estante virtual para os seus arquivos: crie categorias como Matemática e Geografia, envie PDFs e fotos e abra quando quiser."},
+  {t:"Escreva por cima dos arquivos ✒️",d:"Caneta, marca-texto, borracha, cores, espessura, desfazer e zoom, como num caderno digital. Com caneta no tablet, ligue “Só caneta” e role a página com o dedo."},
+  {t:"Cadernos em branco 📓",d:"Crie cadernos lisos, pautados ou quadriculados para resumos e exercícios feitos à mão."},
+  {t:"Tudo salvo na sua conta ☁️",d:"Arquivos e desenhos ficam no aparelho e na nuvem, e abrem no celular e no computador."},
+  {t:"Mais privacidade 🔒",d:"Seu tempo de estudo, seu nível e suas conquistas agora ficam visíveis só para você. Grupos, chat global, voz global, amigos e ranking saíram do site; as mensagens privadas entre duas pessoas continuam em Conversas."},
   {t:"Dica da IA nos exercícios 💡",d:"Travou numa questão de idioma? Toque em “Dica da IA”: ela explica o que você está estudando, o caminho até a resposta e o porquê, sem entregar a resposta. Depois de responder, “Entender com a IA” explica o acerto ou o erro."},
   {t:"Chegou o curso de Francês 🇫🇷",d:"360 aulas do A1 ao C2 no formato das provas DELF e DALF: Compréhension des écrits, Compréhension de l'oral, Production écrite e Production orale, com um simulado da prova no fim de cada trilha."},
   {t:"Nivelamento de Francês",d:"Um teste que sobe de nível conforme você acerta, para o curso começar no ponto certo."},
@@ -2640,12 +2653,15 @@ function renderEstatisticas(){
 /* ================= Comunidade (nuvem) ================= */
 function assinarSocial(){
   (FBM()?["perfis","ranking","conquistas"]:["perfis","ranking","msgs","grupos","membros"]).forEach(col=>{
-    try{S.unsub.push(S.db.collection(col).limit(1000).onSnapshot(snap=>{const m={};snap.docs.forEach(d=>{const v=d.data();if(v)m[d.id]=v});
+    // sem comunidade aberta, o tempo de estudo (ranking) e o XP (conquistas) só são lidos da própria conta
+    const so=SO_CONVERSA&&FBM()&&(col==="ranking"||col==="conquistas");
+    const ouvir=fn=>so?S.db.collection(col).doc(S.uid).onSnapshot(d=>fn({docs:d.exists?[d]:[]}),()=>{}):S.db.collection(col).limit(1000).onSnapshot(fn,()=>{});
+    try{S.unsub.push(ouvir(snap=>{const m={};snap.docs.forEach(d=>{const v=d.data();if(v)m[d.id]=v});
       if(col==="ranking"&&FBM()){S.rankOk=true;const eu=m[S.uid];if(eu&&eu.atualizado&&typeof eu.atualizado.toMillis==="function"&&S.envioRank&&Date.now()-S.envioRank<20000){S.dt=eu.atualizado.toMillis()-S.envioRank;S.envioRank=0}}
       if(col==="perfis"||col==="conquistas"){const prim=col==="perfis"&&!S.pubOk;if(col==="perfis"){S.soc.perfisBrutos=m;S.pubOk=true}else{S.soc.conquistas=m;S.soc.conquistasOk=true}
         const b=S.soc.perfisBrutos||{},v={};Object.keys(b).forEach(id=>v[id]=perfilVerificado(id,b[id]));S.soc.perfis=v;S.pub=v[S.uid]||null;atualizarSocial("perfis");
         if(prim)perfilCarregado();return}
-      S.soc[col]=m;if(col==="perfis"){S.pubOk=true}atualizarSocial(col)},()=>{}))}catch(e){}
+      S.soc[col]=m;if(col==="perfis"){S.pubOk=true}atualizarSocial(col)}))}catch(e){}
   });
 }
 // convite: o link ?ref=<id> guarda quem convidou até a conta nova criar o perfil público
@@ -2704,10 +2720,10 @@ function assinar(k,q,fn){parar(k);try{SUBS[k]=q.onSnapshot(fn,err=>{console.warn
 const FBC={grupos:{},meus:{},convs:{},vistos:{},grupoTab:"chat",dm:null,busca:""};
 function iniciarComunidadeFB(){
   const db=S.db,me=S.uid;
-  assinar("grupos",db.collection("grupos").limit(500),snap=>{const m={};snap.docs.forEach(d=>{const v=d.data();if(v&&v.nome&&v.dono)m[d.id]={...v,id:d.id}});FBC.grupos=m;refreshCom("grupos")});
+  if(!SO_CONVERSA)assinar("grupos",db.collection("grupos").limit(500),snap=>{const m={};snap.docs.forEach(d=>{const v=d.data();if(v&&v.nome&&v.dono)m[d.id]={...v,id:d.id}});FBC.grupos=m;refreshCom("grupos")});
   assinar("social",meuDoc("social"),snap=>{const v=snap.exists?snap.data():{};FBC.meus=v.grupos||{};FBC.vistos=v.vistos||{};refreshCom("social")});
   assinar("convs",db.collection("conversas").where("participantes","array-contains",me),snap=>{const m={};snap.docs.forEach(d=>m[d.id]={...d.data(),id:d.id});FBC.convs=m;refreshCom("convs")});
-  migrarLegado();iniciarPresenca();assinarChamadas();
+  if(!SO_CONVERSA){migrarLegado();iniciarPresenca()}assinarChamadas();
 }
 function pararComunidadeFB(){pararPresenca();if(typeof chamadaFechar==="function")chamadaFechar();Object.keys(SUBS).forEach(parar);Object.assign(FBC,{grupos:{},meus:{},convs:{},vistos:{},dm:null})}
 async function migrarLegado(){ // grupos criados na versão anterior (um documento por pessoa) viram grupos de verdade
@@ -3122,9 +3138,9 @@ const pontoOnline=id=>{const st=statusOnline(id);return `<span class="on-dot ${s
 const cidDe=o=>[S.uid,o].sort().join("_");
 function abrirDM(outro){FBC.dm=outro;go("mensagens")}
 function renderMensagensFB(){
-  $("#main").innerHTML=`<div class="page">${pageHead("Mensagens","Conversas privadas: só você e a outra pessoa veem.",`<button class="btn" type="button" data-link="amigos">${ico("users")}Buscar pessoas</button>`)}
+  $("#main").innerHTML=`<div class="page">${pageHead("Mensagens","Conversas privadas: só você e a outra pessoa veem.",`<button class="btn primary" type="button" id="dm-nova">${ico("search")}Nova conversa</button>`)}
     <div class="dm-cols"><div class="card" style="padding:12px"><div id="convs" class="list"></div></div><div id="dm-area"></div></div></div>`;
-  $$("[data-link]").forEach(a=>a.onclick=()=>go(a.dataset.link));
+  $("#dm-nova").onclick=modalNovaConversa;
   listaConversas();abrirConversa();
 }
 function listaConversas(){
@@ -3134,15 +3150,36 @@ function listaConversas(){
   if(FBC.dm&&!lista.some(x=>x.o===FBC.dm))lista.unshift({c:{id:cidDe(FBC.dm),ultima:"Nova conversa"},o:FBC.dm});
   box.innerHTML=lista.length?lista.map(({c,o})=>{const nl=c.ultimaDe&&c.ultimaDe!==S.uid&&(c.atualizado||0)>(FBC.vistos[c.id]||0);return `<button type="button" class="li" data-conv="${o}" style="width:100%;text-align:left;background:${FBC.dm===o?"var(--sunken)":"transparent"};border:0;border-radius:var(--r-sm);padding:10px 8px;cursor:pointer;grid-template-columns:auto minmax(0,1fr) auto">
     ${avatar(o)}<div style="min-width:0"><div class="nm" style="${nl?"font-weight:700":""}">${esc(nomeDe(o))}</div><div class="small muted" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(c.ultima||"")}</div></div>${nl?'<span class="pill solid">nova</span>':""}</button>`}).join("")
-    :`<p class="small muted" style="padding:8px">Nenhuma conversa ainda. Toque em “Buscar pessoas” para começar.</p>`;
+    :`<p class="small muted" style="padding:8px">Nenhuma conversa ainda. Toque em “Nova conversa” e procure a pessoa pelo nome ou @usuário.</p>`;
   $$("[data-conv]",box).forEach(b=>b.onclick=()=>{FBC.dm=b.dataset.conv;listaConversas();abrirConversa()});
+}
+// nova conversa: procura a pessoa pelo nome ou @usuário (só o nome e a foto aparecem; nada de progresso)
+function modalNovaConversa(){
+  document.querySelectorAll(".modal-bg").forEach(m=>m.remove());
+  const bg=document.createElement("div");bg.className="modal-bg";
+  bg.innerHTML=`<div class="card stack modal" role="dialog" aria-modal="true" aria-labelledby="nc-t" style="width:min(460px,100%)">
+    <h3 id="nc-t" style="margin:0">Nova conversa</h3>
+    <div class="field"><label for="nc-q">Nome ou @usuário</label><input type="text" id="nc-q" autocomplete="off" placeholder="Digite pelo menos 2 letras"></div>
+    <div class="list" id="nc-res" style="max-height:50vh;overflow:auto"></div>
+    <div class="row" style="justify-content:flex-end"><button class="btn ghost" type="button" data-nc="x">Fechar</button></div></div>`;
+  document.body.appendChild(bg);
+  const inp=bg.querySelector("#nc-q"),res=bg.querySelector("#nc-res");
+  const podeDM=p=>!((p.privacidade||{}).dm==="amigos"&&!(p.amigos||[]).includes(S.uid));
+  const pintar=()=>{const q=norm(inp.value.replace(/^@/,""));
+    if(q.length<2){res.innerHTML=`<p class="small muted">Digite o nome ou o @usuário de quem você quer conversar.</p>`;return}
+    const achados=Object.entries(S.soc.perfis).filter(([id,p])=>id!==S.uid&&p&&p.nome&&(norm(p.nome).includes(q)||norm(p.usuario||"").startsWith(q))).slice(0,30);
+    res.innerHTML=achados.length?achados.map(([id,p])=>`<button type="button" class="li" data-nc-id="${id}" ${podeDM(p)?"":"disabled"} style="width:100%;text-align:left;background:transparent;border:0;padding:8px;cursor:pointer;grid-template-columns:auto minmax(0,1fr)">
+      ${avatar(id)}<div style="min-width:0"><div class="nm">${esc(p.nome)}</div><div class="small muted">${p.usuario?"@"+esc(p.usuario):""}${podeDM(p)?"":" · só recebe mensagens de amigos"}</div></div></button>`).join("")
+      :`<p class="small muted">Ninguém encontrado com esse nome.</p>`;
+    res.querySelectorAll("[data-nc-id]").forEach(b=>b.onclick=()=>{bg.remove();FBC.dm=b.dataset.ncId;listaConversas();abrirConversa()})};
+  inp.oninput=pintar;pintar();setTimeout(()=>inp.focus(),50);
+  bg.addEventListener("click",e=>{if(e.target===bg||e.target.closest('[data-nc="x"]'))bg.remove()});
 }
 function abrirConversa(){
   const area=$("#dm-area");if(!area)return;const o=FBC.dm;parar("tela:dm");
   if(!o){area.innerHTML=`<div class="empty-state">${ico("chat")}<span>Escolha uma conversa ou busque alguém para conversar.</span></div>`;return}
   const cid=cidDe(o),existe=!!FBC.convs[cid];
-  const st=statusOnline(o);
-  area.innerHTML=`<div class="row" style="margin-bottom:10px;flex-wrap:nowrap"><span class="av-on">${avatar(o)}${pontoOnline(o)}</span><div style="min-width:0;flex:1"><b>${esc(nomeDe(o))}</b><div class="small ${st.k==="on"?"txt-on":"muted"}">${esc(st.t)}</div></div><button class="btn sm ${st.k==="on"?"primary":""}" type="button" id="dm-video">${ico("video")}<span class="sr-mob">Chamada de vídeo</span></button></div>${chatBox("dm","Mensagem privada")}`;
+  area.innerHTML=`<div class="row" style="margin-bottom:10px;flex-wrap:nowrap"><span class="av-on">${avatar(o)}</span><div style="min-width:0;flex:1"><b>${esc(nomeDe(o))}</b><div class="small muted">Conversa privada</div></div><button class="btn sm" type="button" id="dm-video">${ico("video")}<span class="sr-mob">Chamada de vídeo</span></button></div>${chatBox("dm","Mensagem privada")}`;
   $("#dm-video").onclick=()=>chamadaLigar(o);
   const ref=S.db.collection("conversas").doc(cid);
   const ouvir=()=>assinar("tela:dm",ref.collection("mensagens").orderBy("em","desc").limit(150),snap=>{pintarMsgs("dm",snap.docs.map(d=>({...d.data(),_base:"conversas/"+cid})).reverse());carregarPrevias($("#dm"))});
@@ -4073,12 +4110,13 @@ document.addEventListener("keydown",ev=>{if(S.view!=="flashcards"||!FC.estudo||e
   if(ev.key===" "){const c=$("#fc-carta");if(c){ev.preventDefault();c.click()}}else if("123".includes(ev.key)&&ev.key.length===1&&FC.estudo.virado){ev.preventDefault();fcNota(+ev.key)}});
 
 /* ================= Tutorial: tour guiado por todas as áreas do site ================= */
-const TUT_CAPS=[["estudos","Estudos","📚"],["prova","Prova","🎯"],["comunidade","Comunidade","🤝"],["conta","Conta","⚙️"]];
+const TUT_CAPS=[["estudos","Estudos","📚"],["prova","Prova","🎯"],["comunidade","Conversas","✉️"],["conta","Conta","⚙️"]];
 const TUT_PASSOS=[
   {v:"inicio",c:"estudos",e:"🏠",t:"Seu painel do dia",x:"Tudo começa aqui: a meta de hoje, o próximo bloco de estudo e um resumo da sua semana. É a sua “central de comando”.",d:"Toque em <b>Iniciar</b> no cartão Hoje e escolha pomodoro ou cronômetro.",a:".hoje-card"},
   {v:"semana",c:"estudos",e:"🗓️",t:"Minha semana",x:"Seu plano de estudos, dia a dia, montado a partir das suas matérias e horários. Arraste o cartão para os lados para ver os outros dias.",d:"Marque um bloco como feito e veja o progresso subir.",a:".dia-card, .week"},
   {v:"questoes",c:"estudos",e:"❓",t:"Banco de questões",x:"Milhares de questões reais com gabarito oficial: ENEM, EsPCEx, PISM e PAS. Filtre por matéria, tópico, ano e dificuldade.",d:"Errou? A questão vai para o <b>caderno de erros</b> e você pode refazer até acertar.",a:".qb-filtros"},
-  {v:"pomodoro",c:"estudos",e:"🍅",t:"Pomodoro",x:"Foco com tempo marcado e pausa no fim. Cada sessão conta para a sua meta, para o ranking e para os desafios.",d:"Escolha a matéria antes de começar: assim suas estatísticas ficam certinhas.",a:".pomo"},
+  {v:"estante",c:"estudos",e:"🗂️",t:"Minha estante",x:"Seus arquivos de estudo organizados em categorias que você cria (Matemática, Geografia…). Abra um PDF ou uma foto e escreva por cima com caneta, marca-texto e borracha.",d:"Crie um caderno em branco pautado ou quadriculado para fazer resumos à mão.",a:".est-cats"},
+  {v:"pomodoro",c:"estudos",e:"🍅",t:"Pomodoro",x:"Foco com tempo marcado e pausa no fim. Cada sessão conta para a sua meta e para os desafios.",d:"Escolha a matéria antes de começar: assim suas estatísticas ficam certinhas.",a:".pomo"},
   {v:"cronometro",c:"estudos",e:"⏱️",t:"Cronômetro",x:"Prefere estudar sem relógio apertando? O cronômetro conta o tempo livremente e você para quando terminar.",d:"Ao finalizar, anote o assunto para agendar revisões em 1, 7 e 30 dias.",a:"#main .card"},
   {v:"desafios",c:"estudos",e:"🏆",t:"Desafios",x:"Missões diárias, semanais e mensais que viram XP, níveis, molduras e títulos para o seu perfil. Estudar vira jogo!",d:"Quando um desafio fica pronto, aparece o botão de resgatar.",a:"#main .card"},
   {v:"estatisticas",c:"estudos",e:"📊",t:"Estatísticas",x:"Gráficos do seu tempo de estudo, das matérias e dos acertos. Ótimo para descobrir onde focar.",d:"Compare as últimas semanas para ver sua evolução.",a:"#main .card"},
@@ -4086,13 +4124,13 @@ const TUT_PASSOS=[
   {v:"edital",c:"prova",e:"🔎",t:"Escanear edital",x:"Envie o edital ou a ficha de orientação da prova da escola (FOA). A IA separa todos os tópicos por matéria para você.",d:"Pode mandar uma ficha por matéria e escolher <b>Juntar com a prova atual</b>.",a:"#ed-body"},
   {v:"topicos",c:"prova",e:"✅",t:"Tópicos da prova",x:"A lista do que cai na prova, matéria por matéria. Marque o que já estudou e acompanhe a contagem regressiva até o dia.",d:"Use <b>Fazer triagem da prova</b> para encaixar a prova na sua semana.",a:"#main .card",se:()=>!!S.edital},
   {v:"flashcards",c:"prova",e:"🃏",t:"Flashcards",x:"Crie cartões de pergunta e resposta ou peça para a IA montar. A revisão volta no dia certo para você não esquecer.",d:"Revise com o teclado: espaço vira o cartão; 1, 2 e 3 dão a nota.",a:"#main .card, #fc-novo"},
-  {v:"grupos",c:"comunidade",e:"👥",t:"Meus grupos",x:"Grupos de estudo com chat, arquivos, canal de voz e ranking só da turma. Estudar junto rende mais!",d:"Crie um grupo e chame os colegas de sala.",a:"#main .card, #g-novo"},
-  {v:"buscarGrupos",c:"comunidade",e:"🧭",t:"Buscar grupos",x:"Encontre grupos abertos de quem estuda para a mesma prova que você.",d:"Busque pelo nome da prova, como ENEM ou EsPCEx.",a:"#main .card",se:()=>NAV.some(([,i])=>i.some(x=>x[0]==="buscarGrupos"))},
-  {v:"voz",c:"comunidade",e:"🎙️",t:"Voz global",x:"Uma sala de voz aberta para estudar “junto” com gente do Brasil inteiro, enquanto usa o pomodoro ou o banco de questões.",d:"Use fone de ouvido para não dar eco.",a:"#main .card"},
-  {v:"chat",c:"comunidade",e:"💬",t:"Chat global",x:"Converse com todos os estudantes do site. Dá para mandar fotos, documentos e áudios.",d:"Toque no 🎤 para gravar um áudio de até 5 minutos.",a:".chat"},
+  {v:"grupos",c:"comunidade",se:()=>!SO_CONVERSA,e:"👥",t:"Meus grupos",x:"Grupos de estudo com chat, arquivos, canal de voz e ranking só da turma. Estudar junto rende mais!",d:"Crie um grupo e chame os colegas de sala.",a:"#main .card, #g-novo"},
+  {v:"buscarGrupos",c:"comunidade",se:()=>!SO_CONVERSA,e:"🧭",t:"Buscar grupos",x:"Encontre grupos abertos de quem estuda para a mesma prova que você.",d:"Busque pelo nome da prova, como ENEM ou EsPCEx.",a:"#main .card",se:()=>NAV.some(([,i])=>i.some(x=>x[0]==="buscarGrupos"))},
+  {v:"voz",c:"comunidade",se:()=>!SO_CONVERSA,e:"🎙️",t:"Voz global",x:"Uma sala de voz aberta para estudar “junto” com gente do Brasil inteiro, enquanto usa o pomodoro ou o banco de questões.",d:"Use fone de ouvido para não dar eco.",a:"#main .card"},
+  {v:"chat",c:"comunidade",se:()=>!SO_CONVERSA,e:"💬",t:"Chat global",x:"Converse com todos os estudantes do site. Dá para mandar fotos, documentos e áudios.",d:"Toque no 🎤 para gravar um áudio de até 5 minutos.",a:".chat"},
   {v:"mensagens",c:"comunidade",e:"✉️",t:"Mensagens",x:"Conversas privadas, só entre você e a outra pessoa, com fotos, arquivos, áudios e chamada de vídeo.",d:"Na chamada dá para compartilhar a tela (no computador).",a:"#main .card",se:()=>NAV.some(([,i])=>i.some(x=>x[0]==="mensagens"))},
-  {v:"amigos",c:"comunidade",e:"🫂",t:"Amigos",x:"Veja quem está online, adicione amigos e chame para uma chamada de vídeo de estudo.",d:"A bolinha verde mostra quem está online agora.",a:"#main .card",se:()=>NAV.some(([,i])=>i.some(x=>x[0]==="amigos"))},
-  {v:"ranking",c:"comunidade",e:"🥇",t:"Ranking",x:"Quem mais estudou hoje, na semana e no mês. Uma competição saudável para manter o ritmo.",d:"Um pomodoro já coloca você no ranking de hoje.",a:"#main .card"},
+  {v:"amigos",c:"comunidade",se:()=>!SO_CONVERSA,e:"🫂",t:"Amigos",x:"Veja quem está online, adicione amigos e chame para uma chamada de vídeo de estudo.",d:"A bolinha verde mostra quem está online agora.",a:"#main .card",se:()=>NAV.some(([,i])=>i.some(x=>x[0]==="amigos"))},
+  {v:"ranking",c:"comunidade",se:()=>!SO_CONVERSA,e:"🥇",t:"Ranking",x:"Quem mais estudou hoje, na semana e no mês. Uma competição saudável para manter o ritmo.",d:"Um pomodoro já coloca você no ranking de hoje.",a:"#main .card"},
   {v:"perfil",c:"conta",e:"🙋",t:"Meu perfil",x:"Sua foto, bio e as conquistas que você ganhou nos desafios: molduras, títulos e emblemas.",d:"Equipe um título raro e mostre para os amigos.",a:"#main .card"},
   {v:"aparencia",c:"conta",e:"🎨",t:"Aparência",x:"Deixe o site com a sua cara: tema claro ou escuro, estilo da interface e cor neon.",d:"Teste a cor neon com borda animada.",a:"#main .card"},
   {v:"config",c:"conta",e:"⚙️",t:"Configurações",x:"Ajuste suas matérias, horas de estudo, privacidade e notificações.",d:"Mudou a rotina? Edite as horas e escolha incluir ou substituir na semana.",a:"#main .card"},
@@ -4175,10 +4213,13 @@ function renderTutorial(){
 }
 
 /* ================= Shell com barra lateral ================= */
+// Comunidade aberta (grupos, chat e voz globais, amigos, ranking) desligada: só conversas entre duas pessoas,
+// e ninguém vê o progresso dos outros. As telas antigas continuam no código, mas não aparecem nem abrem.
+const SO_CONVERSA=true,TELAS_SOCIAIS=new Set(["grupos","buscarGrupos","voz","chat","amigos","ranking"]);
 const NAV=[
-  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"],["pro","Logic Academy Pro","flame"]]],
+  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["estante","Minha estante","bookmark"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"],["pro","Logic Academy Pro","flame"]]],
   ["Prova",[["edital","Escanear edital","scan"],["topicos","Tópicos da prova","list"],["flashcards","Flashcards","cartas"]]],
-  ["Comunidade",[["grupos","Meus grupos","users"],...(STANDALONE?[["buscarGrupos","Buscar grupos","search"]]:[]),["voz","Voz global","mic"],["chat","Chat global","chat"],...(STANDALONE?[["mensagens","Mensagens","send"],["amigos","Amigos","user"]]:[]),["ranking","Ranking","trophy"]]],
+  ["Conversas",[["mensagens","Mensagens","send"]]],
   ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"],["admin","Administração","lock"]]],
   ["Ajuda",[["tutorial","Tutorial","bussola"]]]];
 function renderShell(){
@@ -4248,10 +4289,11 @@ function renderSideUser(){
   el.innerHTML=`${S.mode==="nuvem"?avatar(S.uid):`<span class="avatar" aria-hidden="true">${esc(nm[0]||"V").toUpperCase()}</span>`}<div style="min-width:0"><div class="nm">${esc(nm)}${S.mode==="nuvem"&&ehPro()?' <span class="pro-tag">PRO</span>':""}</div><div class="sub" title="${esc(contaEmail())}">${S.mode==="nuvem"&&ehAdmin()?"🛡 Administrador":S.mode==="nuvem"?(esc(contaEmail())||"Salvo na nuvem"):"Visitante · nada é salvo"}</div></div>`;
 }
 function progEdital(){if(!S.edital)return 0;const all=S.edital.materias.flatMap(m=>m.topicos);return all.length?Math.round(all.filter(t=>t.feito).length/all.length*100):0}
-function go(v){pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
+function go(v){pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();if(S.view==="estante"&&v!=="estante"&&window.LAComp&&LAComp.Estante)LAComp.Estante.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
 function renderView(){
   $$("[data-go]").forEach(a=>{a.classList.toggle("on",a.dataset.go===S.view);if(a.dataset.go===S.view){const g=a.closest(".nav-grp.fech");if(g){g.classList.remove("fech");g.querySelectorAll("a").forEach(x=>x.removeAttribute("tabindex"));const b=g.previousElementSibling;if(b)b.setAttribute("aria-expanded","true")}}if(a.dataset.go==="topicos"){a.hidden=!S.edital;const b=a.querySelector(".badge");if(S.edital){if(b)b.textContent=progEdital()+"%";else a.insertAdjacentHTML("beforeend",`<span class="badge">${progEdital()}%</span>`)}}});
-  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,idiomas:renderIdiomas,pro:renderPro,admin:renderAdmin,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
+  if(SO_CONVERSA&&TELAS_SOCIAIS.has(S.view)){S.view=S.view==="amigos"?"mensagens":"inicio";try{history.replaceState(history.state,"","#"+S.view)}catch(e){}renderView();return}
+  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,estante:renderEstante,idiomas:renderIdiomas,pro:renderPro,admin:renderAdmin,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
   f();
 }
 const pageHead=(t,sub,acoes)=>`<div class="page-h"><div><h1>${t}</h1>${sub?`<p>${sub}</p>`:""}</div>${acoes?`<div class="row">${acoes}</div>`:""}</div>`;
@@ -4353,7 +4395,6 @@ function renderInicio(){
   const ed=S.edital;const prox=ed?ed.materias.map(m=>({m:m.nome,t:m.topicos.find(t=>!t.feito)})).filter(x=>x.t).slice(0,4):[];
   const h=new Date().getHours();const saud=h<12?"Bom dia":h<18?"Boa tarde":"Boa noite";
   const nome=(S.pub&&S.pub.nome)||p.nome;
-  const rk=S.mode==="nuvem"?Object.keys(S.soc.ranking).filter(visivelRanking).map(id=>({id,m:minHoje(id)})).filter(x=>x.m>0).sort((a,b)=>b.m-a.m).slice(0,5):[];
   $("#main").innerHTML=`<div class="page">
     ${S.mode!=="nuvem"?`<div class="card flat aviso-visit"><span>${ico("user")}<b>Modo visitante:</b> nada fica salvo. Ao fechar ou recarregar o app, seu plano e seu progresso são apagados.</span><button class="btn sm primary" type="button" id="visit-conta">Criar conta e salvar</button></div>`:""}
     ${pageHead(`${saud}${nome?", "+esc(nome):""}`,`${DIAS[hi].n}, ${new Date().toLocaleDateString("pt-BR",{day:"numeric",month:"long"})} · ${esc(descObjetivo(p))}`,`<button class="btn primary" type="button" id="ini-pomo">${ico("play")}Começar a estudar</button>`)}
@@ -4373,9 +4414,6 @@ function renderInicio(){
           ${rv.length?`<div class="list">${rv.slice(0,5).map(revisaoLinha).join("")}</div>${rv.length>5?`<p class="small muted">+${rv.length-5} revisões</p>`:""}`:`<p class="small muted">Nenhuma revisão para hoje. Ao finalizar uma sessão, escreva o assunto para agendar revisões em 1, 7 e 30 dias.</p>`}</div>`})()}
         ${prox.length?`<div class="card"><div class="card-h"><h3>Próximos tópicos · ${esc(ed.nome)}</h3></div><div class="list">${prox.map(x=>`<div class="li" style="grid-template-columns:minmax(0,1fr)"><div style="min-width:0"><div class="eyebrow">${esc(x.m)}</div><div class="small">${esc(x.t.t)}</div></div></div>`).join("")}</div></div>`
           :`<div class="card stack sm"><h3>Vai fazer uma prova?</h3><p class="small muted">Envie o edital ou escreva o nome da prova para ver os tópicos cobrados, matéria por matéria.</p><button class="btn sm" type="button" data-link="edital">${ico("scan")}Escanear edital</button></div>`}
-        <div class="card"><div class="card-h"><h3>Ranking de hoje</h3><a class="small muted" href="#ranking" data-link="ranking">Ver tudo</a></div>
-          ${S.mode!=="nuvem"?`<p class="small muted">Entre com sua conta para participar do ranking.</p>`:rk.length?`<div class="list">${rk.map((x,i)=>`<div class="li ${x.id===S.uid?"me-row":""}" data-perfil="${x.id}"><span class="pos">${i+1}</span><div class="row" style="flex-wrap:nowrap;min-width:0">${avatar(x.id,"sm")}<span class="nm">${esc(nomeDe(x.id))}</span></div><span class="mono small">${fmtH(x.m)}</span></div>`).join("")}</div>`:`<p class="small muted">Ninguém registrou estudo hoje ainda. Termine um pomodoro e apareça aqui.</p>`}
-        </div>
       </div>
     </div></div>`;
   $("#ini-pomo").onclick=()=>{if(P.rodando){go("pomodoro");return}if(C.rodando){go("cronometro");return}const prox=blocos.find(b=>!b.feito);iniciarEstudo(prox?hojeK+"|"+prox.id:null)};
@@ -4559,7 +4597,7 @@ function renderPomodoro(){
   const hoje=S.pomoLog.dias[dataISO()]||{min:0,mat:{}};
   const sem=[];for(let i=6;i>=0;i--){const d=diasAtras(i);sem.push({d,m:minutosDia(d)})}const mx=Math.max(60,...sem.map(x=>x.m));
   $("#main").innerHTML=`<div class="page">
-    ${pageHead("Pomodoro","Ciclos de foco e pausa. Cada foco concluído entra no seu histórico e no ranking.")}
+    ${pageHead("Pomodoro","Ciclos de foco e pausa. Cada foco concluído entra no seu histórico e nas suas estatísticas.")}
     <div class="pomo">
       <div class="card pomo-main">
         <div class="seg" role="group" aria-label="Modo">${Object.entries(MODOS).map(([k,n])=>`<button type="button" data-modo="${k}" class="${P.modo===k?"on":""}">${n}</button>`).join("")}</div>
@@ -5052,7 +5090,8 @@ const CAPAS={grafite:"linear-gradient(135deg,#1f2937,#4b5563)",oceano:"linear-gr
 function capaDe(p){return CAPAS[p&&p.capa]||(p&&CAPAS_ESP[p.capa]&&CAPAS_ESP[p.capa][1])||`linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 45%,var(--bg)))`}
 function sequenciaDe(id){const r=S.soc.ranking[id];if(!r||!r.dias)return 0;let n=0;for(let i=0;i<35;i++){if((r.dias[diasAtras(i)]||0)>0)n++;else if(i>0)break}return n}
 function cartaoPerfil(id,p,opts){
-  p=p||{};const priv=p.privacidade||{};const mostrarHoras=priv.horas!==false||id===S.uid;
+  p=p||{};const priv=p.privacidade||{};const mostrarHoras=SO_CONVERSA?id===S.uid:(priv.horas!==false||id===S.uid);
+  if(SO_CONVERSA&&id!==S.uid)p={...p,nivel:0};
   const meta=[p.objetivo,p.instituicao,p.cidade].filter(Boolean).map(esc);
   const foto=p.foto&&/^data:image\/(jpeg|png|webp);base64,/.test(p.foto)?`<img class="avatar lg" src="${p.foto}" alt="">`:`<span class="avatar lg" aria-hidden="true">${esc(((p.nome||"?").split(/\s+/).map(w=>w[0]||"").join("").slice(0,2)).toUpperCase())}</span>`;
   return `<div class="perfil-card"><div class="capa" style="background:${capaDe(p)}"></div><div class="corpo"><div class="row" style="justify-content:space-between;align-items:flex-end">${comMoldura(p.moldura,foto)}${p.nivel?`<span class="pill solid" style="margin-bottom:6px">Nível ${p.nivel}</span>`:""}</div>
@@ -5094,7 +5133,7 @@ function renderPerfil(){
   const email=FB&&FB.auth.currentUser?FB.auth.currentUser.email:"";
   const comp=completude(d);
   $("#main").innerHTML=`<div class="page">
-    ${pageHead("Meu perfil","Seu cartão público aparece para outros estudantes no ranking, nos grupos, no chat e na busca de amigos.",`<span class="small muted" id="pf-st"></span><button class="btn primary" type="button" id="pf-salvar">Salvar perfil</button>`)}
+    ${pageHead("Meu perfil","Seu nome e sua foto aparecem só para quem conversa com você. Seu progresso fica visível apenas para você.",`<span class="small muted" id="pf-st"></span><button class="btn primary" type="button" id="pf-salvar">Salvar perfil</button>`)}
     <div class="perfil-grid">
       <div class="sticky stack">
         <div id="pf-prev">${cartaoPerfil(S.uid,d,{preview:true})}</div>
@@ -5125,9 +5164,11 @@ function renderPerfil(){
           <div class="field"><label for="pf-bio">Bio</label><textarea id="pf-bio" maxlength="160" data-k="bio" placeholder="Conte o que você estuda e como gosta de estudar.">${esc(d.bio)}</textarea><span class="hint" id="pf-bio-c">${(d.bio||"").length}/160</span></div>
         </div>
         <div class="card"><div class="sec-t" style="margin-bottom:6px">Privacidade</div>
+          ${SO_CONVERSA?`<p class="small muted" style="margin:0 0 8px">Seu tempo de estudo, seu nível e suas conquistas ficam visíveis só para você.</p>`:`
           <label class="switch"><div><b>Aparecer no ranking</b><div class="small muted">Desligado, você some do ranking e do “estudando agora”.</div></div><input type="checkbox" class="tg" data-priv="ranking" ${d.privacidade.ranking?"checked":""}></label>
           <label class="switch"><div><b>Aparecer online para os amigos</b><div class="small muted">Desligado, você aparece sempre offline.</div></div><input type="checkbox" class="tg" data-priv="online" ${d.privacidade.online!==false?"checked":""}></label>
           <label class="switch"><div><b>Mostrar meu tempo de estudo no perfil</b><div class="small muted">Total, últimos 7 dias e sequência.</div></div><input type="checkbox" class="tg" data-priv="horas" ${d.privacidade.horas?"checked":""}></label>
+`}
           <div class="switch"><div><b>Quem pode me mandar mensagem</b><div class="small muted">Vale para mensagens privadas.</div></div><div class="seg"><button type="button" data-dmp="todos" class="${d.privacidade.dm!=="amigos"?"on":""}">Todos</button><button type="button" data-dmp="amigos" class="${d.privacidade.dm==="amigos"?"on":""}">Só amigos</button></div></div>
         </div>
         <div class="card"><div class="sec-t" style="margin-bottom:6px">Conta</div>

@@ -65,7 +65,8 @@ service cloud.firestore {
           && d.total - d.diaBase <= 960
           && (!('hojeMin' in d) || d.hojeMin <= d.total - d.diaBase + 1);
       }
-      allow read: if logado();
+      // tempo de estudo: só a própria pessoa (e o administrador) vê; ninguém vê o progresso dos outros
+      allow read: if eu(uid) || ehAdmin();
       allow create: if eu(uid) && valido() && request.resource.data.total <= 720 && request.resource.data.ref == request.time
         && request.resource.data.diaBase == 0 && request.resource.data.semanaBase == 0 && request.resource.data.mesBase == 0;
       allow update: if eu(uid) && valido() && basesOk()
@@ -213,7 +214,8 @@ service cloud.firestore {
           && request.resource.data.itens.keys().hasAll(g.itens)
           && nivelOk();
       }
-      allow read: if logado();
+      // XP, nível e itens: só a própria pessoa (e o administrador)
+      allow read: if eu(uid) || ehAdmin();
       allow create: if eu(uid) && request.resource.data.xp == 0 && request.resource.data.n == 0
         && request.resource.data.nivel == 1 && request.resource.data.itens.size() == 0;
       allow update: if eu(uid) && ganhoOk();
@@ -424,7 +426,7 @@ service cloud.firestore {
 
     // Quem está online: cada pessoa só escreve a própria presença
     match /presenca/{uid} {
-      allow read: if logado();
+      allow read: if eu(uid);
       allow write: if eu(uid) && request.resource.data.keys().hasOnly(['visto', 'ativo'])
         && request.resource.data.visto is number && request.resource.data.ativo is bool;
     }
