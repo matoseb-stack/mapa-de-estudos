@@ -486,6 +486,19 @@ service cloud.firestore {
         allow read: if membroC();
         allow create, delete: if donoC();
       }
+      // quem está com a nota aberta agora (para a conexão direta entre os aparelhos)
+      match /online/{uid} {
+        allow read: if membroC();
+        allow create, update: if membroC() && uid == request.auth.uid;
+        allow delete: if membroC() && uid == request.auth.uid;
+      }
+      // sinais da conexão direta (oferta, resposta e caminhos de rede): só o destinatário lê
+      match /sinais/{sid} {
+        allow read: if membroC() && resource.data.para == request.auth.uid;
+        allow create: if membroC() && request.resource.data.de == request.auth.uid
+                      && request.resource.data.dados is string && request.resource.data.dados.size() < 20000;
+        allow delete: if logado() && (resource.data.para == request.auth.uid || resource.data.de == request.auth.uid);
+      }
       match /tracos/{tid} {
         allow read: if membroC();
         allow create: if membroC() && request.resource.data.autor == request.auth.uid

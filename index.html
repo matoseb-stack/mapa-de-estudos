@@ -1112,17 +1112,17 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=3.7">
+<link rel="stylesheet" href="css/componentes.css?v=3.8">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
 <script src="js/idiomas/conteudoFrances.js?v=2.9"></script>
 <script src="js/componentes/PatchNotesModal.js?v=2.4"></script>
-<script src="js/componentes/FloatingTimer.js?v=3.0"></script>
+<script src="js/componentes/FloatingTimer.js?v=3.1"></script>
 <script src="js/componentes/ExercicioIdioma.js?v=3.0"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
-<script src="js/componentes/Estante.js?v=3.7"></script>
+<script src="js/componentes/Estante.js?v=3.8"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
@@ -2444,9 +2444,9 @@ function atualizarFlutuante(){
   const minTxt=m=>m<60?`${m} min`:`${Math.floor(m/60)} h${m%60?` ${m%60} min`:""}`;
   if(pomoAtivo&&(P.rodando||!C.rodando)){const r=pomoRestante(),falta=Math.max(1,Math.ceil(r/60000));
     FT.atualizar({ativo:true,tipo:"pomodoro",texto:String(Math.floor(r/60000)).padStart(2,"0")+":"+String(Math.floor(r/1000)%60).padStart(2,"0"),rotulo:MODOS[P.modo]+(P.materia?" · "+P.materia:""),rodando:P.rodando,naTela:S.view==="pomodoro",alvoSel:"#pomo-t",sessao:P.ciclos+P.modo,
-      pct:Math.max(0,Math.min(1,1-r/pomoTotal())),resumo:(P.modo==="foco"?"Faltam ":"Pausa: faltam ")+minTxt(falta)});return}
+      pct:Math.max(0,Math.min(1,1-r/pomoTotal())),resumo:(P.modo==="foco"?"Faltam ":"Pausa: faltam ")+minTxt(falta),fim:P.rodando?P.fimEm:0});return}
   if(cronoAtivo){const ms=cronoMs();FT.atualizar({ativo:true,tipo:"cronometro",texto:fmtRelogio(ms),rotulo:"Cronômetro"+(C.materia?" · "+C.materia:"")+(C.meta?` · meta ${C.meta} min`:""),rodando:C.rodando,naTela:S.view==="cronometro",alvoSel:"#crono-t",sessao:C.sessao||"",
-      pct:C.meta?Math.min(1,ms/(C.meta*60000)):null,resumo:minTxt(Math.floor(ms/60000))+" estudando"});return}
+      pct:C.meta?Math.min(1,ms/(C.meta*60000)):null,resumo:minTxt(Math.floor(ms/60000))+" estudando",inicio:Date.now()-ms});return}
   FT.atualizar({ativo:false});
 }
 if(window.LAComp&&LAComp.FloatingTimer)LAComp.FloatingTimer.configurar({
@@ -2540,7 +2540,7 @@ Object.defineProperty(window,"LAService",{configurable:true,get(){
   return servNuvem}});
 /* ================= Minha estante (js/componentes/Estante.js) ================= */
 // arquivos da pessoa por categoria, com caneta e marca-texto (ficam no aparelho); notas compartilhadas ficam em compartilhados/{id}
-const appEstante={uid:()=>S.uid||"visitante",db:()=>FBM()?S.db:null,
+const appEstante={uid:()=>S.uid||"visitante",db:()=>FBM()?S.db:null,ice:()=>VOZ_ICE,
   irPara:v=>go(v),badgeConvites:n=>{$$('[data-go="compartilhadas"]').forEach(a=>{let b=a.querySelector(".badge");if(n){if(!b){a.insertAdjacentHTML("beforeend",'<span class="badge"></span>');b=a.querySelector(".badge")}b.textContent=n}else if(b)b.remove()})},
   convitesMudou:()=>atualizarCartoesChat(),convidarNaConversa:(o,info)=>enviarConvite(o,info),
   naChamada:()=>!!V.canal,escolherPessoas:op=>escolherPessoas(op),enviarParaPessoa:(o,f,t,copia)=>enviarParaPessoa(o,f,t,copia),meuNome:()=>(S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"Estudante",transmitindo:()=>!!(V.video&&V.video._estante),transmitir:t=>vozDefinirVideo(t,"tela"),pararTransmissao:()=>{if(V.video&&V.video._estante)vozDefinirVideo(null)},esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),naTela:()=>S.view==="estante"||S.view==="compartilhadas"};
@@ -2706,8 +2706,12 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.1";
+const APP_VERSAO="3.2";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Notas compartilhadas ao vivo ⚡",d:"Quem está com a nota aberta se conecta direto (o aparelho do autor é a central): você vê o traço do colega enquanto ele escreve, quase sem atraso."},
+  {t:"O app avisa que está aberto 🔔",d:"Fechou o quadro do tempo ou saiu do app? A notificação mostra os minutos estudados, quanto falta no pomodoro ou que a ligação continua ativa."},
+  {t:"Ligação firme em segundo plano 📞",d:"Trocar de app, de aba ou bloquear a tela não derruba mais a chamada no celular, no tablet e no PC."},
+  {t:"Janela por cima também no celular 📱",d:"O tempo e a ligação podem ficar numa janelinha por cima de outros apps no Android e no tablet."},
   {t:"Notas compartilhadas 👥",d:"Nova aba no menu: crie cadernos para escrever junto com colegas e veja tudo o que cada um escreve na hora. Os convites chegam nas Mensagens e a pessoa escolhe se aceita."},
   {t:"Compartilhe a tela em qualquer aparelho 📱",d:"Na chamada, toque em compartilhar tela: no celular e no tablet você mostra a tela do Logic Academy, um arquivo da estante ou a câmera de trás; no computador, a tela inteira."},
   {t:"Escolher pessoas ficou mais fácil 🔎",d:"Quem conversa com você aparece primeiro; é só tocar para marcar uma ou várias pessoas."},
@@ -4019,7 +4023,7 @@ const VOZ_VIVO=180000;
 document.addEventListener("visibilitychange",()=>{if(!V.canal||!S.db)return;
   vozDoc(V.canal).collection("participantes").doc(S.uid).update({visto:Date.now(),mudo:V.mudo}).catch(()=>{});
   if(document.visibilityState==="visible")vozRetomar();
-  else if(V.vtipo||Object.values(V.pcs).some(p=>p.vstream))vozAbrirPip(true)});
+  else vozAbrirPip(true)});
 // a chamada continua com o site em segundo plano ou a tela bloqueada (Android e PC); ao voltar, religa o que o sistema pausou
 function vozRetomar(){if(!V.canal)return;
   try{if(V.ctx&&V.ctx.state!=="running")V.ctx.resume().catch(()=>{})}catch(e){}
@@ -4069,7 +4073,7 @@ async function vozSair(silencioso){
   if(V.stream)V.stream.getTracks().forEach(t=>t.stop());
   if(V.video)V.video.stop();V.video=null;V.vtipo=null;
   Object.keys(V.an).forEach(k=>delete V.an[k]);clearInterval(V.laco);V.laco=null;
-  Object.assign(V,{canal:null,titulo:"",stream:null,parts:{},falando:{},sessao:"",pergunta:0});vozFecharAviso();vozFecharPip();vozSoltarTela();V.voltarCam=false;
+  Object.assign(V,{canal:null,titulo:"",stream:null,parts:{},falando:{},sessao:"",pergunta:0});vozInformarFlutuante();vozFecharAviso();vozFecharPip();vozSoltarTela();V.voltarCam=false;
   try{if("mediaSession" in navigator)navigator.mediaSession.playbackState="none"}catch(e){}
   try{if("mediaSession" in navigator)["enterpictureinpicture","togglemicrophone","hangup"].forEach(a=>{try{navigator.mediaSession.setActionHandler(a,null)}catch(e){}})}catch(e){}
   try{await vozDoc(canal).collection("participantes").doc(S.uid).delete()}catch(e){}
@@ -4233,8 +4237,10 @@ async function vozAbrirPip(auto){
       vozPalco();return}catch(e){if(!auto)toast("Não foi possível abrir a janela flutuante.");}}
   // navegadores sem janela flutuante completa: só o vídeo flutua
   const v=[...document.querySelectorAll("#voz-palco video[data-vt]")].find(x=>!x.muted)||document.querySelector("#voz-palco video[data-vt]");
-  if(v&&v.requestPictureInPicture){try{await v.requestPictureInPicture()}catch(e){if(!auto)toast("Ligue a câmera ou espere o vídeo aparecer para usar a janela flutuante.")}}
-  else if(!auto)toast("Este navegador não tem janela flutuante. A chamada continua mesmo se você trocar de aba.");
+  const FT=window.LAComp&&LAComp.FloatingTimer;
+  if(v&&v.requestPictureInPicture&&v.videoWidth&&document.pictureInPictureEnabled){try{await v.requestPictureInPicture();return}catch(e){}}
+  if(FT&&FT.pipPossivel&&FT.pipPossivel()){FT.abrirPip(auto);return}
+  if(!auto)toast("Este navegador não tem janela flutuante. A chamada continua mesmo se você sair do app, e a notificação mostra que ela está ativa.");
 }
 function vozFecharPip(){if(V.pip&&!V.pip.closed)V.pip.close();V.pip=null;if(document.pictureInPictureElement)document.exitPictureInPicture().catch(()=>{})}
 // Chrome abre a janela flutuante sozinho ao trocar de aba quando o site está usando câmera ou microfone
@@ -4271,7 +4277,10 @@ function vozAnalisar(uid,stream){try{const AC=window.AudioContext||window.webkit
   if(!V.laco)V.laco=setInterval(()=>{let mudou=false;Object.entries(V.an).forEach(([id,x])=>{x.an.getByteTimeDomainData(x.buf);let s=0;for(const v of x.buf){const d=(v-128)/128;s+=d*d}
     const f=Math.sqrt(s/x.buf.length)>.04&&!(id===S.uid&&V.mudo);if(!!V.falando[id]!==f){V.falando[id]=f;mudou=true}});
     if(mudou)$$("[data-voz-uid]").forEach(el=>el.classList.toggle("falando",!!V.falando[el.dataset.vozUid]))},150)}catch(e){}}
-addEventListener("pagehide",()=>{if(V.canal&&S.db)try{vozDoc(V.canal).collection("participantes").doc(S.uid).delete()}catch(e){}});
+// no celular e no tablet, "pagehide" também acontece quando a pessoa só troca de app: aí a ligação continua.
+// Só no computador, ao fechar a aba de verdade (sem guardar a página), o aviso de presença é apagado.
+addEventListener("pagehide",e=>{if(!V.canal||!S.db||e.persisted)return;if(/Android|iPhone|iPad|Mobile/i.test(navigator.userAgent)||navigator.maxTouchPoints>1)return;
+  try{vozDoc(V.canal).collection("participantes").doc(S.uid).delete()}catch(er){}});
 // ---- interface ----
 function vozPessoaHtml(id,d,eu){const p=eu?null:V.pcs[id],mudo=eu?V.mudo:d&&d.mudo,est=eu?"":p?p.estado:"conectando";
   return `<div class="voz-p ${V.falando[id]?"falando":""}" data-voz-uid="${id}" data-perfil="${id}"><span class="voz-av">${avatar(id)}</span><div style="min-width:0"><div class="nm">${esc(eu?vozNome()+" (você)":(d&&d.nome)||nomeDe(id))}</div>
@@ -4285,7 +4294,10 @@ function vozPainelHtml(canal,titulo,prev){
         :`<button class="btn primary" type="button" data-voz="entrar" data-canal="${canal}" data-titulo="${esc(titulo)}" ${V.entrando?"disabled":""}>${ico("mic")}${V.entrando?"Conectando…":outro?"Trocar para este canal":"Entrar no canal de voz"}</button>`}</div></div>
     ${lista.length?`<div class="voz-lista">${lista.map(([id,d,eu])=>vozPessoaHtml(id,d,eu)).join("")}</div>`:""}
     <p class="hint">${aqui?"Pode navegar pelo site (pomodoro, questões…) que a conversa continua. Use fone de ouvido para não dar eco.":`Até ${VOZ_MAX} pessoas por canal. O áudio vai direto entre os participantes e não é gravado.`}${outro?` Você está em <b>${esc(V.titulo)}</b>.`:""}</p></div>`}
-function vozUI(){
+function vozInformarFlutuante(){const FT=window.LAComp&&LAComp.FloatingTimer;if(!FT||!FT.chamada)return;
+  if(V.canal&&!V.desde)V.desde=Date.now();if(!V.canal)V.desde=0;
+  FT.chamada(V.canal?{titulo:V.titulo||"Chamada",desde:V.desde,mudo:!!V.mudo,n:Object.keys(V.parts||{}).length+1}:null)}
+function vozUI(){vozInformarFlutuante();
   // painéis abertos na tela
   $$("[data-voz-painel]").forEach(el=>{const c=el.dataset.vozPainel;const t=el.querySelector("h3").textContent;const prev=V.prev&&V.prev[c];el.outerHTML=vozPainelHtml(c,t,prev)});
   // barrinha fixa enquanto estiver no canal

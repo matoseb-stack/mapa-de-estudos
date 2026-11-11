@@ -163,7 +163,7 @@
   const MAX_CONJ = 25 * 1024 * 1024, PEDACO_C = 700000;
   const b64 = async blob => { const u = new Uint8Array(await blob.arrayBuffer()); let t = ""; for (let i = 0; i < u.length; i += 0x8000) t += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000)); return btoa(t); };
   const deB64 = t => { const b = atob(t), u = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u; };
-  const semId = s => JSON.stringify(s, (k, v) => k === "_id" ? undefined : v);
+  const semId = s => JSON.stringify(s, (k, v) => k === "_id" || k === "_k" ? undefined : v);
   const nuv = () => APP && APP.db && APP.db();
   const conjRef = fid => nuv().collection("compartilhados").doc(fid);
   function ouvirConjuntos() {
@@ -694,7 +694,8 @@
   }
   // arquivo conjunto: os traços chegam e saem em tempo real (um documento por traço)
   function ouvirTracos() {
-    const a = V.a, r = conjRef(a.fid); V.anot = {}; V.idsSync = {}; V.unsubs = [];
+    const a = V.a, r = conjRef(a.fid); V.anot = {}; V.idsSync = {}; V.unsubs = []; V.vivos = {};
+    p2pIniciar(a);
     return new Promise(pronto => {
       let primeiro = true;
       V.unsubs.push(r.collection("tracos").onSnapshot(sn => {
@@ -725,7 +726,7 @@
   function fecharLeitor() {
     if (!V.ov) return; salvarAnot(true);
     removeEventListener("keydown", V.tecla); removeEventListener("resize", V.redim); document.removeEventListener("fullscreenchange", V.cheiaMudou);
-    clearInterval(V.chTick); pararTx(); (V.unsubs || []).forEach(f => { try { f(); } catch (e) {} }); V.unsubs = [];
+    clearInterval(V.chTick); pararTx(); (V.unsubs || []).forEach(f => { try { f(); } catch (e) {} }); V.unsubs = []; p2pParar();
     if (document.fullscreenElement) { try { document.exitFullscreen(); } catch (e) {} }
     if (V.obs) V.obs.disconnect();
     if (V.pdf) { try { V.pdf.destroy(); } catch (e) {} }
@@ -1094,7 +1095,9 @@
     const tw = Math.round(W * r), th = Math.round(H * r);
     if (el.width !== tw || el.height !== th) { el.width = tw; el.height = th; }
     const ctx = el.getContext("2d"); ctx.clearRect(0, 0, el.width, el.height);
-    (V.anot[n] || []).forEach(s => tracar(ctx, s, el.width, el.height)); if (extra) tracar(ctx, extra, el.width, el.height);
+    (V.anot[n] || []).forEach(s => tracar(ctx, s, el.width, el.height));
+    if (V.vivos) Object.values(V.vivos).forEach(x => { if (x.pag === n && Date.now() - x.em < 8000) tracar(ctx, x.s, el.width, el.height); });
+    if (extra) tracar(ctx, extra, el.width, el.height);
   }
   function atualizarToque() { const box = V.ov && V.ov.querySelector(".est-pags"); if (box) box.classList.toggle("desenhando", V.ferr !== "mao"); }
 
@@ -1141,6 +1144,7 @@
       const caneta = e.pointerType === "pen" && e.pressure > 0;
       atual = V.ferr === "borracha" ? { f: "apagador", c: "#000", w: V.borr.w, p: [x, y], el, id: e.pointerId, ptr: e.pointerType }
         : { f: V.pen.t, c: V.pen.c, w: V.pen.w, p: [x, y], el, id: e.pointerId, ptr: e.pointerType };
+      if (V.a.compart) atual.k = Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
       if (caneta) atual.q = [Math.round(e.pressure * 100)];
     };
     box.onpointermove = e => {
@@ -1157,14 +1161,16 @@
         if (atual.borracha) apagarPerto(x, y, atual.el);
         else { const n = atual.p.length; if (Math.abs(atual.p[n - 2] - x) + Math.abs(atual.p[n - 1] - y) > 4) { atual.p.push(x, y); if (atual.q) atual.q.push(Math.round((ev.pressure || 0.5) * 100)); } } }
       if (!atual.borracha && !V.raf) V.raf = requestAnimationFrame(() => { V.raf = 0; if (atual && !atual.borracha) redesenhar(pag, limpo(atual)); });
+      if (!atual.borracha && V.a.compart) p2pVivo(pag, limpo(atual), atual.k);
     };
-    const limpo = a => { const { el, id, ptr, ...s } = a; if (s.q && s.q.length !== s.p.length / 2) delete s.q; return s; };
+    const limpo = a => { const { el, id, ptr, k, ...s } = a; if (s.q && s.q.length !== s.p.length / 2) delete s.q; return s; };
     const fim = e => {
       if (toques.has(e.pointerId)) { toques.delete(e.pointerId); if (gesto && gesto.tipo === "pinca" && toques.size < 2) { fimPinca(); return; } }
       if (gesto && gesto.tipo === "rolar" && e.pointerId === gesto.id) { const g = gesto; gesto = null; if (e.type === "pointerup") soltarEmbalo(g); return; }
       if (!atual || e.pointerId !== atual.id) return;
       if (atual.borracha) { if (atual.rem.length) { empilhar({ pag, rem: atual.rem }); marcar(pag); } }
-      else { const s = limpo(atual); (V.anot[pag] = V.anot[pag] || []).push(s); empilhar({ pag, add: s }); redesenhar(pag); marcar(pag); }
+      else { const s = limpo(atual); if (atual.k) { s._k = atual.k; } (V.anot[pag] = V.anot[pag] || []).push(s); empilhar({ pag, add: s }); redesenhar(pag);
+        if (V.a.compart) { clearTimeout(V.timer); V.sujas.add(pag); salvarAnot(); } else marcar(pag); }
       atual = null;
     };
     box.onpointerup = fim; box.onpointercancel = fim;
@@ -1197,11 +1203,12 @@
   function refazer() { const op = V.ref.pop(); if (!op) return; aplicar(op, false); V.desf.push(op); status(); }
   function status() {
     if (!V.ov) return; const st = V.ov.querySelector("[data-v-st]");
-    if (st) st.textContent = V.sujas.size ? "salvando…" : (V.salvoEm ? "salvo ✓" : (V.pags.length ? `${V.pags.length} ${V.pags.length === 1 ? "página" : "páginas"}` : ""));
+    const vivos = V.a && V.a.compart ? p2pAbertos().length : 0;
+    if (st) st.textContent = (vivos ? `⚡ ao vivo com ${vivos === 1 ? "1 pessoa" : vivos + " pessoas"} · ` : "") + (V.sujas.size ? "salvando…" : (V.salvoEm ? "salvo ✓" : (V.pags.length ? `${V.pags.length} ${V.pags.length === 1 ? "página" : "páginas"}` : "")));
     V.ov.querySelectorAll('[data-v="desfazer"]').forEach(d => d.disabled = !V.desf.length);
     V.ov.querySelectorAll('[data-v="refazer"]').forEach(r => r.disabled = !V.ref.length);
   }
-  function marcar(p) { V.sujas.add(p); status(); clearTimeout(V.timer); V.timer = setTimeout(() => salvarAnot(), 900); }
+  function marcar(p) { V.sujas.add(p); status(); clearTimeout(V.timer); V.timer = setTimeout(() => salvarAnot(), V.a && V.a.compart ? 60 : 900); }
   async function salvarAnot() {
     if (!V.a || !V.sujas.size) return;
     if (V.a.compart) return salvarTracos();
@@ -1213,16 +1220,92 @@
     if (x && apAntes.join() !== comTinta.join()) await salvarMeta();
     V.salvoEm = em; status();
   }
+  /* ---------- conexão direta entre quem está com a nota aberta (WebRTC) ----------
+     O aparelho do autor é a central (se ele não estiver, o primeiro da lista): os outros se ligam a ele e ele repassa.
+     Traços, apagados e o traço que ainda está sendo escrito chegam em décimos de segundo; a nuvem só guarda. */
+  const P2P = { fid: null, sessao: "", pcs: {}, online: {}, unsubs: [], hb: 0, central: null, ultimoVivo: 0 };
+  const p2pAtivo = () => !!P2P.fid;
+  function p2pIniciar(a) {
+    const db = nuv(); if (!db || !window.RTCPeerConnection) return;
+    p2pParar(); Object.assign(P2P, { fid: a.fid, dono: a.dono, sessao: Math.random().toString(36).slice(2, 10), pcs: {}, online: {}, unsubs: [], central: null });
+    const r = conjRef(a.fid), eu = r.collection("online").doc(E.uid);
+    const pulso = () => eu.set({ sessao: P2P.sessao, em: Date.now(), nome: APP.meuNome ? APP.meuNome() : "" }).catch(() => {});
+    pulso(); P2P.hb = setInterval(pulso, 20000);
+    P2P.unsubs.push(r.collection("online").onSnapshot(sn => { const m = {}; sn.docs.forEach(d => { const x = d.data(); if (d.id !== E.uid && Date.now() - (x.em || 0) < 75000) m[d.id] = x; }); P2P.online = m; p2pOrganizar(); }, () => {}));
+    P2P.unsubs.push(r.collection("sinais").where("para", "==", E.uid).onSnapshot(sn => sn.docChanges().forEach(ch => { if (ch.type === "added") { const d = ch.doc.data(); ch.doc.ref.delete().catch(() => {}); p2pSinal(d); } }), () => {}));
+  }
+  function p2pParar() {
+    if (!P2P.fid) return; const fid = P2P.fid;
+    clearInterval(P2P.hb); P2P.unsubs.forEach(f => { try { f(); } catch (e) {} });
+    Object.keys(P2P.pcs).forEach(p2pFechar);
+    try { conjRef(fid).collection("online").doc(E.uid).delete().catch(() => {}); } catch (e) {}
+    Object.assign(P2P, { fid: null, pcs: {}, online: {}, unsubs: [], central: null }); V.vivos = {};
+  }
+  function p2pCentral() { const ids = [E.uid].concat(Object.keys(P2P.online)); return ids.includes(P2P.dono) ? P2P.dono : ids.sort()[0]; }
+  function p2pOrganizar() {
+    if (!P2P.fid) return; const c = p2pCentral(); P2P.central = c;
+    const quero = c === E.uid ? Object.keys(P2P.online) : (P2P.online[c] ? [c] : []);
+    Object.keys(P2P.pcs).forEach(u => { const x = P2P.pcs[u]; if (!quero.includes(u) || (P2P.online[u] && P2P.online[u].sessao !== x.sessaoDele)) p2pFechar(u); });
+    quero.forEach(u => { if (!P2P.pcs[u] && E.uid === c) p2pOferecer(u); });   // a central liga para cada um
+    status();
+  }
+  function p2pPar(u, sessaoDele) {
+    const pc = new RTCPeerConnection({ iceServers: (APP.ice && APP.ice()) || [{ urls: "stun:stun.l.google.com:19302" }] });
+    const x = { pc, dc: null, sessaoDele, fila: [], criado: Date.now() }; P2P.pcs[u] = x;
+    pc.onicecandidate = e => { if (e.candidate) p2pEnviarSinal(u, sessaoDele, "ice", JSON.stringify(e.candidate)); };
+    pc.ondatachannel = e => p2pCanal(u, e.channel);
+    pc.onconnectionstatechange = () => { if (pc.connectionState === "failed" || pc.connectionState === "closed") { if (P2P.pcs[u] === x) p2pFechar(u); setTimeout(p2pOrganizar, 1500); } status(); };
+    return x;
+  }
+  function p2pCanal(u, dc) { const x = P2P.pcs[u]; if (!x) return; x.dc = dc; dc.onopen = () => status(); dc.onclose = () => status(); dc.onmessage = e => { try { p2pReceber(u, JSON.parse(e.data)); } catch (er) {} }; }
+  async function p2pOferecer(u) {
+    const d = P2P.online[u]; if (!d) return; const x = p2pPar(u, d.sessao);
+    p2pCanal(u, x.pc.createDataChannel("tracos", { ordered: true }));
+    try { const o = await x.pc.createOffer(); await x.pc.setLocalDescription(o); p2pEnviarSinal(u, d.sessao, "offer", JSON.stringify(x.pc.localDescription)); } catch (e) { console.warn("p2p oferta", e); }
+  }
+  function p2pEnviarSinal(u, alvo, tipo, dados) { if (!P2P.fid) return; conjRef(P2P.fid).collection("sinais").add({ de: E.uid, para: u, sde: P2P.sessao, alvo, tipo, dados, em: Date.now() }).catch(() => {}); }
+  async function p2pSinal(d) {
+    if (!P2P.fid || d.alvo !== P2P.sessao || Date.now() - (d.em || 0) > 60000) return;
+    try {
+      if (d.tipo === "offer") { if (P2P.pcs[d.de]) p2pFechar(d.de); const x = p2pPar(d.de, d.sde); await x.pc.setRemoteDescription(JSON.parse(d.dados));
+        for (const c of x.fila.splice(0)) await x.pc.addIceCandidate(c).catch(() => {});
+        const r = await x.pc.createAnswer(); await x.pc.setLocalDescription(r); p2pEnviarSinal(d.de, d.sde, "answer", JSON.stringify(x.pc.localDescription)); }
+      else if (d.tipo === "answer") { const x = P2P.pcs[d.de]; if (x && x.pc.signalingState === "have-local-offer") { await x.pc.setRemoteDescription(JSON.parse(d.dados)); for (const c of x.fila.splice(0)) await x.pc.addIceCandidate(c).catch(() => {}); } }
+      else if (d.tipo === "ice") { const x = P2P.pcs[d.de]; if (!x) return; const c = JSON.parse(d.dados); if (x.pc.remoteDescription) await x.pc.addIceCandidate(c).catch(() => {}); else x.fila.push(c); }
+    } catch (e) { console.warn("p2p sinal", e); }
+  }
+  function p2pFechar(u) { const x = P2P.pcs[u]; if (!x) return; try { x.pc.close(); } catch (e) {} delete P2P.pcs[u]; Object.keys(V.vivos || {}).forEach(k => { if (k.startsWith(u + ":")) { const pg = V.vivos[k].pag; delete V.vivos[k]; redesenhar(pg); } }); }
+  const p2pAbertos = () => Object.entries(P2P.pcs).filter(([, x]) => x.dc && x.dc.readyState === "open");
+  function p2pMandar(msg, exceto) { const t = JSON.stringify(msg); p2pAbertos().forEach(([u, x]) => { if (u !== exceto) try { x.dc.send(t); } catch (e) {} }); }
+  function p2pReceber(de, m) {
+    if (!V.a || !V.a.compart || V.a.fid !== P2P.fid) return;
+    if (P2P.central === E.uid) p2pMandar(m, de);                    // a central repassa para os outros
+    const pg = +m.pag;
+    if (m.t === "add" && m.s && m.s._id && pg) { const l = V.anot[pg] = V.anot[pg] || []; if (!l.some(x => x._id === m.s._id)) { l.push(m.s); (V.idsSync[pg] = V.idsSync[pg] || new Set()).add(m.s._id); }
+      if (m.k) delete (V.vivos || {})[m.k]; redesenhar(pg); }
+    else if (m.t === "del" && pg) { const l = V.anot[pg] || []; (m.ids || []).forEach(id => { const i = l.findIndex(x => x._id === id); if (i >= 0) l.splice(i, 1); if (V.idsSync[pg]) V.idsSync[pg].delete(id); }); redesenhar(pg); }
+    else if (m.t === "vivo" && pg && m.k) { (V.vivos = V.vivos || {})[m.k] = { pag: pg, s: m.s, em: Date.now() }; redesenhar(pg); }
+    else if (m.t === "fimvivo" && m.k && V.vivos && V.vivos[m.k]) { const p2 = V.vivos[m.k].pag; delete V.vivos[m.k]; redesenhar(p2); }
+  }
+  // traço sendo escrito agora: vai ~20 vezes por segundo para quem está com a nota aberta
+  function p2pVivo(pag, s, k) { if (!p2pAtivo() || !p2pAbertos().length) return; const agora = Date.now(); if (agora - P2P.ultimoVivo < 50) return; P2P.ultimoVivo = agora; p2pMandar({ t: "vivo", pag, k: E.uid + ":" + k, s }); }
+  function p2pFimVivo(k) { if (p2pAtivo()) p2pMandar({ t: "fimvivo", k: E.uid + ":" + k }); }
+
   // envia o que mudou nas páginas sujas: traço novo vira documento, traço apagado sai da nuvem
   async function salvarTracos() {
     const a = V.a, col = conjRef(a.fid).collection("tracos"), sujas = [...V.sujas]; V.sujas.clear();
     try {
+      const gravar = [];
       for (const pg of sujas) {
-        const lista = V.anot[pg] || [], antes = V.idsSync[pg] = V.idsSync[pg] || new Set(), agora = new Set();
-        for (const st of lista) { if (!st._id) st._id = col.doc().id; agora.add(st._id);
-          if (!antes.has(st._id)) { antes.add(st._id); await col.doc(st._id).set({ pag: pg, s: semId(st), autor: E.uid, em: Date.now() }); } }
-        for (const id of [...antes]) if (!agora.has(id)) { antes.delete(id); await col.doc(id).delete().catch(() => {}); }
+        const lista = V.anot[pg] || [], antes = V.idsSync[pg] = V.idsSync[pg] || new Set(), agora = new Set(), novos = [], saiu = [];
+        for (const st of lista) { if (!st._id) st._id = col.doc().id; agora.add(st._id); if (!antes.has(st._id)) { antes.add(st._id); novos.push(st); } }
+        for (const id of [...antes]) if (!agora.has(id)) { antes.delete(id); saiu.push(id); }
+        novos.forEach(st => p2pMandar({ t: "add", pag: pg, s: st, k: st._k ? E.uid + ":" + st._k : undefined }));
+        if (saiu.length) p2pMandar({ t: "del", pag: pg, ids: saiu });
+        novos.forEach(st => gravar.push(col.doc(st._id).set({ pag: pg, s: semId(st), autor: E.uid, em: Date.now() })));
+        saiu.forEach(id => gravar.push(col.doc(id).delete().catch(() => {})));
       }
+      await Promise.all(gravar);
       V.salvoEm = Date.now();
     } catch (e) { console.warn("salvar traços", e); APP.toast("Não foi possível salvar no arquivo conjunto. Confira a internet."); sujas.forEach(p => V.sujas.add(p)); }
     status();
