@@ -1,22 +1,20 @@
 /* Estante — aba "Minha estante": a pessoa organiza os próprios arquivos de estudo (PDF e imagens) em categorias
-   que ela mesma cria (Matemática, Geografia…) e escreve por cima deles, como num caderno digital:
-   caneta, marca-texto, borracha, cores, espessura, desfazer/refazer, zoom e "só caneta" (o dedo rola a página).
-   Também cria cadernos em branco (liso, pautado ou quadriculado).
-   Onde fica cada coisa:
-   - no aparelho (IndexedDB "la-estante-<uid>"): os arquivos, as capas, os desenhos e a lista (abre rápido e sem internet);
-   - na nuvem (com conta): data/users/{uid}/estante (lista e categorias), .../estante/partes/{id}_{n} (arquivo em
-     pedaços de 700 KB), .../estante/anot/{id}_{página} (desenhos) e .../estante/capas/{id} (miniatura). Só a pessoa lê e grava.
+   que ela mesma cria (Matemática, Geografia…) e escreve por cima deles, como num caderno de tablet:
+   a caneta escreve e o dedo rola a página. Também cria cadernos em branco (liso, pautado ou quadriculado).
+   Tudo fica SÓ NO APARELHO (IndexedDB "la-estante-<uid>": arquivos, capas, desenhos e a lista), sem ocupar o site.
+   Para levar um arquivo a outro aparelho: ⋯ › "Baixar com anotações" gera um arquivo .laest, que é aberto lá pelo "Enviar arquivo".
+   (Versões anteriores guardavam cópia na nuvem em data/users/{uid}/estante: na primeira abertura, ela é trazida para o
+   aparelho e apagada da nuvem.)
    Uso: LAComp.Estante.render(container, app)  ·  app: { uid, db, esc, ico, pageHead, toast, naTela } */
 (function () {
   "use strict";
-  const MAX_ARQ = 15 * 1024 * 1024, MAX_TOTAL = 200 * 1024 * 1024, PEDACO = 700000;
+  const MAX_ARQ = 200 * 1024 * 1024;              // por arquivo; o total é o espaço que o navegador libera no aparelho
   const PDFJS = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/";
   const CORES_CAT = ["#3b82f6", "#22c55e", "#f59e0b", "#ef4444", "#a855f7", "#14b8a6", "#ec4899", "#64748b"];
   const MODELOS = { liso: "Liso", pautado: "Pautado", quadriculado: "Quadriculado" };
-  const E = { uid: null, meta: null, cat: "todas", busca: "", nuvemOk: false, envios: {} };
+  const E = { uid: null, meta: null, cat: "todas", busca: "", envios: {}, livre: null };
   const novoId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
-  const tamTxt = b => b < 1024 * 1024 ? `${Math.max(1, Math.round(b / 1024))} KB` : `${(b / 1048576).toFixed(1).replace(".", ",")} MB`;
-  const dataTxt = t => new Date(t).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", year: "2-digit" });
+  const tamTxt = b => b < 1024 * 1024 ? `${Math.max(1, Math.round(b / 1024))} KB` : b < 1024 * 1048576 ? `${(b / 1048576).toFixed(1).replace(".", ",")} MB` : `${(b / 1073741824).toFixed(1).replace(".", ",")} GB`;
 
   /* ---------- armazenamento no aparelho (IndexedDB) ---------- */
   let dbp = null, dbUid = null;
@@ -33,57 +31,83 @@
   async function lg(store, k) { const d = await idb(); return new Promise((ok, no) => { const r = d.transaction(store).objectStore(store).get(k); r.onsuccess = () => ok(r.result); r.onerror = () => no(r.error); }); }
   async function gr(store, k, v) { const d = await idb(); return new Promise((ok, no) => { const t = d.transaction(store, "readwrite"); t.objectStore(store).put(v, k); t.oncomplete = () => ok(); t.onerror = () => no(t.error); }); }
   async function ap(store, k) { const d = await idb(); return new Promise((ok, no) => { const t = d.transaction(store, "readwrite"); t.objectStore(store).delete(k); t.oncomplete = () => ok(); t.onerror = () => no(t.error); }); }
-
-  /* ---------- nuvem (Firestore, só com conta) ---------- */
-  let APP = null;
-  const nuvem = () => APP && APP.db && APP.db();
-  const raiz = () => nuvem().collection("data/users/" + E.uid).doc("estante");   // data/users/{uid}/estante (+ partes, anot, capas)
-  const semCapa = m => ({ ...m, arquivos: m.arquivos.map(a => { const { capa, ...r } = a; return r; }) });
-  async function salvarMeta() {
-    E.meta.atual = Date.now();
-    await gr("meta", "meta", E.meta).catch(() => {});
-    if (nuvem()) try { await raiz().set(semCapa(E.meta)); } catch (e) { console.warn("estante meta", e && e.code); }
+  // pede ao navegador para não apagar a estante quando faltar espaço, e mede quanto ainda cabe
+  async function espaco() {
+    try { if (navigator.storage && navigator.storage.persist && !(await navigator.storage.persisted())) await navigator.storage.persist(); } catch (e) {}
+    try { if (navigator.storage && navigator.storage.estimate) { const r = await navigator.storage.estimate(); E.livre = Math.max(0, (r.quota || 0) - (r.usage || 0)); } } catch (e) { E.livre = null; }
   }
+
+  let APP = null;
+  async function salvarMeta() { E.meta.atual = Date.now(); await gr("meta", "meta", E.meta).catch(() => {}); }
   async function carregarMeta() {
-    let m = await lg("meta", "meta").catch(() => null);
-    if (nuvem()) {
-      try {
-        const s = await raiz().get();
-        if (s.exists) { const c = s.data(); if (!m || (c.atual || 0) >= (m.atual || 0)) m = { ...c, arquivos: c.arquivos.map(a => ({ ...a, capa: ((m && m.arquivos) || []).find(x => x.id === a.id)?.capa || null })) }; }
-        else if (m && m.arquivos.length) await raiz().set(semCapa(m));   // primeira vez com conta: sobe o que já estava no aparelho
-        E.nuvemOk = true;
-      } catch (e) { console.warn("estante nuvem", e && e.code); }
-    }
+    const m = await lg("meta", "meta").catch(() => null);
     E.meta = m || { categorias: [], arquivos: [], atual: 0 };
     E.meta.categorias = E.meta.categorias || []; E.meta.arquivos = E.meta.arquivos || [];
+    await trazerDaNuvem();
   }
-  const b64 = buf => { let s = ""; const u = new Uint8Array(buf); for (let i = 0; i < u.length; i += 0x8000) s += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000)); return btoa(s); };
-  const deB64 = s => { const b = atob(s), u = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u; };
-  async function subirArquivo(a, blob) {
-    if (!nuvem()) return;
-    const buf = await blob.arrayBuffer(), n = Math.max(1, Math.ceil(buf.byteLength / PEDACO)), col = raiz().collection("partes");
-    E.envios[a.id] = 0; pintarCartao(a.id);
+  /* versão anterior: traz para o aparelho o que estava na nuvem e apaga de lá (uma vez por conta) */
+  async function trazerDaNuvem() {
+    const db = APP && APP.db && APP.db(); if (!db || E.uid === "visitante") return;
+    const chave = "la_estante_local_" + E.uid; try { if (localStorage.getItem(chave)) return; } catch (e) {}
+    const deB64 = t => { const b = atob(t), u = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u; };
     try {
-      for (let i = 0; i < n; i++) {
-        await col.doc(a.id + "_" + i).set({ d: b64(buf.slice(i * PEDACO, (i + 1) * PEDACO)), i, n });
-        E.envios[a.id] = (i + 1) / n; pintarCartao(a.id);
+      const raiz = db.collection("data/users/" + E.uid).doc("estante"), s = await raiz.get();
+      if (s.exists) {
+        const c = s.data() || {}, apagar = [];
+        (c.categorias || []).forEach(k => { if (!E.meta.categorias.some(x => x.id === k.id)) E.meta.categorias.push(k); });
+        const anotLocal = {};
+        for (const a of c.arquivos || []) {
+          for (let i = 0; i < (a.partes || 0); i++) apagar.push(raiz.collection("partes").doc(a.id + "_" + i));
+          (a.ap || []).forEach(pg => apagar.push(raiz.collection("anot").doc(a.id + "_" + pg))); apagar.push(raiz.collection("capas").doc(a.id));
+          if (E.meta.arquivos.some(x => x.id === a.id)) continue;
+          if (a.tipo !== "caderno") {
+            if (!a.partes) continue;                       // nunca chegou a subir inteiro
+            const partes = []; for (let i = 0; i < a.partes; i++) { const d = await raiz.collection("partes").doc(a.id + "_" + i).get(); if (!d.exists) throw new Error("pedaço faltando"); partes.push(deB64(d.data().d)); }
+            await gr("arquivos", a.id, new Blob(partes, { type: a.mime || "application/octet-stream" }));
+          }
+          const pags = {}; for (const pg of a.ap || []) { const d = await raiz.collection("anot").doc(a.id + "_" + pg).get(); if (d.exists) pags[pg] = JSON.parse(d.data().s || "[]"); }
+          if (Object.keys(pags).length) { anotLocal[a.id] = pags; await gr("anot", a.id, { pags, em: Date.now() }); }
+          const cp = await raiz.collection("capas").doc(a.id).get().catch(() => null); const capa = cp && cp.exists ? cp.data().d : null;
+          if (capa) await gr("capas", a.id, capa).catch(() => {});
+          const { partes, nuvem, ...resto } = a; E.meta.arquivos.push({ ...resto, capa });
+        }
+        await salvarMeta();
+        for (const r of apagar) await r.delete().catch(() => {});
+        await raiz.delete().catch(() => {});
+        if ((c.arquivos || []).length) APP.toast("Sua estante agora fica só neste aparelho: os arquivos da nuvem foram trazidos para cá.");
       }
-      const x = E.meta.arquivos.find(y => y.id === a.id); if (x) { x.partes = n; x.nuvem = true; await salvarMeta(); }
-    } catch (e) { console.warn("estante envio", e && e.code); APP.toast("Não foi possível guardar o arquivo na nuvem agora. Ele ficou salvo neste aparelho."); }
-    delete E.envios[a.id]; pintarCartao(a.id);
-  }
-  async function baixarDaNuvem(a) {
-    const col = raiz().collection("partes"), partes = [];
-    for (let i = 0; i < a.partes; i++) { const s = await col.doc(a.id + "_" + i).get(); if (!s.exists) throw new Error("pedaço faltando"); partes.push(deB64(s.data().d)); }
-    const blob = new Blob(partes, { type: a.mime || "application/octet-stream" });
-    await gr("arquivos", a.id, blob).catch(() => {});
-    return blob;
+      try { localStorage.setItem(chave, "1"); } catch (e) {}
+    } catch (e) { console.warn("estante: trazer da nuvem", e); }
   }
   async function blobDe(a) {
     if (a.tipo === "caderno") return null;
     const b = await lg("arquivos", a.id).catch(() => null); if (b) return b;
-    if (nuvem() && a.partes) return baixarDaNuvem(a);
     throw new Error("arquivo não está neste aparelho");
+  }
+  /* pacote .laest: o arquivo + as anotações, para abrir em outro aparelho */
+  const MAGICO = "LAEST1\n";
+  async function exportarPacote(a) {
+    const anot = await lg("anot", a.id).catch(() => null), b = await blobDe(a).catch(() => null);
+    if (a.tipo !== "caderno" && !b) { APP.toast("Este arquivo não está neste aparelho."); return; }
+    const { capa, ...info } = a, cab = JSON.stringify({ info, anot: anot ? anot.pags : {}, capa: capa || null });
+    const tamCab = new TextEncoder().encode(cab).length;
+    baixar(new Blob([MAGICO, String(tamCab).padStart(12, "0"), cab, b || new Blob([])], { type: "application/octet-stream" }), a.nome + ".laest");
+    APP.toast("Pronto! No outro aparelho, abra a estante e use “Enviar arquivo” com este .laest.");
+  }
+  async function ehPacote(f) { if (/\.laest$/i.test(f.name)) return true; try { return (await f.slice(0, MAGICO.length).text()) === MAGICO; } catch (e) { return false; } }
+  async function importarPacote(f) {
+    try {
+      const n = +(await f.slice(MAGICO.length, MAGICO.length + 12).text()), ini = MAGICO.length + 12;
+      const bytesCab = await f.slice(ini, ini + n).arrayBuffer(), cab = JSON.parse(new TextDecoder().decode(bytesCab)), info = cab.info || {};
+      if (!info.tipo) throw new Error("pacote inválido");
+      const id = E.meta.arquivos.some(x => x.id === info.id) ? novoId() : (info.id || novoId());
+      if (info.tipo !== "caderno") await gr("arquivos", id, new Blob([f.slice(ini + n)], { type: info.mime || "application/octet-stream" }));
+      if (cab.anot && Object.keys(cab.anot).length) await gr("anot", id, { pags: cab.anot, em: Date.now() });
+      if (cab.capa) await gr("capas", id, cab.capa).catch(() => {});
+      const cat = catDe(info.cat) ? info.cat : (catDe(E.cat) ? E.cat : "");
+      E.meta.arquivos.push({ ...info, id, cat, criado: info.criado || Date.now(), capa: cab.capa || null, ap: Object.keys(cab.anot || {}).filter(k => (cab.anot[k] || []).length).map(Number) });
+      await salvarMeta(); APP.toast(`“${info.nome}” chegou com as anotações.`); return true;
+    } catch (e) { console.warn("pacote", e); APP.toast(`Não foi possível abrir “${f.name}”.`); return false; }
   }
 
   /* ---------- PDF (pdf.js, carregado só quando precisa) ---------- */
@@ -127,21 +151,21 @@
   let CONT = null;
   async function render(container, app) {
     APP = app; CONT = container; container.onclick = null;
-    const uid = app.uid(); if (E.uid !== uid) Object.assign(E, { uid, meta: null, cat: "todas", busca: "", nuvemOk: false });
+    const uid = app.uid(); if (E.uid !== uid) Object.assign(E, { uid, meta: null, cat: "todas", busca: "" });
     if (!E.meta) {
       container.innerHTML = `<div class="page">${app.pageHead("Minha estante", "Seus arquivos de estudo organizados por matéria.")}<div class="card row muted"><span class="spinner"></span>Abrindo sua estante…</div></div>`;
       try { await carregarMeta(); } catch (e) { E.meta = { categorias: [], arquivos: [], atual: 0 }; }
+      await espaco();
       if (!app.naTela()) return;
       completarCapas();
     }
     pintar();
   }
-  // capas que estão só na nuvem (outro aparelho) ou só no aparelho
+  // capas guardadas à parte (a lista fica leve)
   async function completarCapas() {
     for (const a of E.meta.arquivos) {
       if (a.capa) continue;
-      let c = await lg("capas", a.id).catch(() => null);
-      if (!c && nuvem()) { try { const s = await raiz().collection("capas").doc(a.id).get(); if (s.exists) { c = s.data().d; gr("capas", a.id, c).catch(() => {}); } } catch (e) {} }
+      const c = await lg("capas", a.id).catch(() => null);
       if (c) { a.capa = c; pintarCartao(a.id); }
     }
   }
@@ -158,7 +182,7 @@
     CONT.innerHTML = `<div class="page estante">
       ${APP.pageHead("Minha estante", "Organize seus PDFs, fotos e cadernos por matéria e escreva por cima deles.",
         `<button class="btn" type="button" data-e="caderno">${ico("edit")}Novo caderno</button><button class="btn primary" type="button" data-e="enviar">${ico("upload")}Enviar arquivo</button>`)}
-      <input type="file" id="est-arq" accept="application/pdf,image/png,image/jpeg,image/webp,image/gif" multiple hidden>
+      <input type="file" id="est-arq" accept="application/pdf,image/png,image/jpeg,image/webp,image/gif,.laest" multiple hidden>
       <div class="est-cats" role="tablist" aria-label="Categorias">
         <button type="button" role="tab" class="est-cat ${E.cat === "todas" ? "on" : ""}" data-cat="todas" aria-selected="${E.cat === "todas"}">📚 Todos <small>${M.arquivos.length}</small></button>
         ${M.categorias.map(c => `<button type="button" role="tab" class="est-cat ${E.cat === c.id ? "on" : ""}" data-cat="${c.id}" aria-selected="${E.cat === c.id}"><i style="background:${c.cor}"></i>${esc(c.nome)} <small>${M.arquivos.filter(a => a.cat === c.id).length}</small></button>`).join("")}
@@ -168,13 +192,13 @@
       <div class="row est-barra">
         <input type="search" id="est-busca" placeholder="Buscar arquivo pelo nome" value="${esc(E.busca)}" aria-label="Buscar arquivo">
         ${cat ? `<button class="btn sm ghost" type="button" data-e="edit-cat">${ico("gear")}Editar “${esc(cat.nome)}”</button>` : ""}
-        <span class="small muted" style="margin-left:auto">${M.arquivos.length} ${M.arquivos.length === 1 ? "arquivo" : "arquivos"} · ${tamTxt(total)} de ${tamTxt(MAX_TOTAL)}${nuvem() ? (E.nuvemOk ? " · ☁️ sincronizada" : " · offline") : " · só neste aparelho"}</span>
+        <span class="small muted" style="margin-left:auto">${M.arquivos.length} ${M.arquivos.length === 1 ? "arquivo" : "arquivos"} · ${tamTxt(total)}${E.livre != null ? ` · ${tamTxt(E.livre)} livres` : ""} · 📱 só neste aparelho</span>
       </div>
       ${lista.length ? `<div class="est-grade">${lista.map(cartao).join("")}</div>`
         : `<div class="card est-vazia" data-e="enviar"><div class="est-vazia-ic">📂</div><h3>${M.arquivos.length ? "Nada nesta categoria ainda" : "Sua estante está vazia"}</h3>
             <p class="muted small">Envie PDFs de apostilas e listas, fotos do caderno ou crie um caderno em branco. Depois é só abrir e escrever por cima com caneta ou marca-texto.</p>
             <p class="small"><b>Toque aqui</b> ou arraste os arquivos para esta tela.</p></div>`}
-      <p class="hint">Aceita PDF e imagens (JPG, PNG, WebP) de até ${tamTxt(MAX_ARQ)}. ${nuvem() ? "Com a sua conta, os arquivos e os desenhos ficam guardados na nuvem e abrem em qualquer aparelho." : "No modo visitante, os arquivos ficam só neste aparelho."}</p>
+      <p class="hint">Aceita PDF e imagens (JPG, PNG, WebP) de até ${tamTxt(MAX_ARQ)}. Os arquivos e os desenhos ficam guardados só neste aparelho, sem ocupar espaço no site. Para abrir em outro aparelho, toque em ⋯ › “Baixar com anotações” e envie o arquivo .laest na estante do outro aparelho.</p>
     </div>`;
     ligar();
   }
@@ -220,23 +244,23 @@
   /* ---------- enviar arquivos ---------- */
   async function enviar(files) {
     if (!files.length) return;
-    let total = E.meta.arquivos.reduce((s, a) => s + (a.tam || 0), 0);
+    await espaco(); let livre = E.livre;
     for (const f of files) {
+      if (await ehPacote(f)) { if (await importarPacote(f) && APP.naTela()) pintar(); continue; }
       const tipo = f.type === "application/pdf" || /\.pdf$/i.test(f.name) ? "pdf" : /^image\/(png|jpe?g|webp|gif)$/.test(f.type) ? "img" : null;
       if (!tipo) { APP.toast(`“${f.name}” não é PDF nem imagem.`); continue; }
       if (f.size > MAX_ARQ) { APP.toast(`“${f.name}” passa de ${tamTxt(MAX_ARQ)}. Divida o PDF ou comprima a imagem.`); continue; }
-      if (total + f.size > MAX_TOTAL) { APP.toast(`Sua estante chegou a ${tamTxt(MAX_TOTAL)}. Apague arquivos antigos para enviar mais.`); break; }
-      total += f.size;
+      if (livre != null && f.size * 1.1 > livre) { APP.toast(`Não há espaço livre neste aparelho para “${f.name}”. Apague arquivos antigos da estante ou libere espaço.`); break; }
+      if (livre != null) livre -= f.size;
       APP.toast(`Guardando “${f.name}”…`);
       const id = novoId(), info = await capaDe(tipo, f);
       if (tipo === "pdf" && !info.paginas) { APP.toast(`Não foi possível ler “${f.name}”. O PDF pode estar protegido ou danificado.`); continue; }
       const a = { id, nome: f.name.replace(/\.[a-z0-9]+$/i, "").slice(0, 80) || "Arquivo", tipo, mime: f.type || "application/pdf", tam: f.size, paginas: info.paginas,
         cat: catDe(E.cat) ? E.cat : "", criado: Date.now(), ap: [] };
-      await gr("arquivos", id, f);
-      if (info.capa) { await gr("capas", id, info.capa).catch(() => {}); if (nuvem()) raiz().collection("capas").doc(id).set({ d: info.capa }).catch(() => {}); }
+      try { await gr("arquivos", id, f); } catch (e) { APP.toast(`Não coube “${f.name}” neste aparelho (${(e && e.name) || "erro"}).`); continue; }
+      if (info.capa) await gr("capas", id, info.capa).catch(() => {});
       E.meta.arquivos.push({ ...a, capa: info.capa }); await salvarMeta();
       if (APP.naTela()) pintar();
-      subirArquivo(a, f);
     }
   }
   /* ---------- caderno em branco ---------- */
@@ -251,7 +275,7 @@
     bg.querySelector("[data-ok]").onclick = async () => {
       const nome = bg.querySelector("#ec-nome").value.trim() || "Caderno", cat = bg.querySelector("#ec-cat").value, info = await capaDe("caderno", null, mod), id = novoId();
       const a = { id, nome, tipo: "caderno", modelo: mod, tam: 0, paginas: 1, cat, criado: Date.now(), ap: [] };
-      if (info.capa) { await gr("capas", id, info.capa).catch(() => {}); if (nuvem()) raiz().collection("capas").doc(id).set({ d: info.capa }).catch(() => {}); }
+      if (info.capa) await gr("capas", id, info.capa).catch(() => {});
       E.meta.arquivos.push({ ...a, capa: info.capa }); await salvarMeta(); bg.remove(); pintar(); abrir(id);
     };
   }
@@ -290,6 +314,7 @@
     const a = E.meta.arquivos.find(x => x.id === id); if (!a) return;
     const pop = document.createElement("div"); pop.className = "est-pop card";
     pop.innerHTML = `<button type="button" data-m="abrir">Abrir</button><button type="button" data-m="renomear">Renomear</button><button type="button" data-m="mover">Mudar de categoria</button>
+      <button type="button" data-m="pacote">Baixar com anotações <small class="muted">(para outro aparelho)</small></button>
       ${a.tipo !== "caderno" ? `<button type="button" data-m="baixar">Baixar o original</button>` : ""}<button type="button" data-m="apagar" class="danger">Apagar</button>`;
     document.body.appendChild(pop);
     const r = ancora.getBoundingClientRect(); pop.style.top = Math.min(innerHeight - pop.offsetHeight - 8, r.bottom + 4) + "px"; pop.style.left = Math.max(8, Math.min(innerWidth - pop.offsetWidth - 8, r.right - pop.offsetWidth)) + "px";
@@ -304,17 +329,14 @@
           <div class="row" style="justify-content:flex-end"><button class="btn ghost" type="button" data-x>Cancelar</button><button class="btn primary" type="button" data-ok>Mover</button></div>`);
         bg.querySelector("[data-ok]").onclick = async () => { a.cat = bg.querySelector("#em-cat").value; await salvarMeta(); bg.remove(); pintar(); }; }
       else if (x === "baixar") { try { const b = await blobDe(a); baixar(b, a.nome + (a.tipo === "pdf" ? ".pdf" : "." + ((a.mime || "").split("/")[1] || "png"))); } catch (err) { APP.toast("Não foi possível baixar agora."); } }
+      else if (x === "pacote") exportarPacote(a);
       else if (x === "apagar") apagar(a);
     };
   }
   async function apagar(a) {
-    if (!await perguntar(`Apagar “${a.nome}”?`, "O arquivo e todas as anotações dele somem deste aparelho e da nuvem. Não dá para desfazer.", "Apagar", true)) return;
+    if (!await perguntar(`Apagar “${a.nome}”?`, "O arquivo e todas as anotações dele somem deste aparelho. Não dá para desfazer.", "Apagar", true)) return;
     E.meta.arquivos = E.meta.arquivos.filter(x => x.id !== a.id); await salvarMeta(); pintar();
     await Promise.all([ap("arquivos", a.id), ap("anot", a.id), ap("capas", a.id)].map(p => p.catch(() => {})));
-    if (nuvem()) { const r = raiz(), ops = [r.collection("capas").doc(a.id).delete()];
-      for (let i = 0; i < (a.partes || 0); i++) ops.push(r.collection("partes").doc(a.id + "_" + i).delete());
-      (a.ap || []).forEach(p => ops.push(r.collection("anot").doc(a.id + "_" + p).delete()));
-      await Promise.all(ops.map(p => p.catch(() => {}))); }
     APP.toast("Arquivo apagado.");
   }
   function baixar(blob, nome) { const u = URL.createObjectURL(blob), l = document.createElement("a"); l.href = u; l.download = nome; document.body.appendChild(l); l.click(); l.remove(); setTimeout(() => URL.revokeObjectURL(u), 4000); }
@@ -352,9 +374,9 @@
   };
   const V = { a: null, pdf: null, img: null, pags: [], anot: {}, ferr: "caneta",
     cfg: { caneta: { c: PALETA[0], w: 24 }, lapis: { c: PALETA[1], w: 14 }, marca: { c: PALETA_MARCA[0], w: 140 }, borracha: { w: 170 } },
-    recentes: [PALETA[0], PALETA[2], PALETA[6], PALETA[4]], soCaneta: false, viuCaneta: false, zoom: 1, desf: [], ref: [], sujas: new Set(), timer: null, obs: null, raf: 0 };
-  try { const s = JSON.parse(localStorage.getItem("la_estante_caneta") || "null"); if (s) { Object.assign(V.cfg, s.cfg || {}); if (s.recentes) V.recentes = s.recentes; if (s.ferr) V.ferr = s.ferr; V.soCaneta = !!s.soCaneta; V.viuCaneta = !!s.viuCaneta; } } catch (e) {}
-  const guardarPrefs = () => { try { localStorage.setItem("la_estante_caneta", JSON.stringify({ cfg: V.cfg, recentes: V.recentes, ferr: V.ferr, soCaneta: V.soCaneta, viuCaneta: V.viuCaneta })); } catch (e) {} };
+    recentes: [PALETA[0], PALETA[2], PALETA[6], PALETA[4]], dedoEscreve: false, zoom: 1, desf: [], ref: [], sujas: new Set(), timer: null, obs: null, raf: 0 };
+  try { const s = JSON.parse(localStorage.getItem("la_estante_caneta") || "null"); if (s) { Object.assign(V.cfg, s.cfg || {}); if (s.recentes) V.recentes = s.recentes; if (s.ferr) V.ferr = s.ferr; V.dedoEscreve = !!s.dedoEscreve; } } catch (e) {}
+  const guardarPrefs = () => { try { localStorage.setItem("la_estante_caneta", JSON.stringify({ cfg: V.cfg, recentes: V.recentes, ferr: V.ferr, dedoEscreve: V.dedoEscreve })); } catch (e) {} };
 
   // janela de confirmação própria (as caixas do navegador falham em alguns tablets e apps instalados)
   function perguntar(titulo, texto, botao, perigo) {
@@ -414,7 +436,7 @@
       await carregarAnot();
     } catch (e) {
       console.warn("abrir", e);
-      ov.querySelector(".est-pags").innerHTML = `<div class="card stack" style="margin:24px auto;max-width:460px"><b>Não foi possível abrir este arquivo.</b><p class="small muted">${nuvem() ? "Confira sua internet: ele pode estar guardado só na nuvem." : "Ele foi enviado em outro aparelho e não está guardado neste."}</p></div>`;
+      ov.querySelector(".est-pags").innerHTML = `<div class="card stack" style="margin:24px auto;max-width:460px"><b>Não foi possível abrir este arquivo.</b><p class="small muted">Ele não está guardado neste aparelho. No aparelho onde ele está, use ⋯ › “Baixar com anotações” e envie o arquivo .laest aqui.</p></div>`;
       return;
     }
     if (!ov.isConnected) return;
@@ -422,10 +444,6 @@
   }
   async function carregarAnot() {
     const loc = await lg("anot", V.a.id).catch(() => null); V.anot = (loc && loc.pags) || {};
-    if (nuvem() && (V.a.ap || []).length) {
-      const r = raiz().collection("anot");
-      await Promise.all(V.a.ap.map(async p => { try { const s = await r.doc(V.a.id + "_" + p).get(); if (s.exists) { const d = s.data(); if (!loc || (d.em || 0) >= (loc.em || 0)) V.anot[p] = JSON.parse(d.s || "[]"); } } catch (e) {} }));
-    }
   }
   function fecharLeitor() {
     if (!V.ov) return; salvarAnot(true);
@@ -513,7 +531,7 @@
   function abrirMenu(ancora) {
     const ja = V.ov.querySelector(".est-menu-v"); fecharPaineis(); if (ja) return;
     const n = paginaNaTela(), cad = ehCaderno(), m = document.createElement("div"); m.className = "est-menu-v"; m.setAttribute("role", "menu");
-    m.innerHTML = `<button type="button" role="menuitemcheckbox" aria-checked="${V.soCaneta}" data-mn="caneta"><span>${V.soCaneta ? "✓" : ""}</span>Só a caneta escreve <small>o dedo rola e dá zoom</small></button>
+    m.innerHTML = `<button type="button" role="menuitemcheckbox" aria-checked="${V.dedoEscreve}" data-mn="caneta"><span>${V.dedoEscreve ? "✓" : ""}</span>Escrever com o dedo <small>para celular sem caneta</small></button>
       ${cad ? `<button type="button" role="menuitem" data-mn="inserir"><span>＋</span>Nova folha depois da ${n}</button>
         <button type="button" role="menuitem" data-mn="apagar-folha" class="danger" ${V.pags.length < 2 ? "disabled" : ""}><span>${ICF.lixo}</span>Apagar a folha ${n}${V.pags.length < 2 ? " <small>o caderno precisa de ao menos uma</small>" : ""}</button>` : ""}
       <button type="button" role="menuitem" data-mn="limpar"><span>🧽</span>Apagar os desenhos da página ${n}</button>
@@ -526,7 +544,7 @@
     m.onclick = async e => {
       const b = e.target.closest("[data-mn]"); if (!b || b.disabled) return; m.remove(); document.removeEventListener("pointerdown", fora, true);
       const x = b.dataset.mn;
-      if (x === "caneta") { V.soCaneta = !V.soCaneta; V.viuCaneta = true; guardarPrefs(); APP.toast(V.soCaneta ? "Só a caneta escreve. Use o dedo para rolar e dois dedos para zoom." : "Dedo, mouse e caneta escrevem."); }
+      if (x === "caneta") { V.dedoEscreve = !V.dedoEscreve; guardarPrefs(); APP.toast(V.dedoEscreve ? "O dedo também escreve. Para rolar, use dois dedos ou a mão (✋)." : "O dedo rola a página e a caneta escreve."); }
       else if (x === "inserir") inserirFolha(n);
       else if (x === "apagar-folha") apagarFolha(n);
       else if (x === "limpar") limparPagina(n);
@@ -633,38 +651,55 @@
   }
   function atualizarToque() { const box = V.ov && V.ov.querySelector(".est-pags"); if (box) box.classList.toggle("desenhando", V.ferr !== "mao"); }
 
-  /* ---------- caneta, dedo e gestos ---------- */
+  /* ---------- caneta, dedo e gestos ----------
+     como num tablet: a caneta (e o mouse) escrevem; o dedo rola a página, com embalo, e dois dedos dão zoom.
+     Enquanto a caneta encosta na tela, toques de dedo ou da mão apoiada são ignorados. "Escrever com o dedo" fica no menu ⋮. */
   function ligarCaneta(box) {
-    let atual = null, pag = 0;
+    let atual = null, pag = 0, embalo = 0;
     const toques = new Map(); let gesto = null;      // dedos na tela: rolar (1) ou pinça de zoom (2)
     const pos = (e, el) => { const r = el.getBoundingClientRect(); return [Math.round(Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * 10000), Math.round(Math.max(0, Math.min(1, (e.clientY - r.top) / r.height)) * 10000)]; };
     const dist = () => { const [a, b] = [...toques.values()]; return Math.hypot(a.x - b.x, a.y - b.y) || 1; };
     const fimPinca = () => { if (!gesto || gesto.tipo !== "pinca") return; const z = gesto.z; box.style.zoom = ""; gesto = null; mudarZoom(z); };
+    const pararEmbalo = () => { if (embalo) { cancelAnimationFrame(embalo); embalo = 0; } };
+    const soltarEmbalo = g => {                      // continua rolando depois que o dedo sai, perdendo velocidade
+      let vx = g.vx || 0, vy = g.vy || 0; if (Date.now() - g.t > 80 || Math.hypot(vx, vy) < 0.15) return;
+      let ant = performance.now();
+      const passo = agora => { const dt = Math.min(40, agora - ant); ant = agora; box.scrollBy(-vx * dt, -vy * dt);
+        const f = Math.pow(0.995, dt); vx *= f; vy *= f; embalo = Math.hypot(vx, vy) > 0.02 ? requestAnimationFrame(passo) : 0; };
+      embalo = requestAnimationFrame(passo);
+    };
+    const comecarRolar = e => { gesto = { tipo: "rolar", id: e.pointerId, x: e.clientX, y: e.clientY, t: Date.now(), vx: 0, vy: 0 }; };
     box.onpointerdown = e => {
       if (e.target.closest("button")) return;
-      fecharPaineis();
-      if (e.pointerType === "pen" && !V.viuCaneta) { V.viuCaneta = true; V.soCaneta = true; guardarPrefs(); APP.toast("Caneta detectada: agora só a caneta escreve e o dedo rola a página. Dá para mudar no menu ⋮."); }
+      fecharPaineis(); pararEmbalo();
       const dedo = e.pointerType === "touch";
-      if (dedo) { toques.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (dedo) {
+        if (atual && atual.ptr !== "touch") return;                // mão apoiada enquanto a caneta escreve
+        toques.set(e.pointerId, { x: e.clientX, y: e.clientY });
         if (toques.size === 2) {                                   // dois dedos: zoom (descarta o traço que o primeiro dedo começou)
-          if (atual && !atual.borracha) { atual = null; redesenhar(pag); }
+          if (atual) { if (atual.borracha) { aplicar({ pag, rem: atual.rem }, true); } atual = null; redesenhar(pag); }
           gesto = { tipo: "pinca", d0: dist(), z0: V.zoom, z: V.zoom }; e.preventDefault(); return; }
-        if (V.soCaneta || V.ferr === "mao") { gesto = { tipo: "rolar", id: e.pointerId, x: e.clientX, y: e.clientY }; return; } }
-      if (V.ferr === "mao") { if (e.pointerType === "mouse") gesto = { tipo: "rolar", id: e.pointerId, x: e.clientX, y: e.clientY }; return; }
+        if (toques.size > 2) return;
+        if (!V.dedoEscreve || V.ferr === "mao") { comecarRolar(e); return; } }
+      if (V.ferr === "mao") { if (e.pointerType === "mouse") comecarRolar(e); return; }
       const el = e.target.closest(".est-pag"); if (!el) return;
       if (e.button > 0) return;
       e.preventDefault(); try { box.setPointerCapture(e.pointerId); } catch (er) {}
       pag = +el.dataset.pag;
       const [x, y] = pos(e, el);
-      if (V.ferr === "borracha") { atual = { borracha: true, el, rem: [], id: e.pointerId }; apagarPerto(x, y, el); return; }
+      if (V.ferr === "borracha") { atual = { borracha: true, el, rem: [], id: e.pointerId, ptr: e.pointerType }; apagarPerto(x, y, el); return; }
       const caneta = e.pointerType === "pen" && e.pressure > 0;
-      atual = { f: V.ferr, c: corDe(V.ferr), w: V.cfg[V.ferr].w, p: [x, y], el, id: e.pointerId };
+      atual = { f: V.ferr, c: corDe(V.ferr), w: V.cfg[V.ferr].w, p: [x, y], el, id: e.pointerId, ptr: e.pointerType };
       if (caneta) atual.q = [Math.round(e.pressure * 100)];
     };
     box.onpointermove = e => {
       if (toques.has(e.pointerId)) toques.set(e.pointerId, { x: e.clientX, y: e.clientY });
       if (gesto && gesto.tipo === "pinca") { if (toques.size >= 2) { gesto.z = Math.max(0.5, Math.min(3, gesto.z0 * dist() / gesto.d0)); box.style.zoom = String(gesto.z / V.zoom); V.ov.querySelector("[data-zoom]").textContent = Math.round(gesto.z * 100) + "%"; } return; }
-      if (gesto && gesto.tipo === "rolar" && e.pointerId === gesto.id) { box.scrollBy(gesto.x - e.clientX, gesto.y - e.clientY); gesto.x = e.clientX; gesto.y = e.clientY; return; }
+      if (gesto && gesto.tipo === "rolar" && e.pointerId === gesto.id) {
+        const dx = e.clientX - gesto.x, dy = e.clientY - gesto.y, agora = Date.now(), dt = Math.max(1, agora - gesto.t);
+        box.scrollBy(-dx, -dy);
+        gesto.vx = gesto.vx * 0.6 + (dx / dt) * 0.4; gesto.vy = gesto.vy * 0.6 + (dy / dt) * 0.4;   // velocidade (px/ms) suavizada
+        gesto.x = e.clientX; gesto.y = e.clientY; gesto.t = agora; return; }
       if (!atual || e.pointerId !== atual.id) return;
       const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
       for (const ev of (evs.length ? evs : [e])) { const [x, y] = pos(ev, atual.el);
@@ -672,16 +707,17 @@
         else { const n = atual.p.length; if (Math.abs(atual.p[n - 2] - x) + Math.abs(atual.p[n - 1] - y) > 4) { atual.p.push(x, y); if (atual.q) atual.q.push(Math.round((ev.pressure || 0.5) * 100)); } } }
       if (!atual.borracha && !V.raf) V.raf = requestAnimationFrame(() => { V.raf = 0; if (atual && !atual.borracha) redesenhar(pag, limpo(atual)); });
     };
-    const limpo = a => { const { el, id, ...s } = a; if (s.q && s.q.length !== s.p.length / 2) delete s.q; return s; };
+    const limpo = a => { const { el, id, ptr, ...s } = a; if (s.q && s.q.length !== s.p.length / 2) delete s.q; return s; };
     const fim = e => {
       if (toques.has(e.pointerId)) { toques.delete(e.pointerId); if (gesto && gesto.tipo === "pinca" && toques.size < 2) { fimPinca(); return; } }
-      if (gesto && gesto.tipo === "rolar" && e.pointerId === gesto.id) { gesto = null; return; }
+      if (gesto && gesto.tipo === "rolar" && e.pointerId === gesto.id) { const g = gesto; gesto = null; if (e.type === "pointerup") soltarEmbalo(g); return; }
       if (!atual || e.pointerId !== atual.id) return;
       if (atual.borracha) { if (atual.rem.length) { empilhar({ pag, rem: atual.rem }); marcar(pag); } }
       else { const s = limpo(atual); (V.anot[pag] = V.anot[pag] || []).push(s); empilhar({ pag, add: s }); redesenhar(pag); marcar(pag); }
       atual = null;
     };
     box.onpointerup = fim; box.onpointercancel = fim;
+    box.onwheel = () => pararEmbalo();
     function apagarPerto(x, y, el) {
       const lista = V.anot[pag] || [], raio = V.cfg.borracha.w / 2, asp = el.clientHeight / el.clientWidth;
       for (let i = lista.length - 1; i >= 0; i--) {
@@ -722,11 +758,6 @@
     const comTinta = Object.keys(anot).filter(p => (anot[p] || []).length).map(Number).sort((x, y) => x - y);
     const x = E.meta.arquivos.find(y => y.id === a.id), apAntes = (x && x.ap) || [];
     if (x) x.ap = comTinta;
-    if (nuvem()) {
-      try { const r = raiz().collection("anot");
-        await Promise.all(sujas.map(p => ((anot[p] || []).length ? r.doc(a.id + "_" + p).set({ s: JSON.stringify(anot[p]), em }) : r.doc(a.id + "_" + p).delete()).catch(e => console.warn("anot", e && e.code))));
-      } catch (e) { console.warn("anot", e); }
-    }
     if (x && apAntes.join() !== comTinta.join()) await salvarMeta();
     V.salvoEm = em; status();
   }

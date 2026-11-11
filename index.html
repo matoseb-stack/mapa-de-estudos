@@ -1074,7 +1074,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=3.2">
+<link rel="stylesheet" href="css/componentes.css?v=3.3">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -1084,7 +1084,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/ExercicioIdioma.js?v=3.0"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
-<script src="js/componentes/Estante.js?v=3.2"></script>
+<script src="js/componentes/Estante.js?v=3.3"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
@@ -1876,7 +1876,7 @@ function ligarWizard(){
   f.addEventListener("submit",e=>{e.preventDefault();lerWizard();
     if(S.editar){if(S.step===1){S.step=2;renderWizard();scrollTo(0,0)}else salvarEdicao();return}
     if(S.step===0)aplicarAlvo(d);
-    if(S.step<PASSOS.length-1){S.step++;renderWizard();scrollTo(0,0);if(S.step===1&&!d.materias.length&&d.detalhe&&!d.alvo&&iaEditalDisponivel()&&d.iaPedido!==d.detalhe)materiasComIA(d);return}
+    if(S.step<PASSOS.length-1){S.step++;renderWizard();scrollTo(0,0);if(S.step===1&&!d.materias.some(m=>m.auto)&&d.detalhe&&!d.alvo&&iaEditalDisponivel()&&d.iaPedido!==d.detalhe)materiasComIA(d);return}
     const novo=!S.plano;S.perfil=clone(d);S.perfil.tema=temaAtual();Object.assign(P.dur,{foco:+d.bloco,curta:+d.pausa});if(!P.rodando)P.restante=pomoTotal();
     gravar("perfil",S.perfil,true);
     if(S.mode==="nuvem"&&S.pubOk&&!S.soc.perfis[S.uid])criarPerfilPub({nome:d.nome||"Estudante",bio:"",foto:"",objetivo:descObjetivo(d),desde:Date.now()});
@@ -1928,7 +1928,9 @@ function usarAlvoComoEdital(d){
 }
 // coloca as matérias da prova escolhida (troca as que vieram de outra prova e mantém as que a pessoa escreveu)
 function aplicarAlvo(d){
-  const e=alvoPorId(d.alvo);if(!e||d.alvoAplicado===e.id&&d.materias.length)return;
+  const e=alvoPorId(d.alvo);
+  if(!e){d.materias=d.materias.filter(m=>!m.auto||(m.auto==="ia"&&d.iaPedido===d.detalhe));d.alvoAplicado="";return}   // trocou para uma prova escrita à mão
+  if(d.alvoAplicado===e.id&&d.materias.length)return;
   const minhas=d.materias.filter(m=>!m.auto),novas=materiasDoAlvo(e).filter(m=>!minhas.some(x=>norm(x.nome)===norm(m.nome)));
   d.materias=novas.concat(minhas);d.alvoAplicado=e.id;
 }
@@ -2656,12 +2658,13 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="2.7";
+const APP_VERSAO="2.8";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
-  {t:"Minha estante 🗂️",d:"Uma estante virtual para os seus arquivos: crie categorias como Matemática e Geografia, envie PDFs e fotos e abra quando quiser."},
-  {t:"Escreva por cima dos arquivos ✒️",d:"Caneta, marca-texto, borracha, cores, espessura, desfazer e zoom, como num caderno digital. Com caneta no tablet, ligue “Só caneta” e role a página com o dedo."},
-  {t:"Cadernos em branco 📓",d:"Crie cadernos lisos, pautados ou quadriculados para resumos e exercícios feitos à mão."},
-  {t:"Tudo salvo na sua conta ☁️",d:"Arquivos e desenhos ficam no aparelho e na nuvem, e abrem no celular e no computador."},
+  {t:"Escreva como num tablet ✍️",d:"Nos arquivos e cadernos da estante, a caneta escreve e o dedo rola a página; dois dedos dão zoom. Tocando de novo na ferramenta, você escolhe espessura e cor. Sem caneta? Ligue “Escrever com o dedo” no menu ⋮."},
+  {t:"Folhas do caderno 📓",d:"Crie e apague folhas pela lixeira de cada folha ou pelo menu ⋮."},
+  {t:"Estante só no seu aparelho 📱",d:"Os arquivos agora ficam guardados só no aparelho, e cabem arquivos de até 200 MB. Para levar a outro aparelho, use ⋯ › “Baixar com anotações” e envie o .laest lá."},
+  {t:"Triagem com a sua prova 🎯",d:"Escolha ENEM, vestibulares, escolas militares, OAB e carreiras do Direito, concursos, idiomas ou o seu curso: a IA monta a semana com as matérias e os tópicos que a prova cobra."},
+  {t:"Conversas mais leves 💬",d:"As mensagens somem em 7 dias. Arquivos de até 100 MB ficam no aparelho de quem recebe e saem do site assim que são baixados."},
   {t:"Mais privacidade 🔒",d:"Seu tempo de estudo, seu nível e suas conquistas agora ficam visíveis só para você. Grupos, chat global, voz global, amigos e ranking saíram do site; as mensagens privadas entre duas pessoas continuam em Conversas."},
   {t:"Dica da IA nos exercícios 💡",d:"Travou numa questão de idioma? Toque em “Dica da IA”: ela explica o que você está estudando, o caminho até a resposta e o porquê, sem entregar a resposta. Depois de responder, “Entender com a IA” explica o acerto ou o erro."},
   {t:"Chegou o curso de Francês 🇫🇷",d:"360 aulas do A1 ao C2 no formato das provas DELF e DALF: Compréhension des écrits, Compréhension de l'oral, Production écrite e Production orale, com um simulado da prova no fim de cada trilha."},
@@ -2881,10 +2884,10 @@ function iniciarComunidadeFB(){
   const db=S.db,me=S.uid;
   if(!SO_CONVERSA)assinar("grupos",db.collection("grupos").limit(500),snap=>{const m={};snap.docs.forEach(d=>{const v=d.data();if(v&&v.nome&&v.dono)m[d.id]={...v,id:d.id}});FBC.grupos=m;refreshCom("grupos")});
   assinar("social",meuDoc("social"),snap=>{const v=snap.exists?snap.data():{};FBC.meus=v.grupos||{};FBC.vistos=v.vistos||{};refreshCom("social")});
-  assinar("convs",db.collection("conversas").where("participantes","array-contains",me),snap=>{const m={};snap.docs.forEach(d=>m[d.id]={...d.data(),id:d.id});FBC.convs=m;refreshCom("convs")});
+  assinar("convs",db.collection("conversas").where("participantes","array-contains",me),snap=>{const m={};snap.docs.forEach(d=>m[d.id]={...d.data(),id:d.id});FBC.convs=m;refreshCom("convs");setTimeout(limparConversasAntigas,4000)});
   if(!SO_CONVERSA){migrarLegado();iniciarPresenca()}assinarChamadas();
 }
-function pararComunidadeFB(){pararPresenca();if(typeof chamadaFechar==="function")chamadaFechar();Object.keys(SUBS).forEach(parar);Object.assign(FBC,{grupos:{},meus:{},convs:{},vistos:{},dm:null})}
+function pararComunidadeFB(){limparConversasAntigas.feito=false;pararPresenca();if(typeof chamadaFechar==="function")chamadaFechar();Object.keys(SUBS).forEach(parar);Object.assign(FBC,{grupos:{},meus:{},convs:{},vistos:{},dm:null})}
 async function migrarLegado(){ // grupos criados na versão anterior (um documento por pessoa) viram grupos de verdade
   const db=S.db,me=S.uid;
   try{const g=await db.collection("grupos").doc(me).get();const d=g.exists?g.data():null;
@@ -3189,7 +3192,27 @@ function rankingGrupoHtml(g,ids){
     <p class="hint">Conta o tempo do cronômetro e do pomodoro registrado no servidor. Quem escondeu as horas no perfil não aparece.</p>
   </div>`}
 const tamanhoTxt=n=>n>=1048576?(n/1048576).toLocaleString("pt-BR",{maximumFractionDigits:1})+" MB":Math.max(1,Math.round(n/1024))+" KB";
-const PARTE=640*1024,MAX_ARQ=50*1024*1024,MAX_ARQ_TXT="50 MB",MAX_ARQ_GLOBAL=20*1024*1024;
+const PARTE=640*1024,MAX_ARQ=100*1024*1024,MAX_ARQ_TXT="100 MB",MAX_ARQ_GLOBAL=20*1024*1024;
+/* Conversas privadas leves: as mensagens somem depois de DIAS_MSG dias e os arquivos ficam no aparelho.
+   O arquivo passa pela nuvem só até a outra pessoa baixar (ou até expirar); quem enviou guarda uma cópia no próprio aparelho. */
+const DIAS_MSG=7,MS_MSG=DIAS_MSG*864e5;
+let chatIdbP=null,chatIdbUid=null;
+function chatIdb(){if(chatIdbP&&chatIdbUid===S.uid)return chatIdbP;chatIdbUid=S.uid;
+  chatIdbP=new Promise((ok,no)=>{const r=indexedDB.open("la-chat-"+(S.uid||"anon"),1);r.onupgradeneeded=()=>{if(!r.result.objectStoreNames.contains("arq"))r.result.createObjectStore("arq")};r.onsuccess=()=>ok(r.result);r.onerror=()=>no(r.error)});
+  chatIdbP.catch(()=>{chatIdbP=null});return chatIdbP}
+async function chatLocalLer(id){try{const d=await chatIdb();return await new Promise(ok=>{const r=d.transaction("arq").objectStore("arq").get(id);r.onsuccess=()=>ok(r.result&&r.result.blob||null);r.onerror=()=>ok(null)})}catch(e){return null}}
+async function chatLocalGravar(id,blob){try{const d=await chatIdb();await new Promise(ok=>{const t=d.transaction("arq","readwrite");t.objectStore("arq").put({blob,em:Date.now()},id);t.oncomplete=ok;t.onerror=ok})}catch(e){}}
+// apaga da nuvem mensagens (e arquivos) com mais de DIAS_MSG dias; roda uma vez por sessão, em segundo plano
+async function limparConversasAntigas(){
+  if(!FBM()||limparConversasAntigas.feito)return;limparConversasAntigas.feito=true;const lim=Date.now()-MS_MSG;
+  for(const cid of Object.keys(FBC.convs)){
+    try{const ref=S.db.collection("conversas").doc(cid);
+      const snap=await ref.collection("mensagens").where("em","<",lim).limit(300).get();
+      for(const d of snap.docs){const m=d.data();if(m.arq&&m.arq.id)await apagarArquivoFB(ref,m.arq.id,true);await d.ref.delete().catch(()=>{})}
+      const arqs=await ref.collection("arquivos").where("em","<",lim).limit(100).get();
+      for(const d of arqs.docs)await apagarArquivoFB(ref,d.id,true);
+    }catch(e){console.warn("limpar conversa",e&&e.code)}}
+}
 function blobB64(b){return new Promise((ok,no)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(",")[1]||"");r.onerror=no;r.readAsDataURL(b)})}
 // envia o arquivo em partes (4 ao mesmo tempo) para grupos/{id}/arquivos; devolve os dados do arquivo ou null
 async function enviarArquivoFB(base,file,prog){
@@ -3215,6 +3238,7 @@ async function enviarArquivosChat(base,files,op){
     if(box)box.appendChild(el);
     const info=await enviarArquivoFB(base,f,p=>{const a=el.querySelector("[data-p]"),b=el.querySelector(".prog i");if(a)a.textContent=p+"%";if(b)b.style.width=p+"%"});
     el.remove();
+    if(info&&base.path&&base.path.startsWith("conversas/"))await chatLocalGravar(info.id,f);
     if(info){if(f._audio)info.audio=f._audio;try{if(op.postar)await op.postar(info);else await base.collection("mensagens").add({autor:S.uid,texto:"",em:Date.now(),arq:info})}catch(e){toast("O arquivo foi salvo, mas a mensagem não foi enviada.")}}
   }
 }
@@ -3222,9 +3246,15 @@ async function enviarArquivosChat(base,files,op){
 const PREVIAS={};
 // onde ficam os arquivos de cada conversa: "grupos/<id>", "conversas/<id>" ou "salas/global"
 const baseArq=p=>S.db.doc(p.includes("/")?p:"grupos/"+p);
-async function blobArquivo(p,id,tipo){const base=baseArq(p);const snap=await base.collection("arquivos").doc(id).collection("partes").orderBy("i").get();
-  if(snap.empty)throw {code:"apagado"};
-  return new Blob(snap.docs.map(d=>{const bin=atob(d.data().d);const u=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return u}),{type:tipo||"application/octet-stream"})}
+async function blobArquivo(p,id,tipo){
+  const privada=String(p).startsWith("conversas/");
+  if(privada){const loc=await chatLocalLer(id);if(loc)return loc}
+  const base=baseArq(p);const snap=await base.collection("arquivos").doc(id).collection("partes").orderBy("i").get();
+  if(snap.empty)throw {code:privada?"fora":"apagado"};
+  const blob=new Blob(snap.docs.map(d=>{const bin=atob(d.data().d);const u=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return u}),{type:tipo||"application/octet-stream"});
+  if(privada){await chatLocalGravar(id,blob);
+    try{const doc=await base.collection("arquivos").doc(id).get();if(doc.exists&&doc.data().autor!==S.uid)apagarArquivoFB(base,id,true)}catch(e){}}
+  return blob}
 const ehAudio=a=>/^audio\//i.test(a.tipo||"")||!!a.audio;
 const durTxt=s=>`${Math.floor(s/60)}:${String(Math.round(s%60)).padStart(2,"0")}`;
 function arqMsgHtml(m,gid){const a=m.arq||{};const img=/^image\/(png|jpe?g|gif|webp)$/i.test(a.tipo||"")&&a.tamanho<=4*1024*1024;
@@ -3247,7 +3277,7 @@ document.addEventListener("click",async e=>{const bt=e.target.closest("[data-arq
   if(bt.hasAttribute("data-arq-ver")&&PREVIAS[w.dataset.arq]){window.open(PREVIAS[w.dataset.arq],"_blank","noopener");return}
   const txt=bt.textContent;bt.disabled=true;if(bt.matches("[data-arq-baixar]"))bt.textContent="Baixando…";
   try{const blob=await blobArquivo(w.dataset.arqG,w.dataset.arq,w.dataset.arqTipo);const url=URL.createObjectURL(blob);const l=document.createElement("a");l.href=url;l.download=w.dataset.arqNome;document.body.appendChild(l);l.click();l.remove();setTimeout(()=>URL.revokeObjectURL(url),60000)}
-  catch(err){toast(err&&err.code==="apagado"?"Este arquivo foi apagado.":"Não foi possível baixar ("+(err&&err.code||"erro")+").")}
+  catch(err){toast(err&&err.code==="fora"?"Este arquivo não está neste aparelho: ele já foi baixado em outro aparelho ou passou de "+DIAS_MSG+" dias.":err&&err.code==="apagado"?"Este arquivo foi apagado.":"Não foi possível baixar ("+(err&&err.code||"erro")+").")}
   bt.disabled=false;if(bt.matches("[data-arq-baixar]"))bt.textContent=txt},true);
 // arrastar e soltar arquivos em qualquer lugar da página do grupo
 function ligarSoltarArquivos(area,enviar,txt){
@@ -3338,10 +3368,10 @@ function abrirConversa(){
   const area=$("#dm-area");if(!area)return;const o=FBC.dm;parar("tela:dm");
   if(!o){area.innerHTML=`<div class="empty-state">${ico("chat")}<span>Escolha uma conversa ou busque alguém para conversar.</span></div>`;return}
   const cid=cidDe(o),existe=!!FBC.convs[cid];
-  area.innerHTML=`<div class="row" style="margin-bottom:10px;flex-wrap:nowrap"><span class="av-on">${avatar(o)}</span><div style="min-width:0;flex:1"><b>${esc(nomeDe(o))}</b><div class="small muted">Conversa privada</div></div><button class="btn sm" type="button" id="dm-video">${ico("video")}<span class="sr-mob">Chamada de vídeo</span></button></div>${chatBox("dm","Mensagem privada")}`;
+  area.innerHTML=`<div class="row" style="margin-bottom:10px;flex-wrap:nowrap"><span class="av-on">${avatar(o)}</span><div style="min-width:0;flex:1"><b>${esc(nomeDe(o))}</b><div class="small muted">Conversa privada · as mensagens somem em ${DIAS_MSG} dias</div></div><button class="btn sm" type="button" id="dm-video">${ico("video")}<span class="sr-mob">Chamada de vídeo</span></button></div>${chatBox("dm","Mensagem privada")}`;
   $("#dm-video").onclick=()=>chamadaLigar(o);
   const ref=S.db.collection("conversas").doc(cid);
-  const ouvir=()=>assinar("tela:dm",ref.collection("mensagens").orderBy("em","desc").limit(150),snap=>{pintarMsgs("dm",snap.docs.map(d=>({...d.data(),_base:"conversas/"+cid})).reverse());carregarPrevias($("#dm"))});
+  const ouvir=()=>assinar("tela:dm",ref.collection("mensagens").where("em",">=",Date.now()-MS_MSG).orderBy("em","desc").limit(150),snap=>{pintarMsgs("dm",snap.docs.map(d=>({...d.data(),_base:"conversas/"+cid})).filter(m=>m.em>=Date.now()-MS_MSG).reverse());carregarPrevias($("#dm"))});
   if(existe){ouvir();meuDoc("social").set({vistos:{[cid]:Date.now()}},{merge:true}).catch(()=>{})}
   else pintarMsgs("dm",[]);
   const resumo=t=>ref.set({participantes:[S.uid,o].sort(),atualizado:Date.now(),ultima:t.slice(0,90),ultimaDe:S.uid},{merge:true});
@@ -3349,7 +3379,7 @@ function abrirConversa(){
   ligarComposer("dm",async t=>{await resumo(t);await ref.collection("mensagens").add({autor:S.uid,texto:t,em:Date.now()});depois()});
   equiparChat("dm",{base:ref,antes:()=>FBC.convs[cid]?null:resumo("Nova conversa"),
     postar:async info=>{await resumo(ehAudio(info)?"🎤 Áudio":"📎 "+info.nome);await ref.collection("mensagens").add({autor:S.uid,texto:"",em:Date.now(),arq:info});depois()},
-    soltar:["Solte para enviar nesta conversa",`Até ${MAX_ARQ_TXT} por arquivo. Só você e ${nomeDe(o)} veem.`]});
+    soltar:["Solte para enviar nesta conversa",`Até ${MAX_ARQ_TXT} por arquivo. O arquivo fica no aparelho de vocês: no site, ele some quando ${nomeDe(o)} baixar ou depois de ${DIAS_MSG} dias.`]});
 }
 
 /* ---- Amigos ---- */
