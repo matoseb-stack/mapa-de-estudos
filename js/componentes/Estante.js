@@ -38,6 +38,12 @@
   }
 
   let APP = null;
+  const estreito = () => window.matchMedia && matchMedia("(max-width: 700px)").matches;
+  function emFolha(el, pai, fechar) {
+    if (!estreito()) return null;
+    el.classList.add("est-folha"); const v = document.createElement("div"); v.className = "est-veu";
+    pai.insertBefore(v, el); v.addEventListener("click", fechar); return v;
+  }
   async function salvarMeta() { E.meta.atual = Date.now(); await gr("meta", "meta", E.meta).catch(() => {}); }
   async function carregarMeta() {
     const m = await lg("meta", "meta").catch(() => null);
@@ -223,6 +229,7 @@
     const busca = CONT.querySelector("#est-busca");
     busca.oninput = () => { E.busca = busca.value; const g = CONT.querySelector(".est-grade,.est-vazia"); const lista = visiveis();
       if (g && g.classList.contains("est-grade")) g.innerHTML = lista.map(cartao).join("") || `<p class="small muted">Nenhum arquivo com esse nome.</p>`; };
+    CONT.oncontextmenu = e => { const c = e.target.closest(".est-arq"); if (!c) return; e.preventDefault(); menuArquivo(c.dataset.arq, c.querySelector("[data-menu]")); };
     CONT.onclick = e => {
       const c = e.target.closest("[data-cat]"); if (c) { E.cat = c.dataset.cat; pintar(); return; }
       const ab = e.target.closest("[data-abrir]"); if (ab) { abrir(ab.dataset.abrir); return; }
@@ -310,18 +317,22 @@
   }
   /* ---------- menu do arquivo ---------- */
   function menuArquivo(id, ancora) {
-    document.querySelectorAll(".est-pop").forEach(x => x.remove());
+    document.querySelectorAll(".est-pop,body>.est-veu").forEach(x => x.remove());
     const a = E.meta.arquivos.find(x => x.id === id); if (!a) return;
-    const pop = document.createElement("div"); pop.className = "est-pop card";
-    pop.innerHTML = `<button type="button" data-m="abrir">Abrir</button><button type="button" data-m="renomear">Renomear</button><button type="button" data-m="mover">Mudar de categoria</button>
-      <button type="button" data-m="pacote">Baixar com anotações <small class="muted">(para outro aparelho)</small></button>
-      ${a.tipo !== "caderno" ? `<button type="button" data-m="baixar">Baixar o original</button>` : ""}<button type="button" data-m="apagar" class="danger">Apagar</button>`;
+    const pop = document.createElement("div"); pop.className = "est-pop"; pop.setAttribute("role", "menu");
+    pop.innerHTML = `<div class="est-folha-h"><b>${APP.esc(a.nome)}</b></div>
+      <button type="button" role="menuitem" data-m="abrir"><span>📖</span>Abrir</button><button type="button" role="menuitem" data-m="renomear"><span>✎</span>Renomear</button><button type="button" role="menuitem" data-m="mover"><span>🗂️</span>Mudar de categoria</button>
+      <button type="button" role="menuitem" data-m="pacote"><span>📦</span>Baixar com anotações <small>para outro aparelho</small></button>
+      ${a.tipo !== "caderno" ? `<button type="button" role="menuitem" data-m="baixar"><span>⬇</span>Baixar o original</button>` : ""}<button type="button" role="menuitem" data-m="apagar" class="danger"><span>🗑️</span>Apagar</button>`;
     document.body.appendChild(pop);
-    const r = ancora.getBoundingClientRect(); pop.style.top = Math.min(innerHeight - pop.offsetHeight - 8, r.bottom + 4) + "px"; pop.style.left = Math.max(8, Math.min(innerWidth - pop.offsetWidth - 8, r.right - pop.offsetWidth)) + "px";
-    const fechar = ev => { if (!pop.contains(ev.target)) { pop.remove(); document.removeEventListener("pointerdown", fechar, true); } };
+    let veu = null;
+    const tirar = () => { pop.remove(); if (veu) veu.remove(); document.removeEventListener("pointerdown", fechar, true); };
+    const fechar = ev => { if (ev.target.classList && ev.target.classList.contains("est-veu")) return; if (!pop.contains(ev.target)) tirar(); };
+    veu = emFolha(pop, document.body, tirar);
+    if (!veu) { const r = ancora.getBoundingClientRect(); pop.style.top = Math.max(8, Math.min(innerHeight - pop.offsetHeight - 8, r.bottom + 4)) + "px"; pop.style.left = Math.max(8, Math.min(innerWidth - pop.offsetWidth - 8, r.right - pop.offsetWidth)) + "px"; }
     setTimeout(() => document.addEventListener("pointerdown", fechar, true), 0);
     pop.onclick = async e => {
-      const m = e.target.closest("[data-m]"); if (!m) return; pop.remove(); document.removeEventListener("pointerdown", fechar, true);
+      const m = e.target.closest("[data-m]"); if (!m) return; tirar();
       const x = m.dataset.m;
       if (x === "abrir") abrir(id);
       else if (x === "renomear") { const n = await pedirTexto("Renomear arquivo", "Novo nome", a.nome); if (n) { a.nome = n.slice(0, 80); await salvarMeta(); pintar(); } }
@@ -455,7 +466,7 @@
   }
   const ehCaderno = () => V.a && V.a.tipo === "caderno";
   const corDe = f => (V.cfg[f] && V.cfg[f].c) || PALETA[0];
-  function fecharPaineis() { if (V.ov) V.ov.querySelectorAll(".est-painel,.est-menu-v").forEach(x => x.remove()); }
+  function fecharPaineis() { if (V.ov) V.ov.querySelectorAll(".est-painel,.est-menu-v,.est-veu").forEach(x => x.remove()); }
 
   /* ---------- barra de ferramentas (em pílula, centralizada) ---------- */
   function montarBarra() {
@@ -471,7 +482,8 @@
       const c = e.target.closest("[data-c]");
       if (c) { if (!["caneta", "lapis", "marca"].includes(V.ferr)) { V.ferr = "caneta"; atualizarToque(); }
         usarCor(c.dataset.c); return; }
-      if (e.target.closest("[data-v='paleta']")) abrirPainel();
+      const v = e.target.closest("[data-v]"); if (!v) return;
+      if (v.dataset.v === "paleta") abrirPainel(); else if (v.dataset.v === "desfazer") desfazer(); else if (v.dataset.v === "refazer") refazer();
     };
     top.onclick = e => {
       const v = e.target.closest("[data-v]"); if (!v) return; const x = v.dataset.v;
@@ -488,7 +500,8 @@
         ${ICF[k]}${["caneta", "lapis", "marca"].includes(k) ? `<i class="est-ponta" style="background:${corDe(k)}"></i>` : ""}</button>`).join("")
       + `<span class="est-sep"></span>`
       + (tinta ? lista.map((c, i) => `<button type="button" class="est-cq ${i > 1 ? "est-cq-x" : ""} ${c === atual ? "on" : ""}" data-c="${c}" style="--c:${c}" aria-label="Usar a cor ${c}"></button>`).join("") : `<span class="est-dica small muted">${V.ferr === "borracha" ? "Toque no traço para apagar" : "Arraste para rolar a página"}</span>`)
-      + `<button type="button" class="est-t est-pal" data-v="paleta" aria-label="Cores e espessura" title="Cores e espessura">${ICF.paleta}</button>`;
+      + `<button type="button" class="est-t est-pal" data-v="paleta" aria-label="Cores e espessura" title="Cores e espessura">${ICF.paleta}${tinta ? `<i class="est-pal-cor" style="background:${atual}"></i>` : ""}</button>`
+      + `<span class="est-sep est-so-estreita"></span><button type="button" class="est-t est-so-estreita" data-v="desfazer" aria-label="Desfazer" ${V.desf.length ? "" : "disabled"}>${ICF.desfazer}</button><button type="button" class="est-t est-so-estreita" data-v="refazer" aria-label="Refazer" ${V.ref.length ? "" : "disabled"}>${ICF.refazer}</button>`;
   }
   function usarCor(c) {
     const f = ["caneta", "lapis", "marca"].includes(V.ferr) ? V.ferr : "caneta";
@@ -511,7 +524,7 @@
       : `<p class="small muted" style="margin:6px 0 0">A borracha apaga o traço inteiro que ela tocar. Errou? Use desfazer.</p>
          <button type="button" class="btn sm" data-pn="limpar" style="margin-top:8px">${ICF.lixo} Apagar todos os desenhos desta página</button>`}`;
     V.ov.appendChild(p);
-    const rb = V.barra.getBoundingClientRect(); p.style.top = Math.round(rb.bottom + 8) + "px";
+    if (!emFolha(p, V.ov, fecharPaineis)) { const rb = V.barra.getBoundingClientRect(); p.style.top = Math.round(rb.bottom + 8) + "px"; }
     const prev = () => { const cv = p.querySelector(".est-prev"); if (!cv) return; const ctx = cv.getContext("2d"); ctx.clearRect(0, 0, 600, 90);
       const pts = []; for (let i = 0; i <= 24; i++) pts.push(Math.round(800 + i * 350), Math.round(5000 + Math.sin(i / 3.2) * 2600));
       const q = f === "marca" ? null : pts.filter((_, i) => i % 2 === 0).map((_, i) => 35 + Math.round(55 * Math.sin(Math.PI * i / 24)));
@@ -536,14 +549,18 @@
         <button type="button" role="menuitem" data-mn="apagar-folha" class="danger" ${V.pags.length < 2 ? "disabled" : ""}><span>${ICF.lixo}</span>Apagar a folha ${n}${V.pags.length < 2 ? " <small>o caderno precisa de ao menos uma</small>" : ""}</button>` : ""}
       <button type="button" role="menuitem" data-mn="limpar"><span>🧽</span>Apagar os desenhos da página ${n}</button>
       <button type="button" role="menuitem" data-mn="exportar"><span>⬇</span>Baixar a página ${n} como imagem</button>
-      <button type="button" role="menuitem" data-mn="renomear"><span>✎</span>Renomear</button>`;
+      <button type="button" role="menuitem" data-mn="renomear"><span>✎</span>Renomear</button>
+      ${estreito() ? `<div class="est-mn-zoom"><span>🔍</span>Zoom <button type="button" class="est-ic sm" data-mn="menos" aria-label="Diminuir">−</button><b>${Math.round(V.zoom * 100)}%</b><button type="button" class="est-ic sm" data-mn="mais" aria-label="Aumentar">+</button><button type="button" class="est-zoom" data-mn="z100">Ajustar</button></div>` : ""}`;
     V.ov.appendChild(m);
-    const r = ancora.getBoundingClientRect(); m.style.top = (r.bottom + 6) + "px"; m.style.right = Math.max(8, innerWidth - r.right) + "px";
-    const fora = ev => { if (!m.contains(ev.target) && !ancora.contains(ev.target)) { m.remove(); document.removeEventListener("pointerdown", fora, true); } };
+    const tirar = () => { m.remove(); fecharPaineis(); document.removeEventListener("pointerdown", fora, true); };
+    if (!emFolha(m, V.ov, tirar)) { const r = ancora.getBoundingClientRect(); m.style.top = (r.bottom + 6) + "px"; m.style.right = Math.max(8, innerWidth - r.right) + "px"; }
+    const fora = ev => { if (ev.target.classList && ev.target.classList.contains("est-veu")) return; if (!m.contains(ev.target) && !ancora.contains(ev.target)) tirar(); };
     setTimeout(() => document.addEventListener("pointerdown", fora, true), 0);
     m.onclick = async e => {
-      const b = e.target.closest("[data-mn]"); if (!b || b.disabled) return; m.remove(); document.removeEventListener("pointerdown", fora, true);
+      const b = e.target.closest("[data-mn]"); if (!b || b.disabled) return;
       const x = b.dataset.mn;
+      if (x === "mais" || x === "menos" || x === "z100") { mudarZoom(x === "z100" ? 1 : V.zoom + (x === "mais" ? 0.25 : -0.25)); const z = m.querySelector(".est-mn-zoom b"); if (z) z.textContent = Math.round(V.zoom * 100) + "%"; return; }
+      tirar();
       if (x === "caneta") { V.dedoEscreve = !V.dedoEscreve; guardarPrefs(); APP.toast(V.dedoEscreve ? "O dedo também escreve. Para rolar, use dois dedos ou a mão (✋)." : "O dedo rola a página e a caneta escreve."); }
       else if (x === "inserir") inserirFolha(n);
       else if (x === "apagar-folha") apagarFolha(n);
@@ -747,8 +764,8 @@
   function status() {
     if (!V.ov) return; const st = V.ov.querySelector("[data-v-st]");
     if (st) st.textContent = V.sujas.size ? "salvando…" : (V.salvoEm ? "salvo ✓" : (V.pags.length ? `${V.pags.length} ${V.pags.length === 1 ? "página" : "páginas"}` : ""));
-    const d = V.ov.querySelector('[data-v="desfazer"]'), r = V.ov.querySelector('[data-v="refazer"]');
-    if (d) d.disabled = !V.desf.length; if (r) r.disabled = !V.ref.length;
+    V.ov.querySelectorAll('[data-v="desfazer"]').forEach(d => d.disabled = !V.desf.length);
+    V.ov.querySelectorAll('[data-v="refazer"]').forEach(r => r.disabled = !V.ref.length);
   }
   function marcar(p) { V.sujas.add(p); status(); clearTimeout(V.timer); V.timer = setTimeout(() => salvarAnot(), 900); }
   async function salvarAnot() {
