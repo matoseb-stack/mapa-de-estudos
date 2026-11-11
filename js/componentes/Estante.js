@@ -167,13 +167,30 @@
   const nuv = () => APP && APP.db && APP.db();
   const conjRef = fid => nuv().collection("compartilhados").doc(fid);
   function ouvirConjuntos() {
-    const db = nuv(); if (!db || E.uid === "visitante") { if (E.compUnsub) { E.compUnsub(); E.compUnsub = null; } E.comp = {}; return; }
+    const db = nuv(), parar = () => { [E.compUnsub, E.convUnsub].forEach(f => { if (f) try { f(); } catch (e) {} }); E.compUnsub = E.convUnsub = null; };
+    if (!db || !E.uid || E.uid === "visitante") { parar(); E.comp = {}; E.convites = {}; avisarConvites(); return; }
     if (E.compUid === E.uid && E.compUnsub) return;
-    if (E.compUnsub) E.compUnsub(); E.compUid = E.uid; E.comp = E.comp || {};
+    parar(); E.compUid = E.uid; E.comp = E.comp || {}; E.convites = E.convites || {};
+    const repintar = () => { avisarConvites(); if (APP.naTela() && CONT && E.meta && !V.ov) pintar(); if (APP.convitesMudou) APP.convitesMudou(); };
     E.compUnsub = db.collection("compartilhados").where("membros", "array-contains", E.uid).onSnapshot(sn => {
-      const m = {}; sn.docs.forEach(d => { const x = d.data(); if (x && x.completo) m[d.id] = { ...x, fid: d.id }; }); E.comp = m;
-      if (APP.naTela() && CONT && E.meta && !V.ov) pintar();
+      const m = {}; sn.docs.forEach(d => { const x = d.data(); if (x && x.completo) m[d.id] = { ...x, fid: d.id }; }); E.comp = m; repintar();
     }, e => console.warn("conjuntos", e && e.code));
+    E.convUnsub = db.collection("compartilhados").where("convidados", "array-contains", E.uid).onSnapshot(sn => {
+      const m = {}; sn.docs.forEach(d => { const x = d.data(); if (x && x.completo) m[d.id] = { ...x, fid: d.id }; }); E.convites = m; repintar();
+    }, e => console.warn("convites", e && e.code));
+  }
+  function avisarConvites() { if (APP && APP.badgeConvites) APP.badgeConvites(Object.keys(E.convites || {}).length); }
+  function iniciar(app) { APP = APP || app; const uid = app.uid(); if (E.uid !== uid) Object.assign(E, { uid, meta: null, cat: "todas", busca: "", comp: {}, convites: {} }); ouvirConjuntos(); }
+  const estadoConvite = fid => (E.comp || {})[fid] ? "membro" : (E.convites || {})[fid] ? "convidado" : "";
+  async function aceitarConvite(fid) {
+    const FV = window.firebase && firebase.firestore.FieldValue; if (!FV || !nuv()) return false;
+    try { await conjRef(fid).update({ membros: FV.arrayUnion(E.uid), convidados: FV.arrayRemove(E.uid), atualizado: Date.now() }); APP.toast("Pronto! O arquivo está em Notas compartilhadas."); return true; }
+    catch (e) { APP.toast(e && e.code === "permission-denied" ? "Este convite não vale mais (foi cancelado ou o arquivo foi apagado)." : "Não foi possível aceitar agora (" + ((e && e.code) || "erro") + ")."); return false; }
+  }
+  async function recusarConvite(fid) {
+    const FV = window.firebase && firebase.firestore.FieldValue; if (!FV || !nuv()) return false;
+    try { await conjRef(fid).update({ convidados: FV.arrayRemove(E.uid), atualizado: Date.now() }); APP.toast("Convite recusado."); return true; }
+    catch (e) { APP.toast("Este convite não vale mais."); return false; }
   }
   const comoArquivo = x => ({ id: "c_" + x.fid, fid: x.fid, compart: true, nome: x.nome, tipo: x.tipo, mime: x.mime, modelo: x.modelo, paginas: x.paginas, tam: x.tam,
     cat: "", criado: x.criado, aberto: x.atualizado, dono: x.dono, membros: x.membros || [], nomes: x.nomes || {}, partes: x.partes, capa: (E.capasC || {})[x.fid] || null });
@@ -189,25 +206,26 @@
     const nomes = { [E.uid]: APP.meuNome ? APP.meuNome() : "Eu" }; pessoas.forEach(p => nomes[p.id] = p.nome);
     APP.toast(`Preparando “${a.nome}” para editar junto…`);
     try {
-      await ref.set({ dono: E.uid, membros: [E.uid].concat(pessoas.map(p => p.id)), nomes, nome: a.nome, tipo: a.tipo, mime: a.mime || "", modelo: a.modelo || "", paginas: a.paginas || 1, tam: a.tam || 0, partes: n, criado: Date.now(), atualizado: Date.now(), completo: false });
+      await ref.set({ dono: E.uid, membros: [E.uid], convidados: pessoas.map(p => p.id), nomes, nome: a.nome, tipo: a.tipo, mime: a.mime || "", modelo: a.modelo || "", paginas: a.paginas || 1, tam: a.tam || 0, partes: n, criado: Date.now(), atualizado: Date.now(), completo: false });
       for (let i = 0; i < n; i++) await ref.collection("partes").doc(String(i).padStart(4, "0")).set({ i, d: await b64(blob.slice(i * PEDACO_C, (i + 1) * PEDACO_C)) });
       const an = await lg("anot", a.id).catch(() => null);
       if (an && an.pags) for (const [pg, lista] of Object.entries(an.pags)) for (const st of lista || []) await ref.collection("tracos").add({ pag: +pg, s: semId(st), autor: E.uid, em: Date.now() });
       await ref.update({ completo: true });
       if (blob) await gr("arquivos", "c_" + ref.id, blob).catch(() => {});
       if (a.capa) { await gr("capas", "c_" + ref.id, a.capa).catch(() => {}); (E.capasC = E.capasC || {})[ref.id] = a.capa; }
-      for (const p of pessoas) { try { await APP.enviarParaPessoa(p.id, null, `👥 Compartilhei “${a.nome}” com você para a gente editar junto. Abra em Minha estante › Compartilhados.`); } catch (e) {} }
-      E.cat = "comp"; if (APP.naTela()) pintar();
-      APP.toast(`Pronto! “${a.nome}” agora é um arquivo conjunto com ${pessoas.map(p => p.nome).join(", ")}.`);
+      let falhou = 0; for (const p of pessoas) { try { await APP.convidarNaConversa(p.id, { fid: ref.id, nome: a.nome, tipo: a.tipo }); } catch (e) { falhou++; } }
+      APP.toast(`Convite enviado para ${pessoas.map(p => p.nome).join(", ")} nas Mensagens. Quando aceitarem, vocês editam juntos.${falhou ? " (Alguns convites não chegaram: a pessoa pode só aceitar mensagens de amigos.)" : ""}`);
+      if (APP.irPara) APP.irPara("compartilhadas");
     } catch (e) { console.warn("conjunto", e); APP.toast("Não foi possível criar o arquivo conjunto (" + ((e && e.code) || "erro") + ")."); try { await ref.delete(); } catch (er) {} }
   }
   async function convidarConjunto(a) {
-    const ps = await APP.escolherPessoas({ titulo: `Convidar para “${a.nome}”`, texto: "Quem você convidar pode ver e escrever no arquivo.", botao: "Convidar", multi: true, tirar: a.membros });
+    if (a.dono !== E.uid) { APP.toast("Só quem criou o arquivo pode convidar mais pessoas."); return; }
+    const ps = await APP.escolherPessoas({ titulo: `Convidar para “${a.nome}”`, texto: "A pessoa recebe o convite nas Mensagens e precisa aceitar.", botao: "Convidar", multi: true, tirar: a.membros });
     if (!ps.length) return;
-    const FV = window.firebase && firebase.firestore.FieldValue, upd = { membros: FV.arrayUnion(...ps.map(p => p.id)), atualizado: Date.now() };
+    const FV = window.firebase && firebase.firestore.FieldValue, upd = { convidados: FV.arrayUnion(...ps.map(p => p.id)), atualizado: Date.now() };
     ps.forEach(p => upd["nomes." + p.id] = p.nome);
-    try { await conjRef(a.fid).update(upd); for (const p of ps) { try { await APP.enviarParaPessoa(p.id, null, `👥 Compartilhei “${a.nome}” com você para a gente editar junto. Abra em Minha estante › Compartilhados.`); } catch (e) {} }
-      APP.toast("Convite enviado."); } catch (e) { APP.toast("Não foi possível convidar (" + ((e && e.code) || "erro") + ")."); }
+    try { await conjRef(a.fid).update(upd); for (const p of ps) { try { await APP.convidarNaConversa(p.id, { fid: a.fid, nome: a.nome, tipo: a.tipo }); } catch (e) {} }
+      APP.toast("Convite enviado nas Mensagens."); } catch (e) { APP.toast("Não foi possível convidar (" + ((e && e.code) || "erro") + ")."); }
   }
   async function sairConjunto(a) {
     if (a.dono === E.uid) {
@@ -234,8 +252,8 @@
     const bg = modal(`<h3 style="margin:0">Compartilhar “${APP.esc(a.nome)}”</h3>
       <div class="opts opts-col">
         <button type="button" class="opt" data-cp="aparelho"><b>📲 Enviar uma cópia pelo aparelho</b><span>WhatsApp, e-mail, Drive… ${a.tipo === "caderno" ? "Vai como arquivo .laest, que abre na estante do Logic Academy." : "Vai o arquivo original."}</span></button>
-        <button type="button" class="opt" data-cp="pessoa" ${temConta ? "" : "disabled"}><b>💬 Enviar uma cópia para alguém do Logic Academy</b><span>Chega nas Mensagens com as suas anotações. A pessoa abre na estante dela.${temConta ? "" : " Entre com sua conta para usar."}</span></button>
-        <button type="button" class="opt" data-cp="junto" ${temConta ? "" : "disabled"}><b>👥 Editar junto (arquivo conjunto)</b><span>Vocês escrevem no mesmo arquivo e veem as mudanças na hora. Até ${tamTxt(MAX_CONJ)}; fica guardado na nuvem enquanto existir.${temConta ? "" : " Entre com sua conta para usar."}</span></button>
+        <button type="button" class="opt" data-cp="pessoa" ${temConta ? "" : "disabled"}><b>💬 Enviar uma cópia para alguém do Logic Academy</b><span>Chega nas Mensagens com as suas anotações; a pessoa aceita e guarda na estante dela.${temConta ? "" : " Entre com sua conta para usar."}</span></button>
+        <button type="button" class="opt" data-cp="junto" ${temConta ? "" : "disabled"}><b>👥 Editar junto (arquivo conjunto)</b><span>A pessoa recebe um convite nas Mensagens. Depois de aceitar, vocês escrevem no mesmo arquivo e veem as mudanças na hora. Até ${tamTxt(MAX_CONJ)}; fica guardado na nuvem enquanto existir.${temConta ? "" : " Entre com sua conta para usar."}</span></button>
       </div>
       <div class="row" style="justify-content:flex-end"><button class="btn ghost" type="button" data-x>Cancelar</button></div>`);
     bg.addEventListener("click", async e => {
@@ -255,7 +273,7 @@
         const pk = await montarPacote(a); if (!pk) { APP.toast("Este arquivo não está neste aparelho."); return; }
         const f = new File([pk], a.nome + ".laest", { type: "application/octet-stream" });
         APP.toast("Enviando…"); let ok = 0;
-        for (const p of ps) { try { if (await APP.enviarParaPessoa(p.id, f, `📚 Te enviei “${a.nome}” com as minhas anotações. Baixe o arquivo e abra em Minha estante › Enviar arquivo.`)) ok++; } catch (er) {} }
+        for (const p of ps) { try { if (await APP.enviarParaPessoa(p.id, f, "", { nome: a.nome, tipo: a.tipo })) ok++; } catch (er) {} }
         APP.toast(ok ? `Enviado para ${ok === ps.length ? ps.map(p => p.nome).join(", ") : ok + " de " + ps.length + " pessoas"}.` : "Não foi possível enviar.");
       } else if (x === "junto") {
         const ps = await APP.escolherPessoas({ titulo: "Editar junto com…", texto: "Quem você escolher pode ver e escrever no arquivo.", botao: "Compartilhar", multi: true }); if (!ps.length) return;
@@ -264,14 +282,56 @@
     });
   }
 
+  /* ---------- aba "Notas compartilhadas": convites para aceitar e arquivos conjuntos ---------- */
+  function pintarComp() {
+    const { esc, ico } = APP, conv = Object.values(E.convites || {}), lista = visiveis(), conta = !!nuv() && E.uid !== "visitante";
+    CONT.innerHTML = `<div class="page estante est-comp">
+      ${APP.pageHead("Notas compartilhadas", "Cadernos e arquivos que você edita junto com outras pessoas. Tudo o que alguém escreve aparece na hora para todos.",
+        conta ? `<button class="btn primary" type="button" data-e="nova-comp">${ico("plus")}Nova nota compartilhada</button>` : "")}
+      ${!conta ? `<div class="card stack"><b>Entre com a sua conta para compartilhar notas.</b><p class="small muted" style="margin:0">No modo visitante nada vai para a nuvem, então não dá para editar junto com outras pessoas.</p></div>` : ""}
+      ${conv.length ? `<div class="card est-convites"><div class="card-h"><h3>📨 Convites para você (${conv.length})</h3></div>
+        <div class="list">${conv.map(c => `<div class="li est-convite" style="grid-template-columns:minmax(0,1fr) auto"><div style="min-width:0"><b>${esc(c.nome)}</b>
+          <div class="small muted">${esc((c.nomes || {})[c.dono] || "Alguém")} te convidou para editar junto · ${c.tipo === "caderno" ? "caderno" : c.tipo === "pdf" ? "PDF" : "imagem"}</div></div>
+          <div class="row" style="gap:6px;flex-wrap:nowrap"><button class="btn sm ghost" type="button" data-recusar="${c.fid}">Recusar</button><button class="btn sm primary" type="button" data-aceitar="${c.fid}">Aceitar</button></div></div>`).join("")}</div></div>` : ""}
+      ${lista.length ? `<div class="est-grade">${lista.map(cartao).join("")}</div>`
+        : conta ? `<div class="card est-vazia" data-e="nova-comp"><div class="est-vazia-ic">👥</div><h3>Nenhuma nota compartilhada ainda</h3>
+            <p class="muted small">Crie uma nota nova aqui e convide colegas, ou compartilhe um arquivo da Minha estante em ⋯ › Compartilhar › Editar junto.</p>
+            <p class="small"><b>Toque aqui</b> para criar uma nota compartilhada.</p></div>` : ""}
+      <p class="hint">As notas compartilhadas ficam guardadas na nuvem enquanto existirem, para todos verem. Quem criou pode convidar mais pessoas ou apagar; os outros podem sair quando quiserem.</p>
+    </div>`;
+    CONT.oncontextmenu = e => { const c = e.target.closest(".est-arq"); if (!c) return; e.preventDefault(); menuArquivo(c.dataset.arq, c.querySelector("[data-menu]")); };
+    CONT.onclick = async e => {
+      const ab = e.target.closest("[data-abrir]"); if (ab) { abrir(ab.dataset.abrir); return; }
+      const mn = e.target.closest("[data-menu]"); if (mn) { menuArquivo(mn.dataset.menu, mn); return; }
+      const ac = e.target.closest("[data-aceitar]"); if (ac) { ac.disabled = true; await aceitarConvite(ac.dataset.aceitar); return; }
+      const rc = e.target.closest("[data-recusar]"); if (rc) { rc.disabled = true; await recusarConvite(rc.dataset.recusar); return; }
+      if (e.target.closest('[data-e="nova-comp"]')) novaNotaComp();
+    };
+  }
+  function novaNotaComp() {
+    const bg = modal(`<h3 style="margin:0">Nova nota compartilhada</h3>
+      <div class="field"><label for="nc-nome">Nome</label><input type="text" id="nc-nome" maxlength="80" value="Resumo em grupo"></div>
+      <div class="field"><label>Folha</label><div class="seg" id="nc-mod">${Object.entries(MODELOS).map(([k, n], i) => `<button type="button" data-mod="${k}" class="${i === 1 ? "on" : ""}">${n}</button>`).join("")}</div></div>
+      <div class="row" style="justify-content:flex-end"><button class="btn ghost" type="button" data-x>Cancelar</button><button class="btn primary" type="button" data-ok>Escolher pessoas</button></div>`);
+    let mod = "pautado";
+    bg.querySelectorAll("[data-mod]").forEach(b => b.onclick = () => { mod = b.dataset.mod; bg.querySelectorAll("[data-mod]").forEach(x => x.classList.toggle("on", x === b)); });
+    bg.querySelector("[data-ok]").onclick = async () => {
+      const nome = bg.querySelector("#nc-nome").value.trim() || "Nota compartilhada"; bg.remove();
+      const ps = await APP.escolherPessoas({ titulo: `Convidar para “${nome}”`, texto: "As pessoas recebem um convite nas Mensagens e precisam aceitar.", botao: "Criar e convidar", multi: true });
+      if (!ps.length) return;
+      const info = await capaDe("caderno", null, mod);
+      criarConjunto({ id: "nova-" + novoId(), nome, tipo: "caderno", modelo: mod, paginas: 1, tam: 0, capa: info.capa }, ps);
+    };
+  }
+
   /* ---------- tela da estante ---------- */
   let CONT = null;
-  async function render(container, app) {
-    APP = app; CONT = container; container.onclick = null;
+  async function render(container, app, modo) {
+    APP = app; CONT = container; container.onclick = null; E.modo = modo || "estante";
     const uid = app.uid(); if (E.uid !== uid) Object.assign(E, { uid, meta: null, cat: "todas", busca: "", comp: {} });
     ouvirConjuntos();
     if (!E.meta) {
-      container.innerHTML = `<div class="page">${app.pageHead("Minha estante", "Seus arquivos de estudo organizados por matéria.")}<div class="card row muted"><span class="spinner"></span>Abrindo sua estante…</div></div>`;
+      container.innerHTML = `<div class="page">${app.pageHead(E.modo === "comp" ? "Notas compartilhadas" : "Minha estante", E.modo === "comp" ? "Arquivos que você edita junto com outras pessoas." : "Seus arquivos de estudo organizados por matéria.")}<div class="card row muted"><span class="spinner"></span>Abrindo sua estante…</div></div>`;
       try { await carregarMeta(); } catch (e) { E.meta = { categorias: [], arquivos: [], atual: 0 }; }
       try { for (const fid of Object.keys(E.comp || {})) { const c = await lg("capas", "c_" + fid).catch(() => null); if (c) (E.capasC = E.capasC || {})[fid] = c; } } catch (e) {}
       await espaco();
@@ -291,14 +351,15 @@
   const catDe = id => E.meta.categorias.find(c => c.id === id);
   function visiveis() {
     const q = (E.busca || "").toLowerCase().trim();
-    const meus = E.cat === "comp" ? [] : E.meta.arquivos.filter(a => (E.cat === "todas" || (E.cat === "sem" ? !catDe(a.cat) : a.cat === E.cat)));
-    const comp = E.cat === "todas" || E.cat === "comp" ? conjuntos() : [];
+    const meus = E.modo === "comp" ? [] : E.meta.arquivos.filter(a => (E.cat === "todas" || (E.cat === "sem" ? !catDe(a.cat) : a.cat === E.cat)));
+    const comp = E.modo === "comp" ? conjuntos() : [];
     return meus.concat(comp).filter(a => !q || a.nome.toLowerCase().includes(q)).sort((x, y) => (y.aberto || y.criado) - (x.aberto || x.criado));
   }
   function pintar() {
     const { esc, ico } = APP, M = E.meta, total = M.arquivos.reduce((s, a) => s + (a.tam || 0), 0), semCat = M.arquivos.filter(a => !catDe(a.cat)).length;
     const nComp = Object.keys(E.comp || {}).length;
-    if (E.cat !== "todas" && E.cat !== "sem" && !(E.cat === "comp" && nComp) && !catDe(E.cat)) E.cat = "todas";
+    if (E.modo === "comp") return pintarComp();
+    if (E.cat !== "todas" && E.cat !== "sem" && !catDe(E.cat)) E.cat = "todas";
     const lista = visiveis(), cat = catDe(E.cat);
     CONT.innerHTML = `<div class="page estante">
       ${APP.pageHead("Minha estante", "Organize seus PDFs, fotos e cadernos por matéria e escreva por cima deles.",
@@ -308,7 +369,6 @@
         <button type="button" role="tab" class="est-cat ${E.cat === "todas" ? "on" : ""}" data-cat="todas" aria-selected="${E.cat === "todas"}">📚 Todos <small>${M.arquivos.length}</small></button>
         ${M.categorias.map(c => `<button type="button" role="tab" class="est-cat ${E.cat === c.id ? "on" : ""}" data-cat="${c.id}" aria-selected="${E.cat === c.id}"><i style="background:${c.cor}"></i>${esc(c.nome)} <small>${M.arquivos.filter(a => a.cat === c.id).length}</small></button>`).join("")}
         ${semCat && M.categorias.length ? `<button type="button" role="tab" class="est-cat ${E.cat === "sem" ? "on" : ""}" data-cat="sem">Sem categoria <small>${semCat}</small></button>` : ""}
-        ${nComp ? `<button type="button" role="tab" class="est-cat ${E.cat === "comp" ? "on" : ""}" data-cat="comp" aria-selected="${E.cat === "comp"}">👥 Compartilhados <small>${nComp}</small></button>` : ""}
         <button type="button" class="est-cat nova" data-e="nova-cat">＋ Nova categoria</button>
       </div>
       <div class="row est-barra">
@@ -687,22 +747,26 @@
     if (!V.ov) return;
     if (TX.track) { pararTx(); APP.toast("Transmissão encerrada."); return; }
     if (!(APP.naChamada && APP.naChamada())) { APP.toast("Entre numa chamada (Mensagens › 📹) para transmitir este arquivo."); return; }
-    const box = V.ov.querySelector(".est-pags"); TX.cv = document.createElement("canvas");
-    const quadro = () => {
-      if (!V.ov) return; const bw = box.clientWidth, bh = box.clientHeight, k = Math.min(1, 1280 / Math.max(1, bw));
-      const W = Math.round(bw * k), H = Math.round(bh * k); if (TX.cv.width !== W || TX.cv.height !== H) { TX.cv.width = W; TX.cv.height = H; }
-      const c = TX.cv.getContext("2d"), rb = box.getBoundingClientRect(); c.fillStyle = "#e9ebef"; c.fillRect(0, 0, W, H);
-      box.querySelectorAll(".est-pag").forEach(el => { const r = el.getBoundingClientRect(); if (r.bottom < rb.top || r.top > rb.bottom || r.right < rb.left || r.left > rb.right) return;
-        const x = (r.left - rb.left) * k, y = (r.top - rb.top) * k, w = r.width * k, h = r.height * k;
-        c.fillStyle = "#fff"; c.fillRect(x, y, w, h);
-        [".est-base", ".est-tinta"].forEach(sel => { const cv = el.querySelector(sel); if (cv && cv.width) try { c.drawImage(cv, x, y, w, h); } catch (e) {} }); });
-    };
+    TX.cv = document.createElement("canvas");
+    const quadro = () => vista(TX.cv, true);
     quadro();
     const st = TX.cv.captureStream ? TX.cv.captureStream(8) : null, t = st && st.getVideoTracks()[0];
     if (!t) { APP.toast("Este navegador não consegue transmitir o arquivo."); TX.cv = null; return; }
     t._estante = true; t.contentHint = "detail"; TX.track = t; TX.laco = setInterval(quadro, 125);
     APP.transmitir(t); atualizarTx();
     APP.toast("Transmitindo: quem está na chamada vê esta página e tudo o que você escrever.");
+  }
+  // desenha no canvas o que está na tela do leitor (folhas e traços); "ajustar" muda o tamanho do canvas para o da tela
+  function vista(cv, ajustar) {
+    if (!V.ov) return; const box = V.ov.querySelector(".est-pags"); if (!box) return;
+    const bw = box.clientWidth, bh = box.clientHeight;
+    if (ajustar) { const k0 = Math.min(1, 1280 / Math.max(1, bw)), W0 = Math.round(bw * k0), H0 = Math.round(bh * k0); if (cv.width !== W0 || cv.height !== H0) { cv.width = W0; cv.height = H0; } }
+    const k = Math.min(cv.width / Math.max(1, bw), cv.height / Math.max(1, bh)), ox = (cv.width - bw * k) / 2, oy = (cv.height - bh * k) / 2;
+    const c = cv.getContext("2d"), rb = box.getBoundingClientRect(); c.fillStyle = "#e9ebef"; c.fillRect(0, 0, cv.width, cv.height);
+    box.querySelectorAll(".est-pag").forEach(el => { const r = el.getBoundingClientRect(); if (r.bottom < rb.top || r.top > rb.bottom || r.right < rb.left || r.left > rb.right) return;
+      const x = ox + (r.left - rb.left) * k, y = oy + (r.top - rb.top) * k, w = r.width * k, h = r.height * k;
+      c.fillStyle = "#fff"; c.fillRect(x, y, w, h);
+      [".est-base", ".est-tinta"].forEach(sel => { const q = el.querySelector(sel); if (q && q.width) try { c.drawImage(q, x, y, w, h); } catch (e) {} }); });
   }
   function pararTx(jaParou) { clearInterval(TX.laco); TX.laco = 0; if (TX.track) { if (!jaParou && APP.pararTransmissao) APP.pararTransmissao(); try { TX.track.stop(); } catch (e) {} } TX.track = null; TX.cv = null; if (V.ov) { const b = V.ov.querySelector('[data-v="transmitir"]'); if (b) { b.classList.remove("on"); b.querySelector(".est-tx-t").textContent = "Transmitir"; } } }
   function fecharPaineis() { if (V.ov) V.ov.querySelectorAll(".est-painel,.est-menu-v,.est-veu").forEach(x => x.remove()); }
@@ -1179,5 +1243,7 @@
 
   function transmitirPublico() { if (V.ov) transmitir(); }
   function sairDaAba() { if (V.ov) fecharLeitor(); document.querySelectorAll(".est-pop").forEach(x => x.remove()); }
-  (window.LAComp = window.LAComp || {}).Estante = { render, sairDaAba, transmitir: transmitirPublico, _estado: () => ({ V, E }) };   // _estado: usado pelos testes
+  (window.LAComp = window.LAComp || {}).Estante = { render, renderComp: (c, app) => render(c, app, "comp"), iniciar, estadoConvite, aceitarConvite, recusarConvite,
+    importar: async f => { if (!E.meta) { try { await carregarMeta(); } catch (e) { E.meta = { categorias: [], arquivos: [], atual: 0 }; } } return importarPacote(f); },
+    sairDaAba, transmitir: transmitirPublico, vista: cv => vista(cv, false), _estado: () => ({ V, E }) };   // _estado: usado pelos testes
 })();

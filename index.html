@@ -670,6 +670,24 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 
 html,body{overscroll-behavior:none;background:var(--bg)}
 .msgs,.qb-lista,.mentor-msgs,.side,.modal{overscroll-behavior:contain}
 
+.ep{gap:12px}
+.ep-busca{display:flex;align-items:center;gap:8px;padding:0 12px;border:1px solid var(--line-2);border-radius:999px;background:var(--surface)}
+.ep-busca .i{width:18px;height:18px;opacity:.6}.ep-busca input{flex:1;border:0;outline:none;background:transparent;color:var(--fg);font:inherit;padding:11px 0;min-width:0}
+.ep-busca:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.ep-sel{display:flex;gap:6px;flex-wrap:wrap}.ep-sel:empty{display:none}
+.ep-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 10px 4px 4px;border-radius:999px;border:0;background:color-mix(in srgb,var(--accent) 18%,var(--surface));color:var(--fg);font:600 .82rem/1 inherit;cursor:pointer}
+.ep-lista{display:flex;flex-direction:column;gap:2px;max-height:min(46vh,420px);overflow:auto;margin:0 -6px;padding:0 6px}
+.ep-tit{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding:4px 6px}
+.ep-p{display:flex;align-items:center;gap:12px;width:100%;padding:10px 8px;border:0;border-radius:12px;background:transparent;color:var(--fg);font:inherit;text-align:left;cursor:pointer;min-height:56px}
+.ep-p:hover{background:var(--hover)}.ep-p.on{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.ep-n{display:flex;flex-direction:column;min-width:0;flex:1}.ep-n b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ep-n small{color:var(--muted)}
+.ep-ck{width:26px;height:26px;border-radius:50%;border:2px solid var(--line-2);display:grid;place-items:center;font-weight:800;flex:none;color:var(--accent-fg)}
+.ep-p.on .ep-ck{background:var(--accent);border-color:var(--accent)}
+.ep-vazio{padding:10px 6px;margin:0}
+.ep-rodape{justify-content:flex-end;gap:8px}
+.convite-card{display:flex;gap:12px;align-items:flex-start;margin-top:4px;padding:12px;border-radius:16px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));max-width:380px}
+.cc-ic{font-size:1.6rem;line-height:1}.cc-c{display:flex;flex-direction:column;gap:2px;min-width:0}.cc-c b{word-break:break-word}
+.cc-acoes{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px}.cc-ok{color:var(--ok,#16a34a);font-weight:700}
 .ini-hero2{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:26px 26px;margin-bottom:18px;border-radius:24px;
   background:radial-gradient(120% 140% at 100% 0%,color-mix(in srgb,var(--accent) 28%,transparent),transparent 60%),linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--accent) 8%,var(--surface)));
   border:1px solid color-mix(in srgb,var(--accent) 25%,var(--line))}
@@ -1094,7 +1112,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=3.6">
+<link rel="stylesheet" href="css/componentes.css?v=3.7">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -1104,7 +1122,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/ExercicioIdioma.js?v=3.0"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
-<script src="js/componentes/Estante.js?v=3.6"></script>
+<script src="js/componentes/Estante.js?v=3.7"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
@@ -1771,7 +1789,7 @@ async function entrar(modo){
   S.pomoLog=garantirTotais(S.pomoLog&&S.pomoLog.dias?S.pomoLog:{dias:{},sessoes:0});carregarCrono();virarSemana();verificarConquistas(true);if(S.edital&&!Array.isArray(S.edital.materias))S.edital=null;
   if(S.perfil&&S.perfil.ui)aplicarUI(S.perfil.ui);else if(S.perfil&&S.perfil.tema)aplicarTema(S.perfil.tema);
   if(S.perfil&&S.perfil.pomo)Object.assign(P.dur,S.perfil.pomo);else if(S.perfil)Object.assign(P.dur,{foco:+S.perfil.bloco||50,curta:+S.perfil.pausa||10});P.restante=pomoTotal();carregarPomo();
-  if(S.mode==="nuvem"){assinarSocial();if(FBM()){iniciarComunidadeFB();iniciarConquistasSrv();iniciarAssinatura()}}
+  if(S.mode==="nuvem"){assinarSocial();if(FBM()){iniciarComunidadeFB();iniciarConquistasSrv();iniciarAssinatura();try{if(window.LAComp&&LAComp.Estante)LAComp.Estante.iniciar(appEstante)}catch(e){}}}
   if(S.perfil&&S.plano){S.view="inicio";renderShell()}
   else{S.step=0;S.draft=S.perfil?migrar(clone(S.perfil)):perfilPadrao(nomeConta);renderWizard()}
 }
@@ -2521,9 +2539,15 @@ Object.defineProperty(window,"LAService",{configurable:true,get(){
       const m=d&&d.dias&&d.dias[dataISO()]?d.dias[dataISO()].min||0:0;minNuvemCache={em:Date.now(),min:Math.max(m,minutosDia(dataISO()))};return minNuvemCache.min}})}
   return servNuvem}});
 /* ================= Minha estante (js/componentes/Estante.js) ================= */
-// arquivos da pessoa por categoria, com caneta e marca-texto; com conta, também ficam na nuvem (data/users/{uid}/estante)
+// arquivos da pessoa por categoria, com caneta e marca-texto (ficam no aparelho); notas compartilhadas ficam em compartilhados/{id}
 const appEstante={uid:()=>S.uid||"visitante",db:()=>FBM()?S.db:null,
-  naChamada:()=>!!V.canal,escolherPessoas:op=>escolherPessoas(op),enviarParaPessoa:(o,f,t)=>enviarParaPessoa(o,f,t),meuNome:()=>(S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"Estudante",transmitindo:()=>!!(V.video&&V.video._estante),transmitir:t=>vozDefinirVideo(t,"tela"),pararTransmissao:()=>{if(V.video&&V.video._estante)vozDefinirVideo(null)},esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),naTela:()=>S.view==="estante"};
+  irPara:v=>go(v),badgeConvites:n=>{$$('[data-go="compartilhadas"]').forEach(a=>{let b=a.querySelector(".badge");if(n){if(!b){a.insertAdjacentHTML("beforeend",'<span class="badge"></span>');b=a.querySelector(".badge")}b.textContent=n}else if(b)b.remove()})},
+  convitesMudou:()=>atualizarCartoesChat(),convidarNaConversa:(o,info)=>enviarConvite(o,info),
+  naChamada:()=>!!V.canal,escolherPessoas:op=>escolherPessoas(op),enviarParaPessoa:(o,f,t,copia)=>enviarParaPessoa(o,f,t,copia),meuNome:()=>(S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"Estudante",transmitindo:()=>!!(V.video&&V.video._estante),transmitir:t=>vozDefinirVideo(t,"tela"),pararTransmissao:()=>{if(V.video&&V.video._estante)vozDefinirVideo(null)},esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),naTela:()=>S.view==="estante"||S.view==="compartilhadas"};
+function renderCompartilhadas(){
+  if(!window.LAComp||!LAComp.Estante){$("#main").innerHTML=`<div class="page">${pageHead("Notas compartilhadas")}<div class="card"><p>Não foi possível carregar. Atualize a página.</p></div></div>`;return}
+  LAComp.Estante.renderComp($("#main"),appEstante);
+}
 function renderEstante(){
   if(!window.LAComp||!LAComp.Estante){$("#main").innerHTML=`<div class="page">${pageHead("Minha estante")}<div class="card"><p>Não foi possível carregar a estante. Atualize a página.</p></div></div>`;return}
   LAComp.Estante.render($("#main"),appEstante);
@@ -2682,8 +2706,11 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.0";
+const APP_VERSAO="3.1";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Notas compartilhadas 👥",d:"Nova aba no menu: crie cadernos para escrever junto com colegas e veja tudo o que cada um escreve na hora. Os convites chegam nas Mensagens e a pessoa escolhe se aceita."},
+  {t:"Compartilhe a tela em qualquer aparelho 📱",d:"Na chamada, toque em compartilhar tela: no celular e no tablet você mostra a tela do Logic Academy, um arquivo da estante ou a câmera de trás; no computador, a tela inteira."},
+  {t:"Escolher pessoas ficou mais fácil 🔎",d:"Quem conversa com você aparece primeiro; é só tocar para marcar uma ou várias pessoas."},
   {t:"Tempo sempre à vista ⏱️",d:"Com o pomodoro ou o cronômetro ligado, um quadro mostra o tempo por cima de qualquer tela (dá para arrastar). Fechou? Fica uma faixinha no alto. Também dá para abrir uma janela por cima de outros apps e ligar a notificação 🔔 com os minutos."},
   {t:"Compartilhe seus arquivos 🔗",d:"Na estante, toque em ⋯ › Compartilhar: envie uma cópia pelo WhatsApp ou e-mail, mande para alguém do Logic Academy ou crie um arquivo conjunto em que vocês escrevem juntos e veem as mudanças na hora."},
   {t:"Dê aulas na chamada 📡",d:"Numa chamada de vídeo, abra um arquivo da estante e toque em Transmitir: todo mundo vê a página e o que você escreve. No computador também dá para mostrar a tela inteira."},
@@ -2944,7 +2971,7 @@ async function sairGrupoFB(gid){
     await meuDoc("social").set({grupos:{[gid]:firebase.firestore.FieldValue.delete()}},{merge:true});toast("Você saiu do grupo.")}
   catch(e){toast("Não foi possível sair do grupo.")}
 }
-function msgsHtml(lista){return lista.length?lista.map(m=>`<div class="msg ${m.autor===S.uid?"mine":""}" data-perfil="${m.autor}">${avatar(m.autor)}<div style="min-width:0"><div class="h"><b>${esc(nomeDe(m.autor))}</b><time>${hora(m.em)}</time></div>${m.texto?`<div class="b">${esc(m.texto)}</div>`:""}${m.q&&m.q.id?qbMsgHtml(m.q):""}${m.arq&&m.arq.id?arqMsgHtml(m,m._base||m._gid):""}</div></div>`).join("")
+function msgsHtml(lista){return lista.length?lista.map(m=>`<div class="msg ${m.autor===S.uid?"mine":""}" data-perfil="${m.autor}">${avatar(m.autor)}<div style="min-width:0"><div class="h"><b>${esc(nomeDe(m.autor))}</b><time>${hora(m.em)}</time></div>${m.texto&&!m.conv?`<div class="b">${esc(m.texto)}</div>`:""}${m.q&&m.q.id?qbMsgHtml(m.q):""}${m.conv&&m.conv.fid?cartaoConviteHtml(m):m.arq&&m.arq.id&&m.copia?cartaoCopiaHtml(m,m._base||m._gid):m.arq&&m.arq.id?arqMsgHtml(m,m._base||m._gid):""}</div></div>`).join("")
   :`<div class="empty-state" style="margin:auto">${ico("chat")}<span>Nenhuma mensagem ainda. Diga oi!</span></div>`}
 function pintarMsgs(boxId,lista){const box=$("#"+boxId);if(!box)return;const perto=box.scrollHeight-box.scrollTop-box.clientHeight<80||box.dataset.init!=="1";box.innerHTML=msgsHtml(lista);if(perto){box.scrollTop=box.scrollHeight;box.dataset.init="1"}
   if(lista.some(m=>m.q&&m.q.id)&&!(S.qb&&S.qb.doc)){qbEstado();qbDoc().then(qbAtualizarSelosMsgs).catch(()=>{})}}
@@ -3377,37 +3404,84 @@ function listaConversas(){
 }
 // escolher uma ou mais pessoas (compartilhar arquivos da estante): só nome e foto aparecem
 function escolherPessoas(op){op=op||{};return new Promise(ok=>{
-  document.querySelectorAll(".modal-bg").forEach(m=>m.remove());
-  const bg=document.createElement("div");bg.className="modal-bg est-modal";const sel=new Map();
-  bg.innerHTML=`<div class="card stack modal" role="dialog" aria-modal="true" aria-labelledby="ep-t" style="width:min(460px,100%)">
-    <h3 id="ep-t" style="margin:0">${esc(op.titulo||"Escolher pessoas")}</h3>${op.texto?`<p class="small muted" style="margin:0">${esc(op.texto)}</p>`:""}
-    <div class="field"><label for="ep-q">Nome ou @usuário</label><input type="text" id="ep-q" autocomplete="off" placeholder="Digite pelo menos 2 letras"></div>
-    <div class="ep-sel row" style="gap:6px;flex-wrap:wrap"></div>
-    <div class="list" id="ep-res" style="max-height:42vh;overflow:auto"></div>
-    <div class="row" style="justify-content:flex-end"><button class="btn ghost" type="button" data-ep="x">Cancelar</button><button class="btn primary" type="button" data-ep="ok" disabled>${esc(op.botao||"Confirmar")}</button></div></div>`;
+  document.querySelectorAll(".modal-bg.ep-bg").forEach(m=>m.remove());
+  const bg=document.createElement("div");bg.className="modal-bg est-modal ep-bg";const sel=new Map(),tirar=new Set(op.tirar||[]);
+  const perfis=S.soc&&S.soc.perfis||{},nome=id=>(perfis[id]&&perfis[id].nome)||nomeDe(id)||"Pessoa";
+  // primeiro aparecem as pessoas com quem você já conversa, depois os amigos
+  const recentes=Object.values(FBC.convs||{}).sort((x,y)=>(y.atualizado||0)-(x.atualizado||0)).map(c=>(c.participantes||[]).find(u=>u!==S.uid)).filter(Boolean);
+  const amigos=(S.pub&&S.pub.amigos)||[],sugeridos=[...new Set(recentes.concat(amigos))].filter(id=>id!==S.uid&&!tirar.has(id)&&perfis[id]).slice(0,12);
+  bg.innerHTML=`<div class="card stack modal ep" role="dialog" aria-modal="true" aria-labelledby="ep-t" style="width:min(480px,100%)">
+    <div><h3 id="ep-t" style="margin:0">${esc(op.titulo||"Escolher pessoas")}</h3>${op.texto?`<p class="small muted" style="margin:4px 0 0">${esc(op.texto)}</p>`:""}</div>
+    <div class="ep-busca">${ico("search")}<input type="search" id="ep-q" autocomplete="off" placeholder="Buscar pelo nome ou @usuário" aria-label="Buscar pessoas"></div>
+    <div class="ep-sel" aria-live="polite"></div>
+    <div class="ep-lista" id="ep-res" role="listbox" aria-multiselectable="${!!op.multi}"></div>
+    <div class="row ep-rodape"><button class="btn ghost" type="button" data-ep="x">Cancelar</button><button class="btn primary" type="button" data-ep="ok" disabled>${esc(op.botao||"Confirmar")}</button></div></div>`;
   document.body.appendChild(bg);
   const inp=bg.querySelector("#ep-q"),res=bg.querySelector("#ep-res"),chips=bg.querySelector(".ep-sel"),okb=bg.querySelector('[data-ep="ok"]');
   const fim=v=>{bg.remove();ok(v)};
-  const pintarSel=()=>{chips.innerHTML=[...sel.entries()].map(([id,n])=>`<button type="button" class="pill" data-ep-tira="${id}">${esc(n)} ✕</button>`).join("");okb.disabled=!sel.size;
+  const linha=id=>{const p=perfis[id]||{},on=sel.has(id);return `<button type="button" class="ep-p ${on?"on":""}" role="option" aria-selected="${on}" data-ep-id="${id}">${avatar(id)}<span class="ep-n"><b>${esc(p.nome||nome(id))}</b><small>${p.usuario?"@"+esc(p.usuario):""}</small></span><span class="ep-ck" aria-hidden="true">${on?"✓":""}</span></button>`};
+  const pintarSel=()=>{chips.innerHTML=[...sel.entries()].map(([id,n])=>`<button type="button" class="ep-chip" data-ep-tira="${id}" aria-label="Tirar ${esc(n)}">${avatar(id,"sm")}${esc(n)} <span aria-hidden="true">✕</span></button>`).join("");
+    okb.disabled=!sel.size;okb.textContent=(op.botao||"Confirmar")+(op.multi&&sel.size>1?` (${sel.size})`:"");
     chips.querySelectorAll("[data-ep-tira]").forEach(b=>b.onclick=()=>{sel.delete(b.dataset.epTira);pintarSel();pintar()})};
-  const pintar=()=>{const q=norm(inp.value.replace(/^@/,""));
-    if(q.length<2){res.innerHTML=`<p class="small muted">Procure pelo nome ou pelo @usuário.</p>`;return}
-    const achados=Object.entries(S.soc.perfis).filter(([id,p])=>id!==S.uid&&p&&p.nome&&!(op.tirar||[]).includes(id)&&(norm(p.nome).includes(q)||norm(p.usuario||"").startsWith(q))).slice(0,30);
-    res.innerHTML=achados.length?achados.map(([id,p])=>`<button type="button" class="li" data-ep-id="${id}" style="width:100%;text-align:left;background:${sel.has(id)?"var(--sunken)":"transparent"};border:0;padding:8px;cursor:pointer;grid-template-columns:auto minmax(0,1fr) auto">
-      ${avatar(id)}<div style="min-width:0"><div class="nm">${esc(p.nome)}</div><div class="small muted">${p.usuario?"@"+esc(p.usuario):""}</div></div><span>${sel.has(id)?"✓":""}</span></button>`).join(""):`<p class="small muted">Ninguém encontrado com esse nome.</p>`;
-    res.querySelectorAll("[data-ep-id]").forEach(b=>b.onclick=()=>{const id=b.dataset.epId,n=(S.soc.perfis[id]||{}).nome||"Pessoa";
-      if(sel.has(id))sel.delete(id);else{if(!op.multi)sel.clear();sel.set(id,n)}pintarSel();pintar();if(!op.multi)okb.focus()})};
-  inp.oninput=pintar;pintar();setTimeout(()=>inp.focus(),50);
-  bg.addEventListener("click",e=>{if(e.target===bg||e.target.closest('[data-ep="x"]'))fim([]);else if(e.target.closest('[data-ep="ok"]'))fim([...sel.entries()].map(([id,nome])=>({id,nome})))});
+  const pintar=()=>{const q=norm(inp.value.trim().replace(/^@/,""));
+    if(!q){res.innerHTML=sugeridos.length?`<div class="ep-tit">Pessoas com quem você conversa</div>${sugeridos.map(linha).join("")}`:`<p class="small muted ep-vazio">Digite o nome ou o @usuário da pessoa.</p>`}
+    else{const achados=Object.entries(perfis).filter(([id,p])=>id!==S.uid&&!tirar.has(id)&&p&&p.nome&&(norm(p.nome).includes(q)||norm(p.usuario||"").startsWith(q))).sort((a,b)=>norm(a[1].nome).indexOf(q)-norm(b[1].nome).indexOf(q)).slice(0,40);
+      res.innerHTML=achados.length?achados.map(([id])=>linha(id)).join(""):`<p class="small muted ep-vazio">Ninguém encontrado com “${esc(inp.value.trim())}”.</p>`}
+    res.querySelectorAll("[data-ep-id]").forEach(b=>b.onclick=()=>{const id=b.dataset.epId;
+      if(sel.has(id))sel.delete(id);else{if(!op.multi)sel.clear();sel.set(id,nome(id))}pintarSel();pintar()})};
+  inp.oninput=pintar;pintar();pintarSel();setTimeout(()=>inp.focus(),80);
+  inp.onkeydown=e=>{if(e.key==="Enter"){const f=res.querySelector("[data-ep-id]");if(f)f.click()}};
+  bg.addEventListener("click",e=>{if(e.target===bg||e.target.closest('[data-ep="x"]'))fim([]);else if(e.target.closest('[data-ep="ok"]')&&sel.size)fim([...sel.entries()].map(([id,nome])=>({id,nome})))});
+  bg.addEventListener("keydown",e=>{if(e.key==="Escape")fim([])});
 })}
 // manda um arquivo (ou só um recado) para a conversa privada com a pessoa
-async function enviarParaPessoa(o,file,texto){
+async function enviarConvite(o,info){
+  const cid=cidDe(o),ref=S.db.collection("conversas").doc(cid),t=`👥 Convite para editar junto: “${info.nome}”`;
+  await ref.set({participantes:[S.uid,o].sort(),atualizado:Date.now(),ultima:t.slice(0,90),ultimaDe:S.uid},{merge:true});
+  await ref.collection("mensagens").add({autor:S.uid,texto:t.slice(0,1000),em:Date.now(),conv:{fid:info.fid,nome:String(info.nome).slice(0,120),tipo:info.tipo||""}});
+  return true}
+async function enviarParaPessoa(o,file,texto,copia){
   const cid=cidDe(o),ref=S.db.collection("conversas").doc(cid);
   await ref.set({participantes:[S.uid,o].sort(),atualizado:Date.now(),ultima:String(texto||("📎 "+(file&&file.name||""))).slice(0,90),ultimaDe:S.uid},{merge:true});
   if(texto)await ref.collection("mensagens").add({autor:S.uid,texto:String(texto).slice(0,1000),em:Date.now()});
   if(!file)return true;let ok=false;
-  await enviarArquivosChat(ref,[file],{postar:async info=>{ok=true;await ref.collection("mensagens").add({autor:S.uid,texto:"",em:Date.now(),arq:info})}});
+  await enviarArquivosChat(ref,[file],{postar:async info=>{ok=true;await ref.collection("mensagens").add(Object.assign({autor:S.uid,texto:"",em:Date.now(),arq:info},copia?{copia:{nome:String(copia.nome||"").slice(0,120),tipo:copia.tipo||""}}:{}))}});
   return ok}
+// cartões de convite (editar junto) e de cópia de arquivo dentro da conversa: a outra pessoa aceita ou recusa
+const COPIAS_RESP=(()=>{try{return JSON.parse(localStorage.getItem("la_copias_resp")||"{}")}catch(e){return {}}})();
+function guardarCopiaResp(id,v){COPIAS_RESP[id]=v;try{localStorage.setItem("la_copias_resp",JSON.stringify(COPIAS_RESP))}catch(e){}}
+function cartaoConviteHtml(m){const c=m.conv,eu=m.autor===S.uid,st=window.LAComp&&LAComp.Estante?LAComp.Estante.estadoConvite(c.fid):"";
+  const tipo=c.tipo==="caderno"?"caderno":c.tipo==="pdf"?"PDF":"arquivo";
+  return `<div class="convite-card" data-conv="${esc(c.fid)}" data-tipo="${esc(c.tipo||"")}"><div class="cc-ic">👥</div><div class="cc-c"><span class="eyebrow">${eu?"Você convidou para editar junto":"Convite para editar junto"}</span><b>${esc(c.nome)}</b><span class="small muted">${tipo} · Notas compartilhadas</span>
+    <div class="cc-acoes">${eu?`<span class="small muted">${st==="membro"?"Você e a pessoa podem abrir em Notas compartilhadas.":"Aguardando a pessoa aceitar."}</span><button class="btn sm" type="button" data-cc-abrir>Abrir</button>`
+      :st==="convidado"?`<button class="btn sm ghost" type="button" data-cc-recusar>Recusar</button><button class="btn sm primary" type="button" data-cc-aceitar>Aceitar</button>`
+      :st==="membro"?`<span class="small cc-ok">✓ Você aceitou</span><button class="btn sm" type="button" data-cc-abrir>Abrir</button>`
+      :`<span class="small muted">Convite respondido ou cancelado.</span>`}</div></div></div>`}
+function cartaoCopiaHtml(m,base){const a=m.arq||{},c=m.copia||{},eu=m.autor===S.uid,r=COPIAS_RESP[a.id];
+  return `<div class="convite-card copia" data-arq="${esc(a.id||"")}" data-arq-g="${esc(base||"")}" data-arq-tipo="${esc(a.tipo||"")}" data-arq-nome="${esc(a.nome||"arquivo")}"><div class="cc-ic">📚</div><div class="cc-c"><span class="eyebrow">${eu?"Você enviou para a estante":"Arquivo para a sua estante"}</span><b>${esc(c.nome||a.nome||"Arquivo")}</b><span class="small muted">${tamanhoTxt(+a.tamanho||0)} · com anotações</span>
+    <div class="cc-acoes">${eu?`<span class="small muted">A pessoa precisa aceitar para guardar.</span>`
+      :r==="ok"?`<span class="small cc-ok">✓ Guardado na sua estante</span><button class="btn sm" type="button" data-cp-abrir>Abrir estante</button>`
+      :r==="nao"?`<span class="small muted">Você recusou.</span>`
+      :`<button class="btn sm ghost" type="button" data-cp-recusar>Recusar</button><button class="btn sm primary" type="button" data-cp-aceitar>Aceitar e guardar</button>`}</div></div></div>`}
+function atualizarCartoesChat(){$$(".convite-card[data-conv]").forEach(el=>{const msg=el.closest(".msg");const m={conv:{fid:el.dataset.conv,nome:el.querySelector("b").textContent,tipo:""},autor:msg&&msg.dataset.perfil};
+  if(el.dataset.tipo)m.conv.tipo=el.dataset.tipo;const novo=document.createElement("div");novo.innerHTML=cartaoConviteHtml(m);el.replaceWith(novo.firstElementChild)})}
+document.addEventListener("click",async e=>{
+  const b=e.target.closest("[data-cc-aceitar],[data-cc-recusar],[data-cc-abrir],[data-cp-aceitar],[data-cp-recusar],[data-cp-abrir]");if(!b)return;
+  const card=b.closest(".convite-card");if(!card)return;e.stopPropagation();
+  if(b.hasAttribute("data-cc-abrir")){go("compartilhadas");return}
+  if(b.hasAttribute("data-cp-abrir")){go("estante");return}
+  if(b.hasAttribute("data-cc-aceitar")||b.hasAttribute("data-cc-recusar")){b.disabled=true;const fid=card.dataset.conv;
+    const ok=b.hasAttribute("data-cc-aceitar")?await LAComp.Estante.aceitarConvite(fid):await LAComp.Estante.recusarConvite(fid);
+    if(ok&&b.hasAttribute("data-cc-aceitar"))setTimeout(()=>go("compartilhadas"),400);else b.disabled=false;return}
+  const id=card.dataset.arq;
+  if(b.hasAttribute("data-cp-recusar")){guardarCopiaResp(id,"nao");try{await apagarArquivoFB(baseArq(card.dataset.arqG),id,true)}catch(er){}
+    const n=document.createElement("div");n.innerHTML=cartaoCopiaHtml({autor:"",arq:{id,tamanho:0,nome:card.dataset.arqNome},copia:{nome:card.querySelector("b").textContent}},card.dataset.arqG);card.replaceWith(n.firstElementChild);toast("Arquivo recusado.");return}
+  b.disabled=true;b.textContent="Guardando…";
+  try{const blob=await blobArquivo(card.dataset.arqG,id,card.dataset.arqTipo);const f=new File([blob],card.dataset.arqNome||"arquivo.laest",{type:blob.type||"application/octet-stream"});
+    const ok=await LAComp.Estante.importar(f);if(!ok)throw {code:"pacote"};
+    guardarCopiaResp(id,"ok");const n=document.createElement("div");n.innerHTML=cartaoCopiaHtml({autor:"",arq:{id,tamanho:blob.size,nome:card.dataset.arqNome},copia:{nome:card.querySelector("b").textContent}},card.dataset.arqG);card.replaceWith(n.firstElementChild)}
+  catch(er){b.disabled=false;b.textContent="Aceitar e guardar";toast(er&&er.code==="fora"?"Este arquivo não está mais disponível (já foi baixado em outro aparelho ou passou de 7 dias).":"Não foi possível guardar o arquivo.")}
+},true);
 // nova conversa: procura a pessoa pelo nome ou @usuário (só o nome e a foto aparecem; nada de progresso)
 function modalNovaConversa(){
   document.querySelectorAll(".modal-bg").forEach(m=>m.remove());
@@ -4061,10 +4135,59 @@ async function vozDefinirVideo(track,tipo){
 async function vozCamera(){if(!V.canal)return;if(V.vtipo==="cam"){vozDefinirVideo(null);return}
   try{const st=await navigator.mediaDevices.getUserMedia({video:{width:{ideal:640},height:{ideal:360},frameRate:{ideal:15},facingMode:"user"}});const t=st.getVideoTracks()[0];t.onended=()=>{if(V.video===t){if(document.hidden)V.voltarCam=true;vozDefinirVideo(null)}};V.voltarCam=false;vozDefinirVideo(t,"cam")}
   catch(e){toast(e&&e.name==="NotAllowedError"?"Libere a câmera para o site (no cadeado ao lado do endereço).":"Não foi possível ligar a câmera.")}}
+// compartilhar a tela em qualquer aparelho:
+// - computador (e celulares que deixam): a tela inteira, pelo próprio navegador;
+// - celular e tablet: a tela do Logic Academy (o que a pessoa vê no app vira vídeo), um arquivo da estante ou a câmera de trás
 async function vozTela(){if(!V.canal)return;if(V.vtipo==="tela"){vozDefinirVideo(null);return}
-  if(!podeTela()){vozMostrarArquivo(true);return}
-  try{const st=await navigator.mediaDevices.getDisplayMedia({video:{frameRate:{ideal:10}},audio:false});const t=st.getVideoTracks()[0];t.contentHint="detail";t.onended=()=>{if(V.video===t)vozDefinirVideo(null)};vozDefinirVideo(t,"tela")}
-  catch(e){if(e&&e.name==="NotAllowedError")return;if(/Android/i.test(navigator.userAgent)||e&&e.name==="NotSupportedError"){vozMostrarArquivo(true);return}toast("Não foi possível compartilhar a tela.")}}
+  const movel=/Android|iPhone|iPad|Mobile/i.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Mac/.test(navigator.userAgent));
+  if(!movel&&navigator.mediaDevices&&navigator.mediaDevices.getDisplayMedia){
+    try{const st=await navigator.mediaDevices.getDisplayMedia({video:{frameRate:{ideal:10}},audio:false});const t=st.getVideoTracks()[0];t.contentHint="detail";t.onended=()=>{if(V.video===t)vozDefinirVideo(null)};vozDefinirVideo(t,"tela");return}
+    catch(e){if(e&&e.name==="NotAllowedError")return}}
+  vozEscolherTela(movel)}
+function vozEscolherTela(movel){
+  document.querySelectorAll(".modal-bg.vt-esc").forEach(m=>m.remove());
+  const bg=document.createElement("div");bg.className="modal-bg vt-esc est-modal";
+  const temTudo=!!(navigator.mediaDevices&&navigator.mediaDevices.getDisplayMedia);
+  bg.innerHTML=`<div class="card stack modal" role="dialog" aria-modal="true" aria-labelledby="vt-t" style="width:min(460px,100%)"><h3 id="vt-t" style="margin:0">O que você quer mostrar?</h3>
+    <div class="opts opts-col">
+      <button type="button" class="opt" data-vt="site"><b>📱 A tela do Logic Academy</b><span>Quem está na chamada vê o que você vê no app: questões, plano, estante… Funciona em celular, tablet e computador.</span></button>
+      <button type="button" class="opt" data-vt="arquivo"><b>📑 Um arquivo da estante</b><span>Melhor qualidade para dar aula: a página e tudo o que você escrever com a caneta.</span></button>
+      <button type="button" class="opt" data-vt="traseira"><b>📷 A câmera de trás</b><span>Para mostrar um caderno, livro, papel ou lousa.</span></button>
+      ${temTudo?`<button type="button" class="opt" data-vt="tudo"><b>🖥️ A tela inteira do aparelho</b><span>${movel?"Alguns celulares e tablets não deixam; se não der, use uma das opções acima.":"Qualquer janela ou a tela inteira."}</span></button>`:""}
+    </div>
+    ${movel&&!temTudo?`<p class="small muted" style="margin:0">Os navegadores de celular e tablet não deixam um site gravar outros apps. Por isso o Logic Academy transmite a própria tela dele.</p>`:""}
+    <div class="row" style="justify-content:flex-end"><button class="btn ghost" type="button" data-vt="x">Cancelar</button></div></div>`;
+  document.body.appendChild(bg);
+  bg.addEventListener("click",async e=>{const b=e.target.closest("[data-vt]");if(e.target!==bg&&!b)return;bg.remove();const x=b&&b.dataset.vt;
+    if(x==="site")vozTelaSite();else if(x==="arquivo")vozMostrarArquivo();else if(x==="traseira")vozCameraTraseira();
+    else if(x==="tudo"){try{const st=await navigator.mediaDevices.getDisplayMedia({video:{frameRate:{ideal:10}},audio:false});const t=st.getVideoTracks()[0];t.contentHint="detail";t.onended=()=>{if(V.video===t)vozDefinirVideo(null)};vozDefinirVideo(t,"tela")}
+      catch(er){if(!er||er.name!=="NotAllowedError")toast("Este aparelho não deixou mostrar a tela inteira. Use “A tela do Logic Academy”.")}}})}
+async function vozCameraTraseira(){
+  try{const st=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:"environment"},width:{ideal:1280},height:{ideal:720},frameRate:{ideal:15}}});const t=st.getVideoTracks()[0];t.contentHint="detail";t.onended=()=>{if(V.video===t)vozDefinirVideo(null)};vozDefinirVideo(t,"cam")}
+  catch(e){toast(e&&e.name==="NotAllowedError"?"Libere a câmera para o site (no cadeado ao lado do endereço).":"Não foi possível ligar a câmera de trás.")}}
+// a tela do site vira vídeo: copia o que aparece (2 a 4 vezes por segundo); com a estante aberta, copia direto as folhas
+let h2cP=null;
+function carregarH2C(){if(window.html2canvas)return Promise.resolve(window.html2canvas);
+  if(!h2cP)h2cP=new Promise((ok,no)=>{const sc=document.createElement("script");sc.src="https://cdn.jsdelivr.net/npm/html2canvas-pro@1.5.8/dist/html2canvas-pro.min.js";sc.onload=()=>ok(window.html2canvas);sc.onerror=()=>{h2cP=null;no(new Error("html2canvas"))};document.head.appendChild(sc)});
+  return h2cP}
+async function vozTelaSite(){
+  if(!V.canal)return;let h2c;
+  try{h2c=await carregarH2C()}catch(e){toast("Não foi possível preparar a transmissão. Confira a internet.");return}
+  const cv=document.createElement("canvas"),k=Math.min(2,1280/Math.max(320,innerWidth));cv.width=Math.round(innerWidth*k);cv.height=Math.round(innerHeight*k);
+  const ctx=cv.getContext("2d");ctx.fillStyle="#fff";ctx.fillRect(0,0,cv.width,cv.height);
+  const st=cv.captureStream?cv.captureStream(4):null,t=st&&st.getVideoTracks()[0];
+  if(!t){toast("Este navegador não consegue transmitir a tela do site.");return}
+  t._site=true;t.contentHint="detail";vozDefinirVideo(t,"tela");toast("Transmitindo a tela do Logic Academy. Para parar, toque de novo em compartilhar tela.");
+  const fora=el=>el.id==="voz-palco"||el.id==="mini-voz"||el.id==="voz-flut"||(el.classList&&(el.classList.contains("ft2")||el.classList.contains("ft2-pill")||el.classList.contains("toast")));
+  while(t.readyState==="live"&&V.video===t){const t0=Date.now();
+    try{
+      const W=Math.round(innerWidth*k),H=Math.round(innerHeight*k);if(cv.width!==W||cv.height!==H){cv.width=W;cv.height=H}
+      if(document.documentElement.classList.contains("est-aberto")&&window.LAComp&&LAComp.Estante&&LAComp.Estante.vista)LAComp.Estante.vista(cv);
+      else{const img=await h2c(document.body,{scale:k,x:scrollX,y:scrollY,width:innerWidth,height:innerHeight,windowWidth:innerWidth,windowHeight:innerHeight,logging:false,useCORS:true,backgroundColor:getComputedStyle(document.body).backgroundColor||"#fff",ignoreElements:fora});
+        if(t.readyState!=="live")break;ctx.drawImage(img,0,0,cv.width,cv.height)}
+    }catch(e){console.warn("tela do site",e)}
+    await new Promise(r=>setTimeout(r,Math.max(120,450-(Date.now()-t0))))}
+}
 // dar aula com os arquivos: a página aberta na Minha estante vai para a chamada (funciona também em tablet e celular)
 function vozMostrarArquivo(semTela){
   if(!V.canal)return;
@@ -4478,7 +4601,7 @@ function renderTutorial(){
 // e ninguém vê o progresso dos outros. As telas antigas continuam no código, mas não aparecem nem abrem.
 const SO_CONVERSA=true,TELAS_SOCIAIS=new Set(["grupos","buscarGrupos","voz","chat","amigos","ranking"]);
 const NAV=[
-  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["estante","Minha estante","bookmark"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"],["pro","Logic Academy Pro","flame"]]],
+  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["estante","Minha estante","bookmark"],["compartilhadas","Notas compartilhadas","users"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"],["pro","Logic Academy Pro","flame"]]],
   ["Prova",[["edital","Escanear edital","scan"],["topicos","Tópicos da prova","list"],["flashcards","Flashcards","cartas"]]],
   ["Conversas",[["mensagens","Mensagens","send"]]],
   ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"],["admin","Administração","lock"]]],
@@ -4550,11 +4673,11 @@ function renderSideUser(){
   el.innerHTML=`${S.mode==="nuvem"?avatar(S.uid):`<span class="avatar" aria-hidden="true">${esc(nm[0]||"V").toUpperCase()}</span>`}<div style="min-width:0"><div class="nm">${esc(nm)}${S.mode==="nuvem"&&ehPro()?' <span class="pro-tag">PRO</span>':""}</div><div class="sub" title="${esc(contaEmail())}">${S.mode==="nuvem"&&ehAdmin()?"🛡 Administrador":S.mode==="nuvem"?(esc(contaEmail())||"Salvo na nuvem"):"Visitante · nada é salvo"}</div></div>`;
 }
 function progEdital(){if(!S.edital)return 0;const all=S.edital.materias.flatMap(m=>m.topicos);return all.length?Math.round(all.filter(t=>t.feito).length/all.length*100):0}
-function go(v){pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();if(S.view==="estante"&&v!=="estante"&&window.LAComp&&LAComp.Estante)LAComp.Estante.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
+function go(v){pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();if((S.view==="estante"||S.view==="compartilhadas")&&v!==S.view&&window.LAComp&&LAComp.Estante)LAComp.Estante.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
 function renderView(){
   $$("[data-go]").forEach(a=>{a.classList.toggle("on",a.dataset.go===S.view);if(a.dataset.go===S.view){const g=a.closest(".nav-grp.fech");if(g){g.classList.remove("fech");g.querySelectorAll("a").forEach(x=>x.removeAttribute("tabindex"));const b=g.previousElementSibling;if(b)b.setAttribute("aria-expanded","true")}}if(a.dataset.go==="topicos"){a.hidden=!S.edital;const b=a.querySelector(".badge");if(S.edital){if(b)b.textContent=progEdital()+"%";else a.insertAdjacentHTML("beforeend",`<span class="badge">${progEdital()}%</span>`)}}});
   if(SO_CONVERSA&&TELAS_SOCIAIS.has(S.view)){S.view=S.view==="amigos"?"mensagens":"inicio";try{history.replaceState(history.state,"","#"+S.view)}catch(e){}renderView();return}
-  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,estante:renderEstante,idiomas:renderIdiomas,pro:renderPro,admin:renderAdmin,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
+  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,estante:renderEstante,compartilhadas:renderCompartilhadas,idiomas:renderIdiomas,pro:renderPro,admin:renderAdmin,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
   f();
 }
 const pageHead=(t,sub,acoes)=>`<div class="page-h"><div><h1>${t}</h1>${sub?`<p>${sub}</p>`:""}</div>${acoes?`<div class="row">${acoes}</div>`:""}</div>`;

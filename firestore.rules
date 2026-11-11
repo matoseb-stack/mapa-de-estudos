@@ -449,25 +449,38 @@ service cloud.firestore {
     }
 
     // Mensagens privadas entre duas pessoas
-    // Arquivos conjuntos da Minha estante: só as pessoas convidadas (membros) leem e escrevem.
-    // O dono convida e apaga; os outros escrevem traços, criam folhas no fim e podem sair.
+    // Notas compartilhadas (arquivos conjuntos da estante): só as pessoas que aceitaram o convite (membros) leem e escrevem.
+    // O dono convida (a pessoa fica em "convidados" até aceitar ou recusar), convida mais gente e apaga;
+    // os membros escrevem traços, criam folhas no fim e podem sair.
     match /compartilhados/{fid} {
       function membroC() { return logado() && request.auth.uid in get(/databases/$(database)/documents/compartilhados/$(fid)).data.membros; }
       function donoC() { return logado() && get(/databases/$(database)/documents/compartilhados/$(fid)).data.dono == request.auth.uid; }
-      allow read: if logado() && request.auth.uid in resource.data.membros;
+      function conv(d) { return d.get('convidados', []); }
+      allow read: if logado() && (request.auth.uid in resource.data.membros || request.auth.uid in conv(resource.data));
       allow create: if logado() && request.resource.data.dono == request.auth.uid
-                    && request.auth.uid in request.resource.data.membros
-                    && request.resource.data.membros.size() <= 20
+                    && request.resource.data.membros == [request.auth.uid]
+                    && conv(request.resource.data).size() <= 20
                     && request.resource.data.nome is string && request.resource.data.nome.size() <= 120;
       allow update: if logado() && (
+                      // dono: muda o que quiser, mas continua dono e membro
                       (resource.data.dono == request.auth.uid && request.resource.data.dono == request.auth.uid
-                        && request.auth.uid in request.resource.data.membros && request.resource.data.membros.size() <= 20)
+                        && request.auth.uid in request.resource.data.membros && request.resource.data.membros.size() <= 20
+                        && conv(request.resource.data).size() <= 20)
+                      // membro: cria folhas
                       || (request.auth.uid in resource.data.membros
                         && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['paginas', 'atualizado'])
                         && request.resource.data.paginas is int && request.resource.data.paginas <= 200)
+                      // membro: sai
                       || (request.auth.uid in resource.data.membros
                         && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['membros', 'atualizado'])
-                        && request.resource.data.membros == resource.data.membros.removeAll([request.auth.uid])));
+                        && request.resource.data.membros == resource.data.membros.removeAll([request.auth.uid]))
+                      // convidado: aceita (sai de convidados e entra em membros) ou recusa (só sai de convidados)
+                      || (request.auth.uid in conv(resource.data)
+                        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['membros', 'convidados', 'atualizado'])
+                        && conv(request.resource.data) == conv(resource.data).removeAll([request.auth.uid])
+                        && (request.resource.data.membros == resource.data.membros
+                          || (request.resource.data.membros.hasAll(resource.data.membros)
+                            && request.resource.data.membros.removeAll(resource.data.membros) == [request.auth.uid]))));
       allow delete: if logado() && resource.data.dono == request.auth.uid;
       match /partes/{pid} {
         allow read: if membroC();
