@@ -449,6 +449,39 @@ service cloud.firestore {
     }
 
     // Mensagens privadas entre duas pessoas
+    // Arquivos conjuntos da Minha estante: só as pessoas convidadas (membros) leem e escrevem.
+    // O dono convida e apaga; os outros escrevem traços, criam folhas no fim e podem sair.
+    match /compartilhados/{fid} {
+      function membroC() { return logado() && request.auth.uid in get(/databases/$(database)/documents/compartilhados/$(fid)).data.membros; }
+      function donoC() { return logado() && get(/databases/$(database)/documents/compartilhados/$(fid)).data.dono == request.auth.uid; }
+      allow read: if logado() && request.auth.uid in resource.data.membros;
+      allow create: if logado() && request.resource.data.dono == request.auth.uid
+                    && request.auth.uid in request.resource.data.membros
+                    && request.resource.data.membros.size() <= 20
+                    && request.resource.data.nome is string && request.resource.data.nome.size() <= 120;
+      allow update: if logado() && (
+                      (resource.data.dono == request.auth.uid && request.resource.data.dono == request.auth.uid
+                        && request.auth.uid in request.resource.data.membros && request.resource.data.membros.size() <= 20)
+                      || (request.auth.uid in resource.data.membros
+                        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['paginas', 'atualizado'])
+                        && request.resource.data.paginas is int && request.resource.data.paginas <= 200)
+                      || (request.auth.uid in resource.data.membros
+                        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['membros', 'atualizado'])
+                        && request.resource.data.membros == resource.data.membros.removeAll([request.auth.uid])));
+      allow delete: if logado() && resource.data.dono == request.auth.uid;
+      match /partes/{pid} {
+        allow read: if membroC();
+        allow create, delete: if donoC();
+      }
+      match /tracos/{tid} {
+        allow read: if membroC();
+        allow create: if membroC() && request.resource.data.autor == request.auth.uid
+                      && request.resource.data.s is string && request.resource.data.s.size() < 400000
+                      && request.resource.data.pag is int;
+        allow delete: if membroC();
+      }
+    }
+
     match /conversas/{cid} {
       function participa() { return request.auth.uid in get(/databases/$(database)/documents/conversas/$(cid)).data.participantes; }
       allow read: if logado() && request.auth.uid in resource.data.participantes;
