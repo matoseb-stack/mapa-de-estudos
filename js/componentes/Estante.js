@@ -360,34 +360,76 @@
     return bg;
   }
 
-  /* ================= leitor com caneta (visual inspirado nos cadernos digitais de tablet) ================= */
-  // traço: { f: "caneta"|"lapis"|"marca", c: cor, w: espessura (fração da largura da página × 10000),
+  /* ================= leitor com caneta (tela cheia, ferramentas numa barra lateral que minimiza) ================= */
+  // traço: { f: tipo de caneta (veja PINCEIS), c: cor, w: espessura (fração da largura da página × 10000),
   //          p: [x, y, x, y…] em 0..10000, q?: [pressão 0..100 por ponto] (só com caneta de tablet) }
-  const PALETA = ["#111827", "#4b5563", "#2563eb", "#0ea5e9", "#16a34a", "#65a30d", "#dc2626", "#f97316", "#ca8a04", "#9333ea", "#db2777", "#7c2d12"];
-  const PALETA_MARCA = ["#fde047", "#86efac", "#7dd3fc", "#f9a8d4", "#fdba74", "#c4b5fd"];
-  const TAMANHOS = { caneta: [10, 16, 24, 36, 54], lapis: [10, 14, 20, 28, 40], marca: [70, 100, 140, 190, 260], borracha: [60, 110, 170, 260, 400] };
-  const NOMES_F = { caneta: "Caneta", lapis: "Lápis", marca: "Marca-texto", borracha: "Borracha", mao: "Mover" };
+  const hsl = (h, s, l) => { s /= 100; l /= 100; const k = n => (n + h / 30) % 12, a = s * Math.min(l, 1 - l), f = n => l - a * Math.max(-1, Math.min(k(n) - 3, 9 - k(n), 1));
+    return "#" + [f(0), f(8), f(4)].map(x => Math.round(x * 255).toString(16).padStart(2, "0")).join(""); };
+  // paleta completa: cinzas + 11 tons em 4 intensidades
+  const PALETA = ["#000000", "#111827", "#1f2937", "#374151", "#4b5563", "#6b7280", "#9ca3af", "#cbd5e1", "#e5e7eb", "#f3f4f6", "#fafaf9", "#ffffff"]
+    .concat(...[30, 42, 56, 72].map(l => [0, 22, 40, 52, 95, 150, 175, 200, 222, 265, 300, 330].map(h => hsl(h, h === 52 ? 92 : 78, h === 52 ? l - 6 : l))));
+  const PALETA_MARCA = ["#fde047", "#facc15", "#bef264", "#86efac", "#5eead4", "#7dd3fc", "#a5b4fc", "#c4b5fd", "#f0abfc", "#f9a8d4", "#fda4af", "#fdba74"];
+  const PALETA_NEON = ["#faff00", "#39ff14", "#00f5ff", "#ff2bd6", "#ff6b00", "#b026ff"];
+  const PALETA_PASTEL = ["#fef3c7", "#dcfce7", "#e0f2fe", "#ede9fe", "#fce7f3", "#ffedd5"];
   const svg = (d, extra) => `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}${extra || ""}</svg>`;
   const ICF = {
     caneta: svg(`<path d="M4.5 19.5l1-4.2L16.2 4.6a2 2 0 012.8 0l.4.4a2 2 0 010 2.8L8.7 18.5z"/><path d="M14.5 6.3l3.2 3.2"/>`),
+    tinteiro: svg(`<path d="M12 3l5 6-3 9h-4L7 9z"/><path d="M12 3v8"/><circle cx="12" cy="12" r="1.2"/><path d="M10 18h4v3h-4z"/>`),
+    fina: svg(`<path d="M5 19l2-2L17 7l-2-2L5 15z"/><path d="M3.5 20.5L5 19"/><path d="M15 5l2-2 4 4-2 2"/>`),
+    pincel: svg(`<path d="M14 4l6 6-7 7-6-6z"/><path d="M7 11c-3 1-3 4-4 9 5-1 8-1 9-4"/>`),
     lapis: svg(`<path d="M5 19l1-4L16 5l3 3L9 18z"/><path d="M6 15l3 3"/><path d="M14 7l3 3"/>`),
+    lapiseira: svg(`<path d="M4 20l2-1 11-11-1-1L5 18z"/><path d="M16 7l3-3 1 1-3 3"/><path d="M3.5 20.5l.5-.5"/>`),
     marca: svg(`<path d="M9.5 14.5l-4 4.5h5.5l1.3-1.5"/><path d="M9.5 14.5l2.8 2.8 8.2-8.2-2.8-2.8z"/>`),
+    marcador: svg(`<path d="M8 14l-3 6h5l2-3"/><path d="M8 14l4 3 8-8-4-4z"/><path d="M15 6l3 3"/>`),
+    giz: svg(`<path d="M6 18l9-9 3 3-9 9H6z"/><path d="M15 9l3-3 3 3-3 3"/><path d="M8 16l2 2"/>`),
+    aquarela: svg(`<path d="M12 3c3 4 6 7 6 10a6 6 0 01-12 0c0-3 3-6 6-10z"/><path d="M9 14a3 3 0 003 3"/>`),
     borracha: svg(`<path d="M8 20h11"/><path d="M4.6 14.6l8.8-8.8a2 2 0 012.8 0l2 2a2 2 0 010 2.8L11 18.8 8 19z"/><path d="M9.5 9.7l4.8 4.8"/>`),
     mao: svg(`<path d="M8 12.5V6a1.5 1.5 0 013 0v5m0-6.5a1.5 1.5 0 013 0V11m0-5a1.5 1.5 0 013 0v6.5m0-3a1.5 1.5 0 013 0V14c0 4-3 7-7 7-2.7 0-4.4-1.2-6-3.6l-2.3-3.4a1.6 1.6 0 012.6-1.8L8 14"/>`),
     desfazer: svg(`<path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 010 11H11"/>`),
     refazer: svg(`<path d="M15 14l5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 000 11H13"/>`),
     mais: svg(`<circle cx="12" cy="5" r="1.3" fill="currentColor"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/><circle cx="12" cy="19" r="1.3" fill="currentColor"/>`),
     voltar: svg(`<path d="M15 18l-6-6 6-6"/>`),
-    paleta: svg(`<path d="M12 3a9 9 0 100 18c1.1 0 1.7-.8 1.7-1.6 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-.9.8-1.6 1.7-1.6H16a5 5 0 005-5c0-4.1-4-7.4-9-7.4z"/><circle cx="7.5" cy="11" r="1.2" fill="currentColor"/><circle cx="10.5" cy="7.3" r="1.2" fill="currentColor"/><circle cx="15" cy="7.8" r="1.2" fill="currentColor"/>`),
     lixo: svg(`<path d="M4 7h16"/><path d="M10 11v6M14 11v6"/><path d="M6 7l1 13h10l1-13"/><path d="M9 7V4h6v3"/>`),
-    zoomMais: svg(`<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3M8.5 11h5M11 8.5v5"/>`),
-    zoomMenos: svg(`<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3M8.5 11h5"/>`)
+    cheia: svg(`<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>`),
+    sairCheia: svg(`<path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/>`),
+    recolher: svg(`<path d="M15 6l-6 6 6 6"/>`),
+    estrela: svg(`<path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.8 6.8 19.6l1-5.8L3.5 9.7l5.9-.8z"/>`)
   };
-  const V = { a: null, pdf: null, img: null, pags: [], anot: {}, ferr: "caneta",
-    cfg: { caneta: { c: PALETA[0], w: 24 }, lapis: { c: PALETA[1], w: 14 }, marca: { c: PALETA_MARCA[0], w: 140 }, borracha: { w: 170 } },
-    recentes: [PALETA[0], PALETA[2], PALETA[6], PALETA[4]], dedoEscreve: false, zoom: 1, desf: [], ref: [], sujas: new Set(), timer: null, obs: null, raf: 0 };
-  try { const s = JSON.parse(localStorage.getItem("la_estante_caneta") || "null"); if (s) { Object.assign(V.cfg, s.cfg || {}); if (s.recentes) V.recentes = s.recentes; if (s.ferr) V.ferr = s.ferr; V.dedoEscreve = !!s.dedoEscreve; } } catch (e) {}
-  const guardarPrefs = () => { try { localStorage.setItem("la_estante_caneta", JSON.stringify({ cfg: V.cfg, recentes: V.recentes, ferr: V.ferr, dedoEscreve: V.dedoEscreve })); } catch (e) {} };
+  /* tipos de caneta. modo: "liso" (espessura fixa), "pressao" (varia com a força e a velocidade), "afina" (pincel, pontas finas),
+     "chanfro" (caligrafia). alfa/comp: transparência e mistura; tex: textura de grafite ou giz */
+  const PINCEIS = {
+    caneta:     { n: "Esferográfica",   g: "canetas",   ic: "caneta",    w: [8, 12, 18, 26, 38],      modo: "liso",    alfa: 0.95, c: "#111827" },
+    gel:        { n: "Caneta gel",      g: "canetas",   ic: "caneta",    w: [10, 14, 20, 28, 40],     modo: "liso",    alfa: 1,    c: "#1d4ed8" },
+    fina:       { n: "Caneta fina",     g: "canetas",   ic: "fina",      w: [4, 6, 9, 13, 18],        modo: "liso",    alfa: 1,    c: "#111827" },
+    tinteiro:   { n: "Caneta-tinteiro", g: "canetas",   ic: "tinteiro",  w: [12, 18, 26, 38, 56],     modo: "pressao", alfa: 1,    c: "#1e3a8a" },
+    caligrafia: { n: "Caligrafia",      g: "canetas",   ic: "tinteiro",  w: [30, 45, 65, 90, 130],    modo: "chanfro", alfa: 1,    c: "#111827" },
+    pincel:     { n: "Pincel",          g: "canetas",   ic: "pincel",    w: [30, 50, 80, 120, 180],   modo: "afina",   alfa: 0.92, c: "#7c3aed" },
+    lapis:      { n: "Grafite HB",      g: "grafites",  ic: "lapis",     w: [8, 12, 16, 22, 30],      modo: "pressao", alfa: 0.6,  tex: "grafite", c: "#374151" },
+    lapis2b:    { n: "Grafite 2B",      g: "grafites",  ic: "lapis",     w: [10, 14, 20, 28, 38],     modo: "pressao", alfa: 0.78, tex: "grafite", c: "#1f2937" },
+    lapis6b:    { n: "Grafite 6B",      g: "grafites",  ic: "lapis",     w: [14, 20, 28, 38, 52],     modo: "pressao", alfa: 0.93, tex: "grafite", c: "#111111" },
+    lapiseira:  { n: "Lapiseira 0,5",   g: "grafites",  ic: "lapiseira", w: [4, 6, 8, 10, 14],        modo: "liso",    alfa: 0.72, tex: "grafite", c: "#374151" },
+    lapiscor:   { n: "Lápis de cor",    g: "grafites",  ic: "lapis",     w: [12, 18, 26, 36, 48],     modo: "pressao", alfa: 0.85, tex: "grafite", c: "#dc2626" },
+    marca:      { n: "Marca-texto",     g: "marca",     ic: "marca",     w: [70, 100, 140, 190, 260], modo: "liso",    alfa: 0.4,  comp: "multiply", ponta: "butt", c: "#fde047", pal: "marca" },
+    neon:       { n: "Marca-texto neon",g: "marca",     ic: "marca",     w: [70, 100, 140, 190, 260], modo: "liso",    alfa: 0.5,  comp: "multiply", ponta: "butt", c: "#39ff14", pal: "neon" },
+    pastel:     { n: "Marca-texto pastel", g: "marca",  ic: "marca",     w: [70, 100, 140, 190, 260], modo: "liso",    alfa: 0.65, comp: "multiply", ponta: "butt", c: "#e0f2fe", pal: "pastel" },
+    marcafina:  { n: "Marca-texto fino",g: "marca",     ic: "marca",     w: [30, 45, 60, 80, 100],    modo: "liso",    alfa: 0.42, comp: "multiply", c: "#f9a8d4", pal: "marca" },
+    marcador:   { n: "Marcador",        g: "outros",    ic: "marcador",  w: [30, 45, 65, 90, 120],    modo: "liso",    alfa: 0.94, c: "#dc2626" },
+    giz:        { n: "Giz de cera",     g: "outros",    ic: "giz",       w: [30, 45, 65, 90, 130],    modo: "pressao", alfa: 0.92, tex: "giz", c: "#ea580c" },
+    aquarela:   { n: "Aquarela",        g: "outros",    ic: "aquarela",  w: [60, 90, 130, 180, 240],  modo: "afina",   alfa: 0.28, comp: "multiply", c: "#0ea5e9" },
+    apagador:   { n: "Borracha de área",g: "",          ic: "borracha",  w: [60, 110, 170, 260, 400], modo: "liso",    alfa: 1,    comp: "destination-out" }
+  };
+  const GRUPOS = [["favs", "⭐ Favoritas"], ["canetas", "Canetas"], ["grafites", "Grafites"], ["marca", "Marca-textos"], ["outros", "Outros"]];
+  const BORR_W = [60, 110, 170, 260, 400];
+  const pincelDe = t => PINCEIS[t] || PINCEIS.caneta;
+  const FAVS0 = [{ t: "caneta", c: "#111827", w: 18 }, { t: "caneta", c: "#2563eb", w: 18 }, { t: "tinteiro", c: "#dc2626", w: 26 }, { t: "lapis", c: "#374151", w: 16 }, { t: "marca", c: "#fde047", w: 140 }];
+  const V = { a: null, pdf: null, img: null, pags: [], anot: {}, ferr: "pincel", pen: { ...FAVS0[0] }, borr: { modo: "traco", w: 170 },
+    favs: FAVS0.map(f => ({ ...f })), recentes: ["#111827", "#2563eb", "#dc2626", "#16a34a"], dedoEscreve: false, lado: "esq", minim: false, aba: "favs",
+    zoom: 1, desf: [], ref: [], sujas: new Set(), timer: null, obs: null, raf: 0, vis: new Set() };
+  try { const s = JSON.parse(localStorage.getItem("la_estante_pref") || "null");
+    if (s) { ["pen", "borr", "favs", "recentes", "dedoEscreve", "lado", "minim", "aba"].forEach(k => { if (s[k] != null) V[k] = s[k]; }); if (["pincel", "borracha", "mao"].includes(s.ferr)) V.ferr = s.ferr; }
+    else { const v = JSON.parse(localStorage.getItem("la_estante_caneta") || "null"); if (v) V.dedoEscreve = !!v.dedoEscreve; } } catch (e) {}
+  if (!PINCEIS[V.pen.t]) V.pen = { ...FAVS0[0] };
+  const guardarPrefs = () => { try { localStorage.setItem("la_estante_pref", JSON.stringify({ pen: V.pen, borr: V.borr, favs: V.favs, recentes: V.recentes, dedoEscreve: V.dedoEscreve, lado: V.lado, minim: V.minim, aba: V.aba, ferr: V.ferr })); } catch (e) {} };
 
   // janela de confirmação própria (as caixas do navegador falham em alguns tablets e apps instalados)
   function perguntar(titulo, texto, botao, perigo) {
@@ -419,24 +461,30 @@
     ov.innerHTML = `<div class="est-top">
         <button class="est-ic" type="button" data-v="voltar" aria-label="Voltar para a estante" title="Voltar">${ICF.voltar}</button>
         <div class="est-tt"><b class="est-titulo">${APP.esc(a.nome)}</b><span class="est-st" data-v-st></span></div>
-        <button class="est-ic" type="button" data-v="desfazer" aria-label="Desfazer" title="Desfazer (Ctrl+Z)" disabled>${ICF.desfazer}</button>
-        <button class="est-ic" type="button" data-v="refazer" aria-label="Refazer" title="Refazer (Ctrl+Y)" disabled>${ICF.refazer}</button>
-        <button class="est-ic est-so-larga" type="button" data-v="menos" aria-label="Diminuir zoom" title="Diminuir">${ICF.zoomMenos}</button>
         <button class="est-zoom" type="button" data-v="zoom100" data-zoom title="Voltar ao tamanho da tela">100%</button>
-        <button class="est-ic est-so-larga" type="button" data-v="mais" aria-label="Aumentar zoom" title="Aumentar">${ICF.zoomMais}</button>
+        <button class="est-ic" type="button" data-v="cheia" aria-label="Tela cheia" title="Tela cheia">${ICF.cheia}</button>
         <button class="est-ic" type="button" data-v="menu" aria-label="Mais opções" title="Mais opções" aria-haspopup="menu">${ICF.mais}</button>
       </div>
-      <div class="est-pags" tabindex="0"><div class="card row muted" style="margin:24px auto;max-width:420px"><span class="spinner"></span>Abrindo…</div></div>`;
+      <div class="est-pags" tabindex="0"><div class="card row muted" style="margin:84px auto;max-width:420px"><span class="spinner"></span>Abrindo…</div></div>`;
     document.body.appendChild(ov); document.documentElement.classList.add("est-aberto");
-    Object.assign(V, { a, pdf: null, img: null, pags: [], anot: {}, desf: [], ref: [], sujas: new Set(), zoom: 1, ov, salvoEm: 0 });
+    Object.assign(V, { a, pdf: null, img: null, pags: [], anot: {}, desf: [], ref: [], sujas: new Set(), zoom: 1, ov, salvoEm: 0, vis: new Set() });
+    ov.classList.toggle("lado-dir", V.lado === "dir");
     ov.querySelector('[data-v="voltar"]').onclick = fecharLeitor;
+    ov.querySelector(".est-top").onclick = e => {
+      const v = e.target.closest("[data-v]"); if (!v) return; const x = v.dataset.v;
+      if (x === "zoom100") mudarZoom(1); else if (x === "cheia") telaCheia(); else if (x === "menu") abrirMenu(v);
+    };
     V.tecla = e => {
       if (document.querySelector(".est-modal")) return;
-      if (e.key === "Escape") { if (ov.querySelector(".est-painel,.est-menu-v")) fecharPaineis(); else fecharLeitor(); }
+      if (e.key === "Escape") { if (ov.querySelector(".est-painel,.est-menu-v")) fecharPaineis(); else if (!document.fullscreenElement) fecharLeitor(); }
       else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z") { e.preventDefault(); e.shiftKey ? refazer() : desfazer(); }
       else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "y") { e.preventDefault(); refazer(); }
     };
     addEventListener("keydown", V.tecla);
+    V.cheiaMudou = () => { const b = ov.querySelector('[data-v="cheia"]'); if (b) b.innerHTML = document.fullscreenElement ? ICF.sairCheia : ICF.cheia; setTimeout(() => { if (V.ov) ajustarAoRedimensionar(); }, 150); };
+    document.addEventListener("fullscreenchange", V.cheiaMudou);
+    V.redim = () => { clearTimeout(V.redimT); V.redimT = setTimeout(() => { if (V.ov) ajustarAoRedimensionar(); }, 200); };
+    addEventListener("resize", V.redim);
     try {
       const blob = await blobDe(a);
       if (a.tipo === "pdf") { const lib = await pdfjs(); V.pdf = await lib.getDocument({ data: new Uint8Array(await blob.arrayBuffer()) }).promise;
@@ -447,7 +495,7 @@
       await carregarAnot();
     } catch (e) {
       console.warn("abrir", e);
-      ov.querySelector(".est-pags").innerHTML = `<div class="card stack" style="margin:24px auto;max-width:460px"><b>Não foi possível abrir este arquivo.</b><p class="small muted">Ele não está guardado neste aparelho. No aparelho onde ele está, use ⋯ › “Baixar com anotações” e envie o arquivo .laest aqui.</p></div>`;
+      ov.querySelector(".est-pags").innerHTML = `<div class="card stack" style="margin:84px auto;max-width:460px"><b>Não foi possível abrir este arquivo.</b><p class="small muted">Ele não está guardado neste aparelho. No aparelho onde ele está, use ⋯ › “Baixar com anotações” e envie o arquivo .laest aqui.</p></div>`;
       return;
     }
     if (!ov.isConnected) return;
@@ -456,101 +504,155 @@
   async function carregarAnot() {
     const loc = await lg("anot", V.a.id).catch(() => null); V.anot = (loc && loc.pags) || {};
   }
+  function telaCheia() {
+    try {
+      if (document.fullscreenElement) document.exitFullscreen();
+      else if (V.ov.requestFullscreen) V.ov.requestFullscreen().catch(() => APP.toast("Este navegador não deixa usar a tela cheia aqui."));
+      else APP.toast("Este navegador não tem tela cheia. Dica: adicione o site à tela inicial para abrir como aplicativo.");
+    } catch (e) {}
+  }
   function fecharLeitor() {
     if (!V.ov) return; salvarAnot(true);
-    removeEventListener("keydown", V.tecla); if (V.obs) V.obs.disconnect();
+    removeEventListener("keydown", V.tecla); removeEventListener("resize", V.redim); document.removeEventListener("fullscreenchange", V.cheiaMudou);
+    if (document.fullscreenElement) { try { document.exitFullscreen(); } catch (e) {} }
+    if (V.obs) V.obs.disconnect();
     if (V.pdf) { try { V.pdf.destroy(); } catch (e) {} }
     document.querySelectorAll(".est-modal").forEach(m => m.remove());
     V.ov.remove(); V.ov = null; document.documentElement.classList.remove("est-aberto");
     if (APP.naTela()) pintar();
   }
   const ehCaderno = () => V.a && V.a.tipo === "caderno";
-  const corDe = f => (V.cfg[f] && V.cfg[f].c) || PALETA[0];
   function fecharPaineis() { if (V.ov) V.ov.querySelectorAll(".est-painel,.est-menu-v,.est-veu").forEach(x => x.remove()); }
 
-  /* ---------- barra de ferramentas (em pílula, centralizada) ---------- */
+  /* ---------- barra lateral de ferramentas (minimiza e maximiza) ---------- */
+  const mesmaCaneta = (a, b) => a && b && a.t === b.t && a.c === b.c && a.w === b.w;
+  function botaoCaneta(f, attrs, extra) {
+    const pc = pincelDe(f.t);
+    return `<button type="button" class="est-t est-pen ${extra || ""}" ${attrs} title="${APP.esc(pc.n)}" aria-label="${APP.esc(pc.n)}">${ICF[pc.ic]}<i class="est-ponta" style="background:${f.c}"></i></button>`;
+  }
   function montarBarra() {
-    const top = V.ov.querySelector(".est-top"), w = document.createElement("div"); w.className = "est-ferr-w";
-    w.innerHTML = `<div class="est-ferr" role="toolbar" aria-label="Ferramentas de desenho"></div>`;
-    top.after(w); V.barra = w.querySelector(".est-ferr");
+    const w = document.createElement("div"); w.className = "est-lado"; w.setAttribute("role", "toolbar"); w.setAttribute("aria-label", "Ferramentas de desenho"); w.setAttribute("aria-orientation", "vertical");
+    V.ov.appendChild(w); V.barra = w;
     pintarBarra();
-    V.barra.onclick = e => {
-      const f = e.target.closest("[data-f]");
-      if (f) { const k = f.dataset.f;
-        if (k === V.ferr && k !== "mao") { abrirPainel(); return; }      // tocar de novo na ferramenta abre as opções dela
-        V.ferr = k; guardarPrefs(); fecharPaineis(); pintarBarra(); atualizarToque(); return; }
-      const c = e.target.closest("[data-c]");
-      if (c) { if (!["caneta", "lapis", "marca"].includes(V.ferr)) { V.ferr = "caneta"; atualizarToque(); }
-        usarCor(c.dataset.c); return; }
-      const v = e.target.closest("[data-v]"); if (!v) return;
-      if (v.dataset.v === "paleta") abrirPainel(); else if (v.dataset.v === "desfazer") desfazer(); else if (v.dataset.v === "refazer") refazer();
-    };
-    top.onclick = e => {
-      const v = e.target.closest("[data-v]"); if (!v) return; const x = v.dataset.v;
-      if (x === "desfazer") desfazer(); else if (x === "refazer") refazer();
-      else if (x === "mais" || x === "menos") mudarZoom(V.zoom + (x === "mais" ? 0.25 : -0.25));
-      else if (x === "zoom100") mudarZoom(1);
-      else if (x === "menu") abrirMenu(v);
+    w.onclick = e => {
+      const b = e.target.closest("button"); if (!b) return;
+      if (b.dataset.v === "minim" || V.minim) { V.minim = !V.minim; guardarPrefs(); fecharPaineis(); pintarBarra(); ajustarAoRedimensionar(); return; }
+      if (b.dataset.fav != null) { const f = V.favs[+b.dataset.fav]; if (!f) return;
+        if (V.ferr === "pincel" && mesmaCaneta(V.pen, f)) { abrirPainel(); return; }
+        V.pen = { ...f }; V.ferr = "pincel"; guardarPrefs(); fecharPaineis(); pintarBarra(); atualizarToque(); return; }
+      const v = b.dataset.v;
+      if (v === "pen") { if (V.ferr === "pincel") abrirPainel(); else { V.ferr = "pincel"; guardarPrefs(); pintarBarra(); atualizarToque(); } }
+      else if (v === "borracha" || v === "mao") { if (V.ferr === v && v === "borracha") { abrirPainel(); return; } V.ferr = v; guardarPrefs(); fecharPaineis(); pintarBarra(); atualizarToque(); }
+      else if (v === "desfazer") desfazer(); else if (v === "refazer") refazer();
     };
   }
   function pintarBarra() {
-    if (!V.barra) return;
-    const tinta = ["caneta", "lapis", "marca"].includes(V.ferr), lista = V.ferr === "marca" ? PALETA_MARCA.slice(0, 4) : V.recentes.slice(0, 4), atual = corDe(V.ferr);
-    V.barra.innerHTML = ["caneta", "lapis", "marca", "borracha", "mao"].map(k => `<button type="button" class="est-t ${V.ferr === k ? "on" : ""}" data-f="${k}" aria-pressed="${V.ferr === k}" title="${NOMES_F[k]}${V.ferr === k && k !== "mao" ? " (toque de novo para as opções)" : ""}" aria-label="${NOMES_F[k]}">
-        ${ICF[k]}${["caneta", "lapis", "marca"].includes(k) ? `<i class="est-ponta" style="background:${corDe(k)}"></i>` : ""}</button>`).join("")
-      + `<span class="est-sep"></span>`
-      + (tinta ? lista.map((c, i) => `<button type="button" class="est-cq ${i > 1 ? "est-cq-x" : ""} ${c === atual ? "on" : ""}" data-c="${c}" style="--c:${c}" aria-label="Usar a cor ${c}"></button>`).join("") : `<span class="est-dica small muted">${V.ferr === "borracha" ? "Toque no traço para apagar" : "Arraste para rolar a página"}</span>`)
-      + `<button type="button" class="est-t est-pal" data-v="paleta" aria-label="Cores e espessura" title="Cores e espessura">${ICF.paleta}${tinta ? `<i class="est-pal-cor" style="background:${atual}"></i>` : ""}</button>`
-      + `<span class="est-sep est-so-estreita"></span><button type="button" class="est-t est-so-estreita" data-v="desfazer" aria-label="Desfazer" ${V.desf.length ? "" : "disabled"}>${ICF.desfazer}</button><button type="button" class="est-t est-so-estreita" data-v="refazer" aria-label="Refazer" ${V.ref.length ? "" : "disabled"}>${ICF.refazer}</button>`;
+    const w = V.barra; if (!w) return;
+    V.ov.classList.toggle("barra-min", V.minim);
+    if (V.minim) {
+      w.innerHTML = `<button type="button" class="est-t est-abre" data-v="minim" aria-label="Mostrar as ferramentas" title="Mostrar as ferramentas">${V.ferr === "pincel" ? ICF[pincelDe(V.pen.t).ic] : ICF[V.ferr]}${V.ferr === "pincel" ? `<i class="est-ponta" style="background:${V.pen.c}"></i>` : ""}</button>`;
+      return;
+    }
+    const naFav = V.favs.findIndex(f => mesmaCaneta(f, V.pen));
+    w.innerHTML = `<button type="button" class="est-t est-min" data-v="minim" aria-label="Esconder as ferramentas" title="Esconder as ferramentas">${ICF.recolher}</button>
+      ${botaoCaneta(V.pen, `data-v="pen" aria-pressed="${V.ferr === "pincel"}"`, `est-atual ${V.ferr === "pincel" && naFav < 0 ? "on" : ""}`)}
+      <div class="est-favs">${V.favs.map((f, i) => botaoCaneta(f, `data-fav="${i}"`, V.ferr === "pincel" && i === naFav ? "on" : "")).join("")}</div>
+      <span class="est-sep"></span>
+      <button type="button" class="est-t ${V.ferr === "borracha" ? "on" : ""}" data-v="borracha" aria-pressed="${V.ferr === "borracha"}" title="Borracha (toque de novo para as opções)" aria-label="Borracha">${ICF.borracha}</button>
+      <button type="button" class="est-t ${V.ferr === "mao" ? "on" : ""}" data-v="mao" aria-pressed="${V.ferr === "mao"}" title="Mover a página" aria-label="Mover a página">${ICF.mao}</button>
+      <span class="est-sep"></span>
+      <button type="button" class="est-t" data-v="desfazer" aria-label="Desfazer" title="Desfazer (Ctrl+Z)" ${V.desf.length ? "" : "disabled"}>${ICF.desfazer}</button>
+      <button type="button" class="est-t" data-v="refazer" aria-label="Refazer" title="Refazer (Ctrl+Y)" ${V.ref.length ? "" : "disabled"}>${ICF.refazer}</button>`;
   }
   function usarCor(c) {
-    const f = ["caneta", "lapis", "marca"].includes(V.ferr) ? V.ferr : "caneta";
-    V.cfg[f].c = c;
-    if (f !== "marca") V.recentes = [c].concat(V.recentes.filter(x => x !== c)).slice(0, 4);
-    guardarPrefs(); pintarBarra(); const p = V.ov.querySelector(".est-painel"); if (p) abrirPainel();
+    V.pen = { ...V.pen, c }; V.ferr = "pincel";
+    if (!pincelDe(V.pen.t).pal) V.recentes = [c].concat(V.recentes.filter(x => x !== c)).slice(0, 8);
+    guardarPrefs(); pintarBarra(); atualizarToque();
   }
-  // painel de opções da ferramenta: espessura com prévia e paleta de cores
+  // traço de exemplo para as prévias
+  function amostra(ctx, f, W, H, larg) {
+    ctx.clearRect(0, 0, W, H);
+    const pts = [], q = []; for (let i = 0; i <= 26; i++) { pts.push(Math.round(700 + i * 330), Math.round(5000 + Math.sin(i / 3.3) * 2600)); q.push(30 + Math.round(60 * Math.sin(Math.PI * i / 26))); }
+    tracar(ctx, { f: f.t, c: f.c, w: larg || f.w, p: pts, q }, W, H);
+  }
+  /* painel de canetas: abas (favoritas, canetas, grafites, marca-textos, outros), espessura e paleta completa */
   function abrirPainel() {
     fecharPaineis();
-    const f = V.ferr === "mao" ? "caneta" : V.ferr, cfg = V.cfg[f], tam = TAMANHOS[f], tinta = f !== "borracha";
-    const p = document.createElement("div"); p.className = "est-painel"; p.setAttribute("role", "dialog"); p.setAttribute("aria-label", "Opções de " + NOMES_F[f]);
-    p.innerHTML = `<div class="est-pn-h"><b>${NOMES_F[f]}</b><button type="button" class="est-ic sm" data-pn="x" aria-label="Fechar">✕</button></div>
-      ${tinta ? `<canvas class="est-prev" width="600" height="90" aria-hidden="true"></canvas>` : ""}
-      <div class="est-pn-l small muted">Espessura</div>
-      <div class="est-tams">${tam.map((t, i) => `<button type="button" class="est-tam ${cfg.w === t ? "on" : ""}" data-w="${t}" aria-label="Espessura ${i + 1}"><i style="width:${6 + i * 5}px;height:${6 + i * 5}px;${tinta ? `background:${cfg.c}` : ""}"></i></button>`).join("")}</div>
-      <input type="range" min="${tam[0]}" max="${tam[4]}" value="${cfg.w}" data-pn="w" aria-label="Espessura">
-      ${tinta ? `<div class="est-pn-l small muted">Cor</div><div class="est-pal-g">${(f === "marca" ? PALETA_MARCA : PALETA).map(c => `<button type="button" class="est-cq ${c === cfg.c ? "on" : ""}" data-pc="${c}" style="--c:${c}" aria-label="Cor ${c}"></button>`).join("")}
-        <label class="est-cq est-cq-livre" title="Outra cor" style="--c:${cfg.c}"><input type="color" value="${cfg.c}" data-pn="cor" aria-label="Escolher outra cor"></label></div>`
-      : `<p class="small muted" style="margin:6px 0 0">A borracha apaga o traço inteiro que ela tocar. Errou? Use desfazer.</p>
-         <button type="button" class="btn sm" data-pn="limpar" style="margin-top:8px">${ICF.lixo} Apagar todos os desenhos desta página</button>`}`;
+    const borr = V.ferr === "borracha", pc = pincelDe(V.pen.t);
+    const p = document.createElement("div"); p.className = "est-painel"; p.setAttribute("role", "dialog"); p.setAttribute("aria-label", borr ? "Borracha" : "Canetas e cores");
+    if (borr) {
+      p.innerHTML = `<div class="est-pn-h"><b>Borracha</b><button type="button" class="est-ic sm" data-pn="x" aria-label="Fechar">✕</button></div>
+        <div class="seg est-seg" role="group"><button type="button" data-bm="traco" class="${V.borr.modo === "traco" ? "on" : ""}">Apaga o traço inteiro</button><button type="button" data-bm="area" class="${V.borr.modo === "area" ? "on" : ""}">Apaga só onde passar</button></div>
+        <div class="est-pn-l small muted">Tamanho</div>
+        <div class="est-tams">${BORR_W.map((t, i) => `<button type="button" class="est-tam ${V.borr.w === t ? "on" : ""}" data-bw="${t}" aria-label="Tamanho ${i + 1}"><i style="width:${6 + i * 5}px;height:${6 + i * 5}px"></i></button>`).join("")}</div>
+        <button type="button" class="btn sm" data-pn="limpar" style="margin-top:12px">${ICF.lixo} Apagar todos os desenhos desta página</button>`;
+    } else {
+      const aba = V.aba, lista = aba === "favs" ? null : Object.entries(PINCEIS).filter(([, v]) => v.g === aba);
+      const pal = pc.pal === "neon" ? PALETA_NEON : pc.pal === "pastel" ? PALETA_PASTEL : pc.pal === "marca" ? PALETA_MARCA : null;
+      const naFav = V.favs.some(f => mesmaCaneta(f, V.pen));
+      p.innerHTML = `<div class="est-pn-h"><b>${APP.esc(pc.n)}</b><span class="row" style="gap:4px"><button type="button" class="est-fav-b ${naFav ? "on" : ""}" data-pn="fav" aria-pressed="${naFav}" title="${naFav ? "Tirar das favoritas" : "Salvar nas favoritas"}">${ICF.estrela}<span>${naFav ? "Favorita" : "Favoritar"}</span></button><button type="button" class="est-ic sm" data-pn="x" aria-label="Fechar">✕</button></span></div>
+        <canvas class="est-prev" width="600" height="90" aria-hidden="true"></canvas>
+        <div class="est-abas" role="tablist">${GRUPOS.map(([k, n]) => `<button type="button" role="tab" aria-selected="${aba === k}" class="${aba === k ? "on" : ""}" data-aba="${k}">${n}</button>`).join("")}</div>
+        <div class="est-pincs">${lista ? lista.map(([k, v]) => `<button type="button" class="est-pinc ${V.pen.t === k ? "on" : ""}" data-pinc="${k}"><canvas width="160" height="44" data-amostra="${k}"></canvas><span>${APP.esc(v.n)}</span></button>`).join("")
+          : (V.favs.length ? V.favs.map((f, i) => `<div class="est-pinc est-pinc-fav ${mesmaCaneta(f, V.pen) ? "on" : ""}"><button type="button" class="est-pinc-b" data-usafav="${i}"><canvas width="160" height="44" data-amostrafav="${i}"></canvas><span>${APP.esc(pincelDe(f.t).n)}</span></button><button type="button" class="est-pinc-x" data-tirafav="${i}" aria-label="Tirar das favoritas">✕</button></div>`).join("")
+          : `<p class="small muted" style="grid-column:1/-1;margin:4px 2px">Escolha uma caneta, a cor e a espessura e toque em ⭐ Favoritar. Ela aparece na barra lateral.</p>`)}</div>
+        <div class="est-pn-l small muted">Espessura</div>
+        <div class="est-tams">${pc.w.map((t, i) => `<button type="button" class="est-tam ${V.pen.w === t ? "on" : ""}" data-w="${t}" aria-label="Espessura ${i + 1}"><i style="width:${5 + i * 5}px;height:${5 + i * 5}px;background:${V.pen.c}"></i></button>`).join("")}</div>
+        <input type="range" min="${pc.w[0]}" max="${pc.w[4]}" value="${Math.min(pc.w[4], Math.max(pc.w[0], V.pen.w))}" data-pn="w" aria-label="Espessura">
+        ${V.recentes.length && !pal ? `<div class="est-pn-l small muted">Recentes</div><div class="est-pal-g est-rec">${V.recentes.map(c => `<button type="button" class="est-cq ${c === V.pen.c ? "on" : ""}" data-pc="${c}" style="--c:${c}" aria-label="Cor ${c}"></button>`).join("")}</div>` : ""}
+        ${pal ? `<div class="est-pn-l small muted">Cores do ${APP.esc(pc.n.toLowerCase())}</div><div class="est-pal-g">${pal.map(c => `<button type="button" class="est-cq ${c === V.pen.c ? "on" : ""}" data-pc="${c}" style="--c:${c}" aria-label="Cor ${c}"></button>`).join("")}</div>` : ""}
+        <div class="est-pn-l small muted">Paleta</div>
+        <div class="est-pal-g est-pal-12">${PALETA.map(c => `<button type="button" class="est-cq ${c === V.pen.c ? "on" : ""}" data-pc="${c}" style="--c:${c}" aria-label="Cor ${c}"></button>`).join("")}</div>
+        <label class="btn sm est-outra"><span class="est-cq est-cq-livre" aria-hidden="true"></span>Escolher qualquer cor<input type="color" value="${V.pen.c}" data-pn="cor"></label>`;
+    }
     V.ov.appendChild(p);
-    if (!emFolha(p, V.ov, fecharPaineis)) { const rb = V.barra.getBoundingClientRect(); p.style.top = Math.round(rb.bottom + 8) + "px"; }
-    const prev = () => { const cv = p.querySelector(".est-prev"); if (!cv) return; const ctx = cv.getContext("2d"); ctx.clearRect(0, 0, 600, 90);
-      const pts = []; for (let i = 0; i <= 24; i++) pts.push(Math.round(800 + i * 350), Math.round(5000 + Math.sin(i / 3.2) * 2600));
-      const q = f === "marca" ? null : pts.filter((_, i) => i % 2 === 0).map((_, i) => 35 + Math.round(55 * Math.sin(Math.PI * i / 24)));
-      tracar(ctx, { f, c: cfg.c, w: cfg.w * 1.6, p: pts, q }, 600, 90); };
+    if (!emFolha(p, V.ov, fecharPaineis)) {
+      const rb = V.barra.getBoundingClientRect(), top = V.ov.querySelector(".est-top").getBoundingClientRect().bottom + 8;
+      p.style.top = top + "px"; p.style.maxHeight = `calc(100% - ${top + 12}px)`;
+      if (V.lado === "dir") p.style.right = (innerWidth - rb.left + 10) + "px"; else p.style.left = (rb.right + 10) + "px";
+    }
+    const prev = () => { const cv = p.querySelector(".est-prev"); if (cv) amostra(cv.getContext("2d"), V.pen, 600, 90, V.pen.w * 1.5); };
     prev();
+    p.querySelectorAll("[data-amostra]").forEach(cv => { const t = cv.dataset.amostra, v = PINCEIS[t]; amostra(cv.getContext("2d"), { t, c: v.pal ? v.c : (V.pen.t === t || !pincelDe(V.pen.t).pal ? V.pen.c : v.c), w: v.w[2] }, 160, 44, v.w[2] * 1.8); });
+    p.querySelectorAll("[data-amostrafav]").forEach(cv => { const f = V.favs[+cv.dataset.amostrafav]; amostra(cv.getContext("2d"), f, 160, 44, f.w * 1.8); });
+    const refazerPainel = () => { const sc = p.querySelector(".est-pincs"), s = sc ? sc.scrollLeft : 0, rol = p.scrollTop; abrirPainel(); const np = V.ov.querySelector(".est-painel"); if (np) { np.scrollTop = rol; const ns = np.querySelector(".est-pincs"); if (ns) ns.scrollLeft = s; } };
     p.onclick = e => {
-      const w = e.target.closest("[data-w]"); if (w) { cfg.w = +w.dataset.w; guardarPrefs(); abrirPainel(); return; }
-      const c = e.target.closest("[data-pc]"); if (c) { usarCor(c.dataset.pc); return; }
-      const b = e.target.closest("[data-pn]"); if (!b) return;
-      if (b.dataset.pn === "x") fecharPaineis();
-      else if (b.dataset.pn === "limpar") { fecharPaineis(); limparPagina(paginaNaTela()); }
+      const b = e.target.closest("button"); if (!b) return;
+      if (b.dataset.aba) { V.aba = b.dataset.aba; guardarPrefs(); refazerPainel(); return; }
+      if (b.dataset.pinc) { const t = b.dataset.pinc, v = PINCEIS[t], antes = pincelDe(V.pen.t);
+        const c = v.pal ? (antes.pal === v.pal ? V.pen.c : v.c) : (antes.pal ? (V.recentes[0] || v.c) : V.pen.c);
+        V.pen = { t, c, w: v.w[2] }; V.ferr = "pincel"; guardarPrefs(); pintarBarra(); atualizarToque(); refazerPainel(); return; }
+      if (b.dataset.usafav != null) { const f = V.favs[+b.dataset.usafav]; if (f) { V.pen = { ...f }; V.ferr = "pincel"; guardarPrefs(); pintarBarra(); atualizarToque(); refazerPainel(); } return; }
+      if (b.dataset.tirafav != null) { V.favs.splice(+b.dataset.tirafav, 1); guardarPrefs(); pintarBarra(); refazerPainel(); return; }
+      if (b.dataset.w) { V.pen = { ...V.pen, w: +b.dataset.w }; guardarPrefs(); pintarBarra(); refazerPainel(); return; }
+      if (b.dataset.pc) { usarCor(b.dataset.pc); refazerPainel(); return; }
+      if (b.dataset.bm) { V.borr.modo = b.dataset.bm; guardarPrefs(); refazerPainel(); return; }
+      if (b.dataset.bw) { V.borr.w = +b.dataset.bw; guardarPrefs(); refazerPainel(); return; }
+      const x = b.dataset.pn;
+      if (x === "x") fecharPaineis();
+      else if (x === "limpar") { fecharPaineis(); limparPagina(paginaNaTela()); }
+      else if (x === "fav") { const i = V.favs.findIndex(f => mesmaCaneta(f, V.pen));
+        if (i >= 0) V.favs.splice(i, 1); else { if (V.favs.length >= 12) { APP.toast("Você pode ter até 12 favoritas. Tire uma para salvar outra."); return; } V.favs.push({ ...V.pen }); APP.toast("Salva nas favoritas: ela está na barra lateral."); }
+        guardarPrefs(); pintarBarra(); refazerPainel(); }
     };
-    p.querySelector('[data-pn="w"]').oninput = e => { cfg.w = +e.target.value; guardarPrefs(); p.querySelectorAll("[data-w]").forEach(x => x.classList.toggle("on", +x.dataset.w === cfg.w)); prev(); };
-    const cor = p.querySelector('[data-pn="cor"]'); if (cor) cor.onchange = e => usarCor(e.target.value);
+    const rg = p.querySelector('[data-pn="w"]');
+    if (rg) { rg.oninput = e => { V.pen = { ...V.pen, w: +e.target.value }; p.querySelectorAll("[data-w]").forEach(x => x.classList.toggle("on", +x.dataset.w === V.pen.w)); prev(); };
+      rg.onchange = () => { guardarPrefs(); pintarBarra(); }; }
+    const cor = p.querySelector('[data-pn="cor"]'); if (cor) cor.onchange = e => { usarCor(e.target.value); refazerPainel(); };
   }
   // menu ⋮ do leitor
   function abrirMenu(ancora) {
     const ja = V.ov.querySelector(".est-menu-v"); fecharPaineis(); if (ja) return;
     const n = paginaNaTela(), cad = ehCaderno(), m = document.createElement("div"); m.className = "est-menu-v"; m.setAttribute("role", "menu");
-    m.innerHTML = `<button type="button" role="menuitemcheckbox" aria-checked="${V.dedoEscreve}" data-mn="caneta"><span>${V.dedoEscreve ? "✓" : ""}</span>Escrever com o dedo <small>para celular sem caneta</small></button>
+    m.innerHTML = `<div class="est-mn-zoom"><span>🔍</span>Zoom <button type="button" class="est-ic sm" data-mn="menos" aria-label="Diminuir">−</button><b>${Math.round(V.zoom * 100)}%</b><button type="button" class="est-ic sm" data-mn="mais" aria-label="Aumentar">+</button><button type="button" class="est-zoom" data-mn="z100">Ajustar</button></div>
+      <button type="button" role="menuitemcheckbox" aria-checked="${V.dedoEscreve}" data-mn="caneta"><span>${V.dedoEscreve ? "✓" : "☝️"}</span>Escrever com o dedo <small>para celular sem caneta</small></button>
+      <button type="button" role="menuitem" data-mn="lado"><span>↔</span>Ferramentas do lado ${V.lado === "dir" ? "esquerdo" : "direito"}</button>
+      <button type="button" role="menuitem" data-mn="cheia"><span>⛶</span>${document.fullscreenElement ? "Sair da tela cheia" : "Tela cheia"}</button>
       ${cad ? `<button type="button" role="menuitem" data-mn="inserir"><span>＋</span>Nova folha depois da ${n}</button>
         <button type="button" role="menuitem" data-mn="apagar-folha" class="danger" ${V.pags.length < 2 ? "disabled" : ""}><span>${ICF.lixo}</span>Apagar a folha ${n}${V.pags.length < 2 ? " <small>o caderno precisa de ao menos uma</small>" : ""}</button>` : ""}
       <button type="button" role="menuitem" data-mn="limpar"><span>🧽</span>Apagar os desenhos da página ${n}</button>
       <button type="button" role="menuitem" data-mn="exportar"><span>⬇</span>Baixar a página ${n} como imagem</button>
-      <button type="button" role="menuitem" data-mn="renomear"><span>✎</span>Renomear</button>
-      ${estreito() ? `<div class="est-mn-zoom"><span>🔍</span>Zoom <button type="button" class="est-ic sm" data-mn="menos" aria-label="Diminuir">−</button><b>${Math.round(V.zoom * 100)}%</b><button type="button" class="est-ic sm" data-mn="mais" aria-label="Aumentar">+</button><button type="button" class="est-zoom" data-mn="z100">Ajustar</button></div>` : ""}`;
+      <button type="button" role="menuitem" data-mn="renomear"><span>✎</span>Renomear</button>`;
     V.ov.appendChild(m);
     const tirar = () => { m.remove(); fecharPaineis(); document.removeEventListener("pointerdown", fora, true); };
     if (!emFolha(m, V.ov, tirar)) { const r = ancora.getBoundingClientRect(); m.style.top = (r.bottom + 6) + "px"; m.style.right = Math.max(8, innerWidth - r.right) + "px"; }
@@ -562,6 +664,8 @@
       if (x === "mais" || x === "menos" || x === "z100") { mudarZoom(x === "z100" ? 1 : V.zoom + (x === "mais" ? 0.25 : -0.25)); const z = m.querySelector(".est-mn-zoom b"); if (z) z.textContent = Math.round(V.zoom * 100) + "%"; return; }
       tirar();
       if (x === "caneta") { V.dedoEscreve = !V.dedoEscreve; guardarPrefs(); APP.toast(V.dedoEscreve ? "O dedo também escreve. Para rolar, use dois dedos ou a mão (✋)." : "O dedo rola a página e a caneta escreve."); }
+      else if (x === "lado") { V.lado = V.lado === "dir" ? "esq" : "dir"; guardarPrefs(); V.ov.classList.toggle("lado-dir", V.lado === "dir"); ajustarAoRedimensionar(); }
+      else if (x === "cheia") telaCheia();
       else if (x === "inserir") inserirFolha(n);
       else if (x === "apagar-folha") apagarFolha(n);
       else if (x === "limpar") limparPagina(n);
@@ -578,7 +682,8 @@
     V.pags.push({ n: total + 1, w: 1000, h: 1414 }); V.pags.forEach((p, i) => { p.n = i + 1; p.pronta = 0; });
     for (let k = depois + 1; k <= total + 1; k++) V.sujas.add(k);
     V.desf = []; V.ref = []; V.a.paginas = V.pags.length; await salvarMeta();
-    montarPaginas(); salvarAnot();
+    const box = V.ov.querySelector(".est-pags"), topo = box.scrollTop;
+    montarPaginas(); box.scrollTop = topo; salvarAnot();
     setTimeout(() => { const el = V.ov && V.ov.querySelector(`[data-pag="${depois + 1}"]`); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 60);
     APP.toast(`Folha ${depois + 1} criada.`);
   }
@@ -588,7 +693,7 @@
     const total = V.pags.length;
     renumerar(k => k < n ? k : k > n ? k - 1 : 0);
     V.pags.pop(); V.pags.forEach((p, i) => { p.n = i + 1; p.pronta = 0; });
-    for (let k = n; k <= total; k++) V.sujas.add(k);          // a última antiga fica vazia e é apagada da nuvem
+    for (let k = n; k <= total; k++) V.sujas.add(k);
     V.desf = []; V.ref = []; V.a.paginas = V.pags.length; await salvarMeta();
     const box = V.ov.querySelector(".est-pags"), topo = box.scrollTop;
     montarPaginas(); box.scrollTop = topo; await salvarAnot();
@@ -600,69 +705,140 @@
     empilhar({ pag: p, rem: V.anot[p].map((s, i) => ({ s, i })) }); V.anot[p] = []; redesenhar(p); marcar(p);
   }
 
-  /* ---------- páginas ---------- */
-  function largura() { const box = V.ov.querySelector(".est-pags"); return Math.min(box.clientWidth - (box.clientWidth < 600 ? 16 : 48), 980) * V.zoom; }
+  /* ---------- páginas (ocupam a tela toda) ---------- */
+  function largura() {
+    const box = V.ov.querySelector(".est-pags"), larga = box.clientWidth >= 900, folga = box.clientWidth < 600 ? 12 : 32;
+    const lateral = larga && !V.minim ? 76 : 0;              // em telas largas, a página não fica embaixo da barra lateral
+    return Math.max(200, Math.min(box.clientWidth - folga - lateral, 1500)) * V.zoom;
+  }
+  function tamanhoDe(p, W) { return [Math.round(W), Math.round(W * p.h / p.w)]; }
   function montarPaginas() {
     const box = V.ov.querySelector(".est-pags"), W = largura(), cad = ehCaderno();
-    box.innerHTML = V.pags.map(p => `<div class="est-pag" data-pag="${p.n}" style="width:${W}px;height:${Math.round(W * p.h / p.w)}px"><canvas class="est-base"></canvas><canvas class="est-tinta"></canvas>
-        <span class="est-num">${p.n} / ${V.pags.length}</span>${cad && V.pags.length > 1 ? `<button type="button" class="est-pag-x" data-apagar-folha="${p.n}" aria-label="Apagar a folha ${p.n}" title="Apagar esta folha">${ICF.lixo}</button>` : ""}</div>`).join("")
-      + (cad ? `<button type="button" class="est-nova-folha" style="width:${W}px" data-nova-folha>＋ Nova folha</button>` : "");
+    box.innerHTML = `<div class="est-conteudo">${V.pags.map(p => { const [w, h] = tamanhoDe(p, W); return `<div class="est-pag" data-pag="${p.n}" style="width:${w}px;height:${h}px"><canvas class="est-base"></canvas><canvas class="est-tinta"></canvas>
+        <span class="est-num">${p.n} / ${V.pags.length}</span>${cad && V.pags.length > 1 ? `<button type="button" class="est-pag-x" data-apagar-folha="${p.n}" aria-label="Apagar a folha ${p.n}" title="Apagar esta folha">${ICF.lixo}</button>` : ""}</div>`; }).join("")
+      + (cad ? `<button type="button" class="est-nova-folha" style="width:${Math.round(W)}px" data-nova-folha>＋ Nova folha</button>` : "")}</div>`;
+    V.pags.forEach(p => p.pronta = 0); V.vis = new Set();
     if (V.obs) V.obs.disconnect();
-    V.obs = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) desenharPagina(+en.target.dataset.pag); }), { root: box, rootMargin: "600px 0px" });
+    V.obs = new IntersectionObserver(es => es.forEach(en => { const n = +en.target.dataset.pag; if (en.isIntersecting) { V.vis.add(n); desenharPagina(n); } else V.vis.delete(n); }), { root: box, rootMargin: "600px 300px" });
     box.querySelectorAll(".est-pag").forEach(el => V.obs.observe(el));
     box.onclick = e => {
       const nf = e.target.closest("[data-nova-folha]"); if (nf) { inserirFolha(V.pags.length); return; }
       const af = e.target.closest("[data-apagar-folha]"); if (af) apagarFolha(+af.dataset.apagarFolha);
     };
-    ligarCaneta(box); atualizarToque();
-    V.ov.querySelector("[data-zoom]").textContent = Math.round(V.zoom * 100) + "%";
-    status();
+    ligarCaneta(box); atualizarToque(); mostrarZoom(); status();
   }
-  function mudarZoom(z) {
-    z = Math.max(0.5, Math.min(3, +(+z).toFixed(2))); if (z === V.zoom) return;
-    const box = V.ov.querySelector(".est-pags"), antes = box.scrollTop / Math.max(1, box.scrollHeight), lado = box.scrollLeft / Math.max(1, box.scrollWidth);
-    V.zoom = z; V.pags.forEach(p => p.pronta = 0); montarPaginas(); box.scrollTop = antes * box.scrollHeight; box.scrollLeft = lado * box.scrollWidth;
+  function mostrarZoom(z) { const el = V.ov && V.ov.querySelector("[data-zoom]"); if (el) el.textContent = Math.round((z || V.zoom) * 100) + "%"; }
+  // zoom sem recarregar: as folhas mudam de tamanho na hora (a imagem atual estica) e a versão nítida entra quando fica pronta
+  function aplicarTamanhos() {
+    const box = V.ov.querySelector(".est-pags"), W = largura();
+    box.querySelectorAll(".est-pag").forEach(el => { const p = V.pags[+el.dataset.pag - 1]; if (!p) return; const [w, h] = tamanhoDe(p, W); el.style.width = w + "px"; el.style.height = h + "px"; });
+    const nf = box.querySelector(".est-nova-folha"); if (nf) nf.style.width = Math.round(W) + "px";
   }
+  function mudarZoom(z, centro) {
+    z = Math.max(0.5, Math.min(4, +(+z).toFixed(2))); if (!V.ov || z === V.zoom) { mostrarZoom(); return; }
+    const box = V.ov.querySelector(".est-pags"), r = box.getBoundingClientRect();
+    const cx = centro ? centro.x - r.left : box.clientWidth / 2, cy = centro ? centro.y - r.top : box.clientHeight / 2;
+    const kx = (box.scrollLeft + cx) / Math.max(1, box.scrollWidth), ky = (box.scrollTop + cy) / Math.max(1, box.scrollHeight);
+    V.zoom = z; aplicarTamanhos();
+    box.scrollLeft = kx * box.scrollWidth - cx; box.scrollTop = ky * box.scrollHeight - cy;
+    mostrarZoom();
+    V.pags.forEach(p => { const el = box.querySelector(`[data-pag="${p.n}"]`); if (el) redesenhar(p.n); });   // tinta nítida na hora
+    clearTimeout(V.zoomT); V.zoomT = setTimeout(() => { [...V.vis].forEach(n => desenharPagina(n)); }, 120);
+  }
+  function ajustarAoRedimensionar() { if (!V.ov || !V.pags.length) return; aplicarTamanhos(); [...V.vis].forEach(n => desenharPagina(n)); V.pags.forEach(p => redesenhar(p.n)); }
   const dpr = () => Math.min(2, window.devicePixelRatio || 1);
+  const escala = W => Math.min(dpr(), 2600 / Math.max(1, W));      // limita o tamanho da imagem em zoom alto (memória)
   async function desenharPagina(n) {
     const p = V.pags[n - 1], el = V.ov && V.ov.querySelector(`[data-pag="${n}"]`); if (!p || !el) return;
-    const W = el.clientWidth, H = el.clientHeight, k = W + "x" + H; if (p.pronta === k) return; p.pronta = k;
-    const base = el.querySelector(".est-base"), tinta = el.querySelector(".est-tinta"), r = dpr();
-    [base, tinta].forEach(c => { c.width = Math.round(W * r); c.height = Math.round(H * r); });
-    const ctx = base.getContext("2d");
+    const W = parseFloat(el.style.width) || el.clientWidth, H = parseFloat(el.style.height) || el.clientHeight, r = escala(W);
+    const k = Math.round(W * r) + "x" + Math.round(H * r); if (p.pronta === k || p.fazendo === k) return; p.fazendo = k;
+    const base = el.querySelector(".est-base"), tmp = document.createElement("canvas");
+    tmp.width = Math.round(W * r); tmp.height = Math.round(H * r);
+    const ctx = tmp.getContext("2d");
     try {
-      if (V.pdf) { const pg = await V.pdf.getPage(n), v = pg.getViewport({ scale: base.width / p.w }); await pg.render({ canvasContext: ctx, viewport: v }).promise; }
-      else if (V.img) ctx.drawImage(V.img, 0, 0, base.width, base.height);
-      else fundoCaderno(ctx, base.width, base.height, V.a.modelo);
-    } catch (e) { p.pronta = 0; }
+      if (V.pdf) { const pg = await V.pdf.getPage(n), v = pg.getViewport({ scale: tmp.width / p.w }); await pg.render({ canvasContext: ctx, viewport: v }).promise; }
+      else if (V.img) ctx.drawImage(V.img, 0, 0, tmp.width, tmp.height);
+      else fundoCaderno(ctx, tmp.width, tmp.height, V.a.modelo);
+    } catch (e) { p.fazendo = 0; return; }
+    if (p.fazendo !== k || !el.isConnected) return;         // outro zoom começou: este resultado ficou velho
+    base.width = tmp.width; base.height = tmp.height; base.getContext("2d").drawImage(tmp, 0, 0);
+    p.pronta = k; p.fazendo = 0;
     redesenhar(n);
   }
-  // desenha um traço; com pressão (caneta de tablet), a espessura varia ao longo do traço
-  function tracar(ctx, s, W, H) {
-    const pt = s.p; if (!pt || pt.length < 2) return;
-    const base = Math.max(0.8, s.w / 10000 * W), X = i => pt[i] / 10000 * W, Y = i => pt[i + 1] / 10000 * H, n = pt.length / 2;
-    ctx.save(); ctx.lineCap = "round"; ctx.lineJoin = "round"; ctx.strokeStyle = s.c; ctx.fillStyle = s.c;
-    if (s.f === "marca") { ctx.globalAlpha = 0.38; ctx.globalCompositeOperation = "multiply"; ctx.lineCap = "butt"; }
-    else if (s.f === "lapis") ctx.globalAlpha = 0.82;
-    const q = s.q && s.q.length === n && s.f !== "marca" ? s.q : null;
-    if (n === 1) { ctx.beginPath(); ctx.arc(X(0), Y(0), base * (q ? 0.35 + q[0] / 110 : 1) / 2, 0, 7); ctx.fill(); ctx.restore(); return; }
-    if (!q) {
-      ctx.lineWidth = base; ctx.beginPath(); ctx.moveTo(X(0), Y(0));
-      for (let i = 2; i < pt.length - 2; i += 2) { const mx = (X(i) + X(i + 2)) / 2, my = (Y(i) + Y(i + 2)) / 2; ctx.quadraticCurveTo(X(i), Y(i), mx, my); }
-      ctx.lineTo(X(pt.length - 2), Y(pt.length - 2)); ctx.stroke(); ctx.restore(); return;
+
+  /* ---------- desenho dos traços ---------- */
+  const TEX = {};
+  function textura(tipo) {                                    // ruído para grafite e giz (cada ponto com transparência diferente)
+    if (TEX[tipo]) return TEX[tipo];
+    const cv = document.createElement("canvas"), N = 64; cv.width = cv.height = N; const c = cv.getContext("2d"), im = c.createImageData(N, N);
+    let sem = tipo === "giz" ? 7 : 3; const rnd = () => { sem = (sem * 16807) % 2147483647; return sem / 2147483647; };
+    for (let i = 0; i < N * N; i++) {
+      const v = rnd(); let a;
+      if (tipo === "giz") a = v < 0.3 ? 0 : 150 + v * 105; else a = v < 0.12 ? 40 : 120 + v * 135;
+      im.data[i * 4 + 3] = a;
     }
-    // com pressão: um pedaço de curva por ponto, cada um com a sua espessura (lápis com o mesmo alfa sem "manchas")
-    const larg = j => base * (0.4 + q[j] / 100 * 0.9);
-    if (s.f === "lapis") { ctx.globalAlpha = 1; }
+    if (tipo === "giz") for (let i = 0; i < N * N; i += 5) if (rnd() < 0.5) im.data[i * 4 + 3] = 0;
+    c.putImageData(im, 0, 0); return (TEX[tipo] = cv);
+  }
+  let RASC = null;
+  function rascunho(w, h) { if (!RASC) RASC = document.createElement("canvas"); if (RASC.width < w) RASC.width = Math.ceil(w); if (RASC.height < h) RASC.height = Math.ceil(h); const c = RASC.getContext("2d"); c.setTransform(1, 0, 0, 1, 0, 0); c.clearRect(0, 0, RASC.width, RASC.height); return c; }
+  // forma do traço desenhada em cor sólida (sem transparência) no contexto c, já deslocada por (ox, oy)
+  function forma(c, s, W, H, ox, oy, pc, base) {
+    const pt = s.p, n = pt.length / 2, X = i => pt[i] / 10000 * W - ox, Y = i => pt[i + 1] / 10000 * H - oy;
+    c.strokeStyle = c.fillStyle = s.c || "#000"; c.lineJoin = "round"; c.lineCap = pc.ponta || "round";
+    const q = s.q && s.q.length === n ? s.q : null;
+    if (n === 1) { c.beginPath(); c.arc(X(0), Y(0), base / 2, 0, 7); c.fill(); return; }
+    if (pc.modo === "chanfro") {                              // caligrafia: ponta chata inclinada a 45°
+      const dx = base * 0.5 * Math.SQRT1_2, dy = -base * 0.5 * Math.SQRT1_2;
+      for (let j = 1; j < n; j++) { const ax = X(2 * j - 2), ay = Y(2 * j - 2), bx = X(2 * j), by = Y(2 * j);
+        c.beginPath(); c.moveTo(ax - dx, ay - dy); c.lineTo(ax + dx, ay + dy); c.lineTo(bx + dx, by + dy); c.lineTo(bx - dx, by - dy); c.closePath(); c.fill();
+        c.lineWidth = Math.max(1, base * 0.08); c.stroke(); }
+      return;
+    }
+    const varia = pc.modo === "pressao" || pc.modo === "afina" || (q && pc.modo === "liso" && !pc.comp);
+    if (!varia) {
+      c.lineWidth = base; c.beginPath(); c.moveTo(X(0), Y(0));
+      for (let i = 2; i < pt.length - 2; i += 2) c.quadraticCurveTo(X(i), Y(i), (X(i) + X(i + 2)) / 2, (Y(i) + Y(i + 2)) / 2);
+      c.lineTo(X(pt.length - 2), Y(pt.length - 2)); c.stroke(); return;
+    }
+    // espessura por ponto: força da caneta (ou velocidade, sem caneta), pontas finas no pincel
+    const lg = [];
+    for (let j = 0; j < n; j++) {
+      let f;
+      if (q) f = pc.modo === "liso" ? 0.8 + q[j] / 100 * 0.4 : 0.35 + q[j] / 100 * 0.95;
+      else { const a = Math.max(0, j - 1), b = Math.min(n - 1, j + 1), d = Math.hypot(X(2 * b) - X(2 * a), Y(2 * b) - Y(2 * a)) / Math.max(1, b - a); f = Math.max(0.5, Math.min(1.25, 1.3 - d / (base * 5))); }
+      if (pc.modo === "afina") { const t = Math.min(j, n - 1 - j) / Math.max(1, Math.min(8, n / 3)); f *= Math.min(1, 0.25 + t * 0.75); }
+      lg.push(base * f);
+    }
+    for (let j = 1; j < n; j++) lg[j] = lg[j - 1] * 0.45 + lg[j] * 0.55;   // suaviza a variação
     let px = X(0), py = Y(0);
     for (let j = 1; j < n; j++) {
       const i = j * 2, ult = j === n - 1, mx = ult ? X(i) : (X(i) + X(i + 2)) / 2, my = ult ? Y(i) : (Y(i) + Y(i + 2)) / 2;
-      ctx.lineWidth = (larg(j - 1) + larg(j)) / 2; ctx.beginPath(); ctx.moveTo(px, py); ctx.quadraticCurveTo(X(i), Y(i), mx, my); ctx.stroke(); px = mx; py = my;
+      c.lineWidth = Math.max(0.6, (lg[j - 1] + lg[j]) / 2); c.beginPath(); c.moveTo(px, py); c.quadraticCurveTo(X(i), Y(i), mx, my); c.stroke(); px = mx; py = my;
     }
+  }
+  function tracar(ctx, s, W, H) {
+    const pt = s.p; if (!pt || pt.length < 2) return;
+    const pc = pincelDe(s.f), base = Math.max(0.8, s.w / 10000 * W);
+    const simples = (pc.alfa || 1) >= 1 && !pc.tex && (!pc.comp || pc.comp === "destination-out");
+    ctx.save();
+    if (simples) { if (pc.comp) ctx.globalCompositeOperation = pc.comp; forma(ctx, s, W, H, 0, 0, pc, base); ctx.restore(); return; }
+    // traço transparente ou com textura: desenha a forma sólida num rascunho do tamanho do traço e cola com a transparência
+    let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+    for (let i = 0; i < pt.length; i += 2) { const x = pt[i] / 10000 * W, y = pt[i + 1] / 10000 * H; if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+    const m = base * 1.4 + 2; x0 = Math.floor(Math.max(0, x0 - m)); y0 = Math.floor(Math.max(0, y0 - m)); x1 = Math.ceil(Math.min(W, x1 + m)); y1 = Math.ceil(Math.min(H, y1 + m));
+    const w = x1 - x0, h = y1 - y0; if (w <= 0 || h <= 0) { ctx.restore(); return; }
+    const c = rascunho(w, h); forma(c, s, W, H, x0, y0, pc, base);
+    if (pc.tex) { c.globalCompositeOperation = "destination-in"; const pat = c.createPattern(textura(pc.tex), "repeat"); c.save(); c.translate(-x0 % 64, -y0 % 64); c.fillStyle = pat; c.fillRect(0, 0, w + 64, h + 64); c.restore(); c.globalCompositeOperation = "source-over"; }
+    ctx.globalAlpha = pc.alfa || 1; if (pc.comp) ctx.globalCompositeOperation = pc.comp;
+    ctx.drawImage(RASC, 0, 0, w, h, x0, y0, w, h);
     ctx.restore();
   }
   function redesenhar(n, extra) {
-    const el = V.ov && V.ov.querySelector(`[data-pag="${n}"] .est-tinta`); if (!el || !el.width) return;
+    const el = V.ov && V.ov.querySelector(`[data-pag="${n}"] .est-tinta`); if (!el) return;
+    const pg = el.parentNode, W = parseFloat(pg.style.width) || pg.clientWidth, H = parseFloat(pg.style.height) || pg.clientHeight, r = escala(W);
+    const tw = Math.round(W * r), th = Math.round(H * r);
+    if (el.width !== tw || el.height !== th) { el.width = tw; el.height = th; }
     const ctx = el.getContext("2d"); ctx.clearRect(0, 0, el.width, el.height);
     (V.anot[n] || []).forEach(s => tracar(ctx, s, el.width, el.height)); if (extra) tracar(ctx, extra, el.width, el.height);
   }
@@ -676,7 +852,8 @@
     const toques = new Map(); let gesto = null;      // dedos na tela: rolar (1) ou pinça de zoom (2)
     const pos = (e, el) => { const r = el.getBoundingClientRect(); return [Math.round(Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * 10000), Math.round(Math.max(0, Math.min(1, (e.clientY - r.top) / r.height)) * 10000)]; };
     const dist = () => { const [a, b] = [...toques.values()]; return Math.hypot(a.x - b.x, a.y - b.y) || 1; };
-    const fimPinca = () => { if (!gesto || gesto.tipo !== "pinca") return; const z = gesto.z; box.style.zoom = ""; gesto = null; mudarZoom(z); };
+    const meio = () => { const [a, b] = [...toques.values()]; return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 }; };
+    const fimPinca = () => { if (!gesto || gesto.tipo !== "pinca") return; const g = gesto; gesto = null; const w = box.querySelector(".est-conteudo"); if (w) w.style.transform = ""; mudarZoom(g.z, g.m); };
     const pararEmbalo = () => { if (embalo) { cancelAnimationFrame(embalo); embalo = 0; } };
     const soltarEmbalo = g => {                      // continua rolando depois que o dedo sai, perdendo velocidade
       let vx = g.vx || 0, vy = g.vy || 0; if (Date.now() - g.t > 80 || Math.hypot(vx, vy) < 0.15) return;
@@ -695,7 +872,9 @@
         toques.set(e.pointerId, { x: e.clientX, y: e.clientY });
         if (toques.size === 2) {                                   // dois dedos: zoom (descarta o traço que o primeiro dedo começou)
           if (atual) { if (atual.borracha) { aplicar({ pag, rem: atual.rem }, true); } atual = null; redesenhar(pag); }
-          gesto = { tipo: "pinca", d0: dist(), z0: V.zoom, z: V.zoom }; e.preventDefault(); return; }
+          const m = meio(), w = box.querySelector(".est-conteudo"), r = w.getBoundingClientRect();
+          w.style.transformOrigin = `${m.x - r.left}px ${m.y - r.top}px`;
+          gesto = { tipo: "pinca", d0: dist(), z0: V.zoom, z: V.zoom, m }; e.preventDefault(); return; }
         if (toques.size > 2) return;
         if (!V.dedoEscreve || V.ferr === "mao") { comecarRolar(e); return; } }
       if (V.ferr === "mao") { if (e.pointerType === "mouse") comecarRolar(e); return; }
@@ -704,14 +883,15 @@
       e.preventDefault(); try { box.setPointerCapture(e.pointerId); } catch (er) {}
       pag = +el.dataset.pag;
       const [x, y] = pos(e, el);
-      if (V.ferr === "borracha") { atual = { borracha: true, el, rem: [], id: e.pointerId, ptr: e.pointerType }; apagarPerto(x, y, el); return; }
+      if (V.ferr === "borracha" && V.borr.modo !== "area") { atual = { borracha: true, el, rem: [], id: e.pointerId, ptr: e.pointerType }; apagarPerto(x, y, el); return; }
       const caneta = e.pointerType === "pen" && e.pressure > 0;
-      atual = { f: V.ferr, c: corDe(V.ferr), w: V.cfg[V.ferr].w, p: [x, y], el, id: e.pointerId, ptr: e.pointerType };
+      atual = V.ferr === "borracha" ? { f: "apagador", c: "#000", w: V.borr.w, p: [x, y], el, id: e.pointerId, ptr: e.pointerType }
+        : { f: V.pen.t, c: V.pen.c, w: V.pen.w, p: [x, y], el, id: e.pointerId, ptr: e.pointerType };
       if (caneta) atual.q = [Math.round(e.pressure * 100)];
     };
     box.onpointermove = e => {
       if (toques.has(e.pointerId)) toques.set(e.pointerId, { x: e.clientX, y: e.clientY });
-      if (gesto && gesto.tipo === "pinca") { if (toques.size >= 2) { gesto.z = Math.max(0.5, Math.min(3, gesto.z0 * dist() / gesto.d0)); box.style.zoom = String(gesto.z / V.zoom); V.ov.querySelector("[data-zoom]").textContent = Math.round(gesto.z * 100) + "%"; } return; }
+      if (gesto && gesto.tipo === "pinca") { if (toques.size >= 2) { gesto.z = Math.max(0.5, Math.min(4, gesto.z0 * dist() / gesto.d0)); const w = box.querySelector(".est-conteudo"); if (w) w.style.transform = `scale(${gesto.z / V.zoom})`; mostrarZoom(gesto.z); } return; }
       if (gesto && gesto.tipo === "rolar" && e.pointerId === gesto.id) {
         const dx = e.clientX - gesto.x, dy = e.clientY - gesto.y, agora = Date.now(), dt = Math.max(1, agora - gesto.t);
         box.scrollBy(-dx, -dy);
@@ -734,9 +914,9 @@
       atual = null;
     };
     box.onpointerup = fim; box.onpointercancel = fim;
-    box.onwheel = () => pararEmbalo();
+    box.onwheel = e => { pararEmbalo(); if (e.ctrlKey) { e.preventDefault(); mudarZoom(V.zoom * (e.deltaY < 0 ? 1.1 : 0.9), { x: e.clientX, y: e.clientY }); } };   // pinça do touchpad
     function apagarPerto(x, y, el) {
-      const lista = V.anot[pag] || [], raio = V.cfg.borracha.w / 2, asp = el.clientHeight / el.clientWidth;
+      const lista = V.anot[pag] || [], raio = V.borr.w / 2, asp = el.clientHeight / el.clientWidth;
       for (let i = lista.length - 1; i >= 0; i--) {
         const pt = lista[i].p, alc = raio + (lista[i].w || 0) / 2; let perto = false;
         for (let j = 0; j < pt.length && !perto; j += 2) {

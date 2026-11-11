@@ -670,6 +670,13 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 
 html,body{overscroll-behavior:none;background:var(--bg)}
 .msgs,.qb-lista,.mentor-msgs,.side,.modal{overscroll-behavior:contain}
 
+.inicio-simples{max-width:640px;margin:0 auto}
+.ini-hero{min-height:min(68vh,560px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:14px;padding:24px 8px}
+.ini-hero h1{margin:0;font-size:clamp(1.7rem,5vw,2.4rem)}
+.ini-prox{margin:0;max-width:46ch;line-height:1.5}
+.ini-btn{font-size:1.15rem;padding:16px 34px;min-height:60px;border-radius:999px;margin-top:6px;box-shadow:0 10px 30px color-mix(in srgb,var(--accent) 35%,transparent)}
+.ini-btn .i{width:22px;height:22px}
+.ini-meta{margin:0}
 .aviso-visit{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:16px;border-style:dashed;padding:12px 14px}
 .aviso-visit>span{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.88rem}.aviso-visit .i{width:18px;height:18px}
 
@@ -1074,7 +1081,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=3.4">
+<link rel="stylesheet" href="css/componentes.css?v=3.5">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -1084,7 +1091,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/ExercicioIdioma.js?v=3.0"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
-<script src="js/componentes/Estante.js?v=3.4"></script>
+<script src="js/componentes/Estante.js?v=3.5"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
@@ -2658,8 +2665,13 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="2.8";
+const APP_VERSAO="2.9";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Arquivos em tela cheia 🖥️",d:"A folha ocupa a tela toda e as ferramentas ficam numa barra lateral que você esconde e mostra quando quiser. Dá para usar a tela cheia do aparelho e trocar a barra de lado."},
+  {t:"18 canetas ✒️",d:"Esferográfica, gel, caneta fina, tinteiro, caligrafia, pincel, grafites HB, 2B e 6B, lapiseira, lápis de cor, marca-textos (normal, neon, pastel e fino), marcador, giz de cera e aquarela."},
+  {t:"Favoritas e paleta completa 🎨",d:"Salve suas canetas preferidas com cor e espessura: elas ficam na barra lateral. Escolha qualquer cor numa paleta com 60 tons ou no seletor livre."},
+  {t:"Zoom sem piscar 🔍",d:"Aproximar e afastar não recarrega mais a página. A borracha agora também apaga só um pedaço do traço."},
+  {t:"Início mais limpo 🏠",d:"A tela inicial mostra só o próximo bloco do seu plano e o botão para começar a estudar."},
   {t:"Escreva como num tablet ✍️",d:"Nos arquivos e cadernos da estante, a caneta escreve e o dedo rola a página; dois dedos dão zoom. Tocando de novo na ferramenta, você escolhe espessura e cor. Sem caneta? Ligue “Escrever com o dedo” no menu ⋮."},
   {t:"Folhas do caderno 📓",d:"Crie e apague folhas pela lixeira de cada folha ou pelo menu ⋮."},
   {t:"Estante só no seu aparelho 📱",d:"Os arquivos agora ficam guardados só no aparelho, e cabem arquivos de até 200 MB. Para levar a outro aparelho, use ⋯ › “Baixar com anotações” e envie o .laest lá."},
@@ -4301,7 +4313,7 @@ document.addEventListener("keydown",ev=>{if(S.view!=="flashcards"||!FC.estudo||e
 /* ================= Tutorial: tour guiado por todas as áreas do site ================= */
 const TUT_CAPS=[["estudos","Estudos","📚"],["prova","Prova","🎯"],["comunidade","Conversas","✉️"],["conta","Conta","⚙️"]];
 const TUT_PASSOS=[
-  {v:"inicio",c:"estudos",e:"🏠",t:"Seu painel do dia",x:"Tudo começa aqui: a meta de hoje, o próximo bloco de estudo e um resumo da sua semana. É a sua “central de comando”.",d:"Toque em <b>Iniciar</b> no cartão Hoje e escolha pomodoro ou cronômetro.",a:".hoje-card"},
+  {v:"inicio",c:"estudos",e:"🏠",t:"Início",x:"Uma tela simples: o próximo bloco do seu plano e um botão para começar.",d:"Toque em <b>Começar a estudar</b> e escolha pomodoro ou cronômetro.",a:".ini-btn"},
   {v:"semana",c:"estudos",e:"🗓️",t:"Minha semana",x:"Seu plano de estudos, dia a dia, montado a partir das suas matérias e horários. Arraste o cartão para os lados para ver os outros dias.",d:"Marque um bloco como feito e veja o progresso subir.",a:".dia-card, .week"},
   {v:"questoes",c:"estudos",e:"❓",t:"Banco de questões",x:"Milhares de questões reais com gabarito oficial: ENEM, EsPCEx, PISM e PAS. Filtre por matéria, tópico, ano e dificuldade.",d:"Errou? A questão vai para o <b>caderno de erros</b> e você pode refazer até acertar.",a:".qb-filtros"},
   {v:"estante",c:"estudos",e:"🗂️",t:"Minha estante",x:"Seus arquivos de estudo organizados em categorias que você cria (Matemática, Geografia…). Abra um PDF ou uma foto e escreva por cima com caneta, marca-texto e borracha.",d:"Crie um caderno em branco pautado ou quadriculado para fazer resumos à mão.",a:".est-cats"},
@@ -4575,39 +4587,24 @@ function ligarHoje(blocos,hojeK){
   const rel=$("#hoje-relogio");if(rel){clearInterval(S.hojeTick);S.hojeTick=setInterval(()=>{if(!rel.isConnected||!P.rodando){clearInterval(S.hojeTick);return}rel.textContent=fmtMin(pomoRestante())},500)}
 }
 function renderInicio(){
-  // carrega o caderno do banco de questões uma vez (para sugerir perguntas à mentoria)
-  if(!S.qb||!S.qb.doc){qbEstado();qbDoc().then(()=>{const a=document.activeElement;if(S.view==="inicio"&&!(a&&a.id==="mh-in"))renderInicio()}).catch(()=>{})}
+  // tela inicial enxuta: saudação, o próximo bloco do plano e um botão para começar
   const p=S.perfil,pl=S.plano,hi=hojeIdx(),hojeK=DIAS[hi].k;
-  const blocos=(pl&&pl.semana[hojeK])||[],todos=pl?DIAS.flatMap(x=>pl.semana[x.k]||[]):[];
-  const feitos=todos.filter(b=>b.feito).length,pct=todos.length?Math.round(feitos/todos.length*100):0;
-  const dp=p.temProva&&p.dataProva?Math.ceil((new Date(p.dataProva+"T00:00:00")-new Date(new Date().toDateString()))/864e5):null;
-  const ed=S.edital;const prox=ed?ed.materias.map(m=>({m:m.nome,t:m.topicos.find(t=>!t.feito)})).filter(x=>x.t).slice(0,4):[];
-  const h=new Date().getHours();const saud=h<12?"Bom dia":h<18?"Boa tarde":"Boa noite";
-  const nome=(S.pub&&S.pub.nome)||p.nome;
-  $("#main").innerHTML=`<div class="page">
-    ${S.mode!=="nuvem"?`<div class="card flat aviso-visit"><span>${ico("user")}<b>Modo visitante:</b> nada fica salvo. Ao fechar ou recarregar o app, seu plano e seu progresso são apagados.</span><button class="btn sm primary" type="button" id="visit-conta">Criar conta e salvar</button></div>`:""}
-    ${pageHead(`${saud}${nome?", "+esc(nome):""}`,`${DIAS[hi].n}, ${new Date().toLocaleDateString("pt-BR",{day:"numeric",month:"long"})} · ${esc(descObjetivo(p))}`,`<button class="btn primary" type="button" id="ini-pomo">${ico("play")}Começar a estudar</button>`)}
-    <div class="stats">
-      <div class="stat stat-meta">${anelMeta(minutosDia(dataISO()),metaHoje())}<div style="min-width:0"><div class="eyebrow">Meta de hoje</div><div class="v" style="font-size:1.25rem">${fmtH(minutosDia(dataISO()))}</div><div class="s">de ${fmtH(metaHoje())}${minutosDia(dataISO())>=metaHoje()?" · batida!":""}</div></div></div>
-      ${tileEstudo7()}
-      ${tileQuestoes7()}
-      ${dp!=null?`<div class="stat"><div class="eyebrow">${esc(p.nomeProva||"Prova")}</div><div class="v">${dp>=0?dp+(dp===1?" dia":" dias"):"já passou"}</div><div class="s">até a prova · semana ${feitos}/${todos.length}</div><div class="prog" style="margin-top:8px"><i style="width:${pct}%"></i></div></div>`
-        :`<div class="stat"><div class="eyebrow">Semana</div><div class="v">${feitos}/${todos.length}</div><div class="s">blocos do plano feitos</div><div class="prog" style="margin-top:8px"><i style="width:${pct}%"></i></div></div>`}
-    </div>
-    ${cartaoMentoriaInicio()}
-    ${cartaoConvite()}
-    <div class="cols">
-      ${cartaoHoje(blocos,hojeK)}
-      <div class="stack">
-        ${(()=>{const rv=revisoesPendentes();return `<div class="card"><div class="card-h"><h3>Revisões de hoje</h3><a class="small muted" href="#estatisticas" data-link="estatisticas">Ver todas</a></div>
-          ${rv.length?`<div class="list">${rv.slice(0,5).map(revisaoLinha).join("")}</div>${rv.length>5?`<p class="small muted">+${rv.length-5} revisões</p>`:""}`:`<p class="small muted">Nenhuma revisão para hoje. Ao finalizar uma sessão, escreva o assunto para agendar revisões em 1, 7 e 30 dias.</p>`}</div>`})()}
-        ${prox.length?`<div class="card"><div class="card-h"><h3>Próximos tópicos · ${esc(ed.nome)}</h3></div><div class="list">${prox.map(x=>`<div class="li" style="grid-template-columns:minmax(0,1fr)"><div style="min-width:0"><div class="eyebrow">${esc(x.m)}</div><div class="small">${esc(x.t.t)}</div></div></div>`).join("")}</div></div>`
-          :`<div class="card stack sm"><h3>Vai fazer uma prova?</h3><p class="small muted">Envie o edital ou escreva o nome da prova para ver os tópicos cobrados, matéria por matéria.</p><button class="btn sm" type="button" data-link="edital">${ico("scan")}Escanear edital</button></div>`}
-      </div>
+  const blocos=(pl&&pl.semana[hojeK])||[],prox=blocos.find(b=>!b.feito),feitosHoje=blocos.filter(b=>b.feito).length;
+  const h=new Date().getHours(),saud=h<12?"Bom dia":h<18?"Boa tarde":"Boa noite",nome=(S.pub&&S.pub.nome)||p.nome;
+  const feito=minutosDia(dataISO()),meta=metaHoje(),rodando=P.rodando||C.rodando;
+  const proxTxt=rodando?(P.rodando?"Seu pomodoro está rodando.":"O cronômetro está contando.")
+    :prox?`Próximo: <b>${esc(prox.materia)}</b> · ${esc(prox.inicio)}–${esc(prox.fim)}${prox.tarefa?`<br><span class="small">${esc(prox.tarefa)}</span>`:""}`
+    :blocos.length?"Você fez tudo o que estava no plano de hoje. 🎉":"Hoje não tem bloco no seu plano. Que tal um estudo livre?";
+  $("#main").innerHTML=`<div class="page inicio-simples">
+    ${S.mode!=="nuvem"?`<div class="card flat aviso-visit"><span>${ico("user")}<b>Modo visitante:</b> nada fica salvo ao fechar o app.</span><button class="btn sm primary" type="button" id="visit-conta">Criar conta e salvar</button></div>`:""}
+    <div class="ini-hero">
+      <span class="eyebrow">${DIAS[hi].n}, ${new Date().toLocaleDateString("pt-BR",{day:"numeric",month:"long"})}</span>
+      <h1>${saud}${nome?", "+esc(nome):""}</h1>
+      <p class="ini-prox muted">${proxTxt}</p>
+      <button class="btn primary ini-btn" type="button" id="ini-pomo">${ico("play")}${rodando?"Continuar estudando":"Começar a estudar"}</button>
+      <p class="small muted ini-meta">Hoje: ${fmtH(feito)} de ${fmtH(meta)}${feito>=meta&&meta?" · meta batida!":""}${blocos.length?` · ${feitosHoje}/${blocos.length} blocos`:""}</p>
     </div></div>`;
-  $("#ini-pomo").onclick=()=>{if(P.rodando){go("pomodoro");return}if(C.rodando){go("cronometro");return}const prox=blocos.find(b=>!b.feito);iniciarEstudo(prox?hojeK+"|"+prox.id:null)};
-  {const pg=$("#main .page");if(pg){pg.insertAdjacentHTML("beforeend",'<div class="anuncio" data-anuncio="inicio" hidden></div>');LAComp.Pro.anuncios(appPro)}}
-  ligarHoje(blocos,hojeK);ligarBlocos();ligarMentoriaInicio();ligarConvite();ligarRevisoes(renderInicio);$$("[data-link]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.dataset.link)}));
+  $("#ini-pomo").onclick=()=>{if(P.rodando){go("pomodoro");return}if(C.rodando){go("cronometro");return}iniciarEstudo(prox?hojeK+"|"+prox.id:null)};
   const vc=$("#visit-conta");if(vc)vc.onclick=()=>sair("criar");
   tutTalvezPerguntar();
 }
