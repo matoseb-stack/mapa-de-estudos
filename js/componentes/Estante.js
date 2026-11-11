@@ -4,16 +4,14 @@
    Também cria cadernos em branco (liso, pautado ou quadriculado).
    Onde fica cada coisa:
    - no aparelho (IndexedDB "la-estante-<uid>"): os arquivos, as capas, os desenhos e a lista (abre rápido e sem internet);
-   - na nuvem (com conta): data/users/{uid}/estante/meta (lista e categorias), .../meta/partes/{id}_{n} (arquivo em
-     pedaços de 700 KB), .../meta/anot/{id}_{página} (desenhos) e .../meta/capas/{id} (miniatura). Só a pessoa lê e grava.
+   - na nuvem (com conta): data/users/{uid}/estante (lista e categorias), .../estante/partes/{id}_{n} (arquivo em
+     pedaços de 700 KB), .../estante/anot/{id}_{página} (desenhos) e .../estante/capas/{id} (miniatura). Só a pessoa lê e grava.
    Uso: LAComp.Estante.render(container, app)  ·  app: { uid, db, esc, ico, pageHead, toast, naTela } */
 (function () {
   "use strict";
   const MAX_ARQ = 15 * 1024 * 1024, MAX_TOTAL = 200 * 1024 * 1024, PEDACO = 700000;
   const PDFJS = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/";
   const CORES_CAT = ["#3b82f6", "#22c55e", "#f59e0b", "#ef4444", "#a855f7", "#14b8a6", "#ec4899", "#64748b"];
-  const CORES_TINTA = ["#111827", "#2563eb", "#dc2626", "#16a34a", "#9333ea", "#f97316"];
-  const CORES_MARCA = ["#fde047", "#86efac", "#7dd3fc", "#f9a8d4", "#fdba74"];
   const MODELOS = { liso: "Liso", pautado: "Pautado", quadriculado: "Quadriculado" };
   const E = { uid: null, meta: null, cat: "todas", busca: "", nuvemOk: false, envios: {} };
   const novoId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
@@ -185,7 +183,7 @@
     const tipo = a.tipo === "pdf" ? "PDF" : a.tipo === "img" ? "Imagem" : `Caderno ${MODELOS[a.modelo] ? MODELOS[a.modelo].toLowerCase() : ""}`;
     return `<div class="est-arq" data-arq="${a.id}">
       <button type="button" class="est-capa" data-abrir="${a.id}" aria-label="Abrir ${esc(a.nome)}">${a.capa ? `<img src="${a.capa}" alt="">` : `<span class="est-capa-ic">${a.tipo === "pdf" ? "📄" : a.tipo === "img" ? "🖼️" : "📓"}</span>`}
-        ${a.ap && a.ap.length ? `<span class="est-tinta" title="Tem anotações">✏️</span>` : ""}</button>
+        ${a.ap && a.ap.length ? `<span class="est-marcado" title="Tem anotações">✏️</span>` : ""}</button>
       <div class="est-info"><b title="${esc(a.nome)}">${esc(a.nome)}</b>
         <span class="small muted">${tipo}${a.paginas ? ` · ${a.paginas} ${a.paginas === 1 ? "página" : "páginas"}` : ""}${a.tam ? ` · ${tamTxt(a.tam)}` : ""}</span>
         <span class="small">${c ? `<i class="est-dot" style="background:${c.cor}"></i>${esc(c.nome)}` : `<span class="muted">Sem categoria</span>`}${env != null ? ` · <span class="muted">☁️ ${Math.round(env * 100)}%</span>` : ""}</span></div>
@@ -281,7 +279,7 @@
     const del = bg.querySelector("[data-del]");
     if (del) del.onclick = async () => {
       const n = E.meta.arquivos.filter(a => a.cat === c.id).length;
-      if (!confirm(`Apagar a categoria “${c.nome}”?${n ? ` Os ${n} arquivos dela não são apagados: vão para “Sem categoria”.` : ""}`)) return;
+      if (!await perguntar(`Apagar a categoria “${c.nome}”?`, n ? `Os ${n} arquivos dela não são apagados: vão para “Sem categoria”.` : "", "Apagar categoria", true)) return;
       E.meta.categorias = E.meta.categorias.filter(x => x.id !== c.id); E.meta.arquivos.forEach(a => { if (a.cat === c.id) a.cat = ""; });
       E.cat = "todas"; await salvarMeta(); bg.remove(); pintar();
     };
@@ -301,7 +299,7 @@
       const m = e.target.closest("[data-m]"); if (!m) return; pop.remove(); document.removeEventListener("pointerdown", fechar, true);
       const x = m.dataset.m;
       if (x === "abrir") abrir(id);
-      else if (x === "renomear") { const n = prompt("Novo nome do arquivo:", a.nome); if (n && n.trim()) { a.nome = n.trim().slice(0, 80); await salvarMeta(); pintar(); } }
+      else if (x === "renomear") { const n = await pedirTexto("Renomear arquivo", "Novo nome", a.nome); if (n) { a.nome = n.slice(0, 80); await salvarMeta(); pintar(); } }
       else if (x === "mover") { const bg = modal(`<h3 style="margin:0">Mudar “${APP.esc(a.nome)}” de categoria</h3>${selectCat("em-cat", a.cat)}
           <div class="row" style="justify-content:flex-end"><button class="btn ghost" type="button" data-x>Cancelar</button><button class="btn primary" type="button" data-ok>Mover</button></div>`);
         bg.querySelector("[data-ok]").onclick = async () => { a.cat = bg.querySelector("#em-cat").value; await salvarMeta(); bg.remove(); pintar(); }; }
@@ -310,7 +308,7 @@
     };
   }
   async function apagar(a) {
-    if (!confirm(`Apagar “${a.nome}” e as anotações dele? Não dá para desfazer.`)) return;
+    if (!await perguntar(`Apagar “${a.nome}”?`, "O arquivo e todas as anotações dele somem deste aparelho e da nuvem. Não dá para desfazer.", "Apagar", true)) return;
     E.meta.arquivos = E.meta.arquivos.filter(x => x.id !== a.id); await salvarMeta(); pintar();
     await Promise.all([ap("arquivos", a.id), ap("anot", a.id), ap("capas", a.id)].map(p => p.catch(() => {})));
     if (nuvem()) { const r = raiz(), ops = [r.collection("capas").doc(a.id).delete()];
@@ -320,29 +318,91 @@
     APP.toast("Arquivo apagado.");
   }
   function baixar(blob, nome) { const u = URL.createObjectURL(blob), l = document.createElement("a"); l.href = u; l.download = nome; document.body.appendChild(l); l.click(); l.remove(); setTimeout(() => URL.revokeObjectURL(u), 4000); }
-  function modal(html) {
-    document.querySelectorAll(".modal-bg").forEach(m => m.remove());
-    const bg = document.createElement("div"); bg.className = "modal-bg";
+  function modal(html, empilhar) {
+    if (!empilhar) document.querySelectorAll(".modal-bg").forEach(m => m.remove());
+    const bg = document.createElement("div"); bg.className = "modal-bg est-modal";
     bg.innerHTML = `<div class="card stack modal" role="dialog" aria-modal="true" style="width:min(460px,100%)">${html}</div>`;
     document.body.appendChild(bg);
     bg.addEventListener("click", e => { if (e.target === bg || e.target.closest("[data-x]")) bg.remove(); });
     return bg;
   }
 
-  /* ================= leitor com caneta ================= */
-  // traço: { f: "caneta"|"marca", c: cor, w: espessura (fração da largura da página × 10000), p: [x, y, x, y…] em 0..10000 }
-  const V = { a: null, pdf: null, img: null, pags: [], anot: {}, ferr: "caneta", cor: CORES_TINTA[0], corMarca: CORES_MARCA[0], esp: { caneta: 22, marca: 140, borracha: 160 },
-    soCaneta: false, zoom: 1, desf: [], ref: [], sujas: new Set(), timer: null, obs: null, raf: 0 };
+  /* ================= leitor com caneta (visual inspirado nos cadernos digitais de tablet) ================= */
+  // traço: { f: "caneta"|"lapis"|"marca", c: cor, w: espessura (fração da largura da página × 10000),
+  //          p: [x, y, x, y…] em 0..10000, q?: [pressão 0..100 por ponto] (só com caneta de tablet) }
+  const PALETA = ["#111827", "#4b5563", "#2563eb", "#0ea5e9", "#16a34a", "#65a30d", "#dc2626", "#f97316", "#ca8a04", "#9333ea", "#db2777", "#7c2d12"];
+  const PALETA_MARCA = ["#fde047", "#86efac", "#7dd3fc", "#f9a8d4", "#fdba74", "#c4b5fd"];
+  const TAMANHOS = { caneta: [10, 16, 24, 36, 54], lapis: [10, 14, 20, 28, 40], marca: [70, 100, 140, 190, 260], borracha: [60, 110, 170, 260, 400] };
+  const NOMES_F = { caneta: "Caneta", lapis: "Lápis", marca: "Marca-texto", borracha: "Borracha", mao: "Mover" };
+  const svg = (d, extra) => `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}${extra || ""}</svg>`;
+  const ICF = {
+    caneta: svg(`<path d="M4.5 19.5l1-4.2L16.2 4.6a2 2 0 012.8 0l.4.4a2 2 0 010 2.8L8.7 18.5z"/><path d="M14.5 6.3l3.2 3.2"/>`),
+    lapis: svg(`<path d="M5 19l1-4L16 5l3 3L9 18z"/><path d="M6 15l3 3"/><path d="M14 7l3 3"/>`),
+    marca: svg(`<path d="M9.5 14.5l-4 4.5h5.5l1.3-1.5"/><path d="M9.5 14.5l2.8 2.8 8.2-8.2-2.8-2.8z"/>`),
+    borracha: svg(`<path d="M8 20h11"/><path d="M4.6 14.6l8.8-8.8a2 2 0 012.8 0l2 2a2 2 0 010 2.8L11 18.8 8 19z"/><path d="M9.5 9.7l4.8 4.8"/>`),
+    mao: svg(`<path d="M8 12.5V6a1.5 1.5 0 013 0v5m0-6.5a1.5 1.5 0 013 0V11m0-5a1.5 1.5 0 013 0v6.5m0-3a1.5 1.5 0 013 0V14c0 4-3 7-7 7-2.7 0-4.4-1.2-6-3.6l-2.3-3.4a1.6 1.6 0 012.6-1.8L8 14"/>`),
+    desfazer: svg(`<path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 010 11H11"/>`),
+    refazer: svg(`<path d="M15 14l5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 000 11H13"/>`),
+    mais: svg(`<circle cx="12" cy="5" r="1.3" fill="currentColor"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/><circle cx="12" cy="19" r="1.3" fill="currentColor"/>`),
+    voltar: svg(`<path d="M15 18l-6-6 6-6"/>`),
+    paleta: svg(`<path d="M12 3a9 9 0 100 18c1.1 0 1.7-.8 1.7-1.6 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-.9.8-1.6 1.7-1.6H16a5 5 0 005-5c0-4.1-4-7.4-9-7.4z"/><circle cx="7.5" cy="11" r="1.2" fill="currentColor"/><circle cx="10.5" cy="7.3" r="1.2" fill="currentColor"/><circle cx="15" cy="7.8" r="1.2" fill="currentColor"/>`),
+    lixo: svg(`<path d="M4 7h16"/><path d="M10 11v6M14 11v6"/><path d="M6 7l1 13h10l1-13"/><path d="M9 7V4h6v3"/>`),
+    zoomMais: svg(`<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3M8.5 11h5M11 8.5v5"/>`),
+    zoomMenos: svg(`<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3M8.5 11h5"/>`)
+  };
+  const V = { a: null, pdf: null, img: null, pags: [], anot: {}, ferr: "caneta",
+    cfg: { caneta: { c: PALETA[0], w: 24 }, lapis: { c: PALETA[1], w: 14 }, marca: { c: PALETA_MARCA[0], w: 140 }, borracha: { w: 170 } },
+    recentes: [PALETA[0], PALETA[2], PALETA[6], PALETA[4]], soCaneta: false, viuCaneta: false, zoom: 1, desf: [], ref: [], sujas: new Set(), timer: null, obs: null, raf: 0 };
+  try { const s = JSON.parse(localStorage.getItem("la_estante_caneta") || "null"); if (s) { Object.assign(V.cfg, s.cfg || {}); if (s.recentes) V.recentes = s.recentes; if (s.ferr) V.ferr = s.ferr; V.soCaneta = !!s.soCaneta; V.viuCaneta = !!s.viuCaneta; } } catch (e) {}
+  const guardarPrefs = () => { try { localStorage.setItem("la_estante_caneta", JSON.stringify({ cfg: V.cfg, recentes: V.recentes, ferr: V.ferr, soCaneta: V.soCaneta, viuCaneta: V.viuCaneta })); } catch (e) {} };
+
+  // janela de confirmação própria (as caixas do navegador falham em alguns tablets e apps instalados)
+  function perguntar(titulo, texto, botao, perigo) {
+    return new Promise(ok => {
+      const bg = modal(`<h3 style="margin:0">${APP.esc(titulo)}</h3>${texto ? `<p class="small muted" style="margin:0">${APP.esc(texto)}</p>` : ""}
+        <div class="row" style="justify-content:flex-end"><button class="btn ghost" type="button" data-x>Cancelar</button><button class="btn ${perigo ? "danger-sol" : "primary"}" type="button" data-ok>${APP.esc(botao)}</button></div>`, true);
+      const fim = v => { if (bg.isConnected) bg.remove(); ok(v); };
+      bg.querySelector("[data-ok]").onclick = () => fim(true);
+      bg.addEventListener("click", e => { if (e.target === bg || e.target.closest("[data-x]")) fim(false); });
+      setTimeout(() => bg.querySelector("[data-ok]").focus(), 50);
+    });
+  }
+  function pedirTexto(titulo, rotulo, valor) {
+    return new Promise(ok => {
+      const bg = modal(`<h3 style="margin:0">${APP.esc(titulo)}</h3><div class="field"><label for="est-txt">${APP.esc(rotulo)}</label><input type="text" id="est-txt" maxlength="80" value="${APP.esc(valor || "")}"></div>
+        <div class="row" style="justify-content:flex-end"><button class="btn ghost" type="button" data-x>Cancelar</button><button class="btn primary" type="button" data-ok>Salvar</button></div>`, true);
+      const inp = bg.querySelector("#est-txt"), fim = v => { if (bg.isConnected) bg.remove(); ok(v); };
+      bg.querySelector("[data-ok]").onclick = () => fim(inp.value.trim() || null);
+      inp.onkeydown = e => { if (e.key === "Enter") fim(inp.value.trim() || null); };
+      bg.addEventListener("click", e => { if (e.target === bg || e.target.closest("[data-x]")) fim(null); });
+      setTimeout(() => { inp.focus(); inp.select(); }, 50);
+    });
+  }
+
   async function abrir(id) {
     const a = E.meta.arquivos.find(x => x.id === id); if (!a) return;
     a.aberto = Date.now(); salvarMeta();
     const ov = document.createElement("div"); ov.className = "est-leitor"; ov.setAttribute("role", "dialog"); ov.setAttribute("aria-label", a.nome);
-    ov.innerHTML = `<div class="est-top"><button class="btn icon ghost" type="button" data-v="voltar" aria-label="Voltar para a estante">←</button><b class="est-titulo">${APP.esc(a.nome)}</b><span class="small muted" data-v-st></span></div>
+    ov.innerHTML = `<div class="est-top">
+        <button class="est-ic" type="button" data-v="voltar" aria-label="Voltar para a estante" title="Voltar">${ICF.voltar}</button>
+        <div class="est-tt"><b class="est-titulo">${APP.esc(a.nome)}</b><span class="est-st" data-v-st></span></div>
+        <button class="est-ic" type="button" data-v="desfazer" aria-label="Desfazer" title="Desfazer (Ctrl+Z)" disabled>${ICF.desfazer}</button>
+        <button class="est-ic" type="button" data-v="refazer" aria-label="Refazer" title="Refazer (Ctrl+Y)" disabled>${ICF.refazer}</button>
+        <button class="est-ic est-so-larga" type="button" data-v="menos" aria-label="Diminuir zoom" title="Diminuir">${ICF.zoomMenos}</button>
+        <button class="est-zoom" type="button" data-v="zoom100" data-zoom title="Voltar ao tamanho da tela">100%</button>
+        <button class="est-ic est-so-larga" type="button" data-v="mais" aria-label="Aumentar zoom" title="Aumentar">${ICF.zoomMais}</button>
+        <button class="est-ic" type="button" data-v="menu" aria-label="Mais opções" title="Mais opções" aria-haspopup="menu">${ICF.mais}</button>
+      </div>
       <div class="est-pags" tabindex="0"><div class="card row muted" style="margin:24px auto;max-width:420px"><span class="spinner"></span>Abrindo…</div></div>`;
     document.body.appendChild(ov); document.documentElement.classList.add("est-aberto");
-    Object.assign(V, { a, pdf: null, img: null, pags: [], anot: {}, desf: [], ref: [], sujas: new Set(), zoom: 1, ov });
+    Object.assign(V, { a, pdf: null, img: null, pags: [], anot: {}, desf: [], ref: [], sujas: new Set(), zoom: 1, ov, salvoEm: 0 });
     ov.querySelector('[data-v="voltar"]').onclick = fecharLeitor;
-    V.tecla = e => { if (e.key === "Escape") fecharLeitor(); else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z") { e.preventDefault(); e.shiftKey ? refazer() : desfazer(); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "y") { e.preventDefault(); refazer(); } };
+    V.tecla = e => {
+      if (document.querySelector(".est-modal")) return;
+      if (e.key === "Escape") { if (ov.querySelector(".est-painel,.est-menu-v")) fecharPaineis(); else fecharLeitor(); }
+      else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z") { e.preventDefault(); e.shiftKey ? refazer() : desfazer(); }
+      else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "y") { e.preventDefault(); refazer(); }
+    };
     addEventListener("keydown", V.tecla);
     try {
       const blob = await blobDe(a);
@@ -371,60 +431,162 @@
     if (!V.ov) return; salvarAnot(true);
     removeEventListener("keydown", V.tecla); if (V.obs) V.obs.disconnect();
     if (V.pdf) { try { V.pdf.destroy(); } catch (e) {} }
+    document.querySelectorAll(".est-modal").forEach(m => m.remove());
     V.ov.remove(); V.ov = null; document.documentElement.classList.remove("est-aberto");
     if (APP.naTela()) pintar();
   }
+  const ehCaderno = () => V.a && V.a.tipo === "caderno";
+  const corDe = f => (V.cfg[f] && V.cfg[f].c) || PALETA[0];
+  function fecharPaineis() { if (V.ov) V.ov.querySelectorAll(".est-painel,.est-menu-v").forEach(x => x.remove()); }
+
+  /* ---------- barra de ferramentas (em pílula, centralizada) ---------- */
   function montarBarra() {
-    const top = V.ov.querySelector(".est-top"), ferr = [["caneta", "✒️", "Caneta"], ["marca", "🖍️", "Marca-texto"], ["borracha", "🧽", "Borracha"], ["mao", "✋", "Mover (rolar a página)"]];
-    const barra = document.createElement("div"); barra.className = "est-ferr";
-    barra.innerHTML = `${ferr.map(([k, e, t]) => `<button type="button" class="est-f ${V.ferr === k ? "on" : ""}" data-f="${k}" title="${t}" aria-label="${t}">${e}</button>`).join("")}
-      <span class="est-sep"></span><span class="est-cores-t" data-cores></span>
-      <label class="est-esp" title="Espessura"><span class="sr-only">Espessura</span><input type="range" min="1" max="10" data-esp></label>
-      <span class="est-sep"></span>
-      <button type="button" class="est-f" data-v="desfazer" title="Desfazer (Ctrl+Z)" aria-label="Desfazer">↶</button><button type="button" class="est-f" data-v="refazer" title="Refazer (Ctrl+Y)" aria-label="Refazer">↷</button>
-      <span class="est-sep"></span>
-      <button type="button" class="est-f" data-v="menos" title="Diminuir" aria-label="Diminuir zoom">−</button><span class="small mono" data-zoom>100%</span><button type="button" class="est-f" data-v="mais" title="Aumentar" aria-label="Aumentar zoom">+</button>
-      <span class="est-sep"></span>
-      <button type="button" class="est-f est-txt ${V.soCaneta ? "on" : ""}" data-v="caneta" title="Só a caneta desenha; o dedo rola a página (para tablets com caneta)">🖊️ Só caneta</button>
-      ${V.a.tipo === "caderno" ? `<button type="button" class="est-f est-txt" data-v="pagina" title="Adicionar uma folha no fim">＋ Folha</button>` : ""}
-      <button type="button" class="est-f est-txt" data-v="limpar" title="Apagar os desenhos da página que está na tela">Limpar página</button>
-      <button type="button" class="est-f est-txt" data-v="exportar" title="Baixar a página da tela com os desenhos (imagem)">⬇ Página</button>`;
-    top.after(barra);
-    const pintarCores = () => { const lista = V.ferr === "marca" ? CORES_MARCA : CORES_TINTA, atual = V.ferr === "marca" ? V.corMarca : V.cor;
-      barra.querySelector("[data-cores]").innerHTML = lista.map(c => `<button type="button" class="est-cor sm ${c === atual ? "on" : ""}" data-c="${c}" style="background:${c}" aria-label="Cor ${c}"></button>`).join("");
-      const esp = barra.querySelector("[data-esp]"), k = V.ferr === "mao" ? "caneta" : V.ferr, base = { caneta: 22, marca: 140, borracha: 160 }[k];
-      esp.value = Math.round(V.esp[k] / base * 5); esp.disabled = V.ferr === "mao";
-      barra.querySelector("[data-cores]").style.display = V.ferr === "borracha" || V.ferr === "mao" ? "none" : ""; };
-    pintarCores();
-    barra.onclick = e => {
-      const f = e.target.closest("[data-f]"); if (f) { V.ferr = f.dataset.f; barra.querySelectorAll("[data-f]").forEach(x => x.classList.toggle("on", x === f)); pintarCores(); atualizarToque(); return; }
-      const c = e.target.closest("[data-c]"); if (c) { if (V.ferr === "marca") V.corMarca = c.dataset.c; else V.cor = c.dataset.c; pintarCores(); return; }
-      const v = e.target.closest("[data-v]"); if (!v) return;
-      const x = v.dataset.v;
-      if (x === "desfazer") desfazer(); else if (x === "refazer") refazer();
-      else if (x === "mais" || x === "menos") { V.zoom = Math.max(0.5, Math.min(3, +(V.zoom + (x === "mais" ? 0.25 : -0.25)).toFixed(2))); aplicarZoom(); }
-      else if (x === "caneta") { V.soCaneta = !V.soCaneta; v.classList.toggle("on", V.soCaneta); APP.toast(V.soCaneta ? "Só a caneta desenha. Use o dedo para rolar a página." : "Dedo, mouse e caneta desenham."); }
-      else if (x === "pagina") { const n = V.pags.length + 1; V.pags.push({ n, w: 1000, h: 1414 }); V.a.paginas = n; salvarMeta(); montarPaginas(); setTimeout(() => { const el = V.ov.querySelector(`[data-pag="${n}"]`); if (el) el.scrollIntoView({ behavior: "smooth" }); }, 60); }
-      else if (x === "limpar") { const p = paginaNaTela(); if (!p || !(V.anot[p] || []).length) return; if (!confirm(`Apagar todos os desenhos da página ${p}?`)) return;
-        empilhar({ pag: p, rem: V.anot[p].map((s, i) => ({ s, i })) }); V.anot[p] = []; redesenhar(p); marcar(p); }
-      else if (x === "exportar") exportar(paginaNaTela());
+    const top = V.ov.querySelector(".est-top"), w = document.createElement("div"); w.className = "est-ferr-w";
+    w.innerHTML = `<div class="est-ferr" role="toolbar" aria-label="Ferramentas de desenho"></div>`;
+    top.after(w); V.barra = w.querySelector(".est-ferr");
+    pintarBarra();
+    V.barra.onclick = e => {
+      const f = e.target.closest("[data-f]");
+      if (f) { const k = f.dataset.f;
+        if (k === V.ferr && k !== "mao") { abrirPainel(); return; }      // tocar de novo na ferramenta abre as opções dela
+        V.ferr = k; guardarPrefs(); fecharPaineis(); pintarBarra(); atualizarToque(); return; }
+      const c = e.target.closest("[data-c]");
+      if (c) { if (!["caneta", "lapis", "marca"].includes(V.ferr)) { V.ferr = "caneta"; atualizarToque(); }
+        usarCor(c.dataset.c); return; }
+      if (e.target.closest("[data-v='paleta']")) abrirPainel();
     };
-    barra.querySelector("[data-esp]").oninput = e => { if (V.ferr === "mao") return; const base = { caneta: 22, marca: 140, borracha: 160 }[V.ferr]; V.esp[V.ferr] = Math.round(base * e.target.value / 5); };
+    top.onclick = e => {
+      const v = e.target.closest("[data-v]"); if (!v) return; const x = v.dataset.v;
+      if (x === "desfazer") desfazer(); else if (x === "refazer") refazer();
+      else if (x === "mais" || x === "menos") mudarZoom(V.zoom + (x === "mais" ? 0.25 : -0.25));
+      else if (x === "zoom100") mudarZoom(1);
+      else if (x === "menu") abrirMenu(v);
+    };
   }
-  function largura() { const box = V.ov.querySelector(".est-pags"); return Math.min(box.clientWidth - 24, 980) * V.zoom; }
+  function pintarBarra() {
+    if (!V.barra) return;
+    const tinta = ["caneta", "lapis", "marca"].includes(V.ferr), lista = V.ferr === "marca" ? PALETA_MARCA.slice(0, 4) : V.recentes.slice(0, 4), atual = corDe(V.ferr);
+    V.barra.innerHTML = ["caneta", "lapis", "marca", "borracha", "mao"].map(k => `<button type="button" class="est-t ${V.ferr === k ? "on" : ""}" data-f="${k}" aria-pressed="${V.ferr === k}" title="${NOMES_F[k]}${V.ferr === k && k !== "mao" ? " (toque de novo para as opções)" : ""}" aria-label="${NOMES_F[k]}">
+        ${ICF[k]}${["caneta", "lapis", "marca"].includes(k) ? `<i class="est-ponta" style="background:${corDe(k)}"></i>` : ""}</button>`).join("")
+      + `<span class="est-sep"></span>`
+      + (tinta ? lista.map((c, i) => `<button type="button" class="est-cq ${i > 1 ? "est-cq-x" : ""} ${c === atual ? "on" : ""}" data-c="${c}" style="--c:${c}" aria-label="Usar a cor ${c}"></button>`).join("") : `<span class="est-dica small muted">${V.ferr === "borracha" ? "Toque no traço para apagar" : "Arraste para rolar a página"}</span>`)
+      + `<button type="button" class="est-t est-pal" data-v="paleta" aria-label="Cores e espessura" title="Cores e espessura">${ICF.paleta}</button>`;
+  }
+  function usarCor(c) {
+    const f = ["caneta", "lapis", "marca"].includes(V.ferr) ? V.ferr : "caneta";
+    V.cfg[f].c = c;
+    if (f !== "marca") V.recentes = [c].concat(V.recentes.filter(x => x !== c)).slice(0, 4);
+    guardarPrefs(); pintarBarra(); const p = V.ov.querySelector(".est-painel"); if (p) abrirPainel();
+  }
+  // painel de opções da ferramenta: espessura com prévia e paleta de cores
+  function abrirPainel() {
+    fecharPaineis();
+    const f = V.ferr === "mao" ? "caneta" : V.ferr, cfg = V.cfg[f], tam = TAMANHOS[f], tinta = f !== "borracha";
+    const p = document.createElement("div"); p.className = "est-painel"; p.setAttribute("role", "dialog"); p.setAttribute("aria-label", "Opções de " + NOMES_F[f]);
+    p.innerHTML = `<div class="est-pn-h"><b>${NOMES_F[f]}</b><button type="button" class="est-ic sm" data-pn="x" aria-label="Fechar">✕</button></div>
+      ${tinta ? `<canvas class="est-prev" width="600" height="90" aria-hidden="true"></canvas>` : ""}
+      <div class="est-pn-l small muted">Espessura</div>
+      <div class="est-tams">${tam.map((t, i) => `<button type="button" class="est-tam ${cfg.w === t ? "on" : ""}" data-w="${t}" aria-label="Espessura ${i + 1}"><i style="width:${6 + i * 5}px;height:${6 + i * 5}px;${tinta ? `background:${cfg.c}` : ""}"></i></button>`).join("")}</div>
+      <input type="range" min="${tam[0]}" max="${tam[4]}" value="${cfg.w}" data-pn="w" aria-label="Espessura">
+      ${tinta ? `<div class="est-pn-l small muted">Cor</div><div class="est-pal-g">${(f === "marca" ? PALETA_MARCA : PALETA).map(c => `<button type="button" class="est-cq ${c === cfg.c ? "on" : ""}" data-pc="${c}" style="--c:${c}" aria-label="Cor ${c}"></button>`).join("")}
+        <label class="est-cq est-cq-livre" title="Outra cor" style="--c:${cfg.c}"><input type="color" value="${cfg.c}" data-pn="cor" aria-label="Escolher outra cor"></label></div>`
+      : `<p class="small muted" style="margin:6px 0 0">A borracha apaga o traço inteiro que ela tocar. Errou? Use desfazer.</p>
+         <button type="button" class="btn sm" data-pn="limpar" style="margin-top:8px">${ICF.lixo} Apagar todos os desenhos desta página</button>`}`;
+    V.ov.appendChild(p);
+    const rb = V.barra.getBoundingClientRect(); p.style.top = Math.round(rb.bottom + 8) + "px";
+    const prev = () => { const cv = p.querySelector(".est-prev"); if (!cv) return; const ctx = cv.getContext("2d"); ctx.clearRect(0, 0, 600, 90);
+      const pts = []; for (let i = 0; i <= 24; i++) pts.push(Math.round(800 + i * 350), Math.round(5000 + Math.sin(i / 3.2) * 2600));
+      const q = f === "marca" ? null : pts.filter((_, i) => i % 2 === 0).map((_, i) => 35 + Math.round(55 * Math.sin(Math.PI * i / 24)));
+      tracar(ctx, { f, c: cfg.c, w: cfg.w * 1.6, p: pts, q }, 600, 90); };
+    prev();
+    p.onclick = e => {
+      const w = e.target.closest("[data-w]"); if (w) { cfg.w = +w.dataset.w; guardarPrefs(); abrirPainel(); return; }
+      const c = e.target.closest("[data-pc]"); if (c) { usarCor(c.dataset.pc); return; }
+      const b = e.target.closest("[data-pn]"); if (!b) return;
+      if (b.dataset.pn === "x") fecharPaineis();
+      else if (b.dataset.pn === "limpar") { fecharPaineis(); limparPagina(paginaNaTela()); }
+    };
+    p.querySelector('[data-pn="w"]').oninput = e => { cfg.w = +e.target.value; guardarPrefs(); p.querySelectorAll("[data-w]").forEach(x => x.classList.toggle("on", +x.dataset.w === cfg.w)); prev(); };
+    const cor = p.querySelector('[data-pn="cor"]'); if (cor) cor.onchange = e => usarCor(e.target.value);
+  }
+  // menu ⋮ do leitor
+  function abrirMenu(ancora) {
+    const ja = V.ov.querySelector(".est-menu-v"); fecharPaineis(); if (ja) return;
+    const n = paginaNaTela(), cad = ehCaderno(), m = document.createElement("div"); m.className = "est-menu-v"; m.setAttribute("role", "menu");
+    m.innerHTML = `<button type="button" role="menuitemcheckbox" aria-checked="${V.soCaneta}" data-mn="caneta"><span>${V.soCaneta ? "✓" : ""}</span>Só a caneta escreve <small>o dedo rola e dá zoom</small></button>
+      ${cad ? `<button type="button" role="menuitem" data-mn="inserir"><span>＋</span>Nova folha depois da ${n}</button>
+        <button type="button" role="menuitem" data-mn="apagar-folha" class="danger" ${V.pags.length < 2 ? "disabled" : ""}><span>${ICF.lixo}</span>Apagar a folha ${n}${V.pags.length < 2 ? " <small>o caderno precisa de ao menos uma</small>" : ""}</button>` : ""}
+      <button type="button" role="menuitem" data-mn="limpar"><span>🧽</span>Apagar os desenhos da página ${n}</button>
+      <button type="button" role="menuitem" data-mn="exportar"><span>⬇</span>Baixar a página ${n} como imagem</button>
+      <button type="button" role="menuitem" data-mn="renomear"><span>✎</span>Renomear</button>`;
+    V.ov.appendChild(m);
+    const r = ancora.getBoundingClientRect(); m.style.top = (r.bottom + 6) + "px"; m.style.right = Math.max(8, innerWidth - r.right) + "px";
+    const fora = ev => { if (!m.contains(ev.target) && !ancora.contains(ev.target)) { m.remove(); document.removeEventListener("pointerdown", fora, true); } };
+    setTimeout(() => document.addEventListener("pointerdown", fora, true), 0);
+    m.onclick = async e => {
+      const b = e.target.closest("[data-mn]"); if (!b || b.disabled) return; m.remove(); document.removeEventListener("pointerdown", fora, true);
+      const x = b.dataset.mn;
+      if (x === "caneta") { V.soCaneta = !V.soCaneta; V.viuCaneta = true; guardarPrefs(); APP.toast(V.soCaneta ? "Só a caneta escreve. Use o dedo para rolar e dois dedos para zoom." : "Dedo, mouse e caneta escrevem."); }
+      else if (x === "inserir") inserirFolha(n);
+      else if (x === "apagar-folha") apagarFolha(n);
+      else if (x === "limpar") limparPagina(n);
+      else if (x === "exportar") exportar(n);
+      else if (x === "renomear") { const nome = await pedirTexto("Renomear", "Nome", V.a.nome); if (nome) { V.a.nome = nome.slice(0, 80); V.ov.querySelector(".est-titulo").textContent = V.a.nome; salvarMeta(); } }
+    };
+  }
+
+  /* ---------- folhas do caderno ---------- */
+  function renumerar(map) { const novo = {}; Object.keys(V.anot).forEach(k => { const d = map(+k); if (d) novo[d] = V.anot[k]; }); V.anot = novo; }
+  async function inserirFolha(depois) {
+    const total = V.pags.length;
+    renumerar(k => k > depois ? k + 1 : k);
+    V.pags.push({ n: total + 1, w: 1000, h: 1414 }); V.pags.forEach((p, i) => { p.n = i + 1; p.pronta = 0; });
+    for (let k = depois + 1; k <= total + 1; k++) V.sujas.add(k);
+    V.desf = []; V.ref = []; V.a.paginas = V.pags.length; await salvarMeta();
+    montarPaginas(); salvarAnot();
+    setTimeout(() => { const el = V.ov && V.ov.querySelector(`[data-pag="${depois + 1}"]`); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 60);
+    APP.toast(`Folha ${depois + 1} criada.`);
+  }
+  async function apagarFolha(n) {
+    if (V.pags.length < 2) { APP.toast("O caderno precisa de pelo menos uma folha. Para recomeçar, apague os desenhos da página."); return; }
+    if (!await perguntar(`Apagar a folha ${n}?`, "A folha e tudo o que foi escrito nela somem. As folhas seguintes sobem uma posição.", "Apagar folha", true)) return;
+    const total = V.pags.length;
+    renumerar(k => k < n ? k : k > n ? k - 1 : 0);
+    V.pags.pop(); V.pags.forEach((p, i) => { p.n = i + 1; p.pronta = 0; });
+    for (let k = n; k <= total; k++) V.sujas.add(k);          // a última antiga fica vazia e é apagada da nuvem
+    V.desf = []; V.ref = []; V.a.paginas = V.pags.length; await salvarMeta();
+    const box = V.ov.querySelector(".est-pags"), topo = box.scrollTop;
+    montarPaginas(); box.scrollTop = topo; await salvarAnot();
+    APP.toast(`Folha ${n} apagada.`);
+  }
+  async function limparPagina(p) {
+    if (!p || !(V.anot[p] || []).length) { APP.toast("Esta página não tem desenhos."); return; }
+    if (!await perguntar(`Apagar os desenhos da página ${p}?`, "Você ainda pode desfazer logo depois.", "Apagar desenhos", true)) return;
+    empilhar({ pag: p, rem: V.anot[p].map((s, i) => ({ s, i })) }); V.anot[p] = []; redesenhar(p); marcar(p);
+  }
+
+  /* ---------- páginas ---------- */
+  function largura() { const box = V.ov.querySelector(".est-pags"); return Math.min(box.clientWidth - (box.clientWidth < 600 ? 16 : 48), 980) * V.zoom; }
   function montarPaginas() {
-    const box = V.ov.querySelector(".est-pags"), W = largura();
-    box.innerHTML = V.pags.map(p => `<div class="est-pag" data-pag="${p.n}" style="width:${W}px;height:${Math.round(W * p.h / p.w)}px"><canvas class="est-base"></canvas><canvas class="est-tinta"></canvas><span class="est-num">${p.n}/${V.pags.length}</span></div>`).join("");
+    const box = V.ov.querySelector(".est-pags"), W = largura(), cad = ehCaderno();
+    box.innerHTML = V.pags.map(p => `<div class="est-pag" data-pag="${p.n}" style="width:${W}px;height:${Math.round(W * p.h / p.w)}px"><canvas class="est-base"></canvas><canvas class="est-tinta"></canvas>
+        <span class="est-num">${p.n} / ${V.pags.length}</span>${cad && V.pags.length > 1 ? `<button type="button" class="est-pag-x" data-apagar-folha="${p.n}" aria-label="Apagar a folha ${p.n}" title="Apagar esta folha">${ICF.lixo}</button>` : ""}</div>`).join("")
+      + (cad ? `<button type="button" class="est-nova-folha" style="width:${W}px" data-nova-folha>＋ Nova folha</button>` : "");
     if (V.obs) V.obs.disconnect();
     V.obs = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) desenharPagina(+en.target.dataset.pag); }), { root: box, rootMargin: "600px 0px" });
     box.querySelectorAll(".est-pag").forEach(el => V.obs.observe(el));
+    box.onclick = e => {
+      const nf = e.target.closest("[data-nova-folha]"); if (nf) { inserirFolha(V.pags.length); return; }
+      const af = e.target.closest("[data-apagar-folha]"); if (af) apagarFolha(+af.dataset.apagarFolha);
+    };
     ligarCaneta(box); atualizarToque();
     V.ov.querySelector("[data-zoom]").textContent = Math.round(V.zoom * 100) + "%";
     status();
   }
-  function aplicarZoom() {
-    const box = V.ov.querySelector(".est-pags"), antes = box.scrollTop / Math.max(1, box.scrollHeight);
-    V.pags.forEach(p => p.pronta = 0); montarPaginas(); box.scrollTop = antes * box.scrollHeight;
+  function mudarZoom(z) {
+    z = Math.max(0.5, Math.min(3, +(+z).toFixed(2))); if (z === V.zoom) return;
+    const box = V.ov.querySelector(".est-pags"), antes = box.scrollTop / Math.max(1, box.scrollHeight), lado = box.scrollLeft / Math.max(1, box.scrollWidth);
+    V.zoom = z; V.pags.forEach(p => p.pronta = 0); montarPaginas(); box.scrollTop = antes * box.scrollHeight; box.scrollLeft = lado * box.scrollWidth;
   }
   const dpr = () => Math.min(2, window.devicePixelRatio || 1);
   async function desenharPagina(n) {
@@ -438,20 +600,31 @@
       else if (V.img) ctx.drawImage(V.img, 0, 0, base.width, base.height);
       else fundoCaderno(ctx, base.width, base.height, V.a.modelo);
     } catch (e) { p.pronta = 0; }
-    redesenho(n);
+    redesenhar(n);
   }
-  const redesenho = n => redesenhar(n);
+  // desenha um traço; com pressão (caneta de tablet), a espessura varia ao longo do traço
   function tracar(ctx, s, W, H) {
     const pt = s.p; if (!pt || pt.length < 2) return;
-    ctx.save(); ctx.lineCap = "round"; ctx.lineJoin = "round"; ctx.lineWidth = Math.max(1, s.w / 10000 * W);
+    const base = Math.max(0.8, s.w / 10000 * W), X = i => pt[i] / 10000 * W, Y = i => pt[i + 1] / 10000 * H, n = pt.length / 2;
+    ctx.save(); ctx.lineCap = "round"; ctx.lineJoin = "round"; ctx.strokeStyle = s.c; ctx.fillStyle = s.c;
     if (s.f === "marca") { ctx.globalAlpha = 0.38; ctx.globalCompositeOperation = "multiply"; ctx.lineCap = "butt"; }
-    ctx.strokeStyle = s.c; ctx.beginPath();
-    const X = i => pt[i] / 10000 * W, Y = i => pt[i + 1] / 10000 * H;
-    ctx.moveTo(X(0), Y(0));
-    if (pt.length === 2) ctx.lineTo(X(0) + 0.1, Y(0));
-    for (let i = 2; i < pt.length - 2; i += 2) { const mx = (X(i) + X(i + 2)) / 2, my = (Y(i) + Y(i + 2)) / 2; ctx.quadraticCurveTo(X(i), Y(i), mx, my); }
-    if (pt.length > 2) ctx.lineTo(X(pt.length - 2), Y(pt.length - 2));
-    ctx.stroke(); ctx.restore();
+    else if (s.f === "lapis") ctx.globalAlpha = 0.82;
+    const q = s.q && s.q.length === n && s.f !== "marca" ? s.q : null;
+    if (n === 1) { ctx.beginPath(); ctx.arc(X(0), Y(0), base * (q ? 0.35 + q[0] / 110 : 1) / 2, 0, 7); ctx.fill(); ctx.restore(); return; }
+    if (!q) {
+      ctx.lineWidth = base; ctx.beginPath(); ctx.moveTo(X(0), Y(0));
+      for (let i = 2; i < pt.length - 2; i += 2) { const mx = (X(i) + X(i + 2)) / 2, my = (Y(i) + Y(i + 2)) / 2; ctx.quadraticCurveTo(X(i), Y(i), mx, my); }
+      ctx.lineTo(X(pt.length - 2), Y(pt.length - 2)); ctx.stroke(); ctx.restore(); return;
+    }
+    // com pressão: um pedaço de curva por ponto, cada um com a sua espessura (lápis com o mesmo alfa sem "manchas")
+    const larg = j => base * (0.4 + q[j] / 100 * 0.9);
+    if (s.f === "lapis") { ctx.globalAlpha = 1; }
+    let px = X(0), py = Y(0);
+    for (let j = 1; j < n; j++) {
+      const i = j * 2, ult = j === n - 1, mx = ult ? X(i) : (X(i) + X(i + 2)) / 2, my = ult ? Y(i) : (Y(i) + Y(i + 2)) / 2;
+      ctx.lineWidth = (larg(j - 1) + larg(j)) / 2; ctx.beginPath(); ctx.moveTo(px, py); ctx.quadraticCurveTo(X(i), Y(i), mx, my); ctx.stroke(); px = mx; py = my;
+    }
+    ctx.restore();
   }
   function redesenhar(n, extra) {
     const el = V.ov && V.ov.querySelector(`[data-pag="${n}"] .est-tinta`); if (!el || !el.width) return;
@@ -459,49 +632,74 @@
     (V.anot[n] || []).forEach(s => tracar(ctx, s, el.width, el.height)); if (extra) tracar(ctx, extra, el.width, el.height);
   }
   function atualizarToque() { const box = V.ov && V.ov.querySelector(".est-pags"); if (box) box.classList.toggle("desenhando", V.ferr !== "mao"); }
+
+  /* ---------- caneta, dedo e gestos ---------- */
   function ligarCaneta(box) {
-    let atual = null, pag = 0, rolando = null;
+    let atual = null, pag = 0;
+    const toques = new Map(); let gesto = null;      // dedos na tela: rolar (1) ou pinça de zoom (2)
     const pos = (e, el) => { const r = el.getBoundingClientRect(); return [Math.round(Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * 10000), Math.round(Math.max(0, Math.min(1, (e.clientY - r.top) / r.height)) * 10000)]; };
+    const dist = () => { const [a, b] = [...toques.values()]; return Math.hypot(a.x - b.x, a.y - b.y) || 1; };
+    const fimPinca = () => { if (!gesto || gesto.tipo !== "pinca") return; const z = gesto.z; box.style.zoom = ""; gesto = null; mudarZoom(z); };
     box.onpointerdown = e => {
-      if (V.ferr === "mao") return;
+      if (e.target.closest("button")) return;
+      fecharPaineis();
+      if (e.pointerType === "pen" && !V.viuCaneta) { V.viuCaneta = true; V.soCaneta = true; guardarPrefs(); APP.toast("Caneta detectada: agora só a caneta escreve e o dedo rola a página. Dá para mudar no menu ⋮."); }
+      const dedo = e.pointerType === "touch";
+      if (dedo) { toques.set(e.pointerId, { x: e.clientX, y: e.clientY });
+        if (toques.size === 2) {                                   // dois dedos: zoom (descarta o traço que o primeiro dedo começou)
+          if (atual && !atual.borracha) { atual = null; redesenhar(pag); }
+          gesto = { tipo: "pinca", d0: dist(), z0: V.zoom, z: V.zoom }; e.preventDefault(); return; }
+        if (V.soCaneta || V.ferr === "mao") { gesto = { tipo: "rolar", id: e.pointerId, x: e.clientX, y: e.clientY }; return; } }
+      if (V.ferr === "mao") { if (e.pointerType === "mouse") gesto = { tipo: "rolar", id: e.pointerId, x: e.clientX, y: e.clientY }; return; }
       const el = e.target.closest(".est-pag"); if (!el) return;
-      if (e.pointerType === "touch" && V.soCaneta) { rolando = { id: e.pointerId, x: e.clientX, y: e.clientY }; return; }   // dedo rola
       if (e.button > 0) return;
-      e.preventDefault(); box.setPointerCapture(e.pointerId);
+      e.preventDefault(); try { box.setPointerCapture(e.pointerId); } catch (er) {}
       pag = +el.dataset.pag;
       const [x, y] = pos(e, el);
-      if (V.ferr === "borracha") { atual = { borracha: true, el, rem: [] }; apagarPerto(x, y, el); return; }
-      atual = { f: V.ferr, c: V.ferr === "marca" ? V.corMarca : V.cor, w: V.esp[V.ferr], p: [x, y], el };
+      if (V.ferr === "borracha") { atual = { borracha: true, el, rem: [], id: e.pointerId }; apagarPerto(x, y, el); return; }
+      const caneta = e.pointerType === "pen" && e.pressure > 0;
+      atual = { f: V.ferr, c: corDe(V.ferr), w: V.cfg[V.ferr].w, p: [x, y], el, id: e.pointerId };
+      if (caneta) atual.q = [Math.round(e.pressure * 100)];
     };
     box.onpointermove = e => {
-      if (rolando && e.pointerId === rolando.id) { box.scrollBy(rolando.x - e.clientX, rolando.y - e.clientY); rolando.x = e.clientX; rolando.y = e.clientY; return; }
-      if (!atual) return;
+      if (toques.has(e.pointerId)) toques.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (gesto && gesto.tipo === "pinca") { if (toques.size >= 2) { gesto.z = Math.max(0.5, Math.min(3, gesto.z0 * dist() / gesto.d0)); box.style.zoom = String(gesto.z / V.zoom); V.ov.querySelector("[data-zoom]").textContent = Math.round(gesto.z * 100) + "%"; } return; }
+      if (gesto && gesto.tipo === "rolar" && e.pointerId === gesto.id) { box.scrollBy(gesto.x - e.clientX, gesto.y - e.clientY); gesto.x = e.clientX; gesto.y = e.clientY; return; }
+      if (!atual || e.pointerId !== atual.id) return;
       const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
-      for (const ev of evs) { const [x, y] = pos(ev, atual.el);
+      for (const ev of (evs.length ? evs : [e])) { const [x, y] = pos(ev, atual.el);
         if (atual.borracha) apagarPerto(x, y, atual.el);
-        else { const n = atual.p.length; if (Math.abs(atual.p[n - 2] - x) + Math.abs(atual.p[n - 1] - y) > 6) atual.p.push(x, y); } }
-      if (!atual.borracha && !V.raf) V.raf = requestAnimationFrame(() => { V.raf = 0; if (atual) redesenhar(pag, atual); });
+        else { const n = atual.p.length; if (Math.abs(atual.p[n - 2] - x) + Math.abs(atual.p[n - 1] - y) > 4) { atual.p.push(x, y); if (atual.q) atual.q.push(Math.round((ev.pressure || 0.5) * 100)); } } }
+      if (!atual.borracha && !V.raf) V.raf = requestAnimationFrame(() => { V.raf = 0; if (atual && !atual.borracha) redesenhar(pag, limpo(atual)); });
     };
+    const limpo = a => { const { el, id, ...s } = a; if (s.q && s.q.length !== s.p.length / 2) delete s.q; return s; };
     const fim = e => {
-      if (rolando && e.pointerId === rolando.id) { rolando = null; return; }
-      if (!atual) return;
+      if (toques.has(e.pointerId)) { toques.delete(e.pointerId); if (gesto && gesto.tipo === "pinca" && toques.size < 2) { fimPinca(); return; } }
+      if (gesto && gesto.tipo === "rolar" && e.pointerId === gesto.id) { gesto = null; return; }
+      if (!atual || e.pointerId !== atual.id) return;
       if (atual.borracha) { if (atual.rem.length) { empilhar({ pag, rem: atual.rem }); marcar(pag); } }
-      else { const { el, ...s } = atual; (V.anot[pag] = V.anot[pag] || []).push(s); empilhar({ pag, add: s }); redesenhar(pag); marcar(pag); }
+      else { const s = limpo(atual); (V.anot[pag] = V.anot[pag] || []).push(s); empilhar({ pag, add: s }); redesenhar(pag); marcar(pag); }
       atual = null;
     };
     box.onpointerup = fim; box.onpointercancel = fim;
     function apagarPerto(x, y, el) {
-      const lista = V.anot[pag] || [], raio = V.esp.borracha / 2, asp = el.clientHeight / el.clientWidth;
+      const lista = V.anot[pag] || [], raio = V.cfg.borracha.w / 2, asp = el.clientHeight / el.clientWidth;
       for (let i = lista.length - 1; i >= 0; i--) {
-        const pt = lista[i].p; let perto = false;
-        for (let j = 0; j < pt.length && !perto; j += 2) { const dx = pt[j] - x, dy = (pt[j + 1] - y) * asp; if (dx * dx + dy * dy < raio * raio) perto = true; }
+        const pt = lista[i].p, alc = raio + (lista[i].w || 0) / 2; let perto = false;
+        for (let j = 0; j < pt.length && !perto; j += 2) {
+          const dx = pt[j] - x, dy = (pt[j + 1] - y) * asp; if (dx * dx + dy * dy < alc * alc) perto = true;
+          else if (j + 3 < pt.length) {           // também perto do segmento entre dois pontos
+            const ax = pt[j], ay = pt[j + 1] * asp, bx = pt[j + 2], by = pt[j + 3] * asp, px = x, py = y * asp, vx = bx - ax, vy = by - ay, L = vx * vx + vy * vy;
+            const t = L ? Math.max(0, Math.min(1, ((px - ax) * vx + (py - ay) * vy) / L)) : 0, cx = ax + t * vx - px, cy = ay + t * vy - py;
+            if (cx * cx + cy * cy < alc * alc) perto = true; }
+        }
         if (perto) { atual.rem.push({ s: lista[i], i }); lista.splice(i, 1); }
       }
       if (atual.rem.length) redesenhar(pag);
     }
   }
   /* desfazer / refazer: cada passo guarda o traço criado ou os traços apagados (com a posição) */
-  function empilhar(op) { V.desf.push(op); if (V.desf.length > 200) V.desf.shift(); V.ref = []; status(); }
+  function empilhar(op) { V.desf.push(op); if (V.desf.length > 300) V.desf.shift(); V.ref = []; status(); }
   function aplicar(op, inverso) {
     const l = V.anot[op.pag] = V.anot[op.pag] || [];
     if (op.add) { if (inverso) { const i = l.lastIndexOf(op.add); if (i >= 0) l.splice(i, 1); } else l.push(op.add); }
@@ -510,26 +708,33 @@
   }
   function desfazer() { const op = V.desf.pop(); if (!op) return; aplicar(op, true); V.ref.push(op); status(); }
   function refazer() { const op = V.ref.pop(); if (!op) return; aplicar(op, false); V.desf.push(op); status(); }
-  function status() { if (!V.ov) return; const st = V.ov.querySelector("[data-v-st]"); if (st) st.textContent = V.sujas.size ? "salvando…" : (V.salvoEm ? "salvo ✓" : ""); }
+  function status() {
+    if (!V.ov) return; const st = V.ov.querySelector("[data-v-st]");
+    if (st) st.textContent = V.sujas.size ? "salvando…" : (V.salvoEm ? "salvo ✓" : (V.pags.length ? `${V.pags.length} ${V.pags.length === 1 ? "página" : "páginas"}` : ""));
+    const d = V.ov.querySelector('[data-v="desfazer"]'), r = V.ov.querySelector('[data-v="refazer"]');
+    if (d) d.disabled = !V.desf.length; if (r) r.disabled = !V.ref.length;
+  }
   function marcar(p) { V.sujas.add(p); status(); clearTimeout(V.timer); V.timer = setTimeout(() => salvarAnot(), 900); }
   async function salvarAnot() {
     if (!V.a || !V.sujas.size) return;
-    const a = V.a, sujas = [...V.sujas]; V.sujas.clear(); const em = Date.now();
-    await gr("anot", a.id, { pags: V.anot, em }).catch(() => {});
-    const comTinta = Object.keys(V.anot).filter(p => (V.anot[p] || []).length).map(Number).sort((x, y) => x - y);
+    const a = V.a, anot = V.anot, sujas = [...V.sujas]; V.sujas.clear(); const em = Date.now();
+    await gr("anot", a.id, { pags: anot, em }).catch(() => {});
+    const comTinta = Object.keys(anot).filter(p => (anot[p] || []).length).map(Number).sort((x, y) => x - y);
     const x = E.meta.arquivos.find(y => y.id === a.id), apAntes = (x && x.ap) || [];
     if (x) x.ap = comTinta;
     if (nuvem()) {
-      const r = raiz().collection("anot");
-      await Promise.all(sujas.map(p => ((V.anot[p] || []).length ? r.doc(a.id + "_" + p).set({ s: JSON.stringify(V.anot[p]), em }) : r.doc(a.id + "_" + p).delete()).catch(e => console.warn("anot", e && e.code))));
+      try { const r = raiz().collection("anot");
+        await Promise.all(sujas.map(p => ((anot[p] || []).length ? r.doc(a.id + "_" + p).set({ s: JSON.stringify(anot[p]), em }) : r.doc(a.id + "_" + p).delete()).catch(e => console.warn("anot", e && e.code))));
+      } catch (e) { console.warn("anot", e); }
     }
     if (x && apAntes.join() !== comTinta.join()) await salvarMeta();
     V.salvoEm = em; status();
   }
   function paginaNaTela() {
+    if (!V.ov) return 1;
     const box = V.ov.querySelector(".est-pags"), meio = box.getBoundingClientRect().top + box.clientHeight / 2;
-    let melhor = 1, dist = 1e9;
-    box.querySelectorAll(".est-pag").forEach(el => { const r = el.getBoundingClientRect(), d = Math.abs((r.top + r.bottom) / 2 - meio); if (d < dist) { dist = d; melhor = +el.dataset.pag; } });
+    let melhor = 1, d0 = 1e9;
+    box.querySelectorAll(".est-pag").forEach(el => { const r = el.getBoundingClientRect(), d = Math.abs((r.top + r.bottom) / 2 - meio); if (d < d0) { d0 = d; melhor = +el.dataset.pag; } });
     return melhor;
   }
   function exportar(n) {
@@ -540,5 +745,5 @@
   }
 
   function sairDaAba() { if (V.ov) fecharLeitor(); document.querySelectorAll(".est-pop").forEach(x => x.remove()); }
-  (window.LAComp = window.LAComp || {}).Estante = { render, sairDaAba };
+  (window.LAComp = window.LAComp || {}).Estante = { render, sairDaAba, _estado: () => ({ V, E }) };   // _estado: usado pelos testes
 })();

@@ -1074,7 +1074,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=3.1">
+<link rel="stylesheet" href="css/componentes.css?v=3.2">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -1084,7 +1084,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/ExercicioIdioma.js?v=3.0"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
-<script src="js/componentes/Estante.js?v=3.1"></script>
+<script src="js/componentes/Estante.js?v=3.2"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
@@ -1099,10 +1099,12 @@ h3 .on-dot{margin-right:4px}
 const DIAS=[{k:"seg",n:"Segunda",c:"Seg"},{k:"ter",n:"Terça",c:"Ter"},{k:"qua",n:"Quarta",c:"Qua"},{k:"qui",n:"Quinta",c:"Qui"},{k:"sex",n:"Sexta",c:"Sex"},{k:"sab",n:"Sábado",c:"Sáb"},{k:"dom",n:"Domingo",c:"Dom"}];
 const CATEGORIAS=[
   {k:"colegio",n:"Colégio",d:"Ensino fundamental ou médio, provas e trabalhos da escola"},
-  {k:"vestibular",n:"ENEM / vestibular",d:"Preparação para entrar na faculdade"},
-  {k:"concurso",n:"Concurso",d:"Público, militar (EsPCEx, ESA…) ou outro processo seletivo"},
+  {k:"vestibular",n:"ENEM e vestibulares",d:"ENEM, Fuvest, Unicamp, UERJ, seriados (PISM, PAS, SSA) e Encceja"},
+  {k:"militar",n:"Escolas militares",d:"EsPCEx, ESA, EEAR, AFA, EPCAR, Escola Naval, EFOMM, Colégio Naval, ITA, IME"},
+  {k:"direito",n:"Direito",d:"OAB 1ª e 2ª fase, magistratura, Ministério Público, delegado, Defensoria, procuradorias"},
+  {k:"concurso",n:"Concursos públicos",d:"Polícias, INSS, bancos, tribunais, Receita, CNU, professor, saúde, prefeituras"},
   {k:"faculdade",n:"Faculdade",d:"Disciplinas do semestre, provas e trabalhos"},
-  {k:"idiomas",n:"Idioma / certificação",d:"Inglês, espanhol, certificações técnicas"},
+  {k:"idiomas",n:"Idioma / certificação",d:"Inglês, espanhol, francês, TOEFL, IELTS, Cambridge, DELF, DELE"},
   {k:"outro",n:"Outro",d:"Escreva o que você está estudando"}];
 const SERIES=["6º ano (EF)","7º ano (EF)","8º ano (EF)","9º ano (EF)","1ª série (EM)","2ª série (EM)","3ª série (EM)"];
 const SUGS={
@@ -1110,6 +1112,8 @@ const SUGS={
   colegio_em:["Matemática","Português","Literatura","Redação","Física","Química","Biologia","História","Geografia","Inglês","Filosofia","Sociologia"],
   vestibular:["Matemática","Português","Redação","Física","Química","Biologia","História","Geografia","Inglês","Filosofia","Sociologia","Literatura"],
   concurso:["Português","Matemática","Raciocínio lógico","Informática","Direito Constitucional","Direito Administrativo","Física","Química","História","Geografia","Inglês","Redação"],
+  militar:["Matemática","Português","Redação","Física","Química","Inglês","História","Geografia"],
+  direito:["Direito Constitucional","Direito Administrativo","Direito Civil","Direito Processual Civil","Direito Penal","Direito Processual Penal","Direito do Trabalho","Direito Tributário","Direito Empresarial","Ética Profissional","Direitos Humanos"],
   faculdade:["Cálculo","Estatística","Programação","Anatomia","Contabilidade","Direito Civil","Física","Metodologia científica"],
   idiomas:["Gramática","Vocabulário","Listening","Speaking","Reading","Writing"],
   outro:["Leitura","Exercícios","Projeto prático"]};
@@ -1302,6 +1306,102 @@ const CATALOGO=[
    est:"4 provas objetivas por área (Linguagens, Humanas, Natureza e Matemática) e redação.",fonte:"https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/encceja",
    m:[["Linguagens e Redação",0,T.por.concat(["Redação dissertativa"])],["Matemática",0,T.mat.slice(0,12)],["Ciências Humanas",0,T.his.slice(0,8).concat(T.geo.slice(0,6))],["Ciências da Natureza",0,T.bio.slice(0,8).concat(T.fis.slice(0,4),T.qui.slice(0,4))]]}
 ];
+/* Mais objetivos para a triagem da semana: carreiras jurídicas, concursos e certificações de idioma.
+   Os itens "gen" trazem o conteúdo comum ao tipo de prova; o edital de cada órgão tem a lista exata. */
+const TJ={
+  civ:["Lei de Introdução às Normas do Direito Brasileiro","Parte geral: pessoas, bens e fatos jurídicos","Negócio jurídico, prescrição e decadência","Obrigações e responsabilidade civil","Contratos em geral e em espécie","Direitos reais: posse e propriedade","Família e sucessões"],
+  pciv:["Normas fundamentais do processo civil","Jurisdição, competência e partes","Tutelas provisórias","Procedimento comum: petição inicial, resposta e provas","Sentença e coisa julgada","Recursos","Cumprimento de sentença e execução","Juizados Especiais e procedimentos especiais"],
+  trab:["Princípios e fontes do Direito do Trabalho","Relação de emprego: empregado e empregador","Contrato de trabalho e suas alterações","Jornada, intervalos e férias","Remuneração e salário","Extinção do contrato e verbas rescisórias","Estabilidades e FGTS","Reforma trabalhista"],
+  ptrab:["Organização e competência da Justiça do Trabalho","Reclamação trabalhista e audiência","Provas e sentença","Recursos trabalhistas","Execução trabalhista"],
+  trib:["Sistema Tributário Nacional e competência","Limitações ao poder de tributar e imunidades","Espécies tributárias","Obrigação, fato gerador e crédito tributário","Suspensão, extinção e exclusão do crédito","Impostos da União, dos estados e dos municípios","Reforma tributária: IBS e CBS"],
+  emp:["Empresário e estabelecimento","Sociedades empresárias","Títulos de crédito","Falência e recuperação judicial","Propriedade industrial"],
+  cons:["Relação de consumo e princípios do CDC","Direitos básicos do consumidor","Responsabilidade pelo fato e pelo vício","Práticas comerciais e publicidade","Proteção contratual e cláusulas abusivas"],
+  eca:["Doutrina da proteção integral","Direitos fundamentais da criança e do adolescente","Conselho Tutelar","Ato infracional e medidas socioeducativas","Adoção e família substituta"],
+  amb:["Princípios do Direito Ambiental","Política Nacional do Meio Ambiente","Licenciamento e estudo de impacto","Código Florestal","Responsabilidade e crimes ambientais"],
+  eleit:["Direitos políticos","Partidos políticos","Alistamento e domicílio eleitoral","Propaganda eleitoral","Crimes eleitorais e ações eleitorais"],
+  prev:["Seguridade Social na Constituição","Segurados e dependentes","Salário de contribuição","Benefícios do RGPS","Aposentadorias e regras de transição"],
+  crim:["Conceito, objeto e métodos da Criminologia","Escolas criminológicas","Teorias da criminalidade","Vitimologia","Prevenção do delito"],
+  medleg:["Traumatologia forense","Tanatologia","Sexologia forense","Toxicologia","Identificação e perícias"],
+  hum:["Filosofia do Direito","Sociologia do Direito","Psicologia judiciária","Ética e estatuto da magistratura","Teoria geral do Direito e da Política"],
+  fin:["Orçamento público e leis orçamentárias","Receita e despesa pública","Lei de Responsabilidade Fiscal","Crédito público","Controle e fiscalização financeira"],
+  lep:["Lei de Execução Penal: objetivos e princípios","Direitos e deveres do preso","Regimes de cumprimento de pena","Progressão, livramento condicional e remição","Faltas e sanções disciplinares"],
+  pecas:["Identificar a peça cabível pelo enunciado","Estrutura: endereçamento, qualificação, fatos, fundamentos e pedidos","Treino de peças com tempo cronometrado","Teses mais cobradas da área escolhida"],
+  disc:["Resposta fundamentada com o artigo de lei","Leitura do enunciado e identificação do tema","Treino com questões discursivas de exames anteriores"],
+  ped:["Concepções pedagógicas e teorias da aprendizagem","Planejamento e avaliação da aprendizagem","Currículo e BNCC","Educação inclusiva","Projeto político-pedagógico e gestão democrática"],
+  leged:["Constituição: educação (arts. 205 a 214)","LDB (Lei 9.394/1996)","BNCC","ECA: direito à educação","Plano Nacional de Educação"],
+  sus:["Princípios e diretrizes do SUS","Lei 8.080/1990 e Lei 8.142/1990","Atenção básica e redes de atenção","Vigilância em saúde","Controle social e financiamento"],
+  idioma:{read:["Ideia principal e detalhes","Inferência e vocabulário pelo contexto","Leitura rápida e localização de informação"],listen:["Diálogos do dia a dia","Palestras e aulas","Anotação de números, nomes e detalhes"],
+    write:["Estrutura de texto argumentativo","Cartas e e-mails","Conectivos e coesão","Revisão de erros frequentes"],speak:["Apresentação pessoal","Descrever e comparar","Defender uma opinião","Pronúncia e fluência"],
+    gram:["Tempos verbais","Preposições e artigos","Orações relativas e condicionais","Voz passiva e discurso indireto"],voc:["Vocabulário acadêmico","Expressões e collocations","Falsos cognatos"]}
+};
+const IDI=[["Leitura (Reading)",0,TJ.idioma.read],["Compreensão oral (Listening)",0,TJ.idioma.listen],["Escrita (Writing)",0,TJ.idioma.write],["Fala (Speaking)",0,TJ.idioma.speak],["Gramática",0,TJ.idioma.gram],["Vocabulário",0,TJ.idioma.voc]];
+CATALOGO.push(
+  {id:"oab2",nome:"OAB – Exame de Ordem (2ª fase)",org:"FGV",uf:"BR",tipo:"Direito",al:["oab 2 fase","segunda fase oab","oab segunda fase","peca oab","pratico profissional"],
+   est:"Prova prático-profissional na área escolhida: uma peça e quatro questões discursivas, com consulta à legislação.",fonte:"https://oab.fgv.br",
+   m:[["Peça prático-profissional",0,TJ.pecas],["Questões discursivas",0,TJ.disc],["Direito material da área escolhida",0,["Leis e súmulas mais cobradas da área","Jurisprudência recente do STF e do STJ"]],["Direito processual da área",0,["Prazos, recursos e ações da área","Competência e cabimento"]]]},
+  {id:"magis",nome:"Magistratura e Ministério Público (estaduais)",org:"Banca do edital",uf:"",tipo:"Direito",gen:true,al:["magistratura","juiz","juiza","promotor","promotoria","ministerio publico","mp estadual","tj juiz"],
+   est:"Prova objetiva, provas discursivas e práticas (sentenças ou peças), oral e títulos. As matérias variam por tribunal ou MP; confira o edital.",fonte:"",
+   m:[["Direito Constitucional",0,T.const],["Direito Civil",0,TJ.civ],["Direito Processual Civil",0,TJ.pciv],["Direito Penal",0,T.penal],["Direito Processual Penal",0,T.ppenal],["Direito Administrativo",0,T.adm],["Direito Empresarial",0,TJ.emp],["Direito do Consumidor",0,TJ.cons],["ECA",0,TJ.eca],["Direito Eleitoral",0,TJ.eleit],["Direito Ambiental",0,TJ.amb],["Direito Tributário",0,TJ.trib],["Direitos Humanos",0,T.dh],["Formação humanística",0,TJ.hum]]},
+  {id:"delegado",nome:"Delegado de Polícia Civil",org:"Banca do edital",uf:"",tipo:"Direito",gen:true,al:["delegado","delegado de policia","delegado pc","delta"],
+   est:"Prova objetiva, discursiva ou peça, prova oral, testes físicos e títulos. Confira o edital do seu estado.",fonte:"",
+   m:[["Direito Penal",0,T.penal],["Direito Processual Penal",0,T.ppenal],["Legislação Penal Especial",0,T.legesp],["Direito Constitucional",0,T.const],["Direito Administrativo",0,T.adm],["Direitos Humanos",0,T.dh],["Criminologia",0,TJ.crim],["Medicina Legal",0,TJ.medleg],["Direito Civil",0,TJ.civ]]},
+  {id:"defensoria",nome:"Defensoria Pública",org:"Banca do edital",uf:"",tipo:"Direito",gen:true,al:["defensoria","defensor","defensor publico","dpe","dpu"],
+   est:"Prova objetiva, discursivas, peças e oral. Cada Defensoria define as matérias no edital.",fonte:"",
+   m:[["Direito Constitucional",0,T.const],["Direito Civil",0,TJ.civ],["Direito Processual Civil",0,TJ.pciv],["Direito Penal",0,T.penal],["Direito Processual Penal",0,T.ppenal],["Direitos Humanos",0,T.dh],["ECA",0,TJ.eca],["Direito do Consumidor",0,TJ.cons],["Direito Administrativo",0,T.adm],["Princípios institucionais da Defensoria",0,["Lei Complementar 80/1994","Funções institucionais e assistência jurídica gratuita"]]]},
+  {id:"procuradoria",nome:"Procuradorias e AGU",org:"Banca do edital",uf:"",tipo:"Direito",gen:true,al:["procurador","procuradoria","agu","advocacia geral da uniao","pge","pgm","procurador do estado","procurador municipal"],
+   est:"Prova objetiva, discursivas, peças e oral. Confira as matérias no edital do órgão.",fonte:"",
+   m:[["Direito Constitucional",0,T.const],["Direito Administrativo",0,T.adm],["Direito Tributário",0,TJ.trib],["Direito Financeiro",0,TJ.fin],["Direito Civil",0,TJ.civ],["Direito Processual Civil",0,TJ.pciv],["Direito Empresarial",0,TJ.emp],["Direito do Trabalho",0,TJ.trab],["Direito Previdenciário",0,TJ.prev],["Direito Ambiental",0,TJ.amb]]},
+  {id:"analista",nome:"Tribunais – Analista Judiciário (área judiciária)",org:"FCC, FGV, Cebraspe…",uf:"",tipo:"Direito",gen:true,al:["analista judiciario","analista tribunal","area judiciaria","oficial de justica"],
+   est:"Conhecimentos gerais e específicos de Direito. O edital de cada tribunal define o regimento interno e as áreas.",fonte:"",
+   m:[["Língua Portuguesa",0,T.portC],["Direito Constitucional",0,T.const],["Direito Administrativo",0,T.adm],["Direito Civil",0,TJ.civ],["Direito Processual Civil",0,TJ.pciv],["Direito Penal",0,T.penal],["Direito Processual Penal",0,T.ppenal],["Raciocínio Lógico",0,T.rlm],["Regimento interno e legislação do tribunal",0,["Regimento interno","Lei de organização judiciária"]]]},
+  {id:"receita",nome:"Receita Federal – Auditor/Analista",org:"Banca do edital",uf:"BR",tipo:"Concurso",gen:true,al:["receita federal","auditor fiscal","analista tributario","afrfb","rfb"],
+   est:"Prova objetiva de conhecimentos gerais e específicos e prova discursiva. Confira o edital mais recente.",fonte:"",
+   m:[["Língua Portuguesa",0,T.portC],["Raciocínio Lógico",0,T.rlm],["Direito Tributário",0,TJ.trib],["Direito Constitucional",0,T.const],["Direito Administrativo",0,T.adm],["Contabilidade Geral",0,T.contab],["Auditoria",0,["Normas de auditoria","Planejamento e amostragem","Papéis de trabalho e relatórios"]],["Comércio Internacional e Legislação Aduaneira",0,["Sistema de comércio exterior","Regimes aduaneiros","Tributos sobre o comércio exterior"]]]},
+  {id:"fiscal",nome:"Fiscal de tributos (estadual ou municipal)",org:"Banca do edital",uf:"",tipo:"Concurso",gen:true,al:["fiscal","icms","iss","auditor fiscal estadual","fiscal de tributos","sefaz"],
+   est:"Conteúdo comum de concursos fiscais (Sefaz e prefeituras). A legislação do ICMS ou do ISS vem no edital.",fonte:"",
+   m:[["Língua Portuguesa",0,T.portC],["Raciocínio Lógico",0,T.rlm],["Direito Tributário",0,TJ.trib],["Contabilidade Geral",0,T.contab],["Direito Constitucional",0,T.const],["Direito Administrativo",0,T.adm],["Legislação tributária do estado ou município",0,["ICMS ou ISS: fato gerador, base de cálculo e alíquotas","Obrigações acessórias"]]]},
+  {id:"penal",nome:"Polícia Penal",org:"Banca do edital",uf:"",tipo:"Concurso",gen:true,al:["policia penal","policial penal","agente penitenciario"],
+   est:"Conteúdo comum às Polícias Penais estaduais e federal. Confira o edital do seu estado.",fonte:"",
+   m:[["Língua Portuguesa",0,T.portC],["Raciocínio Lógico",0,T.rlm],["Informática",0,T.info],["Direito Constitucional",0,T.const],["Direito Administrativo",0,T.adm],["Direito Penal",0,T.penal],["Direito Processual Penal",0,T.ppenal],["Execução Penal (LEP)",0,TJ.lep],["Direitos Humanos",0,T.dh]]},
+  {id:"professor",nome:"Professor da rede pública",org:"Banca do edital",uf:"",tipo:"Concurso",gen:true,al:["professor","docente","magisterio","professor rede publica","peb"],
+   est:"Conhecimentos gerais, pedagógicos e específicos da disciplina. Confira o edital da sua rede.",fonte:"",
+   m:[["Língua Portuguesa",0,T.portC],["Conhecimentos pedagógicos",0,TJ.ped],["Legislação educacional",0,TJ.leged],["Conhecimentos específicos da disciplina",0,["Conteúdos da disciplina do cargo","Didática da disciplina"]]]},
+  {id:"saude",nome:"Saúde – Enfermagem e técnicos (EBSERH, prefeituras)",org:"Banca do edital",uf:"",tipo:"Concurso",gen:true,al:["ebserh","enfermagem","tecnico de enfermagem","enfermeiro","saude","sus"],
+   est:"Conhecimentos gerais, legislação do SUS e conhecimentos específicos do cargo.",fonte:"",
+   m:[["Língua Portuguesa",0,T.portC],["Raciocínio Lógico",0,T.rlm],["Legislação do SUS",0,TJ.sus],["Conhecimentos específicos do cargo",0,["Procedimentos e protocolos da área","Ética profissional","Biossegurança"]]]},
+  {id:"toefl",nome:"Inglês – TOEFL ou IELTS",org:"ETS / British Council",uf:"BR",tipo:"Idioma",al:["toefl","ielts","ingles","proficiencia ingles"],
+   est:"Quatro habilidades: Reading, Listening, Speaking e Writing.",fonte:"",m:IDI},
+  {id:"cambridge",nome:"Inglês – Cambridge (B2 First, C1 Advanced)",org:"Cambridge",uf:"BR",tipo:"Idioma",al:["cambridge","fce","cae","b2 first","c1 advanced"],
+   est:"Reading and Use of English, Writing, Listening e Speaking.",fonte:"",m:IDI.map(([n,q,t])=>[n.replace("Gramática","Use of English (gramática)"),q,t])},
+  {id:"delf",nome:"Francês – DELF ou DALF",org:"France Éducation International",uf:"BR",tipo:"Idioma",al:["delf","dalf","frances","proficiencia frances"],
+   est:"Compreensão oral, compreensão escrita, produção escrita e produção oral, cada uma valendo 25 pontos.",fonte:"",
+   m:[["Compreensão oral",0,TJ.idioma.listen],["Compreensão escrita",0,TJ.idioma.read],["Produção escrita",0,TJ.idioma.write],["Produção oral",0,TJ.idioma.speak],["Gramática",0,["Tempos verbais","Pronomes complemento","Subjuntivo","Conectores lógicos"]],["Vocabulário",0,TJ.idioma.voc]]},
+  {id:"dele",nome:"Espanhol – DELE",org:"Instituto Cervantes",uf:"BR",tipo:"Idioma",al:["dele","espanhol","proficiencia espanhol","cervantes"],
+   est:"Compreensão de leitura, compreensão auditiva, expressão escrita e expressão oral.",fonte:"",
+   m:[["Compreensão de leitura",0,TJ.idioma.read],["Compreensão auditiva",0,TJ.idioma.listen],["Expressão escrita",0,TJ.idioma.write],["Expressão oral",0,TJ.idioma.speak],["Gramática",0,["Tempos verbais","Subjuntivo","Pronomes e preposições","Falsos cognatos"]],["Vocabulário",0,TJ.idioma.voc]]}
+);
+{const oab=CATALOGO.find(e=>e.id==="oab");if(oab)oab.tipo="Direito";}
+// cursos de faculdade (disciplinas comuns do início do curso; a pessoa ajusta ao seu semestre)
+const CURSOS_FAC=[["direito-fac","Direito",["Introdução ao Estudo do Direito","Direito Constitucional","Direito Civil","Direito Penal","Teoria Geral do Processo","Filosofia do Direito"]],
+  ["medicina","Medicina",["Anatomia","Histologia","Fisiologia","Bioquímica","Embriologia","Saúde coletiva"]],
+  ["enfermagem","Enfermagem",["Anatomia","Fisiologia","Microbiologia","Farmacologia","Fundamentos de Enfermagem","Saúde coletiva"]],
+  ["engenharia","Engenharia",["Cálculo","Geometria Analítica e Álgebra Linear","Física","Química Geral","Programação","Desenho Técnico"]],
+  ["computacao","Computação e TI",["Algoritmos e Programação","Cálculo","Matemática Discreta","Estruturas de Dados","Arquitetura de Computadores","Banco de Dados"]],
+  ["administracao","Administração",["Teoria da Administração","Contabilidade","Economia","Matemática Financeira","Estatística","Marketing"]],
+  ["contabeis","Ciências Contábeis",["Contabilidade Introdutória","Contabilidade de Custos","Matemática Financeira","Direito Tributário","Economia","Estatística"]],
+  ["psicologia","Psicologia",["Psicologia do Desenvolvimento","Neuroanatomia","Teorias da Personalidade","Psicologia Social","Estatística","Metodologia Científica"]]]
+  .map(([id,nome,ms])=>({id,nome,tipo:"Curso",org:"",est:"",m:ms.map(n=>[n,0,[]])}));
+const TIPOS_DA_CATEGORIA={vestibular:["Vestibular","Seriado"],militar:["Militar"],direito:["Direito"],concurso:["Concurso"],idiomas:["Idioma"],faculdade:["Curso"]};
+function alvosDaCategoria(cat){const t=TIPOS_DA_CATEGORIA[cat];if(!t)return [];return CATALOGO.concat(CURSOS_FAC).filter(e=>t.includes(e.tipo)||(cat==="vestibular"&&e.id==="encceja"))}
+const alvoPorId=id=>id?CATALOGO.concat(CURSOS_FAC).find(e=>e.id===id)||null:null;
+// matérias que a prova cobra, com a prioridade tirada do número de questões (redação conta como alta: costuma eliminar)
+function materiasDoAlvo(e){
+  const max=Math.max(0,...e.m.map(x=>+x[1]||0));
+  return e.m.map(([nome,q])=>{q=+q||0;let prio="media";
+    if(/^Redação/.test(nome)&&e.tipo!=="Concurso")prio="alta";
+    else if(max&&q){prio=q>=max*.75?"alta":q<max*.4?"baixa":"media"}
+    return {id:uid(),nome,dif:3,prio,auto:e.id,questoes:q||0}});
+}
 const UFS={ac:"Acre",al:"Alagoas",ap:"Amapá",am:"Amazonas",ba:"Bahia",ce:"Ceará",df:"Distrito Federal",es:"Espírito Santo",go:"Goiás",ma:"Maranhão",mt:"Mato Grosso",ms:"Mato Grosso do Sul",mg:"Minas Gerais",pa:"Pará",pb:"Paraíba",pr:"Paraná",pe:"Pernambuco",pi:"Piauí",rj:"Rio de Janeiro",rn:"Rio Grande do Norte",rs:"Rio Grande do Sul",ro:"Rondônia",rr:"Roraima",sc:"Santa Catarina",sp:"São Paulo",se:"Sergipe",to:"Tocantins"};
 
 /* Interpretação do que a pessoa digitou: apelidos, números romanos/ordinais, erros de digitação e estado */
@@ -1688,15 +1788,21 @@ function renderWizard(){
       ${d.categoria==="colegio"?`<div class="grid2">
         <div class="field"><label for="q-serie">Série</label><select id="q-serie"><option value="">Selecione</option>${SERIES.map(s=>`<option ${s===d.serie?"selected":""}>${s}</option>`).join("")}</select></div>
         <div class="field"><label for="q-turno">Turno das aulas</label><select id="q-turno">${[["manha","Manhã"],["tarde","Tarde"],["integral","Integral"],["noite","Noite"]].map(([v,n])=>`<option value="${v}" ${v===d.turno?"selected":""}>${n}</option>`).join("")}</select></div></div>`:""}
-      ${["concurso","faculdade","idiomas","outro","vestibular"].includes(d.categoria)?`<div class="field"><label for="q-det">${{concurso:"Qual concurso? (ex.: EsPCEx, Polícia Federal)",faculdade:"Qual curso e período?",idiomas:"Qual idioma ou certificação?",outro:"Descreva o que você está estudando",vestibular:"Quais vestibulares? (opcional)"}[d.categoria]}</label><input type="text" id="q-det" value="${esc(d.detalhe)}" maxlength="80"></div>`:""}
+      ${alvosDaCategoria(d.categoria).length?`<div class="field"><span class="lbl">${{vestibular:"Qual prova?",militar:"Qual escola militar?",direito:"Qual prova ou carreira?",concurso:"Qual concurso?",idiomas:"Qual idioma ou certificação?",faculdade:"Qual curso?"}[d.categoria]}</span>
+        <div class="alvos" role="radiogroup">${alvosDaCategoria(d.categoria).map(e=>`<button type="button" class="alvo ${d.alvo===e.id?"on":""}" data-alvo="${e.id}" role="radio" aria-checked="${d.alvo===e.id}">${esc(e.nome)}</button>`).join("")}</div>
+        <span class="hint">A IA monta sua semana com as matérias que essa prova cobra, já com o peso de cada uma.</span></div>`:""}
+      ${["concurso","faculdade","idiomas","outro","vestibular","militar","direito"].includes(d.categoria)?`<div class="field"><label for="q-det">${alvosDaCategoria(d.categoria).length?(d.categoria==="faculdade"?"Outro curso, ou o período em que você está (opcional)":"Não está na lista? Escreva qual"):"Descreva o que você está estudando"}</label><input type="text" id="q-det" value="${esc(d.alvo?"":d.detalhe)}" maxlength="80" placeholder="${{concurso:"Ex.: Detran SP, Correios, Polícia Civil MG",militar:"Ex.: Bombeiro Militar, Sargento da Marinha",direito:"Ex.: Cartórios, Procurador do Município",vestibular:"Ex.: UFRGS, UEL, Medicina na Unifesp",idiomas:"Ex.: Alemão Goethe B1, Italiano",faculdade:"Ex.: Arquitetura, 3º período",outro:"Ex.: programação web, piano, certificação de TI"}[d.categoria]||""}" autocomplete="off">
+        <div id="q-det-sug" class="sugs" style="margin-top:6px"></div></div>`:""}
       <div class="field"><span class="lbl">Você tem uma prova ou meta com data marcada?</span>
         <div class="seg" role="group"><button type="button" data-prova="1" class="${d.temProva?"on":""}">Sim</button><button type="button" data-prova="0" class="${d.temProva?"":"on"}">Não, quero estudar com constância</button></div></div>
       ${d.temProva?`<div class="grid2"><div class="field"><label for="q-np">Nome da prova</label><input type="text" id="q-np" value="${esc(d.nomeProva)}" placeholder="Ex.: prova bimestral, ENEM, EsPCEx"></div>
         <div class="field"><label for="q-data">Data</label><input type="date" id="q-data" value="${esc(d.dataProva)}"></div></div>`:""}
       <div class="field"><label for="q-per">Em que período você rende mais?</label><select id="q-per">${[["manha","Manhã"],["tarde","Tarde"],["noite","Noite"]].map(([v,n])=>`<option value="${v}" ${v===d.periodo?"selected":""}>${n}</option>`).join("")}</select></div>`;
   }else if(st===1){
-    const sg=sugestoes(d).filter(s=>!d.materias.some(m=>norm(m.nome)===norm(s)));
-    corpo=`
+    const sg=sugestoes(d).filter(s=>!d.materias.some(m=>norm(m.nome)===norm(s))),al=alvoPorId(d.alvo);
+    corpo=`${al?`<div class="alvo-info"><b>${ico("spark")} Matérias de ${esc(al.nome)}</b><span class="small">${al.est?esc(al.est)+" ":""}A prioridade já vem pelo peso de cada matéria na prova. Ajuste a dificuldade de cada uma para a IA dividir melhor o seu tempo.${al.gen?" Este é o conteúdo comum a provas desse tipo: confira o seu edital.":""}</span></div>`
+      :d.detalhe&&iaEditalDisponivel()&&!S.editar?`<div class="alvo-info"><b>${ico("spark")} ${esc(d.detalhe)}</b><span class="small">${S.iaMats?"A IA está listando as matérias que costumam ser cobradas…":"A IA pode listar as matérias que costumam ser cobradas e o peso de cada uma."}</span>
+        ${S.iaMats?`<span class="spinner"></span>`:`<button class="btn sm" type="button" id="q-ia-mats">${ico("spark")}${d.materias.some(m=>m.auto==="ia")?"Sugerir de novo":"Montar as matérias com IA"}</button>`}</div>`:""}
       <div class="field"><label for="q-mat">Escreva suas matérias</label>
         <div class="row" style="flex-wrap:nowrap"><input type="text" id="q-mat" placeholder="Ex.: Cálculo II, Anatomia, Matemática…" maxlength="50"><button class="btn" id="q-add" type="button">${ico("plus")}Adicionar</button></div>
         <span class="hint">Digite qualquer matéria e aperte Enter, ou toque nas sugestões abaixo.</span></div>
@@ -1769,21 +1875,32 @@ function ligarWizard(){
     $$("[data-edpasso]").forEach(b=>b.onclick=()=>{lerWizard();S.step=+b.dataset.edpasso;renderWizard();scrollTo(0,0)})}
   f.addEventListener("submit",e=>{e.preventDefault();lerWizard();
     if(S.editar){if(S.step===1){S.step=2;renderWizard();scrollTo(0,0)}else salvarEdicao();return}
-    if(S.step<PASSOS.length-1){S.step++;renderWizard();scrollTo(0,0);return}
+    if(S.step===0)aplicarAlvo(d);
+    if(S.step<PASSOS.length-1){S.step++;renderWizard();scrollTo(0,0);if(S.step===1&&!d.materias.length&&d.detalhe&&!d.alvo&&iaEditalDisponivel()&&d.iaPedido!==d.detalhe)materiasComIA(d);return}
     const novo=!S.plano;S.perfil=clone(d);S.perfil.tema=temaAtual();Object.assign(P.dur,{foco:+d.bloco,curta:+d.pausa});if(!P.rodando)P.restante=pomoTotal();
     gravar("perfil",S.perfil,true);
     if(S.mode==="nuvem"&&S.pubOk&&!S.soc.perfis[S.uid])criarPerfilPub({nome:d.nome||"Estudante",bio:"",foto:"",objetivo:descObjetivo(d),desde:Date.now()});
+    usarAlvoComoEdital(d);
     S.view="semana";renderShell();gerar({novo});
   });
   $("#q-back").onclick=()=>{lerWizard();if(S.editar&&S.step===1){S.editar=false;renderShell();return}if(S.step===0){renderShell()}else{S.step--;renderWizard()}};
   if(S.step===0){
-    $$("[data-cat]",f).forEach(b=>b.onclick=()=>{lerWizard();d.categoria=b.dataset.cat;renderWizard()});
+    $$("[data-cat]",f).forEach(b=>b.onclick=()=>{lerWizard();if(d.categoria!==b.dataset.cat){d.alvo="";if(alvosDaCategoria(b.dataset.cat).length)d.detalhe=""}d.categoria=b.dataset.cat;renderWizard()});
+    const escolherAlvo=id=>{const e=alvoPorId(id);if(!e)return;lerWizard();if(d.alvo===id){d.alvo="";d.detalhe=""}else{d.alvo=id;d.detalhe=e.nome;if(!d.nomeProva||alvoPorId(d.alvoAnt||""))d.nomeProva=e.tipo==="Curso"?"":e.nome;d.alvoAnt=id}renderWizard()};
+    $$("[data-alvo]",f).forEach(b=>b.onclick=()=>escolherAlvo(b.dataset.alvo));
+    const det=$("#q-det"),sug=$("#q-det-sug");
+    if(det&&sug){const pinta=()=>{const q=det.value.trim();if(q.length<2){sug.innerHTML="";return}
+        const r=interpretar(q).slice(0,4).map(x=>x.e);
+        sug.innerHTML=r.length?`<span class="small muted" style="align-self:center">Você quis dizer:</span>`+r.map(e=>`<button type="button" class="sug" data-alvo-sug="${e.id}">${esc(e.nome)}</button>`).join(""):`<span class="small muted">Tudo bem: ${iaEditalDisponivel()?"a IA vai sugerir as matérias de":"no próximo passo você escreve as matérias de"} “${esc(q)}”.</span>`;
+        $$("[data-alvo-sug]",sug).forEach(b=>b.onclick=()=>{det.value="";const e=alvoPorId(b.dataset.alvoSug);if(e&&!alvosDaCategoria(d.categoria).includes(e)){const c=Object.keys(TIPOS_DA_CATEGORIA).find(k=>TIPOS_DA_CATEGORIA[k].includes(e.tipo));if(c)d.categoria=c}escolherAlvo(b.dataset.alvoSug)})};
+      det.oninput=pinta;if(det.value)pinta()}
     $$("[data-prova]",f).forEach(b=>b.onclick=()=>{lerWizard();d.temProva=b.dataset.prova==="1";renderWizard()});
     const sr=$("#q-serie");if(sr)sr.onchange=()=>{lerWizard()};
   }
   if(S.step===1){
     const add=nome=>{nome=(nome||"").trim();if(!nome||d.materias.some(m=>norm(m.nome)===norm(nome)))return;d.materias.push({id:uid(),nome,dif:3,prio:"media"});renderWizard();$("#q-mat").focus()};
     $("#q-add").onclick=()=>add($("#q-mat").value);
+    const iaB=$("#q-ia-mats");if(iaB)iaB.onclick=()=>materiasComIA(d,true);
     $("#q-mat").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();add(e.target.value)}});
     $$("[data-sug]",f).forEach(b=>b.onclick=()=>add(b.dataset.sug));
     $$(".mat",f).forEach(row=>{const m=d.materias.find(x=>x.id===row.dataset.id);
@@ -1801,10 +1918,42 @@ function ligarWizard(){
 }
 function refazerTriagem(){S.editar=false;S.step=0;S.draft=migrar(clone(S.perfil));renderWizard();scrollTo(0,0)}
 function abrirEditorEstudos(){S.draft=migrar(clone(S.perfil));S.step=1;S.editar=true;renderWizard();scrollTo(0,0)}
+// a prova escolhida na triagem vira a lista de tópicos (sem apagar um edital que a pessoa já usa)
+function usarAlvoComoEdital(d){
+  const e=alvoPorId(d.alvo);if(!e||e.tipo==="Curso")return;
+  const ed=S.edital,emUso=ed&&(ed.fonte!=="catalogo"||ed.materias.some(m=>m.topicos.some(t=>t.feito)));
+  if(ed&&ed.catalogoId===e.id){if(d.temProva&&d.dataProva&&!ed.dataProva){ed.dataProva=d.dataProva;gravar("edital",ed,true)}return}
+  if(emUso)return;
+  const novo=editalDoCatalogo(e);if(d.temProva&&d.dataProva)novo.dataProva=d.dataProva;S.edital=novo;gravar("edital",novo,true);
+}
+// coloca as matérias da prova escolhida (troca as que vieram de outra prova e mantém as que a pessoa escreveu)
+function aplicarAlvo(d){
+  const e=alvoPorId(d.alvo);if(!e||d.alvoAplicado===e.id&&d.materias.length)return;
+  const minhas=d.materias.filter(m=>!m.auto),novas=materiasDoAlvo(e).filter(m=>!minhas.some(x=>norm(x.nome)===norm(m.nome)));
+  d.materias=novas.concat(minhas);d.alvoAplicado=e.id;
+}
+// prova fora do catálogo: a IA lista as matérias que costumam cair e o peso de cada uma
+async function materiasComIA(d,forcar){
+  const alvo=(d.detalhe||"").trim();if(!alvo||S.iaMats||(!forcar&&d.iaPedido===alvo))return;
+  d.iaPedido=alvo;S.iaMats=true;if(S.step===1)renderWizard();
+  const cat=(CATEGORIAS.find(c=>c.k===d.categoria)||{}).n||"Estudos";
+  try{
+    const r=await iaJson(`Você é um coordenador pedagógico brasileiro. Liste as matérias (disciplinas) que a prova, concurso ou curso "${alvo}" (categoria: ${cat}) costuma cobrar no Brasil, do jeito que aparecem nos editais ou grades curriculares.
+Dê um peso de 1 a 5 para cada uma conforme a importância na prova (5 = cai muito ou elimina). Se for um curso ou estudo livre, liste as disciplinas centrais.
+Responda SOMENTE com JSON: {"materias":[{"nome":"Nome curto em português","peso":3}],"observacao":"1 frase dizendo de onde vem a lista e lembrando de conferir o edital"}
+Entre 4 e 14 matérias, sem repetir.`);
+    const lista=(r&&Array.isArray(r.materias)?r.materias:[]).map(x=>({nome:String(x&&x.nome||"").trim().slice(0,50),peso:Math.max(1,Math.min(5,+x.peso||3))})).filter(x=>x.nome).slice(0,14);
+    if(!lista.length)throw {code:"vazio"};
+    const minhas=d.materias.filter(m=>m.auto!=="ia");
+    d.materias=lista.filter(x=>!minhas.some(m=>norm(m.nome)===norm(x.nome))).map(x=>({id:uid(),nome:x.nome,dif:3,prio:x.peso>=4?"alta":x.peso<=2?"baixa":"media",auto:"ia"})).concat(minhas);
+    toast(r.observacao?String(r.observacao).slice(0,160):"Matérias sugeridas pela IA. Confira e ajuste.");
+  }catch(e){toast(e&&e.code==="vazio"?"A IA não encontrou as matérias. Escreva-as abaixo.":iaErroTxt(e)||"A IA não respondeu. Escreva as matérias abaixo.")}
+  S.iaMats=false;if(S.step===1&&$("#qform"))renderWizard();
+}
 function lerWizard(){
   const d=S.draft,v=id=>{const e=document.getElementById(id);return e?e.value:undefined};
   if(S.step===0){d.nome=(v("q-nome")||"").trim();if(v("q-serie")!==undefined)d.serie=v("q-serie");if(v("q-turno")!==undefined)d.turno=v("q-turno");
-    if(v("q-det")!==undefined)d.detalhe=v("q-det").trim();if(v("q-np")!==undefined)d.nomeProva=v("q-np").trim();if(v("q-data")!==undefined)d.dataProva=v("q-data");d.periodo=v("q-per")}
+    if(v("q-det")!==undefined){const t=v("q-det").trim();if(t){d.detalhe=t;d.alvo=""}else if(!d.alvo)d.detalhe=""}if(v("q-np")!==undefined)d.nomeProva=v("q-np").trim();if(v("q-data")!==undefined)d.dataProva=v("q-data");d.periodo=v("q-per")}
   if(S.step===2)DIAS.forEach(x=>{const t=v("t-"+x.k);if(t)d.inicio[x.k]=t});
   if(S.step===3){d.bloco=+v("q-bloco");d.pausa=+v("q-pausa");d.obs=v("q-obs");d.metodos=$$("[data-met]").filter(c=>c.checked).map(c=>c.dataset.met)}
 }
@@ -1822,7 +1971,10 @@ Observações do aluno: ${p.obs||"nenhuma"}`;
 }
 function montarPrompt(p,o){
   o=o||{};
-  const mats=p.materias.map(m=>`- ${m.nome}: dificuldade ${m.dif}/5, prioridade ${m.prio}`).join("\n");
+  const al=alvoPorId(p.alvo);
+  const mats=p.materias.map(m=>{const tp=topicosDoAlvo(p,m.nome);return `- ${m.nome}: dificuldade ${m.dif}/5, prioridade ${m.prio}${m.questoes?`, ${m.questoes} questões na prova`:""}${tp?`. Próximos tópicos: ${tp.slice(0,8).join("; ")}`:""}`}).join("\n");
+  const alvoTxt=al?`
+Objetivo: ${al.nome}${al.org?` (${al.org})`:""}${al.est?`. Como é a prova: ${al.est}`:""}${al.gen?" (conteúdo comum a provas desse tipo)":""}`:"";
   const dias=DIAS.map(x=>`- ${x.k} (${x.n}): ${(+p.horas[x.k]||0)}h disponíveis, começando às ${p.inicio[x.k]||"19:00"}`).join("\n");
   let provaTxt="";
   if(o.prova){const {ed,tri}=o.prova;
@@ -1839,7 +1991,7 @@ Regras extras: matérias com domínio baixo e muitas questões recebem mais temp
 ## Dados do aluno
 ${contextoAluno(p)}
 
-Matérias do dia a dia:
+${alvoTxt?alvoTxt.trim()+"\n\n":""}Matérias${al?" da prova":" do dia a dia"}:
 ${mats||"- nenhuma informada"}
 
 Disponibilidade por dia:
@@ -1853,7 +2005,7 @@ ${dias}${provaTxt}
 5. Não repita a mesma matéria em blocos seguidos, a não ser que só exista uma.
 6. Alterne os tipos: "teoria" (conteúdo novo), "exercícios" (questões e correção dos erros) e "revisão" (repetição espaçada do que foi visto 1 a 3 dias antes). Dificuldade 4–5 pede mais "exercícios".
 7. ${p.categoria==="colegio"?"Para aluno de colégio, reserve tempo para tarefas e trabalhos citados nas observações e mantenha a carga leve nos dias de aula.":"Se o aluno tem prova e algum dia do fim de semana tem 2h ou mais, inclua um bloco \"simulado\"."}
-8. Em cada "tarefa", escreva uma ação concreta e curta (até 110 caracteres) usando os métodos preferidos do aluno.
+8. Em cada "tarefa", escreva uma ação concreta e curta (até 110 caracteres) usando os métodos preferidos do aluno.${al?` Quando a matéria tiver "Próximos tópicos", cite um tópico específico, seguindo a ordem da lista e avançando ao longo da semana (teoria apresenta o tópico; exercícios e revisão voltam a ele). Dê mais tempo às matérias com mais questões na prova.${al.tipo==="Concurso"||al.tipo==="Direito"?" Prefira questões da banca do concurso nos blocos de exercícios.":""}`:""}
 9. Siga as observações do aluno quando não contradisserem a disponibilidade.
 
 ## Formato da resposta
@@ -1944,8 +2096,14 @@ function normalizarPlano(raw,nomesValidos){
 }
 
 /* ================= Algoritmo local (sem IA) ================= */
+// próximos tópicos de uma matéria da prova escolhida na triagem (pula os já marcados como estudados)
+function topicosDoAlvo(p,nome){
+  const e=alvoPorId(p&&p.alvo);if(!e)return null;
+  if(S.edital&&S.edital.catalogoId===e.id){const m=S.edital.materias.find(x=>norm(x.nome)===norm(nome));if(m){const t=m.topicos.filter(x=>!x.feito).map(x=>x.t);return t.length?t:null}}
+  const m=e.m.find(x=>norm(x[0])===norm(nome));return m&&m[2]&&m[2].length?m[2].slice():null;
+}
 function planoLocal(p,prova){
-  let mats=p.materias.map(m=>({nome:m.nome,dif:m.dif,peso:m.dif*(PRIO[m.prio]||1),tops:null}));
+  let mats=p.materias.map(m=>({nome:m.nome,dif:m.dif,peso:m.dif*(PRIO[m.prio]||1),tops:topicosDoAlvo(p,m.nome)}));
   if(prova){
     const {ed,tri}=prova,pct=tri.pct/100;
     const ex=ed.materias.filter(m=>!(tri.mats[m.id]||{}).fora).map(m=>{const dom=(tri.mats[m.id]||{dom:3}).dom;return {nome:m.nome,dif:6-dom,peso:(6-dom)*(1+(m.questoes||8)/20),tops:m.topicos.filter(t=>!t.feito).map(t=>t.t)}});
@@ -1998,9 +2156,10 @@ function telaCarregando(titulo,sub){$("#main").innerHTML=`<div class="page"><div
 async function pedirPlano(p,o){
   const nomes=p.materias.map(m=>m.nome).concat(o.prova?o.prova.ed.materias.map(m=>m.nome):[]).concat(["Simulado geral"]);
   let plano=null,aviso="";
-  if(S.sample){
+  if(iaEditalDisponivel()){
+    const onText=({text})=>{const e=$("#ld"),b=$("#ldp");if(e)e.textContent=`A IA está escrevendo o plano… (${text.length} caracteres)`;if(b)b.style.width=Math.min(95,8+text.length/40)+"%"};
     try{
-      const raw=await S.sample.json(montarPrompt(p,o),{modelTier:"default",cache:false,onText:({text})=>{const e=$("#ld"),b=$("#ldp");if(e)e.textContent=`A IA está escrevendo o plano… (${text.length} caracteres)`;if(b)b.style.width=Math.min(95,8+text.length/40)+"%"}});
+      const raw=await iaJson(montarPrompt(p,o),{onText});
       plano=normalizarPlano(raw,nomes);if(!plano)aviso="A resposta da IA veio incompleta; usei o algoritmo local.";
     }catch(e){aviso=e&&e.code==="not_granted"?"Você não autorizou o uso da IA; usei o algoritmo local.":e&&e.code==="rate_limited"?"Limite de uso da IA atingido; usei o algoritmo local.":"A IA não respondeu; usei o algoritmo local."}
   }
@@ -2009,7 +2168,7 @@ async function pedirPlano(p,o){
 }
 async function gerar(o){
   o=o||{};
-  telaCarregando(o.pedido?"Ajustando seu plano":"Montando seu plano",S.sample?"A IA está distribuindo suas matérias pela semana…":"Calculando a distribuição das matérias…");
+  telaCarregando(o.pedido?"Ajustando seu plano":"Montando seu plano",iaEditalDisponivel()?"A IA está distribuindo suas matérias pela semana…":"Calculando a distribuição das matérias…");
   let {plano,aviso}=await pedirPlano(S.perfil,{pedido:o.pedido,atual:o.pedido?S.plano:null,prova:S.plano&&S.plano.prova?provaCtx():null});
   if(!plano){
     if(o.pedido){toast(aviso||"O ajuste precisa da IA, que não está disponível aqui.");go("semana");return}
@@ -4660,7 +4819,7 @@ function renderEdital(){
         <div class="sugs">${["Pism 1","ENEM","EsPCEx","Fuvest","PAS UnB 1","ESA","Polícia Federal","PM MG","Banco do Brasil","OAB"].map(x=>`<button class="sug" type="button" data-pn="${esc(x)}">${esc(x)}</button>`).join("")}</div>
         <div id="ed-res" class="stack sm"></div>
         <details><summary>Ver todas as provas do catálogo (${CATALOGO.length})</summary>
-          <div class="stack sm" style="margin-top:12px">${["Vestibular","Seriado","Militar","Concurso","Outro"].map(tp=>`<div><div class="eyebrow" style="margin-bottom:6px">${tp==="Outro"?"Outros":tp==="Seriado"?"Vestibulares seriados":tp==="Militar"?"Escolas militares":tp+"s"}</div><div class="sugs">${CATALOGO.filter(c=>c.tipo===tp).map(c=>`<button class="sug" type="button" data-usar="${c.id}">${esc(c.nome)}</button>`).join("")}</div></div>`).join("")}</div></details>`}
+          <div class="stack sm" style="margin-top:12px">${["Vestibular","Seriado","Militar","Direito","Concurso","Idioma","Outro"].map(tp=>`<div><div class="eyebrow" style="margin-bottom:6px">${tp==="Outro"?"Outros":tp==="Seriado"?"Vestibulares seriados":tp==="Militar"?"Escolas militares":tp==="Direito"?"Direito":tp==="Idioma"?"Idiomas":tp+"s"}</div><div class="sugs">${CATALOGO.filter(c=>c.tipo===tp).map(c=>`<button class="sug" type="button" data-usar="${c.id}">${esc(c.nome)}</button>`).join("")}</div></div>`).join("")}</div></details>`}
     </div>
     ${iaEditalDisponivel()?"":`<p class="hint" style="margin-top:12px">Nesta versão, a leitura do edital é feita pelo próprio site, sem IA. Confira os tópicos depois de ler.</p>`}
   </div>`;
