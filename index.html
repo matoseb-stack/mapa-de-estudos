@@ -2749,9 +2749,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.7";
+const APP_VERSAO="3.8";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
-  {t:"Edital lido em duas etapas 🔎",d:"Primeiro a IA faz uma triagem rápida e os tópicos aparecem em segundos. Depois ela continua lendo com calma, por partes, e vai ajustando os tópicos e os resumos. Pode trocar de tela ou de aba: a leitura continua de onde parou."},
+  {t:"Edital lido em segundo plano 🔎",d:"Ao enviar o arquivo, a IA já começa sozinha: primeiro uma triagem rápida (os tópicos aparecem em segundos) e depois a leitura com calma, por partes, que vai ajustando os tópicos e os resumos. Pode ir para o Início ou qualquer outra tela: tudo continua de onde parou."},
   {t:"Tudo liberado 🎉",d:"O Logic Academy Pro saiu: todos os recursos estão liberados para todo mundo, sem plano e sem limite de perguntas à IA."},
   {t:"Janelinha do tempo no tablet ⏱️",d:"Com o cronômetro ou o pomodoro rodando, a janelinha com os minutos fica no canto da tela quando você vai para a tela inicial. Se você voltar ao site e ela tiver sumido, o primeiro toque já abre de novo."},
   {t:"A IA voltou ✨",d:"Mentoria, dicas, leitura de editais e montagem da semana funcionam de novo."},
@@ -5170,6 +5170,8 @@ async function lerArquivos(files){
 }
 // com uma prova já salva, a pessoa escolhe: juntar (ex.: uma ficha por matéria) ou substituir
 function escolherModo(analisar,resumo,nome){const info=$("#ed-info");const ia=iaEditalDisponivel();
+  if(!S.edital&&ia){S.editalModo="novo";analisar();return}
+  if(!info){S.editalModo="novo";toast("Arquivo lido. Começando a leitura do edital.");analisar();return}
   info.innerHTML=`<div class="stack sm"><div><b>${esc(nome||"Arquivo pronto")}</b><div class="small muted">${esc(resumo)}</div></div>
     ${S.edital?`<div class="small muted">Você já tem <b>${esc(S.edital.nome||"uma prova")}</b> salva. Quer juntar estes tópicos a ela (bom para fichas de cada matéria) ou começar uma prova nova?</div>
       <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn primary" type="button" data-modo="juntar">${ico("plus")}Juntar com a prova atual</button><button class="btn" type="button" data-modo="novo">${ico("spark")}Substituir pela nova</button></div>`
@@ -5197,24 +5199,33 @@ function edTelaOutro(ob){$("#ed-body").innerHTML=`<div class="empty-state stack"
 async function analisarTexto(texto,origem){
   if(!iaEditalDisponivel()){progressoEdital("Lendo o edital","Procurando o conteúdo programático e separando as matérias…",50);setTimeout(()=>lerSemIA(texto,origem),50);return}
   const modo=S.editalModo||"novo",base=modo==="juntar"&&S.edital?clone(S.edital):null;S.editalModo=null;
-  const job={id:uid(),uid:S.uid||"visitante",origem,texto,base,res:[],tent:[],n:edPartes(texto).length,rapido:null};
-  edJobSalvar(job);   // uma leitura nova substitui a anterior
-  progressoEdital("Triagem rápida com IA","A IA está achando as matérias e os tópicos principais…",8);
-  let r=null;
-  try{r=await iaJson(promptEditalRapido(trechoPrincipal(texto)),{modelos:ED_RAPIDO,tempo:45000,seguir:true,tier:"default",
+  // guardado antes de chamar a IA: se a pessoa sair da tela, trocar de aba ou recarregar, a triagem continua sozinha
+  const job={id:uid(),uid:S.uid||"visitante",origem,texto,base,fase:"rapida",tentRapida:0,res:[],tent:[],n:edPartes(texto).length,rapido:null};
+  edJobSalvar(job);
+  if($("#ed-body")){progressoEdital("Triagem rápida com IA","A IA está achando as matérias e os tópicos principais…",8);
+    const sb=$("#ed-s");if(sb)sb.insertAdjacentHTML("afterend",`<p class="small muted">Pode sair desta tela: a leitura continua sozinha e os tópicos aparecem em “Tópicos da prova”.</p>`)}
+  edRefinar();
+}
+// 1ª etapa: triagem rápida (prompt simples, modelo leve). Se a IA falhar duas vezes, usa a leitura do próprio site.
+async function edTriagemRapida(job){
+  let r=null,erro=null;
+  try{r=await iaJson(promptEditalRapido(trechoPrincipal(job.texto)),{modelos:ED_RAPIDO,tempo:45000,seguir:true,tier:"default",
     onText:({text})=>{const p=$("#ed-p");if(p)p.style.width=Math.min(92,8+text.length/30)+"%"}})}
-  catch(e){if(e&&e.code==="not_granted"){edJobSalvar(null);toast("Você não autorizou o uso da IA.");renderEdital();return}console.warn("triagem do edital",e);
-    if(e&&/ia_desativada|ia_appcheck/.test(e.code||"")){edJobSalvar(null);toast(iaErroTxt(e)+" Separei os tópicos sem IA.");lerSemIA(texto,origem);return}}
-  if(r&&r.tipo==="outro"&&!(Array.isArray(r.materias)&&r.materias.length)){edJobSalvar(null);if($("#ed-body"))edTelaOutro(r.observacao);else toast("Este arquivo não parece um edital nem uma ficha de prova.");return}
-  let ed=r?juntarEdital([r],{fonte:"edital",origem}):null;
-  if(!ed||!ed.materias.length){const loc=extrairLocal(texto);job.rapido=loc;ed=juntarEdital([loc],{fonte:"edital",origem});if(loc.prova&&loc.prova.nome)ed.nome=loc.prova.nome}
+  catch(e){erro=e;console.warn("triagem do edital",e)}
+  if(edJobAtual()!==job)return;   // outra leitura começou
+  if(erro&&erro.code==="not_granted"){edJobSalvar(null);toast("Você não autorizou o uso da IA.");if(S.view==="edital")renderEdital();return}
+  if(erro&&/ia_desativada|ia_appcheck/.test(erro.code||"")){edJobSalvar(null);toast(iaErroTxt(erro)+" Separei os tópicos sem IA.");lerSemIA(job.texto,job.origem);return}
+  if(erro&&erro.code!=="rate_limited"&&job.tentRapida<1){job.tentRapida++;job.esperaAte=Date.now()+4000;edJobSalvar(job);setTimeout(edRefinar,4200);return}   // tenta mais uma vez
+  if(r&&r.tipo==="outro"&&!(Array.isArray(r.materias)&&r.materias.length)){edJobSalvar(null);if(S.view==="edital"&&$("#ed-body"))edTelaOutro(r.observacao);else toast("O arquivo enviado não parece um edital nem uma ficha de prova. Nada foi adicionado.");return}
+  let ed=r?juntarEdital([r],{fonte:"edital",origem:job.origem}):null;
+  if(!ed||!ed.materias.length){const loc=extrairLocal(job.texto);job.rapido=loc;ed=juntarEdital([loc],{fonte:"edital",origem:job.origem});if(loc.prova&&loc.prova.nome)ed.nome=loc.prova.nome}
   else job.rapido=r;
-  ed.nome=ed.nome||nomeDoEdital(texto,origem);
-  if(base)ed=juntarCom(base,ed);
+  ed.nome=ed.nome||nomeDoEdital(job.texto,job.origem);
+  if(job.base)ed=juntarCom(job.base,ed);
   ed.leitura={id:job.id,feitas:0,total:job.n};
-  edJobSalvar(job);S.edital=ed;gravar("edital",ed,true);
-  toast(ed.materias.length?"Primeiros tópicos prontos. A IA continua lendo para ajustar.":"A IA está lendo o edital com calma; os tópicos aparecem aqui.");
-  if(S.view==="edital")go("topicos");else if(S.view==="topicos")renderTopicosKeepOpen();edRefinar();
+  job.fase="detalhe";job.esperaAte=0;job.base=job.base||null;edJobSalvar(job);S.edital=ed;gravar("edital",ed,true);
+  toast(ed.materias.length?"Primeiros tópicos prontos. A IA continua lendo para ajustar.":"A IA está lendo o edital com calma; os tópicos aparecem em “Tópicos da prova”.");
+  if(S.view==="edital")go("topicos");else if(S.view==="topicos")renderTopicosKeepOpen();
 }
 function edAplicar(job,final){
   const det=job.res.filter(Boolean),atual=S.edital||{};
@@ -5236,10 +5247,11 @@ function edAplicar(job,final){
   if(S.view==="topicos")renderTopicosKeepOpen();
 }
 async function edRefinar(){
-  const job=edJobAtual();if(!job||edRodando||!S.edital||!iaEditalDisponivel())return;
-  if(job.uid!==(S.uid||"visitante"))return;
+  const job=edJobAtual();if(!job||edRodando||!iaEditalDisponivel())return;
+  if(job.uid!==(S.uid||"visitante")||job.esperaAte>Date.now())return;
+  if(job.fase==="rapida"){edRodando=true;try{await edTriagemRapida(job)}finally{edRodando=false}if(edJobAtual()===job&&job.fase==="detalhe")setTimeout(edRefinar,300);return}
+  if(!S.edital)return;   // a prova ainda está carregando
   if(!S.edital.leitura||S.edital.leitura.id!==job.id){edJobSalvar(null);return}   // a prova mudou: leitura antiga descartada
-  if(job.esperaAte>Date.now())return;
   edRodando=true;
   try{const partes=edPartes(job.texto);let parar=false;
     for(let i=0;i<partes.length&&!parar;i++){
@@ -5261,7 +5273,7 @@ async function edRefinar(){
 }
 // continua sozinha: ao voltar para o site e de tempos em tempos
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")setTimeout(edRefinar,800)});
-setInterval(()=>{if(S.edital&&S.edital.leitura&&!edRodando)edRefinar()},6000);
+setInterval(()=>{if(!edRodando&&edJobAtual())edRefinar()},5000);
 // fotos do edital ou páginas de PDF escaneado: a IA lê as imagens (até 10 páginas)
 function imagemParaIA(fonte){return new Promise((ok,no)=>{const fim=c=>{const u=c.toDataURL("image/jpeg",.82);ok({mime:"image/jpeg",b64:u.split(",")[1]})};
   if(fonte instanceof HTMLCanvasElement)return fim(fonte);
@@ -5399,7 +5411,7 @@ function renderTopicos(){
   $("#tp-copiar").onclick=async()=>{const txt=topicosEmTexto(ed);try{await navigator.clipboard.writeText(txt);toast("Tópicos copiados no formato * **Tópico** (resumo).")}
     catch(e){const ta=document.createElement("textarea");ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");toast("Tópicos copiados.")}catch(er){toast("Não foi possível copiar.")}ta.remove()}};
   let conf=false;$("#tp-del").onclick=()=>{if(!conf){conf=true;$("#tp-del").textContent="Clique de novo para confirmar";$("#tp-del-c").textContent="Os tópicos e o progresso desta prova serão apagados.";return}
-    S.edital=null;if(S.mode==="nuvem")meuDoc("edital").delete().catch(()=>{});else delete VISITANTE_MEM.edital;
+    S.edital=null;edJobSalvar(null);if(S.mode==="nuvem")meuDoc("edital").delete().catch(()=>{});else delete VISITANTE_MEM.edital;
     if(S.plano&&S.plano.prova){delete S.plano.prova;gravar("plano",S.plano)}toast("Prova removida.");go("edital")};
 }
 function renderTopicosKeepOpen(){const abertos=$$("details.mat-acc").map(d=>d.open);const y=scrollY;renderTopicos();$$("details.mat-acc").forEach((d,i)=>d.open=!!abertos[i]);scrollTo(0,y);$$("[data-go=topicos] .badge").forEach(b=>b.textContent=progEdital()+"%")}
