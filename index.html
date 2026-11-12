@@ -688,6 +688,8 @@ html,body{overscroll-behavior:none;background:var(--bg)}
 .convite-card{display:flex;gap:12px;align-items:flex-start;margin-top:4px;padding:12px;border-radius:16px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));max-width:380px}
 .cc-ic{font-size:1.6rem;line-height:1}.cc-c{display:flex;flex-direction:column;gap:2px;min-width:0}.cc-c b{word-break:break-word}
 .cc-acoes{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px}.cc-ok{color:var(--ok,#16a34a);font-weight:700}
+.top>.chk{flex:0 0 auto}.tp-txt{line-height:1.45;min-width:0}.tp-n{font-weight:700}.tp-d{color:var(--muted)}
+.top.done .tp-n,.top.done .tp-d{text-decoration:line-through;opacity:.75}
 .ini-hero2{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:26px 26px;margin-bottom:18px;border-radius:24px;
   background:radial-gradient(120% 140% at 100% 0%,color-mix(in srgb,var(--accent) 28%,transparent),transparent 60%),linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--accent) 8%,var(--surface)));
   border:1px solid color-mix(in srgb,var(--accent) 25%,var(--line))}
@@ -1531,7 +1533,7 @@ function extrairEscolar(texto){
   // cada marcador continua nas linhas seguintes até a frase terminar (o PDF quebra as linhas da tabela)
   const PARA=/^(SD\s*\d|Sequ[êe]ncia|Material no|Fonte de|Consulta ao|Atividades\/|Livro did|-\s*Cap[íi]tulo|TEN\s|PROF|Professor)/i;
   const tops=blocos.map(b=>{let out="";for(const l of b.split("\n").map(x=>x.trim()).filter(Boolean)){if(out&&(PARA.test(l)||(/[.;:!?]$/.test(out)&&!/^[a-zà-ú]/.test(l)&&ini<0&&!/^Produ|^Estrat/.test(l))))break;out+=(out?" ":"")+l}return out.replace(/\s+/g," ").trim()})
-    .filter(x=>x.length>=4).flatMap(x=>x.length>170?x.split(/(?<=\.)\s+(?=[A-ZÁÉÍÓÚÂÊÔÃÕÇ])/):[x]).map(x=>x.replace(/[–\-]\s*$/,"").trim()).filter(x=>x.length>=4).map(x=>x.length>200?x.slice(0,197)+"…":x);
+    .filter(x=>x.length>=4).map(x=>x.replace(/[–\-]\s*$/,"").trim()).filter(x=>x.length>=4).map(x=>x.length>650?x.slice(0,647)+"…":x);
   const av=/(Avalia[çc][ãa]o[^\n]{0,40}\d{4})/i.exec(t),dt=/Data da aplica[çc][ãa]o[\s\S]{0,60}?(\d{2})\/(\d{2})\/(\d{4}|\d{2})\b/i.exec(t);if(dt&&dt[3].length===2)dt[3]="20"+dt[3];
   const disc=nome?nome.charAt(0)+nome.slice(1).toLowerCase().replace(/\b(de|da|do|e)\b/g,x=>x):"Conteúdo da prova";
   return {prova:{nome:[av?av[1].replace(/\s+/g," "):"",disc,serie.toLowerCase()].filter(Boolean).join(" · "),banca:"",dataProva:dt?`${dt[3]}-${dt[2]}-${dt[1]}`:"",cargo:serie},
@@ -2074,25 +2076,36 @@ const FORMATO_EDITAL=`{
   "tipo": "edital | ficha_escola | outro",
   "prova": {"nome": "", "banca": "", "dataProva": "AAAA-MM-DD ou vazio", "cargo": ""},
   "observacao": "",
-  "materias": [{"nome": "Matemática", "questoes": 20, "topicos": ["Funções: domínio, imagem, composta e inversa", "..."]}]
+  "materias": [{"nome": "Matemática", "questoes": 20, "topicos": [
+    {"topico": "Funções", "resumo": "domínio, imagem, função composta e inversa; leitura e construção de gráficos de funções afim e quadrática; resolução de problemas com variação de grandezas"},
+    {"topico": "...", "resumo": "..."}
+  ]}]
 }`;
 function promptEditalTrecho(txt,i,n){
-  return `Você está lendo a parte ${i+1} de ${n} de um documento com o conteúdo de uma prova. Pode ser um edital de concurso ou vestibular OU um documento escolar: ficha de orientação aos alunos (FOA), roteiro de estudos, orientação para avaliação parcial/bimestral/trimestral, lista de conteúdos de prova de colégio (inclusive Colégio Militar). Extraia SOMENTE o que aparece neste trecho:
-- dados da prova: nome, banca ou instituição/escola, data da prova (AAAA-MM-DD) e cargo/curso/série;
-- o conteúdo cobrado: cada disciplina e seus tópicos, na ordem em que aparecem.
+  return `Você está lendo a parte ${i+1} de ${n} de um documento com o conteúdo de uma prova. Pode ser um edital de concurso ou vestibular OU um documento escolar: ficha de orientação aos alunos (FOA), roteiro de estudos, orientação para avaliação parcial/bimestral/trimestral, lista de conteúdos de prova de colégio (inclusive Colégio Militar). Extraia SOMENTE o que aparece neste trecho.
 
-Regras:
-- Seja fiel ao texto. Não invente tópicos.
-- Agrupe subitens curtos num mesmo tópico (ex.: "Funções: domínio, imagem, composta e inversa"), com no máximo 160 caracteres por tópico.
+## Como pensar (siga estas etapas, nesta ordem)
+1. Análise por tópicos: varra o trecho inteiro e identifique as disciplinas e, dentro de cada uma, os TÓPICOS CENTRAIS — as unidades, eixos ou sequências didáticas (SDs) em que o conteúdo está organizado (ex.: "SD 1 – Barroco e Arcadismo", "Eixo: Natureza e Sociedade", "Funções", "Direito Administrativo – Atos administrativos"). Em tabelas de ficha escolar (colunas como "Sequência didática", "Detalhamento do objeto do conhecimento", "Habilidades", "Fonte de consulta"), cada linha/sequência didática é um tópico central.
+2. Especificações detalhadas: para cada tópico identificado, reúna tudo o que a fonte diz que será cobrado sobre ele — objetos de conhecimento, conteúdos, eixos temáticos, habilidades, competências, gêneros textuais, obras, parâmetros e exigências da prova — e escreva um resumo descritivo, fiel ao texto, em uma frase corrida (itens separados por vírgulas ou ponto e vírgula).
+3. Monte a resposta: cada tópico vira {"topico": "Nome do Tópico", "resumo": "resumo descritivo"}. Na tela isso aparece assim: * **Nome do Tópico** (resumo descritivo).
+
+## Regras do tópico e do resumo
+- "topico": nome curto e limpo (até 80 caracteres), sem marcadores, numeração de lista ou parênteses. Mantenha o rótulo da sequência didática quando existir (ex.: "SD 2 – Romantismo").
+- "resumo": de 1 a 3 frases, até 450 caracteres, sem parênteses externos e sem ponto final. Use as palavras da fonte; não invente conteúdo que não está no documento. Se a fonte só lista itens soltos, o resumo é a lista desses itens agrupados com sentido.
+- Não repita o nome do tópico dentro do resumo. Não ponha no resumo orientações de estudo (ler, refazer, revisar), material de consulta ou datas.
+- Agrupe subitens do mesmo assunto num único tópico. Prefira de 3 a 15 tópicos por disciplina.
+
+## Regras gerais
+- Dados da prova: nome, banca ou instituição/escola, data da prova (AAAA-MM-DD) e cargo/curso/série.
 - Informe o número de questões da disciplina se o trecho disser; senão use 0.
 - Se o trecho não tiver conteúdo cobrado, devolva "materias": [].
 - Ignore regras de inscrição, taxas, recursos, documentos e assinaturas.
-- Documento escolar: a disciplina costuma estar no título (ex.: "LÍNGUA PORTUGUESA DO 1º ANO DO ENSINO MÉDIO" → disciplina "Língua Portuguesa", cargo "1º ano do Ensino Médio"). Os tópicos são os "objetos de conhecimento", "conteúdos", itens com marcadores (•, -) ou linhas de tabelas como "Sequência didática / Detalhamento do objeto do conhecimento". Transforme cada marcador num tópico e, quando ajudar, comece pelo nome da unidade (ex.: "Barroco e Arcadismo: figuras de linguagem nos textos barrocos e árcades"). Não transforme em tópico a coluna "Fonte de consulta" nem as orientações de estudo (ler, refazer, revisar).
+- Documento escolar: a disciplina costuma estar no título (ex.: "LÍNGUA PORTUGUESA DO 1º ANO DO ENSINO MÉDIO" → disciplina "Língua Portuguesa", cargo "1º ano do Ensino Médio"). A coluna "Fonte de consulta" não é conteúdo da prova.
 - Nome da prova em documento escolar: avaliação + disciplina + série (ex.: "AP2 2026 · Língua Portuguesa · 1º ano EM"). Banca: a escola ou instituição (ex.: "Colégio Militar / DEPA – Exército Brasileiro").
 - Se houver várias datas de aplicação (uma por turma ou chamada), use a primeira em "dataProva" e cite todas em "observacao".
 - Em "observacao" resuma em até 300 caracteres as orientações úteis: duração, datas, material permitido e proibido e fonte de consulta (capítulos do livro, material do ambiente virtual).
 - NUNCA vire tópico ou disciplina: nome da escola/órgão (ex.: "Colégio Militar de Brasília", "Ministério da Defesa", "Exército Brasileiro"), lema da escola (ex.: "Jovem Casa de Velhas Tradições"), nomes de professores, cabeçalhos ("Orientações para estudo", "Material a ser trazido", "Não será permitido"), datas, duração e itens da fonte de consulta (caderno, slides, vídeos, livro, EBVirtual).
-- Pense no assunto de cada item: os tópicos devem ser conteúdos que caem na prova (ex.: "Artigo de opinião: características estruturais e discursivas"). Em Redação, o gênero textual estudado (artigo de opinião, crônica, editorial…) deve aparecer no tópico.
+- Em Redação, o gênero textual estudado (artigo de opinião, crônica, editorial…) deve aparecer no tópico.
 - Antes de tudo, diga em "tipo" o que é o documento: "edital", "ficha_escola" (orientação de prova da escola) ou "outro" (texto, artigo, apostila, lista de exercícios, prova já aplicada… que não diz o conteúdo cobrado). Se for "outro", devolva "materias": [] e explique em "observacao" do que se trata o arquivo.
 
 Responda SOMENTE com JSON válido neste formato:
@@ -2109,10 +2122,10 @@ function promptPorNome(nome,extra){
 Regras:
 - Use o seu conhecimento do edital oficial; não invente disciplinas. Se não conhecer a prova com segurança, devolva "materias": [] e explique em "observacao".
 - Em "referencia", diga qual edital/ano serviu de base. Em "confianca", use "alta", "media" ou "baixa".
-- Agrupe subitens curtos num mesmo tópico, com no máximo 160 caracteres por tópico, e informe o nº de questões por disciplina quando souber (senão 0).
+- Pense primeiro nos tópicos centrais de cada disciplina e, para cada um, escreva um resumo do que é cobrado (objetos de conhecimento, habilidades e exigências), sem parênteses externos e sem ponto final. Nome do tópico curto (até 80 caracteres); resumo de até 450 caracteres. Informe o nº de questões por disciplina quando souber (senão 0).
 
 Responda SOMENTE com JSON válido:
-{"prova":{"nome":"","banca":"","dataProva":"","cargo":""},"referencia":"","confianca":"media","observacao":"","materias":[{"nome":"","questoes":0,"topicos":[""]}]}`;
+{"prova":{"nome":"","banca":"","dataProva":"","cargo":""},"referencia":"","confianca":"media","observacao":"","materias":[{"nome":"","questoes":0,"topicos":[{"topico":"","resumo":""}]}]}`;
 }
 
 /* ================= Validação de planos ================= */
@@ -2706,8 +2719,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.3";
+const APP_VERSAO="3.4";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Editais e FOAs mais bem lidos 🔎",d:"A IA agora encontra os tópicos centrais e as sequências didáticas e escreve, para cada um, o que vai ser cobrado: **Tópico** (conteúdos, habilidades e exigências). Dá para copiar tudo nesse formato."},
   {t:"Tempo por cima no iPhone ⏱️",d:"Com o cronômetro ou o pomodoro ligado, toque no botão da janela por cima no quadro do tempo antes de sair do Safari: o tempo continua correndo numa janelinha por cima dos outros apps."},
   {t:"Notas compartilhadas ao vivo ⚡",d:"Quem está com a nota aberta se conecta direto (o aparelho do autor é a central): você vê o traço do colega enquanto ele escreve, quase sem atraso."},
   {t:"O app avisa que está aberto 🔔",d:"Fechou o quadro do tempo ou saiu do app? A notificação mostra os minutos estudados, quanto falta no pomodoro ou que a ligação continua ativa."},
@@ -5204,6 +5218,27 @@ async function buscarPorNome(nome,extra){
     salvarEdital(ed);
   }catch(e){toast(iaErroTxt(e)+" Tente de novo.");renderEdital()}
 }
+/* Tópico = nome limpo + resumo do que é cobrado. Aceita {topico,resumo}, o formato "* **Nome** (resumo)."
+   e textos como "Nome: resumo", "Nome – resumo" ou "Nome (resumo)". */
+function limparNomeTopico(x){return String(x||"").replace(/^\s*(?:[*•▪●◦-]+\s*)+/,"").replace(/^\s*\d{1,2}(?:\.\d{1,2})*\s*[.)]\s+/,"").replace(/\*\*/g,"").replace(/[:;,.\s–-]+$/,"").replace(/\s+/g," ").trim()}
+function limparResumo(x){let r=String(x||"").replace(/\s+/g," ").trim();if(/^\(.*\)\.?$/.test(r))r=r.replace(/^\(/,"").replace(/\)\.?$/,"");return r.replace(/[\s.;,]+$/,"").trim()}
+function dividirTopico(x){
+  if(x&&typeof x==="object"){const nome=limparNomeTopico(x.topico||x.t||x.nome||x.titulo||"");let res=limparResumo(x.resumo||x.d||x.detalhes||x.descricao||"");
+    if(!res&&nome)return dividirTopico(nome);return {t:nome.slice(0,120),d:res.slice(0,600)}}
+  const s=String(x||"").replace(/\s+/g," ").trim();if(!s)return {t:"",d:""};
+  let m=/^\s*(?:[*•-]\s*)?\*\*(.+?)\*\*\s*[:–-]?\s*\(?(.*?)\)?\.?\s*$/.exec(s);
+  if(m)return {t:limparNomeTopico(m[1]).slice(0,120),d:limparResumo(m[2]).slice(0,600)};
+  const s2=limparNomeTopico(s);
+  // rótulo de sequência didática, unidade ou eixo ("SD 2 – …", "Unidade 3: …"): fica no nome e o resto é separado
+  const rot=/^((?:SD|Sequ[êe]ncia(?:\s+did[áa]tica)?|Unidade|Eixo|M[óo]dulo|Cap[íi]tulo|Tema|Bloco)\s*\d+[A-Za-z]?\s*[–—:-]\s*)(.+)$/i.exec(s2);
+  if(rot){const q=dividirTopico(rot[2]);return {t:(rot[1].replace(/\s*[:-]\s*$/," – ").replace(/\s+/g," ")+q.t).replace(/\s+/g," ").slice(0,120),d:q.d}}
+  m=/^(.{3,90}?)\s*\((.{12,})\)\.?$/.exec(s2);if(m&&!/\(/.test(m[1]))return {t:limparNomeTopico(m[1]).slice(0,120),d:limparResumo(m[2]).slice(0,600)};
+  m=/^(.{3,80}?)\s*(?::|\s[–—]\s|\s-\s)\s*(.{8,})$/.exec(s2);if(m&&!/\d$/.test(m[1]))return {t:limparNomeTopico(m[1]).slice(0,120),d:limparResumo(m[2]).slice(0,600)};
+  return {t:s2.slice(0,200),d:""}}
+// para mostrar: tópicos antigos (só com o nome) também aparecem separados
+const partesTopico=tp=>tp.d?{t:tp.t,d:tp.d}:dividirTopico(tp.t);
+function topicoHtml(tp){const p=partesTopico(tp);return `<b class="tp-n">${esc(p.t)}</b>${p.d?` <span class="tp-d">(${esc(p.d)}).</span>`:""}`}
+function topicosEmTexto(ed){return (ed.materias||[]).map(m=>`## ${m.nome}${m.questoes?` (${m.questoes} questões)`:""}\n`+m.topicos.map(tp=>{const p=partesTopico(tp);return `* **${p.t}**${p.d?` (${p.d}).`:""}`}).join("\n")).join("\n\n")}
 function juntarEdital(partes,meta){
   const ed={nome:"",banca:"",dataProva:"",cargo:"",materias:[],...meta,criadoEm:new Date().toISOString()};const idx={};
   const obs=[];partes.forEach(r=>{if(!r||typeof r!=="object")return;const pv=r.prova||{};
@@ -5213,7 +5248,10 @@ function juntarEdital(partes,meta){
     (Array.isArray(r.materias)?r.materias:[]).forEach(m=>{if(!m||!m.nome)return;const k=norm(m.nome);
       let alvo=idx[k];if(!alvo){alvo={id:uid(),nome:String(m.nome).slice(0,60),questoes:0,topicos:[]};idx[k]=alvo;ed.materias.push(alvo)}
       if(+m.questoes>alvo.questoes)alvo.questoes=Math.round(+m.questoes);
-      (Array.isArray(m.topicos)?m.topicos:[]).forEach(t=>{t=String(t&&t.t||t||"").trim().slice(0,200);if(t&&!alvo.topicos.some(x=>norm(x.t)===norm(t)))alvo.topicos.push({id:uid(),t,feito:false})});
+      (Array.isArray(m.topicos)?m.topicos:[]).forEach(x=>{const p=dividirTopico(x);if(!p.t)return;
+        const ja=alvo.topicos.find(y=>norm(y.t)===norm(p.t));
+        if(ja){if(p.d&&!(ja.d||"").includes(p.d))ja.d=[ja.d,p.d].filter(Boolean).join("; ").slice(0,600);return}   // o mesmo tópico em duas partes do documento: junta os resumos
+        alvo.topicos.push(Object.assign({id:uid(),t:p.t,feito:false},p.d?{d:p.d}:{}))});
     })});
   ed.materias=ed.materias.filter(m=>m.topicos.length);
   if(obs.length&&!ed.orientacoes)ed.orientacoes=obs.join(" ").slice(0,700);
@@ -5221,7 +5259,7 @@ function juntarEdital(partes,meta){
 }
 function juntarComAtual(ed){const at=S.edital;if(!at)return ed;const out=clone(at);
   ed.materias.forEach(m=>{const x=out.materias.find(y=>norm(y.nome)===norm(m.nome));if(!x){out.materias.push(m);return}
-    m.topicos.forEach(t=>{if(!x.topicos.some(z=>norm(z.t)===norm(t.t)))x.topicos.push(t)});if(m.questoes>x.questoes)x.questoes=m.questoes});
+    m.topicos.forEach(t=>{const z=x.topicos.find(z=>norm(z.t)===norm(t.t));if(!z)x.topicos.push(t);else if(t.d&&!z.d)z.d=t.d});if(m.questoes>x.questoes)x.questoes=m.questoes});
   if(ed.orientacoes)out.orientacoes=[out.orientacoes,ed.orientacoes].filter(Boolean).join(" · ").slice(0,1400);
   if(ed.dataProva&&(!out.dataProva||ed.dataProva<out.dataProva))out.dataProva=ed.dataProva;
   if(out.tri)delete out.tri;return out}
@@ -5251,17 +5289,19 @@ function renderTopicos(){
       <details class="mat-acc" ${mi===0?"open":""}>
         <summary><div style="min-width:0"><div style="font-weight:600">${esc(m.nome)}</div><div class="small muted">${m.questoes?m.questoes+" questões · ":""}${f} de ${m.topicos.length} tópicos</div></div>
           <div class="prog"><i style="width:${m.topicos.length?f/m.topicos.length*100:0}%"></i></div><span class="mono small">${m.topicos.length?Math.round(f/m.topicos.length*100):0}%</span></summary>
-        <div class="tops">${m.topicos.map(t=>`<label class="top ${t.feito?"done":""}"><input class="chk" type="checkbox" data-top="${m.id}|${t.id}" ${t.feito?"checked":""}><span>${esc(t.t)}</span>${QB_POR_TOPICO[t.t]?`<button type="button" class="btn sm ghost qb-link" data-qtop="${esc(t.t)}" title="Praticar questões deste tópico">${ico("qbank")}${QB_POR_TOPICO[t.t]}</button>`:""}</label>`).join("")}
+        <div class="tops">${m.topicos.map(t=>`<label class="top ${t.feito?"done":""}"><input class="chk" type="checkbox" data-top="${m.id}|${t.id}" ${t.feito?"checked":""}><span class="tp-txt">${topicoHtml(t)}</span>${QB_POR_TOPICO[t.t]?`<button type="button" class="btn sm ghost qb-link" data-qtop="${esc(t.t)}" title="Praticar questões deste tópico">${ico("qbank")}${QB_POR_TOPICO[t.t]}</button>`:""}</label>`).join("")}
           <form class="row" data-addtop="${m.id}" style="padding-top:8px;flex-wrap:nowrap"><input type="text" placeholder="Adicionar tópico" maxlength="200" aria-label="Novo tópico em ${esc(m.nome)}"><button class="btn sm" type="submit">${ico("plus")}</button></form>
         </div>
       </details>`}).join("")}</div>
-    <div class="row" style="margin-top:20px"><button class="btn ghost danger sm" type="button" id="tp-del">Remover esta prova</button><span class="hint" id="tp-del-c"></span></div>
+    <div class="row" style="margin-top:20px;gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="tp-copiar">${ico("list")}Copiar tópicos e resumos</button><button class="btn ghost danger sm" type="button" id="tp-del">Remover esta prova</button><span class="hint" id="tp-del-c"></span></div>
   </div>`;
   $$("[data-top]").forEach(c=>c.addEventListener("change",()=>{const [mi,ti]=c.dataset.top.split("|");const m=ed.materias.find(x=>x.id===mi),t=m&&m.topicos.find(x=>x.id===ti);if(!t)return;t.feito=c.checked;t.feitoEm=c.checked?Date.now():0;setTimeout(atualizarBadgeDesafios,50);gravar("edital",ed);renderTopicosKeepOpen()}));
   $$("[data-addtop]").forEach(f=>f.addEventListener("submit",e=>{e.preventDefault();const i=f.querySelector("input"),v=i.value.trim();if(!v)return;ed.materias.find(x=>x.id===f.dataset.addtop).topicos.push({id:uid(),t:v,feito:false});gravar("edital",ed);renderTopicosKeepOpen()}));
   $$("[data-qtop]").forEach(b=>b.onclick=e=>{e.preventDefault();e.stopPropagation();const q=qbEstado();Object.assign(q.f,{area:"",m:"",t:b.dataset.qtop,ano:"",sit:"",busca:"",edital:false,nivel:0});
     const o=Object.entries(qbIndiceDe("").areas).flatMap(([a,x])=>x.topicos.map(t=>[a,...t])).find(t=>t[2]===b.dataset.qtop);if(o){q.f.area=o[0];q.f.m=o[1]}q.sel=null;q.lim=QB_POR_PAGINA;go("questoes")});
   $("#tp-tri").onclick=()=>{S.triProva=null;go("triagemProva")};
+  $("#tp-copiar").onclick=async()=>{const txt=topicosEmTexto(ed);try{await navigator.clipboard.writeText(txt);toast("Tópicos copiados no formato * **Tópico** (resumo).")}
+    catch(e){const ta=document.createElement("textarea");ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");toast("Tópicos copiados.")}catch(er){toast("Não foi possível copiar.")}ta.remove()}};
   let conf=false;$("#tp-del").onclick=()=>{if(!conf){conf=true;$("#tp-del").textContent="Clique de novo para confirmar";$("#tp-del-c").textContent="Os tópicos e o progresso desta prova serão apagados.";return}
     S.edital=null;if(S.mode==="nuvem")meuDoc("edital").delete().catch(()=>{});else delete VISITANTE_MEM.edital;
     if(S.plano&&S.plano.prova){delete S.plano.prova;gravar("plano",S.plano)}toast("Prova removida.");go("edital")};
