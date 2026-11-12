@@ -41,7 +41,9 @@
     box.addEventListener("click", e => {
       const b = e.target.closest("[data-ft]"); if (!b || !ultimo || box.dataset.arrastou === "1") return;
       const a = b.dataset.ft;
-      if (a === "fechar") { PREF.fechado = chaveDe(ultimo); salvar(); atualizar(ultimo); if (!PREF.semNotif) pedirNotificacao().then(() => { ultimaNotif = ""; notificar(); }); return; }
+      if (a === "fechar") { PREF.fechado = chaveDe(ultimo); salvar(); atualizar(ultimo);
+        if (ehIOS && !("Notification" in window) && !PREF.dicaInstalar) { PREF.dicaInstalar = 1; salvar(); avisar("No iPhone, as notificações só aparecem com o app na Tela de Início: toque em Compartilhar › Adicionar à Tela de Início. Para ver o tempo fora do Safari, use o botão da janela por cima."); }
+        if (!PREF.semNotif) pedirNotificacao().then(() => { ultimaNotif = ""; notificar(); }); return; }
       if (a === "alternar") { acoes.alternar(ultimo.tipo); return; }
       if (a === "pip") { abrirPip(); return; }
       if (a === "notif") { alternarNotif(); return; }
@@ -112,11 +114,13 @@
       const bp = box.querySelector('[data-ft="alternar"]'); bp.innerHTML = estado.rodando ? ICON.pause : ICON.play; bp.setAttribute("aria-label", estado.rodando ? "Pausar" : "Continuar");
       box.querySelector('[data-ft="pip"]').hidden = !pipPossivel();
       box.querySelector('[data-ft="notif"]').hidden = !("Notification" in window);
-      box.querySelector('[data-ft="notif"]').classList.toggle("on", !PREF.semNotif && Notification.permission === "granted");
+      box.querySelector('[data-ft="notif"]').classList.toggle("on", !PREF.semNotif && permitida());
       pill.querySelector(".ft2-pt").textContent = `${estado.tipo === "pomodoro" ? "🍅" : "⏱"} ${estado.resumo || estado.texto}${estado.rodando ? "" : " · pausado"}`;
       pill.title = "Toque para mostrar o tempo";
     }
     desenharPip(estado);
+    if (estado.ativo) { relPreparar(estado); relSincronizar(estado); }
+    else if (relVideo && relNaJanela()) { try { if (document.pictureInPictureElement) document.exitPictureInPicture(); else relVideo.webkitSetPresentationMode("inline"); } catch (er) {} relVideo.pause(); }
     notificar();
   }
 
@@ -124,8 +128,31 @@
      PC (Chrome/Edge): janela própria com botões. Celular e tablet: um vídeo feito com o desenho do tempo
      (o vídeo precisa ter imagem antes de pedir a janela, senão o aparelho recusa). */
   let pipWin = null, pipVideo = null, pipCanvas = null, CH = null;
-  const pipPossivel = () => "documentPictureInPicture" in window || (!!HTMLCanvasElement.prototype.captureStream && (!!document.pictureInPictureEnabled || !!HTMLVideoElement.prototype.webkitSetPresentationMode));
+  const pipPossivel = () => "documentPictureInPicture" in window || !!document.pictureInPictureEnabled || !!HTMLVideoElement.prototype.webkitSetPresentationMode;
   const estadoPip = () => ultimo || { ativo: false };
+  /* relógio em vídeo (iPhone, iPad e Android): um vídeo de verdade com o tempo andando. Ele continua tocando na janela
+     por cima mesmo quando a pessoa sai do navegador e o site fica parado. O site só pula para o segundo certo. */
+  const REL = { cronometro: "midia/relogio-cronometro.mp4", pomodoro: "midia/relogio-pomodoro.mp4", maxC: 14400, maxP: 7200 };
+  let relVideo = null, relTipo = "";
+  const ehIOS = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Mac/.test(navigator.userAgent));
+  function relSegundo(e) {
+    if (e.tipo === "pomodoro") { const falta = (e.restante != null ? e.restante : (e.fim ? e.fim - Date.now() : 0)) / 1000; return Math.max(0, Math.min(REL.maxP - 0.5, REL.maxP - falta)); }
+    const ms = e.ms != null ? e.ms : (e.inicio ? Date.now() - e.inicio : 0); return Math.max(0, Math.min(REL.maxC - 0.5, ms / 1000));
+  }
+  function relPreparar(e) {                                   // carrega antes, para o toque abrir a janela na hora (exigência do iPhone)
+    if (!e || !e.ativo || "documentPictureInPicture" in window) return;
+    if (!relVideo) { relVideo = document.createElement("video"); relVideo.muted = true; relVideo.playsInline = true; relVideo.preload = "auto";
+      relVideo.setAttribute("playsinline", ""); relVideo.setAttribute("webkit-playsinline", ""); relVideo.setAttribute("muted", "");
+      relVideo.style.cssText = "position:fixed;width:2px;height:2px;opacity:.01;pointer-events:none;bottom:0;left:0;z-index:-1";
+      document.body.appendChild(relVideo); }
+    if (relTipo !== e.tipo) { relTipo = e.tipo; relVideo.src = REL[e.tipo] || REL.cronometro; try { relVideo.load(); } catch (er) {} }
+  }
+  function relSincronizar(e) {
+    if (!relVideo || !e.ativo || relTipo !== e.tipo || relVideo.readyState < 1) return;
+    const alvo = relSegundo(e); if (Math.abs((relVideo.currentTime || 0) - alvo) > 1.5) try { relVideo.currentTime = alvo; } catch (er) {}
+    if (e.rodando && relVideo.paused) relVideo.play().catch(() => {}); else if (!e.rodando && !relVideo.paused) relVideo.pause();
+  }
+  const relNaJanela = () => relVideo && (document.pictureInPictureElement === relVideo || relVideo.webkitPresentationMode === "picture-in-picture");
   async function abrirPip(auto) {
     try {
       if ("documentPictureInPicture" in window) {
@@ -138,6 +165,19 @@
         w.document.getElementById("a").onclick = () => { if (ultimo && ultimo.ativo) acoes.alternar(ultimo.tipo); };
         w.addEventListener("pagehide", () => { pipWin = null; });
         desenharPip(estadoPip()); return;
+      }
+      const e0 = estadoPip();
+      if (e0.ativo) {
+        relPreparar(e0);
+        if (relNaJanela()) { if (!auto) { if (document.pictureInPictureElement) await document.exitPictureInPicture(); else relVideo.webkitSetPresentationMode("inline"); } return; }
+        try { relVideo.currentTime = relSegundo(e0); } catch (er) {}
+        const tocar = relVideo.play(); if (tocar && tocar.catch) tocar.catch(() => {});
+        if (!e0.rodando) setTimeout(() => relVideo.pause(), 300);
+        if (relVideo.webkitSupportsPresentationMode && relVideo.webkitSupportsPresentationMode("picture-in-picture") && (ehIOS || !relVideo.requestPictureInPicture)) relVideo.webkitSetPresentationMode("picture-in-picture");
+        else if (relVideo.requestPictureInPicture) { if (relVideo.readyState < 1) await new Promise(ok => { relVideo.addEventListener("loadedmetadata", ok, { once: true }); setTimeout(ok, 2500); }); await relVideo.requestPictureInPicture(); }
+        else throw new Error("sem pip");
+        if (ehIOS && !auto && !PREF.dicaIOS) { PREF.dicaIOS = 1; salvar(); avisar("Pronto! Agora pode sair do Safari: o tempo continua correndo na janelinha por cima."); }
+        return;
       }
       if (document.pictureInPictureElement === pipVideo && pipVideo) { if (!auto) await document.exitPictureInPicture(); return; }
       if (!pipCanvas) { pipCanvas = document.createElement("canvas"); pipCanvas.width = 480; pipCanvas.height = 270; }
@@ -159,7 +199,7 @@
       if (pipVideo.requestPictureInPicture && document.pictureInPictureEnabled) await pipVideo.requestPictureInPicture();
       else if (pipVideo.webkitSupportsPresentationMode && pipVideo.webkitSupportsPresentationMode("picture-in-picture")) pipVideo.webkitSetPresentationMode("picture-in-picture");
       else throw new Error("sem pip");
-    } catch (e) { console.warn("pip", e); if (!auto) avisar("Este aparelho não deixou abrir a janela por cima. Mesmo assim, ao sair do app, os minutos aparecem na notificação."); }
+    } catch (e) { console.warn("pip", e); if (!auto) avisar(ehIOS ? "O iPhone não deixou abrir a janela por cima. Confira em Ajustes › Geral › Imagem em Imagem se ela está ligada e tente de novo." : "Este aparelho não deixou abrir a janela por cima. Mesmo assim, ao sair do app, os minutos aparecem na notificação."); }
   }
   function desenharPip(e) {
     if (pipWin && !pipWin.closed) {
@@ -190,15 +230,16 @@
   /* ---------- notificação "o app está aberto": aparece sozinha ao fechar o quadro ou ao sair do app ----------
      No Android o próprio sistema conta o tempo na notificação (horário de início ou de fim), mesmo com o app pausado. */
   let ultimaNotif = "", ultimaVez = 0;
+  const permitida = () => "Notification" in window && window.Notification.permission === "granted";
   async function pedirNotificacao() {
-    if (!("Notification" in window) || Notification.permission !== "default") return Notification && Notification.permission === "granted";
+    if (!("Notification" in window) || window.Notification.permission !== "default") return permitida();
     try { const p = await Notification.requestPermission(); if (p === "granted") { try { if (navigator.serviceWorker && !(await navigator.serviceWorker.getRegistration())) await navigator.serviceWorker.register("sw.js"); } catch (e) {} } return p === "granted"; } catch (e) { return false; }
   }
   async function alternarNotif() {
     if (!("Notification" in window)) { avisar("Este navegador não mostra notificações."); return; }
-    if (Notification.permission === "granted" && !PREF.semNotif) { PREF.semNotif = true; salvar(); fecharNotif(); avisar("Notificação desligada."); if (ultimo) atualizar(ultimo); return; }
+    if (permitida() && !PREF.semNotif) { PREF.semNotif = true; salvar(); fecharNotif(); avisar("Notificação desligada."); if (ultimo) atualizar(ultimo); return; }
     PREF.semNotif = false; salvar();
-    if (!(await pedirNotificacao()) && Notification.permission !== "granted") { avisar("Libere as notificações do site nas configurações do navegador para ver os minutos na barra de notificações."); return; }
+    if (!(await pedirNotificacao()) && !permitida()) { avisar("Libere as notificações do site nas configurações do navegador para ver os minutos na barra de notificações."); return; }
     ultimaNotif = ""; if (ultimo) atualizar(ultimo); avisar("Pronto: ao fechar o quadro ou sair do app, os minutos ficam na notificação.");
   }
   const hhmm = t => new Date(t).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
@@ -210,7 +251,7 @@
     let titulo, corpo, ts;
     if (e.ativo) {
       titulo = `${e.tipo === "pomodoro" ? "🍅" : "⏱"} ${e.resumo || e.texto}${e.rodando ? "" : " · pausado"}`;
-      corpo = `Logic Academy aberto · ${e.tipo === "pomodoro" ? (e.rodando && e.fim ? "termina às " + hhmm(e.fim) : "pomodoro") : (e.rodando ? "contando seus minutos" : "cronômetro pausado")}${e.rotulo ? " · " + e.rotulo : ""}`;
+      corpo = `Logic Academy aberto · ${e.tipo === "pomodoro" ? (e.rodando && e.fim ? "termina às " + hhmm(e.fim) : "pomodoro") : (e.rodando ? "contando desde " + hhmm(e.inicio || Date.now()) : "cronômetro pausado")}${e.rotulo ? " · " + e.rotulo : ""}`;
       ts = e.tipo === "pomodoro" ? (e.rodando && e.fim ? e.fim : Date.now()) : (e.inicio || Date.now());
       if (CH) corpo += ` · 📞 ${CH.titulo}`;
     } else { titulo = `📞 ${CH.titulo}`; corpo = `Ligação ativa em segundo plano · ${minDesde(CH.desde)}${CH.mudo ? " · microfone desligado" : ""}`; ts = CH.desde || Date.now(); }

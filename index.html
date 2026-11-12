@@ -1118,7 +1118,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
 <script src="js/idiomas/conteudoFrances.js?v=2.9"></script>
 <script src="js/componentes/PatchNotesModal.js?v=2.4"></script>
-<script src="js/componentes/FloatingTimer.js?v=3.1"></script>
+<script src="js/componentes/FloatingTimer.js?v=3.2"></script>
 <script src="js/componentes/ExercicioIdioma.js?v=3.0"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
@@ -2444,9 +2444,9 @@ function atualizarFlutuante(){
   const minTxt=m=>m<60?`${m} min`:`${Math.floor(m/60)} h${m%60?` ${m%60} min`:""}`;
   if(pomoAtivo&&(P.rodando||!C.rodando)){const r=pomoRestante(),falta=Math.max(1,Math.ceil(r/60000));
     FT.atualizar({ativo:true,tipo:"pomodoro",texto:String(Math.floor(r/60000)).padStart(2,"0")+":"+String(Math.floor(r/1000)%60).padStart(2,"0"),rotulo:MODOS[P.modo]+(P.materia?" · "+P.materia:""),rodando:P.rodando,naTela:S.view==="pomodoro",alvoSel:"#pomo-t",sessao:P.ciclos+P.modo,
-      pct:Math.max(0,Math.min(1,1-r/pomoTotal())),resumo:(P.modo==="foco"?"Faltam ":"Pausa: faltam ")+minTxt(falta),fim:P.rodando?P.fimEm:0});return}
+      pct:Math.max(0,Math.min(1,1-r/pomoTotal())),resumo:(P.modo==="foco"?"Faltam ":"Pausa: faltam ")+minTxt(falta),fim:P.rodando?P.fimEm:0,restante:r});return}
   if(cronoAtivo){const ms=cronoMs();FT.atualizar({ativo:true,tipo:"cronometro",texto:fmtRelogio(ms),rotulo:"Cronômetro"+(C.materia?" · "+C.materia:"")+(C.meta?` · meta ${C.meta} min`:""),rodando:C.rodando,naTela:S.view==="cronometro",alvoSel:"#crono-t",sessao:C.sessao||"",
-      pct:C.meta?Math.min(1,ms/(C.meta*60000)):null,resumo:minTxt(Math.floor(ms/60000))+" estudando",inicio:Date.now()-ms});return}
+      pct:C.meta?Math.min(1,ms/(C.meta*60000)):null,resumo:minTxt(Math.floor(ms/60000))+" estudando",inicio:Date.now()-ms,ms});return}
   FT.atualizar({ativo:false});
 }
 if(window.LAComp&&LAComp.FloatingTimer)LAComp.FloatingTimer.configurar({
