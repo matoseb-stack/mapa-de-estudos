@@ -1120,7 +1120,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
 <script src="js/idiomas/conteudoFrances.js?v=2.9"></script>
 <script src="js/componentes/PatchNotesModal.js?v=2.4"></script>
-<script src="js/componentes/FloatingTimer.js?v=3.3"></script>
+<script src="js/componentes/FloatingTimer.js?v=3.4"></script>
 <script src="js/componentes/ExercicioIdioma.js?v=3.0"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
@@ -2721,8 +2721,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.5";
+const APP_VERSAO="3.6";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Janelinha do tempo no tablet ⏱️",d:"Com o cronômetro ou o pomodoro rodando, a janelinha com os minutos fica no canto da tela quando você vai para a tela inicial. Se você voltar ao site e ela tiver sumido, o primeiro toque já abre de novo."},
   {t:"A IA voltou ✨",d:"Mentoria, dicas, leitura de editais e montagem da semana funcionam de novo."},
   {t:"Tudo na Minha estante 📚",d:"As notas compartilhadas agora ficam na aba 👥 Compartilhadas da Minha estante, junto com os seus arquivos."},
   {t:"Quadradinho do tempo por cima ⏱️",d:"Ao começar o cronômetro ou o pomodoro, o tempo abre numa janelinha por cima de tudo. Ela continua contando quando você minimiza o navegador ou sai do app, e dá para aumentar ou diminuir."},
@@ -4633,7 +4634,7 @@ function renderTutorial(){
 // e ninguém vê o progresso dos outros. As telas antigas continuam no código, mas não aparecem nem abrem.
 const SO_CONVERSA=true,TELAS_SOCIAIS=new Set(["grupos","buscarGrupos","voz","chat","amigos","ranking"]);
 const NAV=[
-  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["estante","Minha estante","bookmark"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"],["pro","Logic Academy Pro","flame"]]],
+  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["estante","Minha estante","bookmark"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"]]],
   ["Prova",[["edital","Escanear edital","scan"],["topicos","Tópicos da prova","list"],["flashcards","Flashcards","cartas"]]],
   ["Conversas",[["mensagens","Mensagens","send"]]],
   ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"],["admin","Administração","lock"]]],

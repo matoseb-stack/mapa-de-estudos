@@ -45,7 +45,7 @@
         if (ehIOS && !("Notification" in window) && !PREF.dicaInstalar) { PREF.dicaInstalar = 1; salvar(); avisar("No iPhone, as notificações só aparecem com o app na Tela de Início: toque em Compartilhar › Adicionar à Tela de Início. Para ver o tempo fora do Safari, use o botão da janela por cima."); }
         if (!PREF.semNotif) pedirNotificacao().then(() => { ultimaNotif = ""; notificar(); }); return; }
       if (a === "alternar") { acoes.alternar(ultimo.tipo); return; }
-      if (a === "pip") { abrirPip(); return; }
+      if (a === "pip") { if (!pipAberta()) { PREF.semAutoAte = 0; salvar(); } abrirPip(); return; }
       if (a === "notif") { alternarNotif(); return; }
       acoes.abrir(ultimo.tipo);
     });
@@ -152,6 +152,7 @@
     if (relVideos[tipo]) return relVideos[tipo];
     const v = document.createElement("video"); v.muted = true; v.playsInline = true; v.preload = "metadata";
     v.setAttribute("playsinline", ""); v.setAttribute("webkit-playsinline", ""); v.setAttribute("muted", "");
+    v.setAttribute("autopictureinpicture", ""); try { v.autoPictureInPicture = true; } catch (er) {}   // o sistema pode abrir a janelinha sozinho ao sair
     v.style.cssText = "position:fixed;width:2px;height:2px;opacity:.01;pointer-events:none;bottom:0;left:0;z-index:-1";
     v.src = REL[tipo] || REL.cronometro; document.body.appendChild(v); return (relVideos[tipo] = v);
   }
@@ -189,7 +190,7 @@
       const e0 = estadoPip();
       if (e0.ativo) {
         relPreparar(e0);
-        if (relNaJanela()) { if (!auto) { if (document.pictureInPictureElement) await document.exitPictureInPicture(); else relVideo.webkitSetPresentationMode("inline"); } return; }
+        if (relNaJanela()) { if (!auto) { PREF.semAutoAte = Date.now() + 12 * 3600e3; salvar(); if (document.pictureInPictureElement) await document.exitPictureInPicture(); else relVideo.webkitSetPresentationMode("inline"); } return; }
         try { relVideo.currentTime = relSegundo(e0); } catch (er) {}
         const tocar = relVideo.play(); if (tocar && tocar.catch) tocar.catch(() => {});
         if (!e0.rodando) setTimeout(() => relVideo.pause(), 300);
@@ -281,16 +282,27 @@
   }
   async function fecharNotif() { try { const r = navigator.serviceWorker && await navigator.serviceWorker.getRegistration(); if (r) (await r.getNotifications({ tag: "la-tempo" })).forEach(n => n.close()); } catch (e) {} }
   function avisar(t) { if (acoes.toast) acoes.toast(t); }
-  document.addEventListener("visibilitychange", () => { ultimaNotif = ""; notificar(); if (document.visibilityState !== "visible" && (ultimo && ultimo.ativo && ultimo.rodando) && pipVideo && !document.pictureInPictureElement) abrirPip(true); });
+  document.addEventListener("visibilitychange", () => { ultimaNotif = ""; notificar();
+    if (document.visibilityState !== "visible" && ultimo && ultimo.ativo && ultimo.rodando && !pipAberta() && (PREF.semAutoAte || 0) < Date.now()) abrirPip(true); });
+  /* tablet e celular: o navegador só abre a janelinha depois de um toque. Então, sempre que a pessoa volta ao site com o
+     tempo rodando e a janelinha fechada (o sistema fechou, a página recarregou...), o primeiro toque já abre de novo. */
+  const pipAberta = () => (pipWin && !pipWin.closed) || relNaJanela() || (pipVideo && document.pictureInPictureElement === pipVideo);
+  let ultimaTentativa = 0;
+  function reabrirNoToque(ev) {
+    if (!ultimo || !ultimo.ativo || "documentPictureInPicture" in window || !pipPossivel()) return;
+    if ((PREF.semAutoAte || 0) > Date.now() || pipAberta() || Date.now() - ultimaTentativa < 4000) return;
+    if (ev && ev.target && ev.target.closest && ev.target.closest('[data-ft="pip"]')) return;   // o próprio botão já cuida
+    ultimaTentativa = Date.now(); abrirPip(true);
+  }
+  ["touchend", "pointerup", "keydown"].forEach(t => document.addEventListener(t, reabrirNoToque, { capture: true, passive: true }));
   setInterval(() => { if ((ultimo && ultimo.ativo) || CH) { if (pipCanvas) pintarCanvas(estadoPip()); notificar(); } }, 30000);
   try { navigator.mediaSession.setActionHandler("enterpictureinpicture", () => abrirPip(true)); } catch (e) {}
   function aoIniciar(e) {
     if (e) ultimo = e;
     if (!ultimo || !ultimo.ativo) return;
     pedirNotificacao();
-    if ((PREF.semAutoAte || 0) > Date.now() || !pipPossivel()) return;
-    if ((pipWin && !pipWin.closed) || relNaJanela()) return;
-    abrirPip(true);
+    if (!pipPossivel() || pipAberta()) return;
+    PREF.semAutoAte = 0; salvar(); ultimaTentativa = Date.now(); abrirPip(true);
   }
   // prepara os vídeos-relógio cedo nos aparelhos sem janela própria (só o começo do arquivo, alguns KB)
   if (!("documentPictureInPicture" in window) && (document.pictureInPictureEnabled || HTMLVideoElement.prototype.webkitSetPresentationMode))
