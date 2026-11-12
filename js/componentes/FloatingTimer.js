@@ -127,13 +127,34 @@
   /* ---------- janela por cima de outros apps ----------
      PC (Chrome/Edge): janela própria com botões. Celular e tablet: um vídeo feito com o desenho do tempo
      (o vídeo precisa ter imagem antes de pedir a janela, senão o aparelho recusa). */
-  let pipWin = null, pipVideo = null, pipCanvas = null, CH = null;
+  let pipWin = null, pipVideo = null, pipCanvas = null, CH = null, fechandoPip = false;
   const pipPossivel = () => "documentPictureInPicture" in window || !!document.pictureInPictureEnabled || !!HTMLVideoElement.prototype.webkitSetPresentationMode;
-  const estadoPip = () => ultimo || { ativo: false };
+  const dois = n => String(n).padStart(2, "0");
+  const relogio = (seg, comHora) => { seg = Math.max(0, Math.floor(seg)); const h = Math.floor(seg / 3600), m = Math.floor(seg / 60) % 60, s2 = seg % 60; return (h || comHora ? h + ":" + dois(m) : dois(Math.floor(seg / 60))) + ":" + dois(s2); };
+  const minTxt = m => m < 60 ? `${m} min` : `${Math.floor(m / 60)} h${m % 60 ? ` ${m % 60} min` : ""}`;
+  // recalcula o tempo a partir dos horários guardados (início, fim, quanto falta), não do último tique da página
+  function aoVivo(e) {
+    if (!e || !e.ativo) return e || { ativo: false };
+    const x = Object.assign({}, e);
+    if (e.tipo === "pomodoro") { const ms = e.rodando && e.fim ? Math.max(0, e.fim - Date.now()) : (e.restante != null ? e.restante : 0);
+      x.texto = relogio(Math.ceil(ms / 1000)); if (e.total) x.pct = Math.max(0, Math.min(1, 1 - ms / e.total));
+      x.resumo = (String(e.resumo || "").startsWith("Pausa") ? "Pausa: faltam " : "Faltam ") + minTxt(Math.max(1, Math.ceil(ms / 60000))); }
+    else { const ms = e.rodando && e.inicio ? Date.now() - e.inicio : (e.ms || 0); x.texto = relogio(ms / 1000, true); x.resumo = minTxt(Math.floor(ms / 60000)) + " estudando"; }
+    return x;
+  }
+  const estadoPip = () => aoVivo(ultimo || { ativo: false });
   /* relógio em vídeo (iPhone, iPad e Android): um vídeo de verdade com o tempo andando. Ele continua tocando na janela
      por cima mesmo quando a pessoa sai do navegador e o site fica parado. O site só pula para o segundo certo. */
   const REL = { cronometro: "midia/relogio-cronometro.mp4", pomodoro: "midia/relogio-pomodoro.mp4", maxC: 14400, maxP: 7200 };
   let relVideo = null, relTipo = "";
+  const relVideos = {};
+  function relElemento(tipo) {
+    if (relVideos[tipo]) return relVideos[tipo];
+    const v = document.createElement("video"); v.muted = true; v.playsInline = true; v.preload = "metadata";
+    v.setAttribute("playsinline", ""); v.setAttribute("webkit-playsinline", ""); v.setAttribute("muted", "");
+    v.style.cssText = "position:fixed;width:2px;height:2px;opacity:.01;pointer-events:none;bottom:0;left:0;z-index:-1";
+    v.src = REL[tipo] || REL.cronometro; document.body.appendChild(v); return (relVideos[tipo] = v);
+  }
   const ehIOS = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Mac/.test(navigator.userAgent));
   function relSegundo(e) {
     if (e.tipo === "pomodoro") { const falta = (e.restante != null ? e.restante : (e.fim ? e.fim - Date.now() : 0)) / 1000; return Math.max(0, Math.min(REL.maxP - 0.5, REL.maxP - falta)); }
@@ -141,11 +162,9 @@
   }
   function relPreparar(e) {                                   // carrega antes, para o toque abrir a janela na hora (exigência do iPhone)
     if (!e || !e.ativo || "documentPictureInPicture" in window) return;
-    if (!relVideo) { relVideo = document.createElement("video"); relVideo.muted = true; relVideo.playsInline = true; relVideo.preload = "auto";
-      relVideo.setAttribute("playsinline", ""); relVideo.setAttribute("webkit-playsinline", ""); relVideo.setAttribute("muted", "");
-      relVideo.style.cssText = "position:fixed;width:2px;height:2px;opacity:.01;pointer-events:none;bottom:0;left:0;z-index:-1";
-      document.body.appendChild(relVideo); }
-    if (relTipo !== e.tipo) { relTipo = e.tipo; relVideo.src = REL[e.tipo] || REL.cronometro; try { relVideo.load(); } catch (er) {} }
+    const v = relElemento(e.tipo === "pomodoro" ? "pomodoro" : "cronometro");
+    if (relVideo !== v) { const antigo = relVideo, naJanela = relNaJanela(); relVideo = v; relTipo = e.tipo;
+      if (antigo && naJanela) { try { if (document.pictureInPictureElement === antigo) v.requestPictureInPicture().catch(() => {}); } catch (er) {} } if (antigo) antigo.pause(); }
   }
   function relSincronizar(e) {
     if (!relVideo || !e.ativo || relTipo !== e.tipo || relVideo.readyState < 1) return;
@@ -156,14 +175,15 @@
   async function abrirPip(auto) {
     try {
       if ("documentPictureInPicture" in window) {
-        if (pipWin && !pipWin.closed) { if (!auto) { pipWin.close(); pipWin = null; } return; }
+        if (pipWin && !pipWin.closed) { if (!auto) { fechandoPip = true; pipWin.close(); pipWin = null; } return; }
         const w = await documentPictureInPicture.requestWindow({ width: 300, height: 170 }); pipWin = w;
         w.document.head.innerHTML = `<style>body{margin:0;font-family:system-ui,sans-serif;background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:100vh;user-select:none}
           .l{display:flex;align-items:center;gap:14px}b{font:600 42px/1 ui-monospace,monospace;letter-spacing:-1px}small{display:block;opacity:.7;font-size:12px;margin-bottom:6px}span{display:block;opacity:.85;font-size:13px;margin-top:6px}
           button{width:44px;height:44px;border-radius:50%;border:0;background:#22d3ee;color:#0f172a;cursor:pointer;display:grid;place-items:center}.p b{opacity:.6}#c{font-size:13px;opacity:.9;background:rgba(34,197,94,.18);padding:4px 10px;border-radius:999px}#c:empty{display:none}</style>`;
         w.document.body.innerHTML = `<div class="l"><div><small id="r"></small><b id="t"></b><span id="m"></span></div><button id="a" aria-label="Pausar ou continuar"></button></div><div id="c"></div>`;
         w.document.getElementById("a").onclick = () => { if (ultimo && ultimo.ativo) acoes.alternar(ultimo.tipo); };
-        w.addEventListener("pagehide", () => { pipWin = null; });
+        w.addEventListener("pagehide", () => { pipWin = null; if (!fechandoPip) { PREF.semAutoAte = Date.now() + 12 * 3600e3; salvar(); } fechandoPip = false; });
+        w.setInterval(() => desenharPip(estadoPip()), 500);
         desenharPip(estadoPip()); return;
       }
       const e0 = estadoPip();
@@ -245,7 +265,7 @@
   const hhmm = t => new Date(t).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
   async function notificar() {
     if (PREF.semNotif || !("Notification" in window) || Notification.permission !== "granted") return;
-    const e = ultimo || { ativo: false }, fora = document.visibilityState !== "visible", fechado = e.ativo && PREF.fechado === chaveDe(e);
+    const e = aoVivo(ultimo || { ativo: false }), fora = document.visibilityState !== "visible", fechado = e.ativo && PREF.fechado === chaveDe(e);
     const mostrar = (e.ativo && (fechado || fora)) || (CH && fora);
     if (!mostrar) { if (ultimaNotif) { ultimaNotif = ""; fecharNotif(); } return; }
     let titulo, corpo, ts;
@@ -264,8 +284,19 @@
   document.addEventListener("visibilitychange", () => { ultimaNotif = ""; notificar(); if (document.visibilityState !== "visible" && (ultimo && ultimo.ativo && ultimo.rodando) && pipVideo && !document.pictureInPictureElement) abrirPip(true); });
   setInterval(() => { if ((ultimo && ultimo.ativo) || CH) { if (pipCanvas) pintarCanvas(estadoPip()); notificar(); } }, 30000);
   try { navigator.mediaSession.setActionHandler("enterpictureinpicture", () => abrirPip(true)); } catch (e) {}
+  function aoIniciar(e) {
+    if (e) ultimo = e;
+    if (!ultimo || !ultimo.ativo) return;
+    pedirNotificacao();
+    if ((PREF.semAutoAte || 0) > Date.now() || !pipPossivel()) return;
+    if ((pipWin && !pipWin.closed) || relNaJanela()) return;
+    abrirPip(true);
+  }
+  // prepara os vídeos-relógio cedo nos aparelhos sem janela própria (só o começo do arquivo, alguns KB)
+  if (!("documentPictureInPicture" in window) && (document.pictureInPictureEnabled || HTMLVideoElement.prototype.webkitSetPresentationMode))
+    setTimeout(() => { try { relElemento("cronometro"); relElemento("pomodoro"); } catch (e) {} }, 2500);
   // a ligação informa aqui quando começa, muda e termina (para a janela por cima e a notificação)
   function chamada(info) { CH = info || null; if (!CH && !(ultimo && ultimo.ativo)) { fecharNotif(); ultimaNotif = ""; } desenharPip(estadoPip()); notificar(); }
 
-  (window.LAComp = window.LAComp || {}).FloatingTimer = { atualizar, chamada, abrirPip, pipPossivel, pedirNotificacao, configurar(a) { acoes = Object.assign(acoes, a || {}); } };
+  (window.LAComp = window.LAComp || {}).FloatingTimer = { atualizar, chamada, abrirPip, aoIniciar, pipPossivel, pedirNotificacao, configurar(a) { acoes = Object.assign(acoes, a || {}); } };
 })();

@@ -442,3 +442,7 @@ html.est-aberto .ft2-pill{top:calc(58px + env(safe-area-inset-top))}
 .est-tx.on{background:#ef4444;border-color:#ef4444;color:#fff}.est-tx.on .est-tx-p{display:inline-block;background:#fff}
 @media (max-width:420px){.est-tx-t{display:none}}
 .est-pop-info{padding:6px 12px 8px;line-height:1.35}
+
+.est-cat-comp{position:relative}
+.est-conv-n{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:#ef4444;color:#fff;font:700 .7rem/1 inherit;margin-left:2px}
+.est-aviso-conv{display:block;width:100%;text-align:left;margin:-4px 0 12px;padding:10px 14px;cursor:pointer;font:inherit;color:var(--fg);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}

@@ -1114,17 +1114,17 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=3.8">
+<link rel="stylesheet" href="css/componentes.css?v=3.9">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
 <script src="js/idiomas/conteudoFrances.js?v=2.9"></script>
 <script src="js/componentes/PatchNotesModal.js?v=2.4"></script>
-<script src="js/componentes/FloatingTimer.js?v=3.2"></script>
+<script src="js/componentes/FloatingTimer.js?v=3.3"></script>
 <script src="js/componentes/ExercicioIdioma.js?v=3.0"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
-<script src="js/componentes/Estante.js?v=3.8"></script>
+<script src="js/componentes/Estante.js?v=3.9"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
 <noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
@@ -2276,7 +2276,7 @@ const P={modo:"foco",dur:{foco:50,curta:10,longa:20},rodando:false,fimEm:0,resta
 const MODOS={foco:"Foco",curta:"Pausa curta",longa:"Pausa longa"};
 function pomoTotal(){return P.dur[P.modo]*60e3}
 function pomoRestante(){return P.rodando?Math.max(0,P.fimEm-Date.now()):P.restante}
-function iniciarPomo(auto){if(P.rodando)return;if(auto!==true)pararAlarme();P.rodando=true;P.fimEm=Date.now()+P.restante;P.iniciadoEm=Date.now();clearInterval(P.tick);P.tick=setInterval(tickPomo,250);somPreparar();agendarAlarme(P.restante);pedirNotificacao();tickPomo();salvarPomoLocal();publicarRanking()}
+function iniciarPomo(auto){if(P.rodando)return;if(auto!==true)pararAlarme();P.rodando=true;P.fimEm=Date.now()+P.restante;P.iniciadoEm=Date.now();clearInterval(P.tick);P.tick=setInterval(tickPomo,250);somPreparar();agendarAlarme(P.restante);pedirNotificacao();tickPomo();salvarPomoLocal();publicarRanking();if(auto!==true)flutuanteAoIniciar()}
 function pausarPomo(){if(!P.rodando)return;cancelarAlarmeAgendado();P.restante=pomoRestante();if(P.modo==="foco")P.acumulado+=Date.now()-P.iniciadoEm;P.rodando=false;clearInterval(P.tick);tickPomo();salvarPomoLocal();publicarRanking()}
 // o pomodoro em andamento fica guardado neste aparelho, para não sumir ao fechar e reabrir o app
 const pomoChave=()=>"la_pomo_"+(S.uid||"local");
@@ -2414,7 +2414,7 @@ function cronoMs(){return C.acum+(C.rodando?Date.now()-C.inicio:0)}
 function salvarCronoLocal(){if(S.mode!=="nuvem")return;try{localStorage.setItem("mapa_crono_"+(S.uid||"local"),JSON.stringify({rodando:C.rodando,inicio:C.inicio,acum:C.acum,materia:C.materia,meta:C.meta||0,metaAvisada:!!C.metaAvisada,sessao:C.sessao||0,confirmado:C.confirmado||0,bloco:C.bloco||null,blocoMin:C.blocoMin||0}))}catch(e){}}
 function carregarCrono(){if(S.mode!=="nuvem")return;try{const d=JSON.parse(localStorage.getItem("mapa_crono_"+(S.uid||"local"))||"null");if(d){Object.assign(C,d);if(C.rodando){clearInterval(C.tick);C.tick=setInterval(tickCrono,500)}}}catch(e){}}
 function fmtRelogio(ms){const t=Math.floor(ms/1000),h=Math.floor(t/3600),m=Math.floor(t/60)%60,sg=t%60;return String(h).padStart(2,"0")+":"+String(m).padStart(2,"0")+":"+String(sg).padStart(2,"0")}
-function iniciarCrono(){if(C.rodando)return;pararAlarme();if(cronoMs()===0){C.sessao=Date.now();C.metaAvisada=false}C.rodando=true;C.regrasEm=0;C.inicio=Date.now();C.confirmado=Date.now();clearInterval(C.tick);C.tick=setInterval(tickCrono,500);salvarCronoLocal();tickCrono();publicarRanking()}
+function iniciarCrono(){if(C.rodando)return;pararAlarme();if(cronoMs()===0){C.sessao=Date.now();C.metaAvisada=false}C.rodando=true;C.regrasEm=0;C.inicio=Date.now();C.confirmado=Date.now();clearInterval(C.tick);C.tick=setInterval(tickCrono,500);salvarCronoLocal();tickCrono();publicarRanking();flutuanteAoIniciar()}
 function pausarCrono(){if(!C.rodando)return;C.acum+=Date.now()-C.inicio;C.rodando=false;clearInterval(C.tick);salvarCronoLocal();tickCrono();publicarRanking()}
 function zerarCrono(){C.rodando=false;C.acum=0;C.inicio=0;C.metaAvisada=false;clearInterval(C.tick);salvarCronoLocal();tickCrono()}
 function finalizarCrono(){const ms=cronoMs();const min=ms/60000;
@@ -2450,6 +2450,8 @@ async function verificarRegrasCrono(){
 }
 const modoTeste=()=>/github\.io$/.test(location.hostname)||/[?&]teste=1\b/.test(location.search)||location.hostname==="localhost"||location.hostname==="127.0.0.1";
 /* ---- Mini-janela flutuante (js/componentes/FloatingTimer.js) ---- */
+// ao começar a estudar (toque num botão), o quadradinho com o tempo já abre por cima de tudo
+function flutuanteAoIniciar(){const FT=window.LAComp&&LAComp.FloatingTimer;if(!FT||!FT.aoIniciar)return;if(navigator.userActivation&&!navigator.userActivation.isActive)return;atualizarFlutuante();FT.aoIniciar()}
 function atualizarFlutuante(){
   const FT=window.LAComp&&LAComp.FloatingTimer;if(!FT)return;
   if(!$("#shell")){FT.atualizar({ativo:false});return}
@@ -2457,7 +2459,7 @@ function atualizarFlutuante(){
   const minTxt=m=>m<60?`${m} min`:`${Math.floor(m/60)} h${m%60?` ${m%60} min`:""}`;
   if(pomoAtivo&&(P.rodando||!C.rodando)){const r=pomoRestante(),falta=Math.max(1,Math.ceil(r/60000));
     FT.atualizar({ativo:true,tipo:"pomodoro",texto:String(Math.floor(r/60000)).padStart(2,"0")+":"+String(Math.floor(r/1000)%60).padStart(2,"0"),rotulo:MODOS[P.modo]+(P.materia?" · "+P.materia:""),rodando:P.rodando,naTela:S.view==="pomodoro",alvoSel:"#pomo-t",sessao:P.ciclos+P.modo,
-      pct:Math.max(0,Math.min(1,1-r/pomoTotal())),resumo:(P.modo==="foco"?"Faltam ":"Pausa: faltam ")+minTxt(falta),fim:P.rodando?P.fimEm:0,restante:r});return}
+      pct:Math.max(0,Math.min(1,1-r/pomoTotal())),resumo:(P.modo==="foco"?"Faltam ":"Pausa: faltam ")+minTxt(falta),fim:P.rodando?P.fimEm:0,restante:r,total:pomoTotal()});return}
   if(cronoAtivo){const ms=cronoMs();FT.atualizar({ativo:true,tipo:"cronometro",texto:fmtRelogio(ms),rotulo:"Cronômetro"+(C.materia?" · "+C.materia:"")+(C.meta?` · meta ${C.meta} min`:""),rodando:C.rodando,naTela:S.view==="cronometro",alvoSel:"#crono-t",sessao:C.sessao||"",
       pct:C.meta?Math.min(1,ms/(C.meta*60000)):null,resumo:minTxt(Math.floor(ms/60000))+" estudando",inicio:Date.now()-ms,ms});return}
   FT.atualizar({ativo:false});
@@ -2554,7 +2556,7 @@ Object.defineProperty(window,"LAService",{configurable:true,get(){
 /* ================= Minha estante (js/componentes/Estante.js) ================= */
 // arquivos da pessoa por categoria, com caneta e marca-texto (ficam no aparelho); notas compartilhadas ficam em compartilhados/{id}
 const appEstante={uid:()=>S.uid||"visitante",db:()=>FBM()?S.db:null,ice:()=>VOZ_ICE,
-  irPara:v=>go(v),badgeConvites:n=>{$$('[data-go="compartilhadas"]').forEach(a=>{let b=a.querySelector(".badge");if(n){if(!b){a.insertAdjacentHTML("beforeend",'<span class="badge"></span>');b=a.querySelector(".badge")}b.textContent=n}else if(b)b.remove()})},
+  irPara:v=>go(v),badgeConvites:n=>{$$('[data-go="estante"]').forEach(a=>{let b=a.querySelector(".badge");if(n){if(!b){a.insertAdjacentHTML("beforeend",'<span class="badge"></span>');b=a.querySelector(".badge")}b.textContent=n}else if(b)b.remove()})},
   convitesMudou:()=>atualizarCartoesChat(),convidarNaConversa:(o,info)=>enviarConvite(o,info),
   naChamada:()=>!!V.canal,escolherPessoas:op=>escolherPessoas(op),enviarParaPessoa:(o,f,t,copia)=>enviarParaPessoa(o,f,t,copia),meuNome:()=>(S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"Estudante",transmitindo:()=>!!(V.video&&V.video._estante),transmitir:t=>vozDefinirVideo(t,"tela"),pararTransmissao:()=>{if(V.video&&V.video._estante)vozDefinirVideo(null)},esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),naTela:()=>S.view==="estante"||S.view==="compartilhadas"};
 function renderCompartilhadas(){
@@ -2719,8 +2721,11 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.4";
+const APP_VERSAO="3.5";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"A IA voltou ✨",d:"Mentoria, dicas, leitura de editais e montagem da semana funcionam de novo."},
+  {t:"Tudo na Minha estante 📚",d:"As notas compartilhadas agora ficam na aba 👥 Compartilhadas da Minha estante, junto com os seus arquivos."},
+  {t:"Quadradinho do tempo por cima ⏱️",d:"Ao começar o cronômetro ou o pomodoro, o tempo abre numa janelinha por cima de tudo. Ela continua contando quando você minimiza o navegador ou sai do app, e dá para aumentar ou diminuir."},
   {t:"Editais e FOAs mais bem lidos 🔎",d:"A IA agora encontra os tópicos centrais e as sequências didáticas e escreve, para cada um, o que vai ser cobrado: **Tópico** (conteúdos, habilidades e exigências). Dá para copiar tudo nesse formato."},
   {t:"Tempo por cima no iPhone ⏱️",d:"Com o cronômetro ou o pomodoro ligado, toque no botão da janela por cima no quadro do tempo antes de sair do Safari: o tempo continua correndo numa janelinha por cima dos outros apps."},
   {t:"Notas compartilhadas ao vivo ⚡",d:"Quem está com a nota aberta se conecta direto (o aparelho do autor é a central): você vê o traço do colega enquanto ele escreve, quase sem atraso."},
@@ -4628,7 +4633,7 @@ function renderTutorial(){
 // e ninguém vê o progresso dos outros. As telas antigas continuam no código, mas não aparecem nem abrem.
 const SO_CONVERSA=true,TELAS_SOCIAIS=new Set(["grupos","buscarGrupos","voz","chat","amigos","ranking"]);
 const NAV=[
-  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["estante","Minha estante","bookmark"],["compartilhadas","Notas compartilhadas","users"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"],["pro","Logic Academy Pro","flame"]]],
+  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["estante","Minha estante","bookmark"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"],["pro","Logic Academy Pro","flame"]]],
   ["Prova",[["edital","Escanear edital","scan"],["topicos","Tópicos da prova","list"],["flashcards","Flashcards","cartas"]]],
   ["Conversas",[["mensagens","Mensagens","send"]]],
   ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"],["admin","Administração","lock"]]],
@@ -4700,7 +4705,7 @@ function renderSideUser(){
   el.innerHTML=`${S.mode==="nuvem"?avatar(S.uid):`<span class="avatar" aria-hidden="true">${esc(nm[0]||"V").toUpperCase()}</span>`}<div style="min-width:0"><div class="nm">${esc(nm)}${S.mode==="nuvem"&&ehPro()?' <span class="pro-tag">PRO</span>':""}</div><div class="sub" title="${esc(contaEmail())}">${S.mode==="nuvem"&&ehAdmin()?"🛡 Administrador":S.mode==="nuvem"?(esc(contaEmail())||"Salvo na nuvem"):"Visitante · nada é salvo"}</div></div>`;
 }
 function progEdital(){if(!S.edital)return 0;const all=S.edital.materias.flatMap(m=>m.topicos);return all.length?Math.round(all.filter(t=>t.feito).length/all.length*100):0}
-function go(v){pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();if((S.view==="estante"||S.view==="compartilhadas")&&v!==S.view&&window.LAComp&&LAComp.Estante)LAComp.Estante.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
+function go(v){if(v==="compartilhadas"){v="estante";if(window.LAComp&&LAComp.Estante&&LAComp.Estante.verComp)LAComp.Estante.verComp()}pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();if((S.view==="estante"||S.view==="compartilhadas")&&v!==S.view&&window.LAComp&&LAComp.Estante)LAComp.Estante.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
 function renderView(){
   $$("[data-go]").forEach(a=>{a.classList.toggle("on",a.dataset.go===S.view);if(a.dataset.go===S.view){const g=a.closest(".nav-grp.fech");if(g){g.classList.remove("fech");g.querySelectorAll("a").forEach(x=>x.removeAttribute("tabindex"));const b=g.previousElementSibling;if(b)b.setAttribute("aria-expanded","true")}}if(a.dataset.go==="topicos"){a.hidden=!S.edital;const b=a.querySelector(".badge");if(S.edital){if(b)b.textContent=progEdital()+"%";else a.insertAdjacentHTML("beforeend",`<span class="badge">${progEdital()}%</span>`)}}});
   if(SO_CONVERSA&&TELAS_SOCIAIS.has(S.view)){S.view=S.view==="amigos"?"mensagens":"inicio";try{history.replaceState(history.state,"","#"+S.view)}catch(e){}renderView();return}

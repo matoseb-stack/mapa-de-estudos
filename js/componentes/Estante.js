@@ -215,7 +215,7 @@
       if (a.capa) { await gr("capas", "c_" + ref.id, a.capa).catch(() => {}); (E.capasC = E.capasC || {})[ref.id] = a.capa; }
       let falhou = 0; for (const p of pessoas) { try { await APP.convidarNaConversa(p.id, { fid: ref.id, nome: a.nome, tipo: a.tipo }); } catch (e) { falhou++; } }
       APP.toast(`Convite enviado para ${pessoas.map(p => p.nome).join(", ")} nas Mensagens. Quando aceitarem, vocês editam juntos.${falhou ? " (Alguns convites não chegaram: a pessoa pode só aceitar mensagens de amigos.)" : ""}`);
-      if (APP.irPara) APP.irPara("compartilhadas");
+      E.cat = "comp"; if (APP.naTela()) pintar(); else if (APP.irPara) APP.irPara("estante");
     } catch (e) { console.warn("conjunto", e); APP.toast("Não foi possível criar o arquivo conjunto (" + ((e && e.code) || "erro") + ")."); try { await ref.delete(); } catch (er) {} }
   }
   async function convidarConjunto(a) {
@@ -283,11 +283,24 @@
   }
 
   /* ---------- aba "Notas compartilhadas": convites para aceitar e arquivos conjuntos ---------- */
+  const temConta = () => !!nuv() && E.uid !== "visitante";
+  function chipsHtml() {
+    const { esc } = APP, M = E.meta, semCat = M.arquivos.filter(a => !catDe(a.cat)).length, nComp = Object.keys(E.comp || {}).length, nConv = Object.keys(E.convites || {}).length;
+    return `<div class="est-cats" role="tablist" aria-label="Categorias">
+        <button type="button" role="tab" class="est-cat ${E.cat === "todas" ? "on" : ""}" data-cat="todas" aria-selected="${E.cat === "todas"}">📚 Todos <small>${M.arquivos.length}</small></button>
+        ${temConta() || nComp ? `<button type="button" role="tab" class="est-cat est-cat-comp ${E.cat === "comp" ? "on" : ""}" data-cat="comp" aria-selected="${E.cat === "comp"}">👥 Compartilhadas <small>${nComp}</small>${nConv ? `<span class="est-conv-n" title="Convites esperando você">${nConv}</span>` : ""}</button>` : ""}
+        ${M.categorias.map(c => `<button type="button" role="tab" class="est-cat ${E.cat === c.id ? "on" : ""}" data-cat="${c.id}" aria-selected="${E.cat === c.id}"><i style="background:${c.cor}"></i>${esc(c.nome)} <small>${M.arquivos.filter(a => a.cat === c.id).length}</small></button>`).join("")}
+        ${semCat && M.categorias.length ? `<button type="button" role="tab" class="est-cat ${E.cat === "sem" ? "on" : ""}" data-cat="sem">Sem categoria <small>${semCat}</small></button>` : ""}
+        <button type="button" class="est-cat nova" data-e="nova-cat">＋ Nova categoria</button>
+      </div>`;
+  }
+  // "👥 Compartilhadas" dentro da estante: convites para aceitar e notas que você edita junto com outras pessoas
   function pintarComp() {
-    const { esc, ico } = APP, conv = Object.values(E.convites || {}), lista = visiveis(), conta = !!nuv() && E.uid !== "visitante";
+    const { esc, ico } = APP, conv = Object.values(E.convites || {}), lista = visiveis(), conta = temConta();
     CONT.innerHTML = `<div class="page estante est-comp">
-      ${APP.pageHead("Notas compartilhadas", "Cadernos e arquivos que você edita junto com outras pessoas. Tudo o que alguém escreve aparece na hora para todos.",
+      ${APP.pageHead("Minha estante", "Notas compartilhadas: cadernos e arquivos que você edita junto com outras pessoas, ao vivo.",
         conta ? `<button class="btn primary" type="button" data-e="nova-comp">${ico("plus")}Nova nota compartilhada</button>` : "")}
+      ${chipsHtml()}
       ${!conta ? `<div class="card stack"><b>Entre com a sua conta para compartilhar notas.</b><p class="small muted" style="margin:0">No modo visitante nada vai para a nuvem, então não dá para editar junto com outras pessoas.</p></div>` : ""}
       ${conv.length ? `<div class="card est-convites"><div class="card-h"><h3>📨 Convites para você (${conv.length})</h3></div>
         <div class="list">${conv.map(c => `<div class="li est-convite" style="grid-template-columns:minmax(0,1fr) auto"><div style="min-width:0"><b>${esc(c.nome)}</b>
@@ -295,12 +308,14 @@
           <div class="row" style="gap:6px;flex-wrap:nowrap"><button class="btn sm ghost" type="button" data-recusar="${c.fid}">Recusar</button><button class="btn sm primary" type="button" data-aceitar="${c.fid}">Aceitar</button></div></div>`).join("")}</div></div>` : ""}
       ${lista.length ? `<div class="est-grade">${lista.map(cartao).join("")}</div>`
         : conta ? `<div class="card est-vazia" data-e="nova-comp"><div class="est-vazia-ic">👥</div><h3>Nenhuma nota compartilhada ainda</h3>
-            <p class="muted small">Crie uma nota nova aqui e convide colegas, ou compartilhe um arquivo da Minha estante em ⋯ › Compartilhar › Editar junto.</p>
+            <p class="muted small">Crie uma nota nova aqui e convide colegas, ou compartilhe um arquivo da estante em ⋯ › Compartilhar › Editar junto.</p>
             <p class="small"><b>Toque aqui</b> para criar uma nota compartilhada.</p></div>` : ""}
       <p class="hint">As notas compartilhadas ficam guardadas na nuvem enquanto existirem, para todos verem. Quem criou pode convidar mais pessoas ou apagar; os outros podem sair quando quiserem.</p>
     </div>`;
     CONT.oncontextmenu = e => { const c = e.target.closest(".est-arq"); if (!c) return; e.preventDefault(); menuArquivo(c.dataset.arq, c.querySelector("[data-menu]")); };
     CONT.onclick = async e => {
+      const c = e.target.closest("[data-cat]"); if (c) { E.cat = c.dataset.cat; pintar(); return; }
+      if (e.target.closest('[data-e="nova-cat"]')) { modalCategoria(); return; }
       const ab = e.target.closest("[data-abrir]"); if (ab) { abrir(ab.dataset.abrir); return; }
       const mn = e.target.closest("[data-menu]"); if (mn) { menuArquivo(mn.dataset.menu, mn); return; }
       const ac = e.target.closest("[data-aceitar]"); if (ac) { ac.disabled = true; await aceitarConvite(ac.dataset.aceitar); return; }
@@ -327,11 +342,12 @@
   /* ---------- tela da estante ---------- */
   let CONT = null;
   async function render(container, app, modo) {
-    APP = app; CONT = container; container.onclick = null; E.modo = modo || "estante";
+    APP = app; CONT = container; container.onclick = null; if (modo === "comp") E.irComp = true;
     const uid = app.uid(); if (E.uid !== uid) Object.assign(E, { uid, meta: null, cat: "todas", busca: "", comp: {} });
+    if (E.irComp) { E.irComp = false; E.cat = "comp"; }
     ouvirConjuntos();
     if (!E.meta) {
-      container.innerHTML = `<div class="page">${app.pageHead(E.modo === "comp" ? "Notas compartilhadas" : "Minha estante", E.modo === "comp" ? "Arquivos que você edita junto com outras pessoas." : "Seus arquivos de estudo organizados por matéria.")}<div class="card row muted"><span class="spinner"></span>Abrindo sua estante…</div></div>`;
+      container.innerHTML = `<div class="page">${app.pageHead("Minha estante", "Seus arquivos de estudo organizados por matéria.")}<div class="card row muted"><span class="spinner"></span>Abrindo sua estante…</div></div>`;
       try { await carregarMeta(); } catch (e) { E.meta = { categorias: [], arquivos: [], atual: 0 }; }
       try { for (const fid of Object.keys(E.comp || {})) { const c = await lg("capas", "c_" + fid).catch(() => null); if (c) (E.capasC = E.capasC || {})[fid] = c; } } catch (e) {}
       await espaco();
@@ -351,26 +367,23 @@
   const catDe = id => E.meta.categorias.find(c => c.id === id);
   function visiveis() {
     const q = (E.busca || "").toLowerCase().trim();
-    const meus = E.modo === "comp" ? [] : E.meta.arquivos.filter(a => (E.cat === "todas" || (E.cat === "sem" ? !catDe(a.cat) : a.cat === E.cat)));
-    const comp = E.modo === "comp" ? conjuntos() : [];
+    const meus = E.cat === "comp" ? [] : E.meta.arquivos.filter(a => (E.cat === "todas" || (E.cat === "sem" ? !catDe(a.cat) : a.cat === E.cat)));
+    const comp = E.cat === "comp" ? conjuntos() : [];
     return meus.concat(comp).filter(a => !q || a.nome.toLowerCase().includes(q)).sort((x, y) => (y.aberto || y.criado) - (x.aberto || x.criado));
   }
   function pintar() {
     const { esc, ico } = APP, M = E.meta, total = M.arquivos.reduce((s, a) => s + (a.tam || 0), 0), semCat = M.arquivos.filter(a => !catDe(a.cat)).length;
     const nComp = Object.keys(E.comp || {}).length;
-    if (E.modo === "comp") return pintarComp();
+    if (E.cat === "comp") return pintarComp();
     if (E.cat !== "todas" && E.cat !== "sem" && !catDe(E.cat)) E.cat = "todas";
+    const nConv = Object.keys(E.convites || {}).length;
     const lista = visiveis(), cat = catDe(E.cat);
     CONT.innerHTML = `<div class="page estante">
       ${APP.pageHead("Minha estante", "Organize seus PDFs, fotos e cadernos por matéria e escreva por cima deles.",
         `<button class="btn" type="button" data-e="caderno">${ico("edit")}Novo caderno</button><button class="btn primary" type="button" data-e="enviar">${ico("upload")}Enviar arquivo</button>`)}
       <input type="file" id="est-arq" accept="application/pdf,image/png,image/jpeg,image/webp,image/gif,.laest" multiple hidden>
-      <div class="est-cats" role="tablist" aria-label="Categorias">
-        <button type="button" role="tab" class="est-cat ${E.cat === "todas" ? "on" : ""}" data-cat="todas" aria-selected="${E.cat === "todas"}">📚 Todos <small>${M.arquivos.length}</small></button>
-        ${M.categorias.map(c => `<button type="button" role="tab" class="est-cat ${E.cat === c.id ? "on" : ""}" data-cat="${c.id}" aria-selected="${E.cat === c.id}"><i style="background:${c.cor}"></i>${esc(c.nome)} <small>${M.arquivos.filter(a => a.cat === c.id).length}</small></button>`).join("")}
-        ${semCat && M.categorias.length ? `<button type="button" role="tab" class="est-cat ${E.cat === "sem" ? "on" : ""}" data-cat="sem">Sem categoria <small>${semCat}</small></button>` : ""}
-        <button type="button" class="est-cat nova" data-e="nova-cat">＋ Nova categoria</button>
-      </div>
+      ${chipsHtml()}
+      ${nConv ? `<button type="button" class="card est-aviso-conv" data-cat="comp">📨 <b>${nConv === 1 ? "Você tem 1 convite" : `Você tem ${nConv} convites`}</b> para editar junto. <span class="muted">Toque para ver.</span></button>` : ""}
       <div class="row est-barra">
         <input type="search" id="est-busca" placeholder="Buscar arquivo pelo nome" value="${esc(E.busca)}" aria-label="Buscar arquivo">
         ${cat ? `<button class="btn sm ghost" type="button" data-e="edit-cat">${ico("gear")}Editar “${esc(cat.nome)}”</button>` : ""}
@@ -1326,7 +1339,7 @@
 
   function transmitirPublico() { if (V.ov) transmitir(); }
   function sairDaAba() { if (V.ov) fecharLeitor(); document.querySelectorAll(".est-pop").forEach(x => x.remove()); }
-  (window.LAComp = window.LAComp || {}).Estante = { render, renderComp: (c, app) => render(c, app, "comp"), iniciar, estadoConvite, aceitarConvite, recusarConvite,
+  (window.LAComp = window.LAComp || {}).Estante = { render, renderComp: (c, app) => render(c, app, "comp"), verComp: () => { E.irComp = true; }, iniciar, estadoConvite, aceitarConvite, recusarConvite,
     importar: async f => { if (!E.meta) { try { await carregarMeta(); } catch (e) { E.meta = { categorias: [], arquivos: [], atual: 0 }; } } return importarPacote(f); },
     sairDaAba, transmitir: transmitirPublico, vista: cv => vista(cv, false), _estado: () => ({ V, E }) };   // _estado: usado pelos testes
 })();

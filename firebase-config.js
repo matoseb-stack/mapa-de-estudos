@@ -7,8 +7,10 @@ window.MAPA_FIREBASE_CONFIG = {
   storageBucket: "mapa-de-estudos-d6eca.firebasestorage.app",
   messagingSenderId: "454005758309",
   appId: "1:454005758309:web:2b477549a8d801b200e98c",
-  measurementId: "G-X9061S2G4L"
-  // App Check (opcional): quando o app da web estiver registrado no App Check do Firebase, acrescente
-  // appCheckSiteKey: "chave do site" (e appCheckEnterprise: true se a chave for do reCAPTCHA Enterprise).
-  // Chave do reCAPTCHA v3 criada para o site: 6LfU4d0tAAAAAGFGclhMF-twnNWXmyfu3Ezwm0n-
+  measurementId: "G-X9061S2G4L",
+  // App Check ligado no Firebase: a IA (Firebase AI Logic) só responde a pedidos com o comprovante do App Check.
+  // Esta é a chave PÚBLICA do site no reCAPTCHA v3 (a chave secreta fica só no painel do Firebase).
+  // Os domínios logicacademy.web.app e matoseb-stack.github.io precisam estar na lista da chave no reCAPTCHA.
+  // Se um dia a chave for do reCAPTCHA Enterprise, acrescente appCheckEnterprise: true.
+  appCheckSiteKey: "6LfU4d0tAAAAAGFGclhMF-twnNWXmyfu3Ezwm0n-"
 };
