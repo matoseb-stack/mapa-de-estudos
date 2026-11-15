@@ -25,7 +25,7 @@ Quando o dono mandar um PDF de questões sem outra instrução:
 4. Gabarito oficial/do material conferido questão por questão (`gf:"material"`); sem gabarito, resolver e marcar `gf:"resolvido"`; explicação curta em `exp`.
 5. Não duplicar questão que já está no banco.
 6. Gravar em `questoes/outras-<area>.json` (`p:"outras"`, `banca`, `ano`, `adapt`, `n` sequencial dentro de "outras") e atualizar `QB_INDICE_OUT` no `index.html`.
-7. Antes de gravar, explicar ao dono o que vai fazer e por quê; publicar nos testes; **só mandar para o oficial depois que o dono disser "pronto"**.
+7. Ajustar fonte (banca/ano), formatação (expoentes, frações, símbolos) e nível quando precisar; publicar nos testes e **mandar direto para o oficial, sem esperar o "pronto"** (autorizado pelo dono para PDFs de exercícios). Depois, avisar o resumo: quantas entraram, quais já estavam no banco e o que foi ajustado.
 
 ## Segurança
 - Nunca peça nem receba a chave da conta de serviço ou segredos do reCAPTCHA: vão só nos segredos do GitHub/Firebase.
