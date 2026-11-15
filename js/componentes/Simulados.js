@@ -74,11 +74,11 @@
   }
   const itensDe = d => d.objetivas.map(q => ({ tipo: "o", q })).concat(d.discursivas.map(q => ({ tipo: "d", q })));
   function telaProva() {
-    const P = ST.prova; if (!P) return; const itens = itensDe(P.d), it = itens[P.atual], q = it.q;
+    const P = ST.prova; if (!P) return; if (ehAdm()) admGuardar(); const itens = itensDe(P.d), it = itens[P.atual], q = it.q;
     const resp = it.tipo === "o" ? P.resp[q.n] : null, feitas = Object.keys(P.resp).length + Object.keys(P.disc).filter(k => Object.values(P.disc[k] || {}).some(v => String(v).trim())).length;
     CONT.innerHTML = `<div class="page sim-prova">
       <div class="sim-barra card">
-        <div style="min-width:0"><b>${esc(P.s.nome)} · ${P.d.dia}º dia</b><div class="small muted">${feitas} de ${itens.length} respondidas</div></div>
+        <div style="min-width:0"><b>${esc(P.s.nome)} · ${P.d.dia}º dia</b><div class="small muted">${feitas} de ${itens.length} respondidas${ehAdm() ? " · 🔑 administrador: pode sair e voltar (o tempo pausa)" : ""}</div></div>
         <div class="sim-tempo mono" id="sim-tempo" aria-live="off">${relogio(P.fim - Date.now())}</div>
         <button class="btn primary" type="button" id="sim-entregar">Entregar</button>
       </div>
@@ -97,7 +97,7 @@
     const ir = i => { P.atual = Math.max(0, Math.min(itens.length - 1, i)); telaProva(); const a = CONT.querySelector(".sim-q"); if (a && a.getBoundingClientRect().top < 0) a.scrollIntoView({ block: "start" }); };
     CONT.querySelectorAll("[data-ir]").forEach(b => b.onclick = () => ir(+b.dataset.ir));
     CONT.querySelectorAll("[data-alt]").forEach(b => b.onclick = () => { const k = +b.dataset.alt; if (P.resp[q.n] === k) delete P.resp[q.n]; else P.resp[q.n] = k; const y = scrollY; telaProva(); scrollTo(0, y); });
-    CONT.querySelectorAll("[data-disc]").forEach(t => t.oninput = () => { (P.disc[q.n] = P.disc[q.n] || {})[t.dataset.disc] = t.value; });
+    CONT.querySelectorAll("[data-disc]").forEach(t => t.oninput = () => { (P.disc[q.n] = P.disc[q.n] || {})[t.dataset.disc] = t.value; if (ehAdm()) admGuardar(); });
     CONT.querySelectorAll("[data-disc]").forEach(t => t.onchange = () => { const y = scrollY; telaProva(); scrollTo(0, y); });
     CONT.querySelector("#sim-ant").onclick = () => ir(P.atual - 1);
     CONT.querySelector("#sim-prox").onclick = () => ir(P.atual + 1);
@@ -111,25 +111,34 @@
   }
   const feitasAgora = () => { const P = ST.prova; return Object.keys(P.resp).length + Object.keys(P.disc).filter(k => Object.values(P.disc[k] || {}).some(v => String(v).trim())).length; };
   function atualizarRelogio() {
-    const P = ST.prova; if (!P) { clearInterval(tique); return; }
+    const P = ST.prova; if (!P) { clearInterval(tique); return; } if (P.pausaEm) return;
     const falta = P.fim - Date.now(), el = document.getElementById("sim-tempo");
     if (el) { el.textContent = relogio(falta); el.classList.toggle("pouco", falta < 15 * 60000); }
     if (falta <= 0) entregar(true);
   }
-  // sair da aba zera a prova
+  /* administrador: pode sair e voltar quando quiser — o tempo pausa enquanto está fora e a prova fica guardada no aparelho */
+  const ehAdm = () => !!(APP && APP.ehAdmin && APP.ehAdmin());
+  const ADM_KEY = "la_sim_adm";
+  function admPausar() { const P = ST.prova; if (!P || P.pausaEm) return; P.pausaEm = Date.now(); clearInterval(tique); admGuardar(); }
+  function admRetomar() { const P = ST.prova; if (!P || !P.pausaEm) return; P.fim += Date.now() - P.pausaEm; P.inicio += Date.now() - P.pausaEm; P.pausaEm = 0; clearInterval(tique); tique = setInterval(atualizarRelogio, 1000); admGuardar(); }
+  function admGuardar() { const P = ST.prova; try { if (P) localStorage.setItem(ADM_KEY, JSON.stringify({ sim: P.s.id, dia: P.d.dia, inicio: P.inicio, fim: P.fim, pausaEm: P.pausaEm || Date.now(), atual: P.atual, resp: P.resp, disc: P.disc, marcadas: P.marcadas })); else localStorage.removeItem(ADM_KEY); } catch (e) {} }
+  async function admRestaurar() { let g = null; try { g = JSON.parse(localStorage.getItem(ADM_KEY) || "null"); } catch (e) {} if (!g) return false;
+    try { const s = await carregarSim(g.sim), d = s.dias.find(x => x.dia === g.dia); if (!d) return false; ST.prova = Object.assign({ s, d }, g); delete ST.prova.sim; delete ST.prova.dia; return true; } catch (e) { return false; } }
+  // sair da aba zera a prova (menos para o administrador, que só pausa)
   function zerar(motivo) {
-    if (!ST.prova) return; clearInterval(tique); ST.prova = null;
+    if (!ST.prova) return;
+    if (ehAdm()) { admPausar(); return; } clearInterval(tique); ST.prova = null;
     ST.aviso = motivo || "Você saiu da aba durante o simulado e ele foi zerado. Comece de novo quando estiver pronto.";
     try { sessionStorage.setItem("la_sim_zerado", ST.aviso); } catch (e) {}
     if (naTela()) telaLista();
   }
-  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden" && ST.prova) zerar(); });
+  document.addEventListener("visibilitychange", () => { if (!ST.prova) return; if (document.visibilityState === "hidden") zerar(); else if (ehAdm() && naTela()) { admRetomar(); telaProva(); } });
   addEventListener("pagehide", () => { if (ST.prova) zerar("A página foi fechada ou recarregada durante o simulado, e ele foi zerado."); });
-  addEventListener("beforeunload", e => { if (ST.prova) { e.preventDefault(); e.returnValue = ""; } });
+  addEventListener("beforeunload", e => { if (ST.prova && !ehAdm()) { e.preventDefault(); e.returnValue = ""; } });
 
   /* ---------- correção ---------- */
   async function entregar(acabouTempo) {
-    const P = ST.prova; if (!P) return; clearInterval(tique); ST.prova = null;
+    const P = ST.prova; if (!P) return; clearInterval(tique); ST.prova = null; try { localStorage.removeItem(ADM_KEY); } catch (e) {}
     const d = P.d, tempo = Math.min(Date.now(), P.fim) - P.inicio;
     const obj = d.objetivas.filter(q => P.resp[q.n] === q.r).length;
     const t = { sim: P.s.id, nome: P.s.nome, dia: d.dia, em: Date.now(), tempo, resp: P.resp, discResp: P.disc, notas: {}, obj, nObj: d.objetivas.length, nDisc: d.discursivas.length, disc: 0, discPend: true, max: d.objetivas.length + d.discursivas.length * 5, total: obj, acabouTempo: !!acabouTempo };
@@ -202,16 +211,19 @@ Responda SOMENTE com JSON: {"notas":[{"q":1,"itens":[{"p":"a","nota":2.5,"coment
   }
 
   const naTela = () => APP && APP.naTela && APP.naTela();
-  function render(container, app) {
+  async function render(container, app) {
     APP = app; CONT = container;
     try { const z = sessionStorage.getItem("la_sim_zerado"); if (z) { ST.aviso = z; sessionStorage.removeItem("la_sim_zerado"); } } catch (e) {}
-    if (ST.prova) { telaProva(); return; }
+    if (!ST.prova && ehAdm()) await admRestaurar();
+    if (!ST.prova) { try { localStorage.removeItem(ADM_KEY); } catch (e) {} }
+    if (ST.prova) { if (ehAdm()) admRetomar(); telaProva(); return; }
     if (ST.resultado) { verResultado(ST.resultado); return; }
     telaLista();
   }
   // sair do simulado para outra tela do site também zera (o site pergunta antes)
   function sairPermitido() {
     if (!ST.prova) return true;
+    if (ehAdm()) { admPausar(); return true; }
     if (!confirm("Se você sair agora, o simulado será zerado. Sair mesmo?")) return false;
     zerar("Você saiu do simulado antes de entregar, e ele foi zerado."); return true;
   }
