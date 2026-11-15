@@ -53,7 +53,7 @@ service cloud.firestore {
       function valido() {
         let d = request.resource.data;
         return d.atualizado == request.time && d.total is number && d.total >= 0 && d.total <= 300000
-          && (!('hojeMin' in d) || (d.hojeMin is number && d.hojeMin >= 0 && d.hojeMin <= 960))
+          && (!('hojeMin' in d) || (d.hojeMin is number && d.hojeMin >= 0 && d.hojeMin <= 1200))
           && d.dia == diaBR() && d.semana == semanaBR() && d.mes == mesBR();
       }
       function basesOk() {
@@ -62,7 +62,7 @@ service cloud.firestore {
         return ((d.dia == v.get('dia', -1) && d.diaBase == v.get('diaBase', -1)) || (d.dia != v.get('dia', -1) && d.diaBase == v.total))
           && ((d.semana == v.get('semana', -1) && d.semanaBase == v.get('semanaBase', -1)) || (d.semana != v.get('semana', -1) && d.semanaBase == v.total))
           && ((d.mes == v.get('mes', -1) && d.mesBase == v.get('mesBase', -1)) || (d.mes != v.get('mes', -1) && d.mesBase == v.total))
-          && d.total - d.diaBase <= 960
+          && d.total - d.diaBase <= 1200
           && (!('hojeMin' in d) || d.hojeMin <= d.total - d.diaBase + 1);
       }
       // tempo de estudo: só a própria pessoa (e o administrador) vê; ninguém vê o progresso dos outros

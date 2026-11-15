@@ -958,6 +958,9 @@ button.hoje-prox{cursor:pointer}
 .qb-cad-barra i{display:block;height:100%;background:var(--ok);border-radius:999px;transition:width .6s}
 .qb-cad-mats{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .qb-cad-mats b{color:var(--fg)}
+.qb-meucad{display:flex;flex-direction:column;gap:10px;margin-bottom:14px;border-color:color-mix(in srgb,var(--accent) 35%,var(--line));background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 8%,var(--surface)),var(--surface) 60%)}
+.qb-meucad .qb-cad-ic{background:color-mix(in srgb,var(--accent) 18%,var(--surface));font-size:1.3rem}
+.qb-imp .grid2{grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr))}
 .qb-corr{display:flex;gap:8px;align-items:flex-start;border-radius:var(--r-sm);padding:9px 12px;border:1px solid color-mix(in srgb,var(--c-errada) 45%,var(--line));background:color-mix(in srgb,var(--c-errada) 8%,var(--surface))}
 .qb-corr .i{color:var(--c-errada);flex:none;margin-top:2px}
 .qb-corr.ok{border-color:color-mix(in srgb,var(--ok) 45%,var(--line));background:color-mix(in srgb,var(--ok) 9%,var(--surface))}
@@ -1872,7 +1875,7 @@ function renderWizard(){
             <output class="mono" id="hv-${x.k}" aria-live="polite">${(+d.horas[x.k]||0)?fmtH((+d.horas[x.k])*60):"livre"}</output>
             <button type="button" class="btn icon" data-hmais="${x.k}" aria-label="Mais meia hora em ${x.n}">+</button>
           </div>
-          <input type="range" id="h-${x.k}" min="0" max="10" step="0.5" value="${+d.horas[x.k]||0}" data-dia="${x.k}" aria-label="Horas em ${x.n}">
+          <input type="range" id="h-${x.k}" min="0" max="20" step="0.5" value="${+d.horas[x.k]||0}" data-dia="${x.k}" aria-label="Horas em ${x.n}">
         </div>`).join("")}</div>
       <p><span class="eyebrow">Total na semana</span> <b class="mono" id="h-tot">${fmtH(tot*60)}</b></p>`;
   }else{
@@ -1952,7 +1955,7 @@ function ligarWizard(){
     $$("[data-dia]",f).forEach(r=>r.addEventListener("input",()=>{d.horas[r.dataset.dia]=+r.value;$("#hv-"+r.dataset.dia).textContent=+r.value?fmtH(+r.value*60):"livre";
       r.closest(".hora-card").classList.toggle("livre",!+r.value);
       const tot=DIAS.reduce((a,x)=>a+(+d.horas[x.k]||0),0);$("#h-tot").textContent=fmtH(tot*60);const qn=$("#q-next");if(qn)qn.disabled=tot<=0;const sv=$("#q-salvar");if(sv)sv.disabled=tot<=0}));
-    const passo=(k,v)=>{const r=$("#h-"+k);r.value=Math.max(0,Math.min(10,+r.value+v));r.dispatchEvent(new Event("input"))};
+    const passo=(k,v)=>{const r=$("#h-"+k);r.value=Math.max(0,Math.min(20,+r.value+v));r.dispatchEvent(new Event("input"))};
     $$("[data-hmenos]",f).forEach(b=>b.onclick=()=>passo(b.dataset.hmenos,-.5));$$("[data-hmais]",f).forEach(b=>b.onclick=()=>passo(b.dataset.hmais,.5));
   }
 }
@@ -2356,7 +2359,7 @@ function garantirTotais(L){ // totais de todo o tempo, que não se perdem quando
   L.tot=t;L.hist=L.hist||[];return L}
 function registrar(min,materia,fonte){
   fonte=fonte||"pomodoro";min=Math.round(min*100)/100;
-  {const ja=((S.pomoLog.dias[dataISO()]||{}).min)||0,cab=Math.max(0,LIMITE_DIA-ja);if(min>cab){toast("Limite de 16 horas por dia atingido: o tempo extra não foi contado.");min=cab}if(min<=0)return}
+  {const ja=((S.pomoLog.dias[dataISO()]||{}).min)||0,cab=Math.max(0,LIMITE_DIA-ja);if(min>cab){toast("Limite de 20 horas por dia atingido: o tempo extra não foi contado.");min=cab}if(min<=0)return}
   const hoje=dataISO(),L=garantirTotais(S.pomoLog);L.dias[hoje]=L.dias[hoje]||{min:0,mat:{}};
   L.dias[hoje].min+=min;const k=materia||"Sem matéria";L.dias[hoje].mat[k]=(L.dias[hoje].mat[k]||0)+min;L.sessoes=(L.sessoes||0)+1;
   L.tot.min+=min;L.tot.mat[k]=(L.tot.mat[k]||0)+min;L.tot.fonte[fonte]=(L.tot.fonte[fonte]||0)+min;
@@ -2463,7 +2466,7 @@ function tickCrono(){
 }
 /* ---- Regras do servidor para o cronômetro (simuladas em js/firebaseServiceMock.js) ----
    A cada 30 s com o cronômetro contando, pergunta se a contagem ainda é permitida
-   (limite de 16 h por dia, sessão longa sem confirmação, bloqueio de teste). Se não for, pausa e avisa com som. */
+   (limite de 20 h por dia, sessão longa sem confirmação, bloqueio de teste). Se não for, pausa e avisa com som. */
 async function verificarRegrasCrono(){
   const Srv=window.LAService||window.FirebaseServiceMock;if(!Srv||!C.rodando)return;C.regrasEm=Date.now();
   let r;try{r=await Srv.checkFirebaseTimerRules({minHoje:minutosDia(dataISO())+cronoMs()/60000,minSessao:cronoMs()/60000,confirmadoHaMin:(Date.now()-(C.confirmado||C.inicio))/60000})}catch(e){return}
@@ -2749,8 +2752,10 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.8";
+const APP_VERSAO="3.9";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Importe suas questões por foto 📷",d:"No Banco de questões, toque em Importar questão e tire uma foto: a IA digita a questão, você confere e ela entra no seu Caderno de questões como resolvida (Banco de questões · Questão nº). Se errou, ela vai para o caderno de erros."},
+  {t:"Até 20 horas por dia ⏱️",d:"Ao montar a semana, cada dia agora vai até 20 horas de estudo. A meta diária também vai até 20 horas."},
   {t:"Edital lido em segundo plano 🔎",d:"Ao enviar o arquivo, a IA já começa sozinha: primeiro uma triagem rápida (os tópicos aparecem em segundos) e depois a leitura com calma, por partes, que vai ajustando os tópicos e os resumos. Pode ir para o Início ou qualquer outra tela: tudo continua de onde parou."},
   {t:"Tudo liberado 🎉",d:"O Logic Academy Pro saiu: todos os recursos estão liberados para todo mundo, sem plano e sem limite de perguntas à IA."},
   {t:"Janelinha do tempo no tablet ⏱️",d:"Com o cronômetro ou o pomodoro rodando, a janelinha com os minutos fica no canto da tela quando você vai para a tela inicial. Se você voltar ao site e ela tiver sumido, o primeiro toque já abre de novo."},
@@ -3629,16 +3634,16 @@ const QB_INDICE_ESP={"fonte":"EsPCEx — provas e gabaritos oficiais (Exército 
 const QB_INDICE_PISM={"fonte":"PISM — provas e gabaritos oficiais da COPESE/UFJF","areas":{"linguagens":{"n":250,"topicos":[["lit","Arcadismo",4],["lit","Gêneros literários",103],["lit","Literatura contemporânea",1],["lit","Modernismo",9],["lit","Parnasianismo e Simbolismo",1],["lit","Quinhentismo e Barroco",3],["lit","Realismo e Naturalismo",3],["lit","Romantismo",5],["lit","Trovadorismo, Humanismo e Classicismo",1],["por","Classes de palavras",19],["por","Coesão e coerência",1],["por","Figuras de linguagem",6],["por","Gêneros e tipos textuais",29],["por","Interpretação e compreensão de textos",47],["por","Pontuação",6],["por","Semântica: sentido das palavras no contexto",3],["por","Sintaxe do período simples e composto",1],["por","Variação linguística e funções da linguagem",8]]},"matematica":{"n":116,"topicos":[["mat","Análise combinatória",2],["mat","Conjuntos e conjuntos numéricos",3],["mat","Estatística: média, moda, mediana e dispersão",5],["mat","Função exponencial e logaritmos",2],["mat","Funções: domínio, imagem e gráficos",12],["mat","Geometria analítica: ponto, reta, circunferência e cônicas",11],["mat","Geometria espacial: prismas, pirâmides, cilindros, cones e esferas",10],["mat","Geometria plana: ângulos, semelhança, polígonos e áreas",26],["mat","Matemática financeira: juros simples e compostos",1],["mat","Matrizes, determinantes e sistemas lineares",4],["mat","Outros temas",7],["mat","Polinômios e equações algébricas",12],["mat","Probabilidade",3],["mat","Progressões aritméticas e geométricas",6],["mat","Razão, proporção, porcentagem e regra de três",10],["mat","Trigonometria no triângulo retângulo e no ciclo trigonométrico",2]]},"natureza":{"n":384,"topicos":[["bio","Bioquímica: água, sais, carboidratos, lipídios, proteínas e ácidos nucleicos",8],["bio","Biotecnologia e engenharia genética",1],["bio","Botânica",16],["bio","Citologia: membrana, organelas e núcleo",21],["bio","Classificação dos seres vivos",7],["bio","Divisão celular: mitose e meiose",2],["bio","Ecologia: cadeias, ciclos, populações e biomas",12],["bio","Evolução",4],["bio","Fisiologia humana",4],["bio","Genética: leis de Mendel e heranças",13],["bio","Histologia e embriologia",6],["bio","Metabolismo energético: fotossíntese e respiração",6],["bio","Outros temas",3],["bio","Problemas ambientais",3],["bio","Vírus, bactérias, protistas e fungos",14],["bio","Zoologia",7],["fis","Cinemática: movimentos uniforme, variado e circular",34],["fis","Eletrodinâmica: corrente, resistores e circuitos",9],["fis","Eletrostática: carga, campo e potencial",2],["fis","Estática e hidrostática",10],["fis","Física moderna: noções",3],["fis","Gases ideais e termodinâmica",3],["fis","Gravitação universal e leis de Kepler",3],["fis","Impulso, quantidade de movimento e colisões",1],["fis","Leis de Newton e aplicações",19],["fis","Magnetismo e indução eletromagnética",4],["fis","Ondas, MHS e acústica",12],["fis","Outros temas",5],["fis","Termometria, calorimetria e dilatação",16],["fis","Trabalho, energia e potência",3],["fis","Óptica geométrica: espelhos, lentes e refração",11],["qui","Eletroquímica: pilhas e eletrólise",4],["qui","Equilíbrio químico, pH e pOH",2],["qui","Forças intermoleculares e polaridade",4],["qui","Funções inorgânicas: ácidos, bases, sais e óxidos",25],["qui","Isomeria",4],["qui","Ligações químicas e geometria molecular",1],["qui","Matéria, substâncias, misturas e separação",13],["qui","Modelos atômicos e estrutura do átomo",11],["qui","Mol, massa molar e estequiometria",7],["qui","Outros temas",7],["qui","Química ambiental",3],["qui","Química orgânica: cadeias e funções",9],["qui","Reações orgânicas e polímeros",1],["qui","Reações químicas e balanceamento",17],["qui","Soluções e concentrações",10],["qui","Tabela periódica e propriedades periódicas",3],["qui","Termoquímica",1]]},"humanas":{"n":253,"topicos":[["geo","Agropecuária e questão agrária",7],["geo","Biomas e domínios morfoclimáticos",7],["geo","Cartografia: coordenadas, escalas e projeções",10],["geo","Clima e fenômenos atmosféricos",6],["geo","Estrutura geológica, relevo e solos",13],["geo","Geopolítica e conflitos mundiais",14],["geo","Globalização, blocos econômicos e comércio",11],["geo","Industrialização e fontes de energia",9],["geo","Outros temas",6],["geo","População: crescimento, estrutura e migrações",19],["geo","Questões ambientais e acordos internacionais",6],["geo","Regionalização e economia do Brasil",4],["geo","Urbanização e rede urbana",9],["his","Antiguidade: Egito, Mesopotâmia, Grécia e Roma",7],["his","Brasil Colônia: açúcar, mineração e escravidão",18],["his","Brasil Império",4],["his","Brasil República: Primeira República e Era Vargas",10],["his","Ditadura militar no Brasil",13],["his","Expansão marítima e colonização da América",3],["his","Guerra Fria e descolonização da África e da Ásia",3],["his","História da África e dos povos indígenas",19],["his","Idade Média: feudalismo, Igreja e mundo islâmico",13],["his","Iluminismo, Revoluções Inglesas e Revolução Industrial",10],["his","Independência dos EUA e Revolução Francesa",2],["his","Independências na América e no Brasil",4],["his","Outros temas",10],["his","Redemocratização e Brasil contemporâneo",3],["his","Renascimento, Reformas e Absolutismo",4],["his","Revolução Russa, crise de 1929 e totalitarismos",4],["his","Segunda Guerra Mundial",5]]}}};
 const QB_INDICE_PAS={"fonte":"PAS/UnB — provas e gabaritos oficiais definitivos do Cebraspe","areas":{"linguagens":{"n":814,"topicos":[["art","Artes visuais, música, teatro e dança",263],["ing","Interpretação de textos em inglês",174],["lit","Gêneros literários",138],["lit","Literatura contemporânea",4],["lit","Modernismo",6],["lit","Parnasianismo e Simbolismo",3],["lit","Pré-Modernismo",1],["lit","Quinhentismo e Barroco",3],["lit","Realismo e Naturalismo",1],["lit","Romantismo",1],["lit","Trovadorismo, Humanismo e Classicismo",2],["por","Classes de palavras",27],["por","Coesão e coerência",15],["por","Concordância verbal e nominal",2],["por","Figuras de linguagem",4],["por","Gêneros e tipos textuais",4],["por","Interpretação e compreensão de textos",73],["por","Ortografia e acentuação",7],["por","Pontuação",11],["por","Regência e crase",1],["por","Semântica: sentido das palavras no contexto",19],["por","Sintaxe do período simples e composto",46],["por","Variação linguística e funções da linguagem",9]]},"matematica":{"n":244,"topicos":[["mat","Análise combinatória",6],["mat","Conjuntos e conjuntos numéricos",1],["mat","Estatística: média, moda, mediana e dispersão",11],["mat","Função afim e função quadrática",2],["mat","Função exponencial e logaritmos",3],["mat","Funções e equações trigonométricas",1],["mat","Funções: domínio, imagem e gráficos",26],["mat","Geometria analítica: ponto, reta, circunferência e cônicas",20],["mat","Geometria espacial: prismas, pirâmides, cilindros, cones e esferas",30],["mat","Geometria plana: ângulos, semelhança, polígonos e áreas",46],["mat","Matemática financeira: juros simples e compostos",1],["mat","Matrizes, determinantes e sistemas lineares",14],["mat","Números complexos",6],["mat","Outros temas",10],["mat","Polinômios e equações algébricas",8],["mat","Probabilidade",12],["mat","Progressões aritméticas e geométricas",10],["mat","Razão, proporção, porcentagem e regra de três",25],["mat","Trigonometria no triângulo retângulo e no ciclo trigonométrico",12]]},"humanas":{"n":711,"topicos":[["fil","Filosofia antiga: pré-socráticos, Sócrates, Platão e Aristóteles",18],["fil","Filosofia contemporânea",11],["fil","Filosofia medieval",2],["fil","Iluminismo e Kant",7],["fil","Outros temas",8],["fil","Racionalismo e empirismo",6],["fil","Ética e filosofia política",17],["geo","Agropecuária e questão agrária",16],["geo","Biomas e domínios morfoclimáticos",31],["geo","Cartografia: coordenadas, escalas e projeções",10],["geo","Clima e fenômenos atmosféricos",26],["geo","Estrutura geológica, relevo e solos",21],["geo","Geopolítica e conflitos mundiais",13],["geo","Globalização, blocos econômicos e comércio",1],["geo","Hidrografia e recursos hídricos",18],["geo","Industrialização e fontes de energia",30],["geo","Outros temas",11],["geo","População: crescimento, estrutura e migrações",45],["geo","Questões ambientais e acordos internacionais",18],["geo","Regionalização e economia do Brasil",21],["geo","Urbanização e rede urbana",24],["his","Antiguidade: Egito, Mesopotâmia, Grécia e Roma",8],["his","Brasil Colônia: açúcar, mineração e escravidão",40],["his","Brasil Império",8],["his","Brasil República: Primeira República e Era Vargas",3],["his","Ditadura militar no Brasil",8],["his","Expansão marítima e colonização da América",8],["his","Guerra Fria e descolonização da África e da Ásia",9],["his","História da África e dos povos indígenas",47],["his","Idade Média: feudalismo, Igreja e mundo islâmico",14],["his","Iluminismo, Revoluções Inglesas e Revolução Industrial",8],["his","Imperialismo e Primeira Guerra Mundial",8],["his","Independência dos EUA e Revolução Francesa",2],["his","Independências na América e no Brasil",5],["his","Outros temas",30],["his","Redemocratização e Brasil contemporâneo",2],["his","Renascimento, Reformas e Absolutismo",2],["his","Revolução Russa, crise de 1929 e totalitarismos",14],["his","Segunda Guerra Mundial",14],["soc","Clássicos: Durkheim, Weber e Marx",1],["soc","Cultura, identidade e diversidade",44],["soc","Desigualdade e estratificação social",20],["soc","Estado, poder e democracia",15],["soc","Globalização e meios de comunicação",8],["soc","Movimentos sociais e cidadania",5],["soc","Outros temas",21],["soc","Trabalho e sociedade",13]]},"natureza":{"n":620,"topicos":[["bio","Bioquímica: água, sais, carboidratos, lipídios, proteínas e ácidos nucleicos",10],["bio","Botânica",18],["bio","Citologia: membrana, organelas e núcleo",18],["bio","Classificação dos seres vivos",22],["bio","Divisão celular: mitose e meiose",2],["bio","Ecologia: cadeias, ciclos, populações e biomas",7],["bio","Evolução",4],["bio","Fisiologia humana",7],["bio","Genética: leis de Mendel e heranças",28],["bio","Histologia e embriologia",1],["bio","Metabolismo energético: fotossíntese e respiração",10],["bio","Outros temas",4],["bio","Problemas ambientais",8],["bio","Vírus, bactérias, protistas e fungos",39],["bio","Zoologia",18],["fis","Cinemática: movimentos uniforme, variado e circular",21],["fis","Eletrodinâmica: corrente, resistores e circuitos",27],["fis","Eletrostática: carga, campo e potencial",8],["fis","Estática e hidrostática",8],["fis","Física moderna: noções",2],["fis","Gases ideais e termodinâmica",2],["fis","Gravitação universal e leis de Kepler",14],["fis","Impulso, quantidade de movimento e colisões",3],["fis","Leis de Newton e aplicações",30],["fis","Magnetismo e indução eletromagnética",8],["fis","Ondas, MHS e acústica",22],["fis","Outros temas",1],["fis","Termometria, calorimetria e dilatação",21],["fis","Trabalho, energia e potência",12],["fis","Óptica geométrica: espelhos, lentes e refração",10],["qui","Cinética química",2],["qui","Eletroquímica: pilhas e eletrólise",14],["qui","Forças intermoleculares e polaridade",5],["qui","Funções inorgânicas: ácidos, bases, sais e óxidos",65],["qui","Isomeria",10],["qui","Matéria, substâncias, misturas e separação",15],["qui","Modelos atômicos e estrutura do átomo",18],["qui","Mol, massa molar e estequiometria",2],["qui","Outros temas",11],["qui","Química ambiental",5],["qui","Química orgânica: cadeias e funções",14],["qui","Radioatividade",10],["qui","Reações orgânicas e polímeros",16],["qui","Reações químicas e balanceamento",33],["qui","Soluções e concentrações",12],["qui","Termoquímica",3]]}}};
 // provas do banco: ENEM (INEP), EsPCEx (Exército), PISM (UFJF) e PAS (UnB); as questões que não são do ENEM têm p:"espcex"|"pism"|"pas"
-const QB_PROVAS=[["","Todas as provas"],["enem","ENEM (INEP)"],["espcex","EsPCEx (Exército)"],["pism","PISM (UFJF)"],["pas","PAS (UnB)"]];
+const QB_PROVAS=[["","Todas as provas"],["enem","ENEM (INEP)"],["espcex","EsPCEx (Exército)"],["pism","PISM (UFJF)"],["pas","PAS (UnB)"],["minhas","Minhas questões (importadas)"]];
 const QB_IDX={enem:QB_INDICE,espcex:QB_INDICE_ESP,pism:QB_INDICE_PISM,pas:QB_INDICE_PAS};
-const QB_FONTE_GAB={enem:"Gabarito oficial do INEP.",espcex:"Gabarito oficial da EsPCEx.",pism:"Gabarito oficial da COPESE/UFJF.",pas:"Gabarito oficial definitivo do Cebraspe."};
+const QB_FONTE_GAB={enem:"Gabarito oficial do INEP.",espcex:"Gabarito oficial da EsPCEx.",pism:"Gabarito oficial da COPESE/UFJF.",pas:"Gabarito oficial definitivo do Cebraspe.",minhas:"Gabarito informado na importação (confira se veio da IA)."};
 const QB_NOME_PROVA={enem:"do ENEM",espcex:"da EsPCEx",pism:"do PISM (UFJF)",pas:"do PAS (UnB)"};
 const qbProva=x=>x.p||"enem";
 // letra de cada opção: A–E, ou C/E nos itens "certo ou errado" do PAS
 const qbL=(x,k)=>x.ce?"CE"[k]:"ABCDE"[k];
 const qbLNome=(x,k)=>x.ce?["Certo","Errado"][k]:"ABCDE"[k];
 const qbSoLetras=x=>qbProva(x)!=="enem"&&!x.ce&&!x.a[0][0];
-function qbIndiceDe(prova){const ix=prova?[QB_IDX[prova]]:Object.values(QB_IDX);const areas={};
+function qbIndiceDe(prova){const ix=prova?[QB_IDX[prova]].filter(Boolean):Object.values(QB_IDX);const areas={};
   ix.forEach(I=>Object.entries(I.areas).forEach(([a,x])=>{const o=areas[a]=areas[a]||{n:0,topicos:[]};o.n+=x.n;x.topicos.forEach(([m,t,n])=>{const e=o.topicos.find(z=>z[0]===m&&z[1]===t);if(e)e[2]+=n;else o.topicos.push([m,t,n])})}));return {areas}}
 const qbTotalDe=I=>Object.values(I.areas).reduce((a,x)=>a+x.n,0);
 const QB_TOTAL_ENEM=qbTotalDe(QB_INDICE),QB_TOTAL_ESP=qbTotalDe(QB_INDICE_ESP),QB_TOTAL=Object.values(QB_IDX).reduce((a,I)=>a+qbTotalDe(I),0);
@@ -3654,7 +3659,7 @@ function qbEstado(){
   if(!S.qb)S.qb={dados:{},carregando:{},f:{prova:"",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0},sel:null,lim:QB_POR_PAGINA,esc:{},corte:{},doc:null};
   return S.qb}
 async function qbDoc(){const q=qbEstado();if(q.doc)return q.doc;let d=null;try{d=await ler("questoes")}catch(e){}
-  q.doc=d&&typeof d==="object"?{r:d.r||{},s:d.s||{},e:d.e||{}}:{r:{},s:{},e:{}};
+  q.doc=d&&typeof d==="object"?{r:d.r||{},s:d.s||{},e:d.e||{},m:d.m||{},mn:d.mn||0}:{r:{},s:{},e:{},m:{},mn:0};
   // caderno de erros: questões erradas antes desta versão entram como "para corrigir"
   Object.entries(q.doc.r).forEach(([id,r])=>{if(!r[1]&&!q.doc.e[id])q.doc.e[id]={n:1,em:r[2]||Date.now(),c:0,m:r[0]}});return q.doc}
 const qbPendente=(doc,id)=>!!(doc&&doc.e&&doc.e[id]&&!doc.e[id].c);
@@ -3677,15 +3682,20 @@ function qbMd(s){
   h=h.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/(^|[\s(>])_([^_\n]+)_(?=[\s.,;:)!?<]|$)/g,"$1<i>$2</i>").replace(/(^|[\s(>])\*([^*\n]+)\*(?=[\s.,;:)!?<]|$)/g,"$1<i>$2</i>");
   return h.split(/\n{2,}/).map(p=>p.trim()?`<p>${p.replace(/ {2,}\n|\n/g,"<br>")}</p>`:"").join("")}
 function qbTopicosEdital(){if(!S.edital)return null;const set=new Set();S.edital.materias.forEach(m=>m.topicos.forEach(t=>set.add(qbNorm(t.t))));return set}
+/* ===== Minhas questões: importadas por foto (a IA digitaliza) — ficam no caderno, já como resolvidas ===== */
+const qbAreaDaMat=m=>Object.keys(QB_AREA_MAT).find(a=>QB_AREA_MAT[a].includes(m))||"linguagens";
+function qbMinhas(){const doc=qbEstado().doc;if(!doc||!doc.m)return [];
+  return Object.entries(doc.m).map(([id,o])=>({id,p:"minhas",n:o.n,m:QB_MAT[o.m]?o.m:"por",t:o.t||"Questão importada",c:o.c||"",i:o.i||"",ce:!!o.ce,
+    a:(o.a||[]).map(t=>[t,""]),r:o.r,area:qbAreaDaMat(o.m),em:o.em,ia:!!o.ia})).sort((a,b)=>b.n-a.n)}
 function qbLista(){
   const q=qbEstado(),f=q.f,doc=q.doc||{r:{},s:{},e:{}};
-  const areas=f.area?[f.area]:QB_AREAS.map(a=>a[0]);let l=[];areas.forEach(a=>{if(q.dados[a])l=l.concat(q.dados[a])});
+  const areas=f.area?[f.area]:QB_AREAS.map(a=>a[0]);let l=qbMinhas().filter(x=>!f.area||x.area===f.area);areas.forEach(a=>{if(q.dados[a])l=l.concat(q.dados[a])});
   const ed=f.edital?qbTopicosEdital():null,b=qbNorm(f.busca).trim();
   return l.filter(x=>(!f.prova||qbProva(x)===f.prova)&&(!f.nivel||x.d===f.nivel)&&(!f.m||x.m===f.m)&&(!f.t||x.t===f.t)&&(!f.ano||x.ano===+f.ano)&&(!ed||ed.has(qbNorm(x.t)))
     &&(!f.sit||x.id===q.sel||(f.sit==="nao"&&!doc.r[x.id])||(f.sit==="erradas"&&qbPendente(doc,x.id))||(f.sit==="corrigidas"&&qbCorrigida(doc,x.id))||(f.sit==="certas"&&doc.r[x.id]&&doc.r[x.id][1])||(f.sit==="salvas"&&doc.s[x.id]))
     &&(!b||qbNorm(x.c+" "+x.i+" "+(x.b||"")+" "+x.a.map(a=>a[0]).join(" ")+" "+x.t+" "+(x.p||"enem")).includes(b)||String(x.ano)===b))}
-const qbRotulo=x=>x.p==="espcex"?`EsPCEx ${x.ano}`:x.p==="pism"?`PISM ${x.ano} · Módulo ${x.mo}`:x.p==="pas"?`PAS ${x.ano} · ${x.et}ª etapa`:`ENEM ${x.ano}`;
-const qbDia=x=>x.p==="pas"?"":`${x.dia}º dia`;
+const qbRotulo=x=>x.p==="minhas"?"Banco de questões":x.p==="espcex"?`EsPCEx ${x.ano}`:x.p==="pism"?`PISM ${x.ano} · Módulo ${x.mo}`:x.p==="pas"?`PAS ${x.ano} · ${x.et}ª etapa`:`ENEM ${x.ano}`;
+const qbDia=x=>x.p==="pas"||x.p==="minhas"?"":`${x.dia}º dia`;
 function qbResumoTexto(x){if(qbProva(x)!=="enem"&&x.b){const t=x.b.replace(/^\s*(QUEST[ÃA]O\s*)?\d{1,3}\s*[.)-]?\s*/i,"").replace(/\s*[\[(|]?A[\])|].*$/,"").trim();return t.length>150?t.slice(0,150)+"…":t}const t=(x.i||x.c||"").replace(/!\[[^\]]*\]\([^)]*\)/g,"[figura]").replace(/[*_#>]/g,"").replace(/\s+/g," ").trim();return t.length>150?t.slice(0,150)+"…":t}
 async function renderQuestoes(){
   const q=qbEstado();
@@ -3716,6 +3726,7 @@ function qbTela(){
       <div class="stat"><div class="eyebrow">Neste filtro</div><div class="v">${lista.length}</div></div>
     </div>
     ${qbCadernoHtml()}
+    ${qbMeuCadernoHtml()}
     <div class="card qb-filtros">
       <div class="qb-busca">${ico("search")}<input id="qb-busca" type="search" placeholder="Buscar por palavra, assunto ou ano" value="${esc(f.busca)}" aria-label="Buscar questões"></div>
       <div class="qb-chips" role="tablist" aria-label="Área">${[["","Todas"]].concat(QB_AREAS).map(([k,n])=>`<button type="button" class="qb-chip ${f.area===k?"on":""}" data-qarea="${k}">${n}</button>`).join("")}</div>
@@ -3754,12 +3765,14 @@ function qbDetalhe(x,lista){
   return `<article class="card qb-det">
     <div class="row qb-det-top"><button class="btn sm ghost qb-voltar" type="button" id="qb-voltar">${ico("back")}Lista</button>
       <div class="row" style="gap:6px;flex-wrap:wrap;flex:1"><span class="pill solid">${qbRotulo(x)}</span>${qbDia(x)?`<span class="pill">${qbDia(x)}</span>`:""}${x.p==="espcex"&&x.mod?`<span class="pill">Modelo ${esc(x.mod)}</span>`:""}<span class="pill">${x.p==="pas"?"Item":"Questão"} ${x.n}</span>${x.ce?`<span class="pill">Certo ou errado</span>`:""}${qbSeloNivel(x)}${x.lg?`<span class="pill">${x.lg==="ingles"?"Inglês":"Espanhol"}</span>`:""}${qbSeloResolvida(r)}</div>
-      ${FBM()?`<button class="btn sm ghost" type="button" id="qb-enviar" title="Enviar esta questão para um chat">${ico("send")}Enviar</button>`:""}
+      ${x.p==="minhas"?`<button class="btn sm ghost" type="button" id="qb-foto" hidden>${ico("file")}Foto</button><button class="btn sm ghost" type="button" id="qb-apagar" title="Apagar do caderno">${ico("lixo")}Apagar</button>`:""}
+      ${FBM()&&x.p!=="minhas"?`<button class="btn sm ghost" type="button" id="qb-enviar" title="Enviar esta questão para um chat">${ico("send")}Enviar</button>`:""}
       <button class="btn sm ${doc.s[x.id]?"primary":"ghost"}" type="button" id="qb-salvar" aria-pressed="${!!doc.s[x.id]}" title="Salvar questão">${ico("bookmark")}${doc.s[x.id]?"Salva":"Salvar"}</button></div>
     <div class="small muted">${QB_MAT[x.m]} · ${esc(x.t)}</div>
     ${x.x?`<div class="qb-resultado no small"><b>Esta questão não contou na nota.</b> O INEP a retirou do cálculo da nota (TRI). Você pode resolvê-la como treino; por isso ela não tem nível.</div>`:""}
     ${qbPendente(doc,x.id)&&!resp?`<div class="qb-corr small">${ico("repeat")}<span><b>Correção:</b> você já errou esta questão${doc.e[x.id].n>1?` ${doc.e[x.id].n} vezes`:""}${doc.e[x.id].m!=null?` (marcou ${qbLNome(x,doc.e[x.id].m)})`:""}. Resolva de novo para tirá-la do caderno de erros.</span></div>`:""}
     ${q.corrigiu===x.id&&resp&&sel===x.r?`<div class="qb-corr ok small">${ico("check")}<span><b>Corrigida!</b> Você acertou uma questão que tinha errado antes.</span></div>`:""}
+    ${x.p==="minhas"&&x.ia?`<div class="small muted">O gabarito desta questão foi dado pela IA (não estava na foto). Confira.</div>`:""}
     <div class="qb-texto">${qbMd(x.c)}</div>
     ${x.i?`<div class="qb-enun">${qbMd(x.i)}</div>`:""}
     ${qbSoLetras(x)?`<p class="small muted qb-esp-dica">${ico("search")}Toque na imagem para ampliar. Leia as alternativas na prova e marque a letra:</p>`:""}
@@ -3803,6 +3816,8 @@ function qbLigar(lista){
   $("#qb-prova").onchange=e=>{f.prova=e.target.value;if(f.prova==="enem"&&+f.ano>2023)f.ano="";if(f.t&&!qbIndiceDe(f.prova).areas[f.area||"matematica"])f.t="";q.lim=QB_POR_PAGINA;q.sel=null;qbTela()};
   $("#qb-ano").onchange=e=>{f.ano=e.target.value;q.lim=QB_POR_PAGINA;qbTela()};
   const ci=$("#qb-cad-ir");if(ci)ci.onclick=abrirCadernoErros;
+  const im=$("#qb-importar");if(im)im.onclick=qbImportarModal;
+  const mc=$("#qb-meu-cad");if(mc)mc.onclick=()=>{Object.assign(f,{prova:"minhas",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0});q.sel=null;q.lim=QB_POR_PAGINA;qbTela()};
   const cc=$("#qb-cad-corr");if(cc)cc.onclick=()=>{Object.assign(f,{sit:"corrigidas"});q.sel=null;q.lim=QB_POR_PAGINA;renderQuestoes()};
   $("#qb-sit").onchange=e=>{f.sit=e.target.value;q.lim=QB_POR_PAGINA;qbTela()};
   const ed=$("#qb-ed");if(ed)ed.onchange=()=>{f.edital=ed.checked;q.lim=QB_POR_PAGINA;qbTela()};
@@ -3819,6 +3834,9 @@ function qbLigar(lista){
   const co=$("#qb-corrigir");if(co)co.onclick=()=>{delete q.doc.r[x.id];delete q.esc[x.id];q.mostrar=null;q.corrigiu=null;qbSalvar();const y=scrollY;qbTela();scrollTo(0,y)};
   const rf=$("#qb-refazer");if(rf)rf.onclick=()=>{delete q.doc.r[x.id];q.esc[x.id]=null;delete q.esc[x.id];q.mostrar=null;qbSalvar();qbTela()};
   const en=$("#qb-enviar");if(en)en.onclick=()=>qbEnviarModal(x);
+  if(x.p==="minhas"){const fb=$("#qb-foto");qbFotoLer(x.id).then(u=>{if(u&&fb&&fb.isConnected){fb.hidden=false;fb.onclick=()=>qbZoom([u],"Foto original da questão")}}).catch(()=>{});
+    const ap=$("#qb-apagar");if(ap)ap.onclick=()=>{if(ap.dataset.ok!=="1"){ap.dataset.ok="1";ap.textContent="Toque de novo para apagar";return}
+      delete q.doc.m[x.id];delete q.doc.r[x.id];delete q.doc.s[x.id];if(q.doc.e)delete q.doc.e[x.id];qbSalvar();qbFotoApagar(x.id);q.sel=null;toast("Questão apagada do caderno.");qbTela()}}
   $("#qb-salvar").onclick=()=>{if(q.doc.s[x.id])delete q.doc.s[x.id];else q.doc.s[x.id]=Date.now();qbSalvar();const y=scrollY;qbTela();scrollTo(0,y)};
   $("#qb-voltar").onclick=()=>{q.sel=null;qbTela();const it=$(`[data-qsel="${x.id}"]`);if(it)it.scrollIntoView({block:"center"})};
   $("#qb-ant").onclick=()=>{if(i>0)qbAbrir(lista[i-1].id)};
@@ -3929,6 +3947,81 @@ function qbCadernoHtml(){
       <div class="row" style="gap:6px">${pend.length?`<button class="btn primary" type="button" id="qb-cad-ir">${ico("play")}Corrigir agora</button>`:""}${corr.length?`<button class="btn sm ghost" type="button" id="qb-cad-corr">Ver corrigidas</button>`:""}</div></div>
     <div class="qb-cad-barra" role="img" aria-label="${corr.length} de ${tot} erros corrigidos"><i style="width:${Math.round(corr.length/tot*100)}%"></i></div>
     ${mats.length?`<div class="qb-cad-mats">${mats.slice(0,8).map(([m,n])=>`<span class="pill">${esc(m)} <b>${n}</b></span>`).join("")}${q.f.area?`<span class="small muted">· contagem das áreas já carregadas</span>`:""}</div>`:""}</div>`}
+function qbMeuCadernoHtml(){
+  const l=qbMinhas(),doc=qbEstado().doc||{r:{}},certas=l.filter(x=>doc.r[x.id]&&doc.r[x.id][1]).length;
+  return `<div class="card qb-meucad"><div class="qb-cad-top"><span class="qb-cad-ic">📒</span><div style="min-width:0;flex:1"><h3>Meu caderno de questões</h3>
+    <p class="small muted">${l.length?`<b style="color:var(--fg)">${l.length}</b> ${l.length===1?"questão importada":"questões importadas"}, todas resolvidas · ${certas} ${certas===1?"acerto":"acertos"}. Elas aparecem como “Banco de questões · Questão nº”.`:"Tire foto de uma questão de qualquer prova, livro ou lista: a IA digita a questão e ela entra aqui como resolvida."}</p></div>
+    <div class="row" style="gap:6px"><button class="btn primary" type="button" id="qb-importar">${ico("plus")}Importar questão</button>${l.length?`<button class="btn sm ghost" type="button" id="qb-meu-cad">Abrir caderno</button>`:""}</div></div></div>`}
+// foto original: guardada só neste aparelho (não vai para a nuvem)
+let qbFotoDbP=null;
+function qbFotoDb(){if(!qbFotoDbP)qbFotoDbP=new Promise((ok,no)=>{const r=indexedDB.open("la-minhas-"+(S.uid||"anon"),1);r.onupgradeneeded=()=>r.result.createObjectStore("fotos");r.onsuccess=()=>ok(r.result);r.onerror=()=>no(r.error)});qbFotoDbP.catch(()=>{qbFotoDbP=null});return qbFotoDbP}
+async function qbFotoGuardar(id,dataUrl){try{const db=await qbFotoDb();await new Promise((ok,no)=>{const t=db.transaction("fotos","readwrite");t.objectStore("fotos").put(dataUrl,id);t.oncomplete=ok;t.onerror=()=>no(t.error)})}catch(e){}}
+async function qbFotoLer(id){const db=await qbFotoDb();return new Promise(ok=>{const g=db.transaction("fotos").objectStore("fotos").get(id);g.onsuccess=()=>ok(g.result||null);g.onerror=()=>ok(null)})}
+async function qbFotoApagar(id){try{const db=await qbFotoDb();db.transaction("fotos","readwrite").objectStore("fotos").delete(id)}catch(e){}}
+function promptDigitalizarQuestao(){
+  return `As imagens anexadas são fotos de uma ou mais questões de prova (vestibular, concurso, escola, livro ou lista). Digite cada questão completa, fielmente, em português.
+- "texto": o texto-base e o enunciado completos, com as quebras de parágrafo. Fórmulas em texto simples (ex.: x^2, √2, 3/4). Figura, gráfico ou tabela que não dá para digitar: descreva entre colchetes, ex.: [Figura: triângulo retângulo com catetos 3 e 4].
+- "alternativas": o texto de cada alternativa, em ordem, SEM a letra (ex.: ["12","15","18","21","24"]). Questão de certo ou errado: "certo_errado": true e "alternativas": ["Certo","Errado"].
+- "materia": uma destas chaves: ${Object.entries(QB_MAT).map(([k,n])=>k+" ("+n+")").join(", ")}.
+- "topico": o assunto da questão em poucas palavras (ex.: "Função do 2º grau", "Revolução Francesa").
+- "gabarito": a letra correta se o gabarito aparecer na foto; senão resolva a questão você mesmo e diga a letra, com "gabarito_da_ia": true.
+- "marcada": a letra que o estudante marcou à mão na foto (círculo, X, rabisco), ou "" se não houver marca.
+- Ignore cabeçalhos, números de página e marcas d'água. Se não houver questão nas fotos, devolva "questoes": [] e explique em "observacao".
+Responda SOMENTE com JSON válido:
+{"questoes":[{"texto":"...","alternativas":["..."],"certo_errado":false,"materia":"mat","topico":"...","gabarito":"C","gabarito_da_ia":false,"marcada":""}],"observacao":""}`}
+function qbImportarModal(){
+  if(!iaEditalDisponivel()){toast("A importação por foto precisa da IA. Entre com sua conta para usar.");return}
+  const bg=document.createElement("div");bg.className="modal-bg";
+  bg.innerHTML=`<div class="card stack modal qb-imp" role="dialog" aria-modal="true" aria-labelledby="qi-t" style="max-width:760px;width:100%;max-height:92vh;overflow:auto">
+    <div class="row" style="justify-content:space-between"><h3 id="qi-t">Importar questão</h3><button class="btn icon ghost sm" type="button" data-qi="x" aria-label="Fechar">✕</button></div>
+    <div id="qi-corpo" class="stack">
+      <p class="small muted">Tire uma foto da questão (ou escolha da galeria). Pode ser mais de uma foto, e cada foto pode ter várias questões. A IA digita tudo, você confere e a questão entra no seu caderno como resolvida.</p>
+      <label class="drop" for="qi-file">${ico("file")}<b>Tirar foto ou escolher imagem</b><span class="small muted">JPG, PNG ou foto da câmera · até 6 fotos</span></label>
+      <input type="file" id="qi-file" accept="image/*" multiple hidden>
+    </div></div>`;
+  document.body.appendChild(bg);
+  const fechar=()=>bg.remove();bg.addEventListener("click",e=>{if(e.target===bg||e.target.closest('[data-qi="x"]'))fechar()});
+  bg.querySelector("#qi-file").onchange=async ev=>{const fs=[...ev.target.files].filter(f=>/^image\//.test(f.type)).slice(0,6);if(!fs.length)return;
+    const corpo=bg.querySelector("#qi-corpo");corpo.innerHTML=`<div class="loadbox"><div class="row"><span class="spinner"></span><b>A IA está digitalizando ${fs.length===1?"a foto":"as "+fs.length+" fotos"}…</b></div><p class="small muted">Isso leva alguns segundos.</p><div class="prog"><i id="qi-p" style="width:10%"></i></div></div>`;
+    try{const imgs=await Promise.all(fs.map(imagemParaIA));const foto="data:image/jpeg;base64,"+imgs[0].b64;let r;
+      const op={tempo:60000,seguir:true,onText:({text})=>{const pp=bg.querySelector("#qi-p");if(pp)pp.style.width=Math.min(95,10+text.length/25)+"%"}};
+      if(S.sample)r=await iaJson(promptDigitalizarQuestao(),Object.assign(op,{arquivos:fs}));else r=await iaJson(promptDigitalizarQuestao(),Object.assign(op,{imagens:imgs}));
+      const qs=(r&&Array.isArray(r.questoes)?r.questoes:[]).filter(x=>x&&(x.texto||"").trim());
+      if(!qs.length){corpo.innerHTML=`<div class="empty-state stack"><b>Não encontrei questão nesta foto.</b><span class="small muted">${esc(r&&r.observacao||"Tente uma foto mais nítida, de frente e com boa luz.")}</span><button class="btn" type="button" data-qi="x">Fechar</button></div>`;return}
+      qbImportarRevisar(bg,qs,foto)}
+    catch(e){console.warn("importar questão",e);corpo.innerHTML=`<div class="empty-state stack"><b>A IA não conseguiu ler a foto agora.</b><span class="small muted">${esc(iaErroTxt(e))}</span><button class="btn" type="button" data-qi="x">Fechar</button></div>`}};
+  bg.querySelector(".drop").focus&&bg.querySelector(".drop").focus();
+}
+function qbImportarRevisar(bg,qs,foto){
+  const corpo=bg.querySelector("#qi-corpo"),L="ABCDE",letra=v=>{const k=L.indexOf(String(v||"").trim().toUpperCase().charAt(0));return k};
+  const ops=(n,v,ce)=>Array.from({length:n},(_,k)=>`<option value="${k}" ${v===k?"selected":""}>${ce?["Certo","Errado"][k]:L[k]}</option>`).join("");
+  corpo.innerHTML=`<p class="small muted">Confira o que a IA digitou e corrija se precisar. ${qs.length>1?`Foram encontradas <b>${qs.length}</b> questões.`:""}</p>
+    ${qs.map((x,i)=>{const ce=!!x.certo_errado,alts=(Array.isArray(x.alternativas)?x.alternativas:[]).map(String).slice(0,5),n=ce?2:Math.max(2,alts.length||5);
+      let g=ce?(/^e/i.test(x.gabarito||"")?1:0):letra(x.gabarito);if(g<0||g>=n)g=0;let mk=ce?(x.marcada?(/^e/i.test(x.marcada)?1:0):-1):letra(x.marcada);if(mk<0||mk>=n)mk=g;
+      return `<div class="card flat stack sm qi-q" data-i="${i}" data-ce="${ce?1:0}">
+        <div class="row" style="justify-content:space-between"><b>Questão ${i+1}</b><label class="small row" style="gap:6px"><input type="checkbox" class="tg" data-qi-usar checked> Importar</label></div>
+        <div class="grid2" style="gap:8px"><label class="field"><span class="small">Matéria</span><select data-qi-m>${Object.entries(QB_MAT).map(([k,nm])=>`<option value="${k}" ${x.materia===k?"selected":""}>${nm}</option>`).join("")}</select></label>
+          <label class="field"><span class="small">Tópico</span><input type="text" data-qi-t maxlength="80" value="${esc(x.topico||"")}"></label></div>
+        <label class="field"><span class="small">Texto e enunciado</span><textarea data-qi-c style="min-height:140px">${esc(x.texto||"")}</textarea></label>
+        ${ce?"":`<div class="stack sm">${Array.from({length:n},(_,k)=>`<label class="row" style="gap:8px;flex-wrap:nowrap"><b class="mono">${L[k]}</b><input type="text" data-qi-a="${k}" value="${esc(alts[k]||"")}" style="flex:1"></label>`).join("")}</div>`}
+        <div class="grid2" style="gap:8px"><label class="field"><span class="small">Gabarito${x.gabarito_da_ia?" (dado pela IA, confira)":""}</span><select data-qi-g>${ops(n,g,ce)}</select></label>
+          <label class="field"><span class="small">Sua resposta</span><select data-qi-r>${ops(n,mk,ce)}</select></label></div>
+        <input type="hidden" data-qi-ia value="${x.gabarito_da_ia?1:0}"></div>`}).join("")}
+    <div class="row" style="justify-content:flex-end;gap:8px"><button class="btn ghost" type="button" data-qi="x">Cancelar</button><button class="btn primary" type="button" id="qi-salvar">${ico("check")}Salvar no caderno</button></div>`;
+  corpo.querySelector("#qi-salvar").onclick=async()=>{const q=qbEstado();await qbDoc();const doc=q.doc;doc.m=doc.m||{};const novos=[];
+    corpo.querySelectorAll(".qi-q").forEach(card=>{if(!card.querySelector("[data-qi-usar]").checked)return;const ce=card.dataset.ce==="1";
+      const c=card.querySelector("[data-qi-c]").value.trim();if(!c)return;
+      const a=ce?["Certo","Errado"]:[...card.querySelectorAll("[data-qi-a]")].map(i=>i.value.trim());
+      const id="mq"+uid();doc.mn=(doc.mn||0)+1;
+      doc.m[id]={n:doc.mn,m:card.querySelector("[data-qi-m]").value,t:card.querySelector("[data-qi-t]").value.trim().slice(0,80)||"Questão importada",c:c.slice(0,6000),i:"",ce,a:a.map(t=>t.slice(0,800)),r:+card.querySelector("[data-qi-g]").value,em:Date.now(),ia:card.querySelector("[data-qi-ia]").value==="1"};
+      novos.push([id,+card.querySelector("[data-qi-r]").value])});
+    if(!novos.length){toast("Nenhuma questão marcada para importar.");return}
+    // entram como resolvidas: contam nas estatísticas e, se errou, vão para o caderno de erros
+    novos.forEach(([id,k])=>{const x=qbMinhas().find(y=>y.id===id);if(x)qbRegistrar(x,k);if(foto)qbFotoGuardar(id,foto)});
+    bg.remove();Object.assign(q.f,{prova:"minhas",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0});q.sel=novos[0][0];q.mostrar=novos[0][0];q.lim=QB_POR_PAGINA;
+    toast(novos.length===1?"Questão salva no seu caderno.":`${novos.length} questões salvas no seu caderno.`);
+    if(S.view==="questoes")qbTela();else go("questoes")};
+}
 async function abrirCadernoErros(){const q=qbEstado();Object.assign(q.f,{area:"",m:"",t:"",ano:"",sit:"erradas",busca:"",edital:false,nivel:0});q.sel=null;q.lim=QB_POR_PAGINA;
   go("questoes");await qbDoc();await Promise.all(QB_AREAS.map(([a])=>qbCarregar(a).catch(()=>{})));if(S.view!=="questoes")return;
   const l=qbLista();if(l.length)qbAbrir(l[0].id);else qbTela()}
@@ -6156,13 +6249,13 @@ function resgatarIdioma(k){
     return {xp:ganho,nivel,subiu:nivel>nivelDe(antes)}});
   SRV.fila=job.catch(()=>{});return job}
 /* ================= Jogo limpo: anti-trapaça ================= */
-const LIMITE_DIA=960; // 16 horas
+const LIMITE_DIA=1200; // 20 horas
 const tsMs=v=>typeof v==="number"?v:v&&typeof v.toMillis==="function"?v.toMillis():v&&v.seconds?v.seconds*1000:Date.now();
 function riscoDe(r,p){
   if(!r)return {score:0,nivel:"baixo",motivos:[]};
   const m=[];let sc=0;const dias=r.dias||{},vals=Object.values(dias).map(Number).filter(x=>!isNaN(x));
   const maxD=Math.max(0,...vals);
-  if(maxD>LIMITE_DIA){sc+=60;m.push("Mais de 16 horas registradas em um único dia")}else if(maxD>720){sc+=25;m.push("Mais de 12 horas em um único dia")}
+  if(maxD>LIMITE_DIA){sc+=60;m.push("Mais de 20 horas registradas em um único dia")}else if(maxD>720){sc+=25;m.push("Mais de 12 horas em um único dia")}
   let s7=0;for(let i=0;i<7;i++)s7+=dias[diasAtras(i)]||0;if(s7/7>600){sc+=30;m.push("Média acima de 10 horas por dia na semana")}
   const hoje=dias[dataISO()]||0;let prev=0,n=0;for(let i=1;i<=14;i++){const v=dias[diasAtras(i)]||0;prev+=v;if(v>0)n++}
   const media=n?prev/n:0;if(hoje>360&&media>0&&hoje>media*4){sc+=20;m.push("Salto de tempo muito acima da média da pessoa")}
@@ -6233,9 +6326,9 @@ function telaJogoLimpo(){
         ${rk.nivel==="alto"?`<p class="small">Enquanto o risco estiver alto, não dá para resgatar recompensas e sua conta sai do ranking. Isso volta ao normal sozinho quando os registros se normalizam.</p>`:""}</div>
       <div class="card stack"><h3>Como protegemos o ranking</h3>
         <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px" class="small">
-          <li><b>Regras no servidor:</b> o banco de dados recusa somar mais tempo do que o tempo real que passou desde a última sessão registrada, e nenhum dia passa de 16 horas.</li>
+          <li><b>Regras no servidor:</b> o banco de dados recusa somar mais tempo do que o tempo real que passou desde a última sessão registrada, e nenhum dia passa de 20 horas.</li>
           <li><b>“Ainda estudando?”:</b> o cronômetro pergunta a cada ${CHECK_MIN} minutos. Sem resposta em ${CHECK_TOL} minutos, ele pausa e o tempo depois da pergunta não conta.</li>
-          <li><b>Detector automático:</b> analisa os registros públicos de todos (dias acima de 16h, médias impossíveis, saltos, sessões gigantes ou repetidas, contas novas com muitas horas). Contas suspeitas saem do pódio e ficam “em análise”.</li>
+          <li><b>Detector automático:</b> analisa os registros públicos de todos (dias acima de 20h, médias impossíveis, saltos, sessões gigantes ou repetidas, contas novas com muitas horas). Contas suspeitas saem do pódio e ficam “em análise”.</li>
           <li><b>Análise com IA:</b> ${S.sample?"a IA (Claude) revisa os padrões e confirma ou descarta suspeitas.":"disponível na versão do site no claude.ai, onde a IA (Claude) revisa os padrões. Nesta versão, o detector automático faz a verificação."}</li>
         </ul></div>
     </div>
@@ -6262,7 +6355,7 @@ function renderConfig(){
           ${mats.length?`<div class="bars-h">${mats.slice(0,10).map(([m,v])=>`<div class="r"><span>${esc(m)}</span><span class="mono small">${fmtH(v)}</span><div class="prog"><i style="width:${Math.round(v/mx*100)}%"></i></div></div>`).join("")}</div>`:""}
         </div>`})()}
       <div class="card row" style="justify-content:space-between"><div><h3>Meta diária de estudo</h3><p class="small muted">Aparece no início como um anel de progresso. Hoje: ${fmtH(metaHoje())}.</p></div>
-        <select id="cf-meta" style="width:auto">${[[0,"Automática (pelo plano)"],[30,"30 min"],[60,"1 hora"],[90,"1h30"],[120,"2 horas"],[180,"3 horas"],[240,"4 horas"],[300,"5 horas"],[360,"6 horas"],[480,"8 horas"]].map(([v,n])=>`<option value="${v}" ${(+S.perfil.metaDia||0)===v?"selected":""}>${n}</option>`).join("")}</select></div>
+        <select id="cf-meta" style="width:auto">${[[0,"Automática (pelo plano)"],[30,"30 min"],[60,"1 hora"],[90,"1h30"],[120,"2 horas"],[180,"3 horas"],[240,"4 horas"],[300,"5 horas"],[360,"6 horas"],[480,"8 horas"],[600,"10 horas"],[720,"12 horas"],[840,"14 horas"],[960,"16 horas"],[1080,"18 horas"],[1200,"20 horas"]].map(([v,n])=>`<option value="${v}" ${(+S.perfil.metaDia||0)===v?"selected":""}>${n}</option>`).join("")}</select></div>
       <div class="card row" style="justify-content:space-between"><div><h3>Suas respostas</h3><p class="small muted">${esc(descObjetivo(S.perfil))} · ${S.perfil.materias.length} matérias · ${fmtH(DIAS.reduce((a,x)=>a+(+S.perfil.horas[x.k]||0),0)*60)} por semana</p></div>
         <div class="row" style="gap:8px"><button class="btn" type="button" id="cf-ed">${ico("gear")}Matérias e horários</button></div></div>
       <div class="card row" style="justify-content:space-between"><div><h3>Armazenamento</h3><p class="small muted">${S.mode==="nuvem"?"Seus dados estão salvos na nuvem, ligados à sua conta.":"Modo visitante: nada é salvo e tudo some ao fechar o app. Entre com uma conta para salvar na nuvem."}</p></div>
