@@ -48,6 +48,14 @@
         <div style="min-width:0;text-align:left"><b>${t.dia}º dia · ${fmtPts(t.total)} de ${t.max} pontos</b><div class="small muted">${new Date(t.em).toLocaleDateString("pt-BR")} · objetivas ${t.obj}/${t.nObj} · discursivas ${fmtPts(t.disc)}/${t.nDisc * 5}${t.discPend ? " (correção pendente)" : ""} · ${minTxt(t.tempo)}</div></div><span class="small muted">Ver correção ›</span></button>`).join("")}</div>` : ""}
     </div>`;
   }
+  // figuras da questão (gráficos, esquemas, mapas, obras de arte): com fonte e toque para ampliar
+  const figs = q => (q.img || []).map(f => `<figure class="sim-fig"><button type="button" class="sim-fig-b" data-zoom="${esc(f.src)}" aria-label="Ampliar a figura"><img src="${esc(f.src)}" alt="${esc(f.alt || "Figura da questão")}" loading="lazy"></button>${f.fonte ? `<figcaption class="small muted">${esc(f.fonte)}</figcaption>` : ""}</figure>`).join("");
+  function ampliar(src, alt) {
+    const bg = document.createElement("div"); bg.className = "modal-bg sim-zoom";
+    bg.innerHTML = `<div class="sim-zoom-c" role="dialog" aria-modal="true" aria-label="Figura ampliada"><button class="btn sm" type="button" data-z="x">Fechar ✕</button><img src="${esc(src)}" alt="${esc(alt || "")}"></div>`;
+    document.body.appendChild(bg); bg.addEventListener("click", e => { if (e.target === bg || e.target.closest('[data-z="x"]')) bg.remove(); });
+  }
+  document.addEventListener("click", e => { const b = e.target.closest(".sim-fig-b"); if (b && CONT && CONT.contains(b)) { const im = b.querySelector("img"); ampliar(b.dataset.zoom, im && im.alt); } });
   const fmtPts = n => (Math.round((+n || 0) * 10) / 10).toLocaleString("pt-BR");
 
   function confirmarInicio(id, dia) {
@@ -88,6 +96,7 @@
         <div class="row" style="justify-content:space-between;gap:8px;flex-wrap:wrap"><div class="row" style="gap:6px;flex-wrap:wrap"><span class="pill solid">${it.tipo === "o" ? "Questão " + q.n : "Questão discursiva " + q.n}</span><span class="pill">${esc(nomeMat(q.m))}</span>${it.tipo === "d" ? `<span class="pill">5 pontos</span>` : ""}</div>
           <button class="btn sm ghost" type="button" id="sim-marcar" aria-pressed="${!!P.marcadas[P.atual]}">${P.marcadas[P.atual] ? "★ Marcada para revisar" : "☆ Marcar para revisar"}</button></div>
         ${(q.apoio || []).map(k => `<details class="sim-apoio" open><summary>${esc(((P.d.textos[k] || "").match(/\*\*(.+?)\*\*/) || [, "Texto de apoio"])[1])}</summary><div class="sim-txt">${APP.md((P.d.textos[k] || "").replace(/^\*\*.+?\*\*\s*/, ""))}</div></details>`).join("")}
+        ${figs(q)}
         <div class="sim-enun">${APP.md(q.texto)}</div>
         ${it.tipo === "o" ? `<div class="sim-alts" role="radiogroup" aria-label="Alternativas">${q.a.map((t, k) => `<button type="button" class="sim-alt ${resp === k ? "on" : ""}" role="radio" aria-checked="${resp === k}" data-alt="${k}"><span class="qb-l">${L[k]}</span><span>${esc(t)}</span></button>`).join("")}</div>`
           : `<div class="stack">${q.itens.map(x => `<label class="field"><span><b>${x.p})</b> ${esc(x.enun)} <span class="small muted">(${fmtPts(x.pontos)} pontos)</span></span><textarea data-disc="${x.p}" rows="5" placeholder="Escreva sua resposta…">${esc((P.disc[q.n] || {})[x.p] || "")}</textarea></label>`).join("")}</div>`}
@@ -190,12 +199,14 @@ Responda SOMENTE com JSON: {"notas":[{"q":1,"itens":[{"p":"a","nota":2.5,"coment
       <h2 style="margin:20px 0 8px">Correção das objetivas</h2>
       <div class="stack sm">${d.objetivas.map(q => { const m = t.resp[q.n], ok = m === q.r; return `<details class="card sim-corr ${ok ? "ok" : m == null ? "branco" : "no"}"><summary><span class="sim-st">${ok ? "✓" : m == null ? "—" : "✗"}</span><b>Questão ${q.n}</b> <span class="small muted">${esc(nomeMat(q.m))} · ${esc(q.t)} · ${esc(q.nivel)}</span><span class="small sim-gab">${m == null ? "em branco" : "você: " + L[m]} · gabarito: <b>${L[q.r]}</b></span></summary>
         ${(q.apoio || []).map(k => `<details class="sim-apoio"><summary>Ver ${esc(((d.textos[k] || "").match(/\*\*(.+?)\*\*/) || [, "texto"])[1])}</summary><div class="sim-txt">${APP.md((d.textos[k] || "").replace(/^\*\*.+?\*\*\s*/, ""))}</div></details>`).join("")}
+        ${figs(q)}
         <div class="sim-enun">${APP.md(q.texto)}</div>
         <div class="sim-alts">${q.a.map((x, k) => `<div class="sim-alt ${k === q.r ? "certa" : k === m ? "errada" : ""}"><span class="qb-l">${L[k]}</span><span>${esc(x)}</span></div>`).join("")}</div>
         <div class="sim-exp"><b>Comentário:</b> ${esc(q.exp)}</div><div class="small muted">Baseada em: ${esc(q.base)}</div></details>`; }).join("")}</div>
       <h2 style="margin:20px 0 8px">Correção das discursivas</h2>
       <div class="stack sm">${d.discursivas.map(q => `<details class="card sim-corr" open><summary><b>Discursiva ${q.n}</b> <span class="small muted">${esc(nomeMat(q.m))} · ${esc(q.t)}</span><span class="small sim-gab">${fmtPts(q.itens.reduce((b, x) => b + (((t.notas[q.n] || {})[x.p] || {}).nota || 0), 0))} / 5</span></summary>
         ${(q.apoio || []).map(k => `<details class="sim-apoio"><summary>Ver ${esc(((d.textos[k] || "").match(/\*\*(.+?)\*\*/) || [, "texto"])[1])}</summary><div class="sim-txt">${APP.md((d.textos[k] || "").replace(/^\*\*.+?\*\*\s*/, ""))}</div></details>`).join("")}
+        ${figs(q)}
         <div class="sim-enun">${APP.md(q.texto)}</div>
         ${q.itens.map(x => { const n = (t.notas[q.n] || {})[x.p]; return `<div class="sim-item stack sm"><div><b>${x.p})</b> ${esc(x.enun)}</div>
           <div class="sim-sua"><span class="eyebrow">Sua resposta</span><div>${esc(((t.discResp[q.n] || {})[x.p]) || "(em branco)")}</div></div>

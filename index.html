@@ -1117,7 +1117,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=4.0">
+<link rel="stylesheet" href="css/componentes.css?v=4.1">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -1127,7 +1127,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/ExercicioIdioma.js?v=3.0"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
-<script src="js/componentes/Simulados.js?v=1.1"></script>
+<script src="js/componentes/Simulados.js?v=1.2"></script>
 <script src="js/componentes/Estante.js?v=3.9"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
@@ -2759,8 +2759,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.14";
+const APP_VERSAO="3.15";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Simulados com figuras 🖼️",d:"As questões dos simulados agora podem ter gráficos, esquemas, mapas e obras de arte, como na prova real, sempre com a fonte. Toque na figura para ampliar."},
   {t:"Questões importadas mais organizadas 🗂️",d:"Ao importar uma questão por foto, a IA analisa o que a questão cobra e escolhe a matéria e o assunto pela lista oficial do banco. Assim ela aparece certinha nos filtros de matéria e tópico."},
   {t:"Nova aba: Simulados 📝",d:"O primeiro é o PISM 1: 2 dias, cada um com 20 objetivas e 8 discursivas e 4 horas de prova, no formato e no nível das últimas provas do Módulo I, com questões modificadas das provas anteriores. Tem cronômetro e não dá para sair da aba: se sair, o simulado zera. No fim, as objetivas são corrigidas na hora e as discursivas pela IA."},
   {t:"Banco de questões alimentado por todos 🤝",d:"As questões que os estudantes importam por foto também entram no Banco de questões para todo mundo (só o texto, sem foto e sem nome), em “Enviadas pelos estudantes”, e continuam lá mesmo se a pessoa apagar do caderno dela. Antes de entrar, a IA confere se a questão já não está no banco, para não repetir."},

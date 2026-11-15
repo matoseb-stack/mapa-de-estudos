@@ -228,7 +228,7 @@
 "t": "Geometria analítica: ponto, reta, circunferência e cônicas",
 "nivel": "Médio",
 "base": "PISM I 2025 · questão 11 (geometria analítica)",
-"texto": "Os pontos A(1, 2) e B(4, 6) são extremidades de um diâmetro de uma circunferência. O centro e o raio dessa circunferência são, respectivamente,",
+"texto": "Os pontos A e B, representados no plano cartesiano da figura, são extremidades de um diâmetro da circunferência tracejada. O centro e o raio dessa circunferência são, respectivamente,",
 "a": [
 "(2,5 ; 4) e 5.",
 "(2,5 ; 4) e 2,5.",
@@ -237,7 +237,14 @@
 "(5 ; 8) e 2,5."
 ],
 "r": 1,
-"exp": "O centro é o ponto médio de AB: ((1+4)/2 ; (2+6)/2) = (2,5 ; 4). O diâmetro é a distância AB = √(3² + 4²) = 5, então o raio é 2,5."
+"exp": "Pela figura, A = (1, 2) e B = (4, 6). O centro é o ponto médio de AB: ((1+4)/2 ; (2+6)/2) = (2,5 ; 4). O diâmetro é AB = √(3² + 4²) = 5, então o raio é 2,5.",
+"img": [
+{
+"src": "simulados/img/pism1-01/plano-ab.svg",
+"alt": "Plano cartesiano com os pontos A(1, 2) e B(4, 6), o segmento AB e uma circunferência tracejada que tem AB como diâmetro.",
+"fonte": "Figura elaborada para este simulado."
+}
+]
 },
 {
 "n": 13,
@@ -245,7 +252,7 @@
 "t": "Geometria plana: ângulos, semelhança, polígonos e áreas",
 "nivel": "Fácil",
 "base": "PISM I 2025 · questão 13 (semelhança de triângulos)",
-"texto": "Em um fim de tarde, uma pessoa de 1,60 m de altura projeta uma sombra de 1,20 m. No mesmo instante, um poste vertical próximo projeta uma sombra de 6,0 m. A altura do poste é de",
+"texto": "A figura representa, no mesmo instante de um fim de tarde, uma pessoa de 1,60 m de altura e um poste vertical, com as sombras que eles projetam no chão plano. A altura h do poste é de",
 "a": [
 "4,5 m.",
 "7,2 m.",
@@ -254,7 +261,14 @@
 "10,0 m."
 ],
 "r": 3,
-"exp": "Os raios de sol formam triângulos semelhantes: h/6,0 = 1,60/1,20 → h = 6,0 × 4/3 = 8,0 m."
+"exp": "Os raios de sol formam triângulos semelhantes: h/6,0 = 1,60/1,20 → h = 6,0 × 4/3 = 8,0 m.",
+"img": [
+{
+"src": "simulados/img/pism1-01/sombras.svg",
+"alt": "Pessoa de 1,60 m com sombra de 1,20 m e poste de altura h com sombra de 6,0 m; raios de sol paralelos em tracejado.",
+"fonte": "Figura elaborada para este simulado (fora de escala)."
+}
+]
 },
 {
 "n": 14,
@@ -296,7 +310,7 @@
 "t": "Modelos atômicos e estrutura do átomo",
 "nivel": "Fácil",
 "base": "PISM I 2025 · questão 16 (modelos atômicos)",
-"texto": "Em um experimento, uma lâmina muito fina de ouro foi bombardeada por partículas alfa (positivas). A maioria delas atravessou a lâmina sem desvio, algumas sofreram desvios e pouquíssimas foram rebatidas. Esses resultados levaram ao modelo atômico de",
+"texto": "A figura representa um experimento em que uma lâmina muito fina de ouro foi bombardeada por partículas alfa (positivas). A maioria delas atravessou a lâmina sem desvio, algumas sofreram desvios e pouquíssimas foram rebatidas. Esses resultados levaram ao modelo atômico de",
 "a": [
 "Dalton, segundo o qual o átomo é uma esfera maciça e indivisível.",
 "Thomson, em que cargas negativas estão espalhadas em uma esfera positiva, como um “pudim de passas”.",
@@ -305,7 +319,14 @@
 "Demócrito, que comprovou experimentalmente a existência do núcleo atômico."
 ],
 "r": 3,
-"exp": "É o experimento de Rutherford: se quase tudo atravessa, o átomo é quase vazio; os desvios e os rebatimentos mostram uma região central pequena, densa e positiva, o núcleo."
+"exp": "É o experimento de Rutherford: se quase tudo atravessa, o átomo é quase vazio; os desvios e os rebatimentos mostram uma região central pequena, densa e positiva, o núcleo.",
+"img": [
+{
+"src": "simulados/img/pism1-01/rutherford.svg",
+"alt": "Esquema: fonte de partículas alfa em uma caixa de chumbo, feixe atingindo uma lâmina de ouro dentro de um anteparo fluorescente circular; a maioria das trajetórias segue reta, algumas desviam e uma volta.",
+"fonte": "Esquema elaborado para este simulado."
+}
+]
 },
 {
 "n": 17,
@@ -700,7 +721,7 @@
 "t": "Citologia: membrana, organelas e núcleo",
 "nivel": "Médio",
 "base": "PISM I 2026 · questão 8 (membranas celulares)",
-"texto": "As células nervosas mantêm mais íons sódio fora da célula e mais íons potássio dentro dela do que o meio ao redor. Para manter essa diferença, a membrana usa a bomba de sódio e potássio, que é um exemplo de",
+"texto": "A figura representa a bomba de sódio e potássio, presente na membrana plasmática das células nervosas, que mantém mais íons sódio fora da célula e mais íons potássio dentro dela do que o meio ao redor. Com base na figura, esse mecanismo é um exemplo de",
 "a": [
 "difusão simples, sem gasto de energia e a favor do gradiente de concentração.",
 "transporte ativo, com gasto de ATP, que move os íons contra o gradiente de concentração.",
@@ -709,7 +730,14 @@
 "difusão facilitada, que usa canais sem gasto de energia."
 ],
 "r": 1,
-"exp": "A bomba retira 3 Na⁺ e coloca 2 K⁺ na célula, sempre contra o gradiente, gastando ATP. Por isso é transporte ativo."
+"exp": "A bomba retira 3 Na⁺ e coloca 2 K⁺ na célula, sempre contra o gradiente, gastando ATP. Por isso é transporte ativo.",
+"img": [
+{
+"src": "simulados/img/pism1-01/bomba-na-k.svg",
+"alt": "Membrana plasmática com uma proteína transportadora: 3 íons sódio saem para o meio extracelular e 2 íons potássio entram no citoplasma, com gasto de ATP.",
+"fonte": "Esquema elaborado para este simulado."
+}
+]
 },
 {
 "n": 8,
@@ -768,7 +796,7 @@
 "t": "Cinemática: movimentos uniforme, variado e circular",
 "nivel": "Fácil",
 "base": "PISM I 2026 · questões 12 e 13 (cinemática)",
-"texto": "Um carro parte do repouso e acelera uniformemente a 2,0 m/s² durante 5,0 s. A distância percorrida nesse intervalo é de",
+"texto": "O gráfico mostra como a velocidade de um carro variou com o tempo, desde a partida, em uma estrada reta. A distância percorrida pelo carro entre os instantes t = 0 e t = 5,0 s é de",
 "a": [
 "10 m.",
 "50 m.",
@@ -777,7 +805,14 @@
 "12,5 m."
 ],
 "r": 2,
-"exp": "S = a·t²/2 = 2,0 × 25/2 = 25 m (a velocidade final é 10 m/s)."
+"exp": "No gráfico v × t, a distância é a área sob a curva. De 0 a 5,0 s forma-se um triângulo: (5,0 × 10)/2 = 25 m. (A aceleração é 10/5,0 = 2,0 m/s².)",
+"img": [
+{
+"src": "simulados/img/pism1-01/grafico-vt.svg",
+"alt": "Gráfico de velocidade (m/s) por tempo (s): reta que sai de 0 e chega a 10 m/s em 5 s; depois a velocidade fica constante em 10 m/s.",
+"fonte": "Gráfico elaborado para este simulado."
+}
+]
 },
 {
 "n": 12,
@@ -918,19 +953,26 @@
 {
 "n": 20,
 "m": "his",
-"t": "Brasil Colônia: açúcar, mineração e escravidão",
+"t": "Expansão marítima e colonização da América",
 "nivel": "Difícil",
-"base": "PISM I 2025 · questão 17 e PISM I 2023 · questão 18 (povos indígenas e colonização)",
-"texto": "Sobre a atuação dos jesuítas no Brasil colonial, marque a alternativa CORRETA.",
+"base": "PISM I 2026 · questão 17 (análise de imagem: a mesma tela de Victor Meirelles)",
+"texto": "Observe a imagem. A tela, pintada em 1860, representa a primeira missa celebrada no Brasil, em 1500, a partir da descrição feita por Pero Vaz de Caminha. Sobre a imagem e o processo de colonização, marque a alternativa CORRETA.",
 "a": [
-"Eles defendiam a escravização dos indígenas como forma de catequese.",
-"Organizaram aldeamentos e catequizaram indígenas, entrando muitas vezes em conflito com colonos interessados em escravizá-los, mas também contribuíram para a desestruturação das culturas nativas.",
-"Chegaram ao Brasil apenas no século XIX, junto com a família real portuguesa.",
-"Dedicavam-se só ao comércio de açúcar e não tinham atuação educacional.",
-"Respeitavam integralmente as religiões indígenas e não tentavam convertê-las."
+"A obra foi pintada no próprio dia da missa por um artista que viajava na esquadra de Cabral.",
+"A cruz no centro e os indígenas observando a cerimônia expressam a visão do colonizador sobre a “conversão” dos nativos; a catequese foi um instrumento da colonização e contribuiu para desestruturar culturas indígenas.",
+"A imagem mostra que os indígenas já eram cristãos antes da chegada dos portugueses.",
+"A pintura representa a chegada dos jesuítas ao Brasil, em 1808, junto com a família real.",
+"Por ser uma fonte histórica, a pintura reproduz de forma neutra e exata o que aconteceu em 1500."
 ],
 "r": 1,
-"exp": "Os jesuítas (desde 1549) reuniram indígenas em aldeamentos e se opuseram à escravização deles pelos colonos. Ao mesmo tempo, impuseram o cristianismo e costumes europeus, o que contribuiu para desestruturar as culturas indígenas."
+"exp": "A tela é do século XIX (Segundo Reinado) e idealiza o “encontro” entre portugueses e indígenas, com a cruz no centro e os nativos como espectadores pacíficos da fé cristã. Toda imagem é uma interpretação do seu tempo (E está errada). A catequese, depois conduzida sobretudo pelos jesuítas (desde 1549), fez parte da colonização e contribuiu para desestruturar as culturas indígenas.",
+"img": [
+{
+"src": "simulados/img/pism1-01/primeira-missa.webp",
+"alt": "Pintura: no centro, um padre celebra missa junto a uma grande cruz de madeira, cercado por portugueses ajoelhados; ao redor, indígenas observam a cerimônia, alguns sobre as árvores.",
+"fonte": "MEIRELLES, Victor. Primeira Missa no Brasil, 1860. Óleo sobre tela. Museu Nacional de Belas Artes, Rio de Janeiro (domínio público)."
+}
+]
 }
 ],
 "discursivas": [
