@@ -9,6 +9,27 @@ service cloud.firestore {
     // Dados privados de cada pessoa: triagem, plano, edital, tempo de estudo, grupos e conversas vistas
     match /data/users/{uid}/{doc=**} { allow read, write: if eu(uid); }
 
+    // Banco de questões alimentado pelos estudantes: questões importadas por foto (só o texto, sem foto e sem nome).
+    // Cada uma recebe o próximo número do contador (Banco de questões · Questão nº); só quem enviou ou o administrador apaga.
+    match /bancoComunidade/{qid} {
+      allow read: if logado();
+      allow create: if logado() && request.resource.data.autor == request.auth.uid
+        && request.resource.data.keys().hasOnly(['autor','n','m','t','c','a','r','ce','ia','em','h'])
+        && request.resource.data.c is string && request.resource.data.c.size() > 0 && request.resource.data.c.size() <= 6000
+        && request.resource.data.a is list && request.resource.data.a.size() >= 2 && request.resource.data.a.size() <= 5
+        && request.resource.data.r is int && request.resource.data.r >= 0 && request.resource.data.r < request.resource.data.a.size()
+        && request.resource.data.m is string && request.resource.data.m.size() <= 4
+        && request.resource.data.t is string && request.resource.data.t.size() <= 80
+        && request.resource.data.n is int
+        && getAfter(/databases/$(database)/documents/bancoContador/geral).data.n == request.resource.data.n;
+      allow delete: if logado() && (resource.data.autor == request.auth.uid || ehAdmin());
+    }
+    match /bancoContador/geral {
+      allow read: if logado();
+      allow create: if logado() && request.resource.data.keys().hasOnly(['n']) && request.resource.data.n == 1;
+      allow update: if logado() && request.resource.data.keys().hasOnly(['n']) && request.resource.data.n == resource.data.n + 1;
+    }
+
     // Perfil público (nome, foto, bio, amigos): itens equipados precisam estar na coleção verificada da pessoa
     match /perfis/{uid} {
       function capaLivre(c) { return c in ['', 'grafite', 'oceano', 'floresta', 'aurora', 'entardecer', 'lavanda', 'areia', 'noite']; }
