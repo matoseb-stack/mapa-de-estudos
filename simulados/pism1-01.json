@@ -1,0 +1,1122 @@
+{
+"id": "pism1-01",
+"nome": "PISM 1 · Simulado 1",
+"prova": "PISM UFJF",
+"modulo": "I",
+"descricao": "Montado com o mesmo formato, número de questões, assuntos e nível das provas do Módulo I de 2023, 2025 e 2026 (COPESE/UFJF), com questões modificadas e no estilo das provas mais recentes.",
+"dias": [
+{
+"dia": 1,
+"duracaoMin": 240,
+"materias": [
+"por",
+"geo",
+"mat",
+"qui"
+],
+"textos": {
+"t1": "**Texto 1**\n\nToda manhã, dona Cida abre a banca de jornal da esquina antes de o sol decidir aparecer. Já não vende tantos jornais — \"hoje o pessoal lê tudo no celular, meu filho\" —, mas a banca virou outra coisa: ponto de recado, guarda-volumes improvisado, consultório sentimental. O motoboy deixa a chave de casa para a irmã buscar; a estudante pergunta se o ônibus 520 já passou; o aposentado comenta o jogo de ontem como quem anuncia o fim do mundo. Dona Cida responde a todos sem tirar os olhos das palavras cruzadas, que ela jura serem o único remédio que o médico não precisou receitar.\n\nDizem que as bancas estão com os dias contados. Pode ser. Mas, enquanto houver alguém precisando de uma informação que nenhum aplicativo dá — \"a farmácia do outro lado fecha mais cedo hoje, viu?\" —, aquela pequena caixa de metal vai continuar acesa, feito farol de calçada.\n\n(Crônica elaborada para este simulado.)",
+"t2": "**Texto 2**\n\nA cada nova pesquisa sobre o uso da internet no Brasil, cresce a parcela da população conectada: hoje, cerca de oito em cada dez brasileiros acessam a rede com frequência. Entre os que continuam fora dela, os motivos mais citados são a falta de habilidade para usar os aparelhos, o custo da conexão e a falta de interesse. O dado mostra que o acesso, embora amplo, ainda não é universal — e que a exclusão digital tem rosto: atinge com mais força as pessoas mais velhas, de menor renda e moradoras de áreas rurais.\n\n(Texto informativo elaborado para este simulado, com base em pesquisas do Comitê Gestor da Internet no Brasil.)"
+},
+"objetivas": [
+{
+"n": 1,
+"m": "por",
+"t": "Gêneros e tipos textuais",
+"nivel": "Fácil",
+"base": "PISM I 2025 · questões 3 e 4 (gêneros textuais)",
+"texto": "O Texto 1 pertence ao gênero crônica. Uma característica desse gênero, presente no texto, é",
+"a": [
+"narrar fatos com rigor jornalístico e linguagem impessoal, como em uma notícia.",
+"partir de uma cena do cotidiano para propor uma reflexão, em linguagem leve e próxima do leitor.",
+"apresentar dados estatísticos para defender, com argumentos técnicos, a permanência das bancas.",
+"organizar-se em versos e estrofes, explorando o ritmo e a rima para descrever a personagem.",
+"instruir o leitor, passo a passo, sobre como transformar uma banca em ponto de serviços."
+],
+"r": 1,
+"exp": "A crônica nasce de um fato banal do dia a dia (a rotina da banca) e o transforma em reflexão (o valor do contato humano), com linguagem simples, marcas de oralidade e tom próximo do leitor. Não é notícia (A), nem texto argumentativo técnico (C), nem poema (D), nem texto instrucional (E).",
+"apoio": [
+"t1"
+]
+},
+{
+"n": 2,
+"m": "por",
+"t": "Semântica: sentido das palavras no contexto",
+"nivel": "Médio",
+"base": "PISM I 2025 · questão 1 (sentido no contexto)",
+"texto": "No trecho “aquela pequena caixa de metal vai continuar acesa, feito farol de calçada”, a comparação sugere que a banca",
+"a": [
+"é um obstáculo que atrapalha a circulação das pessoas na calçada.",
+"será substituída em breve por equipamentos de iluminação pública.",
+"funciona como ponto de referência e de orientação para quem vive e circula no bairro.",
+"chama a atenção apenas pela forma e pela cor, sem ter função prática.",
+"representa o perigo das ruas da cidade durante a madrugada."
+],
+"r": 2,
+"exp": "O farol orienta navegantes; comparada a ele (“feito” = como), a banca é apresentada como referência que orienta as pessoas do bairro com informações e acolhimento. As demais alternativas atribuem sentidos que o texto não autoriza.",
+"apoio": [
+"t1"
+]
+},
+{
+"n": 3,
+"m": "por",
+"t": "Variação linguística e funções da linguagem",
+"nivel": "Fácil",
+"base": "PISM I 2025 · questão 2 (discurso direto)",
+"texto": "A fala “hoje o pessoal lê tudo no celular, meu filho” foi inserida no Texto 1 por meio de",
+"a": [
+"discurso indireto, já que o narrador reformula com suas próprias palavras a opinião da personagem.",
+"discurso indireto livre, pois não há nenhuma marca gráfica que separe a fala da narração.",
+"citação de autoridade, usada para comprovar com dados a queda na venda de jornais.",
+"linguagem formal, adequada à norma-padrão exigida nos textos jornalísticos.",
+"discurso direto, que reproduz a fala da personagem com marcas da oralidade, como o vocativo “meu filho”."
+],
+"r": 4,
+"exp": "As aspas e os travessões isolam a fala literal de dona Cida (discurso direto), que traz marcas da oralidade: “o pessoal”, o vocativo “meu filho”. No discurso indireto, o narrador relataria a fala com as próprias palavras.",
+"apoio": [
+"t1"
+]
+},
+{
+"n": 4,
+"m": "por",
+"t": "Classes de palavras",
+"nivel": "Médio",
+"base": "PISM I 2023 · questão 5 (classes de palavras e efeitos de sentido)",
+"texto": "Em “Dizem que as bancas estão com os dias contados”, o verbo na 3ª pessoa do plural, sem referência a quem fala, produz o efeito de",
+"a": [
+"atribuir a previsão a um especialista citado anteriormente no texto.",
+"indicar que o próprio narrador é o único responsável pela previsão.",
+"mostrar que dona Cida concorda totalmente com o fim das bancas.",
+"apresentar a afirmação como algo que circula socialmente, sem autoria definida.",
+"revelar que a informação foi retirada de uma pesquisa oficial."
+],
+"r": 3,
+"exp": "“Dizem” tem sujeito indeterminado: a afirmação é atribuída a uma voz coletiva e vaga (“as pessoas dizem”). O narrador a registra e, logo depois, a relativiza com “Pode ser. Mas...”.",
+"apoio": [
+"t1"
+]
+},
+{
+"n": 5,
+"m": "por",
+"t": "Interpretação e compreensão de textos",
+"nivel": "Difícil",
+"base": "PISM I 2025 · questão 5 (relação entre textos)",
+"texto": "Relacionando o Texto 1 ao Texto 2, é CORRETO afirmar que",
+"a": [
+"o Texto 2 desmente o Texto 1, pois mostra que ninguém mais precisa de informações fora da internet.",
+"os dois textos defendem que o uso do celular deve ser limitado para pessoas idosas.",
+"o Texto 1 mostra, de forma literária, necessidades de informação e de convívio que o meio digital não supre, e o Texto 2 trata do acesso desigual à internet pelo viés da exclusão digital.",
+"os dois textos pertencem ao mesmo gênero e usam o mesmo grau de formalidade.",
+"o Texto 2 é uma crônica, enquanto o Texto 1 é um texto informativo de divulgação científica."
+],
+"r": 2,
+"exp": "Os textos dialogam: a crônica valoriza a informação local e o contato humano que nenhum aplicativo oferece; o texto informativo mostra que a conexão, embora ampla, não é universal. Eles são de gêneros diferentes (A, D e E erram) e não fazem a defesa citada em B.",
+"apoio": [
+"t1",
+"t2"
+]
+},
+{
+"n": 6,
+"m": "geo",
+"t": "Cartografia: coordenadas, escalas e projeções",
+"nivel": "Fácil",
+"base": "PISM I 2023 · questão 8 e PISM I 2025 · questão 7 (cartografia)",
+"texto": "Em um mapa na escala 1 : 250.000, a distância em linha reta entre duas cidades é de 8 cm. A distância real entre elas é de",
+"a": [
+"20 km.",
+"2 km.",
+"200 km.",
+"25 km.",
+"2.000 km."
+],
+"r": 0,
+"exp": "1 cm no mapa = 250.000 cm no terreno = 2,5 km. Logo, 8 cm × 2,5 km = 20 km."
+},
+{
+"n": 7,
+"m": "geo",
+"t": "Clima e fenômenos atmosféricos",
+"nivel": "Médio",
+"base": "PISM I 2025 · questão 6 (clima)",
+"texto": "No inverno, partes da Amazônia ocidental, como Rondônia e o Acre, podem registrar quedas bruscas de temperatura, fenômeno conhecido como friagem. Ele é causado pelo avanço da",
+"a": [
+"Massa Equatorial Continental, quente e úmida, que se forma sobre a própria floresta.",
+"Massa Tropical Atlântica, quente e úmida, que atua no litoral do Sudeste.",
+"Massa Tropical Continental, quente e seca, formada sobre o Chaco.",
+"Massa Polar Atlântica, fria, que avança pelo interior do continente e alcança o sul da Amazônia.",
+"Massa Equatorial Atlântica, responsável pelos ventos alísios do litoral nordestino."
+],
+"r": 3,
+"exp": "A friagem ocorre quando a Massa Polar Atlântica (mPa) avança pelo interior do continente, pela depressão do Chaco e pelo oeste do Brasil, chegando ao sul da Amazônia e derrubando a temperatura por alguns dias."
+},
+{
+"n": 8,
+"m": "geo",
+"t": "Biomas e domínios morfoclimáticos",
+"nivel": "Fácil",
+"base": "PISM I 2025 · questões 8 e 10 (biomas)",
+"texto": "Conhecido como “berço das águas”, esse bioma abriga nascentes de importantes bacias hidrográficas brasileiras, tem vegetação de árvores tortuosas, de casca grossa e raízes profundas, e vem sendo intensamente substituído pela expansão da agropecuária. Trata-se do(a)",
+"a": [
+"Caatinga.",
+"Pampa.",
+"Mata Atlântica.",
+"Pantanal.",
+"Cerrado."
+],
+"r": 4,
+"exp": "O Cerrado concentra nascentes das bacias do São Francisco, do Tocantins-Araguaia e do Paraná, tem árvores de troncos tortuosos e raízes profundas e perdeu grande parte da vegetação nativa para lavouras e pastagens."
+},
+{
+"n": 9,
+"m": "geo",
+"t": "Estrutura geológica, relevo e solos",
+"nivel": "Médio",
+"base": "PISM I 2025 · questão 9 (relevo e solos)",
+"texto": "Em regiões de clima tropical quente e úmido, como grande parte do território brasileiro, predomina o intemperismo",
+"a": [
+"físico, causado pela variação de temperatura entre o dia e a noite, que forma solos rasos e pedregosos.",
+"químico, favorecido pelo calor e pela umidade, que tende a formar solos profundos e bastante lixiviados.",
+"eólico, responsável pela formação das dunas no interior do país.",
+"glacial, que esculpe vales em forma de U nas serras do Sudeste.",
+"biológico, que ocorre sem nenhuma participação da água."
+],
+"r": 1,
+"exp": "Calor e muita água aceleram as reações químicas que decompõem as rochas, formando solos espessos (como os latossolos) e muito lavados pela chuva (lixiviados). O intemperismo físico predomina em climas secos ou frios."
+},
+{
+"n": 10,
+"m": "geo",
+"t": "Questões ambientais e acordos internacionais",
+"nivel": "Médio",
+"base": "PISM I 2023 · questão 10 (acordos ambientais)",
+"texto": "Sobre o Acordo de Paris, firmado em 2015 na Conferência das Nações Unidas sobre Mudança do Clima, marque a alternativa CORRETA.",
+"a": [
+"Prevê que cada país apresente metas próprias de redução de emissões (as NDCs), para limitar o aquecimento global a bem menos de 2 °C em relação ao período pré-industrial.",
+"Proibiu de imediato o uso de combustíveis fósseis em todos os países que o assinaram.",
+"Foi o primeiro acordo ambiental da história e substituiu a Conferência de Estocolmo.",
+"Obriga apenas os países em desenvolvimento a reduzir as emissões de gases de efeito estufa.",
+"Trata exclusivamente da proteção da camada de ozônio e da proibição dos CFCs."
+],
+"r": 0,
+"exp": "O Acordo de Paris se baseia em contribuições nacionalmente determinadas (NDCs) e busca limitar o aquecimento a bem menos de 2 °C, com esforços para 1,5 °C. A camada de ozônio é tema do Protocolo de Montreal (E); Estocolmo (1972) foi anterior (C)."
+},
+{
+"n": 11,
+"m": "mat",
+"t": "Funções: domínio, imagem e gráficos",
+"nivel": "Médio",
+"base": "PISM I 2025 · questão 12 (função quadrática)",
+"texto": "Considere a função f(x) = x² − 6x + 5. O valor mínimo assumido por f(x) é",
+"a": [
+"3.",
+"5.",
+"−4.",
+"−9.",
+"4."
+],
+"r": 2,
+"exp": "O vértice tem x = −b/2a = 6/2 = 3. Então f(3) = 9 − 18 + 5 = −4. Como a > 0, a parábola tem concavidade para cima e −4 é o valor mínimo."
+},
+{
+"n": 12,
+"m": "mat",
+"t": "Geometria analítica: ponto, reta, circunferência e cônicas",
+"nivel": "Médio",
+"base": "PISM I 2025 · questão 11 (geometria analítica)",
+"texto": "Os pontos A(1, 2) e B(4, 6) são extremidades de um diâmetro de uma circunferência. O centro e o raio dessa circunferência são, respectivamente,",
+"a": [
+"(2,5 ; 4) e 5.",
+"(2,5 ; 4) e 2,5.",
+"(3 ; 4) e 2,5.",
+"(2 ; 3) e 5.",
+"(5 ; 8) e 2,5."
+],
+"r": 1,
+"exp": "O centro é o ponto médio de AB: ((1+4)/2 ; (2+6)/2) = (2,5 ; 4). O diâmetro é a distância AB = √(3² + 4²) = 5, então o raio é 2,5."
+},
+{
+"n": 13,
+"m": "mat",
+"t": "Geometria plana: ângulos, semelhança, polígonos e áreas",
+"nivel": "Fácil",
+"base": "PISM I 2025 · questão 13 (semelhança de triângulos)",
+"texto": "Em um fim de tarde, uma pessoa de 1,60 m de altura projeta uma sombra de 1,20 m. No mesmo instante, um poste vertical próximo projeta uma sombra de 6,0 m. A altura do poste é de",
+"a": [
+"4,5 m.",
+"7,2 m.",
+"9,0 m.",
+"8,0 m.",
+"10,0 m."
+],
+"r": 3,
+"exp": "Os raios de sol formam triângulos semelhantes: h/6,0 = 1,60/1,20 → h = 6,0 × 4/3 = 8,0 m."
+},
+{
+"n": 14,
+"m": "mat",
+"t": "Razão, proporção, porcentagem e regra de três",
+"nivel": "Médio",
+"base": "PISM I 2023 · questão 12 (porcentagem)",
+"texto": "Uma loja aumentou em 25% o preço de um fone de ouvido que custava R$ 200,00. Semanas depois, anunciou um desconto de 20% sobre o novo preço. Ao final, em relação ao preço original, o preço do fone",
+"a": [
+"aumentou 5%.",
+"diminuiu 5%.",
+"aumentou 45%.",
+"diminuiu 20%.",
+"ficou igual."
+],
+"r": 4,
+"exp": "200 × 1,25 = 250; 250 × 0,80 = 200. O fator total é 1,25 × 0,80 = 1: o preço volta a R$ 200,00."
+},
+{
+"n": 15,
+"m": "mat",
+"t": "Funções: domínio, imagem e gráficos",
+"nivel": "Fácil",
+"base": "PISM I 2025 · questão 14 (função afim)",
+"texto": "Em uma cidade, o valor de uma corrida por aplicativo é dado por uma taxa fixa de R$ 5,00 mais R$ 2,50 por quilômetro rodado. Com R$ 50,00, a maior distância que uma pessoa consegue percorrer é de",
+"a": [
+"18 km.",
+"20 km.",
+"16 km.",
+"22 km.",
+"15 km."
+],
+"r": 0,
+"exp": "V(x) = 5 + 2,5x. Para V = 50: 2,5x = 45 → x = 18 km."
+},
+{
+"n": 16,
+"m": "qui",
+"t": "Modelos atômicos e estrutura do átomo",
+"nivel": "Fácil",
+"base": "PISM I 2025 · questão 16 (modelos atômicos)",
+"texto": "Em um experimento, uma lâmina muito fina de ouro foi bombardeada por partículas alfa (positivas). A maioria delas atravessou a lâmina sem desvio, algumas sofreram desvios e pouquíssimas foram rebatidas. Esses resultados levaram ao modelo atômico de",
+"a": [
+"Dalton, segundo o qual o átomo é uma esfera maciça e indivisível.",
+"Thomson, em que cargas negativas estão espalhadas em uma esfera positiva, como um “pudim de passas”.",
+"Bohr, que explica as cores emitidas pelos elementos pelos níveis de energia, sem considerar o núcleo.",
+"Rutherford, com um núcleo muito pequeno, denso e positivo, cercado por uma grande região praticamente vazia onde estão os elétrons.",
+"Demócrito, que comprovou experimentalmente a existência do núcleo atômico."
+],
+"r": 3,
+"exp": "É o experimento de Rutherford: se quase tudo atravessa, o átomo é quase vazio; os desvios e os rebatimentos mostram uma região central pequena, densa e positiva, o núcleo."
+},
+{
+"n": 17,
+"m": "qui",
+"t": "Química ambiental",
+"nivel": "Médio",
+"base": "PISM I 2025 · questão 17 (química ambiental)",
+"texto": "A chuva ácida, que corrói monumentos e prejudica rios e florestas, é causada principalmente",
+"a": [
+"pelo gás oxigênio liberado pelas plantas, que reage com a água das nuvens.",
+"pelo metano emitido pela pecuária, que forma ácido sulfúrico na atmosfera.",
+"pelos CFCs, gases que destroem a camada de ozônio.",
+"pelo vapor d’água, que é naturalmente ácido.",
+"pelos óxidos de enxofre e de nitrogênio liberados na queima de combustíveis fósseis, que reagem com a água da atmosfera e formam ácidos."
+],
+"r": 4,
+"exp": "SO₂/SO₃ e NOₓ reagem com a água formando ácido sulfúrico e ácido nítrico, deixando o pH da chuva abaixo de 5,6. Os CFCs (C) estão ligados à camada de ozônio, não à chuva ácida."
+},
+{
+"n": 18,
+"m": "qui",
+"t": "Matéria, substâncias, misturas e separação",
+"nivel": "Fácil",
+"base": "PISM I 2025 · questão 19 (separação de misturas)",
+"texto": "Um estudante tem uma mistura de água, areia e sal de cozinha totalmente dissolvido. Para obter separadamente a areia, a água e o sal, a sequência de métodos mais adequada é",
+"a": [
+"filtração, para retirar a areia, seguida de destilação simples, para separar a água do sal.",
+"decantação seguida de filtração, que separa o sal dissolvido da água.",
+"destilação fracionada, que separa os três componentes de uma só vez.",
+"separação magnética seguida de catação.",
+"centrifugação, que separa o sal da água em poucos minutos."
+],
+"r": 0,
+"exp": "A areia é sólida e não se dissolve: sai na filtração. O sal está dissolvido (mistura homogênea com a água): a destilação simples evapora e condensa a água, deixando o sal no balão."
+},
+{
+"n": 19,
+"m": "qui",
+"t": "Forças intermoleculares e polaridade",
+"nivel": "Médio",
+"base": "PISM I 2025 · questão 20 (forças intermoleculares)",
+"texto": "A água (H₂O) ferve a 100 °C ao nível do mar, enquanto o sulfeto de hidrogênio (H₂S), de massa molar maior, ferve a cerca de −60 °C. Essa diferença se explica porque",
+"a": [
+"a água tem massa molar maior que a do H₂S.",
+"as moléculas de água formam ligações de hidrogênio entre si, interações mais fortes que as que ocorrem entre as moléculas de H₂S.",
+"a molécula de água é apolar, e a de H₂S é polar.",
+"o H₂S é formado por ligações iônicas.",
+"a água não forma interações intermoleculares."
+],
+"r": 1,
+"exp": "O hidrogênio ligado ao oxigênio (muito eletronegativo) permite ligações de hidrogênio, que exigem muita energia para serem rompidas. O enxofre é pouco eletronegativo e o H₂S faz interações mais fracas. A água tem massa molar menor (18 contra 34 g/mol)."
+},
+{
+"n": 20,
+"m": "qui",
+"t": "Funções inorgânicas: ácidos, bases, sais e óxidos",
+"nivel": "Médio",
+"base": "PISM I 2023 · questão 17 (funções inorgânicas)",
+"texto": "Medicamentos antiácidos à base de hidróxido de magnésio, Mg(OH)₂, aliviam a azia porque essa substância",
+"a": [
+"é um ácido forte, que aumenta a acidez do estômago.",
+"é um óxido ácido, que reage com a água do estômago.",
+"é uma base que reage com o ácido clorídrico do estômago em uma reação de neutralização, formando sal e água.",
+"é um sal que libera íons H⁺ e equilibra o pH.",
+"reage com o ácido do estômago liberando gás hidrogênio."
+],
+"r": 2,
+"exp": "Mg(OH)₂ + 2 HCl → MgCl₂ + 2 H₂O: a base neutraliza o excesso de ácido clorídrico, formando sal (cloreto de magnésio) e água."
+}
+],
+"discursivas": [
+{
+"n": 1,
+"m": "por",
+"t": "Semântica e efeitos de sentido",
+"base": "PISM I 2025 · discursivas de Língua Portuguesa",
+"texto": "Leia novamente o Texto 1 e responda.",
+"itens": [
+{
+"p": "a",
+"enun": "Explique o efeito de sentido da comparação “feito farol de calçada”, no final do texto.",
+"esperado": "A banca é comparada a um farol, que orienta e guia; isso mostra que ela continua sendo referência e ponto de apoio para as pessoas do bairro (informações, recados, convivência), mesmo com o avanço da internet.",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Reescreva a frase “Dona Cida responde a todos sem tirar os olhos das palavras cruzadas”, trocando “sem tirar” por uma oração iniciada por “enquanto”, mantendo o sentido.",
+"esperado": "Ex.: “Dona Cida responde a todos enquanto mantém os olhos nas palavras cruzadas.” (ou “enquanto faz/olha as palavras cruzadas”). Deve manter a ideia de simultaneidade e a norma-padrão.",
+"pontos": 2.5
+}
+],
+"pontos": 5,
+"apoio": [
+"t1"
+]
+},
+{
+"n": 2,
+"m": "por",
+"t": "Variação linguística e humor",
+"base": "PISM I 2025 · discursivas de Língua Portuguesa",
+"texto": "Ainda sobre o Texto 1:",
+"itens": [
+{
+"p": "a",
+"enun": "Transcreva duas marcas de oralidade presentes no texto e explique por que o autor as utiliza.",
+"esperado": "Ex.: “meu filho”, “o pessoal”, “viu?”, as falas entre aspas. Elas reproduzem o jeito real de falar das personagens e aproximam o texto do leitor, característica da crônica.",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Explique o humor da expressão “o único remédio que o médico não precisou receitar”.",
+"esperado": "As palavras cruzadas são tratadas como “remédio”: fazem bem a dona Cida (distração, saúde mental, memória) sem precisar de receita médica. O humor está na comparação inesperada entre um passatempo e um medicamento.",
+"pontos": 2.5
+}
+],
+"pontos": 5,
+"apoio": [
+"t1"
+]
+},
+{
+"n": 3,
+"m": "geo",
+"t": "Cartografia: escalas",
+"base": "PISM I 2023 e 2025 · cartografia",
+"texto": "Um estudante tem dois mapas: o mapa A, na escala 1 : 50.000, e o mapa B, na escala 1 : 1.000.000.",
+"itens": [
+{
+"p": "a",
+"enun": "Qual dos dois mapas tem a maior escala e mostra mais detalhes do terreno? Justifique.",
+"esperado": "O mapa A (1 : 50.000). Quanto menor o denominador, maior a escala: cada centímetro representa uma área menor do terreno (500 m), o que permite mostrar mais detalhes.",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "No mapa A, duas escolas estão a 3 cm uma da outra. Calcule a distância real entre elas, em quilômetros, mostrando o cálculo.",
+"esperado": "3 × 50.000 = 150.000 cm = 1.500 m = 1,5 km.",
+"pontos": 2.5
+}
+],
+"pontos": 5
+},
+{
+"n": 4,
+"m": "geo",
+"t": "Biomas brasileiros",
+"base": "PISM I 2025 · biomas",
+"texto": "Sobre os biomas brasileiros:",
+"itens": [
+{
+"p": "a",
+"enun": "Cite duas adaptações da vegetação da Caatinga ao clima semiárido.",
+"esperado": "Ex.: perda das folhas na seca (caducifolia), folhas transformadas em espinhos, caules que armazenam água (cactáceas, como o mandacaru), raízes profundas ou superficiais extensas, casca grossa.",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Explique por que o desmatamento do Cerrado afeta a disponibilidade de água em várias regiões do Brasil.",
+"esperado": "No Cerrado ficam nascentes de grandes bacias (São Francisco, Tocantins-Araguaia, Paraná) e áreas de recarga de aquíferos (como Guarani e Urucuia). Sem vegetação nativa, a água da chuva infiltra menos e escoa mais, diminuindo as nascentes e a vazão dos rios.",
+"pontos": 2.5
+}
+],
+"pontos": 5
+},
+{
+"n": 5,
+"m": "mat",
+"t": "Função quadrática",
+"base": "PISM I 2025 · questão 12 (função quadrática)",
+"texto": "O lucro mensal L, em milhares de reais, de uma pequena fábrica é dado por L(x) = −x² + 8x − 12, em que x é a quantidade produzida, em centenas de unidades.",
+"itens": [
+{
+"p": "a",
+"enun": "Para quais quantidades produzidas o lucro é zero? Mostre os cálculos.",
+"esperado": "−x² + 8x − 12 = 0 → x² − 8x + 12 = 0 → x = 2 ou x = 6 (200 ou 600 unidades).",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Qual é o lucro máximo e com qual quantidade ele é obtido?",
+"esperado": "Vértice: x = −b/2a = −8/(−2) = 4 (400 unidades). L(4) = −16 + 32 − 12 = 4, ou seja, lucro máximo de 4 mil reais.",
+"pontos": 2.5
+}
+],
+"pontos": 5
+},
+{
+"n": 6,
+"m": "mat",
+"t": "Geometria plana: triângulo retângulo",
+"base": "PISM I 2025 · questão 13 (geometria plana)",
+"texto": "Um terreno tem a forma de um triângulo retângulo cujos catetos medem 6 m e 8 m.",
+"itens": [
+{
+"p": "a",
+"enun": "Calcule a medida da hipotenusa e a área do terreno.",
+"esperado": "Hipotenusa: √(36 + 64) = 10 m. Área: (6 × 8)/2 = 24 m².",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Calcule a altura do triângulo relativa à hipotenusa.",
+"esperado": "Área = (hipotenusa × altura)/2 → 24 = 10h/2 → h = 4,8 m (ou h = b·c/a = 48/10).",
+"pontos": 2.5
+}
+],
+"pontos": 5
+},
+{
+"n": 7,
+"m": "qui",
+"t": "Ligações químicas",
+"base": "PISM I 2023 e 2025 · estrutura atômica",
+"texto": "Considere os elementos sódio (Na, Z = 11) e cloro (Cl, Z = 17).",
+"itens": [
+{
+"p": "a",
+"enun": "Escreva a distribuição eletrônica em camadas de cada um e diga quantos elétrons cada um tem na camada de valência.",
+"esperado": "Na: 2, 8, 1 → 1 elétron de valência. Cl: 2, 8, 7 → 7 elétrons de valência.",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Qual tipo de ligação se forma entre eles? Explique como ela ocorre e escreva a fórmula do composto.",
+"esperado": "Ligação iônica: o sódio perde 1 elétron (Na⁺) e o cloro ganha 1 elétron (Cl⁻), ambos ficando estáveis; os íons de cargas opostas se atraem. Fórmula: NaCl.",
+"pontos": 2.5
+}
+],
+"pontos": 5
+},
+{
+"n": 8,
+"m": "qui",
+"t": "Misturas e polaridade",
+"base": "PISM I 2025 · questões 19 e 20",
+"texto": "Um estudante preparou duas misturas: I – água e óleo de cozinha; II – água e álcool etílico.",
+"itens": [
+{
+"p": "a",
+"enun": "Classifique cada mistura como homogênea ou heterogênea e diga como separar a mistura I.",
+"esperado": "I: heterogênea (duas fases), separada por decantação com funil de separação (funil de bromo). II: homogênea (uma fase).",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Explique, com base na polaridade e nas forças intermoleculares, por que o álcool se mistura com a água e o óleo não.",
+"esperado": "Água e etanol são polares e formam ligações de hidrogênio entre si (o etanol tem o grupo OH). O óleo é apolar e não interage bem com a água (“semelhante dissolve semelhante”).",
+"pontos": 2.5
+}
+],
+"pontos": 5
+}
+]
+},
+{
+"dia": 2,
+"duracaoMin": 240,
+"materias": [
+"lit",
+"bio",
+"fis",
+"his"
+],
+"textos": {
+"l1": "**Texto 1**\n\nAmor é fogo que arde sem se ver;\né ferida que dói, e não se sente;\né um contentamento descontente;\né dor que desatina sem doer.\n\n(CAMÕES, Luís Vaz de. Sonetos. Primeira estrofe.)",
+"l2": "**Texto 2**\n\nEsta terra, Senhor, me parece que da ponta que mais contra o sul vimos até a outra ponta que contra o norte vem [...] será tamanha que haverá nela bem vinte ou vinte e cinco léguas por costa. [...] Águas são muitas; infindas. E em tal maneira é graciosa que, querendo-a aproveitar, dar-se-á nela tudo, por causa das águas que tem.\n\n(CAMINHA, Pero Vaz de. Carta a El-Rei D. Manuel, 1500. Fragmento.)",
+"l3": "**Texto 3**\n\nA cada canto um grande conselheiro,\nQue nos quer governar cabana e vinha;\nNão sabem governar sua cozinha,\nE podem governar o mundo inteiro.\n\n(MATOS, Gregório de. Fragmento de soneto sobre a Bahia.)",
+"l4": "**Texto 4**\n\nDIABO — À barca, à barca, houlá!\nque temos gentil maré!\n— Ora venha o carro a ré!\n[...]\nFIDALGO — Esta barca onde vai ora,\nque assi está apercebida?\nDIABO — Vai pera a ilha perdida,\ne há de partir logo ess’ora.\n\n(VICENTE, Gil. Auto da Barca do Inferno, 1517. Fragmento, com a grafia original adaptada.)"
+},
+"objetivas": [
+{
+"n": 1,
+"m": "lit",
+"t": "Gêneros literários",
+"nivel": "Médio",
+"base": "PISM I 2026 · questão 1 (figuras de linguagem no poema)",
+"texto": "Nos versos do Texto 1, o eu lírico define o amor aproximando ideias que parecem se contradizer. Essa figura de linguagem é o(a)",
+"a": [
+"paradoxo, presente em construções como “contentamento descontente” e “dor que desatina sem doer”.",
+"metonímia, pela troca do nome do autor pelo nome da obra.",
+"onomatopeia, pela imitação do som do fogo.",
+"eufemismo, usado para suavizar a ideia da morte.",
+"pleonasmo, pela repetição desnecessária de ideias iguais."
+],
+"r": 0,
+"exp": "O paradoxo (ou oxímoro) une ideias opostas numa mesma expressão: o amor é “fogo que arde sem se ver”, “contentamento descontente”. Assim o poeta mostra o amor como sentimento contraditório e difícil de definir pela razão.",
+"apoio": [
+"l1"
+]
+},
+{
+"n": 2,
+"m": "lit",
+"t": "Gêneros literários",
+"nivel": "Fácil",
+"base": "PISM I 2026 · questão 2 (forma do poema)",
+"texto": "O poema do qual foram retirados os versos do Texto 1 é um soneto, forma fixa muito cultivada no Classicismo. Quanto à estrutura, o soneto clássico é composto por",
+"a": [
+"quatro quartetos em redondilha maior.",
+"catorze versos, organizados em dois quartetos e dois tercetos, geralmente decassílabos.",
+"três estrofes de cinco versos livres, sem métrica.",
+"versos brancos e livres, típicos da poesia do século XX.",
+"dez versos em uma única estrofe, sempre sem rima."
+],
+"r": 1,
+"exp": "O soneto tem 14 versos: dois quartetos e dois tercetos. No Classicismo (Camões, Petrarca), usa o verso decassílabo, que tem dez sílabas poéticas.",
+"apoio": [
+"l1"
+]
+},
+{
+"n": 3,
+"m": "lit",
+"t": "Gêneros literários",
+"nivel": "Médio",
+"base": "PISM I 2026 · questão 3 (leitura e contexto)",
+"texto": "O Texto 2, um dos primeiros registros escritos sobre o Brasil, pertence à chamada literatura de informação. Uma característica do fragmento é",
+"a": [
+"a crítica irônica à sociedade baiana do século XVII.",
+"a valorização do indígena como herói nacional, típica do Romantismo.",
+"a descrição da nova terra pelo olhar europeu, destacando suas riquezas e seu potencial de exploração, em tom de relato ao rei.",
+"o uso do verso livre e da linguagem coloquial, típico do Modernismo.",
+"a exploração de conflitos psicológicos das personagens."
+],
+"r": 2,
+"exp": "A Carta de Caminha descreve a terra para o rei de Portugal com o olhar do colonizador: extensão, “águas infindas” e fertilidade (“dar-se-á nela tudo”), destacando o que pode ser aproveitado.",
+"apoio": [
+"l2"
+]
+},
+{
+"n": 4,
+"m": "lit",
+"t": "Gêneros literários",
+"nivel": "Médio",
+"base": "PISM I 2026 · questão 4 (poesia satírica)",
+"texto": "Os versos do Texto 3 exemplificam a poesia satírica do Barroco brasileiro, porque",
+"a": [
+"exaltam a natureza brasileira como paraíso perdido.",
+"expressam a angústia religiosa do poeta diante do pecado e da morte.",
+"imitam as cantigas de amor medievais, com o eu lírico sofrendo por uma dama.",
+"criticam com ironia as pessoas que dão conselhos sobre tudo, mas não sabem cuidar da própria vida, retratando a sociedade da Bahia colonial.",
+"descrevem de forma objetiva a administração portuguesa, sem qualquer julgamento."
+],
+"r": 3,
+"exp": "Gregório de Matos, o “Boca do Inferno”, satirizou a Bahia do século XVII. A ironia está no contraste: os “conselheiros” não governam nem a própria cozinha, mas acham que podem “governar o mundo inteiro”.",
+"apoio": [
+"l3"
+]
+},
+{
+"n": 5,
+"m": "lit",
+"t": "Gêneros literários",
+"nivel": "Difícil",
+"base": "PISM I 2026 · questão 5 (gêneros literários)",
+"texto": "O Texto 4 pertence ao gênero dramático. Essa classificação se justifica porque o texto",
+"a": [
+"é narrado em terceira pessoa por um narrador onisciente.",
+"expressa apenas os sentimentos de um eu lírico, sem personagens.",
+"apresenta argumentos para convencer o leitor de uma tese.",
+"relata fatos reais da viagem de Cabral ao rei de Portugal.",
+"é construído pelas falas das personagens, identificadas por seus nomes, para ser encenado, e faz parte de um auto com crítica moral à sociedade."
+],
+"r": 4,
+"exp": "No gênero dramático não há narrador: a história avança pelas falas das personagens (DIABO, FIDALGO), e o texto é feito para o palco. O Auto da Barca do Inferno, do Humanismo, julga tipos sociais com intenção moralizante.",
+"apoio": [
+"l4"
+]
+},
+{
+"n": 6,
+"m": "bio",
+"t": "Bioquímica: água, sais, carboidratos, lipídios, proteínas e ácidos nucleicos",
+"nivel": "Fácil",
+"base": "PISM I 2026 · questão 10 (bioquímica)",
+"texto": "Uma febre muito alta pode ser perigosa porque proteínas como as enzimas podem perder sua forma tridimensional e deixar de funcionar. Esse processo é chamado de",
+"a": [
+"desnaturação, que altera a estrutura espacial da proteína e compromete sua função.",
+"replicação, que duplica a molécula de DNA.",
+"hidrólise da glicose, que libera energia para a célula.",
+"transcrição, que produz RNA a partir do DNA.",
+"osmose, que é a passagem de água pela membrana."
+],
+"r": 0,
+"exp": "Calor excessivo (e mudanças bruscas de pH) rompem as interações que mantêm a forma da proteína. A enzima desnaturada perde o encaixe com o substrato e a atividade."
+},
+{
+"n": 7,
+"m": "bio",
+"t": "Citologia: membrana, organelas e núcleo",
+"nivel": "Médio",
+"base": "PISM I 2026 · questão 8 (membranas celulares)",
+"texto": "As células nervosas mantêm mais íons sódio fora da célula e mais íons potássio dentro dela do que o meio ao redor. Para manter essa diferença, a membrana usa a bomba de sódio e potássio, que é um exemplo de",
+"a": [
+"difusão simples, sem gasto de energia e a favor do gradiente de concentração.",
+"transporte ativo, com gasto de ATP, que move os íons contra o gradiente de concentração.",
+"osmose, em que apenas a água atravessa a membrana.",
+"fagocitose, em que a célula engloba partículas grandes.",
+"difusão facilitada, que usa canais sem gasto de energia."
+],
+"r": 1,
+"exp": "A bomba retira 3 Na⁺ e coloca 2 K⁺ na célula, sempre contra o gradiente, gastando ATP. Por isso é transporte ativo."
+},
+{
+"n": 8,
+"m": "bio",
+"t": "Citologia: membrana, organelas e núcleo",
+"nivel": "Médio",
+"base": "PISM I 2026 · questão 7 (organelas)",
+"texto": "As células do pâncreas que produzem enzimas digestivas fabricam e exportam grande quantidade de proteínas. Espera-se que essas células tenham bastante",
+"a": [
+"cloroplasto e vacúolo central.",
+"lisossomo e parede celular.",
+"retículo endoplasmático rugoso e complexo golgiense.",
+"centríolo e flagelo.",
+"retículo endoplasmático liso e glioxissomo."
+],
+"r": 2,
+"exp": "As proteínas são feitas nos ribossomos do retículo endoplasmático rugoso; o complexo golgiense as modifica, empacota e envia para fora da célula (secreção)."
+},
+{
+"n": 9,
+"m": "bio",
+"t": "Metabolismo energético: fotossíntese e respiração",
+"nivel": "Difícil",
+"base": "PISM I 2023 · questão 9 (fotossíntese e respiração)",
+"texto": "Na fotossíntese, o gás oxigênio liberado para a atmosfera tem origem",
+"a": [
+"no gás carbônico absorvido pelas folhas, durante o ciclo de Calvin.",
+"na glicose produzida, que se decompõe ao longo do dia.",
+"na respiração celular da própria planta.",
+"na quebra das moléculas de água (fotólise), na etapa fotoquímica.",
+"nos sais minerais absorvidos pelas raízes."
+],
+"r": 3,
+"exp": "Na etapa fotoquímica (nos tilacoides), a luz provoca a fotólise da água: 2 H₂O → 4 H⁺ + 4 e⁻ + O₂. O carbono do CO₂ vai para a glicose no ciclo de Calvin."
+},
+{
+"n": 10,
+"m": "bio",
+"t": "Divisão celular: mitose e meiose",
+"nivel": "Médio",
+"base": "PISM I 2025 · questão 9 (divisão celular)",
+"texto": "Sobre a meiose em seres humanos, marque a alternativa CORRETA.",
+"a": [
+"Forma duas células idênticas à célula-mãe, com 46 cromossomos cada.",
+"Acontece em todas as células do corpo para o crescimento e a cicatrização.",
+"Mantém o número de cromossomos e não gera variabilidade.",
+"Ocorre apenas em bactérias e em outros seres unicelulares.",
+"Forma gametas com 23 cromossomos e aumenta a variabilidade genética, por exemplo pelo crossing-over."
+],
+"r": 4,
+"exp": "A meiose reduz o número de cromossomos à metade (2n = 46 → n = 23) e gera variabilidade pela permutação (crossing-over) e pela segregação independente. Crescimento e cicatrização dependem da mitose."
+},
+{
+"n": 11,
+"m": "fis",
+"t": "Cinemática: movimentos uniforme, variado e circular",
+"nivel": "Fácil",
+"base": "PISM I 2026 · questões 12 e 13 (cinemática)",
+"texto": "Um carro parte do repouso e acelera uniformemente a 2,0 m/s² durante 5,0 s. A distância percorrida nesse intervalo é de",
+"a": [
+"10 m.",
+"50 m.",
+"25 m.",
+"20 m.",
+"12,5 m."
+],
+"r": 2,
+"exp": "S = a·t²/2 = 2,0 × 25/2 = 25 m (a velocidade final é 10 m/s)."
+},
+{
+"n": 12,
+"m": "fis",
+"t": "Leis de Newton e aplicações",
+"nivel": "Médio",
+"base": "PISM I 2026 · questão 11 (leis de Newton)",
+"texto": "Um bloco de 4,0 kg é puxado sobre uma mesa horizontal por uma força de 30 N. A força de atrito sobre o bloco vale 10 N. A aceleração do bloco é de",
+"a": [
+"7,5 m/s².",
+"2,5 m/s².",
+"10 m/s².",
+"5,0 m/s².",
+"120 m/s²."
+],
+"r": 3,
+"exp": "Força resultante: 30 − 10 = 20 N. Pela 2ª lei de Newton, a = F/m = 20/4,0 = 5,0 m/s²."
+},
+{
+"n": 13,
+"m": "fis",
+"t": "Trabalho, energia e potência",
+"nivel": "Médio",
+"base": "PISM I 2025 · questão 15 (energia)",
+"texto": "Uma bola de 2,0 kg cai, a partir do repouso, de uma altura de 5,0 m. Desprezando a resistência do ar e usando g = 10 m/s², a velocidade da bola ao chegar ao solo é de",
+"a": [
+"10 m/s.",
+"5,0 m/s.",
+"50 m/s.",
+"100 m/s.",
+"20 m/s."
+],
+"r": 0,
+"exp": "Conservação da energia: m·g·h = m·v²/2 → v = √(2gh) = √100 = 10 m/s. A massa não interfere."
+},
+{
+"n": 14,
+"m": "fis",
+"t": "Impulso, quantidade de movimento e colisões",
+"nivel": "Difícil",
+"base": "PISM I 2025 · questão 14 (colisões)",
+"texto": "Um carrinho de 2,0 kg, a 3,0 m/s, colide com outro carrinho de 1,0 kg que estava parado. Depois da colisão, os dois seguem juntos. Desprezando os atritos, a velocidade do conjunto é de",
+"a": [
+"3,0 m/s.",
+"1,0 m/s.",
+"1,5 m/s.",
+"6,0 m/s.",
+"2,0 m/s."
+],
+"r": 4,
+"exp": "A quantidade de movimento se conserva: 2,0 × 3,0 = (2,0 + 1,0)·v → v = 6,0/3,0 = 2,0 m/s."
+},
+{
+"n": 15,
+"m": "fis",
+"t": "Cinemática: movimentos uniforme, variado e circular",
+"nivel": "Médio",
+"base": "PISM I 2025 · questão 11 (movimento circular)",
+"texto": "Uma roda de bicicleta de raio 0,50 m gira com frequência constante de 2,0 voltas por segundo. A velocidade escalar de um ponto na borda da roda é de",
+"a": [
+"π m/s.",
+"2π m/s.",
+"4π m/s.",
+"0,5π m/s.",
+"8π m/s."
+],
+"r": 1,
+"exp": "v = 2π·R·f = 2π × 0,50 × 2,0 = 2π m/s (cerca de 6,3 m/s)."
+},
+{
+"n": 16,
+"m": "his",
+"t": "História da África e dos povos indígenas",
+"nivel": "Médio",
+"base": "PISM I 2026 · questões 16 e 20 (história da África)",
+"texto": "Entre os séculos XIII e XV, o Império do Mali, na África Ocidental, ficou conhecido pela riqueza de seus governantes, como Mansa Musa. Essa riqueza estava ligada principalmente",
+"a": [
+"à exportação de café para a Europa pelo oceano Atlântico.",
+"à produção de açúcar com mão de obra indígena.",
+"ao comércio transaariano de ouro e sal, que fez de cidades como Tombuctu centros comerciais e intelectuais.",
+"ao domínio português sobre as rotas do oceano Índico.",
+"à extração de prata nas minas da América."
+],
+"r": 2,
+"exp": "O Mali controlava áreas de ouro e as rotas de caravanas que atravessavam o Saara, trocando ouro por sal e outros produtos. Tombuctu tornou-se um centro de comércio e de estudo, com escolas e bibliotecas ligadas ao islamismo."
+},
+{
+"n": 17,
+"m": "his",
+"t": "Antiguidade: Egito, Mesopotâmia, Grécia e Roma",
+"nivel": "Médio",
+"base": "PISM I 2026 · questão 17 (Grécia antiga)",
+"texto": "Sobre a democracia em Atenas, no século V a.C., marque a alternativa CORRETA.",
+"a": [
+"Todos os habitantes da cidade, inclusive mulheres e escravizados, votavam nas assembleias.",
+"Era uma democracia representativa, com deputados eleitos de quatro em quatro anos.",
+"O poder ficava nas mãos de um rei, que consultava a população apenas em tempos de guerra.",
+"Era direta, mas a cidadania era restrita aos homens adultos, filhos de pais atenienses, o que excluía mulheres, estrangeiros (metecos) e escravizados.",
+"Foi criada pelos romanos e levada à Grécia após a conquista da península."
+],
+"r": 3,
+"exp": "Em Atenas, os cidadãos votavam diretamente na Eclésia (assembleia). Mas só eram cidadãos os homens adultos nascidos de pais atenienses: a maioria da população ficava de fora."
+},
+{
+"n": 18,
+"m": "his",
+"t": "Idade Média: feudalismo, Igreja e mundo islâmico",
+"nivel": "Fácil",
+"base": "PISM I 2025 · questões 16 e 19 (Idade Média)",
+"texto": "Sobre a sociedade feudal na Europa ocidental, marque a alternativa CORRETA.",
+"a": [
+"A economia era baseada no comércio marítimo e no uso intenso de moedas.",
+"Havia grande mobilidade social, e os servos podiam virar nobres com facilidade.",
+"A Igreja não tinha influência política nem cultural.",
+"O poder era centralizado em reis absolutistas que controlavam todo o território.",
+"A sociedade era estamental, com pouca mobilidade, e os servos deviam ao senhor obrigações como a corveia e a talha."
+],
+"r": 4,
+"exp": "A sociedade feudal era dividida em estamentos (clero, nobreza e servos), com pouquíssima mobilidade. Os servos trabalhavam nas terras do senhor (corveia) e entregavam parte da produção (talha). O poder era fragmentado e a Igreja era muito influente."
+},
+{
+"n": 19,
+"m": "his",
+"t": "Expansão marítima e colonização da América",
+"nivel": "Médio",
+"base": "PISM I 2026 · questão 19 (expansão marítima)",
+"texto": "O pioneirismo de Portugal nas Grandes Navegações, a partir do século XV, é explicado, entre outros fatores,",
+"a": [
+"pela centralização política precoce após a Revolução de Avis, pela posição geográfica favorável e pelo apoio da burguesia mercantil.",
+"pela industrialização do país, que já produzia navios a vapor.",
+"pela aliança com os povos indígenas americanos antes da chegada de Colombo.",
+"pelo controle português sobre o Mar Mediterrâneo e sobre Constantinopla.",
+"pela falta de interesse em especiarias e metais preciosos."
+],
+"r": 0,
+"exp": "Portugal tinha um Estado centralizado desde a Revolução de Avis (1383–1385), costa voltada para o Atlântico, burguesia interessada no comércio e conhecimento náutico acumulado. Navios a vapor (B) são do século XIX."
+},
+{
+"n": 20,
+"m": "his",
+"t": "Brasil Colônia: açúcar, mineração e escravidão",
+"nivel": "Difícil",
+"base": "PISM I 2025 · questão 17 e PISM I 2023 · questão 18 (povos indígenas e colonização)",
+"texto": "Sobre a atuação dos jesuítas no Brasil colonial, marque a alternativa CORRETA.",
+"a": [
+"Eles defendiam a escravização dos indígenas como forma de catequese.",
+"Organizaram aldeamentos e catequizaram indígenas, entrando muitas vezes em conflito com colonos interessados em escravizá-los, mas também contribuíram para a desestruturação das culturas nativas.",
+"Chegaram ao Brasil apenas no século XIX, junto com a família real portuguesa.",
+"Dedicavam-se só ao comércio de açúcar e não tinham atuação educacional.",
+"Respeitavam integralmente as religiões indígenas e não tentavam convertê-las."
+],
+"r": 1,
+"exp": "Os jesuítas (desde 1549) reuniram indígenas em aldeamentos e se opuseram à escravização deles pelos colonos. Ao mesmo tempo, impuseram o cristianismo e costumes europeus, o que contribuiu para desestruturar as culturas indígenas."
+}
+],
+"discursivas": [
+{
+"n": 1,
+"m": "lit",
+"t": "Classicismo e o soneto",
+"base": "PISM I 2026 · discursivas de Literaturas",
+"texto": "Releia o Texto 1.",
+"itens": [
+{
+"p": "a",
+"enun": "Cite duas características que fazem do soneto de Camões um texto do Classicismo.",
+"esperado": "Ex.: forma fixa do soneto (14 versos, dois quartetos e dois tercetos), versos decassílabos, equilíbrio e rigor formal, tentativa racional de definir um sentimento, influência de Petrarca e da Antiguidade clássica.",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Retire do texto um paradoxo e explique o que ele revela sobre a visão de amor do eu lírico.",
+"esperado": "Ex.: “contentamento descontente” ou “dor que desatina sem doer”. Revela que o amor é contraditório, ao mesmo tempo prazer e sofrimento, e difícil de explicar pela razão.",
+"pontos": 2.5
+}
+],
+"pontos": 5,
+"apoio": [
+"l1"
+]
+},
+{
+"n": 2,
+"m": "lit",
+"t": "O gênero dramático em Gil Vicente",
+"base": "PISM I 2026 · discursivas de Literaturas",
+"texto": "Releia o Texto 4.",
+"itens": [
+{
+"p": "a",
+"enun": "Cite duas marcas do texto que comprovam que ele pertence ao gênero dramático.",
+"esperado": "Ex.: falas das personagens identificadas pelos nomes (DIABO, FIDALGO), diálogo direto, ausência de narrador, texto feito para ser encenado (rubricas/indicações de cena).",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Explique qual é a crítica social presente no Auto da Barca do Inferno.",
+"esperado": "As almas de mortos de vários grupos sociais (fidalgo, onzeneiro, frade, juiz etc.) são julgadas antes de embarcar: os que viveram com orgulho, ganância ou hipocrisia vão para a barca do inferno. Gil Vicente critica os vícios da sociedade portuguesa com intenção moralizante, cristã.",
+"pontos": 2.5
+}
+],
+"pontos": 5,
+"apoio": [
+"l4"
+]
+},
+{
+"n": 3,
+"m": "bio",
+"t": "Mitose e meiose",
+"base": "PISM I 2025 · questão 9 (divisão celular)",
+"texto": "Considere uma célula humana com 46 cromossomos (2n = 46).",
+"itens": [
+{
+"p": "a",
+"enun": "Quantas células são formadas e quantos cromossomos cada uma tem, ao final da mitose e ao final da meiose?",
+"esperado": "Mitose: 2 células com 46 cromossomos cada (2n). Meiose: 4 células com 23 cromossomos cada (n).",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Explique a importância da meiose para a variabilidade genética dos seres humanos.",
+"esperado": "Na meiose ocorrem o crossing-over (troca de trechos entre cromossomos homólogos) e a segregação independente dos cromossomos, formando gametas diferentes entre si. Com a fecundação, cada filho recebe uma combinação nova de genes.",
+"pontos": 2.5
+}
+],
+"pontos": 5
+},
+{
+"n": 4,
+"m": "bio",
+"t": "Fotossíntese e respiração",
+"base": "PISM I 2023 · questão 9 (metabolismo energético)",
+"texto": "Fotossíntese e respiração celular são processos complementares.",
+"itens": [
+{
+"p": "a",
+"enun": "Escreva a equação geral da fotossíntese e a da respiração celular aeróbica.",
+"esperado": "Fotossíntese: 6 CO₂ + 6 H₂O + luz → C₆H₁₂O₆ + 6 O₂. Respiração: C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + energia (ATP).",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Explique por que a fotossíntese é a base de quase todas as cadeias alimentares.",
+"esperado": "Os seres fotossintetizantes (produtores) transformam a energia luminosa em energia química, guardada nas moléculas orgânicas (glicose). Essa matéria e essa energia passam para os consumidores pela alimentação.",
+"pontos": 2.5
+}
+],
+"pontos": 5
+},
+{
+"n": 5,
+"m": "fis",
+"t": "Movimento uniformemente variado",
+"base": "PISM I 2026 · questões 12 e 13 (cinemática)",
+"texto": "Um carro trafega a 72 km/h e freia uniformemente até parar, em 4,0 s.",
+"itens": [
+{
+"p": "a",
+"enun": "Calcule a aceleração média do carro durante a frenagem, em m/s².",
+"esperado": "72 km/h = 20 m/s. a = (0 − 20)/4,0 = −5,0 m/s².",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Calcule a distância percorrida pelo carro durante a frenagem.",
+"esperado": "v² = v₀² + 2aΔS → 0 = 400 − 10ΔS → ΔS = 40 m (ou ΔS = (v₀ + v)/2 × t = 10 × 4,0 = 40 m).",
+"pontos": 2.5
+}
+],
+"pontos": 5
+},
+{
+"n": 6,
+"m": "fis",
+"t": "Conservação da energia",
+"base": "PISM I 2025 · questão 15 (energia)",
+"texto": "Uma bola de 0,50 kg é lançada verticalmente para cima com velocidade de 8,0 m/s. Despreze a resistência do ar e use g = 10 m/s².",
+"itens": [
+{
+"p": "a",
+"enun": "Calcule a energia cinética da bola no lançamento.",
+"esperado": "Ec = m·v²/2 = 0,50 × 64/2 = 16 J.",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Calcule a altura máxima atingida pela bola e explique o princípio usado.",
+"esperado": "Pela conservação da energia mecânica, a energia cinética vira potencial: m·g·h = 16 → 0,50 × 10 × h = 16 → h = 3,2 m.",
+"pontos": 2.5
+}
+],
+"pontos": 5
+},
+{
+"n": 7,
+"m": "his",
+"t": "Feudalismo e Igreja",
+"base": "PISM I 2025 · questões 16 e 19 (Idade Média)",
+"texto": "Sobre a Europa feudal:",
+"itens": [
+{
+"p": "a",
+"enun": "Explique o que eram as relações de suserania e vassalagem.",
+"esperado": "Eram laços de fidelidade entre nobres: o suserano cedia um feudo (terra) ao vassalo, que em troca jurava lealdade e prestava ajuda militar e conselho.",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Explique duas formas de influência da Igreja Católica na sociedade medieval.",
+"esperado": "Ex.: a Igreja era a maior proprietária de terras; controlava a educação e a produção do conhecimento (mosteiros, copistas, universidades); justificava a ordem social (clero que reza, nobreza que luta, servos que trabalham); cobrava o dízimo; tinha poder político sobre reis.",
+"pontos": 2.5
+}
+],
+"pontos": 5
+},
+{
+"n": 8,
+"m": "his",
+"t": "História da África",
+"base": "PISM I 2026 · questões 16 e 20 (história da África)",
+"texto": "Sobre a história africana:",
+"itens": [
+{
+"p": "a",
+"enun": "Explique a importância do comércio transaariano para os reinos da África Ocidental, como Gana e Mali.",
+"esperado": "As caravanas que atravessavam o Saara trocavam ouro, sal, tecidos e outros produtos e ligavam a África Ocidental ao norte da África e ao mundo islâmico. Esse comércio enriqueceu os reinos, fortaleceu os governantes e fez crescer cidades como Tombuctu, que se tornaram centros de estudo.",
+"pontos": 2.5
+},
+{
+"p": "b",
+"enun": "Por que o estudo da história da África é importante para compreender a formação do Brasil?",
+"esperado": "Milhões de africanos escravizados foram trazidos ao Brasil e marcaram profundamente a cultura, a língua, a religião, a culinária e a economia do país. Conhecer a história africana (prevista na Lei 10.639/2003) valoriza essa herança e ajuda a combater o racismo e os estereótipos.",
+"pontos": 2.5
+}
+],
+"pontos": 5
+}
+]
+}
+]
+}

@@ -1,0 +1,10 @@
+[
+{
+"id": "pism1-01",
+"nome": "PISM 1 · Simulado 1",
+"prova": "PISM UFJF",
+"modulo": "I",
+"descricao": "Montado com o mesmo formato, número de questões, assuntos e nível das provas do Módulo I de 2023, 2025 e 2026 (COPESE/UFJF), com questões modificadas e no estilo das provas mais recentes.",
+"arquivo": "simulados/pism1-01.json"
+}
+]

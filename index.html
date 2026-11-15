@@ -1117,7 +1117,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=3.9">
+<link rel="stylesheet" href="css/componentes.css?v=4.0">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -1127,6 +1127,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/ExercicioIdioma.js?v=3.0"></script>
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
+<script src="js/componentes/Simulados.js?v=1.0"></script>
 <script src="js/componentes/Estante.js?v=3.9"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
@@ -2592,6 +2593,12 @@ function renderCompartilhadas(){
   if(!window.LAComp||!LAComp.Estante){$("#main").innerHTML=`<div class="page">${pageHead("Notas compartilhadas")}<div class="card"><p>Não foi possível carregar. Atualize a página.</p></div></div>`;return}
   LAComp.Estante.renderComp($("#main"),appEstante);
 }
+const appSim={esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),md:t=>qbMd(t),get mat(){return QB_MAT},
+  ler:k=>ler(k),gravar:(k,v)=>gravar(k,v,true),iaJson:null,naTela:()=>S.view==="simulados"};
+function renderSimulados(){
+  if(!window.LAComp||!LAComp.Simulados){$("#main").innerHTML=`<div class="page">${pageHead("Simulados")}<div class="card"><p>Não foi possível carregar os simulados. Atualize a página.</p></div></div>`;return}
+  appSim.iaJson=iaEditalDisponivel()?(p=>iaJson(p,{tempo:60000,seguir:true})):null;LAComp.Simulados.render($("#main"),appSim);
+}
 function renderEstante(){
   if(!window.LAComp||!LAComp.Estante){$("#main").innerHTML=`<div class="page">${pageHead("Minha estante")}<div class="card"><p>Não foi possível carregar a estante. Atualize a página.</p></div></div>`;return}
   LAComp.Estante.render($("#main"),appEstante);
@@ -2752,8 +2759,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.12";
+const APP_VERSAO="3.13";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Nova aba: Simulados 📝",d:"O primeiro é o PISM 1: 2 dias, cada um com 20 objetivas e 8 discursivas e 4 horas de prova, no formato e no nível das últimas provas do Módulo I, com questões modificadas das provas anteriores. Tem cronômetro e não dá para sair da aba: se sair, o simulado zera. No fim, as objetivas são corrigidas na hora e as discursivas pela IA."},
   {t:"Banco de questões alimentado por todos 🤝",d:"As questões que os estudantes importam por foto também entram no Banco de questões para todo mundo (só o texto, sem foto e sem nome), em “Enviadas pelos estudantes”, e continuam lá mesmo se a pessoa apagar do caderno dela. Antes de entrar, a IA confere se a questão já não está no banco, para não repetir."},
   {t:"Importe suas questões por foto 📷",d:"No Banco de questões, toque em Importar questão e tire uma foto: a IA digita a questão, você confere e ela entra no seu Caderno de questões como resolvida (Banco de questões · Questão nº). Pode mandar quantas fotos quiser, e a foto fica guardada junto com a questão na sua conta (não ocupa espaço no aparelho). Se errou, ela vai para o caderno de erros."},
   {t:"Até 20 horas por dia ⏱️",d:"Ao montar a semana, cada dia agora vai até 20 horas de estudo. A meta diária também vai até 20 horas."},
@@ -4830,7 +4838,7 @@ function renderTutorial(){
 // e ninguém vê o progresso dos outros. As telas antigas continuam no código, mas não aparecem nem abrem.
 const SO_CONVERSA=true,TELAS_SOCIAIS=new Set(["grupos","buscarGrupos","voz","chat","amigos","ranking"]);
 const NAV=[
-  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["estante","Minha estante","bookmark"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"]]],
+  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["simulados","Simulados","target"],["estante","Minha estante","bookmark"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"]]],
   ["Prova",[["edital","Escanear edital","scan"],["topicos","Tópicos da prova","list"],["flashcards","Flashcards","cartas"]]],
   ["Conversas",[["mensagens","Mensagens","send"]]],
   ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"],["admin","Administração","lock"]]],
@@ -4902,11 +4910,11 @@ function renderSideUser(){
   el.innerHTML=`${S.mode==="nuvem"?avatar(S.uid):`<span class="avatar" aria-hidden="true">${esc(nm[0]||"V").toUpperCase()}</span>`}<div style="min-width:0"><div class="nm">${esc(nm)}${PRO_LIGADO&&S.mode==="nuvem"&&ehPro()?' <span class="pro-tag">PRO</span>':""}</div><div class="sub" title="${esc(contaEmail())}">${S.mode==="nuvem"&&ehAdmin()?"🛡 Administrador":S.mode==="nuvem"?(esc(contaEmail())||"Salvo na nuvem"):"Visitante · nada é salvo"}</div></div>`;
 }
 function progEdital(){if(!S.edital)return 0;const all=S.edital.materias.flatMap(m=>m.topicos);return all.length?Math.round(all.filter(t=>t.feito).length/all.length*100):0}
-function go(v){if(v==="pro"&&!PRO_LIGADO)v="inicio";if(v==="compartilhadas"){v="estante";if(window.LAComp&&LAComp.Estante&&LAComp.Estante.verComp)LAComp.Estante.verComp()}pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();if((S.view==="estante"||S.view==="compartilhadas")&&v!==S.view&&window.LAComp&&LAComp.Estante)LAComp.Estante.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
+function go(v){if(S.view==="simulados"&&v!=="simulados"&&window.LAComp&&LAComp.Simulados&&!LAComp.Simulados.sairPermitido())return;if(v==="pro"&&!PRO_LIGADO)v="inicio";if(v==="compartilhadas"){v="estante";if(window.LAComp&&LAComp.Estante&&LAComp.Estante.verComp)LAComp.Estante.verComp()}pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();if((S.view==="estante"||S.view==="compartilhadas")&&v!==S.view&&window.LAComp&&LAComp.Estante)LAComp.Estante.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
 function renderView(){
   $$("[data-go]").forEach(a=>{a.classList.toggle("on",a.dataset.go===S.view);if(a.dataset.go===S.view){const g=a.closest(".nav-grp.fech");if(g){g.classList.remove("fech");g.querySelectorAll("a").forEach(x=>x.removeAttribute("tabindex"));const b=g.previousElementSibling;if(b)b.setAttribute("aria-expanded","true")}}if(a.dataset.go==="topicos"){a.hidden=!S.edital;const b=a.querySelector(".badge");if(S.edital){if(b)b.textContent=progEdital()+"%";else a.insertAdjacentHTML("beforeend",`<span class="badge">${progEdital()}%</span>`)}}});
   if(SO_CONVERSA&&TELAS_SOCIAIS.has(S.view)){S.view=S.view==="amigos"?"mensagens":"inicio";try{history.replaceState(history.state,"","#"+S.view)}catch(e){}renderView();return}
-  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,estante:renderEstante,compartilhadas:renderCompartilhadas,idiomas:renderIdiomas,pro:renderPro,admin:renderAdmin,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
+  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,estante:renderEstante,simulados:renderSimulados,compartilhadas:renderCompartilhadas,idiomas:renderIdiomas,pro:renderPro,admin:renderAdmin,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
   f();
 }
 const pageHead=(t,sub,acoes)=>`<div class="page-h"><div><h1>${t}</h1>${sub?`<p>${sub}</p>`:""}</div>${acoes?`<div class="row">${acoes}</div>`:""}</div>`;
