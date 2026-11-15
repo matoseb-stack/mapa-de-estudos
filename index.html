@@ -2500,7 +2500,7 @@ if(window.LAComp&&LAComp.FloatingTimer)LAComp.FloatingTimer.configurar({
 addEventListener("scroll",()=>{if(P.rodando||C.rodando||P.restante<pomoTotal()||cronoMs()>0)atualizarFlutuante()},{passive:true});
 function renderCronometro(){
   const L=garantirTotais(S.pomoLog),T=L.tot;
-  const mats=[...new Set((S.perfil.materias||[]).map(m=>m.nome).concat(S.edital?S.edital.materias.map(m=>m.nome):[]).concat(C.materia?[C.materia]:[]))];
+  const mats=materiasDaSemana(C.materia);
   const hoje=minutosDia(dataISO());let sem=0;for(let i=0;i<7;i++)sem+=minutosDia(diasAtras(i));
   const crono=L.hist.filter(h=>h.fonte==="cronometro").slice(0,8);
   $("#main").innerHTML=`<div class="page">
@@ -2759,8 +2759,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.15";
+const APP_VERSAO="3.16";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Matérias da sua semana no cronômetro ⏱️",d:"No cronômetro e no pomodoro, a lista “Estudando agora” mostra só as matérias que estão na sua semana."},
   {t:"Simulados com figuras 🖼️",d:"As questões dos simulados agora podem ter gráficos, esquemas, mapas e obras de arte, como na prova real, sempre com a fonte. Toque na figura para ampliar."},
   {t:"Questões importadas mais organizadas 🗂️",d:"Ao importar uma questão por foto, a IA analisa o que a questão cobra e escolhe a matéria e o assunto pela lista oficial do banco. Assim ela aparece certinha nos filtros de matéria e tópico."},
   {t:"Nova aba: Simulados 📝",d:"O primeiro é o PISM 1: 2 dias, cada um com 20 objetivas e 8 discursivas e 4 horas de prova, no formato e no nível das últimas provas do Módulo I, com questões modificadas das provas anteriores. Tem cronômetro e não dá para sair da aba: se sair, o simulado zera. No fim, as objetivas são corrigidas na hora e as discursivas pela IA."},
@@ -5225,8 +5226,15 @@ document.addEventListener("keydown",e=>{if(S.view!=="semana"||semanaModo()!=="di
   if(e.key==="ArrowRight"){e.preventDefault();mudarDia(S.diaOff+1,1)}else if(e.key==="ArrowLeft"){e.preventDefault();mudarDia(S.diaOff-1,-1)}});
 
 /* ================= Tela do pomodoro ================= */
+// matérias para escolher no cronômetro e no pomodoro: só as que estão nos blocos da semana
+// (sem plano montado, usa as matérias do perfil); a que já está selecionada continua na lista
+function materiasDaSemana(atual){
+  const daSemana=[];if(S.plano&&S.plano.semana)DIAS.forEach(x=>(S.plano.semana[x.k]||[]).forEach(b=>{const m=String(b.materia||"").trim();if(m&&!daSemana.includes(m))daSemana.push(m)}));
+  const perfil=(S.perfil&&S.perfil.materias||[]).map(m=>m.nome);
+  let l=daSemana.length?perfil.filter(m=>daSemana.includes(m)).concat(daSemana.filter(m=>!perfil.includes(m))):perfil.slice();
+  if(atual&&!l.includes(atual))l.push(atual);return [...new Set(l)]}
 function renderPomodoro(){
-  const mats=[...new Set((S.perfil.materias||[]).map(m=>m.nome).concat(S.edital?S.edital.materias.map(m=>m.nome):[]))];
+  const mats=materiasDaSemana(P.materia);
   const hoje=S.pomoLog.dias[dataISO()]||{min:0,mat:{}};
   const sem=[];for(let i=6;i>=0;i--){const d=diasAtras(i);sem.push({d,m:minutosDia(d)})}const mx=Math.max(60,...sem.map(x=>x.m));
   $("#main").innerHTML=`<div class="page">
