@@ -2752,9 +2752,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.9";
+const APP_VERSAO="3.10";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
-  {t:"Importe suas questões por foto 📷",d:"No Banco de questões, toque em Importar questão e tire uma foto: a IA digita a questão, você confere e ela entra no seu Caderno de questões como resolvida (Banco de questões · Questão nº). Se errou, ela vai para o caderno de erros."},
+  {t:"Importe suas questões por foto 📷",d:"No Banco de questões, toque em Importar questão e tire uma foto: a IA digita a questão, você confere e ela entra no seu Caderno de questões como resolvida (Banco de questões · Questão nº). Pode mandar quantas fotos quiser, e a foto fica guardada junto com a questão na sua conta (não ocupa espaço no aparelho). Se errou, ela vai para o caderno de erros."},
   {t:"Até 20 horas por dia ⏱️",d:"Ao montar a semana, cada dia agora vai até 20 horas de estudo. A meta diária também vai até 20 horas."},
   {t:"Edital lido em segundo plano 🔎",d:"Ao enviar o arquivo, a IA já começa sozinha: primeiro uma triagem rápida (os tópicos aparecem em segundos) e depois a leitura com calma, por partes, que vai ajustando os tópicos e os resumos. Pode ir para o Início ou qualquer outra tela: tudo continua de onde parou."},
   {t:"Tudo liberado 🎉",d:"O Logic Academy Pro saiu: todos os recursos estão liberados para todo mundo, sem plano e sem limite de perguntas à IA."},
@@ -3659,12 +3659,16 @@ function qbEstado(){
   if(!S.qb)S.qb={dados:{},carregando:{},f:{prova:"",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0},sel:null,lim:QB_POR_PAGINA,esc:{},corte:{},doc:null};
   return S.qb}
 async function qbDoc(){const q=qbEstado();if(q.doc)return q.doc;let d=null;try{d=await ler("questoes")}catch(e){}
-  q.doc=d&&typeof d==="object"?{r:d.r||{},s:d.s||{},e:d.e||{},m:d.m||{},mn:d.mn||0}:{r:{},s:{},e:{},m:{},mn:0};
+  q.doc=d&&typeof d==="object"?{r:d.r||{},s:d.s||{},e:d.e||{},m:{},mn:d.mn||0}:{r:{},s:{},e:{},m:{},mn:0};
+  try{q.doc.m=await qbMinhasCarregar()}catch(e){console.warn("minhas questões",e)}
+  // versão anterior guardava as importadas dentro deste documento: passam para o lugar novo
+  if(d&&d.m&&typeof d.m==="object"&&Object.keys(d.m).length){for(const [id,o] of Object.entries(d.m)){if(!q.doc.m[id]){q.doc.m[id]=o;qbMinhaGravar(id,o,null)}}setTimeout(qbSalvar,0)}
+  try{indexedDB.deleteDatabase("la-minhas-"+(S.uid||"anon"))}catch(e){}
   // caderno de erros: questões erradas antes desta versão entram como "para corrigir"
   Object.entries(q.doc.r).forEach(([id,r])=>{if(!r[1]&&!q.doc.e[id])q.doc.e[id]={n:1,em:r[2]||Date.now(),c:0,m:r[0]}});return q.doc}
 const qbPendente=(doc,id)=>!!(doc&&doc.e&&doc.e[id]&&!doc.e[id].c);
 const qbCorrigida=(doc,id)=>!!(doc&&doc.e&&doc.e[id]&&doc.e[id].c);
-function qbSalvar(){gravar("questoes",qbEstado().doc)}
+function qbSalvar(){const {m,...resto}=qbEstado().doc;gravar("questoes",resto)}
 async function qbCarregar(area){const q=qbEstado();if(q.dados[area])return q.dados[area];
   const pega=u=>fetch(u).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()});
   if(!q.carregando[area])q.carregando[area]=Promise.all([pega("questoes/enem-"+area+".json")].concat(["espcex","pism","pas"].map(p=>pega("questoes/"+p+"-"+area+".json").catch(()=>[]))))
@@ -3952,12 +3956,25 @@ function qbMeuCadernoHtml(){
   return `<div class="card qb-meucad"><div class="qb-cad-top"><span class="qb-cad-ic">📒</span><div style="min-width:0;flex:1"><h3>Meu caderno de questões</h3>
     <p class="small muted">${l.length?`<b style="color:var(--fg)">${l.length}</b> ${l.length===1?"questão importada":"questões importadas"}, todas resolvidas · ${certas} ${certas===1?"acerto":"acertos"}. Elas aparecem como “Banco de questões · Questão nº”.`:"Tire foto de uma questão de qualquer prova, livro ou lista: a IA digita a questão e ela entra aqui como resolvida."}</p></div>
     <div class="row" style="gap:6px"><button class="btn primary" type="button" id="qb-importar">${ico("plus")}Importar questão</button>${l.length?`<button class="btn sm ghost" type="button" id="qb-meu-cad">Abrir caderno</button>`:""}</div></div></div>`}
-// foto original: guardada só neste aparelho (não vai para a nuvem)
-let qbFotoDbP=null;
-function qbFotoDb(){if(!qbFotoDbP)qbFotoDbP=new Promise((ok,no)=>{const r=indexedDB.open("la-minhas-"+(S.uid||"anon"),1);r.onupgradeneeded=()=>r.result.createObjectStore("fotos");r.onsuccess=()=>ok(r.result);r.onerror=()=>no(r.error)});qbFotoDbP.catch(()=>{qbFotoDbP=null});return qbFotoDbP}
-async function qbFotoGuardar(id,dataUrl){try{const db=await qbFotoDb();await new Promise((ok,no)=>{const t=db.transaction("fotos","readwrite");t.objectStore("fotos").put(dataUrl,id);t.oncomplete=ok;t.onerror=()=>no(t.error)})}catch(e){}}
-async function qbFotoLer(id){const db=await qbFotoDb();return new Promise(ok=>{const g=db.transaction("fotos").objectStore("fotos").get(id);g.onsuccess=()=>ok(g.result||null);g.onerror=()=>ok(null)})}
-async function qbFotoApagar(id){try{const db=await qbFotoDb();db.transaction("fotos","readwrite").objectStore("fotos").delete(id)}catch(e){}}
+// questões importadas: data/users/{uid}/questoes/minhas/{id} (texto) e .../fotos/{id} (a foto, carregada só quando abre)
+const qbColMinhas=n=>meuDoc("questoes").collection(n);
+async function qbMinhasCarregar(){
+  if(S.mode!=="nuvem"){const m=VISITANTE_MEM.qbMinhas||{};return clone(m)}
+  const out={};(await qbColMinhas("minhas").get()).forEach(d=>{out[d.id]=d.data()});return out}
+async function qbMinhaGravar(id,o,foto){
+  if(S.mode!=="nuvem"){(VISITANTE_MEM.qbMinhas=VISITANTE_MEM.qbMinhas||{})[id]=clone(o);if(foto)(VISITANTE_MEM.qbFotos=VISITANTE_MEM.qbFotos||{})[id]=foto;return}
+  try{await qbColMinhas("minhas").doc(id).set(o);if(foto)await qbColMinhas("fotos").doc(id).set({foto})}catch(e){toast("Não foi possível salvar a questão na nuvem ("+(e&&e.code||"erro")+"). Tente de novo.")}}
+async function qbFotoLer(id){
+  if(S.mode!=="nuvem")return (VISITANTE_MEM.qbFotos||{})[id]||null;
+  const d=await qbColMinhas("fotos").doc(id).get();return d.exists?d.data().foto:null}
+function qbFotoApagar(id){
+  if(S.mode!=="nuvem"){if(VISITANTE_MEM.qbMinhas)delete VISITANTE_MEM.qbMinhas[id];if(VISITANTE_MEM.qbFotos)delete VISITANTE_MEM.qbFotos[id];return}
+  qbColMinhas("minhas").doc(id).delete().catch(()=>{});qbColMinhas("fotos").doc(id).delete().catch(()=>{})}
+// foto menor para guardar (cabe folgado no limite de 1 MB por registro)
+function qbFotoReduzir(file){return new Promise(ok=>{const img=new Image(),url=URL.createObjectURL(file);
+  img.onload=()=>{let lado=1400,qual=.72,out="";for(let t=0;t<5;t++){const k=Math.min(1,lado/Math.max(img.width,img.height)),c=document.createElement("canvas");c.width=Math.round(img.width*k);c.height=Math.round(img.height*k);
+      const cx=c.getContext("2d");cx.fillStyle="#fff";cx.fillRect(0,0,c.width,c.height);cx.drawImage(img,0,0,c.width,c.height);out=c.toDataURL("image/jpeg",qual);if(out.length<700000)break;lado*=.8;qual=Math.max(.5,qual-.06)}
+    URL.revokeObjectURL(url);ok(out)};img.onerror=()=>{URL.revokeObjectURL(url);ok(null)};img.src=url})}
 function promptDigitalizarQuestao(){
   return `As imagens anexadas são fotos de uma ou mais questões de prova (vestibular, concurso, escola, livro ou lista). Digite cada questão completa, fielmente, em português.
 - "texto": o texto-base e o enunciado completos, com as quebras de parágrafo. Fórmulas em texto simples (ex.: x^2, √2, 3/4). Figura, gráfico ou tabela que não dá para digitar: descreva entre colchetes, ex.: [Figura: triângulo retângulo com catetos 3 e 4].
@@ -3966,33 +3983,40 @@ function promptDigitalizarQuestao(){
 - "topico": o assunto da questão em poucas palavras (ex.: "Função do 2º grau", "Revolução Francesa").
 - "gabarito": a letra correta se o gabarito aparecer na foto; senão resolva a questão você mesmo e diga a letra, com "gabarito_da_ia": true.
 - "marcada": a letra que o estudante marcou à mão na foto (círculo, X, rabisco), ou "" se não houver marca.
+- "foto": o número da foto (1, 2, 3… na ordem em que foram anexadas) onde a questão está.
 - Ignore cabeçalhos, números de página e marcas d'água. Se não houver questão nas fotos, devolva "questoes": [] e explique em "observacao".
 Responda SOMENTE com JSON válido:
-{"questoes":[{"texto":"...","alternativas":["..."],"certo_errado":false,"materia":"mat","topico":"...","gabarito":"C","gabarito_da_ia":false,"marcada":""}],"observacao":""}`}
+{"questoes":[{"texto":"...","alternativas":["..."],"certo_errado":false,"materia":"mat","topico":"...","gabarito":"C","gabarito_da_ia":false,"marcada":"","foto":1}],"observacao":""}`}
 function qbImportarModal(){
   if(!iaEditalDisponivel()){toast("A importação por foto precisa da IA. Entre com sua conta para usar.");return}
   const bg=document.createElement("div");bg.className="modal-bg";
   bg.innerHTML=`<div class="card stack modal qb-imp" role="dialog" aria-modal="true" aria-labelledby="qi-t" style="max-width:760px;width:100%;max-height:92vh;overflow:auto">
     <div class="row" style="justify-content:space-between"><h3 id="qi-t">Importar questão</h3><button class="btn icon ghost sm" type="button" data-qi="x" aria-label="Fechar">✕</button></div>
     <div id="qi-corpo" class="stack">
-      <p class="small muted">Tire uma foto da questão (ou escolha da galeria). Pode ser mais de uma foto, e cada foto pode ter várias questões. A IA digita tudo, você confere e a questão entra no seu caderno como resolvida.</p>
-      <label class="drop" for="qi-file">${ico("file")}<b>Tirar foto ou escolher imagem</b><span class="small muted">JPG, PNG ou foto da câmera · até 6 fotos</span></label>
+      <p class="small muted">Tire uma foto da questão (ou escolha da galeria). Pode mandar quantas fotos quiser, e cada foto pode ter várias questões. A IA digita tudo, você confere e a questão entra no seu caderno como resolvida. A foto fica guardada junto com a questão, na sua conta, e não no aparelho.</p>
+      <label class="drop" for="qi-file">${ico("file")}<b>Tirar foto ou escolher imagens</b><span class="small muted">JPG, PNG ou foto da câmera · quantas fotos quiser</span></label>
       <input type="file" id="qi-file" accept="image/*" multiple hidden>
     </div></div>`;
   document.body.appendChild(bg);
   const fechar=()=>bg.remove();bg.addEventListener("click",e=>{if(e.target===bg||e.target.closest('[data-qi="x"]'))fechar()});
-  bg.querySelector("#qi-file").onchange=async ev=>{const fs=[...ev.target.files].filter(f=>/^image\//.test(f.type)).slice(0,6);if(!fs.length)return;
-    const corpo=bg.querySelector("#qi-corpo");corpo.innerHTML=`<div class="loadbox"><div class="row"><span class="spinner"></span><b>A IA está digitalizando ${fs.length===1?"a foto":"as "+fs.length+" fotos"}…</b></div><p class="small muted">Isso leva alguns segundos.</p><div class="prog"><i id="qi-p" style="width:10%"></i></div></div>`;
-    try{const imgs=await Promise.all(fs.map(imagemParaIA));const foto="data:image/jpeg;base64,"+imgs[0].b64;let r;
-      const op={tempo:60000,seguir:true,onText:({text})=>{const pp=bg.querySelector("#qi-p");if(pp)pp.style.width=Math.min(95,10+text.length/25)+"%"}};
-      if(S.sample)r=await iaJson(promptDigitalizarQuestao(),Object.assign(op,{arquivos:fs}));else r=await iaJson(promptDigitalizarQuestao(),Object.assign(op,{imagens:imgs}));
-      const qs=(r&&Array.isArray(r.questoes)?r.questoes:[]).filter(x=>x&&(x.texto||"").trim());
-      if(!qs.length){corpo.innerHTML=`<div class="empty-state stack"><b>Não encontrei questão nesta foto.</b><span class="small muted">${esc(r&&r.observacao||"Tente uma foto mais nítida, de frente e com boa luz.")}</span><button class="btn" type="button" data-qi="x">Fechar</button></div>`;return}
-      qbImportarRevisar(bg,qs,foto)}
-    catch(e){console.warn("importar questão",e);corpo.innerHTML=`<div class="empty-state stack"><b>A IA não conseguiu ler a foto agora.</b><span class="small muted">${esc(iaErroTxt(e))}</span><button class="btn" type="button" data-qi="x">Fechar</button></div>`}};
+  bg.querySelector("#qi-file").onchange=async ev=>{const fs=[...ev.target.files].filter(f=>/^image\//.test(f.type));if(!fs.length)return;
+    const corpo=bg.querySelector("#qi-corpo"),LOTE=4,nl=Math.ceil(fs.length/LOTE);
+    corpo.innerHTML=`<div class="loadbox"><div class="row"><span class="spinner"></span><b>A IA está digitalizando ${fs.length===1?"a foto":"as "+fs.length+" fotos"}…</b></div><p class="small muted" id="qi-s">${nl>1?`Lote 1 de ${nl}`:"Isso leva alguns segundos."}</p><div class="prog"><i id="qi-p" style="width:5%"></i></div></div>`;
+    const qs=[],obs=[];let falhas=0,ultErro=null;
+    for(let l=0;l<nl;l++){const parte=fs.slice(l*LOTE,(l+1)*LOTE);const sl=bg.querySelector("#qi-s");if(sl&&nl>1)sl.textContent=`Lote ${l+1} de ${nl} (fotos ${l*LOTE+1}–${l*LOTE+parte.length} de ${fs.length})`;
+      try{const imgs=await Promise.all(parte.map(imagemParaIA));let r;
+        const op={tempo:60000,seguir:true,onText:({text})=>{const pp=bg.querySelector("#qi-p");if(pp)pp.style.width=Math.min(98,((l+Math.min(.95,text.length/2500))/nl)*100)+"%"}};
+        if(S.sample)r=await iaJson(promptDigitalizarQuestao(),Object.assign(op,{arquivos:parte}));else r=await iaJson(promptDigitalizarQuestao(),Object.assign(op,{imagens:imgs}));
+        (r&&Array.isArray(r.questoes)?r.questoes:[]).filter(x=>x&&(x.texto||"").trim()).forEach(x=>{const k=Math.max(1,Math.min(parte.length,Math.round(+x.foto)||1))-1;x._arq=parte[k];qs.push(x)});
+        if(r&&r.observacao)obs.push(r.observacao)}
+      catch(e){console.warn("importar questão",e);falhas++;ultErro=e}
+      if(!bg.isConnected)return}
+    if(!qs.length){corpo.innerHTML=`<div class="empty-state stack"><b>${falhas?"A IA não conseguiu ler as fotos agora.":"Não encontrei questão nestas fotos."}</b><span class="small muted">${esc(falhas?iaErroTxt(ultErro):(obs[0]||"Tente uma foto mais nítida, de frente e com boa luz."))}</span><button class="btn" type="button" data-qi="x">Fechar</button></div>`;return}
+    if(falhas)toast(`${falhas} lote(s) de fotos não puderam ser lidos. Mande essas fotos de novo depois.`);
+    qbImportarRevisar(bg,qs)};
   bg.querySelector(".drop").focus&&bg.querySelector(".drop").focus();
 }
-function qbImportarRevisar(bg,qs,foto){
+function qbImportarRevisar(bg,qs){
   const corpo=bg.querySelector("#qi-corpo"),L="ABCDE",letra=v=>{const k=L.indexOf(String(v||"").trim().toUpperCase().charAt(0));return k};
   const ops=(n,v,ce)=>Array.from({length:n},(_,k)=>`<option value="${k}" ${v===k?"selected":""}>${ce?["Certo","Errado"][k]:L[k]}</option>`).join("");
   corpo.innerHTML=`<p class="small muted">Confira o que a IA digitou e corrija se precisar. ${qs.length>1?`Foram encontradas <b>${qs.length}</b> questões.`:""}</p>
@@ -4014,10 +4038,11 @@ function qbImportarRevisar(bg,qs,foto){
       const a=ce?["Certo","Errado"]:[...card.querySelectorAll("[data-qi-a]")].map(i=>i.value.trim());
       const id="mq"+uid();doc.mn=(doc.mn||0)+1;
       doc.m[id]={n:doc.mn,m:card.querySelector("[data-qi-m]").value,t:card.querySelector("[data-qi-t]").value.trim().slice(0,80)||"Questão importada",c:c.slice(0,6000),i:"",ce,a:a.map(t=>t.slice(0,800)),r:+card.querySelector("[data-qi-g]").value,em:Date.now(),ia:card.querySelector("[data-qi-ia]").value==="1"};
-      novos.push([id,+card.querySelector("[data-qi-r]").value])});
+      novos.push([id,+card.querySelector("[data-qi-r]").value,qs[+card.dataset.i]._arq])});
     if(!novos.length){toast("Nenhuma questão marcada para importar.");return}
     // entram como resolvidas: contam nas estatísticas e, se errou, vão para o caderno de erros
-    novos.forEach(([id,k])=>{const x=qbMinhas().find(y=>y.id===id);if(x)qbRegistrar(x,k);if(foto)qbFotoGuardar(id,foto)});
+    const salvar=corpo.querySelector("#qi-salvar");salvar.disabled=true;salvar.textContent="Salvando…";
+    for(const [id,k,arq] of novos){const foto=arq?await qbFotoReduzir(arq):null;await qbMinhaGravar(id,doc.m[id],foto);const x=qbMinhas().find(y=>y.id===id);if(x)qbRegistrar(x,k)}
     bg.remove();Object.assign(q.f,{prova:"minhas",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0});q.sel=novos[0][0];q.mostrar=novos[0][0];q.lim=QB_POR_PAGINA;
     toast(novos.length===1?"Questão salva no seu caderno.":`${novos.length} questões salvas no seu caderno.`);
     if(S.view==="questoes")qbTela();else go("questoes")};
