@@ -10,7 +10,7 @@ service cloud.firestore {
     match /data/users/{uid}/{doc=**} { allow read, write: if eu(uid); }
 
     // Banco de questões alimentado pelos estudantes: questões importadas por foto (só o texto, sem foto e sem nome).
-    // Cada uma recebe o próximo número do contador (Banco de questões · Questão nº); só quem enviou ou o administrador apaga.
+    // Cada uma recebe o próximo número do contador (Banco de questões · Questão nº); só o administrador apaga.
     match /bancoComunidade/{qid} {
       allow read: if logado();
       allow create: if logado() && request.resource.data.autor == request.auth.uid
@@ -22,7 +22,7 @@ service cloud.firestore {
         && request.resource.data.t is string && request.resource.data.t.size() <= 80
         && request.resource.data.n is int
         && getAfter(/databases/$(database)/documents/bancoContador/geral).data.n == request.resource.data.n;
-      allow delete: if logado() && (resource.data.autor == request.auth.uid || ehAdmin());
+      allow delete: if ehAdmin();   // a questão fica no banco mesmo se quem enviou apagar do caderno dela
     }
     match /bancoContador/geral {
       allow read: if logado();

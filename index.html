@@ -2752,9 +2752,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.11";
+const APP_VERSAO="3.12";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
-  {t:"Banco de questões alimentado por todos 🤝",d:"As questões que os estudantes importam por foto também entram no Banco de questões para todo mundo (só o texto, sem foto e sem nome), em “Enviadas pelos estudantes”. Antes de entrar, a IA confere se a questão já não está no banco, para não repetir."},
+  {t:"Banco de questões alimentado por todos 🤝",d:"As questões que os estudantes importam por foto também entram no Banco de questões para todo mundo (só o texto, sem foto e sem nome), em “Enviadas pelos estudantes”, e continuam lá mesmo se a pessoa apagar do caderno dela. Antes de entrar, a IA confere se a questão já não está no banco, para não repetir."},
   {t:"Importe suas questões por foto 📷",d:"No Banco de questões, toque em Importar questão e tire uma foto: a IA digita a questão, você confere e ela entra no seu Caderno de questões como resolvida (Banco de questões · Questão nº). Pode mandar quantas fotos quiser, e a foto fica guardada junto com a questão na sua conta (não ocupa espaço no aparelho). Se errou, ela vai para o caderno de erros."},
   {t:"Até 20 horas por dia ⏱️",d:"Ao montar a semana, cada dia agora vai até 20 horas de estudo. A meta diária também vai até 20 horas."},
   {t:"Edital lido em segundo plano 🔎",d:"Ao enviar o arquivo, a IA já começa sozinha: primeiro uma triagem rápida (os tópicos aparecem em segundos) e depois a leitura com calma, por partes, que vai ajustando os tópicos e os resumos. Pode ir para o Início ou qualquer outra tela: tudo continua de onde parou."},
@@ -3693,7 +3693,7 @@ function qbMinhas(){const doc=qbEstado().doc;if(!doc||!doc.m)return [];
   return Object.entries(doc.m).map(([id,o])=>({id,p:"minhas",n:o.n,m:QB_MAT[o.m]?o.m:"por",t:o.t||"Questão importada",c:o.c||"",i:o.i||"",ce:!!o.ce,
     a:(o.a||[]).map(t=>[t,""]),r:o.r,area:qbAreaDaMat(o.m),em:o.em,ia:!!o.ia})).sort((a,b)=>b.n-a.n)}
 /* ===== Banco alimentado pelos estudantes: as questões importadas entram para todos (só o texto) ===== */
-function qbComunidade(){const q=qbEstado();return (q.com||[]).filter(o=>o.autor!==S.uid).map(o=>({id:"c_"+o.id,cid:o.id,p:"comunidade",n:o.n,m:QB_MAT[o.m]?o.m:"por",t:o.t||"Questão enviada",c:o.c||"",i:"",ce:!!o.ce,
+function qbComunidade(){const q=qbEstado(),noCaderno=new Set(Object.values((q.doc&&q.doc.m)||{}).map(o=>o.pub).filter(Boolean));return (q.com||[]).filter(o=>!noCaderno.has(o.id)).map(o=>({id:"c_"+o.id,cid:o.id,p:"comunidade",n:o.n,m:QB_MAT[o.m]?o.m:"por",t:o.t||"Questão enviada",c:o.c||"",i:"",ce:!!o.ce,
   a:(o.a||[]).map(t=>[t,""]),r:o.r,area:qbAreaDaMat(o.m),ia:!!o.ia,autor:o.autor}))}
 async function qbComunidadeCarregar(forcar){const q=qbEstado();if(!FBM()||S.mode!=="nuvem")return [];if(q.com&&!forcar)return q.com;
   if(!q.comP||forcar)q.comP=S.db.collection("bancoComunidade").orderBy("n","desc").limit(2000).get()
@@ -3884,7 +3884,6 @@ function qbLigar(lista){
     S.db.collection("bancoComunidade").doc(x.cid).delete().then(()=>{q.com=(q.com||[]).filter(c=>c.id!==x.cid);q.sel=null;toast("Questão apagada do banco.");qbTela()}).catch(e=>toast("Não foi possível apagar ("+(e&&e.code||"erro")+")."))};
   if(x.p==="minhas"){const fb=$("#qb-foto");qbFotoLer(x.id).then(u=>{if(u&&fb&&fb.isConnected){fb.hidden=false;fb.onclick=()=>qbZoom([u],"Foto original da questão")}}).catch(()=>{});
     const ap=$("#qb-apagar");if(ap)ap.onclick=()=>{if(ap.dataset.ok!=="1"){ap.dataset.ok="1";ap.textContent="Toque de novo para apagar";return}
-      const pub=(q.doc.m[x.id]||{}).pub;if(pub&&FBM())S.db.collection("bancoComunidade").doc(pub).delete().catch(()=>{});if(pub&&q.com)q.com=q.com.filter(c=>c.id!==pub);
       delete q.doc.m[x.id];delete q.doc.r[x.id];delete q.doc.s[x.id];if(q.doc.e)delete q.doc.e[x.id];qbSalvar();qbFotoApagar(x.id);q.sel=null;toast("Questão apagada do caderno.");qbTela()}}
   $("#qb-salvar").onclick=()=>{if(q.doc.s[x.id])delete q.doc.s[x.id];else q.doc.s[x.id]=Date.now();qbSalvar();const y=scrollY;qbTela();scrollTo(0,y)};
   $("#qb-voltar").onclick=()=>{q.sel=null;qbTela();const it=$(`[data-qsel="${x.id}"]`);if(it)it.scrollIntoView({block:"center"})};
