@@ -499,3 +499,7 @@ button.sim-alt:hover{border-color:var(--fg)}
 
 .qb-exp{margin-top:8px;padding:10px 12px;border-radius:10px;background:var(--surface);border:1px solid var(--line);color:var(--fg)}
 .qb-exp p{margin:0}
+
+.qi-foto{display:block;max-width:100%;max-height:360px;margin:0 auto;border:1px solid var(--line);border-radius:10px;background:#fff}
+.qi-aviso{padding:8px 10px;border-radius:8px;background:color-mix(in srgb,#f59e0b 14%,var(--surface))}
+.qb-foto-q img{display:block;max-width:100%;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:zoom-in}

@@ -14,8 +14,11 @@ service cloud.firestore {
     match /bancoComunidade/{qid} {
       allow read: if logado();
       allow create: if logado() && request.resource.data.autor == request.auth.uid
-        && request.resource.data.keys().hasOnly(['autor','n','m','t','c','a','r','ce','ia','em','h'])
-        && request.resource.data.c is string && request.resource.data.c.size() > 0 && request.resource.data.c.size() <= 6000
+        && request.resource.data.keys().hasOnly(['autor','n','m','t','c','tb','a','r','ce','ia','ac','foto','em','h'])
+        && request.resource.data.c is string && request.resource.data.c.size() <= 6000
+        && (request.resource.data.c.size() > 0 || request.resource.data.get('foto', false) == true)
+        && request.resource.data.get('foto', false) is bool && request.resource.data.get('ac', false) is bool
+        && (!('tb' in request.resource.data) || (request.resource.data.tb is string && request.resource.data.tb.size() <= 6000))
         && request.resource.data.a is list && request.resource.data.a.size() >= 2 && request.resource.data.a.size() <= 5
         && request.resource.data.r is int && request.resource.data.r >= 0 && request.resource.data.r < request.resource.data.a.size()
         && request.resource.data.m is string && request.resource.data.m.size() <= 4
@@ -23,6 +26,15 @@ service cloud.firestore {
         && request.resource.data.n is int
         && getAfter(/databases/$(database)/documents/bancoContador/geral).data.n == request.resource.data.n;
       allow delete: if ehAdmin();   // a questão fica no banco mesmo se quem enviou apagar do caderno dela
+    }
+    // foto recortada da questão do banco dos estudantes (registro separado, carregado só quando a questão é aberta)
+    match /bancoComunidadeFotos/{qid} {
+      allow read: if logado();
+      allow create: if logado() && request.resource.data.autor == request.auth.uid
+        && request.resource.data.keys().hasOnly(['autor','foto'])
+        && request.resource.data.foto is string && request.resource.data.foto.size() < 1000000
+        && get(/databases/$(database)/documents/bancoComunidade/$(qid)).data.autor == request.auth.uid;
+      allow delete: if ehAdmin();
     }
     match /bancoContador/geral {
       allow read: if logado();
