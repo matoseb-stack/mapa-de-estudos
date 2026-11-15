@@ -496,3 +496,6 @@ button.sim-alt:hover{border-color:var(--fg)}
 .sim-fig figcaption{text-align:center;max-width:60ch}
 .sim-zoom-c{position:relative;max-width:96vw;max-height:94vh;overflow:auto;background:#fff;border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
 .sim-zoom-c img{max-width:100%;height:auto;min-width:min(900px,92vw)}
+
+.qb-exp{margin-top:8px;padding:10px 12px;border-radius:10px;background:var(--surface);border:1px solid var(--line);color:var(--fg)}
+.qb-exp p{margin:0}

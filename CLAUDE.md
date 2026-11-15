@@ -17,6 +17,16 @@ Site de estudos em português (plano semanal, pomodoro/cronômetro, banco de que
    `.github/workflows/firebase.yml` publica hosting + regras em **https://logicacademy.web.app** (precisa do segredo `FIREBASE_SERVICE_ACCOUNT`).
 - `.github/workflows/regras.yml` (manual) publica só as regras do Firestore.
 
+## PDF de questões enviado solto (regra do dono)
+Quando o dono mandar um PDF de questões sem outra instrução:
+1. Ler tudo e identificar banca, ano, assunto, gabarito (oficial ou do material) e figuras.
+2. Separar cada questão (do número até a última alternativa); texto de apoio comum vai junto em cada questão; figuras recortadas em `questoes/outras/<lote>/...webp`.
+3. Classificar matéria e assunto pela lista oficial do banco (criar assunto novo só se nenhum servir); nível do material ou estimado.
+4. Gabarito oficial/do material conferido questão por questão (`gf:"material"`); sem gabarito, resolver e marcar `gf:"resolvido"`; explicação curta em `exp`.
+5. Não duplicar questão que já está no banco.
+6. Gravar em `questoes/outras-<area>.json` (`p:"outras"`, `banca`, `ano`, `adapt`, `n` sequencial dentro de "outras") e atualizar `QB_INDICE_OUT` no `index.html`.
+7. Antes de gravar, explicar ao dono o que vai fazer e por quê; publicar nos testes; **só mandar para o oficial depois que o dono disser "pronto"**.
+
 ## Segurança
 - Nunca peça nem receba a chave da conta de serviço ou segredos do reCAPTCHA: vão só nos segredos do GitHub/Firebase.
 - Nunca desligue a verificação TLS nem contorne captchas.
