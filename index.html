@@ -2759,8 +2759,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.18";
+const APP_VERSAO="3.19";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Questões sem enunciado ganham um ✏️",d:"Se a foto tem só uma conta, equação ou reação, a IA escreve um enunciado simples (“Fatore:”, “Resolva:”, “Quanto é:”, “Complete a reação:”), resolve para achar o gabarito e coloca a questão no assunto certo do banco."},
   {t:"Importar por foto ficou melhor 📷",d:"A IA recorta cada questão da foto e a imagem fica na própria questão (o texto é digitado quando é simples). Questão sem alternativas vira múltipla escolha: a IA resolve e cria a resposta certa entre outras erradas. E ela descobre a matéria e o assunto mesmo quando não há enunciado."},
   {t:"Novas questões no banco 📚",d:"Chegaram questões de Produtos notáveis e fatoração de concursos (EsPCEx, FAETEC, FGV, Colégio Naval e AFA), com nível, gabarito e explicação. Filtre por “Outras provas (PDF)” ou pelo assunto."},
   {t:"Matérias da sua semana no cronômetro ⏱️",d:"No cronômetro e no pomodoro, a lista “Estudando agora” mostra só as matérias que estão na sua semana."},
@@ -3704,10 +3705,10 @@ function qbTopicosEdital(){if(!S.edital)return null;const set=new Set();S.edital
 /* ===== Minhas questões: importadas por foto (a IA digitaliza) — ficam no caderno, já como resolvidas ===== */
 const qbAreaDaMat=m=>Object.keys(QB_AREA_MAT).find(a=>QB_AREA_MAT[a].includes(m))||"linguagens";
 function qbMinhas(){const doc=qbEstado().doc;if(!doc||!doc.m)return [];
-  return Object.entries(doc.m).map(([id,o])=>({id,p:"minhas",n:o.n,m:QB_MAT[o.m]?o.m:"por",t:o.t||"Questão importada",c:o.c||"",i:o.i||"",b:o.tb||"",ce:!!o.ce,foto:o.foto!==false,fotoTalvez:o.foto===undefined,ac:!!o.ac,
+  return Object.entries(doc.m).map(([id,o])=>({id,p:"minhas",n:o.n,m:QB_MAT[o.m]?o.m:"por",t:o.t||"Questão importada",c:o.c||"",i:o.i||"",b:o.tb||"",ce:!!o.ce,foto:o.foto!==false,fotoTalvez:o.foto===undefined,ac:!!o.ac,ec:!!o.ec,
     a:(o.a||[]).map(t=>[t,""]),r:o.r,area:qbAreaDaMat(o.m),em:o.em,ia:!!o.ia})).sort((a,b)=>b.n-a.n)}
 /* ===== Banco alimentado pelos estudantes: as questões importadas entram para todos (só o texto) ===== */
-function qbComunidade(){const q=qbEstado(),noCaderno=new Set(Object.values((q.doc&&q.doc.m)||{}).map(o=>o.pub).filter(Boolean));return (q.com||[]).filter(o=>!noCaderno.has(o.id)).map(o=>({id:"c_"+o.id,cid:o.id,p:"comunidade",n:o.n,m:QB_MAT[o.m]?o.m:"por",t:o.t||"Questão enviada",c:o.c||"",i:"",b:o.tb||"",ce:!!o.ce,foto:!!o.foto,ac:!!o.ac,
+function qbComunidade(){const q=qbEstado(),noCaderno=new Set(Object.values((q.doc&&q.doc.m)||{}).map(o=>o.pub).filter(Boolean));return (q.com||[]).filter(o=>!noCaderno.has(o.id)).map(o=>({id:"c_"+o.id,cid:o.id,p:"comunidade",n:o.n,m:QB_MAT[o.m]?o.m:"por",t:o.t||"Questão enviada",c:o.c||"",i:"",b:o.tb||"",ce:!!o.ce,foto:!!o.foto,ac:!!o.ac,ec:!!o.ec,
   a:(o.a||[]).map(t=>[t,""]),r:o.r,area:qbAreaDaMat(o.m),ia:!!o.ia,autor:o.autor}))}
 async function qbComunidadeCarregar(forcar){const q=qbEstado();if(!FBM()||S.mode!=="nuvem")return [];if(q.com&&!forcar)return q.com;
   if(!q.comP||forcar)q.comP=S.db.collection("bancoComunidade").orderBy("n","desc").limit(2000).get()
@@ -3742,9 +3743,9 @@ async function qbAlimentarBanco(id,foto){
   if(igual){o.dup=igual.id;o.dupRot=`${qbRotulo(igual)} · ${igual.p==="pas"?"Item":"Questão"} ${igual.n}`;await qbMinhaGravar(id,o,null);return {dup:o.dupRot}}
   const ref=S.db.collection("bancoComunidade").doc(),cont=S.db.collection("bancoContador").doc("geral");
   try{const n=await S.db.runTransaction(async t=>{const d=await t.get(cont),n=(d.exists?+d.data().n||0:0)+1;
-      t.set(cont,{n});t.set(ref,{autor:S.uid,n,m:o.m,t:String(o.t||"").slice(0,80),c:o.c||"",tb:String(o.tb||"").slice(0,6000),a:o.a,r:o.r,ce:!!o.ce,ia:!!o.ia,ac:!!o.ac,foto:!!(foto&&o.foto),em:Date.now(),h:id});return n});
+      t.set(cont,{n});t.set(ref,{autor:S.uid,n,m:o.m,t:String(o.t||"").slice(0,80),c:o.c||"",tb:String(o.tb||"").slice(0,6000),a:o.a,r:o.r,ce:!!o.ce,ia:!!o.ia,ac:!!o.ac,ec:!!o.ec,foto:!!(foto&&o.foto),em:Date.now(),h:id});return n});
     if(foto&&o.foto)await S.db.collection("bancoComunidadeFotos").doc(ref.id).set({autor:S.uid,foto}).catch(e=>console.warn("foto do banco",e&&e.code));
-    o.pub=ref.id;o.pubN=n;await qbMinhaGravar(id,o,null);if(q.com)q.com.unshift({id:ref.id,autor:S.uid,n,m:o.m,t:o.t,c:o.c,tb:o.tb,a:o.a,r:o.r,ce:!!o.ce,ia:!!o.ia,ac:!!o.ac,foto:!!(foto&&o.foto)});return {novo:n}}
+    o.pub=ref.id;o.pubN=n;await qbMinhaGravar(id,o,null);if(q.com)q.com.unshift({id:ref.id,autor:S.uid,n,m:o.m,t:o.t,c:o.c,tb:o.tb,a:o.a,r:o.r,ce:!!o.ce,ia:!!o.ia,ac:!!o.ac,ec:!!o.ec,foto:!!(foto&&o.foto)});return {novo:n}}
   catch(e){console.warn("alimentar banco",e&&e.code);return null}}
 function qbLista(){
   const q=qbEstado(),f=q.f,doc=q.doc||{r:{},s:{},e:{}};
@@ -3834,9 +3835,11 @@ function qbDetalhe(x,lista){
     ${x.p==="minhas"&&x.ia?`<div class="small muted">O gabarito desta questão foi dado pela IA (não estava na foto). Confira.</div>`:""}
     ${x.p==="minhas"?(()=>{const o=doc.m[x.id]||{};return o.pub?`<div class="small muted">📤 Também está no banco de questões de todos (Questão ${o.pubN||""}).</div>`:o.dup?`<div class="small muted">🔁 Esta questão já estava no banco: ${esc(o.dupRot||"")}.</div>`:""})():""}
     ${x.p==="comunidade"?`<div class="small muted">Enviada por um estudante (importada por foto)${x.ia?"; gabarito dado pela IA":""}. Confira se o enunciado está completo.</div>${ehAdmin()?`<button class="btn sm ghost" type="button" id="qb-com-apagar">${ico("lixo")}Apagar do banco (administração)</button>`:""}`:""}
+    ${x.ec&&x.c?`<div class="small muted">O enunciado foi criado pela IA (a questão original não tinha).</div>`:""}
+    ${x.foto&&x.ec&&x.c?`<div class="qb-texto">${qbMd(x.c)}</div>`:""}
     ${x.foto?`<div class="qb-texto qb-foto-q" id="qb-foto-q" data-fid="${esc(x.id)}"><div class="row muted small"><span class="spinner"></span>Carregando a foto da questão…</div></div>`:""}
     ${x.ac?`<div class="small muted">A questão original não tinha alternativas: a IA resolveu e criou a resposta certa entre outras erradas.</div>`:""}
-    ${x.c?`<div class="qb-texto">${qbMd(x.c)}</div>`:""}
+    ${x.c&&!(x.foto&&x.ec)?`<div class="qb-texto">${qbMd(x.c)}</div>`:""}
     ${x.i?`<div class="qb-enun">${qbMd(x.i)}</div>`:""}
     ${qbSoLetras(x)?`<p class="small muted qb-esp-dica">${ico("search")}Toque na imagem para ampliar. Leia as alternativas na prova e marque a letra:</p>`:""}
     ${x.ce?`<p class="small muted qb-esp-dica">${ico("search")}Toque na imagem para ampliar. Julgue o item: ele está certo ou errado?</p>`:""}
@@ -4044,6 +4047,7 @@ function promptDigitalizarQuestao(){
 - "foto": o número da foto (1, 2, 3… na ordem em que foram anexadas) onde a questão está.
 - "caixa": o retângulo que contém a questão INTEIRA nessa foto (número, texto, figuras e alternativas), no formato [ymin, xmin, ymax, xmax], em coordenadas de 0 a 1000. Não corte nada da questão.
 - "texto": transcreva o texto e o enunciado da questão (fórmulas em texto simples: x^2, √2, 3/4; figura que não dá para digitar vai entre colchetes, ex.: [Figura: triângulo retângulo]). Tente sempre: serve para busca, mesmo que a transcrição fique imperfeita.
+- "enunciado": se a questão NÃO tem enunciado (só uma expressão, conta, equação, reação, fórmula ou figura), CRIE um enunciado curto e simples que combine com o que aparece, e marque "enunciado_criado": true. Exemplos de Matemática: "Fatore:", "Resolva a equação:", "Quanto é:", "Simplifique:", "Calcule o valor de:". Exemplos de Química: "Complete e balanceie a reação:", "Qual é o produto da reação abaixo?", "Dê o nome do composto:", "Faça a distribuição eletrônica do elemento:". Nas outras matérias, algo igualmente direto. Se a questão já tem enunciado, devolva "" e "enunciado_criado": false.
 - "facil": true se o texto é simples de digitar com fidelidade (sem figura essencial, tabela complexa ou fórmula difícil); false se a foto é indispensável.
 - "tipo": "multipla" (tem alternativas), "certo_errado" ou "aberta" (não tem alternativas: só uma conta, um "resolva", "calcule", "simplifique"…).
 - "alternativas": o texto de cada alternativa, em ordem, SEM a letra. Se a questão tem alternativas mas elas não dão para digitar (figuras, fórmulas difíceis), devolva [] e informe "num_alternativas". Certo ou errado: ["Certo","Errado"].
@@ -4055,7 +4059,7 @@ ${Object.entries(qbTopicosPorMat()).map(([m,l])=>`  ${m}: ${l.join(" | ")}`).joi
 - "marcada": a letra que o estudante marcou à mão na foto (círculo, X, rabisco), ou "" se não houver marca.
 - Ignore cabeçalhos, números de página e marcas d'água. Se não houver questão nas fotos, devolva "questoes": [] e explique em "observacao".
 Responda SOMENTE com JSON válido:
-{"questoes":[{"foto":1,"caixa":[120,40,610,960],"texto":"...","facil":true,"tipo":"multipla","alternativas":["..."],"num_alternativas":5,"alternativas_criadas":false,"materia":"mat","topico":"...","gabarito":"C","gabarito_da_ia":false,"marcada":""}],"observacao":""}`}
+{"questoes":[{"foto":1,"caixa":[120,40,610,960],"texto":"...","enunciado":"","enunciado_criado":false,"facil":true,"tipo":"multipla","alternativas":["..."],"num_alternativas":5,"alternativas_criadas":false,"materia":"mat","topico":"...","gabarito":"C","gabarito_da_ia":false,"marcada":""}],"observacao":""}`}
 // recorta a questão da foto (caixa da IA, com uma margem) e ajusta o tamanho para guardar (cabe folgado em 1 MB)
 function qbRecortar(file,caixa){return new Promise(ok=>{const img=new Image(),url=URL.createObjectURL(file);
   img.onload=()=>{const W=img.naturalWidth,H=img.naturalHeight;let sx=0,sy=0,sw=W,sh=H;
@@ -4107,6 +4111,7 @@ function qbImportarRevisar(bg,qs){
         ${x._foto?`<img class="qi-foto" src="${x._foto}" alt="Foto recortada da questão ${i+1}">`:`<p class="small muted">Não foi possível recortar a foto desta questão; ela vai só com o texto.</p>`}
         <div class="grid2" style="gap:8px"><label class="field"><span class="small">Matéria</span><select data-qi-m>${Object.entries(QB_MAT).map(([k,nm])=>`<option value="${k}" ${x.materia===k?"selected":""}>${nm}</option>`).join("")}</select></label>
           <label class="field"><span class="small">Assunto</span><select data-qi-t data-ini="${esc(x.topico||"")}"></select></label></div>
+        ${x.enunciado_criado&&(x.enunciado||"").trim()?`<label class="field"><span class="small">✏️ Enunciado criado pela IA (a questão não tinha; aparece acima da foto)</span><input type="text" data-qi-en maxlength="200" value="${esc(x.enunciado)}"></label>`:""}
         <label class="field"><span class="small">Texto digitado (usado na busca)</span><textarea data-qi-c style="min-height:110px">${esc(x.texto||"")}</textarea></label>
         ${x._foto?`<label class="small row" style="gap:6px"><input type="checkbox" class="tg" data-qi-mostra ${facil?"checked":""}> Mostrar o texto digitado na questão, além da foto${facil?"":" (a IA achou melhor só a foto)"}</label>`:""}
         ${criadas?`<div class="small qi-aviso">✏️ A questão não tinha alternativas: a IA resolveu e criou a resposta certa entre ${n-1} erradas. Confira.</div>`:""}
@@ -4121,12 +4126,14 @@ function qbImportarRevisar(bg,qs){
   corpo.querySelectorAll(".qi-q").forEach(card=>{pintarTop(card);card.querySelector("[data-qi-m]").onchange=()=>{card.querySelector("[data-qi-t]").dataset.ini="";pintarTop(card)}});
   corpo.querySelector("#qi-salvar").onclick=async()=>{const q=qbEstado();await qbDoc();const doc=q.doc;doc.m=doc.m||{};const novos=[];
     corpo.querySelectorAll(".qi-q").forEach(card=>{if(!card.querySelector("[data-qi-usar]").checked)return;const ce=card.dataset.ce==="1",x=qs[+card.dataset.i],foto=x._foto||null;
-      const tb=card.querySelector("[data-qi-c]").value.trim(),mostra=card.querySelector("[data-qi-mostra]"),c=!foto||(mostra&&mostra.checked)?tb:"";
+      const enI=card.querySelector("[data-qi-en]"),en=enI?enI.value.trim():"";
+      const tb0=card.querySelector("[data-qi-c]").value.trim(),mostra=card.querySelector("[data-qi-mostra]"),corpoTxt=!foto||(mostra&&mostra.checked)?tb0:"";
+      const c=[en?`**${en}**`:"",corpoTxt].filter(Boolean).join("\n\n"),tb=[en,tb0].filter(Boolean).join(" ");
       if(!c&&!foto)return;
       const a=ce?["Certo","Errado"]:[...card.querySelectorAll("[data-qi-a]")].map(i=>i.value.trim());
       const id="mq"+uid();doc.mn=(doc.mn||0)+1;
       doc.m[id]={n:doc.mn,m:card.querySelector("[data-qi-m]").value,t:card.querySelector("[data-qi-t]").value.trim().slice(0,80)||"Questão importada",c:c.slice(0,6000),tb:tb.slice(0,6000),i:"",ce,
-        a:a.map(t=>t.slice(0,800)),r:+card.querySelector("[data-qi-g]").value,em:Date.now(),ia:card.querySelector("[data-qi-ia]").value==="1",ac:card.dataset.ac==="1",foto:!!foto};
+        a:a.map(t=>t.slice(0,800)),r:+card.querySelector("[data-qi-g]").value,em:Date.now(),ia:card.querySelector("[data-qi-ia]").value==="1",ac:card.dataset.ac==="1",ec:!!en,foto:!!foto};
       novos.push([id,+card.querySelector("[data-qi-r]").value,foto])});
     if(!novos.length){toast("Nenhuma questão marcada para importar.");return}
     // entram como resolvidas: contam nas estatísticas e, se errou, vão para o caderno de erros

@@ -14,10 +14,10 @@ service cloud.firestore {
     match /bancoComunidade/{qid} {
       allow read: if logado();
       allow create: if logado() && request.resource.data.autor == request.auth.uid
-        && request.resource.data.keys().hasOnly(['autor','n','m','t','c','tb','a','r','ce','ia','ac','foto','em','h'])
+        && request.resource.data.keys().hasOnly(['autor','n','m','t','c','tb','a','r','ce','ia','ac','ec','foto','em','h'])
         && request.resource.data.c is string && request.resource.data.c.size() <= 6000
         && (request.resource.data.c.size() > 0 || request.resource.data.get('foto', false) == true)
-        && request.resource.data.get('foto', false) is bool && request.resource.data.get('ac', false) is bool
+        && request.resource.data.get('foto', false) is bool && request.resource.data.get('ac', false) is bool && request.resource.data.get('ec', false) is bool
         && (!('tb' in request.resource.data) || (request.resource.data.tb is string && request.resource.data.tb.size() <= 6000))
         && request.resource.data.a is list && request.resource.data.a.size() >= 2 && request.resource.data.a.size() <= 5
         && request.resource.data.r is int && request.resource.data.r >= 0 && request.resource.data.r < request.resource.data.a.size()
