@@ -1,0 +1,11 @@
+{
+  "name": "logic-academy-android",
+  "private": true,
+  "version": "1.0.0",
+  "description": "App de Android do Logic Academy (abre o site oficial e mantém as chamadas com o app fechado)",
+  "dependencies": {
+    "@capacitor/android": "6.2.0",
+    "@capacitor/cli": "6.2.0",
+    "@capacitor/core": "6.2.0"
+  }
+}

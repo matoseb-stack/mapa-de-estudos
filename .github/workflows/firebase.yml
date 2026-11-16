@@ -46,6 +46,24 @@ jobs:
             N=$(echo "$D" | jq -c '. - ["logic-academy.web.app","logic-academy.firebaseapp.com"] + ["logicacademy.web.app","logicacademy.firebaseapp.com","matoseb-stack.github.io"] | unique')
             curl -sS -f -X PATCH "${H[@]}" "$U?updateMask=authorizedDomains" -d "{\"authorizedDomains\":$N}" | jq -c '.authorizedDomains' || echo "::warning::Não consegui autorizar o domínio; adicione à mão em Authentication > Configurações."
           fi
+      - name: Liberar espaço da hospedagem (guarda só as últimas versões)
+        # autorizado pelo dono: o plano grátis tem limite de armazenamento e cada publicação guarda uma cópia inteira do site
+        run: |
+          T=$(gcloud auth print-access-token)
+          H=(-H "Authorization: Bearer $T" -H "x-goog-user-project: mapa-de-estudos-d6eca" -H "Content-Type: application/json")
+          B=https://firebasehosting.googleapis.com/v1beta1
+          for SITE in logicacademy mapa-de-estudos-d6eca; do
+            curl -sS -X PATCH "${H[@]}" "$B/sites/$SITE/channels/live?updateMask=retainedReleaseCount" -d '{"retainedReleaseCount":3}' | jq -c '{canal:.name,guardar:.retainedReleaseCount}' || true
+            ATUAL=$(curl -sS "${H[@]}" "$B/sites/$SITE/channels/live/releases?pageSize=3" | jq -r '[.releases[]?.version.name] | unique | .[]' || true)
+            VS=$(curl -sS "${H[@]}" "$B/sites/$SITE/versions?pageSize=100" | jq -r '[.versions[]? | select(.status=="FINALIZED") | .name] | .[]' || true)
+            N=0
+            for V in $VS; do
+              if echo "$ATUAL" | grep -qx "$V"; then continue; fi
+              C=$(curl -sS -o /dev/null -w "%{http_code}" -X DELETE "${H[@]}" "$B/$V" || true)
+              case "$C" in 2*) N=$((N+1));; esac
+            done
+            echo "$SITE: $N versões antigas apagadas"
+          done
       - name: Publicar site
         run: npx --yes firebase-tools@13 deploy --only hosting --project mapa-de-estudos-d6eca --non-interactive --force
       - name: Publicar regras

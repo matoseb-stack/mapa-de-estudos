@@ -16,7 +16,8 @@
         "icones-oficial/**",
         "functions/**",
         "idiomas/*.py",
-        "idiomas/*.md"
+        "idiomas/*.md",
+        "apps/**"
       ],
       "headers": [
         {

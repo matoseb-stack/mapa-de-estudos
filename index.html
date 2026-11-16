@@ -1782,6 +1782,17 @@ function renderLogin(erro){document.body.classList.remove("menu-aberto");
 const G_ICON=`<svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>`;
 const A_ICON=`<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3-1.5z"/></svg>`;
 
+/* Uma conta, um aparelho: o último aparelho que entra fica com a conta; o anterior sai sozinho com um aviso.
+   (Várias abas no mesmo navegador contam como o mesmo aparelho. O administrador pode usar vários.) */
+function idDoAparelho(){let id="";try{id=localStorage.getItem("la_aparelho")||""}catch(e){}if(!id){id=Date.now().toString(36)+Math.random().toString(36).slice(2,10);try{localStorage.setItem("la_aparelho",id)}catch(e){}}return id}
+function descAparelho(){const u=navigator.userAgent;const so=/Android/.test(u)?"Android":/iPhone|iPad/.test(u)?"iPhone/iPad":/Windows/.test(u)?"Windows":/Mac/.test(u)?"Mac":/Linux/.test(u)?"Linux":"aparelho";
+  const nav=/LogicAcademyApp/.test(u)?"app Logic Academy":/Edg\//.test(u)?"Edge":/Chrome\//.test(u)?"Chrome":/Safari\//.test(u)?"Safari":/Firefox\//.test(u)?"Firefox":"navegador";return nav+" no "+so}
+function iniciarSessaoUnica(){
+  if(!FBM()||ehAdmin())return;const eu=idDoAparelho(),ref=meuDoc("sessao");
+  ref.set({id:eu,aparelho:descAparelho(),em:firebase.firestore.FieldValue.serverTimestamp()}).catch(e=>console.warn("sessão",e&&e.code));
+  S.unsub.push(ref.onSnapshot(d=>{if(!d.exists||d.metadata.hasPendingWrites)return;const x=d.data()||{};
+    if(x.id&&x.id!==eu&&S.mode==="nuvem"){const onde=x.aparelho?` (${x.aparelho})`:"";sair();setTimeout(()=>renderLogin(`Sua conta foi aberta em outro aparelho${onde}. Cada conta pode ficar aberta em um aparelho por vez. Para usar aqui, entre de novo (o outro aparelho sairá).`),80)}},()=>{}));
+}
 async function entrar(modo){
   let nomeConta="";
   if(modo==="nuvem"){
@@ -1795,7 +1806,7 @@ async function entrar(modo){
   S.pomoLog=garantirTotais(S.pomoLog&&S.pomoLog.dias?S.pomoLog:{dias:{},sessoes:0});carregarCrono();virarSemana();verificarConquistas(true);if(S.edital&&!Array.isArray(S.edital.materias))S.edital=null;
   if(S.perfil&&S.perfil.ui)aplicarUI(S.perfil.ui);else if(S.perfil&&S.perfil.tema)aplicarTema(S.perfil.tema);
   if(S.perfil&&S.perfil.pomo)Object.assign(P.dur,S.perfil.pomo);else if(S.perfil)Object.assign(P.dur,{foco:+S.perfil.bloco||50,curta:+S.perfil.pausa||10});P.restante=pomoTotal();carregarPomo();
-  if(S.mode==="nuvem"){assinarSocial();if(FBM()){iniciarComunidadeFB();iniciarConquistasSrv();iniciarAssinatura();try{if(window.LAComp&&LAComp.Estante)LAComp.Estante.iniciar(appEstante)}catch(e){}}}
+  if(S.mode==="nuvem"){assinarSocial();if(FBM()){iniciarSessaoUnica();iniciarComunidadeFB();iniciarConquistasSrv();iniciarAssinatura();try{if(window.LAComp&&LAComp.Estante)LAComp.Estante.iniciar(appEstante)}catch(e){}}}
   if(S.perfil&&S.plano){S.view="inicio";renderShell();lembIniciar()}
   else{S.step=0;S.draft=S.perfil?migrar(clone(S.perfil)):perfilPadrao(nomeConta);renderWizard()}
 }
@@ -2759,8 +2770,10 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.22";
+const APP_VERSAO="3.23";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Apps para Android e Windows 📲",d:"Baixe em Configurações › Aplicativos. Neles, a chamada e a tela compartilhada continuam com o app fechado, e o banco de questões fica guardado no aparelho."},
+  {t:"Uma conta, um aparelho 🔐",d:"Cada conta fica aberta em um aparelho por vez. Se você entrar em outro aparelho, o anterior sai sozinho com um aviso."},
   {t:"Banco de questões mais rápido ⚡",d:"Agora o banco só baixa as questões do que você escolher (área, matéria, tópico ou prova), e elas ficam guardadas no aparelho, então tudo abre bem mais rápido. E o botão “Abrir caderno” agora leva direto às suas questões, com um botão para voltar ao banco."},
   {t:"Lembretes de estudo 🔔",d:"Agora o Logic Academy avisa do próximo bloco, quando um bloco atrasa, quanto falta para a meta, quando sua sequência está em risco e sugere “mais um bloco?”. O ícone do app mostra quantos blocos faltam hoje, e segurando o ícone aparecem atalhos para o pomodoro, a semana e mais. Ajuste em Configurações."},
   {t:"Questões sem enunciado ganham um ✏️",d:"Se a foto tem só uma conta, equação ou reação, a IA escreve um enunciado simples (“Fatore:”, “Resolva:”, “Quanto é:”, “Complete a reação:”), resolve para achar o gabarito e coloca a questão no assunto certo do banco."},
@@ -3836,7 +3849,7 @@ function qbTela(){
           +(lista.length>q.lim?`<button class="btn" type="button" id="qb-mais" style="width:100%">Mostrar mais ${Math.min(QB_POR_PAGINA,lista.length-q.lim)}</button>`:"")
           :!qbEscolheu(f)?`<div class="card stack qb-escolha" style="text-align:center;align-items:center;padding:28px 16px">${ico("qbank")}<b>Escolha o que você quer estudar</b><span class="small muted">Toque numa área, escolha a matéria ou o tópico acima. Só as questões escolhidas são baixadas, então tudo abre mais rápido.</span>
             <div class="sugs" style="justify-content:center">${QB_AREAS.map(([k,n])=>`<button class="sug" type="button" data-qarea="${k}">${n}</button>`).join("")}</div>
-            <button class="btn ghost sm" type="button" id="qb-tudo">Ver todas as questões (baixa tudo)</button></div>`
+            <div class="row" style="gap:8px;justify-content:center;flex-wrap:wrap"><button class="btn ghost sm" type="button" id="qb-tudo">Ver todas as questões (baixa tudo)</button><button class="btn ghost sm" type="button" id="qb-baixar">📥 Guardar o banco no aparelho</button></div></div>`
           :`<div class="card stack" style="text-align:center;align-items:center;padding:32px 16px">${ico("search")}<b>Nenhuma questão com esses filtros</b><span class="small muted">Tente outro tópico, ano ou limpe os filtros.</span></div>`}
       </section>
       <section class="qb-det-wrap" id="qb-det" aria-live="polite">${q.sel?qbDetalhe(lista.find(x=>x.id===q.sel),lista):`<div class="card qb-vazio stack">${ico("qbank")}<b>Escolha uma questão</b><span class="small muted">Use os filtros para achar questões de um tópico e toque em uma delas para resolver. Atalhos: A–E para marcar, Enter para responder, → para a próxima.</span></div>`}</section>
@@ -3908,6 +3921,7 @@ function qbLigar(lista){
   $("#qb-prova").onchange=e=>{f.prova=e.target.value;if(f.prova==="enem"&&+f.ano>2023)f.ano="";if(f.t&&!qbIndiceDe(f.prova).areas[f.area||"matematica"])f.t="";q.lim=QB_POR_PAGINA;q.sel=null;qbAtualizar()};
   $("#qb-ano").onchange=e=>{f.ano=e.target.value;q.lim=QB_POR_PAGINA;qbAtualizar()};
   const td=$("#qb-tudo");if(td)td.onclick=()=>{q.tudo=true;q.lim=QB_POR_PAGINA;renderQuestoes()};
+  const bx=$("#qb-baixar");if(bx)bx.onclick=async()=>{bx.disabled=true;bx.textContent="Guardando…";await baixarBancoNoAparelho(true);bx.textContent="📥 Banco guardado";};
   const ci=$("#qb-cad-ir");if(ci)ci.onclick=abrirCadernoErros;
   const im=$("#qb-importar");if(im)im.onclick=qbImportarModal;
   const irLista=()=>{const l=$(".qb-no-cad")||$(".qb-lista");if(l)scrollTo({top:Math.max(0,l.getBoundingClientRect().top+scrollY-80),behavior:"smooth"})};
@@ -4593,7 +4607,19 @@ function vozPainelHtml(canal,titulo,prev){
         :`<button class="btn primary" type="button" data-voz="entrar" data-canal="${canal}" data-titulo="${esc(titulo)}" ${V.entrando?"disabled":""}>${ico("mic")}${V.entrando?"Conectando…":outro?"Trocar para este canal":"Entrar no canal de voz"}</button>`}</div></div>
     ${lista.length?`<div class="voz-lista">${lista.map(([id,d,eu])=>vozPessoaHtml(id,d,eu)).join("")}</div>`:""}
     <p class="hint">${aqui?"Pode navegar pelo site (pomodoro, questões…) que a conversa continua. Use fone de ouvido para não dar eco.":`Até ${VOZ_MAX} pessoas por canal. O áudio vai direto entre os participantes e não é gravado.`}${outro?` Você está em <b>${esc(V.titulo)}</b>.`:""}</p></div>`}
-function vozInformarFlutuante(){const FT=window.LAComp&&LAComp.FloatingTimer;if(!FT||!FT.chamada)return;
+/* Aplicativos (Android .apk e Windows .exe): o site avisa quando a chamada começa e termina,
+   para o app manter a chamada viva com o app fechado (Android: serviço em primeiro plano; Windows: fica perto do relógio). */
+const EH_APP=/LogicAcademyApp/.test(navigator.userAgent)||!!(window.logicApp||(window.Capacitor&&window.Capacitor.isNativePlatform&&window.Capacitor.isNativePlatform()));
+let appChamadaAtiva=false;
+function appAvisarChamada(){const ativa=!!V.canal;if(ativa===appChamadaAtiva&&!ativa)return;appChamadaAtiva=ativa;const titulo=V.titulo||"Chamada";
+  try{const pl=window.Capacitor&&window.Capacitor.Plugins&&window.Capacitor.Plugins.Chamada;if(pl){if(ativa)pl.iniciar({titulo,texto:"Chamada em andamento no Logic Academy"}).catch(()=>{});else pl.parar().catch(()=>{})}}catch(e){}
+  try{if(window.logicApp&&window.logicApp.chamada)window.logicApp.chamada(ativa,titulo)}catch(e){}}
+// no aplicativo, o banco de questões é baixado inteiro para o aparelho (sem travar ao abrir)
+async function baixarBancoNoAparelho(aviso){const arqs=[];QB_AREAS.forEach(([a])=>QB_PROVAS_ARQ.forEach(pv=>{if(pv==="outras"&&!(QB_IDX.outras.areas[a]))return;arqs.push("questoes/"+pv+"-"+a+".json")}));
+  let ok=0;for(const u of arqs){try{const r=await fetch(u);if(r.ok)ok++}catch(e){}}
+  try{localStorage.setItem("la_banco_baixado",String(Date.now()))}catch(e){}if(aviso)toast(ok?`Banco de questões guardado no aparelho (${ok} arquivos). Agora ele abre sem precisar baixar.`:"Não foi possível baixar o banco agora. Tente com internet.");return ok}
+if(EH_APP)setTimeout(()=>{let ult=0;try{ult=+localStorage.getItem("la_banco_baixado")||0}catch(e){}if(Date.now()-ult>3*864e5)baixarBancoNoAparelho(false).catch(()=>{})},15000);
+function vozInformarFlutuante(){appAvisarChamada();const FT=window.LAComp&&LAComp.FloatingTimer;if(!FT||!FT.chamada)return;
   if(V.canal&&!V.desde)V.desde=Date.now();if(!V.canal)V.desde=0;
   FT.chamada(V.canal?{titulo:V.titulo||"Chamada",desde:V.desde,mudo:!!V.mudo,n:Object.keys(V.parts||{}).length+1}:null)}
 function vozUI(){vozInformarFlutuante();
@@ -6598,6 +6624,9 @@ function renderConfig(){
           </div>
           ${mats.length?`<div class="bars-h">${mats.slice(0,10).map(([m,v])=>`<div class="r"><span>${esc(m)}</span><span class="mono small">${fmtH(v)}</span><div class="prog"><i style="width:${Math.round(v/mx*100)}%"></i></div></div>`).join("")}</div>`:""}
         </div>`})()}
+      ${EH_APP?"":`<div class="card stack sm"><div><h3>Aplicativos do Logic Academy</h3><p class="small muted">Com o app, a chamada e o compartilhamento de tela continuam mesmo com o app fechado, e o banco de questões fica guardado no aparelho. Eles abrem o site oficial, então ficam sempre atualizados.</p></div>
+        <div class="row" style="gap:8px;flex-wrap:wrap"><a class="btn primary" href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy.apk" rel="noopener">🤖 Android (.apk)</a><a class="btn" href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy-Instalador.exe" rel="noopener">🪟 Windows (instalador)</a><a class="btn ghost" href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy-Portatil.exe" rel="noopener">Windows (sem instalar)</a></div>
+        <details class="small muted"><summary>Como instalar</summary><p><b>Android:</b> baixe o arquivo, abra e toque em Instalar. Se pedir, permita “instalar apps desta fonte”. Para a chamada continuar com o app fora da tela, aceite o microfone e as notificações.</p><p><b>Windows:</b> rode o instalador. Se o Windows mostrar “O Windows protegeu o computador”, clique em “Mais informações” › “Executar assim mesmo” (o programa ainda não tem assinatura paga da Microsoft). Fechar a janela deixa o Logic Academy perto do relógio; para sair, clique com o botão direito no ícone › Sair.</p><p><b>iPhone:</b> use o site e adicione à Tela de Início (Compartilhar › Adicionar à Tela de Início).</p></details></div>`}
       <div class="card stack sm"><div class="row" style="justify-content:space-between"><div><h3>Lembretes de estudo</h3><p class="small muted">Notificações do próximo bloco, da meta do dia, da sequência em risco e “mais um bloco?”. Também mostra no ícone do app quantos blocos faltam hoje. Funcionam com o site aberto ou em segundo plano.</p></div>
           <input type="checkbox" class="tg" id="cf-lemb" ${lembPref().ligado&&"Notification" in window&&Notification.permission==="granted"?"checked":""} aria-label="Lembretes de estudo"></div>
         <div class="row" style="gap:10px;flex-wrap:wrap;align-items:center"><span class="small muted">Sem lembretes das</span><input type="time" id="cf-sil-ini" value="${esc(lembPref().silIni)}" style="width:auto"><span class="small muted">às</span><input type="time" id="cf-sil-fim" value="${esc(lembPref().silFim)}" style="width:auto"><button class="btn sm ghost" type="button" id="cf-lemb-teste">${ico("send")}Testar</button></div></div>
