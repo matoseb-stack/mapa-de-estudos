@@ -1,0 +1,24 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Logic Academy</title>
+<style>
+  html,body{margin:0;background:transparent;font-family:"Segoe UI",system-ui,sans-serif;user-select:none}
+  .w{box-sizing:border-box;width:262px;height:124px;margin:4px;border-radius:18px;padding:12px 14px;background:rgba(10,10,10,.92);color:#fff;
+     box-shadow:0 8px 24px rgba(0,0,0,.35);-webkit-app-region:drag;cursor:default;display:flex;flex-direction:column;gap:2px}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#9ca3af}
+  .x{-webkit-app-region:no-drag;background:none;border:0;color:#9ca3af;font-size:14px;cursor:pointer;padding:0 2px}
+  .seq{font-size:24px;font-weight:700}
+  .p{font-size:13px;color:#e5e7eb;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .m{font-size:13px;color:#22d3ee;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .abrir{-webkit-app-region:no-drag;cursor:pointer}
+</style></head><body>
+<div class="w"><div class="top"><span class="abrir" id="abrir">Logic Academy ↗</span><button class="x" id="fechar" title="Esconder o widget">✕</button></div>
+  <div class="seq abrir" id="seq">🔥 —</div><div class="p" id="prox">Abra o Logic Academy para carregar</div><div class="m" id="meta"></div></div>
+<script>
+  const $ = id => document.getElementById(id);
+  window.widget.aoReceber(d => {
+    $("seq").textContent = "🔥 " + (d.seq || 0) + ((d.seq || 0) === 1 ? " dia" : " dias");
+    $("prox").textContent = d.proximo ? "Próximo: " + d.proximo : "Sem blocos pendentes hoje";
+    $("meta").textContent = d.texto || "";
+  });
+  document.querySelectorAll(".abrir").forEach(e => e.onclick = () => window.widget.abrir());
+  $("fechar").onclick = () => window.widget.fechar();
+</script></body></html>

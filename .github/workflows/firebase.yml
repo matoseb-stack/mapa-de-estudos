@@ -30,6 +30,10 @@ jobs:
         run: |
           cp icones-oficial/*.png icones/
           sed -i 's/"theme_color": "#f97316"/"theme_color": "#0a0a0a"/' manifest.webmanifest
+      - name: Versão publicada (o site e os apps comparam com ela e avisam para atualizar)
+        run: |
+          V=$(grep -o 'APP_VERSAO="[0-9.]*"' index.html | head -1 | cut -d'"' -f2)
+          jq --arg v "$V" '.site=$v' versao.json > versao.tmp && mv versao.tmp versao.json && cat versao.json
       - name: Criar o site logicacademy (se ainda não existir)
         run: npx --yes firebase-tools@13 hosting:sites:create logicacademy --project mapa-de-estudos-d6eca --non-interactive || echo "site já existe"
       - name: Autorizar o domínio no login (Google/Apple)

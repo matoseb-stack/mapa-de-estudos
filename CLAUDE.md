@@ -27,6 +27,11 @@ Quando o dono mandar um PDF de questões sem outra instrução:
 6. Gravar em `questoes/outras-<area>.json` (`p:"outras"`, `banca`, `ano`, `adapt`, `n` sequencial dentro de "outras") e atualizar `QB_INDICE_OUT` no `index.html`.
 7. Ajustar fonte (banca/ano), formatação (expoentes, frações, símbolos) e nível quando precisar; publicar nos testes e **mandar direto para o oficial, sem esperar o "pronto"** (autorizado pelo dono para PDFs de exercícios). Depois, avisar o resumo: quantas entraram, quais já estavam no banco e o que foi ajustado.
 
+## Apps (Android .apk e Windows .exe)
+- `apps/android` (Capacitor + código nativo em `apps/android/nativo`) e `apps/windows` (Electron). Os apps abrem o site oficial; o site fala com eles por `window.LogicAndroid` / `window.logicApp` (chamada em segundo plano, widget, lembretes agendados, versão).
+- `.github/workflows/apps.yml` monta e publica em `releases/download/apps/` quando `apps/**` muda.
+- `versao.json`: `site` é preenchido sozinho na publicação oficial; ao mudar um app, suba a versão em `apps/*/package.json` **e** em `versao.json` (`android`/`windows`) para os apps antigos avisarem.
+
 ## Segurança
 - Nunca peça nem receba a chave da conta de serviço ou segredos do reCAPTCHA: vão só nos segredos do GitHub/Firebase.
 - Nunca desligue a verificação TLS nem contorne captchas.

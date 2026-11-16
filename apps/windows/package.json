@@ -1,7 +1,7 @@
 {
   "name": "logic-academy",
   "productName": "Logic Academy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Logic Academy para Windows",
   "author": "Logic Academy",
   "main": "main.js",
@@ -17,9 +17,29 @@
   "build": {
     "appId": "app.logicacademy.estudos",
     "productName": "Logic Academy",
-    "files": ["main.js", "preload.js", "offline.html", "icone.png"],
-    "win": { "icon": "icone.png", "target": ["nsis", "portable"] },
-    "nsis": { "oneClick": true, "artifactName": "LogicAcademy-Instalador.exe", "createDesktopShortcut": true, "shortcutName": "Logic Academy" },
-    "portable": { "artifactName": "LogicAcademy-Portatil.exe" }
+    "files": [
+      "main.js",
+      "preload.js",
+      "preload-widget.js",
+      "widget.html",
+      "offline.html",
+      "icone.png"
+    ],
+    "win": {
+      "icon": "icone.png",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": true,
+      "artifactName": "LogicAcademy-Instalador.exe",
+      "createDesktopShortcut": true,
+      "shortcutName": "Logic Academy"
+    },
+    "portable": {
+      "artifactName": "LogicAcademy-Portatil.exe"
+    }
   }
 }

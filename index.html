@@ -1117,7 +1117,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=4.5">
+<link rel="stylesheet" href="css/componentes.css?v=4.6">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -1634,15 +1634,29 @@ try{const fora=["mapa_ui","mapa_tema"];Object.keys(localStorage).forEach(k=>{
 
 /* ================= Armazenamento ================= */
 const meuDoc=k=>S.db.collection("data/users/"+S.uid).doc(k);
+/* Sem internet: os dados da conta também ficam numa cópia no aparelho (além da cópia da nuvem do Firebase),
+   para o app abrir já logado e com tudo no lugar. Quando a internet volta, a nuvem sincroniza sozinha. */
+const COPIA_KEYS=["perfil","plano","edital","pomo","revisoes","conquistas","questoes","simulados"];
+const copiaChave=k=>"la_copia_"+(S.uid||"")+"_"+k;
+function copiaGuardar(k,v){if(S.mode!=="nuvem"||!S.uid||!COPIA_KEYS.includes(k))return;try{localStorage.setItem(copiaChave(k),JSON.stringify(v===undefined?null:v))}catch(e){}}
+function copiaLer(k){try{const t=localStorage.getItem(copiaChave(k));return t===null?undefined:JSON.parse(t)}catch(e){return undefined}}
 async function ler(k){
-  if(S.mode==="nuvem"){const s=await meuDoc(k).get();return s.exists?s.data():null}
+  if(S.mode==="nuvem"){
+    if(!navigator.onLine){   // sem internet: vai direto às cópias do aparelho (não espera a nuvem desistir)
+      try{const s=await meuDoc(k).get({source:"cache"});return s.exists?s.data():null}catch(e){}
+      const c=copiaLer(k);if(c!==undefined)return c;if(k==="perfil")throw {code:"sem-internet"};return null}
+    try{const s=await meuDoc(k).get();const v=s.exists?s.data():null;copiaGuardar(k,v);return v}
+    catch(e){const c=copiaLer(k);if(c!==undefined)return c;try{const s=await meuDoc(k).get({source:"cache"});return s.exists?s.data():null}catch(e2){}if(k==="perfil")throw e;return null}}
   return VISITANTE_MEM[k]!==undefined?clone(VISITANTE_MEM[k]):null
 }
 const pend={};
 function gravar(k,v,ja){
   clearTimeout(pend[k]);
   const run=async()=>{
-    if(S.mode==="nuvem"){try{await meuDoc(k).set(clone(v))}catch(e){toast("Não foi possível salvar na nuvem ("+(e&&e.code||"erro")+"). Tente de novo em instantes.")}}
+    if(S.mode==="nuvem"){copiaGuardar(k,v);
+      // sem internet a nuvem guarda a mudança e envia depois: não fica esperando a resposta
+      const env=meuDoc(k).set(clone(v)).catch(e=>toast("Não foi possível salvar na nuvem ("+(e&&e.code||"erro")+"). Tente de novo em instantes."));
+      if(navigator.onLine)await Promise.race([env,new Promise(ok=>setTimeout(ok,8000))])}
     else VISITANTE_MEM[k]=clone(v); // visitante: só na memória, some ao fechar o app
   };
   if(ja)return run();pend[k]=setTimeout(run,500);
@@ -1805,7 +1819,7 @@ async function entrar(modo){
   }else{S.mode="local";S.uid="local"}
   $("#root").innerHTML=`<div class="wizard"><div class="row muted"><span class="spinner"></span>Carregando seus dados…</div></div>`;
   try{[S.perfil,S.plano,S.edital,S.pomoLog,S.revisoes,S.conq]=await Promise.all(["perfil","plano","edital","pomo","revisoes","conquistas"].map(ler));if(!S.revisoes||!Array.isArray(S.revisoes.itens))S.revisoes={itens:[]}}
-  catch(e){S.mode=null;renderLogin("Não foi possível ler seus dados ("+(e&&e.code||"erro")+").");return}
+  catch(e){S.mode=null;renderLogin(e&&e.code==="sem-internet"?"Sem internet e ainda sem cópia dos seus dados neste aparelho. Abra o Logic Academy uma vez com internet; depois ele funciona sem internet.":"Não foi possível ler seus dados ("+(e&&e.code||"erro")+").");return}
   S.pomoLog=garantirTotais(S.pomoLog&&S.pomoLog.dias?S.pomoLog:{dias:{},sessoes:0});carregarCrono();virarSemana();verificarConquistas(true);if(S.edital&&!Array.isArray(S.edital.materias))S.edital=null;
   if(S.perfil&&S.perfil.ui)aplicarUI(S.perfil.ui);else if(S.perfil&&S.perfil.tema)aplicarTema(S.perfil.tema);
   if(S.perfil&&S.perfil.pomo)Object.assign(P.dur,S.perfil.pomo);else if(S.perfil)Object.assign(P.dur,{foco:+S.perfil.bloco||50,curta:+S.perfil.pausa||10});P.restante=pomoTotal();carregarPomo();
@@ -2773,8 +2787,10 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.24";
+const APP_VERSAO="3.25";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Apps com widget e notificações 📲",d:"No Android, o app ganhou um widget para a tela inicial (sequência e próximo bloco) e notificações que chegam mesmo com o app fechado. No Windows, um mini widget por cima das janelas e lembretes o dia todo. E o site e os apps avisam quando há uma versão nova para atualizar."},
+  {t:"Sem internet, já entra logado 📴",d:"Sem internet, o Logic Academy abre direto na sua conta com os dados guardados no aparelho. Em Configurações › Usar sem internet dá para baixar o banco de questões, as imagens e os simulados."},
   {t:"Funciona sem internet 📴",d:"O site e seus dados ficam guardados no aparelho: dá para estudar sem internet e tudo sincroniza com a nuvem quando a conexão voltar. Nos apps, o banco de questões e as imagens são baixados aos poucos, só no Wi-Fi."},
   {t:"Apps para Android e Windows 📲",d:"Baixe em Configurações › Aplicativos. Neles, a chamada e a tela compartilhada continuam com o app fechado, e o banco de questões fica guardado no aparelho."},
   {t:"Uma conta, um aparelho 🔐",d:"Cada conta fica aberta em um aparelho por vez. Se você entrar em outro aparelho, o anterior sai sozinho com um aviso."},
@@ -4613,10 +4629,12 @@ function vozPainelHtml(canal,titulo,prev){
     <p class="hint">${aqui?"Pode navegar pelo site (pomodoro, questões…) que a conversa continua. Use fone de ouvido para não dar eco.":`Até ${VOZ_MAX} pessoas por canal. O áudio vai direto entre os participantes e não é gravado.`}${outro?` Você está em <b>${esc(V.titulo)}</b>.`:""}</p></div>`}
 /* Aplicativos (Android .apk e Windows .exe): o site avisa quando a chamada começa e termina,
    para o app manter a chamada viva com o app fechado (Android: serviço em primeiro plano; Windows: fica perto do relógio). */
-const EH_APP=/LogicAcademyApp/.test(navigator.userAgent)||!!(window.logicApp||(window.Capacitor&&window.Capacitor.isNativePlatform&&window.Capacitor.isNativePlatform()));
+const EH_APP=/LogicAcademyApp/.test(navigator.userAgent)||!!(window.logicApp||window.LogicAndroid);
+const APP_PLAT=window.LogicAndroid?"android":window.logicApp?"windows":"";
+const appVersao=()=>{try{return window.LogicAndroid?String(window.LogicAndroid.versao()):window.logicApp&&window.logicApp.versao?String(window.logicApp.versao()):""}catch(e){return ""}};
 let appChamadaAtiva=false;
 function appAvisarChamada(){const ativa=!!V.canal;if(ativa===appChamadaAtiva&&!ativa)return;appChamadaAtiva=ativa;const titulo=V.titulo||"Chamada";
-  try{const pl=window.Capacitor&&window.Capacitor.Plugins&&window.Capacitor.Plugins.Chamada;if(pl){if(ativa)pl.iniciar({titulo,texto:"Chamada em andamento no Logic Academy"}).catch(()=>{});else pl.parar().catch(()=>{})}}catch(e){}
+  try{if(window.LogicAndroid)window.LogicAndroid.chamada(ativa,titulo)}catch(e){}
   try{if(window.logicApp&&window.logicApp.chamada)window.logicApp.chamada(ativa,titulo)}catch(e){}}
 // no aplicativo, o banco de questões é baixado inteiro para o aparelho (sem travar ao abrir)
 async function baixarBancoNoAparelho(aviso){const arqs=[];QB_AREAS.forEach(([a])=>QB_PROVAS_ARQ.forEach(pv=>{if(pv==="outras"&&!(QB_IDX.outras.areas[a]))return;arqs.push("questoes/"+pv+"-"+a+".json")}));
@@ -5345,17 +5363,60 @@ async function imagensDoBanco(){const urls=new Set();
   return [...urls]}
 let offRodando=false;
 // baixa as imagens aos poucos, só no Wi-Fi, um lote a cada 20 s (nos apps); para sozinho sem Wi-Fi e continua depois
-async function baixarImagensAosPoucos(){
-  if(offRodando||!EH_APP)return;const o=offEstado();if(!o.imagens||!noWifi())return;offRodando=true;
+async function baixarImagensAosPoucos(forcar){
+  if(offRodando)return;const o=offEstado();if(!forcar&&(!EH_APP||!o.imagens||!noWifi()))return;if(!navigator.onLine)return;offRodando=true;offEstado.forcar=!!forcar;
   try{const lista=await imagensDoBanco();o.total=lista.length;if(o.i>=lista.length){o.feitas=lista.length;offSalvar(o);return}
     const cache=await caches.open("la-dados-v1");
-    while(o.i<lista.length&&noWifi()&&offEstado().imagens){const lote=lista.slice(o.i,o.i+25);
+    while(o.i<lista.length&&navigator.onLine&&(offEstado.forcar||(noWifi()&&offEstado().imagens))){const lote=lista.slice(o.i,o.i+25);
       await Promise.all(lote.map(async u=>{try{const abs=new URL(u,location.href).href;if(await cache.match(abs))return;await fetch(abs,/enem\.dev/.test(abs)?{mode:"no-cors"}:{})}catch(e){}}));
       o.i+=lote.length;o.feitas=o.i;offSalvar(o);const el=$("#cf-off-prog");if(el)el.textContent=`${o.feitas.toLocaleString("pt-BR")} de ${o.total.toLocaleString("pt-BR")} imagens no aparelho`;
-      await new Promise(ok=>setTimeout(ok,20000))}}
-  finally{offRodando=false}}
+      await new Promise(ok=>setTimeout(ok,offEstado.forcar?600:20000))}
+    if(o.i>=lista.length&&offEstado.forcar)toast("Todas as imagens das questões estão no aparelho. 🎉")}
+  finally{offRodando=false;offEstado.forcar=false}}
+async function baixarSimuladosNoAparelho(){let n=0;try{const ix=await (await fetch("simulados/indice.json")).json();for(const s of ix){try{const sim=await (await fetch(s.arquivo)).json();n++;
+  for(const d of sim.dias||[])for(const q of (d.objetivas||[]).concat(d.discursivas||[]))for(const f of q.img||[])await fetch(f.src).catch(()=>{})}catch(e){}}}catch(e){}toast(n?`Simulados guardados no aparelho (${n}).`:"Não foi possível baixar os simulados agora.");return n}
 if(EH_APP){setTimeout(()=>baixarImagensAosPoucos().catch(()=>{}),60000);setInterval(()=>baixarImagensAosPoucos().catch(()=>{}),10*60000);
   try{navigator.connection&&navigator.connection.addEventListener("change",()=>baixarImagensAosPoucos().catch(()=>{}))}catch(e){}}
+
+/* ================= Nova versão: o site e os apps avisam para atualizar ================= */
+const verMaior=(a,b)=>{const x=String(a||"0").split(".").map(Number),y=String(b||"0").split(".").map(Number);for(let i=0;i<Math.max(x.length,y.length);i++){if((x[i]||0)!==(y[i]||0))return (x[i]||0)>(y[i]||0)}return false};
+let versaoAvisada="";
+async function verificarVersao(){
+  if(!navigator.onLine||location.protocol!=="https:")return;let v=null;
+  try{v=await (await fetch("versao.json?x="+Date.now(),{cache:"no-store"})).json()}catch(e){return}if(!v)return;
+  if(v.site&&verMaior(v.site,APP_VERSAO)&&versaoAvisada!==v.site){versaoAvisada=v.site;avisoAtualizar(`Nova versão do Logic Academy (${v.site}) publicada.`,"Atualizar agora",()=>location.reload())}
+  else if(APP_PLAT&&v[APP_PLAT]&&appVersao()&&verMaior(v[APP_PLAT],appVersao())&&versaoAvisada!=="app"+v[APP_PLAT]){versaoAvisada="app"+v[APP_PLAT];
+    const url=APP_PLAT==="android"?"https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy.apk":"https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy-Instalador.exe";
+    avisoAtualizar(`Nova versão do app (${v[APP_PLAT]}) disponível, com melhorias.`,"Baixar e instalar",()=>{if(window.logicApp&&window.logicApp.abrirLink)window.logicApp.abrirLink(url);else location.href=url})}}
+function avisoAtualizar(txt,botao,acao){let el=$("#aviso-versao");if(el)el.remove();el=document.createElement("div");el.id="aviso-versao";el.className="card aviso-versao";el.setAttribute("role","status");
+  el.innerHTML=`<span>🔄 ${esc(txt)}</span><div class="row" style="gap:6px"><button class="btn sm primary" type="button" data-av="ok">${esc(botao)}</button><button class="btn sm ghost" type="button" data-av="x" aria-label="Depois">Depois</button></div>`;
+  document.body.appendChild(el);el.addEventListener("click",e=>{const b=e.target.closest("[data-av]");if(!b)return;if(b.dataset.av==="ok"){if(LAComp&&LAComp.Simulados&&LAComp.Simulados.emProva&&LAComp.Simulados.emProva()&&!confirm("Atualizar agora vai sair do simulado. Continuar?"))return;acao()}el.remove()})}
+setTimeout(()=>verificarVersao().catch(()=>{}),20000);setInterval(()=>verificarVersao().catch(()=>{}),20*60000);
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")verificarVersao().catch(()=>{})});
+
+/* ================= Widget e notificações dos apps (funcionam com o app fechado) =================
+   Android: widget na tela inicial + notificações agendadas pelo próprio celular (AlarmManager).
+   Windows: mini widget por cima das janelas + notificações agendadas pelo programa (que fica perto do relógio). */
+function dadosWidget(){if(!S.perfil||!S.pomoLog)return null;const min=minutosDia(dataISO()),meta=metaHoje(),seq=sequencia(),b=blocosDeHoje().find(x=>!x.feito&&toMin(x.inicio)+(x.min||50)>lembAgoraMin())||blocosDeHoje().find(x=>!x.feito);
+  return {seq,hoje:min,meta,proximo:b?`${b.materia} · ${b.inicio}`:"",falta:Math.max(0,meta-min),texto:min>=meta?"Meta de hoje batida! 🏆":`Faltam ${fmtH(Math.max(0,meta-min))} para a meta`}}
+// agenda para os próximos 7 dias (o app mostra mesmo fechado). Hoje leva em conta o que já foi estudado.
+function agendaNotificacoes(){const p=lembPref();if(!p.ligado||!S.perfil||!S.plano)return [];const out=[],agora=Date.now(),seq=sequencia(),min=minutosDia(dataISO()),meta=metaHoje();
+  const silencio=(d)=>{const m=d.getHours()*60+d.getMinutes(),a=toMin(p.silIni),b=toMin(p.silFim);if(a==null||b==null)return false;return a>b?(m>=a||m<b):(m>=a&&m<b)};
+  const add=(d,titulo,texto,abrir)=>{if(d.getTime()>agora+30000&&!silencio(d))out.push({em:d.getTime(),titulo,texto,abrir:abrir||"pomodoro"})};
+  for(let i=0;i<7;i++){const dia=new Date();dia.setDate(dia.getDate()+i);const k=DIAS[(dia.getDay()+6)%7].k,hoje=i===0;
+    const blocos=((S.plano.semana&&S.plano.semana[k])||[]).filter(b=>toMin(b.inicio)!=null&&!(hoje&&b.feito));
+    for(const b of blocos){const t=toMin(b.inicio),d0=new Date(dia);d0.setHours(Math.floor(t/60),t%60,0,0);
+      add(new Date(d0.getTime()-5*60000),`⏰ Daqui a 5 min: ${b.materia}`,`Bloco das ${b.inicio}${b.tarefa?" · "+b.tarefa:""}.`,"proximo");
+      add(d0,`📚 Hora de ${b.materia}!`,`${b.min||25} min${b.tarefa?" · "+b.tarefa:""}. Toque para começar.`,"proximo")}
+    const h=(hh,mm)=>{const d=new Date(dia);d.setHours(hh,mm,0,0);return d};
+    if(!hoje||min===0){add(h(12,30),"Que tal começar os estudos de hoje?",hoje&&seq?`Sua sequência está em ${seq} ${seq===1?"dia":"dias"}. Não deixe ela parar!`:"Um bloco de 25 minutos já conta para a sequência.");
+      add(h(20,30),hoje&&seq?`🔥 Sua sequência de ${seq} ${seq===1?"dia":"dias"} acaba hoje!`:"🔥 Não deixe sua sequência parar","Estude pelo menos alguns minutos antes da meia-noite.")}
+    if(!hoje||min<meta)add(h(19,30),"🎯 Bora bater a meta de hoje?",hoje?`Faltam ${fmtH(Math.max(0,meta-min))} para a meta.`:`Sua meta é de ${fmtH(meta)} por dia.`)}
+  return out.sort((a,b)=>a.em-b.em).slice(0,60)}
+let nativoUlt="";
+function atualizarNativo(){if(!EH_APP)return;try{const w=dadosWidget(),ag=agendaNotificacoes(),chave=JSON.stringify([w,ag]);if(chave===nativoUlt)return;nativoUlt=chave;
+  if(window.LogicAndroid){if(w)window.LogicAndroid.widget(JSON.stringify(w));window.LogicAndroid.agendar(JSON.stringify(ag))}
+  if(window.logicApp){if(w&&window.logicApp.widget)window.logicApp.widget(w);if(window.logicApp.agendar)window.logicApp.agendar(ag)}}catch(e){console.warn("app",e)}}
 
 /* ================= Lembretes de estudo, número no ícone e atalhos =================
    - Número no ícone do app (tela inicial): quantos blocos de hoje ainda faltam (ou 1 se a meta do dia não foi batida).
@@ -5385,8 +5446,9 @@ async function lembMostrar(id,titulo,corpo,abrir){
   return true}
 // confere a cada minuto o que vale lembrar (no máximo 10 por dia, nunca no horário de silêncio nem durante o estudo)
 async function lembVerificar(){
-  atualizarIconeApp();
-  const p=lembPref();if(!p.ligado||!lembPermitido()||!S.perfil||!S.pomoLog)return;
+  atualizarIconeApp();atualizarNativo();
+  const p=lembPref();if(!p.ligado||!S.perfil||!S.pomoLog)return;
+  if(EH_APP||!lembPermitido())return;   // nos apps quem avisa é o próprio app (notificações agendadas)
   const d=lembHoje(),min=minutosDia(dataISO()),meta=metaHoje(),m=lembAgoraMin(),seq=sequencia();
   // acompanha o estudo: guarda quando a última sessão terminou (para o "mais um bloco?")
   if(min>d.minVisto){d.minVisto=min;if(!lembEstudando())d.fimSessao=Date.now();lembGuardar(d)}
@@ -6664,9 +6726,9 @@ function renderConfig(){
       ${EH_APP?"":`<div class="card stack sm"><div><h3>Aplicativos do Logic Academy</h3><p class="small muted">Com o app, a chamada e o compartilhamento de tela continuam mesmo com o app fechado, e o banco de questões fica guardado no aparelho. Eles abrem o site oficial, então ficam sempre atualizados.</p></div>
         <div class="row" style="gap:8px;flex-wrap:wrap"><a class="btn primary" href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy.apk" rel="noopener">🤖 Android (.apk)</a><a class="btn" href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy-Instalador.exe" rel="noopener">🪟 Windows (instalador)</a><a class="btn ghost" href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy-Portatil.exe" rel="noopener">Windows (sem instalar)</a></div>
         <details class="small muted"><summary>Como instalar</summary><p><b>Android:</b> baixe o arquivo, abra e toque em Instalar. Se pedir, permita “instalar apps desta fonte”. Para a chamada continuar com o app fora da tela, aceite o microfone e as notificações.</p><p><b>Windows:</b> rode o instalador. Se o Windows mostrar “O Windows protegeu o computador”, clique em “Mais informações” › “Executar assim mesmo” (o programa ainda não tem assinatura paga da Microsoft). Fechar a janela deixa o Logic Academy perto do relógio; para sair, clique com o botão direito no ícone › Sair.</p><p><b>iPhone:</b> use o site e adicione à Tela de Início (Compartilhar › Adicionar à Tela de Início).</p></details></div>`}
-      ${EH_APP?`<div class="card stack sm"><div class="row" style="justify-content:space-between"><div><h3>Usar sem internet</h3><p class="small muted">O app guarda o site, o banco de questões e seus dados no aparelho, e sincroniza com a nuvem quando há internet. As imagens das questões são baixadas aos poucos, só no Wi-Fi.</p><p class="small" id="cf-off-prog">${(()=>{const o=offEstado();return o.total?`${o.feitas.toLocaleString("pt-BR")} de ${o.total.toLocaleString("pt-BR")} imagens no aparelho`:"As imagens começam a ser baixadas no próximo Wi-Fi."})()}</p></div>
-          <input type="checkbox" class="tg" id="cf-off-img" ${offEstado().imagens?"checked":""} aria-label="Baixar imagens no Wi-Fi"></div>
-        <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="cf-off-banco">📥 Atualizar o banco agora</button></div></div>`:""}
+      <div class="card stack sm"><div class="row" style="justify-content:space-between;align-items:flex-start"><div><h3>Usar sem internet</h3><p class="small muted">O site e seus dados ficam guardados neste aparelho e sincronizam com a nuvem quando há internet. Baixe abaixo o que você quer ter sem internet (funciona no Wi-Fi ou nos dados móveis).</p><p class="small" id="cf-off-prog">${(()=>{const o=offEstado();return o.total?`${o.feitas.toLocaleString("pt-BR")} de ${o.total.toLocaleString("pt-BR")} imagens no aparelho`:"Imagens das questões: ainda não baixadas."})()}</p></div>
+          ${EH_APP?`<label class="small row" style="gap:6px;white-space:nowrap"><input type="checkbox" class="tg" id="cf-off-img" ${offEstado().imagens?"checked":""}> Baixar sozinho no Wi-Fi</label>`:""}</div>
+        <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="cf-off-banco">📥 Banco de questões (≈ 2,5 MB)</button><button class="btn sm" type="button" id="cf-off-imgs">🖼️ Imagens das questões (≈ 200 MB)</button><button class="btn sm" type="button" id="cf-off-sim">📝 Simulados</button></div></div>
       <div class="card stack sm"><div class="row" style="justify-content:space-between"><div><h3>Lembretes de estudo</h3><p class="small muted">Notificações do próximo bloco, da meta do dia, da sequência em risco e “mais um bloco?”. Também mostra no ícone do app quantos blocos faltam hoje. Funcionam com o site aberto ou em segundo plano.</p></div>
           <input type="checkbox" class="tg" id="cf-lemb" ${lembPref().ligado&&"Notification" in window&&Notification.permission==="granted"?"checked":""} aria-label="Lembretes de estudo"></div>
         <div class="row" style="gap:10px;flex-wrap:wrap;align-items:center"><span class="small muted">Sem lembretes das</span><input type="time" id="cf-sil-ini" value="${esc(lembPref().silIni)}" style="width:auto"><span class="small muted">às</span><input type="time" id="cf-sil-fim" value="${esc(lembPref().silFim)}" style="width:auto"><button class="btn sm ghost" type="button" id="cf-lemb-teste">${ico("send")}Testar</button></div></div>
@@ -6685,7 +6747,10 @@ function renderConfig(){
   $("#cf-sil-ini").onchange=e=>{const p=lembPref();p.silIni=e.target.value||"22:30";lembSalvarPref(p)};$("#cf-sil-fim").onchange=e=>{const p=lembPref();p.silFim=e.target.value||"07:00";lembSalvarPref(p)};
   $("#cf-lemb-teste").onclick=lembTestar;
   const oi=$("#cf-off-img");if(oi)oi.onchange=()=>{const o=offEstado();o.imagens=oi.checked;offSalvar(o);if(o.imagens)baixarImagensAosPoucos().catch(()=>{});toast(o.imagens?"As imagens serão baixadas no Wi-Fi.":"Download de imagens pausado.")};
-  const ob=$("#cf-off-banco");if(ob)ob.onclick=async()=>{ob.disabled=true;ob.textContent="Atualizando…";await baixarBancoNoAparelho(true);ob.disabled=false;ob.textContent="📥 Atualizar o banco agora"};
+  const ob=$("#cf-off-banco");if(ob)ob.onclick=async()=>{if(!navigator.onLine){toast("Conecte-se à internet para baixar.");return}ob.disabled=true;const t=ob.textContent;ob.textContent="Baixando…";await baixarBancoNoAparelho(true);ob.disabled=false;ob.textContent=t};
+  const oim=$("#cf-off-imgs");if(oim)oim.onclick=()=>{if(!navigator.onLine){toast("Conecte-se à internet para baixar.");return}const o=offEstado();if(o.total&&o.feitas>=o.total){toast("As imagens já estão todas no aparelho.");return}
+    if(!noWifi()&&!confirm("Você não parece estar no Wi-Fi. Baixar cerca de 200 MB de imagens pelos dados móveis?"))return;toast("Baixando as imagens… o progresso aparece aqui. Pode continuar usando o site.");baixarImagensAosPoucos(true).catch(()=>{})};
+  const osm=$("#cf-off-sim");if(osm)osm.onclick=async()=>{if(!navigator.onLine){toast("Conecte-se à internet para baixar.");return}osm.disabled=true;await baixarSimuladosNoAparelho();osm.disabled=false};
   $("#cf-meta").onchange=e=>{S.perfil.metaDia=+e.target.value;gravar("perfil",S.perfil);toast("Meta diária salva.");renderConfig()};
   $("#cf-ed").onclick=abrirEditorEstudos;
 
