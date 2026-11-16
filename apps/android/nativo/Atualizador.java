@@ -3,7 +3,14 @@ package app.logicacademy.estudos;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ContentValues;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageInstaller;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
+import android.net.Uri;
+import android.provider.MediaStore;
+import java.util.Arrays;
 import android.os.Build;
 import java.io.File;
 import java.io.FileInputStream;
@@ -30,6 +37,40 @@ public class Atualizador {
 
     static void limpar(Context c) {
         try { new File(c.getCacheDir(), ARQUIVO).delete(); } catch (Exception e) { }
+    }
+
+    private static byte[] chave(PackageInfo p) {
+        if (p == null) return null;
+        Signature[] s = null;
+        if (Build.VERSION.SDK_INT >= 28 && p.signingInfo != null) s = p.signingInfo.getApkContentsSigners();
+        else s = p.signatures;
+        return s != null && s.length > 0 ? s[0].toByteArray() : null;
+    }
+    @SuppressWarnings("deprecation")
+    static boolean mesmaAssinatura(Context c, String apk) {
+        try {
+            PackageManager pm = c.getPackageManager();
+            int fl = Build.VERSION.SDK_INT >= 28 ? PackageManager.GET_SIGNING_CERTIFICATES : PackageManager.GET_SIGNATURES;
+            byte[] novo = chave(pm.getPackageArchiveInfo(apk, fl)), atual = chave(pm.getPackageInfo(c.getPackageName(), fl));
+            if (novo == null || atual == null) return true;   // sem como saber: tenta instalar
+            return Arrays.equals(novo, atual);
+        } catch (Exception e) { return true; }
+    }
+    /** Copia o app novo para a pasta Downloads (para instalar depois de desinstalar o antigo). */
+    static String guardarEmDownloads(Context c, File f) {
+        if (Build.VERSION.SDK_INT < 29) return null;
+        try {
+            ContentValues v = new ContentValues();
+            v.put(MediaStore.MediaColumns.DISPLAY_NAME, "LogicAcademy-novo.apk");
+            v.put(MediaStore.MediaColumns.MIME_TYPE, "application/vnd.android.package-archive");
+            v.put(MediaStore.MediaColumns.RELATIVE_PATH, "Download");
+            Uri u = c.getContentResolver().insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI, v);
+            if (u == null) return null;
+            try (OutputStream o = c.getContentResolver().openOutputStream(u); InputStream in = new FileInputStream(f)) {
+                byte[] b = new byte[65536]; int n; while ((n = in.read(b)) > 0) o.write(b, 0, n);
+            }
+            return "Download/LogicAcademy-novo.apk";
+        } catch (Exception e) { return null; }
     }
 
     static void iniciar(Context c, String url, Aviso aviso) {
@@ -60,6 +101,13 @@ public class Atualizador {
                         int p = total > 0 ? (int) (lido * 100 / total) : 0;
                         if (p != ult && p % 5 == 0) { ult = p; aviso.enviar("baixando", p, ""); }
                     }
+                }
+                // a chave do app novo é a mesma deste? Se não for, o Android recusaria: guarda o app novo em Downloads e guia a troca
+                if (!mesmaAssinatura(c, f.getAbsolutePath())) {
+                    String onde = guardarEmDownloads(c, f);
+                    f.delete();
+                    aviso.enviar("trocar", 0, onde == null ? "" : onde);
+                    return;
                 }
                 aviso.enviar("instalando", 100, "");
                 // entrega ao instalador do Android

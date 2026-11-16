@@ -85,6 +85,12 @@ public class MainActivity extends BridgeActivity {
         @JavascriptInterface
         public boolean podeInstalar() { return Atualizador.podeInstalar(MainActivity.this); }
 
+        /** Abre a tela do Android para desinstalar este app (usado só quando a troca é obrigatória). */
+        @JavascriptInterface
+        public void desinstalar() {
+            runOnUiThread(() -> { try { startActivity(new Intent(Intent.ACTION_DELETE, Uri.parse("package:" + getPackageName()))); } catch (Exception e) { } });
+        }
+
         @JavascriptInterface
         public String versao() {
             try { return getPackageManager().getPackageInfo(getPackageName(), 0).versionName; } catch (Exception e) { return ""; }

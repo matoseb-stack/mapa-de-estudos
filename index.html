@@ -2808,8 +2808,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.33";
+const APP_VERSAO="3.34";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Atualização do app mais segura 🔄",d:"Antes de instalar, o app confere se a versão nova pode entrar por cima. Se não puder (app instalado de um arquivo antigo), ele já deixa o app novo na pasta Downloads e guia a troca com um botão para desinstalar o antigo. Em Configurações aparece qual versão do app você tem."},
   {t:"Biblioteca com 13 livros e sumário inteligente 📚",d:"Os livros didáticos públicos do Paraná para o ensino médio, um por matéria: Matemática, Português e Literatura, Física, Química, Biologia, História, Geografia, Filosofia, Sociologia, Espanhol, Inglês, Arte e Educação Física. Cada capítulo ganhou o nome do assunto que ensina e os subtópicos principais; toque e o livro abre direto na página. A busca também acha assuntos de dentro dos livros."},
   {t:"Missões e Biblioteca 🎯📚",d:"Nova aba Missões com a Missão PISM 1: foto da UFJF, música tema, raio-x do que mais e do que menos cai (geral e por matéria), provas antigas de 2009 a 2026 e um banco só com as 738 questões do Módulo I, em ordem do que mais cai. Nova aba Biblioteca com prateleiras por matéria para os e-books. O banco também ganhou as provas de 2009 e 2012."},
   {t:"PISM 1 desde 2010 no banco 📚",d:"Entraram 298 questões do PISM Módulo I das provas de 2010, 2011, 2013, 2014, 2015, 2022, 2024 e do 1º dia de 2026, com gabarito oficial da UFJF, o texto de apoio junto e o assunto de cada uma. Filtre por prova PISM e escolha o ano."},
@@ -5424,6 +5425,9 @@ window.appAtualizacao=function(estado,pct,msg){const el=$("#aviso-versao");if(!e
   else if(estado==="instalando"){txt("Instalando… se o Android pedir, toque em “Atualizar”. O app reabre na versão nova.");if(bt)bt.hidden=true}
   else if(estado==="permissao"){atualEsperaPermissao=true;txt("Na tela que abriu, ligue “Permitir desta fonte” para o Logic Academy e volte aqui: a atualização continua sozinha.");if(bt)bt.hidden=true}
   else if(estado==="cancelado"){txt("Atualização cancelada. Você pode atualizar depois.");if(bt)bt.hidden=false}
+  else if(estado==="trocar"){txt(`Este app foi instalado de um arquivo antigo e o Android não deixa atualizar por cima. ${msg?`O app novo já está na pasta Downloads (${msg}). `:""}Faça uma única vez: 1) toque em “Desinstalar o app atual”; 2) ${msg?"abra o arquivo LogicAcademy-novo.apk em Downloads":"baixe e instale o app novo"}. Seus dados estão na sua conta e voltam ao entrar.`);
+    if(bt){bt.hidden=false;bt.innerHTML=`<button class="btn primary" type="button" data-av2="des">Desinstalar o app atual</button>${msg?"":`<button class="btn" type="button" data-av2="baixar">Baixar o app novo</button>`}<button class="btn ghost" type="button" data-av2="x">Depois</button>`;
+      bt.onclick=e=>{const b=e.target.closest("[data-av2]");if(!b)return;e.stopPropagation();if(b.dataset.av2==="des"){try{window.LogicAndroid.desinstalar()}catch(x){}return}if(b.dataset.av2==="baixar"){abrirFora(atualPendente||APK_URL("apps"));return}el.remove();const f=$("#aviso-versao-fundo");if(f)f.remove()}}}
   else if(estado==="assinatura"){txt("O Android não deixou instalar por cima porque este app veio de outro arquivo (de testes ou antigo). Desinstale o Logic Academy uma vez e instale o novo — seus dados estão na sua conta e voltam ao entrar.");
     if(bt){bt.hidden=false;bt.innerHTML=`<button class="btn primary" type="button" data-av2="baixar">Baixar o app novo</button><button class="btn ghost" type="button" data-av2="x">Fechar</button>`;
       bt.onclick=e=>{const b=e.target.closest("[data-av2]");if(!b)return;e.stopPropagation();if(b.dataset.av2==="baixar")abrirFora(atualPendente||APK_URL("apps"));el.remove();const f=$("#aviso-versao-fundo");if(f)f.remove()}}}
@@ -6780,6 +6784,7 @@ function renderConfig(){
   $("#main").innerHTML=`<div class="page" style="max-width:860px">
     ${pageHead("Configurações")}
     <div class="stack">
+      <div class="card small muted" id="cf-versao">Logic Academy ${APP_VERSAO}${APP_LOCAL?` · app de Android ${APP_CANAL==="teste"?"de testes":"oficial"} nº ${APP_BUILD||"?"}${window.LogicAndroid&&window.LogicAndroid.atualizarApp?" · atualiza por dentro ✅":" · versão antiga (instale o app novo uma vez)"}`:EH_APP?` · app ${esc(appVersao()||"")}`:""}</div>
       <div class="card row" style="justify-content:space-between"><div><h3>Aparência</h3><p class="small muted">Estilo ${esc((ESTILOS.find(e=>e.k===uiAtual().estilo)||ESTILOS[0]).n)} · modo ${({auto:"automático",claro:"claro",escuro:"escuro"})[uiAtual().modo]}</p></div><button class="btn" type="button" data-link="aparencia">${ico("palette")}Personalizar</button></div>
       ${(()=>{const T=garantirTotais(S.pomoLog).tot;const mats=Object.entries(T.mat).sort((a,b)=>b[1]-a[1]);const mx=mats.length?mats[0][1]:1;
         return `<div class="card"><div class="card-h"><div><h3>Tempo estudado no app</h3><p class="small muted">Soma do cronômetro e do pomodoro${S.mode==="nuvem"?", salva na sua conta":", não salva (modo visitante)"}.</p></div><button class="btn sm" type="button" id="cf-crono">${ico("watch")}Abrir cronômetro</button></div>
