@@ -23,6 +23,8 @@ concurrency:
 jobs:
   android:
     runs-on: ubuntu-latest
+    outputs:
+      versao: ${{ steps.ver.outputs.versao }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -48,8 +50,14 @@ jobs:
           for f in firebase-app-compat.js firebase-auth-compat.js firebase-firestore-compat.js; do
             curl -sSfL -o "$W/vendor/firebasejs/10.12.2/$f" "https://www.gstatic.com/firebasejs/10.12.2/$f"
           done
+          # canal (oficial/testes) e nº da montagem: o app compara com a última publicação e pede para atualizar
+          CANAL=$([ "${{ github.ref_name }}" = "producao" ] && echo oficial || echo teste)
+          sed -i "s/const APP_CANAL=\"oficial\",APP_BUILD=0;/const APP_CANAL=\"$CANAL\",APP_BUILD=${{ github.run_number }};/" "$W/index.html"
+          grep -q "APP_BUILD=${{ github.run_number }};" "$W/index.html"
           du -sh "$W"
           echo "APP_VERSAO=$(grep -o 'APP_VERSAO="[0-9.]*"' index.html | head -1 | cut -d'"' -f2)" >> "$GITHUB_ENV"
+      - id: ver
+        run: echo "versao=$APP_VERSAO" >> "$GITHUB_OUTPUT"
       - name: Montar o projeto Android
         working-directory: apps/android
         run: |
@@ -106,7 +114,9 @@ jobs:
           TAG: ${{ github.ref_name == 'producao' && 'apps' || 'apps-teste' }}
         run: |
           ls -la saida
-          if [ "$TAG" = "apps" ]; then T="Aplicativos do Logic Academy"; X=""; else T="Aplicativos do Logic Academy (versão de testes)"; X="--prerelease"; fi
+          if [ "$TAG" = "apps" ]; then T="Aplicativos do Logic Academy"; X=""; else T="Aplicativos do Logic Academy (testes)"; X="--prerelease"; fi
+          # o app lê "versão X" e "nº N" deste título para saber se há app novo
+          T="$T · versão ${{ needs.android.outputs.versao }} · nº ${{ github.run_number }}"
           gh release delete "$TAG" --repo "$REPO" --yes --cleanup-tag || true
           gh release create "$TAG" --repo "$REPO" --target "${{ github.sha }}" --title "$T" $X \
             --notes "Android: baixe LogicAcademy.apk e instale (permita instalar apps desta fonte); o app traz o site dentro, funciona sem internet e usa a mesma conta. Windows: LogicAcademy-Instalador.exe (instala) ou LogicAcademy-Portatil.exe (abre sem instalar)." \

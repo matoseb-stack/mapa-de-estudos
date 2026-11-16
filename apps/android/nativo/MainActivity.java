@@ -70,6 +70,17 @@ public class MainActivity extends BridgeActivity {
             Lembretes.mostrar(MainActivity.this, titulo, texto);
         }
 
+        /** Abre um endereço fora do app (ex.: baixar o app novo pelo navegador do celular). */
+        @JavascriptInterface
+        public void abrirLink(String url) {
+            if (url == null || !url.startsWith("https://")) return;
+            try {
+                Intent i = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse(url));
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(i);
+            } catch (Exception e) { }
+        }
+
         @JavascriptInterface
         public void permitirNotificacoes() {
             if (Build.VERSION.SDK_INT >= 33 && checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
