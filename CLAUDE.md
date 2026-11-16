@@ -27,6 +27,10 @@ Quando o dono mandar um PDF de questões sem outra instrução:
 6. Gravar em `questoes/outras-<area>.json` (`p:"outras"`, `banca`, `ano`, `adapt`, `n` sequencial dentro de "outras") e atualizar `QB_INDICE_OUT` no `index.html`.
 7. Ajustar fonte (banca/ano), formatação (expoentes, frações, símbolos) e nível quando precisar; publicar nos testes e **mandar direto para o oficial, sem esperar o "pronto"** (autorizado pelo dono para PDFs de exercícios). Depois, avisar o resumo: quantas entraram, quais já estavam no banco e o que foi ajustado.
 
+## Missões e Biblioteca
+- `js/componentes/Missoes.js` (aba Missões). Missão PISM 1: `missoes/pism1/ufjf.webp` (foto, domínio público), `raiox.json` e `provas.json` gerados das questões do banco (Módulo I), PDFs em `missoes/pism1/provas/`. A música tema é sintetizada no navegador (sem arquivo). "Treinar" abre o banco com o filtro `mo:"I"`.
+- `js/componentes/Biblioteca.js` (aba Biblioteca): e-books em `biblioteca/<matéria>/<arquivo>.pdf`, listados em `biblioteca/indice.json` (`{"livros":[{id,titulo,autor,materia,arquivo,paginas,descricao}]}`); matérias: mat, por, lit, fis, qui, bio, his, geo, fil, soc, ing, esp, red, out.
+
 ## Apps (Android .apk e Windows .exe)
 - `apps/android` (Capacitor + código nativo em `apps/android/nativo`) e `apps/windows` (Electron). Os apps abrem o site oficial; o site fala com eles por `window.LogicAndroid` / `window.logicApp` (chamada em segundo plano, widget, lembretes agendados, versão).
 - `.github/workflows/apps.yml` monta e publica em `releases/download/apps/` quando `apps/**` muda.
