@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: apps
+  group: apps-${{ github.ref_name }}   # testes e oficial montam separados (um não cancela o outro)
   cancel-in-progress: true
 
 jobs:
