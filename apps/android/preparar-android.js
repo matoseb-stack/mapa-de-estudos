@@ -51,6 +51,24 @@ if (process.env.APP_CANAL === "teste") {
   fs.writeFileSync(str, fs.readFileSync(str, "utf8").replace(/<string name="app_name">[^<]*<\/string>/, '<string name="app_name">Logic Academy (testes)</string>')
     .replace(/<string name="title_activity_main">[^<]*<\/string>/, '<string name="title_activity_main">Logic Academy (testes)</string>'));
 }
+// assinatura fixa (criada uma vez pelo GitHub): sem ela o Android recusa instalar a versão nova por cima
+if (process.env.ASSINATURA_ARQ && fs.existsSync(process.env.ASSINATURA_ARQ)) {
+  const arq = process.env.ASSINATURA_ARQ.replace(/\\/g, "/");
+  g = g.replace(/android\s*\{/, `android {
+    signingConfigs {
+        fixa {
+            storeFile file("${arq}")
+            storePassword "android"
+            keyAlias "logicacademy"
+            keyPassword "android"
+        }
+    }`);
+  g = g.replace(/buildTypes\s*\{/, `buildTypes {
+        debug {
+            signingConfig signingConfigs.fixa
+        }`);
+  console.log("Assinatura fixa configurada.");
+}
 fs.writeFileSync(gradle, g);
 
 // 5) ícone oficial (preto) em todas as densidades

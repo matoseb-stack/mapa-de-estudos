@@ -34,33 +34,32 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      # mesma assinatura entre as versões (enquanto o cache existir), para atualizar sem desinstalar
-      - uses: actions/cache@v4
-        with:
-          path: ~/.android/debug.keystore
-          key: android-assinatura-v1
       # Assinatura FIXA do app: o Android só instala uma versão nova por cima se a assinatura for a mesma.
-      # A chave fica guardada criptografada na publicação "assinatura" (a senha é o segredo ANDROID_ASSINATURA_SENHA,
-      # nunca aparece nos registros). Na primeira vez, no ramo producao, guarda a chave que o app oficial já usa.
+      # A chave é criada uma única vez e fica guardada criptografada na publicação "assinatura";
+      # a senha é o segredo ANDROID_ASSINATURA_SENHA (nunca aparece nos registros).
       - name: Assinatura fixa do app
         env:
           GH_TOKEN: ${{ github.token }}
           SENHA: ${{ secrets.ANDROID_ASSINATURA_SENHA }}
         run: |
-          # ANDROID_ASSINATURA_SENHA: uma senha qualquer criada pelo dono nos segredos do GitHub (só para esta chave)
-          if [ -z "$SENHA" ]; then echo "Sem o segredo ANDROID_ASSINATURA_SENHA: usando a assinatura guardada no cache."; exit 0; fi
-          mkdir -p ~/.android
-          if gh release download assinatura --repo "$GITHUB_REPOSITORY" -p assinatura.enc -D "$RUNNER_TEMP" 2>/dev/null; then
-            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:SENHA -in "$RUNNER_TEMP/assinatura.enc" -out ~/.android/debug.keystore
-            echo "Assinatura fixa carregada."
-          elif [ "${{ github.ref_name }}" = "producao" ] && [ -f ~/.android/debug.keystore ]; then
-            openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -pass env:SENHA -in ~/.android/debug.keystore -out "$RUNNER_TEMP/assinatura.enc"
-            gh release create assinatura --repo "$GITHUB_REPOSITORY" --prerelease --title "Assinatura do app (criptografada)" \
-              --notes "Arquivo usado pelo GitHub para assinar o app sempre com a mesma chave. Criptografado; não precisa baixar." "$RUNNER_TEMP/assinatura.enc"
-            echo "Assinatura do app oficial guardada."
-          else
-            echo "Ainda sem assinatura guardada (ela é guardada na próxima publicação do oficial)."
+          if [ -z "$SENHA" ]; then echo "::error::Falta o segredo ANDROID_ASSINATURA_SENHA"; exit 1; fi
+          K="$RUNNER_TEMP/assinatura.p12"
+          baixar() { gh release download assinatura --repo "$GITHUB_REPOSITORY" -p assinatura.enc -D "$RUNNER_TEMP" --clobber 2>/dev/null; }
+          if ! baixar; then
+            keytool -genkeypair -keystore "$K" -storetype PKCS12 -storepass android -keypass android -alias logicacademy \
+              -keyalg RSA -keysize 2048 -validity 20000 -dname "CN=Logic Academy, O=Logic Academy, C=BR"
+            openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -pass env:SENHA -in "$K" -out "$RUNNER_TEMP/assinatura.enc"
+            if gh release create assinatura --repo "$GITHUB_REPOSITORY" --prerelease --title "Assinatura do app (criptografada)" \
+                 --notes "Usado pelo GitHub para assinar o app sempre com a mesma chave. Criptografado; não precisa baixar." "$RUNNER_TEMP/assinatura.enc"; then
+              echo "Chave nova criada e guardada."
+            else
+              rm -f "$K"; baixar   # outra montagem criou ao mesmo tempo: usa a dela
+            fi
           fi
+          [ -f "$K" ] || openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:SENHA -in "$RUNNER_TEMP/assinatura.enc" -out "$K"
+          keytool -list -keystore "$K" -storepass android -alias logicacademy >/dev/null
+          echo "ASSINATURA_ARQ=$K" >> "$GITHUB_ENV"
+          echo "Assinatura fixa pronta."
       - name: Colocar o site dentro do app (sem as imagens das provas, que vêm do site oficial)
         run: |
           W=apps/android/www
