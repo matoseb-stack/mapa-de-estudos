@@ -10,9 +10,92 @@
   "background_color": "#fafafa",
   "theme_color": "#f97316",
   "icons": [
-    {"src": "icones/icone-192.png?v=3", "sizes": "192x192", "type": "image/png", "purpose": "any"},
-    {"src": "icones/icone-512.png?v=3", "sizes": "512x512", "type": "image/png", "purpose": "any"},
-    {"src": "icones/icone-maskable-192.png?v=3", "sizes": "192x192", "type": "image/png", "purpose": "maskable"},
-    {"src": "icones/icone-maskable-512.png?v=3", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+    {
+      "src": "icones/icone-192.png?v=3",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icones/icone-512.png?v=3",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icones/icone-maskable-192.png?v=3",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icones/icone-maskable-512.png?v=3",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Começar o próximo bloco",
+      "short_name": "Próximo bloco",
+      "description": "Abre o pomodoro com a matéria do próximo bloco de hoje",
+      "url": "./?abrir=proximo",
+      "icons": [
+        {
+          "src": "icones/icone-192.png?v=3",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Pomodoro",
+      "short_name": "Pomodoro",
+      "url": "./?abrir=pomodoro",
+      "icons": [
+        {
+          "src": "icones/icone-192.png?v=3",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Cronômetro",
+      "short_name": "Cronômetro",
+      "url": "./?abrir=cronometro",
+      "icons": [
+        {
+          "src": "icones/icone-192.png?v=3",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Minha semana",
+      "short_name": "Semana",
+      "url": "./?abrir=semana",
+      "icons": [
+        {
+          "src": "icones/icone-192.png?v=3",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Banco de questões",
+      "short_name": "Questões",
+      "url": "./?abrir=questoes",
+      "icons": [
+        {
+          "src": "icones/icone-192.png?v=3",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
   ]
 }
