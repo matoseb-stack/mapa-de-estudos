@@ -512,3 +512,5 @@ button.sim-alt:hover{border-color:var(--fg)}
 
 .aviso-versao{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(76px + env(safe-area-inset-bottom));z-index:9500;display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between;max-width:min(560px,calc(100vw - 24px));width:max-content;box-shadow:0 10px 30px rgba(0,0,0,.18);border-color:color-mix(in srgb,var(--accent) 50%,var(--line))}
 @media (min-width:861px){.aviso-versao{bottom:20px}}
+
+.aviso-versao.no-alto{top:calc(10px + env(safe-area-inset-top));bottom:auto}

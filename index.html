@@ -1117,7 +1117,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=4.6">
+<link rel="stylesheet" href="css/componentes.css?v=4.7">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -2787,7 +2787,7 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.25";
+const APP_VERSAO="3.26";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
   {t:"Apps com widget e notificações 📲",d:"No Android, o app ganhou um widget para a tela inicial (sequência e próximo bloco) e notificações que chegam mesmo com o app fechado. No Windows, um mini widget por cima das janelas e lembretes o dia todo. E o site e os apps avisam quando há uma versão nova para atualizar."},
   {t:"Sem internet, já entra logado 📴",d:"Sem internet, o Logic Academy abre direto na sua conta com os dados guardados no aparelho. Em Configurações › Usar sem internet dá para baixar o banco de questões, as imagens e os simulados."},
@@ -5385,13 +5385,15 @@ async function verificarVersao(){
   if(!navigator.onLine||location.protocol!=="https:")return;let v=null;
   try{v=await (await fetch("versao.json?x="+Date.now(),{cache:"no-store"})).json()}catch(e){return}if(!v)return;
   if(v.site&&verMaior(v.site,APP_VERSAO)&&versaoAvisada!==v.site){versaoAvisada=v.site;avisoAtualizar(`Nova versão do Logic Academy (${v.site}) publicada.`,"Atualizar agora",()=>location.reload())}
+  else if(EH_APP&&!APP_PLAT&&/Android/.test(navigator.userAgent)&&v.android&&versaoAvisada!=="app-antigo"){versaoAvisada="app-antigo";   // app 1.0 (antes da ponte nova)
+    avisoAtualizar(`Nova versão do app (${v.android}) com widget, notificações e uso sem internet.`,"Baixar e instalar",()=>{location.href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy.apk"})}
   else if(APP_PLAT&&v[APP_PLAT]&&appVersao()&&verMaior(v[APP_PLAT],appVersao())&&versaoAvisada!=="app"+v[APP_PLAT]){versaoAvisada="app"+v[APP_PLAT];
     const url=APP_PLAT==="android"?"https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy.apk":"https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy-Instalador.exe";
     avisoAtualizar(`Nova versão do app (${v[APP_PLAT]}) disponível, com melhorias.`,"Baixar e instalar",()=>{if(window.logicApp&&window.logicApp.abrirLink)window.logicApp.abrirLink(url);else location.href=url})}}
-function avisoAtualizar(txt,botao,acao){let el=$("#aviso-versao");if(el)el.remove();el=document.createElement("div");el.id="aviso-versao";el.className="card aviso-versao";el.setAttribute("role","status");
+function avisoAtualizar(txt,botao,acao){let el=$("#aviso-versao");if(el)el.remove();el=document.createElement("div");el.id="aviso-versao";el.className="card aviso-versao"+(EH_APP?" no-alto":"");el.setAttribute("role","status");
   el.innerHTML=`<span>🔄 ${esc(txt)}</span><div class="row" style="gap:6px"><button class="btn sm primary" type="button" data-av="ok">${esc(botao)}</button><button class="btn sm ghost" type="button" data-av="x" aria-label="Depois">Depois</button></div>`;
   document.body.appendChild(el);el.addEventListener("click",e=>{const b=e.target.closest("[data-av]");if(!b)return;if(b.dataset.av==="ok"){if(LAComp&&LAComp.Simulados&&LAComp.Simulados.emProva&&LAComp.Simulados.emProva()&&!confirm("Atualizar agora vai sair do simulado. Continuar?"))return;acao()}el.remove()})}
-setTimeout(()=>verificarVersao().catch(()=>{}),20000);setInterval(()=>verificarVersao().catch(()=>{}),20*60000);
+setTimeout(()=>verificarVersao().catch(()=>{}),EH_APP?2500:20000);setInterval(()=>verificarVersao().catch(()=>{}),20*60000);
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")verificarVersao().catch(()=>{})});
 
 /* ================= Widget e notificações dos apps (funcionam com o app fechado) =================
