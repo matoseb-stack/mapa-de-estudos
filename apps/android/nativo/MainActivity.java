@@ -64,5 +64,17 @@ public class MainActivity extends BridgeActivity {
         public void agendar(String json) {
             Lembretes.agendar(MainActivity.this, json);
         }
+
+        @JavascriptInterface
+        public void notificar(String titulo, String texto) {
+            Lembretes.mostrar(MainActivity.this, titulo, texto);
+        }
+
+        @JavascriptInterface
+        public void permitirNotificacoes() {
+            if (Build.VERSION.SDK_INT >= 33 && checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                runOnUiThread(() -> requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 1));
+            }
+        }
     }
 }

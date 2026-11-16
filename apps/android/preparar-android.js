@@ -4,7 +4,7 @@ const fs = require("fs"), path = require("path");
 const APP = path.join(__dirname, "android", "app");
 const RAIZ = path.join(APP, "src", "main");
 const PACOTE = path.join(RAIZ, "java", "app", "logicacademy", "estudos");
-const VERSAO = require("./package.json").version;   // ex.: 1.1.0
+const VERSAO = (process.env.APP_VERSAO && /^\d+\.\d+$/.test(process.env.APP_VERSAO) ? process.env.APP_VERSAO + ".0" : process.env.APP_VERSAO) || require("./package.json").version;   // segue a versão do site (ex.: 3.27 → 3.27.0)
 
 // 1) código nativo
 fs.mkdirSync(PACOTE, { recursive: true });

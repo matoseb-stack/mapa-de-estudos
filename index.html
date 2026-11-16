@@ -1613,6 +1613,10 @@ const LOGO=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-wi
 
 /* ================= Estado ================= */
 const STANDALONE=!(window.claude&&window.claude.use);
+// app de Android com o site dentro: os arquivos vêm do próprio app; as imagens das provas e a versão nova vêm do site oficial
+const APP_LOCAL=/LogicAcademyApp/.test(navigator.userAgent)&&location.hostname==="localhost";
+const SITE_OFICIAL="https://logicacademy.web.app/";
+const IMG_BASE=APP_LOCAL?SITE_OFICIAL:"";
 const LINK_CLAUDE="https://claude.ai/artifact/C8W4hBGnukzP5zcs2aU3cp";
 const S={mode:null,uid:null,db:null,userCap:null,sample:null,caps:false,
   perfil:null,plano:null,edital:null,pomoLog:null,pub:null,
@@ -1681,7 +1685,7 @@ let FB=null;
 function carregarScript(src){return new Promise((ok,no)=>{const el=document.createElement("script");el.src=src;el.onload=ok;el.onerror=no;document.head.appendChild(el)})}
 async function iniciarFirebase(){
   const cfg=window.MAPA_FIREBASE_CONFIG;if(!cfg||!cfg.apiKey)return null;
-  const b="https://www.gstatic.com/firebasejs/10.12.2/";
+  const b=APP_LOCAL?"vendor/firebasejs/10.12.2/":"https://www.gstatic.com/firebasejs/10.12.2/";
   await carregarScript(b+"firebase-app-compat.js");await Promise.all([carregarScript(b+"firebase-auth-compat.js"),carregarScript(b+"firebase-firestore-compat.js")]);
   firebase.initializeApp(cfg);const auth=firebase.auth();auth.languageCode="pt-BR"; // e-mails do Firebase (redefinir senha) em português
   try{await auth.getRedirectResult()}catch(e){S.erroLogin=msgErroAuth(e)}
@@ -2455,7 +2459,7 @@ function pararAlarme(){
 function testarSom(){somPreparar();if(ALARME.tocando){pararAlarme();return}tocarSomAlarme();ALARME.tocando=true;clearTimeout(ALARME.fimAuto);ALARME.fimAuto=setTimeout(pararAlarme,3200);toast("Tocando o alarme por 3 segundos. Se não ouvir, aumente o volume de mídia.")}
 addEventListener("beforeunload",e=>{if(S.mode==="local"&&S.plano){e.preventDefault();e.returnValue=""}});
 let notifPedida=false;
-if(location.protocol==="https:"&&"serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
+if(!APP_LOCAL&&location.protocol==="https:"&&"serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
 function pedirNotificacao(){if(notifPedida||!("Notification" in window)||Notification.permission!=="default")return;notifPedida=true;try{Notification.requestPermission().catch(()=>{})}catch(e){}}
 function notificar(t,b){try{if(document.visibilityState==="visible"&&document.hasFocus())return;if(!("Notification" in window)||Notification.permission!=="granted")return;
   const o={body:b,tag:"pomodoro",renotify:true,requireInteraction:true,silent:false,vibrate:[500,250,500,250,500]};
@@ -2787,8 +2791,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.26";
+const APP_VERSAO="3.27";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"App de Android com o site dentro 📲",d:"O app agora traz o site inteiro, o banco de questões e os simulados dentro dele: abre rápido, funciona sem internet e usa a mesma conta e os mesmos dados da nuvem. Os lembretes e o widget são do próprio celular, e o app avisa no alto quando houver versão nova."},
   {t:"Apps com widget e notificações 📲",d:"No Android, o app ganhou um widget para a tela inicial (sequência e próximo bloco) e notificações que chegam mesmo com o app fechado. No Windows, um mini widget por cima das janelas e lembretes o dia todo. E o site e os apps avisam quando há uma versão nova para atualizar."},
   {t:"Sem internet, já entra logado 📴",d:"Sem internet, o Logic Academy abre direto na sua conta com os dados guardados no aparelho. Em Configurações › Usar sem internet dá para baixar o banco de questões, as imagens e os simulados."},
   {t:"Funciona sem internet 📴",d:"O site e seus dados ficam guardados no aparelho: dá para estudar sem internet e tudo sincroniza com a nuvem quando a conexão voltar. Nos apps, o banco de questões e as imagens são baixados aos poucos, só no Wi-Fi."},
@@ -3752,7 +3757,7 @@ function qbMd(s){
   let h=esc(s||"");
   h=h.replace(/!\[[^\]]*\]\((https:\/\/enem\.dev\/[^)\s]+)\)/g,(m,u)=>`<img src="${u}" alt="Figura da questão" loading="lazy">`);
   // EsPCEx, PISM e PAS: imagens da própria prova, guardadas no site (questoes/<prova>/...)
-  h=h.replace(/!\[([^\]]*)\]\((questoes\/(?:espcex|pism|pas)\/[0-9]{4}(?:-[0-9])?\/[0-9A-Za-z-]+\.webp)\)/g,(m,alt,u)=>`<img src="${u}" alt="${alt}" loading="lazy" class="qb-img-prova">`);
+  h=h.replace(/!\[([^\]]*)\]\((questoes\/(?:espcex|pism|pas|outras)\/[0-9A-Za-z_-]+(?:\/[0-9A-Za-z_-]+)*\.webp)\)/g,(m,alt,u)=>`<img src="${IMG_BASE}${u}" alt="${alt}" loading="lazy" class="qb-img-prova">`);
   h=h.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/(^|[\s(>])_([^_\n]+)_(?=[\s.,;:)!?<]|$)/g,"$1<i>$2</i>").replace(/(^|[\s(>])\*([^*\n]+)\*(?=[\s.,;:)!?<]|$)/g,"$1<i>$2</i>");
   return h.split(/\n{2,}/).map(p=>p.trim()?`<p>${p.replace(/ {2,}\n|\n/g,"<br>")}</p>`:"").join("")}
 function qbTopicosEdital(){if(!S.edital)return null;const set=new Set();S.edital.materias.forEach(m=>m.topicos.forEach(t=>set.add(qbNorm(t.t))));return set}
@@ -3959,7 +3964,7 @@ function qbLigar(lista){
   $$("[data-qalt]").forEach(b=>b.onclick=()=>{q.esc[x.id]=+b.dataset.qalt;q.mostrar=null;const y=scrollY;qbTela();scrollTo(0,y)});
   $$("[data-qcut]").forEach(b=>b.onclick=()=>{const c=q.corte[x.id]=q.corte[x.id]||{};c[b.dataset.qcut]=!c[b.dataset.qcut];const y=scrollY;qbTela();scrollTo(0,y)});
   const rb=$("#qb-resp");if(rb)rb.onclick=()=>{const y=scrollY;qbResponder(x);scrollTo(0,y)};
-  const og=$("#qb-orig");if(og)og.onclick=()=>qbZoom((x.oa?[x.oa]:[]).concat(x.o),`Questão ${x.n} da ${qbRotulo(x)}`);
+  const og=$("#qb-orig");if(og)og.onclick=()=>qbZoom((x.oa?[x.oa]:[]).concat(x.o).map(u=>/^https?:/.test(u)?u:IMG_BASE+u),`Questão ${x.n} da ${qbRotulo(x)}`);
   const ia=$("#qb-ia");if(ia)ia.onclick=()=>qbExplicarIA(x,(q.doc.r[x.id]||[])[0]);
   const co=$("#qb-corrigir");if(co)co.onclick=()=>{delete q.doc.r[x.id];delete q.esc[x.id];q.mostrar=null;q.corrigiu=null;qbSalvar();const y=scrollY;qbTela();scrollTo(0,y)};
   const rf=$("#qb-refazer");if(rf)rf.onclick=()=>{delete q.doc.r[x.id];q.esc[x.id]=null;delete q.esc[x.id];q.mostrar=null;qbSalvar();qbTela()};
@@ -5140,7 +5145,7 @@ function renderInicio(){
   const nome=(S.pub&&S.pub.nome)||p.nome;
   $("#main").innerHTML=`<div class="page">
     ${S.mode!=="nuvem"?`<div class="card flat aviso-visit"><span>${ico("user")}<b>Modo visitante:</b> nada fica salvo. Ao fechar ou recarregar o app, seu plano e seu progresso são apagados.</span><button class="btn sm primary" type="button" id="visit-conta">Criar conta e salvar</button></div>`:""}
-    ${"Notification" in window&&Notification.permission==="default"&&lembPref().ligado&&!lembPref().dispensado?`<div class="card lemb-cartao"><span class="lemb-ic">🔔</span><div style="flex:1;min-width:0"><b>Ligue os lembretes de estudo</b><div class="small muted">Avisamos do próximo bloco, da meta do dia e quando sua sequência estiver em risco.</div></div><div class="row" style="gap:6px"><button class="btn sm primary" type="button" id="lemb-ligar">Ligar</button><button class="btn sm ghost" type="button" id="lemb-agora-nao">Agora não</button></div></div>`:""}
+    ${!EH_APP&&"Notification" in window&&Notification.permission==="default"&&lembPref().ligado&&!lembPref().dispensado?`<div class="card lemb-cartao"><span class="lemb-ic">🔔</span><div style="flex:1;min-width:0"><b>Ligue os lembretes de estudo</b><div class="small muted">Avisamos do próximo bloco, da meta do dia e quando sua sequência estiver em risco.</div></div><div class="row" style="gap:6px"><button class="btn sm primary" type="button" id="lemb-ligar">Ligar</button><button class="btn sm ghost" type="button" id="lemb-agora-nao">Agora não</button></div></div>`:""}
     <section class="ini-hero2">
       <div class="ini-hero2-txt"><span class="eyebrow">${DIAS[hi].n}, ${new Date().toLocaleDateString("pt-BR",{day:"numeric",month:"long"})} · ${esc(descObjetivo(p))}</span>
         <h1>${saud}${nome?", "+esc(nome):""}</h1>
@@ -5344,7 +5349,7 @@ document.addEventListener("keydown",e=>{if(S.view!=="semana"||semanaModo()!=="di
 
 /* ================= Sem internet: site guardado, aviso e download aos poucos (apps) ================= */
 // manda para o serviço do aparelho a lista do que a página carregou (para abrir sem internet da próxima vez)
-function guardarSiteNoAparelho(){try{if(!("serviceWorker" in navigator)||location.protocol!=="https:")return;
+function guardarSiteNoAparelho(){try{if(APP_LOCAL||!("serviceWorker" in navigator)||location.protocol!=="https:")return;
   navigator.serviceWorker.ready.then(reg=>{const urls=[location.href.split(/[?#]/)[0]].concat(performance.getEntriesByType("resource").map(e=>e.name));
     (reg.active||navigator.serviceWorker.controller)&&(reg.active||navigator.serviceWorker.controller).postMessage({tipo:"guardarSite",urls})}).catch(()=>{})}catch(e){}}
 setTimeout(guardarSiteNoAparelho,8000);
@@ -5368,7 +5373,7 @@ async function baixarImagensAosPoucos(forcar){
   try{const lista=await imagensDoBanco();o.total=lista.length;if(o.i>=lista.length){o.feitas=lista.length;offSalvar(o);return}
     const cache=await caches.open("la-dados-v1");
     while(o.i<lista.length&&navigator.onLine&&(offEstado.forcar||(noWifi()&&offEstado().imagens))){const lote=lista.slice(o.i,o.i+25);
-      await Promise.all(lote.map(async u=>{try{const abs=new URL(u,location.href).href;if(await cache.match(abs))return;await fetch(abs,/enem\.dev/.test(abs)?{mode:"no-cors"}:{})}catch(e){}}));
+      await Promise.all(lote.map(async u=>{try{const abs=new URL(u,APP_LOCAL&&!/^https?:/.test(u)?SITE_OFICIAL:location.href).href;if(await cache.match(abs))return;await fetch(abs,/enem\.dev/.test(abs)?{mode:"no-cors"}:{})}catch(e){}}));
       o.i+=lote.length;o.feitas=o.i;offSalvar(o);const el=$("#cf-off-prog");if(el)el.textContent=`${o.feitas.toLocaleString("pt-BR")} de ${o.total.toLocaleString("pt-BR")} imagens no aparelho`;
       await new Promise(ok=>setTimeout(ok,offEstado.forcar?600:20000))}
     if(o.i>=lista.length&&offEstado.forcar)toast("Todas as imagens das questões estão no aparelho. 🎉")}
@@ -5383,7 +5388,9 @@ const verMaior=(a,b)=>{const x=String(a||"0").split(".").map(Number),y=String(b|
 let versaoAvisada="";
 async function verificarVersao(){
   if(!navigator.onLine||location.protocol!=="https:")return;let v=null;
-  try{v=await (await fetch("versao.json?x="+Date.now(),{cache:"no-store"})).json()}catch(e){return}if(!v)return;
+  try{v=await (await fetch((APP_LOCAL?SITE_OFICIAL:"")+"versao.json?x="+Date.now(),{cache:"no-store"})).json()}catch(e){return}if(!v)return;
+  if(APP_LOCAL){const nova=v.android||v.site;if(nova&&verMaior(nova,APP_VERSAO)&&versaoAvisada!=="local"+nova){versaoAvisada="local"+nova;
+    avisoAtualizar(`Nova versão do app (${nova}) disponível.`,"Baixar e instalar",()=>{location.href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy.apk"})}return}
   if(v.site&&verMaior(v.site,APP_VERSAO)&&versaoAvisada!==v.site){versaoAvisada=v.site;avisoAtualizar(`Nova versão do Logic Academy (${v.site}) publicada.`,"Atualizar agora",()=>location.reload())}
   else if(EH_APP&&!APP_PLAT&&/Android/.test(navigator.userAgent)&&v.android&&versaoAvisada!=="app-antigo"){versaoAvisada="app-antigo";   // app 1.0 (antes da ponte nova)
     avisoAtualizar(`Nova versão do app (${v.android}) com widget, notificações e uso sem internet.`,"Baixar e instalar",()=>{location.href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy.apk"})}
@@ -5489,6 +5496,7 @@ function lembIniciar(){
   setTimeout(()=>lembVerificar().catch(()=>{}),4000);
 }
 async function lembAtivar(){
+  if(window.LogicAndroid){const p=lembPref();p.ligado=true;lembSalvarPref(p);try{window.LogicAndroid.permitirNotificacoes&&window.LogicAndroid.permitirNotificacoes()}catch(e){}nativoUlt="";atualizarNativo();return true}
   if(!("Notification" in window)){toast("Este navegador não mostra notificações. No iPhone, adicione o site à Tela de Início (Compartilhar › Adicionar à Tela de Início) e abra por lá.");return false}
   let r=Notification.permission;if(r==="default"){try{r=await Notification.requestPermission()}catch(e){}}
   if(r!=="granted"){toast("As notificações estão bloqueadas. Libere nas configurações do navegador para receber os lembretes.");return false}
@@ -5496,7 +5504,8 @@ async function lembAtivar(){
   try{if("serviceWorker" in navigator&&location.protocol==="https:"&&!(await navigator.serviceWorker.getRegistration()))await navigator.serviceWorker.register("sw.js")}catch(e){}
   return true}
 async function lembTestar(){
-  if(!(await lembAtivar()))return;const b=blocosDeHoje().find(x=>!x.feito),seq=sequencia();
+  if(!(await lembAtivar()))return;
+  if(window.LogicAndroid&&window.LogicAndroid.notificar){const b=blocosDeHoje().find(x=>!x.feito),seq=sequencia();window.LogicAndroid.notificar("📚 Logic Academy",b?`Próximo bloco: ${b.materia} às ${b.inicio}.${seq?` Sequência: ${seq} 🔥`:""}`:"Assim chegam os seus lembretes de estudo.");toast("Lembrete de teste enviado.");return}const b=blocosDeHoje().find(x=>!x.feito),seq=sequencia();
   const o={body:b?`Próximo bloco: ${b.materia} às ${b.inicio}.${seq?` Sequência: ${seq} 🔥`:""}`:`Assim chegam os seus lembretes de estudo.${seq?` Sequência: ${seq} 🔥`:""}`,tag:"la-lembrete-teste",icon:"icones/icone-192.png",badge:"icones/icone-192.png",data:{url:"./?abrir=proximo"}};
   try{const r=navigator.serviceWorker&&await navigator.serviceWorker.getRegistration();if(r)await r.showNotification("📚 Logic Academy",o);else new Notification("📚 Logic Academy",o);toast("Lembrete de teste enviado.")}catch(e){toast("Não foi possível mostrar a notificação neste aparelho.")}}
 
@@ -6728,11 +6737,11 @@ function renderConfig(){
       ${EH_APP?"":`<div class="card stack sm"><div><h3>Aplicativos do Logic Academy</h3><p class="small muted">Com o app, a chamada e o compartilhamento de tela continuam mesmo com o app fechado, e o banco de questões fica guardado no aparelho. Eles abrem o site oficial, então ficam sempre atualizados.</p></div>
         <div class="row" style="gap:8px;flex-wrap:wrap"><a class="btn primary" href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy.apk" rel="noopener">🤖 Android (.apk)</a><a class="btn" href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy-Instalador.exe" rel="noopener">🪟 Windows (instalador)</a><a class="btn ghost" href="https://github.com/matoseb-stack/mapa-de-estudos/releases/download/apps/LogicAcademy-Portatil.exe" rel="noopener">Windows (sem instalar)</a></div>
         <details class="small muted"><summary>Como instalar</summary><p><b>Android:</b> baixe o arquivo, abra e toque em Instalar. Se pedir, permita “instalar apps desta fonte”. Para a chamada continuar com o app fora da tela, aceite o microfone e as notificações.</p><p><b>Windows:</b> rode o instalador. Se o Windows mostrar “O Windows protegeu o computador”, clique em “Mais informações” › “Executar assim mesmo” (o programa ainda não tem assinatura paga da Microsoft). Fechar a janela deixa o Logic Academy perto do relógio; para sair, clique com o botão direito no ícone › Sair.</p><p><b>iPhone:</b> use o site e adicione à Tela de Início (Compartilhar › Adicionar à Tela de Início).</p></details></div>`}
-      <div class="card stack sm"><div class="row" style="justify-content:space-between;align-items:flex-start"><div><h3>Usar sem internet</h3><p class="small muted">O site e seus dados ficam guardados neste aparelho e sincronizam com a nuvem quando há internet. Baixe abaixo o que você quer ter sem internet (funciona no Wi-Fi ou nos dados móveis).</p><p class="small" id="cf-off-prog">${(()=>{const o=offEstado();return o.total?`${o.feitas.toLocaleString("pt-BR")} de ${o.total.toLocaleString("pt-BR")} imagens no aparelho`:"Imagens das questões: ainda não baixadas."})()}</p></div>
+      <div class="card stack sm"><div class="row" style="justify-content:space-between;align-items:flex-start"><div><h3>Usar sem internet</h3><p class="small muted">${APP_LOCAL?"O app já traz o site, o banco de questões e os simulados; seus dados ficam no aparelho e sincronizam com a nuvem quando há internet. Baixe abaixo as imagens das questões para vê-las sem internet.":"O site e seus dados ficam guardados neste aparelho e sincronizam com a nuvem quando há internet. Baixe abaixo o que você quer ter sem internet (funciona no Wi-Fi ou nos dados móveis)."}</p><p class="small" id="cf-off-prog">${(()=>{const o=offEstado();return o.total?`${o.feitas.toLocaleString("pt-BR")} de ${o.total.toLocaleString("pt-BR")} imagens no aparelho`:"Imagens das questões: ainda não baixadas."})()}</p></div>
           ${EH_APP?`<label class="small row" style="gap:6px;white-space:nowrap"><input type="checkbox" class="tg" id="cf-off-img" ${offEstado().imagens?"checked":""}> Baixar sozinho no Wi-Fi</label>`:""}</div>
         <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="cf-off-banco">📥 Banco de questões (≈ 2,5 MB)</button><button class="btn sm" type="button" id="cf-off-imgs">🖼️ Imagens das questões (≈ 200 MB)</button><button class="btn sm" type="button" id="cf-off-sim">📝 Simulados</button></div></div>
       <div class="card stack sm"><div class="row" style="justify-content:space-between"><div><h3>Lembretes de estudo</h3><p class="small muted">Notificações do próximo bloco, da meta do dia, da sequência em risco e “mais um bloco?”. Também mostra no ícone do app quantos blocos faltam hoje. Funcionam com o site aberto ou em segundo plano.</p></div>
-          <input type="checkbox" class="tg" id="cf-lemb" ${lembPref().ligado&&"Notification" in window&&Notification.permission==="granted"?"checked":""} aria-label="Lembretes de estudo"></div>
+          <input type="checkbox" class="tg" id="cf-lemb" ${lembPref().ligado&&(window.LogicAndroid||("Notification" in window&&Notification.permission==="granted"))?"checked":""} aria-label="Lembretes de estudo"></div>
         <div class="row" style="gap:10px;flex-wrap:wrap;align-items:center"><span class="small muted">Sem lembretes das</span><input type="time" id="cf-sil-ini" value="${esc(lembPref().silIni)}" style="width:auto"><span class="small muted">às</span><input type="time" id="cf-sil-fim" value="${esc(lembPref().silFim)}" style="width:auto"><button class="btn sm ghost" type="button" id="cf-lemb-teste">${ico("send")}Testar</button></div></div>
       <div class="card row" style="justify-content:space-between"><div><h3>Meta diária de estudo</h3><p class="small muted">Aparece no início como um anel de progresso. Hoje: ${fmtH(metaHoje())}.</p></div>
         <select id="cf-meta" style="width:auto">${[[0,"Automática (pelo plano)"],[30,"30 min"],[60,"1 hora"],[90,"1h30"],[120,"2 horas"],[180,"3 horas"],[240,"4 horas"],[300,"5 horas"],[360,"6 horas"],[480,"8 horas"],[600,"10 horas"],[720,"12 horas"],[840,"14 horas"],[960,"16 horas"],[1080,"18 horas"],[1200,"20 horas"]].map(([v,n])=>`<option value="${v}" ${(+S.perfil.metaDia||0)===v?"selected":""}>${n}</option>`).join("")}</select></div>
@@ -6745,7 +6754,7 @@ function renderConfig(){
     </div></div>`;
   $$("[data-link]").forEach(a=>a.onclick=()=>go(a.dataset.link));
   $("#cf-crono").onclick=()=>go("cronometro");
-  $("#cf-lemb").onchange=async e=>{if(e.target.checked){if(!(await lembAtivar())){e.target.checked=false;return}toast("Lembretes ligados! 🔔")}else{const p=lembPref();p.ligado=false;lembSalvarPref(p);toast("Lembretes desligados.")}};
+  $("#cf-lemb").onchange=async e=>{if(e.target.checked){if(!(await lembAtivar())){e.target.checked=false;return}toast("Lembretes ligados! 🔔")}else{const p=lembPref();p.ligado=false;lembSalvarPref(p);nativoUlt="";atualizarNativo();toast("Lembretes desligados.")}};
   $("#cf-sil-ini").onchange=e=>{const p=lembPref();p.silIni=e.target.value||"22:30";lembSalvarPref(p)};$("#cf-sil-fim").onchange=e=>{const p=lembPref();p.silFim=e.target.value||"07:00";lembSalvarPref(p)};
   $("#cf-lemb-teste").onclick=lembTestar;
   const oi=$("#cf-off-img");if(oi)oi.onchange=()=>{const o=offEstado();o.imagens=oi.checked;offSalvar(o);if(o.imagens)baixarImagensAosPoucos().catch(()=>{});toast(o.imagens?"As imagens serão baixadas no Wi-Fi.":"Download de imagens pausado.")};

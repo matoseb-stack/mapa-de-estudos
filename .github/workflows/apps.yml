@@ -5,11 +5,13 @@
 # Os apps abrem o site oficial, então tudo o que muda no site aparece neles sem reinstalar.
 name: Aplicativos (Android e Windows)
 
+# O app de Android traz o site dentro dele, então é montado de novo a cada versão do site:
+#  - ramo main (site de testes)  → app de testes:  releases/download/apps-teste/LogicAcademy.apk
+#  - ramo producao (site oficial) → app oficial:    releases/download/apps/LogicAcademy.apk
 on:
   workflow_dispatch:
   push:
     branches: [main, producao]
-    paths: ["apps/**", ".github/workflows/apps.yml", "icones-oficial/**"]
 
 permissions:
   contents: write
@@ -35,6 +37,19 @@ jobs:
         with:
           path: ~/.android/debug.keystore
           key: android-assinatura-v1
+      - name: Colocar o site dentro do app (sem as imagens das provas, que vêm do site oficial)
+        run: |
+          W=apps/android/www
+          rm -rf "$W" && mkdir -p "$W/questoes" "$W/vendor/firebasejs/10.12.2"
+          cp index.html firebase-config.js manifest.webmanifest versao.json "$W/"
+          cp -r js css icones idiomas sons midia simulados "$W/"
+          cp icones-oficial/*.png "$W/icones/"
+          cp questoes/*.json "$W/questoes/"
+          for f in firebase-app-compat.js firebase-auth-compat.js firebase-firestore-compat.js; do
+            curl -sSfL -o "$W/vendor/firebasejs/10.12.2/$f" "https://www.gstatic.com/firebasejs/10.12.2/$f"
+          done
+          du -sh "$W"
+          echo "APP_VERSAO=$(grep -o 'APP_VERSAO="[0-9.]*"' index.html | head -1 | cut -d'"' -f2)" >> "$GITHUB_ENV"
       - name: Montar o projeto Android
         working-directory: apps/android
         run: |
@@ -88,9 +103,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
+          TAG: ${{ github.ref_name == 'producao' && 'apps' || 'apps-teste' }}
         run: |
           ls -la saida
-          gh release delete apps --repo "$REPO" --yes --cleanup-tag || true
-          gh release create apps --repo "$REPO" --target "${{ github.sha }}" --title "Aplicativos do Logic Academy" \
-            --notes "Android: baixe LogicAcademy.apk e instale (permita instalar apps desta fonte). Windows: LogicAcademy-Instalador.exe (instala) ou LogicAcademy-Portatil.exe (abre sem instalar). Os apps abrem o site oficial, então ficam sempre atualizados." \
+          if [ "$TAG" = "apps" ]; then T="Aplicativos do Logic Academy"; X=""; else T="Aplicativos do Logic Academy (versão de testes)"; X="--prerelease"; fi
+          gh release delete "$TAG" --repo "$REPO" --yes --cleanup-tag || true
+          gh release create "$TAG" --repo "$REPO" --target "${{ github.sha }}" --title "$T" $X \
+            --notes "Android: baixe LogicAcademy.apk e instale (permita instalar apps desta fonte); o app traz o site dentro, funciona sem internet e usa a mesma conta. Windows: LogicAcademy-Instalador.exe (instala) ou LogicAcademy-Portatil.exe (abre sem instalar)." \
             saida/*

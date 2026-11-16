@@ -62,13 +62,16 @@ public class Lembretes extends BroadcastReceiver {
             return;
         }
         if (!acao.startsWith("app.logicacademy.estudos.LEMBRETE_")) return;
+        mostrar(c, it.getStringExtra("titulo"), it.getStringExtra("texto"));
+    }
+
+    static void mostrar(Context c, String titulo, String texto) {
         NotificationManager nm = (NotificationManager) c.getSystemService(Context.NOTIFICATION_SERVICE);
         if (nm == null) return;
         if (Build.VERSION.SDK_INT >= 26) nm.createNotificationChannel(new NotificationChannel(CANAL, "Lembretes de estudo", NotificationManager.IMPORTANCE_DEFAULT));
         Intent abrir = new Intent(c, MainActivity.class);
         abrir.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent pa = PendingIntent.getActivity(c, 7, abrir, PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
-        String titulo = it.getStringExtra("titulo"), texto = it.getStringExtra("texto");
         Notification n = new NotificationCompat.Builder(c, CANAL)
                 .setSmallIcon(c.getApplicationInfo().icon)
                 .setContentTitle(titulo == null ? "Logic Academy" : titulo)
