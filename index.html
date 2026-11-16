@@ -1117,7 +1117,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=4.9">
+<link rel="stylesheet" href="css/componentes.css?v=5.1">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -1129,7 +1129,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
 <script src="js/componentes/Simulados.js?v=1.2"></script>
 <script src="js/componentes/Missoes.js?v=1.0"></script>
-<script src="js/componentes/Biblioteca.js?v=1.0"></script>
+<script src="js/componentes/Biblioteca.js?v=1.2"></script>
 <script src="js/componentes/Estante.js?v=3.9"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
@@ -2808,8 +2808,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.32";
+const APP_VERSAO="3.33";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Biblioteca com 13 livros e sumário inteligente 📚",d:"Os livros didáticos públicos do Paraná para o ensino médio, um por matéria: Matemática, Português e Literatura, Física, Química, Biologia, História, Geografia, Filosofia, Sociologia, Espanhol, Inglês, Arte e Educação Física. Cada capítulo ganhou o nome do assunto que ensina e os subtópicos principais; toque e o livro abre direto na página. A busca também acha assuntos de dentro dos livros."},
   {t:"Missões e Biblioteca 🎯📚",d:"Nova aba Missões com a Missão PISM 1: foto da UFJF, música tema, raio-x do que mais e do que menos cai (geral e por matéria), provas antigas de 2009 a 2026 e um banco só com as 738 questões do Módulo I, em ordem do que mais cai. Nova aba Biblioteca com prateleiras por matéria para os e-books. O banco também ganhou as provas de 2009 e 2012."},
   {t:"PISM 1 desde 2010 no banco 📚",d:"Entraram 298 questões do PISM Módulo I das provas de 2010, 2011, 2013, 2014, 2015, 2022, 2024 e do 1º dia de 2026, com gabarito oficial da UFJF, o texto de apoio junto e o assunto de cada uma. Filtre por prova PISM e escolha o ano."},
   {t:"App se atualiza sozinho 🔄",d:"No Android, “Atualizar agora” baixa e instala a versão nova por cima, dentro do próprio app: sem abrir o navegador e sem deixar arquivo no aparelho. O app de testes virou um app separado (Logic Academy (testes)), para nunca atrapalhar a atualização do oficial."},
@@ -5062,7 +5063,7 @@ function renderSideUser(){
   el.innerHTML=`${S.mode==="nuvem"?avatar(S.uid):`<span class="avatar" aria-hidden="true">${esc(nm[0]||"V").toUpperCase()}</span>`}<div style="min-width:0"><div class="nm">${esc(nm)}${PRO_LIGADO&&S.mode==="nuvem"&&ehPro()?' <span class="pro-tag">PRO</span>':""}</div><div class="sub" title="${esc(contaEmail())}">${S.mode==="nuvem"&&ehAdmin()?"🛡 Administrador":S.mode==="nuvem"?(esc(contaEmail())||"Salvo na nuvem"):"Visitante · nada é salvo"}</div></div>`;
 }
 function progEdital(){if(!S.edital)return 0;const all=S.edital.materias.flatMap(m=>m.topicos);return all.length?Math.round(all.filter(t=>t.feito).length/all.length*100):0}
-function go(v){if(S.view==="simulados"&&v!=="simulados"&&window.LAComp&&LAComp.Simulados&&!LAComp.Simulados.sairPermitido())return;if(v==="pro"&&!PRO_LIGADO)v="inicio";if(v==="compartilhadas"){v="estante";if(window.LAComp&&LAComp.Estante&&LAComp.Estante.verComp)LAComp.Estante.verComp()}if(S.view==="missoes"&&v!=="missoes"&&window.LAComp&&LAComp.Missoes)LAComp.Missoes.parar();pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();if((S.view==="estante"||S.view==="compartilhadas")&&v!==S.view&&window.LAComp&&LAComp.Estante)LAComp.Estante.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
+function go(v){if(S.view==="simulados"&&v!=="simulados"&&window.LAComp&&LAComp.Simulados&&!LAComp.Simulados.sairPermitido())return;if(v==="pro"&&!PRO_LIGADO)v="inicio";if(v==="compartilhadas"){v="estante";if(window.LAComp&&LAComp.Estante&&LAComp.Estante.verComp)LAComp.Estante.verComp()}if(S.view==="missoes"&&v!=="missoes"&&window.LAComp&&LAComp.Missoes)LAComp.Missoes.parar();if(S.view==="biblioteca"&&v!=="biblioteca"&&window.LAComp&&LAComp.Biblioteca&&LAComp.Biblioteca.sair)LAComp.Biblioteca.sair();pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();if((S.view==="estante"||S.view==="compartilhadas")&&v!==S.view&&window.LAComp&&LAComp.Estante)LAComp.Estante.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
 function renderView(){
   $$("[data-go]").forEach(a=>{a.classList.toggle("on",a.dataset.go===S.view);if(a.dataset.go===S.view){const g=a.closest(".nav-grp.fech");if(g){g.classList.remove("fech");g.querySelectorAll("a").forEach(x=>x.removeAttribute("tabindex"));const b=g.previousElementSibling;if(b)b.setAttribute("aria-expanded","true")}}if(a.dataset.go==="topicos"){a.hidden=!S.edital;const b=a.querySelector(".badge");if(S.edital){if(b)b.textContent=progEdital()+"%";else a.insertAdjacentHTML("beforeend",`<span class="badge">${progEdital()}%</span>`)}}});
   if(SO_CONVERSA&&TELAS_SOCIAIS.has(S.view)){S.view=S.view==="amigos"?"mensagens":"inicio";try{history.replaceState(history.state,"","#"+S.view)}catch(e){}renderView();return}
