@@ -2759,9 +2759,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.21";
+const APP_VERSAO="3.22";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
-  {t:"Banco de questões mais rápido ⚡",d:"As questões e as imagens ficam guardadas no aparelho depois da primeira visita, então o banco abre bem mais rápido. E o botão “Abrir caderno” agora leva direto às suas questões, com um botão para voltar ao banco."},
+  {t:"Banco de questões mais rápido ⚡",d:"Agora o banco só baixa as questões do que você escolher (área, matéria, tópico ou prova), e elas ficam guardadas no aparelho, então tudo abre bem mais rápido. E o botão “Abrir caderno” agora leva direto às suas questões, com um botão para voltar ao banco."},
   {t:"Lembretes de estudo 🔔",d:"Agora o Logic Academy avisa do próximo bloco, quando um bloco atrasa, quanto falta para a meta, quando sua sequência está em risco e sugere “mais um bloco?”. O ícone do app mostra quantos blocos faltam hoje, e segurando o ícone aparecem atalhos para o pomodoro, a semana e mais. Ajuste em Configurações."},
   {t:"Questões sem enunciado ganham um ✏️",d:"Se a foto tem só uma conta, equação ou reação, a IA escreve um enunciado simples (“Fatore:”, “Resolva:”, “Quanto é:”, “Complete a reação:”), resolve para achar o gabarito e coloca a questão no assunto certo do banco."},
   {t:"Importar por foto ficou melhor 📷",d:"A IA recorta cada questão da foto e a imagem fica na própria questão (o texto é digitado quando é simples). Questão sem alternativas vira múltipla escolha: a IA resolve e cria a resposta certa entre outras erradas. E ela descobre a matéria e o assunto mesmo quando não há enunciado."},
@@ -3687,11 +3687,30 @@ async function qbDoc(){const q=qbEstado();if(q.doc)return q.doc;let d=null;try{d
 const qbPendente=(doc,id)=>!!(doc&&doc.e&&doc.e[id]&&!doc.e[id].c);
 const qbCorrigida=(doc,id)=>!!(doc&&doc.e&&doc.e[id]&&doc.e[id].c);
 function qbSalvar(){const {m,...resto}=qbEstado().doc;gravar("questoes",resto)}
-async function qbCarregar(area){const q=qbEstado();if(q.dados[area])return q.dados[area];
+const QB_PROVAS_ARQ=["enem","espcex","pism","pas","outras"];
+// baixa só os arquivos pedidos (prova + área) e guarda cada um; q.dados[area] junta os que já chegaram
+async function qbCarregar(area,provas){const q=qbEstado();q.arq=q.arq||{};
   const pega=u=>fetch(u).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()});
-  if(!q.carregando[area])q.carregando[area]=Promise.all([pega("questoes/enem-"+area+".json")].concat(["espcex","pism","pas","outras"].map(p=>pega("questoes/"+p+"-"+area+".json").catch(()=>[]))))
-    .then(ls=>{const l=[].concat(...ls);l.forEach(x=>x.area=area);q.dados[area]=l;return l}).catch(e=>{delete q.carregando[area];throw e});
-  return q.carregando[area]}
+  await Promise.all((provas||QB_PROVAS_ARQ).map(pv=>{const k=pv+"-"+area;if(q.arq[k])return q.arq[k];
+    if(!q.carregando[k])q.carregando[k]=pega("questoes/"+k+".json").catch(e=>{if(pv==="enem")throw e;return []})
+      .then(l=>{l.forEach(x=>x.area=area);q.arq[k]=l;return l}).catch(e=>{delete q.carregando[k];throw e});
+    return q.carregando[k]}));
+  q.dados[area]=QB_PROVAS_ARQ.flatMap(pv=>q.arq[pv+"-"+area]||[]);return q.dados[area]}
+// o que a tela precisa baixar para os filtros escolhidos (nada, se nenhum filtro foi escolhido)
+const qbSoLocal=pv=>pv==="minhas"||pv==="comunidade";
+function qbEscolheu(f){return !!(f.area||f.m||f.t||f.prova||f.busca||f.ano||f.sit||f.edital||f.nivel||qbEstado().tudo)}
+function qbNecessario(f){
+  if(!qbEscolheu(f)||qbSoLocal(f.prova))return [];
+  let areas=QB_AREAS.map(a=>a[0]);
+  if(f.area)areas=[f.area];else if(f.m)areas=[qbAreaDaMat(f.m)];
+  else if(f.t){const o=Object.entries(qbIndiceDe(f.prova).areas).find(([a,x])=>x.topicos.some(t=>t[1]===f.t));if(o)areas=[o[0]]}
+  let provas=f.prova?[f.prova]:QB_PROVAS_ARQ;
+  // tópico escolhido: só as provas que têm questões dele
+  if(f.t&&!f.prova){const tem=QB_PROVAS_ARQ.filter(pv=>QB_IDX[pv]&&areas.some(a=>((QB_IDX[pv].areas[a]||{}).topicos||[]).some(t=>t[1]===f.t)));if(tem.length)provas=tem}
+  return areas.flatMap(a=>provas.map(pv=>[a,pv]))}
+const qbFalta=f=>{const q=qbEstado();q.arq=q.arq||{};return qbNecessario(f).some(([a,pv])=>!q.arq[pv+"-"+a])};
+// atualiza a tela: baixa antes se faltar algum arquivo
+function qbAtualizar(){return qbFalta(qbEstado().f)?renderQuestoes():(qbTela(),Promise.resolve())}
 const qbImgFalhou=img=>{const d=document.createElement("div");d.className="qb-img-falha small muted";d.textContent="Não foi possível carregar a figura desta questão. Verifique a conexão e abra a questão de novo.";img.replaceWith(d)};
 document.addEventListener("error",e=>{const t=e.target;if(t&&t.tagName==="IMG"&&t.closest(".qb-det"))qbImgFalhou(t)},true);
 const qbNorm=s=>String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
@@ -3750,7 +3769,7 @@ async function qbAlimentarBanco(id,foto){
     o.pub=ref.id;o.pubN=n;await qbMinhaGravar(id,o,null);if(q.com)q.com.unshift({id:ref.id,autor:S.uid,n,m:o.m,t:o.t,c:o.c,tb:o.tb,a:o.a,r:o.r,ce:!!o.ce,ia:!!o.ia,ac:!!o.ac,ec:!!o.ec,foto:!!(foto&&o.foto)});return {novo:n}}
   catch(e){console.warn("alimentar banco",e&&e.code);return null}}
 function qbLista(){
-  const q=qbEstado(),f=q.f,doc=q.doc||{r:{},s:{},e:{}};
+  const q=qbEstado(),f=q.f,doc=q.doc||{r:{},s:{},e:{}};if(!qbEscolheu(f))return [];
   const areas=f.area?[f.area]:QB_AREAS.map(a=>a[0]);let l=qbMinhas().concat(qbComunidade()).filter(x=>!f.area||x.area===f.area);areas.forEach(a=>{if(q.dados[a])l=l.concat(q.dados[a])});
   const ed=f.edital?qbTopicosEdital():null,b=qbNorm(f.busca).trim();
   return l.filter(x=>(!f.prova||qbProva(x)===f.prova)&&(!f.nivel||x.d===f.nivel)&&(!f.m||x.m===f.m)&&(!f.t||x.t===f.t)&&(!f.ano||x.ano===+f.ano)&&(!ed||ed.has(qbNorm(x.t)))
@@ -3764,8 +3783,9 @@ async function renderQuestoes(){
   $("#main").innerHTML=`<div class="page qb-page">${pageHead("Banco de questões",`${QB_TOTAL.toLocaleString("pt-BR")} questões: ENEM (2009–2023), EsPCEx (2009–2025), PISM da UFJF, PAS da UnB e outras provas de concursos, todas com gabarito.`)}
     <div class="card qb-load row muted"><span class="spinner"></span>Carregando questões…</div></div>`;
   await qbDoc();
-  const areas=q.f.area?[q.f.area]:QB_AREAS.map(a=>a[0]);
-  try{await Promise.all(areas.map(qbCarregar).concat([qbComunidadeCarregar().catch(()=>{})]))}
+  const pares=qbNecessario(q.f),porArea={};pares.forEach(([a,pv])=>(porArea[a]=porArea[a]||[]).push(pv));
+  if(!pares.length&&!qbSoLocal(q.f.prova)){if(S.view==="questoes")qbTela();qbComunidadeCarregar().catch(()=>{});return}
+  try{await Promise.all(Object.entries(porArea).map(([a,pvs])=>qbCarregar(a,pvs)).concat([qbComunidadeCarregar().catch(()=>{})]))}
   catch(e){if(S.view!=="questoes")return;$(".qb-load").outerHTML=`<div class="card stack" style="align-items:flex-start"><b>Não foi possível carregar as questões.</b><p class="small muted">Verifique sua conexão e tente de novo.</p><button class="btn" type="button" id="qb-tentar">Tentar de novo</button></div>`;$("#qb-tentar").onclick=renderQuestoes;return}
   if(S.view!=="questoes")return;
   qbTela();
@@ -3814,6 +3834,9 @@ function qbTela(){
           ${qbSeloResolvida(r)}${doc.s[x.id]?`<span class="qb-st">${ico("bookmark")}</span>`:""}</div>
           <div class="small qb-top">${esc(x.t)}</div><div class="small muted qb-res">${esc(qbResumoTexto(x))}</div></button>`}).join("")
           +(lista.length>q.lim?`<button class="btn" type="button" id="qb-mais" style="width:100%">Mostrar mais ${Math.min(QB_POR_PAGINA,lista.length-q.lim)}</button>`:"")
+          :!qbEscolheu(f)?`<div class="card stack qb-escolha" style="text-align:center;align-items:center;padding:28px 16px">${ico("qbank")}<b>Escolha o que você quer estudar</b><span class="small muted">Toque numa área, escolha a matéria ou o tópico acima. Só as questões escolhidas são baixadas, então tudo abre mais rápido.</span>
+            <div class="sugs" style="justify-content:center">${QB_AREAS.map(([k,n])=>`<button class="sug" type="button" data-qarea="${k}">${n}</button>`).join("")}</div>
+            <button class="btn ghost sm" type="button" id="qb-tudo">Ver todas as questões (baixa tudo)</button></div>`
           :`<div class="card stack" style="text-align:center;align-items:center;padding:32px 16px">${ico("search")}<b>Nenhuma questão com esses filtros</b><span class="small muted">Tente outro tópico, ano ou limpe os filtros.</span></div>`}
       </section>
       <section class="qb-det-wrap" id="qb-det" aria-live="polite">${q.sel?qbDetalhe(lista.find(x=>x.id===q.sel),lista):`<div class="card qb-vazio stack">${ico("qbank")}<b>Escolha uma questão</b><span class="small muted">Use os filtros para achar questões de um tópico e toque em uma delas para resolver. Atalhos: A–E para marcar, Enter para responder, → para a próxima.</span></div>`}</section>
@@ -3878,22 +3901,24 @@ function qbRegistrar(x,k){const q=qbEstado(),ok=k===x.r;
   qbAtualizarSelosMsgs();return ok}
 function qbLigar(lista){
   const q=qbEstado(),f=q.f;
-  let tb;const bi=$("#qb-busca");bi.oninput=()=>{clearTimeout(tb);tb=setTimeout(()=>{f.busca=bi.value;q.lim=QB_POR_PAGINA;const pos=bi.selectionStart;qbTela();const n=$("#qb-busca");n.focus();try{n.setSelectionRange(pos,pos)}catch(e){}},250)};
+  let tb;const bi=$("#qb-busca");bi.oninput=()=>{clearTimeout(tb);tb=setTimeout(()=>{f.busca=bi.value;q.lim=QB_POR_PAGINA;const pos=bi.selectionStart;qbAtualizar().then(()=>{const n=$("#qb-busca");if(!n)return;n.focus();try{n.setSelectionRange(pos,pos)}catch(e){}})},350)};
   $$("[data-qarea]").forEach(b=>b.onclick=()=>{f.area=b.dataset.qarea;if(f.m&&f.area&&!QB_AREA_MAT[f.area].includes(f.m)){f.m="";f.t=""}q.lim=QB_POR_PAGINA;q.sel=null;renderQuestoes()});
   $("#qb-m").onchange=e=>{f.m=e.target.value;f.t="";q.lim=QB_POR_PAGINA;if(f.m&&!f.area){const a=Object.keys(QB_AREA_MAT).find(k=>QB_AREA_MAT[k].includes(f.m));f.area=a}renderQuestoes()};
   $("#qb-t").onchange=e=>{f.t=e.target.value;if(f.t&&!f.m){const o=Object.entries(qbIndiceDe(f.prova).areas).flatMap(([a,x])=>x.topicos.map(t=>[a,...t])).find(t=>t[2]===f.t);if(o&&o[2]!=="Outros temas"){f.m=o[1];f.area=o[0]}}q.lim=QB_POR_PAGINA;renderQuestoes()};
-  $("#qb-prova").onchange=e=>{f.prova=e.target.value;if(f.prova==="enem"&&+f.ano>2023)f.ano="";if(f.t&&!qbIndiceDe(f.prova).areas[f.area||"matematica"])f.t="";q.lim=QB_POR_PAGINA;q.sel=null;qbTela()};
-  $("#qb-ano").onchange=e=>{f.ano=e.target.value;q.lim=QB_POR_PAGINA;qbTela()};
+  $("#qb-prova").onchange=e=>{f.prova=e.target.value;if(f.prova==="enem"&&+f.ano>2023)f.ano="";if(f.t&&!qbIndiceDe(f.prova).areas[f.area||"matematica"])f.t="";q.lim=QB_POR_PAGINA;q.sel=null;qbAtualizar()};
+  $("#qb-ano").onchange=e=>{f.ano=e.target.value;q.lim=QB_POR_PAGINA;qbAtualizar()};
+  const td=$("#qb-tudo");if(td)td.onclick=()=>{q.tudo=true;q.lim=QB_POR_PAGINA;renderQuestoes()};
   const ci=$("#qb-cad-ir");if(ci)ci.onclick=abrirCadernoErros;
   const im=$("#qb-importar");if(im)im.onclick=qbImportarModal;
   const irLista=()=>{const l=$(".qb-no-cad")||$(".qb-lista");if(l)scrollTo({top:Math.max(0,l.getBoundingClientRect().top+scrollY-80),behavior:"smooth"})};
   const mc=$("#qb-meu-cad");if(mc)mc.onclick=()=>{const abrir=f.prova!=="minhas";Object.assign(f,{prova:abrir?"minhas":"",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0});q.sel=null;q.lim=QB_POR_PAGINA;qbTela();if(abrir)setTimeout(irLista,60)};
   const sc=$("#qb-sair-cad");if(sc)sc.onclick=()=>{f.prova="";q.sel=null;q.lim=QB_POR_PAGINA;qbTela()};
   const cc=$("#qb-cad-corr");if(cc)cc.onclick=()=>{Object.assign(f,{sit:"corrigidas"});q.sel=null;q.lim=QB_POR_PAGINA;renderQuestoes()};
-  $("#qb-sit").onchange=e=>{f.sit=e.target.value;q.lim=QB_POR_PAGINA;qbTela()};
-  const ed=$("#qb-ed");if(ed)ed.onchange=()=>{f.edital=ed.checked;q.lim=QB_POR_PAGINA;qbTela()};
-  const lp=$("#qb-limpar");if(lp)lp.onclick=()=>{Object.assign(f,{prova:"",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0});q.lim=QB_POR_PAGINA;renderQuestoes()};
-  $$("[data-qnivel]").forEach(b=>b.onclick=()=>{f.nivel=+b.dataset.qnivel;q.lim=QB_POR_PAGINA;qbTela()});
+  $$(".qb-escolha [data-qarea]").forEach(b=>b.onclick=()=>{f.area=b.dataset.qarea;q.lim=QB_POR_PAGINA;q.sel=null;renderQuestoes()});
+  $("#qb-sit").onchange=e=>{f.sit=e.target.value;q.lim=QB_POR_PAGINA;qbAtualizar()};
+  const ed=$("#qb-ed");if(ed)ed.onchange=()=>{f.edital=ed.checked;q.lim=QB_POR_PAGINA;qbAtualizar()};
+  const lp=$("#qb-limpar");if(lp)lp.onclick=()=>{Object.assign(f,{prova:"",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0});q.tudo=false;q.lim=QB_POR_PAGINA;renderQuestoes()};
+  $$("[data-qnivel]").forEach(b=>b.onclick=()=>{f.nivel=+b.dataset.qnivel;q.lim=QB_POR_PAGINA;qbAtualizar()});
   const mais=$("#qb-mais");if(mais)mais.onclick=()=>{q.lim+=QB_POR_PAGINA;const y=scrollY;qbTela();scrollTo(0,y)};
   $$("[data-qsel]").forEach(b=>b.onclick=()=>qbAbrir(b.dataset.qsel));
   const x=lista.find(y=>y.id===q.sel);if(!x)return;const i=lista.indexOf(x);
