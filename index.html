@@ -1129,7 +1129,7 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
 <script src="js/componentes/Simulados.js?v=1.2"></script>
 <script src="js/componentes/Missoes.js?v=1.0"></script>
-<script src="js/componentes/Biblioteca.js?v=1.2"></script>
+<script src="js/componentes/Biblioteca.js?v=1.3"></script>
 <script src="js/componentes/Estante.js?v=3.9"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
@@ -2643,7 +2643,7 @@ const appSim={esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,
 const appMissao={base:IMG_BASE,esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),
   irBanco:f=>{const q=qbEstado();Object.assign(q.f,{prova:"",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0,mo:""},f);if(f.m)q.f.area={mat:"matematica",fis:"natureza",qui:"natureza",bio:"natureza",his:"humanas",geo:"humanas",por:"linguagens",lit:"linguagens"}[f.m]||"";q.tudo=!f.m&&!f.t&&!f.ano;q.sel=null;q.lim=QB_POR_PAGINA;go("questoes")}};
 function renderMissoes(){if(!window.LAComp||!LAComp.Missoes){$("#main").innerHTML=`<div class="page">${pageHead("Missões")}<div class="card"><p>Não foi possível carregar. Atualize a página.</p></div></div>`;return}LAComp.Missoes.render($("#main"),appMissao)}
-function renderBiblioteca(){if(!window.LAComp||!LAComp.Biblioteca){$("#main").innerHTML=`<div class="page">${pageHead("Biblioteca")}<div class="card"><p>Não foi possível carregar. Atualize a página.</p></div></div>`;return}LAComp.Biblioteca.render($("#main"),{base:IMG_BASE,ico:(n,c)=>ico(n,c),esc:x=>esc(x),pageHead:(t,sub,ac)=>pageHead(t,sub,ac)})}
+function renderBiblioteca(){if(!window.LAComp||!LAComp.Biblioteca){$("#main").innerHTML=`<div class="page">${pageHead("Biblioteca")}<div class="card"><p>Não foi possível carregar. Atualize a página.</p></div></div>`;return}LAComp.Biblioteca.render($("#main"),{base:IMG_BASE,app:EH_APP,abrirFora:u=>abrirFora(u),ico:(n,c)=>ico(n,c),esc:x=>esc(x),pageHead:(t,sub,ac)=>pageHead(t,sub,ac)})}
 function renderSimulados(){
   if(!window.LAComp||!LAComp.Simulados){$("#main").innerHTML=`<div class="page">${pageHead("Simulados")}<div class="card"><p>Não foi possível carregar os simulados. Atualize a página.</p></div></div>`;return}
   appSim.iaJson=iaEditalDisponivel()?(p=>iaJson(p,{tempo:60000,seguir:true})):null;LAComp.Simulados.render($("#main"),appSim);
@@ -2808,8 +2808,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.34";
+const APP_VERSAO="3.35";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Livros da Biblioteca nos apps 📖",d:"No app de Android e no programa de Windows, os livros da Biblioteca abrem no navegador do aparelho (com sua permissão), já na página do assunto que você tocou."},
   {t:"Atualização do app mais segura 🔄",d:"Antes de instalar, o app confere se a versão nova pode entrar por cima. Se não puder (app instalado de um arquivo antigo), ele já deixa o app novo na pasta Downloads e guia a troca com um botão para desinstalar o antigo. Em Configurações aparece qual versão do app você tem."},
   {t:"Biblioteca com 13 livros e sumário inteligente 📚",d:"Os livros didáticos públicos do Paraná para o ensino médio, um por matéria: Matemática, Português e Literatura, Física, Química, Biologia, História, Geografia, Filosofia, Sociologia, Espanhol, Inglês, Arte e Educação Física. Cada capítulo ganhou o nome do assunto que ensina e os subtópicos principais; toque e o livro abre direto na página. A busca também acha assuntos de dentro dos livros."},
   {t:"Missões e Biblioteca 🎯📚",d:"Nova aba Missões com a Missão PISM 1: foto da UFJF, música tema, raio-x do que mais e do que menos cai (geral e por matéria), provas antigas de 2009 a 2026 e um banco só com as 738 questões do Módulo I, em ordem do que mais cai. Nova aba Biblioteca com prateleiras por matéria para os e-books. O banco também ganhou as provas de 2009 e 2012."},

@@ -79,8 +79,22 @@
     });
     return h;
   }
+  // Nos apps (Android e Windows) o PDF abre no navegador do aparelho, com permissão, já na página certa
+  function abrirNoNavegador(l, pagina) {
+    const url = new URL((APP.base || "") + l.arquivo, location.href).href + (pagina ? "#page=" + pagina : "");
+    const fundo = document.createElement("div"); fundo.className = "aviso-versao-fundo"; fundo.id = "bib-perm-fundo";
+    const el = document.createElement("div"); el.className = "card aviso-versao janela"; el.id = "bib-perm"; el.setAttribute("role", "dialog");
+    el.innerHTML = `<div style="font-size:2rem">📖</div><b>Abrir no navegador?</b><span>No app, os livros abrem no navegador do aparelho. Vamos abrir “${esc(l.titulo)}”${pagina ? ` na página ${pagina}` : ""}.</span>
+      <div class="row" style="gap:8px;justify-content:center"><button class="btn primary" type="button" data-bp="ok">Abrir no navegador</button><button class="btn ghost" type="button" data-bp="x">Cancelar</button></div>`;
+    const fechar = () => { el.remove(); fundo.remove(); };
+    fundo.onclick = fechar;
+    el.onclick = e => { const b = e.target.closest("[data-bp]"); if (!b) return; if (b.dataset.bp === "ok") { if (APP.abrirFora) APP.abrirFora(url); else window.open(url, "_blank", "noopener"); } fechar(); };
+    document.body.appendChild(fundo); document.body.appendChild(el);
+    const ok = el.querySelector('[data-bp="ok"]'); if (ok) ok.focus();
+  }
   async function ler(l, pagina) {
     if (!l) return;
+    if (APP.app) { abrirNoNavegador(l, pagina || 0); return; }
     const [, nome, cor] = mat(l.materia), url = (APP.base || "") + l.arquivo;
     fecharLeitor(); LEITOR.livro = l; LEITOR.zoom = 1; LEITOR.feitas = new Set();
     CONT.innerHTML = `<div class="page bib-page bib-leitor">
