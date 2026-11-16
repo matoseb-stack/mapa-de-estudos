@@ -22,7 +22,7 @@ let m = fs.readFileSync(mf, "utf8");
 const perms = ["android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "android.permission.CAMERA", "android.permission.RECORD_AUDIO",
   "android.permission.MODIFY_AUDIO_SETTINGS", "android.permission.POST_NOTIFICATIONS", "android.permission.WAKE_LOCK",
   "android.permission.RECEIVE_BOOT_COMPLETED", "android.permission.FOREGROUND_SERVICE", "android.permission.FOREGROUND_SERVICE_MICROPHONE",
-  "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"];
+  "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK", "android.permission.REQUEST_INSTALL_PACKAGES"];
 for (const p of perms) if (!m.includes(`"${p}"`)) m = m.replace("</manifest>", `    <uses-permission android:name="${p}" />\n</manifest>`);
 if (!m.includes("ChamadaService")) m = m.replace("</application>", `
         <service android:name=".ChamadaService" android:exported="false" android:foregroundServiceType="microphone|mediaPlayback" />
@@ -44,6 +44,13 @@ const gradle = path.join(APP, "build.gradle");
 let g = fs.readFileSync(gradle, "utf8");
 const [a, b, c] = VERSAO.split(".").map(Number);
 g = g.replace(/versionCode\s+\d+/, `versionCode ${a * 10000 + b * 100 + c}`).replace(/versionName\s+"[^"]*"/, `versionName "${VERSAO}"`);
+// app de testes: outro nome no Android ("app.logicacademy.estudos.teste"), para nunca brigar com o oficial
+if (process.env.APP_CANAL === "teste") {
+  g = g.replace(/applicationId\s+"app\.logicacademy\.estudos"/, 'applicationId "app.logicacademy.estudos.teste"');
+  const str = path.join(RAIZ, "res", "values", "strings.xml");
+  fs.writeFileSync(str, fs.readFileSync(str, "utf8").replace(/<string name="app_name">[^<]*<\/string>/, '<string name="app_name">Logic Academy (testes)</string>')
+    .replace(/<string name="title_activity_main">[^<]*<\/string>/, '<string name="title_activity_main">Logic Academy (testes)</string>'));
+}
 fs.writeFileSync(gradle, g);
 
 // 5) ícone oficial (preto) em todas as densidades
