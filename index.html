@@ -1117,7 +1117,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=4.4">
+<link rel="stylesheet" href="css/componentes.css?v=4.5">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -2427,7 +2427,7 @@ function pararAlarme(){
 function testarSom(){somPreparar();if(ALARME.tocando){pararAlarme();return}tocarSomAlarme();ALARME.tocando=true;clearTimeout(ALARME.fimAuto);ALARME.fimAuto=setTimeout(pararAlarme,3200);toast("Tocando o alarme por 3 segundos. Se não ouvir, aumente o volume de mídia.")}
 addEventListener("beforeunload",e=>{if(S.mode==="local"&&S.plano){e.preventDefault();e.returnValue=""}});
 let notifPedida=false;
-if(STANDALONE&&location.protocol==="https:"&&"serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
+if(location.protocol==="https:"&&"serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
 function pedirNotificacao(){if(notifPedida||!("Notification" in window)||Notification.permission!=="default")return;notifPedida=true;try{Notification.requestPermission().catch(()=>{})}catch(e){}}
 function notificar(t,b){try{if(document.visibilityState==="visible"&&document.hasFocus())return;if(!("Notification" in window)||Notification.permission!=="granted")return;
   const o={body:b,tag:"pomodoro",renotify:true,requireInteraction:true,silent:false,vibrate:[500,250,500,250,500]};
@@ -2759,8 +2759,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.20";
+const APP_VERSAO="3.21";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Banco de questões mais rápido ⚡",d:"As questões e as imagens ficam guardadas no aparelho depois da primeira visita, então o banco abre bem mais rápido. E o botão “Abrir caderno” agora leva direto às suas questões, com um botão para voltar ao banco."},
   {t:"Lembretes de estudo 🔔",d:"Agora o Logic Academy avisa do próximo bloco, quando um bloco atrasa, quanto falta para a meta, quando sua sequência está em risco e sugere “mais um bloco?”. O ícone do app mostra quantos blocos faltam hoje, e segurando o ícone aparecem atalhos para o pomodoro, a semana e mais. Ajuste em Configurações."},
   {t:"Questões sem enunciado ganham um ✏️",d:"Se a foto tem só uma conta, equação ou reação, a IA escreve um enunciado simples (“Fatore:”, “Resolva:”, “Quanto é:”, “Complete a reação:”), resolve para achar o gabarito e coloca a questão no assunto certo do banco."},
   {t:"Importar por foto ficou melhor 📷",d:"A IA recorta cada questão da foto e a imagem fica na própria questão (o texto é digitado quando é simples). Questão sem alternativas vira múltipla escolha: a IA resolve e cria a resposta certa entre outras erradas. E ela descobre a matéria e o assunto mesmo quando não há enunciado."},
@@ -3806,6 +3807,7 @@ function qbTela(){
     </div>
     <div class="qb-cols">
       <section class="qb-lista" aria-label="Lista de questões">
+        ${f.prova==="minhas"?`<div class="card qb-no-cad row">📒 <b>Você está no seu caderno de questões</b><button class="btn sm" type="button" id="qb-sair-cad">${ico("back")}Voltar ao banco</button></div>`:""}
         <div class="small muted qb-cont">${lista.length?`${lista.length.toLocaleString("pt-BR")} ${lista.length===1?"questão":"questões"}`:""}</div>
         ${lista.length?lista.slice(0,q.lim).map(x=>{const r=doc.r[x.id];return `<button type="button" class="qb-item ${q.sel===x.id?"on":""}" data-qsel="${x.id}">
           <div class="row" style="gap:6px;flex-wrap:wrap"><span class="pill solid">${qbRotulo(x)}</span><span class="pill">${x.p==="pas"?"Item":"Questão"} ${x.n}</span>${x.ce?`<span class="pill">Certo ou errado</span>`:""}${qbSeloNivel(x)}<span class="pill">${QB_MAT[x.m]}</span>${x.x?`<span class="qb-st no" title="O INEP retirou esta questão do cálculo da nota">fora da nota</span>`:""}
@@ -3884,7 +3886,9 @@ function qbLigar(lista){
   $("#qb-ano").onchange=e=>{f.ano=e.target.value;q.lim=QB_POR_PAGINA;qbTela()};
   const ci=$("#qb-cad-ir");if(ci)ci.onclick=abrirCadernoErros;
   const im=$("#qb-importar");if(im)im.onclick=qbImportarModal;
-  const mc=$("#qb-meu-cad");if(mc)mc.onclick=()=>{Object.assign(f,{prova:"minhas",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0});q.sel=null;q.lim=QB_POR_PAGINA;qbTela()};
+  const irLista=()=>{const l=$(".qb-no-cad")||$(".qb-lista");if(l)scrollTo({top:Math.max(0,l.getBoundingClientRect().top+scrollY-80),behavior:"smooth"})};
+  const mc=$("#qb-meu-cad");if(mc)mc.onclick=()=>{const abrir=f.prova!=="minhas";Object.assign(f,{prova:abrir?"minhas":"",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0});q.sel=null;q.lim=QB_POR_PAGINA;qbTela();if(abrir)setTimeout(irLista,60)};
+  const sc=$("#qb-sair-cad");if(sc)sc.onclick=()=>{f.prova="";q.sel=null;q.lim=QB_POR_PAGINA;qbTela()};
   const cc=$("#qb-cad-corr");if(cc)cc.onclick=()=>{Object.assign(f,{sit:"corrigidas"});q.sel=null;q.lim=QB_POR_PAGINA;renderQuestoes()};
   $("#qb-sit").onchange=e=>{f.sit=e.target.value;q.lim=QB_POR_PAGINA;qbTela()};
   const ed=$("#qb-ed");if(ed)ed.onchange=()=>{f.edital=ed.checked;q.lim=QB_POR_PAGINA;qbTela()};
@@ -4022,7 +4026,7 @@ function qbMeuCadernoHtml(){
   const l=qbMinhas(),doc=qbEstado().doc||{r:{}},certas=l.filter(x=>doc.r[x.id]&&doc.r[x.id][1]).length;
   return `<div class="card qb-meucad"><div class="qb-cad-top"><span class="qb-cad-ic">📒</span><div style="min-width:0;flex:1"><h3>Meu caderno de questões</h3>
     <p class="small muted">${l.length?`<b style="color:var(--fg)">${l.length}</b> ${l.length===1?"questão importada":"questões importadas"}, todas resolvidas · ${certas} ${certas===1?"acerto":"acertos"}. Elas aparecem como “Banco de questões · Questão nº”.`:"Tire foto de uma questão de qualquer prova, livro ou lista: a IA digita a questão e ela entra aqui como resolvida."}</p></div>
-    <div class="row" style="gap:6px"><button class="btn primary" type="button" id="qb-importar">${ico("plus")}Importar questão</button>${l.length?`<button class="btn sm ghost" type="button" id="qb-meu-cad">Abrir caderno</button>`:""}</div></div></div>`}
+    <div class="row" style="gap:6px"><button class="btn primary" type="button" id="qb-importar">${ico("plus")}Importar questão</button>${l.length?`<button class="btn" type="button" id="qb-meu-cad">${ico("bookmark")}${qbEstado().f.prova==="minhas"?"Fechar caderno":"Abrir caderno"}</button>`:""}</div></div></div>`}
 // questões importadas: data/users/{uid}/questoes/minhas/{id} (texto) e .../fotos/{id} (a foto, carregada só quando abre)
 const qbColMinhas=n=>meuDoc("questoes").collection(n);
 async function qbMinhasCarregar(){

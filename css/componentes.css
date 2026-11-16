@@ -506,3 +506,6 @@ button.sim-alt:hover{border-color:var(--fg)}
 
 .lemb-cartao{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px;border-color:color-mix(in srgb,var(--accent) 40%,var(--line));background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,var(--surface)),var(--surface) 70%)}
 .lemb-ic{font-size:1.6rem}
+
+.qb-no-cad{gap:10px;justify-content:space-between;flex-wrap:wrap;align-items:center;margin-bottom:10px;padding:10px 14px;border-color:color-mix(in srgb,var(--accent) 45%,var(--line));background:color-mix(in srgb,var(--accent) 8%,var(--surface))}
+@media (max-width:860px){.qb-meucad .qb-cad-top .row{width:100%}.qb-meucad .qb-cad-top .row .btn{flex:1}}
