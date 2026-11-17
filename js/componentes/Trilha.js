@@ -26,8 +26,9 @@
     const id = CFG.id;
     if (!ST.dados[id]) { const r = await fetch(CFG.dir + "/trilha.json"); if (!r.ok) throw new Error(r.status); ST.dados[id] = await r.json(); }
     if (!ST.prog) { let d = null; try { d = await APP.ler("trilha"); } catch (e) { } ST.prog = (d && typeof d === "object") ? d : {}; }
-    const p = ST.prog[id] = ST.prog[id] || {}; p.ano = p.ano || {}; p.final = p.final || {}; p.lib = p.lib || {}; p.dias = p.dias || []; p.xp = p.xp || 0;
-    if (!ST.guia[id]) { let g = null; try { g = localStorage.getItem(chaveGuia()); } catch (e) { } ST.guia[id] = g === "final" ? "final" : "ano"; }
+    const p = ST.prog[id] = ST.prog[id] || {}; p.lib = p.lib || {}; p.dias = p.dias || []; p.xp = p.xp || 0;
+    const ids = ST.dados[id].guias.map(g => g.id); ids.forEach(k => { p[k] = p[k] || {}; });   // cada guia (ex.: ano/final ou base/consolida/final) guarda o seu progresso
+    if (!ST.guia[id]) { let g = null; try { g = localStorage.getItem(chaveGuia()); } catch (e) { } ST.guia[id] = ids.includes(g) ? g : ids[0]; }
   }
   const chaveGuia = () => "la_trilha_guia" + (CFG.id === "pism1" ? "" : "_" + CFG.id);
   const DADOS = () => ST.dados[CFG.id];
@@ -63,7 +64,7 @@
   }
   function caminho(focoId) {
     const g = guiaAtual(), lista = etapasDe(g), p = P();
-    const nFeitas = lista.filter(x => feito(g.id, x.e.id)).length, estrelas = Object.values(p.ano).concat(Object.values(p.final)).reduce((s, x) => s + (x.e || 0), 0);
+    const nFeitas = lista.filter(x => feito(g.id, x.e.id)).length, estrelas = DADOS().guias.reduce((s, gg) => s + Object.values(p[gg.id] || {}).reduce((t, x) => t + (x.e || 0), 0), 0);
     const pct = Math.round(100 * nFeitas / lista.length);
     let i = 0, atualId = null;
     const uns = g.unidades.map((u, ui) => {

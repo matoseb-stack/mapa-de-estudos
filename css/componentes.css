@@ -544,6 +544,14 @@ button.sim-alt:hover{border-color:var(--fg)}
 .rx-mat{margin-top:10px}.rx-mat h4{margin:6px 0}
 .pv-lista{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
 .pv-ano h3{margin:0}
+/* aba Insights das missões */
+.ins-lista{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.ins-item{display:flex;gap:12px;align-items:flex-start}
+.ins-item h3{margin:0 0 4px;font-size:1rem}
+.ins-item p{margin:0;line-height:1.45}
+.ins-ic{font-size:1.7rem;line-height:1;flex:0 0 auto;width:2.2rem;text-align:center}
+.ins-fontes{margin:0;padding-left:18px;display:grid;gap:4px}
+.ins-fontes a{word-break:break-word}
 @media (max-width:600px){.mis-hero{min-height:240px;padding:16px}.rx-linha .btn{padding:4px 8px}}
 
 /* ===== Biblioteca ===== */
