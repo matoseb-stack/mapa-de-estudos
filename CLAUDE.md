@@ -43,6 +43,9 @@ Quando o dono mandar um PDF de questões sem outra instrução:
 ## Vídeos de divulgação (preferência do dono)
 - Não usar a voz sintetizada do Piper (soou artificial) nem legenda na tela.
 - Personagens e cenário com modelos 3D prontos da internet, de licença livre (citar a fonte), em vez de formas montadas à mão, para não parecer feito por IA.
+- Usar os modelos com as cores que já vêm no arquivo (sem repintar). Fontes que funcionam: Kenney (CC0, espelho `Kenney-CCO/Kenney-CCO.glb` no jsDelivr), Quaternius (CC0, `quaternius.trebeljahr.com/glb/...`), Kit Cidade Low Poly (CC0, `kayquer/kit-cidade-lowpoly`: ônibus, ponto, ruas brasileiras). O pacote de transporte do OpenGameArt vem sem cor — não usar.
+- Voz: neural da Microsoft (`pt-BR-AntonioNeural` / `pt-BR-FranciscaNeural`) via edge-tts, apontando o certifi para o certificado do proxy. Kokoro e Piper soam robóticos.
+- Processo em duas etapas: uma cria a cena e outra, separada, revisa antes de gravar (personagem atravessando cadeira/cama, pés flutuando, veículo fora da faixa, modelo sem cor, câmera dentro de objeto, trechos com tempo errado). Só gravar e entregar depois da revisão.
 
 ## Apps (Android .apk e Windows .exe)
 - `apps/android` (Capacitor + código nativo em `apps/android/nativo`) e `apps/windows` (Electron). Os apps abrem o site oficial; o site fala com eles por `window.LogicAndroid` / `window.logicApp` (chamada em segundo plano, widget, lembretes agendados, versão).
