@@ -175,7 +175,12 @@
     window.removeEventListener("scroll", aoRolar);
     if (LEITOR.doc) { try { LEITOR.doc.destroy(); } catch (e) { } } LEITOR.doc = null; LEITOR.livro = null;
   }
-  function render(cont, app) { APP = app; CONT = cont; fecharLeitor(); tela(); }
+  function render(cont, app) {
+    APP = app; CONT = cont; fecharLeitor();
+    const pend = window.__bibAbrir; window.__bibAbrir = null;   // vindo da trilha: abre o livro na página
+    if (pend) carregar().then(ls => { const l = ls.find(x => x.id === pend.id); if (l) ler(l, pend.p); else tela(); }).catch(() => tela());
+    else tela();
+  }
   window.LAComp = window.LAComp || {};
   window.LAComp.Biblioteca = { render, sair: fecharLeitor };
 })();

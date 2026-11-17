@@ -29,6 +29,7 @@ Quando o dono mandar um PDF de questões sem outra instrução:
 
 ## Missões e Biblioteca
 - `js/componentes/Missoes.js` (aba Missões). Missão PISM 1: `missoes/pism1/ufjf.webp` (foto, domínio público), `raiox.json` e `provas.json` gerados das questões do banco (Módulo I), PDFs em `missoes/pism1/provas/`. A música tema é sintetizada no navegador (sem arquivo). "Treinar" abre o banco com o filtro `mo:"I"`.
+- Trilha (aba 🗺️ da missão, `js/componentes/Trilha.js`): `missoes/pism1/trilha.json` com "Guia do ano" e "Reta final" (unidades → etapas `licao|desafio|simulado|trofeu`, assuntos do banco, livro/página). Treino com questões do Módulo I; 60% conclui; estrelas, XP e ofensiva salvos no documento `trilha` da conta.
 - `js/componentes/Biblioteca.js` (aba Biblioteca): e-books em `biblioteca/<matéria>/<arquivo>.pdf`, listados em `biblioteca/indice.json` (`{"livros":[{id,titulo,autor,materia,arquivo,paginas,descricao}]}`); matérias: mat, por, lit, fis, qui, bio, his, geo, fil, soc, ing, esp, red, out. Cada livro tem `sumario` (capítulos com assunto claro e subtópicos, cada um com a página do PDF) e o leitor (pdf.js) abre direto na página.
 - Só entram livros de uso livre (domínio público, licença aberta ou reprodução autorizada, citando a fonte). Livros de editora/pirateados (ex.: FME do Z-Library) não vão para o site. Os atuais são o Livro Didático Público da SEED-PR (2006), "permitida a reprodução total ou parcial, desde que citada a fonte".
 

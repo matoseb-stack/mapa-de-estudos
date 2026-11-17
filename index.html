@@ -1117,7 +1117,7 @@ h3 .on-dot{margin-right:4px}
 @media (max-width:860px){.voz-palco{right:8px;left:8px;width:auto;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande{top:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px))}.voz-palco.grande .vp-grade{flex:1;align-content:center}}
 </style>
 
-<link rel="stylesheet" href="css/componentes.css?v=5.1">
+<link rel="stylesheet" href="css/componentes.css?v=5.4">
 <script src="js/firebaseServiceMock.js?v=2.9"></script>
 <script src="js/firebaseService.js?v=2.9"></script>
 <script src="js/idiomas/conteudoIngles.js?v=2.9"></script>
@@ -1128,8 +1128,9 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/CambridgeTestView.js?v=2.9"></script>
 <script src="js/componentes/IdiomasView.js?v=3.0"></script>
 <script src="js/componentes/Simulados.js?v=1.2"></script>
-<script src="js/componentes/Missoes.js?v=1.0"></script>
-<script src="js/componentes/Biblioteca.js?v=1.3"></script>
+<script src="js/componentes/Missoes.js?v=1.1"></script>
+<script src="js/componentes/Trilha.js?v=1.0"></script>
+<script src="js/componentes/Biblioteca.js?v=1.4"></script>
 <script src="js/componentes/Estante.js?v=3.9"></script>
 <script src="js/componentes/Pro.js?v=3.0"></script>
 </head><body>
@@ -1653,7 +1654,7 @@ try{const fora=["mapa_ui","mapa_tema"];Object.keys(localStorage).forEach(k=>{
 const meuDoc=k=>S.db.collection("data/users/"+S.uid).doc(k);
 /* Sem internet: os dados da conta também ficam numa cópia no aparelho (além da cópia da nuvem do Firebase),
    para o app abrir já logado e com tudo no lugar. Quando a internet volta, a nuvem sincroniza sozinha. */
-const COPIA_KEYS=["perfil","plano","edital","pomo","revisoes","conquistas","questoes","simulados"];
+const COPIA_KEYS=["perfil","plano","edital","pomo","revisoes","conquistas","questoes","simulados","trilha"];
 const copiaChave=k=>"la_copia_"+(S.uid||"")+"_"+k;
 function copiaGuardar(k,v){if(S.mode!=="nuvem"||!S.uid||!COPIA_KEYS.includes(k))return;try{localStorage.setItem(copiaChave(k),JSON.stringify(v===undefined?null:v))}catch(e){}}
 function copiaLer(k){try{const t=localStorage.getItem(copiaChave(k));return t===null?undefined:JSON.parse(t)}catch(e){return undefined}}
@@ -2640,7 +2641,7 @@ function renderCompartilhadas(){
 }
 const appSim={esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),md:t=>qbMd(t),get mat(){return QB_MAT},
   ler:k=>ler(k),gravar:(k,v)=>gravar(k,v,true),iaJson:null,naTela:()=>S.view==="simulados",ehAdmin:()=>ehAdmin()};
-const appMissao={base:IMG_BASE,esc:x=>esc(x),ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),
+const appMissao={base:IMG_BASE,esc:x=>esc(x),md:t=>qbMd(t),ler:k=>ler(k),gravar:(k,v)=>gravar(k,v),irLivro:(id,p)=>{window.__bibAbrir={id,p};go("biblioteca")},ico:(n,c)=>ico(n,c),pageHead:(t,sub,ac)=>pageHead(t,sub,ac),toast:m=>toast(m),
   irBanco:f=>{const q=qbEstado();Object.assign(q.f,{prova:"",area:"",m:"",t:"",ano:"",sit:"",busca:"",edital:false,nivel:0,mo:""},f);if(f.m)q.f.area={mat:"matematica",fis:"natureza",qui:"natureza",bio:"natureza",his:"humanas",geo:"humanas",por:"linguagens",lit:"linguagens"}[f.m]||"";q.tudo=!f.m&&!f.t&&!f.ano;q.sel=null;q.lim=QB_POR_PAGINA;go("questoes")}};
 function renderMissoes(){if(!window.LAComp||!LAComp.Missoes){$("#main").innerHTML=`<div class="page">${pageHead("Missões")}<div class="card"><p>Não foi possível carregar. Atualize a página.</p></div></div>`;return}LAComp.Missoes.render($("#main"),appMissao)}
 function renderBiblioteca(){if(!window.LAComp||!LAComp.Biblioteca){$("#main").innerHTML=`<div class="page">${pageHead("Biblioteca")}<div class="card"><p>Não foi possível carregar. Atualize a página.</p></div></div>`;return}LAComp.Biblioteca.render($("#main"),{base:IMG_BASE,app:EH_APP,abrirFora:u=>abrirFora(u),ico:(n,c)=>ico(n,c),esc:x=>esc(x),pageHead:(t,sub,ac)=>pageHead(t,sub,ac)})}
@@ -2808,8 +2809,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.35";
+const APP_VERSAO="3.36";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Trilha da Missão PISM 1 🗺️",d:"Na Missão PISM 1 tem uma trilha para seguir etapa por etapa: o Guia do ano (de fevereiro a novembro, pelo programa oficial) e a Reta final (6 semanas, começando pelo que mais cai). Cada etapa tem o que estudar, atalho para a página do livro e um treino com questões reais do PISM 1. Concluiu? Estrelas, XP, ofensiva de dias seguidos e comemoração!"},
   {t:"Livros da Biblioteca nos apps 📖",d:"No app de Android e no programa de Windows, os livros da Biblioteca abrem no navegador do aparelho (com sua permissão), já na página do assunto que você tocou."},
   {t:"Atualização do app mais segura 🔄",d:"Antes de instalar, o app confere se a versão nova pode entrar por cima. Se não puder (app instalado de um arquivo antigo), ele já deixa o app novo na pasta Downloads e guia a troca com um botão para desinstalar o antigo. Em Configurações aparece qual versão do app você tem."},
   {t:"Biblioteca com 13 livros e sumário inteligente 📚",d:"Os livros didáticos públicos do Paraná para o ensino médio, um por matéria: Matemática, Português e Literatura, Física, Química, Biologia, História, Geografia, Filosofia, Sociologia, Espanhol, Inglês, Arte e Educação Física. Cada capítulo ganhou o nome do assunto que ensina e os subtópicos principais; toque e o livro abre direto na página. A busca também acha assuntos de dentro dos livros."},

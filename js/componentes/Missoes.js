@@ -8,7 +8,7 @@
 (function () {
   "use strict";
   let APP = null, CONT = null;
-  const ST = { aberta: null, aba: "raiox", raiox: null, provas: null, mat: "" };
+  const ST = { aberta: null, aba: "trilha", raiox: null, provas: null, mat: "" };
   const esc = s => APP.esc(s);
   const SOM_KEY = "la_missao_som";
   const somLigado = () => { try { return localStorage.getItem(SOM_KEY) !== "0"; } catch (e) { return true; } };
@@ -111,7 +111,7 @@
         <div class="mis-hero-txt"><span class="mis-selo">🎯 Missão</span><h1>${esc(m.nome)}</h1><p>${esc(m.texto)}</p></div>
         <small class="mis-credito">${esc(m.credito)}</small>
       </div>
-      <div class="mis-abas" role="tablist">${[["raiox", "🩻 Raio-x da prova"], ["provas", "📄 Provas antigas"], ["banco", "🧠 Banco especializado"]].map(([k, n]) => `<button type="button" role="tab" class="qb-chip ${ST.aba === k ? "on" : ""}" aria-selected="${ST.aba === k}" data-aba="${k}">${n}</button>`).join("")}</div>
+      <div class="mis-abas" role="tablist">${[["trilha", "🗺️ Trilha"], ["raiox", "🩻 Raio-x da prova"], ["provas", "📄 Provas antigas"], ["banco", "🧠 Banco especializado"]].map(([k, n]) => `<button type="button" role="tab" class="qb-chip ${ST.aba === k ? "on" : ""}" aria-selected="${ST.aba === k}" data-aba="${k}">${n}</button>`).join("")}</div>
       <div id="mis-corpo"><div class="card">Carregando…</div></div></div>`;
     botaoSom();
     CONT.querySelector("#mis-voltar").onclick = lista;
@@ -123,6 +123,8 @@
   function barra(p, cor) { return `<span class="rx-barra"><span style="width:${Math.max(2, Math.min(100, p))}%;background:${cor}"></span></span>`; }
   function corpo() {
     const c = CONT.querySelector("#mis-corpo"); if (!c) return;
+    if (ST.aba !== "trilha" && window.LAComp && LAComp.Trilha) LAComp.Trilha.sair();
+    if (ST.aba === "trilha") { if (window.LAComp && LAComp.Trilha) LAComp.Trilha.render(c, APP); else c.innerHTML = `<div class="card">Atualize a página para abrir a trilha.</div>`; return; }
     if (ST.aba === "raiox") c.innerHTML = raiox(); else if (ST.aba === "provas") c.innerHTML = provas(); else c.innerHTML = banco();
     c.querySelectorAll("[data-treinar]").forEach(b => b.onclick = () => { const [m, t, ano] = JSON.parse(b.dataset.treinar); parar(); APP.irBanco({ prova: "pism", mo: "I", m: m || "", t: t || "", ano: ano || "" }); });
     c.querySelectorAll("[data-rx-m]").forEach(b => b.onclick = () => { ST.mat = b.dataset.rxM; corpo(); });
@@ -166,5 +168,5 @@
     if (ST.aberta) abrir(ST.aberta); else lista();
   }
   window.LAComp = window.LAComp || {};
-  window.LAComp.Missoes = { render, parar, sair() { parar(); } };
+  window.LAComp.Missoes = { render, parar() { parar(); if (window.LAComp.Trilha) window.LAComp.Trilha.sair(); }, sair() { parar(); } };
 })();
