@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- botão branco (usado no fundo laranja de "sequência em risco") -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape android:shape="rectangle"><solid android:color="#FFD6D9DE" /><corners android:radius="14dp" /></shape></item>
+    <item android:bottom="3dp"><shape android:shape="rectangle"><solid android:color="#FFFFFFFF" /><corners android:radius="14dp" /></shape></item>
+</layer-list>

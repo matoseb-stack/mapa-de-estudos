@@ -2875,8 +2875,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.38";
+const APP_VERSAO="3.39";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Widget novo no Android 🔥",d:"O widget da tela inicial ficou com cara de jogo: chama da sequência (acesa quando você já estudou hoje), as bolinhas da semana, barra da meta do dia, uma frase que muda conforme o seu dia e o botão ESTUDAR, que abre direto o próximo bloco. O fundo fica laranja quando a sequência está em risco e verde quando a meta é batida. Tem três tamanhos: segure o widget e estique para ver a versão grande."},
   {t:"Logic Academy por assinatura",d:"Para usar o Logic Academy agora é preciso a assinatura de R$ 10,00 por mês (Pix pelo WhatsApp, sem renovação automática). Com ela, tudo fica liberado: Missões, banco de questões, plano semanal, idiomas, Biblioteca e comunidade, sem anúncios. A Mentoria com IA saiu do app. Para renovar, vá em Configurações."},
   {t:"Missão ENEM 🎯 e ENEM 2024 e 2025 no banco",d:"Nova Missão ENEM, com foto, música tema e a mesma fórmula da Missão PISM 1: uma trilha própria pela Matriz de Referência do ENEM (Guia do ano de fevereiro a novembro e Reta final de 6 semanas, começando pelo que mais cai), o raio-x de 17 edições por área, matéria e assunto, as provas antigas e o banco especializado. O banco de questões ganhou as provas do ENEM 2024 e 2025 (caderno azul, com gabarito oficial) e 4 questões antigas que faltavam."},
   {t:"Trilha da Missão PISM 1 🗺️",d:"Na Missão PISM 1 tem uma trilha para seguir etapa por etapa: o Guia do ano (de fevereiro a novembro, pelo programa oficial) e a Reta final (6 semanas, começando pelo que mais cai). Cada etapa tem o que estudar, atalho para a página do livro e um treino com questões reais do PISM 1. Concluiu? Estrelas, XP, ofensiva de dias seguidos e comemoração!"},
@@ -5537,7 +5538,8 @@ document.addEventListener("visibilitychange",()=>{if(document.visibilityState===
    Android: widget na tela inicial + notificações agendadas pelo próprio celular (AlarmManager).
    Windows: mini widget por cima das janelas + notificações agendadas pelo programa (que fica perto do relógio). */
 function dadosWidget(){if(!S.perfil||!S.pomoLog)return null;const min=minutosDia(dataISO()),meta=metaHoje(),seq=sequencia(),b=blocosDeHoje().find(x=>!x.feito&&toMin(x.inicio)+(x.min||50)>lembAgoraMin())||blocosDeHoje().find(x=>!x.feito);
-  return {seq,hoje:min,meta,proximo:b?`${b.materia} · ${b.inicio}`:"",falta:Math.max(0,meta-min),texto:min>=meta?"Meta de hoje batida! 🏆":`Faltam ${fmtH(Math.max(0,meta-min))} para a meta`}}
+  const feitos=[];for(let i=0;i<14;i++){const d=diasAtras(i);if(minutosDia(d)>0)feitos.push(d)}
+  return {seq,hoje:min,meta,dia:dataISO(),feitos,recorde:recordeSequencia(),proximo:b?`${b.materia} · ${b.inicio}`:"",falta:Math.max(0,meta-min),texto:min>=meta?"Meta de hoje batida! 🏆":`Faltam ${fmtH(Math.max(0,meta-min))} para a meta`}}
 // agenda para os próximos 7 dias (o app mostra mesmo fechado). Hoje leva em conta o que já foi estudado.
 function agendaNotificacoes(){const p=lembPref();if(!p.ligado||!S.perfil||!S.plano)return [];const out=[],agora=Date.now(),seq=sequencia(),min=minutosDia(dataISO()),meta=metaHoje();
   const silencio=(d)=>{const m=d.getHours()*60+d.getMinutes(),a=toMin(p.silIni),b=toMin(p.silFim);if(a==null||b==null)return false;return a>b?(m>=a||m<b):(m>=a&&m<b)};

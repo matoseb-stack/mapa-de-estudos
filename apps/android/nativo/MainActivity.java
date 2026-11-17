@@ -50,6 +50,41 @@ public class MainActivity extends BridgeActivity {
         }
     }
 
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        abrirPedido(intent);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        abrirPedido(getIntent());
+    }
+
+    /** Toque no widget (ex.: botão "Estudar"): abre a tela pedida assim que o site estiver pronto e logado. */
+    void abrirPedido(Intent intent) {
+        if (intent == null) return;
+        String tela = intent.getStringExtra(SequenciaWidget.EXTRA_ABRIR);
+        if (tela == null || tela.isEmpty() || "inicio".equals(tela)) return;
+        intent.removeExtra(SequenciaWidget.EXTRA_ABRIR);
+        final String js = "(typeof abrirPorUrl==='function'&&abrirPorUrl('./?abrir='+" + JSONObject.quote(tela) + ")===true)";
+        final android.os.Handler h = new android.os.Handler(android.os.Looper.getMainLooper());
+        final int[] tentativas = {0};
+        Runnable tentar = new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    getBridge().getWebView().evaluateJavascript(js, r -> {
+                        if (!"true".equals(r) && ++tentativas[0] < 60) h.postDelayed(this, 500);
+                    });
+                } catch (Exception e) { if (++tentativas[0] < 60) h.postDelayed(this, 500); }
+            }
+        };
+        h.postDelayed(tentar, 300);
+    }
+
     /** "Voltar" na primeira tela só esconde o app (não fecha): a chamada e o cronômetro continuam. */
     @Override
     @SuppressWarnings("deprecation")

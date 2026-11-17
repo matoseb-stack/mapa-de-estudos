@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- botão "de apertar" (borda de baixo mais escura, como nos apps de jogo/estudo) -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape android:shape="rectangle"><solid android:color="#FFC26A00" /><corners android:radius="14dp" /></shape></item>
+    <item android:bottom="3dp"><shape android:shape="rectangle"><solid android:color="#FFFF9600" /><corners android:radius="14dp" /></shape></item>
+</layer-list>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gerado: widget do Logic Academy -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/w_raiz" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="12dp" android:gravity="center_vertical" android:background="@drawable/widget_fundo">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal">
+  <ImageView android:id="@+id/w_chama" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/widget_chama_apagada" android:contentDescription="Sequência" />
+  <TextView android:id="@+id/w_seq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#FFFFFFFF" android:textSize="28sp" android:textStyle="bold" android:includeFontPadding="false" />
+  <TextView android:id="@+id/w_seq_rot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dias seguidos" android:textColor="#CCFFFFFF" android:textSize="11sp" />
+  <ProgressBar android:id="@+id/w_barra" style="@android:style/Widget.ProgressBar.Horizontal" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="6dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/widget_barra" />
+</LinearLayout>
+</LinearLayout>
