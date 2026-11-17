@@ -1,4 +1,8 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="manifest" href="manifest.webmanifest?v=4"><link rel="icon" type="image/png" sizes="32x32" href="icones/favicon-32.png?v=3"><link rel="icon" type="image/png" sizes="16x16" href="icones/favicon-16.png?v=3"><link rel="apple-touch-icon" href="icones/apple-touch-icon.png?v=3"><meta name="theme-color" content="#0a0a0a"><meta name="apple-mobile-web-app-title" content="Logic Academy"><meta name="application-name" content="Logic Academy"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Logic Academy: organizador de estudos com banco de questões oficiais do ENEM, plano semanal, pomodoro, cronômetro, desafios, revisões, estatísticas, grupos de estudo e leitura de editais."><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.5 system-ui,sans-serif;background:#fafafa}img{max-width:100%}[hidden]{display:none!important}</style><title>Logic Academy — organizador de estudos e banco de questões do ENEM</title>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="manifest" href="manifest.webmanifest?v=4"><link rel="icon" type="image/png" sizes="32x32" href="icones/favicon-32.png?v=3"><link rel="icon" type="image/png" sizes="16x16" href="icones/favicon-16.png?v=3"><link rel="apple-touch-icon" href="icones/apple-touch-icon.png?v=3"><meta name="theme-color" content="#0a0a0a"><meta name="apple-mobile-web-app-title" content="Logic Academy"><meta name="application-name" content="Logic Academy"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Logic Academy: organizador de estudos com banco de questões oficiais do ENEM, plano semanal, pomodoro, cronômetro, desafios, revisões, estatísticas, grupos de estudo e leitura de editais."><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.5 system-ui,sans-serif;background:#fafafa}img{max-width:100%}[hidden]{display:none!important}/* ===== acesso pago: tela de entrada e de assinatura ===== */
+.acesso-tag{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:10px 14px;border-radius:14px;background:var(--sunken);border:1px solid var(--line);max-width:50ch}
+.acesso-tag b{font-size:1.35rem;color:var(--accent)}.acesso-tag span{font-size:.86rem;color:var(--muted)}
+.acesso-preco{display:flex;align-items:baseline;gap:6px}.acesso-preco b{font-size:2.6rem;line-height:1;letter-spacing:-1px}.acesso-preco span{color:var(--muted);font-weight:600}
+</style><title>Logic Academy — organizador de estudos e banco de questões do ENEM</title>
 <link rel="canonical" href="https://logicacademy.web.app/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1132,9 +1136,9 @@ h3 .on-dot{margin-right:4px}
 <script src="js/componentes/Trilha.js?v=1.1"></script>
 <script src="js/componentes/Biblioteca.js?v=1.4"></script>
 <script src="js/componentes/Estante.js?v=3.9"></script>
-<script src="js/componentes/Pro.js?v=3.0"></script>
+<script src="js/componentes/Pro.js?v=3.1"></script>
 </head><body>
-<noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos gratuito: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
+<noscript><div style="max-width:760px;margin:24px auto;padding:0 18px;font-family:system-ui,sans-serif"><h1>Logic Academy</h1><p>Organizador de estudos: plano semanal automático, pomodoro, banco com mais de 7.800 questões oficiais do ENEM, EsPCEx, PISM e PAS com gabarito, revisões programadas, flashcards e grupos de estudo. Ative o JavaScript para usar o app.</p><p><a href="guias/">Guias de estudo</a> · <a href="banco-de-questoes.html">Banco de questões</a> · <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="contato.html">Contato</a></p></div></noscript><div id="root"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
@@ -1764,6 +1768,7 @@ async function iniciarCaps(){
 iniciarCaps();
 
 /* ================= Login ================= */
+var PRECO_ACESSO_TXT="R$ 10,00";
 function renderLogin(erro){document.body.classList.remove("menu-aberto");
   const ok=S.caps&&S.userCap&&S.db;
   $("#root").innerHTML=`
@@ -1771,8 +1776,9 @@ function renderLogin(erro){document.body.classList.remove("menu-aberto");
     <section class="auth-l">
       <div class="brand"><span class="logo">${LOGO}</span>Logic Academy</div>
       <div class="stack sm">
-        <h1>${STANDALONE?"Organize seus estudos do seu jeito.":"Organize seus estudos com ajuda da IA."}</h1>
-        <p class="muted" style="font-size:1.02rem;max-width:48ch">Do colégio ao concurso: responda algumas perguntas e receba uma semana de estudos montada para você, com pomodoro, tópicos do edital e grupos de estudo.</p>
+        <h1>Sua aprovação começa aqui.</h1>
+        <p class="muted" style="font-size:1.02rem;max-width:50ch">Missões ENEM e PISM 1 com trilha do ano inteiro, mais de 8 mil questões oficiais com gabarito, plano semanal automático, pomodoro e grupos de estudo.</p>
+        <div class="acesso-tag"><b>${PRECO_ACESSO_TXT}</b><span>por mês · Pix pelo WhatsApp · sem renovação automática</span></div>
       </div>
       <div class="card stack" style="max-width:420px">
         ${STANDALONE?`
@@ -1786,30 +1792,26 @@ function renderLogin(erro){document.body.classList.remove("menu-aberto");
           <p class="small" id="au-msg" role="status"></p>
         </form>
         ${FB&&FB.cfg.google?`<button class="btn" id="btnGoogle" type="button" style="padding:11px">${G_ICON}Entrar com Google</button>`:""}
-        <p class="hint">${!S.caps?'<span class="row"><span class="spinner"></span>Preparando o login…</span>':FB?"Cada pessoa tem a própria conta. Perfil, plano e progresso ficam salvos na nuvem e abrem em qualquer dispositivo.":"O login por e-mail ainda não foi ligado neste site. Por enquanto, use como visitante."}</p>`
+        <p class="hint">${!S.caps?'<span class="row"><span class="spinner"></span>Preparando o login…</span>':FB?"Crie sua conta, assine por "+PRECO_ACESSO_TXT+" por mês e comece. Perfil, plano e progresso ficam salvos na nuvem e abrem em qualquer dispositivo.":"O login ainda não foi ligado neste site."}</p>`
         :`<button class="btn primary" id="btnNuvem" type="button" ${ok?"":"disabled"} style="padding:11px">${ico("user")}Entrar com minha conta</button>
         <p class="hint">${!S.caps?'<span class="row"><span class="spinner"></span>Verificando a conexão com sua conta…</span>':ok?"Seu perfil, plano e progresso ficam salvos na nuvem e abrem em qualquer dispositivo. Grupos, chat e ranking exigem login.":"Login indisponível nesta visualização. Abra a página no claude.ai com sua conta conectada."}</p>`}
-        <div class="row" style="gap:8px;color:var(--muted);font-size:.78rem"><span style="flex:1;height:1px;background:var(--line)"></span>ou<span style="flex:1;height:1px;background:var(--line)"></span></div>
-        <button class="btn" id="btnLocal" type="button">Continuar como visitante</button>
-        <p class="hint">Como visitante, nada fica salvo: ao fechar ou recarregar o app, tudo é apagado. A comunidade fica bloqueada. Crie uma conta para guardar seu progresso.</p>
         ${erro?`<p class="err">${esc(erro)}</p>`:""}
       </div>
       <button class="btn ghost sm" type="button" data-theme-lbl style="align-self:flex-start">${temaBtnHtml()}</button>
     </section>
     <aside class="auth-r">
       <div class="brand"><span class="logo">${LOGO}</span></div>
-      ${[["spark",STANDALONE?"Plano semanal automático":"Plano semanal por IA","Distribui suas horas por matéria conforme a dificuldade, a prioridade e o tempo livre de cada dia."],
-         ["timer","Pomodoro integrado","Cada sessão concluída entra no seu histórico e nas suas estatísticas."],
-         ["scan","Leitura de edital","Envie o PDF do edital ou escreva o nome da prova (ENEM, Pism 1, EsPCEx, PM MG…) e receba os tópicos por matéria."],
-         ["book","Inglês e Francês","Cursos do A1 ao C2 no formato Cambridge e DELF/DALF, com nivelamento, aulas e dica da IA."],
-         ["bookmark","Estante virtual","Guarde PDFs e imagens por matéria e escreva neles com caneta e marca-texto."]]
+      ${[["target","Missões ENEM e PISM 1","Trilha do ano inteiro e da reta final, raio-x do que mais cai e banco só com questões da prova."],
+         ["qbank","Mais de 8 mil questões oficiais","ENEM, EsPCEx, PISM e PAS, com gabarito oficial e filtros por assunto."],
+         ["spark","Plano semanal automático","Distribui suas horas por matéria conforme a dificuldade, a prioridade e o tempo livre de cada dia."],
+         ["timer","Pomodoro, revisões e estatísticas","Cada sessão concluída entra no seu histórico e nas suas estatísticas."],
+         ["book","Inglês, Francês e Biblioteca","Cursos do A1 ao C2, e-books por matéria com sumário inteligente e estante virtual."]]
         .map(([i,t,d])=>`<div class="feat"><span>${ico(i)}</span><div><b>${t}</b><p>${d}</p></div></div>`).join("")}
       <nav class="auth-links" aria-label="Páginas do site"><a href="guias/">Guias de estudo</a><a href="banco-de-questoes.html">Banco de questões</a><a href="sobre.html">Sobre</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a><a href="contato.html">Contato</a></nav>
       <div class="auth-guias"><b>Guias de estudo</b>${[["como-estudar-para-o-enem","Como estudar para o ENEM"],["competencias-da-redacao-do-enem","As 5 competências da redação"],["cronograma-de-estudos","Como montar um cronograma"],["como-se-preparar-para-o-delf-e-dalf","DELF e DALF: como se preparar"],["como-se-preparar-para-o-cambridge-b2-first","Cambridge B2 First"],["estudo-ativo-e-tecnica-feynman","Estudo ativo e técnica Feynman"]]
         .map(([f,t])=>`<a href="guias/${f}.html">${t}</a>`).join("")}</div>
     </aside>
   </div>`;
-  $("#btnLocal").onclick=()=>entrar("local");
   if(STANDALONE)ligarLoginEmail();
   else $("#btnNuvem").onclick=()=>entrar("nuvem");
   $("[data-theme-lbl]").onclick=trocarTema;
@@ -1834,19 +1836,27 @@ async function entrar(modo){
     const id=await S.userCap.id();
     if(!id){renderLogin("Não encontramos uma conta conectada. Entre no claude.ai e abra a página de novo, ou continue como visitante.");return}
     S.mode="nuvem";S.uid=id;try{nomeConta=(await S.userCap.me()).name||S.nomeCadastro||""}catch(e){}
-  }else{S.mode="local";S.uid="local"}
+  }else{if(ACESSO_PAGO&&!S.sample){renderLogin("Para usar o Logic Academy, entre com sua conta.");return}S.mode="local";S.uid="local"}
   $("#root").innerHTML=`<div class="wizard"><div class="row muted"><span class="spinner"></span>Carregando seus dados…</div></div>`;
   try{[S.perfil,S.plano,S.edital,S.pomoLog,S.revisoes,S.conq]=await Promise.all(["perfil","plano","edital","pomo","revisoes","conquistas"].map(ler));if(!S.revisoes||!Array.isArray(S.revisoes.itens))S.revisoes={itens:[]}}
   catch(e){S.mode=null;renderLogin(e&&e.code==="sem-internet"?"Sem internet e ainda sem cópia dos seus dados neste aparelho. Abra o Logic Academy uma vez com internet; depois ele funciona sem internet.":"Não foi possível ler seus dados ("+(e&&e.code||"erro")+").");return}
   S.pomoLog=garantirTotais(S.pomoLog&&S.pomoLog.dias?S.pomoLog:{dias:{},sessoes:0});carregarCrono();virarSemana();verificarConquistas(true);if(S.edital&&!Array.isArray(S.edital.materias))S.edital=null;try{atualizarEditalCatalogo()}catch(e){}
   if(S.perfil&&S.perfil.ui)aplicarUI(S.perfil.ui);else if(S.perfil&&S.perfil.tema)aplicarTema(S.perfil.tema);
   if(S.perfil&&S.perfil.pomo)Object.assign(P.dur,S.perfil.pomo);else if(S.perfil)Object.assign(P.dur,{foco:+S.perfil.bloco||50,curta:+S.perfil.pausa||10});P.restante=pomoTotal();carregarPomo();
-  if(S.mode==="nuvem"){assinarSocial();if(FBM()){iniciarSessaoUnica();iniciarComunidadeFB();iniciarConquistasSrv();iniciarAssinatura();try{if(window.LAComp&&LAComp.Estante)LAComp.Estante.iniciar(appEstante)}catch(e){}}}
-  if(S.perfil&&S.plano){S.view="inicio";renderShell();lembIniciar()}
-  else{S.step=0;S.draft=S.perfil?migrar(clone(S.perfil)):perfilPadrao(nomeConta);renderWizard()}
+  if(S.mode==="nuvem"&&FBM())iniciarAssinatura();
+  const abrir=()=>{
+    if(S.mode==="nuvem"){assinarSocial();if(FBM()){iniciarSessaoUnica();iniciarComunidadeFB();iniciarConquistasSrv();try{if(window.LAComp&&LAComp.Estante)LAComp.Estante.iniciar(appEstante)}catch(e){}}}
+    if(S.perfil&&S.plano){S.view="inicio";renderShell();lembIniciar()}
+    else{S.step=0;S.draft=S.perfil?migrar(clone(S.perfil)):perfilPadrao(nomeConta);renderWizard()}
+    const d=diasDeAcesso();if(ACESSO_PAGO&&d!=null&&d<=3&&d>0&&!ehAdmin())setTimeout(()=>toast(`Sua assinatura vence em ${d} ${d===1?"dia":"dias"}. Renove pelo WhatsApp em Configurações.`),1500)};
+  if(ACESSO_PAGO&&!S.sample&&S.mode==="nuvem"){
+    if(!acessoLiberado())await esperarAssinatura();
+    if(S.mode!=="nuvem")return;
+    if(!acessoLiberado()){S.bloqueado=true;S.aposPagar=abrir;renderAssinar();return}}
+  abrir();
 }
 function sair(aba){if(typeof TUT!=="undefined"&&TUT.ativo){TUT.ativo=false;const c=document.getElementById("tut-card");if(c)c.remove();document.querySelectorAll(".tut-alvo").forEach(e=>e.classList.remove("tut-alvo"))}if(V.canal)vozSair(true);Object.keys(VISITANTE_MEM).forEach(k=>delete VISITANTE_MEM[k]);S.unsub.forEach(f=>{try{f()}catch(e){}});S.unsub=[];pararComunidadeFB();pausarPomo();clearInterval(C.tick);Object.assign(C,{rodando:false,inicio:0,acum:0,materia:""});S.conq=null;Object.assign(S,{pubOk:false,srv:undefined,resg:{},resgOk:false,rankOk:false,gCache:null,dt:0});SRV.tentados={};SRV.fila=Promise.resolve();S.authTab=typeof aba==="string"?aba:"entrar";if(FB&&S.mode==="nuvem")FB.auth.signOut().catch(()=>{});
-  Object.assign(S,{mode:null,uid:null,perfil:null,plano:null,edital:null,pomoLog:null,pub:null,soc:{perfis:{},ranking:{},msgs:{},grupos:{},membros:{},conquistas:{}}});renderLogin()}
+  Object.assign(S,{mode:null,uid:null,perfil:null,plano:null,edital:null,pomoLog:null,pub:null,bloqueado:false,aposPagar:null,assinOk:false,pro:null,teste:null,soc:{perfis:{},ranking:{},msgs:{},grupos:{},membros:{},conquistas:{}}});renderLogin()}
 
 function perfilPadrao(nome){
   return {nome:nome?nome.split(" ")[0]:"",categoria:"",serie:"",turno:"manha",detalhe:"",temProva:false,nomeProva:"",dataProva:"",materias:[],
@@ -2669,21 +2679,77 @@ const testeAte=()=>S.teste&&S.teste.inicio?tsMs(S.teste.inicio)+3*864e5:0;
 // o Pro foi desligado pelo dono: tudo liberado para todos (para religar, troque para true)
 const PRO_LIGADO=false;
 const ehPro=()=>!PRO_LIGADO||ehAdmin()||assinaturaAtiva()||testeAte()>Date.now();
+/* ===== Acesso pago: para usar o Logic Academy é preciso a assinatura mensal (R$ 10,00, Pix pelo WhatsApp, liberada no painel de administração).
+   Não pagam: o dono (ADMIN_EMAIL) e as contas de ISENTOS. Quem ainda tem Pro ou teste em vigor continua até a data. */
+const ACESSO_PAGO=true,PRECO_ACESSO="R$ 10,00";
+const ISENTOS=["S36YiPfilEMKpGzjO4FtIH3oh813"]; // a conta que ganhou o emblema especial (moldura de joias e título "Rumo à Medicina")
+const chaveAcesso=()=>"la_acesso_"+S.uid;
+function acessoLiberado(){
+  if(!ACESSO_PAGO||S.sample)return true;
+  if(S.mode!=="nuvem"||!FBM()||!S.uid)return false;
+  if(ehAdmin()||ISENTOS.includes(S.uid)||assinaturaAtiva()||testeAte()>Date.now())return true;
+  // sem internet: vale a última validade vista neste aparelho
+  if(S.assinCache){let ate=0;try{ate=+localStorage.getItem(chaveAcesso())||0}catch(e){}return ate>Date.now()}
+  return false}
+const diasDeAcesso=()=>S.pro&&S.pro.ate?Math.ceil((tsMs(S.pro.ate)-Date.now())/864e5):null;
+// confere o acesso sempre que a assinatura muda: libera na hora depois do pagamento e bloqueia quando vence
+function verificarAcesso(){
+  if(!ACESSO_PAGO||S.mode!=="nuvem"||!S.assinOk)return;
+  if(acessoLiberado()){if(S.bloqueado){S.bloqueado=false;const f=S.aposPagar;S.aposPagar=null;toast("Assinatura ativa! Bons estudos. 🎉");if(f)f()}}
+  else{if(!S.bloqueado){S.bloqueado=true;if(!S.aposPagar)S.aposPagar=()=>{S.view="inicio";renderShell()}}renderAssinar()}}
+function esperarAssinatura(ms=9000){return new Promise(res=>{const t0=Date.now();(function v(){if(S.assinOk||Date.now()-t0>ms)res();else setTimeout(v,120)})()})}
+function renderAssinar(){
+  document.body.classList.remove("menu-aberto");
+  const pend=S.pedidoAcesso&&S.pedidoAcesso.status==="pendente",venceu=S.pro&&S.pro.ate&&tsMs(S.pro.ate)<=Date.now();
+  const nome=(S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"";
+  $("#root").innerHTML=`<div class="auth acesso">
+    <section class="auth-l">
+      <div class="brand"><span class="logo">${LOGO}</span>Logic Academy</div>
+      <div class="stack sm">
+        <span class="pill solid" style="align-self:flex-start">Assinatura</span>
+        <h1>${venceu?`${nome?esc(nome)+", sua":"Sua"} assinatura venceu`:`${nome?esc(nome)+", falta":"Falta"} só um passo`}</h1>
+        <p class="muted" style="font-size:1.02rem;max-width:50ch">${venceu?"Renove para voltar a estudar. Seu plano, seu progresso e suas conquistas continuam guardados.":"Para usar o Logic Academy, assine por "+PRECO_ACESSO+" por mês. Seu plano, seu progresso e suas conquistas ficam salvos na sua conta."}</p>
+      </div>
+      <div class="card stack acesso-card" style="max-width:440px">
+        <div class="acesso-preco"><b>${PRECO_ACESSO}</b><span>/mês</span></div>
+        <p class="small muted" style="margin:0">Pagamento por Pix, combinado pelo WhatsApp. Vale 31 dias, sem renovação automática.</p>
+        <button class="btn primary" type="button" id="ac-assinar" style="padding:12px">${ico("send")}${pend?"Falar de novo no WhatsApp":venceu?"Renovar pelo WhatsApp":"Assinar pelo WhatsApp"}</button>
+        ${pend?`<p class="small" style="margin:0"><b>Pedido enviado.</b> Assim que o Pix for confirmado, esta tela abre sozinha.</p>`:`<p class="small muted" style="margin:0">Depois de enviar a mensagem e pagar, a liberação acontece em poucos minutos e esta tela abre sozinha.</p>`}
+        <p class="hint">Código da sua conta: <span class="mono">${esc(S.uid||"")}</span></p>
+        <div class="row" style="gap:8px"><button class="btn ghost sm" type="button" id="ac-sair">Sair da conta</button><a class="btn ghost sm" href="termos.html#teste-gratis" target="_blank" rel="noopener">Termos</a></div>
+      </div>
+    </section>
+    <aside class="auth-r">
+      <div class="brand"><span class="logo">${LOGO}</span></div>
+      ${BENEFICIOS_ACESSO.map(([i,t,d])=>`<div class="feat"><span>${ico(i)}</span><div><b>${t}</b><p>${d}</p></div></div>`).join("")}
+    </aside></div>`;
+  $("#ac-sair").onclick=()=>{S.bloqueado=false;S.aposPagar=null;sair()};
+  $("#ac-assinar").onclick=()=>{const url=linkPedidoWhatsApp("mensal");if(!url){toast("A assinatura pelo WhatsApp ainda não foi configurada. Tente de novo em instantes.");return}
+    let w=null;try{w=window.open(url,"_blank")}catch(e){}if(!w)location.href=url;else{try{w.opener=null}catch(e){}}
+    registrarPedido("mensal").then(()=>{S.pedidoAcesso={status:"pendente"};if(S.bloqueado)renderAssinar()}).catch(()=>{})}}
+const BENEFICIOS_ACESSO=[["target","Missões ENEM e PISM 1","Trilha do ano inteiro, raio-x do que mais cai e banco só com questões da prova."],
+  ["qbank","Mais de 8 mil questões oficiais","ENEM, EsPCEx, PISM e PAS, todas com gabarito oficial e filtros por assunto."],
+  ["spark","Plano semanal automático","Distribui suas horas por matéria conforme a dificuldade e o tempo livre de cada dia."],
+  ["timer","Pomodoro, revisões e estatísticas","Cada sessão entra no seu histórico; o app lembra o que revisar."],
+  ["book","Inglês, Francês e Biblioteca","Cursos completos do A1 ao C2 e e-books por matéria com sumário inteligente."],
+  ["users","Grupos de estudo e desafios","Estude com amigos, suba no ranking e ganhe conquistas."]];
 const podeTestar=()=>FBM()&&!!S.uid&&S.testeOk===true&&!S.teste&&!(S.pro&&S.pro.ate);
 const TERMOS_TESTE="v1";
 const LIMITE_IA_GRATIS=3;
 function iniciarAssinatura(){
-  S.pro=null;S.teste=null;S.testeOk=false;S.admins={};const eraPro=()=>ehPro();
+  S.pro=null;S.teste=null;S.testeOk=false;S.assinOk=false;S.assinCache=false;S.pedidoAcesso=null;S.admins={};const eraPro=()=>ehPro();
+  S.unsub.push(S.db.collection("pedidos").doc(S.uid).onSnapshot(d=>{S.pedidoAcesso=d.exists?d.data():null;if(S.bloqueado)renderAssinar()},()=>{}));
   // quem é administrador (para mostrar "Administrador" no perfil) e o número do WhatsApp que recebe as assinaturas
   S.unsub.push(S.db.collection("admins").onSnapshot(q=>{const m={};q.forEach(d=>m[d.id]=true);S.admins=m;renderSideUser()},()=>{}));
   S.unsub.push(S.db.collection("config").doc("pagamento").onSnapshot(d=>{S.numeroPagamento=d.exists&&d.data().whatsapp||""},()=>{}));
   if(ehAdmin())S.db.collection("admins").doc(S.uid).set({desde:firebase.firestore.FieldValue.serverTimestamp()},{merge:true}).catch(e=>console.warn("admin",e&&e.code));
   S.unsub.push(S.db.collection("testes").doc(S.uid).onSnapshot(d=>{if(d.metadata.hasPendingWrites)return;S.teste=d.exists?d.data():null;S.testeOk=true;
-    renderSideUser();LAComp.Pro.anuncios(appPro);if(S.view==="pro")renderPro();if(PRO_LIGADO&&ehPro())linkGrupoWhatsApp().catch(()=>{})},e=>{console.warn("teste",e&&e.code);S.testeOk=true}));
+    renderSideUser();LAComp.Pro.anuncios(appPro);if(S.view==="pro")renderPro();if(PRO_LIGADO&&ehPro())linkGrupoWhatsApp().catch(()=>{});verificarAcesso()},e=>{console.warn("teste",e&&e.code);S.testeOk=true}));
   S.unsub.push(S.db.collection("assinaturas").doc(S.uid).onSnapshot(d=>{const antes=eraPro();S.pro=d.exists?d.data():null;
+    S.assinCache=!!d.metadata.fromCache&&!d.exists;if(d.exists&&S.pro.ate)try{localStorage.setItem(chaveAcesso(),String(tsMs(S.pro.ate)))}catch(e){}
     if(!antes&&ehPro()&&S.aguardandoPro){S.aguardandoPro=false;toast("Pagamento aprovado! Seu Logic Academy Pro está ativo. 🎉")}
     renderSideUser();LAComp.Pro.anuncios(appPro);if(S.view==="pro")renderPro();
-    if(ehPro()&&!antes)document.querySelectorAll(".pro-modal").forEach(x=>x.remove())},e=>console.warn("assinatura",e&&e.code)))}
+    if(ehPro()&&!antes)document.querySelectorAll(".pro-modal").forEach(x=>x.remove());S.assinOk=true;verificarAcesso()},e=>{console.warn("assinatura",e&&e.code);S.assinOk=true;S.assinCache=true;verificarAcesso()}))}
 // pergunta à mentoria no plano grátis: soma 1 no contador do dia (as regras do Firestore recusam a 4ª)
 async function usarCotaIA(){
   if(ehPro()||!FBM()||S.sample)return true;
@@ -2717,7 +2783,7 @@ async function linkGrupoWhatsApp(){
 function linkPedidoWhatsApp(plano){
   const n=String(S.numeroPagamento||"").replace(/\D/g,"");if(n.length<12)return null;
   const nome=(S.pub&&S.pub.nome)||(S.perfil&&S.perfil.nome)||"",email=contaEmail();
-  const msg=`Olá! Quero assinar o Logic Academy Pro: plano ${plano==="anual"?"anual (R$ 49,90)":"mensal (R$ 5,00)"}.\nNome: ${nome}\nE-mail: ${email}\nCódigo da conta: ${S.uid}`;
+  const msg=`Olá! Quero assinar o Logic Academy: plano mensal (${PRECO_ACESSO}).\nNome: ${nome}\nE-mail: ${email}\nCódigo da conta: ${S.uid}`;
   return `https://wa.me/${n}?text=${encodeURIComponent(msg)}`}
 async function registrarPedido(plano){
   await S.db.collection("pedidos").doc(S.uid).set({plano,status:"pendente",em:firebase.firestore.FieldValue.serverTimestamp(),
@@ -2748,7 +2814,7 @@ const nomeAdm=uid=>(S.soc&&S.soc.perfis&&S.soc.perfis[uid]&&S.soc.perfis[uid].no
 const dataCurta=ms=>ms?new Date(ms).toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit",year:"2-digit"}):"—";
 async function renderAdmin(){
   if(!ehAdmin()){go("inicio");return}
-  $("#main").innerHTML=`<div class="page admin-page" style="max-width:980px">${pageHead("Administração","Libere o Pro dos alunos, acompanhe pedidos, assinantes e testes grátis.")}<div class="card row muted"><span class="spinner"></span>Carregando…</div></div>`;
+  $("#main").innerHTML=`<div class="page admin-page" style="max-width:980px">${pageHead("Administração","Libere a assinatura dos alunos e acompanhe pedidos e assinantes.")}<div class="card row muted"><span class="spinner"></span>Carregando…</div></div>`;
   let ped=[],ass=[],tes=[],cfg={},grupo="";
   try{const [a,b,c,d,e]=await Promise.all([S.db.collection("pedidos").where("status","==","pendente").get(),S.db.collection("assinaturas").get(),S.db.collection("testes").get(),
       S.db.collection("config").doc("pagamento").get(),S.db.collection("privado").doc("whatsapp").get()]);
@@ -2759,11 +2825,11 @@ async function renderAdmin(){
   catch(e){console.warn("admin",e&&e.code);$("#main").innerHTML=`<div class="page">${pageHead("Administração")}<div class="card"><p>Não foi possível carregar (${esc(e&&e.code||"erro")}). As regras novas podem levar alguns minutos para valer; tente de novo.</p></div></div>`;return}
   if(S.view!=="admin")return;
   const ativosTeste=tes.filter(t=>tsMs(t.inicio)+3*864e5>Date.now());
-  const linhaPedido=p=>`<div class="li adm-li"><div style="min-width:0"><div class="nm">${esc(p.nome||nomeAdm(p.uid)||"(sem nome)")} <span class="pill">${p.plano==="anual"?"Anual · R$ 49,90":"Mensal · R$ 5,00"}</span></div>
+  const linhaPedido=p=>`<div class="li adm-li"><div style="min-width:0"><div class="nm">${esc(p.nome||nomeAdm(p.uid)||"(sem nome)")} <span class="pill">${p.plano==="anual"?"Anual":"Mensal · "+PRECO_ACESSO}</span></div>
       <div class="small muted">${esc(p.email||"")} · pedido em ${dataCurta(tsMs(p.em))} · código <span class="mono">${esc(p.uid)}</span></div></div>
       <div class="row" style="gap:6px"><button class="btn sm primary" type="button" data-adm-liberar="${esc(p.uid)}" data-plano="${esc(p.plano)}">Pago: liberar ${p.plano==="anual"?"1 ano":"1 mês"}</button><button class="btn sm ghost" type="button" data-adm-recusar="${esc(p.uid)}">Recusar</button></div></div>`;
   $("#main").innerHTML=`<div class="page admin-page" style="max-width:980px">
-    ${pageHead("Administração","Libere o Pro dos alunos, acompanhe pedidos, assinantes e testes grátis.")}
+    ${pageHead("Administração","Libere a assinatura dos alunos e acompanhe pedidos e assinantes.")}
     <div class="adm-resumo"><div class="stat"><div class="eyebrow">Pedidos pendentes</div><div class="v">${ped.length}</div></div>
       <div class="stat"><div class="eyebrow">Assinantes ativos</div><div class="v">${ass.length}</div></div>
       <div class="stat"><div class="eyebrow">Testes grátis ativos</div><div class="v">${ativosTeste.length}</div><div class="s">${tes.length} no total</div></div></div>
@@ -2771,10 +2837,10 @@ async function renderAdmin(){
     <div class="card"><div class="card-h"><h3>Pedidos de assinatura</h3><span class="small muted">confira o Pix antes de liberar</span></div>
       ${ped.length?`<div class="list">${ped.map(linhaPedido).join("")}</div>`:`<p class="small muted">Nenhum pedido pendente.</p>`}</div>
     <div class="card" style="margin-top:14px"><div class="card-h"><h3>Liberar pelo código da conta</h3></div>
-      <p class="small muted">O código vem na mensagem do WhatsApp ("Código da conta"). Os dias se somam ao Pro que a pessoa já tiver.</p>
+      <p class="small muted">O código vem na mensagem do WhatsApp ("Código da conta"). Os dias se somam ao acesso que a pessoa já tiver.</p>
       <form class="row adm-form" id="adm-manual"><input type="text" id="adm-uid" placeholder="Código da conta" autocomplete="off" required style="flex:1;min-width:200px">
         <select id="adm-plano"><option value="mensal">1 mês (31 dias)</option><option value="anual">1 ano (366 dias)</option><option value="cortesia">Cortesia (7 dias)</option></select>
-        <button class="btn primary" type="submit">Liberar Pro</button></form></div>
+        <button class="btn primary" type="submit">Liberar acesso</button></form></div>
     <div class="card" style="margin-top:14px"><div class="card-h"><h3>Assinantes ativos</h3></div>
       ${ass.length?`<div class="list">${ass.map(a=>`<div class="li adm-li"><div style="min-width:0"><div class="nm">${esc(nomeAdm(a.uid)||"(sem nome)")} <span class="pill">${esc(a.plano||"")}</span></div><div class="small muted">até ${dataCurta(tsMs(a.ate))} · <span class="mono">${esc(a.uid)}</span></div></div>
         <div class="row" style="gap:6px"><button class="btn sm" type="button" data-adm-liberar="${esc(a.uid)}" data-plano="mensal">+1 mês</button><button class="btn sm ghost danger" type="button" data-adm-cancelar="${esc(a.uid)}">Encerrar</button></div></div>`).join("")}</div>`:`<p class="small muted">Nenhum assinante ativo.</p>`}</div>
@@ -2792,7 +2858,7 @@ async function renderAdmin(){
   $("#main").onclick=async e=>{
     const l=e.target.closest("[data-adm-liberar]"),r=e.target.closest("[data-adm-recusar]"),c=e.target.closest("[data-adm-cancelar]");
     try{
-      if(l){l.disabled=true;await liberarPro(l.dataset.admLiberar,l.dataset.plano,DIAS_PLANO[l.dataset.plano]||31);toast("Pro liberado!");recarregar()}
+      if(l){l.disabled=true;await liberarPro(l.dataset.admLiberar,l.dataset.plano,DIAS_PLANO[l.dataset.plano]||31);toast("Acesso liberado!");recarregar()}
       else if(r){r.disabled=true;await S.db.collection("pedidos").doc(r.dataset.admRecusar).update({status:"recusado"});toast("Pedido recusado.");recarregar()}
       else if(c){if(c.dataset.ok!=="1"){c.dataset.ok="1";c.textContent="Toque de novo para encerrar";return}await cancelarPro(c.dataset.admCancelar);toast("Pro encerrado.");recarregar()}
       else if(e.target.id==="adm-copiar"){const t=tes.map(x=>x.telefone).filter(Boolean).join("\n");try{await navigator.clipboard.writeText(t);toast(`${tes.length} números copiados.`)}catch(x){prompt("Copie os números:",t)}}
@@ -2800,7 +2866,7 @@ async function renderAdmin(){
   $("#adm-manual").onsubmit=async e=>{e.preventDefault();const uid=$("#adm-uid").value.trim(),pl=$("#adm-plano").value;
     if(!/^[A-Za-z0-9]{20,40}$/.test(uid)){toast("Código inválido: copie o código da conta exatamente como veio na mensagem.");return}
     const b=e.target.querySelector("[type=submit]");b.disabled=true;
-    try{await liberarPro(uid,pl,DIAS_PLANO[pl]);toast("Pro liberado!");recarregar()}catch(x){b.disabled=false;toast("Não foi possível liberar ("+(x&&x.code||"erro")+").")}};
+    try{await liberarPro(uid,pl,DIAS_PLANO[pl]);toast("Acesso liberado!");recarregar()}catch(x){b.disabled=false;toast("Não foi possível liberar ("+(x&&x.code||"erro")+").")}};
   $("#adm-cfg").onsubmit=async e=>{e.preventDefault();const zap=$("#adm-zap").value.trim(),gr=$("#adm-grupo").value.trim(),num=zap?LAComp.Pro.celular(zap):"";
     if(zap&&!num){toast("Número inválido: use DDD + 9 dígitos.");return}
     if(gr&&!/^https:\/\/chat\.whatsapp\.com\/\S+$/i.test(gr)){toast("O link do grupo precisa começar com https://chat.whatsapp.com/");return}
@@ -2809,8 +2875,9 @@ async function renderAdmin(){
 }
 
 /* ---- Novidades da versão (js/componentes/PatchNotesModal.js): aparece uma vez por versão ---- */
-const APP_VERSAO="3.37";
+const APP_VERSAO="3.38";
 window.LA_PATCH_NOTES={versao:APP_VERSAO,titulo:"Novidades no Logic Academy",itens:[
+  {t:"Logic Academy por assinatura",d:"Para usar o Logic Academy agora é preciso a assinatura de R$ 10,00 por mês (Pix pelo WhatsApp, sem renovação automática). Com ela, tudo fica liberado: Missões, banco de questões, plano semanal, idiomas, Biblioteca e comunidade, sem anúncios. A Mentoria com IA saiu do app. Para renovar, vá em Configurações."},
   {t:"Missão ENEM 🎯 e ENEM 2024 e 2025 no banco",d:"Nova Missão ENEM, com foto, música tema e a mesma fórmula da Missão PISM 1: uma trilha própria pela Matriz de Referência do ENEM (Guia do ano de fevereiro a novembro e Reta final de 6 semanas, começando pelo que mais cai), o raio-x de 17 edições por área, matéria e assunto, as provas antigas e o banco especializado. O banco de questões ganhou as provas do ENEM 2024 e 2025 (caderno azul, com gabarito oficial) e 4 questões antigas que faltavam."},
   {t:"Trilha da Missão PISM 1 🗺️",d:"Na Missão PISM 1 tem uma trilha para seguir etapa por etapa: o Guia do ano (de fevereiro a novembro, pelo programa oficial) e a Reta final (6 semanas, começando pelo que mais cai). Cada etapa tem o que estudar, atalho para a página do livro e um treino com questões reais do PISM 1. Concluiu? Estrelas, XP, ofensiva de dias seguidos e comemoração!"},
   {t:"Livros da Biblioteca nos apps 📖",d:"No app de Android e no programa de Windows, os livros da Biblioteca abrem no navegador do aparelho (com sua permissão), já na página do assunto que você tocou."},
@@ -3943,7 +4010,7 @@ function qbDetalhe(x,lista){
       return `<div class="qb-alt ${cls}"><button type="button" class="qb-alt-b" role="radio" aria-checked="${sel===k}" data-qalt="${k}" ${resp?"disabled":""}><span class="qb-l">${L}</span><span class="qb-at">${img?`<img src="${esc(img)}" alt="Alternativa ${L}" loading="lazy">`:""}${t?qbMd(t):""}</span></button>
         ${resp?"":`<button type="button" class="btn icon ghost sm qb-cut" data-qcut="${k}" title="Riscar alternativa ${L}" aria-label="Riscar alternativa ${L}" ${x.ce?"hidden":""}>${ico("cut")}</button>`}</div>`}).join("")}</div>
     ${resp?`<div class="qb-resultado ${sel===x.r?"ok":"no"}">${sel===x.r?"<b>Você acertou!</b>":`<b>Resposta correta: ${qbLNome(x,x.r)}</b>${sel!=null?` · você marcou ${qbLNome(x,sel)}.`:"."}`} <span class="small">${x.gf==="resolvido"?"Gabarito resolvido pelo Logic Academy (a prova não trazia gabarito).":QB_FONTE_GAB[qbProva(x)]}</span>${x.exp?`<div class="qb-exp small"><b>Explicação:</b> ${qbMd(x.exp)}</div>`:""}
-      <div class="row" style="gap:8px;margin-top:8px"><button class="btn sm" type="button" id="qb-ia">${ico("mentor")}${sel===x.r?"Pedir explicação à mentora":"Entender meu erro com a mentora"}</button>${sel!==x.r?`<button class="btn sm primary" type="button" id="qb-corrigir">${ico("repeat")}Tentar de novo</button>`:""}</div></div>`:""}
+      ${sel!==x.r?`<div class="row" style="gap:8px;margin-top:8px"><button class="btn sm primary" type="button" id="qb-corrigir">${ico("repeat")}Tentar de novo</button></div>`:""}</div>`:""}
     <div class="row qb-acoes">
       <button class="btn sm ghost" type="button" id="qb-ant" ${i<=0?"disabled":""}>${ico("back")}Anterior</button>
       <div class="row" style="gap:8px;margin-left:auto">${resp?`<button class="btn sm" type="button" id="qb-refazer">Refazer</button>`:`<button class="btn primary" type="button" id="qb-resp" ${sel==null?"disabled":""}>Responder</button>`}
@@ -4899,7 +4966,6 @@ const TUT_PASSOS=[
   {v:"cronometro",c:"estudos",e:"⏱️",t:"Cronômetro",x:"Prefere estudar sem relógio apertando? O cronômetro conta o tempo livremente e você para quando terminar.",d:"Ao finalizar, anote o assunto para agendar revisões em 1, 7 e 30 dias.",a:"#main .card"},
   {v:"desafios",c:"estudos",e:"🏆",t:"Desafios",x:"Missões diárias, semanais e mensais que viram XP, níveis, molduras e títulos para o seu perfil. Estudar vira jogo!",d:"Quando um desafio fica pronto, aparece o botão de resgatar.",a:"#main .card"},
   {v:"estatisticas",c:"estudos",e:"📊",t:"Estatísticas",x:"Gráficos do seu tempo de estudo, das matérias e dos acertos. Ótimo para descobrir onde focar.",d:"Compare as últimas semanas para ver sua evolução.",a:"#main .card"},
-  {v:"mentoria",c:"estudos",e:"🤖",t:"Mentoria com IA",x:"Uma mentora que conhece seus dados de estudo. Peça um plano, tire dúvidas ou peça para explicar uma questão que você errou.",d:"Pergunte: <i>“o que eu devo revisar esta semana?”</i>",a:"#main .card"},
   {v:"edital",c:"prova",e:"🔎",t:"Escanear edital",x:"Envie o edital ou a ficha de orientação da prova da escola (FOA). A IA separa todos os tópicos por matéria para você.",d:"Pode mandar uma ficha por matéria e escolher <b>Juntar com a prova atual</b>.",a:"#ed-body"},
   {v:"topicos",c:"prova",e:"✅",t:"Tópicos da prova",x:"A lista do que cai na prova, matéria por matéria. Marque o que já estudou e acompanhe a contagem regressiva até o dia.",d:"Use <b>Fazer triagem da prova</b> para encaixar a prova na sua semana.",a:"#main .card",se:()=>!!S.edital},
   {v:"flashcards",c:"prova",e:"🃏",t:"Flashcards",x:"Crie cartões de pergunta e resposta ou peça para a IA montar. A revisão volta no dia certo para você não esquecer.",d:"Revise com o teclado: espaço vira o cartão; 1, 2 e 3 dão a nota.",a:"#main .card, #fc-novo"},
@@ -4996,7 +5062,7 @@ function renderTutorial(){
 // e ninguém vê o progresso dos outros. As telas antigas continuam no código, mas não aparecem nem abrem.
 const SO_CONVERSA=true,TELAS_SOCIAIS=new Set(["grupos","buscarGrupos","voz","chat","amigos","ranking"]);
 const NAV=[
-  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["simulados","Simulados","target"],["missoes","Missões","flag"],["biblioteca","Biblioteca","biblio"],["estante","Minha estante","bookmark"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"],["mentoria","Mentoria com IA","mentor"]]],
+  ["Estudos",[["inicio","Início","home"],["semana","Minha semana","cal"],["questoes","Banco de questões","qbank"],["simulados","Simulados","target"],["missoes","Missões","flag"],["biblioteca","Biblioteca","biblio"],["estante","Minha estante","bookmark"],["idiomas","Idiomas","book"],["pomodoro","Pomodoro","timer"],["cronometro","Cronômetro","watch"],["desafios","Desafios","trophy"],["estatisticas","Estatísticas","chart"]]],
   ["Prova",[["edital","Escanear edital","scan"],["topicos","Tópicos da prova","list"],["flashcards","Flashcards","cartas"]]],
   ["Conversas",[["mensagens","Mensagens","send"]]],
   ["Conta",[["perfil","Meu perfil","user"],["aparencia","Aparência","palette"],["config","Configurações","gear"],["admin","Administração","lock"]]],
@@ -5068,11 +5134,11 @@ function renderSideUser(){
   el.innerHTML=`${S.mode==="nuvem"?avatar(S.uid):`<span class="avatar" aria-hidden="true">${esc(nm[0]||"V").toUpperCase()}</span>`}<div style="min-width:0"><div class="nm">${esc(nm)}${PRO_LIGADO&&S.mode==="nuvem"&&ehPro()?' <span class="pro-tag">PRO</span>':""}</div><div class="sub" title="${esc(contaEmail())}">${S.mode==="nuvem"&&ehAdmin()?"🛡 Administrador":S.mode==="nuvem"?(esc(contaEmail())||"Salvo na nuvem"):"Visitante · nada é salvo"}</div></div>`;
 }
 function progEdital(){if(!S.edital)return 0;const all=S.edital.materias.flatMap(m=>m.topicos);return all.length?Math.round(all.filter(t=>t.feito).length/all.length*100):0}
-function go(v){if(S.view==="simulados"&&v!=="simulados"&&window.LAComp&&LAComp.Simulados&&!LAComp.Simulados.sairPermitido())return;if(v==="pro"&&!PRO_LIGADO)v="inicio";if(v==="compartilhadas"){v="estante";if(window.LAComp&&LAComp.Estante&&LAComp.Estante.verComp)LAComp.Estante.verComp()}if(S.view==="missoes"&&v!=="missoes"&&window.LAComp&&LAComp.Missoes)LAComp.Missoes.parar();if(S.view==="biblioteca"&&v!=="biblioteca"&&window.LAComp&&LAComp.Biblioteca&&LAComp.Biblioteca.sair)LAComp.Biblioteca.sair();pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();if((S.view==="estante"||S.view==="compartilhadas")&&v!==S.view&&window.LAComp&&LAComp.Estante)LAComp.Estante.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
+function go(v){if(S.view==="simulados"&&v!=="simulados"&&window.LAComp&&LAComp.Simulados&&!LAComp.Simulados.sairPermitido())return;if(v==="pro"&&!PRO_LIGADO||v==="mentoria")v="inicio";if(v==="compartilhadas"){v="estante";if(window.LAComp&&LAComp.Estante&&LAComp.Estante.verComp)LAComp.Estante.verComp()}if(S.view==="missoes"&&v!=="missoes"&&window.LAComp&&LAComp.Missoes)LAComp.Missoes.parar();if(S.view==="biblioteca"&&v!=="biblioteca"&&window.LAComp&&LAComp.Biblioteca&&LAComp.Biblioteca.sair)LAComp.Biblioteca.sair();pararTela();if(S.view==="idiomas"&&v!=="idiomas"&&window.LAComp&&LAComp.IdiomasView)LAComp.IdiomasView.sairDaAba();if((S.view==="estante"||S.view==="compartilhadas")&&v!==S.view&&window.LAComp&&LAComp.Estante)LAComp.Estante.sairDaAba();S.view=v;if(v!=="grupos")S.grupoAberto=null;const sh=$("#shell");if(!sh){renderShell();return}fecharMenu();renderView();scrollTo(0,0)}
 function renderView(){
   $$("[data-go]").forEach(a=>{a.classList.toggle("on",a.dataset.go===S.view);if(a.dataset.go===S.view){const g=a.closest(".nav-grp.fech");if(g){g.classList.remove("fech");g.querySelectorAll("a").forEach(x=>x.removeAttribute("tabindex"));const b=g.previousElementSibling;if(b)b.setAttribute("aria-expanded","true")}}if(a.dataset.go==="topicos"){a.hidden=!S.edital;const b=a.querySelector(".badge");if(S.edital){if(b)b.textContent=progEdital()+"%";else a.insertAdjacentHTML("beforeend",`<span class="badge">${progEdital()}%</span>`)}}});
   if(SO_CONVERSA&&TELAS_SOCIAIS.has(S.view)){S.view=S.view==="amigos"?"mensagens":"inicio";try{history.replaceState(history.state,"","#"+S.view)}catch(e){}renderView();return}
-  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,estante:renderEstante,simulados:renderSimulados,missoes:renderMissoes,biblioteca:renderBiblioteca,compartilhadas:renderCompartilhadas,idiomas:renderIdiomas,pro:renderPro,admin:renderAdmin,flashcards:renderFlashcards,tutorial:renderTutorial,mentoria:renderMentoria,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
+  const f={inicio:renderInicio,semana:renderSemana,pomodoro:renderPomodoro,cronometro:renderCronometro,edital:renderEdital,topicos:renderTopicos,triagemProva:renderTriagemProva,grupos:()=>FBM()?renderGruposFB():renderGrupos(),chat:()=>FBM()?renderChatFB():renderChat(),mensagens:()=>FBM()?renderMensagensFB():(($("#main").innerHTML=bloqueado("Mensagens")),ligarBloqueado()),amigos:()=>FBM()?renderAmigosFB():(($("#main").innerHTML=bloqueado("Amigos")),ligarBloqueado()),voz:renderVoz,buscarGrupos:()=>FBM()?renderBuscarGruposFB():(($("#main").innerHTML=bloqueado("Buscar grupos")),ligarBloqueado()),questoes:renderQuestoes,estante:renderEstante,simulados:renderSimulados,missoes:renderMissoes,biblioteca:renderBiblioteca,compartilhadas:renderCompartilhadas,idiomas:renderIdiomas,pro:renderPro,admin:renderAdmin,flashcards:renderFlashcards,tutorial:renderTutorial,desafios:renderDesafios,aparencia:renderAparencia,estatisticas:renderEstatisticas,ranking:renderRanking,perfil:renderPerfil,config:renderConfig}[S.view]||renderInicio;
   f();
 }
 const pageHead=(t,sub,acoes)=>`<div class="page-h"><div><h1>${t}</h1>${sub?`<p>${sub}</p>`:""}</div>${acoes?`<div class="row">${acoes}</div>`:""}</div>`;
@@ -6789,6 +6855,7 @@ function renderConfig(){
     ${pageHead("Configurações")}
     <div class="stack">
       <div class="card small muted" id="cf-versao">Logic Academy ${APP_VERSAO}${APP_LOCAL?` · app de Android ${APP_CANAL==="teste"?"de testes":"oficial"} nº ${APP_BUILD||"?"}${window.LogicAndroid&&window.LogicAndroid.atualizarApp?" · atualiza por dentro ✅":" · versão antiga (instale o app novo uma vez)"}`:EH_APP?` · app ${esc(appVersao()||"")}`:""}</div>
+      ${ACESSO_PAGO&&S.mode==="nuvem"?`<div class="card row" style="justify-content:space-between;flex-wrap:wrap;gap:10px"><div><h3>Assinatura</h3><p class="small muted">${ehAdmin()||ISENTOS.includes(S.uid)?"Acesso liberado sem cobrança nesta conta.":S.pro&&S.pro.ate&&tsMs(S.pro.ate)>Date.now()?`Ativa até ${new Date(tsMs(S.pro.ate)).toLocaleDateString("pt-BR",{day:"2-digit",month:"long",year:"numeric"})} · ${PRECO_ACESSO}/mês`:`${PRECO_ACESSO}/mês`}</p></div>${ehAdmin()||ISENTOS.includes(S.uid)?"":`<button class="btn" type="button" id="cf-renovar">${ico("send")}Renovar pelo WhatsApp</button>`}</div>`:""}
       <div class="card row" style="justify-content:space-between"><div><h3>Aparência</h3><p class="small muted">Estilo ${esc((ESTILOS.find(e=>e.k===uiAtual().estilo)||ESTILOS[0]).n)} · modo ${({auto:"automático",claro:"claro",escuro:"escuro"})[uiAtual().modo]}</p></div><button class="btn" type="button" data-link="aparencia">${ico("palette")}Personalizar</button></div>
       ${(()=>{const T=garantirTotais(S.pomoLog).tot;const mats=Object.entries(T.mat).sort((a,b)=>b[1]-a[1]);const mx=mats.length?mats[0][1]:1;
         return `<div class="card"><div class="card-h"><div><h3>Tempo estudado no app</h3><p class="small muted">Soma do cronômetro e do pomodoro${S.mode==="nuvem"?", salva na sua conta":", não salva (modo visitante)"}.</p></div><button class="btn sm" type="button" id="cf-crono">${ico("watch")}Abrir cronômetro</button></div>
@@ -6829,6 +6896,7 @@ function renderConfig(){
   const osm=$("#cf-off-sim");if(osm)osm.onclick=async()=>{if(!navigator.onLine){toast("Conecte-se à internet para baixar.");return}osm.disabled=true;await baixarSimuladosNoAparelho();osm.disabled=false};
   $("#cf-meta").onchange=e=>{S.perfil.metaDia=+e.target.value;gravar("perfil",S.perfil);toast("Meta diária salva.");renderConfig()};
   $("#cf-ed").onclick=abrirEditorEstudos;
+  const rn=$("#cf-renovar");if(rn)rn.onclick=()=>{const url=linkPedidoWhatsApp("mensal");if(!url){toast("A renovação pelo WhatsApp ainda não foi configurada.");return}let w=null;try{w=window.open(url,"_blank")}catch(e){}if(!w)location.href=url;registrarPedido("mensal").catch(()=>{})};
 
 }
 

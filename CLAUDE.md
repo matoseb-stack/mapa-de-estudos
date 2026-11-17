@@ -35,6 +35,15 @@ Quando o dono mandar um PDF de questões sem outra instrução:
 - `js/componentes/Biblioteca.js` (aba Biblioteca): e-books em `biblioteca/<matéria>/<arquivo>.pdf`, listados em `biblioteca/indice.json` (`{"livros":[{id,titulo,autor,materia,arquivo,paginas,descricao}]}`); matérias: mat, por, lit, fis, qui, bio, his, geo, fil, soc, ing, esp, red, out. Cada livro tem `sumario` (capítulos com assunto claro e subtópicos, cada um com a página do PDF) e o leitor (pdf.js) abre direto na página.
 - Só entram livros de uso livre (domínio público, licença aberta ou reprodução autorizada, citando a fonte). Livros de editora/pirateados (ex.: FME do Z-Library) não vão para o site. Os atuais são o Livro Didático Público da SEED-PR (2006), "permitida a reprodução total ou parcial, desde que citada a fonte".
 
+## Acesso pago (regra do dono)
+- Para usar o site é preciso conta + assinatura de R$ 10,00/mês (`ACESSO_PAGO`, `PRECO_ACESSO` no `index.html`): Pix combinado pelo WhatsApp, pedido em `pedidos/{uid}`, liberação no painel de administração (grava `assinaturas/{uid}.ate`, 31 dias). Sem modo visitante.
+- Não pagam: o dono (`ADMIN_EMAIL`) e as contas de `ISENTOS` (hoje só a conta do emblema especial, a mesma de `EXCLUSIVOS`). Não incluir mais ninguém sem o dono pedir.
+- A Mentoria com IA foi retirada (menu, rota e botões); os outros recursos de IA continuam.
+
+## Vídeos de divulgação (preferência do dono)
+- Não usar a voz sintetizada do Piper (soou artificial) nem legenda na tela.
+- Personagens e cenário com modelos 3D prontos da internet, de licença livre (citar a fonte), em vez de formas montadas à mão, para não parecer feito por IA.
+
 ## Apps (Android .apk e Windows .exe)
 - `apps/android` (Capacitor + código nativo em `apps/android/nativo`) e `apps/windows` (Electron). Os apps abrem o site oficial; o site fala com eles por `window.LogicAndroid` / `window.logicApp` (chamada em segundo plano, widget, lembretes agendados, versão).
 - `.github/workflows/apps.yml` monta e publica em `releases/download/apps/` quando `apps/**` muda.

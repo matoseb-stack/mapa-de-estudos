@@ -7,8 +7,7 @@
 (function () {
   "use strict";
   const PLANOS = [
-    { k: "mensal", nome: "Mensal", preco: "R$ 5,00", por: "/mês", obs: "Pague por Pix, combinando pelo WhatsApp. Vale por 31 dias." },
-    { k: "anual", nome: "Anual", preco: "R$ 49,90", por: "/ano", obs: "Equivale a R$ 4,16 por mês. Vale por 12 meses.", selo: "Economize 17%" }
+    { k: "mensal", nome: "Mensal", preco: "R$ 10,00", por: "/mês", obs: "Pague por Pix, combinando pelo WhatsApp. Vale por 31 dias." }
   ];
   const BENEFICIOS = [
     ["mentor", "Mentoria com IA sem limite", "Pergunte quanto quiser: o que revisar, planos de estudo e explicação de questões. No grátis são 3 perguntas por dia."],
