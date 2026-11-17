@@ -681,3 +681,11 @@ button.sim-alt:hover{border-color:var(--fg)}
 .tr-nos{gap:34px;padding-top:42px}
 .tr-no-l{min-height:0}
 .tr-nos{gap:58px}
+/* trilha: alternativas com texto (ENEM) */
+.tr-q-alts.tr-q-alts-t{flex-direction:column;gap:10px;padding:10px 16px 14px}
+.tr-alt.tr-alt-t{width:100%;height:auto;min-height:52px;display:flex;align-items:flex-start;gap:12px;padding:10px 14px;font-weight:500;font-size:.98rem;text-align:left;place-items:initial}
+.tr-alt.tr-alt-t>b{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;border:2px solid currentColor;font-weight:800;font-size:.95rem}
+.tr-alt.tr-alt-t>span{flex:1;min-width:0}
+.tr-alt.tr-alt-t p{margin:0}
+.tr-alt.tr-alt-t img{max-width:100%;height:auto;display:block;margin-top:4px}
+.tr-q-enun img{max-width:100%;height:auto}

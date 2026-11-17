@@ -1,31 +1,45 @@
-/* Missões — trilhas guiadas para uma prova específica.
-   Por enquanto: Missão PISM 1 (UFJF, Módulo I), com
-   - foto da universidade e música tema (composta aqui mesmo, no navegador, sem arquivo e sem direitos de terceiros);
-   - Raio-x da prova: o que mais e o que menos cai, em porcentagem, geral e por matéria (calculado das provas de 2009 a 2026);
-   - Provas antigas para consultar (PDF);
-   - Banco especializado: as questões de Módulo I do PISM, por assunto, dos que mais caem para os que menos caem.
+/* Missões — trilhas guiadas para uma prova específica: Missão PISM 1 (UFJF, Módulo I) e Missão ENEM. Cada uma tem
+   - foto e música tema (composta aqui mesmo, no navegador, sem arquivo e sem direitos de terceiros);
+   - Trilha gamificada (js/componentes/Trilha.js) com guia do ano e reta final;
+   - Raio-x da prova: o que mais e o que menos cai, em porcentagem, geral e por matéria (calculado das questões do banco);
+   - Provas antigas para consultar;
+   - Banco especializado: as questões da prova, por assunto, dos que mais caem para os que menos caem.
    Integração: LAComp.Missoes.render(container, app) e LAComp.Missoes.parar(). */
 (function () {
   "use strict";
   let APP = null, CONT = null;
-  const ST = { aberta: null, aba: "trilha", raiox: null, provas: null, mat: "" };
+  const ST = { aberta: null, aba: "trilha", d: {}, mat: "" };
   const esc = s => APP.esc(s);
   const SOM_KEY = "la_missao_som";
   const somLigado = () => { try { return localStorage.getItem(SOM_KEY) !== "0"; } catch (e) { return true; } };
   const MISSOES = [{
-    id: "pism1", nome: "Missão PISM 1", sub: "UFJF · Módulo I (1ª série do ensino médio)",
+    id: "pism1", nome: "Missão PISM 1", sub: "UFJF · Módulo I (1ª série do ensino médio)", curto: "PISM 1",
     foto: "missoes/pism1/ufjf.webp", credito: "Foto: campus da UFJF, Juiz de Fora (Wikimedia Commons, domínio público)",
-    texto: "Tudo o que você precisa para o Módulo I do PISM: o raio-x do que mais cai, as provas antigas e um banco só com questões do PISM 1."
+    texto: "Tudo o que você precisa para o Módulo I do PISM: a trilha, o raio-x do que mais cai, as provas antigas e um banco só com questões do PISM 1.",
+    trilha: { id: "pism1", dir: "missoes/pism1", arq: "pism", filtro: q => q.mo === "I", rotulo: "PISM" },
+    banco: { prova: "pism", mo: "I" }, musica: 0
+  }, {
+    id: "enem", nome: "Missão ENEM", sub: "Exame Nacional do Ensino Médio · INEP", curto: "ENEM",
+    foto: "missoes/enem/enem.webp", credito: "Foto: participantes do Enem, Wilson Dias/Agência Brasil (CC BY 3.0 BR, via Wikimedia Commons)",
+    texto: "Prepare-se para o ENEM pela Matriz de Referência: uma trilha que começa pelo que mais cai, o raio-x de 17 edições, as provas antigas e o banco completo de 2009 a 2025.",
+    trilha: { id: "enem", dir: "missoes/enem", arq: "enem", filtro: () => true, rotulo: "ENEM" },
+    banco: { prova: "enem" }, musica: 1
   }];
-  const COR = { por: "#2f80ed", lit: "#9b51e0", mat: "#eb5757", fis: "#f2994a", qui: "#27ae60", bio: "#219653", his: "#a0522d", geo: "#00a3a3" };
+  const COR = { por: "#2f80ed", lit: "#9b51e0", mat: "#eb5757", fis: "#f2994a", qui: "#27ae60", bio: "#219653", his: "#a0522d", geo: "#00a3a3", fil: "#6d4c41", soc: "#d81b60", art: "#8e24aa", edf: "#43a047", tic: "#546e7a", ing: "#1565c0", esp: "#c62828" };
+  const MIS = () => MISSOES.find(x => x.id === ST.aberta) || MISSOES[0];
+  const D = () => ST.d[MIS().id] || {};
 
   /* ---------- música tema (sintetizada) ---------- */
   const M = { ctx: null, mestre: null, timer: null, prox: 0, passo: 0, tocando: false };
   const nota = n => 440 * Math.pow(2, (n - 69) / 12);
-  // Lá menor épico: Am – F – C – G (cada acorde = 8 colcheias)
-  const ACORDES = [[57, 60, 64], [53, 57, 60], [48, 52, 55], [55, 59, 62]];
-  const MELODIA = [76, null, 74, 72, 71, null, 72, 74, 72, null, 69, null, 67, 69, 71, null,
-                   72, null, 71, 69, 67, null, 69, 72, 74, null, 71, null, 67, null, null, null];
+  // Tema 0 (PISM 1) — Lá menor épico: Am – F – C – G (cada acorde = 8 colcheias)
+  // Tema 1 (ENEM) — Ré maior, animado: D – A – Bm – G
+  const TEMAS = [
+    { bpm: 100, ac: [[57, 60, 64], [53, 57, 60], [48, 52, 55], [55, 59, 62]],
+      mel: [76, null, 74, 72, 71, null, 72, 74, 72, null, 69, null, 67, 69, 71, null, 72, null, 71, 69, 67, null, 69, 72, 74, null, 71, null, 67, null, null, null] },
+    { bpm: 118, ac: [[50, 54, 57], [57, 61, 64], [59, 62, 66], [55, 59, 62]],
+      mel: [74, 76, 78, null, 81, null, 78, 76, 73, null, 76, 78, 76, null, 73, 71, 71, 74, 78, null, 76, 74, 73, null, 71, 74, 79, null, 78, 76, 74, null] }];
+  let ACORDES = TEMAS[0].ac, MELODIA = TEMAS[0].mel, COLCHEIA = 60 / 100 / 2;
   function tom(tipo, freq, ini, dur, vol, filtro) {
     const o = M.ctx.createOscillator(), g = M.ctx.createGain();
     o.type = tipo; o.frequency.value = freq;
@@ -48,7 +62,6 @@
     n.buffer = b; const f = M.ctx.createBiquadFilter(); f.type = "highpass"; f.frequency.value = 7000;
     const g = M.ctx.createGain(); g.gain.value = 0.12; n.connect(f); f.connect(g); g.connect(M.mestre); n.start(t);
   }
-  const COLCHEIA = 60 / 100 / 2; // 100 bpm
   function agendar() {
     while (M.prox < M.ctx.currentTime + 0.25) {
       const p = M.passo % 32, ac = ACORDES[Math.floor(p / 8)], t = M.prox, volta = Math.floor(M.passo / 32);
@@ -63,6 +76,7 @@
   }
   function tocar() {
     if (M.tocando || !somLigado()) return;
+    const T = TEMAS[MIS().musica || 0]; ACORDES = T.ac; MELODIA = T.mel; COLCHEIA = 60 / T.bpm / 2;
     try {
       const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return;
       M.ctx = M.ctx || new AC(); if (M.ctx.state === "suspended") M.ctx.resume();
@@ -86,7 +100,9 @@
   /* ---------- dados ---------- */
   async function json(u) { const r = await fetch(u); if (!r.ok) throw new Error(r.status); return r.json(); }
   async function dados() {
-    if (!ST.raiox) [ST.raiox, ST.provas] = await Promise.all([json("missoes/pism1/raiox.json"), json("missoes/pism1/provas.json")]);
+    const m = MIS(); if (ST.d[m.id]) return;
+    const [raiox, provas] = await Promise.all([json(m.trilha.dir + "/raiox.json"), json(m.trilha.dir + "/provas.json")]);
+    ST.d[m.id] = { raiox, provas };
   }
 
   /* ---------- telas ---------- */
@@ -103,6 +119,7 @@
   }
   async function abrir(id) {
     const m = MISSOES.find(x => x.id === id); if (!m) return lista();
+    if (ST.aberta !== id) ST.mat = "";
     ST.aberta = id; tocar();
     CONT.innerHTML = `<div class="page mis-page">
       <div class="mis-hero" style="background-image:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.8)),url('${m.foto}')">
@@ -124,22 +141,23 @@
   function corpo() {
     const c = CONT.querySelector("#mis-corpo"); if (!c) return;
     if (ST.aba !== "trilha" && window.LAComp && LAComp.Trilha) LAComp.Trilha.sair();
-    if (ST.aba === "trilha") { if (window.LAComp && LAComp.Trilha) LAComp.Trilha.render(c, APP); else c.innerHTML = `<div class="card">Atualize a página para abrir a trilha.</div>`; return; }
+    if (ST.aba === "trilha") { if (window.LAComp && LAComp.Trilha) LAComp.Trilha.render(c, APP, MIS().trilha); else c.innerHTML = `<div class="card">Atualize a página para abrir a trilha.</div>`; return; }
     if (ST.aba === "raiox") c.innerHTML = raiox(); else if (ST.aba === "provas") c.innerHTML = provas(); else c.innerHTML = banco();
-    c.querySelectorAll("[data-treinar]").forEach(b => b.onclick = () => { const [m, t, ano] = JSON.parse(b.dataset.treinar); parar(); APP.irBanco({ prova: "pism", mo: "I", m: m || "", t: t || "", ano: ano || "" }); });
+    c.querySelectorAll("[data-treinar]").forEach(b => b.onclick = () => { const [m, t, ano] = JSON.parse(b.dataset.treinar); parar(); APP.irBanco(Object.assign({}, MIS().banco, { m: m || "", t: t || "", ano: ano || "" })); });
     c.querySelectorAll("[data-rx-m]").forEach(b => b.onclick = () => { ST.mat = b.dataset.rxM; corpo(); });
   }
   function raiox() {
-    const R = ST.raiox, nm = m => (R.materias.find(x => x.m === m) || {}).nome || m;
+    const R = D().raiox, nm = m => (R.materias.find(x => x.m === m) || {}).nome || m;
     const sel = ST.mat ? R.materias.filter(x => x.m === ST.mat) : R.materias;
     return `<div class="stack">
-      <div class="card stack"><h2>O que é o raio-x</h2><p class="small muted">Contamos as ${R.total} questões objetivas do Módulo I do PISM de ${R.anos[0]} a ${R.anos[R.anos.length - 1]} (${R.anos.length} provas) e separamos por matéria e assunto. A porcentagem mostra quanto cada assunto pesa. Use para decidir o que estudar primeiro.</p></div>
+      <div class="card stack"><h2>O que é o raio-x</h2><p class="small muted">${R.desc ? esc(R.desc) : `Contamos as ${R.total} questões objetivas do Módulo I do PISM de ${R.anos[0]} a ${R.anos[R.anos.length - 1]} (${R.anos.length} provas) e separamos por matéria e assunto.`} A porcentagem mostra quanto cada assunto pesa. Use para decidir o que estudar primeiro.</p></div>
       <div class="rx-dupla">
         <div class="card stack"><h3>🔥 O que mais cai (geral)</h3>${R.mais.map((x, i) => `<div class="rx-linha"><span class="rx-n">${i + 1}</span><span class="rx-t"><b>${esc(x.t)}</b><small>${esc(nm(x.m))} · ${x.n} questões</small></span><span class="rx-p">${x.p}%</span></div>${barra(x.p * 6, COR[x.m])}`).join("")}</div>
         <div class="card stack"><h3>🧊 O que menos cai (geral)</h3>${R.menos.map(x => `<div class="rx-linha"><span class="rx-t"><b>${esc(x.t)}</b><small>${esc(nm(x.m))} · ${x.n} ${x.n === 1 ? "questão" : "questões"}</small></span><span class="rx-p">${x.p}%</span></div>`).join("")}</div>
       </div>
+      ${R.areas ? `<div class="card stack"><h3>Peso de cada área</h3>${R.areas.map(x => `<div class="rx-linha"><span class="rx-t"><b>${esc(x.nome)}</b><small>${x.n} questões</small></span><span class="rx-p">${x.p}%</span></div>${barra(x.p * 3, "#5b6cff")}`).join("")}</div>` : ""}
       <div class="card stack"><h3>Peso de cada matéria na prova</h3>${R.materias.map(x => `<div class="rx-linha"><span class="rx-t"><b>${esc(x.nome)}</b><small>${x.n} questões</small></span><span class="rx-p">${x.p}%</span></div>${barra(x.p * 4, COR[x.m])}`).join("")}
-        <p class="small muted">No Módulo I, cada matéria tem o mesmo número de questões objetivas; a diferença está nos assuntos de dentro de cada matéria.</p></div>
+        <p class="small muted">${esc(R.nota || "No Módulo I, cada matéria tem o mesmo número de questões objetivas; a diferença está nos assuntos de dentro de cada matéria.")}</p></div>
       <div class="card stack"><h3>Dentro de cada matéria</h3>
         <div class="row" style="gap:6px;flex-wrap:wrap"><button type="button" class="qb-chip ${ST.mat ? "" : "on"}" data-rx-m="">Todas</button>${R.materias.map(x => `<button type="button" class="qb-chip ${ST.mat === x.m ? "on" : ""}" data-rx-m="${x.m}">${esc(x.nome)}</button>`).join("")}</div>
         ${sel.map(x => `<div class="rx-mat"><h4 style="color:${COR[x.m]}">${esc(x.nome)}</h4>
@@ -148,18 +166,19 @@
       </div></div>`;
   }
   function provas() {
-    return `<div class="stack"><div class="card stack"><h2>Provas antigas do Módulo I</h2><p class="small muted">Abra a prova original para ver como ela é, ou treine as questões daquele ano já com o gabarito no banco do site.</p></div>
-      <div class="pv-lista">${ST.provas.slice().reverse().map(p => `<div class="card stack pv-ano"><div class="row" style="justify-content:space-between;align-items:center"><h3>PISM ${p.ano}</h3>${p.n ? `<span class="small muted">${p.n} questões no banco</span>` : ""}</div>
+    const m = MIS(), oficial = m.id === "enem" ? "🔗 Ver no site do INEP" : "🔗 Ver no site da UFJF";
+    return `<div class="stack"><div class="card stack"><h2>Provas antigas ${m.id === "enem" ? "do ENEM" : "do Módulo I"}</h2><p class="small muted">Abra a prova original para ver como ela é, ou treine as questões daquele ano já com o gabarito no banco do site.</p></div>
+      <div class="pv-lista">${D().provas.slice().reverse().map(p => `<div class="card stack pv-ano"><div class="row" style="justify-content:space-between;align-items:center"><h3>${esc(m.curto === "PISM 1" ? "PISM" : m.curto)} ${p.ano}</h3>${p.n ? `<span class="small muted">${p.n} questões no banco</span>` : ""}</div>
         ${p.obs ? `<span class="small muted">${esc(p.obs)}</span>` : ""}
-        <div class="row" style="gap:6px;flex-wrap:wrap">${(p.arq || []).map(([n, u]) => `<a class="btn sm" href="${(APP.base || "") + u}" target="_blank" rel="noopener">📄 ${esc(n)}</a>`).join("")}${p.link ? `<a class="btn sm" href="${p.link}" target="_blank" rel="noopener">🔗 Ver no site da UFJF</a>` : ""}
+        <div class="row" style="gap:6px;flex-wrap:wrap">${(p.arq || []).map(([n, u]) => `<a class="btn sm" href="${(APP.base || "") + u}" target="_blank" rel="noopener">📄 ${esc(n)}</a>`).join("")}${p.link ? `<a class="btn sm" href="${p.link}" target="_blank" rel="noopener">${oficial}</a>` : ""}
         ${p.n ? `<button class="btn sm primary" type="button" data-treinar='${JSON.stringify(["", "", String(p.ano)])}'>Treinar ${p.ano}</button>` : ""}</div></div>`).join("")}</div></div>`;
   }
   function banco() {
-    const R = ST.raiox, todos = [];
+    const R = D().raiox, todos = [], m = MIS();
     R.materias.forEach(x => x.topicos.forEach(t => todos.push({ m: x.m, nome: x.nome, t: t.t, n: t.n })));
     todos.sort((a, b) => b.n - a.n);
-    return `<div class="stack"><div class="card stack"><h2>Banco especializado PISM 1</h2><p class="small muted">${R.total} questões objetivas do Módulo I, com gabarito oficial. Os assuntos estão em ordem do que mais cai para o que menos cai: comece pelo topo.</p>
-        <div><button class="btn primary" type="button" data-treinar='${JSON.stringify(["", ""])}'>Treinar todas as questões do PISM 1</button></div></div>
+    return `<div class="stack"><div class="card stack"><h2>Banco especializado ${esc(m.curto)}</h2><p class="small muted">${R.total} questões ${m.id === "enem" ? `do ENEM (${R.anos[0]} a ${R.anos[R.anos.length - 1]})` : "objetivas do Módulo I"}, com gabarito oficial. Os assuntos estão em ordem do que mais cai para o que menos cai: comece pelo topo.</p>
+        <div><button class="btn primary" type="button" data-treinar='${JSON.stringify(["", ""])}'>Treinar todas as questões do ${esc(m.curto)}</button></div></div>
       <div class="card stack">${todos.map((x, i) => `<div class="rx-linha"><span class="rx-n">${i + 1}</span><span class="rx-t"><b>${esc(x.t)}</b><small style="color:${COR[x.m]}">${esc(x.nome)}</small></span><span class="rx-p">${x.n}</span><button class="btn sm" type="button" data-treinar='${esc(JSON.stringify([x.m, x.t]))}'>Treinar</button></div>`).join("")}</div></div>`;
   }
 

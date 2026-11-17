@@ -68,8 +68,8 @@ jobs:
           cp -r js css icones idiomas sons midia simulados "$W/"
           cp icones-oficial/*.png "$W/icones/"
           cp questoes/*.json "$W/questoes/"
-          mkdir -p "$W/missoes/pism1" "$W/biblioteca"
-          cp missoes/pism1/*.json missoes/pism1/*.webp "$W/missoes/pism1/"
+          mkdir -p "$W/biblioteca"
+          for d in missoes/*/; do n=$(basename "$d"); mkdir -p "$W/missoes/$n"; cp "$d"*.json "$d"*.webp "$W/missoes/$n/"; done
           cp biblioteca/indice.json "$W/biblioteca/"
           for f in firebase-app-compat.js firebase-auth-compat.js firebase-firestore-compat.js; do
             curl -sSfL -o "$W/vendor/firebasejs/10.12.2/$f" "https://www.gstatic.com/firebasejs/10.12.2/$f"
